@@ -10,20 +10,24 @@
     </header>
     
     <main>
-      <div class="map-container">
-        <div ref="map" class="world-map">
-          <!-- World map will be loaded here -->
-          <p>World Map Loading... (Map integration coming next)</p>
-        </div>
+      <div class="map-section">
+        <WorldMap 
+          :events="filtered_events" 
+          @event-created="handle_event_created"
+        />
       </div>
       
       <div class="events-list">
-        <h3>Historical Events</h3>
+        <h3>Historical Events ({{ filtered_events.length }})</h3>
+        <div v-if="filtered_events.length === 0" class="no-events">
+          <p>No events found. Click on the map to add your first historical event!</p>
+        </div>
         <div v-for="event in filtered_events" :key="event.id" class="event-item">
           <h4>{{ event.name }}</h4>
           <p>{{ event.description }}</p>
-          <p>Date: {{ formatDate(event.event_date) }}</p>
-          <p>Location: {{ event.latitude }}, {{ event.longitude }}</p>
+          <p><strong>Date:</strong> {{ formatDate(event.event_date) }}</p>
+          <p><strong>Location:</strong> {{ event.latitude.toFixed(4) }}, {{ event.longitude.toFixed(4) }}</p>
+          <p><strong>Type:</strong> {{ event.lens_type }}</p>
         </div>
       </div>
     </main>
@@ -31,8 +35,13 @@
 </template>
 
 <script>
+import WorldMap from './components/WorldMap.vue'
+
 export default {
   name: 'App',
+  components: {
+    WorldMap
+  },
   data() {
     return {
       events: [],
@@ -83,10 +92,31 @@ export default {
       }
     },
     filter_events() {
-      // Simple filtering implementation
-      this.filtered_events = this.events
-      console.log('Filtering events from', this.date_from, 'to', this.date_to)
+      if (!this.date_from && !this.date_to) {
+        this.filtered_events = this.events
+        return
+      }
+      
+      this.filtered_events = this.events.filter(event => {
+        const event_date = new Date(event.event_date)
+        const from_date = this.date_from ? new Date(this.date_from) : null
+        const to_date = this.date_to ? new Date(this.date_to) : null
+        
+        if (from_date && event_date < from_date) return false
+        if (to_date && event_date > to_date) return false
+        
+        return true
+      })
+      
+      console.log(`Filtering events from ${this.date_from} to ${this.date_to}. Found ${this.filtered_events.length} events.`)
     },
+    
+    async handle_event_created(new_event) {
+      // Refresh events list after new event is created
+      await this.fetch_events()
+      console.log('Events list refreshed after new event creation')
+    },
+    
     formatDate(dateString) {
       return new Date(dateString).toLocaleDateString()
     }
@@ -128,18 +158,11 @@ header {
   cursor: pointer;
 }
 
-.map-container {
-  height: 400px;
-  background: #f0f0f0;
-  border: 1px solid #ddd;
+.map-section {
   margin-bottom: 20px;
-}
-
-.world-map {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .events-list {
@@ -157,5 +180,12 @@ header {
 .event-item h4 {
   margin-top: 0;
   color: #2c3e50;
+}
+
+.no-events {
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+  padding: 20px;
 }
 </style>
