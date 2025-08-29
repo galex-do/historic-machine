@@ -5,6 +5,15 @@
       <div class="timeline-controls">
         <label>From: <input type="text" v-model="date_from_display" @blur="update_date_from" placeholder="DD.MM.YYYY" /></label>
         <label>To: <input type="text" v-model="date_to_display" @blur="update_date_to" placeholder="DD.MM.YYYY" /></label>
+        <div class="lens-selector">
+          <label>Event Types:</label>
+          <div class="lens-options">
+            <label v-for="lens in available_lens_types" :key="lens.value" class="lens-checkbox">
+              <input type="checkbox" :value="lens.value" v-model="selected_lens_types" @change="filter_events" />
+              <span :class="['lens-label', lens.value]">{{ lens.label }}</span>
+            </label>
+          </div>
+        </div>
         <button @click="filter_events">Filter Events</button>
       </div>
     </header>
@@ -49,7 +58,14 @@ export default {
       date_from: '2000-01-01', // Internal ISO format for filtering
       date_to: '', // Will be set in created() hook
       date_from_display: '01.01.2000', // Display format DD.MM.YYYY
-      date_to_display: '' // Will be set in created() hook
+      date_to_display: '', // Will be set in created() hook
+      available_lens_types: [
+        { value: 'historic', label: 'Historic' },
+        { value: 'political', label: 'Political' },
+        { value: 'cultural', label: 'Cultural' },
+        { value: 'military', label: 'Military' }
+      ],
+      selected_lens_types: ['historic', 'political', 'cultural', 'military'] // All selected by default
     }
   },
   created() {
@@ -101,12 +117,8 @@ export default {
       }
     },
     filter_events() {
-      if (!this.date_from && !this.date_to) {
-        this.filtered_events = this.events
-        return
-      }
-      
       this.filtered_events = this.events.filter(event => {
+        // Date filtering
         const event_date = new Date(event.event_date)
         const from_date = this.date_from ? new Date(this.date_from) : null
         const to_date = this.date_to ? new Date(this.date_to) : null
@@ -114,10 +126,16 @@ export default {
         if (from_date && event_date < from_date) return false
         if (to_date && event_date > to_date) return false
         
+        // Lens type filtering
+        if (this.selected_lens_types.length > 0 && !this.selected_lens_types.includes(event.lens_type)) {
+          return false
+        }
+        
         return true
       })
       
-      console.log(`Filtering events from ${this.date_from} to ${this.date_to}. Found ${this.filtered_events.length} events.`)
+      const lens_filter_text = this.selected_lens_types.length === 4 ? 'all types' : this.selected_lens_types.join(', ')
+      console.log(`Filtering events from ${this.date_from} to ${this.date_to} for lens types: ${lens_filter_text}. Found ${this.filtered_events.length} events.`)
     },
     
     async handle_event_created(new_event) {
@@ -196,7 +214,7 @@ header {
   margin-right: 15px;
 }
 
-.timeline-controls input {
+.timeline-controls input[type="text"] {
   margin: 0 5px;
   padding: 5px;
 }
@@ -207,6 +225,72 @@ header {
   color: white;
   border: none;
   cursor: pointer;
+  margin-left: 10px;
+}
+
+.lens-selector {
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+
+.lens-selector > label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.lens-options {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.lens-checkbox {
+  display: flex;
+  align-items: center;
+  margin-right: 0 !important;
+  cursor: pointer;
+}
+
+.lens-checkbox input[type="checkbox"] {
+  margin-right: 6px;
+  margin-left: 0;
+}
+
+.lens-label {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.lens-label.historic {
+  background: #8e44ad;
+  color: white;
+}
+
+.lens-label.political {
+  background: #e74c3c;
+  color: white;
+}
+
+.lens-label.cultural {
+  background: #f39c12;
+  color: white;
+}
+
+.lens-label.military {
+  background: #2c3e50;
+  color: white;
+}
+
+.lens-checkbox input:not(:checked) + .lens-label {
+  opacity: 0.4;
+  background: #bdc3c7 !important;
+  color: #7f8c8d !important;
 }
 
 .map-section {
