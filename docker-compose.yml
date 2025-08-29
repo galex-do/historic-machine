@@ -9,12 +9,10 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - ./db/postgres_data:/var/lib/postgresql/data
       - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
     ports:
       - "5432:5432"
-    networks:
-      - historical-events-network
 
   backend:
     build:
@@ -32,8 +30,6 @@ services:
       - db
     ports:
       - "8080:8080"
-    networks:
-      - historical-events-network
     volumes:
       - ./backend:/app
     restart: unless-stopped
@@ -47,13 +43,4 @@ services:
       - backend
     ports:
       - "3000:80"
-    networks:
-      - historical-events-network
     restart: unless-stopped
-
-networks:
-  historical-events-network:
-    driver: bridge
-
-volumes:
-  postgres_data:
