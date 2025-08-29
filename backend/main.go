@@ -1,6 +1,7 @@
 package main
 
 import (
+        "database/sql"
         "encoding/json"
         "log"
         "net/http"
@@ -19,21 +20,16 @@ type HistoricalEvent struct {
         LensType    string    `json:"lens_type"`
 }
 
-var events []HistoricalEvent
+var db *sql.DB
 
 func main() {
-        // Initialize with sample data
-        events = []HistoricalEvent{
-                {
-                        ID:          1,
-                        Name:        "Fall of Constantinople",
-                        Description: "Ottoman Empire conquered Byzantine Empire",
-                        Latitude:    41.0082,
-                        Longitude:   28.9784,
-                        EventDate:   time.Date(1453, 5, 29, 0, 0, 0, 0, time.UTC),
-                        LensType:    "historic",
-                },
+        // Initialize database connection
+        var err error
+        db, err = connect_database()
+        if err != nil {
+                log.Fatal("Failed to connect to database:", err)
         }
+        defer db.Close()
 
         router := mux.NewRouter()
         
@@ -62,22 +58,48 @@ func main() {
 }
 
 func get_events(w http.ResponseWriter, r *http.Request) {
+        events, err := get_events_from_db(db)
+        if err != nil {
+                http.Error(w, "Failed to fetch events", http.StatusInternalServerError)
+                log.Printf("Error fetching events: %v", err)
+                return
+        }
+        
         w.Header().Set("Content-Type", "application/json")
         json.NewEncoder(w).Encode(events)
 }
 
 func create_event(w http.ResponseWriter, r *http.Request) {
         var new_event HistoricalEvent
-        json.NewDecoder(r.Body).Decode(&new_event)
-        new_event.ID = len(events) + 1
-        events = append(events, new_event)
+        err := json.NewDecoder(r.Body).Decode(&new_event)
+        if err != nil {
+                http.Error(w, "Invalid JSON", http.StatusBadRequest)
+                return
+        }
+        
+        created_event, err := create_event_in_db(db, new_event)
+        if err != nil {
+                http.Error(w, "Failed to create event", http.StatusInternalServerError)
+                log.Printf("Error creating event: %v", err)
+                return
+        }
         
         w.Header().Set("Content-Type", "application/json")
-        json.NewEncoder(w).Encode(new_event)
+        json.NewEncoder(w).Encode(created_event)
 }
 
 func get_event_by_id(w http.ResponseWriter, r *http.Request) {
-        // Simple implementation - in real app would parse ID and find by ID
+        events, err := get_events_from_db(db)
+        if err != nil {
+                http.Error(w, "Failed to fetch events", http.StatusInternalServerError)
+                return
+        }
+        
+        if len(events) == 0 {
+                http.Error(w, "Event not found", http.StatusNotFound)
+                return
+        }
+        
         w.Header().Set("Content-Type", "application/json")
         json.NewEncoder(w).Encode(events[0])
 }

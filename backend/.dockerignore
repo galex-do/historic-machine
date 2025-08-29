@@ -1,0 +1,26 @@
+# Ignore build artifacts and temporary files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+.DS_Store
+
+# Ignore version control
+.git
+.gitignore
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore log files
+*.log
+
+# Ignore documentation and readme files
+README.md
+*.md

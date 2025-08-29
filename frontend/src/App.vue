@@ -45,14 +45,29 @@ export default {
     await this.fetch_events()
   },
   methods: {
+    get_backend_url() {
+      // Check if running in Docker environment (nginx proxy available)
+      if (window.location.host.includes('localhost:3000')) {
+        return '/api'
+      }
+      // Default for Replit development environment
+      return 'http://localhost:8080/api'
+    },
     async fetch_events() {
       try {
-        const response = await fetch('http://localhost:8080/api/events')
+        const backend_url = this.get_backend_url()
+        const response = await fetch(`${backend_url}/events`)
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`)
+        }
+        
         this.events = await response.json()
         this.filtered_events = this.events
+        console.log('Successfully loaded events:', this.events.length)
       } catch (error) {
         console.error('Error fetching events:', error)
-        // Fallback sample data
+        // Fallback sample data for development
         this.events = [
           {
             id: 1,
