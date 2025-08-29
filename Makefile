@@ -22,7 +22,7 @@ build:
 
 up:
 	@echo "Starting services..."
-	docker compose up -d
+	docker compose up
 	@echo "Services started! Frontend: http://localhost:3000"
 
 down:
