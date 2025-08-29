@@ -197,23 +197,57 @@ export default {
     },
     
     format_date(date_string) {
+      // For very old dates, parse manually to avoid Date object issues
+      if (date_string.startsWith('00') || date_string.startsWith('01')) {
+        return this.format_date_to_ddmmyyyy(date_string)
+      }
       return this.format_date_to_ddmmyyyy(new Date(date_string))
     },
     
     format_date_to_ddmmyyyy(date) {
-      const day = String(date.getDate()).padStart(2, '0')
-      const month = String(date.getMonth() + 1).padStart(2, '0')
-      const year = date.getFullYear()
-      return `${day}.${month}.${year}`
+      // Handle both Date objects and ISO strings
+      let day, month, year
+      
+      if (typeof date === 'string') {
+        // Parse ISO string manually for very old dates
+        const [year_str, month_str, day_str] = date.split('-')
+        day = parseInt(day_str, 10)
+        month = parseInt(month_str, 10) 
+        year = parseInt(year_str, 10)
+      } else {
+        // Regular Date object
+        day = date.getDate()
+        month = date.getMonth() + 1
+        year = date.getFullYear()
+      }
+      
+      const padded_day = String(day).padStart(2, '0')
+      const padded_month = String(month).padStart(2, '0')
+      
+      return `${padded_day}.${padded_month}.${year}`
     },
     
     parse_ddmmyyyy_to_iso(dateStr) {
-      if (!dateStr || !dateStr.match(/^\d{1,2}\.\d{1,2}\.\d{4}$/)) {
+      // Allow years from 1-4 digits (year 1 to 9999)
+      if (!dateStr || !dateStr.match(/^\d{1,2}\.\d{1,2}\.\d{1,4}$/)) {
         return null
       }
       const [day, month, year] = dateStr.split('.')
-      const date = new Date(year, month - 1, day)
-      return date.toISOString().split('T')[0]
+      const year_num = parseInt(year, 10)
+      const month_num = parseInt(month, 10)
+      const day_num = parseInt(day, 10)
+      
+      // Basic validation
+      if (year_num < 1 || year_num > 9999) return null
+      if (month_num < 1 || month_num > 12) return null
+      if (day_num < 1 || day_num > 31) return null
+      
+      // For very old years, construct ISO string manually to avoid Date object issues
+      const padded_year = String(year_num).padStart(4, '0')
+      const padded_month = String(month_num).padStart(2, '0')
+      const padded_day = String(day_num).padStart(2, '0')
+      
+      return `${padded_year}-${padded_month}-${padded_day}`
     },
     
     update_event_date() {
