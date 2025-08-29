@@ -18,48 +18,48 @@ help:
 # Docker operations
 build:
 	@echo "Building Docker images..."
-	docker-compose build
+	docker compose build
 
 up:
 	@echo "Starting services..."
-	docker-compose up -d
+	docker compose up -d
 	@echo "Services started! Frontend: http://localhost:3000"
 
 down:
 	@echo "Stopping services..."
-	docker-compose down
+	docker compose down
 
 restart:
 	@echo "Restarting services..."
-	docker-compose restart
+	docker compose restart
 
 logs:
 	@echo "Showing logs..."
-	docker-compose logs -f
+	docker compose logs -f
 
 # Migration operations
 migrate: migrate-up
 
 migrate-up:
 	@echo "Running database migrations up..."
-	docker-compose exec backend ./goose -dir migrations postgres "postgres://postgres:password@db:5432/historical_events?sslmode=disable" up
+	docker compose exec backend ./goose -dir migrations postgres "postgres://postgres:password@db:5432/historical_events?sslmode=disable" up
 
 migrate-down:
 	@echo "Running database migrations down..."
-	docker-compose exec backend ./goose -dir migrations postgres "postgres://postgres:password@db:5432/historical_events?sslmode=disable" down
+	docker compose exec backend ./goose -dir migrations postgres "postgres://postgres:password@db:5432/historical_events?sslmode=disable" down
 
 migrate-status:
 	@echo "Checking migration status..."
-	docker-compose exec backend ./goose -dir migrations postgres "postgres://postgres:password@db:5432/historical_events?sslmode=disable" status
+	docker compose exec backend ./goose -dir migrations postgres "postgres://postgres:password@db:5432/historical_events?sslmode=disable" status
 
 # Development environment
 dev:
 	@echo "Starting development environment..."
-	docker-compose up -d db
+	docker compose up -d db
 	@echo "Database started. Run backend and frontend separately for development."
 
 # Cleanup operations
 clean:
 	@echo "Cleaning up Docker resources..."
-	docker-compose down -v --remove-orphans
+	docker compose down -v --remove-orphans
 	docker system prune -f
