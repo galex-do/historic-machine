@@ -17,7 +17,7 @@
           </div>
           <div class="form-group">
             <label>Date:</label>
-            <input type="date" v-model="new_event.date" required />
+            <input type="text" v-model="new_event.date_display" @blur="update_event_date" placeholder="DD.MM.YYYY" required />
           </div>
           <div class="form-group">
             <label>Event Type:</label>
@@ -61,7 +61,8 @@ export default {
       new_event: {
         name: '',
         description: '',
-        date: '',
+        date: '', // Internal ISO format
+        date_display: '', // Display format DD.MM.YYYY
         latitude: 0,
         longitude: 0,
         lens_type: 'historic'
@@ -112,6 +113,7 @@ export default {
       this.new_event.name = ''
       this.new_event.description = ''
       this.new_event.date = ''
+      this.new_event.date_display = ''
       this.new_event.lens_type = 'historic'
       
       // Show modal
@@ -194,7 +196,34 @@ export default {
     },
     
     format_date(date_string) {
-      return new Date(date_string).toLocaleDateString()
+      return this.format_date_to_ddmmyyyy(new Date(date_string))
+    },
+    
+    format_date_to_ddmmyyyy(date) {
+      const day = String(date.getDate()).padStart(2, '0')
+      const month = String(date.getMonth() + 1).padStart(2, '0')
+      const year = date.getFullYear()
+      return `${day}.${month}.${year}`
+    },
+    
+    parse_ddmmyyyy_to_iso(dateStr) {
+      if (!dateStr || !dateStr.match(/^\d{1,2}\.\d{1,2}\.\d{4}$/)) {
+        return null
+      }
+      const [day, month, year] = dateStr.split('.')
+      const date = new Date(year, month - 1, day)
+      return date.toISOString().split('T')[0]
+    },
+    
+    update_event_date() {
+      const iso_date = this.parse_ddmmyyyy_to_iso(this.new_event.date_display)
+      if (iso_date) {
+        this.new_event.date = iso_date
+      } else {
+        // Clear if invalid
+        this.new_event.date_display = ''
+        this.new_event.date = ''
+      }
     }
   }
 }

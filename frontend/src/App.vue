@@ -3,8 +3,8 @@
     <header>
       <h1>Historical Events Mapping</h1>
       <div class="timeline-controls">
-        <label>From: <input type="date" v-model="date_from" /></label>
-        <label>To: <input type="date" v-model="date_to" /></label>
+        <label>From: <input type="text" v-model="date_from_display" @blur="update_date_from" placeholder="DD.MM.YYYY" /></label>
+        <label>To: <input type="text" v-model="date_to_display" @blur="update_date_to" placeholder="DD.MM.YYYY" /></label>
         <button @click="filter_events">Filter Events</button>
       </div>
     </header>
@@ -46,12 +46,21 @@ export default {
     return {
       events: [],
       filtered_events: [],
-      date_from: '',
-      date_to: ''
+      date_from: '2000-01-01', // Internal ISO format for filtering
+      date_to: '', // Will be set in created() hook
+      date_from_display: '01.01.2000', // Display format DD.MM.YYYY
+      date_to_display: '' // Will be set in created() hook
     }
+  },
+  created() {
+    // Set today's date in DD.MM.YYYY format
+    this.date_to_display = this.format_date_to_ddmmyyyy(new Date())
+    this.date_to = this.get_today_iso()
   },
   async mounted() {
     await this.fetch_events()
+    // Apply initial filter with default date range
+    this.filter_events()
   },
   methods: {
     get_backend_url() {
@@ -118,7 +127,49 @@ export default {
     },
     
     formatDate(dateString) {
-      return new Date(dateString).toLocaleDateString()
+      return this.format_date_to_ddmmyyyy(new Date(dateString))
+    },
+    
+    format_date_to_ddmmyyyy(date) {
+      const day = String(date.getDate()).padStart(2, '0')
+      const month = String(date.getMonth() + 1).padStart(2, '0')
+      const year = date.getFullYear()
+      return `${day}.${month}.${year}`
+    },
+    
+    parse_ddmmyyyy_to_iso(dateStr) {
+      if (!dateStr || !dateStr.match(/^\d{1,2}\.\d{1,2}\.\d{4}$/)) {
+        return null
+      }
+      const [day, month, year] = dateStr.split('.')
+      const date = new Date(year, month - 1, day)
+      return date.toISOString().split('T')[0]
+    },
+    
+    get_today_iso() {
+      return new Date().toISOString().split('T')[0]
+    },
+    
+    update_date_from() {
+      const iso_date = this.parse_ddmmyyyy_to_iso(this.date_from_display)
+      if (iso_date) {
+        this.date_from = iso_date
+      } else {
+        // Reset to default if invalid
+        this.date_from_display = '01.01.2000'
+        this.date_from = '2000-01-01'
+      }
+    },
+    
+    update_date_to() {
+      const iso_date = this.parse_ddmmyyyy_to_iso(this.date_to_display)
+      if (iso_date) {
+        this.date_to = iso_date
+      } else {
+        // Reset to today if invalid
+        this.date_to_display = this.format_date_to_ddmmyyyy(new Date())
+        this.date_to = this.get_today_iso()
+      }
     }
   }
 }
