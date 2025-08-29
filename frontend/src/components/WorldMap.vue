@@ -125,9 +125,10 @@ export default {
       this.markers.forEach(marker => this.map.removeLayer(marker))
       this.markers = []
       
-      // Add markers for each event
+      // Add markers for each event with color-coded icons
       this.events.forEach(event => {
-        const marker = L.marker([event.latitude, event.longitude]).addTo(this.map)
+        const colored_icon = this.create_colored_marker_icon(event.lens_type)
+        const marker = L.marker([event.latitude, event.longitude], { icon: colored_icon }).addTo(this.map)
         
         // Add popup with event information
         marker.bindPopup(`
@@ -224,6 +225,58 @@ export default {
         this.new_event.date_display = ''
         this.new_event.date = ''
       }
+    },
+    
+    create_colored_marker_icon(lens_type) {
+      // Define colors for each event type
+      const colors = {
+        military: '#e74c3c',    // Red
+        political: '#3498db',   // Blue  
+        historic: '#ffffff',    // White
+        cultural: '#27ae60'     // Green
+      }
+      
+      const color = colors[lens_type] || colors.historic // Default to historic color
+      
+      // Create custom colored marker using CSS and HTML
+      const marker_html = `
+        <div style="
+          width: 25px;
+          height: 41px;
+          position: relative;
+          transform: translate(-12.5px, -41px);
+        ">
+          <div style="
+            width: 25px;
+            height: 25px;
+            background-color: ${color};
+            border: 2px solid #333;
+            border-radius: 50% 50% 50% 0;
+            transform: rotate(-45deg);
+            position: absolute;
+            top: 8px;
+            left: 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+          "></div>
+          <div style="
+            width: 6px;
+            height: 6px;
+            background-color: #333;
+            border-radius: 50%;
+            position: absolute;
+            top: 16px;
+            left: 9.5px;
+          "></div>
+        </div>
+      `
+      
+      return L.divIcon({
+        html: marker_html,
+        iconSize: [25, 41],
+        iconAnchor: [12.5, 41],
+        popupAnchor: [0, -41],
+        className: `custom-marker-${lens_type}`
+      })
     }
   }
 }
