@@ -35,14 +35,6 @@ type DateTemplateGroup struct {
         DisplayOrder int    `json:"display_order"`
 }
 
-type GroupWithTemplates struct {
-        ID           int            `json:"id"`
-        Name         string         `json:"name"`
-        Description  string         `json:"description"`
-        DisplayOrder int            `json:"display_order"`
-        Templates    []DateTemplate `json:"templates"`
-}
-
 type DateTemplate struct {
         ID               int    `json:"id"`
         GroupID          int    `json:"group_id"`
@@ -99,25 +91,15 @@ func main() {
         router.HandleFunc("/api/events", get_events).Methods("GET")
         router.HandleFunc("/api/events", create_event).Methods("POST")
         router.HandleFunc("/api/events/{id}", get_event_by_id).Methods("GET")
-        router.HandleFunc("/api/events/{id}", update_event).Methods("PUT")
-        router.HandleFunc("/api/events/{id}", delete_event).Methods("DELETE")
         
         // Spatial query endpoints
         router.HandleFunc("/api/events/bbox", get_events_in_bbox).Methods("GET")
         router.HandleFunc("/api/events/radius", get_events_in_radius).Methods("GET")
         
-        // Date template group endpoints
-        router.HandleFunc("/api/date-template-groups", get_date_template_groups).Methods("GET")
-        router.HandleFunc("/api/date-template-groups", create_date_template_group).Methods("POST")
-        router.HandleFunc("/api/date-template-groups/{id}", update_date_template_group).Methods("PUT")
-        router.HandleFunc("/api/date-template-groups/{id}", delete_date_template_group).Methods("DELETE")
-        
         // Date template endpoints
-        router.HandleFunc("/api/date-templates", get_all_date_templates).Methods("GET")
-        router.HandleFunc("/api/date-templates", create_date_template).Methods("POST")
+        router.HandleFunc("/api/date-template-groups", get_date_template_groups).Methods("GET")
         router.HandleFunc("/api/date-templates/{group_id}", get_date_templates_by_group).Methods("GET")
-        router.HandleFunc("/api/date-templates/{id}", update_date_template).Methods("PUT")
-        router.HandleFunc("/api/date-templates/{id}", delete_date_template).Methods("DELETE")
+        router.HandleFunc("/api/date-templates", get_all_date_templates).Methods("GET")
 
         log.Println("Server starting on :8080")
         log.Fatal(http.ListenAndServe(":8080", router))
@@ -433,61 +415,27 @@ func get_events_in_radius(w http.ResponseWriter, r *http.Request) {
 
 // Date template handlers
 func get_date_template_groups(w http.ResponseWriter, r *http.Request) {
-        // First get all groups
-        group_query := `
+        query := `
                 SELECT id, name, description, display_order
                 FROM date_template_groups 
                 ORDER BY display_order`
         
-        group_rows, err := db.Query(group_query)
+        rows, err := db.Query(query)
         if err != nil {
                 http.Error(w, "Failed to fetch date template groups", http.StatusInternalServerError)
                 log.Printf("Error fetching date template groups: %v", err)
                 return
         }
-        defer group_rows.Close()
+        defer rows.Close()
         
-        var groups []GroupWithTemplates
-        for group_rows.Next() {
-                var group GroupWithTemplates
-                err := group_rows.Scan(&group.ID, &group.Name, &group.Description, &group.DisplayOrder)
+        var groups []DateTemplateGroup
+        for rows.Next() {
+                var group DateTemplateGroup
+                err := rows.Scan(&group.ID, &group.Name, &group.Description, &group.DisplayOrder)
                 if err != nil {
                         log.Printf("Error scanning date template group: %v", err)
                         continue
                 }
-                
-                // Get templates for this group
-                template_query := `
-                        SELECT id, group_id, name, start_date, start_era, end_date, end_era, display_order
-                        FROM date_templates 
-                        WHERE group_id = $1
-                        ORDER BY display_order`
-                
-                log.Printf("Fetching templates for group %d (%s)", group.ID, group.Name)
-                template_rows, err := db.Query(template_query, group.ID)
-                if err != nil {
-                        log.Printf("Error fetching templates for group %d: %v", group.ID, err)
-                        groups = append(groups, group) // Add group even without templates
-                        continue
-                }
-                
-                var templates []DateTemplate
-                for template_rows.Next() {
-                        var template DateTemplate
-                        err := template_rows.Scan(&template.ID, &template.GroupID, &template.Name,
-                                &template.StartDate, &template.StartEra, &template.EndDate, 
-                                &template.EndEra, &template.DisplayOrder)
-                        if err != nil {
-                                log.Printf("Error scanning template: %v", err)
-                                continue
-                        }
-                        log.Printf("Loaded template: %s (ID: %d)", template.Name, template.ID)
-                        templates = append(templates, template)
-                }
-                template_rows.Close()
-                
-                log.Printf("Group %s has %d templates", group.Name, len(templates))
-                group.Templates = templates
                 groups = append(groups, group)
         }
         
@@ -565,274 +513,6 @@ func get_all_date_templates(w http.ResponseWriter, r *http.Request) {
         
         w.Header().Set("Content-Type", "application/json")
         json.NewEncoder(w).Encode(templates)
-}
-
-// Admin CRUD handlers for events
-func update_event(w http.ResponseWriter, r *http.Request) {
-        vars := mux.Vars(r)
-        event_id := vars["id"]
-        
-        var updated_event HistoricalEvent
-        err := json.NewDecoder(r.Body).Decode(&updated_event)
-        if err != nil {
-                http.Error(w, "Invalid JSON", http.StatusBadRequest)
-                return
-        }
-        
-        // Validate coordinates
-        err = validate_coordinates(updated_event.Latitude, updated_event.Longitude)
-        if err != nil {
-                http.Error(w, err.Error(), http.StatusBadRequest)
-                return
-        }
-        
-        // Set default era if not provided
-        if updated_event.Era == "" {
-                updated_event.Era = "AD"
-        }
-        
-        query := `
-                UPDATE events 
-                SET name = $1, description = $2, latitude = $3, longitude = $4, 
-                    event_date = $5, era = $6, lens_type = $7
-                WHERE id = $8`
-        
-        _, err = db.Exec(query, updated_event.Name, updated_event.Description, 
-                         updated_event.Latitude, updated_event.Longitude, 
-                         updated_event.EventDate, updated_event.Era, updated_event.LensType, event_id)
-        if err != nil {
-                http.Error(w, "Failed to update event", http.StatusInternalServerError)
-                log.Printf("Error updating event: %v", err)
-                return
-        }
-        
-        // Return the updated event
-        updated_event.ID, _ = strconv.Atoi(event_id)
-        w.Header().Set("Content-Type", "application/json")
-        json.NewEncoder(w).Encode(updated_event)
-}
-
-func delete_event(w http.ResponseWriter, r *http.Request) {
-        vars := mux.Vars(r)
-        event_id := vars["id"]
-        
-        query := "DELETE FROM events WHERE id = $1"
-        result, err := db.Exec(query, event_id)
-        if err != nil {
-                http.Error(w, "Failed to delete event", http.StatusInternalServerError)
-                log.Printf("Error deleting event: %v", err)
-                return
-        }
-        
-        rows_affected, err := result.RowsAffected()
-        if err != nil {
-                http.Error(w, "Error checking deletion", http.StatusInternalServerError)
-                return
-        }
-        
-        if rows_affected == 0 {
-                http.Error(w, "Event not found", http.StatusNotFound)
-                return
-        }
-        
-        w.WriteHeader(http.StatusNoContent)
-}
-
-// Admin CRUD handlers for date template groups
-func create_date_template_group(w http.ResponseWriter, r *http.Request) {
-        var new_group DateTemplateGroup
-        err := json.NewDecoder(r.Body).Decode(&new_group)
-        if err != nil {
-                http.Error(w, "Invalid JSON", http.StatusBadRequest)
-                return
-        }
-        
-        // Set default display order if not provided
-        if new_group.DisplayOrder == 0 {
-                new_group.DisplayOrder = 1
-        }
-        
-        query := `
-                INSERT INTO date_template_groups (name, description, display_order) 
-                VALUES ($1, $2, $3) 
-                RETURNING id`
-        
-        err = db.QueryRow(query, new_group.Name, new_group.Description, new_group.DisplayOrder).
-                Scan(&new_group.ID)
-        if err != nil {
-                http.Error(w, "Failed to create date template group", http.StatusInternalServerError)
-                log.Printf("Error creating date template group: %v", err)
-                return
-        }
-        
-        w.Header().Set("Content-Type", "application/json")
-        json.NewEncoder(w).Encode(new_group)
-}
-
-func update_date_template_group(w http.ResponseWriter, r *http.Request) {
-        vars := mux.Vars(r)
-        group_id := vars["id"]
-        
-        var updated_group DateTemplateGroup
-        err := json.NewDecoder(r.Body).Decode(&updated_group)
-        if err != nil {
-                http.Error(w, "Invalid JSON", http.StatusBadRequest)
-                return
-        }
-        
-        query := `
-                UPDATE date_template_groups 
-                SET name = $1, description = $2, display_order = $3
-                WHERE id = $4`
-        
-        _, err = db.Exec(query, updated_group.Name, updated_group.Description, 
-                         updated_group.DisplayOrder, group_id)
-        if err != nil {
-                http.Error(w, "Failed to update date template group", http.StatusInternalServerError)
-                log.Printf("Error updating date template group: %v", err)
-                return
-        }
-        
-        updated_group.ID, _ = strconv.Atoi(group_id)
-        w.Header().Set("Content-Type", "application/json")
-        json.NewEncoder(w).Encode(updated_group)
-}
-
-func delete_date_template_group(w http.ResponseWriter, r *http.Request) {
-        vars := mux.Vars(r)
-        group_id := vars["id"]
-        
-        // First check if any templates are using this group
-        var count int
-        err := db.QueryRow("SELECT COUNT(*) FROM date_templates WHERE group_id = $1", group_id).Scan(&count)
-        if err != nil {
-                http.Error(w, "Error checking group dependencies", http.StatusInternalServerError)
-                return
-        }
-        
-        if count > 0 {
-                http.Error(w, "Cannot delete group with existing templates", http.StatusBadRequest)
-                return
-        }
-        
-        query := "DELETE FROM date_template_groups WHERE id = $1"
-        result, err := db.Exec(query, group_id)
-        if err != nil {
-                http.Error(w, "Failed to delete date template group", http.StatusInternalServerError)
-                log.Printf("Error deleting date template group: %v", err)
-                return
-        }
-        
-        rows_affected, err := result.RowsAffected()
-        if err != nil {
-                http.Error(w, "Error checking deletion", http.StatusInternalServerError)
-                return
-        }
-        
-        if rows_affected == 0 {
-                http.Error(w, "Date template group not found", http.StatusNotFound)
-                return
-        }
-        
-        w.WriteHeader(http.StatusNoContent)
-}
-
-// Admin CRUD handlers for date templates
-func create_date_template(w http.ResponseWriter, r *http.Request) {
-        var new_template DateTemplate
-        err := json.NewDecoder(r.Body).Decode(&new_template)
-        if err != nil {
-                http.Error(w, "Invalid JSON", http.StatusBadRequest)
-                return
-        }
-        
-        // Set default values
-        if new_template.DisplayOrder == 0 {
-                new_template.DisplayOrder = 1
-        }
-        if new_template.StartEra == "" {
-                new_template.StartEra = "AD"
-        }
-        if new_template.EndEra == "" {
-                new_template.EndEra = "AD"
-        }
-        
-        query := `
-                INSERT INTO date_templates (group_id, name, description, start_date, start_era, 
-                                          end_date, end_era, display_order, start_display_date, end_display_date) 
-                VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) 
-                RETURNING id`
-        
-        err = db.QueryRow(query, new_template.GroupID, new_template.Name, new_template.Description,
-                         new_template.StartDate, new_template.StartEra, new_template.EndDate, new_template.EndEra,
-                         new_template.DisplayOrder, new_template.StartDisplayDate, new_template.EndDisplayDate).
-                Scan(&new_template.ID)
-        if err != nil {
-                http.Error(w, "Failed to create date template", http.StatusInternalServerError)
-                log.Printf("Error creating date template: %v", err)
-                return
-        }
-        
-        w.Header().Set("Content-Type", "application/json")
-        json.NewEncoder(w).Encode(new_template)
-}
-
-func update_date_template(w http.ResponseWriter, r *http.Request) {
-        vars := mux.Vars(r)
-        template_id := vars["id"]
-        
-        var updated_template DateTemplate
-        err := json.NewDecoder(r.Body).Decode(&updated_template)
-        if err != nil {
-                http.Error(w, "Invalid JSON", http.StatusBadRequest)
-                return
-        }
-        
-        query := `
-                UPDATE date_templates 
-                SET group_id = $1, name = $2, description = $3, start_date = $4, start_era = $5,
-                    end_date = $6, end_era = $7, display_order = $8, start_display_date = $9, end_display_date = $10
-                WHERE id = $11`
-        
-        _, err = db.Exec(query, updated_template.GroupID, updated_template.Name, updated_template.Description,
-                         updated_template.StartDate, updated_template.StartEra, updated_template.EndDate, 
-                         updated_template.EndEra, updated_template.DisplayOrder, 
-                         updated_template.StartDisplayDate, updated_template.EndDisplayDate, template_id)
-        if err != nil {
-                http.Error(w, "Failed to update date template", http.StatusInternalServerError)
-                log.Printf("Error updating date template: %v", err)
-                return
-        }
-        
-        updated_template.ID, _ = strconv.Atoi(template_id)
-        w.Header().Set("Content-Type", "application/json")
-        json.NewEncoder(w).Encode(updated_template)
-}
-
-func delete_date_template(w http.ResponseWriter, r *http.Request) {
-        vars := mux.Vars(r)
-        template_id := vars["id"]
-        
-        query := "DELETE FROM date_templates WHERE id = $1"
-        result, err := db.Exec(query, template_id)
-        if err != nil {
-                http.Error(w, "Failed to delete date template", http.StatusInternalServerError)
-                log.Printf("Error deleting date template: %v", err)
-                return
-        }
-        
-        rows_affected, err := result.RowsAffected()
-        if err != nil {
-                http.Error(w, "Error checking deletion", http.StatusInternalServerError)
-                return
-        }
-        
-        if rows_affected == 0 {
-                http.Error(w, "Date template not found", http.StatusNotFound)
-                return
-        }
-        
-        w.WriteHeader(http.StatusNoContent)
 }
 
 // Helper functions for geometry handling (unused but available for future use)

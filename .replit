@@ -1,7 +1,6 @@
 modules = ["go-1.24", "nodejs-20", "postgresql-17"]
 [agent]
 expertMode = true
-integrations = ["javascript_database==1.0.0"]
 
 [workflows]
 runButton = "Project"
@@ -54,6 +53,3 @@ externalPort = 3000
 [[ports]]
 localPort = 8080
 externalPort = 8080
-
-[nix]
-channel = "stable-25_05"
