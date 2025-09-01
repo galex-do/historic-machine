@@ -1,89 +1,116 @@
 <template>
   <div id="app">
-    <header>
-      <h1>Historical Events Mapping</h1>
-      <div class="timeline-controls">
-        <!-- Date Selection Mode -->
-        <div class="date-mode-selector">
-          <label>Date Selection:</label>
-          <select v-model="date_selection_mode" @change="handle_date_mode_change">
-            <option value="historic">Historic Periods</option>
-            <option value="custom">Custom Date Range</option>
-          </select>
-        </div>
-        
-        <!-- Historic Date Templates -->
-        <div v-if="date_selection_mode === 'historic'" class="historic-date-controls">
-          <div class="template-group-selector">
-            <label>Historical Period:</label>
-            <select v-model="selected_template_group_id" @change="handle_template_group_change">
-              <option value="">Select a historical period...</option>
+    <!-- Header -->
+    <header class="app-header">
+      <h1>🗺️ Historical Events Mapping</h1>
+    </header>
+    
+    <!-- Main Layout: Sidebar + Map -->
+    <div class="main-layout">
+      <!-- Left Sidebar -->
+      <aside class="sidebar">
+        <!-- Filters Section -->
+        <div class="sidebar-section">
+          <h3 class="section-title">🎯 Filters</h3>
+          
+          <!-- Date Selection Mode -->
+          <div class="filter-group">
+            <label class="filter-label">Date Selection:</label>
+            <select v-model="date_selection_mode" @change="handle_date_mode_change" class="filter-select">
+              <option value="historic">Historic Periods</option>
+              <option value="custom">Custom Date Range</option>
+            </select>
+          </div>
+          
+          <!-- Historic Date Templates -->
+          <div v-if="date_selection_mode === 'historic'" class="filter-group">
+            <label class="filter-label">Historical Period:</label>
+            <select v-model="selected_template_group_id" @change="handle_template_group_change" class="filter-select">
+              <option value="">Select a period...</option>
               <option v-for="group in template_groups" :key="group.id" :value="group.id">
                 {{ group.name }}
               </option>
             </select>
+            
+            <div v-if="selected_template_group_id" class="filter-subgroup">
+              <label class="filter-label">Specific Period:</label>
+              <select v-model="selected_template_id" @change="handle_template_change" class="filter-select">
+                <option value="">Select specific period...</option>
+                <option v-for="template in available_templates" :key="template.id" :value="template.id">
+                  {{ template.name }}
+                </option>
+              </select>
+            </div>
+            
+            <div v-if="selected_template" class="selected-period">
+              <div class="period-info">
+                <strong>{{ selected_template.name }}</strong>
+                <span class="period-dates">{{ selected_template.start_display_date }} - {{ selected_template.end_display_date }}</span>
+                <p v-if="selected_template.description" class="period-desc">{{ selected_template.description }}</p>
+              </div>
+            </div>
           </div>
           
-          <div v-if="selected_template_group_id" class="template-selector">
-            <label>Specific Period:</label>
-            <select v-model="selected_template_id" @change="handle_template_change">
-              <option value="">Select specific period...</option>
-              <option v-for="template in available_templates" :key="template.id" :value="template.id">
-                {{ template.name }} ({{ template.start_display_date }} - {{ template.end_display_date }})
-              </option>
-            </select>
+          <!-- Custom Date Range -->
+          <div v-if="date_selection_mode === 'custom'" class="filter-group">
+            <div class="date-inputs">
+              <div class="date-input-group">
+                <label class="filter-label">From:</label>
+                <input type="text" v-model="date_from_display" @blur="update_date_from" placeholder="DD.MM.YYYY" class="date-input" />
+              </div>
+              <div class="date-input-group">
+                <label class="filter-label">To:</label>
+                <input type="text" v-model="date_to_display" @blur="update_date_to" placeholder="DD.MM.YYYY" class="date-input" />
+              </div>
+            </div>
           </div>
           
-          <div v-if="selected_template" class="selected-period-display">
-            <strong>Selected Period:</strong> {{ selected_template.name }}<br>
-            <strong>Duration:</strong> {{ selected_template.start_display_date }} to {{ selected_template.end_display_date }}
-            <p v-if="selected_template.description" class="period-description">{{ selected_template.description }}</p>
+          <!-- Event Types -->
+          <div class="filter-group">
+            <label class="filter-label">Event Types:</label>
+            <div class="lens-grid">
+              <label v-for="lens in available_lens_types" :key="lens.value" class="lens-item">
+                <input type="checkbox" :value="lens.value" v-model="selected_lens_types" @change="filter_events" />
+                <span :class="['lens-badge', lens.value]">{{ lens.label }}</span>
+              </label>
+            </div>
+          </div>
+          
+          <button @click="filter_events" class="filter-button">Apply Filters</button>
+        </div>
+        
+        <!-- Events List Section -->
+        <div class="sidebar-section">
+          <h3 class="section-title">📍 Events ({{ filtered_events.length }})</h3>
+          
+          <div class="events-container">
+            <div v-if="filtered_events.length === 0" class="no-events">
+              <p>No events found. Click on the map to add your first historical event!</p>
+            </div>
+            
+            <div v-for="event in filtered_events" :key="event.id" class="event-card">
+              <div class="event-header">
+                <span class="event-emoji">{{ getEventEmoji(event.lens_type) }}</span>
+                <h4 class="event-title">{{ event.name }}</h4>
+              </div>
+              <p class="event-description">{{ event.description }}</p>
+              <div class="event-meta">
+                <span class="event-date">{{ event.display_date || formatDate(event.event_date) }}</span>
+                <span class="event-coords">{{ event.latitude.toFixed(2) }}, {{ event.longitude.toFixed(2) }}</span>
+              </div>
+            </div>
           </div>
         </div>
-        
-        <!-- Custom Date Range (existing functionality) -->
-        <div v-if="date_selection_mode === 'custom'" class="custom-date-controls">
-          <label>From: <input type="text" v-model="date_from_display" @blur="update_date_from" placeholder="DD.MM.YYYY" /></label>
-          <label>To: <input type="text" v-model="date_to_display" @blur="update_date_to" placeholder="DD.MM.YYYY" /></label>
-        </div>
-        
-        <!-- Event Type Lens Selector -->
-        <div class="lens-selector">
-          <label>Event Types:</label>
-          <div class="lens-options">
-            <label v-for="lens in available_lens_types" :key="lens.value" class="lens-checkbox">
-              <input type="checkbox" :value="lens.value" v-model="selected_lens_types" @change="filter_events" />
-              <span :class="['lens-label', lens.value]">{{ lens.label }}</span>
-            </label>
-          </div>
-        </div>
-        
-        <button @click="filter_events">Filter Events</button>
-      </div>
-    </header>
-    
-    <main>
-      <div class="map-section">
+      </aside>
+      
+      <!-- Right Map Area -->
+      <main class="map-area">
         <WorldMap 
           :events="filtered_events" 
           @event-created="handle_event_created"
         />
-      </div>
-      
-      <div class="events-list">
-        <h3>Historical Events ({{ filtered_events.length }})</h3>
-        <div v-if="filtered_events.length === 0" class="no-events">
-          <p>No events found. Click on the map to add your first historical event!</p>
-        </div>
-        <div v-for="event in filtered_events" :key="event.id" class="event-item">
-          <h4>{{ event.name }}</h4>
-          <p>{{ event.description }}</p>
-          <p><strong>Date:</strong> {{ event.display_date || formatDate(event.event_date) }}</p>
-          <p><strong>Location:</strong> {{ event.latitude.toFixed(4) }}, {{ event.longitude.toFixed(4) }}</p>
-          <p><strong>Type:</strong> {{ event.lens_type }}</p>
-        </div>
-      </div>
-    </main>
+      </main>
+    </div>
   </div>
 </template>
 
@@ -406,83 +433,387 @@ export default {
         this.date_to = this.get_today_iso()
       }
       this.filter_events()
+    },
+    
+    getEventEmoji(lens_type) {
+      const emoji_map = {
+        'military': '⚔️',
+        'political': '🏛️', 
+        'historic': '📜',
+        'cultural': '🎭'
+      }
+      return emoji_map[lens_type] || '📍'
     }
   }
 }
 </script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #app {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-}
-
-header {
-  background: #2c3e50;
-  color: white;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.timeline-controls {
-  margin-top: 10px;
-}
-
-.timeline-controls label {
-  margin-right: 15px;
-}
-
-.timeline-controls input[type="text"] {
-  margin: 0 5px;
-  padding: 5px;
-}
-
-.timeline-controls button {
-  padding: 5px 15px;
-  background: #3498db;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-left: 10px;
-}
-
-.lens-selector {
-  margin: 10px 0;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-}
-
-.lens-selector > label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-}
-
-.lens-options {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  background: #f5f7fa;
+  min-height: 100vh;
   display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.lens-checkbox {
+/* Header */
+.app-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.app-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+/* Main Layout */
+.main-layout {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 350px;
+  background: #ffffff;
+  border-right: 1px solid #e1e8ed;
+  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-section {
+  padding: 1.5rem;
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.sidebar-section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
-  margin-right: 0 !important;
+  gap: 0.5rem;
+}
+
+/* Filter Controls */
+.filter-group {
+  margin-bottom: 1.5rem;
+}
+
+.filter-group:last-child {
+  margin-bottom: 0;
+}
+
+.filter-label {
+  display: block;
+  font-weight: 500;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #ffffff;
+  font-size: 0.9rem;
+  color: #2d3748;
+  transition: all 0.2s;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.filter-subgroup {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid #e2e8f0;
+}
+
+/* Selected Period */
+.selected-period {
+  margin-top: 1rem;
+  background: #f7fafc;
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+}
+
+.period-info strong {
+  display: block;
+  color: #2d3748;
+  margin-bottom: 0.25rem;
+}
+
+.period-dates {
+  font-size: 0.8rem;
+  color: #667eea;
+  font-weight: 500;
+}
+
+.period-desc {
+  font-size: 0.8rem;
+  color: #718096;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Date Inputs */
+.date-inputs {
+  display: flex;
+  gap: 1rem;
+}
+
+.date-input-group {
+  flex: 1;
+}
+
+.date-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #2d3748;
+  transition: all 0.2s;
+}
+
+.date-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Event Type Grid */
+.lens-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.lens-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.lens-item input {
+  margin-right: 0.5rem;
+  accent-color: #667eea;
+}
+
+.lens-badge {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.lens-badge.military {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.lens-badge.political {
+  background: #bee3f8;
+  color: #2b6cb0;
+}
+
+.lens-badge.historic {
+  background: #e2e8f0;
+  color: #4a5568;
+}
+
+.lens-badge.cultural {
+  background: #c6f6d5;
+  color: #25855a;
+}
+
+.lens-item input:not(:checked) + .lens-badge {
+  opacity: 0.5;
+  background: #f7fafc !important;
+  color: #a0aec0 !important;
+}
+
+/* Filter Button */
+.filter-button {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 1rem;
+}
+
+.filter-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Events Container */
+.events-container {
+  max-height: calc(100vh - 400px);
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.events-container::-webkit-scrollbar {
+  width: 4px;
+}
+
+.events-container::-webkit-scrollbar-track {
+  background: #f1f3f5;
+  border-radius: 2px;
+}
+
+.events-container::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 2px;
+}
+
+.events-container::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+
+/* Event Cards */
+.event-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  transition: all 0.2s;
   cursor: pointer;
 }
 
-.lens-checkbox input[type="checkbox"] {
-  margin-right: 6px;
-  margin-left: 0;
+.event-card:hover {
+  border-color: #667eea;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
+  transform: translateY(-1px);
 }
 
-.lens-label {
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 13px;
-  font-weight: bold;
-  transition: all 0.3s ease;
+.event-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-emoji {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.event-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2d3748;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.event-description {
+  font-size: 0.85rem;
+  color: #718096;
+  line-height: 1.4;
+  margin: 0.5rem 0;
+}
+
+.event-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #f1f3f5;
+}
+
+.event-date {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #667eea;
+}
+
+.event-coords {
+  font-size: 0.75rem;
+  color: #a0aec0;
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', monospace;
+}
+
+.no-events {
+  text-align: center;
+  color: #a0aec0;
+  font-style: italic;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* Map Area */
+.map-area {
+  flex: 1;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main-layout {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    height: auto;
+    max-height: 50vh;
+    border-right: none;
+    border-bottom: 1px solid #e1e8ed;
+  }
+  
+  .map-area {
+    height: 50vh;
+  }
+  
+  .lens-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .lens-label.historic {
