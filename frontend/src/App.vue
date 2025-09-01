@@ -113,6 +113,7 @@
         <div class="map-section">
           <WorldMap 
             :events="filtered_events" 
+            :focus_event="focus_event"
             @event-created="handle_event_created"
           />
         </div>
@@ -130,6 +131,9 @@
               <div class="event-header">
                 <span class="event-emoji">{{ getEventEmoji(event.lens_type) }}</span>
                 <h4 class="event-title">{{ event.name }}</h4>
+                <button class="focus-button" @click="focus_on_event(event)" title="Focus on map">
+                  🎯
+                </button>
               </div>
               <p class="event-description">{{ event.description }}</p>
               <div class="event-meta">
@@ -169,6 +173,7 @@ export default {
       selected_lens_types: ['historic', 'political', 'cultural', 'military'], // All selected by default
       show_lens_dropdown: false,
       sidebar_collapsed: false,
+      focus_event: null,
       
       // Date template system
       date_selection_mode: 'historic', // 'historic' or 'custom'
@@ -502,6 +507,10 @@ export default {
     
     toggle_sidebar() {
       this.sidebar_collapsed = !this.sidebar_collapsed
+    },
+    
+    focus_on_event(event) {
+      this.focus_event = { ...event, timestamp: Date.now() }
     }
   }
 }
@@ -895,6 +904,32 @@ export default {
   align-items: flex-start;
   gap: 0.75rem;
   margin-bottom: 0.5rem;
+}
+
+.focus-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.focus-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.focus-button:active {
+  transform: scale(0.95);
 }
 
 .event-emoji {

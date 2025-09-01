@@ -51,6 +51,10 @@ export default {
     events: {
       type: Array,
       default: () => []
+    },
+    focus_event: {
+      type: Object,
+      default: null
     }
   },
   data() {
@@ -79,6 +83,15 @@ export default {
         if (this.map) {
           this.add_event_markers()
           this.fit_map_to_events()
+        }
+      },
+      deep: true,
+      immediate: false
+    },
+    focus_event: {
+      handler(new_focus_event) {
+        if (new_focus_event && this.map) {
+          this.center_on_event(new_focus_event)
         }
       },
       deep: true,
@@ -225,6 +238,22 @@ export default {
           this.map.setView([20, 0], 2)
         }
       })
+    },
+    
+    center_on_event(event) {
+      if (!this.map || !event.latitude || !event.longitude) {
+        return
+      }
+      
+      try {
+        // Center the map on the specific event with a good zoom level
+        this.map.setView([event.latitude, event.longitude], 8, {
+          animate: true,
+          duration: 1.0
+        })
+      } catch (error) {
+        console.warn('Error centering on event:', error)
+      }
     },
     
     async create_event() {
