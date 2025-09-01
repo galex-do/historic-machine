@@ -78,7 +78,7 @@
         <div v-for="event in filtered_events" :key="event.id" class="event-item">
           <h4>{{ event.name }}</h4>
           <p>{{ event.description }}</p>
-          <p><strong>Date:</strong> {{ formatDate(event.event_date) }}</p>
+          <p><strong>Date:</strong> {{ event.display_date || formatDate(event.event_date) }}</p>
           <p><strong>Location:</strong> {{ event.latitude.toFixed(4) }}, {{ event.longitude.toFixed(4) }}</p>
           <p><strong>Type:</strong> {{ event.lens_type }}</p>
         </div>

@@ -135,7 +135,7 @@ export default {
           <div class="event-popup">
             <h4>${event.name}</h4>
             <p>${event.description}</p>
-            <p><strong>Date:</strong> ${this.format_date(event.event_date)}</p>
+            <p><strong>Date:</strong> ${event.display_date || this.format_date(event.event_date)}</p>
             <p><strong>Type:</strong> ${event.lens_type}</p>
           </div>
         `)
