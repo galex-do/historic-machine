@@ -104,10 +104,10 @@ export default {
       date_from_display: '01.01.0001', // Display format DD.MM.YYYY - start from year 1
       date_to_display: '', // Will be set in created() hook
       available_lens_types: [
-        { value: 'historic', label: 'Historic' },
-        { value: 'political', label: 'Political' },
-        { value: 'cultural', label: 'Cultural' },
-        { value: 'military', label: 'Military' }
+        { value: 'historic', label: '📜 Historic' },
+        { value: 'political', label: '🏛️ Political' },
+        { value: 'cultural', label: '🎭 Cultural' },
+        { value: 'military', label: '⚔️ Military' }
       ],
       selected_lens_types: ['historic', 'political', 'cultural', 'military'], // All selected by default
       

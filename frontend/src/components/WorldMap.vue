@@ -22,10 +22,10 @@
           <div class="form-group">
             <label>Event Type:</label>
             <select v-model="new_event.lens_type">
-              <option value="historic">Historic</option>
-              <option value="political">Political</option>
-              <option value="cultural">Cultural</option>
-              <option value="military">Military</option>
+              <option value="historic">📜 Historic</option>
+              <option value="political">🏛️ Political</option>
+              <option value="cultural">🎭 Cultural</option>
+              <option value="military">⚔️ Military</option>
             </select>
           </div>
           <div class="coordinates-info">
@@ -125,10 +125,10 @@ export default {
       this.markers.forEach(marker => this.map.removeLayer(marker))
       this.markers = []
       
-      // Add markers for each event with color-coded icons
+      // Add markers for each event with emoji icons
       this.events.forEach(event => {
-        const colored_icon = this.create_colored_marker_icon(event.lens_type)
-        const marker = L.marker([event.latitude, event.longitude], { icon: colored_icon }).addTo(this.map)
+        const emoji_icon = this.create_emoji_marker_icon(event.lens_type)
+        const marker = L.marker([event.latitude, event.longitude], { icon: emoji_icon }).addTo(this.map)
         
         // Add popup with event information
         marker.bindPopup(`
@@ -261,55 +261,23 @@ export default {
       }
     },
     
-    create_colored_marker_icon(lens_type) {
-      // Define colors for each event type
-      const colors = {
-        military: '#e74c3c',    // Red
-        political: '#3498db',   // Blue  
-        historic: '#ffffff',    // White
-        cultural: '#27ae60'     // Green
+    create_emoji_marker_icon(lens_type) {
+      // Define emojis for different event types
+      const emoji_map = {
+        'military': '⚔️',     // Crossed swords
+        'political': '🏛️',   // Classical building/government
+        'historic': '📜',     // Ancient scroll/manuscript
+        'cultural': '🎭'      // Theater masks
       }
       
-      const color = colors[lens_type] || colors.historic // Default to historic color
-      
-      // Create custom colored marker using CSS and HTML
-      const marker_html = `
-        <div style="
-          width: 25px;
-          height: 41px;
-          position: relative;
-          transform: translate(-12.5px, -41px);
-        ">
-          <div style="
-            width: 25px;
-            height: 25px;
-            background-color: ${color};
-            border: 2px solid #333;
-            border-radius: 50% 50% 50% 0;
-            transform: rotate(-45deg);
-            position: absolute;
-            top: 8px;
-            left: 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-          "></div>
-          <div style="
-            width: 6px;
-            height: 6px;
-            background-color: #333;
-            border-radius: 50%;
-            position: absolute;
-            top: 16px;
-            left: 9.5px;
-          "></div>
-        </div>
-      `
+      const emoji = emoji_map[lens_type] || '📍' // Default location pin
       
       return L.divIcon({
-        html: marker_html,
-        iconSize: [25, 41],
-        iconAnchor: [12.5, 41],
-        popupAnchor: [0, -41],
-        className: `custom-marker-${lens_type}`
+        html: `<div class="emoji-marker">${emoji}</div>`,
+        className: 'emoji-marker-container',
+        iconSize: [30, 30],
+        iconAnchor: [15, 30],
+        popupAnchor: [0, -30]
       })
     }
   }
@@ -448,5 +416,25 @@ export default {
 :deep(.event-popup p) {
   margin: 4px 0;
   font-size: 13px;
+}
+
+/* Emoji marker styling */
+:deep(.emoji-marker-container) {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+:deep(.emoji-marker) {
+  font-size: 24px;
+  text-align: center;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
 }
 </style>
