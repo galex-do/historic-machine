@@ -74,8 +74,14 @@ export default {
     this.add_event_markers()
   },
   watch: {
-    events() {
-      this.add_event_markers()
+    events: {
+      handler() {
+        if (this.map) {
+          this.add_event_markers()
+        }
+      },
+      deep: true,
+      immediate: false
     }
   },
   methods: {
@@ -122,25 +128,44 @@ export default {
     
     add_event_markers() {
       // Clear existing markers
-      this.markers.forEach(marker => this.map.removeLayer(marker))
+      this.markers.forEach(marker => {
+        if (this.map && this.map.hasLayer(marker)) {
+          this.map.removeLayer(marker)
+        }
+      })
       this.markers = []
       
-      // Add markers for each event with emoji icons
-      this.events.forEach(event => {
-        const emoji_icon = this.create_emoji_marker_icon(event.lens_type)
-        const marker = L.marker([event.latitude, event.longitude], { icon: emoji_icon }).addTo(this.map)
+      // Wait for next tick to ensure map is ready
+      this.$nextTick(() => {
+        // Add markers for each event with emoji icons
+        this.events.forEach(event => {
+          if (!event.latitude || !event.longitude || !this.map) return
+          
+          const emoji_icon = this.create_emoji_marker_icon(event.lens_type)
+          const marker = L.marker([event.latitude, event.longitude], { 
+            icon: emoji_icon,
+            riseOnHover: true
+          }).addTo(this.map)
+          
+          // Add popup with event information
+          marker.bindPopup(`
+            <div class="event-popup">
+              <h4>${event.name}</h4>
+              <p>${event.description}</p>
+              <p><strong>Date:</strong> ${event.display_date || this.format_date(event.event_date)}</p>
+              <p><strong>Type:</strong> ${event.lens_type}</p>
+            </div>
+          `)
+          
+          this.markers.push(marker)
+        })
         
-        // Add popup with event information
-        marker.bindPopup(`
-          <div class="event-popup">
-            <h4>${event.name}</h4>
-            <p>${event.description}</p>
-            <p><strong>Date:</strong> ${event.display_date || this.format_date(event.event_date)}</p>
-            <p><strong>Type:</strong> ${event.lens_type}</p>
-          </div>
-        `)
-        
-        this.markers.push(marker)
+        // Invalidate map size to ensure proper rendering
+        if (this.map) {
+          setTimeout(() => {
+            this.map.invalidateSize(true)
+          }, 100)
+        }
       })
     },
     
@@ -273,11 +298,13 @@ export default {
       const emoji = emoji_map[lens_type] || '📍' // Default location pin
       
       return L.divIcon({
-        html: `<div class="emoji-marker">${emoji}</div>`,
+        html: `<div class="emoji-marker" data-lens="${lens_type}">${emoji}</div>`,
         className: 'emoji-marker-container',
         iconSize: [30, 30],
         iconAnchor: [15, 30],
-        popupAnchor: [0, -30]
+        popupAnchor: [0, -30],
+        // Ensure proper positioning
+        bgPos: [15, 30]
       })
     }
   }
