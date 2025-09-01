@@ -16,33 +16,60 @@
           <!-- Date Selection Mode -->
           <div class="filter-group">
             <label class="filter-label">Date Selection:</label>
-            <div class="radio-group">
-              <label class="radio-option">
-                <input type="radio" value="historic" v-model="date_selection_mode" @change="handle_date_selection_change" />
-                <span>Historical Periods</span>
-              </label>
-              <label class="radio-option">
-                <input type="radio" value="custom" v-model="date_selection_mode" @change="handle_date_selection_change" />
-                <span>Custom Range</span>
-              </label>
+            <div class="multiselect-container">
+              <div class="multiselect-header" @click="show_date_mode_dropdown = !show_date_mode_dropdown">
+                <span class="multiselect-value">
+                  {{ date_selection_mode === 'historic' ? 'Historical Periods' : 'Custom Range' }}
+                </span>
+                <span class="multiselect-arrow">{{ show_date_mode_dropdown ? '▲' : '▼' }}</span>
+              </div>
+              <div v-show="show_date_mode_dropdown" class="multiselect-options">
+                <div class="multiselect-option" @click="select_date_mode('historic')">
+                  <span class="option-content">
+                    <span class="option-label">Historical Periods</span>
+                  </span>
+                </div>
+                <div class="multiselect-option" @click="select_date_mode('custom')">
+                  <span class="option-content">
+                    <span class="option-label">Custom Range</span>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Historical Templates (when historic mode is selected) -->
           <div v-if="date_selection_mode === 'historic'" class="filter-group">
             <label class="filter-label">Historical Period:</label>
-            <select v-model="selected_template_group" @change="apply_template_group" class="form-select">
-              <option value="">All History (Year 1 - Present)</option>
-              <optgroup v-for="group in template_groups" :key="group.id" :label="group.name">
-                <option 
-                  v-for="template in group.templates" 
-                  :key="template.id" 
-                  :value="template.id"
-                >
-                  {{ template.name }}
-                </option>
-              </optgroup>
-            </select>
+            <div class="multiselect-container">
+              <div class="multiselect-header" @click="show_period_dropdown = !show_period_dropdown">
+                <span class="multiselect-value">
+                  <span v-if="!selected_template_group" class="placeholder">All History (Year 1 - Present)</span>
+                  <span v-else class="selected-period">{{ get_selected_period_name() }}</span>
+                </span>
+                <span class="multiselect-arrow">{{ show_period_dropdown ? '▲' : '▼' }}</span>
+              </div>
+              <div v-show="show_period_dropdown" class="multiselect-options">
+                <div class="multiselect-option" @click="select_period('')">
+                  <span class="option-content">
+                    <span class="option-label">All History (Year 1 - Present)</span>
+                  </span>
+                </div>
+                <div v-for="group in template_groups" :key="group.id" class="option-group">
+                  <div class="option-group-label">{{ group.name }}</div>
+                  <div 
+                    v-for="template in group.templates" 
+                    :key="template.id" 
+                    class="multiselect-option option-sub"
+                    @click="select_period(template.id)"
+                  >
+                    <span class="option-content">
+                      <span class="option-label">{{ template.name }}</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Custom Date Range (when custom mode is selected) -->
@@ -167,6 +194,8 @@ export default {
       ],
       selected_lens_types: ['historic', 'political', 'cultural', 'military'], // All selected by default
       show_lens_dropdown: false,
+      show_date_mode_dropdown: false,
+      show_period_dropdown: false,
       sidebar_collapsed: false,
       focus_event: null,
       
@@ -275,14 +304,34 @@ export default {
       this.filter_events()
     },
 
-    handle_date_selection_change() {
-      if (this.date_selection_mode === 'historic') {
+    select_date_mode(mode) {
+      this.date_selection_mode = mode
+      this.show_date_mode_dropdown = false
+      if (mode === 'historic') {
         // Reset to current template or "All History"
         this.apply_template_group()
       } else {
         // When switching to custom, keep current dates but don't override with template
         this.filter_events()
       }
+    },
+
+    select_period(template_id) {
+      this.selected_template_group = template_id
+      this.show_period_dropdown = false
+      this.apply_template_group()
+    },
+
+    get_selected_period_name() {
+      if (!this.selected_template_group) return 'All History (Year 1 - Present)'
+      
+      for (const group of this.template_groups) {
+        const template = group.templates.find(t => t.id == this.selected_template_group)
+        if (template) {
+          return template.name
+        }
+      }
+      return 'All History (Year 1 - Present)'
     },
 
     async handle_event_created(new_event) {
@@ -572,6 +621,33 @@ export default {
 .option-label {
   font-size: 0.9rem;
   color: #4a5568;
+}
+
+.option-group {
+  margin-top: 0.5rem;
+}
+
+.option-group-label {
+  padding: 8px 12px;
+  font-weight: 600;
+  color: #667eea;
+  font-size: 0.85rem;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.option-sub {
+  padding-left: 24px;
+  background: #fafafa;
+}
+
+.option-sub:hover {
+  background: #f0f2ff;
+}
+
+.selected-period {
+  color: #4a5568;
+  font-weight: 500;
 }
 
 .filter-button {
