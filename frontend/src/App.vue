@@ -562,9 +562,9 @@ export default {
 }
 
 .sidebar-toggle {
-  position: absolute;
-  top: 1rem;
-  right: -15px;
+  position: fixed;
+  top: 100px;
+  left: 335px;
   width: 30px;
   height: 30px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -576,9 +576,13 @@ export default {
   align-items: center;
   justify-content: center;
   font-size: 0.8rem;
-  z-index: 1000;
+  z-index: 9999;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   transition: all 0.2s;
+}
+
+.sidebar.collapsed .sidebar-toggle {
+  left: 35px;
 }
 
 .sidebar-toggle:hover {
@@ -959,6 +963,7 @@ export default {
   flex: 1;
   min-height: 60vh;
   position: relative;
+  z-index: 1;
 }
 
 /* Events Section */
@@ -1006,6 +1011,16 @@ export default {
   .sidebar.collapsed {
     width: 100%;
     height: 60px;
+  }
+  
+  .sidebar-toggle {
+    top: 140px;
+    left: calc(100% - 45px);
+  }
+  
+  .sidebar.collapsed .sidebar-toggle {
+    left: calc(100% - 45px);
+    top: 100px;
   }
   
   .content-area {

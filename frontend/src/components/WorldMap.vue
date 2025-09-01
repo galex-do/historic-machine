@@ -171,40 +171,59 @@ export default {
     },
     
     fit_map_to_events() {
-      if (!this.map || !this.events || this.events.length === 0) {
+      // Add comprehensive checks to prevent Leaflet errors
+      if (!this.map || !this.map._loaded || !this.events || this.events.length === 0) {
         return
       }
       
-      // If only one event, center on it with reasonable zoom
-      if (this.events.length === 1) {
-        const event = this.events[0]
-        this.map.setView([event.latitude, event.longitude], 6)
-        return
-      }
-      
-      // For multiple events, calculate bounds
-      const lats = this.events.map(event => event.latitude).filter(lat => lat != null)
-      const lngs = this.events.map(event => event.longitude).filter(lng => lng != null)
-      
-      if (lats.length === 0 || lngs.length === 0) {
-        return
-      }
-      
-      const minLat = Math.min(...lats)
-      const maxLat = Math.max(...lats)
-      const minLng = Math.min(...lngs)
-      const maxLng = Math.max(...lngs)
-      
-      // Create bounds with some padding
-      const bounds = [
-        [minLat, minLng],
-        [maxLat, maxLng]
-      ]
-      
-      // Fit the map to show all events with padding
-      this.map.fitBounds(bounds, {
-        padding: [20, 20],
-        maxZoom: 8 // Don't zoom in too much for close events
+      // Wait for next tick to ensure map is fully rendered
+      this.$nextTick(() => {
+        try {
+          // If only one event, center on it with reasonable zoom
+          if (this.events.length === 1) {
+            const event = this.events[0]
+            if (event.latitude != null && event.longitude != null) {
+              this.map.setView([event.latitude, event.longitude], 6)
+            }
+            return
+          }
+          
+          // For multiple events, calculate bounds
+          const lats = this.events.map(event => event.latitude).filter(lat => lat != null && !isNaN(lat))
+          const lngs = this.events.map(event => event.longitude).filter(lng => lng != null && !isNaN(lng))
+          
+          if (lats.length === 0 || lngs.length === 0) {
+            return
+          }
+          
+          const minLat = Math.min(...lats)
+          const maxLat = Math.max(...lats)
+          const minLng = Math.min(...lngs)
+          const maxLng = Math.max(...lngs)
+          
+          // Ensure bounds are valid
+          if (minLat === maxLat && minLng === maxLng) {
+            // Single point, just center on it
+            this.map.setView([minLat, minLng], 6)
+            return
+          }
+          
+          // Create bounds with some padding
+          const bounds = [
+            [minLat, minLng],
+            [maxLat, maxLng]
+          ]
+          
+          // Fit the map to show all events with padding
+          this.map.fitBounds(bounds, {
+            padding: [20, 20],
+            maxZoom: 8 // Don't zoom in too much for close events
+          })
+        } catch (error) {
+          console.warn('Error fitting map to events:', error)
+          // Fallback to world view if there's an error
+          this.map.setView([20, 0], 2)
+        }
       })
     },
     
