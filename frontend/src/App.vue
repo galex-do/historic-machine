@@ -171,13 +171,21 @@ export default {
     },
     filter_events() {
       this.filtered_events = this.events.filter(event => {
-        // Date filtering
-        const event_date = new Date(event.event_date)
-        const from_date = this.date_from ? new Date(this.date_from) : null
-        const to_date = this.date_to ? new Date(this.date_to) : null
+        // Date filtering using astronomical year comparison for BC dates
+        const event_astronomical_year = this.get_astronomical_year(event.event_date, event.era)
+        const from_astronomical_year = this.date_from ? this.get_astronomical_year(this.date_from, this.get_era_from_date(this.date_from)) : null
+        const to_astronomical_year = this.date_to ? this.get_astronomical_year(this.date_to, this.get_era_from_date(this.date_to)) : null
         
-        if (from_date && event_date < from_date) return false
-        if (to_date && event_date > to_date) return false
+        if (from_astronomical_year !== null && event_astronomical_year < from_astronomical_year) return false
+        if (to_astronomical_year !== null && event_astronomical_year > to_astronomical_year) return false
+        
+        // For same astronomical year, compare the actual dates
+        if (from_astronomical_year !== null && event_astronomical_year === from_astronomical_year) {
+          if (event.event_date < this.date_from) return false
+        }
+        if (to_astronomical_year !== null && event_astronomical_year === to_astronomical_year) {
+          if (event.event_date > this.date_to) return false
+        }
         
         // Lens type filtering
         if (this.selected_lens_types.length > 0 && !this.selected_lens_types.includes(event.lens_type)) {
@@ -189,6 +197,40 @@ export default {
       
       const lens_filter_text = this.selected_lens_types.length === 4 ? 'all types' : this.selected_lens_types.join(', ')
       console.log(`Filtering events from ${this.date_from} to ${this.date_to} for lens types: ${lens_filter_text}. Found ${this.filtered_events.length} events.`)
+    },
+    
+    get_astronomical_year(date_string, era) {
+      if (!date_string) return null
+      
+      const year = parseInt(date_string.split('-')[0], 10)
+      
+      if (era === 'BC') {
+        return (year * -1) + 1  // Convert BC year to astronomical year
+      } else {
+        return year  // AD years are already correct
+      }
+    },
+    
+    get_era_from_date(date_string) {
+      if (!date_string) return 'AD'
+      
+      const year = parseInt(date_string.split('-')[0], 10)
+      // For our system, years <= 0 are BC, years > 0 are AD
+      // But we store BC years as positive numbers with era='BC'
+      // So we need to check if this is part of a template selection
+      
+      // If we're in template mode and have a selected template, use its era
+      if (this.date_selection_mode === 'historic' && this.selected_template) {
+        if (date_string === this.selected_template.start_date) {
+          return this.selected_template.start_era
+        }
+        if (date_string === this.selected_template.end_date) {
+          return this.selected_template.end_era
+        }
+      }
+      
+      // Default assumption based on year
+      return year < 1000 ? 'BC' : 'AD'  // Heuristic for old dates
     },
     
     async handle_event_created(new_event) {
