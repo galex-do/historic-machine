@@ -99,28 +99,50 @@ export default {
     
     async submit_group() {
       try {
+        if (!this.group_form.name.trim()) {
+          alert('Group name is required')
+          return
+        }
+        
         const url = this.show_create_modal 
           ? 'http://localhost:8080/api/date-template-groups'
           : `http://localhost:8080/api/date-template-groups/${this.group_form.id}`
         
         const method = this.show_create_modal ? 'POST' : 'PUT'
         
+        const payload = {
+          name: this.group_form.name.trim(),
+          description: this.group_form.description.trim(),
+          display_order: this.group_form.display_order || 1
+        }
+        
+        if (!this.show_create_modal && this.group_form.id) {
+          payload.id = this.group_form.id
+        }
+        
+        console.log('Saving group with payload:', payload)
+        
         const response = await fetch(url, {
           method,
           headers: {
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify(this.group_form)
+          body: JSON.stringify(payload)
         })
         
         if (response.ok) {
+          const result = await response.json()
+          console.log('Group saved successfully:', result)
           await this.load_groups()
           this.close_modal()
         } else {
-          console.error('Failed to save group')
+          const error_text = await response.text()
+          console.error('Failed to save group:', response.status, error_text)
+          alert(`Failed to save group: ${error_text}`)
         }
       } catch (error) {
         console.error('Error saving group:', error)
+        alert(`Error saving group: ${error.message}`)
       }
     },
     

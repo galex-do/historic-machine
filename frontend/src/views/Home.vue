@@ -266,8 +266,9 @@ export default {
         }
         
         if (selected_template) {
-          this.date_from = selected_template.date_from
-          this.date_to = selected_template.date_to
+          // Convert from backend format to frontend format
+          this.date_from = selected_template.start_date || '0001-01-01'
+          this.date_to = selected_template.end_date || new Date().toISOString().split('T')[0]
         }
       }
       
@@ -385,10 +386,16 @@ export default {
   position: relative;
   display: flex;
   flex-direction: column;
+  min-height: 0;
+  z-index: 5;
 }
 
 .sidebar.collapsed {
   width: 50px;
+}
+
+.sidebar.collapsed .sidebar-section {
+  display: none;
 }
 
 .sidebar-toggle {

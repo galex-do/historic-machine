@@ -425,27 +425,66 @@ func get_events_in_radius(w http.ResponseWriter, r *http.Request) {
 
 // Date template handlers
 func get_date_template_groups(w http.ResponseWriter, r *http.Request) {
-        query := `
+        // First get all groups
+        group_query := `
                 SELECT id, name, description, display_order
                 FROM date_template_groups 
                 ORDER BY display_order`
         
-        rows, err := db.Query(query)
+        group_rows, err := db.Query(group_query)
         if err != nil {
                 http.Error(w, "Failed to fetch date template groups", http.StatusInternalServerError)
                 log.Printf("Error fetching date template groups: %v", err)
                 return
         }
-        defer rows.Close()
+        defer group_rows.Close()
         
-        var groups []DateTemplateGroup
-        for rows.Next() {
-                var group DateTemplateGroup
-                err := rows.Scan(&group.ID, &group.Name, &group.Description, &group.DisplayOrder)
+        type GroupWithTemplates struct {
+                ID           int                 `json:"id"`
+                Name         string              `json:"name"`
+                Description  string              `json:"description"`
+                DisplayOrder int                 `json:"display_order"`
+                Templates    []DateTemplate      `json:"templates"`
+        }
+        
+        var groups []GroupWithTemplates
+        for group_rows.Next() {
+                var group GroupWithTemplates
+                err := group_rows.Scan(&group.ID, &group.Name, &group.Description, &group.DisplayOrder)
                 if err != nil {
                         log.Printf("Error scanning date template group: %v", err)
                         continue
                 }
+                
+                // Get templates for this group
+                template_query := `
+                        SELECT id, group_id, name, start_date, start_era, end_date, end_era, display_order
+                        FROM date_templates 
+                        WHERE group_id = $1
+                        ORDER BY display_order`
+                
+                template_rows, err := db.Query(template_query, group.ID)
+                if err != nil {
+                        log.Printf("Error fetching templates for group %d: %v", group.ID, err)
+                        groups = append(groups, group) // Add group even without templates
+                        continue
+                }
+                
+                var templates []DateTemplate
+                for template_rows.Next() {
+                        var template DateTemplate
+                        err := template_rows.Scan(&template.ID, &template.GroupID, &template.Name,
+                                &template.StartDate, &template.StartEra, &template.EndDate, 
+                                &template.EndEra, &template.DisplayOrder)
+                        if err != nil {
+                                log.Printf("Error scanning template: %v", err)
+                                continue
+                        }
+                        templates = append(templates, template)
+                }
+                template_rows.Close()
+                
+                group.Templates = templates
                 groups = append(groups, group)
         }
         
