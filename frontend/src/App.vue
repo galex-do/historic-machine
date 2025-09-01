@@ -2,7 +2,7 @@
   <div id="app">
     <!-- Header -->
     <header class="app-header">
-      <h1>🗺️ Historical Events Mapping</h1>
+      <h1>Historical Events Mapping</h1>
     </header>
     
     <!-- Main Layout: Sidebar + Map -->
@@ -11,12 +11,12 @@
       <aside class="sidebar" :class="{ 'collapsed': sidebar_collapsed }">
         <!-- Sidebar Toggle Button -->
         <button class="sidebar-toggle" @click="toggle_sidebar">
-          {{ sidebar_collapsed ? '→' : '←' }}
+          {{ sidebar_collapsed ? '›' : '‹' }}
         </button>
         
         <!-- Filters Section -->
         <div class="sidebar-section" v-show="!sidebar_collapsed">
-          <h3 class="section-title">🎯 Filters</h3>
+          <h3 class="section-title">Filters</h3>
           
           <!-- Date Selection Mode -->
           <div class="filter-group">
@@ -120,7 +120,7 @@
         
         <!-- Events List Below Map -->
         <div class="events-section">
-          <h3 class="section-title">📍 Historical Events ({{ filtered_events.length }})</h3>
+          <h3 class="section-title">Historical Events ({{ filtered_events.length }})</h3>
           
           <div class="events-grid">
             <div v-if="filtered_events.length === 0" class="no-events">
@@ -132,7 +132,7 @@
                 <span class="event-emoji">{{ getEventEmoji(event.lens_type) }}</span>
                 <h4 class="event-title">{{ event.name }}</h4>
                 <button class="focus-button" @click="focus_on_event(event)" title="Focus on map">
-                  🎯
+                  ⌖
                 </button>
               </div>
               <p class="event-description">{{ event.description }}</p>
@@ -907,25 +907,28 @@ export default {
 }
 
 .focus-button {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border: none;
-  border-radius: 50%;
+  background: #f8f9fa;
+  color: #667eea;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
   width: 28px;
   height: 28px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
   transition: all 0.2s;
   flex-shrink: 0;
   margin-left: auto;
 }
 
 .focus-button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(102, 126, 234, 0.2);
 }
 
 .focus-button:active {
