@@ -28,6 +28,28 @@ type HistoricalEvent struct {
         DisplayDate string    `json:"display_date,omitempty"`
 }
 
+type DateTemplateGroup struct {
+        ID           int    `json:"id"`
+        Name         string `json:"name"`
+        Description  string `json:"description"`
+        DisplayOrder int    `json:"display_order"`
+}
+
+type DateTemplate struct {
+        ID               int    `json:"id"`
+        GroupID          int    `json:"group_id"`
+        GroupName        string `json:"group_name"`
+        Name             string `json:"name"`
+        Description      string `json:"description"`
+        StartDate        string `json:"start_date"`
+        StartEra         string `json:"start_era"`
+        EndDate          string `json:"end_date"`
+        EndEra           string `json:"end_era"`
+        DisplayOrder     int    `json:"display_order"`
+        StartDisplayDate string `json:"start_display_date"`
+        EndDisplayDate   string `json:"end_display_date"`
+}
+
 type DatabaseConfig struct {
         Host     string
         Port     string
@@ -73,6 +95,11 @@ func main() {
         // Spatial query endpoints
         router.HandleFunc("/api/events/bbox", get_events_in_bbox).Methods("GET")
         router.HandleFunc("/api/events/radius", get_events_in_radius).Methods("GET")
+        
+        // Date template endpoints
+        router.HandleFunc("/api/date-template-groups", get_date_template_groups).Methods("GET")
+        router.HandleFunc("/api/date-templates/{group_id}", get_date_templates_by_group).Methods("GET")
+        router.HandleFunc("/api/date-templates", get_all_date_templates).Methods("GET")
 
         log.Println("Server starting on :8080")
         log.Fatal(http.ListenAndServe(":8080", router))
@@ -384,6 +411,108 @@ func get_events_in_radius(w http.ResponseWriter, r *http.Request) {
         
         w.Header().Set("Content-Type", "application/json")
         json.NewEncoder(w).Encode(events)
+}
+
+// Date template handlers
+func get_date_template_groups(w http.ResponseWriter, r *http.Request) {
+        query := `
+                SELECT id, name, description, display_order
+                FROM date_template_groups 
+                ORDER BY display_order`
+        
+        rows, err := db.Query(query)
+        if err != nil {
+                http.Error(w, "Failed to fetch date template groups", http.StatusInternalServerError)
+                log.Printf("Error fetching date template groups: %v", err)
+                return
+        }
+        defer rows.Close()
+        
+        var groups []DateTemplateGroup
+        for rows.Next() {
+                var group DateTemplateGroup
+                err := rows.Scan(&group.ID, &group.Name, &group.Description, &group.DisplayOrder)
+                if err != nil {
+                        log.Printf("Error scanning date template group: %v", err)
+                        continue
+                }
+                groups = append(groups, group)
+        }
+        
+        w.Header().Set("Content-Type", "application/json")
+        json.NewEncoder(w).Encode(groups)
+}
+
+func get_date_templates_by_group(w http.ResponseWriter, r *http.Request) {
+        vars := mux.Vars(r)
+        group_id := vars["group_id"]
+        
+        query := `
+                SELECT id, group_id, group_name, name, description,
+                       start_date, start_era, end_date, end_era, display_order,
+                       start_display_date, end_display_date
+                FROM date_templates_with_display 
+                WHERE group_id = $1
+                ORDER BY display_order`
+        
+        rows, err := db.Query(query, group_id)
+        if err != nil {
+                http.Error(w, "Failed to fetch date templates", http.StatusInternalServerError)
+                log.Printf("Error fetching date templates for group %s: %v", group_id, err)
+                return
+        }
+        defer rows.Close()
+        
+        var templates []DateTemplate
+        for rows.Next() {
+                var template DateTemplate
+                err := rows.Scan(&template.ID, &template.GroupID, &template.GroupName, 
+                        &template.Name, &template.Description, &template.StartDate, &template.StartEra,
+                        &template.EndDate, &template.EndEra, &template.DisplayOrder,
+                        &template.StartDisplayDate, &template.EndDisplayDate)
+                if err != nil {
+                        log.Printf("Error scanning date template: %v", err)
+                        continue
+                }
+                templates = append(templates, template)
+        }
+        
+        w.Header().Set("Content-Type", "application/json")
+        json.NewEncoder(w).Encode(templates)
+}
+
+func get_all_date_templates(w http.ResponseWriter, r *http.Request) {
+        query := `
+                SELECT id, group_id, group_name, name, description,
+                       start_date, start_era, end_date, end_era, display_order,
+                       start_display_date, end_display_date
+                FROM date_templates_with_display 
+                ORDER BY group_id, display_order`
+        
+        rows, err := db.Query(query)
+        if err != nil {
+                http.Error(w, "Failed to fetch all date templates", http.StatusInternalServerError)
+                log.Printf("Error fetching all date templates: %v", err)
+                return
+        }
+        defer rows.Close()
+        
+        var templates []DateTemplate
+        for rows.Next() {
+                var template DateTemplate
+                err := rows.Scan(&template.ID, &template.GroupID, &template.GroupName, 
+                        &template.Name, &template.Description, &template.StartDate, &template.StartEra,
+                        &template.EndDate, &template.EndEra, &template.DisplayOrder,
+                        &template.StartDisplayDate, &template.EndDisplayDate)
+                if err != nil {
+                        log.Printf("Error scanning date template: %v", err)
+                        continue
+                }
+                templates = append(templates, template)
+        }
+        
+        w.Header().Set("Content-Type", "application/json")
+        json.NewEncoder(w).Encode(templates)
 }
 
 // Helper functions for geometry handling (unused but available for future use)
