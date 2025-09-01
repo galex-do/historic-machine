@@ -23,7 +23,9 @@ type HistoricalEvent struct {
         Latitude    float64   `json:"latitude"`
         Longitude   float64   `json:"longitude"`
         EventDate   time.Time `json:"event_date"`
+        Era         string    `json:"era"`
         LensType    string    `json:"lens_type"`
+        DisplayDate string    `json:"display_date,omitempty"`
 }
 
 type DatabaseConfig struct {
@@ -145,11 +147,11 @@ func connect_database() (*sql.DB, error) {
 }
 
 func get_events_from_db(database *sql.DB) ([]HistoricalEvent, error) {
-        // Use PostGIS to get accurate coordinates from location column
+        // Use the view that handles BC/AD dates properly
         query := `
-                SELECT id, name, description, latitude, longitude, event_date, lens_type
-                FROM events 
-                ORDER BY event_date DESC`
+                SELECT id, name, description, latitude, longitude, event_date, era, lens_type, display_date
+                FROM events_with_display_dates 
+                ORDER BY astronomical_year ASC`
         
         rows, err := database.Query(query)
         if err != nil {
@@ -163,7 +165,7 @@ func get_events_from_db(database *sql.DB) ([]HistoricalEvent, error) {
                 var event HistoricalEvent
                 
                 err := rows.Scan(&event.ID, &event.Name, &event.Description, &event.Latitude, 
-                                                &event.Longitude, &event.EventDate, &event.LensType)
+                                                &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.DisplayDate)
                 if err != nil {
                         return nil, err
                 }
@@ -214,14 +216,14 @@ func get_events_in_bounding_box(database *sql.DB, minLat, minLng, maxLat, maxLng
 
 func create_event_with_location(database *sql.DB, event HistoricalEvent) (*HistoricalEvent, error) {
         query := `
-                INSERT INTO events (name, description, latitude, longitude, event_date, lens_type) 
-                VALUES ($1, $2, $3, $4, $5, $6) 
+                INSERT INTO events (name, description, latitude, longitude, event_date, era, lens_type) 
+                VALUES ($1, $2, $3, $4, $5, $6, $7) 
                 RETURNING id`
         
         var created_event HistoricalEvent = event
         
         err := database.QueryRow(query, event.Name, event.Description, event.Latitude, 
-                                           event.Longitude, event.EventDate, event.LensType).
+                                           event.Longitude, event.EventDate, event.Era, event.LensType).
                 Scan(&created_event.ID)
         
         if err != nil {
@@ -270,6 +272,11 @@ func create_event(w http.ResponseWriter, r *http.Request) {
                 return
         }
         
+        // Set default era if not provided
+        if new_event.Era == "" {
+                new_event.Era = "AD"
+        }
+        
         // Validate coordinates
         err = validate_coordinates(new_event.Latitude, new_event.Longitude)
         if err != nil {
@@ -277,7 +284,7 @@ func create_event(w http.ResponseWriter, r *http.Request) {
                 return
         }
         
-        // Use PostGIS-enabled creation function
+        // Create event with era support
         created_event, err := create_event_with_location(db, new_event)
         if err != nil {
                 http.Error(w, "Failed to create event", http.StatusInternalServerError)
