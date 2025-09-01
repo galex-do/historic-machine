@@ -96,7 +96,6 @@
                     @change="filter_events" 
                   />
                   <span class="option-content">
-                    <span class="option-emoji">{{ getEventEmoji(lens.value) }}</span>
                     <span class="option-label">{{ lens.label }}</span>
                   </span>
                 </label>
@@ -577,7 +576,7 @@ export default {
   align-items: center;
   justify-content: center;
   font-size: 0.8rem;
-  z-index: 100;
+  z-index: 1000;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   transition: all 0.2s;
 }
@@ -824,11 +823,6 @@ export default {
 .option-content {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-}
-
-.option-emoji {
-  font-size: 1.1rem;
 }
 
 .option-label {
