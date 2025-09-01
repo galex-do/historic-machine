@@ -1011,7 +1011,6 @@ export default {
 /* Map Section */
 .map-section {
   flex: 1;
-  height: 100%;
   position: relative;
   z-index: 1;
 }
