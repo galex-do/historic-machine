@@ -68,11 +68,34 @@
           <!-- Event Types -->
           <div class="filter-group">
             <label class="filter-label">Event Types:</label>
-            <div class="lens-grid">
-              <label v-for="lens in available_lens_types" :key="lens.value" class="lens-item">
-                <input type="checkbox" :value="lens.value" v-model="selected_lens_types" @change="filter_events" />
-                <span :class="['lens-badge', lens.value]">{{ lens.label }}</span>
-              </label>
+            <div class="multiselect-container">
+              <div class="multiselect-dropdown" @click="toggle_lens_dropdown" :class="{ 'active': show_lens_dropdown }">
+                <div class="multiselect-display">
+                  <span v-if="selected_lens_types.length === 0" class="placeholder">Select event types...</span>
+                  <span v-else-if="selected_lens_types.length === available_lens_types.length" class="selection-text">All types selected</span>
+                  <div v-else class="selected-badges">
+                    <span v-for="type in selected_lens_types" :key="type" :class="['selected-badge', type]">
+                      {{ getEventEmoji(type) }} {{ getLensLabel(type) }}
+                    </span>
+                  </div>
+                </div>
+                <span class="dropdown-arrow">{{ show_lens_dropdown ? '▲' : '▼' }}</span>
+              </div>
+              
+              <div v-show="show_lens_dropdown" class="multiselect-options">
+                <label v-for="lens in available_lens_types" :key="lens.value" class="multiselect-option">
+                  <input 
+                    type="checkbox" 
+                    :value="lens.value" 
+                    v-model="selected_lens_types" 
+                    @change="filter_events" 
+                  />
+                  <span class="option-content">
+                    <span class="option-emoji">{{ getEventEmoji(lens.value) }}</span>
+                    <span class="option-label">{{ lens.label }}</span>
+                  </span>
+                </label>
+              </div>
             </div>
           </div>
           
@@ -137,6 +160,7 @@ export default {
         { value: 'military', label: '⚔️ Military' }
       ],
       selected_lens_types: ['historic', 'political', 'cultural', 'military'], // All selected by default
+      show_lens_dropdown: false,
       
       // Date template system
       date_selection_mode: 'historic', // 'historic' or 'custom'
@@ -157,6 +181,13 @@ export default {
     await this.fetch_events()
     // Apply initial filter with default date range
     this.filter_events()
+    
+    // Add click outside handler for dropdown
+    document.addEventListener('click', this.handle_click_outside)
+  },
+  
+  beforeUnmount() {
+    document.removeEventListener('click', this.handle_click_outside)
   },
   methods: {
     get_backend_url() {
@@ -443,6 +474,22 @@ export default {
         'cultural': '🎭'
       }
       return emoji_map[lens_type] || '📍'
+    },
+    
+    getLensLabel(lens_type) {
+      const lens_obj = this.available_lens_types.find(lens => lens.value === lens_type)
+      return lens_obj ? lens_obj.label.replace(/[⚔️🏛️📜🎭]\s/, '') : lens_type
+    },
+    
+    toggle_lens_dropdown() {
+      this.show_lens_dropdown = !this.show_lens_dropdown
+    },
+    
+    handle_click_outside(event) {
+      const dropdown = event.target.closest('.multiselect-container')
+      if (!dropdown) {
+        this.show_lens_dropdown = false
+      }
     }
   }
 }
@@ -609,60 +656,140 @@ export default {
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
-/* Event Type Grid */
-.lens-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+/* Multi-Select Dropdown */
+.multiselect-container {
+  position: relative;
+}
+
+.multiselect-dropdown {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s;
+  min-height: 45px;
+}
+
+.multiselect-dropdown:hover {
+  border-color: #cbd5e0;
+}
+
+.multiselect-dropdown.active {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.multiselect-display {
+  flex: 1;
+}
+
+.placeholder {
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+
+.selection-text {
+  color: #2d3748;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.selected-badges {
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-.lens-item {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  padding: 0.25rem;
-}
-
-.lens-item input {
-  margin-right: 0.5rem;
-  accent-color: #667eea;
-}
-
-.lens-badge {
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: 0.25rem 0.5rem;
-  border-radius: 6px;
-  transition: all 0.2s;
-  display: flex;
+.selected-badge {
+  display: inline-flex;
   align-items: center;
   gap: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
-.lens-badge.military {
+.selected-badge.military {
   background: #fed7d7;
   color: #c53030;
 }
 
-.lens-badge.political {
+.selected-badge.political {
   background: #bee3f8;
   color: #2b6cb0;
 }
 
-.lens-badge.historic {
+.selected-badge.historic {
   background: #e2e8f0;
   color: #4a5568;
 }
 
-.lens-badge.cultural {
+.selected-badge.cultural {
   background: #c6f6d5;
   color: #25855a;
 }
 
-.lens-item input:not(:checked) + .lens-badge {
-  opacity: 0.5;
-  background: #f7fafc !important;
-  color: #a0aec0 !important;
+.dropdown-arrow {
+  color: #718096;
+  font-size: 0.8rem;
+  transition: transform 0.2s;
+}
+
+.multiselect-dropdown.active .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.multiselect-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  margin-top: 0.25rem;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.multiselect-option {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.multiselect-option:hover {
+  background: #f7fafc;
+}
+
+.multiselect-option input {
+  margin-right: 0.75rem;
+  accent-color: #667eea;
+}
+
+.option-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.option-emoji {
+  font-size: 1.1rem;
+}
+
+.option-label {
+  font-size: 0.9rem;
+  color: #2d3748;
 }
 
 /* Filter Button */
