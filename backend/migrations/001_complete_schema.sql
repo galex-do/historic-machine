@@ -1,5 +1,21 @@
 -- +goose Up
--- Create date template groups (e.g., "Roman Empire", "Medieval Period")
+-- Complete database schema for Historical Events Mapping
+
+-- Create events table with all necessary columns
+CREATE TABLE events (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT,
+    latitude DECIMAL(10, 8) NOT NULL,
+    longitude DECIMAL(11, 8) NOT NULL,
+    event_date DATE NOT NULL,
+    era VARCHAR(2) DEFAULT 'AD' CHECK (era IN ('BC', 'AD')),
+    lens_type VARCHAR(50) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Create date template groups
 CREATE TABLE date_template_groups (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL UNIQUE,
@@ -8,7 +24,7 @@ CREATE TABLE date_template_groups (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Create date templates (e.g., "Rule of Julius Caesar", "First Punic War")
+-- Create date templates
 CREATE TABLE date_templates (
     id SERIAL PRIMARY KEY,
     group_id INTEGER NOT NULL REFERENCES date_template_groups(id) ON DELETE CASCADE,
@@ -22,13 +38,27 @@ CREATE TABLE date_templates (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Create indexes for performance
+-- Create indexes
+CREATE INDEX idx_events_date ON events(event_date);
+CREATE INDEX idx_events_lens_type ON events(lens_type);
+CREATE INDEX idx_events_era ON events(era);
+CREATE INDEX idx_events_location ON events(latitude, longitude);
 CREATE INDEX idx_date_templates_group_id ON date_templates(group_id);
 CREATE INDEX idx_date_templates_dates ON date_templates(start_date, end_date);
 CREATE INDEX idx_date_template_groups_order ON date_template_groups(display_order);
 CREATE INDEX idx_date_templates_order ON date_templates(display_order);
 
--- Insert sample date template groups
+-- Insert sample historical events
+INSERT INTO events (name, description, latitude, longitude, event_date, era, lens_type) VALUES 
+('Foundation of Rome', 'Legendary founding of Rome by Romulus', 41.9028, 12.4964, '0753-04-21', 'BC', 'historic'),
+('Battle of Marathon', 'Greeks defeat Persian invasion', 38.1462, 23.9608, '0490-09-12', 'BC', 'military'),
+('Birth of Plato', 'Great philosopher born in Athens', 37.9755, 23.7348, '0428-05-21', 'BC', 'cultural'),
+('Battle of Gaugamela', 'Alexander defeats Darius III', 36.3402, 43.1503, '0331-10-01', 'BC', 'military'),
+('Assassination of Julius Caesar', 'Caesar killed in the Roman Senate', 41.8955, 12.4823, '0044-03-15', 'BC', 'political'),
+('Fall of Constantinople', 'End of the Byzantine Empire', 41.0082, 28.9784, '1453-05-29', 'AD', 'military'),
+('Discovery of America', 'Columbus reaches the New World', 25.0343, -77.3963, '1492-10-12', 'AD', 'historic');
+
+-- Insert date template groups
 INSERT INTO date_template_groups (name, description, display_order) VALUES 
 ('Roman Empire', 'Major periods and events of the Roman Empire', 1),
 ('Medieval Period', 'Key events and periods of the Middle Ages', 2),
@@ -137,7 +167,34 @@ FROM date_templates dt
 JOIN date_template_groups dtg ON dt.group_id = dtg.id
 ORDER BY dtg.display_order, dt.display_order;
 
+-- Create view for events with display dates  
+CREATE OR REPLACE VIEW events_with_display_dates AS
+SELECT 
+    e.*,
+    CASE 
+        WHEN e.era = 'BC' THEN 
+            CONCAT(
+                LPAD(EXTRACT(DAY FROM e.event_date)::TEXT, 2, '0'), '.',
+                LPAD(EXTRACT(MONTH FROM e.event_date)::TEXT, 2, '0'), '.',
+                EXTRACT(YEAR FROM e.event_date)::TEXT, ' BC'
+            )
+        ELSE 
+            CONCAT(
+                LPAD(EXTRACT(DAY FROM e.event_date)::TEXT, 2, '0'), '.',
+                LPAD(EXTRACT(MONTH FROM e.event_date)::TEXT, 2, '0'), '.',
+                EXTRACT(YEAR FROM e.event_date)::TEXT, ' AD'
+            )
+    END AS display_date,
+    CASE 
+        WHEN e.era = 'BC' THEN (EXTRACT(YEAR FROM e.event_date) * -1) + 1
+        ELSE EXTRACT(YEAR FROM e.event_date)
+    END AS astronomical_year
+FROM events e
+ORDER BY astronomical_year ASC;
+
 -- +goose Down
+DROP VIEW IF EXISTS events_with_display_dates;
 DROP VIEW IF EXISTS date_templates_with_display;
 DROP TABLE IF EXISTS date_templates;
 DROP TABLE IF EXISTS date_template_groups;
+DROP TABLE IF EXISTS events;
