@@ -78,6 +78,7 @@ export default {
       handler() {
         if (this.map) {
           this.add_event_markers()
+          this.fit_map_to_events()
         }
       },
       deep: true,
@@ -166,6 +167,44 @@ export default {
             this.map.invalidateSize(true)
           }, 100)
         }
+      })
+    },
+    
+    fit_map_to_events() {
+      if (!this.map || !this.events || this.events.length === 0) {
+        return
+      }
+      
+      // If only one event, center on it with reasonable zoom
+      if (this.events.length === 1) {
+        const event = this.events[0]
+        this.map.setView([event.latitude, event.longitude], 6)
+        return
+      }
+      
+      // For multiple events, calculate bounds
+      const lats = this.events.map(event => event.latitude).filter(lat => lat != null)
+      const lngs = this.events.map(event => event.longitude).filter(lng => lng != null)
+      
+      if (lats.length === 0 || lngs.length === 0) {
+        return
+      }
+      
+      const minLat = Math.min(...lats)
+      const maxLat = Math.max(...lats)
+      const minLng = Math.min(...lngs)
+      const maxLng = Math.max(...lngs)
+      
+      // Create bounds with some padding
+      const bounds = [
+        [minLat, minLng],
+        [maxLat, maxLng]
+      ]
+      
+      // Fit the map to show all events with padding
+      this.map.fitBounds(bounds, {
+        padding: [20, 20],
+        maxZoom: 8 // Don't zoom in too much for close events
       })
     },
     
