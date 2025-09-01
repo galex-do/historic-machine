@@ -220,7 +220,8 @@ export default {
           throw new Error(`HTTP error! status: ${response.status}`)
         }
         
-        this.events = await response.json()
+        const response_data = await response.json()
+        this.events = response_data.data || response_data // Handle both new and old format
         this.filtered_events = this.events
         console.log('Successfully loaded events:', this.events.length)
       } catch (error) {
@@ -241,6 +242,12 @@ export default {
       }
     },
     filter_events() {
+      // Ensure events is an array before filtering
+      if (!Array.isArray(this.events)) {
+        console.warn('Events is not an array:', this.events)
+        this.events = []
+      }
+      
       this.filtered_events = this.events.filter(event => {
         // Date filtering using astronomical year comparison for BC dates
         const event_astronomical_year = this.get_astronomical_year(event.event_date, event.era)
@@ -311,11 +318,16 @@ export default {
     },
     
     formatDate(dateString) {
+      if (!dateString) return ''
+      
+      // Ensure dateString is a string before calling startsWith
+      const dateStr = String(dateString)
+      
       // For very old dates, parse manually to avoid Date object issues
-      if (dateString.startsWith('00') || dateString.startsWith('01')) {
-        return this.format_date_to_ddmmyyyy(dateString)
+      if (dateStr.startsWith('00') || dateStr.startsWith('01')) {
+        return this.format_date_to_ddmmyyyy(dateStr)
       }
-      return this.format_date_to_ddmmyyyy(new Date(dateString))
+      return this.format_date_to_ddmmyyyy(new Date(dateStr))
     },
     
     format_date_to_ddmmyyyy(date) {
@@ -400,7 +412,8 @@ export default {
           throw new Error(`HTTP error! status: ${response.status}`)
         }
         
-        this.template_groups = await response.json()
+        const response_data = await response.json()
+        this.template_groups = response_data.data || response_data // Handle both new and old format
         console.log('Successfully loaded template groups:', this.template_groups.length)
       } catch (error) {
         console.error('Error fetching template groups:', error)
@@ -416,7 +429,8 @@ export default {
           throw new Error(`HTTP error! status: ${response.status}`)
         }
         
-        this.available_templates = await response.json()
+        const response_data = await response.json()
+        this.available_templates = response_data.data || response_data // Handle both new and old format
         console.log('Successfully loaded templates for group:', this.available_templates.length)
       } catch (error) {
         console.error('Error fetching templates for group:', error)
