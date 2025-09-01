@@ -35,6 +35,14 @@ type DateTemplateGroup struct {
         DisplayOrder int    `json:"display_order"`
 }
 
+type GroupWithTemplates struct {
+        ID           int            `json:"id"`
+        Name         string         `json:"name"`
+        Description  string         `json:"description"`
+        DisplayOrder int            `json:"display_order"`
+        Templates    []DateTemplate `json:"templates"`
+}
+
 type DateTemplate struct {
         ID               int    `json:"id"`
         GroupID          int    `json:"group_id"`
@@ -439,14 +447,6 @@ func get_date_template_groups(w http.ResponseWriter, r *http.Request) {
         }
         defer group_rows.Close()
         
-        type GroupWithTemplates struct {
-                ID           int                 `json:"id"`
-                Name         string              `json:"name"`
-                Description  string              `json:"description"`
-                DisplayOrder int                 `json:"display_order"`
-                Templates    []DateTemplate      `json:"templates"`
-        }
-        
         var groups []GroupWithTemplates
         for group_rows.Next() {
                 var group GroupWithTemplates
@@ -463,6 +463,7 @@ func get_date_template_groups(w http.ResponseWriter, r *http.Request) {
                         WHERE group_id = $1
                         ORDER BY display_order`
                 
+                log.Printf("Fetching templates for group %d (%s)", group.ID, group.Name)
                 template_rows, err := db.Query(template_query, group.ID)
                 if err != nil {
                         log.Printf("Error fetching templates for group %d: %v", group.ID, err)
@@ -480,10 +481,12 @@ func get_date_template_groups(w http.ResponseWriter, r *http.Request) {
                                 log.Printf("Error scanning template: %v", err)
                                 continue
                         }
+                        log.Printf("Loaded template: %s (ID: %d)", template.Name, template.ID)
                         templates = append(templates, template)
                 }
                 template_rows.Close()
                 
+                log.Printf("Group %s has %d templates", group.Name, len(templates))
                 group.Templates = templates
                 groups = append(groups, group)
         }

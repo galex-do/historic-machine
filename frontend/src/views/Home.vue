@@ -226,6 +226,11 @@ export default {
         if (response.ok) {
           this.template_groups = await response.json()
           console.log('Successfully loaded template groups:', this.template_groups.length)
+          console.log('Template groups data:', this.template_groups)
+          // Check if groups have templates
+          this.template_groups.forEach(group => {
+            console.log(`Group "${group.name}" has ${group.templates ? group.templates.length : 0} templates`)
+          })
         } else {
           console.error('Failed to load template groups:', response.status)
         }
@@ -279,25 +284,34 @@ export default {
     },
 
     apply_template_group() {
+      console.log('Applying template group. Selected ID:', this.selected_template_group)
+      console.log('Available template groups:', this.template_groups)
+      
       if (!this.selected_template_group) {
         // "All History" selected - show everything from year 1 to present
         this.date_from = '0001-01-01'
         this.date_to = new Date().toISOString().split('T')[0]
+        console.log('Set to All History: from', this.date_from, 'to', this.date_to)
       } else {
         // Find the selected template
         let selected_template = null
         for (const group of this.template_groups) {
-          const template = group.templates.find(t => t.id == this.selected_template_group)
-          if (template) {
-            selected_template = template
-            break
+          if (group.templates) {
+            const template = group.templates.find(t => t.id == this.selected_template_group)
+            if (template) {
+              selected_template = template
+              break
+            }
           }
         }
+        
+        console.log('Found selected template:', selected_template)
         
         if (selected_template) {
           // Convert from backend format to frontend format
           this.date_from = selected_template.start_date || '0001-01-01'
           this.date_to = selected_template.end_date || new Date().toISOString().split('T')[0]
+          console.log('Set dates from template: from', this.date_from, 'to', this.date_to)
         }
       }
       
@@ -317,6 +331,7 @@ export default {
     },
 
     select_period(template_id) {
+      console.log('Selecting period with ID:', template_id)
       this.selected_template_group = template_id
       this.show_period_dropdown = false
       this.apply_template_group()
