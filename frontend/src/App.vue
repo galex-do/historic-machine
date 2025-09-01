@@ -7,10 +7,15 @@
     
     <!-- Main Layout: Sidebar + Map -->
     <div class="main-layout">
-      <!-- Left Sidebar -->
-      <aside class="sidebar">
+      <!-- Left Sidebar (Collapsible) -->
+      <aside class="sidebar" :class="{ 'collapsed': sidebar_collapsed }">
+        <!-- Sidebar Toggle Button -->
+        <button class="sidebar-toggle" @click="toggle_sidebar">
+          {{ sidebar_collapsed ? '→' : '←' }}
+        </button>
+        
         <!-- Filters Section -->
-        <div class="sidebar-section">
+        <div class="sidebar-section" v-show="!sidebar_collapsed">
           <h3 class="section-title">🎯 Filters</h3>
           
           <!-- Date Selection Mode -->
@@ -101,14 +106,25 @@
           
           <button @click="filter_events" class="filter-button">Apply Filters</button>
         </div>
+      </aside>
+      
+      <!-- Right Content Area -->
+      <main class="content-area">
+        <!-- Map Section -->
+        <div class="map-section">
+          <WorldMap 
+            :events="filtered_events" 
+            @event-created="handle_event_created"
+          />
+        </div>
         
-        <!-- Events List Section -->
-        <div class="sidebar-section">
-          <h3 class="section-title">📍 Events ({{ filtered_events.length }})</h3>
+        <!-- Events List Below Map -->
+        <div class="events-section">
+          <h3 class="section-title">📍 Historical Events ({{ filtered_events.length }})</h3>
           
-          <div class="events-container">
+          <div class="events-grid">
             <div v-if="filtered_events.length === 0" class="no-events">
-              <p>No events found. Click on the map to add your first historical event!</p>
+              <p>No events found for the selected period. Click on the map to add your first historical event!</p>
             </div>
             
             <div v-for="event in filtered_events" :key="event.id" class="event-card">
@@ -124,14 +140,6 @@
             </div>
           </div>
         </div>
-      </aside>
-      
-      <!-- Right Map Area -->
-      <main class="map-area">
-        <WorldMap 
-          :events="filtered_events" 
-          @event-created="handle_event_created"
-        />
       </main>
     </div>
   </div>
@@ -161,6 +169,7 @@ export default {
       ],
       selected_lens_types: ['historic', 'political', 'cultural', 'military'], // All selected by default
       show_lens_dropdown: false,
+      sidebar_collapsed: false,
       
       // Date template system
       date_selection_mode: 'historic', // 'historic' or 'custom'
@@ -490,6 +499,10 @@ export default {
       if (!dropdown) {
         this.show_lens_dropdown = false
       }
+    },
+    
+    toggle_sidebar() {
+      this.sidebar_collapsed = !this.sidebar_collapsed
     }
   }
 }
@@ -541,6 +554,37 @@ export default {
   border-right: 1px solid #e1e8ed;
   overflow-y: auto;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 50px;
+}
+
+.sidebar-toggle {
+  position: absolute;
+  top: 1rem;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s;
+}
+
+.sidebar-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
 }
 
 .sidebar-section {
@@ -812,28 +856,22 @@ export default {
   box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
 }
 
-/* Events Container */
-.events-container {
-  max-height: calc(100vh - 400px);
-  overflow-y: auto;
-  padding-right: 0.5rem;
+/* Events Container - Updated for Grid Layout */
+.events-section::-webkit-scrollbar {
+  width: 6px;
 }
 
-.events-container::-webkit-scrollbar {
-  width: 4px;
-}
-
-.events-container::-webkit-scrollbar-track {
+.events-section::-webkit-scrollbar-track {
   background: #f1f3f5;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
-.events-container::-webkit-scrollbar-thumb {
+.events-section::-webkit-scrollbar-thumb {
   background: #cbd5e0;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
-.events-container::-webkit-scrollbar-thumb:hover {
+.events-section::-webkit-scrollbar-thumb:hover {
   background: #a0aec0;
 }
 
@@ -843,9 +881,9 @@ export default {
   border: 1px solid #e2e8f0;
   border-radius: 8px;
   padding: 1rem;
-  margin-bottom: 0.75rem;
   transition: all 0.2s;
   cursor: pointer;
+  height: fit-content;
 }
 
 .event-card:hover {
@@ -912,12 +950,49 @@ export default {
   font-size: 0.9rem;
 }
 
-/* Map Area */
-.map-area {
+/* Content Area */
+.content-area {
   flex: 1;
   background: #ffffff;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Map Section */
+.map-section {
+  flex: 1;
+  min-height: 60vh;
+  position: relative;
+}
+
+/* Events Section */
+.events-section {
+  background: #f8f9fa;
+  border-top: 1px solid #e1e8ed;
+  padding: 1.5rem;
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.events-section .section-title {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 2px solid #e1e8ed;
+  padding-bottom: 0.5rem;
 }
 
 /* Responsive Design */
@@ -929,16 +1004,29 @@ export default {
   .sidebar {
     width: 100%;
     height: auto;
-    max-height: 50vh;
+    max-height: 40vh;
     border-right: none;
     border-bottom: 1px solid #e1e8ed;
   }
   
-  .map-area {
-    height: 50vh;
+  .sidebar.collapsed {
+    width: 100%;
+    height: 60px;
   }
   
-  .lens-grid {
+  .content-area {
+    height: auto;
+  }
+  
+  .map-section {
+    min-height: 40vh;
+  }
+  
+  .events-section {
+    max-height: 30vh;
+  }
+  
+  .events-grid {
     grid-template-columns: 1fr;
   }
 }
