@@ -61,6 +61,7 @@ export default {
     return {
       map: null,
       markers: [],
+      resize_observer: null,
       show_event_modal: false,
       new_event: {
         name: '',
@@ -72,10 +73,6 @@ export default {
         lens_type: 'historic'
       }
     }
-  },
-  mounted() {
-    this.initialize_map()
-    this.add_event_markers()
   },
   watch: {
     events: {
@@ -97,6 +94,27 @@ export default {
       deep: true,
       immediate: false
     }
+  },
+  
+  mounted() {
+    this.initialize_map()
+    this.add_event_markers()
+    
+    // Add resize observer to handle layout changes
+    this.resize_observer = new ResizeObserver(() => {
+      this.handle_resize()
+    })
+    this.resize_observer.observe(this.$refs.map)
+    
+    // Listen for window resize events (triggered by sidebar toggle)
+    window.addEventListener('resize', this.handle_resize)
+  },
+  
+  beforeUnmount() {
+    if (this.resize_observer) {
+      this.resize_observer.disconnect()
+    }
+    window.removeEventListener('resize', this.handle_resize)
   },
   methods: {
     initialize_map() {
@@ -253,6 +271,25 @@ export default {
         })
       } catch (error) {
         console.warn('Error centering on event:', error)
+      }
+    },
+    
+    handle_resize() {
+      if (this.map) {
+        // Small delay to ensure DOM has updated
+        this.$nextTick(() => {
+          try {
+            this.map.invalidateSize()
+            // Force a redraw to prevent rendering issues
+            setTimeout(() => {
+              if (this.map) {
+                this.map.invalidateSize()
+              }
+            }, 100)
+          } catch (error) {
+            console.warn('Error resizing map:', error)
+          }
+        })
       }
     },
     

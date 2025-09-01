@@ -507,6 +507,17 @@ export default {
     
     toggle_sidebar() {
       this.sidebar_collapsed = !this.sidebar_collapsed
+      // Trigger map resize after sidebar animation
+      this.$nextTick(() => {
+        setTimeout(() => {
+          this.trigger_map_resize()
+        }, 300) // Match transition duration
+      })
+    },
+    
+    trigger_map_resize() {
+      // Trigger a custom event that the map can listen for
+      window.dispatchEvent(new Event('resize'))
     },
     
     focus_on_event(event) {
@@ -994,12 +1005,13 @@ export default {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s ease;
 }
 
 /* Map Section */
 .map-section {
   flex: 1;
-  min-height: 60vh;
+  height: 100%;
   position: relative;
   z-index: 1;
 }
