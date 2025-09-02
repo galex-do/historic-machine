@@ -151,12 +151,6 @@ export default {
     handle_map_click(event) {
       // Check if user can create events
       if (!this.canCreateEvents) {
-        // Show a message for guest users
-        if (this.isGuest) {
-          alert('Please login to create historical events. Click the login button in the header to get started!')
-        } else {
-          alert('You do not have permission to create events.')
-        }
         return
       }
 
