@@ -234,20 +234,20 @@ export default {
   display: flex;
   align-items: center;
   gap: 2rem;
-  flex: 1;
+  flex-shrink: 0;
 }
 
 .date-inputs {
   display: flex;
-  gap: 1.5rem;
-  flex: 1;
+  gap: 1rem;
+  flex-shrink: 0;
 }
 
 .date-input-group {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  flex: 1;
+  flex-shrink: 0;
 }
 
 .filter-label {
