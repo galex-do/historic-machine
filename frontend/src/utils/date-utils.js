@@ -78,6 +78,121 @@ export function getTodayISO() {
 }
 
 /**
+ * Parse historical date string with BC/AD support
+ * Formats: "500 BC", "1066 AD", "500BC", "1066AD", "500", "1066"
+ * Returns: { year: number, era: 'BC'|'AD', isoDate: string }
+ */
+export function parseHistoricalDate(dateStr) {
+  if (!dateStr || typeof dateStr !== 'string') {
+    return null
+  }
+  
+  // Clean up the input
+  const cleanStr = dateStr.trim().toUpperCase()
+  
+  // Match patterns like "500 BC", "1066 AD", "500BC", "1066AD"
+  const bcMatch = cleanStr.match(/^(\d{1,4})\s*BC$/)
+  const adMatch = cleanStr.match(/^(\d{1,4})\s*AD$/)
+  const yearOnlyMatch = cleanStr.match(/^(\d{1,4})$/)
+  
+  let year, era
+  
+  if (bcMatch) {
+    year = parseInt(bcMatch[1], 10)
+    era = 'BC'
+  } else if (adMatch) {
+    year = parseInt(adMatch[1], 10)
+    era = 'AD'
+  } else if (yearOnlyMatch) {
+    year = parseInt(yearOnlyMatch[1], 10)
+    // Default assumption: years below 1000 are likely BC for historical mapping
+    era = year < 500 ? 'BC' : 'AD'
+  } else {
+    return null
+  }
+  
+  // Validate year range
+  if (year < 1 || year > 9999) {
+    return null
+  }
+  
+  // Convert to ISO date (astronomical year numbering)
+  const isoYear = era === 'BC' ? (year === 1 ? '0000' : String(year - 1).padStart(4, '0')) : String(year).padStart(4, '0')
+  const isoDate = era === 'BC' ? `-${isoYear}-01-01` : `${isoYear}-01-01`
+  
+  return {
+    year,
+    era,
+    isoDate,
+    displayString: `${year} ${era}`
+  }
+}
+
+/**
+ * Format historical date for display
+ * Input: ISO date string or parsed historical date object
+ * Output: "500 BC", "1066 AD", etc.
+ */
+export function formatHistoricalDate(dateInput) {
+  if (!dateInput) return ''
+  
+  // If it's already a parsed object, use it
+  if (typeof dateInput === 'object' && dateInput.year && dateInput.era) {
+    return `${dateInput.year} ${dateInput.era}`
+  }
+  
+  // If it's an ISO string, parse it
+  if (typeof dateInput === 'string') {
+    const year = parseInt(dateInput.split('-')[0], 10)
+    const era = dateInput.startsWith('-') || year < 500 ? 'BC' : 'AD'
+    const displayYear = dateInput.startsWith('-') ? Math.abs(year) + 1 : year
+    return `${displayYear} ${era}`
+  }
+  
+  return ''
+}
+
+/**
+ * Add years to a historical date
+ * Used for step functionality
+ */
+export function addYearsToHistoricalDate(dateStr, years) {
+  const parsed = parseHistoricalDate(dateStr)
+  if (!parsed) return dateStr
+  
+  let newYear = parsed.year
+  let newEra = parsed.era
+  
+  if (parsed.era === 'BC') {
+    newYear = parsed.year - years
+    if (newYear <= 0) {
+      newYear = Math.abs(newYear) + 1
+      newEra = 'AD'
+    }
+  } else {
+    newYear = parsed.year + years
+    if (newYear <= 0) {
+      newYear = Math.abs(newYear) + 1
+      newEra = 'BC'
+    }
+  }
+  
+  // Ensure year is within valid range
+  if (newYear < 1) newYear = 1
+  if (newYear > 9999) newYear = 9999
+  
+  return `${newYear} ${newEra}`
+}
+
+/**
+ * Convert historical date to ISO format for API calls
+ */
+export function historicalDateToISO(dateStr) {
+  const parsed = parseHistoricalDate(dateStr)
+  return parsed ? parsed.isoDate : null
+}
+
+/**
  * Convert date to astronomical year for BC/AD calculations
  */
 export function getAstronomicalYear(dateString, era) {

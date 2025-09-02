@@ -1,13 +1,13 @@
 import { ref, computed } from 'vue'
-import { parseDDMMYYYYToISO, formatDateToDDMMYYYY, getTodayISO } from '@/utils/date-utils.js'
+import { parseDDMMYYYYToISO, formatDateToDDMMYYYY, getTodayISO, parseHistoricalDate, formatHistoricalDate, historicalDateToISO } from '@/utils/date-utils.js'
 import { getAvailableLensTypes } from '@/utils/event-utils.js'
 
 export function useFilters() {
   // Date filtering state (always showing both fields)
   const dateFrom = ref('0001-01-01')
   const dateTo = ref(getTodayISO())
-  const dateFromDisplay = ref('01.01.0001')
-  const dateToDisplay = ref(formatDateToDDMMYYYY(new Date()))
+  const dateFromDisplay = ref('1 AD')
+  const dateToDisplay = ref('2025 AD')
 
   // Lens type filtering state
   const selectedLensTypes = ref(['historic', 'political', 'cultural', 'military']) // All selected by default
@@ -20,34 +20,48 @@ export function useFilters() {
   const resetToDefaultDateRange = () => {
     dateFrom.value = '0001-01-01'
     dateTo.value = getTodayISO()
-    dateFromDisplay.value = '01.01.0001'
-    dateToDisplay.value = formatDateToDDMMYYYY(new Date())
+    dateFromDisplay.value = '1 AD'
+    dateToDisplay.value = '2025 AD'
   }
 
   // Update date from display
   const updateDateFrom = (displayValue) => {
+    // Always update the display value to maintain user input
     dateFromDisplay.value = displayValue
+    
+    // Try to parse as historical date first
+    const historicalDate = parseHistoricalDate(displayValue)
+    if (historicalDate) {
+      dateFrom.value = historicalDate.isoDate
+      return
+    }
+    
+    // Fallback to DD.MM.YYYY format
     const isoDate = parseDDMMYYYYToISO(displayValue)
     if (isoDate) {
       dateFrom.value = isoDate
-    } else {
-      // Reset to default if invalid
-      dateFromDisplay.value = '01.01.0001'
-      dateFrom.value = '0001-01-01'
     }
+    // Note: Don't reset display value on invalid input to preserve user's typing
   }
 
   // Update date to display
   const updateDateTo = (displayValue) => {
+    // Always update the display value to maintain user input
     dateToDisplay.value = displayValue
+    
+    // Try to parse as historical date first
+    const historicalDate = parseHistoricalDate(displayValue)
+    if (historicalDate) {
+      dateTo.value = historicalDate.isoDate
+      return
+    }
+    
+    // Fallback to DD.MM.YYYY format
     const isoDate = parseDDMMYYYYToISO(displayValue)
     if (isoDate) {
       dateTo.value = isoDate
-    } else {
-      // Reset to today if invalid
-      dateToDisplay.value = formatDateToDDMMYYYY(new Date())
-      dateTo.value = getTodayISO()
     }
+    // Note: Don't reset display value on invalid input to preserve user's typing
   }
 
   // Apply template dates

@@ -1,5 +1,6 @@
 import { ref, computed } from 'vue'
 import apiService from '@/services/api.js'
+import { formatHistoricalDate } from '@/utils/date-utils.js'
 
 export function useTemplates() {
   const templateGroups = ref([])
@@ -78,11 +79,15 @@ export function useTemplates() {
     const template = selectedTemplate.value
     if (!template) return null
 
+    // Convert backend dates to BC/AD format if needed
+    const displayFrom = template.start_display_date || formatHistoricalDate(template.start_date)
+    const displayTo = template.end_display_date || formatHistoricalDate(template.end_date)
+
     return {
       dateFrom: template.start_date,
       dateTo: template.end_date,
-      displayFrom: template.start_display_date,
-      displayTo: template.end_display_date
+      displayFrom,
+      displayTo
     }
   }
 
