@@ -259,6 +259,8 @@ export default {
   align-items: center;
   justify-content: center;
   z-index: 99999;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .modal-content {
@@ -266,9 +268,11 @@ export default {
   border-radius: 12px;
   width: 90%;
   max-width: 400px;
-  max-height: 90vh;
+  max-height: 80vh;
   overflow-y: auto;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  position: relative;
 }
 
 .modal-header {
@@ -334,6 +338,7 @@ export default {
   border-radius: 6px;
   font-size: 1rem;
   transition: border-color 0.2s ease;
+  box-sizing: border-box;
 }
 
 .form-input:focus {
