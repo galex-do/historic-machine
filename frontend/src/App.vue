@@ -68,6 +68,7 @@ import { useEvents } from '@/composables/useEvents.js'
 import { useTemplates } from '@/composables/useTemplates.js'
 import { useFilters } from '@/composables/useFilters.js'
 import { useTags } from '@/composables/useTags.js'
+import { useAuth } from '@/composables/useAuth.js'
 
 export default {
   name: 'App',
@@ -123,6 +124,9 @@ export default {
       isLoadingTags,
       loadTags
     } = useTags()
+
+    // Initialize authentication
+    const { initAuth } = useAuth()
 
     // Sidebar methods
     const toggleSidebar = () => {
@@ -212,6 +216,9 @@ export default {
 
     // Initialize data on mount
     onMounted(async () => {
+      // Initialize authentication first
+      await initAuth()
+      
       await Promise.all([
         fetchEvents(),
         fetchTemplateGroups(),

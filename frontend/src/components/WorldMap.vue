@@ -109,6 +109,16 @@ export default {
       },
       deep: true,
       immediate: false
+    },
+    // Re-render markers when authentication state changes
+    canEditEvents: {
+      handler() {
+        if (this.map) {
+          console.log('Auth state changed, re-rendering markers')
+          this.add_event_markers()
+        }
+      },
+      immediate: false
     }
   },
   
