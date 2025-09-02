@@ -367,7 +367,7 @@ body {
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
-  height: 0; /* Force the flex child to respect parent constraints */
+  min-height: 0; /* Force the flex child to respect parent constraints */
 }
 
 /* Map Content Area (Full Space) */
