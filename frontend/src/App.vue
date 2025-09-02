@@ -3,6 +3,14 @@
     <!-- Header -->
     <AppHeader />
     
+    <!-- Date Control Bar (Under Header) -->
+    <DateControlBar
+      :date-from-display="dateFromDisplay"
+      :date-to-display="dateToDisplay"
+      @date-from-changed="updateDateFrom"
+      @date-to-changed="updateDateTo"
+    />
+    
     <!-- Main Layout: Sidebar + Map -->
     <div class="main-layout">
       <!-- Left Sidebar (Collapsible) -->
@@ -25,14 +33,6 @@
       
       <!-- Right Content Area -->
       <main class="content-area">
-        <!-- Date Control Bar Above Map -->
-        <DateControlBar
-          :date-from-display="dateFromDisplay"
-          :date-to-display="dateToDisplay"
-          @date-from-changed="updateDateFrom"
-          @date-to-changed="updateDateTo"
-        />
-        
         <!-- Map Section -->
         <div class="map-section">
           <WorldMap 

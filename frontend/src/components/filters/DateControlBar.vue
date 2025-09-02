@@ -8,62 +8,53 @@
         <div class="date-inputs">
           <div class="date-input-group">
             <label class="filter-label">From:</label>
-            <div class="date-input-with-controls">
-              <input 
-                ref="dateFromInput"
-                type="text" 
-                :value="dateFromDisplay" 
-                @input="handleDateFromInput"
-                @blur="$emit('date-from-changed', $event.target.value)"
-                placeholder="500 BC, 1066 AD, 1776" 
-                class="date-input" 
-              />
-              <div class="step-controls">
-                <button @click="stepDateFrom(-stepSize)" class="step-button" title="Step backward">
-                  ‹
-                </button>
-                <button @click="stepDateFrom(stepSize)" class="step-button" title="Step forward">
-                  ›
-                </button>
-              </div>
-            </div>
+            <input 
+              ref="dateFromInput"
+              type="text" 
+              :value="dateFromDisplay" 
+              @input="handleDateFromInput"
+              @blur="$emit('date-from-changed', $event.target.value)"
+              placeholder="500 BC, 1066 AD, 1776" 
+              class="date-input" 
+            />
           </div>
           
           <div class="date-input-group">
             <label class="filter-label">To:</label>
-            <div class="date-input-with-controls">
-              <input 
-                ref="dateToInput"
-                type="text" 
-                :value="dateToDisplay" 
-                @input="handleDateToInput"
-                @blur="$emit('date-to-changed', $event.target.value)"
-                placeholder="500 BC, 1066 AD, 2025" 
-                class="date-input" 
-              />
-              <div class="step-controls">
-                <button @click="stepDateTo(-stepSize)" class="step-button" title="Step backward">
-                  ‹
-                </button>
-                <button @click="stepDateTo(stepSize)" class="step-button" title="Step forward">
-                  ›
-                </button>
-              </div>
-            </div>
+            <input 
+              ref="dateToInput"
+              type="text" 
+              :value="dateToDisplay" 
+              @input="handleDateToInput"
+              @blur="$emit('date-to-changed', $event.target.value)"
+              placeholder="500 BC, 1066 AD, 2025" 
+              class="date-input" 
+            />
           </div>
         </div>
         
-        <!-- Step Size Control -->
-        <div class="step-size-control">
-          <label class="filter-label">Step:</label>
-          <select v-model="stepSize" class="step-select">
-            <option :value="1">1 year</option>
-            <option :value="5">5 years</option>
-            <option :value="10">10 years</option>
-            <option :value="25">25 years</option>
-            <option :value="50">50 years</option>
-            <option :value="100">100 years</option>
-          </select>
+        <!-- Centralized Step Controls -->
+        <div class="step-controls-section">
+          <div class="step-controls">
+            <button @click="stepBothDates(-stepSize)" class="step-button" title="Step both dates backward">
+              ‹‹
+            </button>
+            <button @click="stepBothDates(stepSize)" class="step-button" title="Step both dates forward">
+              ››
+            </button>
+          </div>
+          
+          <div class="step-size-control">
+            <label class="filter-label">Step:</label>
+            <select v-model="stepSize" class="step-select">
+              <option :value="1">1 year</option>
+              <option :value="5">5 years</option>
+              <option :value="10">10 years</option>
+              <option :value="25">25 years</option>
+              <option :value="50">50 years</option>
+              <option :value="100">100 years</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
@@ -107,30 +98,27 @@ export default {
       }
     }
     
-    // Step date from forward/backward
-    const stepDateFrom = (years) => {
-      const currentValue = props.dateFromDisplay
-      if (!currentValue) return
+    // Step both dates forward/backward together
+    const stepBothDates = (years) => {
+      const fromValue = props.dateFromDisplay
+      const toValue = props.dateToDisplay
       
-      const newDate = addYearsToHistoricalDate(currentValue, years)
-      emit('date-from-changed', newDate)
-    }
-    
-    // Step date to forward/backward
-    const stepDateTo = (years) => {
-      const currentValue = props.dateToDisplay
-      if (!currentValue) return
+      if (fromValue) {
+        const newFromDate = addYearsToHistoricalDate(fromValue, years)
+        emit('date-from-changed', newFromDate)
+      }
       
-      const newDate = addYearsToHistoricalDate(currentValue, years)
-      emit('date-to-changed', newDate)
+      if (toValue) {
+        const newToDate = addYearsToHistoricalDate(toValue, years)
+        emit('date-to-changed', newToDate)
+      }
     }
     
     return {
       stepSize,
       handleDateFromInput,
       handleDateToInput,
-      stepDateFrom,
-      stepDateTo
+      stepBothDates
     }
   }
 }
@@ -189,15 +177,8 @@ export default {
   margin: 0;
 }
 
-.date-input-with-controls {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex: 1;
-}
-
 .date-input {
-  flex: 1;
+  width: 100%;
   padding: 0.5rem 0.75rem;
   border: 1px solid #e2e8f0;
   border-radius: 6px;
@@ -218,19 +199,26 @@ export default {
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
+.step-controls-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .step-controls {
   display: flex;
-  gap: 2px;
+  gap: 4px;
 }
 
 .step-button {
-  width: 28px;
+  width: 36px;
   height: 32px;
   border: 1px solid #e2e8f0;
-  border-radius: 4px;
+  border-radius: 6px;
   background: #f8f9fa;
   color: #4a5568;
   font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -241,6 +229,7 @@ export default {
 .step-button:hover {
   background: #e2e8f0;
   border-color: #cbd5e0;
+  color: #2d3748;
 }
 
 .step-button:active {
