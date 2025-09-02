@@ -45,6 +45,7 @@
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import { useAuth } from '@/composables/useAuth.js'
+import apiService from '@/services/api.js'
 
 export default {
   name: 'WorldMap',
@@ -317,31 +318,23 @@ export default {
           lens_type: this.new_event.lens_type
         }
         
-        const backend_url = this.get_backend_url()
-        const response = await fetch(`${backend_url}/events`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(event_data)
-        })
-        
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`)
-        }
-        
-        const created_event = await response.json()
-        console.log('Event created successfully:', created_event)
+        // Use the API service which includes authentication headers
+        const response = await apiService.createEvent(event_data)
+        console.log('Event created successfully:', response)
         
         // Emit event to parent component to refresh events list
-        this.$emit('event-created', created_event)
+        this.$emit('event-created', response)
         
         // Close modal
         this.close_modal()
         
       } catch (error) {
         console.error('Error creating event:', error)
-        alert('Failed to create event. Please try again.')
+        if (error.message.includes('401')) {
+          alert('Authentication failed. Please log in again.')
+        } else {
+          alert('Failed to create event. Please try again.')
+        }
       }
     },
     
