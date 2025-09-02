@@ -110,6 +110,15 @@ export default {
   width: 60px;
 }
 
+.sidebar.collapsed .sidebar-header {
+  padding: 1.5rem 0.5rem 1rem;
+  justify-content: center;
+}
+
+.sidebar.collapsed .sidebar-toggle {
+  margin: 0;
+}
+
 /* Responsive sidebar behavior */
 @media (max-width: 1024px) {
   .sidebar {
