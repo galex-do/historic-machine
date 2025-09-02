@@ -1,13 +1,15 @@
 <template>
   <aside class="sidebar" :class="{ 'collapsed': collapsed }">
-    <!-- Sidebar Toggle Button -->
-    <button class="sidebar-toggle" @click="$emit('toggle')">
-      {{ collapsed ? '›' : '‹' }}
-    </button>
+    <!-- Header Row with Toggle and Title -->
+    <div class="sidebar-header">
+      <h3 class="section-title" v-show="!collapsed">Filters</h3>
+      <button class="sidebar-toggle" @click="$emit('toggle')">
+        {{ collapsed ? '›' : '‹' }}
+      </button>
+    </div>
     
     <!-- Filters Section -->
     <div class="sidebar-section" v-show="!collapsed">
-      <h3 class="section-title">Filters</h3>
       
       <!-- Historical Periods -->
       <DateTemplateSelector
@@ -125,15 +127,24 @@ export default {
     max-height: 60px;
   }
   
+  .sidebar-header {
+    padding: 1rem 2rem 0.5rem;
+  }
+  
   .sidebar-section {
-    padding: 2rem 2rem 1rem;
+    padding: 0.5rem 2rem 1rem;
   }
 }
 
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem 1rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
 .sidebar-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
   background: #f8f9fa;
   color: #667eea;
   border: 1px solid #e2e8f0;
@@ -146,7 +157,7 @@ export default {
   justify-content: center;
   font-size: 1rem;
   transition: all 0.2s;
-  z-index: 10;
+  flex-shrink: 0;
 }
 
 .sidebar-toggle:hover {
@@ -157,14 +168,15 @@ export default {
 }
 
 .sidebar-section {
-  padding: 4rem 2rem 2rem;
+  padding: 1rem 2rem 2rem;
 }
 
 .section-title {
   color: #2d3748;
-  margin: 0 0 1.5rem 0;
+  margin: 0;
   font-size: 1.25rem;
   font-weight: 600;
+  flex: 1;
 }
 
 .filter-group {
