@@ -1,7 +1,7 @@
 <template>
   <header class="app-header">
     <div class="header-content">
-      <h1>Historical Events Mapping</h1>
+      <h1>Historia ex machina</h1>
       
       <div class="auth-section">
         <!-- Guest user (not logged in) -->
@@ -32,7 +32,7 @@
       <div v-if="showLoginModal" class="modal-overlay" @click="closeModal">
         <div class="modal-content" @click.stop>
           <div class="modal-header">
-            <h2>Login to Historical Events</h2>
+            <h2>Login to Historia ex machina</h2>
             <button @click="closeModal" class="close-btn">&times;</button>
           </div>
           
