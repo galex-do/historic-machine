@@ -52,7 +52,7 @@ export default {
       type: Array,
       default: () => []
     },
-    focus_event: {
+    focusEvent: {
       type: Object,
       default: null
     }
@@ -85,7 +85,7 @@ export default {
       deep: true,
       immediate: false
     },
-    focus_event: {
+    focusEvent: {
       handler(new_focus_event) {
         if (new_focus_event && this.map) {
           this.center_on_event(new_focus_event)
