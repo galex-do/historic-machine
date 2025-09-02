@@ -17,7 +17,7 @@
     </div>
     
     <!-- Specific Template Selection -->
-    <div v-if="selectedTemplateGroupId" class="filter-subgroup">
+    <div v-if="selectedTemplateGroupId && selectedTemplateGroupId !== 'custom'" class="filter-subgroup">
       <label class="filter-label">Specific Period:</label>
       <select 
         :value="selectedTemplateId" 
