@@ -291,6 +291,7 @@ body {
   flex: 1;
   height: calc(100vh - 160px); /* Account for header + enhanced filter bar */
   overflow: hidden;
+  position: relative;
 }
 
 /* Events Sidebar */
@@ -301,11 +302,12 @@ body {
   transition: all 0.3s ease;
   width: 350px;
   flex-shrink: 0;
-  overflow: hidden;
   border-right: 1px solid #e2e8f0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  height: 100%;
+  overflow: hidden;
 }
 
 .events-sidebar.collapsed {
@@ -364,6 +366,8 @@ body {
 .events-sidebar-content {
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
+  height: 0; /* Force the flex child to respect parent constraints */
 }
 
 /* Map Content Area (Full Space) */
@@ -373,6 +377,7 @@ body {
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
+  height: 100%;
 }
 
 /* Responsive Design */

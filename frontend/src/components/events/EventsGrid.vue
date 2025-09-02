@@ -38,9 +38,9 @@ export default {
   background: transparent;
   padding: 1rem;
   height: 100%;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 
@@ -49,6 +49,9 @@ export default {
   flex-direction: column;
   gap: 0.75rem;
   flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 0.5rem; /* Space for scrollbar */
 }
 
 .no-events {
