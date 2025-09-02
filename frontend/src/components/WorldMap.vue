@@ -97,17 +97,20 @@ export default {
   },
   
   mounted() {
-    this.initialize_map()
-    this.add_event_markers()
-    
-    // Add resize observer to handle layout changes
-    this.resize_observer = new ResizeObserver(() => {
-      this.handle_resize()
+    // Wait for DOM to be fully rendered before initializing map
+    this.$nextTick(() => {
+      this.initialize_map()
+      this.add_event_markers()
+      
+      // Add resize observer to handle layout changes
+      this.resize_observer = new ResizeObserver(() => {
+        this.handle_resize()
+      })
+      this.resize_observer.observe(this.$refs.map)
+      
+      // Listen for window resize events (triggered by sidebar toggle)
+      window.addEventListener('resize', this.handle_resize)
     })
-    this.resize_observer.observe(this.$refs.map)
-    
-    // Listen for window resize events (triggered by sidebar toggle)
-    window.addEventListener('resize', this.handle_resize)
   },
   
   beforeUnmount() {
@@ -118,8 +121,16 @@ export default {
   },
   methods: {
     initialize_map() {
+      // Ensure the container has dimensions before initializing
+      const container = this.$refs.map
+      if (!container || container.offsetHeight === 0) {
+        console.warn('Map container not ready, retrying...')
+        setTimeout(() => this.initialize_map(), 100)
+        return
+      }
+      
       // Create map centered on world view
-      this.map = L.map(this.$refs.map).setView([20, 0], 2)
+      this.map = L.map(container).setView([20, 0], 2)
       
       // Add OpenStreetMap tile layer (free, no API key needed)
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -138,6 +149,13 @@ export default {
         iconUrl: '/images/marker-icon.png',
         shadowUrl: '/images/marker-shadow.png',
       })
+      
+      // Force map to recalculate size after initialization
+      setTimeout(() => {
+        if (this.map) {
+          this.map.invalidateSize(true)
+        }
+      }, 200)
     },
     
     handle_map_click(event) {
@@ -449,6 +467,8 @@ export default {
   height: 100%;
   width: 100%;
   border-radius: 8px;
+  flex: 1;
+  min-height: 400px;
 }
 
 .modal-overlay {
