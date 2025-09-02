@@ -108,6 +108,28 @@ export default {
   width: 60px;
 }
 
+/* Responsive sidebar behavior */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 100% !important;
+    max-height: 300px;
+    flex-shrink: 0;
+    order: 1;
+    border-right: none;
+    border-bottom: 1px solid #e2e8f0;
+    overflow-y: auto;
+  }
+  
+  .sidebar.collapsed {
+    width: 100% !important;
+    max-height: 60px;
+  }
+  
+  .sidebar-section {
+    padding: 2rem 2rem 1rem;
+  }
+}
+
 .sidebar-toggle {
   position: absolute;
   top: 20px;

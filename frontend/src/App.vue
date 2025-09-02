@@ -249,7 +249,7 @@ body {
 .main-layout {
   display: flex;
   flex: 1;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 140px); /* Account for header + date control bar */
   overflow: hidden;
 }
 
@@ -275,29 +275,18 @@ body {
 @media (max-width: 1024px) {
   .main-layout {
     flex-direction: column;
-  }
-  
-  .sidebar {
-    width: 100%;
-    height: auto;
-    max-height: 60vh;
-    overflow-y: auto;
-  }
-  
-  .sidebar.collapsed {
-    height: 60px;
-    max-height: 60px;
+    height: calc(100vh - 140px);
   }
   
   .content-area {
     flex: 1;
-    min-height: 40vh;
+    order: 2;
   }
 }
 
 @media (max-width: 768px) {
   .main-layout {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 120px); /* Smaller header on mobile */
   }
 }
 </style>
