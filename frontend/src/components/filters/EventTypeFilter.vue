@@ -168,7 +168,7 @@ export default {
   border: 1px solid #e2e8f0;
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  z-index: 100;
+  z-index: 1000;
   max-height: 200px;
   overflow-y: auto;
   margin-top: 0.25rem;
