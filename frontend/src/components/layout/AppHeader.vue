@@ -73,11 +73,6 @@
               </div>
             </form>
             
-            <div class="demo-info">
-              <p><strong>Demo Account:</strong></p>
-              <p>Username: <code>archadmin</code></p>
-              <p>Password: <code>archadmin123</code></p>
-            </div>
           </div>
         </div>
       </div>
