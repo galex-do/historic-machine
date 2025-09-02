@@ -26,31 +26,20 @@ class AuthService {
   // Login user
   async login(username, password) {
     try {
-      console.log('Attempting login with:', { username, password: '***' })
-      console.log('Making request to:', `${API_BASE}/auth/login`)
-      
-      const requestBody = JSON.stringify({ username, password })
-      console.log('Request body:', requestBody)
-      
       const response = await fetch(`${API_BASE}/auth/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: requestBody
+        body: JSON.stringify({ username, password })
       })
-
-      console.log('Response status:', response.status)
-      console.log('Response headers:', response.headers)
 
       if (!response.ok) {
         const errorText = await response.text()
-        console.error('Login failed with status:', response.status, 'Error:', errorText)
         throw new Error(errorText || 'Login failed')
       }
 
       const data = await response.json()
-      console.log('Login successful, response data:', data)
       
       // Store token and user data
       this.token = data.token
@@ -60,7 +49,7 @@ class AuthService {
       
       return data
     } catch (error) {
-      console.error('Login error details:', error.message, error)
+      console.error('Login error:', error)
       throw error
     }
   }
