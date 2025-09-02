@@ -62,6 +62,19 @@ class ApiService {
     })
   }
 
+  async updateEvent(eventId, eventData) {
+    return this.makeRequest(`/events/${eventId}`, {
+      method: 'PUT',
+      body: JSON.stringify(eventData),
+    })
+  }
+
+  async deleteEvent(eventId) {
+    return this.makeRequest(`/events/${eventId}`, {
+      method: 'DELETE',
+    })
+  }
+
   async getEventById(id) {
     return this.makeRequest(`/events/${id}`)
   }

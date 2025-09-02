@@ -162,6 +162,54 @@ func (r *EventRepository) GetInBoundingBox(minLat, minLng, maxLat, maxLng float6
         return events, nil
 }
 
+// Update updates an existing event in the database
+func (r *EventRepository) Update(event *models.HistoricalEvent) (*models.HistoricalEvent, error) {
+        query := `
+                UPDATE events 
+                SET name = $2, description = $3, latitude = $4, longitude = $5, 
+                    event_date = $6, era = $7, lens_type = $8,
+                    location = ST_SetSRID(ST_MakePoint($5, $4), 4326)
+                WHERE id = $1
+                RETURNING id, name, description, latitude, longitude, event_date, era, lens_type`
+        
+        var updatedEvent models.HistoricalEvent
+        err := r.db.QueryRow(query, event.ID, event.Name, event.Description, 
+                event.Latitude, event.Longitude, event.EventDate, event.Era, event.LensType).
+                Scan(&updatedEvent.ID, &updatedEvent.Name, &updatedEvent.Description, 
+                &updatedEvent.Latitude, &updatedEvent.Longitude, &updatedEvent.EventDate, 
+                &updatedEvent.Era, &updatedEvent.LensType)
+        
+        if err != nil {
+                if err == sql.ErrNoRows {
+                        return nil, fmt.Errorf("event with id %d not found", event.ID)
+                }
+                return nil, fmt.Errorf("failed to update event: %w", err)
+        }
+        
+        return &updatedEvent, nil
+}
+
+// Delete removes an event from the database
+func (r *EventRepository) Delete(id int) error {
+        query := `DELETE FROM events WHERE id = $1`
+        
+        result, err := r.db.Exec(query, id)
+        if err != nil {
+                return fmt.Errorf("failed to delete event: %w", err)
+        }
+        
+        rowsAffected, err := result.RowsAffected()
+        if err != nil {
+                return fmt.Errorf("failed to get affected rows: %w", err)
+        }
+        
+        if rowsAffected == 0 {
+                return fmt.Errorf("event with id %d not found", id)
+        }
+        
+        return nil
+}
+
 // ValidateCoordinates validates latitude and longitude values
 func (r *EventRepository) ValidateCoordinates(lat, lng float64) error {
         if lat < -90 || lat > 90 {

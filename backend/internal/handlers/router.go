@@ -2,6 +2,7 @@ package handlers
 
 import (
         "historical-events-backend/internal/database/repositories"
+        "historical-events-backend/internal/models"
         "historical-events-backend/internal/services"
         "historical-events-backend/pkg/middleware"
         "net/http"
@@ -44,10 +45,12 @@ func (router *Router) SetupRoutes() http.Handler {
         api.HandleFunc("/auth/me", router.authHandler.Me).Methods("GET", "OPTIONS")
         api.HandleFunc("/auth/change-password", router.authHandler.ChangePassword).Methods("POST", "OPTIONS")
         
-        // Event routes (public read, auth required for create)
+        // Event routes (public read, auth required for create/update/delete)
         api.HandleFunc("/events", router.authHandler.OptionalAuthMiddleware(router.eventHandler.GetAllEvents)).Methods("GET", "OPTIONS")
         api.HandleFunc("/events", router.authHandler.AuthMiddleware(router.eventHandler.CreateEvent)).Methods("POST", "OPTIONS")
         api.HandleFunc("/events/{id}", router.authHandler.OptionalAuthMiddleware(router.eventHandler.GetEventByID)).Methods("GET", "OPTIONS")
+        api.HandleFunc("/events/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.eventHandler.UpdateEvent)).Methods("PUT", "OPTIONS")
+        api.HandleFunc("/events/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.eventHandler.DeleteEvent)).Methods("DELETE", "OPTIONS")
         
         // Spatial query routes
         api.HandleFunc("/events/bbox", router.eventHandler.GetEventsInBBox).Methods("GET", "OPTIONS")

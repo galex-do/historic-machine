@@ -124,6 +124,7 @@ export function useAuth() {
   // Computed properties for permissions
   const isGuest = computed(() => !isAuthenticated.value)
   const canCreateEvents = computed(() => isAuthenticated.value && user.value && user.value.access_level !== 'guest')
+  const canEditEvents = computed(() => isAuthenticated.value && user.value && (user.value.access_level === 'admin' || user.value.access_level === 'super'))
   const isAdmin = computed(() => isAuthenticated.value && user.value && (user.value.access_level === 'admin' || user.value.access_level === 'super'))
   const isSuper = computed(() => isAuthenticated.value && user.value && user.value.access_level === 'super')
 
@@ -142,6 +143,7 @@ export function useAuth() {
     // Computed permissions
     isGuest,
     canCreateEvents,
+    canEditEvents,
     isAdmin,
     isSuper,
     

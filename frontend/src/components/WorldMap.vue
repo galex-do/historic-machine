@@ -5,7 +5,7 @@
     <!-- Event Creation Modal (only show if user can create events) -->
     <div v-if="show_event_modal && canCreateEvents" class="modal-overlay" @click="close_modal">
       <div class="modal-content" @click.stop>
-        <h3>Add Historical Event</h3>
+        <h3>{{ editing_event ? 'Edit Historical Event' : 'Add Historical Event' }}</h3>
         <form @submit.prevent="create_event">
           <div class="form-group">
             <label>Event Name:</label>
@@ -32,8 +32,13 @@
             <p>Location: {{ new_event.latitude.toFixed(4) }}, {{ new_event.longitude.toFixed(4) }}</p>
           </div>
           <div class="modal-actions">
-            <button type="button" @click="close_modal" class="btn-cancel">Cancel</button>
-            <button type="submit" class="btn-create">Create Event</button>
+            <div class="left-actions">
+              <button v-if="editing_event" type="button" @click="delete_event" class="btn-delete">Delete Event</button>
+            </div>
+            <div class="right-actions">
+              <button type="button" @click="close_modal" class="btn-cancel">Cancel</button>
+              <button type="submit" class="btn-create">{{ editing_event ? 'Update Event' : 'Create Event' }}</button>
+            </div>
           </div>
         </form>
       </div>
@@ -50,9 +55,10 @@ import apiService from '@/services/api.js'
 export default {
   name: 'WorldMap',
   setup() {
-    const { canCreateEvents, isGuest } = useAuth()
+    const { canCreateEvents, canEditEvents, isGuest } = useAuth()
     return {
       canCreateEvents,
+      canEditEvents,
       isGuest
     }
   },
@@ -72,6 +78,7 @@ export default {
       markers: [],
       resize_observer: null,
       show_event_modal: false,
+      editing_event: null, // Store the event being edited
       new_event: {
         name: '',
         description: '',
@@ -117,6 +124,11 @@ export default {
     
     // Listen for window resize events (triggered by sidebar toggle)
     window.addEventListener('resize', this.handle_resize)
+    
+    // Set up global function for edit buttons in popups
+    window.editEvent = (eventId) => {
+      this.edit_event(eventId)
+    }
   },
   
   beforeUnmount() {
@@ -124,6 +136,11 @@ export default {
       this.resize_observer.disconnect()
     }
     window.removeEventListener('resize', this.handle_resize)
+    
+    // Clean up global function
+    if (window.editEvent) {
+      delete window.editEvent
+    }
   },
   methods: {
     initialize_map() {
@@ -171,6 +188,32 @@ export default {
       // Show modal
       this.show_event_modal = true
     },
+
+    edit_event(eventId) {
+      // Find the event to edit
+      const event = this.events.find(e => e.id === eventId)
+      if (!event) {
+        console.error('Event not found:', eventId)
+        return
+      }
+
+      // Set editing mode
+      this.editing_event = event
+      
+      // Populate form with event data
+      this.new_event.name = event.name
+      this.new_event.description = event.description
+      this.new_event.latitude = event.latitude
+      this.new_event.longitude = event.longitude
+      this.new_event.lens_type = event.lens_type
+      
+      // Handle date formatting
+      this.new_event.date = event.event_date.split('T')[0]
+      this.new_event.date_display = this.format_date(event.event_date)
+      
+      // Show modal
+      this.show_event_modal = true
+    },
     
     add_event_markers() {
       // Clear existing markers
@@ -194,12 +237,16 @@ export default {
           }).addTo(this.map)
           
           // Add popup with event information
+          const editButton = this.canEditEvents ? 
+            `<button onclick="window.editEvent(${event.id})" class="edit-btn">✏️ Edit</button>` : ''
+          
           marker.bindPopup(`
             <div class="event-popup">
               <h4>${event.name}</h4>
               <p>${event.description}</p>
               <p><strong>Date:</strong> ${event.display_date || this.format_date(event.event_date)}</p>
               <p><strong>Type:</strong> ${event.lens_type}</p>
+              ${editButton}
             </div>
           `)
           
@@ -318,28 +365,73 @@ export default {
           lens_type: this.new_event.lens_type
         }
         
-        // Use the API service which includes authentication headers
-        const response = await apiService.createEvent(event_data)
-        console.log('Event created successfully:', response)
-        
-        // Emit event to parent component to refresh events list
-        this.$emit('event-created', response)
+        let response
+        if (this.editing_event) {
+          // Update existing event
+          response = await apiService.updateEvent(this.editing_event.id, event_data)
+          console.log('Event updated successfully:', response)
+          this.$emit('event-updated', response)
+        } else {
+          // Create new event
+          response = await apiService.createEvent(event_data)
+          console.log('Event created successfully:', response)
+          this.$emit('event-created', response)
+        }
         
         // Close modal
         this.close_modal()
         
       } catch (error) {
-        console.error('Error creating event:', error)
+        console.error('Error saving event:', error)
         if (error.message.includes('401')) {
           alert('Authentication failed. Please log in again.')
         } else {
-          alert('Failed to create event. Please try again.')
+          const action = this.editing_event ? 'update' : 'create'
+          alert(`Failed to ${action} event. Please try again.`)
+        }
+      }
+    },
+
+    async delete_event() {
+      if (!this.editing_event) return
+      
+      const confirmed = confirm(`Are you sure you want to delete "${this.editing_event.name}"? This action cannot be undone.`)
+      if (!confirmed) return
+      
+      try {
+        await apiService.deleteEvent(this.editing_event.id)
+        console.log('Event deleted successfully')
+        
+        // Emit event to parent component to refresh events list
+        this.$emit('event-deleted', this.editing_event.id)
+        
+        // Close modal
+        this.close_modal()
+        
+      } catch (error) {
+        console.error('Error deleting event:', error)
+        if (error.message.includes('401')) {
+          alert('Authentication failed. Please log in again.')
+        } else {
+          alert('Failed to delete event. Please try again.')
         }
       }
     },
     
     close_modal() {
       this.show_event_modal = false
+      this.editing_event = null
+      
+      // Reset form
+      this.new_event = {
+        name: '',
+        description: '',
+        date: '',
+        date_display: '',
+        latitude: 0,
+        longitude: 0,
+        lens_type: 'historic'
+      }
     },
     
     get_backend_url() {
@@ -531,13 +623,24 @@ export default {
 
 .modal-actions {
   display: flex;
-  gap: 10px;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
 }
 
+.left-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.right-actions {
+  display: flex;
+  gap: 10px;
+}
+
 .btn-cancel,
-.btn-create {
+.btn-create,
+.btn-delete {
   padding: 10px 20px;
   border: none;
   border-radius: 6px;
@@ -562,6 +665,15 @@ export default {
 
 .btn-create:hover {
   background: #218838;
+}
+
+.btn-delete {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-delete:hover {
+  background: #c82333;
 }
 
 /* Event popup styling */
@@ -597,5 +709,22 @@ export default {
   justify-content: center;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+/* Edit button styling in popup */
+:deep(.edit-btn) {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+:deep(.edit-btn:hover) {
+  background: #0056b3;
 }
 </style>

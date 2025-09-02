@@ -50,6 +50,8 @@
           :events="filteredEvents" 
           :focus-event="focusEvent"
           @event-created="handleEventCreated"
+          @event-updated="handleEventCreated"
+          @event-deleted="handleEventCreated"
         />
       </main>
     </div>
