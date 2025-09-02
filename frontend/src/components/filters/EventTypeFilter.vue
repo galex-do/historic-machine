@@ -1,5 +1,5 @@
 <template>
-  <div class="filter-group">
+  <div class="filter-field">
     <label class="filter-label">Event Types:</label>
     <div class="multiselect-container">
       <div 
@@ -89,16 +89,33 @@ export default {
   position: relative;
 }
 
+.filter-field {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.filter-label {
+  color: #4a5568;
+  font-weight: 500;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  margin: 0;
+}
+
 .multiselect-dropdown {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem;
+  height: 36px;
+  padding: 0 0.75rem;
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s;
+  min-width: 180px;
 }
 
 .multiselect-dropdown:hover,

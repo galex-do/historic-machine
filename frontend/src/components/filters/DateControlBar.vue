@@ -250,14 +250,16 @@ export default {
 
 .date-input {
   width: 100%;
-  padding: 0.5rem 0.75rem;
+  height: 36px;
+  padding: 0 0.75rem;
   border: 1px solid #e2e8f0;
   border-radius: 6px;
   background: #ffffff;
   color: #2d3748;
   font-size: 0.9rem;
   transition: border-color 0.2s;
-  min-width: 150px;
+  min-width: 120px;
+  max-width: 140px;
 }
 
 .date-input::placeholder {
@@ -293,7 +295,8 @@ export default {
   color: white;
   border: none;
   border-radius: 6px;
-  padding: 0.5rem 1rem;
+  height: 36px;
+  padding: 0 1rem;
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
@@ -320,7 +323,7 @@ export default {
 
 .step-button {
   width: 36px;
-  height: 32px;
+  height: 36px;
   border: 1px solid #e2e8f0;
   border-radius: 6px;
   background: #f8f9fa;
@@ -351,9 +354,10 @@ export default {
 }
 
 .step-select {
-  padding: 0.5rem 0.75rem;
+  height: 36px;
+  padding: 0 0.75rem;
   border: 1px solid #e2e8f0;
-  border-radius: 4px;
+  border-radius: 6px;
   background: #ffffff;
   color: #2d3748;
   font-size: 0.9rem;
