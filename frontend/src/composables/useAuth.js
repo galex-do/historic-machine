@@ -123,9 +123,9 @@ export function useAuth() {
 
   // Computed properties for permissions
   const isGuest = computed(() => !isAuthenticated.value)
-  const canCreateEvents = computed(() => authService.canCreateEvents())
-  const isAdmin = computed(() => authService.isAdmin())
-  const isSuper = computed(() => authService.isSuper())
+  const canCreateEvents = computed(() => isAuthenticated.value && user.value && user.value.access_level !== 'guest')
+  const isAdmin = computed(() => isAuthenticated.value && user.value && (user.value.access_level === 'admin' || user.value.access_level === 'super'))
+  const isSuper = computed(() => isAuthenticated.value && user.value && user.value.access_level === 'super')
 
   // Initialize on mount
   onMounted(() => {
