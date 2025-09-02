@@ -18,7 +18,10 @@ class ApiService {
 
   async makeRequest(endpoint, options = {}) {
     try {
-      const response = await fetch(`${this.baseURL}${endpoint}`, {
+      const url = `${this.baseURL}${endpoint}`
+      console.log(`Making API request to: ${url}`)
+      
+      const response = await fetch(url, {
         headers: {
           'Content-Type': 'application/json',
           ...options.headers,
@@ -27,14 +30,17 @@ class ApiService {
       })
 
       if (!response.ok) {
+        console.error(`HTTP error! status: ${response.status} for ${url}`)
         throw new Error(`HTTP error! status: ${response.status}`)
       }
 
       const responseData = await response.json()
+      console.log(`API response for ${endpoint}:`, responseData)
+      
       // Handle both new standardized format and legacy format
       return responseData.data || responseData
     } catch (error) {
-      console.error(`API Error for ${endpoint}:`, error)
+      console.error(`API Error for ${endpoint}:`, error.message || error)
       throw error
     }
   }

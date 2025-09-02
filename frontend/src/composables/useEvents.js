@@ -20,20 +20,9 @@ export function useEvents() {
       console.log('Successfully loaded events:', events.value.length)
     } catch (err) {
       console.error('Error fetching events:', err)
-      error.value = err.message
-      // Fallback sample data for development
-      events.value = [
-        {
-          id: 1,
-          name: 'Fall of Constantinople',
-          description: 'Ottoman Empire conquered Byzantine Empire',
-          latitude: 41.0082,
-          longitude: 28.9784,
-          event_date: '1453-05-29T00:00:00Z',
-          lens_type: 'historic'
-        }
-      ]
-      filteredEvents.value = events.value
+      error.value = err.message || 'Failed to fetch events'
+      events.value = []
+      filteredEvents.value = []
     } finally {
       loading.value = false
     }

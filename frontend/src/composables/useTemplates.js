@@ -26,7 +26,7 @@ export function useTemplates() {
       console.log('Successfully loaded template groups:', templateGroups.value.length)
     } catch (err) {
       console.error('Error fetching template groups:', err)
-      error.value = err.message
+      error.value = err.message || 'Failed to fetch template groups'
       templateGroups.value = []
     } finally {
       loading.value = false

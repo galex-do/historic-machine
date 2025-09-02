@@ -75,6 +75,33 @@ export default {
 </script>
 
 <style scoped>
+.filter-group {
+  margin-bottom: 1.5rem;
+}
+
+.filter-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.filter-select {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 0.9rem;
+  backdrop-filter: blur(10px);
+}
+
+.filter-select option {
+  background: #2d3748;
+  color: white;
+}
+
 .filter-subgroup {
   margin-top: 1rem;
   padding-left: 1rem;
