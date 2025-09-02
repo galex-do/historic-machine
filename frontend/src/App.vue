@@ -289,7 +289,6 @@ body {
 .main-layout {
   display: flex;
   flex: 1;
-  height: calc(100vh - 160px); /* Account for header + enhanced filter bar */
   overflow: hidden;
   position: relative;
 }
@@ -377,14 +376,14 @@ body {
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
   .main-layout {
     flex-direction: column;
-    height: calc(100vh - 160px);
   }
   
   .events-sidebar {
@@ -407,7 +406,7 @@ body {
 
 @media (max-width: 768px) {
   .main-layout {
-    height: calc(100vh - 140px); /* Account for potentially smaller mobile header */
+    /* Let it flex naturally for full height */
   }
   
   .events-sidebar {
