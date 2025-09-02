@@ -199,13 +199,12 @@ export default {
   background: #ffffff;
   border-bottom: 1px solid #e2e8f0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   margin-bottom: 0;
 }
 
 .date-controls-container {
-  max-width: 1400px;
-  margin: 0 auto;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -376,6 +375,12 @@ export default {
   .date-controls-container {
     gap: 1rem;
   }
+}
+
+@media (max-width: 900px) {
+  .date-controls-container {
+    gap: 0.75rem;
+  }
   
   .date-range-section {
     flex-direction: column;
@@ -385,29 +390,44 @@ export default {
 
 @media (max-width: 768px) {
   .date-control-bar {
-    padding: 1rem;
+    padding: 0.75rem;
   }
   
   .date-controls-container {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: stretch;
+    gap: 0.75rem;
+  }
+  
+  .controls-title {
+    font-size: 1rem;
   }
   
   .template-section,
   .event-type-section,
   .apply-section {
-    width: 100%;
+    flex: 1;
+    min-width: 0;
   }
   
   .date-range-section {
-    flex-direction: column;
-    gap: 1rem;
+    gap: 0.75rem;
   }
   
   .date-inputs {
-    flex-direction: column;
-    gap: 1rem;
+    gap: 0.75rem;
+  }
+  
+  .date-input-group {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .date-input {
+    min-width: 80px;
+    max-width: none;
+  }
+  
+  .step-controls-section {
+    gap: 0.75rem;
   }
 }
 </style>
