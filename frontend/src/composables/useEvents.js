@@ -37,14 +37,20 @@ export function useEvents() {
     }
     
     filteredEvents.value = events.value.filter(event => {
-      // Simple date string comparison (works for both BC and AD dates in ISO format)
+      // Convert both event date and filter dates to astronomical years for proper BC/AD comparison
       const eventDate = event.event_date.split('T')[0] // Get just the date part: "0753-04-21"
+      const eventYear = parseInt(eventDate.split('-')[0], 10)
       
-      // Date filtering - ISO date string comparison handles BC/AD correctly
-      if (dateFrom && eventDate < dateFrom) {
+      // Convert event to astronomical year (BC dates become negative)
+      const eventAstronomicalDate = event.era === 'BC' 
+        ? `-${String(eventYear - 1).padStart(4, '0')}-01-01`  // 753 BC -> -0752-01-01
+        : eventDate // AD dates stay as-is
+      
+      // Date filtering with proper BC/AD comparison using astronomical dates
+      if (dateFrom && eventAstronomicalDate < dateFrom) {
         return false
       }
-      if (dateTo && eventDate > dateTo) {
+      if (dateTo && eventAstronomicalDate > dateTo) {
         return false
       }
       
