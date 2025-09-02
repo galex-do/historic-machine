@@ -7,8 +7,8 @@
     <DateControlBar
       :date-from-display="dateFromDisplay"
       :date-to-display="dateToDisplay"
-      @date-from-changed="updateDateFrom"
-      @date-to-changed="updateDateTo"
+      @date-from-changed="handleDateFromChange"
+      @date-to-changed="handleDateToChange"
     />
     
     <!-- Main Layout: Sidebar + Map -->
@@ -135,6 +135,9 @@ export default {
       if (!groupId) {
         // Reset to default date range when "Default (1 AD - Today)" is selected
         resetToDefaultDateRange()
+      } else if (groupId === 'custom') {
+        // Custom mode - keep current dates, don't change anything
+        console.log('Switched to Custom date range mode')
       }
       applyFilters()
     }
@@ -147,6 +150,27 @@ export default {
         applyTemplateDates(templateData)
         console.log(`Selected template: ${selectedTemplate.value.name} (${templateData.displayFrom} - ${templateData.displayTo})`)
       }
+      applyFilters()
+    }
+    
+    // Enhanced date update methods that switch to custom mode
+    const handleDateFromChange = (newValue) => {
+      // Switch to custom mode when user manually changes dates
+      if (selectedTemplateGroupId.value && selectedTemplateGroupId.value !== 'custom') {
+        templateGroupChange('custom')
+        console.log('Switched to Custom mode due to manual date change')
+      }
+      updateDateFrom(newValue)
+      applyFilters()
+    }
+    
+    const handleDateToChange = (newValue) => {
+      // Switch to custom mode when user manually changes dates
+      if (selectedTemplateGroupId.value && selectedTemplateGroupId.value !== 'custom') {
+        templateGroupChange('custom')
+        console.log('Switched to Custom mode due to manual date change')
+      }
+      updateDateTo(newValue)
       applyFilters()
     }
 
@@ -210,8 +234,8 @@ export default {
       dateToDisplay,
       selectedLensTypes,
       showLensDropdown,
-      updateDateFrom,
-      updateDateTo,
+      handleDateFromChange,
+      handleDateToChange,
       toggleLensDropdown,
       handleLensTypesChange,
 

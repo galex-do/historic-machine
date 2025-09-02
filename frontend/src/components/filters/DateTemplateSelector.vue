@@ -9,6 +9,7 @@
         class="filter-select"
       >
         <option value="">Default (1 AD - Today)</option>
+        <option value="custom">Custom Date Range</option>
         <option v-for="group in templateGroups" :key="group.id" :value="group.id">
           {{ group.name }}
         </option>
