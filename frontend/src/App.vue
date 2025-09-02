@@ -3,51 +3,53 @@
     <!-- Header -->
     <AppHeader />
     
-    <!-- Date Control Bar (Under Header) -->
+    <!-- Enhanced Filter Bar (Under Header) -->
     <DateControlBar
       :date-from-display="dateFromDisplay"
       :date-to-display="dateToDisplay"
+      :template-groups="templateGroups"
+      :available-templates="availableTemplates"
+      :selected-template-group-id="selectedTemplateGroupId"
+      :selected-template-id="selectedTemplateId"
+      :selected-template="selectedTemplate"
+      :selected-lens-types="selectedLensTypes"
+      :show-lens-dropdown="showLensDropdown"
       @date-from-changed="handleDateFromChange"
       @date-to-changed="handleDateToChange"
+      @template-group-changed="handleTemplateGroupChange"
+      @template-changed="handleTemplateChange"
+      @toggle-lens-dropdown="toggleLensDropdown"
+      @lens-types-changed="handleLensTypesChange"
+      @apply-filters="applyFilters"
     />
     
-    <!-- Main Layout: Sidebar + Map -->
+    <!-- Main Layout: Events Sidebar + Map -->
     <div class="main-layout">
-      <!-- Left Sidebar (Collapsible) -->
-      <SidebarFilters
-        :collapsed="sidebarCollapsed"
-        :template-groups="templateGroups"
-        :available-templates="availableTemplates"
-        :selected-template-group-id="selectedTemplateGroupId"
-        :selected-template-id="selectedTemplateId"
-        :selected-template="selectedTemplate"
-        :selected-lens-types="selectedLensTypes"
-        :show-lens-dropdown="showLensDropdown"
-        :all-tags="allTags"
-        :loading-tags="isLoadingTags"
-        @toggle="toggleSidebar"
-        @template-group-changed="handleTemplateGroupChange"
-        @template-changed="handleTemplateChange"
-        @toggle-lens-dropdown="toggleLensDropdown"
-        @lens-types-changed="handleLensTypesChange"
-        @apply-filters="applyFilters"
-      />
-      
-      <!-- Right Content Area -->
-      <main class="content-area">
-        <!-- Map Section -->
-        <div class="map-section">
-          <WorldMap 
-            :events="filteredEvents" 
-            :focus-event="focusEvent"
-            @event-created="handleEventCreated"
-          />
+      <!-- Left Events Sidebar (Collapsible) -->
+      <aside class="events-sidebar" :class="{ 'collapsed': sidebarCollapsed }">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header">
+          <h3 class="section-title" v-show="!sidebarCollapsed">Historical Events</h3>
+          <button class="sidebar-toggle" @click="toggleSidebar">
+            {{ sidebarCollapsed ? '›' : '‹' }}
+          </button>
         </div>
         
-        <!-- Events List Below Map -->
-        <EventsGrid
-          :events="filteredEvents"
-          @focus-event="focusOnEvent"
+        <!-- Events List in Sidebar -->
+        <div class="events-sidebar-content" v-show="!sidebarCollapsed">
+          <EventsGrid
+            :events="filteredEvents"
+            @focus-event="focusOnEvent"
+          />
+        </div>
+      </aside>
+      
+      <!-- Right Map Area (Full Height) -->
+      <main class="map-content-area">
+        <WorldMap 
+          :events="filteredEvents" 
+          :focus-event="focusEvent"
+          @event-created="handleEventCreated"
         />
       </main>
     </div>
@@ -57,7 +59,6 @@
 <script>
 import { ref, onMounted, nextTick } from 'vue'
 import AppHeader from '@/components/layout/AppHeader.vue'
-import SidebarFilters from '@/components/filters/SidebarFilters.vue'
 import DateControlBar from '@/components/filters/DateControlBar.vue'
 import WorldMap from '@/components/WorldMap.vue'
 import EventsGrid from '@/components/events/EventsGrid.vue'
@@ -70,7 +71,6 @@ export default {
   name: 'App',
   components: {
     AppHeader,
-    SidebarFilters,
     DateControlBar,
     WorldMap,
     EventsGrid
@@ -289,44 +289,124 @@ body {
 .main-layout {
   display: flex;
   flex: 1;
-  height: calc(100vh - 140px); /* Account for header + date control bar */
+  height: calc(100vh - 160px); /* Account for header + enhanced filter bar */
   overflow: hidden;
 }
 
-/* Content Area */
-.content-area {
+/* Events Sidebar */
+.events-sidebar {
+  background: #ffffff;
+  color: #2d3748;
+  position: relative;
+  transition: all 0.3s ease;
+  width: 350px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-right: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.events-sidebar.collapsed {
+  width: 60px;
+}
+
+.events-sidebar.collapsed .sidebar-header {
+  padding: 1.5rem 0.5rem 1rem;
+  justify-content: center;
+}
+
+.events-sidebar.collapsed .sidebar-toggle {
+  margin: 0;
+}
+
+.sidebar-header {
+  background: #f8f9fa;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1.5rem 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.section-title {
+  color: #2d3748;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.sidebar-toggle {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #4a5568;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  margin-left: auto;
+}
+
+.sidebar-toggle:hover {
+  background: #f1f5f9;
+  color: #2d3748;
+  border-color: #cbd5e0;
+}
+
+.events-sidebar-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Map Content Area (Full Space) */
+.map-content-area {
   flex: 1;
   background: #ffffff;
   position: relative;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
   transition: all 0.3s ease;
-}
-
-/* Map Section */
-.map-section {
-  flex: 1;
-  position: relative;
-  z-index: 1;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
   .main-layout {
     flex-direction: column;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 160px);
   }
   
-  .content-area {
-    flex: 1;
+  .events-sidebar {
+    width: 100%;
+    height: 40vh;
     order: 2;
+  }
+  
+  .events-sidebar.collapsed {
+    height: 60px;
+    width: 100%;
+  }
+  
+  .map-content-area {
+    flex: 1;
+    order: 1;
+    min-height: 50vh;
   }
 }
 
 @media (max-width: 768px) {
   .main-layout {
-    height: calc(100vh - 120px); /* Smaller header on mobile */
+    height: calc(100vh - 140px); /* Account for potentially smaller mobile header */
+  }
+  
+  .events-sidebar {
+    height: 35vh;
   }
 }
 </style>

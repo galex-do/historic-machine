@@ -37,11 +37,12 @@ export default {
 
 <style scoped>
 .events-section {
-  background: #f8f9fa;
-  padding: 1.5rem;
-  border-top: 1px solid #e2e8f0;
-  max-height: 40vh;
+  background: transparent;
+  padding: 1rem;
+  height: 100%;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .section-title {
@@ -52,28 +53,27 @@ export default {
 }
 
 .events-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1rem;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
 }
 
 .no-events {
-  grid-column: 1 / -1;
   text-align: center;
   padding: 2rem;
   color: #718096;
   font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .events-grid {
-    grid-template-columns: 1fr;
-  }
-  
   .events-section {
-    max-height: 50vh;
+    padding: 0.75rem;
   }
 }
 </style>

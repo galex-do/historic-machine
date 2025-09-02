@@ -1,7 +1,20 @@
 <template>
   <div class="date-control-bar">
     <div class="date-controls-container">
-      <h3 class="controls-title">Time Period</h3>
+      <h3 class="controls-title">Filters</h3>
+      
+      <!-- Historical Period Template Selector -->
+      <div class="template-section">
+        <DateTemplateSelector
+          :template-groups="templateGroups"
+          :available-templates="availableTemplates"
+          :selected-template-group-id="selectedTemplateGroupId"
+          :selected-template-id="selectedTemplateId"
+          :selected-template="selectedTemplate"
+          @template-group-changed="$emit('template-group-changed', $event)"
+          @template-changed="$emit('template-changed', $event)"
+        />
+      </div>
       
       <!-- Date Range Controls -->
       <div class="date-range-section">
@@ -57,6 +70,21 @@
           </div>
         </div>
       </div>
+      
+      <!-- Event Type Filter -->
+      <div class="event-type-section">
+        <EventTypeFilter
+          :selected-lens-types="selectedLensTypes"
+          :show-dropdown="showLensDropdown"
+          @toggle-dropdown="$emit('toggle-lens-dropdown')"
+          @lens-types-changed="$emit('lens-types-changed', $event)"
+        />
+      </div>
+      
+      <!-- Apply Filters Button -->
+      <div class="apply-section">
+        <button @click="$emit('apply-filters')" class="apply-button">Apply</button>
+      </div>
     </div>
   </div>
 </template>
@@ -64,9 +92,15 @@
 <script>
 import { ref } from 'vue'
 import { addYearsToHistoricalDate, parseHistoricalDate } from '@/utils/date-utils.js'
+import DateTemplateSelector from './DateTemplateSelector.vue'
+import EventTypeFilter from './EventTypeFilter.vue'
 
 export default {
   name: 'DateControlBar',
+  components: {
+    DateTemplateSelector,
+    EventTypeFilter
+  },
   props: {
     dateFromDisplay: {
       type: String,
@@ -75,9 +109,45 @@ export default {
     dateToDisplay: {
       type: String,
       default: ''
+    },
+    templateGroups: {
+      type: Array,
+      default: () => []
+    },
+    availableTemplates: {
+      type: Array,
+      default: () => []
+    },
+    selectedTemplateGroupId: {
+      type: [String, Number],
+      default: ''
+    },
+    selectedTemplateId: {
+      type: [String, Number],
+      default: ''
+    },
+    selectedTemplate: {
+      type: Object,
+      default: null
+    },
+    selectedLensTypes: {
+      type: Array,
+      default: () => []
+    },
+    showLensDropdown: {
+      type: Boolean,
+      default: false
     }
   },
-  emits: ['date-from-changed', 'date-to-changed'],
+  emits: [
+    'date-from-changed', 
+    'date-to-changed', 
+    'template-group-changed', 
+    'template-changed', 
+    'toggle-lens-dropdown', 
+    'lens-types-changed',
+    'apply-filters'
+  ],
   setup(props, { emit }) {
     const stepSize = ref(10) // Default step size: 10 years
     
@@ -134,11 +204,12 @@ export default {
 }
 
 .date-controls-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .controls-title {
@@ -197,6 +268,43 @@ export default {
   outline: none;
   border-color: #667eea;
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.template-section {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.event-type-section {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.apply-section {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.apply-button {
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.apply-button:hover {
+  background: #5a67d8;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3);
 }
 
 .step-controls-section {
@@ -260,11 +368,32 @@ export default {
 }
 
 /* Responsive design */
+@media (max-width: 1200px) {
+  .date-controls-container {
+    gap: 1rem;
+  }
+  
+  .date-range-section {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .date-control-bar {
+    padding: 1rem;
+  }
+  
   .date-controls-container {
     flex-direction: column;
     gap: 1rem;
     align-items: stretch;
+  }
+  
+  .template-section,
+  .event-type-section,
+  .apply-section {
+    width: 100%;
   }
   
   .date-range-section {
