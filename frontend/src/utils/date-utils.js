@@ -79,8 +79,8 @@ export function getTodayISO() {
 
 /**
  * Parse historical date string with BC/AD support
- * Formats: "500 BC", "1066 AD", "500BC", "1066AD", "500", "1066"
- * Returns: { year: number, era: 'BC'|'AD', isoDate: string }
+ * Formats: "500 BC", "1066 AD", "15.03.44 BC", "25.12.1066 AD", "500", "1066"
+ * Returns: { year: number, era: 'BC'|'AD', day?: number, month?: number, isoDate: string }
  */
 export function parseHistoricalDate(dateStr) {
   if (!dateStr || typeof dateStr !== 'string') {
@@ -90,14 +90,28 @@ export function parseHistoricalDate(dateStr) {
   // Clean up the input
   const cleanStr = dateStr.trim().toUpperCase()
   
+  // Match patterns with DD.MM.YYYY format and BC/AD
+  const ddmmyyyyBcMatch = cleanStr.match(/^(\d{1,2})\.(\d{1,2})\.(\d{1,4})\s*BC$/)
+  const ddmmyyyyAdMatch = cleanStr.match(/^(\d{1,2})\.(\d{1,2})\.(\d{1,4})\s*AD$/)
+  
   // Match patterns like "500 BC", "1066 AD", "500BC", "1066AD"
   const bcMatch = cleanStr.match(/^(\d{1,4})\s*BC$/)
   const adMatch = cleanStr.match(/^(\d{1,4})\s*AD$/)
   const yearOnlyMatch = cleanStr.match(/^(\d{1,4})$/)
   
-  let year, era
+  let year, era, day, month
   
-  if (bcMatch) {
+  if (ddmmyyyyBcMatch) {
+    day = parseInt(ddmmyyyyBcMatch[1], 10)
+    month = parseInt(ddmmyyyyBcMatch[2], 10)
+    year = parseInt(ddmmyyyyBcMatch[3], 10)
+    era = 'BC'
+  } else if (ddmmyyyyAdMatch) {
+    day = parseInt(ddmmyyyyAdMatch[1], 10)
+    month = parseInt(ddmmyyyyAdMatch[2], 10)
+    year = parseInt(ddmmyyyyAdMatch[3], 10)
+    era = 'AD'
+  } else if (bcMatch) {
     year = parseInt(bcMatch[1], 10)
     era = 'BC'
   } else if (adMatch) {
@@ -116,16 +130,32 @@ export function parseHistoricalDate(dateStr) {
     return null
   }
   
+  // Validate day and month if provided
+  if (day !== undefined && month !== undefined) {
+    if (month < 1 || month > 12 || day < 1 || day > 31) {
+      return null
+    }
+  }
+  
   // Convert to ISO date (astronomical year numbering for proper BC/AD comparison)
   const isoYear = era === 'BC' ? (year === 1 ? '0000' : String(year - 1).padStart(4, '0')) : String(year).padStart(4, '0')
-  const isoDate = era === 'BC' ? `-${isoYear}-01-01` : `${isoYear}-01-01`
+  const isoMonth = month ? String(month).padStart(2, '0') : '01'
+  const isoDay = day ? String(day).padStart(2, '0') : '01'
+  const isoDate = era === 'BC' ? `-${isoYear}-${isoMonth}-${isoDay}` : `${isoYear}-${isoMonth}-${isoDay}`
   
-  return {
+  const result = {
     year,
     era,
     isoDate,
-    displayString: `${year} ${era}`
+    displayString: day && month ? `${String(day).padStart(2, '0')}.${String(month).padStart(2, '0')}.${year} ${era}` : `${year} ${era}`
   }
+  
+  if (day !== undefined && month !== undefined) {
+    result.day = day
+    result.month = month
+  }
+  
+  return result
 }
 
 /**
@@ -154,7 +184,7 @@ export function formatHistoricalDate(dateInput) {
 
 /**
  * Add years to a historical date
- * Used for step functionality
+ * Used for step functionality - preserves day and month if present
  */
 export function addYearsToHistoricalDate(dateStr, years) {
   const parsed = parseHistoricalDate(dateStr)
@@ -181,7 +211,14 @@ export function addYearsToHistoricalDate(dateStr, years) {
   if (newYear < 1) newYear = 1
   if (newYear > 9999) newYear = 9999
   
-  return `${newYear} ${newEra}`
+  // Preserve day and month if they were in the original date
+  if (parsed.day !== undefined && parsed.month !== undefined) {
+    const paddedDay = String(parsed.day).padStart(2, '0')
+    const paddedMonth = String(parsed.month).padStart(2, '0')
+    return `${paddedDay}.${paddedMonth}.${newYear} ${newEra}`
+  } else {
+    return `${newYear} ${newEra}`
+  }
 }
 
 /**
