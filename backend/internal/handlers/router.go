@@ -38,43 +38,43 @@ func (router *Router) SetupRoutes() http.Handler {
         api := r.PathPrefix("/api").Subrouter()
         
         // Authentication routes (public)
-        api.HandleFunc("/auth/login", router.authHandler.Login).Methods("POST")
-        api.HandleFunc("/auth/register", router.authHandler.Register).Methods("POST")
-        api.HandleFunc("/auth/logout", router.authHandler.Logout).Methods("POST")
-        api.HandleFunc("/auth/me", router.authHandler.Me).Methods("GET")
-        api.HandleFunc("/auth/change-password", router.authHandler.ChangePassword).Methods("POST")
+        api.HandleFunc("/auth/login", router.authHandler.Login).Methods("POST", "OPTIONS")
+        api.HandleFunc("/auth/register", router.authHandler.Register).Methods("POST", "OPTIONS")
+        api.HandleFunc("/auth/logout", router.authHandler.Logout).Methods("POST", "OPTIONS")
+        api.HandleFunc("/auth/me", router.authHandler.Me).Methods("GET", "OPTIONS")
+        api.HandleFunc("/auth/change-password", router.authHandler.ChangePassword).Methods("POST", "OPTIONS")
         
         // Event routes (public read, auth required for create)
-        api.HandleFunc("/events", router.authHandler.OptionalAuthMiddleware(router.eventHandler.GetAllEvents)).Methods("GET")
-        api.HandleFunc("/events", router.authHandler.AuthMiddleware(router.eventHandler.CreateEvent)).Methods("POST")
-        api.HandleFunc("/events/{id}", router.authHandler.OptionalAuthMiddleware(router.eventHandler.GetEventByID)).Methods("GET")
+        api.HandleFunc("/events", router.authHandler.OptionalAuthMiddleware(router.eventHandler.GetAllEvents)).Methods("GET", "OPTIONS")
+        api.HandleFunc("/events", router.authHandler.AuthMiddleware(router.eventHandler.CreateEvent)).Methods("POST", "OPTIONS")
+        api.HandleFunc("/events/{id}", router.authHandler.OptionalAuthMiddleware(router.eventHandler.GetEventByID)).Methods("GET", "OPTIONS")
         
         // Spatial query routes
-        api.HandleFunc("/events/bbox", router.eventHandler.GetEventsInBBox).Methods("GET")
-        api.HandleFunc("/events/radius", router.eventHandler.GetEventsInRadius).Methods("GET")
+        api.HandleFunc("/events/bbox", router.eventHandler.GetEventsInBBox).Methods("GET", "OPTIONS")
+        api.HandleFunc("/events/radius", router.eventHandler.GetEventsInRadius).Methods("GET", "OPTIONS")
         
         // Template routes
-        api.HandleFunc("/date-template-groups", router.templateHandler.GetAllGroups).Methods("GET")
-        api.HandleFunc("/date-templates/{group_id}", router.templateHandler.GetTemplatesByGroup).Methods("GET")
-        api.HandleFunc("/date-templates", router.templateHandler.GetAllTemplates).Methods("GET")
+        api.HandleFunc("/date-template-groups", router.templateHandler.GetAllGroups).Methods("GET", "OPTIONS")
+        api.HandleFunc("/date-templates/{group_id}", router.templateHandler.GetTemplatesByGroup).Methods("GET", "OPTIONS")
+        api.HandleFunc("/date-templates", router.templateHandler.GetAllTemplates).Methods("GET", "OPTIONS")
         
         // Tag routes
-        api.HandleFunc("/tags", router.tagHandler.GetAllTags).Methods("GET")
-        api.HandleFunc("/tags", router.tagHandler.CreateTag).Methods("POST")
-        api.HandleFunc("/tags/{id}", router.tagHandler.GetTagByID).Methods("GET")
-        api.HandleFunc("/tags/{id}", router.tagHandler.UpdateTag).Methods("PUT")
-        api.HandleFunc("/tags/{id}", router.tagHandler.DeleteTag).Methods("DELETE")
+        api.HandleFunc("/tags", router.tagHandler.GetAllTags).Methods("GET", "OPTIONS")
+        api.HandleFunc("/tags", router.tagHandler.CreateTag).Methods("POST", "OPTIONS")
+        api.HandleFunc("/tags/{id}", router.tagHandler.GetTagByID).Methods("GET", "OPTIONS")
+        api.HandleFunc("/tags/{id}", router.tagHandler.UpdateTag).Methods("PUT", "OPTIONS")
+        api.HandleFunc("/tags/{id}", router.tagHandler.DeleteTag).Methods("DELETE", "OPTIONS")
         
         // Event-Tag relationship routes
-        api.HandleFunc("/events/{event_id}/tags/{tag_id}", router.tagHandler.AddTagToEvent).Methods("POST")
-        api.HandleFunc("/events/{event_id}/tags/{tag_id}", router.tagHandler.RemoveTagFromEvent).Methods("DELETE")
-        api.HandleFunc("/events/{event_id}/tags", router.tagHandler.SetEventTags).Methods("PUT")
+        api.HandleFunc("/events/{event_id}/tags/{tag_id}", router.tagHandler.AddTagToEvent).Methods("POST", "OPTIONS")
+        api.HandleFunc("/events/{event_id}/tags/{tag_id}", router.tagHandler.RemoveTagFromEvent).Methods("DELETE", "OPTIONS")
+        api.HandleFunc("/events/{event_id}/tags", router.tagHandler.SetEventTags).Methods("PUT", "OPTIONS")
         
         // Health check endpoint
         api.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
                 w.WriteHeader(http.StatusOK)
                 w.Write([]byte(`{"status": "healthy"}`))
-        }).Methods("GET")
+        }).Methods("GET", "OPTIONS")
         
         return r
 }
