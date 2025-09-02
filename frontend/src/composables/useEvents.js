@@ -21,45 +21,8 @@ export function useEvents() {
     } catch (err) {
       console.error('Error fetching events:', err)
       error.value = err.message || 'Failed to fetch events'
-      console.log('Using fallback sample events for development')
-      
-      // Fallback sample data for development when backend is not accessible
-      events.value = [
-        {
-          id: 1,
-          name: "Foundation of Rome",
-          description: "Legendary founding of Rome by Romulus",
-          latitude: 41.9028,
-          longitude: 12.4964,
-          event_date: "0753-04-21T00:00:00Z",
-          era: "BC",
-          lens_type: "historic",
-          display_date: "21.04.753 BC"
-        },
-        {
-          id: 2,
-          name: "Battle of Marathon",
-          description: "Greeks defeat Persian invasion",
-          latitude: 38.1462,
-          longitude: 23.9608,
-          event_date: "0490-09-12T00:00:00Z",
-          era: "BC",
-          lens_type: "military",
-          display_date: "12.09.490 BC"
-        },
-        {
-          id: 3,
-          name: "Fall of Constantinople",
-          description: "End of the Byzantine Empire",
-          latitude: 41.0082,
-          longitude: 28.9784,
-          event_date: "1453-05-29T00:00:00Z",
-          era: "AD",
-          lens_type: "military",
-          display_date: "29.05.1453 AD"
-        }
-      ]
-      filteredEvents.value = events.value
+      events.value = []
+      filteredEvents.value = []
     } finally {
       loading.value = false
     }

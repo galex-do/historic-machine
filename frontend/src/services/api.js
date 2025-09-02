@@ -8,27 +8,12 @@ class ApiService {
   }
 
   getBackendUrl() {
-    const host = window.location.hostname
-    const protocol = window.location.protocol
-    
-    // For local development
-    if (host === 'localhost' || host === '127.0.0.1') {
-      return 'http://localhost:8080/api'
-    }
-    
-    // For Docker environment (nginx proxy available)
+    // Check if running in Docker environment (nginx proxy available)
     if (window.location.host.includes('localhost:3000')) {
       return '/api'
     }
-    
-    // For Replit environment - use internal network address
-    if (host.includes('replit.dev')) {
-      // In Replit, use the internal network address for backend
-      return 'http://0.0.0.0:8080/api'
-    }
-    
-    // Fallback for other environments
-    return `${protocol}//${host}:8080/api`
+    // Default for Replit development environment
+    return 'http://localhost:8080/api'
   }
 
   async makeRequest(endpoint, options = {}) {
@@ -37,24 +22,15 @@ class ApiService {
       console.log(`Making API request to: ${url}`)
       
       const response = await fetch(url, {
-        method: options.method || 'GET',
         headers: {
           'Content-Type': 'application/json',
-          'Accept': 'application/json',
           ...options.headers,
         },
-        body: options.body,
-        mode: 'cors',
-        credentials: 'omit',
-        cache: 'no-cache'
+        ...options,
       })
 
-      console.log(`Response status: ${response.status}`)
-      console.log(`Response headers:`, [...response.headers.entries()])
-
       if (!response.ok) {
-        const errorText = await response.text()
-        console.error(`HTTP error! status: ${response.status} for ${url}. Response: ${errorText}`)
+        console.error(`HTTP error! status: ${response.status} for ${url}`)
         throw new Error(`HTTP error! status: ${response.status}`)
       }
 
@@ -65,7 +41,6 @@ class ApiService {
       return responseData.data || responseData
     } catch (error) {
       console.error(`API Error for ${endpoint}:`, error.message || error)
-      console.error(`Full error:`, error)
       throw error
     }
   }
