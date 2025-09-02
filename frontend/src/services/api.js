@@ -2,6 +2,8 @@
  * API service for backend communication
  */
 
+import authService from './authService.js'
+
 class ApiService {
   constructor() {
     this.baseURL = this.getBackendUrl()
@@ -21,9 +23,12 @@ class ApiService {
       const url = `${this.baseURL}${endpoint}`
       console.log(`Making API request to: ${url}`)
       
+      // Get authentication headers
+      const authHeaders = authService.getHeaders()
+      
       const response = await fetch(url, {
         headers: {
-          'Content-Type': 'application/json',
+          ...authHeaders,
           ...options.headers,
         },
         ...options,

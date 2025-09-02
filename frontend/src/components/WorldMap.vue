@@ -2,8 +2,8 @@
   <div class="map-container">
     <div ref="map" class="leaflet-map"></div>
     
-    <!-- Event Creation Modal -->
-    <div v-if="show_event_modal" class="modal-overlay" @click="close_modal">
+    <!-- Event Creation Modal (only show if user can create events) -->
+    <div v-if="show_event_modal && canCreateEvents" class="modal-overlay" @click="close_modal">
       <div class="modal-content" @click.stop>
         <h3>Add Historical Event</h3>
         <form @submit.prevent="create_event">
@@ -44,9 +44,17 @@
 <script>
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
+import { useAuth } from '@/composables/useAuth.js'
 
 export default {
   name: 'WorldMap',
+  setup() {
+    const { canCreateEvents, isGuest } = useAuth()
+    return {
+      canCreateEvents,
+      isGuest
+    }
+  },
   props: {
     events: {
       type: Array,
@@ -141,6 +149,17 @@ export default {
     },
     
     handle_map_click(event) {
+      // Check if user can create events
+      if (!this.canCreateEvents) {
+        // Show a message for guest users
+        if (this.isGuest) {
+          alert('Please login to create historical events. Click the login button in the header to get started!')
+        } else {
+          alert('You do not have permission to create events.')
+        }
+        return
+      }
+
       const { lat, lng } = event.latlng
       
       // Set coordinates for new event

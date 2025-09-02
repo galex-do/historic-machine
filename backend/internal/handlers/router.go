@@ -2,6 +2,7 @@ package handlers
 
 import (
         "historical-events-backend/internal/database/repositories"
+        "historical-events-backend/internal/services"
         "historical-events-backend/pkg/middleware"
         "net/http"
 
@@ -13,14 +14,16 @@ type Router struct {
         eventHandler    *EventHandler
         templateHandler *TemplateHandler
         tagHandler      *TagHandler
+        authHandler     *AuthHandler
 }
 
 // NewRouter creates a new router with all handlers
-func NewRouter(eventRepo *repositories.EventRepository, templateRepo *repositories.TemplateRepository, tagRepo *repositories.TagRepository) *Router {
+func NewRouter(eventRepo *repositories.EventRepository, templateRepo *repositories.TemplateRepository, tagRepo *repositories.TagRepository, authService *services.AuthService) *Router {
         return &Router{
                 eventHandler:    NewEventHandler(eventRepo),
                 templateHandler: NewTemplateHandler(templateRepo),
                 tagHandler:      NewTagHandler(tagRepo),
+                authHandler:     NewAuthHandler(authService),
         }
 }
 
@@ -34,10 +37,17 @@ func (router *Router) SetupRoutes() http.Handler {
         // API routes
         api := r.PathPrefix("/api").Subrouter()
         
-        // Event routes
-        api.HandleFunc("/events", router.eventHandler.GetAllEvents).Methods("GET")
-        api.HandleFunc("/events", router.eventHandler.CreateEvent).Methods("POST")
-        api.HandleFunc("/events/{id}", router.eventHandler.GetEventByID).Methods("GET")
+        // Authentication routes (public)
+        api.HandleFunc("/auth/login", router.authHandler.Login).Methods("POST")
+        api.HandleFunc("/auth/register", router.authHandler.Register).Methods("POST")
+        api.HandleFunc("/auth/logout", router.authHandler.Logout).Methods("POST")
+        api.HandleFunc("/auth/me", router.authHandler.Me).Methods("GET")
+        api.HandleFunc("/auth/change-password", router.authHandler.ChangePassword).Methods("POST")
+        
+        // Event routes (public read, auth required for create)
+        api.HandleFunc("/events", router.authHandler.OptionalAuthMiddleware(router.eventHandler.GetAllEvents)).Methods("GET")
+        api.HandleFunc("/events", router.authHandler.AuthMiddleware(router.eventHandler.CreateEvent)).Methods("POST")
+        api.HandleFunc("/events/{id}", router.authHandler.OptionalAuthMiddleware(router.eventHandler.GetEventByID)).Methods("GET")
         
         // Spatial query routes
         api.HandleFunc("/events/bbox", router.eventHandler.GetEventsInBBox).Methods("GET")

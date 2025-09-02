@@ -1,12 +1,142 @@
 <template>
   <header class="app-header">
-    <h1>Historical Events Mapping</h1>
+    <div class="header-content">
+      <h1>Historical Events Mapping</h1>
+      
+      <div class="auth-section">
+        <!-- Guest user (not logged in) -->
+        <div v-if="isGuest" class="auth-buttons">
+          <button @click="showLoginModal = true" class="auth-btn login-btn">
+            <span class="auth-icon">👤</span>
+            Login
+          </button>
+        </div>
+        
+        <!-- Authenticated user -->
+        <div v-else class="user-info">
+          <span class="user-welcome">
+            Welcome, <strong>{{ user?.username }}</strong>
+            <span v-if="user?.access_level === 'super'" class="access-badge super">SUPER</span>
+            <span v-else-if="user?.access_level === 'admin'" class="access-badge admin">ADMIN</span>
+          </span>
+          <button @click="handleLogout" class="auth-btn logout-btn" :disabled="loading">
+            <span class="auth-icon">🚪</span>
+            Logout
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Login Modal -->
+    <div v-if="showLoginModal" class="modal-overlay" @click="closeModal">
+      <div class="modal-content" @click.stop>
+        <div class="modal-header">
+          <h2>Login to Historical Events</h2>
+          <button @click="closeModal" class="close-btn">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+          <div v-if="error" class="error-message">
+            {{ error }}
+          </div>
+          
+          <form @submit.prevent="handleLogin">
+            <div class="form-group">
+              <label for="username">Username:</label>
+              <input 
+                id="username"
+                v-model="loginForm.username" 
+                type="text" 
+                required 
+                class="form-input"
+                placeholder="Enter username"
+              />
+            </div>
+            
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input 
+                id="password"
+                v-model="loginForm.password" 
+                type="password" 
+                required 
+                class="form-input"
+                placeholder="Enter password"
+              />
+            </div>
+            
+            <div class="form-actions">
+              <button type="submit" class="submit-btn" :disabled="loading">
+                {{ loading ? 'Logging in...' : 'Login' }}
+              </button>
+            </div>
+          </form>
+          
+          <div class="demo-info">
+            <p><strong>Demo Account:</strong></p>
+            <p>Username: <code>archadmin</code></p>
+            <p>Password: <code>archadmin123</code></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 </template>
 
 <script>
+import { ref } from 'vue'
+import { useAuth } from '@/composables/useAuth.js'
+
 export default {
-  name: 'AppHeader'
+  name: 'AppHeader',
+  setup() {
+    const { user, isAuthenticated, isGuest, loading, error, login, logout, clearError } = useAuth()
+    
+    const showLoginModal = ref(false)
+    const loginForm = ref({
+      username: '',
+      password: ''
+    })
+
+    const handleLogin = async () => {
+      try {
+        clearError()
+        await login(loginForm.value.username, loginForm.value.password)
+        showLoginModal.value = false
+        loginForm.value = { username: '', password: '' }
+      } catch (err) {
+        // Error is handled by useAuth composable
+        console.error('Login failed:', err)
+      }
+    }
+
+    const handleLogout = async () => {
+      try {
+        await logout()
+      } catch (err) {
+        console.error('Logout failed:', err)
+      }
+    }
+
+    const closeModal = () => {
+      showLoginModal.value = false
+      clearError()
+      loginForm.value = { username: '', password: '' }
+    }
+
+    return {
+      user,
+      isAuthenticated,
+      isGuest,
+      loading,
+      error,
+      showLoginModal,
+      loginForm,
+      handleLogin,
+      handleLogout,
+      closeModal
+    }
+  }
 }
 </script>
 
@@ -20,11 +150,244 @@ export default {
   z-index: 10;
 }
 
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .app-header h1 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: 600;
-  text-align: center;
+}
+
+.auth-section {
+  display: flex;
+  align-items: center;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-welcome {
+  font-size: 0.9rem;
+}
+
+.access-badge {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+.access-badge.super {
+  background: #e53e3e;
+  color: white;
+}
+
+.access-badge.admin {
+  background: #3182ce;
+  color: white;
+}
+
+.auth-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.login-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.login-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.logout-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logout-btn:hover {
+  background: rgba(231, 76, 60, 0.3);
+  transform: translateY(-1px);
+}
+
+.auth-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.auth-icon {
+  font-size: 1rem;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.modal-header h2 {
+  margin: 0;
+  color: #2d3748;
+  font-size: 1.2rem;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #718096;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover {
+  color: #2d3748;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.error-message {
+  background: #fed7d7;
+  color: #c53030;
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+}
+
+.form-actions {
+  margin-top: 1.5rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: #3182ce;
+}
+
+.submit-btn:disabled {
+  background: #a0aec0;
+  cursor: not-allowed;
+}
+
+.demo-info {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f7fafc;
+  border-radius: 6px;
+  border-left: 4px solid #4299e1;
+}
+
+.demo-info p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.demo-info code {
+  background: #e2e8f0;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  color: #2d3748;
 }
 
 @media (max-width: 768px) {
@@ -32,8 +395,29 @@ export default {
     padding: 1rem;
   }
   
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
   .app-header h1 {
     font-size: 1.25rem;
+  }
+  
+  .user-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .modal-content {
+    width: 95%;
+    margin: 1rem;
+  }
+  
+  .modal-header,
+  .modal-body {
+    padding: 1rem;
   }
 }
 </style>
