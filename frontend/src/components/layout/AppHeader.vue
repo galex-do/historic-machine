@@ -27,59 +27,61 @@
       </div>
     </div>
     
-    <!-- Login Modal -->
-    <div v-if="showLoginModal" class="modal-overlay" @click="closeModal">
-      <div class="modal-content" @click.stop>
-        <div class="modal-header">
-          <h2>Login to Historical Events</h2>
-          <button @click="closeModal" class="close-btn">&times;</button>
-        </div>
-        
-        <div class="modal-body">
-          <div v-if="error" class="error-message">
-            {{ error }}
+    <!-- Login Modal - Using Teleport to render outside component hierarchy -->
+    <Teleport to="body">
+      <div v-if="showLoginModal" class="modal-overlay" @click="closeModal">
+        <div class="modal-content" @click.stop>
+          <div class="modal-header">
+            <h2>Login to Historical Events</h2>
+            <button @click="closeModal" class="close-btn">&times;</button>
           </div>
           
-          <form @submit.prevent="handleLogin">
-            <div class="form-group">
-              <label for="username">Username:</label>
-              <input 
-                id="username"
-                v-model="loginForm.username" 
-                type="text" 
-                required 
-                class="form-input"
-                placeholder="Enter username"
-              />
+          <div class="modal-body">
+            <div v-if="error" class="error-message">
+              {{ error }}
             </div>
             
-            <div class="form-group">
-              <label for="password">Password:</label>
-              <input 
-                id="password"
-                v-model="loginForm.password" 
-                type="password" 
-                required 
-                class="form-input"
-                placeholder="Enter password"
-              />
-            </div>
+            <form @submit.prevent="handleLogin">
+              <div class="form-group">
+                <label for="username">Username:</label>
+                <input 
+                  id="username"
+                  v-model="loginForm.username" 
+                  type="text" 
+                  required 
+                  class="form-input"
+                  placeholder="Enter username"
+                />
+              </div>
+              
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input 
+                  id="password"
+                  v-model="loginForm.password" 
+                  type="password" 
+                  required 
+                  class="form-input"
+                  placeholder="Enter password"
+                />
+              </div>
+              
+              <div class="form-actions">
+                <button type="submit" class="submit-btn" :disabled="loading">
+                  {{ loading ? 'Logging in...' : 'Login' }}
+                </button>
+              </div>
+            </form>
             
-            <div class="form-actions">
-              <button type="submit" class="submit-btn" :disabled="loading">
-                {{ loading ? 'Logging in...' : 'Login' }}
-              </button>
+            <div class="demo-info">
+              <p><strong>Demo Account:</strong></p>
+              <p>Username: <code>archadmin</code></p>
+              <p>Password: <code>archadmin123</code></p>
             </div>
-          </form>
-          
-          <div class="demo-info">
-            <p><strong>Demo Account:</strong></p>
-            <p>Username: <code>archadmin</code></p>
-            <p>Password: <code>archadmin123</code></p>
           </div>
         </div>
       </div>
-    </div>
+    </Teleport>
   </header>
 </template>
 
@@ -247,8 +249,8 @@ export default {
   font-size: 1rem;
 }
 
-/* Modal styles */
-.modal-overlay {
+/* Global modal styles - not scoped since we use Teleport */
+:global(.modal-overlay) {
   position: fixed;
   top: 0;
   left: 0;
@@ -258,12 +260,12 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 99999;
+  z-index: 999999;
   padding: 20px;
   box-sizing: border-box;
 }
 
-.modal-content {
+:global(.modal-content) {
   background: white;
   border-radius: 12px;
   width: 90%;
@@ -275,7 +277,7 @@ export default {
   position: relative;
 }
 
-.modal-header {
+:global(.modal-header) {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -283,13 +285,13 @@ export default {
   border-bottom: 1px solid #e2e8f0;
 }
 
-.modal-header h2 {
+:global(.modal-header h2) {
   margin: 0;
   color: #2d3748;
   font-size: 1.2rem;
 }
 
-.close-btn {
+:global(.close-btn) {
   background: none;
   border: none;
   font-size: 1.5rem;
@@ -303,15 +305,15 @@ export default {
   justify-content: center;
 }
 
-.close-btn:hover {
+:global(.close-btn:hover) {
   color: #2d3748;
 }
 
-.modal-body {
+:global(.modal-body) {
   padding: 1.5rem;
 }
 
-.error-message {
+:global(.error-message) {
   background: #fed7d7;
   color: #c53030;
   padding: 0.75rem;
@@ -320,18 +322,18 @@ export default {
   font-size: 0.9rem;
 }
 
-.form-group {
+:global(.form-group) {
   margin-bottom: 1rem;
 }
 
-.form-group label {
+:global(.form-group label) {
   display: block;
   margin-bottom: 0.5rem;
   color: #4a5568;
   font-weight: 500;
 }
 
-.form-input {
+:global(.form-input) {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #e2e8f0;
@@ -341,17 +343,17 @@ export default {
   box-sizing: border-box;
 }
 
-.form-input:focus {
+:global(.form-input:focus) {
   outline: none;
   border-color: #4299e1;
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
 }
 
-.form-actions {
+:global(.form-actions) {
   margin-top: 1.5rem;
 }
 
-.submit-btn {
+:global(.submit-btn) {
   width: 100%;
   padding: 0.75rem;
   background: #4299e1;
@@ -364,16 +366,16 @@ export default {
   transition: background-color 0.2s ease;
 }
 
-.submit-btn:hover:not(:disabled) {
+:global(.submit-btn:hover:not(:disabled)) {
   background: #3182ce;
 }
 
-.submit-btn:disabled {
+:global(.submit-btn:disabled) {
   background: #a0aec0;
   cursor: not-allowed;
 }
 
-.demo-info {
+:global(.demo-info) {
   margin-top: 1.5rem;
   padding: 1rem;
   background: #f7fafc;
@@ -381,13 +383,13 @@ export default {
   border-left: 4px solid #4299e1;
 }
 
-.demo-info p {
+:global(.demo-info p) {
   margin: 0.25rem 0;
   font-size: 0.9rem;
   color: #4a5568;
 }
 
-.demo-info code {
+:global(.demo-info code) {
   background: #e2e8f0;
   padding: 0.2rem 0.4rem;
   border-radius: 3px;
