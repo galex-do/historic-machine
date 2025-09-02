@@ -16,6 +16,19 @@
       <span class="event-date">{{ event.display_date || formatDate(event.event_date) }}</span>
       <span class="event-coords">{{ event.latitude.toFixed(2) }}, {{ event.longitude.toFixed(2) }}</span>
     </div>
+    
+    <!-- Tags Display -->
+    <div v-if="event.tags && event.tags.length > 0" class="event-tags">
+      <div 
+        v-for="tag in event.tags" 
+        :key="tag.id"
+        class="tag-chip"
+        :style="{ backgroundColor: tag.color }"
+        :title="tag.description"
+      >
+        {{ tag.name }}
+      </div>
+    </div>
   </div>
 </template>
 
@@ -127,5 +140,31 @@ export default {
 
 .event-coords {
   font-family: 'Courier New', monospace;
+}
+
+.event-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-top: 0.75rem;
+}
+
+.tag-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: white;
+  cursor: help;
+  transition: all 0.2s;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tag-chip:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 </style>

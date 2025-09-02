@@ -23,6 +23,8 @@
         :selected-template="selectedTemplate"
         :selected-lens-types="selectedLensTypes"
         :show-lens-dropdown="showLensDropdown"
+        :all-tags="allTags"
+        :loading-tags="isLoadingTags"
         @toggle="toggleSidebar"
         @template-group-changed="handleTemplateGroupChange"
         @template-changed="handleTemplateChange"
@@ -62,6 +64,7 @@ import EventsGrid from '@/components/events/EventsGrid.vue'
 import { useEvents } from '@/composables/useEvents.js'
 import { useTemplates } from '@/composables/useTemplates.js'
 import { useFilters } from '@/composables/useFilters.js'
+import { useTags } from '@/composables/useTags.js'
 
 export default {
   name: 'App',
@@ -112,6 +115,12 @@ export default {
       handleLensTypesChange,
       closeLensDropdown
     } = useFilters()
+
+    const {
+      allTags,
+      isLoadingTags,
+      loadTags
+    } = useTags()
 
     // Sidebar methods
     const toggleSidebar = () => {
@@ -203,7 +212,8 @@ export default {
     onMounted(async () => {
       await Promise.all([
         fetchEvents(),
-        fetchTemplateGroups()
+        fetchTemplateGroups(),
+        loadTags()
       ])
       
       // Apply initial filters
@@ -240,6 +250,10 @@ export default {
       handleDateToChange,
       toggleLensDropdown,
       handleLensTypesChange,
+
+      // Tags
+      allTags,
+      isLoadingTags,
 
       // Methods
       toggleSidebar,

@@ -83,6 +83,50 @@ class ApiService {
   async getAllTemplates() {
     return this.makeRequest('/date-templates')
   }
+
+  // Tags API
+  async getTags() {
+    return this.makeRequest('/tags')
+  }
+
+  async createTag(tagData) {
+    return this.makeRequest('/tags', {
+      method: 'POST',
+      body: JSON.stringify(tagData),
+    })
+  }
+
+  async updateTag(id, tagData) {
+    return this.makeRequest(`/tags/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify(tagData),
+    })
+  }
+
+  async deleteTag(id) {
+    return this.makeRequest(`/tags/${id}`, {
+      method: 'DELETE',
+    })
+  }
+
+  async setEventTags(eventId, tagIds) {
+    return this.makeRequest(`/events/${eventId}/tags`, {
+      method: 'PUT',
+      body: JSON.stringify({ tag_ids: tagIds }),
+    })
+  }
+
+  async addTagToEvent(eventId, tagId) {
+    return this.makeRequest(`/events/${eventId}/tags/${tagId}`, {
+      method: 'POST',
+    })
+  }
+
+  async removeTagFromEvent(eventId, tagId) {
+    return this.makeRequest(`/events/${eventId}/tags/${tagId}`, {
+      method: 'DELETE',
+    })
+  }
 }
 
 // Export singleton instance
