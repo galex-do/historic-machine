@@ -56,7 +56,7 @@ export default {
   data() {
     return {
       currentPage: 1,
-      eventsPerPage: 9 // 3 rows × 3 cards per row
+      eventsPerPage: 3 // Maximum 3 cards to prevent sidebar scrolling
     }
   },
   computed: {
@@ -97,38 +97,10 @@ export default {
 
 
 .events-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 0.75rem;
   flex: 1;
-  max-width: 100%;
-}
-
-/* Ensure maximum 3 columns */
-@supports (grid-template-columns: subgrid) {
-  .events-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    max-grid-columns: 3;
-  }
-}
-
-/* Fallback for browsers without subgrid support */
-@media (min-width: 900px) {
-  .events-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 600px) and (max-width: 899px) {
-  .events-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 599px) {
-  .events-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .no-events {
