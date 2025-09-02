@@ -1,87 +1,90 @@
 <template>
   <div class="date-control-bar">
     <div class="date-controls-container">
-      <h3 class="controls-title">Filters</h3>
-      
-      <!-- Historical Period Template Selector -->
-      <div class="template-section">
-        <DateTemplateSelector
-          :template-groups="templateGroups"
-          :available-templates="availableTemplates"
-          :selected-template-group-id="selectedTemplateGroupId"
-          :selected-template-id="selectedTemplateId"
-          :selected-template="selectedTemplate"
-          @template-group-changed="$emit('template-group-changed', $event)"
-          @template-changed="$emit('template-changed', $event)"
-        />
-      </div>
-      
-      <!-- Date Range Controls -->
-      <div class="date-range-section">
-        <div class="date-inputs">
-          <div class="date-input-group">
-            <label class="filter-label">From:</label>
-            <input 
-              ref="dateFromInput"
-              type="text" 
-              :value="dateFromDisplay" 
-              @input="handleDateFromInput"
-              @blur="$emit('date-from-changed', $event.target.value)"
-              placeholder="500 BC, 1066 AD, 1776" 
-              class="date-input" 
-            />
+      <!-- Left-aligned controls group -->
+      <div class="left-controls-group">
+        <h3 class="controls-title">Filters</h3>
+        
+        <!-- Historical Period Template Selector -->
+        <div class="template-section">
+          <DateTemplateSelector
+            :template-groups="templateGroups"
+            :available-templates="availableTemplates"
+            :selected-template-group-id="selectedTemplateGroupId"
+            :selected-template-id="selectedTemplateId"
+            :selected-template="selectedTemplate"
+            @template-group-changed="$emit('template-group-changed', $event)"
+            @template-changed="$emit('template-changed', $event)"
+          />
+        </div>
+        
+        <!-- Date Range Controls -->
+        <div class="date-range-section">
+          <div class="date-inputs">
+            <div class="date-input-group">
+              <label class="filter-label">From:</label>
+              <input 
+                ref="dateFromInput"
+                type="text" 
+                :value="dateFromDisplay" 
+                @input="handleDateFromInput"
+                @blur="$emit('date-from-changed', $event.target.value)"
+                placeholder="500 BC, 1066 AD, 1776" 
+                class="date-input" 
+              />
+            </div>
+            
+            <div class="date-input-group">
+              <label class="filter-label">To:</label>
+              <input 
+                ref="dateToInput"
+                type="text" 
+                :value="dateToDisplay" 
+                @input="handleDateToInput"
+                @blur="$emit('date-to-changed', $event.target.value)"
+                placeholder="500 BC, 1066 AD, 2025" 
+                class="date-input" 
+              />
+            </div>
           </div>
           
-          <div class="date-input-group">
-            <label class="filter-label">To:</label>
-            <input 
-              ref="dateToInput"
-              type="text" 
-              :value="dateToDisplay" 
-              @input="handleDateToInput"
-              @blur="$emit('date-to-changed', $event.target.value)"
-              placeholder="500 BC, 1066 AD, 2025" 
-              class="date-input" 
-            />
+          <!-- Centralized Step Controls -->
+          <div class="step-controls-section">
+            <div class="step-controls">
+              <button @click="stepBothDates(-stepSize)" class="step-button" title="Step both dates backward">
+                ‹‹
+              </button>
+              <button @click="stepBothDates(stepSize)" class="step-button" title="Step both dates forward">
+                ››
+              </button>
+            </div>
+            
+            <div class="step-size-control">
+              <label class="filter-label">Step:</label>
+              <select v-model="stepSize" class="step-select">
+                <option :value="1">1 year</option>
+                <option :value="5">5 years</option>
+                <option :value="10">10 years</option>
+                <option :value="25">25 years</option>
+                <option :value="50">50 years</option>
+                <option :value="100">100 years</option>
+              </select>
+            </div>
           </div>
         </div>
         
-        <!-- Centralized Step Controls -->
-        <div class="step-controls-section">
-          <div class="step-controls">
-            <button @click="stepBothDates(-stepSize)" class="step-button" title="Step both dates backward">
-              ‹‹
-            </button>
-            <button @click="stepBothDates(stepSize)" class="step-button" title="Step both dates forward">
-              ››
-            </button>
-          </div>
-          
-          <div class="step-size-control">
-            <label class="filter-label">Step:</label>
-            <select v-model="stepSize" class="step-select">
-              <option :value="1">1 year</option>
-              <option :value="5">5 years</option>
-              <option :value="10">10 years</option>
-              <option :value="25">25 years</option>
-              <option :value="50">50 years</option>
-              <option :value="100">100 years</option>
-            </select>
-          </div>
+        <!-- Event Type Filter -->
+        <div class="event-type-section">
+          <EventTypeFilter
+            :selected-lens-types="selectedLensTypes"
+            :show-dropdown="showLensDropdown"
+            @toggle-dropdown="$emit('toggle-lens-dropdown')"
+            @lens-types-changed="$emit('lens-types-changed', $event)"
+          />
         </div>
       </div>
       
-      <!-- Event Type Filter -->
-      <div class="event-type-section">
-        <EventTypeFilter
-          :selected-lens-types="selectedLensTypes"
-          :show-dropdown="showLensDropdown"
-          @toggle-dropdown="$emit('toggle-lens-dropdown')"
-          @lens-types-changed="$emit('lens-types-changed', $event)"
-        />
-      </div>
-      
-      <!-- Apply Filters Button -->
+      <!-- Right-aligned Apply button -->
       <div class="apply-section">
         <button @click="$emit('apply-filters')" class="apply-button">Apply</button>
       </div>
@@ -207,8 +210,16 @@ export default {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.left-controls-group {
+  display: flex;
+  align-items: center;
   gap: 1.5rem;
   flex-wrap: wrap;
+  flex: 1;
 }
 
 .controls-title {
@@ -287,6 +298,7 @@ export default {
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  margin-left: auto;
 }
 
 .apply-button {
@@ -394,21 +406,30 @@ export default {
   }
   
   .date-controls-container {
+    flex-direction: column;
     gap: 0.75rem;
+    align-items: stretch;
+  }
+  
+  .left-controls-group {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: stretch;
   }
   
   .controls-title {
     font-size: 1rem;
+    text-align: center;
   }
   
   .template-section,
-  .event-type-section,
-  .apply-section {
-    flex: 1;
-    min-width: 0;
+  .event-type-section {
+    width: 100%;
   }
   
   .date-range-section {
+    width: 100%;
     gap: 0.75rem;
   }
   
@@ -428,6 +449,18 @@ export default {
   
   .step-controls-section {
     gap: 0.75rem;
+    justify-content: center;
+  }
+  
+  .apply-section {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+  }
+  
+  .apply-button {
+    width: 100%;
+    max-width: 200px;
   }
 }
 </style>
