@@ -55,20 +55,21 @@ export default {
 .date-input {
   width: 100%;
   padding: 0.75rem;
-  border: none;
+  border: 1px solid #e2e8f0;
   border-radius: 6px;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
+  background: #ffffff;
+  color: #2d3748;
   font-size: 0.9rem;
-  backdrop-filter: blur(10px);
+  transition: border-color 0.2s;
 }
 
 .date-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: #a0aec0;
 }
 
 .date-input:focus {
   outline: none;
-  background: rgba(255, 255, 255, 0.2);
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 </style>

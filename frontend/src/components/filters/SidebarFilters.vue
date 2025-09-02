@@ -129,16 +129,18 @@ export default {
 </script>
 
 <style scoped>
-/* Sidebar styles will be moved here from App.vue */
+/* White sidebar styling */
 .sidebar {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: #ffffff;
+  color: #2d3748;
   padding: 0;
   position: relative;
   transition: all 0.3s ease;
   width: 350px;
   flex-shrink: 0;
   overflow: hidden;
+  border-right: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar.collapsed {
@@ -149,9 +151,9 @@ export default {
   position: absolute;
   top: 20px;
   right: 20px;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  border: none;
+  background: #f8f9fa;
+  color: #667eea;
+  border: 1px solid #e2e8f0;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -165,7 +167,9 @@ export default {
 }
 
 .sidebar-toggle:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
   transform: scale(1.1);
 }
 
@@ -174,7 +178,7 @@ export default {
 }
 
 .section-title {
-  color: white;
+  color: #2d3748;
   margin: 0 0 1.5rem 0;
   font-size: 1.25rem;
   font-weight: 600;
@@ -188,29 +192,35 @@ export default {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.9);
+  color: #4a5568;
 }
 
 .filter-select {
   width: 100%;
   padding: 0.75rem;
-  border: none;
+  border: 1px solid #e2e8f0;
   border-radius: 6px;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
+  background: #ffffff;
+  color: #2d3748;
   font-size: 0.9rem;
-  backdrop-filter: blur(10px);
+  transition: border-color 0.2s;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
 .filter-select option {
-  background: #2d3748;
-  color: white;
+  background: #ffffff;
+  color: #2d3748;
 }
 
 .filter-button {
   width: 100%;
   padding: 0.75rem;
-  background: rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
   border-radius: 6px;
@@ -221,7 +231,7 @@ export default {
 }
 
 .filter-button:hover {
-  background: rgba(255, 255, 255, 0.3);
   transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
 }
 </style>

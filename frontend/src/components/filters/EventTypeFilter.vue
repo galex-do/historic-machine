@@ -94,16 +94,17 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s;
-  backdrop-filter: blur(10px);
 }
 
 .multiselect-dropdown:hover,
 .multiselect-dropdown.active {
-  background: rgba(255, 255, 255, 0.2);
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
 .multiselect-display {
@@ -111,12 +112,13 @@ export default {
 }
 
 .placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: #a0aec0;
   font-style: italic;
 }
 
 .selection-text {
-  color: white;
+  color: #2d3748;
+  font-weight: 500;
 }
 
 .selected-badges {
@@ -126,11 +128,13 @@ export default {
 }
 
 .selected-badge {
-  background: rgba(255, 255, 255, 0.2);
+  background: #f0f4ff;
+  color: #667eea;
+  border: 1px solid #ddd6fe;
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
   font-size: 0.8rem;
-  color: white;
+  font-weight: 500;
 }
 
 .dropdown-arrow {
@@ -143,13 +147,14 @@ export default {
   top: 100%;
   left: 0;
   right: 0;
-  background: rgba(45, 55, 72, 0.95);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 6px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 100;
   max-height: 200px;
   overflow-y: auto;
+  margin-top: 0.25rem;
 }
 
 .multiselect-option {
@@ -158,16 +163,17 @@ export default {
   padding: 0.75rem;
   cursor: pointer;
   transition: background-color 0.2s;
-  color: white;
+  color: #2d3748;
 }
 
 .multiselect-option:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: #f8f9fa;
 }
 
 .multiselect-option input[type="checkbox"] {
   margin-right: 0.75rem;
   transform: scale(1.2);
+  accent-color: #667eea;
 }
 
 .option-content {
@@ -176,5 +182,6 @@ export default {
 
 .option-label {
   font-weight: 500;
+  color: #2d3748;
 }
 </style>

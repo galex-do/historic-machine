@@ -83,55 +83,63 @@ export default {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.9);
+  color: #4a5568;
 }
 
 .filter-select {
   width: 100%;
   padding: 0.75rem;
-  border: none;
+  border: 1px solid #e2e8f0;
   border-radius: 6px;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
+  background: #ffffff;
+  color: #2d3748;
   font-size: 0.9rem;
-  backdrop-filter: blur(10px);
+  transition: border-color 0.2s;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
 .filter-select option {
-  background: #2d3748;
-  color: white;
+  background: #ffffff;
+  color: #2d3748;
 }
 
 .filter-subgroup {
   margin-top: 1rem;
   padding-left: 1rem;
-  border-left: 2px solid rgba(255, 255, 255, 0.3);
+  border-left: 2px solid #e2e8f0;
 }
 
 .selected-period {
   margin-top: 1rem;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: #f8f9fa;
+  border: 1px solid #e2e8f0;
   border-radius: 6px;
-  backdrop-filter: blur(10px);
 }
 
 .period-info strong {
   display: block;
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
+  color: #2d3748;
 }
 
 .period-dates {
   display: block;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: #667eea;
   margin-bottom: 0.5rem;
+  font-weight: 500;
 }
 
 .period-desc {
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: #718096;
   margin: 0;
   line-height: 1.4;
 }
