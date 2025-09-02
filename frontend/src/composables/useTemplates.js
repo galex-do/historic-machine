@@ -61,10 +61,11 @@ export function useTemplates() {
   const handleTemplateGroupChange = async (groupId) => {
     selectedTemplateGroupId.value = groupId
     selectedTemplateId.value = ''
-    if (groupId) {
+    if (groupId && groupId !== 'custom') {
       await fetchTemplatesForGroup(groupId)
     } else {
       // Reset to default when "Default (1 AD - Today)" is selected
+      // Or when "Custom" is selected (no templates to fetch)
       availableTemplates.value = []
     }
   }

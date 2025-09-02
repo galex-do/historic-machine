@@ -37,20 +37,15 @@ export function useEvents() {
     }
     
     filteredEvents.value = events.value.filter(event => {
-      // Date filtering using astronomical year comparison for BC dates
-      const eventAstronomicalYear = getAstronomicalYear(event.event_date, event.era)
-      const fromAstronomicalYear = dateFrom ? getAstronomicalYear(dateFrom, getEraFromDate(dateFrom)) : null
-      const toAstronomicalYear = dateTo ? getAstronomicalYear(dateTo, getEraFromDate(dateTo)) : null
+      // Simple date string comparison (works for both BC and AD dates in ISO format)
+      const eventDate = event.event_date.split('T')[0] // Get just the date part: "0753-04-21"
       
-      if (fromAstronomicalYear !== null && eventAstronomicalYear < fromAstronomicalYear) return false
-      if (toAstronomicalYear !== null && eventAstronomicalYear > toAstronomicalYear) return false
-      
-      // For same astronomical year, compare the actual dates
-      if (fromAstronomicalYear !== null && eventAstronomicalYear === fromAstronomicalYear) {
-        if (event.event_date < dateFrom) return false
+      // Date filtering - ISO date string comparison handles BC/AD correctly
+      if (dateFrom && eventDate < dateFrom) {
+        return false
       }
-      if (toAstronomicalYear !== null && eventAstronomicalYear === toAstronomicalYear) {
-        if (event.event_date > dateTo) return false
+      if (dateTo && eventDate > dateTo) {
+        return false
       }
       
       // Lens type filtering

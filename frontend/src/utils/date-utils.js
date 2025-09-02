@@ -116,9 +116,9 @@ export function parseHistoricalDate(dateStr) {
     return null
   }
   
-  // Convert to ISO date (astronomical year numbering)
-  const isoYear = era === 'BC' ? (year === 1 ? '0000' : String(year - 1).padStart(4, '0')) : String(year).padStart(4, '0')
-  const isoDate = era === 'BC' ? `-${isoYear}-01-01` : `${isoYear}-01-01`
+  // Convert to ISO date (match backend format - BC dates are positive)
+  const isoYear = String(year).padStart(4, '0')
+  const isoDate = `${isoYear}-01-01`
   
   return {
     year,
