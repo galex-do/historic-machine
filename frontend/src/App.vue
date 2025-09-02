@@ -8,7 +8,6 @@
       <!-- Left Sidebar (Collapsible) -->
       <SidebarFilters
         :collapsed="sidebarCollapsed"
-        :date-selection-mode="dateSelectionMode"
         :template-groups="templateGroups"
         :available-templates="availableTemplates"
         :selected-template-group-id="selectedTemplateGroupId"
@@ -19,7 +18,6 @@
         :selected-lens-types="selectedLensTypes"
         :show-lens-dropdown="showLensDropdown"
         @toggle="toggleSidebar"
-        @date-mode-changed="handleDateModeChange"
         @template-group-changed="handleTemplateGroupChange"
         @template-changed="handleTemplateChange"
         @date-from-changed="updateDateFrom"
@@ -94,14 +92,13 @@ export default {
     } = useTemplates()
 
     const {
-      dateSelectionMode,
       dateFrom,
       dateTo,
       dateFromDisplay,
       dateToDisplay,
       selectedLensTypes,
       showLensDropdown,
-      handleDateModeChange,
+      resetToDefaultDateRange,
       updateDateFrom,
       updateDateTo,
       applyTemplateDates,
@@ -129,22 +126,22 @@ export default {
     // Template methods
     const handleTemplateGroupChange = async (groupId) => {
       await templateGroupChange(groupId)
-      if (dateSelectionMode.value === 'historic') {
-        applyFilters()
+      if (!groupId) {
+        // Reset to default date range when "Default (1 AD - Today)" is selected
+        resetToDefaultDateRange()
       }
+      applyFilters()
     }
 
     const handleTemplateChange = (templateId) => {
       templateChange(templateId)
-      if (dateSelectionMode.value === 'historic') {
-        // Apply template dates and filter
-        const templateData = applyTemplate()
-        if (templateData) {
-          applyTemplateDates(templateData)
-          console.log(`Selected template: ${selectedTemplate.value.name} (${templateData.displayFrom} - ${templateData.displayTo})`)
-        }
-        applyFilters()
+      // Always apply template dates when a template is selected
+      const templateData = applyTemplate()
+      if (templateData) {
+        applyTemplateDates(templateData)
+        console.log(`Selected template: ${selectedTemplate.value.name} (${templateData.displayFrom} - ${templateData.displayTo})`)
       }
+      applyFilters()
     }
 
     // Filter methods
@@ -203,12 +200,10 @@ export default {
       handleTemplateChange,
 
       // Filters
-      dateSelectionMode,
       dateFromDisplay,
       dateToDisplay,
       selectedLensTypes,
       showLensDropdown,
-      handleDateModeChange,
       updateDateFrom,
       updateDateTo,
       toggleLensDropdown,

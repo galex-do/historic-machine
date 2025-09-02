@@ -3,8 +3,7 @@ import { parseDDMMYYYYToISO, formatDateToDDMMYYYY, getTodayISO } from '@/utils/d
 import { getAvailableLensTypes } from '@/utils/event-utils.js'
 
 export function useFilters() {
-  // Date filtering state
-  const dateSelectionMode = ref('historic') // 'historic' or 'custom'
+  // Date filtering state (always showing both fields)
   const dateFrom = ref('0001-01-01')
   const dateTo = ref(getTodayISO())
   const dateFromDisplay = ref('01.01.0001')
@@ -17,16 +16,12 @@ export function useFilters() {
   // Available lens types
   const availableLensTypes = computed(() => getAvailableLensTypes())
 
-  // Handle date mode change
-  const handleDateModeChange = (mode) => {
-    dateSelectionMode.value = mode
-    if (mode === 'custom') {
-      // Reset to default date range for custom mode
-      dateFrom.value = '0001-01-01'
-      dateTo.value = getTodayISO()
-      dateFromDisplay.value = '01.01.0001'
-      dateToDisplay.value = formatDateToDDMMYYYY(new Date())
-    }
+  // Reset to default date range
+  const resetToDefaultDateRange = () => {
+    dateFrom.value = '0001-01-01'
+    dateTo.value = getTodayISO()
+    dateFromDisplay.value = '01.01.0001'
+    dateToDisplay.value = formatDateToDDMMYYYY(new Date())
   }
 
   // Update date from display
@@ -82,7 +77,6 @@ export function useFilters() {
 
   return {
     // State
-    dateSelectionMode: computed(() => dateSelectionMode.value),
     dateFrom: computed(() => dateFrom.value),
     dateTo: computed(() => dateTo.value),
     dateFromDisplay: computed(() => dateFromDisplay.value),
@@ -92,7 +86,7 @@ export function useFilters() {
     availableLensTypes,
 
     // Methods
-    handleDateModeChange,
+    resetToDefaultDateRange,
     updateDateFrom,
     updateDateTo,
     applyTemplateDates,

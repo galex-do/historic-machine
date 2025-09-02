@@ -60,7 +60,12 @@ export function useTemplates() {
   const handleTemplateGroupChange = async (groupId) => {
     selectedTemplateGroupId.value = groupId
     selectedTemplateId.value = ''
-    await fetchTemplatesForGroup(groupId)
+    if (groupId) {
+      await fetchTemplatesForGroup(groupId)
+    } else {
+      // Reset to default when "Default (1 AD - Today)" is selected
+      availableTemplates.value = []
+    }
   }
 
   // Handle template change

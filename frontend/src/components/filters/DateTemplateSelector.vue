@@ -8,7 +8,7 @@
         @change="$emit('template-group-changed', $event.target.value)" 
         class="filter-select"
       >
-        <option value="">Select a period...</option>
+        <option value="">Default (1 AD - Today)</option>
         <option v-for="group in templateGroups" :key="group.id" :value="group.id">
           {{ group.name }}
         </option>

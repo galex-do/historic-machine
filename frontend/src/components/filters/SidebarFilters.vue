@@ -9,22 +9,8 @@
     <div class="sidebar-section" v-show="!collapsed">
       <h3 class="section-title">Filters</h3>
       
-      <!-- Date Selection Mode -->
-      <div class="filter-group">
-        <label class="filter-label">Date Selection:</label>
-        <select 
-          :value="dateSelectionMode" 
-          @change="$emit('date-mode-changed', $event.target.value)" 
-          class="filter-select"
-        >
-          <option value="historic">Historic Periods</option>
-          <option value="custom">Custom Date Range</option>
-        </select>
-      </div>
-      
-      <!-- Historic Date Templates -->
+      <!-- Historical Periods -->
       <DateTemplateSelector
-        v-if="dateSelectionMode === 'historic'"
         :template-groups="templateGroups"
         :available-templates="availableTemplates"
         :selected-template-group-id="selectedTemplateGroupId"
@@ -34,9 +20,8 @@
         @template-changed="$emit('template-changed', $event)"
       />
       
-      <!-- Custom Date Range -->
+      <!-- Date Range Fields (Always Visible) -->
       <CustomDateRange
-        v-if="dateSelectionMode === 'custom'"
         :date-from-display="dateFromDisplay"
         :date-to-display="dateToDisplay"
         @date-from-changed="$emit('date-from-changed', $event)"
@@ -71,10 +56,6 @@ export default {
   props: {
     collapsed: {
       type: Boolean,
-      required: true
-    },
-    dateSelectionMode: {
-      type: String,
       required: true
     },
     templateGroups: {
@@ -116,7 +97,6 @@ export default {
   },
   emits: [
     'toggle',
-    'date-mode-changed',
     'template-group-changed',
     'template-changed',
     'date-from-changed',
