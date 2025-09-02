@@ -1,5 +1,6 @@
 import { ref, computed } from 'vue'
 import apiService from '@/services/api.js'
+import { parseHistoricalDate } from '@/utils/date-utils.js'
 import { getAstronomicalYear, getEraFromDate } from '@/utils/date-utils.js'
 
 export function useEvents() {
@@ -29,7 +30,7 @@ export function useEvents() {
   }
 
   // Filter events based on date range and lens types
-  const filterEvents = (dateFrom, dateTo, selectedLensTypes, selectedTemplate) => {
+  const filterEvents = (dateFrom, dateTo, selectedLensTypes, selectedTemplate, dateFromDisplay, dateToDisplay) => {
     // Ensure events is an array before filtering
     if (!Array.isArray(events.value)) {
       console.warn('Events is not an array:', events.value)
@@ -37,21 +38,45 @@ export function useEvents() {
     }
     
     filteredEvents.value = events.value.filter(event => {
-      // Convert both event date and filter dates to astronomical years for proper BC/AD comparison
-      const eventDate = event.event_date.split('T')[0] // Get just the date part: "0753-04-21"
-      const eventYear = parseInt(eventDate.split('-')[0], 10)
+      // Parse filter dates to understand BC/AD for comparison
+      const fromDate = parseHistoricalDate(dateFromDisplay) // Use display value to get proper BC/AD
+      const toDate = parseHistoricalDate(dateToDisplay)
       
-      // Convert event to astronomical year (BC dates become negative)
-      const eventAstronomicalDate = event.era === 'BC' 
-        ? `-${String(eventYear - 1).padStart(4, '0')}-01-01`  // 753 BC -> -0752-01-01
-        : eventDate // AD dates stay as-is
+      const eventYear = parseInt(event.event_date.split('-')[0], 10)
+      const eventEra = event.era
       
-      // Date filtering with proper BC/AD comparison using astronomical dates
-      if (dateFrom && eventAstronomicalDate < dateFrom) {
-        return false
+      // Date filtering with proper BC/AD logic
+      // For BC: smaller number = more recent (25 BC is after 500 BC)
+      // For AD: larger number = more recent (500 AD is after 25 AD)
+      
+      if (fromDate) {
+        if (fromDate.era === 'BC' && eventEra === 'BC') {
+          // Both BC: event must be same year or more recent (smaller year number)
+          if (eventYear > fromDate.year) return false
+        } else if (fromDate.era === 'BC' && eventEra === 'AD') {
+          // Event is AD, filter is BC: AD events are always after BC, so include
+        } else if (fromDate.era === 'AD' && eventEra === 'BC') {
+          // Event is BC, filter is AD: BC events are always before AD, so exclude
+          return false
+        } else {
+          // Both AD: normal comparison
+          if (eventYear < fromDate.year) return false
+        }
       }
-      if (dateTo && eventAstronomicalDate > dateTo) {
-        return false
+      
+      if (toDate) {
+        if (toDate.era === 'BC' && eventEra === 'BC') {
+          // Both BC: event must be same year or older (larger year number)
+          if (eventYear < toDate.year) return false
+        } else if (toDate.era === 'BC' && eventEra === 'AD') {
+          // Event is AD, filter is BC: AD events are always after BC, so exclude
+          return false
+        } else if (toDate.era === 'AD' && eventEra === 'BC') {
+          // Event is BC, filter is AD: BC events are always before AD, so include
+        } else {
+          // Both AD: normal comparison
+          if (eventYear > toDate.year) return false
+        }
       }
       
       // Lens type filtering

@@ -180,7 +180,9 @@ export default {
         dateFrom.value,
         dateTo.value,
         selectedLensTypes.value,
-        selectedTemplate.value
+        selectedTemplate.value,
+        dateFromDisplay.value,
+        dateToDisplay.value
       )
     }
 
