@@ -13,15 +13,11 @@
         :selected-template-group-id="selectedTemplateGroupId"
         :selected-template-id="selectedTemplateId"
         :selected-template="selectedTemplate"
-        :date-from-display="dateFromDisplay"
-        :date-to-display="dateToDisplay"
         :selected-lens-types="selectedLensTypes"
         :show-lens-dropdown="showLensDropdown"
         @toggle="toggleSidebar"
         @template-group-changed="handleTemplateGroupChange"
         @template-changed="handleTemplateChange"
-        @date-from-changed="updateDateFrom"
-        @date-to-changed="updateDateTo"
         @toggle-lens-dropdown="toggleLensDropdown"
         @lens-types-changed="handleLensTypesChange"
         @apply-filters="applyFilters"
@@ -29,6 +25,14 @@
       
       <!-- Right Content Area -->
       <main class="content-area">
+        <!-- Date Control Bar Above Map -->
+        <DateControlBar
+          :date-from-display="dateFromDisplay"
+          :date-to-display="dateToDisplay"
+          @date-from-changed="updateDateFrom"
+          @date-to-changed="updateDateTo"
+        />
+        
         <!-- Map Section -->
         <div class="map-section">
           <WorldMap 
@@ -52,6 +56,7 @@
 import { ref, onMounted, nextTick } from 'vue'
 import AppHeader from '@/components/layout/AppHeader.vue'
 import SidebarFilters from '@/components/filters/SidebarFilters.vue'
+import DateControlBar from '@/components/filters/DateControlBar.vue'
 import WorldMap from '@/components/WorldMap.vue'
 import EventsGrid from '@/components/events/EventsGrid.vue'
 import { useEvents } from '@/composables/useEvents.js'
@@ -63,6 +68,7 @@ export default {
   components: {
     AppHeader,
     SidebarFilters,
+    DateControlBar,
     WorldMap,
     EventsGrid
   },

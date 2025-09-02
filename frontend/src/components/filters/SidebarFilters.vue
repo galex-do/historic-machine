@@ -20,13 +20,6 @@
         @template-changed="$emit('template-changed', $event)"
       />
       
-      <!-- Date Range Fields (Always Visible) -->
-      <CustomDateRange
-        :date-from-display="dateFromDisplay"
-        :date-to-display="dateToDisplay"
-        @date-from-changed="$emit('date-from-changed', $event)"
-        @date-to-changed="$emit('date-to-changed', $event)"
-      />
       
       <!-- Event Types -->
       <EventTypeFilter
@@ -43,14 +36,12 @@
 
 <script>
 import DateTemplateSelector from './DateTemplateSelector.vue'
-import CustomDateRange from './CustomDateRange.vue'
 import EventTypeFilter from './EventTypeFilter.vue'
 
 export default {
   name: 'SidebarFilters',
   components: {
     DateTemplateSelector,
-    CustomDateRange,
     EventTypeFilter
   },
   props: {
@@ -78,14 +69,6 @@ export default {
       type: Object,
       default: null
     },
-    dateFromDisplay: {
-      type: String,
-      default: ''
-    },
-    dateToDisplay: {
-      type: String,
-      default: ''
-    },
     selectedLensTypes: {
       type: Array,
       default: () => []
@@ -99,8 +82,6 @@ export default {
     'toggle',
     'template-group-changed',
     'template-changed',
-    'date-from-changed',
-    'date-to-changed',
     'toggle-lens-dropdown',
     'lens-types-changed',
     'apply-filters'
