@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import { ref, nextTick } from 'vue'
+import { ref, nextTick, onMounted } from 'vue'
 import DateControlBar from '@/components/filters/DateControlBar.vue'
 import WorldMap from '@/components/WorldMap.vue'
 import EventsGrid from '@/components/events/EventsGrid.vue'
@@ -204,6 +204,15 @@ export default {
         closeLensDropdown()
       }
     }
+
+    // Initialize data on mount
+    onMounted(async () => {
+      // Data should already be loaded by App.vue, but let's ensure filters are applied
+      applyFilters()
+      
+      // Add click outside listener
+      document.addEventListener('click', handleClickOutside)
+    })
 
     return {
       // Sidebar state

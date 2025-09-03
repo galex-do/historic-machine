@@ -38,6 +38,8 @@ export default {
         fetchTemplateGroups(),
         loadTags()
       ])
+      
+      console.log('App.vue: Data loading completed')
     })
 
     return {}

@@ -2,16 +2,18 @@ import { ref, computed } from 'vue'
 import { parseDDMMYYYYToISO, formatDateToDDMMYYYY, getTodayISO, parseHistoricalDate, formatHistoricalDate, historicalDateToISO } from '@/utils/date-utils.js'
 import { getAvailableLensTypes } from '@/utils/event-utils.js'
 
-export function useFilters() {
-  // Date filtering state (always showing both fields)
-  const dateFrom = ref('0001-01-01')
-  const dateTo = ref(getTodayISO())
-  const dateFromDisplay = ref('1 AD')
-  const dateToDisplay = ref('2025 AD')
+// Shared state - singleton pattern  
+// Date filtering state (always showing both fields)
+const dateFrom = ref('0001-01-01')
+const dateTo = ref(getTodayISO())
+const dateFromDisplay = ref('1 AD')
+const dateToDisplay = ref('2025 AD')
 
-  // Lens type filtering state
-  const selectedLensTypes = ref(['historic', 'political', 'cultural', 'military']) // All selected by default
-  const showLensDropdown = ref(false)
+// Lens type filtering state
+const selectedLensTypes = ref(['historic', 'political', 'cultural', 'military']) // All selected by default
+const showLensDropdown = ref(false)
+
+export function useFilters() {
 
   // Available lens types
   const availableLensTypes = computed(() => getAvailableLensTypes())

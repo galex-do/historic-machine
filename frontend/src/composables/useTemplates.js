@@ -2,13 +2,15 @@ import { ref, computed } from 'vue'
 import apiService from '@/services/api.js'
 import { formatHistoricalDate } from '@/utils/date-utils.js'
 
+// Shared state - singleton pattern
+const templateGroups = ref([])
+const availableTemplates = ref([])
+const selectedTemplateGroupId = ref('')
+const selectedTemplateId = ref('')
+const loading = ref(false)
+const error = ref(null)
+
 export function useTemplates() {
-  const templateGroups = ref([])
-  const availableTemplates = ref([])
-  const selectedTemplateGroupId = ref('')
-  const selectedTemplateId = ref('')
-  const loading = ref(false)
-  const error = ref(null)
 
   // Computed to get selected template object
   const selectedTemplate = computed(() => {

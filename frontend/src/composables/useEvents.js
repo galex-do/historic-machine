@@ -3,11 +3,13 @@ import apiService from '@/services/api.js'
 import { parseHistoricalDate } from '@/utils/date-utils.js'
 import { getAstronomicalYear, getEraFromDate } from '@/utils/date-utils.js'
 
+// Shared state - singleton pattern
+const events = ref([])
+const filteredEvents = ref([])
+const loading = ref(false)
+const error = ref(null)
+
 export function useEvents() {
-  const events = ref([])
-  const filteredEvents = ref([])
-  const loading = ref(false)
-  const error = ref(null)
 
   // Fetch all events from API
   const fetchEvents = async () => {
