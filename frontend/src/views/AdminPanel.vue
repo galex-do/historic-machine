@@ -367,7 +367,7 @@ export default {
 
 <style scoped>
 .admin-panel {
-  padding: 1rem 0.5rem;
+  padding: 1.25rem 2rem;
   max-width: 100%;
   margin: 0;
   min-height: calc(100vh - 80px);
