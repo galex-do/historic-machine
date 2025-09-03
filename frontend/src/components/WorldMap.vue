@@ -110,12 +110,12 @@ export default {
       deep: true,
       immediate: false
     },
-    // Re-render markers when authentication state changes
+    // Update marker popups when authentication state changes
     canEditEvents: {
       handler() {
-        if (this.map) {
-          console.log('Auth state changed, re-rendering markers')
-          this.add_event_markers()
+        if (this.map && this.markers.length > 0) {
+          console.log('Auth state changed, updating popup content')
+          this.update_marker_popups()
         }
       },
       immediate: false
@@ -560,6 +560,20 @@ export default {
       })
       
       return groups
+    },
+
+    update_marker_popups() {
+      // Update popup content for existing markers without recreating them
+      const locationGroups = this.group_events_by_location(this.events)
+      const groupsArray = Object.values(locationGroups)
+      
+      this.markers.forEach((marker, index) => {
+        if (index < groupsArray.length) {
+          const eventGroup = groupsArray[index]
+          const popupContent = this.create_popup_content(eventGroup.events)
+          marker.setPopupContent(popupContent)
+        }
+      })
     },
 
     create_popup_content(events) {
