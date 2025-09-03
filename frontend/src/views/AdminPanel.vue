@@ -298,8 +298,8 @@ export default {
           name: eventForm.value.name,
           description: eventForm.value.description,
           event_date: eventForm.value.date, // Use the ISO date directly
-          latitude: eventForm.value.latitude,
-          longitude: eventForm.value.longitude,
+          latitude: parseFloat(eventForm.value.latitude),
+          longitude: parseFloat(eventForm.value.longitude),
           lens_type: eventForm.value.lens_type
         }
         
