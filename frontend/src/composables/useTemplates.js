@@ -62,6 +62,12 @@ export function useTemplates() {
       const groupData = await apiService.getTemplateGroups()
       templateGroups.value = Array.isArray(groupData) ? groupData : []
       console.log('Successfully loaded template groups:', templateGroups.value.length)
+      
+      // If there's a stored template group selection, restore it
+      if (selectedTemplateGroupId.value && selectedTemplateGroupId.value !== 'custom') {
+        console.log('Restoring template group selection:', selectedTemplateGroupId.value)
+        await fetchTemplatesForGroup(selectedTemplateGroupId.value)
+      }
     } catch (err) {
       console.error('Error fetching template groups:', err)
       error.value = err.message || 'Failed to fetch template groups'
@@ -85,6 +91,17 @@ export function useTemplates() {
       const templateData = await apiService.getTemplatesByGroup(groupId)
       availableTemplates.value = Array.isArray(templateData) ? templateData : []
       console.log('Successfully loaded templates for group:', availableTemplates.value.length)
+      
+      // If there's a stored template selection and it exists in the loaded templates, verify it's still valid
+      if (selectedTemplateId.value) {
+        const templateExists = availableTemplates.value.find(t => t.id == selectedTemplateId.value)
+        if (templateExists) {
+          console.log('Restored template selection:', templateExists.name)
+        } else {
+          console.log('Stored template ID not found, clearing selection')
+          selectedTemplateId.value = ''
+        }
+      }
     } catch (err) {
       console.error('Error fetching templates for group:', err)
       error.value = err.message
@@ -96,8 +113,14 @@ export function useTemplates() {
 
   // Handle template group change
   const handleTemplateGroupChange = async (groupId) => {
+    const previousGroupId = selectedTemplateGroupId.value
     selectedTemplateGroupId.value = groupId
-    selectedTemplateId.value = ''
+    
+    // Only reset template selection if this is a change to a different group
+    if (groupId !== previousGroupId) {
+      selectedTemplateId.value = ''
+    }
+    
     if (groupId && groupId !== 'custom') {
       await fetchTemplatesForGroup(groupId)
     } else {
