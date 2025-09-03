@@ -123,7 +123,7 @@
 
 <script>
 import { ref, onMounted } from 'vue'
-import { apiService } from '@/services/api.js'
+import apiService from '@/services/api.js'
 
 export default {
   name: 'DatasetsPanel',
