@@ -748,8 +748,8 @@ export default {
           throw new Error('Invalid dataset format: expected events array')
         }
         
-        // Import events via API
-        const response = await apiService.importEvents(dataset.events)
+        // Import events via API with filename
+        const response = await apiService.importEvents(dataset.events, file.name)
         
         if (response.success) {
           // Refresh shared events state - this will update both admin and map views

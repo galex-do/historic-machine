@@ -13,6 +13,7 @@ type HistoricalEvent struct {
         Era         string    `json:"era"`
         LensType    string    `json:"lens_type"`
         DisplayDate string    `json:"display_date,omitempty"`
+        DatasetID   *int      `json:"dataset_id,omitempty"`
         Tags        []Tag     `json:"tags,omitempty"`
 }
 
@@ -25,6 +26,7 @@ type CreateEventRequest struct {
         EventDate   time.Time `json:"event_date" validate:"required"`
         Era         string    `json:"era"`
         LensType    string    `json:"lens_type" validate:"required"`
+        DatasetID   *int      `json:"dataset_id,omitempty"`
         TagIDs      []int     `json:"tag_ids,omitempty"`
 }
 
@@ -43,5 +45,6 @@ func (req *CreateEventRequest) ToHistoricalEvent() *HistoricalEvent {
                 EventDate:   req.EventDate,
                 Era:         era,
                 LensType:    req.LensType,
+                DatasetID:   req.DatasetID,
         }
 }

@@ -18,15 +18,17 @@ import (
 
 // EventHandler handles HTTP requests for events
 type EventHandler struct {
-        eventRepo *repositories.EventRepository
-        tagRepo   *repositories.TagRepository
+        eventRepo   *repositories.EventRepository
+        tagRepo     *repositories.TagRepository
+        datasetRepo *repositories.DatasetRepository
 }
 
 // NewEventHandler creates a new event handler
-func NewEventHandler(eventRepo *repositories.EventRepository, tagRepo *repositories.TagRepository) *EventHandler {
+func NewEventHandler(eventRepo *repositories.EventRepository, tagRepo *repositories.TagRepository, datasetRepo *repositories.DatasetRepository) *EventHandler {
         return &EventHandler{
-                eventRepo: eventRepo,
-                tagRepo:   tagRepo,
+                eventRepo:   eventRepo,
+                tagRepo:     tagRepo,
+                datasetRepo: datasetRepo,
         }
 }
 
@@ -237,6 +239,7 @@ func (h *EventHandler) GetEventsInRadius(w http.ResponseWriter, r *http.Request)
 // ImportEvents handles bulk importing of events from dataset
 func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
         type ImportRequest struct {
+                Filename string `json:"filename,omitempty"`
                 Events []struct {
                         Name        string   `json:"name"`
                         Description string   `json:"description"`
@@ -260,6 +263,34 @@ func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
                 return
         }
 
+        // Get user ID from request context (set by auth middleware)
+        userID := 1 // Default to admin user for now - in real app get from context
+        if userCtx := r.Context().Value("user_id"); userCtx != nil {
+                if uid, ok := userCtx.(int); ok {
+                        userID = uid
+                }
+        }
+
+        // Create dataset record
+        filename := req.Filename
+        if filename == "" {
+                filename = "imported_dataset.json"
+        }
+        
+        dataset := &models.EventDataset{
+                Filename:    filename,
+                Description: fmt.Sprintf("Dataset imported with %d events", len(req.Events)),
+                EventCount:  0, // Will be updated as events are created
+                UploadedBy:  userID,
+        }
+        
+        createdDataset, err := h.datasetRepo.Create(dataset)
+        if err != nil {
+                log.Printf("Failed to create dataset record: %v", err)
+                response.InternalError(w, "Failed to create dataset record")
+                return
+        }
+
         importedCount := 0
         for _, eventData := range req.Events {
                 // Parse date with DD.MM.YYYY format
@@ -280,7 +311,7 @@ func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
                         eventDate = parsedDate
                 }
 
-                // Create event
+                // Create event with dataset reference
                 event := &models.HistoricalEvent{
                         Name:        eventData.Name,
                         Description: eventData.Description,
@@ -290,6 +321,7 @@ func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
                         Era:         eventData.Era,
                         LensType:    eventData.Type,
                         DisplayDate: formatDisplayDate(eventDate, eventData.Era),
+                        DatasetID:   &createdDataset.ID,
                 }
 
                 // Save event
@@ -355,10 +387,18 @@ func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
                 importedCount++
         }
 
+        // Update dataset with final event count
+        err = h.datasetRepo.UpdateEventCount(createdDataset.ID, importedCount)
+        if err != nil {
+                log.Printf("Failed to update dataset event count: %v", err)
+        }
+
         response.Success(w, map[string]interface{}{
                 "success":        true,
                 "imported_count": importedCount,
                 "total_count":    len(req.Events),
+                "dataset_id":     createdDataset.ID,
+                "dataset_name":   createdDataset.Filename,
                 "message":        fmt.Sprintf("Successfully imported %d out of %d events", importedCount, len(req.Events)),
         })
 }

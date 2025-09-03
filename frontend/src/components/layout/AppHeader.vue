@@ -34,6 +34,14 @@
               <span class="dropdown-icon">📅</span>
               Events
             </router-link>
+            <router-link 
+              to="/datasets" 
+              class="dropdown-item"
+              @click="showAdminDropdown = false"
+            >
+              <span class="dropdown-icon">📦</span>
+              Datasets
+            </router-link>
           </div>
         </div>
       </nav>

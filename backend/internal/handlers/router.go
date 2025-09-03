@@ -16,15 +16,17 @@ type Router struct {
         templateHandler *TemplateHandler
         tagHandler      *TagHandler
         authHandler     *AuthHandler
+        datasetHandler  *DatasetHandler
 }
 
 // NewRouter creates a new router with all handlers
-func NewRouter(eventRepo *repositories.EventRepository, templateRepo *repositories.TemplateRepository, tagRepo *repositories.TagRepository, authService *services.AuthService) *Router {
+func NewRouter(eventRepo *repositories.EventRepository, templateRepo *repositories.TemplateRepository, tagRepo *repositories.TagRepository, datasetRepo *repositories.DatasetRepository, authService *services.AuthService) *Router {
         return &Router{
-                eventHandler:    NewEventHandler(eventRepo, tagRepo),
+                eventHandler:    NewEventHandler(eventRepo, tagRepo, datasetRepo),
                 templateHandler: NewTemplateHandler(templateRepo),
                 tagHandler:      NewTagHandler(tagRepo),
                 authHandler:     NewAuthHandler(authService),
+                datasetHandler:  NewDatasetHandler(datasetRepo, eventRepo),
         }
 }
 
@@ -68,6 +70,12 @@ func (router *Router) SetupRoutes() http.Handler {
         api.HandleFunc("/tags/{id}", router.tagHandler.GetTagByID).Methods("GET", "OPTIONS")
         api.HandleFunc("/tags/{id}", router.tagHandler.UpdateTag).Methods("PUT", "OPTIONS")
         api.HandleFunc("/tags/{id}", router.tagHandler.DeleteTag).Methods("DELETE", "OPTIONS")
+        
+        // Dataset routes (admin only)
+        api.HandleFunc("/datasets", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.datasetHandler.GetAllDatasets)).Methods("GET", "OPTIONS")
+        api.HandleFunc("/datasets", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.datasetHandler.CreateDataset)).Methods("POST", "OPTIONS")
+        api.HandleFunc("/datasets/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.datasetHandler.GetDatasetByID)).Methods("GET", "OPTIONS")
+        api.HandleFunc("/datasets/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.datasetHandler.DeleteDataset)).Methods("DELETE", "OPTIONS")
         
         // Event-Tag relationship routes
         api.HandleFunc("/events/{event_id}/tags/{tag_id}", router.tagHandler.AddTagToEvent).Methods("POST", "OPTIONS")

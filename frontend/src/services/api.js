@@ -146,10 +146,21 @@ class ApiService {
     })
   }
 
-  async importEvents(events) {
+  async importEvents(events, filename = '') {
     return this.makeRequest('/events/import', {
       method: 'POST',
-      body: JSON.stringify({ events }),
+      body: JSON.stringify({ events, filename }),
+    })
+  }
+
+  // Dataset operations
+  async getDatasets() {
+    return this.makeRequest('/datasets')
+  }
+
+  async deleteDataset(id) {
+    return this.makeRequest(`/datasets/${id}`, {
+      method: 'DELETE',
     })
   }
 }

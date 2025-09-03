@@ -16,6 +16,12 @@ const routes = [
     name: 'Events',
     component: AdminPanel,
     meta: { requiresAdmin: true }
+  },
+  {
+    path: '/datasets',
+    name: 'Datasets',
+    component: () => import('@/views/DatasetsPanel.vue'),
+    meta: { requiresAdmin: true }
   }
 ]
 
