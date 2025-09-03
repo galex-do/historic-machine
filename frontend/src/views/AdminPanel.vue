@@ -201,7 +201,7 @@ export default {
       error.value = null
       try {
         const response = await apiService.getEvents()
-        events.value = response.data || []
+        events.value = Array.isArray(response) ? response : []
         console.log('Loaded events for admin:', events.value.length)
       } catch (err) {
         console.error('Error fetching events:', err)
