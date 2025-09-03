@@ -199,11 +199,7 @@ func (h *TagHandler) SetEventTags(w http.ResponseWriter, r *http.Request) {
                 return
         }
 
-        // Limit to maximum 3 tags per event
-        if len(req.TagIDs) > 3 {
-                response.BadRequest(w, "Maximum 3 tags allowed per event")
-                return
-        }
+        // Allow unlimited tags per event (display will be limited on frontend)
 
         err = h.tagRepo.SetEventTags(eventID, req.TagIDs)
         if err != nil {

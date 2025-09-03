@@ -42,16 +42,12 @@ export function useTags() {
   // Create a new tag
   const createTag = async (tagData) => {
     try {
-      console.log('Creating tag with data:', tagData)
       const response = await api.createTag(tagData)
-      console.log('Create tag API response:', response)
       
       if (response && response.data) {
-        console.log('Tag created successfully:', response.data)
         allTags.value.push(response.data)
         return response.data
       } else {
-        console.error('Invalid tag creation response:', response)
         throw new Error('Invalid response format from tag creation API')
       }
     } catch (error) {
