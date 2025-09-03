@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import { ref, nextTick, onMounted } from 'vue'
+import { ref, nextTick, onMounted, watch } from 'vue'
 import DateControlBar from '@/components/filters/DateControlBar.vue'
 import WorldMap from '@/components/WorldMap.vue'
 import EventsGrid from '@/components/events/EventsGrid.vue'
@@ -84,7 +84,8 @@ export default {
       filterEvents, 
       handleEventCreated,
       handleEventUpdated,
-      handleEventDeleted
+      handleEventDeleted,
+      eventsLoaded
     } = useEvents()
 
     const {
@@ -207,10 +208,20 @@ export default {
       }
     }
 
+    // Watch for events loading and apply filters immediately
+    watch(eventsLoaded, (loaded) => {
+      if (loaded) {
+        console.log('Events loaded, applying filters immediately')
+        applyFilters()
+      }
+    })
+
     // Initialize data on mount
     onMounted(async () => {
-      // Data should already be loaded by App.vue, but let's ensure filters are applied
-      applyFilters()
+      // Apply filters if events are already loaded
+      if (eventsLoaded.value) {
+        applyFilters()
+      }
       
       // Add click outside listener
       document.addEventListener('click', handleClickOutside)

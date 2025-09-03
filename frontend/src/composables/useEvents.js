@@ -8,6 +8,7 @@ const events = ref([])
 const filteredEvents = ref([])
 const loading = ref(false)
 const error = ref(null)
+const eventsLoaded = ref(false)
 
 export function useEvents() {
 
@@ -19,7 +20,8 @@ export function useEvents() {
     try {
       const eventData = await apiService.getEvents()
       events.value = Array.isArray(eventData) ? eventData : []
-      filteredEvents.value = events.value
+      eventsLoaded.value = true
+      // Don't automatically set filteredEvents - let filtering be applied explicitly
       console.log('Successfully loaded events:', events.value.length)
     } catch (err) {
       console.error('Error fetching events:', err)
@@ -131,6 +133,7 @@ export function useEvents() {
     filteredEvents: computed(() => filteredEvents.value),
     loading: computed(() => loading.value),
     error: computed(() => error.value),
+    eventsLoaded: computed(() => eventsLoaded.value),
     fetchEvents,
     filterEvents,
     handleEventCreated,
