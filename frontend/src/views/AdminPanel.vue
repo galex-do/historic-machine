@@ -229,10 +229,21 @@
                         ></span>
                         {{ tag.name }}
                       </div>
+                      <!-- Create new tag option at bottom of suggestions -->
+                      <div v-if="canCreateNewTag" class="tag-suggestion create-new-suggestion" @click="createAndAddTag">
+                        <span class="tag-color-indicator" :style="{ backgroundColor: eventForm.newTagColor }"></span>
+                        Create "{{ eventForm.tagSearch }}"
+                        <input 
+                          v-model="eventForm.newTagColor"
+                          type="color"
+                          class="inline-color-picker"
+                          @click.stop
+                        />
+                      </div>
                     </div>
                     
                     <!-- Create New Tag Option -->
-                    <div v-if="canCreateNewTag" class="new-tag-option">
+                    <div v-if="canCreateNewTag && !filteredTags.length" class="new-tag-option">
                       <div class="new-tag-form">
                         <span class="new-tag-text">Create new tag:</span>
                         <input 
@@ -840,6 +851,7 @@ export default {
   max-height: 200px;
   overflow-y: auto;
   z-index: 1000;
+  margin-top: 2px;
 }
 
 .tag-suggestion {
@@ -868,9 +880,17 @@ export default {
 }
 
 .new-tag-option {
-  border-top: 1px solid #e2e8f0;
-  margin-top: 0.5rem;
-  padding-top: 0.75rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin-top: 2px;
+  padding: 0.75rem;
 }
 
 .new-tag-form {
@@ -910,6 +930,29 @@ export default {
 .create-tag-btn:hover {
   background: #3182ce;
   transform: translateY(-1px);
+}
+
+.create-new-suggestion {
+  border-top: 1px solid #e2e8f0;
+  font-style: italic;
+  color: #4a5568;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.create-new-suggestion:hover {
+  background-color: #f0f9ff;
+}
+
+.inline-color-picker {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 0.5rem;
 }
 
 .event-actions {
