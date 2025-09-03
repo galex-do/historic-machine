@@ -212,7 +212,7 @@ export default {
   padding: 1.25rem 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   position: relative;
-  z-index: 10;
+  z-index: 50000;
 }
 
 .header-content {
@@ -362,6 +362,7 @@ export default {
 .admin-dropdown {
   position: relative;
   display: inline-block;
+  z-index: 99999;
 }
 
 .dropdown-trigger {
@@ -394,7 +395,7 @@ export default {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   margin-top: 0.5rem;
   overflow: hidden;
-  z-index: 9999;
+  z-index: 99999;
   min-width: 160px;
 }
 
