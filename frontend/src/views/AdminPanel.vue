@@ -21,17 +21,53 @@
       <table v-else class="events-table">
         <thead>
           <tr>
-            <th>Name</th>
+            <th 
+              class="sortable-header" 
+              @click="toggleSort('name')"
+              :class="{ 'active': sortField === 'name' }"
+            >
+              Name
+              <span class="sort-indicator">
+                <span v-if="sortField === 'name'" class="sort-arrow">
+                  {{ sortDirection === 'asc' ? '↑' : '↓' }}
+                </span>
+                <span v-else class="sort-placeholder">↕</span>
+              </span>
+            </th>
             <th>Description</th>
-            <th>Date</th>
+            <th 
+              class="sortable-header" 
+              @click="toggleSort('date')"
+              :class="{ 'active': sortField === 'date' }"
+            >
+              Date
+              <span class="sort-indicator">
+                <span v-if="sortField === 'date'" class="sort-arrow">
+                  {{ sortDirection === 'asc' ? '↑' : '↓' }}
+                </span>
+                <span v-else class="sort-placeholder">↕</span>
+              </span>
+            </th>
             <th>Location</th>
-            <th>Type</th>
+            <th 
+              class="sortable-header" 
+              @click="toggleSort('type')"
+              :class="{ 'active': sortField === 'type' }"
+            >
+              Type
+              <span class="sort-indicator">
+                <span v-if="sortField === 'type'" class="sort-arrow">
+                  {{ sortDirection === 'asc' ? '↑' : '↓' }}
+                </span>
+                <span v-else class="sort-placeholder">↕</span>
+              </span>
+            </th>
             <th>Tags</th>
             <th>Actions</th>
           </tr>
         </thead>
         <tbody>
-          <tr v-for="event in events" :key="event.id" class="event-row">
+          <tr v-for="event in sortedEvents" :key="event.id" class="event-row">
             <td class="event-name">{{ event.name }}</td>
             <td class="event-description">
               <span class="description-text" :title="event.description">
@@ -297,6 +333,10 @@ export default {
     const showCreateModal = ref(false)
     const showEditModal = ref(false)
     const editingEvent = ref(null)
+    
+    // Sorting state
+    const sortField = ref('date')
+    const sortDirection = ref('asc')
     
     const eventForm = ref({
       name: '',
@@ -613,6 +653,56 @@ export default {
       }
     }
     
+    // Computed sorted events
+    const sortedEvents = computed(() => {
+      if (!events.value || events.value.length === 0) return []
+      
+      return [...events.value].sort((a, b) => {
+        let aValue, bValue
+        
+        switch (sortField.value) {
+          case 'name':
+            aValue = a.name.toLowerCase()
+            bValue = b.name.toLowerCase()
+            break
+          case 'date':
+            // Convert date strings to comparable format, handling BC dates
+            aValue = new Date(a.event_date).getTime()
+            bValue = new Date(b.event_date).getTime()
+            // For BC dates, we need to handle them specially
+            if (a.era === 'BC') aValue = -aValue
+            if (b.era === 'BC') bValue = -bValue
+            break
+          case 'type':
+            aValue = a.lens_type.toLowerCase()
+            bValue = b.lens_type.toLowerCase()
+            break
+          default:
+            return 0
+        }
+        
+        if (aValue < bValue) {
+          return sortDirection.value === 'asc' ? -1 : 1
+        }
+        if (aValue > bValue) {
+          return sortDirection.value === 'asc' ? 1 : -1
+        }
+        return 0
+      })
+    })
+    
+    // Toggle sort function
+    const toggleSort = (field) => {
+      if (sortField.value === field) {
+        // Toggle direction if same field
+        sortDirection.value = sortDirection.value === 'asc' ? 'desc' : 'asc'
+      } else {
+        // Set new field and default to ascending
+        sortField.value = field
+        sortDirection.value = 'asc'
+      }
+    }
+    
     onMounted(async () => {
       await loadTags()
       await fetchEvents()
@@ -621,6 +711,7 @@ export default {
     return {
       canAccessAdmin,
       events,
+      sortedEvents,
       loading,
       error,
       showCreateModal,
@@ -630,6 +721,8 @@ export default {
       allTags,
       filteredTags,
       canCreateNewTag,
+      sortField,
+      sortDirection,
       fetchEvents,
       formatDate,
       formatDateWithEra,
@@ -643,7 +736,8 @@ export default {
       addTag,
       removeTag,
       createAndAddTag,
-      handleTagInput
+      handleTagInput,
+      toggleSort
     }
   }
 }
@@ -1091,6 +1185,40 @@ export default {
 .close-btn:hover {
   background: #f7fafc;
   color: #4a5568;
+}
+
+/* Sorting Styles */
+.sortable-header {
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+  position: relative;
+}
+
+.sortable-header:hover {
+  background: #edf2f7 !important;
+}
+
+.sortable-header.active {
+  background: #e2e8f0 !important;
+  color: #2d3748;
+}
+
+.sort-indicator {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  min-width: 12px;
+}
+
+.sort-arrow {
+  color: #4299e1;
+  font-weight: bold;
+}
+
+.sort-placeholder {
+  color: #a0aec0;
+  opacity: 0.6;
 }
 
 .form-row {
