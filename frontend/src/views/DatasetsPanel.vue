@@ -167,7 +167,7 @@ export default {
       localError.value = null
       
       try {
-        await apiService.delete(`/datasets/${datasetToDelete.value.id}`)
+        await apiService.deleteDataset(datasetToDelete.value.id)
         
         // Remove from local list
         datasets.value = datasets.value.filter(d => d.id !== datasetToDelete.value.id)
