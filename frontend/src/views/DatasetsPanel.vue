@@ -139,8 +139,8 @@ export default {
       localError.value = null
       
       try {
-        const response = await apiService.get('/datasets')
-        datasets.value = response.data || []
+        const response = await apiService.getDatasets()
+        datasets.value = response || []
         console.log('Loaded datasets:', datasets.value.length)
       } catch (err) {
         console.error('Error fetching datasets:', err)
