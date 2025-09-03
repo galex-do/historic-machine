@@ -8,7 +8,7 @@
       "latitude": 46.2044,
       "longitude": 6.1432,
       "type": "historic",
-      "tags": ["pandemic", "health", "global", "WHO"]
+      "tags": ["pandemic", "Switzerland", "WHO", "China-origin", "global-health-crisis"]
     },
     {
       "name": "SpaceX Crew Dragon Demo-2 Launch",
@@ -18,7 +18,7 @@
       "latitude": 28.6139,
       "longitude": -80.6030,
       "type": "scientific",
-      "tags": ["space", "NASA", "SpaceX", "technology", "achievement"]
+      "tags": ["space-mission", "USA", "ISS", "crewed-flight", "commercial-spaceflight"]
     },
     {
       "name": "George Floyd Protests Begin",
@@ -28,7 +28,7 @@
       "latitude": 44.9778,
       "longitude": -93.2650,
       "type": "political",
-      "tags": ["civil rights", "protest", "justice", "reform", "social movement"]
+      "tags": ["protest", "USA", "Minneapolis", "police-brutality", "global-solidarity"]
     }
   ]
 }
