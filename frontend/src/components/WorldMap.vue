@@ -86,6 +86,7 @@ export default {
       resize_observer: null,
       show_event_modal: false,
       editing_event: null, // Store the event being edited
+      is_editing_in_progress: false, // Flag to prevent map refocusing during edits
       new_event: {
         name: '',
         description: '',
@@ -103,7 +104,10 @@ export default {
       handler() {
         if (this.map) {
           this.add_event_markers()
-          this.fit_map_to_events()
+          // Only fit map to events if not currently editing (prevents unwanted refocusing)
+          if (!this.is_editing_in_progress) {
+            this.fit_map_to_events()
+          }
         }
       },
       deep: true,
@@ -372,6 +376,9 @@ export default {
     
     async create_event() {
       try {
+        // Set editing flag to prevent map refocusing
+        this.is_editing_in_progress = true
+        
         const event_data = {
           name: this.new_event.name,
           description: this.new_event.description,
@@ -406,6 +413,9 @@ export default {
           const action = this.editing_event ? 'update' : 'create'
           alert(`Failed to ${action} event. Please try again.`)
         }
+      } finally {
+        // Always clear the editing flag
+        this.is_editing_in_progress = false
       }
     },
 
@@ -416,6 +426,9 @@ export default {
       if (!confirmed) return
       
       try {
+        // Set editing flag to prevent map refocusing
+        this.is_editing_in_progress = true
+        
         await apiService.deleteEvent(this.editing_event.id)
         console.log('Event deleted successfully')
         
@@ -432,6 +445,9 @@ export default {
         } else {
           alert('Failed to delete event. Please try again.')
         }
+      } finally {
+        // Always clear the editing flag
+        this.is_editing_in_progress = false
       }
     },
     
@@ -450,6 +466,9 @@ export default {
         longitude: 0,
         lens_type: 'historic'
       }
+      
+      // Clear editing flag when modal is closed
+      this.is_editing_in_progress = false
     },
     
     get_backend_url() {
