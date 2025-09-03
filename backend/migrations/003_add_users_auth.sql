@@ -47,11 +47,11 @@ ALTER TABLE events ADD COLUMN updated_by INTEGER REFERENCES users(id);
 CREATE INDEX idx_events_created_by ON events(created_by);
 CREATE INDEX idx_events_updated_by ON events(updated_by);
 
--- Insert default admin user (password: "archadmin123" - hashed)
--- Password hash for "archadmin123" using bcrypt with cost 12
+-- Insert default admin user (password: "scriptor" - hashed)
+-- Password hash for "scriptor" using bcrypt with cost 12
 -- Note: This is a default hash - should be generated in production
 INSERT INTO users (username, email, password_hash, access_level, is_active) VALUES 
-('archadmin', 'admin@historymap.local', '$2a$12$LQRyKgT1lQa.eTrJoN/3.OW9hFGxqbpEqVJ3NjRlCNxlnzjGpzOy2', 'super', true);
+('scriptor', 'admin@historymap.local', '$2a$12$uU18rg9ZVPfRQDO9SreSh.EF4n3t01sMgckgsAE35hmyYXEFq.HoC', 'super', true);
 
 -- +goose Down
 DROP INDEX IF EXISTS idx_events_updated_by;
