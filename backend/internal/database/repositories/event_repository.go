@@ -104,14 +104,14 @@ func (r *EventRepository) GetByID(id int) (*models.HistoricalEvent, error) {
 // Create creates a new event in the database
 func (r *EventRepository) Create(event *models.HistoricalEvent) (*models.HistoricalEvent, error) {
         query := `
-                INSERT INTO events (name, description, latitude, longitude, event_date, era, lens_type) 
-                VALUES ($1, $2, $3::double precision, $4::double precision, $5, $6, $7) 
+                INSERT INTO events (name, description, latitude, longitude, event_date, era, lens_type, dataset_id) 
+                VALUES ($1, $2, $3::double precision, $4::double precision, $5, $6, $7, $8) 
                 RETURNING id`
         
         var createdEvent = *event
         
         err := r.db.QueryRow(query, event.Name, event.Description, event.Latitude, 
-                event.Longitude, event.EventDate, event.Era, event.LensType).
+                event.Longitude, event.EventDate, event.Era, event.LensType, event.DatasetID).
                 Scan(&createdEvent.ID)
         
         if err != nil {
