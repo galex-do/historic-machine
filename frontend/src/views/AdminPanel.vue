@@ -26,6 +26,7 @@
             <th>Date</th>
             <th>Location</th>
             <th>Type</th>
+            <th>Tags</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -37,7 +38,7 @@
                 {{ event.description.length > 100 ? event.description.substring(0, 100) + '...' : event.description }}
               </span>
             </td>
-            <td class="event-date">{{ formatDate(event.event_date) }}</td>
+            <td class="event-date">{{ formatDateWithEra(event.event_date, event.era) }}</td>
             <td class="event-location">
               <span v-if="event.latitude && event.longitude">
                 {{ event.latitude.toFixed(2) }}, {{ event.longitude.toFixed(2) }}
@@ -46,6 +47,19 @@
             </td>
             <td class="event-type">
               <span class="type-badge" :class="event.lens_type">{{ event.lens_type }}</span>
+            </td>
+            <td class="event-tags">
+              <div class="tags-container">
+                <span 
+                  v-for="tag in event.tags" 
+                  :key="tag.id" 
+                  class="tag-badge"
+                  :style="{ backgroundColor: tag.color, color: getContrastColor(tag.color) }"
+                >
+                  {{ tag.name }}
+                </span>
+                <span v-if="!event.tags || event.tags.length === 0" class="no-tags">No tags</span>
+              </div>
             </td>
             <td class="event-actions">
               <button @click="editEvent(event)" class="action-btn edit-btn" title="Edit">
@@ -238,6 +252,33 @@ export default {
       }
     }
 
+    const formatDateWithEra = (dateString, era) => {
+      try {
+        const formattedDate = formatDate(dateString)
+        return `${formattedDate} ${era || 'AD'}`
+      } catch {
+        return 'Invalid Date'
+      }
+    }
+
+    const getContrastColor = (hexColor) => {
+      if (!hexColor) return '#000000'
+      
+      // Remove # if present
+      const color = hexColor.replace('#', '')
+      
+      // Convert to RGB
+      const r = parseInt(color.substr(0, 2), 16)
+      const g = parseInt(color.substr(2, 2), 16)
+      const b = parseInt(color.substr(4, 2), 16)
+      
+      // Calculate luminance
+      const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255
+      
+      // Return black for light colors, white for dark colors
+      return luminance > 0.5 ? '#000000' : '#ffffff'
+    }
+
     const parseDDMMYYYYToISO = (dateDisplay) => {
       if (!dateDisplay) return null
       
@@ -372,6 +413,8 @@ export default {
       eventForm,
       fetchEvents,
       formatDate,
+      formatDateWithEra,
+      getContrastColor,
       updateEventDate,
       editEvent,
       deleteEvent,
@@ -543,6 +586,31 @@ export default {
 .type-badge.political { background: #bee3f8; color: #2b6cb0; }
 .type-badge.historic { background: #faf089; color: #744210; }
 .type-badge.cultural { background: #c6f6d5; color: #276749; }
+
+.event-tags {
+  max-width: 200px;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.tag-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.no-tags {
+  color: #a0aec0;
+  font-style: italic;
+  font-size: 0.85rem;
+}
 
 .event-actions {
   white-space: nowrap;
