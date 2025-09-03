@@ -21,7 +21,7 @@ type Router struct {
 // NewRouter creates a new router with all handlers
 func NewRouter(eventRepo *repositories.EventRepository, templateRepo *repositories.TemplateRepository, tagRepo *repositories.TagRepository, authService *services.AuthService) *Router {
         return &Router{
-                eventHandler:    NewEventHandler(eventRepo),
+                eventHandler:    NewEventHandler(eventRepo, tagRepo),
                 templateHandler: NewTemplateHandler(templateRepo),
                 tagHandler:      NewTagHandler(tagRepo),
                 authHandler:     NewAuthHandler(authService),

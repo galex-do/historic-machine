@@ -18,12 +18,14 @@ import (
 // EventHandler handles HTTP requests for events
 type EventHandler struct {
         eventRepo *repositories.EventRepository
+        tagRepo   *repositories.TagRepository
 }
 
 // NewEventHandler creates a new event handler
-func NewEventHandler(eventRepo *repositories.EventRepository) *EventHandler {
+func NewEventHandler(eventRepo *repositories.EventRepository, tagRepo *repositories.TagRepository) *EventHandler {
         return &EventHandler{
                 eventRepo: eventRepo,
+                tagRepo:   tagRepo,
         }
 }
 
@@ -290,17 +292,63 @@ func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
                 }
 
                 // Save event
-                _, err = h.eventRepo.Create(event)
+                createdEvent, err := h.eventRepo.Create(event)
                 if err != nil {
                         log.Printf("Failed to create event %s: %v", eventData.Name, err)
                         continue
                 }
 
-                // Handle tags - create if they don't exist
-                for _, tagName := range eventData.Tags {
-                        // TODO: Add tag creation and association logic
-                        // This would require injecting tagRepo into event handler
-                        log.Printf("Tag %s for event %s (implementation pending)", tagName, eventData.Name)
+                // Handle tags - find or create and associate with event
+                if len(eventData.Tags) > 0 {
+                        var tagIDs []int
+                        
+                        // Get all existing tags to check for duplicates
+                        existingTags, err := h.tagRepo.GetAllTags()
+                        if err != nil {
+                                log.Printf("Failed to get existing tags: %v", err)
+                                existingTags = []models.Tag{} // Continue with empty list
+                        }
+                        
+                        for _, tagName := range eventData.Tags {
+                                // Check if tag already exists
+                                var foundTag *models.Tag
+                                for _, existing := range existingTags {
+                                        if strings.EqualFold(existing.Name, tagName) {
+                                                foundTag = &existing
+                                                break
+                                        }
+                                }
+                                
+                                if foundTag != nil {
+                                        // Use existing tag
+                                        tagIDs = append(tagIDs, foundTag.ID)
+                                } else {
+                                        // Create new tag
+                                        tag := &models.Tag{
+                                                Name:        tagName,
+                                                Description: fmt.Sprintf("Auto-generated tag for %s", tagName),
+                                                Color:       "#3B82F6", // Default blue color
+                                        }
+                                        
+                                        createdTag, err := h.tagRepo.CreateTag(tag)
+                                        if err != nil {
+                                                log.Printf("Failed to create tag %s: %v", tagName, err)
+                                                continue
+                                        }
+                                        
+                                        tagIDs = append(tagIDs, createdTag.ID)
+                                        // Add to existing tags list for next iteration
+                                        existingTags = append(existingTags, *createdTag)
+                                }
+                        }
+                        
+                        // Associate all tags with the event
+                        if len(tagIDs) > 0 {
+                                err = h.tagRepo.SetEventTags(createdEvent.ID, tagIDs)
+                                if err != nil {
+                                        log.Printf("Failed to associate tags with event %s: %v", eventData.Name, err)
+                                }
+                        }
                 }
 
                 importedCount++
