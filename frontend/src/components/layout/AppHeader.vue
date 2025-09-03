@@ -331,17 +331,18 @@ export default {
   font-size: 0.9rem;
   transition: all 0.2s ease;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .nav-link:hover {
   color: white;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   transform: translateY(-1px);
 }
 
 .nav-link-active {
   color: white;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.25);
   border-color: rgba(255, 255, 255, 0.4);
 }
 
