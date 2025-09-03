@@ -124,6 +124,7 @@
 <script>
 import { ref, onMounted } from 'vue'
 import apiService from '@/services/api.js'
+import { useEvents } from '@/composables/useEvents.js'
 
 export default {
   name: 'DatasetsPanel',
@@ -133,6 +134,9 @@ export default {
     const localError = ref(null)
     const showDeleteModal = ref(false)
     const datasetToDelete = ref(null)
+    
+    // Use shared events state for reactivity across views
+    const { fetchEvents } = useEvents()
 
     const fetchDatasets = async () => {
       localLoading.value = true
@@ -174,6 +178,11 @@ export default {
         datasets.value = datasets.value.filter(d => d.id !== datasetToDelete.value.id)
         
         console.log('Dataset deleted successfully:', datasetToDelete.value.filename)
+        
+        // Refresh events to reflect cascade deletion
+        await fetchEvents()
+        console.log('Events refreshed after dataset deletion')
+        
         closeDeleteModal()
         
       } catch (err) {
