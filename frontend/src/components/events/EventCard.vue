@@ -20,13 +20,20 @@
     <!-- Tags Display -->
     <div v-if="event.tags && event.tags.length > 0" class="event-tags">
       <div 
-        v-for="tag in event.tags" 
+        v-for="tag in visibleTags" 
         :key="tag.id"
         class="tag-chip"
         :style="{ backgroundColor: tag.color }"
         :title="tag.description"
       >
         {{ tag.name }}
+      </div>
+      <div 
+        v-if="hasMoreTags"
+        class="tag-chip more-tags"
+        :title="`${hiddenTagsCount} more tags: ${hiddenTagNames}`"
+      >
+        +{{ hiddenTagsCount }}
       </div>
     </div>
   </div>
@@ -45,6 +52,23 @@ export default {
     }
   },
   emits: ['focus-event'],
+  computed: {
+    visibleTags() {
+      if (!this.event.tags || this.event.tags.length === 0) return []
+      return this.event.tags.slice(0, 3)
+    },
+    hasMoreTags() {
+      return this.event.tags && this.event.tags.length > 3
+    },
+    hiddenTagsCount() {
+      if (!this.event.tags || this.event.tags.length <= 3) return 0
+      return this.event.tags.length - 3
+    },
+    hiddenTagNames() {
+      if (!this.event.tags || this.event.tags.length <= 3) return ''
+      return this.event.tags.slice(3).map(tag => tag.name).join(', ')
+    }
+  },
   methods: {
     getEventEmoji,
     formatDate
@@ -166,5 +190,11 @@ export default {
 .tag-chip:hover {
   transform: translateY(-1px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.more-tags {
+  background-color: #a0aec0 !important;
+  color: white;
+  font-style: italic;
 }
 </style>
