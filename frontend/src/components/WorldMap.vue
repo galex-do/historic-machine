@@ -571,8 +571,7 @@ export default {
         return `
           <div class="event-popup">
             <div class="event-header">
-              <h4>${event.name}</h4>
-              ${editIcon}
+              <h4>${event.name} ${editIcon}</h4>
             </div>
             <p>${event.description}</p>
             <p><strong>Date:</strong> ${event.display_date || this.format_date(event.event_date)}</p>
@@ -588,8 +587,7 @@ export default {
           return `
             <div class="event-item">
               <div class="event-header">
-                <h4>${event.name}</h4>
-                ${editIcon}
+                <h4>${event.name} ${editIcon}</h4>
               </div>
               <p>${event.description}</p>
               <p><strong>Date:</strong> ${event.display_date || this.format_date(event.event_date)}</p>
@@ -793,15 +791,12 @@ export default {
 
 /* Event popup header */
 :deep(.event-header) {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   margin-bottom: 8px;
 }
 
 :deep(.event-header h4) {
   margin: 0;
-  flex-grow: 1;
+  display: inline;
 }
 
 /* Edit icon styling in popup */
@@ -810,8 +805,8 @@ export default {
   cursor: pointer;
   opacity: 0.7;
   transition: opacity 0.2s;
-  margin-left: 8px;
-  flex-shrink: 0;
+  margin-left: 6px;
+  display: inline;
 }
 
 :deep(.edit-icon:hover) {
