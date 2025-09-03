@@ -33,6 +33,7 @@
               <option value="political">🏛️ Political</option>
               <option value="cultural">🎭 Cultural</option>
               <option value="military">⚔️ Military</option>
+              <option value="scientific">🔬 Scientific</option>
             </select>
           </div>
           <div class="coordinates-info">

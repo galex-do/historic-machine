@@ -160,6 +160,7 @@
                     <option value="political">Political</option>
                     <option value="historic">Historic</option>
                     <option value="cultural">Cultural</option>
+                    <option value="scientific">Scientific</option>
                   </select>
                 </div>
               </div>
