@@ -516,6 +516,7 @@ export default {
     const canCreateNewTag = computed(() => {
       if (!eventForm.value.tagSearch.trim()) return false
       const search = eventForm.value.tagSearch.toLowerCase().trim()
+      // Check if tag already exists in database or is already selected
       return !allTags.value.some(tag => tag.name.toLowerCase() === search) &&
              !eventForm.value.selectedTags.some(tag => tag.name.toLowerCase() === search)
     })
@@ -524,6 +525,9 @@ export default {
       if (!eventForm.value.selectedTags.some(selected => selected.id === tag.id)) {
         eventForm.value.selectedTags.push(tag)
         eventForm.value.tagSearch = ''
+        error.value = null // Clear any previous errors
+      } else {
+        error.value = `Tag "${tag.name}" is already selected for this event.`
       }
     }
     
@@ -532,11 +536,32 @@ export default {
     }
     
     const createAndAddTag = async () => {
-      if (!eventForm.value.tagSearch.trim()) return
+      const tagName = eventForm.value.tagSearch.trim()
+      if (!tagName) return
+      
+      // Check for duplicate names (case-insensitive)
+      const existingTag = allTags.value.find(tag => 
+        tag.name.toLowerCase() === tagName.toLowerCase()
+      )
+      
+      if (existingTag) {
+        error.value = `Tag "${tagName}" already exists. Please choose a different name.`
+        return
+      }
+      
+      // Check if already selected
+      const selectedTag = eventForm.value.selectedTags.find(tag => 
+        tag.name.toLowerCase() === tagName.toLowerCase()
+      )
+      
+      if (selectedTag) {
+        error.value = `Tag "${tagName}" is already selected for this event.`
+        return
+      }
       
       try {
         const newTag = await createTag({
-          name: eventForm.value.tagSearch.trim(),
+          name: tagName,
           color: eventForm.value.newTagColor
         })
         
@@ -544,10 +569,16 @@ export default {
           eventForm.value.selectedTags.push(newTag)
           eventForm.value.tagSearch = ''
           eventForm.value.newTagColor = '#3B82F6'
+          error.value = null // Clear any previous errors
         }
       } catch (err) {
         console.error('Error creating tag:', err)
-        error.value = 'Failed to create new tag'
+        // Handle specific error messages
+        if (err.message && err.message.includes('duplicate') || err.message.includes('already exists')) {
+          error.value = `Tag "${tagName}" already exists. Please choose a different name.`
+        } else {
+          error.value = 'Failed to create new tag. Please try again.'
+        }
       }
     }
     
@@ -556,6 +587,15 @@ export default {
         addTag(filteredTags.value[0])
       } else if (canCreateNewTag.value) {
         createAndAddTag()
+      } else if (eventForm.value.tagSearch.trim()) {
+        // Tag already exists, show helpful message
+        const tagName = eventForm.value.tagSearch.trim()
+        const existingTag = allTags.value.find(tag => 
+          tag.name.toLowerCase() === tagName.toLowerCase()
+        )
+        if (existingTag) {
+          error.value = `Tag "${tagName}" already exists. Use the search suggestions above.`
+        }
       }
     }
     

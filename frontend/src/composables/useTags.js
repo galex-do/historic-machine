@@ -49,6 +49,10 @@ export function useTags() {
       }
     } catch (error) {
       console.error('Error creating tag:', error)
+      // Enhance error message for better user feedback
+      if (error.message && error.message.includes('500')) {
+        throw new Error('Tag name already exists. Please choose a different name.')
+      }
       throw error
     }
   }
