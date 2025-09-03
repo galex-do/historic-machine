@@ -1,0 +1,1076 @@
+{
+  "filename": "ancient_civilizations_pre_1000bc.json",
+  "description": "Comprehensive historical events from ancient civilizations before 1000 BC",
+  "events": [
+    {
+      "name": "First Urban Settlement at Uruk",
+      "description": "Earliest evidence of urban civilization in Mesopotamia with the establishment of Uruk as the world's first major city",
+      "date": "01.01.3500",
+      "era": "BC",
+      "latitude": 31.324,
+      "longitude": 45.636,
+      "type": "historic",
+      "tags": ["Mesopotamia", "Urban", "Sumerian"]
+    },
+    {
+      "name": "Invention of Cuneiform Writing",
+      "description": "Sumerians develop the world's first writing system using wedge-shaped marks on clay tablets",
+      "date": "01.01.3300",
+      "era": "BC",
+      "latitude": 31.324,
+      "longitude": 45.636,
+      "type": "cultural",
+      "tags": ["Writing", "Sumerian", "Technology"]
+    },
+    {
+      "name": "Unification of Egypt by Narmer",
+      "description": "Pharaoh Narmer (Menes) unifies Upper and Lower Egypt, establishing the first dynasty and creating the Egyptian state",
+      "date": "01.01.3100",
+      "era": "BC",
+      "latitude": 29.844,
+      "longitude": 31.233,
+      "type": "political",
+      "tags": ["Egypt", "Unification", "Pharaoh"]
+    },
+    {
+      "name": "Foundation of Memphis",
+      "description": "Pharaoh Narmer establishes Memphis as the capital of unified Egypt at the junction of Upper and Lower Egypt",
+      "date": "15.01.3100",
+      "era": "BC",
+      "latitude": 29.844,
+      "longitude": 31.233,
+      "type": "political",
+      "tags": ["Egypt", "Capital", "Memphis"]
+    },
+    {
+      "name": "Development of Hieroglyphic Writing",
+      "description": "Ancient Egyptians develop hieroglyphic writing system for religious and administrative purposes",
+      "date": "01.01.3100",
+      "era": "BC",
+      "latitude": 30.044,
+      "longitude": 31.236,
+      "type": "cultural",
+      "tags": ["Egypt", "Writing", "Hieroglyphs"]
+    },
+    {
+      "name": "Invention of the Wheel",
+      "description": "Sumerians invent the wheel for transportation, revolutionizing trade and warfare",
+      "date": "01.01.3200",
+      "era": "BC",
+      "latitude": 32.776,
+      "longitude": 44.949,
+      "type": "scientific",
+      "tags": ["Technology", "Transportation", "Sumerian"]
+    },
+    {
+      "name": "Base-60 Number System",
+      "description": "Sumerians develop the sexagesimal (base-60) number system, still used today for time and angles",
+      "date": "01.01.3000",
+      "era": "BC",
+      "latitude": 31.324,
+      "longitude": 45.636,
+      "type": "scientific",
+      "tags": ["Mathematics", "Sumerian", "Innovation"]
+    },
+    {
+      "name": "Reign of King Djer",
+      "description": "Second pharaoh of Egypt's 1st Dynasty, buried at Abydos with elaborate tomb complex",
+      "date": "01.01.3000",
+      "era": "BC",
+      "latitude": 26.184,
+      "longitude": 31.922,
+      "type": "political",
+      "tags": ["Egypt", "Dynasty", "Burial"]
+    },
+    {
+      "name": "Uruk Reaches 100,000 Population",
+      "description": "The Sumerian city of Uruk becomes the world's largest city with approximately 100,000 inhabitants",
+      "date": "01.01.3000",
+      "era": "BC",
+      "latitude": 31.324,
+      "longitude": 45.636,
+      "type": "historic",
+      "tags": ["Urbanization", "Population", "Sumerian"]
+    },
+    {
+      "name": "First Ziggurats Built",
+      "description": "Sumerians construct the first ziggurats as temple complexes and administrative centers",
+      "date": "01.01.2900",
+      "era": "BC",
+      "latitude": 30.942,
+      "longitude": 46.103,
+      "type": "cultural",
+      "tags": ["Architecture", "Religion", "Sumerian"]
+    },
+    {
+      "name": "Reign of Pharaoh Hotepsekhemwy",
+      "description": "First pharaoh of Egypt's 2nd Dynasty, whose name means 'conciliation' suggesting unity of Upper and Lower Egypt",
+      "date": "01.01.2800",
+      "era": "BC",
+      "latitude": 29.844,
+      "longitude": 31.233,
+      "type": "political",
+      "tags": ["Egypt", "Dynasty", "Unity"]
+    },
+    {
+      "name": "Early Dynastic Period Begins",
+      "description": "Beginning of the Early Dynastic Period in Mesopotamia with competing city-states",
+      "date": "01.01.2900",
+      "era": "BC",
+      "latitude": 32.776,
+      "longitude": 44.949,
+      "type": "political",
+      "tags": ["Mesopotamia", "City-States", "Political"]
+    },
+    {
+      "name": "Pharaoh Djoser's Reign Begins",
+      "description": "Djoser becomes pharaoh of Egypt's 3rd Dynasty, commissioning the first pyramid",
+      "date": "01.01.2686",
+      "era": "BC",
+      "latitude": 29.871,
+      "longitude": 31.216,
+      "type": "political",
+      "tags": ["Egypt", "Pharaoh", "Architecture"]
+    },
+    {
+      "name": "Step Pyramid of Djoser Built",
+      "description": "Imhotep designs and builds the first pyramid for Pharaoh Djoser at Saqqara, beginning the pyramid age",
+      "date": "01.01.2680",
+      "era": "BC",
+      "latitude": 29.871,
+      "longitude": 31.216,
+      "type": "cultural",
+      "tags": ["Architecture", "Pyramid", "Egypt"]
+    },
+    {
+      "name": "Imhotep's Medical Texts",
+      "description": "Imhotep, Djoser's vizier, compiles medical documents detailing 200 diseases and treatments",
+      "date": "01.01.2675",
+      "era": "BC",
+      "latitude": 29.871,
+      "longitude": 31.216,
+      "type": "scientific",
+      "tags": ["Medicine", "Egypt", "Knowledge"]
+    },
+    {
+      "name": "Reign of En-me-barage-si of Kish",
+      "description": "First historically verified Mesopotamian king, defeated Elam and built temple of Enlil in Nippur",
+      "date": "01.01.2600",
+      "era": "BC",
+      "latitude": 32.776,
+      "longitude": 44.949,
+      "type": "political",
+      "tags": ["Mesopotamia", "King", "Victory"]
+    },
+    {
+      "name": "Syllabic Writing Begins",
+      "description": "Development of syllabic writing during the Fara Period, advancing from logographic script",
+      "date": "01.01.2600",
+      "era": "BC",
+      "latitude": 32.776,
+      "longitude": 44.949,
+      "type": "cultural",
+      "tags": ["Writing", "Innovation", "Mesopotamia"]
+    },
+    {
+      "name": "Pharaoh Sneferu's Rule",
+      "description": "Sneferu founds Egypt's 4th Dynasty and builds the first straight-sided pyramid at Dahshur",
+      "date": "01.01.2613",
+      "era": "BC",
+      "latitude": 29.790,
+      "longitude": 31.209,
+      "type": "political",
+      "tags": ["Egypt", "Pharaoh", "Architecture"]
+    },
+    {
+      "name": "Red Pyramid Construction",
+      "description": "Pharaoh Sneferu completes the Red Pyramid at Dahshur, the first successful straight-sided pyramid",
+      "date": "01.01.2600",
+      "era": "BC",
+      "latitude": 29.808,
+      "longitude": 31.206,
+      "type": "cultural",
+      "tags": ["Architecture", "Pyramid", "Egypt"]
+    },
+    {
+      "name": "Great Pyramid of Giza Built",
+      "description": "Pharaoh Khufu completes the Great Pyramid of Giza, one of the Seven Wonders of the Ancient World",
+      "date": "01.01.2560",
+      "era": "BC",
+      "latitude": 29.979,
+      "longitude": 31.134,
+      "type": "cultural",
+      "tags": ["Architecture", "Wonder", "Egypt"]
+    },
+    {
+      "name": "Pyramid of Khafre Built",
+      "description": "Pharaoh Khafre builds the second pyramid at Giza and commissions the Great Sphinx",
+      "date": "01.01.2540",
+      "era": "BC",
+      "latitude": 29.976,
+      "longitude": 31.131,
+      "type": "cultural",
+      "tags": ["Architecture", "Sphinx", "Egypt"]
+    },
+    {
+      "name": "Great Sphinx Carved",
+      "description": "The Great Sphinx is carved from limestone bedrock for Pharaoh Khafre",
+      "date": "15.01.2540",
+      "era": "BC",
+      "latitude": 29.975,
+      "longitude": 31.138,
+      "type": "cultural",
+      "tags": ["Sculpture", "Monument", "Egypt"]
+    },
+    {
+      "name": "Pyramid of Menkaure Built",
+      "description": "Pharaoh Menkaure completes the third and smallest pyramid at Giza",
+      "date": "01.01.2510",
+      "era": "BC",
+      "latitude": 29.972,
+      "longitude": 31.128,
+      "type": "cultural",
+      "tags": ["Architecture", "Pyramid", "Egypt"]
+    },
+    {
+      "name": "Dynasty of Lagash Founded",
+      "description": "The dynasty of Lagash is established in Sumerian city-state, becoming a major regional power",
+      "date": "01.01.2500",
+      "era": "BC",
+      "latitude": 31.253,
+      "longitude": 46.180,
+      "type": "political",
+      "tags": ["Mesopotamia", "Dynasty", "City-State"]
+    },
+    {
+      "name": "Eannatum of Lagash's Conquests",
+      "description": "Eannatum of Lagash establishes the first verifiable empire in Mesopotamian history",
+      "date": "01.01.2450",
+      "era": "BC",
+      "latitude": 31.253,
+      "longitude": 46.180,
+      "type": "military",
+      "tags": ["Empire", "Conquest", "Mesopotamia"]
+    },
+    {
+      "name": "Akkadian Language First Recorded",
+      "description": "Akkadian language appears in cuneiform texts alongside Sumerian, marking Semitic influence",
+      "date": "01.01.2400",
+      "era": "BC",
+      "latitude": 33.312,
+      "longitude": 44.644,
+      "type": "cultural",
+      "tags": ["Language", "Akkadian", "Semitic"]
+    },
+    {
+      "name": "Hieratic Script Development",
+      "description": "Egyptians develop hieratic script, a cursive form of hieroglyphs for everyday writing",
+      "date": "01.01.2400",
+      "era": "BC",
+      "latitude": 30.044,
+      "longitude": 31.236,
+      "type": "cultural",
+      "tags": ["Writing", "Egypt", "Script"]
+    },
+    {
+      "name": "Sargon of Akkad Born",
+      "description": "Birth of Sargon, future founder of the Akkadian Empire and first ruler of a multi-ethnic empire",
+      "date": "01.01.2370",
+      "era": "BC",
+      "latitude": 33.312,
+      "longitude": 44.644,
+      "type": "historic",
+      "tags": ["Akkadian", "Birth", "Empire"]
+    },
+    {
+      "name": "Lugalzagesi Unifies Sumer",
+      "description": "Lugalzagesi of Umma unites most Sumerian city-states under single rule from Uruk",
+      "date": "01.01.2358",
+      "era": "BC",
+      "latitude": 31.324,
+      "longitude": 45.636,
+      "type": "political",
+      "tags": ["Unification", "Sumerian", "Political"]
+    },
+    {
+      "name": "Sargon Overthrows Ur-Zababa",
+      "description": "Sargon of Akkad overthrows his master Ur-Zababa, king of Kish, beginning his rise to power",
+      "date": "01.01.2340",
+      "era": "BC",
+      "latitude": 32.776,
+      "longitude": 44.949,
+      "type": "political",
+      "tags": ["Revolution", "Akkadian", "Power"]
+    },
+    {
+      "name": "Battle of Uruk",
+      "description": "Sargon defeats Lugalzagesi and destroys Uruk, capturing the Sumerian king and ending Sumerian independence",
+      "date": "01.01.2334",
+      "era": "BC",
+      "latitude": 31.324,
+      "longitude": 45.636,
+      "type": "military",
+      "tags": ["Battle", "Victory", "Akkadian"]
+    },
+    {
+      "name": "Akkadian Empire Founded",
+      "description": "Sargon establishes the Akkadian Empire, the world's first multi-ethnic empire",
+      "date": "15.01.2334",
+      "era": "BC",
+      "latitude": 33.312,
+      "longitude": 44.644,
+      "type": "political",
+      "tags": ["Empire", "Foundation", "Akkadian"]
+    },
+    {
+      "name": "Sargon Conquers Ur",
+      "description": "Sargon captures and destroys the walls of Ur, one of Sumer's greatest cities",
+      "date": "01.03.2334",
+      "era": "BC",
+      "latitude": 30.962,
+      "longitude": 46.104,
+      "type": "military",
+      "tags": ["Conquest", "Destruction", "Akkadian"]
+    },
+    {
+      "name": "Sargon Reaches Persian Gulf",
+      "description": "Sargon completes his southern conquests, symbolically washing his weapons in the Persian Gulf",
+      "date": "01.06.2334",
+      "era": "BC",
+      "latitude": 29.377,
+      "longitude": 47.975,
+      "type": "military",
+      "tags": ["Victory", "Symbolic", "Conquest"]
+    },
+    {
+      "name": "Akkadian Becomes Lingua Franca",
+      "description": "Akkadian language becomes the diplomatic and trade language across Mesopotamia",
+      "date": "01.01.2320",
+      "era": "BC",
+      "latitude": 33.312,
+      "longitude": 44.644,
+      "type": "cultural",
+      "tags": ["Language", "Diplomacy", "Trade"]
+    },
+    {
+      "name": "Sargon's Northern Campaigns",
+      "description": "Sargon extends Akkadian control to Anatolia and Syria, reaching the Mediterranean",
+      "date": "01.01.2300",
+      "era": "BC",
+      "latitude": 36.202,
+      "longitude": 37.161,
+      "type": "military",
+      "tags": ["Expansion", "Mediterranean", "Campaign"]
+    },
+    {
+      "name": "Death of Sargon of Akkad",
+      "description": "Sargon dies after ruling for 56 years, leaving the world's first empire to his sons",
+      "date": "01.01.2279",
+      "era": "BC",
+      "latitude": 33.312,
+      "longitude": 44.644,
+      "type": "historic",
+      "tags": ["Death", "Succession", "Empire"]
+    },
+    {
+      "name": "Reign of Rimush",
+      "description": "Rimush, son of Sargon, becomes Akkadian king and faces rebellions across the empire",
+      "date": "01.01.2278",
+      "era": "BC",
+      "latitude": 33.312,
+      "longitude": 44.644,
+      "type": "political",
+      "tags": ["Succession", "Rebellion", "Akkadian"]
+    },
+    {
+      "name": "Naram-Sin Becomes King",
+      "description": "Naram-Sin, grandson of Sargon, becomes Akkadian king and declares himself divine",
+      "date": "01.01.2254",
+      "era": "BC",
+      "latitude": 33.312,
+      "longitude": 44.644,
+      "type": "political",
+      "tags": ["Divine", "Kingship", "Akkadian"]
+    },
+    {
+      "name": "Naram-Sin's Victory Stele",
+      "description": "Naram-Sin commissions victory stele showing his triumph over the Lullubi people",
+      "date": "01.01.2230",
+      "era": "BC",
+      "latitude": 33.312,
+      "longitude": 44.644,
+      "type": "cultural",
+      "tags": ["Art", "Victory", "Monument"]
+    },
+    {
+      "name": "4.2 Kiloyear Aridification Event",
+      "description": "Severe drought causes agricultural collapse across Mesopotamia and Egypt",
+      "date": "01.01.2200",
+      "era": "BC",
+      "latitude": 33.0,
+      "longitude": 44.0,
+      "type": "historic",
+      "tags": ["Climate", "Drought", "Collapse"]
+    },
+    {
+      "name": "Fall of Akkadian Empire",
+      "description": "The Akkadian Empire collapses due to drought, invasion, and internal rebellions",
+      "date": "01.01.2154",
+      "era": "BC",
+      "latitude": 33.312,
+      "longitude": 44.644,
+      "type": "political",
+      "tags": ["Collapse", "Empire", "Drought"]
+    },
+    {
+      "name": "Egyptian Old Kingdom Collapses",
+      "description": "Egypt's Old Kingdom falls due to severe drought and famine, ending centralized rule",
+      "date": "01.01.2181",
+      "era": "BC",
+      "latitude": 29.844,
+      "longitude": 31.233,
+      "type": "political",
+      "tags": ["Collapse", "Drought", "Egypt"]
+    },
+    {
+      "name": "Third Dynasty of Ur Founded",
+      "description": "Ur-Nammu establishes the Third Dynasty of Ur, reviving Sumerian power and culture",
+      "date": "01.01.2112",
+      "era": "BC",
+      "latitude": 30.962,
+      "longitude": 46.104,
+      "type": "political",
+      "tags": ["Revival", "Dynasty", "Sumerian"]
+    },
+    {
+      "name": "Code of Ur-Nammu",
+      "description": "Ur-Nammu creates one of the earliest known law codes, predating Hammurabi's code",
+      "date": "01.01.2100",
+      "era": "BC",
+      "latitude": 30.962,
+      "longitude": 46.104,
+      "type": "political",
+      "tags": ["Law", "Code", "Justice"]
+    },
+    {
+      "name": "Reign of Shulgi",
+      "description": "Shulgi becomes king of Ur and rules for 48 years, standardizing the empire",
+      "date": "01.01.2094",
+      "era": "BC",
+      "latitude": 30.962,
+      "longitude": 46.104,
+      "type": "political",
+      "tags": ["Administration", "Standardization", "Rule"]
+    },
+    {
+      "name": "Mentuhotep II Reunites Egypt",
+      "description": "Pharaoh Mentuhotep II defeats northern rivals and reunifies Egypt, beginning the Middle Kingdom",
+      "date": "01.01.2055",
+      "era": "BC",
+      "latitude": 25.731,
+      "longitude": 32.639,
+      "type": "political",
+      "tags": ["Reunification", "Egypt", "Victory"]
+    },
+    {
+      "name": "Thebes Becomes Egyptian Capital",
+      "description": "Mentuhotep II establishes Thebes as the new capital of reunified Egypt",
+      "date": "01.01.2050",
+      "era": "BC",
+      "latitude": 25.731,
+      "longitude": 32.639,
+      "type": "political",
+      "tags": ["Capital", "Thebes", "Egypt"]
+    },
+    {
+      "name": "Fall of Third Dynasty of Ur",
+      "description": "Elamites capture Ur and take King Ibbi-Sin prisoner, ending Sumerian independence forever",
+      "date": "01.01.2004",
+      "era": "BC",
+      "latitude": 30.962,
+      "longitude": 46.104,
+      "type": "military",
+      "tags": ["Defeat", "Captivity", "End"]
+    },
+    {
+      "name": "Rise of Babylon",
+      "description": "Babylon emerges as a major power in Mesopotamia under Amorite rulers",
+      "date": "01.01.2000",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "type": "political",
+      "tags": ["Rise", "Babylon", "Amorite"]
+    },
+    {
+      "name": "Amenemhat I Becomes Pharaoh",
+      "description": "Amenemhat I establishes Egypt's 12th Dynasty and moves the capital to Itjtawy",
+      "date": "01.01.1991",
+      "era": "BC",
+      "latitude": 29.299,
+      "longitude": 31.091,
+      "type": "political",
+      "tags": ["Dynasty", "Capital", "Egypt"]
+    },
+    {
+      "name": "Wall of the Ruler Built",
+      "description": "Amenemhat I constructs fortifications in the Sinai to protect Egypt's eastern border",
+      "date": "01.01.1985",
+      "era": "BC",
+      "latitude": 30.623,
+      "longitude": 34.301,
+      "type": "military",
+      "tags": ["Fortification", "Defense", "Border"]
+    },
+    {
+      "name": "Old Babylonian Period Begins",
+      "description": "Establishment of the Old Babylonian period under Amorite dynasties",
+      "date": "01.01.1894",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "type": "political",
+      "tags": ["Period", "Dynasty", "Babylon"]
+    },
+    {
+      "name": "Hammurabi Becomes King",
+      "description": "Hammurabi ascends to the throne of Babylon and begins his legendary 43-year reign",
+      "date": "01.01.1792",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "type": "political",
+      "tags": ["King", "Babylon", "Legendary"]
+    },
+    {
+      "name": "Epic of Gilgamesh Written",
+      "description": "The complete Epic of Gilgamesh is composed in its Old Babylonian version",
+      "date": "01.01.1800",
+      "era": "BC",
+      "latitude": 31.324,
+      "longitude": 45.636,
+      "type": "cultural",
+      "tags": ["Literature", "Epic", "Mythology"]
+    },
+    {
+      "name": "Hammurabi Conquers Mari",
+      "description": "Hammurabi defeats and destroys the kingdom of Mari, expanding Babylonian control",
+      "date": "01.01.1761",
+      "era": "BC",
+      "latitude": 34.549,
+      "longitude": 40.890,
+      "type": "military",
+      "tags": ["Conquest", "Destruction", "Expansion"]
+    },
+    {
+      "name": "Code of Hammurabi Created",
+      "description": "Hammurabi establishes his famous law code, one of the first comprehensive legal systems",
+      "date": "01.01.1750",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "type": "political",
+      "tags": ["Law", "Code", "Justice"]
+    },
+    {
+      "name": "Hammurabi Conquers Larsa",
+      "description": "Hammurabi defeats Rim-Sin of Larsa, completing his control over southern Mesopotamia",
+      "date": "01.01.1763",
+      "era": "BC",
+      "latitude": 31.338,
+      "longitude": 45.864,
+      "type": "military",
+      "tags": ["Victory", "Control", "South"]
+    },
+    {
+      "name": "Death of Hammurabi",
+      "description": "King Hammurabi dies after transforming Babylon into the dominant Mesopotamian power",
+      "date": "01.01.1750",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "type": "historic",
+      "tags": ["Death", "Legacy", "Power"]
+    },
+    {
+      "name": "Hyksos Invade Egypt",
+      "description": "The Hyksos, foreign rulers from the Levant, invade and control northern Egypt",
+      "date": "01.01.1720",
+      "era": "BC",
+      "latitude": 30.597,
+      "longitude": 32.272,
+      "type": "military",
+      "tags": ["Invasion", "Foreign", "Control"]
+    },
+    {
+      "name": "Hittite Kingdom Founded",
+      "description": "Hattusili I establishes the Hittite Kingdom in central Anatolia",
+      "date": "01.01.1650",
+      "era": "BC",
+      "latitude": 40.023,
+      "longitude": 34.621,
+      "type": "political",
+      "tags": ["Foundation", "Hittite", "Anatolia"]
+    },
+    {
+      "name": "Kassites Conquer Babylon",
+      "description": "The Kassites from the Zagros Mountains conquer Babylon and rule for over 400 years",
+      "date": "01.01.1600",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "type": "military",
+      "tags": ["Conquest", "Dynasty", "Long Rule"]
+    },
+    {
+      "name": "Mursili I Sacks Babylon",
+      "description": "Hittite king Mursili I leads a raid that captures and sacks Babylon, ending Hammurabi's dynasty",
+      "date": "01.01.1595",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "type": "military",
+      "tags": ["Raid", "Capture", "Dynasty End"]
+    },
+    {
+      "name": "Ahmose Expels the Hyksos",
+      "description": "Pharaoh Ahmose I defeats the Hyksos and reunifies Egypt, founding the 18th Dynasty",
+      "date": "01.01.1550",
+      "era": "BC",
+      "latitude": 25.731,
+      "longitude": 32.639,
+      "type": "military",
+      "tags": ["Victory", "Expulsion", "Reunification"]
+    },
+    {
+      "name": "Egyptian New Kingdom Begins",
+      "description": "Beginning of Egypt's New Kingdom period, its era of greatest power and territorial expansion",
+      "date": "15.01.1550",
+      "era": "BC",
+      "latitude": 25.731,
+      "longitude": 32.639,
+      "type": "political",
+      "tags": ["New Kingdom", "Power", "Expansion"]
+    },
+    {
+      "name": "Mitanni Kingdom Founded",
+      "description": "The Hurrian kingdom of Mitanni is established in northern Mesopotamia",
+      "date": "01.01.1550",
+      "era": "BC",
+      "latitude": 36.840,
+      "longitude": 40.781,
+      "type": "political",
+      "tags": ["Foundation", "Kingdom", "Hurrian"]
+    },
+    {
+      "name": "Thutmose I's Nubian Campaign",
+      "description": "Pharaoh Thutmose I campaigns deep into Nubia, extending Egyptian control southward",
+      "date": "01.01.1520",
+      "era": "BC",
+      "latitude": 21.845,
+      "longitude": 31.849,
+      "type": "military",
+      "tags": ["Campaign", "Expansion", "South"]
+    },
+    {
+      "name": "Phoenician Maritime Empire",
+      "description": "Phoenician cities reach their peak as maritime trading powers across the Mediterranean",
+      "date": "01.01.1500",
+      "era": "BC",
+      "latitude": 33.273,
+      "longitude": 35.204,
+      "type": "historic",
+      "tags": ["Maritime", "Trade", "Mediterranean"]
+    },
+    {
+      "name": "Seeder Plow Invented",
+      "description": "Mesopotamians invent the seeder plow, revolutionizing agriculture and food production",
+      "date": "01.01.1500",
+      "era": "BC",
+      "latitude": 33.312,
+      "longitude": 44.644,
+      "type": "scientific",
+      "tags": ["Agriculture", "Innovation", "Food"]
+    },
+    {
+      "name": "Hatshepsut Becomes Pharaoh",
+      "description": "Hatshepsut, one of the most successful female pharaohs, begins her 22-year reign",
+      "date": "01.01.1479",
+      "era": "BC",
+      "latitude": 25.731,
+      "longitude": 32.639,
+      "type": "political",
+      "tags": ["Female", "Pharaoh", "Success"]
+    },
+    {
+      "name": "Deir el-Bahri Temple Built",
+      "description": "Hatshepsut constructs her magnificent mortuary temple at Deir el-Bahri",
+      "date": "01.01.1470",
+      "era": "BC",
+      "latitude": 25.739,
+      "longitude": 32.607,
+      "type": "cultural",
+      "tags": ["Architecture", "Temple", "Innovation"]
+    },
+    {
+      "name": "Hatshepsut's Punt Expedition",
+      "description": "Hatshepsut sends a successful trading expedition to the mysterious land of Punt",
+      "date": "01.01.1465",
+      "era": "BC",
+      "latitude": 15.000,
+      "longitude": 39.000,
+      "type": "historic",
+      "tags": ["Trade", "Expedition", "Exploration"]
+    },
+    {
+      "name": "Death of Hatshepsut",
+      "description": "The female pharaoh Hatshepsut dies after one of the most prosperous reigns in Egyptian history",
+      "date": "01.01.1458",
+      "era": "BC",
+      "latitude": 25.731,
+      "longitude": 32.639,
+      "type": "historic",
+      "tags": ["Death", "Legacy", "Prosperity"]
+    },
+    {
+      "name": "Thutmose III Becomes Sole Ruler",
+      "description": "Thutmose III becomes sole pharaoh after Hatshepsut's death and begins military campaigns",
+      "date": "01.01.1458",
+      "era": "BC",
+      "latitude": 25.731,
+      "longitude": 32.639,
+      "type": "political",
+      "tags": ["Sole Rule", "Military", "Campaigns"]
+    },
+    {
+      "name": "Battle of Megiddo",
+      "description": "Thutmose III defeats a Canaanite coalition at Megiddo in his first major military victory",
+      "date": "01.01.1457",
+      "era": "BC",
+      "latitude": 32.585,
+      "longitude": 35.184,
+      "type": "military",
+      "tags": ["Battle", "Victory", "Coalition"]
+    },
+    {
+      "name": "Hittite Empire Expansion",
+      "description": "Hittite Empire expands under Tudhaliya I, challenging Egyptian and Mitanni power",
+      "date": "01.01.1430",
+      "era": "BC",
+      "latitude": 40.023,
+      "longitude": 34.621,
+      "type": "political",
+      "tags": ["Expansion", "Challenge", "Power"]
+    },
+    {
+      "name": "Thutmose III's 17 Campaigns",
+      "description": "Thutmose III completes his 17th and final military campaign, securing Egyptian dominance",
+      "date": "01.01.1436",
+      "era": "BC",
+      "latitude": 33.888,
+      "longitude": 35.495,
+      "type": "military",
+      "tags": ["Final Campaign", "Dominance", "Victory"]
+    },
+    {
+      "name": "Linear B Script Developed",
+      "description": "Mycenaean Greeks adapt Linear A to create Linear B, the first script to write Greek",
+      "date": "01.01.1400",
+      "era": "BC",
+      "latitude": 37.641,
+      "longitude": 22.726,
+      "type": "cultural",
+      "tags": ["Writing", "Greek", "Script"]
+    },
+    {
+      "name": "Egypt Controls Nubia",
+      "description": "Egyptian forces take complete control of Nubia and its gold mines",
+      "date": "01.01.1400",
+      "era": "BC",
+      "latitude": 20.000,
+      "longitude": 30.000,
+      "type": "military",
+      "tags": ["Control", "Gold", "Resources"]
+    },
+    {
+      "name": "Amenhotep III's Golden Age",
+      "description": "Pharaoh Amenhotep III begins his reign, marking Egypt's cultural and economic peak",
+      "date": "01.01.1391",
+      "era": "BC",
+      "latitude": 25.731,
+      "longitude": 32.639,
+      "type": "political",
+      "tags": ["Golden Age", "Peak", "Culture"]
+    },
+    {
+      "name": "Assyrian Empire Rises",
+      "description": "Assyria begins its rise to power under Ashur-uballit I, challenging Mitanni dominance",
+      "date": "01.01.1365",
+      "era": "BC",
+      "latitude": 36.349,
+      "longitude": 43.152,
+      "type": "political",
+      "tags": ["Rise", "Assyria", "Challenge"]
+    },
+    {
+      "name": "Akhenaten's Religious Revolution",
+      "description": "Pharaoh Akhenaten attempts to transform Egyptian religion to worship only Aten",
+      "date": "01.01.1353",
+      "era": "BC",
+      "latitude": 27.645,
+      "longitude": 30.902,
+      "type": "cultural",
+      "tags": ["Religion", "Revolution", "Monotheism"]
+    },
+    {
+      "name": "Amarna Founded",
+      "description": "Akhenaten founds the new capital city of Amarna dedicated to the god Aten",
+      "date": "01.01.1350",
+      "era": "BC",
+      "latitude": 27.645,
+      "longitude": 30.902,
+      "type": "political",
+      "tags": ["Capital", "Foundation", "Religious"]
+    },
+    {
+      "name": "Death of Akhenaten",
+      "description": "The heretic pharaoh Akhenaten dies, ending his religious revolution",
+      "date": "01.01.1336",
+      "era": "BC",
+      "latitude": 27.645,
+      "longitude": 30.902,
+      "type": "historic",
+      "tags": ["Death", "Revolution End", "Religious"]
+    },
+    {
+      "name": "Tutankhamun Becomes Pharaoh",
+      "description": "The boy king Tutankhamun ascends to the throne and restores traditional Egyptian religion",
+      "date": "01.01.1332",
+      "era": "BC",
+      "latitude": 25.731,
+      "longitude": 32.639,
+      "type": "political",
+      "tags": ["Boy King", "Restoration", "Traditional"]
+    },
+    {
+      "name": "Return to Thebes",
+      "description": "Tutankhamun abandons Amarna and returns the capital to Thebes",
+      "date": "01.01.1330",
+      "era": "BC",
+      "latitude": 25.731,
+      "longitude": 32.639,
+      "type": "political",
+      "tags": ["Return", "Capital", "Abandonment"]
+    },
+    {
+      "name": "Death of Tutankhamun",
+      "description": "The young pharaoh Tutankhamun dies mysteriously at age 19",
+      "date": "01.01.1323",
+      "era": "BC",
+      "latitude": 25.731,
+      "longitude": 32.639,
+      "type": "historic",
+      "tags": ["Death", "Mystery", "Young"]
+    },
+    {
+      "name": "Mitanni Conquered by Hittites",
+      "description": "The Hittite Empire conquers western Mitanni, ending Hurrian power",
+      "date": "01.01.1321",
+      "era": "BC",
+      "latitude": 36.840,
+      "longitude": 40.781,
+      "type": "military",
+      "tags": ["Conquest", "End", "Power"]
+    },
+    {
+      "name": "Ramesses I Founds 19th Dynasty",
+      "description": "Ramesses I establishes Egypt's 19th Dynasty, beginning the Ramesside period",
+      "date": "01.01.1295",
+      "era": "BC",
+      "latitude": 25.731,
+      "longitude": 32.639,
+      "type": "political",
+      "tags": ["Dynasty", "Foundation", "Period"]
+    },
+    {
+      "name": "Seti I's Military Campaigns",
+      "description": "Pharaoh Seti I campaigns in the Levant, reasserting Egyptian power",
+      "date": "01.01.1290",
+      "era": "BC",
+      "latitude": 33.888,
+      "longitude": 35.495,
+      "type": "military",
+      "tags": ["Campaign", "Reassertion", "Power"]
+    },
+    {
+      "name": "Ramesses II Becomes Pharaoh",
+      "description": "Ramesses the Great begins his 66-year reign, the second longest in Egyptian history",
+      "date": "01.01.1279",
+      "era": "BC",
+      "latitude": 25.731,
+      "longitude": 32.639,
+      "type": "political",
+      "tags": ["Great", "Long Reign", "History"]
+    },
+    {
+      "name": "Battle of Kadesh",
+      "description": "Ramesses II fights the Hittites at Kadesh in one of history's largest chariot battles",
+      "date": "01.01.1274",
+      "era": "BC",
+      "latitude": 34.561,
+      "longitude": 36.526,
+      "type": "military",
+      "tags": ["Battle", "Chariots", "Largest"]
+    },
+    {
+      "name": "Hittite-Egyptian Peace Treaty",
+      "description": "The world's first known peace treaty is signed between Ramesses II and Hittite king Hattusili III",
+      "date": "01.01.1259",
+      "era": "BC",
+      "latitude": 34.561,
+      "longitude": 36.526,
+      "type": "political",
+      "tags": ["Peace", "Treaty", "First"]
+    },
+    {
+      "name": "Abu Simbel Temples Built",
+      "description": "Ramesses II completes the magnificent rock temples at Abu Simbel",
+      "date": "01.01.1244",
+      "era": "BC",
+      "latitude": 22.337,
+      "longitude": 31.626,
+      "type": "cultural",
+      "tags": ["Architecture", "Rock", "Magnificent"]
+    },
+    {
+      "name": "Sea Peoples' First Raids",
+      "description": "Mysterious Sea Peoples begin raiding Mediterranean coastlines and Egypt",
+      "date": "01.01.1230",
+      "era": "BC",
+      "latitude": 35.000,
+      "longitude": 33.000,
+      "type": "military",
+      "tags": ["Raiders", "Mystery", "Mediterranean"]
+    },
+    {
+      "name": "Death of Ramesses II",
+      "description": "Ramesses the Great dies after 66 years of rule, leaving a massive building legacy",
+      "date": "01.01.1213",
+      "era": "BC",
+      "latitude": 25.731,
+      "longitude": 32.639,
+      "type": "historic",
+      "tags": ["Death", "Legacy", "Building"]
+    },
+    {
+      "name": "Bronze Age Collapse Begins",
+      "description": "Civilizations across the Eastern Mediterranean begin to collapse mysteriously",
+      "date": "01.01.1200",
+      "era": "BC",
+      "latitude": 35.000,
+      "longitude": 30.000,
+      "type": "historic",
+      "tags": ["Collapse", "Mystery", "Civilization"]
+    },
+    {
+      "name": "Destruction of Ugarit",
+      "description": "The important trading city of Ugarit is destroyed, marking the Bronze Age collapse",
+      "date": "01.01.1200",
+      "era": "BC",
+      "latitude": 35.603,
+      "longitude": 35.784,
+      "type": "military",
+      "tags": ["Destruction", "Trade", "Collapse"]
+    },
+    {
+      "name": "Fall of Hittite Empire",
+      "description": "The Hittite Empire collapses due to invasions and internal strife",
+      "date": "01.01.1180",
+      "era": "BC",
+      "latitude": 40.023,
+      "longitude": 34.621,
+      "type": "political",
+      "tags": ["Fall", "Invasions", "Strife"]
+    },
+    {
+      "name": "Ramesses III Battles Sea Peoples",
+      "description": "Pharaoh Ramesses III defeats the Sea Peoples in a great naval battle",
+      "date": "01.01.1175",
+      "era": "BC",
+      "latitude": 31.000,
+      "longitude": 32.000,
+      "type": "military",
+      "tags": ["Naval", "Victory", "Defense"]
+    },
+    {
+      "name": "Death of Ramesses III",
+      "description": "The last great warrior pharaoh Ramesses III dies, ending Egypt's imperial age",
+      "date": "01.01.1153",
+      "era": "BC",
+      "latitude": 25.731,
+      "longitude": 32.639,
+      "type": "historic",
+      "tags": ["Death", "Warrior", "Imperial End"]
+    },
+    {
+      "name": "Philistines Settle Palestine",
+      "description": "The Philistines, likely Sea Peoples survivors, establish cities in southern Palestine",
+      "date": "01.01.1150",
+      "era": "BC",
+      "latitude": 31.353,
+      "longitude": 34.308,
+      "type": "historic",
+      "tags": ["Settlement", "Cities", "Palestine"]
+    },
+    {
+      "name": "Assyrian Revival Begins",
+      "description": "Assyria begins to recover from the Bronze Age collapse under Tiglath-Pileser I",
+      "date": "01.01.1115",
+      "era": "BC",
+      "latitude": 36.349,
+      "longitude": 43.152,
+      "type": "political",
+      "tags": ["Revival", "Recovery", "Assyria"]
+    },
+    {
+      "name": "End of New Kingdom Egypt",
+      "description": "Egypt's New Kingdom period ends with the death of Ramesses XI",
+      "date": "01.01.1077",
+      "era": "BC",
+      "latitude": 25.731,
+      "longitude": 32.639,
+      "type": "political",
+      "tags": ["End", "Period", "Death"]
+    },
+    {
+      "name": "Kingdom of Kush Controls Upper Egypt",
+      "description": "The Nubian Kingdom of Kush gains control over Upper Egypt",
+      "date": "01.01.1070",
+      "era": "BC",
+      "latitude": 18.000,
+      "longitude": 33.000,
+      "type": "political",
+      "tags": ["Control", "Nubian", "Upper Egypt"]
+    },
+    {
+      "name": "Israel's United Monarchy",
+      "description": "Formation of the United Monarchy of Israel under Saul, David, and Solomon",
+      "date": "01.01.1050",
+      "era": "BC",
+      "latitude": 31.769,
+      "longitude": 35.234,
+      "type": "political",
+      "tags": ["Kingdom", "Israel", "Unity"]
+    },
+    {
+      "name": "David Captures Jerusalem",
+      "description": "King David of Israel captures Jerusalem and makes it his capital",
+      "date": "01.01.1000",
+      "era": "BC",
+      "latitude": 31.769,
+      "longitude": 35.234,
+      "type": "military",
+      "tags": ["Capture", "Capital", "Jerusalem"]
+    }
+  ]
+}
