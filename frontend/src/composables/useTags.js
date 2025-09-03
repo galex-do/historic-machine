@@ -17,9 +17,16 @@ export function useTags() {
       console.log('Loading tags from API...')
       const response = await api.getTags()
       
-      if (response && response.data) {
-        allTags.value = response.data
-        console.log(`Loaded ${response.data.length} tags`)
+      if (response) {
+        // Handle both direct array and wrapped data response formats
+        const tagsData = response.data || response
+        if (Array.isArray(tagsData)) {
+          allTags.value = tagsData
+          console.log(`Loaded ${tagsData.length} tags`)
+        } else {
+          console.error('Invalid tags response:', response)
+          tagsError.value = 'Invalid response format'
+        }
       } else {
         console.error('Invalid tags response:', response)
         tagsError.value = 'Invalid response format'

@@ -181,6 +181,78 @@
                 </div>
               </div>
               
+              <!-- Tags Section -->
+              <div class="form-group">
+                <label for="event-tags">Tags</label>
+                <div class="tags-section">
+                  <!-- Selected Tags Display -->
+                  <div v-if="eventForm.selectedTags.length > 0" class="selected-tags">
+                    <div 
+                      v-for="tag in eventForm.selectedTags" 
+                      :key="tag.id"
+                      class="selected-tag"
+                      :style="{ backgroundColor: tag.color, color: getContrastColor(tag.color) }"
+                    >
+                      {{ tag.name }}
+                      <button 
+                        type="button" 
+                        @click="removeTag(tag)"
+                        class="remove-tag-btn"
+                        :style="{ color: getContrastColor(tag.color) }"
+                      >
+                        ×
+                      </button>
+                    </div>
+                  </div>
+                  
+                  <!-- Tag Search and Add -->
+                  <div class="tag-input-section">
+                    <input 
+                      v-model="eventForm.tagSearch"
+                      type="text"
+                      class="tag-search-input"
+                      placeholder="Search tags or type new tag name..."
+                      @keydown.enter.prevent="handleTagInput"
+                    />
+                    
+                    <!-- Tag Suggestions -->
+                    <div v-if="filteredTags.length > 0 && eventForm.tagSearch" class="tag-suggestions">
+                      <div 
+                        v-for="tag in filteredTags.slice(0, 5)" 
+                        :key="tag.id"
+                        class="tag-suggestion"
+                        @click="addTag(tag)"
+                      >
+                        <span 
+                          class="tag-color-indicator"
+                          :style="{ backgroundColor: tag.color }"
+                        ></span>
+                        {{ tag.name }}
+                      </div>
+                    </div>
+                    
+                    <!-- Create New Tag Option -->
+                    <div v-if="canCreateNewTag" class="new-tag-option">
+                      <div class="new-tag-form">
+                        <span class="new-tag-text">Create new tag:</span>
+                        <input 
+                          v-model="eventForm.newTagColor"
+                          type="color"
+                          class="color-picker"
+                        />
+                        <button 
+                          type="button"
+                          @click="createAndAddTag"
+                          class="create-tag-btn"
+                        >
+                          Add "{{ eventForm.tagSearch }}"
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
               <div class="form-actions">
                 <button type="button" @click="closeModal" class="cancel-btn">Cancel</button>
                 <button type="submit" class="submit-btn" :disabled="loading">
@@ -196,14 +268,16 @@
 </template>
 
 <script>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import { useAuth } from '@/composables/useAuth.js'
+import { useTags } from '@/composables/useTags.js'
 import apiService from '@/services/api.js'
 
 export default {
   name: 'AdminPanel',
   setup() {
     const { canAccessAdmin } = useAuth()
+    const { allTags, loadTags, createTag, setEventTags, getTagsByIds } = useTags()
     
     const events = ref([])
     const loading = ref(false)
@@ -221,7 +295,11 @@ export default {
       era: 'AD',
       latitude: null,
       longitude: null,
-      lens_type: ''
+      lens_type: '',
+      selectedTags: [],
+      newTagName: '',
+      newTagColor: '#3B82F6',
+      tagSearch: ''
     })
 
     const fetchEvents = async () => {
@@ -322,7 +400,11 @@ export default {
         era: event.era || 'AD',
         latitude: event.latitude,
         longitude: event.longitude,
-        lens_type: event.lens_type
+        lens_type: event.lens_type,
+        selectedTags: event.tags ? [...event.tags] : [],
+        newTagName: '',
+        newTagColor: '#3B82F6',
+        tagSearch: ''
       }
       showEditModal.value = true
     }
@@ -360,15 +442,23 @@ export default {
           lens_type: eventForm.value.lens_type
         }
         
+        let eventId
         if (editingEvent.value) {
           // Update existing event
           await apiService.updateEvent(editingEvent.value.id, eventData)
+          eventId = editingEvent.value.id
           console.log('Event updated successfully')
         } else {
           // Create new event
-          await apiService.createEvent(eventData)
+          const response = await apiService.createEvent(eventData)
+          eventId = response.id
           console.log('Event created successfully')
         }
+        
+        // Update event tags
+        const tagIds = eventForm.value.selectedTags.map(tag => tag.id)
+        await setEventTags(eventId, tagIds)
+        console.log('Event tags updated successfully')
         
         closeModal()
         await fetchEvents() // Refresh the list
@@ -394,12 +484,73 @@ export default {
         era: 'AD',
         latitude: null,
         longitude: null,
-        lens_type: ''
+        lens_type: '',
+        selectedTags: [],
+        newTagName: '',
+        newTagColor: '#3B82F6',
+        tagSearch: ''
       }
     }
 
-    onMounted(() => {
-      fetchEvents()
+    // Tag functionality
+    const filteredTags = computed(() => {
+      if (!eventForm.value.tagSearch) return []
+      const search = eventForm.value.tagSearch.toLowerCase()
+      return allTags.value.filter(tag => 
+        tag.name.toLowerCase().includes(search) &&
+        !eventForm.value.selectedTags.some(selected => selected.id === tag.id)
+      )
+    })
+    
+    const canCreateNewTag = computed(() => {
+      if (!eventForm.value.tagSearch.trim()) return false
+      const search = eventForm.value.tagSearch.toLowerCase().trim()
+      return !allTags.value.some(tag => tag.name.toLowerCase() === search) &&
+             !eventForm.value.selectedTags.some(tag => tag.name.toLowerCase() === search)
+    })
+    
+    const addTag = (tag) => {
+      if (!eventForm.value.selectedTags.some(selected => selected.id === tag.id)) {
+        eventForm.value.selectedTags.push(tag)
+        eventForm.value.tagSearch = ''
+      }
+    }
+    
+    const removeTag = (tag) => {
+      eventForm.value.selectedTags = eventForm.value.selectedTags.filter(t => t.id !== tag.id)
+    }
+    
+    const createAndAddTag = async () => {
+      if (!eventForm.value.tagSearch.trim()) return
+      
+      try {
+        const newTag = await createTag({
+          name: eventForm.value.tagSearch.trim(),
+          color: eventForm.value.newTagColor
+        })
+        
+        if (newTag) {
+          eventForm.value.selectedTags.push(newTag)
+          eventForm.value.tagSearch = ''
+          eventForm.value.newTagColor = '#3B82F6'
+        }
+      } catch (err) {
+        console.error('Error creating tag:', err)
+        error.value = 'Failed to create new tag'
+      }
+    }
+    
+    const handleTagInput = () => {
+      if (filteredTags.value.length > 0) {
+        addTag(filteredTags.value[0])
+      } else if (canCreateNewTag.value) {
+        createAndAddTag()
+      }
+    }
+    
+    onMounted(async () => {
+      await loadTags()
+      await fetchEvents()
     })
 
     return {
@@ -411,6 +562,9 @@ export default {
       showEditModal,
       editingEvent,
       eventForm,
+      allTags,
+      filteredTags,
+      canCreateNewTag,
       fetchEvents,
       formatDate,
       formatDateWithEra,
@@ -419,7 +573,11 @@ export default {
       editEvent,
       deleteEvent,
       saveEvent,
-      closeModal
+      closeModal,
+      addTag,
+      removeTag,
+      createAndAddTag,
+      handleTagInput
     }
   }
 }
@@ -610,6 +768,148 @@ export default {
   color: #a0aec0;
   font-style: italic;
   font-size: 0.85rem;
+}
+
+/* Tags section styling */
+.tags-section {
+  margin-top: 0.5rem;
+}
+
+.selected-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.selected-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.remove-tag-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 0;
+  margin-left: 0.25rem;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.remove-tag-btn:hover {
+  opacity: 1;
+}
+
+.tag-input-section {
+  position: relative;
+}
+
+.tag-search-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s ease;
+}
+
+.tag-search-input:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+}
+
+.tag-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.tag-suggestion {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-bottom: 1px solid #f7fafc;
+}
+
+.tag-suggestion:hover {
+  background-color: #f7fafc;
+}
+
+.tag-suggestion:last-child {
+  border-bottom: none;
+}
+
+.tag-color-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.new-tag-option {
+  border-top: 1px solid #e2e8f0;
+  margin-top: 0.5rem;
+  padding-top: 0.75rem;
+}
+
+.new-tag-form {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.new-tag-text {
+  color: #4a5568;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.color-picker {
+  width: 40px;
+  height: 32px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.create-tag-btn {
+  background: #4299e1;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.create-tag-btn:hover {
+  background: #3182ce;
+  transform: translateY(-1px);
 }
 
 .event-actions {
