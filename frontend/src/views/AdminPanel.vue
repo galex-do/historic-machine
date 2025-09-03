@@ -666,12 +666,32 @@ export default {
             bValue = b.name.toLowerCase()
             break
           case 'date':
-            // Convert date strings to comparable format, handling BC dates
-            aValue = new Date(a.event_date).getTime()
-            bValue = new Date(b.event_date).getTime()
-            // For BC dates, we need to handle them specially
-            if (a.era === 'BC') aValue = -aValue
-            if (b.era === 'BC') bValue = -bValue
+            // Handle BC/AD dates chronologically
+            // For BC: smaller year = more recent (25 BC is after 500 BC)
+            // For AD: larger year = more recent (500 AD is after 25 AD)
+            
+            const aYear = parseInt(a.event_date.split('-')[0], 10)
+            const bYear = parseInt(b.event_date.split('-')[0], 10)
+            
+            // Both BC dates
+            if (a.era === 'BC' && b.era === 'BC') {
+              aValue = -aYear // Reverse BC years (larger year = older)
+              bValue = -bYear
+            }
+            // Both AD dates  
+            else if (a.era === 'AD' && b.era === 'AD') {
+              aValue = aYear // Normal AD years (larger year = newer)
+              bValue = bYear
+            }
+            // Mixed BC/AD: BC always comes before AD
+            else if (a.era === 'BC' && b.era === 'AD') {
+              aValue = -10000 // BC is always "smaller" (older)
+              bValue = bYear
+            }
+            else if (a.era === 'AD' && b.era === 'BC') {
+              aValue = aYear
+              bValue = -10000 // BC is always "smaller" (older)
+            }
             break
           case 'type':
             aValue = a.lens_type.toLowerCase()
