@@ -38,7 +38,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-if="datasets.length === 0">
+            <tr v-if="!datasets || datasets.length === 0">
               <td colspan="6" class="no-datasets">
                 <div class="empty-state">
                   <div class="empty-icon">📊</div>
@@ -47,7 +47,7 @@
                 </div>
               </td>
             </tr>
-            <tr v-for="dataset in datasets" :key="dataset.id" class="dataset-row">
+            <tr v-for="dataset in datasets" :key="dataset?.id || Math.random()" class="dataset-row" v-if="dataset">
               <td class="dataset-filename">
                 <div class="filename-cell">
                   <span class="filename">{{ dataset.filename }}</span>
@@ -69,7 +69,7 @@
                 <button 
                   @click="confirmDelete(dataset)"
                   class="delete-button"
-                  :title="`Delete dataset: ${dataset.filename}`"
+                  :title="`Delete dataset: ${dataset?.filename || 'Unknown'}`"
                 >
                   🗑️
                 </button>
@@ -140,7 +140,8 @@ export default {
       
       try {
         const response = await apiService.getDatasets()
-        datasets.value = response || []
+        // Ensure we always have an array and filter out any null values
+        datasets.value = Array.isArray(response) ? response.filter(d => d && d.id) : []
         console.log('Loaded datasets:', datasets.value.length)
       } catch (err) {
         console.error('Error fetching datasets:', err)
