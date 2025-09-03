@@ -5,10 +5,23 @@
         <h2>Historic Events</h2>
         <p class="admin-subtitle">Manage and create historic events</p>
       </div>
-      <button @click="showCreateModal = true" class="create-btn" v-if="canAccessAdmin">
-        <span class="btn-icon">➕</span>
-        Create New Event
-      </button>
+      <div class="action-buttons" v-if="canAccessAdmin">
+        <button @click="showCreateModal = true" class="create-btn">
+          <span class="btn-icon">➕</span>
+          Create New Event
+        </button>
+        <button @click="triggerFileUpload" class="import-btn">
+          <span class="btn-icon">📁</span>
+          Import Events
+        </button>
+        <input 
+          ref="fileInput" 
+          type="file" 
+          accept=".json" 
+          @change="handleFileUpload" 
+          style="display: none"
+        />
+      </div>
     </div>
 
     <!-- Events Table -->
@@ -333,6 +346,7 @@ export default {
     const showCreateModal = ref(false)
     const showEditModal = ref(false)
     const editingEvent = ref(null)
+    const fileInput = ref(null)
     
     // Sorting state
     const sortField = ref('date')
@@ -723,6 +737,47 @@ export default {
       }
     }
     
+    // Import functions
+    const triggerFileUpload = () => {
+      fileInput.value?.click()
+    }
+    
+    const handleFileUpload = async (event) => {
+      const file = event.target.files[0]
+      if (!file) return
+      
+      try {
+        loading.value = true
+        error.value = null
+        
+        const text = await file.text()
+        const dataset = JSON.parse(text)
+        
+        if (!dataset.events || !Array.isArray(dataset.events)) {
+          throw new Error('Invalid dataset format: expected events array')
+        }
+        
+        // Import events via API
+        const response = await api.importEvents(dataset.events)
+        
+        if (response.success) {
+          // Refresh events list
+          await fetchEvents()
+          alert(`Successfully imported ${response.imported_count} events!`)
+        } else {
+          throw new Error(response.error || 'Failed to import events')
+        }
+        
+      } catch (err) {
+        console.error('Import error:', err)
+        error.value = err.message || 'Failed to import events'
+      } finally {
+        loading.value = false
+        // Reset file input
+        event.target.value = ''
+      }
+    }
+    
     onMounted(async () => {
       await loadTags()
       await fetchEvents()
@@ -757,7 +812,10 @@ export default {
       removeTag,
       createAndAddTag,
       handleTagInput,
-      toggleSort
+      toggleSort,
+      fileInput,
+      triggerFileUpload,
+      handleFileUpload
     }
   }
 }
@@ -1248,6 +1306,40 @@ export default {
   color: #4299e1;
   opacity: 1;
   transform: scale(1.1);
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.import-btn {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 4px rgba(5, 150, 105, 0.2);
+}
+
+.import-btn:hover {
+  background: linear-gradient(135deg, #047857 0%, #065f46 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(5, 150, 105, 0.3);
+}
+
+.import-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(5, 150, 105, 0.2);
 }
 
 .form-row {

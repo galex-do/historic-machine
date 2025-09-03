@@ -48,6 +48,7 @@ func (router *Router) SetupRoutes() http.Handler {
         // Event routes (public read, auth required for create/update/delete)
         api.HandleFunc("/events", router.authHandler.OptionalAuthMiddleware(router.eventHandler.GetAllEvents)).Methods("GET", "OPTIONS")
         api.HandleFunc("/events", router.authHandler.AuthMiddleware(router.eventHandler.CreateEvent)).Methods("POST", "OPTIONS")
+        api.HandleFunc("/events/import", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.eventHandler.ImportEvents)).Methods("POST", "OPTIONS")
         api.HandleFunc("/events/{id}", router.authHandler.OptionalAuthMiddleware(router.eventHandler.GetEventByID)).Methods("GET", "OPTIONS")
         api.HandleFunc("/events/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.eventHandler.UpdateEvent)).Methods("PUT", "OPTIONS")
         api.HandleFunc("/events/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.eventHandler.DeleteEvent)).Methods("DELETE", "OPTIONS")

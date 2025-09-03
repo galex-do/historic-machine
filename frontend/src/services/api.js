@@ -145,6 +145,13 @@ class ApiService {
       method: 'DELETE',
     })
   }
+
+  async importEvents(events) {
+    return this.makeRequest('/events/import', {
+      method: 'POST',
+      body: JSON.stringify({ events }),
+    })
+  }
 }
 
 // Export singleton instance

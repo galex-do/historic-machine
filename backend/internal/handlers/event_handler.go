@@ -2,6 +2,7 @@ package handlers
 
 import (
         "encoding/json"
+        "fmt"
         "historical-events-backend/internal/database/repositories"
         "historical-events-backend/internal/models"
         "historical-events-backend/pkg/response"
@@ -9,6 +10,7 @@ import (
         "net/http"
         "strconv"
         "strings"
+        "time"
 
         "github.com/gorilla/mux"
 )
@@ -227,6 +229,99 @@ func (h *EventHandler) GetEventsInRadius(w http.ResponseWriter, r *http.Request)
         }
         
         response.Success(w, events)
+}
+
+// ImportEvents handles bulk importing of events from dataset
+func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
+        type ImportRequest struct {
+                Events []struct {
+                        Name        string   `json:"name"`
+                        Description string   `json:"description"`
+                        Date        string   `json:"date"`
+                        Era         string   `json:"era"`
+                        Latitude    float64  `json:"latitude"`
+                        Longitude   float64  `json:"longitude"`
+                        Type        string   `json:"type"`
+                        Tags        []string `json:"tags"`
+                } `json:"events"`
+        }
+
+        var req ImportRequest
+        if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
+                response.BadRequest(w, "Invalid JSON format")
+                return
+        }
+
+        if len(req.Events) == 0 {
+                response.BadRequest(w, "No events provided for import")
+                return
+        }
+
+        importedCount := 0
+        for _, eventData := range req.Events {
+                // Parse date with DD.MM.YYYY format
+                parsedDate, err := time.Parse("02.01.2006", eventData.Date)
+                if err != nil {
+                        log.Printf("Failed to parse date %s: %v", eventData.Date, err)
+                        continue
+                }
+
+                // Handle BC dates - convert to negative year for proper storage
+                var eventDate time.Time
+                if eventData.Era == "BC" {
+                        // Convert BC year to negative astronomical year
+                        year := parsedDate.Year()
+                        bcYear := -(year - 1) // 753 BC becomes -752
+                        eventDate = time.Date(bcYear, parsedDate.Month(), parsedDate.Day(), 0, 0, 0, 0, time.UTC)
+                } else {
+                        eventDate = parsedDate
+                }
+
+                // Create event
+                event := &models.HistoricalEvent{
+                        Name:        eventData.Name,
+                        Description: eventData.Description,
+                        Latitude:    eventData.Latitude,
+                        Longitude:   eventData.Longitude,
+                        EventDate:   eventDate,
+                        Era:         eventData.Era,
+                        LensType:    eventData.Type,
+                        DisplayDate: formatDisplayDate(eventDate, eventData.Era),
+                }
+
+                // Save event
+                _, err = h.eventRepo.Create(event)
+                if err != nil {
+                        log.Printf("Failed to create event %s: %v", eventData.Name, err)
+                        continue
+                }
+
+                // Handle tags - create if they don't exist
+                for _, tagName := range eventData.Tags {
+                        // TODO: Add tag creation and association logic
+                        // This would require injecting tagRepo into event handler
+                        log.Printf("Tag %s for event %s (implementation pending)", tagName, eventData.Name)
+                }
+
+                importedCount++
+        }
+
+        response.Success(w, map[string]interface{}{
+                "success":        true,
+                "imported_count": importedCount,
+                "total_count":    len(req.Events),
+                "message":        fmt.Sprintf("Successfully imported %d out of %d events", importedCount, len(req.Events)),
+        })
+}
+
+// formatDisplayDate formats a date for display with era
+func formatDisplayDate(date time.Time, era string) string {
+        if era == "BC" {
+                // For BC dates, use the original positive year
+                year := -(date.Year() + 1)
+                return fmt.Sprintf("%02d.%02d.%d BC", date.Day(), date.Month(), year)
+        }
+        return fmt.Sprintf("%02d.%02d.%d AD", date.Day(), date.Month(), date.Year())
 }
 
 // parseCoordinate parses a coordinate string to float64
