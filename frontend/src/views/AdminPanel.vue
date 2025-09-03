@@ -398,12 +398,12 @@ export default {
       if (monthNum < 1 || monthNum > 12) return null
       if (dayNum < 1 || dayNum > 31) return null
       
-      // For very old years, construct ISO string manually
+      // For very old years, construct full ISO datetime string manually
       const paddedYear = String(yearNum).padStart(4, '0')
       const paddedMonth = String(monthNum).padStart(2, '0')
       const paddedDay = String(dayNum).padStart(2, '0')
       
-      return `${paddedYear}-${paddedMonth}-${paddedDay}`
+      return `${paddedYear}-${paddedMonth}-${paddedDay}T00:00:00Z`
     }
 
     const updateEventDate = () => {
