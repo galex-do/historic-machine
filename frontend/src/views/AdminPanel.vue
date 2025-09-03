@@ -332,6 +332,7 @@
 import { ref, onMounted, computed } from 'vue'
 import { useAuth } from '@/composables/useAuth.js'
 import { useTags } from '@/composables/useTags.js'
+import { useEvents } from '@/composables/useEvents.js'
 import apiService from '@/services/api.js'
 
 export default {
@@ -339,10 +340,10 @@ export default {
   setup() {
     const { canAccessAdmin } = useAuth()
     const { allTags, loadTags, createTag, setEventTags, getTagsByIds } = useTags()
+    const { events, fetchEvents, loading, error, handleEventDeleted } = useEvents()
     
-    const events = ref([])
-    const loading = ref(false)
-    const error = ref(null)
+    const localLoading = ref(false)
+    const localError = ref(null)
     
     const showCreateModal = ref(false)
     const showEditModal = ref(false)
@@ -368,20 +369,6 @@ export default {
       tagSearch: ''
     })
 
-    const fetchEvents = async () => {
-      loading.value = true
-      error.value = null
-      try {
-        const response = await apiService.getEvents()
-        events.value = Array.isArray(response) ? response : []
-        console.log('Loaded events for admin:', events.value.length)
-      } catch (err) {
-        console.error('Error fetching events:', err)
-        error.value = 'Failed to load events'
-      } finally {
-        loading.value = false
-      }
-    }
 
     const formatDate = (dateString) => {
       try {
@@ -493,23 +480,24 @@ export default {
       const confirmed = confirm(`Are you sure you want to delete "${event.name}"? This action cannot be undone.`)
       if (!confirmed) return
       
-      loading.value = true
-      error.value = null
+      localLoading.value = true
+      localError.value = null
       try {
         await apiService.deleteEvent(event.id)
         console.log('Event deleted successfully')
-        await fetchEvents() // Refresh the list
+        // Update shared state immediately - this will update both admin and map views
+        await handleEventDeleted(event.id)
       } catch (err) {
         console.error('Error deleting event:', err)
-        error.value = 'Failed to delete event'
+        localError.value = 'Failed to delete event'
       } finally {
-        loading.value = false
+        localLoading.value = false
       }
     }
 
     const saveEvent = async () => {
-      loading.value = true
-      error.value = null
+      localLoading.value = true
+      localError.value = null
       
       try {
         const eventData = {
@@ -541,13 +529,13 @@ export default {
         console.log('Event tags updated successfully')
         
         closeModal()
-        await fetchEvents() // Refresh the list
+        await fetchEvents() // Refresh shared events state
         
       } catch (err) {
         console.error('Error saving event:', err)
-        error.value = 'Failed to save event'
+        localError.value = 'Failed to save event'
       } finally {
-        loading.value = false
+        localLoading.value = false
       }
     }
 
@@ -762,7 +750,7 @@ export default {
         const response = await apiService.importEvents(dataset.events)
         
         if (response.success) {
-          // Refresh events list
+          // Refresh shared events state - this will update both admin and map views
           await fetchEvents()
           alert(`Successfully imported ${response.imported_count} events!`)
         } else {
@@ -771,25 +759,28 @@ export default {
         
       } catch (err) {
         console.error('Import error:', err)
-        error.value = err.message || 'Failed to import events'
+        localError.value = err.message || 'Failed to import events'
       } finally {
-        loading.value = false
+        localLoading.value = false
         // Reset file input
-        event.target.value = ''
+        if (fileInput.value) fileInput.value.value = ''
       }
     }
     
     onMounted(async () => {
       await loadTags()
-      await fetchEvents()
+      // Only fetch if events haven't been loaded yet
+      if (!events.value || events.value.length === 0) {
+        await fetchEvents()
+      }
     })
 
     return {
       canAccessAdmin,
       events,
       sortedEvents,
-      loading,
-      error,
+      loading: computed(() => loading.value || localLoading.value),
+      error: computed(() => error.value || localError.value),
       showCreateModal,
       showEditModal,
       editingEvent,
