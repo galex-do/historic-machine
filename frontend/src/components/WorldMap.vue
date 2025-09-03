@@ -20,6 +20,13 @@
             <input type="text" v-model="new_event.date_display" @blur="update_event_date" placeholder="DD.MM.YYYY" required />
           </div>
           <div class="form-group">
+            <label>Era:</label>
+            <select v-model="new_event.era">
+              <option value="BC">BC (Before Christ)</option>
+              <option value="AD">AD (Anno Domini)</option>
+            </select>
+          </div>
+          <div class="form-group">
             <label>Event Type:</label>
             <select v-model="new_event.lens_type">
               <option value="historic">📜 Historic</option>
@@ -84,6 +91,7 @@ export default {
         description: '',
         date: '', // Internal ISO format
         date_display: '', // Display format DD.MM.YYYY
+        era: 'AD',
         latitude: 0,
         longitude: 0,
         lens_type: 'historic'
@@ -193,6 +201,7 @@ export default {
       this.new_event.description = ''
       this.new_event.date = ''
       this.new_event.date_display = ''
+      this.new_event.era = 'AD'
       this.new_event.lens_type = 'historic'
       
       // Show modal
@@ -215,6 +224,7 @@ export default {
       this.new_event.description = event.description
       this.new_event.latitude = event.latitude
       this.new_event.longitude = event.longitude
+      this.new_event.era = event.era || 'AD'
       this.new_event.lens_type = event.lens_type
       
       // Handle date formatting
@@ -368,6 +378,7 @@ export default {
           latitude: this.new_event.latitude,
           longitude: this.new_event.longitude,
           event_date: new Date(this.new_event.date).toISOString(),
+          era: this.new_event.era,
           lens_type: this.new_event.lens_type
         }
         
@@ -434,6 +445,7 @@ export default {
         description: '',
         date: '',
         date_display: '',
+        era: 'AD',
         latitude: 0,
         longitude: 0,
         lens_type: 'historic'

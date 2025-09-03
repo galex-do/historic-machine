@@ -6,13 +6,16 @@ A comprehensive web application for mapping historical events on an interactive 
 
 ## Recent Changes (September 3, 2025)
 
+- **Era Selector Implementation**: Added BC/AD era selectors to all event forms (admin panel and map creation)
+- **Database Type Conflict Resolution**: Fixed PostgreSQL type casting issues for latitude/longitude coordinates
+- **Authentication Header Fix**: Resolved 401 errors by properly merging authentication headers in API requests
 - **Admin Area Implementation**: Complete admin panel with navigation menu
 - **Vue Router Integration**: Proper SPA routing between Map and Admin views  
 - **Role-Based Access**: Admin panel restricted to editor/super access levels
-- **Full CRUD Interface**: Professional table-based event management
+- **Full CRUD Interface**: Professional table-based event management with proper era handling
 - **Enhanced Authentication**: Added editor role support with proper permissions
 - **Navigation Menu**: Header navigation tabs for authenticated users
-- **Bug Fixes**: Resolved marker binding issues during auth state changes
+- **Bug Fixes**: Resolved marker binding issues during auth state changes and BC/AD date preservation
 
 ## User Preferences
 

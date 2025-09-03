@@ -127,6 +127,19 @@
                   />
                   <small class="form-hint">Format: DD/MM/YYYY (e.g., 15/03/1066)</small>
                 </div>
+                <div class="form-group">
+                  <label for="event-era">Era *</label>
+                  <select 
+                    id="event-era"
+                    v-model="eventForm.era" 
+                    required
+                    class="form-input"
+                  >
+                    <option value="BC">BC (Before Christ)</option>
+                    <option value="AD">AD (Anno Domini)</option>
+                  </select>
+                  <small class="form-hint">Select BC for dates before year 1, AD for dates after</small>
+                </div>
               </div>
               
               <div class="form-row">
@@ -191,6 +204,7 @@ export default {
       description: '',
       date_display: '',
       date: '',
+      era: 'AD',
       latitude: null,
       longitude: null,
       lens_type: ''
@@ -264,6 +278,7 @@ export default {
         description: event.description,
         date_display: event.display_date || formatDate(event.event_date),
         date: event.event_date,
+        era: event.era || 'AD',
         latitude: event.latitude,
         longitude: event.longitude,
         lens_type: event.lens_type
@@ -298,6 +313,7 @@ export default {
           name: eventForm.value.name,
           description: eventForm.value.description,
           event_date: eventForm.value.date, // Use the ISO date directly
+          era: eventForm.value.era,
           latitude: parseFloat(eventForm.value.latitude),
           longitude: parseFloat(eventForm.value.longitude),
           lens_type: eventForm.value.lens_type
@@ -334,6 +350,7 @@ export default {
         description: '',
         date_display: '',
         date: '',
+        era: 'AD',
         latitude: null,
         longitude: null,
         lens_type: ''
