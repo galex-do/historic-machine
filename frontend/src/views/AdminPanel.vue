@@ -758,7 +758,7 @@ export default {
         }
         
         // Import events via API
-        const response = await api.importEvents(dataset.events)
+        const response = await apiService.importEvents(dataset.events)
         
         if (response.success) {
           // Refresh events list
