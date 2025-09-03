@@ -467,7 +467,9 @@ export default {
         }
         
         // Update event tags
+        console.log('Selected tags before saving:', eventForm.value.selectedTags)
         const tagIds = eventForm.value.selectedTags.map(tag => tag.id)
+        console.log('Tag IDs to bind to event:', tagIds)
         await setEventTags(eventId, tagIds)
         console.log('Event tags updated successfully')
         
@@ -566,10 +568,15 @@ export default {
         })
         
         if (newTag) {
+          console.log('Created new tag:', newTag)
           eventForm.value.selectedTags.push(newTag)
+          console.log('Selected tags after adding new tag:', eventForm.value.selectedTags)
           eventForm.value.tagSearch = ''
           eventForm.value.newTagColor = '#3B82F6'
           error.value = null // Clear any previous errors
+        } else {
+          console.error('New tag creation returned null/undefined:', newTag)
+          error.value = 'Failed to create new tag - invalid response'
         }
       } catch (err) {
         console.error('Error creating tag:', err)
