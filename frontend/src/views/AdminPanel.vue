@@ -29,9 +29,9 @@
               Name
               <span class="sort-indicator">
                 <span v-if="sortField === 'name'" class="sort-arrow">
-                  {{ sortDirection === 'asc' ? '↑' : '↓' }}
+                  {{ sortDirection === 'asc' ? '▲' : '▼' }}
                 </span>
-                <span v-else class="sort-placeholder">↕</span>
+                <span v-else class="sort-placeholder">⇅</span>
               </span>
             </th>
             <th>Description</th>
@@ -43,9 +43,9 @@
               Date
               <span class="sort-indicator">
                 <span v-if="sortField === 'date'" class="sort-arrow">
-                  {{ sortDirection === 'asc' ? '↑' : '↓' }}
+                  {{ sortDirection === 'asc' ? '▲' : '▼' }}
                 </span>
-                <span v-else class="sort-placeholder">↕</span>
+                <span v-else class="sort-placeholder">⇅</span>
               </span>
             </th>
             <th>Location</th>
@@ -57,9 +57,9 @@
               Type
               <span class="sort-indicator">
                 <span v-if="sortField === 'type'" class="sort-arrow">
-                  {{ sortDirection === 'asc' ? '↑' : '↓' }}
+                  {{ sortDirection === 'asc' ? '▲' : '▼' }}
                 </span>
-                <span v-else class="sort-placeholder">↕</span>
+                <span v-else class="sort-placeholder">⇅</span>
               </span>
             </th>
             <th>Tags</th>
@@ -1207,18 +1207,27 @@ export default {
 .sort-indicator {
   display: inline-block;
   margin-left: 0.5rem;
-  font-size: 0.8rem;
-  min-width: 12px;
+  font-size: 1rem;
+  min-width: 16px;
+  font-weight: bold;
 }
 
 .sort-arrow {
   color: #4299e1;
   font-weight: bold;
+  text-shadow: 0 1px 2px rgba(66, 153, 225, 0.3);
 }
 
 .sort-placeholder {
-  color: #a0aec0;
-  opacity: 0.6;
+  color: #718096;
+  opacity: 0.8;
+  transition: all 0.2s ease;
+}
+
+.sortable-header:hover .sort-placeholder {
+  color: #4299e1;
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .form-row {
