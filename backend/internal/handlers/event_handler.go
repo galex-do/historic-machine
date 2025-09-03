@@ -7,6 +7,7 @@ import (
         "historical-events-backend/internal/models"
         "historical-events-backend/pkg/response"
         "log"
+        "math/rand"
         "net/http"
         "strconv"
         "strings"
@@ -323,11 +324,11 @@ func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
                                         // Use existing tag
                                         tagIDs = append(tagIDs, foundTag.ID)
                                 } else {
-                                        // Create new tag
+                                        // Create new tag with random color
                                         tag := &models.Tag{
                                                 Name:        tagName,
                                                 Description: fmt.Sprintf("Auto-generated tag for %s", tagName),
-                                                Color:       "#3B82F6", // Default blue color
+                                                Color:       h.generateRandomColor(),
                                         }
                                         
                                         createdTag, err := h.tagRepo.CreateTag(tag)
@@ -375,4 +376,24 @@ func formatDisplayDate(date time.Time, era string) string {
 // parseCoordinate parses a coordinate string to float64
 func parseCoordinate(coord string) (float64, error) {
         return strconv.ParseFloat(coord, 64)
+}
+
+// generateRandomColor generates a random hex color for tags
+func (h *EventHandler) generateRandomColor() string {
+        // Predefined vibrant colors that work well for tags
+        colors := []string{
+                "#3B82F6", // Blue
+                "#EF4444", // Red
+                "#10B981", // Green
+                "#F59E0B", // Orange
+                "#8B5CF6", // Purple
+                "#06B6D4", // Cyan
+                "#EC4899", // Pink
+                "#84CC16", // Lime
+                "#F97316", // Orange
+                "#6366F1", // Indigo
+                "#14B8A6", // Teal
+                "#F43F5E", // Rose
+        }
+        return colors[rand.Intn(len(colors))]
 }

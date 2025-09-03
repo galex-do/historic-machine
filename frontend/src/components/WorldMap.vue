@@ -533,6 +533,7 @@ export default {
         'military': '⚔️',     // Crossed swords
         'political': '🏛️',   // Classical building/government
         'historic': '📜',     // Ancient scroll/manuscript
+        'scientific': '🔬',   // Microscope
         'cultural': '🎭'      // Theater masks
       }
       
