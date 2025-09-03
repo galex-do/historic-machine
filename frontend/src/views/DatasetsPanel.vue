@@ -38,7 +38,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-if="!datasets || datasets.length === 0">
+            <tr v-if="datasets.length === 0">
               <td colspan="6" class="no-datasets">
                 <div class="empty-state">
                   <div class="empty-icon">📊</div>
@@ -47,7 +47,7 @@
                 </div>
               </td>
             </tr>
-            <tr v-for="dataset in datasets" :key="dataset?.id || Math.random()" class="dataset-row" v-if="dataset">
+            <tr v-for="dataset in datasets" :key="dataset.id" class="dataset-row">
               <td class="dataset-filename">
                 <div class="filename-cell">
                   <span class="filename">{{ dataset.filename }}</span>
@@ -142,7 +142,7 @@ export default {
         const response = await apiService.getDatasets()
         // Ensure we always have an array and filter out any null values
         datasets.value = Array.isArray(response) ? response.filter(d => d && d.id) : []
-        console.log('Loaded datasets:', datasets.value.length)
+        console.log('Loaded datasets:', datasets.value.length, datasets.value)
       } catch (err) {
         console.error('Error fetching datasets:', err)
         localError.value = err.message || 'Failed to load datasets'
