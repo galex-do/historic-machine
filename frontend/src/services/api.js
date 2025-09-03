@@ -58,9 +58,6 @@ class ApiService {
   async createEvent(eventData) {
     return this.makeRequest('/events', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
       body: JSON.stringify(eventData),
     })
   }
@@ -68,9 +65,6 @@ class ApiService {
   async updateEvent(eventId, eventData) {
     return this.makeRequest(`/events/${eventId}`, {
       method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      },
       body: JSON.stringify(eventData),
     })
   }
