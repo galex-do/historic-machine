@@ -12,8 +12,8 @@ const routes = [
     component: MapView
   },
   {
-    path: '/admin',
-    name: 'Admin',
+    path: '/events',
+    name: 'Events',
     component: AdminPanel,
     meta: { requiresAdmin: true }
   }

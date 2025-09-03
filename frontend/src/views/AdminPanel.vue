@@ -2,8 +2,8 @@
   <div class="admin-panel">
     <div class="admin-header">
       <div class="admin-title">
-        <h2>Events Administration</h2>
-        <p class="admin-subtitle">Manage historical events with full CRUD functionality</p>
+        <h2>Historic Events</h2>
+        <p class="admin-subtitle">Manage and create historic events</p>
       </div>
       <button @click="showCreateModal = true" class="create-btn" v-if="canAccessAdmin">
         <span class="btn-icon">➕</span>
@@ -367,9 +367,9 @@ export default {
 
 <style scoped>
 .admin-panel {
-  padding: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
+  padding: 1rem 0.5rem;
+  max-width: 100%;
+  margin: 0;
   min-height: calc(100vh - 80px);
   background: #f8f9fa;
 }

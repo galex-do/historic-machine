@@ -14,15 +14,28 @@
           <span class="nav-icon">🗺️</span>
           Map
         </router-link>
-        <router-link 
-          v-if="canAccessAdmin" 
-          to="/admin" 
-          class="nav-link" 
-          active-class="nav-link-active"
-        >
-          <span class="nav-icon">⚙️</span>
-          Admin
-        </router-link>
+        <!-- Admin Dropdown -->
+        <div v-if="canAccessAdmin" class="admin-dropdown" @click.stop>
+          <button 
+            class="nav-link dropdown-trigger" 
+            :class="{ 'nav-link-active': $route.path.startsWith('/events') }"
+            @click="toggleAdminDropdown"
+          >
+            <span class="nav-icon">⚙️</span>
+            Admin
+            <span class="dropdown-arrow" :class="{ 'open': showAdminDropdown }">▼</span>
+          </button>
+          <div v-if="showAdminDropdown" class="dropdown-menu">
+            <router-link 
+              to="/events" 
+              class="dropdown-item"
+              @click="showAdminDropdown = false"
+            >
+              <span class="dropdown-icon">📅</span>
+              Events
+            </router-link>
+          </div>
+        </div>
       </nav>
       
       <div class="auth-section">
@@ -104,7 +117,7 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import { useAuth } from '@/composables/useAuth.js'
 
 export default {
@@ -113,6 +126,7 @@ export default {
     const { user, isAuthenticated, isGuest, canAccessAdmin, loading, error, login, logout, clearError } = useAuth()
     
     const showLoginModal = ref(false)
+    const showAdminDropdown = ref(false)
     const loginForm = ref({
       username: '',
       password: ''
@@ -144,6 +158,26 @@ export default {
       loginForm.value = { username: '', password: '' }
     }
 
+    const toggleAdminDropdown = () => {
+      showAdminDropdown.value = !showAdminDropdown.value
+    }
+
+    // Close dropdown when clicking outside
+    const handleClickOutside = (event) => {
+      if (!event.target.closest('.admin-dropdown')) {
+        showAdminDropdown.value = false
+      }
+    }
+
+    // Add event listener on mount
+    onMounted(() => {
+      document.addEventListener('click', handleClickOutside)
+    })
+    
+    onUnmounted(() => {
+      document.removeEventListener('click', handleClickOutside)
+    })
+
     return {
       user,
       isAuthenticated,
@@ -152,10 +186,12 @@ export default {
       loading,
       error,
       showLoginModal,
+      showAdminDropdown,
       loginForm,
       handleLogin,
       handleLogout,
-      closeModal
+      closeModal,
+      toggleAdminDropdown
     }
   }
 }
@@ -306,6 +342,65 @@ export default {
 }
 
 .nav-icon {
+  font-size: 1rem;
+}
+
+/* Admin Dropdown Styles */
+.admin-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-trigger {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 120px;
+}
+
+.dropdown-arrow {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  margin-top: 0.5rem;
+  overflow: hidden;
+  z-index: 1000;
+  min-width: 160px;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  text-decoration: none;
+  color: #4a5568;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.dropdown-item:hover {
+  background: #f7fafc;
+  color: #2d3748;
+}
+
+.dropdown-icon {
   font-size: 1rem;
 }
 
