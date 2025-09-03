@@ -394,7 +394,7 @@ export default {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   margin-top: 0.5rem;
   overflow: hidden;
-  z-index: 1000;
+  z-index: 9999;
   min-width: 160px;
 }
 
