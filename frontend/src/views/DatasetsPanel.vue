@@ -60,7 +60,7 @@
                 <span class="count-badge">{{ dataset.event_count }}</span>
               </td>
               <td class="dataset-uploader">
-                User {{ dataset.uploaded_by }}
+                {{ dataset.uploaded_by_username || `User ${dataset.uploaded_by}` }}
               </td>
               <td class="dataset-date">
                 {{ formatDate(dataset.created_at) }}

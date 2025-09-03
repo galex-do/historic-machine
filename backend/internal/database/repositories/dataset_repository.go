@@ -15,12 +15,14 @@ func NewDatasetRepository(db *sql.DB) *DatasetRepository {
         return &DatasetRepository{db: db}
 }
 
-// GetAll retrieves all datasets
+// GetAll retrieves all datasets with user information
 func (r *DatasetRepository) GetAll() ([]models.EventDataset, error) {
         query := `
-                SELECT id, filename, description, event_count, uploaded_by, created_at, updated_at
-                FROM event_datasets 
-                ORDER BY created_at DESC`
+                SELECT d.id, d.filename, d.description, d.event_count, d.uploaded_by, 
+                       d.created_at, d.updated_at, u.username
+                FROM event_datasets d
+                LEFT JOIN users u ON d.uploaded_by = u.id
+                ORDER BY d.created_at DESC`
         
         rows, err := r.db.Query(query)
         if err != nil {
@@ -32,11 +34,18 @@ func (r *DatasetRepository) GetAll() ([]models.EventDataset, error) {
         
         for rows.Next() {
                 var dataset models.EventDataset
+                var username sql.NullString
                 
                 err := rows.Scan(&dataset.ID, &dataset.Filename, &dataset.Description, 
-                        &dataset.EventCount, &dataset.UploadedBy, &dataset.CreatedAt, &dataset.UpdatedAt)
+                        &dataset.EventCount, &dataset.UploadedBy, &dataset.CreatedAt, &dataset.UpdatedAt, &username)
                 if err != nil {
                         return nil, fmt.Errorf("error scanning dataset: %w", err)
+                }
+                
+                if username.Valid {
+                        dataset.UploadedByUsername = username.String
+                } else {
+                        dataset.UploadedByUsername = "Unknown User"
                 }
                 
                 datasets = append(datasets, dataset)
