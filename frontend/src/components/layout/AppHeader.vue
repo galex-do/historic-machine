@@ -3,6 +3,28 @@
     <div class="header-content">
       <h1>Historia ex machina</h1>
       
+      <!-- Navigation Menu -->
+      <nav class="main-nav" v-if="isAuthenticated">
+        <router-link 
+          to="/" 
+          class="nav-link" 
+          active-class="nav-link-active"
+          exact-active-class="nav-link-active"
+        >
+          <span class="nav-icon">🗺️</span>
+          Map
+        </router-link>
+        <router-link 
+          v-if="canAccessAdmin" 
+          to="/admin" 
+          class="nav-link" 
+          active-class="nav-link-active"
+        >
+          <span class="nav-icon">⚙️</span>
+          Admin
+        </router-link>
+      </nav>
+      
       <div class="auth-section">
         <!-- Guest user (not logged in) -->
         <div v-if="isGuest" class="auth-buttons">
@@ -18,6 +40,7 @@
             Welcome, <strong>{{ user?.username }}</strong>
             <span v-if="user?.access_level === 'super'" class="access-badge super">SUPER</span>
             <span v-else-if="user?.access_level === 'admin'" class="access-badge admin">ADMIN</span>
+            <span v-else-if="user?.access_level === 'editor'" class="access-badge editor">EDITOR</span>
           </span>
           <button @click="handleLogout" class="auth-btn logout-btn" :disabled="loading">
             <span class="auth-icon">🚪</span>
@@ -87,7 +110,7 @@ import { useAuth } from '@/composables/useAuth.js'
 export default {
   name: 'AppHeader',
   setup() {
-    const { user, isAuthenticated, isGuest, loading, error, login, logout, clearError } = useAuth()
+    const { user, isAuthenticated, isGuest, canAccessAdmin, loading, error, login, logout, clearError } = useAuth()
     
     const showLoginModal = ref(false)
     const loginForm = ref({
@@ -125,6 +148,7 @@ export default {
       user,
       isAuthenticated,
       isGuest,
+      canAccessAdmin,
       loading,
       error,
       showLoginModal,
@@ -151,6 +175,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
 }
 
 .app-header h1 {
@@ -197,6 +222,11 @@ export default {
   color: white;
 }
 
+.access-badge.editor {
+  background: #38a169;
+  color: white;
+}
+
 .auth-btn {
   display: flex;
   align-items: center;
@@ -239,6 +269,43 @@ export default {
 }
 
 .auth-icon {
+  font-size: 1rem;
+}
+
+/* Navigation styles */
+.main-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-link:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+.nav-link-active {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.nav-icon {
   font-size: 1rem;
 }
 
