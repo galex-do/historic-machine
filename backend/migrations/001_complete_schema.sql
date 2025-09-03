@@ -1,6 +1,35 @@
 -- +goose Up
 -- Complete database schema for Historical Events Mapping
 
+-- Create users table for authentication
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(100) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    access_level VARCHAR(20) DEFAULT 'guest' CHECK (access_level IN ('guest', 'user', 'editor', 'super')),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Create tags table
+CREATE TABLE tags (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL UNIQUE,
+    description TEXT,
+    color VARCHAR(7) DEFAULT '#3B82F6',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Create event_datasets table
+CREATE TABLE event_datasets (
+    id SERIAL PRIMARY KEY,
+    filename VARCHAR(255) NOT NULL,
+    description TEXT,
+    event_count INTEGER DEFAULT 0,
+    uploaded_by INTEGER REFERENCES users(id) ON DELETE SET NULL,
+    uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
 -- Create events table with all necessary columns
 CREATE TABLE events (
     id SERIAL PRIMARY KEY,
@@ -11,6 +40,7 @@ CREATE TABLE events (
     event_date DATE NOT NULL,
     era VARCHAR(2) DEFAULT 'AD' CHECK (era IN ('BC', 'AD')),
     lens_type VARCHAR(50) NOT NULL,
+    dataset_id INTEGER REFERENCES event_datasets(id) ON DELETE SET NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
@@ -38,15 +68,31 @@ CREATE TABLE date_templates (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+-- Create event_tags junction table
+CREATE TABLE event_tags (
+    event_id INTEGER REFERENCES events(id) ON DELETE CASCADE,
+    tag_id INTEGER REFERENCES tags(id) ON DELETE CASCADE,
+    PRIMARY KEY (event_id, tag_id)
+);
+
 -- Create indexes
 CREATE INDEX idx_events_date ON events(event_date);
 CREATE INDEX idx_events_lens_type ON events(lens_type);
 CREATE INDEX idx_events_era ON events(era);
 CREATE INDEX idx_events_location ON events(latitude, longitude);
+CREATE INDEX idx_events_dataset ON events(dataset_id);
 CREATE INDEX idx_date_templates_group_id ON date_templates(group_id);
 CREATE INDEX idx_date_templates_dates ON date_templates(start_date, end_date);
 CREATE INDEX idx_date_template_groups_order ON date_template_groups(display_order);
 CREATE INDEX idx_date_templates_order ON date_templates(display_order);
+CREATE INDEX idx_event_tags_event ON event_tags(event_id);
+CREATE INDEX idx_event_tags_tag ON event_tags(tag_id);
+CREATE INDEX idx_users_username ON users(username);
+CREATE INDEX idx_tags_name ON tags(name);
+
+-- Insert default admin user
+INSERT INTO users (username, password_hash, access_level) VALUES 
+('scriptor', '$2a$10$example.hash.for.development', 'super');
 
 -- Insert sample historical events
 INSERT INTO events (name, description, latitude, longitude, event_date, era, lens_type) VALUES 
@@ -221,7 +267,7 @@ FROM date_templates dt
 JOIN date_template_groups dtg ON dt.group_id = dtg.id
 ORDER BY dtg.display_order, dt.display_order;
 
--- Create view for events with display dates  
+-- Create view for events with display dates and tags
 CREATE OR REPLACE VIEW events_with_display_dates AS
 SELECT 
     e.*,
@@ -242,13 +288,32 @@ SELECT
     CASE 
         WHEN e.era = 'BC' THEN (EXTRACT(YEAR FROM e.event_date) * -1) + 1
         ELSE EXTRACT(YEAR FROM e.event_date)
-    END AS astronomical_year
+    END AS astronomical_year,
+    -- Include aggregated tags as JSON
+    COALESCE(
+        JSON_AGG(
+            JSON_BUILD_OBJECT(
+                'id', t.id,
+                'name', t.name,
+                'description', t.description,
+                'color', t.color
+            )
+        ) FILTER (WHERE t.id IS NOT NULL),
+        '[]'::json
+    ) AS tags
 FROM events e
+LEFT JOIN event_tags et ON e.id = et.event_id
+LEFT JOIN tags t ON et.tag_id = t.id
+GROUP BY e.id, e.name, e.description, e.latitude, e.longitude, e.event_date, e.era, e.lens_type, e.dataset_id, e.created_at, e.updated_at
 ORDER BY astronomical_year ASC;
 
 -- +goose Down
 DROP VIEW IF EXISTS events_with_display_dates;
 DROP VIEW IF EXISTS date_templates_with_display;
+DROP TABLE IF EXISTS event_tags;
 DROP TABLE IF EXISTS date_templates;
 DROP TABLE IF EXISTS date_template_groups;
 DROP TABLE IF EXISTS events;
+DROP TABLE IF EXISTS event_datasets;
+DROP TABLE IF EXISTS tags;
+DROP TABLE IF EXISTS users;
