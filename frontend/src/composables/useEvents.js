@@ -99,6 +99,33 @@ export function useEvents() {
     console.log('Events list refreshed after new event creation')
   }
 
+  // Handle event update (preserves current filter state)
+  const handleEventUpdated = async (updatedEvent) => {
+    // Update the event in the current events array
+    const eventIndex = events.value.findIndex(e => e.id === updatedEvent.id)
+    if (eventIndex !== -1) {
+      events.value[eventIndex] = updatedEvent
+      console.log('Event updated in place:', updatedEvent.name)
+      
+      // Update filtered events array if this event is currently visible
+      const filteredIndex = filteredEvents.value.findIndex(e => e.id === updatedEvent.id)
+      if (filteredIndex !== -1) {
+        filteredEvents.value[filteredIndex] = updatedEvent
+      }
+    } else {
+      console.warn('Event not found for update:', updatedEvent.id)
+    }
+  }
+
+  // Handle event deletion
+  const handleEventDeleted = async (deletedEventId) => {
+    // Remove from events array
+    events.value = events.value.filter(e => e.id !== deletedEventId)
+    // Remove from filtered events array  
+    filteredEvents.value = filteredEvents.value.filter(e => e.id !== deletedEventId)
+    console.log('Event removed from arrays:', deletedEventId)
+  }
+
   return {
     events: computed(() => events.value),
     filteredEvents: computed(() => filteredEvents.value),
@@ -106,6 +133,8 @@ export function useEvents() {
     error: computed(() => error.value),
     fetchEvents,
     filterEvents,
-    handleEventCreated
+    handleEventCreated,
+    handleEventUpdated,
+    handleEventDeleted
   }
 }

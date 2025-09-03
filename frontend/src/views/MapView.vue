@@ -47,8 +47,8 @@
           :events="filteredEvents" 
           :focus-event="focusEvent"
           @event-created="handleEventCreated"
-          @event-updated="handleEventCreated"
-          @event-deleted="handleEventCreated"
+          @event-updated="handleEventUpdated"
+          @event-deleted="handleEventDeleted"
         />
       </main>
     </div>
@@ -82,7 +82,9 @@ export default {
       filteredEvents, 
       fetchEvents, 
       filterEvents, 
-      handleEventCreated 
+      handleEventCreated,
+      handleEventUpdated,
+      handleEventDeleted
     } = useEvents()
 
     const {
@@ -222,6 +224,8 @@ export default {
       // Events
       filteredEvents,
       handleEventCreated,
+      handleEventUpdated,
+      handleEventDeleted,
 
       // Templates
       templateGroups,
