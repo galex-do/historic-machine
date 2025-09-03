@@ -115,7 +115,7 @@ export default {
     },
     focusEvent: {
       handler(new_focus_event) {
-        if (new_focus_event && this.map) {
+        if (new_focus_event && this.map && !this.is_editing_in_progress) {
           this.center_on_event(new_focus_event)
         }
       },
