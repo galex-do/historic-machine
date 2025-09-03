@@ -236,29 +236,25 @@ export default {
       
       // Wait for next tick to ensure map is ready
       this.$nextTick(() => {
-        // Add markers for each event with emoji icons
-        this.events.forEach(event => {
-          if (!event.latitude || !event.longitude || !this.map) return
+        // Group events by location (same coordinates)
+        const locationGroups = this.group_events_by_location(this.events)
+        
+        // Add markers for each location group
+        Object.values(locationGroups).forEach(eventGroup => {
+          if (!eventGroup.latitude || !eventGroup.longitude || !this.map) return
           
-          const emoji_icon = this.create_emoji_marker_icon(event.lens_type)
-          const marker = L.marker([event.latitude, event.longitude], { 
+          const emoji_icon = this.create_emoji_marker_icon(
+            eventGroup.events.length > 1 ? 'multiple' : eventGroup.events[0].lens_type
+          )
+          
+          const marker = L.marker([eventGroup.latitude, eventGroup.longitude], { 
             icon: emoji_icon,
             riseOnHover: true
           }).addTo(this.map)
           
-          // Add popup with event information
-          const editButton = this.canEditEvents ? 
-            `<button onclick="window.editEvent(${event.id})" class="edit-btn">✏️ Edit</button>` : ''
-          
-          marker.bindPopup(`
-            <div class="event-popup">
-              <h4>${event.name}</h4>
-              <p>${event.description}</p>
-              <p><strong>Date:</strong> ${event.display_date || this.format_date(event.event_date)}</p>
-              <p><strong>Type:</strong> ${event.lens_type}</p>
-              ${editButton}
-            </div>
-          `)
+          // Create popup content for single or multiple events
+          const popupContent = this.create_popup_content(eventGroup.events)
+          marker.bindPopup(popupContent)
           
           this.markers.push(marker)
         })
@@ -527,7 +523,7 @@ export default {
         'cultural': '🎭'      // Theater masks
       }
       
-      const emoji = emoji_map[lens_type] || '📍' // Default location pin
+      const emoji = emoji_map[lens_type] || '📍' // Default location pin (also for multiple events)
       
       return L.divIcon({
         html: `<div class="emoji-marker" data-lens="${lens_type}">${emoji}</div>`,
@@ -538,6 +534,80 @@ export default {
         // Ensure proper positioning
         bgPos: [15, 30]
       })
+    },
+
+    group_events_by_location(events) {
+      const groups = {}
+      const tolerance = 0.0001 // Small tolerance for coordinate matching
+      
+      events.forEach(event => {
+        if (!event.latitude || !event.longitude) return
+        
+        // Create a location key with rounded coordinates
+        const lat = Math.round(event.latitude / tolerance) * tolerance
+        const lng = Math.round(event.longitude / tolerance) * tolerance
+        const locationKey = `${lat},${lng}`
+        
+        if (!groups[locationKey]) {
+          groups[locationKey] = {
+            latitude: event.latitude,
+            longitude: event.longitude,
+            events: []
+          }
+        }
+        
+        groups[locationKey].events.push(event)
+      })
+      
+      return groups
+    },
+
+    create_popup_content(events) {
+      if (events.length === 1) {
+        const event = events[0]
+        const editIcon = this.canEditEvents ? 
+          `<span onclick="window.editEvent(${event.id})" class="edit-icon" title="Edit event">✏️</span>` : ''
+        
+        return `
+          <div class="event-popup">
+            <div class="event-header">
+              <h4>${event.name}</h4>
+              ${editIcon}
+            </div>
+            <p>${event.description}</p>
+            <p><strong>Date:</strong> ${event.display_date || this.format_date(event.event_date)}</p>
+            <p><strong>Type:</strong> ${event.lens_type}</p>
+          </div>
+        `
+      } else {
+        // Multiple events at same location
+        const eventsHtml = events.map((event, index) => {
+          const editIcon = this.canEditEvents ? 
+            `<span onclick="window.editEvent(${event.id})" class="edit-icon" title="Edit event">✏️</span>` : ''
+          
+          return `
+            <div class="event-item">
+              <div class="event-header">
+                <h4>${event.name}</h4>
+                ${editIcon}
+              </div>
+              <p>${event.description}</p>
+              <p><strong>Date:</strong> ${event.display_date || this.format_date(event.event_date)}</p>
+              <p><strong>Type:</strong> ${event.lens_type}</p>
+              ${index < events.length - 1 ? '<div class="event-divider"></div>' : ''}
+            </div>
+          `
+        }).join('')
+        
+        return `
+          <div class="event-popup multi-event">
+            <div class="popup-header">
+              <h3>${events.length} Events at this location</h3>
+            </div>
+            ${eventsHtml}
+          </div>
+        `
+      }
     }
   }
 }
@@ -721,20 +791,58 @@ export default {
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
 }
 
-/* Edit button styling in popup */
-:deep(.edit-btn) {
-  background: #007bff;
-  color: white;
-  border: none;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 12px;
-  cursor: pointer;
-  margin-top: 8px;
-  display: inline-block;
+/* Event popup header */
+:deep(.event-header) {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
 }
 
-:deep(.edit-btn:hover) {
-  background: #0056b3;
+:deep(.event-header h4) {
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Edit icon styling in popup */
+:deep(.edit-icon) {
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+:deep(.edit-icon:hover) {
+  opacity: 1;
+}
+
+/* Multi-event popup styling */
+:deep(.multi-event) {
+  max-width: 300px;
+}
+
+:deep(.popup-header h3) {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  color: #2c3e50;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+:deep(.event-item) {
+  margin-bottom: 12px;
+}
+
+:deep(.event-item:last-child) {
+  margin-bottom: 0;
+}
+
+:deep(.event-divider) {
+  height: 1px;
+  background: #eee;
+  margin: 12px 0;
 }
 </style>
