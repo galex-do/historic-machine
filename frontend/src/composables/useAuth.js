@@ -5,6 +5,7 @@ const user = ref(null)
 const isAuthenticated = ref(false)
 const loading = ref(false)
 const error = ref(null)
+const authInitialized = ref(false)
 
 export function useAuth() {
   
@@ -34,6 +35,7 @@ export function useAuth() {
       isAuthenticated.value = false
     } finally {
       loading.value = false
+      authInitialized.value = true
     }
   }
 
@@ -141,6 +143,7 @@ export function useAuth() {
     isAuthenticated: computed(() => isAuthenticated.value),
     loading: computed(() => loading.value),
     error: computed(() => error.value),
+    authInitialized: computed(() => authInitialized.value),
     
     // Computed permissions
     isGuest,

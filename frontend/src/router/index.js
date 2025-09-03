@@ -25,9 +25,20 @@ const router = createRouter({
 })
 
 // Navigation guard for admin routes
-router.beforeEach((to, from, next) => {
+router.beforeEach(async (to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAdmin)) {
-    const { canAccessAdmin } = useAuth()
+    const { canAccessAdmin, loading, authInitialized, initAuth } = useAuth()
+    
+    // If authentication hasn't been initialized yet, initialize it
+    if (!authInitialized.value && !loading.value) {
+      await initAuth()
+    }
+    
+    // Wait for authentication initialization to complete
+    while (loading.value) {
+      await new Promise(resolve => setTimeout(resolve, 50))
+    }
+    
     if (canAccessAdmin.value) {
       next()
     } else {
