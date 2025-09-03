@@ -267,7 +267,9 @@ export default {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.625rem 1rem;
+  height: 40px;
+  box-sizing: border-box;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -319,7 +321,9 @@ export default {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.625rem 1rem;
+  height: 40px;
+  box-sizing: border-box;
   border-radius: 6px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
@@ -356,6 +360,9 @@ export default {
   align-items: center;
   justify-content: space-between;
   min-width: 120px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 0.625rem 1rem;
 }
 
 .dropdown-arrow {
