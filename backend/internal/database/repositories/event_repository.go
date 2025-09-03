@@ -105,7 +105,7 @@ func (r *EventRepository) GetByID(id int) (*models.HistoricalEvent, error) {
 func (r *EventRepository) Create(event *models.HistoricalEvent) (*models.HistoricalEvent, error) {
         query := `
                 INSERT INTO events (name, description, latitude, longitude, event_date, era, lens_type) 
-                VALUES ($1, $2, $3, $4, $5, $6, $7) 
+                VALUES ($1, $2, $3::double precision, $4::double precision, $5, $6, $7) 
                 RETURNING id`
         
         var createdEvent = *event
@@ -166,9 +166,9 @@ func (r *EventRepository) GetInBoundingBox(minLat, minLng, maxLat, maxLng float6
 func (r *EventRepository) Update(event *models.HistoricalEvent) (*models.HistoricalEvent, error) {
         query := `
                 UPDATE events 
-                SET name = $2, description = $3, latitude = $4, longitude = $5, 
+                SET name = $2, description = $3, latitude = $4::double precision, longitude = $5::double precision, 
                     event_date = $6, era = $7, lens_type = $8,
-                    location = ST_SetSRID(ST_MakePoint($5, $4), 4326)
+                    location = ST_SetSRID(ST_MakePoint($5::double precision, $4::double precision), 4326)
                 WHERE id = $1
                 RETURNING id, name, description, latitude, longitude, event_date, era, lens_type`
         
