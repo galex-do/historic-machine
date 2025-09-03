@@ -1,16 +1,51 @@
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 import apiService from '@/services/api.js'
 import { formatHistoricalDate } from '@/utils/date-utils.js'
+
+// Session storage keys for templates
+const TEMPLATE_STORAGE_KEYS = {
+  SELECTED_TEMPLATE_GROUP_ID: 'historia_selected_template_group_id',
+  SELECTED_TEMPLATE_ID: 'historia_selected_template_id'
+}
+
+// Load template state from session storage
+const loadTemplateFromStorage = (key, defaultValue) => {
+  try {
+    const stored = sessionStorage.getItem(key)
+    return stored ? JSON.parse(stored) : defaultValue
+  } catch (error) {
+    console.warn('Error loading template from session storage:', error)
+    return defaultValue
+  }
+}
+
+// Save template state to session storage
+const saveTemplateToStorage = (key, value) => {
+  try {
+    sessionStorage.setItem(key, JSON.stringify(value))
+  } catch (error) {
+    console.warn('Error saving template to session storage:', error)
+  }
+}
 
 // Shared state - singleton pattern
 const templateGroups = ref([])
 const availableTemplates = ref([])
-const selectedTemplateGroupId = ref('')
-const selectedTemplateId = ref('')
+const selectedTemplateGroupId = ref(loadTemplateFromStorage(TEMPLATE_STORAGE_KEYS.SELECTED_TEMPLATE_GROUP_ID, ''))
+const selectedTemplateId = ref(loadTemplateFromStorage(TEMPLATE_STORAGE_KEYS.SELECTED_TEMPLATE_ID, ''))
 const loading = ref(false)
 const error = ref(null)
 
 export function useTemplates() {
+
+  // Setup watchers to save template state to session storage
+  watch(selectedTemplateGroupId, (newValue) => {
+    saveTemplateToStorage(TEMPLATE_STORAGE_KEYS.SELECTED_TEMPLATE_GROUP_ID, newValue)
+  })
+
+  watch(selectedTemplateId, (newValue) => {
+    saveTemplateToStorage(TEMPLATE_STORAGE_KEYS.SELECTED_TEMPLATE_ID, newValue)
+  })
 
   // Computed to get selected template object
   const selectedTemplate = computed(() => {

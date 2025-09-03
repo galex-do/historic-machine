@@ -1,19 +1,69 @@
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 import { parseDDMMYYYYToISO, formatDateToDDMMYYYY, getTodayISO, parseHistoricalDate, formatHistoricalDate, historicalDateToISO } from '@/utils/date-utils.js'
 import { getAvailableLensTypes } from '@/utils/event-utils.js'
 
-// Shared state - singleton pattern  
-// Date filtering state (always showing both fields)
-const dateFrom = ref('0001-01-01')
-const dateTo = ref(getTodayISO())
-const dateFromDisplay = ref('1 AD')
-const dateToDisplay = ref('2025 AD')
+// Session storage keys
+const STORAGE_KEYS = {
+  DATE_FROM: 'historia_date_from',
+  DATE_TO: 'historia_date_to', 
+  DATE_FROM_DISPLAY: 'historia_date_from_display',
+  DATE_TO_DISPLAY: 'historia_date_to_display',
+  SELECTED_LENS_TYPES: 'historia_selected_lens_types'
+}
 
-// Lens type filtering state
-const selectedLensTypes = ref(['historic', 'political', 'cultural', 'military']) // All selected by default
+// Load filter state from session storage
+const loadFromStorage = (key, defaultValue) => {
+  try {
+    const stored = sessionStorage.getItem(key)
+    return stored ? JSON.parse(stored) : defaultValue
+  } catch (error) {
+    console.warn('Error loading from session storage:', error)
+    return defaultValue
+  }
+}
+
+// Save filter state to session storage
+const saveToStorage = (key, value) => {
+  try {
+    sessionStorage.setItem(key, JSON.stringify(value))
+  } catch (error) {
+    console.warn('Error saving to session storage:', error)
+  }
+}
+
+// Shared state - singleton pattern  
+// Date filtering state (load from session storage or use defaults)
+const dateFrom = ref(loadFromStorage(STORAGE_KEYS.DATE_FROM, '0001-01-01'))
+const dateTo = ref(loadFromStorage(STORAGE_KEYS.DATE_TO, getTodayISO()))
+const dateFromDisplay = ref(loadFromStorage(STORAGE_KEYS.DATE_FROM_DISPLAY, '1 AD'))
+const dateToDisplay = ref(loadFromStorage(STORAGE_KEYS.DATE_TO_DISPLAY, '2025 AD'))
+
+// Lens type filtering state (load from session storage or use all types as default)
+const selectedLensTypes = ref(loadFromStorage(STORAGE_KEYS.SELECTED_LENS_TYPES, ['historic', 'political', 'cultural', 'military']))
 const showLensDropdown = ref(false)
 
 export function useFilters() {
+
+  // Setup watchers to save filter state to session storage
+  watch(dateFrom, (newValue) => {
+    saveToStorage(STORAGE_KEYS.DATE_FROM, newValue)
+  })
+
+  watch(dateTo, (newValue) => {
+    saveToStorage(STORAGE_KEYS.DATE_TO, newValue)
+  })
+
+  watch(dateFromDisplay, (newValue) => {
+    saveToStorage(STORAGE_KEYS.DATE_FROM_DISPLAY, newValue)
+  })
+
+  watch(dateToDisplay, (newValue) => {
+    saveToStorage(STORAGE_KEYS.DATE_TO_DISPLAY, newValue)
+  })
+
+  watch(selectedLensTypes, (newValue) => {
+    saveToStorage(STORAGE_KEYS.SELECTED_LENS_TYPES, newValue)
+  }, { deep: true })
 
   // Available lens types
   const availableLensTypes = computed(() => getAvailableLensTypes())

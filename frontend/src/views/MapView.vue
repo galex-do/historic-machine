@@ -73,9 +73,28 @@ export default {
     EventsGrid
   },
   setup() {
-    // Sidebar state
-    const sidebarCollapsed = ref(false)
+    // Sidebar state with session storage
+    const SIDEBAR_STORAGE_KEY = 'historia_sidebar_collapsed'
+    const loadSidebarState = () => {
+      try {
+        const stored = sessionStorage.getItem(SIDEBAR_STORAGE_KEY)
+        return stored ? JSON.parse(stored) : false
+      } catch (error) {
+        return false
+      }
+    }
+    
+    const sidebarCollapsed = ref(loadSidebarState())
     const focusEvent = ref(null)
+    
+    // Save sidebar state to session storage
+    watch(sidebarCollapsed, (newValue) => {
+      try {
+        sessionStorage.setItem(SIDEBAR_STORAGE_KEY, JSON.stringify(newValue))
+      } catch (error) {
+        console.warn('Error saving sidebar state:', error)
+      }
+    })
 
     // Composables
     const { 
