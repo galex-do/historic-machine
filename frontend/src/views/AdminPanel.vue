@@ -368,6 +368,20 @@ export default {
       return luminance > 0.5 ? '#000000' : '#ffffff'
     }
 
+    const formatDateToDDMMYYYY = (isoDateString) => {
+      if (!isoDateString) return ''
+      
+      try {
+        const date = new Date(isoDateString)
+        const day = String(date.getUTCDate()).padStart(2, '0')
+        const month = String(date.getUTCMonth() + 1).padStart(2, '0')
+        const year = String(date.getUTCFullYear()).padStart(4, '0')
+        return `${day}/${month}/${year}`
+      } catch {
+        return ''
+      }
+    }
+
     const parseDDMMYYYYToISO = (dateDisplay) => {
       if (!dateDisplay) return null
       
@@ -406,7 +420,7 @@ export default {
       eventForm.value = {
         name: event.name,
         description: event.description,
-        date_display: event.display_date || formatDate(event.event_date),
+        date_display: formatDateToDDMMYYYY(event.event_date),
         date: event.event_date,
         era: event.era || 'AD',
         latitude: event.latitude,
@@ -619,6 +633,7 @@ export default {
       fetchEvents,
       formatDate,
       formatDateWithEra,
+      formatDateToDDMMYYYY,
       getContrastColor,
       updateEventDate,
       editEvent,
