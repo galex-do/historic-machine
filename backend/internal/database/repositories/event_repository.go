@@ -167,8 +167,7 @@ func (r *EventRepository) Update(event *models.HistoricalEvent) (*models.Histori
         query := `
                 UPDATE events 
                 SET name = $2, description = $3, latitude = $4::double precision, longitude = $5::double precision, 
-                    event_date = $6, era = $7, lens_type = $8,
-                    location = ST_SetSRID(ST_MakePoint($5::double precision, $4::double precision), 4326)
+                    event_date = $6, era = $7, lens_type = $8
                 WHERE id = $1
                 RETURNING id, name, description, latitude, longitude, event_date, era, lens_type`
         
