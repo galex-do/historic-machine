@@ -42,8 +42,8 @@ func (router *Router) SetupRoutes() http.Handler {
         api.HandleFunc("/auth/login", router.authHandler.Login).Methods("POST", "OPTIONS")
         api.HandleFunc("/auth/register", router.authHandler.Register).Methods("POST", "OPTIONS")
         api.HandleFunc("/auth/logout", router.authHandler.Logout).Methods("POST", "OPTIONS")
-        api.HandleFunc("/auth/me", router.authHandler.Me).Methods("GET", "OPTIONS")
-        api.HandleFunc("/auth/change-password", router.authHandler.ChangePassword).Methods("POST", "OPTIONS")
+        api.HandleFunc("/auth/me", router.authHandler.AuthMiddleware(router.authHandler.Me)).Methods("GET", "OPTIONS")
+        api.HandleFunc("/auth/change-password", router.authHandler.AuthMiddleware(router.authHandler.ChangePassword)).Methods("POST", "OPTIONS")
         
         // Event routes (public read, auth required for create/update/delete)
         api.HandleFunc("/events", router.authHandler.OptionalAuthMiddleware(router.eventHandler.GetAllEvents)).Methods("GET", "OPTIONS")
