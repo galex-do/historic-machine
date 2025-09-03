@@ -669,31 +669,33 @@ export default {
             bValue = b.name.toLowerCase()
             break
           case 'date':
-            // Handle BC/AD dates chronologically
+            // Handle BC/AD dates chronologically with full date comparison
             // For BC: smaller year = more recent (25 BC is after 500 BC)
             // For AD: larger year = more recent (500 AD is after 25 AD)
             
-            const aYear = parseInt(a.event_date.split('-')[0], 10)
-            const bYear = parseInt(b.event_date.split('-')[0], 10)
+            const aDate = new Date(a.event_date)
+            const bDate = new Date(b.event_date)
             
             // Both BC dates
             if (a.era === 'BC' && b.era === 'BC') {
-              aValue = -aYear // Reverse BC years (larger year = older)
-              bValue = -bYear
+              // For BC dates, reverse the time value (older dates get smaller values)
+              aValue = -aDate.getTime()
+              bValue = -bDate.getTime()
             }
             // Both AD dates  
             else if (a.era === 'AD' && b.era === 'AD') {
-              aValue = aYear // Normal AD years (larger year = newer)
-              bValue = bYear
+              // For AD dates, use normal time values
+              aValue = aDate.getTime()
+              bValue = bDate.getTime()
             }
             // Mixed BC/AD: BC always comes before AD
             else if (a.era === 'BC' && b.era === 'AD') {
-              aValue = -10000 // BC is always "smaller" (older)
-              bValue = bYear
+              aValue = -aDate.getTime() - 100000000000000 // BC is always older
+              bValue = bDate.getTime()
             }
             else if (a.era === 'AD' && b.era === 'BC') {
-              aValue = aYear
-              bValue = -10000 // BC is always "smaller" (older)
+              aValue = aDate.getTime()
+              bValue = -bDate.getTime() - 100000000000000 // BC is always older
             }
             break
           case 'type':

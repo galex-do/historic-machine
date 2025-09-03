@@ -41,7 +41,7 @@ export function useEvents() {
       events.value = []
     }
     
-    filteredEvents.value = events.value.filter(event => {
+    let tempFilteredEvents = events.value.filter(event => {
       // Parse filter dates to understand BC/AD for comparison
       const fromDate = parseHistoricalDate(dateFromDisplay) // Use display value to get proper BC/AD
       const toDate = parseHistoricalDate(dateToDisplay)
@@ -90,6 +90,30 @@ export function useEvents() {
       
       return true
     })
+    
+    // Sort events chronologically (oldest to newest)
+    tempFilteredEvents.sort((a, b) => {
+      const aDate = new Date(a.event_date)
+      const bDate = new Date(b.event_date)
+      
+      // Handle BC/AD chronological sorting
+      if (a.era === 'BC' && b.era === 'BC') {
+        // For BC: reverse order (larger year = older)
+        return -aDate.getTime() - (-bDate.getTime())
+      } else if (a.era === 'AD' && b.era === 'AD') {
+        // For AD: normal order (larger year = newer)
+        return aDate.getTime() - bDate.getTime()
+      } else if (a.era === 'BC' && b.era === 'AD') {
+        // BC always comes before AD
+        return -1
+      } else if (a.era === 'AD' && b.era === 'BC') {
+        // AD always comes after BC
+        return 1
+      }
+      return 0
+    })
+    
+    filteredEvents.value = tempFilteredEvents
     
     const lensFilterText = selectedLensTypes.length === 4 ? 'all types' : selectedLensTypes.join(', ')
     console.log(`Filtering events from ${dateFrom} to ${dateTo} for lens types: ${lensFilterText}. Found ${filteredEvents.value.length} events.`)
