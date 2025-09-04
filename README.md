@@ -17,84 +17,88 @@ A comprehensive web application for mapping historical events featuring interact
 
 - **Backend**: Go with Gorilla Mux router
 - **Frontend**: Vue.js 3 with Vite and Vue Router
-- **Database**: PostgreSQL with comprehensive schema
+- **Database**: PostgreSQL with PostGIS extensions
 - **Authentication**: JWT tokens with bcrypt password hashing
-- **Migrations**: Goose migration tool
+- **Deployment**: Docker Compose with multi-container setup
 
 ## Quick Start
 
 ### Prerequisites
-- Go 1.19+
-- Node.js 18+
-- PostgreSQL database
-- Environment variables: `DATABASE_URL`, `JWT_SECRET`
+- Docker
+- Docker Compose
+- Make (optional, for convenience commands)
 
-### Setup
+### Deployment with Docker Compose
 
-1. **Install dependencies:**
+1. **Clone and start services**:
 ```bash
-# Backend
-cd backend && go mod download
-
-# Frontend  
-cd frontend && npm install
+make up
+# Or manually: docker compose up -d
 ```
 
-2. **Database setup:**
+2. **Run database migrations**:
 ```bash
-# Run migrations to create complete schema
-cd backend && goose postgres $DATABASE_URL up
+make migrate
+# Or manually: docker compose exec backend goose -dir migrations postgres "postgres://postgres:password@db:5432/historical_events?sslmode=disable" up
 ```
 
 3. **Create admin user** (choose one method):
-
-**Method 1: Using PostgreSQL with bcrypt**
 ```bash
-# Connect to database
-psql $DATABASE_URL
+# Method 1: Direct database insert (recommended)
+docker compose exec db psql -U postgres -d historical_events -c \
+  "INSERT INTO users (username, password_hash, access_level) VALUES 
+   ('admin', crypt('your_secure_password', gen_salt('bf', 12)), 'super');"
 
-# Create admin user (replace 'your_secure_password' with actual password)
-INSERT INTO users (username, password_hash, access_level) VALUES 
-('admin', crypt('your_secure_password', gen_salt('bf', 12)), 'super');
-```
-
-**Method 2: Using registration API**
-```bash
-# Start backend server first
-cd backend && go run main.go
-
-# Register admin user via API
+# Method 2: Using registration API
 curl -X POST http://localhost:8080/api/auth/register \
   -H "Content-Type: application/json" \
-  -d '{
-    "username": "admin",
-    "password": "your_secure_password", 
-    "access_level": "super"
-  }'
+  -d '{"username":"admin","password":"your_secure_password","access_level":"super"}'
+
+# Method 3: Interactive database session
+make db-shell
+# Then run SQL commands interactively
 ```
 
-**Method 3: Generate hash manually**
+4. **Access the application**:
+- **Frontend**: http://localhost:3000
+- **Backend API**: http://localhost:8080/api
+- **Database**: localhost:5432
+
+### Development Mode
+
+For development with hot reload:
+
+1. **Start only the database**:
 ```bash
-# Generate bcrypt hash
-htpasswd -bnBC 12 "" your_password | cut -d: -f2
-
-# Insert with generated hash
-psql $DATABASE_URL -c "INSERT INTO users (username, password_hash, access_level) VALUES ('admin', '\$2a\$12\$generated_hash', 'super');"
+make dev
+# Or: docker compose up -d db
 ```
 
-4. **Start the application:**
+2. **Run backend locally**:
 ```bash
-# Terminal 1: Backend
-cd backend && go run main.go
-
-# Terminal 2: Frontend  
-cd frontend && npm run dev
+cd backend
+go run main.go
 ```
 
-5. **Access the application:**
-- Frontend: http://localhost:5000
-- Backend API: http://localhost:8080/api
-- Login with your created admin credentials
+3. **Run frontend locally**:
+```bash
+cd frontend
+npm run dev
+```
+
+## Available Commands
+
+| Command | Description |
+|---------|-------------|
+| `make up` | Start all services with Docker Compose |
+| `make down` | Stop all services |
+| `make build` | Build Docker images |
+| `make logs` | Show service logs |
+| `make migrate` | Run database migrations |
+| `make dev` | Start development environment (DB only) |
+| `make admin-help` | Show admin user creation instructions |
+| `make db-shell` | Connect to database shell |
+| `make clean` | Clean up Docker resources |
 
 ## User Access Levels
 
@@ -148,21 +152,17 @@ Navigate through 5500+ years of history with 26 pre-configured templates across 
 ```
 ├── backend/                 # Go backend API
 │   ├── internal/           # Internal packages
-│   │   ├── handlers/       # HTTP handlers
-│   │   ├── services/       # Business logic
-│   │   ├── models/         # Data models
-│   │   └── database/       # Database layer
 │   ├── migrations/         # Database migrations
+│   ├── Dockerfile          # Backend container
 │   └── main.go            # Application entry point
 ├── frontend/              # Vue.js frontend
 │   ├── src/               # Source code
-│   │   ├── components/    # Vue components
-│   │   ├── views/         # Page views
-│   │   ├── composables/   # Vue composables
-│   │   └── utils/         # Utilities
-│   └── public/            # Static assets
-└── datasets/              # Historical event datasets
-    └── ancient_civilizations_pre_1000bc.json
+│   ├── Dockerfile         # Frontend container
+│   └── nginx.conf         # Nginx configuration
+├── datasets/              # Historical event datasets
+├── docker-compose.yml     # Service orchestration
+├── Makefile              # Build automation
+└── README.md             # This documentation
 ```
 
 ## Database Schema
@@ -170,26 +170,35 @@ Navigate through 5500+ years of history with 26 pre-configured templates across 
 The application includes a comprehensive database schema with:
 
 - **Events**: Core historical events with geo-temporal data
-- **Users**: Authentication with role-based access control
+- **Users**: Authentication with role-based access control  
 - **Tags**: Flexible tagging system with many-to-many relationships
 - **Datasets**: Organization and tracking of imported event collections
-- **Date Templates**: Pre-configured navigation periods
-- **Views**: Optimized queries with computed display dates
+- **Date Templates**: Pre-configured navigation periods for ancient civilizations
+- **Views**: Optimized queries with computed display dates and tag aggregation
+
+## Docker Services
+
+- **db**: PostgreSQL with PostGIS extensions (port 5432)
+- **backend**: Go API server (port 8080)
+- **frontend**: Vue.js app served by Nginx (port 3000)
+
+## Environment Variables
+
+Docker Compose automatically configures:
+- `DB_HOST=db`
+- `DB_PORT=5432`
+- `DB_USER=postgres`
+- `DB_PASSWORD=password`
+- `DB_NAME=historical_events`
+- `DB_SSL_MODE=disable`
 
 ## Contributing
 
 1. Use snake_case naming convention for all functions and variables
 2. Follow existing code patterns and project structure
 3. Keep database changes in migrations
-4. Update documentation as needed
-5. Test authentication and permission levels
-
-## Environment Variables
-
-Required environment variables:
-- `DATABASE_URL` - PostgreSQL connection string
-- `JWT_SECRET` - Secret key for JWT token signing
-- `PORT` - Server port (default: 8080)
+4. Test with Docker Compose deployment
+5. Update documentation as needed
 
 ## License
 
