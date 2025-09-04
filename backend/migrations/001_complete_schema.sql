@@ -90,10 +90,6 @@ CREATE INDEX idx_event_tags_tag ON event_tags(tag_id);
 CREATE INDEX idx_users_username ON users(username);
 CREATE INDEX idx_tags_name ON tags(name);
 
--- Insert default admin user
--- Password: "scriptor" (bcrypt hash with cost 12)
-INSERT INTO users (username, password_hash, access_level) VALUES 
-('scriptor', '$2a$12$dGEGdHMKkaoEwWFsV3gkQ.CQoIrXEtfgngZo6ZhfTWzR4belmCaqS', 'super');
 
 -- Insert sample historical events
 INSERT INTO events (name, description, latitude, longitude, event_date, era, lens_type) VALUES 
