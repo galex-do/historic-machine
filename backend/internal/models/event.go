@@ -1,6 +1,10 @@
 package models
 
-import "time"
+import (
+        "encoding/json"
+        "fmt"
+        "time"
+)
 
 // HistoricalEvent represents a historical event with geographical and temporal data
 type HistoricalEvent struct {
@@ -9,12 +13,42 @@ type HistoricalEvent struct {
         Description string    `json:"description"`
         Latitude    float64   `json:"latitude"`
         Longitude   float64   `json:"longitude"`
-        EventDate   time.Time `json:"event_date"`
+        EventDate   time.Time `json:"-"` // Don't auto-marshal this field
         Era         string    `json:"era"`
         LensType    string    `json:"lens_type"`
         DisplayDate string    `json:"display_date,omitempty"`
         DatasetID   *int      `json:"dataset_id,omitempty"`
         Tags        []Tag     `json:"tags,omitempty"`
+}
+
+// MarshalJSON custom JSON marshaler to handle BC dates properly
+func (e HistoricalEvent) MarshalJSON() ([]byte, error) {
+        // Create alias to avoid infinite recursion
+        type Alias HistoricalEvent
+        
+        // Convert EventDate to string format that can handle BC dates
+        var eventDateStr string
+        if e.Era == "BC" {
+                // For BC dates, use positive year with format YYYY-MM-DD
+                year := -(e.EventDate.Year() + 1)
+                eventDateStr = formatBCDate(year, e.EventDate.Month(), e.EventDate.Day())
+        } else {
+                // For AD dates, use standard formatting
+                eventDateStr = e.EventDate.Format("2006-01-02T15:04:05Z07:00")
+        }
+        
+        return json.Marshal(&struct {
+                EventDate string `json:"event_date"`
+                *Alias
+        }{
+                EventDate: eventDateStr,
+                Alias:     (*Alias)(&e),
+        })
+}
+
+// formatBCDate formats BC dates in a safe string format
+func formatBCDate(year int, month time.Month, day int) string {
+        return fmt.Sprintf("%04d-%02d-%02dT00:00:00Z", year, int(month), day)
 }
 
 // CreateEventRequest represents the request payload for creating an event
