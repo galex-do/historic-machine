@@ -5,10 +5,23 @@
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     username VARCHAR(100) NOT NULL UNIQUE,
+    email VARCHAR(255),
     password_hash VARCHAR(255) NOT NULL,
     access_level VARCHAR(20) DEFAULT 'guest' CHECK (access_level IN ('guest', 'user', 'editor', 'super')),
+    is_active BOOLEAN DEFAULT true,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    last_login TIMESTAMP
+);
+
+-- Create user sessions table for authentication
+CREATE TABLE user_sessions (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    token_hash VARCHAR(255) NOT NULL UNIQUE,
+    expires_at TIMESTAMP NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    is_active BOOLEAN DEFAULT true
 );
 
 -- Create tags table
@@ -88,6 +101,9 @@ CREATE INDEX idx_date_templates_order ON date_templates(display_order);
 CREATE INDEX idx_event_tags_event ON event_tags(event_id);
 CREATE INDEX idx_event_tags_tag ON event_tags(tag_id);
 CREATE INDEX idx_users_username ON users(username);
+CREATE INDEX idx_user_sessions_user_id ON user_sessions(user_id);
+CREATE INDEX idx_user_sessions_token ON user_sessions(token_hash);
+CREATE INDEX idx_user_sessions_expires ON user_sessions(expires_at);
 CREATE INDEX idx_tags_name ON tags(name);
 
 
