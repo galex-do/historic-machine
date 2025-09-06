@@ -20,7 +20,7 @@ build:
 
 up:
 	@echo "Starting services..."
-	docker compose up -d
+	docker compose up --build
 	@echo "Services started!"
 	@echo "  Frontend: http://localhost:3000"
 	@echo "  Backend API: http://localhost:8080/api"
@@ -39,7 +39,7 @@ logs:
 # Migration operations
 migrate:
 	@echo "Running database migrations..."
-	docker compose exec backend goose -dir migrations postgres "postgres://postgres:password@db:5432/historical_events?sslmode=disable" up
+	docker compose exec backend ./goose -dir migrations postgres "postgres://postgres:password@db:5432/historical_events?sslmode=disable" up
 	@echo "Database migration completed!"
 
 # Development environment
@@ -61,12 +61,11 @@ admin-help:
 	@echo "Method 2: Using registration API"
 	@echo "  curl -X POST http://localhost:8080/api/auth/register \\"
 	@echo "    -H \"Content-Type: application/json\" \\"
-	@echo "    -d '{\"username\":\"admin\",\"password\":\"your_password\",\"access_level\":\"super\"}'"
+	@echo "    -d '{\"username\":\"admin\",\"password\":\"your_password\"}'"
 	@echo ""
 	@echo "Method 3: Interactive psql session"
 	@echo "  make db-shell"
-	@echo "  # Then run: INSERT INTO users (username, password_hash, access_level)"
-	@echo "  #           VALUES ('admin', crypt('password', gen_salt('bf', 12)), 'super');"
+	@echo "  Then run: UPDATE users SET access_level='super' WHERE username='admin';"
 
 # Database shell access
 db-shell:
