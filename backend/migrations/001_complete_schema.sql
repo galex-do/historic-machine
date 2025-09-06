@@ -30,7 +30,8 @@ CREATE TABLE tags (
     name VARCHAR(100) NOT NULL UNIQUE,
     description TEXT,
     color VARCHAR(7) DEFAULT '#3B82F6',
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 -- Create event_datasets table
@@ -40,7 +41,8 @@ CREATE TABLE event_datasets (
     description TEXT,
     event_count INTEGER DEFAULT 0,
     uploaded_by INTEGER REFERENCES users(id) ON DELETE SET NULL,
-    uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 -- Create events table with all necessary columns
