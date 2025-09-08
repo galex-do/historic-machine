@@ -80,7 +80,7 @@
       "latitude": 26.184,
       "longitude": 31.922,
       "type": "political",
-      "tags": ["Egypt", "Dynasty"]
+      "tags": ["Egypt", "Dynasty", "Early Dynastic"]
     },
     {
       "name": "Uruk Reaches 100,000 Population",
@@ -110,7 +110,7 @@
       "latitude": 29.844,
       "longitude": 31.233,
       "type": "political",
-      "tags": ["Egypt", "Dynasty"]
+      "tags": ["Egypt", "Dynasty", "Early Dynastic"]
     },
     {
       "name": "Early Dynastic Period Begins",
@@ -130,7 +130,7 @@
       "latitude": 29.871,
       "longitude": 31.216,
       "type": "political",
-      "tags": ["Egypt", "Pharaoh", "Architecture"]
+      "tags": ["Egypt", "Pharaoh", "Architecture", "Old Kingdom"]
     },
     {
       "name": "Step Pyramid of Djoser Built",
@@ -140,7 +140,7 @@
       "latitude": 29.871,
       "longitude": 31.216,
       "type": "cultural",
-      "tags": ["Architecture", "Pyramid", "Egypt"]
+      "tags": ["Egypt", "Architecture", "Old Kingdom"]
     },
     {
       "name": "Imhotep's Medical Texts",
@@ -150,7 +150,7 @@
       "latitude": 29.871,
       "longitude": 31.216,
       "type": "scientific",
-      "tags": ["Medicine", "Egypt", "Knowledge"]
+      "tags": ["Egypt", "Medicine", "Old Kingdom"]
     },
     {
       "name": "Reign of En-me-barage-si of Kish",
@@ -180,7 +180,7 @@
       "latitude": 29.790,
       "longitude": 31.209,
       "type": "political",
-      "tags": ["Egypt", "Pharaoh", "Architecture"]
+      "tags": ["Egypt", "Pharaoh", "Architecture", "Old Kingdom"]
     },
     {
       "name": "Red Pyramid Construction",
@@ -190,7 +190,7 @@
       "latitude": 29.808,
       "longitude": 31.206,
       "type": "cultural",
-      "tags": ["Architecture", "Pyramid", "Egypt"]
+      "tags": ["Egypt", "Architecture", "Old Kingdom"]
     },
     {
       "name": "Great Pyramid of Giza Built",
@@ -200,7 +200,7 @@
       "latitude": 29.979,
       "longitude": 31.134,
       "type": "cultural",
-      "tags": ["Architecture", "Wonder", "Egypt"]
+      "tags": ["Egypt", "Architecture", "Old Kingdom"]
     },
     {
       "name": "Pyramid of Khafre Built",
@@ -210,7 +210,7 @@
       "latitude": 29.976,
       "longitude": 31.131,
       "type": "cultural",
-      "tags": ["Architecture", "Sphinx", "Egypt"]
+      "tags": ["Egypt", "Architecture", "Old Kingdom"]
     },
     {
       "name": "Great Sphinx Carved",
@@ -220,7 +220,7 @@
       "latitude": 29.975,
       "longitude": 31.138,
       "type": "cultural",
-      "tags": ["Sculpture", "Monument", "Egypt"]
+      "tags": ["Egypt", "Architecture", "Old Kingdom"]
     },
     {
       "name": "Pyramid of Menkaure Built",
@@ -230,7 +230,7 @@
       "latitude": 29.972,
       "longitude": 31.128,
       "type": "cultural",
-      "tags": ["Architecture", "Pyramid", "Egypt"]
+      "tags": ["Egypt", "Architecture", "Old Kingdom"]
     },
     {
       "name": "Dynasty of Lagash Founded",
@@ -430,7 +430,7 @@
       "latitude": 29.844,
       "longitude": 31.233,
       "type": "political",
-      "tags": ["Egypt", "Climate Crisis"]
+      "tags": ["Egypt", "Climate Crisis", "Old Kingdom"]
     },
     {
       "name": "Third Dynasty of Ur Founded",
@@ -470,7 +470,7 @@
       "latitude": 25.731,
       "longitude": 32.639,
       "type": "political",
-      "tags": ["Reunification", "Egypt", "Victory"]
+      "tags": ["Egypt", "Reunification", "Middle Kingdom"]
     },
     {
       "name": "Thebes Becomes Egyptian Capital",
@@ -480,7 +480,7 @@
       "latitude": 25.731,
       "longitude": 32.639,
       "type": "political",
-      "tags": ["Capital", "Thebes", "Egypt"]
+      "tags": ["Egypt", "Capital", "Middle Kingdom"]
     },
     {
       "name": "Fall of Third Dynasty of Ur",
@@ -510,7 +510,7 @@
       "latitude": 29.299,
       "longitude": 31.091,
       "type": "political",
-      "tags": ["Dynasty", "Capital", "Egypt"]
+      "tags": ["Egypt", "Dynasty", "Middle Kingdom"]
     },
     {
       "name": "Wall of the Ruler Built",
@@ -600,7 +600,7 @@
       "latitude": 30.597,
       "longitude": 32.272,
       "type": "military",
-      "tags": ["Egypt", "Military"]
+      "tags": ["Egypt", "Military", "New Kingdom"]
     },
     {
       "name": "Hittite Kingdom Founded",
@@ -640,7 +640,7 @@
       "latitude": 25.731,
       "longitude": 32.639,
       "type": "military",
-      "tags": ["Egypt", "Military"]
+      "tags": ["Egypt", "Military", "New Kingdom"]
     },
     {
       "name": "Egyptian New Kingdom Begins",
@@ -650,7 +650,7 @@
       "latitude": 25.731,
       "longitude": 32.639,
       "type": "political",
-      "tags": ["Egypt", "Political"]
+      "tags": ["Egypt", "Political", "New Kingdom"]
     },
     {
       "name": "Mitanni Kingdom Founded",
@@ -660,7 +660,7 @@
       "latitude": 36.840,
       "longitude": 40.781,
       "type": "political",
-      "tags": ["Foundation", "Kingdom", "Hurrian"]
+      "tags": ["Mitanni", "Political"]
     },
     {
       "name": "Thutmose I's Nubian Campaign",
@@ -680,7 +680,7 @@
       "latitude": 33.273,
       "longitude": 35.204,
       "type": "historic",
-      "tags": ["Maritime", "Trade", "Mediterranean"]
+      "tags": ["Phoenician", "Maritime", "Trade"]
     },
     {
       "name": "Seeder Plow Invented",
@@ -750,7 +750,7 @@
       "latitude": 32.585,
       "longitude": 35.184,
       "type": "military",
-      "tags": ["Battle", "Victory", "Coalition"]
+      "tags": ["Egypt", "Canaanite", "Battle", "New Kingdom"]
     },
     {
       "name": "Hittite Empire Expansion",
@@ -760,7 +760,7 @@
       "latitude": 40.023,
       "longitude": 34.621,
       "type": "political",
-      "tags": ["Expansion", "Challenge", "Power"]
+      "tags": ["Hittite", "Political"]
     },
     {
       "name": "Thutmose III's 17 Campaigns",
@@ -790,7 +790,7 @@
       "latitude": 20.000,
       "longitude": 30.000,
       "type": "military",
-      "tags": ["Control", "Gold", "Resources"]
+      "tags": ["Egypt", "Nubia", "Military", "New Kingdom"]
     },
     {
       "name": "Amenhotep III's Golden Age",
@@ -800,7 +800,7 @@
       "latitude": 25.731,
       "longitude": 32.639,
       "type": "political",
-      "tags": ["Golden Age", "Peak", "Culture"]
+      "tags": ["Egypt", "Political", "New Kingdom"]
     },
     {
       "name": "Assyrian Empire Rises",
@@ -810,7 +810,7 @@
       "latitude": 36.349,
       "longitude": 43.152,
       "type": "political",
-      "tags": ["Rise", "Assyria", "Challenge"]
+      "tags": ["Assyrian", "Political"]
     },
     {
       "name": "Akhenaten's Religious Revolution",
@@ -920,7 +920,7 @@
       "latitude": 34.561,
       "longitude": 36.526,
       "type": "military",
-      "tags": ["Battle", "Chariots", "Largest"]
+      "tags": ["Hittite", "Egypt", "Battle"]
     },
     {
       "name": "Hittite-Egyptian Peace Treaty",
@@ -940,7 +940,7 @@
       "latitude": 22.337,
       "longitude": 31.626,
       "type": "cultural",
-      "tags": ["Architecture", "Rock", "Magnificent"]
+      "tags": ["Egypt", "Architecture"]
     },
     {
       "name": "Sea Peoples' First Raids",
@@ -1050,7 +1050,7 @@
       "latitude": 18.000,
       "longitude": 33.000,
       "type": "political",
-      "tags": ["Control", "Nubian", "Upper Egypt"]
+      "tags": ["Nubia", "Egypt", "Political"]
     },
     {
       "name": "Israel's United Monarchy",
