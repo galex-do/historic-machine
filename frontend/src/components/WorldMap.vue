@@ -88,6 +88,7 @@ export default {
       resize_observer: null,
       show_event_modal: false,
       editing_event: null, // Store the event being edited
+      is_stepping: false, // Track if current update is from date stepping
       new_event: {
         name: '',
         description: '',
@@ -105,7 +106,12 @@ export default {
       handler() {
         if (this.map) {
           this.add_event_markers()
-          // Removed fit_map_to_events() to prevent re-centering when stepping through dates
+          // Only recenter map if not stepping through dates
+          if (!this.is_stepping) {
+            this.fit_map_to_events()
+          }
+          // Reset stepping flag after processing
+          this.is_stepping = false
         }
       },
       deep: true,
@@ -681,6 +687,11 @@ export default {
           </div>
         `
       }
+    },
+
+    // Method to set stepping mode from parent component
+    setSteppingMode(isStepping) {
+      this.is_stepping = isStepping
     }
   }
 }

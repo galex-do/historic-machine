@@ -178,12 +178,12 @@ export default {
       
       if (fromValue) {
         const newFromDate = addYearsToHistoricalDate(fromValue, years)
-        emit('date-from-changed', newFromDate)
+        emit('date-from-changed', newFromDate, true) // Pass stepping flag
       }
       
       if (toValue) {
         const newToDate = addYearsToHistoricalDate(toValue, years)
-        emit('date-to-changed', newToDate)
+        emit('date-to-changed', newToDate, true) // Pass stepping flag
       }
     }
     

@@ -105,7 +105,7 @@ export default {
       if (!currentValue) return
       
       const newDate = addYearsToHistoricalDate(currentValue, years)
-      emit('date-from-changed', newDate)
+      emit('date-from-changed', newDate, true) // Pass stepping flag
     }
     
     // Step date to forward/backward
@@ -114,7 +114,7 @@ export default {
       if (!currentValue) return
       
       const newDate = addYearsToHistoricalDate(currentValue, years)
-      emit('date-to-changed', newDate)
+      emit('date-to-changed', newDate, true) // Pass stepping flag
     }
     
     return {

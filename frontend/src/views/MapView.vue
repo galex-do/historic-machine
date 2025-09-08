@@ -190,28 +190,28 @@ export default {
     }
     
     // Enhanced date update methods that switch to custom mode
-    const handleDateFromChange = (newValue) => {
-      // Switch to custom mode when user manually changes dates
-      if (selectedTemplateGroupId.value && selectedTemplateGroupId.value !== 'custom') {
+    const handleDateFromChange = (newValue, isStepping = false) => {
+      // Switch to custom mode when user manually changes dates (but not when stepping)
+      if (!isStepping && selectedTemplateGroupId.value && selectedTemplateGroupId.value !== 'custom') {
         templateGroupChange('custom')
         console.log('Switched to Custom mode due to manual date change')
       }
       updateDateFrom(newValue)
-      applyFilters()
+      applyFilters(isStepping)
     }
     
-    const handleDateToChange = (newValue) => {
-      // Switch to custom mode when user manually changes dates
-      if (selectedTemplateGroupId.value && selectedTemplateGroupId.value !== 'custom') {
+    const handleDateToChange = (newValue, isStepping = false) => {
+      // Switch to custom mode when user manually changes dates (but not when stepping)
+      if (!isStepping && selectedTemplateGroupId.value && selectedTemplateGroupId.value !== 'custom') {
         templateGroupChange('custom')
         console.log('Switched to Custom mode due to manual date change')
       }
       updateDateTo(newValue)
-      applyFilters()
+      applyFilters(isStepping)
     }
 
     // Filter methods
-    const applyFilters = () => {
+    const applyFilters = (isStepping = false) => {
       filterEvents(
         dateFrom.value,
         dateTo.value,
@@ -220,6 +220,11 @@ export default {
         dateFromDisplay.value,
         dateToDisplay.value
       )
+      
+      // Signal WorldMap component about stepping state
+      if (worldMap.value && worldMap.value.setSteppingMode) {
+        worldMap.value.setSteppingMode(isStepping)
+      }
     }
 
     // Event focus method
