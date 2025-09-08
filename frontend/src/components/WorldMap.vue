@@ -65,9 +65,14 @@
         
         <div class="events-list">
           <div v-for="(event, index) in selected_events" :key="event.id" class="event-info-item">
-            <div class="event-header">
+            <!-- Show event header only for multiple events -->
+            <div v-if="selected_events.length > 1" class="event-header">
               <h4>{{ get_event_emoji(event.lens_type) }} {{ event.name }}</h4>
               <span v-if="canEditEvents" @click="edit_event_from_info(event.id)" class="edit-icon" title="Edit event">✏️</span>
+            </div>
+            <!-- For single events, show edit icon with the date -->
+            <div v-else-if="canEditEvents" class="single-event-edit">
+              <span @click="edit_event_from_info(event.id)" class="edit-icon" title="Edit event">✏️</span>
             </div>
             <div class="event-date">{{ event.display_date || format_date(event.event_date) }}</div>
             <p class="event-description">{{ event.description }}</p>
@@ -964,6 +969,12 @@ export default {
   font-size: 0.9rem;
   margin: 0.25rem 0 0.5rem 0;
   font-weight: 500;
+}
+
+.single-event-edit {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
 }
 
 .event-details p {
