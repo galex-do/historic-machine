@@ -56,7 +56,9 @@
     <div v-if="show_event_info_modal" class="modal-overlay" @click="close_event_info_modal">
       <div class="modal-content event-info-modal" @click.stop>
         <div class="modal-header">
-          <h3 v-if="selected_events.length === 1">{{ selected_events[0].name }}</h3>
+          <h3 v-if="selected_events.length === 1">
+            {{ get_event_emoji(selected_events[0].lens_type) }} {{ selected_events[0].name }}
+          </h3>
           <h3 v-else>{{ selected_events.length }} Events at this Location</h3>
           <button class="close-button" @click="close_event_info_modal">×</button>
         </div>
@@ -64,14 +66,11 @@
         <div class="events-list">
           <div v-for="(event, index) in selected_events" :key="event.id" class="event-info-item">
             <div class="event-header">
-              <h4>{{ event.name }}</h4>
+              <h4>{{ get_event_emoji(event.lens_type) }} {{ event.name }}</h4>
               <span v-if="canEditEvents" @click="edit_event_from_info(event.id)" class="edit-icon" title="Edit event">✏️</span>
             </div>
+            <div class="event-date">{{ event.display_date || format_date(event.event_date) }}</div>
             <p class="event-description">{{ event.description }}</p>
-            <div class="event-details">
-              <p><strong>Date:</strong> {{ event.display_date || format_date(event.event_date) }}</p>
-              <p><strong>Type:</strong> {{ event.lens_type }}</p>
-            </div>
             <div v-if="index < selected_events.length - 1" class="event-divider"></div>
           </div>
         </div>
@@ -85,6 +84,7 @@ import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import { useAuth } from '@/composables/useAuth.js'
 import apiService from '@/services/api.js'
+import { getEventEmoji } from '@/utils/event-utils.js'
 
 export default {
   name: 'WorldMap',
@@ -556,6 +556,10 @@ export default {
       }
       return this.format_date_to_ddmmyyyy(new Date(date_string))
     },
+
+    get_event_emoji(lensType) {
+      return getEventEmoji(lensType)
+    },
     
     format_date_to_ddmmyyyy(date) {
       // Handle both Date objects and ISO strings
@@ -865,14 +869,15 @@ export default {
   max-height: 80vh;
   overflow-y: auto;
   width: 90vw;
+  padding: 1rem 1.5rem;
 }
 
 .modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
   border-bottom: 2px solid #e2e8f0;
 }
 
@@ -909,7 +914,7 @@ export default {
 }
 
 .event-info-item {
-  padding: 1rem 0;
+  padding: 0.75rem 0;
 }
 
 .event-info-item:not(:last-child) {
@@ -950,8 +955,15 @@ export default {
 
 .event-description {
   color: #4a5568;
-  margin: 0 0 0.75rem 0;
+  margin: 0.5rem 0 0 0;
   line-height: 1.5;
+}
+
+.event-date {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin: 0.25rem 0 0.5rem 0;
+  font-weight: 500;
 }
 
 .event-details p {
