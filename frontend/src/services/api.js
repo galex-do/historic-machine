@@ -51,8 +51,16 @@ class ApiService {
   }
 
   // Events API
-  async getEvents() {
-    return this.makeRequest('/events')
+  async getEvents(page = null, limit = null) {
+    let endpoint = '/events'
+    if (page !== null && limit !== null) {
+      const params = new URLSearchParams({
+        page: page.toString(),
+        limit: limit.toString(),
+      })
+      endpoint = `/events?${params}`
+    }
+    return this.makeRequest(endpoint)
   }
 
   async createEvent(eventData) {

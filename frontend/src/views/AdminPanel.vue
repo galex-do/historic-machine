@@ -80,7 +80,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="event in sortedEvents" :key="event.id" class="event-row">
+          <tr v-for="event in displayedEvents" :key="event.id" class="event-row">
             <td class="event-name">{{ event.name }}</td>
             <td class="event-description">
               <span class="description-text" :title="event.description">
@@ -122,9 +122,19 @@
         </tbody>
       </table>
       
-      <div v-if="!loading && events.length === 0" class="empty-state">
+      <div v-if="!loading && totalEvents === 0" class="empty-state">
         <p>No events found. Create your first historical event!</p>
       </div>
+      
+      <!-- Pagination Component -->
+      <TablePagination 
+        v-if="!loading && totalEvents > 0"
+        :current-page="currentPage"
+        :page-size="pageSize"
+        :total-items="totalEvents"
+        @update:current-page="handlePageChange"
+        @update:page-size="handlePageSizeChange"
+      />
     </div>
 
     <!-- Create/Edit Modal -->
@@ -334,9 +344,13 @@ import { useAuth } from '@/composables/useAuth.js'
 import { useTags } from '@/composables/useTags.js'
 import { useEvents } from '@/composables/useEvents.js'
 import apiService from '@/services/api.js'
+import TablePagination from '@/components/TablePagination.vue'
 
 export default {
   name: 'AdminPanel',
+  components: {
+    TablePagination
+  },
   setup() {
     const { canAccessAdmin } = useAuth()
     const { allTags, loadTags, createTag, setEventTags, getTagsByIds } = useTags()
@@ -353,6 +367,13 @@ export default {
     // Sorting state
     const sortField = ref('date')
     const sortDirection = ref('asc')
+    
+    // Pagination state
+    const currentPage = ref(1)
+    const pageSize = ref(25)
+    const totalEvents = ref(0)
+    const displayedEvents = ref([])
+    const paginatedLoading = ref(false)
     
     const eventForm = ref({
       name: '',
@@ -677,7 +698,41 @@ export default {
       }
     }
     
-    // Computed sorted events
+    // Pagination functions
+    const fetchPaginatedEvents = async () => {
+      paginatedLoading.value = true
+      try {
+        const response = await apiService.getEvents(currentPage.value, pageSize.value)
+        
+        if (response.pagination) {
+          // New paginated response format
+          displayedEvents.value = response.events || []
+          totalEvents.value = response.pagination.total_items || 0
+        } else {
+          // Fallback to non-paginated response
+          displayedEvents.value = response || []
+          totalEvents.value = displayedEvents.value.length
+        }
+      } catch (err) {
+        console.error('Error fetching paginated events:', err)
+        localError.value = 'Failed to load events'
+      } finally {
+        paginatedLoading.value = false
+      }
+    }
+    
+    const handlePageChange = (page) => {
+      currentPage.value = page
+      fetchPaginatedEvents()
+    }
+    
+    const handlePageSizeChange = (size) => {
+      pageSize.value = size
+      currentPage.value = 1 // Reset to first page
+      fetchPaginatedEvents()
+    }
+    
+    // Computed sorted events (kept for compatibility but not used in pagination mode)
     const sortedEvents = computed(() => {
       if (!events.value || events.value.length === 0) return []
       
@@ -785,17 +840,14 @@ export default {
     
     onMounted(async () => {
       await loadTags()
-      // Only fetch if events haven't been loaded yet
-      if (!events.value || events.value.length === 0) {
-        await fetchEvents()
-      }
+      await fetchPaginatedEvents()
     })
 
     return {
       canAccessAdmin,
       events,
       sortedEvents,
-      loading: computed(() => loading.value || localLoading.value),
+      loading: computed(() => loading.value || localLoading.value || paginatedLoading.value),
       error: computed(() => error.value || localError.value),
       showCreateModal,
       showEditModal,
@@ -806,6 +858,14 @@ export default {
       canCreateNewTag,
       sortField,
       sortDirection,
+      // Pagination state and functions
+      currentPage,
+      pageSize,
+      totalEvents,
+      displayedEvents,
+      handlePageChange,
+      handlePageSizeChange,
+      fetchPaginatedEvents,
       fetchEvents,
       formatDate,
       formatDateWithEra,
