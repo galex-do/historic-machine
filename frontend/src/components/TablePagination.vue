@@ -1,22 +1,20 @@
 <template>
   <div class="table-pagination">
-    <div class="pagination-info">
+    <div class="pagination-left">
       <span class="results-info">
-        Showing {{ startItem }} to {{ endItem }} of {{ totalItems }} entries
+        {{ startItem }}-{{ endItem }} of {{ totalItems }} events
       </span>
       <div class="page-size-selector">
-        <label for="page-size">Show:</label>
         <select 
-          id="page-size" 
           :value="pageSize" 
           @change="$emit('update:pageSize', parseInt($event.target.value))"
           class="page-size-select"
         >
-          <option value="10" selected>10</option>
+          <option value="10">10</option>
           <option value="25">25</option>
           <option value="50">50</option>
         </select>
-        <span>entries</span>
+        <span>per page</span>
       </div>
     </div>
     
@@ -167,15 +165,13 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
-  border-top: 1px solid #e5e7eb;
-  margin-top: 1rem;
+  width: 100%;
 }
 
-.pagination-info {
+.pagination-left {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .results-info {

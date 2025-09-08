@@ -33,18 +33,13 @@
       
       <!-- Table Controls & Pagination -->
       <div v-if="!loading && totalEvents > 0" class="table-controls">
-        <div class="results-summary">
-          <span class="results-text">
-            Showing {{ ((currentPage - 1) * pageSize) + 1 }}-{{ Math.min(currentPage * pageSize, totalEvents) }} 
-            of {{ totalEvents }} events
-          </span>
-        </div>
         <TablePagination 
           :current-page="currentPage"
           :page-size="pageSize"
           :total-items="totalEvents"
           @update:current-page="handlePageChange"
           @update:page-size="handlePageSizeChange"
+          :show-full-info="true"
         />
       </div>
       
@@ -969,24 +964,10 @@ export default {
 }
 
 .table-controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   background: #f8fafc;
   border-bottom: 1px solid #e2e8f0;
   border-radius: 12px 12px 0 0;
-}
-
-.results-summary {
-  display: flex;
-  align-items: center;
-}
-
-.results-text {
-  font-size: 0.875rem;
-  color: #64748b;
-  font-weight: 500;
 }
 
 .loading-state {
