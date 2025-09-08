@@ -31,7 +31,24 @@
         <p>Loading events...</p>
       </div>
       
-      <table v-else class="events-table">
+      <!-- Table Controls & Pagination -->
+      <div v-if="!loading && totalEvents > 0" class="table-controls">
+        <div class="results-summary">
+          <span class="results-text">
+            Showing {{ ((currentPage - 1) * pageSize) + 1 }}-{{ Math.min(currentPage * pageSize, totalEvents) }} 
+            of {{ totalEvents }} events
+          </span>
+        </div>
+        <TablePagination 
+          :current-page="currentPage"
+          :page-size="pageSize"
+          :total-items="totalEvents"
+          @update:current-page="handlePageChange"
+          @update:page-size="handlePageSizeChange"
+        />
+      </div>
+      
+      <table v-if="!loading" class="events-table">
         <thead>
           <tr>
             <th 
@@ -125,16 +142,6 @@
       <div v-if="!loading && totalEvents === 0" class="empty-state">
         <p>No events found. Create your first historical event!</p>
       </div>
-      
-      <!-- Pagination Component -->
-      <TablePagination 
-        v-if="!loading && totalEvents > 0"
-        :current-page="currentPage"
-        :page-size="pageSize"
-        :total-items="totalEvents"
-        @update:current-page="handlePageChange"
-        @update:page-size="handlePageSizeChange"
-      />
     </div>
 
     <!-- Create/Edit Modal -->
@@ -959,6 +966,27 @@ export default {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  border-radius: 12px 12px 0 0;
+}
+
+.results-summary {
+  display: flex;
+  align-items: center;
+}
+
+.results-text {
+  font-size: 0.875rem;
+  color: #64748b;
+  font-weight: 500;
 }
 
 .loading-state {
