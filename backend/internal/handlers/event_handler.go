@@ -32,8 +32,55 @@ func NewEventHandler(eventRepo *repositories.EventRepository, tagRepo *repositor
         }
 }
 
-// GetAllEvents handles GET /api/events
+// GetAllEvents handles GET /api/events with optional pagination
 func (h *EventHandler) GetAllEvents(w http.ResponseWriter, r *http.Request) {
+        query := r.URL.Query()
+        
+        // Check if pagination parameters are provided
+        pageStr := query.Get("page")
+        limitStr := query.Get("limit")
+        
+        // If pagination parameters exist, use paginated query
+        if pageStr != "" || limitStr != "" {
+                page, err := strconv.Atoi(pageStr)
+                if err != nil || page < 1 {
+                        page = 1
+                }
+                
+                limit, err := strconv.Atoi(limitStr)
+                if err != nil || limit < 1 {
+                        limit = 25 // Default page size
+                }
+                
+                // Validate limit (max 100 to prevent abuse)
+                if limit > 100 {
+                        limit = 100
+                }
+                
+                events, total, err := h.eventRepo.GetPaginated(page, limit)
+                if err != nil {
+                        log.Printf("Error fetching paginated events: %v", err)
+                        response.InternalError(w, "Failed to fetch events")
+                        return
+                }
+                
+                totalPages := (total + limit - 1) / limit // Ceiling division
+                
+                paginatedResponse := map[string]interface{}{
+                        "events": events,
+                        "pagination": map[string]interface{}{
+                                "current_page": page,
+                                "page_size":    limit,
+                                "total_items":  total,
+                                "total_pages":  totalPages,
+                        },
+                }
+                
+                response.Success(w, paginatedResponse)
+                return
+        }
+        
+        // Fall back to non-paginated query for backward compatibility
         events, err := h.eventRepo.GetAll()
         if err != nil {
                 log.Printf("Error fetching events: %v", err)

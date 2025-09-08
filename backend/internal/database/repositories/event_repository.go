@@ -219,3 +219,64 @@ func (r *EventRepository) ValidateCoordinates(lat, lng float64) error {
         }
         return nil
 }
+
+// GetPaginated retrieves events with pagination support
+func (r *EventRepository) GetPaginated(page, limit int) ([]models.HistoricalEvent, int, error) {
+        // Calculate offset
+        offset := (page - 1) * limit
+        
+        // Get total count first
+        countQuery := `SELECT COUNT(*) FROM events_with_display_dates`
+        var total int
+        err := r.db.QueryRow(countQuery).Scan(&total)
+        if err != nil {
+                return nil, 0, fmt.Errorf("failed to count events: %w", err)
+        }
+        
+        // Get paginated events
+        query := `
+                SELECT id, name, description, latitude, longitude, event_date, era, lens_type, display_date, tags
+                FROM events_with_display_dates 
+                ORDER BY astronomical_year ASC
+                LIMIT $1 OFFSET $2`
+        
+        rows, err := r.db.Query(query, limit, offset)
+        if err != nil {
+                return nil, 0, fmt.Errorf("failed to query paginated events: %w", err)
+        }
+        defer rows.Close()
+        
+        var events []models.HistoricalEvent
+        
+        for rows.Next() {
+                var event models.HistoricalEvent
+                var tagsJSON []byte
+                
+                err := rows.Scan(&event.ID, &event.Name, &event.Description, &event.Latitude, 
+                        &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.DisplayDate, &tagsJSON)
+                if err != nil {
+                        log.Printf("Error scanning paginated event: %v", err)
+                        continue
+                }
+                
+                // Parse tags JSON
+                if len(tagsJSON) > 0 {
+                        var tags []models.Tag
+                        if err := json.Unmarshal(tagsJSON, &tags); err != nil {
+                                log.Printf("Error unmarshaling tags for event %d: %v", event.ID, err)
+                                tags = []models.Tag{}
+                        }
+                        event.Tags = tags
+                } else {
+                        event.Tags = []models.Tag{}
+                }
+                
+                events = append(events, event)
+        }
+        
+        if err = rows.Err(); err != nil {
+                return nil, 0, fmt.Errorf("error iterating over paginated events: %w", err)
+        }
+        
+        return events, total, nil
+}
