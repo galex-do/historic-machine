@@ -102,7 +102,12 @@ export default {
   },
   watch: {
     events: {
-      handler() {
+      handler(newEvents, oldEvents) {
+        console.log('Events changed - recreating markers:', {
+          newCount: newEvents ? newEvents.length : 0,
+          oldCount: oldEvents ? oldEvents.length : 0,
+          mapReady: !!this.map
+        })
         if (this.map) {
           this.add_event_markers()
           this.fit_map_to_events()
@@ -279,22 +284,46 @@ export default {
     },
     
     add_event_markers() {
+      console.log('Adding event markers:', {
+        eventsCount: this.events.length,
+        existingMarkersCount: this.markers.length,
+        mapReady: !!this.map
+      })
+      
       // Close any open popups first to prevent binding issues
       if (this.map) {
         this.map.closePopup()
+        this.map.eachLayer((layer) => {
+          if (layer.getPopup && layer.getPopup()) {
+            layer.closePopup()
+          }
+        })
       }
       
-      // Clear existing markers
-      this.markers.forEach(marker => {
+      // More aggressive marker clearing
+      this.markers.forEach((marker, index) => {
         if (this.map && this.map.hasLayer(marker)) {
           // Explicitly close popup before removing marker
           if (marker.getPopup() && marker.getPopup().isOpen()) {
             marker.closePopup()
           }
+          // Unbind popup to fully disconnect
+          if (marker.getPopup()) {
+            marker.unbindPopup()
+          }
           this.map.removeLayer(marker)
         }
       })
       this.markers = []
+      
+      // Force cleanup of any remaining layers
+      if (this.map) {
+        this.map.eachLayer((layer) => {
+          if (layer.options && layer.options.riseOnHover) {
+            this.map.removeLayer(layer)
+          }
+        })
+      }
       
       // Wait for next tick to ensure map is ready
       this.$nextTick(() => {
