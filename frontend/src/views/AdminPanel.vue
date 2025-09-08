@@ -690,33 +690,45 @@ export default {
             bValue = b.name.toLowerCase()
             break
           case 'date':
-            // Handle BC/AD dates chronologically with full date comparison
-            // For BC: smaller year = more recent (25 BC is after 500 BC)
-            // For AD: larger year = more recent (500 AD is after 25 AD)
+            // Handle BC/AD dates chronologically with proper parsing
             
-            const aDate = new Date(a.event_date)
-            const bDate = new Date(b.event_date)
+            const parseDateForSorting = (dateString, era) => {
+              if (dateString.startsWith('-')) {
+                // BC date format: "-491-09-12T00:00:00Z"
+                const parts = dateString.substring(1).split('T')[0].split('-')
+                const year = parseInt(parts[0], 10)
+                const month = parseInt(parts[1], 10)
+                const day = parseInt(parts[2], 10)
+                
+                // For BC: convert to negative astronomical year for proper sorting
+                // 491 BC becomes -490 (astronomical year)
+                return new Date(1 - year, month - 1, day).getTime()
+              } else {
+                // AD date: use normal Date parsing
+                return new Date(dateString).getTime()
+              }
+            }
             
             // Both BC dates
             if (a.era === 'BC' && b.era === 'BC') {
-              // For BC dates, reverse the time value (older dates get smaller values)
-              aValue = -aDate.getTime()
-              bValue = -bDate.getTime()
+              // For BC dates: more negative = older, so reverse for chronological order
+              aValue = -parseDateForSorting(a.event_date, a.era)
+              bValue = -parseDateForSorting(b.event_date, b.era)
             }
             // Both AD dates  
             else if (a.era === 'AD' && b.era === 'AD') {
-              // For AD dates, use normal time values
-              aValue = aDate.getTime()
-              bValue = bDate.getTime()
+              // For AD dates: normal chronological order
+              aValue = parseDateForSorting(a.event_date, a.era)
+              bValue = parseDateForSorting(b.event_date, b.era)
             }
             // Mixed BC/AD: BC always comes before AD
             else if (a.era === 'BC' && b.era === 'AD') {
-              aValue = -aDate.getTime() - 100000000000000 // BC is always older
-              bValue = bDate.getTime()
+              aValue = parseDateForSorting(a.event_date, a.era) - 1000000000000000 // BC is always older
+              bValue = parseDateForSorting(b.event_date, b.era)
             }
             else if (a.era === 'AD' && b.era === 'BC') {
-              aValue = aDate.getTime()
-              bValue = -bDate.getTime() - 100000000000000 // BC is always older
+              aValue = parseDateForSorting(a.event_date, a.era)
+              bValue = parseDateForSorting(b.event_date, b.era) - 1000000000000000 // BC is always older
             }
             break
           case 'type':
