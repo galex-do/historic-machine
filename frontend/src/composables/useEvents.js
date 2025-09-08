@@ -102,24 +102,29 @@ export function useEvents() {
     
     // Sort events chronologically (oldest to newest)
     tempFilteredEvents.sort((a, b) => {
-      const aDate = new Date(a.event_date)
-      const bDate = new Date(b.event_date)
-      
-      // Handle BC/AD chronological sorting
-      if (a.era === 'BC' && b.era === 'BC') {
-        // For BC: reverse order (larger year = older)
-        return -aDate.getTime() - (-bDate.getTime())
-      } else if (a.era === 'AD' && b.era === 'AD') {
-        // For AD: normal order (larger year = newer)
-        return aDate.getTime() - bDate.getTime()
-      } else if (a.era === 'BC' && b.era === 'AD') {
-        // BC always comes before AD
-        return -1
-      } else if (a.era === 'AD' && b.era === 'BC') {
-        // AD always comes after BC
-        return 1
+      // Use proper astronomical year for chronological sorting
+      const getAstronomicalYear = (dateString, era) => {
+        if (dateString.startsWith('-')) {
+          // BC date format: "-754-04-21T00:00:00Z" 
+          const parts = dateString.substring(1).split('T')[0].split('-')
+          const year = parseInt(parts[0], 10)
+          const month = parseInt(parts[1], 10)
+          const day = parseInt(parts[2], 10)
+          
+          // Convert to astronomical year: 754 BC = -753 astronomical year
+          // Add month/day for sub-year precision
+          return -(year - 1) - (month / 12) - (day / 365)
+        } else {
+          // AD date: use normal date parsing
+          const date = new Date(dateString)
+          return date.getFullYear() + (date.getMonth() / 12) + (date.getDate() / 365)
+        }
       }
-      return 0
+      
+      const aYear = getAstronomicalYear(a.event_date, a.era)
+      const bYear = getAstronomicalYear(b.event_date, b.era)
+      
+      return aYear - bYear // Chronological order: older events first
     })
     
     filteredEvents.value = tempFilteredEvents

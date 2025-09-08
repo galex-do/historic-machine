@@ -690,46 +690,27 @@ export default {
             bValue = b.name.toLowerCase()
             break
           case 'date':
-            // Handle BC/AD dates chronologically with proper parsing
-            
-            const parseDateForSorting = (dateString, era) => {
+            // Use proper astronomical year for chronological sorting
+            const getAstronomicalYear = (dateString, era) => {
               if (dateString.startsWith('-')) {
-                // BC date format: "-491-09-12T00:00:00Z"
+                // BC date format: "-754-04-21T00:00:00Z" 
                 const parts = dateString.substring(1).split('T')[0].split('-')
                 const year = parseInt(parts[0], 10)
                 const month = parseInt(parts[1], 10)
                 const day = parseInt(parts[2], 10)
                 
-                // For BC: convert to negative astronomical year for proper sorting
-                // 491 BC becomes -490 (astronomical year)
-                return new Date(1 - year, month - 1, day).getTime()
+                // Convert to astronomical year: 754 BC = -753 astronomical year
+                // Add month/day for sub-year precision
+                return -(year - 1) - (month / 12) - (day / 365)
               } else {
-                // AD date: use normal Date parsing
-                return new Date(dateString).getTime()
+                // AD date: use normal date parsing
+                const date = new Date(dateString)
+                return date.getFullYear() + (date.getMonth() / 12) + (date.getDate() / 365)
               }
             }
             
-            // Both BC dates
-            if (a.era === 'BC' && b.era === 'BC') {
-              // For BC dates: larger year number = older, so use direct values for chronological order
-              aValue = parseDateForSorting(a.event_date, a.era)
-              bValue = parseDateForSorting(b.event_date, b.era)
-            }
-            // Both AD dates  
-            else if (a.era === 'AD' && b.era === 'AD') {
-              // For AD dates: normal chronological order
-              aValue = parseDateForSorting(a.event_date, a.era)
-              bValue = parseDateForSorting(b.event_date, b.era)
-            }
-            // Mixed BC/AD: BC always comes before AD
-            else if (a.era === 'BC' && b.era === 'AD') {
-              aValue = parseDateForSorting(a.event_date, a.era) - 1000000000000000 // BC is always older
-              bValue = parseDateForSorting(b.event_date, b.era)
-            }
-            else if (a.era === 'AD' && b.era === 'BC') {
-              aValue = parseDateForSorting(a.event_date, a.era)
-              bValue = parseDateForSorting(b.event_date, b.era) - 1000000000000000 // BC is always older
-            }
+            aValue = getAstronomicalYear(a.event_date, a.era)
+            bValue = getAstronomicalYear(b.event_date, b.era)
             break
           case 'type':
             aValue = a.lens_type.toLowerCase()
