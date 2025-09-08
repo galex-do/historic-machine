@@ -490,7 +490,7 @@
       "latitude": 30.962,
       "longitude": 46.104,
       "type": "military",
-      "tags": ["Defeat", "Captivity", "End"]
+      "tags": ["Sumerian", "Military"]
     },
     {
       "name": "Rise of Babylon",
@@ -520,7 +520,7 @@
       "latitude": 30.623,
       "longitude": 34.301,
       "type": "military",
-      "tags": ["Fortification", "Defense", "Border"]
+      "tags": ["Egypt", "Defense"]
     },
     {
       "name": "Old Babylonian Period Begins",
@@ -580,7 +580,7 @@
       "latitude": 31.338,
       "longitude": 45.864,
       "type": "military",
-      "tags": ["Victory", "Control", "South"]
+      "tags": ["Babylonian", "Military"]
     },
     {
       "name": "Death of Hammurabi",
@@ -590,7 +590,7 @@
       "latitude": 32.543,
       "longitude": 44.421,
       "type": "historic",
-      "tags": ["Death", "Legacy", "Power"]
+      "tags": ["Babylonian", "Hammurabi"]
     },
     {
       "name": "Hyksos Invade Egypt",
@@ -600,7 +600,7 @@
       "latitude": 30.597,
       "longitude": 32.272,
       "type": "military",
-      "tags": ["Invasion", "Foreign", "Control"]
+      "tags": ["Egypt", "Military"]
     },
     {
       "name": "Hittite Kingdom Founded",
@@ -610,7 +610,7 @@
       "latitude": 40.023,
       "longitude": 34.621,
       "type": "political",
-      "tags": ["Foundation", "Hittite", "Anatolia"]
+      "tags": ["Hittite", "Political"]
     },
     {
       "name": "Kassites Conquer Babylon",
@@ -620,7 +620,7 @@
       "latitude": 32.543,
       "longitude": 44.421,
       "type": "military",
-      "tags": ["Conquest", "Dynasty", "Long Rule"]
+      "tags": ["Babylonian", "Military"]
     },
     {
       "name": "Mursili I Sacks Babylon",
@@ -630,7 +630,7 @@
       "latitude": 32.543,
       "longitude": 44.421,
       "type": "military",
-      "tags": ["Raid", "Capture", "Dynasty End"]
+      "tags": ["Hittite", "Babylonian", "Battle"]
     },
     {
       "name": "Ahmose Expels the Hyksos",
@@ -640,7 +640,7 @@
       "latitude": 25.731,
       "longitude": 32.639,
       "type": "military",
-      "tags": ["Victory", "Expulsion", "Reunification"]
+      "tags": ["Egypt", "Military"]
     },
     {
       "name": "Egyptian New Kingdom Begins",
@@ -650,7 +650,7 @@
       "latitude": 25.731,
       "longitude": 32.639,
       "type": "political",
-      "tags": ["New Kingdom", "Power", "Expansion"]
+      "tags": ["Egypt", "Political"]
     },
     {
       "name": "Mitanni Kingdom Founded",
