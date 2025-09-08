@@ -702,7 +702,12 @@ export default {
     const fetchPaginatedEvents = async () => {
       paginatedLoading.value = true
       try {
-        const response = await apiService.getEvents(currentPage.value, pageSize.value)
+        const response = await apiService.getEvents(
+          currentPage.value, 
+          pageSize.value, 
+          sortField.value, 
+          sortDirection.value
+        )
         
         if (response.pagination) {
           // New paginated response format
@@ -795,6 +800,9 @@ export default {
         sortField.value = field
         sortDirection.value = 'asc'
       }
+      // Refresh data with new sorting and reset to first page
+      currentPage.value = 1
+      fetchPaginatedEvents()
     }
     
     // Import functions
