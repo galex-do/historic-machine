@@ -105,7 +105,7 @@ export default {
       handler() {
         if (this.map) {
           this.add_event_markers()
-          this.fit_map_to_events()
+          // Removed fit_map_to_events() to prevent re-centering when stepping through dates
         }
       },
       deep: true,
