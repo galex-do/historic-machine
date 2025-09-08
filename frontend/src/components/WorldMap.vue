@@ -141,6 +141,7 @@ export default {
   mounted() {
     this.initialize_map()
     this.add_event_markers()
+    this.setup_coordinate_system_protection()
     
     // Add resize observer to handle layout changes
     this.resize_observer = new ResizeObserver(() => {
@@ -162,6 +163,11 @@ export default {
       this.resize_observer.disconnect()
     }
     window.removeEventListener('resize', this.handle_resize)
+    
+    // Clean up coordinate system health check
+    if (this.coordinate_health_check) {
+      clearInterval(this.coordinate_health_check)
+    }
     
     // Clean up global function
     if (window.editEvent) {
@@ -772,6 +778,160 @@ export default {
     // Method to set stepping mode from parent component
     setSteppingMode(isStepping) {
       this.is_stepping = isStepping
+    },
+
+    // Setup coordinate system protection to prevent _latLngToNewLayerPoint errors
+    setup_coordinate_system_protection() {
+      if (!this.map) return
+
+      // Store original map state for recovery
+      this.original_map_state = {
+        center: this.map.getCenter(),
+        zoom: this.map.getZoom()
+      }
+
+      // Override popup handling to prevent coordinate corruption
+      this.map.on('popupopen', (e) => {
+        try {
+          // Force immediate coordinate system refresh when popup opens
+          setTimeout(() => {
+            if (this.map && this.map._loaded) {
+              this.map.invalidateSize(false)
+            }
+          }, 0)
+        } catch (error) {
+          console.warn('Error during popup open handling:', error)
+        }
+      })
+
+      this.map.on('popupclose', (e) => {
+        try {
+          // Clean up coordinate system after popup closes
+          setTimeout(() => {
+            if (this.map && this.map._loaded) {
+              this.repair_coordinate_system()
+            }
+          }, 0)
+        } catch (error) {
+          console.warn('Error during popup close handling:', error)
+        }
+      })
+
+      // Monitor zoom events for coordinate system corruption
+      this.map.on('zoom', (e) => {
+        this.detect_and_fix_coordinate_corruption()
+      })
+
+      this.map.on('zoomstart', (e) => {
+        this.detect_and_fix_coordinate_corruption()
+      })
+
+      this.map.on('zoomend', (e) => {
+        this.detect_and_fix_coordinate_corruption()
+      })
+
+      // Periodic coordinate system health check
+      this.coordinate_health_check = setInterval(() => {
+        this.detect_and_fix_coordinate_corruption()
+      }, 5000) // Check every 5 seconds
+    },
+
+    // Detect and fix coordinate system corruption
+    detect_and_fix_coordinate_corruption() {
+      if (!this.map || !this.map._loaded) return
+
+      try {
+        // Test coordinate system health by trying a simple transformation
+        const testLatLng = L.latLng(0, 0)
+        this.map.latLngToContainerPoint(testLatLng)
+      } catch (error) {
+        if (error.message && error.message.includes('_latLngToNewLayerPoint')) {
+          console.log('Coordinate system corruption detected, repairing...')
+          this.repair_coordinate_system()
+        }
+      }
+    },
+
+    // Repair corrupted coordinate system
+    repair_coordinate_system() {
+      if (!this.map || !this.map._loaded) return
+
+      try {
+        // Get current state
+        const currentCenter = this.map.getCenter()
+        const currentZoom = this.map.getZoom()
+
+        // Force complete coordinate system reset
+        this.map.invalidateSize(true)
+        
+        // Reset coordinate transformation matrices
+        if (this.map._renderer && this.map._renderer._transformMatrix) {
+          delete this.map._renderer._transformMatrix
+        }
+
+        // Clear any cached coordinate transformations
+        if (this.map._pixelTransform) {
+          this.map._pixelTransform = null
+        }
+
+        // Force view reset to recalculate coordinate system
+        setTimeout(() => {
+          if (this.map && this.map._loaded) {
+            this.map.setView(currentCenter, currentZoom, {
+              reset: true,
+              animate: false
+            })
+          }
+        }, 10)
+
+        console.log('Coordinate system repaired')
+      } catch (error) {
+        console.error('Failed to repair coordinate system:', error)
+        // Last resort: force complete map refresh
+        this.emergency_map_reset()
+      }
+    },
+
+    // Emergency map reset as last resort
+    emergency_map_reset() {
+      if (!this.map) return
+
+      try {
+        console.log('Performing emergency map reset...')
+        
+        // Save current state
+        const currentCenter = this.map.getCenter()
+        const currentZoom = this.map.getZoom()
+        const currentEvents = [...this.events]
+
+        // Remove all layers
+        this.map.eachLayer((layer) => {
+          if (layer !== this.map._layers[this.map._leaflet_id]) {
+            this.map.removeLayer(layer)
+          }
+        })
+
+        // Clear all markers
+        this.markers = []
+
+        // Force complete map reset
+        this.map.remove()
+        
+        // Reinitialize map
+        setTimeout(() => {
+          this.initialize_map()
+          // Restore view
+          if (this.map) {
+            this.map.setView(currentCenter, currentZoom)
+            // Restore markers
+            this.add_event_markers()
+          }
+        }, 100)
+
+        console.log('Emergency map reset completed')
+      } catch (error) {
+        console.error('Emergency map reset failed:', error)
+      }
     }
   }
 }
