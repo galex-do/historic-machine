@@ -102,12 +102,7 @@ export default {
   },
   watch: {
     events: {
-      handler(newEvents, oldEvents) {
-        console.log('Events changed - recreating markers:', {
-          newCount: newEvents ? newEvents.length : 0,
-          oldCount: oldEvents ? oldEvents.length : 0,
-          mapReady: !!this.map
-        })
+      handler() {
         if (this.map) {
           this.add_event_markers()
           this.fit_map_to_events()
@@ -284,15 +279,8 @@ export default {
     },
     
     add_event_markers() {
-      console.log('Adding event markers:', {
-        eventsCount: this.events.length,
-        existingMarkersCount: this.markers.length,
-        mapReady: !!this.map
-      })
-      
       // Ensure map is in a clean state before proceeding
       if (!this.map || !this.map._loaded) {
-        console.warn('Map not ready for marker updates')
         return
       }
       
@@ -324,7 +312,7 @@ export default {
             this.map.removeLayer(marker)
           }
         } catch (error) {
-          console.warn('Error removing marker:', error)
+          // Silently handle marker removal errors
         }
       })
       this.markers = []
@@ -337,7 +325,7 @@ export default {
           }
         })
       } catch (error) {
-        console.warn('Error during layer cleanup:', error)
+        // Silently handle layer cleanup errors
       }
       
       // Force map to invalidate and refresh its state
@@ -352,7 +340,6 @@ export default {
         this.$nextTick(() => {
           // Double-check map is still ready
           if (!this.map || !this.map._loaded) {
-            console.warn('Map became unavailable during marker recreation')
             return
           }
           
@@ -379,7 +366,7 @@ export default {
               
               this.markers.push(marker)
             } catch (error) {
-              console.warn('Error creating marker for event group:', error, eventGroup)
+              // Silently handle marker creation errors
             }
           })
         
