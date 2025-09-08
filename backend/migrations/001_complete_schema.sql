@@ -119,6 +119,98 @@ INSERT INTO events (name, description, latitude, longitude, event_date, era, len
 ('Fall of Constantinople', 'End of the Byzantine Empire', 41.0082, 28.9784, '1453-05-29', 'AD', 'military'),
 ('Discovery of America', 'Columbus reaches the New World', 25.0343, -77.3963, '1492-10-12', 'AD', 'historic');
 
+-- Insert tags for events
+INSERT INTO tags (name, description, color) VALUES
+-- Existing base tags
+('Ancient', 'Auto-generated tag for Ancient', '#3B82F6'),
+('Cultural', 'Auto-generated tag for Cultural', '#10B981'),
+('Greek', 'Auto-generated tag for Greek', '#059669'),
+('Military', 'Auto-generated tag for Military', '#DC2626'),
+('Political', 'Auto-generated tag for Political', '#7C3AED'),
+('Roman', 'Auto-generated tag for Roman', '#EA580C'),
+('Renaissance', 'Auto-generated tag for Renaissance', '#DB2777'),
+('Philosophy', 'Auto-generated tag for Philosophy', '#9333EA'),
+('Medieval', 'Auto-generated tag for Medieval', '#84CC16'),
+('Byzantine', 'Auto-generated tag for Byzantine', '#F59E0B'),
+('Conquest', 'Auto-generated tag for Conquest', '#EF4444'),
+-- Nations and Civilizations
+('Romans', 'Related to the Roman Empire and Roman civilization', '#DC143C'),
+('Greeks', 'Related to ancient Greek civilization and culture', '#4169E1'),
+('Persians', 'Related to the Persian Empire and Persian civilization', '#FFD700'),
+('Byzantines', 'Related to the Byzantine Empire', '#800080'),
+('Ottomans', 'Related to the Ottoman Empire', '#008000'),
+('Spanish', 'Related to Spanish exploration and empire', '#FF4500'),
+-- Historical Personalities
+('Alexander the Great', 'The famous Macedonian conqueror', '#FF6B35'),
+('Julius Caesar', 'The famous Roman general and dictator', '#8B0000'),
+('Columbus', 'Christopher Columbus, the explorer', '#1E90FF'),
+('Romulus', 'Legendary founder of Rome', '#B22222'),
+('Plato', 'The great Greek philosopher', '#4682B4'),
+-- Places and Concepts
+('Rome', 'The eternal city and center of Roman power', '#8B4513'),
+('Athens', 'The birthplace of democracy and philosophy', '#6A5ACD'),
+('Senate', 'Related to Roman Senate and political institutions', '#696969'),
+('Constantinople', 'The great city and Byzantine capital', '#DAA520'),
+('Exploration', 'Related to exploration and discovery', '#20B2AA'),
+('Founding', 'Related to the establishment of cities or nations', '#CD853F');
+
+-- Insert event-tag relationships
+INSERT INTO event_tags (event_id, tag_id) VALUES
+-- Foundation of Rome (id=1)
+(1, (SELECT id FROM tags WHERE name = 'Ancient')),
+(1, (SELECT id FROM tags WHERE name = 'Political')),
+(1, (SELECT id FROM tags WHERE name = 'Roman')),
+(1, (SELECT id FROM tags WHERE name = 'Romans')),
+(1, (SELECT id FROM tags WHERE name = 'Rome')),
+(1, (SELECT id FROM tags WHERE name = 'Romulus')),
+(1, (SELECT id FROM tags WHERE name = 'Founding')),
+
+-- Battle of Marathon (id=2)
+(2, (SELECT id FROM tags WHERE name = 'Ancient')),
+(2, (SELECT id FROM tags WHERE name = 'Greek')),
+(2, (SELECT id FROM tags WHERE name = 'Military')),
+(2, (SELECT id FROM tags WHERE name = 'Greeks')),
+(2, (SELECT id FROM tags WHERE name = 'Persians')),
+
+-- Birth of Plato (id=3)
+(3, (SELECT id FROM tags WHERE name = 'Cultural')),
+(3, (SELECT id FROM tags WHERE name = 'Greek')),
+(3, (SELECT id FROM tags WHERE name = 'Philosophy')),
+(3, (SELECT id FROM tags WHERE name = 'Greeks')),
+(3, (SELECT id FROM tags WHERE name = 'Athens')),
+(3, (SELECT id FROM tags WHERE name = 'Plato')),
+
+-- Battle of Gaugamela (id=4)
+(4, (SELECT id FROM tags WHERE name = 'Ancient')),
+(4, (SELECT id FROM tags WHERE name = 'Conquest')),
+(4, (SELECT id FROM tags WHERE name = 'Military')),
+(4, (SELECT id FROM tags WHERE name = 'Greeks')),
+(4, (SELECT id FROM tags WHERE name = 'Persians')),
+(4, (SELECT id FROM tags WHERE name = 'Alexander the Great')),
+
+-- Assassination of Julius Caesar (id=5)
+(5, (SELECT id FROM tags WHERE name = 'Ancient')),
+(5, (SELECT id FROM tags WHERE name = 'Political')),
+(5, (SELECT id FROM tags WHERE name = 'Roman')),
+(5, (SELECT id FROM tags WHERE name = 'Romans')),
+(5, (SELECT id FROM tags WHERE name = 'Julius Caesar')),
+(5, (SELECT id FROM tags WHERE name = 'Senate')),
+
+-- Fall of Constantinople (id=6)
+(6, (SELECT id FROM tags WHERE name = 'Byzantine')),
+(6, (SELECT id FROM tags WHERE name = 'Medieval')),
+(6, (SELECT id FROM tags WHERE name = 'Military')),
+(6, (SELECT id FROM tags WHERE name = 'Byzantines')),
+(6, (SELECT id FROM tags WHERE name = 'Ottomans')),
+(6, (SELECT id FROM tags WHERE name = 'Constantinople')),
+
+-- Discovery of America (id=7)
+(7, (SELECT id FROM tags WHERE name = 'Cultural')),
+(7, (SELECT id FROM tags WHERE name = 'Renaissance')),
+(7, (SELECT id FROM tags WHERE name = 'Spanish')),
+(7, (SELECT id FROM tags WHERE name = 'Columbus')),
+(7, (SELECT id FROM tags WHERE name = 'Exploration'));
+
 -- Insert date template groups
 INSERT INTO date_template_groups (name, description, display_order) VALUES 
 -- Ancient Civilizations (3500 BC - 1000 BC)
