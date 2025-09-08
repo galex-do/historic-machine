@@ -86,6 +86,7 @@ export default {
       map: null,
       markers: [],
       resize_observer: null,
+      markerUpdateTimeout: null,
       show_event_modal: false,
       editing_event: null, // Store the event being edited
       new_event: {
@@ -104,8 +105,12 @@ export default {
     events: {
       handler() {
         if (this.map) {
-          this.add_event_markers()
-          this.fit_map_to_events()
+          // Debounce rapid successive calls
+          clearTimeout(this.markerUpdateTimeout)
+          this.markerUpdateTimeout = setTimeout(() => {
+            this.add_event_markers()
+            this.fit_map_to_events()
+          }, 100)
         }
       },
       deep: true,
@@ -156,6 +161,11 @@ export default {
       this.resize_observer.disconnect()
     }
     window.removeEventListener('resize', this.handle_resize)
+    
+    // Clean up timeouts
+    if (this.markerUpdateTimeout) {
+      clearTimeout(this.markerUpdateTimeout)
+    }
     
     // Clean up global function
     if (window.editEvent) {
@@ -284,9 +294,29 @@ export default {
         return
       }
       
-      // Completely stop any ongoing map animations
+      // Completely disable all animations during marker recreation
+      const originalAnimationState = this.map.options.zoomAnimation
+      const originalPanAnimation = this.map.options.fadeAnimation
+      const originalMarkerZoomAnimation = this.map.options.markerZoomAnimation
+      
+      this.map.options.zoomAnimation = false
+      this.map.options.fadeAnimation = false
+      this.map.options.markerZoomAnimation = false
+      
+      // Stop any ongoing animations
       if (this.map._animateToZoom) {
         this.map.stop()
+      }
+      if (this.map._animateToCenter) {
+        this.map.stop()
+      }
+      if (this.map._panAnim) {
+        this.map._panAnim.stop()
+      }
+      
+      // Remove any animation classes
+      if (this.map._mapPane) {
+        this.map._mapPane.className = this.map._mapPane.className.replace(/leaflet-zoom-anim/g, '')
       }
       
       // Close any open popups first to prevent binding issues
@@ -328,6 +358,11 @@ export default {
         // Silently handle layer cleanup errors
       }
       
+      // Restore animation settings after cleanup
+      this.map.options.zoomAnimation = originalAnimationState
+      this.map.options.fadeAnimation = originalPanAnimation
+      this.map.options.markerZoomAnimation = originalMarkerZoomAnimation
+      
       // Force map to invalidate and refresh its state
       setTimeout(() => {
         if (this.map && this.map._loaded) {
@@ -335,11 +370,11 @@ export default {
         }
       }, 0)
       
-      // Wait for multiple ticks and ensure map stability before adding new markers
+      // Wait longer for map to completely stabilize before adding new markers
       setTimeout(() => {
         this.$nextTick(() => {
-          // Double-check map is still ready
-          if (!this.map || !this.map._loaded) {
+          // Double-check map is still ready and not animating
+          if (!this.map || !this.map._loaded || this.map._animateToZoom || this.map._animateToCenter) {
             return
           }
           
@@ -379,7 +414,7 @@ export default {
             }, 100)
           }
         })
-      }, 10)
+      }, 50)
     },
     
     fit_map_to_events() {
