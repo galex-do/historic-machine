@@ -1,5 +1,22 @@
 <template>
   <div class="events-section">
+    <!-- Events Header with Filters -->
+    <div class="events-header">
+      <div class="events-count">
+        {{ events.length }} event{{ events.length !== 1 ? 's' : '' }}
+      </div>
+      <div class="events-filters">
+        <button 
+          @click="toggleMapFilter"
+          class="filter-btn map-filter"
+          :class="{ 'active': mapFilterEnabled }"
+          title="Filter events by current map view"
+        >
+          🗺️
+        </button>
+      </div>
+    </div>
+
     <div class="events-grid">
       <div v-if="events.length === 0" class="no-events">
         <p>No events found for the selected period. Click on the map to add your first historical event!</p>
@@ -52,11 +69,12 @@ export default {
       default: () => []
     }
   },
-  emits: ['focus-event'],
+  emits: ['focus-event', 'map-filter-toggle'],
   data() {
     return {
       currentPage: 1,
-      eventsPerPage: 3 // Maximum 3 cards to prevent sidebar scrolling
+      eventsPerPage: 3, // Maximum 3 cards to prevent sidebar scrolling
+      mapFilterEnabled: false
     }
   },
   computed: {
@@ -80,6 +98,10 @@ export default {
       if (page >= 1 && page <= this.totalPages) {
         this.currentPage = page
       }
+    },
+    toggleMapFilter() {
+      this.mapFilterEnabled = !this.mapFilterEnabled
+      this.$emit('map-filter-toggle', this.mapFilterEnabled)
     }
   }
 }
@@ -93,6 +115,54 @@ export default {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+}
+
+.events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.events-count {
+  font-size: 0.875rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.events-filters {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.375rem 0.5rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  color: #64748b;
+}
+
+.filter-btn:hover {
+  background: #e2e8f0;
+  border-color: #cbd5e1;
+}
+
+.filter-btn.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+.map-filter {
+  font-size: 1rem;
+  line-height: 1;
 }
 
 
