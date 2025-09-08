@@ -670,7 +670,7 @@
       "latitude": 21.845,
       "longitude": 31.849,
       "type": "military",
-      "tags": ["Campaign", "Expansion", "South"]
+      "tags": ["Egypt", "Nubia", "Military", "New Kingdom"]
     },
     {
       "name": "Phoenician Maritime Empire",
@@ -730,7 +730,7 @@
       "latitude": 25.731,
       "longitude": 32.639,
       "type": "historic",
-      "tags": ["Death", "Legacy", "Prosperity"]
+      "tags": ["Egypt", "Political", "New Kingdom"]
     },
     {
       "name": "Thutmose III Becomes Sole Ruler",
@@ -740,7 +740,7 @@
       "latitude": 25.731,
       "longitude": 32.639,
       "type": "political",
-      "tags": ["Sole Rule", "Military", "Campaigns"]
+      "tags": ["Egypt", "Military", "New Kingdom"]
     },
     {
       "name": "Battle of Megiddo",
@@ -770,7 +770,7 @@
       "latitude": 33.888,
       "longitude": 35.495,
       "type": "military",
-      "tags": ["Final Campaign", "Dominance", "Victory"]
+      "tags": ["Egypt", "Military", "New Kingdom"]
     },
     {
       "name": "Linear B Script Developed",
@@ -780,7 +780,7 @@
       "latitude": 37.641,
       "longitude": 22.726,
       "type": "cultural",
-      "tags": ["Writing", "Greek", "Script"]
+      "tags": ["Greek", "Writing"]
     },
     {
       "name": "Egypt Controls Nubia",
@@ -820,7 +820,7 @@
       "latitude": 27.645,
       "longitude": 30.902,
       "type": "cultural",
-      "tags": ["Religion", "Revolution", "Monotheism"]
+      "tags": ["Egypt", "Religion", "New Kingdom"]
     },
     {
       "name": "Amarna Founded",
@@ -830,7 +830,7 @@
       "latitude": 27.645,
       "longitude": 30.902,
       "type": "political",
-      "tags": ["Capital", "Foundation", "Religious"]
+      "tags": ["Egypt", "Capital", "New Kingdom"]
     },
     {
       "name": "Death of Akhenaten",
@@ -870,7 +870,7 @@
       "latitude": 25.731,
       "longitude": 32.639,
       "type": "historic",
-      "tags": ["Death", "Mystery", "Young"]
+      "tags": ["Egypt", "Political", "New Kingdom"]
     },
     {
       "name": "Mitanni Conquered by Hittites",
