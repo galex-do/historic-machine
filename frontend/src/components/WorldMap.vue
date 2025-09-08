@@ -86,7 +86,6 @@ export default {
       map: null,
       markers: [],
       resize_observer: null,
-      markerUpdateTimeout: null,
       show_event_modal: false,
       editing_event: null, // Store the event being edited
       new_event: {
@@ -105,12 +104,8 @@ export default {
     events: {
       handler() {
         if (this.map) {
-          // Debounce rapid successive calls
-          clearTimeout(this.markerUpdateTimeout)
-          this.markerUpdateTimeout = setTimeout(() => {
-            this.add_event_markers()
-            this.fit_map_to_events()
-          }, 100)
+          this.add_event_markers()
+          this.fit_map_to_events()
         }
       },
       deep: true,
@@ -161,11 +156,6 @@ export default {
       this.resize_observer.disconnect()
     }
     window.removeEventListener('resize', this.handle_resize)
-    
-    // Clean up timeouts
-    if (this.markerUpdateTimeout) {
-      clearTimeout(this.markerUpdateTimeout)
-    }
     
     // Clean up global function
     if (window.editEvent) {
@@ -289,132 +279,51 @@ export default {
     },
     
     add_event_markers() {
-      // Ensure map is in a clean state before proceeding
-      if (!this.map || !this.map._loaded) {
-        return
+      // Close any open popups to prevent coordinate conflicts
+      if (this.map) {
+        this.map.closePopup()
       }
       
-      // Completely disable all animations during marker recreation
-      const originalAnimationState = this.map.options.zoomAnimation
-      const originalPanAnimation = this.map.options.fadeAnimation
-      const originalMarkerZoomAnimation = this.map.options.markerZoomAnimation
-      
-      this.map.options.zoomAnimation = false
-      this.map.options.fadeAnimation = false
-      this.map.options.markerZoomAnimation = false
-      
-      // Stop any ongoing animations
-      if (this.map._animateToZoom) {
-        this.map.stop()
-      }
-      if (this.map._animateToCenter) {
-        this.map.stop()
-      }
-      if (this.map._panAnim) {
-        this.map._panAnim.stop()
-      }
-      
-      // Remove any animation classes
-      if (this.map._mapPane) {
-        this.map._mapPane.className = this.map._mapPane.className.replace(/leaflet-zoom-anim/g, '')
-      }
-      
-      // Close any open popups first to prevent binding issues
-      this.map.closePopup()
-      this.map.eachLayer((layer) => {
-        if (layer.getPopup && layer.getPopup()) {
-          layer.closePopup()
-        }
-      })
-      
-      // More aggressive marker clearing with safety checks
-      this.markers.forEach((marker, index) => {
-        try {
-          if (this.map && this.map.hasLayer(marker)) {
-            // Explicitly close popup before removing marker
-            if (marker.getPopup() && marker.getPopup().isOpen()) {
-              marker.closePopup()
-            }
-            // Unbind popup to fully disconnect
-            if (marker.getPopup()) {
-              marker.unbindPopup()
-            }
-            this.map.removeLayer(marker)
-          }
-        } catch (error) {
-          // Silently handle marker removal errors
+      // Clear existing markers first
+      this.markers.forEach(marker => {
+        if (this.map && this.map.hasLayer(marker)) {
+          this.map.removeLayer(marker)
         }
       })
       this.markers = []
       
-      // Force cleanup of any remaining marker layers
-      try {
-        this.map.eachLayer((layer) => {
-          if (layer.options && layer.options.riseOnHover) {
-            this.map.removeLayer(layer)
-          }
-        })
-      } catch (error) {
-        // Silently handle layer cleanup errors
-      }
-      
-      // Restore animation settings after cleanup
-      this.map.options.zoomAnimation = originalAnimationState
-      this.map.options.fadeAnimation = originalPanAnimation
-      this.map.options.markerZoomAnimation = originalMarkerZoomAnimation
-      
-      // Force map to invalidate and refresh its state
-      setTimeout(() => {
-        if (this.map && this.map._loaded) {
-          this.map.invalidateSize(true)
-        }
-      }, 0)
-      
-      // Wait longer for map to completely stabilize before adding new markers
-      setTimeout(() => {
-        this.$nextTick(() => {
-          // Double-check map is still ready and not animating
-          if (!this.map || !this.map._loaded || this.map._animateToZoom || this.map._animateToCenter) {
-            return
-          }
+      // Wait for next tick to ensure map is ready
+      this.$nextTick(() => {
+        // Group events by location (same coordinates)
+        const locationGroups = this.group_events_by_location(this.events)
+        
+        // Add markers for each location group
+        Object.values(locationGroups).forEach(eventGroup => {
+          if (!eventGroup.latitude || !eventGroup.longitude || !this.map) return
           
-          // Group events by location (same coordinates)
-          const locationGroups = this.group_events_by_location(this.events)
-        
-          // Add markers for each location group with error handling
-          Object.values(locationGroups).forEach(eventGroup => {
-            if (!eventGroup.latitude || !eventGroup.longitude || !this.map || !this.map._loaded) return
-            
-            try {
-              const emoji_icon = this.create_emoji_marker_icon(
-                eventGroup.events.length > 1 ? 'multiple' : eventGroup.events[0].lens_type
-              )
-              
-              const marker = L.marker([eventGroup.latitude, eventGroup.longitude], { 
-                icon: emoji_icon,
-                riseOnHover: true
-              }).addTo(this.map)
-              
-              // Create popup content for single or multiple events
-              const popupContent = this.create_popup_content(eventGroup.events)
-              marker.bindPopup(popupContent)
-              
-              this.markers.push(marker)
-            } catch (error) {
-              // Silently handle marker creation errors
-            }
-          })
-        
-          // Invalidate map size to ensure proper rendering
-          if (this.map && this.map._loaded) {
-            setTimeout(() => {
-              if (this.map && this.map._loaded) {
-                this.map.invalidateSize(true)
-              }
-            }, 100)
-          }
+          const emoji_icon = this.create_emoji_marker_icon(
+            eventGroup.events.length > 1 ? 'multiple' : eventGroup.events[0].lens_type
+          )
+          
+          const marker = L.marker([eventGroup.latitude, eventGroup.longitude], { 
+            icon: emoji_icon,
+            riseOnHover: true
+          }).addTo(this.map)
+          
+          // Create popup content for single or multiple events
+          const popupContent = this.create_popup_content(eventGroup.events)
+          marker.bindPopup(popupContent)
+          
+          this.markers.push(marker)
         })
-      }, 50)
+        
+        // Invalidate map size to ensure proper rendering
+        if (this.map) {
+          setTimeout(() => {
+            this.map.invalidateSize(true)
+          }, 100)
+        }
+      })
     },
     
     fit_map_to_events() {
