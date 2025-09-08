@@ -300,16 +300,9 @@ func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
                         continue
                 }
 
-                // Handle BC dates - convert to negative year for proper storage
-                var eventDate time.Time
-                if eventData.Era == "BC" {
-                        // Convert BC year to negative astronomical year
-                        year := parsedDate.Year()
-                        bcYear := -(year - 1) // 753 BC becomes -752
-                        eventDate = time.Date(bcYear, parsedDate.Month(), parsedDate.Day(), 0, 0, 0, 0, time.UTC)
-                } else {
-                        eventDate = parsedDate
-                }
+                // Store BC dates as positive dates (same as predefined events)
+                // The era field indicates BC/AD, astronomical conversion happens in views
+                eventDate := parsedDate
 
                 // Create event with dataset reference
                 event := &models.HistoricalEvent{
@@ -406,9 +399,8 @@ func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
 // formatDisplayDate formats a date for display with era
 func formatDisplayDate(date time.Time, era string) string {
         if era == "BC" {
-                // For BC dates, use the original positive year
-                year := -(date.Year() + 1)
-                return fmt.Sprintf("%02d.%02d.%d BC", date.Day(), date.Month(), year)
+                // BC dates are stored as positive dates, use them directly
+                return fmt.Sprintf("%02d.%02d.%d BC", date.Day(), date.Month(), date.Year())
         }
         return fmt.Sprintf("%02d.%02d.%d AD", date.Day(), date.Month(), date.Year())
 }
