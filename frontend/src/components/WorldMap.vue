@@ -290,73 +290,109 @@ export default {
         mapReady: !!this.map
       })
       
-      // Close any open popups first to prevent binding issues
-      if (this.map) {
-        this.map.closePopup()
-        this.map.eachLayer((layer) => {
-          if (layer.getPopup && layer.getPopup()) {
-            layer.closePopup()
-          }
-        })
+      // Ensure map is in a clean state before proceeding
+      if (!this.map || !this.map._loaded) {
+        console.warn('Map not ready for marker updates')
+        return
       }
       
-      // More aggressive marker clearing
+      // Completely stop any ongoing map animations
+      if (this.map._animateToZoom) {
+        this.map.stop()
+      }
+      
+      // Close any open popups first to prevent binding issues
+      this.map.closePopup()
+      this.map.eachLayer((layer) => {
+        if (layer.getPopup && layer.getPopup()) {
+          layer.closePopup()
+        }
+      })
+      
+      // More aggressive marker clearing with safety checks
       this.markers.forEach((marker, index) => {
-        if (this.map && this.map.hasLayer(marker)) {
-          // Explicitly close popup before removing marker
-          if (marker.getPopup() && marker.getPopup().isOpen()) {
-            marker.closePopup()
+        try {
+          if (this.map && this.map.hasLayer(marker)) {
+            // Explicitly close popup before removing marker
+            if (marker.getPopup() && marker.getPopup().isOpen()) {
+              marker.closePopup()
+            }
+            // Unbind popup to fully disconnect
+            if (marker.getPopup()) {
+              marker.unbindPopup()
+            }
+            this.map.removeLayer(marker)
           }
-          // Unbind popup to fully disconnect
-          if (marker.getPopup()) {
-            marker.unbindPopup()
-          }
-          this.map.removeLayer(marker)
+        } catch (error) {
+          console.warn('Error removing marker:', error)
         }
       })
       this.markers = []
       
-      // Force cleanup of any remaining layers
-      if (this.map) {
+      // Force cleanup of any remaining marker layers
+      try {
         this.map.eachLayer((layer) => {
           if (layer.options && layer.options.riseOnHover) {
             this.map.removeLayer(layer)
           }
         })
+      } catch (error) {
+        console.warn('Error during layer cleanup:', error)
       }
       
-      // Wait for next tick to ensure map is ready
-      this.$nextTick(() => {
-        // Group events by location (same coordinates)
-        const locationGroups = this.group_events_by_location(this.events)
-        
-        // Add markers for each location group
-        Object.values(locationGroups).forEach(eventGroup => {
-          if (!eventGroup.latitude || !eventGroup.longitude || !this.map) return
-          
-          const emoji_icon = this.create_emoji_marker_icon(
-            eventGroup.events.length > 1 ? 'multiple' : eventGroup.events[0].lens_type
-          )
-          
-          const marker = L.marker([eventGroup.latitude, eventGroup.longitude], { 
-            icon: emoji_icon,
-            riseOnHover: true
-          }).addTo(this.map)
-          
-          // Create popup content for single or multiple events
-          const popupContent = this.create_popup_content(eventGroup.events)
-          marker.bindPopup(popupContent)
-          
-          this.markers.push(marker)
-        })
-        
-        // Invalidate map size to ensure proper rendering
-        if (this.map) {
-          setTimeout(() => {
-            this.map.invalidateSize(true)
-          }, 100)
+      // Force map to invalidate and refresh its state
+      setTimeout(() => {
+        if (this.map && this.map._loaded) {
+          this.map.invalidateSize(true)
         }
-      })
+      }, 0)
+      
+      // Wait for multiple ticks and ensure map stability before adding new markers
+      setTimeout(() => {
+        this.$nextTick(() => {
+          // Double-check map is still ready
+          if (!this.map || !this.map._loaded) {
+            console.warn('Map became unavailable during marker recreation')
+            return
+          }
+          
+          // Group events by location (same coordinates)
+          const locationGroups = this.group_events_by_location(this.events)
+        
+          // Add markers for each location group with error handling
+          Object.values(locationGroups).forEach(eventGroup => {
+            if (!eventGroup.latitude || !eventGroup.longitude || !this.map || !this.map._loaded) return
+            
+            try {
+              const emoji_icon = this.create_emoji_marker_icon(
+                eventGroup.events.length > 1 ? 'multiple' : eventGroup.events[0].lens_type
+              )
+              
+              const marker = L.marker([eventGroup.latitude, eventGroup.longitude], { 
+                icon: emoji_icon,
+                riseOnHover: true
+              }).addTo(this.map)
+              
+              // Create popup content for single or multiple events
+              const popupContent = this.create_popup_content(eventGroup.events)
+              marker.bindPopup(popupContent)
+              
+              this.markers.push(marker)
+            } catch (error) {
+              console.warn('Error creating marker for event group:', error, eventGroup)
+            }
+          })
+        
+          // Invalidate map size to ensure proper rendering
+          if (this.map && this.map._loaded) {
+            setTimeout(() => {
+              if (this.map && this.map._loaded) {
+                this.map.invalidateSize(true)
+              }
+            }, 100)
+          }
+        })
+      }, 10)
     },
     
     fit_map_to_events() {
