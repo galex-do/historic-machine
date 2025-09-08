@@ -711,9 +711,9 @@ export default {
             
             // Both BC dates
             if (a.era === 'BC' && b.era === 'BC') {
-              // For BC dates: more negative = older, so reverse for chronological order
-              aValue = -parseDateForSorting(a.event_date, a.era)
-              bValue = -parseDateForSorting(b.event_date, b.era)
+              // For BC dates: larger year number = older, so use direct values for chronological order
+              aValue = parseDateForSorting(a.event_date, a.era)
+              bValue = parseDateForSorting(b.event_date, b.era)
             }
             // Both AD dates  
             else if (a.era === 'AD' && b.era === 'AD') {
