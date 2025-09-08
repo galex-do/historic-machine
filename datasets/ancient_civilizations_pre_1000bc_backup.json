@@ -10,7 +10,7 @@
       "latitude": 31.324,
       "longitude": 45.636,
       "type": "historic",
-      "tags": ["Sumerian", "Urban"]
+      "tags": ["Mesopotamia", "Urban", "Sumerian"]
     },
     {
       "name": "Invention of Cuneiform Writing",
@@ -20,7 +20,7 @@
       "latitude": 31.324,
       "longitude": 45.636,
       "type": "cultural",
-      "tags": ["Sumerian", "Writing"]
+      "tags": ["Writing", "Sumerian", "Technology"]
     },
     {
       "name": "Unification of Egypt by Narmer",
@@ -40,7 +40,7 @@
       "latitude": 29.844,
       "longitude": 31.233,
       "type": "political",
-      "tags": ["Egypt", "Capital"]
+      "tags": ["Egypt", "Capital", "Memphis"]
     },
     {
       "name": "Development of Hieroglyphic Writing",
@@ -50,7 +50,7 @@
       "latitude": 30.044,
       "longitude": 31.236,
       "type": "cultural",
-      "tags": ["Egypt", "Writing"]
+      "tags": ["Egypt", "Writing", "Hieroglyphs"]
     },
     {
       "name": "Invention of the Wheel",
@@ -60,7 +60,7 @@
       "latitude": 32.776,
       "longitude": 44.949,
       "type": "scientific",
-      "tags": ["Sumerian", "Technology"]
+      "tags": ["Technology", "Transportation", "Sumerian"]
     },
     {
       "name": "Base-60 Number System",
@@ -70,7 +70,7 @@
       "latitude": 31.324,
       "longitude": 45.636,
       "type": "scientific",
-      "tags": ["Sumerian", "Mathematics"]
+      "tags": ["Mathematics", "Sumerian", "Innovation"]
     },
     {
       "name": "Reign of King Djer",
@@ -80,7 +80,7 @@
       "latitude": 26.184,
       "longitude": 31.922,
       "type": "political",
-      "tags": ["Egypt", "Dynasty"]
+      "tags": ["Egypt", "Dynasty", "Burial"]
     },
     {
       "name": "Uruk Reaches 100,000 Population",
@@ -90,7 +90,7 @@
       "latitude": 31.324,
       "longitude": 45.636,
       "type": "historic",
-      "tags": ["Sumerian", "Urban"]
+      "tags": ["Urbanization", "Population", "Sumerian"]
     },
     {
       "name": "First Ziggurats Built",
@@ -100,7 +100,7 @@
       "latitude": 30.942,
       "longitude": 46.103,
       "type": "cultural",
-      "tags": ["Sumerian", "Architecture"]
+      "tags": ["Architecture", "Religion", "Sumerian"]
     },
     {
       "name": "Reign of Pharaoh Hotepsekhemwy",
@@ -110,7 +110,7 @@
       "latitude": 29.844,
       "longitude": 31.233,
       "type": "political",
-      "tags": ["Egypt", "Dynasty"]
+      "tags": ["Egypt", "Dynasty", "Unity"]
     },
     {
       "name": "Early Dynastic Period Begins",
@@ -260,7 +260,7 @@
       "latitude": 33.312,
       "longitude": 44.644,
       "type": "cultural",
-      "tags": ["Akkadian", "Writing"]
+      "tags": ["Language", "Akkadian", "Semitic"]
     },
     {
       "name": "Hieratic Script Development",
@@ -280,7 +280,7 @@
       "latitude": 33.312,
       "longitude": 44.644,
       "type": "historic",
-      "tags": ["Akkadian", "Sargon"]
+      "tags": ["Akkadian", "Birth", "Empire"]
     },
     {
       "name": "Lugalzagesi Unifies Sumer",
@@ -290,7 +290,7 @@
       "latitude": 31.324,
       "longitude": 45.636,
       "type": "political",
-      "tags": ["Sumerian", "Unification"]
+      "tags": ["Unification", "Sumerian", "Political"]
     },
     {
       "name": "Sargon Overthrows Ur-Zababa",
@@ -300,7 +300,7 @@
       "latitude": 32.776,
       "longitude": 44.949,
       "type": "political",
-      "tags": ["Akkadian", "Political"]
+      "tags": ["Revolution", "Akkadian", "Power"]
     },
     {
       "name": "Battle of Uruk",
@@ -310,7 +310,7 @@
       "latitude": 31.324,
       "longitude": 45.636,
       "type": "military",
-      "tags": ["Akkadian", "Sumerian", "Battle"]
+      "tags": ["Battle", "Victory", "Akkadian"]
     },
     {
       "name": "Akkadian Empire Founded",
@@ -320,7 +320,7 @@
       "latitude": 33.312,
       "longitude": 44.644,
       "type": "political",
-      "tags": ["Akkadian", "Political"]
+      "tags": ["Empire", "Foundation", "Akkadian"]
     },
     {
       "name": "Sargon Conquers Ur",
@@ -380,7 +380,7 @@
       "latitude": 33.312,
       "longitude": 44.644,
       "type": "political",
-      "tags": ["Akkadian", "Political"]
+      "tags": ["Succession", "Rebellion", "Akkadian"]
     },
     {
       "name": "Naram-Sin Becomes King",
@@ -390,7 +390,7 @@
       "latitude": 33.312,
       "longitude": 44.644,
       "type": "political",
-      "tags": ["Akkadian", "Political"]
+      "tags": ["Divine", "Kingship", "Akkadian"]
     },
     {
       "name": "Naram-Sin's Victory Stele",
@@ -400,7 +400,7 @@
       "latitude": 33.312,
       "longitude": 44.644,
       "type": "cultural",
-      "tags": ["Akkadian", "Art"]
+      "tags": ["Art", "Victory", "Monument"]
     },
     {
       "name": "4.2 Kiloyear Aridification Event",
@@ -410,7 +410,7 @@
       "latitude": 33.0,
       "longitude": 44.0,
       "type": "historic",
-      "tags": ["Climate Crisis"]
+      "tags": ["Climate", "Drought", "Collapse"]
     },
     {
       "name": "Fall of Akkadian Empire",
@@ -420,7 +420,7 @@
       "latitude": 33.312,
       "longitude": 44.644,
       "type": "political",
-      "tags": ["Akkadian", "Climate Crisis"]
+      "tags": ["Collapse", "Empire", "Drought"]
     },
     {
       "name": "Egyptian Old Kingdom Collapses",
@@ -430,7 +430,7 @@
       "latitude": 29.844,
       "longitude": 31.233,
       "type": "political",
-      "tags": ["Egypt", "Climate Crisis"]
+      "tags": ["Collapse", "Drought", "Egypt"]
     },
     {
       "name": "Third Dynasty of Ur Founded",
@@ -440,7 +440,7 @@
       "latitude": 30.962,
       "longitude": 46.104,
       "type": "political",
-      "tags": ["Sumerian", "Dynasty"]
+      "tags": ["Revival", "Dynasty", "Sumerian"]
     },
     {
       "name": "Code of Ur-Nammu",
