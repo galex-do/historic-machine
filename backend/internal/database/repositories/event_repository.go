@@ -220,8 +220,13 @@ func (r *EventRepository) ValidateCoordinates(lat, lng float64) error {
         return nil
 }
 
-// GetPaginated retrieves events with pagination support
+// GetPaginated retrieves events with pagination support (kept for backward compatibility)
 func (r *EventRepository) GetPaginated(page, limit int) ([]models.HistoricalEvent, int, error) {
+        return r.GetPaginatedWithSort(page, limit, "date", "asc")
+}
+
+// GetPaginatedWithSort retrieves events with pagination and sorting support
+func (r *EventRepository) GetPaginatedWithSort(page, limit int, sortField, sortDirection string) ([]models.HistoricalEvent, int, error) {
         // Calculate offset
         offset := (page - 1) * limit
         
@@ -233,12 +238,29 @@ func (r *EventRepository) GetPaginated(page, limit int) ([]models.HistoricalEven
                 return nil, 0, fmt.Errorf("failed to count events: %w", err)
         }
         
-        // Get paginated events
-        query := `
+        // Build ORDER BY clause based on sort parameters
+        var orderByClause string
+        switch sortField {
+        case "name":
+                orderByClause = "name"
+        case "date":
+                orderByClause = "astronomical_year"
+        case "type":
+                orderByClause = "lens_type"
+        default:
+                orderByClause = "astronomical_year" // Default to date sorting
+        }
+        
+        if sortDirection != "asc" && sortDirection != "desc" {
+                sortDirection = "asc" // Default to ascending
+        }
+        
+        // Get paginated events with dynamic sorting
+        query := fmt.Sprintf(`
                 SELECT id, name, description, latitude, longitude, event_date, era, lens_type, display_date, tags
                 FROM events_with_display_dates 
-                ORDER BY astronomical_year ASC
-                LIMIT $1 OFFSET $2`
+                ORDER BY %s %s
+                LIMIT $1 OFFSET $2`, orderByClause, sortDirection)
         
         rows, err := r.db.Query(query, limit, offset)
         if err != nil {

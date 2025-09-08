@@ -39,6 +39,8 @@ func (h *EventHandler) GetAllEvents(w http.ResponseWriter, r *http.Request) {
         // Check if pagination parameters are provided
         pageStr := query.Get("page")
         limitStr := query.Get("limit")
+        sortField := query.Get("sort")
+        sortDir := query.Get("order")
         
         // If pagination parameters exist, use paginated query
         if pageStr != "" || limitStr != "" {
@@ -57,7 +59,15 @@ func (h *EventHandler) GetAllEvents(w http.ResponseWriter, r *http.Request) {
                         limit = 100
                 }
                 
-                events, total, err := h.eventRepo.GetPaginated(page, limit)
+                // Set default sorting if not provided
+                if sortField == "" {
+                        sortField = "date"
+                }
+                if sortDir == "" {
+                        sortDir = "asc"
+                }
+                
+                events, total, err := h.eventRepo.GetPaginatedWithSort(page, limit, sortField, sortDir)
                 if err != nil {
                         log.Printf("Error fetching paginated events: %v", err)
                         response.InternalError(w, "Failed to fetch events")
