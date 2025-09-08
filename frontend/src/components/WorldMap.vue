@@ -80,6 +80,7 @@ export default {
       default: null
     }
   },
+  emits: ['event-created', 'event-updated', 'event-deleted', 'map-bounds-changed'],
   data() {
     return {
       map: null,
@@ -175,6 +176,10 @@ export default {
       
       // Add click event for creating new events
       this.map.on('click', this.handle_map_click)
+
+      // Add map bounds change listeners for the filter
+      this.map.on('moveend', this.handle_bounds_change)
+      this.map.on('zoomend', this.handle_bounds_change)
       
       // Fix for default marker icon in Leaflet with bundlers - use local assets
       delete L.Icon.Default.prototype._getIconUrl
@@ -214,6 +219,36 @@ export default {
       
       // Show modal
       this.show_event_modal = true
+    },
+
+    // Get current map bounds
+    getCurrentBounds() {
+      if (!this.map) {
+        return Promise.resolve(null)
+      }
+      
+      const bounds = this.map.getBounds()
+      return Promise.resolve({
+        north: bounds.getNorth(),
+        south: bounds.getSouth(),
+        east: bounds.getEast(),
+        west: bounds.getWest()
+      })
+    },
+
+    // Handle map bounds changes
+    handle_bounds_change() {
+      if (!this.map) return
+      
+      const bounds = this.map.getBounds()
+      const boundsData = {
+        north: bounds.getNorth(),
+        south: bounds.getSouth(),
+        east: bounds.getEast(),
+        west: bounds.getWest()
+      }
+      
+      this.$emit('map-bounds-changed', boundsData)
     },
 
     edit_event(eventId) {
