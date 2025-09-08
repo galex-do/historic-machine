@@ -76,7 +76,6 @@
             </div>
             <div class="event-date">{{ event.display_date || format_date(event.event_date) }}</div>
             <p class="event-description">{{ event.description }}</p>
-            <div v-if="index < selected_events.length - 1" class="event-divider"></div>
           </div>
         </div>
       </div>
