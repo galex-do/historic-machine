@@ -285,14 +285,15 @@ export default {
     },
     
     add_event_markers() {
-      // Close any open popups to prevent coordinate conflicts
-      if (this.map) {
-        this.map.closePopup()
-      }
+      this.comprehensive_popup_cleanup()
       
       // Clear existing markers first
       this.markers.forEach(marker => {
         if (this.map && this.map.hasLayer(marker)) {
+          // Properly unbind popup before removing marker
+          if (marker.getPopup()) {
+            marker.unbindPopup()
+          }
           this.map.removeLayer(marker)
         }
       })
@@ -300,28 +301,49 @@ export default {
       
       // Wait for next tick to ensure map is ready
       this.$nextTick(() => {
-        // Group events by location (same coordinates)
-        const locationGroups = this.group_events_by_location(this.events)
+        // Double-check map state before proceeding
+        if (!this.map || !this.map._loaded) {
+          console.warn('Map not ready for marker addition')
+          return
+        }
         
-        // Add markers for each location group
-        Object.values(locationGroups).forEach(eventGroup => {
-          if (!eventGroup.latitude || !eventGroup.longitude || !this.map) return
+        try {
+          // Group events by location (same coordinates)
+          const locationGroups = this.group_events_by_location(this.events)
           
-          const emoji_icon = this.create_emoji_marker_icon(
-            eventGroup.events.length > 1 ? 'multiple' : eventGroup.events[0].lens_type
-          )
-          
-          const marker = L.marker([eventGroup.latitude, eventGroup.longitude], { 
-            icon: emoji_icon,
-            riseOnHover: true
-          }).addTo(this.map)
-          
-          // Create popup content for single or multiple events
-          const popupContent = this.create_popup_content(eventGroup.events)
-          marker.bindPopup(popupContent)
-          
-          this.markers.push(marker)
-        })
+          // Add markers for each location group
+          Object.values(locationGroups).forEach(eventGroup => {
+            if (!eventGroup.latitude || !eventGroup.longitude || !this.map) return
+            
+            // Validate coordinates before creating marker
+            const lat = parseFloat(eventGroup.latitude)
+            const lng = parseFloat(eventGroup.longitude)
+            
+            if (isNaN(lat) || isNaN(lng) || lat < -90 || lat > 90 || lng < -180 || lng > 180) {
+              console.warn('Invalid coordinates:', lat, lng)
+              return
+            }
+            
+            const emoji_icon = this.create_emoji_marker_icon(
+              eventGroup.events.length > 1 ? 'multiple' : eventGroup.events[0].lens_type
+            )
+            
+            const marker = L.marker([lat, lng], { 
+              icon: emoji_icon,
+              riseOnHover: true
+            }).addTo(this.map)
+            
+            // Create popup content for single or multiple events
+            const popupContent = this.create_popup_content(eventGroup.events)
+            marker.bindPopup(popupContent)
+            
+            this.markers.push(marker)
+          })
+        } catch (error) {
+          console.error('Error adding markers:', error)
+          // Force complete map refresh on error
+          this.force_map_refresh()
+        }
         
         // Invalidate map size to ensure proper rendering
         if (this.map) {
@@ -330,6 +352,64 @@ export default {
           }, 100)
         }
       })
+    },
+
+    // Comprehensive popup cleanup to prevent coordinate system corruption
+    comprehensive_popup_cleanup() {
+      if (!this.map) return
+      
+      try {
+        // Close any open popups
+        this.map.closePopup()
+        
+        // Clear popup reference from map
+        if (this.map._popup) {
+          this.map._popup = null
+        }
+        
+        // Remove all popup-related events
+        this.map.off('popupopen')
+        this.map.off('popupclose')
+        
+        // Force coordinate system recalculation
+        this.map.invalidateSize(false)
+        
+        // Additional cleanup for any lingering popup DOM elements
+        const popupElements = document.querySelectorAll('.leaflet-popup')
+        popupElements.forEach(popup => {
+          if (popup.parentNode) {
+            popup.parentNode.removeChild(popup)
+          }
+        })
+        
+      } catch (error) {
+        console.warn('Error during popup cleanup:', error)
+        // If cleanup fails, force complete map refresh
+        this.force_map_refresh()
+      }
+    },
+
+    // Force complete map refresh when coordinate system gets corrupted
+    force_map_refresh() {
+      if (!this.map) return
+      
+      try {
+        // Get current map state
+        const center = this.map.getCenter()
+        const zoom = this.map.getZoom()
+        
+        // Force complete map invalidation
+        this.map.invalidateSize(true)
+        
+        // Reset view to ensure coordinate system is recalculated
+        setTimeout(() => {
+          if (this.map) {
+            this.map.setView(center, zoom, { reset: true })
+          }
+        }, 50)
+      } catch (error) {
+        console.error('Error during force map refresh:', error)
+      }
     },
     
     fit_map_to_events() {
