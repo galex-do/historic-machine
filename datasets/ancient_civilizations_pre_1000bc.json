@@ -1071,6 +1071,186 @@
       "longitude": 35.234,
       "type": "military",
       "tags": ["Capture", "Capital", "Jerusalem"]
+    },
+    {
+      "name": "Beginning of Indus Valley Civilization",
+      "description": "Early Harappan period begins with the first urban settlements in the Indus Valley, marking the start of one of the world's earliest civilizations",
+      "date": "01.01.3300",
+      "era": "BC",
+      "latitude": 27.376,
+      "longitude": 68.838,
+      "type": "historic",
+      "tags": ["Indus Valley", "Urban", "Civilization"]
+    },
+    {
+      "name": "Development of Indus Script",
+      "description": "The Indus Valley people develop one of the world's earliest writing systems with over 600 distinct symbols found on seals and tablets",
+      "date": "01.01.3200",
+      "era": "BC",
+      "latitude": 30.631,
+      "longitude": 72.971,
+      "type": "cultural",
+      "tags": ["Indus Valley", "Writing", "Script"]
+    },
+    {
+      "name": "Harappa Urban Center Founded",
+      "description": "The major urban center of Harappa is established in the Punjab region, featuring sophisticated city planning and drainage systems",
+      "date": "01.01.3000",
+      "era": "BC",
+      "latitude": 30.631,
+      "longitude": 72.971,
+      "type": "historic",
+      "tags": ["Harappa", "Urban", "City Planning"]
+    },
+    {
+      "name": "Dholavira Established",
+      "description": "The sophisticated city of Dholavira is founded in Gujarat, featuring advanced water conservation and urban planning",
+      "date": "01.01.2650",
+      "era": "BC",
+      "latitude": 23.888,
+      "longitude": 70.218,
+      "type": "historic",
+      "tags": ["Dholavira", "Water Management", "Urban"]
+    },
+    {
+      "name": "Mohenjo-daro Established",
+      "description": "The great city of Mohenjo-daro is founded in the Sindh region, becoming the largest urban center of the Indus Valley Civilization",
+      "date": "01.01.2600",
+      "era": "BC",
+      "latitude": 27.324,
+      "longitude": 68.138,
+      "type": "historic",
+      "tags": ["Mohenjo-daro", "Urban", "Largest City"]
+    },
+    {
+      "name": "Peak Urbanization of Indus Valley",
+      "description": "Indus Valley Civilization reaches its peak with cities housing 30,000-60,000 people and covering over 1.3 million square kilometers",
+      "date": "01.01.2500",
+      "era": "BC",
+      "latitude": 27.000,
+      "longitude": 69.000,
+      "type": "historic",
+      "tags": ["Peak", "Urbanization", "Population"]
+    },
+    {
+      "name": "Great Bath of Mohenjo-daro Built",
+      "description": "Construction of the famous Great Bath complex at Mohenjo-daro, demonstrating advanced hydraulic engineering and possible ritual purposes",
+      "date": "01.01.2400",
+      "era": "BC",
+      "latitude": 27.324,
+      "longitude": 68.138,
+      "type": "cultural",
+      "tags": ["Great Bath", "Engineering", "Architecture"]
+    },
+    {
+      "name": "Dancing Girl Sculpture Created",
+      "description": "The famous bronze Dancing Girl statuette is created at Mohenjo-daro, showcasing advanced metallurgy and artistic sophistication",
+      "date": "01.01.2300",
+      "era": "BC",
+      "latitude": 27.324,
+      "longitude": 68.138,
+      "type": "cultural",
+      "tags": ["Art", "Bronze", "Sculpture"]
+    },
+    {
+      "name": "Yu the Great Controls Great Flood",
+      "description": "Legendary Chinese hero Yu the Great successfully controls devastating floods along the Yellow River, earning mandate to rule",
+      "date": "01.01.2100",
+      "era": "BC",
+      "latitude": 34.746,
+      "longitude": 113.625,
+      "type": "historic",
+      "tags": ["Yu the Great", "Flood Control", "Yellow River"]
+    },
+    {
+      "name": "Legendary Xia Dynasty Founded",
+      "description": "Yu the Great establishes the legendary Xia Dynasty, traditionally considered the first Chinese dynasty though archaeological evidence remains debated",
+      "date": "01.01.2070",
+      "era": "BC",
+      "latitude": 34.746,
+      "longitude": 113.625,
+      "type": "political",
+      "tags": ["Xia Dynasty", "Yu the Great", "First Dynasty"]
+    },
+    {
+      "name": "Erlitou Culture Emerges",
+      "description": "The Erlitou culture develops in the Yellow River valley, possibly representing the archaeological evidence of the Xia Dynasty",
+      "date": "01.01.1900",
+      "era": "BC",
+      "latitude": 34.746,
+      "longitude": 112.716,
+      "type": "historic",
+      "tags": ["Erlitou", "Bronze Age", "Culture"]
+    },
+    {
+      "name": "Decline of Indus Valley Begins",
+      "description": "The Indus Valley Civilization begins its decline due to climate change, river course changes, and possible natural disasters",
+      "date": "01.01.1900",
+      "era": "BC",
+      "latitude": 27.000,
+      "longitude": 69.000,
+      "type": "historic",
+      "tags": ["Decline", "Climate Change", "Natural Disasters"]
+    },
+    {
+      "name": "Cheng Tang Overthrows Xia",
+      "description": "Cheng Tang, founder of the Shang Dynasty, overthrows the last Xia king in the Battle of Mingtiao, establishing Shang rule",
+      "date": "01.01.1600",
+      "era": "BC",
+      "latitude": 35.236,
+      "longitude": 113.754,
+      "type": "military",
+      "tags": ["Shang Dynasty", "Cheng Tang", "Overthrow"]
+    },
+    {
+      "name": "Shang Dynasty Founded",
+      "description": "The Shang Dynasty is established, becoming the first historically verified Chinese dynasty with archaeological evidence",
+      "date": "15.01.1600",
+      "era": "BC",
+      "latitude": 35.236,
+      "longitude": 113.754,
+      "type": "political",
+      "tags": ["Shang Dynasty", "First Verified Dynasty", "China"]
+    },
+    {
+      "name": "Bronze Casting Perfected in China",
+      "description": "Shang artisans perfect advanced bronze casting techniques, creating elaborate ritual vessels and weapons",
+      "date": "01.01.1500",
+      "era": "BC",
+      "latitude": 35.000,
+      "longitude": 114.000,
+      "type": "scientific",
+      "tags": ["Bronze Technology", "Metallurgy", "Ritual Vessels"]
+    },
+    {
+      "name": "Final Abandonment of Indus Cities",
+      "description": "The last major Indus Valley cities are abandoned, marking the end of one of the world's earliest urban civilizations",
+      "date": "01.01.1300",
+      "era": "BC",
+      "latitude": 27.000,
+      "longitude": 69.000,
+      "type": "historic",
+      "tags": ["Abandonment", "End", "Urban Civilization"]
+    },
+    {
+      "name": "Anyang Becomes Shang Capital",
+      "description": "The Shang Dynasty establishes its capital at Anyang (ancient Yin), where they remain until the dynasty's end",
+      "date": "01.01.1300",
+      "era": "BC",
+      "latitude": 36.096,
+      "longitude": 114.351,
+      "type": "political",
+      "tags": ["Capital", "Anyang", "Yin"]
+    },
+    {
+      "name": "Oracle Bone Script Developed",
+      "description": "The Shang develop oracle bone script for divination, creating the earliest known form of Chinese writing",
+      "date": "01.01.1250",
+      "era": "BC",
+      "latitude": 36.096,
+      "longitude": 114.351,
+      "type": "cultural",
+      "tags": ["Oracle Bones", "Writing", "Divination"]
     }
   ]
 }
