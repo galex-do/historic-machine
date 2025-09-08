@@ -49,7 +49,7 @@ func (h *EventHandler) GetAllEvents(w http.ResponseWriter, r *http.Request) {
                 
                 limit, err := strconv.Atoi(limitStr)
                 if err != nil || limit < 1 {
-                        limit = 25 // Default page size
+                        limit = 10 // Default page size
                 }
                 
                 // Validate limit (max 100 to prevent abuse)

@@ -370,7 +370,7 @@ export default {
     
     // Pagination state
     const currentPage = ref(1)
-    const pageSize = ref(25)
+    const pageSize = ref(10)
     const totalEvents = ref(0)
     const displayedEvents = ref([])
     const paginatedLoading = ref(false)

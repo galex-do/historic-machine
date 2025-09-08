@@ -12,7 +12,7 @@
           @change="$emit('update:pageSize', parseInt($event.target.value))"
           class="page-size-select"
         >
-          <option value="10">10</option>
+          <option value="10" selected>10</option>
           <option value="25">25</option>
           <option value="50">50</option>
         </select>
