@@ -51,6 +51,32 @@
         </form>
       </div>
     </div>
+
+    <!-- Event Info Modal (shows event details without coordinate corruption) -->
+    <div v-if="show_event_info_modal" class="modal-overlay" @click="close_event_info_modal">
+      <div class="modal-content event-info-modal" @click.stop>
+        <div class="modal-header">
+          <h3 v-if="selected_events.length === 1">{{ selected_events[0].name }}</h3>
+          <h3 v-else>{{ selected_events.length }} Events at this Location</h3>
+          <button class="close-button" @click="close_event_info_modal">×</button>
+        </div>
+        
+        <div class="events-list">
+          <div v-for="(event, index) in selected_events" :key="event.id" class="event-info-item">
+            <div class="event-header">
+              <h4>{{ event.name }}</h4>
+              <span v-if="canEditEvents" @click="edit_event_from_info(event.id)" class="edit-icon" title="Edit event">✏️</span>
+            </div>
+            <p class="event-description">{{ event.description }}</p>
+            <div class="event-details">
+              <p><strong>Date:</strong> {{ event.display_date || format_date(event.event_date) }}</p>
+              <p><strong>Type:</strong> {{ event.lens_type }}</p>
+            </div>
+            <div v-if="index < selected_events.length - 1" class="event-divider"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -87,6 +113,8 @@ export default {
       markers: [],
       resize_observer: null,
       show_event_modal: false,
+      show_event_info_modal: false, // New modal for event info
+      selected_events: [], // Events to show in info modal
       editing_event: null, // Store the event being edited
       is_stepping: false, // Track if current update is from date stepping
       new_event: {
@@ -141,7 +169,6 @@ export default {
   mounted() {
     this.initialize_map()
     this.add_event_markers()
-    this.setup_coordinate_system_protection()
     
     // Add resize observer to handle layout changes
     this.resize_observer = new ResizeObserver(() => {
@@ -151,11 +178,6 @@ export default {
     
     // Listen for window resize events (triggered by sidebar toggle)
     window.addEventListener('resize', this.handle_resize)
-    
-    // Set up global function for edit buttons in popups
-    window.editEvent = (eventId) => {
-      this.edit_event(eventId)
-    }
   },
   
   beforeUnmount() {
@@ -163,16 +185,6 @@ export default {
       this.resize_observer.disconnect()
     }
     window.removeEventListener('resize', this.handle_resize)
-    
-    // Clean up coordinate system health check
-    if (this.coordinate_health_check) {
-      clearInterval(this.coordinate_health_check)
-    }
-    
-    // Clean up global function
-    if (window.editEvent) {
-      delete window.editEvent
-    }
   },
   methods: {
     initialize_map() {
@@ -290,16 +302,10 @@ export default {
       this.show_event_modal = true
     },
     
-    add_event_markers() {
-      this.comprehensive_popup_cleanup()
-      
+    add_event_markers() {      
       // Clear existing markers first
       this.markers.forEach(marker => {
         if (this.map && this.map.hasLayer(marker)) {
-          // Properly unbind popup before removing marker
-          if (marker.getPopup()) {
-            marker.unbindPopup()
-          }
           this.map.removeLayer(marker)
         }
       })
@@ -339,16 +345,15 @@ export default {
               riseOnHover: true
             }).addTo(this.map)
             
-            // Create popup content for single or multiple events
-            const popupContent = this.create_popup_content(eventGroup.events)
-            marker.bindPopup(popupContent)
+            // Use click event instead of popup to avoid coordinate corruption
+            marker.on('click', () => {
+              this.show_events_info(eventGroup.events)
+            })
             
             this.markers.push(marker)
           })
         } catch (error) {
           console.error('Error adding markers:', error)
-          // Force complete map refresh on error
-          this.force_map_refresh()
         }
         
         // Invalidate map size to ensure proper rendering
@@ -360,63 +365,6 @@ export default {
       })
     },
 
-    // Comprehensive popup cleanup to prevent coordinate system corruption
-    comprehensive_popup_cleanup() {
-      if (!this.map) return
-      
-      try {
-        // Close any open popups
-        this.map.closePopup()
-        
-        // Clear popup reference from map
-        if (this.map._popup) {
-          this.map._popup = null
-        }
-        
-        // Remove all popup-related events
-        this.map.off('popupopen')
-        this.map.off('popupclose')
-        
-        // Force coordinate system recalculation
-        this.map.invalidateSize(false)
-        
-        // Additional cleanup for any lingering popup DOM elements
-        const popupElements = document.querySelectorAll('.leaflet-popup')
-        popupElements.forEach(popup => {
-          if (popup.parentNode) {
-            popup.parentNode.removeChild(popup)
-          }
-        })
-        
-      } catch (error) {
-        console.warn('Error during popup cleanup:', error)
-        // If cleanup fails, force complete map refresh
-        this.force_map_refresh()
-      }
-    },
-
-    // Force complete map refresh when coordinate system gets corrupted
-    force_map_refresh() {
-      if (!this.map) return
-      
-      try {
-        // Get current map state
-        const center = this.map.getCenter()
-        const zoom = this.map.getZoom()
-        
-        // Force complete map invalidation
-        this.map.invalidateSize(true)
-        
-        // Reset view to ensure coordinate system is recalculated
-        setTimeout(() => {
-          if (this.map) {
-            this.map.setView(center, zoom, { reset: true })
-          }
-        }, 50)
-      } catch (error) {
-        console.error('Error during force map refresh:', error)
-      }
-    },
     
     fit_map_to_events() {
       // Add comprehensive checks to prevent Leaflet errors
@@ -715,223 +663,28 @@ export default {
       return groups
     },
 
-    update_marker_popups() {
-      // Update popup content for existing markers without recreating them
-      const locationGroups = this.group_events_by_location(this.events)
-      const groupsArray = Object.values(locationGroups)
-      
-      this.markers.forEach((marker, index) => {
-        if (index < groupsArray.length) {
-          const eventGroup = groupsArray[index]
-          const popupContent = this.create_popup_content(eventGroup.events)
-          marker.setPopupContent(popupContent)
-        }
-      })
-    },
-
-    create_popup_content(events) {
-      if (events.length === 1) {
-        const event = events[0]
-        const editIcon = this.canEditEvents ? 
-          `<span onclick="window.editEvent(${event.id})" class="edit-icon" title="Edit event">✏️</span>` : ''
-        
-        return `
-          <div class="event-popup">
-            <div class="event-header">
-              <h4>${event.name} ${editIcon}</h4>
-            </div>
-            <p>${event.description}</p>
-            <p><strong>Date:</strong> ${event.display_date || this.format_date(event.event_date)}</p>
-            <p><strong>Type:</strong> ${event.lens_type}</p>
-          </div>
-        `
-      } else {
-        // Multiple events at same location
-        const eventsHtml = events.map((event, index) => {
-          const editIcon = this.canEditEvents ? 
-            `<span onclick="window.editEvent(${event.id})" class="edit-icon" title="Edit event">✏️</span>` : ''
-          
-          return `
-            <div class="event-item">
-              <div class="event-header">
-                <h4>${event.name} ${editIcon}</h4>
-              </div>
-              <p>${event.description}</p>
-              <p><strong>Date:</strong> ${event.display_date || this.format_date(event.event_date)}</p>
-              <p><strong>Type:</strong> ${event.lens_type}</p>
-              ${index < events.length - 1 ? '<div class="event-divider"></div>' : ''}
-            </div>
-          `
-        }).join('')
-        
-        return `
-          <div class="event-popup multi-event">
-            <div class="popup-header">
-              <h3>${events.length} Events at this location</h3>
-            </div>
-            ${eventsHtml}
-          </div>
-        `
-      }
-    },
 
     // Method to set stepping mode from parent component
     setSteppingMode(isStepping) {
       this.is_stepping = isStepping
     },
 
-    // Setup coordinate system protection to prevent _latLngToNewLayerPoint errors
-    setup_coordinate_system_protection() {
-      if (!this.map) return
-
-      // Store original map state for recovery
-      this.original_map_state = {
-        center: this.map.getCenter(),
-        zoom: this.map.getZoom()
-      }
-
-      // Override popup handling to prevent coordinate corruption
-      this.map.on('popupopen', (e) => {
-        try {
-          // Force immediate coordinate system refresh when popup opens
-          setTimeout(() => {
-            if (this.map && this.map._loaded) {
-              this.map.invalidateSize(false)
-            }
-          }, 0)
-        } catch (error) {
-          console.warn('Error during popup open handling:', error)
-        }
-      })
-
-      this.map.on('popupclose', (e) => {
-        try {
-          // Clean up coordinate system after popup closes
-          setTimeout(() => {
-            if (this.map && this.map._loaded) {
-              this.repair_coordinate_system()
-            }
-          }, 0)
-        } catch (error) {
-          console.warn('Error during popup close handling:', error)
-        }
-      })
-
-      // Monitor zoom events for coordinate system corruption
-      this.map.on('zoom', (e) => {
-        this.detect_and_fix_coordinate_corruption()
-      })
-
-      this.map.on('zoomstart', (e) => {
-        this.detect_and_fix_coordinate_corruption()
-      })
-
-      this.map.on('zoomend', (e) => {
-        this.detect_and_fix_coordinate_corruption()
-      })
-
-      // Periodic coordinate system health check
-      this.coordinate_health_check = setInterval(() => {
-        this.detect_and_fix_coordinate_corruption()
-      }, 5000) // Check every 5 seconds
+    // Show events info in custom modal (no coordinate corruption)
+    show_events_info(events) {
+      this.selected_events = events
+      this.show_event_info_modal = true
     },
 
-    // Detect and fix coordinate system corruption
-    detect_and_fix_coordinate_corruption() {
-      if (!this.map || !this.map._loaded) return
-
-      try {
-        // Test coordinate system health by trying a simple transformation
-        const testLatLng = L.latLng(0, 0)
-        this.map.latLngToContainerPoint(testLatLng)
-      } catch (error) {
-        if (error.message && error.message.includes('_latLngToNewLayerPoint')) {
-          console.log('Coordinate system corruption detected, repairing...')
-          this.repair_coordinate_system()
-        }
-      }
+    // Close event info modal
+    close_event_info_modal() {
+      this.show_event_info_modal = false
+      this.selected_events = []
     },
 
-    // Repair corrupted coordinate system
-    repair_coordinate_system() {
-      if (!this.map || !this.map._loaded) return
-
-      try {
-        // Get current state
-        const currentCenter = this.map.getCenter()
-        const currentZoom = this.map.getZoom()
-
-        // Force complete coordinate system reset
-        this.map.invalidateSize(true)
-        
-        // Reset coordinate transformation matrices
-        if (this.map._renderer && this.map._renderer._transformMatrix) {
-          delete this.map._renderer._transformMatrix
-        }
-
-        // Clear any cached coordinate transformations
-        if (this.map._pixelTransform) {
-          this.map._pixelTransform = null
-        }
-
-        // Force view reset to recalculate coordinate system
-        setTimeout(() => {
-          if (this.map && this.map._loaded) {
-            this.map.setView(currentCenter, currentZoom, {
-              reset: true,
-              animate: false
-            })
-          }
-        }, 10)
-
-        console.log('Coordinate system repaired')
-      } catch (error) {
-        console.error('Failed to repair coordinate system:', error)
-        // Last resort: force complete map refresh
-        this.emergency_map_reset()
-      }
-    },
-
-    // Emergency map reset as last resort
-    emergency_map_reset() {
-      if (!this.map) return
-
-      try {
-        console.log('Performing emergency map reset...')
-        
-        // Save current state
-        const currentCenter = this.map.getCenter()
-        const currentZoom = this.map.getZoom()
-        const currentEvents = [...this.events]
-
-        // Remove all layers
-        this.map.eachLayer((layer) => {
-          if (layer !== this.map._layers[this.map._leaflet_id]) {
-            this.map.removeLayer(layer)
-          }
-        })
-
-        // Clear all markers
-        this.markers = []
-
-        // Force complete map reset
-        this.map.remove()
-        
-        // Reinitialize map
-        setTimeout(() => {
-          this.initialize_map()
-          // Restore view
-          if (this.map) {
-            this.map.setView(currentCenter, currentZoom)
-            // Restore markers
-            this.add_event_markers()
-          }
-        }, 100)
-
-        console.log('Emergency map reset completed')
-      } catch (error) {
-        console.error('Emergency map reset failed:', error)
-      }
+    // Edit event from info modal
+    edit_event_from_info(eventId) {
+      this.close_event_info_modal()
+      this.edit_event(eventId)
     }
   }
 }
@@ -1080,21 +833,6 @@ export default {
   background: #c82333;
 }
 
-/* Event popup styling */
-:deep(.leaflet-popup-content) {
-  margin: 8px 12px;
-}
-
-:deep(.event-popup h4) {
-  margin: 0 0 8px 0;
-  color: #2c3e50;
-}
-
-:deep(.event-popup p) {
-  margin: 4px 0;
-  font-size: 13px;
-}
-
 /* Emoji marker styling */
 :deep(.emoji-marker-container) {
   background: transparent !important;
@@ -1113,57 +851,122 @@ export default {
   justify-content: center;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
-/* Event popup header */
-:deep(.event-header) {
-  margin-bottom: 8px;
+:deep(.emoji-marker:hover) {
+  transform: scale(1.1);
 }
 
-:deep(.event-header h4) {
+/* Event Info Modal Styles */
+.event-info-modal {
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  width: 90vw;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.modal-header h3 {
   margin: 0;
-  display: inline;
+  color: #2d3748;
+  font-size: 1.25rem;
 }
 
-/* Edit icon styling in popup */
-:deep(.edit-icon) {
-  font-size: 14px;
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #a0aec0;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.close-button:hover {
+  background: #f1f5f9;
+  color: #4a5568;
+}
+
+.events-list {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.event-info-item {
+  padding: 1rem 0;
+}
+
+.event-info-item:not(:last-child) {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.event-header h4 {
+  margin: 0;
+  color: #2d3748;
+  font-size: 1.1rem;
+  font-weight: 600;
+  flex: 1;
+  margin-right: 0.5rem;
+}
+
+.edit-icon {
+  font-size: 16px;
   cursor: pointer;
   opacity: 0.7;
-  transition: opacity 0.2s;
-  margin-left: 6px;
-  display: inline;
+  transition: all 0.2s;
+  padding: 0.25rem;
+  border-radius: 4px;
+  flex-shrink: 0;
 }
 
-:deep(.edit-icon:hover) {
+.edit-icon:hover {
   opacity: 1;
+  background: #f1f5f9;
+  transform: scale(1.1);
 }
 
-/* Multi-event popup styling */
-:deep(.multi-event) {
-  max-width: 300px;
+.event-description {
+  color: #4a5568;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.5;
 }
 
-:deep(.popup-header h3) {
-  margin: 0 0 12px 0;
-  font-size: 16px;
-  color: #2c3e50;
-  text-align: center;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 8px;
+.event-details p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #6b7280;
 }
 
-:deep(.event-item) {
-  margin-bottom: 12px;
+.event-details strong {
+  color: #374151;
 }
 
-:deep(.event-item:last-child) {
-  margin-bottom: 0;
-}
-
-:deep(.event-divider) {
+.event-divider {
   height: 1px;
-  background: #eee;
-  margin: 12px 0;
+  background: #e5e7eb;
+  margin: 1rem 0;
 }
 </style>
