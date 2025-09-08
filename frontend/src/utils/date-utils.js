@@ -173,9 +173,25 @@ export function formatHistoricalDate(dateInput) {
   
   // If it's an ISO string, parse it
   if (typeof dateInput === 'string') {
-    const year = parseInt(dateInput.split('-')[0], 10)
-    const era = dateInput.startsWith('-') || year < 500 ? 'BC' : 'AD'
-    const displayYear = dateInput.startsWith('-') ? Math.abs(year) + 1 : year
+    let year, era, displayYear
+    
+    if (dateInput.startsWith('-')) {
+      // BC date format: "-491-09-12T00:00:00Z"
+      const yearMatch = dateInput.match(/^-(\d+)-/)
+      if (yearMatch) {
+        year = parseInt(yearMatch[1], 10)
+        displayYear = year
+        era = 'BC'
+      } else {
+        return ''
+      }
+    } else {
+      // AD date format: "1453-05-29T00:00:00Z"
+      year = parseInt(dateInput.split('-')[0], 10)
+      era = year < 500 ? 'BC' : 'AD' // Legacy logic for old format
+      displayYear = year
+    }
+    
     return `${displayYear} ${era}`
   }
   

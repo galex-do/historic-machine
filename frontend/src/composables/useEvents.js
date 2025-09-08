@@ -46,7 +46,16 @@ export function useEvents() {
       const fromDate = parseHistoricalDate(dateFromDisplay) // Use display value to get proper BC/AD
       const toDate = parseHistoricalDate(dateToDisplay)
       
-      const eventYear = parseInt(event.event_date.split('-')[0], 10)
+      // Parse event year correctly - handle negative years for BC dates
+      let eventYear
+      if (event.event_date.startsWith('-')) {
+        // BC date format: "-491-09-12T00:00:00Z" -> year 491
+        const yearMatch = event.event_date.match(/^-(\d+)-/)
+        eventYear = yearMatch ? parseInt(yearMatch[1], 10) : 0
+      } else {
+        // AD date format: "1453-05-29T00:00:00Z" -> year 1453
+        eventYear = parseInt(event.event_date.split('-')[0], 10)
+      }
       const eventEra = event.era
       
       // Date filtering with proper BC/AD logic
