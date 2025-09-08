@@ -371,13 +371,33 @@ export default {
 
 
     const formatDate = (dateString) => {
+      if (!dateString) return 'Invalid Date'
+      
       try {
-        const date = new Date(dateString)
-        return date.toLocaleDateString('en-GB', {
-          year: 'numeric',
-          month: 'short',
-          day: 'numeric'
-        })
+        let year, month, day
+        
+        if (dateString.startsWith('-')) {
+          // BC date format: "-491-09-12T00:00:00Z"
+          const parts = dateString.substring(1).split('T')[0].split('-')
+          year = parseInt(parts[0], 10)
+          month = parseInt(parts[1], 10)
+          day = parseInt(parts[2], 10)
+        } else {
+          // AD date format: "1453-05-29T00:00:00Z"
+          const date = new Date(dateString)
+          if (isNaN(date.getTime())) return 'Invalid Date'
+          
+          return date.toLocaleDateString('en-GB', {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric'
+          })
+        }
+        
+        // For BC dates, format manually
+        const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+                           'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        return `${day} ${monthNames[month - 1]} ${year}`
       } catch {
         return 'Invalid Date'
       }
@@ -386,6 +406,7 @@ export default {
     const formatDateWithEra = (dateString, era) => {
       try {
         const formattedDate = formatDate(dateString)
+        if (formattedDate === 'Invalid Date') return 'Invalid Date'
         return `${formattedDate} ${era || 'AD'}`
       } catch {
         return 'Invalid Date'
