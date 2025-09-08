@@ -191,6 +191,13 @@ export default {
         return
       }
 
+      // Check if any popup is currently open
+      if (this.map._popup && this.map._popup._isOpen) {
+        // If popup is open, close it instead of opening event creation
+        this.map.closePopup()
+        return
+      }
+
       const { lat, lng } = event.latlng
       
       // Set coordinates for new event
