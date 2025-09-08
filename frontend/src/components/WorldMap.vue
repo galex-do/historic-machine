@@ -279,9 +279,18 @@ export default {
     },
     
     add_event_markers() {
+      // Close any open popups first to prevent binding issues
+      if (this.map) {
+        this.map.closePopup()
+      }
+      
       // Clear existing markers
       this.markers.forEach(marker => {
         if (this.map && this.map.hasLayer(marker)) {
+          // Explicitly close popup before removing marker
+          if (marker.getPopup() && marker.getPopup().isOpen()) {
+            marker.closePopup()
+          }
           this.map.removeLayer(marker)
         }
       })
