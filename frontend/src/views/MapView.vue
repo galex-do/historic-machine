@@ -35,8 +35,9 @@
         <!-- Events List in Sidebar -->
         <div class="events-sidebar-content" v-show="!sidebarCollapsed">
           <EventsGrid
-            :events="filteredEvents"
+            :events="displayedEvents"
             @focus-event="focusOnEvent"
+            @map-filter-toggle="handleMapFilterToggle"
           />
         </div>
       </aside>
@@ -49,6 +50,8 @@
           @event-created="handleEventCreated"
           @event-updated="handleEventUpdated"
           @event-deleted="handleEventDeleted"
+          @map-bounds-changed="handleMapBoundsChanged"
+          ref="worldMap"
         />
       </main>
     </div>
@@ -56,7 +59,7 @@
 </template>
 
 <script>
-import { ref, nextTick, onMounted, watch } from 'vue'
+import { ref, computed, nextTick, onMounted, watch } from 'vue'
 import DateControlBar from '@/components/filters/DateControlBar.vue'
 import WorldMap from '@/components/WorldMap.vue'
 import EventsGrid from '@/components/events/EventsGrid.vue'
@@ -86,6 +89,11 @@ export default {
     
     const sidebarCollapsed = ref(loadSidebarState())
     const focusEvent = ref(null)
+    const worldMap = ref(null)
+    
+    // Map filter state
+    const mapFilterEnabled = ref(false)
+    const mapBounds = ref(null)
     
     // Save sidebar state to session storage
     watch(sidebarCollapsed, (newValue) => {
@@ -219,6 +227,48 @@ export default {
       focusEvent.value = { ...event, timestamp: Date.now() }
     }
 
+    // Map filter methods
+    const handleMapFilterToggle = (enabled) => {
+      mapFilterEnabled.value = enabled
+      if (enabled && worldMap.value) {
+        // Get current map bounds when enabling filter
+        worldMap.value.getCurrentBounds().then(bounds => {
+          mapBounds.value = bounds
+        })
+      }
+    }
+
+    const handleMapBoundsChanged = (bounds) => {
+      if (mapFilterEnabled.value) {
+        mapBounds.value = bounds
+      }
+    }
+
+    const isEventInBounds = (event, bounds) => {
+      if (!bounds || !event.latitude || !event.longitude) {
+        return true
+      }
+      
+      const lat = parseFloat(event.latitude)
+      const lng = parseFloat(event.longitude)
+      
+      return lat >= bounds.south && 
+             lat <= bounds.north && 
+             lng >= bounds.west && 
+             lng <= bounds.east
+    }
+
+    // Computed property for events displayed in sidebar
+    const displayedEvents = computed(() => {
+      if (!mapFilterEnabled.value || !mapBounds.value) {
+        return filteredEvents.value
+      }
+      
+      return filteredEvents.value.filter(event => 
+        isEventInBounds(event, mapBounds.value)
+      )
+    })
+
     // Click outside to close dropdown
     const handleClickOutside = (event) => {
       // Close lens dropdown if clicking outside
@@ -283,7 +333,13 @@ export default {
       // Methods
       toggleSidebar,
       applyFilters,
-      focusOnEvent
+      focusOnEvent,
+
+      // Map filter
+      displayedEvents,
+      handleMapFilterToggle,
+      handleMapBoundsChanged,
+      worldMap
     }
   }
 }
