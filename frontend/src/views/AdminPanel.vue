@@ -357,7 +357,7 @@ import { ref, onMounted, computed } from 'vue'
 import { useAuth } from '@/composables/useAuth.js'
 import { useTags } from '@/composables/useTags.js'
 import { useEvents } from '@/composables/useEvents.js'
-import { useFilters } from '@/composables/useFilters.js'
+import { getAvailableLensTypes } from '@/utils/event-utils.js'
 import apiService from '@/services/api.js'
 import TablePagination from '@/components/TablePagination.vue'
 import EventTypeFilter from '@/components/filters/EventTypeFilter.vue'
@@ -372,12 +372,18 @@ export default {
     const { canAccessAdmin } = useAuth()
     const { allTags, loadTags, createTag, setEventTags, getTagsByIds } = useTags()
     const { events, fetchEvents, loading, error, handleEventDeleted } = useEvents()
-    const { 
-      selectedLensTypes, 
-      showLensDropdown, 
-      toggleLensDropdown, 
-      handleLensTypesChange 
-    } = useFilters()
+    // Local filter state for admin panel
+    const selectedLensTypes = ref(['historic', 'political', 'cultural', 'military', 'scientific'])
+    const showLensDropdown = ref(false)
+    
+    // Filter methods
+    const toggleLensDropdown = () => {
+      showLensDropdown.value = !showLensDropdown.value
+    }
+    
+    const handleLensTypesChange = (newLensTypes) => {
+      selectedLensTypes.value = newLensTypes
+    }
     
     const localLoading = ref(false)
     const localError = ref(null)
@@ -935,7 +941,13 @@ export default {
       toggleSort,
       fileInput,
       triggerFileUpload,
-      handleFileUpload
+      handleFileUpload,
+      // Filter state and methods
+      selectedLensTypes,
+      showLensDropdown,
+      toggleLensDropdown,
+      handleLensTypesChange,
+      filteredEvents
     }
   }
 }
