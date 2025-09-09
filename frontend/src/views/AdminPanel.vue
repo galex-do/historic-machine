@@ -82,19 +82,7 @@
               </span>
             </th>
             <th>Location</th>
-            <th 
-              class="sortable-header" 
-              @click="toggleSort('type')"
-              :class="{ 'active': sortField === 'type' }"
-            >
-              Type
-              <span class="sort-indicator">
-                <span v-if="sortField === 'type'" class="sort-arrow">
-                  {{ sortDirection === 'asc' ? '▲' : '▼' }}
-                </span>
-                <span v-else class="sort-placeholder">⇅</span>
-              </span>
-            </th>
+            <th>Type</th>
             <th>Tags</th>
             <th>Actions</th>
           </tr>
@@ -772,8 +760,8 @@ export default {
             let aValue, bValue
             
             if (sortField.value === 'date') {
-              aValue = new Date(a.date || 0)
-              bValue = new Date(b.date || 0)
+              aValue = new Date(a.event_date || a.date || 0)
+              bValue = new Date(b.event_date || b.date || 0)
             } else {
               aValue = a[sortField.value] || ''
               bValue = b[sortField.value] || ''
