@@ -33,6 +33,14 @@
       
       <!-- Table Controls & Pagination -->
       <div v-if="!loading && totalEvents > 0" class="table-controls">
+        <div class="table-filters">
+          <EventTypeFilter
+            :selected-lens-types="selectedLensTypes"
+            :show-dropdown="showLensDropdown"
+            @toggle-dropdown="toggleLensDropdown"
+            @lens-types-changed="handleLensTypesChange"
+          />
+        </div>
         <TablePagination 
           :current-page="currentPage"
           :page-size="pageSize"
@@ -92,7 +100,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="event in displayedEvents" :key="event.id" class="event-row">
+          <tr v-for="event in filteredEvents" :key="event.id" class="event-row">
             <td class="event-name">{{ event.name }}</td>
             <td class="event-description">
               <span class="description-text" :title="event.description">
@@ -136,6 +144,10 @@
       
       <div v-if="!loading && totalEvents === 0" class="empty-state">
         <p>No events found. Create your first historical event!</p>
+      </div>
+      
+      <div v-if="!loading && totalEvents > 0 && filteredEvents.length === 0" class="empty-state">
+        <p>No events match the selected filters. Try adjusting your event type selection.</p>
       </div>
     </div>
 
@@ -345,18 +357,27 @@ import { ref, onMounted, computed } from 'vue'
 import { useAuth } from '@/composables/useAuth.js'
 import { useTags } from '@/composables/useTags.js'
 import { useEvents } from '@/composables/useEvents.js'
+import { useFilters } from '@/composables/useFilters.js'
 import apiService from '@/services/api.js'
 import TablePagination from '@/components/TablePagination.vue'
+import EventTypeFilter from '@/components/filters/EventTypeFilter.vue'
 
 export default {
   name: 'AdminPanel',
   components: {
-    TablePagination
+    TablePagination,
+    EventTypeFilter
   },
   setup() {
     const { canAccessAdmin } = useAuth()
     const { allTags, loadTags, createTag, setEventTags, getTagsByIds } = useTags()
     const { events, fetchEvents, loading, error, handleEventDeleted } = useEvents()
+    const { 
+      selectedLensTypes, 
+      showLensDropdown, 
+      toggleLensDropdown, 
+      handleLensTypesChange 
+    } = useFilters()
     
     const localLoading = ref(false)
     const localError = ref(null)
@@ -376,6 +397,23 @@ export default {
     const totalEvents = ref(0)
     const displayedEvents = ref([])
     const paginatedLoading = ref(false)
+    
+    // Filtered events based on lens type selection
+    const filteredEvents = computed(() => {
+      if (!displayedEvents.value || displayedEvents.value.length === 0) {
+        return []
+      }
+      
+      // If all types are selected or none are selected, show all events
+      if (selectedLensTypes.value.length === 0 || selectedLensTypes.value.length === 5) {
+        return displayedEvents.value
+      }
+      
+      // Filter by selected lens types
+      return displayedEvents.value.filter(event => 
+        selectedLensTypes.value.includes(event.lens_type)
+      )
+    })
     
     const eventForm = ref({
       name: '',
@@ -964,10 +1002,19 @@ export default {
 }
 
 .table-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0.75rem 1.25rem;
   background: #f8fafc;
   border-bottom: 1px solid #e2e8f0;
   border-radius: 12px 12px 0 0;
+}
+
+.table-filters {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .loading-state {
