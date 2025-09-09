@@ -18,6 +18,7 @@ type HistoricalEvent struct {
         LensType    string    `json:"lens_type"`
         DisplayDate string    `json:"display_date,omitempty"`
         DatasetID   *int      `json:"dataset_id,omitempty"`
+        CreatedBy   int       `json:"created_by"` // User ID who created this event
         Tags        []Tag     `json:"tags,omitempty"`
 }
 
@@ -65,7 +66,7 @@ type CreateEventRequest struct {
 }
 
 // ToHistoricalEvent converts CreateEventRequest to HistoricalEvent
-func (req *CreateEventRequest) ToHistoricalEvent() *HistoricalEvent {
+func (req *CreateEventRequest) ToHistoricalEvent(createdBy int) *HistoricalEvent {
         era := req.Era
         if era == "" {
                 era = "AD"
@@ -80,5 +81,6 @@ func (req *CreateEventRequest) ToHistoricalEvent() *HistoricalEvent {
                 Era:         era,
                 LensType:    req.LensType,
                 DatasetID:   req.DatasetID,
+                CreatedBy:   createdBy,
         }
 }

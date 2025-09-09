@@ -136,8 +136,15 @@ func (h *EventHandler) CreateEvent(w http.ResponseWriter, r *http.Request) {
                 return
         }
         
+        // Get current user from context
+        user := getUserFromContext(r.Context())
+        if user == nil {
+                response.BadRequest(w, "User not found in context")
+                return
+        }
+        
         // Convert request to event model
-        event := req.ToHistoricalEvent()
+        event := req.ToHistoricalEvent(user.ID)
         
         // Create event
         createdEvent, err := h.eventRepo.Create(event)
@@ -173,8 +180,15 @@ func (h *EventHandler) UpdateEvent(w http.ResponseWriter, r *http.Request) {
                 return
         }
         
+        // Get current user from context
+        user := getUserFromContext(r.Context())
+        if user == nil {
+                response.BadRequest(w, "User not found in context")
+                return
+        }
+        
         // Convert request to event model and set ID
-        event := req.ToHistoricalEvent()
+        event := req.ToHistoricalEvent(user.ID)
         event.ID = id
         
         // Update event
