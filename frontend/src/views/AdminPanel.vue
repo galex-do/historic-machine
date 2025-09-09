@@ -1041,6 +1041,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
   padding: 0.75rem 1.25rem;
   background: #f8fafc;
   border-bottom: 1px solid #e2e8f0;
