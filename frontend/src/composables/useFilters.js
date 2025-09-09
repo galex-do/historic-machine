@@ -39,7 +39,7 @@ const dateFromDisplay = ref(loadFromStorage(STORAGE_KEYS.DATE_FROM_DISPLAY, '1 A
 const dateToDisplay = ref(loadFromStorage(STORAGE_KEYS.DATE_TO_DISPLAY, '2025 AD'))
 
 // Lens type filtering state (load from session storage or use all types as default)
-const selectedLensTypes = ref(loadFromStorage(STORAGE_KEYS.SELECTED_LENS_TYPES, ['historic', 'political', 'cultural', 'military']))
+const selectedLensTypes = ref(loadFromStorage(STORAGE_KEYS.SELECTED_LENS_TYPES, ['historic', 'political', 'cultural', 'military', 'scientific']))
 const showLensDropdown = ref(false)
 
 export function useFilters() {
