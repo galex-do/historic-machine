@@ -3,7 +3,9 @@ import { useAuth } from '@/composables/useAuth.js'
 
 // Lazy-loaded components
 const MapView = () => import('@/views/MapView.vue')
-const AdminPanel = () => import('@/views/AdminPanel.vue')
+const AdminEvents = () => import('@/views/AdminEvents.vue')
+const AdminTags = () => import('@/views/AdminTags.vue')
+const AdminUsers = () => import('@/views/AdminUsers.vue')
 
 const routes = [
   {
@@ -12,10 +14,27 @@ const routes = [
     component: MapView
   },
   {
-    path: '/events',
-    name: 'Events',
-    component: AdminPanel,
+    path: '/admin/events',
+    name: 'AdminEvents',
+    component: AdminEvents,
     meta: { requiresAdmin: true }
+  },
+  {
+    path: '/admin/tags',
+    name: 'AdminTags',
+    component: AdminTags,
+    meta: { requiresAdmin: true }
+  },
+  {
+    path: '/admin/users',
+    name: 'AdminUsers',
+    component: AdminUsers,
+    meta: { requiresAdmin: true, requiresSuper: true }
+  },
+  // Legacy routes for backward compatibility
+  {
+    path: '/events',
+    redirect: '/admin/events'
   },
   {
     path: '/datasets',
@@ -33,7 +52,7 @@ const router = createRouter({
 // Navigation guard for admin routes
 router.beforeEach(async (to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAdmin)) {
-    const { canAccessAdmin, loading, authInitialized, initAuth } = useAuth()
+    const { canAccessAdmin, isSuper, loading, authInitialized, initAuth } = useAuth()
     
     // If authentication hasn't been initialized yet, initialize it
     if (!authInitialized.value && !loading.value) {
@@ -45,11 +64,23 @@ router.beforeEach(async (to, from, next) => {
       await new Promise(resolve => setTimeout(resolve, 50))
     }
     
-    if (canAccessAdmin.value) {
-      next()
-    } else {
+    // Check admin access first
+    if (!canAccessAdmin.value) {
       // Redirect to map view if user doesn't have admin access
       next({ name: 'Map' })
+      return
+    }
+    
+    // Check super access for super-only routes
+    if (to.matched.some(record => record.meta.requiresSuper)) {
+      if (isSuper.value) {
+        next()
+      } else {
+        // Redirect to admin events if user doesn't have super access
+        next({ name: 'AdminEvents' })
+      }
+    } else {
+      next()
     }
   } else {
     next()

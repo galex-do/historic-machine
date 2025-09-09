@@ -18,7 +18,7 @@
         <div v-if="canAccessAdmin" class="admin-dropdown" @click.stop>
           <button 
             class="nav-link dropdown-trigger" 
-            :class="{ 'nav-link-active': $route.path.startsWith('/events') }"
+            :class="{ 'nav-link-active': $route.path.startsWith('/admin') || $route.path.startsWith('/events') || $route.path.startsWith('/datasets') }"
             @click="toggleAdminDropdown"
           >
             <span class="nav-icon">⚙️</span>
@@ -27,13 +27,31 @@
           </button>
           <div v-if="showAdminDropdown" class="dropdown-menu">
             <router-link 
-              to="/events" 
+              to="/admin/events" 
               class="dropdown-item"
               @click="showAdminDropdown = false"
             >
               <span class="dropdown-icon">📅</span>
               Events
             </router-link>
+            <router-link 
+              to="/admin/tags" 
+              class="dropdown-item"
+              @click="showAdminDropdown = false"
+            >
+              <span class="dropdown-icon">🏷️</span>
+              Tags
+            </router-link>
+            <router-link 
+              v-if="isSuper"
+              to="/admin/users" 
+              class="dropdown-item"
+              @click="showAdminDropdown = false"
+            >
+              <span class="dropdown-icon">👥</span>
+              Users
+            </router-link>
+            <div class="dropdown-divider"></div>
             <router-link 
               to="/datasets" 
               class="dropdown-item"
@@ -131,7 +149,7 @@ import { useAuth } from '@/composables/useAuth.js'
 export default {
   name: 'AppHeader',
   setup() {
-    const { user, isAuthenticated, isGuest, canAccessAdmin, loading, error, login, logout, clearError } = useAuth()
+    const { user, isAuthenticated, isGuest, canAccessAdmin, isSuper, loading, error, login, logout, clearError } = useAuth()
     
     const showLoginModal = ref(false)
     const showAdminDropdown = ref(false)
@@ -191,6 +209,7 @@ export default {
       isAuthenticated,
       isGuest,
       canAccessAdmin,
+      isSuper,
       loading,
       error,
       showLoginModal,
@@ -419,6 +438,12 @@ export default {
 
 .dropdown-icon {
   font-size: 1rem;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 0.5rem 0;
 }
 
 /* Global modal styles - not scoped since we use Teleport */
