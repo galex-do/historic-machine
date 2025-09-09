@@ -9,14 +9,10 @@
       :selected-template-group-id="selectedTemplateGroupId"
       :selected-template-id="selectedTemplateId"
       :selected-template="selectedTemplate"
-      :selected-lens-types="selectedLensTypes"
-      :show-lens-dropdown="showLensDropdown"
       @date-from-changed="handleDateFromChange"
       @date-to-changed="handleDateToChange"
       @template-group-changed="handleTemplateGroupChange"
       @template-changed="handleTemplateChange"
-      @toggle-lens-dropdown="toggleLensDropdown"
-      @lens-types-changed="handleLensTypesChange"
       @apply-filters="applyFilters"
     />
     

@@ -73,15 +73,6 @@
           </div>
         </div>
         
-        <!-- Event Type Filter -->
-        <div class="event-type-section">
-          <EventTypeFilter
-            :selected-lens-types="selectedLensTypes"
-            :show-dropdown="showLensDropdown"
-            @toggle-dropdown="$emit('toggle-lens-dropdown')"
-            @lens-types-changed="$emit('lens-types-changed', $event)"
-          />
-        </div>
       </div>
       
       <!-- Right-aligned Apply button -->
@@ -96,13 +87,11 @@
 import { ref } from 'vue'
 import { addYearsToHistoricalDate, parseHistoricalDate } from '@/utils/date-utils.js'
 import DateTemplateSelector from './DateTemplateSelector.vue'
-import EventTypeFilter from './EventTypeFilter.vue'
 
 export default {
   name: 'DateControlBar',
   components: {
-    DateTemplateSelector,
-    EventTypeFilter
+    DateTemplateSelector
   },
   props: {
     dateFromDisplay: {
@@ -132,14 +121,6 @@ export default {
     selectedTemplate: {
       type: Object,
       default: null
-    },
-    selectedLensTypes: {
-      type: Array,
-      default: () => []
-    },
-    showLensDropdown: {
-      type: Boolean,
-      default: false
     }
   },
   emits: [
@@ -147,8 +128,6 @@ export default {
     'date-to-changed', 
     'template-group-changed', 
     'template-changed', 
-    'toggle-lens-dropdown', 
-    'lens-types-changed',
     'apply-filters'
   ],
   setup(props, { emit }) {
