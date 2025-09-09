@@ -400,8 +400,12 @@ export default {
     
     // Filtered events based on lens type selection
     const filteredEvents = computed(() => {
-      if (!displayedEvents.value || displayedEvents.value.length === 0) {
+      if (!displayedEvents.value || !Array.isArray(displayedEvents.value) || displayedEvents.value.length === 0) {
         return []
+      }
+      
+      if (!selectedLensTypes.value || !Array.isArray(selectedLensTypes.value)) {
+        return displayedEvents.value
       }
       
       // If all types are selected or none are selected, show all events
@@ -411,7 +415,7 @@ export default {
       
       // Filter by selected lens types
       return displayedEvents.value.filter(event => 
-        selectedLensTypes.value.includes(event.lens_type)
+        event && event.lens_type && selectedLensTypes.value.includes(event.lens_type)
       )
     })
     
