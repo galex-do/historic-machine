@@ -19,6 +19,7 @@ type HistoricalEvent struct {
         DisplayDate string    `json:"display_date,omitempty"`
         DatasetID   *int      `json:"dataset_id,omitempty"`
         CreatedBy   *int      `json:"created_by"` // User ID who created this event
+        UpdatedBy   *int      `json:"updated_by"` // User ID who last updated this event
         Tags        []Tag     `json:"tags,omitempty"`
 }
 
