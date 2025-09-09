@@ -88,7 +88,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="event in filteredEvents" :key="event.id" class="event-row">
+          <tr v-for="event in currentPageEvents" :key="event.id" class="event-row">
             <td class="event-name">{{ event.name }}</td>
             <td class="event-description">
               <span class="description-text" :title="event.description">
@@ -396,21 +396,39 @@ export default {
     // All events (for filtering before pagination)
     const allEvents = ref([])
     
-    // Filtered events based on single lens type selection
+    // Filtered and sorted events based on lens type selection and current sort settings
     const filteredEvents = computed(() => {
       if (!allEvents.value || !Array.isArray(allEvents.value) || allEvents.value.length === 0) {
         return []
       }
       
-      // If 'all' is selected, show all events
-      if (selectedLensType.value === 'all') {
-        return allEvents.value
+      let filtered = allEvents.value
+      
+      // Apply lens type filter
+      if (selectedLensType.value !== 'all') {
+        filtered = filtered.filter(event => 
+          event && event.lens_type && event.lens_type === selectedLensType.value
+        )
       }
       
-      // Filter by selected lens type
-      return allEvents.value.filter(event => 
-        event && event.lens_type && event.lens_type === selectedLensType.value
-      )
+      // Apply sorting
+      return [...filtered].sort((a, b) => {
+        let aValue, bValue
+        
+        if (sortField.value === 'date') {
+          aValue = new Date(a.event_date || a.date || 0)
+          bValue = new Date(b.event_date || b.date || 0)
+        } else {
+          aValue = a[sortField.value] || ''
+          bValue = b[sortField.value] || ''
+        }
+        
+        if (sortDirection.value === 'asc') {
+          return aValue < bValue ? -1 : aValue > bValue ? 1 : 0
+        } else {
+          return aValue > bValue ? -1 : aValue < bValue ? 1 : 0
+        }
+      })
     })
     
     // Update total events to reflect filtered count
@@ -754,26 +772,7 @@ export default {
         await fetchEvents()
         allEvents.value = events.value || []
         
-        // Sort the events based on current sort settings
-        if (allEvents.value.length > 0) {
-          allEvents.value.sort((a, b) => {
-            let aValue, bValue
-            
-            if (sortField.value === 'date') {
-              aValue = new Date(a.event_date || a.date || 0)
-              bValue = new Date(b.event_date || b.date || 0)
-            } else {
-              aValue = a[sortField.value] || ''
-              bValue = b[sortField.value] || ''
-            }
-            
-            if (sortDirection.value === 'asc') {
-              return aValue < bValue ? -1 : aValue > bValue ? 1 : 0
-            } else {
-              return aValue > bValue ? -1 : aValue < bValue ? 1 : 0
-            }
-          })
-        }
+        // Events are now sorted in the filteredEvents computed property
       } catch (err) {
         console.error('Error fetching all events:', err)
         localError.value = 'Failed to load events'
@@ -856,9 +855,8 @@ export default {
         sortField.value = field
         sortDirection.value = 'asc'
       }
-      // Refresh data with new sorting and reset to first page
+      // Reset to first page when sorting changes
       currentPage.value = 1
-      fetchAllEvents()
     }
     
     // Import functions
