@@ -416,8 +416,27 @@ export default {
         let aValue, bValue
         
         if (sortField.value === 'date') {
-          aValue = new Date(a.event_date || a.date || 0)
-          bValue = new Date(b.event_date || b.date || 0)
+          // Use proper astronomical year for chronological sorting
+          const getAstronomicalYear = (dateString) => {
+            if (dateString.startsWith('-')) {
+              // BC date format: "-754-04-21T00:00:00Z" 
+              const parts = dateString.substring(1).split('T')[0].split('-')
+              const year = parseInt(parts[0], 10)
+              const month = parseInt(parts[1], 10)
+              const day = parseInt(parts[2], 10)
+              
+              // Convert to astronomical year: 754 BC = -753 astronomical year
+              // Add month/day for sub-year precision
+              return -(year - 1) - (month / 12) - (day / 365)
+            } else {
+              // AD date: use normal date parsing
+              const date = new Date(dateString)
+              return date.getFullYear() + (date.getMonth() / 12) + (date.getDate() / 365)
+            }
+          }
+          
+          aValue = getAstronomicalYear(a.event_date || a.date || '0')
+          bValue = getAstronomicalYear(b.event_date || b.date || '0')
         } else {
           aValue = a[sortField.value] || ''
           bValue = b[sortField.value] || ''
