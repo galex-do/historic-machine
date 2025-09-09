@@ -35,10 +35,10 @@
       <div v-if="!loading && totalEvents > 0" class="table-controls">
         <div class="table-filters">
           <EventTypeFilter
-            :selected-lens-types="selectedLensTypes"
+            :selected-lens-type="selectedLensType"
             :show-dropdown="showLensDropdown"
             @toggle-dropdown="toggleLensDropdown"
-            @lens-types-changed="handleLensTypesChange"
+            @lens-type-changed="handleLensTypeChange"
           />
         </div>
         <TablePagination 
@@ -372,8 +372,8 @@ export default {
     const { canAccessAdmin } = useAuth()
     const { allTags, loadTags, createTag, setEventTags, getTagsByIds } = useTags()
     const { events, fetchEvents, loading, error, handleEventDeleted } = useEvents()
-    // Local filter state for admin panel
-    const selectedLensTypes = ref(['historic', 'political', 'cultural', 'military', 'scientific'])
+    // Local filter state for admin panel (single-select)
+    const selectedLensType = ref('all')
     const showLensDropdown = ref(false)
     
     // Filter methods
@@ -381,8 +381,9 @@ export default {
       showLensDropdown.value = !showLensDropdown.value
     }
     
-    const handleLensTypesChange = (newLensTypes) => {
-      selectedLensTypes.value = newLensTypes
+    const handleLensTypeChange = (newLensType) => {
+      selectedLensType.value = newLensType
+      currentPage.value = 1 // Reset to first page when filter changes
     }
     
     const localLoading = ref(false)
@@ -404,25 +405,34 @@ export default {
     const displayedEvents = ref([])
     const paginatedLoading = ref(false)
     
-    // Filtered events based on lens type selection
+    // All events (for filtering before pagination)
+    const allEvents = ref([])
+    
+    // Filtered events based on single lens type selection
     const filteredEvents = computed(() => {
-      if (!displayedEvents.value || !Array.isArray(displayedEvents.value) || displayedEvents.value.length === 0) {
+      if (!allEvents.value || !Array.isArray(allEvents.value) || allEvents.value.length === 0) {
         return []
       }
       
-      if (!selectedLensTypes.value || !Array.isArray(selectedLensTypes.value)) {
-        return displayedEvents.value
+      // If 'all' is selected, show all events
+      if (selectedLensType.value === 'all') {
+        return allEvents.value
       }
       
-      // If all types are selected or none are selected, show all events
-      if (selectedLensTypes.value.length === 0 || selectedLensTypes.value.length === 5) {
-        return displayedEvents.value
-      }
-      
-      // Filter by selected lens types
-      return displayedEvents.value.filter(event => 
-        event && event.lens_type && selectedLensTypes.value.includes(event.lens_type)
+      // Filter by selected lens type
+      return allEvents.value.filter(event => 
+        event && event.lens_type && event.lens_type === selectedLensType.value
       )
+    })
+    
+    // Update total events to reflect filtered count
+    const filteredTotalEvents = computed(() => filteredEvents.value.length)
+    
+    // Current page of filtered events
+    const currentPageEvents = computed(() => {
+      const start = (currentPage.value - 1) * pageSize.value
+      const end = start + pageSize.value
+      return filteredEvents.value.slice(start, end)
     })
     
     const eventForm = ref({
@@ -748,28 +758,36 @@ export default {
       }
     }
     
-    // Pagination functions
-    const fetchPaginatedEvents = async () => {
+    // Fetch all events for client-side filtering and pagination
+    const fetchAllEvents = async () => {
       paginatedLoading.value = true
       try {
-        const response = await apiService.getEvents(
-          currentPage.value, 
-          pageSize.value, 
-          sortField.value, 
-          sortDirection.value
-        )
+        // Use the events composable to get all events
+        await fetchEvents()
+        allEvents.value = events.value || []
         
-        if (response.pagination) {
-          // New paginated response format
-          displayedEvents.value = response.events || []
-          totalEvents.value = response.pagination.total_items || 0
-        } else {
-          // Fallback to non-paginated response
-          displayedEvents.value = response || []
-          totalEvents.value = displayedEvents.value.length
+        // Sort the events based on current sort settings
+        if (allEvents.value.length > 0) {
+          allEvents.value.sort((a, b) => {
+            let aValue, bValue
+            
+            if (sortField.value === 'date') {
+              aValue = new Date(a.date || 0)
+              bValue = new Date(b.date || 0)
+            } else {
+              aValue = a[sortField.value] || ''
+              bValue = b[sortField.value] || ''
+            }
+            
+            if (sortDirection.value === 'asc') {
+              return aValue < bValue ? -1 : aValue > bValue ? 1 : 0
+            } else {
+              return aValue > bValue ? -1 : aValue < bValue ? 1 : 0
+            }
+          })
         }
       } catch (err) {
-        console.error('Error fetching paginated events:', err)
+        console.error('Error fetching all events:', err)
         localError.value = 'Failed to load events'
       } finally {
         paginatedLoading.value = false
@@ -778,13 +796,13 @@ export default {
     
     const handlePageChange = (page) => {
       currentPage.value = page
-      fetchPaginatedEvents()
+      // No need to refetch - just change page in computed property
     }
     
     const handlePageSizeChange = (size) => {
       pageSize.value = size
       currentPage.value = 1 // Reset to first page
-      fetchPaginatedEvents()
+      // No need to refetch - just change page size in computed property
     }
     
     // Computed sorted events (kept for compatibility but not used in pagination mode)
@@ -852,7 +870,7 @@ export default {
       }
       // Refresh data with new sorting and reset to first page
       currentPage.value = 1
-      fetchPaginatedEvents()
+      fetchAllEvents()
     }
     
     // Import functions
@@ -898,7 +916,7 @@ export default {
     
     onMounted(async () => {
       await loadTags()
-      await fetchPaginatedEvents()
+      await fetchAllEvents()
     })
 
     return {
@@ -919,11 +937,11 @@ export default {
       // Pagination state and functions
       currentPage,
       pageSize,
-      totalEvents,
-      displayedEvents,
+      totalEvents: filteredTotalEvents,
+      displayedEvents: currentPageEvents,
       handlePageChange,
       handlePageSizeChange,
-      fetchPaginatedEvents,
+      fetchAllEvents,
       fetchEvents,
       formatDate,
       formatDateWithEra,
@@ -943,11 +961,13 @@ export default {
       triggerFileUpload,
       handleFileUpload,
       // Filter state and methods
-      selectedLensTypes,
+      selectedLensType,
       showLensDropdown,
       toggleLensDropdown,
-      handleLensTypesChange,
-      filteredEvents
+      handleLensTypeChange,
+      filteredEvents,
+      currentPageEvents,
+      filteredTotalEvents
     }
   }
 }

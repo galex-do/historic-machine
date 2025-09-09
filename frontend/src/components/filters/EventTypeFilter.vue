@@ -1,91 +1,79 @@
 <template>
   <div class="filter-field">
-    <label class="filter-label">Event Types:</label>
-    <div class="multiselect-container">
+    <label class="filter-label">Event Type:</label>
+    <div class="select-container">
       <div 
-        class="multiselect-dropdown" 
+        class="select-dropdown" 
         @click="$emit('toggle-dropdown')" 
         :class="{ 'active': showDropdown }"
       >
-        <div class="multiselect-display">
-          <span v-if="selectedLensTypes.length === 0" class="placeholder">
-            Select event types...
+        <div class="select-display">
+          <span class="selection-text">
+            {{ getDisplayText() }}
           </span>
-          <span v-else-if="selectedLensTypes.length === availableLensTypes.length" class="selection-text">
-            All types selected
-          </span>
-          <div v-else class="selected-badges">
-            <span v-for="type in selectedLensTypes" :key="type" :class="['selected-badge', type]">
-              {{ getEventEmoji(type) }} {{ getLensLabel(type) }}
-            </span>
-          </div>
         </div>
         <span class="dropdown-arrow">{{ showDropdown ? '▲' : '▼' }}</span>
       </div>
       
-      <div v-show="showDropdown" class="multiselect-options">
-        <label v-for="lens in availableLensTypes" :key="lens.value" class="multiselect-option">
-          <input 
-            type="checkbox" 
-            :value="lens.value" 
-            :checked="selectedLensTypes.includes(lens.value)"
-            @change="handleLensTypeChange" 
-          />
+      <div v-show="showDropdown" class="select-options">
+        <div 
+          v-for="option in filterOptions" 
+          :key="option.value" 
+          class="select-option"
+          :class="{ 'selected': selectedLensType === option.value }"
+          @click="handleOptionClick(option.value)"
+        >
           <span class="option-content">
-            <span class="option-label">{{ lens.label }}</span>
+            <span class="option-label">{{ option.label }}</span>
           </span>
-        </label>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { getEventEmoji, getLensLabel, getAvailableLensTypes } from '@/utils/event-utils.js'
-
 export default {
   name: 'EventTypeFilter',
   props: {
-    selectedLensTypes: {
-      type: Array,
-      default: () => []
+    selectedLensType: {
+      type: String,
+      default: 'all'
     },
     showDropdown: {
       type: Boolean,
       default: false
     }
   },
-  emits: ['toggle-dropdown', 'lens-types-changed'],
-  computed: {
-    availableLensTypes() {
-      return getAvailableLensTypes()
+  emits: ['toggle-dropdown', 'lens-type-changed'],
+  data() {
+    return {
+      filterOptions: [
+        { value: 'all', label: 'All Types' },
+        { value: 'historic', label: '🏛️ Historic' },
+        { value: 'political', label: '🏛️ Political' },
+        { value: 'cultural', label: '🎭 Cultural' },
+        { value: 'scientific', label: '🔬 Scientific' },
+        { value: 'military', label: '⚔️ Military' }
+      ]
     }
   },
   methods: {
-    getEventEmoji,
-    getLensLabel,
-    handleLensTypeChange(event) {
-      const value = event.target.value
-      const isChecked = event.target.checked
-      
-      let newSelectedTypes = [...this.selectedLensTypes]
-      
-      if (isChecked) {
-        if (!newSelectedTypes.includes(value)) {
-          newSelectedTypes.push(value)
-        }
-      } else {
-        newSelectedTypes = newSelectedTypes.filter(type => type !== value)
-      }
-      
-      this.$emit('lens-types-changed', newSelectedTypes)
+    getDisplayText() {
+      const option = this.filterOptions.find(opt => opt.value === this.selectedLensType)
+      return option ? option.label : 'All Types'
+    },
+    
+    handleOptionClick(value) {
+      this.$emit('lens-type-changed', value)
+      this.$emit('toggle-dropdown') // Close dropdown after selection
     }
   }
 }
 </script>
 
 <style scoped>
-.multiselect-container {
+.select-container {
   position: relative;
 }
 
@@ -104,7 +92,7 @@ export default {
   margin: 0;
 }
 
-.multiselect-dropdown {
+.select-dropdown {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -118,87 +106,82 @@ export default {
   min-width: 180px;
 }
 
-.multiselect-dropdown:hover,
-.multiselect-dropdown.active {
+.select-dropdown:hover,
+.select-dropdown.active {
   border-color: #667eea;
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
-.multiselect-display {
+.select-display {
   flex: 1;
-}
-
-.placeholder {
-  color: #a0aec0;
-  font-style: italic;
 }
 
 .selection-text {
   color: #2d3748;
-  font-weight: 500;
-}
-
-.selected-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem;
-}
-
-.selected-badge {
-  background: #f0f4ff;
-  color: #667eea;
-  border: 1px solid #ddd6fe;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
 .dropdown-arrow {
+  color: #a0aec0;
+  font-size: 0.75rem;
   margin-left: 0.5rem;
   transition: transform 0.2s;
 }
 
-.multiselect-options {
+.select-dropdown.active .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.select-options {
   position: absolute;
   top: 100%;
   left: 0;
   right: 0;
+  z-index: 1000;
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  z-index: 1000;
-  max-height: 200px;
+  margin-top: 2px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  max-height: 300px;
   overflow-y: auto;
-  margin-top: 0.25rem;
 }
 
-.multiselect-option {
+.select-option {
   display: flex;
   align-items: center;
   padding: 0.75rem;
   cursor: pointer;
   transition: background-color 0.2s;
-  color: #2d3748;
+  border-bottom: 1px solid #f7fafc;
 }
 
-.multiselect-option:hover {
-  background: #f8f9fa;
+.select-option:last-child {
+  border-bottom: none;
 }
 
-.multiselect-option input[type="checkbox"] {
-  margin-right: 0.75rem;
-  transform: scale(1.2);
-  accent-color: #667eea;
+.select-option:hover {
+  background-color: #f7fafc;
+}
+
+.select-option.selected {
+  background-color: #667eea;
+  color: white;
+}
+
+.select-option.selected:hover {
+  background-color: #5a67d8;
 }
 
 .option-content {
-  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .option-label {
+  font-size: 0.9rem;
   font-weight: 500;
-  color: #2d3748;
 }
 </style>
