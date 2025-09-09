@@ -21,7 +21,7 @@ func NewEventRepository(db *sql.DB) *EventRepository {
 // GetAll retrieves all events from the database
 func (r *EventRepository) GetAll() ([]models.HistoricalEvent, error) {
         query := `
-                SELECT id, name, description, latitude, longitude, event_date, era, lens_type, display_date, created_by, updated_by, tags
+                SELECT id, name, description, latitude, longitude, event_date, era, lens_type, display_date, created_by, tags
                 FROM events_with_display_dates 
                 ORDER BY astronomical_year ASC`
         
@@ -38,7 +38,7 @@ func (r *EventRepository) GetAll() ([]models.HistoricalEvent, error) {
                 var tagsJSON []byte
                 
                 err := rows.Scan(&event.ID, &event.Name, &event.Description, &event.Latitude, 
-                        &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.DisplayDate, &event.CreatedBy, &event.UpdatedBy, &tagsJSON)
+                        &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.DisplayDate, &event.CreatedBy, &tagsJSON)
                 if err != nil {
                         log.Printf("Error scanning event: %v", err)
                         continue
@@ -69,7 +69,7 @@ func (r *EventRepository) GetAll() ([]models.HistoricalEvent, error) {
 // GetByID retrieves a single event by ID
 func (r *EventRepository) GetByID(id int) (*models.HistoricalEvent, error) {
         query := `
-                SELECT id, name, description, latitude, longitude, event_date, era, lens_type, display_date, created_by, updated_by, tags
+                SELECT id, name, description, latitude, longitude, event_date, era, lens_type, display_date, created_by, tags
                 FROM events_with_display_dates 
                 WHERE id = $1`
         
@@ -77,7 +77,7 @@ func (r *EventRepository) GetByID(id int) (*models.HistoricalEvent, error) {
         var tagsJSON []byte
         err := r.db.QueryRow(query, id).Scan(
                 &event.ID, &event.Name, &event.Description, &event.Latitude,
-                &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.DisplayDate, &event.CreatedBy, &event.UpdatedBy, &tagsJSON)
+                &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.DisplayDate, &event.CreatedBy, &tagsJSON)
         
         if err != nil {
                 if err == sql.ErrNoRows {

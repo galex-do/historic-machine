@@ -57,7 +57,6 @@ CREATE TABLE events (
     lens_type VARCHAR(50) NOT NULL,
     dataset_id INTEGER REFERENCES event_datasets(id) ON DELETE SET NULL,
     created_by INTEGER REFERENCES users(id) ON DELETE SET NULL,
-    updated_by INTEGER REFERENCES users(id) ON DELETE SET NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
@@ -99,7 +98,6 @@ CREATE INDEX idx_events_era ON events(era);
 CREATE INDEX idx_events_location ON events(latitude, longitude);
 CREATE INDEX idx_events_dataset ON events(dataset_id);
 CREATE INDEX idx_events_created_by ON events(created_by);
-CREATE INDEX idx_events_updated_by ON events(updated_by);
 CREATE INDEX idx_date_templates_group_id ON date_templates(group_id);
 CREATE INDEX idx_date_templates_dates ON date_templates(start_date, end_date);
 CREATE INDEX idx_date_template_groups_order ON date_template_groups(display_order);
@@ -415,7 +413,7 @@ SELECT
 FROM events e
 LEFT JOIN event_tags et ON e.id = et.event_id
 LEFT JOIN tags t ON et.tag_id = t.id
-GROUP BY e.id, e.name, e.description, e.latitude, e.longitude, e.event_date, e.era, e.lens_type, e.dataset_id, e.created_at, e.updated_at, e.created_by, e.updated_by
+GROUP BY e.id, e.name, e.description, e.latitude, e.longitude, e.event_date, e.era, e.lens_type, e.dataset_id, e.created_at, e.updated_at, e.created_by
 ORDER BY astronomical_year ASC;
 
 -- +goose Down
