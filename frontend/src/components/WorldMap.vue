@@ -60,7 +60,10 @@
             {{ get_event_emoji(selected_events[0].lens_type) }} {{ selected_events[0].name }}
           </h3>
           <h3 v-else>{{ selected_events.length }} Events at this Location</h3>
-          <button class="close-button" @click="close_event_info_modal">×</button>
+          <div class="header-actions">
+            <span v-if="selected_events.length === 1 && canEditEvents" @click="edit_event_from_info(selected_events[0].id)" class="edit-icon header-edit" title="Edit event">✏️</span>
+            <button class="close-button" @click="close_event_info_modal">×</button>
+          </div>
         </div>
         
         <div class="events-list">
@@ -69,10 +72,6 @@
             <div v-if="selected_events.length > 1" class="event-header">
               <h4>{{ get_event_emoji(event.lens_type) }} {{ event.name }}</h4>
               <span v-if="canEditEvents" @click="edit_event_from_info(event.id)" class="edit-icon" title="Edit event">✏️</span>
-            </div>
-            <!-- For single events, show edit icon with the date -->
-            <div v-else-if="canEditEvents" class="single-event-edit">
-              <span @click="edit_event_from_info(event.id)" class="edit-icon" title="Edit event">✏️</span>
             </div>
             <div class="event-date">{{ event.display_date || format_date(event.event_date) }}</div>
             <p class="event-description">{{ event.description }}</p>
@@ -910,6 +909,32 @@ export default {
 .close-button:hover {
   background: #f1f5f9;
   color: #4a5568;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-edit {
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.2s;
+  padding: 0.375rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.header-edit:hover {
+  opacity: 1;
+  background: #f1f5f9;
+  transform: scale(1.1);
 }
 
 .events-list {
