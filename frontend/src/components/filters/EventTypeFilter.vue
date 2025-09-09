@@ -50,7 +50,7 @@ export default {
     return {
       filterOptions: [
         { value: 'all', label: 'All Types' },
-        { value: 'historic', label: '🏛️ Historic' },
+        { value: 'historic', label: '📜 Historic' },
         { value: 'political', label: '🏛️ Political' },
         { value: 'cultural', label: '🎭 Cultural' },
         { value: 'scientific', label: '🔬 Scientific' },
