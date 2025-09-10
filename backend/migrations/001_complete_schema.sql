@@ -113,15 +113,26 @@ CREATE INDEX idx_user_sessions_expires ON user_sessions(expires_at);
 CREATE INDEX idx_tags_name ON tags(name);
 
 
--- Insert sample historical events
-INSERT INTO events (name, description, latitude, longitude, event_date, era, lens_type) VALUES 
-('Foundation of Rome', 'Legendary founding of Rome by Romulus', 41.9028, 12.4964, '0753-04-21', 'BC', 'historic'),
-('Battle of Marathon', 'Greeks defeat Persian invasion', 38.1462, 23.9608, '0490-09-12', 'BC', 'military'),
-('Birth of Plato', 'Great philosopher born in Athens', 37.9755, 23.7348, '0428-05-21', 'BC', 'cultural'),
-('Battle of Gaugamela', 'Alexander defeats Darius III', 36.3402, 43.1503, '0331-10-01', 'BC', 'military'),
-('Assassination of Julius Caesar', 'Caesar killed in the Roman Senate', 41.8955, 12.4823, '0044-03-15', 'BC', 'political'),
-('Fall of Constantinople', 'End of the Byzantine Empire', 41.0082, 28.9784, '1453-05-29', 'AD', 'military'),
-('Discovery of America', 'Columbus reaches the New World', 25.0343, -77.3963, '1492-10-12', 'AD', 'historic');
+-- Insert default dataset for sample events
+INSERT INTO event_datasets (filename, description, event_count, uploaded_by, created_at, updated_at)
+VALUES (
+    'default_sample_events.json',
+    'Default sample historical events seeded during initial database setup',
+    7,
+    (SELECT id FROM users WHERE access_level = 'super' LIMIT 1),
+    CURRENT_TIMESTAMP,
+    CURRENT_TIMESTAMP
+);
+
+-- Insert sample historical events and associate with default dataset
+INSERT INTO events (name, description, latitude, longitude, event_date, era, lens_type, dataset_id) VALUES 
+('Foundation of Rome', 'Legendary founding of Rome by Romulus', 41.9028, 12.4964, '0753-04-21', 'BC', 'historic', (SELECT id FROM event_datasets WHERE filename = 'default_sample_events.json')),
+('Battle of Marathon', 'Greeks defeat Persian invasion', 38.1462, 23.9608, '0490-09-12', 'BC', 'military', (SELECT id FROM event_datasets WHERE filename = 'default_sample_events.json')),
+('Birth of Plato', 'Great philosopher born in Athens', 37.9755, 23.7348, '0428-05-21', 'BC', 'cultural', (SELECT id FROM event_datasets WHERE filename = 'default_sample_events.json')),
+('Battle of Gaugamela', 'Alexander defeats Darius III', 36.3402, 43.1503, '0331-10-01', 'BC', 'military', (SELECT id FROM event_datasets WHERE filename = 'default_sample_events.json')),
+('Assassination of Julius Caesar', 'Caesar killed in the Roman Senate', 41.8955, 12.4823, '0044-03-15', 'BC', 'political', (SELECT id FROM event_datasets WHERE filename = 'default_sample_events.json')),
+('Fall of Constantinople', 'End of the Byzantine Empire', 41.0082, 28.9784, '1453-05-29', 'AD', 'military', (SELECT id FROM event_datasets WHERE filename = 'default_sample_events.json')),
+('Discovery of America', 'Columbus reaches the New World', 25.0343, -77.3963, '1492-10-12', 'AD', 'historic', (SELECT id FROM event_datasets WHERE filename = 'default_sample_events.json'));
 
 -- Insert tags for events
 INSERT INTO tags (name, description, color) VALUES

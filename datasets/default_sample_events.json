@@ -1,0 +1,76 @@
+{
+  "filename": "default_sample_events.json",
+  "description": "Default sample historical events seeded during initial database setup",
+  "events": [
+    {
+      "name": "Foundation of Rome",
+      "description": "Legendary founding of Rome by Romulus",
+      "date": "21.04.0753",
+      "era": "BC",
+      "latitude": 41.9028,
+      "longitude": 12.4964,
+      "type": "historic",
+      "tags": ["Ancient", "Political", "Roman", "Romans", "Rome", "Romulus", "Founding"]
+    },
+    {
+      "name": "Battle of Marathon",
+      "description": "Greeks defeat Persian invasion",
+      "date": "12.09.0490",
+      "era": "BC",
+      "latitude": 38.1462,
+      "longitude": 23.9608,
+      "type": "military",
+      "tags": ["Ancient", "Greek", "Military", "Greeks", "Persians"]
+    },
+    {
+      "name": "Birth of Plato",
+      "description": "Great philosopher born in Athens",
+      "date": "21.05.0428",
+      "era": "BC",
+      "latitude": 37.9755,
+      "longitude": 23.7348,
+      "type": "cultural",
+      "tags": ["Ancient", "Cultural", "Greek", "Philosophy", "Greeks", "Plato", "Athens"]
+    },
+    {
+      "name": "Battle of Gaugamela",
+      "description": "Alexander defeats Darius III",
+      "date": "01.10.0331",
+      "era": "BC",
+      "latitude": 36.3402,
+      "longitude": 43.1503,
+      "type": "military",
+      "tags": ["Ancient", "Military", "Alexander the Great", "Persians", "Conquest"]
+    },
+    {
+      "name": "Assassination of Julius Caesar",
+      "description": "Caesar killed in the Roman Senate",
+      "date": "15.03.0044",
+      "era": "BC",
+      "latitude": 41.8955,
+      "longitude": 12.4823,
+      "type": "political",
+      "tags": ["Ancient", "Political", "Roman", "Romans", "Julius Caesar", "Senate", "Rome"]
+    },
+    {
+      "name": "Fall of Constantinople",
+      "description": "End of the Byzantine Empire",
+      "date": "29.05.1453",
+      "era": "AD",
+      "latitude": 41.0082,
+      "longitude": 28.9784,
+      "type": "military",
+      "tags": ["Medieval", "Military", "Byzantine", "Byzantines", "Ottomans", "Constantinople", "Conquest"]
+    },
+    {
+      "name": "Discovery of America",
+      "description": "Columbus reaches the New World",
+      "date": "12.10.1492",
+      "era": "AD",
+      "latitude": 25.0343,
+      "longitude": -77.3963,
+      "type": "historic",
+      "tags": ["Renaissance", "Spanish", "Columbus", "Exploration"]
+    }
+  ]
+}
