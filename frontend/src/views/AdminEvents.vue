@@ -735,7 +735,6 @@ export default {
 
 .event-row td {
   vertical-align: middle;
-  padding: 1rem;
 }
 
 .event-name {
