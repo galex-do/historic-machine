@@ -572,23 +572,42 @@ export default {
         const dateStr = event.event_date.toString()
         console.log('DEBUG: dateStr =', dateStr)
         
-        // Parse dates in format "YYYY-MM-DD" (like "3501-01-02")
+        // Parse dates - handle negative years (BC dates in ISO format)
         if (dateStr.includes('-')) {
-          const parts = dateStr.split('-')
-          console.log('DEBUG: dash parts =', parts)
-          if (parts.length >= 3) {
-            const year = Math.abs(parseInt(parts[0]))
-            const month = parseInt(parts[1])
-            const day = parseInt(parts[2])
+          let year, month, day
+          
+          // Handle negative year ISO format like "-3501-01-01T00:00:00.00Z"
+          if (dateStr.startsWith('-')) {
+            // Remove the leading minus and split
+            const cleanStr = dateStr.substring(1)
+            const parts = cleanStr.split('-')
+            console.log('DEBUG: negative year parts =', parts)
             
-            console.log('DEBUG: parsed parts =', { year, month, day })
-            
-            if (year && month && day && !isNaN(year) && !isNaN(month) && !isNaN(day)) {
-              dateDisplay = `${day.toString().padStart(2, '0')}/${month.toString().padStart(2, '0')}/${year}`
-              console.log('DEBUG: dateDisplay =', dateDisplay)
-            } else {
-              console.log('DEBUG: Invalid parsed parts')
+            if (parts.length >= 3) {
+              year = parseInt(parts[0])
+              month = parseInt(parts[1])
+              // Handle day part that might have time (like "01T00:00:00.00Z")
+              day = parseInt(parts[2].split('T')[0])
             }
+          } else {
+            // Handle positive year format like "2024-01-01"
+            const parts = dateStr.split('-')
+            console.log('DEBUG: positive year parts =', parts)
+            
+            if (parts.length >= 3) {
+              year = parseInt(parts[0])
+              month = parseInt(parts[1])
+              day = parseInt(parts[2].split('T')[0])
+            }
+          }
+          
+          console.log('DEBUG: parsed parts =', { year, month, day })
+          
+          if (year && month && day && !isNaN(year) && !isNaN(month) && !isNaN(day)) {
+            dateDisplay = `${day.toString().padStart(2, '0')}/${month.toString().padStart(2, '0')}/${year}`
+            console.log('DEBUG: dateDisplay =', dateDisplay)
+          } else {
+            console.log('DEBUG: Invalid parsed parts')
           }
         } else {
           // For other formats, try standard Date parsing
