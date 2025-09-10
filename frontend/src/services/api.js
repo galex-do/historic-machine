@@ -85,9 +85,6 @@ class ApiService {
   async createEvent(eventData) {
     return this.makeRequest('/events', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
       body: JSON.stringify(eventData),
     })
   }
@@ -95,9 +92,6 @@ class ApiService {
   async updateEvent(eventId, eventData) {
     return this.makeRequest(`/events/${eventId}`, {
       method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      },
       body: JSON.stringify(eventData),
     })
   }
@@ -143,9 +137,6 @@ class ApiService {
   async createTag(tagData) {
     return this.makeRequest('/tags', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
       body: JSON.stringify(tagData),
     })
   }
@@ -153,9 +144,6 @@ class ApiService {
   async updateTag(id, tagData) {
     return this.makeRequest(`/tags/${id}`, {
       method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      },
       body: JSON.stringify(tagData),
     })
   }
@@ -169,9 +157,6 @@ class ApiService {
   async setEventTags(eventId, tagIds) {
     return this.makeRequest(`/events/${eventId}/tags`, {
       method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      },
       body: JSON.stringify({ tag_ids: tagIds }),
     })
   }
@@ -191,9 +176,6 @@ class ApiService {
   async importEvents(events, filename = '') {
     return this.makeRequest('/events/import', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
       body: JSON.stringify({ events, filename }),
     })
   }
@@ -217,9 +199,6 @@ class ApiService {
   async createUser(userData) {
     return this.makeRequest('/users', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
       body: JSON.stringify(userData),
     })
   }
@@ -227,9 +206,6 @@ class ApiService {
   async updateUser(userId, userData) {
     return this.makeRequest(`/users/${userId}`, {
       method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      },
       body: JSON.stringify(userData),
     })
   }
