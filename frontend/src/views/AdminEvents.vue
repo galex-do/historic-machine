@@ -999,6 +999,13 @@ export default {
   gap: 1rem;
 }
 
+.table-filters {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
 .events-table {
   width: 100%;
   border-collapse: collapse;
