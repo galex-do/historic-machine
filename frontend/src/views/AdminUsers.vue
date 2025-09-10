@@ -214,7 +214,8 @@
                     <option value="editor">Editor</option>
                     <option value="admin">Admin</option>
                   </select>
-                  <small class="form-hint">Choose the appropriate access level for this user</small>
+                  <small v-if="editingUser?.id === user?.id" class="form-hint">You cannot change your own access level</small>
+                  <small v-else class="form-hint">Choose the appropriate access level for this user</small>
                 </div>
                 <div class="form-group">
                   <label for="user-status">Status</label>
@@ -396,6 +397,7 @@ export default {
 
     const canChangeAccessLevel = (userItem) => {
       if (!isSuper.value) return false
+      if (userItem?.id === user.value?.id) return false // Cannot change your own access level
       return true
     }
 
