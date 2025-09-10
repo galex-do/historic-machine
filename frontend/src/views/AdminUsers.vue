@@ -213,9 +213,8 @@
                     <option value="user">User</option>
                     <option value="editor">Editor</option>
                     <option value="admin">Admin</option>
-                    <option value="super" v-if="user?.access_level === 'super' && editingUser?.id !== user?.id">Super</option>
                   </select>
-                  <small class="form-hint">Super users cannot grant Super access to themselves</small>
+                  <small class="form-hint">Choose the appropriate access level for this user</small>
                 </div>
                 <div class="form-group">
                   <label for="user-status">Status</label>
