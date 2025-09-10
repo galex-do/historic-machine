@@ -35,11 +35,19 @@ func (r *DatasetRepository) GetAll() ([]models.EventDataset, error) {
         for rows.Next() {
                 var dataset models.EventDataset
                 var username sql.NullString
+                var uploadedBy sql.NullInt32
                 
                 err := rows.Scan(&dataset.ID, &dataset.Filename, &dataset.Description, 
-                        &dataset.EventCount, &dataset.UploadedBy, &dataset.CreatedAt, &dataset.UpdatedAt, &username)
+                        &dataset.EventCount, &uploadedBy, &dataset.CreatedAt, &dataset.UpdatedAt, &username)
                 if err != nil {
                         return nil, fmt.Errorf("error scanning dataset: %w", err)
+                }
+                
+                // Handle nullable uploaded_by field
+                if uploadedBy.Valid {
+                        dataset.UploadedBy = int(uploadedBy.Int32)
+                } else {
+                        dataset.UploadedBy = 0 // Default value for unknown user
                 }
                 
                 if username.Valid {
@@ -86,14 +94,22 @@ func (r *DatasetRepository) GetByID(id int) (*models.EventDataset, error) {
                 WHERE id = $1`
         
         var dataset models.EventDataset
+        var uploadedBy sql.NullInt32
         err := r.db.QueryRow(query, id).Scan(&dataset.ID, &dataset.Filename, 
-                &dataset.Description, &dataset.EventCount, &dataset.UploadedBy, 
+                &dataset.Description, &dataset.EventCount, &uploadedBy, 
                 &dataset.CreatedAt, &dataset.UpdatedAt)
         if err != nil {
                 if err == sql.ErrNoRows {
                         return nil, fmt.Errorf("dataset not found")
                 }
                 return nil, fmt.Errorf("failed to get dataset: %w", err)
+        }
+        
+        // Handle nullable uploaded_by field
+        if uploadedBy.Valid {
+                dataset.UploadedBy = int(uploadedBy.Int32)
+        } else {
+                dataset.UploadedBy = 0 // Default value for unknown user
         }
         
         return &dataset, nil
