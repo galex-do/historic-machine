@@ -421,8 +421,8 @@ export default {
       localLoading.value = true
       localError.value = null
       try {
-        const response = await apiService.getUsers()
-        allUsers.value = response.data || []
+        const users = await apiService.getUsers()
+        allUsers.value = Array.isArray(users) ? users : []
       } catch (err) {
         console.error('Error loading users:', err)
         localError.value = err.message || 'Failed to load users'
