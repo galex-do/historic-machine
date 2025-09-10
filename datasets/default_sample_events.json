@@ -10,7 +10,8 @@
       "latitude": 41.9028,
       "longitude": 12.4964,
       "type": "historic",
-      "tags": ["Ancient", "Political", "Roman", "Romans", "Rome", "Romulus", "Founding"]
+      "tags": ["Ancient", "Political", "Roman", "Romans", "Rome", "Romulus", "Founding"],
+      "source": "https://en.wikipedia.org/wiki/Founding_of_Rome"
     },
     {
       "name": "Battle of Marathon",
@@ -20,7 +21,8 @@
       "latitude": 38.1462,
       "longitude": 23.9608,
       "type": "military",
-      "tags": ["Ancient", "Greek", "Military", "Greeks", "Persians"]
+      "tags": ["Ancient", "Greek", "Military", "Greeks", "Persians"],
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Marathon"
     },
     {
       "name": "Birth of Plato",
@@ -30,7 +32,8 @@
       "latitude": 37.9755,
       "longitude": 23.7348,
       "type": "cultural",
-      "tags": ["Ancient", "Cultural", "Greek", "Philosophy", "Greeks", "Plato", "Athens"]
+      "tags": ["Ancient", "Cultural", "Greek", "Philosophy", "Greeks", "Plato", "Athens"],
+      "source": "https://en.wikipedia.org/wiki/Plato"
     },
     {
       "name": "Battle of Gaugamela",
@@ -40,7 +43,8 @@
       "latitude": 36.3402,
       "longitude": 43.1503,
       "type": "military",
-      "tags": ["Ancient", "Military", "Alexander the Great", "Persians", "Conquest"]
+      "tags": ["Ancient", "Military", "Alexander the Great", "Persians", "Conquest"],
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Gaugamela"
     },
     {
       "name": "Assassination of Julius Caesar",
@@ -50,7 +54,8 @@
       "latitude": 41.8955,
       "longitude": 12.4823,
       "type": "political",
-      "tags": ["Ancient", "Political", "Roman", "Romans", "Julius Caesar", "Senate", "Rome"]
+      "tags": ["Ancient", "Political", "Roman", "Romans", "Julius Caesar", "Senate", "Rome"],
+      "source": "https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar"
     },
     {
       "name": "Fall of Constantinople",
@@ -60,7 +65,8 @@
       "latitude": 41.0082,
       "longitude": 28.9784,
       "type": "military",
-      "tags": ["Medieval", "Military", "Byzantine", "Byzantines", "Ottomans", "Constantinople", "Conquest"]
+      "tags": ["Medieval", "Military", "Byzantine", "Byzantines", "Ottomans", "Constantinople", "Conquest"],
+      "source": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
     },
     {
       "name": "Discovery of America",
@@ -70,7 +76,8 @@
       "latitude": 25.0343,
       "longitude": -77.3963,
       "type": "historic",
-      "tags": ["Renaissance", "Spanish", "Columbus", "Exploration"]
+      "tags": ["Renaissance", "Spanish", "Columbus", "Exploration"],
+      "source": "https://en.wikipedia.org/wiki/Voyages_of_Christopher_Columbus"
     }
   ]
 }
