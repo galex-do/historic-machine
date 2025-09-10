@@ -10,17 +10,6 @@
           <span class="btn-icon">➕</span>
           Create New Event
         </button>
-        <button @click="triggerFileUpload" class="import-btn">
-          <span class="btn-icon">📁</span>
-          Import Events
-        </button>
-        <input 
-          ref="fileInput" 
-          type="file" 
-          accept=".json" 
-          @change="handleFileUpload" 
-          style="display: none"
-        />
       </div>
     </div>
 
@@ -381,7 +370,6 @@ export default {
     const showCreateModal = ref(false)
     const showEditModal = ref(false)
     const editingEvent = ref(null)
-    const fileInput = ref(null)
     
     // Sorting state
     const sortField = ref('date')
@@ -685,9 +673,6 @@ export default {
       localError.value = null
     }
 
-    const triggerFileUpload = () => {
-      fileInput.value?.click()
-    }
 
     // Tag management functions and computed properties
     const filteredTags = computed(() => {
@@ -837,7 +822,6 @@ export default {
       showEditModal,
       editingEvent,
       eventForm,
-      fileInput,
       formatDateWithEra,
       getContrastColor,
       filteredEvents,
@@ -862,7 +846,6 @@ export default {
       editEvent,
       deleteEvent,
       closeModal,
-      triggerFileUpload,
       // Tag functions
       addTag,
       removeTag,
@@ -915,8 +898,7 @@ export default {
   flex-wrap: wrap;
 }
 
-.create-btn,
-.import-btn {
+.create-btn {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -927,9 +909,6 @@ export default {
   cursor: pointer;
   transition: all 0.2s ease;
   font-size: 0.9rem;
-}
-
-.create-btn {
   background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
   color: white;
 }
@@ -938,17 +917,6 @@ export default {
   background: linear-gradient(135deg, #4338ca 0%, #6d28d9 100%);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
-}
-
-.import-btn {
-  background: linear-gradient(135deg, #059669 0%, #0d9488 100%);
-  color: white;
-}
-
-.import-btn:hover {
-  background: linear-gradient(135deg, #047857 0%, #0f766e 100%);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
 }
 
 .btn-icon {
