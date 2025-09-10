@@ -1,8 +1,8 @@
 <template>
   <div class="event-card">
     <div class="event-header">
-      <span class="event-emoji">{{ getEventEmoji(event.lens_type) }}</span>
       <h4 class="event-title">
+        <span class="event-emoji">{{ getEventEmoji(event.lens_type) }}</span>
         {{ event.name }}
         <a 
           v-if="event.source" 
@@ -110,11 +110,6 @@ export default {
   margin-bottom: 0.5rem;
 }
 
-.event-emoji {
-  font-size: 1.25rem;
-  flex-shrink: 0;
-}
-
 .event-title {
   color: #2d3748;
   margin: 0;
@@ -122,6 +117,14 @@ export default {
   font-weight: 600;
   flex: 1;
   line-height: 1.3;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.event-emoji {
+  font-size: 1.25rem;
+  flex-shrink: 0;
 }
 
 .inline-source-link {
