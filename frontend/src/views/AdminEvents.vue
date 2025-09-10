@@ -733,6 +733,11 @@ export default {
   background: #f8fafc;
 }
 
+.event-row td {
+  vertical-align: middle;
+  padding: 1rem;
+}
+
 .event-name {
   font-weight: 600;
   color: #2d3748;
@@ -805,6 +810,8 @@ export default {
 .event-actions {
   display: flex;
   gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .action-btn {
