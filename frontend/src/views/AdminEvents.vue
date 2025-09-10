@@ -86,17 +86,17 @@
         <tbody>
           <tr v-for="event in currentPageEvents" :key="event.id" class="event-row">
             <td class="event-name">
-              {{ event.name }}
               <a 
                 v-if="event.source"
                 :href="event.source" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                class="inline-source-link" 
-                title="View source"
+                class="event-name-link" 
+                :title="`${event.name} - View source`"
               >
-                🔗
+                {{ event.name }}
               </a>
+              <span v-else>{{ event.name }}</span>
             </td>
             <td class="event-description">
               <span class="description-text" :title="event.description">
@@ -1096,17 +1096,16 @@ export default {
   color: #2d3748;
 }
 
-.inline-source-link {
-  margin-left: 0.5rem;
+.event-name-link {
   color: #3b82f6;
   text-decoration: none;
-  font-size: 0.875rem;
   transition: all 0.2s;
+  font-weight: 500;
 }
 
-.inline-source-link:hover {
+.event-name-link:hover {
   color: #1d4ed8;
-  transform: scale(1.1);
+  text-decoration: underline;
 }
 
 .event-description {

@@ -62,17 +62,18 @@
       <div class="modal-content event-info-modal" @click.stop>
         <div class="modal-header">
           <h3 v-if="selected_events.length === 1">
-            {{ get_event_emoji(selected_events[0].lens_type) }} {{ selected_events[0].name }}
+            {{ get_event_emoji(selected_events[0].lens_type) }}
             <a 
               v-if="selected_events[0].source"
               :href="selected_events[0].source" 
               target="_blank" 
               rel="noopener noreferrer"
-              class="inline-source-link" 
-              title="View source"
+              class="modal-event-title-link" 
+              :title="`${selected_events[0].name} - View source`"
             >
-              🔗
+              {{ selected_events[0].name }}
             </a>
+            <span v-else class="modal-event-title-text">{{ selected_events[0].name }}</span>
           </h3>
           <h3 v-else>{{ selected_events.length }} Events at this Location</h3>
           <div class="header-actions">
@@ -86,17 +87,18 @@
             <!-- Show event header only for multiple events -->
             <div v-if="selected_events.length > 1" class="event-header">
               <h4>
-                {{ get_event_emoji(event.lens_type) }} {{ event.name }}
+                {{ get_event_emoji(event.lens_type) }}
                 <a 
                   v-if="event.source"
                   :href="event.source" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  class="inline-source-link" 
-                  title="View source"
+                  class="modal-event-header-link" 
+                  :title="`${event.name} - View source`"
                 >
-                  🔗
+                  {{ event.name }}
                 </a>
+                <span v-else>{{ event.name }}</span>
               </h4>
               <span v-if="canEditEvents" @click="edit_event_from_info(event.id)" class="edit-icon" title="Edit event">✏️</span>
             </div>
@@ -1078,18 +1080,34 @@ export default {
   transform: scale(1.1);
 }
 
-.inline-source-link {
-  margin-left: 0.5rem;
+.modal-event-title-link {
   color: #3b82f6;
   text-decoration: none;
-  font-size: 0.875rem;
   transition: all 0.2s;
   font-weight: normal;
+  margin-left: 0.5rem;
 }
 
-.inline-source-link:hover {
+.modal-event-title-link:hover {
   color: #1d4ed8;
-  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.modal-event-title-text {
+  margin-left: 0.5rem;
+}
+
+.modal-event-header-link {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.modal-event-header-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
 }
 
 .event-description {
