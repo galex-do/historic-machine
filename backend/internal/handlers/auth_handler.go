@@ -284,3 +284,145 @@ func (h *AuthHandler) hasAccessLevel(userLevel, requiredLevel models.AccessLevel
 
         return userLevelNum >= requiredLevelNum
 }
+
+// User Management Methods (for admin interfaces)
+
+// GetAllUsers returns all users (super users only)
+func (h *AuthHandler) GetAllUsers(w http.ResponseWriter, r *http.Request) {
+        if r.Method != http.MethodGet {
+                http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
+                return
+        }
+
+        users, err := h.authService.GetAllUsers()
+        if err != nil {
+                http.Error(w, "Failed to retrieve users", http.StatusInternalServerError)
+                return
+        }
+
+        w.Header().Set("Content-Type", "application/json")
+        json.NewEncoder(w).Encode(map[string]interface{}{
+                "data": users,
+                "message": "Users retrieved successfully",
+        })
+}
+
+// CreateUser creates a new user (super users only)
+func (h *AuthHandler) CreateUser(w http.ResponseWriter, r *http.Request) {
+        if r.Method != http.MethodPost {
+                http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
+                return
+        }
+
+        var createReq models.CreateUserRequest
+        if err := json.NewDecoder(r.Body).Decode(&createReq); err != nil {
+                http.Error(w, "Invalid request body", http.StatusBadRequest)
+                return
+        }
+
+        // Basic validation
+        if createReq.Username == "" || createReq.Password == "" {
+                http.Error(w, "Username and password are required", http.StatusBadRequest)
+                return
+        }
+
+        if len(createReq.Username) < 3 || len(createReq.Username) > 50 {
+                http.Error(w, "Username must be between 3 and 50 characters", http.StatusBadRequest)
+                return
+        }
+
+        if len(createReq.Password) < 8 {
+                http.Error(w, "Password must be at least 8 characters", http.StatusBadRequest)
+                return
+        }
+
+        // Default to user access level if not specified
+        if createReq.AccessLevel == "" {
+                createReq.AccessLevel = models.AccessLevelUser
+        }
+
+        user, err := h.authService.RegisterUser(&createReq)
+        if err != nil {
+                if strings.Contains(err.Error(), "username already exists") {
+                        http.Error(w, "Username already exists", http.StatusConflict)
+                        return
+                }
+                http.Error(w, "Failed to create user", http.StatusInternalServerError)
+                return
+        }
+
+        w.Header().Set("Content-Type", "application/json")
+        w.WriteHeader(http.StatusCreated)
+        json.NewEncoder(w).Encode(map[string]interface{}{
+                "data": user.ToProfile(),
+                "message": "User created successfully",
+        })
+}
+
+// UpdateUser updates an existing user (super users only)
+func (h *AuthHandler) UpdateUser(w http.ResponseWriter, r *http.Request) {
+        if r.Method != http.MethodPut {
+                http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
+                return
+        }
+
+        // Extract user ID from URL path
+        userID := strings.TrimPrefix(r.URL.Path, "/api/users/")
+        if userID == "" {
+                http.Error(w, "User ID is required", http.StatusBadRequest)
+                return
+        }
+
+        var updateReq models.UpdateUserRequest
+        if err := json.NewDecoder(r.Body).Decode(&updateReq); err != nil {
+                http.Error(w, "Invalid request body", http.StatusBadRequest)
+                return
+        }
+
+        user, err := h.authService.UpdateUser(userID, &updateReq)
+        if err != nil {
+                if strings.Contains(err.Error(), "user not found") {
+                        http.Error(w, "User not found", http.StatusNotFound)
+                        return
+                }
+                http.Error(w, "Failed to update user", http.StatusInternalServerError)
+                return
+        }
+
+        w.Header().Set("Content-Type", "application/json")
+        json.NewEncoder(w).Encode(map[string]interface{}{
+                "data": user.ToProfile(),
+                "message": "User updated successfully",
+        })
+}
+
+// DeleteUser deletes a user (super users only)
+func (h *AuthHandler) DeleteUser(w http.ResponseWriter, r *http.Request) {
+        if r.Method != http.MethodDelete {
+                http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
+                return
+        }
+
+        // Extract user ID from URL path
+        userID := strings.TrimPrefix(r.URL.Path, "/api/users/")
+        if userID == "" {
+                http.Error(w, "User ID is required", http.StatusBadRequest)
+                return
+        }
+
+        err := h.authService.DeleteUser(userID)
+        if err != nil {
+                if strings.Contains(err.Error(), "user not found") {
+                        http.Error(w, "User not found", http.StatusNotFound)
+                        return
+                }
+                if strings.Contains(err.Error(), "cannot delete") {
+                        http.Error(w, "Cannot delete this user", http.StatusForbidden)
+                        return
+                }
+                http.Error(w, "Failed to delete user", http.StatusInternalServerError)
+                return
+        }
+
+        w.WriteHeader(http.StatusNoContent)
+}

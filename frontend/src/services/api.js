@@ -177,6 +177,31 @@ class ApiService {
       method: 'DELETE',
     })
   }
+
+  // User management API
+  async getUsers() {
+    return this.makeRequest('/users')
+  }
+
+  async createUser(userData) {
+    return this.makeRequest('/users', {
+      method: 'POST',
+      body: JSON.stringify(userData),
+    })
+  }
+
+  async updateUser(userId, userData) {
+    return this.makeRequest(`/users/${userId}`, {
+      method: 'PUT',
+      body: JSON.stringify(userData),
+    })
+  }
+
+  async deleteUser(userId) {
+    return this.makeRequest(`/users/${userId}`, {
+      method: 'DELETE',
+    })
+  }
 }
 
 // Export singleton instance

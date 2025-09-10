@@ -77,6 +77,12 @@ func (router *Router) SetupRoutes() http.Handler {
         api.HandleFunc("/datasets/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.datasetHandler.GetDatasetByID)).Methods("GET", "OPTIONS")
         api.HandleFunc("/datasets/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.datasetHandler.DeleteDataset)).Methods("DELETE", "OPTIONS")
         
+        // User management routes (super users only)
+        api.HandleFunc("/users", router.authHandler.RequireAccessLevel(models.AccessLevelSuper)(router.authHandler.GetAllUsers)).Methods("GET", "OPTIONS")
+        api.HandleFunc("/users", router.authHandler.RequireAccessLevel(models.AccessLevelSuper)(router.authHandler.CreateUser)).Methods("POST", "OPTIONS")
+        api.HandleFunc("/users/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelSuper)(router.authHandler.UpdateUser)).Methods("PUT", "OPTIONS")
+        api.HandleFunc("/users/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelSuper)(router.authHandler.DeleteUser)).Methods("DELETE", "OPTIONS")
+        
         // Event-Tag relationship routes
         api.HandleFunc("/events/{event_id}/tags/{tag_id}", router.tagHandler.AddTagToEvent).Methods("POST", "OPTIONS")
         api.HandleFunc("/events/{event_id}/tags/{tag_id}", router.tagHandler.RemoveTagFromEvent).Methods("DELETE", "OPTIONS")

@@ -142,6 +142,79 @@ func (r *UserRepository) UpdateUser(user *models.User) error {
         return nil
 }
 
+// GetAllUsers retrieves all active users
+func (r *UserRepository) GetAllUsers() ([]*models.User, error) {
+        query := `
+                SELECT id, username, email, password_hash, access_level, is_active, 
+                       created_at, updated_at, last_login
+                FROM users 
+                WHERE is_active = true
+                ORDER BY created_at DESC`
+
+        rows, err := r.db.Query(query)
+        if err != nil {
+                return nil, fmt.Errorf("failed to query users: %w", err)
+        }
+        defer rows.Close()
+
+        var users []*models.User
+        for rows.Next() {
+                user := &models.User{}
+                var lastLogin sql.NullTime
+
+                err := rows.Scan(
+                        &user.ID,
+                        &user.Username,
+                        &user.Email,
+                        &user.PasswordHash,
+                        &user.AccessLevel,
+                        &user.IsActive,
+                        &user.CreatedAt,
+                        &user.UpdatedAt,
+                        &lastLogin,
+                )
+                if err != nil {
+                        return nil, fmt.Errorf("failed to scan user: %w", err)
+                }
+
+                if lastLogin.Valid {
+                        user.LastLogin = &lastLogin.Time
+                }
+
+                users = append(users, user)
+        }
+
+        if err := rows.Err(); err != nil {
+                return nil, fmt.Errorf("error iterating users: %w", err)
+        }
+
+        return users, nil
+}
+
+// DeleteUser deactivates a user (soft delete)
+func (r *UserRepository) DeleteUser(userID int) error {
+        query := `
+                UPDATE users 
+                SET is_active = false, updated_at = $2
+                WHERE id = $1`
+
+        result, err := r.db.Exec(query, userID, time.Now())
+        if err != nil {
+                return fmt.Errorf("failed to delete user: %w", err)
+        }
+
+        rowsAffected, err := result.RowsAffected()
+        if err != nil {
+                return fmt.Errorf("failed to get affected rows: %w", err)
+        }
+
+        if rowsAffected == 0 {
+                return fmt.Errorf("user not found")
+        }
+
+        return nil
+}
+
 // UpdateUserPassword updates user password hash
 func (r *UserRepository) UpdateUserPassword(userID int, passwordHash string) error {
         query := `
