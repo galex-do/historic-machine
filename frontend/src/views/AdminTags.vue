@@ -361,7 +361,7 @@ export default {
           await apiService.updateTag(editingTag.value.id, tagForm.value)
         } else {
           // Create new tag
-          await createTag(tagForm.value)
+          await apiService.createTag(tagForm.value)
         }
         
         await loadTags() // Refresh tags list
