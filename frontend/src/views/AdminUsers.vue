@@ -186,6 +186,7 @@
                     class="form-input"
                     placeholder="Enter password"
                   />
+                  <small class="form-hint">Minimum 8 characters, include uppercase, lowercase, numbers, and special characters</small>
                 </div>
                 <div class="form-group">
                   <label for="user-confirm-password">Confirm Password *</label>
