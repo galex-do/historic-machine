@@ -137,8 +137,8 @@ export function parseHistoricalDate(dateStr) {
     }
   }
   
-  // Convert to ISO date (astronomical year numbering for proper BC/AD comparison)
-  const isoYear = era === 'BC' ? (year === 1 ? '0000' : String(year - 1).padStart(4, '0')) : String(year).padStart(4, '0')
+  // Convert to ISO date (use actual year, no astronomical numbering)
+  const isoYear = String(year).padStart(4, '0')
   const isoMonth = month ? String(month).padStart(2, '0') : '01'
   const isoDay = day ? String(day).padStart(2, '0') : '01'
   const isoDate = era === 'BC' ? `-${isoYear}-${isoMonth}-${isoDay}` : `${isoYear}-${isoMonth}-${isoDay}`
@@ -253,11 +253,8 @@ export function getAstronomicalYear(dateString, era) {
   
   const year = parseInt(dateString.split('-')[0], 10)
   
-  if (era === 'BC') {
-    return (year * -1) + 1  // Convert BC year to astronomical year
-  } else {
-    return year  // AD years are already correct
-  }
+  // Return the actual year as stored in database (no astronomical conversion)
+  return year
 }
 
 /**

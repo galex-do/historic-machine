@@ -1,7 +1,7 @@
 import { ref, computed } from 'vue'
 import apiService from '@/services/api.js'
 import { parseHistoricalDate } from '@/utils/date-utils.js'
-import { getAstronomicalYear, getEraFromDate } from '@/utils/date-utils.js'
+import { getEraFromDate } from '@/utils/date-utils.js'
 
 // Shared state - singleton pattern
 const events = ref([])
@@ -46,16 +46,8 @@ export function useEvents() {
       const fromDate = parseHistoricalDate(dateFromDisplay) // Use display value to get proper BC/AD
       const toDate = parseHistoricalDate(dateToDisplay)
       
-      // Parse event year correctly - handle negative years for BC dates
-      let eventYear
-      if (event.event_date.startsWith('-')) {
-        // BC date format: "-491-09-12T00:00:00Z" -> year 491
-        const yearMatch = event.event_date.match(/^-(\d+)-/)
-        eventYear = yearMatch ? parseInt(yearMatch[1], 10) : 0
-      } else {
-        // AD date format: "1453-05-29T00:00:00Z" -> year 1453
-        eventYear = parseInt(event.event_date.split('-')[0], 10)
-      }
+      // Parse event year directly (no astronomical conversion needed)
+      const eventYear = parseInt(event.event_date.split('-')[0], 10)
       const eventEra = event.era
       
       // Date filtering with proper BC/AD logic
@@ -102,27 +94,25 @@ export function useEvents() {
     
     // Sort events chronologically (oldest to newest)
     tempFilteredEvents.sort((a, b) => {
-      // Use proper astronomical year for chronological sorting
-      const getAstronomicalYear = (dateString, era) => {
-        if (dateString.startsWith('-')) {
-          // BC date format: "-754-04-21T00:00:00Z" 
-          const parts = dateString.substring(1).split('T')[0].split('-')
-          const year = parseInt(parts[0], 10)
-          const month = parseInt(parts[1], 10)
-          const day = parseInt(parts[2], 10)
-          
-          // Convert to astronomical year: 754 BC = -753 astronomical year
-          // Add month/day for sub-year precision
-          return -(year - 1) - (month / 12) - (day / 365)
+      // Use chronological sorting with proper BC/AD handling
+      const getChronologicalValue = (dateString, era) => {
+        const date = new Date(dateString)
+        const year = date.getFullYear()
+        const month = date.getMonth()
+        const day = date.getDate()
+        
+        if (era === 'BC') {
+          // For BC: larger year number = older (3000 BC < 1000 BC)
+          // Convert to negative for sorting: 3000 BC = -3000
+          return -(year + (month / 12) + (day / 365))
         } else {
-          // AD date: use normal date parsing
-          const date = new Date(dateString)
-          return date.getFullYear() + (date.getMonth() / 12) + (date.getDate() / 365)
+          // For AD: normal positive years
+          return year + (month / 12) + (day / 365)
         }
       }
       
-      const aYear = getAstronomicalYear(a.event_date, a.era)
-      const bYear = getAstronomicalYear(b.event_date, b.era)
+      const aYear = getChronologicalValue(a.event_date, a.era)
+      const bYear = getChronologicalValue(b.event_date, b.era)
       
       return aYear - bYear // Chronological order: older events first
     })

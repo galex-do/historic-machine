@@ -173,8 +173,6 @@ func (r *EventRepository) Update(event *models.HistoricalEvent) (*models.Histori
         
         var updatedEvent models.HistoricalEvent
         
-        // DEBUG: Log what we're about to store in database
-        log.Printf("DEBUG Repository Update: About to store - EventDate: '%s', Era: '%s'", event.EventDate.Format("2006-01-02"), event.Era)
         
         err := r.db.QueryRow(query, event.ID, event.Name, event.Description, 
                 event.Latitude, event.Longitude, event.EventDate, event.Era, event.LensType,

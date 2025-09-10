@@ -426,9 +426,9 @@ export default {
               const month = parseInt(parts[1], 10)
               const day = parseInt(parts[2], 10)
               
-              // Convert to astronomical year: 754 BC = -753 astronomical year
-              // Add month/day for sub-year precision
-              return -(year - 1) - (month / 12) - (day / 365)
+              // For BC: larger year number = older (3000 BC < 1000 BC)
+              // Convert to negative for sorting: 3000 BC = -3000
+              return -(year + (month / 12) + (day / 365))
             } else {
               // AD date: use normal date parsing
               const date = new Date(dateString)
@@ -604,7 +604,7 @@ export default {
           if (!isNaN(date.getTime())) {
             const day = date.getDate().toString().padStart(2, '0')
             const month = (date.getMonth() + 1).toString().padStart(2, '0')
-            const year = Math.abs(date.getFullYear())
+            const year = date.getFullYear()
             dateDisplay = `${day}/${month}/${year}`
           }
         }

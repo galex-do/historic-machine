@@ -174,8 +174,6 @@ func (h *EventHandler) UpdateEvent(w http.ResponseWriter, r *http.Request) {
                 return
         }
         
-        // DEBUG: Log what we received from frontend
-        log.Printf("DEBUG UpdateEvent: Received request - event_date: '%s', era: '%s'", req.EventDate, req.Era)
         
         // Validate coordinates
         if err := h.eventRepo.ValidateCoordinates(req.Latitude, req.Longitude); err != nil {
@@ -194,8 +192,6 @@ func (h *EventHandler) UpdateEvent(w http.ResponseWriter, r *http.Request) {
         event := req.ToHistoricalEvent(user.ID)
         event.ID = id
         
-        // DEBUG: Log what ToHistoricalEvent produced
-        log.Printf("DEBUG UpdateEvent: After ToHistoricalEvent - EventDate: '%s', Era: '%s'", event.EventDate.Format("2006-01-02"), event.Era)
         
         // Update event
         updatedEvent, err := h.eventRepo.Update(event)
