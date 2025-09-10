@@ -426,7 +426,7 @@ SELECT
 FROM events e
 LEFT JOIN event_tags et ON e.id = et.event_id
 LEFT JOIN tags t ON et.tag_id = t.id
-GROUP BY e.id, e.name, e.description, e.latitude, e.longitude, e.event_date, e.era, e.lens_type, e.dataset_id, e.created_at, e.updated_at, e.created_by, e.updated_by
+GROUP BY e.id, e.name, e.description, e.latitude, e.longitude, e.event_date, e.era, e.lens_type, e.source, e.dataset_id, e.created_at, e.updated_at, e.created_by, e.updated_by
 ORDER BY astronomical_year ASC;
 
 -- +goose Down

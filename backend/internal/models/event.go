@@ -17,6 +17,7 @@ type HistoricalEvent struct {
         EventDate   time.Time `json:"-"` // Don't auto-marshal this field
         Era         string    `json:"era"`
         LensType    string    `json:"lens_type"`
+        Source      *string   `json:"source,omitempty"` // Optional HTTP/HTTPS link to source
         DisplayDate string    `json:"display_date,omitempty"`
         DatasetID   *int      `json:"dataset_id,omitempty"`
         CreatedBy   *int      `json:"created_by"`  // User ID who created this event
@@ -58,6 +59,7 @@ type CreateEventRequest struct {
         EventDate   string  `json:"event_date" validate:"required"` // Changed to string to handle BC dates
         Era         string  `json:"era"`
         LensType    string  `json:"lens_type" validate:"required"`
+        Source      *string `json:"source,omitempty"` // Optional HTTP/HTTPS link to source
         DatasetID   *int    `json:"dataset_id,omitempty"`
         TagIDs      []int   `json:"tag_ids,omitempty"`
 }
@@ -105,6 +107,7 @@ func (req *CreateEventRequest) ToHistoricalEvent(createdBy int) (*HistoricalEven
                 EventDate:   eventDate,
                 Era:         era,
                 LensType:    req.LensType,
+                Source:      req.Source,
                 DatasetID:   req.DatasetID,
                 CreatedBy:   &createdBy,
                 UpdatedBy:   &createdBy,  // Set updated_by field
