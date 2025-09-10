@@ -43,6 +43,14 @@
               Tags
             </router-link>
             <router-link 
+              to="/admin/datasets" 
+              class="dropdown-item"
+              @click="showAdminDropdown = false"
+            >
+              <span class="dropdown-icon">📦</span>
+              Datasets
+            </router-link>
+            <router-link 
               v-if="isSuper"
               to="/admin/users" 
               class="dropdown-item"
@@ -50,15 +58,6 @@
             >
               <span class="dropdown-icon">👥</span>
               Users
-            </router-link>
-            <div class="dropdown-divider"></div>
-            <router-link 
-              to="/datasets" 
-              class="dropdown-item"
-              @click="showAdminDropdown = false"
-            >
-              <span class="dropdown-icon">📦</span>
-              Datasets
             </router-link>
           </div>
         </div>

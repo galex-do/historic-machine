@@ -31,6 +31,12 @@ const routes = [
     component: AdminUsers,
     meta: { requiresAdmin: true, requiresSuper: true }
   },
+  {
+    path: '/admin/datasets',
+    name: 'AdminDatasets',
+    component: () => import('@/views/DatasetsPanel.vue'),
+    meta: { requiresAdmin: true }
+  },
   // Legacy routes for backward compatibility
   {
     path: '/events',
@@ -38,9 +44,7 @@ const routes = [
   },
   {
     path: '/datasets',
-    name: 'Datasets',
-    component: () => import('@/views/DatasetsPanel.vue'),
-    meta: { requiresAdmin: true }
+    redirect: '/admin/datasets'
   }
 ]
 
