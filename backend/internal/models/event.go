@@ -18,8 +18,10 @@ type HistoricalEvent struct {
         LensType    string    `json:"lens_type"`
         DisplayDate string    `json:"display_date,omitempty"`
         DatasetID   *int      `json:"dataset_id,omitempty"`
-        CreatedBy   *int      `json:"created_by"` // User ID who created this event
-        UpdatedBy   *int      `json:"updated_by"` // User ID who last updated this event
+        CreatedBy   *int      `json:"created_by"`  // User ID who created this event
+        UpdatedBy   *int      `json:"updated_by"`  // User ID who last updated this event
+        CreatedAt   time.Time `json:"created_at"`  // When event was created
+        UpdatedAt   time.Time `json:"updated_at"`  // When event was last updated
         Tags        []Tag     `json:"tags,omitempty"`
 }
 
