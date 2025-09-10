@@ -565,19 +565,29 @@ export default {
       // Format date properly for display (DD/MM/YYYY)
       let dateDisplay = ''
       if (event.event_date) {
+        console.log('DEBUG: event.event_date =', event.event_date)
+        console.log('DEBUG: event.era =', event.era)
+        
         // Handle all dates - BC and AD
         const dateStr = event.event_date.toString()
+        console.log('DEBUG: dateStr =', dateStr)
         
         // Parse dates in format "YYYY-MM-DD" (like "3501-01-02")
         if (dateStr.includes('-')) {
           const parts = dateStr.split('-')
+          console.log('DEBUG: dash parts =', parts)
           if (parts.length >= 3) {
             const year = Math.abs(parseInt(parts[0]))
             const month = parseInt(parts[1])
             const day = parseInt(parts[2])
             
+            console.log('DEBUG: parsed parts =', { year, month, day })
+            
             if (year && month && day && !isNaN(year) && !isNaN(month) && !isNaN(day)) {
               dateDisplay = `${day.toString().padStart(2, '0')}/${month.toString().padStart(2, '0')}/${year}`
+              console.log('DEBUG: dateDisplay =', dateDisplay)
+            } else {
+              console.log('DEBUG: Invalid parsed parts')
             }
           }
         } else {
@@ -588,8 +598,13 @@ export default {
             const month = (date.getMonth() + 1).toString().padStart(2, '0')
             const year = Math.abs(date.getFullYear())
             dateDisplay = `${day}/${month}/${year}`
+            console.log('DEBUG: Standard date parsing result =', dateDisplay)
+          } else {
+            console.log('DEBUG: Standard date parsing failed')
           }
         }
+      } else {
+        console.log('DEBUG: No event.event_date')
       }
       
       eventForm.value = {
