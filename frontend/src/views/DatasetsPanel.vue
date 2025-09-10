@@ -67,6 +67,14 @@
               </td>
               <td class="dataset-actions">
                 <button 
+                  @click="exportDataset(dataset)"
+                  class="export-button"
+                  :title="`Export dataset: ${dataset?.filename || 'Unknown'}`"
+                  :disabled="localLoading"
+                >
+                  📤
+                </button>
+                <button 
                   @click="confirmDelete(dataset)"
                   class="delete-button"
                   :title="`Delete dataset: ${dataset?.filename || 'Unknown'}`"
@@ -165,6 +173,46 @@ export default {
       datasetToDelete.value = null
     }
 
+    const exportDataset = async (dataset) => {
+      localLoading.value = true
+      localError.value = null
+      
+      try {
+        console.log('Exporting dataset:', dataset.filename)
+        const response = await apiService.exportDataset(dataset.id)
+        
+        // Create blob and download
+        const blob = new Blob([JSON.stringify(response, null, 2)], { 
+          type: 'application/json' 
+        })
+        
+        // Create download link
+        const url = window.URL.createObjectURL(blob)
+        const link = document.createElement('a')
+        link.href = url
+        
+        // Use original filename or create one based on dataset
+        const exportFilename = dataset.filename || `dataset_${dataset.id}_export.json`
+        link.download = exportFilename
+        
+        // Trigger download
+        document.body.appendChild(link)
+        link.click()
+        
+        // Cleanup
+        window.URL.revokeObjectURL(url)
+        document.body.removeChild(link)
+        
+        console.log('Dataset exported successfully:', exportFilename)
+        
+      } catch (err) {
+        console.error('Error exporting dataset:', err)
+        localError.value = err.message || 'Failed to export dataset'
+      } finally {
+        localLoading.value = false
+      }
+    }
+
     const deleteDataset = async () => {
       if (!datasetToDelete.value) return
       
@@ -216,6 +264,7 @@ export default {
       showDeleteModal,
       datasetToDelete,
       fetchDatasets,
+      exportDataset,
       confirmDelete,
       closeDeleteModal,
       deleteDataset,
@@ -345,6 +394,33 @@ export default {
   border-radius: 20px;
   font-weight: 600;
   font-size: 0.875rem;
+}
+
+.dataset-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.export-button {
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  color: #0369a1;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.2s;
+}
+
+.export-button:hover:not(:disabled) {
+  background: #e0f2fe;
+  border-color: #7dd3fc;
+}
+
+.export-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .delete-button {
