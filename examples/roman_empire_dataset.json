@@ -1,0 +1,106 @@
+{
+  "filename": "roman_empire_dataset.json", 
+  "description": "Major events from the Roman Republic and Empire",
+  "events": [
+    {
+      "name": "Foundation of Rome",
+      "description": "Legendary founding of Rome by Romulus, marking the beginning of Roman civilization",
+      "date": "21.04.753",
+      "era": "BC",
+      "latitude": 41.9028,
+      "longitude": 12.4964,
+      "type": "political",
+      "tags": ["Roman", "Political", "Founding"]
+    },
+    {
+      "name": "Establishment of the Roman Republic",
+      "description": "Overthrow of the last Roman king and establishment of the Roman Republic with consular government",
+      "date": "01.01.509",
+      "era": "BC",
+      "latitude": 41.9028,
+      "longitude": 12.4964,
+      "type": "political",
+      "tags": ["Roman", "Political", "Republic"]
+    },
+    {
+      "name": "Caesar Crosses the Rubicon",
+      "description": "Julius Caesar crosses the Rubicon river with his army, beginning the Roman Civil War and end of the Republic",
+      "date": "10.01.49",
+      "era": "BC",
+      "latitude": 44.0697,
+      "longitude": 12.2462,
+      "type": "military",
+      "tags": ["Roman", "Military", "Julius Caesar", "Civil War"]
+    },
+    {
+      "name": "Assassination of Julius Caesar",
+      "description": "Julius Caesar assassinated on the Ides of March in the Roman Senate, leading to further civil wars",
+      "date": "15.03.44",
+      "era": "BC",
+      "latitude": 41.9028,
+      "longitude": 12.4964,
+      "type": "political",
+      "tags": ["Roman", "Political", "Julius Caesar", "Assassination"]
+    },
+    {
+      "name": "Battle of Actium",
+      "description": "Naval battle where Octavian defeated Mark Antony and Cleopatra, leading to the end of the Roman Republic",
+      "date": "02.09.31",
+      "era": "BC",
+      "latitude": 38.9500,
+      "longitude": 20.7500,
+      "type": "military",
+      "tags": ["Roman", "Military", "Augustus", "Naval Battle"]
+    },
+    {
+      "name": "Augustus Becomes First Emperor",
+      "description": "Octavian becomes Augustus, the first Roman Emperor, marking the beginning of the Roman Empire",
+      "date": "16.01.27",
+      "era": "BC",
+      "latitude": 41.9028,
+      "longitude": 12.4964,
+      "type": "political",
+      "tags": ["Roman", "Political", "Augustus", "Empire"]
+    },
+    {
+      "name": "Great Fire of Rome",
+      "description": "Devastating fire that burned for six days and seven nights, destroying much of Rome during Nero's reign",
+      "date": "19.07.64",
+      "era": "AD",
+      "latitude": 41.9028,
+      "longitude": 12.4964,
+      "type": "historic",
+      "tags": ["Roman", "Disaster", "Nero", "Fire"]
+    },
+    {
+      "name": "Construction of the Colosseum Completed",
+      "description": "Completion of the Flavian Amphitheatre (Colosseum), the largest amphitheatre ever built",
+      "date": "01.01.80",
+      "era": "AD",
+      "latitude": 41.8902,
+      "longitude": 12.4922,
+      "type": "cultural",
+      "tags": ["Roman", "Cultural", "Architecture", "Entertainment"]
+    },
+    {
+      "name": "Constantine's Victory at Milvian Bridge",
+      "description": "Constantine defeats Maxentius at the Battle of Milvian Bridge, becoming sole emperor and later converting to Christianity",
+      "date": "28.10.312",
+      "era": "AD",
+      "latitude": 41.9342,
+      "longitude": 12.4700,
+      "type": "military",
+      "tags": ["Roman", "Military", "Constantine", "Christianity"]
+    },
+    {
+      "name": "Fall of the Western Roman Empire",
+      "description": "Deposition of Romulus Augustulus, marking the traditional end of the Western Roman Empire",
+      "date": "04.09.476",
+      "era": "AD",
+      "latitude": 45.4384,
+      "longitude": 10.9916,
+      "type": "political",
+      "tags": ["Roman", "Political", "Fall", "End of Empire"]
+    }
+  ]
+}
