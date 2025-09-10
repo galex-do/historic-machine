@@ -540,6 +540,88 @@ export default {
       return luminance > 0.5 ? '#000000' : '#ffffff'
     }
 
+    // Event management functions
+    const toggleSort = (field) => {
+      if (sortField.value === field) {
+        sortDirection.value = sortDirection.value === 'asc' ? 'desc' : 'asc'
+      } else {
+        sortField.value = field
+        sortDirection.value = 'asc'
+      }
+    }
+
+    const handlePageChange = (page) => {
+      currentPage.value = page
+    }
+
+    const handlePageSizeChange = (size) => {
+      pageSize.value = size
+      currentPage.value = 1
+    }
+
+    const editEvent = (event) => {
+      editingEvent.value = event
+      eventForm.value = {
+        name: event.name,
+        description: event.description,
+        date_display: event.display_date || '',
+        date: event.event_date,
+        era: event.era || 'AD',
+        latitude: event.latitude,
+        longitude: event.longitude,
+        lens_type: event.lens_type,
+        selectedTags: event.tags || [],
+        newTagName: '',
+        newTagColor: '#3B82F6',
+        tagSearch: ''
+      }
+      showEditModal.value = true
+    }
+
+    const deleteEvent = async (event) => {
+      const confirmed = confirm(`Are you sure you want to delete "${event.name}"? This action cannot be undone.`)
+      if (!confirmed) return
+      
+      localLoading.value = true
+      localError.value = null
+      try {
+        await apiService.deleteEvent(event.id)
+        await fetchEvents() // Refresh events list
+        allEvents.value = events.value || []
+        console.log('Event deleted successfully')
+      } catch (err) {
+        console.error('Error deleting event:', err)
+        localError.value = err.message || 'Failed to delete event'
+      } finally {
+        localLoading.value = false
+      }
+    }
+
+    const closeModal = () => {
+      showCreateModal.value = false
+      showEditModal.value = false
+      editingEvent.value = null
+      eventForm.value = {
+        name: '',
+        description: '',
+        date_display: '',
+        date: '',
+        era: 'AD',
+        latitude: null,
+        longitude: null,
+        lens_type: '',
+        selectedTags: [],
+        newTagName: '',
+        newTagColor: '#3B82F6',
+        tagSearch: ''
+      }
+      localError.value = null
+    }
+
+    const triggerFileUpload = () => {
+      fileInput.value?.click()
+    }
+
     // Load initial data
     onMounted(async () => {
       try {
@@ -553,16 +635,15 @@ export default {
       }
     })
 
-    // I would need to add all other event management functions here
-    // For brevity, I'm showing the structure
-
     return {
       canAccessAdmin,
       loading: computed(() => loading.value || localLoading.value),
       error: computed(() => error.value || localError.value),
       showCreateModal,
       showEditModal,
-      // ... all other reactive properties and functions
+      editingEvent,
+      eventForm,
+      fileInput,
       formatDateWithEra,
       getContrastColor,
       filteredEvents,
@@ -576,7 +657,15 @@ export default {
       sortDirection,
       currentPage,
       pageSize,
-      totalEvents
+      totalEvents,
+      // Functions
+      toggleSort,
+      handlePageChange,
+      handlePageSizeChange,
+      editEvent,
+      deleteEvent,
+      closeModal,
+      triggerFileUpload
     }
   }
 }
