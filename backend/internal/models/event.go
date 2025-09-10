@@ -3,6 +3,7 @@ package models
 import (
         "encoding/json"
         "fmt"
+        "strings"
         "time"
 )
 
@@ -70,11 +71,14 @@ type CreateEventRequest struct {
 
 // ParseEventDate parses the event date string handling BC dates properly
 func (req *CreateEventRequest) ParseEventDate() (time.Time, error) {
+        // Clean the date string - remove any " BC" or " AD" suffix that might be present
+        dateStr := strings.TrimSuffix(strings.TrimSuffix(req.EventDate, " BC"), " AD")
+        
         // Handle BC dates by parsing them manually
         if req.Era == "BC" {
-                // Parse date string like "3501-01-02" and convert to a time.Time with negative year
+                // Parse clean date string like "3501-01-02"
                 var year, month, day int
-                _, err := fmt.Sscanf(req.EventDate, "%d-%d-%d", &year, &month, &day)
+                _, err := fmt.Sscanf(dateStr, "%d-%d-%d", &year, &month, &day)
                 if err != nil {
                         return time.Time{}, fmt.Errorf("invalid BC date format: %v", err)
                 }
@@ -85,8 +89,8 @@ func (req *CreateEventRequest) ParseEventDate() (time.Time, error) {
                 return time.Date(astronomicalYear, time.Month(month), day, 0, 0, 0, 0, time.UTC), nil
         }
         
-        // For AD dates, parse normally
-        return time.Parse("2006-01-02", req.EventDate)
+        // For AD dates, parse the cleaned date string
+        return time.Parse("2006-01-02", dateStr)
 }
 
 // ToHistoricalEvent converts CreateEventRequest to HistoricalEvent
