@@ -565,12 +565,8 @@ export default {
       // Format date properly for display (DD/MM/YYYY)
       let dateDisplay = ''
       if (event.event_date) {
-        console.log('DEBUG: event.event_date =', event.event_date)
-        console.log('DEBUG: event.era =', event.era)
-        
         // Handle all dates - BC and AD
         const dateStr = event.event_date.toString()
-        console.log('DEBUG: dateStr =', dateStr)
         
         // Parse dates - handle negative years (BC dates in ISO format)
         if (dateStr.includes('-')) {
@@ -581,7 +577,6 @@ export default {
             // Remove the leading minus and split
             const cleanStr = dateStr.substring(1)
             const parts = cleanStr.split('-')
-            console.log('DEBUG: negative year parts =', parts)
             
             if (parts.length >= 3) {
               year = parseInt(parts[0])
@@ -592,7 +587,6 @@ export default {
           } else {
             // Handle positive year format like "2024-01-01"
             const parts = dateStr.split('-')
-            console.log('DEBUG: positive year parts =', parts)
             
             if (parts.length >= 3) {
               year = parseInt(parts[0])
@@ -601,13 +595,8 @@ export default {
             }
           }
           
-          console.log('DEBUG: parsed parts =', { year, month, day })
-          
           if (year && month && day && !isNaN(year) && !isNaN(month) && !isNaN(day)) {
             dateDisplay = `${day.toString().padStart(2, '0')}/${month.toString().padStart(2, '0')}/${year}`
-            console.log('DEBUG: dateDisplay =', dateDisplay)
-          } else {
-            console.log('DEBUG: Invalid parsed parts')
           }
         } else {
           // For other formats, try standard Date parsing
@@ -617,13 +606,10 @@ export default {
             const month = (date.getMonth() + 1).toString().padStart(2, '0')
             const year = Math.abs(date.getFullYear())
             dateDisplay = `${day}/${month}/${year}`
-            console.log('DEBUG: Standard date parsing result =', dateDisplay)
-          } else {
-            console.log('DEBUG: Standard date parsing failed')
           }
         }
       } else {
-        console.log('DEBUG: No event.event_date')
+        // No event date available
       }
       
       eventForm.value = {
@@ -752,10 +738,11 @@ export default {
     }
 
     const updateEventDate = () => {
-      // Convert DD/MM/YYYY to ISO date format
+      // Convert DD/MM/YYYY to ISO date format for backend
       const dateDisplay = eventForm.value.date_display
       if (dateDisplay && dateDisplay.match(/^\d{2}\/\d{2}\/\d{4}$/)) {
         const [day, month, year] = dateDisplay.split('/')
+        // Always use positive year for the date string, era field handles BC/AD
         eventForm.value.date = `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`
       }
     }

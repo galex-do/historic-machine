@@ -100,9 +100,11 @@ func (req *CreateEventRequest) ToHistoricalEvent(createdBy int) *HistoricalEvent
         eventDate, err := req.ParseEventDate()
         if err != nil {
                 // If parsing fails, use a default time and log the error
+                fmt.Printf("Error parsing event date: %v", err)
                 eventDate = time.Now()
         }
         
+        now := time.Now()
         return &HistoricalEvent{
                 Name:        req.Name,
                 Description: req.Description,
@@ -113,5 +115,7 @@ func (req *CreateEventRequest) ToHistoricalEvent(createdBy int) *HistoricalEvent
                 LensType:    req.LensType,
                 DatasetID:   req.DatasetID,
                 CreatedBy:   &createdBy,
+                UpdatedBy:   &createdBy,  // Set updated_by field
+                UpdatedAt:   now,         // Set updated_at field
         }
 }

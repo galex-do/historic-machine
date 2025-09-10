@@ -167,16 +167,18 @@ func (r *EventRepository) Update(event *models.HistoricalEvent) (*models.Histori
         query := `
                 UPDATE events 
                 SET name = $2, description = $3, latitude = $4::double precision, longitude = $5::double precision, 
-                    event_date = $6, era = $7, lens_type = $8
+                    event_date = $6, era = $7, lens_type = $8, updated_by = $9, updated_at = $10
                 WHERE id = $1
-                RETURNING id, name, description, latitude, longitude, event_date, era, lens_type`
+                RETURNING id, name, description, latitude, longitude, event_date, era, lens_type, created_at, updated_at, created_by, updated_by`
         
         var updatedEvent models.HistoricalEvent
         err := r.db.QueryRow(query, event.ID, event.Name, event.Description, 
-                event.Latitude, event.Longitude, event.EventDate, event.Era, event.LensType).
+                event.Latitude, event.Longitude, event.EventDate, event.Era, event.LensType,
+                event.UpdatedBy, event.UpdatedAt).
                 Scan(&updatedEvent.ID, &updatedEvent.Name, &updatedEvent.Description, 
                 &updatedEvent.Latitude, &updatedEvent.Longitude, &updatedEvent.EventDate, 
-                &updatedEvent.Era, &updatedEvent.LensType)
+                &updatedEvent.Era, &updatedEvent.LensType, &updatedEvent.CreatedAt,
+                &updatedEvent.UpdatedAt, &updatedEvent.CreatedBy, &updatedEvent.UpdatedBy)
         
         if err != nil {
                 if err == sql.ErrNoRows {
