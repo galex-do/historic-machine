@@ -31,16 +31,9 @@ func (e HistoricalEvent) MarshalJSON() ([]byte, error) {
         // Create alias to avoid infinite recursion
         type Alias HistoricalEvent
         
-        // Convert EventDate to string format that can handle BC dates
-        var eventDateStr string
-        if e.Era == "BC" {
-                // For BC dates, use positive year with format YYYY-MM-DD
-                year := -(e.EventDate.Year() + 1)
-                eventDateStr = formatBCDate(year, e.EventDate.Month(), e.EventDate.Day())
-        } else {
-                // For AD dates, use standard formatting
-                eventDateStr = e.EventDate.Format("2006-01-02T15:04:05Z07:00")
-        }
+        // For all dates, use standard ISO format
+        // The era field will indicate BC/AD
+        eventDateStr := e.EventDate.Format("2006-01-02T15:04:05Z07:00")
         
         return json.Marshal(&struct {
                 EventDate string `json:"event_date"`
