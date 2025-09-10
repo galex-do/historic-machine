@@ -63,6 +63,16 @@
         <div class="modal-header">
           <h3 v-if="selected_events.length === 1">
             {{ get_event_emoji(selected_events[0].lens_type) }} {{ selected_events[0].name }}
+            <a 
+              v-if="selected_events[0].source"
+              :href="selected_events[0].source" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="inline-source-link" 
+              title="View source"
+            >
+              🔗
+            </a>
           </h3>
           <h3 v-else>{{ selected_events.length }} Events at this Location</h3>
           <div class="header-actions">
@@ -75,7 +85,19 @@
           <div v-for="(event, index) in selected_events" :key="event.id" class="event-info-item">
             <!-- Show event header only for multiple events -->
             <div v-if="selected_events.length > 1" class="event-header">
-              <h4>{{ get_event_emoji(event.lens_type) }} {{ event.name }}</h4>
+              <h4>
+                {{ get_event_emoji(event.lens_type) }} {{ event.name }}
+                <a 
+                  v-if="event.source"
+                  :href="event.source" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="inline-source-link" 
+                  title="View source"
+                >
+                  🔗
+                </a>
+              </h4>
               <span v-if="canEditEvents" @click="edit_event_from_info(event.id)" class="edit-icon" title="Edit event">✏️</span>
             </div>
             <div class="event-date">{{ event.display_date || format_date(event.event_date) }}</div>
@@ -1053,6 +1075,20 @@ export default {
 .edit-icon:hover {
   opacity: 1;
   background: #f1f5f9;
+  transform: scale(1.1);
+}
+
+.inline-source-link {
+  margin-left: 0.5rem;
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+  font-weight: normal;
+}
+
+.inline-source-link:hover {
+  color: #1d4ed8;
   transform: scale(1.1);
 }
 
