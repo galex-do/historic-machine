@@ -12,7 +12,8 @@
         "Sumerian",
         "Urban"
       ],
-      "type": "historic"
+      "type": "historic",
+      "source": "https://www.metmuseum.org/toah/hd/uruk/hd_uruk.htm"
     },
     {
       "date": "01.01.3300",
@@ -25,7 +26,8 @@
         "Sumerian",
         "Writing"
       ],
-      "type": "cultural"
+      "type": "cultural",
+      "source": "https://www.britishmuseum.org/learn/schools/ages-7-11/ancient-mesopotamia/story-writing"
     },
     {
       "date": "01.01.3300",
@@ -39,7 +41,8 @@
         "Urban",
         "Civilization"
       ],
-      "type": "historic"
+      "type": "historic",
+      "source": "https://www.harappa.com/har/har0.html"
     },
     {
       "date": "01.01.3200",
@@ -66,7 +69,8 @@
         "Sumerian",
         "Technology"
       ],
-      "type": "scientific"
+      "type": "scientific",
+      "source": "https://www.smithsonianmag.com/science-nature/a-salute-to-the-wheel-31805121/"
     },
     {
       "date": "01.01.3100",
@@ -80,7 +84,8 @@
         "Unification",
         "Pharaoh"
       ],
-      "type": "political"
+      "type": "political",
+      "source": "https://www.britishmuseum.org/collection/object/Y_EA32650"
     },
     {
       "date": "15.01.3100",
@@ -106,7 +111,8 @@
         "Egypt",
         "Writing"
       ],
-      "type": "cultural"
+      "type": "cultural",
+      "source": "https://www.metmuseum.org/toah/hd/egyp/hd_egyp.htm"
     },
     {
       "date": "01.01.3000",
@@ -133,7 +139,8 @@
         "Sumerian",
         "Mathematics"
       ],
-      "type": "scientific"
+      "type": "scientific",
+      "source": "https://www.britannica.com/science/sexagesimal"
     },
     {
       "date": "01.01.3000",
@@ -230,7 +237,8 @@
         "Architecture",
         "Old Kingdom"
       ],
-      "type": "cultural"
+      "type": "cultural",
+      "source": "https://www.bbc.com/travel/article/20191204-the-worlds-oldest-pyramid-is-not-where-you-think"
     },
     {
       "date": "01.01.2675",
@@ -244,7 +252,8 @@
         "Medicine",
         "Old Kingdom"
       ],
-      "type": "scientific"
+      "type": "scientific",
+      "source": "https://www.britannica.com/biography/Imhotep"
     },
     {
       "date": "01.01.2650",
@@ -287,7 +296,8 @@
         "Urban",
         "Largest City"
       ],
-      "type": "historic"
+      "type": "historic",
+      "source": "https://whc.unesco.org/en/list/138/"
     },
     {
       "date": "01.01.2600",
@@ -343,7 +353,8 @@
         "Architecture",
         "Old Kingdom"
       ],
-      "type": "cultural"
+      "type": "cultural",
+      "source": "https://www.nationalgeographic.com/history/archaeology/giza-pyramids/"
     },
     {
       "date": "15.01.2540",
@@ -357,7 +368,8 @@
         "Architecture",
         "Old Kingdom"
       ],
-      "type": "cultural"
+      "type": "cultural",
+      "source": "https://www.smithsonianmag.com/history/uncovering-secrets-sphinx-180956619/"
     },
     {
       "date": "01.01.2540",
@@ -468,7 +480,8 @@
         "Engineering",
         "Architecture"
       ],
-      "type": "cultural"
+      "type": "cultural",
+      "source": "https://www.worldhistory.org/Mohenjo-daro/"
     },
     {
       "date": "01.01.2370",
@@ -520,7 +533,8 @@
         "Akkadian",
         "Political"
       ],
-      "type": "political"
+      "type": "political",
+      "source": "https://www.worldhistory.org/Sargon_of_Akkad/"
     },
     {
       "date": "01.01.2334",
@@ -590,7 +604,8 @@
         "Bronze",
         "Sculpture"
       ],
-      "type": "cultural"
+      "type": "cultural",
+      "source": "https://www.nationalmuseumindia.gov.in/"
     },
     {
       "date": "01.01.2300",
@@ -669,7 +684,8 @@
       "tags": [
         "Climate Crisis"
       ],
-      "type": "historic"
+      "type": "historic",
+      "source": "https://www.nature.com/articles/s41598-019-44652-5"
     },
     {
       "date": "01.01.2181",
@@ -917,7 +933,8 @@
         "Babylon",
         "Legendary"
       ],
-      "type": "political"
+      "type": "political",
+      "source": "https://www.worldhistory.org/hammurabi/"
     },
     {
       "date": "01.01.1763",
@@ -971,7 +988,8 @@
         "Code",
         "Justice"
       ],
-      "type": "political"
+      "type": "political",
+      "source": "https://www.britishmuseum.org/collection/object/W_1909-1019-1"
     },
     {
       "date": "01.01.1720",
@@ -1039,7 +1057,8 @@
         "First Verified Dynasty",
         "China"
       ],
-      "type": "political"
+      "type": "political",
+      "source": "https://www.britannica.com/topic/Shang-dynasty"
     },
     {
       "date": "01.01.1595",
@@ -1165,7 +1184,8 @@
         "Pharaoh",
         "Success"
       ],
-      "type": "political"
+      "type": "political",
+      "source": "https://www.metmuseum.org/toah/hd/hats/hd_hats.htm"
     },
     {
       "date": "01.01.1470",
@@ -1179,7 +1199,8 @@
         "Temple",
         "Innovation"
       ],
-      "type": "cultural"
+      "type": "cultural",
+      "source": "https://www.worldhistory.org/Deir_el-Bahari/"
     },
     {
       "date": "01.01.1465",
@@ -1236,7 +1257,8 @@
         "Battle",
         "New Kingdom"
       ],
-      "type": "military"
+      "type": "military",
+      "source": "https://www.worldhistory.org/Battle_of_Megiddo/"
     },
     {
       "date": "01.01.1436",
@@ -1276,7 +1298,8 @@
         "Greek",
         "Writing"
       ],
-      "type": "cultural"
+      "type": "cultural",
+      "source": "https://www.britannica.com/topic/Linear-B"
     },
     {
       "date": "01.01.1400",
@@ -1332,7 +1355,8 @@
         "Religion",
         "New Kingdom"
       ],
-      "type": "cultural"
+      "type": "cultural",
+      "source": "https://www.worldhistory.org/akhenaten/"
     },
     {
       "date": "01.01.1350",
@@ -1346,7 +1370,8 @@
         "Capital",
         "New Kingdom"
       ],
-      "type": "political"
+      "type": "political",
+      "source": "https://www.metmuseum.org/toah/hd/amarna/hd_amarna.htm"
     },
     {
       "date": "01.01.1336",
@@ -1374,7 +1399,8 @@
         "Restoration",
         "Traditional"
       ],
-      "type": "political"
+      "type": "political",
+      "source": "https://www.nationalgeographic.com/history/article/tutankhamun"
     },
     {
       "date": "01.01.1330",
@@ -1444,7 +1470,8 @@
         "End",
         "Urban Civilization"
       ],
-      "type": "historic"
+      "type": "historic",
+      "source": "https://www.britannica.com/topic/Indus-civilization"
     },
     {
       "date": "01.01.1295",
@@ -1500,7 +1527,8 @@
         "Egypt",
         "Battle"
       ],
-      "type": "military"
+      "type": "military",
+      "source": "https://www.worldhistory.org/Battle_of_Kadesh/"
     },
     {
       "date": "01.01.1259",
@@ -1514,7 +1542,8 @@
         "Treaty",
         "First"
       ],
-      "type": "political"
+      "type": "political",
+      "source": "https://www.worldhistory.org/Egyptian-Hittite_Peace_Treaty/"
     },
     {
       "date": "01.01.1250",
@@ -1528,7 +1557,8 @@
         "Writing",
         "Divination"
       ],
-      "type": "cultural"
+      "type": "cultural",
+      "source": "https://www.britannica.com/topic/oracle-bone"
     },
     {
       "date": "01.01.1244",
@@ -1541,7 +1571,8 @@
         "Egypt",
         "Architecture"
       ],
-      "type": "cultural"
+      "type": "cultural",
+      "source": "https://whc.unesco.org/en/list/88/"
     },
     {
       "date": "01.01.1230",
@@ -1583,7 +1614,8 @@
         "Mystery",
         "Civilization"
       ],
-      "type": "historic"
+      "type": "historic",
+      "source": "https://www.worldhistory.org/Bronze_Age_Collapse/"
     },
     {
       "date": "01.01.1200",
@@ -1611,7 +1643,8 @@
         "Invasions",
         "Strife"
       ],
-      "type": "political"
+      "type": "political",
+      "source": "https://www.worldhistory.org/hittite_civilization/"
     },
     {
       "date": "01.01.1175",
@@ -1625,7 +1658,8 @@
         "Victory",
         "Defense"
       ],
-      "type": "military"
+      "type": "military",
+      "source": "https://www.worldhistory.org/Sea_Peoples/"
     },
     {
       "date": "01.01.1153",
@@ -1723,7 +1757,8 @@
         "Capital",
         "Jerusalem"
       ],
-      "type": "military"
+      "type": "military",
+      "source": "https://www.britannica.com/biography/David-king-of-Israel"
     }
   ],
   "filename": "ancient_civilizations_pre_1000bc.json"
