@@ -1,6 +1,7 @@
 package services
 
 import (
+        "fmt"
         "historical-events-backend/internal/database/repositories"
         "historical-events-backend/internal/models"
 )
@@ -35,7 +36,10 @@ func (s *EventService) CreateEvent(req *models.CreateEventRequest, userID int) (
         }
         
         // Convert to domain model
-        event := req.ToHistoricalEvent(userID)
+        event, err := req.ToHistoricalEvent(userID)
+        if err != nil {
+                return nil, fmt.Errorf("invalid event data: %w", err)
+        }
         
         // Create event
         return s.eventRepo.Create(event)

@@ -144,7 +144,11 @@ func (h *EventHandler) CreateEvent(w http.ResponseWriter, r *http.Request) {
         }
         
         // Convert request to event model
-        event := req.ToHistoricalEvent(user.ID)
+        event, err := req.ToHistoricalEvent(user.ID)
+        if err != nil {
+                response.BadRequest(w, err.Error())
+                return
+        }
         
         // Create event
         createdEvent, err := h.eventRepo.Create(event)
@@ -189,7 +193,11 @@ func (h *EventHandler) UpdateEvent(w http.ResponseWriter, r *http.Request) {
         }
         
         // Convert request to event model and set ID
-        event := req.ToHistoricalEvent(user.ID)
+        event, err := req.ToHistoricalEvent(user.ID)
+        if err != nil {
+                response.BadRequest(w, err.Error())
+                return
+        }
         event.ID = id
         
         

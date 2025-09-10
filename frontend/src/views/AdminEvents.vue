@@ -616,7 +616,7 @@ export default {
         name: event.name,
         description: event.description,
         date_display: dateDisplay,
-        date: event.event_date,
+        date: event.event_date, // Keep original date as fallback
         era: event.era || 'AD',
         latitude: event.latitude || '',
         longitude: event.longitude || '',
@@ -625,6 +625,11 @@ export default {
         newTagName: '',
         newTagColor: '#3B82F6',
         tagSearch: ''
+      }
+      
+      // Convert display date to proper ISO format for backend
+      if (dateDisplay) {
+        updateEventDate()
       }
       showEditModal.value = true
       showCreateModal.value = false
@@ -752,6 +757,16 @@ export default {
       localError.value = null
       
       try {
+        // Ensure date is properly converted before saving
+        updateEventDate()
+        
+        // Validate that date exists
+        if (!eventForm.value.date) {
+          localError.value = 'Date is required'
+          localLoading.value = false
+          return
+        }
+        
         const eventData = {
           name: eventForm.value.name,
           description: eventForm.value.description,

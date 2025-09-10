@@ -74,7 +74,7 @@ func (req *CreateEventRequest) ParseEventDate() (time.Time, error) {
 }
 
 // ToHistoricalEvent converts CreateEventRequest to HistoricalEvent
-func (req *CreateEventRequest) ToHistoricalEvent(createdBy int) *HistoricalEvent {
+func (req *CreateEventRequest) ToHistoricalEvent(createdBy int) (*HistoricalEvent, error) {
         era := req.Era
         if era == "" {
                 era = "AD"
@@ -83,9 +83,8 @@ func (req *CreateEventRequest) ToHistoricalEvent(createdBy int) *HistoricalEvent
         // Parse the event date string
         eventDate, err := req.ParseEventDate()
         if err != nil {
-                // If parsing fails, use a default time and log the error
-                fmt.Printf("Error parsing event date: %v", err)
-                eventDate = time.Now()
+                // If parsing fails, return error instead of defaulting to today
+                return nil, fmt.Errorf("invalid event date: %v", err)
         }
         
         now := time.Now()
@@ -101,5 +100,5 @@ func (req *CreateEventRequest) ToHistoricalEvent(createdBy int) *HistoricalEvent
                 CreatedBy:   &createdBy,
                 UpdatedBy:   &createdBy,  // Set updated_by field
                 UpdatedAt:   now,         // Set updated_at field
-        }
+        }, nil
 }
