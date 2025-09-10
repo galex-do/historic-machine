@@ -75,6 +75,7 @@ func (router *Router) SetupRoutes() http.Handler {
         api.HandleFunc("/datasets", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.datasetHandler.GetAllDatasets)).Methods("GET", "OPTIONS")
         api.HandleFunc("/datasets", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.datasetHandler.CreateDataset)).Methods("POST", "OPTIONS")
         api.HandleFunc("/datasets/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.datasetHandler.GetDatasetByID)).Methods("GET", "OPTIONS")
+        api.HandleFunc("/datasets/{id}/export", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.datasetHandler.ExportDataset)).Methods("GET", "OPTIONS")
         api.HandleFunc("/datasets/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.datasetHandler.DeleteDataset)).Methods("DELETE", "OPTIONS")
         
         // User management routes (super users only)

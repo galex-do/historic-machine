@@ -66,6 +66,55 @@ func (r *EventRepository) GetAll() ([]models.HistoricalEvent, error) {
         return events, nil
 }
 
+// GetByDatasetID retrieves all events from a specific dataset
+func (r *EventRepository) GetByDatasetID(datasetID int) ([]models.HistoricalEvent, error) {
+        query := `
+                SELECT id, name, description, latitude, longitude, event_date, era, lens_type, display_date, created_by, updated_by, created_at, updated_at, tags
+                FROM events_with_display_dates 
+                WHERE dataset_id = $1
+                ORDER BY astronomical_year ASC`
+        
+        rows, err := r.db.Query(query, datasetID)
+        if err != nil {
+                return nil, fmt.Errorf("failed to query events for dataset %d: %w", datasetID, err)
+        }
+        defer rows.Close()
+        
+        var events []models.HistoricalEvent
+        
+        for rows.Next() {
+                var event models.HistoricalEvent
+                var tagsJSON []byte
+                
+                err := rows.Scan(&event.ID, &event.Name, &event.Description, &event.Latitude, 
+                        &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.DisplayDate, &event.CreatedBy, &event.UpdatedBy, &event.CreatedAt, &event.UpdatedAt, &tagsJSON)
+                if err != nil {
+                        log.Printf("Error scanning event: %v", err)
+                        continue
+                }
+                
+                // Parse tags JSON
+                if len(tagsJSON) > 0 {
+                        var tags []models.Tag
+                        if err := json.Unmarshal(tagsJSON, &tags); err != nil {
+                                log.Printf("Error unmarshaling tags for event %d: %v", event.ID, err)
+                                tags = []models.Tag{}
+                        }
+                        event.Tags = tags
+                } else {
+                        event.Tags = []models.Tag{}
+                }
+                
+                events = append(events, event)
+        }
+        
+        if err = rows.Err(); err != nil {
+                return nil, fmt.Errorf("error iterating over events for dataset %d: %w", datasetID, err)
+        }
+        
+        return events, nil
+}
+
 // GetByID retrieves a single event by ID
 func (r *EventRepository) GetByID(id int) (*models.HistoricalEvent, error) {
         query := `
