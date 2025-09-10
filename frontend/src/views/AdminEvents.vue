@@ -85,7 +85,19 @@
         </thead>
         <tbody>
           <tr v-for="event in currentPageEvents" :key="event.id" class="event-row">
-            <td class="event-name">{{ event.name }}</td>
+            <td class="event-name">
+              {{ event.name }}
+              <a 
+                v-if="event.source"
+                :href="event.source" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="inline-source-link" 
+                title="View source"
+              >
+                🔗
+              </a>
+            </td>
             <td class="event-description">
               <span class="description-text" :title="event.description">
                 {{ event.description.length > 100 ? event.description.substring(0, 100) + '...' : event.description }}
@@ -115,16 +127,6 @@
               </div>
             </td>
             <td class="event-actions">
-              <a 
-                v-if="event.source"
-                :href="event.source" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                class="action-btn source-btn" 
-                title="View source"
-              >
-                🔗
-              </a>
               <button @click="editEvent(event)" class="action-btn edit-btn" title="Edit">
                 ✏️
               </button>
@@ -1092,6 +1094,19 @@ export default {
 .event-name {
   font-weight: 600;
   color: #2d3748;
+}
+
+.inline-source-link {
+  margin-left: 0.5rem;
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+.inline-source-link:hover {
+  color: #1d4ed8;
+  transform: scale(1.1);
 }
 
 .event-description {

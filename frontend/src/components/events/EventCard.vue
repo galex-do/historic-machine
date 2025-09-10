@@ -2,26 +2,26 @@
   <div class="event-card">
     <div class="event-header">
       <span class="event-emoji">{{ getEventEmoji(event.lens_type) }}</span>
-      <h4 class="event-title">{{ event.name }}</h4>
-      <div class="event-actions">
+      <h4 class="event-title">
+        {{ event.name }}
         <a 
           v-if="event.source" 
           :href="event.source" 
           target="_blank" 
           rel="noopener noreferrer"
-          class="source-link" 
+          class="inline-source-link" 
           title="View source"
         >
           🔗
         </a>
-        <button 
-          class="focus-button" 
-          @click="$emit('focus-event', event)" 
-          title="Focus on map"
-        >
-          ⌖
-        </button>
-      </div>
+      </h4>
+      <button 
+        class="focus-button" 
+        @click="$emit('focus-event', event)" 
+        title="Focus on map"
+      >
+        ⌖
+      </button>
     </div>
     <p class="event-description">{{ event.description }}</p>
     <div class="event-meta">
@@ -106,7 +106,7 @@ export default {
 .event-header {
   display: flex;
   align-items: flex-start;
-  gap: 0.75rem;
+  justify-content: space-between;
   margin-bottom: 0.5rem;
 }
 
@@ -124,31 +124,18 @@ export default {
   line-height: 1.3;
 }
 
-.event-actions {
-  display: flex;
-  gap: 0.25rem;
-  align-items: center;
-}
-
-.source-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  background: #f8f9fa;
-  color: #667eea;
-  border: 1px solid #e2e8f0;
-  border-radius: 4px;
+.inline-source-link {
+  margin-left: 0.5rem;
+  color: #3b82f6;
   text-decoration: none;
   font-size: 0.875rem;
   transition: all 0.2s;
+  font-weight: normal;
 }
 
-.source-link:hover {
-  background: #e2e8f0;
-  border-color: #cbd5e1;
-  transform: translateY(-1px);
+.inline-source-link:hover {
+  color: #1d4ed8;
+  transform: scale(1.1);
 }
 
 .focus-button {
