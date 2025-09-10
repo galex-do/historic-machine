@@ -210,7 +210,6 @@
                     class="form-input"
                     :disabled="!canChangeAccessLevel(editingUser)"
                   >
-                    <option value="guest">Guest</option>
                     <option value="user">User</option>
                     <option value="editor">Editor</option>
                     <option value="admin">Admin</option>
