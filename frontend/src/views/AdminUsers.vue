@@ -146,7 +146,7 @@
           </div>
           
           <div class="modal-body">
-            <div v-if="error" class="error-message">{{ error }}</div>
+            <div v-if="error" class="validation-warning">{{ error }}</div>
             
             <form @submit.prevent="saveUser">
               <div class="form-row">
@@ -1000,6 +1000,24 @@ export default {
 .submit-btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.validation-warning {
+  background: #fffbeb;
+  color: #d97706;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+  border: 1px solid #fed7aa;
+  border-left: 4px solid #f59e0b;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.validation-warning::before {
+  content: "⚠️";
+  font-size: 1rem;
 }
 
 .error-message {
