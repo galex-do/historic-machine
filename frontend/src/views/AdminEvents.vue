@@ -248,7 +248,7 @@
                 <label for="event-tags">Tags</label>
                 <div class="tags-section">
                   <!-- Selected Tags Display -->
-                  <div v-if="eventForm.selectedTags.length > 0" class="selected-tags">
+                  <div v-if="eventForm.selectedTags && eventForm.selectedTags.length > 0" class="selected-tags">
                     <div 
                       v-for="tag in eventForm.selectedTags" 
                       :key="tag.id"
@@ -278,7 +278,7 @@
                     />
                     
                     <!-- Tag Suggestions -->
-                    <div v-if="filteredTags.length > 0 && eventForm.tagSearch" class="tag-suggestions">
+                    <div v-if="filteredTags && filteredTags.length > 0 && eventForm.tagSearch" class="tag-suggestions">
                       <div 
                         v-for="tag in filteredTags.slice(0, 5)" 
                         :key="tag.id"
@@ -305,7 +305,7 @@
                     </div>
                     
                     <!-- Create New Tag Option -->
-                    <div v-if="canCreateNewTag && !filteredTags.length" class="new-tag-option">
+                    <div v-if="canCreateNewTag && (!filteredTags || !filteredTags.length)" class="new-tag-option">
                       <div class="new-tag-form">
                         <span class="new-tag-text">Create new tag:</span>
                         <input 
@@ -682,6 +682,60 @@ export default {
       }
     }
 
+    const updateEventDate = () => {
+      // Convert DD/MM/YYYY to ISO date format
+      const dateDisplay = eventForm.value.date_display
+      if (dateDisplay && dateDisplay.match(/^\d{2}\/\d{2}\/\d{4}$/)) {
+        const [day, month, year] = dateDisplay.split('/')
+        eventForm.value.date = `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`
+      }
+    }
+
+    const saveEvent = async () => {
+      localLoading.value = true
+      localError.value = null
+      
+      try {
+        const eventData = {
+          name: eventForm.value.name,
+          description: eventForm.value.description,
+          event_date: eventForm.value.date,
+          era: eventForm.value.era,
+          latitude: eventForm.value.latitude,
+          longitude: eventForm.value.longitude,
+          lens_type: eventForm.value.lens_type
+        }
+
+        if (editingEvent.value) {
+          // Update existing event
+          await apiService.updateEvent(editingEvent.value.id, eventData)
+          
+          // Update tags if they changed
+          const tagIds = eventForm.value.selectedTags.map(tag => tag.id)
+          await apiService.setEventTags(editingEvent.value.id, tagIds)
+        } else {
+          // Create new event
+          const newEvent = await apiService.createEvent(eventData)
+          
+          // Set tags for new event
+          if (eventForm.value.selectedTags.length > 0) {
+            const tagIds = eventForm.value.selectedTags.map(tag => tag.id)
+            await apiService.setEventTags(newEvent.id, tagIds)
+          }
+        }
+        
+        await fetchEvents() // Refresh events list
+        allEvents.value = events.value || []
+        closeModal()
+        console.log('Event saved successfully')
+      } catch (err) {
+        console.error('Error saving event:', err)
+        localError.value = err.message || 'Failed to save event'
+      } finally {
+        localLoading.value = false
+      }
+    }
+
     // Load initial data
     onMounted(async () => {
       try {
@@ -733,7 +787,10 @@ export default {
       addTag,
       removeTag,
       handleTagInput,
-      createAndAddTag
+      createAndAddTag,
+      // Modal functions
+      updateEventDate,
+      saveEvent
     }
   }
 }
