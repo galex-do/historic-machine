@@ -622,6 +622,66 @@ export default {
       fileInput.value?.click()
     }
 
+    // Tag management functions and computed properties
+    const filteredTags = computed(() => {
+      if (!allTags.value || !eventForm.value.tagSearch) return []
+      const searchTerm = eventForm.value.tagSearch.toLowerCase()
+      return allTags.value.filter(tag => 
+        tag.name.toLowerCase().includes(searchTerm) &&
+        !eventForm.value.selectedTags.some(selected => selected.id === tag.id)
+      )
+    })
+
+    const canCreateNewTag = computed(() => {
+      if (!eventForm.value.tagSearch) return false
+      const searchTerm = eventForm.value.tagSearch.toLowerCase()
+      return !allTags.value.some(tag => tag.name.toLowerCase() === searchTerm)
+    })
+
+    const addTag = (tag) => {
+      if (!eventForm.value.selectedTags.some(selected => selected.id === tag.id)) {
+        eventForm.value.selectedTags.push(tag)
+      }
+      eventForm.value.tagSearch = ''
+    }
+
+    const removeTag = (tagToRemove) => {
+      eventForm.value.selectedTags = eventForm.value.selectedTags.filter(
+        tag => tag.id !== tagToRemove.id
+      )
+    }
+
+    const handleTagInput = () => {
+      if (eventForm.value.tagSearch.trim()) {
+        if (filteredTags.value.length > 0) {
+          addTag(filteredTags.value[0])
+        } else if (canCreateNewTag.value) {
+          createAndAddTag()
+        }
+      }
+    }
+
+    const createAndAddTag = async () => {
+      if (!eventForm.value.tagSearch.trim()) return
+      
+      try {
+        const newTag = await apiService.createTag({
+          name: eventForm.value.tagSearch.trim(),
+          description: `Auto-generated tag for ${eventForm.value.tagSearch.trim()}`,
+          color: eventForm.value.newTagColor
+        })
+        
+        // Add to allTags and selected tags
+        allTags.value.push(newTag)
+        eventForm.value.selectedTags.push(newTag)
+        eventForm.value.tagSearch = ''
+        eventForm.value.newTagColor = '#3B82F6' // Reset color
+      } catch (err) {
+        console.error('Error creating tag:', err)
+        localError.value = err.message || 'Failed to create tag'
+      }
+    }
+
     // Load initial data
     onMounted(async () => {
       try {
@@ -658,6 +718,9 @@ export default {
       currentPage,
       pageSize,
       totalEvents,
+      // Tag management
+      filteredTags,
+      canCreateNewTag,
       // Functions
       toggleSort,
       handlePageChange,
@@ -665,7 +728,12 @@ export default {
       editEvent,
       deleteEvent,
       closeModal,
-      triggerFileUpload
+      triggerFileUpload,
+      // Tag functions
+      addTag,
+      removeTag,
+      handleTagInput,
+      createAndAddTag
     }
   }
 }
