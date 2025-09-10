@@ -67,10 +67,19 @@ func (req *CreateEventRequest) ParseEventDate() (time.Time, error) {
         // Clean the date string - remove any " BC" or " AD" suffix that might be present
         dateStr := strings.TrimSuffix(strings.TrimSuffix(req.EventDate, " BC"), " AD")
         
-        // For ALL dates (BC and AD), store as positive years
-        // The era field indicates whether it's BC or AD
-        // This prevents PostgreSQL from treating negative years as "BC" dates
-        return time.Parse("2006-01-02", dateStr)
+        // Handle both simple date format and ISO timestamp format
+        // Try ISO timestamp format first (from map creation): "1992-02-15T00:00:00.000Z"
+        if t, err := time.Parse(time.RFC3339, dateStr); err == nil {
+                return t, nil
+        }
+        
+        // Try simple date format (from admin panel): "1992-02-15"
+        if t, err := time.Parse("2006-01-02", dateStr); err == nil {
+                return t, nil
+        }
+        
+        // If both fail, return error
+        return time.Time{}, fmt.Errorf("parsing time %q: invalid date format, expected YYYY-MM-DD or ISO timestamp", dateStr)
 }
 
 // ToHistoricalEvent converts CreateEventRequest to HistoricalEvent
