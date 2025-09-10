@@ -535,7 +535,6 @@ export default {
 .events-table td {
   padding: 1rem 1.5rem;
   text-align: left;
-  border-bottom: 1px solid #e2e8f0;
 }
 
 .events-table th {
