@@ -565,84 +565,31 @@ export default {
       // Format date properly for display (DD/MM/YYYY)
       let dateDisplay = ''
       if (event.event_date) {
-        console.log('Debug - event.event_date:', event.event_date, 'event.era:', event.era)
+        // Handle all dates - BC and AD
+        const dateStr = event.event_date.toString()
         
-        // Handle BC dates separately since JavaScript Date can't parse them
-        if (event.era === 'BC') {
-          // For BC dates, try to extract date parts manually
-          const dateStr = event.event_date.toString()
-          console.log('Debug - BC dateStr:', dateStr)
-          
-          let year, month, day
-          
-          // Try different date formats
-          if (dateStr.includes('-')) {
-            // Handle "3500-01-01" or "-3500-01-01" format
-            const parts = dateStr.split('-').filter(p => p !== '')
-            console.log('Debug - dash parts:', parts)
-            if (parts.length >= 3) {
-              year = Math.abs(parseInt(parts[0]))
-              month = parseInt(parts[1])
-              day = parseInt(parts[2])
-            }
-          } else if (dateStr.includes('.')) {
-            // Handle "01.01.3500" format
-            const parts = dateStr.split('.')
-            console.log('Debug - dot parts:', parts)
-            if (parts.length >= 3) {
-              day = parseInt(parts[0])
-              month = parseInt(parts[1])
-              year = Math.abs(parseInt(parts[2]))
-            }
-          } else if (dateStr.includes('/')) {
-            // Handle "01/01/3500" format
-            const parts = dateStr.split('/')
-            console.log('Debug - slash parts:', parts)
-            if (parts.length >= 3) {
-              day = parseInt(parts[0])
-              month = parseInt(parts[1])
-              year = Math.abs(parseInt(parts[2]))
-            }
-          } else {
-            // Try to parse as ISO date and extract parts
-            const date = new Date(dateStr)
-            if (!isNaN(date.getTime())) {
-              day = date.getUTCDate()
-              month = date.getUTCMonth() + 1
-              year = Math.abs(date.getUTCFullYear())
-            }
-          }
-          
-          console.log('Debug - parsed BC date parts:', { year, month, day })
-          
-          if (year && month && day && !isNaN(year) && !isNaN(month) && !isNaN(day)) {
-            dateDisplay = `${day.toString().padStart(2, '0')}/${month.toString().padStart(2, '0')}/${year}`
-          } else {
-            // Fallback - try to extract any numbers from the string
-            const numbers = dateStr.match(/\d+/g)
-            if (numbers && numbers.length >= 3) {
-              // Assume format has day, month, year in some order
-              day = parseInt(numbers[0])
-              month = parseInt(numbers[1]) 
-              year = Math.abs(parseInt(numbers[2]))
-              if (year < 100) { // If year seems to be first, swap
-                [day, month, year] = [parseInt(numbers[2]), parseInt(numbers[1]), Math.abs(parseInt(numbers[0]))]
-              }
+        // Parse dates in format "YYYY-MM-DD" (like "3501-01-02")
+        if (dateStr.includes('-')) {
+          const parts = dateStr.split('-')
+          if (parts.length >= 3) {
+            const year = Math.abs(parseInt(parts[0]))
+            const month = parseInt(parts[1])
+            const day = parseInt(parts[2])
+            
+            if (year && month && day && !isNaN(year) && !isNaN(month) && !isNaN(day)) {
               dateDisplay = `${day.toString().padStart(2, '0')}/${month.toString().padStart(2, '0')}/${year}`
             }
           }
         } else {
-          // For AD dates, use standard Date parsing
-          const date = new Date(event.event_date)
+          // For other formats, try standard Date parsing
+          const date = new Date(dateStr)
           if (!isNaN(date.getTime())) {
             const day = date.getDate().toString().padStart(2, '0')
             const month = (date.getMonth() + 1).toString().padStart(2, '0')
-            const year = date.getFullYear()
+            const year = Math.abs(date.getFullYear())
             dateDisplay = `${day}/${month}/${year}`
           }
         }
-        
-        console.log('Debug - final dateDisplay:', dateDisplay)
       }
       
       eventForm.value = {

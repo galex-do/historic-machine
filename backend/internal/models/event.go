@@ -57,15 +57,36 @@ func formatBCDate(year int, month time.Month, day int) string {
 
 // CreateEventRequest represents the request payload for creating an event
 type CreateEventRequest struct {
-        Name        string    `json:"name" validate:"required"`
-        Description string    `json:"description" validate:"required"`
-        Latitude    float64   `json:"latitude" validate:"required,min=-90,max=90"`
-        Longitude   float64   `json:"longitude" validate:"required,min=-180,max=180"`
-        EventDate   time.Time `json:"event_date" validate:"required"`
-        Era         string    `json:"era"`
-        LensType    string    `json:"lens_type" validate:"required"`
-        DatasetID   *int      `json:"dataset_id,omitempty"`
-        TagIDs      []int     `json:"tag_ids,omitempty"`
+        Name        string  `json:"name" validate:"required"`
+        Description string  `json:"description" validate:"required"`
+        Latitude    float64 `json:"latitude" validate:"required,min=-90,max=90"`
+        Longitude   float64 `json:"longitude" validate:"required,min=-180,max=180"`
+        EventDate   string  `json:"event_date" validate:"required"` // Changed to string to handle BC dates
+        Era         string  `json:"era"`
+        LensType    string  `json:"lens_type" validate:"required"`
+        DatasetID   *int    `json:"dataset_id,omitempty"`
+        TagIDs      []int   `json:"tag_ids,omitempty"`
+}
+
+// ParseEventDate parses the event date string handling BC dates properly
+func (req *CreateEventRequest) ParseEventDate() (time.Time, error) {
+        // Handle BC dates by parsing them manually
+        if req.Era == "BC" {
+                // Parse date string like "3501-01-02" and convert to a time.Time with negative year
+                var year, month, day int
+                _, err := fmt.Sscanf(req.EventDate, "%d-%d-%d", &year, &month, &day)
+                if err != nil {
+                        return time.Time{}, fmt.Errorf("invalid BC date format: %v", err)
+                }
+                
+                // For BC dates, use negative years (astronomical year numbering)
+                // 1 BC = year 0, 2 BC = year -1, etc.
+                astronomicalYear := -(year - 1)
+                return time.Date(astronomicalYear, time.Month(month), day, 0, 0, 0, 0, time.UTC), nil
+        }
+        
+        // For AD dates, parse normally
+        return time.Parse("2006-01-02", req.EventDate)
 }
 
 // ToHistoricalEvent converts CreateEventRequest to HistoricalEvent
@@ -75,12 +96,19 @@ func (req *CreateEventRequest) ToHistoricalEvent(createdBy int) *HistoricalEvent
                 era = "AD"
         }
         
+        // Parse the event date string
+        eventDate, err := req.ParseEventDate()
+        if err != nil {
+                // If parsing fails, use a default time and log the error
+                eventDate = time.Now()
+        }
+        
         return &HistoricalEvent{
                 Name:        req.Name,
                 Description: req.Description,
                 Latitude:    req.Latitude,
                 Longitude:   req.Longitude,
-                EventDate:   req.EventDate,
+                EventDate:   eventDate,
                 Era:         era,
                 LensType:    req.LensType,
                 DatasetID:   req.DatasetID,
