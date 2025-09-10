@@ -116,6 +116,7 @@ export default {
   cursor: pointer;
   transition: all 0.2s;
   min-width: 200px;
+  width: auto;
 }
 
 .select-dropdown:hover,
@@ -149,7 +150,6 @@ export default {
   position: absolute;
   top: 100%;
   left: 0;
-  right: 0;
   z-index: 100000;
   background: #ffffff;
   border: 1px solid #e2e8f0;
@@ -158,6 +158,8 @@ export default {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   max-height: 300px;
   overflow-y: auto;
+  min-width: 280px;
+  width: max-content;
 }
 
 .select-option {
@@ -195,5 +197,9 @@ export default {
 .option-label {
   font-size: 0.9rem;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 220px;
 }
 </style>
