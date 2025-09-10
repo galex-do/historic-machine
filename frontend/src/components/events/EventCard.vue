@@ -3,13 +3,25 @@
     <div class="event-header">
       <span class="event-emoji">{{ getEventEmoji(event.lens_type) }}</span>
       <h4 class="event-title">{{ event.name }}</h4>
-      <button 
-        class="focus-button" 
-        @click="$emit('focus-event', event)" 
-        title="Focus on map"
-      >
-        ⌖
-      </button>
+      <div class="event-actions">
+        <a 
+          v-if="event.source" 
+          :href="event.source" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="source-link" 
+          title="View source"
+        >
+          🔗
+        </a>
+        <button 
+          class="focus-button" 
+          @click="$emit('focus-event', event)" 
+          title="Focus on map"
+        >
+          ⌖
+        </button>
+      </div>
     </div>
     <p class="event-description">{{ event.description }}</p>
     <div class="event-meta">
@@ -110,6 +122,33 @@ export default {
   font-weight: 600;
   flex: 1;
   line-height: 1.3;
+}
+
+.event-actions {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.source-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: #f8f9fa;
+  color: #667eea;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+.source-link:hover {
+  background: #e2e8f0;
+  border-color: #cbd5e1;
+  transform: translateY(-1px);
 }
 
 .focus-button {

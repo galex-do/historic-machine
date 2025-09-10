@@ -115,6 +115,16 @@
               </div>
             </td>
             <td class="event-actions">
+              <a 
+                v-if="event.source"
+                :href="event.source" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="action-btn source-btn" 
+                title="View source"
+              >
+                🔗
+              </a>
               <button @click="editEvent(event)" class="action-btn edit-btn" title="Edit">
                 ✏️
               </button>
@@ -1159,12 +1169,13 @@ export default {
   padding: 0.5rem;
   border: none;
   border-radius: 0.375rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  font-size: 1rem;
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1rem;
   width: 2.25rem;
   height: 2.25rem;
 }
