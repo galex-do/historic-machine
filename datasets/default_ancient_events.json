@@ -1,0 +1,76 @@
+{
+  "filename": "default_ancient_events.json",
+  "description": "Default dataset containing the first 7 foundational ancient civilization events",
+  "events": [
+    {
+      "name": "First Ziggurats Built",
+      "description": "Sumerians construct the first ziggurats as temple complexes and administrative centers",
+      "date": "01.01.2900",
+      "era": "BC",
+      "latitude": 30.942,
+      "longitude": 46.103,
+      "type": "cultural",
+      "tags": []
+    },
+    {
+      "name": "Base-60 Number System",
+      "description": "Sumerians develop the sexagesimal (base-60) number system, still used today for time and angles",
+      "date": "01.01.3000",
+      "era": "BC",
+      "latitude": 31.324,
+      "longitude": 45.636,
+      "type": "scientific",
+      "tags": []
+    },
+    {
+      "name": "Reign of King Djer",
+      "description": "Second pharaoh of Egypt's 1st Dynasty, buried at Abydos with elaborate tomb complex",
+      "date": "01.01.3000",
+      "era": "BC",
+      "latitude": 26.184,
+      "longitude": 31.922,
+      "type": "political",
+      "tags": []
+    },
+    {
+      "name": "Foundation of Memphis",
+      "description": "Pharaoh Narmer establishes Memphis as the capital of unified Egypt at the junction of Upper and Lower Egypt",
+      "date": "15.01.3100",
+      "era": "BC",
+      "latitude": 29.844,
+      "longitude": 31.233,
+      "type": "political",
+      "tags": []
+    },
+    {
+      "name": "Development of Hieroglyphic Writing",
+      "description": "Ancient Egyptians develop hieroglyphic writing system for religious and administrative purposes",
+      "date": "01.01.3100",
+      "era": "BC",
+      "latitude": 30.044,
+      "longitude": 31.236,
+      "type": "cultural",
+      "tags": []
+    },
+    {
+      "name": "Invention of the Wheel",
+      "description": "Sumerians invent the wheel for transportation, revolutionizing trade and warfare",
+      "date": "01.01.3200",
+      "era": "BC",
+      "latitude": 32.776,
+      "longitude": 44.949,
+      "type": "scientific",
+      "tags": []
+    },
+    {
+      "name": "Invention of Cuneiform Writing",
+      "description": "Sumerians develop the world's first writing system using wedge-shaped marks on clay tablets",
+      "date": "01.01.3300",
+      "era": "BC",
+      "latitude": 31.324,
+      "longitude": 45.636,
+      "type": "cultural",
+      "tags": []
+    }
+  ]
+}
