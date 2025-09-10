@@ -29,6 +29,13 @@
             @toggle-dropdown="toggleLensDropdown"
             @lens-type-changed="handleLensTypeChange"
           />
+          <DatasetFilter
+            :selected-dataset="selectedDataset"
+            :show-dropdown="showDatasetDropdown"
+            :datasets="datasets"
+            @toggle-dropdown="toggleDatasetDropdown"
+            @dataset-changed="handleDatasetChange"
+          />
         </div>
         <TablePagination 
           :current-page="currentPage"
@@ -338,12 +345,14 @@ import { getAvailableLensTypes } from '@/utils/event-utils.js'
 import apiService from '@/services/api.js'
 import TablePagination from '@/components/TablePagination.vue'
 import EventTypeFilter from '@/components/filters/EventTypeFilter.vue'
+import DatasetFilter from '@/components/filters/DatasetFilter.vue'
 
 export default {
   name: 'AdminEvents',
   components: {
     TablePagination,
-    EventTypeFilter
+    EventTypeFilter,
+    DatasetFilter
   },
   setup() {
     const { canAccessAdmin } = useAuth()
@@ -353,6 +362,11 @@ export default {
     // Local filter state for admin panel (single-select)
     const selectedLensType = ref('all')
     const showLensDropdown = ref(false)
+    
+    // Dataset filter state
+    const selectedDataset = ref('all')
+    const showDatasetDropdown = ref(false)
+    const datasets = ref([])
     
     // Filter methods
     const toggleLensDropdown = () => {
@@ -364,8 +378,30 @@ export default {
       currentPage.value = 1 // Reset to first page when filter changes
     }
     
+    // Dataset filter methods
+    const toggleDatasetDropdown = () => {
+      showDatasetDropdown.value = !showDatasetDropdown.value
+    }
+    
+    const handleDatasetChange = (newDataset) => {
+      selectedDataset.value = newDataset
+      currentPage.value = 1 // Reset to first page when filter changes
+    }
+    
     const localLoading = ref(false)
     const localError = ref(null)
+    
+    // Fetch datasets for filter
+    const fetchDatasets = async () => {
+      try {
+        const response = await apiService.getDatasets()
+        datasets.value = Array.isArray(response) ? response.filter(d => d && d.id) : []
+        console.log('Loaded datasets for filtering:', datasets.value.length)
+      } catch (err) {
+        console.error('Error fetching datasets for filter:', err)
+        datasets.value = []
+      }
+    }
     
     const showCreateModal = ref(false)
     const showEditModal = ref(false)
@@ -398,6 +434,22 @@ export default {
         filtered = filtered.filter(event => 
           event && event.lens_type && event.lens_type === selectedLensType.value
         )
+      }
+      
+      // Apply dataset filter
+      if (selectedDataset.value !== 'all') {
+        if (selectedDataset.value === 'none') {
+          // Filter for events with no dataset (dataset_id is null or undefined)
+          filtered = filtered.filter(event => 
+            !event.dataset_id || event.dataset_id === null
+          )
+        } else {
+          // Filter for events from specific dataset
+          const datasetId = parseInt(selectedDataset.value)
+          filtered = filtered.filter(event => 
+            event.dataset_id === datasetId
+          )
+        }
       }
       
       // Apply sorting
@@ -808,6 +860,7 @@ export default {
         allEvents.value = events.value || []
         totalEvents.value = allEvents.value.length
         await loadTags()
+        await fetchDatasets() // Load datasets for filtering
       } catch (err) {
         console.error('Error loading admin events data:', err)
         localError.value = 'Failed to load data'
@@ -831,6 +884,12 @@ export default {
       toggleLensDropdown,
       selectedLensType,
       showLensDropdown,
+      // Dataset filter state and methods
+      selectedDataset,
+      showDatasetDropdown,
+      datasets,
+      toggleDatasetDropdown,
+      handleDatasetChange,
       sortField,
       sortDirection,
       currentPage,
@@ -938,6 +997,13 @@ export default {
   border-bottom: 1px solid #e2e8f0;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.table-filters {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .events-table {
