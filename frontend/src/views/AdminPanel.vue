@@ -1251,7 +1251,7 @@ export default {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-height: 200px;
   overflow-y: auto;
-  z-index: 1000;
+  z-index: 100000;
   margin-top: 2px;
 }
 
@@ -1289,7 +1289,7 @@ export default {
   border: 1px solid #e2e8f0;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  z-index: 100000;
   margin-top: 2px;
   padding: 0.75rem;
 }

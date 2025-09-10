@@ -138,7 +138,7 @@ export default {
   top: 100%;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 100000;
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 6px;
