@@ -3,17 +3,17 @@
     <div class="event-header">
       <h4 class="event-title">
         <span class="event-emoji">{{ getEventEmoji(event.lens_type) }}</span>
-        {{ event.name }}
         <a 
-          v-if="event.source" 
+          v-if="event.source"
           :href="event.source" 
           target="_blank" 
           rel="noopener noreferrer"
-          class="inline-source-link" 
-          title="View source"
+          class="event-title-link" 
+          :title="`${event.name} - View source`"
         >
-          🔗
+          {{ event.name }}
         </a>
+        <span v-else class="event-title-text">{{ event.name }}</span>
       </h4>
       <button 
         class="focus-button" 
@@ -127,18 +127,20 @@ export default {
   flex-shrink: 0;
 }
 
-.inline-source-link {
-  margin-left: 0.5rem;
+.event-title-link {
   color: #3b82f6;
   text-decoration: none;
-  font-size: 0.875rem;
   transition: all 0.2s;
-  font-weight: normal;
+  font-weight: 600;
 }
 
-.inline-source-link:hover {
+.event-title-link:hover {
   color: #1d4ed8;
-  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.event-title-text {
+  font-weight: 600;
 }
 
 .focus-button {
