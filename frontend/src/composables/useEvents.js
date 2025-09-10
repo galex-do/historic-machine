@@ -46,8 +46,17 @@ export function useEvents() {
       const fromDate = parseHistoricalDate(dateFromDisplay) // Use display value to get proper BC/AD
       const toDate = parseHistoricalDate(dateToDisplay)
       
-      // Parse event year directly (no astronomical conversion needed)
-      const eventYear = parseInt(event.event_date.split('-')[0], 10)
+      
+      // Parse event year correctly from negative and positive years
+      let eventYear
+      if (event.event_date.startsWith('-')) {
+        // Negative year format: "-3501-01-01T00:00:00Z" -> year 3501
+        const yearMatch = event.event_date.match(/^-(\d+)-/)
+        eventYear = yearMatch ? parseInt(yearMatch[1], 10) : 0
+      } else {
+        // Positive year format: "1453-05-29T00:00:00Z" -> year 1453
+        eventYear = parseInt(event.event_date.split('-')[0], 10)
+      }
       const eventEra = event.era
       
       // Date filtering with proper BC/AD logic
@@ -96,10 +105,21 @@ export function useEvents() {
     tempFilteredEvents.sort((a, b) => {
       // Use chronological sorting with proper BC/AD handling
       const getChronologicalValue = (dateString, era) => {
-        const date = new Date(dateString)
-        const year = date.getFullYear()
-        const month = date.getMonth()
-        const day = date.getDate()
+        let year, month, day
+        
+        if (dateString.startsWith('-')) {
+          // Negative year format: "-3501-01-01T00:00:00Z" 
+          const parts = dateString.substring(1).split('T')[0].split('-')
+          year = parseInt(parts[0], 10)
+          month = parseInt(parts[1], 10) - 1  // Month is 0-indexed
+          day = parseInt(parts[2], 10)
+        } else {
+          // Positive year format
+          const date = new Date(dateString)
+          year = date.getFullYear()
+          month = date.getMonth()
+          day = date.getDate()
+        }
         
         if (era === 'BC') {
           // For BC: larger year number = older (3000 BC < 1000 BC)
