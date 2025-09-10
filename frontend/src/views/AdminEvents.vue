@@ -29,6 +29,13 @@
             @toggle-dropdown="toggleLensDropdown"
             @lens-type-changed="handleLensTypeChange"
           />
+          <DatasetFilter
+            :selected-dataset="selectedDataset"
+            :show-dropdown="showDatasetDropdown"
+            :datasets="datasets"
+            @toggle-dropdown="toggleDatasetDropdown"
+            @dataset-changed="handleDatasetChange"
+          />
         </div>
         <TablePagination 
           :current-page="currentPage"
@@ -338,12 +345,14 @@ import { getAvailableLensTypes } from '@/utils/event-utils.js'
 import apiService from '@/services/api.js'
 import TablePagination from '@/components/TablePagination.vue'
 import EventTypeFilter from '@/components/filters/EventTypeFilter.vue'
+import DatasetFilter from '@/components/filters/DatasetFilter.vue'
 
 export default {
   name: 'AdminEvents',
   components: {
     TablePagination,
-    EventTypeFilter
+    EventTypeFilter,
+    DatasetFilter
   },
   setup() {
     const { canAccessAdmin } = useAuth()
