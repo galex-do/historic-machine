@@ -417,27 +417,36 @@ export default {
         let aValue, bValue
         
         if (sortField.value === 'date') {
-          // Use proper astronomical year for chronological sorting
-          const getAstronomicalYear = (dateString) => {
+          // Use chronological sorting with proper BC/AD handling (matching main event grid)
+          const getChronologicalValue = (dateString, era) => {
+            let year, month, day
+            
             if (dateString.startsWith('-')) {
-              // BC date format: "-754-04-21T00:00:00Z" 
+              // Negative year format: "-3501-01-01T00:00:00Z" 
               const parts = dateString.substring(1).split('T')[0].split('-')
-              const year = parseInt(parts[0], 10)
-              const month = parseInt(parts[1], 10)
-              const day = parseInt(parts[2], 10)
-              
+              year = parseInt(parts[0], 10)
+              month = parseInt(parts[1], 10) - 1  // Month is 0-indexed for consistency
+              day = parseInt(parts[2], 10)
+            } else {
+              // Positive year format
+              const date = new Date(dateString)
+              year = date.getFullYear()
+              month = date.getMonth()
+              day = date.getDate()
+            }
+            
+            if (era === 'BC') {
               // For BC: larger year number = older (3000 BC < 1000 BC)
               // Convert to negative for sorting: 3000 BC = -3000
               return -(year + (month / 12) + (day / 365))
             } else {
-              // AD date: use normal date parsing
-              const date = new Date(dateString)
-              return date.getFullYear() + (date.getMonth() / 12) + (date.getDate() / 365)
+              // For AD: normal positive years
+              return year + (month / 12) + (day / 365)
             }
           }
           
-          aValue = getAstronomicalYear(a.event_date || a.date || '0')
-          bValue = getAstronomicalYear(b.event_date || b.date || '0')
+          aValue = getChronologicalValue(a.event_date || a.date || '0', a.era || 'AD')
+          bValue = getChronologicalValue(b.event_date || b.date || '0', b.era || 'AD')
         } else {
           aValue = a[sortField.value] || ''
           bValue = b[sortField.value] || ''
