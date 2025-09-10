@@ -565,11 +565,41 @@ export default {
       // Format date properly for display (DD/MM/YYYY)
       let dateDisplay = ''
       if (event.event_date) {
-        const date = new Date(event.event_date)
-        const day = date.getDate().toString().padStart(2, '0')
-        const month = (date.getMonth() + 1).toString().padStart(2, '0')
-        const year = date.getFullYear()
-        dateDisplay = `${day}/${month}/${year}`
+        // Handle BC dates separately since JavaScript Date can't parse them
+        if (event.era === 'BC') {
+          // For BC dates, try to extract date parts manually
+          const dateStr = event.event_date.toString()
+          // Look for patterns like "3500-01-01" or "01.01.3500"
+          let year, month, day
+          if (dateStr.includes('-')) {
+            const parts = dateStr.split('-')
+            if (parts.length >= 3) {
+              year = Math.abs(parseInt(parts[0]))
+              month = parseInt(parts[1])
+              day = parseInt(parts[2])
+            }
+          } else if (dateStr.includes('.')) {
+            const parts = dateStr.split('.')
+            if (parts.length >= 3) {
+              day = parseInt(parts[0])
+              month = parseInt(parts[1])
+              year = Math.abs(parseInt(parts[2]))
+            }
+          }
+          
+          if (year && month && day && !isNaN(year) && !isNaN(month) && !isNaN(day)) {
+            dateDisplay = `${day.toString().padStart(2, '0')}/${month.toString().padStart(2, '0')}/${year}`
+          }
+        } else {
+          // For AD dates, use standard Date parsing
+          const date = new Date(event.event_date)
+          if (!isNaN(date.getTime())) {
+            const day = date.getDate().toString().padStart(2, '0')
+            const month = (date.getMonth() + 1).toString().padStart(2, '0')
+            const year = date.getFullYear()
+            dateDisplay = `${day}/${month}/${year}`
+          }
+        }
       }
       
       eventForm.value = {
