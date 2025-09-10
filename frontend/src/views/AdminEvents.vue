@@ -239,6 +239,18 @@
                 </div>
               </div>
               
+              <div class="form-group">
+                <label for="event-source">Source (optional)</label>
+                <input 
+                  id="event-source"
+                  v-model="eventForm.source" 
+                  type="url"
+                  class="form-input"
+                  placeholder="https://example.com/source"
+                />
+                <small class="form-hint">HTTP/HTTPS link to the source where information about this event was found</small>
+              </div>
+              
               <!-- Tags Section -->
               <div class="form-group">
                 <label for="event-tags">Tags</label>
@@ -670,6 +682,7 @@ export default {
         latitude: event.latitude || '',
         longitude: event.longitude || '',
         lens_type: event.lens_type,
+        source: event.source || '',
         selectedTags: event.tags ? [...event.tags] : [], // Clone array to prevent mutations
         newTagName: '',
         newTagColor: '#3B82F6',
@@ -717,6 +730,7 @@ export default {
         latitude: null,
         longitude: null,
         lens_type: '',
+        source: '',
         selectedTags: [],
         newTagName: '',
         newTagColor: '#3B82F6',
@@ -820,7 +834,8 @@ export default {
           era: eventForm.value.era,
           latitude: eventForm.value.latitude,
           longitude: eventForm.value.longitude,
-          lens_type: eventForm.value.lens_type
+          lens_type: eventForm.value.lens_type,
+          source: eventForm.value.source || null
         }
 
         if (editingEvent.value) {

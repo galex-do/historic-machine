@@ -36,6 +36,11 @@
               <option value="scientific">🔬 Scientific</option>
             </select>
           </div>
+          <div class="form-group">
+            <label>Source (optional):</label>
+            <input type="url" v-model="new_event.source" placeholder="https://example.com/source" />
+            <small class="field-hint">HTTP/HTTPS link to the source where information about this event was found</small>
+          </div>
           <div class="coordinates-info">
             <p>Location: {{ new_event.latitude.toFixed(4) }}, {{ new_event.longitude.toFixed(4) }}</p>
           </div>
@@ -144,7 +149,8 @@ export default {
         era: 'AD',
         latitude: 0,
         longitude: 0,
-        lens_type: 'historic'
+        lens_type: 'historic',
+        source: ''
       }
     }
   },
@@ -312,6 +318,7 @@ export default {
       this.new_event.longitude = event.longitude
       this.new_event.era = event.era || 'AD'
       this.new_event.lens_type = event.lens_type
+      this.new_event.source = event.source || ''
       
       // Handle date formatting
       this.new_event.date = event.event_date.split('T')[0]
@@ -486,7 +493,8 @@ export default {
           longitude: this.new_event.longitude,
           event_date: new Date(this.new_event.date).toISOString(),
           era: this.new_event.era,
-          lens_type: this.new_event.lens_type
+          lens_type: this.new_event.lens_type,
+          source: this.new_event.source || null
         }
         
         let response
@@ -555,6 +563,7 @@ export default {
         era: 'AD',
         latitude: 0,
         longitude: 0,
+        source: '',
         lens_type: 'historic'
       }
     },
