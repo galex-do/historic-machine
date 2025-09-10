@@ -197,6 +197,7 @@ func (h *DatasetHandler) ExportDataset(w http.ResponseWriter, r *http.Request) {
                         "longitude":   event.Longitude,
                         "type":        event.LensType, // Export as "type" for compatibility
                         "tags":        tagNames,
+                        "source":      event.Source,
                 }
         }
 

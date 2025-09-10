@@ -330,6 +330,7 @@ func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
                         Longitude   float64  `json:"longitude"`
                         Type        string   `json:"type"`
                         Tags        []string `json:"tags"`
+                        Source      string   `json:"source,omitempty"`
                 } `json:"events"`
         }
 
@@ -396,6 +397,11 @@ func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
                         LensType:    eventData.Type,
                         DisplayDate: formatDisplayDate(eventDate, eventData.Era),
                         DatasetID:   &createdDataset.ID,
+                }
+
+                // Set source if provided (handle optional field)
+                if eventData.Source != "" {
+                        event.Source = &eventData.Source
                 }
 
                 // Save event
