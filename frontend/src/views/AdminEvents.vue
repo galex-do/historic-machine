@@ -561,21 +561,34 @@ export default {
 
     const editEvent = (event) => {
       editingEvent.value = event
+      
+      // Format date properly for display (DD/MM/YYYY)
+      let dateDisplay = ''
+      if (event.event_date) {
+        const date = new Date(event.event_date)
+        const day = date.getDate().toString().padStart(2, '0')
+        const month = (date.getMonth() + 1).toString().padStart(2, '0')
+        const year = date.getFullYear()
+        dateDisplay = `${day}/${month}/${year}`
+      }
+      
       eventForm.value = {
         name: event.name,
         description: event.description,
-        date_display: event.display_date || '',
+        date_display: dateDisplay,
         date: event.event_date,
         era: event.era || 'AD',
-        latitude: event.latitude,
-        longitude: event.longitude,
+        latitude: event.latitude || '',
+        longitude: event.longitude || '',
         lens_type: event.lens_type,
-        selectedTags: event.tags || [],
+        selectedTags: event.tags ? [...event.tags] : [], // Clone array to prevent mutations
         newTagName: '',
         newTagColor: '#3B82F6',
         tagSearch: ''
       }
       showEditModal.value = true
+      showCreateModal.value = false
+      localError.value = null
     }
 
     const deleteEvent = async (event) => {
@@ -646,9 +659,11 @@ export default {
     }
 
     const removeTag = (tagToRemove) => {
-      eventForm.value.selectedTags = eventForm.value.selectedTags.filter(
-        tag => tag.id !== tagToRemove.id
-      )
+      if (eventForm.value.selectedTags) {
+        eventForm.value.selectedTags = eventForm.value.selectedTags.filter(
+          tag => tag.id !== tagToRemove.id
+        )
+      }
     }
 
     const handleTagInput = () => {
@@ -1097,7 +1112,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
+  z-index: 9999;
   padding: 2rem;
 }
 
@@ -1149,7 +1164,7 @@ export default {
 }
 
 .modal-body {
-  padding: 2.5rem;
+  padding: 1.75rem 2.5rem;
 }
 
 .error-message {
@@ -1165,12 +1180,12 @@ export default {
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two columns for wider modal */
-  gap: 2rem;
-  margin-bottom: 2rem;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .form-group {
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .form-group label {
