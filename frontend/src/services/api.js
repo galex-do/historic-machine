@@ -191,6 +191,12 @@ class ApiService {
     })
   }
 
+  async exportDataset(id) {
+    return this.makeRequest(`/datasets/${id}/export`, {
+      method: 'GET',
+    })
+  }
+
   // User management API
   async getUsers() {
     return this.makeRequest('/users')
