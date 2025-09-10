@@ -363,6 +363,11 @@ export default {
     const selectedLensType = ref('all')
     const showLensDropdown = ref(false)
     
+    // Dataset filter state
+    const selectedDataset = ref('all')
+    const showDatasetDropdown = ref(false)
+    const datasets = ref([])
+    
     // Filter methods
     const toggleLensDropdown = () => {
       showLensDropdown.value = !showLensDropdown.value
@@ -373,8 +378,30 @@ export default {
       currentPage.value = 1 // Reset to first page when filter changes
     }
     
+    // Dataset filter methods
+    const toggleDatasetDropdown = () => {
+      showDatasetDropdown.value = !showDatasetDropdown.value
+    }
+    
+    const handleDatasetChange = (newDataset) => {
+      selectedDataset.value = newDataset
+      currentPage.value = 1 // Reset to first page when filter changes
+    }
+    
     const localLoading = ref(false)
     const localError = ref(null)
+    
+    // Fetch datasets for filter
+    const fetchDatasets = async () => {
+      try {
+        const response = await apiService.getDatasets()
+        datasets.value = Array.isArray(response) ? response.filter(d => d && d.id) : []
+        console.log('Loaded datasets for filtering:', datasets.value.length)
+      } catch (err) {
+        console.error('Error fetching datasets for filter:', err)
+        datasets.value = []
+      }
+    }
     
     const showCreateModal = ref(false)
     const showEditModal = ref(false)
@@ -407,6 +434,22 @@ export default {
         filtered = filtered.filter(event => 
           event && event.lens_type && event.lens_type === selectedLensType.value
         )
+      }
+      
+      // Apply dataset filter
+      if (selectedDataset.value !== 'all') {
+        if (selectedDataset.value === 'none') {
+          // Filter for events with no dataset (dataset_id is null or undefined)
+          filtered = filtered.filter(event => 
+            !event.dataset_id || event.dataset_id === null
+          )
+        } else {
+          // Filter for events from specific dataset
+          const datasetId = parseInt(selectedDataset.value)
+          filtered = filtered.filter(event => 
+            event.dataset_id === datasetId
+          )
+        }
       }
       
       // Apply sorting
@@ -817,6 +860,7 @@ export default {
         allEvents.value = events.value || []
         totalEvents.value = allEvents.value.length
         await loadTags()
+        await fetchDatasets() // Load datasets for filtering
       } catch (err) {
         console.error('Error loading admin events data:', err)
         localError.value = 'Failed to load data'
@@ -840,6 +884,12 @@ export default {
       toggleLensDropdown,
       selectedLensType,
       showLensDropdown,
+      // Dataset filter state and methods
+      selectedDataset,
+      showDatasetDropdown,
+      datasets,
+      toggleDatasetDropdown,
+      handleDatasetChange,
       sortField,
       sortDirection,
       currentPage,
