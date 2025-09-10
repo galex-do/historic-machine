@@ -75,6 +75,18 @@
             </div>
             <div class="event-date">{{ event.display_date || format_date(event.event_date) }}</div>
             <p class="event-description">{{ event.description }}</p>
+            <!-- Event Tags (max 3) -->
+            <div v-if="event.tags && event.tags.length > 0" class="event-tags">
+              <span 
+                v-for="tag in event.tags.slice(0, 3)" 
+                :key="tag.id"
+                class="event-tag"
+                :style="{ backgroundColor: tag.color, color: getContrastColor(tag.color) }"
+              >
+                {{ tag.name }}
+              </span>
+              <span v-if="event.tags.length > 3" class="more-tags">+{{ event.tags.length - 3 }} more</span>
+            </div>
           </div>
         </div>
       </div>
@@ -86,6 +98,7 @@
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import { useAuth } from '@/composables/useAuth.js'
+import { useTags } from '@/composables/useTags.js'
 import apiService from '@/services/api.js'
 import { getEventEmoji } from '@/utils/event-utils.js'
 
@@ -93,10 +106,13 @@ export default {
   name: 'WorldMap',
   setup() {
     const { canCreateEvents, canEditEvents, isGuest } = useAuth()
+    const { allTags, loadTags } = useTags()
     return {
       canCreateEvents,
       canEditEvents,
-      isGuest
+      isGuest,
+      allTags,
+      loadTags
     }
   },
   props: {
@@ -678,7 +694,16 @@ export default {
 
     // Show events info in custom modal (no coordinate corruption)
     show_events_info(events) {
-      this.selected_events = events
+      // Ensure tags are loaded first
+      if (this.allTags.length === 0) {
+        this.loadTags()
+      }
+      
+      // Enrich events with their tag information
+      this.selected_events = events.map(event => ({
+        ...event,
+        tags: event.tags || [] // Ensure tags array exists
+      }))
       this.show_event_info_modal = true
     },
 
@@ -692,12 +717,52 @@ export default {
     edit_event_from_info(eventId) {
       this.close_event_info_modal()
       this.edit_event(eventId)
+    },
+
+    // Get contrast color for text on colored backgrounds
+    getContrastColor(hexColor) {
+      if (!hexColor) return '#000000'
+      
+      // Remove # if present
+      const color = hexColor.replace('#', '')
+      
+      // Convert to RGB
+      const r = parseInt(color.substr(0, 2), 16)
+      const g = parseInt(color.substr(2, 2), 16)
+      const b = parseInt(color.substr(4, 2), 16)
+      
+      // Calculate luminance
+      const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255
+      
+      // Return black for light colors, white for dark colors
+      return luminance > 0.5 ? '#000000' : '#ffffff'
     }
   }
 }
 </script>
 
 <style scoped>
+.event-tags {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.event-tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.more-tags {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-style: italic;
+}
 .map-container {
   position: absolute;
   top: 0;
