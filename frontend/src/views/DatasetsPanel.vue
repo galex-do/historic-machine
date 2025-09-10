@@ -24,6 +24,51 @@
     <!-- Main Content -->
     <div v-if="!localLoading && !localError" class="datasets-content">
       
+      <!-- Import Section -->
+      <div class="import-section">
+        <div class="import-header">
+          <h2>Import New Dataset</h2>
+          <p>Upload a JSON file containing historical events to create a new dataset.</p>
+        </div>
+        
+        <div class="import-controls">
+          <input 
+            ref="fileInput"
+            type="file" 
+            accept=".json"
+            @change="handleFileSelect"
+            style="display: none"
+          >
+          <button 
+            @click="triggerFileSelect"
+            class="import-button"
+            :disabled="localLoading"
+          >
+            📤 Choose Dataset File
+          </button>
+          <span v-if="selectedFile" class="selected-file">
+            Selected: {{ selectedFile.name }}
+          </span>
+        </div>
+        
+        <div v-if="selectedFile" class="import-actions">
+          <button 
+            @click="importDataset"
+            class="confirm-import-button"
+            :disabled="localLoading || !selectedFile"
+          >
+            {{ localLoading ? 'Importing...' : 'Import Dataset' }}
+          </button>
+          <button 
+            @click="clearSelection"
+            class="clear-button"
+            :disabled="localLoading"
+          >
+            Clear
+          </button>
+        </div>
+      </div>
+      
       <!-- Datasets Table -->
       <div class="datasets-table-container">
         <table class="datasets-table">
@@ -142,6 +187,8 @@ export default {
     const localError = ref(null)
     const showDeleteModal = ref(false)
     const datasetToDelete = ref(null)
+    const fileInput = ref(null)
+    const selectedFile = ref(null)
     
     // Use shared events state for reactivity across views
     const { fetchEvents } = useEvents()
@@ -241,6 +288,74 @@ export default {
       }
     }
 
+    const triggerFileSelect = () => {
+      fileInput.value?.click()
+    }
+
+    const handleFileSelect = (event) => {
+      const file = event.target.files?.[0]
+      if (file && file.type === 'application/json') {
+        selectedFile.value = file
+        localError.value = null
+      } else {
+        localError.value = 'Please select a valid JSON file'
+        selectedFile.value = null
+      }
+    }
+
+    const clearSelection = () => {
+      selectedFile.value = null
+      if (fileInput.value) {
+        fileInput.value.value = ''
+      }
+    }
+
+    const importDataset = async () => {
+      if (!selectedFile.value) return
+
+      localLoading.value = true
+      localError.value = null
+
+      try {
+        const fileContent = await selectedFile.value.text()
+        const jsonData = JSON.parse(fileContent)
+
+        // Validate JSON structure
+        if (!jsonData.events || !Array.isArray(jsonData.events)) {
+          throw new Error('Invalid file format: missing events array')
+        }
+
+        console.log('Importing dataset:', selectedFile.value.name, 'with', jsonData.events.length, 'events')
+
+        // Import events using the API
+        const result = await apiService.importEvents(
+          jsonData.events, 
+          jsonData.filename || selectedFile.value.name
+        )
+
+        console.log('Import successful:', result)
+
+        // Refresh datasets and events
+        await fetchDatasets()
+        await fetchEvents()
+
+        // Clear selection
+        clearSelection()
+        
+        console.log('Dataset imported successfully')
+
+      } catch (err) {
+        console.error('Error importing dataset:', err)
+        if (err.message.includes('JSON')) {
+          localError.value = 'Invalid JSON file format'
+        } else {
+          localError.value = err.message || 'Failed to import dataset'
+        }
+      } finally {
+        localLoading.value = false
+      }
+    }
+
     const formatDate = (dateString) => {
       if (!dateString) return 'Unknown'
       const date = new Date(dateString)
@@ -263,7 +378,13 @@ export default {
       localError,
       showDeleteModal,
       datasetToDelete,
+      fileInput,
+      selectedFile,
       fetchDatasets,
+      triggerFileSelect,
+      handleFileSelect,
+      clearSelection,
+      importDataset,
       exportDataset,
       confirmDelete,
       closeDeleteModal,
@@ -344,6 +465,117 @@ export default {
 
 .retry-button:hover {
   background: #2563eb;
+}
+
+.import-section {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.import-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.import-header h2 {
+  color: #1e293b;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.import-header p {
+  color: #64748b;
+  margin: 0;
+}
+
+.import-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.import-button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.import-button:hover:not(:disabled) {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.import-button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.selected-file {
+  color: #059669;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.import-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.confirm-import-button {
+  background: #059669;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.confirm-import-button:hover:not(:disabled) {
+  background: #047857;
+}
+
+.confirm-import-button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.clear-button {
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.clear-button:hover:not(:disabled) {
+  background: #e5e7eb;
+}
+
+.clear-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .datasets-table-container {
