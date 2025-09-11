@@ -1100,7 +1100,7 @@ export default {
   color: #3b82f6;
   text-decoration: none;
   transition: all 0.2s;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .event-name-link:hover {
