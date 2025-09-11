@@ -67,6 +67,17 @@
             Clear
           </button>
         </div>
+        
+        <div class="create-section">
+          <div class="divider">or</div>
+          <button 
+            @click="openCreateModal"
+            class="create-dataset-button"
+            :disabled="localLoading"
+          >
+            📝 Create Empty Dataset
+          </button>
+        </div>
       </div>
       
       <!-- Datasets Table -->
@@ -171,12 +182,63 @@
         </div>
       </div>
     </div>
+
+    <!-- Create Dataset Modal -->
+    <div v-if="showCreateModal" class="modal-overlay" @click="closeCreateModal">
+      <div class="modal-content" @click.stop>
+        <div class="modal-header">
+          <h3>Create Empty Dataset</h3>
+          <button @click="closeCreateModal" class="modal-close">×</button>
+        </div>
+        
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="dataset-filename">Dataset Name*</label>
+            <input 
+              id="dataset-filename"
+              v-model="newDataset.filename"
+              type="text" 
+              placeholder="e.g., My Historical Events" 
+              class="form-input"
+              :class="{ 'error': createError && !newDataset.filename }"
+            >
+          </div>
+          
+          <div class="form-group">
+            <label for="dataset-description">Description (optional)</label>
+            <textarea 
+              id="dataset-description"
+              v-model="newDataset.description"
+              placeholder="Brief description of this dataset..."
+              class="form-textarea"
+              rows="3"
+            ></textarea>
+          </div>
+          
+          <div v-if="createError" class="error-message">
+            {{ createError }}
+          </div>
+        </div>
+        
+        <div class="modal-footer">
+          <button @click="closeCreateModal" class="cancel-button">Cancel</button>
+          <button 
+            @click="createEmptyDataset" 
+            class="create-confirm-button"
+            :disabled="localLoading || !newDataset.filename.trim()"
+          >
+            {{ localLoading ? 'Creating...' : 'Create Dataset' }}
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import { ref, onMounted } from 'vue'
 import apiService from '@/services/api.js'
+import authService from '@/services/authService.js'
 import { useEvents } from '@/composables/useEvents.js'
 
 export default {
@@ -189,6 +251,12 @@ export default {
     const datasetToDelete = ref(null)
     const fileInput = ref(null)
     const selectedFile = ref(null)
+    const showCreateModal = ref(false)
+    const createError = ref(null)
+    const newDataset = ref({
+      filename: '',
+      description: ''
+    })
     
     // Use shared events state for reactivity across views
     const { fetchEvents } = useEvents()
@@ -368,6 +436,60 @@ export default {
       })
     }
 
+    const openCreateModal = () => {
+      newDataset.value = {
+        filename: '',
+        description: ''
+      }
+      createError.value = null
+      showCreateModal.value = true
+    }
+
+    const closeCreateModal = () => {
+      showCreateModal.value = false
+      createError.value = null
+    }
+
+    const createEmptyDataset = async () => {
+      if (!newDataset.value.filename.trim()) {
+        createError.value = 'Dataset name is required'
+        return
+      }
+
+      localLoading.value = true
+      createError.value = null
+
+      try {
+        // Get current user
+        const currentUser = authService.getUser()
+        if (!currentUser) {
+          throw new Error('You must be logged in to create datasets')
+        }
+
+        const datasetData = {
+          filename: newDataset.value.filename.trim(),
+          description: newDataset.value.description.trim() || '',
+          event_count: 0,
+          uploaded_by: currentUser.id
+        }
+
+        console.log('Creating empty dataset:', datasetData)
+        await apiService.createDataset(datasetData)
+
+        // Refresh datasets list
+        await fetchDatasets()
+        
+        console.log('Empty dataset created successfully')
+        closeCreateModal()
+
+      } catch (err) {
+        console.error('Error creating dataset:', err)
+        createError.value = err.message || 'Failed to create dataset'
+      } finally {
+        localLoading.value = false
+      }
+    }
+
     onMounted(() => {
       fetchDatasets()
     })
@@ -389,7 +511,13 @@ export default {
       confirmDelete,
       closeDeleteModal,
       deleteDataset,
-      formatDate
+      formatDate,
+      showCreateModal,
+      createError,
+      newDataset,
+      openCreateModal,
+      closeCreateModal,
+      createEmptyDataset
     }
   }
 }
@@ -575,6 +703,114 @@ export default {
 
 .clear-button:disabled {
   opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.create-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.divider {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.create-dataset-button {
+  background: #059669;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.create-dataset-button:hover:not(:disabled) {
+  background: #047857;
+  transform: translateY(-2px);
+}
+
+.create-dataset-button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus, .form-textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-input.error {
+  border-color: #dc2626;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.error-message {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+}
+
+.create-confirm-button {
+  background: #059669;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.create-confirm-button:hover:not(:disabled) {
+  background: #047857;
+}
+
+.create-confirm-button:disabled {
+  background: #9ca3af;
   cursor: not-allowed;
 }
 

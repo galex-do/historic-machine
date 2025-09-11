@@ -185,6 +185,13 @@ class ApiService {
     return this.makeRequest('/datasets')
   }
 
+  async createDataset(datasetData) {
+    return this.makeRequest('/datasets', {
+      method: 'POST',
+      body: JSON.stringify(datasetData),
+    })
+  }
+
   async deleteDataset(id) {
     return this.makeRequest(`/datasets/${id}`, {
       method: 'DELETE',
