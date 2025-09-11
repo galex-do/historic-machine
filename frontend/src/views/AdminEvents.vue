@@ -263,6 +263,25 @@
                 <small class="form-hint">HTTP/HTTPS link to the source where information about this event was found</small>
               </div>
               
+              <div class="form-group">
+                <label for="event-dataset">Dataset (optional)</label>
+                <select 
+                  id="event-dataset"
+                  v-model="eventForm.dataset_id"
+                  class="form-input"
+                >
+                  <option :value="null">No dataset assigned</option>
+                  <option 
+                    v-for="dataset in datasets" 
+                    :key="dataset.id" 
+                    :value="dataset.id"
+                  >
+                    {{ dataset.filename }} ({{ dataset.event_count }} events)
+                  </option>
+                </select>
+                <small class="form-hint">Optionally assign this event to an existing dataset for organization</small>
+              </div>
+              
               <!-- Tags Section -->
               <div class="form-group">
                 <label for="event-tags">Tags</label>
@@ -695,6 +714,7 @@ export default {
         longitude: event.longitude || '',
         lens_type: event.lens_type,
         source: event.source || '',
+        dataset_id: event.dataset_id || null,
         selectedTags: event.tags ? [...event.tags] : [], // Clone array to prevent mutations
         newTagName: '',
         newTagColor: '#3B82F6',
@@ -743,6 +763,7 @@ export default {
         longitude: null,
         lens_type: '',
         source: '',
+        dataset_id: null,
         selectedTags: [],
         newTagName: '',
         newTagColor: '#3B82F6',

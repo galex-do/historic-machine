@@ -41,6 +41,20 @@
             <input type="url" v-model="new_event.source" placeholder="https://example.com/source" />
             <small class="field-hint">HTTP/HTTPS link to the source where information about this event was found</small>
           </div>
+          <div class="form-group">
+            <label>Dataset (optional):</label>
+            <select v-model="new_event.dataset_id">
+              <option :value="null">No dataset assigned</option>
+              <option 
+                v-for="dataset in datasets" 
+                :key="dataset.id" 
+                :value="dataset.id"
+              >
+                {{ dataset.filename }} ({{ dataset.event_count }} events)
+              </option>
+            </select>
+            <small class="field-hint">Optionally assign this event to an existing dataset for organization</small>
+          </div>
           <div class="coordinates-info">
             <p>Location: {{ new_event.latitude.toFixed(4) }}, {{ new_event.longitude.toFixed(4) }}</p>
           </div>
@@ -174,8 +188,10 @@ export default {
         latitude: 0,
         longitude: 0,
         lens_type: 'historic',
-        source: ''
-      }
+        source: '',
+        dataset_id: null
+      },
+      datasets: [] // Available datasets for selection
     }
   },
   watch: {
@@ -215,9 +231,10 @@ export default {
     }
   },
   
-  mounted() {
+  async mounted() {
     this.initialize_map()
     this.add_event_markers()
+    await this.fetchDatasets()
     
     // Add resize observer to handle layout changes
     this.resize_observer = new ResizeObserver(() => {
@@ -289,6 +306,8 @@ export default {
       this.new_event.date_display = ''
       this.new_event.era = 'AD'
       this.new_event.lens_type = 'historic'
+      this.new_event.source = ''
+      this.new_event.dataset_id = null
       
       // Show modal
       this.show_event_modal = true
@@ -343,6 +362,7 @@ export default {
       this.new_event.era = event.era || 'AD'
       this.new_event.lens_type = event.lens_type
       this.new_event.source = event.source || ''
+      this.new_event.dataset_id = event.dataset_id || null
       
       // Handle date formatting
       this.new_event.date = event.event_date.split('T')[0]
@@ -588,7 +608,19 @@ export default {
         latitude: 0,
         longitude: 0,
         source: '',
-        lens_type: 'historic'
+        lens_type: 'historic',
+        dataset_id: null
+      }
+    },
+
+    async fetchDatasets() {
+      try {
+        const response = await apiService.getDatasets()
+        this.datasets = Array.isArray(response) ? response.filter(d => d && d.id) : []
+        console.log('Loaded datasets for event form:', this.datasets.length)
+      } catch (err) {
+        console.error('Error fetching datasets:', err)
+        this.datasets = []
       }
     },
     
