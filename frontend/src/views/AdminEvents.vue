@@ -868,7 +868,8 @@ export default {
           latitude: eventForm.value.latitude,
           longitude: eventForm.value.longitude,
           lens_type: eventForm.value.lens_type,
-          source: eventForm.value.source || null
+          source: eventForm.value.source || null,
+          dataset_id: eventForm.value.dataset_id || null
         }
 
         if (editingEvent.value) {

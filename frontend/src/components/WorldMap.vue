@@ -538,7 +538,8 @@ export default {
           event_date: new Date(this.new_event.date).toISOString(),
           era: this.new_event.era,
           lens_type: this.new_event.lens_type,
-          source: this.new_event.source || null
+          source: this.new_event.source || null,
+          dataset_id: this.new_event.dataset_id || null
         }
         
         let response
