@@ -387,15 +387,21 @@ func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
         type ImportRequest struct {
                 Filename string `json:"filename,omitempty"`
                 Events []struct {
-                        Name        string   `json:"name"`
-                        Description string   `json:"description"`
-                        Date        string   `json:"date"`
-                        Era         string   `json:"era"`
-                        Latitude    float64  `json:"latitude"`
-                        Longitude   float64  `json:"longitude"`
-                        Type        string   `json:"type"`
-                        Tags        []string `json:"tags"`
-                        Source      string   `json:"source,omitempty"`
+                        // Legacy fields for backward compatibility
+                        Name        string   `json:"name,omitempty"`
+                        Description string   `json:"description,omitempty"`
+                        // New locale-specific fields
+                        NameEN         string   `json:"name_en,omitempty"`
+                        NameRU         string   `json:"name_ru,omitempty"`
+                        DescriptionEN  string   `json:"description_en,omitempty"`
+                        DescriptionRU  string   `json:"description_ru,omitempty"`
+                        Date           string   `json:"date"`
+                        Era            string   `json:"era"`
+                        Latitude       float64  `json:"latitude"`
+                        Longitude      float64  `json:"longitude"`
+                        Type           string   `json:"type"`
+                        Tags           []string `json:"tags"`
+                        Source         string   `json:"source,omitempty"`
                 } `json:"events"`
         }
 
@@ -453,8 +459,6 @@ func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
 
                 // Create event with dataset reference
                 event := &models.HistoricalEvent{
-                        Name:        eventData.Name,
-                        Description: eventData.Description,
                         Latitude:    eventData.Latitude,
                         Longitude:   eventData.Longitude,
                         EventDate:   eventDate,
@@ -462,6 +466,42 @@ func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
                         LensType:    eventData.Type,
                         DisplayDate: formatDisplayDate(eventDate, eventData.Era),
                         DatasetID:   &createdDataset.ID,
+                }
+
+                // Handle locale-specific fields with fallbacks
+                if eventData.NameEN != "" {
+                        event.NameEn = eventData.NameEN
+                } else if eventData.Name != "" {
+                        // Legacy fallback: use legacy name as English
+                        event.NameEn = eventData.Name
+                }
+
+                if eventData.NameRU != "" {
+                        event.NameRu = eventData.NameRU
+                }
+
+                if eventData.DescriptionEN != "" {
+                        event.DescriptionEn = &eventData.DescriptionEN
+                } else if eventData.Description != "" {
+                        // Legacy fallback: use legacy description as English
+                        event.DescriptionEn = &eventData.Description
+                }
+
+                if eventData.DescriptionRU != "" {
+                        event.DescriptionRu = &eventData.DescriptionRU
+                }
+
+                // Set legacy fields for backward compatibility
+                if eventData.Name != "" {
+                        event.Name = eventData.Name
+                } else if eventData.NameEN != "" {
+                        event.Name = eventData.NameEN
+                }
+
+                if eventData.Description != "" {
+                        event.Description = eventData.Description
+                } else if eventData.DescriptionEN != "" {
+                        event.Description = eventData.DescriptionEN
                 }
 
                 // Set source if provided (handle optional field)
