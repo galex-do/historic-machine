@@ -63,6 +63,31 @@
         </div>
       </nav>
       
+      <!-- Locale Selector -->
+      <div class="locale-selector" @click.stop>
+        <button 
+          class="locale-btn" 
+          @click="toggleLocaleDropdown"
+          :title="`Switch language - Current: ${currentLocale?.name || 'English'}`"
+        >
+          <span class="locale-flag">{{ currentLocale?.flag || '🇺🇸' }}</span>
+          <span class="locale-code">{{ currentLocale?.code?.toUpperCase() || 'EN' }}</span>
+          <span class="dropdown-arrow" :class="{ 'open': showLocaleDropdown }">▼</span>
+        </button>
+        <div v-if="showLocaleDropdown" class="locale-dropdown">
+          <button 
+            v-for="localeOption in supportedLocales" 
+            :key="localeOption.code"
+            class="locale-option"
+            :class="{ 'active': localeOption.code === locale }"
+            @click="handleLocaleChange(localeOption.code)"
+          >
+            <span class="locale-flag">{{ localeOption.flag }}</span>
+            <span class="locale-name">{{ localeOption.name }}</span>
+          </button>
+        </div>
+      </div>
+      
       <div class="auth-section">
         <!-- Guest user (not logged in) -->
         <div v-if="isGuest" class="auth-buttons">
@@ -144,14 +169,17 @@
 <script>
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useAuth } from '@/composables/useAuth.js'
+import { useLocale } from '@/composables/useLocale.js'
 
 export default {
   name: 'AppHeader',
   setup() {
     const { user, isAuthenticated, isGuest, canAccessAdmin, isSuper, loading, error, login, logout, clearError } = useAuth()
+    const { locale, currentLocale, supportedLocales, setLocale } = useLocale()
     
     const showLoginModal = ref(false)
     const showAdminDropdown = ref(false)
+    const showLocaleDropdown = ref(false)
     const loginForm = ref({
       username: '',
       password: ''
@@ -185,12 +213,28 @@ export default {
 
     const toggleAdminDropdown = () => {
       showAdminDropdown.value = !showAdminDropdown.value
+      showLocaleDropdown.value = false
+    }
+
+    const toggleLocaleDropdown = () => {
+      showLocaleDropdown.value = !showLocaleDropdown.value
+      showAdminDropdown.value = false
+    }
+
+    const handleLocaleChange = (newLocale) => {
+      setLocale(newLocale)
+      showLocaleDropdown.value = false
+      // Emit event to trigger data refresh in components
+      window.dispatchEvent(new CustomEvent('localeChanged', { detail: newLocale }))
     }
 
     // Close dropdown when clicking outside
     const handleClickOutside = (event) => {
       if (!event.target.closest('.admin-dropdown')) {
         showAdminDropdown.value = false
+      }
+      if (!event.target.closest('.locale-selector')) {
+        showLocaleDropdown.value = false
       }
     }
 
@@ -213,11 +257,17 @@ export default {
       error,
       showLoginModal,
       showAdminDropdown,
+      showLocaleDropdown,
       loginForm,
+      locale,
+      currentLocale,
+      supportedLocales,
       handleLogin,
       handleLogout,
       closeModal,
-      toggleAdminDropdown
+      toggleAdminDropdown,
+      toggleLocaleDropdown,
+      handleLocaleChange
     }
   }
 }
@@ -374,6 +424,93 @@ export default {
 
 .nav-icon {
   font-size: 1rem;
+}
+
+/* Locale Selector Styles */
+.locale-selector {
+  position: relative;
+  display: inline-block;
+  z-index: 99999;
+}
+
+.locale-btn {
+  display: flex !important;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  height: 40px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-width: 80px;
+}
+
+.locale-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.locale-flag {
+  font-size: 1rem;
+}
+
+.locale-code {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.locale-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  margin-top: 0.5rem;
+  overflow: hidden;
+  z-index: 99999;
+  min-width: 140px;
+}
+
+.locale-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  text-decoration: none;
+  color: #4a5568;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.locale-option:hover {
+  background: #f7fafc;
+  color: #2d3748;
+}
+
+.locale-option.active {
+  background: #edf2f7;
+  color: #2d3748;
+  font-weight: 600;
+}
+
+.locale-name {
+  font-size: 0.9rem;
 }
 
 /* Admin Dropdown Styles */

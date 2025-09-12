@@ -7,13 +7,42 @@
       <div class="modal-content" @click.stop>
         <h3>{{ editing_event ? 'Edit Historical Event' : 'Add Historical Event' }}</h3>
         <form @submit.prevent="create_event">
-          <div class="form-group">
-            <label>Event Name:</label>
-            <input type="text" v-model="new_event.name" required />
+          <!-- Locale Selection Tabs -->
+          <div class="locale-tabs">
+            <button type="button" 
+                    :class="['locale-tab', { active: activeLocaleTab === 'en' }]" 
+                    @click="activeLocaleTab = 'en'">
+              English
+            </button>
+            <button type="button" 
+                    :class="['locale-tab', { active: activeLocaleTab === 'ru' }]" 
+                    @click="activeLocaleTab = 'ru'">
+              Русский
+            </button>
           </div>
-          <div class="form-group">
-            <label>Description:</label>
-            <textarea v-model="new_event.description" rows="3" required></textarea>
+
+          <!-- English Fields -->
+          <div v-show="activeLocaleTab === 'en'" class="locale-content">
+            <div class="form-group">
+              <label>Event Name (English):</label>
+              <input type="text" v-model="new_event.name_en" required />
+            </div>
+            <div class="form-group">
+              <label>Description (English):</label>
+              <textarea v-model="new_event.description_en" rows="3" required></textarea>
+            </div>
+          </div>
+
+          <!-- Russian Fields -->
+          <div v-show="activeLocaleTab === 'ru'" class="locale-content">
+            <div class="form-group">
+              <label>Event Name (Russian):</label>
+              <input type="text" v-model="new_event.name_ru" />
+            </div>
+            <div class="form-group">
+              <label>Description (Russian):</label>
+              <textarea v-model="new_event.description_ru" rows="3"></textarea>
+            </div>
           </div>
           <div class="form-group">
             <label>Date:</label>
@@ -181,6 +210,7 @@ export default {
       selected_events: [], // Events to show in info modal
       editing_event: null, // Store the event being edited
       is_stepping: false, // Track if current update is from date stepping
+      activeLocaleTab: 'en', // Track active locale tab in form
       new_event: {
         name: '',
         description: '',
@@ -246,6 +276,14 @@ export default {
     
     // Listen for window resize events (triggered by sidebar toggle)
     window.addEventListener('resize', this.handle_resize)
+    
+    // Listen for locale changes to refetch data
+    this.handleLocaleChange = (event) => {
+      console.log('Locale changed in WorldMap, refetching data for locale:', event.detail)
+      // Emit event to parent (MapView) to refetch events with new locale
+      this.$emit('locale-changed', event.detail)
+    }
+    window.addEventListener('localeChanged', this.handleLocaleChange)
   },
   
   beforeUnmount() {
@@ -253,6 +291,11 @@ export default {
       this.resize_observer.disconnect()
     }
     window.removeEventListener('resize', this.handle_resize)
+    
+    // Remove locale change listener
+    if (this.handleLocaleChange) {
+      window.removeEventListener('localeChanged', this.handleLocaleChange)
+    }
   },
   methods: {
     initialize_map() {
@@ -304,6 +347,10 @@ export default {
       // Reset form fields
       this.new_event.name = ''
       this.new_event.description = ''
+      this.new_event.name_en = ''
+      this.new_event.name_ru = ''
+      this.new_event.description_en = ''
+      this.new_event.description_ru = ''
       this.new_event.date = ''
       this.new_event.date_display = ''
       this.new_event.era = 'AD'
@@ -356,9 +403,13 @@ export default {
       // Set editing mode
       this.editing_event = event
       
-      // Populate form with event data
+      // Populate form with event data including locale-specific fields
       this.new_event.name = event.name
       this.new_event.description = event.description
+      this.new_event.name_en = event.name_en || event.name || ''
+      this.new_event.name_ru = event.name_ru || event.name || ''
+      this.new_event.description_en = event.description_en || event.description || ''
+      this.new_event.description_ru = event.description_ru || event.description || ''
       this.new_event.latitude = event.latitude
       this.new_event.longitude = event.longitude
       this.new_event.era = event.era || 'AD'
@@ -532,9 +583,19 @@ export default {
     
     async create_event() {
       try {
+        // Use locale-specific fields as primary, fallback to legacy fields
+        const name_en = this.new_event.name_en || this.new_event.name || ''
+        const name_ru = this.new_event.name_ru || this.new_event.name || ''
+        const description_en = this.new_event.description_en || this.new_event.description || ''
+        const description_ru = this.new_event.description_ru || this.new_event.description || ''
+        
         const event_data = {
-          name: this.new_event.name,
-          description: this.new_event.description,
+          name: name_en, // Use English as legacy default
+          description: description_en, // Use English as legacy default
+          name_en: name_en,
+          name_ru: name_ru,
+          description_en: description_en,
+          description_ru: description_ru,
           latitude: this.new_event.latitude,
           longitude: this.new_event.longitude,
           event_date: new Date(this.new_event.date).toISOString(),
@@ -605,6 +666,10 @@ export default {
       this.new_event = {
         name: '',
         description: '',
+        name_en: '',
+        name_ru: '',
+        description_en: '',
+        description_ru: '',
         date: '',
         date_display: '',
         era: 'AD',
@@ -912,6 +977,37 @@ export default {
   margin: 0;
   font-family: monospace;
   color: #6c757d;
+}
+
+/* Locale tabs styling */
+.locale-tabs {
+  display: flex;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.locale-tab {
+  flex: 1;
+  padding: 8px 16px;
+  border: none;
+  background: #f5f5f5;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.locale-tab:hover {
+  background: #e9e9e9;
+}
+
+.locale-tab.active {
+  background: white;
+  border-bottom-color: #007cba;
+  color: #007cba;
+}
+
+.locale-content {
+  margin-bottom: 10px;
 }
 
 .modal-actions {

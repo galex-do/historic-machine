@@ -162,43 +162,85 @@
             <div v-if="error" class="error-message">{{ error }}</div>
             
             <form @submit.prevent="saveEvent">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="event-name">Event Name *</label>
-                  <input 
-                    id="event-name"
-                    v-model="eventForm.name" 
-                    type="text" 
-                    required 
-                    class="form-input"
-                    placeholder="Enter event name"
-                  />
+              <!-- Locale Selection Tabs -->
+              <div class="locale-tabs">
+                <button type="button" 
+                        :class="['locale-tab', { active: activeLocaleTab === 'en' }]" 
+                        @click="activeLocaleTab = 'en'">
+                  English
+                </button>
+                <button type="button" 
+                        :class="['locale-tab', { active: activeLocaleTab === 'ru' }]" 
+                        @click="activeLocaleTab = 'ru'">
+                  Русский
+                </button>
+              </div>
+
+              <!-- English Fields -->
+              <div v-show="activeLocaleTab === 'en'" class="locale-content">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="event-name-en">Event Name (English) *</label>
+                    <input 
+                      id="event-name-en"
+                      v-model="eventForm.name_en" 
+                      type="text" 
+                      required 
+                      class="form-input"
+                      placeholder="Enter event name in English"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="event-type">Type *</label>
+                    <select id="event-type" v-model="eventForm.lens_type" required class="form-input">
+                      <option value="">Select type</option>
+                      <option 
+                        v-for="lensType in getAvailableLensTypes()" 
+                        :key="lensType.value" 
+                        :value="lensType.value"
+                      >
+                        {{ lensType.label }}
+                      </option>
+                    </select>
+                  </div>
                 </div>
+                
                 <div class="form-group">
-                  <label for="event-type">Type *</label>
-                  <select id="event-type" v-model="eventForm.lens_type" required class="form-input">
-                    <option value="">Select type</option>
-                    <option 
-                      v-for="lensType in getAvailableLensTypes()" 
-                      :key="lensType.value" 
-                      :value="lensType.value"
-                    >
-                      {{ lensType.label }}
-                    </option>
-                  </select>
+                  <label for="event-description-en">Description (English) *</label>
+                  <textarea 
+                    id="event-description-en"
+                    v-model="eventForm.description_en" 
+                    required 
+                    class="form-textarea"
+                    placeholder="Enter event description in English"
+                    rows="4"
+                  ></textarea>
                 </div>
               </div>
-              
-              <div class="form-group">
-                <label for="event-description">Description *</label>
-                <textarea 
-                  id="event-description"
-                  v-model="eventForm.description" 
-                  required 
-                  class="form-textarea"
-                  placeholder="Enter event description"
-                  rows="4"
-                ></textarea>
+
+              <!-- Russian Fields -->
+              <div v-show="activeLocaleTab === 'ru'" class="locale-content">
+                <div class="form-group">
+                  <label for="event-name-ru">Event Name (Russian)</label>
+                  <input 
+                    id="event-name-ru"
+                    v-model="eventForm.name_ru" 
+                    type="text" 
+                    class="form-input"
+                    placeholder="Введите название события на русском языке"
+                  />
+                </div>
+                
+                <div class="form-group">
+                  <label for="event-description-ru">Description (Russian)</label>
+                  <textarea 
+                    id="event-description-ru"
+                    v-model="eventForm.description_ru" 
+                    class="form-textarea"
+                    placeholder="Введите описание события на русском языке"
+                    rows="4"
+                  ></textarea>
+                </div>
               </div>
               
               <div class="form-row">
@@ -384,7 +426,7 @@
 </template>
 
 <script>
-import { ref, onMounted, computed } from 'vue'
+import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { useAuth } from '@/composables/useAuth.js'
 import { useTags } from '@/composables/useTags.js'
 import { useEvents } from '@/composables/useEvents.js'
@@ -557,9 +599,16 @@ export default {
       return filteredEvents.value.slice(start, end)
     })
     
+    // Active locale tab for form
+    const activeLocaleTab = ref('en')
+    
     const eventForm = ref({
       name: '',
       description: '',
+      name_en: '',
+      name_ru: '',
+      description_en: '',
+      description_ru: '',
       date_display: '',
       date: '',
       era: 'AD',
@@ -711,6 +760,10 @@ export default {
       eventForm.value = {
         name: event.name,
         description: event.description,
+        name_en: event.name_en || event.name || '',
+        name_ru: event.name_ru || event.name || '',
+        description_en: event.description_en || event.description || '',
+        description_ru: event.description_ru || event.description || '',
         date_display: dateDisplay,
         date: event.event_date, // Keep original date as fallback
         era: event.era || 'AD',
@@ -760,6 +813,10 @@ export default {
       eventForm.value = {
         name: '',
         description: '',
+        name_en: '',
+        name_ru: '',
+        description_en: '',
+        description_ru: '',
         date_display: '',
         date: '',
         era: 'AD',
@@ -864,9 +921,19 @@ export default {
           return
         }
         
+        // Use locale-specific fields as primary, fallback to legacy fields
+        const name_en = eventForm.value.name_en || eventForm.value.name || ''
+        const name_ru = eventForm.value.name_ru || eventForm.value.name || ''
+        const description_en = eventForm.value.description_en || eventForm.value.description || ''
+        const description_ru = eventForm.value.description_ru || eventForm.value.description || ''
+        
         const eventData = {
-          name: eventForm.value.name,
-          description: eventForm.value.description,
+          name: name_en, // Use English as legacy default
+          description: description_en, // Use English as legacy default
+          name_en: name_en,
+          name_ru: name_ru,
+          description_en: description_en,
+          description_ru: description_ru,
           event_date: eventForm.value.date,
           era: eventForm.value.era,
           latitude: eventForm.value.latitude,
@@ -906,6 +973,19 @@ export default {
       }
     }
 
+    // Handle locale changes
+    const handleLocaleChange = async (event) => {
+      console.log('Locale changed in AdminEvents, refetching data for locale:', event.detail)
+      try {
+        await fetchEvents() // Refetch events with new locale
+        allEvents.value = events.value || []
+        totalEvents.value = allEvents.value.length
+      } catch (err) {
+        console.error('Error refetching events after locale change:', err)
+        localError.value = 'Failed to load data after locale change'
+      }
+    }
+
     // Load initial data
     onMounted(async () => {
       try {
@@ -914,10 +994,18 @@ export default {
         totalEvents.value = allEvents.value.length
         await loadTags()
         await fetchDatasets() // Load datasets for filtering
+        
+        // Listen for locale changes
+        window.addEventListener('localeChanged', handleLocaleChange)
       } catch (err) {
         console.error('Error loading admin events data:', err)
         localError.value = 'Failed to load data'
       }
+    })
+
+    // Cleanup on unmount
+    onUnmounted(() => {
+      window.removeEventListener('localeChanged', handleLocaleChange)
     })
 
     return {
@@ -966,6 +1054,7 @@ export default {
       // Modal functions
       updateEventDate,
       saveEvent,
+      activeLocaleTab,
       // Event type utilities
       getAvailableLensTypes
     }
@@ -1671,5 +1760,39 @@ select.form-input:focus {
   cursor: not-allowed;
   transform: none;
   box-shadow: none;
+}
+
+/* Locale tabs styling */
+.locale-tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.locale-tab {
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  background: #f8f9fa;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  color: #666;
+}
+
+.locale-tab:hover {
+  background: #e9ecef;
+}
+
+.locale-tab.active {
+  background: white;
+  border-bottom-color: #007cba;
+  color: #007cba;
+  font-weight: 500;
+}
+
+.locale-content {
+  margin-bottom: 15px;
 }
 </style>

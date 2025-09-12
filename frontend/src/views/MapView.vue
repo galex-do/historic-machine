@@ -47,6 +47,7 @@
           @event-updated="handleEventUpdated"
           @event-deleted="handleEventDeleted"
           @map-bounds-changed="handleMapBoundsChanged"
+          @locale-changed="handleLocaleChanged"
           ref="worldMap"
         />
       </main>
@@ -286,6 +287,18 @@ export default {
       }
     })
 
+    // Handle locale changes
+    const handleLocaleChanged = async (locale) => {
+      console.log('Locale changed in MapView, refetching events for locale:', locale)
+      try {
+        await fetchEvents() // Refetch events with new locale
+        // Reapply current filters to the newly fetched events
+        applyFilters()
+      } catch (err) {
+        console.error('Error refetching events after locale change:', err)
+      }
+    }
+
     // Initialize data on mount
     onMounted(async () => {
       // Apply filters if events are already loaded
@@ -307,6 +320,7 @@ export default {
       handleEventCreated,
       handleEventUpdated,
       handleEventDeleted,
+      handleLocaleChanged,
 
       // Templates
       templateGroups,
