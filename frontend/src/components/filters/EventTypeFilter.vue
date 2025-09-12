@@ -68,7 +68,42 @@ export default {
     handleOptionClick(value) {
       this.$emit('lens-type-changed', value)
       this.$emit('toggle-dropdown') // Close dropdown after selection
+    },
+
+    positionDropdown() {
+      if (this.showDropdown) {
+        this.$nextTick(() => {
+          const dropdown = this.$el.querySelector('.select-dropdown')
+          const options = this.$el.querySelector('.select-options')
+          if (dropdown && options) {
+            const rect = dropdown.getBoundingClientRect()
+            options.style.top = `${rect.bottom + 2}px`
+            options.style.left = `${rect.left}px`
+            options.style.width = `${rect.width}px`
+          }
+        })
+      }
     }
+  },
+
+  watch: {
+    showDropdown: {
+      handler() {
+        this.positionDropdown()
+      },
+      immediate: true
+    }
+  },
+
+  mounted() {
+    this.positionDropdown()
+    window.addEventListener('scroll', this.positionDropdown)
+    window.addEventListener('resize', this.positionDropdown)
+  },
+
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.positionDropdown)
+    window.removeEventListener('resize', this.positionDropdown)
   }
 }
 </script>
@@ -135,10 +170,7 @@ export default {
 }
 
 .select-options {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
+  position: fixed;
   z-index: 100000;
   background: #ffffff;
   border: 1px solid #e2e8f0;
@@ -147,6 +179,7 @@ export default {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   max-height: 300px;
   overflow-y: auto;
+  min-width: 180px;
 }
 
 .select-option {
