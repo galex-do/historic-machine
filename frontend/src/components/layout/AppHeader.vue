@@ -63,52 +63,54 @@
         </div>
       </nav>
       
-      <!-- Locale Selector -->
-      <div class="locale-selector" @click.stop>
-        <button 
-          class="locale-btn" 
-          @click="toggleLocaleDropdown"
-          :title="`Switch language - Current: ${currentLocale?.name || 'English'}`"
-        >
-          <span class="locale-flag">{{ currentLocale?.flag || '🇺🇸' }}</span>
-          <span class="locale-code">{{ currentLocale?.code?.toUpperCase() || 'EN' }}</span>
-          <span class="dropdown-arrow" :class="{ 'open': showLocaleDropdown }">▼</span>
-        </button>
-        <div v-if="showLocaleDropdown" class="locale-dropdown">
+      <div class="right-section">
+        <div class="auth-section">
+          <!-- Guest user (not logged in) -->
+          <div v-if="isGuest" class="auth-buttons">
+            <button @click="showLoginModal = true" class="auth-btn login-btn">
+              <span class="auth-icon">👤</span>
+              Login
+            </button>
+          </div>
+          
+          <!-- Authenticated user -->
+          <div v-else class="user-info">
+            <span class="user-welcome">
+              Welcome, <strong>{{ user?.username }}</strong>
+              <span v-if="user?.access_level === 'super'" class="access-badge super">SUPER</span>
+              <span v-else-if="user?.access_level === 'admin'" class="access-badge admin">ADMIN</span>
+              <span v-else-if="user?.access_level === 'editor'" class="access-badge editor">EDITOR</span>
+            </span>
+            <button @click="handleLogout" class="auth-btn logout-btn" :disabled="loading">
+              <span class="auth-icon">🚪</span>
+              Logout
+            </button>
+          </div>
+        </div>
+
+        <!-- Locale Selector - positioned at far right -->
+        <div class="locale-selector" @click.stop>
           <button 
-            v-for="localeOption in supportedLocales" 
-            :key="localeOption.code"
-            class="locale-option"
-            :class="{ 'active': localeOption.code === locale }"
-            @click="handleLocaleChange(localeOption.code)"
+            class="locale-btn" 
+            @click="toggleLocaleDropdown"
+            :title="`Switch language - Current: ${currentLocale?.name || 'English'}`"
           >
-            <span class="locale-flag">{{ localeOption.flag }}</span>
-            <span class="locale-name">{{ localeOption.name }}</span>
+            <span class="locale-flag">{{ currentLocale?.flag || '🇺🇸' }}</span>
+            <span class="locale-code">{{ currentLocale?.code?.toUpperCase() || 'EN' }}</span>
+            <span class="dropdown-arrow" :class="{ 'open': showLocaleDropdown }">▼</span>
           </button>
-        </div>
-      </div>
-      
-      <div class="auth-section">
-        <!-- Guest user (not logged in) -->
-        <div v-if="isGuest" class="auth-buttons">
-          <button @click="showLoginModal = true" class="auth-btn login-btn">
-            <span class="auth-icon">👤</span>
-            Login
-          </button>
-        </div>
-        
-        <!-- Authenticated user -->
-        <div v-else class="user-info">
-          <span class="user-welcome">
-            Welcome, <strong>{{ user?.username }}</strong>
-            <span v-if="user?.access_level === 'super'" class="access-badge super">SUPER</span>
-            <span v-else-if="user?.access_level === 'admin'" class="access-badge admin">ADMIN</span>
-            <span v-else-if="user?.access_level === 'editor'" class="access-badge editor">EDITOR</span>
-          </span>
-          <button @click="handleLogout" class="auth-btn logout-btn" :disabled="loading">
-            <span class="auth-icon">🚪</span>
-            Logout
-          </button>
+          <div v-if="showLocaleDropdown" class="locale-dropdown">
+            <button 
+              v-for="localeOption in supportedLocales" 
+              :key="localeOption.code"
+              class="locale-option"
+              :class="{ 'active': localeOption.code === locale }"
+              @click="handleLocaleChange(localeOption.code)"
+            >
+              <span class="locale-flag">{{ localeOption.flag }}</span>
+              <span class="locale-name">{{ localeOption.name }}</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -296,6 +298,12 @@ export default {
   font-weight: 600;
 }
 
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .auth-section {
   display: flex;
   align-items: center;
@@ -426,11 +434,12 @@ export default {
   font-size: 1rem;
 }
 
-/* Locale Selector Styles */
+/* Locale Selector Styles - positioned at far right */
 .locale-selector {
   position: relative;
   display: inline-block;
   z-index: 99999;
+  margin-left: auto; /* Push to far right */
 }
 
 .locale-btn {
