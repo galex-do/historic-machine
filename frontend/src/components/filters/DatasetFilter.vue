@@ -79,7 +79,42 @@ export default {
     handleOptionClick(value) {
       this.$emit('dataset-changed', value)
       this.$emit('toggle-dropdown') // Close dropdown after selection
+    },
+
+    positionDropdown() {
+      if (this.showDropdown) {
+        this.$nextTick(() => {
+          const dropdown = this.$el.querySelector('.select-dropdown')
+          const options = this.$el.querySelector('.select-options')
+          if (dropdown && options) {
+            const rect = dropdown.getBoundingClientRect()
+            options.style.top = `${rect.bottom + 2}px`
+            options.style.left = `${rect.left}px`
+            options.style.minWidth = `${Math.max(rect.width, 280)}px`
+          }
+        })
+      }
     }
+  },
+
+  watch: {
+    showDropdown: {
+      handler() {
+        this.positionDropdown()
+      },
+      immediate: true
+    }
+  },
+
+  mounted() {
+    this.positionDropdown()
+    window.addEventListener('scroll', this.positionDropdown)
+    window.addEventListener('resize', this.positionDropdown)
+  },
+
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.positionDropdown)
+    window.removeEventListener('resize', this.positionDropdown)
   }
 }
 </script>
@@ -147,9 +182,7 @@ export default {
 }
 
 .select-options {
-  position: absolute;
-  top: 100%;
-  left: 0;
+  position: fixed;
   z-index: 100000;
   background: #ffffff;
   border: 1px solid #e2e8f0;
