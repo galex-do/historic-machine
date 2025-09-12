@@ -176,11 +176,13 @@
                   <label for="event-type">Type *</label>
                   <select id="event-type" v-model="eventForm.lens_type" required class="form-input">
                     <option value="">Select type</option>
-                    <option value="military">Military</option>
-                    <option value="political">Political</option>
-                    <option value="historic">Historic</option>
-                    <option value="cultural">Cultural</option>
-                    <option value="scientific">Scientific</option>
+                    <option 
+                      v-for="lensType in getAvailableLensTypes()" 
+                      :key="lensType.value" 
+                      :value="lensType.value"
+                    >
+                      {{ lensType.label }}
+                    </option>
                   </select>
                 </div>
               </div>

@@ -29,11 +29,13 @@
           <div class="form-group">
             <label>Event Type:</label>
             <select v-model="new_event.lens_type">
-              <option value="historic">📜 Historic</option>
-              <option value="political">🏛️ Political</option>
-              <option value="cultural">🎭 Cultural</option>
-              <option value="military">⚔️ Military</option>
-              <option value="scientific">🔬 Scientific</option>
+              <option 
+                v-for="lensType in getAvailableLensTypes()" 
+                :key="lensType.value" 
+                :value="lensType.value"
+              >
+                {{ lensType.label }}
+              </option>
             </select>
           </div>
           <div class="form-group">
@@ -143,7 +145,7 @@ import 'leaflet/dist/leaflet.css'
 import { useAuth } from '@/composables/useAuth.js'
 import { useTags } from '@/composables/useTags.js'
 import apiService from '@/services/api.js'
-import { getEventEmoji } from '@/utils/event-utils.js'
+import { getEventEmoji, getAvailableLensTypes } from '@/utils/event-utils.js'
 
 export default {
   name: 'WorldMap',
@@ -645,6 +647,10 @@ export default {
     get_event_emoji(lensType) {
       return getEventEmoji(lensType)
     },
+
+    getAvailableLensTypes() {
+      return getAvailableLensTypes()
+    },
     
     format_date_to_ddmmyyyy(date) {
       // Handle both Date objects and ISO strings
@@ -704,16 +710,8 @@ export default {
     },
     
     create_emoji_marker_icon(lens_type) {
-      // Define emojis for different event types
-      const emoji_map = {
-        'military': '⚔️',     // Crossed swords
-        'political': '🏛️',   // Classical building/government
-        'historic': '📜',     // Ancient scroll/manuscript
-        'scientific': '🔬',   // Microscope
-        'cultural': '🎭'      // Theater masks
-      }
-      
-      const emoji = emoji_map[lens_type] || '📍' // Default location pin (also for multiple events)
+      // Use the utility function for consistency
+      const emoji = getEventEmoji(lens_type)
       
       return L.divIcon({
         html: `<div class="emoji-marker" data-lens="${lens_type}">${emoji}</div>`,
