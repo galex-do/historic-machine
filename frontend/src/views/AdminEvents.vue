@@ -1113,6 +1113,10 @@ export default {
   color: #9ca3af;
 }
 
+.event-row {
+  border-bottom: 1px solid #f1f5f9;
+}
+
 .event-row:hover {
   background: #f8fafc;
 }

@@ -116,12 +116,14 @@
             <td class="user-created">{{ formatDate(userItem.created_at) }}</td>
             <td class="user-last-active">{{ formatLastActive(userItem.last_active_at) }}</td>
             <td class="user-actions">
-              <button @click="editUser(userItem)" class="action-btn edit-btn" title="Edit" :disabled="!canEditUser(userItem)">
-                ✏️
-              </button>
-              <button @click="deleteUser(userItem)" class="action-btn delete-btn" title="Delete" :disabled="!canDeleteUser(userItem)">
-                🗑️
-              </button>
+              <div class="actions-wrapper">
+                <button @click="editUser(userItem)" class="action-btn edit-btn" title="Edit" :disabled="!canEditUser(userItem)">
+                  ✏️
+                </button>
+                <button @click="deleteUser(userItem)" class="action-btn delete-btn" title="Delete" :disabled="!canDeleteUser(userItem)">
+                  🗑️
+                </button>
+              </div>
             </td>
           </tr>
         </tbody>
@@ -712,6 +714,10 @@ export default {
   color: #9ca3af;
 }
 
+.event-row {
+  border-bottom: 1px solid #f1f5f9;
+}
+
 .event-row:hover {
   background: #f8fafc;
 }
@@ -777,8 +783,16 @@ export default {
 }
 
 .user-actions {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.user-actions .actions-wrapper {
   display: flex;
   gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .action-btn {

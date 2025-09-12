@@ -95,12 +95,14 @@
             <td class="tag-created">{{ formatDate(tag.created_at) }}</td>
             <td class="tag-usage">{{ getTagUsageCount(tag.id) }} events</td>
             <td class="tag-actions">
-              <button @click="editTag(tag)" class="action-btn edit-btn" title="Edit">
-                ✏️
-              </button>
-              <button @click="deleteTag(tag)" class="action-btn delete-btn" title="Delete" :disabled="getTagUsageCount(tag.id) > 0">
-                🗑️
-              </button>
+              <div class="actions-wrapper">
+                <button @click="editTag(tag)" class="action-btn edit-btn" title="Edit">
+                  ✏️
+                </button>
+                <button @click="deleteTag(tag)" class="action-btn delete-btn" title="Delete" :disabled="getTagUsageCount(tag.id) > 0">
+                  🗑️
+                </button>
+              </div>
             </td>
           </tr>
         </tbody>
@@ -575,6 +577,10 @@ export default {
   color: #9ca3af;
 }
 
+.event-row {
+  border-bottom: 1px solid #f1f5f9;
+}
+
 .event-row:hover {
   background: #f8fafc;
 }
@@ -628,8 +634,16 @@ export default {
 }
 
 .tag-actions {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.tag-actions .actions-wrapper {
   display: flex;
   gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .action-btn {
