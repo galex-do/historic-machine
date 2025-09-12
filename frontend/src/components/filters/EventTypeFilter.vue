@@ -54,7 +54,8 @@ export default {
         { value: 'political', label: '🏛️ Political' },
         { value: 'cultural', label: '🎭 Cultural' },
         { value: 'scientific', label: '🔬 Scientific' },
-        { value: 'military', label: '⚔️ Military' }
+        { value: 'military', label: '⚔️ Military' },
+        { value: 'religious', label: '⛪ Religious' }
       ]
     }
   },
