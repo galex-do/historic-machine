@@ -233,6 +233,12 @@ func (h *DatasetHandler) ExportDataset(w http.ResponseWriter, r *http.Request) {
         // Set appropriate headers for file download
         w.Header().Set("Content-Type", "application/json")
         w.Header().Set("Content-Disposition", fmt.Sprintf("attachment; filename=\"%s\"", dataset.Filename))
+        w.Header().Set("Cache-Control", "no-cache")
         
-        response.Success(w, exportData, "Dataset exported successfully")
+        // Return raw JSON for direct import compatibility
+        if err := json.NewEncoder(w).Encode(exportData); err != nil {
+                log.Printf("Error encoding export data: %v", err)
+                response.InternalError(w, "Failed to export dataset")
+                return
+        }
 }
