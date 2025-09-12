@@ -11,7 +11,8 @@ export function getEventEmoji(lensType) {
     'political': '🏛️', 
     'cultural': '🎭',
     'military': '⚔️',
-    'scientific': '🔬'
+    'scientific': '🔬',
+    'religious': '⛪'
   }
   return emojiMap[lensType] || '📍'
 }
@@ -25,7 +26,8 @@ export function getLensLabel(lensType) {
     'political': 'Political',
     'cultural': 'Cultural', 
     'military': 'Military',
-    'scientific': 'Scientific'
+    'scientific': 'Scientific',
+    'religious': 'Religious'
   }
   return labelMap[lensType] || lensType
 }
@@ -39,7 +41,8 @@ export function getAvailableLensTypes() {
     { value: 'political', label: '🏛️ Political' },
     { value: 'cultural', label: '🎭 Cultural' },
     { value: 'military', label: '⚔️ Military' },
-    { value: 'scientific', label: '🔬 Scientific' }
+    { value: 'scientific', label: '🔬 Scientific' },
+    { value: 'religious', label: '⛪ Religious' }
   ]
 }
 
