@@ -656,6 +656,18 @@
     },
     {
       "date": "01.01.2100",
+      "description": "Ur-Nammu creates one of the earliest known law codes, predating Hammurabi's code",
+      "description_ru": "Ур-Намму создает один из древнейших известных сводов законов, предшествующий кодексу Хаммурапи",
+      "era": "BC",
+      "latitude": 30.962,
+      "longitude": 46.104,
+      "name": "Code of Ur-Nammu",
+      "name_ru": "Кодекс Ур-Намму",
+      "tags": ["Law", "Code", "Justice"],
+      "type": "political"
+    },
+    {
+      "date": "01.01.2100",
       "description": "Yu the Great establishes the legendary Xia Dynasty, China's first dynasty according to traditional history",
       "description_ru": "Великий Юй основывает легендарную династию Ся, первую династию Китая согласно традиционной истории",
       "era": "BC",
@@ -667,15 +679,63 @@
       "type": "political"
     },
     {
+      "date": "01.01.2094",
+      "description": "Shulgi becomes king of Ur and rules for 48 years, standardizing the empire",
+      "description_ru": "Шульги становится царем Ура и правит 48 лет, стандартизируя империю",
+      "era": "BC",
+      "latitude": 30.962,
+      "longitude": 46.104,
+      "name": "Reign of Shulgi",
+      "name_ru": "Правление Шульги",
+      "tags": ["Administration", "Standardization", "Rule"],
+      "type": "political"
+    },
+    {
       "date": "01.01.2055",
       "description": "Pharaoh Mentuhotep II defeats northern rivals and reunifies Egypt, beginning the Middle Kingdom",
       "description_ru": "Фараон Ментухотеп II побеждает северных соперников и воссоединяет Египет, начиная Среднее царство",
       "era": "BC",
       "latitude": 25.731,
       "longitude": 32.639,
-      "name": "Egyptian Middle Kingdom Begins",
-      "name_ru": "Начало Среднего царства Египта",
-      "tags": ["Egypt", "Political", "Middle Kingdom"],
+      "name": "Mentuhotep II Reunites Egypt",
+      "name_ru": "Ментухотеп II воссоединяет Египет",
+      "tags": ["Egypt", "Reunification", "Middle Kingdom"],
+      "type": "political"
+    },
+    {
+      "date": "01.01.2050",
+      "description": "Mentuhotep II establishes Thebes as the new capital of reunified Egypt",
+      "description_ru": "Ментухотеп II устанавливает Фивы как новую столицу воссоединенного Египта",
+      "era": "BC",
+      "latitude": 25.731,
+      "longitude": 32.639,
+      "name": "Thebes Becomes Egyptian Capital",
+      "name_ru": "Фивы становятся столицей Египта",
+      "tags": ["Egypt", "Capital", "Middle Kingdom"],
+      "type": "political"
+    },
+    {
+      "date": "01.01.2004",
+      "description": "Elamites capture Ur and take King Ibbi-Sin prisoner, ending Sumerian independence forever",
+      "description_ru": "Эламиты захватывают Ур и берут царя Ибби-Сина в плен, навсегда завершая шумерскую независимость",
+      "era": "BC",
+      "latitude": 30.962,
+      "longitude": 46.104,
+      "name": "Fall of Third Dynasty of Ur",
+      "name_ru": "Падение третьей династии Ура",
+      "tags": ["Sumerian", "Military"],
+      "type": "military"
+    },
+    {
+      "date": "01.01.2000",
+      "description": "Babylon emerges as a major power in Mesopotamia under Amorite rulers",
+      "description_ru": "Вавилон становится крупной силой в Месопотамии под правлением амореев",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Rise of Babylon",
+      "name_ru": "Подъем Вавилона",
+      "tags": ["Rise", "Babylon", "Amorite"],
       "type": "political"
     },
     {
@@ -689,6 +749,30 @@
       "name_ru": "Миграция Авраама",
       "tags": ["Religious", "Migration", "Biblical"],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.1991",
+      "description": "Amenemhat I establishes Egypt's 12th Dynasty and moves the capital to Itjtawy",
+      "description_ru": "Аменемхет I основывает XII династию Египта и переносит столицу в Ицтауи",
+      "era": "BC",
+      "latitude": 29.299,
+      "longitude": 31.091,
+      "name": "Amenemhat I Becomes Pharaoh",
+      "name_ru": "Аменемхет I становится фараоном",
+      "tags": ["Egypt", "Dynasty", "Middle Kingdom"],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1985",
+      "description": "Amenemhat I constructs fortifications in the Sinai to protect Egypt's eastern border",
+      "description_ru": "Аменемхет I строит укрепления на Синае для защиты восточной границы Египта",
+      "era": "BC",
+      "latitude": 30.623,
+      "longitude": 34.301,
+      "name": "Wall of the Ruler Built",
+      "name_ru": "Строительство Стены Правителя",
+      "tags": ["Egypt", "Defense"],
+      "type": "military"
     },
     {
       "date": "01.01.2000",
@@ -713,6 +797,18 @@
       "name_ru": "Расцвет египетской литературы",
       "tags": ["Egypt", "Literature", "Middle Kingdom"],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.1900",
+      "description": "The Erlitou culture develops in the Yellow River valley, possibly representing the archaeological evidence of the Xia Dynasty",
+      "description_ru": "Культура Эрлитоу развивается в долине Желтой реки, возможно представляя археологические свидетельства династии Ся",
+      "era": "BC",
+      "latitude": 34.746,
+      "longitude": 112.716,
+      "name": "Erlitou Culture Emerges",
+      "name_ru": "Возникновение культуры Эрлитоу",
+      "tags": ["Erlitou", "Bronze Age", "Culture"],
+      "type": "historic"
     },
     {
       "date": "01.01.1894",
