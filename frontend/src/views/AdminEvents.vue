@@ -127,12 +127,14 @@
               </div>
             </td>
             <td class="event-actions">
-              <button @click="editEvent(event)" class="action-btn edit-btn" title="Edit">
-                ✏️
-              </button>
-              <button @click="deleteEvent(event)" class="action-btn delete-btn" title="Delete">
-                🗑️
-              </button>
+              <div class="actions-wrapper">
+                <button @click="editEvent(event)" class="action-btn edit-btn" title="Edit">
+                  ✏️
+                </button>
+                <button @click="deleteEvent(event)" class="action-btn delete-btn" title="Delete">
+                  🗑️
+                </button>
+              </div>
             </td>
           </tr>
         </tbody>
@@ -1201,11 +1203,15 @@ export default {
 }
 
 .event-actions {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.actions-wrapper {
   display: flex;
   gap: 0.5rem;
   align-items: center;
   justify-content: center;
-  vertical-align: middle;
   height: 100%;
 }
 
