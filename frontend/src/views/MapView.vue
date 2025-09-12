@@ -22,7 +22,7 @@
       <aside class="events-sidebar" :class="{ 'collapsed': sidebarCollapsed }">
         <!-- Sidebar Header -->
         <div class="sidebar-header">
-          <h3 class="section-title" v-show="!sidebarCollapsed">Historical Events</h3>
+          <h3 class="section-title" v-show="!sidebarCollapsed">{{ t('historicalEvents') }}</h3>
           <button class="sidebar-toggle" @click="toggleSidebar">
             {{ sidebarCollapsed ? '›' : '‹' }}
           </button>
@@ -64,6 +64,7 @@ import { useEvents } from '@/composables/useEvents.js'
 import { useTemplates } from '@/composables/useTemplates.js'
 import { useFilters } from '@/composables/useFilters.js'
 import { useTags } from '@/composables/useTags.js'
+import { useLocale } from '@/composables/useLocale.js'
 
 export default {
   name: 'MapView',
@@ -145,6 +146,9 @@ export default {
       isLoadingTags,
       loadTags
     } = useTags()
+
+    // Use locale for UI translations
+    const { t } = useLocale()
 
     // Sidebar methods
     const toggleSidebar = () => {
@@ -354,7 +358,10 @@ export default {
       displayedEvents,
       handleMapFilterToggle,
       handleMapBoundsChanged,
-      worldMap
+      worldMap,
+
+      // Localization
+      t
     }
   }
 }

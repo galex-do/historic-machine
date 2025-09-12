@@ -4,14 +4,14 @@
     <div class="template-controls">
       <!-- Historical Period Dropdown -->
       <div class="filter-field">
-        <label class="filter-label">Historical Period:</label>
+        <label class="filter-label">{{ t('historicalPeriod') }}</label>
         <select 
           :value="selectedTemplateGroupId" 
           @change="$emit('template-group-changed', $event.target.value)" 
           class="filter-select"
         >
-          <option value="">Default (1 AD - Today)</option>
-          <option value="custom">Custom Date Range</option>
+          <option value="">{{ t('defaultPeriod') }}</option>
+          <option value="custom">{{ t('customDateRange') }}</option>
           <option v-for="group in templateGroups" :key="group.id" :value="group.id">
             {{ group.name }}
           </option>
@@ -20,13 +20,13 @@
       
       <!-- Specific Period Dropdown (appears to the right) -->
       <div v-if="selectedTemplateGroupId && selectedTemplateGroupId !== 'custom'" class="filter-field specific-period">
-        <label class="filter-label">Specific Period:</label>
+        <label class="filter-label">{{ t('specificPeriod') }}</label>
         <select 
           :value="selectedTemplateId" 
           @change="$emit('template-changed', $event.target.value)" 
           class="filter-select"
         >
-          <option value="">Select specific period...</option>
+          <option value="">{{ t('selectSpecificPeriod') }}</option>
           <option v-for="template in availableTemplates" :key="template.id" :value="template.id">
             {{ template.name }}
           </option>
@@ -37,6 +37,8 @@
 </template>
 
 <script>
+import { useLocale } from '@/composables/useLocale.js'
+
 export default {
   name: 'DateTemplateSelector',
   props: {
@@ -61,7 +63,15 @@ export default {
       default: null
     }
   },
-  emits: ['template-group-changed', 'template-changed']
+  emits: ['template-group-changed', 'template-changed'],
+  setup() {
+    // Use locale for UI translations
+    const { t } = useLocale()
+    
+    return {
+      t
+    }
+  }
 }
 </script>
 
