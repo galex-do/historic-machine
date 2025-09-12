@@ -32,9 +32,15 @@ func NewEventHandler(eventRepo *repositories.EventRepository, tagRepo *repositor
         }
 }
 
-// GetAllEvents handles GET /api/events with optional pagination
+// GetAllEvents handles GET /api/events with optional pagination and locale support
 func (h *EventHandler) GetAllEvents(w http.ResponseWriter, r *http.Request) {
         query := r.URL.Query()
+        
+        // Get locale parameter (default to "en")
+        locale := query.Get("locale")
+        if locale == "" {
+                locale = "en"
+        }
         
         // Check if pagination parameters are provided
         pageStr := query.Get("page")
@@ -74,6 +80,11 @@ func (h *EventHandler) GetAllEvents(w http.ResponseWriter, r *http.Request) {
                         return
                 }
                 
+                // Populate legacy fields based on locale
+                for i := range events {
+                        events[i].PopulateLegacyFields(locale)
+                }
+                
                 totalPages := (total + limit - 1) / limit // Ceiling division
                 
                 paginatedResponse := map[string]interface{}{
@@ -98,10 +109,15 @@ func (h *EventHandler) GetAllEvents(w http.ResponseWriter, r *http.Request) {
                 return
         }
         
+        // Populate legacy fields based on locale
+        for i := range events {
+                events[i].PopulateLegacyFields(locale)
+        }
+        
         response.Success(w, events)
 }
 
-// GetEventByID handles GET /api/events/{id}
+// GetEventByID handles GET /api/events/{id} with locale support
 func (h *EventHandler) GetEventByID(w http.ResponseWriter, r *http.Request) {
         vars := mux.Vars(r)
         idStr := vars["id"]
@@ -112,12 +128,21 @@ func (h *EventHandler) GetEventByID(w http.ResponseWriter, r *http.Request) {
                 return
         }
         
+        // Get locale parameter (default to "en")
+        locale := r.URL.Query().Get("locale")
+        if locale == "" {
+                locale = "en"
+        }
+        
         event, err := h.eventRepo.GetByID(id)
         if err != nil {
                 log.Printf("Error fetching event by ID %d: %v", id, err)
                 response.NotFound(w, "Event not found")
                 return
         }
+        
+        // Populate legacy fields based on locale
+        event.PopulateLegacyFields(locale)
         
         response.Success(w, event)
 }
@@ -157,6 +182,15 @@ func (h *EventHandler) CreateEvent(w http.ResponseWriter, r *http.Request) {
                 response.InternalError(w, "Failed to create event")
                 return
         }
+        
+        // Get locale parameter for response (default to "en")
+        locale := r.URL.Query().Get("locale")
+        if locale == "" {
+                locale = "en"
+        }
+        
+        // Populate legacy fields based on locale for consistent response
+        createdEvent.PopulateLegacyFields(locale)
         
         response.Created(w, createdEvent, "Event created successfully")
 }
@@ -213,6 +247,15 @@ func (h *EventHandler) UpdateEvent(w http.ResponseWriter, r *http.Request) {
                 return
         }
         
+        // Get locale parameter for response (default to "en")
+        locale := r.URL.Query().Get("locale")
+        if locale == "" {
+                locale = "en"
+        }
+        
+        // Populate legacy fields based on locale for consistent response
+        updatedEvent.PopulateLegacyFields(locale)
+        
         response.Success(w, updatedEvent)
 }
 
@@ -241,9 +284,15 @@ func (h *EventHandler) DeleteEvent(w http.ResponseWriter, r *http.Request) {
         response.Success(w, map[string]string{"message": "Event deleted successfully"})
 }
 
-// GetEventsInBBox handles GET /api/events/bbox
+// GetEventsInBBox handles GET /api/events/bbox with locale support
 func (h *EventHandler) GetEventsInBBox(w http.ResponseWriter, r *http.Request) {
         query := r.URL.Query()
+        
+        // Get locale parameter (default to "en")
+        locale := query.Get("locale")
+        if locale == "" {
+                locale = "en"
+        }
         
         minLat, err := parseCoordinate(query.Get("min_lat"))
         if err != nil {
@@ -276,12 +325,23 @@ func (h *EventHandler) GetEventsInBBox(w http.ResponseWriter, r *http.Request) {
                 return
         }
         
+        // Populate legacy fields based on locale
+        for i := range events {
+                events[i].PopulateLegacyFields(locale)
+        }
+        
         response.Success(w, events)
 }
 
-// GetEventsInRadius handles GET /api/events/radius
+// GetEventsInRadius handles GET /api/events/radius with locale support
 func (h *EventHandler) GetEventsInRadius(w http.ResponseWriter, r *http.Request) {
         query := r.URL.Query()
+        
+        // Get locale parameter (default to "en")
+        locale := query.Get("locale")
+        if locale == "" {
+                locale = "en"
+        }
         
         centerLat, err := parseCoordinate(query.Get("lat"))
         if err != nil {
@@ -312,6 +372,11 @@ func (h *EventHandler) GetEventsInRadius(w http.ResponseWriter, r *http.Request)
                 log.Printf("Radius query error: %v", err)
                 response.InternalError(w, "Failed to fetch events within radius")
                 return
+        }
+        
+        // Populate legacy fields based on locale
+        for i := range events {
+                events[i].PopulateLegacyFields(locale)
         }
         
         response.Success(w, events)
