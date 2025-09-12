@@ -1070,6 +1070,7 @@ export default {
 .events-table td {
   padding: 1rem 1.5rem;
   text-align: left;
+  vertical-align: middle;
 }
 
 .events-table th {
@@ -1204,6 +1205,8 @@ export default {
   gap: 0.5rem;
   align-items: center;
   justify-content: center;
+  vertical-align: middle;
+  height: 100%;
 }
 
 .action-btn {
