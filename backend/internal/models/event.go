@@ -9,22 +9,57 @@ import (
 
 // HistoricalEvent represents a historical event with geographical and temporal data
 type HistoricalEvent struct {
-        ID          int       `json:"id"`
-        Name        string    `json:"name"`
-        Description string    `json:"description"`
-        Latitude    float64   `json:"latitude"`
-        Longitude   float64   `json:"longitude"`
-        EventDate   time.Time `json:"-"` // Don't auto-marshal this field
-        Era         string    `json:"era"`
-        LensType    string    `json:"lens_type"`
-        Source      *string   `json:"source,omitempty"` // Optional HTTP/HTTPS link to source
-        DisplayDate string    `json:"display_date,omitempty"`
-        DatasetID   *int      `json:"dataset_id,omitempty"`
-        CreatedBy   *int      `json:"created_by"`  // User ID who created this event
-        UpdatedBy   *int      `json:"updated_by"`  // User ID who last updated this event
-        CreatedAt   time.Time `json:"created_at"`  // When event was created
-        UpdatedAt   time.Time `json:"updated_at"`  // When event was last updated
-        Tags        []Tag     `json:"tags,omitempty"`
+        ID            int       `json:"id"`
+        Name          string    `json:"name"`          // Legacy field - will be populated based on locale
+        Description   string    `json:"description"`   // Legacy field - will be populated based on locale
+        NameEn        string    `json:"name_en"`       // English name
+        NameRu        string    `json:"name_ru"`       // Russian name
+        DescriptionEn *string   `json:"description_en,omitempty"` // English description
+        DescriptionRu *string   `json:"description_ru,omitempty"` // Russian description
+        Latitude      float64   `json:"latitude"`
+        Longitude     float64   `json:"longitude"`
+        EventDate     time.Time `json:"-"` // Don't auto-marshal this field
+        Era           string    `json:"era"`
+        LensType      string    `json:"lens_type"`
+        Source        *string   `json:"source,omitempty"` // Optional HTTP/HTTPS link to source
+        DisplayDate   string    `json:"display_date,omitempty"`
+        DatasetID     *int      `json:"dataset_id,omitempty"`
+        CreatedBy     *int      `json:"created_by"`  // User ID who created this event
+        UpdatedBy     *int      `json:"updated_by"`  // User ID who last updated this event
+        CreatedAt     time.Time `json:"created_at"`  // When event was created
+        UpdatedAt     time.Time `json:"updated_at"`  // When event was last updated
+        Tags          []Tag     `json:"tags,omitempty"`
+}
+
+// GetNameForLocale returns the name for the specified locale
+func (e HistoricalEvent) GetNameForLocale(locale string) string {
+        switch locale {
+        case "ru":
+                return e.NameRu
+        default:
+                return e.NameEn
+        }
+}
+
+// GetDescriptionForLocale returns the description for the specified locale
+func (e HistoricalEvent) GetDescriptionForLocale(locale string) string {
+        switch locale {
+        case "ru":
+                if e.DescriptionRu != nil {
+                        return *e.DescriptionRu
+                }
+        default:
+                if e.DescriptionEn != nil {
+                        return *e.DescriptionEn
+                }
+        }
+        return ""
+}
+
+// PopulateLegacyFields sets the legacy Name and Description fields based on the specified locale
+func (e *HistoricalEvent) PopulateLegacyFields(locale string) {
+        e.Name = e.GetNameForLocale(locale)
+        e.Description = e.GetDescriptionForLocale(locale)
 }
 
 // MarshalJSON custom JSON marshaler to handle BC dates properly
@@ -52,16 +87,20 @@ func formatBCDate(year int, month time.Month, day int) string {
 
 // CreateEventRequest represents the request payload for creating an event
 type CreateEventRequest struct {
-        Name        string  `json:"name" validate:"required"`
-        Description string  `json:"description" validate:"required"`
-        Latitude    float64 `json:"latitude" validate:"required,min=-90,max=90"`
-        Longitude   float64 `json:"longitude" validate:"required,min=-180,max=180"`
-        EventDate   string  `json:"event_date" validate:"required"` // Changed to string to handle BC dates
-        Era         string  `json:"era"`
-        LensType    string  `json:"lens_type" validate:"required"`
-        Source      *string `json:"source,omitempty"` // Optional HTTP/HTTPS link to source
-        DatasetID   *int    `json:"dataset_id,omitempty"`
-        TagIDs      []int   `json:"tag_ids,omitempty"`
+        Name          string  `json:"name" validate:"required"`        // Legacy field - will be used for default locale content
+        Description   string  `json:"description" validate:"required"` // Legacy field - will be used for default locale content
+        NameEn        string  `json:"name_en,omitempty"`               // English name (optional, defaults to Name)
+        NameRu        string  `json:"name_ru,omitempty"`               // Russian name (optional, defaults to Name)
+        DescriptionEn *string `json:"description_en,omitempty"`        // English description (optional, defaults to Description)
+        DescriptionRu *string `json:"description_ru,omitempty"`        // Russian description (optional, defaults to Description)
+        Latitude      float64 `json:"latitude" validate:"required,min=-90,max=90"`
+        Longitude     float64 `json:"longitude" validate:"required,min=-180,max=180"`
+        EventDate     string  `json:"event_date" validate:"required"` // Changed to string to handle BC dates
+        Era           string  `json:"era"`
+        LensType      string  `json:"lens_type" validate:"required"`
+        Source        *string `json:"source,omitempty"` // Optional HTTP/HTTPS link to source
+        DatasetID     *int    `json:"dataset_id,omitempty"`
+        TagIDs        []int   `json:"tag_ids,omitempty"`
 }
 
 // ParseEventDate parses the event date string handling BC dates properly
@@ -98,19 +137,47 @@ func (req *CreateEventRequest) ToHistoricalEvent(createdBy int) (*HistoricalEven
                 return nil, fmt.Errorf("invalid event date: %v", err)
         }
         
+        // Handle locale-specific fields - if not provided, use legacy fields as default
+        nameEn := req.NameEn
+        if nameEn == "" {
+                nameEn = req.Name
+        }
+        nameRu := req.NameRu
+        if nameRu == "" {
+                nameRu = req.Name // Default to same content for all locales
+        }
+        
+        var descriptionEn, descriptionRu *string
+        if req.DescriptionEn != nil {
+                descriptionEn = req.DescriptionEn
+        } else if req.Description != "" {
+                descriptionEn = &req.Description
+        }
+        if req.DescriptionRu != nil {
+                descriptionRu = req.DescriptionRu
+        } else if req.Description != "" {
+                descriptionRu = &req.Description // Default to same content for all locales
+        }
+        
         now := time.Now()
-        return &HistoricalEvent{
-                Name:        req.Name,
-                Description: req.Description,
-                Latitude:    req.Latitude,
-                Longitude:   req.Longitude,
-                EventDate:   eventDate,
-                Era:         era,
-                LensType:    req.LensType,
-                Source:      req.Source,
-                DatasetID:   req.DatasetID,
-                CreatedBy:   &createdBy,
-                UpdatedBy:   &createdBy,  // Set updated_by field
-                UpdatedAt:   now,         // Set updated_at field
-        }, nil
+        event := &HistoricalEvent{
+                Name:          req.Name,        // Legacy field
+                Description:   req.Description, // Legacy field
+                NameEn:        nameEn,
+                NameRu:        nameRu,
+                DescriptionEn: descriptionEn,
+                DescriptionRu: descriptionRu,
+                Latitude:      req.Latitude,
+                Longitude:     req.Longitude,
+                EventDate:     eventDate,
+                Era:           era,
+                LensType:      req.LensType,
+                Source:        req.Source,
+                DatasetID:     req.DatasetID,
+                CreatedBy:     &createdBy,
+                UpdatedBy:     &createdBy,  // Set updated_by field
+                UpdatedAt:     now,         // Set updated_at field
+        }
+        
+        return event, nil
 }
