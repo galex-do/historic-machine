@@ -963,7 +963,9 @@ export default {
       createAndAddTag,
       // Modal functions
       updateEventDate,
-      saveEvent
+      saveEvent,
+      // Event type utilities
+      getAvailableLensTypes
     }
   }
 }
