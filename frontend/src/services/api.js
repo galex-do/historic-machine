@@ -134,15 +134,21 @@ class ApiService {
 
   // Template API
   async getTemplateGroups() {
-    return this.makeRequest('/date-template-groups')
+    let endpoint = '/date-template-groups'
+    endpoint = this.addLocaleToEventUrl(endpoint)
+    return this.makeRequest(endpoint)
   }
 
   async getTemplatesByGroup(groupId) {
-    return this.makeRequest(`/date-templates/${groupId}`)
+    let endpoint = `/date-templates/${groupId}`
+    endpoint = this.addLocaleToEventUrl(endpoint)
+    return this.makeRequest(endpoint)
   }
 
   async getAllTemplates() {
-    return this.makeRequest('/date-templates')
+    let endpoint = '/date-templates'
+    endpoint = this.addLocaleToEventUrl(endpoint)
+    return this.makeRequest(endpoint)
   }
 
   // Tags API
