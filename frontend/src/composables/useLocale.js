@@ -3,6 +3,7 @@ import { ref, computed } from 'vue'
 // UI Text translations
 const UI_TRANSLATIONS = {
   en: {
+    // Filters
     filters: 'Filters',
     historicalEvents: 'Historical Events',
     historicalPeriod: 'Historical Period:',
@@ -13,9 +14,36 @@ const UI_TRANSLATIONS = {
     defaultPeriod: 'Default (1 AD - Today)',
     customDateRange: 'Custom Date Range',
     selectSpecificPeriod: 'Select specific period...',
-    years: 'years'
+    years: 'years',
+    
+    // Header Navigation
+    map: 'Map',
+    admin: 'Admin',
+    events: 'Events',
+    tags: 'Tags',
+    datasets: 'Datasets',
+    users: 'Users',
+    
+    // Authentication
+    login: 'Login',
+    logout: 'Logout',
+    welcome: 'Welcome',
+    loggingIn: 'Logging in...',
+    
+    // Login Modal
+    loginToHistoria: 'Login to Historia ex machina',
+    username: 'Username:',
+    password: 'Password:',
+    enterUsername: 'Enter username',
+    enterPassword: 'Enter password',
+    
+    // Access Levels
+    superBadge: 'SUPER',
+    adminBadge: 'ADMIN',
+    editorBadge: 'EDITOR'
   },
   ru: {
+    // Filters
     filters: 'Фильтры',
     historicalEvents: 'Исторические события',
     historicalPeriod: 'Исторический период:',
@@ -26,7 +54,33 @@ const UI_TRANSLATIONS = {
     defaultPeriod: 'По умолчанию (1 н.э. - Сегодня)',
     customDateRange: 'Произвольный диапазон дат',
     selectSpecificPeriod: 'Выберите конкретный период...',
-    years: 'лет'
+    years: 'лет',
+    
+    // Header Navigation
+    map: 'Карта',
+    admin: 'Администратор',
+    events: 'События',
+    tags: 'Теги',
+    datasets: 'Наборы данных',
+    users: 'Пользователи',
+    
+    // Authentication
+    login: 'Войти',
+    logout: 'Выйти',
+    welcome: 'Добро пожаловать',
+    loggingIn: 'Вход...',
+    
+    // Login Modal
+    loginToHistoria: 'Вход в Historia ex machina',
+    username: 'Имя пользователя:',
+    password: 'Пароль:',
+    enterUsername: 'Введите имя пользователя',
+    enterPassword: 'Введите пароль',
+    
+    // Access Levels
+    superBadge: 'СУПЕР',
+    adminBadge: 'АДМИН',
+    editorBadge: 'РЕДАКТОР'
   }
 }
 

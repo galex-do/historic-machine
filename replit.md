@@ -4,8 +4,19 @@
 
 A comprehensive web application for mapping historical events on an interactive world map with timeline functionality. Users can view, filter, and add historical events with geographical and temporal data.
 
-## Recent Changes (September 3, 2025)
+## Recent Changes (October 10, 2025)
 
+- **Complete UI Localization**: Full internationalization support for all UI elements with EN/RU locales
+  - Header navigation menu (Map, Admin, Events, Tags, Datasets, Users)
+  - Authentication system (Login/Logout buttons, Welcome messages, Access level badges)
+  - Login modal (Title, form labels, placeholders, button states)
+  - Reactive locale switching with instant UI updates
+  - Locale selector positioned at header far right with flag indicators
+- **Localized Dataset System**: Complete ancient civilizations dataset with 125 events
+  - All events include professional Russian translations (name_ru, description_ru)
+  - Chronologically ordered from 3500 BC to 1000 BC
+  - Dual-language support for event data
+  - Locale-aware import/export workflow
 - **Session Storage Implementation**: All filter conditions (dates, lens types, templates, sidebar state) persist across page reloads
 - **Performance Optimization**: Events are filtered immediately on load instead of showing all events first 
 - **State Management Fix**: Event editing preserves current filter state, zoom level, and map position
@@ -96,3 +107,5 @@ A comprehensive web application for mapping historical events on an interactive 
 5. ✅ Authentication with session persistence
 6. ✅ Co-located events grouping in popups
 7. ✅ Minimalist edit icons and user interface
+8. ✅ Full internationalization (EN/RU) for UI and event data
+9. ✅ Localized dataset system with dual-language support
