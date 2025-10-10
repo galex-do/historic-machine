@@ -18,7 +18,7 @@ const UI_TRANSLATIONS = {
     
     // Header Navigation
     map: 'Map',
-    admin: 'Admin',
+    admin: 'Admin area',
     events: 'Events',
     tags: 'Tags',
     datasets: 'Datasets',
@@ -47,7 +47,7 @@ const UI_TRANSLATIONS = {
     filters: 'Фильтры',
     historicalEvents: 'Исторические события',
     historicalPeriod: 'Исторический период:',
-    specificPeriod: 'Конкретный период:',
+    specificPeriod: 'Сегмент:',
     from: 'С:',
     to: 'По:',
     step: 'Шаг:',
@@ -58,10 +58,10 @@ const UI_TRANSLATIONS = {
     
     // Header Navigation
     map: 'Карта',
-    admin: 'Администратор',
+    admin: 'Управление',
     events: 'События',
     tags: 'Теги',
-    datasets: 'Наборы данных',
+    datasets: 'Датасеты',
     users: 'Пользователи',
     
     // Authentication
