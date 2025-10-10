@@ -197,6 +197,37 @@ export function useLocale() {
     return `${url}${separator}${getLocaleParam()}`
   }
   
+  // Format date with localized month names and era labels
+  // Input: ISO date string like "1453-05-29T00:00:00Z" or "-3500-01-01T00:00:00Z"
+  // Output: "29 May 1453 AD" or "29 мая 1453 н.э." or "1 Jan 3500 BC" or "1 янв 3500 до н.э."
+  const formatLocalizedDate = (isoDateString, era) => {
+    const monthKeys = [
+      'monthJan', 'monthFeb', 'monthMar', 'monthApr', 'monthMay', 'monthJun',
+      'monthJul', 'monthAug', 'monthSep', 'monthOct', 'monthNov', 'monthDec'
+    ]
+    
+    let year, month, day
+    
+    if (isoDateString.startsWith('-')) {
+      // Negative year format: "-3500-01-01T00:00:00Z"
+      const parts = isoDateString.substring(1).split('T')[0].split('-')
+      year = parts[0]
+      month = parseInt(parts[1], 10) - 1
+      day = parseInt(parts[2], 10)
+    } else {
+      // Positive year format: "1453-05-29T00:00:00Z"
+      const date = new Date(isoDateString)
+      year = date.getFullYear()
+      month = date.getMonth()
+      day = date.getDate()
+    }
+    
+    const monthName = t(monthKeys[month])
+    const eraLabel = era === 'BC' ? t('eraBC') : t('eraAD')
+    
+    return `${day} ${monthName} ${year} ${eraLabel}`
+  }
+  
   return {
     locale: computed(() => locale.value),
     currentLocale,
@@ -204,6 +235,7 @@ export function useLocale() {
     t,
     setLocale,
     getLocaleParam,
-    addLocaleToUrl
+    addLocaleToUrl,
+    formatLocalizedDate
   }
 }
