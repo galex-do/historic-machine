@@ -211,15 +211,16 @@ export function useLocale() {
     if (isoDateString.startsWith('-')) {
       // Negative year format: "-3500-01-01T00:00:00Z"
       const parts = isoDateString.substring(1).split('T')[0].split('-')
-      year = parts[0]
+      year = parseInt(parts[0], 10)
       month = parseInt(parts[1], 10) - 1
       day = parseInt(parts[2], 10)
     } else {
       // Positive year format: "1453-05-29T00:00:00Z"
-      const date = new Date(isoDateString)
-      year = date.getFullYear()
-      month = date.getMonth()
-      day = date.getDate()
+      // Use manual parsing to avoid timezone issues
+      const parts = isoDateString.split('T')[0].split('-')
+      year = parseInt(parts[0], 10)
+      month = parseInt(parts[1], 10) - 1
+      day = parseInt(parts[2], 10)
     }
     
     const monthName = t(monthKeys[month])

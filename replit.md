@@ -21,6 +21,10 @@ A comprehensive web application for mapping historical events on an interactive 
   - Authentication system (Login/Logout buttons, Welcome messages, Access level badges)
   - Login modal (Title, form labels, placeholders, button states)
   - Filter controls (Apply button, date labels, step controls)
+  - **Admin Events Page**: Fully localized header, column names, and date displays
+    - Table columns (Name/Название, Description/Описание, Date/Дата, Location/Местоположение, Type/Тип, Tags/Теги, Actions/Действия)
+    - Localized date formatting with month names (Jan/янв, May/мая) and era labels (BC→до н.э., AD→н.э.)
+    - Examples: "1 Jan 3500 BC" → "1 янв 3500 до н.э.", "29 May 1453 AD" → "29 мая 1453 н.э."
   - Reactive locale switching with instant UI updates
   - Locale selector positioned at header far right with flag indicators
 - **Localized Dataset System**: Complete ancient civilizations dataset with 125 events

@@ -2,8 +2,8 @@
   <div class="admin-panel">
     <div class="admin-header">
       <div class="admin-title">
-        <h2>Historic Events</h2>
-        <p class="admin-subtitle">Manage and create historic events</p>
+        <h2>{{ t('adminEventsTitle') }}</h2>
+        <p class="admin-subtitle">{{ t('adminEventsSubtitle') }}</p>
       </div>
       <div class="action-buttons" v-if="canAccessAdmin">
         <button @click="showCreateModal = true" class="create-btn">
@@ -55,7 +55,7 @@
               @click="toggleSort('name')"
               :class="{ 'active': sortField === 'name' }"
             >
-              Name
+              {{ t('columnName') }}
               <span class="sort-indicator">
                 <span v-if="sortField === 'name'" class="sort-arrow">
                   {{ sortDirection === 'asc' ? '▲' : '▼' }}
@@ -63,13 +63,13 @@
                 <span v-else class="sort-placeholder">⇅</span>
               </span>
             </th>
-            <th>Description</th>
+            <th>{{ t('columnDescription') }}</th>
             <th 
               class="sortable-header" 
               @click="toggleSort('date')"
               :class="{ 'active': sortField === 'date' }"
             >
-              Date
+              {{ t('columnDate') }}
               <span class="sort-indicator">
                 <span v-if="sortField === 'date'" class="sort-arrow">
                   {{ sortDirection === 'asc' ? '▲' : '▼' }}
@@ -77,10 +77,10 @@
                 <span v-else class="sort-placeholder">⇅</span>
               </span>
             </th>
-            <th>Location</th>
-            <th>Type</th>
-            <th>Tags</th>
-            <th>Actions</th>
+            <th>{{ t('columnLocation') }}</th>
+            <th>{{ t('columnType') }}</th>
+            <th>{{ t('columnTags') }}</th>
+            <th>{{ t('columnActions') }}</th>
           </tr>
         </thead>
         <tbody>
@@ -103,7 +103,7 @@
                 {{ event.description.length > 100 ? event.description.substring(0, 100) + '...' : event.description }}
               </span>
             </td>
-            <td class="event-date">{{ formatDateWithEra(event.event_date, event.era) }}</td>
+            <td class="event-date">{{ formatLocalizedDate(event.event_date, event.era) }}</td>
             <td class="event-location">
               <span v-if="event.latitude && event.longitude">
                 {{ event.latitude.toFixed(2) }}, {{ event.longitude.toFixed(2) }}
@@ -430,6 +430,7 @@ import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { useAuth } from '@/composables/useAuth.js'
 import { useTags } from '@/composables/useTags.js'
 import { useEvents } from '@/composables/useEvents.js'
+import { useLocale } from '@/composables/useLocale.js'
 import { getAvailableLensTypes } from '@/utils/event-utils.js'
 import apiService from '@/services/api.js'
 import TablePagination from '@/components/TablePagination.vue'
@@ -447,6 +448,7 @@ export default {
     const { canAccessAdmin } = useAuth()
     const { allTags, loadTags, createTag, setEventTags, getTagsByIds } = useTags()
     const { events, fetchEvents, loading, error, handleEventDeleted } = useEvents()
+    const { t, formatLocalizedDate } = useLocale()
     
     // Local filter state for admin panel (single-select)
     const selectedLensType = ref('all')
@@ -1016,7 +1018,8 @@ export default {
       showEditModal,
       editingEvent,
       eventForm,
-      formatDateWithEra,
+      t,
+      formatLocalizedDate,
       getContrastColor,
       filteredEvents,
       currentPageEvents,
