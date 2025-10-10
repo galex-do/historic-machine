@@ -12,7 +12,10 @@ A comprehensive web application for mapping historical events on an interactive 
   - Frontend passes locale parameter to all template API endpoints (/date-template-groups, /date-templates)
   - Professional Russian translations for 11 template groups and 57+ date templates
   - Covers ancient civilizations (Заря цивилизации, Раннединастический период) through modern era
-  - Template selector automatically displays localized names when user switches language
+  - **Reactive Locale Switching**: Template groups and events automatically re-fetch when user changes language
+    - Watchers in useTemplates and useEvents composables detect locale changes
+    - No page reload required - instant translation updates
+    - Template selector updates to show localized period names immediately
 - **Complete UI Localization**: Full internationalization support for all UI elements with EN/RU locales
   - Header navigation menu (Map, Admin, Events, Tags, Datasets, Users)
   - Authentication system (Login/Logout buttons, Welcome messages, Access level badges)

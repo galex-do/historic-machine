@@ -1,7 +1,8 @@
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 import apiService from '@/services/api.js'
 import { parseHistoricalDate } from '@/utils/date-utils.js'
 import { getEraFromDate } from '@/utils/date-utils.js'
+import { useLocale } from '@/composables/useLocale.js'
 
 // Shared state - singleton pattern
 const events = ref([])
@@ -11,6 +12,13 @@ const error = ref(null)
 const eventsLoaded = ref(false)
 
 export function useEvents() {
+  const { locale } = useLocale()
+
+  // Watch locale changes and re-fetch events
+  watch(locale, async () => {
+    console.log('Locale changed, re-fetching events')
+    await fetchEvents()
+  })
 
   // Fetch all events from API
   const fetchEvents = async () => {
