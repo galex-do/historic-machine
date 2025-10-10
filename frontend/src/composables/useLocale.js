@@ -41,7 +41,38 @@ const UI_TRANSLATIONS = {
     // Access Levels
     superBadge: 'SUPER',
     adminBadge: 'ADMIN',
-    editorBadge: 'EDITOR'
+    editorBadge: 'EDITOR',
+    
+    // Admin Events Page
+    adminEventsTitle: 'Historic Events',
+    adminEventsSubtitle: 'Manage and create historic events',
+    
+    // Table Column Names
+    columnName: 'Name',
+    columnDescription: 'Description',
+    columnDate: 'Date',
+    columnLocation: 'Location',
+    columnType: 'Type',
+    columnTags: 'Tags',
+    columnActions: 'Actions',
+    
+    // Month Names
+    monthJan: 'Jan',
+    monthFeb: 'Feb',
+    monthMar: 'Mar',
+    monthApr: 'Apr',
+    monthMay: 'May',
+    monthJun: 'Jun',
+    monthJul: 'Jul',
+    monthAug: 'Aug',
+    monthSep: 'Sep',
+    monthOct: 'Oct',
+    monthNov: 'Nov',
+    monthDec: 'Dec',
+    
+    // Era Labels
+    eraBC: 'BC',
+    eraAD: 'AD'
   },
   ru: {
     // Filters
@@ -82,7 +113,38 @@ const UI_TRANSLATIONS = {
     // Access Levels
     superBadge: 'СУПЕР',
     adminBadge: 'АДМИН',
-    editorBadge: 'РЕДАКТОР'
+    editorBadge: 'РЕДАКТОР',
+    
+    // Admin Events Page
+    adminEventsTitle: 'Исторические события',
+    adminEventsSubtitle: 'Управление и создание исторических событий',
+    
+    // Table Column Names
+    columnName: 'Название',
+    columnDescription: 'Описание',
+    columnDate: 'Дата',
+    columnLocation: 'Местоположение',
+    columnType: 'Тип',
+    columnTags: 'Теги',
+    columnActions: 'Действия',
+    
+    // Month Names
+    monthJan: 'янв',
+    monthFeb: 'фев',
+    monthMar: 'мар',
+    monthApr: 'апр',
+    monthMay: 'мая',
+    monthJun: 'июн',
+    monthJul: 'июл',
+    monthAug: 'авг',
+    monthSep: 'сен',
+    monthOct: 'окт',
+    monthNov: 'ноя',
+    monthDec: 'дек',
+    
+    // Era Labels
+    eraBC: 'до н.э.',
+    eraAD: 'н.э.'
   }
 }
 
