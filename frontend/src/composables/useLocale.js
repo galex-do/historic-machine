@@ -15,6 +15,7 @@ const UI_TRANSLATIONS = {
     customDateRange: 'Custom Date Range',
     selectSpecificPeriod: 'Select specific period...',
     years: 'years',
+    apply: 'Apply',
     
     // Header Navigation
     map: 'Map',
@@ -55,6 +56,7 @@ const UI_TRANSLATIONS = {
     customDateRange: 'Произвольный диапазон дат',
     selectSpecificPeriod: 'Выберите конкретный период...',
     years: 'лет',
+    apply: 'Применить',
     
     // Header Navigation
     map: 'Карта',

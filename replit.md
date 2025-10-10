@@ -10,6 +10,7 @@ A comprehensive web application for mapping historical events on an interactive 
   - Header navigation menu (Map, Admin, Events, Tags, Datasets, Users)
   - Authentication system (Login/Logout buttons, Welcome messages, Access level badges)
   - Login modal (Title, form labels, placeholders, button states)
+  - Filter controls (Apply button, date labels, step controls)
   - Reactive locale switching with instant UI updates
   - Locale selector positioned at header far right with flag indicators
 - **Localized Dataset System**: Complete ancient civilizations dataset with 125 events

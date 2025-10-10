@@ -77,7 +77,7 @@
       
       <!-- Right-aligned Apply button -->
       <div class="apply-section">
-        <button @click="$emit('apply-filters')" class="apply-button">Apply</button>
+        <button @click="$emit('apply-filters')" class="apply-button">{{ t('apply') }}</button>
       </div>
     </div>
   </div>
