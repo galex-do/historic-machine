@@ -4,7 +4,6 @@
   "description": "A web application for mapping historical events on an interactive world map with timeline functionality.",
   "main": "index.js",
   "dependencies": {
-    "@yaga/leaflet-cached-tile-layer": "^1.0.0",
     "csstype": "^3.1.3",
     "entities": "^4.5.0",
     "estree-walker": "^2.0.2",
