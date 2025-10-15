@@ -4,6 +4,13 @@
 
 A comprehensive web application for mapping historical events on an interactive world map with timeline functionality. Users can view, filter, and add historical events with geographical and temporal data.
 
+## Recent Changes (October 15, 2025)
+
+- **Pagination Z-Index Fix**: Resolved layout bug where pagination controls in events grid were unclickable on wide screens when map filter was enabled
+  - Added proper z-index layering: events sidebar (z-index: 5), pagination controls (z-index: 10), map content area (z-index: 1)
+  - Pagination now works correctly in both wide and narrow screen layouts
+- **Event Button Localization**: "Create New Event" button on /admin/events page now fully localized (EN/RU)
+
 ## Recent Changes (October 10, 2025)
 
 - **Complete Date Template Localization**: Full internationalization for historical period templates
