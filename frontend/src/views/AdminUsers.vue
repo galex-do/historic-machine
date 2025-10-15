@@ -2,13 +2,13 @@
   <div class="admin-panel">
     <div class="admin-header">
       <div class="admin-title">
-        <h2>Users Management</h2>
-        <p class="admin-subtitle">Manage user accounts and access levels</p>
+        <h2>{{ t('adminUsersTitle') }}</h2>
+        <p class="admin-subtitle">{{ t('adminUsersSubtitle') }}</p>
       </div>
       <div class="action-buttons" v-if="isSuper">
         <button @click="showCreateModal = true" class="create-btn">
           <span class="btn-icon">➕</span>
-          Create New User
+          {{ t('createNewUser') }}
         </button>
       </div>
     </div>
@@ -56,7 +56,7 @@
               @click="toggleSort('username')"
               :class="{ 'active': sortField === 'username' }"
             >
-              Username
+              {{ t('columnUsername') }}
               <span class="sort-indicator">
                 <span v-if="sortField === 'username'" class="sort-arrow">
                   {{ sortDirection === 'asc' ? '▲' : '▼' }}
@@ -64,13 +64,13 @@
                 <span v-else class="sort-placeholder">⇅</span>
               </span>
             </th>
-            <th>Email</th>
+            <th>{{ t('columnEmail') }}</th>
             <th 
               class="sortable-header" 
               @click="toggleSort('access_level')"
               :class="{ 'active': sortField === 'access_level' }"
             >
-              Access Level
+              {{ t('columnAccessLevel') }}
               <span class="sort-indicator">
                 <span v-if="sortField === 'access_level'" class="sort-arrow">
                   {{ sortDirection === 'asc' ? '▲' : '▼' }}
@@ -78,13 +78,13 @@
                 <span v-else class="sort-placeholder">⇅</span>
               </span>
             </th>
-            <th>Status</th>
+            <th>{{ t('columnStatus') }}</th>
             <th 
               class="sortable-header" 
               @click="toggleSort('created_at')"
               :class="{ 'active': sortField === 'created_at' }"
             >
-              Created
+              {{ t('columnCreated') }}
               <span class="sort-indicator">
                 <span v-if="sortField === 'created_at'" class="sort-arrow">
                   {{ sortDirection === 'asc' ? '▲' : '▼' }}
@@ -92,8 +92,8 @@
                 <span v-else class="sort-placeholder">⇅</span>
               </span>
             </th>
-            <th>Last Active</th>
-            <th>Actions</th>
+            <th>{{ t('columnLastActive') }}</th>
+            <th>{{ t('columnActions') }}</th>
           </tr>
         </thead>
         <tbody>
@@ -252,6 +252,7 @@
 <script>
 import { ref, onMounted, computed } from 'vue'
 import { useAuth } from '@/composables/useAuth.js'
+import { useLocale } from '@/composables/useLocale.js'
 import apiService from '@/services/api.js'
 import TablePagination from '@/components/TablePagination.vue'
 
@@ -262,6 +263,7 @@ export default {
   },
   setup() {
     const { user, isSuper } = useAuth()
+    const { t } = useLocale()
     
     const localLoading = ref(false)
     const localError = ref(null)
@@ -550,7 +552,8 @@ export default {
       deleteUser,
       saveUser,
       closeModal,
-      localLoading
+      localLoading,
+      t
     }
   }
 }
