@@ -139,7 +139,7 @@ A comprehensive web application for mapping historical events on an interactive 
 3. ✅ Event creation and editing modals
 4. ✅ Admin table interface for event management
 5. ✅ Authentication with session persistence
-6. ✅ Co-located events grouping in popups
+6. ✅ Co-located events clustering with count badges (shows event count on cluster markers)
 7. ✅ Minimalist edit icons and user interface
 8. ✅ Full internationalization (EN/RU) for UI and event data
 9. ✅ Localized dataset system with dual-language support
