@@ -125,7 +125,7 @@
                 <button 
                   @click="exportDataset(dataset)"
                   class="export-button"
-                  :title="`Export dataset: ${dataset?.filename || 'Unknown'}`"
+                  :title="`${t('exportDatasetTitle')} ${dataset?.filename || t('unknown')}`"
                   :disabled="localLoading"
                 >
                   📤
@@ -133,7 +133,7 @@
                 <button 
                   @click="confirmDelete(dataset)"
                   class="delete-button"
-                  :title="`Delete dataset: ${dataset?.filename || 'Unknown'}`"
+                  :title="`${t('deleteDatasetTitle')} ${dataset?.filename || t('unknown')}`"
                 >
                   🗑️
                 </button>

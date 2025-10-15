@@ -147,7 +147,12 @@ const UI_TRANSLATIONS = {
     mustBeLoggedIn: 'You must be logged in to create datasets',
     failedToCreate: 'Failed to create dataset',
     failedToExport: 'Failed to export dataset',
-    failedToDelete: 'Failed to delete dataset'
+    failedToDelete: 'Failed to delete dataset',
+    
+    // Dataset Action Tooltips
+    exportDatasetTitle: 'Export dataset:',
+    deleteDatasetTitle: 'Delete dataset:',
+    unknown: 'Unknown'
   },
   ru: {
     // Filters
@@ -294,7 +299,12 @@ const UI_TRANSLATIONS = {
     mustBeLoggedIn: 'Вы должны войти в систему для создания датасетов',
     failedToCreate: 'Не удалось создать датасет',
     failedToExport: 'Не удалось экспортировать датасет',
-    failedToDelete: 'Не удалось удалить датасет'
+    failedToDelete: 'Не удалось удалить датасет',
+    
+    // Dataset Action Tooltips
+    exportDatasetTitle: 'Экспортировать датасет:',
+    deleteDatasetTitle: 'Удалить датасет:',
+    unknown: 'Неизвестно'
   }
 }
 

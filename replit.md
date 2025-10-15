@@ -33,6 +33,12 @@ A comprehensive web application for mapping historical events on an interactive 
     - Header: "Users Management" → "Управление пользователями"
     - Button: "Create New User" → "Создать нового пользователя"
     - Table columns (Username/Имя пользователя, Email/Электронная почта, Access Level/Уровень доступа, Status/Статус, Created/Создан, Last Active/Последняя активность, Actions/Действия)
+  - **Admin Datasets Page**: Fully localized headers, buttons, table columns, and modals
+    - Header: "Event Datasets" → "Датасеты событий"
+    - Buttons: "Choose Dataset File" → "Выбрать файл датасета", "Import Dataset" → "Импортировать датасет", "Create Empty Dataset" → "Создать пустой датасет"
+    - Table columns (Filename/Имя файла, Description/Описание, Event Count/Количество событий, Uploaded By/Загрузил, Upload Date/Дата загрузки, Actions/Действия)
+    - Delete modal with full Russian translation of confirmation messages
+    - Create modal with localized form labels and placeholders
   - **Event Display Localization**: Era labels (BC/AD) localized in event grid and modals
     - English: "29.05.1453 AD" / "01.01.3500 BC"
     - Russian: "29.05.1453 н.э." / "01.01.3500 до н.э."
