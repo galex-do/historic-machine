@@ -396,7 +396,6 @@ export default {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  z-index: 5;
 }
 
 .events-sidebar.collapsed {
@@ -464,7 +463,6 @@ export default {
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
-  z-index: 1;
 }
 
 /* Responsive Design */

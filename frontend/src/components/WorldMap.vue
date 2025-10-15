@@ -903,14 +903,12 @@ export default {
   bottom: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none;
 }
 
 .leaflet-map {
   height: 100%;
   width: 100%;
   border-radius: 8px;
-  pointer-events: auto;
 }
 
 .modal-overlay {
@@ -924,7 +922,6 @@ export default {
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  pointer-events: auto;
 }
 
 .modal-content {
