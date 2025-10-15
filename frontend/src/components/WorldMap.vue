@@ -147,7 +147,7 @@
               </h4>
               <span v-if="canEditEvents" @click="edit_event_from_info(event.id)" class="edit-icon" title="Edit event">✏️</span>
             </div>
-            <div class="event-date">{{ event.display_date || format_date(event.event_date) }}</div>
+            <div class="event-date">{{ formatEventDisplayDate(event.event_date, event.era) }}</div>
             <p class="event-description">{{ event.description }}</p>
             <!-- Event Tags (max 3) -->
             <div v-if="event.tags && event.tags.length > 0" class="event-tags">
@@ -173,6 +173,7 @@ import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import { useAuth } from '@/composables/useAuth.js'
 import { useTags } from '@/composables/useTags.js'
+import { useLocale } from '@/composables/useLocale.js'
 import apiService from '@/services/api.js'
 import { getEventEmoji, getAvailableLensTypes } from '@/utils/event-utils.js'
 
@@ -181,12 +182,14 @@ export default {
   setup() {
     const { canCreateEvents, canEditEvents, isGuest } = useAuth()
     const { allTags, loadTags } = useTags()
+    const { formatEventDisplayDate } = useLocale()
     return {
       canCreateEvents,
       canEditEvents,
       isGuest,
       allTags,
-      loadTags
+      loadTags,
+      formatEventDisplayDate
     }
   },
   props: {
