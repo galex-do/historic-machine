@@ -88,9 +88,18 @@ export default {
     }
   },
   watch: {
-    events() {
-      // Reset to first page when events change (e.g., due to filtering)
-      this.currentPage = 1
+    events(newEvents, oldEvents) {
+      // Only reset to first page if current page is now invalid
+      // This prevents resetting when map view filter changes the events array
+      const newTotalPages = Math.ceil(newEvents.length / this.eventsPerPage)
+      
+      // If current page is beyond the new total pages, reset to the last valid page
+      if (this.currentPage > newTotalPages && newTotalPages > 0) {
+        this.currentPage = newTotalPages
+      } else if (newTotalPages === 0) {
+        this.currentPage = 1
+      }
+      // Otherwise, keep the current page to maintain pagination state
     }
   },
   methods: {
