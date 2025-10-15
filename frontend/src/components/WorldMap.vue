@@ -305,16 +305,8 @@ export default {
       // Create map centered on world view
       this.map = L.map(this.$refs.map).setView([20, 0], 2)
       
-      // Get backend URL for tile proxy
-      const backendUrl = window.location.host.includes('localhost:3000') 
-        ? '/api' 
-        : 'http://localhost:8080/api'
-      
-      const tileUrl = `${backendUrl}/tiles?z={z}&x={x}&y={y}`
-      console.log('Initializing map with tile URL:', tileUrl)
-      
-      // Use backend tile proxy for server-side caching
-      L.tileLayer(tileUrl, {
+      // Add OpenStreetMap tile layer (free, no API key needed)
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         maxZoom: 18,
         minZoom: 2
