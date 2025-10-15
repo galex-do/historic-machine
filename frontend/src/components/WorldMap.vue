@@ -305,11 +305,12 @@ export default {
       // Create map centered on world view
       this.map = L.map(this.$refs.map).setView([20, 0], 2)
       
-      // Add OpenStreetMap tile layer (free, no API key needed)
+      // Add OpenStreetMap tile layer (tiles are cached by Service Worker)
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         maxZoom: 18,
-        minZoom: 2
+        minZoom: 2,
+        crossOrigin: true  // Required for Service Worker caching
       }).addTo(this.map)
       
       // Add click event for creating new events

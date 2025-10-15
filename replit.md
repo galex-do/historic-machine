@@ -4,7 +4,15 @@
 
 A comprehensive web application for mapping historical events on an interactive world map with timeline functionality. Users can view, filter, and add historical events with geographical and temporal data.
 
-## Recent Changes (October 10, 2025)
+## Recent Changes (October 15, 2025)
+
+- **Map Tile Caching**: Implemented Service Worker-based tile caching for OpenStreetMap tiles
+  - Tiles are automatically cached in browser for 7 days
+  - Significantly reduces bandwidth usage and improves map performance
+  - Works offline for previously visited map areas
+  - Uses browser-native Service Worker API for reliability
+
+## Previous Changes (October 10, 2025)
 
 - **Complete Date Template Localization**: Full internationalization for historical period templates
   - Database migration adds name_en/name_ru and description_en/description_ru fields to both template groups and templates
