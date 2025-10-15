@@ -25,6 +25,10 @@ A comprehensive web application for mapping historical events on an interactive 
     - Table columns (Name/Название, Description/Описание, Date/Дата, Location/Местоположение, Type/Тип, Tags/Теги, Actions/Действия)
     - Localized date formatting with month names (Jan/янв, May/мая) and era labels (BC→до н.э., AD→н.э.)
     - Examples: "1 Jan 3500 BC" → "1 янв 3500 до н.э.", "29 May 1453 AD" → "29 мая 1453 н.э."
+  - **Admin Tags Page**: Fully localized header, button, and column names
+    - Header: "Tags Management" → "Управление тегами"
+    - Button: "Create New Tag" → "Создать новый тег"
+    - Table columns (Name/Название, Description/Описание, Color/Цвет, Created/Создан, Usage Count/Использование, Actions/Действия)
   - Reactive locale switching with instant UI updates
   - Locale selector positioned at header far right with flag indicators
 - **Localized Dataset System**: Complete ancient civilizations dataset with 125 events
