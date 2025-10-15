@@ -8,7 +8,7 @@
       <div class="action-buttons" v-if="canAccessAdmin">
         <button @click="showCreateModal = true" class="create-btn">
           <span class="btn-icon">➕</span>
-          Create New Event
+          {{ t('createNewEvent') }}
         </button>
       </div>
     </div>

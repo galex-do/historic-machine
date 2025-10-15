@@ -46,6 +46,7 @@ const UI_TRANSLATIONS = {
     // Admin Events Page
     adminEventsTitle: 'Historic Events',
     adminEventsSubtitle: 'Manage and create historic events',
+    createNewEvent: 'Create New Event',
     
     // Admin Tags Page
     adminTagsTitle: 'Tags Management',
@@ -198,6 +199,7 @@ const UI_TRANSLATIONS = {
     // Admin Events Page
     adminEventsTitle: 'Исторические события',
     adminEventsSubtitle: 'Управление и создание исторических событий',
+    createNewEvent: 'Создать новое событие',
     
     // Admin Tags Page
     adminTagsTitle: 'Управление тегами',
