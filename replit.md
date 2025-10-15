@@ -33,6 +33,10 @@ A comprehensive web application for mapping historical events on an interactive 
     - Header: "Users Management" → "Управление пользователями"
     - Button: "Create New User" → "Создать нового пользователя"
     - Table columns (Username/Имя пользователя, Email/Электронная почта, Access Level/Уровень доступа, Status/Статус, Created/Создан, Last Active/Последняя активность, Actions/Действия)
+  - **Event Display Localization**: Era labels (BC/AD) localized in event grid and modals
+    - English: "29.05.1453 AD" / "01.01.3500 BC"
+    - Russian: "29.05.1453 н.э." / "01.01.3500 до н.э."
+    - Timezone-safe date formatting across all components
   - Reactive locale switching with instant UI updates
   - Locale selector positioned at header far right with flag indicators
 - **Localized Dataset System**: Complete ancient civilizations dataset with 125 events
