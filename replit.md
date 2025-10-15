@@ -53,6 +53,7 @@ A comprehensive web application for mapping historical events on an interactive 
 - **Session Storage Implementation**: All filter conditions (dates, lens types, templates, sidebar state) persist across page reloads
 - **Performance Optimization**: Events are filtered immediately on load instead of showing all events first 
 - **State Management Fix**: Event editing preserves current filter state, zoom level, and map position
+- **Pagination Bug Fix**: Fixed event grid pagination reset issue when "Filter events by map view" is enabled - pagination now maintains current page correctly
 - **Era Selector Implementation**: Added BC/AD era selectors to all event forms (admin panel and map creation)
 - **Database Type Conflict Resolution**: Fixed PostgreSQL type casting issues for latitude/longitude coordinates
 - **Authentication Header Fix**: Resolved 401 errors by properly merging authentication headers in API requests
