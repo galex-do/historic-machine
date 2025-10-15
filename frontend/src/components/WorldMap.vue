@@ -171,6 +171,7 @@
 <script>
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
+import { CachedTileLayer } from '@yaga/leaflet-cached-tile-layer'
 import { useAuth } from '@/composables/useAuth.js'
 import { useTags } from '@/composables/useTags.js'
 import { useLocale } from '@/composables/useLocale.js'
@@ -305,11 +306,16 @@ export default {
       // Create map centered on world view
       this.map = L.map(this.$refs.map).setView([20, 0], 2)
       
-      // Add OpenStreetMap tile layer (free, no API key needed)
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      // Add OpenStreetMap tile layer with caching (7-day cache)
+      new CachedTileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         maxZoom: 18,
-        minZoom: 2
+        minZoom: 2,
+        databaseName: 'historia-tile-cache',
+        databaseVersion: 1,
+        objectStoreName: 'OSM',
+        crawlDelay: 500,  // Delay between tile requests (ms) - respects OSM usage policy
+        maxAge: 604800000  // Cache tiles for 7 days (in milliseconds)
       }).addTo(this.map)
       
       // Add click event for creating new events
