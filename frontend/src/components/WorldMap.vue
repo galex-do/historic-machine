@@ -310,8 +310,11 @@ export default {
         ? '/api' 
         : 'http://localhost:8080/api'
       
+      const tileUrl = `${backendUrl}/tiles?z={z}&x={x}&y={y}`
+      console.log('Initializing map with tile URL:', tileUrl)
+      
       // Use backend tile proxy for server-side caching
-      L.tileLayer(`${backendUrl}/tiles?z={z}&x={x}&y={y}`, {
+      L.tileLayer(tileUrl, {
         attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         maxZoom: 18,
         minZoom: 2
