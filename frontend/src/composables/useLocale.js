@@ -47,6 +47,11 @@ const UI_TRANSLATIONS = {
     adminEventsTitle: 'Historic Events',
     adminEventsSubtitle: 'Manage and create historic events',
     
+    // Admin Tags Page
+    adminTagsTitle: 'Tags Management',
+    adminTagsSubtitle: 'Manage event tags and categories',
+    createNewTag: 'Create New Tag',
+    
     // Table Column Names
     columnName: 'Name',
     columnDescription: 'Description',
@@ -55,6 +60,9 @@ const UI_TRANSLATIONS = {
     columnType: 'Type',
     columnTags: 'Tags',
     columnActions: 'Actions',
+    columnColor: 'Color',
+    columnCreated: 'Created',
+    columnUsageCount: 'Usage Count',
     
     // Month Names
     monthJan: 'Jan',
@@ -119,6 +127,11 @@ const UI_TRANSLATIONS = {
     adminEventsTitle: 'Исторические события',
     adminEventsSubtitle: 'Управление и создание исторических событий',
     
+    // Admin Tags Page
+    adminTagsTitle: 'Управление тегами',
+    adminTagsSubtitle: 'Управление тегами и категориями событий',
+    createNewTag: 'Создать новый тег',
+    
     // Table Column Names
     columnName: 'Название',
     columnDescription: 'Описание',
@@ -127,6 +140,9 @@ const UI_TRANSLATIONS = {
     columnType: 'Тип',
     columnTags: 'Теги',
     columnActions: 'Действия',
+    columnColor: 'Цвет',
+    columnCreated: 'Создан',
+    columnUsageCount: 'Использование',
     
     // Month Names
     monthJan: 'янв',
