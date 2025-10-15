@@ -52,6 +52,11 @@ const UI_TRANSLATIONS = {
     adminTagsSubtitle: 'Manage event tags and categories',
     createNewTag: 'Create New Tag',
     
+    // Admin Users Page
+    adminUsersTitle: 'Users Management',
+    adminUsersSubtitle: 'Manage user accounts and access levels',
+    createNewUser: 'Create New User',
+    
     // Table Column Names
     columnName: 'Name',
     columnDescription: 'Description',
@@ -63,6 +68,11 @@ const UI_TRANSLATIONS = {
     columnColor: 'Color',
     columnCreated: 'Created',
     columnUsageCount: 'Usage Count',
+    columnUsername: 'Username',
+    columnEmail: 'Email',
+    columnAccessLevel: 'Access Level',
+    columnStatus: 'Status',
+    columnLastActive: 'Last Active',
     
     // Month Names
     monthJan: 'Jan',
@@ -132,6 +142,11 @@ const UI_TRANSLATIONS = {
     adminTagsSubtitle: 'Управление тегами и категориями событий',
     createNewTag: 'Создать новый тег',
     
+    // Admin Users Page
+    adminUsersTitle: 'Управление пользователями',
+    adminUsersSubtitle: 'Управление учетными записями и уровнями доступа',
+    createNewUser: 'Создать нового пользователя',
+    
     // Table Column Names
     columnName: 'Название',
     columnDescription: 'Описание',
@@ -143,6 +158,11 @@ const UI_TRANSLATIONS = {
     columnColor: 'Цвет',
     columnCreated: 'Создан',
     columnUsageCount: 'Использование',
+    columnUsername: 'Имя пользователя',
+    columnEmail: 'Электронная почта',
+    columnAccessLevel: 'Уровень доступа',
+    columnStatus: 'Статус',
+    columnLastActive: 'Последняя активность',
     
     // Month Names
     monthJan: 'янв',
