@@ -90,7 +90,64 @@ const UI_TRANSLATIONS = {
     
     // Era Labels
     eraBC: 'BC',
-    eraAD: 'AD'
+    eraAD: 'AD',
+    
+    // Admin Datasets Page
+    adminDatasetsTitle: 'Event Datasets',
+    adminDatasetsSubtitle: 'Manage uploaded event datasets. Deleting a dataset will remove all events imported from it.',
+    loadingDatasets: 'Loading datasets...',
+    tryAgain: 'Try Again',
+    importNewDataset: 'Import New Dataset',
+    importDatasetDescription: 'Upload a JSON file containing historical events to create a new dataset.',
+    chooseDatasetFile: 'Choose Dataset File',
+    selectedFile: 'Selected:',
+    importing: 'Importing...',
+    importDataset: 'Import Dataset',
+    clear: 'Clear',
+    or: 'or',
+    createEmptyDataset: 'Create Empty Dataset',
+    
+    // Datasets Table
+    columnFilename: 'Filename',
+    columnEventCount: 'Event Count',
+    columnUploadedBy: 'Uploaded By',
+    columnUploadDate: 'Upload Date',
+    noDatasetsFound: 'No datasets found',
+    importToCreateFirst: 'Import events to create your first dataset.',
+    noDescription: 'No description',
+    userPrefix: 'User',
+    
+    // Delete Dataset Modal
+    deleteDatasetTitle: 'Delete Dataset',
+    deleteConfirmQuestion: 'Are you sure you want to delete the dataset',
+    deleteWillRemove: 'This will permanently delete:',
+    eventsImported: 'events imported from this dataset',
+    datasetRecordItself: 'The dataset record itself',
+    tagsPreservedNote: 'Note: Tags created during import will be preserved.',
+    cancel: 'Cancel',
+    deleting: 'Deleting...',
+    deleteDataset: 'Delete Dataset',
+    
+    // Create Dataset Modal
+    createEmptyDatasetTitle: 'Create Empty Dataset',
+    datasetName: 'Dataset Name*',
+    datasetNamePlaceholder: 'e.g., My Historical Events',
+    descriptionOptional: 'Description (optional)',
+    descriptionPlaceholder: 'Brief description of this dataset...',
+    creating: 'Creating...',
+    createDataset: 'Create Dataset',
+    datasetNameRequired: 'Dataset name is required',
+    
+    // Dataset Error Messages
+    failedToLoadDatasets: 'Failed to load datasets',
+    selectValidJson: 'Please select a valid JSON file',
+    invalidFileFormat: 'Invalid file format: missing events array',
+    invalidJsonFormat: 'Invalid JSON file format',
+    failedToImport: 'Failed to import dataset',
+    mustBeLoggedIn: 'You must be logged in to create datasets',
+    failedToCreate: 'Failed to create dataset',
+    failedToExport: 'Failed to export dataset',
+    failedToDelete: 'Failed to delete dataset'
   },
   ru: {
     // Filters
@@ -180,7 +237,64 @@ const UI_TRANSLATIONS = {
     
     // Era Labels
     eraBC: 'до н.э.',
-    eraAD: 'н.э.'
+    eraAD: 'н.э.',
+    
+    // Admin Datasets Page
+    adminDatasetsTitle: 'Датасеты событий',
+    adminDatasetsSubtitle: 'Управление загруженными датасетами событий. Удаление датасета удалит все импортированные из него события.',
+    loadingDatasets: 'Загрузка датасетов...',
+    tryAgain: 'Попробовать снова',
+    importNewDataset: 'Импортировать новый датасет',
+    importDatasetDescription: 'Загрузите JSON-файл с историческими событиями для создания нового датасета.',
+    chooseDatasetFile: 'Выбрать файл датасета',
+    selectedFile: 'Выбран:',
+    importing: 'Импорт...',
+    importDataset: 'Импортировать датасет',
+    clear: 'Очистить',
+    or: 'или',
+    createEmptyDataset: 'Создать пустой датасет',
+    
+    // Datasets Table
+    columnFilename: 'Имя файла',
+    columnEventCount: 'Количество событий',
+    columnUploadedBy: 'Загрузил',
+    columnUploadDate: 'Дата загрузки',
+    noDatasetsFound: 'Датасеты не найдены',
+    importToCreateFirst: 'Импортируйте события для создания первого датасета.',
+    noDescription: 'Без описания',
+    userPrefix: 'Пользователь',
+    
+    // Delete Dataset Modal
+    deleteDatasetTitle: 'Удалить датасет',
+    deleteConfirmQuestion: 'Вы уверены, что хотите удалить датасет',
+    deleteWillRemove: 'Это безвозвратно удалит:',
+    eventsImported: 'событий, импортированных из этого датасета',
+    datasetRecordItself: 'Сам датасет',
+    tagsPreservedNote: 'Примечание: Теги, созданные при импорте, будут сохранены.',
+    cancel: 'Отмена',
+    deleting: 'Удаление...',
+    deleteDataset: 'Удалить датасет',
+    
+    // Create Dataset Modal
+    createEmptyDatasetTitle: 'Создать пустой датасет',
+    datasetName: 'Название датасета*',
+    datasetNamePlaceholder: 'например, Мои исторические события',
+    descriptionOptional: 'Описание (необязательно)',
+    descriptionPlaceholder: 'Краткое описание датасета...',
+    creating: 'Создание...',
+    createDataset: 'Создать датасет',
+    datasetNameRequired: 'Название датасета обязательно',
+    
+    // Dataset Error Messages
+    failedToLoadDatasets: 'Не удалось загрузить датасеты',
+    selectValidJson: 'Пожалуйста, выберите корректный JSON-файл',
+    invalidFileFormat: 'Неверный формат файла: отсутствует массив events',
+    invalidJsonFormat: 'Неверный формат JSON-файла',
+    failedToImport: 'Не удалось импортировать датасет',
+    mustBeLoggedIn: 'Вы должны войти в систему для создания датасетов',
+    failedToCreate: 'Не удалось создать датасет',
+    failedToExport: 'Не удалось экспортировать датасет',
+    failedToDelete: 'Не удалось удалить датасет'
   }
 }
 
