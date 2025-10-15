@@ -17,6 +17,7 @@ type Router struct {
         tagHandler      *TagHandler
         authHandler     *AuthHandler
         datasetHandler  *DatasetHandler
+        tileHandler     *TileHandler
 }
 
 // NewRouter creates a new router with all handlers
@@ -27,6 +28,7 @@ func NewRouter(eventRepo *repositories.EventRepository, templateRepo *repositori
                 tagHandler:      NewTagHandler(tagRepo),
                 authHandler:     NewAuthHandler(authService),
                 datasetHandler:  NewDatasetHandler(datasetRepo, eventRepo),
+                tileHandler:     NewTileHandler("./tile_cache"),
         }
 }
 
@@ -88,6 +90,9 @@ func (router *Router) SetupRoutes() http.Handler {
         api.HandleFunc("/events/{event_id}/tags/{tag_id}", router.tagHandler.AddTagToEvent).Methods("POST", "OPTIONS")
         api.HandleFunc("/events/{event_id}/tags/{tag_id}", router.tagHandler.RemoveTagFromEvent).Methods("DELETE", "OPTIONS")
         api.HandleFunc("/events/{event_id}/tags", router.tagHandler.SetEventTags).Methods("PUT", "OPTIONS")
+        
+        // Tile proxy endpoint (public, no auth required)
+        api.HandleFunc("/tiles", router.tileHandler.GetTile).Methods("GET", "OPTIONS")
         
         // Health check endpoint
         api.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
