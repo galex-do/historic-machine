@@ -463,7 +463,8 @@ export default {
             }
             
             const emoji_icon = this.create_emoji_marker_icon(
-              eventGroup.events.length > 1 ? 'multiple' : eventGroup.events[0].lens_type
+              eventGroup.events.length > 1 ? 'multiple' : eventGroup.events[0].lens_type,
+              eventGroup.events.length
             )
             
             const marker = L.marker([lat, lng], { 
@@ -777,12 +778,15 @@ export default {
       }
     },
     
-    create_emoji_marker_icon(lens_type) {
+    create_emoji_marker_icon(lens_type, eventCount = 1) {
       // Use the utility function for consistency
       const emoji = getEventEmoji(lens_type)
       
+      // Add count badge for clustered events (multiple events at same location)
+      const countBadge = eventCount > 1 ? `<span class="marker-count-badge">${eventCount}</span>` : ''
+      
       return L.divIcon({
-        html: `<div class="emoji-marker" data-lens="${lens_type}">${emoji}</div>`,
+        html: `<div class="emoji-marker" data-lens="${lens_type}">${emoji}${countBadge}</div>`,
         className: 'emoji-marker-container',
         iconSize: [30, 30],
         iconAnchor: [15, 30],
@@ -1076,6 +1080,7 @@ export default {
 }
 
 :deep(.emoji-marker) {
+  position: relative;
   font-size: 24px;
   text-align: center;
   line-height: 30px;
@@ -1092,6 +1097,27 @@ export default {
 
 :deep(.emoji-marker:hover) {
   transform: scale(1.1);
+}
+
+/* Count badge for clustered markers */
+:deep(.marker-count-badge) {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #ef4444;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 10;
 }
 
 /* Event Info Modal Styles */
