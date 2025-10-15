@@ -188,17 +188,39 @@ func (h *DatasetHandler) ExportDataset(w http.ResponseWriter, r *http.Request) {
                         tagNames[j] = tag.Name
                 }
 
-                exportEvents[i] = map[string]interface{}{
-                        "name":        event.Name,
-                        "description": event.Description,
+                exportEvent := map[string]interface{}{
                         "date":        dateStr,
                         "era":         event.Era,
                         "latitude":    event.Latitude,
                         "longitude":   event.Longitude,
                         "type":        event.LensType, // Export as "type" for compatibility
                         "tags":        tagNames,
-                        "source":      event.Source,
                 }
+
+                // Include locale-specific fields
+                if event.NameEn != "" {
+                        exportEvent["name_en"] = event.NameEn
+                }
+                if event.NameRu != "" {
+                        exportEvent["name_ru"] = event.NameRu
+                }
+                if event.DescriptionEn != nil && *event.DescriptionEn != "" {
+                        exportEvent["description_en"] = *event.DescriptionEn
+                }
+                if event.DescriptionRu != nil && *event.DescriptionRu != "" {
+                        exportEvent["description_ru"] = *event.DescriptionRu
+                }
+
+                // Include legacy fields for backward compatibility
+                exportEvent["name"] = event.Name
+                exportEvent["description"] = event.Description
+
+                // Include source if available
+                if event.Source != nil {
+                        exportEvent["source"] = *event.Source
+                }
+
+                exportEvents[i] = exportEvent
         }
 
         // Create export format matching the import structure
@@ -211,6 +233,12 @@ func (h *DatasetHandler) ExportDataset(w http.ResponseWriter, r *http.Request) {
         // Set appropriate headers for file download
         w.Header().Set("Content-Type", "application/json")
         w.Header().Set("Content-Disposition", fmt.Sprintf("attachment; filename=\"%s\"", dataset.Filename))
+        w.Header().Set("Cache-Control", "no-cache")
         
-        response.Success(w, exportData, "Dataset exported successfully")
+        // Return raw JSON for direct import compatibility
+        if err := json.NewEncoder(w).Encode(exportData); err != nil {
+                log.Printf("Error encoding export data: %v", err)
+                response.InternalError(w, "Failed to export dataset")
+                return
+        }
 }

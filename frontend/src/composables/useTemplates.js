@@ -1,6 +1,7 @@
 import { ref, computed, watch } from 'vue'
 import apiService from '@/services/api.js'
 import { formatHistoricalDate } from '@/utils/date-utils.js'
+import { useLocale } from '@/composables/useLocale.js'
 
 // Session storage keys for templates
 const TEMPLATE_STORAGE_KEYS = {
@@ -37,6 +38,7 @@ const loading = ref(false)
 const error = ref(null)
 
 export function useTemplates() {
+  const { locale } = useLocale()
 
   // Setup watchers to save template state to session storage
   watch(selectedTemplateGroupId, (newValue) => {
@@ -45,6 +47,12 @@ export function useTemplates() {
 
   watch(selectedTemplateId, (newValue) => {
     saveTemplateToStorage(TEMPLATE_STORAGE_KEYS.SELECTED_TEMPLATE_ID, newValue)
+  })
+
+  // Watch locale changes and re-fetch template groups
+  watch(locale, async () => {
+    console.log('Locale changed, re-fetching template groups')
+    await fetchTemplateGroups()
   })
 
   // Computed to get selected template object

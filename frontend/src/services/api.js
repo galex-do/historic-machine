@@ -3,10 +3,18 @@
  */
 
 import authService from './authService.js'
+import { useLocale } from '@/composables/useLocale.js'
 
 class ApiService {
   constructor() {
     this.baseURL = this.getBackendUrl()
+  }
+
+  // Helper method to add locale parameter to URLs for event-related endpoints
+  addLocaleToEventUrl(url) {
+    const { getLocaleParam } = useLocale()
+    const separator = url.includes('?') ? '&' : '?'
+    return `${url}${separator}${getLocaleParam()}`
   }
 
   getBackendUrl() {
@@ -79,31 +87,37 @@ class ApiService {
       }
       endpoint = `/events?${params}`
     }
+    // Add locale parameter to the endpoint
+    endpoint = this.addLocaleToEventUrl(endpoint)
     return this.makeRequest(endpoint)
   }
 
   async createEvent(eventData) {
-    return this.makeRequest('/events', {
+    const endpoint = this.addLocaleToEventUrl('/events')
+    return this.makeRequest(endpoint, {
       method: 'POST',
       body: JSON.stringify(eventData),
     })
   }
 
   async updateEvent(eventId, eventData) {
-    return this.makeRequest(`/events/${eventId}`, {
+    const endpoint = this.addLocaleToEventUrl(`/events/${eventId}`)
+    return this.makeRequest(endpoint, {
       method: 'PUT',
       body: JSON.stringify(eventData),
     })
   }
 
   async deleteEvent(eventId) {
-    return this.makeRequest(`/events/${eventId}`, {
+    const endpoint = this.addLocaleToEventUrl(`/events/${eventId}`)
+    return this.makeRequest(endpoint, {
       method: 'DELETE',
     })
   }
 
   async getEventById(id) {
-    return this.makeRequest(`/events/${id}`)
+    const endpoint = this.addLocaleToEventUrl(`/events/${id}`)
+    return this.makeRequest(endpoint)
   }
 
   async getEventsInBBox(minLat, minLng, maxLat, maxLng) {
@@ -113,20 +127,28 @@ class ApiService {
       max_lat: maxLat,
       max_lng: maxLng,
     })
-    return this.makeRequest(`/events/bbox?${params}`)
+    let endpoint = `/events/bbox?${params}`
+    endpoint = this.addLocaleToEventUrl(endpoint)
+    return this.makeRequest(endpoint)
   }
 
   // Template API
   async getTemplateGroups() {
-    return this.makeRequest('/date-template-groups')
+    let endpoint = '/date-template-groups'
+    endpoint = this.addLocaleToEventUrl(endpoint)
+    return this.makeRequest(endpoint)
   }
 
   async getTemplatesByGroup(groupId) {
-    return this.makeRequest(`/date-templates/${groupId}`)
+    let endpoint = `/date-templates/${groupId}`
+    endpoint = this.addLocaleToEventUrl(endpoint)
+    return this.makeRequest(endpoint)
   }
 
   async getAllTemplates() {
-    return this.makeRequest('/date-templates')
+    let endpoint = '/date-templates'
+    endpoint = this.addLocaleToEventUrl(endpoint)
+    return this.makeRequest(endpoint)
   }
 
   // Tags API

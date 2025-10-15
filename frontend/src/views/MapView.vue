@@ -22,7 +22,7 @@
       <aside class="events-sidebar" :class="{ 'collapsed': sidebarCollapsed }">
         <!-- Sidebar Header -->
         <div class="sidebar-header">
-          <h3 class="section-title" v-show="!sidebarCollapsed">Historical Events</h3>
+          <h3 class="section-title" v-show="!sidebarCollapsed">{{ t('historicalEvents') }}</h3>
           <button class="sidebar-toggle" @click="toggleSidebar">
             {{ sidebarCollapsed ? '›' : '‹' }}
           </button>
@@ -47,6 +47,7 @@
           @event-updated="handleEventUpdated"
           @event-deleted="handleEventDeleted"
           @map-bounds-changed="handleMapBoundsChanged"
+          @locale-changed="handleLocaleChanged"
           ref="worldMap"
         />
       </main>
@@ -63,6 +64,7 @@ import { useEvents } from '@/composables/useEvents.js'
 import { useTemplates } from '@/composables/useTemplates.js'
 import { useFilters } from '@/composables/useFilters.js'
 import { useTags } from '@/composables/useTags.js'
+import { useLocale } from '@/composables/useLocale.js'
 
 export default {
   name: 'MapView',
@@ -144,6 +146,9 @@ export default {
       isLoadingTags,
       loadTags
     } = useTags()
+
+    // Use locale for UI translations
+    const { t } = useLocale()
 
     // Sidebar methods
     const toggleSidebar = () => {
@@ -286,6 +291,18 @@ export default {
       }
     })
 
+    // Handle locale changes
+    const handleLocaleChanged = async (locale) => {
+      console.log('Locale changed in MapView, refetching events for locale:', locale)
+      try {
+        await fetchEvents() // Refetch events with new locale
+        // Reapply current filters to the newly fetched events
+        applyFilters()
+      } catch (err) {
+        console.error('Error refetching events after locale change:', err)
+      }
+    }
+
     // Initialize data on mount
     onMounted(async () => {
       // Apply filters if events are already loaded
@@ -307,6 +324,7 @@ export default {
       handleEventCreated,
       handleEventUpdated,
       handleEventDeleted,
+      handleLocaleChanged,
 
       // Templates
       templateGroups,
@@ -340,7 +358,10 @@ export default {
       displayedEvents,
       handleMapFilterToggle,
       handleMapBoundsChanged,
-      worldMap
+      worldMap,
+
+      // Localization
+      t
     }
   }
 }

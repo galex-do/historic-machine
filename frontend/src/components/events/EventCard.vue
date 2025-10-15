@@ -25,7 +25,7 @@
     </div>
     <p class="event-description">{{ event.description }}</p>
     <div class="event-meta">
-      <span class="event-date">{{ event.display_date || formatDate(event.event_date) }}</span>
+      <span class="event-date">{{ formatEventDisplayDate(event.event_date, event.era) }}</span>
       <span class="event-coords">{{ event.latitude.toFixed(2) }}, {{ event.longitude.toFixed(2) }}</span>
     </div>
     
@@ -53,7 +53,7 @@
 
 <script>
 import { getEventEmoji } from '@/utils/event-utils.js'
-import { formatDate } from '@/utils/date-utils.js'
+import { useLocale } from '@/composables/useLocale.js'
 
 export default {
   name: 'EventCard',
@@ -64,6 +64,12 @@ export default {
     }
   },
   emits: ['focus-event'],
+  setup() {
+    const { formatEventDisplayDate } = useLocale()
+    return {
+      formatEventDisplayDate
+    }
+  },
   computed: {
     visibleTags() {
       if (!this.event.tags || this.event.tags.length === 0) return []
@@ -82,8 +88,7 @@ export default {
     }
   },
   methods: {
-    getEventEmoji,
-    formatDate
+    getEventEmoji
   }
 }
 </script>

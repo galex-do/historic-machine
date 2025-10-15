@@ -4,8 +4,52 @@
 
 A comprehensive web application for mapping historical events on an interactive world map with timeline functionality. Users can view, filter, and add historical events with geographical and temporal data.
 
-## Recent Changes (September 3, 2025)
+## Recent Changes (October 10, 2025)
 
+- **Complete Date Template Localization**: Full internationalization for historical period templates
+  - Database migration adds name_en/name_ru and description_en/description_ru fields to both template groups and templates
+  - Backend PopulateLegacyFields pattern returns locale-specific names based on ?locale parameter
+  - Frontend passes locale parameter to all template API endpoints (/date-template-groups, /date-templates)
+  - Professional Russian translations for 11 template groups and 57+ date templates
+  - Covers ancient civilizations (Заря цивилизации, Раннединастический период) through modern era
+  - **Reactive Locale Switching**: Template groups and events automatically re-fetch when user changes language
+    - Watchers in useTemplates and useEvents composables detect locale changes
+    - No page reload required - instant translation updates
+    - Template selector updates to show localized period names immediately
+- **Complete UI Localization**: Full internationalization support for all UI elements with EN/RU locales
+  - Header navigation menu (Map, Admin, Events, Tags, Datasets, Users)
+  - Authentication system (Login/Logout buttons, Welcome messages, Access level badges)
+  - Login modal (Title, form labels, placeholders, button states)
+  - Filter controls (Apply button, date labels, step controls)
+  - **Admin Events Page**: Fully localized header, column names, and date displays
+    - Table columns (Name/Название, Description/Описание, Date/Дата, Location/Местоположение, Type/Тип, Tags/Теги, Actions/Действия)
+    - Localized date formatting with month names (Jan/янв, May/мая) and era labels (BC→до н.э., AD→н.э.)
+    - Examples: "1 Jan 3500 BC" → "1 янв 3500 до н.э.", "29 May 1453 AD" → "29 мая 1453 н.э."
+  - **Admin Tags Page**: Fully localized header, button, and column names
+    - Header: "Tags Management" → "Управление тегами"
+    - Button: "Create New Tag" → "Создать новый тег"
+    - Table columns (Name/Название, Description/Описание, Color/Цвет, Created/Создан, Usage Count/Использование, Actions/Действия)
+  - **Admin Users Page**: Fully localized header, button, and column names
+    - Header: "Users Management" → "Управление пользователями"
+    - Button: "Create New User" → "Создать нового пользователя"
+    - Table columns (Username/Имя пользователя, Email/Электронная почта, Access Level/Уровень доступа, Status/Статус, Created/Создан, Last Active/Последняя активность, Actions/Действия)
+  - **Admin Datasets Page**: Fully localized headers, buttons, table columns, and modals
+    - Header: "Event Datasets" → "Датасеты событий"
+    - Buttons: "Choose Dataset File" → "Выбрать файл датасета", "Import Dataset" → "Импортировать датасет", "Create Empty Dataset" → "Создать пустой датасет"
+    - Table columns (Filename/Имя файла, Description/Описание, Event Count/Количество событий, Uploaded By/Загрузил, Upload Date/Дата загрузки, Actions/Действия)
+    - Delete modal with full Russian translation of confirmation messages
+    - Create modal with localized form labels and placeholders
+  - **Event Display Localization**: Era labels (BC/AD) localized in event grid and modals
+    - English: "29.05.1453 AD" / "01.01.3500 BC"
+    - Russian: "29.05.1453 н.э." / "01.01.3500 до н.э."
+    - Timezone-safe date formatting across all components
+  - Reactive locale switching with instant UI updates
+  - Locale selector positioned at header far right with flag indicators
+- **Localized Dataset System**: Complete ancient civilizations dataset with 125 events
+  - All events include professional Russian translations (name_ru, description_ru)
+  - Chronologically ordered from 3500 BC to 1000 BC
+  - Dual-language support for event data
+  - Locale-aware import/export workflow
 - **Session Storage Implementation**: All filter conditions (dates, lens types, templates, sidebar state) persist across page reloads
 - **Performance Optimization**: Events are filtered immediately on load instead of showing all events first 
 - **State Management Fix**: Event editing preserves current filter state, zoom level, and map position
@@ -96,3 +140,5 @@ A comprehensive web application for mapping historical events on an interactive 
 5. ✅ Authentication with session persistence
 6. ✅ Co-located events grouping in popups
 7. ✅ Minimalist edit icons and user interface
+8. ✅ Full internationalization (EN/RU) for UI and event data
+9. ✅ Localized dataset system with dual-language support

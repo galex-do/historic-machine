@@ -32,9 +32,15 @@ func NewEventHandler(eventRepo *repositories.EventRepository, tagRepo *repositor
         }
 }
 
-// GetAllEvents handles GET /api/events with optional pagination
+// GetAllEvents handles GET /api/events with optional pagination and locale support
 func (h *EventHandler) GetAllEvents(w http.ResponseWriter, r *http.Request) {
         query := r.URL.Query()
+        
+        // Get locale parameter (default to "en")
+        locale := query.Get("locale")
+        if locale == "" {
+                locale = "en"
+        }
         
         // Check if pagination parameters are provided
         pageStr := query.Get("page")
@@ -74,6 +80,11 @@ func (h *EventHandler) GetAllEvents(w http.ResponseWriter, r *http.Request) {
                         return
                 }
                 
+                // Populate legacy fields based on locale
+                for i := range events {
+                        events[i].PopulateLegacyFields(locale)
+                }
+                
                 totalPages := (total + limit - 1) / limit // Ceiling division
                 
                 paginatedResponse := map[string]interface{}{
@@ -98,10 +109,15 @@ func (h *EventHandler) GetAllEvents(w http.ResponseWriter, r *http.Request) {
                 return
         }
         
+        // Populate legacy fields based on locale
+        for i := range events {
+                events[i].PopulateLegacyFields(locale)
+        }
+        
         response.Success(w, events)
 }
 
-// GetEventByID handles GET /api/events/{id}
+// GetEventByID handles GET /api/events/{id} with locale support
 func (h *EventHandler) GetEventByID(w http.ResponseWriter, r *http.Request) {
         vars := mux.Vars(r)
         idStr := vars["id"]
@@ -112,12 +128,21 @@ func (h *EventHandler) GetEventByID(w http.ResponseWriter, r *http.Request) {
                 return
         }
         
+        // Get locale parameter (default to "en")
+        locale := r.URL.Query().Get("locale")
+        if locale == "" {
+                locale = "en"
+        }
+        
         event, err := h.eventRepo.GetByID(id)
         if err != nil {
                 log.Printf("Error fetching event by ID %d: %v", id, err)
                 response.NotFound(w, "Event not found")
                 return
         }
+        
+        // Populate legacy fields based on locale
+        event.PopulateLegacyFields(locale)
         
         response.Success(w, event)
 }
@@ -157,6 +182,15 @@ func (h *EventHandler) CreateEvent(w http.ResponseWriter, r *http.Request) {
                 response.InternalError(w, "Failed to create event")
                 return
         }
+        
+        // Get locale parameter for response (default to "en")
+        locale := r.URL.Query().Get("locale")
+        if locale == "" {
+                locale = "en"
+        }
+        
+        // Populate legacy fields based on locale for consistent response
+        createdEvent.PopulateLegacyFields(locale)
         
         response.Created(w, createdEvent, "Event created successfully")
 }
@@ -213,6 +247,15 @@ func (h *EventHandler) UpdateEvent(w http.ResponseWriter, r *http.Request) {
                 return
         }
         
+        // Get locale parameter for response (default to "en")
+        locale := r.URL.Query().Get("locale")
+        if locale == "" {
+                locale = "en"
+        }
+        
+        // Populate legacy fields based on locale for consistent response
+        updatedEvent.PopulateLegacyFields(locale)
+        
         response.Success(w, updatedEvent)
 }
 
@@ -241,9 +284,15 @@ func (h *EventHandler) DeleteEvent(w http.ResponseWriter, r *http.Request) {
         response.Success(w, map[string]string{"message": "Event deleted successfully"})
 }
 
-// GetEventsInBBox handles GET /api/events/bbox
+// GetEventsInBBox handles GET /api/events/bbox with locale support
 func (h *EventHandler) GetEventsInBBox(w http.ResponseWriter, r *http.Request) {
         query := r.URL.Query()
+        
+        // Get locale parameter (default to "en")
+        locale := query.Get("locale")
+        if locale == "" {
+                locale = "en"
+        }
         
         minLat, err := parseCoordinate(query.Get("min_lat"))
         if err != nil {
@@ -276,12 +325,23 @@ func (h *EventHandler) GetEventsInBBox(w http.ResponseWriter, r *http.Request) {
                 return
         }
         
+        // Populate legacy fields based on locale
+        for i := range events {
+                events[i].PopulateLegacyFields(locale)
+        }
+        
         response.Success(w, events)
 }
 
-// GetEventsInRadius handles GET /api/events/radius
+// GetEventsInRadius handles GET /api/events/radius with locale support
 func (h *EventHandler) GetEventsInRadius(w http.ResponseWriter, r *http.Request) {
         query := r.URL.Query()
+        
+        // Get locale parameter (default to "en")
+        locale := query.Get("locale")
+        if locale == "" {
+                locale = "en"
+        }
         
         centerLat, err := parseCoordinate(query.Get("lat"))
         if err != nil {
@@ -314,6 +374,11 @@ func (h *EventHandler) GetEventsInRadius(w http.ResponseWriter, r *http.Request)
                 return
         }
         
+        // Populate legacy fields based on locale
+        for i := range events {
+                events[i].PopulateLegacyFields(locale)
+        }
+        
         response.Success(w, events)
 }
 
@@ -322,15 +387,21 @@ func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
         type ImportRequest struct {
                 Filename string `json:"filename,omitempty"`
                 Events []struct {
-                        Name        string   `json:"name"`
-                        Description string   `json:"description"`
-                        Date        string   `json:"date"`
-                        Era         string   `json:"era"`
-                        Latitude    float64  `json:"latitude"`
-                        Longitude   float64  `json:"longitude"`
-                        Type        string   `json:"type"`
-                        Tags        []string `json:"tags"`
-                        Source      string   `json:"source,omitempty"`
+                        // Legacy fields for backward compatibility
+                        Name        string   `json:"name,omitempty"`
+                        Description string   `json:"description,omitempty"`
+                        // New locale-specific fields
+                        NameEN         string   `json:"name_en,omitempty"`
+                        NameRU         string   `json:"name_ru,omitempty"`
+                        DescriptionEN  string   `json:"description_en,omitempty"`
+                        DescriptionRU  string   `json:"description_ru,omitempty"`
+                        Date           string   `json:"date"`
+                        Era            string   `json:"era"`
+                        Latitude       float64  `json:"latitude"`
+                        Longitude      float64  `json:"longitude"`
+                        Type           string   `json:"type"`
+                        Tags           []string `json:"tags"`
+                        Source         string   `json:"source,omitempty"`
                 } `json:"events"`
         }
 
@@ -388,8 +459,6 @@ func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
 
                 // Create event with dataset reference
                 event := &models.HistoricalEvent{
-                        Name:        eventData.Name,
-                        Description: eventData.Description,
                         Latitude:    eventData.Latitude,
                         Longitude:   eventData.Longitude,
                         EventDate:   eventDate,
@@ -397,6 +466,42 @@ func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
                         LensType:    eventData.Type,
                         DisplayDate: formatDisplayDate(eventDate, eventData.Era),
                         DatasetID:   &createdDataset.ID,
+                }
+
+                // Handle locale-specific fields with fallbacks
+                if eventData.NameEN != "" {
+                        event.NameEn = eventData.NameEN
+                } else if eventData.Name != "" {
+                        // Legacy fallback: use legacy name as English
+                        event.NameEn = eventData.Name
+                }
+
+                if eventData.NameRU != "" {
+                        event.NameRu = eventData.NameRU
+                }
+
+                if eventData.DescriptionEN != "" {
+                        event.DescriptionEn = &eventData.DescriptionEN
+                } else if eventData.Description != "" {
+                        // Legacy fallback: use legacy description as English
+                        event.DescriptionEn = &eventData.Description
+                }
+
+                if eventData.DescriptionRU != "" {
+                        event.DescriptionRu = &eventData.DescriptionRU
+                }
+
+                // Set legacy fields for backward compatibility
+                if eventData.Name != "" {
+                        event.Name = eventData.Name
+                } else if eventData.NameEN != "" {
+                        event.Name = eventData.NameEN
+                }
+
+                if eventData.Description != "" {
+                        event.Description = eventData.Description
+                } else if eventData.DescriptionEN != "" {
+                        event.Description = eventData.DescriptionEN
                 }
 
                 // Set source if provided (handle optional field)

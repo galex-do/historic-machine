@@ -2,23 +2,23 @@
   <div class="datasets-panel">
     <!-- Header Section -->
     <div class="datasets-header">
-      <h1 class="page-title">Event Datasets</h1>
+      <h1 class="page-title">{{ t('adminDatasetsTitle') }}</h1>
       <p class="page-description">
-        Manage uploaded event datasets. Deleting a dataset will remove all events imported from it.
+        {{ t('adminDatasetsSubtitle') }}
       </p>
     </div>
 
     <!-- Loading State -->
     <div v-if="localLoading" class="loading-state">
       <div class="loading-spinner"></div>
-      <p>Loading datasets...</p>
+      <p>{{ t('loadingDatasets') }}</p>
     </div>
 
     <!-- Error State -->
     <div v-if="localError" class="error-state">
       <div class="error-icon">⚠️</div>
       <p>{{ localError }}</p>
-      <button @click="fetchDatasets" class="retry-button">Try Again</button>
+      <button @click="fetchDatasets" class="retry-button">{{ t('tryAgain') }}</button>
     </div>
 
     <!-- Main Content -->
@@ -27,8 +27,8 @@
       <!-- Import Section -->
       <div class="import-section">
         <div class="import-header">
-          <h2>Import New Dataset</h2>
-          <p>Upload a JSON file containing historical events to create a new dataset.</p>
+          <h2>{{ t('importNewDataset') }}</h2>
+          <p>{{ t('importDatasetDescription') }}</p>
         </div>
         
         <div class="import-controls">
@@ -44,10 +44,10 @@
             class="import-button"
             :disabled="localLoading"
           >
-            📤 Choose Dataset File
+            📤 {{ t('chooseDatasetFile') }}
           </button>
           <span v-if="selectedFile" class="selected-file">
-            Selected: {{ selectedFile.name }}
+            {{ t('selectedFile') }} {{ selectedFile.name }}
           </span>
         </div>
         
@@ -57,25 +57,25 @@
             class="confirm-import-button"
             :disabled="localLoading || !selectedFile"
           >
-            {{ localLoading ? 'Importing...' : 'Import Dataset' }}
+            {{ localLoading ? t('importing') : t('importDataset') }}
           </button>
           <button 
             @click="clearSelection"
             class="clear-button"
             :disabled="localLoading"
           >
-            Clear
+            {{ t('clear') }}
           </button>
         </div>
         
         <div class="create-section">
-          <div class="divider">or</div>
+          <div class="divider">{{ t('or') }}</div>
           <button 
             @click="openCreateModal"
             class="create-dataset-button"
             :disabled="localLoading"
           >
-            📝 Create Empty Dataset
+            📝 {{ t('createEmptyDataset') }}
           </button>
         </div>
       </div>
@@ -85,12 +85,12 @@
         <table class="datasets-table">
           <thead>
             <tr>
-              <th>Filename</th>
-              <th>Description</th>
-              <th>Event Count</th>
-              <th>Uploaded By</th>
-              <th>Upload Date</th>
-              <th>Actions</th>
+              <th>{{ t('columnFilename') }}</th>
+              <th>{{ t('columnDescription') }}</th>
+              <th>{{ t('columnEventCount') }}</th>
+              <th>{{ t('columnUploadedBy') }}</th>
+              <th>{{ t('columnUploadDate') }}</th>
+              <th>{{ t('columnActions') }}</th>
             </tr>
           </thead>
           <tbody>
@@ -98,8 +98,8 @@
               <td colspan="6" class="no-datasets">
                 <div class="empty-state">
                   <div class="empty-icon">📊</div>
-                  <h3>No datasets found</h3>
-                  <p>Import events to create your first dataset.</p>
+                  <h3>{{ t('noDatasetsFound') }}</h3>
+                  <p>{{ t('importToCreateFirst') }}</p>
                 </div>
               </td>
             </tr>
@@ -110,13 +110,13 @@
                 </div>
               </td>
               <td class="dataset-description">
-                {{ dataset.description || 'No description' }}
+                {{ dataset.description || t('noDescription') }}
               </td>
               <td class="dataset-count">
                 <span class="count-badge">{{ dataset.event_count }}</span>
               </td>
               <td class="dataset-uploader">
-                {{ dataset.uploaded_by_username || `User ${dataset.uploaded_by}` }}
+                {{ dataset.uploaded_by_username || `${t('userPrefix')} ${dataset.uploaded_by}` }}
               </td>
               <td class="dataset-date">
                 {{ formatDate(dataset.created_at) }}
@@ -125,7 +125,7 @@
                 <button 
                   @click="exportDataset(dataset)"
                   class="export-button"
-                  :title="`Export dataset: ${dataset?.filename || 'Unknown'}`"
+                  :title="`${t('exportDatasetTitle')} ${dataset?.filename || t('unknown')}`"
                   :disabled="localLoading"
                 >
                   📤
@@ -133,7 +133,7 @@
                 <button 
                   @click="confirmDelete(dataset)"
                   class="delete-button"
-                  :title="`Delete dataset: ${dataset?.filename || 'Unknown'}`"
+                  :title="`${t('deleteDatasetTitle')} ${dataset?.filename || t('unknown')}`"
                 >
                   🗑️
                 </button>
@@ -148,36 +148,36 @@
     <div v-if="showDeleteModal" class="modal-overlay" @click="closeDeleteModal">
       <div class="modal-content" @click.stop>
         <div class="modal-header">
-          <h3>Delete Dataset</h3>
+          <h3>{{ t('deleteDatasetTitle') }}</h3>
           <button @click="closeDeleteModal" class="modal-close">×</button>
         </div>
         
         <div class="modal-body">
           <div class="warning-icon">⚠️</div>
           <p class="warning-text">
-            Are you sure you want to delete the dataset 
+            {{ t('deleteConfirmQuestion') }} 
             <strong>"{{ datasetToDelete?.filename }}"</strong>?
           </p>
           <p class="warning-details">
-            This will permanently delete:
+            {{ t('deleteWillRemove') }}
           </p>
           <ul class="warning-list">
-            <li><strong>{{ datasetToDelete?.event_count }} events</strong> imported from this dataset</li>
-            <li>The dataset record itself</li>
+            <li><strong>{{ datasetToDelete?.event_count }} {{ t('eventsImported') }}</strong></li>
+            <li>{{ t('datasetRecordItself') }}</li>
           </ul>
           <p class="warning-note">
-            <strong>Note:</strong> Tags created during import will be preserved.
+            {{ t('tagsPreservedNote') }}
           </p>
         </div>
         
         <div class="modal-footer">
-          <button @click="closeDeleteModal" class="cancel-button">Cancel</button>
+          <button @click="closeDeleteModal" class="cancel-button">{{ t('cancel') }}</button>
           <button 
             @click="deleteDataset" 
             class="confirm-delete-button"
             :disabled="localLoading"
           >
-            {{ localLoading ? 'Deleting...' : 'Delete Dataset' }}
+            {{ localLoading ? t('deleting') : t('deleteDataset') }}
           </button>
         </div>
       </div>
@@ -187,29 +187,29 @@
     <div v-if="showCreateModal" class="modal-overlay" @click="closeCreateModal">
       <div class="modal-content" @click.stop>
         <div class="modal-header">
-          <h3>Create Empty Dataset</h3>
+          <h3>{{ t('createEmptyDatasetTitle') }}</h3>
           <button @click="closeCreateModal" class="modal-close">×</button>
         </div>
         
         <div class="modal-body">
           <div class="form-group">
-            <label for="dataset-filename">Dataset Name*</label>
+            <label for="dataset-filename">{{ t('datasetName') }}</label>
             <input 
               id="dataset-filename"
               v-model="newDataset.filename"
               type="text" 
-              placeholder="e.g., My Historical Events" 
+              :placeholder="t('datasetNamePlaceholder')" 
               class="form-input"
               :class="{ 'error': createError && !newDataset.filename }"
             >
           </div>
           
           <div class="form-group">
-            <label for="dataset-description">Description (optional)</label>
+            <label for="dataset-description">{{ t('descriptionOptional') }}</label>
             <textarea 
               id="dataset-description"
               v-model="newDataset.description"
-              placeholder="Brief description of this dataset..."
+              :placeholder="t('descriptionPlaceholder')"
               class="form-textarea"
               rows="3"
             ></textarea>
@@ -221,13 +221,13 @@
         </div>
         
         <div class="modal-footer">
-          <button @click="closeCreateModal" class="cancel-button">Cancel</button>
+          <button @click="closeCreateModal" class="cancel-button">{{ t('cancel') }}</button>
           <button 
             @click="createEmptyDataset" 
             class="create-confirm-button"
             :disabled="localLoading || !newDataset.filename.trim()"
           >
-            {{ localLoading ? 'Creating...' : 'Create Dataset' }}
+            {{ localLoading ? t('creating') : t('createDataset') }}
           </button>
         </div>
       </div>
@@ -240,10 +240,12 @@ import { ref, onMounted } from 'vue'
 import apiService from '@/services/api.js'
 import authService from '@/services/authService.js'
 import { useEvents } from '@/composables/useEvents.js'
+import { useLocale } from '@/composables/useLocale.js'
 
 export default {
   name: 'DatasetsPanel',
   setup() {
+    const { t } = useLocale()
     const datasets = ref([])
     const localLoading = ref(false)
     const localError = ref(null)
@@ -272,7 +274,7 @@ export default {
         console.log('Loaded datasets:', datasets.value.length, datasets.value)
       } catch (err) {
         console.error('Error fetching datasets:', err)
-        localError.value = err.message || 'Failed to load datasets'
+        localError.value = err.message || t('failedToLoadDatasets')
       } finally {
         localLoading.value = false
       }
@@ -322,7 +324,7 @@ export default {
         
       } catch (err) {
         console.error('Error exporting dataset:', err)
-        localError.value = err.message || 'Failed to export dataset'
+        localError.value = err.message || t('failedToExport')
       } finally {
         localLoading.value = false
       }
@@ -350,7 +352,7 @@ export default {
         
       } catch (err) {
         console.error('Error deleting dataset:', err)
-        localError.value = err.message || 'Failed to delete dataset'
+        localError.value = err.message || t('failedToDelete')
       } finally {
         localLoading.value = false
       }
@@ -366,7 +368,7 @@ export default {
         selectedFile.value = file
         localError.value = null
       } else {
-        localError.value = 'Please select a valid JSON file'
+        localError.value = t('selectValidJson')
         selectedFile.value = null
       }
     }
@@ -390,7 +392,7 @@ export default {
 
         // Validate JSON structure
         if (!jsonData.events || !Array.isArray(jsonData.events)) {
-          throw new Error('Invalid file format: missing events array')
+          throw new Error(t('invalidFileFormat'))
         }
 
         console.log('Importing dataset:', selectedFile.value.name, 'with', jsonData.events.length, 'events')
@@ -415,9 +417,9 @@ export default {
       } catch (err) {
         console.error('Error importing dataset:', err)
         if (err.message.includes('JSON')) {
-          localError.value = 'Invalid JSON file format'
+          localError.value = t('invalidJsonFormat')
         } else {
-          localError.value = err.message || 'Failed to import dataset'
+          localError.value = err.message || t('failedToImport')
         }
       } finally {
         localLoading.value = false
@@ -452,7 +454,7 @@ export default {
 
     const createEmptyDataset = async () => {
       if (!newDataset.value.filename.trim()) {
-        createError.value = 'Dataset name is required'
+        createError.value = t('datasetNameRequired')
         return
       }
 
@@ -463,7 +465,7 @@ export default {
         // Get current user
         const currentUser = authService.getUser()
         if (!currentUser) {
-          throw new Error('You must be logged in to create datasets')
+          throw new Error(t('mustBeLoggedIn'))
         }
 
         const datasetData = {
@@ -484,7 +486,7 @@ export default {
 
       } catch (err) {
         console.error('Error creating dataset:', err)
-        createError.value = err.message || 'Failed to create dataset'
+        createError.value = err.message || t('failedToCreate')
       } finally {
         localLoading.value = false
       }
@@ -495,6 +497,7 @@ export default {
     })
 
     return {
+      t,
       datasets,
       localLoading,
       localError,

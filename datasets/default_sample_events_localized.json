@@ -1,0 +1,97 @@
+{
+  "filename": "default_sample_events_localized.json",
+  "description": "Default sample historical events with English and Russian localization",
+  "events": [
+    {
+      "name_en": "Foundation of Rome",
+      "name_ru": "Основание Рима",
+      "description_en": "Legendary founding of Rome by Romulus",
+      "description_ru": "Легендарное основание Рима Ромулом",
+      "date": "21.04.0753",
+      "era": "BC",
+      "latitude": 41.9028,
+      "longitude": 12.4964,
+      "type": "historic",
+      "tags": ["Ancient", "Political", "Roman", "Romans", "Rome", "Romulus", "Founding"],
+      "source": "https://en.wikipedia.org/wiki/Founding_of_Rome"
+    },
+    {
+      "name_en": "Battle of Marathon",
+      "name_ru": "Битва при Марафоне",
+      "description_en": "Greeks defeat Persian invasion",
+      "description_ru": "Греки побеждают персидское вторжение",
+      "date": "12.09.0490",
+      "era": "BC",
+      "latitude": 38.1462,
+      "longitude": 23.9608,
+      "type": "military",
+      "tags": ["Ancient", "Greek", "Military", "Greeks", "Persians"],
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Marathon"
+    },
+    {
+      "name_en": "Birth of Plato",
+      "name_ru": "Рождение Платона",
+      "description_en": "Great philosopher born in Athens",
+      "description_ru": "Великий философ родился в Афинах",
+      "date": "21.05.0428",
+      "era": "BC",
+      "latitude": 37.9755,
+      "longitude": 23.7348,
+      "type": "cultural",
+      "tags": ["Ancient", "Cultural", "Greek", "Philosophy", "Greeks", "Plato", "Athens"],
+      "source": "https://en.wikipedia.org/wiki/Plato"
+    },
+    {
+      "name_en": "Battle of Gaugamela",
+      "name_ru": "Битва при Гавгамелах",
+      "description_en": "Alexander defeats Darius III",
+      "description_ru": "Александр побеждает Дария III",
+      "date": "01.10.0331",
+      "era": "BC",
+      "latitude": 36.3402,
+      "longitude": 43.1503,
+      "type": "military",
+      "tags": ["Ancient", "Military", "Alexander the Great", "Persians", "Conquest"],
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Gaugamela"
+    },
+    {
+      "name_en": "Assassination of Julius Caesar",
+      "name_ru": "Убийство Юлия Цезаря",
+      "description_en": "Caesar killed in the Roman Senate",
+      "description_ru": "Цезарь убит в римском сенате",
+      "date": "15.03.0044",
+      "era": "BC",
+      "latitude": 41.8955,
+      "longitude": 12.4823,
+      "type": "political",
+      "tags": ["Ancient", "Political", "Roman", "Romans", "Julius Caesar", "Senate", "Rome"],
+      "source": "https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar"
+    },
+    {
+      "name_en": "Fall of Constantinople",
+      "name_ru": "Падение Константинополя",
+      "description_en": "End of the Byzantine Empire",
+      "description_ru": "Конец Византийской империи",
+      "date": "29.05.1453",
+      "era": "AD",
+      "latitude": 41.0082,
+      "longitude": 28.9784,
+      "type": "military",
+      "tags": ["Medieval", "Military", "Byzantine", "Byzantines", "Ottomans", "Constantinople", "Conquest"],
+      "source": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+    },
+    {
+      "name_en": "Discovery of America",
+      "name_ru": "Открытие Америки",
+      "description_en": "Columbus reaches the New World",
+      "description_ru": "Колумб достигает Нового Света",
+      "date": "12.10.1492",
+      "era": "AD",
+      "latitude": 25.0343,
+      "longitude": -77.3963,
+      "type": "historic",
+      "tags": ["Renaissance", "Spanish", "Columbus", "Exploration"],
+      "source": "https://en.wikipedia.org/wiki/Voyages_of_Christopher_Columbus"
+    }
+  ]
+}

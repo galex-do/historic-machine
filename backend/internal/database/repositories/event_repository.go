@@ -21,7 +21,7 @@ func NewEventRepository(db *sql.DB) *EventRepository {
 // GetAll retrieves all events from the database
 func (r *EventRepository) GetAll() ([]models.HistoricalEvent, error) {
         query := `
-                SELECT id, name, description, latitude, longitude, event_date, era, lens_type, source, display_date, dataset_id, created_by, updated_by, created_at, updated_at, tags
+                SELECT id, name, description, latitude, longitude, event_date, era, lens_type, source, display_date, dataset_id, created_by, updated_by, created_at, updated_at, name_en, name_ru, description_en, description_ru, tags
                 FROM events_with_display_dates 
                 ORDER BY astronomical_year ASC`
         
@@ -38,7 +38,7 @@ func (r *EventRepository) GetAll() ([]models.HistoricalEvent, error) {
                 var tagsJSON []byte
                 
                 err := rows.Scan(&event.ID, &event.Name, &event.Description, &event.Latitude, 
-                        &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.Source, &event.DisplayDate, &event.DatasetID, &event.CreatedBy, &event.UpdatedBy, &event.CreatedAt, &event.UpdatedAt, &tagsJSON)
+                        &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.Source, &event.DisplayDate, &event.DatasetID, &event.CreatedBy, &event.UpdatedBy, &event.CreatedAt, &event.UpdatedAt, &event.NameEn, &event.NameRu, &event.DescriptionEn, &event.DescriptionRu, &tagsJSON)
                 if err != nil {
                         log.Printf("Error scanning event: %v", err)
                         continue
@@ -69,7 +69,7 @@ func (r *EventRepository) GetAll() ([]models.HistoricalEvent, error) {
 // GetByDatasetID retrieves all events from a specific dataset
 func (r *EventRepository) GetByDatasetID(datasetID int) ([]models.HistoricalEvent, error) {
         query := `
-                SELECT id, name, description, latitude, longitude, event_date, era, lens_type, source, display_date, dataset_id, created_by, updated_by, created_at, updated_at, tags
+                SELECT id, name, description, latitude, longitude, event_date, era, lens_type, source, display_date, dataset_id, created_by, updated_by, created_at, updated_at, name_en, name_ru, description_en, description_ru, tags
                 FROM events_with_display_dates 
                 WHERE dataset_id = $1
                 ORDER BY astronomical_year ASC`
@@ -87,7 +87,7 @@ func (r *EventRepository) GetByDatasetID(datasetID int) ([]models.HistoricalEven
                 var tagsJSON []byte
                 
                 err := rows.Scan(&event.ID, &event.Name, &event.Description, &event.Latitude, 
-                        &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.Source, &event.DisplayDate, &event.DatasetID, &event.CreatedBy, &event.UpdatedBy, &event.CreatedAt, &event.UpdatedAt, &tagsJSON)
+                        &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.Source, &event.DisplayDate, &event.DatasetID, &event.CreatedBy, &event.UpdatedBy, &event.CreatedAt, &event.UpdatedAt, &event.NameEn, &event.NameRu, &event.DescriptionEn, &event.DescriptionRu, &tagsJSON)
                 if err != nil {
                         log.Printf("Error scanning event: %v", err)
                         continue
@@ -118,7 +118,7 @@ func (r *EventRepository) GetByDatasetID(datasetID int) ([]models.HistoricalEven
 // GetByID retrieves a single event by ID
 func (r *EventRepository) GetByID(id int) (*models.HistoricalEvent, error) {
         query := `
-                SELECT id, name, description, latitude, longitude, event_date, era, lens_type, source, display_date, dataset_id, created_by, updated_by, created_at, updated_at, tags
+                SELECT id, name, description, latitude, longitude, event_date, era, lens_type, source, display_date, dataset_id, created_by, updated_by, created_at, updated_at, name_en, name_ru, description_en, description_ru, tags
                 FROM events_with_display_dates 
                 WHERE id = $1`
         
@@ -126,7 +126,7 @@ func (r *EventRepository) GetByID(id int) (*models.HistoricalEvent, error) {
         var tagsJSON []byte
         err := r.db.QueryRow(query, id).Scan(
                 &event.ID, &event.Name, &event.Description, &event.Latitude,
-                &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.Source, &event.DisplayDate, &event.DatasetID, &event.CreatedBy, &event.UpdatedBy, &event.CreatedAt, &event.UpdatedAt, &tagsJSON)
+                &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.Source, &event.DisplayDate, &event.DatasetID, &event.CreatedBy, &event.UpdatedBy, &event.CreatedAt, &event.UpdatedAt, &event.NameEn, &event.NameRu, &event.DescriptionEn, &event.DescriptionRu, &tagsJSON)
         
         if err != nil {
                 if err == sql.ErrNoRows {
@@ -153,14 +153,14 @@ func (r *EventRepository) GetByID(id int) (*models.HistoricalEvent, error) {
 // Create creates a new event in the database
 func (r *EventRepository) Create(event *models.HistoricalEvent) (*models.HistoricalEvent, error) {
         query := `
-                INSERT INTO events (name, description, latitude, longitude, event_date, era, lens_type, source, dataset_id, created_by) 
-                VALUES ($1, $2, $3::double precision, $4::double precision, $5, $6, $7, $8, $9, $10) 
+                INSERT INTO events (name, description, latitude, longitude, event_date, era, lens_type, source, dataset_id, created_by, name_en, name_ru, description_en, description_ru) 
+                VALUES ($1, $2, $3::double precision, $4::double precision, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14) 
                 RETURNING id`
         
         var createdEvent = *event
         
         err := r.db.QueryRow(query, event.Name, event.Description, event.Latitude, 
-                event.Longitude, event.EventDate, event.Era, event.LensType, event.Source, event.DatasetID, event.CreatedBy).
+                event.Longitude, event.EventDate, event.Era, event.LensType, event.Source, event.DatasetID, event.CreatedBy, event.NameEn, event.NameRu, event.DescriptionEn, event.DescriptionRu).
                 Scan(&createdEvent.ID)
         
         if err != nil {
@@ -173,11 +173,14 @@ func (r *EventRepository) Create(event *models.HistoricalEvent) (*models.Histori
 // GetInBoundingBox retrieves events within a geographical bounding box
 func (r *EventRepository) GetInBoundingBox(minLat, minLng, maxLat, maxLng float64) ([]models.HistoricalEvent, error) {
         query := `
-                SELECT id, name, description, latitude, longitude, event_date, era, lens_type,
-                       ST_X(location::geometry) as lng, ST_Y(location::geometry) as lat
-                FROM events 
-                WHERE location && ST_MakeEnvelope($1, $2, $3, $4, 4326)
-                ORDER BY event_date DESC`
+                SELECT e.id, e.name, e.description, e.latitude, e.longitude, e.event_date, e.era, e.lens_type, e.source,
+                       e.display_date, e.dataset_id, e.created_by, e.updated_by, e.created_at, e.updated_at,
+                       e.name_en, e.name_ru, e.description_en, e.description_ru, e.tags,
+                       ST_X(ev.location::geometry) as lng, ST_Y(ev.location::geometry) as lat
+                FROM events_with_display_dates e
+                JOIN events ev ON e.id = ev.id
+                WHERE ev.location && ST_MakeEnvelope($1, $2, $3, $4, 4326)
+                ORDER BY e.astronomical_year DESC`
         
         rows, err := r.db.Query(query, minLng, minLat, maxLng, maxLat)
         if err != nil {
@@ -189,13 +192,28 @@ func (r *EventRepository) GetInBoundingBox(minLat, minLng, maxLat, maxLng float6
         for rows.Next() {
                 var event models.HistoricalEvent
                 var lng, lat float64
+                var tagsJSON []byte
                 
                 err := rows.Scan(&event.ID, &event.Name, &event.Description, 
-                        &event.Latitude, &event.Longitude, &event.EventDate, &event.Era, &event.LensType,
+                        &event.Latitude, &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.Source,
+                        &event.DisplayDate, &event.DatasetID, &event.CreatedBy, &event.UpdatedBy, &event.CreatedAt, &event.UpdatedAt,
+                        &event.NameEn, &event.NameRu, &event.DescriptionEn, &event.DescriptionRu, &tagsJSON,
                         &lng, &lat)
                 if err != nil {
                         log.Printf("Error scanning bounding box event: %v", err)
                         continue
+                }
+                
+                // Parse tags JSON
+                if len(tagsJSON) > 0 {
+                        var tags []models.Tag
+                        if err := json.Unmarshal(tagsJSON, &tags); err != nil {
+                                log.Printf("Error unmarshaling tags for event %d: %v", event.ID, err)
+                                tags = []models.Tag{}
+                        }
+                        event.Tags = tags
+                } else {
+                        event.Tags = []models.Tag{}
                 }
                 
                 // Update with PostGIS coordinates for accuracy
@@ -216,20 +234,20 @@ func (r *EventRepository) Update(event *models.HistoricalEvent) (*models.Histori
         query := `
                 UPDATE events 
                 SET name = $2, description = $3, latitude = $4::double precision, longitude = $5::double precision, 
-                    event_date = $6, era = $7, lens_type = $8, source = $9, dataset_id = $10, updated_by = $11, updated_at = $12
+                    event_date = $6, era = $7, lens_type = $8, source = $9, dataset_id = $10, updated_by = $11, updated_at = $12,
+                    name_en = $13, name_ru = $14, description_en = $15, description_ru = $16
                 WHERE id = $1
-                RETURNING id, name, description, latitude, longitude, event_date, era, lens_type, source, dataset_id, created_at, updated_at, created_by, updated_by`
+                RETURNING id, name, description, latitude, longitude, event_date, era, lens_type, source, dataset_id, created_at, updated_at, created_by, updated_by, name_en, name_ru, description_en, description_ru`
         
         var updatedEvent models.HistoricalEvent
         
-        
         err := r.db.QueryRow(query, event.ID, event.Name, event.Description, 
                 event.Latitude, event.Longitude, event.EventDate, event.Era, event.LensType, event.Source, event.DatasetID,
-                event.UpdatedBy, event.UpdatedAt).
+                event.UpdatedBy, event.UpdatedAt, event.NameEn, event.NameRu, event.DescriptionEn, event.DescriptionRu).
                 Scan(&updatedEvent.ID, &updatedEvent.Name, &updatedEvent.Description, 
                 &updatedEvent.Latitude, &updatedEvent.Longitude, &updatedEvent.EventDate, 
                 &updatedEvent.Era, &updatedEvent.LensType, &updatedEvent.Source, &updatedEvent.DatasetID, &updatedEvent.CreatedAt,
-                &updatedEvent.UpdatedAt, &updatedEvent.CreatedBy, &updatedEvent.UpdatedBy)
+                &updatedEvent.UpdatedAt, &updatedEvent.CreatedBy, &updatedEvent.UpdatedBy, &updatedEvent.NameEn, &updatedEvent.NameRu, &updatedEvent.DescriptionEn, &updatedEvent.DescriptionRu)
         
         if err != nil {
                 if err == sql.ErrNoRows {
@@ -310,7 +328,7 @@ func (r *EventRepository) GetPaginatedWithSort(page, limit int, sortField, sortD
         
         // Get paginated events with dynamic sorting
         query := fmt.Sprintf(`
-                SELECT id, name, description, latitude, longitude, event_date, era, lens_type, display_date, created_by, updated_by, created_at, updated_at, tags
+                SELECT id, name, description, latitude, longitude, event_date, era, lens_type, display_date, created_by, updated_by, created_at, updated_at, name_en, name_ru, description_en, description_ru, tags
                 FROM events_with_display_dates 
                 ORDER BY %s %s
                 LIMIT $1 OFFSET $2`, orderByClause, sortDirection)
@@ -328,7 +346,7 @@ func (r *EventRepository) GetPaginatedWithSort(page, limit int, sortField, sortD
                 var tagsJSON []byte
                 
                 err := rows.Scan(&event.ID, &event.Name, &event.Description, &event.Latitude, 
-                        &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.DisplayDate, &event.CreatedBy, &event.UpdatedBy, &event.CreatedAt, &event.UpdatedAt, &tagsJSON)
+                        &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.DisplayDate, &event.CreatedBy, &event.UpdatedBy, &event.CreatedAt, &event.UpdatedAt, &event.NameEn, &event.NameRu, &event.DescriptionEn, &event.DescriptionRu, &tagsJSON)
                 if err != nil {
                         log.Printf("Error scanning paginated event: %v", err)
                         continue

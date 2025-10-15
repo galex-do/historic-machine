@@ -12,7 +12,7 @@
           exact-active-class="nav-link-active"
         >
           <span class="nav-icon">🗺️</span>
-          Map
+          {{ t('map') }}
         </router-link>
         <!-- Admin Dropdown -->
         <div v-if="canAccessAdmin" class="admin-dropdown" @click.stop>
@@ -22,7 +22,7 @@
             @click="toggleAdminDropdown"
           >
             <span class="nav-icon">⚙️</span>
-            Admin
+            {{ t('admin') }}
             <span class="dropdown-arrow" :class="{ 'open': showAdminDropdown }">▼</span>
           </button>
           <div v-if="showAdminDropdown" class="dropdown-menu">
@@ -32,7 +32,7 @@
               @click="showAdminDropdown = false"
             >
               <span class="dropdown-icon">📅</span>
-              Events
+              {{ t('events') }}
             </router-link>
             <router-link 
               to="/admin/tags" 
@@ -40,7 +40,7 @@
               @click="showAdminDropdown = false"
             >
               <span class="dropdown-icon">🏷️</span>
-              Tags
+              {{ t('tags') }}
             </router-link>
             <router-link 
               to="/admin/datasets" 
@@ -48,7 +48,7 @@
               @click="showAdminDropdown = false"
             >
               <span class="dropdown-icon">📦</span>
-              Datasets
+              {{ t('datasets') }}
             </router-link>
             <router-link 
               v-if="isSuper"
@@ -57,33 +57,60 @@
               @click="showAdminDropdown = false"
             >
               <span class="dropdown-icon">👥</span>
-              Users
+              {{ t('users') }}
             </router-link>
           </div>
         </div>
       </nav>
       
-      <div class="auth-section">
-        <!-- Guest user (not logged in) -->
-        <div v-if="isGuest" class="auth-buttons">
-          <button @click="showLoginModal = true" class="auth-btn login-btn">
-            <span class="auth-icon">👤</span>
-            Login
-          </button>
+      <div class="right-section">
+        <div class="auth-section">
+          <!-- Guest user (not logged in) -->
+          <div v-if="isGuest" class="auth-buttons">
+            <button @click="showLoginModal = true" class="auth-btn login-btn">
+              <span class="auth-icon">👤</span>
+              {{ t('login') }}
+            </button>
+          </div>
+          
+          <!-- Authenticated user -->
+          <div v-else class="user-info">
+            <span class="user-welcome">
+              {{ t('welcome') }}, <strong>{{ user?.username }}</strong>
+              <span v-if="user?.access_level === 'super'" class="access-badge super">{{ t('superBadge') }}</span>
+              <span v-else-if="user?.access_level === 'admin'" class="access-badge admin">{{ t('adminBadge') }}</span>
+              <span v-else-if="user?.access_level === 'editor'" class="access-badge editor">{{ t('editorBadge') }}</span>
+            </span>
+            <button @click="handleLogout" class="auth-btn logout-btn" :disabled="loading">
+              <span class="auth-icon">🚪</span>
+              {{ t('logout') }}
+            </button>
+          </div>
         </div>
-        
-        <!-- Authenticated user -->
-        <div v-else class="user-info">
-          <span class="user-welcome">
-            Welcome, <strong>{{ user?.username }}</strong>
-            <span v-if="user?.access_level === 'super'" class="access-badge super">SUPER</span>
-            <span v-else-if="user?.access_level === 'admin'" class="access-badge admin">ADMIN</span>
-            <span v-else-if="user?.access_level === 'editor'" class="access-badge editor">EDITOR</span>
-          </span>
-          <button @click="handleLogout" class="auth-btn logout-btn" :disabled="loading">
-            <span class="auth-icon">🚪</span>
-            Logout
+
+        <!-- Locale Selector - positioned at far right -->
+        <div class="locale-selector" @click.stop>
+          <button 
+            class="locale-btn" 
+            @click="toggleLocaleDropdown"
+            :title="`Switch language - Current: ${currentLocale?.name || 'English'}`"
+          >
+            <span class="locale-flag">{{ currentLocale?.flag || '🇺🇸' }}</span>
+            <span class="locale-code">{{ currentLocale?.code?.toUpperCase() || 'EN' }}</span>
+            <span class="dropdown-arrow" :class="{ 'open': showLocaleDropdown }">▼</span>
           </button>
+          <div v-if="showLocaleDropdown" class="locale-dropdown">
+            <button 
+              v-for="localeOption in supportedLocales" 
+              :key="localeOption.code"
+              class="locale-option"
+              :class="{ 'active': localeOption.code === locale }"
+              @click="handleLocaleChange(localeOption.code)"
+            >
+              <span class="locale-flag">{{ localeOption.flag }}</span>
+              <span class="locale-name">{{ localeOption.name }}</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -93,7 +120,7 @@
       <div v-if="showLoginModal" class="modal-overlay" @click="closeModal">
         <div class="modal-content" @click.stop>
           <div class="modal-header">
-            <h2>Login to Historia ex machina</h2>
+            <h2>{{ t('loginToHistoria') }}</h2>
             <button @click="closeModal" class="close-btn">&times;</button>
           </div>
           
@@ -104,32 +131,32 @@
             
             <form @submit.prevent="handleLogin">
               <div class="form-group">
-                <label for="username">Username:</label>
+                <label for="username">{{ t('username') }}</label>
                 <input 
                   id="username"
                   v-model="loginForm.username" 
                   type="text" 
                   required 
                   class="form-input"
-                  placeholder="Enter username"
+                  :placeholder="t('enterUsername')"
                 />
               </div>
               
               <div class="form-group">
-                <label for="password">Password:</label>
+                <label for="password">{{ t('password') }}</label>
                 <input 
                   id="password"
                   v-model="loginForm.password" 
                   type="password" 
                   required 
                   class="form-input"
-                  placeholder="Enter password"
+                  :placeholder="t('enterPassword')"
                 />
               </div>
               
               <div class="form-actions">
                 <button type="submit" class="submit-btn" :disabled="loading">
-                  {{ loading ? 'Logging in...' : 'Login' }}
+                  {{ loading ? t('loggingIn') : t('login') }}
                 </button>
               </div>
             </form>
@@ -144,14 +171,17 @@
 <script>
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useAuth } from '@/composables/useAuth.js'
+import { useLocale } from '@/composables/useLocale.js'
 
 export default {
   name: 'AppHeader',
   setup() {
     const { user, isAuthenticated, isGuest, canAccessAdmin, isSuper, loading, error, login, logout, clearError } = useAuth()
+    const { locale, currentLocale, supportedLocales, setLocale, t } = useLocale()
     
     const showLoginModal = ref(false)
     const showAdminDropdown = ref(false)
+    const showLocaleDropdown = ref(false)
     const loginForm = ref({
       username: '',
       password: ''
@@ -185,12 +215,28 @@ export default {
 
     const toggleAdminDropdown = () => {
       showAdminDropdown.value = !showAdminDropdown.value
+      showLocaleDropdown.value = false
+    }
+
+    const toggleLocaleDropdown = () => {
+      showLocaleDropdown.value = !showLocaleDropdown.value
+      showAdminDropdown.value = false
+    }
+
+    const handleLocaleChange = (newLocale) => {
+      setLocale(newLocale)
+      showLocaleDropdown.value = false
+      // Emit event to trigger data refresh in components
+      window.dispatchEvent(new CustomEvent('localeChanged', { detail: newLocale }))
     }
 
     // Close dropdown when clicking outside
     const handleClickOutside = (event) => {
       if (!event.target.closest('.admin-dropdown')) {
         showAdminDropdown.value = false
+      }
+      if (!event.target.closest('.locale-selector')) {
+        showLocaleDropdown.value = false
       }
     }
 
@@ -213,11 +259,18 @@ export default {
       error,
       showLoginModal,
       showAdminDropdown,
+      showLocaleDropdown,
       loginForm,
+      locale,
+      currentLocale,
+      supportedLocales,
+      t,
       handleLogin,
       handleLogout,
       closeModal,
-      toggleAdminDropdown
+      toggleAdminDropdown,
+      toggleLocaleDropdown,
+      handleLocaleChange
     }
   }
 }
@@ -244,6 +297,12 @@ export default {
   margin: 0;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .auth-section {
@@ -374,6 +433,94 @@ export default {
 
 .nav-icon {
   font-size: 1rem;
+}
+
+/* Locale Selector Styles - positioned at far right */
+.locale-selector {
+  position: relative;
+  display: inline-block;
+  z-index: 99999;
+  margin-left: auto; /* Push to far right */
+}
+
+.locale-btn {
+  display: flex !important;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  height: 40px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-width: 80px;
+}
+
+.locale-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.locale-flag {
+  font-size: 1rem;
+}
+
+.locale-code {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.locale-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  margin-top: 0.5rem;
+  overflow: hidden;
+  z-index: 99999;
+  min-width: 140px;
+}
+
+.locale-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  text-decoration: none;
+  color: #4a5568;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.locale-option:hover {
+  background: #f7fafc;
+  color: #2d3748;
+}
+
+.locale-option.active {
+  background: #edf2f7;
+  color: #2d3748;
+  font-weight: 600;
+}
+
+.locale-name {
+  font-size: 0.9rem;
 }
 
 /* Admin Dropdown Styles */

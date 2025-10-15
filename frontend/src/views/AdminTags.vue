@@ -2,13 +2,13 @@
   <div class="admin-panel">
     <div class="admin-header">
       <div class="admin-title">
-        <h2>Tags Management</h2>
-        <p class="admin-subtitle">Manage event tags and categories</p>
+        <h2>{{ t('adminTagsTitle') }}</h2>
+        <p class="admin-subtitle">{{ t('adminTagsSubtitle') }}</p>
       </div>
       <div class="action-buttons" v-if="canAccessAdmin">
         <button @click="showCreateModal = true" class="create-btn">
           <span class="btn-icon">➕</span>
-          Create New Tag
+          {{ t('createNewTag') }}
         </button>
       </div>
     </div>
@@ -48,7 +48,7 @@
               @click="toggleSort('name')"
               :class="{ 'active': sortField === 'name' }"
             >
-              Name
+              {{ t('columnName') }}
               <span class="sort-indicator">
                 <span v-if="sortField === 'name'" class="sort-arrow">
                   {{ sortDirection === 'asc' ? '▲' : '▼' }}
@@ -56,14 +56,14 @@
                 <span v-else class="sort-placeholder">⇅</span>
               </span>
             </th>
-            <th>Description</th>
-            <th>Color</th>
+            <th>{{ t('columnDescription') }}</th>
+            <th>{{ t('columnColor') }}</th>
             <th 
               class="sortable-header" 
               @click="toggleSort('created_at')"
               :class="{ 'active': sortField === 'created_at' }"
             >
-              Created
+              {{ t('columnCreated') }}
               <span class="sort-indicator">
                 <span v-if="sortField === 'created_at'" class="sort-arrow">
                   {{ sortDirection === 'asc' ? '▲' : '▼' }}
@@ -71,8 +71,8 @@
                 <span v-else class="sort-placeholder">⇅</span>
               </span>
             </th>
-            <th>Usage Count</th>
-            <th>Actions</th>
+            <th>{{ t('columnUsageCount') }}</th>
+            <th>{{ t('columnActions') }}</th>
           </tr>
         </thead>
         <tbody>
@@ -196,6 +196,7 @@ import { ref, onMounted, computed } from 'vue'
 import { useAuth } from '@/composables/useAuth.js'
 import { useTags } from '@/composables/useTags.js'
 import { useEvents } from '@/composables/useEvents.js'
+import { useLocale } from '@/composables/useLocale.js'
 import apiService from '@/services/api.js'
 import TablePagination from '@/components/TablePagination.vue'
 
@@ -208,6 +209,7 @@ export default {
     const { canAccessAdmin } = useAuth()
     const { allTags, loadTags, createTag } = useTags()
     const { events } = useEvents()
+    const { t } = useLocale()
     
     const localLoading = ref(false)
     const localError = ref(null)
@@ -425,7 +427,8 @@ export default {
       deleteTag,
       saveTag,
       closeModal,
-      localLoading
+      localLoading,
+      t
     }
   }
 }
