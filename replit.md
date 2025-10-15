@@ -29,6 +29,10 @@ A comprehensive web application for mapping historical events on an interactive 
     - Header: "Tags Management" → "Управление тегами"
     - Button: "Create New Tag" → "Создать новый тег"
     - Table columns (Name/Название, Description/Описание, Color/Цвет, Created/Создан, Usage Count/Использование, Actions/Действия)
+  - **Admin Users Page**: Fully localized header, button, and column names
+    - Header: "Users Management" → "Управление пользователями"
+    - Button: "Create New User" → "Создать нового пользователя"
+    - Table columns (Username/Имя пользователя, Email/Электронная почта, Access Level/Уровень доступа, Status/Статус, Created/Создан, Last Active/Последняя активность, Actions/Действия)
   - Reactive locale switching with instant UI updates
   - Locale selector positioned at header far right with flag indicators
 - **Localized Dataset System**: Complete ancient civilizations dataset with 125 events
