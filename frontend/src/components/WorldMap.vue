@@ -269,7 +269,11 @@ export default {
   async mounted() {
     this.initialize_map()
     this.add_event_markers()
-    await this.fetchDatasets()
+    
+    // Only fetch datasets if user can edit events (editors/admins need datasets for event assignment)
+    if (this.canEditEvents) {
+      await this.fetchDatasets()
+    }
     
     // Add resize observer to handle layout changes
     this.resize_observer = new ResizeObserver(() => {
