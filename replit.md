@@ -35,6 +35,12 @@ A comprehensive web application for mapping historical events on an interactive 
     - Optimized gzip compression (level 3) balances CPU usage and compression ratio
     - Proxy buffering (4KB buffers) and HTTP/1.1 keepalive for backend connections
     - Multi-accept for simultaneous connection handling
+  - **Backend Docker Optimization**: Multi-stage build reduces image size by 70%
+    - Separate migration image (migrator target) with goose binary only
+    - Runtime image contains only compiled Go binary (~20MB vs 70MB)
+    - Dedicated migration service in docker-compose with 'tools' profile
+    - `make migrate` uses standalone migration container
+    - No migration tools in production runtime image
   - **Tag Filter Panel UI**: Kibana-style removable chip interface for tag filtering
     - Clickable tags in event cards add to active filter
     - Tag chips with × removal buttons in filter panel

@@ -39,7 +39,7 @@ logs:
 # Migration operations
 migrate:
         @echo "Running database migrations..."
-        docker compose run --rm migrate -dir migrations postgres "postgres://postgres:password@db:5432/historical_events?sslmode=disable" up
+        docker compose run --rm migrate -dir /migrations postgres "postgres://postgres:password@db:5432/historical_events?sslmode=disable" up
         @echo "Database migration completed!"
 
 # Development environment
