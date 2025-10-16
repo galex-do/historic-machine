@@ -30,10 +30,16 @@
         
         <!-- Events List in Sidebar -->
         <div class="events-sidebar-content" v-show="!sidebarCollapsed">
+          <TagFilterPanel
+            :selected-tags="selectedTags"
+            @remove-tag="handleRemoveTag"
+            @clear-all-tags="handleClearAllTags"
+          />
           <EventsGrid
             :events="displayedEvents"
             @focus-event="focusOnEvent"
             @map-filter-toggle="handleMapFilterToggle"
+            @tag-clicked="handleTagClick"
           />
         </div>
       </aside>
@@ -58,6 +64,7 @@
 <script>
 import { ref, computed, nextTick, onMounted, watch } from 'vue'
 import DateControlBar from '@/components/filters/DateControlBar.vue'
+import TagFilterPanel from '@/components/filters/TagFilterPanel.vue'
 import WorldMap from '@/components/WorldMap.vue'
 import EventsGrid from '@/components/events/EventsGrid.vue'
 import { useEvents } from '@/composables/useEvents.js'
@@ -70,6 +77,7 @@ export default {
   name: 'MapView',
   components: {
     DateControlBar,
+    TagFilterPanel,
     WorldMap,
     EventsGrid
   },
@@ -132,13 +140,17 @@ export default {
       dateToDisplay,
       selectedLensTypes,
       showLensDropdown,
+      selectedTags,
       resetToDefaultDateRange,
       updateDateFrom,
       updateDateTo,
       applyTemplateDates,
       toggleLensDropdown,
       handleLensTypesChange,
-      closeLensDropdown
+      closeLensDropdown,
+      addTag,
+      removeTag,
+      clearTags
     } = useFilters()
 
     const {
@@ -219,7 +231,8 @@ export default {
         selectedLensTypes.value,
         selectedTemplate.value,
         dateFromDisplay.value,
-        dateToDisplay.value
+        dateToDisplay.value,
+        selectedTags.value
       )
       
       // Signal WorldMap component about stepping state
@@ -274,6 +287,22 @@ export default {
         isEventInBounds(event, mapBounds.value)
       )
     })
+
+    // Tag filtering handlers
+    const handleTagClick = (tag) => {
+      addTag(tag)
+      applyFilters()
+    }
+
+    const handleRemoveTag = (tagId) => {
+      removeTag(tagId)
+      applyFilters()
+    }
+
+    const handleClearAllTags = () => {
+      clearTags()
+      applyFilters()
+    }
 
     // Click outside to close dropdown
     const handleClickOutside = (event) => {
@@ -340,6 +369,7 @@ export default {
       dateToDisplay,
       selectedLensTypes,
       showLensDropdown,
+      selectedTags,
       handleDateFromChange,
       handleDateToChange,
       toggleLensDropdown,
@@ -353,6 +383,9 @@ export default {
       toggleSidebar,
       applyFilters,
       focusOnEvent,
+      handleTagClick,
+      handleRemoveTag,
+      handleClearAllTags,
 
       // Map filter
       displayedEvents,

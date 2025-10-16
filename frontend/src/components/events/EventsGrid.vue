@@ -27,6 +27,7 @@
         :key="event.id"
         :event="event"
         @focus-event="$emit('focus-event', $event)"
+        @tag-clicked="$emit('tag-clicked', $event)"
       />
     </div>
     
@@ -69,7 +70,7 @@ export default {
       default: () => []
     }
   },
-  emits: ['focus-event', 'map-filter-toggle'],
+  emits: ['focus-event', 'map-filter-toggle', 'tag-clicked'],
   data() {
     return {
       currentPage: 1,
