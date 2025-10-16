@@ -7,7 +7,19 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5000,
-    allowedHosts: true
+    allowedHosts: true,
+    proxy: {
+      '/tiles': {
+        target: 'https://tile.openstreetmap.org',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/tiles/, ''),
+        configure: (proxy, options) => {
+          proxy.on('proxyReq', (proxyReq) => {
+            proxyReq.setHeader('User-Agent', 'Historia ex machina Development');
+          });
+        }
+      }
+    }
   },
   resolve: {
     alias: {
