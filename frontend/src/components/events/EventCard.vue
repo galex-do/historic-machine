@@ -34,9 +34,10 @@
       <div 
         v-for="tag in visibleTags" 
         :key="tag.id"
-        class="tag-chip"
+        class="tag-chip clickable-tag"
         :style="{ backgroundColor: tag.color }"
         :title="tag.description"
+        @click.stop="$emit('tag-clicked', tag)"
       >
         {{ tag.name }}
       </div>
@@ -63,7 +64,7 @@ export default {
       required: true
     }
   },
-  emits: ['focus-event'],
+  emits: ['focus-event', 'tag-clicked'],
   setup() {
     const { formatEventDisplayDate } = useLocale()
     return {
@@ -226,6 +227,22 @@ export default {
 .tag-chip:hover {
   transform: translateY(-1px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.clickable-tag {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.clickable-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.1);
+}
+
+.clickable-tag:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 .more-tags {
