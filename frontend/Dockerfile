@@ -21,8 +21,8 @@ FROM nginx:alpine
 # Copy built app to nginx
 COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Copy nginx configuration
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Copy our complete nginx configuration (replaces default)
+COPY nginx.conf /etc/nginx/nginx.conf
 
 # Create cache directory for map tiles
 RUN mkdir -p /var/cache/nginx/tiles && \

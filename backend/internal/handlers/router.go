@@ -64,12 +64,12 @@ func (router *Router) SetupRoutes() http.Handler {
         api.HandleFunc("/date-templates/{group_id}", router.templateHandler.GetTemplatesByGroup).Methods("GET", "OPTIONS")
         api.HandleFunc("/date-templates", router.templateHandler.GetAllTemplates).Methods("GET", "OPTIONS")
         
-        // Tag routes
+        // Tag routes (read public, write requires editor/admin)
         api.HandleFunc("/tags", router.tagHandler.GetAllTags).Methods("GET", "OPTIONS")
-        api.HandleFunc("/tags", router.tagHandler.CreateTag).Methods("POST", "OPTIONS")
+        api.HandleFunc("/tags", router.authHandler.RequireAccessLevel(models.AccessLevelEditor)(router.tagHandler.CreateTag)).Methods("POST", "OPTIONS")
         api.HandleFunc("/tags/{id}", router.tagHandler.GetTagByID).Methods("GET", "OPTIONS")
-        api.HandleFunc("/tags/{id}", router.tagHandler.UpdateTag).Methods("PUT", "OPTIONS")
-        api.HandleFunc("/tags/{id}", router.tagHandler.DeleteTag).Methods("DELETE", "OPTIONS")
+        api.HandleFunc("/tags/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelEditor)(router.tagHandler.UpdateTag)).Methods("PUT", "OPTIONS")
+        api.HandleFunc("/tags/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelEditor)(router.tagHandler.DeleteTag)).Methods("DELETE", "OPTIONS")
         
         // Dataset routes (admin only)
         api.HandleFunc("/datasets", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.datasetHandler.GetAllDatasets)).Methods("GET", "OPTIONS")
@@ -84,10 +84,10 @@ func (router *Router) SetupRoutes() http.Handler {
         api.HandleFunc("/users/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelSuper)(router.authHandler.UpdateUser)).Methods("PUT", "OPTIONS")
         api.HandleFunc("/users/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelSuper)(router.authHandler.DeleteUser)).Methods("DELETE", "OPTIONS")
         
-        // Event-Tag relationship routes
-        api.HandleFunc("/events/{event_id}/tags/{tag_id}", router.tagHandler.AddTagToEvent).Methods("POST", "OPTIONS")
-        api.HandleFunc("/events/{event_id}/tags/{tag_id}", router.tagHandler.RemoveTagFromEvent).Methods("DELETE", "OPTIONS")
-        api.HandleFunc("/events/{event_id}/tags", router.tagHandler.SetEventTags).Methods("PUT", "OPTIONS")
+        // Event-Tag relationship routes (requires editor/admin)
+        api.HandleFunc("/events/{event_id}/tags/{tag_id}", router.authHandler.RequireAccessLevel(models.AccessLevelEditor)(router.tagHandler.AddTagToEvent)).Methods("POST", "OPTIONS")
+        api.HandleFunc("/events/{event_id}/tags/{tag_id}", router.authHandler.RequireAccessLevel(models.AccessLevelEditor)(router.tagHandler.RemoveTagFromEvent)).Methods("DELETE", "OPTIONS")
+        api.HandleFunc("/events/{event_id}/tags", router.authHandler.RequireAccessLevel(models.AccessLevelEditor)(router.tagHandler.SetEventTags)).Methods("PUT", "OPTIONS")
         
         // Health check endpoint
         api.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
