@@ -269,10 +269,11 @@ func (h *AuthHandler) getCurrentUser(r *http.Request) *models.User {
 // hasAccessLevel checks if user's access level is sufficient
 func (h *AuthHandler) hasAccessLevel(userLevel, requiredLevel models.AccessLevel) bool {
         accessLevels := map[models.AccessLevel]int{
-                models.AccessLevelGuest: 0,
-                models.AccessLevelUser:  1,
-                models.AccessLevelAdmin: 2,
-                models.AccessLevelSuper: 3,
+                models.AccessLevelGuest:  0,
+                models.AccessLevelUser:   1,
+                models.AccessLevelEditor: 2,
+                models.AccessLevelAdmin:  3,
+                models.AccessLevelSuper:  4,
         }
 
         userLevelNum, ok1 := accessLevels[userLevel]
