@@ -24,6 +24,11 @@ COPY --from=builder /app/dist /usr/share/nginx/html
 # Copy nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
+# Create cache directory for map tiles
+RUN mkdir -p /var/cache/nginx/tiles && \
+    chown -R nginx:nginx /var/cache/nginx/tiles && \
+    chmod -R 755 /var/cache/nginx/tiles
+
 # Expose port
 EXPOSE 80
 
