@@ -37,10 +37,11 @@ A comprehensive web application for mapping historical events on an interactive 
     - Multi-accept for simultaneous connection handling
   - **Backend Docker Optimization**: Multi-stage build reduces image size by 70%
     - Separate migration image (migrator target) with goose binary only
+    - Migrator image: minimal alpine + goose binary (~10MB vs 800MB Go toolchain)
     - Runtime image contains only compiled Go binary (~20MB vs 70MB)
     - Dedicated migration service in docker-compose with 'tools' profile
     - `make migrate` uses standalone migration container
-    - No migration tools in production runtime image
+    - No migration tools or build dependencies in production images
   - **Tag Filter Panel UI**: Kibana-style removable chip interface for tag filtering
     - Clickable tags in event cards add to active filter
     - Tag chips with × removal buttons in filter panel
