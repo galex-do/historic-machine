@@ -41,8 +41,8 @@ export function useEvents() {
     }
   }
 
-  // Filter events based on date range and lens types
-  const filterEvents = (dateFrom, dateTo, selectedLensTypes, selectedTemplate, dateFromDisplay, dateToDisplay) => {
+  // Filter events based on date range, lens types, and tags
+  const filterEvents = (dateFrom, dateTo, selectedLensTypes, selectedTemplate, dateFromDisplay, dateToDisplay, selectedTags = []) => {
     // Ensure events is an array before filtering
     if (!Array.isArray(events.value)) {
       console.warn('Events is not an array:', events.value)
@@ -104,6 +104,17 @@ export function useEvents() {
       // Lens type filtering
       if (selectedLensTypes.length > 0 && !selectedLensTypes.includes(event.lens_type)) {
         return false
+      }
+      
+      // Tag filtering (OR logic - event must have at least one of the selected tags)
+      if (selectedTags.length > 0) {
+        const eventTags = event.tags || []
+        const hasMatchingTag = eventTags.some(eventTag => 
+          selectedTags.some(selectedTag => selectedTag.id === eventTag.id)
+        )
+        if (!hasMatchingTag) {
+          return false
+        }
       }
       
       return true
