@@ -2,8 +2,32 @@
   <div class="events-section">
     <!-- Events Header with Filters -->
     <div class="events-header">
-      <div class="events-count">
-        {{ events.length }} event{{ events.length !== 1 ? 's' : '' }}
+      <div class="events-info">
+        <div class="events-count">
+          {{ events.length }} event{{ events.length !== 1 ? 's' : '' }}
+        </div>
+        <!-- Pagination Controls -->
+        <div v-if="totalPages > 1" class="pagination-controls">
+          <button 
+            @click="goToPage(currentPage - 1)"
+            :disabled="currentPage === 1"
+            class="pagination-btn"
+          >
+            ‹
+          </button>
+          
+          <span class="page-info">
+            {{ currentPage }}/{{ totalPages }}
+          </span>
+          
+          <button 
+            @click="goToPage(currentPage + 1)"
+            :disabled="currentPage === totalPages"
+            class="pagination-btn"
+          >
+            ›
+          </button>
+        </div>
       </div>
       <div class="events-filters">
         <button 
@@ -29,29 +53,6 @@
         @focus-event="$emit('focus-event', $event)"
         @tag-clicked="$emit('tag-clicked', $event)"
       />
-    </div>
-    
-    <!-- Pagination Controls -->
-    <div v-if="totalPages > 1" class="pagination-controls">
-      <button 
-        @click="goToPage(currentPage - 1)"
-        :disabled="currentPage === 1"
-        class="pagination-btn"
-      >
-        ‹
-      </button>
-      
-      <span class="page-info">
-        Page {{ currentPage }} of {{ totalPages }}
-      </span>
-      
-      <button 
-        @click="goToPage(currentPage + 1)"
-        :disabled="currentPage === totalPages"
-        class="pagination-btn"
-      >
-        ›
-      </button>
     </div>
   </div>
 </template>
@@ -136,6 +137,12 @@ export default {
   border-bottom: 1px solid #e2e8f0;
 }
 
+.events-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .events-count {
   font-size: 0.875rem;
   color: #64748b;
@@ -197,39 +204,34 @@ export default {
 .pagination-controls {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-  padding: 1rem 0;
+  gap: 0.5rem;
 }
 
 .pagination-btn {
-  background: #4299e1;
-  color: white;
+  background: transparent;
+  color: #64748b;
   border: none;
-  border-radius: 6px;
-  padding: 0.5rem 0.75rem;
+  padding: 0;
   cursor: pointer;
-  font-size: 1rem;
-  transition: all 0.2s ease;
-  min-width: 2rem;
+  font-size: 1.25rem;
+  transition: color 0.2s ease;
+  min-width: auto;
+  line-height: 1;
 }
 
 .pagination-btn:hover:not(:disabled) {
-  background: #3182ce;
-  transform: translateY(-1px);
+  color: #3b82f6;
 }
 
 .pagination-btn:disabled {
-  background: #a0aec0;
+  color: #cbd5e1;
   cursor: not-allowed;
-  transform: none;
 }
 
 .page-info {
-  color: #4a5568;
-  font-weight: 500;
-  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 400;
+  font-size: 0.75rem;
   white-space: nowrap;
 }
 
@@ -237,14 +239,6 @@ export default {
 @media (max-width: 768px) {
   .events-section {
     padding: 0.75rem;
-  }
-  
-  .pagination-controls {
-    gap: 0.75rem;
-  }
-  
-  .page-info {
-    font-size: 0.8rem;
   }
 }
 </style>
