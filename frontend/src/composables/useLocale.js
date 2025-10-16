@@ -108,6 +108,12 @@ const UI_TRANSLATIONS = {
     or: 'or',
     createEmptyDataset: 'Create Empty Dataset',
     
+    // Tag Filter
+    filteredByTags: 'Filtered by tags',
+    clearAllTags: 'Clear all tag filters',
+    clearAll: 'Clear all',
+    remove: 'Remove',
+    
     // Datasets Table
     columnFilename: 'Filename',
     columnEventCount: 'Event Count',
@@ -260,6 +266,12 @@ const UI_TRANSLATIONS = {
     clear: 'Очистить',
     or: 'или',
     createEmptyDataset: 'Создать пустой датасет',
+    
+    // Tag Filter
+    filteredByTags: 'Фильтр по тегам',
+    clearAllTags: 'Очистить все фильтры тегов',
+    clearAll: 'Очистить все',
+    remove: 'Удалить',
     
     // Datasets Table
     columnFilename: 'Имя файла',
