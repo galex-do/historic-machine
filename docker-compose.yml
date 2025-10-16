@@ -41,3 +41,16 @@ services:
     ports:
       - "3000:80"
     restart: unless-stopped
+
+  migrate:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      target: migrator
+    container_name: historical-events-migrate
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://postgres:password@db:5432/historical_events?sslmode=disable
+    profiles:
+      - tools
