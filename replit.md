@@ -27,6 +27,14 @@ A comprehensive web application for mapping historical events on an interactive 
     - Content Security Policy (CSP) restricts resource loading to trusted sources
     - Buffer size limits (10KB body, 1KB headers) prevent memory exhaustion attacks
     - Timeout configurations (12s headers, 15s keepalive) prevent slowloris attacks
+  - **Nginx Performance Optimization**: High-performance configuration for production load
+    - Worker process auto-detection matches CPU cores
+    - Event-driven architecture with epoll (4000 connections per worker)
+    - Sendfile and TCP optimizations (tcp_nopush, tcp_nodelay) for efficient transmission
+    - Open file descriptor caching (200K files, 20s inactive timeout)
+    - Optimized gzip compression (level 3) balances CPU usage and compression ratio
+    - Proxy buffering (4KB buffers) and HTTP/1.1 keepalive for backend connections
+    - Multi-accept for simultaneous connection handling
   - **Tag Filter Panel UI**: Kibana-style removable chip interface for tag filtering
     - Clickable tags in event cards add to active filter
     - Tag chips with × removal buttons in filter panel
