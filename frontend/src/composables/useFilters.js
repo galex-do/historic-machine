@@ -8,7 +8,8 @@ const STORAGE_KEYS = {
   DATE_TO: 'historia_date_to', 
   DATE_FROM_DISPLAY: 'historia_date_from_display',
   DATE_TO_DISPLAY: 'historia_date_to_display',
-  SELECTED_LENS_TYPES: 'historia_selected_lens_types'
+  SELECTED_LENS_TYPES: 'historia_selected_lens_types',
+  SELECTED_TAGS: 'historia_selected_tags'
 }
 
 // Load filter state from session storage
@@ -42,6 +43,9 @@ const dateToDisplay = ref(loadFromStorage(STORAGE_KEYS.DATE_TO_DISPLAY, '2025 AD
 const selectedLensTypes = ref(loadFromStorage(STORAGE_KEYS.SELECTED_LENS_TYPES, ['historic', 'political', 'cultural', 'military', 'scientific', 'religious']))
 const showLensDropdown = ref(false)
 
+// Tag filtering state (load from session storage or use empty array as default)
+const selectedTags = ref(loadFromStorage(STORAGE_KEYS.SELECTED_TAGS, []))
+
 export function useFilters() {
 
   // Setup watchers to save filter state to session storage
@@ -63,6 +67,10 @@ export function useFilters() {
 
   watch(selectedLensTypes, (newValue) => {
     saveToStorage(STORAGE_KEYS.SELECTED_LENS_TYPES, newValue)
+  }, { deep: true })
+
+  watch(selectedTags, (newValue) => {
+    saveToStorage(STORAGE_KEYS.SELECTED_TAGS, newValue)
   }, { deep: true })
 
   // Available lens types
@@ -141,6 +149,21 @@ export function useFilters() {
     showLensDropdown.value = false
   }
 
+  // Tag filtering methods
+  const addTag = (tag) => {
+    if (!selectedTags.value.find(t => t.id === tag.id)) {
+      selectedTags.value = [...selectedTags.value, tag]
+    }
+  }
+
+  const removeTag = (tagId) => {
+    selectedTags.value = selectedTags.value.filter(t => t.id !== tagId)
+  }
+
+  const clearTags = () => {
+    selectedTags.value = []
+  }
+
   return {
     // State
     dateFrom: computed(() => dateFrom.value),
@@ -150,6 +173,7 @@ export function useFilters() {
     selectedLensTypes: computed(() => selectedLensTypes.value),
     showLensDropdown: computed(() => showLensDropdown.value),
     availableLensTypes,
+    selectedTags: computed(() => selectedTags.value),
 
     // Methods
     resetToDefaultDateRange,
@@ -158,6 +182,9 @@ export function useFilters() {
     applyTemplateDates,
     toggleLensDropdown,
     handleLensTypesChange,
-    closeLensDropdown
+    closeLensDropdown,
+    addTag,
+    removeTag,
+    clearTags
   }
 }
