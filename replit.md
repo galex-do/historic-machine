@@ -6,6 +6,28 @@ A comprehensive web application for mapping historical events on an interactive 
 
 ## Recent Changes (October 16, 2025)
 
+- **Critical Security Fixes**: Comprehensive security audit and vulnerability remediation
+  - **Tag Management Security** (CRITICAL FIX): Added editor-level authentication to tag CRUD endpoints
+    - `POST /api/tags` - Now requires editor/admin access
+    - `PUT /api/tags/{id}` - Now requires editor/admin access
+    - `DELETE /api/tags/{id}` - Now requires editor/admin access
+    - Prevents anonymous tag creation/modification/deletion
+    - Dataset import continues to work (uses repository layer directly)
+  - **Event-Tag Relationship Security** (HIGH FIX): Added editor-level authentication to tag association endpoints
+    - `POST /api/events/{event_id}/tags/{tag_id}` - Now requires editor/admin access
+    - `DELETE /api/events/{event_id}/tags/{tag_id}` - Now requires editor/admin access
+    - `PUT /api/events/{event_id}/tags` - Now requires editor/admin access
+    - Prevents unauthorized tag manipulation on events
+  - **Tag Filter Panel UI**: Kibana-style removable chip interface for tag filtering
+    - Clickable tags in event cards add to active filter
+    - Tag chips with × removal buttons in filter panel
+    - OR logic filtering (show events with ANY selected tags)
+    - Session storage persistence for selected tags
+    - Full EN/RU localization
+  - **Pagination UX Improvement**: Moved pagination to header area for constant visibility
+    - Minimalistic plain text style (‹ 1/2 ›)
+    - Always visible regardless of event list length
+    - Compact format saves space
 - **OSM Tile Caching**: Server-side caching implemented for map tiles
   - Nginx proxy configured to cache OpenStreetMap tiles for 30 days
   - 500MB cache size with automatic eviction of inactive tiles
