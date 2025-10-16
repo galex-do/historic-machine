@@ -147,6 +147,7 @@ export default {
   font-size: 0.875rem;
   color: #64748b;
   font-weight: 500;
+  line-height: 1.25rem;
 }
 
 .events-filters {
@@ -233,6 +234,9 @@ export default {
   font-weight: 400;
   font-size: 0.75rem;
   white-space: nowrap;
+  line-height: 1.25rem;
+  display: flex;
+  align-items: center;
 }
 
 /* Responsive adjustments */
