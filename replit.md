@@ -18,6 +18,15 @@ A comprehensive web application for mapping historical events on an interactive 
     - `DELETE /api/events/{event_id}/tags/{tag_id}` - Now requires editor/admin access
     - `PUT /api/events/{event_id}/tags` - Now requires editor/admin access
     - Prevents unauthorized tag manipulation on events
+  - **Access Level Hierarchy Fix**: Fixed missing Editor level in permission checking
+    - Updated hierarchy: Guest(0) → User(1) → Editor(2) → Admin(3) → Super(4)
+    - Super users can now properly access editor-level endpoints
+  - **Nginx Security Hardening**: Production-ready security configuration
+    - Version hiding (`server_tokens off`) prevents attack reconnaissance
+    - Security headers: XSS Protection, Clickjacking Prevention, MIME Sniffing Protection
+    - Content Security Policy (CSP) restricts resource loading to trusted sources
+    - Buffer size limits (10KB body, 1KB headers) prevent memory exhaustion attacks
+    - Timeout configurations (12s headers, 15s keepalive) prevent slowloris attacks
   - **Tag Filter Panel UI**: Kibana-style removable chip interface for tag filtering
     - Clickable tags in event cards add to active filter
     - Tag chips with × removal buttons in filter panel
