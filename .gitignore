@@ -1,2 +1,15 @@
 postgres_data
 attached_assets/
+
+# Go binaries
+backend/bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go build artifacts
+backend/main
+*.test
+*.out
