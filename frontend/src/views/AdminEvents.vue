@@ -1065,6 +1065,10 @@ export default {
       datasets,
       toggleDatasetDropdown,
       handleDatasetChange,
+      // Search filter state and methods
+      searchQuery,
+      handleSearchInput,
+      clearSearch,
       sortField,
       sortDirection,
       currentPage,
