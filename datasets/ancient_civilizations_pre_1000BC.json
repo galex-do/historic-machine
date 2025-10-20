@@ -55,7 +55,6 @@
       "source": "https://www.carnac.fr/",
       "tags": [
         "Megalithic",
-        "Carnac",
         "Standing Stones",
         "Building"
       ],
@@ -132,9 +131,9 @@
       "name_ru": "Начало цивилизации Караль-Супе",
       "source": "https://whc.unesco.org/en/list/1269",
       "tags": [
-        "Caral-Supe",
         "Urban",
-        "Civilization"
+        "Civilization",
+        "Culture"
       ],
       "type": "historic"
     },
@@ -171,8 +170,7 @@
       "source": "https://www.nps.gov/subjects/archaeology/watson-brake.htm",
       "tags": [
         "Mound Builders",
-        "Watson Brake",
-        "Earthworks"
+        "Earthwork"
       ],
       "type": "historic"
     },
@@ -376,7 +374,8 @@
       "tags": [
         "Harappa",
         "Urban",
-        "City"
+        "City",
+        "Indus Valley"
       ],
       "type": "historic"
     },
@@ -449,7 +448,6 @@
       "name_ru": "Комплекс проходных гробниц Ноут",
       "tags": [
         "Megalithic",
-        "Knowth",
         "Tomb",
         "Building"
       ],
@@ -504,8 +502,7 @@
       "name_ru": "Начало раннединастического периода",
       "tags": [
         "Mesopotamia",
-        "City-States",
-        "Political"
+        "City-State"
       ],
       "type": "political"
     },
@@ -540,10 +537,9 @@
       "name_ru": "Священный город Караль",
       "source": "https://www.zonacaral.gob.pe/",
       "tags": [
-        "Caral",
-        "Pyramids",
         "Architecture",
-        "City"
+        "City",
+        "Building"
       ],
       "type": "cultural"
     },
@@ -617,10 +613,10 @@
       "name_en": "Dholavira Established",
       "name_ru": "Основание Дхолавиры",
       "tags": [
-        "Dholavira",
         "Water Management",
         "Urban",
-        "City"
+        "City",
+        "Indus Valley"
       ],
       "type": "historic"
     },
@@ -656,11 +652,29 @@
       "name_ru": "Основание Мохенджо-Даро",
       "source": "https://whc.unesco.org/en/list/138/",
       "tags": [
-        "Mohenjo-daro",
         "Urban",
-        "City"
+        "City",
+        "Indus Valley"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.2600",
+      "description": "First historically verified Mesopotamian king, defeated Elam and built temple of Enlil in Nippur",
+      "description_en": "First historically verified Mesopotamian king, defeated Elam and built temple of Enlil in Nippur",
+      "description_ru": "Первый исторически подтвержденный месопотамский царь, победивший Элам и построивший храм Энлиля в Ниппуре",
+      "era": "BC",
+      "latitude": 32.776,
+      "longitude": 44.949,
+      "name": "Reign of En-me-barage-si of Kish",
+      "name_en": "Reign of En-me-barage-si of Kish",
+      "name_ru": "Правление Эн-ме-барагеси из Киша",
+      "tags": [
+        "Mesopotamia",
+        "King",
+        "Victory"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.2600",
@@ -700,24 +714,6 @@
       "type": "cultural"
     },
     {
-      "date": "01.01.2600",
-      "description": "First historically verified Mesopotamian king, defeated Elam and built temple of Enlil in Nippur",
-      "description_en": "First historically verified Mesopotamian king, defeated Elam and built temple of Enlil in Nippur",
-      "description_ru": "Первый исторически подтвержденный месопотамский царь, победивший Элам и построивший храм Энлиля в Ниппуре",
-      "era": "BC",
-      "latitude": 32.776,
-      "longitude": 44.949,
-      "name": "Reign of En-me-barage-si of Kish",
-      "name_en": "Reign of En-me-barage-si of Kish",
-      "name_ru": "Правление Эн-ме-барагеси из Киша",
-      "tags": [
-        "Mesopotamia",
-        "King",
-        "Victory"
-      ],
-      "type": "political"
-    },
-    {
       "date": "01.01.2560",
       "description": "Pharaoh Khufu completes the Great Pyramid of Giza, one of the Seven Wonders of the Ancient World",
       "description_en": "Pharaoh Khufu completes the Great Pyramid of Giza, one of the Seven Wonders of the Ancient World",
@@ -738,6 +734,25 @@
       "type": "cultural"
     },
     {
+      "date": "01.01.2540",
+      "description": "Pharaoh Khafre builds the second pyramid at Giza and commissions the Great Sphinx",
+      "description_en": "Pharaoh Khafre builds the second pyramid at Giza and commissions the Great Sphinx",
+      "description_ru": "Фараон Хафра строит вторую пирамиду в Гизе и заказывает Великого Сфинкса",
+      "era": "BC",
+      "latitude": 29.976,
+      "longitude": 31.131,
+      "name": "Pyramid of Khafre Built",
+      "name_en": "Pyramid of Khafre Built",
+      "name_ru": "Строительство пирамиды Хафра",
+      "tags": [
+        "Egypt",
+        "Architecture",
+        "Old Kingdom",
+        "Building"
+      ],
+      "type": "cultural"
+    },
+    {
       "date": "15.01.2540",
       "description": "The Great Sphinx is carved from limestone bedrock for Pharaoh Khafre",
       "description_en": "The Great Sphinx is carved from limestone bedrock for Pharaoh Khafre",
@@ -749,25 +764,6 @@
       "name_en": "Great Sphinx Carved",
       "name_ru": "Высечение Великого Сфинкса",
       "source": "https://www.smithsonianmag.com/history/uncovering-secrets-sphinx-180956619/",
-      "tags": [
-        "Egypt",
-        "Architecture",
-        "Old Kingdom",
-        "Building"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.2540",
-      "description": "Pharaoh Khafre builds the second pyramid at Giza and commissions the Great Sphinx",
-      "description_en": "Pharaoh Khafre builds the second pyramid at Giza and commissions the Great Sphinx",
-      "description_ru": "Фараон Хафра строит вторую пирамиду в Гизе и заказывает Великого Сфинкса",
-      "era": "BC",
-      "latitude": 29.976,
-      "longitude": 31.131,
-      "name": "Pyramid of Khafre Built",
-      "name_en": "Pyramid of Khafre Built",
-      "name_ru": "Строительство пирамиды Хафра",
       "tags": [
         "Egypt",
         "Architecture",
@@ -817,6 +813,24 @@
     },
     {
       "date": "01.01.2500",
+      "description": "Early metallurgy develops in West Africa with copper smelting near Agadez, Niger, demonstrating indigenous technological innovation",
+      "description_en": "Early metallurgy develops in West Africa with copper smelting near Agadez, Niger, demonstrating indigenous technological innovation",
+      "description_ru": "Ранняя металлургия развивается в Западной Африке с плавкой меди близ Агадеза в Нигере, демонстрируя местные технологические инновации",
+      "era": "BC",
+      "latitude": 16.974,
+      "longitude": 7.991,
+      "name": "West African Copper Smelting",
+      "name_en": "West African Copper Smelting",
+      "name_ru": "Западноафриканская плавка меди",
+      "tags": [
+        "Metallurgy",
+        "Copper",
+        "West Africa"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.2500",
       "description": "Indus Valley Civilization reaches its peak with cities housing 30,000-60,000 people and covering over 1.3 million square kilometers",
       "description_en": "Indus Valley Civilization reaches its peak with cities housing 30,000-60,000 people and covering over 1.3 million square kilometers",
       "description_ru": "Цивилизация долины Инда достигает пика с городами, населенными 30,000-60,000 людьми и покрывающими более 1.3 миллиона квадратных километров",
@@ -847,27 +861,10 @@
       "tags": [
         "Mesopotamia",
         "Dynasty",
-        "City-State"
+        "City-State",
+        "Sumerian"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.2500",
-      "description": "Early metallurgy develops in West Africa with copper smelting near Agadez, Niger, demonstrating indigenous technological innovation",
-      "description_en": "Early metallurgy develops in West Africa with copper smelting near Agadez, Niger, demonstrating indigenous technological innovation",
-      "description_ru": "Ранняя металлургия развивается в Западной Африке с плавкой меди близ Агадеза в Нигере, демонстрируя местные технологические инновации",
-      "era": "BC",
-      "latitude": 16.974,
-      "longitude": 7.991,
-      "name": "West African Copper Smelting",
-      "name_en": "West African Copper Smelting",
-      "name_ru": "Западноафриканская плавка меди",
-      "tags": [
-        "Metallurgy",
-        "Copper",
-        "West Africa"
-      ],
-      "type": "scientific"
     },
     {
       "date": "01.01.2450",
@@ -955,7 +952,8 @@
       "tags": [
         "Kerma",
         "Nubia",
-        "Kingdom"
+        "Kingdom",
+        "Foundation"
       ],
       "type": "political"
     },
@@ -972,7 +970,6 @@
       "name_ru": "Строительство Большой бани Мохенджо-Даро",
       "source": "https://www.worldhistory.org/Mohenjo-daro/",
       "tags": [
-        "Great Bath",
         "Engineering",
         "Architecture",
         "Building"
@@ -1026,8 +1023,8 @@
       "name_ru": "Саргон свергает Ур-Забабу",
       "tags": [
         "Akkadian",
-        "Political",
-        "Sargon"
+        "Sargon",
+        "Overthrow"
       ],
       "type": "political"
     },
@@ -1082,7 +1079,8 @@
       "tags": [
         "Akkadian",
         "Empire",
-        "Sargon"
+        "Sargon",
+        "Foundation"
       ],
       "type": "political"
     },
@@ -1212,7 +1210,7 @@
       "name_ru": "Нарам-Син становится царем",
       "tags": [
         "Akkadian",
-        "Political"
+        "King"
       ],
       "type": "political"
     },
@@ -1263,7 +1261,6 @@
       "name_ru": "Культура Поверти-Пойнт",
       "source": "https://www.nps.gov/popo/index.htm",
       "tags": [
-        "Poverty Point",
         "Mound Builders",
         "Earthwork"
       ],
@@ -1374,8 +1371,8 @@
       "name_ru": "Основание легендарной династии Ся",
       "tags": [
         "Xia Dynasty",
-        "First Dynasty",
-        "Yu the Great"
+        "Yu the Great",
+        "Dynasty"
       ],
       "type": "political"
     },
@@ -1556,9 +1553,8 @@
       "name_ru": "Строительство минойских дворцов",
       "tags": [
         "Minoan",
-        "Palace",
-        "Europe",
-        "Building"
+        "Building",
+        "Architecture"
       ],
       "type": "cultural"
     },
@@ -1776,27 +1772,27 @@
       "name_ru": "Основание Хеттского царства",
       "tags": [
         "Hittite",
-        "Political",
         "Culture",
-        "Kingdom"
+        "Kingdom",
+        "Foundation"
       ],
       "type": "political"
     },
     {
       "date": "01.01.1600",
-      "description": "Cheng Tang, founder of the Shang Dynasty, overthrows the last Xia king in the Battle of Mingtiao, establishing Shang rule",
-      "description_en": "Cheng Tang, founder of the Shang Dynasty, overthrows the last Xia king in the Battle of Mingtiao, establishing Shang rule",
-      "description_ru": "Чэн Тан, основатель династии Шан, свергает последнего царя Ся в битве при Минтяо, устанавливая правление Шан",
+      "description": "The Kassites from the Zagros Mountains conquer Babylon and rule for over 400 years",
+      "description_en": "The Kassites from the Zagros Mountains conquer Babylon and rule for over 400 years",
+      "description_ru": "Касситы из гор Загрос завоевывают Вавилон и правят более 400 лет",
       "era": "BC",
-      "latitude": 35.236,
-      "longitude": 113.754,
-      "name": "Cheng Tang Overthrows Xia",
-      "name_en": "Cheng Tang Overthrows Xia",
-      "name_ru": "Чэн Тан свергает Ся",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Kassites Conquer Babylon",
+      "name_en": "Kassites Conquer Babylon",
+      "name_ru": "Касситы завоевывают Вавилон",
       "tags": [
-        "Shang Dynasty",
-        "Cheng Tang",
-        "Overthrow"
+        "Babylonian",
+        "Conquest",
+        "Military"
       ],
       "type": "military"
     },
@@ -1834,26 +1830,26 @@
       "source": "https://www.britannica.com/topic/Shang-dynasty",
       "tags": [
         "Shang Dynasty",
-        "First Verified Dynasty",
-        "China"
+        "China",
+        "Dynasty"
       ],
       "type": "political"
     },
     {
       "date": "01.01.1600",
-      "description": "The Kassites from the Zagros Mountains conquer Babylon and rule for over 400 years",
-      "description_en": "The Kassites from the Zagros Mountains conquer Babylon and rule for over 400 years",
-      "description_ru": "Касситы из гор Загрос завоевывают Вавилон и правят более 400 лет",
+      "description": "Cheng Tang, founder of the Shang Dynasty, overthrows the last Xia king in the Battle of Mingtiao, establishing Shang rule",
+      "description_en": "Cheng Tang, founder of the Shang Dynasty, overthrows the last Xia king in the Battle of Mingtiao, establishing Shang rule",
+      "description_ru": "Чэн Тан, основатель династии Шан, свергает последнего царя Ся в битве при Минтяо, устанавливая правление Шан",
       "era": "BC",
-      "latitude": 32.543,
-      "longitude": 44.421,
-      "name": "Kassites Conquer Babylon",
-      "name_en": "Kassites Conquer Babylon",
-      "name_ru": "Касситы завоевывают Вавилон",
+      "latitude": 35.236,
+      "longitude": 113.754,
+      "name": "Cheng Tang Overthrows Xia",
+      "name_en": "Cheng Tang Overthrows Xia",
+      "name_ru": "Чэн Тан свергает Ся",
       "tags": [
-        "Babylonian",
-        "Conquest",
-        "Military"
+        "Shang Dynasty",
+        "Cheng Tang",
+        "Overthrow"
       ],
       "type": "military"
     },
@@ -1874,25 +1870,6 @@
         "Raiders"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.1550",
-      "description": "The Hurrian kingdom of Mitanni is established in northern Mesopotamia",
-      "description_en": "The Hurrian kingdom of Mitanni is established in northern Mesopotamia",
-      "description_ru": "Хурритское царство Митанни основывается в северной Месопотамии",
-      "era": "BC",
-      "latitude": 36.84,
-      "longitude": 40.781,
-      "name": "Mitanni Kingdom Founded",
-      "name_en": "Mitanni Kingdom Founded",
-      "name_ru": "Основание царства Митанни",
-      "tags": [
-        "Mitanni",
-        "Political",
-        "Kingdom",
-        "Culture"
-      ],
-      "type": "political"
     },
     {
       "date": "01.01.1550",
@@ -1926,8 +1903,27 @@
       "name_ru": "Начало Нового царства Египта",
       "tags": [
         "Egypt",
-        "Political",
-        "New Kingdom"
+        "New Kingdom",
+        "Rise"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1550",
+      "description": "The Hurrian kingdom of Mitanni is established in northern Mesopotamia",
+      "description_en": "The Hurrian kingdom of Mitanni is established in northern Mesopotamia",
+      "description_ru": "Хурритское царство Митанни основывается в северной Месопотамии",
+      "era": "BC",
+      "latitude": 36.84,
+      "longitude": 40.781,
+      "name": "Mitanni Kingdom Founded",
+      "name_en": "Mitanni Kingdom Founded",
+      "name_ru": "Основание царства Митанни",
+      "tags": [
+        "Mitanni",
+        "Kingdom",
+        "Culture",
+        "Foundation"
       ],
       "type": "political"
     },
@@ -1946,46 +1942,10 @@
         "Egypt",
         "Nubia",
         "New Kingdom",
-        "Conquest"
+        "Conquest",
+        "Expansion"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.1500",
-      "description": "Nok culture develops on the Jos Plateau in Nigeria, creating elaborate terracotta sculptures and advanced iron-working techniques",
-      "description_en": "Nok culture develops on the Jos Plateau in Nigeria, creating elaborate terracotta sculptures and advanced iron-working techniques",
-      "description_ru": "Культура Нок развивается на плато Джос в Нигерии, создавая искусные терракотовые скульптуры и передовые техники обработки железа",
-      "era": "BC",
-      "latitude": 9.928,
-      "longitude": 8.893,
-      "name": "Nok Culture Begins",
-      "name_en": "Nok Culture Begins",
-      "name_ru": "Начало культуры Нок",
-      "source": "https://www.britishmuseum.org/collection/term/x68551",
-      "tags": [
-        "Nok",
-        "Sculpture",
-        "Iron"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.1500",
-      "description": "Mesopotamians invent the seeder plow, revolutionizing agriculture and food production",
-      "description_en": "Mesopotamians invent the seeder plow, revolutionizing agriculture and food production",
-      "description_ru": "Месопотамцы изобретают сеялочный плуг, революционизируя сельское хозяйство и производство пищи",
-      "era": "BC",
-      "latitude": 33.312,
-      "longitude": 44.644,
-      "name": "Seeder Plow Invented",
-      "name_en": "Seeder Plow Invented",
-      "name_ru": "Изобретение сеялочного плуга",
-      "tags": [
-        "Agriculture",
-        "Innovation",
-        "Food"
-      ],
-      "type": "scientific"
     },
     {
       "date": "01.01.1500",
@@ -2007,6 +1967,24 @@
     },
     {
       "date": "01.01.1500",
+      "description": "Mesopotamians invent the seeder plow, revolutionizing agriculture and food production",
+      "description_en": "Mesopotamians invent the seeder plow, revolutionizing agriculture and food production",
+      "description_ru": "Месопотамцы изобретают сеялочный плуг, революционизируя сельское хозяйство и производство пищи",
+      "era": "BC",
+      "latitude": 33.312,
+      "longitude": 44.644,
+      "name": "Seeder Plow Invented",
+      "name_en": "Seeder Plow Invented",
+      "name_ru": "Изобретение сеялочного плуга",
+      "tags": [
+        "Agriculture",
+        "Innovation",
+        "Food"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.1500",
       "description": "Early agricultural developments in Mesoamerica with domestication of maize, beans, and squash forming the 'Three Sisters' crop system",
       "description_en": "Early agricultural developments in Mesoamerica with domestication of maize, beans, and squash forming the 'Three Sisters' crop system",
       "description_ru": "Ранние сельскохозяйственные разработки в Мезоамерике с одомашниванием кукурузы, бобов и тыквы, образующих систему 'Три сестры'",
@@ -2022,6 +2000,26 @@
         "Domestication"
       ],
       "type": "scientific"
+    },
+    {
+      "date": "01.01.1500",
+      "description": "Nok culture develops on the Jos Plateau in Nigeria, creating elaborate terracotta sculptures and advanced iron-working techniques",
+      "description_en": "Nok culture develops on the Jos Plateau in Nigeria, creating elaborate terracotta sculptures and advanced iron-working techniques",
+      "description_ru": "Культура Нок развивается на плато Джос в Нигерии, создавая искусные терракотовые скульптуры и передовые техники обработки железа",
+      "era": "BC",
+      "latitude": 9.928,
+      "longitude": 8.893,
+      "name": "Nok Culture Begins",
+      "name_en": "Nok Culture Begins",
+      "name_ru": "Начало культуры Нок",
+      "source": "https://www.britishmuseum.org/collection/term/x68551",
+      "tags": [
+        "Nok",
+        "Sculpture",
+        "Iron",
+        "Culture"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.1500",
@@ -2053,10 +2051,10 @@
       "name_en": "Bronze Casting Perfected in China",
       "name_ru": "Совершенствование литья бронзы в Китае",
       "tags": [
-        "Bronze Technology",
         "Metallurgy",
         "Ritual Vessels",
-        "Shang Dynasty"
+        "Shang Dynasty",
+        "Bronze"
       ],
       "type": "scientific"
     },
@@ -2075,7 +2073,6 @@
       "tags": [
         "Female",
         "Pharaoh",
-        "Success",
         "Egypt"
       ],
       "type": "political"
@@ -2207,28 +2204,10 @@
       "name_ru": "Расширение Хеттской империи",
       "tags": [
         "Hittite",
-        "Political",
-        "Empire"
+        "Empire",
+        "Expansion"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.1400",
-      "description": "Mycenaean Greeks adapt Linear A to create Linear B, the first script to write Greek",
-      "description_en": "Mycenaean Greeks adapt Linear A to create Linear B, the first script to write Greek",
-      "description_ru": "Микенские греки адаптируют Линейное А для создания Линейного Б, первого письма для записи греческого языка",
-      "era": "BC",
-      "latitude": 37.641,
-      "longitude": 22.726,
-      "name": "Linear B Script Developed",
-      "name_en": "Linear B Script Developed",
-      "name_ru": "Разработка письма Линейное Б",
-      "source": "https://www.britannica.com/topic/Linear-B",
-      "tags": [
-        "Greek",
-        "Writing"
-      ],
-      "type": "cultural"
     },
     {
       "date": "01.01.1400",
@@ -2248,6 +2227,24 @@
         "New Kingdom"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.1400",
+      "description": "Mycenaean Greeks adapt Linear A to create Linear B, the first script to write Greek",
+      "description_en": "Mycenaean Greeks adapt Linear A to create Linear B, the first script to write Greek",
+      "description_ru": "Микенские греки адаптируют Линейное А для создания Линейного Б, первого письма для записи греческого языка",
+      "era": "BC",
+      "latitude": 37.641,
+      "longitude": 22.726,
+      "name": "Linear B Script Developed",
+      "name_en": "Linear B Script Developed",
+      "name_ru": "Разработка письма Линейное Б",
+      "source": "https://www.britannica.com/topic/Linear-B",
+      "tags": [
+        "Greek",
+        "Writing"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.1391",
@@ -2298,9 +2295,9 @@
       "source": "https://www.worldhistory.org/akhenaten/",
       "tags": [
         "Egypt",
-        "Religion",
         "New Kingdom",
-        "Revolution"
+        "Revolution",
+        "Religious"
       ],
       "type": "cultural"
     },
@@ -2319,7 +2316,8 @@
       "tags": [
         "Egypt",
         "Capital",
-        "New Kingdom"
+        "New Kingdom",
+        "City"
       ],
       "type": "political"
     },
@@ -2354,7 +2352,6 @@
       "name_ru": "Тутанхамон становится фараоном",
       "source": "https://www.nationalgeographic.com/history/article/tutankhamun",
       "tags": [
-        "Boy King",
         "Egypt",
         "Religious",
         "Pharaoh"
@@ -2428,30 +2425,10 @@
       "name_ru": "Аньян становится столицей Шан",
       "tags": [
         "Capital",
-        "Anyang",
         "Yin",
         "City"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.1300",
-      "description": "The last major Indus Valley cities are abandoned, marking the end of one of the world's earliest urban civilizations",
-      "description_en": "The last major Indus Valley cities are abandoned, marking the end of one of the world's earliest urban civilizations",
-      "description_ru": "Последние крупные города долины Инда покидаются, отмечая конец одной из древнейших городских цивилизаций мира",
-      "era": "BC",
-      "latitude": 27,
-      "longitude": 69,
-      "name": "Final Abandonment of Indus Cities",
-      "name_en": "Final Abandonment of Indus Cities",
-      "name_ru": "Окончательное покидание городов Инда",
-      "source": "https://www.britannica.com/topic/Indus-civilization",
-      "tags": [
-        "Abandonment",
-        "End",
-        "Urban Civilization"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.1300",
@@ -2469,6 +2446,25 @@
         "City"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.1300",
+      "description": "The last major Indus Valley cities are abandoned, marking the end of one of the world's earliest urban civilizations",
+      "description_en": "The last major Indus Valley cities are abandoned, marking the end of one of the world's earliest urban civilizations",
+      "description_ru": "Последние крупные города долины Инда покидаются, отмечая конец одной из древнейших городских цивилизаций мира",
+      "era": "BC",
+      "latitude": 27,
+      "longitude": 69,
+      "name": "Final Abandonment of Indus Cities",
+      "name_en": "Final Abandonment of Indus Cities",
+      "name_ru": "Окончательное покидание городов Инда",
+      "source": "https://www.britannica.com/topic/Indus-civilization",
+      "tags": [
+        "Abandonment",
+        "End",
+        "Civilization"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.1295",
@@ -2659,21 +2655,21 @@
     },
     {
       "date": "01.01.1200",
-      "description": "Lapita expansion reaches Vanuatu and New Caledonia, extending the Pacific migration over 2000 km with sophisticated navigation and sailing technology",
-      "description_en": "Lapita expansion reaches Vanuatu and New Caledonia, extending the Pacific migration over 2000 km with sophisticated navigation and sailing technology",
-      "description_ru": "Экспансия Лапита достигает Вануату и Новой Каледонии, продвигая тихоокеанскую миграцию более чем на 2000 км с использованием сложных навигационных и парусных технологий",
+      "description": "The important trading city of Ugarit is destroyed, marking the Bronze Age collapse",
+      "description_en": "The important trading city of Ugarit is destroyed, marking the Bronze Age collapse",
+      "description_ru": "Важный торговый город Угарит разрушается, отмечая коллапс бронзового века",
       "era": "BC",
-      "latitude": -17.733,
-      "longitude": 168.317,
-      "name": "Lapita Reaches Vanuatu",
-      "name_en": "Lapita Reaches Vanuatu",
-      "name_ru": "Лапита достигает Вануату",
+      "latitude": 35.603,
+      "longitude": 35.784,
+      "name": "Destruction of Ugarit",
+      "name_en": "Destruction of Ugarit",
+      "name_ru": "Разрушение Угарита",
       "tags": [
-        "Lapita",
-        "Vanuatu",
-        "Navigation"
+        "Destruction",
+        "Trade",
+        "Collapse"
       ],
-      "type": "historic"
+      "type": "military"
     },
     {
       "date": "01.01.1200",
@@ -2696,21 +2692,21 @@
     },
     {
       "date": "01.01.1200",
-      "description": "The important trading city of Ugarit is destroyed, marking the Bronze Age collapse",
-      "description_en": "The important trading city of Ugarit is destroyed, marking the Bronze Age collapse",
-      "description_ru": "Важный торговый город Угарит разрушается, отмечая коллапс бронзового века",
+      "description": "Lapita expansion reaches Vanuatu and New Caledonia, extending the Pacific migration over 2000 km with sophisticated navigation and sailing technology",
+      "description_en": "Lapita expansion reaches Vanuatu and New Caledonia, extending the Pacific migration over 2000 km with sophisticated navigation and sailing technology",
+      "description_ru": "Экспансия Лапита достигает Вануату и Новой Каледонии, продвигая тихоокеанскую миграцию более чем на 2000 км с использованием сложных навигационных и парусных технологий",
       "era": "BC",
-      "latitude": 35.603,
-      "longitude": 35.784,
-      "name": "Destruction of Ugarit",
-      "name_en": "Destruction of Ugarit",
-      "name_ru": "Разрушение Угарита",
+      "latitude": -17.733,
+      "longitude": 168.317,
+      "name": "Lapita Reaches Vanuatu",
+      "name_en": "Lapita Reaches Vanuatu",
+      "name_ru": "Лапита достигает Вануату",
       "tags": [
-        "Destruction",
-        "Trade",
-        "Collapse"
+        "Lapita",
+        "Vanuatu",
+        "Navigation"
       ],
-      "type": "military"
+      "type": "historic"
     },
     {
       "date": "01.01.1180",
@@ -2765,7 +2761,8 @@
       "tags": [
         "Death",
         "Warrior",
-        "Imperial End"
+        "End",
+        "Pharaoh"
       ],
       "type": "historic"
     },
@@ -2781,7 +2778,6 @@
       "name_en": "Philistines Settle Palestine",
       "name_ru": "Филистимляне заселяют Палестину",
       "tags": [
-        "Settlement",
         "Palestine",
         "City"
       ],
@@ -2799,7 +2795,6 @@
       "name_en": "Assyrian Revival Begins",
       "name_ru": "Начало ассирийского возрождения",
       "tags": [
-        "Assyria",
         "Assyrian",
         "Rise"
       ],
@@ -2880,22 +2875,21 @@
     },
     {
       "date": "01.01.1000",
-      "description": "Lapita culture reaches Tonga and Samoa in Western Polynesia, completing a 4000 km maritime expansion and establishing ancestral Polynesian culture",
-      "description_en": "Lapita culture reaches Tonga and Samoa in Western Polynesia, completing a 4000 km maritime expansion and establishing ancestral Polynesian culture",
-      "description_ru": "Культура Лапита достигает Тонга и Самоа в Западной Полинезии, завершая 4000-километровую морскую экспансию и устанавливая предковую полинезийскую культуру",
+      "description": "King David of Israel captures Jerusalem and makes it his capital",
+      "description_en": "King David of Israel captures Jerusalem and makes it his capital",
+      "description_ru": "Царь Давид Израильский захватывает Иерусалим и делает его своей столицей",
       "era": "BC",
-      "latitude": -21.179,
-      "longitude": -175.198,
-      "name": "Western Polynesia Reached",
-      "name_en": "Western Polynesia Reached",
-      "name_ru": "Достижение Западной Полинезии",
+      "latitude": 31.769,
+      "longitude": 35.234,
+      "name": "David Captures Jerusalem",
+      "name_en": "David Captures Jerusalem",
+      "name_ru": "Давид захватывает Иерусалим",
       "tags": [
-        "Lapita",
-        "Tonga",
-        "Samoa",
-        "Polynesia"
+        "Capital",
+        "Jerusalem",
+        "Conquest"
       ],
-      "type": "historic"
+      "type": "political"
     },
     {
       "date": "01.01.1000",
@@ -2917,21 +2911,22 @@
     },
     {
       "date": "01.01.1000",
-      "description": "King David of Israel captures Jerusalem and makes it his capital",
-      "description_en": "King David of Israel captures Jerusalem and makes it his capital",
-      "description_ru": "Царь Давид Израильский захватывает Иерусалим и делает его своей столицей",
+      "description": "Lapita culture reaches Tonga and Samoa in Western Polynesia, completing a 4000 km maritime expansion and establishing ancestral Polynesian culture",
+      "description_en": "Lapita culture reaches Tonga and Samoa in Western Polynesia, completing a 4000 km maritime expansion and establishing ancestral Polynesian culture",
+      "description_ru": "Культура Лапита достигает Тонга и Самоа в Западной Полинезии, завершая 4000-километровую морскую экспансию и устанавливая предковую полинезийскую культуру",
       "era": "BC",
-      "latitude": 31.769,
-      "longitude": 35.234,
-      "name": "David Captures Jerusalem",
-      "name_en": "David Captures Jerusalem",
-      "name_ru": "Давид захватывает Иерусалим",
+      "latitude": -21.179,
+      "longitude": -175.198,
+      "name": "Western Polynesia Reached",
+      "name_en": "Western Polynesia Reached",
+      "name_ru": "Достижение Западной Полинезии",
       "tags": [
-        "Capture",
-        "Capital",
-        "Jerusalem"
+        "Lapita",
+        "Tonga",
+        "Samoa",
+        "Polynesia"
       ],
-      "type": "political"
+      "type": "historic"
     }
   ],
   "filename": "ancient_civilizations_pre_1000BC.json"
