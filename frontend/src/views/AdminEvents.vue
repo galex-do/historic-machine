@@ -448,6 +448,7 @@
 
 <script>
 import { ref, onMounted, onUnmounted, computed } from 'vue'
+import { useRoute } from 'vue-router'
 import { useAuth } from '@/composables/useAuth.js'
 import { useTags } from '@/composables/useTags.js'
 import { useEvents } from '@/composables/useEvents.js'
@@ -468,6 +469,7 @@ export default {
     TagFilterDropdown
   },
   setup() {
+    const route = useRoute()
     const { canAccessAdmin } = useAuth()
     const { allTags, loadTags, createTag, setEventTags, getTagsByIds } = useTags()
     const { events, fetchEvents, loading, error, handleEventDeleted } = useEvents()
@@ -1099,6 +1101,20 @@ export default {
         totalEvents.value = allEvents.value.length
         await loadTags()
         await fetchDatasets() // Load datasets for filtering
+        
+        // Check if we need to pre-select a tag from query params
+        if (route.query.tag) {
+          const tagId = parseInt(route.query.tag)
+          const tag = allTags.value.find(t => t.id === tagId)
+          if (tag) {
+            selectedTags.value = [tag]
+            // Highlight the tag dropdown to show feedback
+            isTagHighlighted.value = true
+            setTimeout(() => {
+              isTagHighlighted.value = false
+            }, 600)
+          }
+        }
         
         // Listen for locale changes
         window.addEventListener('localeChanged', handleLocaleChange)
