@@ -1142,6 +1142,7 @@ export default {
       handleSearchInput,
       clearSearch,
       // Tag filter state and methods
+      allTags,
       selectedTags,
       showTagDropdown,
       isTagHighlighted,
