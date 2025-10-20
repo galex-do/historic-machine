@@ -47,6 +47,11 @@
             @dataset-changed="handleDatasetChange"
           />
         </div>
+        <TagFilterPanel
+          :selected-tags="selectedTags"
+          @remove-tag="handleRemoveTag"
+          @clear-all-tags="handleClearAllTags"
+        />
         <TablePagination 
           :current-page="currentPage"
           :page-size="pageSize"
@@ -128,8 +133,10 @@
                 <span 
                   v-for="tag in event.tags" 
                   :key="tag.id" 
-                  class="tag-badge"
+                  class="tag-badge clickable-tag"
                   :style="{ backgroundColor: tag.color, color: getContrastColor(tag.color) }"
+                  @click="handleTagClick(tag)"
+                  :title="`Filter by ${tag.name}`"
                 >
                   {{ tag.name }}
                 </span>
@@ -446,13 +453,15 @@ import apiService from '@/services/api.js'
 import TablePagination from '@/components/TablePagination.vue'
 import EventTypeFilter from '@/components/filters/EventTypeFilter.vue'
 import DatasetFilter from '@/components/filters/DatasetFilter.vue'
+import TagFilterPanel from '@/components/filters/TagFilterPanel.vue'
 
 export default {
   name: 'AdminEvents',
   components: {
     TablePagination,
     EventTypeFilter,
-    DatasetFilter
+    DatasetFilter,
+    TagFilterPanel
   },
   setup() {
     const { canAccessAdmin } = useAuth()
@@ -471,6 +480,9 @@ export default {
     
     // Search filter state
     const searchQuery = ref('')
+    
+    // Tag filter state
+    const selectedTags = ref([])
     
     // Filter methods
     const toggleLensDropdown = () => {
@@ -499,6 +511,26 @@ export default {
     
     const clearSearch = () => {
       searchQuery.value = ''
+      currentPage.value = 1
+    }
+    
+    // Tag filter methods
+    const handleTagClick = (tag) => {
+      // Check if tag is already selected
+      const isSelected = selectedTags.value.some(t => t.id === tag.id)
+      if (!isSelected) {
+        selectedTags.value.push(tag)
+        currentPage.value = 1 // Reset to first page when filter changes
+      }
+    }
+    
+    const handleRemoveTag = (tagId) => {
+      selectedTags.value = selectedTags.value.filter(t => t.id !== tagId)
+      currentPage.value = 1
+    }
+    
+    const handleClearAllTags = () => {
+      selectedTags.value = []
       currentPage.value = 1
     }
     
@@ -572,6 +604,16 @@ export default {
             event.dataset_id === datasetId
           )
         }
+      }
+      
+      // Apply tag filter (OR logic - show events with ANY selected tag)
+      if (selectedTags.value && selectedTags.value.length > 0) {
+        filtered = filtered.filter(event => {
+          if (!event.tags || event.tags.length === 0) return false
+          return selectedTags.value.some(selectedTag => 
+            event.tags.some(eventTag => eventTag.id === selectedTag.id)
+          )
+        })
       }
       
       // Apply sorting
@@ -1069,6 +1111,11 @@ export default {
       searchQuery,
       handleSearchInput,
       clearSearch,
+      // Tag filter state and methods
+      selectedTags,
+      handleTagClick,
+      handleRemoveTag,
+      handleClearAllTags,
       sortField,
       sortDirection,
       currentPage,
@@ -1878,5 +1925,17 @@ select.form-input:focus {
 
 .clear-search:hover {
   color: #667eea;
+}
+
+/* Clickable tags in table */
+.clickable-tag {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.clickable-tag:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.1);
 }
 </style>
