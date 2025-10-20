@@ -3,6 +3,23 @@
   "description_ru": "Полный набор данных с событиями древних цивилизаций ранее 1000 до н.э.",
   "events": [
     {
+      "date": "01.01.9500",
+      "description": "Göbekli Tepe constructed in southeastern Turkey as the world's oldest known monumental architecture, featuring massive T-shaped pillars carved by hunter-gatherers",
+      "description_ru": "Гёбекли-Тепе построен на юго-востоке Турции как древнейшая известная монументальная архитектура в мире с массивными Т-образными столбами, вырезанными охотниками-собирателями",
+      "era": "BC",
+      "latitude": 37.223,
+      "longitude": 38.922,
+      "name": "Göbekli Tepe Construction",
+      "name_ru": "Строительство Гёбекли-Тепе",
+      "tags": [
+        "Megalithic",
+        "Temple",
+        "Hunter-Gatherers"
+      ],
+      "type": "cultural",
+      "source": "https://whc.unesco.org/en/list/1572/"
+    },
+    {
       "date": "01.01.7500",
       "description": "Nabta Playa megalithic stone circle constructed in Southern Egypt as an astronomical device, predating Stonehenge by 2000 years",
       "description_en": "Nabta Playa megalithic stone circle constructed in Southern Egypt as an astronomical device, predating Stonehenge by 2000 years",
@@ -20,6 +37,40 @@
         "Stone Circle"
       ],
       "type": "scientific"
+    },
+    {
+      "date": "01.01.4600",
+      "description": "Carnac stones erected in Brittany, France, as Europe's oldest megalithic complex with over 3,000 standing stones in elaborate alignments",
+      "description_ru": "Камни Карнака воздвигнуты в Бретани, Франция, как древнейший мегалитический комплекс Европы с более чем 3000 стоячих камней в сложных выравниваниях",
+      "era": "BC",
+      "latitude": 47.582,
+      "longitude": -3.075,
+      "name": "Carnac Megalithic Alignments",
+      "name_ru": "Мегалитические выравнивания Карнака",
+      "tags": [
+        "Megalithic",
+        "Carnac",
+        "Standing Stones"
+      ],
+      "type": "cultural",
+      "source": "https://www.carnac.fr/"
+    },
+    {
+      "date": "01.01.3600",
+      "description": "Ġgantija temples constructed in Malta as some of the world's oldest free-standing structures, predating Stonehenge and the Egyptian pyramids",
+      "description_ru": "Храмы Джгантия построены на Мальте как одни из древнейших отдельно стоящих сооружений в мире, предшествующие Стоунхенджу и египетским пирамидам",
+      "era": "BC",
+      "latitude": 36.047,
+      "longitude": 14.269,
+      "name": "Ġgantija Temples",
+      "name_ru": "Храмы Джгантия",
+      "tags": [
+        "Megalithic",
+        "Malta",
+        "Temple"
+      ],
+      "type": "cultural",
+      "source": "https://whc.unesco.org/en/list/132/"
     },
     {
       "date": "01.01.3500",
@@ -97,6 +148,22 @@
       "type": "historic"
     },
     {
+      "date": "01.01.3500",
+      "description": "Gavrinis passage tomb built in Brittany, France, featuring elaborately engraved megalithic art on passage stones",
+      "description_ru": "Проходная гробница Гавринис построена в Бретани, Франция, с искусно вырезанным мегалитическим искусством на камнях прохода",
+      "era": "BC",
+      "latitude": 47.573,
+      "longitude": -2.9,
+      "name": "Gavrinis Passage Tomb",
+      "name_ru": "Проходная гробница Гавринис",
+      "tags": [
+        "Megalithic",
+        "Tomb",
+        "Art"
+      ],
+      "type": "cultural"
+    },
+    {
       "date": "01.01.3300",
       "description": "Early Harappan period begins with the first urban settlements in the Indus Valley, marking the start of one of the world's earliest civilizations",
       "description_en": "Early Harappan period begins with the first urban settlements in the Indus Valley, marking the start of one of the world's earliest civilizations",
@@ -170,6 +237,24 @@
       "type": "scientific"
     },
     {
+      "date": "01.01.3200",
+      "description": "Newgrange passage tomb constructed in Ireland, featuring winter solstice alignment and predating Stonehenge by 500 years and Egyptian pyramids",
+      "description_ru": "Проходная гробница Ньюгрейндж построена в Ирландии с выравниванием по зимнему солнцестоянию, на 500 лет старше Стоунхенджа и египетских пирамид",
+      "era": "BC",
+      "latitude": 53.695,
+      "longitude": -6.475,
+      "name": "Newgrange Passage Tomb",
+      "name_ru": "Проходная гробница Ньюгрейндж",
+      "tags": [
+        "Megalithic",
+        "Newgrange",
+        "Tomb",
+        "Astronomy"
+      ],
+      "type": "cultural",
+      "source": "https://www.worldheritageireland.ie/bru-na-boinne/"
+    },
+    {
       "date": "01.01.3100",
       "description": "Ancient Egyptians develop hieroglyphic writing system for religious and administrative purposes",
       "description_en": "Ancient Egyptians develop hieroglyphic writing system for religious and administrative purposes",
@@ -205,6 +290,23 @@
         "Pharaoh"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.3100",
+      "description": "Stonehenge construction begins in England with circular earthwork and wooden posts, starting a 1,500-year building project spanning multiple cultures",
+      "description_ru": "Строительство Стоунхенджа начинается в Англии с кругового земляного вала и деревянных столбов, начиная 1500-летний строительный проект, охватывающий множество культур",
+      "era": "BC",
+      "latitude": 51.179,
+      "longitude": -1.826,
+      "name": "Stonehenge Phase I",
+      "name_ru": "Стоунхендж Фаза I",
+      "tags": [
+        "Megalithic",
+        "Stonehenge",
+        "Earthwork"
+      ],
+      "type": "cultural",
+      "source": "https://www.english-heritage.org.uk/visit/places/stonehenge/"
     },
     {
       "date": "15.01.3100",
@@ -329,6 +431,22 @@
         "Urban"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.3000",
+      "description": "Knowth passage tomb complex completed in Ireland as the largest passage tomb in the Brú na Bóinne complex with 18 smaller satellite tombs",
+      "description_ru": "Комплекс проходных гробниц Ноут завершен в Ирландии как крупнейшая проходная гробница в комплексе Бру-на-Бойн с 18 меньшими сателлитными гробницами",
+      "era": "BC",
+      "latitude": 53.7,
+      "longitude": -6.488,
+      "name": "Knowth Passage Tomb Complex",
+      "name_ru": "Комплекс проходных гробниц Ноут",
+      "tags": [
+        "Megalithic",
+        "Knowth",
+        "Tomb"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.2900",
@@ -589,6 +707,24 @@
       "type": "cultural"
     },
     {
+      "date": "01.01.2540",
+      "description": "Pharaoh Khafre builds the second pyramid at Giza and commissions the Great Sphinx",
+      "description_en": "Pharaoh Khafre builds the second pyramid at Giza and commissions the Great Sphinx",
+      "description_ru": "Фараон Хафра строит вторую пирамиду в Гизе и заказывает Великого Сфинкса",
+      "era": "BC",
+      "latitude": 29.976,
+      "longitude": 31.131,
+      "name": "Pyramid of Khafre Built",
+      "name_en": "Pyramid of Khafre Built",
+      "name_ru": "Строительство пирамиды Хафра",
+      "tags": [
+        "Egypt",
+        "Architecture",
+        "Old Kingdom"
+      ],
+      "type": "cultural"
+    },
+    {
       "date": "15.01.2540",
       "description": "The Great Sphinx is carved from limestone bedrock for Pharaoh Khafre",
       "description_en": "The Great Sphinx is carved from limestone bedrock for Pharaoh Khafre",
@@ -600,24 +736,6 @@
       "name_en": "Great Sphinx Carved",
       "name_ru": "Высечение Великого Сфинкса",
       "source": "https://www.smithsonianmag.com/history/uncovering-secrets-sphinx-180956619/",
-      "tags": [
-        "Egypt",
-        "Architecture",
-        "Old Kingdom"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.2540",
-      "description": "Pharaoh Khafre builds the second pyramid at Giza and commissions the Great Sphinx",
-      "description_en": "Pharaoh Khafre builds the second pyramid at Giza and commissions the Great Sphinx",
-      "description_ru": "Фараон Хафра строит вторую пирамиду в Гизе и заказывает Великого Сфинкса",
-      "era": "BC",
-      "latitude": 29.976,
-      "longitude": 31.131,
-      "name": "Pyramid of Khafre Built",
-      "name_en": "Pyramid of Khafre Built",
-      "name_ru": "Строительство пирамиды Хафра",
       "tags": [
         "Egypt",
         "Architecture",
@@ -696,6 +814,23 @@
         "West Africa"
       ],
       "type": "scientific"
+    },
+    {
+      "date": "01.01.2500",
+      "description": "Stonehenge Phase III: Massive sarsen stones erected, creating the iconic stone circle and trilithons with stones weighing up to 50 tons transported 25 miles",
+      "description_ru": "Стоунхендж Фаза III: Воздвигнуты массивные сарсеновые камни, создавая культовый каменный круг и трилитоны с камнями весом до 50 тонн, перевезенными на 40 км",
+      "era": "BC",
+      "latitude": 51.179,
+      "longitude": -1.826,
+      "name": "Stonehenge Sarsen Circle",
+      "name_ru": "Сарсеновый круг Стоунхенджа",
+      "tags": [
+        "Megalithic",
+        "Stonehenge",
+        "Engineering"
+      ],
+      "type": "cultural",
+      "source": "https://www.english-heritage.org.uk/visit/places/stonehenge/"
     },
     {
       "date": "01.01.2450",
@@ -789,6 +924,22 @@
       "type": "cultural"
     },
     {
+      "date": "01.01.2400",
+      "description": "Bluestones transported to Stonehenge from Preseli Hills in Wales, over 150 miles away, demonstrating remarkable organizational and engineering capabilities",
+      "description_ru": "Голубые камни транспортированы в Стоунхендж из холмов Преселли в Уэльсе, более чем на 240 км, демонстрируя выдающиеся организационные и инженерные способности",
+      "era": "BC",
+      "latitude": 51.179,
+      "longitude": -1.826,
+      "name": "Stonehenge Bluestones",
+      "name_ru": "Голубые камни Стоунхенджа",
+      "tags": [
+        "Megalithic",
+        "Stonehenge",
+        "Transport"
+      ],
+      "type": "cultural"
+    },
+    {
       "date": "01.01.2370",
       "description": "Birth of Sargon, future founder of the Akkadian Empire and first ruler of a multi-ethnic empire",
       "description_en": "Birth of Sargon, future founder of the Akkadian Empire and first ruler of a multi-ethnic empire",
@@ -860,24 +1011,6 @@
       "type": "military"
     },
     {
-      "date": "01.03.2334",
-      "description": "Sargon captures and destroys the walls of Ur, one of Sumer's greatest cities",
-      "description_en": "Sargon captures and destroys the walls of Ur, one of Sumer's greatest cities",
-      "description_ru": "Саргон захватывает и разрушает стены Ура, одного из величайших городов Шумера",
-      "era": "BC",
-      "latitude": 30.962,
-      "longitude": 46.104,
-      "name": "Sargon Conquers Ur",
-      "name_en": "Sargon Conquers Ur",
-      "name_ru": "Саргон завоевывает Ур",
-      "tags": [
-        "Conquest",
-        "Akkadian",
-        "Sargon"
-      ],
-      "type": "military"
-    },
-    {
       "date": "15.01.2334",
       "description": "Sargon establishes the Akkadian Empire, the world's first multi-ethnic empire",
       "description_en": "Sargon establishes the Akkadian Empire, the world's first multi-ethnic empire",
@@ -895,6 +1028,24 @@
         "Empire"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.03.2334",
+      "description": "Sargon captures and destroys the walls of Ur, one of Sumer's greatest cities",
+      "description_en": "Sargon captures and destroys the walls of Ur, one of Sumer's greatest cities",
+      "description_ru": "Саргон захватывает и разрушает стены Ура, одного из величайших городов Шумера",
+      "era": "BC",
+      "latitude": 30.962,
+      "longitude": 46.104,
+      "name": "Sargon Conquers Ur",
+      "name_en": "Sargon Conquers Ur",
+      "name_ru": "Саргон завоевывает Ур",
+      "tags": [
+        "Conquest",
+        "Akkadian",
+        "Sargon"
+      ],
+      "type": "military"
     },
     {
       "date": "01.06.2334",
@@ -1599,25 +1750,6 @@
       "type": "military"
     },
     {
-      "date": "15.01.1600",
-      "description": "The Shang Dynasty is established, becoming the first historically verified Chinese dynasty with archaeological evidence",
-      "description_en": "The Shang Dynasty is established, becoming the first historically verified Chinese dynasty with archaeological evidence",
-      "description_ru": "Династия Шан основывается, становясь первой исторически подтвержденной китайской династией с археологическими доказательствами",
-      "era": "BC",
-      "latitude": 35.236,
-      "longitude": 113.754,
-      "name": "Shang Dynasty Founded",
-      "name_en": "Shang Dynasty Founded",
-      "name_ru": "Основание династии Шан",
-      "source": "https://www.britannica.com/topic/Shang-dynasty",
-      "tags": [
-        "Shang Dynasty",
-        "First Verified Dynasty",
-        "China"
-      ],
-      "type": "political"
-    },
-    {
       "date": "01.01.1600",
       "description": "Lapita culture emerges in the Bismarck Archipelago, marking the first Austronesian colonization of Remote Oceania with distinctive dentate-stamped pottery",
       "description_en": "Lapita culture emerges in the Bismarck Archipelago, marking the first Austronesian colonization of Remote Oceania with distinctive dentate-stamped pottery",
@@ -1653,6 +1785,25 @@
         "Overthrow"
       ],
       "type": "military"
+    },
+    {
+      "date": "15.01.1600",
+      "description": "The Shang Dynasty is established, becoming the first historically verified Chinese dynasty with archaeological evidence",
+      "description_en": "The Shang Dynasty is established, becoming the first historically verified Chinese dynasty with archaeological evidence",
+      "description_ru": "Династия Шан основывается, становясь первой исторически подтвержденной китайской династией с археологическими доказательствами",
+      "era": "BC",
+      "latitude": 35.236,
+      "longitude": 113.754,
+      "name": "Shang Dynasty Founded",
+      "name_en": "Shang Dynasty Founded",
+      "name_ru": "Основание династии Шан",
+      "source": "https://www.britannica.com/topic/Shang-dynasty",
+      "tags": [
+        "Shang Dynasty",
+        "First Verified Dynasty",
+        "China"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.1595",
@@ -2724,5 +2875,6 @@
       "type": "cultural"
     }
   ],
-  "filename": "ancient_civilizations_pre_1000BC.json"
+  "filename": "ancient_civilizations_pre_1000BC.json",
+  "total_events": 158
 }
