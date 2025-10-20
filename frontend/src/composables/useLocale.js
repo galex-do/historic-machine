@@ -47,6 +47,7 @@ const UI_TRANSLATIONS = {
     adminEventsTitle: 'Historic Events',
     adminEventsSubtitle: 'Manage and create historic events',
     createNewEvent: 'Create New Event',
+    searchEventName: 'Search by name...',
     
     // Admin Tags Page
     adminTagsTitle: 'Tags Management',
@@ -206,6 +207,7 @@ const UI_TRANSLATIONS = {
     adminEventsTitle: 'Исторические события',
     adminEventsSubtitle: 'Управление и создание исторических событий',
     createNewEvent: 'Создать новое событие',
+    searchEventName: 'Поиск по названию...',
     
     // Admin Tags Page
     adminTagsTitle: 'Управление тегами',

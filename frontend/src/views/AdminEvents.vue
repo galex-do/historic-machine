@@ -23,6 +23,16 @@
       <!-- Table Controls & Pagination -->
       <div v-if="!loading && totalEvents > 0" class="table-controls">
         <div class="table-filters">
+          <div class="search-filter">
+            <input 
+              v-model="searchQuery"
+              type="text"
+              class="search-input"
+              :placeholder="t('searchEventName')"
+              @input="handleSearchInput"
+            />
+            <span v-if="searchQuery" class="clear-search" @click="clearSearch">×</span>
+          </div>
           <EventTypeFilter
             :selected-lens-type="selectedLensType"
             :show-dropdown="showLensDropdown"
@@ -459,6 +469,9 @@ export default {
     const showDatasetDropdown = ref(false)
     const datasets = ref([])
     
+    // Search filter state
+    const searchQuery = ref('')
+    
     // Filter methods
     const toggleLensDropdown = () => {
       showLensDropdown.value = !showLensDropdown.value
@@ -477,6 +490,16 @@ export default {
     const handleDatasetChange = (newDataset) => {
       selectedDataset.value = newDataset
       currentPage.value = 1 // Reset to first page when filter changes
+    }
+    
+    // Search filter methods
+    const handleSearchInput = () => {
+      currentPage.value = 1 // Reset to first page when search changes
+    }
+    
+    const clearSearch = () => {
+      searchQuery.value = ''
+      currentPage.value = 1
     }
     
     const localLoading = ref(false)
@@ -519,6 +542,14 @@ export default {
       }
       
       let filtered = allEvents.value
+      
+      // Apply search filter
+      if (searchQuery.value && searchQuery.value.trim() !== '') {
+        const query = searchQuery.value.toLowerCase().trim()
+        filtered = filtered.filter(event => 
+          event && event.name && event.name.toLowerCase().includes(query)
+        )
+      }
       
       // Apply lens type filter
       if (selectedLensType.value !== 'all') {
@@ -1797,5 +1828,51 @@ select.form-input:focus {
 
 .locale-content {
   margin-bottom: 15px;
+}
+
+/* Search Filter Styles */
+.search-filter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.search-input {
+  height: 36px;
+  padding: 0 2rem 0 0.75rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  min-width: 220px;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.search-input::placeholder {
+  color: #a0aec0;
+}
+
+.clear-search {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a0aec0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 0.25rem;
+  transition: color 0.2s;
+}
+
+.clear-search:hover {
+  color: #667eea;
 }
 </style>
