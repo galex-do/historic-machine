@@ -111,9 +111,12 @@ const UI_TRANSLATIONS = {
     
     // Tag Filter
     filteredByTags: 'Filtered by tags',
-    clearAllTags: 'Clear all tag filters',
+    clearAllTags: 'Clear all',
     clearAll: 'Clear all',
     remove: 'Remove',
+    allTags: 'All Tags',
+    searchTags: 'Search tags...',
+    noTagsFound: 'No tags found',
     
     // Datasets Table
     columnFilename: 'Filename',
@@ -271,9 +274,12 @@ const UI_TRANSLATIONS = {
     
     // Tag Filter
     filteredByTags: 'Фильтр по тегам',
-    clearAllTags: 'Очистить все фильтры тегов',
+    clearAllTags: 'Очистить все',
     clearAll: 'Очистить все',
     remove: 'Удалить',
+    allTags: 'Все теги',
+    searchTags: 'Поиск тегов...',
+    noTagsFound: 'Теги не найдены',
     
     // Datasets Table
     columnFilename: 'Имя файла',

@@ -46,12 +46,16 @@
             @toggle-dropdown="toggleDatasetDropdown"
             @dataset-changed="handleDatasetChange"
           />
+          <TagFilterDropdown
+            :selected-tags="selectedTags"
+            :show-dropdown="showTagDropdown"
+            :all-tags="allTags"
+            :is-highlighted="isTagHighlighted"
+            @toggle-dropdown="toggleTagDropdown"
+            @tag-toggled="handleTagToggle"
+            @clear-all="handleClearAllTags"
+          />
         </div>
-        <TagFilterPanel
-          :selected-tags="selectedTags"
-          @remove-tag="handleRemoveTag"
-          @clear-all-tags="handleClearAllTags"
-        />
         <TablePagination 
           :current-page="currentPage"
           :page-size="pageSize"
@@ -453,7 +457,7 @@ import apiService from '@/services/api.js'
 import TablePagination from '@/components/TablePagination.vue'
 import EventTypeFilter from '@/components/filters/EventTypeFilter.vue'
 import DatasetFilter from '@/components/filters/DatasetFilter.vue'
-import TagFilterPanel from '@/components/filters/TagFilterPanel.vue'
+import TagFilterDropdown from '@/components/filters/TagFilterDropdown.vue'
 
 export default {
   name: 'AdminEvents',
@@ -461,7 +465,7 @@ export default {
     TablePagination,
     EventTypeFilter,
     DatasetFilter,
-    TagFilterPanel
+    TagFilterDropdown
   },
   setup() {
     const { canAccessAdmin } = useAuth()
@@ -477,6 +481,10 @@ export default {
     const selectedDataset = ref('all')
     const showDatasetDropdown = ref(false)
     const datasets = ref([])
+    
+    // Tag filter state
+    const showTagDropdown = ref(false)
+    const isTagHighlighted = ref(false)
     
     // Search filter state
     const searchQuery = ref('')
@@ -515,12 +523,34 @@ export default {
     }
     
     // Tag filter methods
+    const toggleTagDropdown = () => {
+      showTagDropdown.value = !showTagDropdown.value
+    }
+    
+    const handleTagToggle = (tag) => {
+      const index = selectedTags.value.findIndex(t => t.id === tag.id)
+      if (index >= 0) {
+        // Remove tag if already selected
+        selectedTags.value.splice(index, 1)
+      } else {
+        // Add tag if not selected
+        selectedTags.value.push(tag)
+      }
+      currentPage.value = 1 // Reset to first page when filter changes
+    }
+    
     const handleTagClick = (tag) => {
       // Check if tag is already selected
       const isSelected = selectedTags.value.some(t => t.id === tag.id)
       if (!isSelected) {
         selectedTags.value.push(tag)
         currentPage.value = 1 // Reset to first page when filter changes
+        
+        // Highlight the tag dropdown to show feedback
+        isTagHighlighted.value = true
+        setTimeout(() => {
+          isTagHighlighted.value = false
+        }, 600) // Match animation duration
       }
     }
     
@@ -1113,6 +1143,10 @@ export default {
       clearSearch,
       // Tag filter state and methods
       selectedTags,
+      showTagDropdown,
+      isTagHighlighted,
+      toggleTagDropdown,
+      handleTagToggle,
       handleTagClick,
       handleRemoveTag,
       handleClearAllTags,
