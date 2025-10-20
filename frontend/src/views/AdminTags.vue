@@ -93,7 +93,17 @@
               </div>
             </td>
             <td class="tag-created">{{ formatDate(tag.created_at) }}</td>
-            <td class="tag-usage">{{ getTagUsageCount(tag.id) }} events</td>
+            <td class="tag-usage">
+              <span 
+                v-if="getTagUsageCount(tag.id) > 0"
+                class="usage-link"
+                @click="navigateToEventsWithTag(tag)"
+                :title="`View ${getTagUsageCount(tag.id)} events with tag '${tag.name}'`"
+              >
+                {{ getTagUsageCount(tag.id) }} events
+              </span>
+              <span v-else class="usage-count-zero">0 events</span>
+            </td>
             <td class="tag-actions">
               <div class="actions-wrapper">
                 <button @click="editTag(tag)" class="action-btn edit-btn" title="Edit">
@@ -193,6 +203,7 @@
 
 <script>
 import { ref, onMounted, computed } from 'vue'
+import { useRouter } from 'vue-router'
 import { useAuth } from '@/composables/useAuth.js'
 import { useTags } from '@/composables/useTags.js'
 import { useEvents } from '@/composables/useEvents.js'
@@ -206,6 +217,7 @@ export default {
     TablePagination
   },
   setup() {
+    const router = useRouter()
     const { canAccessAdmin } = useAuth()
     const { allTags, loadTags, createTag } = useTags()
     const { events } = useEvents()
@@ -301,6 +313,14 @@ export default {
       return events.value.filter(event => 
         event.tags && event.tags.some(tag => tag.id === tagId)
       ).length
+    }
+    
+    const navigateToEventsWithTag = (tag) => {
+      // Navigate to admin/events page with tag pre-selected
+      router.push({
+        path: '/admin/events',
+        query: { tag: tag.id }
+      })
     }
 
     const toggleSort = (field) => {
@@ -420,6 +440,7 @@ export default {
       currentPageTags,
       formatDate,
       getTagUsageCount,
+      navigateToEventsWithTag,
       toggleSort,
       handlePageChange,
       handlePageSizeChange,
@@ -634,6 +655,23 @@ export default {
 .tag-usage {
   color: #6b7280;
   font-size: 0.875rem;
+}
+
+.usage-link {
+  color: #667eea;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-bottom: 1px solid transparent;
+}
+
+.usage-link:hover {
+  color: #5a67d8;
+  border-bottom-color: #5a67d8;
+}
+
+.usage-count-zero {
+  color: #9ca3af;
 }
 
 .tag-actions {
