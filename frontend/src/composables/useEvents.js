@@ -142,8 +142,9 @@ export function useEvents() {
         
         if (era === 'BC') {
           // For BC: larger year number = older (3000 BC < 1000 BC)
-          // Convert to negative for sorting: 3000 BC = -3000
-          return -(year + (month / 12) + (day / 365))
+          // Within a BC year, months run forward: April comes before September
+          // So we subtract month/day to make earlier months in the year sort first
+          return -(year - (month / 12) - (day / 365))
         } else {
           // For AD: normal positive years
           return year + (month / 12) + (day / 365)
