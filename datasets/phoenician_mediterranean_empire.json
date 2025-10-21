@@ -1,0 +1,736 @@
+{
+  "description": "Phoenician Mediterranean Empire - Major events from the rise of Phoenician city-states through Carthaginian dominance to Roman conquest (1500 BC - 146 BC)",
+  "filename": "phoenician_mediterranean_empire.json",
+  "events": [
+    {
+      "date": "01.01.1500",
+      "era": "BC",
+      "name": "Rise of Phoenician City-States",
+      "name_ru": "Возвышение финикийских городов-государств",
+      "description": "Phoenician cities of Tyre, Sidon, Byblos and Arwad emerge as independent urban entities and major trading centers in the eastern Mediterranean",
+      "description_ru": "Финикийские города Тир, Сидон, Библ и Арвад возникают как независимые городские образования и крупные торговые центры в восточном Средиземноморье",
+      "latitude": 33.271,
+      "longitude": 35.204,
+      "type": "political",
+      "tags": [
+        "Phoenician Cities",
+        "Maritime",
+        "Trade"
+      ],
+      "source": "https://www.metmuseum.org/toah/hd/phoe/hd_phoe.htm"
+    },
+    {
+      "date": "01.01.1200",
+      "era": "BC",
+      "name": "Development of Phoenician Alphabet",
+      "name_ru": "Создание финикийского алфавита",
+      "description": "Phoenicians develop first true alphabet with 22 consonants, revolutionizing writing and becoming foundation for Greek, Latin and modern alphabets",
+      "description_ru": "Финикийцы создают первый настоящий алфавит из 22 согласных, революционизируя письменность и став основой для греческого, латинского и современных алфавитов",
+      "latitude": 34.119,
+      "longitude": 35.648,
+      "type": "cultural",
+      "tags": [
+        "Alphabet",
+        "Cultural Achievement",
+        "Byblos",
+        "Writing"
+      ],
+      "source": "https://www.britannica.com/topic/Phoenician-alphabet"
+    },
+    {
+      "date": "01.01.1200",
+      "era": "BC",
+      "name": "Phoenician Renaissance Begins",
+      "name_ru": "Начало финикийского Ренессанса",
+      "description": "After Bronze Age collapse destroys neighboring civilizations, Phoenicians survive intact and begin unprecedented maritime expansion across Mediterranean",
+      "description_ru": "После катастрофы бронзового века, разрушившей соседние цивилизации, финикийцы остаются невредимыми и начинают беспрецедентную морскую экспансию в Средиземноморье",
+      "latitude": 33.894,
+      "longitude": 35.501,
+      "type": "historic",
+      "tags": [
+        "Maritime",
+        "Expansion",
+        "Trade",
+        "Phoenician Cities"
+      ],
+      "source": "https://www.worldhistory.org/phoenicia/"
+    },
+    {
+      "date": "01.01.1100",
+      "era": "BC",
+      "name": "Founding of Cadiz",
+      "name_ru": "Основание Кадиса",
+      "description": "Phoenicians from Tyre establish Gadir (Cadiz) on Atlantic coast of Spain, creating westernmost Phoenician colony and crucial gateway beyond Mediterranean",
+      "description_ru": "Финикийцы из Тира основывают Гадир (Кадис) на атлантическом побережье Испании, создавая самую западную финикийскую колонию и важные ворота за пределы Средиземноморья",
+      "latitude": 36.527,
+      "longitude": -6.289,
+      "type": "historic",
+      "tags": [
+        "Colonization",
+        "Tyre",
+        "Maritime",
+        "Colony"
+      ],
+      "source": "https://phoenician.org/phoenician_colonies/"
+    },
+    {
+      "date": "01.01.1100",
+      "era": "BC",
+      "name": "Founding of Utica",
+      "name_ru": "Основание Утики",
+      "description": "Phoenicians establish Utica in North Africa, becoming oldest Phoenician settlement in Tunisia and major trading post",
+      "description_ru": "Финикийцы основывают Утику в Северной Африке, ставшую древнейшим финикийским поселением в Тунисе и крупным торговым центром",
+      "latitude": 37.056,
+      "longitude": 10.062,
+      "type": "historic",
+      "tags": [
+        "Colonization",
+        "Carthage",
+        "Colony",
+        "Trade"
+      ],
+      "source": "https://www.worldhistory.org/Phoenician_Colonization/"
+    },
+    {
+      "date": "01.01.1100",
+      "era": "BC",
+      "name": "Phoenician Settlement of Cyprus",
+      "name_ru": "Финикийское заселение Кипра",
+      "description": "Phoenicians establish colony of Kition on Cyprus to secure access to rich copper deposits, founding major Mediterranean mining center",
+      "description_ru": "Финикийцы основывают колонию Китион на Кипре для доступа к богатым медным месторождениям, создавая крупный средиземноморский центр добычи",
+      "latitude": 34.918,
+      "longitude": 33.636,
+      "type": "historic",
+      "tags": [
+        "Colonization",
+        "Cyprus",
+        "Mining",
+        "Colony"
+      ],
+      "source": "https://phoenician.org/phoenician_colonies/"
+    },
+    {
+      "date": "01.01.1000",
+      "era": "BC",
+      "name": "Ahiram Sarcophagus Inscription",
+      "name_ru": "Надпись на саркофаге Ахирама",
+      "description": "Death of King Ahiram of Byblos marked by oldest surviving complete Phoenician alphabet inscription on his sarcophagus",
+      "description_ru": "Смерть царя Ахирама Библского отмечена древнейшей сохранившейся полной надписью финикийским алфавитом на его саркофаге",
+      "latitude": 34.119,
+      "longitude": 35.648,
+      "type": "cultural",
+      "tags": [
+        "Byblos",
+        "Alphabet",
+        "Cultural Achievement",
+        "Writing"
+      ],
+      "source": "https://www.metmuseum.org/toah/hd/phoe/hd_phoe.htm"
+    },
+    {
+      "date": "01.01.0969",
+      "era": "BC",
+      "name": "Hiram I Alliance with Solomon",
+      "name_ru": "Союз Хирама I с Соломоном",
+      "description": "King Hiram I of Tyre forms lucrative alliance with King Solomon of Israel, providing cedars and craftsmen for Temple of Solomon in Jerusalem",
+      "description_ru": "Царь Хирам I Тирский заключает выгодный союз с царем Соломоном Израильским, поставляя кедры и мастеров для строительства Храма Соломона в Иерусалиме",
+      "latitude": 33.271,
+      "longitude": 35.204,
+      "type": "political",
+      "tags": [
+        "Tyre",
+        "Trade",
+        "Alliance",
+        "Temple Construction"
+      ],
+      "source": "https://www.worldhistory.org/phoenicia/"
+    },
+    {
+      "date": "01.06.0967",
+      "era": "BC",
+      "name": "Construction of Solomon's Temple",
+      "name_ru": "Строительство Храма Соломона",
+      "description": "Phoenician master craftsmen from Tyre led by Hiram Abiff construct magnificent Temple of Solomon using Lebanese cedars and advanced techniques",
+      "description_ru": "Финикийские мастера из Тира под руководством Хирама Абиффа строят величественный Храм Соломона, используя ливанские кедры и передовые технологии",
+      "latitude": 31.778,
+      "longitude": 35.235,
+      "type": "cultural",
+      "tags": [
+        "Temple Construction",
+        "Tyre",
+        "Cultural Achievement",
+        "Alliance"
+      ],
+      "source": "https://www.britannica.com/place/Temple-of-Jerusalem"
+    },
+    {
+      "date": "01.01.0900",
+      "era": "BC",
+      "name": "Peak of Phoenician Maritime Power",
+      "name_ru": "Пик финикийского морского могущества",
+      "description": "Phoenician cities reach zenith of prosperity and maritime dominance, controlling Mediterranean trade routes from Spain to Egypt",
+      "description_ru": "Финикийские города достигают зенита процветания и морского господства, контролируя средиземноморские торговые маршруты от Испании до Египта",
+      "latitude": 33.894,
+      "longitude": 35.501,
+      "type": "historic",
+      "tags": [
+        "Maritime",
+        "Trade",
+        "Phoenician Cities",
+        "Expansion"
+      ],
+      "source": "https://www.metmuseum.org/toah/hd/phoe/hd_phoe.htm"
+    },
+    {
+      "date": "01.01.0814",
+      "era": "BC",
+      "name": "Founding of Carthage",
+      "name_ru": "Основание Карфагена",
+      "description": "Queen Dido (Elissa) from Tyre founds Carthage (Qart-Hadasht - 'New City') in North Africa, destined to become greatest Phoenician colony and Mediterranean superpower",
+      "description_ru": "Царица Дидона (Элисса) из Тира основывает Карфаген (Карт-Хадашт - 'Новый Город') в Северной Африке, которому суждено стать величайшей финикийской колонией и средиземноморской сверхдержавой",
+      "latitude": 36.853,
+      "longitude": 10.323,
+      "type": "historic",
+      "tags": [
+        "Colonization",
+        "Carthage",
+        "Tyre",
+        "Carthage Foundation",
+        "Colony"
+      ],
+      "source": "https://en.wikipedia.org/wiki/History_of_Carthage"
+    },
+    {
+      "date": "01.01.0800",
+      "era": "BC",
+      "name": "Phoenician Colonization of Western Mediterranean",
+      "name_ru": "Финикийская колонизация Западного Средиземноморья",
+      "description": "Phoenicians establish extensive network of colonies across Sicily, Sardinia, Iberia and North Africa, transforming trading posts into permanent settlements",
+      "description_ru": "Финикийцы создают обширную сеть колоний в Сицилии, Сардинии, Иберии и Северной Африке, преобразуя торговые посты в постоянные поселения",
+      "latitude": 37.5,
+      "longitude": 9,
+      "type": "historic",
+      "tags": [
+        "Colonization",
+        "Colony",
+        "Expansion",
+        "Maritime"
+      ],
+      "source": "https://www.worldhistory.org/Phoenician_Colonization/"
+    },
+    {
+      "date": "01.01.0750",
+      "era": "BC",
+      "name": "Founding of Motya",
+      "name_ru": "Основание Мотии",
+      "description": "Phoenicians establish colony of Motya on western Sicily, creating crucial base for controlling maritime routes between Italy and Africa",
+      "description_ru": "Финикийцы основывают колонию Мотия в западной Сицилии, создавая важную базу для контроля морских маршрутов между Италией и Африкой",
+      "latitude": 37.865,
+      "longitude": 12.468,
+      "type": "historic",
+      "tags": [
+        "Colonization",
+        "Sicily",
+        "Colony",
+        "Maritime"
+      ],
+      "source": "https://phoenician.org/phoenician_colonies/"
+    },
+    {
+      "date": "01.01.0750",
+      "era": "BC",
+      "name": "Founding of Panormus",
+      "name_ru": "Основание Панорма",
+      "description": "Phoenicians found Panormus (modern Palermo) on Sicily's north coast, establishing major colonial city that would become Sicily's capital",
+      "description_ru": "Финикийцы основывают Панорм (современный Палермо) на северном побережье Сицилии, создавая крупный колониальный город, ставший столицей Сицилии",
+      "latitude": 38.116,
+      "longitude": 13.361,
+      "type": "historic",
+      "tags": [
+        "Colonization",
+        "Sicily",
+        "Colony",
+        "Phoenician Cities"
+      ],
+      "source": "https://phoenician.org/phoenician_colonies/"
+    },
+    {
+      "date": "01.01.0701",
+      "era": "BC",
+      "name": "Greeks Adopt Phoenician Alphabet",
+      "name_ru": "Греки принимают финикийский алфавит",
+      "description": "Greeks adapt Phoenician writing system adding vowels, creating Greek alphabet that spreads throughout Mediterranean world",
+      "description_ru": "Греки адаптируют финикийскую систему письма, добавляя гласные, создавая греческий алфавит, который распространяется по всему средиземноморскому миру",
+      "latitude": 37.979,
+      "longitude": 23.717,
+      "type": "cultural",
+      "tags": [
+        "Alphabet",
+        "Cultural Achievement",
+        "Greek Influence",
+        "Writing"
+      ],
+      "source": "https://www.britannica.com/topic/Phoenician-alphabet"
+    },
+    {
+      "date": "01.01.0700",
+      "era": "BC",
+      "name": "Carthage Gains Independence",
+      "name_ru": "Карфаген обретает независимость",
+      "description": "Following Assyrian conquest of Phoenician homeland, Carthage declares independence from Tyre and begins transformation into major Mediterranean power",
+      "description_ru": "После ассирийского завоевания финикийской родины Карфаген объявляет независимость от Тира и начинает превращение в крупную средиземноморскую державу",
+      "latitude": 36.853,
+      "longitude": 10.323,
+      "type": "political",
+      "tags": [
+        "Carthage",
+        "Independence",
+        "Political Change",
+        "Tyre"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Ancient_Carthage"
+    },
+    {
+      "date": "01.01.0650",
+      "era": "BC",
+      "name": "Phoenician Circumnavigation of Africa",
+      "name_ru": "Финикийское плавание вокруг Африки",
+      "description": "Egyptian Pharaoh Necho II commissions Phoenician sailors to circumnavigate Africa, completing three-year voyage and proving continent's navigability",
+      "description_ru": "Египетский фараон Нехо II поручает финикийским мореплавателям обогнуть Африку; они завершают трехлетнее путешествие, доказав проходимость континента",
+      "latitude": 30.047,
+      "longitude": 31.235,
+      "type": "scientific",
+      "tags": [
+        "Maritime",
+        "Exploration",
+        "Navigation",
+        "Scientific Achievement"
+      ],
+      "source": "https://www.worldhistory.org/phoenicia/"
+    },
+    {
+      "date": "01.01.0600",
+      "era": "BC",
+      "name": "Tyrian Purple Dye Trade Peak",
+      "name_ru": "Пик торговли тирским пурпуром",
+      "description": "Phoenician monopoly on rare purple dye extracted from murex snails reaches apex, with Tyrian purple becoming most valuable commodity in ancient world",
+      "description_ru": "Финикийская монополия на редкий пурпурный краситель из раковин мурекса достигает апогея; тирский пурпур становится самым ценным товаром древнего мира",
+      "latitude": 33.271,
+      "longitude": 35.204,
+      "type": "historic",
+      "tags": [
+        "Trade",
+        "Tyre"
+      ],
+      "source": "https://www.metmuseum.org/toah/hd/phoe/hd_phoe.htm"
+    },
+    {
+      "date": "01.01.0575",
+      "era": "BC",
+      "name": "Carthaginian Expansion in Iberia",
+      "name_ru": "Карфагенская экспансия в Иберии",
+      "description": "Carthage establishes control over southern Iberia, developing rich silver mines and creating economic base for future empire",
+      "description_ru": "Карфаген устанавливает контроль над южной Иберией, разрабатывая богатые серебряные рудники и создавая экономическую базу для будущей империи",
+      "latitude": 37.389,
+      "longitude": -5.984,
+      "type": "political",
+      "tags": [
+        "Carthage",
+        "Expansion",
+        "Mining",
+        "Iberia"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Ancient_Carthage"
+    },
+    {
+      "date": "01.01.0539",
+      "era": "BC",
+      "name": "Persian Conquest of Phoenicia",
+      "name_ru": "Персидское завоевание Финикии",
+      "description": "Cyrus the Great conquers Phoenician homeland, dividing it into four vassal kingdoms: Sidon, Tyre, Arwad and Byblos under Persian Empire",
+      "description_ru": "Кир Великий завоевывает финикийскую родину, разделяя ее на четыре вассальных царства: Сидон, Тир, Арвад и Библ под властью Персидской империи",
+      "latitude": 33.894,
+      "longitude": 35.501,
+      "type": "military",
+      "tags": [
+        "Persian Conquest",
+        "Phoenician Cities",
+        "Political Change"
+      ],
+      "source": "https://www.worldhistory.org/phoenicia/"
+    },
+    {
+      "date": "01.01.0480",
+      "era": "BC",
+      "name": "Phoenician Fleet in Persian Wars",
+      "name_ru": "Финикийский флот в греко-персидских войнах",
+      "description": "Phoenician cities provide largest contingent of warships for Persian King Xerxes' invasion of Greece, showcasing continued naval supremacy",
+      "description_ru": "Финикийские города предоставляют крупнейший контингент боевых кораблей для вторжения персидского царя Ксеркса в Греции, демонстрируя продолжающееся морское превосходство",
+      "latitude": 37.979,
+      "longitude": 23.717,
+      "type": "military",
+      "tags": [
+        "Maritime",
+        "Persian Conquest",
+        "Naval Warfare",
+        "Greek Influence"
+      ],
+      "source": "https://www.metmuseum.org/toah/hd/phoe/hd_phoe.htm"
+    },
+    {
+      "date": "01.01.0450",
+      "era": "BC",
+      "name": "Hanno's Voyage to West Africa",
+      "name_ru": "Плавание Ганнона в Западную Африку",
+      "description": "Carthaginian navigator Hanno the Navigator sails beyond Gibraltar along African coast, establishing colonies and documenting unprecedented exploration",
+      "description_ru": "Карфагенский мореплаватель Ганнон Мореплаватель плывет за Гибралтар вдоль африканского побережья, основывая колонии и документируя беспрецедентное исследование",
+      "latitude": 33.573,
+      "longitude": -7.589,
+      "type": "scientific",
+      "tags": [
+        "Carthage",
+        "Exploration",
+        "Maritime",
+        "Navigation"
+      ],
+      "source": "https://phoenician.org/carthage_hannibal_barca/"
+    },
+    {
+      "date": "01.01.0397",
+      "era": "BC",
+      "name": "First Siege of Motya",
+      "name_ru": "Первая осада Мотии",
+      "description": "Greek tyrant Dionysius I of Syracuse besieges and destroys Phoenician stronghold of Motya, marking beginning of Greco-Punic conflicts in Sicily",
+      "description_ru": "Греческий тиран Дионисий I Сиракузский осаждает и разрушает финикийскую крепость Мотия, знаменуя начало греко-пунических конфликтов в Сицилии",
+      "latitude": 37.865,
+      "longitude": 12.468,
+      "type": "military",
+      "tags": [
+        "Sicily",
+        "Greek Influence",
+        "Carthage",
+        "Siege"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Ancient_Carthage"
+    },
+    {
+      "date": "01.01.0350",
+      "era": "BC",
+      "name": "Sidon Revolt Against Persia",
+      "name_ru": "Восстание Сидона против Персии",
+      "description": "King Tennes of Sidon leads massive rebellion against Persian Empire; after failure, city is destroyed and 40,000 citizens perish",
+      "description_ru": "Царь Теннес Сидонский возглавляет массовое восстание против Персидской империи; после неудачи город разрушен и погибают 40 000 граждан",
+      "latitude": 33.563,
+      "longitude": 35.375,
+      "type": "military",
+      "tags": [
+        "Sidon",
+        "Revolt",
+        "Persian Conquest",
+        "Phoenician Cities"
+      ],
+      "source": "https://www.worldhistory.org/phoenicia/"
+    },
+    {
+      "date": "01.01.0332",
+      "era": "BC",
+      "name": "Siege of Tyre by Alexander",
+      "name_ru": "Осада Тира Александром",
+      "description": "Alexander the Great conducts seven-month siege of island fortress of Tyre, building causeway to city and ending Phoenician independence with brutal conquest",
+      "description_ru": "Александр Македонский проводит семимесячную осаду островной крепости Тир, строя дамбу к городу и завершая финикийскую независимость жестоким завоеванием",
+      "latitude": 33.271,
+      "longitude": 35.204,
+      "type": "military",
+      "tags": [
+        "Tyre",
+        "Siege",
+        "Alexander Conquest",
+        "End of Independence"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Siege_of_Tyre_%28332_BC%29"
+    },
+    {
+      "date": "01.08.0332",
+      "era": "BC",
+      "name": "Fall of Tyre",
+      "name_ru": "Падение Тира",
+      "description": "After heroic resistance, Tyre falls to Alexander; 8,000 defenders killed, 30,000 enslaved, 2,000 leading citizens crucified, marking end of Phoenician political independence",
+      "description_ru": "После героического сопротивления Тир падает перед Александром; 8000 защитников убито, 30 000 порабощены, 2000 видных граждан распяты, знаменуя конец финикийской политической независимости",
+      "latitude": 33.271,
+      "longitude": 35.204,
+      "type": "military",
+      "tags": [
+        "Tyre",
+        "Alexander Conquest",
+        "End of Independence"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Siege_of_Tyre_%28332_BC%29"
+    },
+    {
+      "date": "01.01.0310",
+      "era": "BC",
+      "name": "Carthaginian Constitutional Reforms",
+      "name_ru": "Карфагенские конституционные реформы",
+      "description": "Carthage develops sophisticated republican government with elected suffetes, senate and popular assembly, becoming model for later republican systems",
+      "description_ru": "Карфаген развивает сложную республиканскую систему правления с избираемыми суффетами, сенатом и народным собранием, становясь моделью для последующих республиканских систем",
+      "latitude": 36.853,
+      "longitude": 10.323,
+      "type": "political",
+      "tags": [
+        "Carthage",
+        "Political Change"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Ancient_Carthage"
+    },
+    {
+      "date": "01.01.0280",
+      "era": "BC",
+      "name": "Carthage Controls Western Mediterranean",
+      "name_ru": "Карфаген контролирует Западное Средиземноморье",
+      "description": "Carthage reaches apex of power, dominating North Africa, Iberia, Sardinia, Corsica and western Sicily with unrivaled naval and commercial supremacy",
+      "description_ru": "Карфаген достигает апогея могущества, доминируя в Северной Африке, Иберии, Сардинии, Корсике и западной Сицилии с непревзойденным морским и коммерческим превосходством",
+      "latitude": 36.853,
+      "longitude": 10.323,
+      "type": "historic",
+      "tags": [
+        "Carthage",
+        "Maritime",
+        "Trade"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Ancient_Carthage"
+    },
+    {
+      "date": "01.01.0264",
+      "era": "BC",
+      "name": "First Punic War Begins",
+      "name_ru": "Начало Первой Пунической войны",
+      "description": "Rome and Carthage clash over Sicily, initiating 23-year conflict that transforms Mediterranean balance of power",
+      "description_ru": "Рим и Карфаген сталкиваются из-за Сицилии, начиная 23-летний конфликт, изменивший баланс сил в Средиземноморье",
+      "latitude": 38.116,
+      "longitude": 13.361,
+      "type": "military",
+      "tags": [
+        "Carthage",
+        "Punic Wars",
+        "Rome",
+        "Sicily"
+      ],
+      "source": "https://en.wikipedia.org/wiki/First_Punic_War"
+    },
+    {
+      "date": "10.03.0241",
+      "era": "BC",
+      "name": "Battle of the Aegates",
+      "name_ru": "Битва при Эгатских островах",
+      "description": "Roman fleet defeats Carthaginian navy in decisive naval battle, ending First Punic War and forcing Carthage to abandon Sicily",
+      "description_ru": "Римский флот побеждает карфагенский флот в решающем морском сражении, завершая Первую Пуническую войну и вынуждая Карфаген отказаться от Сицилии",
+      "latitude": 37.965,
+      "longitude": 12.436,
+      "type": "military",
+      "tags": [
+        "Carthage",
+        "Punic Wars",
+        "Rome",
+        "Naval Warfare"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Battle_of_the_Aegates"
+    },
+    {
+      "date": "01.01.0237",
+      "era": "BC",
+      "name": "Hamilcar Barca Conquers Iberia",
+      "name_ru": "Гамилькар Барка завоевывает Иберию",
+      "description": "Carthaginian general Hamilcar Barca begins conquest of Iberian Peninsula, establishing new power base and rich silver mines to compensate for loss of Sicily",
+      "description_ru": "Карфагенский полководец Гамилькар Барка начинает завоевание Иберийского полуострова, создавая новую базу власти и богатые серебряные рудники в компенсацию за потерю Сицилии",
+      "latitude": 37.389,
+      "longitude": -5.984,
+      "type": "military",
+      "tags": [
+        "Carthage",
+        "Barcid Dynasty",
+        "Iberia",
+        "Expansion"
+      ],
+      "source": "https://phoenician.org/carthage_hannibal_barca/"
+    },
+    {
+      "date": "01.01.0228",
+      "era": "BC",
+      "name": "Founding of New Carthage",
+      "name_ru": "Основание Нового Карфагена",
+      "description": "Hasdrubal the Fair founds Qart Hadasht (New Carthage, modern Cartagena) in Iberia as new Carthaginian capital and strategic base",
+      "description_ru": "Гасдрубал Красивый основывает Карт-Хадашт (Новый Карфаген, современная Картахена) в Иберии как новую карфагенскую столицу и стратегическую базу",
+      "latitude": 37.626,
+      "longitude": -0.994,
+      "type": "historic",
+      "tags": [
+        "Carthage",
+        "Colonization",
+        "Iberia",
+        "Barcid Dynasty"
+      ],
+      "source": "https://phoenician.org/carthage_hannibal_barca/"
+    },
+    {
+      "date": "01.04.0218",
+      "era": "BC",
+      "name": "Hannibal's March Begins",
+      "name_ru": "Начало похода Ганнибала",
+      "description": "Hannibal Barca departs Iberia with 90,000 infantry, 12,000 cavalry and 37 war elephants, initiating legendary campaign against Rome",
+      "description_ru": "Ганнибал Барка выступает из Иберии с 90 000 пехотинцев, 12 000 всадников и 37 боевыми слонами, начиная легендарную кампанию против Рима",
+      "latitude": 37.626,
+      "longitude": -0.994,
+      "type": "military",
+      "tags": [
+        "Carthage",
+        "Hannibal",
+        "Punic Wars",
+        "Barcid Dynasty"
+      ],
+      "source": "https://phoenician.org/carthage_hannibal_barca/"
+    },
+    {
+      "date": "01.09.0218",
+      "era": "BC",
+      "name": "Hannibal Crosses the Alps",
+      "name_ru": "Ганнибал переходит Альпы",
+      "description": "Hannibal achieves impossible by crossing Alps with elephants, arriving in Italy with 20,000 infantry and 6,000 cavalry after brutal mountain passage",
+      "description_ru": "Ганнибал совершает невозможное, пересекая Альпы со слонами, прибывая в Италию с 20 000 пехотинцев и 6000 всадников после жестокого горного перехода",
+      "latitude": 45.833,
+      "longitude": 6.865,
+      "type": "military",
+      "tags": [
+        "Carthage",
+        "Hannibal",
+        "Punic Wars",
+        "Hannibal Campaign"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Hannibal%27s_crossing_of_the_Alps"
+    },
+    {
+      "date": "02.08.0216",
+      "era": "BC",
+      "name": "Battle of Cannae",
+      "name_ru": "Битва при Каннах",
+      "description": "Hannibal achieves greatest tactical victory in history, encircling and annihilating Roman army of 86,000 with force of 50,000 through brilliant double envelopment",
+      "description_ru": "Ганнибал достигает величайшей тактической победы в истории, окружая и уничтожая римскую армию из 86 000 силами 50 000 благодаря блестящему двойному охвату",
+      "latitude": 41.309,
+      "longitude": 16.149,
+      "type": "military",
+      "tags": [
+        "Carthage",
+        "Hannibal",
+        "Punic Wars",
+        "Hannibal Campaign"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Cannae"
+    },
+    {
+      "date": "01.01.0209",
+      "era": "BC",
+      "name": "Scipio Captures New Carthage",
+      "name_ru": "Сципион захватывает Новый Карфаген",
+      "description": "Roman general Scipio Africanus captures New Carthage in daring assault, seizing Carthaginian base in Iberia and turning tide of Second Punic War",
+      "description_ru": "Римский полководец Сципион Африканский захватывает Новый Карфаген в дерзком штурме, захватывая карфагенскую базу в Иберии и меняя ход Второй Пунической войны",
+      "latitude": 37.626,
+      "longitude": -0.994,
+      "type": "military",
+      "tags": [
+        "Carthage",
+        "Punic Wars",
+        "Rome",
+        "Iberia"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Carthago_Nova"
+    },
+    {
+      "date": "19.10.0202",
+      "era": "BC",
+      "name": "Battle of Zama",
+      "name_ru": "Битва при Заме",
+      "description": "Scipio Africanus defeats Hannibal in decisive battle near Carthage, ending Second Punic War and breaking Carthaginian military power forever",
+      "description_ru": "Сципион Африканский побеждает Ганнибала в решающей битве близ Карфагена, завершая Вторую Пуническую войну и навсегда разрушая карфагенскую военную мощь",
+      "latitude": 36.3,
+      "longitude": 9.3,
+      "type": "military",
+      "tags": [
+        "Carthage",
+        "Hannibal",
+        "Punic Wars",
+        "Rome"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Zama"
+    },
+    {
+      "date": "01.01.0201",
+      "era": "BC",
+      "name": "Carthaginian Peace Treaty",
+      "name_ru": "Карфагенский мирный договор",
+      "description": "Carthage forced to surrender fleet, pay massive war indemnity and abandon all territory outside Africa, reduced to Roman client state",
+      "description_ru": "Карфаген вынужден сдать флот, выплатить огромную военную контрибуцию и отказаться от всех территорий за пределами Африки, превратившись в римское клиентское государство",
+      "latitude": 36.853,
+      "longitude": 10.323,
+      "type": "political",
+      "tags": [
+        "Carthage",
+        "Punic Wars",
+        "Rome",
+        "Political Change"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Second_Punic_War"
+    },
+    {
+      "date": "01.01.0149",
+      "era": "BC",
+      "name": "Third Punic War Begins",
+      "name_ru": "Начало Третьей Пунической войны",
+      "description": "Rome demands Carthage abandon city and relocate inland; Carthaginians refuse, choosing to fight hopeless final war for survival",
+      "description_ru": "Рим требует от Карфагена покинуть город и переселиться вглубь страны; карфагеняне отказываются, выбирая безнадежную финальную войну за выживание",
+      "latitude": 36.853,
+      "longitude": 10.323,
+      "type": "military",
+      "tags": [
+        "Carthage",
+        "Punic Wars",
+        "Rome",
+        "Final War"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Third_Punic_War"
+    },
+    {
+      "date": "01.01.0146",
+      "era": "BC",
+      "name": "Destruction of Carthage",
+      "name_ru": "Разрушение Карфагена",
+      "description": "After three-year siege, Scipio Aemilianus razes Carthage completely, enslaves survivors, and allegedly salts earth, ending 700 years of Phoenician-Punic civilization",
+      "description_ru": "После трехлетней осады Сципион Эмилиан полностью разрушает Карфаген, порабощает выживших и якобы засыпает землю солью, завершая 700 лет финикийско-пунической цивилизации",
+      "latitude": 36.853,
+      "longitude": 10.323,
+      "type": "military",
+      "tags": [
+        "Carthage",
+        "Punic Wars",
+        "Rome",
+        "End of Civilization"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Third_Punic_War"
+    },
+    {
+      "date": "01.01.0146",
+      "era": "BC",
+      "name": "Fall of Phoenician-Punic Civilization",
+      "name_ru": "Падение финикийско-пунической цивилизации",
+      "description": "With destruction of Carthage, last independent Phoenician power falls, marking final end of civilization that dominated Mediterranean for millennium",
+      "description_ru": "С разрушением Карфагена падает последняя независимая финикийская держава, знаменуя окончательный конец цивилизации, доминировавшей в Средиземноморье тысячелетие",
+      "latitude": 36.853,
+      "longitude": 10.323,
+      "type": "historic",
+      "tags": [
+        "Carthage",
+        "End of Civilization",
+        "Rome"
+      ],
+      "source": "https://www.worldhistory.org/phoenicia/"
+    }
+  ]
+}
