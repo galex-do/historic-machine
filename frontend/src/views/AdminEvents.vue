@@ -1053,7 +1053,12 @@ export default {
 
         if (editingEvent.value) {
           // Update existing event
-          await apiService.updateEvent(editingEvent.value.id, eventData)
+          console.log('Updating event:', editingEvent.value.id)
+          console.log('Event data being sent:', JSON.stringify(eventData, null, 2))
+          console.log('Original event date:', editingEvent.value.event_date)
+          console.log('New event date:', eventData.event_date, 'Era:', eventData.era)
+          const updatedEvent = await apiService.updateEvent(editingEvent.value.id, eventData)
+          console.log('Backend returned updated event:', JSON.stringify(updatedEvent, null, 2))
           
           // Update tags if they changed
           const tagIds = eventForm.value.selectedTags.map(tag => tag.id)
