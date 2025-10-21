@@ -48,6 +48,8 @@ services:
       dockerfile: Dockerfile
       target: migrator
     container_name: historical-events-migrate
+    volumes:
+      - ./backend/migrations:/migrations
     depends_on:
       - db
     environment:
