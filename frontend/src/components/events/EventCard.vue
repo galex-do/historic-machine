@@ -42,17 +42,27 @@
         {{ tag.name }}
       </div>
       <div 
-        v-if="hasMoreTags"
-        class="tag-chip more-tags"
-        :title="`${hiddenTagsCount} more tags: ${hiddenTagNames}`"
+        v-if="hasMoreTags && !show_all_tags"
+        class="tag-chip more-tags clickable-more-tags"
+        :title="`Click to show ${hiddenTagsCount} more tags: ${hiddenTagNames}`"
+        @click.stop="toggle_tags_display"
       >
         +{{ hiddenTagsCount }}
+      </div>
+      <div 
+        v-if="show_all_tags && hasMoreTags"
+        class="tag-chip show-less-tags clickable-more-tags"
+        title="Click to show less tags"
+        @click.stop="toggle_tags_display"
+      >
+        Show less
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { ref } from 'vue'
 import { getEventEmoji } from '@/utils/event-utils.js'
 import { useLocale } from '@/composables/useLocale.js'
 
@@ -67,13 +77,24 @@ export default {
   emits: ['focus-event', 'tag-clicked'],
   setup() {
     const { formatEventDisplayDate } = useLocale()
+    const show_all_tags = ref(false)
+    
+    const toggle_tags_display = () => {
+      show_all_tags.value = !show_all_tags.value
+    }
+    
     return {
-      formatEventDisplayDate
+      formatEventDisplayDate,
+      show_all_tags,
+      toggle_tags_display
     }
   },
   computed: {
     visibleTags() {
       if (!this.event.tags || this.event.tags.length === 0) return []
+      if (this.show_all_tags) {
+        return this.event.tags
+      }
       return this.event.tags.slice(0, 3)
     },
     hasMoreTags() {
@@ -246,6 +267,28 @@ export default {
 }
 
 .more-tags {
+  background-color: #a0aec0 !important;
+  color: white;
+  font-style: italic;
+}
+
+.clickable-more-tags {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.clickable-more-tags:hover {
+  background-color: #718096 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.clickable-more-tags:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.show-less-tags {
   background-color: #a0aec0 !important;
   color: white;
   font-style: italic;

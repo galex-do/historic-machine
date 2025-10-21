@@ -3,6 +3,31 @@
 ## Overview
 A comprehensive web application for mapping historical events on an interactive world map with timeline functionality. Users can view, filter, and add historical events with geographical and temporal data. The project aims to provide a rich, interactive experience for exploring history, with capabilities for managing events, tags, and datasets, all within a localized and performant environment. This application has significant market potential for educational platforms, historical research, and general public engagement with historical data.
 
+## Recent Changes (October 21, 2025)
+
+- **Expandable Tags on Event Cards**: Enhanced UX for events with many tags
+  - Click "+N" button on event cards to expand and show all tags inline
+  - "Show less" button appears to collapse back to 3 visible tags
+  - Smooth hover effects and visual feedback for clickable tag controls
+  - Maintains all tag filtering and navigation functionality
+- **BC Date Chronological Sorting Fix**: Fixed month/day ordering within BC years
+  - Updated `astronomical_year` calculation to include month/day precision
+  - BC dates now properly sort with earlier months appearing after later months
+  - Example: August 332 BC now correctly appears before January 332 BC chronologically
+  - Migration: `backend/migrations/008_fix_bc_month_ordering.sql`
+- **Phoenician Mediterranean Empire Dataset**: New comprehensive historical dataset covering Phoenician civilization
+  - 41 major events spanning 1500 BC to 146 BC (Phoenician rise through Carthage destruction)
+  - Covers city-states (Tyre, Sidon, Byblos), alphabet development, colonization, trade networks
+  - Includes Carthaginian ascendancy, Punic Wars, Hannibal's campaigns
+  - Professional English/Russian translations for all events
+  - Strategic tagging: Carthage (21), Maritime (10), Punic Wars (10), Colonization (8), Trade (7)
+  - File: `datasets/phoenician_mediterranean_empire.json`
+- **Phoenician Historical Period Templates**: New date template group for Phoenician civilization
+  - Added "Phoenician Mediterranean Empire" template group to Historical Period selector
+  - 7 period templates covering full Phoenician timeline (Early City-States, Renaissance, Colonization, Carthaginian Ascendancy, Persian Period, Punic Wars, Hannibalic War)
+  - Fully localized in English and Russian
+  - Migration: `backend/migrations/007_add_phoenician_templates.sql`
+
 ## User Preferences
 - Use snake_case naming convention everywhere for elements and functions
 - Develop professional, high-end code with proper patterns and templates
