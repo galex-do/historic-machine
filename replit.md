@@ -5,6 +5,11 @@ A comprehensive web application for mapping historical events on an interactive 
 
 ## Recent Changes (October 21, 2025)
 
+- **BC Date Editing Fix**: Fixed date input validation to accept 1-4 digit years
+  - Admin Events edit form now accepts BC dates with 1-4 digit years (e.g., 146 BC, 44 BC, 3501 BC)
+  - Updated regex pattern from `\d{4}` to `\d{1,4}` in `updateEventDate()` function
+  - Year values automatically padded to 4 digits for consistency (146 → 0146)
+  - File: `frontend/src/views/AdminEvents.vue`
 - **Expandable Tags on Event Cards**: Enhanced UX for events with many tags
   - Click "+N" button on event cards to expand and show all tags inline
   - "Show less" button appears to collapse back to 3 visible tags

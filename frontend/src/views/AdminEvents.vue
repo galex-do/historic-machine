@@ -276,7 +276,7 @@
                     placeholder="DD/MM/YYYY"
                     @input="updateEventDate"
                   />
-                  <small class="form-hint">Format: DD/MM/YYYY (e.g., 15/03/1066)</small>
+                  <small class="form-hint">Format: DD/MM/YYYY (e.g., 15/03/1066 or 01/01/146 for BC dates)</small>
                 </div>
                 <div class="form-group">
                   <label for="event-era">Era *</label>
@@ -1006,11 +1006,14 @@ export default {
 
     const updateEventDate = () => {
       // Convert DD/MM/YYYY to ISO date format for backend
+      // Accept 1-4 digit years to support BC dates (e.g., 146 BC, 3501 BC)
       const dateDisplay = eventForm.value.date_display
-      if (dateDisplay && dateDisplay.match(/^\d{2}\/\d{2}\/\d{4}$/)) {
+      if (dateDisplay && dateDisplay.match(/^\d{2}\/\d{2}\/\d{1,4}$/)) {
         const [day, month, year] = dateDisplay.split('/')
         // Always use positive year for the date string, era field handles BC/AD
-        eventForm.value.date = `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`
+        // Pad year to 4 digits for consistency
+        const paddedYear = year.padStart(4, '0')
+        eventForm.value.date = `${paddedYear}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`
       }
     }
 
@@ -1053,12 +1056,7 @@ export default {
 
         if (editingEvent.value) {
           // Update existing event
-          console.log('Updating event:', editingEvent.value.id)
-          console.log('Event data being sent:', JSON.stringify(eventData, null, 2))
-          console.log('Original event date:', editingEvent.value.event_date)
-          console.log('New event date:', eventData.event_date, 'Era:', eventData.era)
-          const updatedEvent = await apiService.updateEvent(editingEvent.value.id, eventData)
-          console.log('Backend returned updated event:', JSON.stringify(updatedEvent, null, 2))
+          await apiService.updateEvent(editingEvent.value.id, eventData)
           
           // Update tags if they changed
           const tagIds = eventForm.value.selectedTags.map(tag => tag.id)
