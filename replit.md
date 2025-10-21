@@ -4,7 +4,22 @@
 
 A comprehensive web application for mapping historical events on an interactive world map with timeline functionality. Users can view, filter, and add historical events with geographical and temporal data.
 
-## Recent Changes (October 16, 2025)
+## Recent Changes (October 21, 2025)
+
+- **Dataset JSON Format Optimization**: Eliminated redundant language field duplication
+  - Updated export function to output `name`/`description` (English) and `name_ru`/`description_ru` only
+  - Removed duplicate `name_en`/`description_en` fields when identical to base English fields
+  - Optimized all dataset JSON files for ~11-25% file size reduction
+  - Import logic maintains backward compatibility with both formats
+  - ancient_civilizations_pre_1000BC.json: reduced from ~2933 to 2616 lines
+  - default_sample_events_localized.json: optimized to 132 lines
+- **Cross-Page Tag Navigation**: Click tag usage count on admin/tags to filter events by that tag
+  - Tag usage counter now clickable, navigates to admin/events with pre-selected tag
+  - Route query parameter handling (?tag=123) passes filter state between pages
+  - Auto-highlights tag filter dropdown when navigating from tags page
+  - Seamless navigation between tag management and filtered event views
+
+## Previous Changes (October 16, 2025)
 
 - **Critical Security Fixes**: Comprehensive security audit and vulnerability remediation
   - **Tag Management Security** (CRITICAL FIX): Added editor-level authentication to tag CRUD endpoints
