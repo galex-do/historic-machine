@@ -1,215 +1,67 @@
 # Historical Events Mapping Application
 
 ## Overview
-
-A comprehensive web application for mapping historical events on an interactive world map with timeline functionality. Users can view, filter, and add historical events with geographical and temporal data.
-
-## Recent Changes (October 21, 2025)
-
-- **Dataset JSON Format Optimization**: Eliminated redundant language field duplication
-  - Updated export function to output `name`/`description` (English) and `name_ru`/`description_ru` only
-  - Removed duplicate `name_en`/`description_en` fields when identical to base English fields
-  - Optimized all dataset JSON files for ~11-25% file size reduction
-  - Import logic maintains backward compatibility with both formats
-  - ancient_civilizations_pre_1000BC.json: reduced from ~2933 to 2616 lines
-  - default_sample_events_localized.json: optimized to 132 lines
-- **Cross-Page Tag Navigation**: Click tag usage count on admin/tags to filter events by that tag
-  - Tag usage counter now clickable, navigates to admin/events with pre-selected tag
-  - Route query parameter handling (?tag=123) passes filter state between pages
-  - Auto-highlights tag filter dropdown when navigating from tags page
-  - Seamless navigation between tag management and filtered event views
-
-## Previous Changes (October 16, 2025)
-
-- **Critical Security Fixes**: Comprehensive security audit and vulnerability remediation
-  - **Tag Management Security** (CRITICAL FIX): Added editor-level authentication to tag CRUD endpoints
-    - `POST /api/tags` - Now requires editor/admin access
-    - `PUT /api/tags/{id}` - Now requires editor/admin access
-    - `DELETE /api/tags/{id}` - Now requires editor/admin access
-    - Prevents anonymous tag creation/modification/deletion
-    - Dataset import continues to work (uses repository layer directly)
-  - **Event-Tag Relationship Security** (HIGH FIX): Added editor-level authentication to tag association endpoints
-    - `POST /api/events/{event_id}/tags/{tag_id}` - Now requires editor/admin access
-    - `DELETE /api/events/{event_id}/tags/{tag_id}` - Now requires editor/admin access
-    - `PUT /api/events/{event_id}/tags` - Now requires editor/admin access
-    - Prevents unauthorized tag manipulation on events
-  - **Access Level Hierarchy Fix**: Fixed missing Editor level in permission checking
-    - Updated hierarchy: Guest(0) → User(1) → Editor(2) → Admin(3) → Super(4)
-    - Super users can now properly access editor-level endpoints
-  - **Nginx Security Hardening**: Production-ready security configuration
-    - Version hiding (`server_tokens off`) prevents attack reconnaissance
-    - Security headers: XSS Protection, Clickjacking Prevention, MIME Sniffing Protection
-    - Content Security Policy (CSP) restricts resource loading to trusted sources
-    - Buffer size limits (10KB body, 1KB headers) prevent memory exhaustion attacks
-    - Timeout configurations (12s headers, 15s keepalive) prevent slowloris attacks
-  - **Nginx Performance Optimization**: High-performance configuration for production load
-    - Worker process auto-detection matches CPU cores
-    - Event-driven architecture with epoll (4000 connections per worker)
-    - Sendfile and TCP optimizations (tcp_nopush, tcp_nodelay) for efficient transmission
-    - Open file descriptor caching (200K files, 20s inactive timeout)
-    - Optimized gzip compression (level 3) balances CPU usage and compression ratio
-    - Proxy buffering (4KB buffers) and HTTP/1.1 keepalive for backend connections
-    - Multi-accept for simultaneous connection handling
-  - **Backend Docker Optimization**: Multi-stage build reduces image size by 70%
-    - Separate migration image (migrator target) with goose binary only
-    - Migrator image: minimal alpine + goose binary (~10MB vs 800MB Go toolchain)
-    - Runtime image contains only compiled Go binary (~20MB vs 70MB)
-    - Dedicated migration service in docker-compose with 'tools' profile
-    - `make migrate` uses standalone migration container
-    - No migration tools or build dependencies in production images
-  - **Tag Filter Panel UI**: Kibana-style removable chip interface for tag filtering
-    - Clickable tags in event cards add to active filter
-    - Tag chips with × removal buttons in filter panel
-    - OR logic filtering (show events with ANY selected tags)
-    - Session storage persistence for selected tags
-    - Full EN/RU localization
-  - **Pagination UX Improvement**: Moved pagination to header area for constant visibility
-    - Minimalistic plain text style (‹ 1/2 ›)
-    - Always visible regardless of event list length
-    - Compact format saves space
-- **OSM Tile Caching**: Server-side caching implemented for map tiles
-  - Nginx proxy configured to cache OpenStreetMap tiles for 30 days
-  - 500MB cache size with automatic eviction of inactive tiles
-  - Frontend uses local /tiles/ endpoint instead of direct OSM access
-  - Significantly reduces external API calls and improves map loading performance
-  - Cache status header (X-Cache-Status) for debugging
-
-## Previous Changes (October 10, 2025)
-
-- **Complete Date Template Localization**: Full internationalization for historical period templates
-  - Database migration adds name_en/name_ru and description_en/description_ru fields to both template groups and templates
-  - Backend PopulateLegacyFields pattern returns locale-specific names based on ?locale parameter
-  - Frontend passes locale parameter to all template API endpoints (/date-template-groups, /date-templates)
-  - Professional Russian translations for 11 template groups and 57+ date templates
-  - Covers ancient civilizations (Заря цивилизации, Раннединастический период) through modern era
-  - **Reactive Locale Switching**: Template groups and events automatically re-fetch when user changes language
-    - Watchers in useTemplates and useEvents composables detect locale changes
-    - No page reload required - instant translation updates
-    - Template selector updates to show localized period names immediately
-- **Complete UI Localization**: Full internationalization support for all UI elements with EN/RU locales
-  - Header navigation menu (Map, Admin, Events, Tags, Datasets, Users)
-  - Authentication system (Login/Logout buttons, Welcome messages, Access level badges)
-  - Login modal (Title, form labels, placeholders, button states)
-  - Filter controls (Apply button, date labels, step controls)
-  - **Admin Events Page**: Fully localized header, column names, and date displays
-    - Table columns (Name/Название, Description/Описание, Date/Дата, Location/Местоположение, Type/Тип, Tags/Теги, Actions/Действия)
-    - Localized date formatting with month names (Jan/янв, May/мая) and era labels (BC→до н.э., AD→н.э.)
-    - Examples: "1 Jan 3500 BC" → "1 янв 3500 до н.э.", "29 May 1453 AD" → "29 мая 1453 н.э."
-  - **Admin Tags Page**: Fully localized header, button, and column names
-    - Header: "Tags Management" → "Управление тегами"
-    - Button: "Create New Tag" → "Создать новый тег"
-    - Table columns (Name/Название, Description/Описание, Color/Цвет, Created/Создан, Usage Count/Использование, Actions/Действия)
-  - **Admin Users Page**: Fully localized header, button, and column names
-    - Header: "Users Management" → "Управление пользователями"
-    - Button: "Create New User" → "Создать нового пользователя"
-    - Table columns (Username/Имя пользователя, Email/Электронная почта, Access Level/Уровень доступа, Status/Статус, Created/Создан, Last Active/Последняя активность, Actions/Действия)
-  - **Admin Datasets Page**: Fully localized headers, buttons, table columns, and modals
-    - Header: "Event Datasets" → "Датасеты событий"
-    - Buttons: "Choose Dataset File" → "Выбрать файл датасета", "Import Dataset" → "Импортировать датасет", "Create Empty Dataset" → "Создать пустой датасет"
-    - Table columns (Filename/Имя файла, Description/Описание, Event Count/Количество событий, Uploaded By/Загрузил, Upload Date/Дата загрузки, Actions/Действия)
-    - Delete modal with full Russian translation of confirmation messages
-    - Create modal with localized form labels and placeholders
-  - **Event Display Localization**: Era labels (BC/AD) localized in event grid and modals
-    - English: "29.05.1453 AD" / "01.01.3500 BC"
-    - Russian: "29.05.1453 н.э." / "01.01.3500 до н.э."
-    - Timezone-safe date formatting across all components
-  - Reactive locale switching with instant UI updates
-  - Locale selector positioned at header far right with flag indicators
-- **Localized Dataset System**: Complete ancient civilizations dataset with 125 events
-  - All events include professional Russian translations (name_ru, description_ru)
-  - Chronologically ordered from 3500 BC to 1000 BC
-  - Dual-language support for event data
-  - Locale-aware import/export workflow
-- **Session Storage Implementation**: All filter conditions (dates, lens types, templates, sidebar state) persist across page reloads
-- **Performance Optimization**: Events are filtered immediately on load instead of showing all events first 
-- **State Management Fix**: Event editing preserves current filter state, zoom level, and map position
-- **Pagination Bug Fix**: Fixed event grid pagination reset issue when "Filter events by map view" is enabled - pagination now maintains current page correctly
-- **Era Selector Implementation**: Added BC/AD era selectors to all event forms (admin panel and map creation)
-- **Database Type Conflict Resolution**: Fixed PostgreSQL type casting issues for latitude/longitude coordinates
-- **Authentication Header Fix**: Resolved 401 errors by properly merging authentication headers in API requests
-- **Admin Area Implementation**: Complete admin panel with navigation menu
-- **Vue Router Integration**: Proper SPA routing between Map and Admin views  
-- **Role-Based Access**: Admin panel restricted to editor/super access levels
-- **Full CRUD Interface**: Professional table-based event management with proper era handling
-- **Enhanced Authentication**: Added editor role support with proper permissions
-- **Navigation Menu**: Header navigation tabs for authenticated users
-- **Bug Fixes**: Resolved marker binding issues during auth state changes and BC/AD date preservation
+A comprehensive web application for mapping historical events on an interactive world map with timeline functionality. Users can view, filter, and add historical events with geographical and temporal data. The project aims to provide a rich, interactive experience for exploring history, with capabilities for managing events, tags, and datasets, all within a localized and performant environment. This application has significant market potential for educational platforms, historical research, and general public engagement with historical data.
 
 ## User Preferences
-
 - Use snake_case naming convention everywhere for elements and functions
 - Develop professional, high-end code with proper patterns and templates
 - Avoid duplication - refactor similar logic into reusable templates/functions
 - Simple, everyday language for communication
 
-## Project Architecture
+## System Architecture
 
-### Backend Architecture (Go)
-- **Framework**: Gorilla Mux HTTP router
-- **Port**: 8080
-- **Database**: PostgreSQL (to be configured)
-- **Migrations**: Goose migration tool (to be implemented)
-- **API Pattern**: RESTful endpoints
-- **CORS**: Enabled for frontend integration
+### UI/UX Decisions
+- **Interactive World Map**: Utilizes Leaflet for scalable and interactive map visualization.
+- **Admin Panel**: Professional table-based interface for managing events, tags, users, and datasets.
+- **Localization**: Full internationalization (English/Russian) for all UI elements, historical period templates, and event data. Reactive locale switching for instant updates.
+- **Filter Panel**: Kibana-style removable chip interface for tag filtering with session storage persistence.
+- **Pagination**: Minimalistic pagination moved to the header for constant visibility.
+- **Date Handling**: BC/AD era selectors in forms, localized date formatting, and timezone-safe displays.
 
-### Frontend Architecture (Vue.js)
-- **Framework**: Vue.js 3 with Vite build system
-- **Port**: 5000 (configured for host 0.0.0.0 with allowedHosts: true)
-- **Routing**: Vue Router 4 for SPA navigation (Map view, Admin panel)
-- **Map Library**: Leaflet integration for interactive world map
-- **Admin Panel**: Full CRUD table interface for event management
+### Technical Implementations
+- **Backend (Go)**:
+    - **Framework**: Gorilla Mux HTTP router.
+    - **API Pattern**: RESTful endpoints.
+    - **Security**: Editor-level authentication for CRUD operations, Nginx hardening (XSS protection, CSP, buffer limits), and role-based access control.
+    - **Performance**: Nginx optimizations (worker processes, epoll, sendfile, gzip, caching), server-side OSM tile caching.
+    - **Containerization**: Multi-stage Docker builds for reduced image size, Docker Compose setup.
+- **Frontend (Vue.js)**:
+    - **Framework**: Vue.js 3 with Vite build system.
+    - **Routing**: Vue Router 4 for SPA navigation (Map view, Admin panel).
+    - **State Management**: Session storage for filter conditions and map state persistence.
+    - **Event Clustering**: Co-located events clustering with count badges.
+    - **Reactive Data Fetching**: Event and template data re-fetches automatically on locale changes.
 
-### Database Schema (Planned)
-- **Events Table**: id, name, description, latitude, longitude, event_date, lens_type
-- **Lenses Table**: id, name, description, color
-- **Migration Tool**: Goose for Go
+### Feature Specifications
+- **Interactive World Map**: Displays event markers with hover details and click-to-add functionality.
+- **Timeline Filtering**: Date range selection (FROM/TO fields) and historical period templates.
+- **Event Management**: CRUD operations for events via an admin panel.
+- **Lens System**: Categorization system for different event types.
+- **Tag Management**: CRUD for tags, with cross-page navigation to filter events by tag.
+- **User Management**: Admin interface for managing user accounts and access levels (Guest, User, Editor, Admin, Super).
+- **Dataset Management**: Import and creation of localized event datasets (e.g., Phoenician Mediterranean Empire, ancient civilizations).
+- **Authentication**: Role-based access control, session persistence.
 
-### Key Features
-1. **Interactive World Map**: Scalable map with event markers
-2. **Timeline Filtering**: Date range selection (FROM/TO fields)
-3. **Event Management**: Click to add, hover for details
-4. **Lens System**: Categorization system for different event types
-5. **Modal Interface**: Add/edit event forms
+### System Design Choices
+- **Database**: PostgreSQL with Goose migration tool.
+- **API**: CORS enabled for frontend integration.
+- **Deployment**: Docker Compose for orchestrating backend, frontend, and database services.
 
 ## External Dependencies
 
 ### Backend Dependencies
-- `github.com/gorilla/mux`: HTTP router and URL matcher
-- PostgreSQL driver (to be added)
-- Goose migration tool (to be added)
+- `github.com/gorilla/mux`: HTTP router and URL matcher.
+- `PostgreSQL driver`: Database connectivity.
+- `Goose`: Database migration tool.
 
 ### Frontend Dependencies
-- `vue@3.5.20`: Progressive JavaScript framework
-- `vite@7.1.3`: Build tool and dev server
-- `@vitejs/plugin-vue@6.0.1`: Vue plugin for Vite
-- `vue-router@4.5.1`: Official router for Vue.js SPA navigation
-- `leaflet@1.9.4`: Interactive map library for world map visualization
-- `vue-leaflet@0.1.0`: Vue.js wrapper for Leaflet maps
+- `vue@3.5.20`: Progressive JavaScript framework.
+- `vite@7.1.3`: Build tool and dev server.
+- `@vitejs/plugin-vue@6.0.1`: Vue plugin for Vite.
+- `vue-router@4.5.1`: Official router for Vue.js SPA navigation.
+- `leaflet@1.9.4`: Interactive map library for world map visualization.
+- `vue-leaflet@0.1.0`: Vue.js wrapper for Leaflet maps.
 
-### Containerization (Planned)
-- Docker Compose setup with backend, frontend, and PostgreSQL services
-- Individual Dockerfiles for each service
-- Makefile for easy deployment and migration management
-
-## Development Workflow
-
-### Current Status
-- ✅ Complete project architecture with backend/frontend separation
-- ✅ Go backend with full REST API on port 8080
-- ✅ Vue.js SPA with routing on port 5000
-- ✅ PostgreSQL database with event management
-- ✅ Interactive world map with Leaflet integration
-- ✅ Professional admin panel with full CRUD operations
-- ✅ Role-based authentication system (guest/user/editor/super)
-- ✅ Navigation menu and multi-page application structure
-
-### Completed Features
-1. ✅ Interactive world map with event markers
-2. ✅ Timeline filtering and date controls  
-3. ✅ Event creation and editing modals
-4. ✅ Admin table interface for event management
-5. ✅ Authentication with session persistence
-6. ✅ Co-located events clustering with count badges (shows event count on cluster markers)
-7. ✅ Minimalist edit icons and user interface
-8. ✅ Full internationalization (EN/RU) for UI and event data
-9. ✅ Localized dataset system with dual-language support
+### Other Integrations
+- **OpenStreetMap**: Used for map tiles, with server-side caching via Nginx.
