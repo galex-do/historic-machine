@@ -4,7 +4,7 @@
     {
       "date": "01.01.9500",
       "description": "Göbekli Tepe constructed in southeastern Turkey as the world's oldest known monumental architecture, featuring massive T-shaped pillars carved by hunter-gatherers",
-      "description_ru": "Гёбекли-Тепе построен на юго-востоке Турции как древнейшая известная монументальная архитектура в мире с массивными Т-образными столбами, вырезанными охотниками-собирателями",
+      "description_ru": "Неолитический храмовый комплекс Гёбекли-Тепе на юго-востоке Турции - древнейшая в мире известная постройка, с изображениями животных, вырезанных на камнях. Также здесь обнаружен древнейший календарь.",
       "era": "BC",
       "latitude": 37.223,
       "longitude": 38.922,
@@ -14,7 +14,7 @@
       "tags": [
         "Megalithic",
         "Temple",
-        "Hunter-Gatherers",
+        "Calendar",
         "Building"
       ],
       "type": "cultural"
@@ -22,7 +22,7 @@
     {
       "date": "01.01.7500",
       "description": "Nabta Playa megalithic stone circle constructed in Southern Egypt as an astronomical device, predating Stonehenge by 2000 years",
-      "description_ru": "Мегалитический каменный круг Набта-Плайя построен в Южном Египте как астрономическое устройство, на 2000 лет старше Стоунхенджа",
+      "description_ru": "Мегалитический каменный круг Набта-Плайя построен в Южном Египте как астрономическое устройство, на дне высохшего озера в Нубийской пустыне",
       "era": "BC",
       "latitude": 22.52,
       "longitude": 30.73,
@@ -40,7 +40,7 @@
     {
       "date": "01.01.4600",
       "description": "Carnac stones erected in Brittany, France, as Europe's oldest megalithic complex with over 3,000 standing stones in elaborate alignments",
-      "description_ru": "Камни Карнака воздвигнуты в Бретани, Франция, как древнейший мегалитический комплекс Европы с более чем 3000 стоячих камней в сложных выравниваниях",
+      "description_ru": "Камни Карнака воздвигнуты в Бретани, Франция, как древнейший мегалитический комплекс Европы с более чем 3000 стоячих камней в сложных композициях",
       "era": "BC",
       "latitude": 47.582,
       "longitude": -3.075,
@@ -92,17 +92,19 @@
     {
       "date": "01.01.3500",
       "description": "Gavrinis passage tomb built in Brittany, France, featuring elaborately engraved megalithic art on passage stones",
-      "description_ru": "Проходная гробница Гавринис построена в Бретани, Франция, с искусно вырезанным мегалитическим искусством на камнях прохода",
+      "description_ru": "Коридорная гробница Гавринис построена в Бретани, Франция. Вход в курган обрамляет искусная резьба по камню",
       "era": "BC",
       "latitude": 47.573,
       "longitude": -2.9,
       "name": "Gavrinis Passage Tomb",
-      "name_ru": "Проходная гробница Гавринис",
+      "name_ru": "Курган Гавринис",
       "tags": [
         "Megalithic",
         "Tomb",
         "Art",
-        "Building"
+        "Building",
+        "Mound Builders",
+        "Earthwork"
       ],
       "type": "cultural"
     },
@@ -186,7 +188,8 @@
         "Indus Valley",
         "Urban",
         "Civilization",
-        "Culture"
+        "Culture",
+        "Harappan"
       ],
       "type": "historic"
     },
@@ -204,7 +207,9 @@
         "Megalithic",
         "Tomb",
         "Astronomy",
-        "Building"
+        "Building",
+        "Mound Builders",
+        "Earthwork"
       ],
       "type": "cultural"
     },
@@ -220,7 +225,8 @@
       "source": "https://www.smithsonianmag.com/science-nature/a-salute-to-the-wheel-31805121/",
       "tags": [
         "Sumerian",
-        "Technology"
+        "Technology",
+        "Innovation"
       ],
       "type": "scientific"
     },
@@ -259,7 +265,7 @@
     {
       "date": "01.01.3100",
       "description": "Stonehenge construction begins in England with circular earthwork and wooden posts, starting a 1,500-year building project spanning multiple cultures",
-      "description_ru": "Строительство Стоунхенджа начинается в Англии с кругового земляного вала и деревянных столбов, начиная 1500-летний строительный проект, охватывающий множество культур",
+      "description_ru": "Строительство Стоунхенджа длительностью 1500 лет начинается в Англии с кругового земляного вала и деревянных столбов",
       "era": "BC",
       "latitude": 51.179,
       "longitude": -1.826,
@@ -302,7 +308,8 @@
       "tags": [
         "Egypt",
         "Unification",
-        "Pharaoh"
+        "Pharaoh",
+        "Dynasty"
       ],
       "type": "political"
     },
@@ -318,21 +325,22 @@
       "source": "https://www.britannica.com/science/sexagesimal",
       "tags": [
         "Sumerian",
-        "Mathematics"
+        "Mathematics",
+        "Innovation"
       ],
       "type": "scientific"
     },
     {
       "date": "01.01.3000",
       "description": "The major urban center of Harappa is established in the Punjab region, featuring sophisticated city planning and drainage systems",
-      "description_ru": "Крупный городской центр Хараппа основывается в регионе Пенджаб с продуманным городским планированием и дренажными системами",
+      "description_ru": "Крупный городской центр Хараппа основан в регионе Пенджаб с продуманным городским планированием и дренажными системами",
       "era": "BC",
       "latitude": 30.631,
       "longitude": 72.971,
       "name": "Harappa Urban Center Founded",
       "name_ru": "Основание городского центра Хараппа",
       "tags": [
-        "Harappa",
+        "Harappan",
         "Urban",
         "City",
         "Indus Valley"
@@ -375,24 +383,25 @@
     {
       "date": "01.01.3000",
       "description": "Norte Chico develops as a complex pre-ceramic civilization in Peru, unique for being dependent on fishing rather than agriculture",
-      "description_ru": "Норте-Чико развивается как сложная докерамическая цивилизация в Перу, уникальная зависимостью от рыболовства, а не сельского хозяйства",
+      "description_ru": "Норте-Чико - докерамическая цивилизация в Перу, знакомая с архитектурой, ирригацией, базировавшаяся больше на рыболовстве, чем сельском хозяйстве.",
       "era": "BC",
       "latitude": -10.894,
       "longitude": -77.52,
       "name": "Norte Chico Complex Society",
-      "name_ru": "Сложное общество Норте-Чико",
-      "tags": [
-        "Norte Chico",
-        "Fishing",
+      "name_ru": "Культура Норте-Чико",
+      "tags": [        
+        "Peruan",
+        "Civilization",
+        "Culture",
         "Pre-ceramic",
-        "Culture"
+        "Fishing"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.3000",
       "description": "Knowth passage tomb complex completed in Ireland as the largest passage tomb in the Brú na Bóinne complex with 18 smaller satellite tombs",
-      "description_ru": "Комплекс проходных гробниц Ноут завершен в Ирландии как крупнейшая проходная гробница в комплексе Бру-на-Бойн с 18 меньшими сателлитными гробницами",
+      "description_ru": "Курган Ноут завершен в Ирландии как крупнейшая коридорная гробница в комплексе Бру-на-Бойн с 18 меньшими гробницами",
       "era": "BC",
       "latitude": 53.7,
       "longitude": -6.488,
@@ -400,6 +409,8 @@
       "name_ru": "Комплекс проходных гробниц Ноут",
       "tags": [
         "Megalithic",
+        "Mound Builders",
+        "Earthwork",
         "Tomb",
         "Building"
       ],
@@ -433,7 +444,8 @@
       "tags": [
         "Sumerian",
         "Architecture",
-        "Building"
+        "Building",
+        "Mesopotamia"
       ],
       "type": "cultural"
     },
@@ -445,7 +457,7 @@
       "latitude": 32.776,
       "longitude": 44.949,
       "name": "Early Dynastic Period Begins",
-      "name_ru": "Начало раннединастического периода",
+      "name_ru": "Начало раннединастического периода Месопотамии",
       "tags": [
         "Mesopotamia",
         "City-State"
@@ -471,7 +483,7 @@
     {
       "date": "01.01.2700",
       "description": "Construction of the Sacred City of Caral in Peru, featuring massive platform pyramids and sunken circular plazas, contemporary with Egyptian pyramids",
-      "description_ru": "Строительство Священного города Караль в Перу с массивными платформенными пирамидами и углубленными круглыми площадями, современными египетским пирамидам",
+      "description_ru": "Строительство Священного города Караль в Перу с массивными пирамидами и круглыми площадями, современными египетским пирамидам",
       "era": "BC",
       "latitude": -10.894,
       "longitude": -77.52,
@@ -540,16 +552,16 @@
     {
       "date": "01.01.2650",
       "description": "The sophisticated city of Dholavira is founded in Gujarat, featuring advanced water conservation and urban planning",
-      "description_ru": "Сложный город Дхолавира основывается в Гуджарате с передовой системой водосбережения и городского планирования",
+      "description_ru": "Город Дхолавира основан в сложной местности Гуджарат, на острове. В городе передовая система водосбережения и уникальное городское планирование",
       "era": "BC",
       "latitude": 23.888,
       "longitude": 70.218,
       "name": "Dholavira Established",
       "name_ru": "Основание Дхолавиры",
       "tags": [
-        "Water Management",
         "Urban",
         "City",
+        "Harappan",
         "Indus Valley"
       ],
       "type": "historic"
@@ -557,7 +569,7 @@
     {
       "date": "01.01.2613",
       "description": "Sneferu founds Egypt's 4th Dynasty and builds the first straight-sided pyramid at Dahshur",
-      "description_ru": "Снофру основывает четвертую династию Египта и строит первую пирамиду с прямыми сторонами в Дахшуре",
+      "description_ru": "Снофру основывает четвертую династию Египта и начинает строить первую пирамиду с прямыми сторонами в Дахшуре",
       "era": "BC",
       "latitude": 29.79,
       "longitude": 31.209,
@@ -600,7 +612,8 @@
       "tags": [
         "Mesopotamia",
         "King",
-        "Victory"
+        "Victory",
+        "Elamites"
       ],
       "type": "political"
     },
@@ -651,7 +664,8 @@
         "Egypt",
         "Architecture",
         "Old Kingdom",
-        "Building"
+        "Building",
+        "Ancient Wonders"
       ],
       "type": "cultural"
     },
@@ -710,7 +724,7 @@
     {
       "date": "01.01.2500",
       "description": "Stonehenge Phase III: Massive sarsen stones erected, creating the iconic stone circle and trilithons with stones weighing up to 50 tons transported 25 miles",
-      "description_ru": "Стоунхендж Фаза III: Воздвигнуты массивные сарсеновые камни, создавая культовый каменный круг и трилитоны с камнями весом до 50 тонн, перевезенными на 40 км",
+      "description_ru": "Стоунхендж Фаза III: Воздвигнуты массивные сарсеновые камни, создан культовый каменный круг и трилитоны с камнями весом до 50 тонн, перевезенными на 40 км",
       "era": "BC",
       "latitude": 51.179,
       "longitude": -1.826,
@@ -744,14 +758,15 @@
     {
       "date": "01.01.2500",
       "description": "Indus Valley Civilization reaches its peak with cities housing 30,000-60,000 people and covering over 1.3 million square kilometers",
-      "description_ru": "Цивилизация долины Инда достигает пика с городами, населенными 30,000-60,000 людьми и покрывающими более 1.3 миллиона квадратных километров",
+      "description_ru": "Цивилизация долины Инда на пике могущества - покрывает 1.3 млн квадратных километров. В крупнейших городах живут по 30,000-60,000 человек.",
       "era": "BC",
       "latitude": 27,
       "longitude": 69,
       "name": "Peak Urbanization of Indus Valley",
       "name_ru": "Пик урбанизации долины Инда",
       "tags": [
-        "Peak",
+        "Indus Valley",
+        "Harappan",
         "Population",
         "Urban"
       ],
@@ -777,7 +792,7 @@
     {
       "date": "01.01.2450",
       "description": "Eannatum of Lagash establishes the first verifiable empire in Mesopotamian history",
-      "description_ru": "Эаннатум из Лагаша создает первую поддающуюся проверке империю в истории Месопотамии",
+      "description_ru": "Эаннатум из Лагаша создает первую документально подтвержденную империю в истории Месопотамии",
       "era": "BC",
       "latitude": 31.253,
       "longitude": 46.18,
@@ -824,7 +839,7 @@
     {
       "date": "01.01.2400",
       "description": "Bluestones transported to Stonehenge from Preseli Hills in Wales, over 150 miles away, demonstrating remarkable organizational and engineering capabilities",
-      "description_ru": "Голубые камни транспортированы в Стоунхендж из холмов Преселли в Уэльсе, более чем на 240 км, демонстрируя выдающиеся организационные и инженерные способности",
+      "description_ru": "Голубые камни перевезены в Стоунхендж из холмов Преселли в Уэльсе, более чем на 240 км, что показало организационные и инженерные способности древних бритов",
       "era": "BC",
       "latitude": 51.179,
       "longitude": -1.826,
@@ -840,7 +855,7 @@
     {
       "date": "01.01.2400",
       "description": "Kingdom of Kerma established in Upper Nubia, developing into a powerful state controlling Nile trade routes and constructing massive mud-brick temples",
-      "description_ru": "Царство Керма основано в Верхней Нубии, развиваясь в могущественное государство, контролирующее торговые пути по Нилу и строящее массивные храмы из сырцового кирпича",
+      "description_ru": "Царство Керма в Верхней Нубии развивается в могущественное государство, контролирующее торговые пути по Нилу и строящее массивные храмы из сырцового кирпича",
       "era": "BC",
       "latitude": 19.612,
       "longitude": 30.417,
@@ -858,12 +873,12 @@
     {
       "date": "01.01.2400",
       "description": "Construction of the famous Great Bath complex at Mohenjo-daro, demonstrating advanced hydraulic engineering and possible ritual purposes",
-      "description_ru": "Строительство знаменитого комплекса Большой бани в Мохенджо-Даро, демонстрирующего передовую гидротехнику и возможные ритуальные цели",
+      "description_ru": "Строительство ритуального Большого бассейна в Мохенджо-Даро демонстрирует прогресс инженерии и гидротехники в Индии",
       "era": "BC",
       "latitude": 27.324,
       "longitude": 68.138,
       "name": "Great Bath of Mohenjo-daro Built",
-      "name_ru": "Строительство Большой бани Мохенджо-Даро",
+      "name_ru": "Строительство Большого бассейна Мохенджо-Даро",
       "source": "https://www.worldhistory.org/Mohenjo-daro/",
       "tags": [
         "Engineering",
@@ -921,7 +936,7 @@
     {
       "date": "01.03.2334",
       "description": "Sargon captures and destroys the walls of Ur, one of Sumer's greatest cities",
-      "description_ru": "Саргон захватывает и разрушает стены Ура, одного из величайших городов Шумера",
+      "description_ru": "Саргон разрушает стены Ура, одного из величайших шумерских городов",
       "era": "BC",
       "latitude": 30.962,
       "longitude": 46.104,
@@ -937,7 +952,7 @@
     {
       "date": "01.06.2334",
       "description": "Sargon completes his southern conquests, symbolically washing his weapons in the Persian Gulf",
-      "description_ru": "Саргон завершает свои южные завоевания, символически омывая оружие в Персидском заливе",
+      "description_ru": "Саргон завершает поход на юг, омыв оружие в Персидском заливе",
       "era": "BC",
       "latitude": 29.377,
       "longitude": 47.975,
@@ -971,7 +986,7 @@
     {
       "date": "01.01.2334",
       "description": "Sargon defeats Lugalzagesi and destroys Uruk, capturing the Sumerian king and ending Sumerian independence",
-      "description_ru": "Саргон побеждает Лугальзагеси и разрушает Урук, захватывая шумерского царя и завершая шумерскую независимость",
+      "description_ru": "Саргон побеждает Лугальзагеси, разрушает Урук, захватывает шумерского царя и лишает шумеров независимости",
       "era": "BC",
       "latitude": 31.324,
       "longitude": 45.636,
@@ -1072,7 +1087,7 @@
     {
       "date": "01.01.2254",
       "description": "Naram-Sin, grandson of Sargon, becomes Akkadian king and declares himself divine",
-      "description_ru": "Нарам-Син, внук Саргона, становится аккадским царем и объявляет себя божественным",
+      "description_ru": "Нарам-Син, внук Саргона, становится аккадским царем и объявляет себя божеством",
       "era": "BC",
       "latitude": 33.312,
       "longitude": 44.644,
@@ -1107,7 +1122,7 @@
       "latitude": 33,
       "longitude": 44,
       "name": "4.2 Kiloyear Aridification Event",
-      "name_ru": "Событие иссушения 4.2 тысячелетия",
+      "name_ru": "Засуха 2200 до н.э.",
       "source": "https://www.nature.com/articles/s41598-019-44652-5",
       "tags": [
         "Climate Crisis"
@@ -1133,7 +1148,7 @@
     {
       "date": "01.01.2200",
       "description": "Tichitt culture develops in Mauritania and Mali as the oldest known complexly organized society in West Africa with stone-walled towns",
-      "description_ru": "Культура Тишит развивается в Мавритании и Мали как древнейшее известное сложно организованное общество в Западной Африке с городами с каменными стенами",
+      "description_ru": "Культура Тишит развивается в Мавритании и Мали как древнейшее известное сложное общество в Западной Африке с защищенными городами",
       "era": "BC",
       "latitude": 18.452,
       "longitude": -9.471,
@@ -1150,7 +1165,7 @@
     {
       "date": "01.01.2181",
       "description": "Egypt's Old Kingdom falls due to severe drought and famine, ending centralized rule",
-      "description_ru": "Древнее царство Египта падает из-за сильной засухи и голода, завершая централизованное правление",
+      "description_ru": "Древнее царство Египта распадается из-за сильной засухи и голода",
       "era": "BC",
       "latitude": 29.844,
       "longitude": 31.233,
@@ -1160,7 +1175,8 @@
         "Egypt",
         "Climate Crisis",
         "Old Kingdom",
-        "Collapse"
+        "Collapse",
+        "Fall"
       ],
       "type": "political"
     },
@@ -1177,7 +1193,8 @@
         "Akkadian",
         "Climate Crisis",
         "Collapse",
-        "Empire"
+        "Empire",
+        "Fall"
       ],
       "type": "political"
     },
@@ -1192,14 +1209,15 @@
       "name_ru": "Основание третьей династии Ура",
       "tags": [
         "Sumerian",
-        "Dynasty"
+        "Dynasty",
+        "Rise"
       ],
       "type": "political"
     },
     {
       "date": "01.01.2100",
       "description": "Legendary Chinese hero Yu the Great successfully controls devastating floods along the Yellow River, earning mandate to rule",
-      "description_ru": "Легендарный китайский герой Великий Юй успешно контролирует разрушительные наводнения вдоль Желтой реки, заслуживая мандат на правление",
+      "description_ru": "Легендарный китайский герой Великий Юй справляется с разрушительными наводнениями вдоль Желтой реки, заслуживая мандат на правление",
       "era": "BC",
       "latitude": 34.746,
       "longitude": 113.625,
@@ -1248,7 +1266,7 @@
     {
       "date": "01.01.2094",
       "description": "Shulgi becomes king of Ur and rules for 48 years, standardizing the empire",
-      "description_ru": "Шульги становится царем Ура и правит 48 лет, стандартизируя империю",
+      "description_ru": "Шульги становится царем Ура и правит 48 лет, стандартизируя шумерскую империю",
       "era": "BC",
       "latitude": 30.962,
       "longitude": 46.104,
@@ -1280,7 +1298,7 @@
     {
       "date": "01.01.2050",
       "description": "Mentuhotep II establishes Thebes as the new capital of reunified Egypt",
-      "description_ru": "Ментухотеп II устанавливает Фивы как новую столицу воссоединенного Египта",
+      "description_ru": "Ментухотеп II объявляет Фивы новой столицей воссоединенного Египта",
       "era": "BC",
       "latitude": 25.731,
       "longitude": 32.639,
@@ -1304,15 +1322,17 @@
       "name": "Fall of Third Dynasty of Ur",
       "name_ru": "Падение третьей династии Ура",
       "tags": [
+        "Elamites"
         "Sumerian",
-        "Military"
+        "Conquest",
+        "Fall"
       ],
       "type": "military"
     },
     {
       "date": "01.01.2000",
       "description": "Sechin Alto ceremonial center constructed in Peru's Casma Valley, featuring one of the largest ancient structures in the Americas",
-      "description_ru": "Церемониальный центр Сечин-Альто построен в долине Касма в Перу, с одним из крупнейших древних сооружений в Америке",
+      "description_ru": "Церемониальный центр Сечин-Альто построен в долине Касма в Перу. Это одно из крупнейших древних сооружений в Америке",
       "era": "BC",
       "latitude": -9.476,
       "longitude": -78.274,
@@ -1321,7 +1341,8 @@
       "tags": [
         "Ceremonial",
         "Architecture",
-        "Building"
+        "Building",
+        "Peruan"
       ],
       "type": "cultural"
     },
@@ -1366,7 +1387,7 @@
       "longitude": 7.601,
       "name": "Early Iron Smelting in Nigeria",
       "name_ru": "Ранняя плавка железа в Нигерии",
-      "source": "https://www.sciencedirect.com/science/article/abs/pii/S0305440309002866",
+      "source": "https://www.nature.com/articles/s40494-024-01383-2",
       "tags": [
         "Iron",
         "Metallurgy",
@@ -1377,12 +1398,13 @@
     {
       "date": "01.01.2000",
       "description": "Minoan palaces are built on Crete, marking the rise of Europe's first advanced civilization",
-      "description_ru": "Минойские дворцы строятся на Крите, отмечая подъем первой развитой цивилизации Европы",
+      "description_ru": "Первые минойские дворцы появляются на Крите, отмечая подъем первой развитой цивилизации Европы",
       "era": "BC",
       "latitude": 35.308,
       "longitude": 24.909,
       "name": "Minoan Palaces Built",
       "name_ru": "Строительство минойских дворцов",
+      "source": "https://en.wikipedia.org/wiki/Minoan_palaces",
       "tags": [
         "Minoan",
         "Building",
@@ -1402,6 +1424,7 @@
       "tags": [
         "Egypt",
         "Dynasty",
+        "Capital",
         "Middle Kingdom"
       ],
       "type": "political"
@@ -1415,9 +1438,11 @@
       "longitude": 34.301,
       "name": "Wall of the Ruler Built",
       "name_ru": "Строительство Стены Правителя",
+      "source": "https://en.wikipedia.org/wiki/Walls_of_the_Ruler",
       "tags": [
         "Egypt",
-        "Defense"
+        "Defense",
+        "Building"
       ],
       "type": "military"
     },
@@ -1509,7 +1534,7 @@
       "latitude": -2.227,
       "longitude": -80.956,
       "name": "Valdivia Pottery Innovation",
-      "name_ru": "Керамические инновации Вальдивия",
+      "name_ru": "Керамика Вальдивии",
       "tags": [
         "Valdivia",
         "Pottery",
@@ -1555,12 +1580,13 @@
     {
       "date": "01.01.1720",
       "description": "The Hyksos, foreign rulers from the Levant, invade and control northern Egypt",
-      "description_ru": "Гиксосы, иноземные правители из Леванта, вторгаются и контролируют северный Египет",
+      "description_ru": "Гиксосы, семиты из Леванта, вторгаются и захватывают северный Египет. Гиксосы принесли в Египет колесницы, бронзовое оружие и составные луки",
       "era": "BC",
       "latitude": 30.597,
       "longitude": 32.272,
       "name": "Hyksos Invade Egypt",
       "name_ru": "Вторжение гиксосов в Египет",
+      "source": "https://www.egypttoursportal.com/the-hyksos-invasion/",
       "tags": [
         "Egypt",
         "New Kingdom",
@@ -1656,7 +1682,7 @@
     {
       "date": "01.01.1595",
       "description": "Hittite king Mursili I leads a raid that captures and sacks Babylon, ending Hammurabi's dynasty",
-      "description_ru": "Хеттский царь Мурсили I возглавляет набег, который захватывает и разграбляет Вавилон, завершая династию Хаммурапи",
+      "description_ru": "Хеттский царь Мурсили I разграбляет Вавилон, и приводит династию Хаммурапи к концу",
       "era": "BC",
       "latitude": 32.543,
       "longitude": 44.421,
@@ -1705,7 +1731,7 @@
     {
       "date": "01.01.1550",
       "description": "The Hurrian kingdom of Mitanni is established in northern Mesopotamia",
-      "description_ru": "Хурритское царство Митанни основывается в северной Месопотамии",
+      "description_ru": "Хурритское царство Митанни основано в северной Месопотамии",
       "era": "BC",
       "latitude": 36.84,
       "longitude": 40.781,
@@ -1740,7 +1766,7 @@
     {
       "date": "01.01.1500",
       "description": "Lapita peoples colonize the Solomon Islands, bringing pigs, chickens, and agricultural crops, demonstrating remarkable seafaring capabilities",
-      "description_ru": "Народы Лапита колонизируют Соломоновы острова, привозя свиней, кур и сельскохозяйственные культуры, демонстрируя выдающиеся мореходные способности",
+      "description_ru": "Народы Лапита, демонстрируя выдающиеся мореходные способности, колонизируют Соломоновы острова, привозят свиней, кур и сельскохозяйственные культуры",
       "era": "BC",
       "latitude": -8.5,
       "longitude": 159.5,
@@ -1788,7 +1814,7 @@
     {
       "date": "01.01.1500",
       "description": "Nok culture develops on the Jos Plateau in Nigeria, creating elaborate terracotta sculptures and advanced iron-working techniques",
-      "description_ru": "Культура Нок развивается на плато Джос в Нигерии, создавая искусные терракотовые скульптуры и передовые техники обработки железа",
+      "description_ru": "Культура Нок развивается на плато Джос в Нигерии. Культура знаменита терракотовыми скульптурами и передовыми техниками обработки железа",
       "era": "BC",
       "latitude": 9.928,
       "longitude": 8.893,
@@ -1983,7 +2009,8 @@
       "tags": [
         "Egypt",
         "Nubia",
-        "Military",
+        "Gold",
+        "Conquest",
         "New Kingdom"
       ],
       "type": "military"
