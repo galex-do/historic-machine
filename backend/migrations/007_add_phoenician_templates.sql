@@ -1,5 +1,5 @@
--- Migration: Add Phoenician Mediterranean Empire date template group and templates
--- Run this manually on your local database to add the Phoenician historical period
+-- +goose Up
+-- Add Phoenician Mediterranean Empire date template group and templates
 
 -- Insert the Phoenician template group
 INSERT INTO date_template_groups (name, description, display_order, name_en, name_ru, description_en, description_ru)
@@ -14,7 +14,6 @@ VALUES (
 );
 
 -- Insert the Phoenician period templates
--- Note: group_id will be auto-assigned based on the insert above
 INSERT INTO date_templates (group_id, name, description, start_date, start_era, end_date, end_era, display_order, name_en, name_ru, description_en, description_ru)
 SELECT 
   (SELECT id FROM date_template_groups WHERE name_en = 'Phoenician Mediterranean Empire'),
@@ -71,3 +70,8 @@ SELECT
   '218-01-01', 'BC', '201-01-01', 'BC', 7,
   'Hannibalic War', 'Война Ганнибала',
   'Hannibal''s legendary campaign against Rome', 'Легендарная кампания Ганнибала против Рима';
+
+-- +goose Down
+-- Remove Phoenician templates and template group
+DELETE FROM date_templates WHERE group_id = (SELECT id FROM date_template_groups WHERE name_en = 'Phoenician Mediterranean Empire');
+DELETE FROM date_template_groups WHERE name_en = 'Phoenician Mediterranean Empire';
