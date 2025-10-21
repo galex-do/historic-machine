@@ -197,23 +197,28 @@ func (h *DatasetHandler) ExportDataset(w http.ResponseWriter, r *http.Request) {
                         "tags":        tagNames,
                 }
 
-                // Include locale-specific fields
+                // Export optimized format: "name" contains English, "name_ru" contains Russian
+                // This eliminates duplication of "name_en" when it's identical to "name"
                 if event.NameEn != "" {
-                        exportEvent["name_en"] = event.NameEn
+                        exportEvent["name"] = event.NameEn
+                } else if event.Name != "" {
+                        exportEvent["name"] = event.Name
                 }
+                
                 if event.NameRu != "" {
                         exportEvent["name_ru"] = event.NameRu
                 }
+
+                // Same approach for descriptions
                 if event.DescriptionEn != nil && *event.DescriptionEn != "" {
-                        exportEvent["description_en"] = *event.DescriptionEn
+                        exportEvent["description"] = *event.DescriptionEn
+                } else if event.Description != "" {
+                        exportEvent["description"] = event.Description
                 }
+                
                 if event.DescriptionRu != nil && *event.DescriptionRu != "" {
                         exportEvent["description_ru"] = *event.DescriptionRu
                 }
-
-                // Include legacy fields for backward compatibility
-                exportEvent["name"] = event.Name
-                exportEvent["description"] = event.Description
 
                 // Include source if available
                 if event.Source != nil {
