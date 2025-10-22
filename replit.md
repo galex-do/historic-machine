@@ -10,6 +10,7 @@ A comprehensive web application for mapping historical events on an interactive 
   - Click group to view its templates, click template to select and close
   - Saves significant filter bar space with improved UX flow
   - Full keyboard support (Escape to close), loading states, responsive design
+  - Production-ready viewport positioning: measures actual rendered dimensions, clamps to 16px margins, flips upward when needed
   - Components: `HierarchicalDateTemplateSelector.vue`, updated `DateControlBar.vue`
 - **Tag Filtering Logic**: Changed from OR to AND logic for multi-tag filtering
   - Selecting multiple tags now shows only events that have ALL selected tags
