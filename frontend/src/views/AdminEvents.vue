@@ -58,7 +58,7 @@
         </div>
         <DateControlBar
           :template-groups="templateGroups"
-          :templates="availableTemplates"
+          :available-templates="availableTemplates"
           :templates-loading="templatesLoading"
           :selected-template-group-id="selectedTemplateGroupId"
           :selected-template="selectedTemplate"
