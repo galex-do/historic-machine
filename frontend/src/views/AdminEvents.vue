@@ -56,20 +56,6 @@
             @clear-all="handleClearAllTags"
           />
         </div>
-        <DateControlBar
-          :template-groups="templateGroups"
-          :available-templates="availableTemplates"
-          :templates-loading="templatesLoading"
-          :selected-template-group-id="selectedTemplateGroupId"
-          :selected-template="selectedTemplate"
-          :from-date="fromDate"
-          :to-date="toDate"
-          :hide-stepper="true"
-          @template-group-changed="handleTemplateGroupChange"
-          @template-changed="handleTemplateChange"
-          @from-date-changed="handleFromDateChange"
-          @to-date-changed="handleToDateChange"
-        />
         <TablePagination 
           :current-page="currentPage"
           :page-size="pageSize"
@@ -467,14 +453,12 @@ import { useAuth } from '@/composables/useAuth.js'
 import { useTags } from '@/composables/useTags.js'
 import { useEvents } from '@/composables/useEvents.js'
 import { useLocale } from '@/composables/useLocale.js'
-import { useTemplates } from '@/composables/useTemplates.js'
 import { getAvailableLensTypes } from '@/utils/event-utils.js'
 import apiService from '@/services/api.js'
 import TablePagination from '@/components/TablePagination.vue'
 import EventTypeFilter from '@/components/filters/EventTypeFilter.vue'
 import DatasetFilter from '@/components/filters/DatasetFilter.vue'
 import TagFilterDropdown from '@/components/filters/TagFilterDropdown.vue'
-import DateControlBar from '@/components/filters/DateControlBar.vue'
 
 export default {
   name: 'AdminEvents',
@@ -482,8 +466,7 @@ export default {
     TablePagination,
     EventTypeFilter,
     DatasetFilter,
-    TagFilterDropdown,
-    DateControlBar
+    TagFilterDropdown
   },
   setup() {
     const route = useRoute()
@@ -510,22 +493,6 @@ export default {
     
     // Tag filter state
     const selectedTags = ref([])
-    
-    // Date filter state (default: no date filter)
-    const fromDate = ref(null)
-    const toDate = ref(null)
-    const selectedTemplate = ref(null)
-    const selectedTemplateGroupId = ref('')
-    
-    // Date templates composable
-    const { 
-      templateGroups, 
-      availableTemplates, 
-      loading: templatesLoading, 
-      fetchTemplateGroups,
-      handleTemplateGroupChange: templateGroupChange,
-      handleTemplateChange: templateChange
-    } = useTemplates()
     
     // Filter methods
     const toggleLensDropdown = () => {
@@ -596,32 +563,6 @@ export default {
     
     const handleClearAllTags = () => {
       selectedTags.value = []
-      currentPage.value = 1
-    }
-    
-    // Date filter handlers
-    const handleFromDateChange = (newDate) => {
-      fromDate.value = newDate
-      currentPage.value = 1
-    }
-    
-    const handleToDateChange = (newDate) => {
-      toDate.value = newDate
-      currentPage.value = 1
-    }
-    
-    const handleTemplateGroupChange = async (groupId) => {
-      await templateGroupChange(groupId)  // This fetches templates for the group
-      currentPage.value = 1
-    }
-    
-    const handleTemplateChange = async (templateId) => {
-      await templateChange(templateId)
-      const template = availableTemplates.value.find(t => t.id === templateId)
-      if (template) {
-        fromDate.value = template.start_date
-        toDate.value = template.end_date
-      }
       currentPage.value = 1
     }
     
@@ -704,42 +645,6 @@ export default {
           return selectedTags.value.every(selectedTag => 
             event.tags.some(eventTag => eventTag.id === selectedTag.id)
           )
-        })
-      }
-      
-      // Apply date range filter (only if dates are set)
-      if (fromDate.value || toDate.value) {
-        filtered = filtered.filter(event => {
-          if (!event.event_date) return false
-          
-          const eventDate = new Date(event.event_date)
-          let eventValue
-          
-          // Calculate comparable date value
-          if (event.era === 'BC') {
-            const year = eventDate.getFullYear()
-            const month = eventDate.getMonth()
-            const day = eventDate.getDate()
-            eventValue = -(year - (month / 12) - (day / 365))
-          } else {
-            eventValue = eventDate.getTime()
-          }
-          
-          // Check against fromDate
-          if (fromDate.value) {
-            const fromDateObj = new Date(fromDate.value)
-            const fromValue = fromDateObj.getTime()
-            if (eventValue < fromValue) return false
-          }
-          
-          // Check against toDate
-          if (toDate.value) {
-            const toDateObj = new Date(toDate.value)
-            const toValue = toDateObj.getTime()
-            if (eventValue > toValue) return false
-          }
-          
-          return true
         })
       }
       
@@ -1200,7 +1105,6 @@ export default {
         totalEvents.value = allEvents.value.length
         await loadTags()
         await fetchDatasets() // Load datasets for filtering
-        await fetchTemplateGroups() // Load date templates
         
         // Check if we need to pre-select a tag from query params
         if (route.query.tag) {
@@ -1267,18 +1171,6 @@ export default {
       handleTagClick,
       handleRemoveTag,
       handleClearAllTags,
-      // Date filter state and methods
-      templateGroups,
-      availableTemplates,
-      templatesLoading,
-      selectedTemplateGroupId,
-      selectedTemplate,
-      fromDate,
-      toDate,
-      handleTemplateGroupChange,
-      handleTemplateChange,
-      handleFromDateChange,
-      handleToDateChange,
       sortField,
       sortDirection,
       currentPage,

@@ -49,8 +49,8 @@
             </div>
           </div>
           
-          <!-- Centralized Step Controls (hidden in admin events) -->
-          <div v-if="!hideStepper" class="step-controls-section">
+          <!-- Centralized Step Controls -->
+          <div class="step-controls-section">
             <div class="step-controls">
               <button @click="stepBothDates(-stepSize)" class="step-button" title="Step both dates backward">
                 ‹‹
@@ -125,10 +125,6 @@ export default {
       default: null
     },
     loadingTemplates: {
-      type: Boolean,
-      default: false
-    },
-    hideStepper: {
       type: Boolean,
       default: false
     }

@@ -5,12 +5,6 @@ A comprehensive web application for mapping historical events on an interactive 
 
 ## Recent Changes (October 22, 2025)
 
-- **Admin Events Date Filtering**: Added date filtering controls to the Admin Events page
-  - Hierarchical date template selector, From, and To date fields now available
-  - Works seamlessly with existing filters (search, event type, dataset, tags)
-  - Default behavior: no date filter applied (shows all events)
-  - Uses the same two-pane hierarchical selector as the map view
-  - File: `frontend/src/views/AdminEvents.vue`
 - **Two-Pane Hierarchical Date Template Selector**: Replaced dual dropdowns with compact popover selector
   - Single button opens two-pane popover: template groups (left) + specific templates (right)
   - Click group to view its templates, click template to select and close
