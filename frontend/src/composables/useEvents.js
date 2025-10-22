@@ -106,13 +106,13 @@ export function useEvents() {
         return false
       }
       
-      // Tag filtering (OR logic - event must have at least one of the selected tags)
+      // Tag filtering (AND logic - event must have all selected tags)
       if (selectedTags.length > 0) {
         const eventTags = event.tags || []
-        const hasMatchingTag = eventTags.some(eventTag => 
-          selectedTags.some(selectedTag => selectedTag.id === eventTag.id)
+        const hasAllTags = selectedTags.every(selectedTag => 
+          eventTags.some(eventTag => eventTag.id === selectedTag.id)
         )
-        if (!hasMatchingTag) {
+        if (!hasAllTags) {
           return false
         }
       }

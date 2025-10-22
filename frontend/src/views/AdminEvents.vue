@@ -638,11 +638,11 @@ export default {
         }
       }
       
-      // Apply tag filter (OR logic - show events with ANY selected tag)
+      // Apply tag filter (AND logic - show events with ALL selected tags)
       if (selectedTags.value && selectedTags.value.length > 0) {
         filtered = filtered.filter(event => {
           if (!event.tags || event.tags.length === 0) return false
-          return selectedTags.value.some(selectedTag => 
+          return selectedTags.value.every(selectedTag => 
             event.tags.some(eventTag => eventTag.id === selectedTag.id)
           )
         })
