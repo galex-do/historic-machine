@@ -9,6 +9,7 @@
       :selected-template-group-id="selectedTemplateGroupId"
       :selected-template-id="selectedTemplateId"
       :selected-template="selectedTemplate"
+      :loading-templates="templatesLoading"
       @date-from-changed="handleDateFromChange"
       @date-to-changed="handleDateToChange"
       @template-group-changed="handleTemplateGroupChange"
@@ -127,6 +128,7 @@ export default {
       selectedTemplateGroupId,
       selectedTemplateId,
       selectedTemplate,
+      loading: templatesLoading,
       fetchTemplateGroups,
       handleTemplateGroupChange: templateGroupChange,
       handleTemplateChange: templateChange,

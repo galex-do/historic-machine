@@ -7,12 +7,13 @@
         
         <!-- Historical Period Template Selector -->
         <div class="template-section">
-          <DateTemplateSelector
+          <HierarchicalDateTemplateSelector
             :template-groups="templateGroups"
             :available-templates="availableTemplates"
             :selected-template-group-id="selectedTemplateGroupId"
             :selected-template-id="selectedTemplateId"
             :selected-template="selectedTemplate"
+            :loading-templates="loadingTemplates"
             @template-group-changed="$emit('template-group-changed', $event)"
             @template-changed="$emit('template-changed', $event)"
           />
@@ -86,13 +87,13 @@
 <script>
 import { ref } from 'vue'
 import { addYearsToHistoricalDate, parseHistoricalDate } from '@/utils/date-utils.js'
-import DateTemplateSelector from './DateTemplateSelector.vue'
+import HierarchicalDateTemplateSelector from './HierarchicalDateTemplateSelector.vue'
 import { useLocale } from '@/composables/useLocale.js'
 
 export default {
   name: 'DateControlBar',
   components: {
-    DateTemplateSelector
+    HierarchicalDateTemplateSelector
   },
   props: {
     dateFromDisplay: {
@@ -122,6 +123,10 @@ export default {
     selectedTemplate: {
       type: Object,
       default: null
+    },
+    loadingTemplates: {
+      type: Boolean,
+      default: false
     }
   },
   emits: [
