@@ -522,7 +522,9 @@ export default {
       templateGroups, 
       availableTemplates, 
       loading: templatesLoading, 
-      fetchTemplateGroups 
+      fetchTemplateGroups,
+      handleTemplateGroupChange: templateGroupChange,
+      handleTemplateChange: templateChange
     } = useTemplates()
     
     // Filter methods
@@ -608,18 +610,14 @@ export default {
       currentPage.value = 1
     }
     
-    const handleTemplateGroupChange = (groupId) => {
-      selectedTemplateGroupId.value = groupId
-      // If selecting default or custom, clear template selection
-      if (groupId === '' || groupId === 'custom') {
-        selectedTemplate.value = null
-      }
+    const handleTemplateGroupChange = async (groupId) => {
+      await templateGroupChange(groupId)  // This fetches templates for the group
       currentPage.value = 1
     }
     
-    const handleTemplateChange = (templateId) => {
+    const handleTemplateChange = async (templateId) => {
+      await templateChange(templateId)
       const template = availableTemplates.value.find(t => t.id === templateId)
-      selectedTemplate.value = template
       if (template) {
         fromDate.value = template.start_date
         toDate.value = template.end_date
