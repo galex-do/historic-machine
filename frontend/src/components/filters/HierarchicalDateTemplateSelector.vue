@@ -296,10 +296,16 @@ export default {
       }
     }
 
-    // Close popover on scroll
-    const handleScroll = () => {
-      if (isOpen.value) {
-        closePopover()
+    // Close popover on scroll (but not if scrolling inside the popover itself)
+    const handleScroll = (event) => {
+      if (isOpen.value && popoverContainer.value) {
+        // Check if the scroll event originated from inside the popover
+        const isScrollInsidePopover = popoverContainer.value.contains(event.target)
+        
+        // Only close if scrolling outside the popover
+        if (!isScrollInsidePopover) {
+          closePopover()
+        }
       }
     }
 
