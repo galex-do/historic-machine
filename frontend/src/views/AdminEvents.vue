@@ -466,7 +466,7 @@ import { useAuth } from '@/composables/useAuth.js'
 import { useTags } from '@/composables/useTags.js'
 import { useEvents } from '@/composables/useEvents.js'
 import { useLocale } from '@/composables/useLocale.js'
-import { useDateTemplates } from '@/composables/useDateTemplates.js'
+import { useTemplates } from '@/composables/useTemplates.js'
 import { getAvailableLensTypes } from '@/utils/event-utils.js'
 import apiService from '@/services/api.js'
 import TablePagination from '@/components/TablePagination.vue'
@@ -522,7 +522,7 @@ export default {
       templates, 
       loading: templatesLoading, 
       loadTemplateGroups 
-    } = useDateTemplates()
+    } = useTemplates()
     
     // Filter methods
     const toggleLensDropdown = () => {
