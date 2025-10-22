@@ -58,12 +58,13 @@
         </div>
         <DateControlBar
           :template-groups="templateGroups"
-          :templates="templates"
+          :templates="availableTemplates"
           :templates-loading="templatesLoading"
           :selected-template-group-id="selectedTemplateGroupId"
           :selected-template="selectedTemplate"
           :from-date="fromDate"
           :to-date="toDate"
+          :hide-stepper="true"
           @template-group-changed="handleTemplateGroupChange"
           @template-changed="handleTemplateChange"
           @from-date-changed="handleFromDateChange"
@@ -519,9 +520,9 @@ export default {
     // Date templates composable
     const { 
       templateGroups, 
-      templates, 
+      availableTemplates, 
       loading: templatesLoading, 
-      loadTemplateGroups 
+      fetchTemplateGroups 
     } = useTemplates()
     
     // Filter methods
@@ -617,11 +618,11 @@ export default {
     }
     
     const handleTemplateChange = (templateId) => {
-      const template = templates.value.find(t => t.id === templateId)
+      const template = availableTemplates.value.find(t => t.id === templateId)
       selectedTemplate.value = template
       if (template) {
-        fromDate.value = template.from_date
-        toDate.value = template.to_date
+        fromDate.value = template.start_date
+        toDate.value = template.end_date
       }
       currentPage.value = 1
     }
@@ -1201,7 +1202,7 @@ export default {
         totalEvents.value = allEvents.value.length
         await loadTags()
         await fetchDatasets() // Load datasets for filtering
-        await loadTemplateGroups() // Load date templates
+        await fetchTemplateGroups() // Load date templates
         
         // Check if we need to pre-select a tag from query params
         if (route.query.tag) {
@@ -1270,7 +1271,7 @@ export default {
       handleClearAllTags,
       // Date filter state and methods
       templateGroups,
-      templates,
+      availableTemplates,
       templatesLoading,
       selectedTemplateGroupId,
       selectedTemplate,
