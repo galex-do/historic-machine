@@ -3,8 +3,18 @@
 ## Overview
 A comprehensive web application for mapping historical events on an interactive world map with timeline functionality. Users can view, filter, and add historical events with geographical and temporal data. The project aims to provide a rich, interactive experience for exploring history, with capabilities for managing events, tags, and datasets, all within a localized and performant environment. This application has significant market potential for educational platforms, historical research, and general public engagement with historical data.
 
-## Recent Changes (October 21, 2025)
+## Recent Changes (October 22, 2025)
 
+- **Two-Pane Hierarchical Date Template Selector**: Replaced dual dropdowns with compact popover selector
+  - Single button opens two-pane popover: template groups (left) + specific templates (right)
+  - Click group to view its templates, click template to select and close
+  - Saves significant filter bar space with improved UX flow
+  - Full keyboard support (Escape to close), loading states, responsive design
+  - Components: `HierarchicalDateTemplateSelector.vue`, updated `DateControlBar.vue`
+- **Tag Filtering Logic**: Changed from OR to AND logic for multi-tag filtering
+  - Selecting multiple tags now shows only events that have ALL selected tags
+  - More intuitive filtering behavior for narrowing down specific events
+  - Updated in both map view and admin events page
 - **BC Date Editing Fix**: Fixed date input validation to accept 1-4 digit years
   - Admin Events edit form now accepts BC dates with 1-4 digit years (e.g., 146 BC, 44 BC, 3501 BC)
   - Updated regex pattern from `\d{4}` to `\d{1,4}` in `updateEventDate()` function

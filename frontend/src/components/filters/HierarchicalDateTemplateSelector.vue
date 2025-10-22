@@ -20,6 +20,7 @@
         @click="closePopover"
       >
         <div 
+          ref="popoverContainer"
           class="popover-container" 
           @click.stop
           :style="popoverPosition"
@@ -108,7 +109,7 @@
 </template>
 
 <script>
-import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
+import { ref, computed, onMounted, onUnmounted, watch, nextTick } from 'vue'
 import { useLocale } from '@/composables/useLocale.js'
 
 export default {
@@ -145,6 +146,7 @@ export default {
     const isOpen = ref(false)
     const hoveredGroupId = ref(null)
     const selectorRoot = ref(null)
+    const popoverContainer = ref(null)
     const popoverPosition = ref({})
 
     // Display text for the button
@@ -204,15 +206,56 @@ export default {
     }
 
     // Open popover and calculate position
-    const openPopover = () => {
-      if (selectorRoot.value) {
-        const rect = selectorRoot.value.getBoundingClientRect()
-        popoverPosition.value = {
-          top: `${rect.bottom + 8}px`,
-          left: `${rect.left}px`
-        }
-      }
+    const openPopover = async () => {
+      if (!selectorRoot.value) return
+      
       isOpen.value = true
+      
+      // Wait for popover to render
+      await nextTick()
+      
+      if (!popoverContainer.value) return
+      
+      const triggerRect = selectorRoot.value.getBoundingClientRect()
+      const popoverRect = popoverContainer.value.getBoundingClientRect()
+      const viewportWidth = window.innerWidth
+      const viewportHeight = window.innerHeight
+      
+      const popoverWidth = popoverRect.width || 600
+      const popoverHeight = popoverRect.height || 500
+      const margin = 16
+      
+      // Calculate horizontal position (prevent right edge overflow)
+      let left = triggerRect.left
+      if (left + popoverWidth > viewportWidth - margin) {
+        // Align to right edge if overflowing
+        left = Math.max(margin, viewportWidth - popoverWidth - margin)
+      }
+      // Ensure left margin
+      left = Math.max(margin, left)
+      
+      // Calculate vertical position (flip upward if needed)
+      let top = triggerRect.bottom + 8
+      const spaceBelow = viewportHeight - triggerRect.bottom - 8
+      const spaceAbove = triggerRect.top - 8
+      
+      if (spaceBelow < popoverHeight && spaceAbove > spaceBelow) {
+        // Flip upward if there's more space above
+        top = triggerRect.top - popoverHeight - 8
+      }
+      
+      // Ensure doesn't go off bottom
+      if (top + popoverHeight > viewportHeight - margin) {
+        top = Math.max(margin, viewportHeight - popoverHeight - margin)
+      }
+      
+      // Ensure doesn't go off top
+      top = Math.max(margin, top)
+      
+      popoverPosition.value = {
+        top: `${top}px`,
+        left: `${left}px`
+      }
     }
 
     // Close popover
@@ -247,12 +290,9 @@ export default {
 
     // Recalculate position on window resize
     const handleResize = () => {
-      if (isOpen.value && selectorRoot.value) {
-        const rect = selectorRoot.value.getBoundingClientRect()
-        popoverPosition.value = {
-          top: `${rect.bottom + 8}px`,
-          left: `${rect.left}px`
-        }
+      if (isOpen.value) {
+        // Close popover on resize to avoid layout issues
+        closePopover()
       }
     }
 
@@ -277,6 +317,7 @@ export default {
       isOpen,
       hoveredGroupId,
       selectorRoot,
+      popoverContainer,
       popoverPosition,
       displayText,
       selectedGroupName,

@@ -363,6 +363,7 @@ export default {
       selectedTemplateGroupId,
       selectedTemplateId,
       selectedTemplate,
+      templatesLoading,
       handleTemplateGroupChange,
       handleTemplateChange,
 
