@@ -296,14 +296,23 @@ export default {
       }
     }
 
+    // Close popover on scroll
+    const handleScroll = () => {
+      if (isOpen.value) {
+        closePopover()
+      }
+    }
+
     onMounted(() => {
       document.addEventListener('keydown', handleEscape)
       window.addEventListener('resize', handleResize)
+      window.addEventListener('scroll', handleScroll, true) // useCapture for all scrollable elements
     })
 
     onUnmounted(() => {
       document.removeEventListener('keydown', handleEscape)
       window.removeEventListener('resize', handleResize)
+      window.removeEventListener('scroll', handleScroll, true)
     })
 
     // Auto-hover first group when templates pane should show
