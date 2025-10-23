@@ -138,7 +138,8 @@ export default {
       fetchTemplateGroups,
       handleTemplateGroupChange: templateGroupChange,
       handleTemplateChange: templateChange,
-      applyTemplate
+      applyTemplate,
+      getGroupDateRange
     } = useTemplates()
 
     const {
@@ -195,6 +196,14 @@ export default {
       } else if (groupId === 'custom') {
         // Custom mode - keep current dates, don't change anything
         console.log('Switched to Custom date range mode')
+      } else {
+        // A template group was selected - apply the group-wide date range
+        // Templates have been fetched by awaited call above, so we can get the range immediately
+        const groupRange = getGroupDateRange()
+        if (groupRange) {
+          applyTemplateDates(groupRange)
+          console.log(`Applied group date range: ${groupRange.displayFrom} - ${groupRange.displayTo}`)
+        }
       }
       applyFilters()
     }

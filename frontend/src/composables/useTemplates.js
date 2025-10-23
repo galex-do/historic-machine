@@ -160,6 +160,76 @@ export function useTemplates() {
     }
   }
 
+  // Calculate date range that encompasses all templates in a group
+  const getGroupDateRange = () => {
+    if (availableTemplates.value.length === 0) {
+      return null
+    }
+
+    // Helper to convert ISO date to comparable numerical value
+    // BC dates: "-YYYY-MM-DD" -> negative value
+    // AD dates: "YYYY-MM-DD" -> positive value
+    const toComparableValue = (isoDate) => {
+      if (!isoDate) return 0
+      
+      let year, month, day
+      
+      if (isoDate.startsWith('-')) {
+        // BC date: "-1499-01-01"
+        const parts = isoDate.substring(1).split('-')
+        year = -parseInt(parts[0], 10)
+        month = parseInt(parts[1], 10) || 1
+        day = parseInt(parts[2], 10) || 1
+      } else {
+        // AD date: "0146-03-15"
+        const parts = isoDate.split('-')
+        year = parseInt(parts[0], 10)
+        month = parseInt(parts[1], 10) || 1
+        day = parseInt(parts[2], 10) || 1
+      }
+      
+      // Convert to numerical value for comparison
+      // For BC: more negative = earlier (1500 BC < 146 BC)
+      // For AD: more positive = later (146 AD > 1 AD)
+      return year + (month / 12) + (day / 365)
+    }
+
+    // Find min start_date and max end_date across all templates
+    let minStartDate = null
+    let maxEndDate = null
+    let minStartValue = null
+    let maxEndValue = null
+
+    availableTemplates.value.forEach(template => {
+      const startValue = toComparableValue(template.start_date)
+      const endValue = toComparableValue(template.end_date)
+
+      if (minStartValue === null || startValue < minStartValue) {
+        minStartValue = startValue
+        minStartDate = template.start_date
+      }
+      if (maxEndValue === null || endValue > maxEndValue) {
+        maxEndValue = endValue
+        maxEndDate = template.end_date
+      }
+    })
+
+    if (!minStartDate || !maxEndDate) {
+      return null
+    }
+
+    // Format for display using existing utility
+    const displayFrom = formatHistoricalDate(minStartDate)
+    const displayTo = formatHistoricalDate(maxEndDate)
+
+    return {
+      dateFrom: minStartDate,
+      dateTo: maxEndDate,
+      displayFrom,
+      displayTo
+    }
+  }
+
   return {
     templateGroups: computed(() => templateGroups.value),
     availableTemplates: computed(() => availableTemplates.value),
@@ -172,6 +242,7 @@ export function useTemplates() {
     fetchTemplatesForGroup,
     handleTemplateGroupChange,
     handleTemplateChange,
-    applyTemplate
+    applyTemplate,
+    getGroupDateRange
   }
 }
