@@ -31,12 +31,17 @@ A comprehensive web application for mapping historical events on an interactive 
   - BC dates now properly sort with earlier months appearing after later months
   - Example: August 332 BC now correctly appears before January 332 BC chronologically
   - Migration: `backend/migrations/008_fix_bc_month_ordering.sql`
-- **Phoenician Mediterranean Empire Dataset**: New comprehensive historical dataset covering Phoenician civilization
-  - 41 major events spanning 1500 BC to 146 BC (Phoenician rise through Carthage destruction)
+- **Phoenician Mediterranean Empire Dataset**: Comprehensive historical dataset covering Phoenician civilization (enriched October 23, 2025)
+  - **66 events** spanning 1500 BC to 146 BC (41 original + 25 enrichment events)
   - Covers city-states (Tyre, Sidon, Byblos), alphabet development, colonization, trade networks
-  - Includes Carthaginian ascendancy, Punic Wars, Hannibal's campaigns
+  - Added Assyrian domination period (Shalmaneser III tribute 858-841 BC)
+  - Added Babylonian siege of Tyre (Nebuchadnezzar's 13-year siege 586-573 BC)
+  - Added technological innovations (glass making, bireme warships, transparent glass perfection)
+  - Added Persian period events (Phoenician fleet for Persia, Battle of Salamis, Herodotus visit)
+  - Expanded Punic Wars coverage (10 additional battles: Cape Ecnomus, Ticinus, Trebia, Trasimene, Metaurus, etc.)
+  - Includes Carthaginian ascendancy, Punic Wars, Hannibal's campaigns, economic recovery
   - Professional English/Russian translations for all events
-  - Strategic tagging: Carthage (21), Maritime (10), Punic Wars (10), Colonization (8), Trade (7)
+  - Strategic tagging across political, military, cultural, technological, and religious categories
   - File: `datasets/phoenician_mediterranean_empire.json`
 - **Phoenician Historical Period Templates**: New date template group for Phoenician civilization
   - Added "Phoenician Mediterranean Empire" template group to Historical Period selector
