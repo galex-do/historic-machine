@@ -58,7 +58,7 @@ func (r *TemplateRepository) GetTemplatesByGroup(groupID int) ([]models.DateTemp
                        start_display_date, end_display_date
                 FROM date_templates_with_display 
                 WHERE group_id = $1
-                ORDER BY display_order`
+                ORDER BY start_astronomical_year ASC`
         
         rows, err := r.db.Query(query, groupID)
         if err != nil {
@@ -99,7 +99,7 @@ func (r *TemplateRepository) GetAllTemplates() ([]models.DateTemplate, error) {
                        start_date, start_era, end_date, end_era, display_order,
                        start_display_date, end_display_date
                 FROM date_templates_with_display 
-                ORDER BY group_id, display_order`
+                ORDER BY group_id, start_astronomical_year ASC`
         
         rows, err := r.db.Query(query)
         if err != nil {

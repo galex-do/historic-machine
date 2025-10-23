@@ -5,6 +5,12 @@ A comprehensive web application for mapping historical events on an interactive 
 
 ## Recent Changes (October 23, 2025)
 
+- **Chronological Template Sorting**: Date templates now sorted by start date instead of display order
+  - Templates within each group now appear in chronological order (oldest to newest)
+  - Example: "First Empires" group shows Ancient Kingdom of Egypt (2686 BC), then Akkadian Empire (2334 BC), then Old Assyrian Trade Empire (2025 BC), etc.
+  - Makes historical progression more intuitive for users
+  - Changed ORDER BY from `display_order` to `start_astronomical_year ASC` in template queries
+  - File: `backend/internal/database/repositories/template_repository.go`
 - **Assyrian Empire Dataset and Templates**: Comprehensive historical coverage of ancient Assyria added to the application
   - Created dataset with 57 events spanning 2600 BC - 609 BC (foundation of Assur through fall of empire)
   - Covers Old Assyrian period (trade colonies, Kanesh), Middle Assyrian rise (Ashur-uballit I, Tukulti-Ninurta I), and Neo-Assyrian golden age (Tiglath-Pileser III, Sargon II, Sennacherib, Ashurbanipal)
