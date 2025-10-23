@@ -304,11 +304,17 @@ export default {
 
     const handleRemoveTag = (tagId) => {
       removeTag(tagId)
+      // Disable narrative flow if no tags remain
+      if (selectedTags.value.length === 0) {
+        narrativeFlowEnabled.value = false
+      }
       applyFilters()
     }
 
     const handleClearAllTags = () => {
       clearTags()
+      // Disable narrative flow when clearing all tags
+      narrativeFlowEnabled.value = false
       applyFilters()
     }
     

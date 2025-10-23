@@ -8,10 +8,11 @@ A comprehensive web application for mapping historical events on an interactive 
 - **Narrative Flow Visualization**: Interactive feature to visualize historical event progression
   - "Follow Events" toggle button appears in tag filter panel when tags are selected
   - Draws chronological connections between filtered events with blue dashed polylines (#3b82f6)
-  - Arrow decorators at segment midpoints show travel/progression direction
+  - Arrow decorators at segment midpoints show travel/progression direction (from older to newer events)
   - Automatically skips connections between co-located events (same coordinates)
   - Proper chronological sorting using same BC/AD logic as event list (handles BC dates correctly)
-  - Arrow bearing calculation using atan2(Δlat, Δlng) with CSS clockwise rotation conversion
+  - Arrow bearing calculation using atan2(Δlat, Δlng) with 180° flip for correct temporal flow
+  - Automatically disables when tag filters are removed or cleared
   - Reactive cleanup removes polylines when toggle disabled or filters change
   - Helps visualize historical themes (Hannibal's campaigns, Phoenician expansion, colonization patterns)
   - Components: `WorldMap.vue`, `MapView.vue`, `TagFilterPanel.vue`
