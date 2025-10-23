@@ -3,8 +3,17 @@
 ## Overview
 A comprehensive web application for mapping historical events on an interactive world map with timeline functionality. Users can view, filter, and add historical events with geographical and temporal data. The project aims to provide a rich, interactive experience for exploring history, with capabilities for managing events, tags, and datasets, all within a localized and performant environment. This application has significant market potential for educational platforms, historical research, and general public engagement with historical data.
 
-## Recent Changes (October 22, 2025)
+## Recent Changes (October 23, 2025)
 
+- **Narrative Flow Visualization**: Interactive feature to visualize historical event progression
+  - "Follow Events" toggle button appears in tag filter panel when tags are selected
+  - Draws chronological connections between filtered events with blue dashed polylines (#3b82f6)
+  - Arrow decorators at segment midpoints show travel/progression direction
+  - Automatically skips connections between co-located events (same coordinates)
+  - Proper bearing calculation using atan2(Δlat, Δlng) with CSS clockwise rotation conversion
+  - Reactive cleanup removes polylines when toggle disabled or filters change
+  - Helps visualize historical themes (Hannibal's campaigns, Phoenician expansion, colonization patterns)
+  - Components: `WorldMap.vue`, `MapView.vue`, `TagFilterPanel.vue`
 - **Two-Pane Hierarchical Date Template Selector**: Replaced dual dropdowns with compact popover selector
   - Single button opens two-pane popover: template groups (left) + specific templates (right)
   - Click group to view its templates, click template to select and close
