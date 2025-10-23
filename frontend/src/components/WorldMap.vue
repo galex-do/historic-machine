@@ -1000,10 +1000,10 @@ export default {
         const mid_lat = (start[0] + end[0]) / 2
         const mid_lng = (start[1] + end[1]) / 2
         
-        // Calculate rotation angle (atan2(Δlat, Δlng) gives counterclockwise, negate for CSS clockwise)
+        // Calculate rotation angle (atan2(Δlat, Δlng) gives counterclockwise, negate and add 180° to flip)
         const delta_lat = end[0] - start[0]
         const delta_lng = end[1] - start[1]
-        const angle = -Math.atan2(delta_lat, delta_lng) * 180 / Math.PI
+        const angle = -Math.atan2(delta_lat, delta_lng) * 180 / Math.PI + 180
         
         // Create arrow marker
         const arrow_marker = L.marker([mid_lat, mid_lng], {
