@@ -1,5 +1,5 @@
 {
-  "description": "Dataset imported with 66 events",
+  "description": "Dataset imported with 41 events",
   "events": [
     {
       "date": "01.01.1500",
@@ -21,44 +21,6 @@
         "Sidon"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.1400",
-      "description": "Phoenician artisans perfect glass-making techniques, producing colored glass beads and vessels for Mediterranean trade networks",
-      "description_ru": "Финикийские мастера совершенствуют технику изготовления стекла, производя цветные стеклянные бусины и сосуды для средиземноморских торговых сетей",
-      "era": "BC",
-      "latitude": 33.271,
-      "longitude": 35.204,
-      "name": "Early Phoenician Glass Making",
-      "name_ru": "Раннее финикийское стеклоделие",
-      "source": "https://phoenicia.org/glass.html",
-      "tags": [
-        "Tyre",
-        "Technology",
-        "Trade",
-        "Phoenician",
-        "Glass"
-      ],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.1350",
-      "description": "Temple of Melqart, chief deity of Tyre, established as central religious sanctuary and becomes spiritual heart of Phoenician maritime civilization",
-      "description_ru": "Храм Мелькарта, главного божества Тира, основан как центральное религиозное святилище и становится духовным сердцем финикийской морской цивилизации",
-      "era": "BC",
-      "latitude": 33.271,
-      "longitude": 35.204,
-      "name": "Temple of Melqart Founded",
-      "name_ru": "Основан Храм Мелькарта",
-      "source": "https://www.worldhistory.org/Melqart/",
-      "tags": [
-        "Tyre",
-        "Religion",
-        "Temple",
-        "Phoenician",
-        "Melqart"
-      ],
-      "type": "religious"
     },
     {
       "date": "01.01.1200",
@@ -225,44 +187,6 @@
       "type": "historic"
     },
     {
-      "date": "01.01.0858",
-      "description": "Assyrian King Shalmaneser III begins demanding annual tribute from Phoenician cities after conquering Syria, marking start of Assyrian dominance",
-      "description_ru": "Ассирийский царь Салманасар III начинает требовать ежегодную дань с финикийских городов после завоевания Сирии, знаменуя начало ассирийского господства",
-      "era": "BC",
-      "latitude": 33.894,
-      "longitude": 35.501,
-      "name": "Assyrian Tribute Demands Begin",
-      "name_ru": "Начало ассирийских требований дани",
-      "source": "https://en.wikipedia.org/wiki/Shalmaneser_III",
-      "tags": [
-        "Phoenician",
-        "Assyria",
-        "Tribute",
-        "Political"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0841",
-      "description": "Phoenician cities of Tyre, Sidon, Byblos and Arwad pay tribute to Shalmaneser III at Tyre, submitting to Assyrian overlordship while maintaining autonomy",
-      "description_ru": "Финикийские города Тир, Сидон, Библ и Арвад платят дань Салманасару III в Тире, подчиняясь ассирийскому владычеству при сохранении автономии",
-      "era": "BC",
-      "latitude": 33.271,
-      "longitude": 35.204,
-      "name": "Phoenician Submission to Assyria",
-      "name_ru": "Подчинение финикийцев Ассирии",
-      "source": "https://www.livius.org/sources/content/anet/280-tyres-tribute-to-salmaneser-iii/",
-      "tags": [
-        "Tyre",
-        "Sidon",
-        "Byblos",
-        "Assyria",
-        "Phoenician",
-        "Tribute"
-      ],
-      "type": "political"
-    },
-    {
       "date": "01.01.0814",
       "description": "Queen Dido (Elissa) from Tyre founds Carthage (Qart-Hadasht - 'New City') in North Africa, destined to become greatest Phoenician colony and Mediterranean superpower",
       "description_ru": "Царица Дидона (Элисса) из Тира основывает Карфаген (Карт-Хадашт - 'Новый Город') в Северной Африке, которому суждено стать величайшей финикийской колонией и средиземноморской сверхдержавой",
@@ -355,25 +279,6 @@
       "type": "cultural"
     },
     {
-      "date": "01.01.0701",
-      "description": "Phoenicians perfect bireme warship design with two banks of oars, revolutionizing naval warfare and establishing dominance in Mediterranean sea battles",
-      "description_ru": "Финикийцы совершенствуют конструкцию биремы с двумя рядами весел, революционизируя морскую войну и устанавливая господство в средиземноморских морских сражениях",
-      "era": "BC",
-      "latitude": 33.894,
-      "longitude": 35.501,
-      "name": "Bireme Warship Development",
-      "name_ru": "Разработка боевого корабля биремы",
-      "source": "https://www.worldhistory.org/phoenicia/",
-      "tags": [
-        "Maritime",
-        "Military",
-        "Technology",
-        "Phoenician",
-        "Naval"
-      ],
-      "type": "military"
-    },
-    {
       "date": "01.01.0700",
       "description": "Following Assyrian conquest of Phoenician homeland, Carthage declares independence from Tyre and begins transformation into major Mediterranean power",
       "description_ru": "После ассирийского завоевания финикийской родины Карфаген объявляет независимость от Тира и начинает превращение в крупную средиземноморскую державу",
@@ -390,24 +295,6 @@
         "Phoenician"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0680",
-      "description": "Sidon emerges as leading Phoenician city after Assyrian pressure weakens Tyre, becoming renowned center for glass-making and purple dye production",
-      "description_ru": "Сидон становится ведущим финикийским городом после того, как ассирийское давление ослабляет Тир, превращаясь в знаменитый центр стеклоделия и производства пурпурного красителя",
-      "era": "BC",
-      "latitude": 33.563,
-      "longitude": 35.375,
-      "name": "Sidon's Ascendancy",
-      "name_ru": "Возвышение Сидона",
-      "source": "https://www.worldhistory.org/sidon/",
-      "tags": [
-        "Sidon",
-        "Phoenician",
-        "Glass",
-        "Trade"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0650",
@@ -444,44 +331,6 @@
       "type": "historic"
     },
     {
-      "date": "01.01.0600",
-      "description": "Sidonian artisans perfect transparent glass production by adding antimony, establishing Phoenician dominance in luxury glassware exported across ancient world",
-      "description_ru": "Сидонские мастера совершенствуют производство прозрачного стекла, добавляя сурьму, устанавливая финикийское господство в производстве роскошной стеклянной посуды, экспортируемой по всему древнему миру",
-      "era": "BC",
-      "latitude": 33.563,
-      "longitude": 35.375,
-      "name": "Transparent Glass Perfected",
-      "name_ru": "Совершенство прозрачного стекла",
-      "source": "https://phoenicia.org/glass.html",
-      "tags": [
-        "Sidon",
-        "Technology",
-        "Glass",
-        "Trade",
-        "Phoenician"
-      ],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.0586",
-      "description": "Babylonian King Nebuchadnezzar II begins siege of Tyre after city refuses submission, commencing legendary 13-year siege of island fortress",
-      "description_ru": "Вавилонский царь Навуходоносор II начинает осаду Тира после отказа города подчиниться, начиная легендарную 13-летнюю осаду островной крепости",
-      "era": "BC",
-      "latitude": 33.271,
-      "longitude": 35.204,
-      "name": "Nebuchadnezzar Besieges Tyre",
-      "name_ru": "Навуходоносор осаждает Тир",
-      "source": "https://en.wikipedia.org/wiki/Siege_of_Tyre_(586–573_BC)",
-      "tags": [
-        "Tyre",
-        "Babylon",
-        "War",
-        "Siege",
-        "Phoenician"
-      ],
-      "type": "military"
-    },
-    {
       "date": "01.01.0575",
       "description": "Carthage establishes control over southern Iberia, developing rich silver mines and creating economic base for future empire",
       "description_ru": "Карфаген устанавливает контроль над южной Иберией, разрабатывая богатые серебряные рудники и создавая экономическую базу для будущей империи",
@@ -498,44 +347,6 @@
         "Silver"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0573",
-      "description": "After 13-year siege, Tyre negotiates surrender to Nebuchadnezzar II; mainland city destroyed but island fortress survives, King Ithobaal III exiled to Babylon",
-      "description_ru": "После 13-летней осады Тир договаривается о капитуляции перед Навуходоносором II; материковый город разрушен, но островная крепость выживает, царь Итобаал III сослан в Вавилон",
-      "era": "BC",
-      "latitude": 33.271,
-      "longitude": 35.204,
-      "name": "Tyre Surrenders to Babylon",
-      "name_ru": "Тир капитулирует перед Вавилоном",
-      "source": "https://en.wikipedia.org/wiki/Siege_of_Tyre_(586–573_BC)",
-      "tags": [
-        "Tyre",
-        "Babylon",
-        "Siege",
-        "Phoenician",
-        "Surrender"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0550",
-      "description": "Phoenician shipwrights build powerful fleet for Persian Empire, contributing hundreds of warships that become backbone of Persian naval power",
-      "description_ru": "Финикийские кораблестроители строят мощный флот для Персидской империи, поставляя сотни боевых кораблей, ставших основой персидской морской мощи",
-      "era": "BC",
-      "latitude": 33.563,
-      "longitude": 35.375,
-      "name": "Phoenician Fleet for Persia",
-      "name_ru": "Финикийский флот для Персии",
-      "source": "https://www.worldhistory.org/phoenicia/",
-      "tags": [
-        "Maritime",
-        "Persia",
-        "Naval",
-        "Phoenician",
-        "Sidon"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.0539",
@@ -556,25 +367,6 @@
         "Tyre",
         "Sidon",
         "Byblos"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "20.09.0480",
-      "description": "Phoenician contingent fights for Persians at Battle of Salamis; despite skillful seamanship, Persian fleet defeated by Greeks in decisive naval engagement",
-      "description_ru": "Финикийский контингент сражается на стороне персов в битве при Саламине; несмотря на искусное мореплавание, персидский флот побежден греками в решающем морском сражении",
-      "era": "BC",
-      "latitude": 37.964,
-      "longitude": 23.556,
-      "name": "Phoenicians at Battle of Salamis",
-      "name_ru": "Финикийцы в битве при Саламине",
-      "source": "https://www.britannica.com/event/Battle-of-Salamis-480-BC",
-      "tags": [
-        "Naval",
-        "Persia",
-        "Greece",
-        "Phoenician",
-        "War"
       ],
       "type": "military"
     },
@@ -617,25 +409,6 @@
       "type": "scientific"
     },
     {
-      "date": "01.01.0450",
-      "description": "Greek historian Herodotus visits Tyre and records from temple priests that city was founded circa 2750 BC, documenting Phoenician historical traditions",
-      "description_ru": "Греческий историк Геродот посещает Тир и записывает со слов храмовых жрецов, что город основан около 2750 г. до н.э., документируя финикийские исторические традиции",
-      "era": "BC",
-      "latitude": 33.271,
-      "longitude": 35.204,
-      "name": "Herodotus Visits Tyre",
-      "name_ru": "Геродот посещает Тир",
-      "source": "https://www.britannica.com/place/Tyre",
-      "tags": [
-        "Tyre",
-        "Culture",
-        "History",
-        "Phoenician",
-        "Herodotus"
-      ],
-      "type": "cultural"
-    },
-    {
       "date": "01.01.0397",
       "description": "Greek tyrant Dionysius I of Syracuse besieges and destroys Phoenician stronghold of Motya, marking beginning of Greco-Punic conflicts in Sicily",
       "description_ru": "Греческий тиран Дионисий I Сиракузский осаждает и разрушает финикийскую крепость Мотия, знаменуя начало греко-пунических конфликтов в Сицилии",
@@ -655,24 +428,6 @@
       "type": "military"
     },
     {
-      "date": "01.01.0384",
-      "description": "Carthaginians establish colonies in Sardinia and fortify western Sicily, expanding Punic control over strategic Mediterranean islands",
-      "description_ru": "Карфагеняне основывают колонии в Сардинии и укрепляют западную Сицилию, расширяя пунический контроль над стратегическими средиземноморскими островами",
-      "era": "BC",
-      "latitude": 40.121,
-      "longitude": 9.013,
-      "name": "Carthaginian Colonization of Sardinia",
-      "name_ru": "Карфагенская колонизация Сардинии",
-      "source": "https://www.worldhistory.org/Phoenician_Colonization/",
-      "tags": [
-        "Carthage",
-        "Colonization",
-        "Sardinia",
-        "Expansion"
-      ],
-      "type": "historic"
-    },
-    {
       "date": "01.01.0350",
       "description": "King Tennes of Sidon leads massive rebellion against Persian Empire; after failure, city is destroyed and 40,000 citizens perish",
       "description_ru": "Царь Теннес Сидонский возглавляет массовое восстание против Персидской империи; после неудачи город разрушен и погибают 40 000 граждан",
@@ -690,24 +445,6 @@
         "Destruction"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0348",
-      "description": "First Treaty between Rome and Carthage establishes spheres of influence, recognizing Carthaginian dominance over western Mediterranean trade routes",
-      "description_ru": "Первый договор между Римом и Карфагеном устанавливает сферы влияния, признавая карфагенское господство над западными средиземноморскими торговыми маршрутами",
-      "era": "BC",
-      "latitude": 36.853,
-      "longitude": 10.323,
-      "name": "First Rome-Carthage Treaty",
-      "name_ru": "Первый договор между Римом и Карфагеном",
-      "source": "https://en.wikipedia.org/wiki/Roman–Punic_treaties",
-      "tags": [
-        "Carthage",
-        "Rome",
-        "Treaty",
-        "Diplomacy"
-      ],
-      "type": "political"
     },
     {
       "date": "01.08.0332",
@@ -750,24 +487,6 @@
       "type": "military"
     },
     {
-      "date": "01.08.0310",
-      "description": "Syracuse's Agathocles invades North Africa and besieges Carthage itself, forcing Carthaginians to fight defensive war on home soil for first time",
-      "description_ru": "Агафокл Сиракузский вторгается в Северную Африку и осаждает сам Карфаген, вынуждая карфагенян впервые вести оборонительную войну на родной земле",
-      "era": "BC",
-      "latitude": 36.853,
-      "longitude": 10.323,
-      "name": "Agathocles Invades Africa",
-      "name_ru": "Агафокл вторгается в Африку",
-      "source": "https://en.wikipedia.org/wiki/Agathocles_of_Syracuse",
-      "tags": [
-        "Carthage",
-        "War",
-        "Sicily",
-        "Invasion"
-      ],
-      "type": "military"
-    },
-    {
       "date": "01.01.0310",
       "description": "Carthage develops sophisticated republican government with elected suffetes, senate and popular assembly, becoming model for later republican systems",
       "description_ru": "Карфаген развивает сложную республиканскую систему правления с избираемыми суффетами, сенатом и народным собранием, становясь моделью для последующих республиканских систем",
@@ -802,24 +521,6 @@
       "type": "historic"
     },
     {
-      "date": "01.01.0280",
-      "description": "Greek general Pyrrhus campaigns in Sicily against Carthaginian forces, temporarily seizing most Punic-held cities before withdrawing to Italy",
-      "description_ru": "Греческий полководец Пирр ведет кампанию в Сицилии против карфагенских сил, временно захватив большинство пунических городов, прежде чем отступить в Италию",
-      "era": "BC",
-      "latitude": 37.5,
-      "longitude": 14,
-      "name": "Pyrrhus Campaigns Against Carthage",
-      "name_ru": "Кампании Пирра против Карфагена",
-      "source": "https://www.britannica.com/biography/Pyrrhus-king-of-Epirus",
-      "tags": [
-        "Carthage",
-        "War",
-        "Sicily",
-        "Greece"
-      ],
-      "type": "military"
-    },
-    {
       "date": "01.01.0264",
       "description": "Rome and Carthage clash over Sicily, initiating 23-year conflict that transforms Mediterranean balance of power",
       "description_ru": "Рим и Карфаген сталкиваются из-за Сицилии, начиная 23-летний конфликт, изменивший баланс сил в Средиземноморье",
@@ -835,25 +536,6 @@
         "Rome",
         "War",
         "Sicily"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.05.0256",
-      "description": "Battle of Cape Ecnomus between Rome and Carthage becomes largest naval battle in ancient history with over 300,000 combatants, Romans victorious",
-      "description_ru": "Битва при мысе Экном между Римом и Карфагеном становится крупнейшим морским сражением древней истории с более чем 300 000 участников, римляне одерживают победу",
-      "era": "BC",
-      "latitude": 37.275,
-      "longitude": 13.458,
-      "name": "Battle of Cape Ecnomus",
-      "name_ru": "Битва при мысе Экном",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Cape_Ecnomus",
-      "tags": [
-        "Carthage",
-        "Rome",
-        "Punic Wars",
-        "Naval",
-        "War"
       ],
       "type": "military"
     },
@@ -917,44 +599,6 @@
       "type": "historic"
     },
     {
-      "date": "18.12.0218",
-      "description": "Battle of Trebia: Hannibal's forces destroy Roman army in snowy winter battle, demonstrating superior Carthaginian tactical skill",
-      "description_ru": "Битва при Требии: силы Ганнибала уничтожают римскую армию в снежной зимней битве, демонстрируя превосходное карфагенское тактическое мастерство",
-      "era": "BC",
-      "latitude": 44.984,
-      "longitude": 9.547,
-      "name": "Battle of Trebia",
-      "name_ru": "Битва при Требии",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_the_Trebia",
-      "tags": [
-        "Carthage",
-        "Hannibal",
-        "Rome",
-        "Punic Wars",
-        "War"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.11.0218",
-      "description": "Hannibal's army defeats Romans at Battle of Ticinus, first engagement of Second Punic War on Italian soil, forcing Roman retreat",
-      "description_ru": "Армия Ганнибала побеждает римлян в битве при Тицине, первом сражении Второй Пунической войны на итальянской земле, вынудив римлян отступить",
-      "era": "BC",
-      "latitude": 45.183,
-      "longitude": 9.158,
-      "name": "Battle of Ticinus",
-      "name_ru": "Битва при Тицине",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_the_Trebia",
-      "tags": [
-        "Carthage",
-        "Hannibal",
-        "Rome",
-        "Punic Wars",
-        "War"
-      ],
-      "type": "military"
-    },
-    {
       "date": "01.09.0218",
       "description": "Hannibal achieves impossible by crossing Alps with elephants, arriving in Italy with 20,000 infantry and 6,000 cavalry after brutal mountain passage",
       "description_ru": "Ганнибал совершает невозможное, пересекая Альпы со слонами, прибывая в Италию с 20 000 пехотинцев и 6000 всадников после жестокого горного перехода",
@@ -994,26 +638,6 @@
       "type": "military"
     },
     {
-      "date": "21.06.0217",
-      "description": "Hannibal ambushes and annihilates Roman army at Lake Trasimene in largest ambush in military history, killing 15,000 Romans including consul Flaminius",
-      "description_ru": "Ганнибал устраивает засаду и уничтожает римскую армию у озера Тразимено в крупнейшей засаде в военной истории, убивая 15000 римлян, включая консула Фламиния",
-      "era": "BC",
-      "latitude": 43.143,
-      "longitude": 12.105,
-      "name": "Battle of Lake Trasimene",
-      "name_ru": "Битва у озера Тразимено",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Lake_Trasimene",
-      "tags": [
-        "Carthage",
-        "Hannibal",
-        "Rome",
-        "Punic Wars",
-        "War",
-        "Ambush"
-      ],
-      "type": "military"
-    },
-    {
       "date": "02.08.0216",
       "description": "Hannibal achieves greatest tactical victory in history, encircling and annihilating Roman army of 86,000 with force of 50,000 through brilliant double envelopment",
       "description_ru": "Ганнибал достигает величайшей тактической победы в истории, окружая и уничтожая римскую армию из 86 000 силами 50 000 благодаря блестящему двойному охвату",
@@ -1033,25 +657,6 @@
       "type": "military"
     },
     {
-      "date": "01.01.0211",
-      "description": "Romans recapture Capua after long siege, dealing major blow to Hannibal's Italian campaign and demonstrating Rome's resilience",
-      "description_ru": "Римляне отвоевывают Капую после долгой осады, нанося серьезный удар итальянской кампании Ганнибала и демонстрируя стойкость Рима",
-      "era": "BC",
-      "latitude": 41.084,
-      "longitude": 14.252,
-      "name": "Roman Recapture of Capua",
-      "name_ru": "Римское отвоевание Капуи",
-      "source": "https://en.wikipedia.org/wiki/Siege_of_Capua_(211_BC)",
-      "tags": [
-        "Rome",
-        "Carthage",
-        "Hannibal",
-        "Punic Wars",
-        "Siege"
-      ],
-      "type": "military"
-    },
-    {
       "date": "01.01.0209",
       "description": "Roman general Scipio Africanus captures New Carthage in daring assault, seizing Carthaginian base in Iberia and turning tide of Second Punic War",
       "description_ru": "Римский полководец Сципион Африканский захватывает Новый Карфаген в дерзком штурме, захватывая карфагенскую базу в Иберии и меняя ход Второй Пунической войны",
@@ -1067,63 +672,6 @@
         "Rome",
         "Iberia",
         "Battle"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "23.06.0207",
-      "description": "Battle of Metaurus River: Romans defeat and kill Hannibal's brother Hasdrubal, destroying Carthaginian reinforcements marching to join Hannibal in Italy",
-      "description_ru": "Битва при реке Метавр: римляне побеждают и убивают брата Ганнибала Гасдрубала, уничтожая карфагенские подкрепления, идущие на соединение с Ганнибалом в Италии",
-      "era": "BC",
-      "latitude": 43.746,
-      "longitude": 12.904,
-      "name": "Battle of Metaurus",
-      "name_ru": "Битва при Метавре",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_the_Metaurus",
-      "tags": [
-        "Rome",
-        "Carthage",
-        "Punic Wars",
-        "War",
-        "Hasdrubal"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0204",
-      "description": "Scipio Africanus invades North Africa with Roman army, forcing Carthage to recall Hannibal from Italy and shifting war to African theater",
-      "description_ru": "Сципион Африканский вторгается в Северную Африку с римской армией, вынуждая Карфаген отозвать Ганнибала из Италии и перенести войну на африканский театр",
-      "era": "BC",
-      "latitude": 36.853,
-      "longitude": 10.323,
-      "name": "Scipio Invades Africa",
-      "name_ru": "Сципион вторгается в Африку",
-      "source": "https://en.wikipedia.org/wiki/Scipio_Africanus",
-      "tags": [
-        "Rome",
-        "Carthage",
-        "Punic Wars",
-        "Scipio",
-        "Invasion"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0203",
-      "description": "Battle of the Great Plains: Scipio defeats combined Carthaginian-Numidian army, establishing Roman dominance in North Africa campaign",
-      "description_ru": "Битва при Великих равнинах: Сципион побеждает объединенную карфагено-нумидийскую армию, устанавливая римское господство в североафриканской кампании",
-      "era": "BC",
-      "latitude": 36.5,
-      "longitude": 9,
-      "name": "Battle of the Great Plains",
-      "name_ru": "Битва при Великих равнинах",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_the_Great_Plains",
-      "tags": [
-        "Rome",
-        "Carthage",
-        "Punic Wars",
-        "Scipio",
-        "War"
       ],
       "type": "military"
     },
@@ -1161,24 +709,6 @@
         "Punic Wars",
         "Rome",
         "Peace"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0190",
-      "description": "Carthage completes payment of massive war indemnity to Rome ahead of schedule, demonstrating remarkable economic recovery despite devastating defeat",
-      "description_ru": "Карфаген досрочно завершает выплату огромной военной контрибуции Риму, демонстрируя замечательное экономическое восстановление несмотря на разрушительное поражение",
-      "era": "BC",
-      "latitude": 36.853,
-      "longitude": 10.323,
-      "name": "Carthage Pays War Indemnity",
-      "name_ru": "Карфаген выплачивает военную контрибуцию",
-      "source": "https://en.wikipedia.org/wiki/Ancient_Carthage",
-      "tags": [
-        "Carthage",
-        "Rome",
-        "Economy",
-        "Treaty"
       ],
       "type": "political"
     },
