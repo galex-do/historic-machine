@@ -21,7 +21,7 @@ func NewEventRepository(db *sql.DB) *EventRepository {
 // GetAll retrieves all events from the database
 func (r *EventRepository) GetAll() ([]models.HistoricalEvent, error) {
         query := `
-                SELECT id, name, description, latitude, longitude, event_date, era, lens_type, source, display_date, astronomical_year, dataset_id, created_by, updated_by, created_at, updated_at, name_en, name_ru, description_en, description_ru, tags
+                SELECT id, name, description, latitude, longitude, event_date, era, lens_type, source, display_date, dataset_id, created_by, updated_by, created_at, updated_at, name_en, name_ru, description_en, description_ru, tags
                 FROM events_with_display_dates 
                 ORDER BY astronomical_year ASC`
         
@@ -38,7 +38,7 @@ func (r *EventRepository) GetAll() ([]models.HistoricalEvent, error) {
                 var tagsJSON []byte
                 
                 err := rows.Scan(&event.ID, &event.Name, &event.Description, &event.Latitude, 
-                        &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.Source, &event.DisplayDate, &event.AstronomicalYear, &event.DatasetID, &event.CreatedBy, &event.UpdatedBy, &event.CreatedAt, &event.UpdatedAt, &event.NameEn, &event.NameRu, &event.DescriptionEn, &event.DescriptionRu, &tagsJSON)
+                        &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.Source, &event.DisplayDate, &event.DatasetID, &event.CreatedBy, &event.UpdatedBy, &event.CreatedAt, &event.UpdatedAt, &event.NameEn, &event.NameRu, &event.DescriptionEn, &event.DescriptionRu, &tagsJSON)
                 if err != nil {
                         log.Printf("Error scanning event: %v", err)
                         continue
@@ -69,7 +69,7 @@ func (r *EventRepository) GetAll() ([]models.HistoricalEvent, error) {
 // GetByDatasetID retrieves all events from a specific dataset
 func (r *EventRepository) GetByDatasetID(datasetID int) ([]models.HistoricalEvent, error) {
         query := `
-                SELECT id, name, description, latitude, longitude, event_date, era, lens_type, source, display_date, astronomical_year, dataset_id, created_by, updated_by, created_at, updated_at, name_en, name_ru, description_en, description_ru, tags
+                SELECT id, name, description, latitude, longitude, event_date, era, lens_type, source, display_date, dataset_id, created_by, updated_by, created_at, updated_at, name_en, name_ru, description_en, description_ru, tags
                 FROM events_with_display_dates 
                 WHERE dataset_id = $1
                 ORDER BY astronomical_year ASC`
@@ -87,7 +87,7 @@ func (r *EventRepository) GetByDatasetID(datasetID int) ([]models.HistoricalEven
                 var tagsJSON []byte
                 
                 err := rows.Scan(&event.ID, &event.Name, &event.Description, &event.Latitude, 
-                        &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.Source, &event.DisplayDate, &event.AstronomicalYear, &event.DatasetID, &event.CreatedBy, &event.UpdatedBy, &event.CreatedAt, &event.UpdatedAt, &event.NameEn, &event.NameRu, &event.DescriptionEn, &event.DescriptionRu, &tagsJSON)
+                        &event.Longitude, &event.EventDate, &event.Era, &event.LensType, &event.Source, &event.DisplayDate, &event.DatasetID, &event.CreatedBy, &event.UpdatedBy, &event.CreatedAt, &event.UpdatedAt, &event.NameEn, &event.NameRu, &event.DescriptionEn, &event.DescriptionRu, &tagsJSON)
                 if err != nil {
                         log.Printf("Error scanning event: %v", err)
                         continue

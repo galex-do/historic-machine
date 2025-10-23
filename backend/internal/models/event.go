@@ -22,10 +22,9 @@ type HistoricalEvent struct {
         Era           string    `json:"era"`
         LensType      string    `json:"lens_type"`
         Source        *string   `json:"source,omitempty"` // Optional HTTP/HTTPS link to source
-        DisplayDate      string    `json:"display_date,omitempty"`
-        AstronomicalYear *float64  `json:"astronomical_year,omitempty"` // Year as astronomical year for sorting
-        DatasetID        *int      `json:"dataset_id,omitempty"`
-        CreatedBy        *int      `json:"created_by"`  // User ID who created this event
+        DisplayDate   string    `json:"display_date,omitempty"`
+        DatasetID     *int      `json:"dataset_id,omitempty"`
+        CreatedBy     *int      `json:"created_by"`  // User ID who created this event
         UpdatedBy     *int      `json:"updated_by"`  // User ID who last updated this event
         CreatedAt     time.Time `json:"created_at"`  // When event was created
         UpdatedAt     time.Time `json:"updated_at"`  // When event was last updated

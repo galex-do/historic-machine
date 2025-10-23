@@ -909,10 +909,40 @@ export default {
         return // Need at least 2 events to draw connections
       }
       
-      // Sort events chronologically
+      // Sort events chronologically using the same logic as useEvents
+      const getChronologicalValue = (event) => {
+        let year, month, day
+        const dateString = event.event_date
+        const era = event.era
+        
+        if (dateString.startsWith('-')) {
+          // Negative year format: "-3501-01-01T00:00:00Z" 
+          const parts = dateString.substring(1).split('T')[0].split('-')
+          year = parseInt(parts[0], 10)
+          month = parseInt(parts[1], 10) - 1  // Month is 0-indexed
+          day = parseInt(parts[2], 10)
+        } else {
+          // Positive year format
+          const date = new Date(dateString)
+          year = date.getFullYear()
+          month = date.getMonth()
+          day = date.getDate()
+        }
+        
+        if (era === 'BC') {
+          // For BC: larger year number = older (3000 BC < 1000 BC)
+          // Within a BC year, months run forward: April comes before September
+          return -(year - (month / 12) - (day / 365))
+        } else {
+          // For AD: normal positive years
+          return year + (month / 12) + (day / 365)
+        }
+      }
+      
       const sorted_events = [...this.events].sort((a, b) => {
-        // Use astronomical_year for proper BC/AD sorting
-        return (a.astronomical_year || 0) - (b.astronomical_year || 0)
+        const aValue = getChronologicalValue(a)
+        const bValue = getChronologicalValue(b)
+        return aValue - bValue // Chronological order: older events first
       })
       
       // Generate polyline coordinates, skipping co-located events

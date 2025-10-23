@@ -10,7 +10,8 @@ A comprehensive web application for mapping historical events on an interactive 
   - Draws chronological connections between filtered events with blue dashed polylines (#3b82f6)
   - Arrow decorators at segment midpoints show travel/progression direction
   - Automatically skips connections between co-located events (same coordinates)
-  - Proper bearing calculation using atan2(Δlat, Δlng) with CSS clockwise rotation conversion
+  - Proper chronological sorting using same BC/AD logic as event list (handles BC dates correctly)
+  - Arrow bearing calculation using atan2(Δlat, Δlng) with CSS clockwise rotation conversion
   - Reactive cleanup removes polylines when toggle disabled or filters change
   - Helps visualize historical themes (Hannibal's campaigns, Phoenician expansion, colonization patterns)
   - Components: `WorldMap.vue`, `MapView.vue`, `TagFilterPanel.vue`
