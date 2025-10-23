@@ -149,17 +149,32 @@
             </div>
             <div class="event-date">{{ formatEventDisplayDate(event.event_date, event.era) }}</div>
             <p class="event-description">{{ event.description }}</p>
-            <!-- Event Tags (max 3) -->
+            <!-- Event Tags (expandable) -->
             <div v-if="event.tags && event.tags.length > 0" class="event-tags">
               <span 
-                v-for="tag in event.tags.slice(0, 3)" 
+                v-for="tag in getVisibleTags(event)" 
                 :key="tag.id"
                 class="event-tag"
                 :style="{ backgroundColor: tag.color, color: getContrastColor(tag.color) }"
               >
                 {{ tag.name }}
               </span>
-              <span v-if="event.tags.length > 3" class="more-tags">+{{ event.tags.length - 3 }} more</span>
+              <span 
+                v-if="event.tags.length > 3 && !isEventTagsExpanded(event.id)" 
+                class="more-tags clickable-more-tags"
+                :title="`Click to show ${event.tags.length - 3} more tags: ${getHiddenTagNames(event)}`"
+                @click.stop="toggleEventTags(event.id)"
+              >
+                +{{ event.tags.length - 3 }}
+              </span>
+              <span 
+                v-if="isEventTagsExpanded(event.id) && event.tags.length > 3" 
+                class="show-less-tags clickable-more-tags"
+                title="Click to show less tags"
+                @click.stop="toggleEventTags(event.id)"
+              >
+                Show less
+              </span>
             </div>
           </div>
         </div>
@@ -216,6 +231,7 @@ export default {
       show_event_modal: false,
       show_event_info_modal: false, // New modal for event info
       selected_events: [], // Events to show in info modal
+      expanded_event_tags: {}, // Track which events have expanded tags
       editing_event: null, // Store the event being edited
       is_stepping: false, // Track if current update is from date stepping
       activeLocaleTab: 'en', // Track active locale tab in form
@@ -873,12 +889,39 @@ export default {
     close_event_info_modal() {
       this.show_event_info_modal = false
       this.selected_events = []
+      this.expanded_event_tags = {} // Reset expanded state when closing modal
     },
 
     // Edit event from info modal
     edit_event_from_info(eventId) {
       this.close_event_info_modal()
       this.edit_event(eventId)
+    },
+
+    // Expandable tags functionality for event modal
+    getVisibleTags(event) {
+      if (!event.tags || event.tags.length === 0) return []
+      if (this.isEventTagsExpanded(event.id)) {
+        return event.tags
+      }
+      return event.tags.slice(0, 3)
+    },
+
+    isEventTagsExpanded(eventId) {
+      return this.expanded_event_tags[eventId] === true
+    },
+
+    toggleEventTags(eventId) {
+      // Vue 3 reactivity: create new object to trigger update
+      this.expanded_event_tags = {
+        ...this.expanded_event_tags,
+        [eventId]: !this.expanded_event_tags[eventId]
+      }
+    },
+
+    getHiddenTagNames(event) {
+      if (!event.tags || event.tags.length <= 3) return ''
+      return event.tags.slice(3).map(tag => tag.name).join(', ')
     },
 
     // Get contrast color for text on colored backgrounds
@@ -1067,9 +1110,41 @@ export default {
 }
 
 .more-tags {
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
   font-size: 0.75rem;
-  color: #6b7280;
+  font-weight: 500;
+  color: white;
+  background-color: #a0aec0;
   font-style: italic;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.clickable-more-tags {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.clickable-more-tags:hover {
+  background-color: #718096 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.clickable-more-tags:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.show-less-tags {
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: white;
+  background-color: #a0aec0;
+  font-style: italic;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .map-container {
   position: absolute;

@@ -5,6 +5,13 @@ A comprehensive web application for mapping historical events on an interactive 
 
 ## Recent Changes (October 23, 2025)
 
+- **Expandable Tags in Event Modal**: Event info modal now supports expandable tags functionality
+  - Click "+N" button to show all tags inline (matching EventCard behavior)
+  - "Show less" button appears to collapse back to 3 visible tags
+  - Smooth hover effects and visual feedback for clickable tag controls
+  - Tooltips show hidden tag names when hovering over "+N" indicator
+  - State resets when modal closes for clean UX
+  - Component: `WorldMap.vue`
 - **Auto-Expand Date Range for Template Groups**: When selecting a template group without choosing a specific template, the date range automatically expands to encompass all templates in that group
   - Example: "Phoenician Mediterranean Empire" group auto-sets range to 1500 BC - 146 BC (full civilization span)
   - Example: "Ancient Greece" group auto-sets range to 800 BC - 31 BC (Archaic Period through Hellenistic Period)
