@@ -1,0 +1,981 @@
+{
+  "description": "Dataset imported with 57 events covering the Assyrian Empire from foundation of Assur through Old, Middle, and Neo-Assyrian periods to final fall",
+  "events": [
+    {
+      "date": "01.01.2600",
+      "description": "Foundation of Assur as small Mesopotamian city on Tigris River, establishing religious and political center that would become heart of Assyrian civilization",
+      "description_ru": "Основание Ашшура как небольшого месопотамского города на реке Тигр, создание религиозного и политического центра, который станет сердцем ассирийской цивилизации",
+      "era": "BC",
+      "latitude": 35.4583,
+      "longitude": 43.2611,
+      "name": "Foundation of Assur",
+      "name_ru": "Основание Ашшура",
+      "source": "https://en.wikipedia.org/wiki/Assur",
+      "tags": [
+        "Assyrian",
+        "City",
+        "Foundation",
+        "Assur"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.2025",
+      "description": "Puzur-Ashur I establishes first independent Assyrian dynasty after collapse of Third Dynasty of Ur, marking beginning of Old Assyrian period",
+      "description_ru": "Пузур-Ашшур I основывает первую независимую ассирийскую династию после краха Третьей династии Ура, знаменуя начало староассирийского периода",
+      "era": "BC",
+      "latitude": 35.4583,
+      "longitude": 43.2611,
+      "name": "First Independent Assyrian Dynasty",
+      "name_ru": "Первая независимая ассирийская династия",
+      "source": "https://en.wikipedia.org/wiki/Old_Assyrian_period",
+      "tags": [
+        "Assyrian",
+        "Political",
+        "Independence",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1974",
+      "description": "King Erishum I of Assur conducts earliest known free trade experiment in world history, revolutionizing commerce across Mesopotamia and Anatolia",
+      "description_ru": "Царь Эришум I Ашшурский проводит древнейший известный эксперимент свободной торговли в мировой истории, революционизируя коммерцию в Месопотамии и Анатолии",
+      "era": "BC",
+      "latitude": 35.4583,
+      "longitude": 43.2611,
+      "name": "World's First Free Trade Experiment",
+      "name_ru": "Первый в мире эксперимент свободной торговли",
+      "source": "https://en.wikipedia.org/wiki/Erishum_I",
+      "tags": [
+        "Assyrian",
+        "Trade",
+        "Economic",
+        "Innovation"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1950",
+      "description": "Assyrians establish major trading colony at Kanesh (Kültepe) in Anatolia, creating hub for extensive trade network that will dominate Near Eastern commerce",
+      "description_ru": "Ассирийцы основывают крупную торговую колонию в Канеше (Кюльтепе) в Анатолии, создавая центр обширной торговой сети, которая будет доминировать в ближневосточной коммерции",
+      "era": "BC",
+      "latitude": 38.8444,
+      "longitude": 35.6431,
+      "name": "Founding of Kanesh Trade Colony",
+      "name_ru": "Основание торговой колонии Канеш",
+      "source": "https://en.wikipedia.org/wiki/Kanesh",
+      "tags": [
+        "Assyrian",
+        "Trade",
+        "Colonization",
+        "Anatolia"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1920",
+      "description": "Under King Sargon I, Old Assyrian trade reaches peak with 25 tons of Anatolian silver flowing to Assur annually in exchange for tin and textiles",
+      "description_ru": "При царе Саргоне I староассирийская торговля достигает пика: 25 тонн анатолийского серебра ежегодно поступает в Ашшур в обмен на олово и ткани",
+      "era": "BC",
+      "latitude": 35.4583,
+      "longitude": 43.2611,
+      "name": "Peak of Old Assyrian Trade",
+      "name_ru": "Пик староассирийской торговли",
+      "source": "https://en.wikipedia.org/wiki/Old_Assyrian_period",
+      "tags": [
+        "Assyrian",
+        "Trade",
+        "Economic",
+        "Silver"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1813",
+      "description": "Amorite king Shamshi-Adad I conquers Assur, establishing Kingdom of Upper Mesopotamia and temporarily ending first Assyrian royal dynasty",
+      "description_ru": "Аморейский царь Шамши-Адад I завоевывает Ашшур, основывая Царство Верхней Месопотамии и временно прекращая первую ассирийскую царскую династию",
+      "era": "BC",
+      "latitude": 35.4583,
+      "longitude": 43.2611,
+      "name": "Shamshi-Adad I Conquers Assur",
+      "name_ru": "Шамши-Адад I завоевывает Ашшур",
+      "source": "https://en.wikipedia.org/wiki/Shamshi-Adad_I",
+      "tags": [
+        "Assyrian",
+        "Military",
+        "Conquest",
+        "Amorite"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1792",
+      "description": "Hammurabi of Babylon subjugates Assyrian lands; Assyrian trading colonies in Anatolia cease operations, ending Old Assyrian commercial empire",
+      "description_ru": "Хаммурапи Вавилонский покоряет ассирийские земли; ассирийские торговые колонии в Анатолии прекращают деятельность, завершая староассирийскую торговую империю",
+      "era": "BC",
+      "latitude": 35.4583,
+      "longitude": 43.2611,
+      "name": "End of Old Assyrian Trade Empire",
+      "name_ru": "Конец староассирийской торговой империи",
+      "source": "https://en.wikipedia.org/wiki/Old_Assyrian_period",
+      "tags": [
+        "Assyrian",
+        "Babylon",
+        "Trade",
+        "Decline"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1363",
+      "description": "Ashur-uballit I breaks free from Mitanni domination, declares himself king, and initiates Middle Assyrian Empire as independent territorial power",
+      "description_ru": "Ашшур-убаллит I освобождается от господства Митанни, провозглашает себя царем и начинает Среднеассирийскую империю как независимую территориальную державу",
+      "era": "BC",
+      "latitude": 35.4583,
+      "longitude": 43.2611,
+      "name": "Birth of Middle Assyrian Empire",
+      "name_ru": "Рождение Среднеассирийской империи",
+      "source": "https://en.wikipedia.org/wiki/Ashur-uballit_I",
+      "tags": [
+        "Assyrian",
+        "Independence",
+        "Political",
+        "Empire"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1330",
+      "description": "Ashur-uballit I conquers fertile regions between Tigris and Upper Zab rivers, establishing territorial foundation for future Assyrian expansion",
+      "description_ru": "Ашшур-убаллит I завоевывает плодородные регионы между Тигром и Верхним Забом, закладывая территориальную основу для будущей ассирийской экспансии",
+      "era": "BC",
+      "latitude": 36.35,
+      "longitude": 43.15,
+      "name": "Conquest of Northern Mesopotamia",
+      "name_ru": "Завоевание Северной Месопотамии",
+      "source": "https://en.wikipedia.org/wiki/Ashur-uballit_I",
+      "tags": [
+        "Assyrian",
+        "Military",
+        "Conquest",
+        "Expansion"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1307",
+      "description": "Adad-nirari I completely conquers Mitanni kingdom and initiates mass deportation policy, establishing brutal strategy that will define Assyrian imperial control",
+      "description_ru": "Ададнирари I полностью завоевывает царство Митанни и начинает политику массовой депортации, устанавливая жестокую стратегию, которая будет определять ассирийский имперский контроль",
+      "era": "BC",
+      "latitude": 36.7,
+      "longitude": 40.75,
+      "name": "Conquest of Mitanni",
+      "name_ru": "Завоевание Митанни",
+      "source": "https://en.wikipedia.org/wiki/Adad-nirari_I",
+      "tags": [
+        "Assyrian",
+        "Military",
+        "Conquest",
+        "Mitanni"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1275",
+      "description": "Adad-nirari I campaigns against Babylonia, establishing Assyria as major rival to Babylon and beginning centuries of conflict between two powers",
+      "description_ru": "Ададнирари I проводит кампании против Вавилонии, устанавливая Ассирию как главного соперника Вавилона и начиная века конфликта между двумя державами",
+      "era": "BC",
+      "latitude": 32.5355,
+      "longitude": 44.4275,
+      "name": "First Assyrian-Babylonian Wars",
+      "name_ru": "Первые ассиро-вавилонские войны",
+      "source": "https://en.wikipedia.org/wiki/Adad-nirari_I",
+      "tags": [
+        "Assyrian",
+        "Babylon",
+        "War",
+        "Military"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1273",
+      "description": "Shalmaneser I founds city of Kalhu (Nimrud), consolidating control over northern Mesopotamia and launching campaigns into Syria",
+      "description_ru": "Салманасар I основывает город Калху (Нимруд), консолидируя контроль над Северной Месопотамией и запуская кампании в Сирию",
+      "era": "BC",
+      "latitude": 36.0986,
+      "longitude": 43.3294,
+      "name": "Founding of Kalhu",
+      "name_ru": "Основание Калху",
+      "source": "https://en.wikipedia.org/wiki/Shalmaneser_I",
+      "tags": [
+        "Assyrian",
+        "City",
+        "Foundation",
+        "Military"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1243",
+      "description": "Tukulti-Ninurta I conquers Babylonia and captures Kashtiliash IV, becoming first Assyrian king to rule both kingdoms simultaneously",
+      "description_ru": "Тукульти-Нинурта I завоевывает Вавилонию и захватывает Каштилиаша IV, становясь первым ассирийским царем, правящим обоими царствами одновременно",
+      "era": "BC",
+      "latitude": 32.5355,
+      "longitude": 44.4275,
+      "name": "Conquest of Babylon",
+      "name_ru": "Завоевание Вавилона",
+      "source": "https://en.wikipedia.org/wiki/Tukulti-Ninurta_I",
+      "tags": [
+        "Assyrian",
+        "Babylon",
+        "Conquest",
+        "Military"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1240",
+      "description": "Tukulti-Ninurta I builds new capital Kar-Tukulti-Ninurta ('Fortress of Tukulti-Ninurta'), establishing magnificent royal residence on Tigris River",
+      "description_ru": "Тукульти-Нинурта I строит новую столицу Кар-Тукульти-Нинурта ('Крепость Тукульти-Нинурты'), создавая великолепную царскую резиденцию на реке Тигр",
+      "era": "BC",
+      "latitude": 35.47,
+      "longitude": 43.28,
+      "name": "Building of Kar-Tukulti-Ninurta",
+      "name_ru": "Строительство Кар-Тукульти-Нинурты",
+      "source": "https://en.wikipedia.org/wiki/Kar-Tukulti-Ninurta",
+      "tags": [
+        "Assyrian",
+        "City",
+        "Architecture",
+        "Capital"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1207",
+      "description": "Tukulti-Ninurta I assassinated by his son, triggering period of political instability and civil war that weakens Middle Assyrian Empire",
+      "description_ru": "Тукульти-Нинурта I убит своим сыном, вызывая период политической нестабильности и гражданской войны, ослабляющий Среднеассирийскую империю",
+      "era": "BC",
+      "latitude": 35.47,
+      "longitude": 43.28,
+      "name": "Assassination of Tukulti-Ninurta I",
+      "name_ru": "Убийство Тукульти-Нинурты I",
+      "source": "https://en.wikipedia.org/wiki/Tukulti-Ninurta_I",
+      "tags": [
+        "Assyrian",
+        "Political",
+        "Assassination",
+        "Civil War"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1178",
+      "description": "Ashur-dan I defeats Elamites under Shutruk-Nahhunte, retakes Arrapkha, and forces favorable treaty on Elam, stabilizing eastern frontier",
+      "description_ru": "Ашшур-дан I побеждает эламитов под руководством Шутрук-Наххунте, отвоевывает Аррапху и заключает выгодный договор с Эламом, стабилизируя восточную границу",
+      "era": "BC",
+      "latitude": 36.1939,
+      "longitude": 44.0092,
+      "name": "Defeat of Elam",
+      "name_ru": "Поражение Элама",
+      "source": "https://en.wikipedia.org/wiki/Ashur-dan_I",
+      "tags": [
+        "Assyrian",
+        "Elam",
+        "War",
+        "Military"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1115",
+      "description": "Tiglath-Pileser I ascends throne, beginning greatest military campaigns of Middle Assyrian period and extending influence to Mediterranean coast",
+      "description_ru": "Тиглатпаласар I восходит на трон, начиная величайшие военные кампании среднеассирийского периода и расширяя влияние до средиземноморского побережья",
+      "era": "BC",
+      "latitude": 35.4583,
+      "longitude": 43.2611,
+      "name": "Reign of Tiglath-Pileser I Begins",
+      "name_ru": "Начало правления Тиглатпаласара I",
+      "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_I",
+      "tags": [
+        "Assyrian",
+        "Political",
+        "Military",
+        "Expansion"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1112",
+      "description": "Tiglath-Pileser I defeats Aramean tribes encroaching on Assyrian territory, temporarily halting nomadic invasions threatening empire's existence",
+      "description_ru": "Тиглатпаласар I побеждает арамейские племена, посягающие на ассирийскую территорию, временно останавливая кочевнические вторжения, угрожающие существованию империи",
+      "era": "BC",
+      "latitude": 36.2,
+      "longitude": 41.5,
+      "name": "Battle Against Arameans",
+      "name_ru": "Битва против арамеев",
+      "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_I",
+      "tags": [
+        "Assyrian",
+        "Military",
+        "Arameans",
+        "Battle"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1100",
+      "description": "Tiglath-Pileser I reaches Mediterranean Sea and receives tribute from Phoenician cities, marking westernmost extent of Middle Assyrian power",
+      "description_ru": "Тиглатпаласар I достигает Средиземного моря и получает дань от финикийских городов, отмечая самую западную протяженность среднеассирийской власти",
+      "era": "BC",
+      "latitude": 34.4215,
+      "longitude": 35.8214,
+      "name": "Tiglath-Pileser I Reaches Mediterranean",
+      "name_ru": "Тиглатпаласар I достигает Средиземноморья",
+      "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_I",
+      "tags": [
+        "Assyrian",
+        "Expansion",
+        "Mediterranean",
+        "Phoenician"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0934",
+      "description": "Ashur-dan II initiates Neo-Assyrian revival through extensive military campaigns and governmental reforms, reversing decades of decline",
+      "description_ru": "Ашшур-дан II начинает неоассирийское возрождение через обширные военные кампании и правительственные реформы, обращая вспять десятилетия упадка",
+      "era": "BC",
+      "latitude": 35.4583,
+      "longitude": 43.2611,
+      "name": "Neo-Assyrian Revival Initiated",
+      "name_ru": "Начато неоассирийское возрождение",
+      "source": "https://en.wikipedia.org/wiki/Ashur-dan_II",
+      "tags": [
+        "Assyrian",
+        "Political",
+        "Revival",
+        "Reform"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0911",
+      "description": "Adad-nirari II becomes first king of Neo-Assyrian Empire, launching renewed expansion toward Babylonia and establishing foundations for future dominance",
+      "description_ru": "Ададнирари II становится первым царем Неоассирийской империи, запуская возобновленную экспансию в сторону Вавилонии и закладывая основы будущего господства",
+      "era": "BC",
+      "latitude": 35.4583,
+      "longitude": 43.2611,
+      "name": "Beginning of Neo-Assyrian Empire",
+      "name_ru": "Начало Неоассирийской империи",
+      "source": "https://en.wikipedia.org/wiki/Adad-nirari_II",
+      "tags": [
+        "Assyrian",
+        "Empire",
+        "Political",
+        "Expansion"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0884",
+      "description": "Ashurnasirpal II moves Assyrian capital to Kalhu (Nimrud), building magnificent palace decorated with colossal stone reliefs depicting military victories",
+      "description_ru": "Ашшурнацирапал II переносит ассирийскую столицу в Калху (Нимруд), строя великолепный дворец, украшенный колоссальными каменными рельефами, изображающими военные победы",
+      "era": "BC",
+      "latitude": 36.0986,
+      "longitude": 43.3294,
+      "name": "Capital Moved to Kalhu",
+      "name_ru": "Столица перенесена в Калху",
+      "source": "https://en.wikipedia.org/wiki/Ashurnasirpal_II",
+      "tags": [
+        "Assyrian",
+        "Capital",
+        "Architecture",
+        "City"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0879",
+      "description": "Ashurnasirpal II extends Assyrian rule through Canaan to Mediterranean, establishing network of vassal states paying tribute to empire",
+      "description_ru": "Ашшурнацирапал II распространяет ассирийское правление через Ханаан до Средиземноморья, устанавливая сеть вассальных государств, платящих дань империи",
+      "era": "BC",
+      "latitude": 33.9,
+      "longitude": 35.5,
+      "name": "Expansion to Levant",
+      "name_ru": "Экспансия в Левант",
+      "source": "https://en.wikipedia.org/wiki/Ashurnasirpal_II",
+      "tags": [
+        "Assyrian",
+        "Military",
+        "Expansion",
+        "Levant"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0853",
+      "description": "Shalmaneser III fights Battle of Qarqar against coalition of Syrian states including Israel and Damascus, claiming victory despite tactical stalemate",
+      "description_ru": "Салманасар III сражается в битве при Каркаре против коалиции сирийских государств, включая Израиль и Дамаск, заявляя о победе несмотря на тактическую ничью",
+      "era": "BC",
+      "latitude": 35.3256,
+      "longitude": 36.5858,
+      "name": "Battle of Qarqar",
+      "name_ru": "Битва при Каркаре",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Qarqar",
+      "tags": [
+        "Assyrian",
+        "Battle",
+        "Syria",
+        "Military",
+        "Israel"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0745",
+      "description": "Tiglath-Pileser III seizes throne (possibly through usurpation), initiating radical military and administrative reforms that transform Assyria into professional war machine",
+      "description_ru": "Тиглатпаласар III захватывает трон (возможно, через узурпацию), начиная радикальные военные и административные реформы, превращающие Ассирию в профессиональную военную машину",
+      "era": "BC",
+      "latitude": 35.4583,
+      "longitude": 43.2611,
+      "name": "Tiglath-Pileser III Ascends Throne",
+      "name_ru": "Тиглатпаласар III восходит на трон",
+      "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
+      "tags": [
+        "Assyrian",
+        "Political",
+        "Reform",
+        "Military"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0743",
+      "description": "Tiglath-Pileser III defeats Sarduri II of Urartu at Battle near Arpad, ending Urartian dominance and establishing Assyria as supreme power in Near East",
+      "description_ru": "Тиглатпаласар III побеждает Сардури II Урартского в битве близ Арпада, завершая урартское господство и устанавливая Ассирию как высшую державу на Ближнем Востоке",
+      "era": "BC",
+      "latitude": 36.5922,
+      "longitude": 37.1711,
+      "name": "Battle of Arpad",
+      "name_ru": "Битва при Арпаде",
+      "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
+      "tags": [
+        "Assyrian",
+        "Battle",
+        "Urartu",
+        "Military"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0740",
+      "description": "Tiglath-Pileser III creates first professional standing army with heavy cavalry units, replacing seasonal conscription and revolutionizing ancient warfare",
+      "description_ru": "Тиглатпаласар III создает первую профессиональную постоянную армию с тяжелыми кавалерийскими подразделениями, заменяя сезонный призыв и революционизируя древнюю войну",
+      "era": "BC",
+      "latitude": 35.4583,
+      "longitude": 43.2611,
+      "name": "First Professional Standing Army",
+      "name_ru": "Первая профессиональная постоянная армия",
+      "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
+      "tags": [
+        "Assyrian",
+        "Military",
+        "Innovation",
+        "Army"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0734",
+      "description": "Tiglath-Pileser III campaigns through southern Syria and Philistia, reaching Egyptian border and expanding empire to unprecedented territorial extent",
+      "description_ru": "Тиглатпаласар III проводит кампании через южную Сирию и Филистию, достигая египетской границы и расширяя империю до беспрецедентных территориальных размеров",
+      "era": "BC",
+      "latitude": 31.3547,
+      "longitude": 34.3088,
+      "name": "Campaign to Egyptian Border",
+      "name_ru": "Кампания к египетской границе",
+      "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
+      "tags": [
+        "Assyrian",
+        "Military",
+        "Expansion",
+        "Egypt"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0733",
+      "description": "Tiglath-Pileser III devastates northern Kingdom of Israel, forcing surrender of Galilee and Gilead territories and deporting thousands to Assyria",
+      "description_ru": "Тиглатпаласар III опустошает северное Израильское царство, вынуждая сдать территории Галилеи и Галаада и депортируя тысячи людей в Ассирию",
+      "era": "BC",
+      "latitude": 32.7940,
+      "longitude": 35.5308,
+      "name": "Conquest of Northern Israel",
+      "name_ru": "Завоевание Северного Израиля",
+      "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
+      "tags": [
+        "Assyrian",
+        "Israel",
+        "Conquest",
+        "Military"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0732",
+      "description": "Tiglath-Pileser III conquers Damascus, kills King Rezin, and installs Assyrian governor, ending independent Aramean kingdom and securing western frontier",
+      "description_ru": "Тиглатпаласар III завоевывает Дамаск, убивает царя Рецина и устанавливает ассирийского губернатора, завершая независимое арамейское царство и обеспечивая западную границу",
+      "era": "BC",
+      "latitude": 33.5138,
+      "longitude": 36.2765,
+      "name": "Fall of Damascus",
+      "name_ru": "Падение Дамаска",
+      "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
+      "tags": [
+        "Assyrian",
+        "Damascus",
+        "Conquest",
+        "Arameans"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0729",
+      "description": "Tiglath-Pileser III conquers Babylonia and becomes first king to rule both Assyria and Babylon simultaneously since Tukulti-Ninurta I",
+      "description_ru": "Тиглатпаласар III завоевывает Вавилонию и становится первым царем, правящим одновременно Ассирией и Вавилоном со времен Тукульти-Нинурты I",
+      "era": "BC",
+      "latitude": 32.5355,
+      "longitude": 44.4275,
+      "name": "Annexation of Babylonia",
+      "name_ru": "Аннексия Вавилонии",
+      "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
+      "tags": [
+        "Assyrian",
+        "Babylon",
+        "Conquest",
+        "Political"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0722",
+      "description": "Sargon II (likely through usurpation) completes 3-year siege of Samaria, conquers Kingdom of Israel, and deports 27,290 Israelites to Assyria",
+      "description_ru": "Саргон II (вероятно, через узурпацию) завершает 3-летнюю осаду Самарии, завоевывает Израильское царство и депортирует 27,290 израильтян в Ассирию",
+      "era": "BC",
+      "latitude": 32.2769,
+      "longitude": 35.1933,
+      "name": "Fall of Samaria and Israel",
+      "name_ru": "Падение Самарии и Израиля",
+      "source": "https://en.wikipedia.org/wiki/Sargon_II",
+      "tags": [
+        "Assyrian",
+        "Israel",
+        "Conquest",
+        "Siege"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0720",
+      "description": "Sargon II wins decisive Battle of Qarqar against Syrian coalition, crushing western resistance and securing Assyrian dominance over Levant",
+      "description_ru": "Саргон II одерживает решающую победу в битве при Каркаре против сирийской коалиции, сокрушая западное сопротивление и обеспечивая ассирийское господство над Левантом",
+      "era": "BC",
+      "latitude": 35.3256,
+      "longitude": 36.5858,
+      "name": "Sargon's Victory at Qarqar",
+      "name_ru": "Победа Саргона при Каркаре",
+      "source": "https://en.wikipedia.org/wiki/Sargon_II",
+      "tags": [
+        "Assyrian",
+        "Battle",
+        "Syria",
+        "Military"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0717",
+      "description": "Sargon II captures Carchemish, last independent Hittite city-state, securing massive silver treasury and completing Assyrian control of Syria",
+      "description_ru": "Саргон II захватывает Каркемиш, последний независимый хеттский город-государство, получая огромную серебряную казну и завершая ассирийский контроль над Сирией",
+      "era": "BC",
+      "latitude": 36.8261,
+      "longitude": 38.0189,
+      "name": "Conquest of Carchemish",
+      "name_ru": "Завоевание Каркемиша",
+      "source": "https://en.wikipedia.org/wiki/Sargon_II",
+      "tags": [
+        "Assyrian",
+        "Hittite",
+        "Conquest",
+        "Syria"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0714",
+      "description": "Sargon II launches surprise cavalry attack against Urartu, destroys enemy army, and drives King Rusa I to suicide, ending northern threat to empire",
+      "description_ru": "Саргон II наносит внезапный кавалерийский удар по Урарту, уничтожает вражескую армию и доводит царя Русу I до самоубийства, завершая северную угрозу империи",
+      "era": "BC",
+      "latitude": 39.7278,
+      "longitude": 44.8289,
+      "name": "Destruction of Urartu",
+      "name_ru": "Разрушение Урарту",
+      "source": "https://en.wikipedia.org/wiki/Sargon_II",
+      "tags": [
+        "Assyrian",
+        "Urartu",
+        "Battle",
+        "Military"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0710",
+      "description": "Sargon II defeats Marduk-apla-iddina in Babylonia, bringing Neo-Assyrian Empire to greatest territorial extent from Cyprus to Persia",
+      "description_ru": "Саргон II побеждает Мардук-апла-иддина в Вавилонии, доводя Неоассирийскую империю до максимальных территориальных размеров от Кипра до Персии",
+      "era": "BC",
+      "latitude": 32.5355,
+      "longitude": 44.4275,
+      "name": "Empire at Maximum Extent",
+      "name_ru": "Империя в максимальных размерах",
+      "source": "https://en.wikipedia.org/wiki/Sargon_II",
+      "tags": [
+        "Assyrian",
+        "Empire",
+        "Expansion",
+        "Babylon"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0707",
+      "description": "Sargon II founds magnificent new capital Dur-Sharrukin (Khorsabad) with colossal palace featuring extraordinarily large stone relief sculptures",
+      "description_ru": "Саргон II основывает великолепную новую столицу Дур-Шаррукин (Хорсабад) с колоссальным дворцом с чрезвычайно большими каменными рельефными скульптурами",
+      "era": "BC",
+      "latitude": 36.4917,
+      "longitude": 43.2383,
+      "name": "Foundation of Dur-Sharrukin",
+      "name_ru": "Основание Дур-Шаррукина",
+      "source": "https://en.wikipedia.org/wiki/Dur-Sharrukin",
+      "tags": [
+        "Assyrian",
+        "Capital",
+        "City",
+        "Architecture"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0705",
+      "description": "Sargon II killed in battle against Cimmerians; his son Sennacherib abandons Dur-Sharrukin and moves capital to Nineveh",
+      "description_ru": "Саргон II убит в битве с киммерийцами; его сын Синаххериб оставляет Дур-Шаррукин и переносит столицу в Ниневию",
+      "era": "BC",
+      "latitude": 36.3661,
+      "longitude": 43.1528,
+      "name": "Death of Sargon II",
+      "name_ru": "Смерть Саргона II",
+      "source": "https://en.wikipedia.org/wiki/Sargon_II",
+      "tags": [
+        "Assyrian",
+        "Political",
+        "Battle",
+        "Death"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0704",
+      "description": "Sennacherib establishes Nineveh as new Assyrian capital, beginning construction of 'Palace Without Rival' with colossal guardian figures and magnificent gardens",
+      "description_ru": "Синаххериб устанавливает Ниневию как новую ассирийскую столицу, начиная строительство 'Дворца без соперников' с колоссальными фигурами-стражами и великолепными садами",
+      "era": "BC",
+      "latitude": 36.3661,
+      "longitude": 43.1528,
+      "name": "Nineveh Becomes Capital",
+      "name_ru": "Ниневия становится столицей",
+      "source": "https://en.wikipedia.org/wiki/Sennacherib",
+      "tags": [
+        "Assyrian",
+        "Nineveh",
+        "Capital",
+        "Architecture"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0701",
+      "description": "Sennacherib invades Judah after King Hezekiah withholds tribute, capturing 46 fortified cities and laying siege to Jerusalem",
+      "description_ru": "Синаххериб вторгается в Иудею после того, как царь Езекия задерживает дань, захватывая 46 укрепленных городов и осаждая Иерусалим",
+      "era": "BC",
+      "latitude": 31.7683,
+      "longitude": 35.2137,
+      "name": "Sennacherib's Invasion of Judah",
+      "name_ru": "Вторжение Синаххериба в Иудею",
+      "source": "https://en.wikipedia.org/wiki/Sennacherib%27s_Annals",
+      "tags": [
+        "Assyrian",
+        "Judah",
+        "Military",
+        "Siege"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.07.0701",
+      "description": "Sennacherib besieges and conquers Lachish, second most important city of Judah, in brutal campaign commemorated in famous palace relief sculptures",
+      "description_ru": "Синаххериб осаждает и завоевывает Лахиш, второй по важности город Иудеи, в жестокой кампании, увековеченной в знаменитых дворцовых рельефных скульптурах",
+      "era": "BC",
+      "latitude": 31.5653,
+      "longitude": 34.8467,
+      "name": "Siege of Lachish",
+      "name_ru": "Осада Лахиша",
+      "source": "https://en.wikipedia.org/wiki/Siege_of_Lachish",
+      "tags": [
+        "Assyrian",
+        "Judah",
+        "Siege",
+        "Battle"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0689",
+      "description": "Sennacherib brutally sacks Babylon after persistent rebellions, destroying temples and flooding city, committing sacrilege that shocks ancient world",
+      "description_ru": "Синаххериб жестоко разграбляет Вавилон после постоянных восстаний, разрушая храмы и затапливая город, совершая святотатство, шокирующее древний мир",
+      "era": "BC",
+      "latitude": 32.5355,
+      "longitude": 44.4275,
+      "name": "Sack of Babylon",
+      "name_ru": "Разграбление Вавилона",
+      "source": "https://en.wikipedia.org/wiki/Sennacherib",
+      "tags": [
+        "Assyrian",
+        "Babylon",
+        "Destruction",
+        "War"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0681",
+      "description": "Sennacherib assassinated by two of his sons in temple; they flee to Armenia while third son Esarhaddon seizes throne and pursues murderers",
+      "description_ru": "Синаххериб убит двумя своими сыновьями в храме; они бегут в Армению, пока третий сын Асархаддон захватывает трон и преследует убийц",
+      "era": "BC",
+      "latitude": 36.3661,
+      "longitude": 43.1528,
+      "name": "Assassination of Sennacherib",
+      "name_ru": "Убийство Синаххериба",
+      "source": "https://en.wikipedia.org/wiki/Sennacherib",
+      "tags": [
+        "Assyrian",
+        "Political",
+        "Assassination"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0671",
+      "description": "Esarhaddon conquers Memphis and Lower Egypt, extending Assyrian Empire to its greatest geographical extent and fulfilling centuries-old ambitions",
+      "description_ru": "Асархаддон завоевывает Мемфис и Нижний Египет, расширяя Ассирийскую империю до максимальных географических размеров и исполняя вековые амбиции",
+      "era": "BC",
+      "latitude": 29.8467,
+      "longitude": 31.2192,
+      "name": "Conquest of Egypt",
+      "name_ru": "Завоевание Египта",
+      "source": "https://en.wikipedia.org/wiki/Esarhaddon",
+      "tags": [
+        "Assyrian",
+        "Egypt",
+        "Conquest",
+        "Military"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0668",
+      "description": "Ashurbanipal becomes last great Assyrian king, inheriting empire at maximum territorial extent from Mediterranean to Persian Gulf",
+      "description_ru": "Ашшурбанипал становится последним великим ассирийским царем, наследуя империю в максимальных территориальных размерах от Средиземноморья до Персидского залива",
+      "era": "BC",
+      "latitude": 36.3661,
+      "longitude": 43.1528,
+      "name": "Reign of Ashurbanipal Begins",
+      "name_ru": "Начало правления Ашшурбанипала",
+      "source": "https://en.wikipedia.org/wiki/Ashurbanipal",
+      "tags": [
+        "Assyrian",
+        "Political",
+        "Empire"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0663",
+      "description": "Ashurbanipal's forces sack Thebes in Upper Egypt, marking deepest Assyrian penetration into Africa and demonstrating unprecedented military reach",
+      "description_ru": "Войска Ашшурбанипала разграбляют Фивы в Верхнем Египте, знаменуя глубочайшее ассирийское проникновение в Африку и демонстрируя беспрецедентный военный охват",
+      "era": "BC",
+      "latitude": 25.7188,
+      "longitude": 32.6572,
+      "name": "Sack of Thebes",
+      "name_ru": "Разграбление Фив",
+      "source": "https://en.wikipedia.org/wiki/Ashurbanipal",
+      "tags": [
+        "Assyrian",
+        "Egypt",
+        "Military",
+        "Conquest"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0650",
+      "description": "Ashurbanipal establishes Library of Nineveh, collecting thousands of cuneiform tablets preserving Mesopotamian knowledge, myths, and historical records",
+      "description_ru": "Ашшурбанипал основывает Библиотеку Ниневии, собирая тысячи клинописных табличек, сохраняющих месопотамские знания, мифы и исторические записи",
+      "era": "BC",
+      "latitude": 36.3661,
+      "longitude": 43.1528,
+      "name": "Library of Nineveh Founded",
+      "name_ru": "Основана Библиотека Ниневии",
+      "source": "https://en.wikipedia.org/wiki/Library_of_Ashurbanipal",
+      "tags": [
+        "Assyrian",
+        "Culture",
+        "Library",
+        "Literature",
+        "Nineveh"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0642",
+      "description": "Ashurbanipal launches first of three devastating campaigns against Elam, systematically destroying cities and deporting populations in total war",
+      "description_ru": "Ашшурбанипал запускает первую из трех разрушительных кампаний против Элама, систематически уничтожая города и депортируя население в тотальной войне",
+      "era": "BC",
+      "latitude": 32.1895,
+      "longitude": 48.2544,
+      "name": "First Elamite Campaign",
+      "name_ru": "Первая эламская кампания",
+      "source": "https://en.wikipedia.org/wiki/Ashurbanipal",
+      "tags": [
+        "Assyrian",
+        "Elam",
+        "War",
+        "Military"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0639",
+      "description": "Ashurbanipal completes annihilation of Elam, sacking capital Susa and ending ancient Elamite civilization in massive demonstration of Assyrian military power",
+      "description_ru": "Ашшурбанипал завершает уничтожение Элама, разграбляя столицу Сузы и завершая древнюю эламскую цивилизацию в массовой демонстрации ассирийской военной мощи",
+      "era": "BC",
+      "latitude": 32.1895,
+      "longitude": 48.2544,
+      "name": "Destruction of Elam",
+      "name_ru": "Уничтожение Элама",
+      "source": "https://en.wikipedia.org/wiki/Ashurbanipal",
+      "tags": [
+        "Assyrian",
+        "Elam",
+        "Destruction",
+        "Military"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0652",
+      "description": "Ashurbanipal's brother Shamash-shum-ukin rebels in Babylon, triggering brutal civil war that devastates both kingdoms and weakens imperial cohesion",
+      "description_ru": "Брат Ашшурбанипала Шамаш-шум-укин восстает в Вавилоне, вызывая жестокую гражданскую войну, опустошающую оба царства и ослабляющую имперскую сплоченность",
+      "era": "BC",
+      "latitude": 32.5355,
+      "longitude": 44.4275,
+      "name": "Babylonian Civil War Begins",
+      "name_ru": "Начинается вавилонская гражданская война",
+      "source": "https://en.wikipedia.org/wiki/Ashurbanipal",
+      "tags": [
+        "Assyrian",
+        "Babylon",
+        "Civil War",
+        "Political"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0627",
+      "description": "Death of Ashurbanipal marks beginning of rapid imperial collapse; constant warfare has depleted manpower and exhausted resources beyond recovery",
+      "description_ru": "Смерть Ашшурбанипала знаменует начало быстрого имперского краха; постоянная война истощила людские ресурсы и исчерпала ресурсы без возможности восстановления",
+      "era": "BC",
+      "latitude": 36.3661,
+      "longitude": 43.1528,
+      "name": "Death of Ashurbanipal",
+      "name_ru": "Смерть Ашшурбанипала",
+      "source": "https://en.wikipedia.org/wiki/Ashurbanipal",
+      "tags": [
+        "Assyrian",
+        "Political",
+        "Death",
+        "Decline"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0626",
+      "description": "Nabopolassar seizes Babylon and establishes Neo-Babylonian Empire, declaring independence from Assyria and beginning systematic rebellion",
+      "description_ru": "Набопаласар захватывает Вавилон и основывает Нововавилонскую империю, объявляя независимость от Ассирии и начиная систематическое восстание",
+      "era": "BC",
+      "latitude": 32.5355,
+      "longitude": 44.4275,
+      "name": "Babylonian Independence",
+      "name_ru": "Вавилонская независимость",
+      "source": "https://en.wikipedia.org/wiki/Nabopolassar",
+      "tags": [
+        "Assyrian",
+        "Babylon",
+        "Independence",
+        "Rebellion"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.08.0612",
+      "description": "Coalition of Babylonians, Medes, and Scythians sacks and burns Nineveh after three-month siege, destroying Assyrian capital and imperial power",
+      "description_ru": "Коалиция вавилонян, мидян и скифов разграбляет и сжигает Ниневию после трехмесячной осады, уничтожая ассирийскую столицу и имперскую власть",
+      "era": "BC",
+      "latitude": 36.3661,
+      "longitude": 43.1528,
+      "name": "Fall of Nineveh",
+      "name_ru": "Падение Ниневии",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Nineveh_(612_BC)",
+      "tags": [
+        "Assyrian",
+        "Nineveh",
+        "Fall",
+        "Destruction",
+        "Babylon",
+        "Medes"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0609",
+      "description": "Last Assyrian forces under Ashur-uballit II defeated at Battle of Harran; Neo-Assyrian Empire ends after ruling Near East for three centuries",
+      "description_ru": "Последние ассирийские силы под руководством Ашшур-убаллита II побеждены в битве при Харране; Неоассирийская империя завершается после трех веков правления на Ближнем Востоке",
+      "era": "BC",
+      "latitude": 36.8647,
+      "longitude": 39.0281,
+      "name": "End of Neo-Assyrian Empire",
+      "name_ru": "Конец Неоассирийской империи",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Harran",
+      "tags": [
+        "Assyrian",
+        "Battle",
+        "Fall",
+        "End",
+        "Empire"
+      ],
+      "type": "military"
+    }
+  ],
+  "filename": "assyria_empire.json"
+}
