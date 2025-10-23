@@ -966,35 +966,48 @@ export default {
         return
       }
       
-      // Create and add polyline to map
-      const polyline = L.polyline(polyline_points, {
-        color: '#3b82f6',
-        weight: 3,
-        opacity: 0.7,
-        dashArray: '10, 5',
-        lineJoin: 'round'
-      })
+      // Helper function to interpolate between two colors
+      const interpolateColor = (color1, color2, factor) => {
+        // Parse hex colors
+        const r1 = parseInt(color1.substring(1, 3), 16)
+        const g1 = parseInt(color1.substring(3, 5), 16)
+        const b1 = parseInt(color1.substring(5, 7), 16)
+        const r2 = parseInt(color2.substring(1, 3), 16)
+        const g2 = parseInt(color2.substring(3, 5), 16)
+        const b2 = parseInt(color2.substring(5, 7), 16)
+        
+        // Interpolate
+        const r = Math.round(r1 + (r2 - r1) * factor)
+        const g = Math.round(g1 + (g2 - g1) * factor)
+        const b = Math.round(b1 + (b2 - b1) * factor)
+        
+        return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`
+      }
       
-      // Add arrow decorators using SVG
-      const arrow_svg = `
-        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 10 L10 5 L10 15 Z" fill="#3b82f6" opacity="0.8"/>
-        </svg>
-      `
-      
-      // Create custom arrow icon
-      const arrow_icon = L.divIcon({
-        html: arrow_svg,
-        className: 'narrative-flow-arrow',
-        iconSize: [20, 20],
-        iconAnchor: [0, 10]
-      })
-      
-      // Add arrows along the polyline at regular intervals
+      // Create polyline segments with gradient color (dark blue to light blue)
+      const start_color = '#1e40af' // Dark blue (older events)
+      const end_color = '#93c5fd'   // Light blue (newer events)
       const line_length = polyline_points.length
+      
       for (let i = 0; i < line_length - 1; i++) {
         const start = polyline_points[i]
         const end = polyline_points[i + 1]
+        
+        // Calculate color for this segment based on position in sequence
+        const progress = i / (line_length - 1)
+        const segment_color = interpolateColor(start_color, end_color, progress)
+        
+        // Create individual polyline segment with gradient color
+        const segment = L.polyline([start, end], {
+          color: segment_color,
+          weight: 3,
+          opacity: 0.8,
+          dashArray: '10, 5',
+          lineJoin: 'round'
+        })
+        
+        segment.addTo(this.map)
+        this.polyline_layers.push(segment)
         
         // Calculate midpoint for arrow placement
         const mid_lat = (start[0] + end[0]) / 2
@@ -1005,12 +1018,12 @@ export default {
         const delta_lng = end[1] - start[1]
         const angle = -Math.atan2(delta_lat, delta_lng) * 180 / Math.PI + 180
         
-        // Create arrow marker
+        // Create arrow marker with matching color
         const arrow_marker = L.marker([mid_lat, mid_lng], {
           icon: L.divIcon({
             html: `<div style="transform: rotate(${angle}deg); width: 20px; height: 20px;">
                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                       <path d="M0 10 L10 5 L10 15 Z" fill="#3b82f6" opacity="0.8"/>
+                       <path d="M0 10 L10 5 L10 15 Z" fill="${segment_color}" opacity="0.9"/>
                      </svg>
                    </div>`,
             className: 'narrative-flow-arrow',
@@ -1023,9 +1036,6 @@ export default {
         arrow_marker.addTo(this.map)
         this.polyline_layers.push(arrow_marker)
       }
-      
-      polyline.addTo(this.map)
-      this.polyline_layers.push(polyline)
     },
     
     // Clear all narrative flow polylines from map

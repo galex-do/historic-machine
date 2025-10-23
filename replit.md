@@ -7,8 +7,11 @@ A comprehensive web application for mapping historical events on an interactive 
 
 - **Narrative Flow Visualization**: Interactive feature to visualize historical event progression
   - "Follow Events" toggle button appears in tag filter panel when tags are selected
-  - Draws chronological connections between filtered events with blue dashed polylines (#3b82f6)
+  - Draws chronological connections between filtered events with gradient color polylines
+  - Color gradient transitions from dark blue (#1e40af) at start to light blue (#93c5fd) at end
+  - Gradient makes temporal direction clear when lines converge at same location multiple times
   - Arrow decorators at segment midpoints show travel/progression direction (from older to newer events)
+  - Arrows match segment colors for consistent visual flow
   - Automatically skips connections between co-located events (same coordinates)
   - Proper chronological sorting using same BC/AD logic as event list (handles BC dates correctly)
   - Arrow bearing calculation using atan2(Δlat, Δlng) with 180° flip for correct temporal flow
