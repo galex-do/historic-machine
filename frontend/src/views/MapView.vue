@@ -33,8 +33,10 @@
         <div class="events-sidebar-content" v-show="!sidebarCollapsed">
           <TagFilterPanel
             :selected-tags="selectedTags"
+            :follow-enabled="narrativeFlowEnabled"
             @remove-tag="handleRemoveTag"
             @clear-all-tags="handleClearAllTags"
+            @toggle-follow="handleToggleNarrativeFlow"
           />
           <EventsGrid
             :events="displayedEvents"
@@ -50,6 +52,7 @@
         <WorldMap 
           :events="filteredEvents" 
           :focus-event="focusEvent"
+          :narrative-flow-enabled="narrativeFlowEnabled"
           @event-created="handleEventCreated"
           @event-updated="handleEventUpdated"
           @event-deleted="handleEventDeleted"
@@ -101,6 +104,9 @@ export default {
     // Map filter state
     const mapFilterEnabled = ref(false)
     const mapBounds = ref(null)
+    
+    // Narrative flow state
+    const narrativeFlowEnabled = ref(false)
     
     // Save sidebar state to session storage
     watch(sidebarCollapsed, (newValue) => {
@@ -305,6 +311,10 @@ export default {
       clearTags()
       applyFilters()
     }
+    
+    const handleToggleNarrativeFlow = () => {
+      narrativeFlowEnabled.value = !narrativeFlowEnabled.value
+    }
 
     // Click outside to close dropdown
     const handleClickOutside = (event) => {
@@ -389,12 +399,16 @@ export default {
       handleTagClick,
       handleRemoveTag,
       handleClearAllTags,
+      handleToggleNarrativeFlow,
 
       // Map filter
       displayedEvents,
       handleMapFilterToggle,
       handleMapBoundsChanged,
       worldMap,
+      
+      // Narrative flow
+      narrativeFlowEnabled,
 
       // Localization
       t

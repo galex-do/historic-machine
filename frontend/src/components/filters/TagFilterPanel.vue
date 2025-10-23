@@ -2,13 +2,23 @@
   <div class="tag_filter_panel" v-if="selectedTags.length > 0">
     <div class="tag_filter_header">
       <span class="filter_label">{{ t('filteredByTags') }}:</span>
-      <button 
-        class="clear_all_btn" 
-        @click="$emit('clear-all-tags')"
-        :title="t('clearAllTags')"
-      >
-        {{ t('clearAll') }}
-      </button>
+      <div class="header_actions">
+        <button 
+          class="follow_toggle_btn"
+          :class="{ 'active': followEnabled }"
+          @click="$emit('toggle-follow')"
+          :title="followEnabled ? t('disableNarrativeFlow') : t('enableNarrativeFlow')"
+        >
+          {{ followEnabled ? '🔗' : '○' }} {{ t('followEvents') }}
+        </button>
+        <button 
+          class="clear_all_btn" 
+          @click="$emit('clear-all-tags')"
+          :title="t('clearAllTags')"
+        >
+          {{ t('clearAll') }}
+        </button>
+      </div>
     </div>
     <div class="tag_chips_container">
       <div 
@@ -42,9 +52,13 @@ export default {
     selectedTags: {
       type: Array,
       default: () => []
+    },
+    followEnabled: {
+      type: Boolean,
+      default: false
     }
   },
-  emits: ['remove-tag', 'clear-all-tags'],
+  emits: ['remove-tag', 'clear-all-tags', 'toggle-follow'],
   setup() {
     const { t } = useLocale()
     
@@ -75,6 +89,43 @@ export default {
   font-size: 0.875rem;
   font-weight: 600;
   color: #4a5568;
+}
+
+.header_actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.follow_toggle_btn {
+  background: #e2e8f0;
+  border: 1px solid #cbd5e0;
+  color: #4a5568;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.follow_toggle_btn:hover {
+  background: #cbd5e0;
+  border-color: #a0aec0;
+}
+
+.follow_toggle_btn.active {
+  background: #3b82f6;
+  border-color: #2563eb;
+  color: white;
+}
+
+.follow_toggle_btn.active:hover {
+  background: #2563eb;
+  border-color: #1d4ed8;
 }
 
 .clear_all_btn {

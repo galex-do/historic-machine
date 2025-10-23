@@ -200,6 +200,10 @@ export default {
     focusEvent: {
       type: Object,
       default: null
+    },
+    narrativeFlowEnabled: {
+      type: Boolean,
+      default: false
     }
   },
   emits: ['event-created', 'event-updated', 'event-deleted', 'map-bounds-changed'],
@@ -207,6 +211,7 @@ export default {
     return {
       map: null,
       markers: [],
+      polyline_layers: [], // Store narrative flow polylines
       resize_observer: null,
       show_event_modal: false,
       show_event_info_modal: false, // New modal for event info
@@ -234,6 +239,10 @@ export default {
       handler() {
         if (this.map) {
           this.add_event_markers()
+          // Update narrative flow if enabled
+          if (this.narrativeFlowEnabled) {
+            this.render_narrative_flow()
+          }
           // Only recenter map if not stepping through dates
           if (!this.is_stepping) {
             this.fit_map_to_events()
@@ -260,6 +269,19 @@ export default {
         if (this.map && this.markers.length > 0) {
           console.log('Auth state changed, updating popup content')
           this.update_marker_popups()
+        }
+      },
+      immediate: false
+    },
+    // Handle narrative flow toggle
+    narrativeFlowEnabled: {
+      handler(enabled) {
+        if (this.map) {
+          if (enabled) {
+            this.render_narrative_flow()
+          } else {
+            this.clear_narrative_flow()
+          }
         }
       },
       immediate: false
@@ -876,6 +898,112 @@ export default {
       
       // Return black for light colors, white for dark colors
       return luminance > 0.5 ? '#000000' : '#ffffff'
+    },
+    
+    // Render narrative flow polylines connecting events chronologically
+    render_narrative_flow() {
+      // Clear existing polylines first
+      this.clear_narrative_flow()
+      
+      if (!this.events || this.events.length < 2) {
+        return // Need at least 2 events to draw connections
+      }
+      
+      // Sort events chronologically
+      const sorted_events = [...this.events].sort((a, b) => {
+        // Use astronomical_year for proper BC/AD sorting
+        return (a.astronomical_year || 0) - (b.astronomical_year || 0)
+      })
+      
+      // Generate polyline coordinates, skipping co-located events
+      const polyline_points = []
+      let last_location = null
+      
+      for (const event of sorted_events) {
+        const current_location = [event.latitude, event.longitude]
+        
+        // Only add point if it's different from the last location
+        if (!last_location || 
+            last_location[0] !== current_location[0] || 
+            last_location[1] !== current_location[1]) {
+          polyline_points.push(current_location)
+          last_location = current_location
+        }
+      }
+      
+      // Need at least 2 different locations to draw a line
+      if (polyline_points.length < 2) {
+        return
+      }
+      
+      // Create and add polyline to map
+      const polyline = L.polyline(polyline_points, {
+        color: '#3b82f6',
+        weight: 3,
+        opacity: 0.7,
+        dashArray: '10, 5',
+        lineJoin: 'round'
+      })
+      
+      // Add arrow decorators using SVG
+      const arrow_svg = `
+        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 10 L10 5 L10 15 Z" fill="#3b82f6" opacity="0.8"/>
+        </svg>
+      `
+      
+      // Create custom arrow icon
+      const arrow_icon = L.divIcon({
+        html: arrow_svg,
+        className: 'narrative-flow-arrow',
+        iconSize: [20, 20],
+        iconAnchor: [0, 10]
+      })
+      
+      // Add arrows along the polyline at regular intervals
+      const line_length = polyline_points.length
+      for (let i = 0; i < line_length - 1; i++) {
+        const start = polyline_points[i]
+        const end = polyline_points[i + 1]
+        
+        // Calculate midpoint for arrow placement
+        const mid_lat = (start[0] + end[0]) / 2
+        const mid_lng = (start[1] + end[1]) / 2
+        
+        // Calculate rotation angle (atan2(Δlat, Δlng) gives counterclockwise, negate for CSS clockwise)
+        const delta_lat = end[0] - start[0]
+        const delta_lng = end[1] - start[1]
+        const angle = -Math.atan2(delta_lat, delta_lng) * 180 / Math.PI
+        
+        // Create arrow marker
+        const arrow_marker = L.marker([mid_lat, mid_lng], {
+          icon: L.divIcon({
+            html: `<div style="transform: rotate(${angle}deg); width: 20px; height: 20px;">
+                     <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M0 10 L10 5 L10 15 Z" fill="#3b82f6" opacity="0.8"/>
+                     </svg>
+                   </div>`,
+            className: 'narrative-flow-arrow',
+            iconSize: [20, 20],
+            iconAnchor: [10, 10]
+          }),
+          interactive: false
+        })
+        
+        arrow_marker.addTo(this.map)
+        this.polyline_layers.push(arrow_marker)
+      }
+      
+      polyline.addTo(this.map)
+      this.polyline_layers.push(polyline)
+    },
+    
+    // Clear all narrative flow polylines from map
+    clear_narrative_flow() {
+      this.polyline_layers.forEach(layer => {
+        this.map.removeLayer(layer)
+      })
+      this.polyline_layers = []
     }
   }
 }

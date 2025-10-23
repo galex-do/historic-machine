@@ -120,6 +120,9 @@ const UI_TRANSLATIONS = {
     allTags: 'All Tags',
     searchTags: 'Search tags...',
     noTagsFound: 'No tags found',
+    followEvents: 'Follow',
+    enableNarrativeFlow: 'Enable narrative flow - connect events chronologically',
+    disableNarrativeFlow: 'Disable narrative flow',
     
     // Datasets Table
     columnFilename: 'Filename',
@@ -286,6 +289,9 @@ const UI_TRANSLATIONS = {
     allTags: 'Все теги',
     searchTags: 'Поиск тегов...',
     noTagsFound: 'Теги не найдены',
+    followEvents: 'Следовать',
+    enableNarrativeFlow: 'Включить нарративный поток - соединить события хронологически',
+    disableNarrativeFlow: 'Отключить нарративный поток',
     
     // Datasets Table
     columnFilename: 'Имя файла',
