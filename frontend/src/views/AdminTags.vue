@@ -71,7 +71,19 @@
                 <span v-else class="sort-placeholder">⇅</span>
               </span>
             </th>
-            <th>{{ t('columnUsageCount') }}</th>
+            <th 
+              class="sortable-header" 
+              @click="toggleSort('usage_count')"
+              :class="{ 'active': sortField === 'usage_count' }"
+            >
+              {{ t('columnUsageCount') }}
+              <span class="sort-indicator">
+                <span v-if="sortField === 'usage_count'" class="sort-arrow">
+                  {{ sortDirection === 'asc' ? '▲' : '▼' }}
+                </span>
+                <span v-else class="sort-placeholder">⇅</span>
+              </span>
+            </th>
             <th>{{ t('columnActions') }}</th>
           </tr>
         </thead>
@@ -269,6 +281,9 @@ export default {
         if (sortField.value === 'created_at') {
           aValue = new Date(a.created_at).getTime()
           bValue = new Date(b.created_at).getTime()
+        } else if (sortField.value === 'usage_count') {
+          aValue = getTagUsageCount(a.id)
+          bValue = getTagUsageCount(b.id)
         } else {
           aValue = a[sortField.value] || ''
           bValue = b[sortField.value] || ''
