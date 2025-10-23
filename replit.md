@@ -15,7 +15,7 @@ A comprehensive web application for mapping historical events on an interactive 
   - Created dataset with 57 events spanning 2600 BC - 609 BC (foundation of Assur through fall of empire)
   - Covers Old Assyrian period (trade colonies, Kanesh), Middle Assyrian rise (Ashur-uballit I, Tukulti-Ninurta I), and Neo-Assyrian golden age (Tiglath-Pileser III, Sargon II, Sennacherib, Ashurbanipal)
   - Includes major battles (Qarqar, Arpad, Lachish), conquests (Israel, Damascus, Babylon, Egypt), and cultural achievements (Library of Nineveh)
-  - Added 5 historical period templates to "Imperial Age" group: Old Assyrian Trade Empire, Middle Assyrian Rise, Neo-Assyrian Early Expansion, Neo-Assyrian Golden Age, Fall of Assyria
+  - Added 5 historical period templates split across groups: "Old Assyrian Trade Empire" in "Bronze Age Powers", and "Middle Assyrian Rise", "Neo-Assyrian Early Expansion", "Neo-Assyrian Golden Age", "Fall of Assyria" in "Imperial Age"
   - Professional English/Russian translations for all events and templates
   - Avoids duplication with existing 7 Assyrian-tagged events in other datasets
   - Dataset: `datasets/assyria_empire.json`, Migration: `backend/migrations/009_add_assyrian_templates.sql`
