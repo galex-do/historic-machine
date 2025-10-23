@@ -154,8 +154,10 @@
               <span 
                 v-for="tag in getVisibleTags(event)" 
                 :key="tag.id"
-                class="event-tag"
+                class="event-tag clickable-tag"
                 :style="{ backgroundColor: tag.color, color: getContrastColor(tag.color) }"
+                :title="`Click to filter events by '${tag.name}'`"
+                @click.stop="handleTagClick(tag)"
               >
                 {{ tag.name }}
               </span>
@@ -221,7 +223,7 @@ export default {
       default: false
     }
   },
-  emits: ['event-created', 'event-updated', 'event-deleted', 'map-bounds-changed'],
+  emits: ['event-created', 'event-updated', 'event-deleted', 'map-bounds-changed', 'tag-clicked'],
   data() {
     return {
       map: null,
@@ -924,6 +926,13 @@ export default {
       return event.tags.slice(3).map(tag => tag.name).join(', ')
     },
 
+    // Handle tag click to add to filter panel
+    handleTagClick(tag) {
+      this.$emit('tag-clicked', tag)
+      // Close the modal after clicking a tag for immediate visual feedback
+      this.close_event_info_modal()
+    },
+
     // Get contrast color for text on colored backgrounds
     getContrastColor(hexColor) {
       if (!hexColor) return '#000000'
@@ -1107,6 +1116,23 @@ export default {
   font-size: 0.75rem;
   font-weight: 600;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.clickable-tag {
+  cursor: pointer;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.clickable-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.1);
+}
+
+.clickable-tag:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
 .more-tags {

@@ -5,6 +5,13 @@ A comprehensive web application for mapping historical events on an interactive 
 
 ## Recent Changes (October 23, 2025)
 
+- **Clickable Tags in Event Popup**: Tags in map event popups are now clickable and add to tag filter panel
+  - Click any tag in the event info modal to instantly filter events by that tag
+  - Tags have hover effects (lift, brightness, shadow) to indicate they're interactive
+  - Modal automatically closes after clicking a tag for immediate visual feedback
+  - Tooltip shows "Click to filter events by '<tag name>'" on hover
+  - Emits 'tag-clicked' event from WorldMap component to MapView for filter integration
+  - Components: `WorldMap.vue`, `MapView.vue`
 - **Chronological Template Sorting**: Date templates now sorted by start date instead of display order
   - Templates within each group now appear in chronological order (oldest to newest)
   - Example: "First Empires" group shows Ancient Kingdom of Egypt (2686 BC), then Akkadian Empire (2334 BC), then Old Assyrian Trade Empire (2025 BC), etc.

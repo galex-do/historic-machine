@@ -58,6 +58,7 @@
           @event-deleted="handleEventDeleted"
           @map-bounds-changed="handleMapBoundsChanged"
           @locale-changed="handleLocaleChanged"
+          @tag-clicked="handleTagClick"
           ref="worldMap"
         />
       </main>
