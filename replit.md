@@ -7,7 +7,10 @@ A comprehensive web application for mapping historical events on an interactive 
 
 - **Auto-Expand Date Range for Template Groups**: When selecting a template group without choosing a specific template, the date range automatically expands to encompass all templates in that group
   - Example: "Phoenician Mediterranean Empire" group auto-sets range to 1500 BC - 146 BC (full civilization span)
+  - Example: "Ancient Greece" group auto-sets range to 800 BC - 31 BC (Archaic Period through Hellenistic Period)
   - Calculates minimum start date and maximum end date across all templates in the group
+  - Correctly handles BC/AD era metadata from backend (negates BC years for proper chronological ordering)
+  - Uses pre-formatted display dates from backend for accurate localized formatting
   - Enables quick exploration of entire historical periods with one click
   - Components: `useTemplates.js`, `MapView.vue`
 - **Narrative Flow Visualization**: Interactive feature to visualize historical event progression

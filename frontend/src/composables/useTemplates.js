@@ -166,51 +166,46 @@ export function useTemplates() {
       return null
     }
 
-    // Helper to convert ISO date to comparable numerical value
-    // BC dates: "-YYYY-MM-DD" -> negative value
-    // AD dates: "YYYY-MM-DD" -> positive value
-    const toComparableValue = (isoDate) => {
+    // Helper to convert date + era to comparable numerical value
+    const toComparableValue = (isoDate, era) => {
       if (!isoDate) return 0
       
-      let year, month, day
+      const parts = isoDate.split('-')
+      let year = parseInt(parts[0], 10)
+      const month = parseInt(parts[1], 10) || 1
+      const day = parseInt(parts[2], 10) || 1
       
-      if (isoDate.startsWith('-')) {
-        // BC date: "-1499-01-01"
-        const parts = isoDate.substring(1).split('-')
-        year = -parseInt(parts[0], 10)
-        month = parseInt(parts[1], 10) || 1
-        day = parseInt(parts[2], 10) || 1
-      } else {
-        // AD date: "0146-03-15"
-        const parts = isoDate.split('-')
-        year = parseInt(parts[0], 10)
-        month = parseInt(parts[1], 10) || 1
-        day = parseInt(parts[2], 10) || 1
+      // For BC dates, negate the year value
+      // This makes 1500 BC (-1500) < 146 BC (-146) < 1 AD (1)
+      if (era === 'BC') {
+        year = -year
       }
       
       // Convert to numerical value for comparison
-      // For BC: more negative = earlier (1500 BC < 146 BC)
-      // For AD: more positive = later (146 AD > 1 AD)
       return year + (month / 12) + (day / 365)
     }
 
     // Find min start_date and max end_date across all templates
     let minStartDate = null
+    let minStartEra = null
     let maxEndDate = null
+    let maxEndEra = null
     let minStartValue = null
     let maxEndValue = null
 
     availableTemplates.value.forEach(template => {
-      const startValue = toComparableValue(template.start_date)
-      const endValue = toComparableValue(template.end_date)
+      const startValue = toComparableValue(template.start_date, template.start_era)
+      const endValue = toComparableValue(template.end_date, template.end_era)
 
       if (minStartValue === null || startValue < minStartValue) {
         minStartValue = startValue
         minStartDate = template.start_date
+        minStartEra = template.start_era
       }
       if (maxEndValue === null || endValue > maxEndValue) {
         maxEndValue = endValue
         maxEndDate = template.end_date
+        maxEndEra = template.end_era
       }
     })
 
@@ -218,15 +213,26 @@ export function useTemplates() {
       return null
     }
 
-    // Format for display using existing utility
-    const displayFrom = formatHistoricalDate(minStartDate)
-    const displayTo = formatHistoricalDate(maxEndDate)
+    // Use the pre-formatted display dates from templates if available
+    const displayFrom = template => {
+      const t = availableTemplates.value.find(tpl => 
+        tpl.start_date === minStartDate && tpl.start_era === minStartEra
+      )
+      return t?.start_display_date || formatHistoricalDate(minStartDate)
+    }
+    
+    const displayTo = template => {
+      const t = availableTemplates.value.find(tpl => 
+        tpl.end_date === maxEndDate && tpl.end_era === maxEndEra
+      )
+      return t?.end_display_date || formatHistoricalDate(maxEndDate)
+    }
 
     return {
       dateFrom: minStartDate,
       dateTo: maxEndDate,
-      displayFrom,
-      displayTo
+      displayFrom: displayFrom(),
+      displayTo: displayTo()
     }
   }
 
