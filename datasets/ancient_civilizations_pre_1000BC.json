@@ -138,7 +138,8 @@
         "Art",
         "Building",
         "Mound Builders",
-        "Earthwork"
+        "Earthwork",
+        "Burial"
       ],
       "type": "cultural"
     },
@@ -242,7 +243,8 @@
         "Astronomy",
         "Building",
         "Mound Builders",
-        "Earthwork"
+        "Earthwork",
+        "Burial"
       ],
       "type": "cultural"
     },
@@ -344,7 +346,8 @@
         "Mound Builders",
         "Earthwork",
         "Tomb",
-        "Building"
+        "Building",
+        "Burial"
       ],
       "type": "cultural"
     },
@@ -1019,23 +1022,6 @@
     },
     {
       "date": "01.01.2300",
-      "description": "The famous bronze Dancing Girl statuette is created at Mohenjo-daro, showcasing advanced metallurgy and artistic sophistication",
-      "description_ru": "Знаменитая бронзовая статуэтка Танцующей девочки создается в Мохенджо-Даро, демонстрируя передовую металлургию и художественную утонченность",
-      "era": "BC",
-      "latitude": 27.324,
-      "longitude": 68.138,
-      "name": "Dancing Girl Sculpture Created",
-      "name_ru": "Создание скульптуры Танцующей девочки",
-      "source": "https://www.nationalmuseumindia.gov.in/",
-      "tags": [
-        "Art",
-        "Bronze",
-        "Sculpture"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.2300",
       "description": "Sargon extends Akkadian control to Anatolia and Syria, reaching the Mediterranean",
       "description_ru": "Саргон расширяет аккадский контроль на Анатолию и Сирию, достигая Средиземного моря",
       "era": "BC",
@@ -1050,6 +1036,23 @@
         "Akkadian"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.2300",
+      "description": "The famous bronze Dancing Girl statuette is created at Mohenjo-daro, showcasing advanced metallurgy and artistic sophistication",
+      "description_ru": "Знаменитая бронзовая статуэтка Танцующей девочки создается в Мохенджо-Даро, демонстрируя передовую металлургию и художественную утонченность",
+      "era": "BC",
+      "latitude": 27.324,
+      "longitude": 68.138,
+      "name": "Dancing Girl Sculpture Created",
+      "name_ru": "Создание скульптуры Танцующей девочки",
+      "source": "https://www.nationalmuseumindia.gov.in/",
+      "tags": [
+        "Art",
+        "Bronze",
+        "Sculpture"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.2279",
@@ -1116,6 +1119,22 @@
     },
     {
       "date": "01.01.2200",
+      "description": "Poverty Point culture begins in Louisiana with construction of massive earthwork mounds reaching 72 feet in height, forming complex geometric patterns",
+      "description_ru": "Культура Поверти-Пойнт начинается в Луизиане со строительства массивных земляных курганов высотой до 22 метров, образующих сложные геометрические узоры",
+      "era": "BC",
+      "latitude": 32.638,
+      "longitude": -91.408,
+      "name": "Poverty Point Culture",
+      "name_ru": "Культура Поверти-Пойнт",
+      "source": "https://www.nps.gov/popo/index.htm",
+      "tags": [
+        "Mound Builders",
+        "Earthwork"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.2200",
       "description": "Severe drought causes agricultural collapse across Mesopotamia and Egypt",
       "description_ru": "Сильная засуха вызывает сельскохозяйственный коллапс по всей Месопотамии и Египту",
       "era": "BC",
@@ -1143,22 +1162,6 @@
         "West Africa",
         "Urban",
         "Culture"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.2200",
-      "description": "Poverty Point culture begins in Louisiana with construction of massive earthwork mounds reaching 72 feet in height, forming complex geometric patterns",
-      "description_ru": "Культура Поверти-Пойнт начинается в Луизиане со строительства массивных земляных курганов высотой до 22 метров, образующих сложные геометрические узоры",
-      "era": "BC",
-      "latitude": 32.638,
-      "longitude": -91.408,
-      "name": "Poverty Point Culture",
-      "name_ru": "Культура Поверти-Пойнт",
-      "source": "https://www.nps.gov/popo/index.htm",
-      "tags": [
-        "Mound Builders",
-        "Earthwork"
       ],
       "type": "cultural"
     },
@@ -1232,22 +1235,6 @@
     },
     {
       "date": "01.01.2100",
-      "description": "Legendary Chinese hero Yu the Great successfully controls devastating floods along the Yellow River, earning mandate to rule",
-      "description_ru": "Легендарный китайский герой Великий Юй справляется с разрушительными наводнениями вдоль Желтой реки, заслуживая мандат на правление",
-      "era": "BC",
-      "latitude": 34.746,
-      "longitude": 113.625,
-      "name": "Yu the Great Controls Great Flood",
-      "name_ru": "Великий Юй контролирует Великое наводнение",
-      "tags": [
-        "Yu the Great",
-        "Flood Control",
-        "Yellow River"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.2100",
       "description": "Ur-Nammu creates one of the earliest known law codes, predating Hammurabi's code",
       "description_ru": "Ур-Намму создает один из древнейших известных сводов законов, предшествующий кодексу Хаммурапи",
       "era": "BC",
@@ -1262,6 +1249,22 @@
         "Sumerian"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.2100",
+      "description": "Legendary Chinese hero Yu the Great successfully controls devastating floods along the Yellow River, earning mandate to rule",
+      "description_ru": "Легендарный китайский герой Великий Юй справляется с разрушительными наводнениями вдоль Желтой реки, заслуживая мандат на правление",
+      "era": "BC",
+      "latitude": 34.746,
+      "longitude": 113.625,
+      "name": "Yu the Great Controls Great Flood",
+      "name_ru": "Великий Юй контролирует Великое наводнение",
+      "tags": [
+        "Yu the Great",
+        "Flood Control",
+        "Yellow River"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.2094",
@@ -2269,7 +2272,6 @@
       "name": "Ramesses II Becomes Pharaoh",
       "name_ru": "Рамсес II становится фараоном",
       "tags": [
-        "Long Reign",
         "Egypt",
         "Pharaoh"
       ],

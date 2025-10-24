@@ -1,5 +1,5 @@
 {
-  "description": "Dataset imported with 57 events covering the Assyrian Empire from foundation of Assur through Old, Middle, and Neo-Assyrian periods to final fall",
+  "description": "Dataset imported with 54 events",
   "events": [
     {
       "date": "01.01.2600",
@@ -12,10 +12,9 @@
       "name_ru": "Основание Ашшура",
       "source": "https://en.wikipedia.org/wiki/Assur",
       "tags": [
-        "Assyrian",
         "City",
         "Foundation",
-        "Assur"
+        "Assyrian"
       ],
       "type": "historic"
     },
@@ -31,7 +30,6 @@
       "source": "https://en.wikipedia.org/wiki/Old_Assyrian_period",
       "tags": [
         "Assyrian",
-        "Political",
         "Independence",
         "Dynasty"
       ],
@@ -48,10 +46,10 @@
       "name_ru": "Первый в мире эксперимент свободной торговли",
       "source": "https://en.wikipedia.org/wiki/Erishum_I",
       "tags": [
-        "Assyrian",
         "Trade",
         "Economic",
-        "Innovation"
+        "Innovation",
+        "Assyrian"
       ],
       "type": "historic"
     },
@@ -67,9 +65,9 @@
       "source": "https://en.wikipedia.org/wiki/Kanesh",
       "tags": [
         "Assyrian",
-        "Trade",
         "Colonization",
-        "Anatolia"
+        "Anatolia",
+        "Trade"
       ],
       "type": "historic"
     },
@@ -84,10 +82,10 @@
       "name_ru": "Пик староассирийской торговли",
       "source": "https://en.wikipedia.org/wiki/Old_Assyrian_period",
       "tags": [
-        "Assyrian",
+        "Silver",
         "Trade",
-        "Economic",
-        "Silver"
+        "Assyrian",
+        "Economic"
       ],
       "type": "historic"
     },
@@ -102,10 +100,9 @@
       "name_ru": "Шамши-Адад I завоевывает Ашшур",
       "source": "https://en.wikipedia.org/wiki/Shamshi-Adad_I",
       "tags": [
+        "Amorite",
         "Assyrian",
-        "Military",
-        "Conquest",
-        "Amorite"
+        "Conquest"
       ],
       "type": "military"
     },
@@ -120,10 +117,11 @@
       "name_ru": "Конец староассирийской торговой империи",
       "source": "https://en.wikipedia.org/wiki/Old_Assyrian_period",
       "tags": [
-        "Assyrian",
-        "Babylon",
-        "Trade",
-        "Decline"
+        "Babylonian",
+        "Conquest",
+        "Hammurabi",
+        "Fall",
+        "Assyrian"
       ],
       "type": "historic"
     },
@@ -138,6 +136,8 @@
       "name_ru": "Рождение Среднеассирийской империи",
       "source": "https://en.wikipedia.org/wiki/Ashur-uballit_I",
       "tags": [
+        "Mitanni",
+        "Rise",
         "Assyrian",
         "Independence",
         "Political",
@@ -156,10 +156,10 @@
       "name_ru": "Завоевание Северной Месопотамии",
       "source": "https://en.wikipedia.org/wiki/Ashur-uballit_I",
       "tags": [
+        "Agriculture",
+        "Expansion",
         "Assyrian",
-        "Military",
-        "Conquest",
-        "Expansion"
+        "Conquest"
       ],
       "type": "military"
     },
@@ -175,9 +175,8 @@
       "source": "https://en.wikipedia.org/wiki/Adad-nirari_I",
       "tags": [
         "Assyrian",
-        "Military",
-        "Conquest",
-        "Mitanni"
+        "Mitanni",
+        "Conquest"
       ],
       "type": "military"
     },
@@ -193,9 +192,8 @@
       "source": "https://en.wikipedia.org/wiki/Adad-nirari_I",
       "tags": [
         "Assyrian",
-        "Babylon",
-        "War",
-        "Military"
+        "Babylonian",
+        "War"
       ],
       "type": "military"
     },
@@ -211,9 +209,7 @@
       "source": "https://en.wikipedia.org/wiki/Shalmaneser_I",
       "tags": [
         "Assyrian",
-        "City",
-        "Foundation",
-        "Military"
+        "City"
       ],
       "type": "historic"
     },
@@ -229,9 +225,8 @@
       "source": "https://en.wikipedia.org/wiki/Tukulti-Ninurta_I",
       "tags": [
         "Assyrian",
-        "Babylon",
         "Conquest",
-        "Military"
+        "Babylonian"
       ],
       "type": "military"
     },
@@ -246,10 +241,10 @@
       "name_ru": "Строительство Кар-Тукульти-Нинурты",
       "source": "https://en.wikipedia.org/wiki/Kar-Tukulti-Ninurta",
       "tags": [
+        "Capital",
         "Assyrian",
         "City",
-        "Architecture",
-        "Capital"
+        "Architecture"
       ],
       "type": "historic"
     },
@@ -264,10 +259,11 @@
       "name_ru": "Убийство Тукульти-Нинурты I",
       "source": "https://en.wikipedia.org/wiki/Tukulti-Ninurta_I",
       "tags": [
-        "Assyrian",
-        "Political",
+        "Son Kills Father",
+        "Civil War",
         "Assassination",
-        "Civil War"
+        "Assyrian",
+        "Regicide"
       ],
       "type": "political"
     },
@@ -282,10 +278,9 @@
       "name_ru": "Поражение Элама",
       "source": "https://en.wikipedia.org/wiki/Ashur-dan_I",
       "tags": [
-        "Assyrian",
-        "Elam",
         "War",
-        "Military"
+        "Assyrian",
+        "Elamites"
       ],
       "type": "military"
     },
@@ -301,8 +296,6 @@
       "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_I",
       "tags": [
         "Assyrian",
-        "Political",
-        "Military",
         "Expansion"
       ],
       "type": "political"
@@ -318,9 +311,8 @@
       "name_ru": "Битва против арамеев",
       "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_I",
       "tags": [
-        "Assyrian",
-        "Military",
         "Arameans",
+        "Assyrian",
         "Battle"
       ],
       "type": "military"
@@ -354,10 +346,8 @@
       "name_ru": "Начато неоассирийское возрождение",
       "source": "https://en.wikipedia.org/wiki/Ashur-dan_II",
       "tags": [
-        "Assyrian",
-        "Political",
-        "Revival",
-        "Reform"
+        "Rise",
+        "Assyrian"
       ],
       "type": "political"
     },
@@ -374,7 +364,6 @@
       "tags": [
         "Assyrian",
         "Empire",
-        "Political",
         "Expansion"
       ],
       "type": "political"
@@ -390,10 +379,9 @@
       "name_ru": "Столица перенесена в Калху",
       "source": "https://en.wikipedia.org/wiki/Ashurnasirpal_II",
       "tags": [
-        "Assyrian",
-        "Capital",
         "Architecture",
-        "City"
+        "Assyrian",
+        "Capital"
       ],
       "type": "historic"
     },
@@ -408,10 +396,10 @@
       "name_ru": "Экспансия в Левант",
       "source": "https://en.wikipedia.org/wiki/Ashurnasirpal_II",
       "tags": [
+        "Levant",
         "Assyrian",
-        "Military",
         "Expansion",
-        "Levant"
+        "Vassalization"
       ],
       "type": "military"
     },
@@ -426,11 +414,10 @@
       "name_ru": "Битва при Каркаре",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Qarqar",
       "tags": [
+        "Israel",
+        "Damascus",
         "Assyrian",
-        "Battle",
-        "Syria",
-        "Military",
-        "Israel"
+        "Battle"
       ],
       "type": "military"
     },
@@ -445,9 +432,9 @@
       "name_ru": "Тиглатпаласар III восходит на трон",
       "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
       "tags": [
+        "Tiglath-Pileser III",
+        "Political Change",
         "Assyrian",
-        "Political",
-        "Reform",
         "Military"
       ],
       "type": "political"
@@ -463,10 +450,10 @@
       "name_ru": "Битва при Арпаде",
       "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
       "tags": [
+        "Tiglath-Pileser III",
         "Assyrian",
         "Battle",
-        "Urartu",
-        "Military"
+        "Urartu"
       ],
       "type": "military"
     },
@@ -481,10 +468,10 @@
       "name_ru": "Первая профессиональная постоянная армия",
       "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
       "tags": [
-        "Assyrian",
-        "Military",
         "Innovation",
-        "Army"
+        "Assyrian",
+        "Army",
+        "Tiglath-Pileser III"
       ],
       "type": "military"
     },
@@ -499,10 +486,10 @@
       "name_ru": "Кампания к египетской границе",
       "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
       "tags": [
+        "Tiglath-Pileser III",
         "Assyrian",
-        "Military",
-        "Expansion",
-        "Egypt"
+        "Egypt",
+        "Expansion"
       ],
       "type": "military"
     },
@@ -511,7 +498,7 @@
       "description": "Tiglath-Pileser III devastates northern Kingdom of Israel, forcing surrender of Galilee and Gilead territories and deporting thousands to Assyria",
       "description_ru": "Тиглатпаласар III опустошает северное Израильское царство, вынуждая сдать территории Галилеи и Галаада и депортируя тысячи людей в Ассирию",
       "era": "BC",
-      "latitude": 32.7940,
+      "latitude": 32.794,
       "longitude": 35.5308,
       "name": "Conquest of Northern Israel",
       "name_ru": "Завоевание Северного Израиля",
@@ -520,7 +507,7 @@
         "Assyrian",
         "Israel",
         "Conquest",
-        "Military"
+        "Tiglath-Pileser III"
       ],
       "type": "military"
     },
@@ -535,10 +522,11 @@
       "name_ru": "Падение Дамаска",
       "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
       "tags": [
+        "Arameans",
         "Assyrian",
         "Damascus",
         "Conquest",
-        "Arameans"
+        "Tiglath-Pileser III"
       ],
       "type": "military"
     },
@@ -553,10 +541,10 @@
       "name_ru": "Аннексия Вавилонии",
       "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
       "tags": [
-        "Assyrian",
-        "Babylon",
+        "Babylonian",
         "Conquest",
-        "Political"
+        "Assyrian",
+        "Tiglath-Pileser III"
       ],
       "type": "political"
     },
@@ -571,9 +559,10 @@
       "name_ru": "Падение Самарии и Израиля",
       "source": "https://en.wikipedia.org/wiki/Sargon_II",
       "tags": [
-        "Assyrian",
-        "Israel",
         "Conquest",
+        "Sargon II",
+        "Israel",
+        "Assyrian",
         "Siege"
       ],
       "type": "military"
@@ -589,10 +578,10 @@
       "name_ru": "Победа Саргона при Каркаре",
       "source": "https://en.wikipedia.org/wiki/Sargon_II",
       "tags": [
-        "Assyrian",
         "Battle",
-        "Syria",
-        "Military"
+        "Sargon II",
+        "Assyrian",
+        "Syrian"
       ],
       "type": "military"
     },
@@ -607,10 +596,11 @@
       "name_ru": "Завоевание Каркемиша",
       "source": "https://en.wikipedia.org/wiki/Sargon_II",
       "tags": [
+        "Sargon II",
         "Assyrian",
         "Hittite",
         "Conquest",
-        "Syria"
+        "Syrian"
       ],
       "type": "military"
     },
@@ -625,10 +615,10 @@
       "name_ru": "Разрушение Урарту",
       "source": "https://en.wikipedia.org/wiki/Sargon_II",
       "tags": [
-        "Assyrian",
-        "Urartu",
         "Battle",
-        "Military"
+        "Sargon II",
+        "Assyrian",
+        "Urartu"
       ],
       "type": "military"
     },
@@ -643,10 +633,11 @@
       "name_ru": "Империя в максимальных размерах",
       "source": "https://en.wikipedia.org/wiki/Sargon_II",
       "tags": [
+        "Sargon II",
+        "Babylonian",
         "Assyrian",
         "Empire",
-        "Expansion",
-        "Babylon"
+        "Expansion"
       ],
       "type": "political"
     },
@@ -661,10 +652,11 @@
       "name_ru": "Основание Дур-Шаррукина",
       "source": "https://en.wikipedia.org/wiki/Dur-Sharrukin",
       "tags": [
+        "City",
         "Assyrian",
         "Capital",
-        "City",
-        "Architecture"
+        "Architecture",
+        "Sargon II"
       ],
       "type": "historic"
     },
@@ -679,10 +671,10 @@
       "name_ru": "Смерть Саргона II",
       "source": "https://en.wikipedia.org/wiki/Sargon_II",
       "tags": [
+        "Death",
         "Assyrian",
-        "Political",
-        "Battle",
-        "Death"
+        "Sargon II",
+        "Battle"
       ],
       "type": "political"
     },
@@ -697,30 +689,12 @@
       "name_ru": "Ниневия становится столицей",
       "source": "https://en.wikipedia.org/wiki/Sennacherib",
       "tags": [
-        "Assyrian",
         "Nineveh",
+        "Assyrian",
         "Capital",
         "Architecture"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.0701",
-      "description": "Sennacherib invades Judah after King Hezekiah withholds tribute, capturing 46 fortified cities and laying siege to Jerusalem",
-      "description_ru": "Синаххериб вторгается в Иудею после того, как царь Езекия задерживает дань, захватывая 46 укрепленных городов и осаждая Иерусалим",
-      "era": "BC",
-      "latitude": 31.7683,
-      "longitude": 35.2137,
-      "name": "Sennacherib's Invasion of Judah",
-      "name_ru": "Вторжение Синаххериба в Иудею",
-      "source": "https://en.wikipedia.org/wiki/Sennacherib%27s_Annals",
-      "tags": [
-        "Assyrian",
-        "Judah",
-        "Military",
-        "Siege"
-      ],
-      "type": "military"
     },
     {
       "date": "01.07.0701",
@@ -733,10 +707,31 @@
       "name_ru": "Осада Лахиша",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Lachish",
       "tags": [
+        "Siege",
+        "Judah",
+        "Assyrian",
+        "Conquest",
+        "Battle"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0701",
+      "description": "Sennacherib invades Judah after King Hezekiah withholds tribute, capturing 46 fortified cities and laying siege to Jerusalem",
+      "description_ru": "Синаххериб вторгается в Иудею после того, как царь Езекия задерживает дань, захватывая 46 укрепленных городов и осаждая Иерусалим",
+      "era": "BC",
+      "latitude": 31.7683,
+      "longitude": 35.2137,
+      "name": "Sennacherib's Invasion of Judah",
+      "name_ru": "Вторжение Синаххериба в Иудею",
+      "source": "https://en.wikipedia.org/wiki/Sennacherib%27s_Annals",
+      "tags": [
+        "Jerusalem",
+        "Siege",
         "Assyrian",
         "Judah",
-        "Siege",
-        "Battle"
+        "Conquest",
+        "Invasions"
       ],
       "type": "military"
     },
@@ -752,9 +747,8 @@
       "source": "https://en.wikipedia.org/wiki/Sennacherib",
       "tags": [
         "Assyrian",
-        "Babylon",
-        "Destruction",
-        "War"
+        "Babylonian",
+        "Destruction"
       ],
       "type": "military"
     },
@@ -769,8 +763,8 @@
       "name_ru": "Убийство Синаххериба",
       "source": "https://en.wikipedia.org/wiki/Sennacherib",
       "tags": [
-        "Assyrian",
         "Political",
+        "Assyrian",
         "Assassination"
       ],
       "type": "political"
@@ -786,10 +780,9 @@
       "name_ru": "Завоевание Египта",
       "source": "https://en.wikipedia.org/wiki/Esarhaddon",
       "tags": [
-        "Assyrian",
         "Egypt",
-        "Conquest",
-        "Military"
+        "Assyrian",
+        "Conquest"
       ],
       "type": "military"
     },
@@ -805,7 +798,7 @@
       "source": "https://en.wikipedia.org/wiki/Ashurbanipal",
       "tags": [
         "Assyrian",
-        "Political",
+        "Ashurbanipal",
         "Empire"
       ],
       "type": "political"
@@ -823,10 +816,28 @@
       "tags": [
         "Assyrian",
         "Egypt",
-        "Military",
-        "Conquest"
+        "Conquest",
+        "Ashurbanipal"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0652",
+      "description": "Ashurbanipal's brother Shamash-shum-ukin rebels in Babylon, triggering brutal civil war that devastates both kingdoms and weakens imperial cohesion",
+      "description_ru": "Брат Ашшурбанипала Шамаш-шум-укин восстает в Вавилоне, вызывая жестокую гражданскую войну, опустошающую оба царства и ослабляющую имперскую сплоченность",
+      "era": "BC",
+      "latitude": 32.5355,
+      "longitude": 44.4275,
+      "name": "Babylonian Civil War Begins",
+      "name_ru": "Начинается вавилонская гражданская война",
+      "source": "https://en.wikipedia.org/wiki/Ashurbanipal",
+      "tags": [
+        "Civil War",
+        "Babylonian",
+        "Ashurbanipal",
+        "Assyrian"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.0650",
@@ -839,11 +850,11 @@
       "name_ru": "Основана Библиотека Ниневии",
       "source": "https://en.wikipedia.org/wiki/Library_of_Ashurbanipal",
       "tags": [
-        "Assyrian",
-        "Culture",
-        "Library",
+        "Nineveh",
+        "Ashurbanipal",
         "Literature",
-        "Nineveh"
+        "Culture",
+        "Assyrian"
       ],
       "type": "cultural"
     },
@@ -859,9 +870,9 @@
       "source": "https://en.wikipedia.org/wiki/Ashurbanipal",
       "tags": [
         "Assyrian",
-        "Elam",
-        "War",
-        "Military"
+        "Elamites",
+        "Destruction",
+        "War"
       ],
       "type": "military"
     },
@@ -876,30 +887,13 @@
       "name_ru": "Уничтожение Элама",
       "source": "https://en.wikipedia.org/wiki/Ashurbanipal",
       "tags": [
+        "Ashurbanipal",
+        "Fall",
         "Assyrian",
-        "Elam",
         "Destruction",
-        "Military"
+        "Elamites"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0652",
-      "description": "Ashurbanipal's brother Shamash-shum-ukin rebels in Babylon, triggering brutal civil war that devastates both kingdoms and weakens imperial cohesion",
-      "description_ru": "Брат Ашшурбанипала Шамаш-шум-укин восстает в Вавилоне, вызывая жестокую гражданскую войну, опустошающую оба царства и ослабляющую имперскую сплоченность",
-      "era": "BC",
-      "latitude": 32.5355,
-      "longitude": 44.4275,
-      "name": "Babylonian Civil War Begins",
-      "name_ru": "Начинается вавилонская гражданская война",
-      "source": "https://en.wikipedia.org/wiki/Ashurbanipal",
-      "tags": [
-        "Assyrian",
-        "Babylon",
-        "Civil War",
-        "Political"
-      ],
-      "type": "political"
     },
     {
       "date": "01.01.0627",
@@ -912,10 +906,10 @@
       "name_ru": "Смерть Ашшурбанипала",
       "source": "https://en.wikipedia.org/wiki/Ashurbanipal",
       "tags": [
+        "Ashurbanipal",
         "Assyrian",
-        "Political",
         "Death",
-        "Decline"
+        "Collapse"
       ],
       "type": "political"
     },
@@ -930,10 +924,10 @@
       "name_ru": "Вавилонская независимость",
       "source": "https://en.wikipedia.org/wiki/Nabopolassar",
       "tags": [
-        "Assyrian",
-        "Babylon",
+        "Babylonian",
+        "Rebellion",
         "Independence",
-        "Rebellion"
+        "Assyrian"
       ],
       "type": "political"
     },
@@ -948,12 +942,12 @@
       "name_ru": "Падение Ниневии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Nineveh_(612_BC)",
       "tags": [
-        "Assyrian",
-        "Nineveh",
-        "Fall",
         "Destruction",
-        "Babylon",
-        "Medes"
+        "Nineveh",
+        "Assyrian",
+        "Babylonian",
+        "Medes",
+        "Fall"
       ],
       "type": "military"
     },
@@ -968,11 +962,11 @@
       "name_ru": "Конец Неоассирийской империи",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Harran",
       "tags": [
+        "Empire",
+        "End",
         "Assyrian",
         "Battle",
-        "Fall",
-        "End",
-        "Empire"
+        "Fall"
       ],
       "type": "military"
     }

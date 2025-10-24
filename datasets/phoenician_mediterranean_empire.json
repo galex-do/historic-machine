@@ -53,10 +53,9 @@
       "source": "https://www.worldhistory.org/Melqart/",
       "tags": [
         "Tyre",
-        "Religion",
         "Temple",
         "Phoenician",
-        "Melqart"
+        "Religious"
       ],
       "type": "religious"
     },
@@ -184,7 +183,9 @@
         "Alliance",
         "Phoenician",
         "Israel",
-        "Temple of Solomon"
+        "Temple of Solomon",
+        "Temple",
+        "Judah"
       ],
       "type": "political"
     },
@@ -202,7 +203,9 @@
         "Tyre",
         "Phoenician",
         "Israel",
-        "Temple of Solomon"
+        "Temple of Solomon",
+        "Temple",
+        "Judah"
       ],
       "type": "cultural"
     },
@@ -236,9 +239,8 @@
       "source": "https://en.wikipedia.org/wiki/Shalmaneser_III",
       "tags": [
         "Phoenician",
-        "Assyria",
         "Tribute",
-        "Political"
+        "Assyrian"
       ],
       "type": "political"
     },
@@ -256,9 +258,9 @@
         "Tyre",
         "Sidon",
         "Byblos",
-        "Assyria",
         "Phoenician",
-        "Tribute"
+        "Tribute",
+        "Assyrian"
       ],
       "type": "political"
     },
@@ -339,23 +341,6 @@
     },
     {
       "date": "01.01.0701",
-      "description": "Greeks adapt Phoenician writing system adding vowels, creating Greek alphabet that spreads throughout Mediterranean world",
-      "description_ru": "Греки адаптируют финикийскую систему письма, добавляя гласные, создавая греческий алфавит, который распространяется по всему средиземноморскому миру",
-      "era": "BC",
-      "latitude": 37.979,
-      "longitude": 23.717,
-      "name": "Greeks Adopt Phoenician Alphabet",
-      "name_ru": "Греки принимают финикийский алфавит",
-      "source": "https://www.britannica.com/topic/Phoenician-alphabet",
-      "tags": [
-        "Writing",
-        "Phoenician",
-        "Greek"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0701",
       "description": "Phoenicians perfect bireme warship design with two banks of oars, revolutionizing naval warfare and establishing dominance in Mediterranean sea battles",
       "description_ru": "Финикийцы совершенствуют конструкцию биремы с двумя рядами весел, революционизируя морскую войну и устанавливая господство в средиземноморских морских сражениях",
       "era": "BC",
@@ -372,6 +357,23 @@
         "Naval"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0701",
+      "description": "Greeks adapt Phoenician writing system adding vowels, creating Greek alphabet that spreads throughout Mediterranean world",
+      "description_ru": "Греки адаптируют финикийскую систему письма, добавляя гласные, создавая греческий алфавит, который распространяется по всему средиземноморскому миру",
+      "era": "BC",
+      "latitude": 37.979,
+      "longitude": 23.717,
+      "name": "Greeks Adopt Phoenician Alphabet",
+      "name_ru": "Греки принимают финикийский алфавит",
+      "source": "https://www.britannica.com/topic/Phoenician-alphabet",
+      "tags": [
+        "Writing",
+        "Phoenician",
+        "Greek"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0700",
@@ -474,10 +476,10 @@
       "source": "https://en.wikipedia.org/wiki/Siege_of_Tyre_(586–573_BC)",
       "tags": [
         "Tyre",
-        "Babylon",
         "War",
         "Siege",
-        "Phoenician"
+        "Phoenician",
+        "Babylonian"
       ],
       "type": "military"
     },
@@ -511,10 +513,9 @@
       "source": "https://en.wikipedia.org/wiki/Siege_of_Tyre_(586–573_BC)",
       "tags": [
         "Tyre",
-        "Babylon",
-        "Siege",
         "Phoenician",
-        "Surrender"
+        "Babylonian",
+        "Conquest"
       ],
       "type": "political"
     },
@@ -530,10 +531,10 @@
       "source": "https://www.worldhistory.org/phoenicia/",
       "tags": [
         "Maritime",
-        "Persia",
         "Naval",
         "Phoenician",
-        "Sidon"
+        "Sidon",
+        "Persians"
       ],
       "type": "military"
     },
@@ -566,15 +567,15 @@
       "era": "BC",
       "latitude": 37.964,
       "longitude": 23.556,
-      "name": "Phoenicians at Battle of Salamis",
-      "name_ru": "Финикийцы в битве при Саламине",
+      "name": "Battle of Salamis",
+      "name_ru": "Битва при Саламине",
       "source": "https://www.britannica.com/event/Battle-of-Salamis-480-BC",
       "tags": [
         "Naval",
-        "Persia",
-        "Greece",
         "Phoenician",
-        "War"
+        "Persians",
+        "Greek",
+        "Battle"
       ],
       "type": "military"
     },
@@ -599,6 +600,26 @@
     },
     {
       "date": "01.01.0450",
+      "description": "Greek historian Herodotus visits Tyre and records from temple priests that city was founded circa 2750 BC, documenting Phoenician historical traditions",
+      "description_ru": "Греческий историк Геродот посещает Тир и записывает со слов храмовых жрецов, что город основан около 2750 г. до н.э., документируя финикийские исторические традиции",
+      "era": "BC",
+      "latitude": 33.271,
+      "longitude": 35.204,
+      "name": "Herodotus Visits Tyre",
+      "name_ru": "Геродот посещает Тир",
+      "source": "https://www.britannica.com/place/Tyre",
+      "tags": [
+        "Tyre",
+        "Culture",
+        "History",
+        "Phoenician",
+        "Herodotus",
+        "Greek"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0450",
       "description": "Carthaginian navigator Hanno the Navigator sails beyond Gibraltar along African coast, establishing colonies and documenting unprecedented exploration",
       "description_ru": "Карфагенский мореплаватель Ганнон Мореплаватель плывет за Гибралтар вдоль африканского побережья, основывая колонии и документируя беспрецедентное исследование",
       "era": "BC",
@@ -615,25 +636,6 @@
         "Expedition"
       ],
       "type": "scientific"
-    },
-    {
-      "date": "01.01.0450",
-      "description": "Greek historian Herodotus visits Tyre and records from temple priests that city was founded circa 2750 BC, documenting Phoenician historical traditions",
-      "description_ru": "Греческий историк Геродот посещает Тир и записывает со слов храмовых жрецов, что город основан около 2750 г. до н.э., документируя финикийские исторические традиции",
-      "era": "BC",
-      "latitude": 33.271,
-      "longitude": 35.204,
-      "name": "Herodotus Visits Tyre",
-      "name_ru": "Геродот посещает Тир",
-      "source": "https://www.britannica.com/place/Tyre",
-      "tags": [
-        "Tyre",
-        "Culture",
-        "History",
-        "Phoenician",
-        "Herodotus"
-      ],
-      "type": "cultural"
     },
     {
       "date": "01.01.0397",
@@ -757,13 +759,13 @@
       "latitude": 36.853,
       "longitude": 10.323,
       "name": "Agathocles Invades Africa",
-      "name_ru": "Агафокл вторгается в Африку",
+      "name_ru": "Агафокл Сиракузский вторгается в Африку",
       "source": "https://en.wikipedia.org/wiki/Agathocles_of_Syracuse",
       "tags": [
         "Carthage",
         "War",
         "Sicily",
-        "Invasion"
+        "Invasions"
       ],
       "type": "military"
     },
@@ -785,6 +787,25 @@
     },
     {
       "date": "01.01.0280",
+      "description": "Greek general Pyrrhus campaigns in Sicily against Carthaginian forces, temporarily seizing most Punic-held cities before withdrawing to Italy",
+      "description_ru": "Греческий полководец Пирр ведет кампанию в Сицилии против карфагенских сил, временно захватив большинство пунических городов, прежде чем отступить в Италию",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 14,
+      "name": "Pyrrhus Campaigns Against Carthage",
+      "name_ru": "Кампании Пирра против Карфагена",
+      "source": "https://www.britannica.com/biography/Pyrrhus-king-of-Epirus",
+      "tags": [
+        "Carthage",
+        "War",
+        "Sicily",
+        "Greek",
+        "Invasions"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0280",
       "description": "Carthage reaches apex of power, dominating North Africa, Iberia, Sardinia, Corsica and western Sicily with unrivaled naval and commercial supremacy",
       "description_ru": "Карфаген достигает апогея могущества, доминируя в Северной Африке, Иберии, Сардинии, Корсике и западной Сицилии с непревзойденным морским и коммерческим превосходством",
       "era": "BC",
@@ -802,24 +823,6 @@
       "type": "historic"
     },
     {
-      "date": "01.01.0280",
-      "description": "Greek general Pyrrhus campaigns in Sicily against Carthaginian forces, temporarily seizing most Punic-held cities before withdrawing to Italy",
-      "description_ru": "Греческий полководец Пирр ведет кампанию в Сицилии против карфагенских сил, временно захватив большинство пунических городов, прежде чем отступить в Италию",
-      "era": "BC",
-      "latitude": 37.5,
-      "longitude": 14,
-      "name": "Pyrrhus Campaigns Against Carthage",
-      "name_ru": "Кампании Пирра против Карфагена",
-      "source": "https://www.britannica.com/biography/Pyrrhus-king-of-Epirus",
-      "tags": [
-        "Carthage",
-        "War",
-        "Sicily",
-        "Greece"
-      ],
-      "type": "military"
-    },
-    {
       "date": "01.01.0264",
       "description": "Rome and Carthage clash over Sicily, initiating 23-year conflict that transforms Mediterranean balance of power",
       "description_ru": "Рим и Карфаген сталкиваются из-за Сицилии, начиная 23-летний конфликт, изменивший баланс сил в Средиземноморье",
@@ -834,7 +837,8 @@
         "Punic Wars",
         "Rome",
         "War",
-        "Sicily"
+        "Sicily",
+        "First Punic War"
       ],
       "type": "military"
     },
@@ -846,14 +850,15 @@
       "latitude": 37.275,
       "longitude": 13.458,
       "name": "Battle of Cape Ecnomus",
-      "name_ru": "Битва при мысе Экном",
+      "name_ru": "Морской бой при мысе Экном",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Cape_Ecnomus",
       "tags": [
         "Carthage",
         "Rome",
         "Punic Wars",
         "Naval",
-        "War"
+        "Battle",
+        "First Punic War"
       ],
       "type": "military"
     },
@@ -865,7 +870,7 @@
       "latitude": 37.965,
       "longitude": 12.436,
       "name": "Battle of the Aegates",
-      "name_ru": "Битва при Эгатских островах",
+      "name_ru": "Морской бой при Эгатских островах",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Aegates",
       "tags": [
         "Carthage",
@@ -873,7 +878,8 @@
         "Rome",
         "Naval",
         "Battle",
-        "Sicily"
+        "Sicily",
+        "First Punic War"
       ],
       "type": "military"
     },
@@ -931,7 +937,8 @@
         "Hannibal",
         "Rome",
         "Punic Wars",
-        "War"
+        "Battle",
+        "Second Punic War"
       ],
       "type": "military"
     },
@@ -950,7 +957,8 @@
         "Hannibal",
         "Rome",
         "Punic Wars",
-        "War"
+        "Battle",
+        "Second Punic War"
       ],
       "type": "military"
     },
@@ -968,7 +976,8 @@
         "Carthage",
         "Hannibal",
         "Punic Wars",
-        "Barcid Dynasty"
+        "Barcid Dynasty",
+        "Second Punic War"
       ],
       "type": "military"
     },
@@ -989,7 +998,8 @@
         "Barcid Dynasty",
         "Rome",
         "Iberia",
-        "War"
+        "War",
+        "Second Punic War"
       ],
       "type": "military"
     },
@@ -1008,8 +1018,9 @@
         "Hannibal",
         "Rome",
         "Punic Wars",
-        "War",
-        "Ambush"
+        "Ambush",
+        "Battle",
+        "Second Punic War"
       ],
       "type": "military"
     },
@@ -1028,7 +1039,8 @@
         "Hannibal",
         "Punic Wars",
         "Battle",
-        "Rome"
+        "Rome",
+        "Second Punic War"
       ],
       "type": "military"
     },
@@ -1047,7 +1059,8 @@
         "Carthage",
         "Hannibal",
         "Punic Wars",
-        "Siege"
+        "Siege",
+        "Second Punic War"
       ],
       "type": "military"
     },
@@ -1066,7 +1079,9 @@
         "Punic Wars",
         "Rome",
         "Iberia",
-        "Battle"
+        "Battle",
+        "Scipio",
+        "Second Punic War"
       ],
       "type": "military"
     },
@@ -1084,8 +1099,8 @@
         "Rome",
         "Carthage",
         "Punic Wars",
-        "War",
-        "Hasdrubal"
+        "Battle",
+        "Second Punic War"
       ],
       "type": "military"
     },
@@ -1104,7 +1119,8 @@
         "Carthage",
         "Punic Wars",
         "Scipio",
-        "Invasion"
+        "Second Punic War",
+        "Invasions"
       ],
       "type": "military"
     },
@@ -1123,7 +1139,8 @@
         "Carthage",
         "Punic Wars",
         "Scipio",
-        "War"
+        "Battle",
+        "Second Punic War"
       ],
       "type": "military"
     },
@@ -1142,7 +1159,9 @@
         "Hannibal",
         "Punic Wars",
         "Rome",
-        "Battle"
+        "Battle",
+        "Scipio",
+        "Second Punic War"
       ],
       "type": "military"
     },
@@ -1160,7 +1179,9 @@
         "Carthage",
         "Punic Wars",
         "Rome",
-        "Peace"
+        "Peace",
+        "Treaty",
+        "Second Punic War"
       ],
       "type": "political"
     },
@@ -1177,8 +1198,9 @@
       "tags": [
         "Carthage",
         "Rome",
-        "Economy",
-        "Treaty"
+        "Treaty",
+        "Contribution",
+        "Economic"
       ],
       "type": "political"
     },
@@ -1196,7 +1218,8 @@
         "Carthage",
         "Punic Wars",
         "Rome",
-        "War"
+        "War",
+        "Third Punic War"
       ],
       "type": "military"
     },
@@ -1216,7 +1239,8 @@
         "Destruction",
         "Fall",
         "End",
-        "Punic Wars"
+        "Punic Wars",
+        "Third Punic War"
       ],
       "type": "historic"
     },
@@ -1236,7 +1260,8 @@
         "Rome",
         "End",
         "Destruction",
-        "Fall"
+        "Fall",
+        "Third Punic War"
       ],
       "type": "military"
     }
