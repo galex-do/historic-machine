@@ -334,20 +334,6 @@ export default {
   },
   
   beforeUnmount() {
-    // Clean up markers properly before unmount
-    this.markers.forEach(marker => {
-      if (marker) {
-        if (marker.getTooltip()) {
-          marker.unbindTooltip()
-        }
-        marker.off()
-        if (this.map && this.map.hasLayer(marker)) {
-          this.map.removeLayer(marker)
-        }
-      }
-    })
-    this.markers = []
-    
     if (this.resize_observer) {
       this.resize_observer.disconnect()
     }
@@ -487,19 +473,10 @@ export default {
     },
     
     add_event_markers() {      
-      // Clear existing markers first with proper cleanup
+      // Clear existing markers first
       this.markers.forEach(marker => {
-        if (marker) {
-          // Unbind tooltip to prevent memory leaks and null reference errors
-          if (marker.getTooltip()) {
-            marker.unbindTooltip()
-          }
-          // Remove all event listeners
-          marker.off()
-          // Remove marker from map
-          if (this.map && this.map.hasLayer(marker)) {
-            this.map.removeLayer(marker)
-          }
+        if (this.map && this.map.hasLayer(marker)) {
+          this.map.removeLayer(marker)
         }
       })
       this.markers = []
@@ -538,26 +515,6 @@ export default {
               icon: emoji_icon,
               riseOnHover: true
             }).addTo(this.map)
-            
-            // Add tooltip for hover
-            if (eventGroup.events.length === 1) {
-              // Single event: show date + name
-              const event = eventGroup.events[0]
-              const tooltipText = `${this.formatEventDisplayDate(event.event_date, event.era)}\n${event.name}`
-              marker.bindTooltip(tooltipText, {
-                direction: 'top',
-                offset: [0, -20],
-                opacity: 0.9
-              })
-            } else {
-              // Cluster: show count
-              const tooltipText = `${eventGroup.events.length} events found here`
-              marker.bindTooltip(tooltipText, {
-                direction: 'top',
-                offset: [0, -20],
-                opacity: 0.9
-              })
-            }
             
             // Use click event instead of popup to avoid coordinate corruption
             marker.on('click', () => {
