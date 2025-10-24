@@ -10,6 +10,7 @@ A comprehensive web application for mapping historical events on an interactive 
   - Clustered events: Shows count (e.g., "5 events found here")
   - Tooltips appear above markers with 90% opacity for clear visibility
   - Uses Leaflet's built-in bindTooltip for smooth hover experience
+  - Fixed: Proper tooltip cleanup prevents null reference errors when zooming (unbindTooltip before marker removal)
   - Component: `WorldMap.vue`
 - **Clickable Tags in Event Popup**: Tags in map event popups are now clickable and add to tag filter panel
   - Click any tag in the event info modal to instantly filter events by that tag

@@ -334,6 +334,20 @@ export default {
   },
   
   beforeUnmount() {
+    // Clean up markers properly before unmount
+    this.markers.forEach(marker => {
+      if (marker) {
+        if (marker.getTooltip()) {
+          marker.unbindTooltip()
+        }
+        marker.off()
+        if (this.map && this.map.hasLayer(marker)) {
+          this.map.removeLayer(marker)
+        }
+      }
+    })
+    this.markers = []
+    
     if (this.resize_observer) {
       this.resize_observer.disconnect()
     }
@@ -473,10 +487,19 @@ export default {
     },
     
     add_event_markers() {      
-      // Clear existing markers first
+      // Clear existing markers first with proper cleanup
       this.markers.forEach(marker => {
-        if (this.map && this.map.hasLayer(marker)) {
-          this.map.removeLayer(marker)
+        if (marker) {
+          // Unbind tooltip to prevent memory leaks and null reference errors
+          if (marker.getTooltip()) {
+            marker.unbindTooltip()
+          }
+          // Remove all event listeners
+          marker.off()
+          // Remove marker from map
+          if (this.map && this.map.hasLayer(marker)) {
+            this.map.removeLayer(marker)
+          }
         }
       })
       this.markers = []
