@@ -3,6 +3,17 @@
 ## Overview
 A comprehensive web application for mapping historical events on an interactive world map with timeline functionality. Users can view, filter, and add historical events with geographical and temporal data. The project aims to provide a rich, interactive experience for exploring history, with capabilities for managing events, tags, and datasets, all within a localized and performant environment. This application has significant market potential for educational platforms, historical research, and general public engagement with historical data.
 
+## Recent Changes (October 24, 2025)
+
+- **Hurrian-Mitanni Kingdom Dataset and Templates**: Comprehensive historical coverage of the Hurrian-Mitanni Bronze Age empire
+  - Created dataset with 47 events spanning 1600 BC - 1200 BC (formation through final collapse)
+  - Covers early formation, expansion under Shaushtatar (golden age), Battle of Megiddo (1457 BC), alliance with Egypt, Hittite conquest (1360 BC), and Assyrian annexation (1240 BC)
+  - Includes major kings (Kirta, Shuttarna I, Barattarna, Shaushtatar, Artatama I, Shuttarna II, Tushratta, Mattiwaza), diplomatic marriages, chariot warfare, and cultural legacy
+  - Added 4 historical period templates to "Bronze Age Powers" group: Early Mitanni Formation, Mitanni Golden Age, Mitanni-Egyptian Alliance, Fall of Mitanni
+  - Professional English/Russian translations for all events and templates
+  - No duplication - verified no existing events tagged with Mitanni/Hurrians
+  - Dataset: `datasets/hurrian_mitanni_kingdom.json`, Migration: `backend/migrations/010_add_mitanni_templates.sql`
+
 ## Recent Changes (October 23, 2025)
 
 - **Clickable Tags in Event Popup**: Tags in map event popups are now clickable and add to tag filter panel
