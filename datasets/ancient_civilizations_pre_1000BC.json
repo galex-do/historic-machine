@@ -1933,19 +1933,244 @@
       "type": "political"
     },
     {
-      "date": "01.01.1436",
-      "description": "Thutmose III completes his 17th and final military campaign, securing Egyptian dominance",
-      "description_ru": "Тутмос III завершает свой 17-й и последний военный поход, обеспечивая египетское господство",
+      "date": "09.05.1457",
+      "description": "Thutmose III defeats Canaanite coalition at Battle of Megiddo, first battle recorded in reliable historical detail. After 7-month siege, captures 340 prisoners, 924 chariots, 2,041 horses",
+      "description_ru": "Тутмос III побеждает ханаанскую коалицию в битве при Мегиддо, первой битве, записанной в достоверных исторических деталях. После 7-месячной осады захватывает 340 пленных, 924 колесницы, 2041 лошадь",
       "era": "BC",
-      "latitude": 33.888,
-      "longitude": 35.495,
-      "name": "Thutmose III's 17 Campaigns",
-      "name_ru": "17 походов Тутмоса III",
+      "latitude": 32.585,
+      "longitude": 35.184,
+      "name": "Battle of Megiddo - Campaign 1",
+      "name_ru": "Битва при Мегиддо - Поход 1",
+      "source": "https://www.worldhistory.org/article/1101/thutmose-iii-at-the-battle-of-megiddo/",
       "tags": [
         "Egypt",
         "Military",
         "New Kingdom",
-        "Thutmose III"
+        "Thutmose III",
+        "Battle",
+        "Campaign",
+        "Canaan"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1456",
+      "description": "Thutmose III secures Phoenician coastal ports as Egyptian supply bases during northern campaigns, establishing control over Mediterranean trade routes",
+      "description_ru": "Тутмос III захватывает финикийские прибрежные порты как египетские базы снабжения во время северных походов, устанавливая контроль над средиземноморскими торговыми путями",
+      "era": "BC",
+      "latitude": 33.271,
+      "longitude": 35.204,
+      "name": "Phoenician Ports Campaign - Campaigns 2-5",
+      "name_ru": "Поход на финикийские порты - Походы 2-5",
+      "tags": [
+        "Egypt",
+        "Military",
+        "New Kingdom",
+        "Thutmose III",
+        "Campaign",
+        "Phoenician",
+        "Maritime",
+        "Trade"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1455",
+      "description": "Egyptian forces capture Kadesh in Syria, eliminating the main center of resistance that led the coalition at Megiddo",
+      "description_ru": "Египетские силы захватывают Кадеш в Сирии, ликвидируя главный центр сопротивления, возглавлявший коалицию при Мегиддо",
+      "era": "BC",
+      "latitude": 34.548,
+      "longitude": 36.512,
+      "name": "Capture of Kadesh - Campaign 6",
+      "name_ru": "Захват Кадеша - Поход 6",
+      "tags": [
+        "Egypt",
+        "Military",
+        "New Kingdom",
+        "Thutmose III",
+        "Campaign",
+        "Syria",
+        "Conquest"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1454",
+      "description": "Thutmose III conquers cities in Bekaa Valley (Al-Biqa), extending Egyptian control deeper into Syrian interior",
+      "description_ru": "Тутмос III завоевывает города в долине Бекаа (Аль-Бика), распространяя египетский контроль глубже во внутренние районы Сирии",
+      "era": "BC",
+      "latitude": 33.85,
+      "longitude": 35.9,
+      "name": "Bekaa Valley Conquest - Campaign 7",
+      "name_ru": "Завоевание долины Бекаа - Поход 7",
+      "tags": [
+        "Egypt",
+        "Military",
+        "New Kingdom",
+        "Thutmose III",
+        "Campaign",
+        "Syria",
+        "Conquest"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1453",
+      "description": "Egyptian army consolidates control over Syrian cities, establishing Egyptian administrative centers and tribute collection system",
+      "description_ru": "Египетская армия консолидирует контроль над сирийскими городами, устанавливая египетские административные центры и систему сбора дани",
+      "era": "BC",
+      "latitude": 36.0,
+      "longitude": 36.5,
+      "name": "Syrian Consolidation - Campaign 8",
+      "name_ru": "Консолидация Сирии - Поход 8",
+      "tags": [
+        "Egypt",
+        "Military",
+        "New Kingdom",
+        "Thutmose III",
+        "Campaign",
+        "Syria"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1450",
+      "description": "Thutmose III leads major expedition to Aleppo, confronting Kingdom of Mitanni. Victory forces Hittites to send tribute to Egypt",
+      "description_ru": "Тутмос III ведет крупную экспедицию к Алеппо, противостоя царству Митанни. Победа заставляет хеттов отправить дань Египту",
+      "era": "BC",
+      "latitude": 36.202,
+      "longitude": 37.159,
+      "name": "Aleppo Campaign Against Mitanni - Campaign 10",
+      "name_ru": "Поход на Алеппо против Митанни - Поход 10",
+      "tags": [
+        "Egypt",
+        "Military",
+        "New Kingdom",
+        "Thutmose III",
+        "Campaign",
+        "Mitanni",
+        "Syria",
+        "Battle"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1447",
+      "description": "Thutmose III crosses Euphrates River using pontoon boats transported overland, first pharaoh since Thutmose I to reach Mesopotamia. Defeats Mitanni army and erects victory stele",
+      "description_ru": "Тутмос III пересекает реку Евфрат на понтонных лодках, транспортированных по суше, первый фараон со времен Тутмоса I, достигший Месопотамии. Побеждает армию Митанни и воздвигает стелу победы",
+      "era": "BC",
+      "latitude": 36.5,
+      "longitude": 40.0,
+      "name": "Euphrates Crossing - Major Campaign",
+      "name_ru": "Переправа через Евфрат - Крупный поход",
+      "source": "https://www.britannica.com/biography/Thutmose-III",
+      "tags": [
+        "Egypt",
+        "Military",
+        "New Kingdom",
+        "Thutmose III",
+        "Campaign",
+        "Mitanni",
+        "Victory",
+        "Innovation"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1446",
+      "description": "Egyptian forces raid Nukhashshe region in Syria, maintaining pressure on semi-nomadic populations",
+      "description_ru": "Египетские силы совершают рейд в регион Нухашше в Сирии, поддерживая давление на полукочевое население",
+      "era": "BC",
+      "latitude": 35.5,
+      "longitude": 36.8,
+      "name": "Nukhashshe Raid - Campaign 9",
+      "name_ru": "Рейд на Нухашше - Поход 9",
+      "tags": [
+        "Egypt",
+        "Military",
+        "New Kingdom",
+        "Thutmose III",
+        "Campaign",
+        "Syria"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1444",
+      "description": "Campaign against Nuhašše in northern Syria to suppress local revolts and collect tribute",
+      "description_ru": "Поход против Нухашше в северной Сирии для подавления местных восстаний и сбора дани",
+      "era": "BC",
+      "latitude": 35.8,
+      "longitude": 37.0,
+      "name": "Nuhašše Campaign - Campaign 13",
+      "name_ru": "Поход на Нухашше - Поход 13",
+      "tags": [
+        "Egypt",
+        "Military",
+        "New Kingdom",
+        "Thutmose III",
+        "Campaign",
+        "Syria"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1440",
+      "description": "Egyptian expedition against Shasu nomadic tribes in Transjordan and Lebanon regions to secure trade routes",
+      "description_ru": "Египетская экспедиция против кочевых племен шасу в Заиорданье и регионах Ливана для защиты торговых путей",
+      "era": "BC",
+      "latitude": 31.5,
+      "longitude": 35.9,
+      "name": "Shasu Campaign - Campaign 14",
+      "name_ru": "Поход против шасу - Поход 14",
+      "tags": [
+        "Egypt",
+        "Military",
+        "New Kingdom",
+        "Thutmose III",
+        "Campaign",
+        "Trade"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1438",
+      "description": "Thutmose III's 17th and final Asian campaign in Syria, completing two decades of military dominance over Levant",
+      "description_ru": "17-й и последний азиатский поход Тутмоса III в Сирию, завершающий два десятилетия военного господства над Левантом",
+      "era": "BC",
+      "latitude": 35.0,
+      "longitude": 36.5,
+      "name": "Final Syrian Campaign - Campaign 17",
+      "name_ru": "Последний сирийский поход - Поход 17",
+      "tags": [
+        "Egypt",
+        "Military",
+        "New Kingdom",
+        "Thutmose III",
+        "Campaign",
+        "Syria",
+        "Final Campaign"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1430",
+      "description": "Thutmose III campaigns to Fourth Cataract in Nubia, building Temple of Amun at Napata and reopening gold mines, securing Egypt's southern frontier and wealth",
+      "description_ru": "Тутмос III ведет поход к Четвертому порогу в Нубии, строя храм Амона в Напате и вновь открывая золотые рудники, обеспечивая южную границу и богатство Египта",
+      "era": "BC",
+      "latitude": 18.537,
+      "longitude": 31.828,
+      "name": "Nubian Campaign to Fourth Cataract",
+      "name_ru": "Нубийский поход к Четвертому порогу",
+      "tags": [
+        "Egypt",
+        "Military",
+        "New Kingdom",
+        "Thutmose III",
+        "Campaign",
+        "Nubia",
+        "Gold",
+        "Temple"
       ],
       "type": "military"
     },
