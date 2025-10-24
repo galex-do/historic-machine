@@ -1,5 +1,5 @@
 {
-  "description": "Dataset covering the Hurrian-Mitanni Kingdom (c. 1600-1240 BCE), a powerful Bronze Age empire that dominated northern Mesopotamia and Syria",
+  "description": "Dataset imported with 43 events",
   "events": [
     {
       "date": "01.01.1600",
@@ -7,15 +7,15 @@
       "description_ru": "Хурритские племена начинают объединяться в северной Месопотамии после вакуума власти, последовавшего за хеттским разграблением Вавилона и касситским вторжением, формируя раннее государство Митанни",
       "era": "BC",
       "latitude": 36.5,
-      "longitude": 41.0,
+      "longitude": 41,
       "name": "Formation of Early Mitanni State",
       "name_ru": "Формирование раннего государства Митанни",
       "source": "https://www.worldhistory.org/Hurrians/",
       "tags": [
         "Mitanni",
-        "State Formation",
         "Hurrian",
-        "Political"
+        "Foundation",
+        "Babylonian"
       ],
       "type": "political"
     },
@@ -31,9 +31,9 @@
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Kirta",
         "Dynasty",
-        "Wassukkani"
+        "Capital",
+        "Hurrian"
       ],
       "type": "political"
     },
@@ -49,9 +49,9 @@
       "source": "https://www.historyfiles.co.uk/KingListsMiddEast/AnatoliaHurrianMitanni.htm",
       "tags": [
         "Mitanni",
-        "Shuttarna I",
         "Expansion",
-        "Dynasty"
+        "Dynasty",
+        "Indo-Aryan"
       ],
       "type": "political"
     },
@@ -67,10 +67,10 @@
       "source": "https://www.thecollector.com/mitanni-kingdom-bronze-age-superpower/",
       "tags": [
         "Mitanni",
-        "Military",
-        "Maryannu",
         "Chariot",
-        "Cavalry"
+        "Cavalry",
+        "War Science",
+        "Indo-Aryan"
       ],
       "type": "military"
     },
@@ -86,10 +86,11 @@
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Barattarna",
         "Expansion",
-        "Aleppo",
-        "Conquest"
+        "Conquest",
+        "Vassalage",
+        "Amorite",
+        "Mediterranean"
       ],
       "type": "military"
     },
@@ -105,10 +106,10 @@
       "source": "https://www.newworldencyclopedia.org/entry/Mitanni",
       "tags": [
         "Mitanni",
-        "Alalakh",
         "Vassalage",
         "Diplomacy",
-        "Syria"
+        "Syria",
+        "Amorite"
       ],
       "type": "political"
     },
@@ -124,7 +125,6 @@
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Shaushtatar",
         "Dynasty",
         "Golden Age"
       ],
@@ -142,11 +142,9 @@
       "source": "https://www.worldhistory.org/Hurrians/",
       "tags": [
         "Mitanni",
-        "Shaushtatar",
-        "Assyria",
-        "Ashur",
         "Conquest",
-        "Vassalage"
+        "Vassalage",
+        "Assyrian"
       ],
       "type": "military"
     },
@@ -162,10 +160,8 @@
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Nuzi",
-        "Arrapha",
-        "Administration",
-        "Tribute"
+        "Tribute",
+        "Vassalage"
       ],
       "type": "political"
     },
@@ -183,9 +179,10 @@
         "Mitanni",
         "Egypt",
         "Battle",
-        "Thutmose III",
-        "Megiddo",
-        "Canaan"
+        "Canaanite",
+        "First",
+        "New Kingdom",
+        "Thutmose III"
       ],
       "type": "military"
     },
@@ -197,13 +194,11 @@
       "latitude": 36.85,
       "longitude": 40.5,
       "name": "Mitanni at Maximum Territorial Extent",
-      "name_ru": "Митанни на максимальной территориальной протяженности",
+      "name_ru": "Золотой век Митанни",
       "source": "https://www.thecollector.com/mitanni-kingdom-bronze-age-superpower/",
       "tags": [
         "Mitanni",
         "Empire",
-        "Territory",
-        "Peak",
         "Golden Age"
       ],
       "type": "historic"
@@ -213,14 +208,13 @@
       "description": "Kingdom of Kizzuwatna in southern Anatolia shifts allegiance from Hittites to Mitanni, expanding northern frontier",
       "description_ru": "Царство Киццуватна в южной Анатолии переходит от хеттов к Митанни, расширяя северную границу",
       "era": "BC",
-      "latitude": 37.0,
+      "latitude": 37,
       "longitude": 35.3,
       "name": "Kizzuwatna Allies with Mitanni",
       "name_ru": "Киццуватна становится союзником Митанни",
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Kizzuwatna",
         "Alliance",
         "Anatolia",
         "Diplomacy"
@@ -240,9 +234,6 @@
       "tags": [
         "Hurrian",
         "Religion",
-        "Ugarit",
-        "Teshub",
-        "Hepat",
         "Writing"
       ],
       "type": "religious"
@@ -252,7 +243,7 @@
       "description": "Continued wars between Mitanni and Egyptian Pharaoh Thutmose III in Syria, with Egypt gradually gaining upper hand",
       "description_ru": "Продолжающиеся войны между Митанни и египетским фараоном Тутмосом III в Сирии, с постепенным усилением Египта",
       "era": "BC",
-      "latitude": 36.0,
+      "latitude": 36,
       "longitude": 36.5,
       "name": "Mitanni-Egyptian Wars in Syria",
       "name_ru": "Митанни-египетские войны в Сирии",
@@ -274,13 +265,13 @@
       "latitude": 36.85,
       "longitude": 40.5,
       "name": "Accession of Artatama I",
-      "name_ru": "Восшествие Артатамы I",
+      "name_ru": "Царство Артатамы I в Митанни",
       "source": "https://www.newworldencyclopedia.org/entry/Mitanni",
       "tags": [
         "Mitanni",
-        "Artatama I",
         "Dynasty",
-        "Diplomacy"
+        "Diplomacy",
+        "Egypt"
       ],
       "type": "political"
     },
@@ -289,16 +280,16 @@
       "description": "Rising Hittite power under Tudhaliya I threatens Mitanni's western territories in Syria and Anatolia",
       "description_ru": "Растущая хеттская мощь при Тудхалии I угрожает западным территориям Митанни в Сирии и Анатолии",
       "era": "BC",
-      "latitude": 40.0,
-      "longitude": 34.6,
+      "latitude": 37,
+      "longitude": 35.3,
       "name": "Hittite Threat Emerges",
       "name_ru": "Возникает хеттская угроза",
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Hittites",
         "Threat",
-        "Anatolia"
+        "Anatolia",
+        "Hittite"
       ],
       "type": "political"
     },
@@ -317,8 +308,7 @@
         "Egypt",
         "Marriage",
         "Alliance",
-        "Diplomacy",
-        "Thutmose IV"
+        "Diplomacy"
       ],
       "type": "political"
     },
@@ -334,7 +324,6 @@
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Shuttarna II",
         "Dynasty",
         "Golden Age"
       ],
@@ -354,9 +343,8 @@
         "Mitanni",
         "Egypt",
         "Marriage",
-        "Gilu-Hepa",
-        "Amenhotep III",
-        "Diplomacy"
+        "Diplomacy",
+        "Alliance"
       ],
       "type": "political"
     },
@@ -372,10 +360,7 @@
       "source": "https://www.worldhistory.org/Hurrians/",
       "tags": [
         "Mitanni",
-        "Nuzi",
-        "Administration",
         "Writing",
-        "Cuneiform",
         "Archives"
       ],
       "type": "cultural"
@@ -388,14 +373,31 @@
       "latitude": 36.85,
       "longitude": 40.5,
       "name": "Accession of King Tushratta",
-      "name_ru": "Восшествие царя Тушратты",
+      "name_ru": "Тушратта - последний царь Митанни",
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Tushratta",
         "Dynasty"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.1360",
+      "description": "Hittite king Suppiluliumas I launches major invasion of Mitanni, devastating Syrian territories and threatening capital",
+      "description_ru": "Хеттский царь Суппилулиумас I начинает крупное вторжение в Митанни, опустошая сирийские территории и угрожая столице",
+      "era": "BC",
+      "latitude": 36.5,
+      "longitude": 39,
+      "name": "Hittite Invasion Under Suppiluliumas I",
+      "name_ru": "Хеттское вторжение при Суппилулиумасе I",
+      "source": "https://www.thecollector.com/mitanni-kingdom-bronze-age-superpower/",
+      "tags": [
+        "Mitanni",
+        "War",
+        "Hittite",
+        "Invasions"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.1360",
@@ -409,33 +411,11 @@
       "source": "https://www.newworldencyclopedia.org/entry/Mitanni",
       "tags": [
         "Mitanni",
-        "Tushratta",
         "Egypt",
         "Diplomacy",
-        "Hurrian",
-        "Amenhotep III",
-        "Akhenaten"
+        "Hurrian"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.1360",
-      "description": "Hittite king Suppiluliumas I launches major invasion of Mitanni, devastating Syrian territories and threatening capital",
-      "description_ru": "Хеттский царь Суппилулиумас I начинает крупное вторжение в Митанни, опустошая сирийские территории и угрожая столице",
-      "era": "BC",
-      "latitude": 36.5,
-      "longitude": 39.0,
-      "name": "Hittite Invasion Under Suppiluliumas I",
-      "name_ru": "Хеттское вторжение при Суппилулиумасе I",
-      "source": "https://www.thecollector.com/mitanni-kingdom-bronze-age-superpower/",
-      "tags": [
-        "Mitanni",
-        "Hittites",
-        "Suppiluliumas I",
-        "Invasion",
-        "War"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.1358",
@@ -449,10 +429,9 @@
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Hittites",
-        "Wassukkani",
-        "Sack",
-        "Destruction"
+        "Destruction",
+        "Hittite",
+        "Plundering"
       ],
       "type": "military"
     },
@@ -468,9 +447,9 @@
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Tushratta",
         "Assassination",
-        "Civil War"
+        "Civil War",
+        "Death"
       ],
       "type": "political"
     },
@@ -486,9 +465,7 @@
       "source": "https://www.newworldencyclopedia.org/entry/Mitanni",
       "tags": [
         "Mitanni",
-        "Shuttarna III",
-        "Civil War",
-        "Succession Crisis"
+        "Civil War"
       ],
       "type": "political"
     },
@@ -497,17 +474,16 @@
       "description": "Mattiwaza, son of Tushratta, flees to Hittite court and seeks aid of Suppiluliumas I against rival Shuttarna III",
       "description_ru": "Маттиваза, сын Тушратты, бежит к хеттскому двору и ищет помощи Суппилулиумаса I против соперника Шуттарны III",
       "era": "BC",
-      "latitude": 40.0,
+      "latitude": 40,
       "longitude": 34.6,
       "name": "Mattiwaza Seeks Hittite Support",
       "name_ru": "Маттиваза ищет хеттскую поддержку",
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Mattiwaza",
-        "Hittites",
         "Exile",
-        "Diplomacy"
+        "Hittite",
+        "Civil War"
       ],
       "type": "political"
     },
@@ -523,10 +499,9 @@
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Mattiwaza",
         "Hittites",
         "Vassalage",
-        "Puppet State"
+        "Civil War"
       ],
       "type": "political"
     },
@@ -542,7 +517,6 @@
       "source": "https://www.newworldencyclopedia.org/entry/Mitanni",
       "tags": [
         "Mitanni",
-        "Hanigalbat",
         "Hittites",
         "Vassalage"
       ],
@@ -560,10 +534,9 @@
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Hittites",
         "Treaty",
-        "Cuneiform",
-        "Vassalage"
+        "Vassalage",
+        "Hittite"
       ],
       "type": "political"
     },
@@ -579,9 +552,9 @@
       "source": "https://www.worldhistory.org/Hurrians/",
       "tags": [
         "Mitanni",
-        "Assyria",
-        "Ashur-uballit I",
-        "Conflict"
+        "Assyrian",
+        "Invasions",
+        "Hittite"
       ],
       "type": "military"
     },
@@ -596,11 +569,10 @@
       "name_ru": "Ададнирари I завоевывает восточное Митанни",
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
-        "Mitanni",
-        "Assyria",
-        "Adad-nirari I",
         "Conquest",
-        "Nuzi"
+        "Assyrian",
+        "Mitanni",
+        "Hurrian"
       ],
       "type": "military"
     },
@@ -616,9 +588,8 @@
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Decline",
-        "Hittites",
-        "Assyria"
+        "Assyrian",
+        "Hittite"
       ],
       "type": "political"
     },
@@ -628,15 +599,15 @@
       "description_ru": "Хетто-ассирийские конфликты из-за территорий Митанни усиливаются, поскольку обе империи стремятся доминировать в северной Месопотамии",
       "era": "BC",
       "latitude": 36.5,
-      "longitude": 40.0,
+      "longitude": 40,
       "name": "Hittite-Assyrian Rivalry Over Mitanni",
       "name_ru": "Хетто-ассирийское соперничество за Митанни",
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Hittites",
-        "Assyria",
-        "War"
+        "War",
+        "Hittite",
+        "Assyrian"
       ],
       "type": "military"
     },
@@ -652,10 +623,8 @@
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Assyria",
-        "Shalmaneser I",
         "Conquest",
-        "Hanigalbat"
+        "Assyrian"
       ],
       "type": "military"
     },
@@ -664,16 +633,15 @@
       "description": "Former Mitanni territories east of Euphrates formally incorporated into Assyrian provincial system",
       "description_ru": "Бывшие территории Митанни к востоку от Евфрата официально включены в ассирийскую провинциальную систему",
       "era": "BC",
-      "latitude": 36.0,
-      "longitude": 41.0,
+      "latitude": 36,
+      "longitude": 41,
       "name": "Assyrian Annexation of Mitanni Territories",
       "name_ru": "Ассирийская аннексия территорий Митанни",
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Assyria",
         "Annexation",
-        "Province"
+        "Assyrian"
       ],
       "type": "political"
     },
@@ -682,16 +650,16 @@
       "description": "Hurrian population gradually assimilates into Assyrian culture while preserving some religious and linguistic traditions",
       "description_ru": "Хурритское население постепенно ассимилируется в ассирийскую культуру, сохраняя некоторые религиозные и лингвистические традиции",
       "era": "BC",
-      "latitude": 36.0,
+      "latitude": 36,
       "longitude": 41.5,
       "name": "Hurrian Assimilation into Assyria",
       "name_ru": "Ассимиляция хурритов в Ассирию",
       "source": "https://www.worldhistory.org/Hurrians/",
       "tags": [
         "Hurrian",
-        "Assyria",
         "Assimilation",
-        "Culture"
+        "Culture",
+        "Assyrian"
       ],
       "type": "cultural"
     },
@@ -701,33 +669,32 @@
       "description_ru": "Остаточные территории Митанни к западу от Евфрата называются ассирийцами Шубару, сохраняя номинальную независимость",
       "era": "BC",
       "latitude": 36.5,
-      "longitude": 39.0,
+      "longitude": 39,
       "name": "Emergence of Shubaru Remnant",
-      "name_ru": "Возникновение остатка Шубару",
+      "name_ru": "Ассирийцы Шубару",
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Shubaru",
-        "Remnant"
+        "Assyrian",
+        "Vassalage"
       ],
       "type": "political"
     },
     {
       "date": "01.01.1245",
       "description": "Multiple Hurrian revolts against Assyrian rule crushed by Shalmaneser I, ending organized Mitanni resistance",
-      "description_ru": "Множественные хурритские восстания против ассирийского правления подавлены Салманасаром I, прекращая организованное сопротивление Митанни",
+      "description_ru": "Хурритские восстания против ассирийского правления подавлены Салманасаром I, сопротивление Митанни прекращено",
       "era": "BC",
-      "latitude": 36.0,
-      "longitude": 41.0,
+      "latitude": 36,
+      "longitude": 41,
       "name": "Suppression of Hurrian Revolts",
       "name_ru": "Подавление хурритских восстаний",
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
         "Hurrian",
-        "Revolt",
-        "Assyria",
-        "Shalmaneser I"
+        "Rebellion",
+        "Assyrian"
       ],
       "type": "military"
     },
@@ -744,9 +711,9 @@
       "tags": [
         "Mitanni",
         "Collapse",
-        "End",
-        "Hittites",
-        "Assyria"
+        "Hittite",
+        "Assyrian",
+        "Fall"
       ],
       "type": "historic"
     },
@@ -755,8 +722,8 @@
       "description": "Hurrian language continues to be spoken in isolated regions but gradually replaced by Aramaic and Akkadian",
       "description_ru": "Хурритский язык продолжает использоваться в изолированных регионах, но постепенно заменяется арамейским и аккадским",
       "era": "BC",
-      "latitude": 36.0,
-      "longitude": 40.0,
+      "latitude": 36,
+      "longitude": 40,
       "name": "Decline of Hurrian Language",
       "name_ru": "Упадок хурритского языка",
       "source": "https://www.worldhistory.org/Hurrians/",
@@ -773,17 +740,17 @@
       "description": "Hurrian religious practices, especially worship of Teshub and Hepat, absorbed into Hittite and Assyrian pantheons",
       "description_ru": "Хурритские религиозные практики, особенно поклонение Тешубу и Хепат, поглощены хеттским и ассирийским пантеонами",
       "era": "BC",
-      "latitude": 36.0,
-      "longitude": 40.0,
+      "latitude": 36,
+      "longitude": 40,
       "name": "Integration of Hurrian Deities",
       "name_ru": "Интеграция хурритских божеств",
       "source": "https://www.worldhistory.org/Hurrians/",
       "tags": [
         "Hurrian",
         "Religion",
-        "Teshub",
-        "Hepat",
-        "Syncretism"
+        "Syncretism",
+        "Assyrian",
+        "Hittite"
       ],
       "type": "religious"
     },
@@ -792,19 +759,18 @@
       "description": "Legacy of Mitanni chariot warfare and horse breeding techniques preserved in Assyrian and Hittite military traditions",
       "description_ru": "Наследие митаннийской колесничной войны и техник коневодства сохранено в ассирийских и хеттских военных традициях",
       "era": "BC",
-      "latitude": 36.0,
-      "longitude": 40.0,
+      "latitude": 36,
+      "longitude": 40,
       "name": "Mitanni Military Legacy",
       "name_ru": "Военное наследие Митанни",
       "source": "https://www.thecollector.com/mitanni-kingdom-bronze-age-superpower/",
       "tags": [
         "Mitanni",
-        "Military",
-        "Chariot",
         "Legacy",
-        "Horse"
+        "War Science"
       ],
       "type": "military"
     }
-  ]
+  ],
+  "filename": "hurrian_mitanni_kingdom.json"
 }

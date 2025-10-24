@@ -431,22 +431,6 @@
     },
     {
       "date": "01.01.0600",
-      "description": "Phoenician monopoly on rare purple dye extracted from murex snails reaches apex, with Tyrian purple becoming most valuable commodity in ancient world",
-      "description_ru": "Финикийская монополия на редкий пурпурный краситель из раковин мурекса достигает апогея; тирский пурпур становится самым ценным товаром древнего мира",
-      "era": "BC",
-      "latitude": 33.271,
-      "longitude": 35.204,
-      "name": "Tyrian Purple Dye Trade Peak",
-      "name_ru": "Пик торговли тирским пурпуром",
-      "source": "https://www.metmuseum.org/toah/hd/phoe/hd_phoe.htm",
-      "tags": [
-        "Trade",
-        "Tyre"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0600",
       "description": "Sidonian artisans perfect transparent glass production by adding antimony, establishing Phoenician dominance in luxury glassware exported across ancient world",
       "description_ru": "Сидонские мастера совершенствуют производство прозрачного стекла, добавляя сурьму, устанавливая финикийское господство в производстве роскошной стеклянной посуды, экспортируемой по всему древнему миру",
       "era": "BC",
@@ -463,6 +447,22 @@
         "Phoenician"
       ],
       "type": "scientific"
+    },
+    {
+      "date": "01.01.0600",
+      "description": "Phoenician monopoly on rare purple dye extracted from murex snails reaches apex, with Tyrian purple becoming most valuable commodity in ancient world",
+      "description_ru": "Финикийская монополия на редкий пурпурный краситель из раковин мурекса достигает апогея; тирский пурпур становится самым ценным товаром древнего мира",
+      "era": "BC",
+      "latitude": 33.271,
+      "longitude": 35.204,
+      "name": "Tyrian Purple Dye Trade Peak",
+      "name_ru": "Пик торговли тирским пурпуром",
+      "source": "https://www.metmuseum.org/toah/hd/phoe/hd_phoe.htm",
+      "tags": [
+        "Trade",
+        "Tyre"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0586",
@@ -553,10 +553,10 @@
         "Conquest",
         "Phoenician",
         "Cyrus the Great",
-        "Vassalization",
         "Tyre",
         "Sidon",
-        "Byblos"
+        "Byblos",
+        "Vassalage"
       ],
       "type": "military"
     },
