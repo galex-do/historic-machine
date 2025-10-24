@@ -166,27 +166,6 @@
       "type": "political"
     },
     {
-      "date": "01.01.1457",
-      "description": "Battle of Megiddo: Egyptian Pharaoh Thutmose III defeats Canaanite coalition supported by Mitanni, first battle recorded in reliable historical detail",
-      "description_ru": "Битва при Мегиддо: египетский фараон Тутмос III побеждает ханаанскую коалицию, поддержанную Митанни, первая битва, записанная в достоверных исторических деталях",
-      "era": "BC",
-      "latitude": 32.585,
-      "longitude": 35.184,
-      "name": "Battle of Megiddo",
-      "name_ru": "Битва при Мегиддо",
-      "source": "https://www.worldhistory.org/article/1101/thutmose-iii-at-the-battle-of-megiddo/",
-      "tags": [
-        "Mitanni",
-        "Egypt",
-        "Battle",
-        "Canaanite",
-        "First",
-        "New Kingdom",
-        "Thutmose III"
-      ],
-      "type": "military"
-    },
-    {
       "date": "01.01.1450",
       "description": "Mitanni empire reaches maximum extent from Mediterranean to northern Zagros Mountains, controlling Syria, northern Mesopotamia, and parts of Anatolia",
       "description_ru": "Империя Митанни достигает максимальных размеров от Средиземноморья до северных гор Загроса, контролируя Сирию, северную Месопотамию и части Анатолии",
@@ -233,29 +212,10 @@
       "source": "https://www.worldhistory.org/Hurrians/",
       "tags": [
         "Hurrian",
-        "Religion",
-        "Writing"
+        "Writing",
+        "Religious"
       ],
       "type": "religious"
-    },
-    {
-      "date": "01.01.1430",
-      "description": "Continued wars between Mitanni and Egyptian Pharaoh Thutmose III in Syria, with Egypt gradually gaining upper hand",
-      "description_ru": "Продолжающиеся войны между Митанни и египетским фараоном Тутмосом III в Сирии, с постепенным усилением Египта",
-      "era": "BC",
-      "latitude": 36,
-      "longitude": 36.5,
-      "name": "Mitanni-Egyptian Wars in Syria",
-      "name_ru": "Митанни-египетские войны в Сирии",
-      "source": "https://www.britannica.com/place/Mitanni",
-      "tags": [
-        "Mitanni",
-        "Egypt",
-        "War",
-        "Syria",
-        "Thutmose III"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.1420",
@@ -747,10 +707,10 @@
       "source": "https://www.worldhistory.org/Hurrians/",
       "tags": [
         "Hurrian",
-        "Religion",
         "Syncretism",
         "Assyrian",
-        "Hittite"
+        "Hittite",
+        "Religious"
       ],
       "type": "religious"
     },
