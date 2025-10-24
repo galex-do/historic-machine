@@ -516,6 +516,26 @@ export default {
               riseOnHover: true
             }).addTo(this.map)
             
+            // Add tooltip for hover
+            if (eventGroup.events.length === 1) {
+              // Single event: show date + name
+              const event = eventGroup.events[0]
+              const tooltipText = `${this.formatEventDisplayDate(event.event_date, event.era)}\n${event.name}`
+              marker.bindTooltip(tooltipText, {
+                direction: 'top',
+                offset: [0, -20],
+                opacity: 0.9
+              })
+            } else {
+              // Cluster: show count
+              const tooltipText = `${eventGroup.events.length} events found here`
+              marker.bindTooltip(tooltipText, {
+                direction: 'top',
+                offset: [0, -20],
+                opacity: 0.9
+              })
+            }
+            
             // Use click event instead of popup to avoid coordinate corruption
             marker.on('click', () => {
               this.show_events_info(eventGroup.events)

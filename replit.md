@@ -5,6 +5,12 @@ A comprehensive web application for mapping historical events on an interactive 
 
 ## Recent Changes (October 23, 2025)
 
+- **Map Marker Tooltips**: Simple tooltips appear when hovering over event markers on map
+  - Single events: Shows formatted date + event name (e.g., "01.01.332 BC - Conquest of Alexandria")
+  - Clustered events: Shows count (e.g., "5 events found here")
+  - Tooltips appear above markers with 90% opacity for clear visibility
+  - Uses Leaflet's built-in bindTooltip for smooth hover experience
+  - Component: `WorldMap.vue`
 - **Clickable Tags in Event Popup**: Tags in map event popups are now clickable and add to tag filter panel
   - Click any tag in the event info modal to instantly filter events by that tag
   - Tags have hover effects (lift, brightness, shadow) to indicate they're interactive
