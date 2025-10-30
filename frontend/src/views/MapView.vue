@@ -31,18 +31,16 @@
         
         <!-- Events List in Sidebar -->
         <div class="events-sidebar-content" v-show="!sidebarCollapsed">
-          <TagFilterPanel
-            :selected-tags="selectedTags"
-            :follow-enabled="narrativeFlowEnabled"
-            @remove-tag="handleRemoveTag"
-            @clear-all-tags="handleClearAllTags"
-            @toggle-follow="handleToggleNarrativeFlow"
-          />
           <EventsGrid
             :events="displayedEvents"
+            :selected-tags="selectedTags"
+            :follow-enabled="narrativeFlowEnabled"
             @focus-event="focusOnEvent"
             @map-filter-toggle="handleMapFilterToggle"
             @tag-clicked="handleTagClick"
+            @remove-tag="handleRemoveTag"
+            @clear-all-tags="handleClearAllTags"
+            @toggle-follow="handleToggleNarrativeFlow"
           />
         </div>
       </aside>
@@ -69,7 +67,6 @@
 <script>
 import { ref, computed, nextTick, onMounted, watch } from 'vue'
 import DateControlBar from '@/components/filters/DateControlBar.vue'
-import TagFilterPanel from '@/components/filters/TagFilterPanel.vue'
 import WorldMap from '@/components/WorldMap.vue'
 import EventsGrid from '@/components/events/EventsGrid.vue'
 import { useEvents } from '@/composables/useEvents.js'
@@ -82,7 +79,6 @@ export default {
   name: 'MapView',
   components: {
     DateControlBar,
-    TagFilterPanel,
     WorldMap,
     EventsGrid
   },

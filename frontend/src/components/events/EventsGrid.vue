@@ -31,6 +31,14 @@
       </div>
       <div class="events-filters">
         <button 
+          @click="toggleTagFilter"
+          class="filter-btn tag-filter"
+          :class="{ 'active': tagFilterVisible && selectedTags.length > 0 }"
+          :title="tagFilterVisible ? 'Hide tag filters' : 'Show tag filters'"
+        >
+          🏷️
+        </button>
+        <button 
           @click="toggleMapFilter"
           class="filter-btn map-filter"
           :class="{ 'active': mapFilterEnabled }"
@@ -40,6 +48,16 @@
         </button>
       </div>
     </div>
+
+    <!-- Tag Filter Panel (Collapsible) -->
+    <TagFilterPanel
+      v-if="tagFilterVisible"
+      :selected-tags="selectedTags"
+      :follow-enabled="followEnabled"
+      @remove-tag="$emit('remove-tag', $event)"
+      @clear-all-tags="$emit('clear-all-tags')"
+      @toggle-follow="$emit('toggle-follow')"
+    />
 
     <div class="events-grid">
       <div v-if="events.length === 0" class="no-events">
@@ -59,24 +77,46 @@
 
 <script>
 import EventCard from './EventCard.vue'
+import TagFilterPanel from '../filters/TagFilterPanel.vue'
 
 export default {
   name: 'EventsGrid',
   components: {
-    EventCard
+    EventCard,
+    TagFilterPanel
   },
   props: {
     events: {
       type: Array,
       default: () => []
+    },
+    selectedTags: {
+      type: Array,
+      default: () => []
+    },
+    followEnabled: {
+      type: Boolean,
+      default: false
     }
   },
-  emits: ['focus-event', 'map-filter-toggle', 'tag-clicked'],
+  emits: ['focus-event', 'map-filter-toggle', 'tag-clicked', 'remove-tag', 'clear-all-tags', 'toggle-follow'],
   data() {
+    const STORAGE_KEY = 'historia_tag_filter_visible'
+    const loadTagFilterState = () => {
+      try {
+        const stored = sessionStorage.getItem(STORAGE_KEY)
+        return stored ? JSON.parse(stored) : true // Default to visible
+      } catch (error) {
+        return true
+      }
+    }
+
     return {
       currentPage: 1,
       eventsPerPage: 3, // Maximum 3 cards to prevent sidebar scrolling
-      mapFilterEnabled: false
+      mapFilterEnabled: false,
+      tagFilterVisible: loadTagFilterState(),
+      STORAGE_KEY
     }
   },
   computed: {
@@ -102,6 +142,14 @@ export default {
         this.currentPage = 1
       }
       // Otherwise, keep the current page to maintain pagination state
+    },
+    tagFilterVisible(newValue) {
+      // Save to session storage
+      try {
+        sessionStorage.setItem(this.STORAGE_KEY, JSON.stringify(newValue))
+      } catch (error) {
+        console.warn('Error saving tag filter visibility state:', error)
+      }
     }
   },
   methods: {
@@ -113,6 +161,9 @@ export default {
     toggleMapFilter() {
       this.mapFilterEnabled = !this.mapFilterEnabled
       this.$emit('map-filter-toggle', this.mapFilterEnabled)
+    },
+    toggleTagFilter() {
+      this.tagFilterVisible = !this.tagFilterVisible
     }
   }
 }
