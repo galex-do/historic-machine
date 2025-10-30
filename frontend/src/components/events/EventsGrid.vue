@@ -53,10 +53,12 @@
     <TagFilterPanel
       v-if="tagFilterVisible"
       :selected-tags="selectedTags"
+      :available-tags="availableTags"
       :follow-enabled="followEnabled"
       @remove-tag="$emit('remove-tag', $event)"
       @clear-all-tags="$emit('clear-all-tags')"
       @toggle-follow="$emit('toggle-follow')"
+      @add-tag="$emit('tag-clicked', $event)"
     />
 
     <div class="events-grid">
@@ -127,6 +129,25 @@ export default {
       const start = (this.currentPage - 1) * this.eventsPerPage
       const end = start + this.eventsPerPage
       return this.events.slice(start, end)
+    },
+    availableTags() {
+      // Extract all unique tags from currently displayed events
+      const tagMap = new Map()
+      
+      this.events.forEach(event => {
+        if (event.tags && Array.isArray(event.tags)) {
+          event.tags.forEach(tag => {
+            if (!tagMap.has(tag.id)) {
+              tagMap.set(tag.id, tag)
+            }
+          })
+        }
+      })
+      
+      // Convert to array and sort alphabetically
+      return Array.from(tagMap.values()).sort((a, b) => 
+        a.name.localeCompare(b.name)
+      )
     }
   },
   watch: {

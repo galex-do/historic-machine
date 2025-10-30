@@ -3,6 +3,31 @@
 ## Overview
 A comprehensive web application for mapping historical events on an interactive world map with timeline functionality. Users can view, filter, and add historical events with geographical and temporal data. The project aims to provide a rich, interactive experience for exploring history, with capabilities for managing events, tags, and datasets, all within a localized and performant environment. This application has significant market potential for educational platforms, historical research, and general public engagement with historical data.
 
+## Recent Changes (October 30, 2025)
+
+### Tag Search Functionality
+- **Dynamic Tag Search**: Search input field that adapts to currently displayed events
+  - Autocomplete dropdown shows tags from visible events only (recalculates when event set changes)
+  - Filters out already selected tags from suggestions
+  - Shows up to 10 tag suggestions with colored left border indicators matching tag colors
+  - Click-to-add functionality - clicking a tag adds it to filters and closes dropdown
+  - Search query filtering - type to narrow down tag suggestions
+  - Empty state message when no matching tags found ("No tags found")
+  - Full localization support (English: "Search tags...", Russian: "Поиск тегов...")
+  - Components modified: `TagFilterPanel.vue` (search UI + logic), `EventsGrid.vue` (availableTags computed)
+  - Reactive behavior: tag list automatically updates when event set changes via date filter, map filter, or tag filters
+
+### Tag Filter Panel UI Reorganization
+- **Improved Events Sidebar Layout**: Collapsible tag filtering with better visual hierarchy
+  - Moved TagFilterPanel from above EventsGrid to below events-header (after event count/pagination)
+  - Added tag filter toggle button (🏷️) in events-header next to map filter button (🗺️)
+  - Toggle button shows active state when filters are visible and tags are selected
+  - Tag filter panel now collapsible for cleaner UI when not needed
+  - Visibility state persisted in session storage (key: `historia_tag_filter_visible`, default: visible)
+  - Better visual grouping: all header actions (tag filter, map filter) together
+  - All tag filtering functionality preserved: click, remove, clear all, narrative flow
+  - Components modified: `EventsGrid.vue`, `MapView.vue`
+
 ## User Preferences
 - Use snake_case naming convention everywhere for elements and functions
 - Develop professional, high-end code with proper patterns and templates
