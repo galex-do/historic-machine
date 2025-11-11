@@ -93,7 +93,7 @@ export default {
   },
   emits: ['close'],
   setup(props, { emit }) {
-    const { t, formatEventDate } = useLocale()
+    const { t, formatEventDisplayDate } = useLocale()
     const expandedEvents = ref(new Set())
     const previouslyFocusedElement = ref(null)
 
@@ -148,7 +148,7 @@ export default {
         if (!groups[eventDate]) {
           groups[eventDate] = {
             date: eventDate,
-            formattedDate: formatEventDate(event.event_date, event.era),
+            formattedDate: formatEventDisplayDate(event.event_date, event.era),
             events: []
           }
         }
