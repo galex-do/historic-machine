@@ -124,6 +124,13 @@ const UI_TRANSLATIONS = {
     enableNarrativeFlow: 'Enable narrative flow - connect events chronologically',
     disableNarrativeFlow: 'Disable narrative flow',
     
+    // Timeline
+    timelineView: 'Timeline view',
+    close: 'Close',
+    showMore: 'Show more',
+    showLess: 'Show less',
+    noEventsInTimeline: 'No events to display in timeline',
+    
     // Datasets Table
     columnFilename: 'Filename',
     columnEventCount: 'Event Count',
@@ -292,6 +299,13 @@ const UI_TRANSLATIONS = {
     followEvents: 'Следовать',
     enableNarrativeFlow: 'Включить нарративный поток - соединить события хронологически',
     disableNarrativeFlow: 'Отключить нарративный поток',
+    
+    // Timeline
+    timelineView: 'Вид временной шкалы',
+    close: 'Закрыть',
+    showMore: 'Показать больше',
+    showLess: 'Показать меньше',
+    noEventsInTimeline: 'Нет событий для отображения на временной шкале',
     
     // Datasets Table
     columnFilename: 'Имя файла',

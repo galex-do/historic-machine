@@ -31,6 +31,14 @@
       </div>
       <div class="events-filters">
         <button 
+          @click="openTimeline"
+          class="filter-btn timeline-btn"
+          :disabled="events.length === 0"
+          :title="t('timelineView')"
+        >
+          📅
+        </button>
+        <button 
           @click="toggleTagFilter"
           class="filter-btn tag-filter"
           :class="{ 'active': tagFilterVisible && selectedTags.length > 0 }"
@@ -74,18 +82,28 @@
         @tag-clicked="$emit('tag-clicked', $event)"
       />
     </div>
+
+    <!-- Timeline Modal -->
+    <TimelineModal
+      :is-open="timelineModalOpen"
+      :events="events"
+      @close="timelineModalOpen = false"
+    />
   </div>
 </template>
 
 <script>
+import { useLocale } from '@/composables/useLocale.js'
 import EventCard from './EventCard.vue'
 import TagFilterPanel from '../filters/TagFilterPanel.vue'
+import TimelineModal from '../timeline/TimelineModal.vue'
 
 export default {
   name: 'EventsGrid',
   components: {
     EventCard,
-    TagFilterPanel
+    TagFilterPanel,
+    TimelineModal
   },
   props: {
     events: {
@@ -113,12 +131,16 @@ export default {
       }
     }
 
+    const { t } = useLocale()
+
     return {
       currentPage: 1,
       eventsPerPage: 3, // Maximum 3 cards to prevent sidebar scrolling
       mapFilterEnabled: false,
       tagFilterVisible: loadTagFilterState(),
-      STORAGE_KEY
+      timelineModalOpen: false,
+      STORAGE_KEY,
+      t
     }
   },
   computed: {
@@ -185,6 +207,9 @@ export default {
     },
     toggleTagFilter() {
       this.tagFilterVisible = !this.tagFilterVisible
+    },
+    openTimeline() {
+      this.timelineModalOpen = true
     }
   }
 }
@@ -248,6 +273,11 @@ export default {
   border-color: #3b82f6;
   color: white;
   box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+.filter-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 .map-filter {
