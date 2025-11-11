@@ -15,61 +15,79 @@
 
         <div v-else class="timeline_container">
           <div v-for="group in groupedEvents" :key="group.date" class="timeline_date_group">
-            <!-- Date Header -->
-            <div class="timeline_date_header">
+            <!-- Single event on this date: everything on one line -->
+            <div v-if="group.events.length === 1" class="timeline_single_event_line">
               <div class="timeline_bullet"></div>
-              <div class="timeline_date">{{ group.formattedDate }}</div>
+              <span class="timeline_date_inline">{{ group.formattedDate }}</span>
+              <span class="event_icon">{{ getEventEmoji(group.events[0].lens_type) }}</span>
+              <span class="event_name">{{ group.events[0].name }}</span>
+              <span v-if="group.events[0].description" class="event_description_inline">
+                — {{ group.events[0].description }}
+              </span>
+              <!-- Tags inline -->
+              <span v-if="group.events[0].tags && group.events[0].tags.length > 0" class="event_tags_inline_single">
+                <span
+                  v-for="tag in group.events[0].tags"
+                  :key="tag.id"
+                  class="event_tag_compact"
+                  :style="{ color: tag.color || '#6366f1' }"
+                >
+                  {{ tag.name }}
+                </span>
+              </span>
             </div>
 
-            <!-- Events for this date -->
-            <div class="timeline_events_list">
-              <div 
-                v-for="event in group.events" 
-                :key="event.id"
-                class="timeline_event_line"
-              >
-                <!-- Single line: Icon + Name + Description (if only one event) or just Icon + Name -->
-                <div class="event_main_line">
-                  <span class="event_icon">{{ getEventEmoji(event.lens_type) }}</span>
-                  <span class="event_name">{{ event.name }}</span>
-                  <!-- Show description inline if it's the only event and short -->
-                  <span 
-                    v-if="group.events.length === 1 && event.description && event.description.length <= 100"
-                    class="event_description_inline"
-                  >
-                    — {{ event.description }}
-                  </span>
-                </div>
+            <!-- Multiple events on this date: separate date header -->
+            <template v-else>
+              <!-- Date Header -->
+              <div class="timeline_date_header">
+                <div class="timeline_bullet"></div>
+                <div class="timeline_date">{{ group.formattedDate }}</div>
+              </div>
 
-                <!-- Description on separate line if multiple events or long description -->
+              <!-- Events for this date -->
+              <div class="timeline_events_list">
                 <div 
-                  v-if="event.description && (group.events.length > 1 || event.description.length > 100)"
-                  class="event_description_block"
-                  :class="{ 'expanded': expandedEvents.has(event.id) }"
+                  v-for="event in group.events" 
+                  :key="event.id"
+                  class="timeline_event_line"
                 >
-                  {{ event.description }}
-                  <button 
-                    v-if="event.description.length > 80"
-                    class="expand_btn"
-                    @click="toggleEventExpand(event.id)"
-                  >
-                    {{ expandedEvents.has(event.id) ? '▲' : '▼' }}
-                  </button>
-                </div>
+                  <!-- Event line: Icon + Name -->
+                  <div class="event_main_line">
+                    <span class="event_icon">{{ getEventEmoji(event.lens_type) }}</span>
+                    <span class="event_name">{{ event.name }}</span>
+                  </div>
 
-                <!-- Event Tags - compact inline format -->
-                <div v-if="event.tags && event.tags.length > 0" class="event_tags_inline">
-                  <span
-                    v-for="tag in event.tags"
-                    :key="tag.id"
-                    class="event_tag_compact"
-                    :style="{ color: tag.color || '#6366f1' }"
+                  <!-- Description on separate line -->
+                  <div 
+                    v-if="event.description"
+                    class="event_description_block"
+                    :class="{ 'expanded': expandedEvents.has(event.id) }"
                   >
-                    {{ tag.name }}
-                  </span>
+                    {{ event.description }}
+                    <button 
+                      v-if="event.description.length > 80"
+                      class="expand_btn"
+                      @click="toggleEventExpand(event.id)"
+                    >
+                      {{ expandedEvents.has(event.id) ? '▲' : '▼' }}
+                    </button>
+                  </div>
+
+                  <!-- Event Tags - compact inline format -->
+                  <div v-if="event.tags && event.tags.length > 0" class="event_tags_inline">
+                    <span
+                      v-for="tag in event.tags"
+                      :key="tag.id"
+                      class="event_tag_compact"
+                      :style="{ color: tag.color || '#6366f1' }"
+                    >
+                      {{ tag.name }}
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
+            </template>
           </div>
         </div>
       </div>
@@ -340,6 +358,31 @@ export default {
   font-weight: 600;
   font-size: 0.875rem;
   color: #1e293b;
+}
+
+.timeline_single_event_line {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+  line-height: 1.4;
+  position: relative;
+  z-index: 2;
+}
+
+.timeline_date_inline {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #1e293b;
+  flex-shrink: 0;
+}
+
+.event_tags_inline_single {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  margin-left: 0.25rem;
 }
 
 .timeline_events_list {

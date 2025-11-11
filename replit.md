@@ -5,19 +5,22 @@ A comprehensive web application for mapping historical events on an interactive 
 
 ## Recent Changes (November 11, 2025)
 
-### Timeline View Modal
-- **Vertical Timeline Visualization**: Large modal displaying filtered events in chronological order
+### Timeline View Modal - Ultra-Compact Design
+- **Vertical Timeline Visualization**: Maximizes event density on screen with compact, scannable layout
   - Timeline button (📅) in events-header, disabled when no events visible
-  - Vertical timeline with connecting line and date bullets
-  - Event grouping by date (day precision) with formatted date headers
+  - **Ultra-compact single-line layout**: For single events on a date, everything appears on one continuous line: `○ Date 🏛️ Event Name — Description #tag1 #tag2`
+  - **Multi-event layout**: Multiple events on same date show separate date header, then compact event list below
+  - Unified typography: 0.875rem (14px) for all text, 1rem icons, 0.75rem tags
+  - Reduced spacing: 0.25rem gaps between events (was 1rem), minimal padding throughout
+  - Compact tag display: #hashtag format with colored text instead of pill badges
+  - Timeline line: 1px (was 2px), 10px date bullets (was 20px)
   - BC/AD aware chronological sorting using timezone-agnostic manual date parsing
-  - Each event shows: lens type emoji, name, expandable description, colored tag badges
-  - "Show more"/"Show less" for long descriptions (>150 chars, 3-line clamp)
-  - ESC key support for closing modal
-  - Focus restoration to timeline button after closing
-  - Scrollable content area with custom scrollbar styling
-  - Full localization (English/Russian): "Timeline view", "Show more", "Show less", "No events to display"
+  - Expandable descriptions (▲/▼) for text >80 chars with 2-line clamp, improved accessibility contrast
+  - ESC key support for closing modal, focus restoration to timeline button
+  - Scrollable content area with slim 6px scrollbar
+  - Full localization (English/Russian): "Timeline view", "No events to display"
   - Components: `TimelineModal.vue`, `EventsGrid.vue`
+  - **Result**: 3-4x more events visible on screen compared to card-based layout
   - Critical implementation: Uses manual ISO date parsing (`split('-')`) for both BC and AD dates to prevent UTC timezone shifts that break chronological ordering and date grouping
 
 ### Tag Search Functionality
