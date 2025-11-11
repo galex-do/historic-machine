@@ -86,10 +86,6 @@ externalPort = 4200
 localPort = 43607
 externalPort = 6800
 
-[[ports]]
-localPort = 44713
-externalPort = 8000
-
 [nix]
 channel = "stable-25_05"
 packages = ["go-migrate"]
