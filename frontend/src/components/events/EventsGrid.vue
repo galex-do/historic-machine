@@ -120,6 +120,11 @@ export default {
     }
   },
   emits: ['focus-event', 'map-filter-toggle', 'tag-clicked', 'remove-tag', 'clear-all-tags', 'toggle-follow'],
+  setup() {
+    // Expose translation function from composable
+    const { t } = useLocale()
+    return { t }
+  },
   data() {
     const STORAGE_KEY = 'historia_tag_filter_visible'
     const loadTagFilterState = () => {
@@ -131,16 +136,13 @@ export default {
       }
     }
 
-    const { t } = useLocale()
-
     return {
       currentPage: 1,
       eventsPerPage: 3, // Maximum 3 cards to prevent sidebar scrolling
       mapFilterEnabled: false,
       tagFilterVisible: loadTagFilterState(),
       timelineModalOpen: false,
-      STORAGE_KEY,
-      t
+      STORAGE_KEY
     }
   },
   computed: {
