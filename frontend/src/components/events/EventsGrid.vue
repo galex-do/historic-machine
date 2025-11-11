@@ -188,6 +188,12 @@ export default {
       }
       // Otherwise, keep the current page to maintain pagination state
     },
+    selectedTags(newTags, oldTags) {
+      // Automatically show tag filter panel when a tag is added
+      if (newTags.length > oldTags.length) {
+        this.tagFilterVisible = true
+      }
+    },
     tagFilterVisible(newValue) {
       // Save to session storage
       try {
