@@ -18,22 +18,24 @@
             <!-- Single event on this date: everything on one line -->
             <div v-if="group.events.length === 1" class="timeline_single_event_line">
               <div class="timeline_bullet"></div>
-              <span class="timeline_date_inline">{{ group.formattedDate }}</span>
-              <span class="event_icon">{{ getEventEmoji(group.events[0].lens_type) }}</span>
-              <span class="event_name">{{ group.events[0].name }}</span>
-              <span v-if="group.events[0].description" class="event_description_inline">
-                — {{ group.events[0].description }}
-              </span>
-              <!-- Tags inline -->
-              <span v-if="group.events[0].tags && group.events[0].tags.length > 0" class="event_tags_inline_single">
-                <span
-                  v-for="tag in group.events[0].tags"
-                  :key="tag.id"
-                  class="event_tag_compact"
-                  :style="{ color: tag.color || '#6366f1' }"
-                >
-                  {{ tag.name }}
-                </span>
+              <span class="timeline_single_text">
+                <span class="timeline_date_inline">{{ group.formattedDate }}</span>
+                {{ ' ' }}
+                <span class="event_icon">{{ getEventEmoji(group.events[0].lens_type) }}</span>
+                {{ ' ' }}
+                <span class="event_name">{{ group.events[0].name }}</span>
+                <template v-if="group.events[0].description">
+                  {{ ' — ' }}{{ group.events[0].description }}
+                </template>
+                <template v-if="group.events[0].tags && group.events[0].tags.length > 0">
+                  {{ ' ' }}
+                  <span
+                    v-for="tag in group.events[0].tags"
+                    :key="tag.id"
+                    class="event_tag_compact"
+                    :style="{ color: tag.color || '#6366f1' }"
+                  >{{ tag.name }}</span>
+                </template>
               </span>
             </div>
 
@@ -362,7 +364,7 @@ export default {
 
 .timeline_single_event_line {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
   gap: 0.5rem;
   padding: 0.25rem 0;
   line-height: 1.4;
@@ -370,19 +372,22 @@ export default {
   z-index: 2;
 }
 
-.timeline_date_inline {
-  font-weight: 600;
+.timeline_single_text {
   font-size: 0.875rem;
-  color: #1e293b;
-  flex-shrink: 0;
+  color: #475569;
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-.event_tags_inline_single {
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  font-size: 0.75rem;
-  margin-left: 0.25rem;
+.timeline_single_text .timeline_date_inline {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.timeline_single_text .event_name {
+  font-weight: 600;
+  color: #1e293b;
 }
 
 .timeline_events_list {
