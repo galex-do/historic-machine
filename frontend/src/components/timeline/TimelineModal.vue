@@ -30,11 +30,11 @@
                 <template v-if="group.events[0].tags && group.events[0].tags.length > 0">
                   {{ ' ' }}
                   <span
-                    v-for="tag in group.events[0].tags"
+                    v-for="(tag, index) in group.events[0].tags"
                     :key="tag.id"
                     class="event_tag_compact"
                     :style="{ color: tag.color || '#6366f1' }"
-                  >{{ tag.name }}</span>
+                  >{{ tag.name }}{{ index < group.events[0].tags.length - 1 ? ' ' : '' }}</span>
                 </template>
               </span>
             </div>
@@ -54,39 +54,24 @@
                   :key="event.id"
                   class="timeline_event_line"
                 >
-                  <!-- Event line: Icon + Name -->
-                  <div class="event_main_line">
+                  <!-- Event line: Icon + Name + Description + Tags in single flowing text -->
+                  <span class="timeline_single_text">
                     <span class="event_icon">{{ getEventEmoji(event.lens_type) }}</span>
+                    {{ ' ' }}
                     <span class="event_name">{{ event.name }}</span>
-                  </div>
-
-                  <!-- Description on separate line -->
-                  <div 
-                    v-if="event.description"
-                    class="event_description_block"
-                    :class="{ 'expanded': expandedEvents.has(event.id) }"
-                  >
-                    {{ event.description }}
-                    <button 
-                      v-if="event.description.length > 80"
-                      class="expand_btn"
-                      @click="toggleEventExpand(event.id)"
-                    >
-                      {{ expandedEvents.has(event.id) ? '▲' : '▼' }}
-                    </button>
-                  </div>
-
-                  <!-- Event Tags - compact inline format -->
-                  <div v-if="event.tags && event.tags.length > 0" class="event_tags_inline">
-                    <span
-                      v-for="tag in event.tags"
-                      :key="tag.id"
-                      class="event_tag_compact"
-                      :style="{ color: tag.color || '#6366f1' }"
-                    >
-                      {{ tag.name }}
-                    </span>
-                  </div>
+                    <template v-if="event.description">
+                      {{ ' — ' }}{{ event.description }}
+                    </template>
+                    <template v-if="event.tags && event.tags.length > 0">
+                      {{ ' ' }}
+                      <span
+                        v-for="(tag, index) in event.tags"
+                        :key="tag.id"
+                        class="event_tag_compact"
+                        :style="{ color: tag.color || '#6366f1' }"
+                      >{{ tag.name }}{{ index < event.tags.length - 1 ? ' ' : '' }}</span>
+                    </template>
+                  </span>
                 </div>
               </div>
             </template>
@@ -117,7 +102,6 @@ export default {
   emits: ['close'],
   setup(props, { emit }) {
     const { t, formatEventDisplayDate } = useLocale()
-    const expandedEvents = ref(new Set())
     const previouslyFocusedElement = ref(null)
 
     // Helper function for chronological sorting with BC/AD support
@@ -181,20 +165,8 @@ export default {
       return Object.values(groups)
     })
 
-    const toggleEventExpand = (eventId) => {
-      if (expandedEvents.value.has(eventId)) {
-        expandedEvents.value.delete(eventId)
-      } else {
-        expandedEvents.value.add(eventId)
-      }
-      // Force reactivity
-      expandedEvents.value = new Set(expandedEvents.value)
-    }
-
     const closeModal = () => {
       emit('close')
-      // Reset expanded states when closing
-      expandedEvents.value.clear()
       // Restore focus to the element that opened the modal
       if (previouslyFocusedElement.value) {
         previouslyFocusedElement.value.focus()
@@ -230,8 +202,6 @@ export default {
     return {
       t,
       groupedEvents,
-      expandedEvents,
-      toggleEventExpand,
       closeModal,
       getEventEmoji
     }
@@ -364,10 +334,10 @@ export default {
 
 .timeline_single_event_line {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   gap: 0.5rem;
   padding: 0.25rem 0;
-  line-height: 1.4;
+  line-height: 1.5;
   position: relative;
   z-index: 2;
 }
@@ -399,82 +369,8 @@ export default {
 
 .timeline_event_line {
   padding: 0.25rem 0;
-  border-left: 1px solid transparent;
   padding-left: 0.5rem;
-  transition: border-color 0.2s;
-}
-
-.timeline_event_line:hover {
-  border-left-color: #e2e8f0;
-}
-
-.event_main_line {
-  display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
-  line-height: 1.4;
-}
-
-.event_icon {
-  font-size: 1rem;
-  flex-shrink: 0;
-}
-
-.event_name {
-  font-weight: 600;
-  font-size: 0.875rem;
-  color: #1e293b;
-  flex-shrink: 0;
-}
-
-.event_description_inline {
-  color: #475569;
-  font-size: 0.875rem;
-  font-weight: normal;
-}
-
-.event_description_block {
-  margin-top: 0.125rem;
-  margin-left: 1.5rem;
-  color: #475569;
-  font-size: 0.875rem;
   line-height: 1.5;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.event_description_block:not(.expanded) {
-  -webkit-line-clamp: 2;
-}
-
-.event_description_block.expanded {
-  -webkit-line-clamp: unset;
-}
-
-.expand_btn {
-  background: none;
-  border: none;
-  color: #64748b;
-  font-size: 0.75rem;
-  cursor: pointer;
-  padding: 0 0.25rem;
-  margin-left: 0.25rem;
-  vertical-align: middle;
-  font-weight: bold;
-}
-
-.expand_btn:hover {
-  color: #3b82f6;
-}
-
-.event_tags_inline {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.125rem;
-  margin-left: 1.5rem;
-  font-size: 0.75rem;
 }
 
 .event_tag_compact {
@@ -489,7 +385,7 @@ export default {
 
 /* Scrollbar Styling */
 .timeline_modal_content::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 .timeline_modal_content::-webkit-scrollbar-track {
@@ -497,11 +393,7 @@ export default {
 }
 
 .timeline_modal_content::-webkit-scrollbar-thumb {
-  background: #cbd5e0;
-  border-radius: 4px;
-}
-
-.timeline_modal_content::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: #cbd5e1;
+  border-radius: 3px;
 }
 </style>
