@@ -15,55 +15,58 @@
 
         <div v-else class="timeline_container">
           <div v-for="group in groupedEvents" :key="group.date" class="timeline_date_group">
-            <!-- Date Bullet -->
-            <div class="timeline_bullet_wrapper">
+            <!-- Date Header -->
+            <div class="timeline_date_header">
               <div class="timeline_bullet"></div>
               <div class="timeline_date">{{ group.formattedDate }}</div>
             </div>
 
             <!-- Events for this date -->
-            <div class="timeline_events_wrapper">
+            <div class="timeline_events_list">
               <div 
                 v-for="event in group.events" 
                 :key="event.id"
-                class="timeline_event_card"
+                class="timeline_event_line"
               >
-                <!-- Event Header: Icon, Name -->
-                <div class="timeline_event_header">
+                <!-- Single line: Icon + Name + Description (if only one event) or just Icon + Name -->
+                <div class="event_main_line">
                   <span class="event_icon">{{ getEventEmoji(event.lens_type) }}</span>
-                  <h3 class="event_name">{{ event.name }}</h3>
+                  <span class="event_name">{{ event.name }}</span>
+                  <!-- Show description inline if it's the only event and short -->
+                  <span 
+                    v-if="group.events.length === 1 && event.description && event.description.length <= 100"
+                    class="event_description_inline"
+                  >
+                    — {{ event.description }}
+                  </span>
                 </div>
 
-                <!-- Event Description -->
-                <div class="event_description_wrapper">
-                  <p 
-                    class="event_description"
-                    :class="{ 'expanded': expandedEvents.has(event.id) }"
-                  >
-                    {{ event.description }}
-                  </p>
+                <!-- Description on separate line if multiple events or long description -->
+                <div 
+                  v-if="event.description && (group.events.length > 1 || event.description.length > 100)"
+                  class="event_description_block"
+                  :class="{ 'expanded': expandedEvents.has(event.id) }"
+                >
+                  {{ event.description }}
                   <button 
-                    v-if="event.description && event.description.length > 150"
+                    v-if="event.description.length > 80"
                     class="expand_btn"
                     @click="toggleEventExpand(event.id)"
                   >
-                    {{ expandedEvents.has(event.id) ? t('showLess') : t('showMore') }}
+                    {{ expandedEvents.has(event.id) ? '▲' : '▼' }}
                   </button>
                 </div>
 
-                <!-- Event Tags -->
-                <div v-if="event.tags && event.tags.length > 0" class="event_tags">
-                  <div
+                <!-- Event Tags - compact inline format -->
+                <div v-if="event.tags && event.tags.length > 0" class="event_tags_inline">
+                  <span
                     v-for="tag in event.tags"
                     :key="tag.id"
-                    class="event_tag"
-                    :style="{ 
-                      backgroundColor: tag.color || '#6366f1',
-                      borderColor: tag.color || '#6366f1'
-                    }"
+                    class="event_tag_compact"
+                    :style="{ color: tag.color || '#6366f1' }"
                   >
                     {{ tag.name }}
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -282,160 +285,158 @@ export default {
 .timeline_modal_content {
   flex: 1;
   overflow-y: auto;
-  padding: 2rem;
+  padding: 1rem 1.5rem;
+  font-size: 0.875rem;
 }
 
 .no_events_message {
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 2rem;
   color: #94a3b8;
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 .timeline_container {
   position: relative;
-  padding-left: 2rem;
+  padding-left: 0.5rem;
 }
 
-/* Vertical line */
+/* Thin vertical line */
 .timeline_container::before {
   content: '';
   position: absolute;
-  left: 15px;
+  left: 6px;
   top: 0;
   bottom: 0;
-  width: 2px;
-  background: #cbd5e0;
+  width: 1px;
+  background: #cbd5e1;
+  z-index: 1;
 }
 
 .timeline_date_group {
   position: relative;
-  margin-bottom: 2rem;
-}
-
-.timeline_bullet_wrapper {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.timeline_bullet {
-  position: absolute;
-  left: 6px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: white;
-  border: 3px solid #3b82f6;
-  z-index: 1;
-}
-
-.timeline_date {
-  margin-left: 2.5rem;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #1e293b;
-  background: #f8fafc;
-  padding: 0.25rem 0.75rem;
-  border-radius: 4px;
-  border: 1px solid #e2e8f0;
-}
-
-.timeline_events_wrapper {
-  margin-left: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.timeline_event_card {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  padding: 1rem 1.25rem;
-  transition: all 0.2s;
-}
-
-.timeline_event_card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border-color: #cbd5e0;
-}
-
-.timeline_event_header {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
   margin-bottom: 0.75rem;
 }
 
+.timeline_date_header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+  position: relative;
+  z-index: 2;
+}
+
+.timeline_bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #3b82f6;
+  flex-shrink: 0;
+}
+
+.timeline_date {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #1e293b;
+}
+
+.timeline_events_list {
+  margin-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.timeline_event_line {
+  padding: 0.25rem 0;
+  border-left: 1px solid transparent;
+  padding-left: 0.5rem;
+  transition: border-color 0.2s;
+}
+
+.timeline_event_line:hover {
+  border-left-color: #e2e8f0;
+}
+
+.event_main_line {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  line-height: 1.4;
+}
+
 .event_icon {
-  font-size: 1.5rem;
+  font-size: 1rem;
   flex-shrink: 0;
 }
 
 .event_name {
-  margin: 0;
-  font-size: 1.05rem;
   font-weight: 600;
+  font-size: 0.875rem;
   color: #1e293b;
-  line-height: 1.4;
+  flex-shrink: 0;
 }
 
-.event_description_wrapper {
-  margin-bottom: 0.75rem;
-}
-
-.event_description {
-  margin: 0;
+.event_description_inline {
   color: #475569;
-  font-size: 0.925rem;
-  line-height: 1.6;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  font-size: 0.875rem;
+  font-weight: normal;
 }
 
-.event_description.expanded {
-  display: block;
+.event_description_block {
+  margin-top: 0.125rem;
+  margin-left: 1.5rem;
+  color: #475569;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.event_description_block:not(.expanded) {
+  -webkit-line-clamp: 2;
+}
+
+.event_description_block.expanded {
   -webkit-line-clamp: unset;
 }
 
 .expand_btn {
   background: none;
   border: none;
-  color: #3b82f6;
-  font-size: 0.875rem;
+  color: #64748b;
+  font-size: 0.75rem;
   cursor: pointer;
-  padding: 0.25rem 0;
-  margin-top: 0.5rem;
-  font-weight: 500;
-  transition: color 0.2s;
+  padding: 0 0.25rem;
+  margin-left: 0.25rem;
+  vertical-align: middle;
+  font-weight: bold;
 }
 
 .expand_btn:hover {
-  color: #2563eb;
-  text-decoration: underline;
+  color: #3b82f6;
 }
 
-.event_tags {
+.event_tags_inline {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-top: 0.125rem;
+  margin-left: 1.5rem;
+  font-size: 0.75rem;
 }
 
-.event_tag {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.25rem 0.65rem;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 0.75rem;
+.event_tag_compact {
   font-weight: 500;
-  color: white;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  opacity: 0.8;
+}
+
+.event_tag_compact::before {
+  content: '#';
+  opacity: 0.6;
 }
 
 /* Scrollbar Styling */
