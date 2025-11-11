@@ -3,7 +3,22 @@
 ## Overview
 A comprehensive web application for mapping historical events on an interactive world map with timeline functionality. Users can view, filter, and add historical events with geographical and temporal data. The project aims to provide a rich, interactive experience for exploring history, with capabilities for managing events, tags, and datasets, all within a localized and performant environment. This application has significant market potential for educational platforms, historical research, and general public engagement with historical data.
 
-## Recent Changes (October 30, 2025)
+## Recent Changes (November 11, 2025)
+
+### Timeline View Modal
+- **Vertical Timeline Visualization**: Large modal displaying filtered events in chronological order
+  - Timeline button (📅) in events-header, disabled when no events visible
+  - Vertical timeline with connecting line and date bullets
+  - Event grouping by date (day precision) with formatted date headers
+  - BC/AD aware chronological sorting using timezone-agnostic manual date parsing
+  - Each event shows: lens type emoji, name, expandable description, colored tag badges
+  - "Show more"/"Show less" for long descriptions (>150 chars, 3-line clamp)
+  - ESC key support for closing modal
+  - Focus restoration to timeline button after closing
+  - Scrollable content area with custom scrollbar styling
+  - Full localization (English/Russian): "Timeline view", "Show more", "Show less", "No events to display"
+  - Components: `TimelineModal.vue`, `EventsGrid.vue`
+  - Critical implementation: Uses manual ISO date parsing (`split('-')`) for both BC and AD dates to prevent UTC timezone shifts that break chronological ordering and date grouping
 
 ### Tag Search Functionality
 - **Dynamic Tag Search**: Search input field that adapts to currently displayed events
@@ -64,6 +79,7 @@ A comprehensive web application for mapping historical events on an interactive 
 ### Feature Specifications
 - **Interactive World Map**: Displays event markers with hover details, click-to-add functionality, and narrative flow visualization between filtered events.
 - **Timeline Filtering**: Date range selection (FROM/TO fields) and historical period templates with chronological sorting.
+- **Timeline View Modal**: Vertical chronological visualization of filtered events with date grouping, expandable descriptions, BC/AD aware sorting, and accessibility features (ESC key, focus management).
 - **Event Management**: CRUD operations for events via an admin panel, including BC date editing.
 - **Lens System**: Categorization system for different event types.
 - **Tag Management**: CRUD for tags, with cross-page navigation to filter events by tag.
