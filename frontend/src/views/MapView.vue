@@ -465,7 +465,7 @@ export default {
 }
 
 .events-sidebar.collapsed .sidebar-header {
-  padding: 1.5rem 0.5rem 1rem;
+  padding: 1rem 0.5rem 1rem;
   justify-content: center;
 }
 
@@ -476,7 +476,7 @@ export default {
 .sidebar-header {
   background: #f8f9fa;
   border-bottom: 1px solid #e2e8f0;
-  padding: 1.5rem 1.5rem 1rem;
+  padding: 1rem 1.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
