@@ -290,14 +290,14 @@ const UI_TRANSLATIONS = {
     createEmptyDataset: 'Создать пустой датасет',
     
     // Tag Filter
-    filteredByTags: 'Фильтр по тегам',
-    clearAllTags: 'Очистить все',
-    clearAll: 'Очистить все',
+    filteredByTags: 'Теги',
+    clearAllTags: 'Очистить',
+    clearAll: 'Очистить',
     remove: 'Удалить',
     allTags: 'Все теги',
     searchTags: 'Поиск тегов...',
     noTagsFound: 'Теги не найдены',
-    followEvents: 'Следовать',
+    followEvents: 'Связать',
     enableNarrativeFlow: 'Включить нарративный поток - соединить события хронологически',
     disableNarrativeFlow: 'Отключить нарративный поток',
     focusOnMap: 'Фокус на карте',
