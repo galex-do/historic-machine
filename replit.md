@@ -8,11 +8,11 @@ A comprehensive web application for mapping historical events on an interactive 
 ### Compact Event List View
 - **Timeline-Style Event Cards**: Complete redesign to use same minimalistic single-line layout as timeline modal
   - **Single-line text flow**: `🏛️ Event Name — Description #tag1 #tag2 ⌖` all flows naturally in one line
-  - **Collapsible descriptions**: Blue "..." button to expand, gray "▲" button to collapse
+  - **Always-visible descriptions**: Full descriptions shown inline for maximum information density
   - **Hashtag tags**: Colored #tag format, clickable for filtering
   - **Date line**: Shown below main text for temporal context
   - **Minimal styling**: 0.5rem vertical padding, 1px bottom border separator
-  - **Accessibility**: Semantic `<button>` elements, ARIA labels, keyboard navigation, focus-visible styling
+  - **Accessibility**: Semantic `<button>` elements for focus, ARIA labels, keyboard navigation, focus-visible styling
   - **Result**: ~70% height reduction, 3-4x more events visible, stable sidebar height → no map jumping
   - Component redesigned: `EventCard.vue`
 

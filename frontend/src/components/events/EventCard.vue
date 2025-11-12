@@ -15,25 +15,8 @@
         {{ event.name }}
       </a>
       <span v-else class="event_name">{{ event.name }}</span>
-      <template v-if="event.description && !description_expanded">
-        {{ ' — ' }}
-        <button 
-          class="expand-trigger" 
-          @click="toggle_description"
-          :aria-label="t('showMore')"
-          :title="t('showMore')"
-          :aria-expanded="false"
-        >...</button>
-      </template>
-      <template v-if="event.description && description_expanded">
+      <template v-if="event.description">
         {{ ' — ' }}{{ event.description }}
-        <button 
-          class="collapse-trigger" 
-          @click="toggle_description"
-          :aria-label="t('showLess')"
-          :title="t('showLess')"
-          :aria-expanded="true"
-        > ▲</button>
       </template>
       <template v-if="event.tags && event.tags.length > 0">
         {{ ' ' }}
@@ -64,7 +47,6 @@
 </template>
 
 <script>
-import { ref } from 'vue'
 import { getEventEmoji } from '@/utils/event-utils.js'
 import { useLocale } from '@/composables/useLocale.js'
 
@@ -79,17 +61,10 @@ export default {
   emits: ['focus-event', 'tag-clicked'],
   setup() {
     const { formatEventDisplayDate, t } = useLocale()
-    const description_expanded = ref(false)
-    
-    const toggle_description = () => {
-      description_expanded.value = !description_expanded.value
-    }
     
     return {
       formatEventDisplayDate,
-      t,
-      description_expanded,
-      toggle_description
+      t
     }
   },
   methods: {
@@ -136,52 +111,6 @@ export default {
 .event_name_link:hover {
   color: #1d4ed8;
   text-decoration: underline;
-}
-
-.expand-trigger {
-  background: none;
-  border: none;
-  color: #3b82f6;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 0 0.15rem;
-  transition: color 0.2s;
-  display: inline;
-  line-height: 1;
-  vertical-align: baseline;
-}
-
-.expand-trigger:hover {
-  color: #1d4ed8;
-}
-
-.expand-trigger:focus-visible {
-  outline: 2px solid #3b82f6;
-  outline-offset: 2px;
-  border-radius: 2px;
-}
-
-.collapse-trigger {
-  background: none;
-  border: none;
-  color: #64748b;
-  cursor: pointer;
-  font-size: 0.75rem;
-  padding: 0 0.15rem;
-  transition: color 0.2s;
-  display: inline;
-  vertical-align: baseline;
-}
-
-.collapse-trigger:hover {
-  color: #3b82f6;
-}
-
-.collapse-trigger:focus-visible {
-  outline: 2px solid #3b82f6;
-  outline-offset: 2px;
-  border-radius: 2px;
 }
 
 .event_tag {
