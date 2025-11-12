@@ -3,6 +3,27 @@
 ## Overview
 A comprehensive web application for mapping historical events on an interactive world map with timeline functionality. Users can view, filter, and add historical events with geographical and temporal data. The project aims to provide a rich, interactive experience for exploring history, with capabilities for managing events, tags, and datasets, all within a localized and performant environment. This application has significant market potential for educational platforms, historical research, and general public engagement with historical data.
 
+## Recent Changes (November 12, 2025)
+
+### Event Card Height Optimization
+- **Collapsible Descriptions**: Event card descriptions now hidden by default to minimize card height
+  - **Collapsed state**: Shows blue "..." button (click to expand description)
+  - **Expanded state**: Shows full description + gray "▲" button (click to collapse)
+  - **Accessibility-first implementation**: Semantic `<button>` elements with ARIA attributes
+  - ARIA labels: `aria-label`, `aria-expanded` for screen reader support
+  - Keyboard navigation: Focusable with Tab key, visual focus indicators (`focus-visible` styling)
+  - Localized button labels: Uses `showMore` / `showLess` translations (EN/RU)
+  - **Result**: ~40% reduction in event card height, maximizing visible events on screen
+  - Component modified: `EventCard.vue`
+
+### Russian Localization Optimization
+- **Shortened Tag Filter Labels**: Reduced label text to fit single-line height in Russian
+  - `filteredByTags`: "Фильтр по тегам" → "Теги"
+  - `followEvents`: "Следовать" → "Связать"
+  - `clearAllTags`, `clearAll`: "Очистить все" → "Очистить"
+  - **Result**: Tag filter panel header fits cleanly on one line
+  - File modified: `useLocale.js`
+
 ## Recent Changes (November 11, 2025)
 
 ### Timeline View Modal - Ultra-Compact Design
