@@ -88,6 +88,7 @@
       :is-open="timelineModalOpen"
       :events="events"
       @close="timelineModalOpen = false"
+      @focus-event="$emit('focus-event', $event)"
     />
   </div>
 </template>

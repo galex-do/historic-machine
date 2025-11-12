@@ -36,6 +36,14 @@
                     :style="{ color: tag.color || '#6366f1' }"
                   >{{ tag.name }}{{ index < group.events[0].tags.length - 1 ? ' ' : '' }}</span>
                 </template>
+                {{ ' ' }}
+                <button 
+                  class="timeline_focus_btn" 
+                  @click="handleFocusEvent(group.events[0])"
+                  :title="t('focusOnMap')"
+                >
+                  ⌖
+                </button>
               </span>
             </div>
 
@@ -71,6 +79,14 @@
                         :style="{ color: tag.color || '#6366f1' }"
                       >{{ tag.name }}{{ index < event.tags.length - 1 ? ' ' : '' }}</span>
                     </template>
+                    {{ ' ' }}
+                    <button 
+                      class="timeline_focus_btn" 
+                      @click="handleFocusEvent(event)"
+                      :title="t('focusOnMap')"
+                    >
+                      ⌖
+                    </button>
                   </span>
                 </div>
               </div>
@@ -99,7 +115,7 @@ export default {
       default: () => []
     }
   },
-  emits: ['close'],
+  emits: ['close', 'focus-event'],
   setup(props, { emit }) {
     const { t, formatEventDisplayDate } = useLocale()
     const previouslyFocusedElement = ref(null)
@@ -174,6 +190,11 @@ export default {
       }
     }
 
+    const handleFocusEvent = (event) => {
+      emit('focus-event', event)
+      closeModal()
+    }
+
     // Handle ESC key to close modal
     const handleEscape = (event) => {
       if (event.key === 'Escape' && props.isOpen) {
@@ -203,6 +224,7 @@ export default {
       t,
       groupedEvents,
       closeModal,
+      handleFocusEvent,
       getEventEmoji
     }
   }
@@ -381,6 +403,22 @@ export default {
 .event_tag_compact::before {
   content: '#';
   opacity: 0.6;
+}
+
+.timeline_focus_btn {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0 0.25rem;
+  margin-left: 0.25rem;
+  transition: color 0.2s;
+  vertical-align: middle;
+}
+
+.timeline_focus_btn:hover {
+  color: #3b82f6;
 }
 
 /* Scrollbar Styling */
