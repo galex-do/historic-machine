@@ -1,0 +1,664 @@
+{
+  "description": "Dataset imported with 38 events",
+  "events": [
+    {
+      "date": "01.01.0860",
+      "description": "Nairi states and tribes unite under King Arame, first ruler to consolidate Urartian territories into single kingdom with capital at Sugunia, marking foundation of Urartu",
+      "description_ru": "Государства и племена Наири объединяются под властью царя Араме, первого правителя, объединившего урартские территории в единое царство со столицей в Сугунии, знаменуя основание Урарту",
+      "era": "BC",
+      "latitude": 39.0,
+      "longitude": 44.0,
+      "name": "Unification under King Arame",
+      "name_ru": "Объединение под властью царя Араме",
+      "source": "https://en.wikipedia.org/wiki/Urartu",
+      "tags": [
+        "Urartu",
+        "Foundation",
+        "Independence"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0858",
+      "description": "Assyrian emperor Shalmaneser III begins series of campaigns against newly formed Urartian Kingdom, capturing early capitals Sugunia and Arzashkun",
+      "description_ru": "Ассирийский император Салманасар III начинает серию кампаний против вновь образованного Урартского царства, захватывая ранние столицы Сугунию и Арзашкун",
+      "era": "BC",
+      "latitude": 39.0,
+      "longitude": 44.0,
+      "name": "Assyrian Campaigns Against Early Urartu",
+      "name_ru": "Ассирийские кампании против раннего Урарту",
+      "source": "https://en.wikipedia.org/wiki/Urartu",
+      "tags": [
+        "Urartu",
+        "Assyrian",
+        "Battle",
+        "Conquest"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0840",
+      "description": "Sarduri I consolidates military power and moves Urartian capital to Tushpa on eastern shore of Lake Van, establishing fortress that will serve as heart of empire for 250 years",
+      "description_ru": "Сардури I консолидирует военную мощь и переносит урартскую столицу в Тушпу на восточном берегу озера Ван, основывая крепость, которая будет служить сердцем империи 250 лет",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Foundation of Tushpa Capital",
+      "name_ru": "Основание столицы Тушпы",
+      "source": "https://en.wikipedia.org/wiki/Tushpa",
+      "tags": [
+        "Urartu",
+        "Capital",
+        "Foundation",
+        "Fortification"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0835",
+      "description": "Sarduri I builds massive tower at western tip of Van Fortress (Sardurburç), inscribing six Assyrian-language declarations of foundation, creating earliest monumental building of citadel",
+      "description_ru": "Сардури I строит массивную башню на западной оконечности крепости Ван (Сардурбурч), вырезая шесть надписей на ассирийском языке о основании, создавая древнейшее монументальное здание цитадели",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Construction of Sarduri Tower",
+      "name_ru": "Строительство башни Сардури",
+      "source": "https://en.wikipedia.org/wiki/Van_Fortress",
+      "tags": [
+        "Urartu",
+        "Fortification",
+        "Architecture"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0830",
+      "description": "King Ispuini annexes sacred city of Musasir, gaining control of important religious center dedicated to Haldi (supreme god) and appointing his son Menua as co-administrator",
+      "description_ru": "Царь Испуини аннексирует священный город Мусасир, получая контроль над важным религиозным центром, посвященным Халди (верховному богу), и назначает своего сына Менуа со-администратором",
+      "era": "BC",
+      "latitude": 37.2,
+      "longitude": 45.5,
+      "name": "Annexation of Sacred Musasir",
+      "name_ru": "Аннексия священного Мусасира",
+      "source": "https://en.wikipedia.org/wiki/Musasir",
+      "tags": [
+        "Urartu",
+        "Conquest",
+        "Temple",
+        "Religion"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0810",
+      "description": "Menua becomes king and initiates major territorial expansion, extending Urartian frontiers in all directions while constructing extensive irrigation canal systems throughout kingdom",
+      "description_ru": "Менуа становится царем и инициирует крупную территориальную экспансию, расширяя урартские рубежи во всех направлениях и строя обширные системы оросительных каналов по всему царству",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Reign of King Menua Begins",
+      "name_ru": "Начало правления царя Менуа",
+      "source": "https://en.wikipedia.org/wiki/Menua",
+      "tags": [
+        "Urartu",
+        "Expansion",
+        "Dynasty",
+        "Innovation"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0800",
+      "description": "Menua constructs Menua Canal (Shamram Canal), 70-kilometer irrigation channel bringing water from mountains to Tushpa, demonstrating advanced Urartian engineering capabilities",
+      "description_ru": "Менуа строит канал Менуа (Шамрамский канал), 70-километровый оросительный канал, доставляющий воду из гор в Тушпу, демонстрируя передовые урартские инженерные возможности",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.4,
+      "name": "Construction of Menua Canal",
+      "name_ru": "Строительство канала Менуа",
+      "source": "https://en.wikipedia.org/wiki/Shamram_Canal",
+      "tags": [
+        "Urartu",
+        "Engineering",
+        "Innovation",
+        "Water"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0782",
+      "description": "Argishti I founds Erebuni Fortress on Arin-Berd Hill as military stronghold guarding northern borders, inscribing foundation dedication to god Khaldi; site will become modern Yerevan",
+      "description_ru": "Аргишти I основывает крепость Эребуни на холме Арин-Берд как военное укрепление, охраняющее северные границы, вырезая посвящение богу Халди; на этом месте возникнет современный Ереван",
+      "era": "BC",
+      "latitude": 40.1417,
+      "longitude": 44.5236,
+      "name": "Foundation of Erebuni Fortress",
+      "name_ru": "Основание крепости Эребуни",
+      "source": "https://en.wikipedia.org/wiki/Erebuni_Fortress",
+      "tags": [
+        "Urartu",
+        "Foundation",
+        "Fortification",
+        "Capital"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0780",
+      "description": "Argishti I defeats major Assyrian invasion, marking beginning of Urartu's golden age; expands territories along Aras River and around Lake Sevan, reaching peak of Urartian power",
+      "description_ru": "Аргишти I отражает крупное ассирийское вторжение, знаменуя начало золотого века Урарту; расширяет территории вдоль реки Арас и вокруг озера Севан, достигая пика урартской мощи",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 44.5,
+      "name": "Argishti's Victory Over Assyria",
+      "name_ru": "Победа Аргишти над Ассирией",
+      "source": "https://en.wikipedia.org/wiki/Argishti_I",
+      "tags": [
+        "Urartu",
+        "Battle",
+        "Assyrian",
+        "Expansion"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0776",
+      "description": "Argishti I establishes Argishtihinili (later renamed Armavir) as second major city and administrative center in Ararat Plain, strengthening Urartian control of Transcaucasia",
+      "description_ru": "Аргишти I основывает Аргиштихинили (позже переименованный в Армавир) как второй крупный город и административный центр на Араратской равнине, укрепляя урартский контроль над Закавказьем",
+      "era": "BC",
+      "latitude": 40.15,
+      "longitude": 44.05,
+      "name": "Foundation of Argishtihinili",
+      "name_ru": "Основание Аргиштихинили",
+      "source": "https://en.wikipedia.org/wiki/Armavir,_Armenia",
+      "tags": [
+        "Urartu",
+        "Foundation",
+        "City",
+        "Administration"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0760",
+      "description": "Sarduri II becomes king and extends Urartian Kingdom to its greatest territorial extent, rivaling Neo-Assyrian Empire as dominant power in Near East",
+      "description_ru": "Сардури II становится царем и расширяет Урартское царство до максимальных территориальных размеров, соперничая с Неоассирийской империей как доминирующая держава на Ближнем Востоке",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Peak of Urartian Power",
+      "name_ru": "Пик урартской мощи",
+      "source": "https://en.wikipedia.org/wiki/Sarduri_II",
+      "tags": [
+        "Urartu",
+        "Expansion",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0750",
+      "description": "Sarduri II establishes network of fortified cities across Urartian territories, implementing standardized architecture and administrative systems throughout empire",
+      "description_ru": "Сардури II создает сеть укрепленных городов по всей урартской территории, внедряя стандартизированную архитектуру и административные системы по всей империи",
+      "era": "BC",
+      "latitude": 39.0,
+      "longitude": 44.0,
+      "name": "Urartian Fortress Network",
+      "name_ru": "Сеть урартских крепостей",
+      "source": "https://en.wikipedia.org/wiki/Urartu",
+      "tags": [
+        "Urartu",
+        "Fortification",
+        "Architecture",
+        "Administration"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0745",
+      "description": "Tiglath-Pileser III of Assyria defeats Sarduri II in decisive battle, beginning gradual decline of Urartian power and shift of regional dominance back to Assyria",
+      "description_ru": "Тиглатпаласар III Ассирийский побеждает Сардури II в решающей битве, начиная постепенный упадок урартской мощи и переход региональной гегемонии обратно к Ассирии",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 43.0,
+      "name": "Defeat by Tiglath-Pileser III",
+      "name_ru": "Поражение от Тиглатпаласара III",
+      "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
+      "tags": [
+        "Urartu",
+        "Assyrian",
+        "Battle",
+        "Tiglath-Pileser III"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0736",
+      "description": "Tiglath-Pileser III lays siege to Tushpa but fails to capture heavily fortified capital, demonstrating strength of Urartian defensive architecture despite military setbacks",
+      "description_ru": "Тиглатпаласар III осаждает Тушпу, но не может захватить сильно укрепленную столицу, демонстрируя силу урартской оборонительной архитектуры несмотря на военные неудачи",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Siege of Tushpa",
+      "name_ru": "Осада Тушпы",
+      "source": "https://en.wikipedia.org/wiki/Tushpa",
+      "tags": [
+        "Urartu",
+        "Assyrian",
+        "Siege",
+        "Fortification"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0730",
+      "description": "Rusa I becomes king and implements defensive strategy, constructing buffer fortress-towns along frontiers to protect core Urartian territories from Assyrian invasions",
+      "description_ru": "Руса I становится царем и внедряет оборонительную стратегию, строя буферные города-крепости вдоль границ для защиты основных урартских территорий от ассирийских вторжений",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Rusa I's Defensive Reforms",
+      "name_ru": "Оборонительные реформы Русы I",
+      "source": "https://en.wikipedia.org/wiki/Rusa_I",
+      "tags": [
+        "Urartu",
+        "Fortification",
+        "Dynasty",
+        "Military Reform"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0720",
+      "description": "Rusa I constructs Rusahinili (Toprak-Kale) near Tushpa as new ceremonial and administrative complex, featuring massive temple to Haldi with innovative architectural design",
+      "description_ru": "Руса I строит Русахинили (Топрак-Кале) близ Тушпы как новый церемониальный и административный комплекс с массивным храмом Халди инновационного архитектурного дизайна",
+      "era": "BC",
+      "latitude": 38.55,
+      "longitude": 43.3,
+      "name": "Foundation of Rusahinili",
+      "name_ru": "Основание Русахинили",
+      "source": "https://en.wikipedia.org/wiki/Rusahinili",
+      "tags": [
+        "Urartu",
+        "Foundation",
+        "City",
+        "Temple",
+        "Architecture"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0719",
+      "description": "Extended border wars erupt between Urartu and Assyria over control of trade routes and buffer territories in northern Mesopotamia and eastern Anatolia",
+      "description_ru": "Затяжные пограничные войны вспыхивают между Урарту и Ассирией за контроль над торговыми путями и буферными территориями в северной Месопотамии и восточной Анатолии",
+      "era": "BC",
+      "latitude": 38.0,
+      "longitude": 42.0,
+      "name": "Urartu-Assyria Border Wars",
+      "name_ru": "Урарто-ассирийские пограничные войны",
+      "source": "https://en.wikipedia.org/wiki/Urartu",
+      "tags": [
+        "Urartu",
+        "Assyrian",
+        "War",
+        "Trade"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0717",
+      "description": "Urartu forms alliance with Phrygia and Mannea against Assyria, creating anti-Assyrian coalition that challenges Neo-Assyrian dominance in Near East",
+      "description_ru": "Урарту формирует альянс с Фригией и Манной против Ассирии, создавая антиассирийскую коалицию, бросающую вызов неоассирийскому господству на Ближнем Востоке",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Anti-Assyrian Coalition",
+      "name_ru": "Антиассирийская коалиция",
+      "source": "https://en.wikipedia.org/wiki/Rusa_I",
+      "tags": [
+        "Urartu",
+        "Assyrian",
+        "Alliance",
+        "Diplomacy"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0685",
+      "description": "Argishti II succeeds Rusa I and makes peace with Assyrian king Sennacherib, beginning period of recovery and cultural renaissance after decades of warfare",
+      "description_ru": "Аргишти II наследует Русе I и заключает мир с ассирийским царем Синахерибом, начиная период восстановления и культурного ренессанса после десятилетий войн",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Peace with Sennacherib",
+      "name_ru": "Мир с Синахерибом",
+      "source": "https://en.wikipedia.org/wiki/Argishti_II",
+      "tags": [
+        "Urartu",
+        "Assyrian",
+        "Peace",
+        "Diplomacy"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0685",
+      "description": "Rusa II becomes king and initiates Urartian cultural renaissance, founding city of Teishebaini (Karmir Blur) near Erebuni as economic hub and granary for Transcaucasian provinces",
+      "description_ru": "Руса II становится царем и инициирует урартский культурный ренессанс, основывая город Тейшебаини (Кармир Блур) близ Эребуни как экономический центр и житницу закавказских провинций",
+      "era": "BC",
+      "latitude": 40.1294,
+      "longitude": 44.4583,
+      "name": "Foundation of Teishebaini",
+      "name_ru": "Основание Тейшебаини",
+      "source": "https://en.wikipedia.org/wiki/Teishebaini",
+      "tags": [
+        "Urartu",
+        "Foundation",
+        "City",
+        "Economic"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0680",
+      "description": "Rusa II builds massive storage complex at Teishebaini with 150 rooms containing enormous pithoi jars, establishing centralized granary system for kingdom's agricultural wealth",
+      "description_ru": "Руса II строит массивный складской комплекс в Тейшебаини со 150 комнатами, содержащими огромные пифосы, создавая централизованную систему хранения для сельскохозяйственного богатства царства",
+      "era": "BC",
+      "latitude": 40.1294,
+      "longitude": 44.4583,
+      "name": "Teishebaini Storage Complex",
+      "name_ru": "Складской комплекс Тейшебаини",
+      "source": "https://www.worldhistory.org/Teishebaini/",
+      "tags": [
+        "Urartu",
+        "Economic",
+        "Agriculture",
+        "Architecture"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0670",
+      "description": "Urartian metalworkers achieve peak of bronze and iron craftsmanship, producing intricate ceremonial shields, helmets, and decorative items exported throughout Near East",
+      "description_ru": "Урартские металлурги достигают пика мастерства в работе с бронзой и железом, производя сложные церемониальные щиты, шлемы и декоративные изделия, экспортируемые по всему Ближнему Востоку",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Peak of Urartian Metalwork",
+      "name_ru": "Пик урартской металлургии",
+      "source": "https://en.wikipedia.org/wiki/Urartu",
+      "tags": [
+        "Urartu",
+        "Craftsmanship",
+        "Trade",
+        "Innovation"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0660",
+      "description": "Urartian artisans develop distinctive artistic style combining Mesopotamian, Hittite and local traditions, creating unique decorative motifs and religious iconography",
+      "description_ru": "Урартские мастера разрабатывают отличительный художественный стиль, объединяющий месопотамские, хеттские и местные традиции, создавая уникальные декоративные мотивы и религиозную иконографию",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Urartian Artistic Renaissance",
+      "name_ru": "Урартский художественный ренессанс",
+      "source": "https://en.wikipedia.org/wiki/Urartu",
+      "tags": [
+        "Urartu",
+        "Art",
+        "Culture",
+        "Innovation"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0655",
+      "description": "Urartian scribes adapt cuneiform writing system, creating corpus of royal inscriptions and administrative records in Urartian language alongside Akkadian texts",
+      "description_ru": "Урартские писцы адаптируют клинописную систему письма, создавая корпус царских надписей и административных записей на урартском языке наряду с аккадскими текстами",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Development of Urartian Script",
+      "name_ru": "Развитие урартской письменности",
+      "source": "https://en.wikipedia.org/wiki/Urartian_language",
+      "tags": [
+        "Urartu",
+        "Writing",
+        "Culture",
+        "Language"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0645",
+      "description": "Sarduri III becomes king and accepts Assyrian overlordship under pressure from Cimmerian and Scythian invasions, referring to Ashurbanipal as 'father' in diplomatic correspondence",
+      "description_ru": "Сардури III становится царем и принимает ассирийское верховенство под давлением киммерийских и скифских вторжений, называя Ашшурбанипала 'отцом' в дипломатической переписке",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Vassalage to Assyria",
+      "name_ru": "Вассальная зависимость от Ассирии",
+      "source": "https://en.wikipedia.org/wiki/Sarduri_III",
+      "tags": [
+        "Urartu",
+        "Assyrian",
+        "Vassalage",
+        "Diplomacy"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0640",
+      "description": "Cimmerian nomadic warriors from Eurasian steppes launch first major raids into Urartian territories, beginning decades of devastating incursions that weaken kingdom",
+      "description_ru": "Киммерийские кочевники из евразийских степей начинают первые крупные набеги на урартские территории, начиная десятилетия разрушительных вторжений, ослабляющих царство",
+      "era": "BC",
+      "latitude": 39.5,
+      "longitude": 44.5,
+      "name": "First Cimmerian Raids",
+      "name_ru": "Первые киммерийские набеги",
+      "source": "https://en.wikipedia.org/wiki/Cimmerians",
+      "tags": [
+        "Urartu",
+        "Cimmerian",
+        "Invasion",
+        "Nomads"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0630",
+      "description": "Scythian warriors join Cimmerians in repeated attacks on Urartu, using superior cavalry tactics and composite bows to devastate Urartian agricultural settlements",
+      "description_ru": "Скифские воины присоединяются к киммерийцам в повторных атаках на Урарту, используя превосходящую кавалерийскую тактику и композитные луки для опустошения урартских сельскохозяйственных поселений",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 45.0,
+      "name": "Scythian Invasions Begin",
+      "name_ru": "Начало скифских вторжений",
+      "source": "https://en.wikipedia.org/wiki/Scythians",
+      "tags": [
+        "Urartu",
+        "Scythian",
+        "Invasion",
+        "Cavalry"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0625",
+      "description": "Erimena possibly establishes new dynasty in Urartu amid chaos of nomadic invasions, though historical records from this period remain fragmentary and uncertain",
+      "description_ru": "Эримена возможно основывает новую династию в Урарту среди хаоса кочевых вторжений, хотя исторические записи этого периода остаются фрагментарными и неопределенными",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Reign of King Erimena",
+      "name_ru": "Правление царя Эримены",
+      "source": "https://en.wikipedia.org/wiki/Urartu",
+      "tags": [
+        "Urartu",
+        "Dynasty",
+        "Uncertain"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0620",
+      "description": "Rusa III becomes king and attempts to organize resistance against continuous Scythian and Cimmerian raids, but kingdom's military capacity severely diminished",
+      "description_ru": "Руса III становится царем и пытается организовать сопротивление против непрерывных скифских и киммерийских набегов, но военный потенциал царства сильно уменьшен",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Rusa III's Resistance",
+      "name_ru": "Сопротивление Русы III",
+      "source": "https://en.wikipedia.org/wiki/Rusa_III",
+      "tags": [
+        "Urartu",
+        "Defense",
+        "Dynasty"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0612",
+      "description": "Neo-Assyrian Empire falls to coalition of Medes, Babylonians and Scythians, eliminating Urartu's traditional rival but exposing kingdom to new threats from victorious Medes",
+      "description_ru": "Неоассирийская империя падает под ударами коалиции мидян, вавилонян и скифов, устраняя традиционного соперника Урарту, но подвергая царство новым угрозам со стороны победивших мидян",
+      "era": "BC",
+      "latitude": 36.366667,
+      "longitude": 43.15,
+      "name": "Fall of Assyrian Empire",
+      "name_ru": "Падение Ассирийской империи",
+      "source": "https://en.wikipedia.org/wiki/Neo-Assyrian_Empire",
+      "tags": [
+        "Assyrian",
+        "Fall",
+        "Median",
+        "Babylonian"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0609",
+      "description": "Rusa IV becomes king and rules during final years of independent Urartu, witnessing systematic destruction of kingdom's cities by combined forces of invaders",
+      "description_ru": "Руса IV становится царем и правит в последние годы независимого Урарту, наблюдая систематическое разрушение городов царства объединенными силами захватчиков",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Reign of Rusa IV",
+      "name_ru": "Правление Русы IV",
+      "source": "https://en.wikipedia.org/wiki/Rusa_IV",
+      "tags": [
+        "Urartu",
+        "Dynasty",
+        "Fall"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0600",
+      "description": "Urartian authorities begin moving kingdom's treasures and valuables to Teishebaini for safekeeping as central territories fall under increasing pressure from invasions",
+      "description_ru": "Урартские власти начинают перемещать сокровища и ценности царства в Тейшебаини для сохранности, поскольку центральные территории попадают под возрастающее давление вторжений",
+      "era": "BC",
+      "latitude": 40.1294,
+      "longitude": 44.4583,
+      "name": "Evacuation to Teishebaini",
+      "name_ru": "Эвакуация в Тейшебаини",
+      "source": "https://www.worldhistory.org/Teishebaini/",
+      "tags": [
+        "Urartu",
+        "Defense",
+        "Treasure"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0594",
+      "description": "Teishebaini destroyed by fire during nighttime attack, with Scythian three-pronged arrowheads found among ruins; residents killed attempting to flee with gold and valuables",
+      "description_ru": "Тейшебаини разрушен огнем во время ночной атаки, скифские трехгранные наконечники стрел найдены среди руин; жители убиты при попытке бежать с золотом и ценностями",
+      "era": "BC",
+      "latitude": 40.1294,
+      "longitude": 44.4583,
+      "name": "Destruction of Teishebaini",
+      "name_ru": "Разрушение Тейшебаини",
+      "source": "https://en.wikipedia.org/wiki/Teishebaini",
+      "tags": [
+        "Urartu",
+        "Scythian",
+        "Battle",
+        "Destruction"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0590",
+      "description": "Median Empire overruns Tushpa and absorbs remaining Urartian territories, marking end of independent Urartian Kingdom after 270 years of existence",
+      "description_ru": "Мидийская империя захватывает Тушпу и поглощает оставшиеся урартские территории, знаменуя конец независимого Урартского царства после 270 лет существования",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Median Conquest of Van",
+      "name_ru": "Мидийское завоевание Вана",
+      "source": "https://en.wikipedia.org/wiki/Urartu",
+      "tags": [
+        "Urartu",
+        "Median",
+        "Conquest",
+        "Fall"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0590",
+      "description": "Sarduri IV becomes final king of Urartu during kingdom's last years, presiding over remnants of once-mighty empire as Median forces complete conquest",
+      "description_ru": "Сардури IV становится последним царем Урарту в последние годы царства, управляя остатками некогда могучей империи, пока мидийские силы завершают завоевание",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Last King Sarduri IV",
+      "name_ru": "Последний царь Сардури IV",
+      "source": "https://en.wikipedia.org/wiki/Sarduri_IV",
+      "tags": [
+        "Urartu",
+        "Dynasty",
+        "Fall"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0585",
+      "description": "Final destruction of Urartian fortresses by combined Scythian-Median forces; Erebuni fortress occupied by Median Empire, ending 270 years of Urartian civilization",
+      "description_ru": "Окончательное разрушение урартских крепостей объединенными скифо-мидийскими силами; крепость Эребуни занята Мидийской империей, завершая 270 лет урартской цивилизации",
+      "era": "BC",
+      "latitude": 40.1417,
+      "longitude": 44.5236,
+      "name": "Final Fall of Urartu",
+      "name_ru": "Окончательное падение Урарту",
+      "source": "https://en.wikipedia.org/wiki/Urartu",
+      "tags": [
+        "Urartu",
+        "Median",
+        "Scythian",
+        "Fall",
+        "Destruction"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0550",
+      "description": "Achaemenid Persian Empire absorbs former Urartian territories after conquering Median Empire; Erebuni revived under Persian rule, preserving some Urartian cultural traditions",
+      "description_ru": "Ахеменидская Персидская империя поглощает бывшие урартские территории после завоевания Мидийской империи; Эребуни возрождается под персидским правлением, сохраняя некоторые урартские культурные традиции",
+      "era": "BC",
+      "latitude": 40.1417,
+      "longitude": 44.5236,
+      "name": "Persian Control of Erebuni",
+      "name_ru": "Персидский контроль над Эребуни",
+      "source": "https://en.wikipedia.org/wiki/Erebuni_Fortress",
+      "tags": [
+        "Persian",
+        "Conquest",
+        "Cultural Continuity"
+      ],
+      "type": "political"
+    }
+  ]
+}
