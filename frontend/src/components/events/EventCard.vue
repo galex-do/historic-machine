@@ -23,7 +23,26 @@
         ⌖
       </button>
     </div>
-    <p class="event-description">{{ event.description }}</p>
+    <div class="event-description-container" v-if="event.description">
+      <button 
+        v-if="!description_expanded"
+        class="expand-trigger" 
+        @click="toggle_description"
+        :aria-label="t('showMore')"
+        :title="t('showMore')"
+        :aria-expanded="false"
+      >...</button>
+      <p class="event-description expanded" v-if="description_expanded">
+        {{ event.description }}
+        <button 
+          class="collapse-trigger" 
+          @click="toggle_description"
+          :aria-label="t('showLess')"
+          :title="t('showLess')"
+          :aria-expanded="true"
+        > ▲</button>
+      </p>
+    </div>
     <div class="event-meta">
       <span class="event-date">{{ formatEventDisplayDate(event.event_date, event.era) }}</span>
       <span class="event-coords">{{ event.latitude.toFixed(2) }}, {{ event.longitude.toFixed(2) }}</span>
@@ -76,17 +95,25 @@ export default {
   },
   emits: ['focus-event', 'tag-clicked'],
   setup() {
-    const { formatEventDisplayDate } = useLocale()
+    const { formatEventDisplayDate, t } = useLocale()
     const show_all_tags = ref(false)
+    const description_expanded = ref(false)
     
     const toggle_tags_display = () => {
       show_all_tags.value = !show_all_tags.value
     }
     
+    const toggle_description = () => {
+      description_expanded.value = !description_expanded.value
+    }
+    
     return {
       formatEventDisplayDate,
+      t,
       show_all_tags,
-      toggle_tags_display
+      toggle_tags_display,
+      description_expanded,
+      toggle_description
     }
   },
   computed: {
@@ -199,11 +226,65 @@ export default {
   transform: scale(0.95);
 }
 
+.event-description-container {
+  margin: 0 0 0.75rem 0;
+}
+
 .event-description {
   color: #4a5568;
-  margin: 0 0 0.75rem 0;
+  margin: 0;
   font-size: 0.9rem;
   line-height: 1.4;
+}
+
+.event-description.expanded {
+  margin: 0;
+}
+
+.expand-trigger {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0 0.25rem;
+  transition: color 0.2s;
+  display: inline;
+  line-height: 1;
+}
+
+.expand-trigger:hover {
+  color: #1d4ed8;
+}
+
+.expand-trigger:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.collapse-trigger {
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 0.875rem;
+  padding: 0 0.25rem;
+  transition: color 0.2s;
+  margin-left: 0.25rem;
+  display: inline;
+  vertical-align: baseline;
+}
+
+.collapse-trigger:hover {
+  color: #3b82f6;
+}
+
+.collapse-trigger:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 .event-meta {
