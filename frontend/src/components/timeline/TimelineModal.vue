@@ -346,8 +346,7 @@ export default {
   background: white;
   border: 2px solid #3b82f6;
   flex-shrink: 0;
-  position: relative;
-  left: -0.5px;
+  margin-left: -1px;
 }
 
 .timeline_date {
