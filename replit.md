@@ -5,16 +5,16 @@ A comprehensive web application for mapping historical events on an interactive 
 
 ## Recent Changes (November 12, 2025)
 
-### Event Card Height Optimization
-- **Collapsible Descriptions**: Event card descriptions now hidden by default to minimize card height
-  - **Collapsed state**: Shows blue "..." button (click to expand description)
-  - **Expanded state**: Shows full description + gray "▲" button (click to collapse)
-  - **Accessibility-first implementation**: Semantic `<button>` elements with ARIA attributes
-  - ARIA labels: `aria-label`, `aria-expanded` for screen reader support
-  - Keyboard navigation: Focusable with Tab key, visual focus indicators (`focus-visible` styling)
-  - Localized button labels: Uses `showMore` / `showLess` translations (EN/RU)
-  - **Result**: ~40% reduction in event card height, maximizing visible events on screen
-  - Component modified: `EventCard.vue`
+### Compact Event List View
+- **Timeline-Style Event Cards**: Complete redesign to use same minimalistic single-line layout as timeline modal
+  - **Single-line text flow**: `🏛️ Event Name — Description #tag1 #tag2 ⌖` all flows naturally in one line
+  - **Collapsible descriptions**: Blue "..." button to expand, gray "▲" button to collapse
+  - **Hashtag tags**: Colored #tag format, clickable for filtering
+  - **Date line**: Shown below main text for temporal context
+  - **Minimal styling**: 0.5rem vertical padding, 1px bottom border separator
+  - **Accessibility**: Semantic `<button>` elements, ARIA labels, keyboard navigation, focus-visible styling
+  - **Result**: ~70% height reduction, 3-4x more events visible, stable sidebar height → no map jumping
+  - Component redesigned: `EventCard.vue`
 
 ### Russian Localization Optimization
 - **Shortened Tag Filter Labels**: Reduced label text to fit single-line height in Russian
