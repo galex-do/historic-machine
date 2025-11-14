@@ -1,18 +1,20 @@
 <template>
   <div class="tag_filter_panel">
     <!-- Tag Search Input -->
-    <div class="tag_search_container">
+    <div class="tag_search_container" ref="searchContainerRef">
       <input
         v-model="searchQuery"
         type="text"
         class="tag_search_input"
         :placeholder="t('searchTags')"
-        @focus="showSuggestions = true"
+        @focus="handleFocus"
         @blur="handleBlur"
       />
-      
-      <!-- Tag Suggestions Dropdown -->
-      <div v-if="showSuggestions && filteredAvailableTags.length > 0" class="tag_suggestions">
+    </div>
+    
+    <!-- Tag Suggestions Dropdown (Teleported to body) -->
+    <Teleport to="body">
+      <div v-if="showSuggestions && filteredAvailableTags.length > 0" class="tag_suggestions" :style="dropdownPosition">
         <div
           v-for="tag in filteredAvailableTags"
           :key="tag.id"
@@ -27,10 +29,10 @@
         </div>
       </div>
       
-      <div v-if="showSuggestions && searchQuery && filteredAvailableTags.length === 0" class="no_suggestions">
+      <div v-if="showSuggestions && searchQuery && filteredAvailableTags.length === 0" class="no_suggestions" :style="dropdownPosition">
         {{ t('noTagsFound') }}
       </div>
-    </div>
+    </Teleport>
 
     <!-- Selected Tags Section -->
     <div v-if="selectedTags.length > 0" class="selected_tags_section">
@@ -104,6 +106,8 @@ export default {
     
     const searchQuery = ref('')
     const showSuggestions = ref(false)
+    const searchContainerRef = ref(null)
+    const dropdownPosition = ref({})
     
     // Filter available tags based on search query and exclude already selected tags
     const filteredAvailableTags = computed(() => {
@@ -127,6 +131,23 @@ export default {
         })
         .slice(0, 10) // Limit to 10 suggestions for performance
     })
+    
+    const calculateDropdownPosition = () => {
+      if (searchContainerRef.value) {
+        const rect = searchContainerRef.value.getBoundingClientRect()
+        dropdownPosition.value = {
+          position: 'fixed',
+          top: `${rect.bottom + 4}px`,
+          left: `${rect.left}px`,
+          width: `${rect.width}px`
+        }
+      }
+    }
+    
+    const handleFocus = () => {
+      showSuggestions.value = true
+      calculateDropdownPosition()
+    }
     
     const addTag = (tag) => {
       emit('add-tag', tag)
@@ -152,8 +173,11 @@ export default {
       t,
       searchQuery,
       showSuggestions,
+      searchContainerRef,
+      dropdownPosition,
       filteredAvailableTags,
       addTag,
+      handleFocus,
       handleBlur,
       getTagEventCount
     }
@@ -196,11 +220,6 @@ export default {
 }
 
 .tag_suggestions {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  margin-top: 0.25rem;
   background: white;
   border: 1px solid #cbd5e0;
   border-radius: 6px;
@@ -244,11 +263,6 @@ export default {
   background: white;
   border: 1px solid #cbd5e0;
   border-radius: 6px;
-  margin-top: 0.25rem;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
   z-index: 10000;
 }
 
