@@ -561,6 +561,11 @@ export default {
   .events-sidebar {
     height: auto; /* Content-dependent height - just wraps controls */
     flex: 0 0 auto; /* Don't grow, just wrap content */
+    overflow: visible; /* Allow tag filter panel to expand */
+  }
+  
+  .events-sidebar-content {
+    overflow: visible; /* Don't clip tag filter panel */
   }
   
   /* Hide sidebar toggle on mobile - sidebar should always be visible */

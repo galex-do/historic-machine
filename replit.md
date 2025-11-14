@@ -3,6 +3,26 @@
 ## Overview
 A comprehensive web application for mapping historical events on an interactive world map with timeline functionality. Users can view, filter, and add historical events with geographical and temporal data. The project aims to provide a rich, interactive experience for exploring history, with capabilities for managing events, tags, and datasets, all within a localized and performant environment. This application has significant market potential for educational platforms, historical research, and general public engagement with historical data.
 
+## Recent Changes (November 14, 2025)
+
+### Mobile-First Layout Optimization
+- **Content-Prioritized Mobile Experience**: Complete redesign of mobile layout for optimal usability on small screens (< 768px)
+  - **Events grid above map**: Events section appears first, map below (content-first approach using flexbox order)
+  - **Compact control header only**: Shows only event counter (e.g., "52 events") + control buttons (📅 Timeline, 🏷️ Tags, 🗺️ Zone filter)
+  - **Event cards hidden on mobile**: Individual event cards removed from mobile view to save screen space
+  - **Pagination hidden**: No pagination controls on mobile since event cards are hidden
+  - **Content-dependent height**: Events sidebar height set to `auto` - wraps only the controls, no fixed height
+  - **Tag filter visibility**: Tag filter panel properly expands above map with `overflow: visible` - no clipping or overlay
+  - **Map optimization**: Map gets 60vh+ of screen space for better geographical viewing
+  - **Sidebar toggle hidden**: Collapse button (‹) hidden on mobile - events section always visible
+  - **Result**: Clean, minimal header with controls + maximum map space for mobile users
+  - Components modified: `EventsGrid.vue`, `MapView.vue`
+
+### Visual Polish
+- **Timeline date bullets centered**: Applied -6px margin-left to center 14px date bullets (10px + 2px border × 2) on 1px vertical timeline line for better visual alignment
+- **Leaflet attribution removed**: Set `attributionControl: false` in WorldMap.vue for cleaner map appearance
+- Component modified: `TimelineModal.vue`, `WorldMap.vue`
+
 ## Recent Changes (November 12, 2025)
 
 ### Compact Event List View
