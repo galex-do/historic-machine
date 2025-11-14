@@ -38,9 +38,9 @@ A comprehensive web application for mapping historical events on an interactive 
 
 ### Statistics Dashboard Enhancements (November 14, 2025)
 - **Reorganized Stats Layout**: Moved session metrics to Overall section for clearer presentation
-  - Overall section now shows: Total Active Visitors, Total Sessions, Average Duration, Total Time
+  - Overall section now shows: Total Active Visitors, Total Sessions, Average Duration, Total Time, Peak Concurrent Sessions
   - Removed redundant Anonymous Visitors section (all relevant data shown in Overall)
-  - All metrics clearly labeled as "anonymous-only" to prevent confusion
+  - All metrics clearly labeled as "anonymous-only" except Peak (which tracks all sessions)
   
 - **Added Total Time Metric**: Shows cumulative time for all anonymous sessions
   - Backend calculates: SUM of all session durations using `COALESCE(last_seen_at, NOW())`
@@ -59,11 +59,20 @@ A comprehensive web application for mapping historical events on an interactive 
   - Duration formatting now uses localized units (min/мин, h/ч)
   - Visitor count pluralization (visitor/visitors, посетитель/посетителей)
   
+- **Peak Concurrent Sessions Tracking**: Background service monitors and records maximum concurrent usage
+  - Samples every 60 seconds to track peak concurrent sessions (authenticated + anonymous combined)
+  - Background PeakStatsService runs as goroutine with graceful shutdown handling
+  - Minimal database load: 2 queries/minute regardless of traffic volume
+  - Displays lifetime peak in highlighted KPI card: "🏆 Peak Concurrent Sessions"
+  
 - **Files Modified**:
-  - `backend/internal/models/user.go`: Added HourlyVisitorStat struct, AnonymousTotalTime field
-  - `backend/internal/database/repositories/user_repository.go`: Added total time and hourly stats queries
-  - `frontend/src/views/AdminStats.vue`: Reorganized layout, added bar graph component
-  - `frontend/src/composables/useLocale.js`: Added all new translation keys
+  - `backend/migrations/014_add_peak_stats.sql`: New peak_stats table for tracking maximum concurrency
+  - `backend/internal/services/peak_stats_service.go`: Background goroutine with 60-second ticker
+  - `backend/internal/models/user.go`: Added HourlyVisitorStat struct, AnonymousTotalTime, PeakConcurrentSessions fields
+  - `backend/internal/database/repositories/user_repository.go`: Added total time, hourly stats, and peak tracking queries
+  - `backend/main.go`: Integrated peak stats service with context-based graceful shutdown
+  - `frontend/src/views/AdminStats.vue`: Reorganized layout, added bar graph and peak KPI card
+  - `frontend/src/composables/useLocale.js`: Added all new translation keys for stats features
 
 ## User Preferences
 - Use snake_case naming convention everywhere for elements and functions
