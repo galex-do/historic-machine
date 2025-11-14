@@ -355,5 +355,15 @@ export default {
   .events-section {
     padding: 0.75rem;
   }
+  
+  /* Hide event list on mobile - show only counter and controls */
+  .events-grid {
+    display: none;
+  }
+  
+  /* Hide pagination on mobile since we don't show event cards */
+  .pagination-controls {
+    display: none;
+  }
 }
 </style>

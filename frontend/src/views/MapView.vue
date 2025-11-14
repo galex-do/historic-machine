@@ -554,11 +554,13 @@ export default {
 
 @media (max-width: 768px) {
   .main-layout {
-    height: calc(100vh - 140px); /* Account for potentially smaller mobile header */
+    height: auto;
+    min-height: calc(100vh - 140px);
   }
   
   .events-sidebar {
-    height: 35vh;
+    height: auto; /* Content-dependent height - just wraps controls */
+    flex: 0 0 auto; /* Don't grow, just wrap content */
   }
   
   /* Hide sidebar toggle on mobile - sidebar should always be visible */
@@ -568,11 +570,16 @@ export default {
   
   /* Prevent sidebar from collapsing on mobile */
   .events-sidebar.collapsed {
-    height: 35vh;
+    height: auto;
   }
   
   .section-title {
     display: block !important; /* Always show title on mobile */
+  }
+  
+  .map-content-area {
+    min-height: 60vh; /* Map takes most of the screen on mobile */
+    flex: 1;
   }
 }
 </style>
