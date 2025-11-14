@@ -560,5 +560,19 @@ export default {
   .events-sidebar {
     height: 35vh;
   }
+  
+  /* Hide sidebar toggle on mobile - sidebar should always be visible */
+  .sidebar-toggle {
+    display: none;
+  }
+  
+  /* Prevent sidebar from collapsing on mobile */
+  .events-sidebar.collapsed {
+    height: 35vh;
+  }
+  
+  .section-title {
+    display: block !important; /* Always show title on mobile */
+  }
 }
 </style>
