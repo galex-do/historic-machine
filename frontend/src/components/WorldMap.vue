@@ -1694,6 +1694,11 @@ export default {
   opacity: 0.8;
 }
 
+.event_tag_compact::before {
+  content: '#';
+  opacity: 0.6;
+}
+
 .clickable_tag_compact {
   cursor: pointer;
   transition: opacity 0.2s;
