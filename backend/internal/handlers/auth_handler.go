@@ -466,3 +466,33 @@ func (h *AuthHandler) GetSessionStats(w http.ResponseWriter, r *http.Request) {
         w.Header().Set("Content-Type", "application/json")
         json.NewEncoder(w).Encode(stats)
 }
+
+// AnonymousSessionHeartbeat creates or updates an anonymous session (no auth required)
+func (h *AuthHandler) AnonymousSessionHeartbeat(w http.ResponseWriter, r *http.Request) {
+        if r.Method != http.MethodPost {
+                http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
+                return
+        }
+
+        var req struct {
+                SessionID string `json:"session_id"`
+        }
+
+        if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
+                http.Error(w, "Invalid request body", http.StatusBadRequest)
+                return
+        }
+
+        if req.SessionID == "" {
+                http.Error(w, "Session ID is required", http.StatusBadRequest)
+                return
+        }
+
+        err := h.authService.CreateOrUpdateAnonymousSession(req.SessionID)
+        if err != nil {
+                http.Error(w, "Failed to update anonymous session", http.StatusInternalServerError)
+                return
+        }
+
+        w.WriteHeader(http.StatusNoContent)
+}

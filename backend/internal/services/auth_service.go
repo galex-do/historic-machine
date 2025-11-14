@@ -323,3 +323,13 @@ func (s *AuthService) UpdateSessionHeartbeat(tokenString string) error {
 func (s *AuthService) GetSessionStats() (*models.SessionStats, error) {
         return s.userRepo.GetSessionStats()
 }
+
+// CreateOrUpdateAnonymousSession creates or updates an anonymous session
+func (s *AuthService) CreateOrUpdateAnonymousSession(sessionID string) error {
+        return s.userRepo.CreateOrUpdateAnonymousSession(sessionID)
+}
+
+// EndAnonymousSession ends an anonymous session
+func (s *AuthService) EndAnonymousSession(sessionID string) error {
+        return s.userRepo.EndAnonymousSession(sessionID)
+}

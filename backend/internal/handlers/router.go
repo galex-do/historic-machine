@@ -50,6 +50,9 @@ func (router *Router) SetupRoutes() http.Handler {
         // Session tracking (authenticated users)
         api.HandleFunc("/session/heartbeat", router.authHandler.AuthMiddleware(router.authHandler.SessionHeartbeat)).Methods("POST", "OPTIONS")
         
+        // Anonymous session tracking (no auth required)
+        api.HandleFunc("/session/anonymous-heartbeat", router.authHandler.AnonymousSessionHeartbeat).Methods("POST", "OPTIONS")
+        
         // Admin routes
         api.HandleFunc("/admin/stats", router.authHandler.RequireAccessLevel(models.AccessLevelSuper)(router.authHandler.GetSessionStats)).Methods("GET", "OPTIONS")
         
