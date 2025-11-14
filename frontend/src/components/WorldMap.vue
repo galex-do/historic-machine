@@ -125,10 +125,7 @@
               {{ selected_events.length }} Events at this Location
             </template>
           </h2>
-          <div class="event_info_header_actions">
-            <button v-if="selected_events.length === 1 && canEditEvents" @click="edit_event_from_info(selected_events[0].id)" class="event_edit_btn" title="Edit event">✏️</button>
-            <button class="event_close_btn" @click="close_event_info_modal">×</button>
-          </div>
+          <button class="event_close_btn" @click="close_event_info_modal">×</button>
         </div>
         
         <!-- Modal Content -->
@@ -1560,33 +1557,6 @@ export default {
 .event_info_modal_title .event_name_link:hover {
   color: #2563eb;
   border-bottom-color: #2563eb;
-}
-
-.event_info_header_actions {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.event_edit_btn {
-  background: none;
-  border: none;
-  font-size: 1.25rem;
-  color: #64748b;
-  cursor: pointer;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  transition: all 0.2s;
-  padding: 0;
-}
-
-.event_edit_btn:hover {
-  background: #f1f5f9;
-  color: #1e293b;
 }
 
 .event_close_btn {
