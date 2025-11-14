@@ -28,7 +28,7 @@ A comprehensive web application for mapping historical events on an interactive 
 - **Backend (Go)**: Gorilla Mux HTTP router, RESTful endpoints, Nginx hardened security (XSS, CSP), role-based access control, Nginx performance optimizations (worker processes, epoll, sendfile, gzip, caching), server-side OSM tile caching.
 - **Frontend (Vue.js)**: Vue.js 3 with Vite, Vue Router 4 for SPA navigation, session storage for filter conditions and map state, event clustering, reactive data fetching on locale changes, AND logic for multi-tag filtering.
 - **Vite Proxy Setup**: Configured Vite dev server to proxy API requests to the backend for seamless communication in the Replit environment.
-- **Session Tracking**: Lightweight implementation for both authenticated and anonymous users with a 60-second heartbeat and a statistics dashboard. UUID-based anonymous tracking for privacy.
+- **Session Tracking**: Lightweight implementation for both authenticated and anonymous users with a 60-second heartbeat and a statistics dashboard. UUID-based anonymous tracking for privacy. **Active window: 5 minutes** - sessions become inactive 5 minutes after last heartbeat (when browser tab is closed or inactive).
 - **Tag Search**: Dynamic search input for tags from visible events with autocomplete, suggestions, and filtering.
 
 ### Feature Specifications

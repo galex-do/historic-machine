@@ -446,11 +446,13 @@ func (r *UserRepository) GetSessionStats() (*models.SessionStats, error) {
                 return nil, fmt.Errorf("failed to get total sessions count: %w", err)
         }
 
-        // Active sessions
+        // Active sessions (last seen in last 5 minutes)
         activeSessionsQuery := `
                 SELECT COUNT(*) 
                 FROM user_sessions 
-                WHERE is_active = true AND expires_at > NOW()`
+                WHERE is_active = true 
+                  AND last_seen_at > NOW() - INTERVAL '5 minutes'
+                  AND expires_at > NOW()`
 
         err = r.db.QueryRow(activeSessionsQuery).Scan(&stats.ActiveSessions)
         if err != nil {
@@ -487,11 +489,12 @@ func (r *UserRepository) GetSessionStats() (*models.SessionStats, error) {
                 return nil, fmt.Errorf("failed to get anonymous total sessions count: %w", err)
         }
 
-        // Anonymous active sessions
+        // Anonymous active sessions (last seen in last 5 minutes)
         anonymousActiveSessionsQuery := `
                 SELECT COUNT(*) 
                 FROM anonymous_sessions 
-                WHERE ended_at IS NULL`
+                WHERE last_seen_at > NOW() - INTERVAL '5 minutes'
+                  AND ended_at IS NULL`
 
         err = r.db.QueryRow(anonymousActiveSessionsQuery).Scan(&stats.AnonymousActiveSessions)
         if err != nil {
