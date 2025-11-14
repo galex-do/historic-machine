@@ -39,7 +39,7 @@ A comprehensive web application for mapping historical events on an interactive 
 ### Statistics Dashboard Enhancements (November 14, 2025)
 - **Reorganized Stats Layout**: Moved session metrics to Overall section for clearer presentation
   - Overall section now shows: Total Active Visitors, Total Sessions, Average Duration, Total Time
-  - Anonymous section simplified to show only Active Visitors
+  - Removed redundant Anonymous Visitors section (all relevant data shown in Overall)
   - All metrics clearly labeled as "anonymous-only" to prevent confusion
   
 - **Added Total Time Metric**: Shows cumulative time for all anonymous sessions

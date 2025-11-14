@@ -66,21 +66,6 @@
         </div>
       </div>
 
-      <!-- Anonymous Visitors Stats -->
-      <div class="stats-section">
-        <h3 class="section-title">{{ t('anonymousVisitorsStats') }}</h3>
-        <div class="kpi-grid">
-          <div class="kpi-card">
-            <div class="kpi-icon">👤</div>
-            <div class="kpi-content">
-              <div class="kpi-value">{{ stats.anonymous_active_users }}</div>
-              <div class="kpi-label">{{ t('anonymousActiveUsers') }}</div>
-              <div class="kpi-description">{{ t('anonymousActiveUsersDesc') }}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- Hourly Visitor Graph -->
       <div class="stats-section" v-if="stats.hourly_visitors && stats.hourly_visitors.length > 0">
         <h3 class="section-title">{{ t('hourlyVisitorsTitle') }}</h3>
