@@ -107,7 +107,7 @@ const UI_TRANSLATIONS = {
     lastUpdated: 'Last updated',
     stats: 'Stats',
     hourlyVisitorsTitle: 'Visitor Activity (Last 24 Hours)',
-    peakConcurrentSessions: 'Peak Concurrent Sessions',
+    peakConcurrentSessions: 'Peak load',
     peakConcurrentSessionsDesc: 'Maximum concurrent visitors (all time)',
     
     // Table Column Names
@@ -332,7 +332,7 @@ const UI_TRANSLATIONS = {
     lastUpdated: 'Последнее обновление',
     stats: 'Статистика',
     hourlyVisitorsTitle: 'Активность посетителей (последние 24 часа)',
-    peakConcurrentSessions: 'Пик одновременных сессий',
+    peakConcurrentSessions: 'Пиковая нагрузка',
     peakConcurrentSessionsDesc: 'Максимум одновременных посетителей (все время)',
     
     // Table Column Names
