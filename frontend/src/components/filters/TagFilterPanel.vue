@@ -14,7 +14,12 @@
     
     <!-- Tag Suggestions Dropdown (Teleported to body) -->
     <Teleport to="body">
-      <div v-if="showSuggestions && filteredAvailableTags.length > 0" class="tag_suggestions" :style="dropdownPosition">
+      <div 
+        v-if="showSuggestions && filteredAvailableTags.length > 0" 
+        ref="dropdownRef"
+        class="tag_suggestions" 
+        :style="dropdownPosition"
+      >
         <div
           v-for="tag in filteredAvailableTags"
           :key="tag.id"
@@ -29,7 +34,12 @@
         </div>
       </div>
       
-      <div v-if="showSuggestions && searchQuery && filteredAvailableTags.length === 0" class="no_suggestions" :style="dropdownPosition">
+      <div 
+        v-if="showSuggestions && searchQuery && filteredAvailableTags.length === 0" 
+        ref="dropdownRef"
+        class="no_suggestions" 
+        :style="dropdownPosition"
+      >
         {{ t('noTagsFound') }}
       </div>
     </Teleport>
@@ -81,7 +91,7 @@
 </template>
 
 <script>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useLocale } from '@/composables/useLocale.js'
 
 export default {
@@ -107,6 +117,7 @@ export default {
     const searchQuery = ref('')
     const showSuggestions = ref(false)
     const searchContainerRef = ref(null)
+    const dropdownRef = ref(null)
     const dropdownPosition = ref({})
     
     // Filter available tags based on search query and exclude already selected tags
@@ -162,6 +173,19 @@ export default {
       }, 200)
     }
     
+    // Close dropdown on scroll (but not if scrolling inside the dropdown itself)
+    const handleScroll = (event) => {
+      if (showSuggestions.value && dropdownRef.value) {
+        // Check if the scroll event originated from inside the dropdown
+        const isScrollInsideDropdown = dropdownRef.value.contains(event.target)
+        
+        // Only close if scrolling outside the dropdown
+        if (!isScrollInsideDropdown) {
+          showSuggestions.value = false
+        }
+      }
+    }
+    
     // Count how many events have this tag (would need events prop for accuracy)
     // For now, just show that it's available
     const getTagEventCount = (tagId) => {
@@ -169,11 +193,22 @@ export default {
       return '✓'
     }
     
+    // Setup scroll listener on mount
+    onMounted(() => {
+      window.addEventListener('scroll', handleScroll, true) // useCapture for all scrollable elements
+    })
+    
+    // Cleanup scroll listener on unmount
+    onUnmounted(() => {
+      window.removeEventListener('scroll', handleScroll, true)
+    })
+    
     return {
       t,
       searchQuery,
       showSuggestions,
       searchContainerRef,
+      dropdownRef,
       dropdownPosition,
       filteredAvailableTags,
       addTag,
