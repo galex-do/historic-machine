@@ -9,7 +9,8 @@ A comprehensive web application for mapping historical events on an interactive 
 - **Removed Authenticated Users Section**: Simplified admin statistics page to show only Overall and Anonymous visitor metrics
   - Focus on anonymous visitor tracking for public historical events site
   - Overall section: Total active visitors (all users combined)
-  - Anonymous section: Active visitors, active sessions, total sessions, average duration
+  - Anonymous section: Active visitors, total sessions, average duration
+  - **Removed redundant "Active Sessions"**: For anonymous users, active visitors = active sessions (one UUID per visitor), so the duplicate metric was removed
   - Component modified: `AdminStats.vue`
 
 ### Session Tracking 5-Minute Active Window Fix

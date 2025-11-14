@@ -53,15 +53,6 @@
           </div>
 
           <div class="kpi-card">
-            <div class="kpi-icon">🌐</div>
-            <div class="kpi-content">
-              <div class="kpi-value">{{ stats.anonymous_active_sessions }}</div>
-              <div class="kpi-label">{{ t('anonymousActiveSessions') }}</div>
-              <div class="kpi-description">{{ t('anonymousActiveSessionsDesc') }}</div>
-            </div>
-          </div>
-
-          <div class="kpi-card">
             <div class="kpi-icon">📈</div>
             <div class="kpi-content">
               <div class="kpi-value">{{ stats.anonymous_total_sessions }}</div>
