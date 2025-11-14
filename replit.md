@@ -19,6 +19,13 @@ A comprehensive web application for mapping historical events on an interactive 
   - Prevents inflated "active" counts when browser tabs are closed
   - Backend modified: `user_repository.go` - added 5-minute filter to active session queries
 
+### Service Worker Cleanup
+- **Removed Deprecated Tile Caching Service Worker**: Fixed periodic 404 errors for `/sw-tile-cache.js` in nginx logs
+  - Previous version used a service worker for client-side tile caching (no longer needed with server-side nginx caching)
+  - Created cleanup file at `frontend/public/sw-tile-cache.js` that unregisters any lingering service workers
+  - Cleanup worker automatically unregisters itself and clears all caches when browser requests update
+  - Eliminates 404 errors without affecting functionality
+
 ## User Preferences
 - Use snake_case naming convention everywhere for elements and functions
 - Develop professional, high-end code with proper patterns and templates
