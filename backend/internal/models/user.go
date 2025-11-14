@@ -72,6 +72,9 @@ type SessionStats struct {
         // Combined stats
         TotalActiveUsers int `json:"total_active_users"` // Total active users (authenticated + anonymous)
         
+        // Peak usage stats
+        PeakConcurrentSessions int `json:"peak_concurrent_sessions"` // Maximum concurrent anonymous sessions ever recorded
+        
         // Hourly visitor stats (last 24 hours)
         HourlyVisitors []HourlyVisitorStat `json:"hourly_visitors"`
 }

@@ -63,6 +63,15 @@
               <div class="kpi-description">{{ t('overallTotalTimeDesc') }}</div>
             </div>
           </div>
+
+          <div class="kpi-card highlight">
+            <div class="kpi-icon">🏆</div>
+            <div class="kpi-content">
+              <div class="kpi-value">{{ stats.peak_concurrent_sessions }}</div>
+              <div class="kpi-label">{{ t('peakConcurrentSessions') }}</div>
+              <div class="kpi-description">{{ t('peakConcurrentSessionsDesc') }}</div>
+            </div>
+          </div>
         </div>
       </div>
 

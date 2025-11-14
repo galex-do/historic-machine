@@ -1,6 +1,7 @@
 package main
 
 import (
+        "context"
         "historical-events-backend/internal/config"
         "historical-events-backend/internal/database"
         "historical-events-backend/internal/database/repositories"
@@ -9,6 +10,10 @@ import (
         "log"
         "net/http"
         "os"
+        "os/signal"
+        "sync"
+        "syscall"
+        "time"
 )
 
 func main() {
@@ -39,18 +44,63 @@ func main() {
         authService := services.NewAuthService(userRepo, jwtSecret)
         log.Println("Services initialized successfully")
 
+        // Initialize peak stats service
+        peakStatsService := services.NewPeakStatsService(userRepo, log.New(os.Stdout, "[PeakStats] ", log.LstdFlags))
+        
+        // Start peak stats tracking in background
+        ctx, cancel := context.WithCancel(context.Background())
+        var wg sync.WaitGroup
+        wg.Add(1)
+        go func() {
+                defer wg.Done()
+                peakStatsService.Start(ctx)
+        }()
+
         // Initialize router with all handlers
         router := handlers.NewRouter(eventRepo, templateRepo, tagRepo, datasetRepo, authService)
         
         // Setup routes
         httpHandler := router.SetupRoutes()
         
-        // Start server
+        // Start HTTP server in a goroutine for graceful shutdown
         serverAddr := cfg.Server.Host + ":" + cfg.Server.Port
-        log.Printf("Server starting on %s", serverAddr)
-        log.Printf("API endpoints available at http://%s/api", serverAddr)
+        server := &http.Server{
+                Addr:    serverAddr,
+                Handler: httpHandler,
+        }
         
-        if err := http.ListenAndServe(serverAddr, httpHandler); err != nil {
-                log.Fatal("Server failed to start:", err)
+        serverErrChan := make(chan error, 1)
+        go func() {
+                log.Printf("Server starting on %s", serverAddr)
+                log.Printf("API endpoints available at http://%s/api", serverAddr)
+                serverErrChan <- server.ListenAndServe()
+        }()
+        
+        // Wait for interrupt signal for graceful shutdown
+        sigChan := make(chan os.Signal, 1)
+        signal.Notify(sigChan, os.Interrupt, syscall.SIGTERM)
+        
+        select {
+        case err := <-serverErrChan:
+                if err != nil && err != http.ErrServerClosed {
+                        log.Fatal("Server failed to start:", err)
+                }
+        case <-sigChan:
+                log.Println("Shutting down gracefully...")
+                
+                // Cancel background services
+                cancel()
+                
+                // Shutdown HTTP server with timeout
+                shutdownCtx, shutdownCancel := context.WithTimeout(context.Background(), 10*time.Second)
+                defer shutdownCancel()
+                
+                if err := server.Shutdown(shutdownCtx); err != nil {
+                        log.Printf("Server shutdown error: %v", err)
+                }
+                
+                // Wait for background services to finish
+                wg.Wait()
+                log.Println("Server stopped")
         }
 }

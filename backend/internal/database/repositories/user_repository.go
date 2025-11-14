@@ -559,6 +559,17 @@ func (r *UserRepository) GetSessionStats() (*models.SessionStats, error) {
                 return nil, fmt.Errorf("error iterating hourly visitors: %w", err)
         }
 
+        // Peak concurrent sessions
+        peakConcurrentQuery := `SELECT peak_concurrent_sessions FROM peak_stats WHERE id = 1`
+        err = r.db.QueryRow(peakConcurrentQuery).Scan(&stats.PeakConcurrentSessions)
+        if err != nil {
+                if err == sql.ErrNoRows {
+                        stats.PeakConcurrentSessions = 0
+                } else {
+                        return nil, fmt.Errorf("failed to get peak concurrent sessions: %w", err)
+                }
+        }
+
         // Total active users (authenticated + anonymous)
         stats.TotalActiveUsers = stats.ActiveUsers + stats.AnonymousActiveUsers
 
@@ -577,6 +588,77 @@ func (r *UserRepository) CreateOrUpdateAnonymousSession(sessionID string) error 
         _, err := r.db.Exec(query, sessionID, now, now)
         if err != nil {
                 return fmt.Errorf("failed to create or update anonymous session: %w", err)
+        }
+
+        return nil
+}
+
+// CountActiveAnonymousSessions counts sessions active in the last 5 minutes
+func (r *UserRepository) CountActiveAnonymousSessions() (int, error) {
+        query := `
+                SELECT COUNT(*)
+                FROM anonymous_sessions
+                WHERE last_seen_at > NOW() - INTERVAL '5 minutes'`
+
+        var count int
+        err := r.db.QueryRow(query).Scan(&count)
+        if err != nil {
+                return 0, fmt.Errorf("failed to count active anonymous sessions: %w", err)
+        }
+
+        return count, nil
+}
+
+// CountAllActiveSessions counts both authenticated and anonymous sessions active in the last 5 minutes
+func (r *UserRepository) CountAllActiveSessions() (int, error) {
+        query := `
+                SELECT 
+                        (SELECT COUNT(*) 
+                         FROM user_sessions 
+                         WHERE is_active = true 
+                           AND last_seen_at > NOW() - INTERVAL '5 minutes'
+                           AND expires_at > NOW())
+                        +
+                        (SELECT COUNT(*) 
+                         FROM anonymous_sessions 
+                         WHERE last_seen_at > NOW() - INTERVAL '5 minutes')
+                AS total_active`
+
+        var count int
+        err := r.db.QueryRow(query).Scan(&count)
+        if err != nil {
+                return 0, fmt.Errorf("failed to count all active sessions: %w", err)
+        }
+
+        return count, nil
+}
+
+// GetPeakConcurrentSessions retrieves the current peak value
+func (r *UserRepository) GetPeakConcurrentSessions() (int, error) {
+        query := `SELECT peak_concurrent_sessions FROM peak_stats WHERE id = 1`
+
+        var peak int
+        err := r.db.QueryRow(query).Scan(&peak)
+        if err != nil {
+                if err == sql.ErrNoRows {
+                        return 0, nil
+                }
+                return 0, fmt.Errorf("failed to get peak concurrent sessions: %w", err)
+        }
+
+        return peak, nil
+}
+
+// UpdatePeakIfHigher updates the peak if the current count is higher
+func (r *UserRepository) UpdatePeakIfHigher(currentCount int) error {
+        query := `
+                UPDATE peak_stats
+                SET peak_concurrent_sessions = $1, updated_at = NOW()
+                WHERE id = 1 AND peak_concurrent_sessions < $1`
+
+        _, err := r.db.Exec(query, currentCount)
+        if err != nil {
+                return fmt.Errorf("failed to update peak concurrent sessions: %w", err)
         }
 
         return nil
