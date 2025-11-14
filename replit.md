@@ -36,6 +36,35 @@ A comprehensive web application for mapping historical events on an interactive 
   - Backend modified: `user_repository.go`, `auth_service.go`
   - Removed unused `EndAnonymousSession()` function
 
+### Statistics Dashboard Enhancements (November 14, 2025)
+- **Reorganized Stats Layout**: Moved session metrics to Overall section for clearer presentation
+  - Overall section now shows: Total Active Visitors, Total Sessions, Average Duration, Total Time
+  - Anonymous section simplified to show only Active Visitors
+  - All metrics clearly labeled as "anonymous-only" to prevent confusion
+  
+- **Added Total Time Metric**: Shows cumulative time for all anonymous sessions
+  - Backend calculates: SUM of all session durations using `COALESCE(last_seen_at, NOW())`
+  - Includes active sessions in calculation (uses NOW() as end time for ongoing sessions)
+  - Displayed in localized format (hours/minutes)
+  
+- **Added Hourly Visitor Graph**: Interactive 24-hour bar chart showing visitor activity
+  - Displays last 24 hours with hourly breakdown (oldest→newest, current hour on right)
+  - Backend uses PostgreSQL generate_series for complete hour coverage
+  - Active sessions included via `COALESCE(last_seen_at, NOW())`
+  - Frontend features: CSS-based bars, hover tooltips, responsive scaling, mobile-optimized
+  - Fully internationalized: all labels, tooltips, and duration units use i18n
+  
+- **Full Internationalization**: All new features support English and Russian
+  - Added translation keys: overallTotalSessions, overallAvgDuration, overallTotalTime, hourlyVisitorsTitle
+  - Duration formatting now uses localized units (min/мин, h/ч)
+  - Visitor count pluralization (visitor/visitors, посетитель/посетителей)
+  
+- **Files Modified**:
+  - `backend/internal/models/user.go`: Added HourlyVisitorStat struct, AnonymousTotalTime field
+  - `backend/internal/database/repositories/user_repository.go`: Added total time and hourly stats queries
+  - `frontend/src/views/AdminStats.vue`: Reorganized layout, added bar graph component
+  - `frontend/src/composables/useLocale.js`: Added all new translation keys
+
 ## User Preferences
 - Use snake_case naming convention everywhere for elements and functions
 - Develop professional, high-end code with proper patterns and templates
