@@ -217,7 +217,7 @@ export default {
 
     const formatDayLabel = (dayString) => {
       const date = new Date(dayString)
-      return `${date.getMonth() + 1}/${date.getDate()}`
+      return `${date.getUTCMonth() + 1}/${date.getUTCDate()}`
     }
 
     const formatFullDay = (dayString) => {
@@ -225,7 +225,8 @@ export default {
       return date.toLocaleString('en-US', { 
         month: 'short', 
         day: 'numeric',
-        year: 'numeric'
+        year: 'numeric',
+        timeZone: 'UTC'
       })
     }
 
