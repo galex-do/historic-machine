@@ -420,10 +420,12 @@ export default {
   .date-range-section {
     width: 100%;
     gap: 0.75rem;
+    align-items: flex-start;
   }
   
   .date-inputs {
     gap: 0.75rem;
+    width: 100%;
   }
   
   .date-input-group {
@@ -434,11 +436,13 @@ export default {
   .date-input {
     min-width: 80px;
     max-width: none;
+    width: 100%;
   }
   
   .step-controls-section {
     gap: 0.75rem;
     justify-content: flex-start;
+    width: 100%;
   }
   
   .apply-section {
