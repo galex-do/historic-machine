@@ -133,64 +133,101 @@
         
         <!-- Modal Content -->
         <div class="event_info_modal_content">
-          <div class="event_info_container">
-            <div v-for="event in selected_events" :key="event.id" class="event_info_line">
-              <!-- Single event: inline display without date repetition -->
-              <template v-if="selected_events.length === 1">
-                <span class="event_single_text">
-                  <span class="event_date_inline">{{ formatEventDisplayDate(event.event_date, event.era) }}</span>
-                  <template v-if="event.description">
-                    {{ ' — ' }}{{ event.description }}
+          <div class="timeline_container">
+            <div v-for="group in grouped_events_by_date" :key="group.date" class="timeline_date_group">
+              <!-- Single event on this date: everything on one line -->
+              <div v-if="group.events.length === 1" class="timeline_single_event_line">
+                <div class="timeline_bullet"></div>
+                <span class="timeline_single_text">
+                  <span class="timeline_date_inline">{{ group.formattedDate }}</span>
+                  {{ ' ' }}
+                  <span class="event_icon">{{ get_event_emoji(group.events[0].lens_type) }}</span>
+                  {{ ' ' }}
+                  <a v-if="group.events[0].source" 
+                     :href="group.events[0].source" 
+                     target="_blank" 
+                     rel="noopener noreferrer"
+                     class="event_name event_name_link">{{ group.events[0].name }}</a>
+                  <span v-else class="event_name">{{ group.events[0].name }}</span>
+                  <template v-if="group.events[0].description">
+                    {{ ' — ' }}{{ group.events[0].description }}
                   </template>
-                  <template v-if="event.tags && event.tags.length > 0">
+                  <template v-if="group.events[0].tags && group.events[0].tags.length > 0">
                     {{ ' ' }}
                     <span
-                      v-for="tag in event.tags"
+                      v-for="(tag, index) in group.events[0].tags"
                       :key="tag.id"
                       class="event_tag_compact clickable_tag_compact"
                       :style="{ color: tag.color || '#6366f1' }"
                       :title="`Click to filter events by '${tag.name}'`"
                       @click.stop="handleTagClick(tag)"
-                    >#{{ tag.name }} </span>
+                    >{{ tag.name }}{{ index < group.events[0].tags.length - 1 ? ' ' : '' }}</span>
+                  </template>
+                  <template v-if="canEditEvents">
+                    {{ ' ' }}
+                    <button 
+                      class="event_inline_edit_btn" 
+                      @click="edit_event_from_info(group.events[0].id)"
+                      title="Edit event"
+                    >
+                      ✏️
+                    </button>
                   </template>
                 </span>
-              </template>
-              
-              <!-- Multiple events: show date + name header, then content -->
+              </div>
+
+              <!-- Multiple events on this date: separate date header -->
               <template v-else>
-                <div class="event_multi_header">
-                  <span class="event_icon">{{ get_event_emoji(event.lens_type) }}</span>
-                  {{ ' ' }}
-                  <a 
-                    v-if="event.source"
-                    :href="event.source" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    class="event_name_link"
-                  >
-                    {{ event.name }}
-                  </a>
-                  <span v-else class="event_name">{{ event.name }}</span>
-                  {{ ' ' }}
-                  <button v-if="canEditEvents" @click="edit_event_from_info(event.id)" class="event_inline_edit_btn" title="Edit event">✏️</button>
+                <!-- Date Header -->
+                <div class="timeline_date_header">
+                  <div class="timeline_bullet"></div>
+                  <div class="timeline_date">{{ group.formattedDate }}</div>
                 </div>
-                <span class="event_single_text">
-                  <span class="event_date_inline">{{ formatEventDisplayDate(event.event_date, event.era) }}</span>
-                  <template v-if="event.description">
-                    {{ ' — ' }}{{ event.description }}
-                  </template>
-                  <template v-if="event.tags && event.tags.length > 0">
-                    {{ ' ' }}
-                    <span
-                      v-for="tag in event.tags"
-                      :key="tag.id"
-                      class="event_tag_compact clickable_tag_compact"
-                      :style="{ color: tag.color || '#6366f1' }"
-                      :title="`Click to filter events by '${tag.name}'`"
-                      @click.stop="handleTagClick(tag)"
-                    >#{{ tag.name }} </span>
-                  </template>
-                </span>
+
+                <!-- Events for this date -->
+                <div class="timeline_events_list">
+                  <div 
+                    v-for="event in group.events" 
+                    :key="event.id"
+                    class="timeline_event_line"
+                  >
+                    <!-- Event line: Icon + Name + Description + Tags in single flowing text -->
+                    <span class="timeline_single_text">
+                      <span class="event_icon">{{ get_event_emoji(event.lens_type) }}</span>
+                      {{ ' ' }}
+                      <a v-if="event.source" 
+                         :href="event.source" 
+                         target="_blank" 
+                         rel="noopener noreferrer"
+                         class="event_name event_name_link">{{ event.name }}</a>
+                      <span v-else class="event_name">{{ event.name }}</span>
+                      <template v-if="event.description">
+                        {{ ' — ' }}{{ event.description }}
+                      </template>
+                      <template v-if="event.tags && event.tags.length > 0">
+                        {{ ' ' }}
+                        <span
+                          v-for="(tag, index) in event.tags"
+                          :key="tag.id"
+                          class="event_tag_compact clickable_tag_compact"
+                          :style="{ color: tag.color || '#6366f1' }"
+                          :title="`Click to filter events by '${tag.name}'`"
+                          @click.stop="handleTagClick(tag)"
+                        >{{ tag.name }}{{ index < event.tags.length - 1 ? ' ' : '' }}</span>
+                      </template>
+                      <template v-if="canEditEvents">
+                        {{ ' ' }}
+                        <button 
+                          class="event_inline_edit_btn" 
+                          @click="edit_event_from_info(event.id)"
+                          title="Edit event"
+                        >
+                          ✏️
+                        </button>
+                      </template>
+                    </span>
+                  </div>
+                </div>
               </template>
             </div>
           </div>
@@ -318,6 +355,66 @@ export default {
         }
       },
       immediate: false
+    }
+  },
+  
+  computed: {
+    grouped_events_by_date() {
+      if (!this.selected_events || this.selected_events.length === 0) {
+        return []
+      }
+
+      // Helper function for chronological sorting with BC/AD support
+      const getChronologicalValue = (dateString, era) => {
+        let year, month, day
+        
+        if (dateString.startsWith('-')) {
+          // Negative year format: "-3501-01-01T00:00:00Z"
+          const parts = dateString.substring(1).split('T')[0].split('-')
+          year = parseInt(parts[0], 10)
+          month = parseInt(parts[1], 10) - 1  // Month is 0-indexed
+          day = parseInt(parts[2], 10)
+        } else {
+          // Positive year format: "1453-05-29T00:00:00Z"
+          const parts = dateString.split('T')[0].split('-')
+          year = parseInt(parts[0], 10)
+          month = parseInt(parts[1], 10) - 1  // Month is 0-indexed
+          day = parseInt(parts[2], 10)
+        }
+        
+        if (era === 'BC') {
+          // For BC: larger year number = older (3000 BC < 1000 BC)
+          return -(year - (month / 12) - (day / 365))
+        } else {
+          // For AD: normal positive years
+          return year + (month / 12) + (day / 365)
+        }
+      }
+
+      // Sort events chronologically using BC/AD aware sorting
+      const sortedEvents = [...this.selected_events].sort((a, b) => {
+        const aValue = getChronologicalValue(a.event_date, a.era)
+        const bValue = getChronologicalValue(b.event_date, b.era)
+        return aValue - bValue // Chronological order: older events first
+      })
+
+      // Group by date
+      const groups = {}
+      sortedEvents.forEach(event => {
+        // Extract date string (YYYY-MM-DD)
+        const eventDate = event.event_date.split('T')[0]
+        
+        if (!groups[eventDate]) {
+          groups[eventDate] = {
+            date: eventDate,
+            formattedDate: this.formatEventDisplayDate(event.event_date, event.era),
+            events: []
+          }
+        }
+        groups[eventDate].events.push(event)
+      })
+
+      return Object.values(groups)
     }
   },
   
@@ -1405,7 +1502,7 @@ export default {
   z-index: 10;
 }
 
-/* Event Info Modal Styles - Timeline-inspired design */
+/* Event Info Modal Styles - Timeline structure */
 .event_info_modal_overlay {
   position: fixed;
   top: 0;
@@ -1521,35 +1618,82 @@ export default {
   font-size: 0.875rem;
 }
 
-.event_info_container {
+.timeline_container {
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+/* Thin vertical line */
+.timeline_container::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #cbd5e1;
+  z-index: 1;
+}
+
+.timeline_date_group {
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.timeline_date_header {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+  position: relative;
+  z-index: 2;
 }
 
-.event_info_line {
-  padding: 0.5rem 0;
-  line-height: 1.6;
+.timeline_bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #3b82f6;
+  flex-shrink: 0;
+  margin-left: -6px;
 }
 
-.event_multi_header {
+.timeline_date {
+  font-weight: 600;
   font-size: 0.875rem;
   color: #1e293b;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
+}
+
+.timeline_single_event_line {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
   line-height: 1.5;
+  position: relative;
+  z-index: 2;
 }
 
-.event_multi_header .event_icon {
-  display: inline;
+.timeline_single_text {
+  font-size: 0.875rem;
+  color: #475569;
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-.event_multi_header .event_name {
+.timeline_single_text .timeline_date_inline {
   font-weight: 600;
   color: #1e293b;
 }
 
-.event_multi_header .event_name_link {
+.timeline_single_text .event_name {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.timeline_single_text .event_name_link {
   font-weight: 700;
   color: #3b82f6;
   text-decoration: none;
@@ -1557,9 +1701,37 @@ export default {
   transition: all 0.2s;
 }
 
-.event_multi_header .event_name_link:hover {
+.timeline_single_text .event_name_link:hover {
   color: #2563eb;
   border-bottom-color: #2563eb;
+}
+
+.timeline_events_list {
+  margin-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.timeline_event_line {
+  padding: 0.25rem 0;
+  padding-left: 0.5rem;
+  line-height: 1.5;
+}
+
+.event_tag_compact {
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.clickable_tag_compact {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.clickable_tag_compact:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
 
 .event_inline_edit_btn {
@@ -1576,35 +1748,6 @@ export default {
 
 .event_inline_edit_btn:hover {
   color: #3b82f6;
-}
-
-.event_single_text {
-  font-size: 0.875rem;
-  color: #475569;
-  line-height: 1.6;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  display: block;
-}
-
-.event_single_text .event_date_inline {
-  font-weight: 600;
-  color: #1e293b;
-}
-
-.event_tag_compact {
-  font-weight: 500;
-  opacity: 0.8;
-}
-
-.clickable_tag_compact {
-  cursor: pointer;
-  transition: opacity 0.2s;
-}
-
-.clickable_tag_compact:hover {
-  opacity: 1;
-  text-decoration: underline;
 }
 
 /* Scrollbar Styling */
