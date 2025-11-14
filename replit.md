@@ -27,6 +27,15 @@ A comprehensive web application for mapping historical events on an interactive 
   - Cleanup worker automatically unregisters itself and clears all caches when browser requests update
   - Eliminates 404 errors without affecting functionality
 
+### Anonymous Session Duration Tracking Fix
+- **Removed Unused `ended_at` Field**: Simplified anonymous session tracking by removing the never-set `ended_at` column
+  - **Problem**: `ended_at` was never set (anonymous users don't explicitly "log out"), causing average duration to always show 0
+  - **Solution**: Use `last_seen_at` instead to calculate session duration: `(last_seen_at - created_at)`
+  - **Result**: Average duration now shows actual time from session start to last heartbeat
+  - Database migration: `013_remove_anonymous_sessions_ended_at.sql`
+  - Backend modified: `user_repository.go`, `auth_service.go`
+  - Removed unused `EndAnonymousSession()` function
+
 ## User Preferences
 - Use snake_case naming convention everywhere for elements and functions
 - Develop professional, high-end code with proper patterns and templates

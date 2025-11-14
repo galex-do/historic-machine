@@ -474,8 +474,7 @@ func (r *UserRepository) GetSessionStats() (*models.SessionStats, error) {
         anonymousActiveUsersQuery := `
                 SELECT COUNT(*) 
                 FROM anonymous_sessions 
-                WHERE last_seen_at > NOW() - INTERVAL '5 minutes'
-                  AND ended_at IS NULL`
+                WHERE last_seen_at > NOW() - INTERVAL '5 minutes'`
 
         err = r.db.QueryRow(anonymousActiveUsersQuery).Scan(&stats.AnonymousActiveUsers)
         if err != nil {
@@ -493,19 +492,17 @@ func (r *UserRepository) GetSessionStats() (*models.SessionStats, error) {
         anonymousActiveSessionsQuery := `
                 SELECT COUNT(*) 
                 FROM anonymous_sessions 
-                WHERE last_seen_at > NOW() - INTERVAL '5 minutes'
-                  AND ended_at IS NULL`
+                WHERE last_seen_at > NOW() - INTERVAL '5 minutes'`
 
         err = r.db.QueryRow(anonymousActiveSessionsQuery).Scan(&stats.AnonymousActiveSessions)
         if err != nil {
                 return nil, fmt.Errorf("failed to get anonymous active sessions count: %w", err)
         }
 
-        // Anonymous average duration (in minutes) for ended sessions
+        // Anonymous average duration (in minutes) - from creation to last heartbeat
         anonymousAvgDurationQuery := `
-                SELECT COALESCE(AVG(EXTRACT(EPOCH FROM (ended_at - created_at)) / 60), 0) 
-                FROM anonymous_sessions 
-                WHERE ended_at IS NOT NULL`
+                SELECT COALESCE(AVG(EXTRACT(EPOCH FROM (last_seen_at - created_at)) / 60), 0) 
+                FROM anonymous_sessions`
 
         err = r.db.QueryRow(anonymousAvgDurationQuery).Scan(&stats.AnonymousAvgDuration)
         if err != nil {
@@ -524,8 +521,7 @@ func (r *UserRepository) CreateOrUpdateAnonymousSession(sessionID string) error 
                 INSERT INTO anonymous_sessions (session_id, created_at, last_seen_at)
                 VALUES ($1, $2, $3)
                 ON CONFLICT (session_id)
-                DO UPDATE SET last_seen_at = $3
-                WHERE anonymous_sessions.ended_at IS NULL`
+                DO UPDATE SET last_seen_at = $3`
 
         now := time.Now()
         _, err := r.db.Exec(query, sessionID, now, now)
@@ -536,26 +532,3 @@ func (r *UserRepository) CreateOrUpdateAnonymousSession(sessionID string) error 
         return nil
 }
 
-// EndAnonymousSession sets the ended_at timestamp for an anonymous session
-func (r *UserRepository) EndAnonymousSession(sessionID string) error {
-        query := `
-                UPDATE anonymous_sessions 
-                SET ended_at = $2
-                WHERE session_id = $1 AND ended_at IS NULL`
-
-        result, err := r.db.Exec(query, sessionID, time.Now())
-        if err != nil {
-                return fmt.Errorf("failed to end anonymous session: %w", err)
-        }
-
-        rows, err := result.RowsAffected()
-        if err != nil {
-                return fmt.Errorf("failed to check affected rows: %w", err)
-        }
-
-        if rows == 0 {
-                return fmt.Errorf("anonymous session not found or already ended")
-        }
-
-        return nil
-}

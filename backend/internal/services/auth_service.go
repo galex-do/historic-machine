@@ -329,7 +329,3 @@ func (s *AuthService) CreateOrUpdateAnonymousSession(sessionID string) error {
         return s.userRepo.CreateOrUpdateAnonymousSession(sessionID)
 }
 
-// EndAnonymousSession ends an anonymous session
-func (s *AuthService) EndAnonymousSession(sessionID string) error {
-        return s.userRepo.EndAnonymousSession(sessionID)
-}
