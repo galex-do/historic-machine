@@ -537,7 +537,7 @@ export default {
   .events-sidebar {
     width: 100%;
     height: 40vh;
-    order: 2;
+    order: 1;
   }
   
   .events-sidebar.collapsed {
@@ -547,7 +547,7 @@ export default {
   
   .map-content-area {
     flex: 1;
-    order: 1;
+    order: 2;
     min-height: 50vh;
   }
 }
