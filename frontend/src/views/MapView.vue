@@ -453,7 +453,7 @@ export default {
   transition: all 0.3s ease;
   width: 350px;
   flex-shrink: 0;
-  overflow: hidden;
+  overflow: visible; /* Allow tag dropdown to appear above map */
   border-right: 1px solid #e2e8f0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
