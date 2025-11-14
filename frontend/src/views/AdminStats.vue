@@ -138,16 +138,25 @@ export default {
     }
 
     const formatDuration = (minutes) => {
-      if (!minutes || minutes === 0) return `0 ${t('minuteShort')}`
+      if (!minutes || minutes === 0) return `0${t('minuteShort')}`
       
       const mins = Math.round(minutes)
-      if (mins < 60) return `${mins} ${t('minuteShort')}`
+      if (mins < 60) return `${mins}${t('minuteShort')}`
       
-      const hours = Math.floor(mins / 60)
+      const totalHours = Math.floor(mins / 60)
       const remainingMins = mins % 60
+      
+      // If >= 24 hours (1 day), show days + hours only (more compact)
+      if (totalHours >= 24) {
+        const days = Math.floor(totalHours / 24)
+        const hours = totalHours % 24
+        return hours > 0 ? `${days}d ${hours}${t('hourShort')}` : `${days}d`
+      }
+      
+      // Less than 24 hours: show hours + minutes
       return remainingMins > 0 
-        ? `${hours}${t('hourShort')} ${remainingMins}${t('minuteShort')}` 
-        : `${hours}${t('hourShort')}`
+        ? `${totalHours}${t('hourShort')} ${remainingMins}${t('minuteShort')}` 
+        : `${totalHours}${t('hourShort')}`
     }
 
     const formatTimestamp = (date) => {
