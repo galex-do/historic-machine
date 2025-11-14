@@ -103,80 +103,95 @@
     </div>
 
     <!-- Event Info Modal (shows event details without coordinate corruption) -->
-    <div v-if="show_event_info_modal" class="modal-overlay" @click="close_event_info_modal">
-      <div class="modal-content event-info-modal" @click.stop>
-        <div class="modal-header">
-          <h3 v-if="selected_events.length === 1">
-            {{ get_event_emoji(selected_events[0].lens_type) }}
-            <a 
-              v-if="selected_events[0].source"
-              :href="selected_events[0].source" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="modal-event-title-link" 
-              :title="`${selected_events[0].name} - View source`"
-            >
-              {{ selected_events[0].name }}
-            </a>
-            <span v-else class="modal-event-title-text">{{ selected_events[0].name }}</span>
-          </h3>
-          <h3 v-else>{{ selected_events.length }} Events at this Location</h3>
-          <div class="header-actions">
-            <span v-if="selected_events.length === 1 && canEditEvents" @click="edit_event_from_info(selected_events[0].id)" class="edit-icon header-edit" title="Edit event">✏️</span>
-            <button class="close-button" @click="close_event_info_modal">×</button>
+    <div v-if="show_event_info_modal" class="event_info_modal_overlay" @click="close_event_info_modal">
+      <div class="event_info_modal" @click.stop>
+        <!-- Modal Header -->
+        <div class="event_info_modal_header">
+          <h2 class="event_info_modal_title">
+            <template v-if="selected_events.length === 1">
+              {{ get_event_emoji(selected_events[0].lens_type) }}
+              <a 
+                v-if="selected_events[0].source"
+                :href="selected_events[0].source" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="event_name_link" 
+              >
+                {{ selected_events[0].name }}
+              </a>
+              <span v-else class="event_name">{{ selected_events[0].name }}</span>
+            </template>
+            <template v-else>
+              {{ selected_events.length }} Events at this Location
+            </template>
+          </h2>
+          <div class="event_info_header_actions">
+            <button v-if="selected_events.length === 1 && canEditEvents" @click="edit_event_from_info(selected_events[0].id)" class="event_edit_btn" title="Edit event">✏️</button>
+            <button class="event_close_btn" @click="close_event_info_modal">×</button>
           </div>
         </div>
         
-        <div class="events-list">
-          <div v-for="(event, index) in selected_events" :key="event.id" class="event-info-item">
-            <!-- Show event header only for multiple events -->
-            <div v-if="selected_events.length > 1" class="event-header">
-              <h4>
-                {{ get_event_emoji(event.lens_type) }}
-                <a 
-                  v-if="event.source"
-                  :href="event.source" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  class="modal-event-header-link" 
-                  :title="`${event.name} - View source`"
-                >
-                  {{ event.name }}
-                </a>
-                <span v-else>{{ event.name }}</span>
-              </h4>
-              <span v-if="canEditEvents" @click="edit_event_from_info(event.id)" class="edit-icon" title="Edit event">✏️</span>
-            </div>
-            <div class="event-date">{{ formatEventDisplayDate(event.event_date, event.era) }}</div>
-            <p class="event-description">{{ event.description }}</p>
-            <!-- Event Tags (expandable) -->
-            <div v-if="event.tags && event.tags.length > 0" class="event-tags">
-              <span 
-                v-for="tag in getVisibleTags(event)" 
-                :key="tag.id"
-                class="event-tag clickable-tag"
-                :style="{ backgroundColor: tag.color, color: getContrastColor(tag.color) }"
-                :title="`Click to filter events by '${tag.name}'`"
-                @click.stop="handleTagClick(tag)"
-              >
-                {{ tag.name }}
-              </span>
-              <span 
-                v-if="event.tags.length > 3 && !isEventTagsExpanded(event.id)" 
-                class="more-tags clickable-more-tags"
-                :title="`Click to show ${event.tags.length - 3} more tags: ${getHiddenTagNames(event)}`"
-                @click.stop="toggleEventTags(event.id)"
-              >
-                +{{ event.tags.length - 3 }}
-              </span>
-              <span 
-                v-if="isEventTagsExpanded(event.id) && event.tags.length > 3" 
-                class="show-less-tags clickable-more-tags"
-                title="Click to show less tags"
-                @click.stop="toggleEventTags(event.id)"
-              >
-                Show less
-              </span>
+        <!-- Modal Content -->
+        <div class="event_info_modal_content">
+          <div class="event_info_container">
+            <div v-for="event in selected_events" :key="event.id" class="event_info_line">
+              <!-- Single event: inline display without date repetition -->
+              <template v-if="selected_events.length === 1">
+                <span class="event_single_text">
+                  <span class="event_date_inline">{{ formatEventDisplayDate(event.event_date, event.era) }}</span>
+                  <template v-if="event.description">
+                    {{ ' — ' }}{{ event.description }}
+                  </template>
+                  <template v-if="event.tags && event.tags.length > 0">
+                    {{ ' ' }}
+                    <span
+                      v-for="tag in event.tags"
+                      :key="tag.id"
+                      class="event_tag_compact clickable_tag_compact"
+                      :style="{ color: tag.color || '#6366f1' }"
+                      :title="`Click to filter events by '${tag.name}'`"
+                      @click.stop="handleTagClick(tag)"
+                    >#{{ tag.name }} </span>
+                  </template>
+                </span>
+              </template>
+              
+              <!-- Multiple events: show date + name header, then content -->
+              <template v-else>
+                <div class="event_multi_header">
+                  <span class="event_icon">{{ get_event_emoji(event.lens_type) }}</span>
+                  {{ ' ' }}
+                  <a 
+                    v-if="event.source"
+                    :href="event.source" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="event_name_link"
+                  >
+                    {{ event.name }}
+                  </a>
+                  <span v-else class="event_name">{{ event.name }}</span>
+                  {{ ' ' }}
+                  <button v-if="canEditEvents" @click="edit_event_from_info(event.id)" class="event_inline_edit_btn" title="Edit event">✏️</button>
+                </div>
+                <span class="event_single_text">
+                  <span class="event_date_inline">{{ formatEventDisplayDate(event.event_date, event.era) }}</span>
+                  <template v-if="event.description">
+                    {{ ' — ' }}{{ event.description }}
+                  </template>
+                  <template v-if="event.tags && event.tags.length > 0">
+                    {{ ' ' }}
+                    <span
+                      v-for="tag in event.tags"
+                      :key="tag.id"
+                      class="event_tag_compact clickable_tag_compact"
+                      :style="{ color: tag.color || '#6366f1' }"
+                      :title="`Click to filter events by '${tag.name}'`"
+                      @click.stop="handleTagClick(tag)"
+                    >#{{ tag.name }} </span>
+                  </template>
+                </span>
+              </template>
             </div>
           </div>
         </div>
@@ -1390,184 +1405,219 @@ export default {
   z-index: 10;
 }
 
-/* Event Info Modal Styles */
-.event-info-modal {
-  max-width: 500px;
-  max-height: 80vh;
-  overflow-y: auto;
-  width: 90vw;
-  padding: 1rem 1.5rem;
-}
-
-.modal-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  padding: 0.75rem 0;
-  border-bottom: 2px solid #e2e8f0;
-}
-
-.modal-header h3 {
-  margin: 0;
-  color: #2d3748;
-  font-size: 1.25rem;
-}
-
-.close-button {
-  background: none;
-  border: none;
-  font-size: 24px;
-  color: #a0aec0;
-  cursor: pointer;
-  padding: 0;
-  width: 30px;
-  height: 30px;
+/* Event Info Modal Styles - Timeline-inspired design */
+.event_info_modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  z-index: 100000;
+  padding: 2rem;
+}
+
+.event_info_modal {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  max-width: 700px;
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.event_info_modal_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.event_info_modal_title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e293b;
+  flex: 1;
+}
+
+.event_info_modal_title .event_name {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.event_info_modal_title .event_name_link {
+  font-weight: 700;
+  color: #3b82f6;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
   transition: all 0.2s;
 }
 
-.close-button:hover {
-  background: #f1f5f9;
-  color: #4a5568;
+.event_info_modal_title .event_name_link:hover {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
 }
 
-.header-actions {
+.event_info_header_actions {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.header-edit {
-  font-size: 18px;
+.event_edit_btn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: #64748b;
   cursor: pointer;
-  opacity: 0.7;
-  transition: all 0.2s;
-  padding: 0.375rem;
-  border-radius: 50%;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
-}
-
-.header-edit:hover {
-  opacity: 1;
-  background: #f1f5f9;
-  transform: scale(1.1);
-}
-
-.events-list {
-  max-height: 60vh;
-  overflow-y: auto;
-}
-
-.event-info-item {
-  padding: 0.75rem 0;
-}
-
-.event-info-item:not(:last-child) {
-  border-bottom: 1px solid #e2e8f0;
-}
-
-.event-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 0.75rem;
-}
-
-.event-header h4 {
-  margin: 0;
-  color: #2d3748;
-  font-size: 1.1rem;
-  font-weight: 600;
-  flex: 1;
-  margin-right: 0.5rem;
-}
-
-.edit-icon {
-  font-size: 16px;
-  cursor: pointer;
-  opacity: 0.7;
-  transition: all 0.2s;
-  padding: 0.25rem;
   border-radius: 4px;
-  flex-shrink: 0;
+  transition: all 0.2s;
+  padding: 0;
 }
 
-.edit-icon:hover {
-  opacity: 1;
+.event_edit_btn:hover {
   background: #f1f5f9;
-  transform: scale(1.1);
+  color: #1e293b;
 }
 
-.modal-event-title-link {
-  color: #3b82f6;
-  text-decoration: none;
+.event_close_btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #64748b;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
   transition: all 0.2s;
-  font-weight: normal;
-  margin-left: 0.5rem;
+  line-height: 1;
+  padding: 0;
 }
 
-.modal-event-title-link:hover {
-  color: #1d4ed8;
-  text-decoration: underline;
+.event_close_btn:hover {
+  background: #f1f5f9;
+  color: #1e293b;
 }
 
-.modal-event-title-text {
-  margin-left: 0.5rem;
+.event_info_modal_content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem 1.5rem;
+  font-size: 0.875rem;
 }
 
-.modal-event-header-link {
-  color: #3b82f6;
-  text-decoration: none;
-  transition: all 0.2s;
+.event_info_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.event_info_line {
+  padding: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.event_multi_header {
+  font-size: 0.875rem;
+  color: #1e293b;
   font-weight: 600;
-  margin-left: 0.5rem;
-}
-
-.modal-event-header-link:hover {
-  color: #1d4ed8;
-  text-decoration: underline;
-}
-
-.event-description {
-  color: #4a5568;
-  margin: 0.5rem 0 0 0;
+  margin-bottom: 0.25rem;
   line-height: 1.5;
 }
 
-.event-date {
-  color: #6b7280;
-  font-size: 0.9rem;
-  margin: 0.25rem 0 0.5rem 0;
+.event_multi_header .event_icon {
+  display: inline;
+}
+
+.event_multi_header .event_name {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.event_multi_header .event_name_link {
+  font-weight: 700;
+  color: #3b82f6;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.event_multi_header .event_name_link:hover {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
+}
+
+.event_inline_edit_btn {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 0 0.25rem;
+  margin-left: 0.25rem;
+  transition: color 0.2s;
+  vertical-align: middle;
+}
+
+.event_inline_edit_btn:hover {
+  color: #3b82f6;
+}
+
+.event_single_text {
+  font-size: 0.875rem;
+  color: #475569;
+  line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  display: block;
+}
+
+.event_single_text .event_date_inline {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.event_tag_compact {
   font-weight: 500;
+  opacity: 0.8;
 }
 
-.single-event-edit {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 0.5rem;
+.clickable_tag_compact {
+  cursor: pointer;
+  transition: opacity 0.2s;
 }
 
-.event-details p {
-  margin: 0.25rem 0;
-  font-size: 0.9rem;
-  color: #6b7280;
+.clickable_tag_compact:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
 
-.event-details strong {
-  color: #374151;
+/* Scrollbar Styling */
+.event_info_modal_content::-webkit-scrollbar {
+  width: 6px;
 }
 
-.event-divider {
-  height: 1px;
-  background: #e5e7eb;
-  margin: 1rem 0;
+.event_info_modal_content::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.event_info_modal_content::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
 }
 </style>
