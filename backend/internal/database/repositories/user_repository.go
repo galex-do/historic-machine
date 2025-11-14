@@ -509,6 +509,56 @@ func (r *UserRepository) GetSessionStats() (*models.SessionStats, error) {
                 return nil, fmt.Errorf("failed to get anonymous average duration: %w", err)
         }
 
+        // Anonymous total time (in minutes) - sum of all session durations
+        // For active sessions (NULL last_seen_at), use NOW() as end time
+        anonymousTotalTimeQuery := `
+                SELECT COALESCE(SUM(EXTRACT(EPOCH FROM (COALESCE(last_seen_at, NOW()) - created_at)) / 60), 0) 
+                FROM anonymous_sessions`
+
+        err = r.db.QueryRow(anonymousTotalTimeQuery).Scan(&stats.AnonymousTotalTime)
+        if err != nil {
+                return nil, fmt.Errorf("failed to get anonymous total time: %w", err)
+        }
+
+        // Hourly visitor stats for last 24 hours (newest first for display)
+        hourlyVisitorsQuery := `
+                WITH hours AS (
+                        SELECT generate_series(
+                                date_trunc('hour', NOW() - INTERVAL '23 hours'),
+                                date_trunc('hour', NOW()),
+                                INTERVAL '1 hour'
+                        ) AS hour
+                )
+                SELECT 
+                        h.hour,
+                        COUNT(DISTINCT a.session_id) as visitors
+                FROM hours h
+                LEFT JOIN anonymous_sessions a ON 
+                        a.created_at <= h.hour + INTERVAL '1 hour' 
+                        AND COALESCE(a.last_seen_at, NOW()) >= h.hour
+                GROUP BY h.hour
+                ORDER BY h.hour ASC`
+
+        rows, err := r.db.Query(hourlyVisitorsQuery)
+        if err != nil {
+                return nil, fmt.Errorf("failed to get hourly visitors: %w", err)
+        }
+        defer rows.Close()
+
+        stats.HourlyVisitors = []models.HourlyVisitorStat{}
+        for rows.Next() {
+                var hourStat models.HourlyVisitorStat
+                err := rows.Scan(&hourStat.Hour, &hourStat.Visitors)
+                if err != nil {
+                        return nil, fmt.Errorf("failed to scan hourly visitor stat: %w", err)
+                }
+                stats.HourlyVisitors = append(stats.HourlyVisitors, hourStat)
+        }
+
+        if err = rows.Err(); err != nil {
+                return nil, fmt.Errorf("error iterating hourly visitors: %w", err)
+        }
+
         // Total active users (authenticated + anonymous)
         stats.TotalActiveUsers = stats.ActiveUsers + stats.AnonymousActiveUsers
 

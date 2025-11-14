@@ -48,6 +48,12 @@ type AnonymousSession struct {
         EndedAt    *time.Time `json:"ended_at,omitempty"`
 }
 
+// HourlyVisitorStat represents visitor count for a specific hour
+type HourlyVisitorStat struct {
+        Hour     time.Time `json:"hour"`
+        Visitors int       `json:"visitors"`
+}
+
 // SessionStats represents session statistics for the admin dashboard
 type SessionStats struct {
         // Authenticated user stats
@@ -61,9 +67,13 @@ type SessionStats struct {
         AnonymousTotalSessions  int     `json:"anonymous_total_sessions"`  // Total anonymous sessions in database
         AnonymousActiveSessions int     `json:"anonymous_active_sessions"` // Currently active anonymous sessions
         AnonymousAvgDuration    float64 `json:"anonymous_avg_duration"`    // Average anonymous session duration in minutes
+        AnonymousTotalTime      float64 `json:"anonymous_total_time"`      // Total time of all anonymous sessions in minutes
         
         // Combined stats
         TotalActiveUsers int `json:"total_active_users"` // Total active users (authenticated + anonymous)
+        
+        // Hourly visitor stats (last 24 hours)
+        HourlyVisitors []HourlyVisitorStat `json:"hourly_visitors"`
 }
 
 // CreateUserRequest represents the request payload for creating a user

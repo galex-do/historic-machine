@@ -36,6 +36,33 @@
               <div class="kpi-description">{{ t('totalActiveVisitorsDesc') }}</div>
             </div>
           </div>
+
+          <div class="kpi-card">
+            <div class="kpi-icon">📈</div>
+            <div class="kpi-content">
+              <div class="kpi-value">{{ stats.anonymous_total_sessions }}</div>
+              <div class="kpi-label">{{ t('overallTotalSessions') }}</div>
+              <div class="kpi-description">{{ t('overallTotalSessionsDesc') }}</div>
+            </div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-icon">⌚</div>
+            <div class="kpi-content">
+              <div class="kpi-value">{{ formatDuration(stats.anonymous_avg_duration) }}</div>
+              <div class="kpi-label">{{ t('overallAvgDuration') }}</div>
+              <div class="kpi-description">{{ t('overallAvgDurationDesc') }}</div>
+            </div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-icon">⏱️</div>
+            <div class="kpi-content">
+              <div class="kpi-value">{{ formatDuration(stats.anonymous_total_time) }}</div>
+              <div class="kpi-label">{{ t('overallTotalTime') }}</div>
+              <div class="kpi-description">{{ t('overallTotalTimeDesc') }}</div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -51,22 +78,29 @@
               <div class="kpi-description">{{ t('anonymousActiveUsersDesc') }}</div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="kpi-card">
-            <div class="kpi-icon">📈</div>
-            <div class="kpi-content">
-              <div class="kpi-value">{{ stats.anonymous_total_sessions }}</div>
-              <div class="kpi-label">{{ t('anonymousTotalSessions') }}</div>
-              <div class="kpi-description">{{ t('anonymousTotalSessionsDesc') }}</div>
-            </div>
-          </div>
-
-          <div class="kpi-card">
-            <div class="kpi-icon">⌚</div>
-            <div class="kpi-content">
-              <div class="kpi-value">{{ formatDuration(stats.anonymous_avg_duration) }}</div>
-              <div class="kpi-label">{{ t('anonymousAvgDuration') }}</div>
-              <div class="kpi-description">{{ t('anonymousAvgDurationDesc') }}</div>
+      <!-- Hourly Visitor Graph -->
+      <div class="stats-section" v-if="stats.hourly_visitors && stats.hourly_visitors.length > 0">
+        <h3 class="section-title">{{ t('hourlyVisitorsTitle') }}</h3>
+        <div class="hourly-graph-container">
+          <div class="bar-chart">
+            <div 
+              v-for="(hourStat, index) in stats.hourly_visitors" 
+              :key="index"
+              class="bar-wrapper"
+            >
+              <div class="bar-label">{{ formatHourLabel(hourStat.hour) }}</div>
+              <div class="bar-column">
+                <div 
+                  class="bar" 
+                  :style="{ height: getBarHeight(hourStat.visitors) + '%' }"
+                  :title="formatBarTooltip(hourStat.hour, hourStat.visitors)"
+                >
+                  <span class="bar-value" v-if="hourStat.visitors > 0">{{ hourStat.visitors }}</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -110,19 +144,47 @@ export default {
     }
 
     const formatDuration = (minutes) => {
-      if (!minutes || minutes === 0) return '0 min'
+      if (!minutes || minutes === 0) return `0 ${t('minuteShort')}`
       
       const mins = Math.round(minutes)
-      if (mins < 60) return `${mins} min`
+      if (mins < 60) return `${mins} ${t('minuteShort')}`
       
       const hours = Math.floor(mins / 60)
       const remainingMins = mins % 60
-      return remainingMins > 0 ? `${hours}h ${remainingMins}m` : `${hours}h`
+      return remainingMins > 0 
+        ? `${hours}${t('hourShort')} ${remainingMins}${t('minuteShort')}` 
+        : `${hours}${t('hourShort')}`
     }
 
     const formatTimestamp = (date) => {
       if (!date) return ''
       return date.toLocaleTimeString()
+    }
+
+    const formatHourLabel = (hourString) => {
+      const date = new Date(hourString)
+      return date.getHours().toString().padStart(2, '0') + ':00'
+    }
+
+    const formatFullHour = (hourString) => {
+      const date = new Date(hourString)
+      return date.toLocaleString('en-US', { 
+        month: 'short', 
+        day: 'numeric', 
+        hour: '2-digit', 
+        minute: '2-digit' 
+      })
+    }
+
+    const getBarHeight = (visitors) => {
+      if (!stats.value || !stats.value.hourly_visitors) return 0
+      const maxVisitors = Math.max(...stats.value.hourly_visitors.map(h => h.visitors), 1)
+      return visitors === 0 ? 0 : Math.max((visitors / maxVisitors) * 100, 5)
+    }
+
+    const formatBarTooltip = (hourString, visitors) => {
+      const visitorText = visitors === 1 ? t('visitor') : t('visitors')
+      return `${formatFullHour(hourString)}: ${visitors} ${visitorText}`
     }
 
     onMounted(() => {
@@ -137,7 +199,11 @@ export default {
       lastUpdated,
       refreshStats,
       formatDuration,
-      formatTimestamp
+      formatTimestamp,
+      formatHourLabel,
+      formatFullHour,
+      getBarHeight,
+      formatBarTooltip
     }
   }
 }
@@ -338,6 +404,76 @@ export default {
   border-top: 1px solid #e2e8f0;
 }
 
+.hourly-graph-container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 250px;
+  gap: 2px;
+  padding: 1rem 0;
+}
+
+.bar-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.bar-column {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.bar {
+  width: 100%;
+  background: linear-gradient(180deg, #4299e1 0%, #3182ce 100%);
+  border-radius: 4px 4px 0 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 4px;
+  position: relative;
+  min-height: 5px;
+}
+
+.bar:hover {
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+  transform: scaleY(1.05);
+  box-shadow: 0 4px 8px rgba(66, 153, 225, 0.3);
+}
+
+.bar-value {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.bar-label {
+  font-size: 0.75rem;
+  color: #4a5568;
+  font-weight: 500;
+  white-space: nowrap;
+  transform: rotate(-45deg);
+  transform-origin: center;
+  margin-top: 1.5rem;
+}
+
 @media (max-width: 768px) {
   .stats-page {
     padding: 1rem;
@@ -368,6 +504,27 @@ export default {
 
   .kpi-value {
     font-size: 2rem;
+  }
+
+  .hourly-graph-container {
+    padding: 1rem;
+  }
+
+  .bar-chart {
+    height: 200px;
+    gap: 1px;
+  }
+
+  .bar-column {
+    height: 150px;
+  }
+
+  .bar-label {
+    font-size: 0.65rem;
+  }
+
+  .bar-value {
+    font-size: 0.65rem;
   }
 }
 </style>
