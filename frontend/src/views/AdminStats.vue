@@ -89,10 +89,35 @@
               <div class="bar-column">
                 <div 
                   class="bar" 
-                  :style="{ height: getBarHeight(hourStat.visitors) + '%' }"
-                  :title="formatBarTooltip(hourStat.hour, hourStat.visitors)"
+                  :style="{ height: getHourlyBarHeight(hourStat.visitors) + '%' }"
+                  :title="formatHourlyBarTooltip(hourStat.hour, hourStat.visitors)"
                 >
                   <span class="bar-value" v-if="hourStat.visitors > 0">{{ hourStat.visitors }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Daily Visitor Graph (Last 30 Days) -->
+      <div class="stats-section" v-if="stats.daily_visitors && stats.daily_visitors.length > 0">
+        <h3 class="section-title">{{ t('dailyVisitorsTitle') }}</h3>
+        <div class="daily-graph-container">
+          <div class="bar-chart daily-chart">
+            <div 
+              v-for="(dayStat, index) in stats.daily_visitors" 
+              :key="index"
+              class="bar-wrapper"
+            >
+              <div class="bar-label">{{ formatDayLabel(dayStat.day) }}</div>
+              <div class="bar-column">
+                <div 
+                  class="bar" 
+                  :style="{ height: getDailyBarHeight(dayStat.visitors) + '%' }"
+                  :title="formatDailyBarTooltip(dayStat.day, dayStat.visitors)"
+                >
+                  <span class="bar-value" v-if="dayStat.visitors > 0">{{ dayStat.visitors }}</span>
                 </div>
               </div>
             </div>
@@ -179,15 +204,40 @@ export default {
       })
     }
 
-    const getBarHeight = (visitors) => {
+    const getHourlyBarHeight = (visitors) => {
       if (!stats.value || !stats.value.hourly_visitors) return 0
       const maxVisitors = Math.max(...stats.value.hourly_visitors.map(h => h.visitors), 1)
       return visitors === 0 ? 0 : Math.max((visitors / maxVisitors) * 100, 5)
     }
 
-    const formatBarTooltip = (hourString, visitors) => {
+    const formatHourlyBarTooltip = (hourString, visitors) => {
       const visitorText = visitors === 1 ? t('visitor') : t('visitors')
       return `${formatFullHour(hourString)}: ${visitors} ${visitorText}`
+    }
+
+    const formatDayLabel = (dayString) => {
+      const date = new Date(dayString)
+      return `${date.getMonth() + 1}/${date.getDate()}`
+    }
+
+    const formatFullDay = (dayString) => {
+      const date = new Date(dayString)
+      return date.toLocaleString('en-US', { 
+        month: 'short', 
+        day: 'numeric',
+        year: 'numeric'
+      })
+    }
+
+    const getDailyBarHeight = (visitors) => {
+      if (!stats.value || !stats.value.daily_visitors) return 0
+      const maxVisitors = Math.max(...stats.value.daily_visitors.map(d => d.visitors), 1)
+      return visitors === 0 ? 0 : Math.max((visitors / maxVisitors) * 100, 5)
+    }
+
+    const formatDailyBarTooltip = (dayString, visitors) => {
+      const visitorText = visitors === 1 ? t('visitor') : t('visitors')
+      return `${formatFullDay(dayString)}: ${visitors} ${visitorText}`
     }
 
     onMounted(() => {
@@ -205,8 +255,12 @@ export default {
       formatTimestamp,
       formatHourLabel,
       formatFullHour,
-      getBarHeight,
-      formatBarTooltip
+      getHourlyBarHeight,
+      formatHourlyBarTooltip,
+      formatDayLabel,
+      formatFullDay,
+      getDailyBarHeight,
+      formatDailyBarTooltip
     }
   }
 }
@@ -529,5 +583,35 @@ export default {
   .bar-value {
     font-size: 0.65rem;
   }
+
+  .daily-graph-container {
+    padding: 1rem;
+  }
+
+  .daily-chart {
+    height: 200px;
+  }
+
+  .daily-chart .bar-column {
+    height: 150px;
+  }
+}
+
+.daily-graph-container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+}
+
+.daily-chart .bar-wrapper {
+  min-width: 8px;
+}
+
+.daily-chart .bar-label {
+  font-size: 0.65rem;
+  transform: none;
+  margin-top: 0.5rem;
 }
 </style>

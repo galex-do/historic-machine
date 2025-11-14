@@ -107,6 +107,7 @@ const UI_TRANSLATIONS = {
     lastUpdated: 'Last updated',
     stats: 'Stats',
     hourlyVisitorsTitle: 'Visitor Activity (Last 24 Hours)',
+    dailyVisitorsTitle: 'Visitor Activity (Last 30 Days)',
     peakConcurrentSessions: 'Peak load',
     peakConcurrentSessionsDesc: 'Maximum concurrent visitors (all time)',
     
@@ -332,6 +333,7 @@ const UI_TRANSLATIONS = {
     lastUpdated: 'Последнее обновление',
     stats: 'Статистика',
     hourlyVisitorsTitle: 'Активность посетителей (последние 24 часа)',
+    dailyVisitorsTitle: 'Активность посетителей (последние 30 дней)',
     peakConcurrentSessions: 'Пиковая нагрузка',
     peakConcurrentSessionsDesc: 'Максимум одновременных посетителей (все время)',
     
