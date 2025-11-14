@@ -39,48 +39,6 @@
         </div>
       </div>
 
-      <!-- Authenticated Users Stats -->
-      <div class="stats-section">
-        <h3 class="section-title">{{ t('authenticatedUsersStats') }}</h3>
-        <div class="kpi-grid">
-          <div class="kpi-card">
-            <div class="kpi-icon">👥</div>
-            <div class="kpi-content">
-              <div class="kpi-value">{{ stats.active_users }}</div>
-              <div class="kpi-label">{{ t('activeUsers') }}</div>
-              <div class="kpi-description">{{ t('activeUsersDesc') }}</div>
-            </div>
-          </div>
-
-          <div class="kpi-card">
-            <div class="kpi-icon">🔓</div>
-            <div class="kpi-content">
-              <div class="kpi-value">{{ stats.active_sessions }}</div>
-              <div class="kpi-label">{{ t('activeSessions') }}</div>
-              <div class="kpi-description">{{ t('activeSessionsDesc') }}</div>
-            </div>
-          </div>
-
-          <div class="kpi-card">
-            <div class="kpi-icon">📊</div>
-            <div class="kpi-content">
-              <div class="kpi-value">{{ stats.total_sessions }}</div>
-              <div class="kpi-label">{{ t('totalSessions') }}</div>
-              <div class="kpi-description">{{ t('totalSessionsDesc') }}</div>
-            </div>
-          </div>
-
-          <div class="kpi-card">
-            <div class="kpi-icon">⏱️</div>
-            <div class="kpi-content">
-              <div class="kpi-value">{{ formatDuration(stats.avg_duration) }}</div>
-              <div class="kpi-label">{{ t('avgDuration') }}</div>
-              <div class="kpi-description">{{ t('avgDurationDesc') }}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- Anonymous Visitors Stats -->
       <div class="stats-section">
         <h3 class="section-title">{{ t('anonymousVisitorsStats') }}</h3>

@@ -3,6 +3,22 @@
 ## Overview
 A comprehensive web application for mapping historical events on an interactive world map with timeline functionality. Users can view, filter, and add historical events with geographical and temporal data. The project aims to provide a rich, interactive experience for exploring history, with capabilities for managing events, tags, and datasets, all within a localized and performant environment. This application has significant market potential for educational platforms, historical research, and general public engagement with historical data.
 
+## Recent Changes (November 14, 2025)
+
+### Statistics Dashboard Simplification
+- **Removed Authenticated Users Section**: Simplified admin statistics page to show only Overall and Anonymous visitor metrics
+  - Focus on anonymous visitor tracking for public historical events site
+  - Overall section: Total active visitors (all users combined)
+  - Anonymous section: Active visitors, active sessions, total sessions, average duration
+  - Component modified: `AdminStats.vue`
+
+### Session Tracking 5-Minute Active Window Fix
+- **Consistent Active Session Logic**: Fixed inconsistency where "active sessions" never expired
+  - Both "Active Visitors" and "Active Sessions" now use 5-minute window consistently
+  - Sessions automatically become inactive 5 minutes after last heartbeat
+  - Prevents inflated "active" counts when browser tabs are closed
+  - Backend modified: `user_repository.go` - added 5-minute filter to active session queries
+
 ## User Preferences
 - Use snake_case naming convention everywhere for elements and functions
 - Develop professional, high-end code with proper patterns and templates
