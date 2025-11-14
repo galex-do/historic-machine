@@ -397,19 +397,19 @@ export default {
   .date-controls-container {
     flex-direction: column;
     gap: 0.75rem;
-    align-items: stretch;
+    align-items: flex-start;
   }
   
   .left-controls-group {
     width: 100%;
     flex-direction: column;
     gap: 0.75rem;
-    align-items: stretch;
+    align-items: flex-start;
   }
   
   .controls-title {
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
   }
   
   .template-section,
@@ -438,13 +438,13 @@ export default {
   
   .step-controls-section {
     gap: 0.75rem;
-    justify-content: center;
+    justify-content: flex-start;
   }
   
   .apply-section {
     width: 100%;
     margin-left: 0;
-    justify-content: center;
+    justify-content: flex-start;
   }
   
   .apply-button {
