@@ -54,10 +54,19 @@ A comprehensive web application for mapping historical events on an interactive 
   - Frontend features: CSS-based bars, hover tooltips, responsive scaling, mobile-optimized
   - Fully internationalized: all labels, tooltips, and duration units use i18n
   
+- **Added Monthly Visitor Graph**: Interactive 30-day bar chart showing daily visitor trends
+  - Displays last 30 days with daily bars (oldest→newest)
+  - Backend uses PostgreSQL generate_series for complete day coverage (30 days)
+  - UTC date handling prevents timezone-based label shifts (uses getUTCMonth/getUTCDate)
+  - Date labels in M/D format (e.g., "11/14"), tooltips show full date
+  - Independent bar height scaling from hourly graph for better visualization
+  - Fully responsive and mobile-optimized with compact labels
+  
 - **Full Internationalization**: All new features support English and Russian
-  - Added translation keys: overallTotalSessions, overallAvgDuration, overallTotalTime, hourlyVisitorsTitle
+  - Added translation keys: overallTotalSessions, overallAvgDuration, overallTotalTime, hourlyVisitorsTitle, dailyVisitorsTitle
   - Duration formatting now uses localized units (min/мин, h/ч)
   - Visitor count pluralization (visitor/visitors, посетитель/посетителей)
+  - Peak load label: "Peak load" (EN) / "Пиковая нагрузка" (RU)
   
 - **Peak Concurrent Sessions Tracking**: Background service monitors and records maximum concurrent usage
   - Samples every 60 seconds to track peak concurrent sessions (authenticated + anonymous combined)
@@ -68,10 +77,10 @@ A comprehensive web application for mapping historical events on an interactive 
 - **Files Modified**:
   - `backend/migrations/014_add_peak_stats.sql`: New peak_stats table for tracking maximum concurrency
   - `backend/internal/services/peak_stats_service.go`: Background goroutine with 60-second ticker
-  - `backend/internal/models/user.go`: Added HourlyVisitorStat struct, AnonymousTotalTime, PeakConcurrentSessions fields
-  - `backend/internal/database/repositories/user_repository.go`: Added total time, hourly stats, and peak tracking queries
+  - `backend/internal/models/user.go`: Added HourlyVisitorStat, DailyVisitorStat structs, AnonymousTotalTime, PeakConcurrentSessions fields
+  - `backend/internal/database/repositories/user_repository.go`: Added total time, hourly/daily visitor stats, and peak tracking queries
   - `backend/main.go`: Integrated peak stats service with context-based graceful shutdown
-  - `frontend/src/views/AdminStats.vue`: Reorganized layout, added bar graph and peak KPI card
+  - `frontend/src/views/AdminStats.vue`: Reorganized layout, added hourly and daily bar graphs, peak KPI card, compact duration formatting
   - `frontend/src/composables/useLocale.js`: Added all new translation keys for stats features
 
 ## User Preferences
