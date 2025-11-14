@@ -51,7 +51,6 @@ export function useAuth() {
       const response = await authService.login(username, password)
       user.value = response.user
       isAuthenticated.value = true
-      start_heartbeat()
       console.log('Login successful:', response.user.username)
       return response
     } catch (err) {
@@ -92,15 +91,13 @@ export function useAuth() {
       await authService.logout()
       user.value = null
       isAuthenticated.value = false
-      stop_heartbeat()
-      console.log('Logout successful')
+      console.log('Logout successful - heartbeat continues for anonymous tracking')
     } catch (err) {
       console.error('Logout error:', err)
       error.value = err.message || 'Logout failed'
       // Still clear local state even if API call fails
       user.value = null
       isAuthenticated.value = false
-      stop_heartbeat()
     } finally {
       loading.value = false
     }
@@ -140,16 +137,10 @@ export function useAuth() {
 
   // Initialize on mount
   onMounted(() => {
-    initAuth()
-  })
-
-  // Watch authentication state to manage heartbeat
-  watch(isAuthenticated, (newValue) => {
-    if (newValue) {
+    initAuth().then(() => {
+      // Start heartbeat for all users (authenticated and anonymous)
       start_heartbeat()
-    } else {
-      stop_heartbeat()
-    }
+    })
   })
 
   return {

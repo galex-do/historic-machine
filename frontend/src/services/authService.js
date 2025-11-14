@@ -187,7 +187,7 @@ class AuthService {
     return this.token
   }
 
-  // Send session heartbeat
+  // Send session heartbeat (authenticated users)
   async sendHeartbeat() {
     if (!this.token) {
       return
@@ -200,6 +200,21 @@ class AuthService {
       })
     } catch (error) {
       console.error('Heartbeat error:', error)
+    }
+  }
+
+  // Send anonymous session heartbeat (unauthenticated users)
+  async sendAnonymousHeartbeat(sessionId) {
+    try {
+      await fetch(`${API_BASE}/session/anonymous-heartbeat`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ session_id: sessionId })
+      })
+    } catch (error) {
+      console.error('Anonymous heartbeat error:', error)
     }
   }
 
