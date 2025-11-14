@@ -64,7 +64,7 @@
             </div>
           </div>
 
-          <div class="kpi-card highlight">
+          <div class="kpi-card">
             <div class="kpi-icon">🏆</div>
             <div class="kpi-content">
               <div class="kpi-value">{{ stats.peak_concurrent_sessions }}</div>
