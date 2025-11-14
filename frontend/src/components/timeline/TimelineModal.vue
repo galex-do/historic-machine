@@ -393,7 +393,7 @@ export default {
   color: #1e293b;
 }
 
-.event_name_link {
+.timeline_single_text .event_name_link {
   font-weight: 700;
   color: #3b82f6;
   text-decoration: none;
@@ -401,7 +401,7 @@ export default {
   transition: all 0.2s;
 }
 
-.event_name_link:hover {
+.timeline_single_text .event_name_link:hover {
   color: #2563eb;
   border-bottom-color: #2563eb;
 }
