@@ -40,12 +40,30 @@ type UserSession struct {
         IsActive   bool       `json:"is_active"`
 }
 
+// AnonymousSession represents an anonymous user session
+type AnonymousSession struct {
+        SessionID  string     `json:"session_id"`
+        CreatedAt  time.Time  `json:"created_at"`
+        LastSeenAt *time.Time `json:"last_seen_at,omitempty"`
+        EndedAt    *time.Time `json:"ended_at,omitempty"`
+}
+
 // SessionStats represents session statistics for the admin dashboard
 type SessionStats struct {
-        ActiveUsers    int     `json:"active_users"`    // Users active in last 5 minutes
-        TotalSessions  int     `json:"total_sessions"`  // Total sessions in database
-        ActiveSessions int     `json:"active_sessions"` // Currently active sessions
-        AvgDuration    float64 `json:"avg_duration"`    // Average session duration in minutes
+        // Authenticated user stats
+        ActiveUsers    int     `json:"active_users"`    // Authenticated users active in last 5 minutes
+        TotalSessions  int     `json:"total_sessions"`  // Total authenticated sessions in database
+        ActiveSessions int     `json:"active_sessions"` // Currently active authenticated sessions
+        AvgDuration    float64 `json:"avg_duration"`    // Average authenticated session duration in minutes
+        
+        // Anonymous user stats
+        AnonymousActiveUsers    int     `json:"anonymous_active_users"`    // Anonymous users active in last 5 minutes
+        AnonymousTotalSessions  int     `json:"anonymous_total_sessions"`  // Total anonymous sessions in database
+        AnonymousActiveSessions int     `json:"anonymous_active_sessions"` // Currently active anonymous sessions
+        AnonymousAvgDuration    float64 `json:"anonymous_avg_duration"`    // Average anonymous session duration in minutes
+        
+        // Combined stats
+        TotalActiveUsers int `json:"total_active_users"` // Total active users (authenticated + anonymous)
 }
 
 // CreateUserRequest represents the request payload for creating a user
