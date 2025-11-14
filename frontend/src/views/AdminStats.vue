@@ -23,40 +23,103 @@
       <button @click="refreshStats" class="retry-btn">{{ t('retryLoad') }}</button>
     </div>
 
-    <div v-if="stats" class="kpi-grid">
-      <div class="kpi-card">
-        <div class="kpi-icon">👥</div>
-        <div class="kpi-content">
-          <div class="kpi-value">{{ stats.active_users }}</div>
-          <div class="kpi-label">{{ t('activeUsers') }}</div>
-          <div class="kpi-description">{{ t('activeUsersDesc') }}</div>
+    <div v-if="stats" class="stats-container">
+      <!-- Overall Stats -->
+      <div class="stats-section">
+        <h3 class="section-title">{{ t('overallStats') }}</h3>
+        <div class="kpi-grid">
+          <div class="kpi-card highlight">
+            <div class="kpi-icon">🌐</div>
+            <div class="kpi-content">
+              <div class="kpi-value">{{ stats.total_active_users }}</div>
+              <div class="kpi-label">{{ t('totalActiveVisitors') }}</div>
+              <div class="kpi-description">{{ t('totalActiveVisitorsDesc') }}</div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="kpi-card">
-        <div class="kpi-icon">🔓</div>
-        <div class="kpi-content">
-          <div class="kpi-value">{{ stats.active_sessions }}</div>
-          <div class="kpi-label">{{ t('activeSessions') }}</div>
-          <div class="kpi-description">{{ t('activeSessionsDesc') }}</div>
+      <!-- Authenticated Users Stats -->
+      <div class="stats-section">
+        <h3 class="section-title">{{ t('authenticatedUsersStats') }}</h3>
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-icon">👥</div>
+            <div class="kpi-content">
+              <div class="kpi-value">{{ stats.active_users }}</div>
+              <div class="kpi-label">{{ t('activeUsers') }}</div>
+              <div class="kpi-description">{{ t('activeUsersDesc') }}</div>
+            </div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-icon">🔓</div>
+            <div class="kpi-content">
+              <div class="kpi-value">{{ stats.active_sessions }}</div>
+              <div class="kpi-label">{{ t('activeSessions') }}</div>
+              <div class="kpi-description">{{ t('activeSessionsDesc') }}</div>
+            </div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-icon">📊</div>
+            <div class="kpi-content">
+              <div class="kpi-value">{{ stats.total_sessions }}</div>
+              <div class="kpi-label">{{ t('totalSessions') }}</div>
+              <div class="kpi-description">{{ t('totalSessionsDesc') }}</div>
+            </div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-icon">⏱️</div>
+            <div class="kpi-content">
+              <div class="kpi-value">{{ formatDuration(stats.avg_duration) }}</div>
+              <div class="kpi-label">{{ t('avgDuration') }}</div>
+              <div class="kpi-description">{{ t('avgDurationDesc') }}</div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="kpi-card">
-        <div class="kpi-icon">📊</div>
-        <div class="kpi-content">
-          <div class="kpi-value">{{ stats.total_sessions }}</div>
-          <div class="kpi-label">{{ t('totalSessions') }}</div>
-          <div class="kpi-description">{{ t('totalSessionsDesc') }}</div>
-        </div>
-      </div>
+      <!-- Anonymous Visitors Stats -->
+      <div class="stats-section">
+        <h3 class="section-title">{{ t('anonymousVisitorsStats') }}</h3>
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-icon">👤</div>
+            <div class="kpi-content">
+              <div class="kpi-value">{{ stats.anonymous_active_users }}</div>
+              <div class="kpi-label">{{ t('anonymousActiveUsers') }}</div>
+              <div class="kpi-description">{{ t('anonymousActiveUsersDesc') }}</div>
+            </div>
+          </div>
 
-      <div class="kpi-card">
-        <div class="kpi-icon">⏱️</div>
-        <div class="kpi-content">
-          <div class="kpi-value">{{ formatDuration(stats.avg_duration) }}</div>
-          <div class="kpi-label">{{ t('avgDuration') }}</div>
-          <div class="kpi-description">{{ t('avgDurationDesc') }}</div>
+          <div class="kpi-card">
+            <div class="kpi-icon">🌐</div>
+            <div class="kpi-content">
+              <div class="kpi-value">{{ stats.anonymous_active_sessions }}</div>
+              <div class="kpi-label">{{ t('anonymousActiveSessions') }}</div>
+              <div class="kpi-description">{{ t('anonymousActiveSessionsDesc') }}</div>
+            </div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-icon">📈</div>
+            <div class="kpi-content">
+              <div class="kpi-value">{{ stats.anonymous_total_sessions }}</div>
+              <div class="kpi-label">{{ t('anonymousTotalSessions') }}</div>
+              <div class="kpi-description">{{ t('anonymousTotalSessionsDesc') }}</div>
+            </div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-icon">⌚</div>
+            <div class="kpi-content">
+              <div class="kpi-value">{{ formatDuration(stats.anonymous_avg_duration) }}</div>
+              <div class="kpi-label">{{ t('anonymousAvgDuration') }}</div>
+              <div class="kpi-description">{{ t('anonymousAvgDurationDesc') }}</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -228,11 +291,27 @@ export default {
   background: #c53030;
 }
 
+.stats-container {
+  margin-bottom: 2rem;
+}
+
+.stats-section {
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
 .kpi-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
-  margin-bottom: 2rem;
 }
 
 .kpi-card {
@@ -249,6 +328,21 @@ export default {
 .kpi-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.kpi-card.highlight {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.kpi-card.highlight .kpi-icon {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.kpi-card.highlight .kpi-value,
+.kpi-card.highlight .kpi-label,
+.kpi-card.highlight .kpi-description {
+  color: white;
 }
 
 .kpi-icon {
