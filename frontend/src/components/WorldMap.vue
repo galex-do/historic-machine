@@ -347,11 +347,12 @@ export default {
   methods: {
     initialize_map() {
       // Create map centered on world view
-      this.map = L.map(this.$refs.map).setView([20, 0], 2)
+      this.map = L.map(this.$refs.map, {
+        attributionControl: false
+      }).setView([20, 0], 2)
       
       // Add OpenStreetMap tile layer via Nginx cache proxy
       L.tileLayer('/tiles/{z}/{x}/{y}.png', {
-        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         maxZoom: 18,
         minZoom: 2
       }).addTo(this.map)
