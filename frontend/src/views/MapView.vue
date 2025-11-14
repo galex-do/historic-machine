@@ -442,7 +442,7 @@ export default {
   display: flex;
   flex: 1;
   height: calc(100vh - 160px); /* Account for header + enhanced filter bar */
-  overflow: hidden;
+  overflow: visible; /* Allow tag dropdown to appear above map */
 }
 
 /* Events Sidebar */
