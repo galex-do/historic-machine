@@ -54,6 +54,12 @@ type HourlyVisitorStat struct {
         Visitors int       `json:"visitors"`
 }
 
+// DailyVisitorStat represents visitor count for a specific day
+type DailyVisitorStat struct {
+        Day      time.Time `json:"day"`
+        Visitors int       `json:"visitors"`
+}
+
 // SessionStats represents session statistics for the admin dashboard
 type SessionStats struct {
         // Authenticated user stats
@@ -77,6 +83,9 @@ type SessionStats struct {
         
         // Hourly visitor stats (last 24 hours)
         HourlyVisitors []HourlyVisitorStat `json:"hourly_visitors"`
+        
+        // Daily visitor stats (last 30 days)
+        DailyVisitors []DailyVisitorStat `json:"daily_visitors"`
 }
 
 // CreateUserRequest represents the request payload for creating a user

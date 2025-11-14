@@ -559,6 +559,45 @@ func (r *UserRepository) GetSessionStats() (*models.SessionStats, error) {
                 return nil, fmt.Errorf("error iterating hourly visitors: %w", err)
         }
 
+        // Daily visitor stats for last 30 days (oldest to newest)
+        dailyVisitorsQuery := `
+                WITH days AS (
+                        SELECT generate_series(
+                                date_trunc('day', NOW() - INTERVAL '29 days'),
+                                date_trunc('day', NOW()),
+                                INTERVAL '1 day'
+                        ) AS day
+                )
+                SELECT 
+                        d.day,
+                        COUNT(DISTINCT a.session_id) as visitors
+                FROM days d
+                LEFT JOIN anonymous_sessions a ON 
+                        a.created_at <= d.day + INTERVAL '1 day' 
+                        AND COALESCE(a.last_seen_at, NOW()) >= d.day
+                GROUP BY d.day
+                ORDER BY d.day ASC`
+
+        dailyRows, err := r.db.Query(dailyVisitorsQuery)
+        if err != nil {
+                return nil, fmt.Errorf("failed to get daily visitors: %w", err)
+        }
+        defer dailyRows.Close()
+
+        stats.DailyVisitors = []models.DailyVisitorStat{}
+        for dailyRows.Next() {
+                var dayStat models.DailyVisitorStat
+                err := dailyRows.Scan(&dayStat.Day, &dayStat.Visitors)
+                if err != nil {
+                        return nil, fmt.Errorf("failed to scan daily visitor stat: %w", err)
+                }
+                stats.DailyVisitors = append(stats.DailyVisitors, dayStat)
+        }
+
+        if err = dailyRows.Err(); err != nil {
+                return nil, fmt.Errorf("error iterating daily visitors: %w", err)
+        }
+
         // Peak concurrent sessions
         peakConcurrentQuery := `SELECT peak_concurrent_sessions FROM peak_stats WHERE id = 1`
         err = r.db.QueryRow(peakConcurrentQuery).Scan(&stats.PeakConcurrentSessions)
