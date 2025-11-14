@@ -5,6 +5,15 @@ A comprehensive web application for mapping historical events on an interactive 
 
 ## Recent Changes (November 14, 2025)
 
+### Timeline Modal Clickable Event Links
+- **Event Names as Links**: Event names in the timeline modal are now clickable bold links when events have attached source URLs
+  - Conditional rendering: `<a>` tag with external link if source URL exists, `<span>` otherwise
+  - Security: `rel="noopener noreferrer"` prevents tab-nabbing for external links
+  - Visual styling: Bold blue text (700 weight), underline appears on hover
+  - Opens in new tab with `target="_blank"`
+  - Applied to both single-event and multi-event display modes
+  - Component modified: `TimelineModal.vue`
+
 ### Statistics Dashboard Simplification
 - **Removed Authenticated Users Section**: Simplified admin statistics page to show only Overall and Anonymous visitor metrics
   - Focus on anonymous visitor tracking for public historical events site
