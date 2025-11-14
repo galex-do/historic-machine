@@ -5,16 +5,19 @@ A comprehensive web application for mapping historical events on an interactive 
 
 ## Recent Changes (November 14, 2025)
 
-### Map Event Info Modal Redesign
-- **Redesigned to Match Timeline Modal**: Map's event view modal now uses the same clean, readable style as timeline modal
-  - **Compact inline text**: Events displayed as flowing text with inline dates, descriptions, and tags
-  - **Smart headers**: Shows "N Events at this Location" for multiple events or single event name with emoji
-  - **Clickable tags**: All tags are clickable with #hashtag format and apply to filters immediately
-  - **Edit functionality**: Edit button (✏️) shown for editor+ users - in header for single events, inline for multiple events
-  - **Event name links**: Bold blue clickable links when source URLs exist, matching timeline modal style
-  - **Clean typography**: Minimalistic design with proper spacing, hover effects, and scrollbar styling
-  - **No focus icon**: Removed since user is already viewing event on map
+### Map Event Info Modal Timeline Structure (November 14, 2025)
+- **Exact Timeline Structure**: Map's event view modal now uses the exact same timeline design as TimelineModal
+  - **Vertical line and bullets**: Visual timeline with blue bullet points at each date group
+  - **Date grouping**: Events automatically grouped by date with chronological sorting (BC/AD aware)
+  - **Single event on date**: Bullet + date + icon + name + description + tags on one flowing line
+  - **Multiple events on date**: Bullet + date header, then event list below with each event on separate line
+  - **Clickable tags**: Tags rendered with CSS pseudo-element hashtag (no doubled ##), clickable to apply filters
+  - **Edit functionality**: Edit button (✏️) shown inline for editor+ users
+  - **Event name links**: Bold blue clickable links when source URLs exist, matching timeline modal
+  - **Smart modal header**: Shows "N Events at this Location" or single event name with emoji
+  - **CSS parity**: Uses identical timeline CSS structure from TimelineModal (vertical line, bullets, spacing)
   - Component modified: `WorldMap.vue`
+  - Added `grouped_events_by_date` computed property for date grouping logic
 
 ### Timeline Modal Clickable Event Links
 - **Event Names as Links**: Event names in the timeline modal are now clickable bold links when events have attached source URLs
