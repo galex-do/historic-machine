@@ -207,7 +207,7 @@ export default {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   max-height: 300px;
   overflow-y: auto;
-  z-index: 10;
+  z-index: 10000;
 }
 
 .tag_suggestion_item {
@@ -249,7 +249,7 @@ export default {
   top: 100%;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 10000;
 }
 
 .selected_tags_section {
