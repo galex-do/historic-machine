@@ -754,6 +754,11 @@ export default {
     font-size: 1.25rem;
   }
   
+  /* Hide welcome message on mobile to save space */
+  .user-welcome {
+    display: none;
+  }
+  
   .user-info {
     flex-direction: column;
     align-items: center;
