@@ -9,6 +9,11 @@ export default defineConfig({
     port: 5000,
     allowedHosts: true,
     proxy: {
+      '/api': {
+        target: 'http://localhost:8080',
+        changeOrigin: true,
+        secure: false
+      },
       '/tiles': {
         target: 'https://tile.openstreetmap.org',
         changeOrigin: true,

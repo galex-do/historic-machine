@@ -742,12 +742,8 @@ export default {
     },
     
     get_backend_url() {
-      // Check if running in Docker environment (nginx proxy available)
-      if (window.location.host.includes('localhost:3000')) {
-        return '/api'
-      }
-      // Default for Replit development environment
-      return 'http://localhost:8080/api'
+      // Use relative URL - Vite proxy or nginx will route to backend
+      return '/api'
     },
     
     format_date(date_string) {

@@ -2,7 +2,7 @@
  * Authentication service for handling login, logout, and user management
  */
 
-const API_BASE = 'http://localhost:8080/api'
+const API_BASE = '/api'
 
 class AuthService {
   constructor() {
