@@ -439,7 +439,7 @@ export default {
 .locale-selector {
   position: relative;
   display: inline-block;
-  z-index: 99999;
+  z-index: 100000;
   margin-left: auto; /* Push to far right */
 }
 
@@ -487,7 +487,7 @@ export default {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   margin-top: 0.5rem;
   overflow: hidden;
-  z-index: 99999;
+  z-index: 100000;
   min-width: 140px;
 }
 
@@ -527,7 +527,7 @@ export default {
 .admin-dropdown {
   position: relative;
   display: inline-block;
-  z-index: 99999;
+  z-index: 100000;
 }
 
 .dropdown-trigger {
@@ -560,7 +560,7 @@ export default {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   margin-top: 0.5rem;
   overflow: hidden;
-  z-index: 99999;
+  z-index: 100000;
   min-width: 160px;
 }
 
