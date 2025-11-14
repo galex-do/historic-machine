@@ -5,6 +5,17 @@ A comprehensive web application for mapping historical events on an interactive 
 
 ## Recent Changes (November 14, 2025)
 
+### Map Event Info Modal Redesign
+- **Redesigned to Match Timeline Modal**: Map's event view modal now uses the same clean, readable style as timeline modal
+  - **Compact inline text**: Events displayed as flowing text with inline dates, descriptions, and tags
+  - **Smart headers**: Shows "N Events at this Location" for multiple events or single event name with emoji
+  - **Clickable tags**: All tags are clickable with #hashtag format and apply to filters immediately
+  - **Edit functionality**: Edit button (✏️) shown for editor+ users - in header for single events, inline for multiple events
+  - **Event name links**: Bold blue clickable links when source URLs exist, matching timeline modal style
+  - **Clean typography**: Minimalistic design with proper spacing, hover effects, and scrollbar styling
+  - **No focus icon**: Removed since user is already viewing event on map
+  - Component modified: `WorldMap.vue`
+
 ### Timeline Modal Clickable Event Links
 - **Event Names as Links**: Event names in the timeline modal are now clickable bold links when events have attached source URLs
   - Conditional rendering: `<a>` tag with external link if source URL exists, `<span>` otherwise
