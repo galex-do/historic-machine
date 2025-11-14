@@ -30,7 +30,7 @@ export default {
 
     // Initialize data on mount
     onMounted(async () => {
-      // Initialize authentication first
+      // Initialize authentication first (heartbeat auto-starts in useAuth)
       await initAuth()
       
       await Promise.all([

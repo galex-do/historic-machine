@@ -59,6 +59,15 @@
               <span class="dropdown-icon">👥</span>
               {{ t('users') }}
             </router-link>
+            <router-link 
+              v-if="isSuper"
+              to="/admin/stats" 
+              class="dropdown-item"
+              @click="showAdminDropdown = false"
+            >
+              <span class="dropdown-icon">📊</span>
+              {{ t('stats') }}
+            </router-link>
           </div>
         </div>
       </nav>

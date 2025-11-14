@@ -47,6 +47,12 @@ func (router *Router) SetupRoutes() http.Handler {
         api.HandleFunc("/auth/me", router.authHandler.AuthMiddleware(router.authHandler.Me)).Methods("GET", "OPTIONS")
         api.HandleFunc("/auth/change-password", router.authHandler.AuthMiddleware(router.authHandler.ChangePassword)).Methods("POST", "OPTIONS")
         
+        // Session tracking (authenticated users)
+        api.HandleFunc("/session/heartbeat", router.authHandler.AuthMiddleware(router.authHandler.SessionHeartbeat)).Methods("POST", "OPTIONS")
+        
+        // Admin routes
+        api.HandleFunc("/admin/stats", router.authHandler.RequireAccessLevel(models.AccessLevelSuper)(router.authHandler.GetSessionStats)).Methods("GET", "OPTIONS")
+        
         // Event routes (public read, auth required for create/update/delete)
         api.HandleFunc("/events", router.authHandler.OptionalAuthMiddleware(router.eventHandler.GetAllEvents)).Methods("GET", "OPTIONS")
         api.HandleFunc("/events", router.authHandler.AuthMiddleware(router.eventHandler.CreateEvent)).Methods("POST", "OPTIONS")

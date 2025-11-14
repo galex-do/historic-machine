@@ -1,11 +1,14 @@
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import authService from '@/services/authService.js'
+import { useSessionHeartbeat } from './useSessionHeartbeat.js'
 
 const user = ref(null)
 const isAuthenticated = ref(false)
 const loading = ref(false)
 const error = ref(null)
 const authInitialized = ref(false)
+
+const { start_heartbeat, stop_heartbeat } = useSessionHeartbeat()
 
 export function useAuth() {
   
@@ -48,6 +51,7 @@ export function useAuth() {
       const response = await authService.login(username, password)
       user.value = response.user
       isAuthenticated.value = true
+      start_heartbeat()
       console.log('Login successful:', response.user.username)
       return response
     } catch (err) {
@@ -88,6 +92,7 @@ export function useAuth() {
       await authService.logout()
       user.value = null
       isAuthenticated.value = false
+      stop_heartbeat()
       console.log('Logout successful')
     } catch (err) {
       console.error('Logout error:', err)
@@ -95,6 +100,7 @@ export function useAuth() {
       // Still clear local state even if API call fails
       user.value = null
       isAuthenticated.value = false
+      stop_heartbeat()
     } finally {
       loading.value = false
     }
@@ -135,6 +141,15 @@ export function useAuth() {
   // Initialize on mount
   onMounted(() => {
     initAuth()
+  })
+
+  // Watch authentication state to manage heartbeat
+  watch(isAuthenticated, (newValue) => {
+    if (newValue) {
+      start_heartbeat()
+    } else {
+      stop_heartbeat()
+    }
   })
 
   return {

@@ -62,6 +62,24 @@ const UI_TRANSLATIONS = {
     adminUsersSubtitle: 'Manage user accounts and access levels',
     createNewUser: 'Create New User',
     
+    // Admin Stats Page
+    statsTitle: 'Session Statistics',
+    statsSubtitle: 'Real-time analytics and user activity metrics',
+    refresh: 'Refresh',
+    loadingStats: 'Loading statistics...',
+    statsLoadError: 'Failed to load session statistics',
+    retryLoad: 'Retry',
+    activeUsers: 'Active Users',
+    activeUsersDesc: 'Last 5 minutes',
+    activeSessions: 'Active Sessions',
+    activeSessionsDesc: 'Currently active',
+    totalSessions: 'Total Sessions',
+    totalSessionsDesc: 'All time',
+    avgDuration: 'Avg Duration',
+    avgDurationDesc: 'Per session',
+    lastUpdated: 'Last updated',
+    stats: 'Stats',
+    
     // Table Column Names
     columnName: 'Name',
     columnDescription: 'Description',
@@ -238,6 +256,24 @@ const UI_TRANSLATIONS = {
     adminUsersTitle: 'Управление пользователями',
     adminUsersSubtitle: 'Управление учетными записями и уровнями доступа',
     createNewUser: 'Создать нового пользователя',
+    
+    // Admin Stats Page
+    statsTitle: 'Статистика сессий',
+    statsSubtitle: 'Аналитика и метрики активности пользователей в реальном времени',
+    refresh: 'Обновить',
+    loadingStats: 'Загрузка статистики...',
+    statsLoadError: 'Не удалось загрузить статистику сессий',
+    retryLoad: 'Повторить',
+    activeUsers: 'Активные пользователи',
+    activeUsersDesc: 'Последние 5 минут',
+    activeSessions: 'Активные сессии',
+    activeSessionsDesc: 'Сейчас активны',
+    totalSessions: 'Всего сессий',
+    totalSessionsDesc: 'За все время',
+    avgDuration: 'Средняя длительность',
+    avgDurationDesc: 'На сессию',
+    lastUpdated: 'Последнее обновление',
+    stats: 'Статистика',
     
     // Table Column Names
     columnName: 'Название',

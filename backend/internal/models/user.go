@@ -30,12 +30,22 @@ type User struct {
 
 // UserSession represents a user session with JWT token
 type UserSession struct {
-        ID        int       `json:"id"`
-        UserID    int       `json:"user_id"`
-        TokenHash string    `json:"-"` // Exclude token hash from JSON
-        ExpiresAt time.Time `json:"expires_at"`
-        CreatedAt time.Time `json:"created_at"`
-        IsActive  bool      `json:"is_active"`
+        ID         int        `json:"id"`
+        UserID     int        `json:"user_id"`
+        TokenHash  string     `json:"-"` // Exclude token hash from JSON
+        ExpiresAt  time.Time  `json:"expires_at"`
+        CreatedAt  time.Time  `json:"created_at"`
+        LastSeenAt *time.Time `json:"last_seen_at,omitempty"`
+        EndedAt    *time.Time `json:"ended_at,omitempty"`
+        IsActive   bool       `json:"is_active"`
+}
+
+// SessionStats represents session statistics for the admin dashboard
+type SessionStats struct {
+        ActiveUsers    int     `json:"active_users"`    // Users active in last 5 minutes
+        TotalSessions  int     `json:"total_sessions"`  // Total sessions in database
+        ActiveSessions int     `json:"active_sessions"` // Currently active sessions
+        AvgDuration    float64 `json:"avg_duration"`    // Average session duration in minutes
 }
 
 // CreateUserRequest represents the request payload for creating a user

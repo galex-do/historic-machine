@@ -312,3 +312,14 @@ func (s *AuthService) hashToken(token string) string {
 func (s *AuthService) CleanExpiredSessions() error {
         return s.userRepo.CleanExpiredSessions()
 }
+
+// UpdateSessionHeartbeat updates the last_seen_at timestamp for an active session
+func (s *AuthService) UpdateSessionHeartbeat(tokenString string) error {
+        tokenHash := s.hashToken(tokenString)
+        return s.userRepo.UpdateSessionHeartbeat(tokenHash)
+}
+
+// GetSessionStats retrieves session statistics for the admin dashboard
+func (s *AuthService) GetSessionStats() (*models.SessionStats, error) {
+        return s.userRepo.GetSessionStats()
+}

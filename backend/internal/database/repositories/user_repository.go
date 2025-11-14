@@ -249,9 +249,12 @@ func (r *UserRepository) UpdateLastLogin(userID int) error {
 // CreateSession creates a new user session
 func (r *UserRepository) CreateSession(session *models.UserSession) error {
         query := `
-                INSERT INTO user_sessions (user_id, token_hash, expires_at, created_at, is_active)
-                VALUES ($1, $2, $3, $4, $5)
+                INSERT INTO user_sessions (user_id, token_hash, expires_at, created_at, last_seen_at, is_active)
+                VALUES ($1, $2, $3, $4, $5, $6)
                 RETURNING id`
+
+        now := time.Now()
+        session.LastSeenAt = &now
 
         err := r.db.QueryRow(
                 query,
@@ -259,6 +262,7 @@ func (r *UserRepository) CreateSession(session *models.UserSession) error {
                 session.TokenHash,
                 session.ExpiresAt,
                 session.CreatedAt,
+                session.LastSeenAt,
                 session.IsActive,
         ).Scan(&session.ID)
 
@@ -272,11 +276,12 @@ func (r *UserRepository) CreateSession(session *models.UserSession) error {
 // GetActiveSession retrieves an active session by token hash
 func (r *UserRepository) GetActiveSession(tokenHash string) (*models.UserSession, error) {
         query := `
-                SELECT id, user_id, token_hash, expires_at, created_at, is_active
+                SELECT id, user_id, token_hash, expires_at, created_at, last_seen_at, ended_at, is_active
                 FROM user_sessions 
                 WHERE token_hash = $1 AND is_active = true AND expires_at > NOW()`
 
         session := &models.UserSession{}
+        var lastSeenAt, endedAt sql.NullTime
 
         err := r.db.QueryRow(query, tokenHash).Scan(
                 &session.ID,
@@ -284,6 +289,8 @@ func (r *UserRepository) GetActiveSession(tokenHash string) (*models.UserSession
                 &session.TokenHash,
                 &session.ExpiresAt,
                 &session.CreatedAt,
+                &lastSeenAt,
+                &endedAt,
                 &session.IsActive,
         )
 
@@ -294,6 +301,13 @@ func (r *UserRepository) GetActiveSession(tokenHash string) (*models.UserSession
                 return nil, fmt.Errorf("failed to get session: %w", err)
         }
 
+        if lastSeenAt.Valid {
+                session.LastSeenAt = &lastSeenAt.Time
+        }
+        if endedAt.Valid {
+                session.EndedAt = &endedAt.Time
+        }
+
         return session, nil
 }
 
@@ -301,10 +315,10 @@ func (r *UserRepository) GetActiveSession(tokenHash string) (*models.UserSession
 func (r *UserRepository) DeactivateSession(tokenHash string) error {
         query := `
                 UPDATE user_sessions 
-                SET is_active = false
+                SET is_active = false, ended_at = $2
                 WHERE token_hash = $1`
 
-        _, err := r.db.Exec(query, tokenHash)
+        _, err := r.db.Exec(query, tokenHash, time.Now())
         if err != nil {
                 return fmt.Errorf("failed to deactivate session: %w", err)
         }
@@ -382,4 +396,77 @@ func (r *UserRepository) ListUsers() ([]*models.User, error) {
         }
 
         return users, nil
+}
+
+// UpdateSessionHeartbeat updates the last_seen_at timestamp for an active session
+func (r *UserRepository) UpdateSessionHeartbeat(tokenHash string) error {
+        query := `
+                UPDATE user_sessions 
+                SET last_seen_at = $2
+                WHERE token_hash = $1 AND is_active = true AND expires_at > NOW()`
+
+        result, err := r.db.Exec(query, tokenHash, time.Now())
+        if err != nil {
+                return fmt.Errorf("failed to update session heartbeat: %w", err)
+        }
+
+        rows, err := result.RowsAffected()
+        if err != nil {
+                return fmt.Errorf("failed to check affected rows: %w", err)
+        }
+
+        if rows == 0 {
+                return fmt.Errorf("session not found or expired")
+        }
+
+        return nil
+}
+
+// GetSessionStats retrieves session statistics for the admin dashboard
+func (r *UserRepository) GetSessionStats() (*models.SessionStats, error) {
+        stats := &models.SessionStats{}
+
+        // Active users (last seen in last 5 minutes)
+        activeUsersQuery := `
+                SELECT COUNT(DISTINCT user_id) 
+                FROM user_sessions 
+                WHERE is_active = true 
+                  AND last_seen_at > NOW() - INTERVAL '5 minutes'
+                  AND expires_at > NOW()`
+
+        err := r.db.QueryRow(activeUsersQuery).Scan(&stats.ActiveUsers)
+        if err != nil {
+                return nil, fmt.Errorf("failed to get active users count: %w", err)
+        }
+
+        // Total sessions
+        totalSessionsQuery := `SELECT COUNT(*) FROM user_sessions`
+        err = r.db.QueryRow(totalSessionsQuery).Scan(&stats.TotalSessions)
+        if err != nil {
+                return nil, fmt.Errorf("failed to get total sessions count: %w", err)
+        }
+
+        // Active sessions
+        activeSessionsQuery := `
+                SELECT COUNT(*) 
+                FROM user_sessions 
+                WHERE is_active = true AND expires_at > NOW()`
+
+        err = r.db.QueryRow(activeSessionsQuery).Scan(&stats.ActiveSessions)
+        if err != nil {
+                return nil, fmt.Errorf("failed to get active sessions count: %w", err)
+        }
+
+        // Average duration (in minutes) for ended sessions
+        avgDurationQuery := `
+                SELECT COALESCE(AVG(EXTRACT(EPOCH FROM (ended_at - created_at)) / 60), 0) 
+                FROM user_sessions 
+                WHERE ended_at IS NOT NULL`
+
+        err = r.db.QueryRow(avgDurationQuery).Scan(&stats.AvgDuration)
+        if err != nil {
+                return nil, fmt.Errorf("failed to get average duration: %w", err)
+        }
+
+        return stats, nil
 }

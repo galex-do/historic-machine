@@ -186,6 +186,41 @@ class AuthService {
   getToken() {
     return this.token
   }
+
+  // Send session heartbeat
+  async sendHeartbeat() {
+    if (!this.token) {
+      return
+    }
+
+    try {
+      await fetch(`${API_BASE}/session/heartbeat`, {
+        method: 'POST',
+        headers: this.getHeaders()
+      })
+    } catch (error) {
+      console.error('Heartbeat error:', error)
+    }
+  }
+
+  // Get session statistics (super users only)
+  async getSessionStats() {
+    try {
+      const response = await fetch(`${API_BASE}/admin/stats`, {
+        method: 'GET',
+        headers: this.getHeaders()
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch session stats')
+      }
+
+      return await response.json()
+    } catch (error) {
+      console.error('Get session stats error:', error)
+      throw error
+    }
+  }
 }
 
 // Export singleton instance
