@@ -5,6 +5,23 @@ A comprehensive web application for mapping historical events on an interactive 
 
 ## Recent Changes (November 14, 2025)
 
+### Session Tracking & Statistics Dashboard
+- **Anonymous Session Tracking**: Lightweight implementation tracking user activity for analytics
+  - **Database schema**: Added `last_seen_at` and `ended_at` columns to existing `user_sessions` table
+  - **Automated heartbeat**: 60-second interval updates while user is logged in
+  - **Session lifecycle**: Heartbeat starts on login, stops on logout; ended_at timestamp set on session deactivation
+  - **Backend APIs**: POST /api/session/heartbeat (authenticated), GET /api/admin/stats (super admins only)
+  - **Statistics Dashboard**: Admin stats page displaying real-time KPIs:
+    - Active Users (last 5 minutes)
+    - Active Sessions (currently valid sessions)
+    - Total Sessions (all-time count)
+    - Average Session Duration (computed from ended sessions)
+  - **Access control**: Stats page restricted to super administrators only
+  - **Full localization**: English & Russian translations for stats page and labels
+  - **Manual refresh**: Stats page shows last-updated timestamp with refresh button
+  - **Components**: `useSessionHeartbeat.js`, `AdminStats.vue`, integrated into `useAuth.js`
+  - **Result**: Provides administrators visibility into user engagement and session metrics without heavy infrastructure
+
 ### Mobile-First Layout Optimization
 - **Content-Prioritized Mobile Experience**: Complete redesign of mobile layout for optimal usability on small screens (< 768px)
   - **Events grid above map**: Events section appears first, map below (content-first approach using flexbox order)
