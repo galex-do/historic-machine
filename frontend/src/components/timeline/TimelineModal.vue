@@ -23,7 +23,12 @@
                 {{ ' ' }}
                 <span class="event_icon">{{ getEventEmoji(group.events[0].lens_type) }}</span>
                 {{ ' ' }}
-                <span class="event_name">{{ group.events[0].name }}</span>
+                <a v-if="group.events[0].source" 
+                   :href="group.events[0].source" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="event_name event_name_link">{{ group.events[0].name }}</a>
+                <span v-else class="event_name">{{ group.events[0].name }}</span>
                 <template v-if="group.events[0].description">
                   {{ ' — ' }}{{ group.events[0].description }}
                 </template>
@@ -66,7 +71,12 @@
                   <span class="timeline_single_text">
                     <span class="event_icon">{{ getEventEmoji(event.lens_type) }}</span>
                     {{ ' ' }}
-                    <span class="event_name">{{ event.name }}</span>
+                    <a v-if="event.source" 
+                       :href="event.source" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="event_name event_name_link">{{ event.name }}</a>
+                    <span v-else class="event_name">{{ event.name }}</span>
                     <template v-if="event.description">
                       {{ ' — ' }}{{ event.description }}
                     </template>
@@ -381,6 +391,19 @@ export default {
 .timeline_single_text .event_name {
   font-weight: 600;
   color: #1e293b;
+}
+
+.event_name_link {
+  font-weight: 700;
+  color: #3b82f6;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.event_name_link:hover {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
 }
 
 .timeline_events_list {
