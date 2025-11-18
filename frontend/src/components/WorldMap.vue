@@ -2,6 +2,13 @@
   <div class="map-container">
     <div ref="map" class="leaflet-map"></div>
     
+    <!-- Off-screen Notification -->
+    <transition name="fade">
+      <div v-if="show_offscreen_notification" class="offscreen-notification">
+        📍 "{{ offscreen_event_name }}" is outside current view
+      </div>
+    </transition>
+    
     <!-- Event Creation Modal (only show if user can create events) -->
     <div v-if="show_event_modal && canCreateEvents" class="modal-overlay" @click="close_modal">
       <div class="modal-content" @click.stop>
@@ -277,11 +284,15 @@ export default {
     return {
       map: null,
       markers: [],
+      marker_registry: new Map(), // Map event IDs to markers for highlighting
       polyline_layers: [], // Store narrative flow polylines
       resize_observer: null,
       show_event_modal: false,
       show_event_info_modal: false, // New modal for event info
       selected_events: [], // Events to show in info modal
+      highlight_timeout: null, // Store timeout for auto-clearing highlight
+      show_offscreen_notification: false, // Show notification when marker is off-screen
+      offscreen_event_name: '', // Store event name for notification
       expanded_event_tags: {}, // Track which events have expanded tags
       editing_event: null, // Store the event being edited
       is_stepping: false, // Track if current update is from date stepping
@@ -534,6 +545,58 @@ export default {
       })
     },
 
+    // Highlight a marker without refocusing the map
+    highlightMarker(event) {
+      // Clear any existing highlight timeout
+      if (this.highlight_timeout) {
+        clearTimeout(this.highlight_timeout)
+        this.highlight_timeout = null
+      }
+
+      // Find the marker for this event
+      const marker = this.marker_registry.get(event.id)
+      if (!marker) {
+        console.warn('No marker found for event:', event.id)
+        return
+      }
+
+      // Get marker position and check if it's in current map bounds
+      const markerLatLng = marker.getLatLng()
+      const bounds = this.map.getBounds()
+      const isInBounds = bounds.contains(markerLatLng)
+
+      // Remove highlight class from all markers first
+      this.markers.forEach(m => {
+        const el = m.getElement()
+        if (el) {
+          el.classList.remove('marker-highlight')
+        }
+      })
+
+      // Add highlight class to the target marker
+      const markerElement = marker.getElement()
+      if (markerElement) {
+        markerElement.classList.add('marker-highlight')
+        
+        // Auto-remove highlight after 3.5 seconds
+        this.highlight_timeout = setTimeout(() => {
+          markerElement.classList.remove('marker-highlight')
+          this.highlight_timeout = null
+        }, 3500)
+      }
+
+      // Show notification if marker is off-screen
+      if (!isInBounds) {
+        this.offscreen_event_name = event.name
+        this.show_offscreen_notification = true
+        
+        // Auto-hide notification after 4 seconds
+        setTimeout(() => {
+          this.show_offscreen_notification = false
+        }, 4000)
+      }
+    },
+
     // Handle map bounds changes
     handle_bounds_change() {
       if (!this.map) return
@@ -590,6 +653,7 @@ export default {
         }
       })
       this.markers = []
+      this.marker_registry.clear() // Clear marker registry
       
       // Wait for next tick to ensure map is ready
       this.$nextTick(() => {
@@ -629,6 +693,11 @@ export default {
             // Use click event instead of popup to avoid coordinate corruption
             marker.on('click', () => {
               this.show_events_info(eventGroup.events)
+            })
+            
+            // Register this marker for all events at this location
+            eventGroup.events.forEach(event => {
+              this.marker_registry.set(event.id, marker)
             })
             
             this.markers.push(marker)
@@ -1728,5 +1797,55 @@ export default {
 .event_info_modal_content::-webkit-scrollbar-thumb {
   background: #cbd5e1;
   border-radius: 3px;
+}
+
+/* Marker Highlight Animation */
+:deep(.marker-highlight) {
+  animation: marker-pulse 3.5s ease-in-out;
+  filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.8));
+  z-index: 1000 !important;
+}
+
+@keyframes marker-pulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.8));
+  }
+  15%, 45%, 75% {
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 16px rgba(245, 158, 11, 1));
+  }
+  30%, 60%, 90% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.6));
+  }
+}
+
+/* Off-screen Notification */
+.offscreen-notification {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(245, 158, 11, 0.95);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  pointer-events: none;
+  max-width: 80%;
+  text-align: center;
+}
+
+/* Fade Transition */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
 }
 </style>
