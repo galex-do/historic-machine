@@ -1,5 +1,5 @@
 {
-  "description": "Dataset with 180 events - expanded coverage of ancient Asian civilizations including Japan, Korea, China, and South Asia",
+  "description": "Dataset imported with 180 events",
   "events": [
     {
       "date": "01.01.9500",
@@ -20,6 +20,24 @@
       "type": "cultural"
     },
     {
+      "date": "01.01.8000",
+      "description": "Jeulmun pottery culture emerges in Korea, marking the Korean Neolithic period with distinctive comb-pattern ceramics",
+      "description_ru": "Культура керамики Чыльмун возникает в Корее, знаменуя корейский неолитический период с характерной гребенчатой керамикой",
+      "era": "BC",
+      "latitude": 37.5665,
+      "longitude": 126.978,
+      "name": "Jeulmun Pottery Culture Begins",
+      "name_ru": "Начало культуры керамики Чыльмун",
+      "source": "https://en.wikipedia.org/wiki/Jeulmun_pottery_period",
+      "tags": [
+        "Korea",
+        "Pottery",
+        "Neolithic",
+        "Culture"
+      ],
+      "type": "cultural"
+    },
+    {
       "date": "01.01.7500",
       "description": "Nabta Playa megalithic stone circle constructed in Southern Egypt as an astronomical device, predating Stonehenge by 2000 years",
       "description_ru": "Мегалитический каменный круг Набта-Плайя построен в Южном Египте как астрономическое устройство, на дне высохшего озера в Нубийской пустыне",
@@ -35,6 +53,24 @@
         "Building"
       ],
       "type": "scientific"
+    },
+    {
+      "date": "01.01.5000",
+      "description": "Middle Jōmon period begins in Japan with peak population and elaborate cord-marked pottery traditions during the climatic optimum",
+      "description_ru": "Средний период Дзёмон начинается в Японии с пиком населения и тщательно изготовленной керамикой со следами веревки во время климатического оптимума",
+      "era": "BC",
+      "latitude": 35.6762,
+      "longitude": 139.6503,
+      "name": "Middle Jōmon Culture Peak",
+      "name_ru": "Пик средней культуры Дзёмон",
+      "source": "https://en.wikipedia.org/wiki/J%C5%8Dmon_period",
+      "tags": [
+        "Japan",
+        "Jōmon",
+        "Pottery",
+        "Culture"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.4600",
@@ -107,6 +143,23 @@
     },
     {
       "date": "01.01.3500",
+      "description": "Earliest evidence of urban civilization in Mesopotamia with the establishment of Uruk as the world's first major citys",
+      "description_ru": "Первые свидетельства городской цивилизации в Месопотамии с основанием Урука как первого крупного города в мире",
+      "era": "BC",
+      "latitude": 31.324,
+      "longitude": 45.636,
+      "name": "First Urban Settlement at Uruk",
+      "name_ru": "Первое городское поселение в Уруке",
+      "source": "https://www.metmuseum.org/toah/hd/uruk/hd_uruk.htm",
+      "tags": [
+        "Sumerian",
+        "Urban",
+        "City"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.3500",
       "description": "Gavrinis passage tomb built in Brittany, France, featuring elaborately engraved megalithic art on passage stones",
       "description_ru": "Коридорная гробница Гавринис построена в Бретани, Франция. Вход в курган обрамляет искусная резьба по камню",
       "era": "BC",
@@ -144,18 +197,17 @@
     },
     {
       "date": "01.01.3500",
-      "description": "Earliest evidence of urban civilization in Mesopotamia with the establishment of Uruk as the world's first major citys",
-      "description_ru": "Первые свидетельства городской цивилизации в Месопотамии с основанием Урука как первого крупного города в мире",
+      "description": "Korean Jeulmun culture develops small-scale agriculture with millet and rice cultivation while maintaining hunter-gatherer practices",
+      "description_ru": "Корейская культура Чыльмун развивает мелкомасштабное земледелие с выращиванием проса и риса, сохраняя практики охотников-собирателей",
       "era": "BC",
-      "latitude": 31.324,
-      "longitude": 45.636,
-      "name": "First Urban Settlement at Uruk",
-      "name_ru": "Первое городское поселение в Уруке",
-      "source": "https://www.metmuseum.org/toah/hd/uruk/hd_uruk.htm",
+      "latitude": 37.5665,
+      "longitude": 126.978,
+      "name": "Early Agriculture in Korea",
+      "name_ru": "Раннее земледелие в Корее",
       "tags": [
-        "Sumerian",
-        "Urban",
-        "City"
+        "Korea",
+        "Agriculture",
+        "Neolithic"
       ],
       "type": "historic"
     },
@@ -266,6 +318,22 @@
     },
     {
       "date": "01.01.3100",
+      "description": "Ancient Egyptians develop hieroglyphic writing system for religious and administrative purposes",
+      "description_ru": "Древние египтяне разрабатывают иероглифическую систему письма для религиозных и административных целей",
+      "era": "BC",
+      "latitude": 30.044,
+      "longitude": 31.236,
+      "name": "Development of Hieroglyphic Writing",
+      "name_ru": "Развитие иероглифического письма",
+      "source": "https://www.metmuseum.org/toah/hd/egyp/hd_egyp.htm",
+      "tags": [
+        "Egypt",
+        "Writing"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.3100",
       "description": "Stonehenge construction begins in England with circular earthwork and wooden posts, starting a 1,500-year building project spanning multiple cultures",
       "description_ru": "Строительство Стоунхенджа длительностью 1500 лет начинается в Англии с кругового земляного вала и деревянных столбов",
       "era": "BC",
@@ -278,22 +346,6 @@
         "Megalithic",
         "Stonehenge",
         "Earthwork"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.3100",
-      "description": "Ancient Egyptians develop hieroglyphic writing system for religious and administrative purposes",
-      "description_ru": "Древние египтяне разрабатывают иероглифическую систему письма для религиозных и административных целей",
-      "era": "BC",
-      "latitude": 30.044,
-      "longitude": 31.236,
-      "name": "Development of Hieroglyphic Writing",
-      "name_ru": "Развитие иероглифического письма",
-      "source": "https://www.metmuseum.org/toah/hd/egyp/hd_egyp.htm",
-      "tags": [
-        "Egypt",
-        "Writing"
       ],
       "type": "cultural"
     },
@@ -335,52 +387,39 @@
     },
     {
       "date": "01.01.3000",
-      "description": "The Sumerian city of Uruk becomes the world's largest city with approximately 100,000 inhabitants",
-      "description_ru": "Шумерский город Урук становится крупнейшим городом в мире с населением около 100,000 жителей",
+      "description": "Knowth passage tomb complex completed in Ireland as the largest passage tomb in the Brú na Bóinne complex with 18 smaller satellite tombs",
+      "description_ru": "Курган Ноут завершен в Ирландии как крупнейшая коридорная гробница в комплексе Бру-на-Бойн с 18 меньшими гробницами",
       "era": "BC",
-      "latitude": 31.324,
-      "longitude": 45.636,
-      "name": "Uruk Reaches 100,000 Population",
-      "name_ru": "Урук достигает населения в 100,000 человек",
+      "latitude": 53.7,
+      "longitude": -6.488,
+      "name": "Knowth Passage Tomb Complex",
+      "name_ru": "Гробницы Ноут в Ирландии",
       "tags": [
-        "Sumerian",
-        "Urban",
-        "City"
+        "Megalithic",
+        "Mound Builders",
+        "Earthwork",
+        "Tomb",
+        "Building",
+        "Burial"
       ],
-      "type": "historic"
+      "type": "cultural"
     },
     {
       "date": "01.01.3000",
-      "description": "A-Group culture emerges in Lower Nubia as one of the earliest state formations in world history with Egyptian-style kingship symbols",
-      "description_ru": "Культура А-Группы возникает в Нижней Нубии как одно из древнейших государственных образований в мировой истории с символами царской власти египетского типа",
+      "description": "Jōmon people in Japan develop sophisticated lacquerware and elaborate clay figurines (dogū) for ritual purposes",
+      "description_ru": "Люди Дзёмон в Японии разрабатывают изысканные лаковые изделия и сложные глиняные фигурки (догу) для ритуальных целей",
       "era": "BC",
-      "latitude": 22.336,
-      "longitude": 31.626,
-      "name": "A-Group Culture of Nubia",
-      "name_ru": "Культура А-Группы Нубии",
+      "latitude": 35.6762,
+      "longitude": 139.6503,
+      "name": "Jōmon Ritual Art Develops",
+      "name_ru": "Развитие ритуального искусства Дзёмон",
       "tags": [
-        "Nubia",
-        "Kingdom",
+        "Japan",
+        "Jōmon",
+        "Art",
         "Culture"
       ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.3000",
-      "description": "The major urban center of Harappa is established in the Punjab region, featuring sophisticated city planning and drainage systems",
-      "description_ru": "Крупный городской центр Хараппа основан в регионе Пенджаб с продуманным городским планированием и дренажными системами",
-      "era": "BC",
-      "latitude": 30.631,
-      "longitude": 72.971,
-      "name": "Harappa Urban Center Founded",
-      "name_ru": "Основание городского центра Хараппа",
-      "tags": [
-        "Harappan",
-        "Urban",
-        "City",
-        "Indus Valley"
-      ],
-      "type": "historic"
+      "type": "cultural"
     },
     {
       "date": "01.01.3000",
@@ -417,22 +456,67 @@
     },
     {
       "date": "01.01.3000",
-      "description": "Knowth passage tomb complex completed in Ireland as the largest passage tomb in the Brú na Bóinne complex with 18 smaller satellite tombs",
-      "description_ru": "Курган Ноут завершен в Ирландии как крупнейшая коридорная гробница в комплексе Бру-на-Бойн с 18 меньшими гробницами",
+      "description": "A-Group culture emerges in Lower Nubia as one of the earliest state formations in world history with Egyptian-style kingship symbols",
+      "description_ru": "Культура А-Группы возникает в Нижней Нубии как одно из древнейших государственных образований в мировой истории с символами царской власти египетского типа",
       "era": "BC",
-      "latitude": 53.7,
-      "longitude": -6.488,
-      "name": "Knowth Passage Tomb Complex",
-      "name_ru": "Гробницы Ноут в Ирландии",
+      "latitude": 22.336,
+      "longitude": 31.626,
+      "name": "A-Group Culture of Nubia",
+      "name_ru": "Культура А-Группы Нубии",
       "tags": [
-        "Megalithic",
-        "Mound Builders",
-        "Earthwork",
-        "Tomb",
-        "Building",
-        "Burial"
+        "Nubia",
+        "Kingdom",
+        "Culture"
       ],
-      "type": "cultural"
+      "type": "political"
+    },
+    {
+      "date": "01.01.3000",
+      "description": "The major urban center of Harappa is established in the Punjab region, featuring sophisticated city planning and drainage systems",
+      "description_ru": "Крупный городской центр Хараппа основан в регионе Пенджаб с продуманным городским планированием и дренажными системами",
+      "era": "BC",
+      "latitude": 30.631,
+      "longitude": 72.971,
+      "name": "Harappa Urban Center Founded",
+      "name_ru": "Основание городского центра Хараппа",
+      "tags": [
+        "Harappan",
+        "Urban",
+        "City",
+        "Indus Valley"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.3000",
+      "description": "The Sumerian city of Uruk becomes the world's largest city with approximately 100,000 inhabitants",
+      "description_ru": "Шумерский город Урук становится крупнейшим городом в мире с населением около 100,000 жителей",
+      "era": "BC",
+      "latitude": 31.324,
+      "longitude": 45.636,
+      "name": "Uruk Reaches 100,000 Population",
+      "name_ru": "Урук достигает населения в 100,000 человек",
+      "tags": [
+        "Sumerian",
+        "Urban",
+        "City"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.2900",
+      "description": "Beginning of the Early Dynastic Period in Mesopotamia with competing city-states",
+      "description_ru": "Начало раннединастического периода в Месопотамии с соревнующимися городами-государствами",
+      "era": "BC",
+      "latitude": 32.776,
+      "longitude": 44.949,
+      "name": "Early Dynastic Period Begins",
+      "name_ru": "Раннединастический период Месопотамии",
+      "tags": [
+        "Mesopotamia",
+        "City-State"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.2900",
@@ -450,21 +534,6 @@
         "Mesopotamia"
       ],
       "type": "cultural"
-    },
-    {
-      "date": "01.01.2900",
-      "description": "Beginning of the Early Dynastic Period in Mesopotamia with competing city-states",
-      "description_ru": "Начало раннединастического периода в Месопотамии с соревнующимися городами-государствами",
-      "era": "BC",
-      "latitude": 32.776,
-      "longitude": 44.949,
-      "name": "Early Dynastic Period Begins",
-      "name_ru": "Раннединастический период Месопотамии",
-      "tags": [
-        "Mesopotamia",
-        "City-State"
-      ],
-      "type": "political"
     },
     {
       "date": "01.01.2800",
@@ -601,6 +670,23 @@
     },
     {
       "date": "01.01.2600",
+      "description": "Indus Valley Civilization reaches its peak with over 1,000 urban centers including Harappa, Mohenjo-Daro, and Dholavira featuring advanced urban planning",
+      "description_ru": "Цивилизация долины Инда достигает своего пика с более чем 1000 городских центров, включая Хараппу, Мохенджо-Даро и Долавиру с развитым городским планированием",
+      "era": "BC",
+      "latitude": 30.631,
+      "longitude": 72.971,
+      "name": "Indus Valley Civilization Peak",
+      "name_ru": "Пик цивилизации долины Инда",
+      "tags": [
+        "Indus Valley",
+        "Urban",
+        "Civilization",
+        "Peak"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.2600",
       "description": "The great city of Mohenjo-daro is founded in the Sindh region, becoming the largest urban center of the Indus Valley Civilization",
       "description_ru": "Великий город Мохенджо-Даро основывается в регионе Синд, становясь крупнейшим городским центром цивилизации долины Инда",
       "era": "BC",
@@ -723,6 +809,23 @@
     },
     {
       "date": "01.01.2500",
+      "description": "Late Jōmon period in Japan sees development of deep-sea fishing technology and shell mounds (kaizuka) along coastal settlements",
+      "description_ru": "В поздний период Дзёмон в Японии развивается глубоководная рыбалка. Этим периодом датируются ракушечные кучи (kaizuka shell mounds) вдоль прибрежных поселений, использовавшиеся как помойки.",
+      "era": "BC",
+      "latitude": 35.6762,
+      "longitude": 139.6503,
+      "name": "Jōmon Maritime Technology",
+      "name_ru": "Морские технологии Дзёмон",
+      "tags": [
+        "Japan",
+        "Jōmon",
+        "Maritime",
+        "Technology"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.2500",
       "description": "Stonehenge Phase III: Massive sarsen stones erected, creating the iconic stone circle and trilithons with stones weighing up to 50 tons transported 25 miles",
       "description_ru": "Стоунхендж Фаза III: Воздвигнуты массивные сарсеновые камни, создан культовый каменный круг и трилитоны с камнями весом до 50 тонн, перевезенными на 40 км",
       "era": "BC",
@@ -738,23 +841,6 @@
         "Building"
       ],
       "type": "cultural"
-    },
-    {
-      "date": "01.01.2500",
-      "description": "Indus Valley Civilization reaches its peak with cities housing 30,000-60,000 people and covering over 1.3 million square kilometers",
-      "description_ru": "Цивилизация долины Инда на пике могущества - покрывает 1.3 млн квадратных километров. В крупнейших городах живут по 30,000-60,000 человек.",
-      "era": "BC",
-      "latitude": 27,
-      "longitude": 69,
-      "name": "Peak Urbanization of Indus Valley",
-      "name_ru": "Пик урбанизации долины Инда",
-      "tags": [
-        "Indus Valley",
-        "Harappan",
-        "Population",
-        "Urban"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.2500",
@@ -807,6 +893,21 @@
     },
     {
       "date": "01.01.2400",
+      "description": "Akkadian language appears in cuneiform texts alongside Sumerian, marking Semitic influence",
+      "description_ru": "Аккадский язык появляется в клинописных текстах наряду с шумерским, отмечая семитское влияние",
+      "era": "BC",
+      "latitude": 33.312,
+      "longitude": 44.644,
+      "name": "Akkadian Language First Recorded",
+      "name_ru": "Первая запись аккадского языка",
+      "tags": [
+        "Akkadian",
+        "Writing"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.2400",
       "description": "Bluestones transported to Stonehenge from Preseli Hills in Wales, over 150 miles away, demonstrating remarkable organizational and engineering capabilities",
       "description_ru": "Голубые камни перевезены в Стоунхендж из холмов Преселли в Уэльсе, более чем на 240 км, что показало организационные и инженерные способности древних бритов",
       "era": "BC",
@@ -818,39 +919,6 @@
         "Megalithic",
         "Stonehenge",
         "Transport"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.2400",
-      "description": "Kingdom of Kerma established in Upper Nubia, developing into a powerful state controlling Nile trade routes and constructing massive mud-brick temples",
-      "description_ru": "Царство Керма в Верхней Нубии развивается в могущественное государство, контролирующее торговые пути по Нилу и строящее массивные храмы из сырцового кирпича",
-      "era": "BC",
-      "latitude": 19.612,
-      "longitude": 30.417,
-      "name": "Kingdom of Kerma Founded",
-      "name_ru": "Основание царства Керма в Нубии",
-      "source": "https://www.metmuseum.org/toah/hd/kerm/hd_kerm.htm",
-      "tags": [
-        "Kerma",
-        "Nubia",
-        "Kingdom",
-        "Foundation"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.2400",
-      "description": "Akkadian language appears in cuneiform texts alongside Sumerian, marking Semitic influence",
-      "description_ru": "Аккадский язык появляется в клинописных текстах наряду с шумерским, отмечая семитское влияние",
-      "era": "BC",
-      "latitude": 33.312,
-      "longitude": 44.644,
-      "name": "Akkadian Language First Recorded",
-      "name_ru": "Первая запись аккадского языка",
-      "tags": [
-        "Akkadian",
-        "Writing"
       ],
       "type": "cultural"
     },
@@ -886,6 +954,24 @@
         "Building"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.2400",
+      "description": "Kingdom of Kerma established in Upper Nubia, developing into a powerful state controlling Nile trade routes and constructing massive mud-brick temples",
+      "description_ru": "Царство Керма в Верхней Нубии развивается в могущественное государство, контролирующее торговые пути по Нилу и строящее массивные храмы из сырцового кирпича",
+      "era": "BC",
+      "latitude": 19.612,
+      "longitude": 30.417,
+      "name": "Kingdom of Kerma Founded",
+      "name_ru": "Основание царства Керма в Нубии",
+      "source": "https://www.metmuseum.org/toah/hd/kerm/hd_kerm.htm",
+      "tags": [
+        "Kerma",
+        "Nubia",
+        "Kingdom",
+        "Foundation"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.2370",
@@ -1019,23 +1105,6 @@
     },
     {
       "date": "01.01.2300",
-      "description": "Sargon extends Akkadian control to Anatolia and Syria, reaching the Mediterranean",
-      "description_ru": "Саргон расширяет аккадский контроль на Анатолию и Сирию, достигая Средиземного моря",
-      "era": "BC",
-      "latitude": 36.202,
-      "longitude": 37.161,
-      "name": "Sargon's Northern Campaigns",
-      "name_ru": "Северные походы Саргона",
-      "tags": [
-        "Expansion",
-        "Mediterranean",
-        "Sargon",
-        "Akkadian"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.2300",
       "description": "The famous bronze Dancing Girl statuette is created at Mohenjo-daro, showcasing advanced metallurgy and artistic sophistication",
       "description_ru": "Знаменитая бронзовая статуэтка Танцующей девочки создается в Мохенджо-Даро, демонстрируя передовую металлургию и художественную утонченность",
       "era": "BC",
@@ -1050,6 +1119,23 @@
         "Sculpture"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.2300",
+      "description": "Sargon extends Akkadian control to Anatolia and Syria, reaching the Mediterranean",
+      "description_ru": "Саргон расширяет аккадский контроль на Анатолию и Сирию, достигая Средиземного моря",
+      "era": "BC",
+      "latitude": 36.202,
+      "longitude": 37.161,
+      "name": "Sargon's Northern Campaigns",
+      "name_ru": "Северные походы Саргона",
+      "tags": [
+        "Expansion",
+        "Mediterranean",
+        "Sargon",
+        "Akkadian"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.2279",
@@ -1116,20 +1202,18 @@
     },
     {
       "date": "01.01.2200",
-      "description": "Tichitt culture develops in Mauritania and Mali as the oldest known complexly organized society in West Africa with stone-walled towns",
-      "description_ru": "Культура Тишит развивается в Мавритании и Мали как древнейшее известное сложное общество в Западной Африке с защищенными городами",
+      "description": "Severe drought causes agricultural collapse across Mesopotamia and Egypt",
+      "description_ru": "Сильная засуха вызывает сельскохозяйственный коллапс по всей Месопотамии и Египту",
       "era": "BC",
-      "latitude": 18.452,
-      "longitude": -9.471,
-      "name": "Tichitt Culture Emerges",
-      "name_ru": "Западноафриканская культура Тишит",
+      "latitude": 33,
+      "longitude": 44,
+      "name": "4.2 Kiloyear Aridification Event",
+      "name_ru": "Засуха 2200 до н.э.",
+      "source": "https://www.nature.com/articles/s41598-019-44652-5",
       "tags": [
-        "Tichitt",
-        "West Africa",
-        "Urban",
-        "Culture"
+        "Climate Crisis"
       ],
-      "type": "cultural"
+      "type": "historic"
     },
     {
       "date": "01.01.2200",
@@ -1149,18 +1233,20 @@
     },
     {
       "date": "01.01.2200",
-      "description": "Severe drought causes agricultural collapse across Mesopotamia and Egypt",
-      "description_ru": "Сильная засуха вызывает сельскохозяйственный коллапс по всей Месопотамии и Египту",
+      "description": "Tichitt culture develops in Mauritania and Mali as the oldest known complexly organized society in West Africa with stone-walled towns",
+      "description_ru": "Культура Тишит развивается в Мавритании и Мали как древнейшее известное сложное общество в Западной Африке с защищенными городами",
       "era": "BC",
-      "latitude": 33,
-      "longitude": 44,
-      "name": "4.2 Kiloyear Aridification Event",
-      "name_ru": "Засуха 2200 до н.э.",
-      "source": "https://www.nature.com/articles/s41598-019-44652-5",
+      "latitude": 18.452,
+      "longitude": -9.471,
+      "name": "Tichitt Culture Emerges",
+      "name_ru": "Западноафриканская культура Тишит",
       "tags": [
-        "Climate Crisis"
+        "Tichitt",
+        "West Africa",
+        "Urban",
+        "Culture"
       ],
-      "type": "historic"
+      "type": "cultural"
     },
     {
       "date": "01.01.2181",
@@ -1216,6 +1302,23 @@
     },
     {
       "date": "01.01.2100",
+      "description": "Ur-Nammu creates one of the earliest known law codes, predating Hammurabi's code",
+      "description_ru": "Ур-Намму создает один из древнейших известных сводов законов, предшествующий кодексу Хаммурапи",
+      "era": "BC",
+      "latitude": 30.962,
+      "longitude": 46.104,
+      "name": "Code of Ur-Nammu",
+      "name_ru": "Кодекс Ур-Намму",
+      "tags": [
+        "Law",
+        "Code",
+        "Justice",
+        "Sumerian"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.2100",
       "description": "Legendary Chinese hero Yu the Great successfully controls devastating floods along the Yellow River, earning mandate to rule",
       "description_ru": "Легендарный китайский герой Великий Юй справляется с разрушительными наводнениями вдоль Желтой реки, заслуживая мандат на правление",
       "era": "BC",
@@ -1243,23 +1346,6 @@
         "Xia Dynasty",
         "Yu the Great",
         "Dynasty"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.2100",
-      "description": "Ur-Nammu creates one of the earliest known law codes, predating Hammurabi's code",
-      "description_ru": "Ур-Намму создает один из древнейших известных сводов законов, предшествующий кодексу Хаммурапи",
-      "era": "BC",
-      "latitude": 30.962,
-      "longitude": 46.104,
-      "name": "Code of Ur-Nammu",
-      "name_ru": "Кодекс Ур-Намму",
-      "tags": [
-        "Law",
-        "Code",
-        "Justice",
-        "Sumerian"
       ],
       "type": "political"
     },
@@ -1331,6 +1417,23 @@
     },
     {
       "date": "01.01.2000",
+      "description": "Iron smelting technology develops in Lejja, Nigeria, predating Egyptian iron technology and demonstrating independent African metallurgical innovation",
+      "description_ru": "Технология плавки железа развивается в Леджа, Нигерия, предшествуя египетской железной технологии и демонстрируя независимое африканское металлургическое новаторство",
+      "era": "BC",
+      "latitude": 6.453,
+      "longitude": 7.601,
+      "name": "Early Iron Smelting in Nigeria",
+      "name_ru": "Ранняя плавка железа в Нигерии",
+      "source": "https://www.nature.com/articles/s40494-024-01383-2",
+      "tags": [
+        "Iron",
+        "Metallurgy",
+        "Nigeria"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.2000",
       "description": "Minoan palaces are built on Crete, marking the rise of Europe's first advanced civilization",
       "description_ru": "Первые минойские дворцы появляются на Крите, отмечая подъем первой развитой цивилизации Европы",
       "era": "BC",
@@ -1381,23 +1484,6 @@
     },
     {
       "date": "01.01.2000",
-      "description": "Iron smelting technology develops in Lejja, Nigeria, predating Egyptian iron technology and demonstrating independent African metallurgical innovation",
-      "description_ru": "Технология плавки железа развивается в Леджа, Нигерия, предшествуя египетской железной технологии и демонстрируя независимое африканское металлургическое новаторство",
-      "era": "BC",
-      "latitude": 6.453,
-      "longitude": 7.601,
-      "name": "Early Iron Smelting in Nigeria",
-      "name_ru": "Ранняя плавка железа в Нигерии",
-      "source": "https://www.nature.com/articles/s40494-024-01383-2",
-      "tags": [
-        "Iron",
-        "Metallurgy",
-        "Nigeria"
-      ],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.2000",
       "description": "Babylon emerges as a major power in Mesopotamia under Amorite rulers",
       "description_ru": "Вавилон становится крупной силой в Месопотамии под правлением амореев",
       "era": "BC",
@@ -1411,6 +1497,25 @@
         "Babylonian"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.2000",
+      "description": "Jōmon people construct stone circles at Ōyu (Akita Prefecture) for ceremonial purposes, demonstrating complex social organization",
+      "description_ru": "Люди Дзёмон возводят каменные круги в Ою (префектура Акита) для церемониальных целей",
+      "era": "BC",
+      "latitude": 40.2833,
+      "longitude": 140.7833,
+      "name": "Ōyu Stone Circles",
+      "name_ru": "Каменные круги Ою",
+      "source": "https://jomon-japan.jp/en/jomon-sites/oyu/",
+      "tags": [
+        "Japan",
+        "Jōmon",
+        "Megalithic",
+        "Stone Circle",
+        "Building"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.1991",
@@ -1475,6 +1580,22 @@
         "Erlitou",
         "Bronze Age",
         "Culture"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1900",
+      "description": "Indus Valley Civilization begins gradual decline as monsoons weaken and the Ghaggar-Hakra river system starts drying up",
+      "description_ru": "Цивилизация долины Инда начинает постепенный упадок по мере ослабления муссонов и высыхания речной системы Гаггар-Хакра",
+      "era": "BC",
+      "latitude": 27.376,
+      "longitude": 68.838,
+      "name": "Beginning of Indus Valley Decline",
+      "name_ru": "Начало упадка долины Инда",
+      "tags": [
+        "Indus Valley",
+        "Decline",
+        "Climate"
       ],
       "type": "historic"
     },
@@ -1595,6 +1716,22 @@
       "type": "military"
     },
     {
+      "date": "01.01.1700",
+      "description": "Major cities of the Indus Valley Civilization are abandoned as populations migrate eastward toward the Himalayan foothills seeking reliable rainfall",
+      "description_ru": "Крупные города цивилизации долины Инда покинуты, поскольку население мигрирует на восток к предгорьям Гималаев в поисках надежных осадков",
+      "era": "BC",
+      "latitude": 30.631,
+      "longitude": 72.971,
+      "name": "Indus Cities Abandoned",
+      "name_ru": "Города Инда покинуты",
+      "tags": [
+        "Indus Valley",
+        "Decline",
+        "Migration"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.1650",
       "description": "Hattusili I establishes the Hittite Kingdom in central Anatolia",
       "description_ru": "Хаттусили I основывает Хеттское царство в центральной Анатолии",
@@ -1630,6 +1767,24 @@
     },
     {
       "date": "01.01.1600",
+      "description": "Lapita culture emerges in the Bismarck Archipelago, marking the first Austronesian colonization of Remote Oceania with distinctive dentate-stamped pottery",
+      "description_ru": "Культура Лапита возникает в архипелаге Бисмарка, знаменуя первую австронезийскую колонизацию Удаленной Океании с характерной зубчатой керамикой",
+      "era": "BC",
+      "latitude": -4.5,
+      "longitude": 152.5,
+      "name": "Lapita Culture Emergence",
+      "name_ru": "Возникновение культуры Лапита",
+      "source": "https://www.metmuseum.org/toah/hd/lapi/hd_lapi.htm",
+      "tags": [
+        "Lapita",
+        "Oceania",
+        "Migration",
+        "Culture"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1600",
       "description": "Cheng Tang, founder of the Shang Dynasty, overthrows the last Xia king in the Battle of Mingtiao, establishing Shang rule",
       "description_ru": "Чэн Тан, основатель династии Шан, свергает последнего царя Ся в битве при Минтяо, устанавливая правление Шан",
       "era": "BC",
@@ -1659,24 +1814,6 @@
         "Military"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.1600",
-      "description": "Lapita culture emerges in the Bismarck Archipelago, marking the first Austronesian colonization of Remote Oceania with distinctive dentate-stamped pottery",
-      "description_ru": "Культура Лапита возникает в архипелаге Бисмарка, знаменуя первую австронезийскую колонизацию Удаленной Океании с характерной зубчатой керамикой",
-      "era": "BC",
-      "latitude": -4.5,
-      "longitude": 152.5,
-      "name": "Lapita Culture Emergence",
-      "name_ru": "Возникновение культуры Лапита",
-      "source": "https://www.metmuseum.org/toah/hd/lapi/hd_lapi.htm",
-      "tags": [
-        "Lapita",
-        "Oceania",
-        "Migration",
-        "Culture"
-      ],
-      "type": "cultural"
     },
     {
       "date": "01.01.1595",
@@ -1747,21 +1884,19 @@
     },
     {
       "date": "01.01.1500",
-      "description": "Nok culture develops on the Jos Plateau in Nigeria, creating elaborate terracotta sculptures and advanced iron-working techniques",
-      "description_ru": "Культура Нок развивается на плато Джос в Нигерии. Культура знаменита терракотовыми скульптурами и передовыми техниками обработки железа",
+      "description": "Early agricultural developments in Mesoamerica with domestication of maize, beans, and squash forming the 'Three Sisters' crop system",
+      "description_ru": "Ранние сельскохозяйственные разработки в Мезоамерике с одомашниванием кукурузы, бобов и тыквы, образующих систему 'Три сестры'",
       "era": "BC",
-      "latitude": 9.928,
-      "longitude": 8.893,
-      "name": "Nok Culture Begins",
-      "name_ru": "Нигерийская культура Нок",
-      "source": "https://www.britishmuseum.org/collection/term/x68551",
+      "latitude": 19.433,
+      "longitude": -99.133,
+      "name": "Mesoamerican Agriculture",
+      "name_ru": "Сельское хозяйство Мезоамерики",
       "tags": [
-        "Nok",
-        "Sculpture",
-        "Iron",
-        "Culture"
+        "Agriculture",
+        "Mesoamerica",
+        "Domestication"
       ],
-      "type": "cultural"
+      "type": "scientific"
     },
     {
       "date": "01.01.1500",
@@ -1782,33 +1917,19 @@
     },
     {
       "date": "01.01.1500",
-      "description": "Early agricultural developments in Mesoamerica with domestication of maize, beans, and squash forming the 'Three Sisters' crop system",
-      "description_ru": "Ранние сельскохозяйственные разработки в Мезоамерике с одомашниванием кукурузы, бобов и тыквы, образующих систему 'Три сестры'",
+      "description": "Mumun pottery period begins in Korea with agricultural revolution, rectangular longhouses, and transition to sedentary farming communities",
+      "description_ru": "Период керамики Мумун начинается в Корее с сельскохозяйственной революцией, прямоугольными длинными домами и переходом к оседлым земледельческим общинам",
       "era": "BC",
-      "latitude": 19.433,
-      "longitude": -99.133,
-      "name": "Mesoamerican Agriculture",
-      "name_ru": "Сельское хозяйство Мезоамерики",
+      "latitude": 35.9078,
+      "longitude": 127.7669,
+      "name": "Mumun Agricultural Period Begins",
+      "name_ru": "Начало земледельческого периода Мумун",
+      "source": "https://en.wikipedia.org/wiki/Mumun_pottery_period",
       "tags": [
+        "Korea",
         "Agriculture",
-        "Mesoamerica",
-        "Domestication"
-      ],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.1500",
-      "description": "Lapita peoples colonize the Solomon Islands, bringing pigs, chickens, and agricultural crops, demonstrating remarkable seafaring capabilities",
-      "description_ru": "Народы Лапита, демонстрируя выдающиеся мореходные способности, колонизируют Соломоновы острова, привозят свиней, кур и сельскохозяйственные культуры",
-      "era": "BC",
-      "latitude": -8.5,
-      "longitude": 159.5,
-      "name": "Solomon Islands Settlement",
-      "name_ru": "Заселение Соломоновых островов Лапита",
-      "tags": [
-        "Lapita",
-        "Solomon Islands",
-        "Migration"
+        "Mumun",
+        "Culture"
       ],
       "type": "historic"
     },
@@ -1827,6 +1948,40 @@
         "Food"
       ],
       "type": "scientific"
+    },
+    {
+      "date": "01.01.1500",
+      "description": "Nok culture develops on the Jos Plateau in Nigeria, creating elaborate terracotta sculptures and advanced iron-working techniques",
+      "description_ru": "Культура Нок развивается на плато Джос в Нигерии. Культура знаменита терракотовыми скульптурами и передовыми техниками обработки железа",
+      "era": "BC",
+      "latitude": 9.928,
+      "longitude": 8.893,
+      "name": "Nok Culture Begins",
+      "name_ru": "Нигерийская культура Нок",
+      "source": "https://www.britishmuseum.org/collection/term/x68551",
+      "tags": [
+        "Nok",
+        "Sculpture",
+        "Iron",
+        "Culture"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1500",
+      "description": "Lapita peoples colonize the Solomon Islands, bringing pigs, chickens, and agricultural crops, demonstrating remarkable seafaring capabilities",
+      "description_ru": "Народы Лапита, демонстрируя выдающиеся мореходные способности, колонизируют Соломоновы острова, привозят свиней, кур и сельскохозяйственные культуры",
+      "era": "BC",
+      "latitude": -8.5,
+      "longitude": 159.5,
+      "name": "Solomon Islands Settlement",
+      "name_ru": "Заселение Соломоновых островов Лапита",
+      "tags": [
+        "Lapita",
+        "Solomon Islands",
+        "Migration"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.1479",
@@ -2128,22 +2283,6 @@
     },
     {
       "date": "01.01.1430",
-      "description": "Hittite Empire expands under Tudhaliya I, challenging Egyptian and Mitanni power",
-      "description_ru": "Хеттская империя расширяется под руководством Тудхалии I, бросая вызов египетской и митаннийской власти",
-      "era": "BC",
-      "latitude": 40.023,
-      "longitude": 34.621,
-      "name": "Hittite Empire Expansion",
-      "name_ru": "Расширение Хеттской империи",
-      "tags": [
-        "Hittite",
-        "Empire",
-        "Expansion"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.1430",
       "description": "Thutmose III campaigns to Fourth Cataract in Nubia, building Temple of Amun at Napata and reopening gold mines, securing Egypt's southern frontier and wealth",
       "description_ru": "Тутмос III ведет поход к Четвертому порогу в Нубии, строя храм Амона в Напате и вновь открывая золотые рудники, обеспечивая южную границу и богатство Египта",
       "era": "BC",
@@ -2162,20 +2301,20 @@
       "type": "military"
     },
     {
-      "date": "01.01.1400",
-      "description": "Mycenaean Greeks adapt Linear A to create Linear B, the first script to write Greek",
-      "description_ru": "Микенские греки адаптируют Линейное А для создания Линейного Б, первого письма для записи греческого языка",
+      "date": "01.01.1430",
+      "description": "Hittite Empire expands under Tudhaliya I, challenging Egyptian and Mitanni power",
+      "description_ru": "Хеттская империя расширяется под руководством Тудхалии I, бросая вызов египетской и митаннийской власти",
       "era": "BC",
-      "latitude": 37.641,
-      "longitude": 22.726,
-      "name": "Linear B Script Developed",
-      "name_ru": "Разработка письма Линейное Б",
-      "source": "https://www.britannica.com/topic/Linear-B",
+      "latitude": 40.023,
+      "longitude": 34.621,
+      "name": "Hittite Empire Expansion",
+      "name_ru": "Расширение Хеттской империи",
       "tags": [
-        "Greek",
-        "Writing"
+        "Hittite",
+        "Empire",
+        "Expansion"
       ],
-      "type": "cultural"
+      "type": "political"
     },
     {
       "date": "01.01.1400",
@@ -2194,6 +2333,39 @@
         "New Kingdom"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.1400",
+      "description": "Shang Dynasty develops a sophisticated 360-day calendar system incorporating lunar and solar cycles with intercalary months",
+      "description_ru": "Династия Шан разрабатывает сложную 360-дневную календарную систему, включающую лунные и солнечные циклы с вставными месяцами",
+      "era": "BC",
+      "latitude": 36.103,
+      "longitude": 114.358,
+      "name": "Shang Calendar System",
+      "name_ru": "Календарная система Шан",
+      "tags": [
+        "Shang Dynasty",
+        "China",
+        "Calendar",
+        "Astronomy"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.1400",
+      "description": "Mycenaean Greeks adapt Linear A to create Linear B, the first script to write Greek",
+      "description_ru": "Микенские греки адаптируют Линейное А для создания Линейного Б, первого письма для записи греческого языка",
+      "era": "BC",
+      "latitude": 37.641,
+      "longitude": 22.726,
+      "name": "Linear B Script Developed",
+      "name_ru": "Разработка письма Линейное Б",
+      "source": "https://www.britannica.com/topic/Linear-B",
+      "tags": [
+        "Greek",
+        "Writing"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.1391",
@@ -2345,24 +2517,6 @@
     },
     {
       "date": "01.01.1300",
-      "description": "The last major Indus Valley cities are abandoned, marking the end of one of the world's earliest urban civilizations",
-      "description_ru": "Последние крупные города долины Инда покинуты. Это знаменует конец одной из древнейших городских цивилизаций мира",
-      "era": "BC",
-      "latitude": 27,
-      "longitude": 69,
-      "name": "Final Abandonment of Indus Cities",
-      "name_ru": "Опустение городов Инда",
-      "source": "https://www.britannica.com/topic/Indus-civilization",
-      "tags": [
-        "Abandonment",
-        "End",
-        "Civilization",
-        "Indus Valley"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1300",
       "description": "Talepakemalai site established in Mussau Islands as the largest early Lapita settlement, featuring stilt houses and extensive pottery assemblages",
       "description_ru": "Поселение Талепакемалаи основано на островах Муссау как крупнейшее раннее поселение Лапита со свайными домами и обширными керамическими коллекциями",
       "era": "BC",
@@ -2391,6 +2545,24 @@
         "City"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.1300",
+      "description": "The last major Indus Valley cities are abandoned, marking the end of one of the world's earliest urban civilizations",
+      "description_ru": "Последние крупные города долины Инда покинуты. Это знаменует конец одной из древнейших городских цивилизаций мира",
+      "era": "BC",
+      "latitude": 27.376,
+      "longitude": 68.838,
+      "name": "Final Abandonment of Indus Cities",
+      "name_ru": "Опустение городов Инда",
+      "source": "https://www.britannica.com/topic/Indus-civilization",
+      "tags": [
+        "Abandonment",
+        "End",
+        "Civilization",
+        "Indus Valley"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.1295",
@@ -2543,6 +2715,57 @@
     },
     {
       "date": "01.01.1200",
+      "description": "The important trading city of Ugarit is destroyed, marking the Bronze Age collapse",
+      "description_ru": "Важный торговый город Угарит разрушается, отмечая коллапс бронзового века",
+      "era": "BC",
+      "latitude": 35.603,
+      "longitude": 35.784,
+      "name": "Destruction of Ugarit",
+      "name_ru": "Разрушение Угарита",
+      "tags": [
+        "Destruction",
+        "Trade",
+        "Collapse"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1200",
+      "description": "Shang royal tombs at Anyang feature elaborate burials with bronze vessels, jade ornaments, and sacrificial victims, demonstrating peak of Shang culture",
+      "description_ru": "Царские гробницы Шан в Аньяне содержат сложные захоронения с бронзовыми сосудами, нефритовыми украшениями и жертвенными жертвами, демонстрируя пик культуры Шан",
+      "era": "BC",
+      "latitude": 36.103,
+      "longitude": 114.358,
+      "name": "Shang Royal Tombs Peak",
+      "name_ru": "Пик царских гробниц Шан",
+      "tags": [
+        "Shang Dynasty",
+        "China",
+        "Tomb",
+        "Burial"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1200",
+      "description": "Olmec civilization emerges in Mesoamerica as the 'mother culture' of later civilizations, developing early writing and calendar systems",
+      "description_ru": "Цивилизация ольмеков возникает в Мезоамерике как 'материнская культура' более поздних цивилизаций, разрабатывая раннюю письменность и календарные системы",
+      "era": "BC",
+      "latitude": 18.097,
+      "longitude": -94.434,
+      "name": "Olmec Civilization Rises",
+      "name_ru": "Возникновение цивилизации ольмеков",
+      "source": "https://www.britannica.com/topic/Olmec",
+      "tags": [
+        "Olmec",
+        "Writing",
+        "Calendar",
+        "Culture"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1200",
       "description": "Lapita expansion reaches Vanuatu and New Caledonia, extending the Pacific migration over 2000 km with sophisticated navigation and sailing technology",
       "description_ru": "Экспансия Лапита достигает Вануату и Новой Каледонии, продвигая тихоокеанскую миграцию более чем на 2000 км с использованием сложных навигационных и парусных технологий",
       "era": "BC",
@@ -2573,40 +2796,6 @@
         "Civilization"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.1200",
-      "description": "Olmec civilization emerges in Mesoamerica as the 'mother culture' of later civilizations, developing early writing and calendar systems",
-      "description_ru": "Цивилизация ольмеков возникает в Мезоамерике как 'материнская культура' более поздних цивилизаций, разрабатывая раннюю письменность и календарные системы",
-      "era": "BC",
-      "latitude": 18.097,
-      "longitude": -94.434,
-      "name": "Olmec Civilization Rises",
-      "name_ru": "Возникновение цивилизации ольмеков",
-      "source": "https://www.britannica.com/topic/Olmec",
-      "tags": [
-        "Olmec",
-        "Writing",
-        "Calendar",
-        "Culture"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1200",
-      "description": "The important trading city of Ugarit is destroyed, marking the Bronze Age collapse",
-      "description_ru": "Важный торговый город Угарит разрушается, отмечая коллапс бронзового века",
-      "era": "BC",
-      "latitude": 35.603,
-      "longitude": 35.784,
-      "name": "Destruction of Ugarit",
-      "name_ru": "Разрушение Угарита",
-      "tags": [
-        "Destruction",
-        "Trade",
-        "Collapse"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.1180",
@@ -2756,37 +2945,22 @@
       "type": "political"
     },
     {
-      "date": "01.01.1000",
-      "description": "Teouma cemetery established in Vanuatu with elaborate burial rituals including skull removal and shell ring placement, revealing complex social hierarchy",
-      "description_ru": "Кладбище Теума основано на Вануату со сложными погребальными ритуалами, включая удаление черепов и размещение ракушечных колец, раскрывая сложную социальную иерархию",
+      "date": "01.01.1046",
+      "description": "Zhou forces from northwestern China conquer the Shang Dynasty, claiming the Mandate of Heaven and establishing the Zhou Dynasty",
+      "description_ru": "Силы Чжоу из северо-западного Китая завоевывают династию Шан, провозглашая Мандат Неба и основывая династию Чжоу",
       "era": "BC",
-      "latitude": -17.683,
-      "longitude": 168.4,
-      "name": "Teouma Cemetery",
-      "name_ru": "Кладбище Теума",
+      "latitude": 34.341,
+      "longitude": 108.94,
+      "name": "Zhou Conquest of Shang",
+      "name_ru": "Завоевание Шан династией Чжоу",
+      "source": "https://www.britannica.com/topic/Shang-dynasty",
       "tags": [
-        "Lapita",
-        "Burial",
-        "Vanuatu"
+        "China",
+        "Shang Dynasty",
+        "Zhou Dynasty",
+        "Conquest"
       ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.1000",
-      "description": "Lapita culture reaches Tonga and Samoa in Western Polynesia, completing a 4000 km maritime expansion and establishing ancestral Polynesian culture",
-      "description_ru": "Культура Лапита достигает Тонга и Самоа в Западной Полинезии, завершая 4000-километровую морскую экспансию и устанавливая предковую полинезийскую культуру",
-      "era": "BC",
-      "latitude": -21.179,
-      "longitude": -175.198,
-      "name": "Western Polynesia Reached",
-      "name_ru": "Достижение Западной Полинезии Лапита",
-      "tags": [
-        "Lapita",
-        "Tonga",
-        "Samoa",
-        "Polynesia"
-      ],
-      "type": "historic"
+      "type": "political"
     },
     {
       "date": "01.01.1000",
@@ -2805,220 +2979,30 @@
       "type": "political"
     },
     {
-      "date": "01.01.8000",
-      "description": "Jeulmun pottery culture emerges in Korea, marking the Korean Neolithic period with distinctive comb-pattern ceramics",
-      "description_ru": "Культура керамики Чыльмун возникает в Корее, знаменуя корейский неолитический период с характерной гребенчатой керамикой",
+      "date": "01.01.1000",
+      "description": "Teouma cemetery established in Vanuatu with elaborate burial rituals including skull removal and shell ring placement, revealing complex social hierarchy",
+      "description_ru": "Кладбище Теума основано на Вануату со сложными погребальными ритуалами, включая удаление черепов и размещение ракушечных колец, раскрывая сложную социальную иерархию",
       "era": "BC",
-      "latitude": 37.5665,
-      "longitude": 126.978,
-      "name": "Jeulmun Pottery Culture Begins",
-      "name_ru": "Начало культуры керамики Чыльмун",
-      "source": "https://en.wikipedia.org/wiki/Jeulmun_pottery_period",
+      "latitude": -17.683,
+      "longitude": 168.4,
+      "name": "Teouma Cemetery",
+      "name_ru": "Кладбище Теума",
       "tags": [
-        "Korea",
-        "Pottery",
-        "Neolithic",
-        "Culture"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.5000",
-      "description": "Middle Jōmon period begins in Japan with peak population and elaborate cord-marked pottery traditions during the climatic optimum",
-      "description_ru": "Средний период Дзёмон начинается в Японии с пиком населения и тщательно изготовленной керамикой со следами веревки во время климатического оптимума",
-      "era": "BC",
-      "latitude": 35.6762,
-      "longitude": 139.6503,
-      "name": "Middle Jōmon Culture Peak",
-      "name_ru": "Пик средней культуры Дзёмон",
-      "source": "https://en.wikipedia.org/wiki/J%C5%8Dmon_period",
-      "tags": [
-        "Japan",
-        "Jōmon",
-        "Pottery",
-        "Culture"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.3500",
-      "description": "Korean Jeulmun culture develops small-scale agriculture with millet and rice cultivation while maintaining hunter-gatherer practices",
-      "description_ru": "Корейская культура Чыльмун развивает мелкомасштабное земледелие с выращиванием проса и риса, сохраняя практики охотников-собирателей",
-      "era": "BC",
-      "latitude": 37.5665,
-      "longitude": 126.978,
-      "name": "Early Agriculture in Korea",
-      "name_ru": "Раннее земледелие в Корее",
-      "tags": [
-        "Korea",
-        "Agriculture",
-        "Neolithic"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.3000",
-      "description": "Jōmon people in Japan develop sophisticated lacquerware and elaborate clay figurines (dogū) for ritual purposes",
-      "description_ru": "Люди Дзёмон в Японии разрабатывают изысканные лаковые изделия и сложные глиняные фигурки (догу) для ритуальных целей",
-      "era": "BC",
-      "latitude": 35.6762,
-      "longitude": 139.6503,
-      "name": "Jōmon Ritual Art Develops",
-      "name_ru": "Развитие ритуального искусства Дзёмон",
-      "tags": [
-        "Japan",
-        "Jōmon",
-        "Art",
-        "Culture"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.2600",
-      "description": "Indus Valley Civilization reaches its peak with over 1,000 urban centers including Harappa, Mohenjo-Daro, and Dholavira featuring advanced urban planning",
-      "description_ru": "Цивилизация долины Инда достигает своего пика с более чем 1000 городских центров, включая Хараппу, Мохенджо-Даро и Долавиру с развитым городским планированием",
-      "era": "BC",
-      "latitude": 30.631,
-      "longitude": 72.971,
-      "name": "Indus Valley Civilization Peak",
-      "name_ru": "Пик цивилизации долины Инда",
-      "tags": [
-        "Indus Valley",
-        "Urban",
-        "Civilization",
-        "Peak"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.2500",
-      "description": "Late Jōmon period in Japan sees development of deep-sea fishing technology and shell mounds (kaizuka) along coastal settlements",
-      "description_ru": "Поздний период Дзёмон в Японии видит развитие технологий глубоководной рыбалки и ракушечных куч (кайдзука) вдоль прибрежных поселений",
-      "era": "BC",
-      "latitude": 35.6762,
-      "longitude": 139.6503,
-      "name": "Jōmon Maritime Technology",
-      "name_ru": "Морские технологии Дзёмон",
-      "tags": [
-        "Japan",
-        "Jōmon",
-        "Maritime",
-        "Technology"
-      ],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.2000",
-      "description": "Jōmon people construct stone circles at Ōyu (Akita Prefecture) for ceremonial purposes, demonstrating complex social organization",
-      "description_ru": "Люди Дзёмон строят каменные круги в Ою (префектура Акита) для церемониальных целей, демонстрируя сложную социальную организацию",
-      "era": "BC",
-      "latitude": 40.2833,
-      "longitude": 140.7833,
-      "name": "Ōyu Stone Circles",
-      "name_ru": "Каменные круги Ою",
-      "source": "https://jomon-japan.jp/en/jomon-sites/oyu/",
-      "tags": [
-        "Japan",
-        "Jōmon",
-        "Megalithic",
-        "Stone Circle",
-        "Building"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.1900",
-      "description": "Indus Valley Civilization begins gradual decline as monsoons weaken and the Ghaggar-Hakra river system starts drying up",
-      "description_ru": "Цивилизация долины Инда начинает постепенный упадок по мере ослабления муссонов и высыхания речной системы Гаггар-Хакра",
-      "era": "BC",
-      "latitude": 27.376,
-      "longitude": 68.838,
-      "name": "Beginning of Indus Valley Decline",
-      "name_ru": "Начало упадка долины Инда",
-      "tags": [
-        "Indus Valley",
-        "Decline",
-        "Climate"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1700",
-      "description": "Major cities of the Indus Valley Civilization are abandoned as populations migrate eastward toward the Himalayan foothills seeking reliable rainfall",
-      "description_ru": "Крупные города цивилизации долины Инда покинуты, поскольку население мигрирует на восток к предгорьям Гималаев в поисках надежных осадков",
-      "era": "BC",
-      "latitude": 30.631,
-      "longitude": 72.971,
-      "name": "Indus Cities Abandoned",
-      "name_ru": "Города Инда покинуты",
-      "tags": [
-        "Indus Valley",
-        "Decline",
-        "Migration"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1500",
-      "description": "Mumun pottery period begins in Korea with agricultural revolution, rectangular longhouses, and transition to sedentary farming communities",
-      "description_ru": "Период керамики Мумун начинается в Корее с сельскохозяйственной революцией, прямоугольными длинными домами и переходом к оседлым земледельческим общинам",
-      "era": "BC",
-      "latitude": 35.9078,
-      "longitude": 127.7669,
-      "name": "Mumun Agricultural Period Begins",
-      "name_ru": "Начало земледельческого периода Мумун",
-      "source": "https://en.wikipedia.org/wiki/Mumun_pottery_period",
-      "tags": [
-        "Korea",
-        "Agriculture",
-        "Mumun",
-        "Culture"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1400",
-      "description": "Shang Dynasty develops a sophisticated 360-day calendar system incorporating lunar and solar cycles with intercalary months",
-      "description_ru": "Династия Шан разрабатывает сложную 360-дневную календарную систему, включающую лунные и солнечные циклы с вставными месяцами",
-      "era": "BC",
-      "latitude": 36.103,
-      "longitude": 114.358,
-      "name": "Shang Calendar System",
-      "name_ru": "Календарная система Шан",
-      "tags": [
-        "Shang Dynasty",
-        "China",
-        "Calendar",
-        "Astronomy"
-      ],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.1200",
-      "description": "Shang royal tombs at Anyang feature elaborate burials with bronze vessels, jade ornaments, and sacrificial victims, demonstrating peak of Shang culture",
-      "description_ru": "Царские гробницы Шан в Аньяне содержат сложные захоронения с бронзовыми сосудами, нефритовыми украшениями и жертвенными жертвами, демонстрируя пик культуры Шан",
-      "era": "BC",
-      "latitude": 36.103,
-      "longitude": 114.358,
-      "name": "Shang Royal Tombs Peak",
-      "name_ru": "Пик царских гробниц Шан",
-      "tags": [
-        "Shang Dynasty",
-        "China",
-        "Tomb",
-        "Burial"
+        "Lapita",
+        "Burial",
+        "Vanuatu"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.1000",
       "description": "Late Jōmon period in Japan sees population decline due to climate cooling, but maritime trade networks continue across the archipelago",
-      "description_ru": "Поздний период Дзёмон в Японии видит снижение населения из-за похолодания климата, но морские торговые сети продолжаются по всему архипелагу",
+      "description_ru": "В поздний период Дзёмон в Японии климат становится холоднее, население уменьшается; однако морские торговые сети по прежнему опутывают архипелаг",
       "era": "BC",
       "latitude": 35.6762,
       "longitude": 139.6503,
       "name": "Late Jōmon Climate Adaptation",
-      "name_ru": "Климатическая адаптация позднего Дзёмон",
+      "name_ru": "Похолодание в Японии",
       "tags": [
         "Japan",
         "Jōmon",
@@ -3028,22 +3012,21 @@
       "type": "historic"
     },
     {
-      "date": "01.01.1046",
-      "description": "Zhou forces from northwestern China conquer the Shang Dynasty, claiming the Mandate of Heaven and establishing the Zhou Dynasty",
-      "description_ru": "Силы Чжоу из северо-западного Китая завоевывают династию Шан, провозглашая Мандат Неба и основывая династию Чжоу",
+      "date": "01.01.1000",
+      "description": "Lapita culture reaches Tonga and Samoa in Western Polynesia, completing a 4000 km maritime expansion and establishing ancestral Polynesian culture",
+      "description_ru": "Культура Лапита достигает Тонга и Самоа в Западной Полинезии, завершая 4000-километровую морскую экспансию и устанавливая предковую полинезийскую культуру",
       "era": "BC",
-      "latitude": 34.341,
-      "longitude": 108.94,
-      "name": "Zhou Conquest of Shang",
-      "name_ru": "Завоевание Шан династией Чжоу",
-      "source": "https://www.britannica.com/topic/Shang-dynasty",
+      "latitude": -21.179,
+      "longitude": -175.198,
+      "name": "Western Polynesia Reached",
+      "name_ru": "Достижение Западной Полинезии Лапита",
       "tags": [
-        "China",
-        "Shang Dynasty",
-        "Zhou Dynasty",
-        "Conquest"
+        "Lapita",
+        "Tonga",
+        "Samoa",
+        "Polynesia"
       ],
-      "type": "political"
+      "type": "historic"
     }
   ],
   "filename": "ancient_civilizations_pre_1000BC.json"
