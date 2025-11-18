@@ -89,6 +89,7 @@
       :events="events"
       @close="timelineModalOpen = false"
       @focus-event="$emit('focus-event', $event)"
+      @tag-clicked="$emit('tag-clicked', $event)"
     />
   </div>
 </template>

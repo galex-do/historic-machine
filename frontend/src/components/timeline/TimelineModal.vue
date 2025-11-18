@@ -39,6 +39,8 @@
                     :key="tag.id"
                     class="event_tag"
                     :style="{ color: tag.color || '#6366f1' }"
+                    :title="`Click to filter events by '${tag.name}'`"
+                    @click.stop="handleTagClick(tag)"
                   >#{{ tag.name }}{{ index < group.events[0].tags.length - 1 ? ' ' : '' }}</span>
                 </template>
                 {{ ' ' }}
@@ -87,6 +89,8 @@
                         :key="tag.id"
                         class="event_tag"
                         :style="{ color: tag.color || '#6366f1' }"
+                        :title="`Click to filter events by '${tag.name}'`"
+                        @click.stop="handleTagClick(tag)"
                       >#{{ tag.name }}{{ index < event.tags.length - 1 ? ' ' : '' }}</span>
                     </template>
                     {{ ' ' }}
@@ -125,7 +129,7 @@ export default {
       default: () => []
     }
   },
-  emits: ['close', 'focus-event'],
+  emits: ['close', 'focus-event', 'tag-clicked'],
   setup(props, { emit }) {
     const { t, formatEventDisplayDate } = useLocale()
     const previouslyFocusedElement = ref(null)
@@ -205,6 +209,11 @@ export default {
       closeModal()
     }
 
+    const handleTagClick = (tag) => {
+      emit('tag-clicked', tag)
+      closeModal()
+    }
+
     // Handle ESC key to close modal
     const handleEscape = (event) => {
       if (event.key === 'Escape' && props.isOpen) {
@@ -235,6 +244,7 @@ export default {
       groupedEvents,
       closeModal,
       handleFocusEvent,
+      handleTagClick,
       getEventEmoji
     }
   }
