@@ -1,5 +1,5 @@
 {
-  "description": "Dataset imported with 167 events",
+  "description": "Dataset with 180 events - expanded coverage of ancient Asian civilizations including Japan, Korea, China, and South Asia",
   "events": [
     {
       "date": "01.01.9500",
@@ -2800,6 +2800,247 @@
       "tags": [
         "Capital",
         "Jerusalem",
+        "Conquest"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.8000",
+      "description": "Jeulmun pottery culture emerges in Korea, marking the Korean Neolithic period with distinctive comb-pattern ceramics",
+      "description_ru": "Культура керамики Чыльмун возникает в Корее, знаменуя корейский неолитический период с характерной гребенчатой керамикой",
+      "era": "BC",
+      "latitude": 37.5665,
+      "longitude": 126.978,
+      "name": "Jeulmun Pottery Culture Begins",
+      "name_ru": "Начало культуры керамики Чыльмун",
+      "source": "https://en.wikipedia.org/wiki/Jeulmun_pottery_period",
+      "tags": [
+        "Korea",
+        "Pottery",
+        "Neolithic",
+        "Culture"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.5000",
+      "description": "Middle Jōmon period begins in Japan with peak population and elaborate cord-marked pottery traditions during the climatic optimum",
+      "description_ru": "Средний период Дзёмон начинается в Японии с пиком населения и тщательно изготовленной керамикой со следами веревки во время климатического оптимума",
+      "era": "BC",
+      "latitude": 35.6762,
+      "longitude": 139.6503,
+      "name": "Middle Jōmon Culture Peak",
+      "name_ru": "Пик средней культуры Дзёмон",
+      "source": "https://en.wikipedia.org/wiki/J%C5%8Dmon_period",
+      "tags": [
+        "Japan",
+        "Jōmon",
+        "Pottery",
+        "Culture"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.3500",
+      "description": "Korean Jeulmun culture develops small-scale agriculture with millet and rice cultivation while maintaining hunter-gatherer practices",
+      "description_ru": "Корейская культура Чыльмун развивает мелкомасштабное земледелие с выращиванием проса и риса, сохраняя практики охотников-собирателей",
+      "era": "BC",
+      "latitude": 37.5665,
+      "longitude": 126.978,
+      "name": "Early Agriculture in Korea",
+      "name_ru": "Раннее земледелие в Корее",
+      "tags": [
+        "Korea",
+        "Agriculture",
+        "Neolithic"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.3000",
+      "description": "Jōmon people in Japan develop sophisticated lacquerware and elaborate clay figurines (dogū) for ritual purposes",
+      "description_ru": "Люди Дзёмон в Японии разрабатывают изысканные лаковые изделия и сложные глиняные фигурки (догу) для ритуальных целей",
+      "era": "BC",
+      "latitude": 35.6762,
+      "longitude": 139.6503,
+      "name": "Jōmon Ritual Art Develops",
+      "name_ru": "Развитие ритуального искусства Дзёмон",
+      "tags": [
+        "Japan",
+        "Jōmon",
+        "Art",
+        "Culture"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.2600",
+      "description": "Indus Valley Civilization reaches its peak with over 1,000 urban centers including Harappa, Mohenjo-Daro, and Dholavira featuring advanced urban planning",
+      "description_ru": "Цивилизация долины Инда достигает своего пика с более чем 1000 городских центров, включая Хараппу, Мохенджо-Даро и Долавиру с развитым городским планированием",
+      "era": "BC",
+      "latitude": 30.631,
+      "longitude": 72.971,
+      "name": "Indus Valley Civilization Peak",
+      "name_ru": "Пик цивилизации долины Инда",
+      "tags": [
+        "Indus Valley",
+        "Urban",
+        "Civilization",
+        "Peak"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.2500",
+      "description": "Late Jōmon period in Japan sees development of deep-sea fishing technology and shell mounds (kaizuka) along coastal settlements",
+      "description_ru": "Поздний период Дзёмон в Японии видит развитие технологий глубоководной рыбалки и ракушечных куч (кайдзука) вдоль прибрежных поселений",
+      "era": "BC",
+      "latitude": 35.6762,
+      "longitude": 139.6503,
+      "name": "Jōmon Maritime Technology",
+      "name_ru": "Морские технологии Дзёмон",
+      "tags": [
+        "Japan",
+        "Jōmon",
+        "Maritime",
+        "Technology"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.2000",
+      "description": "Jōmon people construct stone circles at Ōyu (Akita Prefecture) for ceremonial purposes, demonstrating complex social organization",
+      "description_ru": "Люди Дзёмон строят каменные круги в Ою (префектура Акита) для церемониальных целей, демонстрируя сложную социальную организацию",
+      "era": "BC",
+      "latitude": 40.2833,
+      "longitude": 140.7833,
+      "name": "Ōyu Stone Circles",
+      "name_ru": "Каменные круги Ою",
+      "source": "https://jomon-japan.jp/en/jomon-sites/oyu/",
+      "tags": [
+        "Japan",
+        "Jōmon",
+        "Megalithic",
+        "Stone Circle",
+        "Building"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1900",
+      "description": "Indus Valley Civilization begins gradual decline as monsoons weaken and the Ghaggar-Hakra river system starts drying up",
+      "description_ru": "Цивилизация долины Инда начинает постепенный упадок по мере ослабления муссонов и высыхания речной системы Гаггар-Хакра",
+      "era": "BC",
+      "latitude": 27.376,
+      "longitude": 68.838,
+      "name": "Beginning of Indus Valley Decline",
+      "name_ru": "Начало упадка долины Инда",
+      "tags": [
+        "Indus Valley",
+        "Decline",
+        "Climate"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1700",
+      "description": "Major cities of the Indus Valley Civilization are abandoned as populations migrate eastward toward the Himalayan foothills seeking reliable rainfall",
+      "description_ru": "Крупные города цивилизации долины Инда покинуты, поскольку население мигрирует на восток к предгорьям Гималаев в поисках надежных осадков",
+      "era": "BC",
+      "latitude": 30.631,
+      "longitude": 72.971,
+      "name": "Indus Cities Abandoned",
+      "name_ru": "Города Инда покинуты",
+      "tags": [
+        "Indus Valley",
+        "Decline",
+        "Migration"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1500",
+      "description": "Mumun pottery period begins in Korea with agricultural revolution, rectangular longhouses, and transition to sedentary farming communities",
+      "description_ru": "Период керамики Мумун начинается в Корее с сельскохозяйственной революцией, прямоугольными длинными домами и переходом к оседлым земледельческим общинам",
+      "era": "BC",
+      "latitude": 35.9078,
+      "longitude": 127.7669,
+      "name": "Mumun Agricultural Period Begins",
+      "name_ru": "Начало земледельческого периода Мумун",
+      "source": "https://en.wikipedia.org/wiki/Mumun_pottery_period",
+      "tags": [
+        "Korea",
+        "Agriculture",
+        "Mumun",
+        "Culture"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1400",
+      "description": "Shang Dynasty develops a sophisticated 360-day calendar system incorporating lunar and solar cycles with intercalary months",
+      "description_ru": "Династия Шан разрабатывает сложную 360-дневную календарную систему, включающую лунные и солнечные циклы с вставными месяцами",
+      "era": "BC",
+      "latitude": 36.103,
+      "longitude": 114.358,
+      "name": "Shang Calendar System",
+      "name_ru": "Календарная система Шан",
+      "tags": [
+        "Shang Dynasty",
+        "China",
+        "Calendar",
+        "Astronomy"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.1200",
+      "description": "Shang royal tombs at Anyang feature elaborate burials with bronze vessels, jade ornaments, and sacrificial victims, demonstrating peak of Shang culture",
+      "description_ru": "Царские гробницы Шан в Аньяне содержат сложные захоронения с бронзовыми сосудами, нефритовыми украшениями и жертвенными жертвами, демонстрируя пик культуры Шан",
+      "era": "BC",
+      "latitude": 36.103,
+      "longitude": 114.358,
+      "name": "Shang Royal Tombs Peak",
+      "name_ru": "Пик царских гробниц Шан",
+      "tags": [
+        "Shang Dynasty",
+        "China",
+        "Tomb",
+        "Burial"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1000",
+      "description": "Late Jōmon period in Japan sees population decline due to climate cooling, but maritime trade networks continue across the archipelago",
+      "description_ru": "Поздний период Дзёмон в Японии видит снижение населения из-за похолодания климата, но морские торговые сети продолжаются по всему архипелагу",
+      "era": "BC",
+      "latitude": 35.6762,
+      "longitude": 139.6503,
+      "name": "Late Jōmon Climate Adaptation",
+      "name_ru": "Климатическая адаптация позднего Дзёмон",
+      "tags": [
+        "Japan",
+        "Jōmon",
+        "Climate",
+        "Trade"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1046",
+      "description": "Zhou forces from northwestern China conquer the Shang Dynasty, claiming the Mandate of Heaven and establishing the Zhou Dynasty",
+      "description_ru": "Силы Чжоу из северо-западного Китая завоевывают династию Шан, провозглашая Мандат Неба и основывая династию Чжоу",
+      "era": "BC",
+      "latitude": 34.341,
+      "longitude": 108.94,
+      "name": "Zhou Conquest of Shang",
+      "name_ru": "Завоевание Шан династией Чжоу",
+      "source": "https://www.britannica.com/topic/Shang-dynasty",
+      "tags": [
+        "China",
+        "Shang Dynasty",
+        "Zhou Dynasty",
         "Conquest"
       ],
       "type": "political"
