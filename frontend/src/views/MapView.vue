@@ -35,6 +35,7 @@
             :events="displayedEvents"
             :selected-tags="selectedTags"
             :follow-enabled="narrativeFlowEnabled"
+            :map-filter-enabled="mapFilterEnabled"
             @focus-event="focusOnEvent"
             @highlight-event="highlightOnEvent"
             @map-filter-toggle="handleMapFilterToggle"

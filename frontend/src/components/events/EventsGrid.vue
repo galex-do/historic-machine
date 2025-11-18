@@ -78,6 +78,7 @@
         v-for="event in paginatedEvents"
         :key="event.id"
         :event="event"
+        :map-filter-enabled="mapFilterEnabled"
         @focus-event="$emit('focus-event', $event)"
         @highlight-event="$emit('highlight-event', $event)"
         @tag-clicked="$emit('tag-clicked', $event)"
@@ -120,6 +121,10 @@ export default {
     followEnabled: {
       type: Boolean,
       default: false
+    },
+    mapFilterEnabled: {
+      type: Boolean,
+      default: false
     }
   },
   emits: ['focus-event', 'highlight-event', 'map-filter-toggle', 'tag-clicked', 'remove-tag', 'clear-all-tags', 'toggle-follow'],
@@ -142,7 +147,6 @@ export default {
     return {
       currentPage: 1,
       eventsPerPage: 3, // Maximum 3 cards to prevent sidebar scrolling
-      mapFilterEnabled: false,
       tagFilterVisible: loadTagFilterState(),
       timelineModalOpen: false,
       STORAGE_KEY

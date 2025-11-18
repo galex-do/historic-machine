@@ -31,14 +31,15 @@
       </template>
       {{ ' ' }}
       <button 
+        v-if="mapFilterEnabled"
         class="highlight_btn" 
         @click="$emit('highlight-event', event)" 
         :title="t('highlightOnMap')"
       >
         📍
       </button>
-      {{ ' ' }}
       <button 
+        v-else
         class="focus_btn" 
         @click="$emit('focus-event', event)" 
         :title="t('focusOnMap')"
@@ -64,6 +65,10 @@ export default {
     event: {
       type: Object,
       required: true
+    },
+    mapFilterEnabled: {
+      type: Boolean,
+      default: false
     }
   },
   emits: ['focus-event', 'highlight-event', 'tag-clicked'],
