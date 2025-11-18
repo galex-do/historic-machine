@@ -566,22 +566,22 @@ export default {
       const isInBounds = bounds.contains(markerLatLng)
 
       // Create a static halo ring around the marker
-      // Outer ring: semi-transparent golden circle
+      // Outer ring: semi-transparent red circle
       const outerRing = L.circleMarker(markerLatLng, {
-        radius: 20,
+        radius: 28,
         fillColor: 'transparent',
         fillOpacity: 0,
-        color: '#fbbf24', // Golden color
-        weight: 4,
-        opacity: 0.7
+        color: '#ef4444', // Red color
+        weight: 5,
+        opacity: 0.8
       })
 
       // Center dot: small solid dot for precision
       const centerDot = L.circleMarker(markerLatLng, {
         radius: 3,
-        fillColor: '#fbbf24',
+        fillColor: '#ef4444',
         fillOpacity: 1,
-        color: '#f59e0b',
+        color: '#dc2626',
         weight: 1,
         opacity: 1
       })
