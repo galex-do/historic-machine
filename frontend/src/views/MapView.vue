@@ -277,6 +277,9 @@ export default {
         worldMap.value.getCurrentBounds().then(bounds => {
           mapBounds.value = bounds
         })
+      } else if (!enabled && worldMap.value) {
+        // Clear highlight overlay when disabling map filter
+        worldMap.value.clearHighlight()
       }
     }
 

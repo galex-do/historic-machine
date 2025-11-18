@@ -602,6 +602,16 @@ export default {
       }
     },
 
+    // Clear highlight overlay
+    clearHighlight() {
+      if (this.highlight_overlay && this.map) {
+        this.map.removeLayer(this.highlight_overlay)
+        this.highlight_overlay = null
+      }
+      // Also clear any off-screen notification
+      this.show_offscreen_notification = false
+    },
+
     // Handle map bounds changes
     handle_bounds_change() {
       if (!this.map) return
