@@ -425,6 +425,7 @@ export default {
 
       // Map filter
       displayedEvents,
+      mapFilterEnabled,
       handleMapFilterToggle,
       handleMapBoundsChanged,
       worldMap,
