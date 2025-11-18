@@ -1,0 +1,918 @@
+{
+  "description": "Dataset imported with 52 events",
+  "events": [
+    {
+      "date": "01.01.1680",
+      "description": "Labarna I begins unification of rival Hittite city-states in central Anatolia, establishing foundation for Hittite Kingdom",
+      "description_ru": "Лабарна I начинает объединение соперничающих хеттских городов-государств в центральной Анатолии, закладывая основу Хеттского царства",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Labarna I Unites Hittite Cities",
+      "name_ru": "Лабарна I объединяет хеттские города",
+      "source": "https://en.wikipedia.org/wiki/List_of_Hittite_kings",
+      "tags": [
+        "Hittite",
+        "Foundation",
+        "Kingdom",
+        "Unification"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1650",
+      "description": "Hattusili I (Labarna II) establishes Hattusa as permanent capital of Hittite Kingdom, constructing massive fortifications and temples",
+      "description_ru": "Хаттусили I (Лабарна II) основывает Хаттусу как постоянную столицу Хеттского царства, строя массивные укрепления и храмы",
+      "era": "BC",
+      "latitude": 40.0189,
+      "longitude": 34.6161,
+      "name": "Hattusa Becomes Hittite Capital",
+      "name_ru": "Хаттуса становится столицей хеттов",
+      "source": "https://www.worldhistory.org/Hattusa/",
+      "tags": [
+        "Hittite",
+        "Capital",
+        "Fortification",
+        "Architecture"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1647",
+      "description": "Hattusili I repels major Hurrian invasion from southeast, securing Hittite borders and establishing military dominance in Anatolia",
+      "description_ru": "Хаттусили I отражает крупное хурритское вторжение с юго-востока, обеспечивая границы хеттов и устанавливая военное господство в Анатолии",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Hittite Victory Over Hurrians",
+      "name_ru": "Хеттская победа над хурритами",
+      "source": "https://en.wikipedia.org/wiki/Hattusili_I",
+      "tags": [
+        "Hittite",
+        "Hurrian",
+        "Battle",
+        "Defense"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1640",
+      "description": "Hattusili I begins Syrian campaigns, besieging Aleppo and establishing Hittite presence in northern Syria, though city resists capture",
+      "description_ru": "Хаттусили I начинает сирийские кампании, осаждая Алеппо и утверждая присутствие хеттов в северной Сирии, хотя город сопротивляется захвату",
+      "era": "BC",
+      "latitude": 36.202,
+      "longitude": 37.159,
+      "name": "First Siege of Aleppo",
+      "name_ru": "Первая осада Алеппо",
+      "source": "https://www.britannica.com/topic/Hittite",
+      "tags": [
+        "Hittite",
+        "Syria",
+        "Campaign",
+        "Expansion"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1600",
+      "description": "Mursili I successfully conquers Aleppo after decades of Hittite campaigns, bringing wealthy Syrian city under Hittite control",
+      "description_ru": "Мурсили I успешно завоевывает Алеппо после десятилетий хеттских кампаний, подчиняя богатый сирийский город хеттскому контролю",
+      "era": "BC",
+      "latitude": 36.202,
+      "longitude": 37.159,
+      "name": "Mursili I Conquers Aleppo",
+      "name_ru": "Мурсили I завоевывает Алеппо",
+      "source": "https://timemaps.com/civilizations/the-hittites/",
+      "tags": [
+        "Hittite",
+        "Syria",
+        "Conquest",
+        "Expansion"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1525",
+      "description": "Telipinus issues famous Edict of Telipinus, establishing strict succession rules and ending period of palace murders and instability",
+      "description_ru": "Телепину издает знаменитый Эдикт Телепину, устанавливающий строгие правила престолонаследия и прекращающий период дворцовых убийств и нестабильности",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Edict of Telipinus Issued",
+      "name_ru": "Издание Эдикта Телепину",
+      "source": "https://www.worldhistory.org/Hittite_Civilization/",
+      "tags": [
+        "Hittite",
+        "Law",
+        "Reform",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1500",
+      "description": "Beginning of Hittite Middle Kingdom period marked by weakened central authority and loss of Syrian territories to rising Mitanni Empire",
+      "description_ru": "Начало периода Хеттского Среднего царства, отмеченного ослаблением центральной власти и потерей сирийских территорий растущей империи Митанни",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Hittite Middle Kingdom Begins",
+      "name_ru": "Начало Хеттского Среднего царства",
+      "source": "https://en.wikipedia.org/wiki/Hittites",
+      "tags": [
+        "Hittite",
+        "Decline",
+        "Mitanni"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1480",
+      "description": "Kaska tribes from northern mountains begin persistent raids on Hittite heartland, forcing temporary abandonment of Hattusa and capital relocation",
+      "description_ru": "Племена каска с северных гор начинают постоянные набеги на хеттское сердце, вынуждая временно оставить Хаттусу и перенести столицу",
+      "era": "BC",
+      "latitude": 40.5,
+      "longitude": 34.5,
+      "name": "Kaska Raids Begin",
+      "name_ru": "Начало набегов каска",
+      "source": "https://en.wikipedia.org/wiki/Kaskians",
+      "tags": [
+        "Hittite",
+        "Kaska",
+        "Invasion",
+        "Crisis"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1430",
+      "description": "Tudhaliya I emerges as king, marking revival of Hittite power and beginning of New Kingdom period with military reforms",
+      "description_ru": "Тудхалия I становится царем, знаменуя возрождение хеттской мощи и начало периода Нового царства с военными реформами",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Tudhaliya I Restores Hittite Power",
+      "name_ru": "Тудхалия I восстанавливает хеттскую мощь",
+      "source": "https://timemaps.com/civilizations/the-hittites/",
+      "tags": [
+        "Hittite",
+        "Dynasty",
+        "Revival",
+        "Reform"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1420",
+      "description": "Tudhaliya I allies with Kingdom of Kizzuwatna in Cilicia, securing southeastern border and gaining access to Mediterranean trade routes",
+      "description_ru": "Тудхалия I заключает союз с царством Киццуватна в Киликии, обеспечивая юго-восточную границу и получая доступ к средиземноморским торговым путям",
+      "era": "BC",
+      "latitude": 37.0,
+      "longitude": 35.0,
+      "name": "Alliance with Kizzuwatna",
+      "name_ru": "Союз с Киццуватной",
+      "source": "https://en.wikipedia.org/wiki/Kizzuwatna",
+      "tags": [
+        "Hittite",
+        "Alliance",
+        "Diplomacy",
+        "Trade"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1400",
+      "description": "Enemies including Arzawa kingdom and Kaska tribes temporarily sack and raze Hattusa, forcing brief Hittite retreat",
+      "description_ru": "Враги, включая царство Арцава и племена каска, временно разграбляют и разрушают Хаттусу, вынуждая хеттов к краткому отступлению",
+      "era": "BC",
+      "latitude": 40.0189,
+      "longitude": 34.6161,
+      "name": "Temporary Fall of Hattusa",
+      "name_ru": "Временное падение Хаттусы",
+      "source": "https://www.worldhistory.org/Hattusa/",
+      "tags": [
+        "Hittite",
+        "Kaska",
+        "Destruction",
+        "Crisis"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1380",
+      "description": "Suppiluliuma I ascends throne and begins restoration of Hittite Empire, recapturing Hattusa and initiating ambitious military campaigns",
+      "description_ru": "Суппилулиума I восходит на престол и начинает восстановление Хеттской империи, отбивая Хаттусу и инициируя амбициозные военные кампании",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Reign of Suppiluliuma I Begins",
+      "name_ru": "Начало правления Суппилулиумы I",
+      "source": "https://www.britannica.com/biography/Suppiluliumas-I",
+      "tags": [
+        "Hittite",
+        "Dynasty",
+        "Revival",
+        "Expansion"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1370",
+      "description": "Suppiluliuma I leads decisive campaign against Mitanni, sacking capital Washukanni and destroying Hurrian empire's power",
+      "description_ru": "Суппилулиума I ведет решающую кампанию против Митанни, разграбляя столицу Вашшуккани и уничтожая мощь хурритской империи",
+      "era": "BC",
+      "latitude": 36.85,
+      "longitude": 40.5,
+      "name": "Destruction of Mitanni Capital",
+      "name_ru": "Разрушение столицы Митанни",
+      "source": "https://www.worldhistory.org/Mitanni/",
+      "tags": [
+        "Hittite",
+        "Mitanni",
+        "Conquest",
+        "Destruction"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1365",
+      "description": "Suppiluliuma I conquers Carchemish on Euphrates River, establishing major administrative center controlling Syrian trade routes",
+      "description_ru": "Суппилулиума I завоевывает Каркемиш на реке Евфрат, основывая крупный административный центр, контролирующий сирийские торговые пути",
+      "era": "BC",
+      "latitude": 36.8258,
+      "longitude": 38.0106,
+      "name": "Conquest of Carchemish",
+      "name_ru": "Завоевание Каркемиша",
+      "source": "https://www.britannica.com/place/Carchemish",
+      "tags": [
+        "Hittite",
+        "Syria",
+        "Conquest",
+        "Trade"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1360",
+      "description": "Egyptian queen widow of Tutankhamun sends letter to Suppiluliuma I requesting Hittite prince as husband, creating diplomatic crisis",
+      "description_ru": "Египетская царица, вдова Тутанхамона, отправляет письмо Суппилулиуме I с просьбой о хеттском принце в мужья, создавая дипломатический кризис",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Egyptian Marriage Proposal",
+      "name_ru": "Египетское брачное предложение",
+      "source": "https://www.worldhistory.org/Suppiluliumas_I/",
+      "tags": [
+        "Hittite",
+        "Egyptian",
+        "Diplomacy",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1358",
+      "description": "Hittite prince Zannanza sent to Egypt is murdered at border, leading Suppiluliuma I to launch punitive campaigns against Egyptian territories in Syria",
+      "description_ru": "Хеттский принц Занананца, отправленный в Египет, убит на границе, что приводит Суппилулиуму I к карательным кампаниям против египетских территорий в Сирии",
+      "era": "BC",
+      "latitude": 36.0,
+      "longitude": 36.0,
+      "name": "Murder of Prince Zannanza",
+      "name_ru": "Убийство принца Занананцы",
+      "source": "https://en.wikipedia.org/wiki/Zannanza",
+      "tags": [
+        "Hittite",
+        "Egyptian",
+        "Assassination",
+        "Crisis"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1336",
+      "description": "Suppiluliuma I dies from plague brought by Egyptian prisoners, ending reign of greatest Hittite conqueror at empire's territorial peak",
+      "description_ru": "Суппилулиума I умирает от чумы, принесенной египетскими пленниками, завершая правление величайшего хеттского завоевателя на пике территориальной экспансии империи",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Death of Suppiluliuma I",
+      "name_ru": "Смерть Суппилулиумы I",
+      "source": "https://www.britannica.com/biography/Suppiluliumas-I",
+      "tags": [
+        "Hittite",
+        "Death",
+        "Plague",
+        "Egyptian"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1334",
+      "description": "Mursili II ascends throne during plague epidemic that devastates Hittite population, forcing defensive military posture initially",
+      "description_ru": "Мурсили II восходит на престол во время эпидемии чумы, опустошающей хеттское население, вынуждая к оборонительной военной позиции первоначально",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Accession of Mursili II",
+      "name_ru": "Воцарение Мурсили II",
+      "source": "https://en.wikipedia.org/wiki/Mursili_II",
+      "tags": [
+        "Hittite",
+        "Dynasty",
+        "Plague",
+        "Crisis"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1330",
+      "description": "Mursili II performs elaborate plague prayers and rituals documented in famous texts, seeking divine intervention to end devastating epidemic",
+      "description_ru": "Мурсили II проводит сложные молитвы и ритуалы от чумы, задокументированные в знаменитых текстах, ища божественного вмешательства для прекращения разрушительной эпидемии",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Plague Prayers of Mursili II",
+      "name_ru": "Молитвы от чумы Мурсили II",
+      "source": "https://www.worldhistory.org/article/1494/the-plague-prayers-of-mursili-ii/",
+      "tags": [
+        "Hittite",
+        "Religious",
+        "Plague",
+        "Prayer"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1320",
+      "description": "Mursili II launches major campaign against Arzawa confederation in western Anatolia, bringing rebellious territories back under Hittite control",
+      "description_ru": "Мурсили II начинает крупную кампанию против конфедерации Арцава в западной Анатолии, возвращая мятежные территории под хеттский контроль",
+      "era": "BC",
+      "latitude": 38.0,
+      "longitude": 28.0,
+      "name": "Conquest of Arzawa",
+      "name_ru": "Завоевание Арцавы",
+      "source": "https://en.wikipedia.org/wiki/Arzawa",
+      "tags": [
+        "Hittite",
+        "Conquest",
+        "Anatolia",
+        "Expansion"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1318",
+      "description": "Mursili II defeats Hayasa-Azzi confederation in northeast Anatolia, securing northern borders and vassalizing Armenian Highland kingdoms",
+      "description_ru": "Мурсили II побеждает конфедерацию Хаяса-Аззи на северо-востоке Анатолии, обеспечивая северные границы и делая вассалами царства Армянского нагорья",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 41.0,
+      "name": "Victory Over Hayasa-Azzi",
+      "name_ru": "Победа над Хаяса-Аззи",
+      "source": "https://en.wikipedia.org/wiki/Hayasa-Azzi",
+      "tags": [
+        "Hittite",
+        "Conquest",
+        "Vassalage",
+        "Anatolia"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1310",
+      "description": "Muwatalli II becomes king and faces growing Egyptian threat in Syria under aggressive Pharaoh Ramesses II",
+      "description_ru": "Муваталли II становится царем и сталкивается с растущей египетской угрозой в Сирии под властью агрессивного фараона Рамсеса II",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Accession of Muwatalli II",
+      "name_ru": "Воцарение Муваталли II",
+      "source": "https://en.wikipedia.org/wiki/Muwatalli_II",
+      "tags": [
+        "Hittite",
+        "Dynasty",
+        "Egyptian"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1306",
+      "description": "Muwatalli II relocates capital from Hattusa to Tarhuntassa in southern Anatolia due to intensifying Kaska raids and strategic needs",
+      "description_ru": "Муваталли II переносит столицу из Хаттусы в Тархунтассу в южной Анатолии из-за усиливающихся набегов каска и стратегических потребностей",
+      "era": "BC",
+      "latitude": 37.0,
+      "longitude": 33.0,
+      "name": "Capital Moved to Tarhuntassa",
+      "name_ru": "Столица перенесена в Тархунтассу",
+      "source": "https://en.wikipedia.org/wiki/Tarhuntassa",
+      "tags": [
+        "Hittite",
+        "Capital",
+        "Relocation",
+        "Kaska"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.05.1274",
+      "description": "Battle of Kadesh fought between Muwatalli II with 40,000 troops and Ramesses II - largest chariot battle in history ends in tactical draw",
+      "description_ru": "Битва при Кадеше между Муваталли II с 40 000 воинов и Рамсесом II - крупнейшая битва колесниц в истории заканчивается тактической ничьей",
+      "era": "BC",
+      "latitude": 34.5647,
+      "longitude": 36.5156,
+      "name": "Battle of Kadesh",
+      "name_ru": "Битва при Кадеше",
+      "source": "https://www.worldhistory.org/Battle_of_Kadesh/",
+      "tags": [
+        "Hittite",
+        "Egyptian",
+        "Battle",
+        "Chariot"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1272",
+      "description": "Following Kadesh, Hittites secure control over Syria south to Damascus, maintaining strategic advantage despite tactical draw",
+      "description_ru": "После Кадеша хетты обеспечивают контроль над Сирией на юг до Дамаска, сохраняя стратегическое преимущество, несмотря на тактическую ничью",
+      "era": "BC",
+      "latitude": 33.5138,
+      "longitude": 36.2765,
+      "name": "Hittite Control of Southern Syria",
+      "name_ru": "Хеттский контроль южной Сирии",
+      "source": "https://timemaps.com/civilizations/the-hittites/",
+      "tags": [
+        "Hittite",
+        "Syria",
+        "Expansion",
+        "Egyptian"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1287",
+      "description": "Hattusili III usurps throne from nephew Mursili III (Urhi-Teshub) in civil war, claiming legitimacy through wife Puduhepa's royal lineage",
+      "description_ru": "Хаттусили III узурпирует престол у племянника Мурсили III (Урхи-Тешуба) в гражданской войне, заявляя о легитимности через царское происхождение жены Пудухепы",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Usurpation by Hattusili III",
+      "name_ru": "Узурпация Хаттусили III",
+      "source": "https://en.wikipedia.org/wiki/Hattusili_III",
+      "tags": [
+        "Hittite",
+        "Dynasty",
+        "Civil War",
+        "Usurpation"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1280",
+      "description": "Muwatalli II signs treaty with King Alaksandu of Wilusa (possibly Homer's Troy), establishing Hittite influence in northwestern Anatolia",
+      "description_ru": "Муваталли II подписывает договор с царем Алаксанду из Вилусы (возможно, гомеровской Трои), устанавливая хеттское влияние в северо-западной Анатолии",
+      "era": "BC",
+      "latitude": 39.9575,
+      "longitude": 26.2381,
+      "name": "Treaty with Wilusa (Troy)",
+      "name_ru": "Договор с Вилусой (Троей)",
+      "source": "https://en.wikipedia.org/wiki/Wilusa",
+      "tags": [
+        "Hittite",
+        "Treaty",
+        "Anatolia",
+        "Troy"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1259",
+      "description": "Hattusili III and Ramesses II sign Treaty of Kadesh - world's first recorded peace treaty - defining borders and creating defensive alliance",
+      "description_ru": "Хаттусили III и Рамсес II подписывают договор Кадеша - первый зафиксированный мирный договор в мире - определяющий границы и создающий оборонительный союз",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Treaty of Kadesh Signed",
+      "name_ru": "Подписание договора Кадеша",
+      "source": "https://www.worldhistory.org/Egyptian-Hittite_Peace_Treaty/",
+      "tags": [
+        "Hittite",
+        "Egyptian",
+        "Treaty",
+        "Peace"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1246",
+      "description": "Hattusili III's daughter marries Pharaoh Ramesses II, cementing Hittite-Egyptian alliance and bringing era of peaceful coexistence",
+      "description_ru": "Дочь Хаттусили III выходит замуж за фараона Рамсеса II, закрепляя хетто-египетский союз и принося эру мирного сосуществования",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Royal Marriage Alliance with Egypt",
+      "name_ru": "Королевский брачный союз с Египтом",
+      "source": "https://en.wikipedia.org/wiki/Hattusili_III",
+      "tags": [
+        "Hittite",
+        "Egyptian",
+        "Alliance",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1245",
+      "description": "Tudhaliya IV becomes king and faces rising Assyrian threat under Tukulti-Ninurta I who challenges Hittite eastern territories",
+      "description_ru": "Тудхалия IV становится царем и сталкивается с растущей ассирийской угрозой под властью Тукульти-Нинурты I, который оспаривает восточные хеттские территории",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Accession of Tudhaliya IV",
+      "name_ru": "Воцарение Тудхалии IV",
+      "source": "https://en.wikipedia.org/wiki/Tudhaliya_IV",
+      "tags": [
+        "Hittite",
+        "Dynasty",
+        "Assyrian"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1244",
+      "description": "Battle of Nihriya - Tudhaliya IV suffers major defeat against Assyrian king Tukulti-Ninurta I, losing control of eastern territories",
+      "description_ru": "Битва при Нихрии - Тудхалия IV терпит крупное поражение от ассирийского царя Тукульти-Нинурты I, теряя контроль над восточными территориями",
+      "era": "BC",
+      "latitude": 37.0,
+      "longitude": 42.0,
+      "name": "Battle of Nihriya",
+      "name_ru": "Битва при Нихрии",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Nihriya",
+      "tags": [
+        "Hittite",
+        "Assyrian",
+        "Battle",
+        "Defeat"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1240",
+      "description": "Tudhaliya IV constructs Yazilikaya rock sanctuary near Hattusa with elaborate relief carvings depicting Hittite pantheon and royal processions",
+      "description_ru": "Тудхалия IV строит скальное святилище Язылыкая близ Хаттусы с детальными рельефными изображениями хеттского пантеона и королевских процессий",
+      "era": "BC",
+      "latitude": 40.0394,
+      "longitude": 34.6217,
+      "name": "Construction of Yazilikaya Sanctuary",
+      "name_ru": "Строительство святилища Язылыкая",
+      "source": "https://www.worldhistory.org/Yazilikaya/",
+      "tags": [
+        "Hittite",
+        "Religious",
+        "Architecture",
+        "Art"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1235",
+      "description": "Tudhaliya IV temporarily annexes Cyprus (Alashiya), establishing Hittite naval presence in eastern Mediterranean",
+      "description_ru": "Тудхалия IV временно аннексирует Кипр (Алашию), устанавливая хеттское морское присутствие в восточном Средиземноморье",
+      "era": "BC",
+      "latitude": 35.1264,
+      "longitude": 33.4299,
+      "name": "Annexation of Cyprus",
+      "name_ru": "Аннексия Кипра",
+      "source": "https://timemaps.com/civilizations/the-hittites/",
+      "tags": [
+        "Hittite",
+        "Cyprus",
+        "Conquest",
+        "Naval"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1215",
+      "description": "Suppiluliuma II becomes last Hittite king, inheriting empire facing multiple external threats and internal instability",
+      "description_ru": "Суппилулиума II становится последним хеттским царем, наследуя империю, сталкивающуюся с множественными внешними угрозами и внутренней нестабильностью",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Last Hittite King Crowned",
+      "name_ru": "Коронация последнего хеттского царя",
+      "source": "https://en.wikipedia.org/wiki/Suppiluliuma_II",
+      "tags": [
+        "Hittite",
+        "Dynasty",
+        "Decline"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1210",
+      "description": "Suppiluliuma II achieves naval victory against Alashiya (Cyprus) fleet in Mediterranean - first recorded Hittite naval battle",
+      "description_ru": "Суппилулиума II одерживает морскую победу над флотом Алашии (Кипра) в Средиземном море - первая зафиксированная хеттская морская битва",
+      "era": "BC",
+      "latitude": 35.1264,
+      "longitude": 33.4299,
+      "name": "Naval Victory Over Cyprus",
+      "name_ru": "Морская победа над Кипром",
+      "source": "https://en.wikipedia.org/wiki/Suppiluliuma_II",
+      "tags": [
+        "Hittite",
+        "Cyprus",
+        "Naval",
+        "Battle"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1205",
+      "description": "Sea Peoples begin devastating raids on Hittite coastal territories in Cilicia, disrupting trade and weakening imperial control",
+      "description_ru": "Народы моря начинают разрушительные набеги на прибрежные хеттские территории в Киликии, нарушая торговлю и ослабляя имперский контроль",
+      "era": "BC",
+      "latitude": 36.5,
+      "longitude": 34.5,
+      "name": "Sea Peoples Raids Begin",
+      "name_ru": "Начало набегов народов моря",
+      "source": "https://www.worldhistory.org/Sea_Peoples/",
+      "tags": [
+        "Hittite",
+        "Sea Peoples",
+        "Invasion",
+        "Crisis"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1200",
+      "description": "Widespread drought and famine strike Hittite heartland, forcing grain imports from Egypt and weakening military capacity",
+      "description_ru": "Широкомасштабная засуха и голод поражают хеттское сердце, вынуждая импортировать зерно из Египта и ослабляя военный потенциал",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Great Drought and Famine",
+      "name_ru": "Великая засуха и голод",
+      "source": "https://www.worldhistory.org/Hittite_Civilization/",
+      "tags": [
+        "Hittite",
+        "Famine",
+        "Climate",
+        "Crisis"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1195",
+      "description": "Phrygian and Bryges tribes migrate into western Anatolia from Balkans, beginning invasions that fragment Hittite territories",
+      "description_ru": "Фригийские и бригские племена мигрируют в западную Анатолию с Балкан, начиная вторжения, которые фрагментируют хеттские территории",
+      "era": "BC",
+      "latitude": 39.0,
+      "longitude": 30.0,
+      "name": "Phrygian Migration Begins",
+      "name_ru": "Начало фригийской миграции",
+      "source": "https://en.wikipedia.org/wiki/Phrygians",
+      "tags": [
+        "Hittite",
+        "Phrygian",
+        "Migration",
+        "Invasion"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1190",
+      "description": "Kaska tribes intensify attacks from north, penetrating deep into Hittite heartland and threatening Hattusa directly",
+      "description_ru": "Племена каска усиливают атаки с севера, проникая глубоко в хеттское сердце и непосредственно угрожая Хаттусе",
+      "era": "BC",
+      "latitude": 40.5,
+      "longitude": 34.5,
+      "name": "Final Kaska Invasions",
+      "name_ru": "Финальные вторжения каска",
+      "source": "https://en.wikipedia.org/wiki/Kaskians",
+      "tags": [
+        "Hittite",
+        "Kaska",
+        "Invasion",
+        "Collapse"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1185",
+      "description": "Assyrian king Ashur-resh-ishi I begins annexing former Hittite eastern territories, exploiting imperial collapse",
+      "description_ru": "Ассирийский царь Ашшур-реш-иши I начинает аннексировать бывшие восточные хеттские территории, эксплуатируя крах империи",
+      "era": "BC",
+      "latitude": 37.0,
+      "longitude": 41.0,
+      "name": "Assyrian Annexation of East",
+      "name_ru": "Ассирийская аннексия востока",
+      "source": "https://en.wikipedia.org/wiki/Ashur-resh-ishi_I",
+      "tags": [
+        "Hittite",
+        "Assyrian",
+        "Annexation",
+        "Collapse"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1180",
+      "description": "Hattusa burned and permanently abandoned during final collapse, ending Hittite Empire after five centuries of power",
+      "description_ru": "Хаттуса сожжена и окончательно покинута во время финального краха, завершая Хеттскую империю после пяти веков могущества",
+      "era": "BC",
+      "latitude": 40.0189,
+      "longitude": 34.6161,
+      "name": "Final Destruction of Hattusa",
+      "name_ru": "Окончательное разрушение Хаттусы",
+      "source": "https://www.worldhistory.org/Hattusa/",
+      "tags": [
+        "Hittite",
+        "Collapse",
+        "Destruction",
+        "Abandonment"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1175",
+      "description": "Suppiluliuma II disappears from historical record, marking complete end of Hittite imperial administration",
+      "description_ru": "Суппилулиума II исчезает из исторических записей, знаменуя полный конец хеттской имперской администрации",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "End of Hittite Empire",
+      "name_ru": "Конец Хеттской империи",
+      "source": "https://timemaps.com/civilizations/the-hittites/",
+      "tags": [
+        "Hittite",
+        "Collapse",
+        "End"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1150",
+      "description": "Neo-Hittite states emerge in southeastern Anatolia and northern Syria, preserving Hittite culture and hieroglyphic writing",
+      "description_ru": "Нео-хеттские государства возникают в юго-восточной Анатолии и северной Сирии, сохраняя хеттскую культуру и иероглифическое письмо",
+      "era": "BC",
+      "latitude": 37.0,
+      "longitude": 37.0,
+      "name": "Neo-Hittite States Emerge",
+      "name_ru": "Возникновение нео-хеттских государств",
+      "source": "https://en.wikipedia.org/wiki/Syro-Hittite_states",
+      "tags": [
+        "Hittite",
+        "Syria",
+        "Cultural Continuity",
+        "Kingdom"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1100",
+      "description": "Carchemish rulers claim descent from Hittite imperial dynasty, establishing themselves as legitimate successors preserving royal traditions",
+      "description_ru": "Правители Каркемиша заявляют о происхождении от хеттской имперской династии, утверждая себя как легитимных преемников, сохраняющих королевские традиции",
+      "era": "BC",
+      "latitude": 36.8258,
+      "longitude": 38.0106,
+      "name": "Carchemish Dynasty Claims Hittite Heritage",
+      "name_ru": "Династия Каркемиша заявляет о хеттском наследии",
+      "source": "https://www.britannica.com/place/Carchemish",
+      "tags": [
+        "Hittite",
+        "Syria",
+        "Dynasty",
+        "Cultural Continuity"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0950",
+      "description": "Neo-Hittite kingdoms develop distinctive art style blending Hittite, Hurrian, and Aramean influences in monumental reliefs",
+      "description_ru": "Нео-хеттские царства развивают характерный стиль искусства, сочетающий хеттские, хурритские и арамейские влияния в монументальных рельефах",
+      "era": "BC",
+      "latitude": 37.0,
+      "longitude": 37.0,
+      "name": "Neo-Hittite Artistic Renaissance",
+      "name_ru": "Нео-хеттский художественный ренессанс",
+      "source": "https://en.wikipedia.org/wiki/Syro-Hittite_states",
+      "tags": [
+        "Hittite",
+        "Art",
+        "Culture",
+        "Hurrian"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0850",
+      "description": "Assyrian expansion under Ashurnasirpal II begins gradual conquest of Neo-Hittite states, forcing tribute and vassalage",
+      "description_ru": "Ассирийская экспансия под властью Ашшурнацирпала II начинает постепенное завоевание нео-хеттских государств, вынуждая к дани и вассалитету",
+      "era": "BC",
+      "latitude": 37.0,
+      "longitude": 37.0,
+      "name": "Assyrian Conquest of Neo-Hittite States Begins",
+      "name_ru": "Начало ассирийского завоевания нео-хеттских государств",
+      "source": "https://en.wikipedia.org/wiki/Syro-Hittite_states",
+      "tags": [
+        "Hittite",
+        "Assyrian",
+        "Conquest",
+        "Vassalage"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0717",
+      "description": "Carchemish, last major Neo-Hittite kingdom, falls to Assyrian king Sargon II, ending final remnant of Hittite political independence",
+      "description_ru": "Каркемиш, последнее крупное нео-хеттское царство, падает перед ассирийским царем Саргоном II, завершая последний остаток хеттской политической независимости",
+      "era": "BC",
+      "latitude": 36.8258,
+      "longitude": 38.0106,
+      "name": "Fall of Carchemish - End of Neo-Hittite Era",
+      "name_ru": "Падение Каркемиша - конец нео-хеттской эры",
+      "source": "https://www.britannica.com/place/Carchemish",
+      "tags": [
+        "Hittite",
+        "Assyrian",
+        "Conquest",
+        "End"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1400",
+      "description": "Hittites pioneer advanced iron-working technology in Anatolia, giving military advantage and initiating Iron Age in Near East",
+      "description_ru": "Хетты пионеры передовых технологий обработки железа в Анатолии, дающих военное преимущество и инициирующих железный век на Ближнем Востоке",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Hittite Iron Working Technology",
+      "name_ru": "Хеттская технология обработки железа",
+      "source": "https://www.worldhistory.org/Hittite_Civilization/",
+      "tags": [
+        "Hittite",
+        "Iron",
+        "Technology",
+        "Innovation"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.1650",
+      "description": "Hittite language recorded in cuneiform script on clay tablets, preserving oldest written Indo-European language",
+      "description_ru": "Хеттский язык записан клинописью на глиняных табличках, сохраняя древнейший письменный индоевропейский язык",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Hittite Cuneiform Writing",
+      "name_ru": "Хеттская клинописная письменность",
+      "source": "https://www.britannica.com/topic/Hittite-language",
+      "tags": [
+        "Hittite",
+        "Language",
+        "Writing",
+        "Cuneiform"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1300",
+      "description": "Hittite legal code emphasizes restitution over harsh punishment, showing advanced concepts of proportional justice",
+      "description_ru": "Хеттский правовой кодекс подчеркивает возмещение ущерба вместо жестокого наказания, показывая передовые концепции пропорционального правосудия",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Hittite Legal Code",
+      "name_ru": "Хеттский правовой кодекс",
+      "source": "https://www.worldhistory.org/Hittite_Civilization/",
+      "tags": [
+        "Hittite",
+        "Law",
+        "Justice",
+        "Code"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1350",
+      "description": "Hittite diplomacy establishes network of vassal treaties throughout Anatolia and Syria, creating sophisticated imperial administration",
+      "description_ru": "Хеттская дипломатия устанавливает сеть вассальных договоров по всей Анатолии и Сирии, создавая сложную имперскую администрацию",
+      "era": "BC",
+      "latitude": 40.0,
+      "longitude": 34.6,
+      "name": "Hittite Diplomatic System",
+      "name_ru": "Хеттская дипломатическая система",
+      "source": "https://timemaps.com/civilizations/the-hittites/",
+      "tags": [
+        "Hittite",
+        "Diplomacy",
+        "Treaty",
+        "Administration"
+      ],
+      "type": "political"
+    }
+  ]
+}
