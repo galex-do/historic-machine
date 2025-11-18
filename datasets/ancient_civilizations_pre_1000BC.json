@@ -2318,6 +2318,22 @@
     },
     {
       "date": "01.01.1400",
+      "description": "Mycenaean Greeks adapt Linear A to create Linear B, the first script to write Greek",
+      "description_ru": "Микенские греки адаптируют Линейное А для создания Линейного Б, первого письма для записи греческого языка",
+      "era": "BC",
+      "latitude": 37.641,
+      "longitude": 22.726,
+      "name": "Linear B Script Developed",
+      "name_ru": "Разработка письма Линейное Б",
+      "source": "https://www.britannica.com/topic/Linear-B",
+      "tags": [
+        "Greek",
+        "Writing"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1400",
       "description": "Egyptian forces take complete control of Nubia and its gold mines",
       "description_ru": "Египетские силы берут полный контроль над Нубией и её золотыми рудниками",
       "era": "BC",
@@ -2350,22 +2366,6 @@
         "Astronomy"
       ],
       "type": "scientific"
-    },
-    {
-      "date": "01.01.1400",
-      "description": "Mycenaean Greeks adapt Linear A to create Linear B, the first script to write Greek",
-      "description_ru": "Микенские греки адаптируют Линейное А для создания Линейного Б, первого письма для записи греческого языка",
-      "era": "BC",
-      "latitude": 37.641,
-      "longitude": 22.726,
-      "name": "Linear B Script Developed",
-      "name_ru": "Разработка письма Линейное Б",
-      "source": "https://www.britannica.com/topic/Linear-B",
-      "tags": [
-        "Greek",
-        "Writing"
-      ],
-      "type": "cultural"
     },
     {
       "date": "01.01.1391",
@@ -2532,22 +2532,6 @@
     },
     {
       "date": "01.01.1300",
-      "description": "The Shang Dynasty establishes its capital at Anyang (ancient Yin), where they remain until the dynasty's end",
-      "description_ru": "Династия Шан основывает свою столицу в Аньяне (древний Инь), где они остаются до конца династии",
-      "era": "BC",
-      "latitude": 36.096,
-      "longitude": 114.351,
-      "name": "Anyang Becomes Shang Capital",
-      "name_ru": "Аньян становится столицей Шан",
-      "tags": [
-        "Capital",
-        "Yin",
-        "City"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.1300",
       "description": "The last major Indus Valley cities are abandoned, marking the end of one of the world's earliest urban civilizations",
       "description_ru": "Последние крупные города долины Инда покинуты. Это знаменует конец одной из древнейших городских цивилизаций мира",
       "era": "BC",
@@ -2563,6 +2547,22 @@
         "Indus Valley"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.1300",
+      "description": "The Shang Dynasty establishes its capital at Anyang (ancient Yin), where they remain until the dynasty's end",
+      "description_ru": "Династия Шан основывает свою столицу в Аньяне (древний Инь), где они остаются до конца династии",
+      "era": "BC",
+      "latitude": 36.096,
+      "longitude": 114.351,
+      "name": "Anyang Becomes Shang Capital",
+      "name_ru": "Аньян становится столицей Шан",
+      "tags": [
+        "Capital",
+        "Yin",
+        "City"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.1295",
@@ -2731,23 +2731,6 @@
     },
     {
       "date": "01.01.1200",
-      "description": "Shang royal tombs at Anyang feature elaborate burials with bronze vessels, jade ornaments, and sacrificial victims, demonstrating peak of Shang culture",
-      "description_ru": "Царские гробницы Шан в Аньяне содержат сложные захоронения с бронзовыми сосудами, нефритовыми украшениями и жертвенными жертвами, демонстрируя пик культуры Шан",
-      "era": "BC",
-      "latitude": 36.103,
-      "longitude": 114.358,
-      "name": "Shang Royal Tombs Peak",
-      "name_ru": "Пик царских гробниц Шан",
-      "tags": [
-        "Shang Dynasty",
-        "China",
-        "Tomb",
-        "Burial"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.1200",
       "description": "Olmec civilization emerges in Mesoamerica as the 'mother culture' of later civilizations, developing early writing and calendar systems",
       "description_ru": "Цивилизация ольмеков возникает в Мезоамерике как 'материнская культура' более поздних цивилизаций, разрабатывая раннюю письменность и календарные системы",
       "era": "BC",
@@ -2782,6 +2765,23 @@
     },
     {
       "date": "01.01.1200",
+      "description": "Shang royal tombs at Anyang feature elaborate burials with bronze vessels, jade ornaments, and sacrificial victims, demonstrating peak of Shang culture",
+      "description_ru": "Царские гробницы Шан в Аньяне содержат сложные захоронения с бронзовыми сосудами, нефритовыми украшениями и жертвенными жертвами, демонстрируя пик культуры Шан",
+      "era": "BC",
+      "latitude": 36.103,
+      "longitude": 114.358,
+      "name": "Shang Royal Tombs Peak",
+      "name_ru": "Пик царских гробниц Шан",
+      "tags": [
+        "Shang Dynasty",
+        "China",
+        "Tomb",
+        "Burial"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1200",
       "description": "Civilizations across the Eastern Mediterranean begin to collapse mysteriously",
       "description_ru": "Цивилизации по всему Восточному Средиземноморью начинают загадочно рушиться",
       "era": "BC",
@@ -2810,7 +2810,8 @@
       "tags": [
         "Invasions",
         "Empire",
-        "Collapse"
+        "Collapse",
+        "Hittite"
       ],
       "type": "political"
     },
