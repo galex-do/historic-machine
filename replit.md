@@ -11,13 +11,14 @@ A comprehensive web application for mapping historical events on an interactive 
   - **Date grouping**: Events automatically grouped by date with chronological sorting (BC/AD aware)
   - **Single event on date**: Bullet + date + icon + name + description + tags on one flowing line
   - **Multiple events on date**: Bullet + date header, then event list below with each event on separate line
-  - **Clickable tags**: Tags rendered with CSS pseudo-element hashtag (no doubled ##), clickable to apply filters
+  - **Unified tag styling**: All tags now use `event_tag` class (0.75rem, bold, with #hashtag) - consistent across event cards, timeline modal, and event info modal
   - **Edit functionality**: Edit button (✏️) shown inline within timeline content for editor+ users (removed from header)
   - **Event name links**: Bold blue clickable links when source URLs exist, matching timeline modal
   - **Clean modal header**: Shows "N Events at this Location" or single event name with emoji + close button only
   - **CSS parity**: Uses identical timeline CSS structure from TimelineModal (vertical line, bullets, spacing)
-  - Component modified: `WorldMap.vue`
+  - Components modified: `WorldMap.vue`, `TimelineModal.vue`
   - Added `grouped_events_by_date` computed property for date grouping logic
+  - Removed redundant `event_tag_compact` class in favor of unified `event_tag` styling
 
 ### Timeline Modal Clickable Event Links
 - **Event Names as Links**: Event names in the timeline modal are now clickable bold links when events have attached source URLs

@@ -37,9 +37,9 @@
                   <span
                     v-for="(tag, index) in group.events[0].tags"
                     :key="tag.id"
-                    class="event_tag_compact"
+                    class="event_tag"
                     :style="{ color: tag.color || '#6366f1' }"
-                  >{{ tag.name }}{{ index < group.events[0].tags.length - 1 ? ' ' : '' }}</span>
+                  >#{{ tag.name }}{{ index < group.events[0].tags.length - 1 ? ' ' : '' }}</span>
                 </template>
                 {{ ' ' }}
                 <button 
@@ -85,9 +85,9 @@
                       <span
                         v-for="(tag, index) in event.tags"
                         :key="tag.id"
-                        class="event_tag_compact"
+                        class="event_tag"
                         :style="{ color: tag.color || '#6366f1' }"
-                      >{{ tag.name }}{{ index < event.tags.length - 1 ? ' ' : '' }}</span>
+                      >#{{ tag.name }}{{ index < event.tags.length - 1 ? ' ' : '' }}</span>
                     </template>
                     {{ ' ' }}
                     <button 
@@ -419,14 +419,15 @@ export default {
   line-height: 1.5;
 }
 
-.event_tag_compact {
-  font-weight: 500;
-  opacity: 0.8;
+.event_tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
 }
 
-.event_tag_compact::before {
-  content: '#';
-  opacity: 0.6;
+.event_tag:hover {
+  opacity: 0.7;
 }
 
 .timeline_focus_btn {

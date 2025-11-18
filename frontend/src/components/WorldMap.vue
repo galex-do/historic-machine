@@ -154,11 +154,11 @@
                     <span
                       v-for="(tag, index) in group.events[0].tags"
                       :key="tag.id"
-                      class="event_tag_compact clickable_tag_compact"
+                      class="event_tag"
                       :style="{ color: tag.color || '#6366f1' }"
                       :title="`Click to filter events by '${tag.name}'`"
                       @click.stop="handleTagClick(tag)"
-                    >{{ tag.name }}{{ index < group.events[0].tags.length - 1 ? ' ' : '' }}</span>
+                    >#{{ tag.name }}{{ index < group.events[0].tags.length - 1 ? ' ' : '' }}</span>
                   </template>
                   <template v-if="canEditEvents">
                     {{ ' ' }}
@@ -206,11 +206,11 @@
                         <span
                           v-for="(tag, index) in event.tags"
                           :key="tag.id"
-                          class="event_tag_compact clickable_tag_compact"
+                          class="event_tag"
                           :style="{ color: tag.color || '#6366f1' }"
                           :title="`Click to filter events by '${tag.name}'`"
                           @click.stop="handleTagClick(tag)"
-                        >{{ tag.name }}{{ index < event.tags.length - 1 ? ' ' : '' }}</span>
+                        >#{{ tag.name }}{{ index < event.tags.length - 1 ? ' ' : '' }}</span>
                       </template>
                       <template v-if="canEditEvents">
                         {{ ' ' }}
@@ -1689,24 +1689,15 @@ export default {
   line-height: 1.5;
 }
 
-.event_tag_compact {
-  font-weight: 500;
-  opacity: 0.8;
-}
-
-.event_tag_compact::before {
-  content: '#';
-  opacity: 0.6;
-}
-
-.clickable_tag_compact {
+.event_tag {
+  font-size: 0.75rem;
+  font-weight: 600;
   cursor: pointer;
   transition: opacity 0.2s;
 }
 
-.clickable_tag_compact:hover {
-  opacity: 1;
-  text-decoration: underline;
+.event_tag:hover {
+  opacity: 0.7;
 }
 
 .event_inline_edit_btn {
