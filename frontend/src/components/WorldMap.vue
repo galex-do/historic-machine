@@ -290,7 +290,7 @@ export default {
       show_event_modal: false,
       show_event_info_modal: false, // New modal for event info
       selected_events: [], // Events to show in info modal
-      highlight_timeout: null, // Store timeout for auto-clearing highlight
+      highlight_overlay: null, // Store highlight overlay layer (halo ring + center dot)
       show_offscreen_notification: false, // Show notification when marker is off-screen
       offscreen_event_name: '', // Store event name for notification
       expanded_event_tags: {}, // Track which events have expanded tags
@@ -547,10 +547,10 @@ export default {
 
     // Highlight a marker without refocusing the map
     highlightMarker(event) {
-      // Clear any existing highlight timeout
-      if (this.highlight_timeout) {
-        clearTimeout(this.highlight_timeout)
-        this.highlight_timeout = null
+      // Clear any existing highlight overlay
+      if (this.highlight_overlay) {
+        this.map.removeLayer(this.highlight_overlay)
+        this.highlight_overlay = null
       }
 
       // Find the marker for this event
@@ -565,25 +565,30 @@ export default {
       const bounds = this.map.getBounds()
       const isInBounds = bounds.contains(markerLatLng)
 
-      // Remove highlight class from all markers first
-      this.markers.forEach(m => {
-        const el = m.getElement()
-        if (el) {
-          el.classList.remove('marker-highlight')
-        }
+      // Create a static halo ring around the marker
+      // Outer ring: semi-transparent golden circle
+      const outerRing = L.circleMarker(markerLatLng, {
+        radius: 20,
+        fillColor: 'transparent',
+        fillOpacity: 0,
+        color: '#fbbf24', // Golden color
+        weight: 4,
+        opacity: 0.7
       })
 
-      // Add highlight class to the target marker
-      const markerElement = marker.getElement()
-      if (markerElement) {
-        markerElement.classList.add('marker-highlight')
-        
-        // Auto-remove highlight after 3.5 seconds
-        this.highlight_timeout = setTimeout(() => {
-          markerElement.classList.remove('marker-highlight')
-          this.highlight_timeout = null
-        }, 3500)
-      }
+      // Center dot: small solid dot for precision
+      const centerDot = L.circleMarker(markerLatLng, {
+        radius: 3,
+        fillColor: '#fbbf24',
+        fillOpacity: 1,
+        color: '#f59e0b',
+        weight: 1,
+        opacity: 1
+      })
+
+      // Create a layer group with both elements
+      this.highlight_overlay = L.layerGroup([outerRing, centerDot])
+      this.highlight_overlay.addTo(this.map)
 
       // Show notification if marker is off-screen
       if (!isInBounds) {
@@ -1797,28 +1802,6 @@ export default {
 .event_info_modal_content::-webkit-scrollbar-thumb {
   background: #cbd5e1;
   border-radius: 3px;
-}
-
-/* Marker Highlight Animation */
-:deep(.leaflet-marker-icon.marker-highlight) {
-  animation: marker-pulse 3.5s ease-in-out;
-  z-index: 1000 !important;
-  opacity: 1 !important;
-}
-
-@keyframes marker-pulse {
-  0%, 100% {
-    transform: scale(1);
-    filter: drop-shadow(0 0 0 rgba(255, 215, 0, 0.9));
-  }
-  16%, 50%, 83% {
-    transform: scale(1.4);
-    filter: drop-shadow(0 0 16px rgba(255, 215, 0, 1)) drop-shadow(0 0 24px rgba(255, 165, 0, 0.8));
-  }
-  33%, 66% {
-    transform: scale(1.1);
-    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.7));
-  }
 }
 
 /* Off-screen Notification */
