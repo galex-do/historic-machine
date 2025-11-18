@@ -36,6 +36,7 @@
             :selected-tags="selectedTags"
             :follow-enabled="narrativeFlowEnabled"
             @focus-event="focusOnEvent"
+            @highlight-event="highlightOnEvent"
             @map-filter-toggle="handleMapFilterToggle"
             @tag-clicked="handleTagClick"
             @remove-tag="handleRemoveTag"
@@ -260,6 +261,13 @@ export default {
       focusEvent.value = { ...event, timestamp: Date.now() }
     }
 
+    // Event highlight method (without refocusing map)
+    const highlightOnEvent = (event) => {
+      if (worldMap.value && worldMap.value.highlightMarker) {
+        worldMap.value.highlightMarker(event)
+      }
+    }
+
     // Map filter methods
     const handleMapFilterToggle = (enabled) => {
       mapFilterEnabled.value = enabled
@@ -408,6 +416,7 @@ export default {
       toggleSidebar,
       applyFilters,
       focusOnEvent,
+      highlightOnEvent,
       handleTagClick,
       handleRemoveTag,
       handleClearAllTags,

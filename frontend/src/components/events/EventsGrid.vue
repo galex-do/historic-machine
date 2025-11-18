@@ -79,6 +79,7 @@
         :key="event.id"
         :event="event"
         @focus-event="$emit('focus-event', $event)"
+        @highlight-event="$emit('highlight-event', $event)"
         @tag-clicked="$emit('tag-clicked', $event)"
       />
     </div>
@@ -121,7 +122,7 @@ export default {
       default: false
     }
   },
-  emits: ['focus-event', 'map-filter-toggle', 'tag-clicked', 'remove-tag', 'clear-all-tags', 'toggle-follow'],
+  emits: ['focus-event', 'highlight-event', 'map-filter-toggle', 'tag-clicked', 'remove-tag', 'clear-all-tags', 'toggle-follow'],
   setup() {
     // Expose translation function from composable
     const { t } = useLocale()

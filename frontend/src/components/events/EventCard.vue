@@ -31,6 +31,14 @@
       </template>
       {{ ' ' }}
       <button 
+        class="highlight_btn" 
+        @click="$emit('highlight-event', event)" 
+        :title="t('highlightOnMap')"
+      >
+        📍
+      </button>
+      {{ ' ' }}
+      <button 
         class="focus_btn" 
         @click="$emit('focus-event', event)" 
         :title="t('focusOnMap')"
@@ -58,7 +66,7 @@ export default {
       required: true
     }
   },
-  emits: ['focus-event', 'tag-clicked'],
+  emits: ['focus-event', 'highlight-event', 'tag-clicked'],
   setup() {
     const { formatEventDisplayDate, t } = useLocale()
     
@@ -124,6 +132,7 @@ export default {
   opacity: 0.7;
 }
 
+.highlight_btn,
 .focus_btn {
   background: none;
   border: none;
@@ -136,10 +145,15 @@ export default {
   display: inline;
 }
 
+.highlight_btn:hover {
+  color: #f59e0b;
+}
+
 .focus_btn:hover {
   color: #3b82f6;
 }
 
+.highlight_btn:focus-visible,
 .focus_btn:focus-visible {
   outline: 2px solid #3b82f6;
   outline-offset: 2px;
