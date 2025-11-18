@@ -173,6 +173,7 @@ const UI_TRANSLATIONS = {
     enableNarrativeFlow: 'Enable narrative flow - connect events chronologically',
     disableNarrativeFlow: 'Disable narrative flow',
     focusOnMap: 'Focus on map',
+    highlightOnMap: 'Highlight on map',
     
     // Timeline
     timelineView: 'Timeline view',
@@ -399,6 +400,7 @@ const UI_TRANSLATIONS = {
     enableNarrativeFlow: 'Включить нарративный поток - соединить события хронологически',
     disableNarrativeFlow: 'Отключить нарративный поток',
     focusOnMap: 'Фокус на карте',
+    highlightOnMap: 'Выделить на карте',
     
     // Timeline
     timelineView: 'Вид временной шкалы',
