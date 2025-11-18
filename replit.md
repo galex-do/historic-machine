@@ -5,19 +5,27 @@ A comprehensive web application for mapping historical events on an interactive 
 
 ## Recent Changes (November 14, 2025)
 
-### Map Event Info Modal Timeline Structure (November 14, 2025)
+### Map Event Info Modal Timeline Structure (November 18, 2025)
 - **Exact Timeline Structure**: Map's event view modal now uses the exact same timeline design as TimelineModal
   - **Vertical line and bullets**: Visual timeline with blue bullet points at each date group
   - **Date grouping**: Events automatically grouped by date with chronological sorting (BC/AD aware)
   - **Single event on date**: Bullet + date + icon + name + description + tags on one flowing line
   - **Multiple events on date**: Bullet + date header, then event list below with each event on separate line
-  - **Clickable tags**: Tags rendered with CSS pseudo-element hashtag (no doubled ##), clickable to apply filters
+  - **Rich tag styling**: Pill-shaped tags with colored backgrounds matching event grid style (removed minimalistic text-only style)
   - **Edit functionality**: Edit button (✏️) shown inline within timeline content for editor+ users (removed from header)
   - **Event name links**: Bold blue clickable links when source URLs exist, matching timeline modal
   - **Clean modal header**: Shows "N Events at this Location" or single event name with emoji + close button only
   - **CSS parity**: Uses identical timeline CSS structure from TimelineModal (vertical line, bullets, spacing)
   - Component modified: `WorldMap.vue`
   - Added `grouped_events_by_date` computed property for date grouping logic
+
+### Timeline Modal Rich Tag Styling (November 18, 2025)
+- **Unified Tag Style Across App**: Timeline modal now uses rich pill-shaped tags matching event grid style
+  - **Colored backgrounds**: Tags display with background color (not just text color)
+  - **Pill shape**: Rounded corners (12px), padding, and box-shadow for depth
+  - **Interactive hover effects**: Transform on hover with enhanced shadow and brightness filter
+  - **Consistent UX**: Same tag appearance across event grid, timeline modal, and event info modal
+  - Component modified: `TimelineModal.vue`
 
 ### Timeline Modal Clickable Event Links
 - **Event Names as Links**: Event names in the timeline modal are now clickable bold links when events have attached source URLs

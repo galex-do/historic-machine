@@ -35,11 +35,11 @@
                 <template v-if="group.events[0].tags && group.events[0].tags.length > 0">
                   {{ ' ' }}
                   <span
-                    v-for="(tag, index) in group.events[0].tags"
+                    v-for="tag in group.events[0].tags"
                     :key="tag.id"
                     class="event_tag_compact"
-                    :style="{ color: tag.color || '#6366f1' }"
-                  >{{ tag.name }}{{ index < group.events[0].tags.length - 1 ? ' ' : '' }}</span>
+                    :style="{ backgroundColor: tag.color || '#6366f1', color: 'white' }"
+                  >{{ tag.name }}</span>
                 </template>
                 {{ ' ' }}
                 <button 
@@ -83,11 +83,11 @@
                     <template v-if="event.tags && event.tags.length > 0">
                       {{ ' ' }}
                       <span
-                        v-for="(tag, index) in event.tags"
+                        v-for="tag in event.tags"
                         :key="tag.id"
                         class="event_tag_compact"
-                        :style="{ color: tag.color || '#6366f1' }"
-                      >{{ tag.name }}{{ index < event.tags.length - 1 ? ' ' : '' }}</span>
+                        :style="{ backgroundColor: tag.color || '#6366f1', color: 'white' }"
+                      >{{ tag.name }}</span>
                     </template>
                     {{ ' ' }}
                     <button 
@@ -420,13 +420,27 @@ export default {
 }
 
 .event_tag_compact {
-  font-weight: 500;
-  opacity: 0.8;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s;
+  user-select: none;
+  display: inline-block;
+  margin-right: 0.25rem;
 }
 
-.event_tag_compact::before {
-  content: '#';
-  opacity: 0.6;
+.event_tag_compact:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.1);
+}
+
+.event_tag_compact:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
 .timeline_focus_btn {
