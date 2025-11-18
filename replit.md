@@ -23,7 +23,7 @@ A comprehensive web application for mapping historical events on an interactive 
 - **Mobile-First Layout**: Events grid above the map on mobile, compact control header, hidden event cards and pagination, content-dependent sidebar height, and optimized map space.
 - **Timeline View Modal**: Ultra-compact vertical timeline visualization with date grouping, expandable descriptions, BC/AD aware sorting, and accessibility features.
 - **Compact Event List View**: Redesigned to a minimalistic, single-line layout for events, showing full descriptions inline and colored #tag format.
-- **Map Feature Fixes**: Marker highlight animation with golden glow pulse effect. Conditional "Highlight" / "Focus" button display based on map filtering.
+- **Map Highlight Feature**: Static golden halo ring overlay for highlighting markers (replaced problematic CSS animation). Conditional "Highlight" (📍) / "Focus" (⌖) button display based on map filtering state.
 - **Map Event Info Modal Timeline Structure**: Uses the same timeline design as TimelineModal with vertical line, bullets, date grouping, unified tag styling, clickable tags, and inline edit functionality.
 - **Statistics Dashboard Enhancements**: Reorganized layout, added Total Time metric, Hourly and Monthly Visitor Graphs, Full Internationalization, and Peak Concurrent Sessions Tracking.
 
