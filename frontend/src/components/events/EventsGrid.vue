@@ -217,8 +217,7 @@ export default {
       }
     },
     toggleMapFilter() {
-      this.mapFilterEnabled = !this.mapFilterEnabled
-      this.$emit('map-filter-toggle', this.mapFilterEnabled)
+      this.$emit('map-filter-toggle', !this.mapFilterEnabled)
     },
     toggleTagFilter() {
       this.tagFilterVisible = !this.tagFilterVisible
