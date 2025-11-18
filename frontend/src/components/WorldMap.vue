@@ -1800,24 +1800,24 @@ export default {
 }
 
 /* Marker Highlight Animation */
-:deep(.marker-highlight) {
+:deep(.leaflet-marker-icon.marker-highlight) {
   animation: marker-pulse 3.5s ease-in-out;
-  filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.8));
   z-index: 1000 !important;
+  opacity: 1 !important;
 }
 
 @keyframes marker-pulse {
   0%, 100% {
     transform: scale(1);
-    filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.8));
+    filter: drop-shadow(0 0 0 rgba(255, 215, 0, 0.9));
   }
-  15%, 45%, 75% {
-    transform: scale(1.3);
-    filter: drop-shadow(0 0 16px rgba(245, 158, 11, 1));
+  16%, 50%, 83% {
+    transform: scale(1.4);
+    filter: drop-shadow(0 0 16px rgba(255, 215, 0, 1)) drop-shadow(0 0 24px rgba(255, 165, 0, 0.8));
   }
-  30%, 60%, 90% {
-    transform: scale(1);
-    filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.6));
+  33%, 66% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.7));
   }
 }
 
