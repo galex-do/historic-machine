@@ -56,7 +56,7 @@
     {
       "date": "01.01.0835",
       "description": "Sarduri I builds massive tower at western tip of Van Fortress (Sardurburç), inscribing six Assyrian-language declarations of foundation, creating earliest monumental building of citadel",
-      "description_ru": "Сардури I строит массивную башню на западной оконечности крепости Ван (Сардурбурч), вырезает на ассирийском информацию о постройке",
+      "description_ru": "Сардури I строит массивную башню на западной оконечности крепости Ван (Сардурбурч), вырезая шесть надписей на ассирийском языке о основании, создавая древнейшее монументальное здание цитадели",
       "era": "BC",
       "latitude": 38.5,
       "longitude": 43.35,
@@ -74,7 +74,7 @@
     {
       "date": "01.01.0830",
       "description": "King Ispuini annexes sacred city of Musasir, gaining control of important religious center dedicated to Haldi (supreme god) and appointing his son Menua as co-administrator",
-      "description_ru": "Царь Испуини аннексирует священный город Мусасир, важный религиозный центр, посвященный Халди (верховному богу), и назначает своего сына Менуа со-администратором",
+      "description_ru": "Царь Испуини аннексирует священный город Мусасир, получая контроль над важным религиозным центром, посвященным Халди (верховному богу), и назначает своего сына Менуа со-администратором",
       "era": "BC",
       "latitude": 37.2,
       "longitude": 45.5,
@@ -307,8 +307,25 @@
     },
     {
       "date": "01.01.0685",
+      "description": "Rusa II becomes king and initiates Urartian cultural renaissance, founding city of Teishebaini (Karmir Blur) near Erebuni as economic hub and granary for Transcaucasian provinces",
+      "description_ru": "Руса II становится царем и инициирует урартский культурный ренессанс, основывая город Тейшебаини (Кармир Блур) близ Эребуни как экономический центр и житницу закавказских провинций",
+      "era": "BC",
+      "latitude": 40.1294,
+      "longitude": 44.4583,
+      "name": "Foundation of Teishebaini",
+      "name_ru": "Основание Тейшебаини",
+      "source": "https://en.wikipedia.org/wiki/Teishebaini",
+      "tags": [
+        "Urartu",
+        "City",
+        "Economic"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0685",
       "description": "Argishti II succeeds Rusa I and makes peace with Assyrian king Sennacherib, beginning period of recovery and cultural renaissance after decades of warfare",
-      "description_ru": "Аргишти II наследует Русе I и заключает мир с ассирийским царем Синахерибом, начиная период восстановления царства Урарту",
+      "description_ru": "Аргишти II наследует Русе I и заключает мир с ассирийским царем Синахерибом, начиная период восстановления и культурного ренессанса после десятилетий войн",
       "era": "BC",
       "latitude": 38.5,
       "longitude": 43.35,
@@ -325,31 +342,14 @@
       "type": "political"
     },
     {
-      "date": "01.01.0685",
-      "description": "Rusa II becomes king and initiates Urartian cultural renaissance, founding city of Teishebaini (Karmir Blur) near Erebuni as economic hub and granary for Transcaucasian provinces",
-      "description_ru": "При Русе II происходит урартский культурный ренессанс. Руса закладывает город Тейшебаини (Кармир Блур) близ Эребуни как экономический центр и житницу закавказских провинций",
-      "era": "BC",
-      "latitude": 40.1294,
-      "longitude": 44.4583,
-      "name": "Foundation of Teishebaini",
-      "name_ru": "Основание Тейшебаини",
-      "source": "https://en.wikipedia.org/wiki/Teishebaini",
-      "tags": [
-        "Urartu",
-        "City",
-        "Economic"
-      ],
-      "type": "historic"
-    },
-    {
       "date": "01.01.0680",
       "description": "Rusa II builds massive storage complex at Teishebaini with 150 rooms containing enormous pithoi jars, establishing centralized granary system for kingdom's agricultural wealth",
-      "description_ru": "Руса II строит большое хранилище в Тейшебаини со 150 комнатами. В огромных пифосах хранятся сельскохозяйственные и другие богатства царства Урарту.",
+      "description_ru": "Руса II строит массивный складской комплекс в Тейшебаини со 150 комнатами, содержащими огромные пифосы, создавая централизованную систему хранения для сельскохозяйственного богатства царства",
       "era": "BC",
       "latitude": 40.1294,
       "longitude": 44.4583,
       "name": "Teishebaini Storage Complex",
-      "name_ru": "Хранилище Тейшебаини",
+      "name_ru": "Сокровищница Тейшебаини",
       "source": "https://www.worldhistory.org/Teishebaini/",
       "tags": [
         "Urartu",
@@ -362,7 +362,7 @@
     {
       "date": "01.01.0670",
       "description": "Urartian metalworkers achieve peak of bronze and iron craftsmanship, producing intricate ceremonial shields, helmets, and decorative items exported throughout Near East",
-      "description_ru": "Урартские кузнецы создают из железа и бронзы сложные церемониальные щиты, шлемы и декоративные изделия, экспортируемые по всему Ближнему Востоку",
+      "description_ru": "Урартские металлурги достигают пика мастерства в работе с бронзой и железом, производя сложные церемониальные щиты, шлемы и декоративные изделия, экспортируемые по всему Ближнему Востоку",
       "era": "BC",
       "latitude": 38.5,
       "longitude": 43.35,
@@ -371,17 +371,16 @@
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
         "Urartu",
+        "Trade",
         "Innovation",
-        "Metallurgy",
-        "Bronze",
-        "Iron"
+        "Metallurgy"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0660",
       "description": "Urartian artisans develop distinctive artistic style combining Mesopotamian, Hittite and local traditions, creating unique decorative motifs and religious iconography",
-      "description_ru": "Урартские мастера разрабатывают уникальный художественный стиль, объединяющий месопотамские, хеттские и местные традиции, что отражается в иконографии и декорации",
+      "description_ru": "Урартские мастера разрабатывают отличительный художественный стиль, объединяющий месопотамские, хеттские и местные традиции, создавая уникальные декоративные мотивы и религиозную иконографию",
       "era": "BC",
       "latitude": 38.5,
       "longitude": 43.35,
@@ -399,7 +398,7 @@
     {
       "date": "01.01.0655",
       "description": "Urartian scribes adapt cuneiform writing system, creating corpus of royal inscriptions and administrative records in Urartian language alongside Akkadian texts",
-      "description_ru": "Урартские писцы адаптируют клинопись, создавая корпус царских предписаний и административных записей на урартском языке наряду с аккадскими текстами",
+      "description_ru": "Урартские писцы адаптируют клинописную систему письма, создавая корпус царских надписей и административных записей на урартском языке наряду с аккадскими текстами",
       "era": "BC",
       "latitude": 38.5,
       "longitude": 43.35,
@@ -487,7 +486,7 @@
     {
       "date": "01.01.0620",
       "description": "Rusa III becomes king and attempts to organize resistance against continuous Scythian and Cimmerian raids, but kingdom's military capacity severely diminished",
-      "description_ru": "Руса III пытается организовать сопротивление против непрерывных скифских и киммерийских набегов при ограниченном военном ресурсе царства",
+      "description_ru": "Руса III становится царем и пытается организовать сопротивление против непрерывных скифских и киммерийских набегов при ограниченном военном ресурсе царства",
       "era": "BC",
       "latitude": 38.5,
       "longitude": 43.35,
@@ -504,7 +503,7 @@
     {
       "date": "01.01.0609",
       "description": "Rusa IV becomes king and rules during final years of independent Urartu, witnessing systematic destruction of kingdom's cities by combined forces of invaders",
-      "description_ru": "Руса IV правит в последние годы независимого Урарту, наблюдая систематическое разрушение городов царства иноземными захватчиками",
+      "description_ru": "Руса IV становится царем и правит в последние годы независимого Урарту, наблюдая систематическое разрушение городов царства иноземными захватчиками",
       "era": "BC",
       "latitude": 38.5,
       "longitude": 43.35,
