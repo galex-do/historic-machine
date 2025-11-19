@@ -385,8 +385,9 @@
                     
                     <!-- Tag Suggestions -->
                     <div v-if="filteredTags && filteredTags.length > 0 && eventForm.tagSearch" class="tag-suggestions">
+                      <div class="tag-count-info">{{ filteredTags.length }} tag{{ filteredTags.length !== 1 ? 's' : '' }} found</div>
                       <div 
-                        v-for="tag in filteredTags.slice(0, 5)" 
+                        v-for="tag in filteredTags" 
                         :key="tag.id"
                         class="tag-suggestion"
                         @click="addTag(tag)"
@@ -946,10 +947,12 @@ export default {
     const filteredTags = computed(() => {
       if (!allTags.value || !eventForm.value.tagSearch) return []
       const searchTerm = eventForm.value.tagSearch.toLowerCase()
-      return allTags.value.filter(tag => 
-        tag.name.toLowerCase().includes(searchTerm) &&
-        !eventForm.value.selectedTags.some(selected => selected.id === tag.id)
-      )
+      return allTags.value
+        .filter(tag => 
+          tag.name.toLowerCase().includes(searchTerm) &&
+          !eventForm.value.selectedTags.some(selected => selected.id === tag.id)
+        )
+        .sort((a, b) => a.name.localeCompare(b.name)) // Sort alphabetically
     })
 
     const canCreateNewTag = computed(() => {
@@ -1750,10 +1753,39 @@ select.form-input:focus {
   border: 2px solid #e5e7eb;
   border-top: none;
   border-radius: 0 0 10px 10px;
-  max-height: 200px;
+  max-height: 350px;
   overflow-y: auto;
   z-index: 10;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Show scroll hint when there are many tags */
+.tag-suggestions::-webkit-scrollbar {
+  width: 8px;
+}
+
+.tag-suggestions::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 0 0 10px 0;
+}
+
+.tag-suggestions::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.tag-suggestions::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.tag-count-info {
+  padding: 0.5rem 1rem;
+  background: #f8fafc;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 500;
+  text-align: center;
 }
 
 .tag-suggestion {
