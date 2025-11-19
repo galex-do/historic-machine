@@ -132,7 +132,17 @@
               {{ selected_events.length }} Events at this Location
             </template>
           </h2>
-          <button class="event_close_btn" @click="close_event_info_modal">×</button>
+          <div class="event_header_actions">
+            <button 
+              v-if="canCreateEvents" 
+              class="event_add_btn" 
+              @click="create_event_at_location"
+              title="Create new event at this location"
+            >
+              +
+            </button>
+            <button class="event_close_btn" @click="close_event_info_modal">×</button>
+          </div>
         </div>
         
         <!-- Modal Content -->
@@ -1084,6 +1094,37 @@ export default {
       this.expanded_event_tags = {} // Reset expanded state when closing modal
     },
 
+    // Create new event at the same location as viewed events
+    create_event_at_location() {
+      if (this.selected_events.length === 0) return
+      
+      // Get coordinates from the first event in the list
+      const { latitude, longitude } = this.selected_events[0]
+      
+      // Close the info modal
+      this.close_event_info_modal()
+      
+      // Open event creation modal with pre-filled coordinates
+      this.new_event = {
+        name: '',
+        description: '',
+        name_en: '',
+        name_ru: '',
+        description_en: '',
+        description_ru: '',
+        date: '',
+        date_display: '',
+        era: 'AD',
+        latitude: latitude,
+        longitude: longitude,
+        source: '',
+        lens_type: 'historic',
+        dataset_id: null
+      }
+      this.editing_event = null
+      this.show_event_modal = true
+    },
+
     // Edit event from info modal
     edit_event_from_info(eventId) {
       this.close_event_info_modal()
@@ -1641,6 +1682,36 @@ export default {
 .event_info_modal_title .event_name_link:hover {
   color: #2563eb;
   border-bottom-color: #2563eb;
+}
+
+.event_header_actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.event_add_btn {
+  background: #10b981;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 0;
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+
+.event_add_btn:hover {
+  background: #059669;
+  transform: scale(1.05);
 }
 
 .event_close_btn {
