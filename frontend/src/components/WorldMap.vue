@@ -254,6 +254,9 @@
 <script>
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
+import 'leaflet.markercluster/dist/MarkerCluster.css'
+import 'leaflet.markercluster/dist/MarkerCluster.Default.css'
+import 'leaflet.markercluster'
 import { useAuth } from '@/composables/useAuth.js'
 import { useTags } from '@/composables/useTags.js'
 import { useLocale } from '@/composables/useLocale.js'
@@ -294,6 +297,7 @@ export default {
     return {
       map: null,
       markers: [],
+      marker_cluster_group: null, // Marker cluster group for zoom-dependent clustering
       marker_registry: new Map(), // Map event IDs to markers for highlighting
       polyline_layers: [], // Store narrative flow polylines
       resize_observer: null,
@@ -672,11 +676,9 @@ export default {
     
     add_event_markers() {      
       // Clear existing markers first
-      this.markers.forEach(marker => {
-        if (this.map && this.map.hasLayer(marker)) {
-          this.map.removeLayer(marker)
-        }
-      })
+      if (this.marker_cluster_group && this.map && this.map.hasLayer(this.marker_cluster_group)) {
+        this.map.removeLayer(this.marker_cluster_group)
+      }
       this.markers = []
       this.marker_registry.clear() // Clear marker registry
       
@@ -689,6 +691,31 @@ export default {
         }
         
         try {
+          // Create a new marker cluster group with custom options
+          this.marker_cluster_group = L.markerClusterGroup({
+            // Max cluster radius - how close markers need to be to cluster together
+            maxClusterRadius: 80,
+            // Show coverage on hover
+            showCoverageOnHover: false,
+            // Zoom to show all markers in cluster on click
+            zoomToBoundsOnClick: true,
+            // Disable clustering at zoom level (disable to allow clustering at all zooms)
+            disableClusteringAtZoom: null,
+            // Spiderfy markers when cluster is clicked at max zoom
+            spiderfyOnMaxZoom: true,
+            // Custom icon creation for clusters
+            iconCreateFunction: (cluster) => {
+              const childCount = cluster.getChildCount()
+              return L.divIcon({
+                html: `<div class="marker-cluster-custom">
+                         <span class="cluster-count">${childCount}</span>
+                       </div>`,
+                className: 'marker-cluster-custom-container',
+                iconSize: [40, 40]
+              })
+            }
+          })
+          
           // Group events by location (same coordinates)
           const locationGroups = this.group_events_by_location(this.events)
           
@@ -713,7 +740,7 @@ export default {
             const marker = L.marker([lat, lng], { 
               icon: emoji_icon,
               riseOnHover: true
-            }).addTo(this.map)
+            })
             
             // Use click event instead of popup to avoid coordinate corruption
             marker.on('click', () => {
@@ -725,8 +752,13 @@ export default {
               this.marker_registry.set(event.id, marker)
             })
             
+            // Add marker to cluster group instead of directly to map
+            this.marker_cluster_group.addLayer(marker)
             this.markers.push(marker)
           })
+          
+          // Add the cluster group to the map
+          this.map.addLayer(this.marker_cluster_group)
         } catch (error) {
           console.error('Error adding markers:', error)
         }
@@ -1911,5 +1943,36 @@ export default {
 
 .fade-enter-from, .fade-leave-to {
   opacity: 0;
+}
+
+/* Custom Marker Cluster Styling */
+::deep(.marker-cluster-custom-container) {
+  background: transparent !important;
+  border: none !important;
+}
+
+::deep(.marker-cluster-custom) {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(37, 99, 235, 0.4);
+  border: 3px solid white;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+::deep(.marker-cluster-custom):hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.6);
+}
+
+::deep(.marker-cluster-custom .cluster-count) {
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 </style>
