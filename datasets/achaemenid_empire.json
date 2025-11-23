@@ -2,6 +2,43 @@
   "description": "Comprehensive dataset covering the Achaemenid Persian Empire from foundation to Alexander's conquest (550-330 BC), including political administration, military campaigns, cultural achievements, religious developments, and architectural marvels",
   "events": [
     {
+      "date": "01.01.0549",
+      "description": "Cyrus proclaims himself 'King of Kings' after defeating Media, establishing title that will define Persian imperial ideology for centuries; begins transforming tribal kingdom into multinational empire",
+      "description_ru": "Кир провозглашает себя 'Царем царей' после победы над Мидией, учреждая титул, который будет определять персидскую имперскую идеологию веками; начинает преобразование племенного царства в многонациональную империю",
+      "era": "BC",
+      "latitude": 30.2026,
+      "longitude": 53.1678,
+      "name": "Cyrus Proclaims 'King of Kings'",
+      "name_ru": "Кир провозглашает себя 'Царем царей'",
+      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
+      "tags": [
+        "Persian",
+        "Dynasty",
+        "Empire",
+        "Title"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0548",
+      "description": "Cyrus establishes policy of cultural and religious tolerance, allowing conquered peoples to maintain customs, languages and religions - revolutionary approach that ensures stability and loyalty",
+      "description_ru": "Кир устанавливает политику культурной и религиозной терпимости, позволяя завоеванным народам сохранять обычаи, языки и религии - революционный подход, обеспечивающий стабильность и лояльность",
+      "era": "BC",
+      "latitude": 30.2026,
+      "longitude": 53.1678,
+      "name": "Policy of Imperial Tolerance",
+      "name_ru": "Политика имперской терпимости",
+      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
+      "tags": [
+        "Persian",
+        "Tolerance",
+        "Religious",
+        "Administration",
+        "Culture"
+      ],
+      "type": "political"
+    },
+    {
       "date": "01.01.0547",
       "description": "Cyrus the Great conquers Lydia after defeating King Croesus at Battle of Thymbra, adding wealthy Anatolian territories and Lydian gold reserves to Persian Empire",
       "description_ru": "Кир Великий завоевывает Лидию после победы над царем Крезом в битве при Тимбре, добавляя богатые анатолийские территории и лидийские золотые резервы к Персидской империи",
@@ -17,6 +54,97 @@
         "Battle",
         "War",
         "Gold"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0546",
+      "description": "After conquering Lydia, Cyrus spares Croesus's life and makes him advisor, demonstrating magnanimity toward defeated rulers that becomes hallmark of his reign",
+      "description_ru": "После завоевания Лидии Кир щадит жизнь Креза и делает его советником, демонстрируя великодушие к побежденным правителям, что станет отличительной чертой его правления",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.3053,
+      "name": "Cyrus Spares Croesus",
+      "name_ru": "Кир щадит Креза",
+      "source": "https://en.wikipedia.org/wiki/Croesus",
+      "tags": [
+        "Persian",
+        "Diplomacy",
+        "Tolerance",
+        "Mercy"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0545",
+      "description": "Cyrus conquers Greek cities of Ionia in western Anatolia, generally allowing them autonomy and self-government while requiring tribute and military service",
+      "description_ru": "Кир завоевывает греческие города Ионии в западной Анатолии, в целом позволяя им автономию и самоуправление, требуя дань и военную службу",
+      "era": "BC",
+      "latitude": 37.9534,
+      "longitude": 27.3639,
+      "name": "Conquest of Ionian Greeks",
+      "name_ru": "Завоевание ионийских греков",
+      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
+      "tags": [
+        "Persian",
+        "Greek",
+        "Conquest",
+        "Autonomy"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0544",
+      "description": "Cyrus establishes innovative administrative system combining central authority with local autonomy, appointing both Persian governors and local rulers to share power",
+      "description_ru": "Кир создает инновационную административную систему, сочетающую центральную власть с местной автономией, назначая как персидских губернаторов, так и местных правителей для разделения власти",
+      "era": "BC",
+      "latitude": 30.2026,
+      "longitude": 53.1678,
+      "name": "Administrative Innovation",
+      "name_ru": "Административные инновации",
+      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
+      "tags": [
+        "Persian",
+        "Administration",
+        "Government",
+        "Innovation"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0542",
+      "description": "Cyrus campaigns in eastern Iran, conquering Parthia, Aria, Bactria and Sogdiana, extending Persian control across Iranian plateau to Central Asian steppes",
+      "description_ru": "Кир ведет кампании в восточном Иране, завоевывая Парфию, Арию, Бактрию и Согдиану, распространяя персидский контроль через Иранское нагорье до центральноазиатских степей",
+      "era": "BC",
+      "latitude": 36,
+      "longitude": 60,
+      "name": "Eastern Campaigns",
+      "name_ru": "Восточные кампании",
+      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
+      "tags": [
+        "Persian",
+        "Conquest",
+        "Expansion",
+        "War"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0540",
+      "description": "Cyrus consolidates control over Central Asia by founding fortified cities and establishing garrison networks, creating defense system against nomadic invasions",
+      "description_ru": "Кир консолидирует контроль над Центральной Азией, основывая укрепленные города и создавая гарнизонные сети, создавая оборонительную систему против кочевых вторжений",
+      "era": "BC",
+      "latitude": 38,
+      "longitude": 65,
+      "name": "Central Asian Fortifications",
+      "name_ru": "Центральноазиатские укрепления",
+      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
+      "tags": [
+        "Persian",
+        "Fortification",
+        "Defense",
+        "Military",
+        "City"
       ],
       "type": "military"
     },
@@ -58,6 +186,43 @@
       "type": "political"
     },
     {
+      "date": "01.01.0537",
+      "description": "Cyrus restores Babylonian temples and returns looted statues of gods to their original cities, earning loyalty of Mesopotamian priests and population",
+      "description_ru": "Кир восстанавливает вавилонские храмы и возвращает разграбленные статуи богов в их исходные города, завоевывая лояльность месопотамских жрецов и населения",
+      "era": "BC",
+      "latitude": 32.5422,
+      "longitude": 44.4215,
+      "name": "Restoration of Babylonian Temples",
+      "name_ru": "Восстановление вавилонских храмов",
+      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
+      "tags": [
+        "Persian",
+        "Babylonian",
+        "Religious",
+        "Temple",
+        "Tolerance"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0536",
+      "description": "Cyrus extends Persian control to Levant and Syria, conquering territories from Mediterranean to Indus River, creating largest empire world has yet seen",
+      "description_ru": "Кир распространяет персидский контроль на Левант и Сирию, завоевывая территории от Средиземноморья до реки Инд, создавая крупнейшую империю, которую когда-либо видел мир",
+      "era": "BC",
+      "latitude": 34,
+      "longitude": 36,
+      "name": "Conquest of Syria and Levant",
+      "name_ru": "Завоевание Сирии и Леванта",
+      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
+      "tags": [
+        "Persian",
+        "Conquest",
+        "Expansion",
+        "Empire"
+      ],
+      "type": "military"
+    },
+    {
       "date": "01.01.0535",
       "description": "Construction begins on Pasargadae, first dynastic capital of Persian Empire, featuring Cyrus's tomb and palace complex with innovative architectural synthesis of various cultures",
       "description_ru": "Начинается строительство Пасаргад, первой династической столицы Персидской империи, с гробницей Кира и дворцовым комплексом, демонстрирующим инновационный архитектурный синтез различных культур",
@@ -77,6 +242,80 @@
       "type": "historic"
     },
     {
+      "date": "01.01.0534",
+      "description": "Cyrus creates professional standing army with elite Immortals guard unit of 10,000 soldiers, revolutionizing Persian military organization",
+      "description_ru": "Кир создает профессиональную постоянную армию с элитным подразделением гвардии Бессмертных из 10 000 солдат, революционизируя персидскую военную организацию",
+      "era": "BC",
+      "latitude": 30.2026,
+      "longitude": 53.1678,
+      "name": "Formation of Immortals Guard",
+      "name_ru": "Формирование гвардии Бессмертных",
+      "source": "https://en.wikipedia.org/wiki/Immortals_(Achaemenid_Empire)",
+      "tags": [
+        "Persian",
+        "Military",
+        "Army",
+        "Elite",
+        "Innovation"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0533",
+      "description": "Cyrus develops imperial postal system and road network connecting distant provinces, enabling rapid communication across vast empire",
+      "description_ru": "Кир разрабатывает имперскую почтовую систему и дорожную сеть, соединяющую отдаленные провинции, обеспечивая быструю коммуникацию через огромную империю",
+      "era": "BC",
+      "latitude": 35,
+      "longitude": 50,
+      "name": "Imperial Postal System",
+      "name_ru": "Имперская почтовая система",
+      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
+      "tags": [
+        "Persian",
+        "Infrastructure",
+        "Communication",
+        "Innovation"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0532",
+      "description": "Cyrus constructs vast irrigation projects and underground qanat water systems throughout Iranian plateau, dramatically increasing agricultural productivity",
+      "description_ru": "Кир строит обширные ирригационные проекты и подземные системы водоснабжения канат по всему Иранскому нагорью, резко повышая сельскохозяйственную производительность",
+      "era": "BC",
+      "latitude": 32,
+      "longitude": 53,
+      "name": "Persian Irrigation Systems",
+      "name_ru": "Персидские ирригационные системы",
+      "source": "https://en.wikipedia.org/wiki/Qanat",
+      "tags": [
+        "Persian",
+        "Engineering",
+        "Water",
+        "Agriculture",
+        "Innovation"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0531",
+      "description": "Cyrus promotes use of Aramaic as imperial administrative language alongside Old Persian, facilitating communication across multilingual empire",
+      "description_ru": "Кир продвигает использование арамейского языка как имперского административного языка наряду со староперсидским, облегчая коммуникацию в многоязычной империи",
+      "era": "BC",
+      "latitude": 32.5422,
+      "longitude": 44.4215,
+      "name": "Aramaic Administrative Language",
+      "name_ru": "Арамейский административный язык",
+      "source": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
+      "tags": [
+        "Persian",
+        "Language",
+        "Administration",
+        "Culture"
+      ],
+      "type": "cultural"
+    },
+    {
       "date": "01.01.0530",
       "description": "Cyrus campaigns against Massagetae nomads in Central Asia; killed in battle by Queen Tomyris, ending reign of empire's founder and greatest conqueror",
       "description_ru": "Кир ведет кампанию против кочевников массагетов в Центральной Азии; убит в бою царицей Томирис, завершая правление основателя империи и величайшего завоевателя",
@@ -93,6 +332,25 @@
         "War"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0530",
+      "description": "Cyrus's body returned to Pasargadae for burial in simple stone tomb; inscription reads 'O man, whoever you are and wherever you come from, for I know you will come, I am Cyrus who won the Persians their empire. Do not begrudge me this bit of earth that covers my bones'",
+      "description_ru": "Тело Кира возвращено в Пасаргады для захоронения в простой каменной гробнице; надпись гласит: 'О человек, кто бы ты ни был и откуда бы ни пришел, ибо я знаю, что ты придешь, я - Кир, который завоевал персам их империю. Не завидуй мне этой малости земли, покрывающей мои кости'",
+      "era": "BC",
+      "latitude": 30.2026,
+      "longitude": 53.1678,
+      "name": "Tomb of Cyrus",
+      "name_ru": "Гробница Кира",
+      "source": "https://en.wikipedia.org/wiki/Tomb_of_Cyrus",
+      "tags": [
+        "Persian",
+        "Tomb",
+        "Monument",
+        "Architecture",
+        "Death"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0529",
