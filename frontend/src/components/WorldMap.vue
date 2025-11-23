@@ -733,16 +733,18 @@ export default {
             // Get all markers in the cluster
             const markers = cluster.layer.getAllChildMarkers()
             
-            // Extract events from markers - each marker has associated events
+            // Extract events from markers - each marker stores its events directly
             const clusterEvents = []
             markers.forEach(marker => {
-              // Find events associated with this marker by checking marker registry
-              this.events.forEach(event => {
-                const eventMarker = this.marker_registry.get(event.id)
-                if (eventMarker === marker && !clusterEvents.find(e => e.id === event.id)) {
-                  clusterEvents.push(event)
-                }
-              })
+              // Each marker has an events property we set below
+              if (marker.events && Array.isArray(marker.events)) {
+                marker.events.forEach(event => {
+                  // Avoid duplicates
+                  if (!clusterEvents.find(e => e.id === event.id)) {
+                    clusterEvents.push(event)
+                  }
+                })
+              }
             })
             
             // Show modal with all events from this cluster
@@ -777,8 +779,9 @@ export default {
               riseOnHover: true
             })
             
-            // Store the event count on the marker for cluster counting
+            // Store the event count and events on the marker for cluster counting and event display
             marker.eventCount = eventGroup.events.length
+            marker.events = eventGroup.events  // Store events directly on marker
             
             // Use click event instead of popup to avoid coordinate corruption
             marker.on('click', () => {
