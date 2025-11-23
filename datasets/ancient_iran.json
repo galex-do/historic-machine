@@ -1,0 +1,658 @@
+{
+  "description": "Comprehensive dataset covering ancient Iranian history before the rise of the Persian Empire, including Elamites, Medes, Mannai, Parsua, and other Iranian peoples (2000 BC - 550 BC)",
+  "events": [
+    {
+      "date": "01.01.2000",
+      "description": "Elam reaches height of power under Sukkalmah Dynasty, controlling southwestern Iran from Susa with sophisticated administrative system rivaling Mesopotamian kingdoms",
+      "description_ru": "Элам достигает вершины могущества при династии Суккалмах, контролируя юго-западный Иран из Суз с развитой административной системой, соперничающей с месопотамскими царствами",
+      "era": "BC",
+      "latitude": 32.1897,
+      "longitude": 48.2583,
+      "name": "Height of Elamite Sukkalmah Dynasty",
+      "name_ru": "Расцвет династии Суккалмах Элама",
+      "source": "https://en.wikipedia.org/wiki/Elam",
+      "tags": [
+        "Elamite",
+        "Dynasty",
+        "Administration",
+        "Kingdom"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1850",
+      "description": "Elamite scribes develop Proto-Elamite and Linear Elamite writing systems independently from Mesopotamian cuneiform, creating unique literary tradition",
+      "description_ru": "Эламские писцы разрабатывают прото-эламскую и линейную эламскую письменность независимо от месопотамской клинописи, создавая уникальную литературную традицию",
+      "era": "BC",
+      "latitude": 32.1897,
+      "longitude": 48.2583,
+      "name": "Development of Elamite Script",
+      "name_ru": "Развитие эламской письменности",
+      "source": "https://en.wikipedia.org/wiki/Linear_Elamite",
+      "tags": [
+        "Elamite",
+        "Writing",
+        "Language",
+        "Culture"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1792",
+      "description": "Elamite King Siruktuh I invades Mesopotamia, sacking Ur and ending Third Dynasty of Ur, establishing Elam as major power threatening Babylonian independence",
+      "description_ru": "Эламский царь Сируктух I вторгается в Месопотамию, разграбляет Ур и завершает Третью династию Ура, утверждая Элам как крупную державу, угрожающую независимости Вавилона",
+      "era": "BC",
+      "latitude": 30.9625,
+      "longitude": 46.1031,
+      "name": "Elamite Sack of Ur",
+      "name_ru": "Эламиты разграбляют Ур",
+      "source": "https://en.wikipedia.org/wiki/Elam",
+      "tags": [
+        "Elamite",
+        "Conquest",
+        "War",
+        "Destruction"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1500",
+      "description": "Middle Elamite Period begins with renewed Elamite expansion under Kidinuid Dynasty, constructing massive ziggurats at Chogha Zanbil and Susa",
+      "description_ru": "Начинается среднеэламский период с обновленной эламской экспансией при династии Кидинуидов, строительством массивных зиккуратов в Чога-Занбиль и Сузах",
+      "era": "BC",
+      "latitude": 32.1897,
+      "longitude": 48.2583,
+      "name": "Middle Elamite Period Begins",
+      "name_ru": "Начало среднеэламского периода",
+      "source": "https://en.wikipedia.org/wiki/Elam",
+      "tags": [
+        "Elamite",
+        "Dynasty",
+        "Expansion",
+        "Architecture"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1250",
+      "description": "Elamite King Untash-Napirisha founds holy city of Dur Untash (Chogha Zanbil) with five-story ziggurat dedicated to god Inshushinak, demonstrating Elamite architectural mastery",
+      "description_ru": "Эламский царь Унташ-Напириша основывает священный город Дур-Унташ (Чога-Занбиль) с пятиярусным зиккуратом, посвященным богу Иншушинаку",
+      "era": "BC",
+      "latitude": 32.0086,
+      "longitude": 48.5217,
+      "name": "Foundation of Chogha Zanbil",
+      "name_ru": "Основание Чога-Занбиль",
+      "source": "https://en.wikipedia.org/wiki/Chogha_Zanbil",
+      "tags": [
+        "Elamite",
+        "Temple",
+        "Architecture",
+        "Religious",
+        "Building"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1185",
+      "description": "Elamite King Shutruk-Nakhunte conquers Babylon and carries off Code of Hammurabi stele to Susa as war trophy, marking peak of Elamite military power",
+      "description_ru": "Эламский царь Шутрук-Наххунте завоевывает Вавилон и увозит стелу с Кодексом Хаммурапи в Сузы как военный трофей, знаменуя пик эламской военной мощи",
+      "era": "BC",
+      "latitude": 32.5422,
+      "longitude": 44.4215,
+      "name": "Elamite Conquest of Babylon",
+      "name_ru": "Эламиты завоевывают Вавилон",
+      "source": "https://en.wikipedia.org/wiki/Shutruk-Nakhunte",
+      "tags": [
+        "Elamite",
+        "Babylonian",
+        "Conquest",
+        "War"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1110",
+      "description": "Babylonian King Nebuchadnezzar I defeats Elam in decisive campaign, ending Elamite dominance over Mesopotamia and beginning period of Elamite decline",
+      "description_ru": "Вавилонский царь Навуходоносор I побеждает Элам в решающей кампании, завершая эламское господство над Месопотамией и начиная период упадка Элама",
+      "era": "BC",
+      "latitude": 32.1897,
+      "longitude": 48.2583,
+      "name": "Babylonian Victory Over Elam",
+      "name_ru": "Вавилон побеждает Элам",
+      "source": "https://en.wikipedia.org/wiki/Elam",
+      "tags": [
+        "Elamite",
+        "Babylonian",
+        "Battle",
+        "Defeat"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1000",
+      "description": "Iranian-speaking peoples including Medes and Persians begin migrating into Iranian plateau from Central Asian steppes, gradually settling highland regions",
+      "description_ru": "Ираноязычные народы, включая мидийцев и персов, начинают мигрировать на Иранское нагорье из центральноазиатских степей, постепенно заселяя горные регионы",
+      "era": "BC",
+      "latitude": 35.6892,
+      "longitude": 51.3890,
+      "name": "Iranian Migration to Plateau",
+      "name_ru": "Миграция иранцев на плато",
+      "source": "https://en.wikipedia.org/wiki/Iranian_peoples",
+      "tags": [
+        "Migration",
+        "Settlement",
+        "Demographics"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0950",
+      "description": "Kingdom of Mannai emerges in northwestern Iran around Lake Urmia, creating buffer state between Assyria and emerging Iranian peoples",
+      "description_ru": "Царство Манна возникает на северо-западе Ирана вокруг озера Урмия, создавая буферное государство между Ассирией и формирующимися иранскими народами",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 45.3,
+      "name": "Emergence of Mannai Kingdom",
+      "name_ru": "Возникновение царства Манна",
+      "source": "https://en.wikipedia.org/wiki/Mannaea",
+      "tags": [
+        "Mannai",
+        "Foundation",
+        "Kingdom",
+        "Independence"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0900",
+      "description": "Median tribes establish loose confederation in northwestern Iran with centers at Ecbatana and Rhagae, beginning formation of Median identity",
+      "description_ru": "Мидийские племена создают свободную конфедерацию в северо-западном Иране с центрами в Экбатане и Раге, начиная формирование мидийской идентичности",
+      "era": "BC",
+      "latitude": 34.7982,
+      "longitude": 48.5148,
+      "name": "Formation of Median Confederation",
+      "name_ru": "Формирование мидийской конфедерации",
+      "source": "https://en.wikipedia.org/wiki/Medes",
+      "tags": [
+        "Medes",
+        "Foundation",
+        "Alliance",
+        "Tribal"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0850",
+      "description": "Assyrian King Shalmaneser III campaigns against Mannai and Median territories, extracting tribute and establishing Assyrian influence over northwestern Iran",
+      "description_ru": "Ассирийский царь Салманасар III проводит кампании против территорий Манны и Мидии, взимая дань и устанавливая ассирийское влияние над северо-западным Ираном",
+      "era": "BC",
+      "latitude": 37,
+      "longitude": 45.5,
+      "name": "Assyrian Campaigns in Iran",
+      "name_ru": "Ассирийские кампании в Иране",
+      "source": "https://en.wikipedia.org/wiki/Shalmaneser_III",
+      "tags": [
+        "Assyrian",
+        "Mannai",
+        "Medes",
+        "War",
+        "Tribute"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0835",
+      "description": "Mannai King Iranzu establishes diplomatic relations with Assyria, paying tribute while maintaining internal autonomy and developing distinctive Mannean culture",
+      "description_ru": "Царь Манны Иранзу устанавливает дипломатические отношения с Ассирией, платя дань, но сохраняя внутреннюю автономию и развивая отличительную маннейскую культуру",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 45.3,
+      "name": "Mannai-Assyria Diplomatic Relations",
+      "name_ru": "Дипломатия Манны и Ассирии",
+      "source": "https://en.wikipedia.org/wiki/Mannaea",
+      "tags": [
+        "Mannai",
+        "Assyrian",
+        "Diplomacy",
+        "Tribute",
+        "Treaty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0820",
+      "description": "Parsua tribal territory first mentioned in Assyrian records as region in northwestern Zagros Mountains, representing early Persian settlements before southern migration",
+      "description_ru": "Территория племени Парсуа впервые упоминается в ассирийских записях как регион в северо-западных горах Загрос, представляя ранние персидские поселения до южной миграции",
+      "era": "BC",
+      "latitude": 36.5,
+      "longitude": 46,
+      "name": "First Mention of Parsua",
+      "name_ru": "Первое упоминание Парсуа",
+      "source": "https://en.wikipedia.org/wiki/Parsua",
+      "tags": [
+        "Persian",
+        "Settlement",
+        "Tribal"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0800",
+      "description": "Elamite artisans create sophisticated bronze and gold metalwork, developing distinctive artistic style blending Mesopotamian and indigenous Iranian traditions",
+      "description_ru": "Эламские мастера создают изысканные бронзовые и золотые металлические изделия, разрабатывая отличительный художественный стиль, объединяющий месопотамские и местные иранские традиции",
+      "era": "BC",
+      "latitude": 32.1897,
+      "longitude": 48.2583,
+      "name": "Elamite Artistic Renaissance",
+      "name_ru": "Эламский художественный ренессанс",
+      "source": "https://en.wikipedia.org/wiki/Elam",
+      "tags": [
+        "Elamite",
+        "Art",
+        "Metallurgy",
+        "Bronze",
+        "Culture"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0780",
+      "description": "Mannai develops as important intermediary in trade between Mesopotamia and Iranian plateau, controlling key mountain passes and trade routes",
+      "description_ru": "Манна развивается как важный посредник в торговле между Месопотамией и Иранским нагорьем, контролируя ключевые горные перевалы и торговые пути",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 45.3,
+      "name": "Mannai Trade Networks",
+      "name_ru": "Торговые сети Манны",
+      "source": "https://en.wikipedia.org/wiki/Mannaea",
+      "tags": [
+        "Mannai",
+        "Trade",
+        "Economic"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0750",
+      "description": "Median horsemen develop advanced cavalry techniques and composite bow warfare, creating military traditions that will dominate Iranian warfare for centuries",
+      "description_ru": "Мидийские всадники разрабатывают передовые кавалерийские техники и войну с композитными луками, создавая военные традиции, которые будут доминировать в иранской войне веками",
+      "era": "BC",
+      "latitude": 35,
+      "longitude": 48,
+      "name": "Median Cavalry Development",
+      "name_ru": "Развитие мидийской кавалерии",
+      "source": "https://en.wikipedia.org/wiki/Medes",
+      "tags": [
+        "Medes",
+        "Cavalry",
+        "Military Innovation",
+        "Tactics"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0720",
+      "description": "Mannai King Aza allies with Urartu against Assyrian pressure, joining anti-Assyrian coalition in attempt to resist Neo-Assyrian expansion",
+      "description_ru": "Царь Манны Аза заключает союз с Урарту против ассирийского давления, присоединяясь к антиассирийской коалиции в попытке противостоять неоассирийской экспансии",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 45.3,
+      "name": "Mannai-Urartu Alliance",
+      "name_ru": "Союз Манны и Урарту",
+      "source": "https://en.wikipedia.org/wiki/Mannaea",
+      "tags": [
+        "Mannai",
+        "Urartu",
+        "Alliance",
+        "Diplomacy"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0716",
+      "description": "Assyrian King Sargon II invades Mannai, defeating King Aza and installing pro-Assyrian ruler, temporarily breaking Mannai-Urartu alliance",
+      "description_ru": "Ассирийский царь Саргон II вторгается в Манну, побеждая царя Азу и устанавливая проассирийского правителя, временно разрывая союз Манны и Урарту",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 45.3,
+      "name": "Assyrian Conquest of Mannai",
+      "name_ru": "Ассирия завоевывает Манну",
+      "source": "https://en.wikipedia.org/wiki/Sargon_II",
+      "tags": [
+        "Mannai",
+        "Assyrian",
+        "Conquest",
+        "War"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0700",
+      "description": "Parsua tribes migrate southward into Fars province, establishing Parsumash kingdom in region that will become heartland of Persian Empire",
+      "description_ru": "Племена Парсуа мигрируют на юг в провинцию Фарс, основывая царство Парсумаш в регионе, который станет сердцем Персидской империи",
+      "era": "BC",
+      "latitude": 29.6142,
+      "longitude": 52.5388,
+      "name": "Foundation of Parsumash",
+      "name_ru": "Основание Парсумаша",
+      "source": "https://en.wikipedia.org/wiki/Parsua",
+      "tags": [
+        "Persian",
+        "Foundation",
+        "Migration",
+        "Kingdom"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0690",
+      "description": "Cimmerian nomads from Eurasian steppes invade northwestern Iran, devastating Mannai territories and disrupting established political order",
+      "description_ru": "Киммерийские кочевники из евразийских степей вторгаются в северо-западный Иран, опустошая территории Манны и нарушая установленный политический порядок",
+      "era": "BC",
+      "latitude": 38,
+      "longitude": 46,
+      "name": "Cimmerian Invasions of Iran",
+      "name_ru": "Киммерийские вторжения в Иран",
+      "source": "https://en.wikipedia.org/wiki/Cimmerians",
+      "tags": [
+        "Cimmerian",
+        "Invasions",
+        "Mannai",
+        "War"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0680",
+      "description": "Scythian warriors establish temporary control over parts of northwestern Iran, introducing steppe warfare tactics and artistic styles to Iranian peoples",
+      "description_ru": "Скифские воины устанавливают временный контроль над частями северо-западного Ирана, привнося степные военные тактики и художественные стили иранским народам",
+      "era": "BC",
+      "latitude": 37,
+      "longitude": 47,
+      "name": "Scythian Presence in Iran",
+      "name_ru": "Скифское присутствие в Иране",
+      "source": "https://en.wikipedia.org/wiki/Scythians",
+      "tags": [
+        "Scythian",
+        "Invasions",
+        "Cavalry",
+        "Culture"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0675",
+      "description": "Median chieftain Phraortes (Khshathrita) begins unifying Median tribes under single leadership, challenging Assyrian dominance in northwestern Iran",
+      "description_ru": "Мидийский вождь Фраорт (Хшатрита) начинает объединять мидийские племена под единым руководством, бросая вызов ассирийскому господству в северо-западном Иране",
+      "era": "BC",
+      "latitude": 34.7982,
+      "longitude": 48.5148,
+      "name": "Phraortes Unifies Median Tribes",
+      "name_ru": "Фраорт объединяет мидийские племена",
+      "source": "https://en.wikipedia.org/wiki/Phraortes",
+      "tags": [
+        "Medes",
+        "Unification",
+        "Dynasty",
+        "Independence"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0660",
+      "description": "Elamite King Shutruk-Nahhunte II struggles to maintain Elamite independence against growing Assyrian pressure, marking beginning of final Elamite decline",
+      "description_ru": "Эламский царь Шутрук-Наххунте II борется за сохранение эламской независимости против растущего ассирийского давления, знаменуя начало окончательного упадка Элама",
+      "era": "BC",
+      "latitude": 32.1897,
+      "longitude": 48.2583,
+      "name": "Final Elamite Resistance",
+      "name_ru": "Последнее сопротивление Элама",
+      "source": "https://en.wikipedia.org/wiki/Elam",
+      "tags": [
+        "Elamite",
+        "Assyrian",
+        "Resistance",
+        "Decline"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0653",
+      "description": "Phraortes reportedly killed in battle against Assyria during failed attempt to capture Nineveh, temporarily halting Median expansion",
+      "description_ru": "Фраорт, как сообщается, убит в битве с Ассирией во время неудачной попытки захватить Ниневию, временно останавливая мидийскую экспансию",
+      "era": "BC",
+      "latitude": 36.3661,
+      "longitude": 43.1528,
+      "name": "Death of Phraortes",
+      "name_ru": "Смерть Фраорта",
+      "source": "https://en.wikipedia.org/wiki/Phraortes",
+      "tags": [
+        "Medes",
+        "Assyrian",
+        "Battle",
+        "Death"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0647",
+      "description": "Assyrian King Ashurbanipal launches devastating campaign against Elam, sacking Susa and destroying Elamite political structure after centuries of rivalry",
+      "description_ru": "Ассирийский царь Ашшурбанипал начинает разрушительную кампанию против Элама, разграбляя Сузы и уничтожая эламскую политическую структуру после столетий соперничества",
+      "era": "BC",
+      "latitude": 32.1897,
+      "longitude": 48.2583,
+      "name": "Assyrian Destruction of Susa",
+      "name_ru": "Ассирия разрушает Сузы",
+      "source": "https://en.wikipedia.org/wiki/Elam",
+      "tags": [
+        "Elamite",
+        "Assyrian",
+        "Destruction",
+        "War",
+        "Fall"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0640",
+      "description": "Scythian and Cimmerian raids devastate Mannai kingdom, weakening its military power and making it vulnerable to Median expansion",
+      "description_ru": "Скифские и киммерийские набеги опустошают царство Манна, ослабляя его военную мощь и делая уязвимым для мидийской экспансии",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 45.3,
+      "name": "Nomadic Devastation of Mannai",
+      "name_ru": "Кочевники опустошают Манну",
+      "source": "https://en.wikipedia.org/wiki/Mannaea",
+      "tags": [
+        "Mannai",
+        "Scythian",
+        "Cimmerian",
+        "Invasions",
+        "Destruction"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0625",
+      "description": "Cyaxares becomes king of Media and reorganizes Median army along professional lines with specialized units of spearmen, archers, and cavalry",
+      "description_ru": "Киаксар становится царем Мидии и реорганизует мидийскую армию по профессиональным линиям со специализированными подразделениями копейщиков, лучников и кавалерии",
+      "era": "BC",
+      "latitude": 34.7982,
+      "longitude": 48.5148,
+      "name": "Cyaxares Military Reforms",
+      "name_ru": "Военные реформы Киаксара",
+      "source": "https://en.wikipedia.org/wiki/Cyaxares",
+      "tags": [
+        "Medes",
+        "Military Reform",
+        "Army",
+        "Innovation"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0624",
+      "description": "Cyaxares establishes formal Median Empire with capital at Ecbatana, constructing fortified palace complex and establishing imperial administration",
+      "description_ru": "Киаксар учреждает формальную Мидийскую империю со столицей в Экбатане, строя укрепленный дворцовый комплекс и создавая имперскую администрацию",
+      "era": "BC",
+      "latitude": 34.7982,
+      "longitude": 48.5148,
+      "name": "Foundation of Median Empire",
+      "name_ru": "Основание Мидийской империи",
+      "source": "https://en.wikipedia.org/wiki/Medes",
+      "tags": [
+        "Medes",
+        "Empire",
+        "Foundation",
+        "Capital"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0615",
+      "description": "Cyaxares forms alliance with Babylonian King Nabopolassar, marrying his granddaughter Amytis to Nabopolassar's son Nebuchadnezzar to seal anti-Assyrian pact",
+      "description_ru": "Киаксар формирует союз с вавилонским царем Набопаласаром, выдавая свою внучку Амитис замуж за сына Набопаласара Навуходоносора для скрепления антиассирийского пакта",
+      "era": "BC",
+      "latitude": 34.7982,
+      "longitude": 48.5148,
+      "name": "Median-Babylonian Alliance",
+      "name_ru": "Мидийско-вавилонский союз",
+      "source": "https://en.wikipedia.org/wiki/Cyaxares",
+      "tags": [
+        "Medes",
+        "Babylonian",
+        "Alliance",
+        "Diplomacy",
+        "Marriage"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0614",
+      "description": "Median forces capture and annex Mannai kingdom, incorporating its territories into Median Empire and ending Mannai independence",
+      "description_ru": "Мидийские силы захватывают и аннексируют царство Манна, включая его территории в Мидийскую империю и завершая независимость Манны",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 45.3,
+      "name": "Median Conquest of Mannai",
+      "name_ru": "Мидия завоевывает Манну",
+      "source": "https://en.wikipedia.org/wiki/Mannaea",
+      "tags": [
+        "Medes",
+        "Mannai",
+        "Conquest",
+        "Fall"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.05.0585",
+      "description": "Solar eclipse halts Battle of Halys between Media and Lydia; both kingdoms interpret celestial event as divine sign and negotiate peace treaty establishing Halys River as border",
+      "description_ru": "Солнечное затмение останавливает битву при Галисе между Мидией и Лидией; оба царства интерпретируют небесное событие как божественный знак и заключают мирный договор, устанавливая реку Галис как границу",
+      "era": "BC",
+      "latitude": 39.5,
+      "longitude": 34.5,
+      "name": "Battle of Halys and Peace Treaty",
+      "name_ru": "Битва при Галисе и мирный договор",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Halys",
+      "tags": [
+        "Medes",
+        "Battle",
+        "Peace",
+        "Treaty",
+        "Eclipse"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0580",
+      "description": "Median Empire reaches greatest territorial extent under Cyaxares, controlling territories from Anatolia to eastern Iran and establishing hegemony over Iranian plateau",
+      "description_ru": "Мидийская империя достигает максимальной территориальной протяженности при Киаксаре, контролируя территории от Анатолии до восточного Ирана и устанавливая гегемонию над Иранским нагорьем",
+      "era": "BC",
+      "latitude": 35,
+      "longitude": 48,
+      "name": "Peak of Median Empire",
+      "name_ru": "Пик Мидийской империи",
+      "source": "https://en.wikipedia.org/wiki/Medes",
+      "tags": [
+        "Medes",
+        "Empire",
+        "Expansion"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0585",
+      "description": "Parsumash Kingdom in Fars becomes vassal of Median Empire, with Persian chieftains paying tribute to Median overlords while maintaining local autonomy",
+      "description_ru": "Царство Парсумаш в Фарсе становится вассалом Мидийской империи, персидские вожди платят дань мидийским владыкам, сохраняя местную автономию",
+      "era": "BC",
+      "latitude": 29.6142,
+      "longitude": 52.5388,
+      "name": "Persian Vassalage to Media",
+      "name_ru": "Персидская вассальность Мидии",
+      "source": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
+      "tags": [
+        "Persian",
+        "Medes",
+        "Vassalage",
+        "Tribute"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0559",
+      "description": "Astyages becomes last king of Median Empire, continuing policies of his predecessor while Persian vassal Cyrus II builds power in Fars",
+      "description_ru": "Астиаг становится последним царем Мидийской империи, продолжая политику своего предшественника, в то время как персидский вассал Кир II наращивает силу в Фарсе",
+      "era": "BC",
+      "latitude": 34.7982,
+      "longitude": 48.5148,
+      "name": "Astyages Becomes Median King",
+      "name_ru": "Астиаг - царь Мидии",
+      "source": "https://en.wikipedia.org/wiki/Astyages",
+      "tags": [
+        "Medes",
+        "Dynasty",
+        "Persian"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0553",
+      "description": "Cyrus II (the Great) revolts against Median overlordship, beginning Persian rebellion that will transform regional power balance and establish Achaemenid Persian Empire",
+      "description_ru": "Кир II (Великий) восстает против мидийского владычества, начиная персидское восстание, которое трансформирует региональный баланс сил и установит Ахеменидскую Персидскую империю",
+      "era": "BC",
+      "latitude": 29.9342,
+      "longitude": 52.8906,
+      "name": "Cyrus Revolts Against Media",
+      "name_ru": "Кир восстает против Мидии",
+      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
+      "tags": [
+        "Persian",
+        "Medes",
+        "Revolt",
+        "War",
+        "Independence"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0550",
+      "description": "Cyrus defeats Astyages at Battle of Pasargadae as Median nobles defect to Persian side; Media absorbed into Persian Empire, marking end of Median independence and rise of Persian dominance",
+      "description_ru": "Кир побеждает Астиага в битве при Пасаргадах, когда мидийские вельможи переходят на персидскую сторону; Мидия поглощена Персидской империей, знаменуя конец мидийской независимости и подъем персидского господства",
+      "era": "BC",
+      "latitude": 30.2026,
+      "longitude": 53.1678,
+      "name": "Fall of Median Empire",
+      "name_ru": "Падение Мидийской империи",
+      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
+      "tags": [
+        "Persian",
+        "Medes",
+        "Battle",
+        "Fall",
+        "Conquest"
+      ],
+      "type": "military"
+    }
+  ]
+}
