@@ -697,12 +697,12 @@ export default {
             maxClusterRadius: 80,
             // Show coverage on hover
             showCoverageOnHover: false,
-            // Zoom to show all markers in cluster on click
-            zoomToBoundsOnClick: true,
+            // Don't zoom on cluster click - we'll show modal instead
+            zoomToBoundsOnClick: false,
             // Disable clustering at zoom level (disable to allow clustering at all zooms)
             disableClusteringAtZoom: null,
-            // Spiderfy markers when cluster is clicked at max zoom
-            spiderfyOnMaxZoom: true,
+            // Don't spiderfy - we show modal instead
+            spiderfyOnMaxZoom: false,
             // Custom icon creation for clusters - using same style as co-located events
             iconCreateFunction: (cluster) => {
               const childCount = cluster.getChildCount()
@@ -716,6 +716,29 @@ export default {
                 iconAnchor: [15, 30],
                 popupAnchor: [0, -30]
               })
+            }
+          })
+          
+          // Add click handler to clusters to show event info modal
+          this.marker_cluster_group.on('clusterclick', (cluster) => {
+            // Get all markers in the cluster
+            const markers = cluster.layer.getAllChildMarkers()
+            
+            // Extract events from markers - each marker has associated events
+            const clusterEvents = []
+            markers.forEach(marker => {
+              // Find events associated with this marker by checking marker registry
+              this.events.forEach(event => {
+                const eventMarker = this.marker_registry.get(event.id)
+                if (eventMarker === marker && !clusterEvents.find(e => e.id === event.id)) {
+                  clusterEvents.push(event)
+                }
+              })
+            })
+            
+            // Show modal with all events from this cluster
+            if (clusterEvents.length > 0) {
+              this.show_events_info(clusterEvents)
             }
           })
           
