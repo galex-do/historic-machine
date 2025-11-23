@@ -589,11 +589,11 @@
     },
     {
       "date": "01.01.0717",
-      "description": "Sargon II captures Carchemish, last independent Hittite city-state, securing massive silver treasury and completing Assyrian control of Syria",
-      "description_ru": "Саргон II захватывает Каркемиш, последний независимый хеттский город-государство, получая огромную серебряную казну и завершая ассирийский контроль над Сирией",
+      "description": "Sargon II captures Carchemish, last independent Hittite city-state, securing massive silver treasury and completing Assyrian control of Syria, ",
+      "description_ru": "Саргон II захватывает Каркемиш, последний независимый хеттский город-государство, лишая хеттов политической независимости, получая огромную серебряную казну и полный контроль над Сирией",
       "era": "BC",
-      "latitude": 36.8261,
-      "longitude": 38.0189,
+      "latitude": 36.8258,
+      "longitude": 38.0106,
       "name": "Conquest of Carchemish",
       "name_ru": "Ассирийцы захватывают Каркемиш",
       "source": "https://en.wikipedia.org/wiki/Sargon_II",
@@ -722,8 +722,8 @@
       "description": "Sennacherib invades Judah after King Hezekiah withholds tribute, capturing 46 fortified cities and laying siege to Jerusalem",
       "description_ru": "Синаххериб вторгается в Иудею после того, как царь Езекия задерживает дань, захватывая 46 укрепленных городов и осаждая Иерусалим",
       "era": "BC",
-      "latitude": 31.7683,
-      "longitude": 35.2137,
+      "latitude": 31.769,
+      "longitude": 35.234,
       "name": "Sennacherib's Invasion of Judah",
       "name_ru": "Вторжение Синаххериба в Иудею",
       "source": "https://en.wikipedia.org/wiki/Sennacherib%27s_Annals",
@@ -767,7 +767,8 @@
       "tags": [
         "Assyrian",
         "Political",
-        "Assassination"
+        "Assassination",
+        "Son Kills Father"
       ],
       "type": "political"
     },
@@ -949,7 +950,8 @@
         "Fall",
         "Destruction",
         "Medes",
-        "Babylonian"
+        "Babylonian",
+        "Scythian"
       ],
       "type": "military"
     },

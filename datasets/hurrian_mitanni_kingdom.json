@@ -196,7 +196,8 @@
         "Mitanni",
         "Alliance",
         "Anatolia",
-        "Diplomacy"
+        "Diplomacy",
+        "Cilicia"
       ],
       "type": "political"
     },
@@ -285,7 +286,8 @@
       "tags": [
         "Mitanni",
         "Dynasty",
-        "Golden Age"
+        "Golden Age",
+        "King"
       ],
       "type": "political"
     },
@@ -310,6 +312,23 @@
     },
     {
       "date": "01.01.1370",
+      "description": "Tushratta becomes king of Mitanni after death of Shuttarna II, last independent ruler of the kingdom",
+      "description_ru": "Тушратта становится царем Митанни после смерти Шуттарны II, последний независимый правитель царства",
+      "era": "BC",
+      "latitude": 36.85,
+      "longitude": 40.5,
+      "name": "Accession of King Tushratta",
+      "name_ru": "Тушратта - последний царь Митанни",
+      "source": "https://www.britannica.com/place/Mitanni",
+      "tags": [
+        "Mitanni",
+        "Dynasty",
+        "King"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1370",
       "description": "Extensive cuneiform archives at Nuzi document Mitanni administration, legal practices, and social structure of maryannu aristocracy",
       "description_ru": "Обширные клинописные архивы в Нузи документируют администрацию Митанни, юридические практики и социальную структуру аристократии марьянну",
       "era": "BC",
@@ -326,25 +345,26 @@
       "type": "cultural"
     },
     {
-      "date": "01.01.1365",
-      "description": "Tushratta becomes king of Mitanni after death of Shuttarna II, last independent ruler of the kingdom",
-      "description_ru": "Тушратта становится царем Митанни после смерти Шуттарны II, последний независимый правитель царства",
+      "date": "01.01.1370",
+      "description": "The Mitanni king Tushratta, who considered Ishwa his fiefdom, marched his troops north and invaded Isuwa. As a result of this campaign, Tushratta seized considerable spoils of war and apparently liberated the entire territory of Isuwa.",
+      "description_ru": "Царь Митанни Тушратта, который считал Ишуву своей вотчиной, двинул войска на север и вторгся в Ишуву. В результате этого похода Тушратта захватил большую военную добычу и, очевидно, освободил всю территорию Ишувы.",
       "era": "BC",
-      "latitude": 36.85,
-      "longitude": 40.5,
-      "name": "Accession of King Tushratta",
-      "name_ru": "Тушратта - последний царь Митанни",
-      "source": "https://www.britannica.com/place/Mitanni",
+      "latitude": 38.67210882,
+      "longitude": 39.22050476,
+      "name": "Mitanni defeats Hatti in Isuwa",
+      "name_ru": "Митанни выгоняют хеттов из Ишувы",
+      "source": "https://en.wikipedia.org/wiki/Isuwa",
       "tags": [
         "Mitanni",
-        "Dynasty"
+        "Hittite",
+        "Conquest"
       ],
-      "type": "political"
+      "type": "military"
     },
     {
       "date": "01.01.1360",
       "description": "Hittite king Suppiluliumas I launches major invasion of Mitanni, devastating Syrian territories and threatening capital",
-      "description_ru": "Хеттский царь Суппилулиумас I начинает крупное вторжение в Митанни, опустошая сирийские территории и угрожая столице",
+      "description_ru": "Хеттский царь Суппилулиума I начинает крупное вторжение в Митанни, опустошая сирийские территории и угрожая столице",
       "era": "BC",
       "latitude": 36.5,
       "longitude": 39,
@@ -355,7 +375,8 @@
         "Mitanni",
         "War",
         "Hittite",
-        "Invasions"
+        "Invasions",
+        "Syria"
       ],
       "type": "military"
     },
@@ -378,7 +399,26 @@
       "type": "political"
     },
     {
-      "date": "01.01.1358",
+      "date": "01.01.1357",
+      "description": "King Tushratta assassinated during dynastic power struggle following Hittite conquest, marking end of independent Mitanni",
+      "description_ru": "Царь Тушратта убит во время внутреннего переворота, к власти в Митанни пришел Артадама II",
+      "era": "BC",
+      "latitude": 36.85,
+      "longitude": 40.5,
+      "name": "Assassination of Tushratta",
+      "name_ru": "Убийство Тушратты",
+      "source": "https://www.britannica.com/place/Mitanni",
+      "tags": [
+        "Mitanni",
+        "Assassination",
+        "Civil War",
+        "Death",
+        "Usurpation"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.05.1356",
       "description": "Hittites sack Wassukkani, capital of Mitanni, destroying palaces and temples in devastating blow to kingdom",
       "description_ru": "Хетты разграбляют Вашшуккани, столицу Митанни, разрушая дворцы и храмы в разрушительном ударе по царству",
       "era": "BC",
@@ -396,27 +436,9 @@
       "type": "military"
     },
     {
-      "date": "01.01.1355",
-      "description": "King Tushratta assassinated during dynastic power struggle following Hittite conquest, marking end of independent Mitanni",
-      "description_ru": "Царь Тушратта убит во время династической борьбы за власть после хеттского завоевания, знаменуя конец независимого Митанни",
-      "era": "BC",
-      "latitude": 36.85,
-      "longitude": 40.5,
-      "name": "Assassination of Tushratta",
-      "name_ru": "Убийство Тушратты",
-      "source": "https://www.britannica.com/place/Mitanni",
-      "tags": [
-        "Mitanni",
-        "Assassination",
-        "Civil War",
-        "Death"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.1350",
+      "date": "01.01.1356",
       "description": "Shuttarna III seizes throne in Wassukkani as rival claimant, plunging kingdom into civil war",
-      "description_ru": "Шуттарна III захватывает трон в Вашшуккани как конкурирующий претендент, погружая царство в гражданскую войну",
+      "description_ru": "Шуттарна III захватывает трон в Вашшуккани как конкурирующий претендент, погружая царство в гражданскую войну. За помощью в войне с хеттами Шуттарна обращается к Ашшур-Убаллиту",
       "era": "BC",
       "latitude": 36.85,
       "longitude": 40.5,
@@ -425,14 +447,16 @@
       "source": "https://www.newworldencyclopedia.org/entry/Mitanni",
       "tags": [
         "Mitanni",
-        "Civil War"
+        "Civil War",
+        "Assyrian",
+        "Hittite"
       ],
       "type": "political"
     },
     {
       "date": "01.01.1345",
       "description": "Mattiwaza, son of Tushratta, flees to Hittite court and seeks aid of Suppiluliumas I against rival Shuttarna III",
-      "description_ru": "Маттиваза, сын Тушратты, бежит к хеттскому двору и ищет помощи Суппилулиумаса I против соперника Шуттарны III",
+      "description_ru": "Маттиваза, сын Тушратты, бежит к хеттскому двору и ищет помощи Суппилулиумы I против соперника Шуттарны III",
       "era": "BC",
       "latitude": 40,
       "longitude": 34.6,
@@ -450,7 +474,7 @@
     {
       "date": "01.01.1340",
       "description": "Suppiluliumas I installs Mattiwaza as Hittite vassal king of Mitanni, reducing kingdom to Khabur River valley heartland",
-      "description_ru": "Суппилулиумас I устанавливает Маттивазу как хеттского вассального царя Митанни, сокращая царство до сердцевины долины реки Хабур",
+      "description_ru": "Суппилулиума I принимает Маттивазу как хеттского вассального царя Митанни, выдает за него одну из своих дочерей. Легитимное царство Митанни лежит до сердцевины долины реки Хабур",
       "era": "BC",
       "latitude": 36.85,
       "longitude": 40.5,

@@ -680,8 +680,7 @@
       "tags": [
         "Indus Valley",
         "Urban",
-        "Civilization",
-        "Peak"
+        "Civilization"
       ],
       "type": "historic"
     },
@@ -820,7 +819,8 @@
         "Japan",
         "Jōmon",
         "Maritime",
-        "Technology"
+        "Technology",
+        "Fishing"
       ],
       "type": "scientific"
     },
@@ -1569,22 +1569,6 @@
     },
     {
       "date": "01.01.1900",
-      "description": "The Erlitou culture develops in the Yellow River valley, possibly representing the archaeological evidence of the Xia Dynasty",
-      "description_ru": "Культура Эрлитоу развивается в долине Желтой реки, возможно представляя археологические свидетельства династии Ся",
-      "era": "BC",
-      "latitude": 34.746,
-      "longitude": 112.716,
-      "name": "Erlitou Culture Emerges",
-      "name_ru": "Возникновение культуры Эрлитоу",
-      "tags": [
-        "Erlitou",
-        "Bronze Age",
-        "Culture"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1900",
       "description": "Indus Valley Civilization begins gradual decline as monsoons weaken and the Ghaggar-Hakra river system starts drying up",
       "description_ru": "Цивилизация долины Инда начинает постепенный упадок по мере ослабления муссонов и высыхания речной системы Гаггар-Хакра",
       "era": "BC",
@@ -1596,6 +1580,22 @@
         "Indus Valley",
         "Decline",
         "Climate"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1900",
+      "description": "The Erlitou culture develops in the Yellow River valley, possibly representing the archaeological evidence of the Xia Dynasty",
+      "description_ru": "Культура Эрлитоу развивается в долине Желтой реки, возможно представляя археологические свидетельства династии Ся",
+      "era": "BC",
+      "latitude": 34.746,
+      "longitude": 112.716,
+      "name": "Erlitou Culture Emerges",
+      "name_ru": "Возникновение культуры Эрлитоу",
+      "tags": [
+        "Erlitou",
+        "Bronze Age",
+        "Culture"
       ],
       "type": "historic"
     },
@@ -1632,22 +1632,6 @@
     },
     {
       "date": "01.01.1800",
-      "description": "Development of sophisticated ceramic traditions in Ecuador's Valdivia culture, producing elaborate figurines and decorated pottery",
-      "description_ru": "Развитие сложных керамических традиций в культуре Вальдивия Эквадора, создающей искусные фигурки и украшенную керамику",
-      "era": "BC",
-      "latitude": -2.227,
-      "longitude": -80.956,
-      "name": "Valdivia Pottery Innovation",
-      "name_ru": "Керамика Вальдивии",
-      "tags": [
-        "Valdivia",
-        "Pottery",
-        "Art"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.1800",
       "description": "Babylonian mathematics develops advanced techniques including quadratic equations",
       "description_ru": "Вавилонская математика развивает передовые техники, включая квадратные уравнения",
       "era": "BC",
@@ -1661,6 +1645,22 @@
         "Innovation"
       ],
       "type": "scientific"
+    },
+    {
+      "date": "01.01.1800",
+      "description": "Development of sophisticated ceramic traditions in Ecuador's Valdivia culture, producing elaborate figurines and decorated pottery",
+      "description_ru": "Развитие сложных керамических традиций в культуре Вальдивия Эквадора, создающей искусные фигурки и украшенную керамику",
+      "era": "BC",
+      "latitude": -2.227,
+      "longitude": -80.956,
+      "name": "Valdivia Pottery Innovation",
+      "name_ru": "Керамика Вальдивии",
+      "tags": [
+        "Valdivia",
+        "Pottery",
+        "Art"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.1792",
@@ -1767,6 +1767,22 @@
     },
     {
       "date": "01.01.1600",
+      "description": "Cheng Tang, founder of the Shang Dynasty, overthrows the last Xia king in the Battle of Mingtiao, establishing Shang rule",
+      "description_ru": "Чэн Тан, основатель династии Шан, свергает последнего царя Ся в битве при Минтяо, устанавливая правление Шан",
+      "era": "BC",
+      "latitude": 35.236,
+      "longitude": 113.754,
+      "name": "Cheng Tang Overthrows Xia",
+      "name_ru": "Чэн Тан свергает Ся",
+      "tags": [
+        "Shang Dynasty",
+        "Cheng Tang",
+        "Overthrow"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1600",
       "description": "Lapita culture emerges in the Bismarck Archipelago, marking the first Austronesian colonization of Remote Oceania with distinctive dentate-stamped pottery",
       "description_ru": "Культура Лапита возникает в архипелаге Бисмарка, знаменуя первую австронезийскую колонизацию Удаленной Океании с характерной зубчатой керамикой",
       "era": "BC",
@@ -1782,22 +1798,6 @@
         "Culture"
       ],
       "type": "cultural"
-    },
-    {
-      "date": "01.01.1600",
-      "description": "Cheng Tang, founder of the Shang Dynasty, overthrows the last Xia king in the Battle of Mingtiao, establishing Shang rule",
-      "description_ru": "Чэн Тан, основатель династии Шан, свергает последнего царя Ся в битве при Минтяо, устанавливая правление Шан",
-      "era": "BC",
-      "latitude": 35.236,
-      "longitude": 113.754,
-      "name": "Cheng Tang Overthrows Xia",
-      "name_ru": "Чэн Тан свергает Ся",
-      "tags": [
-        "Shang Dynasty",
-        "Cheng Tang",
-        "Overthrow"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.1600",
@@ -1900,23 +1900,6 @@
     },
     {
       "date": "01.01.1500",
-      "description": "Shang artisans perfect advanced bronze casting techniques, creating elaborate ritual vessels and weapons",
-      "description_ru": "Ремесленники Шан совершенствуют передовые техники литья бронзы, создавая изысканные ритуальные сосуды и оружие",
-      "era": "BC",
-      "latitude": 35,
-      "longitude": 114,
-      "name": "Bronze Casting Perfected in China",
-      "name_ru": "Совершенствование литья бронзы в Китае",
-      "tags": [
-        "Metallurgy",
-        "Ritual Vessels",
-        "Shang Dynasty",
-        "Bronze"
-      ],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.1500",
       "description": "Mumun pottery period begins in Korea with agricultural revolution, rectangular longhouses, and transition to sedentary farming communities",
       "description_ru": "Период керамики Мумун начинается в Корее с сельскохозяйственной революцией, прямоугольными длинными домами и переходом к оседлым земледельческим общинам",
       "era": "BC",
@@ -1932,22 +1915,6 @@
         "Culture"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.1500",
-      "description": "Mesopotamians invent the seeder plow, revolutionizing agriculture and food production",
-      "description_ru": "Месопотамцы изобретают сеялочный плуг, революционизируя сельское хозяйство и производство пищи",
-      "era": "BC",
-      "latitude": 33.312,
-      "longitude": 44.644,
-      "name": "Seeder Plow Invented",
-      "name_ru": "Изобретение сеялочного плуга",
-      "tags": [
-        "Agriculture",
-        "Innovation",
-        "Food"
-      ],
-      "type": "scientific"
     },
     {
       "date": "01.01.1500",
@@ -1982,6 +1949,39 @@
         "Migration"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.1500",
+      "description": "Shang artisans perfect advanced bronze casting techniques, creating elaborate ritual vessels and weapons",
+      "description_ru": "Ремесленники Шан совершенствуют передовые техники литья бронзы, создавая изысканные ритуальные сосуды и оружие",
+      "era": "BC",
+      "latitude": 35,
+      "longitude": 114,
+      "name": "Bronze Casting Perfected in China",
+      "name_ru": "Совершенствование литья бронзы в Китае",
+      "tags": [
+        "Metallurgy",
+        "Ritual Vessels",
+        "Shang Dynasty",
+        "Bronze"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.1500",
+      "description": "Mesopotamians invent the seeder plow, revolutionizing agriculture and food production",
+      "description_ru": "Месопотамцы изобретают сеялочный плуг, революционизируя сельское хозяйство и производство пищи",
+      "era": "BC",
+      "latitude": 33.312,
+      "longitude": 44.644,
+      "name": "Seeder Plow Invented",
+      "name_ru": "Изобретение сеялочного плуга",
+      "tags": [
+        "Agriculture",
+        "Innovation",
+        "Food"
+      ],
+      "type": "scientific"
     },
     {
       "date": "01.01.1479",
@@ -2301,36 +2301,21 @@
       "type": "military"
     },
     {
-      "date": "01.01.1430",
-      "description": "Hittite Empire expands under Tudhaliya I, challenging Egyptian and Mitanni power",
-      "description_ru": "Хеттская империя расширяется под руководством Тудхалии I, бросая вызов египетской и митаннийской власти",
-      "era": "BC",
-      "latitude": 40.023,
-      "longitude": 34.621,
-      "name": "Hittite Empire Expansion",
-      "name_ru": "Расширение Хеттской империи",
-      "tags": [
-        "Hittite",
-        "Empire",
-        "Expansion"
-      ],
-      "type": "political"
-    },
-    {
       "date": "01.01.1400",
-      "description": "Mycenaean Greeks adapt Linear A to create Linear B, the first script to write Greek",
-      "description_ru": "Микенские греки адаптируют Линейное А для создания Линейного Б, первого письма для записи греческого языка",
+      "description": "Shang Dynasty develops a sophisticated 360-day calendar system incorporating lunar and solar cycles with intercalary months",
+      "description_ru": "Династия Шан разрабатывает сложную 360-дневную календарную систему, включающую лунные и солнечные циклы с вставными месяцами",
       "era": "BC",
-      "latitude": 37.641,
-      "longitude": 22.726,
-      "name": "Linear B Script Developed",
-      "name_ru": "Разработка письма Линейное Б",
-      "source": "https://www.britannica.com/topic/Linear-B",
+      "latitude": 36.103,
+      "longitude": 114.358,
+      "name": "Shang Calendar System",
+      "name_ru": "Календарная система Шан",
       "tags": [
-        "Greek",
-        "Writing"
+        "Shang Dynasty",
+        "China",
+        "Calendar",
+        "Astronomy"
       ],
-      "type": "cultural"
+      "type": "scientific"
     },
     {
       "date": "01.01.1400",
@@ -2352,20 +2337,19 @@
     },
     {
       "date": "01.01.1400",
-      "description": "Shang Dynasty develops a sophisticated 360-day calendar system incorporating lunar and solar cycles with intercalary months",
-      "description_ru": "Династия Шан разрабатывает сложную 360-дневную календарную систему, включающую лунные и солнечные циклы с вставными месяцами",
+      "description": "Mycenaean Greeks adapt Linear A to create Linear B, the first script to write Greek",
+      "description_ru": "Микенские греки адаптируют Линейное А для создания Линейного Б, первого письма для записи греческого языка",
       "era": "BC",
-      "latitude": 36.103,
-      "longitude": 114.358,
-      "name": "Shang Calendar System",
-      "name_ru": "Календарная система Шан",
+      "latitude": 37.641,
+      "longitude": 22.726,
+      "name": "Linear B Script Developed",
+      "name_ru": "Разработка письма Линейное Б",
+      "source": "https://www.britannica.com/topic/Linear-B",
       "tags": [
-        "Shang Dynasty",
-        "China",
-        "Calendar",
-        "Astronomy"
+        "Greek",
+        "Writing"
       ],
-      "type": "scientific"
+      "type": "cultural"
     },
     {
       "date": "01.01.1391",
@@ -2517,18 +2501,19 @@
     },
     {
       "date": "01.01.1300",
-      "description": "Talepakemalai site established in Mussau Islands as the largest early Lapita settlement, featuring stilt houses and extensive pottery assemblages",
-      "description_ru": "Поселение Талепакемалаи основано на островах Муссау как крупнейшее раннее поселение Лапита со свайными домами и обширными керамическими коллекциями",
+      "description": "The Shang Dynasty establishes its capital at Anyang (ancient Yin), where they remain until the dynasty's end",
+      "description_ru": "Династия Шан основывает свою столицу в Аньяне (древний Инь), где они остаются до конца династии",
       "era": "BC",
-      "latitude": -1.533,
-      "longitude": 149.633,
-      "name": "Talepakemalai Settlement",
-      "name_ru": "Поселение Лапита Талепакемалаи",
+      "latitude": 36.096,
+      "longitude": 114.351,
+      "name": "Anyang Becomes Shang Capital",
+      "name_ru": "Аньян становится столицей Шан",
       "tags": [
-        "Lapita",
+        "Capital",
+        "Yin",
         "City"
       ],
-      "type": "cultural"
+      "type": "political"
     },
     {
       "date": "01.01.1300",
@@ -2550,19 +2535,18 @@
     },
     {
       "date": "01.01.1300",
-      "description": "The Shang Dynasty establishes its capital at Anyang (ancient Yin), where they remain until the dynasty's end",
-      "description_ru": "Династия Шан основывает свою столицу в Аньяне (древний Инь), где они остаются до конца династии",
+      "description": "Talepakemalai site established in Mussau Islands as the largest early Lapita settlement, featuring stilt houses and extensive pottery assemblages",
+      "description_ru": "Поселение Талепакемалаи основано на островах Муссау как крупнейшее раннее поселение Лапита со свайными домами и обширными керамическими коллекциями",
       "era": "BC",
-      "latitude": 36.096,
-      "longitude": 114.351,
-      "name": "Anyang Becomes Shang Capital",
-      "name_ru": "Аньян становится столицей Шан",
+      "latitude": -1.533,
+      "longitude": 149.633,
+      "name": "Talepakemalai Settlement",
+      "name_ru": "Поселение Лапита Талепакемалаи",
       "tags": [
-        "Capital",
-        "Yin",
+        "Lapita",
         "City"
       ],
-      "type": "political"
+      "type": "cultural"
     },
     {
       "date": "01.01.1295",
@@ -2632,7 +2616,7 @@
     {
       "date": "01.01.1259",
       "description": "The world's first known peace treaty is signed between Ramesses II and Hittite king Hattusili III",
-      "description_ru": "Первый известный в мире мирный договор подписывается между Рамсесом II и хеттским царем Хаттусили III",
+      "description_ru": "Первый известный в мире мирный договор подписывается между Рамсесом II и хеттским царем Хаттусили III. Предполагает разграничение территорий и оборонительный пакт.",
       "era": "BC",
       "latitude": 34.561,
       "longitude": 36.526,
@@ -2715,22 +2699,6 @@
     },
     {
       "date": "01.01.1200",
-      "description": "The important trading city of Ugarit is destroyed, marking the Bronze Age collapse",
-      "description_ru": "Важный торговый город Угарит разрушается, отмечая коллапс бронзового века",
-      "era": "BC",
-      "latitude": 35.603,
-      "longitude": 35.784,
-      "name": "Destruction of Ugarit",
-      "name_ru": "Разрушение Угарита",
-      "tags": [
-        "Destruction",
-        "Trade",
-        "Collapse"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.1200",
       "description": "Olmec civilization emerges in Mesoamerica as the 'mother culture' of later civilizations, developing early writing and calendar systems",
       "description_ru": "Цивилизация ольмеков возникает в Мезоамерике как 'материнская культура' более поздних цивилизаций, разрабатывая раннюю письменность и календарные системы",
       "era": "BC",
@@ -2744,22 +2712,6 @@
         "Writing",
         "Calendar",
         "Culture"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1200",
-      "description": "Lapita expansion reaches Vanuatu and New Caledonia, extending the Pacific migration over 2000 km with sophisticated navigation and sailing technology",
-      "description_ru": "Экспансия Лапита достигает Вануату и Новой Каледонии, продвигая тихоокеанскую миграцию более чем на 2000 км с использованием сложных навигационных и парусных технологий",
-      "era": "BC",
-      "latitude": -17.733,
-      "longitude": 168.317,
-      "name": "Lapita Reaches Vanuatu",
-      "name_ru": "Лапита достигает Вануату",
-      "tags": [
-        "Lapita",
-        "Vanuatu",
-        "Navigation"
       ],
       "type": "historic"
     },
@@ -2782,6 +2734,22 @@
     },
     {
       "date": "01.01.1200",
+      "description": "The important trading city of Ugarit is destroyed, marking the Bronze Age collapse",
+      "description_ru": "Важный торговый город Угарит разрушается, отмечая коллапс бронзового века",
+      "era": "BC",
+      "latitude": 35.603,
+      "longitude": 35.784,
+      "name": "Destruction of Ugarit",
+      "name_ru": "Разрушение Угарита",
+      "tags": [
+        "Destruction",
+        "Trade",
+        "Collapse"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1200",
       "description": "Civilizations across the Eastern Mediterranean begin to collapse mysteriously",
       "description_ru": "Цивилизации по всему Восточному Средиземноморью начинают загадочно рушиться",
       "era": "BC",
@@ -2794,6 +2762,22 @@
         "Collapse",
         "Mystery",
         "Civilization"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1200",
+      "description": "Lapita expansion reaches Vanuatu and New Caledonia, extending the Pacific migration over 2000 km with sophisticated navigation and sailing technology",
+      "description_ru": "Экспансия Лапита достигает Вануату и Новой Каледонии, продвигая тихоокеанскую миграцию более чем на 2000 км с использованием сложных навигационных и парусных технологий",
+      "era": "BC",
+      "latitude": -17.733,
+      "longitude": 168.317,
+      "name": "Lapita Reaches Vanuatu",
+      "name_ru": "Лапита достигает Вануату",
+      "tags": [
+        "Lapita",
+        "Vanuatu",
+        "Navigation"
       ],
       "type": "historic"
     },
@@ -2829,7 +2813,8 @@
         "Naval",
         "Victory",
         "Defense",
-        "Egypt"
+        "Egypt",
+        "Mediterranean"
       ],
       "type": "military"
     },
@@ -2981,19 +2966,20 @@
     },
     {
       "date": "01.01.1000",
-      "description": "Teouma cemetery established in Vanuatu with elaborate burial rituals including skull removal and shell ring placement, revealing complex social hierarchy",
-      "description_ru": "Кладбище Теума основано на Вануату со сложными погребальными ритуалами, включая удаление черепов и размещение ракушечных колец, раскрывая сложную социальную иерархию",
+      "description": "Lapita culture reaches Tonga and Samoa in Western Polynesia, completing a 4000 km maritime expansion and establishing ancestral Polynesian culture",
+      "description_ru": "Культура Лапита достигает Тонга и Самоа в Западной Полинезии, завершая 4000-километровую морскую экспансию и устанавливая предковую полинезийскую культуру",
       "era": "BC",
-      "latitude": -17.683,
-      "longitude": 168.4,
-      "name": "Teouma Cemetery",
-      "name_ru": "Кладбище Теума",
+      "latitude": -21.179,
+      "longitude": -175.198,
+      "name": "Western Polynesia Reached",
+      "name_ru": "Достижение Западной Полинезии Лапита",
       "tags": [
         "Lapita",
-        "Burial",
-        "Vanuatu"
+        "Tonga",
+        "Samoa",
+        "Polynesia"
       ],
-      "type": "cultural"
+      "type": "historic"
     },
     {
       "date": "01.01.1000",
@@ -3014,20 +3000,19 @@
     },
     {
       "date": "01.01.1000",
-      "description": "Lapita culture reaches Tonga and Samoa in Western Polynesia, completing a 4000 km maritime expansion and establishing ancestral Polynesian culture",
-      "description_ru": "Культура Лапита достигает Тонга и Самоа в Западной Полинезии, завершая 4000-километровую морскую экспансию и устанавливая предковую полинезийскую культуру",
+      "description": "Teouma cemetery established in Vanuatu with elaborate burial rituals including skull removal and shell ring placement, revealing complex social hierarchy",
+      "description_ru": "Кладбище Теума основано на Вануату со сложными погребальными ритуалами, включая удаление черепов и размещение ракушечных колец, раскрывая сложную социальную иерархию",
       "era": "BC",
-      "latitude": -21.179,
-      "longitude": -175.198,
-      "name": "Western Polynesia Reached",
-      "name_ru": "Достижение Западной Полинезии Лапита",
+      "latitude": -17.683,
+      "longitude": 168.4,
+      "name": "Teouma Cemetery",
+      "name_ru": "Кладбище Теума",
       "tags": [
         "Lapita",
-        "Tonga",
-        "Samoa",
-        "Polynesia"
+        "Burial",
+        "Vanuatu"
       ],
-      "type": "historic"
+      "type": "cultural"
     }
   ],
   "filename": "ancient_civilizations_pre_1000BC.json"
