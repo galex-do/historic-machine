@@ -703,13 +703,22 @@ export default {
             disableClusteringAtZoom: null,
             // Don't spiderfy - we show modal instead
             spiderfyOnMaxZoom: false,
-            // Custom icon creation for clusters - using same style as co-located events
+            // Custom icon creation for clusters - count total events, not just markers
             iconCreateFunction: (cluster) => {
-              const childCount = cluster.getChildCount()
+              // Get all child markers in this cluster
+              const childMarkers = cluster.getAllChildMarkers()
+              
+              // Sum up the event counts from all child markers
+              let totalEventCount = 0
+              childMarkers.forEach(marker => {
+                // Each marker has an eventCount property we'll set below
+                totalEventCount += marker.eventCount || 1
+              })
+              
               return L.divIcon({
                 html: `<div class="emoji-marker cluster-marker" data-lens="cluster">
                          📍
-                         <span class="marker-count-badge">${childCount}</span>
+                         <span class="marker-count-badge">${totalEventCount}</span>
                        </div>`,
                 className: 'emoji-marker-container',
                 iconSize: [30, 30],
@@ -767,6 +776,9 @@ export default {
               icon: emoji_icon,
               riseOnHover: true
             })
+            
+            // Store the event count on the marker for cluster counting
+            marker.eventCount = eventGroup.events.length
             
             // Use click event instead of popup to avoid coordinate corruption
             marker.on('click', () => {
