@@ -703,15 +703,18 @@ export default {
             disableClusteringAtZoom: null,
             // Spiderfy markers when cluster is clicked at max zoom
             spiderfyOnMaxZoom: true,
-            // Custom icon creation for clusters
+            // Custom icon creation for clusters - using same style as co-located events
             iconCreateFunction: (cluster) => {
               const childCount = cluster.getChildCount()
               return L.divIcon({
-                html: `<div class="marker-cluster-custom">
-                         <span class="cluster-count">${childCount}</span>
+                html: `<div class="emoji-marker cluster-marker" data-lens="cluster">
+                         📍
+                         <span class="marker-count-badge">${childCount}</span>
                        </div>`,
-                className: 'marker-cluster-custom-container',
-                iconSize: [40, 40]
+                className: 'emoji-marker-container',
+                iconSize: [30, 30],
+                iconAnchor: [15, 30],
+                popupAnchor: [0, -30]
               })
             }
           })
@@ -1945,34 +1948,16 @@ export default {
   opacity: 0;
 }
 
-/* Custom Marker Cluster Styling */
-::deep(.marker-cluster-custom-container) {
-  background: transparent !important;
-  border: none !important;
+/* Cluster marker styling - enhanced visibility */
+::deep(.cluster-marker) {
+  font-size: 28px !important; /* Slightly larger than regular markers */
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3)); /* More prominent shadow */
 }
 
-::deep(.marker-cluster-custom) {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 3px 10px rgba(37, 99, 235, 0.4);
-  border: 3px solid white;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-::deep(.marker-cluster-custom):hover {
-  transform: scale(1.1);
-  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.6);
-}
-
-::deep(.marker-cluster-custom .cluster-count) {
-  color: white;
-  font-weight: 700;
-  font-size: 14px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+::deep(.cluster-marker .marker-count-badge) {
+  font-size: 13px; /* Slightly larger badge text */
+  min-width: 22px;
+  height: 22px;
+  line-height: 22px;
 }
 </style>

@@ -12,7 +12,7 @@ A comprehensive web application for mapping historical events on an interactive 
 ## System Architecture
 
 ### UI/UX Decisions
-- **Interactive World Map**: Utilizes Leaflet for scalable and interactive map visualization with event markers, clustering, and narrative flow visualization.
+- **Interactive World Map**: Utilizes Leaflet for scalable and interactive map visualization with event markers, zoom-dependent clustering, and narrative flow visualization.
 - **Admin Panel**: Professional table-based interface for managing events, tags, users, and datasets.
 - **Localization**: Full internationalization (English/Russian) for all UI elements, historical period templates, and event data. Reactive locale switching.
 - **Filter Panel**: Kibana-style removable chip interface for tag filtering with session storage persistence. Features a collapsible tag filter panel with a toggle button and chronological template sorting.
@@ -29,7 +29,7 @@ A comprehensive web application for mapping historical events on an interactive 
 
 ### Technical Implementations
 - **Backend (Go)**: Gorilla Mux HTTP router, RESTful endpoints, Nginx hardened security (XSS, CSP), role-based access control, Nginx performance optimizations (worker processes, epoll, sendfile, gzip, caching), server-side OSM tile caching.
-- **Frontend (Vue.js)**: Vue.js 3 with Vite, Vue Router 4 for SPA navigation, session storage for filter conditions and map state, event clustering, reactive data fetching on locale changes, AND logic for multi-tag filtering.
+- **Frontend (Vue.js)**: Vue.js 3 with Vite, Vue Router 4 for SPA navigation, session storage for filter conditions and map state, zoom-dependent marker clustering (Leaflet MarkerCluster), reactive data fetching on locale changes, AND logic for multi-tag filtering.
 - **Vite Proxy Setup**: Configured Vite dev server to proxy API requests to the backend for seamless communication in the Replit environment.
 - **Session Tracking**: Lightweight implementation for both authenticated and anonymous users with a 60-second heartbeat and a statistics dashboard. UUID-based anonymous tracking for privacy. Active window: 5 minutes - sessions become inactive 5 minutes after last heartbeat.
 - **Tag Search**: Dynamic search input for tags from visible events with autocomplete, suggestions, and filtering.
@@ -64,6 +64,7 @@ A comprehensive web application for mapping historical events on an interactive 
 - `@vitejs/plugin-vue`: Vue plugin for Vite.
 - `vue-router`: Official router for Vue.js SPA navigation.
 - `leaflet`: Interactive map library for world map visualization.
+- `leaflet.markercluster`: Zoom-dependent marker clustering plugin for improved map UX at different zoom levels.
 - `vue-leaflet`: Vue.js wrapper for Leaflet maps.
 
 ### Other Integrations
