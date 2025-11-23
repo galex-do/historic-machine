@@ -1,6 +1,11 @@
 postgres_data
 attached_assets/
 
+# Root package.json (packages should be in frontend/)
+/package.json
+/package-lock.json
+/node_modules
+
 # Go binaries
 backend/bin/
 *.exe
