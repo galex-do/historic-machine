@@ -715,10 +715,13 @@ export default {
                 totalEventCount += marker.eventCount || 1
               })
               
+              // Display "99+" if count exceeds 99 for better readability
+              const displayCount = totalEventCount > 99 ? '99+' : totalEventCount
+              
               return L.divIcon({
                 html: `<div class="emoji-marker cluster-marker" data-lens="cluster">
                          📍
-                         <span class="marker-count-badge">${totalEventCount}</span>
+                         <span class="marker-count-badge">${displayCount}</span>
                        </div>`,
                 className: 'emoji-marker-container',
                 iconSize: [30, 30],
