@@ -215,9 +215,9 @@
       "type": "political"
     },
     {
-      "date": "01.01.0736",
+      "date": "01.07.0735",
       "description": "Tiglath-Pileser III lays siege to Tushpa but fails to capture heavily fortified capital, demonstrating strength of Urartian defensive architecture despite military setbacks",
-      "description_ru": "Тиглатпаласар III осаждает Тушпу, но не может взять горную укрепленную крепость",
+      "description_ru": "Тиглатпаласар III осаждает Тушпу, но не может взять горную укрепленную крепость и отходит. Тем не менее зона влияния Урарту после вторжения сильно сократилась",
       "era": "BC",
       "latitude": 38.5,
       "longitude": 43.35,
@@ -255,7 +255,7 @@
     {
       "date": "01.01.0720",
       "description": "Rusa I constructs Rusahinili (Toprak-Kale) near Tushpa as new ceremonial and administrative complex, featuring massive temple to Haldi with innovative architectural design",
-      "description_ru": "Руса I строит Русахинили (Топрак-Кале) близ Тушпы как новый церемониальный и административный комплекс с массивным храмом Халди инновационного архитектурного дизайна",
+      "description_ru": "Руса I строит Русахинили (Топрак-Кале) недалеко от Тушпы как новый церемониальный и административный комплекс. Русахинили должен был стать новой столицей после разорения ассирийцами Тушпы. В городе Руса возвел массивный храм Халди инновационного архитектурного дизайна",
       "era": "BC",
       "latitude": 38.55,
       "longitude": 43.3,
@@ -266,7 +266,8 @@
         "Urartu",
         "City",
         "Temple",
-        "Architecture"
+        "Architecture",
+        "Capital"
       ],
       "type": "historic"
     },
@@ -308,6 +309,23 @@
     },
     {
       "date": "01.01.0685",
+      "description": "Rusa II becomes king and initiates Urartian cultural renaissance, founding city of Teishebaini (Karmir Blur) near Erebuni as economic hub and granary for Transcaucasian provinces",
+      "description_ru": "При Русе II происходит урартский культурный ренессанс. Руса закладывает город Тейшебаини (Кармир Блур) близ Эребуни как экономический центр и житницу закавказских провинций",
+      "era": "BC",
+      "latitude": 40.1294,
+      "longitude": 44.4583,
+      "name": "Foundation of Teishebaini",
+      "name_ru": "Основание Тейшебаини",
+      "source": "https://en.wikipedia.org/wiki/Teishebaini",
+      "tags": [
+        "Urartu",
+        "City",
+        "Economic"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0685",
       "description": "Argishti II succeeds Rusa I and makes peace with Assyrian king Sennacherib, beginning period of recovery and cultural renaissance after decades of warfare",
       "description_ru": "Аргишти II наследует Русе I и заключает мир с ассирийским царем Синахерибом, начиная период восстановления царства Урарту",
       "era": "BC",
@@ -324,23 +342,6 @@
         "Treaty"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0685",
-      "description": "Rusa II becomes king and initiates Urartian cultural renaissance, founding city of Teishebaini (Karmir Blur) near Erebuni as economic hub and granary for Transcaucasian provinces",
-      "description_ru": "При Русе II происходит урартский культурный ренессанс. Руса закладывает город Тейшебаини (Кармир Блур) близ Эребуни как экономический центр и житницу закавказских провинций",
-      "era": "BC",
-      "latitude": 40.1294,
-      "longitude": 44.4583,
-      "name": "Foundation of Teishebaini",
-      "name_ru": "Основание Тейшебаини",
-      "source": "https://en.wikipedia.org/wiki/Teishebaini",
-      "tags": [
-        "Urartu",
-        "City",
-        "Economic"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0680",
