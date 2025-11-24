@@ -1,0 +1,1121 @@
+{
+  "description": "Comprehensive dataset covering ancient Anatolian kingdoms of Phrygia and Lydia (1200-546 BC), including political developments, cultural achievements, religious practices, invention of coinage, and legendary rulers like Midas and Croesus",
+  "events": [
+    {
+      "date": "01.01.1180",
+      "description": "Phrygians establish first settlements in central Anatolia after migration from Balkans, building fortified citadels on rocky outcrops including future capital Gordion",
+      "description_ru": "Фригийцы основывают первые поселения в центральной Анатолии после миграции с Балкан, строя укрепленные цитадели на скалистых возвышенностях, включая будущую столицу Гордион",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Phrygian Settlement of Anatolia",
+      "name_ru": "Фригийское заселение Анатолии",
+      "source": "https://en.wikipedia.org/wiki/Phrygia",
+      "tags": [
+        "Phrygian",
+        "Settlement",
+        "Migration",
+        "Fortification"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1150",
+      "description": "Gordion emerges as major Phrygian center; archaeological evidence shows sophisticated pottery workshops producing distinctive geometric designs that will influence Greek art",
+      "description_ru": "Гордион становится крупным фригийским центром; археологические свидетельства показывают сложные гончарные мастерские, производящие характерные геометрические узоры, которые повлияют на греческое искусство",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Rise of Gordion",
+      "name_ru": "Возвышение Гордиона",
+      "source": "https://en.wikipedia.org/wiki/Gordion",
+      "tags": [
+        "Phrygian",
+        "City",
+        "Art",
+        "Culture"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1100",
+      "description": "Phrygians develop distinctive musical tradition centered on double-piped aulos instrument; Phrygian mode becomes fundamental to Greek music theory and associated with ecstatic religious rites",
+      "description_ru": "Фригийцы развивают характерную музыкальную традицию, основанную на двухтрубном инструменте авлос; фригийский лад становится фундаментальным для греческой музыкальной теории и ассоциируется с экстатическими религиозными обрядами",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Phrygian Musical Innovation",
+      "name_ru": "Фригийские музыкальные инновации",
+      "source": "https://en.wikipedia.org/wiki/Phrygian_mode",
+      "tags": [
+        "Phrygian",
+        "Music",
+        "Culture",
+        "Innovation",
+        "Religious"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1050",
+      "description": "Cult of Cybele, Great Mother goddess, becomes central to Phrygian religion; worshiped in mountain sanctuaries with ecstatic rituals involving drums, cymbals and self-flagellation by devotees",
+      "description_ru": "Культ Кибелы, Великой Матери богов, становится центральным в фригийской религии; ей поклоняются в горных святилищах с экстатическими ритуалами, включающими барабаны, кимвалы и самобичевание адептов",
+      "era": "BC",
+      "latitude": 38.7444,
+      "longitude": 30.5503,
+      "name": "Cult of Cybele Established",
+      "name_ru": "Установление культа Кибелы",
+      "source": "https://en.wikipedia.org/wiki/Cybele",
+      "tags": [
+        "Phrygian",
+        "Religious",
+        "Culture",
+        "Goddess"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.1000",
+      "description": "Phrygian Kingdom consolidates under central monarchy at Gordion; royal dynasty establishes control over trade routes connecting Asia to Aegean, accumulating wealth from tolls and commerce",
+      "description_ru": "Фригийское царство консолидируется под центральной монархией в Гордионе; царская династия устанавливает контроль над торговыми путями, соединяющими Азию с Эгейским морем, накапливая богатство от пошлин и коммерции",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Formation of Phrygian Kingdom",
+      "name_ru": "Формирование Фригийского царства",
+      "source": "https://en.wikipedia.org/wiki/Phrygia",
+      "tags": [
+        "Phrygian",
+        "Kingdom",
+        "Dynasty",
+        "Trade"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0950",
+      "description": "Phrygians perfect woodworking techniques using abundant Anatolian forests; produce intricate furniture inlaid with geometric patterns and bronze fittings for elite tombs and palaces",
+      "description_ru": "Фригийцы совершенствуют технику обработки дерева, используя обильные анатолийские леса; производят замысловатую мебель с геометрическими узорами и бронзовой фурнитурой для элитных гробниц и дворцов",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Phrygian Woodworking Mastery",
+      "name_ru": "Мастерство фригийской деревообработки",
+      "source": "https://en.wikipedia.org/wiki/Phrygia",
+      "tags": [
+        "Phrygian",
+        "Technology",
+        "Art",
+        "Craftsmanship"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0900",
+      "description": "Phrygian artisans develop advanced bronze-working techniques, creating elaborate cauldrons with griffin and siren attachments that become highly prized trade goods throughout Mediterranean",
+      "description_ru": "Фригийские мастера разрабатывают передовые техники работы с бронзой, создавая сложные котлы с насадками в виде грифонов и сирен, которые становятся высоко ценимыми торговыми товарами по всему Средиземноморью",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Phrygian Bronze Cauldrons",
+      "name_ru": "Фригийские бронзовые котлы",
+      "source": "https://en.wikipedia.org/wiki/Phrygia",
+      "tags": [
+        "Phrygian",
+        "Technology",
+        "Trade",
+        "Art",
+        "Bronze"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0850",
+      "description": "Gordion becomes prosperous capital with population of 2,000-3,000; massive citadel mound reaches 13 meters high, containing royal megaron palaces with elaborate pebble mosaic floors",
+      "description_ru": "Гордион становится процветающей столицей с населением 2000-3000 человек; массивный холм цитадели достигает 13 метров высоты, содержа царские дворцы-мегароны со сложными мозаичными полами из гальки",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Gordion at Peak Prosperity",
+      "name_ru": "Гордион на пике процветания",
+      "source": "https://en.wikipedia.org/wiki/Gordion",
+      "tags": [
+        "Phrygian",
+        "Capital",
+        "Architecture",
+        "Palace",
+        "Prosperity"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0800",
+      "description": "King Gordias (possibly legendary) rules Phrygia; according to tradition, ties intricate knot binding yoke to pole of oxcart, creating famous Gordian Knot that will resist all attempts to untie it",
+      "description_ru": "Царь Гордий (возможно легендарный) правит Фригией; согласно традиции, завязывает замысловатый узел, связывающий ярмо с оглоблей воловьей телеги, создавая знаменитый Гордиев узел, который будет сопротивляться всем попыткам развязать его",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Gordias Creates Gordian Knot",
+      "name_ru": "Гордий создает Гордиев узел",
+      "source": "https://en.wikipedia.org/wiki/Gordian_Knot",
+      "tags": [
+        "Phrygian",
+        "Legend",
+        "Culture",
+        "Dynasty"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0770",
+      "description": "Midas becomes king of Phrygia, inheriting prosperous kingdom at height of its power; Greek sources describe him as fabulously wealthy, fostering legends about his golden touch",
+      "description_ru": "Мидас становится царем Фригии, наследуя процветающее царство на пике его могущества; греческие источники описывают его как сказочно богатого, порождая легенды о его золотом прикосновении",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "King Midas Assumes Throne",
+      "name_ru": "Царь Мидас восходит на трон",
+      "source": "https://en.wikipedia.org/wiki/Midas",
+      "tags": [
+        "Phrygian",
+        "Dynasty",
+        "Succession",
+        "Gold"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0765",
+      "description": "Midas establishes diplomatic relations with Greek world; becomes first foreign king to send offerings to Delphi Oracle, dedicating his royal throne to Apollo - Oracle praises his generosity",
+      "description_ru": "Мидас устанавливает дипломатические отношения с греческим миром; становится первым иностранным царем, отправившим дары Дельфийскому оракулу, посвящая свой царский трон Аполлону - Оракул хвалит его щедрость",
+      "era": "BC",
+      "latitude": 38.4825,
+      "longitude": 22.5011,
+      "name": "Midas's Offering to Delphi",
+      "name_ru": "Дар Мидаса Дельфам",
+      "source": "https://en.wikipedia.org/wiki/Midas",
+      "tags": [
+        "Phrygian",
+        "Greek",
+        "Diplomacy",
+        "Religious",
+        "Oracle"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0760",
+      "description": "Midas marries Damodice (or Hermodice) of Cyme; Greek tradition credits her as inventor of coinage, though modern scholarship attributes monetary innovation to nearby Lydia instead",
+      "description_ru": "Мидас женится на Дамодике (или Гермодике) из Кимы; греческая традиция приписывает ей изобретение монет, хотя современная наука приписывает денежную инновацию соседней Лидии",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Midas Marries Damodice",
+      "name_ru": "Мидас женится на Дамодике",
+      "source": "https://en.wikipedia.org/wiki/Midas",
+      "tags": [
+        "Phrygian",
+        "Greek",
+        "Dynasty",
+        "Marriage"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0755",
+      "description": "Midas expands Phrygian territory eastward, establishing fortresses and controlling lucrative trade routes; accumulates wealth that inspires Greek legends of his magical ability to turn objects to gold",
+      "description_ru": "Мидас расширяет фригийскую территорию на восток, основывая крепости и контролируя прибыльные торговые пути; накапливает богатство, вдохновляющее греческие легенды о его магической способности превращать предметы в золото",
+      "era": "BC",
+      "latitude": 40,
+      "longitude": 33,
+      "name": "Midas's Eastern Expansion",
+      "name_ru": "Восточная экспансия Мидаса",
+      "source": "https://en.wikipedia.org/wiki/Midas",
+      "tags": [
+        "Phrygian",
+        "Expansion",
+        "Trade",
+        "Fortification",
+        "Gold"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0750",
+      "description": "Construction of massive royal tumulus tomb at Gordion (later called 'Midas Mound') begins; burial chamber built with juniper and cedar logs, 39 meters square, largest wooden structure from ancient world",
+      "description_ru": "Начинается строительство массивной царской курганной гробницы в Гордионе (позже названной 'Курган Мидаса'); погребальная камера построена из можжевеловых и кедровых бревен, 39 метров в квадрате, крупнейшее деревянное сооружение древнего мира",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Construction of Midas Mound",
+      "name_ru": "Строительство кургана Мидаса",
+      "source": "https://en.wikipedia.org/wiki/Tumulus_MM",
+      "tags": [
+        "Phrygian",
+        "Architecture",
+        "Tomb",
+        "Building",
+        "Engineering"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0740",
+      "description": "Phrygian scribes adopt and adapt Phoenician alphabet, creating distinctive Phrygian script used for royal inscriptions and graffiti; oldest alphabetic inscriptions in Anatolia",
+      "description_ru": "Фригийские писцы принимают и адаптируют финикийский алфавит, создавая характерное фригийское письмо, используемое для царских надписей и граффити; древнейшие алфавитные надписи в Анатолии",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Adoption of Phrygian Alphabet",
+      "name_ru": "Принятие фригийского алфавита",
+      "source": "https://en.wikipedia.org/wiki/Phrygian_language",
+      "tags": [
+        "Phrygian",
+        "Writing",
+        "Language",
+        "Culture",
+        "Phoenician"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0725",
+      "description": "Midas faces growing threat from Cimmerian nomads raiding from north; attempts to strengthen defenses but nomadic mobility makes traditional fortifications ineffective",
+      "description_ru": "Мидас сталкивается с растущей угрозой со стороны киммерийских кочевников, совершающих набеги с севера; пытается укрепить оборону, но кочевая мобильность делает традиционные укрепления неэффективными",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Cimmerian Threat Emerges",
+      "name_ru": "Возникновение киммерийской угрозы",
+      "source": "https://en.wikipedia.org/wiki/Cimmerians",
+      "tags": [
+        "Phrygian",
+        "War",
+        "Cimmerian",
+        "Invasion"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0710",
+      "description": "Assyrian records mention Mita of Mushki (identified with Midas) as powerful king competing with Assyria for influence in eastern Anatolia",
+      "description_ru": "Ассирийские записи упоминают Миту из Мушки (отождествляемого с Мидасом) как могущественного царя, соперничающего с Ассирией за влияние в восточной Анатолии",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Midas in Assyrian Records",
+      "name_ru": "Мидас в ассирийских записях",
+      "source": "https://en.wikipedia.org/wiki/Midas",
+      "tags": [
+        "Phrygian",
+        "Assyrian",
+        "Diplomacy",
+        "Empire"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0700",
+      "description": "Phrygian Kingdom at territorial peak extends from Aegean coast to central Anatolia; Midas rules from fortified Gordion with vassal cities paying tribute and providing military contingents",
+      "description_ru": "Фригийское царство на пике территориального расширения простирается от побережья Эгейского моря до центральной Анатолии; Мидас правит из укрепленного Гордиона с вассальными городами, платящими дань и предоставляющими военные контингенты",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Phrygian Kingdom at Peak",
+      "name_ru": "Фригийское царство на пике",
+      "source": "https://en.wikipedia.org/wiki/Phrygia",
+      "tags": [
+        "Phrygian",
+        "Empire",
+        "Expansion"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0696",
+      "description": "Massive Cimmerian invasion devastates Phrygia; nomadic warriors overrun Gordion, destroying citadel with fire that leaves 2-meter thick ash layer; Midas reportedly commits suicide by drinking bull's blood",
+      "description_ru": "Массивное киммерийское вторжение опустошает Фригию; кочевые воины захватывают Гордион, уничтожая цитадель огнем, оставляющим 2-метровый слой пепла; Мидас, как сообщается, совершает самоубийство, выпив бычью кровь",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Cimmerian Sack of Gordion",
+      "name_ru": "Киммерийское разграбление Гордиона",
+      "source": "https://en.wikipedia.org/wiki/Gordion",
+      "tags": [
+        "Phrygian",
+        "Cimmerian",
+        "Destruction",
+        "Conquest",
+        "Death",
+        "Fall"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0690",
+      "description": "Survivors rebuild Gordion on smaller scale; Phrygian Kingdom fragments into minor principalities under Lydian influence, losing independence and wealth accumulated under Midas",
+      "description_ru": "Выжившие восстанавливают Гордион в меньшем масштабе; Фригийское царство распадается на малые княжества под лидийским влиянием, теряя независимость и богатство, накопленное при Мидасе",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Phrygian Fragmentation",
+      "name_ru": "Распад Фригии",
+      "source": "https://en.wikipedia.org/wiki/Phrygia",
+      "tags": [
+        "Phrygian",
+        "Decline",
+        "Fragmentation"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0650",
+      "description": "Cult of Cybele spreads from Phrygia to Greek world; mystery rites gain followers in Athens and other cities, priests called 'Galli' practice ritual castration in ecstatic ceremonies",
+      "description_ru": "Культ Кибелы распространяется из Фригии в греческий мир; мистериальные обряды набирают последователей в Афинах и других городах, жрецы, называемые 'Галли', практикуют ритуальную кастрацию в экстатических церемониях",
+      "era": "BC",
+      "latitude": 38.7444,
+      "longitude": 30.5503,
+      "name": "Cybele Cult Spreads to Greece",
+      "name_ru": "Культ Кибелы распространяется в Грецию",
+      "source": "https://en.wikipedia.org/wiki/Cybele",
+      "tags": [
+        "Phrygian",
+        "Greek",
+        "Religious",
+        "Culture",
+        "Goddess"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0620",
+      "description": "Phrygian territories increasingly dominated by expanding Lydian Kingdom; local rulers maintain autonomy in exchange for tribute and military alliance with Lydian monarchs",
+      "description_ru": "Фригийские территории все больше подчиняются расширяющемуся Лидийскому царству; местные правители сохраняют автономию в обмен на дань и военный союз с лидийскими монархами",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Lydian Dominance Over Phrygia",
+      "name_ru": "Лидийское господство над Фригией",
+      "source": "https://en.wikipedia.org/wiki/Phrygia",
+      "tags": [
+        "Phrygian",
+        "Lydia",
+        "Vassalage"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1300",
+      "description": "Proto-Lydian tribes settle in western Anatolia around Hermus and Cayster river valleys, establishing agricultural communities that will form basis of future Lydian civilization",
+      "description_ru": "Прото-лидийские племена селятся в западной Анатолии вокруг долин рек Герм и Каистр, основывая сельскохозяйственные общины, которые сформируют основу будущей лидийской цивилизации",
+      "era": "BC",
+      "latitude": 38.6191,
+      "longitude": 27.4289,
+      "name": "Early Lydian Settlement",
+      "name_ru": "Раннее лидийское поселение",
+      "source": "https://en.wikipedia.org/wiki/Lydia",
+      "tags": [
+        "Lydia",
+        "Settlement",
+        "Agriculture"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1200",
+      "description": "Lydian tribes exploit rich gold deposits in Pactolus River (flowing through future capital Sardis); gold-bearing sands provide foundation for legendary Lydian wealth",
+      "description_ru": "Лидийские племена эксплуатируют богатые золотые месторождения в реке Пактол (протекающей через будущую столицу Сарды); золотоносные пески обеспечивают основу для легендарного лидийского богатства",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Gold Mining in Pactolus River",
+      "name_ru": "Золотая добыча в реке Пактол",
+      "source": "https://en.wikipedia.org/wiki/Pactolus",
+      "tags": [
+        "Lydia",
+        "Gold",
+        "Mining",
+        "Wealth"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1100",
+      "description": "Sardis emerges as principal Lydian settlement; naturally defensible acropolis overlooks fertile Hermus valley, controlling trade routes between Aegean coast and Anatolian interior",
+      "description_ru": "Сарды возникают как главное лидийское поселение; естественно защищенный акрополь возвышается над плодородной долиной Герма, контролируя торговые пути между побережьем Эгейского моря и внутренними районами Анатолии",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Foundation of Sardis",
+      "name_ru": "Основание Сард",
+      "source": "https://en.wikipedia.org/wiki/Sardis",
+      "tags": [
+        "Lydia",
+        "Capital",
+        "City",
+        "Trade"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1000",
+      "description": "Heraclid dynasty establishes rule over Lydia; Greek traditions claim dynasty descended from Heracles through his son Alcaeus, ruling for 505 years with 22 kings",
+      "description_ru": "Династия Гераклидов устанавливает власть над Лидией; греческие традиции утверждают, что династия произошла от Геракла через его сына Алкея, правя 505 лет с 22 царями",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Heraclid Dynasty Founded",
+      "name_ru": "Основание династии Гераклидов",
+      "source": "https://en.wikipedia.org/wiki/Heraclids",
+      "tags": [
+        "Lydia",
+        "Dynasty",
+        "Kingdom",
+        "Greek"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0950",
+      "description": "Lydians develop advanced techniques for refining alluvial gold, separating gold from electrum (natural gold-silver alloy) found in Pactolus River using salt cementation process",
+      "description_ru": "Лидийцы разрабатывают передовые техники очистки аллювиального золота, отделяя золото от электрума (природного сплава золота и серебра), найденного в реке Пактол, используя процесс солевой цементации",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Gold Refining Innovation",
+      "name_ru": "Инновация в очистке золота",
+      "source": "https://en.wikipedia.org/wiki/Lydia",
+      "tags": [
+        "Lydia",
+        "Technology",
+        "Gold",
+        "Innovation",
+        "Metallurgy"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.0900",
+      "description": "Lydian Kingdom expands control over Greek Ionian cities on Aegean coast; imposes tribute while allowing cities substantial autonomy, beginning pattern of Lydian-Greek interaction",
+      "description_ru": "Лидийское царство расширяет контроль над греческими ионийскими городами на побережье Эгейского моря; налагает дань, позволяя городам существенную автономию, начиная модель лидийско-греческого взаимодействия",
+      "era": "BC",
+      "latitude": 38,
+      "longitude": 27,
+      "name": "Lydian Control of Ionia",
+      "name_ru": "Лидийский контроль над Ионией",
+      "source": "https://en.wikipedia.org/wiki/Lydia",
+      "tags": [
+        "Lydia",
+        "Greek",
+        "Conquest",
+        "Ionian",
+        "Expansion"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0850",
+      "description": "Lydian merchants establish extensive trade networks connecting Anatolia with Greek world and Near East; exchange local gold, silver, textiles for Greek olive oil, wine, and Eastern spices",
+      "description_ru": "Лидийские купцы создают обширные торговые сети, соединяющие Анатолию с греческим миром и Ближним Востоком; обменивают местное золото, серебро, ткани на греческое оливковое масло, вино и восточные специи",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Lydian Trade Networks",
+      "name_ru": "Лидийские торговые сети",
+      "source": "https://en.wikipedia.org/wiki/Lydia",
+      "tags": [
+        "Lydia",
+        "Trade",
+        "Economic",
+        "Greek"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0800",
+      "description": "Lydians become renowned for musical innovation; invent sambuca (triangular harp) and develop distinctive scales that influence Greek music theory alongside Phrygian contributions",
+      "description_ru": "Лидийцы становятся известными благодаря музыкальным инновациям; изобретают самбуку (треугольную арфу) и разрабатывают характерные гаммы, влияющие на греческую музыкальную теорию наряду с фригийскими вкладами",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Lydian Musical Innovation",
+      "name_ru": "Лидийские музыкальные инновации",
+      "source": "https://en.wikipedia.org/wiki/Lydia",
+      "tags": [
+        "Lydia",
+        "Music",
+        "Innovation",
+        "Culture",
+        "Greek"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0750",
+      "description": "Last Heraclid king Candaules rules Lydia; according to Herodotus, becomes obsessed with beauty of his wife, ultimately leading to his assassination in palace conspiracy",
+      "description_ru": "Последний царь Гераклидов Кандавл правит Лидией; согласно Геродоту, становится одержим красотой своей жены, что в конечном итоге приводит к его убийству в дворцовом заговоре",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Reign of Candaules",
+      "name_ru": "Правление Кандавла",
+      "source": "https://en.wikipedia.org/wiki/Candaules",
+      "tags": [
+        "Lydia",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0687",
+      "description": "Gyges overthrows Candaules after palace conspiracy involving queen; founds Mermnad dynasty, consulting Delphi Oracle which legitimizes his rule despite usurpation - Oracle prophesies dynasty will last five generations",
+      "description_ru": "Гиг свергает Кандавла после дворцового заговора с участием царицы; основывает династию Мермнадов, консультируясь с Дельфийским оракулом, который легитимизирует его правление, несмотря на узурпацию - Оракул пророчит, что династия продлится пять поколений",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Gyges Founds Mermnad Dynasty",
+      "name_ru": "Гиг основывает династию Мермнадов",
+      "source": "https://en.wikipedia.org/wiki/Gyges_of_Lydia",
+      "tags": [
+        "Lydia",
+        "Dynasty",
+        "Coup",
+        "Greek",
+        "Oracle"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0680",
+      "description": "Gyges expands Lydian territory aggressively; captures Greek cities of Colophon, Magnesia and Smyrna, increasing kingdom's wealth and access to Aegean trade",
+      "description_ru": "Гиг агрессивно расширяет лидийскую территорию; захватывает греческие города Колофон, Магнезию и Смирну, увеличивая богатство царства и доступ к эгейской торговле",
+      "era": "BC",
+      "latitude": 38.3,
+      "longitude": 27.2,
+      "name": "Gyges Conquers Greek Cities",
+      "name_ru": "Гиг завоевывает греческие города",
+      "source": "https://en.wikipedia.org/wiki/Gyges_of_Lydia",
+      "tags": [
+        "Lydia",
+        "Greek",
+        "Conquest",
+        "Expansion"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0675",
+      "description": "Gyges sends lavish dedications to Delphi Oracle including six golden mixing bowls weighing 30 talents total; becomes major benefactor of Greek sanctuaries to secure diplomatic ties",
+      "description_ru": "Гиг отправляет роскошные посвящения Дельфийскому оракулу, включая шесть золотых кратеров общим весом 30 талантов; становится крупным благотворителем греческих святынь для обеспечения дипломатических связей",
+      "era": "BC",
+      "latitude": 38.4825,
+      "longitude": 22.5011,
+      "name": "Gyges's Offerings to Delphi",
+      "name_ru": "Дары Гига Дельфам",
+      "source": "https://en.wikipedia.org/wiki/Gyges_of_Lydia",
+      "tags": [
+        "Lydia",
+        "Greek",
+        "Gold",
+        "Religious",
+        "Diplomacy",
+        "Oracle"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0670",
+      "description": "Gyges faces devastating Cimmerian invasions from north; nomadic warriors raid Lydian territory repeatedly, testing kingdom's military capabilities and fortifications",
+      "description_ru": "Гиг сталкивается с разрушительными киммерийскими вторжениями с севера; кочевые воины неоднократно совершают набеги на лидийскую территорию, проверяя военные возможности и укрепления царства",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Cimmerian Raids on Lydia",
+      "name_ru": "Киммерийские набеги на Лидию",
+      "source": "https://en.wikipedia.org/wiki/Gyges_of_Lydia",
+      "tags": [
+        "Lydia",
+        "Cimmerian",
+        "War",
+        "Invasion"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0665",
+      "description": "Gyges appeals to Assyrian emperor Ashurbanipal for military alliance against Cimmerians; Assyrian records preserve correspondence describing Lydian king's desperate situation",
+      "description_ru": "Гиг обращается к ассирийскому императору Ашшурбанипалу за военным союзом против киммерийцев; ассирийские записи сохраняют переписку, описывающую отчаянное положение лидийского царя",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Gyges Appeals to Assyria",
+      "name_ru": "Гиг обращается к Ассирии",
+      "source": "https://en.wikipedia.org/wiki/Gyges_of_Lydia",
+      "tags": [
+        "Lydia",
+        "Assyrian",
+        "Diplomacy",
+        "Alliance"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0652",
+      "description": "Cimmerians capture Sardis; Gyges killed defending his capital as nomadic warriors sack lower city, though citadel remains unconquered - end of first Mermnad ruler",
+      "description_ru": "Киммерийцы захватывают Сарды; Гиг убит, защищая свою столицу, когда кочевые воины грабят нижний город, хотя цитадель остается непокоренной - конец первого правителя Мермнадов",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Death of Gyges",
+      "name_ru": "Смерть Гига",
+      "source": "https://en.wikipedia.org/wiki/Gyges_of_Lydia",
+      "tags": [
+        "Lydia",
+        "Cimmerian",
+        "Death",
+        "Battle",
+        "Conquest"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0651",
+      "description": "Ardys succeeds his father Gyges; begins recovery from Cimmerian devastation by rebuilding Sardis and reconsolidating Lydian territories",
+      "description_ru": "Ардис наследует своему отцу Гигу; начинает восстановление после киммерийского опустошения, восстанавливая Сарды и воссоединяя лидийские территории",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Ardys Becomes King",
+      "name_ru": "Ардис становится царем",
+      "source": "https://en.wikipedia.org/wiki/Ardys_of_Lydia",
+      "tags": [
+        "Lydia",
+        "Dynasty",
+        "Succession"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0640",
+      "description": "Ardys faces renewed Cimmerian invasion; nomads penetrate deeper into Anatolia, threatening Lydian existence but unable to capture strongly fortified Sardis citadel",
+      "description_ru": "Ардис сталкивается с возобновленным киммерийским вторжением; кочевники проникают глубже в Анатолию, угрожая лидийскому существованию, но не способны захватить сильно укрепленную цитадель Сард",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Second Cimmerian Invasion",
+      "name_ru": "Второе киммерийское вторжение",
+      "source": "https://en.wikipedia.org/wiki/Ardys_of_Lydia",
+      "tags": [
+        "Lydia",
+        "Cimmerian",
+        "War",
+        "Invasion"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0635",
+      "description": "Ardys captures Greek city of Priene; continues Lydian policy of expanding control over Ionian coast while maintaining cultural and commercial ties with Greek world",
+      "description_ru": "Ардис захватывает греческий город Приену; продолжает лидийскую политику расширения контроля над ионийским побережьем, сохраняя культурные и коммерческие связи с греческим миром",
+      "era": "BC",
+      "latitude": 37.6567,
+      "longitude": 27.2969,
+      "name": "Conquest of Priene",
+      "name_ru": "Завоевание Приены",
+      "source": "https://en.wikipedia.org/wiki/Ardys_of_Lydia",
+      "tags": [
+        "Lydia",
+        "Greek",
+        "Conquest"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0625",
+      "description": "Sadyattes becomes Lydian king; initiates long war against Greek city of Miletus, conducting annual raids during harvest season to destroy crops without directly besieging city",
+      "description_ru": "Садиатт становится лидийским царем; начинает длительную войну против греческого города Милета, проводя ежегодные набеги во время сезона сбора урожая для уничтожения посевов без прямой осады города",
+      "era": "BC",
+      "latitude": 37.5283,
+      "longitude": 27.2783,
+      "name": "War with Miletus Begins",
+      "name_ru": "Начало войны с Милетом",
+      "source": "https://en.wikipedia.org/wiki/Sadyattes",
+      "tags": [
+        "Lydia",
+        "Greek",
+        "War"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0620",
+      "description": "Cimmerian threat finally eliminated as Lydians and Assyrians coordinate military campaigns; surviving nomads absorbed into Anatolian populations or retreat to steppes",
+      "description_ru": "Киммерийская угроза наконец устранена, когда лидийцы и ассирийцы координируют военные кампании; выжившие кочевники поглощены анатолийским населением или отступают в степи",
+      "era": "BC",
+      "latitude": 39,
+      "longitude": 35,
+      "name": "End of Cimmerian Threat",
+      "name_ru": "Конец киммерийской угрозы",
+      "source": "https://en.wikipedia.org/wiki/Cimmerians",
+      "tags": [
+        "Lydia",
+        "Cimmerian",
+        "War",
+        "Victory"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0615",
+      "description": "Alyattes becomes king after Sadyattes's death; inherits ongoing war with Miletus and determines to conclude conflict one way or another",
+      "description_ru": "Алиатт становится царем после смерти Садиатта; наследует продолжающуюся войну с Милетом и решает завершить конфликт так или иначе",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Alyattes Becomes King",
+      "name_ru": "Алиатт становится царем",
+      "source": "https://en.wikipedia.org/wiki/Alyattes_of_Lydia",
+      "tags": [
+        "Lydia",
+        "Dynasty",
+        "Succession"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0610",
+      "description": "Alyattes accidentally burns Temple of Athena at Assesos during raid on Milesian territory; falls ill with mysterious disease that Delphi Oracle links to temple desecration",
+      "description_ru": "Алиатт случайно сжигает храм Афины в Ассесосе во время набега на милетскую территорию; заболевает таинственной болезнью, которую Дельфийский оракул связывает с осквернением храма",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 27.3,
+      "name": "Burning of Athena's Temple",
+      "name_ru": "Сожжение храма Афины",
+      "source": "https://en.wikipedia.org/wiki/Alyattes_of_Lydia",
+      "tags": [
+        "Lydia",
+        "Greek",
+        "Temple",
+        "Religious",
+        "Destruction"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0608",
+      "description": "Alyattes makes peace with Miletus on advice of Delphi Oracle; rebuilds burned temple (constructing two temples instead of one) and ends 11-year war with treaty recognizing Miletus's autonomy",
+      "description_ru": "Алиатт заключает мир с Милетом по совету Дельфийского оракула; восстанавливает сожженный храм (строя два храма вместо одного) и завершает 11-летнюю войну договором, признающим автономию Милета",
+      "era": "BC",
+      "latitude": 37.5283,
+      "longitude": 27.2783,
+      "name": "Peace with Miletus",
+      "name_ru": "Мир с Милетом",
+      "source": "https://en.wikipedia.org/wiki/Alyattes_of_Lydia",
+      "tags": [
+        "Lydia",
+        "Greek",
+        "Peace",
+        "Treaty",
+        "Temple"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0600",
+      "description": "Alyattes oversees invention of true coinage - standardized electrum coins stamped with royal lion symbol, revolutionizing commerce by creating trustworthy medium of exchange with guaranteed weight and purity",
+      "description_ru": "Алиатт наблюдает за изобретением настоящей монеты - стандартизированных электрумных монет, отштампованных царским символом льва, революционизирующих коммерцию созданием надежного средства обмена с гарантированным весом и чистотой",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Invention of Coinage",
+      "name_ru": "Изобретение монеты",
+      "source": "https://en.wikipedia.org/wiki/Lydia#Coinage",
+      "tags": [
+        "Lydia",
+        "Innovation",
+        "Currency",
+        "Economic",
+        "Trade"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0595",
+      "description": "Lydian royal mint at Sardis produces world's first standardized currency system; coins bear images of lion and bull, representing royal power and ensuring authenticity through state guarantee",
+      "description_ru": "Царский монетный двор Лидии в Сардах производит первую в мире стандартизированную денежную систему; монеты несут изображения льва и быка, представляя царскую власть и обеспечивая подлинность через государственную гарантию",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Royal Mint Established",
+      "name_ru": "Учреждение царского монетного двора",
+      "source": "https://en.wikipedia.org/wiki/Lydia",
+      "tags": [
+        "Lydia",
+        "Currency",
+        "Economic",
+        "Innovation"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0590",
+      "description": "Lydian coinage spreads rapidly through Greek world and beyond; cities from Aegean to Black Sea adopt monetary system, transforming ancient economy from barter to money-based commerce",
+      "description_ru": "Лидийская монета быстро распространяется по греческому миру и за его пределами; города от Эгейского до Черного моря принимают денежную систему, трансформируя древнюю экономику от бартера к денежной торговле",
+      "era": "BC",
+      "latitude": 38,
+      "longitude": 28,
+      "name": "Spread of Monetary Economy",
+      "name_ru": "Распространение денежной экономики",
+      "source": "https://en.wikipedia.org/wiki/Lydia",
+      "tags": [
+        "Lydia",
+        "Greek",
+        "Economic",
+        "Currency",
+        "Trade"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0585",
+      "description": "Alyattes expands Lydian Kingdom eastward, coming into conflict with Median Empire over control of eastern Anatolia; prepares for major war to determine regional supremacy",
+      "description_ru": "Алиатт расширяет Лидийское царство на восток, вступая в конфликт с Мидийской империей за контроль над восточной Анатолией; готовится к крупной войне для определения регионального превосходства",
+      "era": "BC",
+      "latitude": 39,
+      "longitude": 36,
+      "name": "Lydian-Median Conflict Begins",
+      "name_ru": "Начало лидийско-мидийского конфликта",
+      "source": "https://en.wikipedia.org/wiki/Alyattes_of_Lydia",
+      "tags": [
+        "Lydia",
+        "Median",
+        "War",
+        "Expansion"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0580",
+      "description": "Alyattes constructs massive royal tumulus tomb near Sardis; monument measures 355 meters in diameter and 61 meters high, making it one of largest burial mounds in ancient world",
+      "description_ru": "Алиатт строит массивную царскую курганную гробницу близ Сард; памятник имеет диаметр 355 метров и высоту 61 метр, делая его одним из крупнейших курганов в древнем мире",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 28.05,
+      "name": "Tomb of Alyattes Constructed",
+      "name_ru": "Строительство гробницы Алиатта",
+      "source": "https://en.wikipedia.org/wiki/Tomb_of_Alyattes",
+      "tags": [
+        "Lydia",
+        "Architecture",
+        "Tomb",
+        "Monument",
+        "Building"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0570",
+      "description": "Alyattes dies after 57-year reign; Herodotus reports his tomb built by contributions from merchants, craftsmen and prostitutes of Sardis - prostitute's contribution supposedly largest portion",
+      "description_ru": "Алиатт умирает после 57-летнего правления; Геродот сообщает, что его гробница построена на взносы торговцев, ремесленников и проституток Сард - вклад проституток якобы самая большая часть",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Death of Alyattes",
+      "name_ru": "Смерть Алиатта",
+      "source": "https://en.wikipedia.org/wiki/Alyattes_of_Lydia",
+      "tags": [
+        "Lydia",
+        "Death",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0560",
+      "description": "Croesus becomes final king of independent Lydia; inherits wealthy kingdom at height of prosperity with control over Greek Ionian cities and extensive gold resources",
+      "description_ru": "Крез становится последним царем независимой Лидии; наследует богатое царство на пике процветания с контролем над греческими ионийскими городами и обширными золотыми ресурсами",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Croesus Becomes King",
+      "name_ru": "Крез становится царем",
+      "source": "https://en.wikipedia.org/wiki/Croesus",
+      "tags": [
+        "Lydia",
+        "Dynasty",
+        "Succession",
+        "Gold"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0555",
+      "description": "Croesus completes conquest of all Greek cities of Ionia and Aeolia except island of Samos; establishes Lydian hegemony over entire Aegean coast of Anatolia",
+      "description_ru": "Крез завершает завоевание всех греческих городов Ионии и Эолиды, кроме острова Самос; устанавливает лидийскую гегемонию над всем эгейским побережьем Анатолии",
+      "era": "BC",
+      "latitude": 38.2,
+      "longitude": 27.5,
+      "name": "Conquest of Ionian Greeks",
+      "name_ru": "Завоевание ионийских греков",
+      "source": "https://en.wikipedia.org/wiki/Croesus",
+      "tags": [
+        "Lydia",
+        "Greek",
+        "Conquest",
+        "Expansion"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0553",
+      "description": "Croesus sends magnificent dedications to Delphi Oracle including golden lion statue, 117 gold ingots, enormous silver bowl, and golden statue of his baker; becomes Oracle's most generous benefactor",
+      "description_ru": "Крез отправляет великолепные посвящения Дельфийскому оракулу, включая золотую статую льва, 117 золотых слитков, огромную серебряную чашу и золотую статую своего пекаря; становится самым щедрым благотворителем Оракула",
+      "era": "BC",
+      "latitude": 38.4825,
+      "longitude": 22.5011,
+      "name": "Croesus's Lavish Delphi Offerings",
+      "name_ru": "Роскошные дары Креза Дельфам",
+      "source": "https://en.wikipedia.org/wiki/Croesus",
+      "tags": [
+        "Lydia",
+        "Greek",
+        "Gold",
+        "Religious",
+        "Oracle"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0550",
+      "description": "Croesus introduces pure gold and pure silver coinage, replacing electrum currency; innovation creates first bimetallic monetary system with standardized exchange rate between gold and silver",
+      "description_ru": "Крез вводит чистую золотую и чистую серебряную монету, заменяя электрумную валюту; инновация создает первую биметаллическую денежную систему со стандартизированным обменным курсом между золотом и серебром",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Gold and Silver Coinage",
+      "name_ru": "Золотая и серебряная монета",
+      "source": "https://en.wikipedia.org/wiki/Croesus",
+      "tags": [
+        "Lydia",
+        "Currency",
+        "Gold",
+        "Economic",
+        "Innovation"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0550",
+      "description": "Lydian Kingdom under Croesus reaches peak prosperity; Sardis becomes cosmopolitan center where Greek philosophers like Thales and Solon visit royal court for intellectual exchange",
+      "description_ru": "Лидийское царство под Крезом достигает пика процветания; Сарды становятся космополитическим центром, где греческие философы, такие как Фалес и Солон, посещают царский двор для интеллектуального обмена",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Lydia at Cultural Peak",
+      "name_ru": "Лидия на культурном пике",
+      "source": "https://en.wikipedia.org/wiki/Croesus",
+      "tags": [
+        "Lydia",
+        "Greek",
+        "Culture",
+        "Philosophy",
+        "Prosperity"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0548",
+      "description": "Herodotus records famous meeting between Croesus and Athenian lawgiver Solon; when Croesus asks if he is happiest man alive, Solon replies 'Count no man happy until he is dead' - prophetic warning Croesus will later recall",
+      "description_ru": "Геродот записывает знаменитую встречу между Крезом и афинским законодателем Солоном; когда Крез спрашивает, является ли он самым счастливым человеком в мире, Солон отвечает 'Никого не называй счастливым, пока он не умер' - пророческое предупреждение, которое Крез позже вспомнит",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Croesus Meets Solon",
+      "name_ru": "Встреча Креза с Солоном",
+      "source": "https://en.wikipedia.org/wiki/Croesus",
+      "tags": [
+        "Lydia",
+        "Greek",
+        "Philosophy",
+        "Culture",
+        "Wisdom"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0547",
+      "description": "Croesus consults Delphi Oracle about attacking Persia; receives famous ambiguous prophecy: 'If you cross Halys River, you will destroy great empire' - fails to ask which empire will fall",
+      "description_ru": "Крез консультируется с Дельфийским оракулом о нападении на Персию; получает знаменитое двусмысленное пророчество: 'Если перейдешь реку Галис, уничтожишь великую империю' - не спрашивает, какая империя падет",
+      "era": "BC",
+      "latitude": 38.4825,
+      "longitude": 22.5011,
+      "name": "Oracle's Ambiguous Prophecy",
+      "name_ru": "Двусмысленное пророчество Оракула",
+      "source": "https://en.wikipedia.org/wiki/Croesus",
+      "tags": [
+        "Lydia",
+        "Greek",
+        "Oracle",
+        "Prophecy",
+        "Religious"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0547",
+      "description": "Croesus allies with Egypt, Babylon and Sparta before attacking Persia; assembles coalition against rising Persian Empire to check Cyrus's expanding power in Anatolia",
+      "description_ru": "Крез заключает союз с Египтом, Вавилоном и Спартой перед нападением на Персию; собирает коалицию против восходящей Персидской империи, чтобы сдержать растущую власть Кира в Анатолии",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Anti-Persian Coalition",
+      "name_ru": "Антиперсидская коалиция",
+      "source": "https://en.wikipedia.org/wiki/Croesus",
+      "tags": [
+        "Lydia",
+        "Persian",
+        "Alliance",
+        "Diplomacy",
+        "Greek"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0546",
+      "description": "After conquest by Cyrus, Lydian territories absorbed into Persian Empire as satrapy; Sardis becomes Persian administrative center for western Anatolia while maintaining commercial importance",
+      "description_ru": "После завоевания Киром лидийские территории поглощены Персидской империей как сатрапия; Сарды становятся персидским административным центром для западной Анатолии, сохраняя коммерческое значение",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Lydia Becomes Persian Satrapy",
+      "name_ru": "Лидия становится персидской сатрапией",
+      "source": "https://en.wikipedia.org/wiki/Lydia",
+      "tags": [
+        "Lydia",
+        "Persian",
+        "Fall",
+        "Empire"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0546",
+      "description": "Lydian monetary system adopted by Persian Empire; Croesus's bimetallic coinage becomes model for Persian daric and siglos, spreading Lydian innovation throughout ancient world",
+      "description_ru": "Лидийская денежная система принята Персидской империей; биметаллическая монета Креза становится моделью для персидских дариков и сиглосов, распространяя лидийскую инновацию по всему древнему миру",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Persian Adoption of Lydian Coinage",
+      "name_ru": "Персидское принятие лидийской монеты",
+      "source": "https://en.wikipedia.org/wiki/Lydia",
+      "tags": [
+        "Lydia",
+        "Persian",
+        "Currency",
+        "Economic",
+        "Legacy"
+      ],
+      "type": "historic"
+    }
+  ]
+}
