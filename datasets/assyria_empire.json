@@ -119,9 +119,7 @@
       "tags": [
         "Assyrian",
         "Babylonian",
-        "Conquest",
-        "Hammurabi",
-        "Fall"
+        "Conquest"
       ],
       "type": "historic"
     },
@@ -251,7 +249,7 @@
     {
       "date": "01.01.1207",
       "description": "Tukulti-Ninurta I assassinated by his son, triggering period of political instability and civil war that weakens Middle Assyrian Empire",
-      "description_ru": "Тукульти-Нинурта I убит своим сыном, вызывая период политической нестабильности и гражданской войны, ослабляющий Среднеассирийскую империю",
+      "description_ru": "Тукульти-Нинурта I убит своим сыном, что приводит Среднеассирийскую империю к нестабильности и гражданской войне",
       "era": "BC",
       "latitude": 35.47,
       "longitude": 43.28,
@@ -398,7 +396,7 @@
       "tags": [
         "Assyrian",
         "Expansion",
-        "Levant",
+        "Syria",
         "Vassalage"
       ],
       "type": "military"
@@ -417,7 +415,8 @@
         "Assyrian",
         "Israel",
         "Battle",
-        "Damascus"
+        "Damascus",
+        "Judah"
       ],
       "type": "military"
     },
@@ -433,7 +432,6 @@
       "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
       "tags": [
         "Assyrian",
-        "Military",
         "Political Change",
         "Tiglath-Pileser III"
       ],
@@ -508,7 +506,8 @@
         "Israel",
         "Conquest",
         "Tiglath-Pileser III",
-        "Assyrian"
+        "Assyrian",
+        "Judah"
       ],
       "type": "military"
     },
@@ -565,7 +564,8 @@
         "Israel",
         "Conquest",
         "Siege",
-        "Sargon II"
+        "Sargon II",
+        "Judah"
       ],
       "type": "military"
     },
@@ -733,7 +733,8 @@
         "Siege",
         "Jerusalem",
         "Invasions",
-        "Conquest"
+        "Conquest",
+        "Israel"
       ],
       "type": "military"
     },
@@ -768,7 +769,8 @@
         "Assyrian",
         "Political",
         "Assassination",
-        "Son Kills Father"
+        "Son Kills Father",
+        "Regicide"
       ],
       "type": "political"
     },

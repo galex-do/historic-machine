@@ -1,5 +1,5 @@
 {
-  "description": "Comprehensive dataset covering the Achaemenid Persian Empire from foundation to Alexander's conquest (550-330 BC), including political administration, military campaigns, cultural achievements, religious developments, and architectural marvels",
+  "description": "Dataset imported with 92 events",
   "events": [
     {
       "date": "01.01.0549",
@@ -9,13 +9,15 @@
       "latitude": 30.2026,
       "longitude": 53.1678,
       "name": "Cyrus Proclaims 'King of Kings'",
-      "name_ru": "Кир провозглашает себя 'Царем царей'",
+      "name_ru": "Становление империи Ахеменидов",
       "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
       "tags": [
         "Persian",
         "Dynasty",
         "Empire",
-        "Title"
+        "Cyrus the Great",
+        "Achaemenid",
+        "Foundation"
       ],
       "type": "political"
     },
@@ -33,81 +35,67 @@
         "Persian",
         "Tolerance",
         "Religious",
-        "Administration",
-        "Culture"
+        "Culture",
+        "Cyrus the Great",
+        "Achaemenid"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0547",
-      "description": "Cyrus the Great conquers Lydia after defeating King Croesus at Battle of Thymbra, adding wealthy Anatolian territories and Lydian gold reserves to Persian Empire",
-      "description_ru": "Кир Великий завоевывает Лидию после победы над царем Крезом в битве при Тимбре, добавляя богатые анатолийские территории и лидийские золотые резервы к Персидской империи",
+      "description": "Cyrus the Great conquers Lydia after defeating King Croesus at Battle of Thymbra, adding wealthy Anatolian territories and Lydian gold reserves to Persian Empire. After conquering Lydia, Cyrus spares Croesus's life and makes him advisor, demonstrating magnanimity toward defeated rulers that becomes hallmark of his reign",
+      "description_ru": "Кир Великий завоевывает Лидию после победы над царем Крезом в битве при Тимбре, присваивая богатые анатолийские территории и лидийские золотые резервы Персии. После завоевания Лидии Кир щадит жизнь Креза и делает его советником, демонстрируя великодушие к побежденным правителям, что станет отличительной чертой его правления",
       "era": "BC",
       "latitude": 38.4852,
       "longitude": 28.3053,
       "name": "Conquest of Lydia",
-      "name_ru": "Завоевание Лидии",
+      "name_ru": "Завоевание Лидии Персией ",
       "source": "https://en.wikipedia.org/wiki/Croesus",
       "tags": [
         "Persian",
         "Conquest",
-        "Battle",
-        "War",
-        "Gold"
+        "Gold",
+        "Lydia",
+        "Tolerance",
+        "Cyrus the Great",
+        "Achaemenid"
       ],
       "type": "military"
     },
     {
-      "date": "01.01.0546",
-      "description": "After conquering Lydia, Cyrus spares Croesus's life and makes him advisor, demonstrating magnanimity toward defeated rulers that becomes hallmark of his reign",
-      "description_ru": "После завоевания Лидии Кир щадит жизнь Креза и делает его советником, демонстрируя великодушие к побежденным правителям, что станет отличительной чертой его правления",
-      "era": "BC",
-      "latitude": 38.4852,
-      "longitude": 28.3053,
-      "name": "Cyrus Spares Croesus",
-      "name_ru": "Кир щадит Креза",
-      "source": "https://en.wikipedia.org/wiki/Croesus",
-      "tags": [
-        "Persian",
-        "Diplomacy",
-        "Tolerance",
-        "Mercy"
-      ],
-      "type": "political"
-    },
-    {
       "date": "01.01.0545",
       "description": "Cyrus conquers Greek cities of Ionia in western Anatolia, generally allowing them autonomy and self-government while requiring tribute and military service",
-      "description_ru": "Кир завоевывает греческие города Ионии в западной Анатолии, в целом позволяя им автономию и самоуправление, требуя дань и военную службу",
+      "description_ru": "Кир делает данниками греческие города Ионии в западной Анатолии, в целом оставляя им автономию и самоуправление",
       "era": "BC",
       "latitude": 37.9534,
       "longitude": 27.3639,
       "name": "Conquest of Ionian Greeks",
-      "name_ru": "Завоевание ионийских греков",
+      "name_ru": "Завоевание ионийских греков Персией",
       "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
       "tags": [
         "Persian",
         "Greek",
         "Conquest",
-        "Autonomy"
+        "Cyrus the Great",
+        "Achaemenid"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0544",
       "description": "Cyrus establishes innovative administrative system combining central authority with local autonomy, appointing both Persian governors and local rulers to share power",
-      "description_ru": "Кир создает инновационную административную систему, сочетающую центральную власть с местной автономией, назначая как персидских губернаторов, так и местных правителей для разделения власти",
+      "description_ru": "Кир строит инновационную административную систему, в которой единое правительство стоит над множеством стран, народов, религий и языков. Система простояла несколько веков и сохранилась и после завершения правления Ахеменидов",
       "era": "BC",
       "latitude": 30.2026,
       "longitude": 53.1678,
       "name": "Administrative Innovation",
-      "name_ru": "Административные инновации",
+      "name_ru": "Административные инновации Кира",
       "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
       "tags": [
         "Persian",
         "Administration",
-        "Government",
-        "Innovation"
+        "Innovation",
+        "Achaemenid"
       ],
       "type": "political"
     },
@@ -119,20 +107,21 @@
       "latitude": 36,
       "longitude": 60,
       "name": "Eastern Campaigns",
-      "name_ru": "Восточные кампании",
+      "name_ru": "Восточные кампании Кира",
       "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
       "tags": [
         "Persian",
         "Conquest",
         "Expansion",
-        "War"
+        "Cyrus the Great",
+        "Achaemenid"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0540",
       "description": "Cyrus consolidates control over Central Asia by founding fortified cities and establishing garrison networks, creating defense system against nomadic invasions",
-      "description_ru": "Кир консолидирует контроль над Центральной Азией, основывая укрепленные города и создавая гарнизонные сети, создавая оборонительную систему против кочевых вторжений",
+      "description_ru": "Кир Великий создает оборонительную систему против кочевых вторжений из Центральной Азии, основывая укрепленные города и создавая гарнизонные сети",
       "era": "BC",
       "latitude": 38,
       "longitude": 65,
@@ -143,45 +132,48 @@
         "Persian",
         "Fortification",
         "Defense",
-        "Military",
-        "City"
+        "Achaemenid"
       ],
       "type": "military"
     },
     {
       "date": "01.10.0539",
       "description": "Cyrus conquers Babylon after Battle of Opis, capturing Nabonidus and ending Neo-Babylonian Empire; treats Babylonians with respect, presenting himself as liberator chosen by Marduk",
-      "description_ru": "Кир завоевывает Вавилон после битвы при Описе, захватывая Набонида и завершая Нововавилонскую империю; относится к вавилонянам с уважением, представляя себя освободителем, избранным Мардуком",
+      "description_ru": "Кир завоевывает Вавилон после битвы при Описе, захватывая Набонида и завершая Нововавилонскую империю. Вавилонянам он представляет себя освободителем, избранным Мардуком, и демонстрирует уважение к ним",
       "era": "BC",
       "latitude": 32.5422,
       "longitude": 44.4215,
       "name": "Conquest of Babylon",
-      "name_ru": "Завоевание Вавилона",
+      "name_ru": "Завоевание Вавилона Персией",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Opis",
       "tags": [
         "Persian",
         "Babylonian",
         "Conquest",
-        "Battle"
+        "Cyrus the Great",
+        "Tolerance",
+        "Achaemenid"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0538",
       "description": "Cyrus issues Cyrus Cylinder decree allowing exiled peoples to return home and rebuild temples, permitting Jews to return to Jerusalem and reconstruct Second Temple",
-      "description_ru": "Кир издает указ на Цилиндре Кира, позволяющий изгнанным народам вернуться домой и восстановить храмы, разрешая евреям вернуться в Иерусалим и восстановить Второй Храм",
+      "description_ru": "Кир издает указ на Цилиндре Кира, позволяющий изгнанным народам вернуться домой и восстановить храмы. Он дозволяет евреям вернуться в Иерусалим и восстановить Второй Храм",
       "era": "BC",
       "latitude": 32.5422,
       "longitude": 44.4215,
       "name": "Cyrus Cylinder Decree",
-      "name_ru": "Указ Цилиндра Кира",
+      "name_ru": "Кир разрешает народам вернуться домой",
       "source": "https://en.wikipedia.org/wiki/Cyrus_Cylinder",
       "tags": [
         "Persian",
         "Religious",
         "Freedom",
         "Tolerance",
-        "Human Rights"
+        "Cyrus the Great",
+        "Human Rights",
+        "Achaemenid"
       ],
       "type": "political"
     },
@@ -200,14 +192,16 @@
         "Babylonian",
         "Religious",
         "Temple",
-        "Tolerance"
+        "Tolerance",
+        "Cyrus the Great",
+        "Achaemenid"
       ],
       "type": "religious"
     },
     {
       "date": "01.01.0536",
       "description": "Cyrus extends Persian control to Levant and Syria, conquering territories from Mediterranean to Indus River, creating largest empire world has yet seen",
-      "description_ru": "Кир распространяет персидский контроль на Левант и Сирию, завоевывая территории от Средиземноморья до реки Инд, создавая крупнейшую империю, которую когда-либо видел мир",
+      "description_ru": "Кир подчиняет Левант и Сирию, завоевывая территории от Средиземноморья до реки Инд, создавая крупнейшую империю, которую когда-либо видел мир",
       "era": "BC",
       "latitude": 34,
       "longitude": 36,
@@ -218,14 +212,16 @@
         "Persian",
         "Conquest",
         "Expansion",
-        "Empire"
+        "Empire",
+        "Cyrus the Great",
+        "Achaemenid"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0535",
       "description": "Construction begins on Pasargadae, first dynastic capital of Persian Empire, featuring Cyrus's tomb and palace complex with innovative architectural synthesis of various cultures",
-      "description_ru": "Начинается строительство Пасаргад, первой династической столицы Персидской империи, с гробницей Кира и дворцовым комплексом, демонстрирующим инновационный архитектурный синтез различных культур",
+      "description_ru": "Начинается строительство Пасаргад, первой династической столицы Персидской империи, с гробницей Кира и дворцовым комплексом. Кир брал от покоренных народов архитектурные особенности и подходы, и применял их при строительстве дворца. Также Кир любил сады, и в Пасаргадах были разбиты обширные сады и серьезная система ирригации.",
       "era": "BC",
       "latitude": 30.2026,
       "longitude": 53.1678,
@@ -237,14 +233,17 @@
         "Capital",
         "Architecture",
         "Building",
-        "Palace"
+        "Palace",
+        "Cyrus the Great",
+        "Achaemenid",
+        "City"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0534",
       "description": "Cyrus creates professional standing army with elite Immortals guard unit of 10,000 soldiers, revolutionizing Persian military organization",
-      "description_ru": "Кир создает профессиональную постоянную армию с элитным подразделением гвардии Бессмертных из 10 000 солдат, революционизируя персидскую военную организацию",
+      "description_ru": "Кир создает профессиональную постоянную армию с элитным подразделением гвардии Бессмертных из 10 000 солдат. Бессмертные играли роль царской стражи, а также элитного войска в завоевательных походах.",
       "era": "BC",
       "latitude": 30.2026,
       "longitude": 53.1678,
@@ -253,10 +252,10 @@
       "source": "https://en.wikipedia.org/wiki/Immortals_(Achaemenid_Empire)",
       "tags": [
         "Persian",
-        "Military",
         "Army",
         "Elite",
-        "Innovation"
+        "Achaemenid",
+        "War Science"
       ],
       "type": "military"
     },
@@ -268,20 +267,21 @@
       "latitude": 35,
       "longitude": 50,
       "name": "Imperial Postal System",
-      "name_ru": "Имперская почтовая система",
+      "name_ru": "Персидская почтовая система",
       "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
       "tags": [
         "Persian",
         "Infrastructure",
         "Communication",
-        "Innovation"
+        "Innovation",
+        "Achaemenid"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0532",
       "description": "Cyrus constructs vast irrigation projects and underground qanat water systems throughout Iranian plateau, dramatically increasing agricultural productivity",
-      "description_ru": "Кир строит обширные ирригационные проекты и подземные системы водоснабжения канат по всему Иранскому нагорью, резко повышая сельскохозяйственную производительность",
+      "description_ru": "В империи Кира строят обширные ирригационные проекты и подземные акведуки \"кяриз\" по всему Иранскому нагорью, резко повышая сельскохозяйственную производительность",
       "era": "BC",
       "latitude": 32,
       "longitude": 53,
@@ -293,7 +293,8 @@
         "Engineering",
         "Water",
         "Agriculture",
-        "Innovation"
+        "Innovation",
+        "Achaemenid"
       ],
       "type": "historic"
     },
@@ -305,20 +306,21 @@
       "latitude": 32.5422,
       "longitude": 44.4215,
       "name": "Aramaic Administrative Language",
-      "name_ru": "Арамейский административный язык",
+      "name_ru": "Арамейский административный язык в Персии",
       "source": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
       "tags": [
         "Persian",
         "Language",
         "Administration",
-        "Culture"
+        "Culture",
+        "Achaemenid"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0530",
       "description": "Cyrus campaigns against Massagetae nomads in Central Asia; killed in battle by Queen Tomyris, ending reign of empire's founder and greatest conqueror",
-      "description_ru": "Кир ведет кампанию против кочевников массагетов в Центральной Азии; убит в бою царицей Томирис, завершая правление основателя империи и величайшего завоевателя",
+      "description_ru": "Кир убит в бою царицей массагетов Томирис, когда ведет военную кампанию против кочевников в Центральной Азии",
       "era": "BC",
       "latitude": 42,
       "longitude": 60,
@@ -329,14 +331,15 @@
         "Persian",
         "Battle",
         "Death",
-        "War"
+        "Cyrus the Great",
+        "Achaemenid"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0530",
       "description": "Cyrus's body returned to Pasargadae for burial in simple stone tomb; inscription reads 'O man, whoever you are and wherever you come from, for I know you will come, I am Cyrus who won the Persians their empire. Do not begrudge me this bit of earth that covers my bones'",
-      "description_ru": "Тело Кира возвращено в Пасаргады для захоронения в простой каменной гробнице; надпись гласит: 'О человек, кто бы ты ни был и откуда бы ни пришел, ибо я знаю, что ты придешь, я - Кир, который завоевал персам их империю. Не завидуй мне этой малости земли, покрывающей мои кости'",
+      "description_ru": "Тело Кира возвращено в Пасаргады для захоронения в простой каменной гробнице; надпись гласит: 'О человек, кто бы ты ни был и откуда бы ни пришел, ибо я знаю, что ты придешь, я - Кир, который завоевал персам их империю. Не жалей для меня этого клочка земли, покрывающего мои кости'",
       "era": "BC",
       "latitude": 30.2026,
       "longitude": 53.1678,
@@ -346,16 +349,18 @@
       "tags": [
         "Persian",
         "Tomb",
-        "Monument",
         "Architecture",
-        "Death"
+        "Cyrus the Great",
+        "Building",
+        "Achaemenid",
+        "Burial"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0529",
       "description": "Cambyses II becomes Persian emperor and consolidates power, preparing for conquest of Egypt as final unconquered major power in Near East",
-      "description_ru": "Камбиз II становится персидским императором и консолидирует власть, готовясь к завоеванию Египта как последней незавоеванной крупной державы на Ближнем Востоке",
+      "description_ru": "Камбиз II становится персидским императором и укрепляет власть, готовясь к покорению Египта - последней независимой крупной державы на Ближнем Востоке",
       "era": "BC",
       "latitude": 30.2026,
       "longitude": 53.1678,
@@ -365,50 +370,53 @@
       "tags": [
         "Persian",
         "Dynasty",
-        "Succession"
+        "Achaemenid",
+        "King"
       ],
       "type": "political"
     },
     {
       "date": "01.05.0525",
       "description": "Persian forces defeat Egyptian Pharaoh Psamtik III at Battle of Pelusium; Cambyses conquers Egypt, ending 26th Dynasty and establishing Persian control over Nile valley",
-      "description_ru": "Персидские силы побеждают египетского фараона Псамметиха III в битве при Пелусии; Камбиз завоевывает Египет, завершая 26-ю династию и устанавливая персидский контроль над долиной Нила",
+      "description_ru": "Персы побеждают египетского фараона Псамметиха III в битве при Пелусии; Камбиз подчиняет Египет, завершая 26-ю династию и устанавливая персидский контроль над долиной Нила",
       "era": "BC",
       "latitude": 31.0456,
       "longitude": 32.5556,
       "name": "Conquest of Egypt",
-      "name_ru": "Завоевание Египта",
+      "name_ru": "Завоевание Египта Персией",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Pelusium_(525_BC)",
       "tags": [
         "Persian",
-        "Egyptian",
         "Battle",
-        "Conquest"
+        "Conquest",
+        "Egypt",
+        "Achaemenid"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0522",
       "description": "Cambyses dies mysteriously during return from Egypt; Darius I (Darius the Great) seizes throne after defeating rival claimant Gaumata in civil war",
-      "description_ru": "Камбиз таинственно умирает во время возвращения из Египта; Дарий I (Дарий Великий) захватывает трон после победы над соперничающим претендентом Гауматой в гражданской войне",
+      "description_ru": "Камбиз умирает при неизвестных обстоятельствах во время возвращения из Египта; в Персии начинается гражданская война, из которой победителем выходит Дарий I (Дарий Великий)",
       "era": "BC",
       "latitude": 36.3,
       "longitude": 59.5,
       "name": "Darius I Seizes Power",
-      "name_ru": "Дарий I захватывает власть",
+      "name_ru": "Дарий I захватывает власть в Персии",
       "source": "https://en.wikipedia.org/wiki/Darius_I",
       "tags": [
         "Persian",
         "Civil War",
         "Dynasty",
-        "Succession"
+        "Darius I",
+        "Achaemenid"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0521",
       "description": "Darius commissions Behistun Inscription carved into cliff face in three languages (Old Persian, Elamite, Babylonian), proclaiming legitimacy and listing conquests; becomes key to deciphering cuneiform",
-      "description_ru": "Дарий заказывает Бехистунскую надпись, вырезанную на скале на трех языках (староперсидский, эламитский, вавилонский), провозглашающую легитимность и перечисляющую завоевания",
+      "description_ru": "Дарий заказывает Бехистунскую надпись. На скале в провинции Керманшах на высоте 105 метров над дорогой на трех языках (староперсидский, эламитский, вавилонский) вырезают документ Дария, в котором он говорит, как боролся за Персию в гражданской войне и какие страны принадлежат Персии. Древние скульпторы, закончив работу, спустились вниз и разрушили за собой каменные ступени, чтобы исключить возможность вновь подняться к памятнику.",
       "era": "BC",
       "latitude": 34.3889,
       "longitude": 47.4353,
@@ -420,46 +428,28 @@
         "Writing",
         "Monument",
         "Language",
-        "Propaganda"
+        "Darius I",
+        "Achaemenid"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0520",
       "description": "Darius reorganizes empire into 20 satrapies (provinces), each with satrap (governor), military commander, and royal secretary creating efficient administrative system",
-      "description_ru": "Дарий реорганизует империю на 20 сатрапий (провинций), каждая с сатрапом (губернатором), военачальником и царским секретарем, создавая эффективную административную систему",
+      "description_ru": "Дарий делит империю на 20 сатрапий, каждая с сатрапом (губернатором), военачальником и царским секретарем. Сатрапии платили империи дань, поставляли войска при необходимости; в остальном в вопросах культуры, законодательства, традиций и языка имели определенную автономность.",
       "era": "BC",
       "latitude": 32.6546,
-      "longitude": 51.6680,
+      "longitude": 51.668,
       "name": "Satrapy System Established",
-      "name_ru": "Установлена система сатрапий",
+      "name_ru": "Персидские сатрапии",
       "source": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
       "tags": [
         "Persian",
         "Administration",
         "Reform",
-        "Government"
+        "Achaemenid"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0518",
-      "description": "Darius introduces standardized coinage throughout empire - gold daric and silver siglos - facilitating trade and tax collection across vast territories",
-      "description_ru": "Дарий вводит стандартизированную монету по всей империи - золотой дарик и серебряный сиглос - облегчая торговлю и сбор налогов на огромных территориях",
-      "era": "BC",
-      "latitude": 32.6546,
-      "longitude": 51.6680,
-      "name": "Persian Imperial Coinage",
-      "name_ru": "Персидская имперская монета",
-      "source": "https://en.wikipedia.org/wiki/Achaemenid_coinage",
-      "tags": [
-        "Persian",
-        "Economic",
-        "Currency",
-        "Trade",
-        "Gold"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0518",
@@ -476,14 +466,35 @@
         "Capital",
         "Architecture",
         "Palace",
-        "Building"
+        "Building",
+        "Achaemenid",
+        "City"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0518",
+      "description": "Darius introduces standardized coinage throughout empire - gold daric and silver siglos - facilitating trade and tax collection across vast territories",
+      "description_ru": "Дарий вводит единую монету по всей империи - золотой дарик и серебряный сиглос. Это упрощает торговлю и сбор налогов на огромных территориях",
+      "era": "BC",
+      "latitude": 32.6546,
+      "longitude": 51.668,
+      "name": "Persian Imperial Coinage",
+      "name_ru": "Персидская имперская монета",
+      "source": "https://en.wikipedia.org/wiki/Achaemenid_coinage",
+      "tags": [
+        "Persian",
+        "Economic",
+        "Currency",
+        "Trade",
+        "Achaemenid"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0515",
       "description": "Construction of Royal Road from Susa to Sardis (2,700 km) with 111 postal stations, enabling rapid communication across empire; royal messengers traverse entire route in 7 days",
-      "description_ru": "Строительство Царской дороги от Суз до Сард (2700 км) со 111 почтовыми станциями, обеспечивающими быструю коммуникацию по империи; царские курьеры проходят весь маршрут за 7 дней",
+      "description_ru": "Строительство Царской дороги от Суз у Персидского залива до Сард в Западной Анатолии (2700 км). На дороге 111 почтовых станций, обеспечивающих быструю коммуникацию по империи; царские курьеры проходят весь маршрут за 7 дней",
       "era": "BC",
       "latitude": 37.5,
       "longitude": 42,
@@ -495,62 +506,68 @@
         "Infrastructure",
         "Communication",
         "Trade",
-        "Engineering"
+        "Engineering",
+        "Achaemenid",
+        "Road"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0513",
       "description": "Darius campaigns against Scythian nomads beyond Danube River; despite crossing into Europe, Persian army unable to force decisive battle against mobile steppe warriors",
-      "description_ru": "Дарий ведет кампанию против скифских кочевников за Дунаем; несмотря на переход в Европу, персидская армия не может навязать решающее сражение мобильным степным воинам",
+      "description_ru": "Дарий ведет кампанию против скифских кочевников за Дунаем; армия Персии доходит до Европы, но не может навязать решающее сражение степным племенам",
       "era": "BC",
       "latitude": 45.2,
       "longitude": 28.8,
       "name": "Scythian Campaign",
-      "name_ru": "Скифская кампания",
+      "name_ru": "Скифская кампания Дария",
       "source": "https://en.wikipedia.org/wiki/European_Scythian_campaign_of_Darius_I",
       "tags": [
         "Persian",
         "Scythian",
-        "War",
-        "Campaign"
+        "Darius I",
+        "Achaemenid",
+        "Expansion"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0512",
       "description": "Darius conquers Thrace and Macedonia, extending Persian control into southeastern Europe and establishing empire's westernmost satrapy",
-      "description_ru": "Дарий завоевывает Фракию и Македонию, распространяя персидский контроль на юго-восточную Европу и устанавливая самую западную сатрапию империи",
+      "description_ru": "Дарий завоевывает Фракию и Македонию и создает сатрапию на юго-востоке Европы",
       "era": "BC",
       "latitude": 41.5,
       "longitude": 24.5,
       "name": "Conquest of Thrace",
-      "name_ru": "Завоевание Фракии",
+      "name_ru": "Завоевание Фракии и Македонии персами",
       "source": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
       "tags": [
         "Persian",
         "Greek",
         "Conquest",
-        "Expansion"
+        "Expansion",
+        "Darius I",
+        "Achaemenid"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0510",
       "description": "Persian engineers complete massive canal linking Nile River to Red Sea, creating waterway for trade between Mediterranean and Indian Ocean",
-      "description_ru": "Персидские инженеры завершают массивный канал, соединяющий Нил с Красным морем, создавая водный путь для торговли между Средиземноморьем и Индийским океаном",
+      "description_ru": "Персидские инженеры завершают массивный канал (предтеча Суэцкого канала), соединяющий Нил с Красным морем, создавая водный путь для торговли между Средиземноморьем и Индийским океаном",
       "era": "BC",
       "latitude": 30.5,
       "longitude": 32.3,
       "name": "Nile-Red Sea Canal",
-      "name_ru": "Канал Нил-Красное море",
+      "name_ru": "Достроен канал фараонов",
       "source": "https://en.wikipedia.org/wiki/Canal_of_the_Pharaohs",
       "tags": [
         "Persian",
         "Engineering",
         "Trade",
         "Water",
-        "Egyptian"
+        "Egypt",
+        "Achaemenid"
       ],
       "type": "historic"
     },
@@ -560,51 +577,52 @@
       "description_ru": "Дарий учреждает 'Царские Очи и Уши' - сеть имперских инспекторов, докладывающих напрямую императору, обеспечивая лояльность и эффективность сатрапов",
       "era": "BC",
       "latitude": 32.6546,
-      "longitude": 51.6680,
+      "longitude": 51.668,
       "name": "Royal Inspector System",
       "name_ru": "Система царских инспекторов",
       "source": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
       "tags": [
         "Persian",
         "Administration",
-        "Government",
-        "Intelligence"
+        "Achaemenid"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0499",
       "description": "Ionian Greek cities in Asia Minor revolt against Persian rule with Athenian support, beginning conflict that will lead to Persian Wars",
-      "description_ru": "Ионийские греческие города в Малой Азии восстают против персидского правления при афинской поддержке, начиная конфликт, который приведет к Персидским войнам",
+      "description_ru": "Ионийские греческие города в Малой Азии восстают против персидского правления при поддержке Афин, запуская конфликт, который приведет к Персидским войнам",
       "era": "BC",
       "latitude": 37.9534,
       "longitude": 27.3639,
       "name": "Ionian Revolt Begins",
-      "name_ru": "Начало Ионийского восстания",
+      "name_ru": "Восстание Ионийских городов против Персии",
       "source": "https://en.wikipedia.org/wiki/Ionian_Revolt",
       "tags": [
         "Persian",
         "Greek",
-        "Revolt",
-        "War"
+        "Rebellion",
+        "Achaemenid",
+        "Greek-Persian Wars"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0498",
       "description": "Ionian Greeks and Athenian allies burn Sardis, Persian satrapal capital in Anatolia, enraging Darius and prompting vow to punish Athens",
-      "description_ru": "Ионийские греки и афинские союзники сжигают Сарды, персидскую сатрапальную столицу в Анатолии, приводя Дария в ярость и побуждая его поклясться наказать Афины",
+      "description_ru": "Ионийские греки и афинские союзники сжигают Сарды, столицу Анатолийской сатрапии. Дарий в ярости и клянется наказать Афины",
       "era": "BC",
       "latitude": 38.4852,
       "longitude": 28.3053,
       "name": "Burning of Sardis",
-      "name_ru": "Сожжение Сард",
+      "name_ru": "Греки сжигают Сарды",
       "source": "https://en.wikipedia.org/wiki/Ionian_Revolt",
       "tags": [
         "Persian",
         "Greek",
-        "Battle",
-        "Destruction"
+        "Destruction",
+        "Achaemenid",
+        "Greek-Persian Wars"
       ],
       "type": "military"
     },
@@ -622,12 +640,14 @@
         "Persian",
         "Greek",
         "Naval",
-        "Battle"
+        "Battle",
+        "Achaemenid",
+        "Greek-Persian Wars"
       ],
       "type": "military"
     },
     {
-      "date": "01.09.0490",
+      "date": "12.09.0490",
       "description": "Athenians defeat Persian invasion force at Battle of Marathon despite numerical disadvantage; Darius's first attempt to punish Athens fails dramatically",
       "description_ru": "Афиняне побеждают персидские вторгшиеся силы в битве при Марафоне, несмотря на численное превосходство противника; первая попытка Дария наказать Афины терпит драматический провал",
       "era": "BC",
@@ -640,32 +660,35 @@
         "Persian",
         "Greek",
         "Battle",
-        "Defeat"
+        "Achaemenid",
+        "Greek-Persian Wars"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0486",
       "description": "Darius dies while preparing new Greek campaign; Xerxes I becomes emperor, inheriting father's determination to conquer Greece and empire at peak territorial extent",
-      "description_ru": "Дарий умирает во время подготовки новой греческой кампании; Ксеркс I становится императором, наследуя решимость отца завоевать Грецию и империю на пике территориального расширения",
+      "description_ru": "Дарий умирает во время подготовки новой греческой кампании; его сын Ксеркс становится императором, наследуя империю на пике территориального расширения и сохраняя решимость отца завоевать Грецию",
       "era": "BC",
       "latitude": 29.9342,
       "longitude": 52.8906,
       "name": "Xerxes Becomes Emperor",
-      "name_ru": "Ксеркс становится императором",
+      "name_ru": "Ксеркс - император Персии",
       "source": "https://en.wikipedia.org/wiki/Xerxes_I",
       "tags": [
         "Persian",
         "Dynasty",
         "Death",
-        "Succession"
+        "Xerxes I",
+        "Achaemenid",
+        "King"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0484",
       "description": "Xerxes brutally suppresses Egyptian revolt, removing autonomy and ruling Egypt as conquered province rather than traditional pharaoh",
-      "description_ru": "Ксеркс жестоко подавляет египетское восстание, лишая автономии и управляя Египтом как завоеванной провинцией, а не традиционным фараоном",
+      "description_ru": "Ксеркс жестоко подавляет египетское восстание, лишает Египет автономии и управляет им как завоеванной провинцией, а не с помощью фараона",
       "era": "BC",
       "latitude": 30.0444,
       "longitude": 31.2357,
@@ -674,9 +697,10 @@
       "source": "https://en.wikipedia.org/wiki/Xerxes_I",
       "tags": [
         "Persian",
-        "Egyptian",
-        "Revolt",
-        "Suppression"
+        "Egypt",
+        "Rebellion",
+        "Achaemenid",
+        "Xerxes I"
       ],
       "type": "military"
     },
@@ -688,14 +712,16 @@
       "latitude": 32.5422,
       "longitude": 44.4215,
       "name": "Destruction of Esagila Temple",
-      "name_ru": "Разрушение храма Эсагила",
+      "name_ru": "Разрушение персами храма Эсагила",
       "source": "https://en.wikipedia.org/wiki/Xerxes_I",
       "tags": [
         "Persian",
         "Babylonian",
         "Temple",
         "Destruction",
-        "Religious"
+        "Achaemenid",
+        "Rebellion",
+        "Xerxes I"
       ],
       "type": "military"
     },
@@ -705,7 +731,7 @@
       "description_ru": "Ксеркс собирает массивную армию и флот для вторжения в Грецию, призывая силы со всей империи, включая элитную гвардию Бессмертных, демонстрируя беспрецедентную военную мобилизацию",
       "era": "BC",
       "latitude": 32.6546,
-      "longitude": 51.6680,
+      "longitude": 51.668,
       "name": "Mobilization for Greek Invasion",
       "name_ru": "Мобилизация для вторжения в Грецию",
       "source": "https://en.wikipedia.org/wiki/Second_Persian_invasion_of_Greece",
@@ -713,30 +739,57 @@
         "Persian",
         "Greek",
         "Army",
-        "Military Mobilization"
+        "Xerxes I",
+        "Achaemenid",
+        "Greek-Persian Wars"
       ],
       "type": "military"
     },
     {
-      "date": "01.01.0480",
-      "description": "Persian engineers construct pontoon bridges across Hellespont strait using hundreds of ships, allowing army to cross from Asia to Europe - remarkable feat of military engineering",
-      "description_ru": "Персидские инженеры строят понтонные мосты через пролив Геллеспонт, используя сотни кораблей, позволяя армии переправиться из Азии в Европу - замечательный подвиг военной инженерии",
+      "date": "26.09.0480",
+      "description": "Greek fleet defeats Persian navy at Battle of Salamis in narrow straits; Xerxes watches from shore as superior Greek tactics destroy much of Persian fleet",
+      "description_ru": "Греческий флот побеждает персидский флот в битве при Саламине в узких проливах; Ксеркс наблюдает с берега, как греки, превосходя персов в тактике, уничтожают большую часть персидско-финикийского флота",
       "era": "BC",
-      "latitude": 40.2,
-      "longitude": 26.4,
-      "name": "Hellespont Bridge Construction",
-      "name_ru": "Строительство моста через Геллеспонт",
-      "source": "https://en.wikipedia.org/wiki/Xerxes%27_Pontoon_Bridges",
+      "latitude": 37.9639,
+      "longitude": 23.5558,
+      "name": "Battle of Salamis",
+      "name_ru": "Битва при Саламине",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Salamis",
       "tags": [
         "Persian",
-        "Engineering",
-        "Military Innovation",
-        "Infrastructure"
+        "Greek",
+        "Naval",
+        "Battle",
+        "Greek-Persian Wars",
+        "Xerxes I",
+        "Achaemenid",
+        "Phoenician"
       ],
-      "type": "historic"
+      "type": "military"
     },
     {
-      "date": "01.08.0480",
+      "date": "15.09.0480",
+      "description": "Persian forces capture and burn Athens including Acropolis; population evacuated to Salamis, but destruction of sacred sites enrages Greek city-states",
+      "description_ru": "Персидские силы захватывают и сжигают Афины, включая Акрополь. Население эвакуируется на Саламин, однако разрушение священных мест приводит в ярость греческие города-государства",
+      "era": "BC",
+      "latitude": 37.9715,
+      "longitude": 23.7267,
+      "name": "Sacking of Athens",
+      "name_ru": "Персия разрушает Афины",
+      "source": "https://en.wikipedia.org/wiki/Second_Persian_invasion_of_Greece",
+      "tags": [
+        "Persian",
+        "Greek",
+        "Conquest",
+        "Destruction",
+        "Xerxes I",
+        "Achaemenid",
+        "Greek-Persian Wars"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "20.08.0480",
       "description": "300 Spartans and allies make legendary stand at Thermopylae pass, delaying Persian army for three days before betrayal allows Persians to outflank Greek position",
       "description_ru": "300 спартанцев и союзников совершают легендарный подвиг в Фермопильском ущелье, задерживая персидскую армию на три дня, прежде чем предательство позволяет персам обойти греческие позиции",
       "era": "BC",
@@ -749,67 +802,33 @@
         "Persian",
         "Greek",
         "Battle",
-        "Spartan"
+        "Spartan",
+        "Achaemenid",
+        "Greek-Persian Wars"
       ],
       "type": "military"
     },
     {
-      "date": "01.09.0480",
-      "description": "Persian forces capture and burn Athens including Acropolis; population evacuated to Salamis, but destruction of sacred sites enrages Greek city-states",
-      "description_ru": "Персидские силы захватывают и сжигают Афины, включая Акрополь; население эвакуировано на Саламин, но разрушение священных мест приводит в ярость греческие города-государства",
+      "date": "01.01.0480",
+      "description": "Persian engineers construct pontoon bridges across Hellespont strait using hundreds of ships, allowing army to cross from Asia to Europe - remarkable feat of military engineering",
+      "description_ru": "Персидские инженеры строят понтонные мосты через пролив Геллеспонт, используя сотни кораблей, что позволяет армии переправиться из Азии в Европу",
       "era": "BC",
-      "latitude": 37.9715,
-      "longitude": 23.7267,
-      "name": "Sacking of Athens",
-      "name_ru": "Разграбление Афин",
-      "source": "https://en.wikipedia.org/wiki/Second_Persian_invasion_of_Greece",
+      "latitude": 40.2,
+      "longitude": 26.4,
+      "name": "Hellespont Bridge Construction",
+      "name_ru": "Понтонный мост через Геллеспонт",
+      "source": "https://en.wikipedia.org/wiki/Xerxes%27_Pontoon_Bridges",
       "tags": [
         "Persian",
-        "Greek",
-        "Conquest",
-        "Destruction"
+        "Engineering",
+        "Infrastructure",
+        "Innovation",
+        "Achaemenid"
       ],
-      "type": "military"
+      "type": "historic"
     },
     {
-      "date": "01.09.0480",
-      "description": "Greek fleet defeats Persian navy at Battle of Salamis in narrow straits; Xerxes watches from shore as superior Greek tactics destroy much of Persian fleet",
-      "description_ru": "Греческий флот побеждает персидский флот в битве при Саламине в узких проливах; Ксеркс наблюдает с берега, как превосходящая греческая тактика уничтожает большую часть персидского флота",
-      "era": "BC",
-      "latitude": 37.9639,
-      "longitude": 23.5558,
-      "name": "Battle of Salamis",
-      "name_ru": "Битва при Саламине",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Salamis",
-      "tags": [
-        "Persian",
-        "Greek",
-        "Naval",
-        "Battle",
-        "Defeat"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.08.0479",
-      "description": "Combined Greek army decisively defeats Persian forces at Battle of Plataea, ending Persian invasion and forcing withdrawal from mainland Greece",
-      "description_ru": "Объединенная греческая армия решительно побеждает персидские силы в битве при Платеях, завершая персидское вторжение и вынуждая к отступлению из материковой Греции",
-      "era": "BC",
-      "latitude": 38.2167,
-      "longitude": 23.2833,
-      "name": "Battle of Plataea",
-      "name_ru": "Битва при Платеях",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Plataea",
-      "tags": [
-        "Persian",
-        "Greek",
-        "Battle",
-        "Defeat"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.08.0479",
+      "date": "27.08.0479",
       "description": "Greek fleet destroys remaining Persian ships at Battle of Mycale on same day as Plataea, effectively ending Persian naval threat in Aegean Sea",
       "description_ru": "Греческий флот уничтожает оставшиеся персидские корабли в битве при Микале в тот же день, что и Платеи, фактически завершая персидскую морскую угрозу в Эгейском море",
       "era": "BC",
@@ -823,14 +842,35 @@
         "Greek",
         "Naval",
         "Battle",
-        "Defeat"
+        "Greek-Persian Wars",
+        "Achaemenid"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "27.08.0479",
+      "description": "Combined Greek army decisively defeats Persian forces at Battle of Plataea, ending Persian invasion and forcing withdrawal from mainland Greece",
+      "description_ru": "Объединенная греческая армия решительно побеждает персидские силы в битве при Платеях, завершая персидское вторжение и вынуждая к отступлению из материковой Греции",
+      "era": "BC",
+      "latitude": 38.2167,
+      "longitude": 23.2833,
+      "name": "Battle of Plataea",
+      "name_ru": "Битва при Платеях",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Plataea",
+      "tags": [
+        "Persian",
+        "Greek",
+        "Battle",
+        "Greek-Persian Wars",
+        "Xerxes I",
+        "Achaemenid"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0478",
       "description": "Delian League formed by Greek city-states to continue war against Persia, liberating Ionian Greek cities and beginning long conflict for control of Aegean",
-      "description_ru": "Делосский союз сформирован греческими городами-государствами для продолжения войны против Персии, освобождая ионийские греческие города и начиная долгий конфликт за контроль над Эгейским морем",
+      "description_ru": "Греческие города-государства объединяются под началом Афин в Делосский союз для продолжения войны против Персии. Делосский союз будет освобождать ионийские греческие города и сражаться за контроль над Эгейским морем",
       "era": "BC",
       "latitude": 37.4,
       "longitude": 25.2667,
@@ -840,8 +880,7 @@
       "tags": [
         "Greek",
         "Persian",
-        "Alliance",
-        "War"
+        "Greek-Persian Wars"
       ],
       "type": "political"
     },
@@ -860,14 +899,17 @@
         "Architecture",
         "Palace",
         "Building",
-        "Art"
+        "Art",
+        "Xerxes I",
+        "Achaemenid",
+        "City"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0470",
       "description": "Persian royal artisans create masterpiece metalwork including Oxus Treasure - collection of gold plaques, vessels and jewelry demonstrating highest level of Achaemenid craftsmanship",
-      "description_ru": "Персидские царские мастера создают шедевры металлообработки, включая Сокровища Окса - коллекцию золотых пластин, сосудов и украшений, демонстрирующих высочайший уровень ахеменидского мастерства",
+      "description_ru": "Персидские царские мастера создают шедевры металлообработки, включая Сокровища Окса - коллекцию золотых пластин, сосудов и украшений из золота",
       "era": "BC",
       "latitude": 37.5,
       "longitude": 68.8,
@@ -879,14 +921,15 @@
         "Art",
         "Gold",
         "Treasure",
-        "Culture"
+        "Culture",
+        "Achaemenid"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0466",
       "description": "Athenian general Cimon defeats Persian fleet at Battle of Eurymedon, destroying Persian naval power in eastern Mediterranean and securing Greek cities of Asia Minor",
-      "description_ru": "Афинский полководец Кимон побеждает персидский флот в битве при Эвримедонте, уничтожая персидскую морскую мощь в восточном Средиземноморье и обеспечивая безопасность греческих городов Малой Азии",
+      "description_ru": "Афинский полководец Кимон побеждает персидский флот в устье реки Эвримедонт, затем высаживается и разбивает персов на земле в их лагере. Это подрывает персидскую морскую мощь в восточном Средиземноморье и обеспечивает безопасность греческих городов Малой Азии",
       "era": "BC",
       "latitude": 36.7,
       "longitude": 31.4,
@@ -898,14 +941,15 @@
         "Greek",
         "Naval",
         "Battle",
-        "Defeat"
+        "Greek-Persian Wars",
+        "Achaemenid"
       ],
       "type": "military"
     },
     {
       "date": "01.08.0465",
       "description": "Xerxes assassinated in palace conspiracy orchestrated by Artabanus; Artaxerxes I becomes emperor after eliminating rival claimants in power struggle",
-      "description_ru": "Ксеркс убит в результате дворцового заговора, организованного Артабаном; Артаксеркс I становится императором после устранения соперничающих претендентов в борьбе за власть",
+      "description_ru": "Император Персии Ксеркс убит в результате дворцового заговора, организованного Артабаном; Артаксеркс I становится императором после устранения соперничающих претендентов в борьбе за власть",
       "era": "BC",
       "latitude": 29.9342,
       "longitude": 52.8906,
@@ -916,7 +960,12 @@
         "Persian",
         "Assassination",
         "Conspiracy",
-        "Dynasty"
+        "Dynasty",
+        "Xerxes I",
+        "Death",
+        "Achaemenid",
+        "King",
+        "Regicide"
       ],
       "type": "political"
     },
@@ -928,14 +977,14 @@
       "latitude": 31.2,
       "longitude": 29.9,
       "name": "Egyptian Revolt",
-      "name_ru": "Египетское восстание",
+      "name_ru": "Египет восстает против Персии",
       "source": "https://en.wikipedia.org/wiki/Achaemenid_Egypt",
       "tags": [
         "Persian",
-        "Egyptian",
-        "Greek",
-        "Revolt",
-        "War"
+        "Egypt",
+        "Rebellion",
+        "Greek-Persian Wars",
+        "Achaemenid"
       ],
       "type": "military"
     },
@@ -951,17 +1000,19 @@
       "source": "https://en.wikipedia.org/wiki/Achaemenid_Egypt",
       "tags": [
         "Persian",
-        "Egyptian",
         "Greek",
         "Battle",
-        "Suppression"
+        "Egypt",
+        "Rebellion",
+        "Greek-Persian Wars",
+        "Achaemenid"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0449",
       "description": "Peace of Callias signed between Persia and Athens, ending Greco-Persian Wars; Persians recognize Greek autonomy in Aegean, Greeks acknowledge Persian control of Asia Minor",
-      "description_ru": "Каллиев мир подписан между Персией и Афинами, завершая греко-персидские войны; персы признают греческую автономию в Эгейском море, греки признают персидский контроль над Малой Азией",
+      "description_ru": "Каллиев мир подписан между Персией и Делосским союзом, завершая греко-персидские войны; персы признают греческую автономию в Эгейском море, греки признают персидский контроль над городами Малой Азии",
       "era": "BC",
       "latitude": 37.9715,
       "longitude": 23.7267,
@@ -973,7 +1024,9 @@
         "Greek",
         "Peace",
         "Treaty",
-        "Diplomacy"
+        "Diplomacy",
+        "Greek-Persian Wars",
+        "Achaemenid"
       ],
       "type": "political"
     },
@@ -990,8 +1043,11 @@
       "tags": [
         "Persian",
         "Religious",
-        "Jewish",
-        "Migration"
+        "Migration",
+        "Israel",
+        "Achaemenid",
+        "Judah",
+        "Jerusalem"
       ],
       "type": "religious"
     },
@@ -1008,18 +1064,21 @@
       "tags": [
         "Persian",
         "Religious",
-        "Jewish",
-        "Fortification"
+        "Fortification",
+        "Achaemenid",
+        "Israel",
+        "Judah",
+        "Jerusalem"
       ],
       "type": "religious"
     },
     {
       "date": "01.01.0424",
       "description": "Artaxerxes I dies after 41-year reign; succession crisis erupts as multiple sons claim throne, weakening imperial authority",
-      "description_ru": "Артаксеркс I умирает после 41-летнего правления; вспыхивает кризис престолонаследия, когда несколько сыновей претендуют на трон, ослабляя имперскую власть",
+      "description_ru": "Артаксеркс I умирает после 41-летнего правленияю. После его смерти несколько сыновей претендуют на трон, что ослабляет имперскую власть и вызывает волнения в империи",
       "era": "BC",
       "latitude": 32.6546,
-      "longitude": 51.6680,
+      "longitude": 51.668,
       "name": "Death of Artaxerxes I",
       "name_ru": "Смерть Артаксеркса I",
       "source": "https://en.wikipedia.org/wiki/Artaxerxes_I",
@@ -1027,50 +1086,54 @@
         "Persian",
         "Death",
         "Dynasty",
-        "Crisis"
+        "Crisis",
+        "Achaemenid"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0423",
       "description": "Darius II becomes emperor after eliminating brothers and rivals, beginning reign marked by increased court intrigue and satrapal independence",
-      "description_ru": "Дарий II становится императором после устранения братьев и соперников, начиная правление, отмеченное усилением придворных интриг и независимости сатрапов",
+      "description_ru": "Дарий II становится императором после устранения братьев и соперников. При его правлении растет роль придворных интриг и усиливается независимость сатрапов",
       "era": "BC",
       "latitude": 32.6546,
-      "longitude": 51.6680,
+      "longitude": 51.668,
       "name": "Darius II Becomes Emperor",
-      "name_ru": "Дарий II становится императором",
+      "name_ru": "Дарий II - император Персии",
       "source": "https://en.wikipedia.org/wiki/Darius_II",
       "tags": [
         "Persian",
         "Dynasty",
-        "Succession"
+        "Achaemenid",
+        "King"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0420",
       "description": "Jewish community at Elephantine in Egypt builds temple to Yahweh with Persian authorization, demonstrating continued policy of religious tolerance despite growing internal problems",
-      "description_ru": "Еврейская община в Элефантине в Египте строит храм Яхве с персидским разрешением, демонстрируя продолжение политики религиозной терпимости, несмотря на растущие внутренние проблемы",
+      "description_ru": "Еврейская община в Элефантине в Египте строит храм Яхве по дозволению Персии",
       "era": "BC",
       "latitude": 24.0889,
       "longitude": 32.8989,
       "name": "Elephantine Temple Built",
-      "name_ru": "Построен храм Элефантины",
+      "name_ru": "Построен храм Яхве в Элефантине",
       "source": "https://en.wikipedia.org/wiki/Elephantine",
       "tags": [
         "Persian",
-        "Egyptian",
         "Religious",
-        "Jewish",
-        "Temple"
+        "Temple",
+        "Egypt",
+        "Judah",
+        "Tolerance",
+        "Achaemenid"
       ],
       "type": "religious"
     },
     {
       "date": "01.01.0414",
       "description": "Persia supports Sparta against Athens in Peloponnesian War, providing gold subsidies that enable Spartan naval construction and prolonging Greek internal conflict",
-      "description_ru": "Персия поддерживает Спарту против Афин в Пелопоннесской войне, предоставляя золотые субсидии, которые позволяют спартанское военно-морское строительство и продлевают греческий внутренний конфликт",
+      "description_ru": "Персия поддерживает Спарту против Афин в Пелопоннесской войне, предоставляя золотые субсидии, которые позволяют спартанцам строить флот и подогревают внутригреческий конфликт",
       "era": "BC",
       "latitude": 37.0833,
       "longitude": 22.4167,
@@ -1082,25 +1145,26 @@
         "Greek",
         "Spartan",
         "Diplomacy",
-        "Gold"
+        "Peloponnesian War",
+        "Achaemenid"
       ],
       "type": "political"
     },
     {
-      "date": "01.01.0407",
+      "date": "01.02.0404",
       "description": "Egyptian satrap Amyrtaeus revolts successfully, establishing 28th Dynasty as independent kingdom and ending Persian rule in Egypt for 60 years",
       "description_ru": "Египетский сатрап Амиртей успешно восстает, основывая 28-ю династию как независимое царство и завершая персидское правление в Египте на 60 лет",
       "era": "BC",
       "latitude": 30.0444,
       "longitude": 31.2357,
       "name": "Egyptian Independence",
-      "name_ru": "Независимость Египта",
+      "name_ru": "Независимость Египта от Персии",
       "source": "https://en.wikipedia.org/wiki/Twenty-eighth_Dynasty_of_Egypt",
       "tags": [
         "Persian",
-        "Egyptian",
         "Independence",
-        "Revolt"
+        "Egypt",
+        "Revolution"
       ],
       "type": "political"
     },
@@ -1110,19 +1174,22 @@
       "description_ru": "Дарий II умирает; Артаксеркс II становится императором, но сталкивается с немедленным восстанием младшего брата Кира Младшего, который претендует на трон",
       "era": "BC",
       "latitude": 32.6546,
-      "longitude": 51.6680,
+      "longitude": 51.668,
       "name": "Artaxerxes II Becomes Emperor",
-      "name_ru": "Артаксеркс II становится императором",
+      "name_ru": "Артаксеркс II - император Персии",
       "source": "https://en.wikipedia.org/wiki/Artaxerxes_II",
       "tags": [
         "Persian",
         "Dynasty",
-        "Succession"
+        "King",
+        "Achaemenid",
+        "Civil War",
+        "Rebellion"
       ],
       "type": "political"
     },
     {
-      "date": "01.09.0401",
+      "date": "03.09.0401",
       "description": "Artaxerxes II defeats Cyrus the Younger at Battle of Cunaxa near Babylon; Cyrus killed, but his Greek mercenaries (Ten Thousand) conduct famous fighting retreat to Black Sea",
       "description_ru": "Артаксеркс II побеждает Кира Младшего в битве при Кунаксе близ Вавилона; Кир убит, но его греческие наемники (Десять тысяч) совершают знаменитое боевое отступление к Черному морю",
       "era": "BC",
@@ -1133,16 +1200,18 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Cunaxa",
       "tags": [
         "Persian",
-        "Greek",
         "Battle",
-        "Civil War"
+        "Civil War",
+        "Mercenaries",
+        "Spartan",
+        "Achaemenid"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0400",
       "description": "Xenophon's 'Anabasis' chronicles Ten Thousand's retreat, revealing Persian military weakness and inspiring future Greek invasions of Persian territory",
-      "description_ru": "'Анабасис' Ксенофонта описывает отступление Десяти тысяч, раскрывая персидскую военную слабость и вдохновляя будущие греческие вторжения на персидскую территорию",
+      "description_ru": "'Анабасис' Ксенофонта описывает отступление Десяти тысяч греков, раскрывая персидскую военную слабость и вдохновляя будущие греческие вторжения на персидскую территорию",
       "era": "BC",
       "latitude": 41,
       "longitude": 40,
@@ -1153,17 +1222,17 @@
         "Greek",
         "Persian",
         "Writing",
-        "Military"
+        "Mercenaries"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0396",
       "description": "Sparta declares war on Persia, launching campaigns in Anatolia; Spartan King Agesilaus achieves victories in Asia Minor, threatening Persian control",
-      "description_ru": "Спарта объявляет войну Персии, начиная кампании в Анатолии; спартанский царь Агесилай одерживает победы в Малой Азии, угрожая персидскому контролю",
+      "description_ru": "Спарта изначально поставила на Кира во внутреннем конфликте Персии; хотя Кир проиграл, Спарта продолжила воевать с Персией и начала успешные вторжения в Малую Азию под началом царя Агесилая , ",
       "era": "BC",
-      "latitude": 39,
-      "longitude": 35,
+      "latitude": 38.4852,
+      "longitude": 28.3053,
       "name": "Spartan-Persian War",
       "name_ru": "Спартанско-персидская война",
       "source": "https://en.wikipedia.org/wiki/Agesilaus_II",
@@ -1171,33 +1240,35 @@
         "Persian",
         "Greek",
         "Spartan",
-        "War"
+        "Corinthian War",
+        "Achaemenid"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0394",
       "description": "Persia funds Corinthian War among Greek city-states, using gold to turn Sparta's former allies (Athens, Thebes, Corinth) against Sparta and force withdrawal from Asia",
-      "description_ru": "Персия финансирует Коринфскую войну среди греческих городов-государств, используя золото, чтобы обратить бывших союзников Спарты (Афины, Фивы, Коринф) против Спарты и вынудить отступление из Азии",
+      "description_ru": "Персия поддерживает золотом Афины, Фивы, Коринф, противостоящие Спарте, чтобы вынудить Спарту уйти из Азии",
       "era": "BC",
       "latitude": 37.9364,
       "longitude": 22.9322,
       "name": "Persian Gold Fuels Corinthian War",
-      "name_ru": "Персидское золото разжигает Коринфскую войну",
+      "name_ru": "Персия финансирует Коринфскую войну",
       "source": "https://en.wikipedia.org/wiki/Corinthian_War",
       "tags": [
-        "Persian",
-        "Greek",
-        "Gold",
         "Diplomacy",
-        "War"
+        "Corinthian War",
+        "Spartan",
+        "Achaemenid",
+        "Persian",
+        "Greek"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0387",
       "description": "King's Peace (Peace of Antalcidas) imposed by Artaxerxes II ends Corinthian War; Persian emperor dictates terms to Greek city-states, reasserting Persian dominance over Ionia",
-      "description_ru": "Царский мир (Мир Анталкида), навязанный Артаксерксом II, завершает Коринфскую войну; персидский император диктует условия греческим городам-государствам, восстанавливая персидское господство над Ионией",
+      "description_ru": "Царский мир (Мир Анталкида), навязанный Артаксерксом II, завершает Коринфскую войну; Персия восстанавливает свое господство над Ионией и Малой Азией",
       "era": "BC",
       "latitude": 38,
       "longitude": 27,
@@ -1209,42 +1280,10 @@
         "Greek",
         "Peace",
         "Treaty",
-        "Diplomacy"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0380",
-      "description": "Great Satraps' Revolt begins as western satraps unite against central authority, revealing growing weakness of imperial administration and provincial discontent",
-      "description_ru": "Начинается Великое восстание сатрапов, когда западные сатрапы объединяются против центральной власти, раскрывая растущую слабость имперской администрации и недовольство провинций",
-      "era": "BC",
-      "latitude": 38,
-      "longitude": 35,
-      "name": "Great Satraps' Revolt",
-      "name_ru": "Великое восстание сатрапов",
-      "source": "https://en.wikipedia.org/wiki/Great_Satraps%27_Revolt",
-      "tags": [
-        "Persian",
-        "Revolt",
-        "Civil War",
-        "Administration"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0372",
-      "description": "Artaxerxes II suppresses Satraps' Revolt through combination of military force and diplomatic divide-and-conquer tactics, but imperial authority permanently weakened",
-      "description_ru": "Артаксеркс II подавляет восстание сатрапов через комбинацию военной силы и дипломатической тактики 'разделяй и властвуй', но имперская власть навсегда ослаблена",
-      "era": "BC",
-      "latitude": 32.6546,
-      "longitude": 51.6680,
-      "name": "Suppression of Satraps' Revolt",
-      "name_ru": "Подавление восстания сатрапов",
-      "source": "https://en.wikipedia.org/wiki/Great_Satraps%27_Revolt",
-      "tags": [
-        "Persian",
-        "Suppression",
-        "Diplomacy"
+        "Diplomacy",
+        "Corinthian War",
+        "Spartan",
+        "Achaemenid"
       ],
       "type": "political"
     },
@@ -1254,7 +1293,7 @@
       "description_ru": "Зороастризм становится более формализованной государственной религией при Артаксерксе II, который строит храмы Анахите (богине воды) по всей империи",
       "era": "BC",
       "latitude": 32.6546,
-      "longitude": 51.6680,
+      "longitude": 51.668,
       "name": "Formalization of Zoroastrianism",
       "name_ru": "Формализация зороастризма",
       "source": "https://en.wikipedia.org/wiki/Zoroastrianism",
@@ -1262,27 +1301,47 @@
         "Persian",
         "Religious",
         "Zoroastrian",
-        "Temple"
+        "Temple",
+        "Achaemenid"
       ],
       "type": "religious"
     },
     {
-      "date": "01.01.0365",
-      "description": "Persian attempts to reconquer Egypt fail repeatedly; Egyptian independence continues with support from Greek mercenaries and naval power",
-      "description_ru": "Персидские попытки отвоевать Египет терпят неудачу; египетская независимость продолжается при поддержке греческих наемников и морской мощи",
+      "date": "01.01.0370",
+      "description": "Great Satraps' Revolt begins as western satraps unite against central authority, revealing growing weakness of imperial administration and provincial discontent",
+      "description_ru": "Начинается Великое восстание сатрапов. Западные сатрапы Анатолии объединяются против империи, вскрывая растущую слабость имперской администрации и недовольство провинций",
       "era": "BC",
-      "latitude": 31.2,
-      "longitude": 29.9,
-      "name": "Failed Egyptian Reconquest",
-      "name_ru": "Неудачное отвоевание Египта",
-      "source": "https://en.wikipedia.org/wiki/Achaemenid_Egypt",
+      "latitude": 38,
+      "longitude": 35,
+      "name": "Great Satraps' Revolt",
+      "name_ru": "Великое восстание сатрапов",
+      "source": "https://en.wikipedia.org/wiki/Great_Satraps%27_Revolt",
       "tags": [
         "Persian",
-        "Egyptian",
-        "War",
-        "Defeat"
+        "Civil War",
+        "Administration",
+        "Rebellion",
+        "Achaemenid"
       ],
-      "type": "military"
+      "type": "political"
+    },
+    {
+      "date": "01.01.0362",
+      "description": "Artaxerxes II suppresses Satraps' Revolt through combination of military force and diplomatic divide-and-conquer tactics, but imperial authority permanently weakened",
+      "description_ru": "Артаксеркс II подавляет восстание сатрапов, комбинируя военную силу и дипломатической тактики 'разделяй и властвуй', но имперская власть уже ослаблена",
+      "era": "BC",
+      "latitude": 38,
+      "longitude": 35,
+      "name": "Suppression of Satraps' Revolt",
+      "name_ru": "Подавление восстания сатрапов",
+      "source": "https://en.wikipedia.org/wiki/Great_Satraps%27_Revolt",
+      "tags": [
+        "Persian",
+        "Diplomacy",
+        "Civil War",
+        "Rebellion"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.0358",
@@ -1290,87 +1349,89 @@
       "description_ru": "Артаксеркс II умирает в возрасте 94 лет после 46-летнего правления; Артаксеркс III становится императором и начинает агрессивную кампанию по восстановлению имперской мощи",
       "era": "BC",
       "latitude": 32.6546,
-      "longitude": 51.6680,
+      "longitude": 51.668,
       "name": "Artaxerxes III Becomes Emperor",
-      "name_ru": "Артаксеркс III становится императором",
+      "name_ru": "Артаксеркс III - император Персии",
       "source": "https://en.wikipedia.org/wiki/Artaxerxes_III",
       "tags": [
         "Persian",
         "Dynasty",
-        "Succession",
-        "Death"
+        "Death",
+        "King",
+        "Achaemenid"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0353",
       "description": "Artaxerxes III ruthlessly consolidates power, executing rival princes and rebellious satraps to eliminate threats and restore central authority",
-      "description_ru": "Артаксеркс III безжалостно консолидирует власть, казня соперничающих принцев и мятежных сатрапов для устранения угроз и восстановления центральной власти",
+      "description_ru": "Артаксеркс III безжалостно казнит соперничающих принцев и мятежных сатрапов, стремясь устранить угрозы и укрепить имперскую власть",
       "era": "BC",
       "latitude": 32.6546,
-      "longitude": 51.6680,
+      "longitude": 51.668,
       "name": "Artaxerxes III's Purge",
-      "name_ru": "Чистка Артаксеркса III",
+      "name_ru": "Чистки Артаксеркса III",
       "source": "https://en.wikipedia.org/wiki/Artaxerxes_III",
       "tags": [
         "Persian",
-        "Execution",
         "Purge",
-        "Government"
+        "Achaemenid"
       ],
       "type": "political"
     },
     {
-      "date": "01.01.0351",
-      "description": "Phoenician cities revolt under leadership of Sidon; Artaxerxes III besieges Sidon, resulting in mass suicide of 40,000 citizens rather than surrender",
-      "description_ru": "Финикийские города восстают под предводительством Сидона; Артаксеркс III осаждает Сидон, что приводит к массовому самоубийству 40 000 граждан вместо капитуляции",
-      "era": "BC",
-      "latitude": 33.5633,
-      "longitude": 35.3706,
-      "name": "Destruction of Sidon",
-      "name_ru": "Разрушение Сидона",
-      "source": "https://en.wikipedia.org/wiki/Sidon",
-      "tags": [
-        "Persian",
-        "Phoenician",
-        "Siege",
-        "Destruction",
-        "Revolt"
-      ],
-      "type": "military"
-    },
-    {
       "date": "01.01.0343",
       "description": "Artaxerxes III successfully reconquers Egypt after multiple campaigns, ending 30th Dynasty and restoring Persian control after 60 years of independence",
-      "description_ru": "Артаксеркс III успешно отвоевывает Египет после множественных кампаний, завершая 30-ю династию и восстанавливая персидский контроль после 60 лет независимости",
+      "description_ru": "Артаксеркс III успешно покоряет Египет после многих попыток, завершая 30-ю династию и восстанавливая персидский контроль после 60 лет независимости. Египет снова под властью Ахеменидов",
       "era": "BC",
       "latitude": 30.0444,
       "longitude": 31.2357,
       "name": "Reconquest of Egypt",
-      "name_ru": "Отвоевание Египта",
+      "name_ru": "Подчинение Египта Персии",
       "source": "https://en.wikipedia.org/wiki/Achaemenid_Egypt",
       "tags": [
         "Persian",
-        "Egyptian",
         "Conquest",
-        "War"
+        "Egypt",
+        "Achaemenid"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0340",
       "description": "Persian Empire reaches temporary resurgence under Artaxerxes III, who restores control over Egypt, Phoenicia and rebellious satrapies through military force",
-      "description_ru": "Персидская империя достигает временного возрождения при Артаксерксе III, который восстанавливает контроль над Египтом, Финикией и мятежными сатрапиями через военную силу",
+      "description_ru": "Персидская империя возрождается и укрепляется при Артаксерксе III, который восстанавливает контроль над Египтом, Финикией и мятежными сатрапиями через военную силу",
       "era": "BC",
       "latitude": 32.6546,
-      "longitude": 51.6680,
+      "longitude": 51.668,
       "name": "Persian Imperial Resurgence",
       "name_ru": "Возрождение Персидской империи",
       "source": "https://en.wikipedia.org/wiki/Artaxerxes_III",
       "tags": [
         "Persian",
         "Empire",
-        "Military"
+        "Rise",
+        "Achaemenid"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0338",
+      "description": "Artaxerxes III poisoned by eunuch Bagoas; Arses becomes puppet emperor, but Bagoas holds real power in court intrigue",
+      "description_ru": "Артаксеркс III отравлен своим визирем, евнухом Багоем; Арсес становится марионеточным императором, но Багой держит реальную власть в придворных интригах",
+      "era": "BC",
+      "latitude": 32.6546,
+      "longitude": 51.668,
+      "name": "Assassination of Artaxerxes III",
+      "name_ru": "Убийство Артаксеркса III",
+      "source": "https://en.wikipedia.org/wiki/Artaxerxes_III",
+      "tags": [
+        "Persian",
+        "Assassination",
+        "Conspiracy",
+        "Death",
+        "Achaemenid",
+        "Regicide"
       ],
       "type": "political"
     },
@@ -1393,57 +1454,62 @@
     },
     {
       "date": "01.01.0336",
-      "description": "Artaxerxes III poisoned by eunuch Bagoas; Arses becomes puppet emperor, but Bagoas holds real power in court intrigue",
-      "description_ru": "Артаксеркс III отравлен евнухом Багоем; Арсес становится марионеточным императором, но Багой держит реальную власть в придворных интригах",
-      "era": "BC",
-      "latitude": 32.6546,
-      "longitude": 51.6680,
-      "name": "Assassination of Artaxerxes III",
-      "name_ru": "Убийство Артаксеркса III",
-      "source": "https://en.wikipedia.org/wiki/Artaxerxes_III",
-      "tags": [
-        "Persian",
-        "Assassination",
-        "Conspiracy",
-        "Poison"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0336",
       "description": "Philip II of Macedon assassinated; Alexander III (the Great) becomes king at age 20 and inherits father's plan to invade Persian Empire",
       "description_ru": "Филипп II Македонский убит; Александр III (Великий) становится царем в возрасте 20 лет и наследует план отца вторгнуться в Персидскую империю",
       "era": "BC",
       "latitude": 40.5125,
       "longitude": 22.9408,
       "name": "Alexander Becomes King",
-      "name_ru": "Александр становится царем",
+      "name_ru": "Александр - царь Македонии",
       "source": "https://en.wikipedia.org/wiki/Alexander_the_Great",
       "tags": [
         "Greek",
         "Macedonian",
         "Dynasty",
-        "Assassination"
+        "Assassination",
+        "Regicide"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0336",
       "description": "Bagoas poisons Emperor Arses and most of royal family; installs distant relative Darius III as emperor, last ruler of Achaemenid Empire",
-      "description_ru": "Багой отравляет императора Арсеса и большую часть царской семьи; устанавливает дальнего родственника Дария III императором, последнего правителя династии Ахеменидов",
+      "description_ru": "Багой отравляет императора Арсеса и большую часть царской семьи; приводит к власти дальнего родственника Дария III, последнего правителя династии Ахеменидов",
       "era": "BC",
       "latitude": 32.6546,
-      "longitude": 51.6680,
+      "longitude": 51.668,
       "name": "Darius III Becomes Emperor",
-      "name_ru": "Дарий III становится императором",
+      "name_ru": "Дарий III - император Персии",
       "source": "https://en.wikipedia.org/wiki/Darius_III",
       "tags": [
         "Persian",
         "Dynasty",
-        "Succession",
-        "Poison"
+        "Assassination",
+        "King",
+        "Achaemenid",
+        "Regicide"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.05.0334",
+      "description": "Alexander defeats Persian satrapal army at Battle of Granicus River, opening Asia Minor to Macedonian conquest and revealing Persian tactical weakness",
+      "description_ru": "Александр побеждает персидскую армию в битве при реке Граник, открывая Малую Азию для македонского завоевания",
+      "era": "BC",
+      "latitude": 40.0667,
+      "longitude": 27.0833,
+      "name": "Battle of Granicus",
+      "name_ru": "Битва при Гранике",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_the_Granicus",
+      "tags": [
+        "Persian",
+        "Greek",
+        "Macedonian",
+        "Battle",
+        "Alexander the Great",
+        "Achaemenid"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0334",
@@ -1459,50 +1525,14 @@
         "Persian",
         "Greek",
         "Macedonian",
-        "Invasion",
-        "War"
+        "Alexander the Great",
+        "Invasions",
+        "Achaemenid"
       ],
       "type": "military"
     },
     {
-      "date": "01.05.0334",
-      "description": "Alexander defeats Persian satrapal army at Battle of Granicus River, opening Asia Minor to Macedonian conquest and revealing Persian tactical weakness",
-      "description_ru": "Александр побеждает персидскую сатрапальную армию в битве при реке Граник, открывая Малую Азию для македонского завоевания и раскрывая персидскую тактическую слабость",
-      "era": "BC",
-      "latitude": 40.0667,
-      "longitude": 27.0833,
-      "name": "Battle of Granicus",
-      "name_ru": "Битва при Гранике",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_the_Granicus",
-      "tags": [
-        "Persian",
-        "Greek",
-        "Macedonian",
-        "Battle",
-        "Defeat"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0333",
-      "description": "Alexander cuts Gordian Knot at Gordium according to legend, symbolically claiming destiny to rule Asia as prophesied",
-      "description_ru": "Александр разрубает Гордиев узел в Гордионе согласно легенде, символически заявляя о судьбе править Азией, как предсказано",
-      "era": "BC",
-      "latitude": 39.6511,
-      "longitude": 31.9958,
-      "name": "Gordian Knot",
-      "name_ru": "Гордиев узел",
-      "source": "https://en.wikipedia.org/wiki/Gordian_Knot",
-      "tags": [
-        "Greek",
-        "Macedonian",
-        "Legend",
-        "Culture"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.11.0333",
+      "date": "05.11.0333",
       "description": "Alexander crushes Darius III's main army at Battle of Issus; Darius flees, abandoning his family and treasury to Macedonians in humiliating defeat",
       "description_ru": "Александр разбивает главную армию Дария III в битве при Иссе; Дарий бежит, бросая свою семью и казну македонцам в унизительном поражении",
       "era": "BC",
@@ -1516,28 +1546,29 @@
         "Greek",
         "Macedonian",
         "Battle",
-        "Defeat"
+        "Alexander the Great",
+        "Achaemenid"
       ],
       "type": "military"
     },
     {
-      "date": "01.01.0332",
-      "description": "Alexander besieges and captures Tyre after seven-month siege, eliminating Persian naval base and opening path to Egypt",
-      "description_ru": "Александр осаждает и захватывает Тир после семимесячной осады, уничтожая персидскую военно-морскую базу и открывая путь в Египет",
+      "date": "01.01.0333",
+      "description": "Alexander cuts Gordian Knot at Gordium according to legend, symbolically claiming destiny to rule Asia as prophesied",
+      "description_ru": "Александр разрубает Гордиев узел в Гордионе согласно легенде, символически заявляя о судьбе править Азией, как предсказано",
       "era": "BC",
-      "latitude": 33.271,
-      "longitude": 35.204,
-      "name": "Siege of Tyre",
-      "name_ru": "Осада Тира",
-      "source": "https://en.wikipedia.org/wiki/Siege_of_Tyre_(332_BC)",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Gordian Knot",
+      "name_ru": "Александр разрубает Гордиев узел",
+      "source": "https://en.wikipedia.org/wiki/Gordian_Knot",
       "tags": [
         "Greek",
         "Macedonian",
-        "Persian",
-        "Phoenician",
-        "Siege"
+        "Legend",
+        "Culture",
+        "Alexander the Great"
       ],
-      "type": "military"
+      "type": "cultural"
     },
     {
       "date": "01.11.0332",
@@ -1547,33 +1578,16 @@
       "latitude": 30.0444,
       "longitude": 31.2357,
       "name": "Alexander Conquers Egypt",
-      "name_ru": "Александр завоевывает Египет",
+      "name_ru": "Александр подчиняет Египет",
       "source": "https://en.wikipedia.org/wiki/Alexander_the_Great",
       "tags": [
         "Greek",
         "Macedonian",
-        "Egyptian",
         "Persian",
-        "Conquest"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.10.0331",
-      "description": "Alexander decisively defeats Darius III at Battle of Gaugamela; Darius flees again, effectively ending organized Persian resistance",
-      "description_ru": "Александр решительно побеждает Дария III в битве при Гавгамелах; Дарий снова бежит, фактически завершая организованное персидское сопротивление",
-      "era": "BC",
-      "latitude": 36.3611,
-      "longitude": 43.25,
-      "name": "Battle of Gaugamela",
-      "name_ru": "Битва при Гавгамелах",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Gaugamela",
-      "tags": [
-        "Persian",
-        "Greek",
-        "Macedonian",
-        "Battle",
-        "Defeat"
+        "Conquest",
+        "Egypt",
+        "Alexander the Great",
+        "Achaemenid"
       ],
       "type": "military"
     },
@@ -1592,65 +1606,29 @@
         "Macedonian",
         "Babylonian",
         "Persian",
-        "Conquest"
+        "Conquest",
+        "Alexander the Great",
+        "Achaemenid"
       ],
       "type": "political"
     },
     {
-      "date": "01.01.0330",
-      "description": "Alexander captures Susa without resistance, seizing massive Persian treasury containing 50,000 talents of gold and silver",
-      "description_ru": "Александр захватывает Сузы без сопротивления, овладевая массивной персидской казной, содержащей 50 000 талантов золота и серебра",
+      "date": "01.10.0331",
+      "description": "Alexander decisively defeats Darius III at Battle of Gaugamela; Darius flees again, effectively ending organized Persian resistance",
+      "description_ru": "Александр решительно побеждает Дария III в битве при Гавгамелах; Дарий снова бежит. Организованное персидское сопротивление на этом почти исчерпано",
       "era": "BC",
-      "latitude": 32.1897,
-      "longitude": 48.2583,
-      "name": "Capture of Susa",
-      "name_ru": "Захват Суз",
-      "source": "https://en.wikipedia.org/wiki/Alexander_the_Great",
+      "latitude": 36.3611,
+      "longitude": 43.25,
+      "name": "Battle of Gaugamela",
+      "name_ru": "Битва при Гавгамелах",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Gaugamela",
       "tags": [
+        "Persian",
         "Greek",
         "Macedonian",
-        "Persian",
-        "Conquest",
-        "Gold",
-        "Treasure"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.03.0330",
-      "description": "Alexander captures Persepolis; allows troops to plunder ceremonial capital for several days, seizing immense wealth accumulated over 200 years",
-      "description_ru": "Александр захватывает Персеполь; позволяет войскам грабить церемониальную столицу несколько дней, овладевая огромным богатством, накопленным за 200 лет",
-      "era": "BC",
-      "latitude": 29.9342,
-      "longitude": 52.8906,
-      "name": "Capture of Persepolis",
-      "name_ru": "Захват Персеполя",
-      "source": "https://en.wikipedia.org/wiki/Persepolis",
-      "tags": [
-        "Greek",
-        "Macedonian",
-        "Persian",
-        "Conquest",
-        "Plunder"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.05.0330",
-      "description": "Alexander burns Persepolis palace complex, destroying architectural masterpiece and symbol of Persian imperial power; act marks symbolic end of Achaemenid Empire",
-      "description_ru": "Александр сжигает дворцовый комплекс Персеполя, уничтожая архитектурный шедевр и символ персидской имперской мощи; акт знаменует символический конец династии Ахеменидов",
-      "era": "BC",
-      "latitude": 29.9342,
-      "longitude": 52.8906,
-      "name": "Burning of Persepolis",
-      "name_ru": "Сожжение Персеполя",
-      "source": "https://en.wikipedia.org/wiki/Persepolis",
-      "tags": [
-        "Greek",
-        "Macedonian",
-        "Persian",
-        "Destruction",
-        "Fall"
+        "Battle",
+        "Alexander the Great",
+        "Achaemenid"
       ],
       "type": "military"
     },
@@ -1668,9 +1646,50 @@
         "Persian",
         "Death",
         "Assassination",
-        "Fall"
+        "Dynasty",
+        "Achaemenid",
+        "Regicide"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.05.0330",
+      "description": "Alexander burns Persepolis palace complex, destroying architectural masterpiece and symbol of Persian imperial power; act marks symbolic end of Achaemenid Empire",
+      "description_ru": "Александр сжигает дворцовый комплекс Персеполя, уничтожая архитектурный шедевр и символ персидской имперской мощи; акт знаменует символический конец династии Ахеменидов",
+      "era": "BC",
+      "latitude": 29.9342,
+      "longitude": 52.8906,
+      "name": "Burning of Persepolis",
+      "name_ru": "Александр сжигает Персеполь",
+      "source": "https://en.wikipedia.org/wiki/Persepolis",
+      "tags": [
+        "Greek",
+        "Macedonian",
+        "Persian",
+        "Destruction",
+        "Alexander the Great"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.03.0330",
+      "description": "Alexander captures Persepolis; allows troops to plunder ceremonial capital for several days, seizing immense wealth accumulated over 200 years",
+      "description_ru": "Александр захватывает Персеполь; позволяет войскам грабить церемониальную столицу несколько дней, овладевая огромным богатством, накопленным за 200 лет",
+      "era": "BC",
+      "latitude": 29.9342,
+      "longitude": 52.8906,
+      "name": "Capture of Persepolis",
+      "name_ru": "Александр захватывает Персеполь",
+      "source": "https://en.wikipedia.org/wiki/Persepolis",
+      "tags": [
+        "Greek",
+        "Macedonian",
+        "Persian",
+        "Conquest",
+        "Plundering",
+        "Alexander the Great"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0330",
@@ -1678,7 +1697,7 @@
       "description_ru": "Падение Ахеменидской Персидской империи после 220 лет; Александр наследует огромные территории от Египта до Центральной Азии, трансформируя мировой политический порядок",
       "era": "BC",
       "latitude": 32.6546,
-      "longitude": 51.6680,
+      "longitude": 51.668,
       "name": "Fall of Achaemenid Empire",
       "name_ru": "Падение династии Ахеменидов",
       "source": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
@@ -1687,9 +1706,32 @@
         "Fall",
         "Empire",
         "Greek",
-        "Macedonian"
+        "Macedonian",
+        "End",
+        "Achaemenid",
+        "Alexander the Great"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0330",
+      "description": "Alexander captures Susa without resistance, seizing massive Persian treasury containing 50,000 talents of gold and silver",
+      "description_ru": "Александр захватывает Сузы без сопротивления, овладевая массивной персидской казной, содержащей 50 000 талантов золота и серебра",
+      "era": "BC",
+      "latitude": 32.1897,
+      "longitude": 48.2583,
+      "name": "Capture of Susa",
+      "name_ru": "Александр берет Сузы",
+      "source": "https://en.wikipedia.org/wiki/Alexander_the_Great",
+      "tags": [
+        "Treasure",
+        "Greek",
+        "Macedonian",
+        "Persian",
+        "Conquest"
+      ],
+      "type": "military"
     }
-  ]
+  ],
+  "filename": "achaemenid_empire.json"
 }

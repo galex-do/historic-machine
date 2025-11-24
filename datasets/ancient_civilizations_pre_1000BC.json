@@ -109,6 +109,39 @@
     },
     {
       "date": "01.01.3500",
+      "description": "Valdivia culture emerges in coastal Ecuador as one of the earliest pottery-using societies in the Americas with sophisticated maritime technology",
+      "description_ru": "Культура Вальдивия возникает на побережье Эквадора как одно из древнейших обществ Америки, использующих керамику и обладающих развитыми морскими технологиями",
+      "era": "BC",
+      "latitude": -2.227,
+      "longitude": -80.956,
+      "name": "Valdivia Culture Emergence",
+      "name_ru": "Возникновение культуры Вальдивия",
+      "source": "https://www.britannica.com/topic/Valdivia-culture",
+      "tags": [
+        "Valdivia",
+        "Maritime",
+        "Culture"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.3500",
+      "description": "Korean Jeulmun culture develops small-scale agriculture with millet and rice cultivation while maintaining hunter-gatherer practices",
+      "description_ru": "Корейская культура Чыльмун развивает мелкомасштабное земледелие с выращиванием проса и риса, сохраняя практики охотников-собирателей",
+      "era": "BC",
+      "latitude": 37.5665,
+      "longitude": 126.978,
+      "name": "Early Agriculture in Korea",
+      "name_ru": "Раннее земледелие в Корее",
+      "tags": [
+        "Korea",
+        "Agriculture",
+        "Neolithic"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.3500",
       "description": "Caral-Supe civilization emerges in Peru as the oldest civilization in the Americas, featuring monumental stone platform mounds and sunken circular courts",
       "description_ru": "Цивилизация Караль-Супе возникает в Перу как древнейшая цивилизация в Америке с монументальными каменными платформами и углубленными круглыми дворами",
       "era": "BC",
@@ -179,39 +212,6 @@
       "type": "cultural"
     },
     {
-      "date": "01.01.3500",
-      "description": "Valdivia culture emerges in coastal Ecuador as one of the earliest pottery-using societies in the Americas with sophisticated maritime technology",
-      "description_ru": "Культура Вальдивия возникает на побережье Эквадора как одно из древнейших обществ Америки, использующих керамику и обладающих развитыми морскими технологиями",
-      "era": "BC",
-      "latitude": -2.227,
-      "longitude": -80.956,
-      "name": "Valdivia Culture Emergence",
-      "name_ru": "Возникновение культуры Вальдивия",
-      "source": "https://www.britannica.com/topic/Valdivia-culture",
-      "tags": [
-        "Valdivia",
-        "Maritime",
-        "Culture"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.3500",
-      "description": "Korean Jeulmun culture develops small-scale agriculture with millet and rice cultivation while maintaining hunter-gatherer practices",
-      "description_ru": "Корейская культура Чыльмун развивает мелкомасштабное земледелие с выращиванием проса и риса, сохраняя практики охотников-собирателей",
-      "era": "BC",
-      "latitude": 37.5665,
-      "longitude": 126.978,
-      "name": "Early Agriculture in Korea",
-      "name_ru": "Раннее земледелие в Корее",
-      "tags": [
-        "Korea",
-        "Agriculture",
-        "Neolithic"
-      ],
-      "type": "historic"
-    },
-    {
       "date": "01.01.3300",
       "description": "Early Harappan period begins with the first urban settlements in the Indus Valley, marking the start of one of the world's earliest civilizations",
       "description_ru": "Начинается раннехараппский период с первых городских поселений в долине Инда, знаменуя начало одной из древнейших цивилизаций мира",
@@ -245,6 +245,23 @@
         "Writing"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.3200",
+      "description": "Sumerians invent the wheel for transportation, revolutionizing trade and warfare",
+      "description_ru": "Шумеры изобретают колесо для транспорта, революционизируя торговлю и военное дело",
+      "era": "BC",
+      "latitude": 32.776,
+      "longitude": 44.949,
+      "name": "Invention of the Wheel",
+      "name_ru": "Изобретение колеса",
+      "source": "https://www.smithsonianmag.com/science-nature/a-salute-to-the-wheel-31805121/",
+      "tags": [
+        "Sumerian",
+        "Technology",
+        "Innovation"
+      ],
+      "type": "scientific"
     },
     {
       "date": "01.01.3200",
@@ -282,23 +299,6 @@
         "Burial"
       ],
       "type": "cultural"
-    },
-    {
-      "date": "01.01.3200",
-      "description": "Sumerians invent the wheel for transportation, revolutionizing trade and warfare",
-      "description_ru": "Шумеры изобретают колесо для транспорта, революционизируя торговлю и военное дело",
-      "era": "BC",
-      "latitude": 32.776,
-      "longitude": 44.949,
-      "name": "Invention of the Wheel",
-      "name_ru": "Изобретение колеса",
-      "source": "https://www.smithsonianmag.com/science-nature/a-salute-to-the-wheel-31805121/",
-      "tags": [
-        "Sumerian",
-        "Technology",
-        "Innovation"
-      ],
-      "type": "scientific"
     },
     {
       "date": "15.01.3100",
@@ -369,21 +369,20 @@
     },
     {
       "date": "01.01.3000",
-      "description": "Norte Chico develops as a complex pre-ceramic civilization in Peru, unique for being dependent on fishing rather than agriculture",
-      "description_ru": "Норте-Чико - докерамическая цивилизация в Перу, знакомая с архитектурой, ирригацией, базировавшаяся больше на рыболовстве, чем сельском хозяйстве.",
+      "description": "Sumerians develop the sexagesimal (base-60) number system, still used today for time and angles",
+      "description_ru": "Шумеры разрабатывают шестидесятеричную (с основанием 60) систему счисления, используемую до сих пор для времени и углов",
       "era": "BC",
-      "latitude": -10.894,
-      "longitude": -77.52,
-      "name": "Norte Chico Complex Society",
-      "name_ru": "Перуанская культура Норте-Чико",
+      "latitude": 31.324,
+      "longitude": 45.636,
+      "name": "Base-60 Number System",
+      "name_ru": "Система счисления с основанием 60",
+      "source": "https://www.britannica.com/science/sexagesimal",
       "tags": [
-        "Peruan",
-        "Civilization",
-        "Culture",
-        "Pre-ceramic",
-        "Fishing"
+        "Sumerian",
+        "Mathematics",
+        "Innovation"
       ],
-      "type": "cultural"
+      "type": "scientific"
     },
     {
       "date": "01.01.3000",
@@ -420,39 +419,6 @@
         "Culture"
       ],
       "type": "cultural"
-    },
-    {
-      "date": "01.01.3000",
-      "description": "Second pharaoh of Egypt's 1st Dynasty, buried at Abydos with elaborate tomb complex",
-      "description_ru": "Второй фараон первой династии Египта, похороненный в Абидосе с разработанным погребальным комплексом",
-      "era": "BC",
-      "latitude": 26.184,
-      "longitude": 31.922,
-      "name": "Reign of King Djer",
-      "name_ru": "Царство Джера в Египте",
-      "tags": [
-        "Egypt",
-        "Dynasty",
-        "Early Dynastic"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.3000",
-      "description": "Sumerians develop the sexagesimal (base-60) number system, still used today for time and angles",
-      "description_ru": "Шумеры разрабатывают шестидесятеричную (с основанием 60) систему счисления, используемую до сих пор для времени и углов",
-      "era": "BC",
-      "latitude": 31.324,
-      "longitude": 45.636,
-      "name": "Base-60 Number System",
-      "name_ru": "Система счисления с основанием 60",
-      "source": "https://www.britannica.com/science/sexagesimal",
-      "tags": [
-        "Sumerian",
-        "Mathematics",
-        "Innovation"
-      ],
-      "type": "scientific"
     },
     {
       "date": "01.01.3000",
@@ -504,17 +470,36 @@
       "type": "historic"
     },
     {
-      "date": "01.01.2900",
-      "description": "Beginning of the Early Dynastic Period in Mesopotamia with competing city-states",
-      "description_ru": "Начало раннединастического периода в Месопотамии с соревнующимися городами-государствами",
+      "date": "01.01.3000",
+      "description": "Norte Chico develops as a complex pre-ceramic civilization in Peru, unique for being dependent on fishing rather than agriculture",
+      "description_ru": "Норте-Чико - докерамическая цивилизация в Перу, знакомая с архитектурой, ирригацией, базировавшаяся больше на рыболовстве, чем сельском хозяйстве.",
       "era": "BC",
-      "latitude": 32.776,
-      "longitude": 44.949,
-      "name": "Early Dynastic Period Begins",
-      "name_ru": "Раннединастический период Месопотамии",
+      "latitude": -10.894,
+      "longitude": -77.52,
+      "name": "Norte Chico Complex Society",
+      "name_ru": "Перуанская культура Норте-Чико",
       "tags": [
-        "Mesopotamia",
-        "City-State"
+        "Peruan",
+        "Civilization",
+        "Culture",
+        "Pre-ceramic",
+        "Fishing"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.3000",
+      "description": "Second pharaoh of Egypt's 1st Dynasty, buried at Abydos with elaborate tomb complex",
+      "description_ru": "Второй фараон первой династии Египта, похороненный в Абидосе с разработанным погребальным комплексом",
+      "era": "BC",
+      "latitude": 26.184,
+      "longitude": 31.922,
+      "name": "Reign of King Djer",
+      "name_ru": "Царство Джера в Египте",
+      "tags": [
+        "Egypt",
+        "Dynasty",
+        "Pharaoh"
       ],
       "type": "political"
     },
@@ -536,6 +521,21 @@
       "type": "cultural"
     },
     {
+      "date": "01.01.2900",
+      "description": "Beginning of the Early Dynastic Period in Mesopotamia with competing city-states",
+      "description_ru": "Начало раннединастического периода в Месопотамии с соревнующимися городами-государствами",
+      "era": "BC",
+      "latitude": 32.776,
+      "longitude": 44.949,
+      "name": "Early Dynastic Period Begins",
+      "name_ru": "Раннединастический период Месопотамии",
+      "tags": [
+        "Mesopotamia",
+        "City-State"
+      ],
+      "type": "political"
+    },
+    {
       "date": "01.01.2800",
       "description": "First pharaoh of Egypt's 2nd Dynasty, whose name means 'conciliation' suggesting unity of Upper and Lower Egypt",
       "description_ru": "Первый фараон второй династии Египта, чье имя означает 'примирение', подразумевая единство Верхнего и Нижнего Египта",
@@ -547,7 +547,7 @@
       "tags": [
         "Egypt",
         "Dynasty",
-        "Early Dynastic"
+        "Pharaoh"
       ],
       "type": "political"
     },
@@ -654,6 +654,23 @@
     },
     {
       "date": "01.01.2600",
+      "description": "Pharaoh Sneferu completes the Red Pyramid at Dahshur, the first successful straight-sided pyramid",
+      "description_ru": "Фараон Снофру завершает Красную пирамиду в Дахшуре, первую успешную пирамиду с прямыми сторонами",
+      "era": "BC",
+      "latitude": 29.808,
+      "longitude": 31.206,
+      "name": "Red Pyramid Construction",
+      "name_ru": "Строительство Красной пирамиды",
+      "tags": [
+        "Egypt",
+        "Architecture",
+        "Old Kingdom",
+        "Building"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.2600",
       "description": "Development of syllabic writing during the Fara Period, advancing from logographic script",
       "description_ru": "Развитие слогового письма в период Фара, развивающееся из логографического письма",
       "era": "BC",
@@ -667,22 +684,6 @@
         "Mesopotamia"
       ],
       "type": "cultural"
-    },
-    {
-      "date": "01.01.2600",
-      "description": "Indus Valley Civilization reaches its peak with over 1,000 urban centers including Harappa, Mohenjo-Daro, and Dholavira featuring advanced urban planning",
-      "description_ru": "Цивилизация долины Инда достигает своего пика с более чем 1000 городских центров, включая Хараппу, Мохенджо-Даро и Долавиру с развитым городским планированием",
-      "era": "BC",
-      "latitude": 30.631,
-      "longitude": 72.971,
-      "name": "Indus Valley Civilization Peak",
-      "name_ru": "Пик цивилизации долины Инда",
-      "tags": [
-        "Indus Valley",
-        "Urban",
-        "Civilization"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.2600",
@@ -703,6 +704,22 @@
     },
     {
       "date": "01.01.2600",
+      "description": "Indus Valley Civilization reaches its peak with over 1,000 urban centers including Harappa, Mohenjo-Daro, and Dholavira featuring advanced urban planning",
+      "description_ru": "Цивилизация долины Инда достигает своего пика с более чем 1000 городских центров, включая Хараппу, Мохенджо-Даро и Долавиру с развитым городским планированием",
+      "era": "BC",
+      "latitude": 30.631,
+      "longitude": 72.971,
+      "name": "Indus Valley Civilization Peak",
+      "name_ru": "Пик цивилизации долины Инда",
+      "tags": [
+        "Indus Valley",
+        "Urban",
+        "Civilization"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.2600",
       "description": "First historically verified Mesopotamian king, defeated Elam and built temple of Enlil in Nippur",
       "description_ru": "Эн-ме-барагеси из Киша, первый исторически подтвержденный месопотамский царь, победивший Элам и построивший храм Энлиля в Ниппуре",
       "era": "BC",
@@ -717,23 +734,6 @@
         "Elamites"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.2600",
-      "description": "Pharaoh Sneferu completes the Red Pyramid at Dahshur, the first successful straight-sided pyramid",
-      "description_ru": "Фараон Снофру завершает Красную пирамиду в Дахшуре, первую успешную пирамиду с прямыми сторонами",
-      "era": "BC",
-      "latitude": 29.808,
-      "longitude": 31.206,
-      "name": "Red Pyramid Construction",
-      "name_ru": "Строительство Красной пирамиды",
-      "tags": [
-        "Egypt",
-        "Architecture",
-        "Old Kingdom",
-        "Building"
-      ],
-      "type": "cultural"
     },
     {
       "date": "01.01.2560",
@@ -808,6 +808,23 @@
     },
     {
       "date": "01.01.2500",
+      "description": "The dynasty of Lagash is established in Sumerian city-state, becoming a major regional power",
+      "description_ru": "Династия Лагаша основывается в шумерском городе-государстве, становясь крупной региональной силой",
+      "era": "BC",
+      "latitude": 31.253,
+      "longitude": 46.18,
+      "name": "Dynasty of Lagash Founded",
+      "name_ru": "Основание династии Лагаша",
+      "tags": [
+        "Mesopotamia",
+        "Dynasty",
+        "City-State",
+        "Sumerian"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.2500",
       "description": "Late Jōmon period in Japan sees development of deep-sea fishing technology and shell mounds (kaizuka) along coastal settlements",
       "description_ru": "В поздний период Дзёмон в Японии развивается глубоководная рыбалка. Этим периодом датируются ракушечные кучи (kaizuka shell mounds) вдоль прибрежных поселений, использовавшиеся как помойки.",
       "era": "BC",
@@ -844,23 +861,6 @@
     },
     {
       "date": "01.01.2500",
-      "description": "The dynasty of Lagash is established in Sumerian city-state, becoming a major regional power",
-      "description_ru": "Династия Лагаша основывается в шумерском городе-государстве, становясь крупной региональной силой",
-      "era": "BC",
-      "latitude": 31.253,
-      "longitude": 46.18,
-      "name": "Dynasty of Lagash Founded",
-      "name_ru": "Основание династии Лагаша",
-      "tags": [
-        "Mesopotamia",
-        "Dynasty",
-        "City-State",
-        "Sumerian"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.2500",
       "description": "Early metallurgy develops in West Africa with copper smelting near Agadez, Niger, demonstrating indigenous technological innovation",
       "description_ru": "Ранняя металлургия развивается в Западной Африке с плавкой меди близ Агадеза в Нигере, демонстрируя местные технологические инновации",
       "era": "BC",
@@ -890,6 +890,41 @@
         "Mesopotamia"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.2400",
+      "description": "Construction of the famous Great Bath complex at Mohenjo-daro, demonstrating advanced hydraulic engineering and possible ritual purposes",
+      "description_ru": "Строительство ритуального Большого бассейна в Мохенджо-Даро демонстрирует прогресс инженерии и гидротехники в Индии",
+      "era": "BC",
+      "latitude": 27.324,
+      "longitude": 68.138,
+      "name": "Great Bath of Mohenjo-daro Built",
+      "name_ru": "Строительство Большого бассейна Мохенджо-Даро",
+      "source": "https://www.worldhistory.org/Mohenjo-daro/",
+      "tags": [
+        "Engineering",
+        "Architecture",
+        "Building"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.2400",
+      "description": "Kingdom of Kerma established in Upper Nubia, developing into a powerful state controlling Nile trade routes and constructing massive mud-brick temples",
+      "description_ru": "Царство Керма в Верхней Нубии развивается в могущественное государство, контролирующее торговые пути по Нилу и строящее массивные храмы из сырцового кирпича",
+      "era": "BC",
+      "latitude": 19.612,
+      "longitude": 30.417,
+      "name": "Kingdom of Kerma Founded",
+      "name_ru": "Основание царства Керма в Нубии",
+      "source": "https://www.metmuseum.org/toah/hd/kerm/hd_kerm.htm",
+      "tags": [
+        "Kerma",
+        "Nubia",
+        "Kingdom",
+        "Foundation"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.2400",
@@ -937,41 +972,6 @@
         "Script"
       ],
       "type": "cultural"
-    },
-    {
-      "date": "01.01.2400",
-      "description": "Construction of the famous Great Bath complex at Mohenjo-daro, demonstrating advanced hydraulic engineering and possible ritual purposes",
-      "description_ru": "Строительство ритуального Большого бассейна в Мохенджо-Даро демонстрирует прогресс инженерии и гидротехники в Индии",
-      "era": "BC",
-      "latitude": 27.324,
-      "longitude": 68.138,
-      "name": "Great Bath of Mohenjo-daro Built",
-      "name_ru": "Строительство Большого бассейна Мохенджо-Даро",
-      "source": "https://www.worldhistory.org/Mohenjo-daro/",
-      "tags": [
-        "Engineering",
-        "Architecture",
-        "Building"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.2400",
-      "description": "Kingdom of Kerma established in Upper Nubia, developing into a powerful state controlling Nile trade routes and constructing massive mud-brick temples",
-      "description_ru": "Царство Керма в Верхней Нубии развивается в могущественное государство, контролирующее торговые пути по Нилу и строящее массивные храмы из сырцового кирпича",
-      "era": "BC",
-      "latitude": 19.612,
-      "longitude": 30.417,
-      "name": "Kingdom of Kerma Founded",
-      "name_ru": "Основание царства Керма в Нубии",
-      "source": "https://www.metmuseum.org/toah/hd/kerm/hd_kerm.htm",
-      "tags": [
-        "Kerma",
-        "Nubia",
-        "Kingdom",
-        "Foundation"
-      ],
-      "type": "political"
     },
     {
       "date": "01.01.2370",
@@ -1302,18 +1302,17 @@
     },
     {
       "date": "01.01.2100",
-      "description": "Ur-Nammu creates one of the earliest known law codes, predating Hammurabi's code",
-      "description_ru": "Ур-Намму создает один из древнейших известных сводов законов, предшествующий кодексу Хаммурапи",
+      "description": "Yu the Great establishes the legendary Xia Dynasty, China's first dynasty according to traditional history",
+      "description_ru": "Великий Юй основывает легендарную династию Ся, первую династию Китая согласно традиционной истории",
       "era": "BC",
-      "latitude": 30.962,
-      "longitude": 46.104,
-      "name": "Code of Ur-Nammu",
-      "name_ru": "Кодекс Ур-Намму",
+      "latitude": 34.746,
+      "longitude": 113.625,
+      "name": "Legendary Xia Dynasty Founded",
+      "name_ru": "Основание легендарной династии Ся",
       "tags": [
-        "Law",
-        "Code",
-        "Justice",
-        "Sumerian"
+        "Xia Dynasty",
+        "Yu the Great",
+        "Dynasty"
       ],
       "type": "political"
     },
@@ -1335,17 +1334,18 @@
     },
     {
       "date": "01.01.2100",
-      "description": "Yu the Great establishes the legendary Xia Dynasty, China's first dynasty according to traditional history",
-      "description_ru": "Великий Юй основывает легендарную династию Ся, первую династию Китая согласно традиционной истории",
+      "description": "Ur-Nammu creates one of the earliest known law codes, predating Hammurabi's code",
+      "description_ru": "Ур-Намму создает один из древнейших известных сводов законов, предшествующий кодексу Хаммурапи",
       "era": "BC",
-      "latitude": 34.746,
-      "longitude": 113.625,
-      "name": "Legendary Xia Dynasty Founded",
-      "name_ru": "Основание легендарной династии Ся",
+      "latitude": 30.962,
+      "longitude": 46.104,
+      "name": "Code of Ur-Nammu",
+      "name_ru": "Кодекс Ур-Намму",
       "tags": [
-        "Xia Dynasty",
-        "Yu the Great",
-        "Dynasty"
+        "Law",
+        "Code",
+        "Justice",
+        "Sumerian"
       ],
       "type": "political"
     },
@@ -1376,8 +1376,8 @@
       "name_ru": "Воссоединение Египта и Среднее царство",
       "tags": [
         "Egypt",
-        "Middle Kingdom",
-        "Unification"
+        "Unification",
+        "Rise"
       ],
       "type": "political"
     },
@@ -1393,7 +1393,6 @@
       "tags": [
         "Egypt",
         "Capital",
-        "Middle Kingdom",
         "City"
       ],
       "type": "political"
@@ -1461,7 +1460,7 @@
       "tags": [
         "Religious",
         "Migration",
-        "Biblical"
+        "Legend"
       ],
       "type": "cultural"
     },
@@ -1530,7 +1529,7 @@
         "Egypt",
         "Dynasty",
         "Capital",
-        "Middle Kingdom"
+        "Pharaoh"
       ],
       "type": "political"
     },
@@ -1562,8 +1561,7 @@
       "name_ru": "Расцвет египетской литературы",
       "tags": [
         "Egypt",
-        "Literature",
-        "Middle Kingdom"
+        "Literature"
       ],
       "type": "cultural"
     },
@@ -1579,7 +1577,7 @@
       "tags": [
         "Indus Valley",
         "Decline",
-        "Climate"
+        "Climate Crisis"
       ],
       "type": "historic"
     },
@@ -1673,7 +1671,6 @@
       "name_ru": "Хаммурапи - царь Вавилона",
       "tags": [
         "Babylonian",
-        "Hammurabi",
         "King"
       ],
       "type": "historic"
@@ -1692,8 +1689,7 @@
         "Law",
         "Code",
         "Justice",
-        "Babylonian",
-        "Hammurabi"
+        "Babylonian"
       ],
       "type": "political"
     },
@@ -1810,8 +1806,7 @@
       "name_ru": "Касситы завоевывают Вавилон",
       "tags": [
         "Babylonian",
-        "Conquest",
-        "Military"
+        "Conquest"
       ],
       "type": "military"
     },
@@ -1858,9 +1853,9 @@
       "name_ru": "Изгнание гиксосов из Египта",
       "tags": [
         "Egypt",
-        "Military",
         "New Kingdom",
-        "Hyksos"
+        "Hyksos",
+        "Rise"
       ],
       "type": "military"
     },
@@ -2046,7 +2041,6 @@
       "name_ru": "Тутмос III становится единоличным правителем",
       "tags": [
         "Egypt",
-        "Military",
         "New Kingdom",
         "Pharaoh",
         "Thutmose III"
@@ -2218,11 +2212,10 @@
       "name_ru": "9-й поход Тутмоса III на Нухашше",
       "tags": [
         "Egypt",
-        "Military",
         "New Kingdom",
         "Thutmose III",
-        "Campaign",
-        "Syria"
+        "Syria",
+        "Expedition"
       ],
       "type": "military"
     },
@@ -2574,9 +2567,9 @@
       "name": "Seti I's Military Campaigns",
       "name_ru": "Военные походы Сети I",
       "tags": [
-        "Military",
         "Egypt",
-        "Conquest"
+        "Conquest",
+        "Syria"
       ],
       "type": "military"
     },
@@ -2829,7 +2822,6 @@
       "name_ru": "Смерть Рамсеса III",
       "tags": [
         "Death",
-        "Warrior",
         "End",
         "Pharaoh"
       ],
@@ -2926,7 +2918,8 @@
       "tags": [
         "Kingdom",
         "Israel",
-        "Unification"
+        "Unification",
+        "Judah"
       ],
       "type": "political"
     },
@@ -2993,8 +2986,8 @@
       "tags": [
         "Japan",
         "Jōmon",
-        "Climate",
-        "Trade"
+        "Trade",
+        "Climate Crisis"
       ],
       "type": "historic"
     },

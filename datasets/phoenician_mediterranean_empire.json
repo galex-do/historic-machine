@@ -61,23 +61,6 @@
     },
     {
       "date": "01.01.1200",
-      "description": "After Bronze Age collapse destroys neighboring civilizations, Phoenicians survive intact and begin unprecedented maritime expansion across Mediterranean",
-      "description_ru": "После катастрофы бронзового века, разрушившей соседние цивилизации, финикийцы остаются невредимыми и начинают беспрецедентную морскую экспансию в Средиземноморье",
-      "era": "BC",
-      "latitude": 33.894,
-      "longitude": 35.501,
-      "name": "Phoenician Renaissance Begins",
-      "name_ru": "Начало финикийского Ренессанса",
-      "source": "https://www.worldhistory.org/phoenicia/",
-      "tags": [
-        "Maritime",
-        "Expansion",
-        "Phoenician"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1200",
       "description": "Phoenicians develop first true alphabet with 22 consonants, revolutionizing writing and becoming foundation for Greek, Latin and modern alphabets",
       "description_ru": "Финикийцы создают первый настоящий алфавит из 22 согласных, революционизируя письменность и став основой для греческого, латинского и современных алфавитов",
       "era": "BC",
@@ -95,21 +78,19 @@
       "type": "cultural"
     },
     {
-      "date": "01.01.1100",
-      "description": "Phoenicians establish colony of Kition on Cyprus to secure access to rich copper deposits, founding major Mediterranean mining center",
-      "description_ru": "Финикийцы основывают колонию Китион на Кипре для доступа к богатым медным месторождениям",
+      "date": "01.01.1200",
+      "description": "After Bronze Age collapse destroys neighboring civilizations, Phoenicians survive intact and begin unprecedented maritime expansion across Mediterranean",
+      "description_ru": "После катастрофы бронзового века, разрушившей соседние цивилизации, финикийцы остаются невредимыми и начинают беспрецедентную морскую экспансию в Средиземноморье",
       "era": "BC",
-      "latitude": 34.918,
-      "longitude": 33.636,
-      "name": "Phoenician Settlement of Cyprus",
-      "name_ru": "Финикийцы колонизируют Кипр",
-      "source": "https://phoenician.org/phoenician_colonies/",
+      "latitude": 33.894,
+      "longitude": 35.501,
+      "name": "Phoenician Renaissance Begins",
+      "name_ru": "Начало финикийского Ренессанса",
+      "source": "https://www.worldhistory.org/phoenicia/",
       "tags": [
-        "Colonization",
-        "Cyprus",
-        "Copper",
-        "Phoenician",
-        "Sidon"
+        "Maritime",
+        "Expansion",
+        "Phoenician"
       ],
       "type": "historic"
     },
@@ -148,6 +129,25 @@
         "Maritime",
         "City",
         "Phoenician"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1100",
+      "description": "Phoenicians establish colony of Kition on Cyprus to secure access to rich copper deposits, founding major Mediterranean mining center",
+      "description_ru": "Финикийцы основывают колонию Китион на Кипре для доступа к богатым медным месторождениям",
+      "era": "BC",
+      "latitude": 34.918,
+      "longitude": 33.636,
+      "name": "Phoenician Settlement of Cyprus",
+      "name_ru": "Финикийцы колонизируют Кипр",
+      "source": "https://phoenician.org/phoenician_colonies/",
+      "tags": [
+        "Colonization",
+        "Cyprus",
+        "Copper",
+        "Phoenician",
+        "Sidon"
       ],
       "type": "historic"
     },
@@ -203,9 +203,10 @@
         "Tyre",
         "Phoenician",
         "Israel",
-        "Temple of Solomon",
         "Temple",
-        "Judah"
+        "Judah",
+        "Jerusalem",
+        "Ancient Wonders"
       ],
       "type": "cultural"
     },
@@ -316,8 +317,8 @@
         "Colonization",
         "Maritime",
         "Phoenician",
-        "Fortress",
-        "Sicily"
+        "Sicily",
+        "Fortification"
       ],
       "type": "historic"
     },
@@ -341,25 +342,6 @@
     },
     {
       "date": "01.01.0701",
-      "description": "Phoenicians perfect bireme warship design with two banks of oars, revolutionizing naval warfare and establishing dominance in Mediterranean sea battles",
-      "description_ru": "Финикийцы совершенствуют конструкцию боевого корабля - биремы, с двумя рядами весел. Бирема поможет финикийцам установить господство над Средиземным морем.",
-      "era": "BC",
-      "latitude": 33.894,
-      "longitude": 35.501,
-      "name": "Bireme Warship Development",
-      "name_ru": "Финикийская бирема",
-      "source": "https://www.worldhistory.org/phoenicia/",
-      "tags": [
-        "Maritime",
-        "Military",
-        "Technology",
-        "Phoenician",
-        "Naval"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0701",
       "description": "Greeks adapt Phoenician writing system adding vowels, creating Greek alphabet that spreads throughout Mediterranean world",
       "description_ru": "Греки адаптируют финикийскую систему письма, добавляя гласные, создавая греческий алфавит, который распространяется по всему средиземноморскому миру",
       "era": "BC",
@@ -374,6 +356,24 @@
         "Greek"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.0701",
+      "description": "Phoenicians perfect bireme warship design with two banks of oars, revolutionizing naval warfare and establishing dominance in Mediterranean sea battles",
+      "description_ru": "Финикийцы совершенствуют конструкцию боевого корабля - биремы, с двумя рядами весел. Бирема поможет финикийцам установить господство над Средиземным морем.",
+      "era": "BC",
+      "latitude": 33.894,
+      "longitude": 35.501,
+      "name": "Bireme Warship Development",
+      "name_ru": "Финикийская бирема",
+      "source": "https://www.worldhistory.org/phoenicia/",
+      "tags": [
+        "Maritime",
+        "Technology",
+        "Phoenician",
+        "Naval"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0700",
@@ -431,6 +431,22 @@
     },
     {
       "date": "01.01.0600",
+      "description": "Phoenician monopoly on rare purple dye extracted from murex snails reaches apex, with Tyrian purple becoming most valuable commodity in ancient world",
+      "description_ru": "Финикийская монополия на редкий пурпурный краситель из раковин мурекса достигает апогея; тирский пурпур становится самым ценным товаром древнего мира",
+      "era": "BC",
+      "latitude": 33.271,
+      "longitude": 35.204,
+      "name": "Tyrian Purple Dye Trade Peak",
+      "name_ru": "Пик торговли тирским пурпуром",
+      "source": "https://www.metmuseum.org/toah/hd/phoe/hd_phoe.htm",
+      "tags": [
+        "Trade",
+        "Tyre"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0600",
       "description": "Sidonian artisans perfect transparent glass production by adding antimony, establishing Phoenician dominance in luxury glassware exported across ancient world",
       "description_ru": "Сидонские мастера совершенствуют производство прозрачного стекла, добавляя сурьму, устанавливая финикийское господство в производстве роскошной стеклянной посуды, экспортируемой по всему древнему миру",
       "era": "BC",
@@ -447,22 +463,6 @@
         "Phoenician"
       ],
       "type": "scientific"
-    },
-    {
-      "date": "01.01.0600",
-      "description": "Phoenician monopoly on rare purple dye extracted from murex snails reaches apex, with Tyrian purple becoming most valuable commodity in ancient world",
-      "description_ru": "Финикийская монополия на редкий пурпурный краситель из раковин мурекса достигает апогея; тирский пурпур становится самым ценным товаром древнего мира",
-      "era": "BC",
-      "latitude": 33.271,
-      "longitude": 35.204,
-      "name": "Tyrian Purple Dye Trade Peak",
-      "name_ru": "Пик торговли тирским пурпуром",
-      "source": "https://www.metmuseum.org/toah/hd/phoe/hd_phoe.htm",
-      "tags": [
-        "Trade",
-        "Tyre"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0586",
@@ -561,25 +561,6 @@
       "type": "military"
     },
     {
-      "date": "20.09.0480",
-      "description": "Phoenician contingent fights for Persians at Battle of Salamis; despite skillful seamanship, Persian fleet defeated by Greeks in decisive naval engagement",
-      "description_ru": "Финикийский контингент сражается на стороне персов в битве при Саламине; несмотря на искусное мореплавание, персидский флот побежден греками в решающем морском сражении",
-      "era": "BC",
-      "latitude": 37.964,
-      "longitude": 23.556,
-      "name": "Battle of Salamis",
-      "name_ru": "Битва при Саламине",
-      "source": "https://www.britannica.com/event/Battle-of-Salamis-480-BC",
-      "tags": [
-        "Naval",
-        "Phoenician",
-        "Persian",
-        "Greek",
-        "Battle"
-      ],
-      "type": "military"
-    },
-    {
       "date": "01.01.0480",
       "description": "Phoenician cities provide largest contingent of warships for Persian King Xerxes' invasion of Greece, showcasing continued naval supremacy",
       "description_ru": "Финикийские города предоставляют крупнейший контингент боевых кораблей для вторжения персидского царя Ксеркса в Греции, демонстрируя продолжающееся морское превосходство",
@@ -594,7 +575,8 @@
         "Persian",
         "Phoenician",
         "Naval",
-        "Greek"
+        "Greek",
+        "Greek-Persian Wars"
       ],
       "type": "military"
     },
@@ -677,7 +659,7 @@
     {
       "date": "01.01.0350",
       "description": "King Tennes of Sidon leads massive rebellion against Persian Empire; after failure, city is destroyed and 40,000 citizens perish",
-      "description_ru": "Царь Теннес Сидонский возглавляет массовое восстание против Персидской империи; после неудачи город разрушен и погибают 40 000 граждан",
+      "description_ru": "Царь Теннес Сидонский возглавляет массовое восстание финикийских городов против Персидской империи. Артаксеркс III жестко подавляет восстание, разрушает Сидон; погибают 40 тысяч финикийских граждан",
       "era": "BC",
       "latitude": 33.563,
       "longitude": 35.375,
@@ -689,7 +671,8 @@
         "Sidon",
         "Persian",
         "Phoenician",
-        "Destruction"
+        "Destruction",
+        "Siege"
       ],
       "type": "military"
     },
@@ -727,7 +710,8 @@
         "Fall",
         "Phoenician",
         "Greek",
-        "Conquest"
+        "Conquest",
+        "Macedonian"
       ],
       "type": "military"
     },
@@ -747,7 +731,8 @@
         "Alexander the Great",
         "Greek",
         "Phoenician",
-        "Persian"
+        "Persian",
+        "Macedonian"
       ],
       "type": "military"
     },
