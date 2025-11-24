@@ -1,0 +1,575 @@
+{
+  "description": "Comprehensive dataset covering Minoan Crete and Mycenaean Greek civilizations (2700-1100 BC), including palace cultures, Linear A and B scripts, religious practices, trade networks, architectural innovations, volcanic catastrophe of Thera, and Bronze Age collapse",
+  "events": [
+    {
+      "date": "01.01.2700",
+      "description": "Early Minoan period begins on Crete; settlers develop distinct Bronze Age culture combining indigenous Neolithic traditions with influences from Anatolia and Egypt, establishing agricultural communities in fertile valleys",
+      "description_ru": "Ранний минойский период начинается на Крите; поселенцы развивают отличительную культуру бронзового века, сочетающую коренные неолитические традиции с влияниями из Анатолии и Египта, создавая сельскохозяйственные общины в плодородных долинах",
+      "era": "BC",
+      "latitude": 35.2401,
+      "longitude": 25.1289,
+      "name": "Early Minoan Settlement",
+      "name_ru": "Раннее минойское заселение",
+      "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
+      "tags": [
+        "Minoan",
+        "Settlement",
+        "Agriculture",
+        "Bronze Age"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.2600",
+      "description": "Minoans develop advanced maritime technology, building wooden ships with square sails for trade expeditions across Eastern Mediterranean; thalassocracy begins with copper imports from Cyprus and tin from Anatolia",
+      "description_ru": "Минойцы разрабатывают передовую морскую технологию, строя деревянные корабли с квадратными парусами для торговых экспедиций по Восточному Средиземноморью; талассократия начинается с импорта меди с Кипра и олова из Анатолии",
+      "era": "BC",
+      "latitude": 35.2401,
+      "longitude": 25.1289,
+      "name": "Minoan Maritime Development",
+      "name_ru": "Минойское морское развитие",
+      "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
+      "tags": [
+        "Minoan",
+        "Naval",
+        "Trade",
+        "Technology",
+        "Bronze Age"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.2500",
+      "description": "Circular tholos tombs appear in Mesara plain of southern Crete; massive stone structures (up to 13m diameter) serve as communal burial chambers for elite families over multiple generations",
+      "description_ru": "Круглые толосные гробницы появляются на равнине Месара в южном Крите; массивные каменные сооружения (до 13 м в диаметре) служат общими погребальными камерами для элитных семей на протяжении нескольких поколений",
+      "era": "BC",
+      "latitude": 35.0619,
+      "longitude": 24.8142,
+      "name": "Tholos Tomb Architecture",
+      "name_ru": "Архитектура толосных гробниц",
+      "source": "https://en.wikipedia.org/wiki/Tholos",
+      "tags": [
+        "Minoan",
+        "Architecture",
+        "Tomb",
+        "Death",
+        "Bronze Age"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.2000",
+      "description": "First palaces constructed at Knossos, Phaistos, Malia and Zakros marking beginning of Protopalatial period; multi-story complexes with central courtyards, storage magazines, and administrative archives revolutionize Cretan society",
+      "description_ru": "Первые дворцы построены в Кноссе, Фесте, Малии и Закросе, знаменуя начало протодворцового периода; многоэтажные комплексы с центральными дворами, складскими помещениями и административными архивами революционизируют критское общество",
+      "era": "BC",
+      "latitude": 35.2979,
+      "longitude": 25.1632,
+      "name": "First Palace Period Begins",
+      "name_ru": "Начало первого дворцового периода",
+      "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
+      "tags": [
+        "Minoan",
+        "Palace",
+        "Architecture",
+        "Building",
+        "City"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1950",
+      "description": "Minoans develop Cretan hieroglyphic script for administrative record-keeping; pictographic system with over 90 signs carved on seal stones and clay tablets, predating Linear A",
+      "description_ru": "Минойцы разрабатывают критскую иероглифическую письменность для административного учета; пиктографическая система с более чем 90 знаками, вырезанными на печатях и глиняных табличках, предшествующая линейному письму А",
+      "era": "BC",
+      "latitude": 35.2979,
+      "longitude": 25.1632,
+      "name": "Cretan Hieroglyphic Script",
+      "name_ru": "Критская иероглифическая письменность",
+      "source": "https://en.wikipedia.org/wiki/Cretan_hieroglyphs",
+      "tags": [
+        "Minoan",
+        "Writing",
+        "Language",
+        "Innovation"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1900",
+      "description": "Palace of Knossos reaches peak with labyrinthine complex of 1,300 rooms covering 20,000 square meters; sophisticated drainage system, light wells, and frescoes depicting bull-leaping ceremonies and court life",
+      "description_ru": "Дворец Кносса достигает пика с лабиринтным комплексом из 1300 комнат, занимающим 20 000 квадратных метров; сложная дренажная система, световые колодцы и фрески, изображающие церемонии прыжков через быка и придворную жизнь",
+      "era": "BC",
+      "latitude": 35.2979,
+      "longitude": 25.1632,
+      "name": "Knossos Palace Expansion",
+      "name_ru": "Расширение дворца Кносса",
+      "source": "https://en.wikipedia.org/wiki/Knossos",
+      "tags": [
+        "Minoan",
+        "Palace",
+        "Architecture",
+        "Building",
+        "Art"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1850",
+      "description": "Linear A script emerges as administrative writing system across Crete; syllabic script with 90 signs used for palace inventories, religious dedications, and economic records - remains undeciphered despite 600+ discovered tablets",
+      "description_ru": "Линейное письмо А появляется как административная система письма по всему Криту; слоговая письменность с 90 знаками, используемая для дворцовых инвентарей, религиозных посвящений и экономических записей - остается нерасшифрованной, несмотря на 600+ обнаруженных табличек",
+      "era": "BC",
+      "latitude": 35.2979,
+      "longitude": 25.1632,
+      "name": "Development of Linear A",
+      "name_ru": "Развитие линейного письма А",
+      "source": "https://en.wikipedia.org/wiki/Linear_A",
+      "tags": [
+        "Minoan",
+        "Writing",
+        "Language",
+        "Innovation",
+        "Mystery"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1800",
+      "description": "Cult of snake goddess flourishes in Minoan religion; female deity with serpents in raised hands worshiped in cave sanctuaries and palace shrines, symbolizing fertility, earth renewal, and household protection",
+      "description_ru": "Культ богини со змеями процветает в минойской религии; женское божество со змеями в поднятых руках, которому поклоняются в пещерных святилищах и дворцовых храмах, символизирующее плодородие, обновление земли и защиту домашнего очага",
+      "era": "BC",
+      "latitude": 35.2979,
+      "longitude": 25.1632,
+      "name": "Snake Goddess Worship",
+      "name_ru": "Поклонение богине со змеями",
+      "source": "https://en.wikipedia.org/wiki/Minoan_religion",
+      "tags": [
+        "Minoan",
+        "Religious",
+        "Goddess",
+        "Culture"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.1750",
+      "description": "Bull-leaping ritual (taurokathapsia) becomes central religious ceremony; acrobats grasp horns of charging bull and somersault over its back, depicted in vivid frescoes at Knossos as sacred performance possibly honoring earth-shaking deity",
+      "description_ru": "Ритуал прыжков через быка (тауроката́псия) становится центральной религиозной церемонией; акробаты хватают рога бегущего быка и делают сальто через его спину, изображенные в ярких фресках Кносса как священное представление, возможно, в честь божества землетрясений",
+      "era": "BC",
+      "latitude": 35.2979,
+      "longitude": 25.1632,
+      "name": "Bull-Leaping Ritual",
+      "name_ru": "Ритуал прыжков через быка",
+      "source": "https://en.wikipedia.org/wiki/Bull-leaping",
+      "tags": [
+        "Minoan",
+        "Religious",
+        "Culture",
+        "Sport",
+        "Art"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.1700",
+      "description": "Catastrophic earthquake destroys first palaces across Crete; Knossos, Phaistos, and Malia suffer massive damage from seismic activity, marking end of Protopalatial period",
+      "description_ru": "Катастрофическое землетрясение разрушает первые дворцы по всему Криту; Кносс, Фест и Малия страдают от массивных повреждений от сейсмической активности, знаменуя конец протодворцового периода",
+      "era": "BC",
+      "latitude": 35.2401,
+      "longitude": 25.1289,
+      "name": "First Palace Destruction",
+      "name_ru": "Разрушение первых дворцов",
+      "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
+      "tags": [
+        "Minoan",
+        "Disaster",
+        "Earthquake",
+        "Destruction"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1650",
+      "description": "Second palaces rebuilt with greater magnificence during Neopalatial period; grander architecture, more elaborate frescoes, and expanded storage facilities reflect peak of Minoan prosperity and artistic achievement",
+      "description_ru": "Вторые дворцы перестроены с большим великолепием во время неодворцового периода; более грандиозная архитектура, более сложные фрески и расширенные складские помещения отражают пик минойского процветания и художественных достижений",
+      "era": "BC",
+      "latitude": 35.2979,
+      "longitude": 25.1632,
+      "name": "Second Palace Period",
+      "name_ru": "Второй дворцовый период",
+      "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
+      "tags": [
+        "Minoan",
+        "Palace",
+        "Architecture",
+        "Building",
+        "Golden Age"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1600",
+      "description": "Mycenaean civilization emerges in mainland Greece with fortified citadels at Mycenae, Tiryns, and Pylos; Indo-European-speaking Greeks establish warrior elite culture distinct from peaceful Minoan society",
+      "description_ru": "Микенская цивилизация возникает в материковой Греции с укрепленными цитаделями в Микенах, Тиринфе и Пилосе; индоевропейскоговорящие греки создают элитную воинскую культуру, отличную от мирного минойского общества",
+      "era": "BC",
+      "latitude": 37.7308,
+      "longitude": 22.7564,
+      "name": "Rise of Mycenaean Civilization",
+      "name_ru": "Возвышение микенской цивилизации",
+      "source": "https://en.wikipedia.org/wiki/Mycenaean_Greece",
+      "tags": [
+        "Mycenaean",
+        "Greek",
+        "Settlement",
+        "Fortress",
+        "Bronze Age"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1600",
+      "description": "Marine Style pottery reaches artistic peak on Crete; naturalistic depictions of octopi, nautili, dolphins and coral on dark backgrounds demonstrate Minoan mastery of ceramic decoration and marine observation",
+      "description_ru": "Керамика морского стиля достигает художественного пика на Крите; натуралистические изображения осьминогов, наутилусов, дельфинов и кораллов на темных фонах демонстрируют минойское мастерство керамического декора и наблюдения за морской жизнью",
+      "era": "BC",
+      "latitude": 35.2401,
+      "longitude": 25.1289,
+      "name": "Marine Style Pottery",
+      "name_ru": "Керамика морского стиля",
+      "source": "https://en.wikipedia.org/wiki/Minoan_pottery",
+      "tags": [
+        "Minoan",
+        "Art",
+        "Culture",
+        "Technology"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1550",
+      "description": "Minoan trade network spans Eastern Mediterranean; archaeological evidence shows Cretan goods in Egypt, Cyprus, Levant, and Anatolia while importing Egyptian scarabs, Syrian cylinder seals, and Cypriot copper",
+      "description_ru": "Минойская торговая сеть охватывает Восточное Средиземноморье; археологические свидетельства показывают критские товары в Египте, на Кипре, в Леванте и Анатолии, импортируя египетские скарабеи, сирийские цилиндрические печати и кипрскую медь",
+      "era": "BC",
+      "latitude": 35.2401,
+      "longitude": 25.1289,
+      "name": "Minoan Trade Dominance",
+      "name_ru": "Минойское торговое доминирование",
+      "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
+      "tags": [
+        "Minoan",
+        "Trade",
+        "Economic",
+        "Naval",
+        "Egypt"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1525",
+      "description": "Mycenaeans construct Cyclopean walls at Mycenae and Tiryns using massive limestone blocks weighing up to 20 tons; later Greeks believed only Cyclops giants could move such stones, creating legendary origin for fortifications",
+      "description_ru": "Микенцы строят циклопические стены в Микенах и Тиринфе, используя массивные известняковые блоки весом до 20 тонн; более поздние греки верили, что только гиганты-циклопы могли перемещать такие камни, создавая легендарное происхождение укреплений",
+      "era": "BC",
+      "latitude": 37.7308,
+      "longitude": 22.7564,
+      "name": "Cyclopean Fortifications",
+      "name_ru": "Циклопические укрепления",
+      "source": "https://en.wikipedia.org/wiki/Mycenaean_Greece",
+      "tags": [
+        "Mycenaean",
+        "Greek",
+        "Architecture",
+        "Fortress",
+        "Building",
+        "Legend"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1500",
+      "description": "Volcanic eruption of Thera (Santorini) becomes one of largest in human history with Volcanic Explosivity Index of 6-7; pyroclastic flows and ash fallout devastate Minoan settlements on northern Crete 110km away",
+      "description_ru": "Вулканическое извержение Теры (Санторини) становится одним из крупнейших в истории человечества с индексом вулканической взрывоопасности 6-7; пирокластические потоки и выпадение пепла опустошают минойские поселения на северном Крите в 110 км",
+      "era": "BC",
+      "latitude": 36.4074,
+      "longitude": 25.3963,
+      "name": "Thera Volcanic Eruption",
+      "name_ru": "Извержение вулкана Тера",
+      "source": "https://en.wikipedia.org/wiki/Minoan_eruption",
+      "tags": [
+        "Minoan",
+        "Disaster",
+        "Volcano",
+        "Destruction"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1500",
+      "description": "Tsunami generated by Thera eruption strikes northern Crete with waves estimated 9-12 meters high; coastal Minoan ports and settlements destroyed, devastating naval power and maritime trade infrastructure",
+      "description_ru": "Цунами, вызванное извержением Теры, обрушивается на северный Крит с волнами высотой 9-12 метров; прибрежные минойские порты и поселения разрушены, опустошая военно-морскую мощь и инфраструктуру морской торговли",
+      "era": "BC",
+      "latitude": 35.5,
+      "longitude": 25.5,
+      "name": "Thera Tsunami Devastation",
+      "name_ru": "Разрушение от цунами Теры",
+      "source": "https://en.wikipedia.org/wiki/Minoan_eruption",
+      "tags": [
+        "Minoan",
+        "Disaster",
+        "Tsunami",
+        "Naval",
+        "Destruction"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1470",
+      "description": "Ash cloud from Thera eruption causes crop failures across Eastern Mediterranean; pumice deposits up to 30cm thick on eastern Crete ruin agricultural land, contributing to economic collapse and vulnerability to invasion",
+      "description_ru": "Облако пепла от извержения Теры вызывает неурожаи по всему Восточному Средиземноморью; отложения пемзы толщиной до 30 см на восточном Крите разрушают сельскохозяйственные земли, способствуя экономическому коллапсу и уязвимости к вторжению",
+      "era": "BC",
+      "latitude": 35.2401,
+      "longitude": 25.1289,
+      "name": "Agricultural Collapse from Eruption",
+      "name_ru": "Сельскохозяйственный коллапс от извержения",
+      "source": "https://en.wikipedia.org/wiki/Minoan_eruption",
+      "tags": [
+        "Minoan",
+        "Disaster",
+        "Agriculture",
+        "Economic"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1450",
+      "description": "Mycenaean Greeks conquer weakened Crete following Thera catastrophe; palace at Knossos continues functioning under Greek control while other palaces destroyed, marking transition from Minoan to Mycenaean dominance",
+      "description_ru": "Микенские греки завоевывают ослабленный Крит после катастрофы Теры; дворец в Кноссе продолжает функционировать под греческим контролем, в то время как другие дворцы разрушены, знаменуя переход от минойского к микенскому господству",
+      "era": "BC",
+      "latitude": 35.2979,
+      "longitude": 25.1632,
+      "name": "Mycenaean Conquest of Crete",
+      "name_ru": "Микенское завоевание Крита",
+      "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
+      "tags": [
+        "Minoan",
+        "Mycenaean",
+        "Greek",
+        "Conquest",
+        "War",
+        "Fall"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1450",
+      "description": "Linear B script adopted by Mycenaean Greeks at Knossos to write early Greek language; adapts Minoan Linear A syllabary with 87 signs for palace administration, creating oldest preserved Greek writing",
+      "description_ru": "Линейное письмо Б принято микенскими греками в Кноссе для записи раннего греческого языка; адаптирует минойскую слоговую систему линейного письма А с 87 знаками для дворцовой администрации, создавая древнейшую сохранившуюся греческую письменность",
+      "era": "BC",
+      "latitude": 35.2979,
+      "longitude": 25.1632,
+      "name": "Linear B Script Development",
+      "name_ru": "Развитие линейного письма Б",
+      "source": "https://en.wikipedia.org/wiki/Linear_B",
+      "tags": [
+        "Mycenaean",
+        "Greek",
+        "Writing",
+        "Language",
+        "Innovation"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1400",
+      "description": "Palace bureaucracy at Pylos employs over 400 scribes recording Linear B tablets; detailed inventories track 100,000+ sheep, grain quotas, bronze weapons, perfumed oils, and textile production across kingdom",
+      "description_ru": "Дворцовая бюрократия в Пилосе нанимает более 400 писцов, записывающих таблички линейного письма Б; подробные инвентаризации отслеживают 100 000+ овец, квоты зерна, бронзовое оружие, ароматные масла и производство текстиля по всему царству",
+      "era": "BC",
+      "latitude": 37.0333,
+      "longitude": 21.6972,
+      "name": "Mycenaean Palace Economy",
+      "name_ru": "Микенская дворцовая экономика",
+      "source": "https://en.wikipedia.org/wiki/Mycenaean_Greece",
+      "tags": [
+        "Mycenaean",
+        "Greek",
+        "Economic",
+        "Administration",
+        "Writing"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1400",
+      "description": "Mycenaean warrior elite buried in shaft graves at Mycenae with gold death masks, bronze weapons, and ivory inlays; Heinrich Schliemann's 1876 excavation reveals 19 bodies with 15kg of gold artifacts including famous 'Mask of Agamemnon'",
+      "description_ru": "Микенская воинская элита похоронена в шахтных гробницах в Микенах с золотыми посмертными масками, бронзовым оружием и инкрустациями из слоновой кости; раскопки Генриха Шлимана 1876 года обнаруживают 19 тел с 15 кг золотых артефактов, включая знаменитую 'Маску Агамемнона'",
+      "era": "BC",
+      "latitude": 37.7308,
+      "longitude": 22.7564,
+      "name": "Royal Shaft Graves of Mycenae",
+      "name_ru": "Царские шахтные гробницы Микен",
+      "source": "https://en.wikipedia.org/wiki/Grave_Circle_A,_Mycenae",
+      "tags": [
+        "Mycenaean",
+        "Greek",
+        "Tomb",
+        "Gold",
+        "Death",
+        "Art"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1350",
+      "description": "Destruction of palace at Knossos by fire ends Minoan-Mycenaean period on Crete; Linear B administrative tablets accidentally preserved by flames reveal details of final days before catastrophe",
+      "description_ru": "Разрушение дворца в Кноссе огнем завершает минойско-микенский период на Крите; административные таблички линейного письма Б, случайно сохраненные пламенем, раскрывают детали последних дней перед катастрофой",
+      "era": "BC",
+      "latitude": 35.2979,
+      "longitude": 25.1632,
+      "name": "Final Destruction of Knossos",
+      "name_ru": "Окончательное разрушение Кносса",
+      "source": "https://en.wikipedia.org/wiki/Knossos",
+      "tags": [
+        "Minoan",
+        "Mycenaean",
+        "Greek",
+        "Destruction",
+        "Fall"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1300",
+      "description": "Lion Gate constructed at Mycenae with massive limestone lintel weighing 20 tons topped by relief sculpture of two lionesses flanking column; becomes iconic symbol of Mycenaean architectural achievement and royal power",
+      "description_ru": "Львиные ворота построены в Микенах с массивной известняковой перемычкой весом 20 тонн, увенчанной рельефной скульптурой двух львиц, фланкирующих колонну; становятся культовым символом микенского архитектурного достижения и царской власти",
+      "era": "BC",
+      "latitude": 37.7308,
+      "longitude": 22.7564,
+      "name": "Lion Gate of Mycenae",
+      "name_ru": "Львиные ворота Микен",
+      "source": "https://en.wikipedia.org/wiki/Lion_Gate",
+      "tags": [
+        "Mycenaean",
+        "Greek",
+        "Architecture",
+        "Monument",
+        "Art",
+        "Building"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1300",
+      "description": "Treasury of Atreus (tholos tomb) completed at Mycenae; beehive-shaped burial chamber with 14.5m high corbelled dome, largest unsupported dome in ancient world for 1,000 years until Roman Pantheon",
+      "description_ru": "Сокровищница Атрея (толосная гробница) завершена в Микенах; погребальная камера в форме улья с куполом высотой 14,5 м на корбельной кладке, крупнейший несущий купол в древнем мире в течение 1000 лет до римского Пантеона",
+      "era": "BC",
+      "latitude": 37.7308,
+      "longitude": 22.7564,
+      "name": "Treasury of Atreus",
+      "name_ru": "Сокровищница Атрея",
+      "source": "https://en.wikipedia.org/wiki/Treasury_of_Atreus",
+      "tags": [
+        "Mycenaean",
+        "Greek",
+        "Architecture",
+        "Tomb",
+        "Monument",
+        "Building"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1250",
+      "description": "Trojan War fought between Mycenaean coalition led by Agamemnon and city of Troy in Anatolia, according to later Greek tradition; archaeological evidence shows Troy VII destroyed by fire around this period",
+      "description_ru": "Троянская война ведется между микенской коалицией под предводительством Агамемнона и городом Троей в Анатолии, согласно более поздней греческой традиции; археологические свидетельства показывают, что Троя VII разрушена огнем примерно в этот период",
+      "era": "BC",
+      "latitude": 39.9575,
+      "longitude": 26.2389,
+      "name": "Trojan War",
+      "name_ru": "Троянская война",
+      "source": "https://en.wikipedia.org/wiki/Trojan_War",
+      "tags": [
+        "Mycenaean",
+        "Greek",
+        "War",
+        "Battle",
+        "Legend",
+        "Troy"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1200",
+      "description": "Mysterious 'Sea Peoples' invade Eastern Mediterranean causing widespread destruction; Mycenaean palaces at Pylos, Tiryns and Thebes destroyed by fire, never rebuilt, marking beginning of Greek Dark Ages",
+      "description_ru": "Таинственные 'Народы моря' вторгаются в Восточное Средиземноморье, вызывая широкомасштабные разрушения; микенские дворцы в Пилосе, Тиринфе и Фивах разрушены огнем, никогда не восстановлены, знаменуя начало греческих темных веков",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 23,
+      "name": "Sea Peoples Invasion",
+      "name_ru": "Вторжение народов моря",
+      "source": "https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse",
+      "tags": [
+        "Mycenaean",
+        "Greek",
+        "War",
+        "Invasion",
+        "Destruction",
+        "Mystery"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.1190",
+      "description": "Linear B writing system disappears with palace destructions; Greece enters 400-year period of illiteracy until adoption of Phoenician alphabet around 800 BC, losing administrative records and cultural continuity",
+      "description_ru": "Система линейного письма Б исчезает с разрушением дворцов; Греция вступает в 400-летний период неграмотности до принятия финикийского алфавита около 800 г. до н.э., теряя административные записи и культурную преемственность",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 23,
+      "name": "Loss of Linear B Writing",
+      "name_ru": "Утрата линейного письма Б",
+      "source": "https://en.wikipedia.org/wiki/Linear_B",
+      "tags": [
+        "Mycenaean",
+        "Greek",
+        "Writing",
+        "Language",
+        "Fall"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1150",
+      "description": "Bronze Age collapse devastates Mycenaean civilization; population declines by estimated 75%, urban centers abandoned, trade networks collapse, and palatial administration ends throughout Greece",
+      "description_ru": "Коллапс бронзового века опустошает микенскую цивилизацию; население сокращается примерно на 75%, городские центры заброшены, торговые сети рухнули, и дворцовое управление заканчивается по всей Греции",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 23,
+      "name": "Mycenaean Civilization Collapse",
+      "name_ru": "Коллапс микенской цивилизации",
+      "source": "https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse",
+      "tags": [
+        "Mycenaean",
+        "Greek",
+        "Fall",
+        "Destruction",
+        "Bronze Age"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1100",
+      "description": "Last Mycenaean citadel at Mycenae finally abandoned; end of palatial Bronze Age culture marks transition to subsistence farming, loss of monumental architecture, and beginning of Greek Dark Ages lasting until 800 BC",
+      "description_ru": "Последняя микенская цитадель в Микенах окончательно заброшена; конец дворцовой культуры бронзового века знаменует переход к натуральному земледелию, утрату монументальной архитектуры и начало греческих темных веков, длящихся до 800 г. до н.э.",
+      "era": "BC",
+      "latitude": 37.7308,
+      "longitude": 22.7564,
+      "name": "End of Mycenaean Era",
+      "name_ru": "Конец микенской эпохи",
+      "source": "https://en.wikipedia.org/wiki/Mycenaean_Greece",
+      "tags": [
+        "Mycenaean",
+        "Greek",
+        "Fall",
+        "Bronze Age"
+      ],
+      "type": "historic"
+    }
+  ],
+  "filename": "crete_mycenaean.json"
+}
