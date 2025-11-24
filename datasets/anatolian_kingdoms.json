@@ -1,6 +1,23 @@
 {
-  "description": "Dataset imported with 61 events",
+  "description": "Comprehensive dataset covering ancient Anatolian kingdoms of Phrygia, Lydia, and Caria (1300-334 BC), including political developments, cultural achievements, religious practices, invention of coinage, legendary rulers like Midas and Croesus, and architectural wonders like the Mausoleum at Halicarnassus",
   "events": [
+    {
+      "date": "01.01.1300",
+      "description": "Indigenous Carian tribes (known as Karkissa in Hittite texts) settle in southwestern Anatolia between Maeander and Indus rivers, establishing distinct Anatolian culture with own language and traditions",
+      "description_ru": "Коренные карийские племена (известные как Каркисса в хеттских текстах) селятся в юго-западной Анатолии между реками Меандр и Инд, создавая отличительную анатолийскую культуру со своим языком и традициями",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 28,
+      "name": "Carian Settlement of Southwest Anatolia",
+      "name_ru": "Карийское заселение юго-западной Анатолии",
+      "source": "https://en.wikipedia.org/wiki/Caria",
+      "tags": [
+        "Carian",
+        "Settlement",
+        "Hittite"
+      ],
+      "type": "historic"
+    },
     {
       "date": "01.01.1300",
       "description": "Proto-Lydian tribes settle in western Anatolia around Hermus and Cayster river valleys, establishing agricultural communities that will form basis of future Lydian civilization",
@@ -19,6 +36,25 @@
       "type": "historic"
     },
     {
+      "date": "01.01.1274",
+      "description": "Carian warriors fight as allies of Hittite Empire at Battle of Kadesh against Egyptian Pharaoh Ramesses II; earliest documented military engagement of Carian people in Bronze Age conflicts",
+      "description_ru": "Карийские воины сражаются как союзники Хеттской империи в битве при Кадеше против египетского фараона Рамсеса II; самое раннее задокументированное военное участие карийского народа в конфликтах бронзового века",
+      "era": "BC",
+      "latitude": 34.5633,
+      "longitude": 36.5031,
+      "name": "Carians at Battle of Kadesh",
+      "name_ru": "Карийцы в битве при Кадеше",
+      "source": "https://en.wikipedia.org/wiki/Carians",
+      "tags": [
+        "Carian",
+        "Hittite",
+        "Battle",
+        "War",
+        "Egypt"
+      ],
+      "type": "military"
+    },
+    {
       "date": "01.01.1200",
       "description": "Lydian tribes exploit rich gold deposits in Pactolus River (flowing through future capital Sardis); gold-bearing sands provide foundation for legendary Lydian wealth",
       "description_ru": "Лидийские племена эксплуатируют богатые золотые месторождения в реке Пактол (протекающей через будущую столицу Сарды); золотоносные пески обеспечивают основу для легендарного лидийского богатства",
@@ -34,6 +70,24 @@
         "Mining"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.1200",
+      "description": "Carians develop distinctive language belonging to Luwian branch of Anatolian languages; create unique Carian alphabet adapted from Greek and Phoenician scripts for inscriptions",
+      "description_ru": "Карийцы развивают отличительный язык, принадлежащий к лувийской ветви анатолийских языков; создают уникальный карийский алфавит, адаптированный из греческих и финикийских систем письма для надписей",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 28,
+      "name": "Development of Carian Language",
+      "name_ru": "Развитие карийского языка",
+      "source": "https://en.wikipedia.org/wiki/Carian_language",
+      "tags": [
+        "Carian",
+        "Language",
+        "Writing",
+        "Culture"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.1180",
@@ -90,6 +144,24 @@
         "Religious"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.1100",
+      "description": "Mylasa emerges as principal religious and political center of Caria; sacred sanctuary of Zeus Carius (war god distinct from Greek Zeus) established, becoming focal point for Carian tribal confederation",
+      "description_ru": "Миласа возникает как главный религиозный и политический центр Карии; учреждено священное святилище Зевса Кария (бога войны, отличного от греческого Зевса), становящееся центром карийской племенной конфедерации",
+      "era": "BC",
+      "latitude": 37.3092,
+      "longitude": 27.7842,
+      "name": "Mylasa Becomes Carian Center",
+      "name_ru": "Миласа становится центром Карии",
+      "source": "https://en.wikipedia.org/wiki/Mylasa",
+      "tags": [
+        "Carian",
+        "Religious",
+        "City",
+        "Temple"
+      ],
+      "type": "religious"
     },
     {
       "date": "01.01.1100",
@@ -221,6 +293,25 @@
         "Art"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.0900",
+      "description": "Carian warriors gain reputation as fierce mercenaries serving in foreign armies; Homer describes Carians as 'barbarous of speech' but acknowledges their martial prowess and naval skills",
+      "description_ru": "Карийские воины приобретают репутацию свирепых наемников, служащих в иностранных армиях; Гомер описывает карийцев как 'варварских по речи', но признает их воинское мастерство и морские навыки",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 28,
+      "name": "Carian Mercenary Tradition",
+      "name_ru": "Карийская наемническая традиция",
+      "source": "https://en.wikipedia.org/wiki/Carians",
+      "tags": [
+        "Carian",
+        "Military",
+        "Mercenary",
+        "War",
+        "Greek"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0900",
@@ -487,6 +578,25 @@
         "King Midas"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0700",
+      "description": "Carian mercenaries serve in armies of Egyptian Pharaoh Psammetichus I and II; establish permanent settlements in Nile Delta, creating large expatriate Carian community preserving language and customs",
+      "description_ru": "Карийские наемники служат в армиях египетского фараона Псамметиха I и II; основывают постоянные поселения в дельте Нила, создавая большую экспатриантскую карийскую общину, сохраняющую язык и обычаи",
+      "era": "BC",
+      "latitude": 30.8,
+      "longitude": 31.2,
+      "name": "Carians in Egyptian Service",
+      "name_ru": "Карийцы на египетской службе",
+      "source": "https://en.wikipedia.org/wiki/Carians",
+      "tags": [
+        "Carian",
+        "Egypt",
+        "Military",
+        "Mercenary",
+        "Settlement"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0700",
@@ -1148,6 +1258,291 @@
         "Persian",
         "Fall",
         "Empire"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0545",
+      "description": "Persian general Harpagus conquers Caria after fall of Lydia; Carian cities incorporated into Persian Empire as satrapy, maintaining local autonomy under Persian oversight",
+      "description_ru": "Персидский генерал Гарпаг завоевывает Карию после падения Лидии; карийские города включены в Персидскую империю как сатрапия, сохраняя местную автономию под персидским надзором",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 28,
+      "name": "Persian Conquest of Caria",
+      "name_ru": "Персидское завоевание Карии",
+      "source": "https://en.wikipedia.org/wiki/Caria",
+      "tags": [
+        "Carian",
+        "Persian",
+        "Conquest",
+        "Fall"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0520",
+      "description": "Lygdamid dynasty established as Persian-appointed rulers of Halicarnassus; governs city as tyrants under Persian authority while allowing Greek cultural development",
+      "description_ru": "Династия Лигдамидов установлена как назначенные персами правители Галикарнаса; управляет городом как тираны под персидской властью, позволяя греческое культурное развитие",
+      "era": "BC",
+      "latitude": 37.0379,
+      "longitude": 27.4241,
+      "name": "Lygdamid Dynasty in Halicarnassus",
+      "name_ru": "Династия Лигдамидов в Галикарнасе",
+      "source": "https://en.wikipedia.org/wiki/Halicarnassus",
+      "tags": [
+        "Carian",
+        "Persian",
+        "Dynasty",
+        "Greek"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0484",
+      "description": "Herodotus born in Halicarnassus; future 'Father of History' grows up in mixed Greek-Carian culture, gaining unique perspective that shapes his historical writings",
+      "description_ru": "Геродот рождается в Галикарнасе; будущий 'Отец истории' вырастает в смешанной греко-карийской культуре, приобретая уникальную перспективу, формирующую его исторические труды",
+      "era": "BC",
+      "latitude": 37.0379,
+      "longitude": 27.4241,
+      "name": "Birth of Herodotus",
+      "name_ru": "Рождение Геродота",
+      "source": "https://en.wikipedia.org/wiki/Herodotus",
+      "tags": [
+        "Carian",
+        "Greek",
+        "History",
+        "Culture",
+        "Philosophy"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.09.0480",
+      "description": "Queen Artemisia I of Halicarnassus commands 70 Carian ships in Persian fleet at Battle of Salamis; Herodotus reports Xerxes praised her tactical advice and bravery above all admirals",
+      "description_ru": "Царица Артемисия I Галикарнасская командует 70 карийскими кораблями в персидском флоте в битве при Саламине; Геродот сообщает, что Ксеркс хвалил ее тактические советы и храбрость превыше всех адмиралов",
+      "era": "BC",
+      "latitude": 37.9647,
+      "longitude": 23.5561,
+      "name": "Artemisia I at Battle of Salamis",
+      "name_ru": "Артемисия I в битве при Саламине",
+      "source": "https://en.wikipedia.org/wiki/Artemisia_I_of_Caria",
+      "tags": [
+        "Carian",
+        "Persian",
+        "Battle",
+        "Greek",
+        "War",
+        "Naval",
+        "Women"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0404",
+      "description": "Hecatomnus appointed Persian satrap of Caria; founds Hecatomnid dynasty by consolidating power and moving capital from Halicarnassus to Mylasa, beginning Caria's golden age",
+      "description_ru": "Гекатомн назначен персидским сатрапом Карии; основывает династию Гекатомнидов, консолидируя власть и перенося столицу из Галикарнаса в Миласу, начиная золотой век Карии",
+      "era": "BC",
+      "latitude": 37.3092,
+      "longitude": 27.7842,
+      "name": "Hecatomnus Founds Dynasty",
+      "name_ru": "Гекатомн основывает династию",
+      "source": "https://en.wikipedia.org/wiki/Hecatomnus",
+      "tags": [
+        "Carian",
+        "Persian",
+        "Dynasty",
+        "Capital"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0377",
+      "description": "Mausolus becomes satrap after Hecatomnus's death; most powerful and influential Hecatomnid ruler begins ambitious program of Hellenization while maintaining Persian loyalty",
+      "description_ru": "Мавсол становится сатрапом после смерти Гекатомна; самый могущественный и влиятельный правитель Гекатомнидов начинает амбициозную программу эллинизации, сохраняя персидскую лояльность",
+      "era": "BC",
+      "latitude": 37.3092,
+      "longitude": 27.7842,
+      "name": "Mausolus Becomes Satrap",
+      "name_ru": "Мавсол становится сатрапом",
+      "source": "https://en.wikipedia.org/wiki/Mausolus",
+      "tags": [
+        "Carian",
+        "Persian",
+        "Dynasty",
+        "Succession"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0370",
+      "description": "Mausolus moves capital from Mylasa back to Halicarnassus; begins massive urban development project transforming city with monumental architecture, fortifications, and harbor improvements",
+      "description_ru": "Мавсол переносит столицу из Миласы обратно в Галикарнас; начинает масштабный проект городского развития, преобразуя город монументальной архитектурой, укреплениями и улучшениями гавани",
+      "era": "BC",
+      "latitude": 37.0379,
+      "longitude": 27.4241,
+      "name": "Halicarnassus Becomes Capital",
+      "name_ru": "Галикарнас становится столицей",
+      "source": "https://en.wikipedia.org/wiki/Halicarnassus",
+      "tags": [
+        "Carian",
+        "Capital",
+        "City",
+        "Architecture",
+        "Building"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0365",
+      "description": "Mausolus participates in Revolt of Satraps against Persian king Artaxerxes II; achieves de facto independence while nominally remaining Persian vassal, balancing Persian and Greek interests",
+      "description_ru": "Мавсол участвует в Восстании сатрапов против персидского царя Артаксеркса II; достигает фактической независимости, номинально оставаясь персидским вассалом, балансируя персидские и греческие интересы",
+      "era": "BC",
+      "latitude": 37.0379,
+      "longitude": 27.4241,
+      "name": "Mausolus in Satraps' Revolt",
+      "name_ru": "Мавсол в Восстании сатрапов",
+      "source": "https://en.wikipedia.org/wiki/Mausolus",
+      "tags": [
+        "Carian",
+        "Persian",
+        "Revolt",
+        "Independence"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0360",
+      "description": "Mausolus marries his sister Artemisia II following Carian royal tradition; their joint rule combines military ambition with cultural patronage, expanding Carian territories into Lycia and Greek islands",
+      "description_ru": "Мавсол женится на своей сестре Артемисии II, следуя карийской царской традиции; их совместное правление сочетает военные амбиции с культурным покровительством, расширяя карийские территории в Ликию и греческие острова",
+      "era": "BC",
+      "latitude": 37.0379,
+      "longitude": 27.4241,
+      "name": "Mausolus Marries Artemisia II",
+      "name_ru": "Мавсол женится на Артемисии II",
+      "source": "https://en.wikipedia.org/wiki/Mausolus",
+      "tags": [
+        "Carian",
+        "Dynasty",
+        "Marriage",
+        "Women"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0353",
+      "description": "Mausolus dies after 24-year reign; Artemisia II succeeds him as sole ruler, grief-stricken but politically capable, continuing his policies and construction projects",
+      "description_ru": "Мавсол умирает после 24-летнего правления; Артемисия II наследует ему как единоличный правитель, охваченная горем, но политически способная, продолжая его политику и строительные проекты",
+      "era": "BC",
+      "latitude": 37.0379,
+      "longitude": 27.4241,
+      "name": "Death of Mausolus",
+      "name_ru": "Смерть Мавсола",
+      "source": "https://en.wikipedia.org/wiki/Mausolus",
+      "tags": [
+        "Carian",
+        "Death",
+        "Dynasty",
+        "Women"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0353",
+      "description": "Artemisia II commissions Mausoleum at Halicarnassus as tomb for Mausolus; hires Greek architects Satyros and Pythius plus four greatest sculptors of age - Scopas, Bryaxis, Leochares, Timotheus",
+      "description_ru": "Артемисия II заказывает Мавзолей в Галикарнасе как гробницу для Мавсола; нанимает греческих архитекторов Сатироса и Пифия плюс четырех величайших скульпторов эпохи - Скопаса, Бриаксиса, Леохареса, Тимофея",
+      "era": "BC",
+      "latitude": 37.0379,
+      "longitude": 27.4241,
+      "name": "Commission of the Mausoleum",
+      "name_ru": "Заказ Мавзолея",
+      "source": "https://en.wikipedia.org/wiki/Mausoleum_at_Halicarnassus",
+      "tags": [
+        "Carian",
+        "Architecture",
+        "Tomb",
+        "Greek",
+        "Art",
+        "Building"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0350",
+      "description": "Mausoleum at Halicarnassus completed; stands 45 meters tall with elaborate sculptures depicting Greeks battling Amazons and centaurs, crowned by quadriga statue - instantly recognized as one of Seven Wonders of Ancient World",
+      "description_ru": "Мавзолей в Галикарнасе завершен; высотой 45 метров с великолепными скульптурами, изображающими греков, сражающихся с амазонками и кентаврами, увенчанный статуей квадриги - мгновенно признан одним из семи чудес древнего мира",
+      "era": "BC",
+      "latitude": 37.0379,
+      "longitude": 27.4241,
+      "name": "Completion of Mausoleum",
+      "name_ru": "Завершение Мавзолея",
+      "source": "https://en.wikipedia.org/wiki/Mausoleum_at_Halicarnassus",
+      "tags": [
+        "Carian",
+        "Architecture",
+        "Tomb",
+        "Wonder",
+        "Monument",
+        "Greek",
+        "Art"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0351",
+      "description": "Artemisia II dies two years after Mausolus; legend claims she mixed his ashes with wine and drank them, though historians doubt this; succeeded by her brother Idrieus",
+      "description_ru": "Артемисия II умирает через два года после Мавсола; легенда утверждает, что она смешала его прах с вином и выпила их, хотя историки сомневаются в этом; ей наследует ее брат Идрией",
+      "era": "BC",
+      "latitude": 37.0379,
+      "longitude": 27.4241,
+      "name": "Death of Artemisia II",
+      "name_ru": "Смерть Артемисии II",
+      "source": "https://en.wikipedia.org/wiki/Artemisia_II_of_Caria",
+      "tags": [
+        "Carian",
+        "Death",
+        "Dynasty",
+        "Women",
+        "Legend"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0334",
+      "description": "Alexander the Great besieges Halicarnassus during conquest of Asia; despite fierce resistance led by Persian commanders Memnon and Orontobates, city falls after prolonged siege, partially destroying Mausoleum's precinct",
+      "description_ru": "Александр Великий осаждает Галикарнас во время завоевания Азии; несмотря на ожесточенное сопротивление под руководством персидских командиров Мемнона и Оронтобата, город падает после длительной осады, частично разрушая участок Мавзолея",
+      "era": "BC",
+      "latitude": 37.0379,
+      "longitude": 27.4241,
+      "name": "Alexander Conquers Halicarnassus",
+      "name_ru": "Александр завоевывает Галикарнас",
+      "source": "https://en.wikipedia.org/wiki/Siege_of_Halicarnassus",
+      "tags": [
+        "Carian",
+        "Greek",
+        "Conquest",
+        "Battle",
+        "Siege",
+        "Macedonian"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0334",
+      "description": "Ada, last Hecatomnid ruler, surrenders fortress of Alinda to Alexander and adopts him as her son; Alexander restores her rule over Caria as reward, ending Persian period and beginning Hellenistic era",
+      "description_ru": "Ада, последний правитель Гекатомнидов, сдает крепость Алинда Александру и усыновляет его; Александр восстанавливает ее правление над Карией в награду, завершая персидский период и начиная эллинистическую эру",
+      "era": "BC",
+      "latitude": 37.5333,
+      "longitude": 27.8833,
+      "name": "Ada Allies with Alexander",
+      "name_ru": "Ада союзничает с Александром",
+      "source": "https://en.wikipedia.org/wiki/Ada_of_Caria",
+      "tags": [
+        "Carian",
+        "Greek",
+        "Women",
+        "Alliance",
+        "Macedonian",
+        "Fall"
       ],
       "type": "political"
     }
