@@ -1,23 +1,6 @@
 {
-  "description": "Comprehensive dataset covering ancient Anatolian kingdoms of Phrygia, Lydia, and Caria (1300-334 BC), including political developments, cultural achievements, religious practices, invention of coinage, legendary rulers like Midas and Croesus, and architectural wonders like the Mausoleum at Halicarnassus",
+  "description": "Dataset imported with 82 events",
   "events": [
-    {
-      "date": "01.01.1300",
-      "description": "Indigenous Carian tribes (known as Karkissa in Hittite texts) settle in southwestern Anatolia between Maeander and Indus rivers, establishing distinct Anatolian culture with own language and traditions",
-      "description_ru": "Коренные карийские племена (известные как Каркисса в хеттских текстах) селятся в юго-западной Анатолии между реками Меандр и Инд, создавая отличительную анатолийскую культуру со своим языком и традициями",
-      "era": "BC",
-      "latitude": 37.5,
-      "longitude": 28,
-      "name": "Carian Settlement of Southwest Anatolia",
-      "name_ru": "Карийское заселение юго-западной Анатолии",
-      "source": "https://en.wikipedia.org/wiki/Caria",
-      "tags": [
-        "Carian",
-        "Settlement",
-        "Hittite"
-      ],
-      "type": "historic"
-    },
     {
       "date": "01.01.1300",
       "description": "Proto-Lydian tribes settle in western Anatolia around Hermus and Cayster river valleys, establishing agricultural communities that will form basis of future Lydian civilization",
@@ -36,23 +19,21 @@
       "type": "historic"
     },
     {
-      "date": "01.01.1274",
-      "description": "Carian warriors fight as allies of Hittite Empire at Battle of Kadesh against Egyptian Pharaoh Ramesses II; earliest documented military engagement of Carian people in Bronze Age conflicts",
-      "description_ru": "Карийские воины сражаются как союзники Хеттской империи в битве при Кадеше против египетского фараона Рамсеса II; самое раннее задокументированное военное участие карийского народа в конфликтах бронзового века",
+      "date": "01.01.1300",
+      "description": "Indigenous Carian tribes (known as Karkissa in Hittite texts) settle in southwestern Anatolia between Maeander and Indus rivers, establishing distinct Anatolian culture with own language and traditions",
+      "description_ru": "Коренные карийские племена (известные как Каркисса в хеттских текстах) селятся в юго-западной Анатолии между реками Меандр и Инд, создавая отличительную анатолийскую культуру со своим языком и традициями",
       "era": "BC",
-      "latitude": 34.5633,
-      "longitude": 36.5031,
-      "name": "Carians at Battle of Kadesh",
-      "name_ru": "Карийцы в битве при Кадеше",
-      "source": "https://en.wikipedia.org/wiki/Carians",
+      "latitude": 37.5,
+      "longitude": 28,
+      "name": "Carian Settlement of Southwest Anatolia",
+      "name_ru": "Карийское заселение юго-западной Анатолии",
+      "source": "https://en.wikipedia.org/wiki/Caria",
       "tags": [
         "Carian",
-        "Hittite",
-        "Battle",
-        "War",
-        "Egypt"
+        "Settlement",
+        "Hittite"
       ],
-      "type": "military"
+      "type": "historic"
     },
     {
       "date": "01.01.1200",
@@ -85,7 +66,9 @@
         "Carian",
         "Language",
         "Writing",
-        "Culture"
+        "Culture",
+        "Greek",
+        "Phoenician"
       ],
       "type": "cultural"
     },
@@ -128,6 +111,42 @@
     },
     {
       "date": "01.01.1100",
+      "description": "Sardis emerges as principal Lydian settlement; naturally defensible acropolis overlooks fertile Hermus valley, controlling trade routes between Aegean coast and Anatolian interior",
+      "description_ru": "Сарды возникают как главное лидийское поселение; защищенный рельефом акрополь возвышается над плодородной долиной Герма, контролируя торговые пути между побережьем Эгейского моря и внутренними районами Анатолии",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Foundation of Sardis",
+      "name_ru": "Основание Сард",
+      "source": "https://en.wikipedia.org/wiki/Sardis",
+      "tags": [
+        "Lydia",
+        "Capital",
+        "City",
+        "Trade"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1100",
+      "description": "Mylasa emerges as principal religious and political center of Caria; sacred sanctuary of Zeus Carius (war god distinct from Greek Zeus) established, becoming focal point for Carian tribal confederation",
+      "description_ru": "Миляс возникает как главный религиозный и политический центр Карии; здесь учреждено священное святилище Зевса Кария (бога войны, отличного от греческого Зевса)",
+      "era": "BC",
+      "latitude": 37.3092,
+      "longitude": 27.7842,
+      "name": "Mylasa Becomes Carian Center",
+      "name_ru": "Миляс становится центром Карии",
+      "source": "https://en.wikipedia.org/wiki/Mylasa",
+      "tags": [
+        "Carian",
+        "Religious",
+        "City",
+        "Temple"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.1100",
       "description": "Phrygians develop distinctive musical tradition centered on double-piped aulos instrument; Phrygian mode becomes fundamental to Greek music theory and associated with ecstatic religious rites",
       "description_ru": "Фригийцы развивают характерную музыкальную традицию, основанную на двухтрубном инструменте авлос; фригийский лад становится фундаментальным для греческой музыкальной теории и ассоциируется с экстатическими религиозными обрядами",
       "era": "BC",
@@ -144,42 +163,6 @@
         "Religious"
       ],
       "type": "cultural"
-    },
-    {
-      "date": "01.01.1100",
-      "description": "Mylasa emerges as principal religious and political center of Caria; sacred sanctuary of Zeus Carius (war god distinct from Greek Zeus) established, becoming focal point for Carian tribal confederation",
-      "description_ru": "Миласа возникает как главный религиозный и политический центр Карии; учреждено священное святилище Зевса Кария (бога войны, отличного от греческого Зевса), становящееся центром карийской племенной конфедерации",
-      "era": "BC",
-      "latitude": 37.3092,
-      "longitude": 27.7842,
-      "name": "Mylasa Becomes Carian Center",
-      "name_ru": "Миласа становится центром Карии",
-      "source": "https://en.wikipedia.org/wiki/Mylasa",
-      "tags": [
-        "Carian",
-        "Religious",
-        "City",
-        "Temple"
-      ],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.1100",
-      "description": "Sardis emerges as principal Lydian settlement; naturally defensible acropolis overlooks fertile Hermus valley, controlling trade routes between Aegean coast and Anatolian interior",
-      "description_ru": "Сарды возникают как главное лидийское поселение; защищенный рельефом акрополь возвышается над плодородной долиной Герма, контролируя торговые пути между побережьем Эгейского моря и внутренними районами Анатолии",
-      "era": "BC",
-      "latitude": 38.4852,
-      "longitude": 28.0428,
-      "name": "Foundation of Sardis",
-      "name_ru": "Основание Сард",
-      "source": "https://en.wikipedia.org/wiki/Sardis",
-      "tags": [
-        "Lydia",
-        "Capital",
-        "City",
-        "Trade"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.1050",
@@ -201,6 +184,25 @@
     },
     {
       "date": "01.01.1000",
+      "description": "Heraclid dynasty establishes rule over Lydia; Greek traditions claim dynasty descended from Heracles through his son Alcaeus, ruling for 505 years with 22 kings",
+      "description_ru": "Династия Гераклидов устанавливает власть над Лидией; греческие традиции утверждают, что династия произошла от Геракла через его сына Алкея",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Heraclid Dynasty Founded",
+      "name_ru": "Основание династии Гераклидов",
+      "source": "https://en.wikipedia.org/wiki/Heraclids",
+      "tags": [
+        "Lydia",
+        "Dynasty",
+        "Kingdom",
+        "Greek",
+        "Heraclid"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1000",
       "description": "Phrygian Kingdom consolidates under central monarchy at Gordion; royal dynasty establishes control over trade routes connecting Asia to Aegean, accumulating wealth from tolls and commerce",
       "description_ru": "Фригийское царство консолидируется под центральной монархией в Гордионе; царская династия устанавливает контроль над торговыми путями, соединяющими Азию с Эгейским морем, накапливая богатство от пошлин и коммерции",
       "era": "BC",
@@ -219,23 +221,23 @@
       "type": "political"
     },
     {
-      "date": "01.01.1000",
-      "description": "Heraclid dynasty establishes rule over Lydia; Greek traditions claim dynasty descended from Heracles through his son Alcaeus, ruling for 505 years with 22 kings",
-      "description_ru": "Династия Гераклидов устанавливает власть над Лидией; греческие традиции утверждают, что династия произошла от Геракла через его сына Алкея",
+      "date": "01.01.0950",
+      "description": "Phrygians perfect woodworking techniques using abundant Anatolian forests; produce intricate furniture inlaid with geometric patterns and bronze fittings for elite tombs and palaces",
+      "description_ru": "Фригийцы совершенствуют технику обработки дерева, используя обильные анатолийские леса; производят замысловатую мебель с геометрическими узорами и бронзовой фурнитурой для элитных гробниц и дворцов",
       "era": "BC",
-      "latitude": 38.4852,
-      "longitude": 28.0428,
-      "name": "Heraclid Dynasty Founded",
-      "name_ru": "Основание династии Гераклидов",
-      "source": "https://en.wikipedia.org/wiki/Heraclids",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Phrygian Woodworking Mastery",
+      "name_ru": "Мастерство фригийской деревообработки",
+      "source": "https://en.wikipedia.org/wiki/Phrygia",
       "tags": [
-        "Lydia",
-        "Dynasty",
-        "Kingdom",
-        "Greek",
-        "Heraclid"
+        "Phrygian",
+        "Technology",
+        "Art",
+        "Craftsmanship",
+        "Wood"
       ],
-      "type": "political"
+      "type": "cultural"
     },
     {
       "date": "01.01.0950",
@@ -257,23 +259,24 @@
       "type": "scientific"
     },
     {
-      "date": "01.01.0950",
-      "description": "Phrygians perfect woodworking techniques using abundant Anatolian forests; produce intricate furniture inlaid with geometric patterns and bronze fittings for elite tombs and palaces",
-      "description_ru": "Фригийцы совершенствуют технику обработки дерева, используя обильные анатолийские леса; производят замысловатую мебель с геометрическими узорами и бронзовой фурнитурой для элитных гробниц и дворцов",
+      "date": "01.01.0900",
+      "description": "Lydian Kingdom expands control over Greek Ionian cities on Aegean coast; imposes tribute while allowing cities substantial autonomy, beginning pattern of Lydian-Greek interaction",
+      "description_ru": "Лидийское царство подчиняет греческие ионийские города на побережье Эгейского моря; собирает дань, позволяя городам существенную автономию и выстраивая модель лидийско-греческого взаимодействия",
       "era": "BC",
-      "latitude": 39.6511,
-      "longitude": 31.9958,
-      "name": "Phrygian Woodworking Mastery",
-      "name_ru": "Мастерство фригийской деревообработки",
-      "source": "https://en.wikipedia.org/wiki/Phrygia",
+      "latitude": 38,
+      "longitude": 27,
+      "name": "Lydian Control of Ionia",
+      "name_ru": "Лидийский контроль над Ионией",
+      "source": "https://en.wikipedia.org/wiki/Lydia",
       "tags": [
-        "Phrygian",
-        "Technology",
-        "Art",
-        "Craftsmanship",
-        "Wood"
+        "Lydia",
+        "Greek",
+        "Conquest",
+        "Ionian",
+        "Expansion",
+        "Tribute"
       ],
-      "type": "cultural"
+      "type": "military"
     },
     {
       "date": "01.01.0900",
@@ -306,30 +309,8 @@
       "source": "https://en.wikipedia.org/wiki/Carians",
       "tags": [
         "Carian",
-        "Military",
-        "Mercenary",
-        "War",
-        "Greek"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0900",
-      "description": "Lydian Kingdom expands control over Greek Ionian cities on Aegean coast; imposes tribute while allowing cities substantial autonomy, beginning pattern of Lydian-Greek interaction",
-      "description_ru": "Лидийское царство подчиняет греческие ионийские города на побережье Эгейского моря; собирает дань, позволяя городам существенную автономию и выстраивая модель лидийско-греческого взаимодействия",
-      "era": "BC",
-      "latitude": 38,
-      "longitude": 27,
-      "name": "Lydian Control of Ionia",
-      "name_ru": "Лидийский контроль над Ионией",
-      "source": "https://en.wikipedia.org/wiki/Lydia",
-      "tags": [
-        "Lydia",
         "Greek",
-        "Conquest",
-        "Ionian",
-        "Expansion",
-        "Tribute"
+        "Mercenaries"
       ],
       "type": "military"
     },
@@ -415,7 +396,7 @@
       "latitude": 39.6511,
       "longitude": 31.9958,
       "name": "King Midas Assumes Throne",
-      "name_ru": "Царь Мидас восходит на трон",
+      "name_ru": "Царь Мидас восходит на трон Фригии",
       "source": "https://en.wikipedia.org/wiki/Midas",
       "tags": [
         "Phrygian",
@@ -473,7 +454,7 @@
       "latitude": 40,
       "longitude": 33,
       "name": "Midas's Eastern Expansion",
-      "name_ru": "Восточная экспансия Мидаса",
+      "name_ru": "Восточная экспансия Фригии",
       "source": "https://en.wikipedia.org/wiki/Midas",
       "tags": [
         "Phrygian",
@@ -592,9 +573,7 @@
       "tags": [
         "Carian",
         "Egypt",
-        "Military",
-        "Mercenary",
-        "Settlement"
+        "Mercenaries"
       ],
       "type": "military"
     },
@@ -862,24 +841,6 @@
     },
     {
       "date": "01.01.0620",
-      "description": "Phrygian territories increasingly dominated by expanding Lydian Kingdom; local rulers maintain autonomy in exchange for tribute and military alliance with Lydian monarchs",
-      "description_ru": "Фригийские территории все больше подчиняются расширяющемуся Лидийскому царству; местные правители сохраняют автономию в обмен на дань и военный союз с лидийскими монархами",
-      "era": "BC",
-      "latitude": 39.6511,
-      "longitude": 31.9958,
-      "name": "Lydian Dominance Over Phrygia",
-      "name_ru": "Лидийское господство над Фригией",
-      "source": "https://en.wikipedia.org/wiki/Phrygia",
-      "tags": [
-        "Phrygian",
-        "Lydia",
-        "Vassalage",
-        "Mermnad"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0620",
       "description": "Cimmerian threat finally eliminated as Lydians and Assyrians coordinate military campaigns; surviving nomads absorbed into Anatolian populations or retreat to steppes",
       "description_ru": "Объединившись, ассирийцам и лидийцам удается подавить киммерийцев; выжившие кочевники поглощены анатолийским населением или отступают в степи",
       "era": "BC",
@@ -895,6 +856,24 @@
         "Mermnad"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0620",
+      "description": "Phrygian territories increasingly dominated by expanding Lydian Kingdom; local rulers maintain autonomy in exchange for tribute and military alliance with Lydian monarchs",
+      "description_ru": "Фригийские территории все больше подчиняются расширяющемуся Лидийскому царству; местные правители сохраняют автономию в обмен на дань и военный союз с лидийскими монархами",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Lydian Dominance Over Phrygia",
+      "name_ru": "Лидийское господство над Фригией",
+      "source": "https://en.wikipedia.org/wiki/Phrygia",
+      "tags": [
+        "Mermnad",
+        "Phrygian",
+        "Lydia",
+        "Vassalage"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.0615",
@@ -1129,25 +1108,6 @@
     },
     {
       "date": "01.01.0550",
-      "description": "Lydian Kingdom under Croesus reaches peak prosperity; Sardis becomes cosmopolitan center where Greek philosophers like Thales and Solon visit royal court for intellectual exchange",
-      "description_ru": "Лидийское царство под Крезом достигает пика процветания; Сарды становятся космополитическим центром, где греческие философы, такие как Фалес и Солон, посещают царский двор для интеллектуального обмена",
-      "era": "BC",
-      "latitude": 38.4852,
-      "longitude": 28.0428,
-      "name": "Lydia at Cultural Peak",
-      "name_ru": "Лидия на культурном пике",
-      "source": "https://en.wikipedia.org/wiki/Croesus",
-      "tags": [
-        "Lydia",
-        "Greek",
-        "Culture",
-        "Philosophy",
-        "Golden Age"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0550",
       "description": "Croesus introduces pure gold and pure silver coinage, replacing electrum currency; innovation creates first bimetallic monetary system with standardized exchange rate between gold and silver",
       "description_ru": "Крез вводит чистую золотую и чистую серебряную монету, заменяя электрумную валюту; инновация создает первую биметаллическую денежную систему со стандартизированным обменным курсом между золотом и серебром",
       "era": "BC",
@@ -1164,6 +1124,25 @@
         "Mermnad"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0550",
+      "description": "Lydian Kingdom under Croesus reaches peak prosperity; Sardis becomes cosmopolitan center where Greek philosophers like Thales and Solon visit royal court for intellectual exchange",
+      "description_ru": "Лидийское царство под Крезом достигает пика процветания; Сарды становятся космополитическим центром, где греческие философы, такие как Фалес и Солон, посещают царский двор для интеллектуального обмена",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Lydia at Cultural Peak",
+      "name_ru": "Лидия на культурном пике",
+      "source": "https://en.wikipedia.org/wiki/Croesus",
+      "tags": [
+        "Lydia",
+        "Greek",
+        "Culture",
+        "Philosophy",
+        "Golden Age"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0548",
@@ -1193,7 +1172,7 @@
       "latitude": 38.4825,
       "longitude": 22.5011,
       "name": "Oracle's Ambiguous Prophecy",
-      "name_ru": "Двусмысленное пророчество Оракула",
+      "name_ru": "Пророчество Оракула Крезу",
       "source": "https://en.wikipedia.org/wiki/Croesus",
       "tags": [
         "Lydia",
@@ -1213,7 +1192,7 @@
       "latitude": 38.4852,
       "longitude": 28.0428,
       "name": "Anti-Persian Coalition",
-      "name_ru": "Антиперсидская коалиция",
+      "name_ru": "Антиперсидская коалиция Креза",
       "source": "https://en.wikipedia.org/wiki/Croesus",
       "tags": [
         "Lydia",
@@ -1274,8 +1253,7 @@
       "tags": [
         "Carian",
         "Persian",
-        "Conquest",
-        "Fall"
+        "Conquest"
       ],
       "type": "military"
     },
@@ -1312,40 +1290,19 @@
         "Greek",
         "History",
         "Culture",
-        "Philosophy"
+        "Herodotus"
       ],
       "type": "cultural"
     },
     {
-      "date": "01.09.0480",
-      "description": "Queen Artemisia I of Halicarnassus commands 70 Carian ships in Persian fleet at Battle of Salamis; Herodotus reports Xerxes praised her tactical advice and bravery above all admirals",
-      "description_ru": "Царица Артемисия I Галикарнасская командует 70 карийскими кораблями в персидском флоте в битве при Саламине; Геродот сообщает, что Ксеркс хвалил ее тактические советы и храбрость превыше всех адмиралов",
-      "era": "BC",
-      "latitude": 37.9647,
-      "longitude": 23.5561,
-      "name": "Artemisia I at Battle of Salamis",
-      "name_ru": "Артемисия I в битве при Саламине",
-      "source": "https://en.wikipedia.org/wiki/Artemisia_I_of_Caria",
-      "tags": [
-        "Carian",
-        "Persian",
-        "Battle",
-        "Greek",
-        "War",
-        "Naval",
-        "Women"
-      ],
-      "type": "military"
-    },
-    {
       "date": "01.01.0404",
       "description": "Hecatomnus appointed Persian satrap of Caria; founds Hecatomnid dynasty by consolidating power and moving capital from Halicarnassus to Mylasa, beginning Caria's golden age",
-      "description_ru": "Гекатомн назначен персидским сатрапом Карии; основывает династию Гекатомнидов, консолидируя власть и перенося столицу из Галикарнаса в Миласу, начиная золотой век Карии",
+      "description_ru": "Гекатомн назначен персидским сатрапом Карии; основывает династию Гекатомнидов и переносит столицу из Галикарнаса в Миляс",
       "era": "BC",
       "latitude": 37.3092,
       "longitude": 27.7842,
       "name": "Hecatomnus Founds Dynasty",
-      "name_ru": "Гекатомн основывает династию",
+      "name_ru": "Гекатомн - сатрап Карии",
       "source": "https://en.wikipedia.org/wiki/Hecatomnus",
       "tags": [
         "Carian",
@@ -1358,30 +1315,30 @@
     {
       "date": "01.01.0377",
       "description": "Mausolus becomes satrap after Hecatomnus's death; most powerful and influential Hecatomnid ruler begins ambitious program of Hellenization while maintaining Persian loyalty",
-      "description_ru": "Мавсол становится сатрапом после смерти Гекатомна; самый могущественный и влиятельный правитель Гекатомнидов начинает амбициозную программу эллинизации, сохраняя персидскую лояльность",
+      "description_ru": "Мавсол становится сатрапом после смерти Гекатомна; самый могущественный и влиятельный правитель Гекатомнидов начинает амбициозную программу эллинизации, сохраняя лояльность Персии",
       "era": "BC",
       "latitude": 37.3092,
       "longitude": 27.7842,
       "name": "Mausolus Becomes Satrap",
-      "name_ru": "Мавсол становится сатрапом",
+      "name_ru": "Мавсол - сатрап Карии",
       "source": "https://en.wikipedia.org/wiki/Mausolus",
       "tags": [
         "Carian",
         "Persian",
         "Dynasty",
-        "Succession"
+        "King"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0370",
       "description": "Mausolus moves capital from Mylasa back to Halicarnassus; begins massive urban development project transforming city with monumental architecture, fortifications, and harbor improvements",
-      "description_ru": "Мавсол переносит столицу из Миласы обратно в Галикарнас; начинает масштабный проект городского развития, преобразуя город монументальной архитектурой, укреплениями и улучшениями гавани",
+      "description_ru": "Мавсол переносит столицу из Миляса обратно в Галикарнас. Мавсол и Артемиссия тратят огромные суммы, чтобы развивать и украшать город - развивают гавань, строят фортификации, монументальные храмы, украшают город мраморными статуями.",
       "era": "BC",
       "latitude": 37.0379,
       "longitude": 27.4241,
       "name": "Halicarnassus Becomes Capital",
-      "name_ru": "Галикарнас становится столицей",
+      "name_ru": "Галикарнас - столица Карии",
       "source": "https://en.wikipedia.org/wiki/Halicarnassus",
       "tags": [
         "Carian",
@@ -1405,8 +1362,10 @@
       "tags": [
         "Carian",
         "Persian",
-        "Revolt",
-        "Independence"
+        "Independence",
+        "Rebellion",
+        "Civil War",
+        "Achaemenid"
       ],
       "type": "political"
     },
@@ -1423,38 +1382,19 @@
       "tags": [
         "Carian",
         "Dynasty",
-        "Marriage",
-        "Women"
+        "Marriage"
       ],
       "type": "political"
     },
     {
-      "date": "01.01.0353",
-      "description": "Mausolus dies after 24-year reign; Artemisia II succeeds him as sole ruler, grief-stricken but politically capable, continuing his policies and construction projects",
-      "description_ru": "Мавсол умирает после 24-летнего правления; Артемисия II наследует ему как единоличный правитель, охваченная горем, но политически способная, продолжая его политику и строительные проекты",
-      "era": "BC",
-      "latitude": 37.0379,
-      "longitude": 27.4241,
-      "name": "Death of Mausolus",
-      "name_ru": "Смерть Мавсола",
-      "source": "https://en.wikipedia.org/wiki/Mausolus",
-      "tags": [
-        "Carian",
-        "Death",
-        "Dynasty",
-        "Women"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0353",
+      "date": "01.02.0353",
       "description": "Artemisia II commissions Mausoleum at Halicarnassus as tomb for Mausolus; hires Greek architects Satyros and Pythius plus four greatest sculptors of age - Scopas, Bryaxis, Leochares, Timotheus",
       "description_ru": "Артемисия II заказывает Мавзолей в Галикарнасе как гробницу для Мавсола; нанимает греческих архитекторов Сатироса и Пифия плюс четырех величайших скульпторов эпохи - Скопаса, Бриаксиса, Леохареса, Тимофея",
       "era": "BC",
       "latitude": 37.0379,
       "longitude": 27.4241,
       "name": "Commission of the Mausoleum",
-      "name_ru": "Заказ Мавзолея",
+      "name_ru": "Заказ Галикарнасского Мавзолея",
       "source": "https://en.wikipedia.org/wiki/Mausoleum_at_Halicarnassus",
       "tags": [
         "Carian",
@@ -1467,25 +1407,23 @@
       "type": "historic"
     },
     {
-      "date": "01.01.0350",
-      "description": "Mausoleum at Halicarnassus completed; stands 45 meters tall with elaborate sculptures depicting Greeks battling Amazons and centaurs, crowned by quadriga statue - instantly recognized as one of Seven Wonders of Ancient World",
-      "description_ru": "Мавзолей в Галикарнасе завершен; высотой 45 метров с великолепными скульптурами, изображающими греков, сражающихся с амазонками и кентаврами, увенчанный статуей квадриги - мгновенно признан одним из семи чудес древнего мира",
+      "date": "01.01.0353",
+      "description": "Mausolus dies after 24-year reign; Artemisia II succeeds him as sole ruler, grief-stricken but politically capable, continuing his policies and construction projects",
+      "description_ru": "Мавсол умирает после 24 лет правления; Артемисия II наследует ему как единоличный правитель, охваченная горем, но продолжает его политику и строительные проекты",
       "era": "BC",
       "latitude": 37.0379,
       "longitude": 27.4241,
-      "name": "Completion of Mausoleum",
-      "name_ru": "Завершение Мавзолея",
-      "source": "https://en.wikipedia.org/wiki/Mausoleum_at_Halicarnassus",
+      "name": "Death of Mausolus",
+      "name_ru": "Смерть карийского сатрапа Мавсола",
+      "source": "https://en.wikipedia.org/wiki/Mausolus",
       "tags": [
         "Carian",
-        "Architecture",
-        "Tomb",
-        "Wonder",
-        "Monument",
-        "Greek",
-        "Art"
+        "Death",
+        "Dynasty",
+        "Female",
+        "King"
       ],
-      "type": "historic"
+      "type": "political"
     },
     {
       "date": "01.01.0351",
@@ -1495,21 +1433,40 @@
       "latitude": 37.0379,
       "longitude": 27.4241,
       "name": "Death of Artemisia II",
-      "name_ru": "Смерть Артемисии II",
+      "name_ru": "Смерть карийской царицы Артемисии II",
       "source": "https://en.wikipedia.org/wiki/Artemisia_II_of_Caria",
       "tags": [
         "Carian",
         "Death",
-        "Dynasty",
-        "Women",
-        "Legend"
+        "Dynasty"
       ],
       "type": "political"
     },
     {
-      "date": "01.01.0334",
+      "date": "01.01.0350",
+      "description": "Mausoleum at Halicarnassus completed; stands 45 meters tall with elaborate sculptures depicting Greeks battling Amazons and centaurs, crowned by quadriga statue - instantly recognized as one of Seven Wonders of Ancient World",
+      "description_ru": "Мавзолей в Галикарнасе завершен; высотой 45 метров с великолепными скульптурами, изображающими греков, сражающихся с амазонками и кентаврами, увенчанный статуей квадриги - мгновенно признан одним из семи чудес древнего мира",
+      "era": "BC",
+      "latitude": 37.0379,
+      "longitude": 27.4241,
+      "name": "Completion of Mausoleum",
+      "name_ru": "Завершение Галикарнасского Мавзолея",
+      "source": "https://en.wikipedia.org/wiki/Mausoleum_at_Halicarnassus",
+      "tags": [
+        "Carian",
+        "Architecture",
+        "Tomb",
+        "Monument",
+        "Greek",
+        "Art",
+        "Ancient Wonders"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.07.0334",
       "description": "Alexander the Great besieges Halicarnassus during conquest of Asia; despite fierce resistance led by Persian commanders Memnon and Orontobates, city falls after prolonged siege, partially destroying Mausoleum's precinct",
-      "description_ru": "Александр Великий осаждает Галикарнас во время завоевания Азии; несмотря на ожесточенное сопротивление под руководством персидских командиров Мемнона и Оронтобата, город падает после длительной осады, частично разрушая участок Мавзолея",
+      "description_ru": "Александр Великий осаждает Галикарнас во время завоевания Азии, чтобы лишить Персию морской базы; несмотря на ожесточенное сопротивление под руководством персидских командиров Мемнона и Оронтобата, город сдается после длительной осады. Мавзолей подвергается частичному разрушению",
       "era": "BC",
       "latitude": 37.0379,
       "longitude": 27.4241,
@@ -1522,12 +1479,13 @@
         "Conquest",
         "Battle",
         "Siege",
-        "Macedonian"
+        "Macedonian",
+        "Alexander the Great"
       ],
       "type": "military"
     },
     {
-      "date": "01.01.0334",
+      "date": "01.06.0334",
       "description": "Ada, last Hecatomnid ruler, surrenders fortress of Alinda to Alexander and adopts him as her son; Alexander restores her rule over Caria as reward, ending Persian period and beginning Hellenistic era",
       "description_ru": "Ада, последний правитель Гекатомнидов, сдает крепость Алинда Александру и усыновляет его; Александр восстанавливает ее правление над Карией в награду, завершая персидский период и начиная эллинистическую эру",
       "era": "BC",
@@ -1539,10 +1497,11 @@
       "tags": [
         "Carian",
         "Greek",
-        "Women",
         "Alliance",
         "Macedonian",
-        "Fall"
+        "Female",
+        "Vassalage",
+        "Alexander the Great"
       ],
       "type": "political"
     }

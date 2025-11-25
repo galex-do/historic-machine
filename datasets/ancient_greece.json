@@ -1,5 +1,5 @@
 {
-  "description": "Comprehensive dataset covering ancient Greek history from Dark Ages to the rise of Alexander the Great (1100-336 BC), including city-state development, democracy, philosophy, science, Olympic Games, cultural achievements, Peloponnesian War, and major personalities",
+  "description": "Dataset imported with 95 events",
   "events": [
     {
       "date": "01.01.1100",
@@ -9,31 +9,31 @@
       "latitude": 37.5,
       "longitude": 23,
       "name": "Greek Dark Ages Begin",
-      "name_ru": "Начало греческих темных веков",
+      "name_ru": "Греческие темные века",
       "source": "https://en.wikipedia.org/wiki/Greek_Dark_Ages",
       "tags": [
         "Greek",
         "Dark Ages",
-        "Fall",
-        "Bronze Age"
+        "Decline"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.1050",
       "description": "Dorian Greeks complete migration into Peloponnese, displacing earlier populations; traditionally blamed for Mycenaean collapse, though modern scholarship questions extent of invasion",
-      "description_ru": "Дорийские греки завершают миграцию на Пелопоннес, вытесняя более ранние популяции; традиционно обвиняемые в коллапсе Микен, хотя современная наука ставит под сомнение масштаб вторжения",
+      "description_ru": "Дорийские греки завершают миграцию на Пелопоннес, вытесняя более ранние популяции; дорийцев винят в падении Микен, хотя современная наука ставит под сомнение масштаб вторжения",
       "era": "BC",
       "latitude": 37.5,
       "longitude": 22.5,
       "name": "Dorian Migration",
-      "name_ru": "Дорийская миграция",
+      "name_ru": "Дорийская миграция на Пелопоннес",
       "source": "https://en.wikipedia.org/wiki/Dorian_invasion",
       "tags": [
-        "Greek",
-        "Migration",
         "Dorian",
-        "Settlement"
+        "Settlement",
+        "Migration",
+        "Uncertain",
+        "Greek"
       ],
       "type": "historic"
     },
@@ -48,18 +48,18 @@
       "name_ru": "Ионийская колонизация Малой Азии",
       "source": "https://en.wikipedia.org/wiki/Ionia",
       "tags": [
-        "Greek",
         "Ionian",
-        "Colony",
+        "Greek",
         "Settlement",
-        "Migration"
+        "Migration",
+        "Colonization"
       ],
       "type": "historic"
     },
     {
-      "date": "01.01.0900",
+      "date": "01.01.0950",
       "description": "First Greek polis (city-state) structures emerge with distinct urban centers, citizen assemblies, and shared religious sanctuaries; marks transition from tribal to civic organization",
-      "description_ru": "Первые структуры греческого полиса (города-государства) появляются с отдельными городскими центрами, гражданскими собраниями и общими религиозными святилищами; знаменует переход от племенной к гражданской организации",
+      "description_ru": "Формируется концепция греческого полиса (города-государства) с городским центром, гражданскими собраниями и общими религиозными святилищами; греки переходят от племенной к гражданской организации",
       "era": "BC",
       "latitude": 37.9838,
       "longitude": 23.7275,
@@ -67,10 +67,9 @@
       "name_ru": "Возникновение греческого полиса",
       "source": "https://en.wikipedia.org/wiki/Polis",
       "tags": [
+        "Administration",
         "Greek",
-        "City",
-        "Political",
-        "Polis"
+        "City"
       ],
       "type": "political"
     },
@@ -85,11 +84,11 @@
       "name_ru": "Гомер создает Илиаду и Одиссею",
       "source": "https://en.wikipedia.org/wiki/Homer",
       "tags": [
-        "Greek",
+        "Legend",
         "Literature",
+        "Greek",
         "Culture",
-        "Poetry",
-        "Legend"
+        "Poetry"
       ],
       "type": "cultural"
     },
@@ -123,18 +122,18 @@
       "name_ru": "Первые Олимпийские игры",
       "source": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games",
       "tags": [
-        "Greek",
-        "Olympic",
-        "Sport",
+        "Culture",
         "Religious",
-        "Culture"
+        "Sport",
+        "Olympic",
+        "Greek"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0750",
       "description": "Greek colonization movement begins as city-states establish settlements across Mediterranean and Black Sea; over 500 colonies founded from Spain to Crimea, spreading Greek culture and commerce",
-      "description_ru": "Греческое колонизационное движение начинается, когда города-государства основывают поселения по всему Средиземноморью и Черному морю; основано более 500 колоний от Испании до Крыма, распространяя греческую культуру и торговлю",
+      "description_ru": "Греки основывают поселения по всему побережью Средиземноморья и Черного моря; основано более 500 колоний от Испании до Крыма, где распространяется греческая культура и идет торговля",
       "era": "BC",
       "latitude": 37.5,
       "longitude": 23,
@@ -142,30 +141,30 @@
       "name_ru": "Великая греческая колонизация",
       "source": "https://en.wikipedia.org/wiki/Greek_colonisation",
       "tags": [
-        "Greek",
-        "Colony",
-        "Trade",
         "Expansion",
-        "Settlement"
+        "Trade",
+        "Settlement",
+        "Colonization",
+        "Greek"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0735",
       "description": "Corinth establishes Syracuse in Sicily, which becomes largest and wealthiest Greek city in western Mediterranean; population eventually reaches 500,000, rivaling Athens",
-      "description_ru": "Коринф основывает Сиракузы на Сицилии, которые становятся крупнейшим и богатейшим греческим городом в западном Средиземноморье; население в конечном итоге достигает 500 000, соперничая с Афинами",
+      "description_ru": "Коринф основывает Сиракузы на Сицилии; Сиракузы станут крупнейшим и богатейшим греческим городом в западном Средиземноморье с пиком населения 500 тысяч; Сиракузы будут составлять конкуренцию Афинам",
       "era": "BC",
       "latitude": 37.0755,
       "longitude": 15.2866,
       "name": "Foundation of Syracuse",
-      "name_ru": "Основание Сиракуз",
+      "name_ru": "Основание греческих Сиракуз",
       "source": "https://en.wikipedia.org/wiki/Syracuse,_Sicily",
       "tags": [
-        "Greek",
-        "Colony",
         "City",
         "Settlement",
-        "Sicily"
+        "Sicily",
+        "Colonization",
+        "Greek"
       ],
       "type": "historic"
     },
@@ -180,11 +179,11 @@
       "name_ru": "Теогония и Труды Гесиода",
       "source": "https://en.wikipedia.org/wiki/Hesiod",
       "tags": [
-        "Greek",
-        "Literature",
         "Poetry",
-        "Religious",
-        "Culture"
+        "Greek",
+        "Culture",
+        "Literature",
+        "Religious"
       ],
       "type": "cultural"
     },
@@ -199,11 +198,10 @@
       "name_ru": "Спарта завоевывает Мессению",
       "source": "https://en.wikipedia.org/wiki/First_Messenian_War",
       "tags": [
-        "Greek",
-        "Sparta",
-        "War",
         "Conquest",
-        "Slavery"
+        "Slavery",
+        "Spartan",
+        "Greek"
       ],
       "type": "military"
     },
@@ -218,11 +216,11 @@
       "name_ru": "Революция гоплитской войны",
       "source": "https://en.wikipedia.org/wiki/Hoplite",
       "tags": [
+        "Technology",
         "Greek",
         "Military",
         "War",
-        "Innovation",
-        "Technology"
+        "Innovation"
       ],
       "type": "military"
     },
@@ -237,10 +235,10 @@
       "name_ru": "Афинская система архонтов",
       "source": "https://en.wikipedia.org/wiki/Archon",
       "tags": [
-        "Greek",
         "Athens",
         "Political",
-        "Government"
+        "Government",
+        "Greek"
       ],
       "type": "political"
     },
@@ -256,9 +254,9 @@
       "source": "https://en.wikipedia.org/wiki/Cypselus",
       "tags": [
         "Greek",
-        "Corinth",
+        "Political",
         "Tyrant",
-        "Political"
+        "Corinth"
       ],
       "type": "political"
     },
@@ -273,10 +271,10 @@
       "name_ru": "Вторая Мессенская война",
       "source": "https://en.wikipedia.org/wiki/Second_Messenian_War",
       "tags": [
-        "Greek",
-        "Sparta",
         "War",
-        "Rebellion"
+        "Rebellion",
+        "Greek",
+        "Sparta"
       ],
       "type": "military"
     },
@@ -291,10 +289,10 @@
       "name_ru": "Рождение Фалеса Милетского",
       "source": "https://en.wikipedia.org/wiki/Thales_of_Miletus",
       "tags": [
-        "Greek",
         "Philosophy",
-        "Science",
-        "Ionian"
+        "Greek",
+        "Ionian",
+        "Science"
       ],
       "type": "cultural"
     },
@@ -309,10 +307,10 @@
       "name_ru": "Неудачный переворот Килона",
       "source": "https://en.wikipedia.org/wiki/Cylon_of_Athens",
       "tags": [
-        "Greek",
         "Athens",
-        "Political",
-        "Rebellion"
+        "Greek",
+        "Rebellion",
+        "Political"
       ],
       "type": "political"
     },
@@ -327,10 +325,10 @@
       "name_ru": "Законы Дракона",
       "source": "https://en.wikipedia.org/wiki/Draco_(lawgiver)",
       "tags": [
-        "Greek",
         "Athens",
-        "Law",
-        "Political"
+        "Political",
+        "Greek",
+        "Law"
       ],
       "type": "political"
     },
@@ -345,8 +343,8 @@
       "name_ru": "Основание Массалии",
       "source": "https://en.wikipedia.org/wiki/Massalia",
       "tags": [
-        "Greek",
         "Colony",
+        "Greek",
         "Trade",
         "City",
         "Settlement"
@@ -364,12 +362,12 @@
       "name_ru": "Реформы Солона",
       "source": "https://en.wikipedia.org/wiki/Solon",
       "tags": [
+        "Law",
+        "Political",
         "Greek",
         "Athens",
-        "Political",
-        "Law",
-        "Reform",
-        "Democracy"
+        "Democracy",
+        "Reform"
       ],
       "type": "political"
     },
@@ -403,9 +401,9 @@
       "source": "https://en.wikipedia.org/wiki/Pythagoras",
       "tags": [
         "Greek",
-        "Philosophy",
+        "Science",
         "Mathematics",
-        "Science"
+        "Philosophy"
       ],
       "type": "cultural"
     },
@@ -420,10 +418,10 @@
       "name_ru": "Писистрат становится тираном",
       "source": "https://en.wikipedia.org/wiki/Peisistratos",
       "tags": [
+        "Political",
         "Greek",
         "Athens",
-        "Tyrant",
-        "Political"
+        "Tyrant"
       ],
       "type": "political"
     },
@@ -438,10 +436,10 @@
       "name_ru": "Формирование Пелопоннесского союза",
       "source": "https://en.wikipedia.org/wiki/Peloponnesian_League",
       "tags": [
-        "Greek",
         "Sparta",
         "Alliance",
-        "Political"
+        "Political",
+        "Greek"
       ],
       "type": "political"
     },
@@ -456,8 +454,8 @@
       "name_ru": "Космология Анаксимандра",
       "source": "https://en.wikipedia.org/wiki/Anaximander",
       "tags": [
-        "Greek",
         "Philosophy",
+        "Greek",
         "Science",
         "Astronomy",
         "Ionian"
@@ -475,11 +473,11 @@
       "name_ru": "Феспис изобретает драму",
       "source": "https://en.wikipedia.org/wiki/Thespis",
       "tags": [
-        "Greek",
         "Athens",
         "Theater",
         "Culture",
-        "Art"
+        "Art",
+        "Greek"
       ],
       "type": "cultural"
     },
@@ -494,10 +492,10 @@
       "name_ru": "Основание пифагорейской школы",
       "source": "https://en.wikipedia.org/wiki/Pythagoreanism",
       "tags": [
-        "Greek",
-        "Philosophy",
         "Mathematics",
-        "Religious"
+        "Religious",
+        "Greek",
+        "Philosophy"
       ],
       "type": "cultural"
     },
@@ -512,10 +510,10 @@
       "name_ru": "Наследование Писистратидов",
       "source": "https://en.wikipedia.org/wiki/Hippias_(tyrant)",
       "tags": [
-        "Greek",
         "Athens",
-        "Tyrant",
-        "Dynasty"
+        "Dynasty",
+        "Greek",
+        "Tyrant"
       ],
       "type": "political"
     },
@@ -530,11 +528,11 @@
       "name_ru": "Убийство Гиппарха",
       "source": "https://en.wikipedia.org/wiki/Harmodius_and_Aristogeiton",
       "tags": [
-        "Greek",
-        "Athens",
         "Political",
         "Death",
-        "Democracy"
+        "Democracy",
+        "Greek",
+        "Athens"
       ],
       "type": "political"
     },
@@ -549,10 +547,10 @@
       "name_ru": "Изгнание Гиппия",
       "source": "https://en.wikipedia.org/wiki/Hippias_(tyrant)",
       "tags": [
-        "Greek",
         "Athens",
-        "Sparta",
-        "Political"
+        "Greek",
+        "Political",
+        "Sparta"
       ],
       "type": "political"
     },
@@ -567,11 +565,11 @@
       "name_ru": "Клисфеновская демократия",
       "source": "https://en.wikipedia.org/wiki/Cleisthenes",
       "tags": [
-        "Greek",
-        "Athens",
         "Democracy",
+        "Athens",
+        "Reform",
         "Political",
-        "Reform"
+        "Greek"
       ],
       "type": "political"
     },
@@ -587,8 +585,8 @@
       "source": "https://en.wikipedia.org/wiki/Heraclitus",
       "tags": [
         "Greek",
-        "Philosophy",
-        "Ionian"
+        "Ionian",
+        "Philosophy"
       ],
       "type": "cultural"
     },
@@ -603,10 +601,10 @@
       "name_ru": "Рождение Софокла",
       "source": "https://en.wikipedia.org/wiki/Sophocles",
       "tags": [
+        "Culture",
         "Greek",
         "Athens",
-        "Theater",
-        "Culture"
+        "Theater"
       ],
       "type": "cultural"
     },
@@ -622,9 +620,9 @@
       "source": "https://en.wikipedia.org/wiki/Pericles",
       "tags": [
         "Greek",
-        "Athens",
         "Political",
-        "Democracy"
+        "Democracy",
+        "Athens"
       ],
       "type": "political"
     },
@@ -639,10 +637,10 @@
       "name_ru": "Катастрофа у горы Афон",
       "source": "https://en.wikipedia.org/wiki/First_Persian_invasion_of_Greece",
       "tags": [
-        "Greek",
-        "Persian",
+        "Disaster",
         "Naval",
-        "Disaster"
+        "Persian",
+        "Greek"
       ],
       "type": "military"
     },
@@ -657,11 +655,11 @@
       "name_ru": "Первый остракизм",
       "source": "https://en.wikipedia.org/wiki/Ostracism",
       "tags": [
-        "Greek",
         "Athens",
         "Democracy",
+        "Political",
         "Law",
-        "Political"
+        "Greek"
       ],
       "type": "political"
     },
@@ -676,9 +674,9 @@
       "name_ru": "Рождение Еврипида",
       "source": "https://en.wikipedia.org/wiki/Euripides",
       "tags": [
+        "Theater",
         "Greek",
         "Athens",
-        "Theater",
         "Culture"
       ],
       "type": "cultural"
@@ -694,8 +692,8 @@
       "name_ru": "Морская программа Фемистокла",
       "source": "https://en.wikipedia.org/wiki/Themistocles",
       "tags": [
-        "Greek",
         "Athens",
+        "Greek",
         "Naval",
         "Military",
         "Political"
@@ -713,11 +711,11 @@
       "name_ru": "Эсхил 'Персы'",
       "source": "https://en.wikipedia.org/wiki/The_Persians",
       "tags": [
-        "Greek",
         "Athens",
-        "Theater",
+        "Greek",
+        "Art",
         "Culture",
-        "Art"
+        "Theater"
       ],
       "type": "cultural"
     },
@@ -732,9 +730,9 @@
       "name_ru": "Рождение Сократа",
       "source": "https://en.wikipedia.org/wiki/Socrates",
       "tags": [
-        "Greek",
         "Athens",
-        "Philosophy"
+        "Philosophy",
+        "Greek"
       ],
       "type": "cultural"
     },
@@ -749,11 +747,11 @@
       "name_ru": "Радикальные демократические реформы",
       "source": "https://en.wikipedia.org/wiki/Ephialtes",
       "tags": [
-        "Greek",
-        "Athens",
-        "Democracy",
         "Political",
-        "Reform"
+        "Reform",
+        "Athens",
+        "Greek",
+        "Democracy"
       ],
       "type": "political"
     },
@@ -768,10 +766,10 @@
       "name_ru": "Первая Пелопоннесская война",
       "source": "https://en.wikipedia.org/wiki/First_Peloponnesian_War",
       "tags": [
+        "War",
         "Greek",
         "Athens",
-        "Sparta",
-        "War"
+        "Sparta"
       ],
       "type": "military"
     },
@@ -786,9 +784,9 @@
       "name_ru": "Рождение Гиппократа",
       "source": "https://en.wikipedia.org/wiki/Hippocrates",
       "tags": [
-        "Greek",
         "Science",
-        "Medicine"
+        "Medicine",
+        "Greek"
       ],
       "type": "cultural"
     },
@@ -804,8 +802,8 @@
       "source": "https://en.wikipedia.org/wiki/Long_Walls",
       "tags": [
         "Greek",
-        "Athens",
         "Architecture",
+        "Athens",
         "Fortress",
         "Building"
       ],
@@ -822,11 +820,11 @@
       "name_ru": "Орестея Эсхила",
       "source": "https://en.wikipedia.org/wiki/Oresteia",
       "tags": [
-        "Greek",
-        "Athens",
         "Theater",
         "Culture",
-        "Art"
+        "Art",
+        "Athens",
+        "Greek"
       ],
       "type": "cultural"
     },
@@ -842,8 +840,8 @@
       "source": "https://en.wikipedia.org/wiki/Zeno%27s_paradoxes",
       "tags": [
         "Greek",
-        "Philosophy",
-        "Mathematics"
+        "Mathematics",
+        "Philosophy"
       ],
       "type": "cultural"
     },
@@ -858,12 +856,12 @@
       "name_ru": "Начало строительства Парфенона",
       "source": "https://en.wikipedia.org/wiki/Parthenon",
       "tags": [
-        "Greek",
-        "Athens",
         "Architecture",
-        "Temple",
+        "Building",
+        "Athens",
+        "Greek",
         "Art",
-        "Building"
+        "Temple"
       ],
       "type": "historic"
     },
@@ -879,10 +877,10 @@
       "source": "https://en.wikipedia.org/wiki/Thirty_Years%27_Peace",
       "tags": [
         "Greek",
-        "Athens",
         "Sparta",
         "Diplomacy",
-        "Peace"
+        "Peace",
+        "Athens"
       ],
       "type": "political"
     },
@@ -897,9 +895,9 @@
       "name_ru": "Перикл доминирует в Афинах",
       "source": "https://en.wikipedia.org/wiki/Pericles",
       "tags": [
-        "Greek",
-        "Athens",
         "Political",
+        "Athens",
+        "Greek",
         "Democracy"
       ],
       "type": "political"
@@ -915,9 +913,9 @@
       "name_ru": "Статуя Афины Парфенос",
       "source": "https://en.wikipedia.org/wiki/Athena_Parthenos",
       "tags": [
+        "Art",
         "Greek",
         "Athens",
-        "Art",
         "Religious",
         "Gold"
       ],
@@ -935,11 +933,11 @@
       "source": "https://en.wikipedia.org/wiki/Parthenon",
       "tags": [
         "Greek",
-        "Athens",
+        "Art",
         "Architecture",
         "Temple",
         "Religious",
-        "Art"
+        "Athens"
       ],
       "type": "religious"
     },
@@ -954,11 +952,11 @@
       "name_ru": "Статуя Зевса в Олимпии",
       "source": "https://en.wikipedia.org/wiki/Statue_of_Zeus_at_Olympia",
       "tags": [
+        "Temple",
+        "Wonder",
         "Greek",
         "Art",
-        "Religious",
-        "Temple",
-        "Wonder"
+        "Religious"
       ],
       "type": "cultural"
     },
@@ -973,10 +971,10 @@
       "name_ru": "Союз с Керкирой",
       "source": "https://en.wikipedia.org/wiki/Peloponnesian_War",
       "tags": [
-        "Greek",
-        "Athens",
-        "Corinth",
         "Alliance",
+        "Corinth",
+        "Athens",
+        "Greek",
         "Political"
       ],
       "type": "political"
@@ -1011,9 +1009,9 @@
       "source": "https://en.wikipedia.org/wiki/Peloponnesian_War",
       "tags": [
         "Greek",
-        "Athens",
+        "War",
         "Sparta",
-        "War"
+        "Athens"
       ],
       "type": "military"
     },
@@ -1028,10 +1026,10 @@
       "name_ru": "Афинская чума",
       "source": "https://en.wikipedia.org/wiki/Plague_of_Athens",
       "tags": [
-        "Greek",
         "Athens",
         "Disaster",
-        "Death"
+        "Death",
+        "Greek"
       ],
       "type": "historic"
     },
@@ -1046,8 +1044,8 @@
       "name_ru": "Смерть Перикла",
       "source": "https://en.wikipedia.org/wiki/Pericles",
       "tags": [
-        "Greek",
         "Athens",
+        "Greek",
         "Political",
         "Death",
         "Democracy"
@@ -1065,9 +1063,9 @@
       "name_ru": "Рождение Платона",
       "source": "https://en.wikipedia.org/wiki/Plato",
       "tags": [
-        "Greek",
         "Athens",
-        "Philosophy"
+        "Philosophy",
+        "Greek"
       ],
       "type": "cultural"
     },
@@ -1082,10 +1080,10 @@
       "name_ru": "Первая комедия Аристофана",
       "source": "https://en.wikipedia.org/wiki/Aristophanes",
       "tags": [
-        "Greek",
-        "Athens",
         "Theater",
-        "Culture"
+        "Culture",
+        "Athens",
+        "Greek"
       ],
       "type": "cultural"
     },
@@ -1100,11 +1098,11 @@
       "name_ru": "Битва при Сфактерии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Sphacteria",
       "tags": [
-        "Greek",
+        "Battle",
         "Athens",
+        "Greek",
         "Sparta",
-        "War",
-        "Battle"
+        "War"
       ],
       "type": "military"
     },
@@ -1119,10 +1117,10 @@
       "name_ru": "История Геродота",
       "source": "https://en.wikipedia.org/wiki/Histories_(Herodotus)",
       "tags": [
-        "Greek",
         "History",
         "Literature",
-        "Culture"
+        "Culture",
+        "Greek"
       ],
       "type": "cultural"
     },
@@ -1137,8 +1135,8 @@
       "name_ru": "Битва при Амфиполе",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Amphipolis",
       "tags": [
-        "Greek",
         "Athens",
+        "Greek",
         "Sparta",
         "War",
         "Battle",
@@ -1157,11 +1155,11 @@
       "name_ru": "Никиев мир",
       "source": "https://en.wikipedia.org/wiki/Peace_of_Nicias",
       "tags": [
-        "Greek",
         "Athens",
-        "Sparta",
+        "Diplomacy",
+        "Greek",
         "Peace",
-        "Diplomacy"
+        "Sparta"
       ],
       "type": "political"
     },
@@ -1176,10 +1174,10 @@
       "name_ru": "Мелийская резня",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Melos",
       "tags": [
-        "Greek",
-        "Athens",
         "War",
-        "Conquest"
+        "Conquest",
+        "Greek",
+        "Athens"
       ],
       "type": "military"
     },
@@ -1213,10 +1211,10 @@
       "name_ru": "Переворот Четырехсот",
       "source": "https://en.wikipedia.org/wiki/Athenian_coup_of_411_BC",
       "tags": [
-        "Greek",
-        "Athens",
+        "Rebellion",
         "Political",
-        "Rebellion"
+        "Athens",
+        "Greek"
       ],
       "type": "political"
     },
@@ -1232,10 +1230,10 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Arginusae",
       "tags": [
         "Greek",
-        "Athens",
-        "War",
+        "Battle",
         "Naval",
-        "Battle"
+        "War",
+        "Athens"
       ],
       "type": "military"
     },
@@ -1250,12 +1248,12 @@
       "name_ru": "Битва при Эгоспотамах",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Aegospotami",
       "tags": [
+        "Battle",
         "Greek",
         "Athens",
         "Sparta",
         "War",
-        "Naval",
-        "Battle"
+        "Naval"
       ],
       "type": "military"
     },
@@ -1270,11 +1268,11 @@
       "name_ru": "Капитуляция Афин",
       "source": "https://en.wikipedia.org/wiki/Peloponnesian_War",
       "tags": [
+        "Fall",
         "Greek",
         "Athens",
         "Sparta",
-        "War",
-        "Fall"
+        "War"
       ],
       "type": "military"
     },
@@ -1290,9 +1288,9 @@
       "source": "https://en.wikipedia.org/wiki/Thirty_Tyrants",
       "tags": [
         "Greek",
-        "Athens",
+        "Political",
         "Tyrant",
-        "Political"
+        "Athens"
       ],
       "type": "political"
     },
@@ -1308,9 +1306,9 @@
       "source": "https://en.wikipedia.org/wiki/Thirty_Tyrants",
       "tags": [
         "Greek",
-        "Athens",
         "Democracy",
-        "Political"
+        "Political",
+        "Athens"
       ],
       "type": "political"
     },
@@ -1325,11 +1323,11 @@
       "name_ru": "Смерть Сократа",
       "source": "https://en.wikipedia.org/wiki/Trial_of_Socrates",
       "tags": [
-        "Greek",
         "Athens",
-        "Philosophy",
         "Death",
-        "Law"
+        "Law",
+        "Greek",
+        "Philosophy"
       ],
       "type": "cultural"
     },
@@ -1344,10 +1342,10 @@
       "name_ru": "Начало Коринфской войны",
       "source": "https://en.wikipedia.org/wiki/Corinthian_War",
       "tags": [
+        "Thebes",
         "Greek",
         "Athens",
         "Sparta",
-        "Thebes",
         "War"
       ],
       "type": "military"
@@ -1363,10 +1361,10 @@
       "name_ru": "Революция пельтастов",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Lechaeum",
       "tags": [
-        "Greek",
-        "Athens",
         "Military",
-        "Innovation"
+        "Innovation",
+        "Greek",
+        "Athens"
       ],
       "type": "military"
     },
@@ -1381,11 +1379,11 @@
       "name_ru": "Царский мир",
       "source": "https://en.wikipedia.org/wiki/Peace_of_Antalcidas",
       "tags": [
-        "Greek",
-        "Persian",
         "Sparta",
+        "Persian",
         "Peace",
-        "Diplomacy"
+        "Diplomacy",
+        "Greek"
       ],
       "type": "political"
     },
@@ -1400,10 +1398,10 @@
       "name_ru": "Рождение Аристотеля",
       "source": "https://en.wikipedia.org/wiki/Aristotle",
       "tags": [
-        "Greek",
         "Philosophy",
         "Science",
-        "Macedon"
+        "Macedon",
+        "Greek"
       ],
       "type": "cultural"
     },
@@ -1418,10 +1416,10 @@
       "name_ru": "Спартанский захват Фив",
       "source": "https://en.wikipedia.org/wiki/Theban%E2%80%93Spartan_War",
       "tags": [
-        "Greek",
         "Sparta",
         "Thebes",
-        "Political"
+        "Political",
+        "Greek"
       ],
       "type": "military"
     },
@@ -1436,10 +1434,10 @@
       "name_ru": "Освобождение Фив",
       "source": "https://en.wikipedia.org/wiki/Liberation_of_Thebes",
       "tags": [
-        "Greek",
-        "Thebes",
+        "Rebellion",
         "Political",
-        "Rebellion"
+        "Thebes",
+        "Greek"
       ],
       "type": "political"
     },
@@ -1454,10 +1452,10 @@
       "name_ru": "Второй Афинский союз",
       "source": "https://en.wikipedia.org/wiki/Second_Athenian_League",
       "tags": [
-        "Greek",
         "Athens",
-        "Alliance",
-        "Political"
+        "Political",
+        "Greek",
+        "Alliance"
       ],
       "type": "political"
     },
@@ -1472,9 +1470,9 @@
       "name_ru": "Косой строй Эпаминонда",
       "source": "https://en.wikipedia.org/wiki/Epaminondas",
       "tags": [
-        "Greek",
-        "Thebes",
         "Military",
+        "Thebes",
+        "Greek",
         "Innovation"
       ],
       "type": "military"
@@ -1490,10 +1488,10 @@
       "name_ru": "Битва при Левктрах",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Leuctra",
       "tags": [
+        "War",
         "Greek",
         "Thebes",
         "Sparta",
-        "War",
         "Battle"
       ],
       "type": "military"
@@ -1509,11 +1507,11 @@
       "name_ru": "Освобождение Мессении",
       "source": "https://en.wikipedia.org/wiki/Epaminondas",
       "tags": [
-        "Greek",
-        "Thebes",
         "Sparta",
-        "War",
-        "Freedom"
+        "Thebes",
+        "Greek",
+        "Freedom",
+        "War"
       ],
       "type": "military"
     },
@@ -1528,10 +1526,10 @@
       "name_ru": "Академия Платона",
       "source": "https://en.wikipedia.org/wiki/Platonic_Academy",
       "tags": [
-        "Greek",
         "Athens",
         "Philosophy",
-        "Education"
+        "Education",
+        "Greek"
       ],
       "type": "cultural"
     },
@@ -1546,13 +1544,13 @@
       "name_ru": "Битва при Мантинее",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Mantinea_(362_BC)",
       "tags": [
-        "Greek",
+        "War",
         "Thebes",
         "Sparta",
-        "Athens",
-        "War",
+        "Death",
         "Battle",
-        "Death"
+        "Greek",
+        "Athens"
       ],
       "type": "military"
     },
@@ -1567,8 +1565,8 @@
       "name_ru": "Филипп II становится царем",
       "source": "https://en.wikipedia.org/wiki/Philip_II_of_Macedon",
       "tags": [
-        "Greek",
         "Macedon",
+        "Greek",
         "Political",
         "Dynasty"
       ],
@@ -1585,10 +1583,10 @@
       "name_ru": "Рождение Александра Великого",
       "source": "https://en.wikipedia.org/wiki/Alexander_the_Great",
       "tags": [
-        "Greek",
         "Macedon",
-        "Dynasty",
-        "Legend"
+        "Greek",
+        "Legend",
+        "Dynasty"
       ],
       "type": "historic"
     },
@@ -1603,10 +1601,10 @@
       "name_ru": "Развитие македонской фаланги",
       "source": "https://en.wikipedia.org/wiki/Macedonian_phalanx",
       "tags": [
-        "Greek",
         "Macedon",
-        "Military",
-        "Innovation"
+        "Innovation",
+        "Greek",
+        "Military"
       ],
       "type": "military"
     },
@@ -1621,8 +1619,8 @@
       "name_ru": "Битва на Крокусовом поле",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Crocus_Field",
       "tags": [
-        "Greek",
         "Macedon",
+        "Greek",
         "War",
         "Battle"
       ],
@@ -1639,10 +1637,10 @@
       "name_ru": "Аристотель обучает Александра",
       "source": "https://en.wikipedia.org/wiki/Aristotle",
       "tags": [
+        "Education",
         "Greek",
         "Macedon",
-        "Philosophy",
-        "Education"
+        "Philosophy"
       ],
       "type": "cultural"
     },
@@ -1676,8 +1674,8 @@
       "tags": [
         "Greek",
         "Macedon",
-        "Athens",
         "Thebes",
+        "Athens",
         "War",
         "Battle"
       ],
@@ -1694,10 +1692,10 @@
       "name_ru": "Коринфский союз",
       "source": "https://en.wikipedia.org/wiki/League_of_Corinth",
       "tags": [
-        "Greek",
         "Macedon",
         "Alliance",
-        "Political"
+        "Political",
+        "Greek"
       ],
       "type": "political"
     },
@@ -1712,10 +1710,10 @@
       "name_ru": "Убийство Филиппа II",
       "source": "https://en.wikipedia.org/wiki/Philip_II_of_Macedon",
       "tags": [
-        "Greek",
-        "Macedon",
+        "Political",
         "Death",
-        "Political"
+        "Macedon",
+        "Greek"
       ],
       "type": "political"
     },
@@ -1732,9 +1730,9 @@
       "tags": [
         "Greek",
         "Macedon",
-        "Thebes",
+        "Destruction",
         "War",
-        "Destruction"
+        "Thebes"
       ],
       "type": "military"
     },
@@ -1750,10 +1748,10 @@
       "source": "https://en.wikipedia.org/wiki/Lyceum_(Classical)",
       "tags": [
         "Greek",
-        "Athens",
         "Philosophy",
         "Science",
-        "Education"
+        "Education",
+        "Athens"
       ],
       "type": "cultural"
     }
