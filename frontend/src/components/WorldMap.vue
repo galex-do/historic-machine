@@ -1978,4 +1978,28 @@ export default {
   height: 22px;
   line-height: 22px;
 }
+
+/* Ensure MarkerCluster properly styles cluster icons */
+::deep(.marker-cluster-small),
+::deep(.marker-cluster-medium),
+::deep(.marker-cluster-large) {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* Hide default MarkerCluster div backgrounds */
+::deep(.marker-cluster div) {
+  background-color: transparent !important;
+}
+
+/* Ensure clustered child markers are hidden */
+::deep(.leaflet-marker-pane .leaflet-marker-icon.leaflet-cluster-anim) {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* But keep non-clustered markers visible */
+::deep(.leaflet-marker-pane .emoji-marker-container:not(.leaflet-cluster-anim)) {
+  opacity: 1;
+}
 </style>
