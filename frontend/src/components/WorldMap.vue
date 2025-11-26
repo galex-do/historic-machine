@@ -852,10 +852,13 @@ export default {
             await apiService.setEventTags(this.editing_event.id, tag_ids)
           }
           
-          console.log('Event updated successfully:', response)
+          // Fetch fresh event with tags included
+          const freshEvent = await apiService.getEventById(this.editing_event.id)
+          
+          console.log('Event updated successfully:', freshEvent)
           // Preserve current map view when events are refreshed
           this.preserve_map_view = true
-          this.$emit('event-updated', response)
+          this.$emit('event-updated', freshEvent)
         } else {
           response = await apiService.createEvent(eventData)
           
@@ -863,10 +866,13 @@ export default {
             await apiService.setEventTags(response.id, tag_ids)
           }
           
-          console.log('Event created successfully:', response)
+          // Fetch fresh event with tags included
+          const freshEvent = await apiService.getEventById(response.id)
+          
+          console.log('Event created successfully:', freshEvent)
           // Preserve current map view when events are refreshed
           this.preserve_map_view = true
-          this.$emit('event-created', response)
+          this.$emit('event-created', freshEvent)
         }
         
         this.close_modal()
