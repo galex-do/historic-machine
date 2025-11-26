@@ -1413,7 +1413,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
+  z-index: 1000001;
 }
 
 .modal-content {
@@ -1426,7 +1426,7 @@ export default {
 }
 
 .modal-content.event-form-modal {
-  max-width: 600px;
+  max-width: 900px;
   max-height: 90vh;
   overflow-y: auto;
   padding: 0;
