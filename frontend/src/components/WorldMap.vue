@@ -234,6 +234,7 @@ export default {
       expanded_event_tags: {}, // Track which events have expanded tags
       editing_event: null, // Store the event being edited
       is_stepping: false, // Track if current update is from date stepping
+      preserve_map_view: false, // Preserve current view after event edit/create/delete
       form_loading: false, // Track form submission loading state
       form_error: null, // Track form error message
       new_event: {
@@ -260,12 +261,13 @@ export default {
           if (this.narrativeFlowEnabled) {
             this.render_narrative_flow()
           }
-          // Only recenter map if not stepping through dates
-          if (!this.is_stepping) {
+          // Only recenter map if not stepping through dates and not preserving view after edit
+          if (!this.is_stepping && !this.preserve_map_view) {
             this.fit_map_to_events()
           }
-          // Reset stepping flag after processing
+          // Reset flags after processing
           this.is_stepping = false
+          this.preserve_map_view = false
         }
       },
       deep: true,
@@ -851,6 +853,8 @@ export default {
           }
           
           console.log('Event updated successfully:', response)
+          // Preserve current map view when events are refreshed
+          this.preserve_map_view = true
           this.$emit('event-updated', response)
         } else {
           response = await apiService.createEvent(eventData)
@@ -860,6 +864,8 @@ export default {
           }
           
           console.log('Event created successfully:', response)
+          // Preserve current map view when events are refreshed
+          this.preserve_map_view = true
           this.$emit('event-created', response)
         }
         
@@ -887,6 +893,9 @@ export default {
       try {
         await apiService.deleteEvent(this.editing_event.id)
         console.log('Event deleted successfully')
+        
+        // Preserve current map view when events are refreshed
+        this.preserve_map_view = true
         
         // Emit event to parent component to refresh events list
         this.$emit('event-deleted', this.editing_event.id)
