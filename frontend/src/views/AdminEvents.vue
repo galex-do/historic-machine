@@ -180,266 +180,14 @@
           </div>
           
           <div class="modal-body">
-            <div v-if="error" class="error-message">{{ error }}</div>
-            
-            <form @submit.prevent="saveEvent">
-              <!-- Locale Selection Tabs -->
-              <div class="locale-tabs">
-                <button type="button" 
-                        :class="['locale-tab', { active: activeLocaleTab === 'en' }]" 
-                        @click="activeLocaleTab = 'en'">
-                  English
-                </button>
-                <button type="button" 
-                        :class="['locale-tab', { active: activeLocaleTab === 'ru' }]" 
-                        @click="activeLocaleTab = 'ru'">
-                  Русский
-                </button>
-              </div>
-
-              <!-- English Fields -->
-              <div v-show="activeLocaleTab === 'en'" class="locale-content">
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="event-name-en">Event Name (English) *</label>
-                    <input 
-                      id="event-name-en"
-                      v-model="eventForm.name_en" 
-                      type="text" 
-                      required 
-                      class="form-input"
-                      placeholder="Enter event name in English"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="event-type">Type *</label>
-                    <select id="event-type" v-model="eventForm.lens_type" required class="form-input">
-                      <option value="">Select type</option>
-                      <option 
-                        v-for="lensType in getAvailableLensTypes()" 
-                        :key="lensType.value" 
-                        :value="lensType.value"
-                      >
-                        {{ lensType.label }}
-                      </option>
-                    </select>
-                  </div>
-                </div>
-                
-                <div class="form-group">
-                  <label for="event-description-en">Description (English) *</label>
-                  <textarea 
-                    id="event-description-en"
-                    v-model="eventForm.description_en" 
-                    required 
-                    class="form-textarea"
-                    placeholder="Enter event description in English"
-                    rows="4"
-                  ></textarea>
-                </div>
-              </div>
-
-              <!-- Russian Fields -->
-              <div v-show="activeLocaleTab === 'ru'" class="locale-content">
-                <div class="form-group">
-                  <label for="event-name-ru">Event Name (Russian)</label>
-                  <input 
-                    id="event-name-ru"
-                    v-model="eventForm.name_ru" 
-                    type="text" 
-                    class="form-input"
-                    placeholder="Введите название события на русском языке"
-                  />
-                </div>
-                
-                <div class="form-group">
-                  <label for="event-description-ru">Description (Russian)</label>
-                  <textarea 
-                    id="event-description-ru"
-                    v-model="eventForm.description_ru" 
-                    class="form-textarea"
-                    placeholder="Введите описание события на русском языке"
-                    rows="4"
-                  ></textarea>
-                </div>
-              </div>
-              
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="event-date">Date *</label>
-                  <input 
-                    id="event-date"
-                    v-model="eventForm.date_display" 
-                    type="text" 
-                    required 
-                    class="form-input"
-                    placeholder="DD/MM/YYYY"
-                    @input="updateEventDate"
-                  />
-                  <small class="form-hint">Format: DD/MM/YYYY (e.g., 15/03/1066 or 01/01/146 for BC dates)</small>
-                </div>
-                <div class="form-group">
-                  <label for="event-era">Era *</label>
-                  <select 
-                    id="event-era"
-                    v-model="eventForm.era" 
-                    required
-                    class="form-input"
-                  >
-                    <option value="BC">BC (Before Christ)</option>
-                    <option value="AD">AD (Anno Domini)</option>
-                  </select>
-                  <small class="form-hint">Select BC for dates before year 1, AD for dates after</small>
-                </div>
-              </div>
-              
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="event-latitude">Latitude</label>
-                  <input 
-                    id="event-latitude"
-                    v-model.number="eventForm.latitude" 
-                    type="number" 
-                    step="any"
-                    class="form-input"
-                    placeholder="e.g., 51.5074"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="event-longitude">Longitude</label>
-                  <input 
-                    id="event-longitude"
-                    v-model.number="eventForm.longitude" 
-                    type="number" 
-                    step="any"
-                    class="form-input"
-                    placeholder="e.g., -0.1278"
-                  />
-                </div>
-              </div>
-              
-              <div class="form-group">
-                <label for="event-source">Source (optional)</label>
-                <input 
-                  id="event-source"
-                  v-model="eventForm.source" 
-                  type="url"
-                  class="form-input"
-                  placeholder="https://example.com/source"
-                />
-                <small class="form-hint">HTTP/HTTPS link to the source where information about this event was found</small>
-              </div>
-              
-              <div class="form-group">
-                <label for="event-dataset">Dataset (optional)</label>
-                <select 
-                  id="event-dataset"
-                  v-model="eventForm.dataset_id"
-                  class="form-input"
-                >
-                  <option :value="null">No dataset assigned</option>
-                  <option 
-                    v-for="dataset in datasets" 
-                    :key="dataset.id" 
-                    :value="dataset.id"
-                  >
-                    {{ dataset.filename }} ({{ dataset.event_count }} events)
-                  </option>
-                </select>
-                <small class="form-hint">Optionally assign this event to an existing dataset for organization</small>
-              </div>
-              
-              <!-- Tags Section -->
-              <div class="form-group">
-                <label for="event-tags">Tags</label>
-                <div class="tags-section">
-                  <!-- Selected Tags Display -->
-                  <div v-if="eventForm.selectedTags && eventForm.selectedTags.length > 0" class="selected-tags">
-                    <div 
-                      v-for="tag in eventForm.selectedTags" 
-                      :key="tag.id"
-                      class="selected-tag"
-                      :style="{ backgroundColor: tag.color, color: getContrastColor(tag.color) }"
-                    >
-                      {{ tag.name }}
-                      <button 
-                        type="button" 
-                        @click="removeTag(tag)"
-                        class="remove-tag-btn"
-                        :style="{ color: getContrastColor(tag.color) }"
-                      >
-                        ×
-                      </button>
-                    </div>
-                  </div>
-                  
-                  <!-- Tag Search and Add -->
-                  <div class="tag-input-section">
-                    <input 
-                      v-model="eventForm.tagSearch"
-                      type="text"
-                      class="tag-search-input"
-                      placeholder="Search tags or type new tag name..."
-                      @keydown.enter.prevent="handleTagInput"
-                    />
-                    
-                    <!-- Tag Suggestions -->
-                    <div v-if="filteredTags && filteredTags.length > 0 && eventForm.tagSearch" class="tag-suggestions">
-                      <div class="tag-count-info">{{ filteredTags.length }} tag{{ filteredTags.length !== 1 ? 's' : '' }} found</div>
-                      <div 
-                        v-for="tag in filteredTags" 
-                        :key="tag.id"
-                        class="tag-suggestion"
-                        @click="addTag(tag)"
-                      >
-                        <span 
-                          class="tag-color-indicator"
-                          :style="{ backgroundColor: tag.color }"
-                        ></span>
-                        {{ tag.name }}
-                      </div>
-                      <!-- Create new tag option at bottom of suggestions -->
-                      <div v-if="canCreateNewTag" class="tag-suggestion create-new-suggestion" @click="createAndAddTag">
-                        <span class="tag-color-indicator" :style="{ backgroundColor: eventForm.newTagColor }"></span>
-                        Create "{{ eventForm.tagSearch }}"
-                        <input 
-                          v-model="eventForm.newTagColor"
-                          type="color"
-                          class="inline-color-picker"
-                          @click.stop
-                        />
-                      </div>
-                    </div>
-                    
-                    <!-- Create New Tag Option -->
-                    <div v-if="canCreateNewTag && (!filteredTags || !filteredTags.length)" class="new-tag-option">
-                      <div class="new-tag-form">
-                        <span class="new-tag-text">Create new tag:</span>
-                        <input 
-                          v-model="eventForm.newTagColor"
-                          type="color"
-                          class="color-picker"
-                        />
-                        <button 
-                          type="button"
-                          @click="createAndAddTag"
-                          class="create-tag-btn"
-                        >
-                          Add "{{ eventForm.tagSearch }}"
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="form-actions">
-                <button type="button" @click="closeModal" class="cancel-btn">Cancel</button>
-                <button type="submit" class="submit-btn" :disabled="loading">
-                  {{ loading ? 'Saving...' : (editingEvent ? 'Update Event' : 'Create Event') }}
-                </button>
-              </div>
-            </form>
+            <EventForm
+              :event="editingEvent"
+              :loading="loading"
+              :error="error"
+              @submit="handleFormSubmit"
+              @cancel="closeModal"
+              @delete="handleFormDelete"
+            />
           </div>
         </div>
       </div>
@@ -460,6 +208,7 @@ import TablePagination from '@/components/TablePagination.vue'
 import EventTypeFilter from '@/components/filters/EventTypeFilter.vue'
 import DatasetFilter from '@/components/filters/DatasetFilter.vue'
 import TagFilterDropdown from '@/components/filters/TagFilterDropdown.vue'
+import EventForm from '@/components/events/EventForm.vue'
 
 export default {
   name: 'AdminEvents',
@@ -467,7 +216,8 @@ export default {
     TablePagination,
     EventTypeFilter,
     DatasetFilter,
-    TagFilterDropdown
+    TagFilterDropdown,
+    EventForm
   },
   setup() {
     const route = useRoute()
@@ -1020,68 +770,57 @@ export default {
       }
     }
 
-    const saveEvent = async () => {
+    const handleFormSubmit = async (eventData) => {
       localLoading.value = true
       localError.value = null
       
       try {
-        // Ensure date is properly converted before saving
-        updateEventDate()
-        
-        // Validate that date exists
-        if (!eventForm.value.date) {
-          localError.value = 'Date is required'
-          localLoading.value = false
-          return
-        }
-        
-        // Use locale-specific fields as primary, fallback to legacy fields
-        const name_en = eventForm.value.name_en || eventForm.value.name || ''
-        const name_ru = eventForm.value.name_ru || eventForm.value.name || ''
-        const description_en = eventForm.value.description_en || eventForm.value.description || ''
-        const description_ru = eventForm.value.description_ru || eventForm.value.description || ''
-        
-        const eventData = {
-          name: name_en, // Use English as legacy default
-          description: description_en, // Use English as legacy default
-          name_en: name_en,
-          name_ru: name_ru,
-          description_en: description_en,
-          description_ru: description_ru,
-          event_date: eventForm.value.date,
-          era: eventForm.value.era,
-          latitude: eventForm.value.latitude,
-          longitude: eventForm.value.longitude,
-          lens_type: eventForm.value.lens_type,
-          source: eventForm.value.source || null,
-          dataset_id: eventForm.value.dataset_id || null
-        }
+        const tag_ids = eventData.tag_ids || []
+        delete eventData.tag_ids
 
         if (editingEvent.value) {
-          // Update existing event
           await apiService.updateEvent(editingEvent.value.id, eventData)
           
-          // Update tags if they changed
-          const tagIds = eventForm.value.selectedTags.map(tag => tag.id)
-          await apiService.setEventTags(editingEvent.value.id, tagIds)
+          if (tag_ids.length > 0 || (editingEvent.value.tags && editingEvent.value.tags.length > 0)) {
+            await apiService.setEventTags(editingEvent.value.id, tag_ids)
+          }
         } else {
-          // Create new event
           const newEvent = await apiService.createEvent(eventData)
           
-          // Set tags for new event
-          if (eventForm.value.selectedTags.length > 0) {
-            const tagIds = eventForm.value.selectedTags.map(tag => tag.id)
-            await apiService.setEventTags(newEvent.id, tagIds)
+          if (tag_ids.length > 0) {
+            await apiService.setEventTags(newEvent.id, tag_ids)
           }
         }
         
-        await fetchEvents() // Refresh events list
+        await fetchEvents()
         allEvents.value = events.value || []
         closeModal()
         console.log('Event saved successfully')
       } catch (err) {
         console.error('Error saving event:', err)
         localError.value = err.message || 'Failed to save event'
+      } finally {
+        localLoading.value = false
+      }
+    }
+
+    const handleFormDelete = async () => {
+      if (!editingEvent.value) return
+      
+      const confirmed = confirm(`Are you sure you want to delete "${editingEvent.value.name}"? This action cannot be undone.`)
+      if (!confirmed) return
+      
+      localLoading.value = true
+      localError.value = null
+      try {
+        await apiService.deleteEvent(editingEvent.value.id)
+        await fetchEvents()
+        allEvents.value = events.value || []
+        closeModal()
+        console.log('Event deleted successfully')
+      } catch (err) {
+        console.error('Error deleting event:', err)
+        localError.value = err.message || 'Failed to delete event'
       } finally {
         localLoading.value = false
       }
@@ -1196,8 +935,10 @@ export default {
       createAndAddTag,
       // Modal functions
       updateEventDate,
-      saveEvent,
       activeLocaleTab,
+      // Event form handlers
+      handleFormSubmit,
+      handleFormDelete,
       // Event type utilities
       getAvailableLensTypes
     }

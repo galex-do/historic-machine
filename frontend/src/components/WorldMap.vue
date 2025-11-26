@@ -11,126 +11,21 @@
     
     <!-- Event Creation Modal (only show if user can create events) -->
     <div v-if="show_event_modal && canCreateEvents" class="modal-overlay" @click="close_modal">
-      <div class="modal-content" @click.stop>
-        <h3>{{ editing_event ? 'Edit Historical Event' : 'Add Historical Event' }}</h3>
-        <form @submit.prevent="create_event">
-          <!-- Locale Selection Tabs -->
-          <div class="locale-tabs">
-            <button type="button" 
-                    :class="['locale-tab', { active: activeLocaleTab === 'en' }]" 
-                    @click="activeLocaleTab = 'en'">
-              English
-            </button>
-            <button type="button" 
-                    :class="['locale-tab', { active: activeLocaleTab === 'ru' }]" 
-                    @click="activeLocaleTab = 'ru'">
-              Русский
-            </button>
-          </div>
-
-          <!-- English Fields -->
-          <div v-show="activeLocaleTab === 'en'" class="locale-content">
-            <div class="form-group">
-              <label>Event Name (English):</label>
-              <input type="text" v-model="new_event.name_en" required />
-            </div>
-            <div class="form-group">
-              <label>Description (English):</label>
-              <textarea v-model="new_event.description_en" rows="3" required></textarea>
-            </div>
-          </div>
-
-          <!-- Russian Fields -->
-          <div v-show="activeLocaleTab === 'ru'" class="locale-content">
-            <div class="form-group">
-              <label>Event Name (Russian):</label>
-              <input type="text" v-model="new_event.name_ru" />
-            </div>
-            <div class="form-group">
-              <label>Description (Russian):</label>
-              <textarea v-model="new_event.description_ru" rows="3"></textarea>
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Date:</label>
-            <input type="text" v-model="new_event.date_display" @blur="update_event_date" placeholder="DD.MM.YYYY" required />
-          </div>
-          <div class="form-group">
-            <label>Era:</label>
-            <select v-model="new_event.era">
-              <option value="BC">BC (Before Christ)</option>
-              <option value="AD">AD (Anno Domini)</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Event Type:</label>
-            <select v-model="new_event.lens_type">
-              <option 
-                v-for="lensType in getAvailableLensTypes()" 
-                :key="lensType.value" 
-                :value="lensType.value"
-              >
-                {{ lensType.label }}
-              </option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Source (optional):</label>
-            <input type="url" v-model="new_event.source" placeholder="https://example.com/source" />
-            <small class="field-hint">HTTP/HTTPS link to the source where information about this event was found</small>
-          </div>
-          <div class="form-group">
-            <label>Dataset (optional):</label>
-            <select v-model="new_event.dataset_id">
-              <option :value="null">No dataset assigned</option>
-              <option 
-                v-for="dataset in datasets" 
-                :key="dataset.id" 
-                :value="dataset.id"
-              >
-                {{ dataset.filename }} ({{ dataset.event_count }} events)
-              </option>
-            </select>
-            <small class="field-hint">Optionally assign this event to an existing dataset for organization</small>
-          </div>
-          <div class="form-group coordinates-group">
-            <label>Location:</label>
-            <div class="coordinates-inputs">
-              <div class="coordinate-input">
-                <label class="coordinate-label">Latitude:</label>
-                <input 
-                  type="number" 
-                  v-model.number="new_event.latitude" 
-                  step="0.0001" 
-                  min="-90" 
-                  max="90"
-                  required 
-                />
-              </div>
-              <div class="coordinate-input">
-                <label class="coordinate-label">Longitude:</label>
-                <input 
-                  type="number" 
-                  v-model.number="new_event.longitude" 
-                  step="0.0001" 
-                  min="-180" 
-                  max="180"
-                  required 
-                />
-              </div>
-            </div>
-            <small class="field-hint">Click on the map to update coordinates, or enter values manually</small>
-          </div>
-          <div class="modal-actions">
-            <div class="left-actions">
-              <button v-if="editing_event" type="button" @click="delete_event" class="btn-delete">Delete Event</button>
-            </div>
-            <div class="right-actions">
-              <button type="button" @click="close_modal" class="btn-cancel">Cancel</button>
-              <button type="submit" class="btn-create">{{ editing_event ? 'Update Event' : 'Create Event' }}</button>
-            </div>
-          </div>
-        </form>
+      <div class="modal-content event-form-modal" @click.stop>
+        <div class="modal-header">
+          <h3>{{ editing_event ? 'Edit Historical Event' : 'Add Historical Event' }}</h3>
+          <button @click="close_modal" class="close-btn">&times;</button>
+        </div>
+        <EventForm
+          :event="editing_event"
+          :initial-latitude="new_event.latitude"
+          :initial-longitude="new_event.longitude"
+          :loading="form_loading"
+          :error="form_error"
+          @submit="handle_form_submit"
+          @cancel="close_modal"
+          @delete="delete_event"
+        />
       </div>
     </div>
 
@@ -287,9 +182,13 @@ import { useTags } from '@/composables/useTags.js'
 import { useLocale } from '@/composables/useLocale.js'
 import apiService from '@/services/api.js'
 import { getEventEmoji, getAvailableLensTypes } from '@/utils/event-utils.js'
+import EventForm from '@/components/events/EventForm.vue'
 
 export default {
   name: 'WorldMap',
+  components: {
+    EventForm
+  },
   setup() {
     const { canCreateEvents, canEditEvents, isGuest } = useAuth()
     const { allTags, loadTags } = useTags()
@@ -335,7 +234,8 @@ export default {
       expanded_event_tags: {}, // Track which events have expanded tags
       editing_event: null, // Store the event being edited
       is_stepping: false, // Track if current update is from date stepping
-      activeLocaleTab: 'en', // Track active locale tab in form
+      form_loading: false, // Track form submission loading state
+      form_error: null, // Track form error message
       new_event: {
         name: '',
         description: '',
@@ -934,54 +834,47 @@ export default {
       }
     },
     
-    async create_event() {
+    async handle_form_submit(eventData) {
+      this.form_loading = true
+      this.form_error = null
+      
       try {
-        // Use locale-specific fields as primary, fallback to legacy fields
-        const name_en = this.new_event.name_en || this.new_event.name || ''
-        const name_ru = this.new_event.name_ru || this.new_event.name || ''
-        const description_en = this.new_event.description_en || this.new_event.description || ''
-        const description_ru = this.new_event.description_ru || this.new_event.description || ''
-        
-        const event_data = {
-          name: name_en, // Use English as legacy default
-          description: description_en, // Use English as legacy default
-          name_en: name_en,
-          name_ru: name_ru,
-          description_en: description_en,
-          description_ru: description_ru,
-          latitude: this.new_event.latitude,
-          longitude: this.new_event.longitude,
-          event_date: new Date(this.new_event.date).toISOString(),
-          era: this.new_event.era,
-          lens_type: this.new_event.lens_type,
-          source: this.new_event.source || null,
-          dataset_id: this.new_event.dataset_id || null
-        }
+        const tag_ids = eventData.tag_ids || []
+        delete eventData.tag_ids
         
         let response
         if (this.editing_event) {
-          // Update existing event
-          response = await apiService.updateEvent(this.editing_event.id, event_data)
+          response = await apiService.updateEvent(this.editing_event.id, eventData)
+          
+          if (tag_ids.length > 0 || (this.editing_event.tags && this.editing_event.tags.length > 0)) {
+            await apiService.setEventTags(this.editing_event.id, tag_ids)
+          }
+          
           console.log('Event updated successfully:', response)
           this.$emit('event-updated', response)
         } else {
-          // Create new event
-          response = await apiService.createEvent(event_data)
+          response = await apiService.createEvent(eventData)
+          
+          if (tag_ids.length > 0) {
+            await apiService.setEventTags(response.id, tag_ids)
+          }
+          
           console.log('Event created successfully:', response)
           this.$emit('event-created', response)
         }
         
-        // Close modal
         this.close_modal()
         
       } catch (error) {
         console.error('Error saving event:', error)
-        if (error.message.includes('401')) {
-          alert('Authentication failed. Please log in again.')
+        if (error.message && error.message.includes('401')) {
+          this.form_error = 'Authentication failed. Please log in again.'
         } else {
           const action = this.editing_event ? 'update' : 'create'
-          alert(`Failed to ${action} event. Please try again.`)
+          this.form_error = `Failed to ${action} event. Please try again.`
         }
+      } finally {
+        this.form_loading = false
       }
     },
 
@@ -1014,23 +907,13 @@ export default {
     close_modal() {
       this.show_event_modal = false
       this.editing_event = null
+      this.form_loading = false
+      this.form_error = null
       
-      // Reset form
+      // Reset form coordinates
       this.new_event = {
-        name: '',
-        description: '',
-        name_en: '',
-        name_ru: '',
-        description_en: '',
-        description_ru: '',
-        date: '',
-        date_display: '',
-        era: 'AD',
         latitude: 0,
-        longitude: 0,
-        source: '',
-        lens_type: 'historic',
-        dataset_id: null
+        longitude: 0
       }
     },
 
@@ -1540,6 +1423,49 @@ export default {
   width: 90%;
   max-width: 500px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content.event-form-modal {
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.modal-content.event-form-modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1;
+}
+
+.modal-content.event-form-modal .modal-header h3 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 18px;
+}
+
+.modal-content.event-form-modal .close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.modal-content.event-form-modal .close-btn:hover {
+  color: #374151;
+}
+
+.modal-content.event-form-modal .event-form-container {
+  padding: 20px 24px;
 }
 
 .modal-content h3 {
