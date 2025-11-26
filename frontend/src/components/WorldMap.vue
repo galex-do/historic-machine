@@ -93,8 +93,33 @@
             </select>
             <small class="field-hint">Optionally assign this event to an existing dataset for organization</small>
           </div>
-          <div class="coordinates-info">
-            <p>Location: {{ new_event.latitude.toFixed(4) }}, {{ new_event.longitude.toFixed(4) }}</p>
+          <div class="form-group coordinates-group">
+            <label>Location:</label>
+            <div class="coordinates-inputs">
+              <div class="coordinate-input">
+                <label class="coordinate-label">Latitude:</label>
+                <input 
+                  type="number" 
+                  v-model.number="new_event.latitude" 
+                  step="0.0001" 
+                  min="-90" 
+                  max="90"
+                  required 
+                />
+              </div>
+              <div class="coordinate-input">
+                <label class="coordinate-label">Longitude:</label>
+                <input 
+                  type="number" 
+                  v-model.number="new_event.longitude" 
+                  step="0.0001" 
+                  min="-180" 
+                  max="180"
+                  required 
+                />
+              </div>
+            </div>
+            <small class="field-hint">Click on the map to update coordinates, or enter values manually</small>
           </div>
           <div class="modal-actions">
             <div class="left-actions">
@@ -1553,17 +1578,43 @@ export default {
   border-color: #3498db;
 }
 
-.coordinates-info {
+.coordinates-group {
   background: #f8f9fa;
-  padding: 10px;
+  padding: 12px;
   border-radius: 6px;
   margin: 15px 0;
 }
 
-.coordinates-info p {
-  margin: 0;
-  font-family: monospace;
+.coordinates-inputs {
+  display: flex;
+  gap: 15px;
+}
+
+.coordinate-input {
+  flex: 1;
+}
+
+.coordinate-input .coordinate-label {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
   color: #6c757d;
+  margin-bottom: 4px;
+}
+
+.coordinate-input input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: monospace;
+  transition: border-color 0.3s;
+}
+
+.coordinate-input input:focus {
+  outline: none;
+  border-color: #3498db;
 }
 
 /* Locale tabs styling */
