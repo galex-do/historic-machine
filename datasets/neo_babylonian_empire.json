@@ -1,0 +1,682 @@
+{
+  "description": "Neo-Babylonian (Chaldean) Empire dataset - the last native Mesopotamian empire (626-539 BC)",
+  "events": [
+    {
+      "date": "01.01.0620",
+      "description": "Nabopolassar conquers southern Babylonia from Baghdad to Persian Gulf, establishing complete Chaldean control over Mesopotamian heartland",
+      "description_ru": "Набопаласар завоевывает южную Вавилонию от Багдада до Персидского залива, устанавливая полный халдейский контроль над месопотамским центром",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Chaldean Control of Southern Mesopotamia",
+      "name_ru": "Халдейский контроль над Южной Месопотамией",
+      "source": "https://en.wikipedia.org/wiki/Nabopolassar",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Conquest",
+        "Nabopolassar"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0615",
+      "description": "Nabopolassar forms strategic alliance with Median King Cyaxares through marriage of his son Nebuchadnezzar to Median princess Amytis, uniting powers against Assyria",
+      "description_ru": "Набопаласар заключает стратегический союз с мидийским царём Киаксаром через брак своего сына Навуходоносора с мидийской принцессой Амитис, объединяя силы против Ассирии",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Babylonian-Median Alliance Sealed",
+      "name_ru": "Вавилоно-мидийский союз скреплён браком",
+      "source": "https://en.wikipedia.org/wiki/Nabopolassar",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Alliance",
+        "Medes",
+        "Diplomacy"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0610",
+      "description": "Babylonian forces capture and destroy Harran, last Assyrian stronghold, defeating Ashur-uballit II and Egyptian allies who attempted to restore Assyrian power",
+      "description_ru": "Вавилонские войска захватывают и разрушают Харран, последний ассирийский оплот, побеждая Ашшур-убаллита II и египетских союзников, пытавшихся восстановить ассирийскую власть",
+      "era": "BC",
+      "latitude": 36.8619,
+      "longitude": 39.0333,
+      "name": "Fall of Harran",
+      "name_ru": "Падение Харрана",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Harran_(609_BC)",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Conquest",
+        "Assyrian",
+        "Harran"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0609",
+      "description": "Final defeat of remaining Assyrian forces at Harran, marking complete end of Assyrian monarchy and cementing Neo-Babylonian dominance over Mesopotamia",
+      "description_ru": "Окончательное поражение остатков ассирийских войск у Харрана, знаменующее полный конец ассирийской монархии и закрепление неовавилонского господства над Месопотамией",
+      "era": "BC",
+      "latitude": 36.8619,
+      "longitude": 39.0333,
+      "name": "End of Assyrian Monarchy",
+      "name_ru": "Конец ассирийской монархии",
+      "source": "https://en.wikipedia.org/wiki/Neo-Babylonian_Empire",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Assyrian",
+        "End of Empire"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "16.08.0605",
+      "description": "Crown Prince Nebuchadnezzar crushes Egyptian forces under Pharaoh Necho II at Battle of Carchemish, one of most decisive battles in ancient history, securing Syrian territories",
+      "description_ru": "Наследный принц Навуходоносор разбивает египетские войска под командованием фараона Нехо II в битве при Каркемише, одной из самых решающих битв древней истории, закрепляя сирийские территории",
+      "era": "BC",
+      "latitude": 36.8297,
+      "longitude": 38.0156,
+      "name": "Battle of Carchemish",
+      "name_ru": "Битва при Каркемише",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Carchemish",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Battle",
+        "Egypt",
+        "Nebuchadnezzar II"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "07.09.0605",
+      "description": "Nebuchadnezzar II crowned King of Babylon after his father Nabopolassar's death, beginning 43-year reign that would make Babylon greatest city in ancient world",
+      "description_ru": "Навуходоносор II коронован царём Вавилона после смерти отца Набопаласара, начиная 43-летнее правление, которое сделает Вавилон величайшим городом древнего мира",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Coronation of Nebuchadnezzar II",
+      "name_ru": "Коронация Навуходоносора II",
+      "source": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Coronation",
+        "Nebuchadnezzar II"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0604",
+      "description": "Nebuchadnezzar II captures Philistine city of Ashkelon after it refuses to submit, receiving surrender of local states including Kingdom of Judah under King Jehoiakim",
+      "description_ru": "Навуходоносор II захватывает филистимский город Ашкелон после его отказа подчиниться, принимая капитуляцию местных государств, включая Иудейское царство под правлением царя Иоакима",
+      "era": "BC",
+      "latitude": 31.6689,
+      "longitude": 34.5742,
+      "name": "Conquest of Ashkelon",
+      "name_ru": "Завоевание Ашкелона",
+      "source": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Conquest",
+        "Philistine",
+        "Nebuchadnezzar II"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0601",
+      "description": "Nebuchadnezzar II's invasion of Egypt ends in bloody stalemate at frontier, forcing Babylonian withdrawal and two years of military rebuilding",
+      "description_ru": "Вторжение Навуходоносора II в Египет заканчивается кровавой патовой ситуацией на границе, вынуждая вавилонское отступление и два года военного восстановления",
+      "era": "BC",
+      "latitude": 31.25,
+      "longitude": 32.3,
+      "name": "Babylonian-Egyptian Border War",
+      "name_ru": "Вавилоно-египетская пограничная война",
+      "source": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "War",
+        "Egypt",
+        "Nebuchadnezzar II"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0600",
+      "description": "Nebuchadnezzar II begins massive reconstruction of Babylon, commissioning double fortification walls, grand temples, and palaces that will make it world's largest city",
+      "description_ru": "Навуходоносор II начинает масштабную реконструкцию Вавилона, заказывая двойные укрепительные стены, величественные храмы и дворцы, которые сделают его крупнейшим городом мира",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Reconstruction of Babylon Begins",
+      "name_ru": "Начало реконструкции Вавилона",
+      "source": "https://en.wikipedia.org/wiki/Babylon",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Architecture",
+        "Construction",
+        "Nebuchadnezzar II"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0598",
+      "description": "Nebuchadnezzar II campaigns against Arab tribes in northwestern Arabia, securing desert trade routes and preparing for operations against rebellious Judah",
+      "description_ru": "Навуходоносор II проводит кампанию против арабских племён в северо-западной Аравии, обеспечивая пустынные торговые пути и готовясь к операциям против мятежной Иудеи",
+      "era": "BC",
+      "latitude": 29.5,
+      "longitude": 36.5,
+      "name": "Arabian Campaign",
+      "name_ru": "Аравийская кампания",
+      "source": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Campaign",
+        "Arabia",
+        "Nebuchadnezzar II"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "16.03.0597",
+      "description": "Nebuchadnezzar II captures Jerusalem after brief siege, deposing King Jehoiachin and deporting 3,000 Jews to Babylon including royal family, beginning Babylonian Captivity",
+      "description_ru": "Навуходоносор II захватывает Иерусалим после краткой осады, низлагая царя Иехонию и депортируя 3000 иудеев в Вавилон, включая царскую семью, начиная Вавилонское пленение",
+      "era": "BC",
+      "latitude": 31.7683,
+      "longitude": 35.2137,
+      "name": "First Siege of Jerusalem",
+      "name_ru": "Первая осада Иерусалима",
+      "source": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(597_BC)",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Jerusalem",
+        "Judah",
+        "Nebuchadnezzar II",
+        "Exile"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0595",
+      "description": "Babylonian astronomers establish systematic celestial observation program, recording planetary positions and eclipses with unprecedented accuracy for centuries",
+      "description_ru": "Вавилонские астрономы устанавливают систематическую программу небесных наблюдений, записывая положения планет и затмения с беспрецедентной точностью на протяжении веков",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Babylonian Astronomical Observations",
+      "name_ru": "Вавилонские астрономические наблюдения",
+      "source": "https://en.wikipedia.org/wiki/Babylonian_astronomy",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Astronomy",
+        "Science"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.0590",
+      "description": "Construction of Hanging Gardens of Babylon reportedly completed, one of Seven Wonders of Ancient World, built by Nebuchadnezzar for his Median wife Amytis",
+      "description_ru": "Строительство Висячих садов Вавилона предположительно завершено, одно из Семи чудес древнего мира, построенное Навуходоносором для его мидийской жены Амитис",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Hanging Gardens of Babylon",
+      "name_ru": "Висячие сады Вавилона",
+      "source": "https://en.wikipedia.org/wiki/Hanging_Gardens_of_Babylon",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Architecture",
+        "Wonder",
+        "Nebuchadnezzar II"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0589",
+      "description": "King Zedekiah of Judah rebels against Babylon with Egyptian support, prompting Nebuchadnezzar II to launch punitive campaign against Jerusalem",
+      "description_ru": "Царь Седекия Иудейский восстаёт против Вавилона при поддержке Египта, побуждая Навуходоносора II начать карательную кампанию против Иерусалима",
+      "era": "BC",
+      "latitude": 31.7683,
+      "longitude": 35.2137,
+      "name": "Judean Rebellion",
+      "name_ru": "Иудейское восстание",
+      "source": "https://en.wikipedia.org/wiki/Zedekiah",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Judah",
+        "Rebellion",
+        "Nebuchadnezzar II"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "09.08.0586",
+      "description": "Nebuchadnezzar II destroys Jerusalem and Solomon's Temple after 18-month siege, deporting tens of thousands more Jews to Babylon, ending Kingdom of Judah",
+      "description_ru": "Навуходоносор II разрушает Иерусалим и Храм Соломона после 18-месячной осады, депортируя ещё десятки тысяч иудеев в Вавилон, положив конец Иудейскому царству",
+      "era": "BC",
+      "latitude": 31.7683,
+      "longitude": 35.2137,
+      "name": "Destruction of Jerusalem and Temple",
+      "name_ru": "Разрушение Иерусалима и Храма",
+      "source": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(587_BC)",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Jerusalem",
+        "Temple",
+        "Destruction",
+        "Nebuchadnezzar II",
+        "Exile"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0585",
+      "description": "Nebuchadnezzar II mediates peace between Medes and Lydians after solar eclipse interrupts their battle, demonstrating Babylonian diplomatic prestige",
+      "description_ru": "Навуходоносор II посредничает в заключении мира между мидянами и лидийцами после того, как солнечное затмение прервало их битву, демонстрируя вавилонский дипломатический престиж",
+      "era": "BC",
+      "latitude": 39.5,
+      "longitude": 40.0,
+      "name": "Babylonian Mediation of Median-Lydian War",
+      "name_ru": "Вавилонское посредничество в мидийско-лидийской войне",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_the_Eclipse",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Diplomacy",
+        "Medes",
+        "Lydia",
+        "Nebuchadnezzar II"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0580",
+      "description": "Nebuchadnezzar II completes Etemenanki ziggurat in Babylon, seven-story temple tower dedicated to Marduk, believed inspiration for biblical Tower of Babel",
+      "description_ru": "Навуходоносор II завершает зиккурат Этеменанки в Вавилоне, семиэтажную храмовую башню, посвящённую Мардуку, считающуюся прообразом библейской Вавилонской башни",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Completion of Etemenanki Ziggurat",
+      "name_ru": "Завершение зиккурата Этеменанки",
+      "source": "https://en.wikipedia.org/wiki/Etemenanki",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Architecture",
+        "Ziggurat",
+        "Marduk",
+        "Nebuchadnezzar II"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0575",
+      "description": "Ishtar Gate completed in Babylon, magnificent ceremonial entrance decorated with glazed blue bricks and bas-reliefs of dragons and bulls, masterpiece of ancient architecture",
+      "description_ru": "Ворота Иштар завершены в Вавилоне, великолепный церемониальный вход, украшенный глазурованным синим кирпичом и барельефами драконов и быков, шедевр древней архитектуры",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Ishtar Gate Completed",
+      "name_ru": "Ворота Иштар завершены",
+      "source": "https://en.wikipedia.org/wiki/Ishtar_Gate",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Architecture",
+        "Ishtar Gate",
+        "Art",
+        "Nebuchadnezzar II"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0575",
+      "description": "Processional Way of Babylon completed, grand avenue lined with walls of glazed bricks decorated with 120 lions, connecting Ishtar Gate to Esagila temple",
+      "description_ru": "Процессионный путь Вавилона завершён, величественный проспект, обрамлённый стенами из глазурованного кирпича, украшенными 120 львами, соединяющий ворота Иштар с храмом Эсагила",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Processional Way Completed",
+      "name_ru": "Процессионный путь завершён",
+      "source": "https://en.wikipedia.org/wiki/Processional_Way",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Architecture",
+        "Art",
+        "Nebuchadnezzar II"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0570",
+      "description": "Nebuchadnezzar II rebuilds Esagila, great temple of Marduk in Babylon, covering its doors with gold and restoring it as religious center of Mesopotamian world",
+      "description_ru": "Навуходоносор II восстанавливает Эсагилу, великий храм Мардука в Вавилоне, покрывая его двери золотом и восстанавливая его как религиозный центр месопотамского мира",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Restoration of Esagila Temple",
+      "name_ru": "Восстановление храма Эсагила",
+      "source": "https://en.wikipedia.org/wiki/Esagila",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Temple",
+        "Marduk",
+        "Religion",
+        "Nebuchadnezzar II"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0568",
+      "description": "Nebuchadnezzar II campaigns against Egypt under Pharaoh Amasis, marking last major military operation of his reign and securing Babylonian dominance over Levant",
+      "description_ru": "Навуходоносор II проводит кампанию против Египта под властью фараона Амасиса, знаменуя последнюю крупную военную операцию его правления и обеспечивая вавилонское господство над Левантом",
+      "era": "BC",
+      "latitude": 30.0,
+      "longitude": 31.2,
+      "name": "Final Egyptian Campaign",
+      "name_ru": "Последняя египетская кампания",
+      "source": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Campaign",
+        "Egypt",
+        "Nebuchadnezzar II"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0565",
+      "description": "Babylon reaches peak population of approximately 200,000, becoming largest city in world with sophisticated urban planning, canals, and monumental architecture",
+      "description_ru": "Вавилон достигает пикового населения примерно в 200 000 человек, становясь крупнейшим городом мира с развитой градостроительной системой, каналами и монументальной архитектурой",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Babylon at Peak Glory",
+      "name_ru": "Вавилон на вершине славы",
+      "source": "https://en.wikipedia.org/wiki/Babylon",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "City",
+        "Urban",
+        "Nebuchadnezzar II"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0562",
+      "description": "Death of Nebuchadnezzar II after 43-year reign, longest of Chaldean dynasty, leaving empire at zenith of power but succession uncertain",
+      "description_ru": "Смерть Навуходоносора II после 43-летнего правления, самого длительного в халдейской династии, оставляя империю на вершине могущества, но с неопределённым престолонаследием",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Death of Nebuchadnezzar II",
+      "name_ru": "Смерть Навуходоносора II",
+      "source": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Death",
+        "Nebuchadnezzar II"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0562",
+      "description": "Amel-Marduk (Evil-Merodach) becomes king of Babylon, releasing exiled Judean King Jehoiachin from prison and treating him with honor at royal court",
+      "description_ru": "Амель-Мардук (Эвил-Меродах) становится царём Вавилона, освобождая изгнанного иудейского царя Иехонию из тюрьмы и обращаясь с ним почётно при царском дворе",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Reign of Amel-Marduk",
+      "name_ru": "Правление Амель-Мардука",
+      "source": "https://en.wikipedia.org/wiki/Amel-Marduk",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Amel-Marduk",
+        "Judah"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0560",
+      "description": "Neriglissar seizes throne after assassinating brother-in-law Amel-Marduk, becoming king despite not being direct descendant of Nebuchadnezzar",
+      "description_ru": "Нериглиссар захватывает трон после убийства своего зятя Амель-Мардука, становясь царём несмотря на то, что не являлся прямым потомком Навуходоносора",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Neriglissar Seizes Power",
+      "name_ru": "Нериглиссар захватывает власть",
+      "source": "https://en.wikipedia.org/wiki/Neriglissar",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Neriglissar",
+        "Assassination",
+        "Regicide"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0557",
+      "description": "Neriglissar campaigns into Cilicia with combined land and naval forces, demonstrating continued Babylonian military capability beyond Mesopotamia",
+      "description_ru": "Нериглиссар проводит кампанию в Киликию объединёнными сухопутными и морскими силами, демонстрируя сохранение вавилонской военной мощи за пределами Месопотамии",
+      "era": "BC",
+      "latitude": 36.8,
+      "longitude": 34.6,
+      "name": "Cilician Campaign",
+      "name_ru": "Киликийская кампания",
+      "source": "https://en.wikipedia.org/wiki/Neriglissar",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Campaign",
+        "Cilicia",
+        "Neriglissar"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0556",
+      "description": "Young King Labashi-Marduk murdered after only months on throne, ending direct Chaldean dynasty and leading to Nabonidus's rise to power through coup",
+      "description_ru": "Молодой царь Лабаши-Мардук убит после нескольких месяцев на троне, завершая прямую халдейскую династию и приводя к возвышению Набонида через переворот",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Murder of Labashi-Marduk",
+      "name_ru": "Убийство Лабаши-Мардука",
+      "source": "https://en.wikipedia.org/wiki/Labashi-Marduk",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Assassination",
+        "Dynasty End"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0556",
+      "description": "Nabonidus becomes last king of Neo-Babylonian Empire through coup, not related by blood to Chaldean dynasty, beginning controversial 17-year reign",
+      "description_ru": "Набонид становится последним царём Нововавилонской империи через переворот, не связанный кровным родством с халдейской династией, начиная спорное 17-летнее правление",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Nabonidus Becomes King",
+      "name_ru": "Набонид становится царём",
+      "source": "https://en.wikipedia.org/wiki/Nabonidus",
+      "tags": [
+        "Babylonian",
+        "Nabonidus",
+        "Coup"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0555",
+      "description": "Nabonidus promotes worship of moon god Sin over Babylon's patron deity Marduk, alienating powerful Marduk priesthood and undermining traditional religious order",
+      "description_ru": "Набонид продвигает поклонение богу луны Сину над богом-покровителем Вавилона Мардуком, отталкивая могущественное жречество Мардука и подрывая традиционный религиозный порядок",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Nabonidus Religious Reforms",
+      "name_ru": "Религиозные реформы Набонида",
+      "source": "https://en.wikipedia.org/wiki/Nabonidus",
+      "tags": [
+        "Babylonian",
+        "Nabonidus",
+        "Religion",
+        "Sin",
+        "Marduk"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0553",
+      "description": "Nabonidus mysteriously leaves Babylon for oasis of Tayma in Arabia, entrusting kingdom to son Belshazzar as regent for ten years, abandoning capital",
+      "description_ru": "Набонид загадочно покидает Вавилон ради оазиса Тейма в Аравии, доверяя царство сыну Валтасару как регенту на десять лет, покидая столицу",
+      "era": "BC",
+      "latitude": 27.6194,
+      "longitude": 38.4833,
+      "name": "Nabonidus Retreat to Tayma",
+      "name_ru": "Уход Набонида в Тейму",
+      "source": "https://en.wikipedia.org/wiki/Nabonidus",
+      "tags": [
+        "Babylonian",
+        "Nabonidus",
+        "Tayma",
+        "Arabia"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0550",
+      "description": "Babylonian astronomers develop sophisticated mathematical astronomy, calculating planetary periods and predicting eclipses with remarkable accuracy",
+      "description_ru": "Вавилонские астрономы развивают сложную математическую астрономию, вычисляя планетарные периоды и предсказывая затмения с замечательной точностью",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Babylonian Mathematical Astronomy",
+      "name_ru": "Вавилонская математическая астрономия",
+      "source": "https://en.wikipedia.org/wiki/Babylonian_astronomy",
+      "tags": [
+        "Babylonian",
+        "Astronomy",
+        "Mathematics",
+        "Science"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.0545",
+      "description": "Nabonidus rebuilds temple of Sin at Harran, fulfilling dream of his mother Adad-Guppi and further alienating Babylonian religious establishment",
+      "description_ru": "Набонид восстанавливает храм Сина в Харране, исполняя мечту своей матери Адад-Гуппи и ещё больше отталкивая вавилонский религиозный истеблишмент",
+      "era": "BC",
+      "latitude": 36.8619,
+      "longitude": 39.0333,
+      "name": "Temple of Sin Rebuilt at Harran",
+      "name_ru": "Храм Сина восстановлен в Харране",
+      "source": "https://en.wikipedia.org/wiki/Nabonidus",
+      "tags": [
+        "Babylonian",
+        "Nabonidus",
+        "Temple",
+        "Sin",
+        "Harran"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0543",
+      "description": "Nabonidus returns to Babylon after decade in Arabia, finding empire weakened and Persian threat growing under Cyrus the Great",
+      "description_ru": "Набонид возвращается в Вавилон после десятилетия в Аравии, обнаружив ослабленную империю и растущую персидскую угрозу под властью Кира Великого",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Nabonidus Returns to Babylon",
+      "name_ru": "Набонид возвращается в Вавилон",
+      "source": "https://en.wikipedia.org/wiki/Nabonidus",
+      "tags": [
+        "Babylonian",
+        "Nabonidus"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.10.0539",
+      "description": "Battle of Opis - Persian forces under Cyrus defeat Babylonian army, opening route to Babylon; Babylonian governor of Gutium defects to Persians",
+      "description_ru": "Битва при Описе - персидские войска под командованием Кира побеждают вавилонскую армию, открывая путь к Вавилону; вавилонский наместник Гутиума переходит на сторону персов",
+      "era": "BC",
+      "latitude": 33.15,
+      "longitude": 44.35,
+      "name": "Battle of Opis",
+      "name_ru": "Битва при Описе",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Opis",
+      "tags": [
+        "Babylonian",
+        "Battle",
+        "Persia",
+        "Cyrus"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "12.10.0539",
+      "description": "Persian soldiers enter Babylon without battle after engineers divert Euphrates River, ending Neo-Babylonian Empire and beginning Persian rule over Mesopotamia",
+      "description_ru": "Персидские солдаты входят в Вавилон без боя после того, как инженеры отвели Евфрат, завершая Нововавилонскую империю и начиная персидское правление над Месопотамией",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Fall of Babylon to Persia",
+      "name_ru": "Падение Вавилона под власть Персии",
+      "source": "https://en.wikipedia.org/wiki/Fall_of_Babylon",
+      "tags": [
+        "Babylonian",
+        "Fall",
+        "Persia",
+        "Cyrus",
+        "End of Empire"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0538",
+      "description": "Cyrus issues Edict permitting exiled Jews to return to Jerusalem and rebuild Temple, ending Babylonian Captivity after nearly 50 years",
+      "description_ru": "Кир издаёт указ, разрешающий изгнанным иудеям вернуться в Иерусалим и восстановить Храм, завершая Вавилонское пленение спустя почти 50 лет",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Edict of Cyrus - End of Babylonian Captivity",
+      "name_ru": "Указ Кира - конец Вавилонского пленения",
+      "source": "https://en.wikipedia.org/wiki/Edict_of_Cyrus",
+      "tags": [
+        "Babylonian",
+        "Persia",
+        "Cyrus",
+        "Judah",
+        "Exile End"
+      ],
+      "type": "political"
+    }
+  ],
+  "name": "Neo-Babylonian (Chaldean) Empire"
+}
