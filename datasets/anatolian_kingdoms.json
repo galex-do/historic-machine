@@ -53,7 +53,7 @@
       "type": "historic"
     },
     {
-      "date": "01.01.1200",
+      "date": "01.01.1180",
       "description": "Carians develop distinctive language belonging to Luwian branch of Anatolian languages; create unique Carian alphabet adapted from Greek and Phoenician scripts for inscriptions",
       "description_ru": "Карийцы развивают отличительный язык, принадлежащий к лувийской ветви анатолийских языков; создают уникальный карийский алфавит, адаптированный из греческих и финикийских систем письма для надписей",
       "era": "BC",
@@ -111,24 +111,6 @@
     },
     {
       "date": "01.01.1100",
-      "description": "Sardis emerges as principal Lydian settlement; naturally defensible acropolis overlooks fertile Hermus valley, controlling trade routes between Aegean coast and Anatolian interior",
-      "description_ru": "Сарды возникают как главное лидийское поселение; защищенный рельефом акрополь возвышается над плодородной долиной Герма, контролируя торговые пути между побережьем Эгейского моря и внутренними районами Анатолии",
-      "era": "BC",
-      "latitude": 38.4852,
-      "longitude": 28.0428,
-      "name": "Foundation of Sardis",
-      "name_ru": "Основание Сард",
-      "source": "https://en.wikipedia.org/wiki/Sardis",
-      "tags": [
-        "Lydia",
-        "Capital",
-        "City",
-        "Trade"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1100",
       "description": "Mylasa emerges as principal religious and political center of Caria; sacred sanctuary of Zeus Carius (war god distinct from Greek Zeus) established, becoming focal point for Carian tribal confederation",
       "description_ru": "Миляс возникает как главный религиозный и политический центр Карии; здесь учреждено священное святилище Зевса Кария (бога войны, отличного от греческого Зевса)",
       "era": "BC",
@@ -144,6 +126,24 @@
         "Temple"
       ],
       "type": "religious"
+    },
+    {
+      "date": "01.01.1100",
+      "description": "Sardis emerges as principal Lydian settlement; naturally defensible acropolis overlooks fertile Hermus valley, controlling trade routes between Aegean coast and Anatolian interior",
+      "description_ru": "Сарды возникают как главное лидийское поселение; защищенный рельефом акрополь возвышается над плодородной долиной Герма, контролируя торговые пути между побережьем Эгейского моря и внутренними районами Анатолии",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Foundation of Sardis",
+      "name_ru": "Основание Сард",
+      "source": "https://en.wikipedia.org/wiki/Sardis",
+      "tags": [
+        "Lydia",
+        "Capital",
+        "City",
+        "Trade"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.1100",
@@ -184,25 +184,6 @@
     },
     {
       "date": "01.01.1000",
-      "description": "Heraclid dynasty establishes rule over Lydia; Greek traditions claim dynasty descended from Heracles through his son Alcaeus, ruling for 505 years with 22 kings",
-      "description_ru": "Династия Гераклидов устанавливает власть над Лидией; греческие традиции утверждают, что династия произошла от Геракла через его сына Алкея",
-      "era": "BC",
-      "latitude": 38.4852,
-      "longitude": 28.0428,
-      "name": "Heraclid Dynasty Founded",
-      "name_ru": "Основание династии Гераклидов",
-      "source": "https://en.wikipedia.org/wiki/Heraclids",
-      "tags": [
-        "Lydia",
-        "Dynasty",
-        "Kingdom",
-        "Greek",
-        "Heraclid"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.1000",
       "description": "Phrygian Kingdom consolidates under central monarchy at Gordion; royal dynasty establishes control over trade routes connecting Asia to Aegean, accumulating wealth from tolls and commerce",
       "description_ru": "Фригийское царство консолидируется под центральной монархией в Гордионе; царская династия устанавливает контроль над торговыми путями, соединяющими Азию с Эгейским морем, накапливая богатство от пошлин и коммерции",
       "era": "BC",
@@ -221,23 +202,23 @@
       "type": "political"
     },
     {
-      "date": "01.01.0950",
-      "description": "Phrygians perfect woodworking techniques using abundant Anatolian forests; produce intricate furniture inlaid with geometric patterns and bronze fittings for elite tombs and palaces",
-      "description_ru": "Фригийцы совершенствуют технику обработки дерева, используя обильные анатолийские леса; производят замысловатую мебель с геометрическими узорами и бронзовой фурнитурой для элитных гробниц и дворцов",
+      "date": "01.01.1000",
+      "description": "Heraclid dynasty establishes rule over Lydia; Greek traditions claim dynasty descended from Heracles through his son Alcaeus, ruling for 505 years with 22 kings",
+      "description_ru": "Династия Гераклидов устанавливает власть над Лидией; греческие традиции утверждают, что династия произошла от Геракла через его сына Алкея",
       "era": "BC",
-      "latitude": 39.6511,
-      "longitude": 31.9958,
-      "name": "Phrygian Woodworking Mastery",
-      "name_ru": "Мастерство фригийской деревообработки",
-      "source": "https://en.wikipedia.org/wiki/Phrygia",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Heraclid Dynasty Founded",
+      "name_ru": "Основание династии Гераклидов",
+      "source": "https://en.wikipedia.org/wiki/Heraclids",
       "tags": [
-        "Phrygian",
-        "Technology",
-        "Art",
-        "Craftsmanship",
-        "Wood"
+        "Lydia",
+        "Dynasty",
+        "Kingdom",
+        "Greek",
+        "Heraclid"
       ],
-      "type": "cultural"
+      "type": "political"
     },
     {
       "date": "01.01.0950",
@@ -259,12 +240,48 @@
       "type": "scientific"
     },
     {
+      "date": "01.01.0950",
+      "description": "Phrygians perfect woodworking techniques using abundant Anatolian forests; produce intricate furniture inlaid with geometric patterns and bronze fittings for elite tombs and palaces",
+      "description_ru": "Фригийцы совершенствуют технику обработки дерева, используя обильные анатолийские леса; производят замысловатую мебель с геометрическими узорами и бронзовой фурнитурой для элитных гробниц и дворцов",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Phrygian Woodworking Mastery",
+      "name_ru": "Мастерство фригийской деревообработки",
+      "source": "https://en.wikipedia.org/wiki/Phrygia",
+      "tags": [
+        "Phrygian",
+        "Technology",
+        "Art",
+        "Craftsmanship",
+        "Wood"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0900",
+      "description": "Carian warriors gain reputation as fierce mercenaries serving in foreign armies; Homer describes Carians as 'barbarous of speech' but acknowledges their martial prowess and naval skills",
+      "description_ru": "Карийские воины приобретают репутацию свирепых наемников, служащих в иностранных армиях; Гомер описывает карийцев как 'варварских по речи', но признает их воинское мастерство и морские навыки",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 28,
+      "name": "Carian Mercenary Tradition",
+      "name_ru": "Карийская наемническая традиция",
+      "source": "https://en.wikipedia.org/wiki/Carians",
+      "tags": [
+        "Carian",
+        "Greek",
+        "Mercenaries"
+      ],
+      "type": "military"
+    },
+    {
       "date": "01.01.0900",
       "description": "Lydian Kingdom expands control over Greek Ionian cities on Aegean coast; imposes tribute while allowing cities substantial autonomy, beginning pattern of Lydian-Greek interaction",
       "description_ru": "Лидийское царство подчиняет греческие ионийские города на побережье Эгейского моря; собирает дань, позволяя городам существенную автономию и выстраивая модель лидийско-греческого взаимодействия",
       "era": "BC",
-      "latitude": 38,
-      "longitude": 27,
+      "latitude": 37.9397,
+      "longitude": 27.3417,
       "name": "Lydian Control of Ionia",
       "name_ru": "Лидийский контроль над Ионией",
       "source": "https://en.wikipedia.org/wiki/Lydia",
@@ -298,21 +315,22 @@
       "type": "cultural"
     },
     {
-      "date": "01.01.0900",
-      "description": "Carian warriors gain reputation as fierce mercenaries serving in foreign armies; Homer describes Carians as 'barbarous of speech' but acknowledges their martial prowess and naval skills",
-      "description_ru": "Карийские воины приобретают репутацию свирепых наемников, служащих в иностранных армиях; Гомер описывает карийцев как 'варварских по речи', но признает их воинское мастерство и морские навыки",
+      "date": "01.01.0850",
+      "description": "Lydian merchants establish extensive trade networks connecting Anatolia with Greek world and Near East; exchange local gold, silver, textiles for Greek olive oil, wine, and Eastern spices",
+      "description_ru": "Лидийские купцы создают обширные торговые сети, соединяющие Анатолию с греческим миром и Ближним Востоком; обменивают местное золото, серебро, ткани на греческое оливковое масло, вино и восточные специи",
       "era": "BC",
-      "latitude": 37.5,
-      "longitude": 28,
-      "name": "Carian Mercenary Tradition",
-      "name_ru": "Карийская наемническая традиция",
-      "source": "https://en.wikipedia.org/wiki/Carians",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Lydian Trade Networks",
+      "name_ru": "Лидийские торговые сети",
+      "source": "https://en.wikipedia.org/wiki/Lydia",
       "tags": [
-        "Carian",
-        "Greek",
-        "Mercenaries"
+        "Lydia",
+        "Trade",
+        "Economic",
+        "Greek"
       ],
-      "type": "military"
+      "type": "historic"
     },
     {
       "date": "01.01.0850",
@@ -330,24 +348,6 @@
         "Architecture",
         "Palace",
         "Wealth"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0850",
-      "description": "Lydian merchants establish extensive trade networks connecting Anatolia with Greek world and Near East; exchange local gold, silver, textiles for Greek olive oil, wine, and Eastern spices",
-      "description_ru": "Лидийские купцы создают обширные торговые сети, соединяющие Анатолию с греческим миром и Ближним Востоком; обменивают местное золото, серебро, ткани на греческое оливковое масло, вино и восточные специи",
-      "era": "BC",
-      "latitude": 38.4852,
-      "longitude": 28.0428,
-      "name": "Lydian Trade Networks",
-      "name_ru": "Лидийские торговые сети",
-      "source": "https://en.wikipedia.org/wiki/Lydia",
-      "tags": [
-        "Lydia",
-        "Trade",
-        "Economic",
-        "Greek"
       ],
       "type": "historic"
     },
@@ -562,23 +562,6 @@
     },
     {
       "date": "01.01.0700",
-      "description": "Carian mercenaries serve in armies of Egyptian Pharaoh Psammetichus I and II; establish permanent settlements in Nile Delta, creating large expatriate Carian community preserving language and customs",
-      "description_ru": "Карийские наемники служат в армиях египетского фараона Псамметиха I и II; основывают постоянные поселения в дельте Нила, создавая большую экспатриантскую карийскую общину, сохраняющую язык и обычаи",
-      "era": "BC",
-      "latitude": 30.8,
-      "longitude": 31.2,
-      "name": "Carians in Egyptian Service",
-      "name_ru": "Карийцы на египетской службе",
-      "source": "https://en.wikipedia.org/wiki/Carians",
-      "tags": [
-        "Carian",
-        "Egypt",
-        "Mercenaries"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0700",
       "description": "Phrygian Kingdom at territorial peak extends from Aegean coast to central Anatolia; Midas rules from fortified Gordion with vassal cities paying tribute and providing military contingents",
       "description_ru": "Фригийское царство на пике территориального расширения простирается от побережья Эгейского моря до центральной Анатолии; Мидас правит из укрепленного Гордиона с вассальными городами, платящими дань и предоставляющими военные контингенты",
       "era": "BC",
@@ -595,6 +578,23 @@
         "King Midas"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0700",
+      "description": "Carian mercenaries serve in armies of Egyptian Pharaoh Psammetichus I and II; establish permanent settlements in Nile Delta, creating large expatriate Carian community preserving language and customs",
+      "description_ru": "Карийские наемники служат в армиях египетского фараона Псамметиха I и II; основывают постоянные поселения в дельте Нила, создавая большую экспатриантскую карийскую общину, сохраняющую язык и обычаи",
+      "era": "BC",
+      "latitude": 30.8,
+      "longitude": 31.2,
+      "name": "Carians in Egyptian Service",
+      "name_ru": "Карийцы на египетской службе",
+      "source": "https://en.wikipedia.org/wiki/Carians",
+      "tags": [
+        "Carian",
+        "Egypt",
+        "Mercenaries"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0696",
@@ -808,8 +808,8 @@
       "description": "Ardys captures Greek city of Priene; continues Lydian policy of expanding control over Ionian coast while maintaining cultural and commercial ties with Greek world",
       "description_ru": "Ардис захватывает греческий город Приену; продолжает расширять контроль над ионийским побережьем, сохраняя культурные и коммерческие связи с греческим миром",
       "era": "BC",
-      "latitude": 37.6567,
-      "longitude": 27.2969,
+      "latitude": 37.6589,
+      "longitude": 27.2975,
       "name": "Conquest of Priene",
       "name_ru": "Завоевание Приены Лидией",
       "source": "https://en.wikipedia.org/wiki/Ardys_of_Lydia",
@@ -835,7 +835,7 @@
         "Lydia",
         "Greek",
         "Mermnad",
-        "Miletus"
+        "Milesian"
       ],
       "type": "military"
     },
@@ -995,12 +995,12 @@
       "type": "historic"
     },
     {
-      "date": "01.01.0585",
+      "date": "01.01.0586",
       "description": "Alyattes expands Lydian Kingdom eastward, coming into conflict with Median Empire over control of eastern Anatolia; prepares for major war to determine regional supremacy",
       "description_ru": "Алиатт расширяет Лидийское царство на восток, вступая в конфликт с Мидийской империей за контроль над восточной Анатолией",
       "era": "BC",
-      "latitude": 39,
-      "longitude": 36,
+      "latitude": 39.5,
+      "longitude": 34.5,
       "name": "Lydian-Median Conflict Begins",
       "name_ru": "Экспансия Лидии на восток",
       "source": "https://en.wikipedia.org/wiki/Alyattes_of_Lydia",
@@ -1075,8 +1075,8 @@
       "description": "Croesus completes conquest of all Greek cities of Ionia and Aeolia except island of Samos; establishes Lydian hegemony over entire Aegean coast of Anatolia",
       "description_ru": "Крез завершает завоевание всех греческих городов Ионии и Эолиды, кроме острова Самос; устанавливает лидийскую гегемонию над всем эгейским побережьем Анатолии",
       "era": "BC",
-      "latitude": 38.2,
-      "longitude": 27.5,
+      "latitude": 38.3,
+      "longitude": 27.2,
       "name": "Conquest of Ionian Greeks",
       "name_ru": "Лидийская гегемония в Ионии и Эолиде",
       "source": "https://en.wikipedia.org/wiki/Croesus",
