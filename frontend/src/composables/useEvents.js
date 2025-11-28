@@ -164,9 +164,18 @@ export function useEvents() {
   }
 
   // Handle event creation
-  const handleEventCreated = async () => {
-    await fetchEvents()
-    console.log('Events list refreshed after new event creation')
+  const handleEventCreated = async (newEvent) => {
+    // Add the new event to the events array
+    if (newEvent && newEvent.id) {
+      events.value.push(newEvent)
+      // Also add to filtered events so it's immediately visible on the map
+      filteredEvents.value.push(newEvent)
+      console.log('New event added to arrays:', newEvent.name)
+    } else {
+      // Fallback: refresh all events if no event data provided
+      await fetchEvents()
+      console.log('Events list refreshed after new event creation')
+    }
   }
 
   // Handle event update (preserves current filter state)
