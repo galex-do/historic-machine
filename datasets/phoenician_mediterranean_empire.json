@@ -61,6 +61,23 @@
     },
     {
       "date": "01.01.1200",
+      "description": "After Bronze Age collapse destroys neighboring civilizations, Phoenicians survive intact and begin unprecedented maritime expansion across Mediterranean",
+      "description_ru": "После катастрофы бронзового века, разрушившей соседние цивилизации, финикийцы остаются невредимыми и начинают беспрецедентную морскую экспансию в Средиземноморье",
+      "era": "BC",
+      "latitude": 33.894,
+      "longitude": 35.501,
+      "name": "Phoenician Renaissance Begins",
+      "name_ru": "Начало финикийского Ренессанса",
+      "source": "https://www.worldhistory.org/phoenicia/",
+      "tags": [
+        "Maritime",
+        "Expansion",
+        "Phoenician"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1200",
       "description": "Phoenicians develop first true alphabet with 22 consonants, revolutionizing writing and becoming foundation for Greek, Latin and modern alphabets",
       "description_ru": "Финикийцы создают первый настоящий алфавит из 22 согласных, революционизируя письменность и став основой для греческого, латинского и современных алфавитов",
       "era": "BC",
@@ -78,18 +95,20 @@
       "type": "cultural"
     },
     {
-      "date": "01.01.1200",
-      "description": "After Bronze Age collapse destroys neighboring civilizations, Phoenicians survive intact and begin unprecedented maritime expansion across Mediterranean",
-      "description_ru": "После катастрофы бронзового века, разрушившей соседние цивилизации, финикийцы остаются невредимыми и начинают беспрецедентную морскую экспансию в Средиземноморье",
+      "date": "01.01.1100",
+      "description": "Phoenicians from Tyre establish Gadir (Cadiz) on Atlantic coast of Spain, creating westernmost Phoenician colony and crucial gateway beyond Mediterranean",
+      "description_ru": "Финикийцы из Тира основывают Гадир (Кадис) на атлантическом побережье Испании, создавая самую западную финикийскую колонию и важные ворота за пределы Средиземноморья",
       "era": "BC",
-      "latitude": 33.894,
-      "longitude": 35.501,
-      "name": "Phoenician Renaissance Begins",
-      "name_ru": "Начало финикийского Ренессанса",
-      "source": "https://www.worldhistory.org/phoenicia/",
+      "latitude": 36.527,
+      "longitude": -6.289,
+      "name": "Founding of Cadiz",
+      "name_ru": "Основание финикийцами Кадиса",
+      "source": "https://phoenician.org/phoenician_colonies/",
       "tags": [
+        "Colonization",
+        "Tyre",
         "Maritime",
-        "Expansion",
+        "City",
         "Phoenician"
       ],
       "type": "historic"
@@ -110,25 +129,6 @@
         "City",
         "Phoenician",
         "Carthage"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1100",
-      "description": "Phoenicians from Tyre establish Gadir (Cadiz) on Atlantic coast of Spain, creating westernmost Phoenician colony and crucial gateway beyond Mediterranean",
-      "description_ru": "Финикийцы из Тира основывают Гадир (Кадис) на атлантическом побережье Испании, создавая самую западную финикийскую колонию и важные ворота за пределы Средиземноморья",
-      "era": "BC",
-      "latitude": 36.527,
-      "longitude": -6.289,
-      "name": "Founding of Cadiz",
-      "name_ru": "Основание финикийцами Кадиса",
-      "source": "https://phoenician.org/phoenician_colonies/",
-      "tags": [
-        "Colonization",
-        "Tyre",
-        "Maritime",
-        "City",
-        "Phoenician"
       ],
       "type": "historic"
     },
@@ -304,7 +304,7 @@
       "type": "historic"
     },
     {
-      "date": "01.01.0750",
+      "date": "01.01.0775",
       "description": "Phoenicians establish colony of Motya on western Sicily, creating crucial base for controlling maritime routes between Italy and Africa",
       "description_ru": "Финикийцы основывают колонию Мотия в западной Сицилии, создавая важную базу для контроля морских маршрутов между Италией и Африкой",
       "era": "BC",
@@ -323,7 +323,7 @@
       "type": "historic"
     },
     {
-      "date": "01.01.0734",
+      "date": "01.01.0754",
       "description": "Phoenicians found Panormus (modern Palermo) on Sicily's north coast, establishing major colonial city that would become Sicily's capital",
       "description_ru": "Финикийцы основывают Панорм (современный Палермо) на северном побережье Сицилии, крупную колонию и будущую столицу Сицилии",
       "era": "BC",
@@ -339,23 +339,6 @@
         "Sicily"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.0701",
-      "description": "Greeks adapt Phoenician writing system adding vowels, creating Greek alphabet that spreads throughout Mediterranean world",
-      "description_ru": "Греки адаптируют финикийскую систему письма, добавляя гласные, создавая греческий алфавит, который распространяется по всему средиземноморскому миру",
-      "era": "BC",
-      "latitude": 37.979,
-      "longitude": 23.717,
-      "name": "Greeks Adopt Phoenician Alphabet",
-      "name_ru": "Греки принимают финикийский алфавит",
-      "source": "https://www.britannica.com/topic/Phoenician-alphabet",
-      "tags": [
-        "Writing",
-        "Phoenician",
-        "Greek"
-      ],
-      "type": "cultural"
     },
     {
       "date": "01.01.0701",
@@ -479,7 +462,8 @@
         "War",
         "Siege",
         "Phoenician",
-        "Babylonian"
+        "Babylonian",
+        "Chaldean"
       ],
       "type": "military"
     },
@@ -515,7 +499,8 @@
         "Tyre",
         "Phoenician",
         "Babylonian",
-        "Conquest"
+        "Conquest",
+        "Chaldean"
       ],
       "type": "political"
     },
@@ -565,8 +550,8 @@
       "description": "Phoenician cities provide largest contingent of warships for Persian King Xerxes' invasion of Greece, showcasing continued naval supremacy",
       "description_ru": "Финикийские города предоставляют крупнейший контингент боевых кораблей для вторжения персидского царя Ксеркса в Греции, демонстрируя продолжающееся морское превосходство",
       "era": "BC",
-      "latitude": 37.979,
-      "longitude": 23.717,
+      "latitude": 37.9639,
+      "longitude": 23.5558,
       "name": "Phoenician Fleet in Persian Wars",
       "name_ru": "Финикийский флот в греко-персидских войнах",
       "source": "https://www.metmuseum.org/toah/hd/phoe/hd_phoe.htm",
@@ -772,6 +757,24 @@
     },
     {
       "date": "01.01.0280",
+      "description": "Carthage reaches apex of power, dominating North Africa, Iberia, Sardinia, Corsica and western Sicily with unrivaled naval and commercial supremacy",
+      "description_ru": "Карфаген достигает апогея могущества, доминируя в Северной Африке, Иберии, Сардинии, Корсике и западной Сицилии с непревзойденным морским и коммерческим превосходством",
+      "era": "BC",
+      "latitude": 36.853,
+      "longitude": 10.323,
+      "name": "Carthage Controls Western Mediterranean",
+      "name_ru": "Карфаген контролирует Западное Средиземноморье",
+      "source": "https://en.wikipedia.org/wiki/Ancient_Carthage",
+      "tags": [
+        "Carthage",
+        "Maritime",
+        "Trade",
+        "Expansion"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0280",
       "description": "Greek general Pyrrhus campaigns in Sicily against Carthaginian forces, temporarily seizing most Punic-held cities before withdrawing to Italy",
       "description_ru": "Греческий полководец Пирр ведет кампанию в Сицилии против карфагенских сил, временно захватив большинство пунических городов, прежде чем отступить в Италию",
       "era": "BC",
@@ -788,24 +791,6 @@
         "Invasions"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0280",
-      "description": "Carthage reaches apex of power, dominating North Africa, Iberia, Sardinia, Corsica and western Sicily with unrivaled naval and commercial supremacy",
-      "description_ru": "Карфаген достигает апогея могущества, доминируя в Северной Африке, Иберии, Сардинии, Корсике и западной Сицилии с непревзойденным морским и коммерческим превосходством",
-      "era": "BC",
-      "latitude": 36.853,
-      "longitude": 10.323,
-      "name": "Carthage Controls Western Mediterranean",
-      "name_ru": "Карфаген контролирует Западное Средиземноморье",
-      "source": "https://en.wikipedia.org/wiki/Ancient_Carthage",
-      "tags": [
-        "Carthage",
-        "Maritime",
-        "Trade",
-        "Expansion"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0264",

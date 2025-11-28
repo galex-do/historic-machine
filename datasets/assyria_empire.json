@@ -438,24 +438,6 @@
       "type": "political"
     },
     {
-      "date": "01.01.0743",
-      "description": "Tiglath-Pileser III defeats Sarduri II of Urartu at Battle near Arpad, ending Urartian dominance and establishing Assyria as supreme power in Near East",
-      "description_ru": "Тиглатпаласар III побеждает Сардури II Урартского в битве близ Арпада, завершая урартское господство и устанавливая Ассирию как высшую державу на Ближнем Востоке",
-      "era": "BC",
-      "latitude": 36.5922,
-      "longitude": 37.1711,
-      "name": "Battle of Arpad",
-      "name_ru": "Битва при Арпаде",
-      "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
-      "tags": [
-        "Assyrian",
-        "Battle",
-        "Urartu",
-        "Tiglath-Pileser III"
-      ],
-      "type": "military"
-    },
-    {
       "date": "01.01.0740",
       "description": "Tiglath-Pileser III creates first professional standing army with heavy cavalry units, replacing seasonal conscription and revolutionizing ancient warfare",
       "description_ru": "Тиглатпаласар III создает первую профессиональную постоянную армию с тяжелыми кавалерийскими подразделениями, заменяя сезонный призыв и революционизируя древнюю войну",
@@ -471,6 +453,24 @@
         "Army",
         "Tiglath-Pileser III",
         "War Science"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0735",
+      "description": "Tiglath-Pileser III defeats Sarduri II of Urartu at Battle near Arpad, ending Urartian dominance and establishing Assyria as supreme power in Near East",
+      "description_ru": "Тиглатпаласар III побеждает Сардури II Урартского в битве близ Арпада, завершая урартское господство и устанавливая Ассирию как высшую державу на Ближнем Востоке",
+      "era": "BC",
+      "latitude": 36.5922,
+      "longitude": 37.1711,
+      "name": "Battle of Arpad",
+      "name_ru": "Битва при Арпаде",
+      "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
+      "tags": [
+        "Assyrian",
+        "Battle",
+        "Urartu",
+        "Tiglath-Pileser III"
       ],
       "type": "military"
     },
@@ -932,7 +932,8 @@
         "Independence",
         "Rebellion",
         "Assyrian",
-        "Babylonian"
+        "Babylonian",
+        "Chaldean"
       ],
       "type": "political"
     },
@@ -953,7 +954,8 @@
         "Destruction",
         "Medes",
         "Babylonian",
-        "Scythian"
+        "Scythian",
+        "Chaldean"
       ],
       "type": "military"
     },
