@@ -167,7 +167,7 @@
     {
       "date": "01.01.0900",
       "description": "Median tribes establish loose confederation in northwestern Iran with centers at Ecbatana and Rhagae, beginning formation of Median identity",
-      "description_ru": "Мидийские племена создают свободную конфедерацию в северо-западном Иране с центрами в Экбатане и Раге",
+      "description_ru": "Мидийские племена создают свободную конфедерацию в северо-западном Иране с центрами в Экбатане (нынешний Хамадан) и Раге",
       "era": "BC",
       "latitude": 34.7982,
       "longitude": 48.5148,
@@ -278,8 +278,8 @@
       "description": "Median horsemen develop advanced cavalry techniques and composite bow warfare, creating military traditions that will dominate Iranian warfare for centuries",
       "description_ru": "Мидийские всадники разрабатывают передовые кавалерийские техники и войну с композитными луками, создавая военные традиции, которые будут доминировать в иранской войне веками",
       "era": "BC",
-      "latitude": 35,
-      "longitude": 48,
+      "latitude": 34.7982,
+      "longitude": 48.5148,
       "name": "Median Cavalry Development",
       "name_ru": "Развитие мидийской кавалерии",
       "source": "https://en.wikipedia.org/wiki/Medes",
@@ -436,6 +436,22 @@
       "type": "military"
     },
     {
+      "date": "01.01.0650",
+      "description": "Gabay, later known as Aspadana/Isfahan, was an important regional center within the Median kingdom.",
+      "description_ru": "Габай, позднее известный как Аспадана/Исфахан, был важным региональным центром в составе Мидийского царства.",
+      "era": "BC",
+      "latitude": 32.6546,
+      "longitude": 51.668,
+      "name": "Gabay, median city",
+      "name_ru": "Мидийский центр Габай",
+      "tags": [
+        "Medes",
+        "City",
+        "Economic"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0647",
       "description": "Assyrian King Ashurbanipal launches devastating campaign against Elam, sacking Susa and destroying Elamite political structure after centuries of rivalry",
       "description_ru": "Ассирийский царь Ашшурбанипал начинает разрушительную кампанию против Элама, разграбляя Сузы и уничтожая эламскую политическую структуру после столетий соперничества",
@@ -524,7 +540,8 @@
         "Babylonian",
         "Alliance",
         "Diplomacy",
-        "Marriage"
+        "Marriage",
+        "Chaldean"
       ],
       "type": "political"
     },
@@ -549,7 +566,7 @@
     {
       "date": "01.05.0585",
       "description": "Solar eclipse halts Battle of Halys between Media and Lydia; both kingdoms interpret celestial event as divine sign and negotiate peace treaty establishing Halys River as border",
-      "description_ru": "Солнечное затмение останавливает битву при Галисе между Мидией и Лидией; оба царства интерпретируют небесное событие как божественный знак и заключают мирный договор, устанавливая реку Галис как границу",
+      "description_ru": "Солнечное затмение останавливает битву при Галисе между Мидией и Лидией; оба царства интерпретируют небесное событие как божественный знак и заключают мирный договор при посредничестве Вавилона, устанавливая реку Галис как границу",
       "era": "BC",
       "latitude": 39.5,
       "longitude": 34.5,
@@ -561,7 +578,9 @@
         "Battle",
         "Peace",
         "Treaty",
-        "Eclipse"
+        "Eclipse",
+        "Nebuchadnezzar II",
+        "Babylonian"
       ],
       "type": "military"
     },
@@ -588,8 +607,8 @@
       "description": "Median Empire reaches greatest territorial extent under Cyaxares, controlling territories from Anatolia to eastern Iran and establishing hegemony over Iranian plateau",
       "description_ru": "Мидийская империя достигает максимальной территориальной протяженности при Киаксаре, контролируя территории от Анатолии до восточного Ирана и устанавливая гегемонию над Иранским нагорьем",
       "era": "BC",
-      "latitude": 35,
-      "longitude": 48,
+      "latitude": 34.7982,
+      "longitude": 48.5148,
       "name": "Peak of Median Empire",
       "name_ru": "Пик Мидийской империи",
       "source": "https://en.wikipedia.org/wiki/Medes",
@@ -622,8 +641,8 @@
       "description": "Cyrus II (the Great) revolts against Median overlordship, beginning Persian rebellion that will transform regional power balance and establish Achaemenid Persian Empire",
       "description_ru": "Персы во главе с Киром II (Великим) восстают против мидийского владычества. Восстание трансформирует региональный баланс сил и станет началом Ахеменидской Персидской империи",
       "era": "BC",
-      "latitude": 29.9342,
-      "longitude": 52.8906,
+      "latitude": 29.6142,
+      "longitude": 52.5388,
       "name": "Cyrus Revolts Against Media",
       "name_ru": "Кир восстает против Мидии",
       "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",

@@ -43,6 +43,28 @@
     },
     {
       "date": "01.01.0546",
+      "description": "Construction begins on Pasargadae, first dynastic capital of Persian Empire, featuring Cyrus's tomb and palace complex with innovative architectural synthesis of various cultures",
+      "description_ru": "Начинается строительство Пасаргад, первой династической столицы Персидской империи, с гробницей Кира и дворцовым комплексом. Кир брал от покоренных народов архитектурные особенности и подходы, и применял их при строительстве дворца. Также Кир любил сады, и в Пасаргадах были разбиты обширные сады и серьезная система ирригации.",
+      "era": "BC",
+      "latitude": 30.2026,
+      "longitude": 53.1678,
+      "name": "Foundation of Pasargadae",
+      "name_ru": "Основание Пасаргад",
+      "source": "https://en.wikipedia.org/wiki/Pasargadae",
+      "tags": [
+        "Persian",
+        "Capital",
+        "Architecture",
+        "Building",
+        "Palace",
+        "Cyrus the Great",
+        "Achaemenid",
+        "City"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0546",
       "description": "Cyrus the Great conquers Lydia after defeating King Croesus at Battle of Thymbra, adding wealthy Anatolian territories and Lydian gold reserves to Persian Empire. After conquering Lydia, Cyrus spares Croesus's life and makes him advisor, demonstrating magnanimity toward defeated rulers that becomes hallmark of his reign",
       "description_ru": "Кир Великий завоевывает Лидию после победы над царем Крезом в битве при Тимбре, присваивая богатые анатолийские территории и лидийские золотые резервы Персии. После завоевания Лидии Кир щадит жизнь Креза и делает его советником, демонстрируя великодушие к побежденным правителям, что станет отличительной чертой его правления",
       "era": "BC",
@@ -137,9 +159,9 @@
       "type": "military"
     },
     {
-      "date": "01.10.0539",
+      "date": "12.10.0539",
       "description": "Cyrus conquers Babylon after Battle of Opis, capturing Nabonidus and ending Neo-Babylonian Empire; treats Babylonians with respect, presenting himself as liberator chosen by Marduk",
-      "description_ru": "Кир завоевывает Вавилон после битвы при Описе, захватывая Набонида и завершая Нововавилонскую империю. Вавилонянам он представляет себя освободителем, избранным Мардуком, и демонстрирует уважение к ним",
+      "description_ru": "Кир подчиняет без боя Вавилон после битвы при Описе, пленя Набонида и завершая существование Нововавилонской империи. Вавилонянам он представляет себя освободителем, избранным Мардуком, и демонстрирует уважение к ним",
       "era": "BC",
       "latitude": 32.5422,
       "longitude": 44.4215,
@@ -174,14 +196,15 @@
         "Tolerance",
         "Cyrus the Great",
         "Human Rights",
-        "Achaemenid"
+        "Achaemenid",
+        "Judah"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0537",
       "description": "Cyrus restores Babylonian temples and returns looted statues of gods to their original cities, earning loyalty of Mesopotamian priests and population",
-      "description_ru": "Кир восстанавливает вавилонские храмы и возвращает разграбленные статуи богов в их исходные города, завоевывая лояльность месопотамских жрецов и населения",
+      "description_ru": "Кир восстанавливает вавилонские храмы, возрождает почитание Мардука и возвращает вывезенные статуи богов в их родные города, завоевывая лояльность месопотамских жрецов и населения",
       "era": "BC",
       "latitude": 32.5422,
       "longitude": 44.4215,
@@ -207,7 +230,7 @@
       "latitude": 34,
       "longitude": 36,
       "name": "Conquest of Syria and Levant",
-      "name_ru": "Завоевание Сирии и Леванта",
+      "name_ru": "Завоевание Персией Сирии и Леванта",
       "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
       "tags": [
         "Persian",
@@ -215,31 +238,10 @@
         "Expansion",
         "Empire",
         "Cyrus the Great",
-        "Achaemenid"
+        "Achaemenid",
+        "Golden Age"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0535",
-      "description": "Construction begins on Pasargadae, first dynastic capital of Persian Empire, featuring Cyrus's tomb and palace complex with innovative architectural synthesis of various cultures",
-      "description_ru": "Начинается строительство Пасаргад, первой династической столицы Персидской империи, с гробницей Кира и дворцовым комплексом. Кир брал от покоренных народов архитектурные особенности и подходы, и применял их при строительстве дворца. Также Кир любил сады, и в Пасаргадах были разбиты обширные сады и серьезная система ирригации.",
-      "era": "BC",
-      "latitude": 30.2026,
-      "longitude": 53.1678,
-      "name": "Foundation of Pasargadae",
-      "name_ru": "Основание Пасаргад",
-      "source": "https://en.wikipedia.org/wiki/Pasargadae",
-      "tags": [
-        "Persian",
-        "Capital",
-        "Architecture",
-        "Building",
-        "Palace",
-        "Cyrus the Great",
-        "Achaemenid",
-        "City"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0534",
@@ -320,25 +322,6 @@
     },
     {
       "date": "01.01.0530",
-      "description": "Cyrus campaigns against Massagetae nomads in Central Asia; killed in battle by Queen Tomyris, ending reign of empire's founder and greatest conqueror",
-      "description_ru": "Кир убит в бою царицей массагетов Томирис, когда ведет военную кампанию против кочевников в Центральной Азии",
-      "era": "BC",
-      "latitude": 42,
-      "longitude": 60,
-      "name": "Death of Cyrus the Great",
-      "name_ru": "Смерть Кира Великого",
-      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
-      "tags": [
-        "Persian",
-        "Battle",
-        "Death",
-        "Cyrus the Great",
-        "Achaemenid"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0530",
       "description": "Cyrus's body returned to Pasargadae for burial in simple stone tomb; inscription reads 'O man, whoever you are and wherever you come from, for I know you will come, I am Cyrus who won the Persians their empire. Do not begrudge me this bit of earth that covers my bones'",
       "description_ru": "Тело Кира возвращено в Пасаргады для захоронения в простой каменной гробнице; надпись гласит: 'О человек, кто бы ты ни был и откуда бы ни пришел, ибо я знаю, что ты придешь, я - Кир, который завоевал персам их империю. Не жалей для меня этого клочка земли, покрывающего мои кости'",
       "era": "BC",
@@ -359,9 +342,28 @@
       "type": "historic"
     },
     {
+      "date": "01.01.0530",
+      "description": "Cyrus campaigns against Massagetae nomads in Central Asia; killed in battle by Queen Tomyris, ending reign of empire's founder and greatest conqueror",
+      "description_ru": "Кир убит в бою царицей массагетов Томирис, когда ведет военную кампанию против кочевников в Центральной Азии",
+      "era": "BC",
+      "latitude": 42,
+      "longitude": 60,
+      "name": "Death of Cyrus the Great",
+      "name_ru": "Смерть Кира Великого",
+      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
+      "tags": [
+        "Persian",
+        "Battle",
+        "Death",
+        "Cyrus the Great",
+        "Achaemenid"
+      ],
+      "type": "military"
+    },
+    {
       "date": "01.01.0529",
-      "description": "Cambyses II becomes Persian emperor and consolidates power, preparing for conquest of Egypt as final unconquered major power in Near East",
-      "description_ru": "Камбиз II становится персидским императором и укрепляет власть, готовясь к покорению Египта - последней независимой крупной державы на Ближнем Востоке",
+      "description": "Cambyses II succeeded his father in Pasargadae. During his coronation, the new emperor, beginning with Cambyses, underwent certain rituals: entering the temple, removing his clothes, donning the robes worn by Cyrus the Great, and performing symbolic acts, including eating and drinking.",
+      "description_ru": "Камбиз II наследует власть отца в Пасаргадах. Во время коронации новый император, начиная с Камбиза, проходил определенные ритуалы: входил в храм, снимал одежду, надевал одеяния, которые носил Кир Великий, и совершал символические действия, включающие еду и питье.",
       "era": "BC",
       "latitude": 30.2026,
       "longitude": 53.1678,
@@ -372,14 +374,15 @@
         "Persian",
         "Dynasty",
         "Achaemenid",
-        "King"
+        "King",
+        "Ceremonial"
       ],
       "type": "political"
     },
     {
       "date": "01.05.0525",
       "description": "Persian forces defeat Egyptian Pharaoh Psamtik III at Battle of Pelusium; Cambyses conquers Egypt, ending 26th Dynasty and establishing Persian control over Nile valley",
-      "description_ru": "Персы побеждают египетского фараона Псамметиха III в битве при Пелусии; Камбиз подчиняет Египет, завершая 26-ю династию и устанавливая персидский контроль над долиной Нила",
+      "description_ru": "Персы побеждают египетского фараона Псамметиха III в битве при Пелусии; Камбиз подчиняет Египет, последнюю независимую державу на Ближнем Востоке, завершая 26-ю династию и устанавливая персидский контроль над долиной Нила",
       "era": "BC",
       "latitude": 31.0456,
       "longitude": 32.5556,
@@ -396,23 +399,78 @@
       "type": "military"
     },
     {
-      "date": "01.01.0522",
-      "description": "Cambyses dies mysteriously during return from Egypt; Darius I (Darius the Great) seizes throne after defeating rival claimant Gaumata in civil war",
-      "description_ru": "Камбиз умирает при неизвестных обстоятельствах во время возвращения из Египта; в Персии начинается гражданская война, из которой победителем выходит Дарий I (Дарий Великий)",
+      "date": "01.11.0522",
+      "description": "After the assassination of the impostor, the conspirators decided that Darius would become the new king. He was crowned the new King of Kings. Darius's rise to power was not peaceful. Many provinces that had not recognized him rebelled.\n",
+      "description_ru": "После убийства самозванца заговорщики решили, что новым царем станет Дарий. Он был коронован как новый Царь Царей. Приход Дария к власти не был мирным. Многие провинции, не признавшие его, восстали.",
       "era": "BC",
-      "latitude": 36.3,
-      "longitude": 59.5,
-      "name": "Darius I Seizes Power",
-      "name_ru": "Дарий I захватывает власть в Персии",
+      "latitude": 32.1895,
+      "longitude": 48.2544,
+      "name": "Darius - King of Persia",
+      "name_ru": "Дарий - царь Персии",
+      "tags": [
+        "Persian",
+        "King",
+        "Achaemenid",
+        "Civil War",
+        "Darius I"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "29.09.0522",
+      "description": "Darius, a member of the Achaemenid dynasty's collateral branch and a squire at the court of Cambyses II, gathered a group of six other prominent Persian nobles. They plotted and assassinated the impostor Gaumata in the fortress of Sikayuvatish.",
+      "description_ru": "Дарий, член боковой ветви династии Ахеменидов и оруженосец при дворе Камбиза II, собрал группу из шести других знатных персидских дворян. Они спланировали заговор и убили самозванца Гаумату в крепости Сикаюватиш.\n\n",
+      "era": "BC",
+      "latitude": 34.29751704,
+      "longitude": 48.580513,
+      "name": "Gaumata's Assasination",
+      "name_ru": "Гаумата убит заговорщиками",
+      "tags": [
+        "Achaemenid",
+        "Persian",
+        "Assassination",
+        "Civil War",
+        "Darius I"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0522",
+      "description": "Cambyses dies mysteriously during return from Egypt; power is seized by the magician (Mede priest) Gaumata, who pretended to be Bardiya (Smerdis), the long-killed brother of Cambyses",
+      "description_ru": "Камбиз умирает при неизвестных обстоятельствах во время возвращения из Египта; власть захватывает маг (мидийский жрец) Гаумата, который выдавал себя за Бардию (Смердиса), давно убитого брата Камбиза",
+      "era": "BC",
+      "latitude": 30.2026,
+      "longitude": 53.1678,
+      "name": "Gaumata Seizes Persian Rule",
+      "name_ru": "Гаумата захватывает власть в Персии",
       "source": "https://en.wikipedia.org/wiki/Darius_I",
       "tags": [
         "Persian",
-        "Civil War",
         "Dynasty",
-        "Darius I",
-        "Achaemenid"
+        "Death",
+        "Achaemenid",
+        "Imposter",
+        "Civil War"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0521",
+      "description": "Susa, devastated by Assyria, was located at the crossroads of important trade routes and was geographically conveniently situated between Mesopotamia and the Iranian plateau. Darius I restored and rebuilt the city, making it one of his main capitals, along with Persepolis and Babylon.",
+      "description_ru": "Разоренные Ассирией Сузы находились на пересечении важных торговых путей и были географически удобно расположены между Месопотамией и Иранским нагорьем. Дарий I восстановил и перестроил город, сделав его одной из своих главных, наряду с Персеполем и Вавилоном, столиц.",
+      "era": "BC",
+      "latitude": 32.1895,
+      "longitude": 48.2544,
+      "name": "Persian restoration of Susa",
+      "name_ru": "Персидская реставрация Суз",
+      "tags": [
+        "Persian",
+        "Darius I",
+        "Achaemenid",
+        "Capital",
+        "Administration"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0521",
@@ -439,8 +497,8 @@
       "description": "Darius reorganizes empire into 20 satrapies (provinces), each with satrap (governor), military commander, and royal secretary creating efficient administrative system",
       "description_ru": "Дарий делит империю на 20 сатрапий, каждая с сатрапом (губернатором), военачальником и царским секретарем. Сатрапии платили империи дань, поставляли войска при необходимости; в остальном в вопросах культуры, законодательства, традиций и языка имели определенную автономность.",
       "era": "BC",
-      "latitude": 32.6546,
-      "longitude": 51.668,
+      "latitude": 32.1897,
+      "longitude": 48.2583,
       "name": "Satrapy System Established",
       "name_ru": "Персидские сатрапии",
       "source": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
@@ -448,14 +506,35 @@
         "Persian",
         "Administration",
         "Reform",
-        "Achaemenid"
+        "Achaemenid",
+        "Darius I"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0518",
-      "description": "Construction begins on Persepolis, ceremonial capital and showcase of imperial power, featuring Apadana palace with distinctive Persian column capitals and extensive reliefs",
-      "description_ru": "Начинается строительство Персеполя, церемониальной столицы и витрины имперской мощи, с дворцом Ападана с характерными персидскими капителями колонн и обширными рельефами",
+      "description": "Darius introduces standardized coinage throughout empire - gold daric and silver siglos - facilitating trade and tax collection across vast territories",
+      "description_ru": "Дарий вводит единую монету по всей империи - золотой дарик и серебряный сиглос. Это упрощает торговлю и сбор налогов на огромных территориях",
+      "era": "BC",
+      "latitude": 32.1897,
+      "longitude": 48.2583,
+      "name": "Persian Imperial Coinage",
+      "name_ru": "Персидская имперская монета",
+      "source": "https://en.wikipedia.org/wiki/Achaemenid_coinage",
+      "tags": [
+        "Persian",
+        "Economic",
+        "Currency",
+        "Trade",
+        "Achaemenid",
+        "Darius I"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0518",
+      "description": "Construction begins on Persepolis, ceremonial capital and showcase of imperial power, featuring Apadana palace with distinctive Persian column capitals and extensive reliefs. Nowruz (New Year) was traditionally celebrated in Persepolis.",
+      "description_ru": "Начинается строительство Персеполя, церемониальной столицы и витрины имперской мощи, с дворцом Ападана с характерными персидскими капителями колонн и обширными рельефами. В Персеполе традиционно праздновался Навруз (Новый год)",
       "era": "BC",
       "latitude": 29.9342,
       "longitude": 52.8906,
@@ -469,26 +548,8 @@
         "Palace",
         "Building",
         "Achaemenid",
-        "City"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0518",
-      "description": "Darius introduces standardized coinage throughout empire - gold daric and silver siglos - facilitating trade and tax collection across vast territories",
-      "description_ru": "Дарий вводит единую монету по всей империи - золотой дарик и серебряный сиглос. Это упрощает торговлю и сбор налогов на огромных территориях",
-      "era": "BC",
-      "latitude": 32.6546,
-      "longitude": 51.668,
-      "name": "Persian Imperial Coinage",
-      "name_ru": "Персидская имперская монета",
-      "source": "https://en.wikipedia.org/wiki/Achaemenid_coinage",
-      "tags": [
-        "Persian",
-        "Economic",
-        "Currency",
-        "Trade",
-        "Achaemenid"
+        "City",
+        "Darius I"
       ],
       "type": "historic"
     },
@@ -577,15 +638,16 @@
       "description": "Darius establishes 'King's Eyes and Ears' - network of imperial inspectors reporting directly to emperor, ensuring satraps remain loyal and efficient",
       "description_ru": "Дарий учреждает 'Царские Очи и Уши' - сеть имперских инспекторов, докладывающих напрямую императору, обеспечивая лояльность и эффективность сатрапов",
       "era": "BC",
-      "latitude": 32.6546,
-      "longitude": 51.668,
+      "latitude": 32.1897,
+      "longitude": 48.2583,
       "name": "Royal Inspector System",
       "name_ru": "Система царских инспекторов",
       "source": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
       "tags": [
         "Persian",
         "Administration",
-        "Achaemenid"
+        "Achaemenid",
+        "Darius I"
       ],
       "type": "political"
     },
@@ -623,7 +685,8 @@
         "Greek",
         "Destruction",
         "Achaemenid",
-        "Greek-Persian Wars"
+        "Greek-Persian Wars",
+        "Darius I"
       ],
       "type": "military"
     },
@@ -679,10 +742,11 @@
       "tags": [
         "Persian",
         "Dynasty",
+        "King",
         "Death",
-        "Xerxes I",
         "Achaemenid",
-        "King"
+        "Xerxes I",
+        "Darius I"
       ],
       "type": "political"
     },
@@ -731,8 +795,8 @@
       "description": "Xerxes assembles massive army and fleet for Greek invasion, recruiting forces from across empire including Immortals elite guard, demonstrating unprecedented military mobilization",
       "description_ru": "Ксеркс собирает массивную армию и флот для вторжения в Грецию, призывая силы со всей империи, включая элитную гвардию Бессмертных, демонстрируя беспрецедентную военную мобилизацию",
       "era": "BC",
-      "latitude": 32.6546,
-      "longitude": 51.668,
+      "latitude": 32.1897,
+      "longitude": 48.2583,
       "name": "Mobilization for Greek Invasion",
       "name_ru": "Мобилизация для вторжения в Грецию",
       "source": "https://en.wikipedia.org/wiki/Second_Persian_invasion_of_Greece",
@@ -832,26 +896,6 @@
     },
     {
       "date": "27.08.0479",
-      "description": "Greek fleet destroys remaining Persian ships at Battle of Mycale on same day as Plataea, effectively ending Persian naval threat in Aegean Sea",
-      "description_ru": "Греческий флот уничтожает оставшиеся персидские корабли в битве при Микале в тот же день, что и Платеи, фактически завершая персидскую морскую угрозу в Эгейском море",
-      "era": "BC",
-      "latitude": 37.7533,
-      "longitude": 27.0667,
-      "name": "Battle of Mycale",
-      "name_ru": "Битва при Микале",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Mycale",
-      "tags": [
-        "Persian",
-        "Greek",
-        "Naval",
-        "Battle",
-        "Greek-Persian Wars",
-        "Achaemenid"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "27.08.0479",
       "description": "Combined Greek army decisively defeats Persian forces at Battle of Plataea, ending Persian invasion and forcing withdrawal from mainland Greece",
       "description_ru": "Объединенная греческая армия решительно побеждает персидские силы в битве при Платеях, завершая персидское вторжение и вынуждая к отступлению из материковой Греции",
       "era": "BC",
@@ -866,6 +910,26 @@
         "Battle",
         "Greek-Persian Wars",
         "Xerxes I",
+        "Achaemenid"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "27.08.0479",
+      "description": "Greek fleet destroys remaining Persian ships at Battle of Mycale on same day as Plataea, effectively ending Persian naval threat in Aegean Sea",
+      "description_ru": "Греческий флот уничтожает оставшиеся персидские корабли в битве при Микале в тот же день, что и Платеи, фактически завершая персидскую морскую угрозу в Эгейском море",
+      "era": "BC",
+      "latitude": 37.7533,
+      "longitude": 27.0667,
+      "name": "Battle of Mycale",
+      "name_ru": "Битва при Микале",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Mycale",
+      "tags": [
+        "Persian",
+        "Greek",
+        "Naval",
+        "Battle",
+        "Greek-Persian Wars",
         "Achaemenid"
       ],
       "type": "military"
@@ -954,7 +1018,7 @@
     {
       "date": "01.08.0465",
       "description": "Xerxes assassinated in palace conspiracy orchestrated by Artabanus; Artaxerxes I becomes emperor after eliminating rival claimants in power struggle",
-      "description_ru": "Император Персии Ксеркс убит в результате дворцового заговора, организованного Артабаном; Артаксеркс I становится императором после устранения соперничающих претендентов в борьбе за власть",
+      "description_ru": "Император Персии Ксеркс убит в своей постели в Персеполе в результате дворцового заговора, организованного Артабаном; Артаксеркс I становится императором после устранения соперников",
       "era": "BC",
       "latitude": 29.9342,
       "longitude": 52.8906,
@@ -1081,10 +1145,10 @@
     {
       "date": "01.01.0424",
       "description": "Artaxerxes I dies after 41-year reign; succession crisis erupts as multiple sons claim throne, weakening imperial authority",
-      "description_ru": "Артаксеркс I умирает после 41-летнего правленияю. После его смерти несколько сыновей претендуют на трон, что ослабляет имперскую власть и вызывает волнения в империи",
+      "description_ru": "Артаксеркс I умирает после 41-летнего правления. После его смерти несколько сыновей претендуют на трон, что ослабляет имперскую власть и вызывает волнения в империи",
       "era": "BC",
-      "latitude": 32.6546,
-      "longitude": 51.668,
+      "latitude": 32.1897,
+      "longitude": 48.2583,
       "name": "Death of Artaxerxes I",
       "name_ru": "Смерть Артаксеркса I",
       "source": "https://en.wikipedia.org/wiki/Artaxerxes_I",
@@ -1100,18 +1164,18 @@
     {
       "date": "01.01.0423",
       "description": "Darius II becomes emperor after eliminating brothers and rivals, beginning reign marked by increased court intrigue and satrapal independence",
-      "description_ru": "Дарий II становится императором после устранения братьев и соперников. При его правлении растет роль придворных интриг и усиливается независимость сатрапов",
+      "description_ru": "Дарий II становится императором, убив в междуусобийце сводных братьев. При его правлении растет роль придворных интриг и усиливается независимость сатрапов",
       "era": "BC",
-      "latitude": 32.6546,
-      "longitude": 51.668,
+      "latitude": 32.543,
+      "longitude": 44.421,
       "name": "Darius II Becomes Emperor",
       "name_ru": "Дарий II - император Персии",
       "source": "https://en.wikipedia.org/wiki/Darius_II",
       "tags": [
         "Persian",
         "Dynasty",
-        "Achaemenid",
-        "King"
+        "King",
+        "Achaemenid"
       ],
       "type": "political"
     },
@@ -1179,8 +1243,8 @@
       "description": "Darius II dies; Artaxerxes II becomes emperor but faces immediate revolt by younger brother Cyrus the Younger, who claims throne",
       "description_ru": "Дарий II умирает; Артаксеркс II становится императором, но сталкивается с немедленным восстанием младшего брата Кира Младшего, который претендует на трон",
       "era": "BC",
-      "latitude": 32.6546,
-      "longitude": 51.668,
+      "latitude": 30.2026,
+      "longitude": 53.1678,
       "name": "Artaxerxes II Becomes Emperor",
       "name_ru": "Артаксеркс II - император Персии",
       "source": "https://en.wikipedia.org/wiki/Artaxerxes_II",
@@ -1354,8 +1418,8 @@
       "description": "Artaxerxes II dies at age 94 after 46-year reign; Artaxerxes III becomes emperor and begins aggressive campaign to restore imperial power",
       "description_ru": "Артаксеркс II умирает в возрасте 94 лет после 46-летнего правления; Артаксеркс III становится императором и начинает агрессивную кампанию по восстановлению имперской мощи",
       "era": "BC",
-      "latitude": 32.6546,
-      "longitude": 51.668,
+      "latitude": 32.1897,
+      "longitude": 48.2583,
       "name": "Artaxerxes III Becomes Emperor",
       "name_ru": "Артаксеркс III - император Персии",
       "source": "https://en.wikipedia.org/wiki/Artaxerxes_III",
@@ -1373,8 +1437,8 @@
       "description": "Artaxerxes III ruthlessly consolidates power, executing rival princes and rebellious satraps to eliminate threats and restore central authority",
       "description_ru": "Артаксеркс III безжалостно казнит соперничающих принцев и мятежных сатрапов, стремясь устранить угрозы и укрепить имперскую власть",
       "era": "BC",
-      "latitude": 32.6546,
-      "longitude": 51.668,
+      "latitude": 32.1897,
+      "longitude": 48.2583,
       "name": "Artaxerxes III's Purge",
       "name_ru": "Чистки Артаксеркса III",
       "source": "https://en.wikipedia.org/wiki/Artaxerxes_III",
@@ -1408,8 +1472,8 @@
       "description": "Persian Empire reaches temporary resurgence under Artaxerxes III, who restores control over Egypt, Phoenicia and rebellious satrapies through military force",
       "description_ru": "Персидская империя возрождается и укрепляется при Артаксерксе III, который восстанавливает контроль над Египтом, Финикией и мятежными сатрапиями через военную силу",
       "era": "BC",
-      "latitude": 32.6546,
-      "longitude": 51.668,
+      "latitude": 32.1897,
+      "longitude": 48.2583,
       "name": "Persian Imperial Resurgence",
       "name_ru": "Возрождение Персидской империи",
       "source": "https://en.wikipedia.org/wiki/Artaxerxes_III",
@@ -1426,8 +1490,8 @@
       "description": "Artaxerxes III poisoned by eunuch Bagoas; Arses becomes puppet emperor, but Bagoas holds real power in court intrigue",
       "description_ru": "Артаксеркс III отравлен своим визирем, евнухом Багоем; Арсес становится марионеточным императором, но Багой держит реальную власть в придворных интригах",
       "era": "BC",
-      "latitude": 32.6546,
-      "longitude": 51.668,
+      "latitude": 32.543,
+      "longitude": 44.421,
       "name": "Assassination of Artaxerxes III",
       "name_ru": "Убийство Артаксеркса III",
       "source": "https://en.wikipedia.org/wiki/Artaxerxes_III",
@@ -1460,6 +1524,26 @@
     },
     {
       "date": "01.01.0336",
+      "description": "Bagoas poisons Emperor Arses and most of royal family; installs distant relative Darius III as emperor, last ruler of Achaemenid Empire",
+      "description_ru": "Багой отравляет императора Арсеса и большую часть царской семьи; приводит к власти дальнего родственника Дария III, последнего правителя династии Ахеменидов",
+      "era": "BC",
+      "latitude": 30.2026,
+      "longitude": 53.1678,
+      "name": "Darius III Becomes Emperor",
+      "name_ru": "Дарий III - император Персии",
+      "source": "https://en.wikipedia.org/wiki/Darius_III",
+      "tags": [
+        "Persian",
+        "Dynasty",
+        "Assassination",
+        "King",
+        "Achaemenid",
+        "Regicide"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0336",
       "description": "Philip II of Macedon assassinated; Alexander III (the Great) becomes king at age 20 and inherits father's plan to invade Persian Empire",
       "description_ru": "Филипп II Македонский убит; Александр III (Великий) становится царем в возрасте 20 лет и наследует план отца вторгнуться в Персидскую империю",
       "era": "BC",
@@ -1473,26 +1557,6 @@
         "Macedonian",
         "Dynasty",
         "Assassination",
-        "Regicide"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0336",
-      "description": "Bagoas poisons Emperor Arses and most of royal family; installs distant relative Darius III as emperor, last ruler of Achaemenid Empire",
-      "description_ru": "Багой отравляет императора Арсеса и большую часть царской семьи; приводит к власти дальнего родственника Дария III, последнего правителя династии Ахеменидов",
-      "era": "BC",
-      "latitude": 32.6546,
-      "longitude": 51.668,
-      "name": "Darius III Becomes Emperor",
-      "name_ru": "Дарий III - император Персии",
-      "source": "https://en.wikipedia.org/wiki/Darius_III",
-      "tags": [
-        "Persian",
-        "Dynasty",
-        "Assassination",
-        "King",
-        "Achaemenid",
         "Regicide"
       ],
       "type": "political"
@@ -1698,12 +1762,12 @@
       "type": "military"
     },
     {
-      "date": "01.01.0330",
+      "date": "01.02.0330",
       "description": "Fall of Achaemenid Persian Empire after 220 years; Alexander inherits vast territories from Egypt to Central Asia, transforming world political order",
       "description_ru": "Падение Ахеменидской Персидской империи после 220 лет; Александр наследует огромные территории от Египта до Центральной Азии, трансформируя мировой политический порядок",
       "era": "BC",
-      "latitude": 32.6546,
-      "longitude": 51.668,
+      "latitude": 32.1897,
+      "longitude": 48.2583,
       "name": "Fall of Achaemenid Empire",
       "name_ru": "Падение династии Ахеменидов",
       "source": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
