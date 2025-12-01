@@ -74,26 +74,58 @@
       
       <div class="right-section">
         <div class="auth-section">
-          <!-- Guest user (not logged in) -->
-          <div v-if="isGuest" class="auth-buttons">
-            <button @click="showLoginModal = true" class="auth-btn login-btn">
+          <!-- User Menu Dropdown -->
+          <div class="user-dropdown" @click.stop>
+            <button 
+              class="auth-btn user-menu-btn"
+              @click="toggleUserDropdown"
+            >
               <span class="auth-icon">👤</span>
-              {{ t('login') }}
+              <span v-if="!isGuest" class="username-text">{{ user?.username }}</span>
+              <span v-else>{{ t('login') }}</span>
+              <span class="dropdown-arrow" :class="{ 'open': showUserDropdown }">▼</span>
             </button>
-          </div>
-          
-          <!-- Authenticated user -->
-          <div v-else class="user-info">
-            <span class="user-welcome">
-              {{ t('welcome') }}, <strong>{{ user?.username }}</strong>
-              <span v-if="user?.access_level === 'super'" class="access-badge super">{{ t('superBadge') }}</span>
-              <span v-else-if="user?.access_level === 'admin'" class="access-badge admin">{{ t('adminBadge') }}</span>
-              <span v-else-if="user?.access_level === 'editor'" class="access-badge editor">{{ t('editorBadge') }}</span>
-            </span>
-            <button @click="handleLogout" class="auth-btn logout-btn" :disabled="loading">
-              <span class="auth-icon">🚪</span>
-              {{ t('logout') }}
-            </button>
+            <div v-if="showUserDropdown" class="user-dropdown-menu">
+              <!-- About link - always visible -->
+              <router-link 
+                to="/about" 
+                class="dropdown-item"
+                @click="showUserDropdown = false"
+              >
+                <span class="dropdown-icon">ℹ️</span>
+                {{ t('about') }}
+              </router-link>
+              
+              <div class="dropdown-divider"></div>
+              
+              <!-- Guest: Login button -->
+              <button 
+                v-if="isGuest"
+                class="dropdown-item"
+                @click="openLoginModal"
+              >
+                <span class="dropdown-icon">🔑</span>
+                {{ t('login') }}
+              </button>
+              
+              <!-- Authenticated: User info and Logout -->
+              <template v-else>
+                <div class="dropdown-user-info">
+                  <span class="dropdown-welcome">{{ t('welcome') }}, <strong>{{ user?.username }}</strong></span>
+                  <span v-if="user?.access_level === 'super'" class="access-badge super">{{ t('superBadge') }}</span>
+                  <span v-else-if="user?.access_level === 'admin'" class="access-badge admin">{{ t('adminBadge') }}</span>
+                  <span v-else-if="user?.access_level === 'editor'" class="access-badge editor">{{ t('editorBadge') }}</span>
+                </div>
+                <button 
+                  class="dropdown-item logout-item"
+                  @click="handleLogoutFromDropdown"
+                  :disabled="loading"
+                >
+                  <span class="dropdown-icon">🚪</span>
+                  {{ t('logout') }}
+                </button>
+              </template>
+            </div>
           </div>
         </div>
 
@@ -191,6 +223,7 @@ export default {
     const showLoginModal = ref(false)
     const showAdminDropdown = ref(false)
     const showLocaleDropdown = ref(false)
+    const showUserDropdown = ref(false)
     const loginForm = ref({
       username: '',
       password: ''
@@ -225,11 +258,29 @@ export default {
     const toggleAdminDropdown = () => {
       showAdminDropdown.value = !showAdminDropdown.value
       showLocaleDropdown.value = false
+      showUserDropdown.value = false
     }
 
     const toggleLocaleDropdown = () => {
       showLocaleDropdown.value = !showLocaleDropdown.value
       showAdminDropdown.value = false
+      showUserDropdown.value = false
+    }
+
+    const toggleUserDropdown = () => {
+      showUserDropdown.value = !showUserDropdown.value
+      showAdminDropdown.value = false
+      showLocaleDropdown.value = false
+    }
+
+    const openLoginModal = () => {
+      showUserDropdown.value = false
+      showLoginModal.value = true
+    }
+
+    const handleLogoutFromDropdown = async () => {
+      showUserDropdown.value = false
+      await handleLogout()
     }
 
     const handleLocaleChange = (newLocale) => {
@@ -246,6 +297,9 @@ export default {
       }
       if (!event.target.closest('.locale-selector')) {
         showLocaleDropdown.value = false
+      }
+      if (!event.target.closest('.user-dropdown')) {
+        showUserDropdown.value = false
       }
     }
 
@@ -269,6 +323,7 @@ export default {
       showLoginModal,
       showAdminDropdown,
       showLocaleDropdown,
+      showUserDropdown,
       loginForm,
       locale,
       currentLocale,
@@ -279,6 +334,9 @@ export default {
       closeModal,
       toggleAdminDropdown,
       toggleLocaleDropdown,
+      toggleUserDropdown,
+      openLoginModal,
+      handleLogoutFromDropdown,
       handleLocaleChange
     }
   }
@@ -599,6 +657,75 @@ export default {
   height: 1px;
   background: #e2e8f0;
   margin: 0.5rem 0;
+}
+
+/* User Dropdown Styles */
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 100000;
+}
+
+.user-menu-btn {
+  display: flex !important;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  height: 40px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  min-width: 100px;
+}
+
+.user-menu-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.username-text {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.user-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  margin-top: 0.5rem;
+  overflow: hidden;
+  z-index: 100000;
+  min-width: 200px;
+}
+
+.dropdown-user-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1rem;
+  background: #f7fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.dropdown-welcome {
+  font-size: 0.85rem;
+  color: #4a5568;
+  width: 100%;
+}
+
+.logout-item {
+  color: #e53e3e !important;
+}
+
+.logout-item:hover {
+  background: #fed7d7 !important;
 }
 
 /* Global modal styles - not scoped since we use Teleport */

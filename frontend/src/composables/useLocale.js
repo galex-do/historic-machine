@@ -33,6 +33,22 @@ const UI_TRANSLATIONS = {
     logout: 'Logout',
     welcome: 'Welcome',
     loggingIn: 'Logging in...',
+    about: 'About',
+    
+    // About Page
+    aboutTitle: 'About Historia ex machina',
+    aboutProjectTitle: 'The Project',
+    aboutProjectDescription: 'Historia ex machina is an interactive historical mapping platform that brings world history to life through geographic visualization. Explore thousands of years of human civilization, from ancient empires to modern nations, all displayed on an interactive world map.',
+    aboutFeaturesTitle: 'Features',
+    aboutFeature1: 'Interactive world map with historical event markers',
+    aboutFeature2: 'Timeline filtering by historical periods and date ranges',
+    aboutFeature3: 'Multilingual support (English and Russian)',
+    aboutFeature4: 'Comprehensive datasets covering ancient civilizations',
+    aboutFeature5: 'Tag-based event categorization and filtering',
+    aboutDataTitle: 'Historical Data',
+    aboutDataDescription: 'Our database includes events from major ancient civilizations including the Assyrian Empire, Neo-Babylonian Empire, Achaemenid Persia, Ancient Greece, Phoenician Mediterranean, Anatolian Kingdoms, and many more. Each event is carefully documented with sources and available in multiple languages.',
+    aboutTechTitle: 'Technology',
+    backToMap: 'Back to Map',
     
     // Login Modal
     loginToHistoria: 'Login to Historia ex machina',
@@ -260,6 +276,22 @@ const UI_TRANSLATIONS = {
     logout: 'Выйти',
     welcome: 'Добро пожаловать',
     loggingIn: 'Вход...',
+    about: 'О проекте',
+    
+    // About Page
+    aboutTitle: 'О Historia ex machina',
+    aboutProjectTitle: 'Проект',
+    aboutProjectDescription: 'Historia ex machina — интерактивная платформа для картографирования истории, которая оживляет мировую историю через географическую визуализацию. Исследуйте тысячелетия человеческой цивилизации, от древних империй до современных государств, на интерактивной карте мира.',
+    aboutFeaturesTitle: 'Возможности',
+    aboutFeature1: 'Интерактивная карта мира с маркерами исторических событий',
+    aboutFeature2: 'Фильтрация по временной шкале и историческим периодам',
+    aboutFeature3: 'Многоязычная поддержка (английский и русский)',
+    aboutFeature4: 'Обширные датасеты по древним цивилизациям',
+    aboutFeature5: 'Категоризация и фильтрация событий по тегам',
+    aboutDataTitle: 'Исторические данные',
+    aboutDataDescription: 'Наша база данных включает события крупнейших древних цивилизаций: Ассирийской империи, Нововавилонского царства, Персии Ахеменидов, Древней Греции, Финикийского Средиземноморья, Анатолийских царств и многих других. Каждое событие тщательно задокументировано с указанием источников и доступно на нескольких языках.',
+    aboutTechTitle: 'Технологии',
+    backToMap: 'Вернуться к карте',
     
     // Login Modal
     loginToHistoria: 'Вход в Historia ex machina',

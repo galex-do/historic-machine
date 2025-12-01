@@ -3,6 +3,7 @@ import { useAuth } from '@/composables/useAuth.js'
 
 // Lazy-loaded components
 const MapView = () => import('@/views/MapView.vue')
+const AboutPage = () => import('@/views/AboutPage.vue')
 const AdminEvents = () => import('@/views/AdminEvents.vue')
 const AdminTags = () => import('@/views/AdminTags.vue')
 const AdminUsers = () => import('@/views/AdminUsers.vue')
@@ -13,6 +14,11 @@ const routes = [
     path: '/',
     name: 'Map',
     component: MapView
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: AboutPage
   },
   {
     path: '/admin/events',
