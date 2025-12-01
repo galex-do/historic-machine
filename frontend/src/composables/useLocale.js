@@ -46,10 +46,9 @@ const UI_TRANSLATIONS = {
     aboutFeature5: 'Structuring event sets into datasets, tools for exporting and importing datasets in JSON',
     aboutUseCasesTitle: 'Use Cases',
     aboutUseCase1: 'Teachers can create visual lessons showing how empires rose and fell across geography and time',
-    aboutUseCase2: 'Students can explore historical events in context, understanding spatial relationships between civilizations',
-    aboutUseCase3: 'Writers and researchers can visualize historical timelines for their books or academic papers',
-    aboutUseCase4: 'History enthusiasts can build personal collections of events from their favorite periods',
-    aboutUseCase5: 'Museums and cultural institutions can create interactive exhibits for visitors',
+    aboutUseCase2: 'Writers and researchers can visualize historical timelines for their books or academic papers',
+    aboutUseCase3: 'You can answer questions like: "What else happened in the year I started school?", "What is the history of the place where I am?", "How did Greek philosophy develop?", "What did Hannibals campaign look like?" and others',
+    aboutUseCase4: 'You can use the platform as a basis for your own developments - launch your application, create your own datasets, your own map with notable sights and deploy your events on a map',
     backToMap: 'Back to Map',
     
     // Login Modal
@@ -290,11 +289,10 @@ const UI_TRANSLATIONS = {
     aboutFeature4: 'Полноценная админ-панель для управления событиями и тегами',
     aboutFeature5: 'Структурирование наборов событий в датасеты, инструментарий для экспорта и импорта датасетов в JSON',
     aboutUseCasesTitle: 'Варианты использования',
-    aboutUseCase1: 'Преподаватели могут создавать наглядные уроки, показывающие расцвет и падение империй в географическом и временном контексте',
-    aboutUseCase2: 'Студенты могут изучать исторические события в контексте, понимая пространственные связи между цивилизациями',
-    aboutUseCase3: 'Писатели и исследователи могут визуализировать исторические хронологии для своих книг или научных работ',
-    aboutUseCase4: 'Любители истории могут создавать личные коллекции событий из любимых исторических периодов',
-    aboutUseCase5: 'Музеи и культурные учреждения могут создавать интерактивные экспонаты для посетителей',
+    aboutUseCase1: 'Преподаватели могут создать наглядные уроки, показывающие расцвет и падение империй в географическом и временном контексте',
+    aboutUseCase2: 'Писатели и исследователи могут визуализировать исторические хронологии для своих книг или научных работ',
+    aboutUseCase3: 'Вы можете ответить на вопросы: "А что еще произошло в том году, когда я пошел в школу?", "А что за история у места, где я нахожусь?", "Как развивалась греческая философия?", "Как выглядел поход Ганнибала?" и другие',
+    aboutUseCase4: 'Вы можете использовать платформу как основу для своих наработок - запустить своё приложение, сформировать свои датасеты, развернуть свои последовательности событий на карте, создать свою карту достопримечательностей - и так далее',
     backToMap: 'Вернуться к карте',
     
     // Login Modal

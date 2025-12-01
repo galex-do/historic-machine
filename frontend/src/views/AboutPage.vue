@@ -25,7 +25,6 @@
           <li>{{ t('aboutUseCase2') }}</li>
           <li>{{ t('aboutUseCase3') }}</li>
           <li>{{ t('aboutUseCase4') }}</li>
-          <li>{{ t('aboutUseCase5') }}</li>
         </ul>
       </section>
 
