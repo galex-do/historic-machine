@@ -1,7 +1,9 @@
 <template>
   <header class="app-header">
     <div class="header-content">
-      <h1>Historia ex machina</h1>
+      <router-link to="/" class="logo-link">
+        <h1>Historia ex machina</h1>
+      </router-link>
       
       <!-- Navigation Menu -->
       <nav class="main-nav" v-if="isAuthenticated">
@@ -358,6 +360,16 @@ export default {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+
+.logo-link:hover {
+  opacity: 0.9;
 }
 
 .app-header h1 {
