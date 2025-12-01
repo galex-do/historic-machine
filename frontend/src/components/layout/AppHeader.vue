@@ -677,11 +677,26 @@ export default {
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.3);
   min-width: 100px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 
 .user-menu-btn:hover {
   background: rgba(255, 255, 255, 0.3);
   transform: translateY(-1px);
+}
+
+.user-menu-btn .dropdown-arrow {
+  font-size: 0.6rem;
+  margin-left: auto;
+  transition: transform 0.2s ease;
+}
+
+.user-menu-btn .dropdown-arrow.open {
+  transform: rotate(180deg);
 }
 
 .username-text {
@@ -693,15 +708,50 @@ export default {
 
 .user-dropdown-menu {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 4px);
   right: 0;
   background: white;
   border-radius: 8px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  margin-top: 0.5rem;
   overflow: hidden;
-  z-index: 100000;
-  min-width: 200px;
+  z-index: 100001;
+  min-width: 180px;
+}
+
+.user-dropdown-menu .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #4a5568;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  border: none;
+  background: white;
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.user-dropdown-menu .dropdown-item:hover {
+  background: #f7fafc;
+  color: #2d3748;
+}
+
+.user-dropdown-menu .dropdown-icon {
+  font-size: 1rem;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.user-dropdown-menu .dropdown-divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 0;
 }
 
 .dropdown-user-info {
@@ -709,7 +759,7 @@ export default {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.875rem 1rem;
+  padding: 0.75rem 1rem;
   background: #f7fafc;
   border-bottom: 1px solid #e2e8f0;
 }
@@ -720,11 +770,11 @@ export default {
   width: 100%;
 }
 
-.logout-item {
+.user-dropdown-menu .logout-item {
   color: #e53e3e !important;
 }
 
-.logout-item:hover {
+.user-dropdown-menu .logout-item:hover {
   background: #fed7d7 !important;
 }
 
