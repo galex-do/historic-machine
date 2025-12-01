@@ -4,7 +4,6 @@
       <h1>{{ t('aboutTitle') }}</h1>
       
       <section class="about-section">
-        <h2>{{ t('aboutProjectTitle') }}</h2>
         <p>{{ t('aboutProjectDescription') }}</p>
       </section>
 
@@ -20,30 +19,14 @@
       </section>
 
       <section class="about-section">
-        <h2>{{ t('aboutDataTitle') }}</h2>
-        <p>{{ t('aboutDataDescription') }}</p>
-      </section>
-
-      <section class="about-section">
-        <h2>{{ t('aboutTechTitle') }}</h2>
-        <div class="tech-stack">
-          <div class="tech-item">
-            <span class="tech-icon">🖥️</span>
-            <span>Vue.js 3 + Vite</span>
-          </div>
-          <div class="tech-item">
-            <span class="tech-icon">🗺️</span>
-            <span>Leaflet Maps</span>
-          </div>
-          <div class="tech-item">
-            <span class="tech-icon">⚙️</span>
-            <span>Go Backend</span>
-          </div>
-          <div class="tech-item">
-            <span class="tech-icon">🗄️</span>
-            <span>PostgreSQL</span>
-          </div>
-        </div>
+        <h2>{{ t('aboutUseCasesTitle') }}</h2>
+        <ul class="use-cases-list">
+          <li>{{ t('aboutUseCase1') }}</li>
+          <li>{{ t('aboutUseCase2') }}</li>
+          <li>{{ t('aboutUseCase3') }}</li>
+          <li>{{ t('aboutUseCase4') }}</li>
+          <li>{{ t('aboutUseCase5') }}</li>
+        </ul>
       </section>
 
       <div class="back-link">
@@ -139,25 +122,30 @@ p {
   font-weight: bold;
 }
 
-.tech-stack {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
+.use-cases-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.tech-item {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 1rem;
-  background: #f7fafc;
-  border-radius: 8px;
-  color: #4a5568;
-  font-weight: 500;
+.use-cases-list li {
+  color: #718096;
+  padding: 0.75rem 0;
+  padding-left: 2rem;
+  position: relative;
+  line-height: 1.6;
+  border-bottom: 1px solid #edf2f7;
 }
 
-.tech-icon {
-  font-size: 1.25rem;
+.use-cases-list li:last-child {
+  border-bottom: none;
+}
+
+.use-cases-list li::before {
+  content: '💡';
+  position: absolute;
+  left: 0;
+  font-size: 1rem;
 }
 
 .back-link {

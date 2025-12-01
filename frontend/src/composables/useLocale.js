@@ -37,7 +37,6 @@ const UI_TRANSLATIONS = {
     
     // About Page
     aboutTitle: 'About Historia ex machina',
-    aboutProjectTitle: 'The Project',
     aboutProjectDescription: 'Historia ex Machina is an interactive platform based on a simple principle: every event has a time and place. I have always been fascinated by ancient history, but literature rarely provides a complete understanding of space, time, and the context of events. This platform is my attempt to solve this problem.',
     aboutFeaturesTitle: 'Features',
     aboutFeature1: 'Interactive world map with historical event markers',
@@ -45,9 +44,12 @@ const UI_TRANSLATIONS = {
     aboutFeature3: 'Categorize, search, and filter events by tags. Track events with tags from earliest to latest',
     aboutFeature4: 'A full-featured admin panel for managing events and tags',
     aboutFeature5: 'Structuring event sets into datasets, tools for exporting and importing datasets in JSON',
-    aboutDataTitle: 'Historical Data',
-    aboutDataDescription: 'Our database includes events from major ancient civilizations including the Assyrian Empire, Neo-Babylonian Empire, Achaemenid Persia, Ancient Greece, Phoenician Mediterranean, Anatolian Kingdoms, and many more. Each event is carefully documented with sources and available in multiple languages.',
-    aboutTechTitle: 'Technology',
+    aboutUseCasesTitle: 'Use Cases',
+    aboutUseCase1: 'Teachers can create visual lessons showing how empires rose and fell across geography and time',
+    aboutUseCase2: 'Students can explore historical events in context, understanding spatial relationships between civilizations',
+    aboutUseCase3: 'Writers and researchers can visualize historical timelines for their books or academic papers',
+    aboutUseCase4: 'History enthusiasts can build personal collections of events from their favorite periods',
+    aboutUseCase5: 'Museums and cultural institutions can create interactive exhibits for visitors',
     backToMap: 'Back to Map',
     
     // Login Modal
@@ -280,7 +282,6 @@ const UI_TRANSLATIONS = {
     
     // About Page
     aboutTitle: 'О Historia ex machina',
-    aboutProjectTitle: 'Проект',
     aboutProjectDescription: 'Historia ex machina — интерактивная платформа, в основе которой простой принцип: у каждого события есть время и место. Мне всегда было интересно читать древнюю историю, но литература редко дает полное представление пространства-времени и контексте происходящего. С помощью этой платформы я пытаюсь решить эту проблему.',
     aboutFeaturesTitle: 'Возможности',
     aboutFeature1: 'Интерактивная карта мира с маркерами исторических событий',
@@ -288,10 +289,12 @@ const UI_TRANSLATIONS = {
     aboutFeature3: 'Категоризация, поиск и фильтрация событий по тегам. Трекинг событий с тегами от самого раннего к самому позднему',
     aboutFeature4: 'Полноценная админ-панель для управления событиями и тегами',
     aboutFeature5: 'Структурирование наборов событий в датасеты, инструментарий для экспорта и импорта датасетов в JSON',
-    
-    aboutDataTitle: 'Исторические данные',
-    aboutDataDescription: 'Наша база данных включает события крупнейших древних цивилизаций: Ассирийской империи, Нововавилонского царства, Персии Ахеменидов, Древней Греции, Финикийского Средиземноморья, Анатолийских царств и многих других. Каждое событие тщательно задокументировано с указанием источников и доступно на нескольких языках.',
-    aboutTechTitle: 'Технологии',
+    aboutUseCasesTitle: 'Варианты использования',
+    aboutUseCase1: 'Преподаватели могут создавать наглядные уроки, показывающие расцвет и падение империй в географическом и временном контексте',
+    aboutUseCase2: 'Студенты могут изучать исторические события в контексте, понимая пространственные связи между цивилизациями',
+    aboutUseCase3: 'Писатели и исследователи могут визуализировать исторические хронологии для своих книг или научных работ',
+    aboutUseCase4: 'Любители истории могут создавать личные коллекции событий из любимых исторических периодов',
+    aboutUseCase5: 'Музеи и культурные учреждения могут создавать интерактивные экспонаты для посетителей',
     backToMap: 'Вернуться к карте',
     
     // Login Modal
