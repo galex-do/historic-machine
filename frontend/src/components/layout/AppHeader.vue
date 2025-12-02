@@ -60,15 +60,6 @@
       
       <!-- Navigation Menu -->
       <nav class="main-nav" v-if="isAuthenticated">
-        <router-link 
-          to="/" 
-          class="nav-link" 
-          active-class="nav-link-active"
-          exact-active-class="nav-link-active"
-        >
-          <span class="nav-icon">🗺️</span>
-          {{ t('map') }}
-        </router-link>
         <!-- Admin Dropdown -->
         <div v-if="canAccessAdmin" class="admin-dropdown" @click.stop>
           <button 
