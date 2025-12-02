@@ -17,16 +17,18 @@ type Router struct {
         tagHandler      *TagHandler
         authHandler     *AuthHandler
         datasetHandler  *DatasetHandler
+        supportHandler  *SupportHandler
 }
 
 // NewRouter creates a new router with all handlers
-func NewRouter(eventRepo *repositories.EventRepository, templateRepo *repositories.TemplateRepository, tagRepo *repositories.TagRepository, datasetRepo *repositories.DatasetRepository, authService *services.AuthService) *Router {
+func NewRouter(eventRepo *repositories.EventRepository, templateRepo *repositories.TemplateRepository, tagRepo *repositories.TagRepository, datasetRepo *repositories.DatasetRepository, authService *services.AuthService, supportRepo *repositories.SupportRepository) *Router {
         return &Router{
                 eventHandler:    NewEventHandler(eventRepo, tagRepo, datasetRepo),
                 templateHandler: NewTemplateHandler(templateRepo),
                 tagHandler:      NewTagHandler(tagRepo),
                 authHandler:     NewAuthHandler(authService),
                 datasetHandler:  NewDatasetHandler(datasetRepo, eventRepo),
+                supportHandler:  NewSupportHandler(supportRepo),
         }
 }
 
@@ -97,6 +99,12 @@ func (router *Router) SetupRoutes() http.Handler {
         api.HandleFunc("/events/{event_id}/tags/{tag_id}", router.authHandler.RequireAccessLevel(models.AccessLevelEditor)(router.tagHandler.AddTagToEvent)).Methods("POST", "OPTIONS")
         api.HandleFunc("/events/{event_id}/tags/{tag_id}", router.authHandler.RequireAccessLevel(models.AccessLevelEditor)(router.tagHandler.RemoveTagFromEvent)).Methods("DELETE", "OPTIONS")
         api.HandleFunc("/events/{event_id}/tags", router.authHandler.RequireAccessLevel(models.AccessLevelEditor)(router.tagHandler.SetEventTags)).Methods("PUT", "OPTIONS")
+        
+        // Support credentials routes (public read, admin for create/update/delete)
+        api.HandleFunc("/support", router.supportHandler.GetSupportCredentials).Methods("GET", "OPTIONS")
+        api.HandleFunc("/support", router.authHandler.RequireAccessLevel(models.AccessLevelSuper)(router.supportHandler.CreateSupportCredential)).Methods("POST", "OPTIONS")
+        api.HandleFunc("/support", router.authHandler.RequireAccessLevel(models.AccessLevelSuper)(router.supportHandler.UpdateSupportCredential)).Methods("PUT", "OPTIONS")
+        api.HandleFunc("/support", router.authHandler.RequireAccessLevel(models.AccessLevelSuper)(router.supportHandler.DeleteSupportCredential)).Methods("DELETE", "OPTIONS")
         
         // Health check endpoint
         api.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {

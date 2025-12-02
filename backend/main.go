@@ -34,6 +34,7 @@ func main() {
         tagRepo := repositories.NewTagRepository(db.DB)
         userRepo := repositories.NewUserRepository(db.DB)
         datasetRepo := repositories.NewDatasetRepository(db.DB)
+        supportRepo := repositories.NewSupportRepository(db.DB)
         log.Println("Repositories initialized successfully")
 
         // Initialize services
@@ -57,7 +58,7 @@ func main() {
         }()
 
         // Initialize router with all handlers
-        router := handlers.NewRouter(eventRepo, templateRepo, tagRepo, datasetRepo, authService)
+        router := handlers.NewRouter(eventRepo, templateRepo, tagRepo, datasetRepo, authService, supportRepo)
         
         // Setup routes
         httpHandler := router.SetupRoutes()
