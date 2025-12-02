@@ -49,6 +49,11 @@ const UI_TRANSLATIONS = {
     aboutUseCase2: 'Writers and researchers can visualize historical timelines for their books or academic papers',
     aboutUseCase3: 'You can answer questions like: "What else happened in the year I started school?", "What is the history of the place where I am?", "How did Greek philosophy develop?", "What did Hannibals campaign look like?" and others',
     aboutUseCase4: 'You can use the platform as a basis for your own developments - launch your application, create your own datasets, your own map with notable sights and deploy your events on a map',
+    aboutUseCase5: 'Museums and cultural institutions can create interactive exhibits for visitors',
+    aboutOpenSource: 'This project is open source and free to use by anyone. Contributions, feedback, and ideas are always welcome!',
+    aboutSupportTitle: 'Support the Project',
+    aboutSupportDescription: 'If you find this project useful and would like to support its development and infrastructure, you can contribute through the following options:',
+    aboutSupportLinkText: 'Visit',
     backToMap: 'Back to Map',
     
     // Login Modal
@@ -293,6 +298,11 @@ const UI_TRANSLATIONS = {
     aboutUseCase2: 'Писатели и исследователи могут визуализировать исторические хронологии для своих книг или научных работ',
     aboutUseCase3: 'Вы можете ответить на вопросы: "А что еще произошло в том году, когда я пошел в школу?", "А что за история у места, где я нахожусь?", "Как развивалась греческая философия?", "Как выглядел поход Ганнибала?" и другие',
     aboutUseCase4: 'Вы можете использовать платформу как основу для своих наработок - запустить своё приложение, сформировать свои датасеты, развернуть свои последовательности событий на карте, создать свою карту достопримечательностей - и так далее',
+    aboutUseCase5: 'Музеи и культурные учреждения могут создавать интерактивные экспонаты для посетителей',
+    aboutOpenSource: 'Этот проект имеет открытый исходный код и доступен для использования любому желающему. Мы всегда рады вкладу, отзывам и новым идеям!',
+    aboutSupportTitle: 'Поддержать проект',
+    aboutSupportDescription: 'Если вы находите этот проект полезным и хотели бы поддержать его развитие и инфраструктуру, вы можете сделать это следующими способами:',
+    aboutSupportLinkText: 'Перейти',
     backToMap: 'Вернуться к карте',
     
     // Login Modal

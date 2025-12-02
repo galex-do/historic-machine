@@ -25,7 +25,50 @@
           <li>{{ t('aboutUseCase2') }}</li>
           <li>{{ t('aboutUseCase3') }}</li>
           <li>{{ t('aboutUseCase4') }}</li>
+          <li>{{ t('aboutUseCase5') }}</li>
         </ul>
+      </section>
+
+      <section class="open-source-section">
+        <div class="open-source-notice">
+          <span class="os-icon">📖</span>
+          <div class="os-content">
+            <p>{{ t('aboutOpenSource') }}</p>
+            <a 
+              href="https://github.com/galex-do/historic-machine" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="github-link"
+            >
+              <span class="github-icon">🔗</span>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section v-if="supportCredentials.length > 0" class="support-section">
+        <h2>{{ t('aboutSupportTitle') }}</h2>
+        <p class="support-description">{{ t('aboutSupportDescription') }}</p>
+        <div class="support-options">
+          <div 
+            v-for="credential in supportCredentials" 
+            :key="credential.name"
+            class="support-item"
+          >
+            <span class="support-name">{{ credential.name }}:</span>
+            <a 
+              v-if="credential.is_url" 
+              :href="credential.value" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="support-link"
+            >
+              {{ t('aboutSupportLinkText') }}
+            </a>
+            <span v-else class="support-value">{{ credential.value }}</span>
+          </div>
+        </div>
       </section>
 
       <div class="back-link">
@@ -39,13 +82,32 @@
 </template>
 
 <script>
+import { ref, onMounted } from 'vue'
 import { useLocale } from '@/composables/useLocale.js'
 
 export default {
   name: 'AboutPage',
   setup() {
     const { t } = useLocale()
-    return { t }
+    const supportCredentials = ref([])
+
+    const fetchSupportCredentials = async () => {
+      try {
+        const response = await fetch('/api/support')
+        if (response.ok) {
+          const data = await response.json()
+          supportCredentials.value = data || []
+        }
+      } catch (error) {
+        console.error('Failed to fetch support credentials:', error)
+      }
+    }
+
+    onMounted(() => {
+      fetchSupportCredentials()
+    })
+
+    return { t, supportCredentials }
   }
 }
 </script>
@@ -145,6 +207,117 @@ p {
   position: absolute;
   left: 0;
   font-size: 1rem;
+}
+
+.open-source-section {
+  margin-bottom: 2rem;
+}
+
+.open-source-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e8f4f8 100%);
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+}
+
+.os-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.os-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.os-content p {
+  margin: 0;
+  color: #4a5568;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #24292e;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+  width: fit-content;
+}
+
+.github-link:hover {
+  background: #3a3f44;
+}
+
+.github-icon {
+  font-size: 0.9rem;
+}
+
+.support-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #fffbeb;
+  border-radius: 12px;
+  border: 1px solid #fcd34d;
+}
+
+.support-section h2 {
+  color: #92400e;
+  margin-bottom: 0.75rem;
+}
+
+.support-description {
+  color: #78716c;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.support-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.support-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #fcd34d;
+}
+
+.support-name {
+  font-weight: 600;
+  color: #78350f;
+  min-width: 120px;
+}
+
+.support-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.support-link:hover {
+  text-decoration: underline;
+}
+
+.support-value {
+  color: #4a5568;
+  font-family: monospace;
+  font-size: 0.9rem;
+  word-break: break-all;
 }
 
 .back-link {
