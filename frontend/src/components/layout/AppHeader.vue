@@ -28,8 +28,6 @@
             {{ t('about') }}
           </router-link>
           
-          <div class="dropdown-divider"></div>
-          
           <!-- Guest: Login button -->
           <button 
             v-if="isGuest"
