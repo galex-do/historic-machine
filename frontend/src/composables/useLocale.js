@@ -57,6 +57,15 @@ const UI_TRANSLATIONS = {
     aboutSupportLinkText: 'Visit',
     backToMap: 'Back to Map',
     
+    // Geolocation
+    geolocationButton: 'Find my location',
+    geolocationLoading: 'Getting location...',
+    geolocationNotSupported: 'Geolocation is not supported by your browser',
+    geolocationPermissionDenied: 'Location access was denied. Please enable location in your browser settings.',
+    geolocationUnavailable: 'Location information is unavailable',
+    geolocationTimeout: 'Location request timed out',
+    geolocationError: 'An error occurred while getting your location',
+    
     // Login Modal
     loginToHistoria: 'Login to Historia ex machina',
     username: 'Username:',
@@ -306,6 +315,15 @@ const UI_TRANSLATIONS = {
     aboutSupportDescription: 'Если вам понравился проект и вы хотели бы поддержать его развитие, можно использовать для этого:',
     aboutSupportLinkText: 'Перейти',
     backToMap: 'Вернуться к карте',
+    
+    // Geolocation
+    geolocationButton: 'Найти моё местоположение',
+    geolocationLoading: 'Определение местоположения...',
+    geolocationNotSupported: 'Геолокация не поддерживается вашим браузером',
+    geolocationPermissionDenied: 'Доступ к местоположению запрещён. Разрешите доступ в настройках браузера.',
+    geolocationUnavailable: 'Информация о местоположении недоступна',
+    geolocationTimeout: 'Время запроса местоположения истекло',
+    geolocationError: 'Произошла ошибка при определении местоположения',
     
     // Login Modal
     loginToHistoria: 'Вход в Historia ex machina',
