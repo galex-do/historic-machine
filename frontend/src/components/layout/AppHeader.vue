@@ -58,10 +58,9 @@
         </div>
       </div>
       
-      <!-- Navigation Menu -->
-      <nav class="main-nav" v-if="isAuthenticated">
-        <!-- Admin Dropdown -->
-        <div v-if="canAccessAdmin" class="admin-dropdown" @click.stop>
+      <div class="right-section">
+        <!-- Admin Dropdown - for authenticated users with admin access -->
+        <div v-if="isAuthenticated && canAccessAdmin" class="admin-dropdown" @click.stop>
           <button 
             class="nav-link dropdown-trigger" 
             :class="{ 'nav-link-active': $route.path.startsWith('/admin') || $route.path.startsWith('/events') || $route.path.startsWith('/datasets') }"
@@ -116,9 +115,7 @@
             </router-link>
           </div>
         </div>
-      </nav>
-      
-      <div class="right-section">
+        
         <!-- Locale Selector - positioned at far right -->
         <div class="locale-selector" @click.stop>
           <button 
