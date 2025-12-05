@@ -1,0 +1,1129 @@
+{
+  "description": "Dataset covering the Seleucid Empire history from its founding (312 BC) to Roman annexation (63 BC)",
+  "events": [
+    {
+      "date": "01.10.0312",
+      "description": "Seleucus I Nicator captures Babylon from Antigonus's forces after Battle of Gaza; this date marks the official founding of the Seleucid Empire and became Year 1 of the Seleucid Era calendar used for centuries across the Near East",
+      "description_ru": "Селевк I Никатор захватывает Вавилон у войск Антигона после битвы при Газе; эта дата знаменует официальное основание государства Селевкидов и стала 1-м годом селевкидской эры - календаря, использовавшегося на Ближнем Востоке веками",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Foundation of Seleucid Empire",
+      "name_ru": "Основание государства Селевкидов",
+      "source": "https://en.wikipedia.org/wiki/Seleucid_Empire",
+      "tags": [
+        "Greek",
+        "Macedonian",
+        "Seleucid",
+        "Dynasty",
+        "Conquest"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0311",
+      "description": "Seleucus I founds Seleucia on the Tigris as his eastern capital, north of ancient Babylon; the city becomes one of the largest in the ancient world with population reaching 600,000, serving as administrative center for Mesopotamia",
+      "description_ru": "Селевк I основывает Селевкию-на-Тигре как свою восточную столицу к северу от древнего Вавилона; город становится одним из крупнейших в древнем мире с населением до 600 000 человек, служа административным центром Месопотамии",
+      "era": "BC",
+      "latitude": 33.1,
+      "longitude": 44.5,
+      "name": "Foundation of Seleucia on the Tigris",
+      "name_ru": "Основание Селевкии-на-Тигре",
+      "source": "https://en.wikipedia.org/wiki/Seleucia",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "City",
+        "Building"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0305",
+      "description": "Seleucid-Mauryan War concludes; Seleucus I cedes territories east of the Indus River (including Arachosia, Gedrosia, Paropamisadae) to Chandragupta Maurya in exchange for 500 war elephants and a marriage alliance - these elephants prove decisive at Battle of Ipsus",
+      "description_ru": "Завершается война Селевкидов с Маурьями; Селевк I уступает территории к востоку от Инда (включая Арахозию, Гедросию, Паропамисады) Чандрагупте Маурье в обмен на 500 боевых слонов и брачный союз - эти слоны окажутся решающими в битве при Ипсе",
+      "era": "BC",
+      "latitude": 31.5,
+      "longitude": 69,
+      "name": "Seleucid-Mauryan Peace Treaty",
+      "name_ru": "Селевко-маурийский мирный договор",
+      "source": "https://en.wikipedia.org/wiki/Seleucid%E2%80%93Mauryan_war",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Indian",
+        "Diplomacy",
+        "Peace",
+        "Marriage"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0301",
+      "description": "Battle of Ipsus in Phrygia; coalition of Seleucus I, Lysimachus, and Cassander defeats Antigonus I Monophthalmus who is killed in battle. Seleucus gains control of Syria and eastern Anatolia, dramatically expanding his empire westward",
+      "description_ru": "Битва при Ипсе во Фригии; коалиция Селевка I, Лисимаха и Кассандра побеждает Антигона I Одноглазого, который погибает в сражении. Селевк получает контроль над Сирией и восточной Анатолией, значительно расширяя свою империю на запад",
+      "era": "BC",
+      "latitude": 38.75,
+      "longitude": 30.5,
+      "name": "Battle of Ipsus",
+      "name_ru": "Битва при Ипсе",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Ipsus",
+      "tags": [
+        "Greek",
+        "Macedonian",
+        "Seleucid",
+        "Battle",
+        "Death",
+        "Conquest"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0300",
+      "description": "Seleucus I founds Antioch on the Orontes River, naming it after his father Antiochus; the city becomes the western capital and eventually the primary seat of Seleucid power, growing into one of the greatest cities of antiquity",
+      "description_ru": "Селевк I основывает Антиохию на реке Оронт, назвав её в честь своего отца Антиоха; город становится западной столицей и со временем главной резиденцией Селевкидов, превращаясь в один из величайших городов древности",
+      "era": "BC",
+      "latitude": 36.2,
+      "longitude": 36.15,
+      "name": "Foundation of Antioch",
+      "name_ru": "Основание Антиохии",
+      "source": "https://en.wikipedia.org/wiki/Antioch",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "City",
+        "Building"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0300",
+      "description": "Seleucus I establishes the Syrian Tetrapolis - four sister cities: Antioch (capital), Seleucia Pieria (port), Apamea (military base named after his wife Apama), and Laodicea (named after his mother) - forming the administrative core of western Seleucid lands",
+      "description_ru": "Селевк I создаёт Сирийский Тетраполис - четыре города-побратима: Антиохия (столица), Селевкия Пиерийская (порт), Апамея (военная база, названная в честь жены Апамы) и Лаодикия (в честь матери) - административное ядро западных владений Селевкидов",
+      "era": "BC",
+      "latitude": 35.5,
+      "longitude": 36,
+      "name": "Syrian Tetrapolis Established",
+      "name_ru": "Создание Сирийского Тетраполиса",
+      "source": "https://en.wikipedia.org/wiki/Syrian_tetrapolis",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "City",
+        "Building",
+        "Administration"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0281",
+      "description": "Battle of Corupedium in Lydia; Seleucus I defeats and kills Lysimachus, the last of Alexander's original successors. The Seleucid Empire reaches its greatest territorial extent, stretching from Thrace to the borders of India",
+      "description_ru": "Битва при Курупедионе в Лидии; Селевк I побеждает и убивает Лисимаха, последнего из первоначальных преемников Александра. Империя Селевкидов достигает максимальных территориальных размеров, простираясь от Фракии до границ Индии",
+      "era": "BC",
+      "latitude": 38.6,
+      "longitude": 27.4,
+      "name": "Battle of Corupedium",
+      "name_ru": "Битва при Курупедионе",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Corupedium",
+      "tags": [
+        "Greek",
+        "Macedonian",
+        "Seleucid",
+        "Battle",
+        "Death",
+        "Conquest"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.09.0281",
+      "description": "Seleucus I Nicator assassinated by Ptolemy Ceraunus while crossing into Europe to claim Macedonia; the founder of the Seleucid dynasty dies just months after his greatest victory, never reaching his ancestral homeland",
+      "description_ru": "Селевк I Никатор убит Птолемеем Керавном при переправе в Европу для захвата Македонии; основатель династии Селевкидов погибает через несколько месяцев после своей величайшей победы, так и не достигнув родины предков",
+      "era": "BC",
+      "latitude": 40.35,
+      "longitude": 26.5,
+      "name": "Assassination of Seleucus I",
+      "name_ru": "Убийство Селевка I",
+      "source": "https://en.wikipedia.org/wiki/Seleucus_I_Nicator",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Assassination",
+        "Death",
+        "King"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0280",
+      "description": "Antiochus I Soter becomes king; he consolidates his father's conquests and defends against Galatian Celtic invaders in Anatolia, earning his epithet 'Soter' (Savior) for defeating them in the 'Elephant Victory'",
+      "description_ru": "Антиох I Сотер становится царём; он укрепляет завоевания отца и защищает страну от вторжения галатов-кельтов в Анатолию, получив прозвище 'Сотер' (Спаситель) за победу над ними в 'Слоновьей битве'",
+      "era": "BC",
+      "latitude": 36.2,
+      "longitude": 36.15,
+      "name": "Reign of Antiochus I Soter Begins",
+      "name_ru": "Начало правления Антиоха I Сотера",
+      "source": "https://en.wikipedia.org/wiki/Antiochus_I_Soter",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Succession",
+        "King"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0275",
+      "description": "Antiochus I defeats Galatian Celts in the 'Elephant Victory' - war elephants inherited from Indian campaigns terrorize Celtic warriors who had never seen such beasts, ending their threat to Greek cities of Asia Minor",
+      "description_ru": "Антиох I побеждает галатов-кельтов в 'Слоновьей победе' - боевые слоны, унаследованные от индийских походов, наводят ужас на кельтских воинов, никогда не видевших таких животных, положив конец их угрозе греческим городам Малой Азии",
+      "era": "BC",
+      "latitude": 39.5,
+      "longitude": 32,
+      "name": "Elephant Victory over Galatians",
+      "name_ru": "Слоновья победа над галатами",
+      "source": "https://en.wikipedia.org/wiki/Antiochus_I_Soter",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Battle",
+        "Galatian"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0274",
+      "description": "First Syrian War begins between Seleucids and Ptolemaic Egypt; Ptolemy II Philadelphus attacks Seleucid territories, exploiting succession troubles. This initiates a century-long series of conflicts over Coele-Syria (Palestine and southern Syria)",
+      "description_ru": "Начинается Первая Сирийская война между Селевкидами и птолемеевским Египтом; Птолемей II Филадельф атакует владения Селевкидов, воспользовавшись проблемами престолонаследия. Так начинается вековая серия конфликтов за Келесирию (Палестину и южную Сирию)",
+      "era": "BC",
+      "latitude": 32,
+      "longitude": 35,
+      "name": "First Syrian War Begins",
+      "name_ru": "Начало Первой Сирийской войны",
+      "source": "https://en.wikipedia.org/wiki/Syrian_Wars",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Ptolemaic",
+        "War",
+        "Egypt"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0271",
+      "description": "First Syrian War ends with Ptolemaic victory; Egypt gains control of Phoenician coast, parts of southern Anatolia, and the Cyclades Islands. Seleucids lose access to important Mediterranean ports",
+      "description_ru": "Первая Сирийская война завершается победой Птолемеев; Египет получает контроль над финикийским побережьем, частью южной Анатолии и Кикладскими островами. Селевкиды теряют доступ к важным средиземноморским портам",
+      "era": "BC",
+      "latitude": 33.9,
+      "longitude": 35.5,
+      "name": "First Syrian War Ends",
+      "name_ru": "Окончание Первой Сирийской войны",
+      "source": "https://en.wikipedia.org/wiki/First_Syrian_War",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Ptolemaic",
+        "War",
+        "Defeat"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0261",
+      "description": "Antiochus II Theos becomes king after his father's death; he earns the epithet 'Theos' (God) from Miletus for liberating them from tyranny. His reign sees partial recovery in the Second Syrian War",
+      "description_ru": "Антиох II Теос становится царём после смерти отца; он получает прозвище 'Теос' (Бог) от Милета за освобождение от тирании. В его правление происходит частичное восстановление позиций во Второй Сирийской войне",
+      "era": "BC",
+      "latitude": 36.2,
+      "longitude": 36.15,
+      "name": "Reign of Antiochus II Theos",
+      "name_ru": "Начало правления Антиоха II Теоса",
+      "source": "https://en.wikipedia.org/wiki/Antiochus_II_Theos",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Succession",
+        "King"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0260",
+      "description": "Second Syrian War begins; Antiochus II with Macedonian support attacks Ptolemaic holdings. The war results in Seleucid recovery of Phoenicia and coastal Anatolia",
+      "description_ru": "Начинается Вторая Сирийская война; Антиох II при поддержке Македонии атакует владения Птолемеев. Война приводит к возвращению Селевкидам Финикии и прибрежной Анатолии",
+      "era": "BC",
+      "latitude": 33.9,
+      "longitude": 35.5,
+      "name": "Second Syrian War",
+      "name_ru": "Вторая Сирийская война",
+      "source": "https://en.wikipedia.org/wiki/Second_Syrian_War",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Ptolemaic",
+        "War",
+        "Conquest"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0253",
+      "description": "Peace treaty ends Second Syrian War; Antiochus II divorces his wife Laodice to marry Ptolemy II's daughter Berenice Syra. This fateful decision plants seeds for the devastating Laodicean War and future civil strife",
+      "description_ru": "Мирный договор завершает Вторую Сирийскую войну; Антиох II разводится с женой Лаодикой, чтобы жениться на дочери Птолемея II Беренике Сире. Это роковое решение закладывает основу для разрушительной Лаодикейской войны и будущей гражданской смуты",
+      "era": "BC",
+      "latitude": 36.2,
+      "longitude": 36.15,
+      "name": "Seleucid-Ptolemaic Marriage Alliance",
+      "name_ru": "Селевко-птолемеевский брачный союз",
+      "source": "https://en.wikipedia.org/wiki/Antiochus_II_Theos",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Ptolemaic",
+        "Marriage",
+        "Diplomacy",
+        "Peace"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0250",
+      "description": "Diodotus I declares independence of Bactria from Seleucid rule, founding the Greco-Bactrian Kingdom; this marks the beginning of major territorial losses in the eastern satrapies that would never be fully recovered",
+      "description_ru": "Диодот I провозглашает независимость Бактрии от Селевкидов, основывая Греко-Бактрийское царство; это знаменует начало крупных территориальных потерь в восточных сатрапиях, которые так и не будут полностью возвращены",
+      "era": "BC",
+      "latitude": 36.76,
+      "longitude": 66.9,
+      "name": "Bactrian Independence",
+      "name_ru": "Независимость Бактрии",
+      "source": "https://en.wikipedia.org/wiki/Greco-Bactrian_Kingdom",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Bactria",
+        "Rebellion",
+        "Decline"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0247",
+      "description": "Arsaces I leads the Parni nomads to conquer Parthia, founding the Arsacid dynasty; this begins the rise of the Parthian Empire that would eventually destroy Seleucid power in the east and become Rome's great rival",
+      "description_ru": "Аршак I ведёт кочевников парнов на завоевание Парфии, основывая династию Аршакидов; так начинается возвышение Парфянской империи, которая в итоге уничтожит власть Селевкидов на востоке и станет великим соперником Рима",
+      "era": "BC",
+      "latitude": 36.5,
+      "longitude": 54.5,
+      "name": "Foundation of Parthian Empire",
+      "name_ru": "Основание Парфянской империи",
+      "source": "https://en.wikipedia.org/wiki/Arsaces_I_of_Parthia",
+      "tags": [
+        "Parthian",
+        "Seleucid",
+        "Rebellion",
+        "Dynasty",
+        "Conquest"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0246",
+      "description": "Antiochus II Theos dies under mysterious circumstances, possibly poisoned by his first wife Laodice; the succession dispute between Laodice's son Seleucus II and Berenice's infant son triggers the Third Syrian War",
+      "description_ru": "Антиох II Теос умирает при загадочных обстоятельствах, возможно отравленный первой женой Лаодикой; спор о престолонаследии между сыном Лаодики Селевком II и младенцем-сыном Береники вызывает Третью Сирийскую войну",
+      "era": "BC",
+      "latitude": 37.85,
+      "longitude": 27.25,
+      "name": "Death of Antiochus II",
+      "name_ru": "Смерть Антиоха II",
+      "source": "https://en.wikipedia.org/wiki/Antiochus_II_Theos",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Death",
+        "Assassination",
+        "Crisis"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0246",
+      "description": "Third Syrian War (Laodicean War) begins; Ptolemy III Euergetes invades to avenge his sister Berenice's murder, penetrating deep into Seleucid territory and briefly reaching Babylon - the furthest east any Ptolemaic army would ever march",
+      "description_ru": "Начинается Третья Сирийская война (Лаодикейская война); Птолемей III Эвергет вторгается, чтобы отомстить за убийство сестры Береники, проникая глубоко на территорию Селевкидов и ненадолго достигая Вавилона - самой восточной точки, куда когда-либо дойдёт птолемеевская армия",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Third Syrian War (Laodicean War)",
+      "name_ru": "Третья Сирийская война",
+      "source": "https://en.wikipedia.org/wiki/Third_Syrian_War",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Ptolemaic",
+        "War",
+        "Egypt",
+        "Invasion"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0241",
+      "description": "Third Syrian War ends; Seleucus II retains his throne but loses northern Syrian coast cities and territory in southern Anatolia. The empire is severely weakened and faces internal challenges",
+      "description_ru": "Третья Сирийская война завершается; Селевк II сохраняет трон, но теряет города северного сирийского побережья и территории в южной Анатолии. Империя серьёзно ослаблена и сталкивается с внутренними проблемами",
+      "era": "BC",
+      "latitude": 36.2,
+      "longitude": 36.15,
+      "name": "End of Third Syrian War",
+      "name_ru": "Окончание Третьей Сирийской войны",
+      "source": "https://en.wikipedia.org/wiki/Third_Syrian_War",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Ptolemaic",
+        "Peace",
+        "Decline"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0240",
+      "description": "War of the Brothers erupts; Antiochus Hierax rebels against his brother Seleucus II, claiming the Anatolian territories for himself. This civil war further weakens Seleucid power and allows external enemies to expand",
+      "description_ru": "Вспыхивает Война братьев; Антиох Гиеракс восстаёт против брата Селевка II, претендуя на анатолийские территории. Эта гражданская война ещё больше ослабляет Селевкидов и позволяет внешним врагам расширяться",
+      "era": "BC",
+      "latitude": 39,
+      "longitude": 30,
+      "name": "War of the Brothers",
+      "name_ru": "Война братьев",
+      "source": "https://en.wikipedia.org/wiki/Seleucid_dynasty",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "War",
+        "Rebellion",
+        "Crisis"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0223",
+      "description": "Antiochus III 'the Great' becomes king at age 18 after his brother Seleucus III is assassinated; he inherits a shrunken, troubled empire but will prove the most capable Seleucid ruler since the founder",
+      "description_ru": "Антиох III 'Великий' становится царём в 18 лет после убийства брата Селевка III; он наследует уменьшившуюся, охваченную проблемами империю, но окажется самым способным правителем Селевкидов со времён основателя",
+      "era": "BC",
+      "latitude": 36.2,
+      "longitude": 36.15,
+      "name": "Reign of Antiochus III the Great",
+      "name_ru": "Начало правления Антиоха III Великого",
+      "source": "https://en.wikipedia.org/wiki/Antiochus_III_the_Great",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Succession",
+        "King"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0222",
+      "description": "Antiochus III suppresses the rebellion of Molon, satrap of Media, who had declared himself king; this early victory demonstrates the young king's military competence and begins the restoration of central authority",
+      "description_ru": "Антиох III подавляет восстание Молона, сатрапа Мидии, объявившего себя царём; эта ранняя победа демонстрирует военную компетентность молодого царя и знаменует начало восстановления центральной власти",
+      "era": "BC",
+      "latitude": 34.8,
+      "longitude": 48.5,
+      "name": "Suppression of Molon's Revolt",
+      "name_ru": "Подавление восстания Молона",
+      "source": "https://en.wikipedia.org/wiki/Molon",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Rebellion",
+        "Conquest"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0219",
+      "description": "Fourth Syrian War begins; Antiochus III invades Coele-Syria, achieving initial successes against Ptolemaic forces. The young king seeks to recover territories lost to Egypt over previous decades",
+      "description_ru": "Начинается Четвёртая Сирийская война; Антиох III вторгается в Келесирию, добиваясь первоначальных успехов против птолемеевских сил. Молодой царь стремится вернуть территории, утраченные Египту за предыдущие десятилетия",
+      "era": "BC",
+      "latitude": 33,
+      "longitude": 35.5,
+      "name": "Fourth Syrian War Begins",
+      "name_ru": "Начало Четвёртой Сирийской войны",
+      "source": "https://en.wikipedia.org/wiki/Fourth_Syrian_War",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Ptolemaic",
+        "War",
+        "Invasion"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "22.06.0217",
+      "description": "Battle of Raphia in Gaza; Ptolemy IV Philopator defeats Antiochus III's larger army using newly trained native Egyptian phalanx - the first time Egyptians fought as hoplites. This ends Antiochus's first attempt to conquer Coele-Syria",
+      "description_ru": "Битва при Рафии в Газе; Птолемей IV Филопатор побеждает более крупную армию Антиоха III, используя недавно обученную местную египетскую фалангу - впервые египтяне сражались как гоплиты. Это завершает первую попытку Антиоха завоевать Келесирию",
+      "era": "BC",
+      "latitude": 31.29,
+      "longitude": 34.25,
+      "name": "Battle of Raphia",
+      "name_ru": "Битва при Рафии",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Raphia",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Ptolemaic",
+        "Battle",
+        "Defeat",
+        "Egypt"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0212",
+      "description": "Antiochus III begins his great eastern campaign (Anabasis), marching to restore Seleucid authority over breakaway eastern satrapies; the expedition will last eight years and cover thousands of miles",
+      "description_ru": "Антиох III начинает свой великий восточный поход (Анабасис), выступая для восстановления власти Селевкидов над отделившимися восточными сатрапиями; экспедиция продлится восемь лет и охватит тысячи миль",
+      "era": "BC",
+      "latitude": 36.2,
+      "longitude": 36.15,
+      "name": "Eastern Campaign of Antiochus III Begins",
+      "name_ru": "Начало восточного похода Антиоха III",
+      "source": "https://en.wikipedia.org/wiki/Antiochus_III_the_Great",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Expedition",
+        "Conquest"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0209",
+      "description": "Antiochus III defeats Parthian King Arsaces II and captures Hecatompylus; Parthia is forced into vassalage, acknowledging Seleucid suzerainty. The king pursues retreating Parthians across difficult mountain terrain",
+      "description_ru": "Антиох III побеждает парфянского царя Аршака II и захватывает Гекатомпил; Парфия вынуждена признать вассальную зависимость от Селевкидов. Царь преследует отступающих парфян через труднопроходимые горы",
+      "era": "BC",
+      "latitude": 36.6,
+      "longitude": 54.5,
+      "name": "Reconquest of Parthia",
+      "name_ru": "Повторное завоевание Парфии",
+      "source": "https://en.wikipedia.org/wiki/Antiochus_III_the_Great",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Parthian",
+        "Battle",
+        "Conquest"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0208",
+      "description": "Battle of the Arius River; Antiochus III surprises and defeats Bactrian cavalry of Euthydemus I through a daring night march, demonstrating tactical brilliance. He then besieges the fortress city of Bactra",
+      "description_ru": "Битва на реке Арий; Антиох III внезапно атакует и побеждает бактрийскую конницу Эвтидема I благодаря дерзкому ночному маршу, демонстрируя тактический гений. Затем он осаждает крепость Бактры",
+      "era": "BC",
+      "latitude": 34.35,
+      "longitude": 62.2,
+      "name": "Battle of the Arius River",
+      "name_ru": "Битва на реке Арий",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_the_Arius",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Bactria",
+        "Battle",
+        "Conquest"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0206",
+      "description": "Peace with Bactria; after lengthy siege of Bactra, Antiochus III negotiates with Euthydemus, allowing him to retain his throne in exchange for nominal vassalage and a marriage alliance. Euthydemus supplies war elephants for future campaigns",
+      "description_ru": "Мир с Бактрией; после длительной осады Бактр Антиох III договаривается с Эвтидемом, позволяя ему сохранить трон в обмен на номинальную вассальную зависимость и брачный союз. Эвтидем предоставляет боевых слонов для будущих кампаний",
+      "era": "BC",
+      "latitude": 36.76,
+      "longitude": 66.9,
+      "name": "Seleucid-Bactrian Peace",
+      "name_ru": "Селевко-бактрийский мир",
+      "source": "https://en.wikipedia.org/wiki/Antiochus_III_the_Great",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Bactria",
+        "Diplomacy",
+        "Peace",
+        "Marriage"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0205",
+      "description": "Antiochus III crosses the Hindu Kush into India, renewing alliance with King Sophagasenus and receiving 150 war elephants; following in Alexander's footsteps, he extends Seleucid influence to the furthest east since the founder",
+      "description_ru": "Антиох III пересекает Гиндукуш и входит в Индию, возобновляя союз с царём Софагасеном и получая 150 боевых слонов; следуя по стопам Александра, он распространяет влияние Селевкидов на крайний восток впервые со времён основателя",
+      "era": "BC",
+      "latitude": 34.5,
+      "longitude": 69.2,
+      "name": "Antiochus III in India",
+      "name_ru": "Антиох III в Индии",
+      "source": "https://en.wikipedia.org/wiki/Antiochus_III_the_Great",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Indian",
+        "Expedition",
+        "Diplomacy"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0204",
+      "description": "Antiochus III returns triumphantly from eastern campaign, earning the title 'the Great' (Megas); he has restored Seleucid authority from Armenia to India, though many vassals will soon reassert independence",
+      "description_ru": "Антиох III триумфально возвращается из восточного похода, получая титул 'Великий' (Мегас); он восстановил власть Селевкидов от Армении до Индии, хотя многие вассалы вскоре вновь заявят о независимости",
+      "era": "BC",
+      "latitude": 36.2,
+      "longitude": 36.15,
+      "name": "Antiochus III Earns Title 'the Great'",
+      "name_ru": "Антиох III получает титул 'Великий'",
+      "source": "https://en.wikipedia.org/wiki/Antiochus_III_the_Great",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "King",
+        "Conquest"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0202",
+      "description": "Fifth Syrian War begins; Antiochus III and Philip V of Macedon secretly agree to partition Ptolemaic possessions after death of Ptolemy IV leaves infant Ptolemy V on the throne under weak regents",
+      "description_ru": "Начинается Пятая Сирийская война; Антиох III и Филипп V Македонский тайно договариваются о разделе птолемеевских владений после того, как смерть Птолемея IV оставляет на троне младенца Птолемея V при слабых регентах",
+      "era": "BC",
+      "latitude": 33,
+      "longitude": 35.5,
+      "name": "Fifth Syrian War Begins",
+      "name_ru": "Начало Пятой Сирийской войны",
+      "source": "https://en.wikipedia.org/wiki/Fifth_Syrian_War",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Ptolemaic",
+        "Macedonian",
+        "War",
+        "Alliance"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0200",
+      "description": "Battle of Panium near the source of the Jordan River; Antiochus III decisively defeats Ptolemaic forces led by Scopas. This victory permanently transfers control of Coele-Syria (Palestine) from Ptolemaic to Seleucid rule",
+      "description_ru": "Битва при Панионе у истоков реки Иордан; Антиох III решительно побеждает птолемеевские силы под командованием Скопаса. Эта победа навсегда передаёт контроль над Келесирией (Палестиной) от Птолемеев к Селевкидам",
+      "era": "BC",
+      "latitude": 33.25,
+      "longitude": 35.7,
+      "name": "Battle of Panium",
+      "name_ru": "Битва при Панионе",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Panium",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Ptolemaic",
+        "Battle",
+        "Conquest",
+        "Jewish"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0198",
+      "description": "Antiochus III completes conquest of Coele-Syria; Jerusalem and Judea pass from Ptolemaic to Seleucid control. The Jewish population initially welcomes the Seleucids, who grant them religious privileges",
+      "description_ru": "Антиох III завершает завоевание Келесирии; Иерусалим и Иудея переходят из-под птолемеевского под селевкидский контроль. Иудейское население поначалу приветствует Селевкидов, которые предоставляют им религиозные привилегии",
+      "era": "BC",
+      "latitude": 31.77,
+      "longitude": 35.23,
+      "name": "Seleucid Control of Judea",
+      "name_ru": "Селевкидский контроль над Иудеей",
+      "source": "https://en.wikipedia.org/wiki/Fifth_Syrian_War",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Jewish",
+        "Conquest"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0196",
+      "description": "Rome defeats Philip V of Macedon at Cynoscephalae; proclaims 'freedom of the Greeks' at Isthmian Games. This victory removes Macedonia as a major power and opens the door for Roman intervention in Greek affairs",
+      "description_ru": "Рим побеждает Филиппа V Македонского при Киноскефалах; провозглашает 'свободу греков' на Истмийских играх. Эта победа устраняет Македонию как великую державу и открывает дорогу для римского вмешательства в греческие дела",
+      "era": "BC",
+      "latitude": 39.3,
+      "longitude": 22.4,
+      "name": "Rome Defeats Macedonia",
+      "name_ru": "Рим побеждает Македонию",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Cynoscephalae",
+      "tags": [
+        "Greek",
+        "Macedonian",
+        "Roman",
+        "Battle",
+        "Defeat"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0192",
+      "description": "Antiochus III invades Greece at invitation of Aetolian League, landing with only 10,000 infantry and 500 cavalry; he fatally underestimates Roman power, believing Greeks would flock to his banner as liberator",
+      "description_ru": "Антиох III вторгается в Грецию по приглашению Этолийского союза, высадившись с всего 10 000 пехотинцами и 500 всадниками; он роковым образом недооценивает мощь Рима, полагая, что греки толпами присоединятся к нему как к освободителю",
+      "era": "BC",
+      "latitude": 38.9,
+      "longitude": 22.4,
+      "name": "Antiochus III Invades Greece",
+      "name_ru": "Антиох III вторгается в Грецию",
+      "source": "https://en.wikipedia.org/wiki/Roman%E2%80%93Seleucid_War",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Roman",
+        "Invasion",
+        "War"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.04.0191",
+      "description": "Battle of Thermopylae; Romans under Manius Acilius Glabrio decisively defeat Antiochus III at the famous pass. The Seleucid king is forced to evacuate Greece entirely and retreat to Asia Minor",
+      "description_ru": "Битва при Фермопилах; римляне под командованием Мания Ацилия Глабриона решительно побеждают Антиоха III у знаменитого прохода. Селевкидский царь вынужден полностью эвакуироваться из Греции и отступить в Малую Азию",
+      "era": "BC",
+      "latitude": 38.8,
+      "longitude": 22.55,
+      "name": "Battle of Thermopylae (191 BC)",
+      "name_ru": "Битва при Фермопилах (191 до н.э.)",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Thermopylae_(191_BC)",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Roman",
+        "Battle",
+        "Defeat"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0190",
+      "description": "Battle of Magnesia near Smyrna; Roman and Pergamene forces under Scipio Asiaticus crush Antiochus III's army of 70,000 in the decisive battle of the war. Seleucid power west of the Taurus Mountains is destroyed forever",
+      "description_ru": "Битва при Магнесии близ Смирны; римские и пергамские силы под командованием Сципиона Азиатского разгромляют 70-тысячную армию Антиоха III в решающем сражении войны. Власть Селевкидов к западу от Таврских гор уничтожена навсегда",
+      "era": "BC",
+      "latitude": 38.63,
+      "longitude": 27.4,
+      "name": "Battle of Magnesia",
+      "name_ru": "Битва при Магнесии",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Magnesia",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Roman",
+        "Battle",
+        "Defeat",
+        "Disaster"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0188",
+      "description": "Treaty of Apamea imposes crushing terms on Antiochus III: cede all territories west of Taurus Mountains, pay 15,000 talents indemnity over 12 years, surrender war elephants and navy, and hand over enemies of Rome including Hannibal",
+      "description_ru": "Апамейский мир налагает сокрушительные условия на Антиоха III: уступить все территории к западу от Таврских гор, выплатить 15 000 талантов контрибуции за 12 лет, сдать боевых слонов и флот, выдать врагов Рима, включая Ганнибала",
+      "era": "BC",
+      "latitude": 35.52,
+      "longitude": 36.4,
+      "name": "Treaty of Apamea",
+      "name_ru": "Апамейский мирный договор",
+      "source": "https://en.wikipedia.org/wiki/Treaty_of_Apamea",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Roman",
+        "Diplomacy",
+        "Defeat",
+        "Decline"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0187",
+      "description": "Antiochus III killed while plundering a temple of Bel in Elymais to raise funds for war indemnity; the once-great king dies ignominiously, ending an era of Seleucid revival that ultimately failed against Rome",
+      "description_ru": "Антиох III убит при разграблении храма Бела в Элимаиде для сбора средств на военную контрибуцию; некогда великий царь погибает бесславно, завершая эпоху селевкидского возрождения, в конечном счёте разбившуюся о Рим",
+      "era": "BC",
+      "latitude": 32.4,
+      "longitude": 48.8,
+      "name": "Death of Antiochus III",
+      "name_ru": "Смерть Антиоха III Великого",
+      "source": "https://en.wikipedia.org/wiki/Antiochus_III_the_Great",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Death",
+        "King",
+        "Plundering"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0175",
+      "description": "Antiochus IV Epiphanes becomes king after his brother Seleucus IV is assassinated; having spent years as hostage in Rome, he understands Roman power but his aggressive Hellenization policies will provoke the Maccabean revolt",
+      "description_ru": "Антиох IV Эпифан становится царём после убийства брата Селевка IV; проведя годы заложником в Риме, он понимает римскую мощь, но его агрессивная политика эллинизации спровоцирует Маккавейское восстание",
+      "era": "BC",
+      "latitude": 36.2,
+      "longitude": 36.15,
+      "name": "Reign of Antiochus IV Epiphanes",
+      "name_ru": "Правление Антиоха IV Эпифана",
+      "source": "https://en.wikipedia.org/wiki/Antiochus_IV_Epiphanes",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Succession",
+        "King"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0170",
+      "description": "Sixth Syrian War begins; Antiochus IV invades Egypt, defeating Ptolemaic forces and capturing young Ptolemy VI. He comes close to conquering all Egypt, the first Seleucid to do so since the empire's founding",
+      "description_ru": "Начинается Шестая Сирийская война; Антиох IV вторгается в Египет, побеждая птолемеевские силы и захватывая молодого Птолемея VI. Он близок к завоеванию всего Египта - первый Селевкид со времён основания империи, достигший этого",
+      "era": "BC",
+      "latitude": 31.2,
+      "longitude": 29.92,
+      "name": "Sixth Syrian War - Invasion of Egypt",
+      "name_ru": "Шестая Сирийская война - вторжение в Египет",
+      "source": "https://en.wikipedia.org/wiki/Sixth_Syrian_War",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Ptolemaic",
+        "War",
+        "Egypt",
+        "Invasion"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0168",
+      "description": "Day of Eleusis; Roman envoy Gaius Popillius Laenas confronts Antiochus IV outside Alexandria, drawing a circle in the sand and demanding he decide to withdraw before stepping out. Humiliated, Antiochus withdraws from Egypt",
+      "description_ru": "День Элевсиса; римский посол Гай Попиллий Ленат встречает Антиоха IV под Александрией, чертит круг на песке и требует решить вопрос об отступлении, прежде чем выйти из него. Униженный Антиох уходит из Египта",
+      "era": "BC",
+      "latitude": 31.2,
+      "longitude": 30,
+      "name": "Day of Eleusis",
+      "name_ru": "День Элевсиса",
+      "source": "https://en.wikipedia.org/wiki/Day_of_Eleusis",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Roman",
+        "Diplomacy",
+        "Defeat"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.12.0167",
+      "description": "Antiochus IV desecrates the Jerusalem Temple, erecting altar to Zeus Olympios and banning Jewish religious practices including circumcision and Sabbath observance; this 'Abomination of Desolation' triggers the Maccabean Revolt",
+      "description_ru": "Антиох IV оскверняет Иерусалимский храм, воздвигая алтарь Зевсу Олимпийскому и запрещая иудейские религиозные практики, включая обрезание и соблюдение субботы; эта 'мерзость запустения' вызывает Маккавейское восстание",
+      "era": "BC",
+      "latitude": 31.77,
+      "longitude": 35.23,
+      "name": "Desecration of Jerusalem Temple",
+      "name_ru": "Осквернение Иерусалимского храма",
+      "source": "https://en.wikipedia.org/wiki/Antiochus_IV_Epiphanes",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Jewish",
+        "Religious",
+        "Temple",
+        "Blasphemy"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0166",
+      "description": "Maccabean Revolt begins; Judas Maccabeus leads Jewish rebellion against Seleucid religious persecution. The guerrilla campaign in Judean hills will eventually lead to Jewish independence",
+      "description_ru": "Начинается Маккавейское восстание; Иуда Маккавей возглавляет иудейское восстание против религиозных преследований Селевкидов. Партизанская кампания в иудейских холмах в конечном итоге приведёт к иудейской независимости",
+      "era": "BC",
+      "latitude": 31.85,
+      "longitude": 35.1,
+      "name": "Maccabean Revolt Begins",
+      "name_ru": "Начало Маккавейского восстания",
+      "source": "https://en.wikipedia.org/wiki/Maccabean_Revolt",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Jewish",
+        "Rebellion",
+        "Religious"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0165",
+      "description": "Battle of Beth Horon; Judas Maccabeus ambushes and defeats Seleucid army under Seron in mountain pass, proving that disciplined guerrilla tactics could overcome Hellenistic professional armies",
+      "description_ru": "Битва при Бет-Хороне; Иуда Маккавей устраивает засаду и побеждает селевкидскую армию под командованием Серона в горном проходе, доказывая, что дисциплинированная партизанская тактика может одолеть профессиональные эллинистические армии",
+      "era": "BC",
+      "latitude": 31.88,
+      "longitude": 35.05,
+      "name": "Battle of Beth Horon",
+      "name_ru": "Битва при Бет-Хороне",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Beth_Horon_(166_BC)",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Jewish",
+        "Battle",
+        "Defeat",
+        "Ambush"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.12.0164",
+      "description": "Judas Maccabeus recaptures and purifies the Jerusalem Temple exactly three years after its desecration; the Hanukkah festival commemorates this rededication and the miracle of oil lasting eight days",
+      "description_ru": "Иуда Маккавей отвоёвывает и очищает Иерусалимский храм ровно через три года после его осквернения; праздник Ханука знаменует это повторное освящение и чудо масла, горевшего восемь дней",
+      "era": "BC",
+      "latitude": 31.77,
+      "longitude": 35.23,
+      "name": "Rededication of Jerusalem Temple (Hanukkah)",
+      "name_ru": "Повторное освящение Иерусалимского храма (Ханука)",
+      "source": "https://en.wikipedia.org/wiki/Hanukkah",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Jewish",
+        "Religious",
+        "Temple"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0164",
+      "description": "Antiochus IV Epiphanes dies during eastern campaign, possibly from illness or grief over Jewish revolt; his death triggers succession crisis and accelerates Seleucid decline",
+      "description_ru": "Антиох IV Эпифан умирает во время восточного похода, возможно от болезни или горя из-за иудейского восстания; его смерть вызывает кризис престолонаследия и ускоряет упадок Селевкидов",
+      "era": "BC",
+      "latitude": 32.65,
+      "longitude": 51.68,
+      "name": "Death of Antiochus IV Epiphanes",
+      "name_ru": "Смерть Антиоха IV Эпифана",
+      "source": "https://en.wikipedia.org/wiki/Antiochus_IV_Epiphanes",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Death",
+        "King",
+        "Disease"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0160",
+      "description": "Battle of Elasa; Judas Maccabeus killed fighting against Seleucid general Bacchides. Despite his death, the Jewish revolt continues under his brothers Jonathan and Simon",
+      "description_ru": "Битва при Эласе; Иуда Маккавей погибает в бою против селевкидского полководца Бакхида. Несмотря на его смерть, иудейское восстание продолжается под руководством его братьев Ионатана и Симона",
+      "era": "BC",
+      "latitude": 31.94,
+      "longitude": 35.23,
+      "name": "Death of Judas Maccabeus",
+      "name_ru": "Смерть Иуды Маккавея",
+      "source": "https://en.wikipedia.org/wiki/Judas_Maccabeus",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Jewish",
+        "Battle",
+        "Death"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0150",
+      "description": "Mithridates I of Parthia begins conquest of eastern Seleucid territories; over the next decade he will seize Media, Persia, Elymais, Characene, and eventually Mesopotamia, permanently ending Seleucid presence in the east",
+      "description_ru": "Митридат I Парфянский начинает завоевание восточных территорий Селевкидов; за следующее десятилетие он захватит Мидию, Персию, Элимаиду, Харацену и в конечном счёте Месопотамию, навсегда положив конец присутствию Селевкидов на востоке",
+      "era": "BC",
+      "latitude": 34.8,
+      "longitude": 48.5,
+      "name": "Parthian Conquest of Eastern Seleucid Lands",
+      "name_ru": "Парфянское завоевание восточных владений Селевкидов",
+      "source": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia",
+      "tags": [
+        "Parthian",
+        "Seleucid",
+        "Conquest",
+        "Decline"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0142",
+      "description": "Simon Maccabeus achieves de facto Jewish independence; Seleucids formally recognize Jewish autonomy and exempt Judea from tribute. The Hasmonean dynasty is established",
+      "description_ru": "Симон Маккавей добивается фактической иудейской независимости; Селевкиды формально признают иудейскую автономию и освобождают Иудею от дани. Основывается династия Хасмонеев",
+      "era": "BC",
+      "latitude": 31.77,
+      "longitude": 35.23,
+      "name": "Jewish Independence Achieved",
+      "name_ru": "Достижение иудейской независимости",
+      "source": "https://en.wikipedia.org/wiki/Simon_Thassi",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Jewish",
+        "Freedom",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0141",
+      "description": "Parthians capture Seleucia on the Tigris, the eastern Seleucid capital; all territories east of the Euphrates are lost permanently. The empire is now confined to Syria and parts of Cilicia",
+      "description_ru": "Парфяне захватывают Селевкию-на-Тигре, восточную столицу Селевкидов; все территории к востоку от Евфрата потеряны навсегда. Империя теперь ограничена Сирией и частью Киликии",
+      "era": "BC",
+      "latitude": 33.1,
+      "longitude": 44.5,
+      "name": "Parthians Capture Seleucia",
+      "name_ru": "Парфяне захватывают Селевкию",
+      "source": "https://en.wikipedia.org/wiki/Seleucia",
+      "tags": [
+        "Parthian",
+        "Seleucid",
+        "Conquest",
+        "Fall",
+        "City"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0139",
+      "description": "Demetrius II Nicator captured by Parthians while attempting to recover eastern territories; he will spend 10 years in Parthian captivity, married to Parthian princess Rhodogune",
+      "description_ru": "Деметрий II Никатор захвачен парфянами при попытке вернуть восточные территории; он проведёт 10 лет в парфянском плену, женившись на парфянской принцессе Родогуне",
+      "era": "BC",
+      "latitude": 34.8,
+      "longitude": 48.5,
+      "name": "Demetrius II Captured by Parthians",
+      "name_ru": "Деметрий II захвачен парфянами",
+      "source": "https://en.wikipedia.org/wiki/Demetrius_II_Nicator",
+      "tags": [
+        "Parthian",
+        "Seleucid",
+        "Defeat",
+        "King"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0130",
+      "description": "Antiochus VII Sidetes launches ambitious campaign to recover Mesopotamia and eastern provinces from Parthia; initially successful, he reconquers Babylonia, Media, and briefly restores Seleucid power east of the Euphrates",
+      "description_ru": "Антиох VII Сидет начинает амбициозную кампанию по возвращению Месопотамии и восточных провинций у Парфии; поначалу успешный, он отвоёвывает Вавилонию, Мидию и ненадолго восстанавливает власть Селевкидов к востоку от Евфрата",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Eastern Campaign of Antiochus VII",
+      "name_ru": "Восточный поход Антиоха VII",
+      "source": "https://en.wikipedia.org/wiki/Antiochus_VII_Sidetes",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Parthian",
+        "War",
+        "Conquest"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0129",
+      "description": "Battle of Ecbatana; Parthians under Phraates II defeat and kill Antiochus VII Sidetes, the last great Seleucid king. This battle ends any hope of recovering the eastern territories and marks the final collapse of Seleucid power",
+      "description_ru": "Битва при Экбатане; парфяне под командованием Фраата II побеждают и убивают Антиоха VII Сидета, последнего великого селевкидского царя. Эта битва кладёт конец надеждам на возвращение восточных территорий и знаменует окончательный крах власти Селевкидов",
+      "era": "BC",
+      "latitude": 34.8,
+      "longitude": 48.5,
+      "name": "Battle of Ecbatana - Death of Antiochus VII",
+      "name_ru": "Битва при Экбатане - смерть Антиоха VII",
+      "source": "https://en.wikipedia.org/wiki/Antiochus_VII_Sidetes",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Parthian",
+        "Battle",
+        "Death",
+        "Defeat",
+        "End"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0100",
+      "description": "Seleucid Empire reduced to rump state; decades of civil wars between rival claimants have reduced the once-mighty empire to little more than Antioch and a few Syrian cities, plagued by constant dynastic conflicts",
+      "description_ru": "Государство Селевкидов сократилось до остатка; десятилетия гражданских войн между соперничающими претендентами свели некогда могущественную империю к Антиохии и нескольким сирийским городам, страдающим от постоянных династических конфликтов",
+      "era": "BC",
+      "latitude": 36.2,
+      "longitude": 36.15,
+      "name": "Seleucid Empire as Rump State",
+      "name_ru": "Государство Селевкидов как остаток империи",
+      "source": "https://en.wikipedia.org/wiki/Seleucid_Empire",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Decline",
+        "Crisis",
+        "War"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0083",
+      "description": "Tigranes II the Great of Armenia conquers Syria, virtually ending Seleucid independence; the Armenian king rules over former Seleucid lands as part of his vast empire stretching from the Caspian to the Mediterranean",
+      "description_ru": "Тигран II Великий Армянский завоёвывает Сирию, фактически положив конец независимости Селевкидов; армянский царь правит бывшими землями Селевкидов как частью своей обширной империи от Каспия до Средиземноморья",
+      "era": "BC",
+      "latitude": 36.2,
+      "longitude": 36.15,
+      "name": "Armenian Conquest of Syria",
+      "name_ru": "Армянское завоевание Сирии",
+      "source": "https://en.wikipedia.org/wiki/Tigranes_the_Great",
+      "tags": [
+        "Armenian",
+        "Seleucid",
+        "Conquest",
+        "Fall"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0069",
+      "description": "Rome defeats Tigranes and Mithridates VI of Pontus; rump Seleucid kingdom briefly restored under Antiochus XIII, but the remnant state is plagued by civil wars with rival claimant Philip II",
+      "description_ru": "Рим побеждает Тиграна и Митридата VI Понтийского; остаток Селевкидского царства ненадолго восстановлен под властью Антиоха XIII, но государство-остаток раздирают гражданские войны с соперником Филиппом II",
+      "era": "BC",
+      "latitude": 36.2,
+      "longitude": 36.15,
+      "name": "Brief Seleucid Restoration",
+      "name_ru": "Кратковременное восстановление Селевкидов",
+      "source": "https://en.wikipedia.org/wiki/Antiochus_XIII_Asiaticus",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Roman",
+        "Crisis"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0063",
+      "description": "Pompey the Great annexes Syria as a Roman province, formally ending the Seleucid Empire after 249 years; the last Seleucid claimants are deposed. Antioch becomes capital of the new province of Syria",
+      "description_ru": "Помпей Великий присоединяет Сирию как римскую провинцию, формально завершая историю государства Селевкидов после 249 лет существования; последние претенденты-Селевкиды отстранены. Антиохия становится столицей новой провинции Сирия",
+      "era": "BC",
+      "latitude": 36.2,
+      "longitude": 36.15,
+      "name": "Roman Annexation of Syria - End of Seleucid Empire",
+      "name_ru": "Римская аннексия Сирии - конец государства Селевкидов",
+      "source": "https://en.wikipedia.org/wiki/Syria_(Roman_province)",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Roman",
+        "Conquest",
+        "End",
+        "Fall"
+      ],
+      "type": "political"
+    }
+  ],
+  "filename": "seleucid_empire.json"
+}
