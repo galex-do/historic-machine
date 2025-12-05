@@ -34,15 +34,25 @@
           <span class="os-icon">📖</span>
           <div class="os-content">
             <p>{{ t('aboutOpenSource') }}</p>
-            <a 
-              href="https://github.com/galex-do/historic-machine" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="github-link"
-            >
-              <span class="github-icon">🔗</span>
-              GitHub
-            </a>
+            <div class="os-links">
+              <a 
+                href="https://github.com/galex-do/historic-machine" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="github-link"
+              >
+                <span class="github-icon">🔗</span>
+                GitHub
+              </a>
+              <a 
+                v-if="contactEmail"
+                :href="`mailto:${contactEmail}`"
+                class="contact-link"
+              >
+                <span class="contact-icon">✉️</span>
+                {{ t('aboutContact') }}
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -90,6 +100,7 @@ export default {
   setup() {
     const { t } = useLocale()
     const supportCredentials = ref([])
+    const contactEmail = ref('')
 
     const fetchSupportCredentials = async () => {
       try {
@@ -103,11 +114,24 @@ export default {
       }
     }
 
+    const fetchConfig = async () => {
+      try {
+        const response = await fetch('/api/config')
+        if (response.ok) {
+          const data = await response.json()
+          contactEmail.value = data.contact_email || ''
+        }
+      } catch (error) {
+        console.error('Failed to fetch config:', error)
+      }
+    }
+
     onMounted(() => {
       fetchSupportCredentials()
+      fetchConfig()
     })
 
-    return { t, supportCredentials }
+    return { t, supportCredentials, contactEmail }
   }
 }
 </script>
@@ -239,6 +263,12 @@ p {
   color: #4a5568;
 }
 
+.os-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
 .github-link {
   display: inline-flex;
   align-items: center;
@@ -251,7 +281,6 @@ p {
   font-weight: 500;
   font-size: 0.9rem;
   transition: background 0.2s ease;
-  width: fit-content;
 }
 
 .github-link:hover {
@@ -259,6 +288,29 @@ p {
 }
 
 .github-icon {
+  font-size: 0.9rem;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.contact-icon {
   font-size: 0.9rem;
 }
 

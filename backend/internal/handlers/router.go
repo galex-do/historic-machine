@@ -18,6 +18,7 @@ type Router struct {
         authHandler     *AuthHandler
         datasetHandler  *DatasetHandler
         supportHandler  *SupportHandler
+        configHandler   *ConfigHandler
 }
 
 // NewRouter creates a new router with all handlers
@@ -29,6 +30,7 @@ func NewRouter(eventRepo *repositories.EventRepository, templateRepo *repositori
                 authHandler:     NewAuthHandler(authService),
                 datasetHandler:  NewDatasetHandler(datasetRepo, eventRepo),
                 supportHandler:  NewSupportHandler(supportRepo),
+                configHandler:   NewConfigHandler(),
         }
 }
 
@@ -105,6 +107,9 @@ func (router *Router) SetupRoutes() http.Handler {
         api.HandleFunc("/support", router.authHandler.RequireAccessLevel(models.AccessLevelSuper)(router.supportHandler.CreateSupportCredential)).Methods("POST", "OPTIONS")
         api.HandleFunc("/support", router.authHandler.RequireAccessLevel(models.AccessLevelSuper)(router.supportHandler.UpdateSupportCredential)).Methods("PUT", "OPTIONS")
         api.HandleFunc("/support", router.authHandler.RequireAccessLevel(models.AccessLevelSuper)(router.supportHandler.DeleteSupportCredential)).Methods("DELETE", "OPTIONS")
+        
+        // Public config route (contact email, etc.)
+        api.HandleFunc("/config", router.configHandler.GetPublicConfig).Methods("GET", "OPTIONS")
         
         // Health check endpoint
         api.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {

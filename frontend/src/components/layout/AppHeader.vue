@@ -690,6 +690,7 @@ export default {
   position: relative;
   display: inline-block;
   z-index: 100000;
+  flex-shrink: 0;
 }
 
 .dropdown-trigger {
