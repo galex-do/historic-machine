@@ -43,6 +43,7 @@
             @remove-tag="handleRemoveTag"
             @clear-all-tags="handleClearAllTags"
             @toggle-follow="handleToggleNarrativeFlow"
+            @geolocate="handleGeolocate"
           />
         </div>
       </aside>
@@ -269,6 +270,13 @@ export default {
       }
     }
 
+    // Geolocation handler - center map on user's location
+    const handleGeolocate = (coords) => {
+      if (worldMap.value && worldMap.value.centerOnCoordinates) {
+        worldMap.value.centerOnCoordinates(coords.latitude, coords.longitude, 12)
+      }
+    }
+
     // Map filter methods
     const handleMapFilterToggle = (enabled) => {
       mapFilterEnabled.value = enabled
@@ -421,6 +429,7 @@ export default {
       applyFilters,
       focusOnEvent,
       highlightOnEvent,
+      handleGeolocate,
       handleTagClick,
       handleRemoveTag,
       handleClearAllTags,

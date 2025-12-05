@@ -54,6 +54,15 @@
         >
           🗺️
         </button>
+        <button 
+          @click="requestGeolocation"
+          class="filter-btn geolocation-btn"
+          :class="{ 'loading': geolocationLoading }"
+          :disabled="geolocationLoading"
+          :title="geolocationLoading ? t('geolocationLoading') : t('geolocationButton')"
+        >
+          {{ geolocationLoading ? '⏳' : '📍' }}
+        </button>
       </div>
     </div>
 
@@ -98,6 +107,7 @@
 
 <script>
 import { useLocale } from '@/composables/useLocale.js'
+import { useGeolocation } from '@/composables/useGeolocation.js'
 import EventCard from './EventCard.vue'
 import TagFilterPanel from '../filters/TagFilterPanel.vue'
 import TimelineModal from '../timeline/TimelineModal.vue'
@@ -127,11 +137,11 @@ export default {
       default: false
     }
   },
-  emits: ['focus-event', 'highlight-event', 'map-filter-toggle', 'tag-clicked', 'remove-tag', 'clear-all-tags', 'toggle-follow'],
+  emits: ['focus-event', 'highlight-event', 'map-filter-toggle', 'tag-clicked', 'remove-tag', 'clear-all-tags', 'toggle-follow', 'geolocate'],
   setup() {
-    // Expose translation function from composable
     const { t } = useLocale()
-    return { t }
+    const { loading: geolocationLoading, get_current_position } = useGeolocation()
+    return { t, geolocationLoading, get_current_position }
   },
   data() {
     const STORAGE_KEY = 'historia_tag_filter_visible'
@@ -224,6 +234,14 @@ export default {
     },
     openTimeline() {
       this.timelineModalOpen = true
+    },
+    async requestGeolocation() {
+      try {
+        const coords = await this.get_current_position()
+        this.$emit('geolocate', coords)
+      } catch (error) {
+        alert(error.message)
+      }
     }
   }
 }

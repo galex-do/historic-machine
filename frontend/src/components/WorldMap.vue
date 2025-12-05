@@ -553,6 +553,15 @@ export default {
       this.show_offscreen_notification = false
     },
 
+    // Center map on specific coordinates (used for geolocation)
+    centerOnCoordinates(lat, lng, zoom = 12) {
+      if (!this.map) {
+        console.warn('Map not initialized')
+        return
+      }
+      this.map.setView([lat, lng], zoom, { animate: true })
+    },
+
     // Handle map bounds changes
     handle_bounds_change() {
       if (!this.map) return
