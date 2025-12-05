@@ -229,6 +229,7 @@ export default {
       show_event_info_modal: false, // New modal for event info
       selected_events: [], // Events to show in info modal
       highlight_overlay: null, // Store highlight overlay layer (halo ring + center dot)
+      user_location_layer: null, // Store user location marker (geolocation feature)
       show_offscreen_notification: false, // Show notification when marker is off-screen
       offscreen_event_name: '', // Store event name for notification
       expanded_event_tags: {}, // Track which events have expanded tags
@@ -560,6 +561,68 @@ export default {
         return
       }
       this.map.setView([lat, lng], zoom, { animate: true })
+      // Render user location marker
+      this.renderUserLocation(lat, lng)
+    },
+
+    // Render user location marker on the map
+    renderUserLocation(lat, lng) {
+      // Clear any existing user location marker
+      this.clearUserLocation()
+
+      const userLatLng = [lat, lng]
+
+      // Outer pulsing ring (larger, semi-transparent blue)
+      const outerRing = L.circleMarker(userLatLng, {
+        radius: 24,
+        fillColor: 'transparent',
+        fillOpacity: 0,
+        color: '#3b82f6',
+        weight: 4,
+        opacity: 0.7
+      })
+
+      // Middle ring for visual depth
+      const middleRing = L.circleMarker(userLatLng, {
+        radius: 16,
+        fillColor: 'transparent',
+        fillOpacity: 0,
+        color: '#60a5fa',
+        weight: 2,
+        opacity: 0.5
+      })
+
+      // Center dot - solid blue circle indicating exact position
+      const centerDot = L.circleMarker(userLatLng, {
+        radius: 8,
+        fillColor: '#3b82f6',
+        fillOpacity: 1,
+        color: '#1d4ed8',
+        weight: 2,
+        opacity: 1
+      })
+
+      // Inner white dot for contrast
+      const innerDot = L.circleMarker(userLatLng, {
+        radius: 3,
+        fillColor: '#ffffff',
+        fillOpacity: 1,
+        color: '#ffffff',
+        weight: 0,
+        opacity: 1
+      })
+
+      // Create a layer group with all elements
+      this.user_location_layer = L.layerGroup([outerRing, middleRing, centerDot, innerDot])
+      this.user_location_layer.addTo(this.map)
+    },
+
+    // Clear user location marker from the map
+    clearUserLocation() {
+      if (this.user_location_layer && this.map) {
+        this.map.removeLayer(this.user_location_layer)
+        this.user_location_layer = null
+      }
     },
 
     // Handle map bounds changes
