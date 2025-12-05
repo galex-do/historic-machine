@@ -46,6 +46,55 @@
               <span v-else-if="user?.access_level === 'admin'" class="access-badge admin">{{ t('adminBadge') }}</span>
               <span v-else-if="user?.access_level === 'editor'" class="access-badge editor">{{ t('editorBadge') }}</span>
             </div>
+            
+            <!-- Admin section - for users with admin access -->
+            <template v-if="canAccessAdmin">
+              <div class="dropdown-section-divider"></div>
+              <router-link 
+                to="/admin/events" 
+                class="dropdown-item"
+                @click="showLogoDropdown = false"
+              >
+                <span class="dropdown-icon">📅</span>
+                {{ t('events') }}
+              </router-link>
+              <router-link 
+                to="/admin/tags" 
+                class="dropdown-item"
+                @click="showLogoDropdown = false"
+              >
+                <span class="dropdown-icon">🏷️</span>
+                {{ t('tags') }}
+              </router-link>
+              <router-link 
+                to="/admin/datasets" 
+                class="dropdown-item"
+                @click="showLogoDropdown = false"
+              >
+                <span class="dropdown-icon">📦</span>
+                {{ t('datasets') }}
+              </router-link>
+              <router-link 
+                v-if="isSuper"
+                to="/admin/users" 
+                class="dropdown-item"
+                @click="showLogoDropdown = false"
+              >
+                <span class="dropdown-icon">👥</span>
+                {{ t('users') }}
+              </router-link>
+              <router-link 
+                v-if="isSuper"
+                to="/admin/stats" 
+                class="dropdown-item"
+                @click="showLogoDropdown = false"
+              >
+                <span class="dropdown-icon">📊</span>
+                {{ t('stats') }}
+              </router-link>
+            </template>
+            
+            <div class="dropdown-section-divider"></div>
             <button 
               class="dropdown-item logout-item"
               @click="handleLogoutFromDropdown"
@@ -59,63 +108,6 @@
       </div>
       
       <div class="right-section">
-        <!-- Admin Dropdown - for authenticated users with admin access -->
-        <div v-if="isAuthenticated && canAccessAdmin" class="admin-dropdown" @click.stop>
-          <button 
-            class="nav-link dropdown-trigger" 
-            :class="{ 'nav-link-active': $route.path.startsWith('/admin') || $route.path.startsWith('/events') || $route.path.startsWith('/datasets') }"
-            @click="toggleAdminDropdown"
-          >
-            <span class="nav-icon">⚙️</span>
-            {{ t('admin') }}
-            <span class="dropdown-arrow" :class="{ 'open': showAdminDropdown }">▼</span>
-          </button>
-          <div v-if="showAdminDropdown" class="dropdown-menu">
-            <router-link 
-              to="/admin/events" 
-              class="dropdown-item"
-              @click="showAdminDropdown = false"
-            >
-              <span class="dropdown-icon">📅</span>
-              {{ t('events') }}
-            </router-link>
-            <router-link 
-              to="/admin/tags" 
-              class="dropdown-item"
-              @click="showAdminDropdown = false"
-            >
-              <span class="dropdown-icon">🏷️</span>
-              {{ t('tags') }}
-            </router-link>
-            <router-link 
-              to="/admin/datasets" 
-              class="dropdown-item"
-              @click="showAdminDropdown = false"
-            >
-              <span class="dropdown-icon">📦</span>
-              {{ t('datasets') }}
-            </router-link>
-            <router-link 
-              v-if="isSuper"
-              to="/admin/users" 
-              class="dropdown-item"
-              @click="showAdminDropdown = false"
-            >
-              <span class="dropdown-icon">👥</span>
-              {{ t('users') }}
-            </router-link>
-            <router-link 
-              v-if="isSuper"
-              to="/admin/stats" 
-              class="dropdown-item"
-              @click="showAdminDropdown = false"
-            >
-              <span class="dropdown-icon">📊</span>
-              {{ t('stats') }}
-            </router-link>
-          </div>
-        </div>
-        
         <!-- Locale Selector - positioned at far right -->
         <div class="locale-selector" @click.stop>
           <button 
@@ -208,7 +200,6 @@ export default {
     const { locale, currentLocale, supportedLocales, setLocale, t } = useLocale()
     
     const showLoginModal = ref(false)
-    const showAdminDropdown = ref(false)
     const showLocaleDropdown = ref(false)
     const showLogoDropdown = ref(false)
     const loginForm = ref({
@@ -242,21 +233,13 @@ export default {
       loginForm.value = { username: '', password: '' }
     }
 
-    const toggleAdminDropdown = () => {
-      showAdminDropdown.value = !showAdminDropdown.value
-      showLocaleDropdown.value = false
-      showLogoDropdown.value = false
-    }
-
     const toggleLocaleDropdown = () => {
       showLocaleDropdown.value = !showLocaleDropdown.value
-      showAdminDropdown.value = false
       showLogoDropdown.value = false
     }
 
     const toggleLogoDropdown = () => {
       showLogoDropdown.value = !showLogoDropdown.value
-      showAdminDropdown.value = false
       showLocaleDropdown.value = false
     }
 
@@ -279,9 +262,6 @@ export default {
 
     // Close dropdown when clicking outside
     const handleClickOutside = (event) => {
-      if (!event.target.closest('.admin-dropdown')) {
-        showAdminDropdown.value = false
-      }
       if (!event.target.closest('.locale-selector')) {
         showLocaleDropdown.value = false
       }
@@ -308,7 +288,6 @@ export default {
       loading,
       error,
       showLoginModal,
-      showAdminDropdown,
       showLocaleDropdown,
       showLogoDropdown,
       loginForm,
@@ -319,7 +298,6 @@ export default {
       handleLogin,
       handleLogout,
       closeModal,
-      toggleAdminDropdown,
       toggleLocaleDropdown,
       toggleLogoDropdown,
       openLoginModal,
@@ -429,6 +407,12 @@ export default {
   height: 1px;
   background: #e2e8f0;
   margin: 0;
+}
+
+.logo-dropdown-menu .dropdown-section-divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 0.25rem 0;
 }
 
 .logo-dropdown-menu .dropdown-user-info {
