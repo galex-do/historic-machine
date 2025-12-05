@@ -23,6 +23,7 @@ services:
       DB_PASSWORD: password
       DB_NAME: historical_events
       DB_SSL_MODE: disable
+      CONTACT_EMAIL: your-email@example.com
     depends_on:
       - db
     ports:
