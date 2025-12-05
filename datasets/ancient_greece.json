@@ -1,5 +1,5 @@
 {
-  "description": "Dataset imported with 170 events",
+  "description": "Dataset imported with 196 events",
   "events": [
     {
       "date": "01.01.1550",
@@ -15,7 +15,7 @@
         "City",
         "Legend",
         "Greek",
-        "Athenian"
+        "Athens"
       ],
       "type": "historic"
     },
@@ -77,6 +77,26 @@
     },
     {
       "date": "01.01.1100",
+      "description": "Greek Dark Ages begin after Mycenaean collapse; population drops by 75%, writing disappears, trade networks collapse, and Greeks revert to isolated village communities with subsistence agriculture",
+      "description_ru": "Греческие темные века начинаются после коллапса Микен; письменность исчезает, торговые сети рушатся, и греки возвращаются к изолированным деревенским общинам с натуральным хозяйством. Дорийцы заселяют и обращают в рабство коренное население Греции, греки же бегут в Анатолию и постепенно заселяют её побережье",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 23,
+      "name": "Greek Dark Ages Begin",
+      "name_ru": "Греческие темные века",
+      "source": "https://en.wikipedia.org/wiki/Greek_Dark_Ages",
+      "tags": [
+        "Greek",
+        "Dark Ages",
+        "Decline",
+        "Dorian",
+        "Aeolic",
+        "Ionian"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1100",
       "description": "Smyrna founded by Aeolian colonists, later absorbed by neighboring Ionian Colophon around 688 BC; strategic location on gulf makes it major trade center; claims to be birthplace of Homer along with Chios",
       "description_ru": "Смирна основана эолийскими колонистами, позже поглощена соседним ионийским Колофоном около 688 г. до н.э.; стратегическое положение на заливе делает ее крупным торговым центром; претендует на звание родины Гомера наряду с Хиосом",
       "era": "BC",
@@ -106,10 +126,10 @@
       "name_ru": "Эолийское поселение на Тенедосе",
       "source": "https://en.wikipedia.org/wiki/Tenedos",
       "tags": [
-        "Aeolic",
         "Greek",
         "Colonization",
-        "Expansion"
+        "Expansion",
+        "Aeolic"
       ],
       "type": "historic"
     },
@@ -127,27 +147,8 @@
         "Dorian",
         "City",
         "Greek",
-        "Spartan",
+        "Sparta",
         "Migration"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1100",
-      "description": "Mytilene founded by Aeolian Greeks on Lesbos island; becomes leading city of Aeolis and major cultural center, birthplace of poets Sappho and Alcaeus, philosopher Theophrastus, and tyrant Pittacus (one of Seven Sages)",
-      "description_ru": "Митилена основана эолийскими греками на острове Лесбос; становится ведущим городом Эолиды и крупным культурным центром, родиной поэтов Сапфо и Алкея, философа Теофраста и тирана Питтака (одного из Семи мудрецов)",
-      "era": "BC",
-      "latitude": 39.1047,
-      "longitude": 26.5547,
-      "name": "Foundation of Mytilene",
-      "name_ru": "Освоение эолийцами Лесбоса",
-      "source": "https://en.wikipedia.org/wiki/Mytilene",
-      "tags": [
-        "Aeolic",
-        "City",
-        "Greek",
-        "Colonization",
-        "Expansion"
       ],
       "type": "historic"
     },
@@ -172,74 +173,16 @@
     },
     {
       "date": "01.01.1100",
-      "description": "Greek Dark Ages begin after Mycenaean collapse; population drops by 75%, writing disappears, trade networks collapse, and Greeks revert to isolated village communities with subsistence agriculture",
-      "description_ru": "Греческие темные века начинаются после коллапса Микен; письменность исчезает, торговые сети рушатся, и греки возвращаются к изолированным деревенским общинам с натуральным хозяйством. Дорийцы заселяют и обращают в рабство коренное население Греции, греки же бегут в Анатолию и постепенно заселяют её побережье",
+      "description": "Mytilene founded by Aeolian Greeks on Lesbos island; becomes leading city of Aeolis and major cultural center, birthplace of poets Sappho and Alcaeus, philosopher Theophrastus, and tyrant Pittacus (one of Seven Sages)",
+      "description_ru": "Митилена основана эолийскими греками на острове Лесбос; становится ведущим городом Эолиды и крупным культурным центром, родиной поэтов Сапфо и Алкея, философа Теофраста и тирана Питтака (одного из Семи мудрецов)",
       "era": "BC",
-      "latitude": 37.5,
-      "longitude": 23,
-      "name": "Greek Dark Ages Begin",
-      "name_ru": "Греческие темные века",
-      "source": "https://en.wikipedia.org/wiki/Greek_Dark_Ages",
+      "latitude": 39.1047,
+      "longitude": 26.5547,
+      "name": "Foundation of Mytilene",
+      "name_ru": "Освоение эолийцами Лесбоса",
+      "source": "https://en.wikipedia.org/wiki/Mytilene",
       "tags": [
-        "Greek",
-        "Dark Ages",
-        "Decline",
-        "Dorian",
         "Aeolic",
-        "Ionian"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1050",
-      "description": "Erythrae founded by Ionians on peninsula opposite Chios; one of twelve cities of Ionian League, famous for prophetess Sibylla and production of wine exported throughout Mediterranean",
-      "description_ru": "Эритры основаны ионийцами на полуострове напротив Хиоса; один из двенадцати городов Ионийского союза, известный пророчицей Сибиллой и производством вина, экспортируемого по всему Средиземноморью",
-      "era": "BC",
-      "latitude": 38.37,
-      "longitude": 26.48,
-      "name": "Foundation of Erythrae",
-      "name_ru": "Основание ионийцами Эритр",
-      "source": "https://en.wikipedia.org/wiki/Erythrae",
-      "tags": [
-        "Ionian",
-        "City",
-        "Greek",
-        "Colonization",
-        "Expansion"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1050",
-      "description": "Clazomenae founded by Ionians on small island connected to mainland by causeway; birthplace of philosopher Anaxagoras who introduced concept of nous (mind) as organizing principle of cosmos",
-      "description_ru": "Клазомены основаны ионийцами на небольшом острове, соединенном с материком дамбой",
-      "era": "BC",
-      "latitude": 38.36,
-      "longitude": 26.77,
-      "name": "Foundation of Clazomenae",
-      "name_ru": "Основание ионийцами Клазомен",
-      "source": "https://en.wikipedia.org/wiki/Clazomenae",
-      "tags": [
-        "Ionian",
-        "City",
-        "Greek",
-        "Colonization",
-        "Expansion"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1050",
-      "description": "Priene founded by Ionians on slopes of Mount Mycale overlooking Maeander plain; later rebuilt in 4th century BC with famous Hippodamian grid plan, temple of Athena Polias designed by Pytheos",
-      "description_ru": "Приена основана ионийцами на склонах горы Микале с видом на долину Меандра; позже перестроена в IV веке до н.э. по гипподамову плану",
-      "era": "BC",
-      "latitude": 37.6589,
-      "longitude": 27.2975,
-      "name": "Foundation of Priene",
-      "name_ru": "Основание ионийцами Приены",
-      "source": "https://en.wikipedia.org/wiki/Priene",
-      "tags": [
-        "Ionian",
         "City",
         "Greek",
         "Colonization",
@@ -289,6 +232,64 @@
     },
     {
       "date": "01.01.1050",
+      "description": "Colophon established by Ionian settlers in fertile valley near Aegean coast; famous for cavalry, luxury goods, and as homeland of poet Mimnermus; oracle of Apollo at nearby Claros gains Panhellenic reputation",
+      "description_ru": "Колофон основан ионийскими поселенцами в плодородной долине близ эгейского побережья; знаменит кавалерией, предметами роскоши и как родина поэта Мимнерма; оракул Аполлона в соседнем Кларосе обретает общегреческую известность",
+      "era": "BC",
+      "latitude": 37.9921,
+      "longitude": 27.1936,
+      "name": "Foundation of Colophon",
+      "name_ru": "Основание ионийского Колофона",
+      "source": "https://en.wikipedia.org/wiki/Colophon_(city)",
+      "tags": [
+        "Ionian",
+        "City",
+        "Greek",
+        "Colonization",
+        "Expansion"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1050",
+      "description": "Clazomenae founded by Ionians on small island connected to mainland by causeway; birthplace of philosopher Anaxagoras who introduced concept of nous (mind) as organizing principle of cosmos",
+      "description_ru": "Клазомены основаны ионийцами на небольшом острове, соединенном с материком дамбой",
+      "era": "BC",
+      "latitude": 38.36,
+      "longitude": 26.77,
+      "name": "Foundation of Clazomenae",
+      "name_ru": "Основание ионийцами Клазомен",
+      "source": "https://en.wikipedia.org/wiki/Clazomenae",
+      "tags": [
+        "Ionian",
+        "City",
+        "Greek",
+        "Colonization",
+        "Expansion"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1050",
+      "description": "Miletus founded by Ionian Greeks fleeing Dorian invasion; becomes preeminent city of Ionia with four harbors, establishing over 70 colonies around Black Sea and Mediterranean, birthplace of Greek philosophy and science",
+      "description_ru": "Милет основан ионийскими греками, бежавшими от дорийского вторжения; становится главным городом Ионии с четырьмя гаванями, основывает более 70 колоний вокруг Черного и Средиземного морей, родина греческой философии и науки",
+      "era": "BC",
+      "latitude": 37.5283,
+      "longitude": 27.2783,
+      "name": "Foundation of Miletus",
+      "name_ru": "Основание ионийцами Милета",
+      "source": "https://en.wikipedia.org/wiki/Miletus",
+      "tags": [
+        "Ionian",
+        "City",
+        "Greek",
+        "Migration",
+        "Colonization",
+        "Expansion"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1050",
       "description": "Teos founded by Ionian settlers on narrow peninsula between two harbors; birthplace of poet Anacreon and site of proposed Ionian League capital; later home to Artists of Dionysus guild of performers",
       "description_ru": "Теос основан ионийскими поселенцами на узком полуострове между двумя гаванями; родина поэта Анакреона и место предполагаемой столицы Ионийского союза",
       "era": "BC",
@@ -328,14 +329,14 @@
     },
     {
       "date": "01.01.1050",
-      "description": "Colophon established by Ionian settlers in fertile valley near Aegean coast; famous for cavalry, luxury goods, and as homeland of poet Mimnermus; oracle of Apollo at nearby Claros gains Panhellenic reputation",
-      "description_ru": "Колофон основан ионийскими поселенцами в плодородной долине близ эгейского побережья; знаменит кавалерией, предметами роскоши и как родина поэта Мимнерма; оракул Аполлона в соседнем Кларосе обретает общегреческую известность",
+      "description": "Priene founded by Ionians on slopes of Mount Mycale overlooking Maeander plain; later rebuilt in 4th century BC with famous Hippodamian grid plan, temple of Athena Polias designed by Pytheos",
+      "description_ru": "Приена основана ионийцами на склонах горы Микале с видом на долину Меандра; позже перестроена в IV веке до н.э. по гипподамову плану",
       "era": "BC",
-      "latitude": 37.9921,
-      "longitude": 27.1936,
-      "name": "Foundation of Colophon",
-      "name_ru": "Основание ионийского Колофона",
-      "source": "https://en.wikipedia.org/wiki/Colophon_(city)",
+      "latitude": 37.6589,
+      "longitude": 27.2975,
+      "name": "Foundation of Priene",
+      "name_ru": "Основание ионийцами Приены",
+      "source": "https://en.wikipedia.org/wiki/Priene",
       "tags": [
         "Ionian",
         "City",
@@ -347,19 +348,18 @@
     },
     {
       "date": "01.01.1050",
-      "description": "Miletus founded by Ionian Greeks fleeing Dorian invasion; becomes preeminent city of Ionia with four harbors, establishing over 70 colonies around Black Sea and Mediterranean, birthplace of Greek philosophy and science",
-      "description_ru": "Милет основан ионийскими греками, бежавшими от дорийского вторжения; становится главным городом Ионии с четырьмя гаванями, основывает более 70 колоний вокруг Черного и Средиземного морей, родина греческой философии и науки",
+      "description": "Erythrae founded by Ionians on peninsula opposite Chios; one of twelve cities of Ionian League, famous for prophetess Sibylla and production of wine exported throughout Mediterranean",
+      "description_ru": "Эритры основаны ионийцами на полуострове напротив Хиоса; один из двенадцати городов Ионийского союза, известный пророчицей Сибиллой и производством вина, экспортируемого по всему Средиземноморью",
       "era": "BC",
-      "latitude": 37.5283,
-      "longitude": 27.2783,
-      "name": "Foundation of Miletus",
-      "name_ru": "Основание ионийцами Милета",
-      "source": "https://en.wikipedia.org/wiki/Miletus",
+      "latitude": 38.37,
+      "longitude": 26.48,
+      "name": "Foundation of Erythrae",
+      "name_ru": "Основание ионийцами Эритр",
+      "source": "https://en.wikipedia.org/wiki/Erythrae",
       "tags": [
         "Ionian",
         "City",
         "Greek",
-        "Migration",
         "Colonization",
         "Expansion"
       ],
@@ -367,20 +367,19 @@
     },
     {
       "date": "01.01.1000",
-      "description": "Ionians flee Dorian pressure and colonize central Aegean coast of Anatolia; twelve cities including Miletus, Ephesus and Phocaea form Ionian League, preserving Greek culture during Dark Ages",
-      "description_ru": "Ионийцы бегут от дорийского давления и колонизируют центральное побережье Эгейского моря в Анатолии; двенадцать городов, включая Милет, Эфес и Фокею, образуют Ионийский союз, сохраняя греческую культуру в темные века",
+      "description": "Chios colonized by Ionians from Attica; island becomes wealthy from wine, mastic resin, and slave trade; claims to be birthplace of Homer and develops advanced democratic constitution by 6th century BC",
+      "description_ru": "Остров Хиос колонизирован ионийцами из Аттики; остров богатеет, торгую вином, мастиковой смолой и рабами; Хиос также считается родиной Гомера",
       "era": "BC",
-      "latitude": 38.18,
-      "longitude": 26.7867,
-      "name": "Ionian League Formation",
-      "name_ru": "Образование ионийского союза",
-      "source": "https://en.wikipedia.org/wiki/Ionia",
+      "latitude": 38.3667,
+      "longitude": 26.1333,
+      "name": "Ionian Colonization of Chios",
+      "name_ru": "Ионийцы колонизируют Хиос",
+      "source": "https://en.wikipedia.org/wiki/Chios",
       "tags": [
         "Ionian",
         "Greek",
-        "Settlement",
-        "Migration",
-        "Colonization"
+        "Colonization",
+        "Expansion"
       ],
       "type": "historic"
     },
@@ -404,19 +403,20 @@
     },
     {
       "date": "01.01.1000",
-      "description": "Chios colonized by Ionians from Attica; island becomes wealthy from wine, mastic resin, and slave trade; claims to be birthplace of Homer and develops advanced democratic constitution by 6th century BC",
-      "description_ru": "Остров Хиос колонизирован ионийцами из Аттики; остров богатеет, торгую вином, мастиковой смолой и рабами; Хиос также считается родиной Гомера",
+      "description": "Ionians flee Dorian pressure and colonize central Aegean coast of Anatolia; twelve cities including Miletus, Ephesus and Phocaea form Ionian League, preserving Greek culture during Dark Ages",
+      "description_ru": "Ионийцы бегут от дорийского давления и колонизируют центральное побережье Эгейского моря в Анатолии; двенадцать городов, включая Милет, Эфес и Фокею, образуют Ионийский союз, сохраняя греческую культуру в темные века",
       "era": "BC",
-      "latitude": 38.3667,
-      "longitude": 26.1333,
-      "name": "Ionian Colonization of Chios",
-      "name_ru": "Ионийцы колонизируют Хиос",
-      "source": "https://en.wikipedia.org/wiki/Chios",
+      "latitude": 38.18,
+      "longitude": 26.7867,
+      "name": "Ionian League Formation",
+      "name_ru": "Образование ионийского союза",
+      "source": "https://en.wikipedia.org/wiki/Ionia",
       "tags": [
         "Ionian",
         "Greek",
-        "Colonization",
-        "Expansion"
+        "Settlement",
+        "Migration",
+        "Colonization"
       ],
       "type": "historic"
     },
@@ -460,24 +460,6 @@
     },
     {
       "date": "01.01.0800",
-      "description": "Megara emerges as independent polis between Athens and Corinth; despite small size becomes prolific colonizer, founding Megara Hyblaea, Selinunte, Byzantium, and Chalcedon - controls key trade routes",
-      "description_ru": "Мегара вырастает как независимый полис между Афинами и Коринфом; несмотря на небольшой размер, активно участвует в греческой колонизации, основывая Мегару Гиблейскую, Селинунт, Византий и Халкидон",
-      "era": "BC",
-      "latitude": 38.0028,
-      "longitude": 23.3461,
-      "name": "Megara as Colonial Power",
-      "name_ru": "Мегара - греческая метрополия",
-      "source": "https://en.wikipedia.org/wiki/Megara",
-      "tags": [
-        "City",
-        "Greek",
-        "Colonization",
-        "Megarian"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0800",
       "description": "Greeks adopt Phoenician alphabet adding vowels, creating first true alphabetic writing system; revolutionary innovation enables widespread literacy and democratic participation",
       "description_ru": "Греки принимают финикийский алфавит, добавляя гласные, и создавают первую истинную алфавитную систему письма; революционный подход к письму делает его легче для записи и чтения, и влияет на рост грамотности",
       "era": "BC",
@@ -494,6 +476,24 @@
         "Phoenician"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.0800",
+      "description": "Megara emerges as independent polis between Athens and Corinth; despite small size becomes prolific colonizer, founding Megara Hyblaea, Selinunte, Byzantium, and Chalcedon - controls key trade routes",
+      "description_ru": "Мегара вырастает как независимый полис между Афинами и Коринфом; несмотря на небольшой размер, активно участвует в греческой колонизации, основывая Мегару Гиблейскую, Селинунт, Византий и Халкидон",
+      "era": "BC",
+      "latitude": 38.0028,
+      "longitude": 23.3461,
+      "name": "Megara as Colonial Power",
+      "name_ru": "Мегара - греческая метрополия",
+      "source": "https://en.wikipedia.org/wiki/Megara",
+      "tags": [
+        "City",
+        "Greek",
+        "Colonization",
+        "Megarian"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0780",
@@ -535,14 +535,14 @@
     },
     {
       "date": "01.01.0760",
-      "description": "Chalcis on Euboea leads Greek colonization alongside rival Eretria; founds colonies in Chalcidice peninsula (named after city), Sicily, and southern Italy; emerges victorious from Lelantine War with Thessalian cavalry support",
-      "description_ru": "Халкида на Эвбее возглавляет греческую колонизацию наряду с соперницей Эретрией; основывает колонии на полуострове Халкидики (названном в честь города), Сицилии и южной Италии; выходит победителем из Лелантийской войны при поддержке фессалийской кавалерии",
+      "description": "Eretria in Euboea reaches peak as major colonizing power; rivals neighboring Chalcis in Lelantine War for control of fertile Lelantine Plain; both cities found numerous colonies in Chalcidice, Italy, and Sicily",
+      "description_ru": "Эретрия на Эвбее растет как крупная колонизирующая держава; соперничает с соседним Халкисом в Лелантийской войне за контроль над плодородной Лелантийской равниной; оба города основывают многочисленные колонии в Халкидике, Италии и Сицилии",
       "era": "BC",
-      "latitude": 38.4628,
-      "longitude": 23.5947,
-      "name": "Chalcis as Colonial Power",
-      "name_ru": "Халкида как колониальная держава",
-      "source": "https://en.wikipedia.org/wiki/Chalcis",
+      "latitude": 38.395,
+      "longitude": 23.7867,
+      "name": "Eretria as Colonial Power",
+      "name_ru": "Эретрия как колониальная держава",
+      "source": "https://en.wikipedia.org/wiki/Eretria",
       "tags": [
         "City",
         "Greek",
@@ -553,14 +553,14 @@
     },
     {
       "date": "01.01.0760",
-      "description": "Eretria in Euboea reaches peak as major colonizing power; rivals neighboring Chalcis in Lelantine War for control of fertile Lelantine Plain; both cities found numerous colonies in Chalcidice, Italy, and Sicily",
-      "description_ru": "Эретрия на Эвбее растет как крупная колонизирующая держава; соперничает с соседним Халкисом в Лелантийской войне за контроль над плодородной Лелантийской равниной; оба города основывают многочисленные колонии в Халкидике, Италии и Сицилии",
+      "description": "Chalcis on Euboea leads Greek colonization alongside rival Eretria; founds colonies in Chalcidice peninsula (named after city), Sicily, and southern Italy; emerges victorious from Lelantine War with Thessalian cavalry support",
+      "description_ru": "Халкида на Эвбее возглавляет греческую колонизацию наряду с соперницей Эретрией; основывает колонии на полуострове Халкидики (названном в честь города), Сицилии и южной Италии; выходит победителем из Лелантийской войны при поддержке фессалийской кавалерии",
       "era": "BC",
-      "latitude": 38.395,
-      "longitude": 23.7867,
-      "name": "Eretria as Colonial Power",
-      "name_ru": "Эретрия как колониальная держава",
-      "source": "https://en.wikipedia.org/wiki/Eretria",
+      "latitude": 38.4628,
+      "longitude": 23.5947,
+      "name": "Chalcis as Colonial Power",
+      "name_ru": "Халкида как колониальная держава",
+      "source": "https://en.wikipedia.org/wiki/Chalcis",
       "tags": [
         "City",
         "Greek",
@@ -694,6 +694,25 @@
     },
     {
       "date": "01.01.0730",
+      "description": "Poet Hesiod writes Theogony and Works and Days; Theogony systematizes Greek mythology with genealogy of gods, while Works and Days provides practical farming advice and moral instruction",
+      "description_ru": "Поэт Гесиод пишет Теогонию и Труды и дни; Теогония систематизирует греческую мифологию с генеалогией богов, в то время как Труды и дни дают практические советы по земледелию и нравственные наставления",
+      "era": "BC",
+      "latitude": 38.4,
+      "longitude": 23.1,
+      "name": "Hesiod's Theogony and Works",
+      "name_ru": "Теогония и Труды Гесиода",
+      "source": "https://en.wikipedia.org/wiki/Hesiod",
+      "tags": [
+        "Poetry",
+        "Greek",
+        "Culture",
+        "Literature",
+        "Religious"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0730",
       "description": "Chalcidians from Euboea found Zancle (later Messina) at site controlling Strait of Messina; original name means 'sickle' describing harbor shape; renamed Messana by Samian settlers in 490s BC",
       "description_ru": "Халкидяне с Эвбеи основывают Занкле (позднее Мессина) на месте, контролирующем Мессинский пролив; первоначальное название означает 'серп', описывая форму гавани; переименована в Мессану самосскими поселенцами в 490-х гг. до н.э.",
       "era": "BC",
@@ -713,25 +732,6 @@
         "Magna Graecia"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.0730",
-      "description": "Poet Hesiod writes Theogony and Works and Days; Theogony systematizes Greek mythology with genealogy of gods, while Works and Days provides practical farming advice and moral instruction",
-      "description_ru": "Поэт Гесиод пишет Теогонию и Труды и дни; Теогония систематизирует греческую мифологию с генеалогией богов, в то время как Труды и дни дают практические советы по земледелию и нравственные наставления",
-      "era": "BC",
-      "latitude": 38.4,
-      "longitude": 23.1,
-      "name": "Hesiod's Theogony and Works",
-      "name_ru": "Теогония и Труды Гесиода",
-      "source": "https://en.wikipedia.org/wiki/Hesiod",
-      "tags": [
-        "Poetry",
-        "Greek",
-        "Culture",
-        "Literature",
-        "Religious"
-      ],
-      "type": "cultural"
     },
     {
       "date": "01.01.0730",
@@ -810,7 +810,7 @@
       "tags": [
         "Conquest",
         "Slavery",
-        "Spartan",
+        "Sparta",
         "Greek"
       ],
       "type": "military"
@@ -869,7 +869,7 @@
       "name_ru": "Основание спартанцами Тараса (Таранто)",
       "source": "https://en.wikipedia.org/wiki/Taranto",
       "tags": [
-        "Spartan",
+        "Sparta",
         "City",
         "Greek",
         "Italy",
@@ -980,26 +980,6 @@
     },
     {
       "date": "01.01.0685",
-      "description": "Megarian Greeks found Chalcedon on Asian shore of Bosphorus; called 'city of the blind' by Persian Megabazus because settlers ignored superior site of Byzantium across strait; controls rich Black Sea fishing grounds",
-      "description_ru": "Мегарские греки основывают Халкидон на азиатском берегу Босфора; перс Мегабаз назвал его 'городом слепых', поскольку поселенцы проигнорировали превосходное место Византия на другом берегу пролива",
-      "era": "BC",
-      "latitude": 40.9829,
-      "longitude": 29.0331,
-      "name": "Foundation of Chalcedon",
-      "name_ru": "Основание греками Халкидона",
-      "source": "https://en.wikipedia.org/wiki/Chalcedon",
-      "tags": [
-        "Megarian",
-        "City",
-        "Greek",
-        "Bosphorus",
-        "Colonization",
-        "Expansion"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0685",
       "description": "Chalcidian Greeks found Rhegium (Reggio Calabria) on toe of Italian boot controlling Strait of Messina; along with sister city Zancle (Messina) controls vital maritime passage between Tyrrhenian and Ionian seas",
       "description_ru": "Халкидские греки основывают Регий (Реджо-Калабрия) на носке итальянского сапога, беря Мессинский пролив под контроль; вместе с городом Занкле (Мессина) напротив Регий контролирует жизненно важный морской проход между Тирренским и Ионическим морями",
       "era": "BC",
@@ -1020,6 +1000,26 @@
       "type": "historic"
     },
     {
+      "date": "01.01.0685",
+      "description": "Megarian Greeks found Chalcedon on Asian shore of Bosphorus; called 'city of the blind' by Persian Megabazus because settlers ignored superior site of Byzantium across strait; controls rich Black Sea fishing grounds",
+      "description_ru": "Мегарские греки основывают Халкидон на азиатском берегу Босфора; перс Мегабаз назвал его 'городом слепых', поскольку поселенцы проигнорировали превосходное место Византия на другом берегу пролива",
+      "era": "BC",
+      "latitude": 40.9829,
+      "longitude": 29.0331,
+      "name": "Foundation of Chalcedon",
+      "name_ru": "Основание греками Халкидона",
+      "source": "https://en.wikipedia.org/wiki/Chalcedon",
+      "tags": [
+        "Megarian",
+        "City",
+        "Greek",
+        "Bosphorus",
+        "Colonization",
+        "Expansion"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0683",
       "description": "Athens replaces hereditary kingship with annual archons; nine archons elected from aristocratic families manage religious, military, and judicial affairs, beginning constitutional evolution",
       "description_ru": "Афины заменяют наследственное царство ежегодными архонтами; девять архонтов, избираемых из аристократических семей, управляют религиозными, военными и судебными делами, начиная конституционную эволюцию",
@@ -1031,7 +1031,7 @@
       "source": "https://en.wikipedia.org/wiki/Archon",
       "tags": [
         "Government",
-        "Athenian",
+        "Athens",
         "Greek",
         "Administration"
       ],
@@ -1093,7 +1093,7 @@
       "tags": [
         "Rebellion",
         "Greek",
-        "Spartan",
+        "Sparta",
         "Argos"
       ],
       "type": "military"
@@ -1191,7 +1191,7 @@
       "tags": [
         "Greek",
         "Rebellion",
-        "Athenian",
+        "Athens",
         "Overthrow",
         "Megarian",
         "Democracy"
@@ -1270,29 +1270,9 @@
       "tags": [
         "Greek",
         "Law",
-        "Athenian"
+        "Athens"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0600",
-      "description": "Massalia (Marseille) founded by Phocaean Greeks; becomes major trading hub connecting Greek world with Celtic Gaul, exporting wine and olive oil while importing tin and amber from northern Europe",
-      "description_ru": "Массалия (Марсель) основана фокейскими греками; становится крупным торговым центром, соединяющим греческий мир с кельтской Галлией, экспортируя вино и оливковое масло, импортируя олово и янтарь из северной Европы",
-      "era": "BC",
-      "latitude": 43.2965,
-      "longitude": 5.3698,
-      "name": "Foundation of Massalia",
-      "name_ru": "Основание греческой Массалии",
-      "source": "https://en.wikipedia.org/wiki/Massalia",
-      "tags": [
-        "Greek",
-        "Trade",
-        "City",
-        "Colonization",
-        "Expansion",
-        "Phocaean"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0600",
@@ -1335,6 +1315,26 @@
       "type": "historic"
     },
     {
+      "date": "01.01.0600",
+      "description": "Massalia (Marseille) founded by Phocaean Greeks; becomes major trading hub connecting Greek world with Celtic Gaul, exporting wine and olive oil while importing tin and amber from northern Europe",
+      "description_ru": "Массалия (Марсель) основана фокейскими греками; становится крупным торговым центром, соединяющим греческий мир с кельтской Галлией, экспортируя вино и оливковое масло, импортируя олово и янтарь из северной Европы",
+      "era": "BC",
+      "latitude": 43.2965,
+      "longitude": 5.3698,
+      "name": "Foundation of Massalia",
+      "name_ru": "Основание греческой Массалии",
+      "source": "https://en.wikipedia.org/wiki/Massalia",
+      "tags": [
+        "Greek",
+        "Trade",
+        "City",
+        "Colonization",
+        "Expansion",
+        "Phocaean"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0594",
       "description": "Solon appointed archon of Athens with extraordinary powers to resolve debt crisis; cancels all debts, frees debt slaves, bans future enslavement for debt, and creates census-based constitution replacing birth with wealth as political qualification",
       "description_ru": "Солон назначен архонтом Афин с чрезвычайными полномочиями для разрешения долгового кризиса; отменяет все долги, освобождает долговых рабов, запрещает будущее порабощение за долги и создает конституцию на основе ценза, заменяя рождение богатством как политическую квалификацию",
@@ -1349,7 +1349,7 @@
         "Greek",
         "Democracy",
         "Reform",
-        "Athenian"
+        "Athens"
       ],
       "type": "political"
     },
@@ -1466,7 +1466,7 @@
       "source": "https://en.wikipedia.org/wiki/Peisistratos",
       "tags": [
         "Greek",
-        "Athenian",
+        "Athens",
         "King"
       ],
       "type": "political"
@@ -1524,7 +1524,7 @@
       "tags": [
         "Alliance",
         "Greek",
-        "Spartan",
+        "Sparta",
         "Corinthian",
         "Oligarchy"
       ],
@@ -1620,7 +1620,7 @@
         "Culture",
         "Art",
         "Greek",
-        "Athenian"
+        "Athens"
       ],
       "type": "cultural"
     },
@@ -1657,7 +1657,7 @@
       "tags": [
         "Dynasty",
         "Greek",
-        "Athenian",
+        "Athens",
         "King"
       ],
       "type": "political"
@@ -1676,7 +1676,7 @@
         "Death",
         "Democracy",
         "Greek",
-        "Athenian",
+        "Athens",
         "Assassination",
         "Regicide"
       ],
@@ -1694,8 +1694,8 @@
       "source": "https://en.wikipedia.org/wiki/Hippias_(tyrant)",
       "tags": [
         "Greek",
-        "Athenian",
-        "Spartan",
+        "Athens",
+        "Sparta",
         "Greek-Persian Wars",
         "Overthrow"
       ],
@@ -1732,7 +1732,7 @@
         "Democracy",
         "Reform",
         "Greek",
-        "Athenian"
+        "Athens"
       ],
       "type": "political"
     },
@@ -1782,7 +1782,7 @@
         "Culture",
         "Greek",
         "Theater",
-        "Athenian"
+        "Athens"
       ],
       "type": "cultural"
     },
@@ -1798,7 +1798,7 @@
       "source": "https://en.wikipedia.org/wiki/Pericles",
       "tags": [
         "Greek",
-        "Athenian",
+        "Athens",
         "Golden Age"
       ],
       "type": "political"
@@ -1837,7 +1837,7 @@
         "Democracy",
         "Law",
         "Greek",
-        "Athenian"
+        "Athens"
       ],
       "type": "political"
     },
@@ -1855,7 +1855,7 @@
         "Greek",
         "Culture",
         "Theater",
-        "Athenian"
+        "Athens"
       ],
       "type": "cultural"
     },
@@ -1887,7 +1887,7 @@
       "tags": [
         "Greek",
         "Naval",
-        "Athenian"
+        "Athens"
       ],
       "type": "political"
     },
@@ -1944,7 +1944,7 @@
         "Art",
         "Culture",
         "Theater",
-        "Athenian"
+        "Athens"
       ],
       "type": "cultural"
     },
@@ -1961,7 +1961,7 @@
       "tags": [
         "Philosophy",
         "Greek",
-        "Athenian",
+        "Athens",
         "Socrates"
       ],
       "type": "cultural"
@@ -1980,7 +1980,7 @@
         "Reform",
         "Greek",
         "Democracy",
-        "Athenian"
+        "Athens"
       ],
       "type": "political"
     },
@@ -1997,8 +1997,8 @@
       "tags": [
         "Greek",
         "Peloponnesian War",
-        "Athenian",
-        "Spartan",
+        "Athens",
+        "Sparta",
         "Corinthian"
       ],
       "type": "military"
@@ -2051,7 +2051,7 @@
         "Culture",
         "Art",
         "Greek",
-        "Athenian",
+        "Athens",
         "Democracy"
       ],
       "type": "cultural"
@@ -2070,7 +2070,7 @@
         "Greek",
         "Architecture",
         "Building",
-        "Athenian",
+        "Athens",
         "Fortification",
         "Peloponnesian War"
       ],
@@ -2088,7 +2088,7 @@
       "tags": [
         "Greek",
         "Peloponnesian War",
-        "Athenian",
+        "Athens",
         "Siege",
         "Tribute"
       ],
@@ -2105,8 +2105,8 @@
       "name_ru": "Битва при Танагре",
       "tags": [
         "Greek",
-        "Athenian",
-        "Spartan",
+        "Athens",
+        "Sparta",
         "Peloponnesian War",
         "Battle"
       ],
@@ -2141,7 +2141,7 @@
       "tags": [
         "Greek",
         "Ambush",
-        "Athenian",
+        "Athens",
         "Peloponnesian War"
       ],
       "type": "military"
@@ -2162,7 +2162,7 @@
         "Greek",
         "Art",
         "Temple",
-        "Athenian",
+        "Athens",
         "Ancient Wonders"
       ],
       "type": "historic"
@@ -2181,8 +2181,8 @@
         "Greek",
         "Diplomacy",
         "Peace",
-        "Athenian",
-        "Spartan",
+        "Athens",
+        "Sparta",
         "Peloponnesian War"
       ],
       "type": "political"
@@ -2200,7 +2200,7 @@
       "tags": [
         "Greek",
         "Democracy",
-        "Athenian"
+        "Athens"
       ],
       "type": "political"
     },
@@ -2219,7 +2219,7 @@
         "Greek",
         "Religious",
         "Gold",
-        "Athenian"
+        "Athens"
       ],
       "type": "cultural"
     },
@@ -2239,7 +2239,7 @@
         "Architecture",
         "Temple",
         "Religious",
-        "Athenian",
+        "Athens",
         "Ancient Wonders"
       ],
       "type": "religious"
@@ -2255,7 +2255,7 @@
       "name_ru": "Основание греками Амфиполя",
       "source": "https://en.wikipedia.org/wiki/Amphipolis",
       "tags": [
-        "Athenian",
+        "Athens",
         "City",
         "Greek",
         "Thrace",
@@ -2297,7 +2297,7 @@
       "tags": [
         "Alliance",
         "Greek",
-        "Athenian",
+        "Athens",
         "Corinthian",
         "Peloponnesian War"
       ],
@@ -2317,7 +2317,7 @@
         "Greek",
         "Economic",
         "Megarian",
-        "Athenian",
+        "Athens",
         "Peloponnesian War"
       ],
       "type": "political"
@@ -2334,8 +2334,8 @@
       "source": "https://en.wikipedia.org/wiki/Peloponnesian_War",
       "tags": [
         "Greek",
-        "Spartan",
-        "Athenian",
+        "Sparta",
+        "Athens",
         "Thebes",
         "Peloponnesian War"
       ],
@@ -2353,7 +2353,7 @@
       "source": "https://en.wikipedia.org/wiki/Plague_of_Athens",
       "tags": [
         "Greek",
-        "Athenian",
+        "Athens",
         "Plague"
       ],
       "type": "historic"
@@ -2371,7 +2371,7 @@
       "tags": [
         "Greek",
         "Death",
-        "Athenian",
+        "Athens",
         "Plague"
       ],
       "type": "political"
@@ -2390,7 +2390,7 @@
         "Greek",
         "Philosophy",
         "Plato",
-        "Athenian",
+        "Athens",
         "Socrates"
       ],
       "type": "cultural"
@@ -2409,28 +2409,26 @@
         "Theater",
         "Culture",
         "Greek",
-        "Athenian"
+        "Athens"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0425",
-      "description": "Athenian general Demosthenes captures 120 Spartiate prisoners at Sphacteria; humiliating defeat shatters myth of Spartan invincibility - Spartans negotiate frantically for return of elite citizens",
-      "description_ru": "Афинский полководец Демосфен захватывает 120 спартиатов в плен на Сфактерии; унизительное поражение разрушает миф о спартанской непобедимости - спартанцы лихорадочно ведут переговоры о возвращении элитных граждан",
+      "description": "Antisthenes of Athens founded the Cynic school. Antisthenes' mother was a slave, his father an Athenian citizen. This background made him a free citizen of Athens, but with limited civil rights. Antisthenes believed that the purpose of life was to achieve virtue and self-sufficiency (autarky). Only through self-restraint and renunciation of material possessions could a person become equal to the gods in their independence.",
+      "description_ru": "Антисфен Афинский стал основателем школы киников. Матерью Антисфена была рабыня, отцом — афинский гражданин. Такое происхождение делало свободным, но неполноправным жителем Афинв. Антисфен считал, что целью жизни является достижение добродетели и самодостаточности (автаркии). Только благодаря самоограничению и отказу от материальных благ человек становится равным богам в своей независимости.",
       "era": "BC",
-      "latitude": 36.9333,
-      "longitude": 21.65,
-      "name": "Battle of Sphacteria",
-      "name_ru": "Битва при Сфактерии",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Sphacteria",
+      "latitude": 37.96297823,
+      "longitude": 23.7326628,
+      "name": "Athenian Cynic school",
+      "name_ru": "Основание школы киников",
       "tags": [
-        "Battle",
         "Greek",
-        "Athenian",
-        "Spartan",
-        "Peloponnesian War"
+        "Philosophy",
+        "Socrates",
+        "Athens"
       ],
-      "type": "military"
+      "type": "cultural"
     },
     {
       "date": "01.01.0425",
@@ -2451,37 +2449,20 @@
     },
     {
       "date": "01.01.0425",
-      "description": "Antisthenes of Athens founded the Cynic school. Antisthenes' mother was a slave, his father an Athenian citizen. This background made him a free citizen of Athens, but with limited civil rights. Antisthenes believed that the purpose of life was to achieve virtue and self-sufficiency (autarky). Only through self-restraint and renunciation of material possessions could a person become equal to the gods in their independence.",
-      "description_ru": "Антисфен Афинский стал основателем школы киников. Матерью Антисфена была рабыня, отцом — афинский гражданин. Такое происхождение делало свободным, но неполноправным жителем Афинв. Антисфен считал, что целью жизни является достижение добродетели и самодостаточности (автаркии). Только благодаря самоограничению и отказу от материальных благ человек становится равным богам в своей независимости.",
+      "description": "Athenian general Demosthenes captures 120 Spartiate prisoners at Sphacteria; humiliating defeat shatters myth of Spartan invincibility - Spartans negotiate frantically for return of elite citizens",
+      "description_ru": "Афинский полководец Демосфен захватывает 120 спартиатов в плен на Сфактерии; унизительное поражение разрушает миф о спартанской непобедимости - спартанцы лихорадочно ведут переговоры о возвращении элитных граждан",
       "era": "BC",
-      "latitude": 37.96297823,
-      "longitude": 23.7326628,
-      "name": "Athenian Cynic school",
-      "name_ru": "Основание школы киников",
+      "latitude": 36.9333,
+      "longitude": 21.65,
+      "name": "Battle of Sphacteria",
+      "name_ru": "Битва при Сфактерии",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Sphacteria",
       "tags": [
+        "Battle",
         "Greek",
-        "Philosophy",
-        "Socrates",
-        "Athenian"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0424",
-      "description": "The Spartan general Brasidas conquers Amphipolis, loss of city to Sparta becomes major blow to Athens",
-      "description_ru": "Спартанский генерал Брасид завоевывает Амфиполь; это становится крупным ударом для Афин",
-      "era": "BC",
-      "latitude": 40.8167,
-      "longitude": 23.85,
-      "name": "Sparta captures Amphipolis",
-      "name_ru": "Спарта захватывает Амфиполь",
-      "source": "https://en.wikipedia.org/wiki/Amphipolis",
-      "tags": [
-        "Greek",
-        "Spartan",
-        "Athenian",
-        "Peloponnesian War",
-        "Conquest"
+        "Athens",
+        "Sparta",
+        "Peloponnesian War"
       ],
       "type": "military"
     },
@@ -2505,6 +2486,25 @@
       "type": "cultural"
     },
     {
+      "date": "01.01.0424",
+      "description": "The Spartan general Brasidas conquers Amphipolis, loss of city to Sparta becomes major blow to Athens",
+      "description_ru": "Спартанский генерал Брасид завоевывает Амфиполь; это становится крупным ударом для Афин",
+      "era": "BC",
+      "latitude": 40.8167,
+      "longitude": 23.85,
+      "name": "Sparta captures Amphipolis",
+      "name_ru": "Спарта захватывает Амфиполь",
+      "source": "https://en.wikipedia.org/wiki/Amphipolis",
+      "tags": [
+        "Greek",
+        "Sparta",
+        "Athens",
+        "Peloponnesian War",
+        "Conquest"
+      ],
+      "type": "military"
+    },
+    {
       "date": "01.01.0422",
       "description": "Both Cleon and Brasidas killed at Battle of Amphipolis; death of leading war advocates on both sides enables peace negotiations between Athens and Sparta",
       "description_ru": "И афинский военачальник Клеон, и спартанский, Брасид - убиты в битве при Амфиполе; смерть ведущих сторонников войны с обеих сторон позволяет начать мирные переговоры между Афинами и Спартой",
@@ -2517,8 +2517,8 @@
       "tags": [
         "Greek",
         "Battle",
-        "Athenian",
-        "Spartan",
+        "Athens",
+        "Sparta",
         "Peloponnesian War"
       ],
       "type": "military"
@@ -2537,8 +2537,8 @@
         "Diplomacy",
         "Greek",
         "Peace",
-        "Athenian",
-        "Spartan",
+        "Athens",
+        "Sparta",
         "Peloponnesian War"
       ],
       "type": "political"
@@ -2556,7 +2556,7 @@
       "tags": [
         "Conquest",
         "Greek",
-        "Athenian",
+        "Athens",
         "Slavery",
         "Plundering",
         "Peloponnesian War"
@@ -2577,7 +2577,7 @@
         "Greek",
         "Naval",
         "Expedition",
-        "Athenian",
+        "Athens",
         "Sicily",
         "Peloponnesian War"
       ],
@@ -2594,7 +2594,7 @@
       "name_ru": "Захват спартанцами Декелеи",
       "tags": [
         "Greek",
-        "Spartan",
+        "Sparta",
         "Peloponnesian War",
         "Conquest"
       ],
@@ -2627,7 +2627,7 @@
       "source": "https://en.wikipedia.org/wiki/Athenian_coup_of_411_BC",
       "tags": [
         "Greek",
-        "Athenian",
+        "Athens",
         "Rebellion",
         "Democracy",
         "Peloponnesian War"
@@ -2648,9 +2648,9 @@
         "Greek",
         "Battle",
         "Naval",
-        "Athenian",
+        "Athens",
         "Socrates",
-        "Spartan",
+        "Sparta",
         "Peloponnesian War"
       ],
       "type": "military"
@@ -2669,8 +2669,8 @@
         "Battle",
         "Greek",
         "Naval",
-        "Athenian",
-        "Spartan",
+        "Athens",
+        "Sparta",
         "Peloponnesian War"
       ],
       "type": "military"
@@ -2687,8 +2687,8 @@
       "source": "https://en.wikipedia.org/wiki/Thirty_Tyrants",
       "tags": [
         "Greek",
-        "Athenian",
-        "Spartan",
+        "Athens",
+        "Sparta",
         "Overthrow",
         "Purge",
         "Crisis"
@@ -2708,8 +2708,8 @@
       "tags": [
         "Fall",
         "Greek",
-        "Athenian",
-        "Spartan",
+        "Athens",
+        "Sparta",
         "Peloponnesian War"
       ],
       "type": "military"
@@ -2727,7 +2727,7 @@
       "tags": [
         "Greek",
         "Democracy",
-        "Athenian",
+        "Athens",
         "Exile"
       ],
       "type": "political"
@@ -2768,7 +2768,7 @@
         "Greek",
         "Corinthian",
         "Argos",
-        "Spartan",
+        "Sparta",
         "Corinthian War",
         "Persian",
         "Achaemenid"
@@ -2788,8 +2788,8 @@
         "Greek",
         "Persian",
         "Corinthian War",
-        "Spartan",
-        "Athenian",
+        "Sparta",
+        "Athens",
         "Naval",
         "Battle"
       ],
@@ -2811,27 +2811,8 @@
         "Corinthian War",
         "Thebes",
         "Argos",
-        "Athenian",
-        "Spartan"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0390",
-      "description": "Athenian general Iphicrates revolutionizes infantry with peltasts - light-armed troops with javelins defeating Spartan hoplites at Lechaeum; traditional phalanx no longer invincible",
-      "description_ru": "Афинский полководец Ификрат формирует новый род войск. Пельтасты - легковооруженные войска с дротиками, побеждающие спартанских гоплитов при Лехее; традиционная фаланга больше не непобедима",
-      "era": "BC",
-      "latitude": 37.9061,
-      "longitude": 22.8782,
-      "name": "Peltast Revolution",
-      "name_ru": "Революция пельтастов",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Lechaeum",
-      "tags": [
-        "Innovation",
-        "Greek",
-        "War Science",
-        "Athenian",
-        "Corinthian War"
+        "Athens",
+        "Sparta"
       ],
       "type": "military"
     },
@@ -2849,10 +2830,29 @@
         "Greek",
         "Persian",
         "Corinthian War",
-        "Athenian",
-        "Spartan"
+        "Athens",
+        "Sparta"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0390",
+      "description": "Athenian general Iphicrates revolutionizes infantry with peltasts - light-armed troops with javelins defeating Spartan hoplites at Lechaeum; traditional phalanx no longer invincible",
+      "description_ru": "Афинский полководец Ификрат формирует новый род войск. Пельтасты - легковооруженные войска с дротиками, побеждающие спартанских гоплитов при Лехее; традиционная фаланга больше не непобедима",
+      "era": "BC",
+      "latitude": 37.9061,
+      "longitude": 22.8782,
+      "name": "Peltast Revolution",
+      "name_ru": "Революция пельтастов",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Lechaeum",
+      "tags": [
+        "Innovation",
+        "Greek",
+        "War Science",
+        "Athens",
+        "Corinthian War"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0387",
@@ -2869,8 +2869,8 @@
         "Peace",
         "Diplomacy",
         "Greek",
-        "Spartan",
-        "Athenian",
+        "Sparta",
+        "Athens",
         "Corinthian War"
       ],
       "type": "political"
@@ -2906,7 +2906,7 @@
       "tags": [
         "Thebes",
         "Greek",
-        "Spartan",
+        "Sparta",
         "Conquest",
         "Theban–Spartan War"
       ],
@@ -2964,7 +2964,7 @@
       "tags": [
         "Greek",
         "Alliance",
-        "Athenian"
+        "Athens"
       ],
       "type": "political"
     },
@@ -3002,7 +3002,7 @@
         "Thebes",
         "Battle",
         "Tactics",
-        "Spartan",
+        "Sparta",
         "Theban–Spartan War"
       ],
       "type": "military"
@@ -3021,7 +3021,7 @@
         "Thebes",
         "Greek",
         "Freedom",
-        "Spartan",
+        "Sparta",
         "Theban–Spartan War",
         "Fortification"
       ],
@@ -3058,7 +3058,7 @@
         "Philosophy",
         "Education",
         "Greek",
-        "Athenian",
+        "Athens",
         "Plato"
       ],
       "type": "cultural"
@@ -3078,8 +3078,8 @@
         "Death",
         "Battle",
         "Greek",
-        "Athenian",
-        "Spartan",
+        "Athens",
+        "Sparta",
         "Theban–Spartan War"
       ],
       "type": "military"
@@ -3124,6 +3124,23 @@
     },
     {
       "date": "01.01.0356",
+      "description": "Herostratus, a resident of Ephesus, burns down a temple to gain fame. According to legend, Herostratus burned the temple on the same day that Alexander the Great was born, so Artemis was busy. The temple was rebuilt some time later.",
+      "description_ru": "Житель Эфеса Герострат сжигает храм, чтобы прославиться. По легенде, Герострат сжег храм в тот же день, когда родился Александр Македонский, поэтому Артемида была занята. Через некоторое время храм восстанавливают.",
+      "era": "BC",
+      "latitude": 37.94977292,
+      "longitude": 27.36371398,
+      "name": "Herostratus burns the temple of Artemis",
+      "name_ru": "Герострат сжигает храм Артемиды",
+      "source": "https://en.wikipedia.org/wiki/Temple_of_Artemis",
+      "tags": [
+        "Temple",
+        "Destruction",
+        "Legend"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0356",
       "description": "Philip II develops Macedonian phalanx with 6-meter sarissa pikes; lighter armor allows greater mobility while extended reach makes traditional hoplites obsolete - revolution in warfare",
       "description_ru": "Филипп II разрабатывает македонскую фалангу с 6-метровыми сариссами; более легкие доспехи позволяют большую мобильность, в то время как увеличенная дальность делает традиционных гоплитов устаревшими - революция в войне",
       "era": "BC",
@@ -3161,23 +3178,6 @@
       "type": "historic"
     },
     {
-      "date": "01.01.0356",
-      "description": "Herostratus, a resident of Ephesus, burns down a temple to gain fame. According to legend, Herostratus burned the temple on the same day that Alexander the Great was born, so Artemis was busy. The temple was rebuilt some time later.",
-      "description_ru": "Житель Эфеса Герострат сжигает храм, чтобы прославиться. По легенде, Герострат сжег храм в тот же день, когда родился Александр Македонский, поэтому Артемида была занята. Через некоторое время храм восстанавливают.",
-      "era": "BC",
-      "latitude": 37.94977292,
-      "longitude": 27.36371398,
-      "name": "Herostratus burns the temple of Artemis",
-      "name_ru": "Герострат сжигает храм Артемиды",
-      "source": "https://en.wikipedia.org/wiki/Temple_of_Artemis",
-      "tags": [
-        "Temple",
-        "Destruction",
-        "Legend"
-      ],
-      "type": "historic"
-    },
-    {
       "date": "01.01.0352",
       "description": "Philip II defeats Phocian Sacred Band at Battle of Crocus Field; 6,000 prisoners drowned as temple-robbers, demonstrating Philip's use of religious propaganda to legitimize conquests",
       "description_ru": "Филипп II ввязывается в Третью священную войну в Греции и побеждает Священный отряд Фокиды в битве на Крокусовом поле; таким образом Филипп заявляет свои права на Фессалию, Фокиду и место в греческой политике",
@@ -3194,6 +3194,24 @@
         "Macedonian"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0344",
+      "description": "Young Alexander tames wild horse Bucephalus that no one else could ride, after noticing the horse feared its own shadow; Philip reportedly says 'My son, seek out a kingdom worthy of yourself, for Macedonia is too small for you'",
+      "description_ru": "Юный Александр укрощает дикого коня Буцефала, которого никто не мог оседлать, заметив, что конь боится своей тени; по преданию, Филипп сказал: 'Сын мой, ищи царство, достойное тебя, ибо Македония для тебя слишком мала'",
+      "era": "BC",
+      "latitude": 40.5167,
+      "longitude": 22.5167,
+      "name": "Alexander Tames Bucephalus",
+      "name_ru": "Александр укрощает Буцефала",
+      "source": "https://en.wikipedia.org/wiki/Bucephalus",
+      "tags": [
+        "Greek",
+        "Legend",
+        "Macedonian",
+        "Alexander the Great"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0343",
@@ -3216,6 +3234,26 @@
     },
     {
       "date": "01.01.0340",
+      "description": "Philip's attempts to capture the strategically important cities of Perinthus and Byzantium on the Hellespont (Dardanelles) met with strong resistance, supported by Athens and Persia. Although these sieges were unsuccessful, they led to open war between Athens and Macedonia.",
+      "description_ru": "Попытки Филиппа захватить стратегически важные города на Геллеспонте (Дарданеллы) — Перинф и Византий — встретили сильное сопротивление, поддержанное Афинами и Персией. Хотя эти осады были неудачными, они привели к открытой войне между Афинами и Македонией. ",
+      "era": "BC",
+      "latitude": 41.0082,
+      "longitude": 28.9784,
+      "name": "Macedonia Sieges Byzantium",
+      "name_ru": "Осада Византия Македонией",
+      "tags": [
+        "Greek",
+        "Byzantine",
+        "Persian",
+        "Siege",
+        "Macedonian",
+        "Athens",
+        "Philip II"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0340",
       "description": "16-year-old Alexander left as regent of Macedonia while Philip campaigns; defeats Maedi rebellion and founds first city Alexandropolis, demonstrating precocious military and administrative ability",
       "description_ru": "16-летний Александр оставлен регентом Македонии, пока Филипп ведет кампании; подавляет восстание медов и основывает первый город Александрополь, демонстрируя не по годам развитые военные и административные способности",
       "era": "BC",
@@ -3232,26 +3270,6 @@
       "type": "political"
     },
     {
-      "date": "01.01.0340",
-      "description": "Philip's attempts to capture the strategically important cities of Perinthus and Byzantium on the Hellespont (Dardanelles) met with strong resistance, supported by Athens and Persia. Although these sieges were unsuccessful, they led to open war between Athens and Macedonia.",
-      "description_ru": "Попытки Филиппа захватить стратегически важные города на Геллеспонте (Дарданеллы) — Перинф и Византий — встретили сильное сопротивление, поддержанное Афинами и Персией. Хотя эти осады были неудачными, они привели к открытой войне между Афинами и Македонией. ",
-      "era": "BC",
-      "latitude": 41.0082,
-      "longitude": 28.9784,
-      "name": "Macedonia Sieges Byzantium",
-      "name_ru": "Осада Византия Македонией",
-      "tags": [
-        "Greek",
-        "Byzantine",
-        "Persian",
-        "Siege",
-        "Macedonian",
-        "Athenian",
-        "Philip II"
-      ],
-      "type": "military"
-    },
-    {
       "date": "02.08.0338",
       "description": "Philip II defeats combined Athenian-Theban army; 18-year-old Alexander leads decisive cavalry charge destroying Sacred Band of Thebes - Greek independence ends",
       "description_ru": "Филипп II громит объединенную афино-фиванскую армию, представляющую независимые греческие города; 18-летний Александр возглавляет решающую кавалерийскую атаку, уничтожающую Священный отряд Фив. После этого сражения Македония становится гегемоном Греции",
@@ -3266,7 +3284,7 @@
         "Thebes",
         "Battle",
         "Macedonian",
-        "Athenian",
+        "Athens",
         "Alexander the Great",
         "Philip II"
       ],
@@ -3347,48 +3365,10 @@
         "Philosophy",
         "Science",
         "Education",
-        "Athenian",
+        "Athens",
         "Aristotle"
       ],
       "type": "cultural"
-    },
-    {
-      "date": "01.01.0344",
-      "description": "Young Alexander tames wild horse Bucephalus that no one else could ride, after noticing the horse feared its own shadow; Philip reportedly says 'My son, seek out a kingdom worthy of yourself, for Macedonia is too small for you'",
-      "description_ru": "Юный Александр укрощает дикого коня Буцефала, которого никто не мог оседлать, заметив, что конь боится своей тени; по преданию, Филипп сказал: 'Сын мой, ищи царство, достойное тебя, ибо Македония для тебя слишком мала'",
-      "era": "BC",
-      "latitude": 40.5167,
-      "longitude": 22.5167,
-      "name": "Alexander Tames Bucephalus",
-      "name_ru": "Александр укрощает Буцефала",
-      "source": "https://en.wikipedia.org/wiki/Bucephalus",
-      "tags": [
-        "Greek",
-        "Legend",
-        "Macedonian",
-        "Alexander the Great"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0331",
-      "description": "Alexander founds Alexandria in Egypt at strategic location on Mediterranean coast; city becomes greatest center of learning and commerce in ancient world, housing famous Library and Lighthouse",
-      "description_ru": "Александр основывает Александрию в Египте в стратегическом месте на побережье Средиземного моря; город станет величайшим центром учености и торговли древнего мира с знаменитой Библиотекой и Маяком",
-      "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
-      "name": "Foundation of Alexandria",
-      "name_ru": "Основание Александрии",
-      "source": "https://en.wikipedia.org/wiki/Alexandria",
-      "tags": [
-        "Greek",
-        "City",
-        "Foundation",
-        "Macedonian",
-        "Egypt",
-        "Alexander the Great"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0331",
@@ -3411,6 +3391,25 @@
       "type": "religious"
     },
     {
+      "date": "01.01.0331",
+      "description": "Alexander founds Alexandria in Egypt at strategic location on Mediterranean coast; city becomes greatest center of learning and commerce in ancient world, housing famous Library and Lighthouse",
+      "description_ru": "Александр основывает Александрию в Египте в стратегическом месте на побережье Средиземного моря; город станет величайшим центром учености и торговли древнего мира с знаменитой Библиотекой и Маяком",
+      "era": "BC",
+      "latitude": 31.2001,
+      "longitude": 29.9187,
+      "name": "Foundation of Alexandria",
+      "name_ru": "Основание Александрии",
+      "source": "https://en.wikipedia.org/wiki/Alexandria",
+      "tags": [
+        "Greek",
+        "City",
+        "Macedonian",
+        "Egypt",
+        "Alexander the Great"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0330",
       "description": "Alexander executes general Philotas for alleged conspiracy, then sends assassins to kill Philotas's father Parmenion, his most experienced commander; first major purge of Macedonian nobility",
       "description_ru": "Александр казнит полководца Филоту за предполагаемый заговор, затем отправляет убийц к отцу Филоты Пармениону, его самому опытному командиру; первая крупная чистка македонской знати",
@@ -3418,12 +3417,11 @@
       "latitude": 36.7,
       "longitude": 67.1,
       "name": "Execution of Philotas and Parmenion",
-      "name_ru": "Казнь Филоты и Пармениона",
+      "name_ru": "Александр казнит полководцев",
       "source": "https://en.wikipedia.org/wiki/Philotas",
       "tags": [
         "Greek",
         "Macedonian",
-        "Execution",
         "Conspiracy",
         "Alexander the Great"
       ],
@@ -3432,19 +3430,20 @@
     {
       "date": "01.01.0329",
       "description": "Alexander pursues Bessus into Bactria and Sogdiana (modern Afghanistan/Central Asia); captures and executes Darius's murderer, beginning three years of difficult guerrilla warfare in mountains",
-      "description_ru": "Александр преследует Бесса в Бактрию и Согдиану (современный Афганистан/Центральная Азия); захватывает и казнит убийцу Дария, начиная три года тяжелой партизанской войны в горах",
+      "description_ru": "Александр преследует последнего царя Ахеменидов Бесса в Бактрии и Согдиане (современный Афганистан/Центральная Азия); захватывает и казнит убийцу Дария. Тяжелая партизанская война в горах длится три года",
       "era": "BC",
       "latitude": 36.7,
       "longitude": 66.9,
       "name": "Bactrian Campaign Begins",
-      "name_ru": "Начало бактрийской кампании",
+      "name_ru": "Поход Александра в Бактрию",
       "source": "https://en.wikipedia.org/wiki/Bactria",
       "tags": [
         "Greek",
         "Macedonian",
-        "Campaign",
         "Bactria",
-        "Alexander the Great"
+        "Alexander the Great",
+        "Expedition",
+        "Achaemenid"
       ],
       "type": "military"
     },
@@ -3462,7 +3461,6 @@
         "Greek",
         "Macedonian",
         "Murder",
-        "Tragedy",
         "Alexander the Great"
       ],
       "type": "political"
@@ -3470,19 +3468,20 @@
     {
       "date": "01.01.0327",
       "description": "Alexander attempts to introduce proskynesis (Persian ritual prostration) at court; Greek companions refuse to bow as to a god, led by Callisthenes who is later arrested for conspiracy",
-      "description_ru": "Александр пытается ввести проскинезис (персидский ритуал простирания) при дворе; греческие соратники отказываются кланяться как богу, во главе с Каллисфеном, который позже арестован за заговор",
+      "description_ru": "Александр пытается ввести при дворе проскинезис (персидский ритуал поклонения) при дворе; греческие соратники отказываются кланяться ему как богу",
       "era": "BC",
       "latitude": 36.7,
       "longitude": 66.9,
       "name": "Proskynesis Controversy",
-      "name_ru": "Споры о проскинезисе",
+      "name_ru": "Греки не принимают проскинезис",
       "source": "https://en.wikipedia.org/wiki/Proskynesis",
       "tags": [
         "Greek",
         "Macedonian",
         "Persian",
-        "Cultural",
-        "Alexander the Great"
+        "Alexander the Great",
+        "Cultural Continuity",
+        "Blasphemy"
       ],
       "type": "political"
     },
@@ -3494,7 +3493,7 @@
       "latitude": 39.1,
       "longitude": 67.3,
       "name": "Marriage to Roxana",
-      "name_ru": "Свадьба с Роксаной",
+      "name_ru": "Женитьба Александра на Роксане",
       "source": "https://en.wikipedia.org/wiki/Roxana",
       "tags": [
         "Greek",
@@ -3506,21 +3505,41 @@
       "type": "political"
     },
     {
-      "date": "01.05.0326",
-      "description": "Alexander defeats Indian King Porus at Battle of Hydaspes despite facing war elephants for first time; impressed by Porus's valor, Alexander restores his kingdom and makes him ally",
-      "description_ru": "Александр побеждает индийского царя Пора в битве при Гидаспе, несмотря на то что впервые встречается с боевыми слонами; впечатленный доблестью Пора, Александр возвращает ему царство и делает союзником",
+      "date": "01.11.0326",
+      "description": "Alexander wounded nearly fatally by arrow during assault on Mallian citadel in India; arrow pierces his lung, and he is carried out apparently dead, causing panic among his troops",
+      "description_ru": "Александр почти смертельно ранен стрелой во время штурма маллийской цитадели в Индии; стрела пронзает его легкое, и его выносят из боя без сознания, что вводит войско в панику",
       "era": "BC",
-      "latitude": 32.93,
-      "longitude": 73.82,
-      "name": "Battle of Hydaspes",
-      "name_ru": "Битва при Гидаспе",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_the_Hydaspes",
+      "latitude": 30.2,
+      "longitude": 71.4,
+      "name": "Alexander Wounded at Multan",
+      "name_ru": "Ранение Александра у Мултана",
+      "source": "https://en.wikipedia.org/wiki/Siege_of_the_Malli_citadel",
       "tags": [
         "Greek",
         "Macedonian",
-        "Battle",
-        "India",
-        "Alexander the Great"
+        "Alexander the Great",
+        "Indian",
+        "Expedition"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.07.0326",
+      "description": "Alexander's army mutinies at Hyphasis River, refusing to march further into India; exhausted troops weep and beg to return home after 8 years of continuous campaigning - Alexander reluctantly agrees",
+      "description_ru": "Армия Александра бунтует у реки Гифасис, отказываясь идти дальше в Индию; измученные войска плачут и умоляют вернуться домой после 8 лет непрерывных походов - Александр неохотно соглашается",
+      "era": "BC",
+      "latitude": 31.5,
+      "longitude": 75.9,
+      "name": "Mutiny at Hyphasis River",
+      "name_ru": "Мятеж армии Александра",
+      "source": "https://en.wikipedia.org/wiki/Hyphasis",
+      "tags": [
+        "Greek",
+        "Macedonian",
+        "Mutiny",
+        "Alexander the Great",
+        "Indian",
+        "Expedition"
       ],
       "type": "military"
     },
@@ -3538,46 +3557,28 @@
         "Greek",
         "Macedonian",
         "Death",
-        "India",
-        "Alexander the Great"
+        "Alexander the Great",
+        "Indian",
+        "City"
       ],
       "type": "historic"
     },
     {
-      "date": "01.07.0326",
-      "description": "Alexander's army mutinies at Hyphasis River, refusing to march further into India; exhausted troops weep and beg to return home after 8 years of continuous campaigning - Alexander reluctantly agrees",
-      "description_ru": "Армия Александра бунтует у реки Гифасис, отказываясь идти дальше в Индию; измученные войска плачут и умоляют вернуться домой после 8 лет непрерывных походов - Александр неохотно соглашается",
+      "date": "01.05.0326",
+      "description": "Alexander defeats Indian King Porus at Battle of Hydaspes despite facing war elephants for first time; impressed by Porus's valor, Alexander restores his kingdom and makes him ally",
+      "description_ru": "Александр побеждает индийского царя Пора в битве при Гидаспе, несмотря на то что впервые встречается с боевыми слонами; впечатленный доблестью Пора, Александр возвращает ему царство и делает союзником",
       "era": "BC",
-      "latitude": 31.5,
-      "longitude": 75.9,
-      "name": "Mutiny at Hyphasis River",
-      "name_ru": "Мятеж у реки Гифасис",
-      "source": "https://en.wikipedia.org/wiki/Hyphasis",
+      "latitude": 32.93,
+      "longitude": 73.82,
+      "name": "Battle of Hydaspes",
+      "name_ru": "Битва при Гидаспе",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_the_Hydaspes",
       "tags": [
         "Greek",
         "Macedonian",
-        "Mutiny",
-        "India",
-        "Alexander the Great"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.11.0326",
-      "description": "Alexander wounded nearly fatally by arrow during assault on Mallian citadel in India; arrow pierces his lung, and he is carried out apparently dead, causing panic among his troops",
-      "description_ru": "Александр почти смертельно ранен стрелой во время штурма маллийской цитадели в Индии; стрела пронзает его легкое, и его выносят, по-видимому мертвым, вызывая панику среди войск",
-      "era": "BC",
-      "latitude": 30.2,
-      "longitude": 71.4,
-      "name": "Alexander Wounded at Multan",
-      "name_ru": "Ранение Александра у Мултана",
-      "source": "https://en.wikipedia.org/wiki/Siege_of_the_Malli_citadel",
-      "tags": [
-        "Greek",
-        "Macedonian",
-        "Wound",
-        "India",
-        "Alexander the Great"
+        "Battle",
+        "Alexander the Great",
+        "Indian"
       ],
       "type": "military"
     },
@@ -3586,61 +3587,24 @@
       "description": "Alexander leads army through Gedrosian Desert (Makran) in catastrophic march; thousands die from heat, thirst, and flash floods - some say more troops died here than in all his battles combined",
       "description_ru": "Александр ведет армию через пустыню Гедросии (Макран) в катастрофическом марше; тысячи гибнут от жары, жажды и внезапных наводнений - некоторые говорят, что здесь погибло больше воинов, чем во всех его сражениях вместе взятых",
       "era": "BC",
-      "latitude": 26.0,
-      "longitude": 63.0,
+      "latitude": 26,
+      "longitude": 63,
       "name": "Gedrosian Desert March",
-      "name_ru": "Марш через пустыню Гедросию",
+      "name_ru": "Марш Александра через пустыню",
       "source": "https://en.wikipedia.org/wiki/Gedrosia",
       "tags": [
         "Greek",
         "Macedonian",
-        "March",
         "Disaster",
-        "Alexander the Great"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0324",
-      "description": "Mass wedding at Susa where Alexander and 80 officers marry Persian noblewomen to unite Greek and Persian aristocracy; Alexander takes Darius's daughter Stateira II as second wife",
-      "description_ru": "Массовая свадьба в Сузах, где Александр и 80 военачальников женятся на персидских знатных женщинах для объединения греческой и персидской аристократии; Александр берет дочь Дария Статиру II как вторую жену",
-      "era": "BC",
-      "latitude": 32.1877,
-      "longitude": 48.2526,
-      "name": "Mass Weddings at Susa",
-      "name_ru": "Массовые свадьбы в Сузах",
-      "source": "https://en.wikipedia.org/wiki/Susa_weddings",
-      "tags": [
-        "Greek",
-        "Macedonian",
-        "Persian",
-        "Marriage",
-        "Alexander the Great"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.07.0324",
-      "description": "Macedonian veterans mutiny at Opis against integration of Persian soldiers into army; Alexander dismisses entire army, recruits Persians instead - veterans beg forgiveness and reconciliation follows",
-      "description_ru": "Македонские ветераны бунтуют в Описе против включения персидских солдат в армию; Александр распускает всю армию, вербует вместо них персов - ветераны молят о прощении, следует примирение",
-      "era": "BC",
-      "latitude": 33.15,
-      "longitude": 44.35,
-      "name": "Mutiny at Opis",
-      "name_ru": "Мятеж в Описе",
-      "source": "https://en.wikipedia.org/wiki/Mutiny_at_Opis",
-      "tags": [
-        "Greek",
-        "Macedonian",
-        "Mutiny",
-        "Alexander the Great"
+        "Alexander the Great",
+        "Expedition"
       ],
       "type": "military"
     },
     {
       "date": "01.10.0324",
       "description": "Hephaestion, Alexander's closest friend and second-in-command, dies of fever at Ecbatana; Alexander's grief is extreme - he crucifies the physician, orders extravagant funeral, and himself dies 8 months later",
-      "description_ru": "Гефестион, ближайший друг Александра и его заместитель, умирает от лихорадки в Экбатане; горе Александра безмерно - он распинает врача, приказывает устроить роскошные похороны, а сам умирает 8 месяцев спустя",
+      "description_ru": "Гефестион, первая рука Александра, умирает от лихорадки в Экбатане; горе Александра безмерно - он распинает врача, приказывает устроить роскошные похороны своему другу",
       "era": "BC",
       "latitude": 34.7989,
       "longitude": 48.5146,
@@ -3650,15 +3614,53 @@
       "tags": [
         "Greek",
         "Macedonian",
-        "Death",
-        "Alexander the Great"
+        "Alexander the Great",
+        "Disease"
       ],
       "type": "historic"
     },
     {
+      "date": "01.07.0324",
+      "description": "Macedonian veterans mutiny at Opis against integration of Persian soldiers into army; Alexander dismisses entire army, recruits Persians instead - veterans beg forgiveness and reconciliation follows",
+      "description_ru": "Македонские ветераны бунтуют в Описе против \"ориентализации\" Александра и включения персов в армию; Александр распускает войско и начинает назначать персидских командиров на высшие посты. Македонцы понимают, что мятеж не удался, и идут к Александру с покаянием. В итоге Александр устраивает масштабный пир с македонянами и персами.",
+      "era": "BC",
+      "latitude": 33.15,
+      "longitude": 44.35,
+      "name": "Mutiny at Opis",
+      "name_ru": "Мятеж войск Александра в Описе",
+      "source": "https://www.worldhistory.org/article/1630/the-hyphasis-mutiny/#:~:text=The%20Opis%20Mutiny&text=At%20Opis%20in%20324%20BCE,between%20the%20Macedonians%20and%20Asians.",
+      "tags": [
+        "Greek",
+        "Macedonian",
+        "Mutiny",
+        "Alexander the Great"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0324",
+      "description": "Mass wedding at Susa where Alexander and 80 officers marry Persian noblewomen to unite Greek and Persian aristocracy; Alexander takes Darius's daughter Stateira II as second wife",
+      "description_ru": "Массовая свадьба в Сузах, где Александр и его диадохи женятся на знатных женщинах Персии (дочерях императоров и сатрапов) для объединения греческой и персидской аристократии; Александр берет дочь Дария Статиру II как вторую жену",
+      "era": "BC",
+      "latitude": 32.1877,
+      "longitude": 48.2526,
+      "name": "Greek Weddings at Susa",
+      "name_ru": "Греческие свадьбы в Сузах",
+      "source": "https://en.wikipedia.org/wiki/Susa_weddings",
+      "tags": [
+        "Greek",
+        "Macedonian",
+        "Persian",
+        "Marriage",
+        "Alexander the Great",
+        "Diplomacy"
+      ],
+      "type": "political"
+    },
+    {
       "date": "10.06.0323",
       "description": "Alexander the Great dies in Babylon at age 32 after 10-day fever, possibly from typhoid, poison, or excessive drinking; when asked who should succeed him, reportedly replies 'the strongest'",
-      "description_ru": "Александр Великий умирает в Вавилоне в возрасте 32 лет после 10-дневной лихорадки, возможно от тифа, отравления или чрезмерного пьянства; на вопрос о преемнике, по преданию, отвечает: 'сильнейшему'",
+      "description_ru": "Александр Великий умирает в Вавилоне в возрасте 32 лет после 10-дневной лихорадки, возможно от тифа, отравления ядом или алкоголем; на вопрос, кто должен стать преемником, по преданию, отвечает: 'сильнейший'",
       "era": "BC",
       "latitude": 32.543,
       "longitude": 44.421,
@@ -3670,9 +3672,30 @@
         "Macedonian",
         "Death",
         "Alexander the Great",
-        "End of Era"
+        "End",
+        "Disease"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0322",
+      "description": "Aristotle flees Athens after Alexander's death due to anti-Macedonian sentiment; reportedly says he will not let Athenians 'sin twice against philosophy' (referring to Socrates) - dies in Chalcis same year",
+      "description_ru": "Аристотель бежит из Афин после смерти Александра из-за антимакедонских настроений; по преданию говорит, что не позволит афинянам 'дважды согрешить против философии' (имея в виду Сократа). В тот же год Аристотель умирает в Халкиде в возрасте 61 или 62",
+      "era": "BC",
+      "latitude": 38.4625,
+      "longitude": 23.6047,
+      "name": "Death of Aristotle",
+      "name_ru": "Смерть Аристотеля",
+      "source": "https://en.wikipedia.org/wiki/Aristotle",
+      "tags": [
+        "Greek",
+        "Philosophy",
+        "Death",
+        "Aristotle",
+        "Athens",
+        "Macedonian"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0322",
@@ -3687,29 +3710,11 @@
       "tags": [
         "Greek",
         "Macedonian",
-        "War",
+        "Alexander the Great",
         "Succession",
-        "Alexander the Great"
+        "War"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0322",
-      "description": "Aristotle flees Athens after Alexander's death due to anti-Macedonian sentiment; reportedly says he will not let Athenians 'sin twice against philosophy' (referring to Socrates) - dies in Chalcis same year",
-      "description_ru": "Аристотель бежит из Афин после смерти Александра из-за антимакедонских настроений; по преданию говорит, что не позволит афинянам 'дважды согрешить против философии' (имея в виду Сократа) - умирает в Халкиде в том же году",
-      "era": "BC",
-      "latitude": 38.4625,
-      "longitude": 23.6047,
-      "name": "Death of Aristotle",
-      "name_ru": "Смерть Аристотеля",
-      "source": "https://en.wikipedia.org/wiki/Aristotle",
-      "tags": [
-        "Greek",
-        "Philosophy",
-        "Death",
-        "Aristotle"
-      ],
-      "type": "cultural"
     },
     {
       "date": "01.01.0321",
@@ -3719,14 +3724,15 @@
       "latitude": 31.2001,
       "longitude": 29.9187,
       "name": "Alexander's Body Taken to Egypt",
-      "name_ru": "Тело Александра доставлено в Египет",
+      "name_ru": "Птолемей похищает тело Александра",
       "source": "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great",
       "tags": [
         "Greek",
         "Macedonian",
         "Funeral",
         "Egypt",
-        "Alexander the Great"
+        "Alexander the Great",
+        "Ptolemaic"
       ],
       "type": "historic"
     },
@@ -3736,16 +3742,16 @@
       "description_ru": "Роксана и Александр IV (посмертный сын Александра) убиты Кассандром, завершая династию Аргеадов; все кровные родственники Александра систематически уничтожены его бывшими полководцами",
       "era": "BC",
       "latitude": 40.8,
-      "longitude": 22.0,
+      "longitude": 22,
       "name": "Murder of Alexander's Family",
       "name_ru": "Убийство семьи Александра",
       "source": "https://en.wikipedia.org/wiki/Alexander_IV_of_Macedon",
       "tags": [
         "Greek",
         "Macedonian",
-        "Murder",
-        "Dynasty End",
-        "Alexander the Great"
+        "Alexander the Great",
+        "Assassination",
+        "Death"
       ],
       "type": "political"
     }
