@@ -879,11 +879,15 @@ export default {
       }
       
       try {
-        // Center the map on the specific event with a good zoom level
-        this.map.setView([event.latitude, event.longitude], 8, {
+        // Center the map on the specific event with high zoom level (14)
+        // to prevent marker clustering and show individual markers
+        this.map.setView([event.latitude, event.longitude], 14, {
           animate: true,
           duration: 1.0
         })
+        
+        // Add highlight marker (same as "Highlight on map" feature)
+        this.highlightMarker(event)
       } catch (error) {
         console.warn('Error centering on event:', error)
       }
