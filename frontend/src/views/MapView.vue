@@ -104,6 +104,7 @@ export default {
     // Map filter state
     const mapFilterEnabled = ref(false)
     const mapBounds = ref(null)
+    let boundsDebounceTimer = null // Debounce timer to prevent oscillation loop
     
     // Narrative flow state
     const narrativeFlowEnabled = ref(false)
@@ -293,7 +294,17 @@ export default {
 
     const handleMapBoundsChanged = (bounds) => {
       if (mapFilterEnabled.value) {
-        mapBounds.value = bounds
+        // Debounce bounds updates to prevent oscillation loop
+        // When event grid height changes, map resizes, which changes bounds,
+        // which changes displayed events, which changes grid height again...
+        // Debouncing breaks this feedback loop by waiting for layout to settle
+        if (boundsDebounceTimer) {
+          clearTimeout(boundsDebounceTimer)
+        }
+        boundsDebounceTimer = setTimeout(() => {
+          mapBounds.value = bounds
+          boundsDebounceTimer = null
+        }, 200) // 200ms delay allows layout to stabilize
       }
     }
 
