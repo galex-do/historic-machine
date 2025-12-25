@@ -405,6 +405,23 @@ export default {
     if (this.handleLocaleChange) {
       window.removeEventListener('localeChanged', this.handleLocaleChange)
     }
+    
+    // Clean up marker cluster group
+    if (this.marker_cluster_group && this.map) {
+      this.marker_cluster_group.clearLayers()
+      this.map.removeLayer(this.marker_cluster_group)
+      this.marker_cluster_group = null
+    }
+    
+    // Clean up map instance
+    if (this.map) {
+      this.map.remove()
+      this.map = null
+    }
+    
+    // Clear markers arrays
+    this.markers = []
+    this.marker_registry.clear()
   },
   methods: {
     initialize_map() {
@@ -674,9 +691,15 @@ export default {
     },
     
     add_event_markers() {      
-      // Clear existing markers first
-      if (this.marker_cluster_group && this.map && this.map.hasLayer(this.marker_cluster_group)) {
-        this.map.removeLayer(this.marker_cluster_group)
+      // Clear existing markers first - more robust cleanup
+      if (this.marker_cluster_group) {
+        // Clear all layers from the cluster group
+        this.marker_cluster_group.clearLayers()
+        // Remove from map if present
+        if (this.map && this.map.hasLayer(this.marker_cluster_group)) {
+          this.map.removeLayer(this.marker_cluster_group)
+        }
+        this.marker_cluster_group = null
       }
       this.markers = []
       this.marker_registry.clear() // Clear marker registry
@@ -687,6 +710,15 @@ export default {
         if (!this.map || !this.map._loaded) {
           console.warn('Map not ready for marker addition')
           return
+        }
+        
+        // Double-check and clean up any stale marker cluster group from a race condition
+        if (this.marker_cluster_group) {
+          this.marker_cluster_group.clearLayers()
+          if (this.map.hasLayer(this.marker_cluster_group)) {
+            this.map.removeLayer(this.marker_cluster_group)
+          }
+          this.marker_cluster_group = null
         }
         
         try {
