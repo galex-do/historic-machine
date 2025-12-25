@@ -187,17 +187,17 @@
       "description": "Assyrian King Shalmaneser III campaigns against Mannai and Median territories, extracting tribute and establishing Assyrian influence over northwestern Iran",
       "description_ru": "Ассирийский царь Салманасар III проводит кампании против территорий Манны и Мидии, взимая дань и устанавливая ассирийское влияние над северо-западным Ираном",
       "era": "BC",
-      "latitude": 37,
-      "longitude": 45.5,
+      "latitude": 36.6575,
+      "longitude": 46.2161,
       "name": "Assyrian Campaigns in Iran",
       "name_ru": "Походы Ассирии в Иран",
       "source": "https://en.wikipedia.org/wiki/Shalmaneser_III",
       "tags": [
-        "Assyrian",
-        "Mannai",
         "Medes",
-        "Tribute",
-        "Expansion"
+        "Expansion",
+        "Mannai",
+        "Assyrian",
+        "Tribute"
       ],
       "type": "military"
     },
@@ -206,16 +206,16 @@
       "description": "Mannai King Iranzu establishes diplomatic relations with Assyria, paying tribute while maintaining internal autonomy and developing distinctive Mannean culture",
       "description_ru": "Царь Манны Иранзу устанавливает дипломатические отношения с Ассирией, платя дань, но сохраняя внутреннюю автономию и развивая отличительную маннейскую культуру",
       "era": "BC",
-      "latitude": 37.5,
-      "longitude": 45.3,
+      "latitude": 36.6575,
+      "longitude": 46.2161,
       "name": "Mannai-Assyria Diplomatic Relations",
       "name_ru": "Дипломатия Манны и Ассирии",
       "source": "https://en.wikipedia.org/wiki/Mannaea",
       "tags": [
         "Mannai",
-        "Assyrian",
-        "Diplomacy",
         "Tribute",
+        "Diplomacy",
+        "Assyrian",
         "Treaty"
       ],
       "type": "political"
@@ -261,15 +261,15 @@
       "description": "Mannai develops as important intermediary in trade between Mesopotamia and Iranian plateau, controlling key mountain passes and trade routes",
       "description_ru": "Манна развивается как важный посредник в торговле между Месопотамией и Иранским нагорьем, контролируя ключевые горные перевалы и торговые пути",
       "era": "BC",
-      "latitude": 37.5,
-      "longitude": 45.3,
+      "latitude": 36.6575,
+      "longitude": 46.2161,
       "name": "Mannai Trade Networks",
       "name_ru": "Торговые сети Манны",
       "source": "https://en.wikipedia.org/wiki/Mannaea",
       "tags": [
+        "Economic",
         "Mannai",
-        "Trade",
-        "Economic"
+        "Trade"
       ],
       "type": "historic"
     },
@@ -296,15 +296,15 @@
       "description": "Mannai King Aza allies with Urartu against Assyrian pressure, joining anti-Assyrian coalition in attempt to resist Neo-Assyrian expansion",
       "description_ru": "Царь Манны Аза заключает союз с Урарту против ассирийской агрессии, присоединяясь к антиассирийской коалиции",
       "era": "BC",
-      "latitude": 37.5,
-      "longitude": 45.3,
+      "latitude": 36.6575,
+      "longitude": 46.2161,
       "name": "Mannai-Urartu Alliance",
       "name_ru": "Союз Манны и Урарту",
       "source": "https://en.wikipedia.org/wiki/Mannaea",
       "tags": [
         "Mannai",
-        "Urartu",
         "Alliance",
+        "Urartu",
         "Diplomacy"
       ],
       "type": "political"
@@ -314,17 +314,17 @@
       "description": "Assyrian King Sargon II invades Mannai, defeating King Aza and installing pro-Assyrian ruler, temporarily breaking Mannai-Urartu alliance",
       "description_ru": "Ассирийский царь Саргон II вторгается в Манну, разбивает царя Азу и ставит проассирийского правителя, временно разрывая союз Манны и Урарту",
       "era": "BC",
-      "latitude": 37.5,
-      "longitude": 45.3,
+      "latitude": 36.6575,
+      "longitude": 46.2161,
       "name": "Assyrian Conquest of Mannai",
       "name_ru": "Ассирия завоевывает Манну",
       "source": "https://en.wikipedia.org/wiki/Sargon_II",
       "tags": [
-        "Mannai",
-        "Assyrian",
         "Conquest",
-        "War",
-        "Sargon II"
+        "Assyrian",
+        "Mannai",
+        "Sargon II",
+        "War"
       ],
       "type": "military"
     },
@@ -550,16 +550,16 @@
       "description": "Median forces capture and annex Mannai kingdom, incorporating its territories into Median Empire and ending Mannai independence",
       "description_ru": "Мидийские силы захватывают и аннексируют царство Манна, включая его территории в Мидийскую империю и завершая независимость Манны",
       "era": "BC",
-      "latitude": 37.5,
-      "longitude": 45.3,
+      "latitude": 36.6575,
+      "longitude": 46.2161,
       "name": "Median Conquest of Mannai",
       "name_ru": "Мидия завоевывает Манну",
       "source": "https://en.wikipedia.org/wiki/Mannaea",
       "tags": [
-        "Medes",
+        "Annexation",
         "Mannai",
-        "Conquest",
-        "Annexation"
+        "Medes",
+        "Conquest"
       ],
       "type": "military"
     },

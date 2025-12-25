@@ -12,10 +12,10 @@
       "name_ru": "Раннее минойское заселение",
       "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
       "tags": [
+        "Minoan",
         "Settlement",
         "Agriculture",
-        "Bronze Age",
-        "Minoan"
+        "Bronze Age"
       ],
       "type": "historic"
     },
@@ -30,12 +30,12 @@
       "name_ru": "Минойское мореходство",
       "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
       "tags": [
+        "Minoan",
+        "Naval",
         "Trade",
         "Technology",
         "Bronze Age",
-        "Maritime",
-        "Minoan",
-        "Naval"
+        "Maritime"
       ],
       "type": "historic"
     },
@@ -50,11 +50,11 @@
       "name_ru": "Возведение толосных гробниц на Крите",
       "source": "https://en.wikipedia.org/wiki/Tholos",
       "tags": [
-        "Architecture",
-        "Bronze Age",
-        "Burial",
         "Minoan",
-        "Tomb"
+        "Architecture",
+        "Tomb",
+        "Bronze Age",
+        "Burial"
       ],
       "type": "religious"
     },
@@ -69,12 +69,12 @@
       "name_ru": "Начало первого дворцового периода",
       "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
       "tags": [
-        "Architecture",
-        "City",
-        "Civilization",
         "Minoan",
         "Palace",
-        "Building"
+        "Architecture",
+        "Building",
+        "City",
+        "Civilization"
       ],
       "type": "historic"
     },
@@ -90,9 +90,9 @@
       "source": "https://en.wikipedia.org/wiki/Cretan_hieroglyphs",
       "tags": [
         "Minoan",
+        "Writing",
         "Language",
-        "Innovation",
-        "Writing"
+        "Innovation"
       ],
       "type": "cultural"
     },
@@ -107,10 +107,10 @@
       "name_ru": "Расширение дворца Кносса",
       "source": "https://en.wikipedia.org/wiki/Knossos",
       "tags": [
-        "Building",
-        "Architecture",
-        "Palace",
         "Minoan",
+        "Palace",
+        "Architecture",
+        "Building",
         "Art"
       ],
       "type": "historic"
@@ -126,11 +126,11 @@
       "name_ru": "Развитие линейного письма А",
       "source": "https://en.wikipedia.org/wiki/Linear_A",
       "tags": [
+        "Minoan",
         "Writing",
         "Language",
         "Innovation",
-        "Mystery",
-        "Minoan"
+        "Mystery"
       ],
       "type": "cultural"
     },
@@ -145,9 +145,9 @@
       "name_ru": "Поклонение богине со змеями",
       "source": "https://en.wikipedia.org/wiki/Minoan_religion",
       "tags": [
+        "Minoan",
         "Religious",
-        "Culture",
-        "Minoan"
+        "Culture"
       ],
       "type": "religious"
     },
@@ -162,11 +162,11 @@
       "name_ru": "Ритуал прыжков через быка",
       "source": "https://en.wikipedia.org/wiki/Bull-leaping",
       "tags": [
-        "Culture",
-        "Religious",
         "Minoan",
-        "Art",
-        "Sport"
+        "Religious",
+        "Culture",
+        "Sport",
+        "Art"
       ],
       "type": "religious"
     },
@@ -182,9 +182,9 @@
       "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
       "tags": [
         "Minoan",
+        "Disaster",
         "Earthquake",
-        "Destruction",
-        "Disaster"
+        "Destruction"
       ],
       "type": "historic"
     },
@@ -196,7 +196,7 @@
       "latitude": 35.2979,
       "longitude": 25.1632,
       "name": "Second Palace Period",
-      "name_ru": "Второй дворцовый период",
+      "name_ru": "Второй минойский дворцовый период",
       "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
       "tags": [
         "Minoan",
@@ -220,10 +220,10 @@
       "name_ru": "Возвышение микенской цивилизации",
       "source": "https://en.wikipedia.org/wiki/Mycenaean_Greece",
       "tags": [
+        "Mycenaean",
         "Greek",
         "Fortification",
-        "Civilization",
-        "Mycenaean"
+        "Civilization"
       ],
       "type": "historic"
     },
@@ -256,11 +256,11 @@
       "name_ru": "Минойская торговля на море",
       "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
       "tags": [
+        "Minoan",
+        "Trade",
         "Economic",
         "Egypt",
-        "Maritime",
-        "Trade",
-        "Minoan"
+        "Maritime"
       ],
       "type": "historic"
     },
@@ -275,12 +275,12 @@
       "name_ru": "Циклопические укрепления Микен",
       "source": "https://en.wikipedia.org/wiki/Mycenaean_Greece",
       "tags": [
-        "Fortification",
-        "Building",
-        "Architecture",
-        "Greek",
         "Mycenaean",
-        "Legend"
+        "Greek",
+        "Architecture",
+        "Building",
+        "Legend",
+        "Fortification"
       ],
       "type": "historic"
     },
@@ -295,9 +295,9 @@
       "name_ru": "Разрушение от цунами Теры",
       "source": "https://en.wikipedia.org/wiki/Minoan_eruption",
       "tags": [
+        "Minoan",
         "Disaster",
         "Tsunami",
-        "Minoan",
         "Destruction",
         "Maritime"
       ],
@@ -315,9 +315,9 @@
       "source": "https://en.wikipedia.org/wiki/Minoan_eruption",
       "tags": [
         "Minoan",
-        "Destruction",
+        "Disaster",
         "Volcano",
-        "Disaster"
+        "Destruction"
       ],
       "type": "historic"
     },
@@ -342,6 +342,25 @@
     },
     {
       "date": "01.01.1450",
+      "description": "Linear B script adopted by Mycenaean Greeks at Knossos to write early Greek language; adapts Minoan Linear A syllabary with 87 signs for palace administration, creating oldest preserved Greek writing",
+      "description_ru": "Линейное письмо Б принято микенскими греками в Кноссе для записи раннего греческого языка; адаптирует минойскую слоговую систему линейного письма А с 87 знаками для дворцовой администрации, создавая древнейшую сохранившуюся греческую письменность",
+      "era": "BC",
+      "latitude": 35.2979,
+      "longitude": 25.1632,
+      "name": "Linear B Script Development",
+      "name_ru": "Развитие линейного письма Б",
+      "source": "https://en.wikipedia.org/wiki/Linear_B",
+      "tags": [
+        "Mycenaean",
+        "Greek",
+        "Writing",
+        "Language",
+        "Innovation"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1450",
       "description": "Mycenaean Greeks conquer weakened Crete following Thera catastrophe; palace at Knossos continues functioning under Greek control while other palaces destroyed, marking transition from Minoan to Mycenaean dominance",
       "description_ru": "Микенские греки завоевывают ослабленный Крит после катастрофы Теры; дворец в Кноссе продолжает функционировать под греческим контролем, в то время как другие дворцы разрушены, знаменуя переход от минойского к микенскому господству",
       "era": "BC",
@@ -359,23 +378,23 @@
       "type": "military"
     },
     {
-      "date": "01.01.1450",
-      "description": "Linear B script adopted by Mycenaean Greeks at Knossos to write early Greek language; adapts Minoan Linear A syllabary with 87 signs for palace administration, creating oldest preserved Greek writing",
-      "description_ru": "Линейное письмо Б принято микенскими греками в Кноссе для записи раннего греческого языка; адаптирует минойскую слоговую систему линейного письма А с 87 знаками для дворцовой администрации, создавая древнейшую сохранившуюся греческую письменность",
+      "date": "01.01.1400",
+      "description": "Mycenaean warrior elite buried in shaft graves at Mycenae with gold death masks, bronze weapons, and ivory inlays; Heinrich Schliemann's 1876 excavation reveals 19 bodies with 15kg of gold artifacts including famous 'Mask of Agamemnon'",
+      "description_ru": "Микенская воинская элита похоронена в шахтных гробницах в Микенах с золотыми посмертными масками, бронзовым оружием и инкрустациями из слоновой кости; раскопки Генриха Шлимана 1876 года обнаруживают 19 тел с 15 кг золотых артефактов, включая знаменитую 'Маску Агамемнона'",
       "era": "BC",
-      "latitude": 35.2979,
-      "longitude": 25.1632,
-      "name": "Linear B Script Development",
-      "name_ru": "Развитие линейного письма Б",
-      "source": "https://en.wikipedia.org/wiki/Linear_B",
+      "latitude": 37.7308,
+      "longitude": 22.7564,
+      "name": "Royal Shaft Graves of Mycenae",
+      "name_ru": "Царские шахтные гробницы Микен",
+      "source": "https://en.wikipedia.org/wiki/Grave_Circle_A,_Mycenae",
       "tags": [
-        "Innovation",
-        "Language",
         "Mycenaean",
         "Greek",
-        "Writing"
+        "Tomb",
+        "Art",
+        "Treasure"
       ],
-      "type": "cultural"
+      "type": "historic"
     },
     {
       "date": "01.01.1400",
@@ -388,30 +407,11 @@
       "name_ru": "Микенская дворцовая экономика",
       "source": "https://en.wikipedia.org/wiki/Mycenaean_Greece",
       "tags": [
-        "Greek",
-        "Writing",
-        "Administration",
-        "Economic",
-        "Mycenaean"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1400",
-      "description": "Mycenaean warrior elite buried in shaft graves at Mycenae with gold death masks, bronze weapons, and ivory inlays; Heinrich Schliemann's 1876 excavation reveals 19 bodies with 15kg of gold artifacts including famous 'Mask of Agamemnon'",
-      "description_ru": "Микенская воинская элита похоронена в шахтных гробницах в Микенах с золотыми посмертными масками, бронзовым оружием и инкрустациями из слоновой кости; раскопки Генриха Шлимана 1876 года обнаруживают 19 тел с 15 кг золотых артефактов, включая знаменитую 'Маску Агамемнона'",
-      "era": "BC",
-      "latitude": 37.7308,
-      "longitude": 22.7564,
-      "name": "Royal Shaft Graves of Mycenae",
-      "name_ru": "Царские шахтные гробницы Микен",
-      "source": "https://en.wikipedia.org/wiki/Grave_Circle_A,_Mycenae",
-      "tags": [
-        "Treasure",
         "Mycenaean",
         "Greek",
-        "Tomb",
-        "Art"
+        "Economic",
+        "Administration",
+        "Writing"
       ],
       "type": "historic"
     },
@@ -426,11 +426,11 @@
       "name_ru": "Окончательное разрушение Кносса",
       "source": "https://en.wikipedia.org/wiki/Knossos",
       "tags": [
-        "Greek",
-        "Fall",
         "Minoan",
         "Mycenaean",
-        "Destruction"
+        "Greek",
+        "Destruction",
+        "Fall"
       ],
       "type": "historic"
     },
@@ -445,11 +445,11 @@
       "name_ru": "Львиные ворота Микен",
       "source": "https://en.wikipedia.org/wiki/Lion_Gate",
       "tags": [
-        "Architecture",
-        "Greek",
         "Mycenaean",
-        "Building",
-        "Art"
+        "Greek",
+        "Architecture",
+        "Art",
+        "Building"
       ],
       "type": "historic"
     },
@@ -464,10 +464,10 @@
       "name_ru": "Сокровищница Атрея",
       "source": "https://en.wikipedia.org/wiki/Treasury_of_Atreus",
       "tags": [
-        "Tomb",
-        "Architecture",
-        "Greek",
         "Mycenaean",
+        "Greek",
+        "Architecture",
+        "Tomb",
         "Building"
       ],
       "type": "historic"
@@ -483,12 +483,12 @@
       "name_ru": "Вторжение народов моря",
       "source": "https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse",
       "tags": [
-        "Mystery",
-        "Invasions",
-        "Decline",
         "Mycenaean",
         "Greek",
-        "Destruction"
+        "Destruction",
+        "Mystery",
+        "Invasions",
+        "Decline"
       ],
       "type": "military"
     },
@@ -503,11 +503,11 @@
       "name_ru": "Утрата линейного письма Б",
       "source": "https://en.wikipedia.org/wiki/Linear_B",
       "tags": [
-        "Writing",
-        "Decline",
         "Mycenaean",
         "Greek",
-        "Language"
+        "Writing",
+        "Language",
+        "Decline"
       ],
       "type": "cultural"
     },
@@ -522,13 +522,13 @@
       "name_ru": "Троянская война",
       "source": "https://en.wikipedia.org/wiki/Trojan_War",
       "tags": [
-        "Troy",
-        "Uncertain",
         "Mycenaean",
         "Greek",
         "War",
         "Battle",
-        "Legend"
+        "Legend",
+        "Troy",
+        "Uncertain"
       ],
       "type": "military"
     },
@@ -543,11 +543,11 @@
       "name_ru": "Коллапс микенской цивилизации",
       "source": "https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse",
       "tags": [
-        "Greek",
         "Mycenaean",
-        "Collapse",
+        "Greek",
+        "Fall",
         "Destruction",
-        "Fall"
+        "Collapse"
       ],
       "type": "historic"
     }

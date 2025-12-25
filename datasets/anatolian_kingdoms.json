@@ -531,13 +531,13 @@
       "latitude": 39.6511,
       "longitude": 31.9958,
       "name": "Cimmerian Threat Emerges",
-      "name_ru": "Возникновение киммерийской угрозы",
+      "name_ru": "Киммерийская угроза Фригии",
       "source": "https://en.wikipedia.org/wiki/Cimmerians",
       "tags": [
-        "Phrygian",
         "Cimmerian",
-        "Invasions",
-        "King Midas"
+        "King Midas",
+        "Phrygian",
+        "Invasions"
       ],
       "type": "military"
     },
@@ -769,7 +769,7 @@
     {
       "date": "01.01.0650",
       "description": "Cult of Cybele spreads from Phrygia to Greek world; mystery rites gain followers in Athens and other cities, priests called 'Galli' practice ritual castration in ecstatic ceremonies",
-      "description_ru": "Культ Кибелы распространяется из Фригии в греческий мир; мистериальные обряды набирают последователей в Афинах и других городах, жрецы, называемые 'Галли', практикуют ритуальную кастрацию в экстатических церемониях",
+      "description_ru": "Культ Кибелы, матери богов, распространяется из Фригии в греческий мир; мистериальные обряды набирают последователей в Афинах и других городах, жрецы, называемые 'Галли', практикуют ритуальную кастрацию в экстатических церемониях",
       "era": "BC",
       "latitude": 38.7444,
       "longitude": 30.5503,
@@ -778,10 +778,10 @@
       "source": "https://en.wikipedia.org/wiki/Cybele",
       "tags": [
         "Phrygian",
-        "Greek",
-        "Religious",
+        "Mystery",
         "Culture",
-        "Mystery"
+        "Religious",
+        "Greek"
       ],
       "type": "religious"
     },

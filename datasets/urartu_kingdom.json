@@ -4,7 +4,7 @@
     {
       "date": "01.01.0860",
       "description": "Nairi states and tribes unite under King Arame, first ruler to consolidate Urartian territories into single kingdom with capital at Sugunia, marking foundation of Urartu",
-      "description_ru": "Государства и племена Наири объединяются под властью царя Араме, первого правителя, объединившего урартские территории в единое царство со столицей в Сугунии",
+      "description_ru": "Племена народа Наири хурритского происхождения объединяются под властью царя Араме, первого правителя, объединившего урартские территории в единое царство со столицей в Сугунии. Урарты почитают бога неба Халди",
       "era": "BC",
       "latitude": 39,
       "longitude": 44,
@@ -12,10 +12,10 @@
       "name_ru": "Объединение Урарту",
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
-        "Urartu",
-        "Independence",
+        "Unification",
         "Kingdom",
-        "Unification"
+        "Independence",
+        "Urartu"
       ],
       "type": "political"
     },
@@ -24,15 +24,15 @@
       "description": "Assyrian emperor Shalmaneser III begins series of campaigns against newly formed Urartian Kingdom, capturing early capitals Sugunia and Arzashkun",
       "description_ru": "Ассирийский император Салманасар III начинает серию кампаний против вновь образованного Урартского царства, захватывая ранние столицы Сугунию и Арзашкун",
       "era": "BC",
-      "latitude": 39,
-      "longitude": 44,
+      "latitude": 38.25,
+      "longitude": 42.86,
       "name": "Assyrian Campaigns Against Early Urartu",
-      "name_ru": "Ассирийцы захватывают Урарту",
+      "name_ru": "Ассирийцы нападают на Урарту",
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
-        "Urartu",
+        "Conquest",
         "Assyrian",
-        "Conquest"
+        "Urartu"
       ],
       "type": "military"
     },
@@ -74,18 +74,18 @@
     {
       "date": "01.01.0830",
       "description": "King Ispuini annexes sacred city of Musasir, gaining control of important religious center dedicated to Haldi (supreme god) and appointing his son Menua as co-administrator",
-      "description_ru": "Царь Испуини аннексирует священный город Мусасир, важный религиозный центр, посвященный Халди (верховному богу), и назначает своего сына Менуа со-администратором",
+      "description_ru": "Царь Ишпуини аннексирует свой протекторат, священный город Мусасир, дом верховного бога Халди. Халди становится главным богом всего Урарту, а Мусасир - местом паломничеств урартских царей.",
       "era": "BC",
-      "latitude": 37.2,
-      "longitude": 45.5,
+      "latitude": 37.7555,
+      "longitude": 44.5578,
       "name": "Annexation of Sacred Musasir",
       "name_ru": "Урарту аннексирует Мусасир",
       "source": "https://en.wikipedia.org/wiki/Musasir",
       "tags": [
+        "Religious",
         "Urartu",
-        "Conquest",
         "Temple",
-        "Religious"
+        "Annexation"
       ],
       "type": "political"
     },
@@ -110,7 +110,7 @@
     {
       "date": "01.01.0800",
       "description": "Menua constructs Menua Canal (Shamram Canal), 70-kilometer irrigation channel bringing water from mountains to Tushpa, demonstrating advanced Urartian engineering capabilities",
-      "description_ru": "Царь Урарту Менуа строит 70-километровый оросительный канал Менуа (Шамрамский канал), доставляющий воду с гор в Тушпу",
+      "description_ru": "Царь Урарту Менуа строит 70-километровый оросительный канал Менуа (Шамрамский канал), доставляющий воду с гор в Тушпу. Этот канал частично снабжает Ван водой до сих пор.",
       "era": "BC",
       "latitude": 38.5,
       "longitude": 43.4,
@@ -118,13 +118,30 @@
       "name_ru": "Строительство канала Менуа",
       "source": "https://en.wikipedia.org/wiki/Shamram_Canal",
       "tags": [
-        "Urartu",
-        "Engineering",
-        "Innovation",
         "Water",
-        "Flood Control"
+        "Innovation",
+        "Engineering",
+        "Flood Control",
+        "Urartu"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0800",
+      "description": "Wine was the national drink of the Urartians. It was stored in huge jars called karases, dug into the ground. Even ordinary homes had stocks of wine and beer. The most fertile regions were the Ararat Valley, the Lake Van basin, and the Lake Urmia region.",
+      "description_ru": "Вино было национальным напитком урартов. Его хранили в огромных кувшинах — карасах, вкопанных в землю. Даже в обычных домах были запасы вина и пива. Самыми плодородными регионами были Араратская долина, бассейн озера Ван, район озера Урмия",
+      "era": "BC",
+      "latitude": 40.1417,
+      "longitude": 44.5236,
+      "name": "Urartu's winemaking",
+      "name_ru": "Урартское виноделие",
+      "tags": [
+        "Urartu",
+        "Winemaking",
+        "Customs",
+        "Agriculture"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0782",
@@ -147,7 +164,7 @@
     {
       "date": "01.01.0780",
       "description": "Argishti I defeats major Assyrian invasion, marking beginning of Urartu's golden age; expands territories along Aras River and around Lake Sevan, reaching peak of Urartian power",
-      "description_ru": "Аргишти I отражает крупное ассирийское вторжение, знаменуя начало золотого века Урарту; расширяет территории вдоль реки Арас и вокруг озера Севан, достигая пика урартской мощи",
+      "description_ru": "Аргишти I отражает крупное ассирийское вторжение, знаменуя начало золотого века Урарту; расширяет территории вдоль реки Арас и вокруг озера Севан, достигая пика урартской мощи. ",
       "era": "BC",
       "latitude": 40,
       "longitude": 44.5,
@@ -155,10 +172,10 @@
       "name_ru": "Урарту отражает вторжение Ассирии",
       "source": "https://en.wikipedia.org/wiki/Argishti_I",
       "tags": [
-        "Urartu",
         "Battle",
+        "Expansion",
         "Assyrian",
-        "Expansion"
+        "Urartu"
       ],
       "type": "military"
     },
@@ -182,7 +199,7 @@
     {
       "date": "01.01.0760",
       "description": "Sarduri II becomes king and extends Urartian Kingdom to its greatest territorial extent, rivaling Neo-Assyrian Empire as dominant power in Near East",
-      "description_ru": "Сардури II становится царем и расширяет Урартское царство до максимальных территориальных размеров, соперничая с Неоассирийской империей как доминирующая держава на Ближнем Востоке",
+      "description_ru": "Сардури II становится царем и расширяет Урартское царство до максимальных территориальных размеров, соперничая с Неоассирийской империей как доминирующая держава на Ближнем Востоке. Урарту практически на равных борется с Ассирией за влияние в регионе",
       "era": "BC",
       "latitude": 38.5,
       "longitude": 43.35,
@@ -190,17 +207,17 @@
       "name_ru": "Золотой век Урарту",
       "source": "https://en.wikipedia.org/wiki/Sarduri_II",
       "tags": [
-        "Urartu",
-        "Expansion",
         "Dynasty",
-        "Golden Age"
+        "Golden Age",
+        "Urartu",
+        "Expansion"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0750",
       "description": "Sarduri II establishes network of fortified cities across Urartian territories, implementing standardized architecture and administrative systems throughout empire",
-      "description_ru": "Сардури II создает сеть укрепленных городов по всей урартской территории, внедряя стандартизированную архитектуру и административные системы по всей империи",
+      "description_ru": "Сардури II создает сеть укрепленных городов по всей урартской территории, внедряя стандартизированную архитектуру и административные системы по всей империи. Циклопические урартские крепости строятся на скалах, и почти неприступны в этот исторический период",
       "era": "BC",
       "latitude": 39,
       "longitude": 44,
@@ -208,9 +225,9 @@
       "name_ru": "Сеть урартских крепостей",
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
+        "Administration",
         "Urartu",
         "Fortification",
-        "Administration",
         "Defense"
       ],
       "type": "political"
@@ -218,7 +235,7 @@
     {
       "date": "01.07.0735",
       "description": "Tiglath-Pileser III lays siege to Tushpa but fails to capture heavily fortified capital, demonstrating strength of Urartian defensive architecture despite military setbacks",
-      "description_ru": "Тиглатпаласар III осаждает Тушпу, но не может взять горную укрепленную крепость и отходит. Тем не менее зона влияния Урарту после вторжения сильно сократилась",
+      "description_ru": "Тиглатпаласар III осаждает Тушпу, но не может взять горную укрепленную крепость и отходит. Тем не менее, зона влияния Урарту в регионе после вторжения значимо сокращается",
       "era": "BC",
       "latitude": 38.5,
       "longitude": 43.35,
@@ -226,11 +243,11 @@
       "name_ru": "Осада Ассирией Тушпы",
       "source": "https://en.wikipedia.org/wiki/Tushpa",
       "tags": [
-        "Urartu",
-        "Assyrian",
-        "Siege",
+        "Tiglath-Pileser III",
         "Fortification",
-        "Tiglath-Pileser III"
+        "Siege",
+        "Assyrian",
+        "Urartu"
       ],
       "type": "military"
     },
@@ -256,19 +273,19 @@
     {
       "date": "01.01.0720",
       "description": "Rusa I constructs Rusahinili (Toprak-Kale) near Tushpa as new ceremonial and administrative complex, featuring massive temple to Haldi with innovative architectural design",
-      "description_ru": "Руса I строит Русахинили (Топрак-Кале) недалеко от Тушпы как новый церемониальный и административный комплекс. Русахинили должен был стать новой столицей после разорения ассирийцами Тушпы. В городе Руса возвел массивный храм Халди инновационного архитектурного дизайна",
+      "description_ru": "Руса I строит Русахинили на скале Топрак-Кале недалеко от Тушпы как новый церемониальный и административный комплекс. Русахинили должен был стать новой столицей после разорения ассирийцами Тушпы. В городе Руса строит массивный храм Халди инновационного архитектурного дизайна",
       "era": "BC",
-      "latitude": 38.55,
-      "longitude": 43.3,
+      "latitude": 38.5266,
+      "longitude": 43.4028,
       "name": "Foundation of Rusahinili",
       "name_ru": "Основание Русахинили",
       "source": "https://en.wikipedia.org/wiki/Rusahinili",
       "tags": [
+        "Temple",
         "Urartu",
         "City",
-        "Temple",
-        "Architecture",
-        "Capital"
+        "Capital",
+        "Architecture"
       ],
       "type": "historic"
     },
@@ -309,24 +326,7 @@
       "type": "political"
     },
     {
-      "date": "01.01.0685",
-      "description": "Rusa II becomes king and initiates Urartian cultural renaissance, founding city of Teishebaini (Karmir Blur) near Erebuni as economic hub and granary for Transcaucasian provinces",
-      "description_ru": "При Русе II происходит урартский культурный ренессанс. Руса закладывает город Тейшебаини (Кармир Блур) близ Эребуни как экономический центр и житницу закавказских провинций",
-      "era": "BC",
-      "latitude": 40.1294,
-      "longitude": 44.4583,
-      "name": "Foundation of Teishebaini",
-      "name_ru": "Основание Тейшебаини",
-      "source": "https://en.wikipedia.org/wiki/Teishebaini",
-      "tags": [
-        "Urartu",
-        "City",
-        "Economic"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0685",
+      "date": "01.01.0705",
       "description": "Argishti II succeeds Rusa I and makes peace with Assyrian king Sennacherib, beginning period of recovery and cultural renaissance after decades of warfare",
       "description_ru": "Аргишти II наследует Русе I и заключает мир с ассирийским царем Синахерибом, начиная период восстановления царства Урарту",
       "era": "BC",
@@ -336,18 +336,36 @@
       "name_ru": "Мир Урарту с Ассирией",
       "source": "https://en.wikipedia.org/wiki/Argishti_II",
       "tags": [
-        "Urartu",
-        "Assyrian",
-        "Peace",
         "Diplomacy",
+        "Peace",
+        "Assyrian",
+        "Urartu",
         "Treaty"
       ],
       "type": "political"
     },
     {
+      "date": "01.01.0685",
+      "description": "Rusa II becomes king and initiates Urartian cultural renaissance, founding city of Teishebaini (Karmir Blur) near Erebuni as economic hub and granary for Transcaucasian provinces",
+      "description_ru": "При Русе II происходит урартский культурный ренессанс. Руса закладывает город Тейшебаини (Кармир Блур) близ Эребуни как экономический центр и житницу закавказских провинций. Крепость названа в честь Тейшебы - урартского бога войны и бури.",
+      "era": "BC",
+      "latitude": 40.1294,
+      "longitude": 44.4583,
+      "name": "Foundation of Teishebaini",
+      "name_ru": "Основание Тейшебаини",
+      "source": "https://en.wikipedia.org/wiki/Teishebaini",
+      "tags": [
+        "City",
+        "Urartu",
+        "Economic",
+        "Religious"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0680",
       "description": "Rusa II builds massive storage complex at Teishebaini with 150 rooms containing enormous pithoi jars, establishing centralized granary system for kingdom's agricultural wealth",
-      "description_ru": "Руса II строит большое хранилище в Тейшебаини со 150 комнатами. В огромных пифосах хранятся сельскохозяйственные и другие богатства царства Урарту.",
+      "description_ru": "Руса II строит большое хранилище в Тейшебаини со 150 комнатами. В огромных карасах (горшках) хранятся вино, сельскохозяйственные и другие богатства царства Урарту. Также известно, что карасы древние урарты использовали и для захоронения людей.",
       "era": "BC",
       "latitude": 40.1294,
       "longitude": 44.4583,
@@ -355,10 +373,10 @@
       "name_ru": "Хранилище Тейшебаини",
       "source": "https://www.worldhistory.org/Teishebaini/",
       "tags": [
-        "Urartu",
-        "Economic",
         "Agriculture",
-        "Architecture"
+        "Architecture",
+        "Economic",
+        "Urartu"
       ],
       "type": "historic"
     },
@@ -560,24 +578,6 @@
     },
     {
       "date": "01.01.0590",
-      "description": "Sarduri IV becomes final king of Urartu during kingdom's last years, presiding over remnants of once-mighty empire as Median forces complete conquest",
-      "description_ru": "Сардури IV становится последним царем Урарту в последние годы царства, управляя остатками некогда могучей империи, пока мидийские силы завершают завоевание",
-      "era": "BC",
-      "latitude": 38.5,
-      "longitude": 43.35,
-      "name": "Last King Sarduri IV",
-      "name_ru": "Сардури IV - последний царь Урарту",
-      "source": "https://en.wikipedia.org/wiki/Sarduri_IV",
-      "tags": [
-        "Urartu",
-        "Dynasty",
-        "Fall",
-        "King"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0590",
       "description": "Median Empire overruns Tushpa and absorbs remaining Urartian territories, marking end of independent Urartian Kingdom after 270 years of existence",
       "description_ru": "Мидийская империя захватывает Тушпу и поглощает оставшиеся урартские территории, знаменуя конец независимого Урартского царства после 270 лет существования",
       "era": "BC",
@@ -593,6 +593,24 @@
         "Medes"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0590",
+      "description": "Sarduri IV becomes final king of Urartu during kingdom's last years, presiding over remnants of once-mighty empire as Median forces complete conquest",
+      "description_ru": "Сардури IV становится последним царем Урарту в последние годы царства, управляя остатками некогда могучей империи, пока мидийские силы завершают завоевание",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Last King Sarduri IV",
+      "name_ru": "Сардури IV - последний царь Урарту",
+      "source": "https://en.wikipedia.org/wiki/Sarduri_IV",
+      "tags": [
+        "Urartu",
+        "Dynasty",
+        "Fall",
+        "King"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.0585",

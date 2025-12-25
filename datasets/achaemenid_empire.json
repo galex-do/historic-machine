@@ -1,5 +1,5 @@
 {
-  "description": "Dataset imported with 92 events",
+  "description": "Dataset imported with 91 events",
   "events": [
     {
       "date": "01.01.0549",
@@ -43,6 +43,27 @@
     },
     {
       "date": "01.01.0546",
+      "description": "Cyrus the Great conquers Lydia after defeating King Croesus at Battle of Thymbra, adding wealthy Anatolian territories and Lydian gold reserves to Persian Empire. After conquering Lydia, Cyrus spares Croesus's life and makes him advisor, demonstrating magnanimity toward defeated rulers that becomes hallmark of his reign",
+      "description_ru": "Кир Великий завоевывает Лидию после победы над царем Крезом в битве при Тимбре, присваивая богатые анатолийские территории и лидийские золотые резервы Персии. После завоевания Лидии Кир щадит жизнь Креза и делает его советником, демонстрируя великодушие к побежденным правителям, что станет отличительной чертой его правления",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.3053,
+      "name": "Conquest of Lydia",
+      "name_ru": "Завоевание Лидии Персией ",
+      "source": "https://en.wikipedia.org/wiki/Croesus",
+      "tags": [
+        "Persian",
+        "Conquest",
+        "Gold",
+        "Lydia",
+        "Tolerance",
+        "Cyrus the Great",
+        "Achaemenid"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0546",
       "description": "Construction begins on Pasargadae, first dynastic capital of Persian Empire, featuring Cyrus's tomb and palace complex with innovative architectural synthesis of various cultures",
       "description_ru": "Начинается строительство Пасаргад, первой династической столицы Персидской империи, с гробницей Кира и дворцовым комплексом. Кир брал от покоренных народов архитектурные особенности и подходы, и применял их при строительстве дворца. Также Кир любил сады, и в Пасаргадах были разбиты обширные сады и серьезная система ирригации.",
       "era": "BC",
@@ -62,27 +83,6 @@
         "City"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.0546",
-      "description": "Cyrus the Great conquers Lydia after defeating King Croesus at Battle of Thymbra, adding wealthy Anatolian territories and Lydian gold reserves to Persian Empire. After conquering Lydia, Cyrus spares Croesus's life and makes him advisor, demonstrating magnanimity toward defeated rulers that becomes hallmark of his reign",
-      "description_ru": "Кир Великий завоевывает Лидию после победы над царем Крезом в битве при Тимбре, присваивая богатые анатолийские территории и лидийские золотые резервы Персии. После завоевания Лидии Кир щадит жизнь Креза и делает его советником, демонстрируя великодушие к побежденным правителям, что станет отличительной чертой его правления",
-      "era": "BC",
-      "latitude": 38.4852,
-      "longitude": 28.3053,
-      "name": "Conquest of Lydia",
-      "name_ru": "Завоевание Лидии Персией ",
-      "source": "https://en.wikipedia.org/wiki/Croesus",
-      "tags": [
-        "Persian",
-        "Conquest",
-        "Gold",
-        "Lydia",
-        "Tolerance",
-        "Cyrus the Great",
-        "Achaemenid"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.0545",
@@ -292,12 +292,13 @@
       "name_ru": "Персидские ирригационные системы",
       "source": "https://en.wikipedia.org/wiki/Qanat",
       "tags": [
+        "Innovation",
         "Persian",
         "Engineering",
         "Water",
         "Agriculture",
-        "Innovation",
-        "Achaemenid"
+        "Achaemenid",
+        "Flood Control"
       ],
       "type": "historic"
     },
@@ -456,24 +457,6 @@
     },
     {
       "date": "01.01.0521",
-      "description": "Susa, devastated by Assyria, was located at the crossroads of important trade routes and was geographically conveniently situated between Mesopotamia and the Iranian plateau. Darius I restored and rebuilt the city, making it one of his main capitals, along with Persepolis and Babylon.",
-      "description_ru": "Разоренные Ассирией Сузы находились на пересечении важных торговых путей и были географически удобно расположены между Месопотамией и Иранским нагорьем. Дарий I восстановил и перестроил город, сделав его одной из своих главных, наряду с Персеполем и Вавилоном, столиц.",
-      "era": "BC",
-      "latitude": 32.1895,
-      "longitude": 48.2544,
-      "name": "Persian restoration of Susa",
-      "name_ru": "Персидская реставрация Суз",
-      "tags": [
-        "Persian",
-        "Darius I",
-        "Achaemenid",
-        "Capital",
-        "Administration"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0521",
       "description": "Darius commissions Behistun Inscription carved into cliff face in three languages (Old Persian, Elamite, Babylonian), proclaiming legitimacy and listing conquests; becomes key to deciphering cuneiform",
       "description_ru": "Дарий заказывает Бехистунскую надпись. На скале в провинции Керманшах на высоте 105 метров над дорогой на трех языках (староперсидский, эламитский, вавилонский) вырезают документ Дария, в котором он говорит, как боролся за Персию в гражданской войне и какие страны принадлежат Персии. Древние скульпторы, закончив работу, спустились вниз и разрушили за собой каменные ступени, чтобы исключить возможность вновь подняться к памятнику.",
       "era": "BC",
@@ -491,6 +474,24 @@
         "Achaemenid"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.0521",
+      "description": "Susa, devastated by Assyria, was located at the crossroads of important trade routes and was geographically conveniently situated between Mesopotamia and the Iranian plateau. Darius I restored and rebuilt the city, making it one of his main capitals, along with Persepolis and Babylon.",
+      "description_ru": "Разоренные Ассирией Сузы находились на пересечении важных торговых путей и были географически удобно расположены между Месопотамией и Иранским нагорьем. Дарий I восстановил и перестроил город, сделав его одной из своих главных, наряду с Персеполем и Вавилоном, столиц.",
+      "era": "BC",
+      "latitude": 32.1895,
+      "longitude": 48.2544,
+      "name": "Persian restoration of Susa",
+      "name_ru": "Персидская реставрация Суз",
+      "tags": [
+        "Persian",
+        "Darius I",
+        "Achaemenid",
+        "Capital",
+        "Administration"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0520",
@@ -896,26 +897,6 @@
     },
     {
       "date": "27.08.0479",
-      "description": "Combined Greek army decisively defeats Persian forces at Battle of Plataea, ending Persian invasion and forcing withdrawal from mainland Greece",
-      "description_ru": "Объединенная греческая армия решительно побеждает персидские силы в битве при Платеях, завершая персидское вторжение и вынуждая к отступлению из материковой Греции",
-      "era": "BC",
-      "latitude": 38.2167,
-      "longitude": 23.2833,
-      "name": "Battle of Plataea",
-      "name_ru": "Битва при Платеях",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Plataea",
-      "tags": [
-        "Persian",
-        "Greek",
-        "Battle",
-        "Greek-Persian Wars",
-        "Xerxes I",
-        "Achaemenid"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "27.08.0479",
       "description": "Greek fleet destroys remaining Persian ships at Battle of Mycale on same day as Plataea, effectively ending Persian naval threat in Aegean Sea",
       "description_ru": "Греческий флот уничтожает оставшиеся персидские корабли в битве при Микале в тот же день, что и Платеи, фактически завершая персидскую морскую угрозу в Эгейском море",
       "era": "BC",
@@ -930,6 +911,26 @@
         "Naval",
         "Battle",
         "Greek-Persian Wars",
+        "Achaemenid"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "27.08.0479",
+      "description": "Combined Greek army decisively defeats Persian forces at Battle of Plataea, ending Persian invasion and forcing withdrawal from mainland Greece",
+      "description_ru": "Объединенная греческая армия решительно побеждает персидские силы в битве при Платеях, завершая персидское вторжение и вынуждая к отступлению из материковой Греции",
+      "era": "BC",
+      "latitude": 38.2167,
+      "longitude": 23.2833,
+      "name": "Battle of Plataea",
+      "name_ru": "Битва при Платеях",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Plataea",
+      "tags": [
+        "Persian",
+        "Greek",
+        "Battle",
+        "Greek-Persian Wars",
+        "Xerxes I",
         "Achaemenid"
       ],
       "type": "military"
@@ -1359,25 +1360,6 @@
     },
     {
       "date": "01.01.0370",
-      "description": "Zoroastrianism becomes more formalized as state religion under Artaxerxes II, who builds temples to Anahita (goddess of water) throughout empire",
-      "description_ru": "Зороастризм становится более формализованной государственной религией при Артаксерксе II, который строит храмы Анахите (богине воды) по всей империи",
-      "era": "BC",
-      "latitude": 32.6546,
-      "longitude": 51.668,
-      "name": "Formalization of Zoroastrianism",
-      "name_ru": "Формализация зороастризма",
-      "source": "https://en.wikipedia.org/wiki/Zoroastrianism",
-      "tags": [
-        "Persian",
-        "Religious",
-        "Zoroastrian",
-        "Temple",
-        "Achaemenid"
-      ],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.0370",
       "description": "Great Satraps' Revolt begins as western satraps unite against central authority, revealing growing weakness of imperial administration and provincial discontent",
       "description_ru": "Начинается Великое восстание сатрапов. Западные сатрапы Анатолии (Лидия, Фригия, Кария, Каппадокия, Армения) объединяются против империи, вскрывая растущую слабость имперской администрации и недовольство провинций",
       "era": "BC",
@@ -1394,6 +1376,25 @@
         "Achaemenid"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0370",
+      "description": "Zoroastrianism becomes more formalized as state religion under Artaxerxes II, who builds temples to Anahita (goddess of water) throughout empire",
+      "description_ru": "Зороастризм становится более формализованной государственной религией при Артаксерксе II, который строит храмы Анахите (богине воды) по всей империи",
+      "era": "BC",
+      "latitude": 32.6546,
+      "longitude": 51.668,
+      "name": "Formalization of Zoroastrianism",
+      "name_ru": "Формализация зороастризма",
+      "source": "https://en.wikipedia.org/wiki/Zoroastrianism",
+      "tags": [
+        "Persian",
+        "Religious",
+        "Zoroastrian",
+        "Temple",
+        "Achaemenid"
+      ],
+      "type": "religious"
     },
     {
       "date": "01.01.0362",
@@ -1487,6 +1488,23 @@
     },
     {
       "date": "01.01.0338",
+      "description": "Philip II of Macedon defeats Greek city-states at Battle of Chaeronea, unifying Greece under Macedonian hegemony and preparing for invasion of Persian Empire",
+      "description_ru": "Филипп II Македонский побеждает греческие города-государства в битве при Херонее, объединяя Грецию под македонской гегемонией и готовясь к вторжению в Персидскую империю",
+      "era": "BC",
+      "latitude": 38.4958,
+      "longitude": 22.8483,
+      "name": "Battle of Chaeronea",
+      "name_ru": "Битва при Херонее",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Chaeronea_(338_BC)",
+      "tags": [
+        "Greek",
+        "Macedonian",
+        "Battle"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0338",
       "description": "Artaxerxes III poisoned by eunuch Bagoas; Arses becomes puppet emperor, but Bagoas holds real power in court intrigue",
       "description_ru": "Артаксеркс III отравлен своим визирем, евнухом Багоем; Арсес становится марионеточным императором, но Багой держит реальную власть в придворных интригах",
       "era": "BC",
@@ -1504,23 +1522,6 @@
         "Regicide"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0338",
-      "description": "Philip II of Macedon defeats Greek city-states at Battle of Chaeronea, unifying Greece under Macedonian hegemony and preparing for invasion of Persian Empire",
-      "description_ru": "Филипп II Македонский побеждает греческие города-государства в битве при Херонее, объединяя Грецию под македонской гегемонией и готовясь к вторжению в Персидскую империю",
-      "era": "BC",
-      "latitude": 38.4958,
-      "longitude": 22.8483,
-      "name": "Battle of Chaeronea",
-      "name_ru": "Битва при Херонее",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Chaeronea_(338_BC)",
-      "tags": [
-        "Greek",
-        "Macedonian",
-        "Battle"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.0336",

@@ -438,6 +438,24 @@
       "type": "political"
     },
     {
+      "date": "01.01.0743",
+      "description": "Tiglath-Pileser III defeats Sarduri II of Urartu at Battle near Arpad, ending Urartian dominance and establishing Assyria as supreme power in Near East",
+      "description_ru": "Тиглатпаласар III побеждает Сардури II Урартского в битве близ Арпада, завершая урартское господство и устанавливая Ассирию как высшую державу на Ближнем Востоке",
+      "era": "BC",
+      "latitude": 36.5922,
+      "longitude": 37.1711,
+      "name": "Battle of Arpad",
+      "name_ru": "Битва при Арпаде",
+      "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
+      "tags": [
+        "Assyrian",
+        "Tiglath-Pileser III",
+        "Urartu",
+        "Battle"
+      ],
+      "type": "military"
+    },
+    {
       "date": "01.01.0740",
       "description": "Tiglath-Pileser III creates first professional standing army with heavy cavalry units, replacing seasonal conscription and revolutionizing ancient warfare",
       "description_ru": "Тиглатпаласар III создает первую профессиональную постоянную армию с тяжелыми кавалерийскими подразделениями, заменяя сезонный призыв и революционизируя древнюю войну",
@@ -453,24 +471,6 @@
         "Army",
         "Tiglath-Pileser III",
         "War Science"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0735",
-      "description": "Tiglath-Pileser III defeats Sarduri II of Urartu at Battle near Arpad, ending Urartian dominance and establishing Assyria as supreme power in Near East",
-      "description_ru": "Тиглатпаласар III побеждает Сардури II Урартского в битве близ Арпада, завершая урартское господство и устанавливая Ассирию как высшую державу на Ближнем Востоке",
-      "era": "BC",
-      "latitude": 36.5922,
-      "longitude": 37.1711,
-      "name": "Battle of Arpad",
-      "name_ru": "Битва при Арпаде",
-      "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
-      "tags": [
-        "Assyrian",
-        "Battle",
-        "Urartu",
-        "Tiglath-Pileser III"
       ],
       "type": "military"
     },
@@ -609,17 +609,17 @@
     {
       "date": "01.01.0714",
       "description": "Sargon II launches surprise cavalry attack against Urartu, destroys enemy army, and drives King Rusa I to suicide, ending northern threat to empire",
-      "description_ru": "Саргон II наносит внезапный кавалерийский удар по Урарту, уничтожает вражескую армию и доводит царя Русу I до самоубийства, ликвидируя угрозу империи с севера",
+      "description_ru": "Саргон II наносит внезапный кавалерийский удар по Урарту, разграбляет Мусасир и похищает статуи богов. Узнав об осквернении святыни, урартский царь Руса I кончает самоубийством. ",
       "era": "BC",
-      "latitude": 39.7278,
-      "longitude": 44.8289,
+      "latitude": 37.7555,
+      "longitude": 44.5578,
       "name": "Destruction of Urartu",
-      "name_ru": "Ассирийцы разрушают Урарту",
+      "name_ru": "Ассирийцы разрушают Мусасир",
       "source": "https://en.wikipedia.org/wiki/Sargon_II",
       "tags": [
+        "Battle",
         "Assyrian",
         "Urartu",
-        "Battle",
         "Sargon II"
       ],
       "type": "military"
@@ -673,10 +673,11 @@
       "name_ru": "Смерть Саргона II",
       "source": "https://en.wikipedia.org/wiki/Sargon_II",
       "tags": [
-        "Assyrian",
         "Battle",
+        "Assyrian",
         "Death",
-        "Sargon II"
+        "Sargon II",
+        "Cimmerian"
       ],
       "type": "political"
     },
@@ -709,11 +710,12 @@
       "name_ru": "Ассирийцы захватывают Лахиш",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Lachish",
       "tags": [
-        "Assyrian",
         "Judah",
         "Siege",
+        "Assyrian",
         "Battle",
-        "Conquest"
+        "Conquest",
+        "Israel"
       ],
       "type": "military"
     },
@@ -751,7 +753,8 @@
       "tags": [
         "Assyrian",
         "Destruction",
-        "Babylonian"
+        "Babylonian",
+        "Blasphemy"
       ],
       "type": "military"
     },
@@ -804,7 +807,8 @@
       "tags": [
         "Assyrian",
         "Empire",
-        "Ashurbanipal"
+        "Ashurbanipal",
+        "Golden Age"
       ],
       "type": "political"
     },
