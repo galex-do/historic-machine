@@ -6,6 +6,7 @@ const MapView = () => import('@/views/MapView.vue')
 const AboutPage = () => import('@/views/AboutPage.vue')
 const AdminEvents = () => import('@/views/AdminEvents.vue')
 const AdminTags = () => import('@/views/AdminTags.vue')
+const AdminTemplates = () => import('@/views/AdminTemplates.vue')
 const AdminUsers = () => import('@/views/AdminUsers.vue')
 const AdminStats = () => import('@/views/AdminStats.vue')
 
@@ -30,6 +31,12 @@ const routes = [
     path: '/admin/tags',
     name: 'AdminTags',
     component: AdminTags,
+    meta: { requiresAdmin: true }
+  },
+  {
+    path: '/admin/templates',
+    name: 'AdminTemplates',
+    component: AdminTemplates,
     meta: { requiresAdmin: true }
   },
   {

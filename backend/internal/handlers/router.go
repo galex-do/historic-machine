@@ -72,10 +72,18 @@ func (router *Router) SetupRoutes() http.Handler {
         api.HandleFunc("/events/bbox", router.eventHandler.GetEventsInBBox).Methods("GET", "OPTIONS")
         api.HandleFunc("/events/radius", router.eventHandler.GetEventsInRadius).Methods("GET", "OPTIONS")
         
-        // Template routes
+        // Template routes (read public, write requires admin)
         api.HandleFunc("/date-template-groups", router.templateHandler.GetAllGroups).Methods("GET", "OPTIONS")
+        api.HandleFunc("/date-template-groups", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.templateHandler.CreateGroup)).Methods("POST", "OPTIONS")
+        api.HandleFunc("/date-template-groups/{id}", router.templateHandler.GetGroupByID).Methods("GET", "OPTIONS")
+        api.HandleFunc("/date-template-groups/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.templateHandler.UpdateGroup)).Methods("PUT", "OPTIONS")
+        api.HandleFunc("/date-template-groups/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.templateHandler.DeleteGroup)).Methods("DELETE", "OPTIONS")
         api.HandleFunc("/date-templates/{group_id}", router.templateHandler.GetTemplatesByGroup).Methods("GET", "OPTIONS")
         api.HandleFunc("/date-templates", router.templateHandler.GetAllTemplates).Methods("GET", "OPTIONS")
+        api.HandleFunc("/date-templates", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.templateHandler.CreateTemplate)).Methods("POST", "OPTIONS")
+        api.HandleFunc("/date-templates/single/{id}", router.templateHandler.GetTemplateByID).Methods("GET", "OPTIONS")
+        api.HandleFunc("/date-templates/single/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.templateHandler.UpdateTemplate)).Methods("PUT", "OPTIONS")
+        api.HandleFunc("/date-templates/single/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelAdmin)(router.templateHandler.DeleteTemplate)).Methods("DELETE", "OPTIONS")
         
         // Tag routes (read public, write requires editor/admin)
         api.HandleFunc("/tags", router.tagHandler.GetAllTags).Methods("GET", "OPTIONS")

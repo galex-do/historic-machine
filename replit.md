@@ -43,6 +43,7 @@ A comprehensive web application for mapping historical events on an interactive 
 - **Event Management**: CRUD operations for events via an admin panel, including BC date editing.
 - **Lens System**: Categorization system for different event types.
 - **Tag Management**: CRUD for tags, with cross-page navigation to filter events by tag.
+- **Template Management**: Admin interface for CRUD operations on date templates and template groups. Features dual modal system, BC/AD date handling with chronological sorting, and full localization (English/Russian). Template groups prevent deletion when containing templates.
 - **User Management**: Admin interface for managing user accounts and access levels (Guest, User, Editor, Admin, Super).
 - **Dataset Management**: Import and creation of localized event datasets.
 - **Authentication**: Role-based access control, session persistence.

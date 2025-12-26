@@ -147,6 +147,58 @@ class ApiService {
     return this.makeRequest(endpoint)
   }
 
+  async getTemplateById(id) {
+    let endpoint = `/date-templates/single/${id}`
+    endpoint = this.addLocaleToEventUrl(endpoint)
+    return this.makeRequest(endpoint)
+  }
+
+  async createTemplate(templateData) {
+    return this.makeRequest('/date-templates', {
+      method: 'POST',
+      body: JSON.stringify(templateData),
+    })
+  }
+
+  async updateTemplate(id, templateData) {
+    return this.makeRequest(`/date-templates/single/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify(templateData),
+    })
+  }
+
+  async deleteTemplate(id) {
+    return this.makeRequest(`/date-templates/single/${id}`, {
+      method: 'DELETE',
+    })
+  }
+
+  async getTemplateGroupById(id) {
+    let endpoint = `/date-template-groups/${id}`
+    endpoint = this.addLocaleToEventUrl(endpoint)
+    return this.makeRequest(endpoint)
+  }
+
+  async createTemplateGroup(groupData) {
+    return this.makeRequest('/date-template-groups', {
+      method: 'POST',
+      body: JSON.stringify(groupData),
+    })
+  }
+
+  async updateTemplateGroup(id, groupData) {
+    return this.makeRequest(`/date-template-groups/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify(groupData),
+    })
+  }
+
+  async deleteTemplateGroup(id) {
+    return this.makeRequest(`/date-template-groups/${id}`, {
+      method: 'DELETE',
+    })
+  }
+
   // Tags API
   async getTags() {
     return this.makeRequest('/tags')

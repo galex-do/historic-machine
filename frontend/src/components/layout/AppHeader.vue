@@ -67,6 +67,14 @@
                 {{ t('tags') }}
               </router-link>
               <router-link 
+                to="/admin/templates" 
+                class="dropdown-item"
+                @click="showLogoDropdown = false"
+              >
+                <span class="dropdown-icon">📆</span>
+                {{ t('templates') }}
+              </router-link>
+              <router-link 
                 to="/admin/datasets" 
                 class="dropdown-item"
                 @click="showLogoDropdown = false"
