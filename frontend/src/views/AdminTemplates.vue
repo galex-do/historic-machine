@@ -180,9 +180,22 @@
                 </div>
               </div>
               
-              <div class="form-row">
+              <div class="locale-tabs">
+                <button type="button" 
+                        :class="['locale-tab', { active: activeTemplateLocale === 'en' }]" 
+                        @click="activeTemplateLocale = 'en'">
+                  English
+                </button>
+                <button type="button" 
+                        :class="['locale-tab', { active: activeTemplateLocale === 'ru' }]" 
+                        @click="activeTemplateLocale = 'ru'">
+                  Русский
+                </button>
+              </div>
+
+              <div v-show="activeTemplateLocale === 'en'" class="locale-content">
                 <div class="form-group">
-                  <label for="template-name-en">{{ t('nameEn') }} *</label>
+                  <label for="template-name-en">{{ t('columnName') }} (English) *</label>
                   <input 
                     id="template-name-en"
                     v-model="templateForm.name_en" 
@@ -193,20 +206,7 @@
                   />
                 </div>
                 <div class="form-group">
-                  <label for="template-name-ru">{{ t('nameRu') }}</label>
-                  <input 
-                    id="template-name-ru"
-                    v-model="templateForm.name_ru" 
-                    type="text" 
-                    class="form-input"
-                    placeholder="Название на русском"
-                  />
-                </div>
-              </div>
-              
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="template-desc-en">{{ t('descriptionEn') }}</label>
+                  <label for="template-desc-en">{{ t('columnDescription') }} (English)</label>
                   <textarea 
                     id="template-desc-en"
                     v-model="templateForm.description_en" 
@@ -215,8 +215,21 @@
                     rows="2"
                   ></textarea>
                 </div>
+              </div>
+
+              <div v-show="activeTemplateLocale === 'ru'" class="locale-content">
                 <div class="form-group">
-                  <label for="template-desc-ru">{{ t('descriptionRu') }}</label>
+                  <label for="template-name-ru">{{ t('columnName') }} (Русский)</label>
+                  <input 
+                    id="template-name-ru"
+                    v-model="templateForm.name_ru" 
+                    type="text" 
+                    class="form-input"
+                    placeholder="Название на русском"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="template-desc-ru">{{ t('columnDescription') }} (Русский)</label>
                   <textarea 
                     id="template-desc-ru"
                     v-model="templateForm.description_ru" 
@@ -286,49 +299,64 @@
             <div v-if="error" class="error-message">{{ error }}</div>
             
             <form @submit.prevent="saveGroup">
-              <div class="form-group">
-                <label for="group-name-en">{{ t('nameEn') }} *</label>
-                <input 
-                  id="group-name-en"
-                  v-model="groupForm.name_en" 
-                  type="text" 
-                  required 
-                  class="form-input"
-                  placeholder="Name in English"
-                />
+              <div class="locale-tabs">
+                <button type="button" 
+                        :class="['locale-tab', { active: activeGroupLocale === 'en' }]" 
+                        @click="activeGroupLocale = 'en'">
+                  English
+                </button>
+                <button type="button" 
+                        :class="['locale-tab', { active: activeGroupLocale === 'ru' }]" 
+                        @click="activeGroupLocale = 'ru'">
+                  Русский
+                </button>
               </div>
-              
-              <div class="form-group">
-                <label for="group-name-ru">{{ t('nameRu') }}</label>
-                <input 
-                  id="group-name-ru"
-                  v-model="groupForm.name_ru" 
-                  type="text" 
-                  class="form-input"
-                  placeholder="Название на русском"
-                />
+
+              <div v-show="activeGroupLocale === 'en'" class="locale-content">
+                <div class="form-group">
+                  <label for="group-name-en">{{ t('columnName') }} (English) *</label>
+                  <input 
+                    id="group-name-en"
+                    v-model="groupForm.name_en" 
+                    type="text" 
+                    required 
+                    class="form-input"
+                    placeholder="Name in English"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="group-desc-en">{{ t('columnDescription') }} (English)</label>
+                  <textarea 
+                    id="group-desc-en"
+                    v-model="groupForm.description_en" 
+                    class="form-textarea"
+                    placeholder="Description in English"
+                    rows="2"
+                  ></textarea>
+                </div>
               </div>
-              
-              <div class="form-group">
-                <label for="group-desc-en">{{ t('descriptionEn') }}</label>
-                <textarea 
-                  id="group-desc-en"
-                  v-model="groupForm.description_en" 
-                  class="form-textarea"
-                  placeholder="Description in English"
-                  rows="2"
-                ></textarea>
-              </div>
-              
-              <div class="form-group">
-                <label for="group-desc-ru">{{ t('descriptionRu') }}</label>
-                <textarea 
-                  id="group-desc-ru"
-                  v-model="groupForm.description_ru" 
-                  class="form-textarea"
-                  placeholder="Описание на русском"
-                  rows="2"
-                ></textarea>
+
+              <div v-show="activeGroupLocale === 'ru'" class="locale-content">
+                <div class="form-group">
+                  <label for="group-name-ru">{{ t('columnName') }} (Русский)</label>
+                  <input 
+                    id="group-name-ru"
+                    v-model="groupForm.name_ru" 
+                    type="text" 
+                    class="form-input"
+                    placeholder="Название на русском"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="group-desc-ru">{{ t('columnDescription') }} (Русский)</label>
+                  <textarea 
+                    id="group-desc-ru"
+                    v-model="groupForm.description_ru" 
+                    class="form-textarea"
+                    placeholder="Описание на русском"
+                    rows="2"
+                  ></textarea>
+                </div>
               </div>
               
               <div class="form-actions">
@@ -375,6 +403,9 @@ export default {
     const showCreateGroupModal = ref(false)
     const showEditGroupModal = ref(false)
     const editingGroup = ref(null)
+    
+    const activeTemplateLocale = ref('en')
+    const activeGroupLocale = ref('en')
     
     const sortField = ref('start_date')
     const sortDirection = ref('asc')
@@ -587,6 +618,7 @@ export default {
         end_date: '',
         end_era: 'BC'
       }
+      activeTemplateLocale.value = 'en'
       error.value = null
     }
 
@@ -662,6 +694,7 @@ export default {
         description_en: '',
         description_ru: ''
       }
+      activeGroupLocale.value = 'en'
       error.value = null
     }
 
@@ -692,6 +725,8 @@ export default {
       showEditGroupModal,
       editingGroup,
       groupForm,
+      activeTemplateLocale,
+      activeGroupLocale,
       localLoading,
       toggleSort,
       handlePageChange,
@@ -1198,5 +1233,51 @@ export default {
   .admin-modal.wide-modal {
     max-width: 95%;
   }
+}
+
+.locale-tabs {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.locale-tab {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.locale-tab:hover {
+  color: #4f46e5;
+}
+
+.locale-tab.active {
+  color: #4f46e5;
+}
+
+.locale-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #4f46e5;
+}
+
+.locale-content {
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 </style>
