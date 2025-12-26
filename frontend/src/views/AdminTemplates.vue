@@ -380,7 +380,7 @@
 </template>
 
 <script>
-import { ref, onMounted, computed } from 'vue'
+import { ref, onMounted, computed, watch } from 'vue'
 import { useAuth } from '@/composables/useAuth.js'
 import { useLocale } from '@/composables/useLocale.js'
 import apiService from '@/services/api.js'
@@ -393,7 +393,7 @@ export default {
   },
   setup() {
     const { canAccessAdmin } = useAuth()
-    const { t } = useLocale()
+    const { t, currentLocale } = useLocale()
     
     const templates = ref([])
     const templateGroups = ref([])
@@ -742,6 +742,10 @@ export default {
       activeGroupLocale.value = 'en'
       error.value = null
     }
+
+    watch(currentLocale, async () => {
+      await loadData()
+    })
 
     onMounted(async () => {
       await loadData()
