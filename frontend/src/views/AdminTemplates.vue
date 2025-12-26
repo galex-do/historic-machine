@@ -246,32 +246,38 @@
                   <div class="date-era-input">
                     <input 
                       id="start-date"
-                      v-model="templateForm.start_date" 
-                      type="date" 
+                      v-model="templateForm.start_date_display" 
+                      type="text" 
                       required 
                       class="form-input"
+                      placeholder="DD/MM/YYYY"
+                      @input="updateStartDate"
                     />
                     <select v-model="templateForm.start_era" class="era-select">
                       <option value="BC">BC</option>
                       <option value="AD">AD</option>
                     </select>
                   </div>
+                  <small class="form-hint">Format: DD/MM/YYYY (e.g., 01/01/3200)</small>
                 </div>
                 <div class="form-group">
                   <label for="end-date">{{ t('endDate') }} *</label>
                   <div class="date-era-input">
                     <input 
                       id="end-date"
-                      v-model="templateForm.end_date" 
-                      type="date" 
+                      v-model="templateForm.end_date_display" 
+                      type="text" 
                       required 
                       class="form-input"
+                      placeholder="DD/MM/YYYY"
+                      @input="updateEndDate"
                     />
                     <select v-model="templateForm.end_era" class="era-select">
                       <option value="BC">BC</option>
                       <option value="AD">AD</option>
                     </select>
                   </div>
+                  <small class="form-hint">Format: DD/MM/YYYY (e.g., 01/01/3000)</small>
                 </div>
               </div>
               
@@ -420,10 +426,45 @@ export default {
       description_en: '',
       description_ru: '',
       start_date: '',
+      start_date_display: '',
       start_era: 'BC',
       end_date: '',
+      end_date_display: '',
       end_era: 'BC'
     })
+    
+    const parseDateDisplay = (displayStr) => {
+      if (!displayStr || !displayStr.match(/^\d{2}\/\d{2}\/\d{1,4}$/)) {
+        return null
+      }
+      const [day, month, year] = displayStr.split('/')
+      const paddedYear = year.padStart(4, '0')
+      return `${paddedYear}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`
+    }
+    
+    const formatDateForDisplay = (isoDate) => {
+      if (!isoDate) return ''
+      const parts = isoDate.split('-')
+      if (parts.length !== 3) return ''
+      const year = parseInt(parts[0], 10).toString()
+      const month = parts[1]
+      const day = parts[2]
+      return `${day}/${month}/${year}`
+    }
+    
+    const updateStartDate = () => {
+      const parsed = parseDateDisplay(templateForm.value.start_date_display)
+      if (parsed) {
+        templateForm.value.start_date = parsed
+      }
+    }
+    
+    const updateEndDate = () => {
+      const parsed = parseDateDisplay(templateForm.value.end_date_display)
+      if (parsed) {
+        templateForm.value.end_date = parsed
+      }
+    }
     
     const groupForm = ref({
       name_en: '',
@@ -546,8 +587,10 @@ export default {
         description_en: template.description_en || template.description || '',
         description_ru: template.description_ru || '',
         start_date: template.start_date,
+        start_date_display: formatDateForDisplay(template.start_date),
         start_era: template.start_era || 'BC',
         end_date: template.end_date,
+        end_date_display: formatDateForDisplay(template.end_date),
         end_era: template.end_era || 'BC'
       }
       showEditTemplateModal.value = true
@@ -614,8 +657,10 @@ export default {
         description_en: '',
         description_ru: '',
         start_date: '',
+        start_date_display: '',
         start_era: 'BC',
         end_date: '',
+        end_date_display: '',
         end_era: 'BC'
       }
       activeTemplateLocale.value = 'en'
@@ -740,6 +785,8 @@ export default {
       deleteGroup,
       saveGroup,
       closeGroupModal,
+      updateStartDate,
+      updateEndDate,
       t
     }
   }
