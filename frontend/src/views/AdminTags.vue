@@ -257,6 +257,21 @@ export default {
       color: '#3B82F6'
     })
 
+    // Pre-computed usage counts cache (O(n) instead of O(n*m) per sort)
+    const tagUsageCountsMap = computed(() => {
+      const counts = new Map()
+      if (!events.value || !Array.isArray(events.value)) return counts
+      
+      for (const event of events.value) {
+        if (event.tags && Array.isArray(event.tags)) {
+          for (const tag of event.tags) {
+            counts.set(tag.id, (counts.get(tag.id) || 0) + 1)
+          }
+        }
+      }
+      return counts
+    })
+
     // Filtered and sorted tags
     const filteredTags = computed(() => {
       if (!allTags.value || !Array.isArray(allTags.value)) {
@@ -282,8 +297,8 @@ export default {
           aValue = new Date(a.created_at).getTime()
           bValue = new Date(b.created_at).getTime()
         } else if (sortField.value === 'usage_count') {
-          aValue = getTagUsageCount(a.id)
-          bValue = getTagUsageCount(b.id)
+          aValue = tagUsageCountsMap.value.get(a.id) || 0
+          bValue = tagUsageCountsMap.value.get(b.id) || 0
         } else {
           aValue = a[sortField.value] || ''
           bValue = b[sortField.value] || ''
@@ -324,10 +339,7 @@ export default {
     }
 
     const getTagUsageCount = (tagId) => {
-      if (!events.value || !Array.isArray(events.value)) return 0
-      return events.value.filter(event => 
-        event.tags && event.tags.some(tag => tag.id === tagId)
-      ).length
+      return tagUsageCountsMap.value.get(tagId) || 0
     }
     
     const navigateToEventsWithTag = (tag) => {
