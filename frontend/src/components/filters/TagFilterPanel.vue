@@ -186,11 +186,10 @@ export default {
       }
     }
     
-    // Count how many events have this tag (would need events prop for accuracy)
-    // For now, just show that it's available
+    // Get the event count for a tag (now passed via availableTags prop)
     const getTagEventCount = (tagId) => {
-      // This could be enhanced to show actual count if we pass events
-      return '✓'
+      const tag = props.availableTags.find(t => t.id === tagId)
+      return tag?.count || 0
     }
     
     // Setup scroll listener on mount

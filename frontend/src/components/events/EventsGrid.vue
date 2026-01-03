@@ -172,22 +172,25 @@ export default {
       return this.events.slice(start, end)
     },
     availableTags() {
-      // Extract all unique tags from currently displayed events
-      const tagMap = new Map()
+      // Extract all unique tags from currently displayed events with usage counts
+      const tagCountMap = new Map()
       
       this.events.forEach(event => {
         if (event.tags && Array.isArray(event.tags)) {
           event.tags.forEach(tag => {
-            if (!tagMap.has(tag.id)) {
-              tagMap.set(tag.id, tag)
+            const existing = tagCountMap.get(tag.id)
+            if (existing) {
+              existing.count++
+            } else {
+              tagCountMap.set(tag.id, { ...tag, count: 1 })
             }
           })
         }
       })
       
-      // Convert to array and sort alphabetically
-      return Array.from(tagMap.values()).sort((a, b) => 
-        a.name.localeCompare(b.name)
+      // Convert to array and sort by frequency (highest first)
+      return Array.from(tagCountMap.values()).sort((a, b) => 
+        b.count - a.count
       )
     }
   },
