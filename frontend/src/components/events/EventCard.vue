@@ -101,7 +101,10 @@ export default {
   font-size: 0.875rem;
   line-height: 1.5;
   color: #2d3748;
-  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   word-wrap: break-word;
 }
 

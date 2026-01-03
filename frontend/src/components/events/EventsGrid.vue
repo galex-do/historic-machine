@@ -274,7 +274,7 @@ export default {
   background: transparent;
   padding: 1rem;
   height: 100%;
-  overflow-y: auto;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -345,6 +345,8 @@ export default {
   flex-direction: column;
   gap: 0.75rem;
   flex: 1;
+  overflow-y: auto;
+  min-height: 0; /* Allow flex item to shrink and scroll */
 }
 
 .no-events {
