@@ -32,8 +32,13 @@
       </button>
     </div>
     
-    <!-- Description (truncated) -->
-    <div v-if="event.description" class="event_description">
+    <!-- Description (truncated, clickable to show full) -->
+    <div 
+      v-if="event.description" 
+      class="event_description"
+      @click="$emit('show-detail', event)"
+      :title="t('clickToReadMore')"
+    >
       {{ event.description }}
     </div>
     
@@ -72,7 +77,7 @@ export default {
       default: false
     }
   },
-  emits: ['focus-event', 'highlight-event', 'tag-clicked'],
+  emits: ['focus-event', 'highlight-event', 'tag-clicked', 'show-detail'],
   setup() {
     const { formatEventDisplayDate, t } = useLocale()
     
@@ -141,6 +146,12 @@ export default {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.event_description:hover {
+  color: #3b82f6;
 }
 
 .event_tags_row {

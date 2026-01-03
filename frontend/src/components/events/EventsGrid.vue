@@ -95,6 +95,7 @@
         @focus-event="$emit('focus-event', $event)"
         @highlight-event="$emit('highlight-event', $event)"
         @tag-clicked="$emit('tag-clicked', $event)"
+        @show-detail="openEventDetail"
       />
     </div>
 
@@ -103,6 +104,15 @@
       :is-open="timelineModalOpen"
       :events="events"
       @close="timelineModalOpen = false"
+      @focus-event="$emit('focus-event', $event)"
+      @tag-clicked="$emit('tag-clicked', $event)"
+    />
+
+    <!-- Event Detail Modal -->
+    <EventDetailModal
+      :is-open="eventDetailModalOpen"
+      :event="selectedDetailEvent"
+      @close="eventDetailModalOpen = false"
       @focus-event="$emit('focus-event', $event)"
       @tag-clicked="$emit('tag-clicked', $event)"
     />
@@ -115,13 +125,15 @@ import { useGeolocation } from '@/composables/useGeolocation.js'
 import EventCard from './EventCard.vue'
 import TagFilterPanel from '../filters/TagFilterPanel.vue'
 import TimelineModal from '../timeline/TimelineModal.vue'
+import EventDetailModal from './EventDetailModal.vue'
 
 export default {
   name: 'EventsGrid',
   components: {
     EventCard,
     TagFilterPanel,
-    TimelineModal
+    TimelineModal,
+    EventDetailModal
   },
   props: {
     events: {
@@ -167,6 +179,8 @@ export default {
       eventsPerPage: 3, // Maximum 3 cards to prevent sidebar scrolling
       tagFilterVisible: loadTagFilterState(),
       timelineModalOpen: false,
+      eventDetailModalOpen: false,
+      selectedDetailEvent: {},
       STORAGE_KEY
     }
   },
@@ -256,6 +270,10 @@ export default {
     },
     openTimeline() {
       this.timelineModalOpen = true
+    },
+    openEventDetail(event) {
+      this.selectedDetailEvent = event
+      this.eventDetailModalOpen = true
     },
     async requestGeolocation() {
       try {

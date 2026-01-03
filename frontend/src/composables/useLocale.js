@@ -238,6 +238,7 @@ const UI_TRANSLATIONS = {
     disableNarrativeFlow: 'Disable narrative flow',
     focusOnMap: 'Focus on map',
     highlightOnMap: 'Highlight on map',
+    clickToReadMore: 'Click to read more',
     
     // Timeline
     timelineView: 'Timeline view',
@@ -529,6 +530,7 @@ const UI_TRANSLATIONS = {
     disableNarrativeFlow: 'Отключить нарративный поток',
     focusOnMap: 'Фокус на карте',
     highlightOnMap: 'Выделить на карте',
+    clickToReadMore: 'Нажмите, чтобы читать далее',
     
     // Timeline
     timelineView: 'Вид временной шкалы',
