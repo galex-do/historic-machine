@@ -17,25 +17,17 @@
       </div>
 
       <div class="event_detail_content">
-        <div class="timeline_container">
-          <div class="timeline_line"></div>
-          <div class="timeline_event">
-            <div class="timeline_bullet"></div>
-            <div class="event_body">
-              <div class="event_date">{{ formatEventDisplayDate(event.event_date, event.era) }}</div>
-              <div v-if="event.description" class="event_description">{{ event.description }}</div>
-              <div v-if="event.tags && event.tags.length > 0" class="event_tags">
-                <span
-                  v-for="tag in event.tags"
-                  :key="tag.id"
-                  class="event_tag"
-                  :style="{ color: tag.color || '#6366f1' }"
-                  @click.stop="handleTagClick(tag)"
-                  :title="tag.description"
-                >#{{ tag.name }}</span>
-              </div>
-            </div>
-          </div>
+        <div class="event_date">{{ formatEventDisplayDate(event.event_date, event.era) }}</div>
+        <div v-if="event.description" class="event_description">{{ event.description }}</div>
+        <div v-if="event.tags && event.tags.length > 0" class="event_tags">
+          <span
+            v-for="tag in event.tags"
+            :key="tag.id"
+            class="event_tag"
+            :style="{ color: tag.color || '#6366f1' }"
+            @click.stop="handleTagClick(tag)"
+            :title="tag.description"
+          >#{{ tag.name }}</span>
         </div>
 
         <div class="event_actions">
@@ -210,45 +202,11 @@ export default {
   overflow-y: auto;
 }
 
-.timeline_container {
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-.timeline_line {
-  position: absolute;
-  left: 0.35rem;
-  top: 0.5rem;
-  bottom: 0.5rem;
-  width: 2px;
-  background: #e2e8f0;
-}
-
-.timeline_event {
-  position: relative;
-}
-
-.timeline_bullet {
-  position: absolute;
-  left: -1.15rem;
-  top: 0.35rem;
-  width: 10px;
-  height: 10px;
-  background: #3b82f6;
-  border-radius: 50%;
-  border: 2px solid white;
-  box-shadow: 0 0 0 2px #e2e8f0;
-}
-
-.event_body {
-  padding-left: 0.5rem;
-}
-
 .event_date {
   font-size: 0.8rem;
   font-weight: 600;
   color: #64748b;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .event_description {
