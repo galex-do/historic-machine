@@ -604,6 +604,11 @@ export default {
       this.map.setView([lat, lng], zoom, { animate: false })
     },
 
+    // Preserve current map view (prevents auto-refocus when events change)
+    preserveCurrentView() {
+      this.preserve_map_view = true
+    },
+
     // Render user location marker on the map
     renderUserLocation(lat, lng) {
       // Clear any existing user location marker

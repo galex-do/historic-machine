@@ -425,6 +425,8 @@ export default {
     const handleLocaleChanged = async (locale) => {
       console.log('Locale changed in MapView, refetching events for locale:', locale)
       try {
+        // Preserve current map view during locale change
+        worldMap.value?.preserveCurrentView?.()
         await fetchEvents() // Refetch events with new locale
         // Reapply current filters to the newly fetched events
         applyFilters()
