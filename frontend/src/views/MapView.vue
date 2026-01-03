@@ -24,6 +24,15 @@
         <!-- Sidebar Header -->
         <div class="sidebar-header">
           <h3 class="section-title" v-show="!sidebarCollapsed">{{ t('historicalEvents') }}</h3>
+          <div class="sidebar-actions" v-show="!sidebarCollapsed">
+            <button 
+              class="share-btn" 
+              @click="handleShareUrl"
+              :title="share_copied ? t('shareCopied') : t('shareUrl')"
+            >
+              {{ share_copied ? '✓' : '🔗' }}
+            </button>
+          </div>
           <button class="sidebar-toggle" @click="toggleSidebar">
             {{ sidebarCollapsed ? '›' : '‹' }}
           </button>
@@ -77,6 +86,7 @@ import { useTemplates } from '@/composables/useTemplates.js'
 import { useFilters } from '@/composables/useFilters.js'
 import { useTags } from '@/composables/useTags.js'
 import { useLocale } from '@/composables/useLocale.js'
+import { useUrlState } from '@/composables/useUrlState.js'
 
 export default {
   name: 'MapView',
@@ -171,6 +181,34 @@ export default {
 
     // Use locale for UI translations
     const { t } = useLocale()
+
+    // URL state sharing
+    const share_copied = ref(false)
+    const {
+      initialize_from_url,
+      copy_share_url,
+      update_url_silently,
+      has_url_params,
+      setup_url_sync
+    } = useUrlState({
+      dateFromDisplay,
+      dateToDisplay,
+      selectedTags,
+      updateDateFrom,
+      updateDateTo,
+      addTag,
+      clearTags,
+      allTags,
+      getMapState: () => worldMap.value?.getMapState?.(),
+      setMapState: (lat, lng, zoom) => {
+        if (worldMap.value?.setMapState) {
+          worldMap.value.setMapState(lat, lng, zoom)
+        }
+      }
+    })
+
+    // Setup URL sync for filter changes
+    setup_url_sync()
 
     // Sidebar methods
     const toggleSidebar = () => {
@@ -292,6 +330,9 @@ export default {
       }
     }
 
+    // Debounce timer for URL updates
+    let urlUpdateTimer = null
+    
     const handleMapBoundsChanged = (bounds) => {
       if (mapFilterEnabled.value) {
         // Debounce bounds updates to prevent oscillation loop
@@ -306,6 +347,18 @@ export default {
           boundsDebounceTimer = null
         }, 200) // 200ms delay allows layout to stabilize
       }
+      
+      // Update URL with map position (debounced)
+      if (urlUpdateTimer) {
+        clearTimeout(urlUpdateTimer)
+      }
+      urlUpdateTimer = setTimeout(() => {
+        const mapState = worldMap.value?.getMapState?.()
+        if (mapState) {
+          update_url_silently(mapState)
+        }
+        urlUpdateTimer = null
+      }, 500) // 500ms delay to avoid too frequent URL updates
     }
 
     const isEventInBounds = (event, bounds) => {
@@ -387,8 +440,45 @@ export default {
       }
     }
 
+    // Share URL handler
+    const handleShareUrl = async () => {
+      const mapState = worldMap.value?.getMapState?.()
+      const result = await copy_share_url(mapState)
+      if (result.success) {
+        share_copied.value = true
+        setTimeout(() => {
+          share_copied.value = false
+        }, 2000)
+      }
+    }
+
     // Initialize data on mount
     onMounted(async () => {
+      // Check for URL params and apply them after tags are loaded
+      const checkAndApplyUrlParams = () => {
+        if (allTags.value && allTags.value.length > 0) {
+          const applied = initialize_from_url(allTags.value)
+          if (applied) {
+            console.log('Applied URL state to filters')
+            applyFilters()
+          }
+        }
+      }
+
+      // Watch for tags to load if URL has params
+      if (has_url_params()) {
+        if (allTags.value && allTags.value.length > 0) {
+          checkAndApplyUrlParams()
+        } else {
+          const unwatchTags = watch(allTags, (tags) => {
+            if (tags && tags.length > 0) {
+              checkAndApplyUrlParams()
+              unwatchTags()
+            }
+          })
+        }
+      }
+      
       // Apply filters if events are already loaded
       if (eventsLoaded.value) {
         applyFilters()
@@ -456,6 +546,10 @@ export default {
       // Narrative flow
       narrativeFlowEnabled,
 
+      // URL sharing
+      share_copied,
+      handleShareUrl,
+
       // Localization
       t
     }
@@ -522,6 +616,38 @@ export default {
   margin: 0;
   font-size: 1.1rem;
   font-weight: 600;
+}
+
+.sidebar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+  margin-right: 0.5rem;
+}
+
+.share-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #4a5568;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  font-size: 1rem;
+}
+
+.share-btn:hover {
+  background: #f0f4f8;
+  border-color: #cbd5e0;
+}
+
+.share-btn:active {
+  transform: scale(0.95);
 }
 
 .sidebar-toggle {

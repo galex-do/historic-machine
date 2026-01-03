@@ -582,6 +582,28 @@ export default {
       this.renderUserLocation(lat, lng)
     },
 
+    // Get current map center and zoom (for URL sharing)
+    getMapState() {
+      if (!this.map) {
+        return null
+      }
+      const center = this.map.getCenter()
+      return {
+        lat: center.lat,
+        lng: center.lng,
+        zoom: this.map.getZoom()
+      }
+    },
+
+    // Set map center and zoom (for URL restoration)
+    setMapState(lat, lng, zoom) {
+      if (!this.map) {
+        console.warn('Map not initialized')
+        return
+      }
+      this.map.setView([lat, lng], zoom, { animate: false })
+    },
+
     // Render user location marker on the map
     renderUserLocation(lat, lng) {
       // Clear any existing user location marker

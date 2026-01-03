@@ -66,6 +66,10 @@ const UI_TRANSLATIONS = {
     geolocationTimeout: 'Location request timed out',
     geolocationError: 'An error occurred while getting your location',
     
+    // URL sharing
+    shareUrl: 'Copy shareable link',
+    shareCopied: 'Link copied!',
+    
     // Login Modal
     loginToHistoria: 'Login to Historia ex machina',
     username: 'Username:',
@@ -352,6 +356,10 @@ const UI_TRANSLATIONS = {
     geolocationUnavailable: 'Информация о местоположении недоступна',
     geolocationTimeout: 'Время запроса местоположения истекло',
     geolocationError: 'Произошла ошибка при определении местоположения',
+    
+    // URL sharing
+    shareUrl: 'Скопировать ссылку',
+    shareCopied: 'Ссылка скопирована!',
     
     // Login Modal
     loginToHistoria: 'Вход в Historia ex machina',
