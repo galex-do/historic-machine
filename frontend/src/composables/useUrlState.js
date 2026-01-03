@@ -36,14 +36,24 @@ export function useUrlState(options = {}) {
       state.dateTo = params.get(URL_PARAMS.DATE_TO)
     }
     if (params.has(URL_PARAMS.TAGS)) {
-      state.tagIds = params.get(URL_PARAMS.TAGS).split(',').map(id => parseInt(id, 10)).filter(id => !isNaN(id))
+      state.tagIds = params.get(URL_PARAMS.TAGS)
+        .split(',')
+        .map(id => parseInt(id, 10))
+        .filter(id => !isNaN(id) && id > 0 && id < 1000000)
     }
     if (params.has(URL_PARAMS.LAT) && params.has(URL_PARAMS.LNG)) {
-      state.lat = parseFloat(params.get(URL_PARAMS.LAT))
-      state.lng = parseFloat(params.get(URL_PARAMS.LNG))
+      const lat = parseFloat(params.get(URL_PARAMS.LAT))
+      const lng = parseFloat(params.get(URL_PARAMS.LNG))
+      if (!isNaN(lat) && !isNaN(lng) && lat >= -90 && lat <= 90 && lng >= -180 && lng <= 180) {
+        state.lat = lat
+        state.lng = lng
+      }
     }
     if (params.has(URL_PARAMS.ZOOM)) {
-      state.zoom = parseInt(params.get(URL_PARAMS.ZOOM), 10)
+      const zoom = parseInt(params.get(URL_PARAMS.ZOOM), 10)
+      if (!isNaN(zoom) && zoom >= 1 && zoom <= 20) {
+        state.zoom = zoom
+      }
     }
 
     return state
