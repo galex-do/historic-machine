@@ -39,6 +39,7 @@ A comprehensive web application for mapping historical events on an interactive 
 ### Feature Specifications
 - **Interactive World Map**: Displays event markers with hover details, click-to-add functionality, and narrative flow visualization between filtered events.
 - **Browser Geolocation**: "Find my location" button (📍) in the events panel header allows users to center and zoom the map on their current position using the browser's Geolocation API. Includes proper error handling for permission denied, unavailable, and timeout scenarios with localized messages.
+- **URL Sharing**: Share button (🔗) copies a URL with current filter state (date range, selected tags, map center/zoom) to clipboard. URLs restore full application state when opened, enabling bookmarking and sharing specific views. URL updates automatically as user navigates.
 - **Timeline Filtering**: Date range selection (FROM/TO fields) and historical period templates with chronological sorting.
 - **Event Management**: CRUD operations for events via an admin panel, including BC date editing.
 - **Lens System**: Categorization system for different event types.
