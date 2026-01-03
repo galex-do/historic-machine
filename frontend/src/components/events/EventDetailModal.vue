@@ -220,8 +220,9 @@ export default {
 .event_tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.25rem 0.5rem;
   margin-top: 0.75rem;
+  line-height: 1.2;
 }
 
 .event_tag {
@@ -229,6 +230,7 @@ export default {
   font-weight: 600;
   cursor: pointer;
   transition: opacity 0.2s;
+  line-height: 1.2;
 }
 
 .event_tag:hover {
