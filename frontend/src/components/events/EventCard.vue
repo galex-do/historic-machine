@@ -1,9 +1,8 @@
 <template>
   <div class="event-card-compact">
-    <!-- Single line with all event info -->
-    <span class="event_line_text">
+    <!-- Title line with icon and name -->
+    <div class="event_title_line">
       <span class="event_icon">{{ getEventEmoji(event.lens_type) }}</span>
-      {{ ' ' }}
       <a 
         v-if="event.source"
         :href="event.source" 
@@ -15,21 +14,6 @@
         {{ event.name }}
       </a>
       <span v-else class="event_name">{{ event.name }}</span>
-      <template v-if="event.description">
-        {{ ' — ' }}{{ event.description }}
-      </template>
-      <template v-if="event.tags && event.tags.length > 0">
-        {{ ' ' }}
-        <span
-          v-for="(tag, index) in event.tags"
-          :key="tag.id"
-          class="event_tag"
-          :style="{ color: tag.color || '#6366f1' }"
-          @click.stop="$emit('tag-clicked', tag)"
-          :title="tag.description"
-        >#{{ tag.name }}{{ index < event.tags.length - 1 ? ' ' : '' }}</span>
-      </template>
-      {{ ' ' }}
       <button 
         v-if="mapFilterEnabled"
         class="highlight_btn" 
@@ -46,9 +30,26 @@
       >
         ⌖
       </button>
-    </span>
+    </div>
     
-    <!-- Date below the line -->
+    <!-- Description (truncated) -->
+    <div v-if="event.description" class="event_description">
+      {{ event.description }}
+    </div>
+    
+    <!-- Tags row (always visible) -->
+    <div v-if="event.tags && event.tags.length > 0" class="event_tags_row">
+      <span
+        v-for="(tag, index) in event.tags"
+        :key="tag.id"
+        class="event_tag"
+        :style="{ color: tag.color || '#6366f1' }"
+        @click.stop="$emit('tag-clicked', tag)"
+        :title="tag.description"
+      >#{{ tag.name }}</span>
+    </div>
+    
+    <!-- Date below -->
     <div class="event_date_line">
       {{ formatEventDisplayDate(event.event_date, event.era) }}
     </div>
@@ -97,24 +98,24 @@ export default {
   background-color: #f8f9fa;
 }
 
-.event_line_text {
+.event_title_line {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.25rem;
   font-size: 0.875rem;
-  line-height: 1.5;
-  color: #2d3748;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  word-wrap: break-word;
+  line-height: 1.4;
 }
 
 .event_icon {
   font-size: 1rem;
+  flex-shrink: 0;
 }
 
 .event_name {
   font-weight: 600;
   color: #2d3748;
+  flex: 1;
+  min-width: 0;
 }
 
 .event_name_link {
@@ -122,6 +123,8 @@ export default {
   color: #3b82f6;
   text-decoration: none;
   transition: color 0.2s;
+  flex: 1;
+  min-width: 0;
 }
 
 .event_name_link:hover {
@@ -129,8 +132,26 @@ export default {
   text-decoration: underline;
 }
 
+.event_description {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: #4a5568;
+  margin-top: 0.25rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.event_tags_row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+}
+
 .event_tag {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
   cursor: pointer;
   transition: opacity 0.2s;
@@ -145,12 +166,12 @@ export default {
   background: none;
   border: none;
   color: #64748b;
-  font-size: 1rem;
+  font-size: 0.9rem;
   cursor: pointer;
-  padding: 0 0.25rem;
+  padding: 0;
   transition: color 0.2s;
-  vertical-align: middle;
-  display: inline;
+  flex-shrink: 0;
+  margin-left: auto;
 }
 
 .highlight_btn:hover {
@@ -169,7 +190,7 @@ export default {
 }
 
 .event_date_line {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: #718096;
   margin-top: 0.25rem;
   font-weight: 500;
