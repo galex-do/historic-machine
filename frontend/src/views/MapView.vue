@@ -56,6 +56,7 @@
           :events="filteredEvents" 
           :focus-event="focusEvent"
           :narrative-flow-enabled="narrativeFlowEnabled"
+          :map-filter-enabled="mapFilterEnabled"
           @event-created="handleEventCreated"
           @event-updated="handleEventUpdated"
           @event-deleted="handleEventDeleted"

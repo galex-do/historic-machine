@@ -214,6 +214,10 @@ export default {
     narrativeFlowEnabled: {
       type: Boolean,
       default: false
+    },
+    mapFilterEnabled: {
+      type: Boolean,
+      default: false
     }
   },
   emits: ['event-created', 'event-updated', 'event-deleted', 'map-bounds-changed', 'tag-clicked'],
@@ -262,8 +266,9 @@ export default {
           if (this.narrativeFlowEnabled) {
             this.render_narrative_flow()
           }
-          // Only recenter map if not stepping through dates and not preserving view after edit
-          if (!this.is_stepping && !this.preserve_map_view) {
+          // Only recenter map if not stepping, not preserving view, and map filter is off
+          // When map filter is enabled, user is inspecting a specific area - don't refocus
+          if (!this.is_stepping && !this.preserve_map_view && !this.mapFilterEnabled) {
             this.fit_map_to_events()
           }
           // Reset flags after processing
