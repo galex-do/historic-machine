@@ -24,15 +24,6 @@
         <!-- Sidebar Header -->
         <div class="sidebar-header">
           <h3 class="section-title" v-show="!sidebarCollapsed">{{ t('historicalEvents') }}</h3>
-          <div class="sidebar-actions" v-show="!sidebarCollapsed">
-            <button 
-              class="share-btn" 
-              @click="handleShareUrl"
-              :title="share_copied ? t('shareCopied') : t('shareUrl')"
-            >
-              {{ share_copied ? '✓' : '🔗' }}
-            </button>
-          </div>
           <button class="sidebar-toggle" @click="toggleSidebar">
             {{ sidebarCollapsed ? '›' : '‹' }}
           </button>
@@ -45,6 +36,7 @@
             :selected-tags="selectedTags"
             :follow-enabled="narrativeFlowEnabled"
             :map-filter-enabled="mapFilterEnabled"
+            :share-copied="share_copied"
             @focus-event="focusOnEvent"
             @highlight-event="highlightOnEvent"
             @map-filter-toggle="handleMapFilterToggle"
@@ -53,6 +45,7 @@
             @clear-all-tags="handleClearAllTags"
             @toggle-follow="handleToggleNarrativeFlow"
             @geolocate="handleGeolocate"
+            @share="handleShareUrl"
           />
         </div>
       </aside>
@@ -616,38 +609,6 @@ export default {
   margin: 0;
   font-size: 1.1rem;
   font-weight: 600;
-}
-
-.sidebar-actions {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-left: auto;
-  margin-right: 0.5rem;
-}
-
-.share-btn {
-  width: 32px;
-  height: 32px;
-  border: 1px solid #e2e8f0;
-  border-radius: 6px;
-  background: #ffffff;
-  color: #4a5568;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s;
-  font-size: 1rem;
-}
-
-.share-btn:hover {
-  background: #f0f4f8;
-  border-color: #cbd5e0;
-}
-
-.share-btn:active {
-  transform: scale(0.95);
 }
 
 .sidebar-toggle {

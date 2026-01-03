@@ -3,26 +3,23 @@
     <!-- Events Header with Filters -->
     <div class="events-header">
       <div class="events-info">
-        <div class="events-count">
-          {{ events.length }} event{{ events.length !== 1 ? 's' : '' }}
-        </div>
-        <!-- Pagination Controls -->
-        <div v-if="totalPages > 1" class="pagination-controls">
+        <!-- Merged Pagination with Count -->
+        <div class="pagination-controls">
           <button 
             @click="goToPage(currentPage - 1)"
-            :disabled="currentPage === 1"
+            :disabled="currentPage === 1 || totalPages <= 1"
             class="pagination-btn"
           >
             ‹
           </button>
           
           <span class="page-info">
-            {{ currentPage }}/{{ totalPages }}
+            {{ paginationDisplay }}
           </span>
           
           <button 
             @click="goToPage(currentPage + 1)"
-            :disabled="currentPage === totalPages"
+            :disabled="currentPage === totalPages || totalPages <= 1"
             class="pagination-btn"
           >
             ›
@@ -30,6 +27,13 @@
         </div>
       </div>
       <div class="events-filters">
+        <button 
+          @click="handleShare"
+          class="filter-btn share-btn"
+          :title="shareCopied ? t('shareCopied') : t('shareUrl')"
+        >
+          {{ shareCopied ? '✓' : '🔗' }}
+        </button>
         <button 
           @click="openTimeline"
           class="filter-btn timeline-btn"
@@ -135,9 +139,13 @@ export default {
     mapFilterEnabled: {
       type: Boolean,
       default: false
+    },
+    shareCopied: {
+      type: Boolean,
+      default: false
     }
   },
-  emits: ['focus-event', 'highlight-event', 'map-filter-toggle', 'tag-clicked', 'remove-tag', 'clear-all-tags', 'toggle-follow', 'geolocate'],
+  emits: ['focus-event', 'highlight-event', 'map-filter-toggle', 'tag-clicked', 'remove-tag', 'clear-all-tags', 'toggle-follow', 'geolocate', 'share'],
   setup() {
     const { t } = useLocale()
     const { loading: geolocationLoading, get_current_position } = useGeolocation()
@@ -170,6 +178,14 @@ export default {
       const start = (this.currentPage - 1) * this.eventsPerPage
       const end = start + this.eventsPerPage
       return this.events.slice(start, end)
+    },
+    paginationDisplay() {
+      if (this.events.length === 0) {
+        return '0'
+      }
+      const start = (this.currentPage - 1) * this.eventsPerPage + 1
+      const end = Math.min(this.currentPage * this.eventsPerPage, this.events.length)
+      return `${start}-${end}/${this.events.length}`
     },
     availableTags() {
       // Extract all unique tags from currently displayed events with usage counts
@@ -228,6 +244,9 @@ export default {
       if (page >= 1 && page <= this.totalPages) {
         this.currentPage = page
       }
+    },
+    handleShare() {
+      this.$emit('share')
     },
     toggleMapFilter() {
       this.$emit('map-filter-toggle', !this.mapFilterEnabled)
