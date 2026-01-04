@@ -282,7 +282,26 @@ export default {
       } catch (error) {
         alert(error.message)
       }
+    },
+    handleKeydown(e) {
+      // Skip if a modal is open or user is typing in an input
+      if (this.timelineModalOpen || this.eventDetailModalOpen) return
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return
+      
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault()
+        this.goToPage(this.currentPage - 1)
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault()
+        this.goToPage(this.currentPage + 1)
+      }
     }
+  },
+  mounted() {
+    document.addEventListener('keydown', this.handleKeydown)
+  },
+  beforeUnmount() {
+    document.removeEventListener('keydown', this.handleKeydown)
   }
 }
 </script>
