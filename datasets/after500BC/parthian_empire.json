@@ -1,56 +1,108 @@
 {
-  "description": "Comprehensive dataset of the Parthian Empire (Arsacid Dynasty), from foundation to fall (247 BC - 224 AD)",
+  "description": "Dataset imported with 64 events",
   "events": [
     {
-      "date": "01.01.0238",
-      "description": "Arsaces I and the Parni tribe conquer Parthia from Seleucid satrap Andragoras, deposing him and establishing firm control over the region; this consolidates Arsacid power in the former Seleucid satrapy",
-      "description_ru": "Аршак I и племя парнов завоёвывают Парфию у селевкидского сатрапа Андрагора, свергая его и устанавливая прочный контроль над регионом; это укрепляет власть Аршакидов в бывшей селевкидской сатрапии",
+      "date": "01.09.0238",
+      "description": "Arsaces needed a powerful fortress in his new northern lands to assert his claim to the region and create a fortified base in case of a Seleucid counterattack. Nisa was built as the dynastic seat of the Arsacids; their necropolis and treasury were located here.",
+      "description_ru": "Аршаку нужна была мощная крепость на новых северных землях, чтобы обозначить свое право на владение регионом и создать укрепленную базу на случай контрудара Селевкидов. Ниса строилась как династическое гнездо Аршакидов, здесь был их некрополь и сокровищница.\n",
       "era": "BC",
       "latitude": 37.967,
       "longitude": 58.195,
+      "name": "The founding of Parthian Nisa",
+      "name_ru": "Основание парфянской Нисы",
+      "tags": [
+        "Parthian",
+        "City",
+        "Arsacid"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0238",
+      "description": "Arsaces I and the Parni tribe conquer Parthia from Seleucid satrap Andragoras, deposing him and establishing firm control over the region; this consolidates Arsacid power in the former Seleucid satrapy",
+      "description_ru": "Аршак I завоёвывает Парфию у бывшего селевкидского сатрапа Андрагора, свергая его и устанавливая контроль над регионом; Аршак позиционирует себя как освободителя иранских народов от иноземного греческого владычества и называет себя потомком Ахеменидов (что не подтверждено научно)",
+      "era": "BC",
+      "latitude": 37.1061,
+      "longitude": 58.5094,
       "name": "Arsaces I Conquers Parthia from Andragoras",
-      "name_ru": "Аршак I завоёвывает Парфию у Андрагора",
+      "name_ru": "Аршак I подчиняет Парфию",
       "source": "https://en.wikipedia.org/wiki/Arsaces_I_of_Parthia",
-      "tags": ["Parthian", "Arsacid", "Conquest", "Parni"],
+      "tags": [
+        "Arsacid",
+        "Conquest",
+        "Parthian"
+      ],
       "type": "military"
     },
     {
       "date": "01.01.0237",
       "description": "Seleucus II Callinicus launches a campaign to reclaim Parthia from Arsaces I, but is forced to withdraw due to troubles in his western territories; this failed reconquest allows the Arsacid dynasty to consolidate its independence",
-      "description_ru": "Селевк II Каллиник начинает кампанию по возвращению Парфии у Аршака I, но вынужден отступить из-за проблем в западных владениях; эта неудачная попытка реконкисты позволяет династии Аршакидов укрепить независимость",
+      "description_ru": "Селевк II Каллиник пытается отбить Парфию у Аршака I, но вынужден отступить из-за проблем в западных владениях; эта неудачная попытка реконкисты укрепляет власть и независимость Аршакидов в Парфии",
       "era": "BC",
       "latitude": 37.967,
       "longitude": 58.195,
       "name": "Seleucus II's Failed Parthian Campaign",
       "name_ru": "Неудачный поход Селевка II на Парфию",
       "source": "https://en.wikipedia.org/wiki/Seleucus_II_Callinicus",
-      "tags": ["Parthian", "Seleucid", "War", "Independence"],
+      "tags": [
+        "Seleucid",
+        "Parthian",
+        "Independence"
+      ],
       "type": "military"
     },
     {
       "date": "01.01.0217",
       "description": "Arsaces II becomes King of Parthia, continuing the consolidation of Arsacid rule; his reign sees the defense of Parthian territories against Seleucid attempts at reconquest",
-      "description_ru": "Аршак II становится царём Парфии, продолжая укрепление власти Аршакидов; в его правление происходит защита парфянских территорий от попыток селевкидской реконкисты",
+      "description_ru": "Аршак II становится царём Парфии, продолжая укрепление власти Аршакидов; в его правление парфяне продолжают защищаться от попыток Селевкидов вернуть их под контроль",
       "era": "BC",
-      "latitude": 37.967,
-      "longitude": 58.195,
+      "latitude": 37.1061,
+      "longitude": 58.5094,
       "name": "Reign of Arsaces II Begins",
-      "name_ru": "Начало правления Аршака II",
+      "name_ru": "Аршак II - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Arsaces_II_of_Parthia",
-      "tags": ["Parthian", "Arsacid", "King", "Dynasty"],
+      "tags": [
+        "Dynasty",
+        "King",
+        "Parthian",
+        "Arsacid"
+      ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0200",
+      "description": "The Parthians made Hecatompylus their administrative and commercial capital. The city was located at the crossroads of important caravan routes, including the Silk Road. Hecatompylus also served as the king's autumn residence and a military outpost.",
+      "description_ru": "Парфяне сделали Гекатомпил своей административной и торговой столицей. Город располагался на пересечении важнейших караванных путей, включая Великий шелковый путь. Также Гекатомпил играл роль осенней резиденции царя и военного форпоста",
+      "era": "BC",
+      "latitude": 35.9511,
+      "longitude": 54.1128,
+      "name": "Hecatompylus - capital of Parthia",
+      "name_ru": "Перенос столицы Парфии в Гекатомпил",
+      "tags": [
+        "Parthian",
+        "Capital",
+        "Trade",
+        "Administration",
+        "Silk Road"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0191",
       "description": "Priapatius becomes King of Parthia, ruling during a period of recovery after Seleucid vassalage; he begins preparations for future expansion that would be realized by his successors",
       "description_ru": "Приапатий становится царём Парфии, правя в период восстановления после селевкидского вассалитета; он начинает подготовку к будущей экспансии, которую осуществят его преемники",
       "era": "BC",
-      "latitude": 36.167,
-      "longitude": 54.35,
+      "latitude": 35.9511,
+      "longitude": 54.1128,
       "name": "Reign of Priapatius",
-      "name_ru": "Правление Приапатия",
+      "name_ru": "Приапат - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Priapatius",
-      "tags": ["Parthian", "Arsacid", "King"],
+      "tags": [
+        "Arsacid",
+        "King",
+        "Parthian",
+        "Dynasty"
+      ],
       "type": "political"
     },
     {
@@ -58,12 +110,18 @@
       "description": "Phraates I becomes King of Parthia; he expands Parthian territory westward, conquering the region of Choarene and laying groundwork for the great conquests of his brother Mithridates I",
       "description_ru": "Фраат I становится царём Парфии; он расширяет парфянскую территорию на запад, завоёвывая область Хоарена и закладывая основу для великих завоеваний своего брата Митридата I",
       "era": "BC",
-      "latitude": 36.167,
-      "longitude": 54.35,
+      "latitude": 35.9511,
+      "longitude": 54.1128,
       "name": "Reign of Phraates I",
-      "name_ru": "Правление Фраата I",
+      "name_ru": "Фраат I - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Phraates_I",
-      "tags": ["Parthian", "Arsacid", "King", "Expansion"],
+      "tags": [
+        "King",
+        "Dynasty",
+        "Expansion",
+        "Arsacid",
+        "Parthian"
+      ],
       "type": "political"
     },
     {
@@ -71,25 +129,37 @@
       "description": "Mithridates I becomes King of Parthia, beginning one of the most transformative reigns in Parthian history; under his rule, Parthia transforms from a minor kingdom into a major empire",
       "description_ru": "Митридат I становится царём Парфии, начиная одно из самых преобразующих правлений в парфянской истории; под его властью Парфия превращается из небольшого царства в великую империю",
       "era": "BC",
-      "latitude": 36.167,
-      "longitude": 54.35,
+      "latitude": 35.9511,
+      "longitude": 54.1128,
       "name": "Reign of Mithridates I the Great",
-      "name_ru": "Начало правления Митридата I Великого",
+      "name_ru": "Митридат I - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia",
-      "tags": ["Parthian", "Arsacid", "King", "Dynasty"],
+      "tags": [
+        "Dynasty",
+        "King",
+        "Arsacid",
+        "Parthian",
+        "Mithridates I"
+      ],
       "type": "political"
     },
     {
       "date": "01.01.0148",
       "description": "Mithridates I conquers Media and captures Ecbatana from the Seleucids; this wealthy satrapy with its strategic location and rich resources greatly strengthens the Parthian Empire",
-      "description_ru": "Митридат I завоёвывает Мидию и захватывает Экбатану у Селевкидов; эта богатая сатрапия со стратегическим расположением и богатыми ресурсами значительно усиливает Парфянскую империю",
+      "description_ru": "Митридат I завоёвывает Мидию и захватывает Экбатану у Селевкидов; эта богатая сатрапия со стратегическим расположением и обширными ресурсами значительно усиливает Парфянскую империю",
       "era": "BC",
-      "latitude": 34.80,
+      "latitude": 34.8,
       "longitude": 48.51,
       "name": "Parthian Conquest of Media",
-      "name_ru": "Парфянское завоевание Мидии",
+      "name_ru": "Парфяне захватывают Мидию",
       "source": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia",
-      "tags": ["Parthian", "Seleucid", "Conquest", "Media", "Mithridates I"],
+      "tags": [
+        "Mithridates I",
+        "Parthian",
+        "Seleucid",
+        "Conquest",
+        "Arsacid"
+      ],
       "type": "military"
     },
     {
@@ -100,9 +170,16 @@
       "latitude": 32.543,
       "longitude": 44.421,
       "name": "Mithridates I Enters Babylon",
-      "name_ru": "Митридат I входит в Вавилон",
+      "name_ru": "Парфия подчиняет Вавилон",
       "source": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia",
-      "tags": ["Parthian", "Babylon", "Conquest", "Mithridates I"],
+      "tags": [
+        "Seleucid",
+        "Conquest",
+        "Parthian",
+        "Babylonian",
+        "Mithridates I",
+        "Arsacid"
+      ],
       "type": "political"
     },
     {
@@ -113,35 +190,51 @@
       "latitude": 32.189,
       "longitude": 48.244,
       "name": "Parthian Conquest of Elymais",
-      "name_ru": "Парфянское завоевание Элимаиды",
+      "name_ru": "Парфия подчиняет Элимаиды",
       "source": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia",
-      "tags": ["Parthian", "Conquest", "Elymais", "Susa", "Mithridates I"],
+      "tags": [
+        "Parthian",
+        "Mithridates I",
+        "Conquest",
+        "Seleucid",
+        "Arsacid"
+      ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0138",
+      "description": "Phraates II becomes King of Parthia, inheriting a vast empire but facing immediate challenges from Seleucid counterattacks and nomadic invasions from the east",
+      "description_ru": "Фраат II наследует обширную империю и сталкивается с селевкидскими контратаками и кочевниками на востоке",
+      "era": "BC",
+      "latitude": 35.9511,
+      "longitude": 54.1128,
+      "name": "Reign of Phraates II",
+      "name_ru": "Фраат II - царь Парфии",
+      "source": "https://en.wikipedia.org/wiki/Phraates_II",
+      "tags": [
+        "Parthian",
+        "Dynasty",
+        "Arsacid",
+        "King"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.0138",
       "description": "Death of Mithridates I the Great; he transformed Parthia from a small kingdom into a major empire stretching from Bactria to Mesopotamia, earning comparison to Cyrus the Great",
       "description_ru": "Смерть Митридата I Великого; он превратил Парфию из небольшого царства в великую империю, простирающуюся от Бактрии до Месопотамии, заслужив сравнение с Киром Великим",
       "era": "BC",
-      "latitude": 33.094,
-      "longitude": 44.581,
+      "latitude": 37.9513,
+      "longitude": 58.211,
       "name": "Death of Mithridates I",
-      "name_ru": "Смерть Митридата I Великого",
+      "name_ru": "Смерть Митридата I Парфянского",
       "source": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia",
-      "tags": ["Parthian", "Arsacid", "Death", "Mithridates I"],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0138",
-      "description": "Phraates II becomes King of Parthia, inheriting a vast empire but facing immediate challenges from Seleucid counterattacks and nomadic invasions from the east",
-      "description_ru": "Фраат II становится царём Парфии, унаследовав обширную империю, но сразу столкнувшись с селевкидскими контратаками и кочевыми вторжениями с востока",
-      "era": "BC",
-      "latitude": 33.094,
-      "longitude": 44.581,
-      "name": "Reign of Phraates II",
-      "name_ru": "Начало правления Фраата II",
-      "source": "https://en.wikipedia.org/wiki/Phraates_II",
-      "tags": ["Parthian", "Arsacid", "King"],
+      "tags": [
+        "Mithridates I",
+        "Parthian",
+        "Arsacid",
+        "Death"
+      ],
       "type": "political"
     },
     {
@@ -150,11 +243,17 @@
       "description_ru": "Фраат II погибает в битве против саков (скифов) на востоке; Парфянская империя переживает кризис, поскольку восточные территории опустошаются кочевыми набегами",
       "era": "BC",
       "latitude": 37.5,
-      "longitude": 61.0,
+      "longitude": 61,
       "name": "Death of Phraates II Against the Saka",
-      "name_ru": "Гибель Фраата II в битве с саками",
+      "name_ru": "Гибель царя Парфии в битве с саками",
       "source": "https://en.wikipedia.org/wiki/Phraates_II",
-      "tags": ["Parthian", "Saka", "Death", "Battle", "Nomads"],
+      "tags": [
+        "Parthian",
+        "Death",
+        "Battle",
+        "Scythian",
+        "Arsacid"
+      ],
       "type": "military"
     },
     {
@@ -165,35 +264,67 @@
       "latitude": 36.5,
       "longitude": 54.5,
       "name": "Reign and Death of Artabanus I",
-      "name_ru": "Правление и гибель Артабана I",
+      "name_ru": "Артабан I - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Artabanus_I_of_Parthia",
-      "tags": ["Parthian", "Arsacid", "King", "Death"],
+      "tags": [
+        "Arsacid",
+        "Parthian",
+        "King",
+        "Death",
+        "Dynasty"
+      ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0125",
+      "description": "The Parthians did not want to locate their administration within Greek Seleucia, to avoid conflicts with local government and to emphasize their independence, so they built a royal suburb on the opposite bank, on the site of a military camp. Over time, Ctesiphon became an important strategic center for the Parthians, and then also for the Sassanids.",
+      "description_ru": "Парфяне не хотели размещать свою администрацию внутри греческой Селевкии, чтобы избежать конфликтов с местным самоуправлением и подчеркнуть свою независимость, поэтому возвели царский пригород на другом берегу, на месте военного лагеря. Со временем Ктесифон стал важным стратегическим центром парфян, а затем Сасанидов",
+      "era": "BC",
+      "latitude": 33.094,
+      "longitude": 44.581,
+      "name": "The founding of Ctesiphon by the Parthians",
+      "name_ru": "Основание парфянами Ктесифона",
+      "tags": [
+        "Parthian",
+        "City"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0124",
       "description": "Mithridates II the Great becomes King of Parthia, beginning the second golden age of the empire; he would restore Parthian power, expand the borders, and first use the title 'King of Kings'",
       "description_ru": "Митридат II Великий становится царём Парфии, начиная второй золотой век империи; он восстановит парфянское могущество, расширит границы и первым примет титул 'Царь царей'",
       "era": "BC",
-      "latitude": 33.094,
-      "longitude": 44.581,
+      "latitude": 37.9513,
+      "longitude": 58.211,
       "name": "Reign of Mithridates II the Great",
-      "name_ru": "Начало правления Митридата II Великого",
+      "name_ru": "Митридат II - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Mithridates_II_of_Parthia",
-      "tags": ["Parthian", "Arsacid", "King", "Mithridates II"],
+      "tags": [
+        "Dynasty",
+        "King",
+        "Parthian",
+        "Arsacid",
+        "Mithridates II"
+      ],
       "type": "political"
     },
     {
       "date": "01.01.0115",
       "description": "Mithridates II conquers Dura-Europos on the Euphrates, establishing this fortress city as a key stronghold on the western frontier; the city becomes a major trading center and military outpost",
-      "description_ru": "Митридат II завоёвывает Дура-Европос на Евфрате, превращая этот город-крепость в ключной опорный пункт на западной границе; город становится крупным торговым центром и военным форпостом",
+      "description_ru": "Митридат II подчиняет селевкидский Дура-Европос на Евфрате, превращая этот город-крепость в ключной опорный пункт на западной границе; город становится крупным торговым центром и военным форпостом",
       "era": "BC",
       "latitude": 34.749,
       "longitude": 40.727,
       "name": "Parthian Conquest of Dura-Europos",
       "name_ru": "Парфянское завоевание Дура-Европос",
       "source": "https://en.wikipedia.org/wiki/Dura-Europos",
-      "tags": ["Parthian", "Conquest", "Dura-Europos", "Mithridates II"],
+      "tags": [
+        "Parthian",
+        "Mithridates II",
+        "Seleucid",
+        "Conquest"
+      ],
       "type": "military"
     },
     {
@@ -206,20 +337,32 @@
       "name": "Parthian Conquest of Armenia",
       "name_ru": "Парфянское завоевание Армении",
       "source": "https://en.wikipedia.org/wiki/Mithridates_II_of_Parthia",
-      "tags": ["Parthian", "Armenia", "Conquest", "Tigranes", "Mithridates II"],
+      "tags": [
+        "Parthian",
+        "Mithridates II",
+        "Conquest",
+        "Armenian",
+        "Tigranes the Great"
+      ],
       "type": "military"
     },
     {
       "date": "01.01.0096",
-      "description": "First diplomatic contact between Rome and Parthia; Sulla meets Parthian ambassador Orobazus on the Euphrates. Rome and Parthia agree to use the Euphrates as their boundary, beginning centuries of relations between the two empires",
-      "description_ru": "Первый дипломатический контакт между Римом и Парфией; Сулла встречается с парфянским послом Оробазом на Евфрате. Рим и Парфия договариваются использовать Евфрат как границу, начиная многовековые отношения между двумя империями",
+      "description": "Sulla meets with the Parthian ambassador Orobazus on the Euphrates. Sulla takes the place of honor without permission to show who is boss. Rome and Parthia agree to use the Euphrates as a border, beginning centuries-long relations between the two empires. The Parthian ambassador was later executed by the king for allowing the Roman negotiator such insolence.",
+      "description_ru": "Сулла встречается с парфянским послом Оробазом на Евфрате. Сулла самовольно занимает почетное место, чтобы показать, кто здесь главный. Рим и Парфия договариваются использовать Евфрат как границу, начиная многовековые отношения между двумя империями. Посол Парфии позднее казнен царем за то, что позволил римскому переговорщику такую дерзость.",
       "era": "BC",
       "latitude": 36.35,
       "longitude": 38.78,
       "name": "First Roman-Parthian Diplomatic Contact",
-      "name_ru": "Первый дипломатический контакт Рима и Парфии",
+      "name_ru": "Дипломатический контакт Рима и Парфии",
       "source": "https://en.wikipedia.org/wiki/Mithridates_II_of_Parthia",
-      "tags": ["Parthian", "Roman", "Diplomacy", "Sulla", "Mithridates II"],
+      "tags": [
+        "Roman",
+        "Parthian",
+        "Diplomacy",
+        "Mithridates II",
+        "Sulla"
+      ],
       "type": "political"
     },
     {
@@ -227,12 +370,17 @@
       "description": "Death of Mithridates II the Great; his reign saw the empire reach its greatest extent and prestige, but succession disputes following his death weaken Parthia for decades",
       "description_ru": "Смерть Митридата II Великого; в его правление империя достигла наибольших размеров и престижа, но споры о наследовании после его смерти ослабляют Парфию на десятилетия",
       "era": "BC",
-      "latitude": 33.094,
-      "longitude": 44.581,
+      "latitude": 37.9513,
+      "longitude": 58.211,
       "name": "Death of Mithridates II",
       "name_ru": "Смерть Митридата II Великого",
       "source": "https://en.wikipedia.org/wiki/Mithridates_II_of_Parthia",
-      "tags": ["Parthian", "Arsacid", "Death", "Mithridates II"],
+      "tags": [
+        "Death",
+        "Mithridates II",
+        "Arsacid",
+        "Parthian"
+      ],
       "type": "political"
     },
     {
@@ -240,64 +388,90 @@
       "description": "Tigranes the Great of Armenia exploits Parthian weakness to conquer Parthian territories in northern Mesopotamia; Parthia enters a period of decline and civil strife",
       "description_ru": "Тигран Великий Армянский использует парфянскую слабость для завоевания парфянских территорий в северной Месопотамии; Парфия вступает в период упадка и гражданской смуты",
       "era": "BC",
-      "latitude": 37.0,
-      "longitude": 41.0,
+      "latitude": 37,
+      "longitude": 41,
       "name": "Armenian Conquests in Parthian Territory",
-      "name_ru": "Армянские завоевания на парфянской территории",
+      "name_ru": "Армянские завоевания в Месопотамии",
       "source": "https://en.wikipedia.org/wiki/Tigranes_the_Great",
-      "tags": ["Parthian", "Armenia", "Tigranes", "Decline"],
+      "tags": [
+        "Armenian",
+        "Independence",
+        "Civil War",
+        "Parthian",
+        "Decline",
+        "Tigranes the Great"
+      ],
       "type": "military"
     },
     {
       "date": "01.01.0057",
-      "description": "Orodes II becomes King of Parthia after civil war; he begins restoring Parthian power and prepares for the coming confrontation with Rome",
-      "description_ru": "Ород II становится царём Парфии после гражданской войны; он начинает восстановление парфянского могущества и готовится к предстоящему противостоянию с Римом",
+      "description": "Orodes II became king of Parthia during a civil war with his brother Mithridates IV; his army, led by the general Surena, stormed Seleucia-on-Tigris, where he assumed the title of King of Kings.",
+      "description_ru": "Ород II становится царём Парфии в ходе гражданской войны с братом Митридатом IV; его армия во главе с полководцем Суреной взяла штурмом Селевкию-на-Тигре, где он и принял титул царя царей",
       "era": "BC",
-      "latitude": 33.094,
-      "longitude": 44.581,
+      "latitude": 33.1,
+      "longitude": 44.5333,
       "name": "Reign of Orodes II",
-      "name_ru": "Начало правления Орода II",
+      "name_ru": "Ород II - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Orodes_II",
-      "tags": ["Parthian", "Arsacid", "King", "Orodes II"],
+      "tags": [
+        "Dynasty",
+        "King",
+        "Parthian",
+        "Arsacid"
+      ],
       "type": "political"
     },
     {
+      "date": "01.01.0055",
+      "description": "During their years of fighting the Scythian nomads in the north, the Parthians adopted tactics that became key in their confrontation with Rome. The Parthian horse archers harassed the legions with a hail of arrows and feints of retreat, and then the heavily armored cataphracts struck at the thinned ranks. The Parthian army was also faster and more mobile.",
+      "description_ru": "Парфяне за годы борьбы со скифскими кочевниками на севере усвоили от них тактики, которые стали ключевым подспорьем в противостоянии с Римом. Конные лучники парфян изматывали легионы градом стрел и ложными отступлениями, а затем тяжелобронированные катафрактарии наносили удар по прореженному строю. Также армия парфян была более быстрой и мобильной",
+      "era": "BC",
+      "latitude": 33.094,
+      "longitude": 44.581,
+      "name": "Parthian Cavalry",
+      "name_ru": "Парфянская кавалерия",
+      "tags": [
+        "War Science",
+        "Parthian",
+        "Tactics",
+        "Army",
+        "Cavalry"
+      ],
+      "type": "military"
+    },
+    {
       "date": "09.06.0053",
-      "description": "Battle of Carrhae: Parthian forces under General Surena annihilate the Roman army of Marcus Licinius Crassus. Seven Roman legions are destroyed, 20,000 Romans killed, 10,000 captured. Crassus is killed. This is one of Rome's greatest military disasters",
-      "description_ru": "Битва при Каррах: парфянские войска под командованием полководца Сурены уничтожают римскую армию Марка Лициния Красса. Семь римских легионов разбиты, 20 000 римлян убито, 10 000 взято в плен. Красс убит. Это одна из величайших военных катастроф Рима",
+      "description": "Parthian forces under General Surena destroy the Roman army of Marcus Licinius Crassus. Seven Roman legions are routed, and Crassus is killed. It is one of Rome's greatest military disasters. The captured Roman legionary eagles from Carrhae are brought back to Parthia as trophies; these standards become a symbol of Roman humiliation, and their return becomes a matter of national honor for Rome.",
+      "description_ru": "Парфянские войска под командованием полководца Сурены уничтожают римскую армию Марка Лициния Красса. Семь римских легионов разбиты, Красс убит. Это одна из величайших военных катастроф Рима. Захваченные римские легионные орлы с Карр доставлены в Парфию как трофеи; эти штандарты становятся символом римского унижения, и их возвращение станет делом национальной чести",
       "era": "BC",
       "latitude": 36.864,
       "longitude": 39.029,
       "name": "Battle of Carrhae",
       "name_ru": "Битва при Каррах",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Carrhae",
-      "tags": ["Parthian", "Roman", "Battle", "Crassus", "Surena", "Carrhae"],
+      "tags": [
+        "Battle",
+        "Trophy",
+        "Crassus",
+        "Roman",
+        "Parthian"
+      ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0053",
-      "description": "Captured Roman legionary eagles from Carrhae are taken to Parthia as trophies; these standards become a symbol of Roman humiliation and their recovery a matter of national honor for decades",
-      "description_ru": "Захваченные римские легионные орлы с Карр доставлены в Парфию как трофеи; эти штандарты становятся символом римского унижения, и их возвращение станет делом национальной чести на десятилетия",
-      "era": "BC",
-      "latitude": 33.094,
-      "longitude": 44.581,
-      "name": "Roman Eagles Taken to Parthia",
-      "name_ru": "Римские орлы доставлены в Парфию",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Carrhae",
-      "tags": ["Parthian", "Roman", "Trophy", "Eagles"],
-      "type": "historic"
     },
     {
       "date": "01.01.0052",
       "description": "Orodes II orders the execution of General Surena, the victor of Carrhae; fearing his popularity and power, the king eliminates his greatest military commander",
       "description_ru": "Ород II приказывает казнить полководца Сурену, победителя при Каррах; опасаясь его популярности и могущества, царь устраняет своего величайшего военачальника",
       "era": "BC",
-      "latitude": 33.094,
-      "longitude": 44.581,
+      "latitude": 33.1,
+      "longitude": 44.5333,
       "name": "Execution of General Surena",
       "name_ru": "Казнь полководца Сурены",
       "source": "https://en.wikipedia.org/wiki/Surena",
-      "tags": ["Parthian", "Surena", "Execution", "Orodes II"],
+      "tags": [
+        "Parthian",
+        "Execution"
+      ],
       "type": "political"
     },
     {
@@ -308,22 +482,33 @@
       "latitude": 33.51,
       "longitude": 36.29,
       "name": "Parthian Invasion of Roman East",
-      "name_ru": "Парфянское вторжение на Римский Восток",
+      "name_ru": "Вторжение парфян на Римский Восток",
       "source": "https://en.wikipedia.org/wiki/Parthian_invasion_of_Syria_(40_BC)",
-      "tags": ["Parthian", "Roman", "Invasion", "Pacorus", "Syria"],
+      "tags": [
+        "Parthian",
+        "Roman",
+        "Syria",
+        "Invasions",
+        "Conquest"
+      ],
       "type": "military"
     },
     {
       "date": "09.06.0038",
       "description": "Battle of Mount Gindarus: Roman forces under Ventidius defeat and kill Parthian Crown Prince Pacorus. The Parthians are driven from Roman territory. This battle avenges Carrhae on its anniversary",
-      "description_ru": "Битва при горе Гиндар: римские войска под командованием Вентидия побеждают и убивают парфянского наследного принца Пакора. Парфяне изгнаны с римской территории. Эта битва отмщает за Карры в её годовщину",
+      "description_ru": "Битва при горе Гиндар: римские войска под командованием Вентидия побеждают и убивают парфянского наследного принца Пакора. Парфяне изгнаны с римской территории. Битва в годовщину Карр служит ответом римлян за унижение",
       "era": "BC",
       "latitude": 36.39,
       "longitude": 36.82,
       "name": "Battle of Mount Gindarus",
       "name_ru": "Битва при горе Гиндар",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Mount_Gindarus",
-      "tags": ["Parthian", "Roman", "Battle", "Pacorus", "Death"],
+      "tags": [
+        "Death",
+        "Parthian",
+        "Roman",
+        "Battle"
+      ],
       "type": "military"
     },
     {
@@ -336,59 +521,129 @@
       "name": "Mark Antony's Parthian Campaign",
       "name_ru": "Парфянский поход Марка Антония",
       "source": "https://en.wikipedia.org/wiki/Antony%27s_Parthian_War",
-      "tags": ["Parthian", "Roman", "Mark Antony", "War", "Defeat"],
+      "tags": [
+        "Parthian",
+        "Roman",
+        "Mark Antony",
+        "Invasions",
+        "Failure"
+      ],
       "type": "military"
     },
     {
       "date": "01.05.0020",
       "description": "Augustus negotiates diplomatic settlement with Parthia; King Phraates IV returns the captured Roman eagles and prisoners from Carrhae. Rome celebrates this as a great victory, though achieved through diplomacy rather than war",
-      "description_ru": "Август заключает дипломатическое соглашение с Парфией; царь Фраат IV возвращает захваченных римских орлов и пленных с Карр. Рим празднует это как великую победу, хотя достигнутую дипломатией, а не войной",
+      "description_ru": "Август заключает соглашение с Парфией; царь Фраат IV возвращает захваченных римских орлов и пленных с Карр. Рим празднует это как великую победу, достигнутую дипломатией, а не войной",
       "era": "BC",
       "latitude": 33.094,
       "longitude": 44.581,
       "name": "Return of Roman Eagles",
-      "name_ru": "Возвращение римских орлов",
+      "name_ru": "Возвращение римских орлов из Парфии",
       "source": "https://en.wikipedia.org/wiki/Phraates_IV",
-      "tags": ["Parthian", "Roman", "Diplomacy", "Augustus", "Eagles", "Peace"],
+      "tags": [
+        "Roman",
+        "Peace",
+        "Parthian",
+        "Diplomacy",
+        "Augustus",
+        "Arsacid"
+      ],
       "type": "political"
     },
     {
-      "date": "01.01.0010",
+      "date": "01.01.0002",
       "description": "Phraates V (Phraataces) murders his father Phraates IV and seizes the Parthian throne; he rules jointly with his mother Musa, beginning a period of instability",
-      "description_ru": "Фраат V (Фраатак) убивает своего отца Фраата IV и захватывает парфянский трон; он правит совместно с матерью Музой, начиная период нестабильности",
+      "description_ru": "Фраат V (Фраатак) в сговоре с матерью Музой (бывшей римской рабыней) убивает своего отца Фраата IV и захватывает парфянский трон; он берет мать в жены и начинает 6 лет правления в оппозиции к парфянской знати, недовольной его действиями",
       "era": "BC",
       "latitude": 33.094,
       "longitude": 44.581,
       "name": "Phraates V Murders Father and Seizes Throne",
-      "name_ru": "Фраат V убивает отца и захватывает трон",
+      "name_ru": "Фраат V захватывает трон Парфии",
       "source": "https://en.wikipedia.org/wiki/Phraates_V",
-      "tags": ["Parthian", "Arsacid", "Murder", "Overthrow"],
+      "tags": [
+        "Parthian",
+        "Son Kills Father",
+        "Arsacid",
+        "Overthrow",
+        "Murder",
+        "Roman"
+      ],
       "type": "political"
     },
     {
-      "date": "01.01.0012",
+      "date": "01.01.0008",
       "description": "Vonones I, raised in Rome as a hostage, is installed as Parthian king by his supporters, but faces opposition from nobles who consider him too Romanized; civil war ensues",
-      "description_ru": "Вонон I, воспитанный в Риме как заложник, становится парфянским царём при поддержке своих сторонников, но сталкивается с оппозицией знати, считающей его слишком романизированным; начинается гражданская война",
+      "description_ru": "Вонон I, воспитанный в Риме как заложник, становится парфянским царём после жестокого правления Орода III, но сталкивается с оппозицией знати, считающей его слишком романизированным; начинается гражданская война",
       "era": "AD",
-      "latitude": 33.094,
-      "longitude": 44.581,
+      "latitude": 33.1,
+      "longitude": 44.5333,
       "name": "Vonones I Becomes King",
-      "name_ru": "Вонон I становится царём",
+      "name_ru": "Вонон I - заложник Рима и царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Vonones_I",
-      "tags": ["Parthian", "Arsacid", "King", "Rome", "Civil War"],
+      "tags": [
+        "Roman",
+        "King",
+        "Parthian",
+        "Civil War",
+        "Arsacid"
+      ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0025",
+      "description": "Christianity begins spreading along trade routes through Parthian territory; the Apostle Thomas reportedly travels through Parthia to India, establishing early Christian communities",
+      "description_ru": "Христианство начинает распространяться по торговым путям через парфянскую территорию; апостол Фома, по преданию, путешествует через Парфию в Индию, основывая ранние христианские общины",
+      "era": "AD",
+      "latitude": 32,
+      "longitude": 48,
+      "name": "Early Christianity Spreads Through Parthia",
+      "name_ru": "Раннее христианство в Парфии",
+      "source": "https://en.wikipedia.org/wiki/Thomas_the_Apostle",
+      "tags": [
+        "Parthian",
+        "Christianity",
+        "Trade",
+        "Religious",
+        "Apostle Thomas"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0050",
+      "description": "Silk Road trade through Parthia reaches its height; Parthia controls the lucrative trade between Rome and China, with Chinese silk, spices, and luxury goods flowing west in exchange for Roman gold and silver",
+      "description_ru": "Торговля по Шёлковому пути через Парфию расцветает; Парфия контролирует выгодную торговлю между Римом и Китаем, с китайским шёлком, пряностями и предметами роскоши, текущими на запад в обмен на римское золото и серебро",
+      "era": "AD",
+      "latitude": 37.667,
+      "longitude": 62.167,
+      "name": "Peak of Parthian Silk Road Trade",
+      "name_ru": "Расцвет торговли по Шёлковому пути",
+      "source": "https://en.wikipedia.org/wiki/Silk_Road",
+      "tags": [
+        "Trade",
+        "Roman",
+        "China",
+        "Silk Road",
+        "Parthian",
+        "Economic"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0051",
       "description": "Vologases I becomes King of Parthia, beginning a powerful reign that sees renewed conflict with Rome over Armenia and the strengthening of Parthian cultural identity",
-      "description_ru": "Вологез I становится царём Парфии, начиная могущественное правление, ознаменованное возобновлением конфликта с Римом из-за Армении и укреплением парфянской культурной идентичности",
+      "description_ru": "Вологез I становится царём Парфии. В его правление Парфия конфликтует с Римом из-за Армении и укрепляет парфянскую культурную идентичность",
       "era": "AD",
       "latitude": 33.094,
       "longitude": 44.581,
       "name": "Reign of Vologases I",
-      "name_ru": "Начало правления Вологеза I",
+      "name_ru": "Вологез I - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Vologases_I_of_Parthia",
-      "tags": ["Parthian", "Arsacid", "King", "Vologases I"],
+      "tags": [
+        "Vologases I",
+        "King",
+        "Arsacid",
+        "Parthian"
+      ],
       "type": "political"
     },
     {
@@ -399,35 +654,50 @@
       "latitude": 40.18,
       "longitude": 44.51,
       "name": "Tiridates Installed as Armenian King",
-      "name_ru": "Тиридат назначен царём Армении",
+      "name_ru": "Тиридат Парфянский назначен царём Армении",
       "source": "https://en.wikipedia.org/wiki/Tiridates_I_of_Armenia",
-      "tags": ["Parthian", "Armenia", "Tiridates", "Rome", "Vologases I"],
+      "tags": [
+        "Parthian",
+        "Roman",
+        "Armenian"
+      ],
       "type": "political"
     },
     {
       "date": "01.01.0058",
       "description": "Roman general Corbulo invades Armenia, beginning Roman-Parthian War; he captures and destroys Artaxata, the Armenian capital, in a campaign to restore Roman influence",
-      "description_ru": "Римский полководец Корбулон вторгается в Армению, начиная римско-парфянскую войну; он захватывает и разрушает Арташат, армянскую столицу, в кампании по восстановлению римского влияния",
+      "description_ru": "Римский полководец Корбулон вторгается в Армению, начиная римско-парфянскую войну; чтобы показать силу Рима, он захватывает и разрушает Арташат, армянскую столицу",
       "era": "AD",
-      "latitude": 39.93,
-      "longitude": 44.60,
+      "latitude": 39.8784,
+      "longitude": 44.5763,
       "name": "Corbulo's Armenian Campaign",
-      "name_ru": "Армянская кампания Корбулона",
+      "name_ru": "Вторжение Рима в Армению",
       "source": "https://en.wikipedia.org/wiki/Roman%E2%80%93Parthian_War_of_58%E2%80%9363",
-      "tags": ["Parthian", "Roman", "Armenia", "Corbulo", "War"],
+      "tags": [
+        "Roman",
+        "Destruction",
+        "Parthian",
+        "Armenian",
+        "Invasions"
+      ],
       "type": "military"
     },
     {
       "date": "01.01.0062",
       "description": "Battle of Rhandeia: Parthian forces surround and defeat Roman army under Paetus, forcing humiliating surrender; Romans must pass under the yoke and evacuate Armenia",
-      "description_ru": "Битва при Рандее: парфянские силы окружают и побеждают римскую армию под командованием Пета, вынуждая к унизительной капитуляции; римляне вынуждены пройти под ярмом и эвакуировать Армению",
+      "description_ru": "Парфянские силы окружают и побеждают римскую армию под командованием Пета, вынуждая к унизительной капитуляции; римляне вынуждены пройти под ярмом и покинуть Армению",
       "era": "AD",
       "latitude": 39.1,
-      "longitude": 43.0,
+      "longitude": 43,
       "name": "Battle of Rhandeia",
       "name_ru": "Битва при Рандее",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Rhandeia",
-      "tags": ["Parthian", "Roman", "Battle", "Armenia", "Defeat"],
+      "tags": [
+        "Roman",
+        "Battle",
+        "Armenian",
+        "Parthian"
+      ],
       "type": "military"
     },
     {
@@ -436,11 +706,17 @@
       "description_ru": "Рандейский договор завершает римско-парфянскую войну; Тиридат I утверждён царём Армении, но должен получить корону от римского императора Нерона. Этот компромисс устанавливает порядок армянского престолонаследия на поколения",
       "era": "AD",
       "latitude": 39.1,
-      "longitude": 43.0,
+      "longitude": 43,
       "name": "Treaty of Rhandeia",
-      "name_ru": "Рандейский договор",
+      "name_ru": "Рандейский мир",
       "source": "https://en.wikipedia.org/wiki/Treaty_of_Rhandeia",
-      "tags": ["Parthian", "Roman", "Peace", "Armenia", "Tiridates"],
+      "tags": [
+        "Armenian",
+        "Peace",
+        "Roman",
+        "Parthian",
+        "Nero"
+      ],
       "type": "political"
     },
     {
@@ -448,13 +724,57 @@
       "description": "Tiridates I travels to Rome and is crowned King of Armenia by Emperor Nero in an elaborate ceremony; this diplomatic solution maintains peace between Rome and Parthia for 50 years",
       "description_ru": "Тиридат I путешествует в Рим и коронуется царём Армении императором Нероном в пышной церемонии; это дипломатическое решение поддерживает мир между Римом и Парфией в течение 50 лет",
       "era": "AD",
-      "latitude": 41.90,
-      "longitude": 12.50,
+      "latitude": 41.9,
+      "longitude": 12.5,
       "name": "Tiridates Crowned in Rome",
       "name_ru": "Коронация Тиридата в Риме",
       "source": "https://en.wikipedia.org/wiki/Tiridates_I_of_Armenia",
-      "tags": ["Parthian", "Roman", "Armenia", "Tiridates", "Nero", "Diplomacy"],
+      "tags": [
+        "Nero",
+        "Roman",
+        "Parthian",
+        "Diplomacy",
+        "Armenian"
+      ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0070",
+      "description": "Jewish community in Parthian Mesopotamia grows after Roman destruction of Jerusalem; Babylonian Jewish academies begin developing what would become the Babylonian Talmud centuries later",
+      "description_ru": "Еврейская община в парфянской Месопотамии растёт после римского разрушения Иерусалима; вавилонские еврейские академии начинают развивать то, что спустя века станет Вавилонским Талмудом",
+      "era": "AD",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Growth of Babylonian Jewish Community",
+      "name_ru": "Рост вавилонской еврейской общины",
+      "source": "https://en.wikipedia.org/wiki/History_of_the_Jews_in_Iraq",
+      "tags": [
+        "Parthian",
+        "Judah",
+        "Jewish",
+        "Religious",
+        "Babylonian"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0075",
+      "description": "Vologases I orders compilation of the Avesta, the sacred texts of Zoroastrianism; this represents a major cultural and religious development, preserving ancient Iranian religious traditions",
+      "description_ru": "Вологез I Парфянский приказывает составить Авесту, священные тексты зороастризма; это представляет собой крупное культурное и религиозное достижение, сохраняющее древние иранские религиозные традиции",
+      "era": "AD",
+      "latitude": 33.094,
+      "longitude": 44.581,
+      "name": "Compilation of the Avesta Begins",
+      "name_ru": "Начало составления Авесты",
+      "source": "https://en.wikipedia.org/wiki/Avesta",
+      "tags": [
+        "Parthian",
+        "Culture",
+        "Religious",
+        "Avesta",
+        "Zoroastrian"
+      ],
+      "type": "religious"
     },
     {
       "date": "01.01.0077",
@@ -464,23 +784,54 @@
       "latitude": 33.094,
       "longitude": 44.581,
       "name": "Death of Vologases I",
-      "name_ru": "Смерть Вологеза I",
+      "name_ru": "Смерть Вологеза I Парфянского",
       "source": "https://en.wikipedia.org/wiki/Vologases_I_of_Parthia",
-      "tags": ["Parthian", "Arsacid", "Death", "Vologases I"],
+      "tags": [
+        "Parthian",
+        "Vologases I",
+        "Death",
+        "Arsacid"
+      ],
       "type": "political"
     },
     {
-      "date": "01.01.0078",
-      "description": "Vologases I orders compilation of the Avesta, the sacred texts of Zoroastrianism; this represents a major cultural and religious development, preserving ancient Iranian religious traditions",
-      "description_ru": "Вологез I приказывает составить Авесту, священные тексты зороастризма; это представляет собой крупное культурное и религиозное достижение, сохраняющее древние иранские религиозные традиции",
+      "date": "01.01.0097",
+      "description": "Chinese envoy Gan Ying reaches the Persian Gulf while attempting to reach Rome; Parthian officials discourage him from continuing, seeking to maintain their monopoly on Silk Road trade between east and west",
+      "description_ru": "Китайский посланник Гань Ин достигает Персидского залива, пытаясь добраться до Рима; парфянские чиновники отговаривают его от продолжения пути, стремясь сохранить монополию на торговлю по Шёлковому пути между востоком и западом",
       "era": "AD",
-      "latitude": 33.094,
-      "longitude": 44.581,
-      "name": "Compilation of the Avesta Begins",
-      "name_ru": "Начало составления Авесты",
-      "source": "https://en.wikipedia.org/wiki/Avesta",
-      "tags": ["Parthian", "Zoroastrianism", "Religion", "Culture", "Avesta"],
-      "type": "religious"
+      "latitude": 29,
+      "longitude": 50.5,
+      "name": "Gan Ying Reaches Persian Gulf",
+      "name_ru": "Гань Ин достигает Персидского залива",
+      "source": "https://en.wikipedia.org/wiki/Gan_Ying",
+      "tags": [
+        "China",
+        "Silk Road",
+        "Trade",
+        "Diplomacy",
+        "Parthian",
+        "Economic"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0100",
+      "description": "Parthian art and architecture reaches its peak; the distinctive frontal style in sculpture, combining Hellenistic and Iranian traditions, influences art across the Near East for centuries",
+      "description_ru": "Парфянское искусство и архитектура достигают расцвета; характерный фронтальный стиль в скульптуре, сочетающий эллинистические и иранские традиции, влияет на искусство Ближнего Востока на протяжении веков",
+      "era": "AD",
+      "latitude": 35.587,
+      "longitude": 42.714,
+      "name": "Golden Age of Parthian Art",
+      "name_ru": "Золотой век парфянского искусства",
+      "source": "https://en.wikipedia.org/wiki/Parthian_art",
+      "tags": [
+        "Parthian",
+        "Art",
+        "Culture",
+        "Sculpture",
+        "Architecture"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0109",
@@ -490,9 +841,14 @@
       "latitude": 33.094,
       "longitude": 44.581,
       "name": "Reign of Osroes I",
-      "name_ru": "Начало правления Осроя I",
+      "name_ru": "Осрой I - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Osroes_I",
-      "tags": ["Parthian", "Arsacid", "King", "Osroes I"],
+      "tags": [
+        "King",
+        "Parthian",
+        "Arsacid",
+        "Armenian"
+      ],
       "type": "political"
     },
     {
@@ -503,62 +859,129 @@
       "latitude": 36.864,
       "longitude": 39.029,
       "name": "Trajan's Parthian War Begins",
-      "name_ru": "Начало парфянской войны Траяна",
+      "name_ru": "Кампания Траяна в Парфии",
       "source": "https://en.wikipedia.org/wiki/Trajan%27s_Parthian_campaign",
-      "tags": ["Parthian", "Roman", "Trajan", "War", "Invasion"],
+      "tags": [
+        "Invasions",
+        "Roman",
+        "Parthian",
+        "Trajan",
+        "Mesopotamia"
+      ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0115",
+      "description": "Parthian minstrel tradition flourishes; court musicians (gōsān) perform epic tales of heroes and kings, preserving oral traditions that would later be recorded in texts like the Shahnameh",
+      "description_ru": "Придворные музыканты (госаны) исполняют эпические сказания о героях и царях, сохраняя устные традиции, которые позже будут записаны в текстах вроде Шахнаме",
+      "era": "AD",
+      "latitude": 33.094,
+      "longitude": 44.581,
+      "name": "Parthian Minstrel Tradition",
+      "name_ru": "Парфянская традиция менестрелей",
+      "source": "https://en.wikipedia.org/wiki/Gosan",
+      "tags": [
+        "Culture",
+        "Parthian",
+        "Oral Tradition",
+        "Literature",
+        "Music"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0116",
       "description": "Trajan captures Ctesiphon, the Parthian capital; he reaches the Persian Gulf and allegedly weeps that he is too old to follow Alexander to India. This is the deepest Roman penetration into Parthian territory",
-      "description_ru": "Траян захватывает Ктесифон, парфянскую столицу; он достигает Персидского залива и, по преданию, плачет, что слишком стар, чтобы последовать за Александром в Индию. Это самое глубокое проникновение римлян на парфянскую территорию",
+      "description_ru": "Траян захватывает Ктесифон, зимнюю парфянскую столицу; он достигает Персидского залива и, по преданию, плачет, что слишком стар, чтобы последовать за Александром в Индию. Это самое глубокое проникновение римлян на парфянскую территорию",
       "era": "AD",
       "latitude": 33.094,
       "longitude": 44.581,
       "name": "Trajan Captures Ctesiphon",
       "name_ru": "Траян захватывает Ктесифон",
       "source": "https://en.wikipedia.org/wiki/Trajan%27s_Parthian_campaign",
-      "tags": ["Parthian", "Roman", "Trajan", "Ctesiphon", "Conquest"],
+      "tags": [
+        "Capital",
+        "Conquest",
+        "Roman",
+        "Parthian",
+        "Trajan"
+      ],
       "type": "military"
     },
     {
       "date": "01.01.0117",
       "description": "Massive revolts erupt across Roman-occupied Mesopotamia and Jewish diaspora; Trajan is forced to withdraw. He dies en route to Rome. His successor Hadrian abandons all conquests east of the Euphrates",
-      "description_ru": "Массовые восстания вспыхивают по всей оккупированной римлянами Месопотамии и еврейской диаспоре; Траян вынужден отступить. Он умирает по пути в Рим. Его преемник Адриан оставляет все завоевания к востоку от Евфрата",
+      "description_ru": "Массовые восстания вспыхивают по всей оккупированной римлянами Месопотамии и среди евреев; Траян вынужден отступить. Он умирает по пути в Рим. Его преемник Адриан оставляет все завоевания к востоку от Евфрата",
       "era": "AD",
       "latitude": 33.094,
       "longitude": 44.581,
       "name": "Revolts Force Roman Withdrawal",
-      "name_ru": "Восстания вынуждают римлян отступить",
+      "name_ru": "Римляне отступают из Месопотамии",
       "source": "https://en.wikipedia.org/wiki/Trajan%27s_Parthian_campaign",
-      "tags": ["Parthian", "Roman", "Rebellion", "Trajan", "Hadrian"],
+      "tags": [
+        "Roman",
+        "Trajan",
+        "Hadrian",
+        "Parthian",
+        "Rebellion",
+        "Retreat",
+        "Jewish"
+      ],
       "type": "military"
     },
     {
       "date": "01.01.0140",
       "description": "Construction of the city of Hatra reaches its peak; this fortress city with its unique blend of Parthian and Mesopotamian architecture becomes a major religious and trading center",
-      "description_ru": "Строительство города Хатра достигает расцвета; этот город-крепость с уникальным сочетанием парфянской и месопотамской архитектуры становится крупным религиозным и торговым центром",
+      "description_ru": "Город Хатра в Месопотамии достигает расцвета при парфянах; этот город-крепость с уникальным сочетанием парфянской и месопотамской архитектуры становится крупным религиозным и торговым центром",
       "era": "AD",
       "latitude": 35.587,
       "longitude": 42.714,
       "name": "Hatra at Its Peak",
       "name_ru": "Расцвет Хатры",
       "source": "https://en.wikipedia.org/wiki/Hatra",
-      "tags": ["Parthian", "Hatra", "Architecture", "Trade", "Religion"],
+      "tags": [
+        "Trade",
+        "Architecture",
+        "Parthian",
+        "Religious"
+      ],
       "type": "cultural"
     },
     {
       "date": "01.01.0148",
       "description": "Vologases IV becomes King of Parthia; he restores Parthian power after decades of civil strife and prepares for renewed conflict with Rome",
-      "description_ru": "Вологез IV становится царём Парфии; он восстанавливает парфянское могущество после десятилетий гражданской смуты и готовится к возобновлению конфликта с Римом",
+      "description_ru": "Вологез IV восстанавливает парфянское могущество после десятилетий гражданской смуты и готовится к борьбе с Римом",
       "era": "AD",
       "latitude": 33.094,
       "longitude": 44.581,
       "name": "Reign of Vologases IV",
-      "name_ru": "Начало правления Вологеза IV",
+      "name_ru": "Вологез IV - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Vologases_IV_of_Parthia",
-      "tags": ["Parthian", "Arsacid", "King", "Vologases IV"],
+      "tags": [
+        "King",
+        "Parthian",
+        "Arsacid",
+        "Dynasty"
+      ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0150",
+      "description": "Parthian medicine and pharmacology develops; physicians blend Greek, Mesopotamian, and Iranian medical traditions, creating treatises that influence medicine across the ancient world",
+      "description_ru": "Развивается парфянская медицина и фармакология; врачи объединяют греческие, месопотамские и иранские медицинские традиции, создавая трактаты, которые влияют на медицину по всему древнему миру",
+      "era": "AD",
+      "latitude": 33.094,
+      "longitude": 44.581,
+      "name": "Development of Parthian Medicine",
+      "name_ru": "Развитие парфянской медицины",
+      "source": "https://en.wikipedia.org/wiki/History_of_medicine",
+      "tags": [
+        "Parthian",
+        "Science",
+        "Medicine",
+        "Culture"
+      ],
+      "type": "scientific"
     },
     {
       "date": "01.01.0161",
@@ -568,9 +991,14 @@
       "latitude": 40.18,
       "longitude": 44.51,
       "name": "Parthian Invasion of Armenia (161)",
-      "name_ru": "Парфянское вторжение в Армению (161)",
+      "name_ru": "Парфяне вторгаются в Армению",
       "source": "https://en.wikipedia.org/wiki/Roman%E2%80%93Parthian_War_of_161%E2%80%93166",
-      "tags": ["Parthian", "Roman", "Armenia", "War", "Vologases IV"],
+      "tags": [
+        "Parthian",
+        "Roman",
+        "Armenian",
+        "Invasions"
+      ],
       "type": "military"
     },
     {
@@ -581,9 +1009,13 @@
       "latitude": 40.18,
       "longitude": 44.51,
       "name": "Roman Counteroffensive Under Lucius Verus",
-      "name_ru": "Римское контрнаступление под командованием Луция Вера",
+      "name_ru": "Рим наступает на парфянскую Армению",
       "source": "https://en.wikipedia.org/wiki/Roman%E2%80%93Parthian_War_of_161%E2%80%93166",
-      "tags": ["Parthian", "Roman", "Lucius Verus", "War", "Armenia"],
+      "tags": [
+        "Roman",
+        "Parthian",
+        "Armenian"
+      ],
       "type": "military"
     },
     {
@@ -593,10 +1025,16 @@
       "era": "AD",
       "latitude": 33.094,
       "longitude": 44.581,
-      "name": "Romans Sack Ctesiphon (165)",
-      "name_ru": "Римляне разграбляют Ктесифон (165)",
+      "name": "Romans Sack Ctesiphon",
+      "name_ru": "Римляне разграбляют Ктесифон",
       "source": "https://en.wikipedia.org/wiki/Roman%E2%80%93Parthian_War_of_161%E2%80%93166",
-      "tags": ["Parthian", "Roman", "Ctesiphon", "Plague", "Lucius Verus"],
+      "tags": [
+        "Roman",
+        "Parthian",
+        "Plague",
+        "Plundering",
+        "Destruction"
+      ],
       "type": "military"
     },
     {
@@ -604,12 +1042,16 @@
       "description": "Antonine Plague spreads from Parthia to Rome; returning Roman soldiers carry the disease that will kill millions across the Roman Empire over the next 15 years",
       "description_ru": "Антонинова чума распространяется из Парфии в Рим; возвращающиеся римские солдаты разносят болезнь, которая убьёт миллионы людей в Римской империи в течение следующих 15 лет",
       "era": "AD",
-      "latitude": 41.90,
-      "longitude": 12.50,
+      "latitude": 41.9,
+      "longitude": 12.5,
       "name": "Antonine Plague Spreads West",
-      "name_ru": "Антонинова чума распространяется на запад",
+      "name_ru": "Антонинова чума идет на запад",
       "source": "https://en.wikipedia.org/wiki/Antonine_Plague",
-      "tags": ["Parthian", "Roman", "Plague", "Disease"],
+      "tags": [
+        "Plague",
+        "Roman",
+        "Parthian"
+      ],
       "type": "historic"
     },
     {
@@ -620,35 +1062,52 @@
       "latitude": 33.094,
       "longitude": 44.581,
       "name": "Reign of Vologases V",
-      "name_ru": "Начало правления Вологеза V",
+      "name_ru": "Вологез V - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Vologases_V",
-      "tags": ["Parthian", "Arsacid", "King", "Vologases V"],
+      "tags": [
+        "Arsacid",
+        "Parthian",
+        "King",
+        "Decline",
+        "Civil War"
+      ],
       "type": "political"
     },
     {
       "date": "01.01.0197",
       "description": "Emperor Septimius Severus invades Parthia; Roman forces capture and sack Ctesiphon, taking 100,000 prisoners. Severus celebrates triumph in Rome but cannot hold the conquered territories",
-      "description_ru": "Император Септимий Север вторгается в Парфию; римские войска захватывают и разграбляют Ктесифон, взяв 100 000 пленных. Север празднует триумф в Риме, но не может удержать завоёванные территории",
+      "description_ru": "Император Септимий Север вторгается в Парфию; римские войска захватывают и разграбляют Ктесифон, взяв 100 тысяч пленных. Север празднует триумф в Риме, но не может удержать завоёванные территории",
       "era": "AD",
       "latitude": 33.094,
       "longitude": 44.581,
       "name": "Septimius Severus Sacks Ctesiphon",
       "name_ru": "Септимий Север разграбляет Ктесифон",
       "source": "https://en.wikipedia.org/wiki/Parthian_war_of_Septimius_Severus",
-      "tags": ["Parthian", "Roman", "Septimius Severus", "Ctesiphon", "War"],
+      "tags": [
+        "Roman",
+        "Parthian",
+        "Plundering",
+        "Septimius Severus"
+      ],
       "type": "military"
     },
     {
       "date": "01.01.0199",
       "description": "Septimius Severus twice fails to capture Hatra despite prolonged sieges; the fortress city's defenses and desert location prove insurmountable, demonstrating the limits of Roman power",
-      "description_ru": "Септимий Север дважды не может захватить Хатру, несмотря на продолжительные осады; оборонительные сооружения города-крепости и его расположение в пустыне оказываются непреодолимыми, демонстрируя пределы римского могущества",
+      "description_ru": "Септимий Север дважды не может захватить Хатру, несмотря на продолжительные осады; оборонительные сооружения города-крепости и его расположение в пустыне оказываются непреодолимыми",
       "era": "AD",
       "latitude": 35.587,
       "longitude": 42.714,
       "name": "Failed Roman Sieges of Hatra",
-      "name_ru": "Неудачные римские осады Хатры",
+      "name_ru": "Неудачная осада Хатры Римом",
       "source": "https://en.wikipedia.org/wiki/Hatra",
-      "tags": ["Parthian", "Roman", "Hatra", "Siege", "Septimius Severus"],
+      "tags": [
+        "Septimius Severus",
+        "Roman",
+        "Parthian",
+        "Siege",
+        "Failure"
+      ],
       "type": "military"
     },
     {
@@ -659,9 +1118,13 @@
       "latitude": 33.094,
       "longitude": 44.581,
       "name": "Parthian Civil War: Vologases VI vs Artabanus IV",
-      "name_ru": "Парфянская гражданская война: Вологез VI против Артабана IV",
+      "name_ru": "Гражданская война в Парфии",
       "source": "https://en.wikipedia.org/wiki/Vologases_VI",
-      "tags": ["Parthian", "Arsacid", "Civil War", "Vologases VI", "Artabanus IV"],
+      "tags": [
+        "Parthian",
+        "Arsacid",
+        "Civil War"
+      ],
       "type": "political"
     },
     {
@@ -674,7 +1137,14 @@
       "name": "Caracalla Desecrates Arsacid Tombs",
       "name_ru": "Каракалла оскверняет гробницы Аршакидов",
       "source": "https://en.wikipedia.org/wiki/Caracalla",
-      "tags": ["Parthian", "Roman", "Caracalla", "War", "Desecration"],
+      "tags": [
+        "Parthian",
+        "Roman",
+        "Caracalla",
+        "Civil War",
+        "Invasions",
+        "Blasphemy"
+      ],
       "type": "military"
     },
     {
@@ -687,46 +1157,71 @@
       "name": "Assassination of Caracalla",
       "name_ru": "Убийство Каракаллы",
       "source": "https://en.wikipedia.org/wiki/Caracalla",
-      "tags": ["Roman", "Caracalla", "Assassination", "Parthian"],
+      "tags": [
+        "Roman",
+        "Caracalla",
+        "Assassination",
+        "Parthian"
+      ],
       "type": "political"
     },
     {
       "date": "01.06.0217",
       "description": "Battle of Nisibis: Artabanus IV defeats Roman forces under Emperor Macrinus in a three-day battle; Rome is forced to pay massive indemnity of 200 million denarii for peace",
-      "description_ru": "Битва при Нисибисе: Артабан IV побеждает римские войска под командованием императора Макрина в трёхдневном сражении; Рим вынужден заплатить огромную контрибуцию в 200 миллионов денариев за мир",
+      "description_ru": "Битва при Нисибисе: Артабан IV парфянский побеждает римские войска под командованием императора Макрина в трёхдневном сражении; Рим вынужден заплатить огромную контрибуцию в 200 миллионов денариев за мир",
       "era": "AD",
       "latitude": 37.07,
       "longitude": 41.22,
       "name": "Battle of Nisibis",
       "name_ru": "Битва при Нисибисе",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Nisibis_(217)",
-      "tags": ["Parthian", "Roman", "Battle", "Artabanus IV", "Victory"],
+      "tags": [
+        "Parthian",
+        "Contribution",
+        "Peace",
+        "Battle",
+        "Roman"
+      ],
       "type": "military"
     },
     {
       "date": "01.01.0220",
-      "description": "Ardashir I, local king of Persis (Fars), begins rebellion against Arsacid rule; descended from Sassan, he seeks to restore Persian glory and replace the Parthian dynasty",
-      "description_ru": "Ардашир I, местный царь Персиды (Фарса), начинает восстание против власти Аршакидов; происходящий от Сасана, он стремится восстановить персидскую славу и заменить парфянскую династию",
+      "description": "Ardashir I, the local king of Persis (Fars), begins a rebellion against the Arsacid rule; descended from the mythical Sasan, a defender of Zoroastrianism, he seeks to restore the greatness of ancient Persia and get rid of the half-Greek Parthian culture",
+      "description_ru": "Ардашир I, местный царь Персиды (Фарса), начинает восстание против власти Аршакидов; происходящий от мифического Сасана, выступающий защитником зороастризма, он стремится восстановить величие древней Персии и избавиться от наполовину греческой парфянской культуры",
       "era": "AD",
       "latitude": 29.93,
       "longitude": 52.89,
       "name": "Ardashir I Begins Rebellion",
       "name_ru": "Ардашир I начинает восстание",
       "source": "https://en.wikipedia.org/wiki/Ardashir_I",
-      "tags": ["Parthian", "Sasanian", "Ardashir I", "Rebellion", "Persis"],
+      "tags": [
+        "Ardashir I",
+        "Sassanid",
+        "Arsacid",
+        "Rebellion",
+        "Parthian",
+        "Persian"
+      ],
       "type": "political"
     },
     {
       "date": "28.04.0224",
       "description": "Battle of Hormozdgan: Ardashir I defeats and kills Artabanus IV, the last Parthian King of Kings. This battle ends the 471-year Arsacid dynasty and marks the founding of the Sasanian Empire",
-      "description_ru": "Битва при Хормоздгане: Ардашир I побеждает и убивает Артабана IV, последнего парфянского Царя царей. Эта битва завершает 471-летнюю династию Аршакидов и знаменует основание Сасанидской империи",
+      "description_ru": "Ардашир I Сасанид побеждает и убивает Артабана IV, последнего парфянского Царя царей. Эта битва завершает 471-летнюю династию Аршакидов и знаменует основание Сасанидской империи",
       "era": "AD",
       "latitude": 32.62,
       "longitude": 51.66,
       "name": "Battle of Hormozdgan - Fall of Parthian Empire",
-      "name_ru": "Битва при Хормоздгане - падение Парфянской империи",
+      "name_ru": "Битва при Хормоздгане",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Hormozdgan",
-      "tags": ["Parthian", "Sasanian", "Battle", "Artabanus IV", "Ardashir I", "Fall"],
+      "tags": [
+        "Parthian",
+        "Fall",
+        "Ardashir I",
+        "Battle",
+        "Sassanid",
+        "Persian"
+      ],
       "type": "military"
     },
     {
@@ -739,99 +1234,14 @@
       "name": "End of Arsacid Resistance",
       "name_ru": "Конец сопротивления Аршакидов",
       "source": "https://en.wikipedia.org/wiki/Vologases_VI",
-      "tags": ["Parthian", "Arsacid", "Fall", "Vologases VI", "Dynasty"],
+      "tags": [
+        "Parthian",
+        "Fall",
+        "Arsacid",
+        "Dynasty"
+      ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0100",
-      "description": "Parthian art and architecture reaches its peak; the distinctive frontal style in sculpture, combining Hellenistic and Iranian traditions, influences art across the Near East for centuries",
-      "description_ru": "Парфянское искусство и архитектура достигают расцвета; характерный фронтальный стиль в скульптуре, сочетающий эллинистические и иранские традиции, влияет на искусство Ближнего Востока на протяжении веков",
-      "era": "AD",
-      "latitude": 35.587,
-      "longitude": 42.714,
-      "name": "Golden Age of Parthian Art",
-      "name_ru": "Золотой век парфянского искусства",
-      "source": "https://en.wikipedia.org/wiki/Parthian_art",
-      "tags": ["Parthian", "Art", "Culture", "Sculpture", "Architecture"],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0050",
-      "description": "Silk Road trade through Parthia reaches its height; Parthia controls the lucrative trade between Rome and China, with Chinese silk, spices, and luxury goods flowing west in exchange for Roman gold and silver",
-      "description_ru": "Торговля по Шёлковому пути через Парфию достигает расцвета; Парфия контролирует выгодную торговлю между Римом и Китаем, с китайским шёлком, пряностями и предметами роскоши, текущими на запад в обмен на римское золото и серебро",
-      "era": "AD",
-      "latitude": 37.667,
-      "longitude": 62.167,
-      "name": "Peak of Parthian Silk Road Trade",
-      "name_ru": "Расцвет торговли по Шёлковому пути через Парфию",
-      "source": "https://en.wikipedia.org/wiki/Silk_Road",
-      "tags": ["Parthian", "Trade", "Silk Road", "China", "Rome", "Economy"],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0097",
-      "description": "Chinese envoy Gan Ying reaches the Persian Gulf while attempting to reach Rome; Parthian officials discourage him from continuing, seeking to maintain their monopoly on Silk Road trade between east and west",
-      "description_ru": "Китайский посланник Гань Ин достигает Персидского залива, пытаясь добраться до Рима; парфянские чиновники отговаривают его от продолжения пути, стремясь сохранить монополию на торговлю по Шёлковому пути между востоком и западом",
-      "era": "AD",
-      "latitude": 29.0,
-      "longitude": 50.5,
-      "name": "Gan Ying Reaches Persian Gulf",
-      "name_ru": "Гань Ин достигает Персидского залива",
-      "source": "https://en.wikipedia.org/wiki/Gan_Ying",
-      "tags": ["Parthian", "China", "Diplomacy", "Silk Road", "Trade"],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0115",
-      "description": "Parthian minstrel tradition flourishes; court musicians (gōsān) perform epic tales of heroes and kings, preserving oral traditions that would later be recorded in texts like the Shahnameh",
-      "description_ru": "Парфянская традиция менестрелей процветает; придворные музыканты (госаны) исполняют эпические сказания о героях и царях, сохраняя устные традиции, которые позже будут записаны в текстах вроде Шахнаме",
-      "era": "AD",
-      "latitude": 33.094,
-      "longitude": 44.581,
-      "name": "Flourishing of Parthian Minstrel Tradition",
-      "name_ru": "Расцвет парфянской традиции менестрелей",
-      "source": "https://en.wikipedia.org/wiki/Gosan",
-      "tags": ["Parthian", "Culture", "Music", "Literature", "Oral Tradition"],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0150",
-      "description": "Parthian medicine and pharmacology develops; physicians blend Greek, Mesopotamian, and Iranian medical traditions, creating treatises that influence medicine across the ancient world",
-      "description_ru": "Развивается парфянская медицина и фармакология; врачи объединяют греческие, месопотамские и иранские медицинские традиции, создавая трактаты, которые влияют на медицину по всему древнему миру",
-      "era": "AD",
-      "latitude": 33.094,
-      "longitude": 44.581,
-      "name": "Development of Parthian Medicine",
-      "name_ru": "Развитие парфянской медицины",
-      "source": "https://en.wikipedia.org/wiki/History_of_medicine",
-      "tags": ["Parthian", "Science", "Medicine", "Culture"],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.0025",
-      "description": "Christianity begins spreading along trade routes through Parthian territory; the Apostle Thomas reportedly travels through Parthia to India, establishing early Christian communities",
-      "description_ru": "Христианство начинает распространяться по торговым путям через парфянскую территорию; апостол Фома, по преданию, путешествует через Парфию в Индию, основывая ранние христианские общины",
-      "era": "AD",
-      "latitude": 32.0,
-      "longitude": 48.0,
-      "name": "Early Christianity Spreads Through Parthia",
-      "name_ru": "Раннее христианство распространяется через Парфию",
-      "source": "https://en.wikipedia.org/wiki/Thomas_the_Apostle",
-      "tags": ["Parthian", "Christianity", "Religion", "Trade", "Thomas"],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.0070",
-      "description": "Jewish community in Parthian Mesopotamia grows after Roman destruction of Jerusalem; Babylonian Jewish academies begin developing what would become the Babylonian Talmud centuries later",
-      "description_ru": "Еврейская община в парфянской Месопотамии растёт после римского разрушения Иерусалима; вавилонские еврейские академии начинают развивать то, что спустя века станет Вавилонским Талмудом",
-      "era": "AD",
-      "latitude": 32.543,
-      "longitude": 44.421,
-      "name": "Growth of Babylonian Jewish Community",
-      "name_ru": "Рост вавилонской еврейской общины",
-      "source": "https://en.wikipedia.org/wiki/History_of_the_Jews_in_Iraq",
-      "tags": ["Parthian", "Jewish", "Religion", "Babylon", "Diaspora"],
-      "type": "religious"
     }
-  ]
+  ],
+  "filename": "parthian_empire.json"
 }

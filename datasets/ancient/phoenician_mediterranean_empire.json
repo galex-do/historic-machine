@@ -672,10 +672,10 @@
       "name_ru": "Первый договор между Римом и Карфагеном",
       "source": "https://en.wikipedia.org/wiki/Roman–Punic_treaties",
       "tags": [
-        "Carthage",
-        "Rome",
         "Treaty",
-        "Diplomacy"
+        "Diplomacy",
+        "Carthage",
+        "Roman"
       ],
       "type": "political"
     },
@@ -804,12 +804,12 @@
       "name_ru": "Начало Первой Пунической войны",
       "source": "https://en.wikipedia.org/wiki/First_Punic_War",
       "tags": [
-        "Carthage",
         "Punic Wars",
-        "Rome",
-        "War",
+        "Carthage",
         "Sicily",
-        "First Punic War"
+        "First Punic War",
+        "Roman",
+        "War"
       ],
       "type": "military"
     },
@@ -825,11 +825,11 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Cape_Ecnomus",
       "tags": [
         "Carthage",
-        "Rome",
         "Punic Wars",
-        "Naval",
         "Battle",
-        "First Punic War"
+        "Naval",
+        "First Punic War",
+        "Roman"
       ],
       "type": "military"
     },
@@ -844,13 +844,13 @@
       "name_ru": "Морской бой при Эгатских островах",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Aegates",
       "tags": [
-        "Carthage",
-        "Punic Wars",
-        "Rome",
-        "Naval",
         "Battle",
+        "Naval",
         "Sicily",
-        "First Punic War"
+        "First Punic War",
+        "Punic Wars",
+        "Carthage",
+        "Roman"
       ],
       "type": "military"
     },
@@ -866,11 +866,11 @@
       "source": "https://phoenician.org/carthage_hannibal_barca/",
       "tags": [
         "Carthage",
-        "Barcid Dynasty",
-        "Expansion",
-        "Conquest",
+        "Iberia",
         "Silver",
-        "Iberia"
+        "Conquest",
+        "Expansion",
+        "Barcid"
       ],
       "type": "military"
     },
@@ -886,10 +886,10 @@
       "source": "https://phoenician.org/carthage_hannibal_barca/",
       "tags": [
         "Carthage",
-        "Colonization",
         "Iberia",
-        "Barcid Dynasty",
-        "City"
+        "Colonization",
+        "City",
+        "Barcid"
       ],
       "type": "historic"
     },
@@ -904,12 +904,12 @@
       "name_ru": "Битва при Требии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Trebia",
       "tags": [
-        "Carthage",
-        "Hannibal",
-        "Rome",
-        "Punic Wars",
         "Battle",
-        "Second Punic War"
+        "Carthage",
+        "Punic Wars",
+        "Hannibal",
+        "Second Punic War",
+        "Roman"
       ],
       "type": "military"
     },
@@ -924,12 +924,12 @@
       "name_ru": "Битва при Тицине",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Trebia",
       "tags": [
+        "Battle",
         "Carthage",
         "Hannibal",
-        "Rome",
         "Punic Wars",
-        "Battle",
-        "Second Punic War"
+        "Second Punic War",
+        "Roman"
       ],
       "type": "military"
     },
@@ -944,11 +944,11 @@
       "name_ru": "Ганнибал переходит Альпы",
       "source": "https://en.wikipedia.org/wiki/Hannibal%27s_crossing_of_the_Alps",
       "tags": [
-        "Carthage",
         "Hannibal",
+        "Carthage",
         "Punic Wars",
-        "Barcid Dynasty",
-        "Second Punic War"
+        "Second Punic War",
+        "Barcid"
       ],
       "type": "military"
     },
@@ -963,14 +963,14 @@
       "name_ru": "Начало похода Ганнибала",
       "source": "https://phoenician.org/carthage_hannibal_barca/",
       "tags": [
-        "Carthage",
-        "Hannibal",
-        "Punic Wars",
-        "Barcid Dynasty",
-        "Rome",
         "Iberia",
         "War",
-        "Second Punic War"
+        "Carthage",
+        "Hannibal",
+        "Second Punic War",
+        "Punic Wars",
+        "Roman",
+        "Barcid"
       ],
       "type": "military"
     },
@@ -986,12 +986,12 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Lake_Trasimene",
       "tags": [
         "Carthage",
-        "Hannibal",
-        "Rome",
-        "Punic Wars",
-        "Ambush",
         "Battle",
-        "Second Punic War"
+        "Ambush",
+        "Second Punic War",
+        "Punic Wars",
+        "Hannibal",
+        "Roman"
       ],
       "type": "military"
     },
@@ -1006,12 +1006,12 @@
       "name_ru": "Карфаген побеждает Рим в битве при Каннах",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Cannae",
       "tags": [
+        "Second Punic War",
         "Carthage",
         "Hannibal",
         "Punic Wars",
         "Battle",
-        "Rome",
-        "Second Punic War"
+        "Roman"
       ],
       "type": "military"
     },
@@ -1026,12 +1026,12 @@
       "name_ru": "Римское отвоевание Капуи",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Capua_(211_BC)",
       "tags": [
-        "Rome",
-        "Carthage",
-        "Hannibal",
-        "Punic Wars",
+        "Second Punic War",
         "Siege",
-        "Second Punic War"
+        "Punic Wars",
+        "Hannibal",
+        "Carthage",
+        "Roman"
       ],
       "type": "military"
     },
@@ -1046,13 +1046,13 @@
       "name_ru": "Сципион захватывает Новый Карфаген",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Carthago_Nova",
       "tags": [
-        "Carthage",
         "Punic Wars",
-        "Rome",
+        "Scipio",
+        "Second Punic War",
+        "Carthage",
         "Iberia",
         "Battle",
-        "Scipio",
-        "Second Punic War"
+        "Roman"
       ],
       "type": "military"
     },
@@ -1067,11 +1067,11 @@
       "name_ru": "Битва при Метавре",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Metaurus",
       "tags": [
-        "Rome",
-        "Carthage",
-        "Punic Wars",
         "Battle",
-        "Second Punic War"
+        "Second Punic War",
+        "Punic Wars",
+        "Carthage",
+        "Roman"
       ],
       "type": "military"
     },
@@ -1086,12 +1086,12 @@
       "name_ru": "Сципион вторгается в Африку",
       "source": "https://en.wikipedia.org/wiki/Scipio_Africanus",
       "tags": [
-        "Rome",
         "Carthage",
+        "Invasions",
         "Punic Wars",
         "Scipio",
         "Second Punic War",
-        "Invasions"
+        "Roman"
       ],
       "type": "military"
     },
@@ -1106,12 +1106,12 @@
       "name_ru": "Битва при Великих равнинах",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Great_Plains",
       "tags": [
-        "Rome",
         "Carthage",
-        "Punic Wars",
-        "Scipio",
+        "Second Punic War",
         "Battle",
-        "Second Punic War"
+        "Scipio",
+        "Punic Wars",
+        "Roman"
       ],
       "type": "military"
     },
@@ -1126,13 +1126,13 @@
       "name_ru": "Рим побеждает в битве при Заме",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Zama",
       "tags": [
+        "Battle",
         "Carthage",
         "Hannibal",
         "Punic Wars",
-        "Rome",
-        "Battle",
+        "Second Punic War",
         "Scipio",
-        "Second Punic War"
+        "Roman"
       ],
       "type": "military"
     },
@@ -1147,12 +1147,12 @@
       "name_ru": "Карфагенский мирный договор",
       "source": "https://en.wikipedia.org/wiki/Second_Punic_War",
       "tags": [
-        "Carthage",
         "Punic Wars",
-        "Rome",
-        "Peace",
+        "Second Punic War",
         "Treaty",
-        "Second Punic War"
+        "Peace",
+        "Carthage",
+        "Roman"
       ],
       "type": "political"
     },
@@ -1168,10 +1168,10 @@
       "source": "https://en.wikipedia.org/wiki/Ancient_Carthage",
       "tags": [
         "Carthage",
-        "Rome",
-        "Treaty",
+        "Economic",
         "Contribution",
-        "Economic"
+        "Treaty",
+        "Roman"
       ],
       "type": "political"
     },
@@ -1187,10 +1187,10 @@
       "source": "https://en.wikipedia.org/wiki/Third_Punic_War",
       "tags": [
         "Carthage",
-        "Punic Wars",
-        "Rome",
+        "Third Punic War",
         "War",
-        "Third Punic War"
+        "Punic Wars",
+        "Roman"
       ],
       "type": "military"
     },
@@ -1205,13 +1205,13 @@
       "name_ru": "Падение финикийско-пунической цивилизации",
       "source": "https://www.worldhistory.org/phoenicia/",
       "tags": [
-        "Carthage",
-        "Rome",
         "Destruction",
         "Fall",
-        "End",
         "Punic Wars",
-        "Third Punic War"
+        "Third Punic War",
+        "End",
+        "Carthage",
+        "Roman"
       ],
       "type": "historic"
     },
@@ -1226,13 +1226,13 @@
       "name_ru": "Разрушение Карфагена",
       "source": "https://en.wikipedia.org/wiki/Third_Punic_War",
       "tags": [
-        "Carthage",
-        "Punic Wars",
-        "Rome",
-        "End",
-        "Destruction",
+        "Third Punic War",
         "Fall",
-        "Third Punic War"
+        "Destruction",
+        "End",
+        "Punic Wars",
+        "Carthage",
+        "Roman"
       ],
       "type": "military"
     }
