@@ -85,14 +85,18 @@ export function useRelatedEvents(currentEvent, allEvents) {
     const current = currentEvent.value
     const currentLat = parseFloat(current.latitude)
     const currentLon = parseFloat(current.longitude)
+    const currentId = String(current.id)
+    
+    // Track used IDs to prevent duplicates, starting with current event
+    const usedIds = new Set([currentId])
     
     const candidates = allEvents.value.filter(e => {
-      if (e.id === current.id) return false
+      const eventId = String(e.id)
+      // Skip current event and already seen events
+      if (usedIds.has(eventId)) return false
       const yearDiff = getTimeDifferenceYears(current, e)
       return yearDiff <= YEARS_RANGE
     })
-
-    const usedIds = new Set()
 
     const regionCandidates = candidates.filter(e => {
       const lat = parseFloat(e.latitude)
@@ -104,15 +108,15 @@ export function useRelatedEvents(currentEvent, allEvents) {
     
     const shuffledRegion = shuffleArray(regionCandidates).slice(0, MAX_RESULTS)
     sameTimeRegion.value = sortByDate(shuffledRegion)
-    shuffledRegion.forEach(e => usedIds.add(e.id))
+    shuffledRegion.forEach(e => usedIds.add(String(e.id)))
 
-    const timeCandidates = candidates.filter(e => !usedIds.has(e.id))
+    const timeCandidates = candidates.filter(e => !usedIds.has(String(e.id)))
     const shuffledTime = shuffleArray(timeCandidates).slice(0, MAX_RESULTS)
     aroundSameTime.value = sortByDate(shuffledTime)
-    shuffledTime.forEach(e => usedIds.add(e.id))
+    shuffledTime.forEach(e => usedIds.add(String(e.id)))
 
     const tagCandidates = candidates
-      .filter(e => !usedIds.has(e.id) && hasSharedTag(current, e))
+      .filter(e => !usedIds.has(String(e.id)) && hasSharedTag(current, e))
       .map(e => ({
         event: e,
         timeDiff: getTimeDifferenceYears(current, e)
