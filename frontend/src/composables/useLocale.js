@@ -238,6 +238,7 @@ const UI_TRANSLATIONS = {
     disableNarrativeFlow: 'Disable narrative flow',
     focusOnMap: 'Focus on map',
     source: 'Source',
+    eventsAtLocation: 'Events at this Location',
     highlightOnMap: 'Highlight on map',
     clickToReadMore: 'Click to read more',
     
@@ -537,6 +538,7 @@ const UI_TRANSLATIONS = {
     disableNarrativeFlow: 'Отключить нарративный поток',
     focusOnMap: 'Фокус на карте',
     source: 'Источник',
+    eventsAtLocation: 'событий в этом месте',
     highlightOnMap: 'Выделить на карте',
     clickToReadMore: 'Нажмите, чтобы читать далее',
     

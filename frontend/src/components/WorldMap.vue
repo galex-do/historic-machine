@@ -45,7 +45,7 @@
               </span>
             </template>
             <template v-else>
-              {{ selected_events.length }} Events at this Location
+              {{ selected_events.length }} {{ t('eventsAtLocation') }}
             </template>
           </h2>
           <div class="event_header_actions">
@@ -184,12 +184,13 @@ export default {
   setup() {
     const { canCreateEvents, canEditEvents, isGuest } = useAuth()
     const { allTags, loadTags } = useTags()
-    const { formatEventDisplayDate } = useLocale()
+    const { formatEventDisplayDate, t } = useLocale()
     return {
       canCreateEvents,
       canEditEvents,
       isGuest,
       allTags,
+      t,
       loadTags,
       formatEventDisplayDate
     }
