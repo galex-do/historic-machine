@@ -37,16 +37,12 @@
           <h2 class="event_info_modal_title">
             <template v-if="selected_events.length === 1">
               {{ get_event_emoji(selected_events[0].lens_type) }}
-              <a 
-                v-if="selected_events[0].source"
-                :href="selected_events[0].source" 
-                target="_blank" 
-                rel="noopener noreferrer"
+              <span 
                 class="event_name_link" 
+                @click="handle_show_detail(selected_events[0])"
               >
                 {{ selected_events[0].name }}
-              </a>
-              <span v-else class="event_name">{{ selected_events[0].name }}</span>
+              </span>
             </template>
             <template v-else>
               {{ selected_events.length }} Events at this Location
@@ -77,12 +73,10 @@
                   {{ ' ' }}
                   <span class="event_icon">{{ get_event_emoji(group.events[0].lens_type) }}</span>
                   {{ ' ' }}
-                  <a v-if="group.events[0].source" 
-                     :href="group.events[0].source" 
-                     target="_blank" 
-                     rel="noopener noreferrer"
-                     class="event_name event_name_link">{{ group.events[0].name }}</a>
-                  <span v-else class="event_name">{{ group.events[0].name }}</span>
+                  <span 
+                     class="event_name event_name_link"
+                     @click="handle_show_detail(group.events[0])"
+                  >{{ group.events[0].name }}</span>
                   <template v-if="group.events[0].description">
                     {{ ' — ' }}{{ group.events[0].description }}
                   </template>
@@ -129,12 +123,10 @@
                     <span class="timeline_single_text">
                       <span class="event_icon">{{ get_event_emoji(event.lens_type) }}</span>
                       {{ ' ' }}
-                      <a v-if="event.source" 
-                         :href="event.source" 
-                         target="_blank" 
-                         rel="noopener noreferrer"
-                         class="event_name event_name_link">{{ event.name }}</a>
-                      <span v-else class="event_name">{{ event.name }}</span>
+                      <span 
+                         class="event_name event_name_link"
+                         @click="handle_show_detail(event)"
+                      >{{ event.name }}</span>
                       <template v-if="event.description">
                         {{ ' — ' }}{{ event.description }}
                       </template>
@@ -220,7 +212,7 @@ export default {
       default: false
     }
   },
-  emits: ['event-created', 'event-updated', 'event-deleted', 'map-bounds-changed', 'tag-clicked'],
+  emits: ['event-created', 'event-updated', 'event-deleted', 'map-bounds-changed', 'tag-clicked', 'show-detail'],
   data() {
     return {
       map: null,
@@ -1368,6 +1360,10 @@ export default {
       // Close the modal after clicking a tag for immediate visual feedback
       this.close_event_info_modal()
     },
+    handle_show_detail(event) {
+      this.$emit('show-detail', event)
+      this.close_event_info_modal()
+    },
 
     // Get contrast color for text on colored backgrounds
     getContrastColor(hexColor) {
@@ -1948,14 +1944,12 @@ export default {
 .event_info_modal_title .event_name_link {
   font-weight: 700;
   color: #3b82f6;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
+  cursor: pointer;
   transition: all 0.2s;
 }
 
 .event_info_modal_title .event_name_link:hover {
   color: #2563eb;
-  border-bottom-color: #2563eb;
 }
 
 .event_header_actions {
@@ -2095,14 +2089,12 @@ export default {
 .timeline_single_text .event_name_link {
   font-weight: 700;
   color: #3b82f6;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
+  cursor: pointer;
   transition: all 0.2s;
 }
 
 .timeline_single_text .event_name_link:hover {
   color: #2563eb;
-  border-bottom-color: #2563eb;
 }
 
 .timeline_events_list {

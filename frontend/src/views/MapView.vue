@@ -46,6 +46,7 @@
             @toggle-follow="handleToggleNarrativeFlow"
             @geolocate="handleGeolocate"
             @share="handleShareUrl"
+            ref="eventsGrid"
           />
         </div>
       </aside>
@@ -63,6 +64,7 @@
           @map-bounds-changed="handleMapBoundsChanged"
           @locale-changed="handleLocaleChanged"
           @tag-clicked="handleTagClick"
+          @show-detail="handleShowDetail"
           ref="worldMap"
         />
       </main>
@@ -104,6 +106,7 @@ export default {
     const sidebarCollapsed = ref(loadSidebarState())
     const focusEvent = ref(null)
     const worldMap = ref(null)
+    const eventsGrid = ref(null)
     
     // Map filter state
     const mapFilterEnabled = ref(false)
@@ -406,6 +409,12 @@ export default {
       narrativeFlowEnabled.value = !narrativeFlowEnabled.value
     }
 
+    const handleShowDetail = (event) => {
+      if (eventsGrid.value) {
+        eventsGrid.value.openEventDetail(event)
+      }
+    }
+
     // Click outside to close dropdown
     const handleClickOutside = (event) => {
       // Close lens dropdown if clicking outside
@@ -538,6 +547,8 @@ export default {
       handleMapFilterToggle,
       handleMapBoundsChanged,
       worldMap,
+      eventsGrid,
+      handleShowDetail,
       
       // Narrative flow
       narrativeFlowEnabled,
