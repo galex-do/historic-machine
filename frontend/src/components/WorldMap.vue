@@ -831,10 +831,27 @@ export default {
               
               const halfSize = circleSize / 2
               
+              // Inline styles for cluster circles (Vue scoped CSS doesn't apply to Leaflet dynamic elements)
+              const circleStyles = `
+                width: ${circleSize}px;
+                height: ${circleSize}px;
+                font-size: ${fontSize}px;
+                background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+                border: 3px solid rgba(255, 255, 255, 0.95);
+                border-radius: 50%;
+                color: white;
+                font-weight: 700;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 2px 8px rgba(99, 102, 241, 0.5), 0 4px 12px rgba(0, 0, 0, 0.25);
+                cursor: pointer;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+              `.replace(/\s+/g, ' ').trim()
+              
               return L.divIcon({
-                html: `<div class="cluster-circle" style="width: ${circleSize}px; height: ${circleSize}px; font-size: ${fontSize}px;">
-                         ${displayCount}
-                       </div>`,
+                html: `<div style="${circleStyles}">${displayCount}</div>`,
                 className: 'cluster-circle-container',
                 iconSize: [circleSize, circleSize],
                 iconAnchor: [halfSize, halfSize],
