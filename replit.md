@@ -33,7 +33,7 @@ A comprehensive web application for mapping historical events on an interactive 
 - **Vite Proxy Setup**: Configured Vite dev server to proxy API requests to the backend for seamless communication in the Replit environment.
 - **Session Tracking**: Lightweight implementation for both authenticated and anonymous users with a 60-second heartbeat and a statistics dashboard. UUID-based anonymous tracking for privacy. Active window: 5 minutes - sessions become inactive 5 minutes after last heartbeat.
 - **Tag Search**: Dynamic search input for tags from visible events with autocomplete, suggestions, and filtering.
-- **Service Worker**: Cleanup file unregisters any lingering service workers for tile caching.
+- **Progressive Web App (PWA)**: Full PWA support with installability, offline caching for app shell and map tiles, and service worker for network resilience. Includes manifest.json with app icons (72px-512px) and theme colors.
 - **Anonymous Session Duration Tracking**: Uses `last_seen_at` to calculate session duration.
 
 ### Feature Specifications
