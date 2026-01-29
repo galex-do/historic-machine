@@ -51,7 +51,7 @@
         </div>
         
         <!-- Modal Content -->
-        <div class="event_info_modal_content">
+        <div class="event_info_modal_content" ref="locationModalContent">
           <div class="timeline_container">
             <div v-for="group in grouped_events_by_date" :key="group.date" class="timeline_date_group">
               <!-- Single event on this date: everything on one line -->
@@ -215,6 +215,7 @@ export default {
       show_event_info_modal: false, // New modal for event info
       selected_events: [], // Events to show in info modal
       location_events_backup: [], // Backup for back navigation
+      location_scroll_backup: 0, // Scroll position backup for back navigation
       highlight_overlay: null, // Store highlight overlay layer (halo ring + center dot)
       user_location_layer: null, // Store user location marker (geolocation feature)
       show_offscreen_notification: false, // Show notification when marker is off-screen
@@ -1361,8 +1362,11 @@ export default {
       this.close_event_info_modal()
     },
     handle_show_detail(event) {
-      // Store current location events for back navigation
+      // Store current location events and scroll position for back navigation
       this.location_events_backup = [...this.selected_events]
+      if (this.$refs.locationModalContent) {
+        this.location_scroll_backup = this.$refs.locationModalContent.scrollTop
+      }
       this.$emit('show-detail', { event, source: 'location' })
       this.close_event_info_modal()
     },
@@ -1370,6 +1374,12 @@ export default {
       if (this.location_events_backup && this.location_events_backup.length > 0) {
         this.selected_events = this.location_events_backup
         this.show_event_info_modal = true
+        // Restore scroll position after modal renders
+        this.$nextTick(() => {
+          if (this.$refs.locationModalContent && this.location_scroll_backup > 0) {
+            this.$refs.locationModalContent.scrollTop = this.location_scroll_backup
+          }
+        })
       }
     },
 

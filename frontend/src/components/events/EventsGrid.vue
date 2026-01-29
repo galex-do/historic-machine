@@ -111,6 +111,7 @@
       @focus-event="$emit('focus-event', $event)"
       @tag-clicked="$emit('tag-clicked', $event)"
       @show-detail="handleTimelineShowDetail"
+      ref="timelineModal"
     />
 
     <!-- Event Detail Modal -->
@@ -282,6 +283,10 @@ export default {
       this.tagFilterVisible = !this.tagFilterVisible
     },
     openTimeline() {
+      // Reset saved scroll position for fresh open
+      if (this.$refs.timelineModal) {
+        this.$refs.timelineModal.resetScrollPosition?.()
+      }
       this.timelineModalOpen = true
     },
     openEventDetail(event, source = null) {
@@ -305,6 +310,7 @@ export default {
     handleBack() {
       if (this.navigationSource === 'timeline') {
         this.timelineModalOpen = true
+        // Scroll position is auto-restored via savedScrollPosition in TimelineModal
       } else if (this.navigationSource === 'location') {
         this.$emit('back-to-location')
       }
