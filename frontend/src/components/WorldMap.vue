@@ -35,18 +35,7 @@
         <!-- Modal Header -->
         <div class="event_info_modal_header">
           <h2 class="event_info_modal_title">
-            <template v-if="selected_events.length === 1">
-              {{ get_event_emoji(selected_events[0].lens_type) }}
-              <span 
-                class="event_name_link" 
-                @click="handle_show_detail(selected_events[0])"
-              >
-                {{ selected_events[0].name }}
-              </span>
-            </template>
-            <template v-else>
-              {{ selected_events.length }} {{ t('eventsAtLocation') }}
-            </template>
+            {{ selected_events.length }} {{ t('eventsAtLocation') }}
           </h2>
           <div class="event_header_actions">
             <button 
@@ -1278,10 +1267,19 @@ export default {
       }
       
       // Enrich events with their tag information
-      this.selected_events = events.map(event => ({
+      const enrichedEvents = events.map(event => ({
         ...event,
         tags: event.tags || [] // Ensure tags array exists
       }))
+      
+      // Single event: use unified detail modal
+      if (enrichedEvents.length === 1) {
+        this.$emit('show-detail', enrichedEvents[0])
+        return
+      }
+      
+      // Multiple events: show location modal
+      this.selected_events = enrichedEvents
       this.show_event_info_modal = true
     },
 

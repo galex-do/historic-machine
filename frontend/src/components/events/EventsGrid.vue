@@ -122,6 +122,7 @@
       @focus-event="$emit('focus-event', $event)"
       @tag-clicked="$emit('tag-clicked', $event)"
       @select-event="handleSelectRelatedEvent"
+      @edit-event="handleEditEvent"
     />
   </div>
 </template>
@@ -164,7 +165,7 @@ export default {
       default: false
     }
   },
-  emits: ['focus-event', 'highlight-event', 'map-filter-toggle', 'tag-clicked', 'remove-tag', 'clear-all-tags', 'toggle-follow', 'geolocate', 'share'],
+  emits: ['focus-event', 'highlight-event', 'map-filter-toggle', 'tag-clicked', 'remove-tag', 'clear-all-tags', 'toggle-follow', 'geolocate', 'share', 'edit-event'],
   setup() {
     const { t } = useLocale()
     const { loading: geolocationLoading, get_current_position } = useGeolocation()
@@ -291,6 +292,10 @@ export default {
       this.selectedDetailEvent = event
       this.timelineModalOpen = false
       this.eventDetailModalOpen = true
+    },
+    handleEditEvent(event) {
+      this.eventDetailModalOpen = false
+      this.$emit('edit-event', event)
     },
     async requestGeolocation() {
       try {

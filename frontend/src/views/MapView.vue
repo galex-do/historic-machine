@@ -46,6 +46,7 @@
             @toggle-follow="handleToggleNarrativeFlow"
             @geolocate="handleGeolocate"
             @share="handleShareUrl"
+            @edit-event="handleEditEvent"
             ref="eventsGrid"
           />
         </div>
@@ -415,6 +416,12 @@ export default {
       }
     }
 
+    const handleEditEvent = (event) => {
+      if (worldMap.value) {
+        worldMap.value.edit_event(event.id)
+      }
+    }
+
     // Click outside to close dropdown
     const handleClickOutside = (event) => {
       // Close lens dropdown if clicking outside
@@ -549,6 +556,7 @@ export default {
       worldMap,
       eventsGrid,
       handleShowDetail,
+      handleEditEvent,
       
       // Narrative flow
       narrativeFlowEnabled,

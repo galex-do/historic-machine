@@ -89,6 +89,14 @@
           >
             🔗 {{ t('source') }}
           </a>
+          <button 
+            v-if="canEditEvents" 
+            class="edit_btn" 
+            @click="handleEditEvent"
+            :title="t('editEvent')"
+          >
+            ✏️ {{ t('editEvent') }}
+          </button>
           <button class="focus_btn" @click="handleFocusEvent" :title="t('focusOnMap')">
             ⌖ {{ t('focusOnMap') }}
           </button>
@@ -102,6 +110,7 @@
 import { watch, ref, computed, toRef, onMounted, onUnmounted } from 'vue'
 import { useLocale } from '@/composables/useLocale.js'
 import { useRelatedEvents } from '@/composables/useRelatedEvents.js'
+import { useAuth } from '@/composables/useAuth.js'
 import { getEventEmoji } from '@/utils/event-utils.js'
 
 export default {
@@ -120,9 +129,10 @@ export default {
       default: () => []
     }
   },
-  emits: ['close', 'focus-event', 'tag-clicked', 'select-event'],
+  emits: ['close', 'focus-event', 'tag-clicked', 'select-event', 'edit-event'],
   setup(props, { emit }) {
     const { t, formatEventDisplayDate } = useLocale()
+    const { canEditEvents } = useAuth()
     const previouslyFocusedElement = ref(null)
 
     const eventRef = toRef(props, 'event')
@@ -152,6 +162,11 @@ export default {
 
     const handleRelatedClick = (relEvent) => {
       emit('select-event', relEvent)
+    }
+
+    const handleEditEvent = () => {
+      emit('edit-event', props.event)
+      closeModal()
     }
 
     const handleKeydown = (e) => {
@@ -185,10 +200,12 @@ export default {
       t,
       formatEventDisplayDate,
       getEventEmoji,
+      canEditEvents,
       closeModal,
       handleFocusEvent,
       handleTagClick,
       handleRelatedClick,
+      handleEditEvent,
       aroundSameTime,
       sameTimeRegion,
       nearByKind,
@@ -421,5 +438,23 @@ export default {
 
 .source_btn:hover {
   background: #2563eb;
+}
+
+.edit_btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f59e0b;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.edit_btn:hover {
+  background: #d97706;
 }
 </style>
