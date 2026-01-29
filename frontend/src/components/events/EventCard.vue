@@ -3,17 +3,13 @@
     <!-- Title line with icon and name -->
     <div class="event_title_line">
       <span class="event_icon">{{ getEventEmoji(event.lens_type) }}</span>
-      <a 
-        v-if="event.source"
-        :href="event.source" 
-        target="_blank" 
-        rel="noopener noreferrer"
+      <span 
         class="event_name_link" 
-        :title="`${event.name} - View source`"
+        @click="$emit('show-detail', event)"
+        :title="t('clickToReadMore')"
       >
         {{ event.name }}
-      </a>
-      <span v-else class="event_name">{{ event.name }}</span>
+      </span>
       <button 
         v-if="mapFilterEnabled"
         class="highlight_btn" 
@@ -32,12 +28,10 @@
       </button>
     </div>
     
-    <!-- Description (truncated, clickable to show full) -->
+    <!-- Description (truncated) -->
     <div 
       v-if="event.description" 
       class="event_description"
-      @click="$emit('show-detail', event)"
-      :title="t('clickToReadMore')"
     >
       {{ event.description }}
     </div>
@@ -126,7 +120,7 @@ export default {
 .event_name_link {
   font-weight: 600;
   color: #3b82f6;
-  text-decoration: none;
+  cursor: pointer;
   transition: color 0.2s;
   flex: 1;
   min-width: 0;
@@ -134,7 +128,6 @@ export default {
 
 .event_name_link:hover {
   color: #1d4ed8;
-  text-decoration: underline;
 }
 
 .event_description {
@@ -146,12 +139,6 @@ export default {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-.event_description:hover {
-  color: #3b82f6;
 }
 
 .event_tags_row {

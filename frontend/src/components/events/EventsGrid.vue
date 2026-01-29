@@ -110,6 +110,7 @@
       @close="timelineModalOpen = false"
       @focus-event="$emit('focus-event', $event)"
       @tag-clicked="$emit('tag-clicked', $event)"
+      @show-detail="handleTimelineShowDetail"
     />
 
     <!-- Event Detail Modal -->
@@ -285,6 +286,11 @@ export default {
     },
     handleSelectRelatedEvent(event) {
       this.selectedDetailEvent = event
+    },
+    handleTimelineShowDetail(event) {
+      this.selectedDetailEvent = event
+      this.timelineModalOpen = false
+      this.eventDetailModalOpen = true
     },
     async requestGeolocation() {
       try {

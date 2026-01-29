@@ -4,14 +4,7 @@
       <div class="event_detail_header">
         <div class="event_title_row">
           <span class="event_icon">{{ getEventEmoji(event.lens_type) }}</span>
-          <a 
-            v-if="event.source"
-            :href="event.source" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            class="event_name_link"
-          >{{ event.name }}</a>
-          <span v-else class="event_name">{{ event.name }}</span>
+          <span class="event_name">{{ event.name }}</span>
         </div>
         <button class="close_btn" @click="closeModal" :title="t('close')">×</button>
       </div>
@@ -87,6 +80,15 @@
         </div>
 
         <div class="event_actions">
+          <a 
+            v-if="event.source"
+            :href="event.source" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="source_btn"
+          >
+            🔗 {{ t('source') }}
+          </a>
           <button class="focus_btn" @click="handleFocusEvent" :title="t('focusOnMap')">
             ⌖ {{ t('focusOnMap') }}
           </button>
@@ -251,17 +253,6 @@ export default {
   word-break: break-word;
 }
 
-.event_name_link {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #3b82f6;
-  text-decoration: none;
-  word-break: break-word;
-}
-
-.event_name_link:hover {
-  text-decoration: underline;
-}
 
 .close_btn {
   background: none;
@@ -411,5 +402,24 @@ export default {
 .focus_btn:hover {
   background: #e2e8f0;
   color: #3b82f6;
+}
+
+.source_btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #3b82f6;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.source_btn:hover {
+  background: #2563eb;
 }
 </style>

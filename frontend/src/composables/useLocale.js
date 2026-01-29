@@ -237,6 +237,7 @@ const UI_TRANSLATIONS = {
     enableNarrativeFlow: 'Enable narrative flow - connect events chronologically',
     disableNarrativeFlow: 'Disable narrative flow',
     focusOnMap: 'Focus on map',
+    source: 'Source',
     highlightOnMap: 'Highlight on map',
     clickToReadMore: 'Click to read more',
     
@@ -535,6 +536,7 @@ const UI_TRANSLATIONS = {
     enableNarrativeFlow: 'Включить нарративный поток - соединить события хронологически',
     disableNarrativeFlow: 'Отключить нарративный поток',
     focusOnMap: 'Фокус на карте',
+    source: 'Источник',
     highlightOnMap: 'Выделить на карте',
     clickToReadMore: 'Нажмите, чтобы читать далее',
     
