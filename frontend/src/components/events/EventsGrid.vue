@@ -82,7 +82,11 @@
       @add-tag="$emit('tag-clicked', $event)"
     />
 
-    <div class="events-grid">
+    <div 
+      class="events-grid"
+      @wheel="handleWheel"
+      ref="eventsGrid"
+    >
       <div v-if="events.length === 0" class="no-events">
         <p>No events found for the selected period. Click on the map to add your first historical event!</p>
       </div>
@@ -181,7 +185,9 @@ export default {
       timelineModalOpen: false,
       eventDetailModalOpen: false,
       selectedDetailEvent: {},
-      STORAGE_KEY
+      STORAGE_KEY,
+      scrollThrottleTimer: null,
+      scrollThrottleDelay: 150 // ms between page changes
     }
   },
   computed: {
@@ -295,6 +301,31 @@ export default {
         e.preventDefault()
         this.goToPage(this.currentPage + 1)
       }
+    },
+    handleWheel(e) {
+      // Skip if no events or only one page
+      if (this.totalPages <= 1) return
+      
+      // Skip if a modal is open
+      if (this.timelineModalOpen || this.eventDetailModalOpen) return
+      
+      // Throttle scroll events to prevent too rapid page changes
+      if (this.scrollThrottleTimer) return
+      
+      // Determine scroll direction (deltaY > 0 = scroll down = next page)
+      const direction = e.deltaY > 0 ? 1 : -1
+      const newPage = this.currentPage + direction
+      
+      // Only process if page change is valid
+      if (newPage >= 1 && newPage <= this.totalPages) {
+        e.preventDefault()
+        this.goToPage(newPage)
+        
+        // Set throttle timer
+        this.scrollThrottleTimer = setTimeout(() => {
+          this.scrollThrottleTimer = null
+        }, this.scrollThrottleDelay)
+      }
     }
   },
   mounted() {
@@ -302,6 +333,9 @@ export default {
   },
   beforeUnmount() {
     document.removeEventListener('keydown', this.handleKeydown)
+    if (this.scrollThrottleTimer) {
+      clearTimeout(this.scrollThrottleTimer)
+    }
   }
 }
 </script>
