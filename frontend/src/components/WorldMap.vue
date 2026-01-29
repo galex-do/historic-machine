@@ -762,11 +762,11 @@ export default {
             showCoverageOnHover: false,
             // Don't zoom on cluster click - we'll show modal instead
             zoomToBoundsOnClick: false,
-            // Disable clustering at zoom level (disable to allow clustering at all zooms)
-            disableClusteringAtZoom: null,
+            // Disable clustering at max zoom to show individual pins
+            disableClusteringAtZoom: 18,
             // Don't spiderfy - we show modal instead
             spiderfyOnMaxZoom: false,
-            // Custom icon creation for clusters - count total events, not just markers
+            // Custom icon creation for clusters - use circles sized by event count
             iconCreateFunction: (cluster) => {
               // Get all child markers in this cluster
               const childMarkers = cluster.getAllChildMarkers()
@@ -778,18 +778,67 @@ export default {
                 totalEventCount += marker.eventCount || 1
               })
               
-              // Display "99+" if count exceeds 99 for better readability
-              const displayCount = totalEventCount > 99 ? '99+' : totalEventCount
+              // Get current zoom level
+              const currentZoom = this.map ? this.map.getZoom() : 10
+              
+              // At high zoom (15+), use pin icon style for precise location
+              if (currentZoom >= 15) {
+                const displayCount = totalEventCount > 99 ? '99+' : totalEventCount
+                return L.divIcon({
+                  html: `<div class="emoji-marker cluster-marker" data-lens="cluster">
+                           📍
+                           <span class="marker-count-badge">${displayCount}</span>
+                         </div>`,
+                  className: 'emoji-marker-container',
+                  iconSize: [30, 30],
+                  iconAnchor: [15, 30],
+                  popupAnchor: [0, -30]
+                })
+              }
+              
+              // At lower zoom levels, use colored circles sized by event count
+              // Size tiers: keeps circles smaller than highlight ring (28px radius = 56px diameter)
+              let circleSize, fontSize
+              if (totalEventCount > 200) {
+                circleSize = 48  // Largest
+                fontSize = 14
+              } else if (totalEventCount > 100) {
+                circleSize = 42
+                fontSize = 13
+              } else if (totalEventCount > 50) {
+                circleSize = 36
+                fontSize = 12
+              } else if (totalEventCount > 20) {
+                circleSize = 30
+                fontSize = 11
+              } else if (totalEventCount >= 10) {
+                circleSize = 26
+                fontSize = 11
+              } else {
+                circleSize = 22  // Smallest (<10 events)
+                fontSize = 10
+              }
+              
+              // Display count - abbreviate large numbers
+              let displayCount
+              if (totalEventCount > 999) {
+                displayCount = Math.round(totalEventCount / 1000) + 'k'
+              } else if (totalEventCount > 99) {
+                displayCount = totalEventCount
+              } else {
+                displayCount = totalEventCount
+              }
+              
+              const halfSize = circleSize / 2
               
               return L.divIcon({
-                html: `<div class="emoji-marker cluster-marker" data-lens="cluster">
-                         📍
-                         <span class="marker-count-badge">${displayCount}</span>
+                html: `<div class="cluster-circle" style="width: ${circleSize}px; height: ${circleSize}px; font-size: ${fontSize}px;">
+                         ${displayCount}
                        </div>`,
-                className: 'emoji-marker-container',
-                iconSize: [30, 30],
-                iconAnchor: [15, 30],
-                popupAnchor: [0, -30]
+                className: 'cluster-circle-container',
+                iconSize: [circleSize, circleSize],
+                iconAnchor: [halfSize, halfSize],
+                popupAnchor: [0, -halfSize]
               })
             }
           })
@@ -2121,7 +2170,7 @@ export default {
   opacity: 0;
 }
 
-/* Cluster marker styling - enhanced visibility */
+/* Cluster marker styling - enhanced visibility (for high zoom pin icons) */
 ::deep(.cluster-marker) {
   font-size: 28px !important; /* Slightly larger than regular markers */
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3)); /* More prominent shadow */
@@ -2132,6 +2181,38 @@ export default {
   min-width: 22px;
   height: 22px;
   line-height: 22px;
+}
+
+/* Cluster circle styling - for regional overview (lower zoom levels) */
+::deep(.cluster-circle-container) {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+::deep(.cluster-circle) {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  color: white;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 
+    0 2px 8px rgba(99, 102, 241, 0.4),
+    0 4px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+::deep(.cluster-circle:hover) {
+  transform: scale(1.1);
+  box-shadow: 
+    0 4px 12px rgba(99, 102, 241, 0.5),
+    0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
 /* Ensure MarkerCluster properly styles cluster icons */
