@@ -59,6 +59,14 @@ const hasSharedTag = (event1, event2) => {
   return event2.tags.some(t => tagIds1.has(t.id))
 }
 
+const sortByDate = (events) => {
+  return [...events].sort((a, b) => {
+    const aVal = getChronologicalValue(a.event_date, a.era)
+    const bVal = getChronologicalValue(b.event_date, b.era)
+    return aVal - bVal
+  })
+}
+
 export function useRelatedEvents(currentEvent, allEvents) {
   const aroundSameTime = ref([])
   const sameTimeRegion = ref([])
@@ -95,12 +103,12 @@ export function useRelatedEvents(currentEvent, allEvents) {
     })
     
     const shuffledRegion = shuffleArray(regionCandidates).slice(0, MAX_RESULTS)
-    sameTimeRegion.value = shuffledRegion
+    sameTimeRegion.value = sortByDate(shuffledRegion)
     shuffledRegion.forEach(e => usedIds.add(e.id))
 
     const timeCandidates = candidates.filter(e => !usedIds.has(e.id))
     const shuffledTime = shuffleArray(timeCandidates).slice(0, MAX_RESULTS)
-    aroundSameTime.value = shuffledTime
+    aroundSameTime.value = sortByDate(shuffledTime)
     shuffledTime.forEach(e => usedIds.add(e.id))
 
     const tagCandidates = candidates
@@ -113,7 +121,7 @@ export function useRelatedEvents(currentEvent, allEvents) {
       .slice(0, MAX_RESULTS)
       .map(item => item.event)
     
-    nearByKind.value = tagCandidates
+    nearByKind.value = sortByDate(tagCandidates)
 
     isComputed.value = true
   }
