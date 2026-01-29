@@ -118,11 +118,13 @@
       :is-open="eventDetailModalOpen"
       :event="selectedDetailEvent"
       :all-events="events"
-      @close="eventDetailModalOpen = false"
+      :navigation-source="navigationSource"
+      @close="closeEventDetail"
       @focus-event="$emit('focus-event', $event)"
       @tag-clicked="$emit('tag-clicked', $event)"
       @select-event="handleSelectRelatedEvent"
       @edit-event="handleEditEvent"
+      @back="handleBack"
     />
   </div>
 </template>
@@ -165,7 +167,7 @@ export default {
       default: false
     }
   },
-  emits: ['focus-event', 'highlight-event', 'map-filter-toggle', 'tag-clicked', 'remove-tag', 'clear-all-tags', 'toggle-follow', 'geolocate', 'share', 'edit-event'],
+  emits: ['focus-event', 'highlight-event', 'map-filter-toggle', 'tag-clicked', 'remove-tag', 'clear-all-tags', 'toggle-follow', 'geolocate', 'share', 'edit-event', 'back-to-location'],
   setup() {
     const { t } = useLocale()
     const { loading: geolocationLoading, get_current_position } = useGeolocation()
@@ -189,6 +191,7 @@ export default {
       timelineModalOpen: false,
       eventDetailModalOpen: false,
       selectedDetailEvent: {},
+      navigationSource: null,
       STORAGE_KEY,
       scrollThrottleTimer: null,
       scrollThrottleDelay: 150 // ms between page changes
@@ -281,17 +284,31 @@ export default {
     openTimeline() {
       this.timelineModalOpen = true
     },
-    openEventDetail(event) {
+    openEventDetail(event, source = null) {
       this.selectedDetailEvent = event
+      this.navigationSource = source
       this.eventDetailModalOpen = true
+    },
+    closeEventDetail() {
+      this.eventDetailModalOpen = false
+      this.navigationSource = null
     },
     handleSelectRelatedEvent(event) {
       this.selectedDetailEvent = event
     },
     handleTimelineShowDetail(event) {
       this.selectedDetailEvent = event
+      this.navigationSource = 'timeline'
       this.timelineModalOpen = false
       this.eventDetailModalOpen = true
+    },
+    handleBack() {
+      if (this.navigationSource === 'timeline') {
+        this.timelineModalOpen = true
+      } else if (this.navigationSource === 'location') {
+        this.$emit('back-to-location')
+      }
+      this.navigationSource = null
     },
     handleEditEvent(event) {
       this.eventDetailModalOpen = false

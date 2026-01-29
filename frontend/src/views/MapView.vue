@@ -47,6 +47,7 @@
             @geolocate="handleGeolocate"
             @share="handleShareUrl"
             @edit-event="handleEditEvent"
+            @back-to-location="handleBackToLocation"
             ref="eventsGrid"
           />
         </div>
@@ -65,7 +66,7 @@
           @map-bounds-changed="handleMapBoundsChanged"
           @locale-changed="handleLocaleChanged"
           @tag-clicked="handleTagClick"
-          @show-detail="handleShowDetail"
+          @show-detail="handleShowDetailFromMap"
           ref="worldMap"
         />
       </main>
@@ -410,15 +411,30 @@ export default {
       narrativeFlowEnabled.value = !narrativeFlowEnabled.value
     }
 
-    const handleShowDetail = (event) => {
+    const handleShowDetail = (event, source = null) => {
       if (eventsGrid.value) {
-        eventsGrid.value.openEventDetail(event)
+        eventsGrid.value.openEventDetail(event, source)
+      }
+    }
+
+    const handleShowDetailFromMap = (payload) => {
+      // Handle both old format (just event) and new format ({ event, source })
+      if (payload.event) {
+        handleShowDetail(payload.event, payload.source)
+      } else {
+        handleShowDetail(payload, null)
       }
     }
 
     const handleEditEvent = (event) => {
       if (worldMap.value) {
         worldMap.value.edit_event(event.id)
+      }
+    }
+
+    const handleBackToLocation = () => {
+      if (worldMap.value) {
+        worldMap.value.restore_location_modal()
       }
     }
 
@@ -556,7 +572,9 @@ export default {
       worldMap,
       eventsGrid,
       handleShowDetail,
+      handleShowDetailFromMap,
       handleEditEvent,
+      handleBackToLocation,
       
       // Narrative flow
       narrativeFlowEnabled,

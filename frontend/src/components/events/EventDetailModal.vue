@@ -3,6 +3,12 @@
     <div class="event_detail_modal">
       <div class="event_detail_header">
         <div class="event_title_row">
+          <button 
+            v-if="navigationSource" 
+            class="back_btn" 
+            @click="handleBack"
+            :title="t('back')"
+          >←</button>
           <span class="event_icon">{{ getEventEmoji(event.lens_type) }}</span>
           <span class="event_name">{{ event.name }}</span>
         </div>
@@ -127,9 +133,13 @@ export default {
     allEvents: {
       type: Array,
       default: () => []
+    },
+    navigationSource: {
+      type: String,
+      default: null
     }
   },
-  emits: ['close', 'focus-event', 'tag-clicked', 'select-event', 'edit-event'],
+  emits: ['close', 'focus-event', 'tag-clicked', 'select-event', 'edit-event', 'back'],
   setup(props, { emit }) {
     const { t, formatEventDisplayDate } = useLocale()
     const { canEditEvents } = useAuth()
@@ -166,6 +176,11 @@ export default {
 
     const handleEditEvent = () => {
       emit('edit-event', props.event)
+      closeModal()
+    }
+
+    const handleBack = () => {
+      emit('back')
       closeModal()
     }
 
@@ -206,6 +221,7 @@ export default {
       handleTagClick,
       handleRelatedClick,
       handleEditEvent,
+      handleBack,
       aroundSameTime,
       sameTimeRegion,
       nearByKind,
@@ -270,6 +286,24 @@ export default {
   word-break: break-word;
 }
 
+
+.back_btn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: #64748b;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.back_btn:hover {
+  color: #3b82f6;
+  background: #f1f5f9;
+}
 
 .close_btn {
   background: none;

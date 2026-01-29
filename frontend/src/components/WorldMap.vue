@@ -202,7 +202,7 @@ export default {
       default: false
     }
   },
-  emits: ['event-created', 'event-updated', 'event-deleted', 'map-bounds-changed', 'tag-clicked', 'show-detail'],
+  emits: ['event-created', 'event-updated', 'event-deleted', 'map-bounds-changed', 'tag-clicked', 'show-detail', 'back-to-location'],
   data() {
     return {
       map: null,
@@ -214,6 +214,7 @@ export default {
       show_event_modal: false,
       show_event_info_modal: false, // New modal for event info
       selected_events: [], // Events to show in info modal
+      location_events_backup: [], // Backup for back navigation
       highlight_overlay: null, // Store highlight overlay layer (halo ring + center dot)
       user_location_layer: null, // Store user location marker (geolocation feature)
       show_offscreen_notification: false, // Show notification when marker is off-screen
@@ -1360,8 +1361,16 @@ export default {
       this.close_event_info_modal()
     },
     handle_show_detail(event) {
-      this.$emit('show-detail', event)
+      // Store current location events for back navigation
+      this.location_events_backup = [...this.selected_events]
+      this.$emit('show-detail', { event, source: 'location' })
       this.close_event_info_modal()
+    },
+    restore_location_modal() {
+      if (this.location_events_backup && this.location_events_backup.length > 0) {
+        this.selected_events = this.location_events_backup
+        this.show_event_info_modal = true
+      }
     },
 
     // Get contrast color for text on colored backgrounds
