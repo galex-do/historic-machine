@@ -4,17 +4,24 @@
       <!-- Modal Header -->
       <div class="timeline_modal_header">
         <h2 class="timeline_modal_title">{{ t('historicalEvents') }}</h2>
+        <span v-if="totalEventCount > 0" class="timeline_event_count">
+          {{ visibleEventCount }} / {{ totalEventCount }}
+        </span>
         <button class="close_btn" @click="closeModal" :title="t('close')">×</button>
       </div>
 
       <!-- Modal Content -->
-      <div class="timeline_modal_content">
-        <div v-if="groupedEvents.length === 0" class="no_events_message">
+      <div 
+        class="timeline_modal_content" 
+        ref="scrollContainer"
+        @scroll="handleScroll"
+      >
+        <div v-if="visibleGroups.length === 0 && !isLoading" class="no_events_message">
           {{ t('noEventsInTimeline') }}
         </div>
 
         <div v-else class="timeline_container">
-          <div v-for="group in groupedEvents" :key="group.date" class="timeline_date_group">
+          <div v-for="group in visibleGroups" :key="group.date" class="timeline_date_group">
             <!-- Single event on this date: everything on one line -->
             <div v-if="group.events.length === 1" class="timeline_single_event_line">
               <div class="timeline_bullet"></div>
@@ -106,6 +113,16 @@
               </div>
             </template>
           </div>
+          
+          <!-- Loading indicator -->
+          <div v-if="isLoading" class="timeline_loading">
+            {{ t('loading') || 'Loading...' }}
+          </div>
+          
+          <!-- Load more indicator -->
+          <div v-if="hasMoreEvents && !isLoading" class="timeline_load_more" ref="loadMoreTrigger">
+            <span class="load_more_hint">↓ {{ t('scrollForMore') || 'Scroll for more' }}</span>
+          </div>
         </div>
       </div>
     </div>
@@ -113,7 +130,7 @@
 </template>
 
 <script>
-import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
+import { ref, computed, watch, onUnmounted, nextTick } from 'vue'
 import { useLocale } from '@/composables/useLocale.js'
 import { getEventEmoji } from '@/utils/event-utils.js'
 
@@ -133,53 +150,55 @@ export default {
   setup(props, { emit }) {
     const { t, formatEventDisplayDate } = useLocale()
     const previouslyFocusedElement = ref(null)
+    const scrollContainer = ref(null)
+    
+    const BATCH_SIZE = 50
+    const visibleCount = ref(BATCH_SIZE)
+    const isLoading = ref(false)
+    
+    const cachedGroupedEvents = ref([])
+    const lastEventsHash = ref('')
 
-    // Helper function for chronological sorting with BC/AD support
-    // Matches implementation in useEvents.js - parses dates manually to avoid timezone issues
+    const getEventsHash = (events) => {
+      if (!events || events.length === 0) return ''
+      return `${events.length}-${events[0]?.id}-${events[events.length - 1]?.id}`
+    }
+
     const getChronologicalValue = (dateString, era) => {
       let year, month, day
       
       if (dateString.startsWith('-')) {
-        // Negative year format: "-3501-01-01T00:00:00Z"
         const parts = dateString.substring(1).split('T')[0].split('-')
         year = parseInt(parts[0], 10)
-        month = parseInt(parts[1], 10) - 1  // Month is 0-indexed
+        month = parseInt(parts[1], 10) - 1
         day = parseInt(parts[2], 10)
       } else {
-        // Positive year format: "1453-05-29T00:00:00Z"
-        // Parse manually to avoid timezone shifts from Date constructor
         const parts = dateString.split('T')[0].split('-')
         year = parseInt(parts[0], 10)
-        month = parseInt(parts[1], 10) - 1  // Month is 0-indexed
+        month = parseInt(parts[1], 10) - 1
         day = parseInt(parts[2], 10)
       }
       
       if (era === 'BC') {
-        // For BC: larger year number = older (3000 BC < 1000 BC)
         return -(year - (month / 12) - (day / 365))
       } else {
-        // For AD: normal positive years
         return year + (month / 12) + (day / 365)
       }
     }
 
-    // Group events by date (day precision)
-    const groupedEvents = computed(() => {
-      if (!props.events || props.events.length === 0) {
+    const computeGroupedEvents = (events) => {
+      if (!events || events.length === 0) {
         return []
       }
 
-      // Sort events chronologically using BC/AD aware sorting
-      const sortedEvents = [...props.events].sort((a, b) => {
+      const sortedEvents = [...events].sort((a, b) => {
         const aValue = getChronologicalValue(a.event_date, a.era)
         const bValue = getChronologicalValue(b.event_date, b.era)
-        return aValue - bValue // Chronological order: older events first
+        return aValue - bValue
       })
 
-      // Group by date
       const groups = {}
       sortedEvents.forEach(event => {
-        // Extract date string (YYYY-MM-DD)
         const eventDate = event.event_date.split('T')[0]
         
         if (!groups[eventDate]) {
@@ -193,11 +212,75 @@ export default {
       })
 
       return Object.values(groups)
+    }
+
+    watch(() => props.events, (newEvents) => {
+      const newHash = getEventsHash(newEvents)
+      if (newHash !== lastEventsHash.value) {
+        lastEventsHash.value = newHash
+        cachedGroupedEvents.value = computeGroupedEvents(newEvents)
+      }
+    }, { immediate: true })
+
+    const allGroupedEvents = computed(() => cachedGroupedEvents.value)
+
+    const totalEventCount = computed(() => props.events?.length || 0)
+
+    const visibleGroups = computed(() => {
+      const groups = allGroupedEvents.value
+      let eventCount = 0
+      const result = []
+      
+      for (const group of groups) {
+        if (eventCount >= visibleCount.value) break
+        
+        const remainingSlots = visibleCount.value - eventCount
+        if (group.events.length <= remainingSlots) {
+          result.push(group)
+          eventCount += group.events.length
+        } else {
+          result.push({
+            ...group,
+            events: group.events.slice(0, remainingSlots)
+          })
+          eventCount += remainingSlots
+          break
+        }
+      }
+      
+      return result
     })
+
+    const visibleEventCount = computed(() => {
+      return visibleGroups.value.reduce((sum, group) => sum + group.events.length, 0)
+    })
+
+    const hasMoreEvents = computed(() => {
+      return visibleEventCount.value < totalEventCount.value
+    })
+
+    const loadMore = () => {
+      if (isLoading.value || !hasMoreEvents.value) return
+      
+      isLoading.value = true
+      
+      requestAnimationFrame(() => {
+        visibleCount.value += BATCH_SIZE
+        isLoading.value = false
+      })
+    }
+
+    const handleScroll = (e) => {
+      const container = e.target
+      const scrollBottom = container.scrollHeight - container.scrollTop - container.clientHeight
+      
+      if (scrollBottom < 100 && hasMoreEvents.value && !isLoading.value) {
+        loadMore()
+      }
+    }
 
     const closeModal = () => {
       emit('close')
-      // Restore focus to the element that opened the modal
       if (previouslyFocusedElement.value) {
         previouslyFocusedElement.value.focus()
         previouslyFocusedElement.value = null
@@ -214,37 +297,44 @@ export default {
       closeModal()
     }
 
-    // Handle ESC key to close modal
     const handleEscape = (event) => {
       if (event.key === 'Escape' && props.isOpen) {
         closeModal()
       }
     }
 
-    // Watch for modal open/close to manage focus and keyboard listeners
     watch(() => props.isOpen, (newValue) => {
       if (newValue) {
-        // Store currently focused element
         previouslyFocusedElement.value = document.activeElement
-        // Add ESC key listener
         document.addEventListener('keydown', handleEscape)
+        visibleCount.value = BATCH_SIZE
+        
+        nextTick(() => {
+          if (scrollContainer.value) {
+            scrollContainer.value.scrollTop = 0
+          }
+        })
       } else {
-        // Remove ESC key listener
         document.removeEventListener('keydown', handleEscape)
       }
     })
 
-    // Cleanup on component unmount
     onUnmounted(() => {
       document.removeEventListener('keydown', handleEscape)
     })
 
     return {
       t,
-      groupedEvents,
+      scrollContainer,
+      visibleGroups,
+      totalEventCount,
+      visibleEventCount,
+      hasMoreEvents,
+      isLoading,
       closeModal,
       handleFocusEvent,
       handleTagClick,
+      handleScroll,
       getEventEmoji
     }
   }
@@ -283,6 +373,7 @@ export default {
   justify-content: space-between;
   padding: 1.5rem 2rem;
   border-bottom: 1px solid #e2e8f0;
+  gap: 1rem;
 }
 
 .timeline_modal_title {
@@ -290,6 +381,15 @@ export default {
   font-size: 1.5rem;
   font-weight: 600;
   color: #1e293b;
+}
+
+.timeline_event_count {
+  font-size: 0.875rem;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  margin-left: auto;
 }
 
 .close_btn {
@@ -333,7 +433,6 @@ export default {
   padding-left: 0.5rem;
 }
 
-/* Thin vertical line */
 .timeline_container::before {
   content: '';
   position: absolute;
@@ -456,7 +555,24 @@ export default {
   color: #3b82f6;
 }
 
-/* Scrollbar Styling */
+.timeline_loading {
+  text-align: center;
+  padding: 1rem;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.timeline_load_more {
+  text-align: center;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.load_more_hint {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
 .timeline_modal_content::-webkit-scrollbar {
   width: 6px;
 }
