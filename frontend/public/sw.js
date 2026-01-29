@@ -9,7 +9,7 @@ const STATIC_ASSETS = [
 ];
 
 const TILE_URL_PATTERN = /^https:\/\/[abc]\.tile\.openstreetmap\.org\//;
-const MAX_TILE_CACHE_SIZE = 500;
+const MAX_TILE_CACHE_SIZE = 1000;
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
