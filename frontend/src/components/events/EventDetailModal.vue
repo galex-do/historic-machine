@@ -30,6 +30,62 @@
           >#{{ tag.name }}</span>
         </div>
 
+        <div v-if="hasRelatedEvents" class="related_events_section">
+          <div v-if="sameTimeRegion.length > 0" class="related_category">
+            <div class="related_category_header">
+              <span class="related_icon">📍</span>
+              <span class="related_title">{{ t('sameTimeAndRegion') }}</span>
+            </div>
+            <div class="related_list">
+              <div 
+                v-for="relEvent in sameTimeRegion" 
+                :key="relEvent.id"
+                class="related_item"
+              >
+                <span class="related_date">{{ formatEventDisplayDate(relEvent.event_date, relEvent.era) }}</span>
+                <span class="related_separator">—</span>
+                <span class="related_name" @click="handleRelatedClick(relEvent)">{{ relEvent.name }}</span>
+              </div>
+            </div>
+          </div>
+
+          <div v-if="aroundSameTime.length > 0" class="related_category">
+            <div class="related_category_header">
+              <span class="related_icon">🗓️</span>
+              <span class="related_title">{{ t('aroundSameTime') }}</span>
+            </div>
+            <div class="related_list">
+              <div 
+                v-for="relEvent in aroundSameTime" 
+                :key="relEvent.id"
+                class="related_item"
+              >
+                <span class="related_date">{{ formatEventDisplayDate(relEvent.event_date, relEvent.era) }}</span>
+                <span class="related_separator">—</span>
+                <span class="related_name" @click="handleRelatedClick(relEvent)">{{ relEvent.name }}</span>
+              </div>
+            </div>
+          </div>
+
+          <div v-if="nearByKind.length > 0" class="related_category">
+            <div class="related_category_header">
+              <span class="related_icon">🏷️</span>
+              <span class="related_title">{{ t('nearByKind') }}</span>
+            </div>
+            <div class="related_list">
+              <div 
+                v-for="relEvent in nearByKind" 
+                :key="relEvent.id"
+                class="related_item"
+              >
+                <span class="related_date">{{ formatEventDisplayDate(relEvent.event_date, relEvent.era) }}</span>
+                <span class="related_separator">—</span>
+                <span class="related_name" @click="handleRelatedClick(relEvent)">{{ relEvent.name }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="event_actions">
           <button class="focus_btn" @click="handleFocusEvent" :title="t('focusOnMap')">
             ⌖ {{ t('focusOnMap') }}
@@ -41,8 +97,9 @@
 </template>
 
 <script>
-import { watch, ref, onMounted, onUnmounted } from 'vue'
+import { watch, ref, computed, toRef, onMounted, onUnmounted } from 'vue'
 import { useLocale } from '@/composables/useLocale.js'
+import { useRelatedEvents } from '@/composables/useRelatedEvents.js'
 import { getEventEmoji } from '@/utils/event-utils.js'
 
 export default {
@@ -55,12 +112,27 @@ export default {
     event: {
       type: Object,
       default: () => ({})
+    },
+    allEvents: {
+      type: Array,
+      default: () => []
     }
   },
-  emits: ['close', 'focus-event', 'tag-clicked'],
+  emits: ['close', 'focus-event', 'tag-clicked', 'select-event'],
   setup(props, { emit }) {
     const { t, formatEventDisplayDate } = useLocale()
     const previouslyFocusedElement = ref(null)
+
+    const eventRef = toRef(props, 'event')
+    const allEventsRef = toRef(props, 'allEvents')
+
+    const { aroundSameTime, sameTimeRegion, nearByKind } = useRelatedEvents(eventRef, allEventsRef)
+
+    const hasRelatedEvents = computed(() => {
+      return aroundSameTime.value.length > 0 || 
+             sameTimeRegion.value.length > 0 || 
+             nearByKind.value.length > 0
+    })
 
     const closeModal = () => {
       emit('close')
@@ -74,6 +146,10 @@ export default {
     const handleTagClick = (tag) => {
       emit('tag-clicked', tag)
       closeModal()
+    }
+
+    const handleRelatedClick = (relEvent) => {
+      emit('select-event', relEvent)
     }
 
     const handleKeydown = (e) => {
@@ -109,7 +185,12 @@ export default {
       getEventEmoji,
       closeModal,
       handleFocusEvent,
-      handleTagClick
+      handleTagClick,
+      handleRelatedClick,
+      aroundSameTime,
+      sameTimeRegion,
+      nearByKind,
+      hasRelatedEvents
     }
   }
 }
@@ -235,6 +316,74 @@ export default {
 
 .event_tag:hover {
   opacity: 0.7;
+}
+
+.related_events_section {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.related_category {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.related_category_header {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.related_icon {
+  font-size: 0.875rem;
+}
+
+.related_title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.related_list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-left: 1.25rem;
+}
+
+.related_item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.375rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.related_date {
+  color: #64748b;
+  flex-shrink: 0;
+}
+
+.related_separator {
+  color: #94a3b8;
+}
+
+.related_name {
+  color: #3b82f6;
+  cursor: pointer;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+.related_name:hover {
+  text-decoration: underline;
 }
 
 .event_actions {

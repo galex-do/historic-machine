@@ -246,6 +246,12 @@ const UI_TRANSLATIONS = {
     showMore: 'Show more',
     showLess: 'Show less',
     noEventsInTimeline: 'No events to display in timeline',
+    scrollForMore: 'Scroll for more',
+    
+    // Related Events
+    aroundSameTime: 'Around the same time',
+    sameTimeAndRegion: 'Same time and region',
+    nearByKind: 'Near by kind',
     
     // Datasets Table
     columnFilename: 'Filename',
@@ -538,6 +544,12 @@ const UI_TRANSLATIONS = {
     showMore: 'Показать больше',
     showLess: 'Показать меньше',
     noEventsInTimeline: 'Нет событий для отображения на временной шкале',
+    scrollForMore: 'Прокрутите для загрузки',
+    
+    // Related Events
+    aroundSameTime: 'Примерно в то же время',
+    sameTimeAndRegion: 'То же время и регион',
+    nearByKind: 'Похожие события',
     
     // Datasets Table
     columnFilename: 'Имя файла',

@@ -116,9 +116,11 @@
     <EventDetailModal
       :is-open="eventDetailModalOpen"
       :event="selectedDetailEvent"
+      :all-events="events"
       @close="eventDetailModalOpen = false"
       @focus-event="$emit('focus-event', $event)"
       @tag-clicked="$emit('tag-clicked', $event)"
+      @select-event="handleSelectRelatedEvent"
     />
   </div>
 </template>
@@ -280,6 +282,9 @@ export default {
     openEventDetail(event) {
       this.selectedDetailEvent = event
       this.eventDetailModalOpen = true
+    },
+    handleSelectRelatedEvent(event) {
+      this.selectedDetailEvent = event
     },
     async requestGeolocation() {
       try {
