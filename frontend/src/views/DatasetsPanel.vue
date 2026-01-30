@@ -640,8 +640,12 @@ export default {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 1.5rem;
-  flex-wrap: wrap;
   gap: 1rem;
+}
+
+.admin-title {
+  flex: 1;
+  min-width: 0;
 }
 
 .admin-title h2 {
@@ -661,7 +665,8 @@ export default {
 .action-buttons {
   display: flex;
   gap: 0.75rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
 }
 
 .create-btn {
@@ -677,6 +682,7 @@ export default {
   font-size: 0.9rem;
   background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
   color: white;
+  white-space: nowrap;
 }
 
 .create-btn:hover:not(:disabled) {
@@ -1220,6 +1226,23 @@ export default {
   cursor: not-allowed;
 }
 
+@media (max-width: 1024px) {
+  .admin-header {
+    flex-wrap: wrap;
+  }
+  
+  .action-buttons {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .create-btn {
+    flex: 1;
+    justify-content: center;
+    min-width: 150px;
+  }
+}
+
 @media (max-width: 768px) {
   .admin-panel {
     padding: 1rem;
@@ -1232,10 +1255,12 @@ export default {
   
   .action-buttons {
     flex-direction: column;
+    width: 100%;
   }
   
   .create-btn {
     justify-content: center;
+    width: 100%;
   }
   
   .table-controls {
