@@ -1,5 +1,5 @@
 {
-  "description": "Roman Republic from legendary founding to transformation into Empire, covering political evolution, Italian expansion, and civil wars",
+  "description": "Comprehensive Roman Republic history from legendary founding to transformation into Empire",
   "events": [
     {
       "date": "21.04.0753",
@@ -28,6 +28,19 @@
       "type": "historic"
     },
     {
+      "date": "01.01.0747",
+      "description": "Sabine king Titus Tatius becomes co-ruler of Rome with Romulus after peace is made following the women's intervention. The dual kingship establishes a precedent for shared power. Tatius is later killed during a religious festival at Lavinium.",
+      "description_ru": "Сабинский царь Тит Таций становится соправителем Рима с Ромулом после заключения мира по вмешательству женщин. Двойное царствование устанавливает прецедент разделения власти. Таций позже убит во время религиозного праздника в Лавинии.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Sabine-Roman Union",
+      "name_ru": "Союз сабинян и римлян",
+      "source": "https://en.wikipedia.org/wiki/Titus_Tatius",
+      "tags": ["Roman", "Legendary", "Political"],
+      "type": "political"
+    },
+    {
       "date": "01.01.0716",
       "description": "Romulus disappears during a sudden storm or eclipse while reviewing his troops at the Goat's Marsh (Caprae Palus). Some claimed he was torn apart by senators; officially, he ascended to heaven and became the god Quirinus.",
       "description_ru": "Ромул исчезает во время внезапной бури или затмения, когда проводил смотр войск на Козьем болоте (Caprae Palus). Одни утверждали, что его растерзали сенаторы; официально он вознёсся на небо и стал богом Квирином.",
@@ -39,6 +52,19 @@
       "source": "https://en.wikipedia.org/wiki/Romulus",
       "tags": ["Roman", "Legendary", "Death", "Religious"],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0715",
+      "description": "Numa Pompilius, a Sabine known for piety and wisdom, becomes Rome's second king after a year-long interregnum. He establishes the religious calendar, creates the Vestal Virgins, and builds the Temple of Janus — its doors closed only in peacetime.",
+      "description_ru": "Нума Помпилий, сабинянин, известный благочестием и мудростью, становится вторым царём Рима после годового междуцарствия. Он устанавливает религиозный календарь, создаёт институт весталок и строит храм Януса — его двери закрыты только в мирное время.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Reign of Numa Pompilius",
+      "name_ru": "Царствование Нумы Помпилия",
+      "source": "https://en.wikipedia.org/wiki/Numa_Pompilius",
+      "tags": ["Roman", "Legendary", "Religious", "Political"],
+      "type": "political"
     },
     {
       "date": "01.01.0673",
@@ -54,6 +80,19 @@
       "type": "military"
     },
     {
+      "date": "01.01.0640",
+      "description": "Ancus Marcius, fourth king of Rome, founds the port of Ostia at the Tiber's mouth and builds the first bridge across the Tiber (Pons Sublicius). He expands Roman territory to the sea and settles conquered Latins on the Aventine Hill.",
+      "description_ru": "Анк Марций, четвёртый царь Рима, основывает порт Остия в устье Тибра и строит первый мост через Тибр (Pons Sublicius). Он расширяет римскую территорию до моря и поселяет покорённых латинов на Авентинском холме.",
+      "era": "BC",
+      "latitude": 41.7557,
+      "longitude": 12.2920,
+      "name": "Foundation of Ostia",
+      "name_ru": "Основание Остии",
+      "source": "https://en.wikipedia.org/wiki/Ancus_Marcius",
+      "tags": ["Roman", "Foundation", "City", "Trade"],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0616",
       "description": "Lucius Tarquinius Priscus becomes the fifth king of Rome, the first of Etruscan origin. He drains the marshy valley between the hills to create the Forum Romanum and begins construction of the Temple of Jupiter on the Capitoline Hill.",
       "description_ru": "Луций Тарквиний Приск становится пятым царём Рима, первым этрусского происхождения. Он осушает болотистую долину между холмами, создавая Римский форум, и начинает строительство храма Юпитера на Капитолийском холме.",
@@ -67,6 +106,19 @@
       "type": "political"
     },
     {
+      "date": "01.01.0600",
+      "description": "The Cloaca Maxima, one of the world's earliest sewage systems, is constructed to drain the marshy Forum valley. Originally an open channel, it is later covered over. Parts of this Etruscan-era drain remain in use today.",
+      "description_ru": "Большая Клоака (Cloaca Maxima), одна из древнейших канализационных систем мира, построена для осушения болотистой долины Форума. Изначально открытый канал, позже он был перекрыт. Части этой этрусской эпохи дренажной системы используются и сегодня.",
+      "era": "BC",
+      "latitude": 41.8914,
+      "longitude": 12.4855,
+      "name": "Construction of Cloaca Maxima",
+      "name_ru": "Строительство Большой Клоаки",
+      "source": "https://en.wikipedia.org/wiki/Cloaca_Maxima",
+      "tags": ["Roman", "Architecture", "Innovation"],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0578",
       "description": "Servius Tullius, the sixth king, reforms Roman society by organizing citizens into classes based on wealth rather than birth. He builds the first defensive wall around all seven hills (Servian Wall) and establishes the census.",
       "description_ru": "Сервий Туллий, шестой царь, реформирует римское общество, организуя граждан в классы по богатству, а не по рождению. Он строит первую оборонительную стену вокруг всех семи холмов (Сервиева стена) и учреждает перепись населения.",
@@ -77,6 +129,19 @@
       "name_ru": "Реформы Сервия Туллия",
       "source": "https://en.wikipedia.org/wiki/Servius_Tullius",
       "tags": ["Roman", "Political", "Administration"],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0535",
+      "description": "Servius Tullius is murdered by his own daughter Tullia and her husband Tarquinius Superbus (the Proud). Tullia drives her chariot over her father's body in the street later called Vicus Sceleratus (Street of Crime). Tarquinius becomes the seventh and last king.",
+      "description_ru": "Сервий Туллий убит собственной дочерью Туллией и её мужем Тарквинием Гордым. Туллия проезжает на колеснице по телу отца на улице, позже названной Vicus Sceleratus (Улица Преступления). Тарквиний становится седьмым и последним царём.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Murder of Servius Tullius",
+      "name_ru": "Убийство Сервия Туллия",
+      "source": "https://en.wikipedia.org/wiki/Servius_Tullius",
+      "tags": ["Roman", "Death", "Political", "Legendary"],
       "type": "political"
     },
     {
@@ -93,6 +158,19 @@
       "type": "political"
     },
     {
+      "date": "01.01.0509",
+      "description": "The Temple of Jupiter Optimus Maximus is dedicated on the Capitoline Hill, becoming Rome's most important temple. The building was begun by the Tarquins but dedicated after their expulsion — Romans refused to let kings take credit for it.",
+      "description_ru": "Храм Юпитера Всеблагого Величайшего освящён на Капитолийском холме, став важнейшим храмом Рима. Здание начато при Тарквиниях, но освящено после их изгнания — римляне отказались приписывать царям заслугу за него.",
+      "era": "BC",
+      "latitude": 41.8931,
+      "longitude": 12.4828,
+      "name": "Temple of Jupiter Dedicated",
+      "name_ru": "Освящение храма Юпитера",
+      "source": "https://en.wikipedia.org/wiki/Temple_of_Jupiter_Optimus_Maximus",
+      "tags": ["Roman", "Religious", "Architecture"],
+      "type": "religious"
+    },
+    {
       "date": "01.01.0508",
       "description": "Lars Porsena of Clusium besieges Rome to restore Tarquinius. Horatius Cocles holds the Sublician Bridge alone against the Etruscan army while Romans destroy it behind him. He then swims to safety in full armor. Rome likely submitted but later rewrote history.",
       "description_ru": "Ларс Порсена из Клузия осаждает Рим, чтобы восстановить Тарквиния. Гораций Коклес в одиночку удерживает Сублицийский мост против этрусской армии, пока римляне разрушают его за его спиной. Затем он доплывает до берега в полном вооружении. Рим, вероятно, сдался, но позже переписал историю.",
@@ -106,9 +184,35 @@
       "type": "military"
     },
     {
+      "date": "01.01.0507",
+      "description": "Gaius Mucius Scaevola infiltrates Porsena's camp to assassinate him but kills the wrong man. Captured, he thrusts his right hand into a fire to show Roman contempt for pain and death. Impressed, Porsena makes peace. 'Scaevola' means 'left-handed.'",
+      "description_ru": "Гай Муций Сцевола проникает в лагерь Порсены, чтобы убить его, но убивает не того человека. Схваченный, он сует правую руку в огонь, чтобы показать римское презрение к боли и смерти. Поражённый, Порсена заключает мир. 'Scaevola' означает 'левша'.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Mucius Scaevola",
+      "name_ru": "Муций Сцевола",
+      "source": "https://en.wikipedia.org/wiki/Gaius_Mucius_Scaevola",
+      "tags": ["Roman", "Legendary"],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0496",
+      "description": "Romans defeat the Latin League at Lake Regillus. The divine twins Castor and Pollux allegedly appeared on white horses to lead the Roman cavalry. Their temple in the Forum, built to commemorate this, became a meeting place for the Senate.",
+      "description_ru": "Римляне побеждают Латинский союз при озере Регилл. Божественные близнецы Кастор и Поллукс якобы явились на белых конях, чтобы возглавить римскую конницу. Их храм на Форуме, построенный в ознаменование этого, стал местом заседаний Сената.",
+      "era": "BC",
+      "latitude": 41.7833,
+      "longitude": 12.7500,
+      "name": "Battle of Lake Regillus",
+      "name_ru": "Битва у озера Регилл",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Lake_Regillus",
+      "tags": ["Roman", "Battle", "Legendary", "Victory"],
+      "type": "military"
+    },
+    {
       "date": "01.01.0494",
       "description": "Plebeians, burdened by debt and military service without political rights, withdraw from Rome to the Sacred Mount (Mons Sacer) in the first secession. They threaten to found a new city. Patricians negotiate, creating the office of Tribune of the Plebs with veto power.",
-      "description_ru": "Плебеи, обременённые долгами и военной службой без политических прав, уходят из Рима на Священную гору (Mons Sacer) в первой сецессии. Они угрожают основать новый город. Патриции идут на переговоры и создают должность народного трибуна с правом вето.",
+      "description_ru": "Плебеи, обременённые долгами и военной службой без политических прав, уходят из Рима на Священную гору (Mons Sacer) в первой сецессии. Они угрожают основать новый город. Патриции идут на переговоры и создаёт должность народного трибуна с правом вето.",
       "era": "BC",
       "latitude": 41.9344,
       "longitude": 12.5214,
@@ -117,6 +221,32 @@
       "source": "https://en.wikipedia.org/wiki/First_secessio_plebis",
       "tags": ["Roman", "Political", "Revolution"],
       "type": "political"
+    },
+    {
+      "date": "01.01.0493",
+      "description": "Rome signs the Foedus Cassianum (Treaty of Cassius) with the Latin League, establishing equal alliance. Latin and Roman forces will alternate command and share spoils equally. This treaty governs Roman-Latin relations for 150 years.",
+      "description_ru": "Рим подписывает Foedus Cassianum (Договор Кассия) с Латинским союзом, устанавливая равноправный союз. Латинские и римские силы будут чередовать командование и делить добычу поровну. Этот договор регулирует римско-латинские отношения 150 лет.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Treaty with the Latins",
+      "name_ru": "Договор с латинами",
+      "source": "https://en.wikipedia.org/wiki/Foedus_Cassianum",
+      "tags": ["Roman", "Political", "Diplomacy"],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0491",
+      "description": "Coriolanus, a patrician hero who opposed grain distribution to plebeians, is exiled and joins the Volscians. He leads them to Rome's gates but turns back when his mother Veturia and wife Volumnia plead with him. The Volscians later kill him as a traitor.",
+      "description_ru": "Кориолан, патрицианский герой, выступивший против раздачи зерна плебеям, изгнан и присоединяется к вольскам. Он ведёт их к воротам Рима, но отступает, когда мать Ветурия и жена Волумния умоляют его. Вольски позже убивают его как предателя.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Coriolanus and the Volscians",
+      "name_ru": "Кориолан и вольски",
+      "source": "https://en.wikipedia.org/wiki/Gaius_Marcius_Coriolanus",
+      "tags": ["Roman", "Legendary", "Political"],
+      "type": "historic"
     },
     {
       "date": "01.01.0486",
@@ -130,6 +260,19 @@
       "source": "https://en.wikipedia.org/wiki/Spurius_Cassius_Vecellinus",
       "tags": ["Roman", "Political", "Law"],
       "type": "political"
+    },
+    {
+      "date": "01.01.0477",
+      "description": "The entire Fabii clan (306 men and their clients) takes responsibility for guarding the Veii frontier. They are ambushed at the Cremera River and wiped out to the last man. Only one Fabius boy, left in Rome due to youth, survives to continue the family.",
+      "description_ru": "Весь род Фабиев (306 мужчин и их клиенты) берёт на себя ответственность за охрану границы с Вейями. Они попадают в засаду у реки Кремера и уничтожены до последнего человека. Только один мальчик Фабий, оставленный в Риме из-за малолетства, выживает, чтобы продолжить род.",
+      "era": "BC",
+      "latitude": 42.0000,
+      "longitude": 12.3833,
+      "name": "Disaster at the Cremera",
+      "name_ru": "Катастрофа на Кремере",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_the_Cremera",
+      "tags": ["Roman", "Battle", "Defeat"],
+      "type": "military"
     },
     {
       "date": "01.01.0458",
@@ -171,6 +314,32 @@
       "type": "political"
     },
     {
+      "date": "01.01.0445",
+      "description": "The Lex Canuleia legalizes marriage between patricians and plebeians, previously forbidden. Tribune Gaius Canuleius argued that without intermarriage, Rome was not one people but two. The law begins the slow fusion of the orders.",
+      "description_ru": "Закон Канулея легализует браки между патрициями и плебеями, ранее запрещённые. Трибун Гай Канулей утверждал, что без смешанных браков Рим — не один народ, а два. Закон начинает медленное слияние сословий.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Lex Canuleia",
+      "name_ru": "Закон Канулея",
+      "source": "https://en.wikipedia.org/wiki/Lex_Canuleia",
+      "tags": ["Roman", "Law", "Political"],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0406",
+      "description": "Rome begins paying soldiers a stipend (stipendium), allowing extended campaigns without soldiers returning for harvest. Previously, war was seasonal because citizen-farmers needed to work their land. This professionalizes warfare and enables the long siege of Veii.",
+      "description_ru": "Рим начинает платить солдатам жалованье (stipendium), позволяя вести продолжительные кампании без возвращения солдат на уборку урожая. Раньше война была сезонной, так как граждане-земледельцы должны были обрабатывать землю. Это профессионализирует войну и делает возможной долгую осаду Вей.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Soldiers Begin Receiving Pay",
+      "name_ru": "Солдаты начинают получать жалованье",
+      "source": "https://en.wikipedia.org/wiki/Siege_of_Veii",
+      "tags": ["Roman", "Military", "Innovation"],
+      "type": "military"
+    },
+    {
       "date": "01.01.0396",
       "description": "After a ten-year siege, Marcus Furius Camillus captures the wealthy Etruscan city of Veii, 16 km north of Rome. He reportedly dug a tunnel into the citadel. Veii's territory doubles Roman land, and its population is enslaved or absorbed.",
       "description_ru": "После десятилетней осады Марк Фурий Камилл захватывает богатый этрусский город Вейи в 16 км к северу от Рима. По преданию, он прорыл туннель в цитадель. Территория Вей удваивает римские земли, а её население порабощено или поглощено.",
@@ -197,6 +366,32 @@
       "type": "military"
     },
     {
+      "date": "01.01.0389",
+      "description": "Camillus, recalled from exile, defeats the Gauls at Tusculum and drives them from Roman territory. Declared 'Second Founder of Rome,' he oversees the city's rebuilding. When some propose moving to Veii, he convinces Romans to rebuild on the original site.",
+      "description_ru": "Камилл, отозванный из изгнания, разбивает галлов при Тускуле и изгоняет их с римской территории. Объявленный 'Вторым основателем Рима,' он руководит восстановлением города. Когда некоторые предлагают переселиться в Вейи, он убеждает римлян отстроить город на прежнем месте.",
+      "era": "BC",
+      "latitude": 41.7972,
+      "longitude": 12.7097,
+      "name": "Camillus Saves Rome",
+      "name_ru": "Камилл спасает Рим",
+      "source": "https://en.wikipedia.org/wiki/Marcus_Furius_Camillus",
+      "tags": ["Roman", "Battle", "Victory"],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0378",
+      "description": "The Servian Wall is rebuilt after the Gallic sack, encircling all seven hills of Rome with tufa blocks. At 11 km long and up to 10 m high, it remains Rome's main defensive wall for centuries. Parts still stand today near Termini station.",
+      "description_ru": "Сервиева стена восстановлена после галльского разорения, окружая все семь холмов Рима блоками туфа. Длиной 11 км и высотой до 10 м, она остаётся главной оборонительной стеной Рима на века. Части стоят и сегодня близ вокзала Термини.",
+      "era": "BC",
+      "latitude": 41.8990,
+      "longitude": 12.5040,
+      "name": "Servian Wall Rebuilt",
+      "name_ru": "Восстановление Сервиевой стены",
+      "source": "https://en.wikipedia.org/wiki/Servian_Wall",
+      "tags": ["Roman", "Architecture", "Defense"],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0367",
       "description": "The Licinian-Sextian laws end patrician monopoly on the consulship, requiring one consul to be plebeian. They also limit individual holdings of public land to 500 iugera (125 hectares) and regulate debt. This marks a major victory in the Conflict of the Orders.",
       "description_ru": "Законы Лициния-Секстия прекращают патрицианскую монополию на консульство, требуя, чтобы один консул был плебеем. Они также ограничивают индивидуальное владение общественной землёй до 500 югеров (125 гектаров) и регулируют долговые отношения. Это знаменует крупную победу в Борьбе сословий.",
@@ -207,6 +402,32 @@
       "name_ru": "Законы Лициния и Секстия",
       "source": "https://en.wikipedia.org/wiki/Lex_Licinia_Sextia",
       "tags": ["Roman", "Political", "Law"],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0366",
+      "description": "The first plebeian consul, Lucius Sextius Lateranus, takes office — a watershed moment after 143 years of patrician monopoly. The office of praetor is created to handle judicial duties formerly performed by consuls.",
+      "description_ru": "Первый плебейский консул, Луций Секстий Латеран, вступает в должность — переломный момент после 143 лет патрицианской монополии. Создаётся должность претора для исполнения судебных обязанностей, ранее выполнявшихся консулами.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "First Plebeian Consul",
+      "name_ru": "Первый плебейский консул",
+      "source": "https://en.wikipedia.org/wiki/Lucius_Sextius_Lateranus",
+      "tags": ["Roman", "Political"],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0354",
+      "description": "Rome signs a treaty with the Samnites, a powerful confederation of Oscan-speaking tribes controlling the central Apennines. The treaty divides spheres of influence in central Italy — an arrangement that would break down within a decade.",
+      "description_ru": "Рим подписывает договор с самнитами, мощной конфедерацией оскоязычных племён, контролирующих центральные Апеннины. Договор разграничивает сферы влияния в центральной Италии — соглашение, которое рухнет в течение десятилетия.",
+      "era": "BC",
+      "latitude": 41.4878,
+      "longitude": 14.6775,
+      "name": "Roman-Samnite Treaty",
+      "name_ru": "Римско-самнитский договор",
+      "source": "https://en.wikipedia.org/wiki/Samnites",
+      "tags": ["Roman", "Diplomacy", "Political"],
       "type": "political"
     },
     {
@@ -236,6 +457,32 @@
       "type": "military"
     },
     {
+      "date": "01.01.0338",
+      "description": "Rome dissolves the Latin League after victory, replacing it with individual treaties. Some Latins receive full citizenship, others partial rights, creating a graded system of relationships that becomes a model for Roman expansion.",
+      "description_ru": "Рим распускает Латинский союз после победы, заменяя его индивидуальными договорами. Некоторые латины получают полное гражданство, другие — частичные права, создавая градуированную систему отношений, ставшую моделью для римской экспансии.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Roman Settlement of Latium",
+      "name_ru": "Римское урегулирование Лация",
+      "source": "https://en.wikipedia.org/wiki/Latin_War",
+      "tags": ["Roman", "Political", "Administration"],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0326",
+      "description": "The Lex Poetelia abolishes debt bondage (nexum), the practice of selling oneself or family into slavery to pay debts. This reform follows the case of a young debtor sexually abused by his creditor, sparking public outrage.",
+      "description_ru": "Закон Петелия отменяет долговое рабство (nexum), практику продажи себя или семьи в рабство для уплаты долгов. Реформа следует за случаем с молодым должником, подвергшимся сексуальному насилию со стороны кредитора, вызвавшим общественное возмущение.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Abolition of Debt Bondage",
+      "name_ru": "Отмена долгового рабства",
+      "source": "https://en.wikipedia.org/wiki/Lex_Poetelia_Papiria",
+      "tags": ["Roman", "Law", "Political"],
+      "type": "political"
+    },
+    {
       "date": "01.01.0321",
       "description": "Romans suffer their worst humiliation when an army is trapped in the Caudine Forks mountain pass by Samnites under Gaius Pontius. Unable to fight or escape, the entire army is forced to pass under the yoke (sub iugum) — a gateway of spears symbolizing utter defeat. The peace treaty is later repudiated by Rome.",
       "description_ru": "Римляне терпят величайшее унижение, когда армия попадает в ловушку в горном проходе Кавдинские ущелья от самнитов под командованием Гая Понтия. Не в силах сражаться или бежать, вся армия вынуждена пройти под ярмом (sub iugum) — воротами из копий, символизирующими полное поражение. Мирный договор позже расторгнут Римом.",
@@ -262,6 +509,58 @@
       "type": "historic"
     },
     {
+      "date": "01.01.0312",
+      "description": "Appius Claudius also builds Rome's first aqueduct, the Aqua Appia, bringing fresh water 16 km from springs in the Sabine hills. Running mostly underground, it delivers 73,000 cubic meters of water daily to the growing city.",
+      "description_ru": "Аппий Клавдий также строит первый римский акведук, Aqua Appia, проводя пресную воду на 16 км из источников в Сабинских холмах. Проходя в основном под землёй, он доставляет 73 000 кубометров воды ежедневно в растущий город.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "First Roman Aqueduct",
+      "name_ru": "Первый римский акведук",
+      "source": "https://en.wikipedia.org/wiki/Aqua_Appia",
+      "tags": ["Roman", "Architecture", "Innovation"],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0310",
+      "description": "Roman consul Quintus Fabius Maximus Rullianus leads an army through the Ciminian Forest, a dense woodland considered impassable. Emerging behind Etruscan lines, he wins a decisive victory. This bold move opens northern Etruria to Roman conquest.",
+      "description_ru": "Римский консул Квинт Фабий Максим Руллиан ведёт армию через Циминийский лес, густую чащу, считавшуюся непроходимой. Выйдя в тыл этрускам, он одерживает решающую победу. Этот смелый ход открывает северную Этрурию для римского завоевания.",
+      "era": "BC",
+      "latitude": 42.3000,
+      "longitude": 12.1667,
+      "name": "Passage of Ciminian Forest",
+      "name_ru": "Проход через Циминийский лес",
+      "source": "https://en.wikipedia.org/wiki/Ciminian_Forest",
+      "tags": ["Roman", "Military", "Victory"],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0304",
+      "description": "Gnaeus Flavius, a secretary, publishes the legis actiones (legal procedures) and the calendar showing court days — information previously monopolized by patrician pontiffs. This 'theft' of priestly knowledge enrages nobles but empowers ordinary citizens.",
+      "description_ru": "Гней Флавий, секретарь, публикует legis actiones (правовые процедуры) и календарь судебных дней — информацию, ранее монополизированную патрицианскими понтификами. Эта 'кража' жреческих знаний возмущает знать, но расширяет права обычных граждан.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Publication of Legal Procedures",
+      "name_ru": "Публикация правовых процедур",
+      "source": "https://en.wikipedia.org/wiki/Gnaeus_Flavius",
+      "tags": ["Roman", "Law", "Political"],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0298",
+      "description": "The Third Samnite War begins as Samnites form a grand coalition with Gauls, Etruscans, and Umbrians against Rome. This 'war of Italian liberation' represents the last major attempt to check Roman expansion in the peninsula.",
+      "description_ru": "Третья Самнитская война начинается, когда самниты формируют большую коалицию с галлами, этрусками и умбрами против Рима. Эта 'война за освобождение Италии' представляет последнюю крупную попытку остановить римскую экспансию на полуострове.",
+      "era": "BC",
+      "latitude": 41.4878,
+      "longitude": 14.6775,
+      "name": "Third Samnite War Begins",
+      "name_ru": "Начало Третьей Самнитской войны",
+      "source": "https://en.wikipedia.org/wiki/Third_Samnite_War",
+      "tags": ["Roman", "War", "Military"],
+      "type": "military"
+    },
+    {
       "date": "01.01.0295",
       "description": "At Sentinum, Rome faces a coalition of Samnites, Gauls, Etruscans and Umbrians — the largest army Italy ever assembled against Rome. Consul Publius Decius Mus (son of the earlier Decius) performs devotio like his father. Romans win decisively, breaking Samnite power and securing central Italy.",
       "description_ru": "При Сентине Рим сталкивается с коалицией самнитов, галлов, этрусков и умбров — крупнейшей армией, когда-либо собранной в Италии против Рима. Консул Публий Деций Мус (сын прежнего Деция) совершает devotio подобно отцу. Римляне решительно побеждают, сокрушая самнитскую мощь и закрепляя за собой центральную Италию.",
@@ -272,6 +571,19 @@
       "name_ru": "Битва при Сентине",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Sentinum",
       "tags": ["Roman", "Battle", "Victory", "Military"],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0290",
+      "description": "Manius Curius Dentatus conquers the Sabines and celebrates a triumph. He famously refuses bribes, saying he would rather rule those who have gold than have it himself. Sabine territory is incorporated, and many Sabines receive citizenship.",
+      "description_ru": "Маний Курий Дентат покоряет сабинов и празднует триумф. Он знаменито отвергает взятки, говоря, что предпочитает править теми, у кого есть золото, чем владеть им. Сабинская территория присоединяется, многие сабины получают гражданство.",
+      "era": "BC",
+      "latitude": 42.4000,
+      "longitude": 12.8500,
+      "name": "Conquest of the Sabines",
+      "name_ru": "Покорение сабинов",
+      "source": "https://en.wikipedia.org/wiki/Manius_Curius_Dentatus",
+      "tags": ["Roman", "Conquest", "Military"],
       "type": "military"
     },
     {
@@ -288,6 +600,19 @@
       "type": "political"
     },
     {
+      "date": "01.01.0283",
+      "description": "Romans defeat the Senones Gauls at Lake Vadimo in Etruria, then systematically expel the entire tribe from Italy. The Senones are the same Gauls who sacked Rome in 390 BC. Their territory becomes the ager Gallicus, settled by Roman colonists.",
+      "description_ru": "Римляне разбивают галлов-сенонов у озера Вадимон в Этрурии, затем систематически изгоняют всё племя из Италии. Сеноны — те самые галлы, что разграбили Рим в 390 г. до н.э. Их территория становится ager Gallicus, заселённым римскими колонистами.",
+      "era": "BC",
+      "latitude": 42.5667,
+      "longitude": 12.2167,
+      "name": "Battle of Lake Vadimo",
+      "name_ru": "Битва у озера Вадимон",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Lake_Vadimo_(283_BC)",
+      "tags": ["Roman", "Battle", "Victory"],
+      "type": "military"
+    },
+    {
       "date": "01.01.0280",
       "description": "King Pyrrhus of Epirus lands in Italy with 25,000 men and 20 war elephants to aid Tarentum against Rome. At Heraclea, his elephants terrify Roman horses, winning the battle but with such heavy losses that Pyrrhus says 'One more such victory and we are undone' — origin of 'Pyrrhic victory'.",
       "description_ru": "Царь Пирр Эпирский высаживается в Италии с 25 000 воинов и 20 боевыми слонами, чтобы помочь Таренту против Рима. При Гераклее его слоны пугают римских коней, выигрывая битву, но с такими тяжёлыми потерями, что Пирр говорит: 'Ещё одна такая победа, и мы погибли' — происхождение термина 'Пиррова победа'.",
@@ -299,6 +624,19 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Heraclea",
       "tags": ["Roman", "Greek", "Battle", "Military"],
       "type": "military"
+    },
+    {
+      "date": "01.01.0280",
+      "description": "After Heraclea, Pyrrhus sends his advisor Cineas to Rome to negotiate peace. Despite Cineas's famous eloquence, the blind old senator Appius Claudius Caecus rallies the Senate to refuse — Rome's first clear statement that it would never negotiate after defeat.",
+      "description_ru": "После Гераклеи Пирр посылает советника Кинея в Рим для мирных переговоров. Несмотря на знаменитое красноречие Кинея, слепой старый сенатор Аппий Клавдий Цек воодушевляет Сенат на отказ — первое ясное заявление Рима, что он никогда не будет вести переговоры после поражения.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Cineas Mission to Rome",
+      "name_ru": "Миссия Кинея в Рим",
+      "source": "https://en.wikipedia.org/wiki/Cineas",
+      "tags": ["Roman", "Greek", "Diplomacy", "Political"],
+      "type": "political"
     },
     {
       "date": "01.01.0279",
@@ -340,6 +678,32 @@
       "type": "military"
     },
     {
+      "date": "01.01.0268",
+      "description": "Rome mints its first silver coinage, the denarius, as contact with Greek civilization demands participation in Mediterranean trade. Previously, Romans used bronze by weight. The new coinage facilitates commerce and soldiers' pay.",
+      "description_ru": "Рим чеканит первые серебряные монеты — денарии, поскольку контакт с греческой цивилизацией требует участия в средиземноморской торговле. Ранее римляне использовали бронзу на вес. Новая монета облегчает торговлю и оплату солдат.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "First Roman Silver Coinage",
+      "name_ru": "Первые римские серебряные монеты",
+      "source": "https://en.wikipedia.org/wiki/Roman_currency",
+      "tags": ["Roman", "Trade", "Innovation"],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0264",
+      "description": "Rome founds a colony at Firmum (Fermo) on the Adriatic coast, part of a systematic colonization program. Roman and Latin colonies serve as garrison towns, spreading Roman influence, relieving population pressure, and providing land for veterans.",
+      "description_ru": "Рим основывает колонию в Фирме (Фермо) на Адриатическом побережье — часть систематической программы колонизации. Римские и латинские колонии служат гарнизонными городами, распространяя римское влияние, снижая демографическое давление и предоставляя землю ветеранам.",
+      "era": "BC",
+      "latitude": 43.1600,
+      "longitude": 13.7166,
+      "name": "Roman Colonization Program",
+      "name_ru": "Программа римской колонизации",
+      "source": "https://en.wikipedia.org/wiki/Roman_colony",
+      "tags": ["Roman", "Foundation", "Administration"],
+      "type": "political"
+    },
+    {
       "date": "01.01.0240",
       "description": "Livius Andronicus, a Greek freedman from Tarentum, produces the first Latin tragedy and comedy adapted from Greek originals, performed at the Roman Games. This marks the birth of Latin literature and Rome's cultural transformation through Greek influence.",
       "description_ru": "Ливий Андроник, греческий вольноотпущенник из Тарента, ставит первую латинскую трагедию и комедию, адаптированную с греческих оригиналов, на Римских играх. Это знаменует рождение латинской литературы и культурное преображение Рима под греческим влиянием.",
@@ -353,6 +717,19 @@
       "type": "historic"
     },
     {
+      "date": "01.01.0234",
+      "description": "Gnaeus Naevius writes the first Latin epic, Bellum Punicum (Punic War), based on recent history rather than Greek myth. He later satirizes the Metelli, a powerful family, and is imprisoned — establishing the dangerous relationship between Roman writers and nobility.",
+      "description_ru": "Гней Невий пишет первый латинский эпос, Bellum Punicum (Пуническая война), основанный на недавней истории, а не на греческом мифе. Позже он высмеивает Метеллов, влиятельную семью, и заключён в тюрьму — устанавливая опасные отношения между римскими писателями и знатью.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "First Latin Epic",
+      "name_ru": "Первый латинский эпос",
+      "source": "https://en.wikipedia.org/wiki/Gnaeus_Naevius",
+      "tags": ["Roman", "Culture", "Art"],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0220",
       "description": "Censor Gaius Flaminius builds the Via Flaminia from Rome to Ariminum (Rimini) on the Adriatic coast, opening northern Italy to Roman colonization. He is controversial for bypassing the Senate and championing popular causes against aristocratic interests.",
       "description_ru": "Цензор Гай Фламиний строит Фламиниеву дорогу от Рима до Аримина (Римини) на Адриатическом побережье, открывая северную Италию для римской колонизации. Он вызывает споры, обходя Сенат и отстаивая народные интересы против аристократии.",
@@ -363,6 +740,58 @@
       "name_ru": "Строительство Фламиниевой дороги",
       "source": "https://en.wikipedia.org/wiki/Via_Flaminia",
       "tags": ["Roman", "Architecture", "Innovation"],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0225",
+      "description": "A massive Celtic invasion from the Po Valley is crushed at Telamon in Etruria, where Romans trap the Gauls between two armies. This decisive victory leads to Roman conquest of Cisalpine Gaul (northern Italy) and the founding of colonies at Placentia and Cremona.",
+      "description_ru": "Массивное кельтское вторжение из долины По разгромлено при Теламоне в Этрурии, где римляне зажимают галлов между двумя армиями. Эта решающая победа ведёт к римскому завоеванию Цизальпинской Галлии (северной Италии) и основанию колоний в Плаценции и Кремоне.",
+      "era": "BC",
+      "latitude": 42.8167,
+      "longitude": 11.1000,
+      "name": "Battle of Telamon",
+      "name_ru": "Битва при Теламоне",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Telamon",
+      "tags": ["Roman", "Battle", "Victory"],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0218",
+      "description": "Rome founds colonies at Placentia (Piacenza) and Cremona in the Po Valley to control recently conquered Cisalpine Gaul. These fortified cities will soon prove critical during Hannibal's invasion, remaining loyal despite being surrounded by hostile territory.",
+      "description_ru": "Рим основывает колонии в Плаценции (Пьяченца) и Кремоне в долине По для контроля недавно завоёванной Цизальпинской Галлии. Эти укреплённые города вскоре окажутся критически важными во время вторжения Ганнибала, сохраняя лояльность, несмотря на окружение враждебной территорией.",
+      "era": "BC",
+      "latitude": 45.0522,
+      "longitude": 9.6932,
+      "name": "Foundation of Placentia and Cremona",
+      "name_ru": "Основание Плаценции и Кремоны",
+      "source": "https://en.wikipedia.org/wiki/Placentia_(city)",
+      "tags": ["Roman", "Foundation", "City"],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0204",
+      "description": "The Magna Mater (Cybele), a black meteorite from Phrygia, is brought to Rome as prophecy declared it necessary for victory against Hannibal. The foreign goddess's cult, with its eunuch priests and ecstatic rituals, unsettles Romans but becomes officially Roman.",
+      "description_ru": "Великая Мать (Кибела), чёрный метеорит из Фригии, привезена в Рим, поскольку пророчество объявило её необходимой для победы над Ганнибалом. Культ иноземной богини с её жрецами-евнухами и экстатическими ритуалами тревожит римлян, но становится официально римским.",
+      "era": "BC",
+      "latitude": 41.8892,
+      "longitude": 12.4875,
+      "name": "Magna Mater Comes to Rome",
+      "name_ru": "Великая Мать прибывает в Рим",
+      "source": "https://en.wikipedia.org/wiki/Magna_Mater",
+      "tags": ["Roman", "Religious"],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0200",
+      "description": "Quintus Fabius Pictor writes the first history of Rome in Greek, aimed at explaining Rome to the Greek world after the Second Punic War. His lost work established the traditional founding date of 753 BC and shaped all later Roman historiography.",
+      "description_ru": "Квинт Фабий Пиктор пишет первую историю Рима на греческом языке, с целью объяснить Рим греческому миру после Второй Пунической войны. Его утраченный труд установил традиционную дату основания 753 г. до н.э. и сформировал всю последующую римскую историографию.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "First Roman History Written",
+      "name_ru": "Первая римская история",
+      "source": "https://en.wikipedia.org/wiki/Quintus_Fabius_Pictor",
+      "tags": ["Roman", "Culture", "Greek"],
       "type": "historic"
     },
     {
@@ -405,6 +834,45 @@
       "type": "military"
     },
     {
+      "date": "01.01.0186",
+      "description": "The Senate suppresses the cult of Bacchus (Dionysus) throughout Italy after alleged crimes including murder and conspiracy. 7,000 people are reportedly executed. This Senatus consultum de Bacchanalibus is the earliest Roman decree regulating religion.",
+      "description_ru": "Сенат подавляет культ Вакха (Диониса) по всей Италии после предполагаемых преступлений, включая убийства и заговор. 7000 человек, по сообщениям, казнены. Этот Senatus consultum de Bacchanalibus — древнейший римский указ, регулирующий религию.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Suppression of the Bacchanalia",
+      "name_ru": "Подавление вакханалий",
+      "source": "https://en.wikipedia.org/wiki/Senatus_consultum_de_Bacchanalibus",
+      "tags": ["Roman", "Religious", "Political"],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0184",
+      "description": "Marcus Porcius Cato becomes censor and launches a moral crusade against luxury, Greek influence, and corruption. He expels senators, increases taxes on luxuries, and demolishes buildings encroaching on public land. His stern traditionalism becomes legendary.",
+      "description_ru": "Марк Порций Катон становится цензором и начинает моральный крестовый поход против роскоши, греческого влияния и коррупции. Он исключает сенаторов, увеличивает налоги на предметы роскоши и сносит здания, захватывающие общественную землю. Его суровый традиционализм становится легендарным.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Cato the Elder's Censorship",
+      "name_ru": "Цензура Катона Старшего",
+      "source": "https://en.wikipedia.org/wiki/Cato_the_Elder",
+      "tags": ["Roman", "Political"],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0171",
+      "description": "The Senate receives unprecedented complaints from allied cities about Roman magistrates' abuses in Spain. A tribunal is established, but the guilty praetors escape punishment through influence. This foreshadows later provincial exploitation.",
+      "description_ru": "Сенат получает беспрецедентные жалобы от союзных городов на злоупотребления римских магистратов в Испании. Создаётся трибунал, но виновные преторы избегают наказания благодаря влиянию. Это предвещает более позднюю эксплуатацию провинций.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "First Provincial Abuse Trials",
+      "name_ru": "Первые суды о провинциальных злоупотреблениях",
+      "source": "https://en.wikipedia.org/wiki/Roman_province",
+      "tags": ["Roman", "Political", "Law"],
+      "type": "political"
+    },
+    {
       "date": "01.01.0168",
       "description": "At Pydna, Roman consul Aemilius Paullus annihilates the Macedonian phalanx of King Perseus in under an hour. 20,000 Macedonians die. Perseus is paraded in Paullus's triumph and dies a Roman prisoner. Macedonia is divided into four puppet republics.",
       "description_ru": "При Пидне римский консул Эмилий Павел уничтожает македонскую фалангу царя Персея менее чем за час. 20 000 македонцев гибнут. Персея проводят в триумфе Павла, и он умирает римским пленником. Македония разделена на четыре марионеточные республики.",
@@ -418,6 +886,45 @@
       "type": "military"
     },
     {
+      "date": "01.01.0167",
+      "description": "Rome abolishes the tributum, direct tax on Roman citizens, paid for by the wealth flowing from conquered territories and provinces. Citizens would not pay direct taxes again until the crisis of the Empire three centuries later.",
+      "description_ru": "Рим отменяет tributum, прямой налог на римских граждан, оплачиваемый богатством, текущим из завоёванных территорий и провинций. Граждане больше не будут платить прямые налоги до кризиса Империи три века спустя.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Direct Citizen Tax Abolished",
+      "name_ru": "Отмена прямого налога на граждан",
+      "source": "https://en.wikipedia.org/wiki/Tributum",
+      "tags": ["Roman", "Political", "Administration"],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0155",
+      "description": "Three Greek philosophers — Carneades (skeptic), Diogenes (stoic), and Critolaus (peripatetic) — come to Rome as Athenian ambassadors. Carneades shocks Romans by arguing both sides of justice on successive days, demonstrating rhetoric's power to prove anything.",
+      "description_ru": "Три греческих философа — Карнеад (скептик), Диоген (стоик) и Критолай (перипатетик) — прибывают в Рим как афинские послы. Карнеад шокирует римлян, аргументируя обе стороны справедливости в последовательные дни, демонстрируя способность риторики доказать что угодно.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Greek Philosophers in Rome",
+      "name_ru": "Греческие философы в Риме",
+      "source": "https://en.wikipedia.org/wiki/Carneades",
+      "tags": ["Roman", "Greek", "Culture"],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0149",
+      "description": "The Lex Calpurnia establishes Rome's first permanent court (quaestio perpetua) to try provincial extortion cases. Previously, each case required special legislation. This begins the system of permanent specialized courts that would later try treason and murder.",
+      "description_ru": "Закон Кальпурния учреждает первый постоянный суд Рима (quaestio perpetua) для рассмотрения дел о провинциальном вымогательстве. Ранее каждое дело требовало специального законодательства. Это начало системы постоянных специализированных судов, которые позже будут судить измену и убийство.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "First Permanent Court Established",
+      "name_ru": "Первый постоянный суд",
+      "source": "https://en.wikipedia.org/wiki/Lex_Calpurnia",
+      "tags": ["Roman", "Law", "Political"],
+      "type": "political"
+    },
+    {
       "date": "01.01.0146",
       "description": "Roman general Lucius Mummius destroys Corinth, slaughters the men, and sells women and children into slavery. The city is left uninhabited for a century. Mummius famously warned shippers that if the art treasures were lost, they would have to replace them.",
       "description_ru": "Римский полководец Луций Муммий разрушает Коринф, уничтожает мужчин и продаёт женщин и детей в рабство. Город остаётся необитаемым на столетие. Муммий прославился предупреждением перевозчикам, что если художественные сокровища будут потеряны, им придётся их заменить.",
@@ -428,6 +935,32 @@
       "name_ru": "Разрушение Коринфа",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Corinth_(146_BC)",
       "tags": ["Roman", "Greek", "Destruction", "Conquest"],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0139",
+      "description": "The Lex Gabinia introduces secret ballot for elections, followed by laws extending it to trials and legislation. Previously, voting was public and subject to intimidation. Conservative senators oppose this shield against aristocratic pressure.",
+      "description_ru": "Закон Габиния вводит тайное голосование на выборах, за ним следуют законы, распространяющие его на суды и законодательство. Ранее голосование было публичным и подвержено запугиванию. Консервативные сенаторы выступают против этого щита от аристократического давления.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Introduction of Secret Ballot",
+      "name_ru": "Введение тайного голосования",
+      "source": "https://en.wikipedia.org/wiki/Lex_Gabinia_tabellaria",
+      "tags": ["Roman", "Political", "Law"],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0136",
+      "description": "The First Servile War erupts in Sicily when mistreated slaves revolt under the Syrian Eunus, who proclaims himself King Antiochus. At its height, 200,000 slaves control most of Sicily. It takes Rome years and multiple armies to suppress.",
+      "description_ru": "Первое восстание рабов вспыхивает в Сицилии, когда притесняемые рабы восстают под руководством сирийца Евна, провозгласившего себя царём Антиохом. На пике 200 000 рабов контролируют большую часть Сицилии. Риму требуются годы и несколько армий, чтобы подавить его.",
+      "era": "BC",
+      "latitude": 37.5650,
+      "longitude": 15.0940,
+      "name": "First Servile War in Sicily",
+      "name_ru": "Первое восстание рабов в Сицилии",
+      "source": "https://en.wikipedia.org/wiki/First_Servile_War",
+      "tags": ["Roman", "War", "Revolution"],
       "type": "military"
     },
     {
@@ -444,6 +977,19 @@
       "type": "political"
     },
     {
+      "date": "01.01.0133",
+      "description": "King Attalus III of Pergamon bequeaths his kingdom to Rome in his will. The wealthy realm becomes the province of Asia, Rome's richest province and a source of vast tax revenue — and a temptation for corrupt governors.",
+      "description_ru": "Царь Аттал III Пергамский завещает своё царство Риму. Богатое государство становится провинцией Азия, богатейшей провинцией Рима и источником огромных налоговых поступлений — а также соблазном для коррумпированных наместников.",
+      "era": "BC",
+      "latitude": 39.1200,
+      "longitude": 27.1830,
+      "name": "Bequest of Pergamon",
+      "name_ru": "Завещание Пергама",
+      "source": "https://en.wikipedia.org/wiki/Attalus_III",
+      "tags": ["Roman", "Greek", "Political"],
+      "type": "political"
+    },
+    {
       "date": "01.01.0123",
       "description": "Gaius Gracchus, brother of Tiberius, becomes tribune and enacts sweeping reforms: subsidized grain for Romans, jury reform to break senatorial corruption, road building, and colonial foundations. After two terms, he is declared a public enemy and killed with 3,000 supporters.",
       "description_ru": "Гай Гракх, брат Тиберия, становится трибуном и проводит масштабные реформы: субсидированное зерно для римлян, судебная реформа для борьбы с сенаторской коррупцией, строительство дорог и основание колоний. После двух сроков его объявляют врагом государства и убивают вместе с 3000 сторонников.",
@@ -455,6 +1001,32 @@
       "source": "https://en.wikipedia.org/wiki/Gaius_Gracchus",
       "tags": ["Roman", "Political", "Death", "Revolution"],
       "type": "political"
+    },
+    {
+      "date": "01.01.0121",
+      "description": "The Senate passes the first senatus consultum ultimum (final decree), authorizing the consul to take any measures to protect the state — effectively martial law. It is used to justify killing Gaius Gracchus and his followers without trial.",
+      "description_ru": "Сенат принимает первый senatus consultum ultimum (чрезвычайный указ), уполномочивая консула предпринять любые меры для защиты государства — фактически военное положение. Он используется для оправдания убийства Гая Гракха и его сторонников без суда.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "First Senatus Consultum Ultimum",
+      "name_ru": "Первый чрезвычайный указ Сената",
+      "source": "https://en.wikipedia.org/wiki/Senatus_consultum_ultimum",
+      "tags": ["Roman", "Political", "Law"],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0118",
+      "description": "Rome founds Narbo Martius (Narbonne), its first colony outside Italy, in southern Gaul. This establishes permanent Roman presence across the Alps and begins the Romanization of Gaul. The area becomes the province of Gallia Narbonensis.",
+      "description_ru": "Рим основывает Нарбо Марций (Нарбонн), свою первую колонию за пределами Италии, в южной Галлии. Это устанавливает постоянное римское присутствие за Альпами и начинает романизацию Галлии. Территория становится провинцией Нарбонская Галлия.",
+      "era": "BC",
+      "latitude": 43.1836,
+      "longitude": 3.0033,
+      "name": "First Colony Outside Italy",
+      "name_ru": "Первая колония за пределами Италии",
+      "source": "https://en.wikipedia.org/wiki/Narbonne",
+      "tags": ["Roman", "Foundation", "City", "Conquest"],
+      "type": "historic"
     },
     {
       "date": "01.01.0112",
@@ -509,6 +1081,19 @@
       "type": "military"
     },
     {
+      "date": "01.01.0100",
+      "description": "Tribune Saturninus proposes radical land reforms for Marius's veterans, using violence to pass legislation. When Saturninus murders a political rival, Marius reluctantly enforces the senatus consultum ultimum against his own ally, who is killed by a mob.",
+      "description_ru": "Трибун Сатурнин предлагает радикальные земельные реформы для ветеранов Мария, используя насилие для принятия законов. Когда Сатурнин убивает политического соперника, Марий неохотно исполняет чрезвычайный указ Сената против собственного союзника, убитого толпой.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Violence of Saturninus",
+      "name_ru": "Насилие Сатурнина",
+      "source": "https://en.wikipedia.org/wiki/Lucius_Appuleius_Saturninus",
+      "tags": ["Roman", "Political", "Death", "Revolution"],
+      "type": "political"
+    },
+    {
       "date": "01.01.0091",
       "description": "Tribune Marcus Livius Drusus proposes citizenship for Italian allies who had fought in Rome's wars for generations. When he is murdered and the reforms rejected, the Italian allies revolt. They form their own state 'Italia' with a capital at Corfinium.",
       "description_ru": "Трибун Марк Ливий Друз предлагает гражданство для италийских союзников, которые воевали в римских войнах на протяжении поколений. Когда его убивают и реформы отклоняют, италийские союзники восстают. Они создают собственное государство 'Италия' со столицей в Корфинии.",
@@ -520,6 +1105,19 @@
       "source": "https://en.wikipedia.org/wiki/Social_War_(91%E2%80%9387_BC)",
       "tags": ["Roman", "War", "Political"],
       "type": "military"
+    },
+    {
+      "date": "01.01.0090",
+      "description": "To end the Social War, Rome passes the Lex Julia granting citizenship to Italian allies who had not revolted or who laid down arms. Followed by Lex Plautia Papiria, these laws eventually extend citizenship to all of peninsular Italy — transforming Rome from city-state to nation.",
+      "description_ru": "Чтобы завершить Союзническую войну, Рим принимает Закон Юлия, предоставляя гражданство италийским союзникам, которые не восстали или сложили оружие. За ним следует Закон Плавция-Папирия, в итоге распространяя гражданство на всю полуостровную Италию — превращая Рим из города-государства в нацию.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Italian Citizenship Extended",
+      "name_ru": "Распространение италийского гражданства",
+      "source": "https://en.wikipedia.org/wiki/Lex_Julia_(90_BC)",
+      "tags": ["Roman", "Political", "Law"],
+      "type": "political"
     },
     {
       "date": "01.01.0088",
@@ -548,6 +1146,19 @@
       "type": "political"
     },
     {
+      "date": "01.01.0086",
+      "description": "Sulla captures Athens, which had joined Mithridates of Pontus, after a brutal siege. He sacks the city, massacring civilians and stripping ancient temples of their treasures. Sulla's loot includes Aristotle's library, bringing it to Rome.",
+      "description_ru": "Сулла захватывает Афины, присоединившиеся к Митридату Понтийскому, после жестокой осады. Он разоряет город, устраивая резню мирных жителей и лишая древние храмы их сокровищ. Добыча Суллы включает библиотеку Аристотеля, привезённую в Рим.",
+      "era": "BC",
+      "latitude": 37.9715,
+      "longitude": 23.7257,
+      "name": "Sulla Sacks Athens",
+      "name_ru": "Сулла разоряет Афины",
+      "source": "https://en.wikipedia.org/wiki/Siege_of_Athens_and_Piraeus_(87%E2%80%9386_BC)",
+      "tags": ["Roman", "Greek", "Siege", "Destruction"],
+      "type": "military"
+    },
+    {
       "date": "01.11.0082",
       "description": "Sulla defeats the Marian forces at the Colline Gate outside Rome in a desperate night battle. 50,000 die. He becomes dictator and publishes proscription lists — 520 senators and equestrians are outlawed, their property confiscated, and killers rewarded. The young Julius Caesar barely escapes.",
       "description_ru": "Сулла разбивает марианские силы у Коллинских ворот под Римом в отчаянной ночной битве. 50 000 погибают. Он становится диктатором и публикует проскрипционные списки — 520 сенаторов и всадников объявлены вне закона, их имущество конфисковано, убийцы вознаграждены. Молодой Юлий Цезарь едва спасается.",
@@ -561,9 +1172,22 @@
       "type": "military"
     },
     {
+      "date": "01.01.0081",
+      "description": "Sulla's constitutional reforms aim to restore senatorial supremacy: tribunes lose veto power and cannot hold higher office, senators increased from 300 to 600, cursus honorum (career ladder) strictly regulated, and provincial governors banned from making war without Senate approval.",
+      "description_ru": "Конституционные реформы Суллы направлены на восстановление сенаторского превосходства: трибуны лишаются права вето и не могут занимать высшие должности, число сенаторов увеличивается с 300 до 600, cursus honorum (карьерная лестница) строго регламентируется, провинциальным наместникам запрещено вести войну без одобрения Сената.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Sulla's Constitutional Reforms",
+      "name_ru": "Конституционные реформы Суллы",
+      "source": "https://en.wikipedia.org/wiki/Sulla",
+      "tags": ["Roman", "Political", "Law"],
+      "type": "political"
+    },
+    {
       "date": "01.01.0079",
-      "description": "Sulla voluntarily resigns his dictatorship after reforming the constitution: weakening tribunes, strengthening the Senate, and establishing rules for magistracies. He retires to his estate and dies the following year. His epitaph: 'No friend ever served me, and no enemy ever wronged me, whom I have not repaid in full.'",
-      "description_ru": "Сулла добровольно слагает диктатуру после реформирования конституции: ослабления трибунов, усиления Сената и установления правил для магистратур. Он удаляется в своё поместье и умирает в следующем году. Его эпитафия: 'Ни один друг не служил мне, и ни один враг не обидел меня, кому я не отплатил сполна.'",
+      "description": "Sulla voluntarily resigns his dictatorship after reforming the constitution. He retires to his estate and dies the following year. His epitaph: 'No friend ever served me, and no enemy ever wronged me, whom I have not repaid in full.'",
+      "description_ru": "Сулла добровольно слагает диктатуру после реформирования конституции. Он удаляется в своё поместье и умирает в следующем году. Его эпитафия: 'Ни один друг не служил мне, и ни один враг не обидел меня, кому я не отплатил сполна.'",
       "era": "BC",
       "latitude": 41.8925,
       "longitude": 12.4853,
@@ -600,6 +1224,19 @@
       "type": "military"
     },
     {
+      "date": "01.01.0070",
+      "description": "Consuls Pompey and Crassus dismantle Sulla's constitution: they restore tribunes' powers, reform the extortion courts, and reopen the censorship. Within a decade of Sulla's death, his careful conservative architecture is demolished.",
+      "description_ru": "Консулы Помпей и Красс демонтируют конституцию Суллы: они восстанавливают полномочия трибунов, реформируют суды по вымогательству и возобновляют цензуру. В течение десятилетия после смерти Суллы его тщательная консервативная архитектура разрушена.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Sulla's Laws Dismantled",
+      "name_ru": "Отмена законов Суллы",
+      "source": "https://en.wikipedia.org/wiki/Pompey",
+      "tags": ["Roman", "Political", "Law"],
+      "type": "political"
+    },
+    {
       "date": "01.01.0067",
       "description": "The Lex Gabinia grants Pompey unprecedented command over the entire Mediterranean to suppress pirates who had paralyzed trade and even raided the port of Ostia. With 500 ships, he clears the sea in just three months, resettling pirates as farmers.",
       "description_ru": "Закон Габиния даёт Помпею беспрецедентное командование над всем Средиземноморьем для борьбы с пиратами, парализовавшими торговлю и даже совершавшими набеги на порт Остия. С 500 кораблями он очищает море всего за три месяца, расселяя пиратов как земледельцев.",
@@ -613,6 +1250,19 @@
       "type": "military"
     },
     {
+      "date": "01.01.0066",
+      "description": "The Lex Manilia gives Pompey command against Mithridates of Pontus, despite Senate objections. Cicero supports it in his first political speech. Pompey will spend three years reorganizing the East, creating new provinces and client kingdoms.",
+      "description_ru": "Закон Манилия даёт Помпею командование против Митридата Понтийского, несмотря на возражения Сената. Цицерон поддерживает его в своей первой политической речи. Помпей проведёт три года, реорганизуя Восток, создавая новые провинции и клиентские царства.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Pompey's Eastern Command",
+      "name_ru": "Восточное командование Помпея",
+      "source": "https://en.wikipedia.org/wiki/Lex_Manilia",
+      "tags": ["Roman", "Political", "Military"],
+      "type": "political"
+    },
+    {
       "date": "01.01.0063",
       "description": "Lucius Sergius Catilina, a ruined nobleman, plots to overthrow the Republic with an army of debtors and veterans. Consul Cicero exposes the plot in the Senate with his famous orations. Five conspirators are executed without trial — controversial even then, and later used against Cicero.",
       "description_ru": "Луций Сергий Катилина, разорённый аристократ, замышляет свергнуть Республику с армией должников и ветеранов. Консул Цицерон разоблачает заговор в Сенате своими знаменитыми речами. Пятеро заговорщиков казнены без суда — спорное решение даже тогда, позже использованное против Цицерона.",
@@ -624,6 +1274,19 @@
       "source": "https://en.wikipedia.org/wiki/Catilinarian_conspiracy",
       "tags": ["Roman", "Political", "Revolution"],
       "type": "political"
+    },
+    {
+      "date": "01.01.0063",
+      "description": "Pompey captures Jerusalem after a three-month siege, entering the Temple's Holy of Holies — but taking nothing. He makes Judaea a Roman client state. His intervention in Jewish politics will have consequences for centuries.",
+      "description_ru": "Помпей захватывает Иерусалим после трёхмесячной осады, войдя в Святая Святых Храма — но ничего не взяв. Он делает Иудею римским клиентским государством. Его вмешательство в еврейскую политику будет иметь последствия на века.",
+      "era": "BC",
+      "latitude": 31.7785,
+      "longitude": 35.2346,
+      "name": "Pompey Captures Jerusalem",
+      "name_ru": "Помпей захватывает Иерусалим",
+      "source": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(63_BC)",
+      "tags": ["Roman", "Conquest", "Siege", "Israel"],
+      "type": "military"
     },
     {
       "date": "01.01.0060",
@@ -652,6 +1315,32 @@
       "type": "military"
     },
     {
+      "date": "01.01.0058",
+      "description": "Tribune Clodius exiles Cicero for executing the Catiline conspirators without trial. Cicero's house is demolished and the site consecrated as a temple. He spends 16 months in exile before his triumphant recall in 57 BC.",
+      "description_ru": "Трибун Клодий изгоняет Цицерона за казнь заговорщиков Катилины без суда. Дом Цицерона сносится, а место освящается как храм. Он проводит 16 месяцев в изгнании до триумфального возвращения в 57 г. до н.э.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Exile of Cicero",
+      "name_ru": "Изгнание Цицерона",
+      "source": "https://en.wikipedia.org/wiki/Cicero",
+      "tags": ["Roman", "Political"],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0056",
+      "description": "The triumvirs meet at Luca to renew their alliance. Pompey and Crassus will be consuls again; Caesar's command extended for five more years. The meeting demonstrates how three men can control the Republic against Senate opposition.",
+      "description_ru": "Триумвиры встречаются в Луке, чтобы обновить союз. Помпей и Красс снова будут консулами; командование Цезаря продлевается ещё на пять лет. Встреча демонстрирует, как трое могут контролировать Республику вопреки сенатскому сопротивлению.",
+      "era": "BC",
+      "latitude": 43.8375,
+      "longitude": 10.4950,
+      "name": "Conference at Luca",
+      "name_ru": "Конференция в Луке",
+      "source": "https://en.wikipedia.org/wiki/Luca_Conference",
+      "tags": ["Roman", "Political"],
+      "type": "political"
+    },
+    {
       "date": "01.01.0055",
       "description": "Caesar builds a timber bridge across the Rhine in just ten days — a feat of military engineering meant to awe the Germanic tribes. He spends 18 days demonstrating Roman power on German soil, then destroys the bridge to show he could return anytime.",
       "description_ru": "Цезарь строит деревянный мост через Рейн всего за десять дней — подвиг военной инженерии, призванный устрашить германские племена. Он проводит 18 дней, демонстрируя римскую мощь на германской земле, затем разрушает мост, показывая, что может вернуться в любое время.",
@@ -678,6 +1367,19 @@
       "type": "military"
     },
     {
+      "date": "01.01.0054",
+      "description": "Julia, daughter of Caesar and wife of Pompey, dies in childbirth. Her death removes the personal bond between her father and husband. The infant also dies. The First Triumvirate begins to unravel.",
+      "description_ru": "Юлия, дочь Цезаря и жена Помпея, умирает при родах. Её смерть разрывает личную связь между отцом и мужем. Младенец тоже умирает. Первый триумвират начинает распадаться.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Death of Julia",
+      "name_ru": "Смерть Юлии",
+      "source": "https://en.wikipedia.org/wiki/Julia_(daughter_of_Julius_Caesar)",
+      "tags": ["Roman", "Death", "Political"],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0052",
       "description": "The Gallic chieftain Vercingetorix unites the tribes in a massive revolt against Rome. After initial successes, he is besieged at Alesia where Caesar builds two rings of fortifications — one facing in, one facing out against a relief army of 250,000. Vercingetorix surrenders and is later executed in Rome.",
       "description_ru": "Галльский вождь Верцингеториг объединяет племена в массовом восстании против Рима. После первоначальных успехов он осаждён в Алезии, где Цезарь строит два кольца укреплений — одно внутрь, одно наружу против армии помощи в 250 000. Верцингеториг сдаётся и позже казнён в Риме.",
@@ -691,6 +1393,19 @@
       "type": "military"
     },
     {
+      "date": "01.01.0052",
+      "description": "Clodius is murdered by Milo's gang on the Via Appia. His followers riot and burn the Senate house as his funeral pyre. Pompey is appointed sole consul — unprecedented — to restore order, marking his drift from Caesar toward the Senate.",
+      "description_ru": "Клодий убит бандой Милона на Аппиевой дороге. Его сторонники бунтуют и сжигают здание Сената как погребальный костёр. Помпей назначен единственным консулом — беспрецедентно — для восстановления порядка, знаменуя его отход от Цезаря к Сенату.",
+      "era": "BC",
+      "latitude": 41.8500,
+      "longitude": 12.5000,
+      "name": "Murder of Clodius",
+      "name_ru": "Убийство Клодия",
+      "source": "https://en.wikipedia.org/wiki/Publius_Clodius_Pulcher",
+      "tags": ["Roman", "Death", "Political"],
+      "type": "political"
+    },
+    {
       "date": "10.01.0049",
       "description": "Caesar crosses the Rubicon River with the 13th Legion, entering Italy under arms — an act of war against the Republic. 'Alea iacta est' (The die is cast), he reportedly says. Pompey and the Senate flee to Greece. Caesar enters Rome without resistance.",
       "description_ru": "Цезарь переходит реку Рубикон с 13-м легионом, вступая в Италию под оружием — акт войны против Республики. 'Жребий брошен' (Alea iacta est), по преданию говорит он. Помпей и Сенат бегут в Грецию. Цезарь входит в Рим без сопротивления.",
@@ -702,6 +1417,32 @@
       "source": "https://en.wikipedia.org/wiki/Crossing_the_Rubicon",
       "tags": ["Roman", "Political", "Civil War", "Military"],
       "type": "political"
+    },
+    {
+      "date": "01.03.0049",
+      "description": "Caesar seizes the state treasury in the Temple of Saturn despite tribune opposition. He reportedly says the laws go silent in times of war. The treasury contains 15,000 gold bars, 30,000 silver bars, and 30 million sesterces in coin.",
+      "description_ru": "Цезарь захватывает государственную казну в храме Сатурна, несмотря на сопротивление трибунов. Он, по преданию, говорит, что законы молчат во времена войны. Казна содержит 15 000 золотых слитков, 30 000 серебряных слитков и 30 миллионов сестерциев монетами.",
+      "era": "BC",
+      "latitude": 41.8931,
+      "longitude": 12.4842,
+      "name": "Caesar Seizes the Treasury",
+      "name_ru": "Цезарь захватывает казну",
+      "source": "https://en.wikipedia.org/wiki/Temple_of_Saturn",
+      "tags": ["Roman", "Political", "Civil War"],
+      "type": "political"
+    },
+    {
+      "date": "01.08.0049",
+      "description": "Caesar defeats Pompey's forces at Ilerda in Spain without a major battle, maneuvering them into surrender. His famous clemency — releasing enemy soldiers rather than killing them — wins converts but also spares future enemies.",
+      "description_ru": "Цезарь побеждает силы Помпея при Илерде в Испании без крупного сражения, маневрами принуждая их к сдаче. Его знаменитое милосердие — освобождение вражеских солдат вместо их убийства — привлекает сторонников, но также щадит будущих врагов.",
+      "era": "BC",
+      "latitude": 41.6170,
+      "longitude": 0.6210,
+      "name": "Battle of Ilerda",
+      "name_ru": "Битва при Илерде",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Ilerda",
+      "tags": ["Roman", "Battle", "Civil War", "Victory"],
+      "type": "military"
     },
     {
       "date": "09.08.0048",
@@ -743,6 +1484,32 @@
       "type": "historic"
     },
     {
+      "date": "06.04.0046",
+      "description": "Caesar defeats the Pompeian remnants at Thapsus in Africa. Cato the Younger, refusing to live in a world ruled by Caesar, commits suicide at Utica after reading Plato's dialogue on the immortality of the soul. He becomes a martyr for Republican liberty.",
+      "description_ru": "Цезарь разбивает помпеянские остатки при Тапсе в Африке. Катон Младший, отказываясь жить в мире, управляемом Цезарем, совершает самоубийство в Утике после прочтения диалога Платона о бессмертии души. Он становится мучеником республиканской свободы.",
+      "era": "BC",
+      "latitude": 35.7528,
+      "longitude": 10.7597,
+      "name": "Battle of Thapsus and Death of Cato",
+      "name_ru": "Битва при Тапсе и смерть Катона",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Thapsus",
+      "tags": ["Roman", "Battle", "Death", "Civil War"],
+      "type": "military"
+    },
+    {
+      "date": "17.03.0045",
+      "description": "Caesar wins his last battle at Munda in Spain against Pompey's sons. 30,000 Pompeians die in the bloodiest battle of the civil war. 'I have often fought for victory, but today I fought for my life,' Caesar reportedly says.",
+      "description_ru": "Цезарь одерживает последнюю победу при Мунде в Испании против сыновей Помпея. 30 000 помпеянцев гибнут в самой кровопролитной битве гражданской войны. 'Я часто сражался за победу, но сегодня я сражался за свою жизнь,' по преданию говорит Цезарь.",
+      "era": "BC",
+      "latitude": 37.4833,
+      "longitude": -4.7167,
+      "name": "Battle of Munda",
+      "name_ru": "Битва при Мунде",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Munda",
+      "tags": ["Roman", "Battle", "Civil War", "Victory"],
+      "type": "military"
+    },
+    {
       "date": "01.02.0044",
       "description": "Caesar is named Dictator Perpetuo (Dictator in Perpetuity), ending the traditional time limit on the emergency office. He wears a purple toga, sits on a golden throne, and his image appears on coins — all unprecedented for a living Roman.",
       "description_ru": "Цезарь назначается Dictator Perpetuo (Пожизненный диктатор), отменяя традиционное временное ограничение чрезвычайной должности. Он носит пурпурную тогу, сидит на золотом троне, его изображение появляется на монетах — всё это беспрецедентно для живого римлянина.",
@@ -780,6 +1547,19 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Philippi",
       "tags": ["Roman", "Battle", "Civil War", "Death"],
       "type": "military"
+    },
+    {
+      "date": "01.01.0040",
+      "description": "The Treaty of Brundisium divides the Roman world: Antony gets the East, Octavian the West, Lepidus Africa. Antony marries Octavian's sister Octavia to seal the alliance. The Mediterranean enjoys a brief peace.",
+      "description_ru": "Договор в Брундизии делит римский мир: Антоний получает Восток, Октавиан — Запад, Лепид — Африку. Антоний женится на сестре Октавиана Октавии, чтобы скрепить союз. Средиземноморье наслаждается кратким миром.",
+      "era": "BC",
+      "latitude": 40.6361,
+      "longitude": 17.9411,
+      "name": "Treaty of Brundisium",
+      "name_ru": "Договор в Брундизии",
+      "source": "https://en.wikipedia.org/wiki/Treaty_of_Brundisium",
+      "tags": ["Roman", "Political", "Diplomacy"],
+      "type": "political"
     },
     {
       "date": "01.01.0036",
