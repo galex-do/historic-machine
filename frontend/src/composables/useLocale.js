@@ -274,6 +274,9 @@ const UI_TRANSLATIONS = {
     importToCreateFirst: 'Import events to create your first dataset.',
     noDescription: 'No description',
     userPrefix: 'User',
+    searchDatasets: 'Search datasets...',
+    noMatchingDatasets: 'No datasets match your search criteria.',
+    confirmImport: 'Confirm Import',
     
     // Delete Dataset Modal
     deleteDatasetTitle: 'Delete Dataset',
@@ -587,6 +590,9 @@ const UI_TRANSLATIONS = {
     importToCreateFirst: 'Импортируйте события для создания первого датасета.',
     noDescription: 'Без описания',
     userPrefix: 'Пользователь',
+    searchDatasets: 'Поиск датасетов...',
+    noMatchingDatasets: 'Нет датасетов, соответствующих критериям поиска.',
+    confirmImport: 'Подтвердить импорт',
     
     // Delete Dataset Modal
     deleteDatasetTitle: 'Удалить датасет',
