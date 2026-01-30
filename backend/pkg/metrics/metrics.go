@@ -82,15 +82,6 @@ var (
                 },
         )
 
-        SessionDurationMinutes = promauto.NewHistogramVec(
-                prometheus.HistogramOpts{
-                        Name:    "session_duration_minutes",
-                        Help:    "Session duration in minutes",
-                        Buckets: []float64{1, 2, 5, 10, 15, 30, 60, 120, 240},
-                },
-                []string{"type"},
-        )
-
         LoginAttemptsTotal = promauto.NewCounterVec(
                 prometheus.CounterOpts{
                         Name: "login_attempts_total",
