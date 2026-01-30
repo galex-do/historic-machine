@@ -276,7 +276,7 @@ import apiService from '@/services/api.js'
 import authService from '@/services/authService.js'
 import { useEvents } from '@/composables/useEvents.js'
 import { useLocale } from '@/composables/useLocale.js'
-import TablePagination from '@/components/common/TablePagination.vue'
+import TablePagination from '@/components/TablePagination.vue'
 
 export default {
   name: 'DatasetsPanel',
