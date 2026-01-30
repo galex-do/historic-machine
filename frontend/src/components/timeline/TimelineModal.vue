@@ -7,6 +7,13 @@
         <span v-if="totalEventCount > 0" class="timeline_event_count">
           {{ visibleEventCount }} / {{ totalEventCount }}
         </span>
+        <button 
+          class="toggle_details_btn" 
+          @click="showDetails = !showDetails"
+          :title="showDetails ? t('hideDetails') : t('showDetails')"
+        >
+          {{ showDetails ? '📝' : '📋' }}
+        </button>
         <button class="close_btn" @click="closeModal" :title="t('close')">×</button>
       </div>
 
@@ -34,10 +41,10 @@
                    class="event_name event_name_link"
                    @click="handleShowDetail(group.events[0])"
                 >{{ group.events[0].name }}</span>
-                <template v-if="group.events[0].description">
+                <template v-if="showDetails && group.events[0].description">
                   {{ ' — ' }}{{ group.events[0].description }}
                 </template>
-                <template v-if="group.events[0].tags && group.events[0].tags.length > 0">
+                <template v-if="showDetails && group.events[0].tags && group.events[0].tags.length > 0">
                   {{ ' ' }}
                   <span
                     v-for="(tag, index) in group.events[0].tags"
@@ -82,10 +89,10 @@
                        class="event_name event_name_link"
                        @click="handleShowDetail(event)"
                     >{{ event.name }}</span>
-                    <template v-if="event.description">
+                    <template v-if="showDetails && event.description">
                       {{ ' — ' }}{{ event.description }}
                     </template>
-                    <template v-if="event.tags && event.tags.length > 0">
+                    <template v-if="showDetails && event.tags && event.tags.length > 0">
                       {{ ' ' }}
                       <span
                         v-for="(tag, index) in event.tags"
@@ -154,6 +161,7 @@ export default {
     
     const BATCH_SIZE = 50
     const visibleCount = ref(BATCH_SIZE)
+    const showDetails = ref(false)
     const isLoading = ref(false)
     
     const cachedGroupedEvents = ref([])
@@ -360,6 +368,7 @@ export default {
       visibleEventCount,
       hasMoreEvents,
       isLoading,
+      showDetails,
       closeModal,
       handleFocusEvent,
       handleTagClick,
@@ -420,6 +429,22 @@ export default {
   padding: 0.25rem 0.75rem;
   border-radius: 12px;
   margin-left: auto;
+}
+
+.toggle_details_btn {
+  background: none;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  color: #64748b;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: all 0.2s;
+}
+
+.toggle_details_btn:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
 }
 
 .close_btn {
