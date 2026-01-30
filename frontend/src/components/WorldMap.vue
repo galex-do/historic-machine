@@ -2048,7 +2048,7 @@ export default {
 
 .timeline_date_group {
   position: relative;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
 }
 
 .timeline_date_header {
