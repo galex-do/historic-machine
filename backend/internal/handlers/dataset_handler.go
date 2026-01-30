@@ -247,3 +247,45 @@ func (h *DatasetHandler) ExportDataset(w http.ResponseWriter, r *http.Request) {
                 return
         }
 }
+
+// ResetModifiedFlag handles POST /api/datasets/{id}/reset-modified
+// This resets the modified flag to false for a dataset
+func (h *DatasetHandler) ResetModifiedFlag(w http.ResponseWriter, r *http.Request) {
+        vars := mux.Vars(r)
+        idStr, exists := vars["id"]
+        if !exists {
+                response.BadRequest(w, "Dataset ID is required")
+                return
+        }
+
+        id, err := strconv.Atoi(idStr)
+        if err != nil {
+                response.BadRequest(w, "Invalid dataset ID")
+                return
+        }
+
+        // Check if dataset exists
+        _, err = h.datasetRepo.GetByID(id)
+        if err != nil {
+                if err.Error() == "dataset not found" {
+                        response.NotFound(w, "Dataset not found")
+                        return
+                }
+                log.Printf("Error checking dataset %d: %v", id, err)
+                response.InternalError(w, "Failed to check dataset")
+                return
+        }
+
+        // Reset the modified flag
+        err = h.datasetRepo.ResetModifiedFlag(id)
+        if err != nil {
+                log.Printf("Error resetting modified flag for dataset %d: %v", id, err)
+                response.InternalError(w, "Failed to reset modified flag")
+                return
+        }
+
+        response.Success(w, map[string]interface{}{
+                "id": id,
+                "modified": false,
+        }, "Modified flag reset successfully")
+}
