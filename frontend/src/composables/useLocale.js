@@ -23,6 +23,8 @@ const UI_TRANSLATIONS = {
     // Pin Mode
     pinModeActive: 'Click on map to set location',
     pinModeHint: '(Right-click or Esc to cancel)',
+    pickLocationFromMap: 'Pick location from map',
+    clickMapToSetLocation: 'Click on map to set location (Right-click or Esc to cancel)',
     
     // Header Navigation
     map: 'Map',
@@ -334,6 +336,8 @@ const UI_TRANSLATIONS = {
     // Pin Mode
     pinModeActive: 'Нажмите на карту для выбора местоположения',
     pinModeHint: '(Правый клик или Esc для отмены)',
+    pickLocationFromMap: 'Выбрать местоположение на карте',
+    clickMapToSetLocation: 'Нажмите на карту для выбора (Правый клик или Esc для отмены)',
     
     // Header Navigation
     map: 'Карта',

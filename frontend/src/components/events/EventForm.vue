@@ -149,7 +149,7 @@
             class="pin-button"
             :class="{ active: pinMode }"
             @click="$emit('toggle-pin')"
-            :title="pinMode ? 'Click on map to set location (Right-click or Esc to cancel)' : 'Pick location from map'"
+            :title="pinMode ? t('clickMapToSetLocation') : t('pickLocationFromMap')"
           >
             📍
           </button>
@@ -291,6 +291,7 @@
 <script>
 import { ref, computed, watch, onMounted } from 'vue'
 import { useTags } from '@/composables/useTags.js'
+import { useLocale } from '@/composables/useLocale.js'
 import { getAvailableLensTypes } from '@/utils/event-utils.js'
 import apiService from '@/services/api.js'
 
@@ -325,6 +326,7 @@ export default {
   emits: ['submit', 'cancel', 'delete', 'toggle-pin'],
   setup(props, { emit }) {
     const { allTags, loadTags } = useTags()
+    const { t } = useLocale()
     
     const activeLocaleTab = ref('en')
     const datasets = ref([])
@@ -571,6 +573,7 @@ export default {
     }
     
     return {
+      t,
       activeLocaleTab,
       formData,
       datasets,
