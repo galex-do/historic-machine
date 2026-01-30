@@ -46,6 +46,7 @@ func (m *MetricsCollector) collect() {
         m.collectDatasetCount()
         m.collectTemplateCount()
         m.collectSessionCounts()
+        m.collectSessionDurations()
 }
 
 func (m *MetricsCollector) safeCount(query string, args ...interface{}) float64 {
@@ -96,4 +97,50 @@ func (m *MetricsCollector) collectSessionCounts() {
                 SELECT COUNT(*) FROM anonymous_sessions 
                 WHERE last_seen_at > $1
         `, activeWindow))
+}
+
+func (m *MetricsCollector) collectSessionDurations() {
+        // Only observe sessions that became inactive recently (last 5-10 minutes, no recent heartbeat)
+        // This avoids double-counting sessions on every collection cycle
+        inactiveWindow := time.Now().Add(-10 * time.Minute)
+        activeWindow := time.Now().Add(-5 * time.Minute)
+
+        // Anonymous sessions that ended (no heartbeat in 5 min, but had activity in last 10 min)
+        rows, err := m.db.Query(`
+                SELECT EXTRACT(EPOCH FROM (last_seen_at - created_at)) / 60 as duration_minutes
+                FROM anonymous_sessions
+                WHERE last_seen_at IS NOT NULL
+                AND last_seen_at < $1
+                AND last_seen_at > $2
+        `, activeWindow, inactiveWindow)
+        if err != nil {
+                return
+        }
+        defer rows.Close()
+
+        for rows.Next() {
+                var duration float64
+                if err := rows.Scan(&duration); err == nil && duration > 0 {
+                        metrics.SessionDurationMinutes.WithLabelValues("anonymous").Observe(duration)
+                }
+        }
+
+        // Authenticated sessions that ended recently
+        authRows, err := m.db.Query(`
+                SELECT EXTRACT(EPOCH FROM (COALESCE(ended_at, last_seen_at) - created_at)) / 60 as duration_minutes
+                FROM user_sessions
+                WHERE ended_at IS NOT NULL
+                AND ended_at > $1
+        `, inactiveWindow)
+        if err != nil {
+                return
+        }
+        defer authRows.Close()
+
+        for authRows.Next() {
+                var duration float64
+                if err := authRows.Scan(&duration); err == nil && duration > 0 {
+                        metrics.SessionDurationMinutes.WithLabelValues("authenticated").Observe(duration)
+                }
+        }
 }
