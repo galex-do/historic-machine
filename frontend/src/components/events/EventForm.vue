@@ -113,7 +113,7 @@
         </div>
       </div>
       
-      <div class="form-row">
+      <div class="form-row coordinates-row">
         <div class="form-group">
           <label for="event-latitude">Latitude *</label>
           <input 
@@ -141,6 +141,18 @@
             class="form-input"
             placeholder="e.g., -0.1278"
           />
+        </div>
+        <div class="form-group pin-button-group">
+          <label>&nbsp;</label>
+          <button 
+            type="button"
+            class="pin-button"
+            :class="{ active: pinMode }"
+            @click="$emit('toggle-pin')"
+            :title="pinMode ? 'Click on map to set location (Right-click or Esc to cancel)' : 'Pick location from map'"
+          >
+            📍
+          </button>
         </div>
       </div>
       
@@ -304,9 +316,13 @@ export default {
     error: {
       type: String,
       default: null
+    },
+    pinMode: {
+      type: Boolean,
+      default: false
     }
   },
-  emits: ['submit', 'cancel', 'delete'],
+  emits: ['submit', 'cancel', 'delete', 'toggle-pin'],
   setup(props, { emit }) {
     const { allTags, loadTags } = useTags()
     
@@ -410,13 +426,13 @@ export default {
     }, { immediate: true })
     
     watch(() => props.initialLatitude, (lat) => {
-      if (lat !== null && !props.event) {
+      if (lat !== null) {
         formData.value.latitude = lat
       }
     })
     
     watch(() => props.initialLongitude, (lng) => {
-      if (lng !== null && !props.event) {
+      if (lng !== null) {
         formData.value.longitude = lng
       }
     })
@@ -626,6 +642,45 @@ export default {
 
 .form-row .form-group {
   flex: 1;
+}
+
+.coordinates-row {
+  align-items: flex-end;
+}
+
+.pin-button-group {
+  flex: 0 0 auto !important;
+  min-width: auto;
+}
+
+.pin-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  background: #f9fafb;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.2s;
+}
+
+.pin-button:hover {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.pin-button.active {
+  border-color: #f59e0b;
+  background: #fef3c7;
+  animation: pin-pulse 1s ease-in-out infinite;
+}
+
+@keyframes pin-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
 }
 
 .form-group {

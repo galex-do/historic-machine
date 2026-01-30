@@ -20,6 +20,10 @@ const UI_TRANSLATIONS = {
     years: 'years',
     apply: 'Apply',
     
+    // Pin Mode
+    pinModeActive: 'Click on map to set location',
+    pinModeHint: '(Right-click or Esc to cancel)',
+    
     // Header Navigation
     map: 'Map',
     admin: 'Admin area',
@@ -326,6 +330,10 @@ const UI_TRANSLATIONS = {
     loading: 'Загрузка',
     years: 'лет',
     apply: 'Применить',
+    
+    // Pin Mode
+    pinModeActive: 'Нажмите на карту для выбора местоположения',
+    pinModeHint: '(Правый клик или Esc для отмены)',
     
     // Header Navigation
     map: 'Карта',

@@ -9,6 +9,14 @@
       </div>
     </transition>
     
+    <!-- Pin Mode Indicator -->
+    <transition name="fade">
+      <div v-if="pin_mode" class="pin-mode-indicator">
+        📍 {{ t('pinModeActive') || 'Click on map to set location' }}
+        <span class="pin-mode-hint">{{ t('pinModeHint') || '(Right-click or Esc to cancel)' }}</span>
+      </div>
+    </transition>
+    
     <!-- Event Creation Modal (only show if user can create events) -->
     <div v-if="show_event_modal && canCreateEvents" class="modal-overlay" @click="close_modal">
       <div class="modal-content event-form-modal" @click.stop>
@@ -22,9 +30,11 @@
           :initial-longitude="new_event.longitude"
           :loading="form_loading"
           :error="form_error"
+          :pin-mode="pin_mode"
           @submit="handle_form_submit"
           @cancel="close_modal"
           @delete="delete_event"
+          @toggle-pin="toggle_pin_mode"
         />
       </div>
     </div>
@@ -226,6 +236,7 @@ export default {
       preserve_map_view: false, // Preserve current view after event edit/create/delete
       form_loading: false, // Track form submission loading state
       form_error: null, // Track form error message
+      pin_mode: false, // Track if user is picking location from map
       new_event: {
         name: '',
         description: '',
@@ -442,6 +453,16 @@ export default {
     },
     
     handle_map_click(event) {
+      const { lat, lng } = event.latlng
+      
+      // If in pin mode, update form coordinates and exit pin mode
+      if (this.pin_mode) {
+        this.new_event.latitude = lat
+        this.new_event.longitude = lng
+        this.exit_pin_mode()
+        return
+      }
+      
       // Check if user can create events
       if (!this.canCreateEvents) {
         return
@@ -453,8 +474,6 @@ export default {
         this.map.closePopup()
         return
       }
-
-      const { lat, lng } = event.latlng
       
       // Set coordinates for new event
       this.new_event.latitude = lat
@@ -476,6 +495,48 @@ export default {
       
       // Show modal
       this.show_event_modal = true
+    },
+    
+    toggle_pin_mode() {
+      if (this.pin_mode) {
+        this.exit_pin_mode()
+      } else {
+        this.enter_pin_mode()
+      }
+    },
+    
+    enter_pin_mode() {
+      this.pin_mode = true
+      // Change cursor to crosshair
+      if (this.map) {
+        this.map.getContainer().style.cursor = 'crosshair'
+      }
+      // Add right-click handler to exit
+      if (this.map) {
+        this.map.on('contextmenu', this.exit_pin_mode)
+      }
+      // Add escape key handler
+      document.addEventListener('keydown', this.handle_pin_mode_keydown)
+    },
+    
+    exit_pin_mode() {
+      this.pin_mode = false
+      // Restore cursor
+      if (this.map) {
+        this.map.getContainer().style.cursor = ''
+      }
+      // Remove right-click handler
+      if (this.map) {
+        this.map.off('contextmenu', this.exit_pin_mode)
+      }
+      // Remove escape key handler
+      document.removeEventListener('keydown', this.handle_pin_mode_keydown)
+    },
+    
+    handle_pin_mode_keydown(event) {
+      if (event.key === 'Escape') {
+        this.exit_pin_mode()
+      }
     },
 
     // Get current map bounds
@@ -1114,6 +1175,11 @@ export default {
       this.editing_event = null
       this.form_loading = false
       this.form_error = null
+      
+      // Exit pin mode if active
+      if (this.pin_mode) {
+        this.exit_pin_mode()
+      }
       
       // Reset form coordinates
       this.new_event = {
@@ -2186,6 +2252,38 @@ export default {
   pointer-events: none;
   max-width: 80%;
   text-align: center;
+}
+
+/* Pin Mode Indicator */
+.pin-mode-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(245, 158, 11, 0.95);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  pointer-events: none;
+  text-align: center;
+  animation: pin-indicator-pulse 1.5s ease-in-out infinite;
+}
+
+.pin-mode-hint {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: normal;
+  opacity: 0.9;
+  margin-top: 0.25rem;
+}
+
+@keyframes pin-indicator-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
 }
 
 /* Fade Transition */
