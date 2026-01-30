@@ -431,13 +431,13 @@ export default {
       if (lat !== null) {
         formData.value.latitude = lat
       }
-    })
+    }, { immediate: true })
     
     watch(() => props.initialLongitude, (lng) => {
       if (lng !== null) {
         formData.value.longitude = lng
       }
-    })
+    }, { immediate: true })
     
     const fetchDatasets = async () => {
       try {
