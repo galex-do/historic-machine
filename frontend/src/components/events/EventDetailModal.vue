@@ -434,6 +434,7 @@ export default {
   border-top: 1px solid #e2e8f0;
   display: flex;
   justify-content: flex-end;
+  gap: 0.75rem;
 }
 
 .focus_btn {
