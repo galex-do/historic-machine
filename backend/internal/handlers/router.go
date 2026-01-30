@@ -8,6 +8,7 @@ import (
         "net/http"
 
         "github.com/gorilla/mux"
+        "github.com/prometheus/client_golang/prometheus/promhttp"
 )
 
 // Router holds all the route handlers
@@ -41,6 +42,12 @@ func (router *Router) SetupRoutes() http.Handler {
         // Add CORS middleware
         r.Use(middleware.CORS())
         
+        // Add Prometheus middleware for HTTP metrics
+        r.Use(middleware.Prometheus)
+        
+        // Prometheus metrics endpoint (no auth required)
+        r.Handle("/metrics", promhttp.Handler()).Methods("GET")
+        
         // API routes
         api := r.PathPrefix("/api").Subrouter()
         
@@ -56,9 +63,6 @@ func (router *Router) SetupRoutes() http.Handler {
         
         // Anonymous session tracking (no auth required)
         api.HandleFunc("/session/anonymous-heartbeat", router.authHandler.AnonymousSessionHeartbeat).Methods("POST", "OPTIONS")
-        
-        // Admin routes
-        api.HandleFunc("/admin/stats", router.authHandler.RequireAccessLevel(models.AccessLevelSuper)(router.authHandler.GetSessionStats)).Methods("GET", "OPTIONS")
         
         // Event routes (public read, auth required for create/update/delete)
         api.HandleFunc("/events", router.authHandler.OptionalAuthMiddleware(router.eventHandler.GetAllEvents)).Methods("GET", "OPTIONS")

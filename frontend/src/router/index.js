@@ -8,7 +8,6 @@ const AdminEvents = () => import('@/views/AdminEvents.vue')
 const AdminTags = () => import('@/views/AdminTags.vue')
 const AdminTemplates = () => import('@/views/AdminTemplates.vue')
 const AdminUsers = () => import('@/views/AdminUsers.vue')
-const AdminStats = () => import('@/views/AdminStats.vue')
 
 const routes = [
   {
@@ -43,12 +42,6 @@ const routes = [
     path: '/admin/users',
     name: 'AdminUsers',
     component: AdminUsers,
-    meta: { requiresAdmin: true, requiresSuper: true }
-  },
-  {
-    path: '/admin/stats',
-    name: 'AdminStats',
-    component: AdminStats,
     meta: { requiresAdmin: true, requiresSuper: true }
   },
   {

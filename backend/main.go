@@ -45,16 +45,16 @@ func main() {
         authService := services.NewAuthService(userRepo, jwtSecret)
         log.Println("Services initialized successfully")
 
-        // Initialize peak stats service
-        peakStatsService := services.NewPeakStatsService(userRepo, log.New(os.Stdout, "[PeakStats] ", log.LstdFlags))
+        // Initialize metrics collector service
+        metricsCollector := services.NewMetricsCollector(db.DB, log.New(os.Stdout, "[Metrics] ", log.LstdFlags))
         
-        // Start peak stats tracking in background
+        // Start metrics collection in background
         ctx, cancel := context.WithCancel(context.Background())
         var wg sync.WaitGroup
         wg.Add(1)
         go func() {
                 defer wg.Done()
-                peakStatsService.Start(ctx)
+                metricsCollector.Start(ctx)
         }()
 
         // Initialize router with all handlers

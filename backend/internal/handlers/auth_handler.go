@@ -7,6 +7,7 @@ import (
 
         "historical-events-backend/internal/models"
         "historical-events-backend/internal/services"
+        "historical-events-backend/pkg/metrics"
 )
 
 // AuthHandler handles authentication-related HTTP requests
@@ -42,10 +43,12 @@ func (h *AuthHandler) Login(w http.ResponseWriter, r *http.Request) {
 
         response, err := h.authService.AuthenticateUser(&loginReq)
         if err != nil {
+                metrics.LoginAttemptsTotal.WithLabelValues("failure").Inc()
                 http.Error(w, "Invalid credentials", http.StatusUnauthorized)
                 return
         }
 
+        metrics.LoginAttemptsTotal.WithLabelValues("success").Inc()
         w.Header().Set("Content-Type", "application/json")
         json.NewEncoder(w).Encode(response)
 }
@@ -448,23 +451,6 @@ func (h *AuthHandler) SessionHeartbeat(w http.ResponseWriter, r *http.Request) {
         }
 
         w.WriteHeader(http.StatusNoContent)
-}
-
-// GetSessionStats retrieves session statistics (super users only)
-func (h *AuthHandler) GetSessionStats(w http.ResponseWriter, r *http.Request) {
-        if r.Method != http.MethodGet {
-                http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
-                return
-        }
-
-        stats, err := h.authService.GetSessionStats()
-        if err != nil {
-                http.Error(w, "Failed to retrieve session stats", http.StatusInternalServerError)
-                return
-        }
-
-        w.Header().Set("Content-Type", "application/json")
-        json.NewEncoder(w).Encode(stats)
 }
 
 // AnonymousSessionHeartbeat creates or updates an anonymous session (no auth required)

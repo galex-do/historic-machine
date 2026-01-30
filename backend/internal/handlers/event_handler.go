@@ -5,6 +5,7 @@ import (
         "fmt"
         "historical-events-backend/internal/database/repositories"
         "historical-events-backend/internal/models"
+        "historical-events-backend/pkg/metrics"
         "historical-events-backend/pkg/response"
         "log"
         "math/rand"
@@ -199,6 +200,9 @@ func (h *EventHandler) CreateEvent(w http.ResponseWriter, r *http.Request) {
         // Populate legacy fields based on locale for consistent response
         createdEvent.PopulateLegacyFields(locale)
         
+        // Increment Prometheus metrics
+        metrics.EventsCreated.Inc()
+        
         response.Created(w, createdEvent, "Event created successfully")
 }
 
@@ -270,6 +274,9 @@ func (h *EventHandler) UpdateEvent(w http.ResponseWriter, r *http.Request) {
         // Populate legacy fields based on locale for consistent response
         updatedEvent.PopulateLegacyFields(locale)
         
+        // Increment Prometheus metrics
+        metrics.EventsUpdated.Inc()
+        
         response.Success(w, updatedEvent)
 }
 
@@ -316,6 +323,9 @@ func (h *EventHandler) DeleteEvent(w http.ResponseWriter, r *http.Request) {
                         log.Printf("Warning: failed to mark dataset as modified: %v", err)
                 }
         }
+        
+        // Increment Prometheus metrics
+        metrics.EventsDeleted.Inc()
         
         response.Success(w, map[string]string{"message": "Event deleted successfully"})
 }
