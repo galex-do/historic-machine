@@ -10,6 +10,7 @@ type EventDataset struct {
         EventCount   int       `json:"event_count"`
         UploadedBy   int       `json:"uploaded_by"`
         UploadedByUsername string `json:"uploaded_by_username,omitempty"`
+        Modified     bool      `json:"modified"`
         CreatedAt    time.Time `json:"created_at"`
         UpdatedAt    time.Time `json:"updated_at"`
 }

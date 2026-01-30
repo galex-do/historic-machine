@@ -19,7 +19,7 @@ func NewDatasetRepository(db *sql.DB) *DatasetRepository {
 func (r *DatasetRepository) GetAll() ([]models.EventDataset, error) {
         query := `
                 SELECT d.id, d.filename, d.description, d.event_count, d.uploaded_by, 
-                       d.created_at, d.updated_at, u.username
+                       d.modified, d.created_at, d.updated_at, u.username
                 FROM event_datasets d
                 LEFT JOIN users u ON d.uploaded_by = u.id
                 ORDER BY d.created_at DESC`
@@ -36,9 +36,10 @@ func (r *DatasetRepository) GetAll() ([]models.EventDataset, error) {
                 var dataset models.EventDataset
                 var username sql.NullString
                 var uploadedBy sql.NullInt32
+                var modified sql.NullBool
                 
                 err := rows.Scan(&dataset.ID, &dataset.Filename, &dataset.Description, 
-                        &dataset.EventCount, &uploadedBy, &dataset.CreatedAt, &dataset.UpdatedAt, &username)
+                        &dataset.EventCount, &uploadedBy, &modified, &dataset.CreatedAt, &dataset.UpdatedAt, &username)
                 if err != nil {
                         return nil, fmt.Errorf("error scanning dataset: %w", err)
                 }
@@ -48,6 +49,10 @@ func (r *DatasetRepository) GetAll() ([]models.EventDataset, error) {
                         dataset.UploadedBy = int(uploadedBy.Int32)
                 } else {
                         dataset.UploadedBy = 0 // Default value for unknown user
+                }
+                
+                if modified.Valid {
+                        dataset.Modified = modified.Bool
                 }
                 
                 if username.Valid {
@@ -89,14 +94,15 @@ func (r *DatasetRepository) Create(dataset *models.EventDataset) (*models.EventD
 // GetByID retrieves a dataset by ID
 func (r *DatasetRepository) GetByID(id int) (*models.EventDataset, error) {
         query := `
-                SELECT id, filename, description, event_count, uploaded_by, created_at, updated_at
+                SELECT id, filename, description, event_count, uploaded_by, modified, created_at, updated_at
                 FROM event_datasets 
                 WHERE id = $1`
         
         var dataset models.EventDataset
         var uploadedBy sql.NullInt32
+        var modified sql.NullBool
         err := r.db.QueryRow(query, id).Scan(&dataset.ID, &dataset.Filename, 
-                &dataset.Description, &dataset.EventCount, &uploadedBy, 
+                &dataset.Description, &dataset.EventCount, &uploadedBy, &modified,
                 &dataset.CreatedAt, &dataset.UpdatedAt)
         if err != nil {
                 if err == sql.ErrNoRows {
@@ -110,6 +116,10 @@ func (r *DatasetRepository) GetByID(id int) (*models.EventDataset, error) {
                 dataset.UploadedBy = int(uploadedBy.Int32)
         } else {
                 dataset.UploadedBy = 0 // Default value for unknown user
+        }
+        
+        if modified.Valid {
+                dataset.Modified = modified.Bool
         }
         
         return &dataset, nil
@@ -151,6 +161,30 @@ func (r *DatasetRepository) UpdateEventCount(id int, count int) error {
         _, err := r.db.Exec(query, count, time.Now(), id)
         if err != nil {
                 return fmt.Errorf("failed to update dataset event count: %w", err)
+        }
+        
+        return nil
+}
+
+// MarkAsModified sets the modified flag to true for a dataset
+func (r *DatasetRepository) MarkAsModified(id int) error {
+        query := `UPDATE event_datasets SET modified = TRUE, updated_at = $1 WHERE id = $2`
+        
+        _, err := r.db.Exec(query, time.Now(), id)
+        if err != nil {
+                return fmt.Errorf("failed to mark dataset as modified: %w", err)
+        }
+        
+        return nil
+}
+
+// ResetModifiedFlag sets the modified flag to false for a dataset
+func (r *DatasetRepository) ResetModifiedFlag(id int) error {
+        query := `UPDATE event_datasets SET modified = FALSE, updated_at = $1 WHERE id = $2`
+        
+        _, err := r.db.Exec(query, time.Now(), id)
+        if err != nil {
+                return fmt.Errorf("failed to reset dataset modified flag: %w", err)
         }
         
         return nil
