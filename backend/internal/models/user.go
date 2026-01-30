@@ -48,46 +48,6 @@ type AnonymousSession struct {
         EndedAt    *time.Time `json:"ended_at,omitempty"`
 }
 
-// HourlyVisitorStat represents visitor count for a specific hour
-type HourlyVisitorStat struct {
-        Hour     time.Time `json:"hour"`
-        Visitors int       `json:"visitors"`
-}
-
-// DailyVisitorStat represents visitor count for a specific day
-type DailyVisitorStat struct {
-        Day      time.Time `json:"day"`
-        Visitors int       `json:"visitors"`
-}
-
-// SessionStats represents session statistics for the admin dashboard
-type SessionStats struct {
-        // Authenticated user stats
-        ActiveUsers    int     `json:"active_users"`    // Authenticated users active in last 5 minutes
-        TotalSessions  int     `json:"total_sessions"`  // Total authenticated sessions in database
-        ActiveSessions int     `json:"active_sessions"` // Currently active authenticated sessions
-        AvgDuration    float64 `json:"avg_duration"`    // Average authenticated session duration in minutes
-        
-        // Anonymous user stats
-        AnonymousActiveUsers    int     `json:"anonymous_active_users"`    // Anonymous users active in last 5 minutes
-        AnonymousTotalSessions  int     `json:"anonymous_total_sessions"`  // Total anonymous sessions in database
-        AnonymousActiveSessions int     `json:"anonymous_active_sessions"` // Currently active anonymous sessions
-        AnonymousAvgDuration    float64 `json:"anonymous_avg_duration"`    // Average anonymous session duration in minutes
-        AnonymousTotalTime      float64 `json:"anonymous_total_time"`      // Total time of all anonymous sessions in minutes
-        
-        // Combined stats
-        TotalActiveUsers int `json:"total_active_users"` // Total active users (authenticated + anonymous)
-        
-        // Peak usage stats
-        PeakConcurrentSessions int `json:"peak_concurrent_sessions"` // Maximum concurrent anonymous sessions ever recorded
-        
-        // Hourly visitor stats (last 24 hours)
-        HourlyVisitors []HourlyVisitorStat `json:"hourly_visitors"`
-        
-        // Daily visitor stats (last 30 days)
-        DailyVisitors []DailyVisitorStat `json:"daily_visitors"`
-}
-
 // CreateUserRequest represents the request payload for creating a user
 type CreateUserRequest struct {
         Username    string      `json:"username" validate:"required,min=3,max=50"`
