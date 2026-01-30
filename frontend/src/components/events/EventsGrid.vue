@@ -107,11 +107,11 @@
     <TimelineModal
       :is-open="timelineModalOpen"
       :events="events"
+      :preserve-scroll="isBackNavigation"
       @close="timelineModalOpen = false"
       @focus-event="$emit('focus-event', $event)"
       @tag-clicked="$emit('tag-clicked', $event)"
       @show-detail="handleTimelineShowDetail"
-      ref="timelineModal"
     />
 
     <!-- Event Detail Modal -->
@@ -193,6 +193,7 @@ export default {
       eventDetailModalOpen: false,
       selectedDetailEvent: {},
       navigationSource: null,
+      isBackNavigation: false,
       STORAGE_KEY,
       scrollThrottleTimer: null,
       scrollThrottleDelay: 150 // ms between page changes
@@ -283,10 +284,7 @@ export default {
       this.tagFilterVisible = !this.tagFilterVisible
     },
     openTimeline() {
-      // Reset saved scroll position for fresh open
-      if (this.$refs.timelineModal) {
-        this.$refs.timelineModal.resetScrollPosition?.()
-      }
+      this.isBackNavigation = false
       this.timelineModalOpen = true
     },
     openEventDetail(event, source = null) {
@@ -309,8 +307,8 @@ export default {
     },
     handleBack() {
       if (this.navigationSource === 'timeline') {
+        this.isBackNavigation = true
         this.timelineModalOpen = true
-        // Scroll position is auto-restored via savedScrollPosition in TimelineModal
       } else if (this.navigationSource === 'location') {
         this.$emit('back-to-location')
       }

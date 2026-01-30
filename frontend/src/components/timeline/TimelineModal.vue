@@ -140,6 +140,10 @@ export default {
     events: {
       type: Array,
       default: () => []
+    },
+    preserveScroll: {
+      type: Boolean,
+      default: false
     }
   },
   emits: ['close', 'focus-event', 'tag-clicked', 'show-detail'],
@@ -304,18 +308,6 @@ export default {
       closeModal()
     }
 
-    const restoreScrollPosition = () => {
-      if (scrollContainer.value && savedScrollPosition.value > 0) {
-        scrollContainer.value.scrollTop = savedScrollPosition.value
-      }
-    }
-
-    const resetScrollPosition = () => {
-      savedScrollPosition.value = 0
-    }
-
-    // Expose for parent to call
-    defineExpose({ restoreScrollPosition, resetScrollPosition })
 
     const handleEscape = (event) => {
       if (event.key === 'Escape' && props.isOpen) {
@@ -330,12 +322,15 @@ export default {
         visibleCount.value = BATCH_SIZE
         
         nextTick(() => {
-          // Only reset scroll if we don't have a saved position (fresh open)
-          if (scrollContainer.value && savedScrollPosition.value === 0) {
-            scrollContainer.value.scrollTop = 0
-          } else if (scrollContainer.value && savedScrollPosition.value > 0) {
-            // Restore saved position (back navigation)
-            scrollContainer.value.scrollTop = savedScrollPosition.value
+          if (scrollContainer.value) {
+            if (props.preserveScroll && savedScrollPosition.value > 0) {
+              // Restore saved position (back navigation)
+              scrollContainer.value.scrollTop = savedScrollPosition.value
+            } else {
+              // Fresh open - reset to top
+              scrollContainer.value.scrollTop = 0
+              savedScrollPosition.value = 0
+            }
           }
         })
       } else {
