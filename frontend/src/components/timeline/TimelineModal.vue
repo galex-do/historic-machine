@@ -298,12 +298,14 @@ export default {
     }
 
     const savedScrollPosition = ref(0)
+    const savedVisibleCount = ref(0)
 
     const handleShowDetail = (event) => {
-      // Save scroll position before closing
+      // Save scroll position and loaded count before closing
       if (scrollContainer.value) {
         savedScrollPosition.value = scrollContainer.value.scrollTop
       }
+      savedVisibleCount.value = visibleCount.value
       emit('show-detail', event)
       closeModal()
     }
@@ -319,7 +321,14 @@ export default {
       if (newValue) {
         previouslyFocusedElement.value = document.activeElement
         document.addEventListener('keydown', handleEscape)
-        visibleCount.value = BATCH_SIZE
+        
+        if (props.preserveScroll && savedVisibleCount.value > 0) {
+          // Back navigation - restore loaded count first
+          visibleCount.value = savedVisibleCount.value
+        } else {
+          // Fresh open
+          visibleCount.value = BATCH_SIZE
+        }
         
         nextTick(() => {
           if (scrollContainer.value) {
@@ -330,6 +339,7 @@ export default {
               // Fresh open - reset to top
               scrollContainer.value.scrollTop = 0
               savedScrollPosition.value = 0
+              savedVisibleCount.value = 0
             }
           }
         })
