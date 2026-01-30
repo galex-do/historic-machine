@@ -183,6 +183,13 @@ func (h *EventHandler) CreateEvent(w http.ResponseWriter, r *http.Request) {
                 return
         }
         
+        // Mark dataset as modified if event has a dataset
+        if createdEvent.DatasetID != nil && *createdEvent.DatasetID > 0 {
+                if err := h.datasetRepo.MarkAsModified(*createdEvent.DatasetID); err != nil {
+                        log.Printf("Warning: failed to mark dataset as modified: %v", err)
+                }
+        }
+        
         // Get locale parameter for response (default to "en")
         locale := r.URL.Query().Get("locale")
         if locale == "" {
@@ -247,6 +254,13 @@ func (h *EventHandler) UpdateEvent(w http.ResponseWriter, r *http.Request) {
                 return
         }
         
+        // Mark dataset as modified if event has a dataset
+        if updatedEvent.DatasetID != nil && *updatedEvent.DatasetID > 0 {
+                if err := h.datasetRepo.MarkAsModified(*updatedEvent.DatasetID); err != nil {
+                        log.Printf("Warning: failed to mark dataset as modified: %v", err)
+                }
+        }
+        
         // Get locale parameter for response (default to "en")
         locale := r.URL.Query().Get("locale")
         if locale == "" {
@@ -270,6 +284,21 @@ func (h *EventHandler) DeleteEvent(w http.ResponseWriter, r *http.Request) {
                 return
         }
         
+        // Get the event first to find its dataset
+        event, err := h.eventRepo.GetByID(id)
+        if err != nil {
+                log.Printf("Error getting event for delete: %v", err)
+                if strings.Contains(err.Error(), "not found") {
+                        response.NotFound(w, "Event not found")
+                        return
+                }
+                response.InternalError(w, "Failed to get event")
+                return
+        }
+        
+        // Store dataset ID before deleting
+        datasetID := event.DatasetID
+        
         err = h.eventRepo.Delete(id)
         if err != nil {
                 log.Printf("Error deleting event: %v", err)
@@ -279,6 +308,13 @@ func (h *EventHandler) DeleteEvent(w http.ResponseWriter, r *http.Request) {
                 }
                 response.InternalError(w, "Failed to delete event")
                 return
+        }
+        
+        // Mark dataset as modified if event had a dataset
+        if datasetID != nil && *datasetID > 0 {
+                if err := h.datasetRepo.MarkAsModified(*datasetID); err != nil {
+                        log.Printf("Warning: failed to mark dataset as modified: %v", err)
+                }
         }
         
         response.Success(w, map[string]string{"message": "Event deleted successfully"})
