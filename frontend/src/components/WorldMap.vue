@@ -915,6 +915,15 @@ export default {
           
           // Add click handler to clusters to show event info modal
           this.marker_cluster_group.on('clusterclick', (cluster) => {
+            // If in pin mode, use cluster location for coordinates
+            if (this.pin_mode) {
+              const clusterLatLng = cluster.layer.getLatLng()
+              this.new_event.latitude = clusterLatLng.lat
+              this.new_event.longitude = clusterLatLng.lng
+              this.exit_pin_mode_and_show_modal()
+              return
+            }
+            
             // Get all markers in the cluster
             const markers = cluster.layer.getAllChildMarkers()
             
@@ -970,6 +979,15 @@ export default {
             
             // Use click event instead of popup to avoid coordinate corruption
             marker.on('click', () => {
+              // If in pin mode, use marker location for coordinates ("sticky" pin)
+              if (this.pin_mode) {
+                const markerLatLng = marker.getLatLng()
+                this.new_event.latitude = markerLatLng.lat
+                this.new_event.longitude = markerLatLng.lng
+                this.exit_pin_mode_and_show_modal()
+                return
+              }
+              
               this.show_events_info(eventGroup.events)
             })
             
