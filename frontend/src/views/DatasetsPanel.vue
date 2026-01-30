@@ -103,9 +103,10 @@
                 </div>
               </td>
             </tr>
-            <tr v-for="dataset in datasets" :key="dataset.id" class="dataset-row">
+            <tr v-for="dataset in datasets" :key="dataset.id" class="dataset-row" :class="{ 'modified': dataset.modified }">
               <td class="dataset-filename">
                 <div class="filename-cell">
+                  <span v-if="dataset.modified" class="modified-icon" :title="t('datasetModified')">⚠️</span>
                   <span class="filename">{{ dataset.filename }}</span>
                 </div>
               </td>
@@ -122,6 +123,15 @@
                 {{ formatDate(dataset.created_at) }}
               </td>
               <td class="dataset-actions">
+                <button 
+                  v-if="dataset.modified"
+                  @click="resetModifiedFlag(dataset)"
+                  class="reset-button"
+                  :title="t('resetModifiedTitle')"
+                  :disabled="localLoading"
+                >
+                  ✓
+                </button>
                 <button 
                   @click="exportDataset(dataset)"
                   class="export-button"
@@ -438,6 +448,29 @@ export default {
       })
     }
 
+    const resetModifiedFlag = async (dataset) => {
+      localLoading.value = true
+      localError.value = null
+      
+      try {
+        await apiService.resetDatasetModified(dataset.id)
+        
+        // Update local state
+        const idx = datasets.value.findIndex(d => d.id === dataset.id)
+        if (idx !== -1) {
+          datasets.value[idx].modified = false
+        }
+        
+        console.log('Modified flag reset for dataset:', dataset.filename)
+        
+      } catch (err) {
+        console.error('Error resetting modified flag:', err)
+        localError.value = err.message || t('failedToResetModified')
+      } finally {
+        localLoading.value = false
+      }
+    }
+
     const openCreateModal = () => {
       newDataset.value = {
         filename: '',
@@ -520,7 +553,8 @@ export default {
       newDataset,
       openCreateModal,
       closeCreateModal,
-      createEmptyDataset
+      createEmptyDataset,
+      resetModifiedFlag
     }
   }
 }
@@ -871,6 +905,46 @@ export default {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+}
+
+.dataset-row.modified {
+  background: #fefce8;
+}
+
+.dataset-row.modified:hover {
+  background: #fef9c3;
+}
+
+.modified-icon {
+  margin-right: 0.5rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.reset-button {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #16a34a;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.reset-button:hover:not(:disabled) {
+  background: #dcfce7;
+  border-color: #86efac;
+}
+
+.reset-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .export-button {

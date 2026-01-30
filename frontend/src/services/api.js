@@ -274,6 +274,12 @@ class ApiService {
     })
   }
 
+  async resetDatasetModified(id) {
+    return this.makeRequest(`/datasets/${id}/reset-modified`, {
+      method: 'POST',
+    })
+  }
+
   // User management API
   async getUsers() {
     return this.makeRequest('/users')

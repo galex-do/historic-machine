@@ -304,6 +304,9 @@ const UI_TRANSLATIONS = {
     // Dataset Action Tooltips
     exportDatasetTitle: 'Export dataset:',
     deleteDatasetTitle: 'Delete dataset:',
+    resetModifiedTitle: 'Mark as exported (clear modified flag)',
+    datasetModified: 'Dataset has been modified since last export',
+    failedToResetModified: 'Failed to reset modified flag',
     unknown: 'Unknown'
   },
   ru: {
@@ -608,6 +611,9 @@ const UI_TRANSLATIONS = {
     // Dataset Action Tooltips
     exportDatasetTitle: 'Экспортировать датасет:',
     deleteDatasetTitle: 'Удалить датасет:',
+    resetModifiedTitle: 'Отметить как экспортированный (сбросить флаг изменений)',
+    datasetModified: 'Датасет был изменён с момента последнего экспорта',
+    failedToResetModified: 'Не удалось сбросить флаг изменений',
     unknown: 'Неизвестно'
   }
 }
