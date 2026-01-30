@@ -47,7 +47,7 @@ A comprehensive web application for mapping historical events on an interactive 
 - **Tag Management**: CRUD for tags, with cross-page navigation to filter events by tag.
 - **Template Management**: Admin interface for CRUD operations on date templates and template groups. Features dual modal system, BC/AD date handling with chronological sorting, and full localization (English/Russian). Template groups prevent deletion when containing templates.
 - **User Management**: Admin interface for managing user accounts and access levels (Guest, User, Editor, Admin, Super).
-- **Dataset Management**: Import and creation of localized event datasets.
+- **Dataset Management**: Import and creation of localized event datasets. Includes modification tracking - datasets are automatically marked as modified when associated events are created, updated, or deleted. Admin panel shows warning icon for modified datasets with reset button to clear the flag after export.
 - **Authentication**: Role-based access control, session persistence.
 
 ### System Design Choices
