@@ -455,11 +455,11 @@ export default {
     handle_map_click(event) {
       const { lat, lng } = event.latlng
       
-      // If in pin mode, update form coordinates and exit pin mode
+      // If in pin mode, update form coordinates, exit pin mode and show modal
       if (this.pin_mode) {
         this.new_event.latitude = lat
         this.new_event.longitude = lng
-        this.exit_pin_mode()
+        this.exit_pin_mode_and_show_modal()
         return
       }
       
@@ -507,13 +507,15 @@ export default {
     
     enter_pin_mode() {
       this.pin_mode = true
+      // Hide modal while picking location (but keep editing state)
+      this.show_event_modal = false
       // Change cursor to crosshair
       if (this.map) {
         this.map.getContainer().style.cursor = 'crosshair'
       }
       // Add right-click handler to exit
       if (this.map) {
-        this.map.on('contextmenu', this.exit_pin_mode)
+        this.map.on('contextmenu', this.exit_pin_mode_and_show_modal)
       }
       // Add escape key handler
       document.addEventListener('keydown', this.handle_pin_mode_keydown)
@@ -527,15 +529,21 @@ export default {
       }
       // Remove right-click handler
       if (this.map) {
-        this.map.off('contextmenu', this.exit_pin_mode)
+        this.map.off('contextmenu', this.exit_pin_mode_and_show_modal)
       }
       // Remove escape key handler
       document.removeEventListener('keydown', this.handle_pin_mode_keydown)
     },
     
+    exit_pin_mode_and_show_modal() {
+      this.exit_pin_mode()
+      // Show modal again after exiting pin mode
+      this.show_event_modal = true
+    },
+    
     handle_pin_mode_keydown(event) {
       if (event.key === 'Escape') {
-        this.exit_pin_mode()
+        this.exit_pin_mode_and_show_modal()
       }
     },
 
