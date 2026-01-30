@@ -1,56 +1,64 @@
 {
-  "description": "Comprehensive dataset of Ptolemaic Egypt (Ptolemaic Dynasty), from foundation to fall (323 BC - 30 BC)",
+  "description": "Dataset imported with 69 events",
   "events": [
     {
       "date": "01.01.0323",
-      "description": "Following Alexander the Great's death in Babylon, his generals divide his empire; Ptolemy I Soter, a trusted companion and general, seizes Egypt and claims Alexander's body, bringing it to Memphis",
-      "description_ru": "После смерти Александра Великого в Вавилоне его полководцы делят империю; Птолемей I Сотер, доверенный соратник и полководец, захватывает Египет и забирает тело Александра, доставляя его в Мемфис",
+      "description": "After Alexander the Great's death in Babylon, his generals divide the empire; Ptolemy I Soter, a trusted companion and general, takes control of Egypt.",
+      "description_ru": "После смерти Александра Великого в Вавилоне его полководцы делят империю; Птолемей I Сотер, доверенный соратник и полководец, берет под свой контроль Египет и Киренаику (Западную Ливию)",
       "era": "BC",
-      "latitude": 29.846,
-      "longitude": 31.254,
+      "latitude": 29.850278,
+      "longitude": 31.250833,
       "name": "Ptolemy I Seizes Egypt",
       "name_ru": "Птолемей I захватывает Египет",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_I_Soter",
-      "tags": ["Ptolemaic", "Foundation", "Ptolemy I", "Wars of the Diadochi"],
+      "tags": [
+        "Greek",
+        "Egypt",
+        "Foundation",
+        "Wars of the Diadochi",
+        "Ptolemaic"
+      ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0322",
-      "description": "Alexander the Great's body arrives in Memphis; Ptolemy I hijacks the funeral cortege en route to Macedonia, bringing the body to Egypt to legitimize his rule as Alexander's true successor",
-      "description_ru": "Тело Александра Великого прибывает в Мемфис; Птолемей I перехватывает погребальную процессию на пути в Македонию, доставляя тело в Египет для легитимизации своей власти как истинного преемника Александра",
-      "era": "BC",
-      "latitude": 29.846,
-      "longitude": 31.254,
-      "name": "Alexander's Body Brought to Egypt",
-      "name_ru": "Тело Александра доставлено в Египет",
-      "source": "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great",
-      "tags": ["Ptolemaic", "Alexander", "Memphis", "Ptolemy I"],
-      "type": "historic"
     },
     {
       "date": "01.01.0320",
       "description": "Perdiccas, regent of Alexander's empire, invades Egypt to punish Ptolemy; his army fails to cross the Nile near Memphis, losing 2,000 soldiers to crocodiles and drowning. Perdiccas is murdered by his own officers",
       "description_ru": "Пердикка, регент империи Александра, вторгается в Египет, чтобы наказать Птолемея; его армия не может переправиться через Нил у Мемфиса, потеряв 2000 солдат от крокодилов и утопления. Пердикка убит собственными офицерами",
       "era": "BC",
-      "latitude": 29.846,
-      "longitude": 31.254,
+      "latitude": 29.8486,
+      "longitude": 31.2946,
       "name": "Ptolemy Defeats Perdiccas",
       "name_ru": "Птолемей побеждает Пердикку",
       "source": "https://en.wikipedia.org/wiki/Perdiccas",
-      "tags": ["Ptolemaic", "Wars of the Diadochi", "Battle", "Ptolemy I"],
+      "tags": [
+        "Ptolemaic",
+        "Egypt",
+        "Battle",
+        "Greek",
+        "Wars of the Diadochi",
+        "Assassination"
+      ],
       "type": "military"
     },
     {
       "date": "01.01.0312",
-      "description": "Battle of Gaza: Ptolemy I defeats Demetrius Poliorcetes, son of Antigonus, capturing 8,000 soldiers and vast treasures; this victory allows Seleucus to reclaim Babylon and found the Seleucid Empire",
-      "description_ru": "Битва при Газе: Птолемей I побеждает Деметрия Полиоркета, сына Антигона, захватив 8000 солдат и огромные сокровища; эта победа позволяет Селевку вернуть Вавилон и основать империю Селевкидов",
+      "description": "Ptolemy I and his ally Seleucus defeat Demetrius Poliorcetes, son of Antigonus, capturing thousands of soldiers and vast treasures; as a result of the defeat, Demetrius lost Syria and Palestine, and Seleucus was able to recapture Babylon.",
+      "description_ru": "Птолемей I и его союзник Селевк побеждает Деметрия Полиоркета, сына Антигона, захватив в плен тысячи солдат и огромные сокровища; в результате поражения Деметрий потерял Сирию и Палестину, а Селевк смог вернуть себе Вавилон",
       "era": "BC",
       "latitude": 31.503,
       "longitude": 34.467,
       "name": "Battle of Gaza",
       "name_ru": "Битва при Газе",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Gaza_(312_BC)",
-      "tags": ["Ptolemaic", "Battle", "Ptolemy I", "Wars of the Diadochi", "Victory"],
+      "tags": [
+        "Seleucid",
+        "Ptolemaic",
+        "Wars of the Diadochi",
+        "Battle",
+        "Palestine",
+        "Syria",
+        "Greek"
+      ],
       "type": "military"
     },
     {
@@ -59,11 +67,18 @@
       "description_ru": "Птолемей I отражает масштабное морское вторжение Антигона в Египет; используя оборонительные позиции в дельте Нила и благоприятную погоду, он уничтожает большую часть флота вторжения, обеспечивая независимость Египта",
       "era": "BC",
       "latitude": 31.45,
-      "longitude": 31.0,
+      "longitude": 31,
       "name": "Ptolemy Repels Antigonus's Invasion",
       "name_ru": "Птолемей отражает вторжение Антигона",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_I_Soter",
-      "tags": ["Ptolemaic", "Wars of the Diadochi", "Victory", "Ptolemy I", "Naval"],
+      "tags": [
+        "Egypt",
+        "Wars of the Diadochi",
+        "Ptolemaic",
+        "Naval",
+        "Defense",
+        "Greek"
+      ],
       "type": "military"
     },
     {
@@ -71,64 +86,96 @@
       "description": "Ptolemy I formally assumes the title of Pharaoh and King (Basileus), following other successors who have declared themselves kings; he takes the epithet 'Soter' (Savior) for defending Rhodes against Demetrius",
       "description_ru": "Птолемей I официально принимает титул фараона и царя (Базилевс), следуя за другими диадохами, объявившими себя царями; он принимает прозвище 'Сотер' (Спаситель) за защиту Родоса от Деметрия",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Ptolemy I Becomes Pharaoh",
       "name_ru": "Птолемей I становится фараоном",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_I_Soter",
-      "tags": ["Ptolemaic", "Dynasty", "Ptolemy I", "Pharaoh"],
+      "tags": [
+        "Pharaoh",
+        "Greek",
+        "Dynasty",
+        "Egypt",
+        "Ptolemaic"
+      ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0300",
-      "description": "Foundation of the Library of Alexandria begins under Ptolemy I; advised by Demetrius of Phalerum, the king creates an institution that will become the greatest repository of knowledge in the ancient world",
-      "description_ru": "Начинается основание Александрийской библиотеки при Птолемее I; по совету Деметрия Фалерского царь создаёт учреждение, которое станет величайшим хранилищем знаний древнего мира",
-      "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
-      "name": "Foundation of the Library of Alexandria",
-      "name_ru": "Основание Александрийской библиотеки",
-      "source": "https://en.wikipedia.org/wiki/Library_of_Alexandria",
-      "tags": ["Ptolemaic", "Library", "Alexandria", "Culture", "Ptolemy I", "Science"],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0300",
-      "description": "The Mouseion (Museum) of Alexandria is established as a research institution; scholars receive royal patronage, free meals, and accommodation to pursue knowledge in mathematics, astronomy, medicine, and literature",
-      "description_ru": "Мусейон (Музей) Александрии основан как исследовательское учреждение; учёные получают царское покровительство, бесплатное питание и жильё для занятий математикой, астрономией, медициной и литературой",
-      "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
-      "name": "Foundation of the Mouseion",
-      "name_ru": "Основание Мусейона",
-      "source": "https://en.wikipedia.org/wiki/Musaeum",
-      "tags": ["Ptolemaic", "Mouseion", "Alexandria", "Science", "Culture"],
-      "type": "cultural"
     },
     {
       "date": "01.01.0300",
       "description": "Alexander's body is moved from Memphis to Alexandria and placed in a magnificent mausoleum called the Soma; the tomb becomes a pilgrimage site visited by Roman emperors for centuries",
       "description_ru": "Тело Александра перемещено из Мемфиса в Александрию и помещено в великолепный мавзолей, называемый Сома; гробница становится местом паломничества, которое посещают римские императоры на протяжении веков",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.2,
+      "longitude": 29.9,
       "name": "Alexander's Tomb Moved to Alexandria",
-      "name_ru": "Гробница Александра перенесена в Александрию",
+      "name_ru": "Мавзолей Александра",
       "source": "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great",
-      "tags": ["Ptolemaic", "Alexander", "Alexandria", "Tomb"],
+      "tags": [
+        "Greek",
+        "Ptolemaic",
+        "Tomb",
+        "Alexander the Great",
+        "Egypt"
+      ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0300",
+      "description": "The Musaeum of Alexandria was founded as the first academy of sciences; its main goal was to collect, systematize, and preserve all known ancient knowledge (from poetry to medicine). Scholars at the Musaeum received royal patronage, free food, and housing to study mathematics, astronomy, medicine, and literature.",
+      "description_ru": "Мусейон Александрии основан как первая академия наук; главной задачей Мусейона было собрать, систематизировать и сохранить всё известное античное знание (от поэзии до медицины). Учёные в Мусейоне получают царское покровительство, бесплатное питание и жильё для занятий математикой, астрономией, медициной и литературой ",
+      "era": "BC",
+      "latitude": 31.2,
+      "longitude": 29.9,
+      "name": "Foundation of the Mouseion",
+      "name_ru": "Основание Мусейона",
+      "source": "https://en.wikipedia.org/wiki/Musaeum",
+      "tags": [
+        "Science",
+        "Ptolemaic",
+        "Greek",
+        "Culture",
+        "Egypt"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0300",
+      "description": "Foundation of the Library of Alexandria begins under Ptolemy I; advised by Demetrius of Phalerum, the king creates an institution that will become the greatest repository of knowledge in the ancient world",
+      "description_ru": "Начинается строительство Александрийской библиотеки; по совету Деметрия Фалерского Птолемей создаёт учреждение, которое станет величайшим хранилищем знаний древнего мира",
+      "era": "BC",
+      "latitude": 31.2,
+      "longitude": 29.9,
+      "name": "Foundation of the Library of Alexandria",
+      "name_ru": "Основание Александрийской библиотеки",
+      "source": "https://en.wikipedia.org/wiki/Library_of_Alexandria",
+      "tags": [
+        "Library",
+        "Ancient Wonders",
+        "Egypt",
+        "Greek",
+        "Science",
+        "Ptolemaic",
+        "Culture"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0297",
       "description": "Ptolemy I introduces the cult of Serapis, a synthetic Greco-Egyptian deity combining Osiris and Apis with Greek god attributes; the Serapeum in Alexandria becomes one of the ancient world's greatest temples",
       "description_ru": "Птолемей I вводит культ Сераписа, синкретического греко-египетского божества, объединяющего Осириса и Аписа с атрибутами греческих богов; Серапеум в Александрии становится одним из величайших храмов древнего мира",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.1819,
+      "longitude": 29.8969,
       "name": "Introduction of the Cult of Serapis",
       "name_ru": "Введение культа Сераписа",
       "source": "https://en.wikipedia.org/wiki/Serapis",
-      "tags": ["Ptolemaic", "Religion", "Serapis", "Alexandria", "Ptolemy I"],
+      "tags": [
+        "Religious",
+        "Greek",
+        "Egypt",
+        "Ptolemaic",
+        "Syncretism"
+      ],
       "type": "religious"
     },
     {
@@ -139,9 +186,15 @@
       "latitude": 31.214,
       "longitude": 29.886,
       "name": "Construction of Pharos Lighthouse Begins",
-      "name_ru": "Начало строительства Александрийского маяка",
+      "name_ru": "Строительство Александрийского маяка",
       "source": "https://en.wikipedia.org/wiki/Lighthouse_of_Alexandria",
-      "tags": ["Ptolemaic", "Architecture", "Lighthouse", "Pharos", "Wonder"],
+      "tags": [
+        "Architecture",
+        "Egypt",
+        "Ptolemaic",
+        "Ancient Wonders",
+        "Greek"
+      ],
       "type": "cultural"
     },
     {
@@ -149,25 +202,56 @@
       "description": "Ptolemy I Soter dies after a 40-year reign; he established stable government, developed Alexandria into a world capital, and created institutions of learning that shaped Western civilization",
       "description_ru": "Птолемей I Сотер умирает после 40-летнего правления; он установил стабильное правительство, превратил Александрию в мировую столицу и создал образовательные учреждения, которые сформировали западную цивилизацию",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Death of Ptolemy I Soter",
       "name_ru": "Смерть Птолемея I Сотера",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_I_Soter",
-      "tags": ["Ptolemaic", "Death", "Ptolemy I", "Dynasty"],
+      "tags": [
+        "Greek",
+        "Egypt",
+        "Ptolemaic",
+        "Dynasty",
+        "Death"
+      ],
       "type": "political"
     },
     {
       "date": "01.01.0283",
       "description": "Ptolemy II Philadelphus becomes sole ruler of Egypt; his reign marks the cultural and scientific zenith of Ptolemaic civilization, with massive expansion of the Library and patronage of scholars",
-      "description_ru": "Птолемей II Филадельф становится единоличным правителем Египта; его правление отмечает культурный и научный расцвет птолемеевской цивилизации с масштабным расширением Библиотеки и покровительством учёным",
+      "description_ru": "Птолемей II Филадельф становится единоличным правителем Египта; его правление отмечает культурный и научный расцвет птолемеевской цивилизации",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Reign of Ptolemy II Philadelphus",
-      "name_ru": "Правление Птолемея II Филадельфа",
+      "name_ru": "Птолемей II - правитель Египта",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_II_Philadelphus",
-      "tags": ["Ptolemaic", "Dynasty", "Ptolemy II", "King"],
+      "tags": [
+        "Ptolemaic",
+        "Greek",
+        "Egypt",
+        "King",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0280",
+      "description": "Ptolemy II marries his full sister Arsinoe II, establishing the practice of sibling marriage among Ptolemaic royalty; they adopt the epithet 'Philadelphoi' (sibling-loving), and Arsinoe becomes co-ruler",
+      "description_ru": "Птолемей II женится на своей родной сестре Арсиное II, устанавливая практику братско-сестринского брака среди птолемеевской знати; они принимают прозвище 'Филадельфы' (любящие сестру/брата), и Арсиноя становится соправительницей",
+      "era": "BC",
+      "latitude": 31.206667,
+      "longitude": 29.900278,
+      "name": "Ptolemy II Marries Arsinoe II",
+      "name_ru": "Птолемей II женится на Арсиное II",
+      "source": "https://en.wikipedia.org/wiki/Arsinoe_II",
+      "tags": [
+        "Ptolemaic",
+        "Greek",
+        "Egypt",
+        "Dynasty",
+        "Marriage"
+      ],
       "type": "political"
     },
     {
@@ -180,33 +264,33 @@
       "name": "Completion of Pharos Lighthouse",
       "name_ru": "Завершение Александрийского маяка",
       "source": "https://en.wikipedia.org/wiki/Lighthouse_of_Alexandria",
-      "tags": ["Ptolemaic", "Architecture", "Lighthouse", "Pharos", "Wonder"],
+      "tags": [
+        "Architecture",
+        "Ptolemaic",
+        "Ancient Wonders",
+        "Greek",
+        "Egypt"
+      ],
       "type": "cultural"
-    },
-    {
-      "date": "01.01.0280",
-      "description": "Ptolemy II marries his full sister Arsinoe II, establishing the practice of sibling marriage among Ptolemaic royalty; they adopt the epithet 'Philadelphoi' (sibling-loving), and Arsinoe becomes co-ruler",
-      "description_ru": "Птолемей II женится на своей родной сестре Арсиное II, устанавливая практику братско-сестринского брака среди птолемеевской знати; они принимают прозвище 'Филадельфы' (любящие сестру/брата), и Арсиноя становится соправительницей",
-      "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
-      "name": "Ptolemy II Marries Arsinoe II",
-      "name_ru": "Птолемей II женится на Арсиное II",
-      "source": "https://en.wikipedia.org/wiki/Arsinoe_II",
-      "tags": ["Ptolemaic", "Marriage", "Dynasty", "Ptolemy II", "Arsinoe II"],
-      "type": "political"
     },
     {
       "date": "01.01.0275",
       "description": "The Septuagint translation begins; seventy-two Jewish scholars translate the Hebrew Torah into Greek at the request of Ptolemy II, creating the first major translation of religious scripture in history",
       "description_ru": "Начинается перевод Септуагинты; семьдесят два еврейских учёных переводят еврейскую Тору на греческий по просьбе Птолемея II, создавая первый крупный перевод религиозного писания в истории",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.2,
+      "longitude": 29.9,
       "name": "Beginning of the Septuagint Translation",
       "name_ru": "Начало перевода Септуагинты",
       "source": "https://en.wikipedia.org/wiki/Septuagint",
-      "tags": ["Ptolemaic", "Religion", "Jewish", "Translation", "Septuagint", "Ptolemy II"],
+      "tags": [
+        "Greek",
+        "Ptolemaic",
+        "Jewish",
+        "Translation",
+        "Religious",
+        "Egypt"
+      ],
       "type": "religious"
     },
     {
@@ -214,12 +298,18 @@
       "description": "Euclid publishes 'Elements' in Alexandria; this mathematical treatise becomes the most influential textbook in history, used for over 2,000 years and establishing the foundations of geometry",
       "description_ru": "Евклид публикует 'Начала' в Александрии; этот математический трактат становится самым влиятельным учебником в истории, используемым более 2000 лет и устанавливающим основы геометрии",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.2,
+      "longitude": 29.9,
       "name": "Euclid's Elements Published",
       "name_ru": "Опубликованы 'Начала' Евклида",
       "source": "https://en.wikipedia.org/wiki/Euclid%27s_Elements",
-      "tags": ["Ptolemaic", "Science", "Mathematics", "Euclid", "Alexandria"],
+      "tags": [
+        "Science",
+        "Greek",
+        "Egypt",
+        "Ptolemaic",
+        "Mathematics"
+      ],
       "type": "scientific"
     },
     {
@@ -227,12 +317,19 @@
       "description": "Death of Arsinoe II; she is deified and worshipped as a goddess throughout Egypt. Her cult becomes one of the most popular in the Ptolemaic kingdom, with temples built in her honor",
       "description_ru": "Смерть Арсинои II; она обожествлена и почитается как богиня по всему Египту. Её культ становится одним из самых популярных в Птолемеевском царстве, в её честь строятся храмы",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Death and Deification of Arsinoe II",
       "name_ru": "Смерть и обожествление Арсинои II",
       "source": "https://en.wikipedia.org/wiki/Arsinoe_II",
-      "tags": ["Ptolemaic", "Death", "Religion", "Arsinoe II", "Deification"],
+      "tags": [
+        "Religious",
+        "Greek",
+        "Egypt",
+        "Ptolemaic",
+        "Deification",
+        "Death"
+      ],
       "type": "religious"
     },
     {
@@ -245,33 +342,110 @@
       "name": "Ptolemaic Red Sea Trade Expeditions",
       "name_ru": "Птолемеевские торговые экспедиции в Красное море",
       "source": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom",
-      "tags": ["Ptolemaic", "Trade", "Africa", "Elephants", "Ptolemy II"],
+      "tags": [
+        "Ptolemaic",
+        "Trade",
+        "Africa",
+        "Elephants",
+        "Ptolemy II"
+      ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0260",
+      "description": "Herophilos and Erasistratus conduct pioneering anatomical research at Alexandria, performing the first systematic dissections of human bodies; they discover the nervous system, name the duodenum, and distinguish arteries from veins",
+      "description_ru": "Герофил и Эрасистрат проводят пионерские анатомические исследования в Александрии, выполняя первые систематические вскрытия человеческих тел; они открывают нервную систему, дают название двенадцатиперстной кишке, различают артерии и вены",
+      "era": "BC",
+      "latitude": 31.2,
+      "longitude": 29.9,
+      "name": "Alexandrian School of Anatomy",
+      "name_ru": "Александрийская школа анатомии",
+      "source": "https://en.wikipedia.org/wiki/Herophilos",
+      "tags": [
+        "Ptolemaic",
+        "Science",
+        "Medicine",
+        "Anatomy",
+        "Egypt",
+        "Greek"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.0250",
+      "description": "Ctesibius of Alexandria invents the water clock (clepsydra) with automatic regulation and the force pump; he is considered the father of pneumatics and his work influences mechanical engineering for centuries",
+      "description_ru": "Ктесибий Александрийский изобретает водяные часы (клепсидру) с автоматическим регулированием и нагнетательный насос; он считается отцом пневматики, и его работа влияет на машиностроение на протяжении веков",
+      "era": "BC",
+      "latitude": 31.2,
+      "longitude": 29.9,
+      "name": "Ctesibius's Mechanical Inventions",
+      "name_ru": "Механические изобретения Ктесибия",
+      "source": "https://en.wikipedia.org/wiki/Ctesibius",
+      "tags": [
+        "Ptolemaic",
+        "Science",
+        "Engineering",
+        "Innovation",
+        "Egypt",
+        "Greek"
+      ],
+      "type": "scientific"
     },
     {
       "date": "01.01.0246",
       "description": "Ptolemy III Euergetes becomes king; he will lead the most successful military campaign in Ptolemaic history, temporarily conquering vast Seleucid territories during the Third Syrian War",
-      "description_ru": "Птолемей III Эвергет становится царём; он проведёт самую успешную военную кампанию в птолемеевской истории, временно завоевав обширные селевкидские территории во время Третьей Сирийской войны",
+      "description_ru": "Птолемей III Эвергет, сын Птолемея II и Арсинои I, проведёт самую успешную военную кампанию в птолемеевской истории, временно завоевав обширные селевкидские территории во время Третьей Сирийской войны",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Reign of Ptolemy III Euergetes",
-      "name_ru": "Правление Птолемея III Эвергета",
+      "name_ru": "Птолемей III - правитель Египта",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_III_Euergetes",
-      "tags": ["Ptolemaic", "Dynasty", "Ptolemy III", "King"],
+      "tags": [
+        "Greek",
+        "Egypt",
+        "Dynasty",
+        "King",
+        "Ptolemaic"
+      ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0245",
+      "description": "Callimachus creates the Pinakes, the first systematic library catalog in history; this bibliography of the Library of Alexandria organizes works by author and subject, establishing principles still used today",
+      "description_ru": "Каллимах создаёт 'Пинаки', первый систематический библиотечный каталог в истории; эта библиография Александрийской библиотеки организует работы по автору и теме, устанавливая принципы, используемые по сей день",
+      "era": "BC",
+      "latitude": 31.2,
+      "longitude": 29.9,
+      "name": "Callimachus Creates First Library Catalog",
+      "name_ru": "Каллимах создаёт первый библиотечный каталог",
+      "source": "https://en.wikipedia.org/wiki/Pinakes",
+      "tags": [
+        "Ptolemaic",
+        "Library",
+        "Culture",
+        "Egypt",
+        "Greek"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0240",
       "description": "Eratosthenes of Cyrene becomes chief librarian of the Library of Alexandria; he will calculate the Earth's circumference with remarkable accuracy using shadows and geometry",
       "description_ru": "Эратосфен Киренский становится главным библиотекарем Александрийской библиотеки; он вычислит окружность Земли с замечательной точностью, используя тени и геометрию",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.2,
+      "longitude": 29.9,
       "name": "Eratosthenes Becomes Chief Librarian",
       "name_ru": "Эратосфен становится главным библиотекарем",
       "source": "https://en.wikipedia.org/wiki/Eratosthenes",
-      "tags": ["Ptolemaic", "Library", "Science", "Eratosthenes", "Alexandria"],
+      "tags": [
+        "Library",
+        "Ptolemaic",
+        "Science",
+        "Greek",
+        "Egypt"
+      ],
       "type": "scientific"
     },
     {
@@ -279,12 +453,19 @@
       "description": "Eratosthenes calculates Earth's circumference at approximately 40,000 km (actual: 40,075 km) by comparing shadow angles at Alexandria and Syene; this is one of the greatest scientific achievements of antiquity",
       "description_ru": "Эратосфен вычисляет окружность Земли примерно в 40 000 км (фактически: 40 075 км), сравнивая углы теней в Александрии и Сиене; это одно из величайших научных достижений античности",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.2,
+      "longitude": 29.9,
       "name": "Eratosthenes Measures Earth's Circumference",
       "name_ru": "Эратосфен измеряет окружность Земли",
       "source": "https://en.wikipedia.org/wiki/Eratosthenes",
-      "tags": ["Ptolemaic", "Science", "Geography", "Eratosthenes", "Mathematics"],
+      "tags": [
+        "Greek",
+        "Egypt",
+        "Mathematics",
+        "Geography",
+        "Science",
+        "Ptolemaic"
+      ],
       "type": "scientific"
     },
     {
@@ -295,22 +476,75 @@
       "latitude": 31.3,
       "longitude": 30.05,
       "name": "Canopus Decree - Calendar Reform",
-      "name_ru": "Канопский декрет - реформа календаря",
+      "name_ru": "Канопский декрет",
       "source": "https://en.wikipedia.org/wiki/Decree_of_Canopus",
-      "tags": ["Ptolemaic", "Science", "Calendar", "Ptolemy III", "Canopus"],
+      "tags": [
+        "Science",
+        "Ptolemaic",
+        "Calendar",
+        "Greek",
+        "Egypt"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.0237",
+      "description": "Construction begins on the Temple of Horus at Edfu, one of the best-preserved ancient Egyptian temples; it will take 180 years to complete and represents the height of Ptolemaic temple architecture",
+      "description_ru": "Начинается строительство Храма Хора в Эдфу, одного из наиболее хорошо сохранившихся древнеегипетских храмов",
+      "era": "BC",
+      "latitude": 24.978,
+      "longitude": 32.873,
+      "name": "Construction of Temple of Horus at Edfu Begins",
+      "name_ru": "Строительство Храма Хора в Эдфу",
+      "source": "https://en.wikipedia.org/wiki/Temple_of_Edfu",
+      "tags": [
+        "Greek",
+        "Egypt",
+        "Architecture",
+        "Temple",
+        "Building",
+        "Ptolemaic",
+        "Religious"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0230",
+      "description": "Apollonius of Perga writes 'Conics,' defining the terms ellipse, parabola, and hyperbola; this work, studied in Alexandria, becomes foundational for astronomy and later physics",
+      "description_ru": "Аполлоний Пергский пишет 'Конические сечения', определяя термины эллипс, парабола и гипербола; эта работа, изучаемая в Александрии, становится основополагающей для астрономии и более поздней физики",
+      "era": "BC",
+      "latitude": 31.2,
+      "longitude": 29.9,
+      "name": "Apollonius Writes Conics",
+      "name_ru": "Аполлоний пишет 'Конические сечения'",
+      "source": "https://en.wikipedia.org/wiki/Apollonius_of_Perga",
+      "tags": [
+        "Ptolemaic",
+        "Science",
+        "Mathematics",
+        "Astronomy",
+        "Greek",
+        "Egypt"
+      ],
       "type": "scientific"
     },
     {
       "date": "01.01.0222",
       "description": "Ptolemy IV Philopator becomes king; his reign sees military success against the Seleucids at Raphia, but also marks the beginning of dynastic decline with palace intrigues and native Egyptian unrest",
-      "description_ru": "Птолемей IV Филопатор становится царём; его правление отмечено военным успехом против Селевкидов при Рафии, но также знаменует начало династического упадка с дворцовыми интригами и волнениями коренных египтян",
+      "description_ru": "Птолемей IV Филопатор, сын Птолемея III и Береники Киренской, приходит к власти; его правление отмечено военным успехом против Селевкидов при Рафии, но также знаменует начало династического упадка с дворцовыми интригами и волнениями коренных египтян",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Reign of Ptolemy IV Philopator",
-      "name_ru": "Правление Птолемея IV Филопатора",
+      "name_ru": "Птолемей IV - правитель Египта",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_IV_Philopator",
-      "tags": ["Ptolemaic", "Dynasty", "Ptolemy IV", "King"],
+      "tags": [
+        "Greek",
+        "Egypt",
+        "Dynasty",
+        "King",
+        "Ptolemaic"
+      ],
       "type": "political"
     },
     {
@@ -323,7 +557,13 @@
       "name": "Battle of Raphia",
       "name_ru": "Битва при Рафии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Raphia",
-      "tags": ["Ptolemaic", "Battle", "Victory", "Ptolemy IV", "Seleucid"],
+      "tags": [
+        "Ptolemaic",
+        "Battle",
+        "Victory",
+        "Ptolemy IV",
+        "Seleucid"
+      ],
       "type": "military"
     },
     {
@@ -336,7 +576,11 @@
       "name": "Great Theban Revolt Begins",
       "name_ru": "Начало Великого Фиванского восстания",
       "source": "https://en.wikipedia.org/wiki/Great_Theban_Revolt",
-      "tags": ["Ptolemaic", "Rebellion", "Thebes", "Egyptian"],
+      "tags": [
+        "Rebellion",
+        "Ptolemaic",
+        "Egypt"
+      ],
       "type": "political"
     },
     {
@@ -344,13 +588,41 @@
       "description": "Ptolemy IV dies under mysterious circumstances; his six-year-old son Ptolemy V Epiphanes becomes king, with the empire governed by corrupt regents who mismanage affairs and lose territories",
       "description_ru": "Птолемей IV умирает при загадочных обстоятельствах; его шестилетний сын Птолемей V Эпифан становится царём, а империей управляют коррумпированные регенты, которые плохо ведут дела и теряют территории",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Ptolemy V Becomes Child-King",
       "name_ru": "Птолемей V становится царём-ребёнком",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_V_Epiphanes",
-      "tags": ["Ptolemaic", "Dynasty", "Ptolemy V", "King", "Crisis"],
+      "tags": [
+        "Ptolemaic",
+        "Dynasty",
+        "King",
+        "Crisis",
+        "Greek",
+        "Egypt"
+      ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0200",
+      "description": "The Library of Alexandria reaches its peak, containing an estimated 400,000 to 700,000 scrolls; it employs hundreds of scholars and includes works from across the known world, translated into Greek",
+      "description_ru": "Александрийская библиотека достигает расцвета, содержа по оценкам от 400 000 до 700 000 свитков; в ней работают сотни учёных, и она включает труды со всего известного мира, переведённые на греческий",
+      "era": "BC",
+      "latitude": 31.2,
+      "longitude": 29.9,
+      "name": "Library of Alexandria at Its Peak",
+      "name_ru": "Расцвет Александрийской библиотеки",
+      "source": "https://en.wikipedia.org/wiki/Library_of_Alexandria",
+      "tags": [
+        "Ptolemaic",
+        "Library",
+        "Culture",
+        "Science",
+        "Golden Age",
+        "Greek",
+        "Egypt"
+      ],
+      "type": "cultural"
     },
     {
       "date": "27.03.0196",
@@ -362,7 +634,13 @@
       "name": "Rosetta Stone Carved",
       "name_ru": "Создание Розеттского камня",
       "source": "https://en.wikipedia.org/wiki/Rosetta_Stone",
-      "tags": ["Ptolemaic", "Culture", "Rosetta Stone", "Ptolemy V", "Hieroglyphics"],
+      "tags": [
+        "Ptolemaic",
+        "Culture",
+        "Rosetta Stone",
+        "Ptolemy V",
+        "Hieroglyphics"
+      ],
       "type": "cultural"
     },
     {
@@ -370,25 +648,38 @@
       "description": "Ptolemy V marries Cleopatra I, daughter of Antiochus III; this marriage ends the Fifth Syrian War but brings Seleucid influence into the Ptolemaic court that will persist for generations",
       "description_ru": "Птолемей V женится на Клеопатре I, дочери Антиоха III; этот брак завершает Пятую Сирийскую войну, но приносит селевкидское влияние в птолемеевский двор, которое сохранится на поколения",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Marriage of Ptolemy V and Cleopatra I",
       "name_ru": "Брак Птолемея V и Клеопатры I",
       "source": "https://en.wikipedia.org/wiki/Cleopatra_I_Syra",
-      "tags": ["Ptolemaic", "Seleucid", "Marriage", "Ptolemy V", "Cleopatra I"],
+      "tags": [
+        "Ptolemaic",
+        "Seleucid",
+        "Marriage",
+        "Greek",
+        "Egypt",
+        "Diplomacy"
+      ],
       "type": "political"
     },
     {
       "date": "01.01.0186",
       "description": "The Great Theban Revolt is finally suppressed by Ptolemaic forces; the last rebel pharaoh is captured and executed, but the revolt demonstrated the fragility of Greek rule over native Egyptians",
-      "description_ru": "Великое Фиванское восстание окончательно подавлено птолемеевскими войсками; последний фараон-повстанец захвачен и казнён, но восстание продемонстрировало хрупкость греческого правления над коренными египтянами",
+      "description_ru": "Великое Фиванское восстание окончательно подавлено птолемеевскими войсками; последний фараон-повстанец захвачен и казнён, но восстание показало хрупкость греческого правления над  египтянами",
       "era": "BC",
       "latitude": 25.719,
       "longitude": 32.654,
       "name": "End of the Great Theban Revolt",
       "name_ru": "Конец Великого Фиванского восстания",
       "source": "https://en.wikipedia.org/wiki/Great_Theban_Revolt",
-      "tags": ["Ptolemaic", "Rebellion", "Thebes", "Victory"],
+      "tags": [
+        "Rebellion",
+        "Ptolemaic",
+        "Egypt",
+        "Greek",
+        "Thebes"
+      ],
       "type": "military"
     },
     {
@@ -396,77 +687,119 @@
       "description": "Ptolemy V dies, possibly by poison; his wife Cleopatra I serves as regent for their young son Ptolemy VI, maintaining peace with the Seleucids and stable government",
       "description_ru": "Птолемей V умирает, возможно, от яда; его жена Клеопатра I становится регентом при их малолетнем сыне Птолемее VI, поддерживая мир с Селевкидами и стабильное правительство",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Death of Ptolemy V",
       "name_ru": "Смерть Птолемея V",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_V_Epiphanes",
-      "tags": ["Ptolemaic", "Death", "Ptolemy V"],
+      "tags": [
+        "Greek",
+        "Dynasty",
+        "Death",
+        "Ptolemaic",
+        "Seleucid",
+        "Egypt",
+        "Regency"
+      ],
       "type": "political"
     },
     {
-      "date": "01.01.0170",
-      "description": "Antiochus IV invades Egypt, captures Ptolemy VI, and proclaims himself protector of Egypt; Alexandria resists and crowns Ptolemy VIII as rival king, leading to the unprecedented intervention of Rome",
-      "description_ru": "Антиох IV вторгается в Египет, захватывает Птолемея VI и объявляет себя защитником Египта; Александрия сопротивляется и коронует Птолемея VIII как соперничающего царя, что приводит к беспрецедентному вмешательству Рима",
+      "date": "01.01.0180",
+      "description": "The cult of Isis spread throughout the Mediterranean from Egypt; temples to Isis were built in Greece, Rome, and throughout the Hellenistic world. Isis protects women, mothers, and sailors, offering her followers a hope of immortality and personal protection that is unusual among Greek gods.",
+      "description_ru": "Культ Исиды распространяется по всему Средиземноморью из Египта; храмы Исиды строятся в Греции, Риме и по всему эллинистическому миру. Исида защищает женщин, матерей и мореходов, предлагает своим последователям нетипичную для греческих богов надежду на бессмертие и личную защиту.",
       "era": "BC",
       "latitude": 31.2001,
       "longitude": 29.9187,
-      "name": "Antiochus IV Invades Egypt",
-      "name_ru": "Антиох IV вторгается в Египет",
-      "source": "https://en.wikipedia.org/wiki/Antiochus_IV_Epiphanes",
-      "tags": ["Ptolemaic", "Seleucid", "Invasion", "Crisis"],
-      "type": "military"
+      "name": "Spread of Isis Cult Throughout Mediterranean",
+      "name_ru": "Распространение культа Исиды по Средиземноморью",
+      "source": "https://en.wikipedia.org/wiki/Isis",
+      "tags": [
+        "Ptolemaic",
+        "Culture",
+        "Religious",
+        "Egypt",
+        "Greek",
+        "Syncretism",
+        "Mother of God"
+      ],
+      "type": "religious"
     },
     {
-      "date": "01.01.0168",
-      "description": "Day of Eleusis: Roman ambassador Gaius Popillius Laenas confronts Antiochus IV near Alexandria, drawing a circle in the sand and demanding he withdraw from Egypt before stepping out; Antiochus complies, marking Rome's dominance over the Hellenistic world",
-      "description_ru": "День Элевсина: римский посол Гай Попиллий Ленас противостоит Антиоху IV у Александрии, чертя круг на песке и требуя, чтобы тот покинул Египет, прежде чем выйти; Антиох подчиняется, что знаменует господство Рима над эллинистическим миром",
+      "date": "01.01.0150",
+      "description": "Hipparchus of Nicaea creates the first comprehensive star catalog at Alexandria, recording the positions of over 850 stars; he discovers the precession of equinoxes and develops trigonometry",
+      "description_ru": "Гиппарх Никейский создаёт первый всеобъемлющий звёздный каталог в Александрии, фиксируя положения более 850 звёзд; он открывает прецессию равноденствий и развивает тригонометрию",
       "era": "BC",
-      "latitude": 31.07,
-      "longitude": 29.95,
-      "name": "Day of Eleusis - Roman Ultimatum",
-      "name_ru": "День Элевсина - римский ультиматум",
-      "source": "https://en.wikipedia.org/wiki/Gaius_Popillius_Laenas",
-      "tags": ["Ptolemaic", "Roman", "Seleucid", "Diplomacy"],
-      "type": "political"
+      "latitude": 31.2,
+      "longitude": 29.9,
+      "name": "Hipparchus Creates Star Catalog",
+      "name_ru": "Звёздный каталог Гиппарха",
+      "source": "https://en.wikipedia.org/wiki/Hipparchus",
+      "tags": [
+        "Ptolemaic",
+        "Science",
+        "Astronomy",
+        "Mathematics",
+        "Greek",
+        "Egypt"
+      ],
+      "type": "scientific"
     },
     {
       "date": "01.01.0150",
       "description": "Aristarchus of Samos's heliocentric theory is preserved by Alexandrian scholars; though not widely accepted, this revolutionary concept that Earth orbits the Sun influences later astronomers",
-      "description_ru": "Гелиоцентрическая теория Аристарха Самосского сохраняется александрийскими учёными; хотя и не получившая широкого признания, эта революционная концепция о том, что Земля вращается вокруг Солнца, влияет на более поздних астрономов",
+      "description_ru": "Гелиоцентрическая теория Аристарха Самосского записана александрийскими учёными; хотя и не получившая широкого признания, эта революционная концепция о том, что Земля вращается вокруг Солнца, влияет на более поздних астрономов",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.2,
+      "longitude": 29.9,
       "name": "Heliocentric Theory Preserved in Alexandria",
-      "name_ru": "Гелиоцентрическая теория сохранена в Александрии",
+      "name_ru": "Первая теория гелиоцентризма",
       "source": "https://en.wikipedia.org/wiki/Aristarchus_of_Samos",
-      "tags": ["Ptolemaic", "Science", "Astronomy", "Alexandria"],
+      "tags": [
+        "Ptolemaic",
+        "Science",
+        "Astronomy",
+        "Greek",
+        "Egypt"
+      ],
       "type": "scientific"
     },
     {
       "date": "01.01.0145",
       "description": "Ptolemy VIII Physcon seizes sole power in Egypt, massacring his nephew Ptolemy VII and persecuting Alexandrian scholars; many flee to other Mediterranean cities, spreading Hellenistic culture",
-      "description_ru": "Птолемей VIII Фискон захватывает единоличную власть в Египте, убивая своего племянника Птолемея VII и преследуя александрийских учёных; многие бегут в другие средиземноморские города, распространяя эллинистическую культуру",
+      "description_ru": "Птолемей VIII Фискон убивает своего племянника Птолемея VII и преследует его главных сторонников - александрийских учёных; многие бегут в другие средиземноморские города, распространяя эллинистическую культуру и науку",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Ptolemy VIII's Purge of Alexandria",
       "name_ru": "Чистка Александрии Птолемеем VIII",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_VIII_Physcon",
-      "tags": ["Ptolemaic", "Dynasty", "Ptolemy VIII", "Persecution", "Crisis"],
+      "tags": [
+        "Ptolemaic",
+        "Dynasty",
+        "Crisis",
+        "Persecution",
+        "Greek",
+        "Egypt"
+      ],
       "type": "political"
     },
     {
       "date": "01.01.0116",
       "description": "Ptolemy VIII dies after a turbulent reign; his will divides the kingdom, beginning a pattern of succession crises and civil wars that will plague the dynasty for the next century",
-      "description_ru": "Птолемей VIII умирает после бурного правления; его завещание делит царство, начиная череду кризисов наследования и гражданских войн, которые будут терзать династию следующее столетие",
+      "description_ru": "Птолемей VIII умирает после бурного правления; его завещание дробит царство, начиная череду кризисов наследования и гражданских войн, которые будут терзать династию следующее столетие",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Death of Ptolemy VIII",
       "name_ru": "Смерть Птолемея VIII",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_VIII_Physcon",
-      "tags": ["Ptolemaic", "Death", "Ptolemy VIII", "Dynasty"],
+      "tags": [
+        "Ptolemaic",
+        "Death",
+        "Dynasty",
+        "Egypt",
+        "Greek"
+      ],
       "type": "political"
     },
     {
@@ -479,7 +812,33 @@
       "name": "Ptolemy IX Exiled to Cyprus",
       "name_ru": "Птолемей IX изгнан на Кипр",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_IX_Lathyros",
-      "tags": ["Ptolemaic", "Dynasty", "Cyprus", "Civil War"],
+      "tags": [
+        "Ptolemaic",
+        "Civil War",
+        "Exile",
+        "Cyprus",
+        "Dynasty",
+        "Greek"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "15.01.0080",
+      "description": "Ptolemy XII Auletes ('Flute-Player') becomes king; an illegitimate son, he spends his reign seeking Roman recognition while Egypt's power continues to decline amid debt and instability",
+      "description_ru": "Птолемей XII Авлет ('Флейтист') становится царём; незаконнорождённый сын, он проводит своё правление в поисках римского признания, в то время как могущество Египта продолжает угасать на фоне долгов и нестабильности",
+      "era": "BC",
+      "latitude": 31.206667,
+      "longitude": 29.900278,
+      "name": "Reign of Ptolemy XII Auletes",
+      "name_ru": "Правление Птолемея XII Авлета",
+      "source": "https://en.wikipedia.org/wiki/Ptolemy_XII_Auletes",
+      "tags": [
+        "Greek",
+        "Egypt",
+        "Dynasty",
+        "King",
+        "Ptolemaic"
+      ],
       "type": "political"
     },
     {
@@ -487,77 +846,160 @@
       "description": "Ptolemy XI murders his stepmother Cleopatra Berenice III just 19 days after their marriage; an Alexandrian mob lynches him in retaliation, demonstrating the people's power over even the Ptolemaic kings",
       "description_ru": "Птолемей XI убивает свою мачеху Клеопатру Беренику III всего через 19 дней после свадьбы; александрийская толпа линчует его в отместку, демонстрируя власть народа над даже птолемеевскими царями",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Murder of Cleopatra Berenice III and Lynching of Ptolemy XI",
-      "name_ru": "Убийство Клеопатры Береники III и линчевание Птолемея XI",
+      "name_ru": "Линчевание Птолемея XI",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_XI_Alexander_II",
-      "tags": ["Ptolemaic", "Murder", "Dynasty", "Crisis"],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0080",
-      "description": "Ptolemy XII Auletes ('Flute-Player') becomes king; an illegitimate son, he spends his reign seeking Roman recognition while Egypt's power continues to decline amid debt and instability",
-      "description_ru": "Птолемей XII Авлет ('Флейтист') становится царём; незаконнорождённый сын, он проводит своё правление в поисках римского признания, в то время как могущество Египта продолжает угасать на фоне долгов и нестабильности",
-      "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
-      "name": "Reign of Ptolemy XII Auletes",
-      "name_ru": "Правление Птолемея XII Авлета",
-      "source": "https://en.wikipedia.org/wiki/Ptolemy_XII_Auletes",
-      "tags": ["Ptolemaic", "Dynasty", "Ptolemy XII", "King"],
+      "tags": [
+        "Greek",
+        "Ptolemaic",
+        "Murder",
+        "Crisis",
+        "Dynasty",
+        "Egypt",
+        "Lynching"
+      ],
       "type": "political"
     },
     {
       "date": "01.01.0059",
       "description": "Ptolemy XII bribes Julius Caesar and Pompey with 6,000 talents (equivalent to Egypt's entire annual revenue) to secure Roman recognition; this massive debt will cripple Egypt for years",
-      "description_ru": "Птолемей XII подкупает Юлия Цезаря и Помпея 6000 талантов (эквивалент годового дохода Египта) для обеспечения римского признания; этот огромный долг будет разорять Египет годами",
+      "description_ru": "Птолемей XII подкупает Юлия Цезаря и Помпея 6000 талантов (эквивалент годового дохода Египта) для обеспечения римского признания; огромный долг будет разорять Египет годами",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Ptolemy XII Bribes Rome for Recognition",
-      "name_ru": "Птолемей XII подкупает Рим за признание",
+      "name_ru": "Птолемей XII подкупает Рим",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_XII_Auletes",
-      "tags": ["Ptolemaic", "Roman", "Ptolemy XII", "Corruption", "Debt"],
+      "tags": [
+        "Debt",
+        "Egypt",
+        "Ptolemaic",
+        "Pompey the Great",
+        "Julius Caesar",
+        "Greek",
+        "Roman",
+        "Bribe"
+      ],
       "type": "political"
     },
     {
       "date": "01.01.0058",
       "description": "Rome annexes Cyprus from Ptolemaic control; Ptolemy XII fails to protest, causing outrage in Alexandria. A popular revolt expels him from Egypt, and his daughter Berenice IV becomes queen",
-      "description_ru": "Рим аннексирует Кипр у птолемеевского контроля; Птолемей XII не протестует, вызывая возмущение в Александрии. Народное восстание изгоняет его из Египта, и его дочь Береника IV становится царицей",
+      "description_ru": "Рим забирает Кипр у Птолемеев; Птолемей XII молчит, вызывая возмущение в Александрии. Народное восстание изгоняет его из Египта, и его дочь Береника IV становится царицей",
       "era": "BC",
       "latitude": 35.17,
       "longitude": 33.36,
       "name": "Rome Annexes Cyprus",
       "name_ru": "Рим аннексирует Кипр",
       "source": "https://en.wikipedia.org/wiki/Roman_annexation_of_Cyprus",
-      "tags": ["Ptolemaic", "Roman", "Cyprus", "Annexation"],
+      "tags": [
+        "Annexation",
+        "Cyprus",
+        "Ptolemaic",
+        "Roman",
+        "Greek"
+      ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0057",
+      "description": "The Temple of Horus at Edfu is completed after 180 years of construction; its inscriptions preserve invaluable information about Egyptian religious practices and mythology",
+      "description_ru": "Храм Хора в Эдфу завершён после 180 лет строительства; его надписи сохраняют бесценную информацию о египетских религиозных практиках и мифах",
+      "era": "BC",
+      "latitude": 24.978,
+      "longitude": 32.873,
+      "name": "Temple of Horus at Edfu Completed",
+      "name_ru": "Достроен Храм Хора в Эдфу",
+      "source": "https://en.wikipedia.org/wiki/Temple_of_Edfu",
+      "tags": [
+        "Temple",
+        "Architecture",
+        "Ptolemaic",
+        "Religious",
+        "Building",
+        "Egypt",
+        "Greek"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0055",
       "description": "Ptolemy XII restored to throne by Roman forces under Aulus Gabinius; he executes his daughter Berenice IV and rules with Roman military support, making Egypt effectively a Roman client state",
-      "description_ru": "Птолемей XII восстановлен на троне римскими войсками под командованием Авла Габиния; он казнит свою дочь Беренику IV и правит при римской военной поддержке, делая Египет фактически римским государством-клиентом",
+      "description_ru": "Римляне возводят Птолемея XII обратно на трон; он казнит свою дочь Беренику IV и правит под патронажем Рима",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Ptolemy XII Restored by Roman Army",
-      "name_ru": "Птолемей XII восстановлен римской армией",
+      "name_ru": "Птолемей XII - наместник Рима",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_XII_Auletes",
-      "tags": ["Ptolemaic", "Roman", "Ptolemy XII", "Restoration"],
+      "tags": [
+        "Egypt",
+        "Vassalage",
+        "Roman",
+        "Ptolemaic",
+        "Greek"
+      ],
       "type": "political"
     },
     {
       "date": "01.03.0051",
       "description": "Ptolemy XII dies, leaving the throne to his 18-year-old daughter Cleopatra VII and her 10-year-old brother Ptolemy XIII as co-rulers; she will become the last and most famous Ptolemaic ruler",
-      "description_ru": "Птолемей XII умирает, оставляя трон своей 18-летней дочери Клеопатре VII и её 10-летнему брату Птолемею XIII как соправителям; она станет последней и самой знаменитой правительницей Птолемеев",
+      "description_ru": "Птолемей XII умирает от болезни, завещав трон своей 18-летней дочери Клеопатре VII и её 10-летнему брату Птолемею XIII как соправителям",
       "era": "BC",
       "latitude": 31.2001,
       "longitude": 29.9187,
       "name": "Cleopatra VII Becomes Queen",
-      "name_ru": "Клеопатра VII становится царицей",
+      "name_ru": "Клеопатра VII - царица Египта",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
-      "tags": ["Ptolemaic", "Dynasty", "Cleopatra VII", "Queen"],
+      "tags": [
+        "Dynasty",
+        "Greek",
+        "Succession",
+        "Ptolemaic",
+        "Cleopatra VII",
+        "Egypt"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.10.0048",
+      "description": "Julius Caesar arrives in Alexandria pursuing Pompey; Cleopatra VII famously smuggles herself into his presence rolled in a carpet or linen bag, winning his support against Ptolemy XIII",
+      "description_ru": "Юлий Цезарь прибывает в Александрию, преследуя Помпея; Клеопатра VII, по преданию, преодолевает охрану брата, будучи завернутой в ковёр или льняной мешок. Клеопатра стремится заручиться поддержкой Цезаря против брата.",
+      "era": "BC",
+      "latitude": 31.2001,
+      "longitude": 29.9187,
+      "name": "Cleopatra Meets Julius Caesar",
+      "name_ru": "Клеопатра встречает Юлия Цезаря",
+      "source": "https://en.wikipedia.org/wiki/Cleopatra",
+      "tags": [
+        "Roman",
+        "Cleopatra VII",
+        "Ptolemaic",
+        "Julius Caesar",
+        "Egypt"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "28.09.0048",
+      "description": "Pompey the Great, fleeing Julius Caesar after defeat at Pharsalus, arrives in Egypt seeking refuge; Ptolemy XIII's advisers murder him as he steps ashore to curry favor with Caesar",
+      "description_ru": "Помпей Великий, бежавший от Юлия Цезаря после поражения при Фарсале, прибывает в Египет в поисках убежища; советники Птолемея XIII предают и убивают его при высадке на берег, чтобы выслужиться перед Цезарем. По легенде, Цезарь, увидев голову своего бывшего друга и зятя, не обрадовался, а расплакался",
+      "era": "BC",
+      "latitude": 31.26,
+      "longitude": 32.3,
+      "name": "Murder of Pompey in Egypt",
+      "name_ru": "Убийство Помпея в Египте",
+      "source": "https://en.wikipedia.org/wiki/Pompey",
+      "tags": [
+        "Murder",
+        "Ptolemaic",
+        "Egypt",
+        "Roman",
+        "Julius Caesar",
+        "Pompey the Great"
+      ],
       "type": "political"
     },
     {
@@ -570,60 +1012,15 @@
       "name": "Cleopatra VII Expelled from Alexandria",
       "name_ru": "Клеопатра VII изгнана из Александрии",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
-      "tags": ["Ptolemaic", "Cleopatra VII", "Civil War", "Exile"],
+      "tags": [
+        "Exile",
+        "Civil War",
+        "Ptolemaic",
+        "Cleopatra VII",
+        "Egypt",
+        "Greek"
+      ],
       "type": "political"
-    },
-    {
-      "date": "28.09.0048",
-      "description": "Pompey the Great, fleeing Julius Caesar after defeat at Pharsalus, arrives in Egypt seeking refuge; Ptolemy XIII's advisers murder him as he steps ashore to curry favor with Caesar",
-      "description_ru": "Помпей Великий, бежавший от Юлия Цезаря после поражения при Фарсале, прибывает в Египет в поисках убежища; советники Птолемея XIII убивают его при высадке на берег, чтобы выслужиться перед Цезарем",
-      "era": "BC",
-      "latitude": 31.26,
-      "longitude": 32.3,
-      "name": "Murder of Pompey in Egypt",
-      "name_ru": "Убийство Помпея в Египте",
-      "source": "https://en.wikipedia.org/wiki/Pompey",
-      "tags": ["Ptolemaic", "Roman", "Pompey", "Murder"],
-      "type": "political"
-    },
-    {
-      "date": "01.10.0048",
-      "description": "Julius Caesar arrives in Alexandria pursuing Pompey; Cleopatra VII famously smuggles herself into his presence rolled in a carpet or linen bag, winning his support against Ptolemy XIII",
-      "description_ru": "Юлий Цезарь прибывает в Александрию, преследуя Помпея; Клеопатра VII, по преданию, проникает к нему, завернувшись в ковёр или льняной мешок, завоёвывая его поддержку против Птолемея XIII",
-      "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
-      "name": "Cleopatra Meets Julius Caesar",
-      "name_ru": "Клеопатра встречает Юлия Цезаря",
-      "source": "https://en.wikipedia.org/wiki/Cleopatra",
-      "tags": ["Ptolemaic", "Roman", "Cleopatra VII", "Caesar"],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0047",
-      "description": "Siege of Alexandria: Caesar is besieged in the royal palace by Egyptian forces; during the fighting, part of the great Library of Alexandria is accidentally burned, destroying thousands of scrolls",
-      "description_ru": "Осада Александрии: Цезарь осаждён в царском дворце египетскими войсками; во время боёв часть великой Александрийской библиотеки случайно сгорает, уничтожая тысячи свитков",
-      "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
-      "name": "Siege of Alexandria and Library Fire",
-      "name_ru": "Осада Александрии и пожар в Библиотеке",
-      "source": "https://en.wikipedia.org/wiki/Siege_of_Alexandria_(47_BC)",
-      "tags": ["Ptolemaic", "Roman", "Caesar", "Library", "Fire", "Siege"],
-      "type": "military"
-    },
-    {
-      "date": "15.01.0047",
-      "description": "Battle of the Nile: Caesar defeats Ptolemy XIII's forces; the young king drowns in the Nile while fleeing. Cleopatra VII becomes sole ruler of Egypt with Roman support",
-      "description_ru": "Битва на Ниле: Цезарь побеждает войска Птолемея XIII; юный царь тонет в Ниле при бегстве. Клеопатра VII становится единоличной правительницей Египта при римской поддержке",
-      "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
-      "name": "Battle of the Nile - Death of Ptolemy XIII",
-      "name_ru": "Битва на Ниле - гибель Птолемея XIII",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_the_Nile_(47_BC)",
-      "tags": ["Ptolemaic", "Roman", "Caesar", "Cleopatra VII", "Battle", "Death"],
-      "type": "military"
     },
     {
       "date": "23.06.0047",
@@ -635,59 +1032,135 @@
       "name": "Birth of Caesarion",
       "name_ru": "Рождение Цезариона",
       "source": "https://en.wikipedia.org/wiki/Caesarion",
-      "tags": ["Ptolemaic", "Dynasty", "Caesarion", "Cleopatra VII", "Caesar"],
+      "tags": [
+        "Roman",
+        "Ptolemaic",
+        "Cleopatra VII",
+        "Dynasty",
+        "Julius Caesar",
+        "Egypt"
+      ],
       "type": "political"
+    },
+    {
+      "date": "15.01.0047",
+      "description": "Battle of the Nile: Caesar defeats Ptolemy XIII's forces; the young king drowns in the Nile while fleeing. Cleopatra VII becomes sole ruler of Egypt with Roman support",
+      "description_ru": "Цезарь побеждает войска Птолемея XIII; юный царь тонет в Ниле при отступлении. Клеопатра VII становится единоличной правительницей Египта при римской поддержке",
+      "era": "BC",
+      "latitude": 31.2001,
+      "longitude": 29.9187,
+      "name": "Battle of the Nile - Death of Ptolemy XIII",
+      "name_ru": "Битва на Ниле",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_the_Nile_(47_BC)",
+      "tags": [
+        "Ptolemaic",
+        "Julius Caesar",
+        "Battle",
+        "Cleopatra VII",
+        "Death",
+        "Roman",
+        "Egypt"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0047",
+      "description": "Siege of Alexandria: Caesar is besieged in the royal palace by Egyptian forces; during the fighting, part of the great Library of Alexandria is accidentally burned, destroying thousands of scrolls",
+      "description_ru": "Цезарь осаждён в царском дворце египетскими войсками; во время боёв часть великой Александрийской библиотеки случайно сгорает, уничтожая тысячи свитков",
+      "era": "BC",
+      "latitude": 31.2001,
+      "longitude": 29.9187,
+      "name": "Siege of Alexandria and Library Fire",
+      "name_ru": "Осада Александрии египтянами",
+      "source": "https://en.wikipedia.org/wiki/Siege_of_Alexandria_(47_BC)",
+      "tags": [
+        "Siege",
+        "Ancient Wonders",
+        "Roman",
+        "Ptolemaic",
+        "Egypt",
+        "Julius Caesar",
+        "Library",
+        "Destruction"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0046",
       "description": "Cleopatra VII visits Rome as Caesar's guest, residing in his villa across the Tiber; she brings Caesarion, causing scandal among Romans and concerns about eastern monarchy influencing Rome",
-      "description_ru": "Клеопатра VII посещает Рим как гостья Цезаря, проживая в его вилле за Тибром; она привозит Цезариона, вызывая скандал среди римлян и опасения относительно влияния восточной монархии на Рим",
+      "description_ru": "Клеопатра VII переезжает с сыном в Рим как гостья Цезаря, проживая в его вилле за Тибром; это вызывает скандал среди римлян и опасения относительно влияния восточной монархии на Рим",
       "era": "BC",
-      "latitude": 41.90,
-      "longitude": 12.50,
+      "latitude": 41.9,
+      "longitude": 12.5,
       "name": "Cleopatra's Visit to Rome",
-      "name_ru": "Визит Клеопатры в Рим",
+      "name_ru": "Переезд Клеопатры VII в Рим",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
-      "tags": ["Ptolemaic", "Roman", "Cleopatra VII", "Caesar", "Diplomacy"],
+      "tags": [
+        "Diplomacy",
+        "Ptolemaic",
+        "Roman",
+        "Cleopatra VII",
+        "Julius Caesar"
+      ],
       "type": "political"
     },
     {
       "date": "15.03.0044",
       "description": "Julius Caesar is assassinated in Rome; Cleopatra VII flees back to Egypt with Caesarion, facing an uncertain future as Rome descends into civil war",
-      "description_ru": "Юлий Цезарь убит в Риме; Клеопатра VII бежит обратно в Египет с Цезарионом, сталкиваясь с неопределённым будущим, пока Рим погружается в гражданскую войну",
+      "description_ru": "Юлий Цезарь убит в Римском Сенате; Клеопатра VII покидает поместье и бежит обратно в Египет с Цезарионом",
       "era": "BC",
-      "latitude": 41.90,
-      "longitude": 12.50,
+      "latitude": 41.9,
+      "longitude": 12.5,
       "name": "Assassination of Julius Caesar",
       "name_ru": "Убийство Юлия Цезаря",
       "source": "https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar",
-      "tags": ["Roman", "Caesar", "Assassination", "Ptolemaic"],
+      "tags": [
+        "Crisis",
+        "Ptolemaic",
+        "Roman",
+        "Assassination",
+        "Senate",
+        "Julius Caesar"
+      ],
       "type": "political"
     },
     {
-      "date": "01.01.0041",
-      "description": "Cleopatra VII meets Mark Antony at Tarsus; arriving on a golden barge with purple sails and silver oars, dressed as Venus, she begins a political and romantic alliance that will shape the Mediterranean world",
-      "description_ru": "Клеопатра VII встречает Марка Антония в Тарсе; прибывая на золотой барже с пурпурными парусами и серебряными вёслами, одетая как Венера, она начинает политический и романтический союз, который изменит средиземноморский мир",
+      "date": "01.09.0041",
+      "description": "Mark Antony, as one of Rome's leaders, needed Egypt's support in his fight against Parthia. Cleopatra VII made a dramatic appearance before Mark Antony in Tarsus; arriving on a golden barge with purple sails and silver oars, dressed as Venus, she began a political and romantic alliance that would transform the Mediterranean world.",
+      "description_ru": "Марку Антонию, как одному из лидеров Рима, нужна поддержка Египта в борьбе с Парфией. Клеопатра VII театрально является к Марку Антонию в Тарс; прибывая на золотой барже с пурпурными парусами и серебряными вёслами, одетая как Венера. Она приглашает полководца посетить Александрию зимой, он соглашается, и так там и остается.",
       "era": "BC",
       "latitude": 36.92,
       "longitude": 34.89,
-      "name": "Cleopatra Meets Mark Antony at Tarsus",
-      "name_ru": "Клеопатра встречает Марка Антония в Тарсе",
+      "name": "Mark Antony summons Cleopatra to Tarsus",
+      "name_ru": "Марк Антоний вызывает Клеопатру в Тарс",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
-      "tags": ["Ptolemaic", "Roman", "Cleopatra VII", "Mark Antony"],
+      "tags": [
+        "Mark Antony",
+        "Egypt",
+        "Roman",
+        "Cleopatra VII",
+        "Ptolemaic"
+      ],
       "type": "political"
     },
     {
-      "date": "01.01.0040",
+      "date": "01.09.0040",
       "description": "Cleopatra VII gives birth to twins Alexander Helios and Cleopatra Selene, children of Mark Antony; they are named after the sun and moon, symbolizing universal dominion",
-      "description_ru": "Клеопатра VII рождает близнецов Александра Гелиоса и Клеопатру Селену, детей Марка Антония; они названы в честь солнца и луны, символизируя всемирное владычество",
+      "description_ru": "Спустя год Клеопатра VII рождает близнецов Александра Гелиоса и Клеопатру Селену, детей Марка Антония; они названы в честь солнца и луны, символизируя всемирное владычество",
       "era": "BC",
       "latitude": 31.2001,
       "longitude": 29.9187,
       "name": "Birth of Alexander Helios and Cleopatra Selene",
-      "name_ru": "Рождение Александра Гелиоса и Клеопатры Селены",
+      "name_ru": "Близнецы Антония и Клеопатры",
       "source": "https://en.wikipedia.org/wiki/Alexander_Helios",
-      "tags": ["Ptolemaic", "Dynasty", "Cleopatra VII", "Mark Antony"],
+      "tags": [
+        "Egypt",
+        "Dynasty",
+        "Roman",
+        "Ptolemaic",
+        "Cleopatra VII",
+        "Mark Antony"
+      ],
       "type": "political"
     },
     {
@@ -700,20 +1173,34 @@
       "name": "Marriage of Antony and Cleopatra",
       "name_ru": "Брак Антония и Клеопатры",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
-      "tags": ["Ptolemaic", "Roman", "Cleopatra VII", "Mark Antony", "Marriage"],
+      "tags": [
+        "Mark Antony",
+        "Cleopatra VII",
+        "Roman",
+        "Ptolemaic",
+        "Marriage",
+        "Egypt"
+      ],
       "type": "political"
     },
     {
       "date": "01.01.0034",
       "description": "Donations of Alexandria: Antony publicly proclaims Cleopatra 'Queen of Kings' and divides Roman eastern territories among their children; Octavian uses this to turn Roman public opinion against Antony",
-      "description_ru": "Александрийские дарения: Антоний публично провозглашает Клеопатру 'Царицей царей' и делит римские восточные территории между их детьми; Октавиан использует это, чтобы настроить римское общественное мнение против Антония",
+      "description_ru": "Марк Антоний публично провозглашает Клеопатру 'Царицей царей' и делит римские восточные территории между детьми Клеопатры (включая Цезариона); Октавиан использует это, чтобы настроить Рим против Антония",
       "era": "BC",
       "latitude": 31.2001,
       "longitude": 29.9187,
       "name": "Donations of Alexandria",
       "name_ru": "Александрийские дарения",
       "source": "https://en.wikipedia.org/wiki/Donations_of_Alexandria",
-      "tags": ["Ptolemaic", "Roman", "Cleopatra VII", "Mark Antony", "Caesarion"],
+      "tags": [
+        "Roman",
+        "Mark Antony",
+        "Cleopatra VII",
+        "Ptolemaic",
+        "Octavian",
+        "Egypt"
+      ],
       "type": "political"
     },
     {
@@ -721,12 +1208,19 @@
       "description": "Octavian declares war on Cleopatra (not Antony, to avoid the appearance of civil war); the war is presented as a conflict between Rome and a foreign queen seeking to subjugate the Roman people",
       "description_ru": "Октавиан объявляет войну Клеопатре (не Антонию, чтобы избежать видимости гражданской войны); война представлена как конфликт между Римом и иностранной царицей, стремящейся покорить римский народ",
       "era": "BC",
-      "latitude": 41.90,
-      "longitude": 12.50,
+      "latitude": 41.9,
+      "longitude": 12.5,
       "name": "Octavian Declares War on Cleopatra",
       "name_ru": "Октавиан объявляет войну Клеопатре",
       "source": "https://en.wikipedia.org/wiki/Final_War_of_the_Roman_Republic",
-      "tags": ["Ptolemaic", "Roman", "Cleopatra VII", "Octavian", "War"],
+      "tags": [
+        "Roman",
+        "Ptolemaic",
+        "Cleopatra VII",
+        "Egypt",
+        "Octavian",
+        "Civil War"
+      ],
       "type": "political"
     },
     {
@@ -739,164 +1233,80 @@
       "name": "Battle of Actium",
       "name_ru": "Битва при Акциуме",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Actium",
-      "tags": ["Ptolemaic", "Roman", "Battle", "Cleopatra VII", "Mark Antony", "Octavian", "Defeat"],
+      "tags": [
+        "Cleopatra VII",
+        "Roman",
+        "Battle",
+        "Ptolemaic",
+        "Mark Antony",
+        "Octavian",
+        "Naval",
+        "Egypt",
+        "Civil War"
+      ],
       "type": "military"
-    },
-    {
-      "date": "01.08.0030",
-      "description": "Octavian's forces enter Alexandria after Antony's suicide; Cleopatra VII attempts to negotiate but fails to sway the Roman general, who is determined to parade her in his triumph",
-      "description_ru": "Войска Октавиана входят в Александрию после самоубийства Антония; Клеопатра VII пытается вести переговоры, но не может убедить римского полководца, решившего провести её в своём триумфе",
-      "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
-      "name": "Fall of Alexandria to Octavian",
-      "name_ru": "Падение Александрии перед Октавианом",
-      "source": "https://en.wikipedia.org/wiki/Cleopatra",
-      "tags": ["Ptolemaic", "Roman", "Alexandria", "Octavian", "Fall"],
-      "type": "military"
-    },
-    {
-      "date": "12.08.0030",
-      "description": "Cleopatra VII commits suicide, allegedly by asp bite, ending 275 years of Ptolemaic rule in Egypt; she is 39 years old and is buried with Mark Antony in a location now unknown",
-      "description_ru": "Клеопатра VII совершает самоубийство, предположительно от укуса аспида, завершая 275 лет птолемеевского правления в Египте; ей 39 лет, и она похоронена вместе с Марком Антонием в ныне неизвестном месте",
-      "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
-      "name": "Death of Cleopatra VII - End of Ptolemaic Dynasty",
-      "name_ru": "Смерть Клеопатры VII - конец династии Птолемеев",
-      "source": "https://en.wikipedia.org/wiki/Cleopatra",
-      "tags": ["Ptolemaic", "Cleopatra VII", "Death", "Suicide", "Fall"],
-      "type": "political"
     },
     {
       "date": "23.08.0030",
       "description": "Caesarion is captured and executed on Octavian's orders; the last Ptolemaic pharaoh dies at age 17, and Egypt becomes a Roman province, ending the Hellenistic age in the eastern Mediterranean",
-      "description_ru": "Цезарион захвачен и казнён по приказу Октавиана; последний фараон из Птолемеев погибает в возрасте 17 лет, и Египет становится римской провинцией, завершая эллинистическую эпоху в восточном Средиземноморье",
+      "description_ru": "Цезарион схвачен и казнён по приказу Октавиана; последний фараон из Птолемеев погибает в возрасте 17 лет, и Египет становится римской провинцией, завершая эллинистическую эпоху в восточном Средиземноморье",
       "era": "BC",
       "latitude": 31.2001,
       "longitude": 29.9187,
       "name": "Execution of Caesarion - Egypt Becomes Roman Province",
-      "name_ru": "Казнь Цезариона - Египет становится римской провинцией",
+      "name_ru": "Октавиан казнит Цезариона",
       "source": "https://en.wikipedia.org/wiki/Caesarion",
-      "tags": ["Ptolemaic", "Roman", "Caesarion", "Execution", "Fall", "Dynasty"],
+      "tags": [
+        "Execution",
+        "Ptolemaic",
+        "Roman",
+        "Dynasty",
+        "Fall",
+        "Egypt"
+      ],
       "type": "political"
     },
     {
-      "date": "01.01.0200",
-      "description": "The Library of Alexandria reaches its peak, containing an estimated 400,000 to 700,000 scrolls; it employs hundreds of scholars and includes works from across the known world, translated into Greek",
-      "description_ru": "Александрийская библиотека достигает расцвета, содержа по оценкам от 400 000 до 700 000 свитков; в ней работают сотни учёных, и она включает труды со всего известного мира, переведённые на греческий",
+      "date": "12.08.0030",
+      "description": "Cleopatra VII commits suicide, allegedly by asp bite, ending 275 years of Ptolemaic rule in Egypt; she is 39 years old and is buried with Mark Antony in a location now unknown",
+      "description_ru": "Клеопатра VII совершает самоубийство, предположительно умирает в 39 лет от укуса аспида, завершая 275 лет птолемеевского правления в Египте. Где они с Антонием похоронены - неизвестно.",
       "era": "BC",
       "latitude": 31.2001,
       "longitude": 29.9187,
-      "name": "Library of Alexandria at Its Peak",
-      "name_ru": "Расцвет Александрийской библиотеки",
-      "source": "https://en.wikipedia.org/wiki/Library_of_Alexandria",
-      "tags": ["Ptolemaic", "Library", "Alexandria", "Culture", "Science"],
-      "type": "cultural"
+      "name": "Death of Cleopatra VII - End of Ptolemaic Dynasty",
+      "name_ru": "Самоубийство Клеопатры",
+      "source": "https://en.wikipedia.org/wiki/Cleopatra",
+      "tags": [
+        "Cleopatra VII",
+        "Ptolemaic",
+        "Death",
+        "Fall",
+        "Suicide",
+        "Egypt"
+      ],
+      "type": "political"
     },
     {
-      "date": "01.01.0260",
-      "description": "Herophilos and Erasistratus conduct pioneering anatomical research at Alexandria, performing the first systematic dissections of human bodies; they discover the nervous system, name the duodenum, and distinguish arteries from veins",
-      "description_ru": "Герофил и Эрасистрат проводят пионерские анатомические исследования в Александрии, выполняя первые систематические вскрытия человеческих тел; они открывают нервную систему, дают название двенадцатиперстной кишке и различают артерии от вен",
+      "date": "01.08.0030",
+      "description": "Octavian's forces enter Alexandria after Antony's suicide; Cleopatra VII attempts to negotiate but fails to sway the Roman general, who is determined to parade her in his triumph",
+      "description_ru": "Войска Октавиана входят в Александрию после самоубийства Марка Антония; Клеопатра VII пытается вести переговоры, но не может убедить римского полководца, решившего провести её в своём триумфе",
       "era": "BC",
       "latitude": 31.2001,
       "longitude": 29.9187,
-      "name": "Alexandrian School of Anatomy",
-      "name_ru": "Александрийская школа анатомии",
-      "source": "https://en.wikipedia.org/wiki/Herophilos",
-      "tags": ["Ptolemaic", "Science", "Medicine", "Alexandria", "Anatomy"],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.0245",
-      "description": "Callimachus creates the Pinakes, the first systematic library catalog in history; this bibliography of the Library of Alexandria organizes works by author and subject, establishing principles still used today",
-      "description_ru": "Каллимах создаёт 'Пинаки', первый систематический библиотечный каталог в истории; эта библиография Александрийской библиотеки организует работы по автору и теме, устанавливая принципы, используемые по сей день",
-      "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
-      "name": "Callimachus Creates First Library Catalog",
-      "name_ru": "Каллимах создаёт первый библиотечный каталог",
-      "source": "https://en.wikipedia.org/wiki/Pinakes",
-      "tags": ["Ptolemaic", "Library", "Alexandria", "Culture", "Callimachus"],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0250",
-      "description": "Ctesibius of Alexandria invents the water clock (clepsydra) with automatic regulation and the force pump; he is considered the father of pneumatics and his work influences mechanical engineering for centuries",
-      "description_ru": "Ктесибий Александрийский изобретает водяные часы (клепсидру) с автоматическим регулированием и нагнетательный насос; он считается отцом пневматики, и его работа влияет на машиностроение на протяжении веков",
-      "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
-      "name": "Ctesibius's Mechanical Inventions",
-      "name_ru": "Механические изобретения Ктесибия",
-      "source": "https://en.wikipedia.org/wiki/Ctesibius",
-      "tags": ["Ptolemaic", "Science", "Engineering", "Alexandria", "Invention"],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.0230",
-      "description": "Apollonius of Perga writes 'Conics,' defining the terms ellipse, parabola, and hyperbola; this work, studied in Alexandria, becomes foundational for astronomy and later physics",
-      "description_ru": "Аполлоний Пергский пишет 'Конические сечения', определяя термины эллипс, парабола и гипербола; эта работа, изучаемая в Александрии, становится основополагающей для астрономии и более поздней физики",
-      "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
-      "name": "Apollonius Writes Conics",
-      "name_ru": "Аполлоний пишет 'Конические сечения'",
-      "source": "https://en.wikipedia.org/wiki/Apollonius_of_Perga",
-      "tags": ["Ptolemaic", "Science", "Mathematics", "Alexandria"],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.0150",
-      "description": "Hipparchus of Nicaea creates the first comprehensive star catalog at Alexandria, recording the positions of over 850 stars; he discovers the precession of equinoxes and develops trigonometry",
-      "description_ru": "Гиппарх Никейский создаёт первый всеобъемлющий звёздный каталог в Александрии, фиксируя положения более 850 звёзд; он открывает прецессию равноденствий и развивает тригонометрию",
-      "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
-      "name": "Hipparchus Creates Star Catalog",
-      "name_ru": "Гиппарх создаёт звёздный каталог",
-      "source": "https://en.wikipedia.org/wiki/Hipparchus",
-      "tags": ["Ptolemaic", "Science", "Astronomy", "Alexandria", "Stars"],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.0237",
-      "description": "Construction begins on the Temple of Horus at Edfu, one of the best-preserved ancient Egyptian temples; it will take 180 years to complete and represents the height of Ptolemaic temple architecture",
-      "description_ru": "Начинается строительство Храма Хора в Эдфу, одного из лучше всего сохранившихся древнеегипетских храмов; его строительство займёт 180 лет и представляет вершину птолемеевской храмовой архитектуры",
-      "era": "BC",
-      "latitude": 24.978,
-      "longitude": 32.873,
-      "name": "Construction of Temple of Horus at Edfu Begins",
-      "name_ru": "Начало строительства Храма Хора в Эдфу",
-      "source": "https://en.wikipedia.org/wiki/Temple_of_Edfu",
-      "tags": ["Ptolemaic", "Architecture", "Temple", "Religion", "Edfu"],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0057",
-      "description": "The Temple of Horus at Edfu is completed after 180 years of construction; its inscriptions preserve invaluable information about Egyptian religious practices and mythology",
-      "description_ru": "Храм Хора в Эдфу завершён после 180 лет строительства; его надписи сохраняют бесценную информацию о египетских религиозных практиках и мифологии",
-      "era": "BC",
-      "latitude": 24.978,
-      "longitude": 32.873,
-      "name": "Temple of Horus at Edfu Completed",
-      "name_ru": "Завершение Храма Хора в Эдфу",
-      "source": "https://en.wikipedia.org/wiki/Temple_of_Edfu",
-      "tags": ["Ptolemaic", "Architecture", "Temple", "Religion", "Edfu"],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0180",
-      "description": "Isis cult spreads throughout the Mediterranean from Egypt; temples to Isis are built in Greece, Rome, and across the Hellenistic world, making her one of the most widely worshipped deities in antiquity",
-      "description_ru": "Культ Исиды распространяется по всему Средиземноморью из Египта; храмы Исиды строятся в Греции, Риме и по всему эллинистическому миру, делая её одной из наиболее широко почитаемых божеств в древности",
-      "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
-      "name": "Spread of Isis Cult Throughout Mediterranean",
-      "name_ru": "Распространение культа Исиды по Средиземноморью",
-      "source": "https://en.wikipedia.org/wiki/Isis",
-      "tags": ["Ptolemaic", "Religion", "Isis", "Culture"],
-      "type": "religious"
+      "name": "Fall of Alexandria to Octavian",
+      "name_ru": "Падение Александрии перед Римом",
+      "source": "https://en.wikipedia.org/wiki/Cleopatra",
+      "tags": [
+        "Civil War",
+        "Egypt",
+        "Octavian",
+        "Ptolemaic",
+        "Roman",
+        "Conquest",
+        "Suicide"
+      ],
+      "type": "military"
     }
-  ]
+  ],
+  "filename": "ptolemaic_egypt.json"
 }

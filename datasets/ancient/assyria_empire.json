@@ -535,17 +535,17 @@
       "description": "Tiglath-Pileser III conquers Babylonia and becomes first king to rule both Assyria and Babylon simultaneously since Tukulti-Ninurta I",
       "description_ru": "Тиглатпаласар III завоевывает Вавилонию и становится первым царем, правящим одновременно Ассирией и Вавилоном со времен Тукульти-Нинурты I",
       "era": "BC",
-      "latitude": 32.5355,
-      "longitude": 44.4275,
+      "latitude": 32.543,
+      "longitude": 44.421,
       "name": "Annexation of Babylonia",
       "name_ru": "Ассирийцы аннексируют Вавилонию",
       "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
       "tags": [
-        "Assyrian",
         "Conquest",
         "Babylonian",
-        "Tiglath-Pileser III",
-        "Annexation"
+        "Assyrian",
+        "Annexation",
+        "Tiglath-Pileser III"
       ],
       "type": "political"
     },
@@ -629,17 +629,17 @@
       "description": "Sargon II defeats Marduk-apla-iddina in Babylonia, bringing Neo-Assyrian Empire to greatest territorial extent from Cyprus to Persia",
       "description_ru": "Саргон II побеждает Мардук-апла-иддина в Вавилонии, доводя Неоассирийскую империю до максимальных территориальных размеров от Кипра до Персии",
       "era": "BC",
-      "latitude": 32.5355,
-      "longitude": 44.4275,
+      "latitude": 32.543,
+      "longitude": 44.421,
       "name": "Empire at Maximum Extent",
       "name_ru": "Пик Неоассирийской империи",
       "source": "https://en.wikipedia.org/wiki/Sargon_II",
       "tags": [
-        "Assyrian",
         "Empire",
         "Expansion",
-        "Sargon II",
-        "Babylonian"
+        "Babylonian",
+        "Assyrian",
+        "Sargon II"
       ],
       "type": "political"
     },
@@ -745,16 +745,16 @@
       "description": "Sennacherib brutally sacks Babylon after persistent rebellions, destroying temples and flooding city, committing sacrilege that shocks ancient world",
       "description_ru": "Синаххериб жестоко грабит бунтующий Вавилон, разрушает храмы и затапливает город, совершая святотатство, потрясшее древний мир",
       "era": "BC",
-      "latitude": 32.5355,
-      "longitude": 44.4275,
+      "latitude": 32.543,
+      "longitude": 44.421,
       "name": "Sack of Babylon",
       "name_ru": "Ассирийцы разграбляют Вавилон",
       "source": "https://en.wikipedia.org/wiki/Sennacherib",
       "tags": [
-        "Assyrian",
-        "Destruction",
         "Babylonian",
-        "Blasphemy"
+        "Blasphemy",
+        "Assyrian",
+        "Destruction"
       ],
       "type": "military"
     },
@@ -782,8 +782,8 @@
       "description": "Esarhaddon conquers Memphis and Lower Egypt, extending Assyrian Empire to its greatest geographical extent and fulfilling centuries-old ambitions",
       "description_ru": "Асархаддон завоевывает Мемфис и Нижний Египет, расширяя Ассирийскую империю до максимальных географических размеров и исполняя вековые амбиции",
       "era": "BC",
-      "latitude": 29.8467,
-      "longitude": 31.2192,
+      "latitude": 29.850278,
+      "longitude": 31.250833,
       "name": "Conquest of Egypt",
       "name_ru": "Ассирийцы захватывают Египет",
       "source": "https://en.wikipedia.org/wiki/Esarhaddon",
@@ -835,16 +835,16 @@
       "description": "Ashurbanipal's brother Shamash-shum-ukin rebels in Babylon, triggering brutal civil war that devastates both kingdoms and weakens imperial cohesion",
       "description_ru": "Брат Ашшурбанипала Шамаш-шум-укин восстает в Вавилоне, вызывая жестокую гражданскую войну, опустошающую и ослабляющую как Ассирию, так и Вавилонию",
       "era": "BC",
-      "latitude": 32.5355,
-      "longitude": 44.4275,
+      "latitude": 32.543,
+      "longitude": 44.421,
       "name": "Babylonian Civil War Begins",
       "name_ru": "Гражданская война в Вавилоне",
       "source": "https://en.wikipedia.org/wiki/Ashurbanipal",
       "tags": [
+        "Babylonian",
         "Assyrian",
         "Civil War",
-        "Ashurbanipal",
-        "Babylonian"
+        "Ashurbanipal"
       ],
       "type": "political"
     },
@@ -927,17 +927,17 @@
       "description": "Nabopolassar seizes Babylon and establishes Neo-Babylonian Empire, declaring independence from Assyria and beginning systematic rebellion",
       "description_ru": "Набопаласар захватывает Вавилон, объявляет независимость от Ассирии и основывает Нововавилонскую империю",
       "era": "BC",
-      "latitude": 32.5355,
-      "longitude": 44.4275,
+      "latitude": 32.543,
+      "longitude": 44.421,
       "name": "Babylonian Independence",
       "name_ru": "Восстание и независимость Вавилона",
       "source": "https://en.wikipedia.org/wiki/Nabopolassar",
       "tags": [
-        "Independence",
-        "Rebellion",
         "Assyrian",
-        "Babylonian",
-        "Chaldean"
+        "Rebellion",
+        "Chaldean",
+        "Independence",
+        "Babylonian"
       ],
       "type": "political"
     },

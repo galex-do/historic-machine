@@ -131,15 +131,15 @@
       "description": "Wine was the national drink of the Urartians. It was stored in huge jars called karases, dug into the ground. Even ordinary homes had stocks of wine and beer. The most fertile regions were the Ararat Valley, the Lake Van basin, and the Lake Urmia region.",
       "description_ru": "Вино было национальным напитком урартов. Его хранили в огромных кувшинах — карасах, вкопанных в землю. Даже в обычных домах были запасы вина и пива. Самыми плодородными регионами были Араратская долина, бассейн озера Ван, район озера Урмия",
       "era": "BC",
-      "latitude": 40.1417,
-      "longitude": 44.5236,
+      "latitude": 40.18,
+      "longitude": 44.51,
       "name": "Urartu's winemaking",
       "name_ru": "Урартское виноделие",
       "tags": [
+        "Agriculture",
         "Urartu",
         "Winemaking",
-        "Customs",
-        "Agriculture"
+        "Customs"
       ],
       "type": "cultural"
     },
@@ -148,16 +148,16 @@
       "description": "Argishti I founds Erebuni Fortress on Arin-Berd Hill as military stronghold guarding northern borders, inscribing foundation dedication to god Khaldi; site will become modern Yerevan",
       "description_ru": "Аргишти I основывает крепость Эребуни на холме Арин-Берд как военное укрепление, охраняющее северные границы. Позднее на этом месте возникнет современный Ереван",
       "era": "BC",
-      "latitude": 40.1417,
-      "longitude": 44.5236,
+      "latitude": 40.14036837,
+      "longitude": 44.53818798,
       "name": "Foundation of Erebuni Fortress",
       "name_ru": "Основание крепости Эребуни",
       "source": "https://en.wikipedia.org/wiki/Erebuni_Fortress",
       "tags": [
-        "Urartu",
-        "Fortification",
         "Capital",
-        "City"
+        "City",
+        "Urartu",
+        "Fortification"
       ],
       "type": "historic"
     },
@@ -184,14 +184,14 @@
       "description": "Argishti I establishes Argishtihinili (later renamed Armavir) as second major city and administrative center in Ararat Plain, strengthening Urartian control of Transcaucasia",
       "description_ru": "Аргишти I основывает Аргиштихинили (позже переименованный в Армавир) как второй крупный город и административный центр на Араратской равнине, укрепляя урартский контроль над Закавказьем",
       "era": "BC",
-      "latitude": 40.15,
-      "longitude": 44.05,
+      "latitude": 40.10427066,
+      "longitude": 43.98934364,
       "name": "Foundation of Argishtihinili",
       "name_ru": "Основание Аргиштихинили",
       "source": "https://en.wikipedia.org/wiki/Armavir,_Armenia",
       "tags": [
-        "Urartu",
         "City",
+        "Urartu",
         "Administration"
       ],
       "type": "political"
@@ -349,16 +349,16 @@
       "description": "Rusa II becomes king and initiates Urartian cultural renaissance, founding city of Teishebaini (Karmir Blur) near Erebuni as economic hub and granary for Transcaucasian provinces",
       "description_ru": "При Русе II происходит урартский культурный ренессанс. Руса закладывает город Тейшебаини (Кармир Блур) близ Эребуни как экономический центр и житницу закавказских провинций. Крепость названа в честь Тейшебы - урартского бога войны и бури.",
       "era": "BC",
-      "latitude": 40.1294,
-      "longitude": 44.4583,
+      "latitude": 40.15421167,
+      "longitude": 44.45038319,
       "name": "Foundation of Teishebaini",
       "name_ru": "Основание Тейшебаини",
       "source": "https://en.wikipedia.org/wiki/Teishebaini",
       "tags": [
-        "City",
         "Urartu",
+        "Religious",
         "Economic",
-        "Religious"
+        "City"
       ],
       "type": "historic"
     },
@@ -367,16 +367,16 @@
       "description": "Rusa II builds massive storage complex at Teishebaini with 150 rooms containing enormous pithoi jars, establishing centralized granary system for kingdom's agricultural wealth",
       "description_ru": "Руса II строит большое хранилище в Тейшебаини со 150 комнатами. В огромных карасах (горшках) хранятся вино, сельскохозяйственные и другие богатства царства Урарту. Также известно, что карасы древние урарты использовали и для захоронения людей.",
       "era": "BC",
-      "latitude": 40.1294,
-      "longitude": 44.4583,
+      "latitude": 40.15421167,
+      "longitude": 44.45038319,
       "name": "Teishebaini Storage Complex",
       "name_ru": "Хранилище Тейшебаини",
       "source": "https://www.worldhistory.org/Teishebaini/",
       "tags": [
         "Agriculture",
-        "Architecture",
+        "Urartu",
         "Economic",
-        "Urartu"
+        "Architecture"
       ],
       "type": "historic"
     },
@@ -545,8 +545,8 @@
       "description": "Urartian authorities begin moving kingdom's treasures and valuables to Teishebaini for safekeeping as central territories fall under increasing pressure from invasions",
       "description_ru": "Урартские власти начинают перемещать сокровища и ценности царства в Тейшебаини для сохранности, поскольку центральные территории попадают под возрастающее давление вторжений",
       "era": "BC",
-      "latitude": 40.1294,
-      "longitude": 44.4583,
+      "latitude": 40.15421167,
+      "longitude": 44.45038319,
       "name": "Evacuation to Teishebaini",
       "name_ru": "Эвакуация в Тейшебаини",
       "source": "https://www.worldhistory.org/Teishebaini/",
@@ -562,35 +562,17 @@
       "description": "Teishebaini destroyed by fire during nighttime attack, with Scythian three-pronged arrowheads found among ruins; residents killed attempting to flee with gold and valuables",
       "description_ru": "Тейшебаини разрушен огнем во время ночной атаки, скифские трехгранные наконечники стрел найдены среди руин; жители убиты при попытке бежать с золотом и ценностями",
       "era": "BC",
-      "latitude": 40.1294,
-      "longitude": 44.4583,
+      "latitude": 40.15421167,
+      "longitude": 44.45038319,
       "name": "Destruction of Teishebaini",
       "name_ru": "Скифы разрушают Тейшебаини",
       "source": "https://en.wikipedia.org/wiki/Teishebaini",
       "tags": [
+        "Plundering",
         "Urartu",
         "Scythian",
         "Battle",
-        "Destruction",
-        "Plundering"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0590",
-      "description": "Median Empire overruns Tushpa and absorbs remaining Urartian territories, marking end of independent Urartian Kingdom after 270 years of existence",
-      "description_ru": "Мидийская империя захватывает Тушпу и поглощает оставшиеся урартские территории, знаменуя конец независимого Урартского царства после 270 лет существования",
-      "era": "BC",
-      "latitude": 38.5,
-      "longitude": 43.35,
-      "name": "Median Conquest of Van",
-      "name_ru": "Мидийцы захватывают Тушпу",
-      "source": "https://en.wikipedia.org/wiki/Urartu",
-      "tags": [
-        "Urartu",
-        "Conquest",
-        "Fall",
-        "Medes"
+        "Destruction"
       ],
       "type": "military"
     },
@@ -613,22 +595,40 @@
       "type": "political"
     },
     {
+      "date": "01.01.0590",
+      "description": "Median Empire overruns Tushpa and absorbs remaining Urartian territories, marking end of independent Urartian Kingdom after 270 years of existence",
+      "description_ru": "Мидийская империя захватывает Тушпу и поглощает оставшиеся урартские территории, знаменуя конец независимого Урартского царства после 270 лет существования",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Median Conquest of Van",
+      "name_ru": "Мидийцы захватывают Тушпу",
+      "source": "https://en.wikipedia.org/wiki/Urartu",
+      "tags": [
+        "Urartu",
+        "Conquest",
+        "Fall",
+        "Medes"
+      ],
+      "type": "military"
+    },
+    {
       "date": "01.01.0585",
       "description": "Final destruction of Urartian fortresses by combined Scythian-Median forces; Erebuni fortress occupied by Median Empire, ending 270 years of Urartian civilization",
       "description_ru": "Окончательное разрушение урартских крепостей объединенными скифо-мидийскими силами; крепость Эребуни занята Мидийской империей, завершая 270 лет урартской цивилизации",
       "era": "BC",
-      "latitude": 40.1417,
-      "longitude": 44.5236,
+      "latitude": 40.14036837,
+      "longitude": 44.53818798,
       "name": "Final Fall of Urartu",
       "name_ru": "Мидийцы покоряют Урарту",
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
+        "Conquest",
         "Urartu",
-        "Scythian",
         "Fall",
+        "Scythian",
         "Destruction",
-        "Medes",
-        "Conquest"
+        "Medes"
       ],
       "type": "military"
     },
@@ -637,17 +637,17 @@
       "description": "Achaemenid Persian Empire absorbs former Urartian territories after conquering Median Empire; Erebuni revived under Persian rule, preserving some Urartian cultural traditions",
       "description_ru": "Ахеменидская Персидская империя поглощает бывшие урартские территории после завоевания Мидийской империи; Эребуни возрождается под персидским правлением, сохраняя некоторые урартские культурные традиции",
       "era": "BC",
-      "latitude": 40.1417,
-      "longitude": 44.5236,
+      "latitude": 40.14036837,
+      "longitude": 44.53818798,
       "name": "Persian Control of Erebuni",
       "name_ru": "Персидский контроль над Эребуни",
       "source": "https://en.wikipedia.org/wiki/Erebuni_Fortress",
       "tags": [
+        "Urartu",
+        "Achaemenid",
         "Persian",
         "Conquest",
-        "Cultural Continuity",
-        "Urartu",
-        "Achaemenid"
+        "Cultural Continuity"
       ],
       "type": "political"
     }

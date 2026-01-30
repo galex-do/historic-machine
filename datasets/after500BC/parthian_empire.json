@@ -332,17 +332,17 @@
       "description": "Mithridates II conquers Armenia and installs Tigranes (later Tigranes the Great) as a hostage-prince; this begins centuries of Parthian-Armenian relations and rivalry",
       "description_ru": "Митридат II завоёвывает Армению и берёт Тиграна (будущего Тиграна Великого) в качестве заложника-принца; это начинает многовековые парфяно-армянские отношения и соперничество",
       "era": "BC",
-      "latitude": 39.78,
-      "longitude": 44.57,
+      "latitude": 39.8784,
+      "longitude": 44.5763,
       "name": "Parthian Conquest of Armenia",
       "name_ru": "Парфянское завоевание Армении",
       "source": "https://en.wikipedia.org/wiki/Mithridates_II_of_Parthia",
       "tags": [
-        "Parthian",
-        "Mithridates II",
-        "Conquest",
         "Armenian",
-        "Tigranes the Great"
+        "Conquest",
+        "Mithridates II",
+        "Tigranes the Great",
+        "Parthian"
       ],
       "type": "military"
     },
@@ -351,17 +351,17 @@
       "description": "Sulla meets with the Parthian ambassador Orobazus on the Euphrates. Sulla takes the place of honor without permission to show who is boss. Rome and Parthia agree to use the Euphrates as a border, beginning centuries-long relations between the two empires. The Parthian ambassador was later executed by the king for allowing the Roman negotiator such insolence.",
       "description_ru": "Сулла встречается с парфянским послом Оробазом на Евфрате. Сулла самовольно занимает почетное место, чтобы показать, кто здесь главный. Рим и Парфия договариваются использовать Евфрат как границу, начиная многовековые отношения между двумя империями. Посол Парфии позднее казнен царем за то, что позволил римскому переговорщику такую дерзость.",
       "era": "BC",
-      "latitude": 36.35,
-      "longitude": 38.78,
+      "latitude": 38.38630871,
+      "longitude": 38.37554455,
       "name": "First Roman-Parthian Diplomatic Contact",
       "name_ru": "Дипломатический контакт Рима и Парфии",
       "source": "https://en.wikipedia.org/wiki/Mithridates_II_of_Parthia",
       "tags": [
-        "Roman",
-        "Parthian",
         "Diplomacy",
+        "Sulla",
         "Mithridates II",
-        "Sulla"
+        "Parthian",
+        "Roman"
       ],
       "type": "political"
     },
@@ -498,16 +498,16 @@
       "description": "Battle of Mount Gindarus: Roman forces under Ventidius defeat and kill Parthian Crown Prince Pacorus. The Parthians are driven from Roman territory. This battle avenges Carrhae on its anniversary",
       "description_ru": "Битва при горе Гиндар: римские войска под командованием Вентидия побеждают и убивают парфянского наследного принца Пакора. Парфяне изгнаны с римской территории. Битва в годовщину Карр служит ответом римлян за унижение",
       "era": "BC",
-      "latitude": 36.39,
-      "longitude": 36.82,
+      "latitude": 36.39558577,
+      "longitude": 36.68832779,
       "name": "Battle of Mount Gindarus",
       "name_ru": "Битва при горе Гиндар",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Mount_Gindarus",
       "tags": [
         "Death",
-        "Parthian",
+        "Battle",
         "Roman",
-        "Battle"
+        "Parthian"
       ],
       "type": "military"
     },
@@ -685,7 +685,7 @@
     {
       "date": "01.01.0062",
       "description": "Battle of Rhandeia: Parthian forces surround and defeat Roman army under Paetus, forcing humiliating surrender; Romans must pass under the yoke and evacuate Armenia",
-      "description_ru": "Парфянские силы окружают и побеждают римскую армию под командованием Пета, вынуждая к унизительной капитуляции; римляне вынуждены пройти под ярмом и покинуть Армению",
+      "description_ru": "Парфянско-армянские силы окружают и побеждают римскую армию под командованием Пета, вынуждая к унизительной капитуляции; римляне вынуждены пройти под ярмом и покинуть Армению",
       "era": "AD",
       "latitude": 39.1,
       "longitude": 43,
@@ -693,9 +693,9 @@
       "name_ru": "Битва при Рандее",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Rhandeia",
       "tags": [
-        "Roman",
         "Battle",
         "Armenian",
+        "Roman",
         "Parthian"
       ],
       "type": "military"
@@ -1168,7 +1168,7 @@
     {
       "date": "01.06.0217",
       "description": "Battle of Nisibis: Artabanus IV defeats Roman forces under Emperor Macrinus in a three-day battle; Rome is forced to pay massive indemnity of 200 million denarii for peace",
-      "description_ru": "Битва при Нисибисе: Артабан IV парфянский побеждает римские войска под командованием императора Макрина в трёхдневном сражении; Рим вынужден заплатить огромную контрибуцию в 200 миллионов денариев за мир",
+      "description_ru": "Битва при Нисибисе: Артабан IV Парфянский побеждает римские войска под командованием императора Макрина в трёхдневном сражении; Рим вынужден заплатить огромную контрибуцию в 200 миллионов денариев за мир",
       "era": "AD",
       "latitude": 37.07,
       "longitude": 41.22,
@@ -1176,11 +1176,11 @@
       "name_ru": "Битва при Нисибисе",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Nisibis_(217)",
       "tags": [
-        "Parthian",
-        "Contribution",
         "Peace",
+        "Roman",
         "Battle",
-        "Roman"
+        "Contribution",
+        "Parthian"
       ],
       "type": "military"
     },

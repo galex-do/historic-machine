@@ -1061,17 +1061,17 @@
       "description": "Battle of Metaurus River: Romans defeat and kill Hannibal's brother Hasdrubal, destroying Carthaginian reinforcements marching to join Hannibal in Italy",
       "description_ru": "Битва при реке Метавр: римляне побеждают и убивают брата Ганнибала Гасдрубала, уничтожая карфагенские подкрепления, идущие на соединение с Ганнибалом в Италии",
       "era": "BC",
-      "latitude": 43.746,
-      "longitude": 12.904,
+      "latitude": 43.78382917,
+      "longitude": 13.01904559,
       "name": "Battle of Metaurus",
       "name_ru": "Битва при Метавре",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Metaurus",
       "tags": [
+        "Roman",
         "Battle",
         "Second Punic War",
         "Punic Wars",
-        "Carthage",
-        "Roman"
+        "Carthage"
       ],
       "type": "military"
     },
@@ -1100,18 +1100,18 @@
       "description": "Battle of the Great Plains: Scipio defeats combined Carthaginian-Numidian army, establishing Roman dominance in North Africa campaign",
       "description_ru": "Битва при Великих равнинах: Сципион побеждает объединенную карфагено-нумидийскую армию, устанавливая римское господство в североафриканской кампании",
       "era": "BC",
-      "latitude": 36.5,
-      "longitude": 9,
+      "latitude": 36.61201403,
+      "longitude": 8.94252777,
       "name": "Battle of the Great Plains",
       "name_ru": "Битва при Великих равнинах",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Great_Plains",
       "tags": [
-        "Carthage",
-        "Second Punic War",
+        "Roman",
         "Battle",
-        "Scipio",
         "Punic Wars",
-        "Roman"
+        "Second Punic War",
+        "Carthage",
+        "Scipio"
       ],
       "type": "military"
     },
@@ -1120,19 +1120,19 @@
       "description": "Scipio Africanus defeats Hannibal in decisive battle near Carthage, ending Second Punic War and breaking Carthaginian military power forever",
       "description_ru": "Сципион Африканский побеждает Ганнибала в решающей битве близ Карфагена, завершая Вторую Пуническую войну и навсегда разрушая карфагенскую военную мощь",
       "era": "BC",
-      "latitude": 36.3,
-      "longitude": 9.3,
+      "latitude": 36.30563236,
+      "longitude": 9.45141792,
       "name": "Carthage defeated in Battle of Zama",
       "name_ru": "Рим побеждает в битве при Заме",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Zama",
       "tags": [
         "Battle",
-        "Carthage",
-        "Hannibal",
-        "Punic Wars",
-        "Second Punic War",
+        "Roman",
         "Scipio",
-        "Roman"
+        "Second Punic War",
+        "Punic Wars",
+        "Hannibal",
+        "Carthage"
       ],
       "type": "military"
     },

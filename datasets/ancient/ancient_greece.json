@@ -2992,16 +2992,16 @@
       "description": "Athenian general Demosthenes captures 120 Spartiate prisoners at Sphacteria; humiliating defeat shatters myth of Spartan invincibility - Spartans negotiate frantically for return of elite citizens",
       "description_ru": "Афинский полководец Демосфен захватывает 120 спартиатов в плен на Сфактерии; унизительное поражение разрушает миф о спартанской непобедимости - спартанцы лихорадочно ведут переговоры о возвращении элитных граждан",
       "era": "BC",
-      "latitude": 36.9333,
-      "longitude": 21.65,
+      "latitude": 36.93493714,
+      "longitude": 21.6659832,
       "name": "Battle of Sphacteria",
       "name_ru": "Битва при Сфактерии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Sphacteria",
       "tags": [
+        "Sparta",
         "Battle",
         "Greek",
         "Athens",
-        "Sparta",
         "Peloponnesian War"
       ],
       "type": "military"
@@ -3272,18 +3272,18 @@
       "description": "Battle of Aegospotami sees Spartan Lysander destroy Athenian fleet beached for supplies; captures 170 of 180 ships and 3,000-4,000 prisoners, executing all Athenians - war effectively over",
       "description_ru": "В битве при Эгоспотамах спартанский военачальник Лисандр уничтожает афинский флот, вытащенный на берег за припасами; захватывает 170 из 180 кораблей и 3000-4000 пленных, казнив всех афинян. Война фактически окончена",
       "era": "BC",
-      "latitude": 40.3833,
-      "longitude": 26.6833,
+      "latitude": 40.25264,
+      "longitude": 26.55047,
       "name": "Battle of Aegospotami",
       "name_ru": "Битва при Эгоспотамах",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Aegospotami",
       "tags": [
-        "Battle",
-        "Greek",
-        "Naval",
+        "Peloponnesian War",
         "Athens",
-        "Sparta",
-        "Peloponnesian War"
+        "Naval",
+        "Greek",
+        "Battle",
+        "Sparta"
       ],
       "type": "military"
     },
@@ -3783,9 +3783,10 @@
       "name_ru": "Герострат сжигает храм Артемиды",
       "source": "https://en.wikipedia.org/wiki/Temple_of_Artemis",
       "tags": [
-        "Temple",
+        "Legend",
         "Destruction",
-        "Legend"
+        "Temple",
+        "Ancient Wonders"
       ],
       "type": "historic"
     },
@@ -4007,17 +4008,17 @@
       "description": "Alexander founds Alexandria in Egypt at strategic location on Mediterranean coast; city becomes greatest center of learning and commerce in ancient world, housing famous Library and Lighthouse",
       "description_ru": "Александр основывает Александрию в Египте в стратегическом месте на побережье Средиземного моря; город станет величайшим центром учености и торговли древнего мира с знаменитой Библиотекой и Маяком",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Foundation of Alexandria",
       "name_ru": "Основание Александрии",
       "source": "https://en.wikipedia.org/wiki/Alexandria",
       "tags": [
-        "Greek",
-        "City",
         "Macedonian",
-        "Egypt",
-        "Alexander the Great"
+        "Alexander the Great",
+        "City",
+        "Greek",
+        "Egypt"
       ],
       "type": "historic"
     },
@@ -4331,21 +4332,21 @@
     {
       "date": "01.01.0321",
       "description": "Ptolemy hijacks Alexander's funeral cortege en route to Macedonia, diverting it to Egypt; Alexander's body eventually displayed in magnificent tomb in Alexandria, becoming pilgrimage site for centuries",
-      "description_ru": "Птолемей похищает похоронную процессию Александра по пути в Македонию, направляя ее в Египет; тело Александра в конечном итоге выставлено в великолепной гробнице в Александрии, став местом паломничества на века",
+      "description_ru": "Птолемей перехватывает похоронную процессию Александра по пути в Македонию, направляя ее в Египет, в Мемфис; тело Александра в конечном итоге выставлено в великолепной гробнице в Александрии, став местом паломничества на века",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Alexander's Body Taken to Egypt",
       "name_ru": "Птолемей похищает тело Александра",
       "source": "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great",
       "tags": [
-        "Macedonian",
-        "Funeral",
         "Egypt",
         "Alexander the Great",
+        "Macedonian",
         "Ptolemaic",
-        "Greek",
-        "Wars of the Diadochi"
+        "Wars of the Diadochi",
+        "Funeral",
+        "Greek"
       ],
       "type": "historic"
     },

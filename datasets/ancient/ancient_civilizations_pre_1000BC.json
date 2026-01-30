@@ -196,17 +196,17 @@
       "description": "Gavrinis passage tomb built in Brittany, France, featuring elaborately engraved megalithic art on passage stones",
       "description_ru": "Коридорная гробница Гавринис построена в Бретани, Франция. Вход в курган обрамляет искусная резьба по камню",
       "era": "BC",
-      "latitude": 47.573,
-      "longitude": -2.9,
+      "latitude": 47.57195851,
+      "longitude": -2.89856136,
       "name": "Gavrinis Passage Tomb",
       "name_ru": "Курган Гавринис в Бретани",
       "tags": [
-        "Megalithic",
-        "Tomb",
-        "Art",
-        "Building",
-        "Mound Builders",
         "Earthwork",
+        "Mound Builders",
+        "Building",
+        "Art",
+        "Tomb",
+        "Megalithic",
         "Burial"
       ],
       "type": "cultural"
@@ -389,17 +389,17 @@
       "description": "Knowth passage tomb complex completed in Ireland as the largest passage tomb in the Brú na Bóinne complex with 18 smaller satellite tombs",
       "description_ru": "Курган Ноут завершен в Ирландии как крупнейшая коридорная гробница в комплексе Бру-на-Бойн с 18 меньшими гробницами",
       "era": "BC",
-      "latitude": 53.7,
-      "longitude": -6.488,
+      "latitude": 53.70117495,
+      "longitude": -6.49136424,
       "name": "Knowth Passage Tomb Complex",
       "name_ru": "Гробницы Ноут в Ирландии",
       "tags": [
-        "Megalithic",
         "Mound Builders",
+        "Building",
         "Earthwork",
         "Tomb",
-        "Building",
-        "Burial"
+        "Burial",
+        "Megalithic"
       ],
       "type": "cultural"
     },
@@ -1989,9 +1989,9 @@
       "name_ru": "Хатшепсут становится фараоном",
       "source": "https://www.metmuseum.org/toah/hd/hats/hd_hats.htm",
       "tags": [
-        "Female",
         "Pharaoh",
-        "Egypt"
+        "Egypt",
+        "Dynasty"
       ],
       "type": "political"
     },
@@ -2666,13 +2666,13 @@
       "description": "Mysterious Sea Peoples begin raiding Mediterranean coastlines and Egypt",
       "description_ru": "Загадочные народы моря начинают набеги на средиземноморские побережья и Египет",
       "era": "BC",
-      "latitude": 35,
-      "longitude": 33,
+      "latitude": 35.1264,
+      "longitude": 33.4299,
       "name": "Sea Peoples' First Raids",
       "name_ru": "Первые набеги народов моря",
       "tags": [
-        "Raiders",
         "Mystery",
+        "Raiders",
         "Mediterranean"
       ],
       "type": "military"
