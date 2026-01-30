@@ -632,8 +632,7 @@ export default {
 <style scoped>
 .admin-panel {
   padding: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
+  max-width: 100%;
 }
 
 .admin-header {
