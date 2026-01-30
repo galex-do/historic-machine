@@ -63,7 +63,7 @@ func (m *MetricsCollector) safeCount(query string, args ...interface{}) float64 
 }
 
 func (m *MetricsCollector) collectEventCount() {
-        metrics.EventsTotal.Set(m.safeCount("SELECT COUNT(*) FROM historical_events"))
+        metrics.EventsTotal.Set(m.safeCount("SELECT COUNT(*) FROM events"))
 }
 
 func (m *MetricsCollector) collectUserCount() {
@@ -75,7 +75,7 @@ func (m *MetricsCollector) collectTagCount() {
 }
 
 func (m *MetricsCollector) collectDatasetCount() {
-        metrics.DatasetsTotal.Set(m.safeCount("SELECT COUNT(*) FROM datasets"))
+        metrics.DatasetsTotal.Set(m.safeCount("SELECT COUNT(*) FROM event_datasets"))
 }
 
 func (m *MetricsCollector) collectTemplateCount() {
@@ -86,9 +86,10 @@ func (m *MetricsCollector) collectSessionCounts() {
         activeWindow := time.Now().Add(-5 * time.Minute)
         
         metrics.ActiveSessionsAuthenticated.Set(m.safeCount(`
-                SELECT COUNT(*) FROM users 
-                WHERE last_active_at IS NOT NULL 
-                AND last_active_at > $1
+                SELECT COUNT(*) FROM user_sessions 
+                WHERE is_active = true 
+                AND last_seen_at > $1
+                AND expires_at > NOW()
         `, activeWindow))
         
         metrics.ActiveSessionsAnonymous.Set(m.safeCount(`
