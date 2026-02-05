@@ -940,6 +940,27 @@
       "type": "political"
     },
     {
+      "date": "01.01.0350",
+      "description": "Rome institutionalizes rigorous military training that transforms citizen soldiers into disciplined professionals. Recruits drill with weighted practice weapons, march 20 Roman miles in 5 hours, and practice formation maneuvers until they become second nature. Centurions enforce iron discipline with the vitis (vine stick). This systematic training creates the most reliable infantry force in the ancient world.",
+      "description_ru": "Рим институционализирует строгую военную подготовку, превращающую граждан-солдат в дисциплинированных профессионалов. Новобранцы тренируются утяжелённым учебным оружием, маршируют 20 римских миль за 5 часов и отрабатывают построения до автоматизма. Центурионы поддерживают железную дисциплину витисом (виноградной лозой). Эта систематическая подготовка создаёт надёжнейшую пехоту античного мира.",
+      "era": "BC",
+      "latitude": 41.8902,
+      "longitude": 12.4922,
+      "name": "Roman Military Training System",
+      "name_ru": "Система римской военной подготовки",
+      "source": "https://en.wikipedia.org/wiki/Roman_military_training",
+      "tags": [
+        "Roman",
+        "Military",
+        "Innovation",
+        "Tactics",
+        "War",
+        "Discipline",
+        "Training"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0345",
       "description": "Capua, the richest city of Campania, appeals to Rome for protection against Samnite raiders from the mountains. By accepting Capua into alliance, Rome breaks its treaty with the Samnites and gains access to fertile Campanian land.",
       "description_ru": "Капуя, богатейший город Кампании, обращается к Риму за защитой от набегов самнитов с гор. Приняв Капую в союз, Рим нарушает договор с самнитами и получает доступ к плодородным кампанским землям.",
@@ -1150,6 +1171,26 @@
       "type": "military"
     },
     {
+      "date": "01.01.0315",
+      "description": "Rome abandons the Greek-style phalanx and adopts the manipular legion during the Samnite Wars. The new system divides infantry into three lines: hastati (young soldiers), principes (experienced), and triarii (veterans). The checkerboard formation of 30 maniples provides unprecedented tactical flexibility on rough terrain.",
+      "description_ru": "Рим отказывается от греческой фаланги и принимает манипулярный легион во время Самнитских войн. Новая система делит пехоту на три линии: гастаты (молодые), принципы (опытные) и триарии (ветераны). Шахматное построение 30 манипул обеспечивает небывалую тактическую гибкость на пересечённой местности.",
+      "era": "BC",
+      "latitude": 41.2894,
+      "longitude": 14.7833,
+      "name": "Manipular Legion System",
+      "name_ru": "Манипулярный легион",
+      "source": "https://en.wikipedia.org/wiki/Maniple_(military_unit)",
+      "tags": [
+        "Roman",
+        "Military",
+        "Innovation",
+        "Tactics",
+        "War",
+        "Science"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0312",
       "description": "Censor Appius Claudius Caecus begins construction of the Via Appia, Rome's first major paved road, connecting Rome to Capua (later extended to Brindisi). 'Regina viarum' (Queen of Roads), it enables rapid military movement and trade, becoming the model for all Roman roads.",
       "description_ru": "Цензор Аппий Клавдий Цек начинает строительство Аппиевой дороги, первой крупной мощёной дороги Рима, соединяющей Рим с Капуей (позже продлённой до Бриндизи). 'Regina viarum' (Царица дорог) обеспечивает быстрое передвижение войск и торговлю, став образцом для всех римских дорог.",
@@ -1243,6 +1284,45 @@
         "Public"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0300",
+      "description": "Rome adopts the pilum, a heavy javelin with a unique design: a long iron shank that bends on impact, preventing enemies from throwing it back and rendering shields unusable. Each legionary carries two pila, throwing them at 15-30 meters before closing with gladius. The weapon disrupts enemy formations before melee.",
+      "description_ru": "Рим принимает на вооружение пилум — тяжёлый дротик уникальной конструкции: длинный железный стержень гнётся при попадании, не давая врагам метать его обратно и делая щиты непригодными. Каждый легионер несёт два пилума, метая их с 15-30 метров перед сближением с гладиусом. Оружие нарушает строй врага до рукопашной.",
+      "era": "BC",
+      "latitude": 41.8902,
+      "longitude": 12.4922,
+      "name": "Adoption of the Pilum",
+      "name_ru": "Принятие пилума на вооружение",
+      "source": "https://en.wikipedia.org/wiki/Pilum",
+      "tags": [
+        "Roman",
+        "Military",
+        "Innovation",
+        "War",
+        "Weapon"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0300",
+      "description": "Rome develops standardized road construction techniques that will endure for millennia: multi-layered foundation of mortar, stones, and gravel; cambered surface for drainage; drainage ditches with retaining walls; cuttings through hills rather than detours. Roman engineers prefer straight paths, building bridges and tunnels rather than avoiding obstacles. Many Roman roads remain in use 2000 years later.",
+      "description_ru": "Рим разрабатывает стандартизированные методы строительства дорог, которые просуществуют тысячелетия: многослойный фундамент из раствора, камней и гравия; выпуклая поверхность для дренажа; дренажные канавы с подпорными стенками; прорезы через холмы вместо обходов. Римские инженеры предпочитают прямые пути, строя мосты и туннели вместо обхода препятствий. Многие римские дороги используются 2000 лет спустя.",
+      "era": "BC",
+      "latitude": 41.8902,
+      "longitude": 12.4922,
+      "name": "Roman Road Engineering Standards",
+      "name_ru": "Стандарты римского дорожного строительства",
+      "source": "https://en.wikipedia.org/wiki/Roman_roads",
+      "tags": [
+        "Roman",
+        "Innovation",
+        "Engineering ⚙️",
+        "Infrastructure",
+        "Road",
+        "Science"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0298",
@@ -1402,6 +1482,27 @@
       "type": "military"
     },
     {
+      "date": "01.01.0280",
+      "description": "Rome standardizes the castra — fortified military camp built every night during march. Following rigid engineering specifications, legionaries construct ramparts, ditches, gates, and internal grid layout in hours. This discipline provides security, intimidates enemies, and demonstrates Roman organizational superiority. Each soldier knows exactly where to position his tent.",
+      "description_ru": "Рим стандартизирует каструм — укреплённый военный лагерь, возводимый каждую ночь на марше. Следуя строгим инженерным спецификациям, легионеры строят валы, рвы, ворота и внутреннюю сетку за часы. Эта дисциплина обеспечивает безопасность, устрашает врагов и демонстрирует римское организационное превосходство. Каждый солдат знает, где ставить свою палатку.",
+      "era": "BC",
+      "latitude": 41.8902,
+      "longitude": 12.4922,
+      "name": "Roman Military Camp System (Castra)",
+      "name_ru": "Система римских военных лагерей (каструм)",
+      "source": "https://en.wikipedia.org/wiki/Castra",
+      "tags": [
+        "Roman",
+        "Military",
+        "Innovation",
+        "Engineering ⚙️",
+        "War",
+        "Tactics",
+        "Discipline"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.03.0279",
       "description": "Pyrrhus defeats Romans again at Asculum but loses 3,500 of his best troops, including many officers. When congratulated, he reportedly responds: 'If we win one more such battle against the Romans, we shall be utterly ruined.' ",
       "description_ru": "Пирр снова побеждает римлян при Аускуле, но теряет 3500 лучших воинов, включая многих офицеров. Когда его поздравляют, он отвечает: 'Если мы выиграем ещё одну такую битву с римлянами, мы будем полностью разорены.'",
@@ -1443,6 +1544,26 @@
         "War"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0273",
+      "description": "Roman builders develop opus caementicium (Roman concrete) by mixing volcanic ash (pozzolana) with lime and aggregate. First used at the colony of Cosa, this revolutionary material allows construction of unprecedented structures. Unlike modern concrete, Roman concrete actually strengthens over centuries through mineral crystallization.",
+      "description_ru": "Римские строители разрабатывают opus caementicium (римский бетон), смешивая вулканический пепел (пуццолан) с известью и заполнителем. Впервые применённый в колонии Коза, этот революционный материал позволяет строить беспрецедентные сооружения. В отличие от современного бетона, римский бетон укрепляется веками через минеральную кристаллизацию.",
+      "era": "BC",
+      "latitude": 42.4089,
+      "longitude": 11.2889,
+      "name": "Invention of Roman Concrete",
+      "name_ru": "Изобретение римского бетона",
+      "source": "https://en.wikipedia.org/wiki/Roman_concrete",
+      "tags": [
+        "Roman",
+        "Innovation",
+        "Engineering ⚙️",
+        "Architecture",
+        "Science",
+        "Construction"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0272",
@@ -1521,6 +1642,46 @@
         "City"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0260",
+      "description": "Facing the superior Carthaginian navy in the First Punic War, Rome invents the corvus ('raven') — a rotating boarding bridge with a heavy spike that drops onto enemy decks, locking ships together. This ingenious device transforms naval warfare into land battle, where Roman legionaries excel. The corvus helps Rome win the decisive Battle of Mylae, its first major naval victory.",
+      "description_ru": "Столкнувшись с превосходящим карфагенским флотом в Первой Пунической войне, Рим изобретает корвус ('ворон') — вращающийся абордажный мостик с тяжёлым шипом, падающим на вражескую палубу и сцепляющим корабли. Это гениальное устройство превращает морской бой в сухопутный, где превосходят римские легионеры. Корвус помогает Риму одержать решающую победу при Милах — первую крупную морскую победу.",
+      "era": "BC",
+      "latitude": 38.2258,
+      "longitude": 15.2417,
+      "name": "Invention of the Corvus",
+      "name_ru": "Изобретение корвуса",
+      "source": "https://en.wikipedia.org/wiki/Corvus_(boarding_device)",
+      "tags": [
+        "Roman",
+        "Military",
+        "Innovation",
+        "War",
+        "Naval",
+        "Engineering ⚙️",
+        "Punic Wars"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0250",
+      "description": "Roman engineers develop sophisticated surveying instruments: the groma for laying out perpendicular lines and right angles; the chorobates for leveling; the dioptra for measuring angles. These tools enable precise gradient control for aqueducts (achieving 1:4800 slope over 50 km) and straight road construction. Roman precision surveying won't be surpassed until modern times.",
+      "description_ru": "Римские инженеры разрабатывают сложные геодезические инструменты: грому для разбивки перпендикулярных линий и прямых углов; хоробат для нивелирования; диоптру для измерения углов. Эти инструменты обеспечивают точный контроль уклона акведуков (достигая 1:4800 на 50 км) и строительство прямых дорог. Римская точность геодезии не будет превзойдена до нового времени.",
+      "era": "BC",
+      "latitude": 41.8902,
+      "longitude": 12.4922,
+      "name": "Roman Surveying Instruments",
+      "name_ru": "Римские геодезические инструменты",
+      "source": "https://en.wikipedia.org/wiki/Groma_(surveying)",
+      "tags": [
+        "Roman",
+        "Innovation",
+        "Engineering ⚙️",
+        "Science",
+        "Tools"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0241",
@@ -1673,6 +1834,46 @@
         "Greek",
         "Culture",
         "Roman"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0200",
+      "description": "After encountering Celtiberian swords during the Punic Wars, Rome adopts the gladius Hispaniensis as standard legionary weapon. This short, double-edged sword (45-65 cm blade) excels at both thrusting and cutting in tight formations. Combined with the large scutum shield, it makes the Roman legionary the deadliest close-combat soldier in the ancient world.",
+      "description_ru": "Встретив кельтиберийские мечи во время Пунических войн, Рим принимает gladius Hispaniensis как стандартное оружие легионера. Этот короткий обоюдоострый меч (клинок 45-65 см) превосходен для уколов и рубки в тесном строю. В сочетании с большим щитом скутум он делает римского легионера смертоноснейшим воином ближнего боя античного мира.",
+      "era": "BC",
+      "latitude": 37.8882,
+      "longitude": -4.7794,
+      "name": "Adoption of the Gladius Hispaniensis",
+      "name_ru": "Принятие испанского гладиуса",
+      "source": "https://en.wikipedia.org/wiki/Gladius",
+      "tags": [
+        "Roman",
+        "Military",
+        "Innovation",
+        "War",
+        "Weapon",
+        "Spanish"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0200",
+      "description": "Romans master the structural arch, perfecting the voussoir (wedge-shaped stones) with keystone technique. Unlike post-and-lintel construction, arches distribute weight outward, enabling unprecedented spans for bridges, aqueducts, and buildings. Combined with Roman concrete, arch technology enables the construction of structures that will stand for millennia.",
+      "description_ru": "Римляне осваивают конструкционную арку, совершенствуя технику клинчатых камней (вуссуаров) с замковым камнем. В отличие от стоечно-балочной конструкции, арки распределяют нагрузку наружу, позволяя создавать небывалые пролёты для мостов, акведуков и зданий. В сочетании с римским бетоном арочная технология позволяет строить сооружения, которые простоят тысячелетия.",
+      "era": "BC",
+      "latitude": 41.8902,
+      "longitude": 12.4922,
+      "name": "Mastery of Arch Construction",
+      "name_ru": "Мастерство арочного строительства",
+      "source": "https://en.wikipedia.org/wiki/Roman_architecture",
+      "tags": [
+        "Roman",
+        "Innovation",
+        "Engineering ⚙️",
+        "Architecture",
+        "Science",
+        "Construction"
       ],
       "type": "historic"
     },
@@ -1886,6 +2087,27 @@
         "Culture",
         "Roman",
         "Philosophy"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0150",
+      "description": "Rome perfects the ballista, a powerful two-armed torsion catapult capable of launching heavy bolts or stones over 300 meters. Roman improvements include metal reinforcement, better materials, and standardized production. By the 1st century AD, every century will have its own ballista, making Roman siege warfare unmatched.",
+      "description_ru": "Рим совершенствует баллисту — мощную двухплечевую торсионную катапульту, способную метать тяжёлые болты или камни на 300 метров. Римские улучшения включают металлическое усиление, лучшие материалы и стандартизированное производство. К I веку н.э. каждая центурия будет иметь свою баллисту, делая римскую осадную войну непревзойдённой.",
+      "era": "BC",
+      "latitude": 41.8902,
+      "longitude": 12.4922,
+      "name": "Roman Ballista Artillery",
+      "name_ru": "Римская баллиста",
+      "source": "https://en.wikipedia.org/wiki/Ballista",
+      "tags": [
+        "Roman",
+        "Military",
+        "Innovation",
+        "War",
+        "Siege",
+        "Engineering ⚙️",
+        "Science"
       ],
       "type": "historic"
     },
@@ -2260,6 +2482,27 @@
         "Trade"
       ],
       "type": "religious"
+    },
+    {
+      "date": "01.01.0100",
+      "description": "The scorpio (scorpion) becomes a standard Roman precision weapon — a smaller ballista operated by 1-2 men, accurate at 100 meters and deadly at 400 meters parabolic fire. Each legion deploys 60 scorpiones, one per century. Caesar praises its 'terrifying precision' at the siege of Avaricum. It serves as ancient Rome's 'sniper rifle.'",
+      "description_ru": "Скорпион становится стандартным римским прецизионным оружием — уменьшенная баллиста под управлением 1-2 человек, точная на 100 метров и смертельная на 400 метрах навесного огня. Каждый легион развёртывает 60 скорпионов, по одному на центурию. Цезарь хвалит её 'ужасающую точность' при осаде Аварика. Это античная 'снайперская винтовка' Рима.",
+      "era": "BC",
+      "latitude": 47.0833,
+      "longitude": 2.4,
+      "name": "Scorpio Precision Artillery",
+      "name_ru": "Скорпион — точное оружие",
+      "source": "https://en.wikipedia.org/wiki/Scorpio_(weapon)",
+      "tags": [
+        "Roman",
+        "Military",
+        "Innovation",
+        "War",
+        "Siege",
+        "Engineering ⚙️",
+        "Tactics"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0091",
@@ -2974,6 +3217,27 @@
         "Bribe"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0050",
+      "description": "The testudo ('tortoise') formation becomes a refined Roman tactic for siege operations. Soldiers interlock their large scuta shields to form a protective shell — front rank vertical, inner ranks overhead like roof tiles. This 'human tank' allows troops to advance under heavy missile fire toward fortifications. The formation requires exceptional discipline and drilling.",
+      "description_ru": "Построение 'черепаха' (testudo) становится отточенной римской тактикой для осадных операций. Солдаты смыкают большие щиты скутумы, образуя защитный панцирь — передний ряд вертикально, внутренние ряды над головой как черепица. Этот 'человеческий танк' позволяет войскам наступать под сильным обстрелом к укреплениям. Построение требует исключительной дисциплины и муштры.",
+      "era": "BC",
+      "latitude": 46.2,
+      "longitude": 4.6,
+      "name": "Testudo Formation Tactics",
+      "name_ru": "Тактика построения 'черепаха'",
+      "source": "https://en.wikipedia.org/wiki/Testudo_formation",
+      "tags": [
+        "Roman",
+        "Military",
+        "Innovation",
+        "Tactics",
+        "War",
+        "Siege",
+        "Discipline"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.08.0049",
