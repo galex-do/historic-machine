@@ -2,7 +2,7 @@
   "description": "Dataset imported with 43 events",
   "events": [
     {
-      "date": "01.01.1600",
+      "date": "01.01.1580",
       "description": "Hurrian tribes begin uniting in northern Mesopotamia following power vacuum after Hittite sack of Babylon and Kassite invasion, forming early Mitanni state",
       "description_ru": "Хурритские племена начинают объединяться в северной Месопотамии после вакуума власти, последовавшего за хеттским разграблением Вавилона и касситским вторжением, формируя раннее государство Митанни",
       "era": "BC",
@@ -12,10 +12,11 @@
       "name_ru": "Формирование раннего государства Митанни",
       "source": "https://www.worldhistory.org/Hurrians/",
       "tags": [
-        "Mitanni",
         "Hurrian",
+        "Babylonian",
         "Foundation",
-        "Babylonian"
+        "Unification",
+        "Mitanni"
       ],
       "type": "political"
     },
@@ -30,10 +31,12 @@
       "name_ru": "Кирта - первый царь Митанни",
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
-        "Mitanni",
-        "Dynasty",
+        "Hurrian",
         "Capital",
-        "Hurrian"
+        "Dynasty",
+        "Mitanni",
+        "City",
+        "King"
       ],
       "type": "political"
     },
@@ -66,11 +69,11 @@
       "name_ru": "Митаннийские воины марьянну",
       "source": "https://www.thecollector.com/mitanni-kingdom-bronze-age-superpower/",
       "tags": [
+        "War",
+        "Indo-Aryan",
         "Mitanni",
-        "Chariot",
-        "Cavalry",
-        "War Science",
-        "Indo-Aryan"
+        "Science",
+        "Cavalry"
       ],
       "type": "military"
     },
@@ -141,10 +144,11 @@
       "name_ru": "Митанни разграбляет Ашшур и подчиняет Ассирию",
       "source": "https://www.worldhistory.org/Hurrians/",
       "tags": [
-        "Mitanni",
         "Conquest",
+        "Mitanni",
+        "Assyrian",
         "Vassalage",
-        "Assyrian"
+        "War"
       ],
       "type": "military"
     },
@@ -229,10 +233,11 @@
       "name_ru": "Царство Артатамы I в Митанни",
       "source": "https://www.newworldencyclopedia.org/entry/Mitanni",
       "tags": [
-        "Mitanni",
         "Dynasty",
         "Diplomacy",
-        "Egypt"
+        "Egypt",
+        "Mitanni",
+        "King"
       ],
       "type": "political"
     },
@@ -354,9 +359,10 @@
       "name_ru": "Митанни выгоняют хеттов из Ишувы",
       "source": "https://en.wikipedia.org/wiki/Isuwa",
       "tags": [
-        "Mitanni",
+        "Conquest",
         "Hittite",
-        "Conquest"
+        "Mitanni",
+        "War"
       ],
       "type": "military"
     },
@@ -393,7 +399,8 @@
         "Mitanni",
         "Egypt",
         "Diplomacy",
-        "Hurrian"
+        "Hurrian",
+        "Letters"
       ],
       "type": "political"
     },
@@ -428,10 +435,11 @@
       "name_ru": "Хетты завоевывают Митанни",
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
+        "Plundering",
         "Mitanni",
         "Destruction",
         "Hittite",
-        "Plundering"
+        "War"
       ],
       "type": "military"
     },
@@ -536,9 +544,10 @@
       "source": "https://www.worldhistory.org/Hurrians/",
       "tags": [
         "Mitanni",
-        "Assyrian",
         "Invasions",
-        "Hittite"
+        "Assyrian",
+        "Hittite",
+        "War"
       ],
       "type": "military"
     },
@@ -553,10 +562,11 @@
       "name_ru": "Восточное Митанни завоевано ассирийцами",
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
+        "Mitanni",
         "Conquest",
         "Assyrian",
-        "Mitanni",
-        "Hurrian"
+        "Hurrian",
+        "War"
       ],
       "type": "military"
     },
@@ -572,8 +582,7 @@
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Assyrian",
-        "Hittite"
+        "Decline"
       ],
       "type": "political"
     },
@@ -606,9 +615,10 @@
       "name_ru": "Завоевание Ханигалбата Салманасаром I",
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
-        "Mitanni",
         "Conquest",
-        "Assyrian"
+        "Mitanni",
+        "Assyrian",
+        "War"
       ],
       "type": "military"
     },
@@ -623,9 +633,10 @@
       "name_ru": "Ассирийская аннексия территорий Митанни",
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
+        "Assyrian",
         "Mitanni",
         "Annexation",
-        "Assyrian"
+        "War"
       ],
       "type": "political"
     },
@@ -658,9 +669,10 @@
       "name_ru": "Ассирийцы Шубару",
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
+        "Vassalage",
         "Mitanni",
         "Assyrian",
-        "Vassalage"
+        "Assimilation"
       ],
       "type": "political"
     },
@@ -693,11 +705,9 @@
       "name_ru": "Крах царства Митанни",
       "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
-        "Mitanni",
+        "Fall",
         "Collapse",
-        "Hittite",
-        "Assyrian",
-        "Fall"
+        "Mitanni"
       ],
       "type": "historic"
     },
@@ -749,9 +759,11 @@
       "name_ru": "Военное наследие Митанни",
       "source": "https://www.thecollector.com/mitanni-kingdom-bronze-age-superpower/",
       "tags": [
-        "Mitanni",
         "Legacy",
-        "War Science"
+        "Mitanni",
+        "War",
+        "Science",
+        "Cultural Continuity"
       ],
       "type": "military"
     }

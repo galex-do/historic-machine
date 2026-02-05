@@ -21,6 +21,25 @@
     },
     {
       "date": "01.01.1650",
+      "description": "Hattusili I (Labarna II) establishes Hattusa as permanent capital of Hittite Kingdom, constructing massive fortifications and temples",
+      "description_ru": "Хаттусили I (Лабарна II) основывает Хаттусу как постоянную столицу Хеттского царства, строя массивные укрепления и храмы",
+      "era": "BC",
+      "latitude": 40.023,
+      "longitude": 34.621,
+      "name": "Hattusa Becomes Hittite Capital",
+      "name_ru": "Хаттуса - столица хеттов",
+      "source": "https://www.worldhistory.org/Hattusa/",
+      "tags": [
+        "Hittite",
+        "Architecture",
+        "Capital",
+        "Fortification",
+        "City"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1650",
       "description": "Hittite language recorded in cuneiform script on clay tablets, preserving oldest written Indo-European language",
       "description_ru": "Хеттский язык записывался клинописью на глиняных табличках. Это позволило сохранить знание о древнейшем индоевропейском языке",
       "era": "BC",
@@ -37,24 +56,6 @@
       "type": "cultural"
     },
     {
-      "date": "01.01.1650",
-      "description": "Hattusili I (Labarna II) establishes Hattusa as permanent capital of Hittite Kingdom, constructing massive fortifications and temples",
-      "description_ru": "Хаттусили I (Лабарна II) основывает Хаттусу как постоянную столицу Хеттского царства, строя массивные укрепления и храмы",
-      "era": "BC",
-      "latitude": 40.023,
-      "longitude": 34.621,
-      "name": "Hattusa Becomes Hittite Capital",
-      "name_ru": "Хаттуса - столица хеттов",
-      "source": "https://www.worldhistory.org/Hattusa/",
-      "tags": [
-        "Hittite",
-        "Capital",
-        "Fortification",
-        "Architecture"
-      ],
-      "type": "historic"
-    },
-    {
       "date": "01.01.1647",
       "description": "Hattusili I repels major Hurrian invasion from southeast, securing Hittite borders and establishing military dominance in Anatolia",
       "description_ru": "Хаттусили I отражает крупное хурритское вторжение с юго-востока, обеспечивая границы хеттов и устанавливая военное господство в Анатолии",
@@ -65,10 +66,12 @@
       "name_ru": "Хетты отражают вторжение хурритов",
       "source": "https://en.wikipedia.org/wiki/Hattusili_I",
       "tags": [
-        "Hittite",
         "Hurrian",
+        "Hittite",
         "Battle",
-        "Defense"
+        "Defense",
+        "War",
+        "Invasions"
       ],
       "type": "military"
     },
@@ -83,10 +86,11 @@
       "name_ru": "Хетты разграбляют города Ишувы",
       "source": "https://en.wikipedia.org/wiki/Isuwa",
       "tags": [
-        "Hittite",
         "Plundering",
+        "Hittite",
+        "Destruction",
         "Expansion",
-        "Destruction"
+        "War"
       ],
       "type": "military"
     },
@@ -102,9 +106,10 @@
       "source": "https://www.britannica.com/topic/Hittite",
       "tags": [
         "Hittite",
-        "Syria",
+        "Siege",
         "Expansion",
-        "Siege"
+        "Syria",
+        "War"
       ],
       "type": "military"
     },
@@ -128,8 +133,8 @@
     },
     {
       "date": "01.01.1525",
-      "description": "Telipinus issues famous Edict of Telipinus, establishing strict succession rules and ending period of palace murders and instability",
-      "description_ru": "Хеттский царь Телепину издает знаменитый Эдикт Телепину, устанавливающий строгие правила престолонаследия и прекращающий период дворцовых убийств и нестабильности",
+      "description": "The Hittite king Telepinu issues the famous Edict of Telepinu, establishing strict rules of succession. Key provisions: \"The king's heir is the eldest son, then the second, and so on. The king cannot execute relatives at his own discretion; the decision is made by the Pankus, the council of nobles.\" The Edict also forbade the dispossession of an entire family if one person is at fault.",
+      "description_ru": "Хеттский царь Телепину издает знаменитый Эдикт Телепину, устанавливающий строгие правила престолонаследия. Ключевые положения: \"Наследник царя - старший сын, затем второй и так далее. Царь не может казнить родственников по своему произволу, решение принимает Панкус - совет знати.\". Эдикт также запрещал лишать собственности всю семью, если виноват один человек.",
       "era": "BC",
       "latitude": 40,
       "longitude": 34.6,
@@ -137,9 +142,9 @@
       "name_ru": "Издание Эдикта Телепину",
       "source": "https://www.worldhistory.org/Hittite_Civilization/",
       "tags": [
-        "Hittite",
-        "Law",
         "Reform",
+        "Law",
+        "Hittite",
         "Dynasty"
       ],
       "type": "political"
@@ -229,8 +234,9 @@
       "source": "https://en.wikipedia.org/wiki/Tud%E1%B8%ABaliya_III",
       "tags": [
         "Hittite",
+        "Decline",
         "Dynasty",
-        "Decline"
+        "King"
       ],
       "type": "political"
     },
@@ -300,10 +306,11 @@
       "name_ru": "Завоевание Каркемиша хеттами",
       "source": "https://www.britannica.com/place/Carchemish",
       "tags": [
+        "Conquest",
         "Hittite",
         "Syria",
-        "Conquest",
-        "Trade"
+        "Trade",
+        "War"
       ],
       "type": "military"
     },
@@ -318,10 +325,11 @@
       "name_ru": "Египетское брачное предложение",
       "source": "https://www.worldhistory.org/Suppiluliumas_I/",
       "tags": [
-        "Hittite",
         "Diplomacy",
+        "Egypt",
+        "Hittite",
         "Dynasty",
-        "Egypt"
+        "Letters"
       ],
       "type": "political"
     },
@@ -338,7 +346,9 @@
       "tags": [
         "Hittite",
         "Assassination",
-        "Egypt"
+        "War",
+        "Egypt",
+        "Syria"
       ],
       "type": "political"
     },
@@ -388,10 +398,11 @@
       "name_ru": "Мурсили II - царь хеттов",
       "source": "https://en.wikipedia.org/wiki/Mursili_II",
       "tags": [
+        "Plague",
         "Hittite",
         "Dynasty",
-        "Plague",
-        "Crisis"
+        "Crisis",
+        "King"
       ],
       "type": "political"
     },
@@ -423,10 +434,11 @@
       "name_ru": "Хетты вассализируют Армянское нагорье",
       "source": "https://en.wikipedia.org/wiki/Hayasa-Azzi",
       "tags": [
-        "Hittite",
         "Conquest",
+        "Hittite",
         "Vassalage",
-        "Anatolia"
+        "Anatolia",
+        "War"
       ],
       "type": "military"
     },
@@ -441,10 +453,11 @@
       "name_ru": "Завоевание Арцавы хеттами",
       "source": "https://en.wikipedia.org/wiki/Arzawa",
       "tags": [
-        "Hittite",
         "Conquest",
         "Anatolia",
-        "Expansion"
+        "Expansion",
+        "Hittite",
+        "War"
       ],
       "type": "military"
     },
@@ -479,7 +492,7 @@
       "tags": [
         "Hittite",
         "Dynasty",
-        "Egypt"
+        "King"
       ],
       "type": "political"
     },
@@ -548,10 +561,11 @@
       "name_ru": "Хеттский контроль южной Сирии",
       "source": "https://timemaps.com/civilizations/the-hittites/",
       "tags": [
+        "Expansion",
+        "Egypt",
         "Hittite",
         "Syria",
-        "Expansion",
-        "Egypt"
+        "War"
       ],
       "type": "political"
     },
@@ -586,9 +600,8 @@
       "source": "https://en.wikipedia.org/wiki/Tudhaliya_IV",
       "tags": [
         "Hittite",
-        "Dynasty",
-        "Assyrian",
-        "King"
+        "King",
+        "Dynasty"
       ],
       "type": "political"
     },
@@ -603,9 +616,10 @@
       "name_ru": "Битва при Нихрии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Nihriya",
       "tags": [
-        "Hittite",
+        "Battle",
         "Assyrian",
-        "Battle"
+        "Hittite",
+        "War"
       ],
       "type": "military"
     },
@@ -624,7 +638,7 @@
         "Religious",
         "Architecture",
         "Art",
-        "Building",
+        "Building 🏠",
         "Temple"
       ],
       "type": "cultural"
@@ -640,10 +654,11 @@
       "name_ru": "Аннексия хеттами Кипра",
       "source": "https://timemaps.com/civilizations/the-hittites/",
       "tags": [
+        "Conquest",
+        "Naval",
         "Hittite",
         "Cyprus",
-        "Conquest",
-        "Naval"
+        "War"
       ],
       "type": "military"
     },
@@ -678,8 +693,9 @@
       "tags": [
         "Hittite",
         "Cyprus",
+        "Battle",
         "Naval",
-        "Battle"
+        "War"
       ],
       "type": "military"
     },
@@ -694,10 +710,9 @@
       "name_ru": "Набеги народов моря на Киликию",
       "source": "https://www.worldhistory.org/Sea_Peoples/",
       "tags": [
-        "Hittite",
-        "Raiders",
-        "Mediterranean",
         "Cilicia",
+        "Mediterranean",
+        "Hittite",
         "Invasions"
       ],
       "type": "military"
@@ -713,9 +728,10 @@
       "name_ru": "Великая засуха в Хеттской империи",
       "source": "https://www.worldhistory.org/Hittite_Civilization/",
       "tags": [
+        "Climate Crisis",
         "Hittite",
         "Famine",
-        "Climate Crisis"
+        "Disaster"
       ],
       "type": "historic"
     },
@@ -767,8 +783,9 @@
       "tags": [
         "Hittite",
         "Assyrian",
+        "Conquest",
         "Annexation",
-        "Conquest"
+        "War"
       ],
       "type": "military"
     },
@@ -783,18 +800,19 @@
       "name_ru": "Хаттуса разрушена",
       "source": "https://www.worldhistory.org/Hattusa/",
       "tags": [
-        "Hittite",
         "Collapse",
-        "Destruction",
+        "Capital",
         "Abandonment",
-        "Capital"
+        "Destruction",
+        "Hittite",
+        "City"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.1175",
-      "description": "Suppiluliuma II disappears from historical record, marking complete end of Hittite imperial administration",
-      "description_ru": "Суппилулиума II исчезает из исторических записей, знаменуя полный конец хеттской имперской администрации",
+      "description": "Suppiluliuma II disappears from historical record, marking complete end of Hittite imperial administration. The Hittite Empire collapses due to invasions and internal strife",
+      "description_ru": "Суппилулиума II исчезает из исторических записей, знаменуя полный конец хеттской имперской администрации. Хеттская империя рушится из-за вторжений и внутренних раздоров",
       "era": "BC",
       "latitude": 40,
       "longitude": 34.6,
@@ -802,9 +820,11 @@
       "name_ru": "Конец Хеттской империи",
       "source": "https://timemaps.com/civilizations/the-hittites/",
       "tags": [
-        "Hittite",
         "Collapse",
-        "End"
+        "End",
+        "Hittite",
+        "Empire",
+        "Invasions"
       ],
       "type": "historic"
     },
@@ -873,10 +893,11 @@
       "name_ru": "Начало ассирийского завоевания нео-хеттских государств",
       "source": "https://en.wikipedia.org/wiki/Syro-Hittite_states",
       "tags": [
-        "Hittite",
-        "Assyrian",
         "Conquest",
-        "Vassalage"
+        "Vassalage",
+        "Assyrian",
+        "Hittite",
+        "War"
       ],
       "type": "military"
     }

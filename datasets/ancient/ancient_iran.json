@@ -13,9 +13,9 @@
       "source": "https://en.wikipedia.org/wiki/Elam",
       "tags": [
         "Dynasty",
-        "Administration",
         "Kingdom",
-        "Elamites"
+        "Elamites",
+        "Administration"
       ],
       "type": "political"
     },
@@ -49,10 +49,10 @@
       "source": "https://en.wikipedia.org/wiki/Elam",
       "tags": [
         "Conquest",
+        "Mesopotamia",
         "Destruction",
         "Elamites",
-        "Plundering",
-        "Mesopotamia"
+        "Plundering"
       ],
       "type": "military"
     },
@@ -68,8 +68,8 @@
       "source": "https://en.wikipedia.org/wiki/Elam",
       "tags": [
         "Dynasty",
-        "Expansion",
         "Architecture",
+        "Expansion",
         "Elamites"
       ],
       "type": "political"
@@ -85,12 +85,12 @@
       "name_ru": "Основание Чога-Занбиль",
       "source": "https://en.wikipedia.org/wiki/Chogha_Zanbil",
       "tags": [
-        "Temple",
         "Architecture",
+        "Temple",
         "Religious",
-        "Building",
-        "Elamites",
-        "City"
+        "Building 🏠",
+        "City",
+        "Elamites"
       ],
       "type": "religious"
     },
@@ -105,9 +105,10 @@
       "name_ru": "Эламиты завоевывают Вавилон",
       "source": "https://en.wikipedia.org/wiki/Shutruk-Nakhunte",
       "tags": [
-        "Babylonian",
         "Conquest",
+        "Babylonian",
         "Elamites",
+        "War",
         "Plundering"
       ],
       "type": "military"
@@ -123,9 +124,10 @@
       "name_ru": "Вавилон побеждает Элам",
       "source": "https://en.wikipedia.org/wiki/Elam",
       "tags": [
-        "Babylonian",
         "Conquest",
-        "Elamites"
+        "Babylonian",
+        "Elamites",
+        "War"
       ],
       "type": "military"
     },
@@ -157,10 +159,10 @@
       "name_ru": "Возникновение царства Манна",
       "source": "https://en.wikipedia.org/wiki/Mannaea",
       "tags": [
-        "Mannai",
-        "Foundation",
         "Kingdom",
-        "Independence"
+        "Foundation",
+        "Independence",
+        "Mannai"
       ],
       "type": "political"
     },
@@ -175,10 +177,10 @@
       "name_ru": "Формирование мидийской конфедерации",
       "source": "https://en.wikipedia.org/wiki/Medes",
       "tags": [
-        "Medes",
+        "Unification",
         "Foundation",
-        "Tribal",
-        "Unification"
+        "Medes",
+        "Tribal"
       ],
       "type": "political"
     },
@@ -193,11 +195,12 @@
       "name_ru": "Походы Ассирии в Иран",
       "source": "https://en.wikipedia.org/wiki/Shalmaneser_III",
       "tags": [
-        "Medes",
         "Expansion",
-        "Mannai",
         "Assyrian",
-        "Tribute"
+        "War",
+        "Tribute",
+        "Medes",
+        "Mannai"
       ],
       "type": "military"
     },
@@ -212,11 +215,11 @@
       "name_ru": "Дипломатия Манны и Ассирии",
       "source": "https://en.wikipedia.org/wiki/Mannaea",
       "tags": [
-        "Mannai",
-        "Tribute",
         "Diplomacy",
         "Assyrian",
-        "Treaty"
+        "Tribute",
+        "Treaty",
+        "Mannai"
       ],
       "type": "political"
     },
@@ -249,9 +252,9 @@
       "source": "https://en.wikipedia.org/wiki/Elam",
       "tags": [
         "Art",
-        "Metallurgy",
         "Bronze",
         "Culture",
+        "Metallurgy",
         "Elamites"
       ],
       "type": "cultural"
@@ -267,9 +270,9 @@
       "name_ru": "Торговые сети Манны",
       "source": "https://en.wikipedia.org/wiki/Mannaea",
       "tags": [
+        "Trade",
         "Economic",
-        "Mannai",
-        "Trade"
+        "Mannai"
       ],
       "type": "historic"
     },
@@ -284,30 +287,13 @@
       "name_ru": "Развитие мидийской кавалерии",
       "source": "https://en.wikipedia.org/wiki/Medes",
       "tags": [
+        "War",
         "Medes",
         "Cavalry",
         "Tactics",
-        "War Science"
+        "Science"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0720",
-      "description": "Mannai King Aza allies with Urartu against Assyrian pressure, joining anti-Assyrian coalition in attempt to resist Neo-Assyrian expansion",
-      "description_ru": "Царь Манны Аза заключает союз с Урарту против ассирийской агрессии, присоединяясь к антиассирийской коалиции",
-      "era": "BC",
-      "latitude": 36.6575,
-      "longitude": 46.2161,
-      "name": "Mannai-Urartu Alliance",
-      "name_ru": "Союз Манны и Урарту",
-      "source": "https://en.wikipedia.org/wiki/Mannaea",
-      "tags": [
-        "Mannai",
-        "Alliance",
-        "Urartu",
-        "Diplomacy"
-      ],
-      "type": "political"
     },
     {
       "date": "01.01.0716",
@@ -322,9 +308,9 @@
       "tags": [
         "Conquest",
         "Assyrian",
-        "Mannai",
-        "Sargon II",
-        "War"
+        "War",
+        "Sargon II 👑",
+        "Mannai"
       ],
       "type": "military"
     },
@@ -340,9 +326,9 @@
       "source": "https://en.wikipedia.org/wiki/Parsua",
       "tags": [
         "Persian",
-        "Foundation",
+        "Kingdom",
         "Migration",
-        "Kingdom"
+        "Foundation"
       ],
       "type": "political"
     },
@@ -357,8 +343,8 @@
       "name_ru": "Киммерийские вторжения в Иран",
       "source": "https://en.wikipedia.org/wiki/Cimmerians",
       "tags": [
-        "Cimmerian",
         "Invasions",
+        "Cimmerian",
         "Mannai"
       ],
       "type": "military"
@@ -374,10 +360,11 @@
       "name_ru": "Скифское присутствие в Иране",
       "source": "https://en.wikipedia.org/wiki/Scythians",
       "tags": [
-        "Scythian",
+        "Culture",
         "Invasions",
         "Cavalry",
-        "Culture"
+        "Scythian",
+        "Cultural Continuity"
       ],
       "type": "military"
     },
@@ -392,10 +379,10 @@
       "name_ru": "Фраорт объединяет мидийские племена",
       "source": "https://en.wikipedia.org/wiki/Phraortes",
       "tags": [
-        "Medes",
         "Unification",
         "Dynasty",
-        "Independence"
+        "Independence",
+        "Medes"
       ],
       "type": "political"
     },
@@ -410,10 +397,11 @@
       "name_ru": "Последнее сопротивление Элама",
       "source": "https://en.wikipedia.org/wiki/Elam",
       "tags": [
+        "Conquest",
         "Assyrian",
-        "Decline",
         "Elamites",
-        "Conquest"
+        "War",
+        "Decline"
       ],
       "type": "political"
     },
@@ -425,13 +413,14 @@
       "latitude": 36.3661,
       "longitude": 43.1528,
       "name": "Death of Phraortes",
-      "name_ru": "Смерть Фраорта",
+      "name_ru": "Смерть Фраорта Мидийского",
       "source": "https://en.wikipedia.org/wiki/Phraortes",
       "tags": [
-        "Medes",
-        "Assyrian",
         "Battle",
-        "Death"
+        "Death",
+        "Assyrian",
+        "War",
+        "Medes"
       ],
       "type": "military"
     },
@@ -445,9 +434,9 @@
       "name": "Gabay, median city",
       "name_ru": "Мидийский центр Габай",
       "tags": [
-        "Medes",
         "City",
-        "Economic"
+        "Economic",
+        "Medes"
       ],
       "type": "historic"
     },
@@ -462,11 +451,11 @@
       "name_ru": "Ассирия разрушает Сузы",
       "source": "https://en.wikipedia.org/wiki/Elam",
       "tags": [
-        "Assyrian",
         "Destruction",
-        "War",
+        "Assyrian",
+        "Elamites",
         "Fall",
-        "Elamites"
+        "War"
       ],
       "type": "military"
     },
@@ -481,11 +470,11 @@
       "name_ru": "Кочевники опустошают Манну",
       "source": "https://en.wikipedia.org/wiki/Mannaea",
       "tags": [
-        "Mannai",
-        "Scythian",
-        "Cimmerian",
+        "Destruction",
         "Invasions",
-        "Destruction"
+        "Cimmerian",
+        "Scythian",
+        "Mannai"
       ],
       "type": "military"
     },
@@ -500,10 +489,11 @@
       "name_ru": "Военные реформы Киаксара",
       "source": "https://en.wikipedia.org/wiki/Cyaxares",
       "tags": [
-        "Medes",
-        "Army",
         "Innovation",
-        "War Science"
+        "War",
+        "Army",
+        "Medes",
+        "Science"
       ],
       "type": "political"
     },
@@ -518,10 +508,10 @@
       "name_ru": "Основание Мидийской империи",
       "source": "https://en.wikipedia.org/wiki/Medes",
       "tags": [
-        "Medes",
+        "Capital",
         "Empire",
         "Foundation",
-        "Capital"
+        "Medes"
       ],
       "type": "political"
     },
@@ -536,10 +526,10 @@
       "name_ru": "Мидийско-вавилонский союз",
       "source": "https://en.wikipedia.org/wiki/Cyaxares",
       "tags": [
-        "Medes",
+        "Diplomacy",
         "Babylonian",
         "Alliance",
-        "Diplomacy",
+        "Medes",
         "Marriage",
         "Chaldean"
       ],
@@ -556,10 +546,11 @@
       "name_ru": "Мидия завоевывает Манну",
       "source": "https://en.wikipedia.org/wiki/Mannaea",
       "tags": [
-        "Annexation",
-        "Mannai",
+        "Conquest",
+        "War",
         "Medes",
-        "Conquest"
+        "Annexation",
+        "Mannai"
       ],
       "type": "military"
     },
@@ -574,13 +565,14 @@
       "name_ru": "Битва при Галисе и затмение",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Halys",
       "tags": [
-        "Medes",
         "Battle",
+        "Babylonian",
         "Peace",
+        "War",
         "Treaty",
+        "Medes",
         "Eclipse",
-        "Nebuchadnezzar II",
-        "Babylonian"
+        "Nebuchadnezzar II 👑"
       ],
       "type": "military"
     },
@@ -596,9 +588,9 @@
       "source": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
       "tags": [
         "Persian",
+        "Tribute",
         "Medes",
-        "Vassalage",
-        "Tribute"
+        "Vassalage"
       ],
       "type": "political"
     },
@@ -613,9 +605,9 @@
       "name_ru": "Пик Мидийской империи",
       "source": "https://en.wikipedia.org/wiki/Medes",
       "tags": [
-        "Medes",
         "Empire",
         "Expansion",
+        "Medes",
         "Golden Age"
       ],
       "type": "political"
@@ -631,8 +623,9 @@
       "name_ru": "Астиаг - царь Мидии",
       "source": "https://en.wikipedia.org/wiki/Astyages",
       "tags": [
-        "Medes",
-        "Dynasty"
+        "Dynasty",
+        "King",
+        "Medes"
       ],
       "type": "political"
     },
@@ -648,10 +641,10 @@
       "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
       "tags": [
         "Persian",
-        "Medes",
         "Independence",
+        "Cyrus the Great 👑",
         "Rebellion",
-        "Cyrus the Great",
+        "Medes",
         "Achaemenid"
       ],
       "type": "military"
@@ -667,12 +660,13 @@
       "name_ru": "Падение Мидийской империи",
       "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
       "tags": [
+        "Conquest",
         "Persian",
-        "Medes",
         "Battle",
         "Fall",
-        "Conquest",
-        "Cyrus the Great"
+        "Cyrus the Great 👑",
+        "War",
+        "Medes"
       ],
       "type": "military"
     }

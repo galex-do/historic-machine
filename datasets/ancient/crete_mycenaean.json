@@ -12,10 +12,10 @@
       "name_ru": "Раннее минойское заселение",
       "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
       "tags": [
-        "Minoan",
-        "Settlement",
+        "Bronze Age",
         "Agriculture",
-        "Bronze Age"
+        "Minoan",
+        "Settlement"
       ],
       "type": "historic"
     },
@@ -30,12 +30,12 @@
       "name_ru": "Минойское мореходство",
       "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
       "tags": [
-        "Minoan",
-        "Naval",
-        "Trade",
         "Technology",
+        "Trade",
         "Bronze Age",
-        "Maritime"
+        "Maritime",
+        "Naval",
+        "Minoan"
       ],
       "type": "historic"
     },
@@ -50,11 +50,11 @@
       "name_ru": "Возведение толосных гробниц на Крите",
       "source": "https://en.wikipedia.org/wiki/Tholos",
       "tags": [
-        "Minoan",
         "Architecture",
-        "Tomb",
         "Bronze Age",
-        "Burial"
+        "Minoan",
+        "Burial",
+        "Tomb"
       ],
       "type": "religious"
     },
@@ -69,12 +69,12 @@
       "name_ru": "Начало первого дворцового периода",
       "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
       "tags": [
-        "Minoan",
-        "Palace",
+        "Civilization",
         "Architecture",
-        "Building",
+        "Building 🏠",
+        "Minoan",
         "City",
-        "Civilization"
+        "Palace"
       ],
       "type": "historic"
     },
@@ -89,10 +89,10 @@
       "name_ru": "Критская иероглифическая письменность",
       "source": "https://en.wikipedia.org/wiki/Cretan_hieroglyphs",
       "tags": [
-        "Minoan",
         "Writing",
+        "Innovation",
         "Language",
-        "Innovation"
+        "Minoan"
       ],
       "type": "cultural"
     },
@@ -107,11 +107,11 @@
       "name_ru": "Расширение дворца Кносса",
       "source": "https://en.wikipedia.org/wiki/Knossos",
       "tags": [
-        "Minoan",
-        "Palace",
         "Architecture",
-        "Building",
-        "Art"
+        "Art",
+        "Building 🏠",
+        "Minoan",
+        "Palace"
       ],
       "type": "historic"
     },
@@ -126,11 +126,11 @@
       "name_ru": "Развитие линейного письма А",
       "source": "https://en.wikipedia.org/wiki/Linear_A",
       "tags": [
-        "Minoan",
         "Writing",
-        "Language",
         "Innovation",
-        "Mystery"
+        "Language",
+        "Mystery",
+        "Minoan"
       ],
       "type": "cultural"
     },
@@ -145,9 +145,9 @@
       "name_ru": "Поклонение богине со змеями",
       "source": "https://en.wikipedia.org/wiki/Minoan_religion",
       "tags": [
-        "Minoan",
+        "Culture",
         "Religious",
-        "Culture"
+        "Minoan"
       ],
       "type": "religious"
     },
@@ -162,11 +162,11 @@
       "name_ru": "Ритуал прыжков через быка",
       "source": "https://en.wikipedia.org/wiki/Bull-leaping",
       "tags": [
-        "Minoan",
-        "Religious",
+        "Art",
         "Culture",
-        "Sport",
-        "Art"
+        "Religious",
+        "Minoan",
+        "Sport"
       ],
       "type": "religious"
     },
@@ -181,10 +181,10 @@
       "name_ru": "Разрушение первых дворцов",
       "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
       "tags": [
+        "Destruction",
         "Minoan",
         "Disaster",
-        "Earthquake",
-        "Destruction"
+        "Earthquake"
       ],
       "type": "historic"
     },
@@ -199,13 +199,13 @@
       "name_ru": "Второй минойский дворцовый период",
       "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
       "tags": [
-        "Minoan",
-        "Palace",
         "Architecture",
-        "Building",
+        "Rise",
+        "Building 🏠",
+        "Minoan",
         "Golden Age",
-        "Wealth",
-        "Rise"
+        "Palace",
+        "Wealth"
       ],
       "type": "historic"
     },
@@ -220,10 +220,10 @@
       "name_ru": "Возвышение микенской цивилизации",
       "source": "https://en.wikipedia.org/wiki/Mycenaean_Greece",
       "tags": [
-        "Mycenaean",
         "Greek",
+        "Civilization",
         "Fortification",
-        "Civilization"
+        "Mycenaean"
       ],
       "type": "historic"
     },
@@ -238,9 +238,9 @@
       "name_ru": "Керамика морского стиля",
       "source": "https://en.wikipedia.org/wiki/Minoan_pottery",
       "tags": [
-        "Minoan",
         "Art",
         "Culture",
+        "Minoan",
         "Pottery"
       ],
       "type": "cultural"
@@ -256,11 +256,11 @@
       "name_ru": "Минойская торговля на море",
       "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
       "tags": [
-        "Minoan",
-        "Trade",
-        "Economic",
         "Egypt",
-        "Maritime"
+        "Trade",
+        "Maritime",
+        "Minoan",
+        "Economic"
       ],
       "type": "historic"
     },
@@ -275,12 +275,12 @@
       "name_ru": "Циклопические укрепления Микен",
       "source": "https://en.wikipedia.org/wiki/Mycenaean_Greece",
       "tags": [
-        "Mycenaean",
         "Greek",
         "Architecture",
-        "Building",
+        "Building 🏠",
+        "Fortification",
         "Legend",
-        "Fortification"
+        "Mycenaean"
       ],
       "type": "historic"
     },
@@ -295,11 +295,11 @@
       "name_ru": "Разрушение от цунами Теры",
       "source": "https://en.wikipedia.org/wiki/Minoan_eruption",
       "tags": [
+        "Destruction",
+        "Maritime",
         "Minoan",
         "Disaster",
-        "Tsunami",
-        "Destruction",
-        "Maritime"
+        "Tsunami"
       ],
       "type": "historic"
     },
@@ -314,10 +314,10 @@
       "name_ru": "Извержение вулкана Тера",
       "source": "https://en.wikipedia.org/wiki/Minoan_eruption",
       "tags": [
+        "Destruction",
         "Minoan",
         "Disaster",
-        "Volcano",
-        "Destruction"
+        "Volcano"
       ],
       "type": "historic"
     },
@@ -332,11 +332,11 @@
       "name_ru": "Коллапс минойского сельского хозяйства",
       "source": "https://en.wikipedia.org/wiki/Minoan_eruption",
       "tags": [
-        "Minoan",
-        "Disaster",
+        "Climate Crisis",
         "Agriculture",
+        "Minoan",
         "Economic",
-        "Climate Crisis"
+        "Disaster"
       ],
       "type": "historic"
     },
@@ -351,11 +351,11 @@
       "name_ru": "Развитие линейного письма Б",
       "source": "https://en.wikipedia.org/wiki/Linear_B",
       "tags": [
-        "Mycenaean",
         "Greek",
         "Writing",
+        "Innovation",
         "Language",
-        "Innovation"
+        "Mycenaean"
       ],
       "type": "cultural"
     },
@@ -370,10 +370,11 @@
       "name_ru": "Микенское завоевание Крита",
       "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
       "tags": [
-        "Minoan",
-        "Mycenaean",
         "Greek",
-        "Conquest"
+        "Conquest",
+        "Minoan",
+        "War",
+        "Mycenaean"
       ],
       "type": "military"
     },
@@ -388,11 +389,11 @@
       "name_ru": "Царские шахтные гробницы Микен",
       "source": "https://en.wikipedia.org/wiki/Grave_Circle_A,_Mycenae",
       "tags": [
-        "Mycenaean",
         "Greek",
-        "Tomb",
         "Art",
-        "Treasure"
+        "Tomb",
+        "Treasure",
+        "Mycenaean"
       ],
       "type": "historic"
     },
@@ -407,11 +408,11 @@
       "name_ru": "Микенская дворцовая экономика",
       "source": "https://en.wikipedia.org/wiki/Mycenaean_Greece",
       "tags": [
-        "Mycenaean",
         "Greek",
+        "Writing",
         "Economic",
         "Administration",
-        "Writing"
+        "Mycenaean"
       ],
       "type": "historic"
     },
@@ -426,11 +427,12 @@
       "name_ru": "Окончательное разрушение Кносса",
       "source": "https://en.wikipedia.org/wiki/Knossos",
       "tags": [
-        "Minoan",
-        "Mycenaean",
         "Greek",
         "Destruction",
-        "Fall"
+        "Minoan",
+        "City",
+        "Fall",
+        "Mycenaean"
       ],
       "type": "historic"
     },
@@ -445,11 +447,11 @@
       "name_ru": "Львиные ворота Микен",
       "source": "https://en.wikipedia.org/wiki/Lion_Gate",
       "tags": [
-        "Mycenaean",
         "Greek",
         "Architecture",
         "Art",
-        "Building"
+        "Building 🏠",
+        "Mycenaean"
       ],
       "type": "historic"
     },
@@ -464,11 +466,12 @@
       "name_ru": "Сокровищница Атрея",
       "source": "https://en.wikipedia.org/wiki/Treasury_of_Atreus",
       "tags": [
-        "Mycenaean",
         "Greek",
         "Architecture",
+        "Building 🏠",
         "Tomb",
-        "Building"
+        "Treasure",
+        "Mycenaean"
       ],
       "type": "historic"
     },
@@ -483,12 +486,12 @@
       "name_ru": "Вторжение народов моря",
       "source": "https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse",
       "tags": [
-        "Mycenaean",
         "Greek",
         "Destruction",
         "Mystery",
         "Invasions",
-        "Decline"
+        "Decline",
+        "Mycenaean"
       ],
       "type": "military"
     },
@@ -503,11 +506,11 @@
       "name_ru": "Утрата линейного письма Б",
       "source": "https://en.wikipedia.org/wiki/Linear_B",
       "tags": [
-        "Mycenaean",
         "Greek",
         "Writing",
         "Language",
-        "Decline"
+        "Decline",
+        "Mycenaean"
       ],
       "type": "cultural"
     },
@@ -522,13 +525,13 @@
       "name_ru": "Троянская война",
       "source": "https://en.wikipedia.org/wiki/Trojan_War",
       "tags": [
-        "Mycenaean",
         "Greek",
-        "War",
         "Battle",
-        "Legend",
+        "War",
+        "Uncertain",
         "Troy",
-        "Uncertain"
+        "Legend",
+        "Mycenaean"
       ],
       "type": "military"
     },
@@ -543,11 +546,11 @@
       "name_ru": "Коллапс микенской цивилизации",
       "source": "https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse",
       "tags": [
-        "Mycenaean",
         "Greek",
-        "Fall",
         "Destruction",
-        "Collapse"
+        "Collapse",
+        "Fall",
+        "Mycenaean"
       ],
       "type": "historic"
     }

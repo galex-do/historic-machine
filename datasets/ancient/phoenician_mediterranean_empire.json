@@ -33,11 +33,12 @@
       "name_ru": "Раннее финикийское стеклоделие",
       "source": "https://phoenicia.org/glass.html",
       "tags": [
-        "Tyre",
         "Technology",
         "Trade",
+        "Glass",
         "Phoenician",
-        "Glass"
+        "Tyre",
+        "Innovation"
       ],
       "type": "scientific"
     },
@@ -61,23 +62,6 @@
     },
     {
       "date": "01.01.1200",
-      "description": "After Bronze Age collapse destroys neighboring civilizations, Phoenicians survive intact and begin unprecedented maritime expansion across Mediterranean",
-      "description_ru": "После катастрофы бронзового века, разрушившей соседние цивилизации, финикийцы остаются невредимыми и начинают беспрецедентную морскую экспансию в Средиземноморье",
-      "era": "BC",
-      "latitude": 33.894,
-      "longitude": 35.501,
-      "name": "Phoenician Renaissance Begins",
-      "name_ru": "Начало финикийского Ренессанса",
-      "source": "https://www.worldhistory.org/phoenicia/",
-      "tags": [
-        "Maritime",
-        "Expansion",
-        "Phoenician"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1200",
       "description": "Phoenicians develop first true alphabet with 22 consonants, revolutionizing writing and becoming foundation for Greek, Latin and modern alphabets",
       "description_ru": "Финикийцы создают первый настоящий алфавит из 22 согласных, революционизируя письменность и став основой для греческого, латинского и современных алфавитов",
       "era": "BC",
@@ -93,6 +77,23 @@
         "Phoenician"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.1200",
+      "description": "After Bronze Age collapse destroys neighboring civilizations, Phoenicians survive intact and begin unprecedented maritime expansion across Mediterranean",
+      "description_ru": "После катастрофы бронзового века, разрушившей соседние цивилизации, финикийцы остаются невредимыми и начинают беспрецедентную морскую экспансию в Средиземноморье",
+      "era": "BC",
+      "latitude": 33.894,
+      "longitude": 35.501,
+      "name": "Phoenician Renaissance Begins",
+      "name_ru": "Начало финикийского Ренессанса",
+      "source": "https://www.worldhistory.org/phoenicia/",
+      "tags": [
+        "Maritime",
+        "Expansion",
+        "Phoenician"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.1100",
@@ -115,25 +116,6 @@
     },
     {
       "date": "01.01.1100",
-      "description": "Phoenicians establish Utica in North Africa, becoming oldest Phoenician settlement in Tunisia and major trading post",
-      "description_ru": "Финикийцы основывают Утику в Северной Африке, ставшую древнейшим финикийским поселением в Тунисе и крупным торговым центром",
-      "era": "BC",
-      "latitude": 37.056,
-      "longitude": 10.062,
-      "name": "Founding of Utica",
-      "name_ru": "Основание финикийцами Утики",
-      "source": "https://www.worldhistory.org/Phoenician_Colonization/",
-      "tags": [
-        "Colonization",
-        "Trade",
-        "City",
-        "Phoenician",
-        "Carthage"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1100",
       "description": "Phoenicians establish colony of Kition on Cyprus to secure access to rich copper deposits, founding major Mediterranean mining center",
       "description_ru": "Финикийцы основывают колонию Китион на Кипре для доступа к богатым медным месторождениям",
       "era": "BC",
@@ -148,6 +130,25 @@
         "Copper",
         "Phoenician",
         "Sidon"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1100",
+      "description": "Phoenicians establish Utica in North Africa, becoming oldest Phoenician settlement in Tunisia and major trading post",
+      "description_ru": "Финикийцы основывают Утику в Северной Африке, ставшую древнейшим финикийским поселением в Тунисе и крупным торговым центром",
+      "era": "BC",
+      "latitude": 37.056,
+      "longitude": 10.062,
+      "name": "Founding of Utica",
+      "name_ru": "Основание финикийцами Утики",
+      "source": "https://www.worldhistory.org/Phoenician_Colonization/",
+      "tags": [
+        "Colonization",
+        "Trade",
+        "City",
+        "Phoenician",
+        "Carthage"
       ],
       "type": "historic"
     },
@@ -330,11 +331,11 @@
       "latitude": 38.116,
       "longitude": 13.361,
       "name": "Founding of Panormus",
-      "name_ru": "Основание Панорма",
+      "name_ru": "Основание финикийского Панорма",
       "source": "https://phoenician.org/phoenician_colonies/",
       "tags": [
-        "Colonization",
         "Phoenician",
+        "Colonization",
         "City",
         "Sicily"
       ],
@@ -354,7 +355,9 @@
         "Maritime",
         "Technology",
         "Phoenician",
-        "Naval"
+        "Naval",
+        "War",
+        "Science"
       ],
       "type": "military"
     },
@@ -414,6 +417,27 @@
     },
     {
       "date": "01.01.0600",
+      "description": "Sidonian artisans perfect transparent glass production by adding antimony, establishing Phoenician dominance in luxury glassware exported across ancient world",
+      "description_ru": "Сидонские мастера совершенствуют производство прозрачного стекла, добавляя сурьму, устанавливая финикийское господство в производстве роскошной стеклянной посуды, экспортируемой по всему древнему миру",
+      "era": "BC",
+      "latitude": 33.563,
+      "longitude": 35.375,
+      "name": "Transparent Glass Perfected",
+      "name_ru": "Сидонское прозрачное стекло",
+      "source": "https://phoenicia.org/glass.html",
+      "tags": [
+        "Sidon",
+        "Trade",
+        "Phoenician",
+        "Technology",
+        "Glass",
+        "Science",
+        "Innovation"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.0600",
       "description": "Phoenician monopoly on rare purple dye extracted from murex snails reaches apex, with Tyrian purple becoming most valuable commodity in ancient world",
       "description_ru": "Финикийская монополия на редкий пурпурный краситель из раковин мурекса достигает апогея; тирский пурпур становится самым ценным товаром древнего мира",
       "era": "BC",
@@ -427,25 +451,6 @@
         "Tyre"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.0600",
-      "description": "Sidonian artisans perfect transparent glass production by adding antimony, establishing Phoenician dominance in luxury glassware exported across ancient world",
-      "description_ru": "Сидонские мастера совершенствуют производство прозрачного стекла, добавляя сурьму, устанавливая финикийское господство в производстве роскошной стеклянной посуды, экспортируемой по всему древнему миру",
-      "era": "BC",
-      "latitude": 33.563,
-      "longitude": 35.375,
-      "name": "Transparent Glass Perfected",
-      "name_ru": "Сидонское прозрачное стекло",
-      "source": "https://phoenicia.org/glass.html",
-      "tags": [
-        "Sidon",
-        "Technology",
-        "Glass",
-        "Trade",
-        "Phoenician"
-      ],
-      "type": "scientific"
     },
     {
       "date": "01.01.0586",
@@ -478,10 +483,11 @@
       "name_ru": "Карфагенская экспансия в Иберии",
       "source": "https://en.wikipedia.org/wiki/Ancient_Carthage",
       "tags": [
-        "Carthage",
-        "Expansion",
         "Iberia",
-        "Silver"
+        "Expansion",
+        "Carthage",
+        "Silver",
+        "Mining"
       ],
       "type": "political"
     },
@@ -496,16 +502,18 @@
       "name_ru": "Тир капитулирует перед Вавилоном",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Tyre_(586–573_BC)",
       "tags": [
+        "Chaldean",
         "Tyre",
+        "Conquest",
         "Phoenician",
         "Babylonian",
-        "Conquest",
-        "Chaldean"
+        "War",
+        "Destruction"
       ],
       "type": "political"
     },
     {
-      "date": "01.01.0550",
+      "date": "01.01.0540",
       "description": "Phoenician shipwrights build powerful fleet for Persian Empire, contributing hundreds of warships that become backbone of Persian naval power",
       "description_ru": "Финикийские кораблестроители строят мощный флот для Персидской империи, поставляя сотни боевых кораблей, ставших основой персидской морской мощи",
       "era": "BC",
@@ -515,11 +523,11 @@
       "name_ru": "Финикийский флот для Персии",
       "source": "https://www.worldhistory.org/phoenicia/",
       "tags": [
-        "Maritime",
-        "Naval",
-        "Phoenician",
         "Sidon",
-        "Persian"
+        "Naval",
+        "Maritime",
+        "Persian",
+        "Phoenician"
       ],
       "type": "military"
     },
@@ -534,14 +542,15 @@
       "name_ru": "Персидское завоевание Финикии",
       "source": "https://www.worldhistory.org/phoenicia/",
       "tags": [
+        "Vassalage",
         "Persian",
         "Conquest",
         "Phoenician",
-        "Cyrus the Great",
+        "Cyrus the Great 👑",
         "Tyre",
         "Sidon",
         "Byblos",
-        "Vassalage"
+        "War"
       ],
       "type": "military"
     },
@@ -556,34 +565,14 @@
       "name_ru": "Финикийский флот в греко-персидских войнах",
       "source": "https://www.metmuseum.org/toah/hd/phoe/hd_phoe.htm",
       "tags": [
+        "Naval",
         "Maritime",
         "Persian",
-        "Phoenician",
-        "Naval",
         "Greek",
-        "Greek-Persian Wars"
+        "Phoenician",
+        "War"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0450",
-      "description": "Greek historian Herodotus visits Tyre and records from temple priests that city was founded circa 2750 BC, documenting Phoenician historical traditions",
-      "description_ru": "Греческий историк Геродот посещает Тир и записывает со слов храмовых жрецов, что город основан около 2750 г. до н.э., документируя финикийские исторические традиции",
-      "era": "BC",
-      "latitude": 33.271,
-      "longitude": 35.204,
-      "name": "Herodotus Visits Tyre",
-      "name_ru": "Геродот посещает Тир",
-      "source": "https://www.britannica.com/place/Tyre",
-      "tags": [
-        "Tyre",
-        "Culture",
-        "History",
-        "Phoenician",
-        "Herodotus",
-        "Greek"
-      ],
-      "type": "cultural"
     },
     {
       "date": "01.01.0450",
@@ -605,6 +594,26 @@
       "type": "scientific"
     },
     {
+      "date": "01.01.0450",
+      "description": "Greek historian Herodotus visits Tyre and records from temple priests that city was founded circa 2750 BC, documenting Phoenician historical traditions",
+      "description_ru": "Греческий историк Геродот посещает Тир и записывает со слов храмовых жрецов, что город основан около 2750 г. до н.э., документируя финикийские исторические традиции",
+      "era": "BC",
+      "latitude": 33.271,
+      "longitude": 35.204,
+      "name": "Herodotus Visits Tyre",
+      "name_ru": "Геродот посещает Тир",
+      "source": "https://www.britannica.com/place/Tyre",
+      "tags": [
+        "Tyre",
+        "Culture",
+        "History",
+        "Phoenician",
+        "Herodotus 👤",
+        "Greek"
+      ],
+      "type": "cultural"
+    },
+    {
       "date": "01.01.0397",
       "description": "Greek tyrant Dionysius I of Syracuse besieges and destroys Phoenician stronghold of Motya, marking beginning of Greco-Punic conflicts in Sicily",
       "description_ru": "Греческий тиран Дионисий I Сиракузский осаждает и разрушает финикийскую крепость Мотия, знаменуя начало греко-пунических конфликтов в Сицилии",
@@ -616,10 +625,11 @@
       "source": "https://en.wikipedia.org/wiki/Ancient_Carthage",
       "tags": [
         "Greek",
-        "Siege",
         "Sicily",
+        "Destruction",
+        "Siege",
         "Phoenician",
-        "Destruction"
+        "War"
       ],
       "type": "military"
     },
@@ -652,12 +662,13 @@
       "name_ru": "Восстание Сидона против Персии",
       "source": "https://www.worldhistory.org/phoenicia/",
       "tags": [
-        "Rebellion",
-        "Sidon",
         "Persian",
-        "Phoenician",
+        "Siege",
         "Destruction",
-        "Siege"
+        "Phoenician",
+        "Sidon",
+        "Rebellion",
+        "War"
       ],
       "type": "military"
     },
@@ -691,12 +702,13 @@
       "source": "https://en.wikipedia.org/wiki/Siege_of_Tyre_%28332_BC%29",
       "tags": [
         "Tyre",
-        "Alexander the Great",
-        "Fall",
         "Phoenician",
-        "Greek",
+        "Fall",
+        "Alexander the Great 👤",
+        "Macedonian",
         "Conquest",
-        "Macedonian"
+        "Greek",
+        "War"
       ],
       "type": "military"
     },
@@ -712,12 +724,13 @@
       "source": "https://en.wikipedia.org/wiki/Siege_of_Tyre_%28332_BC%29",
       "tags": [
         "Tyre",
-        "Siege",
-        "Alexander the Great",
-        "Greek",
         "Phoenician",
+        "Macedonian",
+        "Greek",
+        "Alexander the Great 👤",
+        "Siege",
         "Persian",
-        "Macedonian"
+        "War"
       ],
       "type": "military"
     },
@@ -732,10 +745,11 @@
       "name_ru": "Агафокл Сиракузский вторгается в Африку",
       "source": "https://en.wikipedia.org/wiki/Agathocles_of_Syracuse",
       "tags": [
-        "Carthage",
         "War",
         "Sicily",
-        "Invasions"
+        "Invasions",
+        "Carthage",
+        "Greek"
       ],
       "type": "military"
     },
@@ -751,7 +765,9 @@
       "source": "https://en.wikipedia.org/wiki/Ancient_Carthage",
       "tags": [
         "Carthage",
-        "Political Change"
+        "Political",
+        "Reform",
+        "Republic"
       ],
       "type": "political"
     },
@@ -785,11 +801,12 @@
       "name_ru": "Кампании Пирра против Карфагена",
       "source": "https://www.britannica.com/biography/Pyrrhus-king-of-Epirus",
       "tags": [
-        "Carthage",
-        "War",
         "Sicily",
+        "Carthage",
+        "Invasions",
+        "War",
         "Greek",
-        "Invasions"
+        "Pyrrhus 👤"
       ],
       "type": "military"
     },
@@ -804,12 +821,12 @@
       "name_ru": "Начало Первой Пунической войны",
       "source": "https://en.wikipedia.org/wiki/First_Punic_War",
       "tags": [
-        "Punic Wars",
-        "Carthage",
-        "Sicily",
-        "First Punic War",
         "Roman",
-        "War"
+        "Carthage",
+        "War",
+        "Sicily",
+        "First",
+        "Punic"
       ],
       "type": "military"
     },
@@ -825,11 +842,12 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Cape_Ecnomus",
       "tags": [
         "Carthage",
-        "Punic Wars",
         "Battle",
         "Naval",
-        "First Punic War",
-        "Roman"
+        "Roman",
+        "First",
+        "Punic",
+        "War"
       ],
       "type": "military"
     },
@@ -844,13 +862,14 @@
       "name_ru": "Морской бой при Эгатских островах",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Aegates",
       "tags": [
-        "Battle",
         "Naval",
+        "Roman",
         "Sicily",
-        "First Punic War",
-        "Punic Wars",
+        "Battle",
         "Carthage",
-        "Roman"
+        "First",
+        "Punic",
+        "War"
       ],
       "type": "military"
     },
@@ -904,12 +923,13 @@
       "name_ru": "Битва при Требии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Trebia",
       "tags": [
+        "Hannibal 👤",
+        "Roman",
         "Battle",
         "Carthage",
-        "Punic Wars",
-        "Hannibal",
-        "Second Punic War",
-        "Roman"
+        "Second",
+        "Punic",
+        "War"
       ],
       "type": "military"
     },
@@ -924,12 +944,13 @@
       "name_ru": "Битва при Тицине",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Trebia",
       "tags": [
-        "Battle",
+        "Punic",
+        "Roman",
         "Carthage",
-        "Hannibal",
-        "Punic Wars",
-        "Second Punic War",
-        "Roman"
+        "Hannibal 👤",
+        "Battle",
+        "Second",
+        "War"
       ],
       "type": "military"
     },
@@ -944,11 +965,12 @@
       "name_ru": "Ганнибал переходит Альпы",
       "source": "https://en.wikipedia.org/wiki/Hannibal%27s_crossing_of_the_Alps",
       "tags": [
-        "Hannibal",
+        "Barcid",
+        "Hannibal 👤",
         "Carthage",
-        "Punic Wars",
-        "Second Punic War",
-        "Barcid"
+        "Second",
+        "Punic",
+        "War"
       ],
       "type": "military"
     },
@@ -964,13 +986,13 @@
       "source": "https://phoenician.org/carthage_hannibal_barca/",
       "tags": [
         "Iberia",
-        "War",
         "Carthage",
-        "Hannibal",
-        "Second Punic War",
-        "Punic Wars",
         "Roman",
-        "Barcid"
+        "Barcid",
+        "Hannibal 👤",
+        "Second",
+        "Punic",
+        "War"
       ],
       "type": "military"
     },
@@ -985,13 +1007,14 @@
       "name_ru": "Битва у озера Тразимено",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Lake_Trasimene",
       "tags": [
-        "Carthage",
         "Battle",
         "Ambush",
-        "Second Punic War",
-        "Punic Wars",
-        "Hannibal",
-        "Roman"
+        "Hannibal 👤",
+        "Roman",
+        "Carthage",
+        "Second",
+        "Punic",
+        "War"
       ],
       "type": "military"
     },
@@ -1006,12 +1029,14 @@
       "name_ru": "Карфаген побеждает Рим в битве при Каннах",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Cannae",
       "tags": [
-        "Second Punic War",
-        "Carthage",
-        "Hannibal",
-        "Punic Wars",
+        "Roman",
         "Battle",
-        "Roman"
+        "Tactics",
+        "Hannibal 👤",
+        "Carthage",
+        "Second",
+        "Punic",
+        "War"
       ],
       "type": "military"
     },
@@ -1026,12 +1051,13 @@
       "name_ru": "Римское отвоевание Капуи",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Capua_(211_BC)",
       "tags": [
-        "Second Punic War",
         "Siege",
-        "Punic Wars",
-        "Hannibal",
+        "Hannibal 👤",
+        "Roman",
         "Carthage",
-        "Roman"
+        "Second",
+        "Punic",
+        "War"
       ],
       "type": "military"
     },
@@ -1046,13 +1072,14 @@
       "name_ru": "Сципион захватывает Новый Карфаген",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Carthago_Nova",
       "tags": [
-        "Punic Wars",
-        "Scipio",
-        "Second Punic War",
-        "Carthage",
         "Iberia",
+        "Carthage",
         "Battle",
-        "Roman"
+        "Roman",
+        "Scipio 👤",
+        "Second",
+        "Punic",
+        "War"
       ],
       "type": "military"
     },
@@ -1067,16 +1094,17 @@
       "name_ru": "Битва при Метавре",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Metaurus",
       "tags": [
+        "Carthage",
         "Roman",
         "Battle",
-        "Second Punic War",
-        "Punic Wars",
-        "Carthage"
+        "Second",
+        "Punic",
+        "War"
       ],
       "type": "military"
     },
     {
-      "date": "01.01.0204",
+      "date": "01.07.0204",
       "description": "Scipio Africanus invades North Africa with Roman army, forcing Carthage to recall Hannibal from Italy and shifting war to African theater",
       "description_ru": "Сципион Африканский вторгается в Северную Африку с римской армией, вынуждая Карфаген отозвать Ганнибала из Италии и перенести войну на африканский театр",
       "era": "BC",
@@ -1086,12 +1114,13 @@
       "name_ru": "Сципион вторгается в Африку",
       "source": "https://en.wikipedia.org/wiki/Scipio_Africanus",
       "tags": [
-        "Carthage",
         "Invasions",
-        "Punic Wars",
-        "Scipio",
-        "Second Punic War",
-        "Roman"
+        "Carthage",
+        "Scipio 👤",
+        "Roman",
+        "Second",
+        "Punic",
+        "War"
       ],
       "type": "military"
     },
@@ -1106,12 +1135,13 @@
       "name_ru": "Битва при Великих равнинах",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Great_Plains",
       "tags": [
-        "Roman",
         "Battle",
-        "Punic Wars",
-        "Second Punic War",
+        "Scipio 👤",
         "Carthage",
-        "Scipio"
+        "Roman",
+        "Second",
+        "Punic",
+        "War"
       ],
       "type": "military"
     },
@@ -1126,13 +1156,14 @@
       "name_ru": "Рим побеждает в битве при Заме",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Zama",
       "tags": [
-        "Battle",
+        "Hannibal 👤",
         "Roman",
-        "Scipio",
-        "Second Punic War",
-        "Punic Wars",
-        "Hannibal",
-        "Carthage"
+        "Carthage",
+        "Scipio 👤",
+        "Battle",
+        "Second",
+        "Punic",
+        "War"
       ],
       "type": "military"
     },
@@ -1147,12 +1178,13 @@
       "name_ru": "Карфагенский мирный договор",
       "source": "https://en.wikipedia.org/wiki/Second_Punic_War",
       "tags": [
-        "Punic Wars",
-        "Second Punic War",
         "Treaty",
+        "Roman",
         "Peace",
         "Carthage",
-        "Roman"
+        "Second",
+        "Punic",
+        "War"
       ],
       "type": "political"
     },
@@ -1186,39 +1218,18 @@
       "name_ru": "Начало Третьей Пунической войны",
       "source": "https://en.wikipedia.org/wiki/Third_Punic_War",
       "tags": [
-        "Carthage",
-        "Third Punic War",
+        "Roman",
         "War",
-        "Punic Wars",
-        "Roman"
+        "Carthage",
+        "Punic",
+        "Third"
       ],
       "type": "military"
     },
     {
-      "date": "02.01.0146",
-      "description": "With destruction of Carthage, last independent Phoenician power falls, marking final end of civilization that dominated Mediterranean for millennium",
-      "description_ru": "С разрушением Карфагена падает последняя независимая финикийская держава, знаменуя окончательный конец цивилизации, доминировавшей в Средиземноморье тысячелетие",
-      "era": "BC",
-      "latitude": 36.853,
-      "longitude": 10.323,
-      "name": "Fall of Phoenician-Punic Civilization",
-      "name_ru": "Падение финикийско-пунической цивилизации",
-      "source": "https://www.worldhistory.org/phoenicia/",
-      "tags": [
-        "Destruction",
-        "Fall",
-        "Punic Wars",
-        "Third Punic War",
-        "End",
-        "Carthage",
-        "Roman"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0146",
-      "description": "After three-year siege, Scipio Aemilianus razes Carthage completely, enslaves survivors, and allegedly salts earth, ending 700 years of Phoenician-Punic civilization",
-      "description_ru": "После трехлетней осады Сципион Эмилиан полностью разрушает Карфаген, порабощает выживших и посыпает землю Карфагена солью, чтобы на ней ничего не выросло",
+      "date": "01.04.0146",
+      "description": "After three-year siege, Scipio Aemilianus razes Carthage completely, enslaves survivors, and allegedly salts earth, ending 700 years of Phoenician-Punic civilization. With destruction of Carthage, last independent Phoenician power falls, marking final end of civilization that dominated Mediterranean for millennium",
+      "description_ru": "После трехлетней осады Сципион Эмилиан полностью разрушает Карфаген, порабощает выживших и посыпает землю Карфагена солью, чтобы на ней ничего не выросло. С разрушением Карфагена падает последняя независимая финикийская держава, знаменуя конец цивилизации, доминировавшей в Средиземноморье целое тысячелетие",
       "era": "BC",
       "latitude": 36.853,
       "longitude": 10.323,
@@ -1226,13 +1237,15 @@
       "name_ru": "Разрушение Карфагена",
       "source": "https://en.wikipedia.org/wiki/Third_Punic_War",
       "tags": [
-        "Third Punic War",
         "Fall",
-        "Destruction",
+        "City",
         "End",
-        "Punic Wars",
         "Carthage",
-        "Roman"
+        "Roman",
+        "Destruction",
+        "Third",
+        "Punic",
+        "War"
       ],
       "type": "military"
     }

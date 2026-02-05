@@ -3,23 +3,6 @@
   "events": [
     {
       "date": "01.01.1300",
-      "description": "Proto-Lydian tribes settle in western Anatolia around Hermus and Cayster river valleys, establishing agricultural communities that will form basis of future Lydian civilization",
-      "description_ru": "Прото-лидийские племена селятся в западной Анатолии вокруг долин рек Герм и Каистр, основывая сельскохозяйственные общины, которые сформируют основу будущей лидийской цивилизации",
-      "era": "BC",
-      "latitude": 38.6191,
-      "longitude": 27.4289,
-      "name": "Early Lydian Settlement",
-      "name_ru": "Ранние лидийские поселения",
-      "source": "https://en.wikipedia.org/wiki/Lydia",
-      "tags": [
-        "Lydia",
-        "Settlement",
-        "Agriculture"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1300",
       "description": "Indigenous Carian tribes (known as Karkissa in Hittite texts) settle in southwestern Anatolia between Maeander and Indus rivers, establishing distinct Anatolian culture with own language and traditions",
       "description_ru": "Коренные карийские племена (известные как Каркисса в хеттских текстах) селятся в юго-западной Анатолии между реками Меандр и Инд, создавая отличительную анатолийскую культуру со своим языком и традициями",
       "era": "BC",
@@ -32,6 +15,23 @@
         "Carian",
         "Settlement",
         "Hittite"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1300",
+      "description": "Proto-Lydian tribes settle in western Anatolia around Hermus and Cayster river valleys, establishing agricultural communities that will form basis of future Lydian civilization",
+      "description_ru": "Прото-лидийские племена селятся в западной Анатолии вокруг долин рек Герм и Каистр, основывая сельскохозяйственные общины, которые сформируют основу будущей лидийской цивилизации",
+      "era": "BC",
+      "latitude": 38.6191,
+      "longitude": 27.4289,
+      "name": "Early Lydian Settlement",
+      "name_ru": "Ранние лидийские поселения",
+      "source": "https://en.wikipedia.org/wiki/Lydia",
+      "tags": [
+        "Lydia",
+        "Settlement",
+        "Agriculture"
       ],
       "type": "historic"
     },
@@ -49,6 +49,25 @@
         "Lydia",
         "Gold",
         "Mining"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1180",
+      "description": "Phrygians establish first settlements in central Anatolia after migration from Balkans, building fortified citadels on rocky outcrops including future capital Gordion",
+      "description_ru": "Фригийцы заселяют центральную Анатолию, строя укрепленные цитадели на скалистых возвышенностях, включая будущую столицу Фригии - Гордион",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Phrygian Settlement of Anatolia",
+      "name_ru": "Фригийское заселение Анатолии",
+      "source": "https://en.wikipedia.org/wiki/Phrygia",
+      "tags": [
+        "Phrygian",
+        "Settlement",
+        "Migration",
+        "Fortification",
+        "Hittite"
       ],
       "type": "historic"
     },
@@ -73,25 +92,6 @@
       "type": "cultural"
     },
     {
-      "date": "01.01.1180",
-      "description": "Phrygians establish first settlements in central Anatolia after migration from Balkans, building fortified citadels on rocky outcrops including future capital Gordion",
-      "description_ru": "Фригийцы заселяют центральную Анатолию, строя укрепленные цитадели на скалистых возвышенностях, включая будущую столицу Фригии - Гордион",
-      "era": "BC",
-      "latitude": 39.6511,
-      "longitude": 31.9958,
-      "name": "Phrygian Settlement of Anatolia",
-      "name_ru": "Фригийское заселение Анатолии",
-      "source": "https://en.wikipedia.org/wiki/Phrygia",
-      "tags": [
-        "Phrygian",
-        "Settlement",
-        "Migration",
-        "Fortification",
-        "Hittite"
-      ],
-      "type": "historic"
-    },
-    {
       "date": "01.01.1150",
       "description": "Gordion emerges as major Phrygian center; archaeological evidence shows sophisticated pottery workshops producing distinctive geometric designs that will influence Greek art",
       "description_ru": "Гордион становится крупным фригийским центром; археологические свидетельства показывают сложные гончарные мастерские, производящие характерные геометрические узоры, которые повлияют на греческое искусство",
@@ -102,48 +102,12 @@
       "name_ru": "Возвышение фригийского Гордиона",
       "source": "https://en.wikipedia.org/wiki/Gordion",
       "tags": [
-        "Phrygian",
+        "Culture",
         "City",
         "Art",
-        "Culture"
+        "Phrygian"
       ],
       "type": "cultural"
-    },
-    {
-      "date": "01.01.1100",
-      "description": "Mylasa emerges as principal religious and political center of Caria; sacred sanctuary of Zeus Carius (war god distinct from Greek Zeus) established, becoming focal point for Carian tribal confederation",
-      "description_ru": "Миляс возникает как главный религиозный и политический центр Карии; здесь учреждено священное святилище Зевса Кария (бога войны, отличного от греческого Зевса)",
-      "era": "BC",
-      "latitude": 37.3092,
-      "longitude": 27.7842,
-      "name": "Mylasa Becomes Carian Center",
-      "name_ru": "Миляс становится центром Карии",
-      "source": "https://en.wikipedia.org/wiki/Mylasa",
-      "tags": [
-        "Carian",
-        "Religious",
-        "City",
-        "Temple"
-      ],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.1100",
-      "description": "Sardis emerges as principal Lydian settlement; naturally defensible acropolis overlooks fertile Hermus valley, controlling trade routes between Aegean coast and Anatolian interior",
-      "description_ru": "Сарды возникают как главное лидийское поселение; защищенный рельефом акрополь возвышается над плодородной долиной Герма, контролируя торговые пути между побережьем Эгейского моря и внутренними районами Анатолии",
-      "era": "BC",
-      "latitude": 38.4852,
-      "longitude": 28.0428,
-      "name": "Foundation of Sardis",
-      "name_ru": "Основание Сард",
-      "source": "https://en.wikipedia.org/wiki/Sardis",
-      "tags": [
-        "Lydia",
-        "Capital",
-        "City",
-        "Trade"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.1100",
@@ -165,20 +129,59 @@
       "type": "cultural"
     },
     {
-      "date": "01.01.1050",
-      "description": "Cult of Cybele, Great Mother goddess, becomes central to Phrygian religion; worshiped in mountain sanctuaries with ecstatic rituals involving drums, cymbals and self-flagellation by devotees",
-      "description_ru": "Культ Кибелы, Великой Матери богов, становится центральным в фригийской религии; ей поклоняются в горных святилищах с экстатическими ритуалами, включающими барабаны, кимвалы и самобичевание адептов",
+      "date": "01.01.1100",
+      "description": "Mylasa emerges as principal religious and political center of Caria; sacred sanctuary of Zeus Carius (war god distinct from Greek Zeus) established, becoming focal point for Carian tribal confederation",
+      "description_ru": "Миляс возникает как главный религиозный и политический центр Карии; здесь учреждено священное святилище Зевса Кария (бога войны, отличного от греческого Зевса)",
       "era": "BC",
-      "latitude": 38.7444,
-      "longitude": 30.5503,
+      "latitude": 37.3092,
+      "longitude": 27.7842,
+      "name": "Mylasa Becomes Carian Center",
+      "name_ru": "Миляс становится центром Карии",
+      "source": "https://en.wikipedia.org/wiki/Mylasa",
+      "tags": [
+        "Carian",
+        "City",
+        "Religious",
+        "Temple",
+        "Capital"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.1100",
+      "description": "Sardis emerges as principal Lydian settlement; naturally defensible acropolis overlooks fertile Hermus valley, controlling trade routes between Aegean coast and Anatolian interior",
+      "description_ru": "Сарды возникают как главное лидийское поселение; защищенный рельефом акрополь возвышается над плодородной долиной Герма, контролируя торговые пути между побережьем Эгейского моря и внутренними районами Анатолии",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Foundation of Sardis",
+      "name_ru": "Основание лидийских Сард",
+      "source": "https://en.wikipedia.org/wiki/Sardis",
+      "tags": [
+        "Lydia",
+        "Capital",
+        "Trade",
+        "City"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1050",
+      "description": "The cult of Cybele, the Great Mother of the gods, becomes central to the Phrygian religion; she is worshipped in mountain sanctuaries with ecstatic rituals involving drums, cymbals, and the self-flagellation of the adepts. The cult arose around a black meteorite of unusual shape, whose fall in Phrygia became a celestial omen.",
+      "description_ru": "Культ Кибелы, Великой Матери богов, становится центральным в фригийской религии; ей поклоняются в горных святилищах с экстатическими ритуалами, включающими барабаны, кимвалы и самобичевание адептов. Культ возник вокруг черного метеорита необычной формы, падение которого во Фригию стало небесным знамением",
+      "era": "BC",
+      "latitude": 39.33147594,
+      "longitude": 31.58318281,
       "name": "Cult of Cybele Established",
       "name_ru": "Установление культа Кибелы",
       "source": "https://en.wikipedia.org/wiki/Cybele",
       "tags": [
-        "Phrygian",
         "Religious",
+        "Phrygian",
+        "Celestial",
+        "Mother of God",
         "Culture",
-        "Goddess"
+        "Divination"
       ],
       "type": "religious"
     },
@@ -222,25 +225,6 @@
     },
     {
       "date": "01.01.0950",
-      "description": "Lydians develop advanced techniques for refining alluvial gold, separating gold from electrum (natural gold-silver alloy) found in Pactolus River using salt cementation process",
-      "description_ru": "Лидийцы изобрели процесс солевой цементации, чтобы отделить золото от электрума (природного сплава золота и серебра), найденного в реке Пактол. Лидийцы смешивали порошок электрума с солью и чем-нибудь пористым (глиной); затем нагревали смесь. При нагревании соль и серебро образовывали хлорид, который впитывался в поры глины, оставляя таким образом очищенное золото",
-      "era": "BC",
-      "latitude": 38.4852,
-      "longitude": 28.0428,
-      "name": "Gold Refining Innovation",
-      "name_ru": "Солевая цементация золота",
-      "source": "https://en.wikipedia.org/wiki/Lydia",
-      "tags": [
-        "Lydia",
-        "Technology",
-        "Gold",
-        "Innovation",
-        "Metallurgy"
-      ],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.0950",
       "description": "Phrygians perfect woodworking techniques using abundant Anatolian forests; produce intricate furniture inlaid with geometric patterns and bronze fittings for elite tombs and palaces",
       "description_ru": "Фригийцы совершенствуют технику обработки дерева, используя обильные анатолийские леса; производят замысловатую мебель с геометрическими узорами и бронзовой фурнитурой для элитных гробниц и дворцов",
       "era": "BC",
@@ -257,6 +241,26 @@
         "Wood"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.0950",
+      "description": "Lydians develop advanced techniques for refining alluvial gold, separating gold from electrum (natural gold-silver alloy) found in Pactolus River using salt cementation process",
+      "description_ru": "Лидийцы изобрели процесс солевой цементации, чтобы отделить золото от электрума (природного сплава золота и серебра), найденного в реке Пактол. Лидийцы смешивали порошок электрума с солью и чем-нибудь пористым (глиной); затем нагревали смесь. При нагревании соль и серебро образовывали хлорид, который впитывался в поры глины, оставляя таким образом очищенное золото",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Gold Refining Innovation",
+      "name_ru": "Солевая цементация золота",
+      "source": "https://en.wikipedia.org/wiki/Lydia",
+      "tags": [
+        "Innovation",
+        "Lydia",
+        "Gold",
+        "Science",
+        "Technology",
+        "Metallurgy"
+      ],
+      "type": "scientific"
     },
     {
       "date": "01.01.0900",
@@ -277,6 +281,26 @@
     },
     {
       "date": "01.01.0900",
+      "description": "Phrygian artisans develop advanced bronze-working techniques, creating elaborate cauldrons with griffin and siren attachments that become highly prized trade goods throughout Mediterranean",
+      "description_ru": "Фригийские мастера разрабатывают передовые техники работы с бронзой, создавая сложные котлы с насадками в виде грифонов и сирен, которые становятся высоко ценимыми торговыми товарами по всему Средиземноморью",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Phrygian Bronze Cauldrons",
+      "name_ru": "Фригийские бронзовые котлы",
+      "source": "https://en.wikipedia.org/wiki/Phrygia",
+      "tags": [
+        "Phrygian",
+        "Technology",
+        "Art",
+        "Bronze",
+        "Metallurgy",
+        "Science"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0900",
       "description": "Lydian Kingdom expands control over Greek Ionian cities on Aegean coast; imposes tribute while allowing cities substantial autonomy, beginning pattern of Lydian-Greek interaction",
       "description_ru": "Лидийское царство подчиняет греческие ионийские города на побережье Эгейского моря; собирает дань, позволяя городам существенную автономию и выстраивая модель лидийско-греческого взаимодействия",
       "era": "BC",
@@ -294,25 +318,6 @@
         "Tribute"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0900",
-      "description": "Phrygian artisans develop advanced bronze-working techniques, creating elaborate cauldrons with griffin and siren attachments that become highly prized trade goods throughout Mediterranean",
-      "description_ru": "Фригийские мастера разрабатывают передовые техники работы с бронзой, создавая сложные котлы с насадками в виде грифонов и сирен, которые становятся высоко ценимыми торговыми товарами по всему Средиземноморью",
-      "era": "BC",
-      "latitude": 39.6511,
-      "longitude": 31.9958,
-      "name": "Phrygian Bronze Cauldrons",
-      "name_ru": "Фригийские бронзовые котлы",
-      "source": "https://en.wikipedia.org/wiki/Phrygia",
-      "tags": [
-        "Phrygian",
-        "Technology",
-        "Bronze",
-        "Metallurgy",
-        "Art"
-      ],
-      "type": "cultural"
     },
     {
       "date": "01.01.0850",
@@ -343,11 +348,12 @@
       "name_ru": "Гордион на пике процветания",
       "source": "https://en.wikipedia.org/wiki/Gordion",
       "tags": [
+        "Wealth",
         "Phrygian",
         "Capital",
         "Architecture",
         "Palace",
-        "Wealth"
+        "City"
       ],
       "type": "historic"
     },
@@ -363,9 +369,10 @@
       "source": "https://en.wikipedia.org/wiki/Gordian_Knot",
       "tags": [
         "Phrygian",
-        "Legend",
         "Culture",
-        "Dynasty"
+        "Dynasty",
+        "Legend",
+        "King"
       ],
       "type": "cultural"
     },
@@ -403,7 +410,7 @@
         "Dynasty",
         "Legend",
         "Wealth",
-        "King Midas"
+        "King Midas 👑"
       ],
       "type": "political"
     },
@@ -423,7 +430,7 @@
         "Diplomacy",
         "Religious",
         "Oracle",
-        "King Midas"
+        "King Midas 👑"
       ],
       "type": "political"
     },
@@ -442,7 +449,7 @@
         "Greek",
         "Dynasty",
         "Marriage",
-        "King Midas"
+        "King Midas 👑"
       ],
       "type": "political"
     },
@@ -462,7 +469,7 @@
         "Trade",
         "Fortification",
         "Wealth",
-        "King Midas"
+        "King Midas 👑"
       ],
       "type": "military"
     },
@@ -478,8 +485,9 @@
       "source": "https://en.wikipedia.org/wiki/Candaules",
       "tags": [
         "Lydia",
+        "Heraclid",
         "Dynasty",
-        "Heraclid"
+        "King"
       ],
       "type": "political"
     },
@@ -497,10 +505,10 @@
         "Phrygian",
         "Architecture",
         "Tomb",
-        "Building",
-        "Engineering",
+        "Building 🏠",
+        "Engineering ⚙️",
         "Wood",
-        "King Midas"
+        "King Midas 👑"
       ],
       "type": "historic"
     },
@@ -534,10 +542,11 @@
       "name_ru": "Киммерийская угроза Фригии",
       "source": "https://en.wikipedia.org/wiki/Cimmerians",
       "tags": [
-        "Cimmerian",
-        "King Midas",
+        "Invasions",
         "Phrygian",
-        "Invasions"
+        "King Midas 👑",
+        "Cimmerian",
+        "Threat"
       ],
       "type": "military"
     },
@@ -556,26 +565,7 @@
         "Assyrian",
         "Diplomacy",
         "Archives",
-        "King Midas"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0700",
-      "description": "Phrygian Kingdom at territorial peak extends from Aegean coast to central Anatolia; Midas rules from fortified Gordion with vassal cities paying tribute and providing military contingents",
-      "description_ru": "Фригийское царство на пике территориального расширения простирается от побережья Эгейского моря до центральной Анатолии; Мидас правит из укрепленного Гордиона с вассальными городами, платящими дань и предоставляющими военные контингенты",
-      "era": "BC",
-      "latitude": 39.6511,
-      "longitude": 31.9958,
-      "name": "Phrygian Kingdom at Peak",
-      "name_ru": "Фригийское царство на пике",
-      "source": "https://en.wikipedia.org/wiki/Phrygia",
-      "tags": [
-        "Phrygian",
-        "Empire",
-        "Expansion",
-        "Golden Age",
-        "King Midas"
+        "King Midas 👑"
       ],
       "type": "political"
     },
@@ -597,6 +587,25 @@
       "type": "military"
     },
     {
+      "date": "01.01.0700",
+      "description": "Phrygian Kingdom at territorial peak extends from Aegean coast to central Anatolia; Midas rules from fortified Gordion with vassal cities paying tribute and providing military contingents",
+      "description_ru": "Фригийское царство на пике территориального расширения простирается от побережья Эгейского моря до центральной Анатолии; Мидас правит из укрепленного Гордиона с вассальными городами, платящими дань и предоставляющими военные контингенты",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Phrygian Kingdom at Peak",
+      "name_ru": "Фригийское царство на пике",
+      "source": "https://en.wikipedia.org/wiki/Phrygia",
+      "tags": [
+        "Phrygian",
+        "Empire",
+        "Expansion",
+        "Golden Age",
+        "King Midas 👑"
+      ],
+      "type": "political"
+    },
+    {
       "date": "01.01.0696",
       "description": "Massive Cimmerian invasion devastates Phrygia; nomadic warriors overrun Gordion, destroying citadel with fire that leaves 2-meter thick ash layer; Midas reportedly commits suicide by drinking bull's blood",
       "description_ru": "Массивное киммерийское вторжение опустошает Фригию; кочевые воины захватывают Гордион, уничтожая цитадель огнем; Мидас, по легенде, совершает самоубийство, выпив бычью кровь",
@@ -607,12 +616,13 @@
       "name_ru": "Киммерийцы разграбляют Гордион",
       "source": "https://en.wikipedia.org/wiki/Gordion",
       "tags": [
+        "Fall",
+        "Invasions",
         "Phrygian",
         "Cimmerian",
         "Destruction",
         "Death",
-        "Fall",
-        "Invasions"
+        "King Midas 👑"
       ],
       "type": "military"
     },
@@ -628,8 +638,7 @@
       "source": "https://en.wikipedia.org/wiki/Phrygia",
       "tags": [
         "Phrygian",
-        "Decline",
-        "Lydia"
+        "Decline"
       ],
       "type": "political"
     },
@@ -664,11 +673,12 @@
       "name_ru": "Лидия завоевывает греческие города",
       "source": "https://en.wikipedia.org/wiki/Gyges_of_Lydia",
       "tags": [
+        "Conquest",
         "Lydia",
         "Greek",
-        "Conquest",
         "Expansion",
-        "Mermnad"
+        "Mermnad",
+        "War"
       ],
       "type": "military"
     },
@@ -740,12 +750,13 @@
       "name_ru": "Смерть Гига и разорение Сард",
       "source": "https://en.wikipedia.org/wiki/Gyges_of_Lydia",
       "tags": [
-        "Lydia",
+        "Invasions",
         "Cimmerian",
         "Death",
         "Battle",
         "Mermnad",
-        "Invasions"
+        "Lydia",
+        "Plundering"
       ],
       "type": "military"
     },
@@ -762,7 +773,8 @@
       "tags": [
         "Lydia",
         "Dynasty",
-        "Mermnad"
+        "Mermnad",
+        "King"
       ],
       "type": "political"
     },
@@ -771,17 +783,18 @@
       "description": "Cult of Cybele spreads from Phrygia to Greek world; mystery rites gain followers in Athens and other cities, priests called 'Galli' practice ritual castration in ecstatic ceremonies",
       "description_ru": "Культ Кибелы, матери богов, распространяется из Фригии в греческий мир; мистериальные обряды набирают последователей в Афинах и других городах, жрецы, называемые 'Галли', практикуют ритуальную кастрацию в экстатических церемониях",
       "era": "BC",
-      "latitude": 38.7444,
-      "longitude": 30.5503,
+      "latitude": 37.9755,
+      "longitude": 23.7348,
       "name": "Cybele Cult Spreads to Greece",
       "name_ru": "Культ Кибелы распространяется в Грецию",
       "source": "https://en.wikipedia.org/wiki/Cybele",
       "tags": [
-        "Phrygian",
+        "Greek",
         "Mystery",
-        "Culture",
+        "Phrygian",
+        "Mother of God",
         "Religious",
-        "Greek"
+        "Culture"
       ],
       "type": "religious"
     },
@@ -814,10 +827,11 @@
       "name_ru": "Завоевание Приены Лидией",
       "source": "https://en.wikipedia.org/wiki/Ardys_of_Lydia",
       "tags": [
-        "Lydia",
-        "Greek",
         "Conquest",
-        "Mermnad"
+        "Lydia",
+        "Mermnad",
+        "Greek",
+        "War"
       ],
       "type": "military"
     },
@@ -833,9 +847,10 @@
       "source": "https://en.wikipedia.org/wiki/Sadyattes",
       "tags": [
         "Lydia",
+        "Milesian",
         "Greek",
         "Mermnad",
-        "Milesian"
+        "War"
       ],
       "type": "military"
     },
@@ -904,13 +919,14 @@
       "name_ru": "Сожжение храма Афины в Милете",
       "source": "https://en.wikipedia.org/wiki/Alyattes_of_Lydia",
       "tags": [
+        "Destruction",
         "Lydia",
         "Greek",
         "Temple",
         "Religious",
-        "Destruction",
         "Oracle",
-        "Mermnad"
+        "Mermnad",
+        "War"
       ],
       "type": "military"
     },
@@ -925,13 +941,14 @@
       "name_ru": "Мир Лидии с Милетом",
       "source": "https://en.wikipedia.org/wiki/Alyattes_of_Lydia",
       "tags": [
+        "Treaty",
         "Lydia",
         "Greek",
         "Peace",
-        "Treaty",
         "Temple",
         "Oracle",
-        "Mermnad"
+        "Mermnad",
+        "War"
       ],
       "type": "political"
     },
@@ -1028,7 +1045,7 @@
         "Architecture",
         "Tomb",
         "Monument",
-        "Building",
+        "Building 🏠",
         "Mermnad"
       ],
       "type": "historic"
@@ -1081,10 +1098,11 @@
       "name_ru": "Лидийская гегемония в Ионии и Эолиде",
       "source": "https://en.wikipedia.org/wiki/Croesus",
       "tags": [
+        "Expansion",
+        "Conquest",
         "Lydia",
         "Greek",
-        "Conquest",
-        "Expansion"
+        "War"
       ],
       "type": "military"
     },
@@ -1108,25 +1126,6 @@
     },
     {
       "date": "01.01.0550",
-      "description": "Croesus introduces pure gold and pure silver coinage, replacing electrum currency; innovation creates first bimetallic monetary system with standardized exchange rate between gold and silver",
-      "description_ru": "Крез вводит чистую золотую и чистую серебряную монету, заменяя электрумную валюту; инновация создает первую биметаллическую денежную систему со стандартизированным обменным курсом между золотом и серебром",
-      "era": "BC",
-      "latitude": 38.4852,
-      "longitude": 28.0428,
-      "name": "Gold and Silver Coinage",
-      "name_ru": "Золотая и серебряная лидийская монета",
-      "source": "https://en.wikipedia.org/wiki/Croesus",
-      "tags": [
-        "Lydia",
-        "Currency",
-        "Economic",
-        "Innovation",
-        "Mermnad"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0550",
       "description": "Lydian Kingdom under Croesus reaches peak prosperity; Sardis becomes cosmopolitan center where Greek philosophers like Thales and Solon visit royal court for intellectual exchange",
       "description_ru": "Лидийское царство под Крезом достигает пика процветания; Сарды становятся космополитическим центром, где греческие философы, такие как Фалес и Солон, посещают царский двор для интеллектуального обмена",
       "era": "BC",
@@ -1145,6 +1144,25 @@
       "type": "cultural"
     },
     {
+      "date": "01.01.0550",
+      "description": "Croesus introduces pure gold and pure silver coinage, replacing electrum currency; innovation creates first bimetallic monetary system with standardized exchange rate between gold and silver",
+      "description_ru": "Крез вводит чистую золотую и чистую серебряную монету, заменяя электрумную валюту; инновация создает первую биметаллическую денежную систему со стандартизированным обменным курсом между золотом и серебром",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Gold and Silver Coinage",
+      "name_ru": "Золотая и серебряная лидийская монета",
+      "source": "https://en.wikipedia.org/wiki/Croesus",
+      "tags": [
+        "Lydia",
+        "Currency",
+        "Economic",
+        "Innovation",
+        "Mermnad"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0548",
       "description": "Herodotus records famous meeting between Croesus and Athenian lawgiver Solon; when Croesus asks if he is happiest man alive, Solon replies 'Count no man happy until he is dead' - prophetic warning Croesus will later recall",
       "description_ru": "Геродот записывает знаменитую встречу между Крезом и афинским законодателем Солоном; когда Крез спросил, является ли он самым счастливым человеком в мире, Солон отвечает 'Никого не называй счастливым, пока он не умер' - пророческое предупреждение, которое Крез позже вспомнит",
@@ -1159,7 +1177,7 @@
         "Greek",
         "Philosophy",
         "Culture",
-        "Herodotus",
+        "Herodotus 👤",
         "History"
       ],
       "type": "cultural"
@@ -1233,10 +1251,10 @@
       "name_ru": "Лидия становится персидской сатрапией",
       "source": "https://en.wikipedia.org/wiki/Lydia",
       "tags": [
+        "Empire",
         "Lydia",
         "Persian",
-        "Fall",
-        "Empire"
+        "Vassalage"
       ],
       "type": "political"
     },
@@ -1251,9 +1269,10 @@
       "name_ru": "Персидское завоевание Карии",
       "source": "https://en.wikipedia.org/wiki/Caria",
       "tags": [
+        "Conquest",
         "Carian",
         "Persian",
-        "Conquest"
+        "War"
       ],
       "type": "military"
     },
@@ -1286,11 +1305,12 @@
       "name_ru": "Рождение Геродота",
       "source": "https://en.wikipedia.org/wiki/Herodotus",
       "tags": [
+        "Culture",
+        "Herodotus 👤",
         "Carian",
         "Greek",
         "History",
-        "Culture",
-        "Herodotus"
+        "Birth"
       ],
       "type": "cultural"
     },
@@ -1345,7 +1365,7 @@
         "Capital",
         "City",
         "Architecture",
-        "Building"
+        "Building 🏠"
       ],
       "type": "historic"
     },
@@ -1402,7 +1422,7 @@
         "Tomb",
         "Greek",
         "Art",
-        "Building"
+        "Building 🏠"
       ],
       "type": "historic"
     },
@@ -1474,12 +1494,14 @@
       "source": "https://en.wikipedia.org/wiki/Siege_of_Halicarnassus",
       "tags": [
         "Carian",
-        "Greek",
         "Conquest",
-        "Battle",
-        "Siege",
+        "Alexander the Great 👤",
         "Macedonian",
-        "Alexander the Great"
+        "Siege",
+        "Battle",
+        "Greek",
+        "Persian",
+        "War"
       ],
       "type": "military"
     },
@@ -1497,7 +1519,7 @@
         "Vassalage",
         "Macedonian",
         "Alliance",
-        "Alexander the Great",
+        "Alexander the Great 👤",
         "Carian",
         "Greek"
       ],

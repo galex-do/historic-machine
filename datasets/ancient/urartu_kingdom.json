@@ -32,6 +32,7 @@
       "tags": [
         "Conquest",
         "Assyrian",
+        "War",
         "Urartu"
       ],
       "type": "military"
@@ -47,8 +48,9 @@
       "name_ru": "Тушпа - столица Урарту",
       "source": "https://en.wikipedia.org/wiki/Tushpa",
       "tags": [
-        "Urartu",
         "Capital",
+        "City",
+        "Urartu",
         "Fortification"
       ],
       "type": "historic"
@@ -64,10 +66,10 @@
       "name_ru": "Строительство башни Сардури",
       "source": "https://en.wikipedia.org/wiki/Van_Fortress",
       "tags": [
-        "Urartu",
-        "Fortification",
         "Architecture",
-        "Building"
+        "Building 🏠",
+        "Urartu",
+        "Fortification"
       ],
       "type": "historic"
     },
@@ -82,10 +84,11 @@
       "name_ru": "Урарту аннексирует Мусасир",
       "source": "https://en.wikipedia.org/wiki/Musasir",
       "tags": [
+        "Temple",
         "Religious",
         "Urartu",
-        "Temple",
-        "Annexation"
+        "Annexation",
+        "Holy Site"
       ],
       "type": "political"
     },
@@ -100,10 +103,11 @@
       "name_ru": "Менуа - царь Урарту",
       "source": "https://en.wikipedia.org/wiki/Menua",
       "tags": [
-        "Urartu",
-        "Expansion",
         "Dynasty",
-        "Innovation"
+        "Innovation",
+        "King",
+        "Expansion",
+        "Urartu"
       ],
       "type": "political"
     },
@@ -118,11 +122,10 @@
       "name_ru": "Строительство канала Менуа",
       "source": "https://en.wikipedia.org/wiki/Shamram_Canal",
       "tags": [
-        "Water",
         "Innovation",
-        "Engineering",
-        "Flood Control",
-        "Urartu"
+        "Engineering ⚙️",
+        "Urartu",
+        "Water"
       ],
       "type": "historic"
     },
@@ -175,6 +178,7 @@
         "Battle",
         "Expansion",
         "Assyrian",
+        "War",
         "Urartu"
       ],
       "type": "military"
@@ -208,9 +212,9 @@
       "source": "https://en.wikipedia.org/wiki/Sarduri_II",
       "tags": [
         "Dynasty",
-        "Golden Age",
+        "Expansion",
         "Urartu",
-        "Expansion"
+        "Golden Age"
       ],
       "type": "political"
     },
@@ -225,10 +229,10 @@
       "name_ru": "Сеть урартских крепостей",
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
-        "Administration",
+        "Defense",
         "Urartu",
         "Fortification",
-        "Defense"
+        "Administration"
       ],
       "type": "political"
     },
@@ -243,11 +247,12 @@
       "name_ru": "Осада Ассирией Тушпы",
       "source": "https://en.wikipedia.org/wiki/Tushpa",
       "tags": [
-        "Tiglath-Pileser III",
-        "Fortification",
-        "Siege",
         "Assyrian",
-        "Urartu"
+        "Siege",
+        "War",
+        "Urartu",
+        "Tiglath-Pileser III 👑",
+        "Fortification"
       ],
       "type": "military"
     },
@@ -262,11 +267,12 @@
       "name_ru": "Оборонительные реформы Русы I",
       "source": "https://en.wikipedia.org/wiki/Rusa_I",
       "tags": [
-        "Urartu",
-        "Fortification",
         "Dynasty",
         "Defense",
-        "War Science"
+        "War",
+        "Urartu",
+        "Fortification",
+        "Science"
       ],
       "type": "political"
     },
@@ -281,11 +287,11 @@
       "name_ru": "Основание Русахинили",
       "source": "https://en.wikipedia.org/wiki/Rusahinili",
       "tags": [
-        "Temple",
-        "Urartu",
-        "City",
         "Capital",
-        "Architecture"
+        "Architecture",
+        "Temple",
+        "City",
+        "Urartu"
       ],
       "type": "historic"
     },
@@ -300,10 +306,10 @@
       "name_ru": "Урарто-ассирийские пограничные войны",
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
-        "Urartu",
+        "Trade",
         "Assyrian",
         "War",
-        "Trade"
+        "Urartu"
       ],
       "type": "military"
     },
@@ -318,10 +324,11 @@
       "name_ru": "Антиассирийская коалиция Урарту",
       "source": "https://en.wikipedia.org/wiki/Rusa_I",
       "tags": [
-        "Urartu",
-        "Assyrian",
+        "Diplomacy",
         "Alliance",
-        "Diplomacy"
+        "Urartu",
+        "Phrygian",
+        "Mannai"
       ],
       "type": "political"
     },
@@ -337,10 +344,11 @@
       "source": "https://en.wikipedia.org/wiki/Argishti_II",
       "tags": [
         "Diplomacy",
-        "Peace",
         "Assyrian",
-        "Urartu",
-        "Treaty"
+        "Peace",
+        "War",
+        "Treaty",
+        "Urartu"
       ],
       "type": "political"
     },
@@ -355,10 +363,10 @@
       "name_ru": "Основание Тейшебаини",
       "source": "https://en.wikipedia.org/wiki/Teishebaini",
       "tags": [
-        "Urartu",
         "Religious",
+        "City",
         "Economic",
-        "City"
+        "Urartu"
       ],
       "type": "historic"
     },
@@ -373,10 +381,11 @@
       "name_ru": "Хранилище Тейшебаини",
       "source": "https://www.worldhistory.org/Teishebaini/",
       "tags": [
+        "Architecture",
         "Agriculture",
-        "Urartu",
         "Economic",
-        "Architecture"
+        "Urartu",
+        "Treasure"
       ],
       "type": "historic"
     },
@@ -391,11 +400,11 @@
       "name_ru": "Пик урартской металлургии",
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
-        "Urartu",
         "Innovation",
-        "Metallurgy",
         "Bronze",
-        "Iron"
+        "Metallurgy",
+        "Iron",
+        "Urartu"
       ],
       "type": "historic"
     },
@@ -410,10 +419,10 @@
       "name_ru": "Урартское искусство",
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
-        "Urartu",
+        "Innovation",
         "Art",
         "Culture",
-        "Innovation"
+        "Urartu"
       ],
       "type": "cultural"
     },
@@ -428,10 +437,10 @@
       "name_ru": "Развитие урартской письменности",
       "source": "https://en.wikipedia.org/wiki/Urartian_language",
       "tags": [
-        "Urartu",
         "Writing",
+        "Language",
         "Culture",
-        "Language"
+        "Urartu"
       ],
       "type": "cultural"
     },
@@ -446,10 +455,10 @@
       "name_ru": "Ассирия вассализирует Урарту",
       "source": "https://en.wikipedia.org/wiki/Sarduri_III",
       "tags": [
-        "Urartu",
+        "Diplomacy",
         "Assyrian",
-        "Vassalage",
-        "Diplomacy"
+        "Urartu",
+        "Vassalage"
       ],
       "type": "political"
     },
@@ -464,9 +473,9 @@
       "name_ru": "Набеги киммерийцев на Урарту",
       "source": "https://en.wikipedia.org/wiki/Cimmerians",
       "tags": [
+        "Invasions",
         "Urartu",
-        "Cimmerian",
-        "Invasions"
+        "Cimmerian"
       ],
       "type": "military"
     },
@@ -481,10 +490,10 @@
       "name_ru": "Набеги скифов на Урарту",
       "source": "https://en.wikipedia.org/wiki/Scythians",
       "tags": [
+        "Invasions",
         "Urartu",
-        "Scythian",
         "Cavalry",
-        "Invasions"
+        "Scythian"
       ],
       "type": "military"
     },
@@ -499,8 +508,9 @@
       "name_ru": "Эримена - царь Урарту",
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
-        "Urartu",
         "Dynasty",
+        "King",
+        "Urartu",
         "Uncertain"
       ],
       "type": "political"
@@ -516,27 +526,28 @@
       "name_ru": "Руса III - царь Урарту",
       "source": "https://en.wikipedia.org/wiki/Rusa_III",
       "tags": [
-        "Urartu",
+        "Dynasty",
+        "King",
         "Defense",
-        "Dynasty"
+        "Urartu"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0609",
       "description": "Rusa IV becomes king and rules during final years of independent Urartu, witnessing systematic destruction of kingdom's cities by combined forces of invaders",
-      "description_ru": "Руса IV правит в последние годы независимого Урарту, наблюдая систематическое разрушение городов царства иноземными захватчиками",
+      "description_ru": "Сардури IV, сын Русы III, правит в последние годы независимого Урарту, наблюдая систематическое разрушение городов царства иноземными захватчиками",
       "era": "BC",
       "latitude": 38.5,
       "longitude": 43.35,
-      "name": "Reign of Rusa IV",
-      "name_ru": "Руса IV - царь Урарту",
-      "source": "https://en.wikipedia.org/wiki/Rusa_IV",
+      "name": "Reign of Sarduri IV",
+      "name_ru": "Сардури IV - царь Урарту",
+      "source": "https://en.wikipedia.org/wiki/Sarduri_IV",
       "tags": [
-        "Urartu",
         "Dynasty",
+        "King",
         "Fall",
-        "King"
+        "Urartu"
       ],
       "type": "political"
     },
@@ -551,9 +562,27 @@
       "name_ru": "Эвакуация в Тейшебаини",
       "source": "https://www.worldhistory.org/Teishebaini/",
       "tags": [
-        "Urartu",
         "Defense",
+        "Urartu",
         "Treasure"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0595",
+      "description": "Rusa IV becomes final king of Urartu during kingdom's last years, presiding over remnants of once-mighty empire as Median forces complete conquest",
+      "description_ru": "Руса IV, брат Сардури, становится последним царем Урарту в последние годы царства, управляя остатками некогда могучей империи, пока мидийские силы завершают завоевание",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Last King Rusa IV",
+      "name_ru": "Руса IV - последний царь Урарту",
+      "source": "https://en.wikipedia.org/wiki/Rusa_IV",
+      "tags": [
+        "Dynasty",
+        "King",
+        "Fall",
+        "Urartu"
       ],
       "type": "political"
     },
@@ -568,31 +597,14 @@
       "name_ru": "Скифы разрушают Тейшебаини",
       "source": "https://en.wikipedia.org/wiki/Teishebaini",
       "tags": [
-        "Plundering",
-        "Urartu",
-        "Scythian",
         "Battle",
-        "Destruction"
+        "Destruction",
+        "War",
+        "Urartu",
+        "Plundering",
+        "Scythian"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0590",
-      "description": "Sarduri IV becomes final king of Urartu during kingdom's last years, presiding over remnants of once-mighty empire as Median forces complete conquest",
-      "description_ru": "Сардури IV становится последним царем Урарту в последние годы царства, управляя остатками некогда могучей империи, пока мидийские силы завершают завоевание",
-      "era": "BC",
-      "latitude": 38.5,
-      "longitude": 43.35,
-      "name": "Last King Sarduri IV",
-      "name_ru": "Сардури IV - последний царь Урарту",
-      "source": "https://en.wikipedia.org/wiki/Sarduri_IV",
-      "tags": [
-        "Urartu",
-        "Dynasty",
-        "Fall",
-        "King"
-      ],
-      "type": "political"
     },
     {
       "date": "01.01.0590",
@@ -605,9 +617,10 @@
       "name_ru": "Мидийцы захватывают Тушпу",
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
-        "Urartu",
         "Conquest",
         "Fall",
+        "War",
+        "Urartu",
         "Medes"
       ],
       "type": "military"
@@ -624,16 +637,17 @@
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
         "Conquest",
-        "Urartu",
-        "Fall",
-        "Scythian",
         "Destruction",
-        "Medes"
+        "Fall",
+        "War",
+        "Urartu",
+        "Medes",
+        "Scythian"
       ],
       "type": "military"
     },
     {
-      "date": "01.01.0550",
+      "date": "01.01.0540",
       "description": "Achaemenid Persian Empire absorbs former Urartian territories after conquering Median Empire; Erebuni revived under Persian rule, preserving some Urartian cultural traditions",
       "description_ru": "Ахеменидская Персидская империя поглощает бывшие урартские территории после завоевания Мидийской империи; Эребуни возрождается под персидским правлением, сохраняя некоторые урартские культурные традиции",
       "era": "BC",
@@ -643,11 +657,11 @@
       "name_ru": "Персидский контроль над Эребуни",
       "source": "https://en.wikipedia.org/wiki/Erebuni_Fortress",
       "tags": [
-        "Urartu",
-        "Achaemenid",
-        "Persian",
         "Conquest",
-        "Cultural Continuity"
+        "Persian",
+        "Urartu",
+        "Cultural Continuity",
+        "Achaemenid"
       ],
       "type": "political"
     }

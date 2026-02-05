@@ -64,10 +64,11 @@
       "name_ru": "Ассирийская торговая колония Канеш",
       "source": "https://en.wikipedia.org/wiki/Kanesh",
       "tags": [
-        "Assyrian",
-        "Trade",
         "Colonization",
-        "Anatolia"
+        "Assyrian",
+        "Anatolia",
+        "Trade",
+        "City"
       ],
       "type": "historic"
     },
@@ -100,9 +101,10 @@
       "name_ru": "Амореи завоевывают Ашшур",
       "source": "https://en.wikipedia.org/wiki/Shamshi-Adad_I",
       "tags": [
-        "Assyrian",
         "Conquest",
-        "Amorite"
+        "Assyrian",
+        "Amorite",
+        "War"
       ],
       "type": "military"
     },
@@ -154,10 +156,11 @@
       "name_ru": "Завоевание ассирийцами Северной Месопотамии",
       "source": "https://en.wikipedia.org/wiki/Ashur-uballit_I",
       "tags": [
+        "Expansion",
+        "Agriculture",
         "Assyrian",
         "Conquest",
-        "Expansion",
-        "Agriculture"
+        "War"
       ],
       "type": "military"
     },
@@ -174,7 +177,8 @@
       "tags": [
         "Assyrian",
         "Conquest",
-        "Mitanni"
+        "Mitanni",
+        "War"
       ],
       "type": "military"
     },
@@ -222,9 +226,10 @@
       "name_ru": "Ассирийцы завоевывают Вавилонию",
       "source": "https://en.wikipedia.org/wiki/Tukulti-Ninurta_I",
       "tags": [
-        "Assyrian",
         "Conquest",
-        "Babylonian"
+        "Assyrian",
+        "Babylonian",
+        "War"
       ],
       "type": "military"
     },
@@ -294,7 +299,8 @@
       "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_I",
       "tags": [
         "Assyrian",
-        "Expansion"
+        "Expansion",
+        "King"
       ],
       "type": "political"
     },
@@ -309,9 +315,10 @@
       "name_ru": "Битва ассирийцев против арамеев",
       "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_I",
       "tags": [
-        "Assyrian",
+        "Battle",
         "Arameans",
-        "Battle"
+        "Assyrian",
+        "Defense"
       ],
       "type": "military"
     },
@@ -326,10 +333,11 @@
       "name_ru": "Тиглатпаласар I достигает Средиземноморья",
       "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_I",
       "tags": [
+        "Phoenician",
+        "Mediterranean",
         "Assyrian",
         "Expansion",
-        "Mediterranean",
-        "Phoenician"
+        "Tribute"
       ],
       "type": "military"
     },
@@ -377,9 +385,10 @@
       "name_ru": "Калху - новая столица Ассирии",
       "source": "https://en.wikipedia.org/wiki/Ashurnasirpal_II",
       "tags": [
+        "Architecture",
         "Assyrian",
         "Capital",
-        "Architecture"
+        "City"
       ],
       "type": "historic"
     },
@@ -412,11 +421,12 @@
       "name_ru": "Битва Салманасара при Каркаре",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Qarqar",
       "tags": [
-        "Assyrian",
         "Israel",
+        "Assyrian",
         "Battle",
         "Damascus",
-        "Judah"
+        "Judah",
+        "War"
       ],
       "type": "military"
     },
@@ -431,9 +441,11 @@
       "name_ru": "Тиглатпаласар III восходит на трон",
       "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
       "tags": [
+        "King",
+        "Tiglath-Pileser III 👑",
+        "Reform",
         "Assyrian",
-        "Political Change",
-        "Tiglath-Pileser III"
+        "Political"
       ],
       "type": "political"
     },
@@ -448,10 +460,11 @@
       "name_ru": "Битва при Арпаде",
       "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
       "tags": [
+        "Battle",
+        "Tiglath-Pileser III 👑",
         "Assyrian",
-        "Tiglath-Pileser III",
         "Urartu",
-        "Battle"
+        "War"
       ],
       "type": "military"
     },
@@ -466,11 +479,12 @@
       "name_ru": "Первая профессиональная постоянная армия",
       "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
       "tags": [
-        "Assyrian",
         "Innovation",
+        "Assyrian",
         "Army",
-        "Tiglath-Pileser III",
-        "War Science"
+        "Tiglath-Pileser III 👑",
+        "War",
+        "Science"
       ],
       "type": "military"
     },
@@ -485,10 +499,11 @@
       "name_ru": "Поход Тиглатпаласара к египетской границе",
       "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
       "tags": [
-        "Assyrian",
-        "Expansion",
+        "Tiglath-Pileser III 👑",
         "Egypt",
-        "Tiglath-Pileser III"
+        "Expansion",
+        "Assyrian",
+        "War"
       ],
       "type": "military"
     },
@@ -505,9 +520,10 @@
       "tags": [
         "Israel",
         "Conquest",
-        "Tiglath-Pileser III",
+        "Judah",
         "Assyrian",
-        "Judah"
+        "Tiglath-Pileser III 👑",
+        "War"
       ],
       "type": "military"
     },
@@ -522,11 +538,12 @@
       "name_ru": "Ассирийцы захватывают Дамаск",
       "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
       "tags": [
+        "Tiglath-Pileser III 👑",
         "Assyrian",
         "Damascus",
         "Conquest",
         "Arameans",
-        "Tiglath-Pileser III"
+        "War"
       ],
       "type": "military"
     },
@@ -541,11 +558,12 @@
       "name_ru": "Ассирийцы аннексируют Вавилонию",
       "source": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III",
       "tags": [
+        "Annexation",
         "Conquest",
         "Babylonian",
         "Assyrian",
-        "Annexation",
-        "Tiglath-Pileser III"
+        "Tiglath-Pileser III 👑",
+        "War"
       ],
       "type": "political"
     },
@@ -560,12 +578,13 @@
       "name_ru": "Ассирийцы завоевывают Самарию",
       "source": "https://en.wikipedia.org/wiki/Sargon_II",
       "tags": [
-        "Assyrian",
-        "Israel",
         "Conquest",
         "Siege",
-        "Sargon II",
-        "Judah"
+        "Sargon II 👑",
+        "Judah",
+        "Assyrian",
+        "Israel",
+        "War"
       ],
       "type": "military"
     },
@@ -580,10 +599,11 @@
       "name_ru": "Победа Саргона при Каркаре",
       "source": "https://en.wikipedia.org/wiki/Sargon_II",
       "tags": [
-        "Assyrian",
+        "Syria",
+        "Sargon II 👑",
         "Battle",
-        "Sargon II",
-        "Syria"
+        "Assyrian",
+        "War"
       ],
       "type": "military"
     },
@@ -601,8 +621,9 @@
         "Assyrian",
         "Hittite",
         "Conquest",
-        "Sargon II",
-        "Syria"
+        "Sargon II 👑",
+        "Syria",
+        "War"
       ],
       "type": "military"
     },
@@ -618,9 +639,12 @@
       "source": "https://en.wikipedia.org/wiki/Sargon_II",
       "tags": [
         "Battle",
-        "Assyrian",
         "Urartu",
-        "Sargon II"
+        "Assyrian",
+        "Sargon II 👑",
+        "War",
+        "Holy Site",
+        "Plundering"
       ],
       "type": "military"
     },
@@ -639,7 +663,8 @@
         "Expansion",
         "Babylonian",
         "Assyrian",
-        "Sargon II"
+        "Sargon II 👑",
+        "War"
       ],
       "type": "political"
     },
@@ -658,7 +683,7 @@
         "Capital",
         "City",
         "Architecture",
-        "Sargon II"
+        "Sargon II 👑"
       ],
       "type": "historic"
     },
@@ -676,7 +701,7 @@
         "Battle",
         "Assyrian",
         "Death",
-        "Sargon II",
+        "Sargon II 👑",
         "Cimmerian"
       ],
       "type": "political"
@@ -692,10 +717,10 @@
       "name_ru": "Ниневия - новая столица Ассирии",
       "source": "https://en.wikipedia.org/wiki/Sennacherib",
       "tags": [
-        "Assyrian",
-        "Nineveh",
         "Capital",
-        "Architecture"
+        "Architecture",
+        "Assyrian",
+        "City"
       ],
       "type": "historic"
     },
@@ -710,12 +735,13 @@
       "name_ru": "Ассирийцы захватывают Лахиш",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Lachish",
       "tags": [
-        "Judah",
         "Siege",
+        "Judah",
         "Assyrian",
         "Battle",
         "Conquest",
-        "Israel"
+        "Israel",
+        "War"
       ],
       "type": "military"
     },
@@ -730,13 +756,14 @@
       "name_ru": "Вторжение Синаххериба в Иудею",
       "source": "https://en.wikipedia.org/wiki/Sennacherib%27s_Annals",
       "tags": [
-        "Assyrian",
         "Judah",
-        "Siege",
-        "Jerusalem",
-        "Invasions",
+        "Israel",
         "Conquest",
-        "Israel"
+        "Invasions",
+        "Jerusalem",
+        "Siege",
+        "Assyrian",
+        "War"
       ],
       "type": "military"
     },
@@ -752,9 +779,10 @@
       "source": "https://en.wikipedia.org/wiki/Sennacherib",
       "tags": [
         "Babylonian",
-        "Blasphemy",
         "Assyrian",
-        "Destruction"
+        "Blasphemy",
+        "Destruction",
+        "War"
       ],
       "type": "military"
     },
@@ -789,8 +817,9 @@
       "source": "https://en.wikipedia.org/wiki/Esarhaddon",
       "tags": [
         "Assyrian",
+        "Conquest",
         "Egypt",
-        "Conquest"
+        "War"
       ],
       "type": "military"
     },
@@ -807,8 +836,9 @@
       "tags": [
         "Assyrian",
         "Empire",
-        "Ashurbanipal",
-        "Golden Age"
+        "Ashurbanipal 👑",
+        "Golden Age",
+        "King"
       ],
       "type": "political"
     },
@@ -823,10 +853,11 @@
       "name_ru": "Ассирийцы грабят Фивы",
       "source": "https://en.wikipedia.org/wiki/Ashurbanipal",
       "tags": [
-        "Assyrian",
-        "Egypt",
+        "Ashurbanipal 👑",
         "Conquest",
-        "Ashurbanipal"
+        "Egypt",
+        "Assyrian",
+        "War"
       ],
       "type": "military"
     },
@@ -844,7 +875,7 @@
         "Babylonian",
         "Assyrian",
         "Civil War",
-        "Ashurbanipal"
+        "Ashurbanipal 👑"
       ],
       "type": "political"
     },
@@ -859,11 +890,11 @@
       "name_ru": "Основана Библиотека Ниневии",
       "source": "https://en.wikipedia.org/wiki/Library_of_Ashurbanipal",
       "tags": [
-        "Assyrian",
-        "Culture",
         "Literature",
-        "Nineveh",
-        "Ashurbanipal"
+        "Culture",
+        "Assyrian",
+        "Ashurbanipal 👑",
+        "Library"
       ],
       "type": "cultural"
     },
@@ -896,11 +927,13 @@
       "name_ru": "Ассирийцы грабят Сузы и завоевывают Элам",
       "source": "https://en.wikipedia.org/wiki/Ashurbanipal",
       "tags": [
+        "War",
+        "Elamites",
+        "Fall",
         "Assyrian",
         "Destruction",
-        "Ashurbanipal",
-        "Elamites",
-        "Fall"
+        "Ashurbanipal 👑",
+        "Plundering"
       ],
       "type": "military"
     },
@@ -917,7 +950,7 @@
       "tags": [
         "Assyrian",
         "Death",
-        "Ashurbanipal",
+        "Ashurbanipal 👑",
         "Collapse"
       ],
       "type": "political"
@@ -952,14 +985,15 @@
       "name_ru": "Сожжение Ниневии, столицы Ассирии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Nineveh_(612_BC)",
       "tags": [
-        "Assyrian",
-        "Nineveh",
-        "Fall",
+        "Chaldean",
+        "City",
         "Destruction",
-        "Medes",
+        "Fall",
         "Babylonian",
+        "Assyrian",
         "Scythian",
-        "Chaldean"
+        "Medes",
+        "War"
       ],
       "type": "military"
     },
@@ -974,10 +1008,9 @@
       "name_ru": "Конец Неоассирийской империи",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Harran",
       "tags": [
-        "Assyrian",
-        "Battle",
-        "Fall",
         "End",
+        "Assyrian",
+        "Fall",
         "Empire"
       ],
       "type": "military"

@@ -15,9 +15,10 @@
         "Persian",
         "Dynasty",
         "Empire",
-        "Cyrus the Great",
+        "Cyrus the Great 👑",
         "Achaemenid",
-        "Foundation"
+        "Foundation",
+        "King"
       ],
       "type": "political"
     },
@@ -36,31 +37,12 @@
         "Tolerance",
         "Religious",
         "Culture",
-        "Cyrus the Great",
-        "Achaemenid"
+        "Cyrus the Great 👑",
+        "Achaemenid",
+        "Reform",
+        "Political"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0546",
-      "description": "Cyrus the Great conquers Lydia after defeating King Croesus at Battle of Thymbra, adding wealthy Anatolian territories and Lydian gold reserves to Persian Empire. After conquering Lydia, Cyrus spares Croesus's life and makes him advisor, demonstrating magnanimity toward defeated rulers that becomes hallmark of his reign",
-      "description_ru": "Кир Великий завоевывает Лидию после победы над царем Крезом в битве при Тимбре, присваивая богатые анатолийские территории и лидийские золотые резервы Персии. После завоевания Лидии Кир щадит жизнь Креза и делает его советником, демонстрируя великодушие к побежденным правителям, что станет отличительной чертой его правления",
-      "era": "BC",
-      "latitude": 38.4852,
-      "longitude": 28.3053,
-      "name": "Conquest of Lydia",
-      "name_ru": "Завоевание Лидии Персией ",
-      "source": "https://en.wikipedia.org/wiki/Croesus",
-      "tags": [
-        "Persian",
-        "Conquest",
-        "Gold",
-        "Lydia",
-        "Tolerance",
-        "Cyrus the Great",
-        "Achaemenid"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.0546",
@@ -76,13 +58,35 @@
         "Persian",
         "Capital",
         "Architecture",
-        "Building",
+        "Building 🏠",
         "Palace",
-        "Cyrus the Great",
+        "Cyrus the Great 👑",
         "Achaemenid",
         "City"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0546",
+      "description": "Cyrus the Great conquers Lydia after defeating King Croesus at Battle of Thymbra, adding wealthy Anatolian territories and Lydian gold reserves to Persian Empire. After conquering Lydia, Cyrus spares Croesus's life and makes him advisor, demonstrating magnanimity toward defeated rulers that becomes hallmark of his reign",
+      "description_ru": "Кир Великий завоевывает Лидию после победы над царем Крезом в битве при Тимбре, присваивая богатые анатолийские территории и лидийские золотые резервы Персии. После завоевания Лидии Кир щадит жизнь Креза и делает его советником, демонстрируя великодушие к побежденным правителям, что станет отличительной чертой его правления",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.3053,
+      "name": "Conquest of Lydia",
+      "name_ru": "Завоевание Лидии Персией ",
+      "source": "https://en.wikipedia.org/wiki/Croesus",
+      "tags": [
+        "Lydia",
+        "Gold",
+        "Achaemenid",
+        "Cyrus the Great 👑",
+        "Persian",
+        "Conquest",
+        "Tolerance",
+        "War"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0545",
@@ -96,10 +100,11 @@
       "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
       "tags": [
         "Persian",
-        "Greek",
         "Conquest",
-        "Cyrus the Great",
-        "Achaemenid"
+        "Cyrus the Great 👑",
+        "Achaemenid",
+        "Greek",
+        "War"
       ],
       "type": "military"
     },
@@ -115,9 +120,10 @@
       "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
       "tags": [
         "Persian",
-        "Administration",
+        "Achaemenid",
         "Innovation",
-        "Achaemenid"
+        "Administration",
+        "Reform"
       ],
       "type": "political"
     },
@@ -135,8 +141,9 @@
         "Persian",
         "Conquest",
         "Expansion",
-        "Cyrus the Great",
-        "Achaemenid"
+        "Cyrus the Great 👑",
+        "Achaemenid",
+        "War"
       ],
       "type": "military"
     },
@@ -169,13 +176,14 @@
       "name_ru": "Завоевание Вавилона Персией",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Opis",
       "tags": [
-        "Persian",
-        "Babylonian",
         "Conquest",
-        "Cyrus the Great",
-        "Tolerance",
+        "Persian",
+        "Chaldean",
         "Achaemenid",
-        "Chaldean"
+        "Tolerance",
+        "Cyrus the Great 👑",
+        "Babylonian",
+        "War"
       ],
       "type": "military"
     },
@@ -194,7 +202,7 @@
         "Religious",
         "Freedom",
         "Tolerance",
-        "Cyrus the Great",
+        "Cyrus the Great 👑",
         "Human Rights",
         "Achaemenid",
         "Judah"
@@ -217,7 +225,7 @@
         "Religious",
         "Temple",
         "Tolerance",
-        "Cyrus the Great",
+        "Cyrus the Great 👑",
         "Achaemenid"
       ],
       "type": "religious"
@@ -233,13 +241,14 @@
       "name_ru": "Завоевание Персией Сирии и Леванта",
       "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
       "tags": [
-        "Persian",
-        "Conquest",
-        "Expansion",
         "Empire",
-        "Cyrus the Great",
+        "Expansion",
+        "Golden Age",
         "Achaemenid",
-        "Golden Age"
+        "Conquest",
+        "Persian",
+        "Cyrus the Great 👑",
+        "War"
       ],
       "type": "military"
     },
@@ -254,11 +263,12 @@
       "name_ru": "Формирование гвардии Бессмертных",
       "source": "https://en.wikipedia.org/wiki/Immortals_(Achaemenid_Empire)",
       "tags": [
-        "Persian",
-        "Army",
         "Elite",
         "Achaemenid",
-        "War Science"
+        "Army",
+        "Persian",
+        "War",
+        "Science"
       ],
       "type": "military"
     },
@@ -292,13 +302,12 @@
       "name_ru": "Персидские ирригационные системы",
       "source": "https://en.wikipedia.org/wiki/Qanat",
       "tags": [
+        "Engineering ⚙️",
+        "Water",
+        "Achaemenid",
         "Innovation",
         "Persian",
-        "Engineering",
-        "Water",
-        "Agriculture",
-        "Achaemenid",
-        "Flood Control"
+        "Agriculture"
       ],
       "type": "historic"
     },
@@ -314,12 +323,33 @@
       "source": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
       "tags": [
         "Persian",
-        "Language",
-        "Administration",
         "Culture",
-        "Achaemenid"
+        "Language",
+        "Achaemenid",
+        "Administration",
+        "Reform"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.0530",
+      "description": "Cyrus campaigns against Massagetae nomads in Central Asia; killed in battle by Queen Tomyris, ending reign of empire's founder and greatest conqueror",
+      "description_ru": "Кир убит в бою царицей массагетов Томирис, когда ведет военную кампанию против кочевников в Центральной Азии",
+      "era": "BC",
+      "latitude": 42,
+      "longitude": 60,
+      "name": "Death of Cyrus the Great",
+      "name_ru": "Смерть Кира Великого",
+      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
+      "tags": [
+        "Death",
+        "Persian",
+        "Battle",
+        "Cyrus the Great 👑",
+        "Achaemenid",
+        "War"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0530",
@@ -335,31 +365,12 @@
         "Persian",
         "Tomb",
         "Architecture",
-        "Cyrus the Great",
-        "Building",
+        "Cyrus the Great 👑",
+        "Building 🏠",
         "Achaemenid",
         "Burial"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.0530",
-      "description": "Cyrus campaigns against Massagetae nomads in Central Asia; killed in battle by Queen Tomyris, ending reign of empire's founder and greatest conqueror",
-      "description_ru": "Кир убит в бою царицей массагетов Томирис, когда ведет военную кампанию против кочевников в Центральной Азии",
-      "era": "BC",
-      "latitude": 42,
-      "longitude": 60,
-      "name": "Death of Cyrus the Great",
-      "name_ru": "Смерть Кира Великого",
-      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
-      "tags": [
-        "Persian",
-        "Battle",
-        "Death",
-        "Cyrus the Great",
-        "Achaemenid"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.0529",
@@ -391,11 +402,12 @@
       "name_ru": "Завоевание Египта Персией",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Pelusium_(525_BC)",
       "tags": [
-        "Persian",
-        "Battle",
         "Conquest",
+        "Achaemenid",
         "Egypt",
-        "Achaemenid"
+        "Battle",
+        "Persian",
+        "War"
       ],
       "type": "military"
     },
@@ -413,7 +425,7 @@
         "King",
         "Achaemenid",
         "Civil War",
-        "Darius I"
+        "Darius I 👑"
       ],
       "type": "political"
     },
@@ -431,7 +443,7 @@
         "Persian",
         "Assassination",
         "Civil War",
-        "Darius I"
+        "Darius I 👑"
       ],
       "type": "political"
     },
@@ -470,7 +482,7 @@
         "Writing",
         "Monument",
         "Language",
-        "Darius I",
+        "Darius I 👑",
         "Achaemenid"
       ],
       "type": "cultural"
@@ -486,7 +498,7 @@
       "name_ru": "Персидская реставрация Суз",
       "tags": [
         "Persian",
-        "Darius I",
+        "Darius I 👑",
         "Achaemenid",
         "Capital",
         "Administration"
@@ -508,9 +520,31 @@
         "Administration",
         "Reform",
         "Achaemenid",
-        "Darius I"
+        "Darius I 👑"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0518",
+      "description": "Construction begins on Persepolis, ceremonial capital and showcase of imperial power, featuring Apadana palace with distinctive Persian column capitals and extensive reliefs. Nowruz (New Year) was traditionally celebrated in Persepolis.",
+      "description_ru": "Начинается строительство Персеполя, церемониальной столицы и витрины имперской мощи, с дворцом Ападана с характерными персидскими капителями колонн и обширными рельефами. В Персеполе традиционно праздновался Навруз (Новый год)",
+      "era": "BC",
+      "latitude": 29.9342,
+      "longitude": 52.8906,
+      "name": "Foundation of Persepolis",
+      "name_ru": "Основание Персеполя",
+      "source": "https://en.wikipedia.org/wiki/Persepolis",
+      "tags": [
+        "Persian",
+        "Capital",
+        "Architecture",
+        "Palace",
+        "Building 🏠",
+        "Achaemenid",
+        "City",
+        "Darius I 👑"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0518",
@@ -528,29 +562,7 @@
         "Currency",
         "Trade",
         "Achaemenid",
-        "Darius I"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0518",
-      "description": "Construction begins on Persepolis, ceremonial capital and showcase of imperial power, featuring Apadana palace with distinctive Persian column capitals and extensive reliefs. Nowruz (New Year) was traditionally celebrated in Persepolis.",
-      "description_ru": "Начинается строительство Персеполя, церемониальной столицы и витрины имперской мощи, с дворцом Ападана с характерными персидскими капителями колонн и обширными рельефами. В Персеполе традиционно праздновался Навруз (Новый год)",
-      "era": "BC",
-      "latitude": 29.9342,
-      "longitude": 52.8906,
-      "name": "Foundation of Persepolis",
-      "name_ru": "Основание Персеполя",
-      "source": "https://en.wikipedia.org/wiki/Persepolis",
-      "tags": [
-        "Persian",
-        "Capital",
-        "Architecture",
-        "Palace",
-        "Building",
-        "Achaemenid",
-        "City",
-        "Darius I"
+        "Darius I 👑"
       ],
       "type": "historic"
     },
@@ -569,7 +581,7 @@
         "Infrastructure",
         "Communication",
         "Trade",
-        "Engineering",
+        "Engineering ⚙️",
         "Achaemenid",
         "Road"
       ],
@@ -587,10 +599,11 @@
       "source": "https://en.wikipedia.org/wiki/European_Scythian_campaign_of_Darius_I",
       "tags": [
         "Persian",
-        "Scythian",
-        "Darius I",
+        "Darius I 👑",
         "Achaemenid",
-        "Expansion"
+        "Expansion",
+        "Scythian",
+        "War"
       ],
       "type": "military"
     },
@@ -605,12 +618,13 @@
       "name_ru": "Завоевание Фракии и Македонии персами",
       "source": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
       "tags": [
-        "Persian",
-        "Greek",
         "Conquest",
         "Expansion",
-        "Darius I",
-        "Achaemenid"
+        "Darius I 👑",
+        "Achaemenid",
+        "Persian",
+        "Greek",
+        "War"
       ],
       "type": "military"
     },
@@ -626,7 +640,7 @@
       "source": "https://en.wikipedia.org/wiki/Canal_of_the_Pharaohs",
       "tags": [
         "Persian",
-        "Engineering",
+        "Engineering ⚙️",
         "Trade",
         "Water",
         "Egypt",
@@ -645,10 +659,11 @@
       "name_ru": "Система царских инспекторов",
       "source": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
       "tags": [
-        "Persian",
-        "Administration",
         "Achaemenid",
-        "Darius I"
+        "Administration",
+        "Persian",
+        "Darius I 👑",
+        "Reform"
       ],
       "type": "political"
     },
@@ -663,11 +678,11 @@
       "name_ru": "Восстание Ионийских городов против Персии",
       "source": "https://en.wikipedia.org/wiki/Ionian_Revolt",
       "tags": [
-        "Persian",
-        "Greek",
         "Rebellion",
         "Achaemenid",
-        "Greek-Persian Wars"
+        "Persian",
+        "Greek",
+        "War"
       ],
       "type": "military"
     },
@@ -682,12 +697,12 @@
       "name_ru": "Греки сжигают Сарды",
       "source": "https://en.wikipedia.org/wiki/Ionian_Revolt",
       "tags": [
-        "Persian",
         "Greek",
         "Destruction",
+        "Darius I 👑",
         "Achaemenid",
-        "Greek-Persian Wars",
-        "Darius I"
+        "Persian",
+        "War"
       ],
       "type": "military"
     },
@@ -703,11 +718,11 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Lade",
       "tags": [
         "Greek",
-        "Naval",
+        "Persian",
         "Battle",
         "Achaemenid",
-        "Greek-Persian Wars",
-        "Persian"
+        "Naval",
+        "War"
       ],
       "type": "military"
     },
@@ -723,10 +738,10 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Marathon",
       "tags": [
         "Persian",
-        "Greek",
-        "Battle",
         "Achaemenid",
-        "Greek-Persian Wars"
+        "Battle",
+        "Greek",
+        "War"
       ],
       "type": "military"
     },
@@ -746,8 +761,8 @@
         "King",
         "Death",
         "Achaemenid",
-        "Xerxes I",
-        "Darius I"
+        "Xerxes I 👑",
+        "Darius I 👑"
       ],
       "type": "political"
     },
@@ -762,11 +777,12 @@
       "name_ru": "Подавление египетского восстания",
       "source": "https://en.wikipedia.org/wiki/Xerxes_I",
       "tags": [
-        "Persian",
-        "Egypt",
-        "Rebellion",
+        "Xerxes I 👑",
         "Achaemenid",
-        "Xerxes I"
+        "Persian",
+        "Rebellion",
+        "Egypt",
+        "War"
       ],
       "type": "military"
     },
@@ -781,13 +797,14 @@
       "name_ru": "Разрушение персами храма Эсагила",
       "source": "https://en.wikipedia.org/wiki/Xerxes_I",
       "tags": [
-        "Persian",
-        "Babylonian",
         "Temple",
-        "Destruction",
-        "Achaemenid",
+        "Babylonian",
+        "Persian",
+        "Xerxes I 👑",
         "Rebellion",
-        "Xerxes I"
+        "Achaemenid",
+        "Destruction",
+        "Civil War"
       ],
       "type": "military"
     },
@@ -803,11 +820,11 @@
       "source": "https://en.wikipedia.org/wiki/Second_Persian_invasion_of_Greece",
       "tags": [
         "Persian",
-        "Greek",
-        "Army",
-        "Xerxes I",
         "Achaemenid",
-        "Greek-Persian Wars"
+        "Xerxes I 👑",
+        "Army",
+        "Greek",
+        "War"
       ],
       "type": "military"
     },
@@ -822,15 +839,15 @@
       "name_ru": "Битва при Саламине",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Salamis",
       "tags": [
-        "Greek-Persian Wars",
-        "Carian",
-        "Phoenician",
-        "Achaemenid",
-        "Xerxes I",
-        "Battle",
         "Naval",
         "Greek",
-        "Persian"
+        "Persian",
+        "Achaemenid",
+        "Phoenician",
+        "Carian",
+        "Xerxes I 👑",
+        "Battle",
+        "War"
       ],
       "type": "military"
     },
@@ -845,13 +862,13 @@
       "name_ru": "Персия разрушает Афины",
       "source": "https://en.wikipedia.org/wiki/Second_Persian_invasion_of_Greece",
       "tags": [
+        "Xerxes I 👑",
         "Persian",
         "Greek",
         "Conquest",
         "Destruction",
-        "Xerxes I",
         "Achaemenid",
-        "Greek-Persian Wars"
+        "War"
       ],
       "type": "military"
     },
@@ -866,12 +883,12 @@
       "name_ru": "Битва при Фермопилах",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Thermopylae",
       "tags": [
-        "Persian",
         "Greek",
-        "Battle",
         "Sparta",
         "Achaemenid",
-        "Greek-Persian Wars"
+        "Persian",
+        "Battle",
+        "War"
       ],
       "type": "military"
     },
@@ -887,7 +904,7 @@
       "source": "https://en.wikipedia.org/wiki/Xerxes%27_Pontoon_Bridges",
       "tags": [
         "Persian",
-        "Engineering",
+        "Engineering ⚙️",
         "Infrastructure",
         "Innovation",
         "Achaemenid"
@@ -909,8 +926,8 @@
         "Greek",
         "Naval",
         "Battle",
-        "Greek-Persian Wars",
-        "Achaemenid"
+        "Achaemenid",
+        "War"
       ],
       "type": "military"
     },
@@ -926,11 +943,11 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Plataea",
       "tags": [
         "Persian",
-        "Greek",
+        "Achaemenid",
+        "Xerxes I 👑",
         "Battle",
-        "Greek-Persian Wars",
-        "Xerxes I",
-        "Achaemenid"
+        "Greek",
+        "War"
       ],
       "type": "military"
     },
@@ -945,11 +962,11 @@
       "name_ru": "Формирование Делосского союза",
       "source": "https://en.wikipedia.org/wiki/Delian_League",
       "tags": [
-        "Greek",
         "Persian",
-        "Greek-Persian Wars",
         "Athens",
-        "Democracy"
+        "Greek",
+        "War",
+        "Unification"
       ],
       "type": "political"
     },
@@ -967,9 +984,9 @@
         "Persian",
         "Architecture",
         "Palace",
-        "Building",
+        "Building 🏠",
         "Art",
-        "Xerxes I",
+        "Xerxes I 👑",
         "Achaemenid",
         "City"
       ],
@@ -1006,12 +1023,12 @@
       "name_ru": "Битва при Эвримедонте",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Eurymedon",
       "tags": [
+        "Achaemenid",
         "Battle",
         "Naval",
         "Greek",
         "Persian",
-        "Greek-Persian Wars",
-        "Achaemenid"
+        "War"
       ],
       "type": "military"
     },
@@ -1030,7 +1047,7 @@
         "Assassination",
         "Conspiracy",
         "Dynasty",
-        "Xerxes I",
+        "Xerxes I 👑",
         "Death",
         "Achaemenid",
         "King",
@@ -1049,11 +1066,11 @@
       "name_ru": "Египет восстает против Персии",
       "source": "https://en.wikipedia.org/wiki/Achaemenid_Egypt",
       "tags": [
+        "Achaemenid",
         "Persian",
-        "Egypt",
         "Rebellion",
-        "Greek-Persian Wars",
-        "Achaemenid"
+        "Egypt",
+        "War"
       ],
       "type": "military"
     },
@@ -1068,14 +1085,14 @@
       "name_ru": "Подавление египетского восстания",
       "source": "https://en.wikipedia.org/wiki/Achaemenid_Egypt",
       "tags": [
-        "Persian",
         "Greek",
+        "Persian",
+        "Achaemenid",
+        "Peloponnesian",
         "Battle",
         "Egypt",
         "Rebellion",
-        "Greek-Persian Wars",
-        "Achaemenid",
-        "Peloponnesian War"
+        "War"
       ],
       "type": "military"
     },
@@ -1090,13 +1107,13 @@
       "name_ru": "Каллиев мир",
       "source": "https://en.wikipedia.org/wiki/Peace_of_Callias",
       "tags": [
-        "Persian",
-        "Greek",
         "Peace",
-        "Treaty",
+        "Persian",
+        "Achaemenid",
         "Diplomacy",
-        "Greek-Persian Wars",
-        "Achaemenid"
+        "Treaty",
+        "Greek",
+        "War"
       ],
       "type": "political"
     },
@@ -1211,12 +1228,13 @@
       "name_ru": "Персидская поддержка Спарты",
       "source": "https://en.wikipedia.org/wiki/Peloponnesian_War",
       "tags": [
-        "Persian",
-        "Greek",
         "Sparta",
+        "Persian",
+        "Peloponnesian",
+        "Achaemenid",
         "Diplomacy",
-        "Peloponnesian War",
-        "Achaemenid"
+        "Greek",
+        "War"
       ],
       "type": "political"
     },
@@ -1231,10 +1249,10 @@
       "name_ru": "Независимость Египта от Персии",
       "source": "https://en.wikipedia.org/wiki/Twenty-eighth_Dynasty_of_Egypt",
       "tags": [
-        "Persian",
         "Independence",
         "Egypt",
-        "Revolution"
+        "Persian",
+        "Rebellion"
       ],
       "type": "political"
     },
@@ -1289,17 +1307,17 @@
       "name_ru": "Анабасис Ксенофонта",
       "source": "https://en.wikipedia.org/wiki/Anabasis_(Xenophon)",
       "tags": [
-        "Greek",
+        "Mercenaries",
         "Persian",
-        "Writing",
-        "Mercenaries"
+        "Greek",
+        "Literature"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0396",
       "description": "Sparta declares war on Persia, launching campaigns in Anatolia; Spartan King Agesilaus achieves victories in Asia Minor, threatening Persian control",
-      "description_ru": "Спарта изначально поставила на Кира во внутреннем конфликте Персии; хотя Кир проиграл, Спарта продолжила воевать с Персией и начала успешные вторжения в Малую Азию под началом царя Агесилая , ",
+      "description_ru": "Спарта изначально поставила на Кира во внутреннем конфликте Персии; хотя Кир проиграл, Спарта продолжила воевать с Персией и начала успешные вторжения в Малую Азию под началом царя Агесилая",
       "era": "BC",
       "latitude": 38.4852,
       "longitude": 28.3053,
@@ -1307,11 +1325,12 @@
       "name_ru": "Спартанско-персидская война",
       "source": "https://en.wikipedia.org/wiki/Agesilaus_II",
       "tags": [
-        "Persian",
         "Greek",
         "Sparta",
         "Corinthian War",
-        "Achaemenid"
+        "Achaemenid",
+        "Persian",
+        "War"
       ],
       "type": "military"
     },
@@ -1326,12 +1345,13 @@
       "name_ru": "Персия финансирует Коринфскую войну",
       "source": "https://en.wikipedia.org/wiki/Corinthian_War",
       "tags": [
-        "Diplomacy",
-        "Corinthian War",
         "Sparta",
-        "Achaemenid",
+        "Diplomacy",
+        "Greek",
         "Persian",
-        "Greek"
+        "Achaemenid",
+        "Corinthian War",
+        "War"
       ],
       "type": "political"
     },
@@ -1346,11 +1366,12 @@
       "name_ru": "Формализация зороастризма",
       "source": "https://en.wikipedia.org/wiki/Zoroastrianism",
       "tags": [
+        "Achaemenid",
         "Persian",
         "Religious",
         "Zoroastrian",
         "Temple",
-        "Achaemenid"
+        "Reform"
       ],
       "type": "religious"
     },
@@ -1438,10 +1459,11 @@
       "name_ru": "Подчинение Египта Персии",
       "source": "https://en.wikipedia.org/wiki/Achaemenid_Egypt",
       "tags": [
-        "Persian",
-        "Conquest",
         "Egypt",
-        "Achaemenid"
+        "Achaemenid",
+        "Conquest",
+        "Persian",
+        "War"
       ],
       "type": "military"
     },
@@ -1462,23 +1484,6 @@
         "Achaemenid"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0338",
-      "description": "Philip II of Macedon defeats Greek city-states at Battle of Chaeronea, unifying Greece under Macedonian hegemony and preparing for invasion of Persian Empire",
-      "description_ru": "Филипп II Македонский побеждает греческие города-государства в битве при Херонее, объединяя Грецию под македонской гегемонией и готовясь к вторжению в Персидскую империю",
-      "era": "BC",
-      "latitude": 38.4958,
-      "longitude": 22.8483,
-      "name": "Battle of Chaeronea",
-      "name_ru": "Битва при Херонее",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Chaeronea_(338_BC)",
-      "tags": [
-        "Greek",
-        "Macedonian",
-        "Battle"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.0338",
@@ -1521,25 +1526,6 @@
       "type": "political"
     },
     {
-      "date": "01.01.0336",
-      "description": "Philip II of Macedon assassinated; Alexander III (the Great) becomes king at age 20 and inherits father's plan to invade Persian Empire",
-      "description_ru": "Филипп II Македонский убит; Александр III (Великий) становится царем в возрасте 20 лет и наследует план отца вторгнуться в Персидскую империю",
-      "era": "BC",
-      "latitude": 40.5125,
-      "longitude": 22.9408,
-      "name": "Alexander Becomes King",
-      "name_ru": "Александр - царь Македонии",
-      "source": "https://en.wikipedia.org/wiki/Alexander_the_Great",
-      "tags": [
-        "Greek",
-        "Macedonian",
-        "Dynasty",
-        "Assassination",
-        "Regicide"
-      ],
-      "type": "political"
-    },
-    {
       "date": "01.05.0334",
       "description": "Alexander defeats Persian satrapal army at Battle of Granicus River, opening Asia Minor to Macedonian conquest and revealing Persian tactical weakness",
       "description_ru": "Александр побеждает персидскую армию в битве при реке Граник, открывая Малую Азию для македонского завоевания",
@@ -1550,12 +1536,13 @@
       "name_ru": "Битва при Гранике",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Granicus",
       "tags": [
-        "Greek",
-        "Persian",
         "Macedonian",
         "Battle",
-        "Alexander the Great",
-        "Achaemenid"
+        "Alexander the Great 👤",
+        "Achaemenid",
+        "Greek",
+        "Persian",
+        "War"
       ],
       "type": "military"
     },
@@ -1570,12 +1557,13 @@
       "name_ru": "Александр вторгается в Персидскую империю",
       "source": "https://en.wikipedia.org/wiki/Alexander_the_Great",
       "tags": [
-        "Persian",
-        "Greek",
         "Macedonian",
-        "Alexander the Great",
+        "Achaemenid",
+        "Persian",
         "Invasions",
-        "Achaemenid"
+        "Alexander the Great 👤",
+        "Greek",
+        "War"
       ],
       "type": "military"
     },
@@ -1590,12 +1578,13 @@
       "name_ru": "Битва при Иссе",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Issus",
       "tags": [
-        "Macedonian",
-        "Greek",
+        "Battle",
+        "Alexander the Great 👤",
         "Persian",
+        "Macedonian",
         "Achaemenid",
-        "Alexander the Great",
-        "Battle"
+        "Greek",
+        "War"
       ],
       "type": "military"
     },
@@ -1614,7 +1603,7 @@
         "Macedonian",
         "Legend",
         "Culture",
-        "Alexander the Great"
+        "Alexander the Great 👤"
       ],
       "type": "cultural"
     },
@@ -1630,12 +1619,13 @@
       "source": "https://en.wikipedia.org/wiki/Alexander_the_Great",
       "tags": [
         "Greek",
-        "Macedonian",
         "Persian",
-        "Conquest",
+        "Achaemenid",
+        "Alexander the Great 👤",
         "Egypt",
-        "Alexander the Great",
-        "Achaemenid"
+        "Conquest",
+        "Macedonian",
+        "War"
       ],
       "type": "military"
     },
@@ -1650,13 +1640,14 @@
       "name_ru": "Александр входит в Вавилон",
       "source": "https://en.wikipedia.org/wiki/Alexander_the_Great",
       "tags": [
-        "Greek",
-        "Macedonian",
-        "Babylonian",
-        "Persian",
+        "Alexander the Great 👤",
         "Conquest",
-        "Alexander the Great",
-        "Achaemenid"
+        "Persian",
+        "Babylonian",
+        "Macedonian",
+        "Greek",
+        "Achaemenid",
+        "War"
       ],
       "type": "political"
     },
@@ -1671,12 +1662,13 @@
       "name_ru": "Битва при Гавгамелах",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Gaugamela",
       "tags": [
+        "Battle",
+        "Macedonian",
         "Achaemenid",
         "Persian",
         "Greek",
-        "Macedonian",
-        "Battle",
-        "Alexander the Great"
+        "Alexander the Great 👤",
+        "War"
       ],
       "type": "military"
     },
@@ -1712,10 +1704,11 @@
       "source": "https://en.wikipedia.org/wiki/Persepolis",
       "tags": [
         "Greek",
-        "Macedonian",
-        "Persian",
+        "Alexander the Great 👤",
         "Destruction",
-        "Alexander the Great"
+        "Persian",
+        "Macedonian",
+        "War"
       ],
       "type": "military"
     },
@@ -1730,12 +1723,13 @@
       "name_ru": "Александр захватывает Персеполь",
       "source": "https://en.wikipedia.org/wiki/Persepolis",
       "tags": [
-        "Greek",
-        "Macedonian",
-        "Persian",
-        "Conquest",
+        "Alexander the Great 👤",
         "Plundering",
-        "Alexander the Great"
+        "Persian",
+        "Macedonian",
+        "Greek",
+        "Conquest",
+        "War"
       ],
       "type": "military"
     },
@@ -1750,14 +1744,15 @@
       "name_ru": "Падение династии Ахеменидов",
       "source": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
       "tags": [
-        "Persian",
-        "Fall",
-        "Empire",
-        "Greek",
-        "Macedonian",
-        "End",
+        "Alexander the Great 👤",
         "Achaemenid",
-        "Alexander the Great"
+        "End",
+        "Macedonian",
+        "Fall",
+        "Greek",
+        "Persian",
+        "Empire",
+        "War"
       ],
       "type": "political"
     },
@@ -1773,10 +1768,11 @@
       "source": "https://en.wikipedia.org/wiki/Alexander_the_Great",
       "tags": [
         "Treasure",
-        "Greek",
-        "Macedonian",
+        "Conquest",
         "Persian",
-        "Conquest"
+        "Macedonian",
+        "Greek",
+        "War"
       ],
       "type": "military"
     }

@@ -2,7 +2,7 @@
   "description": "Dataset imported with 69 events",
   "events": [
     {
-      "date": "01.01.0323",
+      "date": "01.01.0322",
       "description": "After Alexander the Great's death in Babylon, his generals divide the empire; Ptolemy I Soter, a trusted companion and general, takes control of Egypt.",
       "description_ru": "После смерти Александра Великого в Вавилоне его полководцы делят империю; Птолемей I Сотер, доверенный соратник и полководец, берет под свой контроль Египет и Киренаику (Западную Ливию)",
       "era": "BC",
@@ -12,11 +12,12 @@
       "name_ru": "Птолемей I захватывает Египет",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_I_Soter",
       "tags": [
+        "Ptolemaic",
         "Greek",
-        "Egypt",
+        "War",
         "Foundation",
-        "Wars of the Diadochi",
-        "Ptolemaic"
+        "Egypt",
+        "Diadochi"
       ],
       "type": "political"
     },
@@ -32,11 +33,12 @@
       "source": "https://en.wikipedia.org/wiki/Perdiccas",
       "tags": [
         "Ptolemaic",
+        "War",
+        "Assassination",
         "Egypt",
         "Battle",
         "Greek",
-        "Wars of the Diadochi",
-        "Assassination"
+        "Diadochi"
       ],
       "type": "military"
     },
@@ -51,13 +53,14 @@
       "name_ru": "Битва при Газе",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Gaza_(312_BC)",
       "tags": [
-        "Seleucid",
-        "Ptolemaic",
-        "Wars of the Diadochi",
         "Battle",
-        "Palestine",
+        "Ptolemaic",
+        "Greek",
         "Syria",
-        "Greek"
+        "Seleucid",
+        "War",
+        "Palestine",
+        "Diadochi"
       ],
       "type": "military"
     },
@@ -73,11 +76,12 @@
       "source": "https://en.wikipedia.org/wiki/Ptolemy_I_Soter",
       "tags": [
         "Egypt",
-        "Wars of the Diadochi",
+        "Defense",
+        "Greek",
         "Ptolemaic",
         "Naval",
-        "Defense",
-        "Greek"
+        "War",
+        "Diadochi"
       ],
       "type": "military"
     },
@@ -102,44 +106,6 @@
     },
     {
       "date": "01.01.0300",
-      "description": "Alexander's body is moved from Memphis to Alexandria and placed in a magnificent mausoleum called the Soma; the tomb becomes a pilgrimage site visited by Roman emperors for centuries",
-      "description_ru": "Тело Александра перемещено из Мемфиса в Александрию и помещено в великолепный мавзолей, называемый Сома; гробница становится местом паломничества, которое посещают римские императоры на протяжении веков",
-      "era": "BC",
-      "latitude": 31.2,
-      "longitude": 29.9,
-      "name": "Alexander's Tomb Moved to Alexandria",
-      "name_ru": "Мавзолей Александра",
-      "source": "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great",
-      "tags": [
-        "Greek",
-        "Ptolemaic",
-        "Tomb",
-        "Alexander the Great",
-        "Egypt"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0300",
-      "description": "The Musaeum of Alexandria was founded as the first academy of sciences; its main goal was to collect, systematize, and preserve all known ancient knowledge (from poetry to medicine). Scholars at the Musaeum received royal patronage, free food, and housing to study mathematics, astronomy, medicine, and literature.",
-      "description_ru": "Мусейон Александрии основан как первая академия наук; главной задачей Мусейона было собрать, систематизировать и сохранить всё известное античное знание (от поэзии до медицины). Учёные в Мусейоне получают царское покровительство, бесплатное питание и жильё для занятий математикой, астрономией, медициной и литературой ",
-      "era": "BC",
-      "latitude": 31.2,
-      "longitude": 29.9,
-      "name": "Foundation of the Mouseion",
-      "name_ru": "Основание Мусейона",
-      "source": "https://en.wikipedia.org/wiki/Musaeum",
-      "tags": [
-        "Science",
-        "Ptolemaic",
-        "Greek",
-        "Culture",
-        "Egypt"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0300",
       "description": "Foundation of the Library of Alexandria begins under Ptolemy I; advised by Demetrius of Phalerum, the king creates an institution that will become the greatest repository of knowledge in the ancient world",
       "description_ru": "Начинается строительство Александрийской библиотеки; по совету Деметрия Фалерского Птолемей создаёт учреждение, которое станет величайшим хранилищем знаний древнего мира",
       "era": "BC",
@@ -158,6 +124,45 @@
         "Culture"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.0300",
+      "description": "The Musaeum of Alexandria was founded as the first academy of sciences; its main goal was to collect, systematize, and preserve all known ancient knowledge (from poetry to medicine). Scholars at the Musaeum received royal patronage, free food, and housing to study mathematics, astronomy, medicine, and literature.",
+      "description_ru": "Мусейон Александрии основан как первая академия наук; главной задачей Мусейона было собрать, систематизировать и сохранить всё известное античное знание (от поэзии до медицины). Учёные в Мусейоне получают царское покровительство, бесплатное питание и жильё для занятий математикой, астрономией, медициной и литературой ",
+      "era": "BC",
+      "latitude": 31.2,
+      "longitude": 29.9,
+      "name": "Foundation of the Mouseion",
+      "name_ru": "Основание Мусейона",
+      "source": "https://en.wikipedia.org/wiki/Musaeum",
+      "tags": [
+        "Science",
+        "Egypt",
+        "Culture",
+        "Greek",
+        "Ptolemaic",
+        "Innovation"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0300",
+      "description": "Alexander's body is moved from Memphis to Alexandria and placed in a magnificent mausoleum called the Soma; the tomb becomes a pilgrimage site visited by Roman emperors for centuries",
+      "description_ru": "Тело Александра перемещено из Мемфиса в Александрию и помещено в великолепный мавзолей, называемый Сома; гробница становится местом паломничества, которое посещают римские императоры на протяжении веков",
+      "era": "BC",
+      "latitude": 31.2,
+      "longitude": 29.9,
+      "name": "Alexander's Tomb Moved to Alexandria",
+      "name_ru": "Мавзолей Александра",
+      "source": "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great",
+      "tags": [
+        "Greek",
+        "Ptolemaic",
+        "Tomb",
+        "Alexander the Great 👤",
+        "Egypt"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0297",
@@ -189,13 +194,33 @@
       "name_ru": "Строительство Александрийского маяка",
       "source": "https://en.wikipedia.org/wiki/Lighthouse_of_Alexandria",
       "tags": [
+        "Ptolemaic",
         "Architecture",
         "Egypt",
-        "Ptolemaic",
+        "Greek",
         "Ancient Wonders",
-        "Greek"
+        "Building 🏠"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "02.01.0283",
+      "description": "Ptolemy II Philadelphus becomes sole ruler of Egypt; his reign marks the cultural and scientific zenith of Ptolemaic civilization, with massive expansion of the Library and patronage of scholars",
+      "description_ru": "Птолемей II Филадельф становится единоличным правителем Египта; его правление отмечает культурный и научный расцвет птолемеевской цивилизации",
+      "era": "BC",
+      "latitude": 31.206667,
+      "longitude": 29.900278,
+      "name": "Reign of Ptolemy II Philadelphus",
+      "name_ru": "Птолемей II - правитель Египта",
+      "source": "https://en.wikipedia.org/wiki/Ptolemy_II_Philadelphus",
+      "tags": [
+        "Egypt",
+        "Ptolemaic",
+        "Dynasty",
+        "King",
+        "Greek"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.0283",
@@ -213,25 +238,6 @@
         "Ptolemaic",
         "Dynasty",
         "Death"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0283",
-      "description": "Ptolemy II Philadelphus becomes sole ruler of Egypt; his reign marks the cultural and scientific zenith of Ptolemaic civilization, with massive expansion of the Library and patronage of scholars",
-      "description_ru": "Птолемей II Филадельф становится единоличным правителем Египта; его правление отмечает культурный и научный расцвет птолемеевской цивилизации",
-      "era": "BC",
-      "latitude": 31.206667,
-      "longitude": 29.900278,
-      "name": "Reign of Ptolemy II Philadelphus",
-      "name_ru": "Птолемей II - правитель Египта",
-      "source": "https://en.wikipedia.org/wiki/Ptolemy_II_Philadelphus",
-      "tags": [
-        "Ptolemaic",
-        "Greek",
-        "Egypt",
-        "King",
-        "Dynasty"
       ],
       "type": "political"
     },
@@ -265,11 +271,12 @@
       "name_ru": "Завершение Александрийского маяка",
       "source": "https://en.wikipedia.org/wiki/Lighthouse_of_Alexandria",
       "tags": [
-        "Architecture",
-        "Ptolemaic",
-        "Ancient Wonders",
+        "Egypt",
         "Greek",
-        "Egypt"
+        "Ancient Wonders",
+        "Ptolemaic",
+        "Architecture",
+        "Building 🏠"
       ],
       "type": "cultural"
     },
@@ -284,12 +291,13 @@
       "name_ru": "Начало перевода Септуагинты",
       "source": "https://en.wikipedia.org/wiki/Septuagint",
       "tags": [
-        "Greek",
-        "Ptolemaic",
         "Jewish",
-        "Translation",
+        "Greek",
+        "Egypt",
         "Religious",
-        "Egypt"
+        "Translation",
+        "Ptolemaic",
+        "Writing"
       ],
       "type": "religious"
     },
@@ -343,11 +351,12 @@
       "name_ru": "Птолемеевские торговые экспедиции в Красное море",
       "source": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom",
       "tags": [
+        "Expedition",
         "Ptolemaic",
-        "Trade",
         "Africa",
-        "Elephants",
-        "Ptolemy II"
+        "Greek",
+        "Trade",
+        "Egypt"
       ],
       "type": "historic"
     },
@@ -384,7 +393,7 @@
       "tags": [
         "Ptolemaic",
         "Science",
-        "Engineering",
+        "Engineering ⚙️",
         "Innovation",
         "Egypt",
         "Greek"
@@ -402,11 +411,11 @@
       "name_ru": "Птолемей III - правитель Египта",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_III_Euergetes",
       "tags": [
-        "Greek",
         "Egypt",
-        "Dynasty",
         "King",
-        "Ptolemaic"
+        "Ptolemaic",
+        "Greek",
+        "Dynasty"
       ],
       "type": "political"
     },
@@ -502,7 +511,7 @@
         "Egypt",
         "Architecture",
         "Temple",
-        "Building",
+        "Building 🏠",
         "Ptolemaic",
         "Religious"
       ],
@@ -546,25 +555,6 @@
         "Ptolemaic"
       ],
       "type": "political"
-    },
-    {
-      "date": "22.06.0217",
-      "description": "Battle of Raphia: Ptolemy IV defeats Antiochus III with 70,000 infantry and 5,000 cavalry; for the first time, native Egyptians serve as phalanx soldiers (machimoi). This victory preserves Ptolemaic control of Coele-Syria",
-      "description_ru": "Битва при Рафии: Птолемей IV побеждает Антиоха III с 70 000 пехоты и 5000 кавалерии; впервые коренные египтяне служат фалангитами (махимои). Эта победа сохраняет птолемеевский контроль над Келесирией",
-      "era": "BC",
-      "latitude": 31.29,
-      "longitude": 34.24,
-      "name": "Battle of Raphia",
-      "name_ru": "Битва при Рафии",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Raphia",
-      "tags": [
-        "Ptolemaic",
-        "Battle",
-        "Victory",
-        "Ptolemy IV",
-        "Seleucid"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.0206",
@@ -635,11 +625,11 @@
       "name_ru": "Создание Розеттского камня",
       "source": "https://en.wikipedia.org/wiki/Rosetta_Stone",
       "tags": [
-        "Ptolemaic",
+        "Greek",
+        "Egypt",
         "Culture",
-        "Rosetta Stone",
-        "Ptolemy V",
-        "Hieroglyphics"
+        "Ptolemaic",
+        "Writing"
       ],
       "type": "cultural"
     },
@@ -654,12 +644,14 @@
       "name_ru": "Брак Птолемея V и Клеопатры I",
       "source": "https://en.wikipedia.org/wiki/Cleopatra_I_Syra",
       "tags": [
+        "Greek",
+        "Egypt",
+        "Diplomacy",
         "Ptolemaic",
         "Seleucid",
         "Marriage",
-        "Greek",
-        "Egypt",
-        "Diplomacy"
+        "Syrian Wars",
+        "War"
       ],
       "type": "political"
     },
@@ -674,13 +666,33 @@
       "name_ru": "Конец Великого Фиванского восстания",
       "source": "https://en.wikipedia.org/wiki/Great_Theban_Revolt",
       "tags": [
+        "Egypt",
         "Rebellion",
         "Ptolemaic",
-        "Egypt",
-        "Greek",
-        "Thebes"
+        "Greek"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0180",
+      "description": "The cult of Isis spread throughout the Mediterranean from Egypt; temples to Isis were built in Greece, Rome, and throughout the Hellenistic world. Isis protects women, mothers, and sailors, offering her followers a hope of immortality and personal protection that is unusual among Greek gods.",
+      "description_ru": "Культ Исиды распространяется по всему Средиземноморью из Египта; храмы Исиды строятся в Греции, Риме и по всему эллинистическому миру. Исида защищает женщин, матерей и мореходов, предлагает своим последователям нетипичную для греческих богов надежду на бессмертие и личную защиту.",
+      "era": "BC",
+      "latitude": 31.1819,
+      "longitude": 29.8969,
+      "name": "Spread of Isis Cult Throughout Mediterranean",
+      "name_ru": "Распространение культа Исиды по Средиземноморью",
+      "source": "https://en.wikipedia.org/wiki/Isis",
+      "tags": [
+        "Ptolemaic",
+        "Syncretism",
+        "Greek",
+        "Egypt",
+        "Religious",
+        "Culture",
+        "Mother of God"
+      ],
+      "type": "religious"
     },
     {
       "date": "01.01.0180",
@@ -702,27 +714,6 @@
         "Regency"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0180",
-      "description": "The cult of Isis spread throughout the Mediterranean from Egypt; temples to Isis were built in Greece, Rome, and throughout the Hellenistic world. Isis protects women, mothers, and sailors, offering her followers a hope of immortality and personal protection that is unusual among Greek gods.",
-      "description_ru": "Культ Исиды распространяется по всему Средиземноморью из Египта; храмы Исиды строятся в Греции, Риме и по всему эллинистическому миру. Исида защищает женщин, матерей и мореходов, предлагает своим последователям нетипичную для греческих богов надежду на бессмертие и личную защиту.",
-      "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
-      "name": "Spread of Isis Cult Throughout Mediterranean",
-      "name_ru": "Распространение культа Исиды по Средиземноморью",
-      "source": "https://en.wikipedia.org/wiki/Isis",
-      "tags": [
-        "Ptolemaic",
-        "Culture",
-        "Religious",
-        "Egypt",
-        "Greek",
-        "Syncretism",
-        "Mother of God"
-      ],
-      "type": "religious"
     },
     {
       "date": "01.01.0150",
@@ -863,23 +854,23 @@
       "type": "political"
     },
     {
-      "date": "01.01.0059",
+      "date": "01.04.0059",
       "description": "Ptolemy XII bribes Julius Caesar and Pompey with 6,000 talents (equivalent to Egypt's entire annual revenue) to secure Roman recognition; this massive debt will cripple Egypt for years",
-      "description_ru": "Птолемей XII подкупает Юлия Цезаря и Помпея 6000 талантов (эквивалент годового дохода Египта) для обеспечения римского признания; огромный долг будет разорять Египет годами",
+      "description_ru": "Птолемей XII подкупает Юлия Цезаря и Помпея 6000 талантов (эквивалент годового дохода Египта), чтобы Египет не стал провинцией Рима, а остался независимым, а Птолемей - его правителем. Деньги приходятся очень кстати для земельной реформы Цезаря. Огромный долг будет разорять Египет годами",
       "era": "BC",
-      "latitude": 31.206667,
-      "longitude": 29.900278,
+      "latitude": 41.89318911,
+      "longitude": 12.48506606,
       "name": "Ptolemy XII Bribes Rome for Recognition",
       "name_ru": "Птолемей XII подкупает Рим",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_XII_Auletes",
       "tags": [
-        "Debt",
-        "Egypt",
-        "Ptolemaic",
-        "Pompey the Great",
-        "Julius Caesar",
         "Greek",
         "Roman",
+        "Julius Caesar 👤",
+        "Egypt",
+        "Ptolemaic",
+        "Pompey the Great 👤",
+        "Debt",
         "Bribe"
       ],
       "type": "political"
@@ -895,11 +886,12 @@
       "name_ru": "Рим аннексирует Кипр",
       "source": "https://en.wikipedia.org/wiki/Roman_annexation_of_Cyprus",
       "tags": [
+        "Roman",
         "Annexation",
         "Cyprus",
+        "Greek",
         "Ptolemaic",
-        "Roman",
-        "Greek"
+        "Egypt"
       ],
       "type": "political"
     },
@@ -918,16 +910,16 @@
         "Architecture",
         "Ptolemaic",
         "Religious",
-        "Building",
+        "Building 🏠",
         "Egypt",
         "Greek"
       ],
       "type": "cultural"
     },
     {
-      "date": "01.01.0055",
-      "description": "Ptolemy XII restored to throne by Roman forces under Aulus Gabinius; he executes his daughter Berenice IV and rules with Roman military support, making Egypt effectively a Roman client state",
-      "description_ru": "Римляне возводят Птолемея XII обратно на трон; он казнит свою дочь Беренику IV и правит под патронажем Рима",
+      "date": "01.03.0055",
+      "description": "The governor of Syria, Aulus Gabinius, bribed by Pompey, leads troops into Egypt without the Senate's approval. Mark Antony commands the cavalry on this campaign and meets 14-year-old Cleopatra for the first time. The Romans restore Ptolemy XII to the throne; he executes his daughter, Berenice IV, and rules under Roman patronage.",
+      "description_ru": "Наместник Сирии, Авл Габиний, подкупленный Помпеем, вводит войска в Египет без одобрения Сената. Марк Антоний в этом походе командует кавалерией и впервые знакомится с 14-летней Клеопатрой. Римляне возводят Птолемея XII обратно на трон; он казнит свою дочь Беренику IV и правит под патронажем Рима.",
       "era": "BC",
       "latitude": 31.206667,
       "longitude": 29.900278,
@@ -935,11 +927,14 @@
       "name_ru": "Птолемей XII - наместник Рима",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_XII_Auletes",
       "tags": [
-        "Egypt",
-        "Vassalage",
+        "Cleopatra VII 👑",
+        "Mark Antony 👤",
         "Roman",
-        "Ptolemaic",
-        "Greek"
+        "Pompey the Great 👤",
+        "Vassalage",
+        "Greek",
+        "Egypt",
+        "Ptolemaic"
       ],
       "type": "political"
     },
@@ -948,37 +943,57 @@
       "description": "Ptolemy XII dies, leaving the throne to his 18-year-old daughter Cleopatra VII and her 10-year-old brother Ptolemy XIII as co-rulers; she will become the last and most famous Ptolemaic ruler",
       "description_ru": "Птолемей XII умирает от болезни, завещав трон своей 18-летней дочери Клеопатре VII и её 10-летнему брату Птолемею XIII как соправителям",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Cleopatra VII Becomes Queen",
       "name_ru": "Клеопатра VII - царица Египта",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
       "tags": [
+        "Cleopatra VII 👑",
         "Dynasty",
-        "Greek",
-        "Succession",
         "Ptolemaic",
-        "Cleopatra VII",
+        "Greek",
         "Egypt"
       ],
       "type": "political"
     },
     {
-      "date": "01.10.0048",
-      "description": "Julius Caesar arrives in Alexandria pursuing Pompey; Cleopatra VII famously smuggles herself into his presence rolled in a carpet or linen bag, winning his support against Ptolemy XIII",
-      "description_ru": "Юлий Цезарь прибывает в Александрию, преследуя Помпея; Клеопатра VII, по преданию, преодолевает охрану брата, будучи завернутой в ковёр или льняной мешок. Клеопатра стремится заручиться поддержкой Цезаря против брата.",
+      "date": "01.11.0048",
+      "description": "Siege of Alexandria: Caesar is besieged in the royal palace by Egyptian forces; during the fighting, part of the great Library of Alexandria is accidentally burned, destroying thousands of scrolls",
+      "description_ru": "Цезарь с Клеопатрой и двумя легионами заблокированы в царском дворце, осажденном египетскими войсками, лояльными Птолемею XIII; во время боёв часть великой Александрийской библиотеки случайно сгорает, уничтожая тысячи свитков",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
+      "name": "Siege of Alexandria and Library Fire",
+      "name_ru": "Осада Александрии Птолемеем XIII",
+      "source": "https://en.wikipedia.org/wiki/Siege_of_Alexandria_(47_BC)",
+      "tags": [
+        "Roman",
+        "Julius Caesar 👤",
+        "Egypt",
+        "Siege",
+        "Ptolemaic",
+        "Cleopatra VII 👑",
+        "Civil War"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.10.0048",
+      "description": "Julius Caesar arrives in Alexandria pursuing Pompey; Cleopatra VII famously smuggles herself into his presence rolled in a carpet or linen bag, winning his support against Ptolemy XIII. She impresses Caesar so much that the very next day he orders Ptolemy XIII to reconcile with his sister.",
+      "description_ru": "Юлий Цезарь прибывает в Александрию, преследуя Помпея; Клеопатра VII, по преданию, преодолевает охрану брата, будучи завернутой в ковёр или льняной мешок. Клеопатра стремится заручиться поддержкой Цезаря против брата. Она так впечатляет Цезаря, что уже на следующий день он велит Птолемею XIII примириться с сестрой.",
+      "era": "BC",
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Cleopatra Meets Julius Caesar",
       "name_ru": "Клеопатра встречает Юлия Цезаря",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
       "tags": [
-        "Roman",
-        "Cleopatra VII",
+        "Cleopatra VII 👑",
         "Ptolemaic",
-        "Julius Caesar",
-        "Egypt"
+        "Julius Caesar 👤",
+        "Egypt",
+        "Roman"
       ],
       "type": "political"
     },
@@ -994,11 +1009,11 @@
       "source": "https://en.wikipedia.org/wiki/Pompey",
       "tags": [
         "Murder",
-        "Ptolemaic",
         "Egypt",
         "Roman",
-        "Julius Caesar",
-        "Pompey the Great"
+        "Pompey the Great 👤",
+        "Ptolemaic",
+        "Civil War"
       ],
       "type": "political"
     },
@@ -1007,18 +1022,18 @@
       "description": "Ptolemy XIII's advisers expel Cleopatra VII from Alexandria; she raises an army in Syria to reclaim her throne, beginning a civil war that will soon involve Rome",
       "description_ru": "Советники Птолемея XIII изгоняют Клеопатру VII из Александрии; она собирает армию в Сирии, чтобы вернуть свой трон, начиная гражданскую войну, которая вскоре вовлечёт Рим",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Cleopatra VII Expelled from Alexandria",
       "name_ru": "Клеопатра VII изгнана из Александрии",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
       "tags": [
         "Exile",
-        "Civil War",
+        "Cleopatra VII 👑",
         "Ptolemaic",
-        "Cleopatra VII",
-        "Egypt",
-        "Greek"
+        "Civil War",
+        "Greek",
+        "Egypt"
       ],
       "type": "political"
     },
@@ -1027,107 +1042,88 @@
       "description": "Caesarion (Ptolemy XV) is born, the son of Cleopatra VII and allegedly Julius Caesar; he will be the last pharaoh of Egypt and the last member of the Ptolemaic dynasty",
       "description_ru": "Рождается Цезарион (Птолемей XV), сын Клеопатры VII и предположительно Юлия Цезаря; он станет последним фараоном Египта и последним членом династии Птолемеев",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Birth of Caesarion",
       "name_ru": "Рождение Цезариона",
       "source": "https://en.wikipedia.org/wiki/Caesarion",
       "tags": [
         "Roman",
         "Ptolemaic",
-        "Cleopatra VII",
         "Dynasty",
-        "Julius Caesar",
-        "Egypt"
+        "Cleopatra VII 👑",
+        "Egypt",
+        "Birth"
       ],
       "type": "political"
     },
     {
-      "date": "15.01.0047",
-      "description": "Battle of the Nile: Caesar defeats Ptolemy XIII's forces; the young king drowns in the Nile while fleeing. Cleopatra VII becomes sole ruler of Egypt with Roman support",
-      "description_ru": "Цезарь побеждает войска Птолемея XIII; юный царь тонет в Ниле при отступлении. Клеопатра VII становится единоличной правительницей Египта при римской поддержке",
+      "date": "23.03.0047",
+      "description": "Caesar defeats the forces of Ptolemy XIII, reinforced with arrived Mithridates of Pergamon; the young king Ptolemy XIII drowns in the Nile during his retreat. Cleopatra VII becomes sole ruler of Egypt with Roman support.",
+      "description_ru": "Цезарь побеждает войска Птолемея XIII, получив подкрепление от Митридата Пергамского; юный царь тонет в Ниле при отступлении. Клеопатра VII становится единоличной правительницей Египта при римской поддержке",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 30.98526199,
+      "longitude": 30.75279236,
       "name": "Battle of the Nile - Death of Ptolemy XIII",
       "name_ru": "Битва на Ниле",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Nile_(47_BC)",
       "tags": [
-        "Ptolemaic",
-        "Julius Caesar",
-        "Battle",
-        "Cleopatra VII",
-        "Death",
         "Roman",
-        "Egypt"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0047",
-      "description": "Siege of Alexandria: Caesar is besieged in the royal palace by Egyptian forces; during the fighting, part of the great Library of Alexandria is accidentally burned, destroying thousands of scrolls",
-      "description_ru": "Цезарь осаждён в царском дворце египетскими войсками; во время боёв часть великой Александрийской библиотеки случайно сгорает, уничтожая тысячи свитков",
-      "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
-      "name": "Siege of Alexandria and Library Fire",
-      "name_ru": "Осада Александрии египтянами",
-      "source": "https://en.wikipedia.org/wiki/Siege_of_Alexandria_(47_BC)",
-      "tags": [
-        "Siege",
-        "Ancient Wonders",
-        "Roman",
-        "Ptolemaic",
+        "Julius Caesar 👤",
         "Egypt",
-        "Julius Caesar",
-        "Library",
-        "Destruction"
+        "Battle",
+        "Death",
+        "Ptolemaic",
+        "Cleopatra VII 👑",
+        "Pergamon",
+        "Civil War"
       ],
       "type": "military"
     },
     {
-      "date": "01.01.0046",
-      "description": "Cleopatra VII visits Rome as Caesar's guest, residing in his villa across the Tiber; she brings Caesarion, causing scandal among Romans and concerns about eastern monarchy influencing Rome",
-      "description_ru": "Клеопатра VII переезжает с сыном в Рим как гостья Цезаря, проживая в его вилле за Тибром; это вызывает скандал среди римлян и опасения относительно влияния восточной монархии на Рим",
+      "date": "01.06.0046",
+      "description": "After Caesar's victory over the rebels, Cleopatra VII arrives in Rome with her son. Caesar settles them in his villa beyond the Tiber, Cleopatra lives as a second wife; This causes a scandal among the Romans and raises concerns about the growing influence of the Eastern monarchy on the future of Rome.",
+      "description_ru": "Клеопатра VII после победы Цезаря над мятежниками приезжает с сыном в Рим. Цезарь селит их в своей вилле за Тибром, Клеопатра живет на правах второй жены; это вызывает скандал среди римлян и опасения относительно растущего влияния восточной монархии на будущее Рима",
       "era": "BC",
-      "latitude": 41.9,
-      "longitude": 12.5,
+      "latitude": 41.88398406,
+      "longitude": 12.46424139,
       "name": "Cleopatra's Visit to Rome",
       "name_ru": "Переезд Клеопатры VII в Рим",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
       "tags": [
-        "Diplomacy",
+        "Cleopatra VII 👑",
         "Ptolemaic",
-        "Roman",
-        "Cleopatra VII",
-        "Julius Caesar"
+        "Julius Caesar 👤",
+        "Diplomacy",
+        "Roman"
       ],
       "type": "political"
     },
     {
       "date": "15.03.0044",
-      "description": "Julius Caesar is assassinated in Rome; Cleopatra VII flees back to Egypt with Caesarion, facing an uncertain future as Rome descends into civil war",
-      "description_ru": "Юлий Цезарь убит в Римском Сенате; Клеопатра VII покидает поместье и бежит обратно в Египет с Цезарионом",
+      "description": "Julius Caesar is assassinated by conspirators in the Curia of Pompey, at the feet of his enemy's statue, where the Senate was meeting at the time. Mark Antony was detained at the entrance and was unable to protect him. Cleopatra VII abandons the estate and flees back to Egypt with Caesarion. After the murder, Pompey's Curia was declared cursed and walled up.",
+      "description_ru": "Юлий Цезарь убит заговорщиками в курии Помпея, у ног статуи своего врага, где в это время проходили встречи Сената; Марк Антоний был задержан у входа и не смог защитить его. Клеопатра VII покидает поместье и бежит обратно в Египет с Цезарионом. Курия Помпея после убийства наречена проклятой и замурована",
       "era": "BC",
-      "latitude": 41.9,
-      "longitude": 12.5,
+      "latitude": 41.89547719,
+      "longitude": 12.47399926,
       "name": "Assassination of Julius Caesar",
       "name_ru": "Убийство Юлия Цезаря",
       "source": "https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar",
       "tags": [
-        "Crisis",
-        "Ptolemaic",
         "Roman",
+        "Julius Caesar 👤",
+        "Crisis",
         "Assassination",
+        "Conspiracy",
         "Senate",
-        "Julius Caesar"
+        "Mark Antony 👤"
       ],
       "type": "political"
     },
     {
       "date": "01.09.0041",
-      "description": "Mark Antony, as one of Rome's leaders, needed Egypt's support in his fight against Parthia. Cleopatra VII made a dramatic appearance before Mark Antony in Tarsus; arriving on a golden barge with purple sails and silver oars, dressed as Venus, she began a political and romantic alliance that would transform the Mediterranean world.",
-      "description_ru": "Марку Антонию, как одному из лидеров Рима, нужна поддержка Египта в борьбе с Парфией. Клеопатра VII театрально является к Марку Антонию в Тарс; прибывая на золотой барже с пурпурными парусами и серебряными вёслами, одетая как Венера. Она приглашает полководца посетить Александрию зимой, он соглашается, и так там и остается.",
+      "description": "Mark Antony needed Egypt's support in his fight against Parthia. Cleopatra VII made a dramatic appearance before Mark Antony in Tarsus; arriving on a golden barge with purple sails and silver oars, dressed as Venus, she began a political and romantic alliance that would transform the Mediterranean world.",
+      "description_ru": "Марку Антонию нужна поддержка Египта в борьбе с Парфией. Клеопатра VII театрально является к Марку Антонию в Тарс; прибывая на золотой барже с пурпурными парусами и серебряными вёслами, одетая как Венера. Она приглашает полководца посетить Александрию зимой, он соглашается, и так там и остается.",
       "era": "BC",
       "latitude": 36.92,
       "longitude": 34.89,
@@ -1135,38 +1131,39 @@
       "name_ru": "Марк Антоний вызывает Клеопатру в Тарс",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
       "tags": [
-        "Mark Antony",
-        "Egypt",
         "Roman",
-        "Cleopatra VII",
-        "Ptolemaic"
+        "Mark Antony 👤",
+        "Ptolemaic",
+        "Egypt",
+        "Cleopatra VII 👑",
+        "Diplomacy"
       ],
       "type": "political"
     },
     {
-      "date": "01.09.0040",
+      "date": "01.10.0040",
       "description": "Cleopatra VII gives birth to twins Alexander Helios and Cleopatra Selene, children of Mark Antony; they are named after the sun and moon, symbolizing universal dominion",
-      "description_ru": "Спустя год Клеопатра VII рождает близнецов Александра Гелиоса и Клеопатру Селену, детей Марка Антония; они названы в честь солнца и луны, символизируя всемирное владычество",
+      "description_ru": "Клеопатра VII рождает близнецов Александра Гелиоса и Клеопатру Селену, детей Марка Антония; они названы в честь солнца и луны, символизируя всемирное владычество",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Birth of Alexander Helios and Cleopatra Selene",
       "name_ru": "Близнецы Антония и Клеопатры",
       "source": "https://en.wikipedia.org/wiki/Alexander_Helios",
       "tags": [
+        "Roman",
         "Egypt",
         "Dynasty",
-        "Roman",
         "Ptolemaic",
-        "Cleopatra VII",
-        "Mark Antony"
+        "Cleopatra VII 👑",
+        "Birth"
       ],
       "type": "political"
     },
     {
-      "date": "01.01.0037",
-      "description": "Mark Antony and Cleopatra VII formally marry in Antioch; Antony grants her vast territories including Cyprus, parts of Cilicia, Phoenicia, and Judea, recreating the old Ptolemaic Empire",
-      "description_ru": "Марк Антоний и Клеопатра VII официально женятся в Антиохии; Антоний дарует ей обширные территории, включая Кипр, части Киликии, Финикии и Иудеи, воссоздавая старую Птолемеевскую империю",
+      "date": "01.09.0037",
+      "description": "Mark Antony and Cleopatra VII marry according to the Eastern rite in Antioch. Antony grants her vast territories, including Cyprus, parts of Cilicia, Phoenicia, and Judea, recreating the old Ptolemaic Empire. His position as king provides Antony with financial support in his struggle against Parthia. The marriage is not recognized in Rome, as Antony is already married to Octavian's sister.",
+      "description_ru": "Марк Антоний и Клеопатра VII женятся по восточному обряду в Антиохии; Антоний дарует ей обширные территории, включая Кипр, части Киликии, Финикии и Иудеи, воссоздавая старую Птолемеевскую империю. Положение царя дает Антонию финансовую поддержку в борьбе с Парфией. В Риме этот брак не признан, поскольку Антоний уже женат на сестре Октавиана",
       "era": "BC",
       "latitude": 36.2034,
       "longitude": 36.1639,
@@ -1174,32 +1171,32 @@
       "name_ru": "Брак Антония и Клеопатры",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
       "tags": [
-        "Mark Antony",
-        "Cleopatra VII",
-        "Roman",
-        "Ptolemaic",
+        "Mark Antony 👤",
         "Marriage",
-        "Egypt"
+        "Egypt",
+        "Ptolemaic",
+        "Roman",
+        "Cleopatra VII 👑"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0034",
-      "description": "Donations of Alexandria: Antony publicly proclaims Cleopatra 'Queen of Kings' and divides Roman eastern territories among their children; Octavian uses this to turn Roman public opinion against Antony",
-      "description_ru": "Марк Антоний публично провозглашает Клеопатру 'Царицей царей' и делит римские восточные территории между детьми Клеопатры (включая Цезариона); Октавиан использует это, чтобы настроить Рим против Антония",
+      "description": "Mark Antony publicly proclaims Cleopatra \"Queen of Kings\" and distributes Rome's eastern territories among Cleopatra's children (including Caesarion); in fact, he is building a new state within the jurisdiction of Rome. Octavian, meanwhile, skillfully plays on fears in Rome to turn the elites against Antony.",
+      "description_ru": "Марк Антоний публично провозглашает Клеопатру 'Царицей царей' и распределяет римские восточные территории между детьми Клеопатры (включая Цезариона); фактически строит новое государство внутри юрисдикции Рима. Октавиан тем временем умело играет на страхах в Риме, чтобы настроить элиты против Антония",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Donations of Alexandria",
       "name_ru": "Александрийские дарения",
       "source": "https://en.wikipedia.org/wiki/Donations_of_Alexandria",
       "tags": [
         "Roman",
-        "Mark Antony",
-        "Cleopatra VII",
+        "Egypt",
         "Ptolemaic",
-        "Octavian",
-        "Egypt"
+        "Mark Antony 👤",
+        "Cleopatra VII 👑",
+        "Octavian 👑"
       ],
       "type": "political"
     },
@@ -1208,61 +1205,61 @@
       "description": "Octavian declares war on Cleopatra (not Antony, to avoid the appearance of civil war); the war is presented as a conflict between Rome and a foreign queen seeking to subjugate the Roman people",
       "description_ru": "Октавиан объявляет войну Клеопатре (не Антонию, чтобы избежать видимости гражданской войны); война представлена как конфликт между Римом и иностранной царицей, стремящейся покорить римский народ",
       "era": "BC",
-      "latitude": 41.9,
-      "longitude": 12.5,
+      "latitude": 41.89296549,
+      "longitude": 12.48539865,
       "name": "Octavian Declares War on Cleopatra",
       "name_ru": "Октавиан объявляет войну Клеопатре",
       "source": "https://en.wikipedia.org/wiki/Final_War_of_the_Roman_Republic",
       "tags": [
-        "Roman",
-        "Ptolemaic",
-        "Cleopatra VII",
         "Egypt",
-        "Octavian",
-        "Civil War"
+        "Civil War",
+        "Ptolemaic",
+        "Roman",
+        "Cleopatra VII 👑",
+        "Octavian 👑"
       ],
       "type": "political"
     },
     {
       "date": "02.09.0031",
-      "description": "Battle of Actium: Octavian's fleet under Agrippa defeats the combined forces of Antony and Cleopatra off the coast of Greece; Cleopatra's ships flee, followed by Antony, abandoning their army",
-      "description_ru": "Битва при Акциуме: флот Октавиана под командованием Агриппы побеждает объединённые силы Антония и Клеопатры у побережья Греции; корабли Клеопатры бегут, за ними следует Антоний, бросая свою армию",
+      "description": "The massive quinqueremes of Antony and Cleopatra lost the battle to Octavian's maneuverable liburnas under Agrippa; Antony's fleet was helpless on the open sea. Cleopatra's ships fled,  Antony followed them, abandoning his army on land.",
+      "description_ru": "Массивные квинкиремы Антония и Клеопатры проиграли бой маневренным либурнам Октавиана под командованием Агриппы; флот Антония беспомощен в открытом море. Корабли Клеопатры бегут, за ними следует Антоний, бросая свою армию на суше.",
       "era": "BC",
-      "latitude": 38.95,
-      "longitude": 20.77,
+      "latitude": 38.92469486,
+      "longitude": 20.69858551,
       "name": "Battle of Actium",
       "name_ru": "Битва при Акциуме",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Actium",
       "tags": [
-        "Cleopatra VII",
         "Roman",
         "Battle",
-        "Ptolemaic",
-        "Mark Antony",
-        "Octavian",
-        "Naval",
         "Egypt",
-        "Civil War"
+        "Naval",
+        "Civil War",
+        "Ptolemaic",
+        "Mark Antony 👤",
+        "Cleopatra VII 👑",
+        "Tactics"
       ],
       "type": "military"
     },
     {
       "date": "23.08.0030",
-      "description": "Caesarion is captured and executed on Octavian's orders; the last Ptolemaic pharaoh dies at age 17, and Egypt becomes a Roman province, ending the Hellenistic age in the eastern Mediterranean",
-      "description_ru": "Цезарион схвачен и казнён по приказу Октавиана; последний фараон из Птолемеев погибает в возрасте 17 лет, и Египет становится римской провинцией, завершая эллинистическую эпоху в восточном Средиземноморье",
+      "description": "Caesarion is captured and executed on Octavian's orders; the last Ptolemaic pharaoh dies at age 17, and Egypt becomes a Roman province, ending the Hellenistic age in the eastern Mediterranean. Octavian spared the children of Antony and Cleopatra, giving them to Octavia to raise.",
+      "description_ru": "Цезарион схвачен и казнён по приказу Октавиана; последний фараон из Птолемеев погибает в возрасте 17 лет, и Египет становится римской провинцией, завершая эллинистическую эпоху в восточном Средиземноморье. Детей Антония и Клеопатры Октавиан пощадил, отдав их на воспитание Октавии ",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Execution of Caesarion - Egypt Becomes Roman Province",
       "name_ru": "Октавиан казнит Цезариона",
       "source": "https://en.wikipedia.org/wiki/Caesarion",
       "tags": [
-        "Execution",
-        "Ptolemaic",
-        "Roman",
         "Dynasty",
+        "Egypt",
         "Fall",
-        "Egypt"
+        "Roman",
+        "Execution",
+        "Ptolemaic"
       ],
       "type": "political"
     },
@@ -1271,13 +1268,13 @@
       "description": "Cleopatra VII commits suicide, allegedly by asp bite, ending 275 years of Ptolemaic rule in Egypt; she is 39 years old and is buried with Mark Antony in a location now unknown",
       "description_ru": "Клеопатра VII совершает самоубийство, предположительно умирает в 39 лет от укуса аспида, завершая 275 лет птолемеевского правления в Египте. Где они с Антонием похоронены - неизвестно.",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
+      "latitude": 31.206667,
+      "longitude": 29.900278,
       "name": "Death of Cleopatra VII - End of Ptolemaic Dynasty",
       "name_ru": "Самоубийство Клеопатры",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
       "tags": [
-        "Cleopatra VII",
+        "Cleopatra VII 👑",
         "Ptolemaic",
         "Death",
         "Fall",
@@ -1288,22 +1285,22 @@
     },
     {
       "date": "01.08.0030",
-      "description": "Octavian's forces enter Alexandria after Antony's suicide; Cleopatra VII attempts to negotiate but fails to sway the Roman general, who is determined to parade her in his triumph",
-      "description_ru": "Войска Октавиана входят в Александрию после самоубийства Марка Антония; Клеопатра VII пытается вести переговоры, но не может убедить римского полководца, решившего провести её в своём триумфе",
+      "description": "The last of Antony's troops defect to Rome. Rumors reach him that Cleopatra has committed suicide (possibly by agreement between Octavian and Cleopatra), and he throws himself on his sword. Cleopatra VII attempts to negotiate with Octavian, but realizes she is destined to be a trophy in his triumph.",
+      "description_ru": "Последние войска Антония переходят на сторону Рима. До него доносят слух, что Клеопатра покончила с собой (возможно, по договоренности Октавиана и Клеопатры), и он бросается на меч. Клеопатра VII пытается вести переговоры с Октавианом, но понимает, что ей уготована роль трофея в его триумфе.",
       "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
-      "name": "Fall of Alexandria to Octavian",
+      "latitude": 31.206667,
+      "longitude": 29.900278,
+      "name": "Fall of Alexandria",
       "name_ru": "Падение Александрии перед Римом",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
       "tags": [
         "Civil War",
-        "Egypt",
-        "Octavian",
-        "Ptolemaic",
         "Roman",
+        "Suicide",
+        "Ptolemaic",
         "Conquest",
-        "Suicide"
+        "Egypt",
+        "Octavian 👑"
       ],
       "type": "military"
     }
