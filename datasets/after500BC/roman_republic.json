@@ -1,5 +1,5 @@
 {
-  "description": "Dataset imported with 122 events",
+  "description": "Comprehensive Roman Republic history from legendary founding to transformation into Empire with war context",
   "events": [
     {
       "date": "21.04.0753",
@@ -93,6 +93,98 @@
         "King"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0680",
+      "description": "Tullus Hostilius becomes the third king of Rome. Unlike peaceful Numa, he is warlike and seeks to expand Roman power. He considers Alba Longa, though Rome's mother city, a rival for leadership of the Latin peoples.",
+      "description_ru": "Тулл Гостилий становится третьим царём Рима. В отличие от мирного Нумы, он воинственен и стремится расширить римскую власть. Он считает Альба-Лонгу, хотя та является материнским городом Рима, соперницей за лидерство среди латинских народов.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Tullus Hostilius Becomes King",
+      "name_ru": "Тулл Гостилий становится царём",
+      "source": "https://en.wikipedia.org/wiki/Tullus_Hostilius",
+      "tags": [
+        "Roman",
+        "King",
+        "Legend"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0678",
+      "description": "Border raids between Rome and Alba Longa escalate as farmers steal cattle across boundaries. Both cities claim the other started the conflict. The Latin League watches as its two leading cities prepare for war over hegemony.",
+      "description_ru": "Пограничные набеги между Римом и Альба-Лонгой обостряются, когда крестьяне угоняют скот через границы. Оба города утверждают, что другой начал конфликт. Латинский союз наблюдает, как два его ведущих города готовятся к войне за гегемонию.",
+      "era": "BC",
+      "latitude": 41.82,
+      "longitude": 12.57,
+      "name": "Rome-Alba Border Conflict",
+      "name_ru": "Пограничный конфликт Рима и Альба-Лонги",
+      "source": "https://en.wikipedia.org/wiki/Alba_Longa",
+      "tags": [
+        "Roman",
+        "Latin League",
+        "War",
+        "Conflict"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0677",
+      "description": "To avoid mass bloodshed between kinsmen, Rome and Alba Longa agree to decide the war by single combat. The Roman Horatii triplets fight the Alban Curiatii triplets. Two Horatii fall, but the survivor kills all three wounded Curiatii by feigning retreat and fighting them separately.",
+      "description_ru": "Чтобы избежать массового кровопролития между родственниками, Рим и Альба-Лонга соглашаются решить войну поединком. Римские тройняшки Горации сражаются с альбанскими тройняшками Куриациями. Двое Горациев погибают, но выживший убивает всех троих раненых Куриациев, притворившись бегущим и сражаясь с каждым по отдельности.",
+      "era": "BC",
+      "latitude": 41.76,
+      "longitude": 12.68,
+      "name": "Combat of Horatii and Curiatii",
+      "name_ru": "Поединок Горациев и Куриациев",
+      "source": "https://en.wikipedia.org/wiki/Horatii",
+      "tags": [
+        "Roman",
+        "Latin League",
+        "War",
+        "Legend",
+        "Battle"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0676",
+      "description": "Alba Longa accepts Roman supremacy after the Horatii victory, but Alban dictator Mettius Fufetius secretly plots with Fidenae and Veii against Rome. During a joint battle, he holds his troops back, waiting to see who wins before committing.",
+      "description_ru": "Альба-Лонга признаёт римское верховенство после победы Горациев, но альбанский диктатор Меттий Фуфетий тайно заговаривает с Фиденами и Вейями против Рима. Во время совместной битвы он удерживает свои войска, ожидая, кто победит, прежде чем вступить в бой.",
+      "era": "BC",
+      "latitude": 41.95,
+      "longitude": 12.42,
+      "name": "Alban Treachery at Fidenae",
+      "name_ru": "Предательство альбанцев при Фиденах",
+      "source": "https://en.wikipedia.org/wiki/Mettius_Fufetius",
+      "tags": [
+        "Roman",
+        "Latin League",
+        "War",
+        "Etruscan",
+        "Betrayal"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0675",
+      "description": "Tullus Hostilius punishes Mettius Fufetius for his treachery by having him torn apart by chariots driven in opposite directions — the only case of this punishment in Roman history. Rome then destroys Alba Longa entirely, sparing only temples, and forcibly moves its population to Rome.",
+      "description_ru": "Тулл Гостилий наказывает Меттия Фуфетия за предательство, разорвав его колесницами, гонимыми в разные стороны — единственный случай такой казни в римской истории. Затем Рим полностью разрушает Альба-Лонгу, сохранив только храмы, и принудительно переселяет её население в Рим.",
+      "era": "BC",
+      "latitude": 41.7472,
+      "longitude": 12.6506,
+      "name": "Execution of Mettius Fufetius",
+      "name_ru": "Казнь Меттия Фуфетия",
+      "source": "https://en.wikipedia.org/wiki/Mettius_Fufetius",
+      "tags": [
+        "Roman",
+        "Latin League",
+        "War",
+        "Death",
+        "Legend"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0673",
@@ -286,6 +378,24 @@
       "type": "historic"
     },
     {
+      "date": "01.01.0504",
+      "description": "Expelled Tarquins seek help from the Etruscan city of Veii. Veii and other Etruscan cities see an opportunity to weaken Rome while it is adjusting to republican government. This begins centuries of Roman-Etruscan conflict.",
+      "description_ru": "Изгнанные Тарквинии ищут помощи у этрусского города Вейи. Вейи и другие этрусские города видят возможность ослабить Рим, пока он приспосабливается к республиканскому правлению. Это начинает вековой римско-этрусский конфликт.",
+      "era": "BC",
+      "latitude": 42.0167,
+      "longitude": 12.3833,
+      "name": "Veii Supports Tarquins",
+      "name_ru": "Вейи поддерживают Тарквиниев",
+      "source": "https://en.wikipedia.org/wiki/Veii",
+      "tags": [
+        "Roman",
+        "Etruscan",
+        "War",
+        "Exile"
+      ],
+      "type": "military"
+    },
+    {
       "date": "01.01.0496",
       "description": "Romans defeat the Latin League at Lake Regillus. The divine twins Castor and Pollux allegedly appeared on white horses to lead the Roman cavalry. Their temple in the Forum, built to commemorate this, became a meeting place for the Senate.",
       "description_ru": "Римляне побеждают Латинский союз при озере Регилл. Божественные близнецы Кастор и Поллукс якобы явились на белых конях, чтобы возглавить римскую конницу. Их храм на Форуме, построенный в ознаменование этого, стал местом заседаний Сената.",
@@ -377,6 +487,24 @@
         "Roman"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0485",
+      "description": "Veii launches raids into Roman territory from its fortress at Fidenae, only 8 km from Rome. Fidenae controls a key Tiber crossing and threatens Roman trade. For decades, Veii and Rome fight an on-and-off war over this strategic point.",
+      "description_ru": "Вейи совершают набеги на римскую территорию из своей крепости в Фиденах, всего в 8 км от Рима. Фидены контролируют ключевую переправу через Тибр и угрожают римской торговле. Десятилетиями Вейи и Рим ведут прерывистую войну за этот стратегический пункт.",
+      "era": "BC",
+      "latitude": 41.95,
+      "longitude": 12.42,
+      "name": "War Over Fidenae Begins",
+      "name_ru": "Начало войны за Фидены",
+      "source": "https://en.wikipedia.org/wiki/Fidenae",
+      "tags": [
+        "Roman",
+        "Etruscan",
+        "War",
+        "Siege"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0477",
@@ -473,6 +601,63 @@
       "type": "political"
     },
     {
+      "date": "01.01.0438",
+      "description": "Fidenae revolts against Rome and kills Roman ambassadors — a grave violation of ancient law. Lars Tolumnius, king of Veii, is blamed for ordering the murders. Rome declares war to avenge this outrage.",
+      "description_ru": "Фидены восстают против Рима и убивают римских послов — тяжкое нарушение древнего закона. Ларс Толумний, царь Вейи, обвиняется в организации убийств. Рим объявляет войну, чтобы отомстить за это оскорбление.",
+      "era": "BC",
+      "latitude": 41.95,
+      "longitude": 12.42,
+      "name": "Murder of Roman Ambassadors",
+      "name_ru": "Убийство римских послов",
+      "source": "https://en.wikipedia.org/wiki/Lars_Tolumnius",
+      "tags": [
+        "Roman",
+        "Etruscan",
+        "War",
+        "Murder",
+        "Diplomacy"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0437",
+      "description": "Aulus Cornelius Cossus kills Lars Tolumnius in single combat and takes his armor as spolia opima — the supreme military honor, awarded only three times in Roman history for killing an enemy king in personal combat.",
+      "description_ru": "Авл Корнелий Косс убивает Ларса Толумния в единоборстве и берёт его доспехи как spolia opima — высшую военную честь, присуждавшуюся лишь трижды в римской истории за убийство вражеского царя в личном бою.",
+      "era": "BC",
+      "latitude": 41.95,
+      "longitude": 12.42,
+      "name": "Death of Lars Tolumnius",
+      "name_ru": "Гибель Ларса Толумния",
+      "source": "https://en.wikipedia.org/wiki/Lars_Tolumnius",
+      "tags": [
+        "Roman",
+        "Etruscan",
+        "War",
+        "Death",
+        "Battle"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0426",
+      "description": "Rome finally captures and destroys Fidenae, eliminating the threat to the Tiber crossing. This clears the way for direct war with Veii itself. The stage is set for Rome's first great siege.",
+      "description_ru": "Рим наконец захватывает и разрушает Фидены, устраняя угрозу переправе через Тибр. Это открывает путь для прямой войны с самими Вейями. Готовится почва для первой великой осады Рима.",
+      "era": "BC",
+      "latitude": 41.95,
+      "longitude": 12.42,
+      "name": "Destruction of Fidenae",
+      "name_ru": "Разрушение Фиден",
+      "source": "https://en.wikipedia.org/wiki/Fidenae",
+      "tags": [
+        "Roman",
+        "Etruscan",
+        "War",
+        "Destruction",
+        "Conquest"
+      ],
+      "type": "military"
+    },
+    {
       "date": "01.01.0406",
       "description": "Rome begins paying soldiers a stipend (stipendium), allowing extended campaigns without soldiers returning for harvest. Previously, war was seasonal because citizen-farmers needed to work their land. This professionalizes warfare and enables the long siege of Veii.",
       "description_ru": "Рим начинает платить солдатам жалованье (stipendium), позволяя вести продолжительные кампании без возвращения солдат на уборку урожая. Раньше война была сезонной, так как граждане-земледельцы должны были обрабатывать землю. Это профессионализирует войну и делает возможной долгую осаду Вей.",
@@ -491,6 +676,42 @@
       "type": "military"
     },
     {
+      "date": "01.01.0406",
+      "description": "Rome begins the siege of Veii itself — a city as large and wealthy as Rome. Other Etruscan cities, distracted by Gallic raids in the north, fail to send help. The siege will last ten years, like legendary Troy.",
+      "description_ru": "Рим начинает осаду самих Вейи — города столь же большого и богатого, как Рим. Другие этрусские города, отвлечённые набегами галлов на севере, не присылают помощи. Осада продлится десять лет, как легендарная Троя.",
+      "era": "BC",
+      "latitude": 42.0167,
+      "longitude": 12.3833,
+      "name": "Siege of Veii Begins",
+      "name_ru": "Начало осады Вейи",
+      "source": "https://en.wikipedia.org/wiki/Siege_of_Veii",
+      "tags": [
+        "Roman",
+        "Etruscan",
+        "War",
+        "Siege"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0400",
+      "description": "Gallic Senones tribe crosses the Alps and settles in the ager Gallicus along the Adriatic coast. They pressure Etruscan cities, which diverts Etruscan attention from Rome and leaves Veii isolated during its siege.",
+      "description_ru": "Галльское племя сенонов переходит Альпы и поселяется в ager Gallicus вдоль Адриатического побережья. Они оказывают давление на этрусские города, что отвлекает внимание этрусков от Рима и оставляет Вейи изолированными во время осады.",
+      "era": "BC",
+      "latitude": 43.7,
+      "longitude": 13.2,
+      "name": "Gauls Settle in Italy",
+      "name_ru": "Галлы заселяют Италию",
+      "source": "https://en.wikipedia.org/wiki/Senones",
+      "tags": [
+        "Gallic",
+        "Migration",
+        "Italian",
+        "Celtic"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0396",
       "description": "After a ten-year siege, Marcus Furius Camillus captures the wealthy Etruscan city of Veii, 16 km north of Rome. He reportedly dug a tunnel into the citadel. Veii's territory doubles Roman land, and its population is enslaved or absorbed.",
       "description_ru": "После десятилетней осады Марк Фурий Камилл захватывает богатый этрусский город Вейи в 16 км к северу от Рима. По преданию, он прорыл туннель в цитадель. Территория Вей удваивает римские земли, а её население порабощено или поглощено.",
@@ -506,6 +727,25 @@
         "Siege",
         "Conquest",
         "War"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0391",
+      "description": "Gauls besiege Clusium, an Etruscan city that appeals to Rome for help. Rome sends ambassadors to negotiate, but they violate neutrality by fighting alongside Clusians. When Rome refuses to hand them over, Brennus leads his army toward Rome.",
+      "description_ru": "Галлы осаждают Клузий, этрусский город, который просит Рим о помощи. Рим посылает послов для переговоров, но они нарушают нейтралитет, сражаясь на стороне клузийцев. Когда Рим отказывается выдать их, Бренн ведёт свою армию к Риму.",
+      "era": "BC",
+      "latitude": 43.0167,
+      "longitude": 11.8667,
+      "name": "Roman Ambassadors Violate Neutrality",
+      "name_ru": "Римские послы нарушают нейтралитет",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_the_Allia",
+      "tags": [
+        "Roman",
+        "Gallic",
+        "War",
+        "Diplomacy",
+        "Etruscan"
       ],
       "type": "military"
     },
@@ -606,6 +846,24 @@
       "type": "political"
     },
     {
+      "date": "01.01.0360",
+      "description": "Latin allies grow resentful as Rome increasingly dominates the alliance, taking the best land from conquered territories and treating allies as subordinates rather than equals. Tensions rise within the Latin League.",
+      "description_ru": "Латинские союзники проникаются обидой, поскольку Рим всё больше доминирует в союзе, забирая лучшие земли с завоёванных территорий и обращаясь с союзниками как с подчинёнными, а не равными. Напряжённость в Латинском союзе растёт.",
+      "era": "BC",
+      "latitude": 41.65,
+      "longitude": 12.7,
+      "name": "Latin Resentment Grows",
+      "name_ru": "Рост недовольства латинов",
+      "source": "https://en.wikipedia.org/wiki/Latin_War",
+      "tags": [
+        "Roman",
+        "Latin League",
+        "Political",
+        "Alliance"
+      ],
+      "type": "political"
+    },
+    {
       "date": "01.01.0354",
       "description": "Rome signs a treaty with the Samnites, a powerful confederation of Oscan-speaking tribes controlling the central Apennines. The treaty divides spheres of influence in central Italy — an arrangement that would break down within a decade.",
       "description_ru": "Рим подписывает договор с самнитами, мощной конфедерацией оскоязычных племён, контролирующих центральные Апеннины. Договор разграничивает сферы влияния в центральной Италии — соглашение, которое рухнет в течение десятилетия.",
@@ -620,6 +878,24 @@
         "Diplomacy",
         "Treaty",
         "Italian"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0345",
+      "description": "Capua, the richest city of Campania, appeals to Rome for protection against Samnite raiders from the mountains. By accepting Capua into alliance, Rome breaks its treaty with the Samnites and gains access to fertile Campanian land.",
+      "description_ru": "Капуя, богатейший город Кампании, обращается к Риму за защитой от набегов самнитов с гор. Приняв Капую в союз, Рим нарушает договор с самнитами и получает доступ к плодородным кампанским землям.",
+      "era": "BC",
+      "latitude": 41.0847,
+      "longitude": 14.2501,
+      "name": "Capua Appeals to Rome",
+      "name_ru": "Капуя обращается к Риму",
+      "source": "https://en.wikipedia.org/wiki/First_Samnite_War",
+      "tags": [
+        "Roman",
+        "Italian",
+        "Alliance",
+        "Diplomacy"
       ],
       "type": "political"
     },
@@ -641,6 +917,25 @@
       "type": "military"
     },
     {
+      "date": "01.01.0341",
+      "description": "Latins and Campanians demand full Roman citizenship and half the Senate seats, or they will secede. Rome refuses. The Latins ally with Volscians, Aurunci, and Sidicini. The Latin War begins — a war to determine whether Rome or the League will lead Italy.",
+      "description_ru": "Латины и кампанцы требуют полного римского гражданства и половины мест в Сенате, иначе они выйдут из союза. Рим отказывает. Латины объединяются с вольсками, аврунками и сидицинами. Начинается Латинская война — война за то, кто будет руководить Италией: Рим или Союз.",
+      "era": "BC",
+      "latitude": 41.65,
+      "longitude": 12.7,
+      "name": "Latin Ultimatum to Rome",
+      "name_ru": "Латинский ультиматум Риму",
+      "source": "https://en.wikipedia.org/wiki/Latin_War",
+      "tags": [
+        "Roman",
+        "Latin League",
+        "War",
+        "Political",
+        "Ultimatum"
+      ],
+      "type": "political"
+    },
+    {
       "date": "01.01.0340",
       "description": "Rome's Latin allies revolt against Roman hegemony in the Latin War. According to tradition, consul Publius Decius Mus performs devotio — ritually sacrificing himself to the gods in battle to ensure Roman victory. The war ends with dissolution of the Latin League and integration of Latins into Roman citizenship.",
       "description_ru": "Латинские союзники Рима восстают против римской гегемонии. По преданию, консул Публий Деций Мус совершает devotio — ритуально жертвует собой богам в бою, чтобы обеспечить победу Рима. Война заканчивается роспуском Латинского союза и интеграцией латинов в римское гражданство.",
@@ -656,6 +951,25 @@
         "Latin League",
         "Self-sacrifice",
         "War"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0340",
+      "description": "At Mount Vesuvius, consul Titus Manlius Torquatus executes his own son for disobeying orders by engaging in single combat with a Latin champion — though victorious. \"Manlian discipline\" becomes proverbial for severity.",
+      "description_ru": "У горы Везувий консул Тит Манлий Торкват казнит собственного сына за неповиновение приказам, вступив в единоборство с латинским чемпионом — хотя и победоносное. \"Манлиева дисциплина\" становится нарицательной для обозначения суровости.",
+      "era": "BC",
+      "latitude": 40.82,
+      "longitude": 14.426,
+      "name": "Manlian Discipline",
+      "name_ru": "Манлиева дисциплина",
+      "source": "https://en.wikipedia.org/wiki/Titus_Manlius_Imperiosus_Torquatus",
+      "tags": [
+        "Roman",
+        "Latin League",
+        "War",
+        "Legend",
+        "Death"
       ],
       "type": "military"
     },
@@ -679,6 +993,25 @@
         "War"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0327",
+      "description": "Naples (Neapolis), a Greek city allied with the Samnites, insults Roman envoys. Rome besieges the city, which the Samnites try to relieve. This begins the Second Samnite War — 22 years of brutal mountain warfare.",
+      "description_ru": "Неаполь (Неаполис), греческий город, союзный самнитам, оскорбляет римских послов. Рим осаждает город, который самниты пытаются освободить. Это начинает Вторую Самнитскую войну — 22 года жестокой горной войны.",
+      "era": "BC",
+      "latitude": 40.8518,
+      "longitude": 14.2681,
+      "name": "Second Samnite War Begins",
+      "name_ru": "Начало Второй Самнитской войны",
+      "source": "https://en.wikipedia.org/wiki/Second_Samnite_War",
+      "tags": [
+        "Roman",
+        "Italian",
+        "War",
+        "Greek",
+        "Siege"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0326",
@@ -717,6 +1050,44 @@
         "Failure",
         "War",
         "Italian"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0320",
+      "description": "After the Caudine Forks disaster, Rome repudiates the peace treaty, claiming the consuls had no authority to make it. The Senate hands over the consuls naked and bound to the Samnites, who refuse them. War resumes with Roman fury for revenge.",
+      "description_ru": "После катастрофы при Кавдинских ущельях Рим отвергает мирный договор, утверждая, что консулы не имели полномочий его заключать. Сенат выдаёт консулов обнажёнными и связанными самнитам, которые отказываются их принять. Война возобновляется с римской яростью за отмщение.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4853,
+      "name": "Rome Repudiates Caudine Peace",
+      "name_ru": "Рим отвергает Кавдинский мир",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_the_Caudine_Forks",
+      "tags": [
+        "Roman",
+        "Italian",
+        "War",
+        "Political",
+        "Diplomacy"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0315",
+      "description": "Romans suffer another major defeat at Lautulae near Terracina. Samnites raid Latin territory and nearly reach Rome. Rome responds by building a network of fortified colonies and roads through the mountains to control territory permanently.",
+      "description_ru": "Римляне терпят ещё одно крупное поражение при Лавтулах близ Террацины. Самниты совершают набеги на латинскую территорию и почти достигают Рима. Рим отвечает строительством сети укреплённых колоний и дорог через горы для постоянного контроля территории.",
+      "era": "BC",
+      "latitude": 41.2833,
+      "longitude": 13.25,
+      "name": "Battle of Lautulae",
+      "name_ru": "Битва при Лавтулах",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Lautulae",
+      "tags": [
+        "Roman",
+        "Italian",
+        "War",
+        "Battle",
+        "Defeat"
       ],
       "type": "military"
     },
@@ -778,6 +1149,25 @@
       "type": "military"
     },
     {
+      "date": "01.01.0305",
+      "description": "After defeats, the Samnites seek peace. Rome demands territory, hostages, and restrictions on Samnite foreign policy. The humiliating terms ensure that war will resume when Samnites recover their strength.",
+      "description_ru": "После поражений самниты ищут мира. Рим требует территорию, заложников и ограничения самнитской внешней политики. Унизительные условия гарантируют, что война возобновится, когда самниты восстановят силы.",
+      "era": "BC",
+      "latitude": 41.4878,
+      "longitude": 14.6775,
+      "name": "End of Second Samnite War",
+      "name_ru": "Конец Второй Самнитской войны",
+      "source": "https://en.wikipedia.org/wiki/Second_Samnite_War",
+      "tags": [
+        "Roman",
+        "Italian",
+        "War",
+        "Peace",
+        "Treaty"
+      ],
+      "type": "political"
+    },
+    {
       "date": "01.01.0304",
       "description": "Gnaeus Flavius, a secretary, publishes the legis actiones (legal procedures) and the calendar showing court days — information previously monopolized by patrician pontiffs. This 'theft' of priestly knowledge enrages nobles but empowers ordinary citizens.",
       "description_ru": "Гней Флавий, секретарь, публикует legis actiones (правовые процедуры) и календарь судебных дней — информацию, ранее монополизированную патрицианскими понтификами. Эта 'кража' жреческих знаний возмущает знать, но расширяет права обычных граждан.",
@@ -833,6 +1223,25 @@
         "Italian",
         "Gallic",
         "War"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0293",
+      "description": "At Aquilonia, Romans storm the Samnite sacred enclosure where their elite \"Linen Legion\" has sworn to fight to the death. 20,000 Samnites die. This breaks the military power of the Samnite confederacy forever.",
+      "description_ru": "При Аквилонии римляне штурмуют священный лагерь самнитов, где их элитный \"Льняной легион\" поклялся биться насмерть. 20 000 самнитов гибнут. Это навсегда ломает военную мощь самнитской конфедерации.",
+      "era": "BC",
+      "latitude": 41.4878,
+      "longitude": 14,
+      "name": "Battle of Aquilonia",
+      "name_ru": "Битва при Аквилонии",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Aquilonia",
+      "tags": [
+        "Roman",
+        "Italian",
+        "War",
+        "Battle",
+        "Victory"
       ],
       "type": "military"
     },
