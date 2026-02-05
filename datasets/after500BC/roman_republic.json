@@ -261,6 +261,25 @@
       "type": "historic"
     },
     {
+      "date": "01.01.0600",
+      "description": "King Tarquinius Priscus establishes the Circus Maximus in the valley between the Palatine and Aventine hills. Initially a simple racetrack with wooden seating, it becomes Rome's principal venue for chariot racing and public spectacles, eventually holding 150,000 spectators.",
+      "description_ru": "Царь Тарквиний Приск основывает Большой цирк в долине между Палатинским и Авентинским холмами. Изначально простая беговая дорожка с деревянными трибунами, он становится главным римским местом для гонок на колесницах и публичных зрелищ, вмещая до 150 000 зрителей.",
+      "era": "BC",
+      "latitude": 41.8859,
+      "longitude": 12.4852,
+      "name": "Establishment of Circus Maximus",
+      "name_ru": "Основание Большого цирка",
+      "source": "https://en.wikipedia.org/wiki/Circus_Maximus",
+      "tags": [
+        "Roman",
+        "Entertainment",
+        "Architecture",
+        "Etruscan",
+        "Sports"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0578",
       "description": "Servius Tullius, the sixth king, reforms Roman society by organizing citizens into classes based on wealth rather than birth. He builds the first defensive wall around all seven hills (Servian Wall) and establishes the census.",
       "description_ru": "Сервий Туллий, шестой царь, реформирует римское общество, организуя граждан в классы по богатству, а не по рождению. Он строит первую оборонительную стену вокруг всех семи холмов (Сервиева стена) и учреждает перепись населения.",
@@ -396,6 +415,25 @@
       "type": "military"
     },
     {
+      "date": "01.01.0497",
+      "description": "The Temple of Saturn is dedicated in the Roman Forum, becoming one of Rome's oldest and most important temples. It housed the state treasury (aerarium) and the standards of the legions. The Saturnalia festival, celebrated each December, began here with a public sacrifice.",
+      "description_ru": "Храм Сатурна освящён на Римском форуме, став одним из древнейших и важнейших храмов Рима. В нём хранилась государственная казна (aerarium) и штандарты легионов. Праздник Сатурналий, отмечавшийся каждый декабрь, начинался здесь с публичного жертвоприношения.",
+      "era": "BC",
+      "latitude": 41.8925,
+      "longitude": 12.4842,
+      "name": "Temple of Saturn Dedicated",
+      "name_ru": "Освящение храма Сатурна",
+      "source": "https://en.wikipedia.org/wiki/Temple_of_Saturn",
+      "tags": [
+        "Roman",
+        "Temple",
+        "Religious",
+        "Architecture",
+        "Treasury"
+      ],
+      "type": "religious"
+    },
+    {
       "date": "01.01.0496",
       "description": "Romans defeat the Latin League at Lake Regillus. The divine twins Castor and Pollux allegedly appeared on white horses to lead the Roman cavalry. Their temple in the Forum, built to commemorate this, became a meeting place for the Senate.",
       "description_ru": "Римляне побеждают Латинский союз при озере Регилл. Божественные близнецы Кастор и Поллукс якобы явились на белых конях, чтобы возглавить римскую конницу. Их храм на Форуме, построенный в ознаменование этого, стал местом заседаний Сената.",
@@ -505,6 +543,26 @@
         "Siege"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0484",
+      "description": "The Temple of Castor and Pollux is dedicated in the Roman Forum to commemorate the Battle of Lake Regillus (496 BC), where the divine twins allegedly appeared to help the Romans defeat the Latin League. The temple becomes a meeting place for the Senate and a landmark of the Forum.",
+      "description_ru": "Храм Кастора и Поллукса освящён на Римском форуме в честь битвы у озера Регилл (496 до н.э.), где божественные близнецы якобы явились, чтобы помочь римлянам победить Латинский союз. Храм становится местом заседаний Сената и достопримечательностью Форума.",
+      "era": "BC",
+      "latitude": 41.8918,
+      "longitude": 12.4858,
+      "name": "Temple of Castor and Pollux Dedicated",
+      "name_ru": "Освящение храма Кастора и Поллукса",
+      "source": "https://en.wikipedia.org/wiki/Temple_of_Castor_and_Pollux",
+      "tags": [
+        "Roman",
+        "Temple",
+        "Religious",
+        "Architecture",
+        "Legend",
+        "Greek"
+      ],
+      "type": "religious"
     },
     {
       "date": "01.01.0477",
@@ -1407,6 +1465,25 @@
       "type": "military"
     },
     {
+      "date": "01.01.0272",
+      "description": "Rome's second aqueduct, the Aqua Anio Vetus, is constructed using war spoils from the victory over Pyrrhus. Drawing water from the upper Anio River near Tivoli, its 64 km mostly underground channel doubles Rome's water supply. The name 'Vetus' (old) distinguishes it from the later Aqua Anio Novus.",
+      "description_ru": "Второй римский акведук, Aqua Anio Vetus, построен на военные трофеи от победы над Пирром. Забирая воду из верхнего течения реки Аниене близ Тиволи, его 64-километровый подземный канал удваивает водоснабжение Рима. Название 'Vetus' (старый) отличает его от более позднего Aqua Anio Novus.",
+      "era": "BC",
+      "latitude": 42.0125,
+      "longitude": 12.9458,
+      "name": "Aqua Anio Vetus Aqueduct",
+      "name_ru": "Акведук Aqua Anio Vetus",
+      "source": "https://en.wikipedia.org/wiki/Anio_Vetus",
+      "tags": [
+        "Roman",
+        "Engineering ⚙️",
+        "Water",
+        "Architecture",
+        "Infrastructure"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0268",
       "description": "Rome mints its first silver coinage, the denarius, as contact with Greek civilization demands participation in Mediterranean trade. Previously, Romans used bronze by weight. The new coinage facilitates commerce and soldiers' pay.",
       "description_ru": "Рим чеканит первые серебряные монеты — денарии, поскольку контакт с греческой цивилизацией требует участия в средиземноморской торговле. Ранее римляне использовали бронзу на вес. Новая монета облегчает торговлю и оплату солдат.",
@@ -1444,6 +1521,25 @@
         "City"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0241",
+      "description": "The Via Aurelia is constructed along the Tyrrhenian coast from Rome to Pisae (Pisa), opening the northwestern route to Etruria and Liguria. Later extended to Genua (Genoa) and into Gaul, it becomes a vital artery for trade and military movement along Italy's western coast.",
+      "description_ru": "Аврелиева дорога проложена вдоль Тирренского побережья от Рима до Пизы, открывая северо-западный путь в Этрурию и Лигурию. Позже продлённая до Генуи и в Галлию, она становится жизненно важной артерией для торговли и передвижения войск вдоль западного побережья Италии.",
+      "era": "BC",
+      "latitude": 43.7228,
+      "longitude": 10.4017,
+      "name": "Construction of Via Aurelia",
+      "name_ru": "Строительство Аврелиевой дороги",
+      "source": "https://en.wikipedia.org/wiki/Via_Aurelia",
+      "tags": [
+        "Roman",
+        "Road",
+        "Infrastructure",
+        "Engineering ⚙️",
+        "Trade"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0240",
@@ -1621,6 +1717,25 @@
       "type": "political"
     },
     {
+      "date": "01.01.0187",
+      "description": "Consul Marcus Aemilius Lepidus constructs the Via Aemilia from Ariminum (Rimini) to Placentia (Piacenza), crossing the fertile Po Valley. This 270 km road connects with the Via Flaminia, creating a continuous route from Rome to the Alpine frontier. The region takes its modern name, Emilia-Romagna, from this road.",
+      "description_ru": "Консул Марк Эмилий Лепид строит Эмилиеву дорогу от Аримина (Римини) до Плаценции (Пьяченца), пересекая плодородную долину По. Эта 270-километровая дорога соединяется с Фламиниевой, создавая непрерывный путь от Рима до альпийской границы. Регион получает современное название Эмилия-Романья от этой дороги.",
+      "era": "BC",
+      "latitude": 45.0522,
+      "longitude": 9.6932,
+      "name": "Construction of Via Aemilia",
+      "name_ru": "Строительство Эмилиевой дороги",
+      "source": "https://en.wikipedia.org/wiki/Via_Aemilia",
+      "tags": [
+        "Roman",
+        "Road",
+        "Infrastructure",
+        "Engineering ⚙️",
+        "Colonization"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0186",
       "description": "The Senate suppresses the cult of Bacchus (Dionysus) throughout Italy after alleged crimes including murder and conspiracy. 7,000 people are reportedly executed. This Senatus consultum de Bacchanalibus is the earliest Roman decree regulating religion.",
       "description_ru": "Сенат подавляет культ Вакха (Диониса) по всей Италии после предполагаемых преступлений, включая убийства и заговор. 7000 человек, по сообщениям, казнены. Этот Senatus consultum de Bacchanalibus — древнейший римский указ, регулирующий религию.",
@@ -1657,6 +1772,44 @@
         "Populism"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0179",
+      "description": "Censors Marcus Aemilius Lepidus and Marcus Fulvius Nobilior build the Basilica Aemilia (Basilica Fulvia) in the Roman Forum. This large public hall serves as a law court, commercial center, and meeting place. Its marble floor, colonnades, and shops set the standard for Roman civic architecture.",
+      "description_ru": "Цензоры Марк Эмилий Лепид и Марк Фульвий Нобилиор строят базилику Эмилия (базилику Фульвия) на Римском форуме. Этот большой общественный зал служит судом, торговым центром и местом собраний. Его мраморный пол, колоннады и лавки задают стандарт римской гражданской архитектуры.",
+      "era": "BC",
+      "latitude": 41.8927,
+      "longitude": 12.4857,
+      "name": "Basilica Aemilia Built",
+      "name_ru": "Строительство базилики Эмилия",
+      "source": "https://en.wikipedia.org/wiki/Basilica_Aemilia",
+      "tags": [
+        "Roman",
+        "Architecture",
+        "Forum",
+        "Administration",
+        "Commerce"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0179",
+      "description": "Construction begins on the Pons Aemilius, Rome's first stone bridge over the Tiber, replacing an earlier wooden structure. Completed in 142 BC, its innovative concrete core with stone facing set the model for Roman bridge engineering. Today only one arch survives, known as 'Ponte Rotto' (Broken Bridge).",
+      "description_ru": "Начинается строительство моста Эмилия, первого каменного моста Рима через Тибр, заменившего более раннюю деревянную конструкцию. Завершённый в 142 до н.э., его инновационное бетонное ядро с каменной облицовкой стало образцом римского мостостроения. Сегодня сохранилась лишь одна арка, известная как 'Ponte Rotto' (Сломанный мост).",
+      "era": "BC",
+      "latitude": 41.8882,
+      "longitude": 12.4775,
+      "name": "Pons Aemilius - First Stone Bridge",
+      "name_ru": "Мост Эмилия - первый каменный мост",
+      "source": "https://en.wikipedia.org/wiki/Pons_Aemilius",
+      "tags": [
+        "Roman",
+        "Bridge",
+        "Engineering ⚙️",
+        "Infrastructure",
+        "Innovation"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0171",
@@ -1756,6 +1909,25 @@
       "type": "political"
     },
     {
+      "date": "01.01.0148",
+      "description": "Consul Spurius Postumius Albinus Magnus constructs the Via Postumia from Genua (Genoa) to Aquileia, crossing northern Italy from the Tyrrhenian to the Adriatic coast. This 530 km strategic highway connects the western and eastern frontiers, passing through Placentia, Cremona, and Verona.",
+      "description_ru": "Консул Спурий Постумий Альбин Магн строит Постумиеву дорогу от Генуи до Аквилеи, пересекая северную Италию от Тирренского до Адриатического побережья. Эта 530-километровая стратегическая магистраль соединяет западную и восточную границы, проходя через Плаценцию, Кремону и Верону.",
+      "era": "BC",
+      "latitude": 45.7677,
+      "longitude": 13.3692,
+      "name": "Construction of Via Postumia",
+      "name_ru": "Строительство Постумиевой дороги",
+      "source": "https://en.wikipedia.org/wiki/Via_Postumia",
+      "tags": [
+        "Roman",
+        "Road",
+        "Infrastructure",
+        "Engineering ⚙️",
+        "Military"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.10.0146",
       "description": "After defeating Macedonia, Rome demands that the Achaean League must be left by strongest Greek cities (Sparta, Corinth, Argos). The Greeks refuse, claiming this would clearly lead to the disintegration of the league and the fall of Greece. The brief and hopeless Achaean War begins between Rome and the league. Rome wins, and as a warning, the Roman commander Mummius destroys Corinth, killing the men and selling the women and children into slavery. The city remains uninhabited for a century.",
       "description_ru": "Рим после победы над Македонией требует, чтобы Ахейский союз покинули ключевые города (Спарта, Коринф, Аргос). Греки отказываются, поскольку это явный путь к распаду союза и падению Греции. Между Римом и союзом начинается короткая и безнадежная Ахейская война. Рим побеждает, в назидание римский военачальник Муммий разрушает Коринф, уничтожает мужчин и продаёт женщин и детей в рабство. Город остаётся необитаемым на столетие.",
@@ -1776,6 +1948,25 @@
         "Corinthian"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0144",
+      "description": "Praetor Quintus Marcius Rex begins construction of the Aqua Marcia, Rome's longest and finest aqueduct. Drawing exceptionally pure water from springs near Arsoli in the Anio Valley, its 91 km channel includes spectacular above-ground arcades. The water was so prized that it was reserved for drinking.",
+      "description_ru": "Претор Квинт Марций Рекс начинает строительство Aqua Marcia, длиннейшего и лучшего акведука Рима. Забирая исключительно чистую воду из источников близ Арсоли в долине Аниене, его 91-километровый канал включает впечатляющие надземные аркады. Вода ценилась настолько, что предназначалась только для питья.",
+      "era": "BC",
+      "latitude": 42.0425,
+      "longitude": 13.0167,
+      "name": "Aqua Marcia Aqueduct",
+      "name_ru": "Акведук Aqua Marcia",
+      "source": "https://en.wikipedia.org/wiki/Aqua_Marcia",
+      "tags": [
+        "Roman",
+        "Engineering ⚙️",
+        "Water",
+        "Architecture",
+        "Infrastructure"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0139",
@@ -1854,6 +2045,24 @@
       "type": "political"
     },
     {
+      "date": "01.01.0125",
+      "description": "Censors Gnaeus Servilius Caepio and Lucius Cassius Longinus Ravilla build the Aqua Tepula, drawing lukewarm water (hence 'tepula') from springs in the Alban Hills near Marino. The 18 km aqueduct shares conduits with the later Aqua Julia, its waters mixed to improve temperature.",
+      "description_ru": "Цензоры Гней Сервилий Цепион и Луций Кассий Лонгин Равилла строят Aqua Tepula, забирая тёплую воду (отсюда 'tepula') из источников в Альбанских горах близ Марино. 18-километровый акведук делит каналы с более поздней Aqua Julia, воды которой смешивались для улучшения температуры.",
+      "era": "BC",
+      "latitude": 41.7697,
+      "longitude": 12.6572,
+      "name": "Aqua Tepula Aqueduct",
+      "name_ru": "Акведук Aqua Tepula",
+      "source": "https://en.wikipedia.org/wiki/Aqua_Tepula",
+      "tags": [
+        "Roman",
+        "Engineering ⚙️",
+        "Water",
+        "Infrastructure"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0123",
       "description": "Gaius Gracchus, brother of Tiberius, becomes tribune and enacts sweeping reforms: subsidized grain for Romans, jury reform to break senatorial corruption, road building, and colonial foundations. After two terms, he is declared a public enemy and killed with 3,000 supporters.",
       "description_ru": "Гай Гракх, брат Тиберия, становится трибуном и проводит еще более радикальные реформы, чем брат: субсидированное зерно для римлян, судебная реформа для борьбы с сенаторской коррупцией, строительство дорог и основание колоний. Его работа подрывала влияние Сената и аристократии. После двух сроков Гая и тысячи его последователей объявили врагами государства и стали их убивать без суда.",
@@ -1894,6 +2103,26 @@
         "Senate"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0120",
+      "description": "The Temple of Hercules Victor is erected at the Forum Boarium, the oldest surviving marble building in Rome. Its circular design with 20 Corinthian columns shows strong Greek influence. Dedicated to Hercules, patron of merchants and olive oil traders, it stands near the ancient cattle market.",
+      "description_ru": "Храм Геркулеса Победителя возведён на Бычьем форуме — старейшее сохранившееся мраморное здание в Риме. Его круглый план с 20 коринфскими колоннами демонстрирует сильное греческое влияние. Посвящённый Геркулесу, покровителю торговцев и продавцов оливкового масла, он стоит близ древнего скотного рынка.",
+      "era": "BC",
+      "latitude": 41.8886,
+      "longitude": 12.4815,
+      "name": "Temple of Hercules Victor",
+      "name_ru": "Храм Геркулеса Победителя",
+      "source": "https://en.wikipedia.org/wiki/Temple_of_Hercules_Victor",
+      "tags": [
+        "Roman",
+        "Temple",
+        "Religious",
+        "Architecture",
+        "Greek",
+        "Trade"
+      ],
+      "type": "religious"
     },
     {
       "date": "01.01.0118",
@@ -2012,6 +2241,25 @@
         "Roman"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0100",
+      "description": "The Temple of Portunus is built at the Forum Boarium near the Tiber, dedicated to Portunus, god of keys, doors, and harbors. Its elegant Ionic columns and exceptional preservation make it one of the best-surviving examples of Republican temple architecture. Later converted to a church, which saved it from destruction.",
+      "description_ru": "Храм Портуна построен на Бычьем форуме близ Тибра, посвящённый Портуну, богу ключей, дверей и гаваней. Его элегантные ионические колонны и исключительная сохранность делают его одним из лучших примеров республиканской храмовой архитектуры. Позже обращён в церковь, что спасло его от разрушения.",
+      "era": "BC",
+      "latitude": 41.8891,
+      "longitude": 12.4805,
+      "name": "Temple of Portunus",
+      "name_ru": "Храм Портуна",
+      "source": "https://en.wikipedia.org/wiki/Temple_of_Portunus",
+      "tags": [
+        "Roman",
+        "Temple",
+        "Religious",
+        "Architecture",
+        "Trade"
+      ],
+      "type": "religious"
     },
     {
       "date": "01.01.0091",
@@ -2203,6 +2451,25 @@
       "type": "political"
     },
     {
+      "date": "01.01.0078",
+      "description": "Consul Quintus Lutatius Catulus builds the Tabularium on the slope of the Capitoline Hill overlooking the Forum. This massive state archive housed Rome's official records, laws, and treaties inscribed on bronze tablets (tabulae). Its arcaded facade with engaged Doric columns became iconic.",
+      "description_ru": "Консул Квинт Лутаций Катул строит Табулярий на склоне Капитолийского холма с видом на Форум. Этот массивный государственный архив хранил официальные записи Рима, законы и договоры, выгравированные на бронзовых табличках (tabulae). Его аркадный фасад с полуколоннами дорического ордера стал знаковым.",
+      "era": "BC",
+      "latitude": 41.8933,
+      "longitude": 12.4825,
+      "name": "Tabularium State Archives",
+      "name_ru": "Табулярий — государственный архив",
+      "source": "https://en.wikipedia.org/wiki/Tabularium",
+      "tags": [
+        "Roman",
+        "Architecture",
+        "Administration",
+        "Archives",
+        "Forum"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0073",
       "description": "Spartacus, a Thracian gladiator, escapes from the gladiatorial school in Capua with 70 followers. At this time, Italy was full of slaves, both those captured during Sulla's campaigns and those who appeared in Italy as a result of his reforms. Spartacus's slave army grows to 120,000 and defeats Roman armies. The revolt horrifies Rome—not just a war against slaves, but a challenge to the entire social order.",
       "description_ru": "Спартак, фракийский гладиатор, бежит из гладиаторской школы в Капуе с 70 последователями. В это время Италия полна рабов, как захваченных во время походов Суллы, так и появившихся в Италии в результате его реформ. Армия рабов Спартака вырастает до 120 тысяч и одерживает победы над Римскими армиями. Восстание ужасает Рим — не просто война с рабами, но вызов всему социальному порядку.",
@@ -2361,6 +2628,25 @@
         "Political"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0062",
+      "description": "Curator viarum Lucius Fabricius builds the Pons Fabricius connecting the Campus Martius to Tiber Island. Constructed of travertine and volcanic tuff with four arches, it is the oldest Roman bridge surviving in its original state. Inscriptions on both sides record Fabricius's name and the bridge's construction.",
+      "description_ru": "Куратор дорог Луций Фабриций строит мост Фабриция, соединяющий Марсово поле с островом Тиберина. Построенный из травертина и вулканического туфа с четырьмя арками, это старейший римский мост, сохранившийся в первоначальном виде. Надписи с обеих сторон сохраняют имя Фабриция и дату строительства.",
+      "era": "BC",
+      "latitude": 41.8903,
+      "longitude": 12.4778,
+      "name": "Pons Fabricius - Oldest Intact Bridge",
+      "name_ru": "Мост Фабриция — старейший сохранившийся мост",
+      "source": "https://en.wikipedia.org/wiki/Pons_Fabricius",
+      "tags": [
+        "Roman",
+        "Bridge",
+        "Engineering ⚙️",
+        "Infrastructure",
+        "Architecture"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0060",
