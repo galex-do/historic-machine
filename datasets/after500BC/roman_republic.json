@@ -1,5 +1,5 @@
 {
-  "description": "Comprehensive Roman Republic history from legendary founding to transformation into Empire with war context",
+  "description": "Dataset imported with 203 events",
   "events": [
     {
       "date": "21.04.0753",
@@ -99,10 +99,10 @@
       "description": "Tullus Hostilius becomes the third king of Rome. Unlike peaceful Numa, he is warlike and seeks to expand Roman power. He considers Alba Longa, though Rome's mother city, a rival for leadership of the Latin peoples.",
       "description_ru": "Тулл Гостилий становится третьим царём Рима. В отличие от мирного Нумы, он воинственен и стремится расширить римскую власть. Он считает Альба-Лонгу, хотя та является материнским городом Рима, соперницей за лидерство среди латинских народов.",
       "era": "BC",
-      "latitude": 41.8925,
-      "longitude": 12.4853,
+      "latitude": 41.89189929,
+      "longitude": 12.48642862,
       "name": "Tullus Hostilius Becomes King",
-      "name_ru": "Тулл Гостилий становится царём",
+      "name_ru": "Тулл Гостилий - царь Рима",
       "source": "https://en.wikipedia.org/wiki/Tullus_Hostilius",
       "tags": [
         "Roman",
@@ -123,9 +123,8 @@
       "source": "https://en.wikipedia.org/wiki/Alba_Longa",
       "tags": [
         "Roman",
-        "Latin League",
         "War",
-        "Conflict"
+        "Latin League"
       ],
       "type": "military"
     },
@@ -151,26 +150,26 @@
     {
       "date": "01.01.0676",
       "description": "Alba Longa accepts Roman supremacy after the Horatii victory, but Alban dictator Mettius Fufetius secretly plots with Fidenae and Veii against Rome. During a joint battle, he holds his troops back, waiting to see who wins before committing.",
-      "description_ru": "Альба-Лонга признаёт римское верховенство после победы Горациев, но альбанский диктатор Меттий Фуфетий тайно заговаривает с Фиденами и Вейями против Рима. Во время совместной битвы он удерживает свои войска, ожидая, кто победит, прежде чем вступить в бой.",
+      "description_ru": "Альба-Лонга признаёт римское верховенство после победы Горациев, но альбанский диктатор Меттий Фуфетий тайно сговаривается с Фиденами и Вейями против Рима. Во время сражения он придерживает свои войска, выжидая очевидного победителя, прежде чем вступить в бой.",
       "era": "BC",
-      "latitude": 41.95,
-      "longitude": 12.42,
+      "latitude": 41.97739056,
+      "longitude": 12.51786947,
       "name": "Alban Treachery at Fidenae",
       "name_ru": "Предательство альбанцев при Фиденах",
       "source": "https://en.wikipedia.org/wiki/Mettius_Fufetius",
       "tags": [
-        "Roman",
-        "Latin League",
-        "War",
+        "Betrayal",
         "Etruscan",
-        "Betrayal"
+        "War",
+        "Latin League",
+        "Roman"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0675",
-      "description": "Tullus Hostilius punishes Mettius Fufetius for his treachery by having him torn apart by chariots driven in opposite directions — the only case of this punishment in Roman history. Rome then destroys Alba Longa entirely, sparing only temples, and forcibly moves its population to Rome.",
-      "description_ru": "Тулл Гостилий наказывает Меттия Фуфетия за предательство, разорвав его колесницами, гонимыми в разные стороны — единственный случай такой казни в римской истории. Затем Рим полностью разрушает Альба-Лонгу, сохранив только храмы, и принудительно переселяет её население в Рим.",
+      "description": "Tullus Hostilius punishes Mettius Fufetius for his treachery by having him torn apart by chariots driven in opposite directions — the only case of this punishment in Roman history",
+      "description_ru": "Тулл Гостилий наказывает Меттия Фуфетия за предательство, разорвав его колесницами, гонимыми в разные стороны — единственный случай такой казни в римской истории",
       "era": "BC",
       "latitude": 41.7472,
       "longitude": 12.6506,
@@ -181,15 +180,15 @@
         "Roman",
         "Latin League",
         "War",
-        "Death",
-        "Legend"
+        "Legend",
+        "Execution"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0673",
-      "description": "King Tullus Hostilius destroys Alba Longa, Rome's mother city, after defeating it in war. The population is forcibly relocated to Rome, doubling the city's size. Before the battle, the conflict was decided by combat between the Horatii and Curiatii triplets.",
-      "description_ru": "Третий царь Рима Тулл Гостилий разрушает Альба-Лонгу, мать латинских городов, после победы в войне. Население насильно переселяют в Рим, удваивая размер города. Перед битвой конфликт решался поединком тройняшек Горациев и Куриациев.",
+      "description": "King Tullus Hostilius destroys Alba Longa, Rome's mother city, after defeating it in war. Only the temples were not destroyed. The population is forcibly relocated to Rome, doubling the city's size.",
+      "description_ru": "Тулл Гостилий разрушает Альба-Лонгу, мать латинских городов, после победы в войне, оставляя только храмы. Население насильно переселяют в Рим, удваивая размер города.",
       "era": "BC",
       "latitude": 41.7472,
       "longitude": 12.6506,
@@ -197,13 +196,13 @@
       "name_ru": "Разрушение Альба-Лонги",
       "source": "https://en.wikipedia.org/wiki/Alba_Longa",
       "tags": [
-        "Destruction",
-        "City",
-        "Legend",
-        "Roman",
-        "Conquest",
         "Latin League",
-        "War"
+        "War",
+        "Roman",
+        "Legend",
+        "City",
+        "Destruction",
+        "Conquest"
       ],
       "type": "military"
     },
@@ -246,17 +245,17 @@
       "description": "The Cloaca Maxima, one of the world's earliest sewage systems, is constructed to drain the marshy Forum valley. Originally an open channel, it is later covered over. Parts of this Etruscan-era drain remain in use today.",
       "description_ru": "Большая Клоака (Cloaca Maxima), одна из древнейших канализационных систем мира, построена для осушения болотистой долины Форума. Изначально открытый канал, позже он был перекрыт. Части этой этрусской эпохи дренажной системы используются и сегодня.",
       "era": "BC",
-      "latitude": 41.8914,
-      "longitude": 12.4855,
+      "latitude": 41.88883235,
+      "longitude": 12.48017907,
       "name": "Construction of Cloaca Maxima",
       "name_ru": "Строительство Большой Клоаки",
       "source": "https://en.wikipedia.org/wiki/Cloaca_Maxima",
       "tags": [
-        "Architecture",
-        "Roman",
-        "Innovation",
         "Engineering ⚙️",
-        "Water"
+        "Water",
+        "Innovation",
+        "Roman",
+        "Architecture"
       ],
       "type": "historic"
     },
@@ -265,17 +264,18 @@
       "description": "King Tarquinius Priscus establishes the Circus Maximus in the valley between the Palatine and Aventine hills. Initially a simple racetrack with wooden seating, it becomes Rome's principal venue for chariot racing and public spectacles, eventually holding 150,000 spectators.",
       "description_ru": "Царь Тарквиний Приск основывает Большой цирк в долине между Палатинским и Авентинским холмами. Изначально простая беговая дорожка с деревянными трибунами, он становится главным римским местом для гонок на колесницах и публичных зрелищ, вмещая до 150 000 зрителей.",
       "era": "BC",
-      "latitude": 41.8859,
-      "longitude": 12.4852,
+      "latitude": 41.88663989,
+      "longitude": 12.48478174,
       "name": "Establishment of Circus Maximus",
       "name_ru": "Основание Большого цирка",
       "source": "https://en.wikipedia.org/wiki/Circus_Maximus",
       "tags": [
-        "Roman",
         "Entertainment",
+        "Building 🏠",
+        "Sport",
         "Architecture",
         "Etruscan",
-        "Sports"
+        "Roman"
       ],
       "type": "historic"
     },
@@ -319,24 +319,6 @@
     },
     {
       "date": "01.01.0509",
-      "description": "The Temple of Jupiter Optimus Maximus is dedicated on the Capitoline Hill, becoming Rome's most important temple. The building was begun by the Tarquins but dedicated after their expulsion — Romans refused to let kings take credit for it.",
-      "description_ru": "Храм Юпитера Всеблагого Величайшего освящён на Капитолийском холме, став важнейшим храмом Рима. Здание начато при Тарквиниях, но освящено после их изгнания — римляне отказались приписывать царям заслугу за него.",
-      "era": "BC",
-      "latitude": 41.89247432,
-      "longitude": 12.48204589,
-      "name": "Temple of Jupiter Dedicated",
-      "name_ru": "Освящение храма Юпитера",
-      "source": "https://en.wikipedia.org/wiki/Temple_of_Jupiter_Optimus_Maximus",
-      "tags": [
-        "Roman",
-        "Temple",
-        "Religious",
-        "Architecture"
-      ],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.0509",
       "description": "Romans expel King Tarquinius Superbus after his son Sextus rapes the noblewoman Lucretia, who commits suicide after revealing the crime. Lucius Junius Brutus leads the revolt and becomes one of the first two consuls of the new Republic.",
       "description_ru": "Римляне изгоняют царя Тарквиния Гордого после того, как его сын Секст насилует знатную женщину Лукрецию, которая кончает с собой, раскрыв преступление. Луций Юний Брут возглавляет восстание и становится одним из первых двух консулов новой Республики.",
       "era": "BC",
@@ -353,6 +335,24 @@
         "Roman"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0509",
+      "description": "The Temple of Jupiter Optimus Maximus is dedicated on the Capitoline Hill, becoming Rome's most important temple. The building was begun by the Tarquins but dedicated after their expulsion — Romans refused to let kings take credit for it.",
+      "description_ru": "Храм Юпитера Всеблагого Величайшего освящён на Капитолийском холме, став важнейшим храмом Рима. Здание начато при Тарквиниях, но освящено после их изгнания — римляне отказались приписывать царям заслугу за него.",
+      "era": "BC",
+      "latitude": 41.89247432,
+      "longitude": 12.48204589,
+      "name": "Temple of Jupiter Dedicated",
+      "name_ru": "Освящение храма Юпитера",
+      "source": "https://en.wikipedia.org/wiki/Temple_of_Jupiter_Optimus_Maximus",
+      "tags": [
+        "Roman",
+        "Temple",
+        "Religious",
+        "Architecture"
+      ],
+      "type": "religious"
     },
     {
       "date": "01.01.0508",
@@ -401,15 +401,15 @@
       "description": "Expelled Tarquins seek help from the Etruscan city of Veii. Veii and other Etruscan cities see an opportunity to weaken Rome while it is adjusting to republican government. This begins centuries of Roman-Etruscan conflict.",
       "description_ru": "Изгнанные Тарквинии ищут помощи у этрусского города Вейи. Вейи и другие этрусские города видят возможность ослабить Рим, пока он приспосабливается к республиканскому правлению. Это начинает вековой римско-этрусский конфликт.",
       "era": "BC",
-      "latitude": 42.0167,
-      "longitude": 12.3833,
+      "latitude": 42.02623225,
+      "longitude": 12.39686966,
       "name": "Veii Supports Tarquins",
       "name_ru": "Вейи поддерживают Тарквиниев",
       "source": "https://en.wikipedia.org/wiki/Veii",
       "tags": [
+        "War",
         "Roman",
         "Etruscan",
-        "War",
         "Exile"
       ],
       "type": "military"
@@ -419,17 +419,17 @@
       "description": "The Temple of Saturn is dedicated in the Roman Forum, becoming one of Rome's oldest and most important temples. It housed the state treasury (aerarium) and the standards of the legions. The Saturnalia festival, celebrated each December, began here with a public sacrifice.",
       "description_ru": "Храм Сатурна освящён на Римском форуме, став одним из древнейших и важнейших храмов Рима. В нём хранилась государственная казна (aerarium) и штандарты легионов. Праздник Сатурналий, отмечавшийся каждый декабрь, начинался здесь с публичного жертвоприношения.",
       "era": "BC",
-      "latitude": 41.8925,
-      "longitude": 12.4842,
+      "latitude": 41.89240244,
+      "longitude": 12.484079,
       "name": "Temple of Saturn Dedicated",
       "name_ru": "Освящение храма Сатурна",
       "source": "https://en.wikipedia.org/wiki/Temple_of_Saturn",
       "tags": [
         "Roman",
+        "Architecture",
         "Temple",
         "Religious",
-        "Architecture",
-        "Treasury"
+        "Treasure"
       ],
       "type": "religious"
     },
@@ -463,11 +463,12 @@
       "name_ru": "Первая сецессия плебеев",
       "source": "https://en.wikipedia.org/wiki/First_secessio_plebis",
       "tags": [
+        "Human Rights",
         "Republic",
         "Reform",
         "Roman",
-        "Human Rights",
-        "Political"
+        "Political",
+        "Democracy"
       ],
       "type": "political"
     },
@@ -531,16 +532,16 @@
       "description": "Veii launches raids into Roman territory from its fortress at Fidenae, only 8 km from Rome. Fidenae controls a key Tiber crossing and threatens Roman trade. For decades, Veii and Rome fight an on-and-off war over this strategic point.",
       "description_ru": "Вейи совершают набеги на римскую территорию из своей крепости в Фиденах, всего в 8 км от Рима. Фидены контролируют ключевую переправу через Тибр и угрожают римской торговле. Десятилетиями Вейи и Рим ведут прерывистую войну за этот стратегический пункт.",
       "era": "BC",
-      "latitude": 41.95,
-      "longitude": 12.42,
+      "latitude": 41.97739056,
+      "longitude": 12.51786947,
       "name": "War Over Fidenae Begins",
-      "name_ru": "Начало войны за Фидены",
+      "name_ru": "Борьба Рима за Фидены",
       "source": "https://en.wikipedia.org/wiki/Fidenae",
       "tags": [
         "Roman",
         "Etruscan",
-        "War",
-        "Siege"
+        "Siege",
+        "War"
       ],
       "type": "military"
     },
@@ -549,18 +550,18 @@
       "description": "The Temple of Castor and Pollux is dedicated in the Roman Forum to commemorate the Battle of Lake Regillus (496 BC), where the divine twins allegedly appeared to help the Romans defeat the Latin League. The temple becomes a meeting place for the Senate and a landmark of the Forum.",
       "description_ru": "Храм Кастора и Поллукса освящён на Римском форуме в честь битвы у озера Регилл (496 до н.э.), где божественные близнецы якобы явились, чтобы помочь римлянам победить Латинский союз. Храм становится местом заседаний Сената и достопримечательностью Форума.",
       "era": "BC",
-      "latitude": 41.8918,
-      "longitude": 12.4858,
+      "latitude": 41.89170761,
+      "longitude": 12.48566687,
       "name": "Temple of Castor and Pollux Dedicated",
       "name_ru": "Освящение храма Кастора и Поллукса",
       "source": "https://en.wikipedia.org/wiki/Temple_of_Castor_and_Pollux",
       "tags": [
         "Roman",
+        "Architecture",
         "Temple",
         "Religious",
-        "Architecture",
-        "Legend",
-        "Greek"
+        "Building 🏠",
+        "Legend"
       ],
       "type": "religious"
     },
@@ -663,17 +664,17 @@
       "description": "Fidenae revolts against Rome and kills Roman ambassadors — a grave violation of ancient law. Lars Tolumnius, king of Veii, is blamed for ordering the murders. Rome declares war to avenge this outrage.",
       "description_ru": "Фидены восстают против Рима и убивают римских послов — тяжкое нарушение древнего закона. Ларс Толумний, царь Вейи, обвиняется в организации убийств. Рим объявляет войну, чтобы отомстить за это оскорбление.",
       "era": "BC",
-      "latitude": 41.95,
-      "longitude": 12.42,
+      "latitude": 41.97739056,
+      "longitude": 12.51786947,
       "name": "Murder of Roman Ambassadors",
       "name_ru": "Убийство римских послов",
       "source": "https://en.wikipedia.org/wiki/Lars_Tolumnius",
       "tags": [
-        "Roman",
-        "Etruscan",
         "War",
         "Murder",
-        "Diplomacy"
+        "Diplomacy",
+        "Roman",
+        "Etruscan"
       ],
       "type": "military"
     },
@@ -682,17 +683,17 @@
       "description": "Aulus Cornelius Cossus kills Lars Tolumnius in single combat and takes his armor as spolia opima — the supreme military honor, awarded only three times in Roman history for killing an enemy king in personal combat.",
       "description_ru": "Авл Корнелий Косс убивает Ларса Толумния в единоборстве и берёт его доспехи как spolia opima — высшую военную честь, присуждавшуюся лишь трижды в римской истории за убийство вражеского царя в личном бою.",
       "era": "BC",
-      "latitude": 41.95,
-      "longitude": 12.42,
-      "name": "Death of Lars Tolumnius",
-      "name_ru": "Гибель Ларса Толумния",
+      "latitude": 41.97739056,
+      "longitude": 12.51786947,
+      "name": "Death of Etruscan king in combat",
+      "name_ru": "Гибель царя этрусков",
       "source": "https://en.wikipedia.org/wiki/Lars_Tolumnius",
       "tags": [
+        "Battle",
         "Roman",
         "Etruscan",
         "War",
-        "Death",
-        "Battle"
+        "Death"
       ],
       "type": "military"
     },
@@ -701,17 +702,17 @@
       "description": "Rome finally captures and destroys Fidenae, eliminating the threat to the Tiber crossing. This clears the way for direct war with Veii itself. The stage is set for Rome's first great siege.",
       "description_ru": "Рим наконец захватывает и разрушает Фидены, устраняя угрозу переправе через Тибр. Это открывает путь для прямой войны с самими Вейями. Готовится почва для первой великой осады Рима.",
       "era": "BC",
-      "latitude": 41.95,
-      "longitude": 12.42,
+      "latitude": 41.97739056,
+      "longitude": 12.51786947,
       "name": "Destruction of Fidenae",
       "name_ru": "Разрушение Фиден",
       "source": "https://en.wikipedia.org/wiki/Fidenae",
       "tags": [
+        "Destruction",
+        "Conquest",
         "Roman",
         "Etruscan",
-        "War",
-        "Destruction",
-        "Conquest"
+        "War"
       ],
       "type": "military"
     },
@@ -720,16 +721,16 @@
       "description": "Rome begins paying soldiers a stipend (stipendium), allowing extended campaigns without soldiers returning for harvest. Previously, war was seasonal because citizen-farmers needed to work their land. This professionalizes warfare and enables the long siege of Veii.",
       "description_ru": "Рим начинает платить солдатам жалованье (stipendium), позволяя вести продолжительные кампании без возвращения солдат на уборку урожая. Раньше война была сезонной, так как граждане-земледельцы должны были обрабатывать землю. Это профессионализирует войну и делает возможной долгую осаду Вей.",
       "era": "BC",
-      "latitude": 41.89318911,
-      "longitude": 12.48506606,
+      "latitude": 41.89931442,
+      "longitude": 12.47670293,
       "name": "Soldiers Begin Receiving Pay",
       "name_ru": "Рим платит солдатам жалованье",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Veii",
       "tags": [
-        "Reform",
-        "Innovation",
+        "Army",
         "Roman",
-        "Army"
+        "Innovation",
+        "Reform"
       ],
       "type": "military"
     },
@@ -738,16 +739,16 @@
       "description": "Rome begins the siege of Veii itself — a city as large and wealthy as Rome. Other Etruscan cities, distracted by Gallic raids in the north, fail to send help. The siege will last ten years, like legendary Troy.",
       "description_ru": "Рим начинает осаду самих Вейи — города столь же большого и богатого, как Рим. Другие этрусские города, отвлечённые набегами галлов на севере, не присылают помощи. Осада продлится десять лет, как легендарная Троя.",
       "era": "BC",
-      "latitude": 42.0167,
-      "longitude": 12.3833,
+      "latitude": 42.02623225,
+      "longitude": 12.39686966,
       "name": "Siege of Veii Begins",
       "name_ru": "Начало осады Вейи",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Veii",
       "tags": [
-        "Roman",
         "Etruscan",
-        "War",
-        "Siege"
+        "Siege",
+        "Roman",
+        "War"
       ],
       "type": "military"
     },
@@ -762,10 +763,10 @@
       "name_ru": "Галлы заселяют Италию",
       "source": "https://en.wikipedia.org/wiki/Senones",
       "tags": [
-        "Gallic",
         "Migration",
-        "Italian",
-        "Celtic"
+        "Celtic",
+        "Gallic",
+        "Settlement"
       ],
       "type": "historic"
     },
@@ -795,15 +796,17 @@
       "era": "BC",
       "latitude": 43.0167,
       "longitude": 11.8667,
-      "name": "Roman Ambassadors Violate Neutrality",
-      "name_ru": "Римские послы нарушают нейтралитет",
+      "name": "Gallic Siege of Clusium",
+      "name_ru": "Осада галлами Клузия",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Allia",
       "tags": [
         "Roman",
+        "Siege",
         "Gallic",
         "War",
+        "Etruscan",
         "Diplomacy",
-        "Etruscan"
+        "Fabii"
       ],
       "type": "military"
     },
@@ -941,42 +944,22 @@
     },
     {
       "date": "01.01.0350",
-      "description": "Rome institutionalizes rigorous military training that transforms citizen soldiers into disciplined professionals. Recruits drill with weighted practice weapons, march 20 Roman miles in 5 hours, and practice formation maneuvers until they become second nature. Centurions enforce iron discipline with the vitis (vine stick). This systematic training creates the most reliable infantry force in the ancient world.",
-      "description_ru": "Рим институционализирует строгую военную подготовку, превращающую граждан-солдат в дисциплинированных профессионалов. Новобранцы тренируются утяжелённым учебным оружием, маршируют 20 римских миль за 5 часов и отрабатывают построения до автоматизма. Центурионы поддерживают железную дисциплину витисом (виноградной лозой). Эта систематическая подготовка создаёт надёжнейшую пехоту античного мира.",
+      "description": "Rome institutionalizes rigorous military training that transforms citizen soldiers into disciplined professionals. Recruits drill with weighted practice weapons, march 20 Roman miles in 5 hours, and practice formation maneuvers until they become second nature. Centurions enforce iron discipline with the vitis (vine stick), used as a whip",
+      "description_ru": "Рим институционализирует строгую военную подготовку, превращающую граждан-солдат в дисциплинированных профессионалов. Новобранцы тренируются утяжелённым учебным оружием, проводят длительные марши и отрабатывают построения до автоматизма. Центурионы поддерживают железную дисциплину витисом (виноградной лозой), которая использовалась как хлыст",
       "era": "BC",
-      "latitude": 41.8902,
-      "longitude": 12.4922,
-      "name": "Roman Military Training System",
-      "name_ru": "Система римской военной подготовки",
-      "source": "https://en.wikipedia.org/wiki/Roman_military_training",
+      "latitude": 41.89931442,
+      "longitude": 12.47670293,
+      "name": "Roman Military Training",
+      "name_ru": "Римская военная подготовка",
       "tags": [
-        "Roman",
         "Military",
-        "Innovation",
-        "Tactics",
-        "War",
+        "Roman",
         "Discipline",
-        "Training"
+        "War",
+        "Innovation",
+        "Science"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.0345",
-      "description": "Capua, the richest city of Campania, appeals to Rome for protection against Samnite raiders from the mountains. By accepting Capua into alliance, Rome breaks its treaty with the Samnites and gains access to fertile Campanian land.",
-      "description_ru": "Капуя, богатейший город Кампании, обращается к Риму за защитой от набегов самнитов с гор. Приняв Капую в союз, Рим нарушает договор с самнитами и получает доступ к плодородным кампанским землям.",
-      "era": "BC",
-      "latitude": 41.0847,
-      "longitude": 14.2501,
-      "name": "Capua Appeals to Rome",
-      "name_ru": "Капуя обращается к Риму",
-      "source": "https://en.wikipedia.org/wiki/First_Samnite_War",
-      "tags": [
-        "Roman",
-        "Italian",
-        "Alliance",
-        "Diplomacy"
-      ],
-      "type": "political"
     },
     {
       "date": "01.01.0343",
@@ -989,9 +972,11 @@
       "name_ru": "Начало Первой Самнитской войны",
       "source": "https://en.wikipedia.org/wiki/First_Samnite_War",
       "tags": [
+        "Trick",
         "Roman",
+        "War",
         "Italian",
-        "War"
+        "First"
       ],
       "type": "military"
     },
@@ -1000,19 +985,39 @@
       "description": "Latins and Campanians demand full Roman citizenship and half the Senate seats, or they will secede. Rome refuses. The Latins ally with Volscians, Aurunci, and Sidicini. The Latin War begins — a war to determine whether Rome or the League will lead Italy.",
       "description_ru": "Латины и кампанцы требуют полного римского гражданства и половины мест в Сенате, иначе они выйдут из союза. Рим отказывает. Латины объединяются с вольсками, аврунками и сидицинами. Начинается Латинская война — война за то, кто будет руководить Италией: Рим или Союз.",
       "era": "BC",
-      "latitude": 41.65,
-      "longitude": 12.7,
+      "latitude": 41.72129777,
+      "longitude": 12.67217159,
       "name": "Latin Ultimatum to Rome",
       "name_ru": "Латинский ультиматум Риму",
       "source": "https://en.wikipedia.org/wiki/Latin_War",
       "tags": [
         "Roman",
-        "Latin League",
         "War",
         "Political",
-        "Ultimatum"
+        "Ultimatum",
+        "Latin League"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0340",
+      "description": "At Mount Vesuvius, consul Titus Manlius Torquatus executes his own son for disobeying orders by engaging in single combat with a Latin champion — though victorious. \"Manlian discipline\" becomes proverbial for severity.",
+      "description_ru": "У горы Везувий консул Тит Манлий Торкват казнит на месте собственного сына за неповиновение приказам, который во время разведки сразился с чемпионом латинов, несмотря на наказ консула не вступать в бой вне строя. \"Манлиева дисциплина\" становится нарицательной для обозначения суровости.",
+      "era": "BC",
+      "latitude": 40.82,
+      "longitude": 14.426,
+      "name": "Manlian Discipline",
+      "name_ru": "Манлиева дисциплина",
+      "source": "https://en.wikipedia.org/wiki/Titus_Manlius_Imperiosus_Torquatus",
+      "tags": [
+        "Legend",
+        "War",
+        "Latin League",
+        "Roman",
+        "Death",
+        "Discipline"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0340",
@@ -1030,25 +1035,6 @@
         "Latin League",
         "Self-sacrifice",
         "War"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0340",
-      "description": "At Mount Vesuvius, consul Titus Manlius Torquatus executes his own son for disobeying orders by engaging in single combat with a Latin champion — though victorious. \"Manlian discipline\" becomes proverbial for severity.",
-      "description_ru": "У горы Везувий консул Тит Манлий Торкват казнит собственного сына за неповиновение приказам, вступив в единоборство с латинским чемпионом — хотя и победоносное. \"Манлиева дисциплина\" становится нарицательной для обозначения суровости.",
-      "era": "BC",
-      "latitude": 40.82,
-      "longitude": 14.426,
-      "name": "Manlian Discipline",
-      "name_ru": "Манлиева дисциплина",
-      "source": "https://en.wikipedia.org/wiki/Titus_Manlius_Imperiosus_Torquatus",
-      "tags": [
-        "Roman",
-        "Latin League",
-        "War",
-        "Legend",
-        "Death"
       ],
       "type": "military"
     },
@@ -1116,19 +1102,20 @@
       "description": "Romans suffer their worst humiliation when an army is trapped in the Caudine Forks mountain pass by Samnites under Gaius Pontius. Unable to fight or escape, the entire army is forced to pass under the yoke (sub iugum) — a gateway of spears symbolizing utter defeat. The peace treaty is later repudiated by Rome.",
       "description_ru": "Римляне терпят величайшее унижение, когда армия попадает в ловушку самнитов под командованием Гая Понтия. Понтий блокирует римскую армию в горном проходе с обеих сторон. Не имея возможности сражаться или бежать, вся армия вынуждена пройти под ярмом (sub iugum) — воротами из копий, символизирующими полное поражение. Рим вынужден подписать капитуляцию во второй войне с самнитами.",
       "era": "BC",
-      "latitude": 41.07,
-      "longitude": 14.62,
+      "latitude": 41.03616644,
+      "longitude": 14.53617811,
       "name": "Disaster at Caudine Forks",
       "name_ru": "Унижение Рима при Кавдинских ущельях",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Caudine_Forks",
       "tags": [
         "Peace",
-        "Ambush",
-        "Battle",
         "Roman",
-        "Failure",
         "War",
-        "Italian"
+        "Italian",
+        "Failure",
+        "Battle",
+        "Ambush",
+        "Second"
       ],
       "type": "military"
     },
@@ -1137,56 +1124,113 @@
       "description": "After the Caudine Forks disaster, Rome repudiates the peace treaty, claiming the consuls had no authority to make it. The Senate hands over the consuls naked and bound to the Samnites, who refuse them. War resumes with Roman fury for revenge.",
       "description_ru": "После катастрофы при Кавдинских ущельях Рим отвергает мирный договор, утверждая, что консулы не имели полномочий его заключать. Сенат выдаёт консулов обнажёнными и связанными самнитам, которые отказываются их принять. Война возобновляется с римской яростью за отмщение.",
       "era": "BC",
-      "latitude": 41.8925,
-      "longitude": 12.4853,
+      "latitude": 41.89318911,
+      "longitude": 12.48506606,
       "name": "Rome Repudiates Caudine Peace",
       "name_ru": "Рим отвергает Кавдинский мир",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Caudine_Forks",
       "tags": [
         "Roman",
         "Italian",
+        "Diplomacy",
         "War",
-        "Political",
-        "Diplomacy"
+        "Political"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.05.0315",
+      "description": "An impregnable fortress on a tuff rock, to protect Campania and the mountain gorges from Samnite raids. Originally inhabited by the Caudini tribe, Rome managed to capture the settlement. The capture of Saticula became Roman \"revenge\" for the defeats of the first years of the war.",
+      "description_ru": "Неприступная крепость на туфовой скале, для защиты Кампании и горных ущелий от самнитских набегов. Изначально здесь жило племя кавдинов, но Риму удалось захватить поселение. Захват Сатикулы стал для римлян «реваншем» за поражения первых лет войны",
+      "era": "BC",
+      "latitude": 41.09206331,
+      "longitude": 14.50422764,
+      "name": "Roman fortress of Saticula",
+      "name_ru": "Римская крепость Сатикула",
+      "tags": [
+        "Roman",
+        "Fortification",
+        "War",
+        "Infrastructure",
+        "Fabii",
+        "Italian",
+        "Second"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0315",
+      "description": "Rome adopted the manipular legion during the Samnite Wars. The new system divided the infantry into three lines: hastati (young men), principes (experienced men), and triarii (veterans). The hastati enter the battle first, the principes cover them, and in extreme cases the triarii enter the battle. The new system provides significantly greater mobility than the Greek phalanx and allows to make sustained, firm pressure on the enemy.",
+      "description_ru": "Рим принимает манипулярный легион во время Самнитских войн. Новая система делит пехоту на три линии: гастаты (молодые), принципы (опытные) и триарии (ветераны). Гастаты вступают в бой первыми, принципы их прикрывают, в крайнем случае в бой вступают триарии. Новая система дает значимо большую мобильность, чем греческая фаланга, и позволяет создавать жесткое непрерывное давление на врага.",
+      "era": "BC",
+      "latitude": 41.89931442,
+      "longitude": 12.47670293,
+      "name": "Manipular Legion System",
+      "name_ru": "Манипулярный легион",
+      "source": "https://en.wikipedia.org/wiki/Maniple_(military_unit)",
+      "tags": [
+        "Innovation",
+        "Roman",
+        "Tactics",
+        "War",
+        "Discipline"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0315",
+      "description": "Rome adopts the pilum, a heavy javelin with a unique design: a long iron shank that bends on impact, preventing enemies from throwing it back and rendering shields unusable. Each legionary carries two pila, throwing them at 15-30 meters before closing with gladius. The weapon disrupts enemy formations before melee.",
+      "description_ru": "Рим принимает на вооружение пилум — тяжёлый дротик уникальной конструкции: длинный железный стержень гнётся при попадании, не давая врагам метать его обратно и делая щиты непригодными. Каждый легионер несёт два пилума, метая их с 15-30 метров перед сближением с гладиусом. Оружие нарушает строй врага до рукопашной.",
+      "era": "BC",
+      "latitude": 41.89931442,
+      "longitude": 12.47670293,
+      "name": "Adoption of the Pilum by Romans",
+      "name_ru": "Рим применяет в бою пилумы",
+      "source": "https://en.wikipedia.org/wiki/Pilum",
+      "tags": [
+        "Weapon",
+        "War",
+        "Innovation",
+        "Roman"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0315",
       "description": "Romans suffer another major defeat at Lautulae near Terracina. Samnites raid Latin territory and nearly reach Rome. Rome responds by building a network of fortified colonies and roads through the mountains to control territory permanently.",
       "description_ru": "Римляне терпят ещё одно крупное поражение при Лавтулах близ Террацины. Самниты совершают набеги на латинскую территорию и почти достигают Рима. Рим отвечает строительством сети укреплённых колоний и дорог через горы для постоянного контроля территории.",
       "era": "BC",
-      "latitude": 41.2833,
-      "longitude": 13.25,
+      "latitude": 41.30731013,
+      "longitude": 13.28933716,
       "name": "Battle of Lautulae",
       "name_ru": "Битва при Лавтулах",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Lautulae",
       "tags": [
         "Roman",
-        "Italian",
-        "War",
         "Battle",
-        "Defeat"
+        "War",
+        "Defeat",
+        "Italian",
+        "Second"
       ],
       "type": "military"
     },
     {
-      "date": "01.01.0315",
-      "description": "Rome abandons the Greek-style phalanx and adopts the manipular legion during the Samnite Wars. The new system divides infantry into three lines: hastati (young soldiers), principes (experienced), and triarii (veterans). The checkerboard formation of 30 maniples provides unprecedented tactical flexibility on rough terrain.",
-      "description_ru": "Рим отказывается от греческой фаланги и принимает манипулярный легион во время Самнитских войн. Новая система делит пехоту на три линии: гастаты (молодые), принципы (опытные) и триарии (ветераны). Шахматное построение 30 манипул обеспечивает небывалую тактическую гибкость на пересечённой местности.",
+      "date": "01.01.0314",
+      "description": "Rome, taking advantage of its developing infrastructure, surrounded Samnium with its fortresses to cut off the Samnites from external communications and overwhelm them with numbers. Luceria blocked the Samnites' access to the fertile plains of Apulia, from where they obtained grain and livestock.",
+      "description_ru": "Рим, используя развивающуюся инфраструктуру, окружает Самнию своими крепостями, чтобы отрезать самнитов от внешних коммуникаций и задавить их числом. Луцерия перекрыла самнитам выход к плодородным равнинам Апулии, откуда они брали зерно и скот.",
       "era": "BC",
-      "latitude": 41.2894,
-      "longitude": 14.7833,
-      "name": "Manipular Legion System",
-      "name_ru": "Манипулярный легион",
-      "source": "https://en.wikipedia.org/wiki/Maniple_(military_unit)",
+      "latitude": 41.50740427,
+      "longitude": 15.34446716,
+      "name": "The Roman fortress of Luceria",
+      "name_ru": "Римская крепость Луцерия",
       "tags": [
         "Roman",
-        "Military",
-        "Innovation",
-        "Tactics",
+        "Fortification",
         "War",
-        "Science"
+        "Infrastructure",
+        "Italian",
+        "Second"
       ],
       "type": "historic"
     },
@@ -1250,19 +1294,20 @@
     {
       "date": "01.01.0305",
       "description": "After defeats, the Samnites seek peace. Rome demands territory, hostages, and restrictions on Samnite foreign policy. The humiliating terms ensure that war will resume when Samnites recover their strength.",
-      "description_ru": "После поражений самниты ищут мира. Рим требует территорию, заложников и ограничения самнитской внешней политики. Унизительные условия гарантируют, что война возобновится, когда самниты восстановят силы.",
+      "description_ru": "После поражений и потери столицы пентавров Бовиана самниты ищут мира. Рим требует территорию, заложников и ограничения самнитской внешней политики. Унизительные условия гарантируют, что война возобновится, когда самниты восстановят силы.",
       "era": "BC",
-      "latitude": 41.4878,
-      "longitude": 14.6775,
+      "latitude": 41.48389104,
+      "longitude": 14.47153687,
       "name": "End of Second Samnite War",
       "name_ru": "Конец Второй Самнитской войны",
       "source": "https://en.wikipedia.org/wiki/Second_Samnite_War",
       "tags": [
         "Roman",
-        "Italian",
-        "War",
         "Peace",
-        "Treaty"
+        "War",
+        "Treaty",
+        "Italian",
+        "Second"
       ],
       "type": "political"
     },
@@ -1287,40 +1332,21 @@
     },
     {
       "date": "01.01.0300",
-      "description": "Rome adopts the pilum, a heavy javelin with a unique design: a long iron shank that bends on impact, preventing enemies from throwing it back and rendering shields unusable. Each legionary carries two pila, throwing them at 15-30 meters before closing with gladius. The weapon disrupts enemy formations before melee.",
-      "description_ru": "Рим принимает на вооружение пилум — тяжёлый дротик уникальной конструкции: длинный железный стержень гнётся при попадании, не давая врагам метать его обратно и делая щиты непригодными. Каждый легионер несёт два пилума, метая их с 15-30 метров перед сближением с гладиусом. Оружие нарушает строй врага до рукопашной.",
+      "description": "Rome develops standardized road construction techniques that will endure for millennia: multi-layered foundation of mortar, stones, and gravel; cambered surface for drainage; drainage ditches with retaining walls; cuttings through hills rather than detours. Roman engineers prefer straight paths, building bridges and tunnels rather than avoiding obstacles. Many Roman roads remain in use today.",
+      "description_ru": "Рим стандартизирует методы строительства дорог: многослойный фундамент из раствора, камней и гравия; выпуклая поверхность для дренажа; дренажные канавы с подпорными стенками; прорезы через холмы вместо обходов. Римские инженеры предпочитают прямые пути, строя мосты и туннели вместо обхода препятствий. Многие римские дороги используются по сей день",
       "era": "BC",
-      "latitude": 41.8902,
-      "longitude": 12.4922,
-      "name": "Adoption of the Pilum",
-      "name_ru": "Принятие пилума на вооружение",
-      "source": "https://en.wikipedia.org/wiki/Pilum",
-      "tags": [
-        "Roman",
-        "Military",
-        "Innovation",
-        "War",
-        "Weapon"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0300",
-      "description": "Rome develops standardized road construction techniques that will endure for millennia: multi-layered foundation of mortar, stones, and gravel; cambered surface for drainage; drainage ditches with retaining walls; cuttings through hills rather than detours. Roman engineers prefer straight paths, building bridges and tunnels rather than avoiding obstacles. Many Roman roads remain in use 2000 years later.",
-      "description_ru": "Рим разрабатывает стандартизированные методы строительства дорог, которые просуществуют тысячелетия: многослойный фундамент из раствора, камней и гравия; выпуклая поверхность для дренажа; дренажные канавы с подпорными стенками; прорезы через холмы вместо обходов. Римские инженеры предпочитают прямые пути, строя мосты и туннели вместо обхода препятствий. Многие римские дороги используются 2000 лет спустя.",
-      "era": "BC",
-      "latitude": 41.8902,
-      "longitude": 12.4922,
+      "latitude": 41.89318911,
+      "longitude": 12.48506606,
       "name": "Roman Road Engineering Standards",
-      "name_ru": "Стандарты римского дорожного строительства",
+      "name_ru": "Стандарты римских дорог",
       "source": "https://en.wikipedia.org/wiki/Roman_roads",
       "tags": [
-        "Roman",
         "Innovation",
+        "Science",
         "Engineering ⚙️",
         "Infrastructure",
         "Road",
-        "Science"
+        "Roman"
       ],
       "type": "historic"
     },
@@ -1329,17 +1355,18 @@
       "description": "The Third Samnite War begins as Samnites form a grand coalition with Gauls, Etruscans, and Umbrians against Rome. This 'war of Italian liberation' represents the last major attempt to check Roman expansion in the peninsula.",
       "description_ru": "Третья Самнитская война начинается, когда самниты формируют большую коалицию с галлами, этрусками и умбрами против Рима. Эта 'война за освобождение Италии' представляет последнюю крупную попытку остановить римскую экспансию на полуострове.",
       "era": "BC",
-      "latitude": 41.4878,
-      "longitude": 14.6775,
+      "latitude": 41.73989744,
+      "longitude": 14.38733697,
       "name": "Third Samnite War Begins",
       "name_ru": "Третья Самнитская война",
       "source": "https://en.wikipedia.org/wiki/Third_Samnite_War",
       "tags": [
-        "Italian",
         "Roman",
+        "War",
         "Etruscan",
         "Gallic",
-        "War"
+        "Italian",
+        "Third"
       ],
       "type": "military"
     },
@@ -1367,19 +1394,19 @@
     {
       "date": "01.01.0293",
       "description": "At Aquilonia, Romans storm the Samnite sacred enclosure where their elite \"Linen Legion\" has sworn to fight to the death. 20,000 Samnites die. This breaks the military power of the Samnite confederacy forever.",
-      "description_ru": "При Аквилонии римляне штурмуют священный лагерь самнитов, где их элитный \"Льняной легион\" поклялся биться насмерть. 20 000 самнитов гибнут. Это навсегда ломает военную мощь самнитской конфедерации.",
+      "description_ru": "При Аквилонии римляне штурмуют священный лагерь самнитов, где их элитный \"Льняной легион\" поклялся биться насмерть. 20 тысяч самнитов гибнут в бою. Это навсегда ломает военную мощь самнитской конфедерации.",
       "era": "BC",
-      "latitude": 41.4878,
-      "longitude": 14,
+      "latitude": 41.81188331,
+      "longitude": 14.37870026,
       "name": "Battle of Aquilonia",
       "name_ru": "Битва при Аквилонии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Aquilonia",
       "tags": [
         "Roman",
-        "Italian",
-        "War",
         "Battle",
-        "Victory"
+        "War",
+        "Third",
+        "Italian"
       ],
       "type": "military"
     },
@@ -1483,21 +1510,21 @@
     },
     {
       "date": "01.01.0280",
-      "description": "Rome standardizes the castra — fortified military camp built every night during march. Following rigid engineering specifications, legionaries construct ramparts, ditches, gates, and internal grid layout in hours. This discipline provides security, intimidates enemies, and demonstrates Roman organizational superiority. Each soldier knows exactly where to position his tent.",
-      "description_ru": "Рим стандартизирует каструм — укреплённый военный лагерь, возводимый каждую ночь на марше. Следуя строгим инженерным спецификациям, легионеры строят валы, рвы, ворота и внутреннюю сетку за часы. Эта дисциплина обеспечивает безопасность, устрашает врагов и демонстрирует римское организационное превосходство. Каждый солдат знает, где ставить свою палатку.",
+      "description": "Rome standardizes the castra — fortified military camp built every night during march. Following rigid engineering specifications, legionaries construct ramparts, ditches, gates, and internal grid layout in hours. This discipline provides security, intimidates enemies, and demonstrates Roman organizational superiority. Each soldier knows exactly where to position his tent. The castrum turns the Roman army into a walking fortress.",
+      "description_ru": "Рим стандартизирует каструм — укреплённый военный лагерь, возводимый каждую ночь на марше. Следуя строгим инженерным спецификациям, легионеры строят валы, рвы, ворота и внутреннюю сетку за часы. Эта дисциплина обеспечивает безопасность, устрашает врагов и демонстрирует римское организационное превосходство. Каждый солдат знает, где ставить свою палатку. Каструм превращает римскую армию в ходячую крепость.",
       "era": "BC",
-      "latitude": 41.8902,
-      "longitude": 12.4922,
-      "name": "Roman Military Camp System (Castra)",
-      "name_ru": "Система римских военных лагерей (каструм)",
+      "latitude": 41.89931442,
+      "longitude": 12.47670293,
+      "name": "Roman Military Camp (Castra)",
+      "name_ru": "Римский военный лагерь (каструм)",
       "source": "https://en.wikipedia.org/wiki/Castra",
       "tags": [
-        "Roman",
-        "Military",
-        "Innovation",
         "Engineering ⚙️",
+        "Roman",
+        "Fortification",
         "War",
         "Tactics",
+        "Innovation",
         "Discipline"
       ],
       "type": "historic"
@@ -1525,8 +1552,8 @@
     },
     {
       "date": "01.01.0275",
-      "description": "Romans finally defeat Pyrrhus at Beneventum using tactics developed to counter war elephants — stampeding them back into their own lines with fire and javelins. Pyrrhus withdraws to Greece, reportedly saying 'What a wrestling ground we are leaving for Rome and Carthage!' Unable to replace losses far from home, he eventually abandons Italy.",
-      "description_ru": "Римляне наконец побеждают Пирра при Беневенте, используя тактику против боевых слонов — направляя их огнём и дротиками обратно на собственные порядки. Пирр уходит в Грецию, по преданию говоря: 'Какое поле для борьбы мы оставляем Риму и Карфагену!'. Не в состоянии восполнять потери вдали от дома, он в конце концов покидает Италию, не проиграв сражений, но проиграв войну.",
+      "description": "Romans finally defeat Pyrrhus at Beneventum using tactics developed to counter war elephants — stampeding them back into their own lines with fire and javelins. Unable to replace losses far from home, he eventually abandons Italy.",
+      "description_ru": "Римляне наконец побеждают Пирра при Беневенте, используя тактику против боевых слонов — направляя их огнём и дротиками обратно на собственные порядки. Не в состоянии восполнять потери вдали от дома, он в конце концов покидает Италию, не проиграв сражений, но проиграв войну.",
       "era": "BC",
       "latitude": 41.1297,
       "longitude": 14.7772,
@@ -1534,34 +1561,52 @@
       "name_ru": "Битва при Беневенте",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Beneventum_(275_BC)",
       "tags": [
-        "Italy",
-        "Tactics",
         "Greek",
         "Roman",
         "Battle",
-        "Pyrrhus 👤",
+        "Tactics",
+        "War",
+        "Italy",
         "Magna Graecia",
-        "War"
+        "Pyrrhus 👤"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0273",
       "description": "Roman builders develop opus caementicium (Roman concrete) by mixing volcanic ash (pozzolana) with lime and aggregate. First used at the colony of Cosa, this revolutionary material allows construction of unprecedented structures. Unlike modern concrete, Roman concrete actually strengthens over centuries through mineral crystallization.",
-      "description_ru": "Римские строители разрабатывают opus caementicium (римский бетон), смешивая вулканический пепел (пуццолан) с известью и заполнителем. Впервые применённый в колонии Коза, этот революционный материал позволяет строить беспрецедентные сооружения. В отличие от современного бетона, римский бетон укрепляется веками через минеральную кристаллизацию.",
+      "description_ru": "Римские строители разрабатывают opus caementicium (римский бетон), смешивая вулканический пепел (пуццолан) с известью и заполнителем. Впервые применённый в колонии Коза, этот революционный материал позволяет строить беспрецедентные сооружения. В отличие от современного бетона, римский бетон крепнет веками через минеральную кристаллизацию.",
       "era": "BC",
-      "latitude": 42.4089,
-      "longitude": 11.2889,
+      "latitude": 42.4123995,
+      "longitude": 11.2870574,
       "name": "Invention of Roman Concrete",
       "name_ru": "Изобретение римского бетона",
       "source": "https://en.wikipedia.org/wiki/Roman_concrete",
       "tags": [
-        "Roman",
         "Innovation",
-        "Engineering ⚙️",
-        "Architecture",
         "Science",
-        "Construction"
+        "Roman",
+        "Architecture",
+        "Engineering ⚙️"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0272",
+      "description": "Rome's second aqueduct, the Aqua Anio Vetus, is constructed using war spoils from the victory over Pyrrhus. Drawing water from the upper Anio River near Tivoli, its 64 km mostly underground channel doubles Rome's water supply. The name 'Vetus' (old) distinguishes it from the later Aqua Anio Novus.",
+      "description_ru": "Второй римский акведук, Aqua Anio Vetus, построен на военные трофеи от победы над Пирром. Забирая воду из верхнего течения реки Аниене близ Тиволи, его 64-километровый подземный канал удваивает водоснабжение Рима. Название 'Vetus' (старый) отличает его от более позднего Aqua Anio Novus.",
+      "era": "BC",
+      "latitude": 42.02682201,
+      "longitude": 12.93794632,
+      "name": "Aqua Anio Vetus Aqueduct",
+      "name_ru": "Акведук Aqua Anio Vetus",
+      "source": "https://en.wikipedia.org/wiki/Aqua_Anio_Vetus",
+      "tags": [
+        "Roman",
+        "Water",
+        "Architecture",
+        "Engineering ⚙️",
+        "Infrastructure"
       ],
       "type": "historic"
     },
@@ -1584,25 +1629,6 @@
         "War"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0272",
-      "description": "Rome's second aqueduct, the Aqua Anio Vetus, is constructed using war spoils from the victory over Pyrrhus. Drawing water from the upper Anio River near Tivoli, its 64 km mostly underground channel doubles Rome's water supply. The name 'Vetus' (old) distinguishes it from the later Aqua Anio Novus.",
-      "description_ru": "Второй римский акведук, Aqua Anio Vetus, построен на военные трофеи от победы над Пирром. Забирая воду из верхнего течения реки Аниене близ Тиволи, его 64-километровый подземный канал удваивает водоснабжение Рима. Название 'Vetus' (старый) отличает его от более позднего Aqua Anio Novus.",
-      "era": "BC",
-      "latitude": 42.0125,
-      "longitude": 12.9458,
-      "name": "Aqua Anio Vetus Aqueduct",
-      "name_ru": "Акведук Aqua Anio Vetus",
-      "source": "https://en.wikipedia.org/wiki/Anio_Vetus",
-      "tags": [
-        "Roman",
-        "Engineering ⚙️",
-        "Water",
-        "Architecture",
-        "Infrastructure"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0268",
@@ -1645,8 +1671,8 @@
     },
     {
       "date": "01.01.0260",
-      "description": "Facing the superior Carthaginian navy in the First Punic War, Rome invents the corvus ('raven') — a rotating boarding bridge with a heavy spike that drops onto enemy decks, locking ships together. This ingenious device transforms naval warfare into land battle, where Roman legionaries excel. The corvus helps Rome win the decisive Battle of Mylae, its first major naval victory.",
-      "description_ru": "Столкнувшись с превосходящим карфагенским флотом в Первой Пунической войне, Рим изобретает корвус ('ворон') — вращающийся абордажный мостик с тяжёлым шипом, падающим на вражескую палубу и сцепляющим корабли. Это гениальное устройство превращает морской бой в сухопутный, где превосходят римские легионеры. Корвус помогает Риму одержать решающую победу при Милах — первую крупную морскую победу.",
+      "description": "Facing the superior Carthaginian navy in the First Punic War, Rome invents the corvus ('raven') — a rotating boarding bridge with a heavy spike that drops onto enemy decks, locking ships together. This ingenious device transforms naval warfare into land battle, where Roman legionaries excel",
+      "description_ru": "Столкнувшись с превосходящим карфагенским флотом в Первой Пунической войне, Рим изобретает корвус ('ворон') — вращающийся абордажный мостик с тяжёлым шипом, падающим на вражескую палубу и сцепляющим корабли. Это гениальное устройство превращает морской бой в сухопутный, где превосходят римские легионеры",
       "era": "BC",
       "latitude": 38.2258,
       "longitude": 15.2417,
@@ -1655,12 +1681,31 @@
       "source": "https://en.wikipedia.org/wiki/Corvus_(boarding_device)",
       "tags": [
         "Roman",
-        "Military",
-        "Innovation",
         "War",
-        "Naval",
+        "Punic",
         "Engineering ⚙️",
-        "Punic Wars"
+        "Naval",
+        "Innovation"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.0250",
+      "description": "The testudo ('tortoise') formation becomes a refined Roman tactic for siege operations. Soldiers interlock their large scuta shields to form a protective shell — front rank vertical, inner ranks overhead like roof tiles. This 'human tank' allows troops to advance under heavy missile fire toward fortifications. The formation requires exceptional discipline and drilling.",
+      "description_ru": "Построение 'черепаха' (testudo) - отточенная римская тактика для осады. Солдаты смыкают большие щиты скутумы, образуя защитный панцирь — передний ряд вертикально, внутренние ряды над головой как черепица. Этот 'танк' позволяет войскам наступать под сильным обстрелом к укреплениям. Построение требует исключительной дисциплины и муштры.",
+      "era": "BC",
+      "latitude": 41.89931442,
+      "longitude": 12.47670293,
+      "name": "Testudo Formation Tactics",
+      "name_ru": "Римское построение 'черепаха'",
+      "source": "https://en.wikipedia.org/wiki/Testudo_formation",
+      "tags": [
+        "War",
+        "Innovation",
+        "Roman",
+        "Discipline",
+        "Siege",
+        "Tactics"
       ],
       "type": "historic"
     },
@@ -1669,19 +1714,18 @@
       "description": "Roman engineers develop sophisticated surveying instruments: the groma for laying out perpendicular lines and right angles; the chorobates for leveling; the dioptra for measuring angles. These tools enable precise gradient control for aqueducts (achieving 1:4800 slope over 50 km) and straight road construction. Roman precision surveying won't be surpassed until modern times.",
       "description_ru": "Римские инженеры разрабатывают сложные геодезические инструменты: грому для разбивки перпендикулярных линий и прямых углов; хоробат для нивелирования; диоптру для измерения углов. Эти инструменты обеспечивают точный контроль уклона акведуков (достигая 1:4800 на 50 км) и строительство прямых дорог. Римская точность геодезии не будет превзойдена до нового времени.",
       "era": "BC",
-      "latitude": 41.8902,
-      "longitude": 12.4922,
+      "latitude": 41.89318911,
+      "longitude": 12.48506606,
       "name": "Roman Surveying Instruments",
       "name_ru": "Римские геодезические инструменты",
       "source": "https://en.wikipedia.org/wiki/Groma_(surveying)",
       "tags": [
         "Roman",
-        "Innovation",
         "Engineering ⚙️",
-        "Science",
-        "Tools"
+        "Innovation",
+        "Science"
       ],
-      "type": "historic"
+      "type": "scientific"
     },
     {
       "date": "01.01.0241",
@@ -1747,8 +1791,8 @@
       "description": "A massive Celtic invasion from the Po Valley is crushed at Telamon in Etruria, where Romans trap the Gauls between two armies. This decisive victory leads to Roman conquest of Cisalpine Gaul (northern Italy) and the founding of colonies at Placentia and Cremona.",
       "description_ru": "Массивное кельтское вторжение из долины По разгромлено при Теламоне в Этрурии, где римляне зажимают галлов между двумя армиями. Эта решающая победа ведёт к римскому завоеванию Цизальпинской Галлии (северной Италии) и основанию колоний в Плаценции и Кремоне.",
       "era": "BC",
-      "latitude": 42.8167,
-      "longitude": 11.1,
+      "latitude": 42.56419149,
+      "longitude": 11.13464355,
       "name": "Battle of Telamon",
       "name_ru": "Битва при Теламоне",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Telamon",
@@ -1758,6 +1802,23 @@
         "Celtic",
         "Roman",
         "War"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0222",
+      "description": "Rome conquers the Celtic settlement of Medelanon and names it Mediolanum. It becomes an important strategic point for Rome in the Po Valley.",
+      "description_ru": "Рим завоевывает кельтское поселение Меделанон, и именует его Медиоланум. Он стал для Рима важной стратегической точкой в долине реки По",
+      "era": "BC",
+      "latitude": 45.46392324,
+      "longitude": 9.18813229,
+      "name": "Rome captures Medelanon",
+      "name_ru": "Рим захватывает Меделанон",
+      "tags": [
+        "Roman",
+        "Celtic",
+        "War",
+        "Conquest"
       ],
       "type": "military"
     },
@@ -1821,6 +1882,45 @@
     },
     {
       "date": "01.01.0200",
+      "description": "After encountering Celtiberian swords during the Punic Wars, Rome adopts the gladius Hispaniensis as standard legionary weapon. This short, double-edged sword (45-65 cm blade) excels at both thrusting and cutting in tight formations. Combined with the large scutum shield, it makes the Roman legionary the deadliest close-combat soldier in the ancient world.",
+      "description_ru": "Встретив кельтиберийские мечи во время Пунических войн, Рим принимает gladius Hispaniensis как стандартное оружие легионера. Этот короткий обоюдоострый меч (клинок 45-65 см) превосходен для уколов и рубки в тесном строю. В сочетании с большим щитом скутум он делает римского легионера смертоноснейшим воином ближнего боя античного мира.",
+      "era": "BC",
+      "latitude": 41.89931442,
+      "longitude": 12.47670293,
+      "name": "Adoption of the Gladius Hispaniensis",
+      "name_ru": "Испанский гладиус в Риме",
+      "source": "https://en.wikipedia.org/wiki/Gladius",
+      "tags": [
+        "Weapon",
+        "Spanish",
+        "Roman",
+        "Innovation",
+        "War"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0200",
+      "description": "Romans master the structural arch, perfecting the voussoir (wedge-shaped stones) with keystone technique. Unlike post-and-lintel construction, arches distribute weight outward, enabling unprecedented spans for bridges, aqueducts, and buildings. Combined with Roman concrete, arch technology enables the construction of structures that will stand for millennia.",
+      "description_ru": "Римляне осваивают конструкционную арку, совершенствуя технику клинчатых камней (вуссуаров) с замковым камнем. В отличие от стоечно-балочной конструкции, арки распределяют нагрузку наружу, позволяя создавать небывалые пролёты для мостов, акведуков и зданий. В сочетании с римским бетоном арочная технология позволяет строить сооружения, которые простоят тысячелетия.",
+      "era": "BC",
+      "latitude": 41.8902,
+      "longitude": 12.4922,
+      "name": "Mastery of Roman Arch",
+      "name_ru": "Римские арки",
+      "source": "https://en.wikipedia.org/wiki/Roman_architecture",
+      "tags": [
+        "Architecture",
+        "Engineering ⚙️",
+        "Innovation",
+        "Roman",
+        "Science",
+        "Construction"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.0200",
       "description": "Quintus Fabius Pictor writes the first history of Rome in Greek, aimed at explaining Rome to the Greek world after the Second Punic War. His lost work established the traditional founding date of 753 BC and shaped all later Roman historiography.",
       "description_ru": "Квинт Фабий Пиктор пишет первую историю Рима на греческом языке, с целью объяснить Рим греческому миру после Второй Пунической войны. Его утраченный труд установил традиционную дату основания 753 г. до н.э. и сформировал всю последующую римскую историографию.",
       "era": "BC",
@@ -1834,46 +1934,6 @@
         "Greek",
         "Culture",
         "Roman"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0200",
-      "description": "After encountering Celtiberian swords during the Punic Wars, Rome adopts the gladius Hispaniensis as standard legionary weapon. This short, double-edged sword (45-65 cm blade) excels at both thrusting and cutting in tight formations. Combined with the large scutum shield, it makes the Roman legionary the deadliest close-combat soldier in the ancient world.",
-      "description_ru": "Встретив кельтиберийские мечи во время Пунических войн, Рим принимает gladius Hispaniensis как стандартное оружие легионера. Этот короткий обоюдоострый меч (клинок 45-65 см) превосходен для уколов и рубки в тесном строю. В сочетании с большим щитом скутум он делает римского легионера смертоноснейшим воином ближнего боя античного мира.",
-      "era": "BC",
-      "latitude": 37.8882,
-      "longitude": -4.7794,
-      "name": "Adoption of the Gladius Hispaniensis",
-      "name_ru": "Принятие испанского гладиуса",
-      "source": "https://en.wikipedia.org/wiki/Gladius",
-      "tags": [
-        "Roman",
-        "Military",
-        "Innovation",
-        "War",
-        "Weapon",
-        "Spanish"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0200",
-      "description": "Romans master the structural arch, perfecting the voussoir (wedge-shaped stones) with keystone technique. Unlike post-and-lintel construction, arches distribute weight outward, enabling unprecedented spans for bridges, aqueducts, and buildings. Combined with Roman concrete, arch technology enables the construction of structures that will stand for millennia.",
-      "description_ru": "Римляне осваивают конструкционную арку, совершенствуя технику клинчатых камней (вуссуаров) с замковым камнем. В отличие от стоечно-балочной конструкции, арки распределяют нагрузку наружу, позволяя создавать небывалые пролёты для мостов, акведуков и зданий. В сочетании с римским бетоном арочная технология позволяет строить сооружения, которые простоят тысячелетия.",
-      "era": "BC",
-      "latitude": 41.8902,
-      "longitude": 12.4922,
-      "name": "Mastery of Arch Construction",
-      "name_ru": "Мастерство арочного строительства",
-      "source": "https://en.wikipedia.org/wiki/Roman_architecture",
-      "tags": [
-        "Roman",
-        "Innovation",
-        "Engineering ⚙️",
-        "Architecture",
-        "Science",
-        "Construction"
       ],
       "type": "historic"
     },
@@ -1979,17 +2039,17 @@
       "description": "Censors Marcus Aemilius Lepidus and Marcus Fulvius Nobilior build the Basilica Aemilia (Basilica Fulvia) in the Roman Forum. This large public hall serves as a law court, commercial center, and meeting place. Its marble floor, colonnades, and shops set the standard for Roman civic architecture.",
       "description_ru": "Цензоры Марк Эмилий Лепид и Марк Фульвий Нобилиор строят базилику Эмилия (базилику Фульвия) на Римском форуме. Этот большой общественный зал служит судом, торговым центром и местом собраний. Его мраморный пол, колоннады и лавки задают стандарт римской гражданской архитектуры.",
       "era": "BC",
-      "latitude": 41.8927,
-      "longitude": 12.4857,
+      "latitude": 41.89256616,
+      "longitude": 12.48617649,
       "name": "Basilica Aemilia Built",
       "name_ru": "Строительство базилики Эмилия",
       "source": "https://en.wikipedia.org/wiki/Basilica_Aemilia",
       "tags": [
-        "Roman",
-        "Architecture",
+        "Commerce",
         "Forum",
         "Administration",
-        "Commerce"
+        "Roman",
+        "Architecture"
       ],
       "type": "historic"
     },
@@ -1998,17 +2058,17 @@
       "description": "Construction begins on the Pons Aemilius, Rome's first stone bridge over the Tiber, replacing an earlier wooden structure. Completed in 142 BC, its innovative concrete core with stone facing set the model for Roman bridge engineering. Today only one arch survives, known as 'Ponte Rotto' (Broken Bridge).",
       "description_ru": "Начинается строительство моста Эмилия, первого каменного моста Рима через Тибр, заменившего более раннюю деревянную конструкцию. Завершённый в 142 до н.э., его инновационное бетонное ядро с каменной облицовкой стало образцом римского мостостроения. Сегодня сохранилась лишь одна арка, известная как 'Ponte Rotto' (Сломанный мост).",
       "era": "BC",
-      "latitude": 41.8882,
-      "longitude": 12.4775,
+      "latitude": 41.88932755,
+      "longitude": 12.47936904,
       "name": "Pons Aemilius - First Stone Bridge",
       "name_ru": "Мост Эмилия - первый каменный мост",
       "source": "https://en.wikipedia.org/wiki/Pons_Aemilius",
       "tags": [
         "Roman",
-        "Bridge",
-        "Engineering ⚙️",
+        "Innovation",
         "Infrastructure",
-        "Innovation"
+        "Engineering ⚙️",
+        "Bridge"
       ],
       "type": "historic"
     },
@@ -2095,21 +2155,20 @@
       "description": "Rome perfects the ballista, a powerful two-armed torsion catapult capable of launching heavy bolts or stones over 300 meters. Roman improvements include metal reinforcement, better materials, and standardized production. By the 1st century AD, every century will have its own ballista, making Roman siege warfare unmatched.",
       "description_ru": "Рим совершенствует баллисту — мощную двухплечевую торсионную катапульту, способную метать тяжёлые болты или камни на 300 метров. Римские улучшения включают металлическое усиление, лучшие материалы и стандартизированное производство. К I веку н.э. каждая центурия будет иметь свою баллисту, делая римскую осадную войну непревзойдённой.",
       "era": "BC",
-      "latitude": 41.8902,
-      "longitude": 12.4922,
+      "latitude": 41.89931442,
+      "longitude": 12.47670293,
       "name": "Roman Ballista Artillery",
       "name_ru": "Римская баллиста",
       "source": "https://en.wikipedia.org/wiki/Ballista",
       "tags": [
         "Roman",
-        "Military",
+        "Engineering ⚙️",
         "Innovation",
         "War",
         "Siege",
-        "Engineering ⚙️",
         "Science"
       ],
-      "type": "historic"
+      "type": "scientific"
     },
     {
       "date": "01.01.0149",
@@ -2141,11 +2200,10 @@
       "name_ru": "Строительство Постумиевой дороги",
       "source": "https://en.wikipedia.org/wiki/Via_Postumia",
       "tags": [
-        "Roman",
         "Road",
-        "Infrastructure",
         "Engineering ⚙️",
-        "Military"
+        "Infrastructure",
+        "Roman"
       ],
       "type": "historic"
     },
@@ -2286,6 +2344,23 @@
     },
     {
       "date": "01.01.0123",
+      "description": "Quintus Caecilius Metellus conquered the island, exterminating the pirates. The cities of Palma and Pollentia (modern Alcudia) were founded. The Romans brought olives and grapes to the island and gradually replaced the Talaiotic culture that originally existed on the island.",
+      "description_ru": "Квинт Цецилий Метелл завоевал остров, истребив пиратов. Были основаны города Пальма и Полленция (современная Алькудия). Римляне привезли на остров оливы и виноград, и постепенно заместили изначально существовавшую на острове талайотскую культуру",
+      "era": "BC",
+      "latitude": 39.58029027,
+      "longitude": 2.64358521,
+      "name": "The capture of Mallorca by Rome",
+      "name_ru": "Захват Майорки Римом",
+      "tags": [
+        "Roman",
+        "Conquest",
+        "Expansion",
+        "Piracy"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0123",
       "description": "Gaius Gracchus, brother of Tiberius, becomes tribune and enacts sweeping reforms: subsidized grain for Romans, jury reform to break senatorial corruption, road building, and colonial foundations. After two terms, he is declared a public enemy and killed with 3,000 supporters.",
       "description_ru": "Гай Гракх, брат Тиберия, становится трибуном и проводит еще более радикальные реформы, чем брат: субсидированное зерно для римлян, судебная реформа для борьбы с сенаторской коррупцией, строительство дорог и основание колоний. Его работа подрывала влияние Сената и аристократии. После двух сроков Гая и тысячи его последователей объявили врагами государства и стали их убивать без суда.",
       "era": "BC",
@@ -2331,18 +2406,18 @@
       "description": "The Temple of Hercules Victor is erected at the Forum Boarium, the oldest surviving marble building in Rome. Its circular design with 20 Corinthian columns shows strong Greek influence. Dedicated to Hercules, patron of merchants and olive oil traders, it stands near the ancient cattle market.",
       "description_ru": "Храм Геркулеса Победителя возведён на Бычьем форуме — старейшее сохранившееся мраморное здание в Риме. Его круглый план с 20 коринфскими колоннами демонстрирует сильное греческое влияние. Посвящённый Геркулесу, покровителю торговцев и продавцов оливкового масла, он стоит близ древнего скотного рынка.",
       "era": "BC",
-      "latitude": 41.8886,
-      "longitude": 12.4815,
+      "latitude": 41.88872054,
+      "longitude": 12.48075306,
       "name": "Temple of Hercules Victor",
       "name_ru": "Храм Геркулеса Победителя",
       "source": "https://en.wikipedia.org/wiki/Temple_of_Hercules_Victor",
       "tags": [
-        "Roman",
-        "Temple",
-        "Religious",
-        "Architecture",
+        "Trade",
         "Greek",
-        "Trade"
+        "Architecture",
+        "Religious",
+        "Temple",
+        "Roman"
       ],
       "type": "religious"
     },
@@ -2466,43 +2541,43 @@
     },
     {
       "date": "01.01.0100",
+      "description": "The scorpio becomes a standard Roman precision weapon — a smaller ballista operated by 1-2 men, accurate at 100 meters and deadly at 400 meters parabolic fire. Each legion deploys 60 scorpiones, one per century. Caesar praises its 'terrifying precision' at the siege of Avaricum. It serves as ancient Rome's 'sniper rifle.'",
+      "description_ru": "Скорпион, унаследованный от греков, становится стандартом дальнего боя в армии Рима — уменьшенная баллиста под управлением 1-2 человек, точная на 100 метров и смертельная на 400 метрах навесного огня. Каждый легион имеет 60 скорпионов, по одному на центурию. Это античная 'снайперская винтовка' Рима.",
+      "era": "BC",
+      "latitude": 41.89931442,
+      "longitude": 12.47670293,
+      "name": "Scorpio Precision Artillery",
+      "name_ru": "Скорпионы на вооружении Рима",
+      "source": "https://en.wikipedia.org/wiki/Scorpio_(weapon)",
+      "tags": [
+        "Greek",
+        "Roman",
+        "Engineering ⚙️",
+        "Innovation",
+        "Tactics",
+        "War",
+        "Siege"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0100",
       "description": "The Temple of Portunus is built at the Forum Boarium near the Tiber, dedicated to Portunus, god of keys, doors, and harbors. Its elegant Ionic columns and exceptional preservation make it one of the best-surviving examples of Republican temple architecture. Later converted to a church, which saved it from destruction.",
       "description_ru": "Храм Портуна построен на Бычьем форуме близ Тибра, посвящённый Портуну, богу ключей, дверей и гаваней. Его элегантные ионические колонны и исключительная сохранность делают его одним из лучших примеров республиканской храмовой архитектуры. Позже обращён в церковь, что спасло его от разрушения.",
       "era": "BC",
-      "latitude": 41.8891,
-      "longitude": 12.4805,
+      "latitude": 41.88922771,
+      "longitude": 12.48090863,
       "name": "Temple of Portunus",
       "name_ru": "Храм Портуна",
       "source": "https://en.wikipedia.org/wiki/Temple_of_Portunus",
       "tags": [
+        "Architecture",
         "Roman",
         "Temple",
         "Religious",
-        "Architecture",
         "Trade"
       ],
       "type": "religious"
-    },
-    {
-      "date": "01.01.0100",
-      "description": "The scorpio (scorpion) becomes a standard Roman precision weapon — a smaller ballista operated by 1-2 men, accurate at 100 meters and deadly at 400 meters parabolic fire. Each legion deploys 60 scorpiones, one per century. Caesar praises its 'terrifying precision' at the siege of Avaricum. It serves as ancient Rome's 'sniper rifle.'",
-      "description_ru": "Скорпион становится стандартным римским прецизионным оружием — уменьшенная баллиста под управлением 1-2 человек, точная на 100 метров и смертельная на 400 метрах навесного огня. Каждый легион развёртывает 60 скорпионов, по одному на центурию. Цезарь хвалит её 'ужасающую точность' при осаде Аварика. Это античная 'снайперская винтовка' Рима.",
-      "era": "BC",
-      "latitude": 47.0833,
-      "longitude": 2.4,
-      "name": "Scorpio Precision Artillery",
-      "name_ru": "Скорпион — точное оружие",
-      "source": "https://en.wikipedia.org/wiki/Scorpio_(weapon)",
-      "tags": [
-        "Roman",
-        "Military",
-        "Innovation",
-        "War",
-        "Siege",
-        "Engineering ⚙️",
-        "Tactics"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0091",
@@ -2698,17 +2773,36 @@
       "description": "Consul Quintus Lutatius Catulus builds the Tabularium on the slope of the Capitoline Hill overlooking the Forum. This massive state archive housed Rome's official records, laws, and treaties inscribed on bronze tablets (tabulae). Its arcaded facade with engaged Doric columns became iconic.",
       "description_ru": "Консул Квинт Лутаций Катул строит Табулярий на склоне Капитолийского холма с видом на Форум. Этот массивный государственный архив хранил официальные записи Рима, законы и договоры, выгравированные на бронзовых табличках (tabulae). Его аркадный фасад с полуколоннами дорического ордера стал знаковым.",
       "era": "BC",
-      "latitude": 41.8933,
-      "longitude": 12.4825,
+      "latitude": 41.89285767,
+      "longitude": 12.48382151,
       "name": "Tabularium State Archives",
       "name_ru": "Табулярий — государственный архив",
       "source": "https://en.wikipedia.org/wiki/Tabularium",
       "tags": [
-        "Roman",
         "Architecture",
-        "Administration",
         "Archives",
-        "Forum"
+        "Administration",
+        "Roman",
+        "Building 🏠"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.05.0075",
+      "description": "Cicero served as a quaestor in Sicily. He set out to find the scholar's grave, which the Syracusans themselves had already forgotten. He found it in an abandoned cemetery near the Achnadin Gate, overgrown with thorns. The tombstone was carved with a sphere inscribed within a cylinder—this was Archimedes's greatest scientific achievement, one of which he was proud. Cicero ordered to clear the grave.",
+      "description_ru": "Цицерон работал квестором в Сицилии. Он задался целью найти могилу ученого, о которой сами сиракузяне уже забыли - и нашел её на заброшенном кладбище у Ахнадинских ворот, заросшую колючками. На надгробии был высечен шар, вписанный в цилиндр — это было главным научным достижением, которым гордился сам Архимед. Цицерон распорядился расчистить могилу. ",
+      "era": "BC",
+      "latitude": 37.07399022,
+      "longitude": 15.27904809,
+      "name": "Cicero searches for Archimedes' tomb",
+      "name_ru": "Цицерон ищет могилу Архимеда",
+      "tags": [
+        "Roman",
+        "Greek",
+        "Tomb",
+        "Cicero 👤",
+        "Archimedes 👤",
+        "Sicily"
       ],
       "type": "historic"
     },
@@ -2877,17 +2971,16 @@
       "description": "Curator viarum Lucius Fabricius builds the Pons Fabricius connecting the Campus Martius to Tiber Island. Constructed of travertine and volcanic tuff with four arches, it is the oldest Roman bridge surviving in its original state. Inscriptions on both sides record Fabricius's name and the bridge's construction.",
       "description_ru": "Куратор дорог Луций Фабриций строит мост Фабриция, соединяющий Марсово поле с островом Тиберина. Построенный из травертина и вулканического туфа с четырьмя арками, это старейший римский мост, сохранившийся в первоначальном виде. Надписи с обеих сторон сохраняют имя Фабриция и дату строительства.",
       "era": "BC",
-      "latitude": 41.8903,
-      "longitude": 12.4778,
-      "name": "Pons Fabricius - Oldest Intact Bridge",
-      "name_ru": "Мост Фабриция — старейший сохранившийся мост",
+      "latitude": 41.89106069,
+      "longitude": 12.47823179,
+      "name": "Pons Fabricius",
+      "name_ru": "Построен мост Фабриция",
       "source": "https://en.wikipedia.org/wiki/Pons_Fabricius",
       "tags": [
-        "Roman",
-        "Bridge",
-        "Engineering ⚙️",
         "Infrastructure",
-        "Architecture"
+        "Roman",
+        "Architecture",
+        "Engineering ⚙️"
       ],
       "type": "historic"
     },
@@ -3144,6 +3237,27 @@
     },
     {
       "date": "01.01.0052",
+      "description": "Clodius is murdered by Milo's gang on the Via Appia. Pompey is appointed sole consul — unprecedented — to restore order, marking his drift from Caesar toward the Senate.",
+      "description_ru": "Клодий убит бандой Милона на Аппиевой дороге. Помпей назначен единственным консулом для восстановления порядка (в республике никогда не было одного консула). Помпей и Цезарь оказались по разные стороны баррикад",
+      "era": "BC",
+      "latitude": 41.85,
+      "longitude": 12.5,
+      "name": "Murder of Clodius",
+      "name_ru": "Убийство трибуна Клодия",
+      "source": "https://en.wikipedia.org/wiki/Publius_Clodius_Pulcher",
+      "tags": [
+        "Murder",
+        "Roman",
+        "Pompey the Great 👤",
+        "Crisis",
+        "Political",
+        "Death",
+        "Claudii"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0052",
       "description": "The Gallic chieftain Vercingetorix unites the tribes in a massive revolt against Rome. After initial successes, he is besieged at Alesia where Caesar builds two rings of fortifications — one facing in, one facing out against a relief army of 250,000. Vercingetorix surrenders and is later executed in Rome.",
       "description_ru": "Галльский вождь Верцингеториг объединяет племена в массовом восстании против Рима. После первоначальных успехов он осаждён в Алезии, где Цезарь строит два кольца укреплений — одно внутрь, одно наружу против галльской армии поддержки. Верцингеториг сдаётся и позже казнён в Риме.",
       "era": "BC",
@@ -3162,27 +3276,6 @@
         "War"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0052",
-      "description": "Clodius is murdered by Milo's gang on the Via Appia. Pompey is appointed sole consul — unprecedented — to restore order, marking his drift from Caesar toward the Senate.",
-      "description_ru": "Клодий убит бандой Милона на Аппиевой дороге. Помпей назначен единственным консулом для восстановления порядка (в республике никогда не было одного консула). Помпей и Цезарь оказались по разные стороны баррикад",
-      "era": "BC",
-      "latitude": 41.85,
-      "longitude": 12.5,
-      "name": "Murder of Clodius",
-      "name_ru": "Убийство трибуна Клодия",
-      "source": "https://en.wikipedia.org/wiki/Publius_Clodius_Pulcher",
-      "tags": [
-        "Political",
-        "Death",
-        "Claudii",
-        "Murder",
-        "Roman",
-        "Pompey the Great 👤",
-        "Crisis"
-      ],
-      "type": "political"
     },
     {
       "date": "01.07.0050",
@@ -3217,27 +3310,6 @@
         "Bribe"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0050",
-      "description": "The testudo ('tortoise') formation becomes a refined Roman tactic for siege operations. Soldiers interlock their large scuta shields to form a protective shell — front rank vertical, inner ranks overhead like roof tiles. This 'human tank' allows troops to advance under heavy missile fire toward fortifications. The formation requires exceptional discipline and drilling.",
-      "description_ru": "Построение 'черепаха' (testudo) становится отточенной римской тактикой для осадных операций. Солдаты смыкают большие щиты скутумы, образуя защитный панцирь — передний ряд вертикально, внутренние ряды над головой как черепица. Этот 'человеческий танк' позволяет войскам наступать под сильным обстрелом к укреплениям. Построение требует исключительной дисциплины и муштры.",
-      "era": "BC",
-      "latitude": 46.2,
-      "longitude": 4.6,
-      "name": "Testudo Formation Tactics",
-      "name_ru": "Тактика построения 'черепаха'",
-      "source": "https://en.wikipedia.org/wiki/Testudo_formation",
-      "tags": [
-        "Roman",
-        "Military",
-        "Innovation",
-        "Tactics",
-        "War",
-        "Siege",
-        "Discipline"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.08.0049",

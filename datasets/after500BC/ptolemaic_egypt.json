@@ -106,24 +106,22 @@
     },
     {
       "date": "01.01.0300",
-      "description": "Foundation of the Library of Alexandria begins under Ptolemy I; advised by Demetrius of Phalerum, the king creates an institution that will become the greatest repository of knowledge in the ancient world",
-      "description_ru": "Начинается строительство Александрийской библиотеки; по совету Деметрия Фалерского Птолемей создаёт учреждение, которое станет величайшим хранилищем знаний древнего мира",
+      "description": "Alexander's body is moved from Memphis to Alexandria and placed in a magnificent mausoleum called the Soma; the tomb becomes a pilgrimage site visited by Roman emperors for centuries",
+      "description_ru": "Тело Александра перемещено из Мемфиса в Александрию и помещено в великолепный мавзолей, называемый Сома; гробница становится местом паломничества, которое посещают римские императоры на протяжении веков",
       "era": "BC",
       "latitude": 31.2,
       "longitude": 29.9,
-      "name": "Foundation of the Library of Alexandria",
-      "name_ru": "Основание Александрийской библиотеки",
-      "source": "https://en.wikipedia.org/wiki/Library_of_Alexandria",
+      "name": "Alexander's Tomb Moved to Alexandria",
+      "name_ru": "Мавзолей Александра",
+      "source": "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great",
       "tags": [
-        "Library",
-        "Ancient Wonders",
-        "Egypt",
         "Greek",
-        "Science",
         "Ptolemaic",
-        "Culture"
+        "Tomb",
+        "Alexander the Great 👤",
+        "Egypt"
       ],
-      "type": "cultural"
+      "type": "historic"
     },
     {
       "date": "01.01.0300",
@@ -147,22 +145,24 @@
     },
     {
       "date": "01.01.0300",
-      "description": "Alexander's body is moved from Memphis to Alexandria and placed in a magnificent mausoleum called the Soma; the tomb becomes a pilgrimage site visited by Roman emperors for centuries",
-      "description_ru": "Тело Александра перемещено из Мемфиса в Александрию и помещено в великолепный мавзолей, называемый Сома; гробница становится местом паломничества, которое посещают римские императоры на протяжении веков",
+      "description": "Foundation of the Library of Alexandria begins under Ptolemy I; advised by Demetrius of Phalerum, the king creates an institution that will become the greatest repository of knowledge in the ancient world",
+      "description_ru": "Начинается строительство Александрийской библиотеки; по совету Деметрия Фалерского Птолемей создаёт учреждение, которое станет величайшим хранилищем знаний древнего мира",
       "era": "BC",
       "latitude": 31.2,
       "longitude": 29.9,
-      "name": "Alexander's Tomb Moved to Alexandria",
-      "name_ru": "Мавзолей Александра",
-      "source": "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great",
+      "name": "Foundation of the Library of Alexandria",
+      "name_ru": "Основание Александрийской библиотеки",
+      "source": "https://en.wikipedia.org/wiki/Library_of_Alexandria",
       "tags": [
+        "Library",
+        "Ancient Wonders",
+        "Egypt",
         "Greek",
+        "Science",
         "Ptolemaic",
-        "Tomb",
-        "Alexander the Great 👤",
-        "Egypt"
+        "Culture"
       ],
-      "type": "historic"
+      "type": "cultural"
     },
     {
       "date": "01.01.0297",
@@ -362,6 +362,27 @@
     },
     {
       "date": "01.01.0260",
+      "description": "Archimedes from Syracuse comes to Alexandria to study and corresponds with Eratosthenes and Conon of Samos. Legend says that he invented the 'Archimedes screw' in Egypt, observing the flooding of the Nile and the hard work of peasants.",
+      "description_ru": "Архимед из Сиракуз приезжает в Александрию, чтобы учиться, ведет переписку с Эратосфеном и Кононом Самосским. Легенда гласит, что 'Архимедов винт' он придумал именно в Египте, наблюдая за разливами Нила и тяжелым крестьянским трудом ",
+      "era": "BC",
+      "latitude": 31.2,
+      "longitude": 29.9,
+      "name": "Archimedes studies in Alexandria",
+      "name_ru": "Архимед учится в Александрии",
+      "tags": [
+        "Egypt",
+        "Ptolemaic",
+        "Archimedes 👤",
+        "Education",
+        "Science",
+        "Engineering ⚙️",
+        "Water",
+        "Legend"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.0260",
       "description": "Herophilos and Erasistratus conduct pioneering anatomical research at Alexandria, performing the first systematic dissections of human bodies; they discover the nervous system, name the duodenum, and distinguish arteries from veins",
       "description_ru": "Герофил и Эрасистрат проводят пионерские анатомические исследования в Александрии, выполняя первые систематические вскрытия человеческих тел; они открывают нервную систему, дают название двенадцатиперстной кишке, различают артерии и вены",
       "era": "BC",
@@ -440,25 +461,6 @@
     },
     {
       "date": "01.01.0240",
-      "description": "Eratosthenes of Cyrene becomes chief librarian of the Library of Alexandria; he will calculate the Earth's circumference with remarkable accuracy using shadows and geometry",
-      "description_ru": "Эратосфен Киренский становится главным библиотекарем Александрийской библиотеки; он вычислит окружность Земли с замечательной точностью, используя тени и геометрию",
-      "era": "BC",
-      "latitude": 31.2,
-      "longitude": 29.9,
-      "name": "Eratosthenes Becomes Chief Librarian",
-      "name_ru": "Эратосфен становится главным библиотекарем",
-      "source": "https://en.wikipedia.org/wiki/Eratosthenes",
-      "tags": [
-        "Library",
-        "Ptolemaic",
-        "Science",
-        "Greek",
-        "Egypt"
-      ],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.0240",
       "description": "Eratosthenes calculates Earth's circumference at approximately 40,000 km (actual: 40,075 km) by comparing shadow angles at Alexandria and Syene; this is one of the greatest scientific achievements of antiquity",
       "description_ru": "Эратосфен вычисляет окружность Земли примерно в 40 000 км (фактически: 40 075 км), сравнивая углы теней в Александрии и Сиене; это одно из величайших научных достижений античности",
       "era": "BC",
@@ -474,6 +476,25 @@
         "Geography",
         "Science",
         "Ptolemaic"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.0240",
+      "description": "Eratosthenes of Cyrene becomes chief librarian of the Library of Alexandria; he will calculate the Earth's circumference with remarkable accuracy using shadows and geometry",
+      "description_ru": "Эратосфен Киренский становится главным библиотекарем Александрийской библиотеки; он вычислит окружность Земли с замечательной точностью, используя тени и геометрию",
+      "era": "BC",
+      "latitude": 31.2,
+      "longitude": 29.9,
+      "name": "Eratosthenes Becomes Chief Librarian",
+      "name_ru": "Эратосфен становится главным библиотекарем",
+      "source": "https://en.wikipedia.org/wiki/Eratosthenes",
+      "tags": [
+        "Library",
+        "Ptolemaic",
+        "Science",
+        "Greek",
+        "Egypt"
       ],
       "type": "scientific"
     },
@@ -717,6 +738,25 @@
     },
     {
       "date": "01.01.0150",
+      "description": "Aristarchus of Samos's heliocentric theory is preserved by Alexandrian scholars; though not widely accepted, this revolutionary concept that Earth orbits the Sun influences later astronomers",
+      "description_ru": "Гелиоцентрическая теория Аристарха Самосского записана александрийскими учёными; хотя и не получившая широкого признания, эта революционная концепция о том, что Земля вращается вокруг Солнца, влияет на более поздних астрономов",
+      "era": "BC",
+      "latitude": 31.2,
+      "longitude": 29.9,
+      "name": "Heliocentric Theory Preserved in Alexandria",
+      "name_ru": "Первая теория гелиоцентризма",
+      "source": "https://en.wikipedia.org/wiki/Aristarchus_of_Samos",
+      "tags": [
+        "Ptolemaic",
+        "Science",
+        "Astronomy",
+        "Greek",
+        "Egypt"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.0150",
       "description": "Hipparchus of Nicaea creates the first comprehensive star catalog at Alexandria, recording the positions of over 850 stars; he discovers the precession of equinoxes and develops trigonometry",
       "description_ru": "Гиппарх Никейский создаёт первый всеобъемлющий звёздный каталог в Александрии, фиксируя положения более 850 звёзд; он открывает прецессию равноденствий и развивает тригонометрию",
       "era": "BC",
@@ -730,25 +770,6 @@
         "Science",
         "Astronomy",
         "Mathematics",
-        "Greek",
-        "Egypt"
-      ],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.0150",
-      "description": "Aristarchus of Samos's heliocentric theory is preserved by Alexandrian scholars; though not widely accepted, this revolutionary concept that Earth orbits the Sun influences later astronomers",
-      "description_ru": "Гелиоцентрическая теория Аристарха Самосского записана александрийскими учёными; хотя и не получившая широкого признания, эта революционная концепция о том, что Земля вращается вокруг Солнца, влияет на более поздних астрономов",
-      "era": "BC",
-      "latitude": 31.2,
-      "longitude": 29.9,
-      "name": "Heliocentric Theory Preserved in Alexandria",
-      "name_ru": "Первая теория гелиоцентризма",
-      "source": "https://en.wikipedia.org/wiki/Aristarchus_of_Samos",
-      "tags": [
-        "Ptolemaic",
-        "Science",
-        "Astronomy",
         "Greek",
         "Egypt"
       ],

@@ -97,25 +97,6 @@
     },
     {
       "date": "01.01.1100",
-      "description": "Phoenicians from Tyre establish Gadir (Cadiz) on Atlantic coast of Spain, creating westernmost Phoenician colony and crucial gateway beyond Mediterranean",
-      "description_ru": "Финикийцы из Тира основывают Гадир (Кадис) на атлантическом побережье Испании, создавая самую западную финикийскую колонию и важные ворота за пределы Средиземноморья",
-      "era": "BC",
-      "latitude": 36.527,
-      "longitude": -6.289,
-      "name": "Founding of Cadiz",
-      "name_ru": "Основание финикийцами Кадиса",
-      "source": "https://phoenician.org/phoenician_colonies/",
-      "tags": [
-        "Colonization",
-        "Tyre",
-        "Maritime",
-        "City",
-        "Phoenician"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1100",
       "description": "Phoenicians establish colony of Kition on Cyprus to secure access to rich copper deposits, founding major Mediterranean mining center",
       "description_ru": "Финикийцы основывают колонию Китион на Кипре для доступа к богатым медным месторождениям",
       "era": "BC",
@@ -149,6 +130,25 @@
         "City",
         "Phoenician",
         "Carthage"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1100",
+      "description": "Phoenicians from Tyre establish Gadir (Cadiz) on Atlantic coast of Spain, creating westernmost Phoenician colony and crucial gateway beyond Mediterranean",
+      "description_ru": "Финикийцы из Тира основывают Гадир (Кадис) на атлантическом побережье Испании, создавая самую западную финикийскую колонию и важные ворота за пределы Средиземноморья",
+      "era": "BC",
+      "latitude": 36.527,
+      "longitude": -6.289,
+      "name": "Founding of Cadiz",
+      "name_ru": "Основание финикийцами Кадиса",
+      "source": "https://phoenician.org/phoenician_colonies/",
+      "tags": [
+        "Colonization",
+        "Tyre",
+        "Maritime",
+        "City",
+        "Phoenician"
       ],
       "type": "historic"
     },
@@ -576,25 +576,6 @@
     },
     {
       "date": "01.01.0450",
-      "description": "Carthaginian navigator Hanno the Navigator sails beyond Gibraltar along African coast, establishing colonies and documenting unprecedented exploration",
-      "description_ru": "Карфагенский мореплаватель Ганнон Мореплаватель плывет за Гибралтар вдоль африканского побережья, основывая колонии и документируя беспрецедентное исследование",
-      "era": "BC",
-      "latitude": 33.573,
-      "longitude": -7.589,
-      "name": "Hanno's Voyage to West Africa",
-      "name_ru": "Плавание Ганнона в Западную Африку",
-      "source": "https://phoenician.org/carthage_hannibal_barca/",
-      "tags": [
-        "Carthage",
-        "Exploration",
-        "Maritime",
-        "Colonization",
-        "Expedition"
-      ],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.0450",
       "description": "Greek historian Herodotus visits Tyre and records from temple priests that city was founded circa 2750 BC, documenting Phoenician historical traditions",
       "description_ru": "Греческий историк Геродот посещает Тир и записывает со слов храмовых жрецов, что город основан около 2750 г. до н.э., документируя финикийские исторические традиции",
       "era": "BC",
@@ -612,6 +593,25 @@
         "Greek"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.0450",
+      "description": "Carthaginian navigator Hanno the Navigator sails beyond Gibraltar along African coast, establishing colonies and documenting unprecedented exploration",
+      "description_ru": "Карфагенский мореплаватель Ганнон Мореплаватель плывет за Гибралтар вдоль африканского побережья, основывая колонии и документируя беспрецедентное исследование",
+      "era": "BC",
+      "latitude": 33.573,
+      "longitude": -7.589,
+      "name": "Hanno's Voyage to West Africa",
+      "name_ru": "Плавание Ганнона в Западную Африку",
+      "source": "https://phoenician.org/carthage_hannibal_barca/",
+      "tags": [
+        "Carthage",
+        "Exploration",
+        "Maritime",
+        "Colonization",
+        "Expedition"
+      ],
+      "type": "scientific"
     },
     {
       "date": "01.01.0397",
@@ -791,9 +791,9 @@
       "type": "historic"
     },
     {
-      "date": "01.01.0280",
-      "description": "Greek general Pyrrhus campaigns in Sicily against Carthaginian forces, temporarily seizing most Punic-held cities before withdrawing to Italy",
-      "description_ru": "Греческий полководец Пирр ведет кампанию в Сицилии против карфагенских сил, временно захватив большинство пунических городов, прежде чем отступить в Италию",
+      "date": "01.01.0278",
+      "description": "The Greek general Pyrrhus wages a campaign in Sicily against Carthaginian forces, temporarily capturing most of the Punic cities. However, his plan to consolidate his position in wealthy Sicily and establish a base for an attack on Rome fails. Pyrrhus leave Sicily after 3 years, reportedly saying 'What a wrestling ground we are leaving for Rome and Carthage!'",
+      "description_ru": "Греческий полководец Пирр ведет кампанию в Сицилии против карфагенских сил, временно захватив большинство пунических городов. Однако его план - закрепиться в богатой Сицилии и создать базу для наступления на Рим - не оправдался. Пирр уходит с Сицилии, по преданию говоря: 'Какое поле для борьбы мы оставляем Риму и Карфагену!'.",
       "era": "BC",
       "latitude": 37.5,
       "longitude": 14,
@@ -801,11 +801,11 @@
       "name_ru": "Кампании Пирра против Карфагена",
       "source": "https://www.britannica.com/biography/Pyrrhus-king-of-Epirus",
       "tags": [
-        "Sicily",
-        "Carthage",
-        "Invasions",
-        "War",
         "Greek",
+        "Invasions",
+        "Carthage",
+        "Sicily",
+        "War",
         "Pyrrhus 👤"
       ],
       "type": "military"
@@ -917,19 +917,19 @@
       "description": "Battle of Trebia: Hannibal's forces destroy Roman army in snowy winter battle, demonstrating superior Carthaginian tactical skill",
       "description_ru": "Битва при Требии: силы Ганнибала уничтожают римскую армию в снежной зимней битве, демонстрируя превосходное карфагенское тактическое мастерство",
       "era": "BC",
-      "latitude": 44.984,
-      "longitude": 9.547,
+      "latitude": 44.97603165,
+      "longitude": 9.58097935,
       "name": "Battle of Trebia",
       "name_ru": "Битва при Требии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Trebia",
       "tags": [
+        "Carthage",
         "Hannibal 👤",
+        "Punic",
+        "War",
         "Roman",
         "Battle",
-        "Carthage",
-        "Second",
-        "Punic",
-        "War"
+        "Second"
       ],
       "type": "military"
     },
@@ -938,26 +938,26 @@
       "description": "Hannibal's army defeats Romans at Battle of Ticinus, first engagement of Second Punic War on Italian soil, forcing Roman retreat",
       "description_ru": "Армия Ганнибала побеждает римлян в битве при Тицине, первом сражении Второй Пунической войны на итальянской земле, вынудив римлян отступить",
       "era": "BC",
-      "latitude": 45.183,
-      "longitude": 9.158,
+      "latitude": 45.20985927,
+      "longitude": 9.09513474,
       "name": "Battle of Ticinus",
       "name_ru": "Битва при Тицине",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_the_Trebia",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Ticinus",
       "tags": [
-        "Punic",
         "Roman",
-        "Carthage",
-        "Hannibal 👤",
         "Battle",
+        "Carthage",
+        "War",
+        "Hannibal 👤",
         "Second",
-        "War"
+        "Punic"
       ],
       "type": "military"
     },
     {
       "date": "01.09.0218",
       "description": "Hannibal achieves impossible by crossing Alps with elephants, arriving in Italy with 20,000 infantry and 6,000 cavalry after brutal mountain passage",
-      "description_ru": "Ганнибал совершает невозможное, пересекая Альпы со слонами, прибывая в Италию с 20 000 пехотинцев и 6000 всадников после жестокого горного перехода",
+      "description_ru": "Ганнибал совершает невозможное, пересекая Альпы со слонами, прибывая в Италию с 20 000 пехотинцев и 6000 всадников после жестокого горного перехода. Его прибытие с гор для Рима было совершенно неожиданным ходом",
       "era": "BC",
       "latitude": 45.833,
       "longitude": 6.865,
@@ -965,11 +965,11 @@
       "name_ru": "Ганнибал переходит Альпы",
       "source": "https://en.wikipedia.org/wiki/Hannibal%27s_crossing_of_the_Alps",
       "tags": [
+        "Second",
         "Barcid",
         "Hannibal 👤",
-        "Carthage",
-        "Second",
         "Punic",
+        "Carthage",
         "War"
       ],
       "type": "military"
@@ -1037,6 +1037,91 @@
         "Second",
         "Punic",
         "War"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0215",
+      "description": "Hieron II, the tyrant of Syracuse, close to Rome, dies. His grandson, 15-year-old Hieronymus, ascends the throne. Believing that Rome is doomed after its terrible defeat at Cannae, he breaks the alliance with Rome and defects to Carthage.",
+      "description_ru": "Близкий Риму тиран Сиракуз Гиерон II умирает. Трон занимает его внук — 15-летний Иероним. Он думает, что Рим после страшного поражения от Ганнибала при Каннах обречен, рвет союз с Римом и переходит на сторону Карфагена.",
+      "era": "BC",
+      "latitude": 37.0755,
+      "longitude": 15.2866,
+      "name": "Syracuse supports Carthage",
+      "name_ru": "Сиракузы поддерживают Карфаген",
+      "tags": [
+        "Roman",
+        "Carthage",
+        "Punic",
+        "War",
+        "Second",
+        "Greek",
+        "Overthrow"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.11.0214",
+      "description": "Marcellus led the Roman legions and navy to besiege Syracuse, planning to do so in a couple of days. Syracuse's side was assisted by the genius of Archimedes, who prepared ballistas, catapults, scorpions, and engineering devices (Archimedes' claws) to combat the invasion. The siege lasted for two years.",
+      "description_ru": "Марцелл приводит Римские легионы и флот на осаду Сиракуз, планируя управиться за пару дней. На стороне Сиракуз сыграл гений Архимеда, который подготовил баллисты, катапульты, скорпионы и инженерные устройства (когти Архимеда) к борьбе с вторжением. Осада затянулась на 2 года",
+      "era": "BC",
+      "latitude": 37.0755,
+      "longitude": 15.2866,
+      "name": "Siege of Syracuse",
+      "name_ru": "Рим осаждает Сиракузы",
+      "source": "https://en.wikipedia.org/wiki/Siege_of_Syracuse_(213%E2%80%93212_BC)",
+      "tags": [
+        "Greek",
+        "Roman",
+        "Carthage",
+        "War",
+        "Siege",
+        "Second",
+        "Punic",
+        "Archimedes 👤",
+        "Engineering ⚙️"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0214",
+      "description": "Conspirators seeking to restore peace with Rome assassinate the 16-year-old tyrant of Syracuse, Hieronymus, as he and his army set out to war against Rome. At the same time, Hannibal sends his brothers to Syracuse, who stir up fear in the city of a Roman invasion and bribe the army. The Roman ambassador's harshness only confirms that it is necessary to remain on Carthage's side.",
+      "description_ru": "Заговорщики, стремящиеся восстановить мир с Римом, убивают 16-летнего тирана Сиракуз Иеронима, когда он с войском выдвигается на войну с Римом. В это же время Ганнибал подсылает в Сиракузы своих братьев, которые разжигают в городе страх перед вторжением Рима и подкупают армию. Жесткость римского посла только подтверждает, что нужно остаться на стороне Карфагена. ",
+      "era": "BC",
+      "latitude": 37.2867,
+      "longitude": 14.9958,
+      "name": "The tyrant of Syracuse killed",
+      "name_ru": "Тиран Сиракуз убит заговорщиками",
+      "tags": [
+        "Greek",
+        "Roman",
+        "Carthage",
+        "War",
+        "Assassination",
+        "Second",
+        "Punic"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.05.0212",
+      "description": "Syracuse was captured because of human carelessness: during the festival of Artemis, the patroness of Syracuse, the guard at one of the towers dozed off. The Romans managed to capture this tower and advance into the city through it. According to legend, Marcellus wept when he gave the order to plunder the city at dawn - it was so beautiful. Archimedes was also killed in the confusion, despite orders to save him - the legionaries did not know who was in front of them.",
+      "description_ru": "Сиракузы захвачены благодаря человеческой беспечности - во время праздника Артемиды, покровительницы Сиракуз, караул одной из башен задремал. Римляне сумели захватить эту башню и через нее продвинуться в город. По легенде, Марцелл плакал, отдавая на рассвете приказ грабить город - так он был красив. Архимед тоже был убит в суматохе, несмотря на приказ сохранить его - легионеры не знали, кто перед ними.",
+      "era": "BC",
+      "latitude": 37.0755,
+      "longitude": 15.2866,
+      "name": "Romans capture Syracuse",
+      "name_ru": "Взятие Сиракуз Римом",
+      "tags": [
+        "Roman",
+        "Carthage",
+        "Greek",
+        "Siege",
+        "Punic",
+        "War",
+        "Second",
+        "Archimedes 👤",
+        "Legend"
       ],
       "type": "military"
     },
