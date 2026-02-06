@@ -490,8 +490,45 @@ func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
                 return
         }
 
+        validLensTypes := map[string]bool{
+                "historic":   true,
+                "political":  true,
+                "military":   true,
+                "cultural":   true,
+                "religious":  true,
+                "scientific": true,
+                "battle":     true,
+        }
+
         importedCount := 0
-        for _, eventData := range req.Events {
+        skippedEvents := []string{}
+        for i, eventData := range req.Events {
+                if eventData.Type == "" {
+                        eventName := eventData.NameEN
+                        if eventName == "" {
+                                eventName = eventData.Name
+                        }
+                        if eventName == "" {
+                                eventName = fmt.Sprintf("event #%d", i+1)
+                        }
+                        log.Printf("Skipping event '%s': missing required field 'type'", eventName)
+                        skippedEvents = append(skippedEvents, fmt.Sprintf("'%s': missing type", eventName))
+                        continue
+                }
+
+                if !validLensTypes[eventData.Type] {
+                        eventName := eventData.NameEN
+                        if eventName == "" {
+                                eventName = eventData.Name
+                        }
+                        if eventName == "" {
+                                eventName = fmt.Sprintf("event #%d", i+1)
+                        }
+                        log.Printf("Skipping event '%s': invalid type '%s' (valid: historic, political, military, cultural, religious, scientific, battle)", eventName, eventData.Type)
+                        skippedEvents = append(skippedEvents, fmt.Sprintf("'%s': invalid type '%s'", eventName, eventData.Type))
+                        continue
+                }
+
                 // Parse date with DD.MM.YYYY format
                 parsedDate, err := time.Parse("02.01.2006", eventData.Date)
                 if err != nil {
@@ -624,14 +661,19 @@ func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
                 log.Printf("Failed to update dataset event count: %v", err)
         }
 
-        response.Success(w, map[string]interface{}{
+        result := map[string]interface{}{
                 "success":        true,
                 "imported_count": importedCount,
                 "total_count":    len(req.Events),
                 "dataset_id":     createdDataset.ID,
                 "dataset_name":   createdDataset.Filename,
                 "message":        fmt.Sprintf("Successfully imported %d out of %d events", importedCount, len(req.Events)),
-        })
+        }
+        if len(skippedEvents) > 0 {
+                result["skipped_count"] = len(skippedEvents)
+                result["skipped_events"] = skippedEvents
+        }
+        response.Success(w, result)
 }
 
 // formatDisplayDate formats a date for display with era
