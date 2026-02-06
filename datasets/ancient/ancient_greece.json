@@ -330,13 +330,13 @@
     },
     {
       "date": "01.12.1208",
-      "description": "On their way to Greece, the Argonauts decided to dock at Crete to replenish their water supplies. But their path was blocked by Talos, a bronze giant created by Hephaestus. He circled the island three times a day, hurling enormous stones at the strangers. Medea's magic put the giant to sleep. He tripped, hit a sharp stone, injured his ankle, and fell.",
-      "description_ru": "На пути к Греции аргонавты решили причалить к Криту, чтобы пополнить запасы воды. Но путь им преградил Талос — бронзовый гигант, созданный Гефестом. Он обегал остров трижды в день и бросал в чужеземцев огромные камни. Колдовство Медеи усыпило великана. Он оступился, задел острый камень, травмировал лодыжку и упал.",
+      "description": "Jason presented the Golden Fleece to King Pelias. However, during Jason's absence, Pelias killed his father and brought his mother to his death. Medea took cruel revenge on Pelias: she convinced his daughters that if they cut their father into pieces and boiled them in a cauldron with magical herbs, he would become younger. King Pelias died. Jason and Medea were exiled from Iolcos and fled to Corinth.",
+      "description_ru": "Ясон вручил Золотое руно царю Пелию. Однако за время отсутствия Ясона Пелий убил его отца и довел до смерти мать. Медея жестоко отомстила Пелию: она убедила его дочерей, что если они разрежут отца на куски и сварят в котле с магическими травами, он помолодеет. Дочери так и поступили. Ясон и Медея в результате были изгнаны из Иолка и бежали в Коринф",
       "era": "BC",
-      "latitude": 34.99323909,
-      "longitude": 24.75024462,
-      "name": "The Argonauts defeat Talos",
-      "name_ru": "Аргонавты побеждают Талоса",
+      "latitude": 39.36702255,
+      "longitude": 22.93274224,
+      "name": "The end of the Argonauts' voyage",
+      "name_ru": "Завершение похода аргонавтов",
       "tags": [
         "Greek",
         "Legend",
@@ -346,13 +346,13 @@
     },
     {
       "date": "01.12.1208",
-      "description": "Jason presented the Golden Fleece to King Pelias. However, during Jason's absence, Pelias killed his father and brought his mother to his death. Medea took cruel revenge on Pelias: she convinced his daughters that if they cut their father into pieces and boiled them in a cauldron with magical herbs, he would become younger. King Pelias died. Jason and Medea were exiled from Iolcos and fled to Corinth.",
-      "description_ru": "Ясон вручил Золотое руно царю Пелию. Однако за время отсутствия Ясона Пелий убил его отца и довел до смерти мать. Медея жестоко отомстила Пелию: она убедила его дочерей, что если они разрежут отца на куски и сварят в котле с магическими травами, он помолодеет. Дочери так и поступили. Ясон и Медея в результате были изгнаны из Иолка и бежали в Коринф",
+      "description": "On their way to Greece, the Argonauts decided to dock at Crete to replenish their water supplies. But their path was blocked by Talos, a bronze giant created by Hephaestus. He circled the island three times a day, hurling enormous stones at the strangers. Medea's magic put the giant to sleep. He tripped, hit a sharp stone, injured his ankle, and fell.",
+      "description_ru": "На пути к Греции аргонавты решили причалить к Криту, чтобы пополнить запасы воды. Но путь им преградил Талос — бронзовый гигант, созданный Гефестом. Он обегал остров трижды в день и бросал в чужеземцев огромные камни. Колдовство Медеи усыпило великана. Он оступился, задел острый камень, травмировал лодыжку и упал.",
       "era": "BC",
-      "latitude": 39.36702255,
-      "longitude": 22.93274224,
-      "name": "The end of the Argonauts' voyage",
-      "name_ru": "Завершение похода аргонавтов",
+      "latitude": 34.99323909,
+      "longitude": 24.75024462,
+      "name": "The Argonauts defeat Talos",
+      "name_ru": "Аргонавты побеждают Талоса",
       "tags": [
         "Greek",
         "Legend",
@@ -673,20 +673,21 @@
     },
     {
       "date": "01.01.1100",
-      "description": "Dorian Greeks establish Sparta in Laconia valley after conquering earlier Achaean population; legendary founders Eurysthenes and Procles, twin sons of Aristodemus, become first Agiad and Eurypontid kings establishing dual monarchy",
-      "description_ru": "Дорийские греки, мигрирующие на Пелопоннес, основывают Спарту в долине Лаконии, покорив живших здесь ахейцев; легендарные основатели Еврисфен и Прокл, сыновья-близнецы Аристодема, становятся первыми царями династий Агиадов и Еврипонтидов, устанавливая в Спарте двойную монархию",
+      "description": "Smyrna founded by Aeolian colonists, later absorbed by neighboring Ionian Colophon around 688 BC; strategic location on gulf makes it major trade center; claims to be birthplace of Homer along with Chios",
+      "description_ru": "Смирна основана эолийскими колонистами, позже поглощена соседним ионийским Колофоном около 688 г. до н.э.; стратегическое положение на заливе делает ее крупным торговым центром; претендует на звание родины Гомера наряду с Хиосом",
       "era": "BC",
-      "latitude": 37.0764,
-      "longitude": 22.4294,
-      "name": "Foundation of Sparta",
-      "name_ru": "Основание дорийцами Спарты",
-      "source": "https://en.wikipedia.org/wiki/Sparta",
+      "latitude": 38.4192,
+      "longitude": 27.1287,
+      "name": "Foundation of Smyrna",
+      "name_ru": "Основание эолийцами Смирны",
+      "source": "https://en.wikipedia.org/wiki/Smyrna",
       "tags": [
-        "Dorian",
+        "Aeolic",
         "City",
         "Greek",
-        "Sparta",
-        "Migration"
+        "Trade",
+        "Colonization",
+        "Expansion"
       ],
       "type": "historic"
     },
@@ -711,38 +712,38 @@
     },
     {
       "date": "01.01.1100",
-      "description": "Smyrna founded by Aeolian colonists, later absorbed by neighboring Ionian Colophon around 688 BC; strategic location on gulf makes it major trade center; claims to be birthplace of Homer along with Chios",
-      "description_ru": "Смирна основана эолийскими колонистами, позже поглощена соседним ионийским Колофоном около 688 г. до н.э.; стратегическое положение на заливе делает ее крупным торговым центром; претендует на звание родины Гомера наряду с Хиосом",
+      "description": "Dorian Greeks establish Sparta in Laconia valley after conquering earlier Achaean population; legendary founders Eurysthenes and Procles, twin sons of Aristodemus, become first Agiad and Eurypontid kings establishing dual monarchy",
+      "description_ru": "Дорийские греки, мигрирующие на Пелопоннес, основывают Спарту в долине Лаконии, покорив живших здесь ахейцев; легендарные основатели Еврисфен и Прокл, сыновья-близнецы Аристодема, становятся первыми царями династий Агиадов и Еврипонтидов, устанавливая в Спарте двойную монархию",
       "era": "BC",
-      "latitude": 38.4192,
-      "longitude": 27.1287,
-      "name": "Foundation of Smyrna",
-      "name_ru": "Основание эолийцами Смирны",
-      "source": "https://en.wikipedia.org/wiki/Smyrna",
+      "latitude": 37.0764,
+      "longitude": 22.4294,
+      "name": "Foundation of Sparta",
+      "name_ru": "Основание дорийцами Спарты",
+      "source": "https://en.wikipedia.org/wiki/Sparta",
       "tags": [
-        "Aeolic",
+        "Dorian",
         "City",
         "Greek",
-        "Trade",
-        "Colonization",
-        "Expansion"
+        "Sparta",
+        "Migration"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.1050",
-      "description": "Colophon established by Ionian settlers in fertile valley near Aegean coast; famous for cavalry, luxury goods, and as homeland of poet Mimnermus; oracle of Apollo at nearby Claros gains Panhellenic reputation",
-      "description_ru": "Колофон основан ионийскими поселенцами в плодородной долине близ эгейского побережья; знаменит кавалерией, предметами роскоши и как родина поэта Мимнерма; оракул Аполлона в соседнем Кларосе обретает общегреческую известность",
+      "description": "Miletus founded by Ionian Greeks fleeing Dorian invasion; becomes preeminent city of Ionia with four harbors, establishing over 70 colonies around Black Sea and Mediterranean, birthplace of Greek philosophy and science",
+      "description_ru": "Милет основан ионийскими греками, бежавшими от дорийского вторжения; становится главным городом Ионии с четырьмя гаванями, основывает более 70 колоний вокруг Черного и Средиземного морей, родина греческой философии и науки",
       "era": "BC",
-      "latitude": 37.9921,
-      "longitude": 27.1936,
-      "name": "Foundation of Colophon",
-      "name_ru": "Основание ионийского Колофона",
-      "source": "https://en.wikipedia.org/wiki/Colophon_(city)",
+      "latitude": 37.5283,
+      "longitude": 27.2783,
+      "name": "Foundation of Miletus",
+      "name_ru": "Основание ионийцами Милета",
+      "source": "https://en.wikipedia.org/wiki/Miletus",
       "tags": [
         "Ionian",
         "City",
         "Greek",
+        "Migration",
         "Colonization",
         "Expansion"
       ],
@@ -809,19 +810,18 @@
     },
     {
       "date": "01.01.1050",
-      "description": "Miletus founded by Ionian Greeks fleeing Dorian invasion; becomes preeminent city of Ionia with four harbors, establishing over 70 colonies around Black Sea and Mediterranean, birthplace of Greek philosophy and science",
-      "description_ru": "Милет основан ионийскими греками, бежавшими от дорийского вторжения; становится главным городом Ионии с четырьмя гаванями, основывает более 70 колоний вокруг Черного и Средиземного морей, родина греческой философии и науки",
+      "description": "Colophon established by Ionian settlers in fertile valley near Aegean coast; famous for cavalry, luxury goods, and as homeland of poet Mimnermus; oracle of Apollo at nearby Claros gains Panhellenic reputation",
+      "description_ru": "Колофон основан ионийскими поселенцами в плодородной долине близ эгейского побережья; знаменит кавалерией, предметами роскоши и как родина поэта Мимнерма; оракул Аполлона в соседнем Кларосе обретает общегреческую известность",
       "era": "BC",
-      "latitude": 37.5283,
-      "longitude": 27.2783,
-      "name": "Foundation of Miletus",
-      "name_ru": "Основание ионийцами Милета",
-      "source": "https://en.wikipedia.org/wiki/Miletus",
+      "latitude": 37.9921,
+      "longitude": 27.1936,
+      "name": "Foundation of Colophon",
+      "name_ru": "Основание ионийского Колофона",
+      "source": "https://en.wikipedia.org/wiki/Colophon_(city)",
       "tags": [
         "Ionian",
         "City",
         "Greek",
-        "Migration",
         "Colonization",
         "Expansion"
       ],
@@ -906,26 +906,6 @@
     },
     {
       "date": "01.01.1000",
-      "description": "Ionians flee Dorian pressure and colonize central Aegean coast of Anatolia; twelve cities including Miletus, Ephesus and Phocaea form Ionian League, preserving Greek culture during Dark Ages",
-      "description_ru": "Ионийцы бегут от дорийского давления и колонизируют центральное побережье Эгейского моря в Анатолии; двенадцать городов, включая Милет, Эфес и Фокею, образуют Ионийский союз, сохраняя греческую культуру в темные века",
-      "era": "BC",
-      "latitude": 38.18,
-      "longitude": 26.7867,
-      "name": "Ionian League Formation",
-      "name_ru": "Образование ионийского союза",
-      "source": "https://en.wikipedia.org/wiki/Ionia",
-      "tags": [
-        "Colonization",
-        "Greek",
-        "Settlement",
-        "Ionian",
-        "Migration",
-        "Unification"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1000",
       "description": "Chios colonized by Ionians from Attica; island becomes wealthy from wine, mastic resin, and slave trade; claims to be birthplace of Homer and develops advanced democratic constitution by 6th century BC",
       "description_ru": "Остров Хиос колонизирован ионийцами из Аттики; остров богатеет, торгую вином, мастиковой смолой и рабами; Хиос также считается родиной Гомера",
       "era": "BC",
@@ -957,6 +937,26 @@
         "Greek",
         "Colonization",
         "Expansion"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1000",
+      "description": "Ionians flee Dorian pressure and colonize central Aegean coast of Anatolia; twelve cities including Miletus, Ephesus and Phocaea form Ionian League, preserving Greek culture during Dark Ages",
+      "description_ru": "Ионийцы бегут от дорийского давления и колонизируют центральное побережье Эгейского моря в Анатолии; двенадцать городов, включая Милет, Эфес и Фокею, образуют Ионийский союз, сохраняя греческую культуру в темные века",
+      "era": "BC",
+      "latitude": 38.18,
+      "longitude": 26.7867,
+      "name": "Ionian League Formation",
+      "name_ru": "Образование ионийского союза",
+      "source": "https://en.wikipedia.org/wiki/Ionia",
+      "tags": [
+        "Colonization",
+        "Greek",
+        "Settlement",
+        "Ionian",
+        "Migration",
+        "Unification"
       ],
       "type": "historic"
     },
@@ -1076,14 +1076,14 @@
     },
     {
       "date": "01.01.0760",
-      "description": "Eretria in Euboea reaches peak as major colonizing power; rivals neighboring Chalcis in Lelantine War for control of fertile Lelantine Plain; both cities found numerous colonies in Chalcidice, Italy, and Sicily",
-      "description_ru": "Эретрия на Эвбее растет как крупная колонизирующая держава; соперничает с соседним Халкисом в Лелантийской войне за контроль над плодородной Лелантийской равниной; оба города основывают многочисленные колонии в Халкидике, Италии и Сицилии",
+      "description": "Chalcis on Euboea leads Greek colonization alongside rival Eretria; founds colonies in Chalcidice peninsula (named after city), Sicily, and southern Italy; emerges victorious from Lelantine War with Thessalian cavalry support",
+      "description_ru": "Халкида на Эвбее возглавляет греческую колонизацию наряду с соперницей Эретрией; основывает колонии на полуострове Халкидики (названном в честь города), Сицилии и южной Италии; выходит победителем из Лелантийской войны при поддержке фессалийской кавалерии",
       "era": "BC",
-      "latitude": 38.395,
-      "longitude": 23.7867,
-      "name": "Eretria as Colonial Power",
-      "name_ru": "Эретрия как колониальная держава",
-      "source": "https://en.wikipedia.org/wiki/Eretria",
+      "latitude": 38.4628,
+      "longitude": 23.5947,
+      "name": "Chalcis as Colonial Power",
+      "name_ru": "Халкида как колониальная держава",
+      "source": "https://en.wikipedia.org/wiki/Chalcis",
       "tags": [
         "City",
         "Greek",
@@ -1094,14 +1094,14 @@
     },
     {
       "date": "01.01.0760",
-      "description": "Chalcis on Euboea leads Greek colonization alongside rival Eretria; founds colonies in Chalcidice peninsula (named after city), Sicily, and southern Italy; emerges victorious from Lelantine War with Thessalian cavalry support",
-      "description_ru": "Халкида на Эвбее возглавляет греческую колонизацию наряду с соперницей Эретрией; основывает колонии на полуострове Халкидики (названном в честь города), Сицилии и южной Италии; выходит победителем из Лелантийской войны при поддержке фессалийской кавалерии",
+      "description": "Eretria in Euboea reaches peak as major colonizing power; rivals neighboring Chalcis in Lelantine War for control of fertile Lelantine Plain; both cities found numerous colonies in Chalcidice, Italy, and Sicily",
+      "description_ru": "Эретрия на Эвбее растет как крупная колонизирующая держава; соперничает с соседним Халкисом в Лелантийской войне за контроль над плодородной Лелантийской равниной; оба города основывают многочисленные колонии в Халкидике, Италии и Сицилии",
       "era": "BC",
-      "latitude": 38.4628,
-      "longitude": 23.5947,
-      "name": "Chalcis as Colonial Power",
-      "name_ru": "Халкида как колониальная держава",
-      "source": "https://en.wikipedia.org/wiki/Chalcis",
+      "latitude": 38.395,
+      "longitude": 23.7867,
+      "name": "Eretria as Colonial Power",
+      "name_ru": "Эретрия как колониальная держава",
+      "source": "https://en.wikipedia.org/wiki/Eretria",
       "tags": [
         "City",
         "Greek",
@@ -1235,6 +1235,25 @@
     },
     {
       "date": "01.01.0730",
+      "description": "Poet Hesiod writes Theogony and Works and Days; Theogony systematizes Greek mythology with genealogy of gods, while Works and Days provides practical farming advice and moral instruction",
+      "description_ru": "Поэт Гесиод пишет Теогонию и Труды и дни; Теогония систематизирует греческую мифологию с генеалогией богов, в то время как Труды и дни дают практические советы по земледелию и нравственные наставления",
+      "era": "BC",
+      "latitude": 38.4,
+      "longitude": 23.1,
+      "name": "Hesiod's Theogony and Works",
+      "name_ru": "Теогония и Труды Гесиода",
+      "source": "https://en.wikipedia.org/wiki/Hesiod",
+      "tags": [
+        "Poetry",
+        "Greek",
+        "Culture",
+        "Literature",
+        "Religious"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0730",
       "description": "Chalcidians from Euboea found Zancle (later Messina) at site controlling Strait of Messina; original name means 'sickle' describing harbor shape; renamed Messana by Samian settlers in 490s BC",
       "description_ru": "Халкидяне с Эвбеи основывают Занкле (позднее Мессина) на месте, контролирующем Мессинский пролив; первоначальное название означает 'серп', описывая форму гавани; переименована в Мессану самосскими поселенцами в 490-х гг. до н.э.",
       "era": "BC",
@@ -1277,25 +1296,6 @@
         "Magna Graecia"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.0730",
-      "description": "Poet Hesiod writes Theogony and Works and Days; Theogony systematizes Greek mythology with genealogy of gods, while Works and Days provides practical farming advice and moral instruction",
-      "description_ru": "Поэт Гесиод пишет Теогонию и Труды и дни; Теогония систематизирует греческую мифологию с генеалогией богов, в то время как Труды и дни дают практические советы по земледелию и нравственные наставления",
-      "era": "BC",
-      "latitude": 38.4,
-      "longitude": 23.1,
-      "name": "Hesiod's Theogony and Works",
-      "name_ru": "Теогония и Труды Гесиода",
-      "source": "https://en.wikipedia.org/wiki/Hesiod",
-      "tags": [
-        "Poetry",
-        "Greek",
-        "Culture",
-        "Literature",
-        "Religious"
-      ],
-      "type": "cultural"
     },
     {
       "date": "01.01.0729",
@@ -1424,6 +1424,25 @@
     },
     {
       "date": "01.01.0700",
+      "description": "Greek hoplite warfare develops with bronze armor, large round shield (hoplon), and spear; phalanx formation of citizen-soldiers replaces aristocratic chariot warfare, democratizing military service",
+      "description_ru": "Греки совершенствуют искусство войны и придумывают фалангу гоплитов. Гоплиты в бронзовых доспехах, с большим круглым щитом (гоплон) и копьем стоят плечо к плечу и сражаются как единая машина. В фалангу могут войти не только аристократы с колесницами, но и простые граждане, что делает войско более многочисленным и менее дорогим.",
+      "era": "BC",
+      "latitude": 37.9755,
+      "longitude": 23.7348,
+      "name": "Hoplite Warfare Revolution",
+      "name_ru": "Греческие гоплиты",
+      "source": "https://en.wikipedia.org/wiki/Hoplite",
+      "tags": [
+        "Greek",
+        "Army",
+        "Innovation",
+        "War",
+        "Science"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0700",
       "description": "Achaean Greeks found Metapontum between rival cities Taras and Sybaris in southern Italy; Pythagoras reportedly spends final years here; famous for golden grain ears depicted on coins and temple to Hera",
       "description_ru": "Ахейские греки основывают Метапонт между соперничающими городами Тарас и Сибарис в южной Италии; знаменит своим храмом Геры",
       "era": "BC",
@@ -1442,25 +1461,6 @@
         "Expansion"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.0700",
-      "description": "Greek hoplite warfare develops with bronze armor, large round shield (hoplon), and spear; phalanx formation of citizen-soldiers replaces aristocratic chariot warfare, democratizing military service",
-      "description_ru": "Греки совершенствуют искусство войны и придумывают фалангу гоплитов. Гоплиты в бронзовых доспехах, с большим круглым щитом (гоплон) и копьем стоят плечо к плечу и сражаются как единая машина. В фалангу могут войти не только аристократы с колесницами, но и простые граждане, что делает войско более многочисленным и менее дорогим.",
-      "era": "BC",
-      "latitude": 37.9755,
-      "longitude": 23.7348,
-      "name": "Hoplite Warfare Revolution",
-      "name_ru": "Греческие гоплиты",
-      "source": "https://en.wikipedia.org/wiki/Hoplite",
-      "tags": [
-        "Greek",
-        "Army",
-        "Innovation",
-        "War",
-        "Science"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.0689",
@@ -1484,6 +1484,25 @@
     },
     {
       "date": "01.01.0688",
+      "description": "Megarian Greeks found Heraclea Pontica on southern Black Sea coast; strategically located city becomes wealthy from timber and fishing, later known for tyrant Clearchus who declares himself son of Zeus",
+      "description_ru": "Мегарские греки основывают Гераклею Понтийскую на южном побережье Черного моря; стратегически расположенный город богатеет от леса и рыболовства; позже знаменит тираном Клеархом, объявившим себя сыном Зевса",
+      "era": "BC",
+      "latitude": 41.2845,
+      "longitude": 31.4143,
+      "name": "Foundation of Heraclea Pontica",
+      "name_ru": "Основание Гераклеи Понтийской",
+      "source": "https://en.wikipedia.org/wiki/Heraclea_Pontica",
+      "tags": [
+        "Megarian",
+        "City",
+        "Greek",
+        "Colonization",
+        "Expansion"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0688",
       "description": "Gela founded by colonists from Rhodes and Crete on southern Sicily coast; becomes powerful city that later founds Akragas (Agrigento) and produces tyrant Gelon who defeats Carthage at Battle of Himera (480 BC)",
       "description_ru": "Гела основана колонистами с Родоса и Крита на южном побережье Сицилии; становится могущественным городом, позднее основывающим Акрагас (Агригенто) и производящим тирана Гелона, который побеждает Карфаген в битве при Гимере (480 г. до н.э.)",
       "era": "BC",
@@ -1499,25 +1518,6 @@
         "Sicily",
         "Magna Graecia",
         "Colonization"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0688",
-      "description": "Megarian Greeks found Heraclea Pontica on southern Black Sea coast; strategically located city becomes wealthy from timber and fishing, later known for tyrant Clearchus who declares himself son of Zeus",
-      "description_ru": "Мегарские греки основывают Гераклею Понтийскую на южном побережье Черного моря; стратегически расположенный город богатеет от леса и рыболовства; позже знаменит тираном Клеархом, объявившим себя сыном Зевса",
-      "era": "BC",
-      "latitude": 41.2845,
-      "longitude": 31.4143,
-      "name": "Foundation of Heraclea Pontica",
-      "name_ru": "Основание Гераклеи Понтийской",
-      "source": "https://en.wikipedia.org/wiki/Heraclea_Pontica",
-      "tags": [
-        "Megarian",
-        "City",
-        "Greek",
-        "Colonization",
-        "Expansion"
       ],
       "type": "historic"
     },
@@ -1826,26 +1826,6 @@
     },
     {
       "date": "01.01.0600",
-      "description": "Milesians found Cyzicus on Sea of Marmara isthmus connecting peninsula to mainland; becomes wealthy from tunny fishing and grain trade; Cyzicene staters become trusted currency throughout Greek world",
-      "description_ru": "Милетяне основывают Кизик на перешейке Мраморного моря, соединяющем полуостров с материком; город богатеет от ловли тунца и торговли зерном; кизикские статеры становятся надежной валютой по всему греческому миру",
-      "era": "BC",
-      "latitude": 40.387344,
-      "longitude": 27.870777,
-      "name": "Foundation of Cyzicus",
-      "name_ru": "Основание греками Кизика",
-      "source": "https://en.wikipedia.org/wiki/Cyzicus",
-      "tags": [
-        "Expansion",
-        "Trade",
-        "Greek",
-        "City",
-        "Milesian",
-        "Colonization"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0600",
       "description": "Massalia (Marseille) founded by Phocaean Greeks; becomes major trading hub connecting Greek world with Celtic Gaul, exporting wine and olive oil while importing tin and amber from northern Europe",
       "description_ru": "Массалия (Марсель) основана фокейскими греками; становится крупным торговым центром, соединяющим греческий мир с кельтской Галлией, экспортируя вино и оливковое масло, импортируя олово и янтарь из северной Европы",
       "era": "BC",
@@ -1885,6 +1865,26 @@
       "type": "historic"
     },
     {
+      "date": "01.01.0600",
+      "description": "Milesians found Cyzicus on Sea of Marmara isthmus connecting peninsula to mainland; becomes wealthy from tunny fishing and grain trade; Cyzicene staters become trusted currency throughout Greek world",
+      "description_ru": "Милетяне основывают Кизик на перешейке Мраморного моря, соединяющем полуостров с материком; город богатеет от ловли тунца и торговли зерном; кизикские статеры становятся надежной валютой по всему греческому миру",
+      "era": "BC",
+      "latitude": 40.387344,
+      "longitude": 27.870777,
+      "name": "Foundation of Cyzicus",
+      "name_ru": "Основание греками Кизика",
+      "source": "https://en.wikipedia.org/wiki/Cyzicus",
+      "tags": [
+        "Expansion",
+        "Trade",
+        "Greek",
+        "City",
+        "Milesian",
+        "Colonization"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0594",
       "description": "Solon appointed archon of Athens with extraordinary powers to resolve debt crisis; cancels all debts, frees debt slaves, bans future enslavement for debt, and creates census-based constitution replacing birth with wealth as political qualification",
       "description_ru": "Солон назначен архонтом Афин с чрезвычайными полномочиями для разрешения долгового кризиса; отменяет все долги, освобождает долговых рабов, запрещает будущее порабощение за долги и создает конституцию на основе ценза, заменяя рождение богатством как политическую квалификацию",
@@ -1904,27 +1904,6 @@
         "Oligarchy"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0590",
-      "description": "Phocaean Greeks found Alalia on Corsica as stepping stone for western Mediterranean trade; later battle against Etruscan-Carthaginian alliance (Battle of Alalia, 540 BC) marks end of Greek expansion in far west",
-      "description_ru": "Фокейские греки основывают Алалию на Корсике как ступеньку для торговли в западном Средиземноморье; позднее битва против этрусско-карфагенского союза (битва при Алалии, 540 г. до н.э.) знаменует конец греческой экспансии на дальнем западе",
-      "era": "BC",
-      "latitude": 42.1047,
-      "longitude": 9.5181,
-      "name": "Foundation of Alalia (Corsica)",
-      "name_ru": "Основание Алалии (Корсика)",
-      "source": "https://en.wikipedia.org/wiki/Al%C3%A9ria",
-      "tags": [
-        "Phocaean",
-        "City",
-        "Greek",
-        "Corsica",
-        "Trade",
-        "Expansion",
-        "Colonization"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0585",
@@ -2256,24 +2235,6 @@
     },
     {
       "date": "01.01.0510",
-      "description": "Sybaris was completely destroyed as a result of the war with Croton.",
-      "description_ru": "Сибарис и Кротон, будучи соседями и соперниками, начали войну, в результате которой Сибарис был полностью разрушен",
-      "era": "BC",
-      "latitude": 39.7175,
-      "longitude": 16.4456,
-      "name": "Sybaris destroyed by Croton",
-      "name_ru": "Кротон разрушает Сибарис",
-      "tags": [
-        "City",
-        "Achaean",
-        "Destruction",
-        "Greek",
-        "Civil War"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0510",
       "description": "Spartan king Cleomenes I expels tyrant Hippias from Athens with army; Hippias flees to Persian court where he later guides Persian invasion at Marathon",
       "description_ru": "Спартанский царь Клеомен I изгоняет тирана Гиппия из Афин с армией; Гиппий бежит к персидскому двору, где позже ведет персидское вторжение при Марафоне",
       "era": "BC",
@@ -2291,6 +2252,24 @@
         "War"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0510",
+      "description": "Sybaris was completely destroyed as a result of the war with Croton.",
+      "description_ru": "Сибарис и Кротон, будучи соседями и соперниками, начали войну, в результате которой Сибарис был полностью разрушен",
+      "era": "BC",
+      "latitude": 39.7175,
+      "longitude": 16.4456,
+      "name": "Sybaris destroyed by Croton",
+      "name_ru": "Кротон разрушает Сибарис",
+      "tags": [
+        "City",
+        "Achaean",
+        "Destruction",
+        "Greek",
+        "Civil War"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0508",
@@ -2422,6 +2401,22 @@
     },
     {
       "date": "01.01.0485",
+      "description": "Protagoras was born in Abdera. He is considered one of the first sophists. He was the first ancient Greek philosopher to charge tuition. His teaching career begins in the 450s BC. He visited Athens several times, where he became part of the inner circle of philosophers, scholars, playwrights, and other notable figures of Greece that formed around Pericles and Aspasia. Known for the phrase 'Man is the measure of all things'",
+      "description_ru": "В Абдере родился Протагор. Протагора относят к первым представителям софистов. Протагор первым из древнегреческих философов стал брать деньги за обучение. Начало преподавательской деятельности Протагора датируют 450-ми годами до н. э. Он неоднократно посещал Афины, где вошёл в близкий круг философов, учёных, драматургов и других примечательных людей Эллады, который сформировался вокруг Перикла и Аспасии. Знаменит фразой 'Человек есть мера всех вещей'",
+      "era": "BC",
+      "latitude": 40.95,
+      "longitude": 24.9833,
+      "name": "The birth of Protagoras",
+      "name_ru": "Рождение Протагора",
+      "tags": [
+        "Greek",
+        "Philosophy",
+        "Birth"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0485",
       "description": "Euripides born on Salamis; most modern of great tragedians, will write 92 plays featuring psychologically complex characters, questioning traditional values - Medea and Bacchae challenge Greek assumptions",
       "description_ru": "Еврипид рождается на Саламине; самый современный из великих трагиков, напишет 92 пьесы с психологически сложными персонажами, подвергающими сомнению традиционные ценности - Медея и Вакханки бросают вызов греческим устоям. По преданию, Еврипид был мизантропом и скрывался от общества в пещере, где в том числе творил свои произведения",
       "era": "BC",
@@ -2436,22 +2431,6 @@
         "Culture",
         "Athens",
         "Greek",
-        "Birth"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0485",
-      "description": "Protagoras was born in Abdera. He is considered one of the first sophists. He was the first ancient Greek philosopher to charge tuition. His teaching career begins in the 450s BC. He visited Athens several times, where he became part of the inner circle of philosophers, scholars, playwrights, and other notable figures of Greece that formed around Pericles and Aspasia. Known for the phrase 'Man is the measure of all things'",
-      "description_ru": "В Абдере родился Протагор. Протагора относят к первым представителям софистов. Протагор первым из древнегреческих философов стал брать деньги за обучение. Начало преподавательской деятельности Протагора датируют 450-ми годами до н. э. Он неоднократно посещал Афины, где вошёл в близкий круг философов, учёных, драматургов и других примечательных людей Эллады, который сформировался вокруг Перикла и Аспасии. Знаменит фразой 'Человек есть мера всех вещей'",
-      "era": "BC",
-      "latitude": 40.95,
-      "longitude": 24.9833,
-      "name": "The birth of Protagoras",
-      "name_ru": "Рождение Протагора",
-      "tags": [
-        "Greek",
-        "Philosophy",
         "Birth"
       ],
       "type": "cultural"

@@ -116,25 +116,6 @@
     },
     {
       "date": "01.01.1100",
-      "description": "Phoenicians establish Utica in North Africa, becoming oldest Phoenician settlement in Tunisia and major trading post",
-      "description_ru": "Финикийцы основывают Утику в Северной Африке, ставшую древнейшим финикийским поселением в Тунисе и крупным торговым центром",
-      "era": "BC",
-      "latitude": 37.056,
-      "longitude": 10.062,
-      "name": "Founding of Utica",
-      "name_ru": "Основание финикийцами Утики",
-      "source": "https://www.worldhistory.org/Phoenician_Colonization/",
-      "tags": [
-        "Colonization",
-        "Trade",
-        "City",
-        "Phoenician",
-        "Carthage"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1100",
       "description": "Phoenicians from Tyre establish Gadir (Cadiz) on Atlantic coast of Spain, creating westernmost Phoenician colony and crucial gateway beyond Mediterranean",
       "description_ru": "Финикийцы из Тира основывают Гадир (Кадис) на атлантическом побережье Испании, создавая самую западную финикийскую колонию и важные ворота за пределы Средиземноморья",
       "era": "BC",
@@ -149,6 +130,25 @@
         "Maritime",
         "City",
         "Phoenician"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1100",
+      "description": "Phoenicians establish Utica in North Africa, becoming oldest Phoenician settlement in Tunisia and major trading post",
+      "description_ru": "Финикийцы основывают Утику в Северной Африке, ставшую древнейшим финикийским поселением в Тунисе и крупным торговым центром",
+      "era": "BC",
+      "latitude": 37.056,
+      "longitude": 10.062,
+      "name": "Founding of Utica",
+      "name_ru": "Основание финикийцами Утики",
+      "source": "https://www.worldhistory.org/Phoenician_Colonization/",
+      "tags": [
+        "Colonization",
+        "Trade",
+        "City",
+        "Phoenician",
+        "Carthage"
       ],
       "type": "historic"
     },
@@ -417,6 +417,22 @@
     },
     {
       "date": "01.01.0600",
+      "description": "Phoenician monopoly on rare purple dye extracted from murex snails reaches apex, with Tyrian purple becoming most valuable commodity in ancient world",
+      "description_ru": "Финикийская монополия на редкий пурпурный краситель из раковин мурекса достигает апогея; тирский пурпур становится самым ценным товаром древнего мира",
+      "era": "BC",
+      "latitude": 33.271,
+      "longitude": 35.204,
+      "name": "Tyrian Purple Dye Trade Peak",
+      "name_ru": "Пик торговли тирским пурпуром",
+      "source": "https://www.metmuseum.org/toah/hd/phoe/hd_phoe.htm",
+      "tags": [
+        "Trade",
+        "Tyre"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0600",
       "description": "Sidonian artisans perfect transparent glass production by adding antimony, establishing Phoenician dominance in luxury glassware exported across ancient world",
       "description_ru": "Сидонские мастера совершенствуют производство прозрачного стекла, добавляя сурьму, устанавливая финикийское господство в производстве роскошной стеклянной посуды, экспортируемой по всему древнему миру",
       "era": "BC",
@@ -435,22 +451,6 @@
         "Innovation"
       ],
       "type": "scientific"
-    },
-    {
-      "date": "01.01.0600",
-      "description": "Phoenician monopoly on rare purple dye extracted from murex snails reaches apex, with Tyrian purple becoming most valuable commodity in ancient world",
-      "description_ru": "Финикийская монополия на редкий пурпурный краситель из раковин мурекса достигает апогея; тирский пурпур становится самым ценным товаром древнего мира",
-      "era": "BC",
-      "latitude": 33.271,
-      "longitude": 35.204,
-      "name": "Tyrian Purple Dye Trade Peak",
-      "name_ru": "Пик торговли тирским пурпуром",
-      "source": "https://www.metmuseum.org/toah/hd/phoe/hd_phoe.htm",
-      "tags": [
-        "Trade",
-        "Tyre"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0586",
@@ -555,6 +555,24 @@
       "type": "military"
     },
     {
+      "date": "01.01.0507",
+      "description": "The first treaty between Rome and Carthage established a division of spheres of influence and established Mediterranean trade routes. The treaty recognized Carthaginian rule over the coastal cities of Sardinia—Caralis (Cagliari), Sulci, Nora, and Tharros—while Rome controlled Latium.",
+      "description_ru": "Первый договор между Римом и Карфагеном устанавливает раздел сфер влияния и прокладывает средиземноморские торговые маршруты. Договор признаёт карфагенское господство над прибрежными городами Сардинии — Каралис (Кальяри), Сулки, Нора и Таррос — в то время как Рим контролирует Лациум. ",
+      "era": "BC",
+      "latitude": 39.2238,
+      "longitude": 9.1217,
+      "name": "First Rome-Carthage Treaty",
+      "name_ru": "Первый договор между Римом и Карфагеном",
+      "source": "https://en.wikipedia.org/wiki/Roman–Punic_treaties",
+      "tags": [
+        "Roman",
+        "Treaty",
+        "Diplomacy",
+        "Carthage"
+      ],
+      "type": "political"
+    },
+    {
       "date": "01.01.0480",
       "description": "Phoenician cities provide largest contingent of warships for Persian King Xerxes' invasion of Greece, showcasing continued naval supremacy",
       "description_ru": "Финикийские города предоставляют крупнейший контингент боевых кораблей для вторжения персидского царя Ксеркса в Греции, демонстрируя продолжающееся морское превосходство",
@@ -573,6 +591,25 @@
         "War"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0450",
+      "description": "Carthaginian navigator Hanno the Navigator sails beyond Gibraltar along African coast, establishing colonies and documenting unprecedented exploration",
+      "description_ru": "Карфагенский мореплаватель Ганнон Мореплаватель плывет за Гибралтар вдоль африканского побережья, основывая колонии и документируя беспрецедентное исследование",
+      "era": "BC",
+      "latitude": 33.573,
+      "longitude": -7.589,
+      "name": "Hanno's Voyage to West Africa",
+      "name_ru": "Плавание Ганнона в Западную Африку",
+      "source": "https://phoenician.org/carthage_hannibal_barca/",
+      "tags": [
+        "Carthage",
+        "Exploration",
+        "Maritime",
+        "Colonization",
+        "Expedition"
+      ],
+      "type": "scientific"
     },
     {
       "date": "01.01.0450",
@@ -595,25 +632,6 @@
       "type": "cultural"
     },
     {
-      "date": "01.01.0450",
-      "description": "Carthaginian navigator Hanno the Navigator sails beyond Gibraltar along African coast, establishing colonies and documenting unprecedented exploration",
-      "description_ru": "Карфагенский мореплаватель Ганнон Мореплаватель плывет за Гибралтар вдоль африканского побережья, основывая колонии и документируя беспрецедентное исследование",
-      "era": "BC",
-      "latitude": 33.573,
-      "longitude": -7.589,
-      "name": "Hanno's Voyage to West Africa",
-      "name_ru": "Плавание Ганнона в Западную Африку",
-      "source": "https://phoenician.org/carthage_hannibal_barca/",
-      "tags": [
-        "Carthage",
-        "Exploration",
-        "Maritime",
-        "Colonization",
-        "Expedition"
-      ],
-      "type": "scientific"
-    },
-    {
       "date": "01.01.0397",
       "description": "Greek tyrant Dionysius I of Syracuse besieges and destroys Phoenician stronghold of Motya, marking beginning of Greco-Punic conflicts in Sicily",
       "description_ru": "Греческий тиран Дионисий I Сиракузский осаждает и разрушает финикийскую крепость Мотия, знаменуя начало греко-пунических конфликтов в Сицилии",
@@ -634,22 +652,22 @@
       "type": "military"
     },
     {
-      "date": "01.01.0384",
-      "description": "Carthaginians establish colonies in Sardinia and fortify western Sicily, expanding Punic control over strategic Mediterranean islands",
-      "description_ru": "Карфагеняне основывают колонии в Сардинии и укрепляют западную Сицилию, расширяя пунический контроль над стратегическими средиземноморскими островами",
+      "date": "01.01.0368",
+      "description": "The Sardinians launched a large-scale rebellion against Carthage. To suppress this rebellion, Carthage had to send additional armies to the island. Carthage recaptured key points, but pockets of resistance still remained in the mountains.",
+      "description_ru": "Сардинцы подняли масштабное восстание против Карфагена. Для подавления этого мятежа Карфагену пришлось направлять на остров дополнительные армии. Ключевые точки Карфаген вернул, но в горах по прежнему оставались очаги сопротивления",
       "era": "BC",
-      "latitude": 40.121,
-      "longitude": 9.013,
+      "latitude": 39.2238,
+      "longitude": 9.1217,
       "name": "Carthaginian Colonization of Sardinia",
-      "name_ru": "Карфагенская колонизация Сардинии",
+      "name_ru": "Восстание Сардинии против Карфагена",
       "source": "https://www.worldhistory.org/Phoenician_Colonization/",
       "tags": [
+        "Rebellion",
         "Carthage",
-        "Colonization",
-        "Sardinia",
-        "Expansion"
+        "Civil War",
+        "Sardinian"
       ],
-      "type": "historic"
+      "type": "political"
     },
     {
       "date": "01.01.0350",
@@ -671,24 +689,6 @@
         "War"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0348",
-      "description": "First Treaty between Rome and Carthage establishes spheres of influence, recognizing Carthaginian dominance over western Mediterranean trade routes",
-      "description_ru": "Первый договор между Римом и Карфагеном устанавливает сферы влияния, признавая карфагенское господство над западными средиземноморскими торговыми маршрутами",
-      "era": "BC",
-      "latitude": 36.853,
-      "longitude": 10.323,
-      "name": "First Rome-Carthage Treaty",
-      "name_ru": "Первый договор между Римом и Карфагеном",
-      "source": "https://en.wikipedia.org/wiki/Roman–Punic_treaties",
-      "tags": [
-        "Treaty",
-        "Diplomacy",
-        "Carthage",
-        "Roman"
-      ],
-      "type": "political"
     },
     {
       "date": "01.08.0332",
@@ -870,6 +870,26 @@
         "First",
         "Punic",
         "War"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0240",
+      "description": "Following the unsuccessful war, Carthage was forced to pay Rome a huge indemnity. It was unable to pay for its army (primarily mercenary, consisting of Numidians, Greeks, and Gauls); the mercenaries rebelled and laid siege to Carthage. The war was marked by incredible atrocities on both sides (torture, mass executions of prisoners).",
+      "description_ru": "По итогам неудачной войны Карфаген был обязан выплатить Риму огромную контрибуцию. Он не смог оплатить услуги своей армии (преимущественно наемной, из нумидийцев, греков, галлов); наемники взбунтовались и осадили Карфаген. Война отличалась невероятными зверствами с обеих сторон (пытки, массовые казни пленных)",
+      "era": "BC",
+      "latitude": 36.853,
+      "longitude": 10.323,
+      "name": "The Revolt of the Carthaginian Mercenaries",
+      "name_ru": "Восстание наемников Карфагена",
+      "tags": [
+        "Carthage",
+        "Punic",
+        "Numidians",
+        "Mutiny",
+        "Civil War",
+        "Siege",
+        "Mercenaries"
       ],
       "type": "military"
     },

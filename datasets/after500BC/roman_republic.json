@@ -1,59 +1,59 @@
 {
-  "description": "Dataset imported with 203 events",
+  "description": "Dataset imported with 223 events",
   "events": [
     {
       "date": "01.01.0800",
-      "description": "The Nora Stele, the oldest known Phoenician inscription in the western Mediterranean, is erected at Nora in southern Sardinia. This stone monument marks the establishment of one of the earliest Phoenician trading posts on the island. Phoenician merchants from Tyre and Sidon trade peacefully with the Nuragic civilization, exchanging eastern goods for Sardinia's rich copper, lead, and silver resources.",
-      "description_ru": "Стела Норы, древнейшая известная финикийская надпись в западном Средиземноморье, устанавливается в Норе на юге Сардинии. Этот каменный памятник знаменует основание одного из первых финикийских торговых постов на острове. Финикийские купцы из Тира и Сидона мирно торгуют с нурагической цивилизацией, обменивая восточные товары на богатые сардинские ресурсы меди, свинца и серебра.",
-      "era": "BC",
-      "latitude": 38.9828,
-      "longitude": 9.0139,
-      "name": "Nora Stele — Earliest Phoenician Inscription in the West",
-      "name_ru": "Стела Норы — древнейшая финикийская надпись на Западе",
-      "source": "https://en.wikipedia.org/wiki/Nora_Stone",
-      "tags": [
-        "Sardinia",
-        "Phoenician",
-        "Culture",
-        "Trade",
-        "Inscription"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0800",
-      "description": "The Nuragic civilization of Sardinia creates the Mont'e Prama statues — monumental stone warriors standing over 2 meters tall. These are the oldest large-scale stone sculptures in the western Mediterranean after Egypt. The statues depict boxers, archers, and warriors with round shields, revealing a sophisticated warrior culture. Buried and rediscovered in 1974, they remain among Sardinia's greatest archaeological treasures.",
-      "description_ru": "Нурагическая цивилизация Сардинии создаёт статуи Монте-Прама — монументальных каменных воинов высотой более 2 метров. Это древнейшие крупномасштабные каменные скульптуры в западном Средиземноморье после Египта. Статуи изображают боксёров, лучников и воинов с круглыми щитами, раскрывая утончённую воинскую культуру. Погребённые и переоткрытые в 1974 году, они остаются одним из величайших археологических сокровищ Сардинии.",
+      "description": "The Nuragic civilization of Sardinia creates the Mont'e Prama statues — monumental stone warriors standing over 2 meters tall. These are the oldest large-scale stone sculptures in the western Mediterranean after Egypt. The statues depict boxers, archers, and warriors with round shields. Buried and rediscovered in 1974, they remain among Sardinia's greatest archaeological treasures.",
+      "description_ru": "Нурагическая цивилизация Сардинии создаёт статуи Монте-Прама — каменных воинов высотой более 2 метров. Это древнейшие крупные каменные скульптуры в западном Средиземноморье после Египта. Статуи изображают боксёров, лучников и воинов с круглыми щитами. Погребённые и переоткрытые в 1974 году, они остаются одним из величайших археологических сокровищ Сардинии.",
       "era": "BC",
       "latitude": 39.9458,
       "longitude": 8.4581,
-      "name": "Mont'e Prama Giant Statues (Sardinia)",
-      "name_ru": "Гигантские статуи Монте-Прама (Сардиния)",
+      "name": "Mont'e Prama Giant Statues",
+      "name_ru": "Гиганты Монте-Прама",
       "source": "https://en.wikipedia.org/wiki/Giants_of_Mont%27e_Prama",
       "tags": [
-        "Sardinia",
         "Culture",
-        "Nuragic",
+        "Sardinian",
         "Art",
-        "Archaeology"
+        "Sculpture"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0800",
+      "description": "The oldest known Phoenician inscription in the western Mediterranean, is erected at Nora in southern Sardinia. This stone monument marks the establishment of one of the earliest Phoenician trading posts on the island. Phoenician merchants from Tyre and Sidon trade peacefully with the Nuragic civilization, exchanging eastern goods for Sardinia's rich copper, lead, and silver resources.",
+      "description_ru": "Древнейшая известная финикийская надпись в западном Средиземноморье. Этот каменный памятник знаменует основание одного из первых финикийских торговых постов на острове. Финикийские купцы из Тира и Сидона мирно торгуют с нурагической цивилизацией, обменивая восточные товары на медь, свинец и серебро с Сардинии.",
+      "era": "BC",
+      "latitude": 38.98439063,
+      "longitude": 9.01630998,
+      "name": "Nora Stele",
+      "name_ru": "Стела Норы",
+      "source": "https://en.wikipedia.org/wiki/Nora_Stone",
+      "tags": [
+        "Trade",
+        "Culture",
+        "Phoenician",
+        "Sardinian",
+        "Writing",
+        "Tyre",
+        "Sidon"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0770",
-      "description": "Phoenicians from Tyre establish Sulki (modern Sant'Antioco) on a small island off Sardinia's southwest coast — likely the first Phoenician permanent settlement in Sardinia. The colony features a tophet sanctuary, necropolis, and port facilities. Sulki becomes a major hub for the Mediterranean metal trade, exporting Sardinian minerals to the eastern Mediterranean and importing luxury goods.",
-      "description_ru": "Финикийцы из Тира основывают Сулки (современный Сант-Антиоко) на маленьком острове у юго-западного побережья Сардинии — вероятно, первое постоянное финикийское поселение на Сардинии. Колония имеет святилище тофет, некрополь и портовые сооружения. Сулки становится крупным центром средиземноморской торговли металлами, экспортируя сардинские минералы в восточное Средиземноморье и импортируя предметы роскоши.",
+      "description": "Phoenicians from Tyre establish Sulki (modern Sant'Antioco) — likely the first Phoenician permanent settlement in Sardinia. The colony features a tophet sanctuary, necropolis, and port facilities. Sulki becomes a major hub for the Mediterranean metal trade, exporting Sardinian minerals to the eastern Mediterranean and importing luxury goods.",
+      "description_ru": "Финикийцы из Тира основывают Сулки (современный Сант-Антиоко) — вероятно, первое постоянное финикийское поселение на Сардинии. Колония имеет святилище тофет, некрополь и портовые сооружения. Сулки становится крупным центром средиземноморской торговли металлами, экспортируя сардинские минералы в восточное Средиземноморье и импортируя предметы роскоши.",
       "era": "BC",
-      "latitude": 39.0711,
-      "longitude": 8.4533,
-      "name": "Foundation of Sulki — First Phoenician City in Sardinia",
-      "name_ru": "Основание Сулки — первый финикийский город на Сардинии",
+      "latitude": 39.07133703,
+      "longitude": 8.45138311,
+      "name": "Foundation of Phoenician Sulki",
+      "name_ru": "Основание финикийцами Сулки",
       "source": "https://en.wikipedia.org/wiki/Sulci",
       "tags": [
-        "Sardinia",
-        "Phoenician",
-        "Colony",
+        "Colonization",
         "Trade",
+        "Phoenician",
         "Settlement"
       ],
       "type": "historic"
@@ -299,25 +299,6 @@
     },
     {
       "date": "01.01.0600",
-      "description": "The Cloaca Maxima, one of the world's earliest sewage systems, is constructed to drain the marshy Forum valley. Originally an open channel, it is later covered over. Parts of this Etruscan-era drain remain in use today.",
-      "description_ru": "Большая Клоака (Cloaca Maxima), одна из древнейших канализационных систем мира, построена для осушения болотистой долины Форума. Изначально открытый канал, позже он был перекрыт. Части этой этрусской эпохи дренажной системы используются и сегодня.",
-      "era": "BC",
-      "latitude": 41.88883235,
-      "longitude": 12.48017907,
-      "name": "Construction of Cloaca Maxima",
-      "name_ru": "Строительство Большой Клоаки",
-      "source": "https://en.wikipedia.org/wiki/Cloaca_Maxima",
-      "tags": [
-        "Engineering ⚙️",
-        "Water",
-        "Innovation",
-        "Roman",
-        "Architecture"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0600",
       "description": "King Tarquinius Priscus establishes the Circus Maximus in the valley between the Palatine and Aventine hills. Initially a simple racetrack with wooden seating, it becomes Rome's principal venue for chariot racing and public spectacles, eventually holding 150,000 spectators.",
       "description_ru": "Царь Тарквиний Приск основывает Большой цирк в долине между Палатинским и Авентинским холмами. Изначально простая беговая дорожка с деревянными трибунами, он становится главным римским местом для гонок на колесницах и публичных зрелищ, вмещая до 150 000 зрителей.",
       "era": "BC",
@@ -333,6 +314,25 @@
         "Architecture",
         "Etruscan",
         "Roman"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0600",
+      "description": "The Cloaca Maxima, one of the world's earliest sewage systems, is constructed to drain the marshy Forum valley. Originally an open channel, it is later covered over. Parts of this Etruscan-era drain remain in use today.",
+      "description_ru": "Большая Клоака (Cloaca Maxima), одна из древнейших канализационных систем мира, построена для осушения болотистой долины Форума. Изначально открытый канал, позже он был перекрыт. Части этой этрусской эпохи дренажной системы используются и сегодня.",
+      "era": "BC",
+      "latitude": 41.88883235,
+      "longitude": 12.48017907,
+      "name": "Construction of Cloaca Maxima",
+      "name_ru": "Строительство Большой Клоаки",
+      "source": "https://en.wikipedia.org/wiki/Cloaca_Maxima",
+      "tags": [
+        "Engineering ⚙️",
+        "Water",
+        "Innovation",
+        "Roman",
+        "Architecture"
       ],
       "type": "historic"
     },
@@ -357,27 +357,30 @@
     },
     {
       "date": "01.01.0565",
-      "description": "Phocaean Greeks fleeing Persian expansion in Asia Minor found the colony of Alalia (later Aleria) on Corsica's fertile east coast. They call the island 'Kalliste' (the most beautiful). The colony thrives on trade, agriculture, and piracy — provoking both Etruscans and Carthaginians. In 546 BC, more refugees arrive after Persia destroys Phocaea, swelling the colony's population.",
-      "description_ru": "Фокейские греки, бежавшие от персидской экспансии в Малой Азии, основывают колонию Алалия (позднее Алерия) на плодородном восточном побережье Корсики. Они называют остров 'Каллистой' (красивейший). Колония процветает благодаря торговле, сельскому хозяйству и пиратству — провоцируя и этрусков, и карфагенян. В 546 г. до н.э. прибывают новые беженцы после уничтожения Персией Фокеи, увеличивая население колонии.",
+      "description": "Phocaean Greeks fleeing Persian expansion in Asia Minor found the colony of Alalia (later Aleria) on Corsica's fertile east coast. They call the island 'Kalliste' (the most beautiful). The colony thrives on trade, agriculture, and piracy — provoking both Etruscans and Carthaginians.",
+      "description_ru": "Фокейские греки, бежавшие от персидской экспансии в Малой Азии, основывают колонию Алалия (позднее Алерия) на плодородном восточном побережье Корсики. Они называют остров 'Каллистой' (красивейший). Колония процветает благодаря торговле, сельскому хозяйству и пиратству — провоцируя и этрусков, и карфагенян.",
       "era": "BC",
-      "latitude": 42.1028,
-      "longitude": 9.5147,
-      "name": "Foundation of Greek Colony Alalia (Corsica)",
-      "name_ru": "Основание греческой колонии Алалия (Корсика)",
+      "latitude": 42.10247331,
+      "longitude": 9.51070547,
+      "name": "Foundation of Phocaean Alalia",
+      "name_ru": "Основание фокейской Алалии",
       "source": "https://en.wikipedia.org/wiki/Al%C3%A9ria",
       "tags": [
-        "Corsica",
         "Greek",
-        "Colony",
-        "Settlement",
-        "Trade"
+        "Trade",
+        "Colonization",
+        "Agriculture",
+        "Piracy",
+        "Migration",
+        "Phocaean",
+        "City"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0540",
-      "description": "Carthaginian general Malchus leads a military expedition to conquer Sardinia, beginning the shift from peaceful Phoenician trade coexistence to military domination. Carthage seizes control of the fertile Campidano plains and the rich silver and iron mines of the Iglesiente region. The indigenous Nuragic civilization, which built over 7,000 tower-fortresses, begins to retreat to the mountainous interior.",
-      "description_ru": "Карфагенский полководец Малх ведёт военную экспедицию на завоевание Сардинии, начиная переход от мирного финикийского торгового сосуществования к военному господству. Карфаген захватывает контроль над плодородными равнинами Кампидано и богатыми серебряными и железными рудниками Иглезиенте. Коренная нурагическая цивилизация, построившая более 7000 башен-крепостей, начинает отступать в горный интерьер.",
+      "description": "The Carthaginian general Malchus leads a military expedition to conquer Sardinia, seeking to subjugate the Nuragic civilization living there. Carthage seizes control of the fertile plains of Campidano and the rich silver and iron mines of Iglesiente, gradually driving the local population into the mountains.",
+      "description_ru": "Карфагенский полководец Малх ведёт военную экспедицию на завоевание Сардинии, стремясь подчинить нурагическую цивилизацию, живущую там. Карфаген захватывает контроль над плодородными равнинами Кампидано и богатыми серебряными и железными рудниками Иглезиенте, постепенно вытесняя местное население в горы",
       "era": "BC",
       "latitude": 39.2238,
       "longitude": 9.1217,
@@ -385,13 +388,33 @@
       "name_ru": "Карфагенское завоевание Сардинии",
       "source": "https://en.wikipedia.org/wiki/Phoenician%E2%80%93Punic_Sardinia",
       "tags": [
-        "Sardinia",
+        "Conquest",
+        "Punic",
         "Carthage",
         "War",
-        "Punic",
-        "Conquest"
+        "Sardinian"
       ],
-      "type": "battle"
+      "type": "military"
+    },
+    {
+      "date": "01.01.0535",
+      "description": "60 Phocaean Greek ships clash with 120 allied Etruscan-Carthaginian vessels off Corsica. The Greeks win tactically but lose 40 ships — a Pyrrhic victory. The surviving Greeks abandon Corsica and flee to southern Italy. Corsica passes to Etruscan control, Sardinia remains Carthaginian. This battle marks the end of Greek expansion in the western Mediterranean.",
+      "description_ru": "60 фокейских греческих кораблей сталкиваются со 120 объединёнными этрусско-карфагенскими судами у берегов Корсики. Греки побеждают тактически, но теряют 40 кораблей. Выжившие греки покидают Корсику и бегут в южную Италию. Корсика переходит под контроль этрусков, Сардиния остаётся карфагенской.",
+      "era": "BC",
+      "latitude": 42.11070365,
+      "longitude": 9.63432312,
+      "name": "Battle of Alalia",
+      "name_ru": "Морской бой при Алалии",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Alalia",
+      "tags": [
+        "Carthage",
+        "Naval",
+        "Greek",
+        "Phocaean",
+        "War",
+        "Etruscan"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0535",
@@ -411,26 +434,6 @@
         "Legend"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0535",
-      "description": "60 Phocaean Greek ships clash with 120 allied Etruscan-Carthaginian vessels off Corsica. The Greeks win tactically but lose 40 ships — a Pyrrhic victory. The surviving Greeks abandon Corsica and flee to southern Italy. Corsica passes to Etruscan control, Sardinia remains Carthaginian. This battle marks the end of Greek expansion in the western Mediterranean.",
-      "description_ru": "60 фокейских греческих кораблей сталкиваются со 120 объединёнными этрусско-карфагенскими судами у берегов Корсики. Греки побеждают тактически, но теряют 40 кораблей — Пиррова победа. Выжившие греки покидают Корсику и бегут в южную Италию. Корсика переходит под контроль этрусков, Сардиния остаётся карфагенской. Эта битва знаменует конец греческой экспансии в западном Средиземноморье.",
-      "era": "BC",
-      "latitude": 42.1028,
-      "longitude": 9.5147,
-      "name": "Battle of Alalia (Corsica)",
-      "name_ru": "Битва при Алалии (Корсика)",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Alalia",
-      "tags": [
-        "Corsica",
-        "Naval",
-        "War",
-        "Greek",
-        "Etruscan",
-        "Carthage"
-      ],
-      "type": "battle"
     },
     {
       "date": "01.01.0509",
@@ -468,26 +471,6 @@
         "Architecture"
       ],
       "type": "religious"
-    },
-    {
-      "date": "01.01.0509",
-      "description": "Rome and Carthage sign their first treaty, explicitly restricting Roman trade and navigation in Sardinia and North Africa. The treaty recognizes Carthaginian dominance over Sardinia's coastal cities — Karalis (Cagliari), Sulki, Nora, and Tharros — while Rome controls Latium. This early diplomatic agreement reveals Sardinia's strategic importance in western Mediterranean power politics.",
-      "description_ru": "Рим и Карфаген подписывают первый договор, прямо ограничивающий римскую торговлю и навигацию в Сардинии и Северной Африке. Договор признаёт карфагенское господство над прибрежными городами Сардинии — Каралис (Кальяри), Сулки, Нора и Таррос — в то время как Рим контролирует Лациум. Это раннее дипломатическое соглашение показывает стратегическую важность Сардинии в западносредиземноморской политике.",
-      "era": "BC",
-      "latitude": 39.2238,
-      "longitude": 9.1217,
-      "name": "First Rome-Carthage Treaty (Sardinia Clause)",
-      "name_ru": "Первый римско-карфагенский договор (пункт о Сардинии)",
-      "source": "https://en.wikipedia.org/wiki/Treaties_between_Rome_and_Carthage",
-      "tags": [
-        "Roman",
-        "Carthage",
-        "Sardinia",
-        "Treaty",
-        "Political",
-        "Diplomacy"
-      ],
-      "type": "political"
     },
     {
       "date": "01.01.0508",
@@ -853,24 +836,6 @@
     },
     {
       "date": "01.01.0406",
-      "description": "Rome begins paying soldiers a stipend (stipendium), allowing extended campaigns without soldiers returning for harvest. Previously, war was seasonal because citizen-farmers needed to work their land. This professionalizes warfare and enables the long siege of Veii.",
-      "description_ru": "Рим начинает платить солдатам жалованье (stipendium), позволяя вести продолжительные кампании без возвращения солдат на уборку урожая. Раньше война была сезонной, так как граждане-земледельцы должны были обрабатывать землю. Это профессионализирует войну и делает возможной долгую осаду Вей.",
-      "era": "BC",
-      "latitude": 41.89931442,
-      "longitude": 12.47670293,
-      "name": "Soldiers Begin Receiving Pay",
-      "name_ru": "Рим платит солдатам жалованье",
-      "source": "https://en.wikipedia.org/wiki/Siege_of_Veii",
-      "tags": [
-        "Army",
-        "Roman",
-        "Innovation",
-        "Reform"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0406",
       "description": "Rome begins the siege of Veii itself — a city as large and wealthy as Rome. Other Etruscan cities, distracted by Gallic raids in the north, fail to send help. The siege will last ten years, like legendary Troy.",
       "description_ru": "Рим начинает осаду самих Вейи — города столь же большого и богатого, как Рим. Другие этрусские города, отвлечённые набегами галлов на севере, не присылают помощи. Осада продлится десять лет, как легендарная Троя.",
       "era": "BC",
@@ -884,6 +849,24 @@
         "Siege",
         "Roman",
         "War"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0406",
+      "description": "Rome begins paying soldiers a stipend (stipendium), allowing extended campaigns without soldiers returning for harvest. Previously, war was seasonal because citizen-farmers needed to work their land. This professionalizes warfare and enables the long siege of Veii.",
+      "description_ru": "Рим начинает платить солдатам жалованье (stipendium), позволяя вести продолжительные кампании без возвращения солдат на уборку урожая. Раньше война была сезонной, так как граждане-земледельцы должны были обрабатывать землю. Это профессионализирует войну и делает возможной долгую осаду Вей.",
+      "era": "BC",
+      "latitude": 41.89931442,
+      "longitude": 12.47670293,
+      "name": "Soldiers Begin Receiving Pay",
+      "name_ru": "Рим платит солдатам жалованье",
+      "source": "https://en.wikipedia.org/wiki/Siege_of_Veii",
+      "tags": [
+        "Army",
+        "Roman",
+        "Innovation",
+        "Reform"
       ],
       "type": "military"
     },
@@ -1295,22 +1278,23 @@
     },
     {
       "date": "01.01.0315",
-      "description": "Rome adopted the manipular legion during the Samnite Wars. The new system divided the infantry into three lines: hastati (young men), principes (experienced men), and triarii (veterans). The hastati enter the battle first, the principes cover them, and in extreme cases the triarii enter the battle. The new system provides significantly greater mobility than the Greek phalanx and allows to make sustained, firm pressure on the enemy.",
-      "description_ru": "Рим принимает манипулярный легион во время Самнитских войн. Новая система делит пехоту на три линии: гастаты (молодые), принципы (опытные) и триарии (ветераны). Гастаты вступают в бой первыми, принципы их прикрывают, в крайнем случае в бой вступают триарии. Новая система дает значимо большую мобильность, чем греческая фаланга, и позволяет создавать жесткое непрерывное давление на врага.",
+      "description": "Romans suffer another major defeat at Lautulae near Terracina. Samnites raid Latin territory and nearly reach Rome. Rome responds by building a network of fortified colonies and roads through the mountains to control territory permanently.",
+      "description_ru": "Римляне терпят ещё одно крупное поражение при Лавтулах близ Террацины. Самниты совершают набеги на латинскую территорию и почти достигают Рима. Рим отвечает строительством сети укреплённых колоний и дорог через горы для постоянного контроля территории.",
       "era": "BC",
-      "latitude": 41.89931442,
-      "longitude": 12.47670293,
-      "name": "Manipular Legion System",
-      "name_ru": "Манипулярный легион",
-      "source": "https://en.wikipedia.org/wiki/Maniple_(military_unit)",
+      "latitude": 41.30731013,
+      "longitude": 13.28933716,
+      "name": "Battle of Lautulae",
+      "name_ru": "Битва при Лавтулах",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Lautulae",
       "tags": [
-        "Innovation",
         "Roman",
-        "Tactics",
+        "Battle",
         "War",
-        "Discipline"
+        "Defeat",
+        "Italian",
+        "Second"
       ],
-      "type": "historic"
+      "type": "military"
     },
     {
       "date": "01.01.0315",
@@ -1332,23 +1316,22 @@
     },
     {
       "date": "01.01.0315",
-      "description": "Romans suffer another major defeat at Lautulae near Terracina. Samnites raid Latin territory and nearly reach Rome. Rome responds by building a network of fortified colonies and roads through the mountains to control territory permanently.",
-      "description_ru": "Римляне терпят ещё одно крупное поражение при Лавтулах близ Террацины. Самниты совершают набеги на латинскую территорию и почти достигают Рима. Рим отвечает строительством сети укреплённых колоний и дорог через горы для постоянного контроля территории.",
+      "description": "Rome adopted the manipular legion during the Samnite Wars. The new system divided the infantry into three lines: hastati (young men), principes (experienced men), and triarii (veterans). The hastati enter the battle first, the principes cover them, and in extreme cases the triarii enter the battle. The new system provides significantly greater mobility than the Greek phalanx and allows to make sustained, firm pressure on the enemy.",
+      "description_ru": "Рим принимает манипулярный легион во время Самнитских войн. Новая система делит пехоту на три линии: гастаты (молодые), принципы (опытные) и триарии (ветераны). Гастаты вступают в бой первыми, принципы их прикрывают, в крайнем случае в бой вступают триарии. Новая система дает значимо большую мобильность, чем греческая фаланга, и позволяет создавать жесткое непрерывное давление на врага.",
       "era": "BC",
-      "latitude": 41.30731013,
-      "longitude": 13.28933716,
-      "name": "Battle of Lautulae",
-      "name_ru": "Битва при Лавтулах",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Lautulae",
+      "latitude": 41.89931442,
+      "longitude": 12.47670293,
+      "name": "Manipular Legion System",
+      "name_ru": "Манипулярный легион",
+      "source": "https://en.wikipedia.org/wiki/Maniple_(military_unit)",
       "tags": [
+        "Innovation",
         "Roman",
-        "Battle",
+        "Tactics",
         "War",
-        "Defeat",
-        "Italian",
-        "Second"
+        "Discipline"
       ],
-      "type": "military"
+      "type": "historic"
     },
     {
       "date": "01.01.0314",
@@ -1728,25 +1711,6 @@
     },
     {
       "date": "01.01.0272",
-      "description": "Rome's second aqueduct, the Aqua Anio Vetus, is constructed using war spoils from the victory over Pyrrhus. Drawing water from the upper Anio River near Tivoli, its 64 km mostly underground channel doubles Rome's water supply. The name 'Vetus' (old) distinguishes it from the later Aqua Anio Novus.",
-      "description_ru": "Второй римский акведук, Aqua Anio Vetus, построен на военные трофеи от победы над Пирром. Забирая воду из верхнего течения реки Аниене близ Тиволи, его 64-километровый подземный канал удваивает водоснабжение Рима. Название 'Vetus' (старый) отличает его от более позднего Aqua Anio Novus.",
-      "era": "BC",
-      "latitude": 42.02682201,
-      "longitude": 12.93794632,
-      "name": "Aqua Anio Vetus Aqueduct",
-      "name_ru": "Акведук Aqua Anio Vetus",
-      "source": "https://en.wikipedia.org/wiki/Aqua_Anio_Vetus",
-      "tags": [
-        "Roman",
-        "Water",
-        "Architecture",
-        "Engineering ⚙️",
-        "Infrastructure"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0272",
       "description": "Tarentum surrenders to Rome after Pyrrhus's final departure. Rome now controls all of peninsular Italy south of the Po Valley. Greek cities retain local autonomy but become Roman allies, beginning Rome's absorption of Magna Graecia and Greek cultural influence.",
       "description_ru": "Тарент сдаётся Риму после окончательного ухода Пирра. Рим теперь контролирует всю полуостровную Италию к югу от долины По. Греческие города сохраняют местную автономию, но становятся римскими союзниками, начиная поглощение Римом Великой Греции и греческого культурного влияния.",
       "era": "BC",
@@ -1764,6 +1728,25 @@
         "War"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0272",
+      "description": "Rome's second aqueduct, the Aqua Anio Vetus, is constructed using war spoils from the victory over Pyrrhus. Drawing water from the upper Anio River near Tivoli, its 64 km mostly underground channel doubles Rome's water supply. The name 'Vetus' (old) distinguishes it from the later Aqua Anio Novus.",
+      "description_ru": "Второй римский акведук, Aqua Anio Vetus, построен на военные трофеи от победы над Пирром. Забирая воду из верхнего течения реки Аниене близ Тиволи, его 64-километровый подземный канал удваивает водоснабжение Рима. Название 'Vetus' (старый) отличает его от более позднего Aqua Anio Novus.",
+      "era": "BC",
+      "latitude": 42.02682201,
+      "longitude": 12.93794632,
+      "name": "Aqua Anio Vetus Aqueduct",
+      "name_ru": "Акведук Aqua Anio Vetus",
+      "source": "https://en.wikipedia.org/wiki/Aqua_Anio_Vetus",
+      "tags": [
+        "Roman",
+        "Water",
+        "Architecture",
+        "Engineering ⚙️",
+        "Infrastructure"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0268",
@@ -1826,23 +1809,40 @@
     },
     {
       "date": "01.01.0259",
-      "description": "During the First Punic War, consul Lucius Cornelius Scipio leads a naval expedition to Corsica and captures the key city of Aleria on the east coast. His tomb inscription proudly records: 'He took Corsica and the city of Aleria.' This is Rome's first territorial expansion beyond Sicily. However, the island's fierce mountain tribes will resist Roman rule for nearly a century more.",
-      "description_ru": "Во время Первой Пунической войны консул Луций Корнелий Сципион ведёт морскую экспедицию на Корсику и захватывает ключевой город Алерию на восточном побережье. Надпись на его гробнице гордо гласит: 'Он взял Корсику и город Алерию.' Это первая территориальная экспансия Рима за пределы Сицилии. Однако свирепые горные племена острова будут сопротивляться римской власти ещё почти столетие.",
+      "description": "Consul Lucius Cornelius Scipio leads a naval expedition to Corsica and captures the key city of Aleria on the east coast. His tomb inscription proudly records: 'He took Corsica and the city of Aleria.' This is Rome's first territorial expansion beyond Sicily. However, the island's fierce mountain tribes will resist Roman rule for nearly a century more.",
+      "description_ru": "Консул Луций Корнелий Сципион ведёт морскую экспедицию на Корсику и захватывает ключевой город Алерию на восточном побережье. Надпись на его гробнице гордо гласит: 'Он взял Корсику и город Алерию.' Это первая территориальная экспансия Рима за пределы Сицилии. Свирепые горные племена острова будут сопротивляться римской власти ещё почти столетие.",
       "era": "BC",
-      "latitude": 42.1028,
-      "longitude": 9.5147,
-      "name": "Roman Capture of Aleria (Corsica)",
-      "name_ru": "Римский захват Алерии (Корсика)",
+      "latitude": 42.10247331,
+      "longitude": 9.51070547,
+      "name": "Roman Capture of Aleria",
+      "name_ru": "Римский захват Алерии",
       "source": "https://en.wikipedia.org/wiki/Lucius_Cornelius_Scipio_(consul_259_BC)",
       "tags": [
-        "Roman",
-        "Corsica",
+        "Punic",
         "War",
-        "Punic Wars",
+        "Roman",
         "Conquest",
-        "First Punic War"
+        "First"
       ],
-      "type": "battle"
+      "type": "military"
+    },
+    {
+      "date": "01.01.0250",
+      "description": "Roman engineers develop sophisticated surveying instruments: the groma for laying out perpendicular lines and right angles; the chorobates for leveling; the dioptra for measuring angles. These tools enable precise gradient control for aqueducts (achieving 1:4800 slope over 50 km) and straight road construction. Roman precision surveying won't be surpassed until modern times.",
+      "description_ru": "Римские инженеры разрабатывают сложные геодезические инструменты: грому для разбивки перпендикулярных линий и прямых углов; хоробат для нивелирования; диоптру для измерения углов. Эти инструменты обеспечивают точный контроль уклона акведуков (достигая 1:4800 на 50 км) и строительство прямых дорог. Римская точность геодезии не будет превзойдена до нового времени.",
+      "era": "BC",
+      "latitude": 41.89318911,
+      "longitude": 12.48506606,
+      "name": "Roman Surveying Instruments",
+      "name_ru": "Римские геодезические инструменты",
+      "source": "https://en.wikipedia.org/wiki/Groma_(surveying)",
+      "tags": [
+        "Roman",
+        "Engineering ⚙️",
+        "Innovation",
+        "Science"
+      ],
+      "type": "scientific"
     },
     {
       "date": "01.01.0250",
@@ -1865,24 +1865,6 @@
       "type": "historic"
     },
     {
-      "date": "01.01.0250",
-      "description": "Roman engineers develop sophisticated surveying instruments: the groma for laying out perpendicular lines and right angles; the chorobates for leveling; the dioptra for measuring angles. These tools enable precise gradient control for aqueducts (achieving 1:4800 slope over 50 km) and straight road construction. Roman precision surveying won't be surpassed until modern times.",
-      "description_ru": "Римские инженеры разрабатывают сложные геодезические инструменты: грому для разбивки перпендикулярных линий и прямых углов; хоробат для нивелирования; диоптру для измерения углов. Эти инструменты обеспечивают точный контроль уклона акведуков (достигая 1:4800 на 50 км) и строительство прямых дорог. Римская точность геодезии не будет превзойдена до нового времени.",
-      "era": "BC",
-      "latitude": 41.89318911,
-      "longitude": 12.48506606,
-      "name": "Roman Surveying Instruments",
-      "name_ru": "Римские геодезические инструменты",
-      "source": "https://en.wikipedia.org/wiki/Groma_(surveying)",
-      "tags": [
-        "Roman",
-        "Engineering ⚙️",
-        "Innovation",
-        "Science"
-      ],
-      "type": "scientific"
-    },
-    {
       "date": "01.01.0241",
       "description": "The Via Aurelia is constructed along the Tyrrhenian coast from Rome to Pisae (Pisa), opening the northwestern route to Etruria and Liguria. Later extended to Genua (Genoa) and into Gaul, it becomes a vital artery for trade and military movement along Italy's western coast.",
       "description_ru": "Аврелиева дорога проложена вдоль Тирренского побережья от Рима до Пизы, открывая северо-западный путь в Этрурию и Лигурию. Позже продлённая до Генуи и в Галлию, она становится жизненно важной артерией для торговли и передвижения войск вдоль западного побережья Италии.",
@@ -1900,6 +1882,25 @@
         "Trade"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.06.0240",
+      "description": "Carthaginian mercenaries stationed in Sardinia revolt over unpaid wages. Mercenaries seize control of Punic cities and kill Carthaginian commanders. Unable to hold the island, they turn to Rome for protection. This rebellion creates a political opportunity for Rome",
+      "description_ru": "Карфагенские наёмники, стоящие гарнизоном на Сардинии, восстают из-за невыплаченного жалованья. Наёмники захватывают контроль над пуническими городами и убивают карфагенских командиров. Не в силах удержать остров, они обращаются к Риму за защитой. Это восстание создаёт политическую возможность для Рима",
+      "era": "BC",
+      "latitude": 39.2238,
+      "longitude": 9.1217,
+      "name": "Mercenary Revolt in Sardinia",
+      "name_ru": "Восстание наёмников на Сардинии",
+      "source": "https://en.wikipedia.org/wiki/Mercenary_War",
+      "tags": [
+        "Mercenary",
+        "Carthage",
+        "Punic",
+        "Civil War",
+        "Mutiny"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.0240",
@@ -1923,65 +1924,45 @@
       "type": "historic"
     },
     {
-      "date": "01.01.0240",
-      "description": "Carthaginian mercenaries garrisoning Sardinia mutiny over unpaid wages, mirroring the larger Mercenary War in North Africa. The mercenaries seize control of Punic cities and kill Carthaginian commanders. Unable to hold the island, they appeal to Rome for protection. This revolt creates the political opening that Rome will exploit in 238 BC to annex both Sardinia and Corsica through diplomatic ultimatum.",
-      "description_ru": "Карфагенские наёмники, стоящие гарнизоном на Сардинии, восстают из-за невыплаченного жалованья, отражая более масштабную Войну наёмников в Северной Африке. Наёмники захватывают контроль над пуническими городами и убивают карфагенских командиров. Не в силах удержать остров, они обращаются к Риму за защитой. Это восстание создаёт политическую возможность, которую Рим использует в 238 г. до н.э. для аннексии обоих островов через дипломатический ультиматум.",
-      "era": "BC",
-      "latitude": 39.2238,
-      "longitude": 9.1217,
-      "name": "Mercenary Revolt in Sardinia",
-      "name_ru": "Восстание наёмников на Сардинии",
-      "source": "https://en.wikipedia.org/wiki/Mercenary_War",
-      "tags": [
-        "Sardinia",
-        "Carthage",
-        "War",
-        "Revolt",
-        "Punic",
-        "Mercenary"
-      ],
-      "type": "battle"
-    },
-    {
       "date": "01.01.0238",
-      "description": "Rome exploits Carthage's weakness during the Mercenary War to seize Sardinia and Corsica through diplomatic blackmail. When Carthage prepares to reclaim Sardinia from its own rebelling mercenaries, Rome declares it an 'act of war' and demands both islands plus 1,200 talents. Historian Polybius calls this seizure 'contrary to all justice.' It becomes Rome's second overseas province and a major cause of the Second Punic War.",
-      "description_ru": "Рим использует слабость Карфагена во время Войны наёмников для захвата Сардинии и Корсики через дипломатический шантаж. Когда Карфаген готовится вернуть Сардинию у собственных взбунтовавшихся наёмников, Рим объявляет это 'актом войны' и требует оба острова плюс 1200 талантов. Историк Полибий называет этот захват 'противным всякой справедливости.' Он становится второй заморской провинцией Рима и главной причиной Второй Пунической войны.",
+      "description": "While Carthage was suppressing a mercenary rebellion on its own soil, Rome presented Carthage with an ultimatum: surrender Sardinia and Corsica, and pay an additional 1,200 talents. The historian Polybius called this seizure \"contrary to all justice.\" This humiliation and the unjust seizure of Sardinia forced Hamilcar Barca to swear eternal hatred against Rome and prepare his son Hannibal for a new war.",
+      "description_ru": "Пока Карфаген гасит восстание наемников на своей земле, Рим ставит Карфагену ультимативные условия - отдать Сардинию, Корсику и выплатить сверх 1200 талантов. Историк Полибий называет этот захват 'противным всякой справедливости.' Это унижение и несправедливый захват Сардинии заставили Гамилькара Барку поклясться в вечной ненависти к Риму и подготовить своего сына Ганнибала к новой войне",
       "era": "BC",
       "latitude": 39.2238,
       "longitude": 9.1217,
       "name": "Roman Annexation of Sardinia and Corsica",
-      "name_ru": "Римская аннексия Сардинии и Корсики",
+      "name_ru": "Рим захватывает Сардинию и Корсику",
       "source": "https://en.wikipedia.org/wiki/Sardinia_and_Corsica",
       "tags": [
-        "Roman",
-        "Sardinia",
-        "Corsica",
-        "Punic",
+        "Treaty",
+        "Annexation",
         "Carthage",
-        "Conquest",
-        "Political",
-        "Treaty"
+        "Roman",
+        "Punic",
+        "War",
+        "Second"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0235",
-      "description": "Consul Titus Manlius Torquatus leads a campaign to suppress the first major Sardinian revolt against Roman rule. The indigenous tribes, unwilling to accept foreign domination after centuries of Carthaginian control, rise in armed resistance. Torquatus crushes the rebellion and celebrates a triumph in Rome, but guerrilla resistance continues in the mountainous interior.",
-      "description_ru": "Консул Тит Манлий Торкват ведёт кампанию по подавлению первого крупного сардинского восстания против римского владычества. Коренные племена, не желающие принимать иноземное господство после веков карфагенского контроля, поднимают вооружённое сопротивление. Торкват подавляет мятеж и празднует триумф в Риме, но партизанское сопротивление продолжается в горном интерьере.",
+      "description": "The indigenous tribes rise up in armed resistance, calling on Carthage for help. Consul Titus Manlius Torquatus decisively suppresses the rebellion and celebrates a triumph in Rome. In Rome that year, for the first time since the time of King Numa Pompilius, the doors of the Temple of Janus were solemnly closed, which symbolized complete peace throughout the state.",
+      "description_ru": "Коренные племена поднимают вооружённое сопротивление, привлекая на помощь Карфаген. Консул Тит Манлий Торкват решительно подавляет мятеж и празднует триумф в Риме. В Риме в тот год впервые со времен царя Нумы Помпилия были торжественно закрыты двери храма Януса, что символизировало полный мир во всем государстве",
       "era": "BC",
-      "latitude": 39.9833,
-      "longitude": 9.0167,
-      "name": "First Sardinian Revolt Against Rome",
-      "name_ru": "Первое сардинское восстание против Рима",
+      "latitude": 39.2238,
+      "longitude": 9.1217,
+      "name": "Sardinian Revolt Against Rome",
+      "name_ru": "Восстание против Рима на Сардинии",
       "source": "https://en.wikipedia.org/wiki/Sardinia_and_Corsica",
       "tags": [
+        "Punic",
+        "Rebellion",
+        "Civil War",
+        "Carthage",
         "Roman",
-        "Sardinia",
-        "War",
-        "Revolt",
-        "Conquest"
+        "Sardinian"
       ],
-      "type": "battle"
+      "type": "political"
     },
     {
       "date": "01.01.0234",
@@ -2005,26 +1986,24 @@
     {
       "date": "01.01.0231",
       "description": "Corsican mountain tribes rise against Roman rule. Consul Gaius Papirius Maso leads a punitive expedition into the island's interior to crush the resistance. After fierce fighting in the difficult mountainous terrain, he suppresses the revolt and receives the first-ever triumph celebrated on the Alban Mount (mons Albanus) — a lesser form of triumph, reflecting the modest scale of the victory.",
-      "description_ru": "Горные племена Корсики восстают против римского владычества. Консул Гай Папирий Мазон ведёт карательную экспедицию в горный интерьер острова для подавления сопротивления. После ожесточённых боёв в труднопроходимой горной местности он подавляет восстание и получает первый в истории триумф на Альбанской горе (mons Albanus) — малую форму триумфа, отражающую скромный масштаб победы.",
+      "description_ru": "Консул Гай Папирий Мазон ведёт карательную экспедицию против горных племен Корсики для подавления сопротивления. После ожесточённых боёв в труднопроходимой горной местности он подавляет восстание и получает первый в истории триумф на Альбанской горе (mons Albanus) — малую форму триумфа, отражающую скромный масштаб победы.",
       "era": "BC",
       "latitude": 42.15,
       "longitude": 9.1,
-      "name": "Corsican Revolt Suppressed",
-      "name_ru": "Подавление корсиканского восстания",
+      "name": "Corsica revolts against Rome",
+      "name_ru": "Восстание против Рима на Корсике",
       "source": "https://en.wikipedia.org/wiki/Ancient_Corsica",
       "tags": [
         "Roman",
-        "Corsica",
-        "War",
-        "Revolt",
-        "Conquest"
+        "Civil War",
+        "Rebellion"
       ],
-      "type": "battle"
+      "type": "military"
     },
     {
       "date": "01.01.0227",
-      "description": "Rome formally organizes Sardinia and Corsica into the province of Sardinia et Corsica, governed by a dedicated praetor based in Caralis (Cagliari). This requires increasing the number of praetors from two to four. The islands become Rome's second overseas province after Sicily, serving as a critical grain supply and strategic naval base protecting Italy's western approaches.",
-      "description_ru": "Рим официально организует Сардинию и Корсику в провинцию Sardinia et Corsica, управляемую отдельным претором с резиденцией в Каралисе (Кальяри). Это требует увеличения числа преторов с двух до четырёх. Острова становятся второй заморской провинцией Рима после Сицилии, служа важнейшим источником зерна и стратегической морской базой, защищающей западные подступы к Италии.",
+      "description": "Rome formally organizes Sardinia and Corsica into the province of Sardinia et Corsica, governed by a dedicated praetor based in Caralis (Cagliari). The islands become Rome's second overseas province after Sicily, serving as a critical grain supply and strategic naval base protecting Italy's western approaches.",
+      "description_ru": "Рим официально организует Сардинию и Корсику в провинцию Sardinia et Corsica, управляемую отдельным претором с резиденцией в Каралисе (Кальяри). Острова становятся второй заморской провинцией Рима после Сицилии, служа важнейшим источником зерна и стратегической морской базой, защищающей западные подступы к Италии.",
       "era": "BC",
       "latitude": 39.2238,
       "longitude": 9.1217,
@@ -2032,12 +2011,9 @@
       "name_ru": "Учреждение провинции Сардиния и Корсика",
       "source": "https://en.wikipedia.org/wiki/Sardinia_and_Corsica",
       "tags": [
+        "Administration",
         "Roman",
-        "Sardinia",
-        "Corsica",
-        "Political",
-        "Province",
-        "Administration"
+        "Federation"
       ],
       "type": "political"
     },
@@ -2115,26 +2091,26 @@
       "type": "historic"
     },
     {
-      "date": "01.01.0215",
-      "description": "After Hannibal's victory at Cannae, Sardinian leader Hampsicora unites native tribes and Punic coastal cities in revolt against Rome. Carthage sends 15,000 troops under Hasdrubal the Bald. Praetor Titus Manlius Torquatus crushes the combined forces near Cornus in a 4-hour battle. Hasdrubal is captured; Hampsicora, learning of his son Hiostus's death, commits suicide. This ends Carthage's last attempt to reclaim Sardinia.",
-      "description_ru": "После победы Ганнибала при Каннах сардинский вождь Гампсикора объединяет местные племена и пунические прибрежные города в восстании против Рима. Карфаген посылает 15 000 войск под командованием Гасдрубала Лысого. Претор Тит Манлий Торкват разбивает объединённые силы близ Корна в 4-часовой битве. Гасдрубал взят в плен; Гампсикора, узнав о гибели сына Гиоста, кончает жизнь самоубийством. Это конец последней попытки Карфагена вернуть Сардинию.",
+      "date": "01.10.0215",
+      "description": "After Hannibal's victory at Cannae, Sardinian leader Hampsicora unites native tribes and Punic coastal cities in revolt against Rome. Carthage sends 15,000 troops under Hasdrubal the Bald. Praetor Titus Manlius Torquatus crushes the combined forces near Cornus in a 4-hour battle. Hasdrubal is captured; Hampsicora, learning of his son Hiostus's death, commits suicide",
+      "description_ru": "После победы Ганнибала при Каннах сардинский вождь Гампсикора объединяет местные племена и пунические прибрежные города в восстании против Рима. Карфаген посылает 15 тысяч войск под командованием Гасдрубала Лысого. Претор Тит Манлий Торкват разбивает объединённые силы близ Корна в 4-часовой битве. Гасдрубал взят в плен; Гампсикора, узнав о гибели сына Гиоста, кончает жизнь самоубийством",
       "era": "BC",
-      "latitude": 40.1914,
-      "longitude": 8.5658,
-      "name": "Hampsicora's Revolt and Battle of Cornus",
-      "name_ru": "Восстание Гампсикоры и битва при Корне",
+      "latitude": 40.07360539,
+      "longitude": 8.49586487,
+      "name": "Battle of Cornus",
+      "name_ru": "Битва при Корне",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Cornus",
       "tags": [
-        "Roman",
-        "Sardinia",
-        "War",
+        "Battle",
+        "Second",
+        "Rebellion",
         "Punic",
+        "War",
         "Carthage",
-        "Revolt",
-        "Second Punic War",
-        "Battle"
+        "Roman",
+        "Sardinian"
       ],
-      "type": "battle"
+      "type": "military"
     },
     {
       "date": "09.04.0204",
@@ -2178,6 +2154,24 @@
     },
     {
       "date": "01.01.0200",
+      "description": "Quintus Fabius Pictor writes the first history of Rome in Greek, aimed at explaining Rome to the Greek world after the Second Punic War. His lost work established the traditional founding date of 753 BC and shaped all later Roman historiography.",
+      "description_ru": "Квинт Фабий Пиктор пишет первую историю Рима на греческом языке, с целью объяснить Рим греческому миру после Второй Пунической войны. Его утраченный труд установил традиционную дату основания 753 г. до н.э. и сформировал всю последующую римскую историографию.",
+      "era": "BC",
+      "latitude": 41.89318911,
+      "longitude": 12.48506606,
+      "name": "First Roman History Written",
+      "name_ru": "Первая римская история",
+      "source": "https://en.wikipedia.org/wiki/Quintus_Fabius_Pictor",
+      "tags": [
+        "History",
+        "Greek",
+        "Culture",
+        "Roman"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0200",
       "description": "Romans master the structural arch, perfecting the voussoir (wedge-shaped stones) with keystone technique. Unlike post-and-lintel construction, arches distribute weight outward, enabling unprecedented spans for bridges, aqueducts, and buildings. Combined with Roman concrete, arch technology enables the construction of structures that will stand for millennia.",
       "description_ru": "Римляне осваивают конструкционную арку, совершенствуя технику клинчатых камней (вуссуаров) с замковым камнем. В отличие от стоечно-балочной конструкции, арки распределяют нагрузку наружу, позволяя создавать небывалые пролёты для мостов, акведуков и зданий. В сочетании с римским бетоном арочная технология позволяет строить сооружения, которые простоят тысячелетия.",
       "era": "BC",
@@ -2195,24 +2189,6 @@
         "Construction"
       ],
       "type": "scientific"
-    },
-    {
-      "date": "01.01.0200",
-      "description": "Quintus Fabius Pictor writes the first history of Rome in Greek, aimed at explaining Rome to the Greek world after the Second Punic War. His lost work established the traditional founding date of 753 BC and shaped all later Roman historiography.",
-      "description_ru": "Квинт Фабий Пиктор пишет первую историю Рима на греческом языке, с целью объяснить Рим греческому миру после Второй Пунической войны. Его утраченный труд установил традиционную дату основания 753 г. до н.э. и сформировал всю последующую римскую историографию.",
-      "era": "BC",
-      "latitude": 41.89318911,
-      "longitude": 12.48506606,
-      "name": "First Roman History Written",
-      "name_ru": "Первая римская история",
-      "source": "https://en.wikipedia.org/wiki/Quintus_Fabius_Pictor",
-      "tags": [
-        "History",
-        "Greek",
-        "Culture",
-        "Roman"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0197",
@@ -2351,23 +2327,21 @@
     },
     {
       "date": "01.01.0177",
-      "description": "Consul Tiberius Sempronius Gracchus leads two legions in a brutal two-year campaign against the Ilienses and Balari tribes in Sardinia's mountainous interior. According to Livy, 80,000 Sardinians are killed or enslaved, with captives sold so cheaply they create the proverb 'Sardi venales' (Sardinians for sale). Despite the devastation, the Barbagia highlands tribes are never fully subjugated and maintain resistance into the Imperial era.",
-      "description_ru": "Консул Тиберий Семпроний Гракх ведёт два легиона в жестокую двухлетнюю кампанию против племён илиенсов и балари в горном интерьере Сардинии. По Ливию, 80 000 сардинцев убиты или обращены в рабство, пленники проданы так дёшево, что породили поговорку 'Sardi venales' (сардинцы на продажу). Несмотря на опустошение, племена нагорья Барбаджия так и не покорены полностью и сохраняют сопротивление до имперской эпохи.",
+      "description": "Consul Tiberius Sempronius Gracchus leads two legions in a brutal two-year campaign against the Ilienses and Balari tribes in Sardinia's mountainous interior. According to Livy, 80,000 Sardinians are killed or enslaved, with captives sold so cheaply they create the proverb 'Sardi venales' (Sardinians for sale). Despite the devastation, the Barbagia highlands tribes are never fully subjugated",
+      "description_ru": "Консул Тиберий Семпроний Гракх ведёт два легиона в жестокую двухлетнюю кампанию против племён илиенсов и балари в горах Сардинии. По Ливию, 80 тысяч сардинцев убиты или обращены в рабство, пленники проданы так дёшево, что породили поговорку 'Sardi venales' (сардинцы на продажу). Несмотря на опустошение, племена нагорья Барбаджия так и не покорены полностью",
       "era": "BC",
       "latitude": 39.9333,
       "longitude": 9.3333,
-      "name": "Gracchus's Sardinian Pacification Campaign",
-      "name_ru": "Кампания Гракха по умиротворению Сардинии",
+      "name": "Gracchus's Sardinian Pacification",
+      "name_ru": "Гракх умиротворяет Сардинию",
       "source": "https://en.wikipedia.org/wiki/Tiberius_Sempronius_Gracchus_(consul_177_BC)",
       "tags": [
+        "Rebellion",
+        "Civil War",
         "Roman",
-        "Sardinia",
-        "War",
-        "Conquest",
-        "Revolt",
-        "Gracchus 👤"
+        "Sardinian"
       ],
-      "type": "battle"
+      "type": "military"
     },
     {
       "date": "01.01.0171",
@@ -2799,25 +2773,6 @@
       "type": "military"
     },
     {
-      "date": "01.01.0104",
-      "description": "Gaius Marius founds Colonia Mariana on Corsica's east coast, near the mouth of the Golo river. This is one of the first Roman colonies outside mainland Italy, established to settle veterans and consolidate Roman control over the island. The colony grows into a significant town and port, complementing Aleria as a center of Roman civilization on the still partially wild island.",
-      "description_ru": "Гай Марий основывает колонию Мариана на восточном побережье Корсики, близ устья реки Голо. Это одна из первых римских колоний за пределами материковой Италии, основанная для расселения ветеранов и укрепления римского контроля над островом. Колония вырастает в значительный город и порт, дополняя Алерию как центр римской цивилизации на всё ещё частично диком острове.",
-      "era": "BC",
-      "latitude": 42.4833,
-      "longitude": 9.4333,
-      "name": "Foundation of Colonia Mariana (Corsica)",
-      "name_ru": "Основание колонии Мариана (Корсика)",
-      "source": "https://en.wikipedia.org/wiki/Ancient_Corsica",
-      "tags": [
-        "Roman",
-        "Corsica",
-        "Colony",
-        "Marius 👤",
-        "Settlement"
-      ],
-      "type": "historic"
-    },
-    {
       "date": "01.01.0102",
       "description": "Marius destroys the Teutones at Aquae Sextiae (Aix-en-Provence). 100,000 are killed or captured. The Teuton women, refusing enslavement, kill their children and themselves. The following year, Marius destroys the Cimbri at Vercellae in northern Italy.",
       "description_ru": "Марий уничтожает тевтонов при Аквах Секстиевых (Экс-ан-Прованс). 100 тысяч убито и пленено. Женщины тевтонов, отказываясь от рабства, убивают своих детей и себя. В следующем году Марий уничтожает кимвров при Верцеллах в северной Италии.",
@@ -2834,26 +2789,6 @@
         "Teutons"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0100",
-      "description": "Tribune Saturninus proposes radical land reforms for Marius's veterans, using violence to pass legislation. When Saturninus murders a political rival, Marius reluctantly enforces the senatus consultum ultimum against his own ally, who is killed by a mob.",
-      "description_ru": "Политический кризис усиливается. Трибун Сатурнин предлагает радикальные реформы для ветеранов Мария, применяя насилие для принятия законов. Когда люди Сатурнина убивают на выборах кандидата от оппозиции, Марий неохотно исполняет чрезвычайный указ Сената, арестовывая Сатурнина. Марию не удается скрыть своего союзника от толпы, и Сатурнина забивают камнями",
-      "era": "BC",
-      "latitude": 41.89318911,
-      "longitude": 12.48506606,
-      "name": "Violence of Saturninus",
-      "name_ru": "Насилие трибуна Сатурнина",
-      "source": "https://en.wikipedia.org/wiki/Lucius_Appuleius_Saturninus",
-      "tags": [
-        "Outrage",
-        "Murder",
-        "Political",
-        "Crisis",
-        "Marius 👤",
-        "Roman"
-      ],
-      "type": "political"
     },
     {
       "date": "01.01.0100",
@@ -2878,6 +2813,26 @@
     },
     {
       "date": "01.01.0100",
+      "description": "Tribune Saturninus proposes radical land reforms for Marius's veterans, using violence to pass legislation. When Saturninus murders a political rival, Marius reluctantly enforces the senatus consultum ultimum against his own ally, who is killed by a mob.",
+      "description_ru": "Политический кризис усиливается. Трибун Сатурнин предлагает радикальные реформы для ветеранов Мария, применяя насилие для принятия законов. Когда люди Сатурнина убивают на выборах кандидата от оппозиции, Марий неохотно исполняет чрезвычайный указ Сената, арестовывая Сатурнина. Марию не удается скрыть своего союзника от толпы, и Сатурнина забивают камнями",
+      "era": "BC",
+      "latitude": 41.89318911,
+      "longitude": 12.48506606,
+      "name": "Violence of Saturninus",
+      "name_ru": "Насилие трибуна Сатурнина",
+      "source": "https://en.wikipedia.org/wiki/Lucius_Appuleius_Saturninus",
+      "tags": [
+        "Outrage",
+        "Murder",
+        "Political",
+        "Crisis",
+        "Marius 👤",
+        "Roman"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0100",
       "description": "The Temple of Portunus is built at the Forum Boarium near the Tiber, dedicated to Portunus, god of keys, doors, and harbors. Its elegant Ionic columns and exceptional preservation make it one of the best-surviving examples of Republican temple architecture. Later converted to a church, which saved it from destruction.",
       "description_ru": "Храм Портуна построен на Бычьем форуме близ Тибра, посвящённый Портуну, богу ключей, дверей и гаваней. Его элегантные ионические колонны и исключительная сохранность делают его одним из лучших примеров республиканской храмовой архитектуры. Позже обращён в церковь, что спасло его от разрушения.",
       "era": "BC",
@@ -2894,6 +2849,24 @@
         "Trade"
       ],
       "type": "religious"
+    },
+    {
+      "date": "01.01.0093",
+      "description": "Gaius Marius founds Colonia Mariana on Corsica's east coast, near the mouth of the Golo river. This is one of the first Roman colonies outside mainland Italy, established to settle veterans and consolidate Roman control over the island. The colony grows into a significant town and port, complementing Aleria as a center of Roman civilization on the still partially wild island.",
+      "description_ru": "Гай Марий основывает колонию Мариана на восточном побережье Корсики, близ устья реки Голо. Это одна из первых римских колоний за пределами материковой Италии, основанная для расселения ветеранов и укрепления римского контроля над островом. Колония вырастает в значительный город и порт, дополняя Алерию как центр римской цивилизации на всё ещё частично диком острове.",
+      "era": "BC",
+      "latitude": 42.54712083,
+      "longitude": 9.41706419,
+      "name": "Foundation of Colonia Mariana",
+      "name_ru": "Мариана - колония Рима",
+      "source": "https://en.wikipedia.org/wiki/Ancient_Corsica",
+      "tags": [
+        "Roman",
+        "Marius 👤",
+        "Settlement",
+        "Colonization"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0091",
@@ -3223,26 +3196,6 @@
     },
     {
       "date": "01.01.0063",
-      "description": "Lucius Sergius Catilina, a ruined nobleman, plots to overthrow the Republic with an army of debtors and veterans. Consul Cicero exposes the plot in the Senate with his famous orations. Five conspirators are executed without trial — controversial even then, and later used against Cicero.",
-      "description_ru": "Луций Сергий Катилина, разорённый аристократ, заручается поддержкой других должников и ветеранов. Его план - свергнуть Республику, стать диктатором, объявить амнистию должников и перераспределить собственность. Консул Цицерон разоблачает заговор в Сенате своими знаменитыми речами. Пятеро заговорщиков казнены без суда — решение, которое позже применят против самого Цицерона.",
-      "era": "BC",
-      "latitude": 41.89318911,
-      "longitude": 12.48506606,
-      "name": "Catiline Conspiracy",
-      "name_ru": "Заговор Катилины",
-      "source": "https://en.wikipedia.org/wiki/Catilinarian_conspiracy",
-      "tags": [
-        "Execution",
-        "Crisis",
-        "Political",
-        "Conspiracy",
-        "Cicero 👤",
-        "Roman"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0063",
       "description": "Pompey captures Jerusalem after a three-month siege, entering the Temple's Holy of Holies — but taking nothing. He makes Judaea a Roman client state. ",
       "description_ru": "Помпей захватывает Иерусалим после трёхмесячной осады, войдя в Святая Святых Храма — но ничего не взяв. Он делает Иудею римским клиентским государством.",
       "era": "BC",
@@ -3262,6 +3215,26 @@
         "War"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0063",
+      "description": "Lucius Sergius Catilina, a ruined nobleman, plots to overthrow the Republic with an army of debtors and veterans. Consul Cicero exposes the plot in the Senate with his famous orations. Five conspirators are executed without trial — controversial even then, and later used against Cicero.",
+      "description_ru": "Луций Сергий Катилина, разорённый аристократ, заручается поддержкой других должников и ветеранов. Его план - свергнуть Республику, стать диктатором, объявить амнистию должников и перераспределить собственность. Консул Цицерон разоблачает заговор в Сенате своими знаменитыми речами. Пятеро заговорщиков казнены без суда — решение, которое позже применят против самого Цицерона.",
+      "era": "BC",
+      "latitude": 41.89318911,
+      "longitude": 12.48506606,
+      "name": "Catiline Conspiracy",
+      "name_ru": "Заговор Катилины",
+      "source": "https://en.wikipedia.org/wiki/Catilinarian_conspiracy",
+      "tags": [
+        "Execution",
+        "Crisis",
+        "Political",
+        "Conspiracy",
+        "Cicero 👤",
+        "Roman"
+      ],
+      "type": "political"
     },
     {
       "date": "01.05.0062",
@@ -3553,27 +3526,6 @@
     },
     {
       "date": "01.01.0052",
-      "description": "Clodius is murdered by Milo's gang on the Via Appia. Pompey is appointed sole consul — unprecedented — to restore order, marking his drift from Caesar toward the Senate.",
-      "description_ru": "Клодий убит бандой Милона на Аппиевой дороге. Помпей назначен единственным консулом для восстановления порядка (в республике никогда не было одного консула). Помпей и Цезарь оказались по разные стороны баррикад",
-      "era": "BC",
-      "latitude": 41.85,
-      "longitude": 12.5,
-      "name": "Murder of Clodius",
-      "name_ru": "Убийство трибуна Клодия",
-      "source": "https://en.wikipedia.org/wiki/Publius_Clodius_Pulcher",
-      "tags": [
-        "Murder",
-        "Roman",
-        "Pompey the Great 👤",
-        "Crisis",
-        "Political",
-        "Death",
-        "Claudii"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0052",
       "description": "The Gallic chieftain Vercingetorix unites the tribes in a massive revolt against Rome. After initial successes, he is besieged at Alesia where Caesar builds two rings of fortifications — one facing in, one facing out against a relief army of 250,000. Vercingetorix surrenders and is later executed in Rome.",
       "description_ru": "Галльский вождь Верцингеториг объединяет племена в массовом восстании против Рима. После первоначальных успехов он осаждён в Алезии, где Цезарь строит два кольца укреплений — одно внутрь, одно наружу против галльской армии поддержки. Верцингеториг сдаётся и позже казнён в Риме.",
       "era": "BC",
@@ -3592,6 +3544,27 @@
         "War"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0052",
+      "description": "Clodius is murdered by Milo's gang on the Via Appia. Pompey is appointed sole consul — unprecedented — to restore order, marking his drift from Caesar toward the Senate.",
+      "description_ru": "Клодий убит бандой Милона на Аппиевой дороге. Помпей назначен единственным консулом для восстановления порядка (в республике никогда не было одного консула). Помпей и Цезарь оказались по разные стороны баррикад",
+      "era": "BC",
+      "latitude": 41.85,
+      "longitude": 12.5,
+      "name": "Murder of Clodius",
+      "name_ru": "Убийство трибуна Клодия",
+      "source": "https://en.wikipedia.org/wiki/Publius_Clodius_Pulcher",
+      "tags": [
+        "Murder",
+        "Roman",
+        "Pompey the Great 👤",
+        "Crisis",
+        "Political",
+        "Death",
+        "Claudii"
+      ],
+      "type": "political"
     },
     {
       "date": "01.07.0050",
