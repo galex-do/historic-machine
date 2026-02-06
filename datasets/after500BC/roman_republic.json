@@ -2,6 +2,63 @@
   "description": "Dataset imported with 203 events",
   "events": [
     {
+      "date": "01.01.0800",
+      "description": "The Nora Stele, the oldest known Phoenician inscription in the western Mediterranean, is erected at Nora in southern Sardinia. This stone monument marks the establishment of one of the earliest Phoenician trading posts on the island. Phoenician merchants from Tyre and Sidon trade peacefully with the Nuragic civilization, exchanging eastern goods for Sardinia's rich copper, lead, and silver resources.",
+      "description_ru": "Стела Норы, древнейшая известная финикийская надпись в западном Средиземноморье, устанавливается в Норе на юге Сардинии. Этот каменный памятник знаменует основание одного из первых финикийских торговых постов на острове. Финикийские купцы из Тира и Сидона мирно торгуют с нурагической цивилизацией, обменивая восточные товары на богатые сардинские ресурсы меди, свинца и серебра.",
+      "era": "BC",
+      "latitude": 38.9828,
+      "longitude": 9.0139,
+      "name": "Nora Stele — Earliest Phoenician Inscription in the West",
+      "name_ru": "Стела Норы — древнейшая финикийская надпись на Западе",
+      "source": "https://en.wikipedia.org/wiki/Nora_Stone",
+      "tags": [
+        "Sardinia",
+        "Phoenician",
+        "Culture",
+        "Trade",
+        "Inscription"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0800",
+      "description": "The Nuragic civilization of Sardinia creates the Mont'e Prama statues — monumental stone warriors standing over 2 meters tall. These are the oldest large-scale stone sculptures in the western Mediterranean after Egypt. The statues depict boxers, archers, and warriors with round shields, revealing a sophisticated warrior culture. Buried and rediscovered in 1974, they remain among Sardinia's greatest archaeological treasures.",
+      "description_ru": "Нурагическая цивилизация Сардинии создаёт статуи Монте-Прама — монументальных каменных воинов высотой более 2 метров. Это древнейшие крупномасштабные каменные скульптуры в западном Средиземноморье после Египта. Статуи изображают боксёров, лучников и воинов с круглыми щитами, раскрывая утончённую воинскую культуру. Погребённые и переоткрытые в 1974 году, они остаются одним из величайших археологических сокровищ Сардинии.",
+      "era": "BC",
+      "latitude": 39.9458,
+      "longitude": 8.4581,
+      "name": "Mont'e Prama Giant Statues (Sardinia)",
+      "name_ru": "Гигантские статуи Монте-Прама (Сардиния)",
+      "source": "https://en.wikipedia.org/wiki/Giants_of_Mont%27e_Prama",
+      "tags": [
+        "Sardinia",
+        "Culture",
+        "Nuragic",
+        "Art",
+        "Archaeology"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0770",
+      "description": "Phoenicians from Tyre establish Sulki (modern Sant'Antioco) on a small island off Sardinia's southwest coast — likely the first Phoenician permanent settlement in Sardinia. The colony features a tophet sanctuary, necropolis, and port facilities. Sulki becomes a major hub for the Mediterranean metal trade, exporting Sardinian minerals to the eastern Mediterranean and importing luxury goods.",
+      "description_ru": "Финикийцы из Тира основывают Сулки (современный Сант-Антиоко) на маленьком острове у юго-западного побережья Сардинии — вероятно, первое постоянное финикийское поселение на Сардинии. Колония имеет святилище тофет, некрополь и портовые сооружения. Сулки становится крупным центром средиземноморской торговли металлами, экспортируя сардинские минералы в восточное Средиземноморье и импортируя предметы роскоши.",
+      "era": "BC",
+      "latitude": 39.0711,
+      "longitude": 8.4533,
+      "name": "Foundation of Sulki — First Phoenician City in Sardinia",
+      "name_ru": "Основание Сулки — первый финикийский город на Сардинии",
+      "source": "https://en.wikipedia.org/wiki/Sulci",
+      "tags": [
+        "Sardinia",
+        "Phoenician",
+        "Colony",
+        "Trade",
+        "Settlement"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "21.04.0753",
       "description": "Romulus founds Rome on Palatine Hill after killing his twin brother Remus in a dispute over where to build the city. According to legend, Romulus traced the city's sacred boundary (pomerium) with a plow, and Remus mocked him by jumping over it.",
       "description_ru": "Ромул основывает Рим на Палатинском холме после убийства своего брата-близнеца Рема в споре о месте основания города. По легенде, Ромул провел священную границу города (померий) плугом, а Рем насмехался над ним, перепрыгнув через неё. Национальный миф Рима говорил, что его основатели были дальними потомками Энея, спасшегося во время осады Трои.",
@@ -299,6 +356,44 @@
       "type": "political"
     },
     {
+      "date": "01.01.0565",
+      "description": "Phocaean Greeks fleeing Persian expansion in Asia Minor found the colony of Alalia (later Aleria) on Corsica's fertile east coast. They call the island 'Kalliste' (the most beautiful). The colony thrives on trade, agriculture, and piracy — provoking both Etruscans and Carthaginians. In 546 BC, more refugees arrive after Persia destroys Phocaea, swelling the colony's population.",
+      "description_ru": "Фокейские греки, бежавшие от персидской экспансии в Малой Азии, основывают колонию Алалия (позднее Алерия) на плодородном восточном побережье Корсики. Они называют остров 'Каллистой' (красивейший). Колония процветает благодаря торговле, сельскому хозяйству и пиратству — провоцируя и этрусков, и карфагенян. В 546 г. до н.э. прибывают новые беженцы после уничтожения Персией Фокеи, увеличивая население колонии.",
+      "era": "BC",
+      "latitude": 42.1028,
+      "longitude": 9.5147,
+      "name": "Foundation of Greek Colony Alalia (Corsica)",
+      "name_ru": "Основание греческой колонии Алалия (Корсика)",
+      "source": "https://en.wikipedia.org/wiki/Al%C3%A9ria",
+      "tags": [
+        "Corsica",
+        "Greek",
+        "Colony",
+        "Settlement",
+        "Trade"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0540",
+      "description": "Carthaginian general Malchus leads a military expedition to conquer Sardinia, beginning the shift from peaceful Phoenician trade coexistence to military domination. Carthage seizes control of the fertile Campidano plains and the rich silver and iron mines of the Iglesiente region. The indigenous Nuragic civilization, which built over 7,000 tower-fortresses, begins to retreat to the mountainous interior.",
+      "description_ru": "Карфагенский полководец Малх ведёт военную экспедицию на завоевание Сардинии, начиная переход от мирного финикийского торгового сосуществования к военному господству. Карфаген захватывает контроль над плодородными равнинами Кампидано и богатыми серебряными и железными рудниками Иглезиенте. Коренная нурагическая цивилизация, построившая более 7000 башен-крепостей, начинает отступать в горный интерьер.",
+      "era": "BC",
+      "latitude": 39.2238,
+      "longitude": 9.1217,
+      "name": "Carthaginian Conquest of Sardinia",
+      "name_ru": "Карфагенское завоевание Сардинии",
+      "source": "https://en.wikipedia.org/wiki/Phoenician%E2%80%93Punic_Sardinia",
+      "tags": [
+        "Sardinia",
+        "Carthage",
+        "War",
+        "Punic",
+        "Conquest"
+      ],
+      "type": "battle"
+    },
+    {
       "date": "01.01.0535",
       "description": "Servius Tullius is murdered by his own daughter Tullia and her husband Tarquinius Superbus (the Proud). Tullia drives her chariot over her father's body in the street later called Vicus Sceleratus (Street of Crime). Tarquinius becomes the seventh and last king.",
       "description_ru": "Царь Сервий Туллий убит собственной дочерью Туллией и её мужем Тарквинием Гордым. Туллия проезжает на колеснице по телу отца на улице, позже названной Vicus Sceleratus (Улица Преступления). Тарквиний становится седьмым и последним царём.",
@@ -316,6 +411,26 @@
         "Legend"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0535",
+      "description": "60 Phocaean Greek ships clash with 120 allied Etruscan-Carthaginian vessels off Corsica. The Greeks win tactically but lose 40 ships — a Pyrrhic victory. The surviving Greeks abandon Corsica and flee to southern Italy. Corsica passes to Etruscan control, Sardinia remains Carthaginian. This battle marks the end of Greek expansion in the western Mediterranean.",
+      "description_ru": "60 фокейских греческих кораблей сталкиваются со 120 объединёнными этрусско-карфагенскими судами у берегов Корсики. Греки побеждают тактически, но теряют 40 кораблей — Пиррова победа. Выжившие греки покидают Корсику и бегут в южную Италию. Корсика переходит под контроль этрусков, Сардиния остаётся карфагенской. Эта битва знаменует конец греческой экспансии в западном Средиземноморье.",
+      "era": "BC",
+      "latitude": 42.1028,
+      "longitude": 9.5147,
+      "name": "Battle of Alalia (Corsica)",
+      "name_ru": "Битва при Алалии (Корсика)",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Alalia",
+      "tags": [
+        "Corsica",
+        "Naval",
+        "War",
+        "Greek",
+        "Etruscan",
+        "Carthage"
+      ],
+      "type": "battle"
     },
     {
       "date": "01.01.0509",
@@ -353,6 +468,26 @@
         "Architecture"
       ],
       "type": "religious"
+    },
+    {
+      "date": "01.01.0509",
+      "description": "Rome and Carthage sign their first treaty, explicitly restricting Roman trade and navigation in Sardinia and North Africa. The treaty recognizes Carthaginian dominance over Sardinia's coastal cities — Karalis (Cagliari), Sulki, Nora, and Tharros — while Rome controls Latium. This early diplomatic agreement reveals Sardinia's strategic importance in western Mediterranean power politics.",
+      "description_ru": "Рим и Карфаген подписывают первый договор, прямо ограничивающий римскую торговлю и навигацию в Сардинии и Северной Африке. Договор признаёт карфагенское господство над прибрежными городами Сардинии — Каралис (Кальяри), Сулки, Нора и Таррос — в то время как Рим контролирует Лациум. Это раннее дипломатическое соглашение показывает стратегическую важность Сардинии в западносредиземноморской политике.",
+      "era": "BC",
+      "latitude": 39.2238,
+      "longitude": 9.1217,
+      "name": "First Rome-Carthage Treaty (Sardinia Clause)",
+      "name_ru": "Первый римско-карфагенский договор (пункт о Сардинии)",
+      "source": "https://en.wikipedia.org/wiki/Treaties_between_Rome_and_Carthage",
+      "tags": [
+        "Roman",
+        "Carthage",
+        "Sardinia",
+        "Treaty",
+        "Political",
+        "Diplomacy"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.0508",
@@ -1690,6 +1825,26 @@
       "type": "scientific"
     },
     {
+      "date": "01.01.0259",
+      "description": "During the First Punic War, consul Lucius Cornelius Scipio leads a naval expedition to Corsica and captures the key city of Aleria on the east coast. His tomb inscription proudly records: 'He took Corsica and the city of Aleria.' This is Rome's first territorial expansion beyond Sicily. However, the island's fierce mountain tribes will resist Roman rule for nearly a century more.",
+      "description_ru": "Во время Первой Пунической войны консул Луций Корнелий Сципион ведёт морскую экспедицию на Корсику и захватывает ключевой город Алерию на восточном побережье. Надпись на его гробнице гордо гласит: 'Он взял Корсику и город Алерию.' Это первая территориальная экспансия Рима за пределы Сицилии. Однако свирепые горные племена острова будут сопротивляться римской власти ещё почти столетие.",
+      "era": "BC",
+      "latitude": 42.1028,
+      "longitude": 9.5147,
+      "name": "Roman Capture of Aleria (Corsica)",
+      "name_ru": "Римский захват Алерии (Корсика)",
+      "source": "https://en.wikipedia.org/wiki/Lucius_Cornelius_Scipio_(consul_259_BC)",
+      "tags": [
+        "Roman",
+        "Corsica",
+        "War",
+        "Punic Wars",
+        "Conquest",
+        "First Punic War"
+      ],
+      "type": "battle"
+    },
+    {
       "date": "01.01.0250",
       "description": "The testudo ('tortoise') formation becomes a refined Roman tactic for siege operations. Soldiers interlock their large scuta shields to form a protective shell — front rank vertical, inner ranks overhead like roof tiles. This 'human tank' allows troops to advance under heavy missile fire toward fortifications. The formation requires exceptional discipline and drilling.",
       "description_ru": "Построение 'черепаха' (testudo) - отточенная римская тактика для осады. Солдаты смыкают большие щиты скутумы, образуя защитный панцирь — передний ряд вертикально, внутренние ряды над головой как черепица. Этот 'танк' позволяет войскам наступать под сильным обстрелом к укреплениям. Построение требует исключительной дисциплины и муштры.",
@@ -1768,6 +1923,67 @@
       "type": "historic"
     },
     {
+      "date": "01.01.0240",
+      "description": "Carthaginian mercenaries garrisoning Sardinia mutiny over unpaid wages, mirroring the larger Mercenary War in North Africa. The mercenaries seize control of Punic cities and kill Carthaginian commanders. Unable to hold the island, they appeal to Rome for protection. This revolt creates the political opening that Rome will exploit in 238 BC to annex both Sardinia and Corsica through diplomatic ultimatum.",
+      "description_ru": "Карфагенские наёмники, стоящие гарнизоном на Сардинии, восстают из-за невыплаченного жалованья, отражая более масштабную Войну наёмников в Северной Африке. Наёмники захватывают контроль над пуническими городами и убивают карфагенских командиров. Не в силах удержать остров, они обращаются к Риму за защитой. Это восстание создаёт политическую возможность, которую Рим использует в 238 г. до н.э. для аннексии обоих островов через дипломатический ультиматум.",
+      "era": "BC",
+      "latitude": 39.2238,
+      "longitude": 9.1217,
+      "name": "Mercenary Revolt in Sardinia",
+      "name_ru": "Восстание наёмников на Сардинии",
+      "source": "https://en.wikipedia.org/wiki/Mercenary_War",
+      "tags": [
+        "Sardinia",
+        "Carthage",
+        "War",
+        "Revolt",
+        "Punic",
+        "Mercenary"
+      ],
+      "type": "battle"
+    },
+    {
+      "date": "01.01.0238",
+      "description": "Rome exploits Carthage's weakness during the Mercenary War to seize Sardinia and Corsica through diplomatic blackmail. When Carthage prepares to reclaim Sardinia from its own rebelling mercenaries, Rome declares it an 'act of war' and demands both islands plus 1,200 talents. Historian Polybius calls this seizure 'contrary to all justice.' It becomes Rome's second overseas province and a major cause of the Second Punic War.",
+      "description_ru": "Рим использует слабость Карфагена во время Войны наёмников для захвата Сардинии и Корсики через дипломатический шантаж. Когда Карфаген готовится вернуть Сардинию у собственных взбунтовавшихся наёмников, Рим объявляет это 'актом войны' и требует оба острова плюс 1200 талантов. Историк Полибий называет этот захват 'противным всякой справедливости.' Он становится второй заморской провинцией Рима и главной причиной Второй Пунической войны.",
+      "era": "BC",
+      "latitude": 39.2238,
+      "longitude": 9.1217,
+      "name": "Roman Annexation of Sardinia and Corsica",
+      "name_ru": "Римская аннексия Сардинии и Корсики",
+      "source": "https://en.wikipedia.org/wiki/Sardinia_and_Corsica",
+      "tags": [
+        "Roman",
+        "Sardinia",
+        "Corsica",
+        "Punic",
+        "Carthage",
+        "Conquest",
+        "Political",
+        "Treaty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0235",
+      "description": "Consul Titus Manlius Torquatus leads a campaign to suppress the first major Sardinian revolt against Roman rule. The indigenous tribes, unwilling to accept foreign domination after centuries of Carthaginian control, rise in armed resistance. Torquatus crushes the rebellion and celebrates a triumph in Rome, but guerrilla resistance continues in the mountainous interior.",
+      "description_ru": "Консул Тит Манлий Торкват ведёт кампанию по подавлению первого крупного сардинского восстания против римского владычества. Коренные племена, не желающие принимать иноземное господство после веков карфагенского контроля, поднимают вооружённое сопротивление. Торкват подавляет мятеж и празднует триумф в Риме, но партизанское сопротивление продолжается в горном интерьере.",
+      "era": "BC",
+      "latitude": 39.9833,
+      "longitude": 9.0167,
+      "name": "First Sardinian Revolt Against Rome",
+      "name_ru": "Первое сардинское восстание против Рима",
+      "source": "https://en.wikipedia.org/wiki/Sardinia_and_Corsica",
+      "tags": [
+        "Roman",
+        "Sardinia",
+        "War",
+        "Revolt",
+        "Conquest"
+      ],
+      "type": "battle"
+    },
+    {
       "date": "01.01.0234",
       "description": "Gnaeus Naevius writes the first Latin epic, Bellum Punicum (Punic War), based on recent history rather than Greek myth. He later satirizes the Metelli, a powerful family, and is imprisoned — establishing the dangerous relationship between Roman writers and nobility.",
       "description_ru": "Гней Невий пишет первый латинский эпос, Bellum Punicum (Пуническая война), основанный на недавней истории, а не на греческом мифе. Позже он будет высмеивать влиятельную семью Метеллов и попадет в тюрьму. Хотя эпос начат в Риме, завершил Невий его уже в изгнании, в Утике",
@@ -1785,6 +2001,45 @@
         "War"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0231",
+      "description": "Corsican mountain tribes rise against Roman rule. Consul Gaius Papirius Maso leads a punitive expedition into the island's interior to crush the resistance. After fierce fighting in the difficult mountainous terrain, he suppresses the revolt and receives the first-ever triumph celebrated on the Alban Mount (mons Albanus) — a lesser form of triumph, reflecting the modest scale of the victory.",
+      "description_ru": "Горные племена Корсики восстают против римского владычества. Консул Гай Папирий Мазон ведёт карательную экспедицию в горный интерьер острова для подавления сопротивления. После ожесточённых боёв в труднопроходимой горной местности он подавляет восстание и получает первый в истории триумф на Альбанской горе (mons Albanus) — малую форму триумфа, отражающую скромный масштаб победы.",
+      "era": "BC",
+      "latitude": 42.15,
+      "longitude": 9.1,
+      "name": "Corsican Revolt Suppressed",
+      "name_ru": "Подавление корсиканского восстания",
+      "source": "https://en.wikipedia.org/wiki/Ancient_Corsica",
+      "tags": [
+        "Roman",
+        "Corsica",
+        "War",
+        "Revolt",
+        "Conquest"
+      ],
+      "type": "battle"
+    },
+    {
+      "date": "01.01.0227",
+      "description": "Rome formally organizes Sardinia and Corsica into the province of Sardinia et Corsica, governed by a dedicated praetor based in Caralis (Cagliari). This requires increasing the number of praetors from two to four. The islands become Rome's second overseas province after Sicily, serving as a critical grain supply and strategic naval base protecting Italy's western approaches.",
+      "description_ru": "Рим официально организует Сардинию и Корсику в провинцию Sardinia et Corsica, управляемую отдельным претором с резиденцией в Каралисе (Кальяри). Это требует увеличения числа преторов с двух до четырёх. Острова становятся второй заморской провинцией Рима после Сицилии, служа важнейшим источником зерна и стратегической морской базой, защищающей западные подступы к Италии.",
+      "era": "BC",
+      "latitude": 39.2238,
+      "longitude": 9.1217,
+      "name": "Province of Sardinia et Corsica Established",
+      "name_ru": "Учреждение провинции Сардиния и Корсика",
+      "source": "https://en.wikipedia.org/wiki/Sardinia_and_Corsica",
+      "tags": [
+        "Roman",
+        "Sardinia",
+        "Corsica",
+        "Political",
+        "Province",
+        "Administration"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.0225",
@@ -1858,6 +2113,28 @@
         "City"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0215",
+      "description": "After Hannibal's victory at Cannae, Sardinian leader Hampsicora unites native tribes and Punic coastal cities in revolt against Rome. Carthage sends 15,000 troops under Hasdrubal the Bald. Praetor Titus Manlius Torquatus crushes the combined forces near Cornus in a 4-hour battle. Hasdrubal is captured; Hampsicora, learning of his son Hiostus's death, commits suicide. This ends Carthage's last attempt to reclaim Sardinia.",
+      "description_ru": "После победы Ганнибала при Каннах сардинский вождь Гампсикора объединяет местные племена и пунические прибрежные города в восстании против Рима. Карфаген посылает 15 000 войск под командованием Гасдрубала Лысого. Претор Тит Манлий Торкват разбивает объединённые силы близ Корна в 4-часовой битве. Гасдрубал взят в плен; Гампсикора, узнав о гибели сына Гиоста, кончает жизнь самоубийством. Это конец последней попытки Карфагена вернуть Сардинию.",
+      "era": "BC",
+      "latitude": 40.1914,
+      "longitude": 8.5658,
+      "name": "Hampsicora's Revolt and Battle of Cornus",
+      "name_ru": "Восстание Гампсикоры и битва при Корне",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Cornus",
+      "tags": [
+        "Roman",
+        "Sardinia",
+        "War",
+        "Punic",
+        "Carthage",
+        "Revolt",
+        "Second Punic War",
+        "Battle"
+      ],
+      "type": "battle"
     },
     {
       "date": "09.04.0204",
@@ -2071,6 +2348,26 @@
         "Bridge"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0177",
+      "description": "Consul Tiberius Sempronius Gracchus leads two legions in a brutal two-year campaign against the Ilienses and Balari tribes in Sardinia's mountainous interior. According to Livy, 80,000 Sardinians are killed or enslaved, with captives sold so cheaply they create the proverb 'Sardi venales' (Sardinians for sale). Despite the devastation, the Barbagia highlands tribes are never fully subjugated and maintain resistance into the Imperial era.",
+      "description_ru": "Консул Тиберий Семпроний Гракх ведёт два легиона в жестокую двухлетнюю кампанию против племён илиенсов и балари в горном интерьере Сардинии. По Ливию, 80 000 сардинцев убиты или обращены в рабство, пленники проданы так дёшево, что породили поговорку 'Sardi venales' (сардинцы на продажу). Несмотря на опустошение, племена нагорья Барбаджия так и не покорены полностью и сохраняют сопротивление до имперской эпохи.",
+      "era": "BC",
+      "latitude": 39.9333,
+      "longitude": 9.3333,
+      "name": "Gracchus's Sardinian Pacification Campaign",
+      "name_ru": "Кампания Гракха по умиротворению Сардинии",
+      "source": "https://en.wikipedia.org/wiki/Tiberius_Sempronius_Gracchus_(consul_177_BC)",
+      "tags": [
+        "Roman",
+        "Sardinia",
+        "War",
+        "Conquest",
+        "Revolt",
+        "Gracchus 👤"
+      ],
+      "type": "battle"
     },
     {
       "date": "01.01.0171",
@@ -2500,6 +2797,25 @@
         "Roman"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0104",
+      "description": "Gaius Marius founds Colonia Mariana on Corsica's east coast, near the mouth of the Golo river. This is one of the first Roman colonies outside mainland Italy, established to settle veterans and consolidate Roman control over the island. The colony grows into a significant town and port, complementing Aleria as a center of Roman civilization on the still partially wild island.",
+      "description_ru": "Гай Марий основывает колонию Мариана на восточном побережье Корсики, близ устья реки Голо. Это одна из первых римских колоний за пределами материковой Италии, основанная для расселения ветеранов и укрепления римского контроля над островом. Колония вырастает в значительный город и порт, дополняя Алерию как центр римской цивилизации на всё ещё частично диком острове.",
+      "era": "BC",
+      "latitude": 42.4833,
+      "longitude": 9.4333,
+      "name": "Foundation of Colonia Mariana (Corsica)",
+      "name_ru": "Основание колонии Мариана (Корсика)",
+      "source": "https://en.wikipedia.org/wiki/Ancient_Corsica",
+      "tags": [
+        "Roman",
+        "Corsica",
+        "Colony",
+        "Marius 👤",
+        "Settlement"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0102",
