@@ -399,7 +399,7 @@ export default {
       return Array.from(yearGroups.values()).map(yg => {
         const dateMap = new Map()
         yg.events.forEach(event => {
-          const eventDate = event.event_date.split('T')[0]
+          const eventDate = event.event_date.split('T')[0] + '_' + (event.era || 'AD')
           if (!dateMap.has(eventDate)) {
             dateMap.set(eventDate, {
               date: eventDate,
