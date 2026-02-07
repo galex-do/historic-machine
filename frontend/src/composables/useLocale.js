@@ -717,31 +717,36 @@ export function useLocale() {
     return `${day} ${monthName} ${year} ${eraLabel}`
   }
 
-  // Format event display date with DD.MM.YYYY format and localized era labels
+  // Format event display date with smart year-only detection
+  // If date is January 1st (default placeholder), show only "YYYY Era"
+  // Otherwise show full "DD.MM.YYYY Era"
   // Input: ISO date string and era ('BC' or 'AD')
-  // Output: "29.05.1453 AD" or "29.05.1453 н.э." or "01.01.3500 BC" or "01.01.3500 до н.э."
+  // Output: "1453 AD" or "29.05.1453 AD" or "3500 до н.э." etc.
   const formatEventDisplayDate = (isoDateString, era) => {
     if (!isoDateString) return ''
     
     let year, month, day
     
     if (isoDateString.startsWith('-')) {
-      // Negative year format: "-3500-01-01T00:00:00Z"
       const parts = isoDateString.substring(1).split('T')[0].split('-')
       year = parseInt(parts[0], 10)
       month = parseInt(parts[1], 10)
       day = parseInt(parts[2], 10)
     } else {
-      // Positive year format: "1453-05-29T00:00:00Z"
       const parts = isoDateString.split('T')[0].split('-')
       year = parseInt(parts[0], 10)
       month = parseInt(parts[1], 10)
       day = parseInt(parts[2], 10)
     }
     
+    const eraLabel = era === 'BC' ? t('eraBC') : t('eraAD')
+    
+    if (month === 1 && day === 1) {
+      return `${year} ${eraLabel}`
+    }
+    
     const paddedDay = String(day).padStart(2, '0')
     const paddedMonth = String(month).padStart(2, '0')
-    const eraLabel = era === 'BC' ? t('eraBC') : t('eraAD')
     
     return `${paddedDay}.${paddedMonth}.${year} ${eraLabel}`
   }
