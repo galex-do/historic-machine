@@ -9,7 +9,7 @@
         </span>
         <button 
           class="toggle_details_btn" 
-          @click="showDetails = !showDetails"
+          @click="toggleDetails"
           :title="showDetails ? t('hideDetails') : t('showDetails')"
         >
           {{ showDetails ? '📝' : '📋' }}
@@ -28,7 +28,7 @@
         </div>
 
         <div v-else class="timeline_container">
-          <div v-for="yearGroup in visibleYearGroups" :key="yearGroup.yearKey" class="timeline_year_group">
+          <div v-for="yearGroup in visibleYearGroups" :key="yearGroup.yearKey" class="timeline_year_group" :data-year-key="yearGroup.yearKey">
             <!-- Single event in this year: everything on one line -->
             <div v-if="yearGroup.totalEvents === 1" class="timeline_single_event_line">
               <div class="timeline_bullet"></div>
@@ -368,6 +368,38 @@ export default {
       }
     }
 
+    const toggleDetails = () => {
+      const container = scrollContainer.value
+      if (!container) {
+        showDetails.value = !showDetails.value
+        return
+      }
+      const containerRect = container.getBoundingClientRect()
+      const groups = container.querySelectorAll('.timeline_year_group[data-year-key]')
+      let anchor = null
+      for (const el of groups) {
+        const elRect = el.getBoundingClientRect()
+        const relativeTop = elRect.top - containerRect.top
+        if (relativeTop <= 20) {
+          anchor = { key: el.dataset.yearKey, relativeTop }
+        } else {
+          if (!anchor) anchor = { key: el.dataset.yearKey, relativeTop }
+          break
+        }
+      }
+      showDetails.value = !showDetails.value
+      nextTick(() => {
+        if (anchor) {
+          const el = container.querySelector(`.timeline_year_group[data-year-key="${anchor.key}"]`)
+          if (el) {
+            const newRect = el.getBoundingClientRect()
+            const newRelativeTop = newRect.top - containerRect.top
+            container.scrollTop += newRelativeTop - anchor.relativeTop
+          }
+        }
+      })
+    }
+
     const closeModal = () => {
       emit('close')
       if (previouslyFocusedElement.value) {
@@ -450,6 +482,7 @@ export default {
       hasMoreEvents,
       isLoading,
       showDetails,
+      toggleDetails,
       closeModal,
       handleFocusEvent,
       handleTagClick,

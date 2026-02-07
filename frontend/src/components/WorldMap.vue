@@ -50,7 +50,7 @@
           <div class="event_header_actions">
             <button 
               class="toggle_details_btn" 
-              @click="location_show_details = !location_show_details"
+              @click="toggle_location_details"
               :title="location_show_details ? t('hideDetails') : t('showDetails')"
             >
               {{ location_show_details ? '📝' : '📋' }}
@@ -70,7 +70,7 @@
         <!-- Modal Content -->
         <div class="event_info_modal_content" ref="locationModalContent" @scroll="handle_location_scroll">
           <div class="timeline_container">
-            <div v-for="yearGroup in visible_grouped_events" :key="yearGroup.yearKey" class="timeline_year_group">
+            <div v-for="yearGroup in visible_grouped_events" :key="yearGroup.yearKey" class="timeline_year_group" :data-year-key="yearGroup.yearKey">
               <!-- Single event in this year: everything on one line -->
               <div v-if="yearGroup.totalEvents === 1" class="timeline_single_event_line">
                 <div class="timeline_bullet"></div>
@@ -1502,6 +1502,37 @@ export default {
       if (scrollBottom < 100 && this.location_has_more_events) {
         this.location_visible_count += 50
       }
+    },
+    toggle_location_details() {
+      const container = this.$refs.locationModalContent
+      if (!container) {
+        this.location_show_details = !this.location_show_details
+        return
+      }
+      const containerRect = container.getBoundingClientRect()
+      const groups = container.querySelectorAll('.timeline_year_group[data-year-key]')
+      let anchor = null
+      for (const el of groups) {
+        const elRect = el.getBoundingClientRect()
+        const relativeTop = elRect.top - containerRect.top
+        if (relativeTop <= 20) {
+          anchor = { key: el.dataset.yearKey, relativeTop }
+        } else {
+          if (!anchor) anchor = { key: el.dataset.yearKey, relativeTop }
+          break
+        }
+      }
+      this.location_show_details = !this.location_show_details
+      this.$nextTick(() => {
+        if (anchor) {
+          const el = container.querySelector(`.timeline_year_group[data-year-key="${anchor.key}"]`)
+          if (el) {
+            const newRect = el.getBoundingClientRect()
+            const newRelativeTop = newRect.top - containerRect.top
+            container.scrollTop += newRelativeTop - anchor.relativeTop
+          }
+        }
+      })
     },
 
     // Create new event at the same location as viewed events
