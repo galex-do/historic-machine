@@ -45,7 +45,7 @@
         <!-- Modal Header -->
         <div class="event_info_modal_header">
           <h2 class="event_info_modal_title">
-            {{ location_visible_event_count }}<span v-if="location_has_more_events">+</span> / {{ location_total_event_count }} {{ t('eventsAtLocation') }}
+            {{ location_total_event_count }} {{ t('eventsAtLocation') }}
           </h2>
           <div class="event_header_actions">
             <button 
