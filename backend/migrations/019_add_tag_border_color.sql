@@ -2,7 +2,9 @@
 ALTER TABLE tags ADD COLUMN IF NOT EXISTS border_color VARCHAR(7) DEFAULT NULL;
 
 -- Update the events view to include border_color in the tags JSON
-CREATE OR REPLACE VIEW events_with_display_dates AS
+-- Must DROP + CREATE because column order differs from original view
+DROP VIEW IF EXISTS events_with_display_dates;
+CREATE VIEW events_with_display_dates AS
 SELECT 
   id, name, description, latitude, longitude, event_date, era, lens_type,
   created_at, updated_at, created_by, updated_by, dataset_id, source,
@@ -44,10 +46,9 @@ GROUP BY id, name, description, latitude, longitude, event_date, era, lens_type,
 ORDER BY astronomical_year;
 
 -- +goose Down
-ALTER TABLE tags DROP COLUMN IF EXISTS border_color;
-
 -- Restore the view without border_color
-CREATE OR REPLACE VIEW events_with_display_dates AS
+DROP VIEW IF EXISTS events_with_display_dates;
+CREATE VIEW events_with_display_dates AS
 SELECT 
   id, name, description, latitude, longitude, event_date, era, lens_type,
   created_at, updated_at, created_by, updated_by, dataset_id, source,
@@ -86,3 +87,5 @@ SELECT
 FROM events e
 GROUP BY id, name, description, latitude, longitude, event_date, era, lens_type, source, dataset_id, created_at, updated_at, created_by, updated_by, name_en, name_ru, description_en, description_ru
 ORDER BY astronomical_year;
+
+ALTER TABLE tags DROP COLUMN IF EXISTS border_color;
