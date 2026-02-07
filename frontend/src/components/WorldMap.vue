@@ -63,38 +63,38 @@
         <!-- Modal Content -->
         <div class="event_info_modal_content" ref="locationModalContent">
           <div class="timeline_container">
-            <div v-for="group in grouped_events_by_date" :key="group.date" class="timeline_date_group">
-              <!-- Single event on this date: everything on one line -->
-              <div v-if="group.events.length === 1" class="timeline_single_event_line">
+            <div v-for="yearGroup in grouped_events_by_year" :key="yearGroup.yearKey" class="timeline_year_group">
+              <!-- Single event in this year: everything on one line -->
+              <div v-if="yearGroup.totalEvents === 1" class="timeline_single_event_line">
                 <div class="timeline_bullet"></div>
                 <span class="timeline_single_text">
-                  <span class="timeline_date_inline">{{ group.formattedDate }}</span>
+                  <span class="timeline_date_inline">{{ yearGroup.dateGroups[0].events[0]._formattedDate }}</span>
                   {{ ' ' }}
-                  <span class="event_icon">{{ get_event_emoji(group.events[0].lens_type) }}</span>
+                  <span class="event_icon">{{ get_event_emoji(yearGroup.dateGroups[0].events[0].lens_type) }}</span>
                   {{ ' ' }}
                   <span 
                      class="event_name event_name_link"
-                     @click="handle_show_detail(group.events[0])"
-                  >{{ group.events[0].name }}</span>
-                  <template v-if="group.events[0].description">
-                    {{ ' — ' }}{{ group.events[0].description }}
+                     @click="handle_show_detail(yearGroup.dateGroups[0].events[0])"
+                  >{{ yearGroup.dateGroups[0].events[0].name }}</span>
+                  <template v-if="yearGroup.dateGroups[0].events[0].description">
+                    {{ ' — ' }}{{ yearGroup.dateGroups[0].events[0].description }}
                   </template>
-                  <template v-if="group.events[0].tags && group.events[0].tags.length > 0">
+                  <template v-if="yearGroup.dateGroups[0].events[0].tags && yearGroup.dateGroups[0].events[0].tags.length > 0">
                     {{ ' ' }}
                     <span
-                      v-for="(tag, index) in group.events[0].tags"
+                      v-for="(tag, index) in yearGroup.dateGroups[0].events[0].tags"
                       :key="tag.id"
                       class="event_tag"
                       :style="{ color: tag.color || '#6366f1' }"
                       :title="`Click to filter events by '${tag.name}'`"
                       @click.stop="handleTagClick(tag)"
-                    >#{{ tag.name }}{{ index < group.events[0].tags.length - 1 ? ' ' : '' }}</span>
+                    >#{{ tag.name }}{{ index < yearGroup.dateGroups[0].events[0].tags.length - 1 ? ' ' : '' }}</span>
                   </template>
                   <template v-if="canEditEvents">
                     {{ ' ' }}
                     <button 
                       class="event_inline_edit_btn" 
-                      @click="edit_event_from_info(group.events[0].id)"
+                      @click="edit_event_from_info(yearGroup.dateGroups[0].events[0].id)"
                       title="Edit event"
                     >
                       ✏️
@@ -103,55 +103,61 @@
                 </span>
               </div>
 
-              <!-- Multiple events on this date: separate date header -->
+              <!-- Multiple events in this year -->
               <template v-else>
-                <!-- Date Header -->
+                <!-- Year Header -->
                 <div class="timeline_date_header">
                   <div class="timeline_bullet"></div>
-                  <div class="timeline_date">{{ group.formattedDate }}</div>
+                  <div class="timeline_date">{{ yearGroup.formattedYear }}</div>
                 </div>
 
-                <!-- Events for this date -->
+                <!-- Date subgroups within year -->
                 <div class="timeline_events_list">
-                  <div 
-                    v-for="event in group.events" 
-                    :key="event.id"
-                    class="timeline_event_line"
-                  >
-                    <!-- Event line: Icon + Name + Description + Tags in single flowing text -->
-                    <span class="timeline_single_text">
-                      <span class="event_icon">{{ get_event_emoji(event.lens_type) }}</span>
-                      {{ ' ' }}
-                      <span 
-                         class="event_name event_name_link"
-                         @click="handle_show_detail(event)"
-                      >{{ event.name }}</span>
-                      <template v-if="event.description">
-                        {{ ' — ' }}{{ event.description }}
-                      </template>
-                      <template v-if="event.tags && event.tags.length > 0">
+                  <template v-for="dateGroup in yearGroup.dateGroups" :key="dateGroup.date">
+                    <div v-if="dateGroup.showDateHeader" class="timeline_date_subheader">
+                      {{ dateGroup.formattedDate }}
+                    </div>
+
+                    <div 
+                      v-for="event in dateGroup.events" 
+                      :key="event.id"
+                      class="timeline_event_line"
+                      :class="{ 'timeline_event_line_indented': dateGroup.showDateHeader }"
+                    >
+                      <span class="timeline_single_text">
+                        <span class="event_icon">{{ get_event_emoji(event.lens_type) }}</span>
                         {{ ' ' }}
-                        <span
-                          v-for="(tag, index) in event.tags"
-                          :key="tag.id"
-                          class="event_tag"
-                          :style="{ color: tag.color || '#6366f1' }"
-                          :title="`Click to filter events by '${tag.name}'`"
-                          @click.stop="handleTagClick(tag)"
-                        >#{{ tag.name }}{{ index < event.tags.length - 1 ? ' ' : '' }}</span>
-                      </template>
-                      <template v-if="canEditEvents">
-                        {{ ' ' }}
-                        <button 
-                          class="event_inline_edit_btn" 
-                          @click="edit_event_from_info(event.id)"
-                          title="Edit event"
-                        >
-                          ✏️
-                        </button>
-                      </template>
-                    </span>
-                  </div>
+                        <span 
+                           class="event_name event_name_link"
+                           @click="handle_show_detail(event)"
+                        >{{ event.name }}</span>
+                        <template v-if="event.description">
+                          {{ ' — ' }}{{ event.description }}
+                        </template>
+                        <template v-if="event.tags && event.tags.length > 0">
+                          {{ ' ' }}
+                          <span
+                            v-for="(tag, index) in event.tags"
+                            :key="tag.id"
+                            class="event_tag"
+                            :style="{ color: tag.color || '#6366f1' }"
+                            :title="`Click to filter events by '${tag.name}'`"
+                            @click.stop="handleTagClick(tag)"
+                          >#{{ tag.name }}{{ index < event.tags.length - 1 ? ' ' : '' }}</span>
+                        </template>
+                        <template v-if="canEditEvents">
+                          {{ ' ' }}
+                          <button 
+                            class="event_inline_edit_btn" 
+                            @click="edit_event_from_info(event.id)"
+                            title="Edit event"
+                          >
+                            ✏️
+                          </button>
+                        </template>
+                      </span>
+                    </div>
+                  </template>
                 </div>
               </template>
             </div>
@@ -309,7 +315,7 @@ export default {
   },
   
   computed: {
-    grouped_events_by_date() {
+    grouped_events_by_year() {
       if (!this.selected_events || this.selected_events.length === 0) {
         return []
       }
@@ -341,30 +347,85 @@ export default {
         }
       }
 
-      // Sort events chronologically using BC/AD aware sorting
       const sortedEvents = [...this.selected_events].sort((a, b) => {
         const aValue = getChronologicalValue(a.event_date, a.era)
         const bValue = getChronologicalValue(b.event_date, b.era)
-        return aValue - bValue // Chronological order: older events first
+        return aValue - bValue
       })
 
-      // Group by date
-      const groups = {}
-      sortedEvents.forEach(event => {
-        // Extract date string (YYYY-MM-DD)
-        const eventDate = event.event_date.split('T')[0]
-        
-        if (!groups[eventDate]) {
-          groups[eventDate] = {
-            date: eventDate,
-            formattedDate: this.formatEventDisplayDate(event.event_date, event.era),
-            events: []
-          }
+      const getYearKey = (isoDateString, era) => {
+        let year
+        if (isoDateString.startsWith('-')) {
+          year = parseInt(isoDateString.substring(1).split('T')[0].split('-')[0], 10)
+        } else {
+          year = parseInt(isoDateString.split('T')[0].split('-')[0], 10)
         }
-        groups[eventDate].events.push(event)
+        return `${year}_${era || 'AD'}`
+      }
+
+      const getFormattedYear = (isoDateString, era) => {
+        let year
+        if (isoDateString.startsWith('-')) {
+          year = parseInt(isoDateString.substring(1).split('T')[0].split('-')[0], 10)
+        } else {
+          year = parseInt(isoDateString.split('T')[0].split('-')[0], 10)
+        }
+        const eraLabel = era === 'BC' ? this.t('eraBC') : this.t('eraAD')
+        return `${year} ${eraLabel}`
+      }
+
+      const isJanFirst = (isoDateString) => {
+        const datePart = isoDateString.startsWith('-')
+          ? isoDateString.substring(1).split('T')[0]
+          : isoDateString.split('T')[0]
+        const parts = datePart.split('-')
+        return parseInt(parts[1], 10) === 1 && parseInt(parts[2], 10) === 1
+      }
+
+      const yearGroups = new Map()
+      sortedEvents.forEach(event => {
+        const yearKey = getYearKey(event.event_date, event.era)
+        if (!yearGroups.has(yearKey)) {
+          yearGroups.set(yearKey, {
+            yearKey,
+            formattedYear: getFormattedYear(event.event_date, event.era),
+            events: []
+          })
+        }
+        yearGroups.get(yearKey).events.push(event)
       })
 
-      return Object.values(groups)
+      return Array.from(yearGroups.values()).map(yg => {
+        const dateMap = new Map()
+        yg.events.forEach(event => {
+          const eventDate = event.event_date.split('T')[0]
+          if (!dateMap.has(eventDate)) {
+            dateMap.set(eventDate, {
+              date: eventDate,
+              formattedDate: this.formatEventDisplayDate(event.event_date, event.era),
+              isYearOnly: isJanFirst(event.event_date),
+              events: []
+            })
+          }
+          dateMap.get(eventDate).events.push({
+            ...event,
+            _formattedDate: this.formatEventDisplayDate(event.event_date, event.era)
+          })
+        })
+
+        const dateGroups = Array.from(dateMap.values())
+        const hasSpecificDates = dateGroups.some(dg => !dg.isYearOnly)
+        dateGroups.forEach(dg => {
+          dg.showDateHeader = !dg.isYearOnly && (hasSpecificDates || dateGroups.length > 1)
+        })
+
+        return {
+          yearKey: yg.yearKey,
+          formattedYear: yg.formattedYear,
+          totalEvents: yg.events.length,
+          dateGroups
+        }
+      })
     }
   },
   
@@ -2138,7 +2199,7 @@ export default {
   z-index: 1;
 }
 
-.timeline_date_group {
+.timeline_year_group {
   position: relative;
   margin-bottom: 0.25rem;
 }
@@ -2208,16 +2269,28 @@ export default {
 }
 
 .timeline_events_list {
-  margin-left: 1.25rem;
+  margin-left: 0.75rem;
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.125rem;
+}
+
+.timeline_date_subheader {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #475569;
+  padding: 0.15rem 0 0.05rem 0.35rem;
+  margin-top: 0.15rem;
 }
 
 .timeline_event_line {
-  padding: 0.25rem 0;
-  padding-left: 0.5rem;
+  padding: 0.15rem 0;
+  padding-left: 0.35rem;
   line-height: 1.5;
+}
+
+.timeline_event_line_indented {
+  padding-left: 0.75rem;
 }
 
 .event_tag {

@@ -23,43 +23,43 @@
         ref="scrollContainer"
         @scroll="handleScroll"
       >
-        <div v-if="visibleGroups.length === 0 && !isLoading" class="no_events_message">
+        <div v-if="visibleYearGroups.length === 0 && !isLoading" class="no_events_message">
           {{ t('noEventsInTimeline') }}
         </div>
 
         <div v-else class="timeline_container">
-          <div v-for="group in visibleGroups" :key="group.date" class="timeline_date_group">
-            <!-- Single event on this date: everything on one line -->
-            <div v-if="group.events.length === 1" class="timeline_single_event_line">
+          <div v-for="yearGroup in visibleYearGroups" :key="yearGroup.yearKey" class="timeline_year_group">
+            <!-- Single event in this year: everything on one line -->
+            <div v-if="yearGroup.totalEvents === 1" class="timeline_single_event_line">
               <div class="timeline_bullet"></div>
               <span class="timeline_single_text">
-                <span class="timeline_date_inline">{{ group.formattedDate }}</span>
+                <span class="timeline_date_inline">{{ yearGroup.dateGroups[0].events[0]._formattedDate }}</span>
                 {{ ' ' }}
-                <span class="event_icon">{{ getEventEmoji(group.events[0].lens_type) }}</span>
+                <span class="event_icon">{{ getEventEmoji(yearGroup.dateGroups[0].events[0].lens_type) }}</span>
                 {{ ' ' }}
                 <span 
                    class="event_name event_name_link"
-                   @click="handleShowDetail(group.events[0])"
-                >{{ group.events[0].name }}</span>
-                <template v-if="showDetails && group.events[0].description">
-                  {{ ' — ' }}{{ group.events[0].description }}
+                   @click="handleShowDetail(yearGroup.dateGroups[0].events[0])"
+                >{{ yearGroup.dateGroups[0].events[0].name }}</span>
+                <template v-if="showDetails && yearGroup.dateGroups[0].events[0].description">
+                  {{ ' — ' }}{{ yearGroup.dateGroups[0].events[0].description }}
                 </template>
-                <template v-if="showDetails && group.events[0].tags && group.events[0].tags.length > 0">
+                <template v-if="showDetails && yearGroup.dateGroups[0].events[0].tags && yearGroup.dateGroups[0].events[0].tags.length > 0">
                   {{ ' ' }}
                   <span
-                    v-for="(tag, index) in group.events[0].tags"
+                    v-for="(tag, index) in yearGroup.dateGroups[0].events[0].tags"
                     :key="tag.id"
                     class="event_tag"
                     :style="{ color: tag.color || '#6366f1' }"
                     :title="`Click to filter events by '${tag.name}'`"
                     @click.stop="handleTagClick(tag)"
-                  >#{{ tag.name }}{{ index < group.events[0].tags.length - 1 ? ' ' : '' }}</span>
+                  >#{{ tag.name }}{{ index < yearGroup.dateGroups[0].events[0].tags.length - 1 ? ' ' : '' }}</span>
                 </template>
                 <template v-if="showDetails">
                   {{ ' ' }}
                   <button 
                     class="timeline_focus_btn" 
-                    @click="handleFocusEvent(group.events[0])"
+                    @click="handleFocusEvent(yearGroup.dateGroups[0].events[0])"
                     :title="t('focusOnMap')"
                   >
                     ⌖
@@ -68,55 +68,62 @@
               </span>
             </div>
 
-            <!-- Multiple events on this date: separate date header -->
+            <!-- Multiple events in this year -->
             <template v-else>
-              <!-- Date Header -->
+              <!-- Year Header -->
               <div class="timeline_date_header">
                 <div class="timeline_bullet"></div>
-                <div class="timeline_date">{{ group.formattedDate }}</div>
+                <div class="timeline_date">{{ yearGroup.formattedYear }}</div>
               </div>
 
-              <!-- Events for this date -->
+              <!-- Date subgroups within year -->
               <div class="timeline_events_list">
-                <div 
-                  v-for="event in group.events" 
-                  :key="event.id"
-                  class="timeline_event_line"
-                >
-                  <!-- Event line: Icon + Name + Description + Tags in single flowing text -->
-                  <span class="timeline_single_text">
-                    <span class="event_icon">{{ getEventEmoji(event.lens_type) }}</span>
-                    {{ ' ' }}
-                    <span 
-                       class="event_name event_name_link"
-                       @click="handleShowDetail(event)"
-                    >{{ event.name }}</span>
-                    <template v-if="showDetails && event.description">
-                      {{ ' — ' }}{{ event.description }}
-                    </template>
-                    <template v-if="showDetails && event.tags && event.tags.length > 0">
+                <template v-for="dateGroup in yearGroup.dateGroups" :key="dateGroup.date">
+                  <!-- Date subheader (only for non-Jan-1 dates with multiple events, or mixed dates) -->
+                  <div v-if="dateGroup.showDateHeader" class="timeline_date_subheader">
+                    {{ dateGroup.formattedDate }}
+                  </div>
+
+                  <div 
+                    v-for="event in dateGroup.events" 
+                    :key="event.id"
+                    class="timeline_event_line"
+                    :class="{ 'timeline_event_line_indented': dateGroup.showDateHeader }"
+                  >
+                    <span class="timeline_single_text">
+                      <span class="event_icon">{{ getEventEmoji(event.lens_type) }}</span>
                       {{ ' ' }}
-                      <span
-                        v-for="(tag, index) in event.tags"
-                        :key="tag.id"
-                        class="event_tag"
-                        :style="{ color: tag.color || '#6366f1' }"
-                        :title="`Click to filter events by '${tag.name}'`"
-                        @click.stop="handleTagClick(tag)"
-                      >#{{ tag.name }}{{ index < event.tags.length - 1 ? ' ' : '' }}</span>
-                    </template>
-                    <template v-if="showDetails">
-                      {{ ' ' }}
-                      <button 
-                        class="timeline_focus_btn" 
-                        @click="handleFocusEvent(event)"
-                        :title="t('focusOnMap')"
-                      >
-                        ⌖
-                      </button>
-                    </template>
-                  </span>
-                </div>
+                      <span 
+                         class="event_name event_name_link"
+                         @click="handleShowDetail(event)"
+                      >{{ event.name }}</span>
+                      <template v-if="showDetails && event.description">
+                        {{ ' — ' }}{{ event.description }}
+                      </template>
+                      <template v-if="showDetails && event.tags && event.tags.length > 0">
+                        {{ ' ' }}
+                        <span
+                          v-for="(tag, index) in event.tags"
+                          :key="tag.id"
+                          class="event_tag"
+                          :style="{ color: tag.color || '#6366f1' }"
+                          :title="`Click to filter events by '${tag.name}'`"
+                          @click.stop="handleTagClick(tag)"
+                        >#{{ tag.name }}{{ index < event.tags.length - 1 ? ' ' : '' }}</span>
+                      </template>
+                      <template v-if="showDetails">
+                        {{ ' ' }}
+                        <button 
+                          class="timeline_focus_btn" 
+                          @click="handleFocusEvent(event)"
+                          :title="t('focusOnMap')"
+                        >
+                          ⌖
+                        </button>
+                      </template>
+                    </span>
+                  </div>
+                </template>
               </div>
             </template>
           </div>
@@ -198,6 +205,35 @@ export default {
       }
     }
 
+    const getYearKey = (isoDateString, era) => {
+      let year
+      if (isoDateString.startsWith('-')) {
+        year = parseInt(isoDateString.substring(1).split('T')[0].split('-')[0], 10)
+      } else {
+        year = parseInt(isoDateString.split('T')[0].split('-')[0], 10)
+      }
+      return `${year}_${era || 'AD'}`
+    }
+
+    const getFormattedYear = (isoDateString, era) => {
+      let year
+      if (isoDateString.startsWith('-')) {
+        year = parseInt(isoDateString.substring(1).split('T')[0].split('-')[0], 10)
+      } else {
+        year = parseInt(isoDateString.split('T')[0].split('-')[0], 10)
+      }
+      const eraLabel = era === 'BC' ? t('eraBC') : t('eraAD')
+      return `${year} ${eraLabel}`
+    }
+
+    const isJanFirst = (isoDateString) => {
+      const datePart = isoDateString.startsWith('-')
+        ? isoDateString.substring(1).split('T')[0]
+        : isoDateString.split('T')[0]
+      const parts = datePart.split('-')
+      return parseInt(parts[1], 10) === 1 && parseInt(parts[2], 10) === 1
+    }
+
     const computeGroupedEvents = (events) => {
       if (!events || events.length === 0) {
         return []
@@ -209,21 +245,50 @@ export default {
         return aValue - bValue
       })
 
-      const groups = {}
+      const yearGroups = new Map()
       sortedEvents.forEach(event => {
-        const eventDate = event.event_date.split('T')[0]
-        
-        if (!groups[eventDate]) {
-          groups[eventDate] = {
-            date: eventDate,
-            formattedDate: formatEventDisplayDate(event.event_date, event.era),
+        const yearKey = getYearKey(event.event_date, event.era)
+        if (!yearGroups.has(yearKey)) {
+          yearGroups.set(yearKey, {
+            yearKey,
+            formattedYear: getFormattedYear(event.event_date, event.era),
             events: []
-          }
+          })
         }
-        groups[eventDate].events.push(event)
+        yearGroups.get(yearKey).events.push(event)
       })
 
-      return Object.values(groups)
+      return Array.from(yearGroups.values()).map(yg => {
+        const dateMap = new Map()
+        yg.events.forEach(event => {
+          const eventDate = event.event_date.split('T')[0]
+          if (!dateMap.has(eventDate)) {
+            dateMap.set(eventDate, {
+              date: eventDate,
+              formattedDate: formatEventDisplayDate(event.event_date, event.era),
+              isYearOnly: isJanFirst(event.event_date),
+              events: []
+            })
+          }
+          dateMap.get(eventDate).events.push({
+            ...event,
+            _formattedDate: formatEventDisplayDate(event.event_date, event.era)
+          })
+        })
+
+        const dateGroups = Array.from(dateMap.values())
+        const hasSpecificDates = dateGroups.some(dg => !dg.isYearOnly)
+        dateGroups.forEach(dg => {
+          dg.showDateHeader = !dg.isYearOnly && (hasSpecificDates || dateGroups.length > 1)
+        })
+
+        return {
+          yearKey: yg.yearKey,
+          formattedYear: yg.formattedYear,
+          totalEvents: yg.events.length,
+          dateGroups
+        }
+      })
     }
 
     watch(() => props.events, (newEvents) => {
@@ -238,24 +303,35 @@ export default {
 
     const totalEventCount = computed(() => props.events?.length || 0)
 
-    const visibleGroups = computed(() => {
+    const visibleYearGroups = computed(() => {
       const groups = allGroupedEvents.value
       let eventCount = 0
       const result = []
       
-      for (const group of groups) {
+      for (const yearGroup of groups) {
         if (eventCount >= visibleCount.value) break
         
         const remainingSlots = visibleCount.value - eventCount
-        if (group.events.length <= remainingSlots) {
-          result.push(group)
-          eventCount += group.events.length
+        if (yearGroup.totalEvents <= remainingSlots) {
+          result.push(yearGroup)
+          eventCount += yearGroup.totalEvents
         } else {
-          result.push({
-            ...group,
-            events: group.events.slice(0, remainingSlots)
-          })
-          eventCount += remainingSlots
+          const trimmedDateGroups = []
+          let used = 0
+          for (const dg of yearGroup.dateGroups) {
+            if (used >= remainingSlots) break
+            const slotsLeft = remainingSlots - used
+            if (dg.events.length <= slotsLeft) {
+              trimmedDateGroups.push(dg)
+              used += dg.events.length
+            } else {
+              trimmedDateGroups.push({ ...dg, events: dg.events.slice(0, slotsLeft) })
+              used += slotsLeft
+              break
+            }
+          }
+          result.push({ ...yearGroup, totalEvents: used, dateGroups: trimmedDateGroups })
+          eventCount += used
           break
         }
       }
@@ -264,7 +340,7 @@ export default {
     })
 
     const visibleEventCount = computed(() => {
-      return visibleGroups.value.reduce((sum, group) => sum + group.events.length, 0)
+      return visibleYearGroups.value.reduce((sum, yg) => sum + yg.totalEvents, 0)
     })
 
     const hasMoreEvents = computed(() => {
@@ -367,7 +443,7 @@ export default {
     return {
       t,
       scrollContainer,
-      visibleGroups,
+      visibleYearGroups,
       totalEventCount,
       visibleEventCount,
       hasMoreEvents,
@@ -503,7 +579,7 @@ export default {
   z-index: 1;
 }
 
-.timeline_date_group {
+.timeline_year_group {
   position: relative;
   margin-bottom: 0.25rem;
 }
@@ -573,16 +649,28 @@ export default {
 }
 
 .timeline_events_list {
-  margin-left: 1.25rem;
+  margin-left: 0.75rem;
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.125rem;
+}
+
+.timeline_date_subheader {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #475569;
+  padding: 0.15rem 0 0.05rem 0.35rem;
+  margin-top: 0.15rem;
 }
 
 .timeline_event_line {
-  padding: 0.25rem 0;
-  padding-left: 0.5rem;
+  padding: 0.15rem 0;
+  padding-left: 0.35rem;
   line-height: 1.5;
+}
+
+.timeline_event_line_indented {
+  padding-left: 0.75rem;
 }
 
 .event_tag {
