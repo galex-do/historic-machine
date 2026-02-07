@@ -44,6 +44,7 @@
             @remove-tag="handleRemoveTag"
             @clear-all-tags="handleClearAllTags"
             @toggle-follow="handleToggleNarrativeFlow"
+            @focus-on-filtered="handleFocusOnFiltered"
             @geolocate="handleGeolocate"
             @share="handleShareUrl"
             @edit-event="handleEditEvent"
@@ -308,6 +309,12 @@ export default {
       }
     }
 
+    const handleFocusOnFiltered = () => {
+      if (worldMap.value && worldMap.value.fit_map_to_events) {
+        worldMap.value.fit_map_to_events()
+      }
+    }
+
     // Geolocation handler - center map on user's location
     const handleGeolocate = (coords) => {
       if (worldMap.value && worldMap.value.centerOnCoordinates) {
@@ -563,6 +570,7 @@ export default {
       handleRemoveTag,
       handleClearAllTags,
       handleToggleNarrativeFlow,
+      handleFocusOnFiltered,
 
       // Map filter
       displayedEvents,

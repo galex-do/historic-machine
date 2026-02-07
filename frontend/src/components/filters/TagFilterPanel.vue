@@ -57,6 +57,13 @@
           >
             {{ followEnabled ? '🔗' : '○' }} {{ t('followEvents') }}
           </button>
+          <button
+            class="focus_filtered_btn"
+            @click="$emit('focus-on-filtered')"
+            :title="t('focusOnFilteredTitle')"
+          >
+            ⌖
+          </button>
           <button 
             class="clear_all_btn" 
             @click="$emit('clear-all-tags')"
@@ -110,7 +117,7 @@ export default {
       default: false
     }
   },
-  emits: ['remove-tag', 'clear-all-tags', 'toggle-follow', 'add-tag'],
+  emits: ['remove-tag', 'clear-all-tags', 'toggle-follow', 'add-tag', 'focus-on-filtered'],
   setup(props, { emit }) {
     const { t } = useLocale()
     
@@ -353,6 +360,28 @@ export default {
 .follow_toggle_btn.active:hover {
   background: #2563eb;
   border-color: #1d4ed8;
+}
+
+.focus_filtered_btn {
+  background: #e2e8f0;
+  border: 1px solid #cbd5e0;
+  color: #4a5568;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.focus_filtered_btn:hover {
+  background: #3b82f6;
+  border-color: #2563eb;
+  color: white;
 }
 
 .clear_all_btn {

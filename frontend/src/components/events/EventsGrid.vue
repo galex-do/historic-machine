@@ -79,6 +79,7 @@
       @remove-tag="$emit('remove-tag', $event)"
       @clear-all-tags="$emit('clear-all-tags')"
       @toggle-follow="$emit('toggle-follow')"
+      @focus-on-filtered="$emit('focus-on-filtered')"
       @add-tag="$emit('tag-clicked', $event)"
     />
 
@@ -168,7 +169,7 @@ export default {
       default: false
     }
   },
-  emits: ['focus-event', 'highlight-event', 'map-filter-toggle', 'tag-clicked', 'remove-tag', 'clear-all-tags', 'toggle-follow', 'geolocate', 'share', 'edit-event', 'back-to-location'],
+  emits: ['focus-event', 'highlight-event', 'map-filter-toggle', 'tag-clicked', 'remove-tag', 'clear-all-tags', 'toggle-follow', 'focus-on-filtered', 'geolocate', 'share', 'edit-event', 'back-to-location'],
   setup() {
     const { t } = useLocale()
     const { loading: geolocationLoading, get_current_position } = useGeolocation()
