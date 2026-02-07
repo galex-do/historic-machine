@@ -77,10 +77,10 @@
         <div 
           v-for="tag in selectedTags" 
           :key="tag.id"
-          class="tag_chip"
+          class="event_tag_badge_removable"
           :style="{ 
             backgroundColor: tag.color || '#6366f1',
-            borderColor: tag.color || '#6366f1'
+            color: getContrastColor(tag.color || '#6366f1')
           }"
         >
           <span class="tag_name">{{ tag.name }}</span>
@@ -100,6 +100,7 @@
 <script>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useLocale } from '@/composables/useLocale.js'
+import { getContrastColor } from '@/utils/color-utils.js'
 
 export default {
   name: 'TagFilterPanel',
@@ -221,12 +222,16 @@ export default {
       addTag,
       handleFocus,
       handleBlur,
-      getTagEventCount
+      getTagEventCount,
+      getContrastColor
     }
   }
 }
 </script>
 
+<style>
+@import '@/styles/tag-badge.css';
+</style>
 <style scoped>
 .tag_filter_panel {
   background: #f8f9fa;
@@ -406,51 +411,5 @@ export default {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-}
-
-.tag_chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.25rem 0.5rem;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: white;
-  transition: all 0.2s;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.tag_chip:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.tag_name {
-  user-select: none;
-}
-
-.remove_tag_btn {
-  background: rgba(255, 255, 255, 0.3);
-  border: none;
-  color: white;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 1rem;
-  line-height: 1;
-  transition: all 0.2s;
-  padding: 0;
-}
-
-.remove_tag_btn:hover {
-  background: rgba(255, 255, 255, 0.5);
-  transform: scale(1.1);
 }
 </style>
