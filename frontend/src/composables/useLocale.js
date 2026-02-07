@@ -264,7 +264,7 @@ const UI_TRANSLATIONS = {
     back: 'Back',
     showDetails: 'Show descriptions and tags',
     hideDetails: 'Hide descriptions and tags',
-    eventsAtLocation: 'Events at this Location',
+    eventsAtLocation: 'events here',
     highlightOnMap: 'Highlight on map',
     clickToReadMore: 'Click to read more',
     
@@ -596,7 +596,7 @@ const UI_TRANSLATIONS = {
     back: 'Назад',
     showDetails: 'Показать описания и теги',
     hideDetails: 'Скрыть описания и теги',
-    eventsAtLocation: 'событий в этом месте',
+    eventsAtLocation: 'событий здесь',
     highlightOnMap: 'Выделить на карте',
     clickToReadMore: 'Нажмите, чтобы читать далее',
     
