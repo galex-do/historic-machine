@@ -82,13 +82,13 @@
                   <template v-if="yearGroup.dateGroups[0].events[0].tags && yearGroup.dateGroups[0].events[0].tags.length > 0">
                     {{ ' ' }}
                     <span
-                      v-for="(tag, index) in yearGroup.dateGroups[0].events[0].tags"
+                      v-for="tag in yearGroup.dateGroups[0].events[0].tags"
                       :key="tag.id"
-                      class="event_tag"
-                      :style="{ color: tag.color || '#6366f1' }"
+                      class="event_tag_badge"
+                      :style="{ backgroundColor: tag.color || '#6366f1', color: getContrastColor(tag.color || '#6366f1') }"
                       :title="`Click to filter events by '${tag.name}'`"
                       @click.stop="handleTagClick(tag)"
-                    >#{{ tag.name }}{{ index < yearGroup.dateGroups[0].events[0].tags.length - 1 ? ' ' : '' }}</span>
+                    >{{ tag.name }}</span>
                   </template>
                   <template v-if="canEditEvents">
                     {{ ' ' }}
@@ -137,13 +137,13 @@
                         <template v-if="event.tags && event.tags.length > 0">
                           {{ ' ' }}
                           <span
-                            v-for="(tag, index) in event.tags"
+                            v-for="tag in event.tags"
                             :key="tag.id"
-                            class="event_tag"
-                            :style="{ color: tag.color || '#6366f1' }"
+                            class="event_tag_badge"
+                            :style="{ backgroundColor: tag.color || '#6366f1', color: getContrastColor(tag.color || '#6366f1') }"
                             :title="`Click to filter events by '${tag.name}'`"
                             @click.stop="handleTagClick(tag)"
-                          >#{{ tag.name }}{{ index < event.tags.length - 1 ? ' ' : '' }}</span>
+                          >{{ tag.name }}</span>
                         </template>
                         <template v-if="canEditEvents">
                           {{ ' ' }}
@@ -179,6 +179,7 @@ import { useTags } from '@/composables/useTags.js'
 import { useLocale } from '@/composables/useLocale.js'
 import apiService from '@/services/api.js'
 import { getEventEmoji, getAvailableLensTypes } from '@/utils/event-utils.js'
+import { getContrastColor } from '@/utils/color-utils.js'
 import EventForm from '@/components/events/EventForm.vue'
 
 export default {
@@ -1532,24 +1533,7 @@ export default {
       }
     },
 
-    // Get contrast color for text on colored backgrounds
-    getContrastColor(hexColor) {
-      if (!hexColor) return '#000000'
-      
-      // Remove # if present
-      const color = hexColor.replace('#', '')
-      
-      // Convert to RGB
-      const r = parseInt(color.substr(0, 2), 16)
-      const g = parseInt(color.substr(2, 2), 16)
-      const b = parseInt(color.substr(4, 2), 16)
-      
-      // Calculate luminance
-      const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255
-      
-      // Return black for light colors, white for dark colors
-      return luminance > 0.5 ? '#000000' : '#ffffff'
-    },
+    getContrastColor,
     
     // Render narrative flow polylines connecting events chronologically
     render_narrative_flow() {
@@ -2289,15 +2273,21 @@ export default {
   padding-left: 0.75rem;
 }
 
-.event_tag {
-  font-size: 0.75rem;
-  font-weight: 600;
+.event_tag_badge {
+  display: inline-block;
+  padding: 0.05rem 0.4rem;
+  border-radius: 9999px;
+  font-size: 0.65rem;
+  font-weight: 500;
   cursor: pointer;
   transition: opacity 0.2s;
+  white-space: nowrap;
+  vertical-align: middle;
+  margin: 0 0.1rem;
 }
 
-.event_tag:hover {
-  opacity: 0.7;
+.event_tag_badge:hover {
+  opacity: 0.75;
 }
 
 .event_inline_edit_btn {

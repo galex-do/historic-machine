@@ -22,11 +22,11 @@
           <span
             v-for="tag in event.tags"
             :key="tag.id"
-            class="event_tag"
-            :style="{ color: tag.color || '#6366f1' }"
+            class="event_tag_badge"
+            :style="{ backgroundColor: tag.color || '#6366f1', color: getContrastColor(tag.color || '#6366f1') }"
             @click.stop="handleTagClick(tag)"
             :title="tag.description"
-          >#{{ tag.name }}</span>
+          >{{ tag.name }}</span>
         </div>
 
         <div v-if="hasRelatedEvents" class="related_events_section">
@@ -118,6 +118,7 @@ import { useLocale } from '@/composables/useLocale.js'
 import { useRelatedEvents } from '@/composables/useRelatedEvents.js'
 import { useAuth } from '@/composables/useAuth.js'
 import { getEventEmoji } from '@/utils/event-utils.js'
+import { getContrastColor } from '@/utils/color-utils.js'
 
 export default {
   name: 'EventDetailModal',
@@ -215,6 +216,7 @@ export default {
       t,
       formatEventDisplayDate,
       getEventEmoji,
+      getContrastColor,
       canEditEvents,
       closeModal,
       handleFocusEvent,
@@ -343,21 +345,23 @@ export default {
 .event_tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.25rem 0.5rem;
+  gap: 0.25rem;
   margin-top: 0.75rem;
-  line-height: 1.2;
 }
 
-.event_tag {
-  font-size: 0.75rem;
-  font-weight: 600;
+.event_tag_badge {
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 500;
   cursor: pointer;
   transition: opacity 0.2s;
-  line-height: 1.2;
+  white-space: nowrap;
 }
 
-.event_tag:hover {
-  opacity: 0.7;
+.event_tag_badge:hover {
+  opacity: 0.75;
 }
 
 .related_events_section {

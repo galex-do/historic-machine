@@ -39,13 +39,13 @@
     <!-- Tags row (always visible) -->
     <div v-if="event.tags && event.tags.length > 0" class="event_tags_row">
       <span
-        v-for="(tag, index) in event.tags"
+        v-for="tag in event.tags"
         :key="tag.id"
-        class="event_tag"
-        :style="{ color: tag.color || '#6366f1' }"
+        class="event_tag_badge"
+        :style="{ backgroundColor: tag.color || '#6366f1', color: getContrastColor(tag.color || '#6366f1') }"
         @click.stop="$emit('tag-clicked', tag)"
         :title="tag.description"
-      >#{{ tag.name }}</span>
+      >{{ tag.name }}</span>
     </div>
     
     <!-- Date below -->
@@ -57,6 +57,7 @@
 
 <script>
 import { getEventEmoji } from '@/utils/event-utils.js'
+import { getContrastColor } from '@/utils/color-utils.js'
 import { useLocale } from '@/composables/useLocale.js'
 
 export default {
@@ -81,7 +82,8 @@ export default {
     }
   },
   methods: {
-    getEventEmoji
+    getEventEmoji,
+    getContrastColor
   }
 }
 </script>
@@ -144,21 +146,23 @@ export default {
 .event_tags_row {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.25rem 0.5rem;
+  gap: 0.2rem;
   margin-top: 0.25rem;
-  line-height: 1.2;
 }
 
-.event_tag {
-  font-size: 0.7rem;
-  font-weight: 600;
+.event_tag_badge {
+  display: inline-block;
+  padding: 0.05rem 0.4rem;
+  border-radius: 9999px;
+  font-size: 0.65rem;
+  font-weight: 500;
   cursor: pointer;
   transition: opacity 0.2s;
-  line-height: 1.2;
+  white-space: nowrap;
 }
 
-.event_tag:hover {
-  opacity: 0.7;
+.event_tag_badge:hover {
+  opacity: 0.75;
 }
 
 .highlight_btn,
