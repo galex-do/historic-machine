@@ -189,7 +189,7 @@ export default {
   setup() {
     const { canCreateEvents, canEditEvents, isGuest } = useAuth()
     const { allTags, loadTags } = useTags()
-    const { formatEventDisplayDate, t } = useLocale()
+    const { formatEventDisplayDate, formatDayMonth, t } = useLocale()
     return {
       canCreateEvents,
       canEditEvents,
@@ -197,7 +197,8 @@ export default {
       allTags,
       t,
       loadTags,
-      formatEventDisplayDate
+      formatEventDisplayDate,
+      formatDayMonth
     }
   },
   props: {
@@ -402,7 +403,7 @@ export default {
           if (!dateMap.has(eventDate)) {
             dateMap.set(eventDate, {
               date: eventDate,
-              formattedDate: this.formatEventDisplayDate(event.event_date, event.era),
+              formattedDate: this.formatDayMonth(event.event_date),
               isYearOnly: isJanFirst(event.event_date),
               events: []
             })

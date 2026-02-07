@@ -166,7 +166,7 @@ export default {
   },
   emits: ['close', 'focus-event', 'tag-clicked', 'show-detail'],
   setup(props, { emit }) {
-    const { t, formatEventDisplayDate } = useLocale()
+    const { t, formatEventDisplayDate, formatDayMonth } = useLocale()
     const previouslyFocusedElement = ref(null)
     const scrollContainer = ref(null)
     
@@ -265,7 +265,7 @@ export default {
           if (!dateMap.has(eventDate)) {
             dateMap.set(eventDate, {
               date: eventDate,
-              formattedDate: formatEventDisplayDate(event.event_date, event.era),
+              formattedDate: formatDayMonth(event.event_date),
               isYearOnly: isJanFirst(event.event_date),
               events: []
             })

@@ -198,7 +198,7 @@ const UI_TRANSLATIONS = {
     columnStatus: 'Status',
     columnLastActive: 'Last Active',
     
-    // Month Names
+    // Month Names (abbreviated)
     monthJan: 'Jan',
     monthFeb: 'Feb',
     monthMar: 'Mar',
@@ -211,6 +211,19 @@ const UI_TRANSLATIONS = {
     monthOct: 'Oct',
     monthNov: 'Nov',
     monthDec: 'Dec',
+    // Month Names (full)
+    monthFullJan: 'January',
+    monthFullFeb: 'February',
+    monthFullMar: 'March',
+    monthFullApr: 'April',
+    monthFullMay: 'May',
+    monthFullJun: 'June',
+    monthFullJul: 'July',
+    monthFullAug: 'August',
+    monthFullSep: 'September',
+    monthFullOct: 'October',
+    monthFullNov: 'November',
+    monthFullDec: 'December',
     
     // Era Labels
     eraBC: 'BC',
@@ -514,7 +527,7 @@ const UI_TRANSLATIONS = {
     columnStatus: 'Статус',
     columnLastActive: 'Последняя активность',
     
-    // Month Names
+    // Month Names (abbreviated)
     monthJan: 'янв',
     monthFeb: 'фев',
     monthMar: 'мар',
@@ -527,6 +540,19 @@ const UI_TRANSLATIONS = {
     monthOct: 'окт',
     monthNov: 'ноя',
     monthDec: 'дек',
+    // Month Names (full)
+    monthFullJan: 'января',
+    monthFullFeb: 'февраля',
+    monthFullMar: 'марта',
+    monthFullApr: 'апреля',
+    monthFullMay: 'мая',
+    monthFullJun: 'июня',
+    monthFullJul: 'июля',
+    monthFullAug: 'августа',
+    monthFullSep: 'сентября',
+    monthFullOct: 'октября',
+    monthFullNov: 'ноября',
+    monthFullDec: 'декабря',
     
     // Era Labels
     eraBC: 'до н.э.',
@@ -717,6 +743,36 @@ export function useLocale() {
     return `${day} ${monthName} ${year} ${eraLabel}`
   }
 
+  // Format day and month only (no year), using full localized month names
+  // Input: ISO date string like "0522-09-29T00:00:00Z"
+  // Output: "September 29" (en) or "29 сентября" (ru)
+  const formatDayMonth = (isoDateString) => {
+    if (!isoDateString) return ''
+    
+    const monthFullKeys = [
+      'monthFullJan', 'monthFullFeb', 'monthFullMar', 'monthFullApr', 'monthFullMay', 'monthFullJun',
+      'monthFullJul', 'monthFullAug', 'monthFullSep', 'monthFullOct', 'monthFullNov', 'monthFullDec'
+    ]
+    
+    let month, day
+    if (isoDateString.startsWith('-')) {
+      const parts = isoDateString.substring(1).split('T')[0].split('-')
+      month = parseInt(parts[1], 10)
+      day = parseInt(parts[2], 10)
+    } else {
+      const parts = isoDateString.split('T')[0].split('-')
+      month = parseInt(parts[1], 10)
+      day = parseInt(parts[2], 10)
+    }
+    
+    const monthName = t(monthFullKeys[month - 1])
+    
+    if (locale.value === 'ru') {
+      return `${day} ${monthName}`
+    }
+    return `${monthName} ${day}`
+  }
+
   // Format event display date with smart year-only detection
   // If date is January 1st (default placeholder), show only "YYYY Era"
   // Otherwise show full "DD.MM.YYYY Era"
@@ -760,6 +816,7 @@ export function useLocale() {
     getLocaleParam,
     addLocaleToUrl,
     formatLocalizedDate,
+    formatDayMonth,
     formatEventDisplayDate
   }
 }
