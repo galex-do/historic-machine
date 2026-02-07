@@ -495,6 +495,9 @@ export default {
 }
 </script>
 
+<style>
+@import '@/styles/tag-badge.css';
+</style>
 <style scoped>
 .timeline_modal_overlay {
   position: fixed;
@@ -708,22 +711,6 @@ export default {
   padding-left: 0.75rem;
 }
 
-.event_tag_badge {
-  display: inline-block;
-  padding: 0.05rem 0.5rem;
-  border-radius: 9999px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: opacity 0.2s;
-  white-space: nowrap;
-  vertical-align: middle;
-  margin: 0 0.1rem;
-}
-
-.event_tag_badge:hover {
-  opacity: 0.75;
-}
 
 .timeline_focus_btn {
   background: none;

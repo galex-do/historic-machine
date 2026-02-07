@@ -88,6 +88,9 @@ export default {
 }
 </script>
 
+<style>
+@import '@/styles/tag-badge.css';
+</style>
 <style scoped>
 .event-card-compact {
   padding: 0.5rem 0.75rem;
@@ -150,20 +153,6 @@ export default {
   margin-top: 0.25rem;
 }
 
-.event_tag_badge {
-  display: inline-block;
-  padding: 0.05rem 0.5rem;
-  border-radius: 9999px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: opacity 0.2s;
-  white-space: nowrap;
-}
-
-.event_tag_badge:hover {
-  opacity: 0.75;
-}
 
 .highlight_btn,
 .focus_btn {
