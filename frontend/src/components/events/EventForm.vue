@@ -235,6 +235,7 @@
                   :style="{ backgroundColor: tag.color }"
                 ></span>
                 {{ tag.name }}
+                <span v-if="tag.event_count" class="tag-event-count">({{ tag.event_count }})</span>
               </div>
               <!-- Create new tag option at bottom of suggestions -->
               <div v-if="canCreateNewTag" class="tag-suggestion create-new-suggestion" @click="createAndAddTag">
@@ -462,7 +463,7 @@ export default {
           tag.name.toLowerCase().includes(searchTerm) &&
           !formData.value.selectedTags.some(selected => selected.id === tag.id)
         )
-        .sort((a, b) => a.name.localeCompare(b.name))
+        .sort((a, b) => (b.event_count || 0) - (a.event_count || 0) || a.name.localeCompare(b.name))
     })
     
     const canCreateNewTag = computed(() => {
@@ -806,6 +807,12 @@ export default {
   color: #6b7280;
   background: #f9fafb;
   border-bottom: 1px solid #e5e7eb;
+}
+
+.tag-event-count {
+  font-size: 11px;
+  color: #9ca3af;
+  margin-left: 4px;
 }
 
 .tag-suggestion {
