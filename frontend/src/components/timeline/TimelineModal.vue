@@ -167,7 +167,7 @@ export default {
   },
   emits: ['close', 'focus-event', 'tag-clicked', 'show-detail'],
   setup(props, { emit }) {
-    const { t, formatEventDisplayDate, formatDayMonth } = useLocale()
+    const { t, formatEventDisplayDate, formatDayMonth, currentLocale } = useLocale()
     const previouslyFocusedElement = ref(null)
     const scrollContainer = ref(null)
     
@@ -292,8 +292,8 @@ export default {
       })
     }
 
-    watch(() => props.events, (newEvents) => {
-      const newHash = getEventsHash(newEvents)
+    watch([() => props.events, currentLocale], ([newEvents]) => {
+      const newHash = getEventsHash(newEvents) + '_' + currentLocale.value?.code
       if (newHash !== lastEventsHash.value) {
         lastEventsHash.value = newHash
         cachedGroupedEvents.value = computeGroupedEvents(newEvents)
