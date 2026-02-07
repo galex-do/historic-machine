@@ -8,6 +8,7 @@ type Tag struct {
         Name        string    `json:"name"`
         Description string    `json:"description"`
         Color       string    `json:"color"`
+        Weight      int       `json:"weight"`
         EventCount  int       `json:"event_count"`
         CreatedAt   time.Time `json:"created_at"`
         UpdatedAt   time.Time `json:"updated_at"`
@@ -18,6 +19,7 @@ type CreateTagRequest struct {
         Name        string `json:"name" validate:"required,max=100"`
         Description string `json:"description"`
         Color       string `json:"color,omitempty"`
+        Weight      *int   `json:"weight,omitempty"`
 }
 
 // UpdateTagRequest represents the request payload for updating a tag
@@ -25,6 +27,7 @@ type UpdateTagRequest struct {
         Name        string `json:"name,omitempty" validate:"max=100"`
         Description string `json:"description,omitempty"`
         Color       string `json:"color,omitempty"`
+        Weight      *int   `json:"weight,omitempty"`
 }
 
 // EventTag represents the many-to-many relationship between events and tags
@@ -39,12 +42,17 @@ type EventTag struct {
 func (req *CreateTagRequest) ToTag() *Tag {
         color := req.Color
         if color == "" {
-                color = "#3b82f6" // Default blue color
+                color = "#3b82f6"
+        }
+        weight := 1
+        if req.Weight != nil {
+                weight = *req.Weight
         }
         
         return &Tag{
                 Name:        req.Name,
                 Description: req.Description,
                 Color:       color,
+                Weight:      weight,
         }
 }

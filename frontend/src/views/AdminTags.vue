@@ -73,6 +73,19 @@
             </th>
             <th 
               class="sortable-header" 
+              @click="toggleSort('weight')"
+              :class="{ 'active': sortField === 'weight' }"
+            >
+              {{ t('columnWeight') }}
+              <span class="sort-indicator">
+                <span v-if="sortField === 'weight'" class="sort-arrow">
+                  {{ sortDirection === 'asc' ? '▲' : '▼' }}
+                </span>
+                <span v-else class="sort-placeholder">⇅</span>
+              </span>
+            </th>
+            <th 
+              class="sortable-header" 
               @click="toggleSort('usage_count')"
               :class="{ 'active': sortField === 'usage_count' }"
             >
@@ -105,6 +118,7 @@
               </div>
             </td>
             <td class="tag-created">{{ formatDate(tag.created_at) }}</td>
+            <td class="tag-weight">{{ tag.weight }}</td>
             <td class="tag-usage">
               <span 
                 v-if="getTagUsageCount(tag.id) > 0"
@@ -198,6 +212,19 @@
                   ></div>
                 </div>
               </div>
+
+              <div class="form-group">
+                <label for="tag-weight">{{ t('columnWeight') }}</label>
+                <input 
+                  id="tag-weight"
+                  v-model.number="tagForm.weight" 
+                  type="number" 
+                  min="1"
+                  class="form-input weight-input"
+                  placeholder="1"
+                />
+                <span class="form-hint">{{ t('weightHint') }}</span>
+              </div>
               
               <div class="form-actions">
                 <button type="button" @click="closeModal" class="cancel-btn">Cancel</button>
@@ -254,7 +281,8 @@ export default {
     const tagForm = ref({
       name: '',
       description: '',
-      color: '#3B82F6'
+      color: '#3B82F6',
+      weight: 1
     })
 
     // Pre-computed usage counts cache (O(n) instead of O(n*m) per sort)
@@ -299,6 +327,9 @@ export default {
         } else if (sortField.value === 'usage_count') {
           aValue = tagUsageCountsMap.value.get(a.id) || 0
           bValue = tagUsageCountsMap.value.get(b.id) || 0
+        } else if (sortField.value === 'weight') {
+          aValue = a.weight || 1
+          bValue = b.weight || 1
         } else {
           aValue = a[sortField.value] || ''
           bValue = b[sortField.value] || ''
@@ -373,7 +404,8 @@ export default {
       tagForm.value = {
         name: tag.name,
         description: tag.description || '',
-        color: tag.color
+        color: tag.color,
+        weight: tag.weight || 1
       }
       showEditModal.value = true
     }
@@ -433,7 +465,8 @@ export default {
       tagForm.value = {
         name: '',
         description: '',
-        color: '#3B82F6'
+        color: '#3B82F6',
+        weight: 1
       }
       localError.value = null
     }
@@ -677,6 +710,24 @@ export default {
 .tag-created {
   color: #4a5568;
   font-size: 0.875rem;
+}
+
+.tag-weight {
+  color: #4a5568;
+  font-size: 0.875rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.weight-input {
+  width: 80px;
+}
+
+.form-hint {
+  display: block;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 0.25rem;
 }
 
 .tag-usage {

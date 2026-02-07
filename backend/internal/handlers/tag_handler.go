@@ -105,6 +105,9 @@ func (h *TagHandler) UpdateTag(w http.ResponseWriter, r *http.Request) {
         if req.Color != "" {
                 existingTag.Color = req.Color
         }
+        if req.Weight != nil {
+                existingTag.Weight = *req.Weight
+        }
 
         // Update tag in database
         updatedTag, err := h.tagRepo.UpdateTag(id, existingTag)

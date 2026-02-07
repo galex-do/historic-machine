@@ -18,7 +18,7 @@ func NewTagRepository(db *sql.DB) *TagRepository {
 // GetAllTags retrieves all tags from the database
 func (r *TagRepository) GetAllTags() ([]models.Tag, error) {
         query := `
-                SELECT t.id, t.name, t.description, t.color,
+                SELECT t.id, t.name, t.description, t.color, t.weight,
                         COALESCE(et.cnt, 0) AS event_count,
                         t.created_at, t.updated_at
                 FROM tags t
@@ -41,6 +41,7 @@ func (r *TagRepository) GetAllTags() ([]models.Tag, error) {
                         &tag.Name,
                         &tag.Description,
                         &tag.Color,
+                        &tag.Weight,
                         &tag.EventCount,
                         &tag.CreatedAt,
                         &tag.UpdatedAt,
@@ -57,7 +58,7 @@ func (r *TagRepository) GetAllTags() ([]models.Tag, error) {
 // GetTagByID retrieves a tag by its ID
 func (r *TagRepository) GetTagByID(id int) (*models.Tag, error) {
         query := `
-                SELECT id, name, description, color, created_at, updated_at
+                SELECT id, name, description, color, weight, created_at, updated_at
                 FROM tags
                 WHERE id = $1`
 
@@ -67,6 +68,7 @@ func (r *TagRepository) GetTagByID(id int) (*models.Tag, error) {
                 &tag.Name,
                 &tag.Description,
                 &tag.Color,
+                &tag.Weight,
                 &tag.CreatedAt,
                 &tag.UpdatedAt,
         )
@@ -81,11 +83,11 @@ func (r *TagRepository) GetTagByID(id int) (*models.Tag, error) {
 // CreateTag creates a new tag
 func (r *TagRepository) CreateTag(tag *models.Tag) (*models.Tag, error) {
         query := `
-                INSERT INTO tags (name, description, color)
-                VALUES ($1, $2, $3)
+                INSERT INTO tags (name, description, color, weight)
+                VALUES ($1, $2, $3, $4)
                 RETURNING id, created_at, updated_at`
 
-        err := r.db.QueryRow(query, tag.Name, tag.Description, tag.Color).Scan(
+        err := r.db.QueryRow(query, tag.Name, tag.Description, tag.Color, tag.Weight).Scan(
                 &tag.ID,
                 &tag.CreatedAt,
                 &tag.UpdatedAt,
@@ -102,15 +104,16 @@ func (r *TagRepository) CreateTag(tag *models.Tag) (*models.Tag, error) {
 func (r *TagRepository) UpdateTag(id int, tag *models.Tag) (*models.Tag, error) {
         query := `
                 UPDATE tags 
-                SET name = $2, description = $3, color = $4, updated_at = CURRENT_TIMESTAMP
+                SET name = $2, description = $3, color = $4, weight = $5, updated_at = CURRENT_TIMESTAMP
                 WHERE id = $1
-                RETURNING id, name, description, color, created_at, updated_at`
+                RETURNING id, name, description, color, weight, created_at, updated_at`
 
-        err := r.db.QueryRow(query, id, tag.Name, tag.Description, tag.Color).Scan(
+        err := r.db.QueryRow(query, id, tag.Name, tag.Description, tag.Color, tag.Weight).Scan(
                 &tag.ID,
                 &tag.Name,
                 &tag.Description,
                 &tag.Color,
+                &tag.Weight,
                 &tag.CreatedAt,
                 &tag.UpdatedAt,
         )
@@ -146,11 +149,11 @@ func (r *TagRepository) DeleteTag(id int) error {
 // GetTagsByEventID retrieves all tags for a specific event
 func (r *TagRepository) GetTagsByEventID(eventID int) ([]models.Tag, error) {
         query := `
-                SELECT t.id, t.name, t.description, t.color, t.created_at, t.updated_at
+                SELECT t.id, t.name, t.description, t.color, t.weight, t.created_at, t.updated_at
                 FROM tags t
                 JOIN event_tags et ON t.id = et.tag_id
                 WHERE et.event_id = $1
-                ORDER BY t.name ASC`
+                ORDER BY t.weight DESC, t.name ASC`
 
         rows, err := r.db.Query(query, eventID)
         if err != nil {
@@ -166,6 +169,7 @@ func (r *TagRepository) GetTagsByEventID(eventID int) ([]models.Tag, error) {
                         &tag.Name,
                         &tag.Description,
                         &tag.Color,
+                        &tag.Weight,
                         &tag.CreatedAt,
                         &tag.UpdatedAt,
                 )
