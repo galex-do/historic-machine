@@ -2139,16 +2139,18 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 2rem;
+  padding: 0.75rem 1rem;
   border-bottom: 1px solid #e2e8f0;
+  gap: 0.5rem;
 }
 
 .event_info_modal_title {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #1e293b;
   flex: 1;
+  white-space: nowrap;
 }
 
 .event_info_modal_title .event_name {
