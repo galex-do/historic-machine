@@ -55,14 +55,16 @@
                     @click.stop="handleTagClick(tag)"
                   >#{{ tag.name }}{{ index < group.events[0].tags.length - 1 ? ' ' : '' }}</span>
                 </template>
-                {{ ' ' }}
-                <button 
-                  class="timeline_focus_btn" 
-                  @click="handleFocusEvent(group.events[0])"
-                  :title="t('focusOnMap')"
-                >
-                  ⌖
-                </button>
+                <template v-if="showDetails">
+                  {{ ' ' }}
+                  <button 
+                    class="timeline_focus_btn" 
+                    @click="handleFocusEvent(group.events[0])"
+                    :title="t('focusOnMap')"
+                  >
+                    ⌖
+                  </button>
+                </template>
               </span>
             </div>
 
@@ -103,14 +105,16 @@
                         @click.stop="handleTagClick(tag)"
                       >#{{ tag.name }}{{ index < event.tags.length - 1 ? ' ' : '' }}</span>
                     </template>
-                    {{ ' ' }}
-                    <button 
-                      class="timeline_focus_btn" 
-                      @click="handleFocusEvent(event)"
-                      :title="t('focusOnMap')"
-                    >
-                      ⌖
-                    </button>
+                    <template v-if="showDetails">
+                      {{ ' ' }}
+                      <button 
+                        class="timeline_focus_btn" 
+                        @click="handleFocusEvent(event)"
+                        :title="t('focusOnMap')"
+                      >
+                        ⌖
+                      </button>
+                    </template>
                   </span>
                 </div>
               </div>
