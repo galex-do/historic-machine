@@ -2392,9 +2392,9 @@ export default {
 
 .event_tag_badge {
   display: inline-block;
-  padding: 0.05rem 0.4rem;
+  padding: 0.15rem 0.5rem;
   border-radius: 9999px;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: 500;
   cursor: pointer;
   transition: opacity 0.2s;
