@@ -10,7 +10,7 @@ export function getContrastColor(hexColor) {
 
 export function getTagBorderStyle(borderColor) {
   if (!borderColor) return {}
-  return { boxShadow: `inset 0 0 0 1.5px ${borderColor}` }
+  return { boxShadow: `inset 0 0 0 2.5px ${borderColor}` }
 }
 
 export function getTagStyle(tag, options = {}) {
@@ -20,7 +20,7 @@ export function getTagStyle(tag, options = {}) {
     color: getContrastColor(bgColor)
   }
   if (tag.border_color) {
-    const shadows = [`inset 0 0 0 1.5px ${tag.border_color}`]
+    const shadows = [`inset 0 0 0 2.5px ${tag.border_color}`]
     if (options.outerShadow) {
       shadows.push(options.outerShadow)
     }
