@@ -78,10 +78,7 @@
           v-for="tag in selectedTags" 
           :key="tag.id"
           class="event_tag_badge_removable"
-          :style="{ 
-            backgroundColor: tag.color || '#6366f1',
-            color: getContrastColor(tag.color || '#6366f1')
-          }"
+          :style="getTagStyle(tag, { outerShadow: '0 1px 3px rgba(0, 0, 0, 0.15)' })"
         >
           <span class="tag_name">{{ tag.name }}</span>
           <button 
@@ -100,7 +97,7 @@
 <script>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useLocale } from '@/composables/useLocale.js'
-import { getContrastColor } from '@/utils/color-utils.js'
+import { getContrastColor, getTagStyle } from '@/utils/color-utils.js'
 
 export default {
   name: 'TagFilterPanel',
@@ -223,7 +220,8 @@ export default {
       handleFocus,
       handleBlur,
       getTagEventCount,
-      getContrastColor
+      getContrastColor,
+      getTagStyle
     }
   }
 }

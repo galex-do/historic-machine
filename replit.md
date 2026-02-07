@@ -30,7 +30,7 @@ A comprehensive web application for mapping historical events on an interactive 
 ### Technical Implementations
 - **Backend (Go)**: Gorilla Mux HTTP router, RESTful endpoints, Nginx hardened security (XSS, CSP), role-based access control, Nginx performance optimizations (worker processes, epoll, sendfile, gzip, caching), server-side OSM tile caching.
 - **Frontend (Vue.js)**: Vue.js 3 with Vite, Vue Router 4 for SPA navigation, session storage for filter conditions and map state, zoom-dependent marker clustering (Leaflet MarkerCluster), reactive data fetching on locale changes, AND logic for multi-tag filtering.
-- **Shared CSS Architecture**: Centralized reusable styles in `frontend/src/styles/` — `tag-badge.css` (tag pill badges), `timeline.css` (vertical timeline layout), `modal-overlay.css` (modal backdrop). Imported via non-scoped style blocks; component-specific overrides remain in scoped styles.
+- **Shared CSS Architecture**: Centralized reusable styles in `frontend/src/styles/` — `tag-badge.css` (tag pill badges), `timeline.css` (vertical timeline layout), `modal-overlay.css` (modal backdrop). Imported via non-scoped style blocks; component-specific overrides remain in scoped styles. Unified `getTagStyle(tag)` utility in `color-utils.js` handles background, contrast text, and optional inner border for all tag renderings.
 - **Vite Proxy Setup**: Configured Vite dev server to proxy API requests to the backend for seamless communication in the Replit environment.
 - **Session Tracking**: Lightweight implementation for both authenticated and anonymous users with a 60-second heartbeat. UUID-based anonymous tracking for privacy. Active window: 5 minutes - sessions become inactive 5 minutes after last heartbeat.
 - **Prometheus Metrics**: `/metrics` endpoint exposes application metrics in Prometheus format. Includes HTTP request counts/durations, event CRUD counters, login attempts, active sessions, and database entity gauges (events, users, tags, datasets, templates). Metrics collector runs every 30 seconds.
@@ -46,7 +46,7 @@ A comprehensive web application for mapping historical events on an interactive 
 - **Timeline Filtering**: Date range selection (FROM/TO fields) and historical period templates with chronological sorting.
 - **Event Management**: CRUD operations for events via an admin panel, including BC date editing.
 - **Lens System**: Categorization system for different event types.
-- **Tag Management**: CRUD for tags, with cross-page navigation to filter events by tag.
+- **Tag Management**: CRUD for tags, with cross-page navigation to filter events by tag. Optional `border_color` field for inner border customization using `box-shadow: inset` (no height change). Admin panel supports enable/disable border with color picker.
 - **Template Management**: Admin interface for CRUD operations on date templates and template groups. Features dual modal system, BC/AD date handling with chronological sorting, and full localization (English/Russian). Template groups prevent deletion when containing templates.
 - **User Management**: Admin interface for managing user accounts and access levels (Guest, User, Editor, Admin, Super).
 - **Dataset Management**: Import and creation of localized event datasets. Includes modification tracking - datasets are automatically marked as modified when associated events are created, updated, or deleted. Admin panel shows warning icon for modified datasets with reset button to clear the flag after export.

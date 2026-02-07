@@ -8,6 +8,7 @@ type Tag struct {
         Name        string    `json:"name"`
         Description string    `json:"description"`
         Color       string    `json:"color"`
+        BorderColor *string   `json:"border_color"`
         Weight      int       `json:"weight"`
         EventCount  int       `json:"event_count"`
         CreatedAt   time.Time `json:"created_at"`
@@ -16,18 +17,21 @@ type Tag struct {
 
 // CreateTagRequest represents the request payload for creating a tag
 type CreateTagRequest struct {
-        Name        string `json:"name" validate:"required,max=100"`
-        Description string `json:"description"`
-        Color       string `json:"color,omitempty"`
-        Weight      *int   `json:"weight,omitempty"`
+        Name        string  `json:"name" validate:"required,max=100"`
+        Description string  `json:"description"`
+        Color       string  `json:"color,omitempty"`
+        BorderColor *string `json:"border_color,omitempty"`
+        Weight      *int    `json:"weight,omitempty"`
 }
 
 // UpdateTagRequest represents the request payload for updating a tag
 type UpdateTagRequest struct {
-        Name        string `json:"name,omitempty" validate:"max=100"`
-        Description string `json:"description,omitempty"`
-        Color       string `json:"color,omitempty"`
-        Weight      *int   `json:"weight,omitempty"`
+        Name             string  `json:"name,omitempty" validate:"max=100"`
+        Description      string  `json:"description,omitempty"`
+        Color            string  `json:"color,omitempty"`
+        BorderColor      *string `json:"border_color,omitempty"`
+        ClearBorderColor bool    `json:"clear_border_color,omitempty"`
+        Weight           *int    `json:"weight,omitempty"`
 }
 
 // EventTag represents the many-to-many relationship between events and tags
@@ -53,6 +57,7 @@ func (req *CreateTagRequest) ToTag() *Tag {
                 Name:        req.Name,
                 Description: req.Description,
                 Color:       color,
+                BorderColor: req.BorderColor,
                 Weight:      weight,
         }
 }

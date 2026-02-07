@@ -214,6 +214,33 @@
               </div>
 
               <div class="form-group">
+                <label for="tag-border-color">Border Color (optional)</label>
+                <div class="color-input-container">
+                  <input 
+                    id="tag-border-color"
+                    v-model="tagForm.border_color" 
+                    type="color"
+                    class="color-input"
+                    :disabled="!tagForm.has_border"
+                  />
+                  <input 
+                    v-model="tagForm.border_color" 
+                    type="text" 
+                    class="form-input color-text-input"
+                    placeholder="No border"
+                    :disabled="!tagForm.has_border"
+                  />
+                  <label class="border-toggle">
+                    <input 
+                      type="checkbox" 
+                      v-model="tagForm.has_border"
+                    />
+                    <span class="border-toggle-label">Enable</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
                 <label for="tag-weight">{{ t('columnWeight') }}</label>
                 <input 
                   id="tag-weight"
@@ -282,6 +309,8 @@ export default {
       name: '',
       description: '',
       color: '#3B82F6',
+      border_color: '#000000',
+      has_border: false,
       weight: 1
     })
 
@@ -405,6 +434,8 @@ export default {
         name: tag.name,
         description: tag.description || '',
         color: tag.color,
+        border_color: tag.border_color || '#000000',
+        has_border: !!tag.border_color,
         weight: tag.weight || 1
       }
       showEditModal.value = true
@@ -439,12 +470,18 @@ export default {
       localError.value = null
       
       try {
+        const payload = {
+          name: tagForm.value.name,
+          description: tagForm.value.description,
+          color: tagForm.value.color,
+          weight: tagForm.value.weight,
+          border_color: tagForm.value.has_border ? tagForm.value.border_color : null,
+          clear_border_color: !tagForm.value.has_border
+        }
         if (editingTag.value) {
-          // Update existing tag
-          await apiService.updateTag(editingTag.value.id, tagForm.value)
+          await apiService.updateTag(editingTag.value.id, payload)
         } else {
-          // Create new tag
-          await apiService.createTag(tagForm.value)
+          await apiService.createTag(payload)
         }
         
         await loadTags() // Refresh tags list
@@ -466,6 +503,8 @@ export default {
         name: '',
         description: '',
         color: '#3B82F6',
+        border_color: '#000000',
+        has_border: false,
         weight: 1
       }
       localError.value = null
@@ -990,6 +1029,26 @@ export default {
 .submit-btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.border-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  color: #4a5568;
+}
+
+.border-toggle input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.border-toggle-label {
+  user-select: none;
 }
 
 .error-message {

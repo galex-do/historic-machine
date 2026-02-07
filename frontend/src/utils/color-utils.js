@@ -7,3 +7,24 @@ export function getContrastColor(hexColor) {
   const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255
   return luminance > 0.5 ? '#000000' : '#ffffff'
 }
+
+export function getTagBorderStyle(borderColor) {
+  if (!borderColor) return {}
+  return { boxShadow: `inset 0 0 0 1.5px ${borderColor}` }
+}
+
+export function getTagStyle(tag, options = {}) {
+  const bgColor = tag.color || '#6366f1'
+  const style = {
+    backgroundColor: bgColor,
+    color: getContrastColor(bgColor)
+  }
+  if (tag.border_color) {
+    const shadows = [`inset 0 0 0 1.5px ${tag.border_color}`]
+    if (options.outerShadow) {
+      shadows.push(options.outerShadow)
+    }
+    style.boxShadow = shadows.join(', ')
+  }
+  return style
+}

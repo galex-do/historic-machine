@@ -23,7 +23,7 @@
             v-for="tag in event.tags"
             :key="tag.id"
             class="event_tag_badge"
-            :style="{ backgroundColor: tag.color || '#6366f1', color: getContrastColor(tag.color || '#6366f1') }"
+            :style="getTagStyle(tag)"
             @click.stop="handleTagClick(tag)"
             :title="tag.description"
           >{{ tag.name }}</span>
@@ -118,7 +118,7 @@ import { useLocale } from '@/composables/useLocale.js'
 import { useRelatedEvents } from '@/composables/useRelatedEvents.js'
 import { useAuth } from '@/composables/useAuth.js'
 import { getEventEmoji } from '@/utils/event-utils.js'
-import { getContrastColor } from '@/utils/color-utils.js'
+import { getContrastColor, getTagStyle } from '@/utils/color-utils.js'
 
 export default {
   name: 'EventDetailModal',
@@ -217,6 +217,7 @@ export default {
       formatEventDisplayDate,
       getEventEmoji,
       getContrastColor,
+      getTagStyle,
       canEditEvents,
       closeModal,
       handleFocusEvent,

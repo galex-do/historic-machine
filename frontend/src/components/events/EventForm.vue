@@ -197,7 +197,7 @@
               v-for="tag in formData.selectedTags" 
               :key="tag.id"
               class="selected-tag"
-              :style="{ backgroundColor: tag.color, color: getContrastColor(tag.color) }"
+              :style="getTagStyle(tag)"
             >
               {{ tag.name }}
               <button 
@@ -294,6 +294,7 @@ import { ref, computed, watch, onMounted } from 'vue'
 import { useTags } from '@/composables/useTags.js'
 import { useLocale } from '@/composables/useLocale.js'
 import { getAvailableLensTypes } from '@/utils/event-utils.js'
+import { getContrastColor, getTagStyle } from '@/utils/color-utils.js'
 import apiService from '@/services/api.js'
 
 export default {
@@ -523,15 +524,6 @@ export default {
       }
     }
     
-    const getContrastColor = (hexColor) => {
-      if (!hexColor) return '#000000'
-      const color = hexColor.replace('#', '')
-      const r = parseInt(color.substr(0, 2), 16)
-      const g = parseInt(color.substr(2, 2), 16)
-      const b = parseInt(color.substr(4, 2), 16)
-      const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255
-      return luminance > 0.5 ? '#000000' : '#ffffff'
-    }
     
     const handleSubmit = () => {
       updateEventDate()
@@ -583,6 +575,7 @@ export default {
       canCreateNewTag,
       getAvailableLensTypes,
       getContrastColor,
+      getTagStyle,
       addTag,
       removeTag,
       handleTagInput,

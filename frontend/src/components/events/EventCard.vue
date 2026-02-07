@@ -42,7 +42,7 @@
         v-for="tag in event.tags"
         :key="tag.id"
         class="event_tag_badge"
-        :style="{ backgroundColor: tag.color || '#6366f1', color: getContrastColor(tag.color || '#6366f1') }"
+        :style="getTagStyle(tag)"
         @click.stop="$emit('tag-clicked', tag)"
         :title="tag.description"
       >{{ tag.name }}</span>
@@ -57,7 +57,7 @@
 
 <script>
 import { getEventEmoji } from '@/utils/event-utils.js'
-import { getContrastColor } from '@/utils/color-utils.js'
+import { getContrastColor, getTagStyle } from '@/utils/color-utils.js'
 import { useLocale } from '@/composables/useLocale.js'
 
 export default {
@@ -83,7 +83,8 @@ export default {
   },
   methods: {
     getEventEmoji,
-    getContrastColor
+    getContrastColor,
+    getTagStyle
   }
 }
 </script>

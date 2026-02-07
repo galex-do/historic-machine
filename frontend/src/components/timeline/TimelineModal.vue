@@ -50,7 +50,7 @@
                     v-for="tag in yearGroup.dateGroups[0].events[0].tags"
                     :key="tag.id"
                     class="event_tag_badge"
-                    :style="{ backgroundColor: tag.color || '#6366f1', color: getContrastColor(tag.color || '#6366f1') }"
+                    :style="getTagStyle(tag)"
                     :title="`Click to filter events by '${tag.name}'`"
                     @click.stop="handleTagClick(tag)"
                   >{{ tag.name }}</span>
@@ -106,7 +106,7 @@
                           v-for="tag in event.tags"
                           :key="tag.id"
                           class="event_tag_badge"
-                          :style="{ backgroundColor: tag.color || '#6366f1', color: getContrastColor(tag.color || '#6366f1') }"
+                          :style="getTagStyle(tag)"
                           :title="`Click to filter events by '${tag.name}'`"
                           @click.stop="handleTagClick(tag)"
                         >{{ tag.name }}</span>
@@ -147,7 +147,7 @@
 import { ref, computed, watch, onUnmounted, nextTick } from 'vue'
 import { useLocale } from '@/composables/useLocale.js'
 import { getEventEmoji } from '@/utils/event-utils.js'
-import { getContrastColor } from '@/utils/color-utils.js'
+import { getContrastColor, getTagStyle } from '@/utils/color-utils.js'
 
 export default {
   name: 'TimelineModal',
@@ -489,7 +489,8 @@ export default {
       handleShowDetail,
       handleScroll,
       getEventEmoji,
-      getContrastColor
+      getContrastColor,
+      getTagStyle
     }
   }
 }
