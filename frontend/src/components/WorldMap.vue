@@ -40,7 +40,7 @@
     </div>
 
     <!-- Event Info Modal (shows event details without coordinate corruption) -->
-    <div v-if="show_event_info_modal" class="event_info_modal_overlay" @click="close_event_info_modal">
+    <div v-if="show_event_info_modal" class="modal_overlay_base event_info_modal_overlay" @click="close_event_info_modal">
       <div class="event_info_modal" @click.stop>
         <!-- Modal Header -->
         <div class="event_info_modal_header">
@@ -1781,6 +1781,8 @@ export default {
 
 <style>
 @import '@/styles/tag-badge.css';
+@import '@/styles/timeline.css';
+@import '@/styles/modal-overlay.css';
 </style>
 <style scoped>
 .event-tags {
@@ -2144,19 +2146,6 @@ export default {
 }
 
 /* Event Info Modal Styles - Timeline structure */
-.event_info_modal_overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 100000;
-  padding: 2rem;
-}
 
 .event_info_modal {
   background: white;
@@ -2282,116 +2271,6 @@ export default {
   font-size: 0.875rem;
 }
 
-.timeline_container {
-  position: relative;
-  padding-left: 0.5rem;
-}
-
-/* Thin vertical line */
-.timeline_container::before {
-  content: '';
-  position: absolute;
-  left: 6px;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background: #cbd5e1;
-  z-index: 1;
-}
-
-.timeline_year_group {
-  position: relative;
-  margin-bottom: 0.25rem;
-}
-
-.timeline_date_header {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.25rem;
-  position: relative;
-  z-index: 2;
-}
-
-.timeline_bullet {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: white;
-  border: 2px solid #3b82f6;
-  flex-shrink: 0;
-  margin-left: -6px;
-}
-
-.timeline_date {
-  font-weight: 600;
-  font-size: 0.875rem;
-  color: #1e293b;
-}
-
-.timeline_single_event_line {
-  display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
-  padding: 0.25rem 0;
-  line-height: 1.5;
-  position: relative;
-  z-index: 2;
-}
-
-.timeline_single_text {
-  font-size: 0.875rem;
-  color: #475569;
-  line-height: 1.5;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-.timeline_single_text .timeline_date_inline {
-  font-weight: 600;
-  color: #1e293b;
-}
-
-.timeline_single_text .event_name {
-  font-weight: 600;
-  color: #1e293b;
-}
-
-.timeline_single_text .event_name_link {
-  font-weight: 700;
-  color: #3b82f6;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.timeline_single_text .event_name_link:hover {
-  color: #2563eb;
-}
-
-.timeline_events_list {
-  margin-left: 0.75rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.125rem;
-}
-
-.timeline_date_subheader {
-  font-weight: 600;
-  font-size: 0.8rem;
-  color: #475569;
-  padding: 0.15rem 0 0.05rem 0.35rem;
-  margin-top: 0.15rem;
-}
-
-.timeline_event_line {
-  padding: 0.15rem 0;
-  padding-left: 0.35rem;
-  line-height: 1.5;
-}
-
-.timeline_event_line_indented {
-  padding-left: 0.75rem;
-}
 
 
 .event_inline_edit_btn {

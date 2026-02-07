@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isOpen" class="event_detail_modal_overlay" @click.self="closeModal">
+  <div v-if="isOpen" class="modal_overlay_base event_detail_modal_overlay" @click.self="closeModal">
     <div class="event_detail_modal">
       <div class="event_detail_header">
         <div class="event_title_row">
@@ -235,19 +235,11 @@ export default {
 
 <style>
 @import '@/styles/tag-badge.css';
+@import '@/styles/modal-overlay.css';
 </style>
 <style scoped>
 .event_detail_modal_overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 100000;
   padding: 1rem;
 }
 
