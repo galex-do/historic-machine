@@ -169,8 +169,9 @@ export default {
     
     const addTag = (tag) => {
       emit('add-tag', tag)
-      searchQuery.value = '' // Clear search after adding
-      showSuggestions.value = false
+      searchQuery.value = ''
+      showSuggestions.value = true
+      calculateDropdownPosition()
     }
     
     const handleBlur = () => {
