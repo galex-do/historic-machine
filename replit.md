@@ -24,7 +24,7 @@ A comprehensive web application for mapping historical events on an interactive 
 - **Timeline View Modal**: Ultra-compact vertical timeline visualization with date grouping, expandable descriptions, BC/AD aware sorting, and accessibility features.
 - **Compact Event List View**: Redesigned to a minimalistic, single-line layout for events, showing full descriptions inline and colored #tag format.
 - **Map Highlight Feature**: Static golden halo ring overlay for highlighting markers (replaced problematic CSS animation). Conditional "Highlight" (📍) / "Focus" (⌖) button display based on map filtering state.
-- **Map Event Info Modal Timeline Structure**: Uses the same timeline design as TimelineModal with vertical line, bullets, date grouping, unified tag styling, clickable tags, and inline edit functionality.
+- **Map Event Info Modal Timeline Structure**: Uses the same timeline design as TimelineModal with vertical line, bullets, date grouping, unified tag styling, clickable tags, inline edit functionality, minified/detailed view toggle (📋/📝), and lazy loading in batches of 50 with scroll-based loading.
 - **Pin Mode for Coordinates**: Event form includes a pin button (📍) that closes the modal and enables map-click coordinate selection. Supports "sticky" pin - clicking existing markers/clusters copies their coordinates. Zoom/pan don't interrupt pin mode.
 
 ### Technical Implementations

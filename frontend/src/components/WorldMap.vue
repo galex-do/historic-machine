@@ -45,9 +45,16 @@
         <!-- Modal Header -->
         <div class="event_info_modal_header">
           <h2 class="event_info_modal_title">
-            {{ selected_events.length }} {{ t('eventsAtLocation') }}
+            {{ location_visible_event_count }}<span v-if="location_has_more_events">+</span> / {{ location_total_event_count }} {{ t('eventsAtLocation') }}
           </h2>
           <div class="event_header_actions">
+            <button 
+              class="toggle_details_btn" 
+              @click="location_show_details = !location_show_details"
+              :title="location_show_details ? t('hideDetails') : t('showDetails')"
+            >
+              {{ location_show_details ? '📝' : '📋' }}
+            </button>
             <button 
               v-if="canCreateEvents" 
               class="event_add_btn" 
@@ -61,9 +68,9 @@
         </div>
         
         <!-- Modal Content -->
-        <div class="event_info_modal_content" ref="locationModalContent">
+        <div class="event_info_modal_content" ref="locationModalContent" @scroll="handle_location_scroll">
           <div class="timeline_container">
-            <div v-for="yearGroup in grouped_events_by_year" :key="yearGroup.yearKey" class="timeline_year_group">
+            <div v-for="yearGroup in visible_grouped_events" :key="yearGroup.yearKey" class="timeline_year_group">
               <!-- Single event in this year: everything on one line -->
               <div v-if="yearGroup.totalEvents === 1" class="timeline_single_event_line">
                 <div class="timeline_bullet"></div>
@@ -76,10 +83,10 @@
                      class="event_name event_name_link"
                      @click="handle_show_detail(yearGroup.dateGroups[0].events[0])"
                   >{{ yearGroup.dateGroups[0].events[0].name }}</span>
-                  <template v-if="yearGroup.dateGroups[0].events[0].description">
+                  <template v-if="location_show_details && yearGroup.dateGroups[0].events[0].description">
                     {{ ' — ' }}{{ yearGroup.dateGroups[0].events[0].description }}
                   </template>
-                  <template v-if="yearGroup.dateGroups[0].events[0].tags && yearGroup.dateGroups[0].events[0].tags.length > 0">
+                  <template v-if="location_show_details && yearGroup.dateGroups[0].events[0].tags && yearGroup.dateGroups[0].events[0].tags.length > 0">
                     {{ ' ' }}
                     <span
                       v-for="tag in yearGroup.dateGroups[0].events[0].tags"
@@ -90,7 +97,7 @@
                       @click.stop="handleTagClick(tag)"
                     >{{ tag.name }}</span>
                   </template>
-                  <template v-if="canEditEvents">
+                  <template v-if="location_show_details && canEditEvents">
                     {{ ' ' }}
                     <button 
                       class="event_inline_edit_btn" 
@@ -131,10 +138,10 @@
                            class="event_name event_name_link"
                            @click="handle_show_detail(event)"
                         >{{ event.name }}</span>
-                        <template v-if="event.description">
+                        <template v-if="location_show_details && event.description">
                           {{ ' — ' }}{{ event.description }}
                         </template>
-                        <template v-if="event.tags && event.tags.length > 0">
+                        <template v-if="location_show_details && event.tags && event.tags.length > 0">
                           {{ ' ' }}
                           <span
                             v-for="tag in event.tags"
@@ -145,7 +152,7 @@
                             @click.stop="handleTagClick(tag)"
                           >{{ tag.name }}</span>
                         </template>
-                        <template v-if="canEditEvents">
+                        <template v-if="location_show_details && canEditEvents">
                           {{ ' ' }}
                           <button 
                             class="event_inline_edit_btn" 
@@ -230,10 +237,13 @@ export default {
       polyline_layers: [], // Store narrative flow polylines
       resize_observer: null,
       show_event_modal: false,
-      show_event_info_modal: false, // New modal for event info
-      selected_events: [], // Events to show in info modal
-      location_events_backup: [], // Backup for back navigation
-      location_scroll_backup: 0, // Scroll position backup for back navigation
+      show_event_info_modal: false,
+      selected_events: [],
+      location_events_backup: [],
+      location_scroll_backup: 0,
+      location_visible_count: 50,
+      location_show_details: false,
+      location_visible_count_backup: 50,
       highlight_overlay: null, // Store highlight overlay layer (halo ring + center dot)
       user_location_layer: null, // Store user location marker (geolocation feature)
       show_offscreen_notification: false, // Show notification when marker is off-screen
@@ -423,6 +433,50 @@ export default {
           dateGroups
         }
       })
+    },
+    visible_grouped_events() {
+      const groups = this.grouped_events_by_year
+      let eventCount = 0
+      const result = []
+      
+      for (const yearGroup of groups) {
+        if (eventCount >= this.location_visible_count) break
+        
+        const remainingSlots = this.location_visible_count - eventCount
+        if (yearGroup.totalEvents <= remainingSlots) {
+          result.push(yearGroup)
+          eventCount += yearGroup.totalEvents
+        } else {
+          const trimmedDateGroups = []
+          let used = 0
+          for (const dg of yearGroup.dateGroups) {
+            if (used >= remainingSlots) break
+            const slotsLeft = remainingSlots - used
+            if (dg.events.length <= slotsLeft) {
+              trimmedDateGroups.push(dg)
+              used += dg.events.length
+            } else {
+              trimmedDateGroups.push({ ...dg, events: dg.events.slice(0, slotsLeft) })
+              used += slotsLeft
+              break
+            }
+          }
+          result.push({ ...yearGroup, totalEvents: used, dateGroups: trimmedDateGroups })
+          eventCount += used
+          break
+        }
+      }
+      
+      return result
+    },
+    location_visible_event_count() {
+      return this.visible_grouped_events.reduce((sum, yg) => sum + yg.totalEvents, 0)
+    },
+    location_total_event_count() {
+      return this.selected_events?.length || 0
+    },
+    location_has_more_events() {
+      return this.location_visible_event_count < this.location_total_event_count
     }
   },
   
@@ -1439,7 +1493,15 @@ export default {
     close_event_info_modal() {
       this.show_event_info_modal = false
       this.selected_events = []
-      this.expanded_event_tags = {} // Reset expanded state when closing modal
+      this.expanded_event_tags = {}
+      this.location_visible_count = 50
+    },
+    handle_location_scroll(e) {
+      const container = e.target
+      const scrollBottom = container.scrollHeight - container.scrollTop - container.clientHeight
+      if (scrollBottom < 100 && this.location_has_more_events) {
+        this.location_visible_count += 50
+      }
     },
 
     // Create new event at the same location as viewed events
@@ -1512,19 +1574,21 @@ export default {
       this.close_event_info_modal()
     },
     handle_show_detail(event) {
-      // Store current location events and scroll position for back navigation
       this.location_events_backup = [...this.selected_events]
       if (this.$refs.locationModalContent) {
         this.location_scroll_backup = this.$refs.locationModalContent.scrollTop
       }
+      this.location_visible_count_backup = this.location_visible_count
       this.$emit('show-detail', { event, source: 'location' })
-      this.close_event_info_modal()
+      this.show_event_info_modal = false
+      this.selected_events = []
+      this.expanded_event_tags = {}
     },
     restore_location_modal() {
       if (this.location_events_backup && this.location_events_backup.length > 0) {
         this.selected_events = this.location_events_backup
+        this.location_visible_count = this.location_visible_count_backup
         this.show_event_info_modal = true
-        // Restore scroll position after modal renders
         this.$nextTick(() => {
           if (this.$refs.locationModalContent && this.location_scroll_backup > 0) {
             this.$refs.locationModalContent.scrollTop = this.location_scroll_backup
@@ -2108,6 +2172,26 @@ export default {
   align-items: center;
   gap: 0.5rem;
   flex-shrink: 0;
+}
+
+.toggle_details_btn {
+  background: none;
+  border: 1px solid #e2e8f0;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.toggle_details_btn:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
 }
 
 .event_add_btn {
