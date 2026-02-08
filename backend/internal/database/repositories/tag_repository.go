@@ -18,7 +18,7 @@ func NewTagRepository(db *sql.DB) *TagRepository {
 // GetAllTags retrieves all tags from the database
 func (r *TagRepository) GetAllTags() ([]models.Tag, error) {
         query := `
-                SELECT t.id, t.name, t.description, t.color, t.border_color, t.weight,
+                SELECT t.id, t.name, t.description, t.color, t.border_color, t.key_color, t.weight,
                         COALESCE(et.cnt, 0) AS event_count,
                         t.created_at, t.updated_at
                 FROM tags t
@@ -42,6 +42,7 @@ func (r *TagRepository) GetAllTags() ([]models.Tag, error) {
                         &tag.Description,
                         &tag.Color,
                         &tag.BorderColor,
+                        &tag.KeyColor,
                         &tag.Weight,
                         &tag.EventCount,
                         &tag.CreatedAt,
@@ -59,7 +60,7 @@ func (r *TagRepository) GetAllTags() ([]models.Tag, error) {
 // GetTagByID retrieves a tag by its ID
 func (r *TagRepository) GetTagByID(id int) (*models.Tag, error) {
         query := `
-                SELECT id, name, description, color, border_color, weight, created_at, updated_at
+                SELECT id, name, description, color, border_color, key_color, weight, created_at, updated_at
                 FROM tags
                 WHERE id = $1`
 
@@ -70,6 +71,7 @@ func (r *TagRepository) GetTagByID(id int) (*models.Tag, error) {
                 &tag.Description,
                 &tag.Color,
                 &tag.BorderColor,
+                &tag.KeyColor,
                 &tag.Weight,
                 &tag.CreatedAt,
                 &tag.UpdatedAt,
@@ -85,11 +87,11 @@ func (r *TagRepository) GetTagByID(id int) (*models.Tag, error) {
 // CreateTag creates a new tag
 func (r *TagRepository) CreateTag(tag *models.Tag) (*models.Tag, error) {
         query := `
-                INSERT INTO tags (name, description, color, border_color, weight)
-                VALUES ($1, $2, $3, $4, $5)
+                INSERT INTO tags (name, description, color, border_color, key_color, weight)
+                VALUES ($1, $2, $3, $4, $5, $6)
                 RETURNING id, created_at, updated_at`
 
-        err := r.db.QueryRow(query, tag.Name, tag.Description, tag.Color, tag.BorderColor, tag.Weight).Scan(
+        err := r.db.QueryRow(query, tag.Name, tag.Description, tag.Color, tag.BorderColor, tag.KeyColor, tag.Weight).Scan(
                 &tag.ID,
                 &tag.CreatedAt,
                 &tag.UpdatedAt,
@@ -106,16 +108,17 @@ func (r *TagRepository) CreateTag(tag *models.Tag) (*models.Tag, error) {
 func (r *TagRepository) UpdateTag(id int, tag *models.Tag) (*models.Tag, error) {
         query := `
                 UPDATE tags 
-                SET name = $2, description = $3, color = $4, border_color = $5, weight = $6, updated_at = CURRENT_TIMESTAMP
+                SET name = $2, description = $3, color = $4, border_color = $5, key_color = $6, weight = $7, updated_at = CURRENT_TIMESTAMP
                 WHERE id = $1
-                RETURNING id, name, description, color, border_color, weight, created_at, updated_at`
+                RETURNING id, name, description, color, border_color, key_color, weight, created_at, updated_at`
 
-        err := r.db.QueryRow(query, id, tag.Name, tag.Description, tag.Color, tag.BorderColor, tag.Weight).Scan(
+        err := r.db.QueryRow(query, id, tag.Name, tag.Description, tag.Color, tag.BorderColor, tag.KeyColor, tag.Weight).Scan(
                 &tag.ID,
                 &tag.Name,
                 &tag.Description,
                 &tag.Color,
                 &tag.BorderColor,
+                &tag.KeyColor,
                 &tag.Weight,
                 &tag.CreatedAt,
                 &tag.UpdatedAt,
@@ -152,7 +155,7 @@ func (r *TagRepository) DeleteTag(id int) error {
 // GetTagsByEventID retrieves all tags for a specific event
 func (r *TagRepository) GetTagsByEventID(eventID int) ([]models.Tag, error) {
         query := `
-                SELECT t.id, t.name, t.description, t.color, t.border_color, t.weight, t.created_at, t.updated_at
+                SELECT t.id, t.name, t.description, t.color, t.border_color, t.key_color, t.weight, t.created_at, t.updated_at
                 FROM tags t
                 JOIN event_tags et ON t.id = et.tag_id
                 WHERE et.event_id = $1
@@ -173,6 +176,7 @@ func (r *TagRepository) GetTagsByEventID(eventID int) ([]models.Tag, error) {
                         &tag.Description,
                         &tag.Color,
                         &tag.BorderColor,
+                        &tag.KeyColor,
                         &tag.Weight,
                         &tag.CreatedAt,
                         &tag.UpdatedAt,

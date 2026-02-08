@@ -41,6 +41,15 @@
                    class="event_name event_name_link"
                    @click="handleShowDetail(yearGroup.dateGroups[0].events[0])"
                 >{{ yearGroup.dateGroups[0].events[0].name }}</span>
+                <template v-if="!showDetails && getKeyColorTags(yearGroup.dateGroups[0].events[0].tags).length > 0">
+                  <span 
+                    v-for="kt in getKeyColorTags(yearGroup.dateGroups[0].events[0].tags)" 
+                    :key="'kc-' + kt.id"
+                    class="key_color_dot"
+                    :style="{ backgroundColor: kt.color }"
+                    :title="kt.name"
+                  ></span>
+                </template>
                 <template v-if="showDetails && yearGroup.dateGroups[0].events[0].description">
                   {{ ' — ' }}{{ yearGroup.dateGroups[0].events[0].description }}
                 </template>
@@ -97,6 +106,15 @@
                          class="event_name event_name_link"
                          @click="handleShowDetail(event)"
                       >{{ event.name }}</span>
+                      <template v-if="!showDetails && getKeyColorTags(event.tags).length > 0">
+                        <span 
+                          v-for="kt in getKeyColorTags(event.tags)" 
+                          :key="'kc-' + kt.id"
+                          class="key_color_dot"
+                          :style="{ backgroundColor: kt.color }"
+                          :title="kt.name"
+                        ></span>
+                      </template>
                       <template v-if="showDetails && event.description">
                         {{ ' — ' }}{{ event.description }}
                       </template>
@@ -147,7 +165,7 @@
 import { ref, computed, watch, onUnmounted, nextTick } from 'vue'
 import { useLocale } from '@/composables/useLocale.js'
 import { getEventEmoji } from '@/utils/event-utils.js'
-import { getContrastColor, getTagStyle } from '@/utils/color-utils.js'
+import { getContrastColor, getTagStyle, getKeyColorTags } from '@/utils/color-utils.js'
 
 export default {
   name: 'TimelineModal',
@@ -490,7 +508,8 @@ export default {
       handleScroll,
       getEventEmoji,
       getContrastColor,
-      getTagStyle
+      getTagStyle,
+      getKeyColorTags
     }
   }
 }

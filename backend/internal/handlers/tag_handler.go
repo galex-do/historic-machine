@@ -110,6 +110,9 @@ func (h *TagHandler) UpdateTag(w http.ResponseWriter, r *http.Request) {
         } else if req.BorderColor != nil {
                 existingTag.BorderColor = req.BorderColor
         }
+        if req.KeyColor != nil {
+                existingTag.KeyColor = *req.KeyColor
+        }
         if req.Weight != nil {
                 existingTag.Weight = *req.Weight
         }

@@ -83,6 +83,15 @@
                      class="event_name event_name_link"
                      @click="handle_show_detail(yearGroup.dateGroups[0].events[0])"
                   >{{ yearGroup.dateGroups[0].events[0].name }}</span>
+                  <template v-if="!location_show_details && getKeyColorTags(yearGroup.dateGroups[0].events[0].tags).length > 0">
+                    <span 
+                      v-for="kt in getKeyColorTags(yearGroup.dateGroups[0].events[0].tags)" 
+                      :key="'kc-' + kt.id"
+                      class="key_color_dot"
+                      :style="{ backgroundColor: kt.color }"
+                      :title="kt.name"
+                    ></span>
+                  </template>
                   <template v-if="location_show_details && yearGroup.dateGroups[0].events[0].description">
                     {{ ' — ' }}{{ yearGroup.dateGroups[0].events[0].description }}
                   </template>
@@ -138,6 +147,15 @@
                            class="event_name event_name_link"
                            @click="handle_show_detail(event)"
                         >{{ event.name }}</span>
+                        <template v-if="!location_show_details && getKeyColorTags(event.tags).length > 0">
+                          <span 
+                            v-for="kt in getKeyColorTags(event.tags)" 
+                            :key="'kc-' + kt.id"
+                            class="key_color_dot"
+                            :style="{ backgroundColor: kt.color }"
+                            :title="kt.name"
+                          ></span>
+                        </template>
                         <template v-if="location_show_details && event.description">
                           {{ ' — ' }}{{ event.description }}
                         </template>
@@ -186,7 +204,7 @@ import { useTags } from '@/composables/useTags.js'
 import { useLocale } from '@/composables/useLocale.js'
 import apiService from '@/services/api.js'
 import { getEventEmoji, getAvailableLensTypes } from '@/utils/event-utils.js'
-import { getContrastColor, getTagStyle } from '@/utils/color-utils.js'
+import { getContrastColor, getTagStyle, getKeyColorTags } from '@/utils/color-utils.js'
 import EventForm from '@/components/events/EventForm.vue'
 
 export default {
@@ -1630,6 +1648,7 @@ export default {
 
     getContrastColor,
     getTagStyle,
+    getKeyColorTags,
     
     // Render narrative flow polylines connecting events chronologically
     render_narrative_flow() {

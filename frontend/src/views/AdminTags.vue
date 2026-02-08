@@ -241,6 +241,23 @@
               </div>
 
               <div class="form-group">
+                <label>Key Color</label>
+                <div class="key-color-toggle">
+                  <label class="border-toggle">
+                    <input 
+                      type="checkbox" 
+                      v-model="tagForm.key_color"
+                    />
+                    <span class="border-toggle-label">Show colored marker on timeline/clusters</span>
+                  </label>
+                  <span v-if="tagForm.key_color" class="key-color-preview">
+                    <span class="key-color-dot" :style="{ backgroundColor: tagForm.color }"></span>
+                    Preview
+                  </span>
+                </div>
+              </div>
+
+              <div class="form-group">
                 <label for="tag-weight">{{ t('columnWeight') }}</label>
                 <input 
                   id="tag-weight"
@@ -311,6 +328,7 @@ export default {
       color: '#3B82F6',
       border_color: '#000000',
       has_border: false,
+      key_color: false,
       weight: 1
     })
 
@@ -436,6 +454,7 @@ export default {
         color: tag.color,
         border_color: tag.border_color || '#000000',
         has_border: !!tag.border_color,
+        key_color: !!tag.key_color,
         weight: tag.weight || 1
       }
       showEditModal.value = true
@@ -476,7 +495,8 @@ export default {
           color: tagForm.value.color,
           weight: tagForm.value.weight,
           border_color: tagForm.value.has_border ? tagForm.value.border_color : null,
-          clear_border_color: !tagForm.value.has_border
+          clear_border_color: !tagForm.value.has_border,
+          key_color: tagForm.value.key_color
         }
         if (editingTag.value) {
           await apiService.updateTag(editingTag.value.id, payload)
@@ -505,6 +525,7 @@ export default {
         color: '#3B82F6',
         border_color: '#000000',
         has_border: false,
+        key_color: false,
         weight: 1
       }
       localError.value = null
@@ -1049,6 +1070,29 @@ export default {
 
 .border-toggle-label {
   user-select: none;
+}
+
+.key-color-toggle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.key-color-preview {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.key-color-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
 }
 
 .error-message {

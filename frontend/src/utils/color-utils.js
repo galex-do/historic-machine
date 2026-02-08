@@ -13,6 +13,11 @@ export function getTagBorderStyle(borderColor) {
   return { boxShadow: `inset 0 0 0 2.5px ${borderColor}` }
 }
 
+export function getKeyColorTags(tags) {
+  if (!tags || !Array.isArray(tags)) return []
+  return tags.filter(t => t.key_color)
+}
+
 export function getTagStyle(tag, options = {}) {
   const bgColor = tag.color || '#6366f1'
   const style = {

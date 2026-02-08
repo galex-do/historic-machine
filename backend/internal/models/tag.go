@@ -9,6 +9,7 @@ type Tag struct {
         Description string    `json:"description"`
         Color       string    `json:"color"`
         BorderColor *string   `json:"border_color"`
+        KeyColor    bool      `json:"key_color"`
         Weight      int       `json:"weight"`
         EventCount  int       `json:"event_count"`
         CreatedAt   time.Time `json:"created_at"`
@@ -21,6 +22,7 @@ type CreateTagRequest struct {
         Description string  `json:"description"`
         Color       string  `json:"color,omitempty"`
         BorderColor *string `json:"border_color,omitempty"`
+        KeyColor    *bool   `json:"key_color,omitempty"`
         Weight      *int    `json:"weight,omitempty"`
 }
 
@@ -31,6 +33,7 @@ type UpdateTagRequest struct {
         Color            string  `json:"color,omitempty"`
         BorderColor      *string `json:"border_color,omitempty"`
         ClearBorderColor bool    `json:"clear_border_color,omitempty"`
+        KeyColor         *bool   `json:"key_color,omitempty"`
         Weight           *int    `json:"weight,omitempty"`
 }
 
@@ -53,11 +56,17 @@ func (req *CreateTagRequest) ToTag() *Tag {
                 weight = *req.Weight
         }
         
+        keyColor := false
+        if req.KeyColor != nil {
+                keyColor = *req.KeyColor
+        }
+        
         return &Tag{
                 Name:        req.Name,
                 Description: req.Description,
                 Color:       color,
                 BorderColor: req.BorderColor,
+                KeyColor:    keyColor,
                 Weight:      weight,
         }
 }
