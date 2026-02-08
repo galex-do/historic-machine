@@ -230,12 +230,13 @@
                     placeholder="No border"
                     :disabled="!tagForm.has_border"
                   />
-                  <label class="border-toggle">
+                  <label class="toggle-switch">
                     <input 
                       type="checkbox" 
                       v-model="tagForm.has_border"
                     />
-                    <span class="border-toggle-label">Enable</span>
+                    <span class="toggle-track"></span>
+                    <span class="toggle-text">Enable</span>
                   </label>
                 </div>
               </div>
@@ -243,12 +244,13 @@
               <div class="form-group">
                 <label>Key Color</label>
                 <div class="key-color-toggle">
-                  <label class="border-toggle">
+                  <label class="toggle-switch">
                     <input 
                       type="checkbox" 
                       v-model="tagForm.key_color"
                     />
-                    <span class="border-toggle-label">Show colored marker on timeline/clusters</span>
+                    <span class="toggle-track"></span>
+                    <span class="toggle-text">Show colored marker on timeline/clusters</span>
                   </label>
                   <span v-if="tagForm.key_color" class="key-color-preview">
                     <span class="key-color-dot" :style="{ backgroundColor: tagForm.color }"></span>
@@ -1052,7 +1054,7 @@ export default {
   cursor: not-allowed;
 }
 
-.border-toggle {
+.toggle-switch {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -1060,57 +1062,50 @@ export default {
   white-space: nowrap;
   font-size: 0.85rem;
   color: #4a5568;
-  position: relative;
 }
 
-.border-toggle input[type="checkbox"] {
+.toggle-switch input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   width: 0;
   height: 0;
+  pointer-events: none;
 }
 
-.border-toggle input[type="checkbox"] + .border-toggle-label::before {
-  content: '';
-  display: inline-block;
-  width: 34px;
-  height: 18px;
-  background: #cbd5e1;
-  border-radius: 9px;
-  vertical-align: middle;
-  margin-right: 0.4rem;
-  transition: background 0.2s;
+.toggle-track {
   position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+  background: #cbd5e1;
+  border-radius: 10px;
+  transition: background 0.2s;
   flex-shrink: 0;
 }
 
-.border-toggle input[type="checkbox"] + .border-toggle-label::after {
+.toggle-track::after {
   content: '';
   position: absolute;
   left: 3px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 3px;
   width: 14px;
   height: 14px;
   background: #fff;
   border-radius: 50%;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-  transition: left 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
 }
 
-.border-toggle input[type="checkbox"]:checked + .border-toggle-label::before {
+.toggle-switch input[type="checkbox"]:checked + .toggle-track {
   background: #3b82f6;
 }
 
-.border-toggle input[type="checkbox"]:checked + .border-toggle-label::after {
-  left: 19px;
+.toggle-switch input[type="checkbox"]:checked + .toggle-track::after {
+  transform: translateX(16px);
 }
 
-.border-toggle-label {
+.toggle-text {
   user-select: none;
-  display: inline-flex;
-  align-items: center;
-  padding-left: 0;
 }
 
 .key-color-toggle {
