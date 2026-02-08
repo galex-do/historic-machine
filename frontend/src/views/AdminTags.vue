@@ -1053,23 +1053,64 @@ export default {
 }
 
 .border-toggle {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.5rem;
   cursor: pointer;
   white-space: nowrap;
   font-size: 0.85rem;
   color: #4a5568;
+  position: relative;
 }
 
 .border-toggle input[type="checkbox"] {
-  width: 1rem;
-  height: 1rem;
-  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.border-toggle input[type="checkbox"] + .border-toggle-label::before {
+  content: '';
+  display: inline-block;
+  width: 34px;
+  height: 18px;
+  background: #cbd5e1;
+  border-radius: 9px;
+  vertical-align: middle;
+  margin-right: 0.4rem;
+  transition: background 0.2s;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.border-toggle input[type="checkbox"] + .border-toggle-label::after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: left 0.2s;
+}
+
+.border-toggle input[type="checkbox"]:checked + .border-toggle-label::before {
+  background: #3b82f6;
+}
+
+.border-toggle input[type="checkbox"]:checked + .border-toggle-label::after {
+  left: 19px;
 }
 
 .border-toggle-label {
   user-select: none;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 0;
 }
 
 .key-color-toggle {
