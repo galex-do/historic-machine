@@ -1,5 +1,5 @@
 {
-  "description": "Dataset imported with 20 events",
+  "description": "Dataset imported with 28 events",
   "events": [
     {
       "date": "01.01.0302",
@@ -61,6 +61,158 @@
         "Tomb"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.0260",
+      "description": "Ariobarzanes, the second king of Pontus, acquires the important Greek coastal city of Amastris in Paphlagonia — a city with two natural harbors and a thriving boxwood trade. The Seleucids hand the city to him rather than to rival Heraclea Pontica. This is the first major Greek polis under Pontic control, giving the mountain kingdom direct access to Black Sea maritime trade and establishing a precedent: Pontus will grow by absorbing Greek cities, not destroying them.",
+      "description_ru": "Ариобарзан, второй царь Понта, приобретает важный греческий прибрежный город Амастрис в Пафлагонии — город с двумя естественными гаванями и процветающей торговлей самшитом. Селевкиды передают ему город, а не конкурирующей Гераклее Понтийской. Это первый крупный греческий полис под понтийским контролем, дающий горному царству прямой выход к черноморской торговле и устанавливающий прецедент: Понт будет расти, поглощая греческие города, а не разрушая их.",
+      "era": "BC",
+      "latitude": 41.7472,
+      "longitude": 32.3878,
+      "name": "Pontus Acquires Amastris",
+      "name_ru": "Понт приобретает Амастрис",
+      "source": "https://en.wikipedia.org/wiki/Ariobarzanes_of_Pontus",
+      "tags": [
+        "Greek",
+        "Pontus",
+        "Expansion",
+        "Maritime",
+        "Diplomacy"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0250",
+      "description": "Ariobarzanes dies and his young son Mithridates II inherits a vulnerable kingdom. The Galatians — Celtic tribes who had invaded Anatolia from Europe in the 270s BC — treat the boy-king with contempt and ravage Pontic territory. But Heraclea Pontica, itself at war with the Gauls, sends military aid. The young king repels the invaders in his first test of survival, proving that the dynasty forged in flight and guerrilla warfare can hold its ground.",
+      "description_ru": "Ариобарзан умирает, и его юный сын Митридат II наследует уязвимое царство. Галаты — кельтские племена, вторгшиеся в Анатолию из Европы в 270-х годах до н.э. — с презрением относятся к мальчику-царю и опустошают понтийскую территорию. Но Гераклея Понтийская, сама воюющая с галлами, присылает военную помощь. Юный царь отражает захватчиков в своём первом испытании на выживание, доказывая, что династия, рождённая в бегстве и партизанской войне, способна удержать свои позиции.",
+      "era": "BC",
+      "latitude": 40.6542,
+      "longitude": 35.8306,
+      "name": "Galatian Invasion of Pontus",
+      "name_ru": "Галатское вторжение в Понт",
+      "source": "https://en.wikipedia.org/wiki/Mithridates_II_of_Pontus",
+      "tags": [
+        "Pontus",
+        "Galatian",
+        "War",
+        "Invasion",
+        "Celtic"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0245",
+      "description": "Mithridates II marries Laodice, sister of both Seleucus II Callinicus and Antiochus Hierax — the two most powerful men in the Seleucid Empire. As dowry, he receives the province of Phrygia. The marriage catapults Pontus from a regional backwater into the Seleucid family network, connecting a Persian-Greek mountain kingdom to the greatest empire east of Rome. It is a calculated gamble: Pontic blood is now mingled with the blood of Alexander's successors.",
+      "description_ru": "Митридат II женится на Лаодике, сестре Селевка II Каллиника и Антиоха Гиеракса — двух самых могущественных людей в державе Селевкидов. В качестве приданого он получает провинцию Фригия. Этот брак превращает Понт из региональной окраины в часть селевкидской семейной сети, связывая персидско-греческое горное царство с величайшей империей к востоку от Рима. Это расчётливая ставка: понтийская кровь теперь смешана с кровью наследников Александра.",
+      "era": "BC",
+      "latitude": 40.6542,
+      "longitude": 35.8306,
+      "name": "Seleucid Marriage Alliance",
+      "name_ru": "Брачный союз с Селевкидами",
+      "source": "https://en.wikipedia.org/wiki/Mithridates_II_of_Pontus",
+      "tags": [
+        "Pontus",
+        "Seleucid",
+        "Diplomacy",
+        "Alliance",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0239",
+      "description": "The Seleucid Empire tears itself apart in the War of the Brothers. Seleucus II marches into Anatolia against his younger brother Antiochus Hierax. Mithridates II — Seleucus's own brother-in-law — betrays him and allies with Hierax and the Galatians instead. At the Battle of Ancyra, the coalition crushes Seleucus, who loses 20,000 men and barely escapes alive. Mithridates has played the great game perfectly: he backed the winner, kept Phrygia, and proved that Pontus is now a kingmaker in Anatolian politics.",
+      "description_ru": "Держава Селевкидов разрывает себя в Войне братьев. Селевк II идёт в Анатолию против младшего брата Антиоха Гиеракса. Митридат II — собственный зять Селевка — предаёт его и вступает в союз с Гиераксом и галатами. В битве при Анкире коалиция разгромила Селевка, потерявшего 20 000 человек и едва спасшегося. Митридат сыграл в большую игру безупречно: поддержал победителя, сохранил Фригию и доказал, что Понт теперь — делатель королей в анатолийской политике.",
+      "era": "BC",
+      "latitude": 39.9334,
+      "longitude": 32.8597,
+      "name": "Battle of Ancyra — Pontus Backs the Winner",
+      "name_ru": "Битва при Анкире — Понт ставит на победителя",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Ancyra_(240_BC)",
+      "tags": [
+        "Pontus",
+        "Seleucid",
+        "Galatian",
+        "Battle",
+        "War"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0227",
+      "description": "A catastrophic earthquake strikes the island of Rhodes, toppling the famous Colossus — one of the Seven Wonders of the Ancient World — and devastating the city's walls and dockyards. Mithridates II competes with other Hellenistic monarchs in sending magnificent gifts and aid to the Rhodians. The gesture is not merely charitable: Rhodes controls the most important trade routes in the eastern Mediterranean, and Pontic generosity buys diplomatic prestige and trading privileges that a mountain kingdom could never earn by force.",
+      "description_ru": "Катастрофическое землетрясение обрушивается на остров Родос, обрушив знаменитый Колосс — одно из Семи чудес света — и разрушив стены и верфи города. Митридат II соревнуется с другими эллинистическими монархами в отправке великолепных даров и помощи родосцам. Этот жест не просто благотворительный: Родос контролирует важнейшие торговые пути в восточном Средиземноморье, и понтийская щедрость покупает дипломатический престиж и торговые привилегии, которые горное царство никогда не могло бы заслужить силой.",
+      "era": "BC",
+      "latitude": 36.4341,
+      "longitude": 28.2176,
+      "name": "Pontus Sends Aid After the Rhodes Earthquake",
+      "name_ru": "Понт отправляет помощь после землетрясения на Родосе",
+      "source": "https://en.wikipedia.org/wiki/226_BC_Rhodes_earthquake",
+      "tags": [
+        "Pontus",
+        "Greek",
+        "Diplomacy",
+        "Earthquake",
+        "Architecture"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0222",
+      "description": "Mithridates II gives his daughter Laodice III in marriage to the young Seleucid king Antiochus III — the man history will call \"the Great.\" After betting against the Seleucids a generation earlier, Pontus now provides them with a queen. Laodice III will become one of the most powerful women in the Hellenistic world. Her Pontic blood will flow through the veins of future Seleucid kings. A daughter of Amasia's river gorge sits on the throne of Babylon.",
+      "description_ru": "Митридат II выдаёт свою дочь Лаодику III замуж за молодого селевкидского царя Антиоха III — человека, которого история назовёт «Великим». Поставив против Селевкидов поколение назад, Понт теперь даёт им царицу. Лаодика III станет одной из самых влиятельных женщин эллинистического мира. Её понтийская кровь потечёт в жилах будущих селевкидских царей. Дочь амасийского речного ущелья сидит на троне Вавилона.",
+      "era": "BC",
+      "latitude": 36.3566,
+      "longitude": 36.1764,
+      "name": "Pontic Princess Becomes Seleucid Queen",
+      "name_ru": "Понтийская царевна становится селевкидской царицей",
+      "source": "https://en.wikipedia.org/wiki/Laodice_III",
+      "tags": [
+        "Pontus",
+        "Seleucid",
+        "Dynasty",
+        "Diplomacy",
+        "Alliance"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0220",
+      "description": "Mithridates II declares war on the wealthy Greek port of Sinope — the prize his dynasty has coveted since its founding. Sinope sits on a narrow isthmus at the northernmost point of Anatolia, commanding the shortest sea crossing to Crimea. But the city's fortifications hold, and Mithridates dies without taking it. The failed siege becomes an obsession inherited by his successors: three generations of Pontic kings will stare across the walls of Sinope before one finally breaks through.",
+      "description_ru": "Митридат II объявляет войну богатому греческому порту Синопе — призу, о котором его династия мечтала с момента основания. Синопа расположена на узком перешейке в самой северной точке Анатолии, контролируя кратчайший морской переход в Крым. Но городские укрепления выстояли, и Митридат умирает, так и не взяв её. Неудачная осада становится наследственной одержимостью: три поколения понтийских царей будут смотреть на стены Синопы, прежде чем один наконец прорвётся.",
+      "era": "BC",
+      "latitude": 42.028,
+      "longitude": 35.1517,
+      "name": "First Siege of Sinope — The Obsession Begins",
+      "name_ru": "Первая осада Синопы — начало одержимости",
+      "source": "https://en.wikipedia.org/wiki/Mithridates_II_of_Pontus",
+      "tags": [
+        "Pontus",
+        "Greek",
+        "War",
+        "Siege",
+        "Maritime"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0190",
+      "description": "Rome crushes the Seleucid Empire at the Battle of Magnesia in western Anatolia. Antiochus III — married to Pontus's own princess Laodice III — loses everything west of the Taurus Mountains. The Treaty of Apamea (188 BC) strips the Seleucids of their Anatolian possessions, creates a power vacuum across the peninsula, and announces Rome as the new arbiter of eastern affairs. Mithridates III of Pontus watches carefully from the sidelines, staying neutral. The lesson is clear: Rome destroys empires now, and Pontus is not yet strong enough to be noticed.",
+      "description_ru": "Рим сокрушает державу Селевкидов в битве при Магнезии в западной Анатолии. Антиох III — женатый на понтийской царевне Лаодике III — теряет всё к западу от Тавра. Апамейский мир (188 до н.э.) лишает Селевкидов анатолийских владений, создаёт вакуум власти на полуострове и объявляет Рим новым арбитром восточных дел. Митридат III Понтийский внимательно наблюдает со стороны, сохраняя нейтралитет. Урок ясен: Рим теперь уничтожает империи, и Понт ещё недостаточно силён, чтобы быть замеченным.",
+      "era": "BC",
+      "latitude": 38.6079,
+      "longitude": 27.4281,
+      "name": "Battle of Magnesia — Rome Arrives in Anatolia",
+      "name_ru": "Битва при Магнезии — Рим приходит в Анатолию",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Magnesia",
+      "tags": [
+        "Roman",
+        "Seleucid",
+        "Pontus",
+        "Battle",
+        "War"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0183",
