@@ -1,10 +1,10 @@
 {
-  "description": "Kingdom of Pergamon — Attalid dynasty from Philetaerus to Roman annexation (282–129 BC)",
+  "description": "Dataset imported with 26 events",
   "events": [
     {
       "date": "01.01.0301",
-      "description": "After the Battle of Ipsus, Lysimachus takes control of Pergamon and deposits 9,000 talents of silver (roughly 270 metric tons) in its acropolis fortress. The sum could pay 50,000 soldiers for three years. He appoints Philetaerus, a eunuch from Tieium in Paphlagonia, as garrison commander and treasurer (gazophylax). Philetaerus had been castrated accidentally as an infant, crushed in a crowd during a funeral — a condition that made him seem safe to entrust with a fortune, since he could have no heirs to threaten Lysimachus.",
-      "description_ru": "После битвы при Ипсе Лисимах берёт под контроль Пергам и размещает в крепости на акрополе 9 000 талантов серебра (около 270 метрических тонн). Этой суммы хватило бы для оплаты 50 000 солдат в течение трёх лет. Он назначает Филетера, евнуха из Тиейона в Пафлагонии, комендантом гарнизона и казначеем (газофилаком). Филетер был оскоплён случайно — его покалечили в давке во время похорон, когда он был младенцем. Это обстоятельство делало его в глазах Лисимаха безопасным хранителем казны: человек без наследников не мог угрожать династии.",
+      "description": "After the Battle of Ipsus, Lysimachus takes control of Pergamon and deposits 9,000 talents of silver (roughly 270 metric tons) in its acropolis fortress. The sum could pay 50,000 soldiers for three years. He appoints Philetaerus, a eunuch from Tieium in Paphlagonia, as garrison commander and treasurer (gazophylax). Eunuch condition seem safe enough to trust him, as he could have no heirs to threaten Lysimachus.",
+      "description_ru": "После битвы при Ипсе Лисимах берёт под контроль Пергам и размещает в крепости на акрополе 9 000 талантов серебра (около 270 метрических тонн). Этой суммы хватило бы для оплаты 50 000 солдат в течение трёх лет. Он назначает Филетера, евнуха из Тиейона в Пафлагонии, комендантом гарнизона и казначеем. Лисимах считал евнуха безопасным хранителем казны: человек без наследников не мог угрожать династии.",
       "era": "BC",
       "latitude": 39.1315,
       "longitude": 27.184,
@@ -12,30 +12,32 @@
       "name_ru": "Лисимах размещает казну в Пергаме",
       "source": "https://en.wikipedia.org/wiki/Philetaerus",
       "tags": [
-        "Pergamon",
         "Greek",
+        "Pergamon",
         "Diadochi",
-        "Gold",
-        "Foundation"
+        "War",
+        "Treasure"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0282",
-      "description": "Philetaerus betrays Lysimachus and offers Pergamon with its entire 9,000-talent treasury to Seleucus I. The reason: Lysimachus, manipulated by his wife Arsinoë II, had executed his own son and heir Agathocles on false treason charges, horrifying his court. Philetaerus, reportedly close to Agathocles, switched sides. After Lysimachus died at Corupedium (281 BC) and Seleucus was assassinated months later, Philetaerus found himself holding the richest fortress in Asia Minor with no strong overlord. He governed as a nominally Seleucid vassal but acted as an independent ruler for 20 years.",
-      "description_ru": "Филетер предаёт Лисимаха и предлагает Пергам с казной в 9 000 талантов Селевку I. Причина: Лисимах, под влиянием жены Арсинои II, казнил собственного сына и наследника Агафокла по ложному обвинению в измене, чем ужаснул свой двор. Филетер, по-видимому, близкий к Агафоклу, перешёл на другую сторону. После гибели Лисимаха при Курупедионе (281 до н.э.) и убийства Селевка несколькими месяцами позже, Филетер оказался владельцем богатейшей крепости Малой Азии без сильного сюзерена. Он правил как номинальный вассал Селевкидов, но действовал как независимый правитель в течение 20 лет.",
+      "description": "Lysimachus, under the influence of his wife Arsinoe II, executed his own son and heir, Agathocles, on false charges of treason, horrifying his court. Philetaerus betrayed Lysimachus and offered Pergamon and its treasury to Seleucus. After Lysimachus' death at Kouropedion and the assassination of Seleucus a few months later, Philetaerus found himself, by chance, in possession of Asia Minor's richest fortress without a clear overlord.",
+      "description_ru": "Лисимах, под влиянием жены Арсинои II, казнил собственного сына и наследника Агафокла по ложному обвинению в измене, чем ужаснул свой двор. Филетер предаёт Лисимаха и предлагает Пергам с казной Селевку. После гибели Лисимаха при Курупедионе и убийства Селевка несколькими месяцами позже, Филетер волей случая оказался владельцем богатейшей крепости Малой Азии без явного сюзерена",
       "era": "BC",
       "latitude": 39.1315,
       "longitude": 27.184,
-      "name": "Philetaerus Seizes Pergamon",
-      "name_ru": "Филетер захватывает Пергам",
+      "name": "Philetaerus betrays Lysimachus",
+      "name_ru": "Филетер предает Лисимаха",
       "source": "https://en.wikipedia.org/wiki/Philetaerus",
       "tags": [
-        "Pergamon",
         "Greek",
+        "Pergamon",
         "Diadochi",
-        "Rise",
-        "Dynasty"
+        "War",
+        "Dynasty",
+        "Betrayal",
+        "Rise"
       ],
       "type": "political"
     },
@@ -50,75 +52,79 @@
       "name_ru": "Храм Афины в Пергаме",
       "source": "https://en.wikipedia.org/wiki/Pergamon",
       "tags": [
-        "Pergamon",
         "Greek",
-        "Temple",
+        "Pergamon",
+        "Building 🏠",
         "Architecture",
-        "Religion"
+        "Religious",
+        "Temple"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0263",
-      "description": "Philetaerus dies of old age after ruling Pergamon for nearly 40 years. Childless due to his condition, he had adopted his nephew Eumenes (son of his brother, also named Eumenes). All subsequent Attalid rulers — except Eumenes II — continued to stamp Philetaerus's portrait on their coins, honoring the founder who outlasted three of Alexander's successors.",
-      "description_ru": "Филетер умирает в старости после почти 40 лет правления Пергамом. Бездетный из-за своего состояния, он усыновил племянника Эвмена (сына брата, тоже Эвмена). Все последующие правители династии Атталидов — кроме Эвмена II — продолжали чеканить портрет Филетера на монетах, почитая основателя, который пережил трёх преемников Александра.",
+      "description": "Philetaerus dies after ruling Pergamon for nearly 40 years. Childless due to his condition, he had adopted his nephew Eumenes. All subsequent Attalid rulers — except Eumenes II — continued to stamp Philetaerus's portrait on their coins, honoring the founder who outlasted three of Alexander's successors.",
+      "description_ru": "Филетер умирает после почти 40 лет правления Пергамом. Бездетный, он усыновил племянника Эвмена. Все последующие правители династии Атталидов — кроме Эвмена II — продолжали чеканить портрет Филетера на монетах, почитая основателя, который пережил трёх преемников Александра.",
       "era": "BC",
       "latitude": 39.1315,
       "longitude": 27.184,
-      "name": "Death of Philetaerus",
-      "name_ru": "Смерть Филетера",
+      "name": "Death of Philetaerus of Pergamon",
+      "name_ru": "Смерть Филетера Пергамского",
       "source": "https://en.wikipedia.org/wiki/Philetaerus",
       "tags": [
-        "Pergamon",
         "Greek",
-        "Death",
-        "Succession",
-        "Dynasty"
+        "Pergamon",
+        "Dynasty",
+        "King",
+        "Attalid",
+        "Death"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0262",
-      "description": "Eumenes I defeats the Seleucid king Antiochus I Soter near Sardis, the ancient Lydian capital. This battle is the moment Pergamon ceases to be a client state and becomes truly independent. Eumenes expands his territory to include the fertile Caicus River valley and parts of the Aegean coastline. Antiochus I dies shortly after, possibly weakened by the defeat.",
-      "description_ru": "Эвмен I побеждает селевкидского царя Антиоха I Сотера у Сард, древней столицы Лидии. Это сражение — момент, когда Пергам перестаёт быть вассальным государством и обретает подлинную независимость. Эвмен расширяет территорию, включая плодородную долину реки Каик и часть побережья Эгейского моря. Антиох I вскоре умирает, возможно, ослабленный поражением.",
+      "description": "Eumenes I defeats the Seleucid king Antiochus I Soter at Sardis, the ancient capital of Lydia. After the victory, Pergamum gained de facto independence. Eumenes expands the territory to include the fertile valley of the Caicus River and part of the Aegean coast.",
+      "description_ru": "Эвмен I побеждает селевкидского царя Антиоха I Сотера у Сард, древней столицы Лидии. После победы Пергам обретает фактическую независимость. Эвмен расширяет территорию, включая плодородную долину реки Каик и часть побережья Эгейского моря.",
       "era": "BC",
-      "latitude": 38.4897,
-      "longitude": 28.0406,
-      "name": "Battle of Sardis — Pergamon's Independence",
-      "name_ru": "Битва при Сардах — независимость Пергама",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Pergamon becomes independent",
+      "name_ru": "Пергам становится независимым",
       "source": "https://en.wikipedia.org/wiki/Eumenes_I",
       "tags": [
-        "Pergamon",
         "Greek",
+        "Pergamon",
         "Seleucid",
+        "War",
         "Battle",
-        "Victory"
+        "Attalid",
+        "Independence"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0241",
-      "description": "Eumenes I dies. His adopted son (actually his cousin) Attalus, later known as Attalus I, inherits the throne. The dynasty's naming pattern — adoption across family branches — kept the Attalids remarkably stable: no succession wars, no fratricides, no palace coups across 150 years, a record unique among Hellenistic kingdoms.",
-      "description_ru": "Эвмен I умирает. Его приёмный сын (на самом деле двоюродный брат) Аттал, позднее известный как Аттал I, наследует трон. Семейная схема наследования — усыновление между ветвями рода — сохраняла династию Атталидов поразительно стабильной: никаких войн за наследство, братоубийств и дворцовых переворотов на протяжении 150 лет — уникальный случай среди эллинистических царств.",
+      "description": "Eumenes I dies. His adopted son (actually his cousin) Attalus inherits the throne. The dynasty's naming pattern — adoption across family branches — kept the Attalids remarkably stable: no succession wars, no fratricides, no palace coups across 150 years, a record unique among Hellenistic kingdoms.",
+      "description_ru": "Эвмен I умирает. Его приёмный сын (на деле двоюродный брат) Аттал наследует трон. Семейная схема наследования — усыновление между ветвями рода — сохраняла династию Атталидов поразительно стабильной: никаких войн за наследство, братоубийств и дворцовых переворотов на протяжении 150 лет — уникальный случай среди эллинистических царств.",
       "era": "BC",
       "latitude": 39.1315,
       "longitude": 27.184,
-      "name": "Attalus I Becomes King of Pergamon",
-      "name_ru": "Аттал I становится царём Пергама",
+      "name": "Attalus I - King of Pergamon",
+      "name_ru": "Аттал I - царь Пергама",
       "source": "https://en.wikipedia.org/wiki/Attalus_I",
       "tags": [
-        "Pergamon",
         "Greek",
-        "Succession",
+        "Pergamon",
         "Dynasty",
-        "Rise"
+        "King",
+        "Attalid"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0238",
-      "description": "Attalus I refuses to pay tribute to the Galatians — Celtic tribes that had crossed into Asia Minor from Thrace in 278 BC and terrorized Greek cities for decades. He becomes the first ruler to defy them. At the Battle of the Caecus River (near modern Bergama), he crushes the Galatian army. For this, he earns the title Soter (Savior) and declares himself basileus (king) — the first Attalid to claim royal title.",
-      "description_ru": "Аттал I отказывается платить дань галатам — кельтским племенам, переправившимся в Малую Азию из Фракии в 278 году до н.э. и десятилетиями терроризировавшим греческие города. Он первый правитель, решившийся на сопротивление. В битве у реки Каик (близ современной Бергамы) он разгромил галатское войско. За это он получил прозвище Сотер (Спаситель) и провозгласил себя базилевсом (царём) — первый из Атталидов, принявший царский титул.",
+      "description": "Attalus I refused to pay tribute to the Galatians, a Celtic tribe that crossed into Asia Minor from Thrace in 278 and terrorized Greek cities for decades. He was the first who dared to resist and defeated the Western barbarians. For this he received the nickname Soter (Savior) and proclaimed himself basileus (king)",
+      "description_ru": "Аттал I отказывается платить дань галатам — кельтским племенам, переправившимся в Малую Азию из Фракии в 278 году. и десятилетиями терроризировавшим греческие города. Он первый, кто решился на сопротивление и разгромил западных варваров. За это он получил прозвище Сотер (Спаситель) и провозгласил себя базилевсом (царём)",
       "era": "BC",
       "latitude": 39.08,
       "longitude": 27.12,
@@ -126,57 +132,80 @@
       "name_ru": "Битва у реки Каик",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Caecus_River",
       "tags": [
-        "Pergamon",
         "Greek",
         "Celtic",
+        "Pergamon",
+        "War",
         "Battle",
-        "Victory",
-        "King"
+        "King",
+        "Attalid",
+        "Thrace"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0228",
-      "description": "Attalus I commissions sculptor Epigonus to create bronze victory monuments on the Pergamon acropolis, in the sanctuary of Athena. The group includes the famous Dying Gaul — a wounded Celtic warrior collapsing beside his trumpet, wearing only a neck torque. Unusually for victory art, it shows the defeated enemy with dignity and pathos rather than contempt. The bronzes are lost, but Roman marble copies survive, among them also the Ludovisi Gaul — a chieftain stabbing himself while holding his dead wife.",
-      "description_ru": "Аттал I заказывает скульптору Эпигону бронзовые монументы победы на акрополе Пергама, в святилище Афины. Группа включает знаменитого «Умирающего галла» — раненого кельтского воина, падающего рядом со своей трубой, с одной лишь гривной на шее. Необычно для победного искусства, скульптура изображает поверженного врага с достоинством и трагизмом, а не с презрением. Бронзовые оригиналы утрачены, но сохранились римские мраморные копии, среди них также «Галл, убивающий себя» — вождь, пронзающий себя мечом, поддерживая мёртвую жену.",
+      "description": "Attalus I commissioned the sculptor Epigonus to create bronze victory monuments. The group includes the famous \"Dying Gaul\" — a wounded Celtic warrior falling next to his trumpet. The sculpture depicts the vanquished enemy with dignity and tragedy, not contempt. The bronze originals are lost, but Roman marble copies survived",
+      "description_ru": "Аттал I заказывает скульптору Эпигону бронзовые монументы победы. Группа включает знаменитого «Умирающего галла» — раненого кельтского воина, падающего рядом со своей трубой. Скульптура изображает поверженного врага с достоинством и трагизмом, а не с презрением. Бронзовые оригиналы утрачены, но сохранились римские мраморные копии",
       "era": "BC",
       "latitude": 39.13175,
       "longitude": 27.18411,
-      "name": "Dying Gaul — Victory Monuments of Attalus I",
-      "name_ru": "«Умирающий галл» — победные монументы Аттала I",
+      "name": "Dying Gaul",
+      "name_ru": "«Умирающий галл»",
       "source": "https://en.wikipedia.org/wiki/Dying_Gaul",
       "tags": [
-        "Pergamon",
         "Greek",
+        "Pergamon",
         "Art",
-        "Sculpture",
-        "Culture"
+        "Culture",
+        "Sculpture"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0218",
-      "description": "Achaeus, a Seleucid general and relative of the Seleucid royal house, proclaims himself king in western Asia Minor. He seizes most of Attalus I's recent conquests, pushing Pergamon back to its core territory around the Caicus valley. Attalus allies with Antiochus III against Achaeus. By 213 BC, Achaeus is trapped in Sardis, betrayed, and gruesomely executed — his body mutilated, sewn into a donkey skin, and decapitated.",
-      "description_ru": "Ахей, селевкидский полководец и родственник царского дома, провозглашает себя царём в западной Малой Азии. Он захватывает большинство недавних завоеваний Аттала I, оттесняя Пергам к его ядру — долине Каика. Аттал заключает союз с Антиохом III против Ахея. К 213 году до н.э. Ахей оказывается в ловушке в Сардах, предан, и жестоко казнён — тело его изуродовано, зашито в ослиную шкуру и обезглавлено.",
+      "description": "Achaeus, a Seleucid general and brother-in-law of Antiochus III, proclaims himself king of western Asia Minor. He seizes the lands of Pergamon, pushing Pergamon back to its core, the Caicus Valley. Attalus forms an alliance with Antiochus against Achaeus.",
+      "description_ru": "Ахей, селевкидский полководец и свояк Антиоха III, провозглашает себя царём в западной Малой Азии. Он захватывает земли Пергама, оттесняя Пергам к его ядру — долине Каика. Аттал заключает союз с Антиохом против Ахея.",
       "era": "BC",
-      "latitude": 38.4897,
-      "longitude": 28.0406,
+      "latitude": 38.4852,
+      "longitude": 28.0428,
       "name": "Achaeus Usurps Western Asia Minor",
-      "name_ru": "Ахей захватывает запад Малой Азии",
+      "name_ru": "Ахей Селевкид в Малой Азии",
       "source": "https://en.wikipedia.org/wiki/Achaeus_(general)",
       "tags": [
+        "Greek",
         "Pergamon",
         "Seleucid",
+        "Civil War",
+        "War"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0213",
+      "description": "After a two-year siege of the city by Antiochus III and Attalus I, Achaeus decides to flee from Sardis with the help of Ptolemy's agents. The agents betray him and lead him into a trap. Antiochus is saddened by the betrayal, but nevertheless cruelly executes Achaeus. Antiochus spares Achaeus's wife, a Pontic princess who held the fortress for a while longer, although he strips her of all her titles.",
+      "description_ru": "После двухлетней осады города Антиохом III и Атталом I Ахей решает бежать из Сард при помощи агентов Птолемея. Агенты предают его и приводят в ловушку. Антиох опечален предательством, но тем не менее жестоко казнит Ахея. Жену Ахея, понтийскую принцессу, удерживавшую крепость еще какое-то время, Антиох щадит, хотя и лишает всех титулов.",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Achaeus the Seleucid is defeated at Sardis",
+      "name_ru": "Ахей Селевкид повержен в Сардах",
+      "tags": [
         "Greek",
+        "Pergamon",
+        "Seleucid",
+        "Civil War",
         "War",
-        "Death"
+        "Antiochus III 👑",
+        "Betrayal",
+        "Siege"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0211",
-      "description": "Attalus I enters the First Macedonian War as Rome's ally against Philip V of Macedon. This is the first formal alliance between Pergamon and Rome — a strategic partnership that would shape both their futures. Attalus chose Rome because he needed a distant, powerful protector against Macedon and the Seleucids; Rome needed a local ally who understood the Greek world. The alliance would prove the most consistent diplomatic relationship in the Hellenistic period.",
-      "description_ru": "Аттал I вступает в Первую Македонскую войну как союзник Рима против Филиппа V Македонского. Это первый формальный союз между Пергамом и Римом — стратегическое партнёрство, которое определит судьбу обоих. Аттал выбрал Рим, потому что нуждался в далёком, но могущественном покровителе против Македонии и Селевкидов; Рим нуждался в местном союзнике, понимающем греческий мир. Этот союз стал самыми стабильными дипломатическими отношениями эллинистической эпохи.",
+      "description": "Attalus I entered the First Macedonian War as Rome's ally against Philip V of Macedon. Attalus chose Rome because he needed a distant but powerful protector against Macedonia and the Seleucids; Rome needed a local ally with an understanding of the Greek world. This alliance became the most stable diplomatic relationship of the Hellenistic era.",
+      "description_ru": "Аттал I вступает в Первую Македонскую войну как союзник Рима против Филиппа V Македонского. Аттал выбрал Рим, потому что нуждался в далёком, но могущественном покровителе против Македонии и Селевкидов; Рим нуждался в местном союзнике, понимающем греческий мир. Этот союз стал самыми стабильными дипломатическими отношениями эллинистической эпохи.",
       "era": "BC",
       "latitude": 39.1315,
       "longitude": 27.184,
@@ -184,57 +213,63 @@
       "name_ru": "Союз Пергама и Рима",
       "source": "https://en.wikipedia.org/wiki/First_Macedonian_War",
       "tags": [
-        "Pergamon",
-        "Roman",
         "Greek",
-        "Alliance",
-        "Diplomacy"
+        "Roman",
+        "Macedonian",
+        "Pergamon",
+        "War",
+        "Diplomacy",
+        "Alliance"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0197",
-      "description": "Attalus I dies aged 72, having ruled for 44 years — the longest Attalid reign. His son Eumenes II inherits a kingdom that is a recognized Mediterranean power with the most valuable ally of the age. Eumenes II will prove an even more ambitious builder and diplomat than his father.",
-      "description_ru": "Аттал I умирает в возрасте 72 лет, правив 44 года — самый длинный срок правления Атталидов. Его сын Эвмен II наследует царство, которое является признанной средиземноморской державой с ценнейшим союзником эпохи. Эвмен II окажется ещё более амбициозным строителем и дипломатом, чем его отец.",
+      "description": "Attalus I dies at the age of 72 after a stroke. He reigned for 44 years—the longest reign of the Attalids. His son Eumenes II inherits the kingdom.",
+      "description_ru": "Аттал I умирает в возрасте 72 лет после инсульта. Он правил 44 года — самый длинный срок правления Атталидов. Его сын Эвмен II наследует царство.",
       "era": "BC",
       "latitude": 39.1315,
       "longitude": 27.184,
       "name": "Eumenes II Becomes King",
-      "name_ru": "Эвмен II становится царём",
+      "name_ru": "Эвмен II - царь Пергама",
       "source": "https://en.wikipedia.org/wiki/Eumenes_II",
       "tags": [
-        "Pergamon",
         "Greek",
-        "Succession",
-        "Death",
-        "Dynasty"
+        "Pergamon",
+        "Dynasty",
+        "King",
+        "Attalid",
+        "Death"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0188",
-      "description": "After the Roman-Seleucid War (with Pergamene cavalry playing a key role at Magnesia in 190 BC), the Treaty of Apamea awards Pergamon almost all former Seleucid territories west of the Taurus Mountains: Lydia with Sardis, Phrygia, Pisidia, and much of western Asia Minor. The kingdom quadruples in size overnight. Eumenes II orders a new 4-kilometer city wall enclosing 90 hectares, up from the original 21.",
-      "description_ru": "После Римско-селевкидской войны (пергамская конница сыграла ключевую роль в битве при Магнесии в 190 году до н.э.) Апамейский мир передаёт Пергаму почти все бывшие селевкидские территории к западу от Тавра: Лидию с Сардами, Фригию, Писидию и большую часть запада Малой Азии. Царство увеличивается вчетверо за одну ночь. Эвмен II приказывает возвести новую 4-километровую городскую стену, ограждающую 90 гектаров вместо прежних 21.",
+      "description": "The Treaty of Apamea between Rome and the Seleucids transfers to Pergamon almost all the former Seleucid territories west of the Taurus: Lydia with Sardis, Phrygia, Pisidia and most of the west of Asia Minor. The kingdom quadrupled overnight, and the city of Pergamon became the thriving capital of a new kingdom under Roman rule.",
+      "description_ru": "Апамейский мир между Римом и Селевкидами передаёт Пергаму почти все бывшие селевкидские территории к западу от Тавра: Лидию с Сардами, Фригию, Писидию и большую часть запада Малой Азии. Царство увеличивается вчетверо за одну ночь, а город Пергам становится процветающей столицей нового царства под эгидой Рима",
       "era": "BC",
-      "latitude": 37.8312,
-      "longitude": 29.0729,
-      "name": "Treaty of Apamea — Pergamon Quadruples",
-      "name_ru": "Апамейский мир — Пергам увеличивается вчетверо",
+      "latitude": 38.06736467,
+      "longitude": 30.1685375,
+      "name": "Treaty of Apamea and Pergamon's golden age",
+      "name_ru": "Апамейский мир и золотой век Пергама",
       "source": "https://en.wikipedia.org/wiki/Treaty_of_Apamea",
       "tags": [
-        "Pergamon",
-        "Roman",
-        "Seleucid",
         "Greek",
-        "Treaty",
-        "Expansion"
+        "Roman",
+        "Pergamon",
+        "Seleucid",
+        "War",
+        "Expansion",
+        "Golden Age",
+        "Peace",
+        "Treaty"
       ],
       "type": "political"
     },
     {
-      "date": "01.01.0185",
+      "date": "01.01.0187",
       "description": "Eumenes II founds the Library of Pergamon in a complex adjoining the Temple of Athena on the acropolis. It grows to hold 200,000 scrolls, second only to Alexandria. When Egypt's Ptolemy V bans papyrus exports to sabotage a rival, Pergamene craftsmen perfect the production of parchment from animal skins — dried under tension on frames for smoothness. The Latin word 'pergamenum' (parchment) derives directly from Pergamon's name. Parchment eventually outlasts papyrus by centuries.",
-      "description_ru": "Эвмен II основывает Пергамскую библиотеку в комплексе зданий рядом с храмом Афины на акрополе. Собрание вырастает до 200 000 свитков, уступая лишь Александрийской библиотеке. Когда египетский Птолемей V запрещает экспорт папируса, чтобы подорвать конкурента, пергамские мастера совершенствуют производство пергамента из выделанных животных шкур — высушенных под натяжением на рамах до гладкости. Латинское слово «pergamenum» (пергамент) происходит непосредственно от названия Пергама. Пергамент в итоге переживёт папирус на столетия.",
+      "description_ru": "Эвмен II основывает Пергамскую библиотеку. Собрание вырастет до 200 000 свитков, уступая лишь Александрийской библиотеке. В главном читальном зале библиотеки стояла колоссальная статуя Афины Поляды (Парфенос) — уменьшенная копия знаменитого шедевра Фидия из афинского Парфенона. Атталиды как бы заявляли: «Пергам — это новые Афины» Когда египетский Птолемей V запрещает экспорт папируса, чтобы подорвать конкурента, пергамские мастера совершенствуют производство пергамента из выделанных животных шкур — высушенных под натяжением на рамах до гладкости. Латинское слово «pergamenum» (пергамент) происходит непосредственно от названия Пергама. Пергамент в итоге переживёт папирус на столетия.",
       "era": "BC",
       "latitude": 39.13191,
       "longitude": 27.18397,
@@ -242,19 +277,39 @@
       "name_ru": "Основание Пергамской библиотеки",
       "source": "https://en.wikipedia.org/wiki/Library_of_Pergamum",
       "tags": [
-        "Pergamon",
         "Greek",
-        "Knowledge",
-        "Literature",
-        "Innovation",
-        "Culture"
+        "Pergamon",
+        "Building 🏠",
+        "Culture",
+        "Library"
       ],
       "type": "cultural"
     },
     {
+      "date": "01.01.0182",
+      "description": "Ptolemy V, unwilling to see any competitors to the Library of Alexandria, banned the export of papyrus to Pergamon. As a workaround, Pergamene craftsmen developed the production of parchment from tanned animal skins, dried under tension on frames until smooth. Parchment became a revolutionary discovery, as it was more reliable, more convenient, and more durable than papyrus.",
+      "description_ru": "Птолемей V, не желая видеть конкурентов Александрийской библиотеке, запрещает экспорт папируса в Пергам. Как обходная мера, пергамские мастера развили производство пергамента из выделанных животных шкур — высушенных под натяжением на рамах до гладкости. Пергамент стал революционным открытием, поскольку был надежнее, удобнее и прочнее папируса",
+      "era": "BC",
+      "latitude": 39.13191,
+      "longitude": 27.18397,
+      "name": "Invention of parchment",
+      "name_ru": "Открытие пергамента",
+      "source": "https://en.wikipedia.org/wiki/Parchment#History",
+      "tags": [
+        "Greek",
+        "Egypt",
+        "Pergamon",
+        "Ptolemaic",
+        "Innovation",
+        "Science",
+        "Technology"
+      ],
+      "type": "scientific"
+    },
+    {
       "date": "01.01.0181",
-      "description": "Eumenes II commissions the Great Altar of Zeus and Athena — a monumental U-shaped marble altar on a terrace below the acropolis summit. Its outer frieze (113 meters long, 2.3 meters high) depicts the Gigantomachy — the cosmic battle between Olympian gods and Giants — in dramatic high relief with writhing bodies and flowing drapery. The inner Telephus frieze tells the legendary history of Pergamon's mythical founder. The altar is one of the masterpieces of Hellenistic art. Excavated by Carl Humann in 1878, the frieze now stands in Berlin's Pergamon Museum; only the foundation remains in Bergama.",
-      "description_ru": "Эвмен II заказывает Великий алтарь Зевса и Афины — монументальный П-образный мраморный алтарь на террасе ниже вершины акрополя. Внешний фриз (113 метров длиной, 2,3 метра высотой) изображает Гигантомахию — космическое сражение олимпийских богов с гигантами — в драматическом высоком рельефе с корчащимися телами и развевающимися одеждами. Внутренний фриз Телефа повествует о легендарной истории мифического основателя Пергама. Алтарь — один из шедевров эллинистического искусства. Раскопан Карлом Хуманом в 1878 году, фриз ныне находится в Берлинском Пергамском музее; на месте осталось лишь основание.",
+      "description": "Eumenes II commissioned a monumental U-shaped marble altar dedicated to Zeus and Athena. The outer frieze depicted the Gigantomachy—the cosmic battle between the Olympian gods and the giants—in dramatic high relief, with writhing bodies and flowing robes. The inner frieze by Telephus told the legendary story of the mythical founder of Pergamon.\n",
+      "description_ru": "Эвмен II заказывает монументальный П-образный мраморный алтарь, посвященный Зевсу и Афине. Внешний фриз изображал Гигантомахию — космическое сражение олимпийских богов с гигантами — в драматическом высоком рельефе с корчащимися телами и развевающимися одеждами. Внутренний фриз Телефа повествовал о легендарной истории мифического основателя Пергама",
       "era": "BC",
       "latitude": 39.13099,
       "longitude": 27.18383,
@@ -262,39 +317,38 @@
       "name_ru": "Великий алтарь Зевса в Пергаме",
       "source": "https://en.wikipedia.org/wiki/Pergamon_Altar",
       "tags": [
-        "Pergamon",
         "Greek",
+        "Pergamon",
+        "Building 🏠",
         "Architecture",
         "Art",
-        "Sculpture",
-        "Temple",
-        "Wonder"
+        "Temple"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0180",
-      "description": "The Asklepion of Pergamon, originally founded in the 4th century BC, is massively expanded under Eumenes II into one of the ancient world's foremost healing centers. Located 2 km southwest of the acropolis, it features a sacred spring with mildly radioactive water, treatment halls, a theater, dream interpretation chambers, and an underground tunnel for sensory therapy. Treatments include hydrotherapy, herbal remedies, music, and psychotherapy. The physician Galen will later train here (2nd century AD).",
-      "description_ru": "Асклепион Пергама, изначально основанный в IV веке до н.э., масштабно расширяется при Эвмене II и становится одним из крупнейших лечебных центров древнего мира. Расположенный в 2 км к юго-западу от акрополя, он включает священный источник со слаборадиоактивной водой, лечебные залы, театр, комнаты для толкования снов и подземный тоннель для сенсорной терапии. Методы лечения включают гидротерапию, травничество, музыку и психотерапию. Врач Гален впоследствии будет здесь обучаться (II век н.э.).",
+      "description": "The Asclepion of Pergamon, originally founded in the 4th century BC, was greatly expanded under Eumenes II and became one of the largest healing centers of the ancient world. It includes a sacred spring with slightly radioactive water, healing halls, a theater, rooms for dream interpretation, and an underground tunnel for sensory therapy. Treatment methods included hydrotherapy, herbalism, music, and psychotherapy.",
+      "description_ru": "Асклепион Пергама, изначально основанный в IV веке до н.э., масштабно расширяется при Эвмене II и становится одним из крупнейших лечебных центров древнего мира. Он включает священный источник со слаборадиоактивной водой, лечебные залы, театр, комнаты для толкования снов и подземный тоннель для сенсорной терапии. Методы лечения включают гидротерапию, травничество, музыку и психотерапию.",
       "era": "BC",
       "latitude": 39.11909,
       "longitude": 27.16613,
-      "name": "Asklepion Healing Center Expansion",
-      "name_ru": "Расширение Асклепиона в Пергаме",
+      "name": "The Asklepion of Pergamon",
+      "name_ru": "Асклепион в Пергаме",
       "source": "https://en.wikipedia.org/wiki/Asclepieion_of_Pergamon",
       "tags": [
-        "Pergamon",
         "Greek",
-        "Medicine",
+        "Pergamon",
+        "Building 🏠",
         "Architecture",
-        "Building"
+        "Medicine"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0172",
-      "description": "Eumenes II joins Rome's Third Macedonian War against Perseus of Macedon. On his way home after lobbying the Roman Senate, he is ambushed at Delphi — large rocks are rolled down a cliff onto him, nearly killing him. He survives badly injured. Ancient sources disagree on who ordered the attack: Perseus or even Rome itself, which was growing wary of Pergamon's growing power. The Senate begins treating Eumenes with cold suspicion despite his loyalty.",
-      "description_ru": "Эвмен II присоединяется к Третьей Македонской войне Рима против Персея Македонского. На обратном пути после встречи с римским Сенатом на него совершают покушение в Дельфах — со скалы сбрасывают огромные камни, едва не убив его. Он выживает с тяжёлыми травмами. Античные источники расходятся в том, кто заказал нападение: Персей или сам Рим, начавший опасаться растущей мощи Пергама. Сенат начинает обращаться с Эвменом с холодной подозрительностью, несмотря на его верность.",
+      "description": "Eumenes II joins Rome's Third Macedonian War against Perseus of Macedon. On his way back from a meeting with the Roman Senate, he is assassinated in Delphi—huge stones are thrown from a cliff, nearly killing him. He survives with serious injuries. Ancient sources differ on who ordered the attack: Perseus or Rome itself, which had begun to fear the growing power of Pergamon.",
+      "description_ru": "Эвмен II Пергамский присоединяется к Третьей Македонской войне Рима против Персея Македонского. На обратном пути после встречи с римским Сенатом на него совершают покушение в Дельфах — со скалы сбрасывают огромные камни, едва не убив его. Он выживает с тяжёлыми травмами. Античные источники расходятся в том, кто заказал нападение: Персей или сам Рим, начавший опасаться растущей мощи Пергама.",
       "era": "BC",
       "latitude": 38.48244,
       "longitude": 22.50088,
@@ -302,18 +356,19 @@
       "name_ru": "Покушение на Эвмена II в Дельфах",
       "source": "https://en.wikipedia.org/wiki/Eumenes_II",
       "tags": [
-        "Pergamon",
         "Greek",
         "Roman",
-        "Assassination",
-        "Macedonian"
+        "Macedonian",
+        "Pergamon",
+        "War",
+        "Assassination"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0170",
-      "description": "Crates of Mallus, head of the Library of Pergamon and founder of the Pergamene school of literary criticism (which favored allegory over Alexandria's literal approach), is sent on a diplomatic mission to Rome. He falls into an open sewer in the Cloaca Maxima and breaks his leg. During his long recovery, he delivers public lectures that introduce Romans to Greek grammatical and literary scholarship — and to parchment manuscripts. The accident becomes one of Rome's most consequential sewer incidents.",
-      "description_ru": "Кратет из Малла, глава Пергамской библиотеки и основатель пергамской школы литературной критики (предпочитавшей аллегорическое толкование александрийскому буквальному), отправлен с дипломатической миссией в Рим. Он проваливается в открытый канализационный люк Cloaca Maxima и ломает ногу. Во время длительного выздоровления он читает публичные лекции, знакомя римлян с греческой грамматикой и литературной наукой — а также с пергаментными рукописями. Это падение становится одним из самых судьбоносных канализационных происшествий Рима.",
+      "description": "Crates of Mallus, head of the Pergamon Library and founder of the Pergamene school of literary criticism, was sent on a diplomatic mission to Rome. He fell into an open manhole in the Cloaca Maxima and broke his leg. During his lengthy recovery, he gave public lectures, introducing the Romans to Greek grammar and literature.",
+      "description_ru": "Кратет из Малла, глава Пергамской библиотеки и основатель пергамской школы литературной критики отправлен с дипломатической миссией в Рим. Он проваливается в открытый канализационный люк Cloaca Maxima и ломает ногу. Во время длительного выздоровления он читает публичные лекции, знакомя римлян с греческой грамматикой и литературой.",
       "era": "BC",
       "latitude": 41.89198,
       "longitude": 12.48527,
@@ -321,38 +376,39 @@
       "name_ru": "Кратет из Малла падает в римскую клоаку",
       "source": "https://en.wikipedia.org/wiki/Crates_of_Mallus",
       "tags": [
-        "Pergamon",
         "Greek",
         "Roman",
-        "Knowledge",
-        "Literature",
-        "Culture"
+        "Pergamon",
+        "Culture",
+        "Literature"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0166",
-      "description": "Eumenes II sends his brother Attalus as ambassador to Rome. The Senate, now openly hostile to Eumenes, tries to tempt Attalus to split with his brother by offering him a separate kingdom. Attalus refuses, remaining loyal — earning his later epithet 'Philadelphus' (Brother-Loving). This brotherly loyalty was extraordinary: in the Ptolemaic and Seleucid dynasties, brothers routinely murdered each other for power.",
-      "description_ru": "Эвмен II отправляет своего брата Аттала послом в Рим. Сенат, уже открыто враждебный к Эвмену, пытается соблазнить Аттала, предлагая ему отдельное царство, если он порвёт с братом. Аттал отказывается, сохраняя верность — за что позднее получит прозвище «Филадельф» (Братолюбивый). Эта братская верность была исключительной: в династиях Птолемеев и Селевкидов братья регулярно убивали друг друга ради власти.",
+      "description": "Eumenes II sends his brother Attalus as ambassador to Rome. The Senate, already openly hostile to the cunning Eumenes, attempts to tempt Attalus, offering him the kingdom if he breaks with his brother. Attalus remains by his brother's side (a rarity in the ancient world), earning him the nickname \"Philadelphus\" (brotherly).",
+      "description_ru": "Эвмен II отправляет своего брата Аттала послом в Рим. Сенат, уже открыто враждебный к хитрому Эвмену, пытается соблазнить Аттала, предлагая царство ему, если он порвёт с братом. Аттал остается на стороне брата (что редкость в античном мире) — за что позднее получит прозвище «Филадельф» (Братолюбивый).",
       "era": "BC",
-      "latitude": 41.8925,
-      "longitude": 12.4853,
+      "latitude": 41.89318911,
+      "longitude": 12.48506606,
       "name": "Rome Fails to Divide the Attalid Brothers",
-      "name_ru": "Рим безуспешно пытается разделить братьев Атталидов",
+      "name_ru": "Рим борется с влиянием Пергама",
       "source": "https://en.wikipedia.org/wiki/Attalus_II",
       "tags": [
-        "Pergamon",
         "Greek",
         "Roman",
+        "Pergamon",
         "Diplomacy",
-        "Dynasty"
+        "Dynasty",
+        "Attalid",
+        "Family"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0160",
-      "description": "Eumenes II donates a massive two-story stoa (colonnade) to Athens, built on the south slope of the Acropolis between the Odeon of Herodes Atticus and the Theater of Dionysus. The Stoa of Eumenes, 163 meters long, provides covered walkway space for theater-goers. Eumenes also funds monuments on the Athenian Acropolis depicting four mythical battles: gods vs. giants, Greeks vs. Amazons, Athenians vs. Persians, and Pergamenes vs. Galatians — placing Pergamon's victories alongside civilization's foundational myths.",
-      "description_ru": "Эвмен II дарит Афинам монументальную двухэтажную стою (колоннаду), возведённую на южном склоне Акрополя между Одеоном Герода Аттика и Театром Диониса. Стоя Эвмена длиной 163 метра служит крытой прогулочной галереей для посетителей театра. Эвмен также финансирует монументы на Афинском акрополе, изображающие четыре мифических сражения: боги против гигантов, греки против амазонок, афиняне против персов и пергамцы против галатов — ставя победы Пергама в один ряд с основополагающими мифами цивилизации.",
+      "description": "Eumenes II erected a monumental two-story stoa (colonnade) on the southern slope of the Acropolis in Athens. Eumenes' stoa served as a covered promenade for visitors to the Theater of Dionysus. Eumenes also financed monuments on the Athenian Acropolis, cementing the Kingdom of Pergamon in the historical memory of the Hellenic world.",
+      "description_ru": "Эвмен II возводит на южном склоне Акрополя в Афинах монументальную двухэтажную стою (колоннаду). Стоя Эвмена служит крытой прогулочной галереей для посетителей театра Диониса. Эвмен также финансирует монументы на Афинском акрополе, закрепляя Пергамское царство в исторической памяти эллинского мира",
       "era": "BC",
       "latitude": 37.97107,
       "longitude": 23.72724,
@@ -360,46 +416,51 @@
       "name_ru": "Стоя Эвмена в Афинах",
       "source": "https://en.wikipedia.org/wiki/Stoa_of_Eumenes",
       "tags": [
-        "Pergamon",
         "Greek",
+        "Pergamon",
+        "Athens",
+        "Building 🏠",
         "Architecture",
-        "Culture",
-        "Building"
+        "Culture"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0159",
-      "description": "Eumenes II dies after 38 years of rule. His brother Attalus II Philadelphus, now in his 60s, becomes king. Despite his advanced age, Attalus II proves a capable administrator who maintains all of his brother's achievements and continues Pergamon's building programs and Roman alliance for another 21 years.",
-      "description_ru": "Эвмен II умирает после 38 лет правления. Его брат Аттал II Филадельф, которому уже за 60, становится царём. Несмотря на преклонный возраст, Аттал II оказывается способным правителем, который сохраняет все достижения брата и продолжает строительные проекты и союз с Римом ещё 21 год.",
+      "description": "Eumenes II dies after 38 years of rule. His brother Attalus II Philadelphus, now in his 60s, becomes king.",
+      "description_ru": "Эвмен II умирает после 38 лет правления. Его брат Аттал II Филадельф, которому уже за 60, становится царём.",
       "era": "BC",
       "latitude": 39.1315,
       "longitude": 27.184,
-      "name": "Attalus II Philadelphus Becomes King",
-      "name_ru": "Аттал II Филадельф становится царём",
+      "name": "Attalus II Philadelphus - King of Pergamon",
+      "name_ru": "Аттал II Филадельф - царь Пергама",
       "source": "https://en.wikipedia.org/wiki/Attalus_II",
       "tags": [
-        "Pergamon",
         "Greek",
-        "Succession",
-        "Dynasty"
+        "Pergamon",
+        "Dynasty",
+        "King",
+        "Attalid"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0150",
-      "description": "Attalus II gifts Athens the Stoa of Attalos in the Agora — a grand two-story marketplace, 115 meters long with 45 columns on each floor. It housed shops on the ground floor and served as a promenade on the upper level. Fully reconstructed by the American School of Classical Studies in 1952–1956, it is the only fully restored ancient Greek stoa and today houses the Museum of the Ancient Agora.",
-      "description_ru": "Аттал II дарит Афинам Стою Аттала на Агоре — грандиозный двухэтажный торговый комплекс длиной 115 метров с 45 колоннами на каждом этаже. На первом этаже располагались лавки, второй служил прогулочной галереей. Полностью реконструирована Американской школой классических исследований в 1952–1956 годах, она является единственной полностью восстановленной древнегреческой стоей и сегодня вмещает Музей античной Агоры.",
+      "description": "Following his brother's example, King Attalus II Philadelphus of Pergamon built a stoa in the Athenian Agora—a grand two-story shopping complex 115 meters long with 45 columns on each floor. The first floor housed shops, and the second served as a promenade gallery. Compared to the austere classical Athenian architecture, Pergamene's architecture was impressive in its scale and opulence.",
+      "description_ru": "Царь Пергама Аттал II Филадельф, следуя примеру брата, возводит на Афинской Агоре стою — грандиозный двухэтажный торговый комплекс длиной 115 метров с 45 колоннами на каждом этаже. На первом этаже располагались лавки, второй служил прогулочной галереей. В сравнении с строгой афинской классикой пергамская архитектура впечатляла своей масштабностью и богатством",
       "era": "BC",
-      "latitude": 37.97506,
-      "longitude": 23.72295,
+      "latitude": 37.9755637,
+      "longitude": 23.72420311,
       "name": "Stoa of Attalos in Athens",
       "name_ru": "Стоя Аттала в Афинах",
       "source": "https://en.wikipedia.org/wiki/Stoa_of_Attalos",
       "tags": [
-        "Pergamon",
         "Greek",
+        "Pergamon",
+        "Building 🏠",
         "Architecture",
+        "Attalid",
+        "Culture",
         "Trade",
         "Building"
       ],
@@ -407,101 +468,141 @@
     },
     {
       "date": "01.01.0149",
-      "description": "Attalus II helps Nicomedes II seize the Bithynian throne from his father Prusias II, who had been humiliating himself before Rome and alienating his own court. The intervention shows Pergamon still acting as a regional power broker, though increasingly as Rome's proxy rather than an independent force.",
-      "description_ru": "Аттал II помогает Никомеду II захватить вифинский трон, свергнув его отца Прусия II, который унижался перед Римом и настраивал против себя собственный двор. Вмешательство показывает, что Пергам по-прежнему выступает региональным арбитром, хотя всё больше как представитель Рима, а не как независимая сила.",
+      "description": "Attalus II helps Prince Nicomedes II seize the Bithynian throne by overthrowing his father, Prusias II, who had been humiliating himself before Rome and antagonizing his own court. Rome does not approve of Pergamum's activity, but does not interfere either - the Senate has better relations with Attalus than with Prusias",
+      "description_ru": "Аттал II помогает принцу Никомеду II захватить вифинский трон, свергнув его отца Прусия II, который унижался перед Римом и настраивал против себя собственный двор. Рим не одобряет активность Пергама, но и не препятствует - с Атталом у Сената отношения лучше, чем с Прусием",
       "era": "BC",
       "latitude": 40.26194,
       "longitude": 29.02444,
       "name": "Pergamon Intervenes in Bithynia",
-      "name_ru": "Вмешательство Пергама в Вифинии",
+      "name_ru": "Вмешательство Пергама в дела Вифинии",
       "source": "https://en.wikipedia.org/wiki/Attalus_II",
       "tags": [
-        "Pergamon",
         "Greek",
-        "Political",
-        "Military",
-        "Diplomacy"
+        "Pergamon",
+        "Diplomacy",
+        "Bithinian",
+        "Overthrow",
+        "Political"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0138",
-      "description": "Attalus II dies at around 82 years old. His nephew Attalus III (son of Eumenes II) becomes the last Attalid king. Unlike his predecessors — soldiers, diplomats, and builders — Attalus III is a reclusive scholar obsessed with botany, pharmacology, and the study of poisons. He experiments with toxic plants in his royal gardens, testing them on condemned criminals. Ancient sources describe him as eccentric, possibly mentally unstable, and uninterested in governance.",
-      "description_ru": "Аттал II умирает в возрасте около 82 лет. Его племянник Аттал III (сын Эвмена II) становится последним царём Атталидов. В отличие от своих предшественников — воинов, дипломатов и строителей — Аттал III — замкнутый учёный, одержимый ботаникой, фармакологией и изучением ядов. Он экспериментирует с ядовитыми растениями в своих царских садах, испытывая их на осуждённых преступниках. Античные источники описывают его как эксцентрика, возможно, психически нестабильного и безразличного к управлению.",
+      "description": "Attalus II dies at the age of approximately 82. His nephew, Attalus III (son of Eumenes II), becomes the last king of the Attalids. Unlike his predecessors—warriors, diplomats, and builders—Attalus III is a reclusive scholar, obsessed with botany, pharmacology, and the study of poisons. He is more interested in plants than in government.",
+      "description_ru": "Аттал II умирает в возрасте около 82 лет. Его племянник Аттал III (сын Эвмена II) становится последним царём Атталидов. В отличие от своих предшественников — воинов, дипломатов и строителей — Аттал III — замкнутый учёный, одержимый ботаникой, фармакологией и изучением ядов. Ему более интересны растения, чем управления государством.",
       "era": "BC",
       "latitude": 39.1315,
       "longitude": 27.184,
-      "name": "Attalus III — The Poison King",
-      "name_ru": "Аттал III — Ядовитый царь",
+      "name": "Attalus III — The Poison King of Pergamon",
+      "name_ru": "Аттал III — Ядовитый царь Пергама",
       "source": "https://en.wikipedia.org/wiki/Attalus_III",
       "tags": [
-        "Pergamon",
         "Greek",
-        "Succession",
-        "Medicine",
-        "Knowledge"
+        "Pergamon",
+        "Dynasty",
+        "King",
+        "Attalid",
+        "Medicine"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0133",
+      "description": "King Attalus III of Pergamon, who died suddenly of sunstroke, bequeathed his kingdom not to his bastard brother Aristonicus, but to Rome. The wealthy state would become the province of Asia, Rome's richest possession and a source of enormous tax revenues—and a temptation for corrupt governors.",
+      "description_ru": "Царь Аттал III Пергамский, внезапно умерший от солнечного удара, завещает своё царство не брату-бастарду Аристонику, а Риму. Богатое государство станет провинцией Азия, богатейшим владением Рима и источником огромных налоговых поступлений — а также соблазном для коррумпированных наместников.",
+      "era": "BC",
+      "latitude": 39.12,
+      "longitude": 27.183,
+      "name": "Bequest of Pergamon",
+      "name_ru": "Завещание Пергама Риму",
+      "source": "https://en.wikipedia.org/wiki/Attalus_III",
+      "tags": [
+        "Greek",
+        "Roman",
+        "Pergamon",
+        "Political",
+        "Vassalage"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0132",
-      "description": "Aristonicus, who claims to be the illegitimate son of Eumenes II, refuses to accept Rome's inheritance and raises a revolt. He assumes the royal name Eumenes III and founds a utopian movement called Heliopolis ('City of the Sun'). His followers, the Heliopolitae, are promised freedom and equality — his army consists mostly of slaves, serfs, and propertyless workers from the inland countryside who have nothing to lose. The Stoic philosopher Blossius of Cumae, who had been advisor to the murdered Roman reformer Tiberius Gracchus, flees to join Aristonicus, bringing revolutionary ideology to the rebellion.",
-      "description_ru": "Аристоник, называющий себя незаконным сыном Эвмена II, отказывается принять римское наследование и поднимает восстание. Он принимает царское имя Эвмен III и основывает утопическое движение «Гелиополис» («Город Солнца»). Его последователи, гелиополиты, получают обещания свободы и равенства — его армия состоит в основном из рабов, крепостных и бедняков с внутренних территорий, которым нечего терять. Стоический философ Блоссий из Кум, бывший советник убитого римского реформатора Тиберия Гракха, бежит к Аристонику, привнося революционную идеологию в восстание.",
+      "description": "Aristonicus, claiming to be the illegitimate son of Eumenes II, refuses to accept the Roman succession and leads a rebellion. He adopts the royal name Eumenes III and founds the utopian movement Heliopolis (\"City of the Sun\"). His followers, the Heliopolitans, receive promises of freedom and equality—his army consists primarily of slaves, serfs, and the poor from the interior with nothing to lose.",
+      "description_ru": "Аристоник, называющий себя незаконным сыном Эвмена II, отказывается принять римское наследование и поднимает восстание. Он принимает царское имя Эвмен III и основывает утопическое движение «Гелиополис» («Город Солнца»). Его последователи, гелиополиты, получают обещания свободы и равенства — его армия состоит в основном из рабов, крепостных и бедняков с внутренних территорий, которым нечего терять.",
       "era": "BC",
-      "latitude": 38.9217,
-      "longitude": 27.8417,
-      "name": "Aristonicus and the City of the Sun",
-      "name_ru": "Аристоник и Город Солнца",
+      "latitude": 38.54923944,
+      "longitude": 26.85333252,
+      "name": "The Pergamon Revolt and the City of the Sun",
+      "name_ru": "Восстание в Пергаме и Город Солнца",
       "source": "https://en.wikipedia.org/wiki/Eumenes_III",
       "tags": [
-        "Pergamon",
         "Greek",
         "Roman",
+        "Pergamon",
         "War",
-        "Revolution"
+        "Rebellion"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0131",
-      "description": "Aristonicus defeats and kills the Roman consul Publius Licinius Crassus Dives Mucianus in battle — a stunning upset. Rome had underestimated the revolt, sending insufficient forces. The consul's death shocks Rome. Aristonicus controls much of the interior: Thyatira, Apollonis, and threatens Pergamon itself.",
-      "description_ru": "Аристоник в бою побеждает и убивает римского консула Публия Лициния Красса Дивеса Муциана — потрясающая неожиданность. Рим недооценил восстание, отправив недостаточные силы. Гибель консула шокирует Рим. Аристоник контролирует значительную часть внутренних территорий: Тиатиру, Аполлонию и угрожает самому Пергаму.",
+      "description": "Aristonicus defeats and kills the Roman consul Publius Licinius Crassus Dives Mucianus in battle. The consul's death shocks Rome. Rome underestimated the rebellion, sending insufficient forces. Aristonicus controls a significant portion of the interior: Thyatira, Apollonia, and threatens Pergamon itself, which is loyal to Rome.",
+      "description_ru": "Аристоник в бою побеждает и убивает римского консула Публия Лициния Красса Дивеса Муциана.  Гибель консула шокирует Рим. Рим недооценил восстание, отправив недостаточные силы. Аристоник контролирует значительную часть внутренних территорий: Тиатиру, Аполлонию и угрожает самому Пергаму, лояльному Риму.",
       "era": "BC",
-      "latitude": 38.9217,
-      "longitude": 27.8417,
+      "latitude": 38.56722692,
+      "longitude": 26.8605423,
       "name": "Aristonicus Kills Roman Consul",
-      "name_ru": "Аристоник убивает римского консула",
+      "name_ru": "Римский консул убит в Пергаме",
       "source": "https://en.wikipedia.org/wiki/War_of_Aristonicus",
       "tags": [
-        "Pergamon",
         "Greek",
         "Roman",
-        "Battle",
+        "Pergamon",
         "War",
+        "Battle",
         "Death"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0129",
-      "description": "Rome sends Marcus Perperna, a veteran of the Sicilian slave revolts, who besieges Aristonicus at Stratonicea and starves him into surrender. Aristonicus is paraded through Rome and strangled in the Tullianum prison. Blossius of Cumae kills himself rather than face capture. The former Pergamon Kingdom becomes the Roman province of Asia — Rome's richest province, generating more tax revenue than any other. The 150-year Attalid dynasty, founded by a eunuch with stolen silver, ends as a Roman tax farm.",
-      "description_ru": "Рим отправляет Марка Перперну, ветерана подавления сицилийских рабских восстаний, который осаждает Аристоника в Стратоникее и вынуждает его сдаться голодом. Аристоника проводят через Рим и удушают в тюрьме Туллианум. Блоссий из Кум убивает себя, предпочтя смерть плену. Бывшее Пергамское царство становится римской провинцией Азия — богатейшей провинцией Рима, приносящей больше налогов, чем любая другая. Так 150-летняя династия Атталидов, основанная евнухом с украденным серебром, заканчивается как римская налоговая территория.",
+      "description": "Marcus Perperna, a veteran of the wars in Sicily, besieges Aristonicus in Stratonicea and forces him to surrender by starvation. Aristonicus is escorted through Rome and strangled in the Tullianum prison. Pergamon finally becomes the Roman province of Asia.",
+      "description_ru": "Марка Перперна, ветеран войн в Сицилии, осаждает Аристоника в Стратоникее и голодом принуждает его сдаться. Аристоника проводят через Рим и удушают в тюрьме Туллианум. Пергам окончательно становится римской провинцией Азия",
       "era": "BC",
-      "latitude": 37.53003,
-      "longitude": 28.06806,
-      "name": "Fall of Aristonicus — Pergamon Becomes Province of Asia",
-      "name_ru": "Падение Аристоника — Пергам становится провинцией Азия",
+      "latitude": 39.16000663,
+      "longitude": 27.78570056,
+      "name": "Subjugation of Pergamum",
+      "name_ru": "Подчинение Пергама",
       "source": "https://en.wikipedia.org/wiki/War_of_Aristonicus",
       "tags": [
-        "Pergamon",
         "Greek",
         "Roman",
-        "Fall",
-        "End",
+        "Pergamon",
+        "War",
+        "Conquest",
         "Death",
-        "Conquest"
+        "End"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.11.0041",
+      "description": "After meeting in Tarsus, Mark Antony, charmed by Cleopatra, gave her the contents of the Pergamon Library as a dramatic gesture (to restore the archives after the recent fire in Alexandria). The Pergamon Library became empty, and Pergamon itself ceased to be a center of learning. This gift caused a storm of indignation in Rome.",
+      "description_ru": "После встречи в Тарсе очарованный Клеопатрой Марк Антоний в качестве эффектного жеста дарит Клеопатре содержимое Пергамской библиотеки (для восстановления архивов после недавнего пожара в Александрии). Пергамская библиотека опустела, а сам Пергам перестал быть научным центром. Этот подарок вызвал в Риме бурю негодования.",
+      "era": "BC",
+      "latitude": 39.13191,
+      "longitude": 27.18397,
+      "name": "Transfer of the Pergamon Library to Alexandria",
+      "name_ru": "Перенос Пергамской библиотеки в Александрию",
+      "source": "https://en.wikipedia.org/wiki/Library_of_Pergamum#Decline",
+      "tags": [
+        "Roman",
+        "Pergamon",
+        "Decline",
+        "Library"
+      ],
+      "type": "historic"
     }
-  ]
+  ],
+  "filename": "pergamon_kingdom.json"
 }

@@ -1,29 +1,31 @@
 {
-  "description": "Kingdom of Pontus — Mithridatic dynasty from its Persian origins to the fall of Mithridates the Great (302–63 BC)",
+  "description": "Dataset imported with 20 events",
   "events": [
     {
       "date": "01.01.0302",
-      "description": "Antigonus I Monophthalmus executes Mithridates II of Cius, a Persian nobleman ruling the small city-state on the Sea of Marmara. His son, also named Mithridates, is next on the list. But Antigonus's own son, Demetrius Poliorketes, is the young man's friend. Sworn to secrecy, Demetrius finds a way: during a walk on the beach, he silently writes the word 'FLEE' in the sand with his spear. Mithridates reads it, escapes that night with six horsemen, and rides east into the mountains of Paphlagonia.",
-      "description_ru": "Антигон I Одноглазый казнит Митридата II Киосского, персидского аристократа, правившего небольшим городом-государством на берегу Мраморного моря. Его сын, тоже Митридат, следующий в списке. Но сын Антигона, Деметрий Полиоркет, — друг юноши. Связанный клятвой молчания, Деметрий находит выход: во время прогулки по пляжу он молча пишет копьём на песке слово «БЕГИ». Митридат читает, бежит той же ночью с шестью всадниками и скачет на восток в горы Пафлагонии.",
+      "description": "Antigonus I the One-Eyed executes Mithridates II of Cios, a Persian aristocrat who ruled a small city-state on the shores of the Sea of ​​Marmara. His son, also a Mithridates, is next on the list. But Antigonus's son, Demetrius Poliorcetes, is a friend of the young man. Bound by a vow of silence, Demetrius finds a way out: while walking on the beach, he silently writes the word \"RUN\" in the sand with a spear.",
+      "description_ru": "Антигон I Одноглазый казнит Митридата II Киосского, персидского аристократа, правившего небольшим городом-государством на берегу Мраморного моря. Его сын, тоже Митридат, следующий в списке. Но сын Антигона, Деметрий Полиоркет — друг юноши. Связанный клятвой молчания, Деметрий находит выход: во время прогулки по пляжу он молча пишет копьём на песке слово «БЕГИ»",
       "era": "BC",
       "latitude": 40.4342,
       "longitude": 29.1397,
-      "name": "'Flee' Written in Sand — Mithridates Escapes",
-      "name_ru": "«Беги», написанное на песке — побег Митридата",
+      "name": "Mithridates Escapes",
+      "name_ru": "Побег Митридата",
       "source": "https://en.wikipedia.org/wiki/Mithridates_I_of_Pontus",
       "tags": [
-        "Pontus",
         "Greek",
+        "Macedonian",
+        "Pontus",
         "Diadochi",
-        "Death",
-        "Legend"
+        "War",
+        "Legend",
+        "Death"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0281",
-      "description": "After 20 years of guerrilla consolidation from his mountain fortress of Cimiata, Mithridates Ktistes (the Founder) declares himself king of Pontus. The death of both Lysimachus and Seleucus I in 281 BC creates a power vacuum in Anatolia. His kingdom stretches along the southern Black Sea coast with its capital at Amasia (modern Amasya), a natural fortress in a deep river gorge. He claims descent from the Persian Achaemenid dynasty and from the royal house of Cius — part Persian warrior aristocrat, part Greek city politician.",
-      "description_ru": "После 20 лет партизанской консолидации из горной крепости Кимиата Митридат Ктист (Основатель) провозглашает себя царём Понта. Гибель Лисимаха и Селевка I в 281 году до н.э. создаёт вакуум власти в Анатолии. Его царство тянется вдоль южного побережья Чёрного моря, столица — Амасия (современная Амасья), естественная крепость в глубоком речном ущелье. Он возводит свой род к персидской династии Ахеменидов и к царскому дому Киоса — наполовину персидский воин-аристократ, наполовину греческий политик.",
+      "description": "The deaths of Lysimachus and Seleucus I in 281 BC created a power vacuum in Anatolia. After 20 years of guerrilla warfare, Mithridates Ktistos (the Founder) proclaimed himself King of Pontus, with his capital at Amasia, a natural fortress in a deep river gorge. His kingdom stretched along the southern coast of the Black Sea. He traced his lineage back to the Persian Achaemenid dynasty and the royal house of Kios — half Persian, half Greek.",
+      "description_ru": "Гибель Лисимаха и Селевка I в 281 году до н.э. создаёт вакуум власти в Анатолии. После 20 лет партизанства Митридат Ктист (Основатель) провозглашает себя царём Понта со столицей в Амасии, естественной крепости в глубоком речном ущелье. Его царство тянется вдоль южного побережья Чёрного моря. Он возводит свой род к персидской династии Ахеменидов и к царскому дому Киоса — наполовину перс, наполовину грек.",
       "era": "BC",
       "latitude": 40.6542,
       "longitude": 35.8306,
@@ -31,19 +33,20 @@
       "name_ru": "Основание Понтийского царства",
       "source": "https://en.wikipedia.org/wiki/Mithridates_I_of_Pontus",
       "tags": [
-        "Pontus",
         "Greek",
-        "Foundation",
-        "Kingdom",
+        "Persian",
+        "Pontus",
         "Diadochi",
-        "Rise"
+        "War",
+        "Foundation",
+        "Kingdom"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0266",
-      "description": "Mithridates I Ktistes dies after a 36-year reign and is buried in a rock-cut tomb carved into the cliff face of Mount Harşena, high above the river gorge at Amasia. These royal tombs — massive chambers hewn from Jurassic limestone, some with Ionic columns — become the dynastic necropolis for five Pontic kings. They are visible across the valley to this day, illuminated at night above the Ottoman houses of modern Amasya.",
-      "description_ru": "Митридат I Ктист умирает после 36-летнего правления и погребён в скальной гробнице, вырубленной в утёсе горы Харшена, высоко над речным ущельем Амасии. Эти царские гробницы — огромные камеры, высеченные из юрского известняка, некоторые с ионическими колоннами — становятся династическим некрополем для пяти понтийских царей. Они видны через всю долину по сей день, подсвеченные ночью над османскими домами современной Амасьи.",
+      "description": "Mithridates I Ktistos, the first king of Pontus, is buried in a rock-cut tomb carved into the cliff of Mount Harshena. These royal tombs—vast chambers carved from Jurassic limestone, some with Ionic columns—became a dynastic necropolis for five Pontic kings.",
+      "description_ru": "Митридат I Ктист, первый царь Понта, погребён в скальной гробнице, вырубленной в утёсе горы Харшена. Эти царские гробницы — огромные камеры, высеченные из юрского известняка, некоторые с ионическими колоннами — становятся династическим некрополем для пяти понтийских царей.",
       "era": "BC",
       "latitude": 40.65417,
       "longitude": 35.83056,
@@ -52,10 +55,10 @@
       "source": "https://en.wikipedia.org/wiki/Tombs_of_the_kings_of_Pontus",
       "tags": [
         "Pontus",
+        "Building 🏠",
         "Architecture",
         "Death",
-        "Monument",
-        "Dynasty"
+        "Tomb"
       ],
       "type": "cultural"
     },
@@ -70,8 +73,8 @@
       "name_ru": "Синопа становится столицей Понта",
       "source": "https://en.wikipedia.org/wiki/Sinop,_Turkey",
       "tags": [
-        "Pontus",
         "Greek",
+        "Pontus",
         "Capital",
         "Conquest",
         "Maritime"
@@ -89,11 +92,11 @@
       "name_ru": "Митридат V — верный союзник Рима",
       "source": "https://en.wikipedia.org/wiki/Mithridates_V_Euergetes",
       "tags": [
-        "Pontus",
-        "Roman",
         "Greek",
-        "Alliance",
-        "Diplomacy"
+        "Roman",
+        "Pontus",
+        "Diplomacy",
+        "Alliance"
       ],
       "type": "political"
     },
@@ -109,10 +112,10 @@
       "source": "https://en.wikipedia.org/wiki/Mithridates_V_Euergetes",
       "tags": [
         "Pontus",
+        "Dynasty",
         "Assassination",
         "Death",
-        "Medicine",
-        "Dynasty"
+        "Medicine"
       ],
       "type": "political"
     },
@@ -127,11 +130,11 @@
       "name_ru": "Митридат VI захватывает власть",
       "source": "https://en.wikipedia.org/wiki/Mithridates_VI_Eupator",
       "tags": [
-        "Pontus",
         "Greek",
-        "Rise",
+        "Pontus",
+        "Dynasty",
         "King",
-        "Dynasty"
+        "Rise"
       ],
       "type": "political"
     },
@@ -146,8 +149,8 @@
       "name_ru": "Завоевание Крыма",
       "source": "https://en.wikipedia.org/wiki/Mithridates_VI_Eupator",
       "tags": [
-        "Pontus",
         "Greek",
+        "Pontus",
         "Conquest",
         "Expansion",
         "Military"
@@ -165,8 +168,8 @@
       "name_ru": "Аннексия Колхиды",
       "source": "https://en.wikipedia.org/wiki/Mithridates_VI_Eupator",
       "tags": [
-        "Pontus",
         "Greek",
+        "Pontus",
         "Conquest",
         "Expansion",
         "Mythology"
@@ -184,12 +187,12 @@
       "name_ru": "Митридат захватывает Малую Азию",
       "source": "https://en.wikipedia.org/wiki/First_Mithridatic_War",
       "tags": [
-        "Pontus",
         "Greek",
         "Roman",
+        "Pontus",
+        "Mithridatic",
         "War",
-        "Conquest",
-        "Mithridatic"
+        "Conquest"
       ],
       "type": "military"
     },
@@ -204,12 +207,12 @@
       "name_ru": "Азийские вечерни — резня 80 000 римлян",
       "source": "https://en.wikipedia.org/wiki/Asiatic_Vespers",
       "tags": [
-        "Pontus",
         "Greek",
         "Roman",
+        "Pontus",
+        "Mithridatic",
         "War",
-        "Death",
-        "Mithridatic"
+        "Death"
       ],
       "type": "military"
     },
@@ -224,11 +227,11 @@
       "name_ru": "Понтийское вторжение в Грецию",
       "source": "https://en.wikipedia.org/wiki/First_Mithridatic_War",
       "tags": [
-        "Pontus",
         "Greek",
         "Roman",
-        "War",
+        "Pontus",
         "Mithridatic",
+        "War",
         "Expansion"
       ],
       "type": "military"
@@ -244,11 +247,11 @@
       "name_ru": "Битва при Херонее — Сулла побеждает Понт",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Chaeronea_(86_BC)",
       "tags": [
-        "Pontus",
         "Greek",
         "Roman",
-        "Battle",
+        "Pontus",
         "Mithridatic",
+        "Battle",
         "Victory"
       ],
       "type": "military"
@@ -264,12 +267,12 @@
       "name_ru": "Дарданский мир",
       "source": "https://en.wikipedia.org/wiki/Treaty_of_Dardanus",
       "tags": [
-        "Pontus",
-        "Roman",
         "Greek",
-        "Treaty",
+        "Roman",
+        "Pontus",
+        "Mithridatic",
         "Peace",
-        "Mithridatic"
+        "Treaty"
       ],
       "type": "political"
     },
@@ -284,11 +287,11 @@
       "name_ru": "Начало Третьей Митридатовой войны",
       "source": "https://en.wikipedia.org/wiki/Third_Mithridatic_War",
       "tags": [
-        "Pontus",
         "Roman",
-        "War",
+        "Armenian",
+        "Pontus",
         "Mithridatic",
-        "Armenian"
+        "War"
       ],
       "type": "military"
     },
@@ -303,11 +306,11 @@
       "name_ru": "Осада Кизика",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Cyzicus",
       "tags": [
-        "Pontus",
         "Roman",
-        "Battle",
+        "Pontus",
+        "Mithridatic",
         "War",
-        "Mithridatic"
+        "Battle"
       ],
       "type": "military"
     },
@@ -322,11 +325,11 @@
       "name_ru": "Лукулл захватывает Синопу",
       "source": "https://en.wikipedia.org/wiki/Third_Mithridatic_War",
       "tags": [
-        "Pontus",
         "Roman",
-        "Conquest",
-        "War",
+        "Pontus",
         "Mithridatic",
+        "War",
+        "Conquest",
         "Fall"
       ],
       "type": "military"
@@ -342,12 +345,12 @@
       "name_ru": "Битва при Зеле — возвращение Митридата",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Zela_(67_BC)",
       "tags": [
-        "Pontus",
         "Roman",
-        "Battle",
-        "Victory",
+        "Pontus",
+        "Mithridatic",
         "War",
-        "Mithridatic"
+        "Battle",
+        "Victory"
       ],
       "type": "military"
     },
@@ -362,11 +365,11 @@
       "name_ru": "Битва у реки Лик",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Lycus",
       "tags": [
-        "Pontus",
         "Roman",
-        "Battle",
-        "War",
+        "Pontus",
         "Mithridatic",
+        "War",
+        "Battle",
         "Fall"
       ],
       "type": "military"
@@ -382,16 +385,17 @@
       "name_ru": "Смерть Митридата Великого",
       "source": "https://en.wikipedia.org/wiki/Mithridates_VI_Eupator",
       "tags": [
-        "Pontus",
         "Greek",
         "Roman",
+        "Pontus",
+        "Mithridatic",
         "Death",
         "End",
-        "Medicine",
         "Legacy",
-        "Mithridatic"
+        "Medicine"
       ],
       "type": "political"
     }
-  ]
+  ],
+  "filename": "kingdom_of_pontus.json"
 }
