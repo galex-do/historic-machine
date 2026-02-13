@@ -8,33 +8,32 @@
       "era": "BC",
       "latitude": 40.7667,
       "longitude": 29.9167,
-      "name": "Bas Defeats Alexander's General",
-      "name_ru": "Бас побеждает полководца Александра",
+      "name": "The Bithynians retain their independence",
+      "name_ru": "Вифинцы сохраняют независимость",
       "source": "https://en.wikipedia.org/wiki/Bas_(king)",
       "tags": [
-        "Bithinian",
         "Greek",
-        "Diadochi",
+        "Macedonian",
+        "Bithynian",
         "War",
-        "Victory"
+        "Thrace"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0316",
-      "description": "Antigonus the One-Eyed founds the city of Antigoneia on the shores of Lake Ascanius in Bithynia. After the Battle of Ipsus (301 BC) and Antigonus' death, Lysimachus renames the city Nicaea (modern İznik) in honor of his wife. Under Bithynian rule, Nicaea grows into the kingdom's second city and chief cultural center. Centuries later, it will host the First Council of Nicaea (325 AD), where the Nicene Creed defining mainstream Christianity is formulated.",
-      "description_ru": "Антигон Одноглазый основывает город Антигонею на берегах Асканийского озера в Вифинии. После битвы при Ипсе (301 до н.э.) и гибели Антигона, Лисимах переименовывает город в Никею (современный Изник) в честь своей жены. Под вифинским правлением Никея вырастает во второй город царства и главный культурный центр. Столетия спустя здесь состоится Первый Никейский собор (325 н.э.), где будет сформулирован Никейский символ веры, определивший основное христианство.",
+      "description": "Antigonus the One-Eyed founds the city of Antigoneia on the shores of Lake Ascanius in Bithynia. After the Battle of Ipsus (301 BC) and Antigonus' death, Lysimachus renames the city Nicaea (modern İznik) in honor of his wife.",
+      "description_ru": "Антигон Одноглазый основывает город Антигонею на берегах Асканийского озера в Вифинии. После битвы при Ипсе (301 до н.э.) и гибели Антигона, Лисимах переименовывает город в Никею (современный Изник) в честь своей жены. ",
       "era": "BC",
       "latitude": 40.4286,
       "longitude": 29.7211,
       "name": "Foundation of Nicaea",
-      "name_ru": "Основание Никеи",
+      "name_ru": "Основание македонцами Никеи",
       "source": "https://en.wikipedia.org/wiki/Nicaea",
       "tags": [
-        "Bithinian",
         "Greek",
+        "Macedonian",
         "Diadochi",
-        "Foundation",
         "City"
       ],
       "type": "cultural"
@@ -50,85 +49,106 @@
       "name_ru": "Основание Вифинского царства",
       "source": "https://en.wikipedia.org/wiki/Zipoetes_I",
       "tags": [
-        "Bithinian",
+        "Bithynian",
+        "King",
+        "Calendar",
         "Foundation",
         "Kingdom",
-        "Calendar"
+        "Thrace"
       ],
       "type": "political"
     },
     {
+      "date": "01.01.0280",
+      "description": "After Lysimachus' death, his empire in Asia Minor disintegrated. The Bithynian rulers take advantage of the opportunity and begin to capture Greek cities on the coast and inland. The Bithynian kings made Nicaea one of their residences. Before the founding of Nicomedia, Nicaea was in fact the main center of the region.",
+      "description_ru": "После гибели Лисимаха его государство в Малой Азии распадается. Вифинские правители пользуются случаем и начинают захватывать греческие полисы на побережье и в глубине страны. Никею вифинские цари сделали одной из своих резиденций. До основания Никомедии Никея фактически была главным центром региона.",
+      "era": "BC",
+      "latitude": 40.4286,
+      "longitude": 29.7211,
+      "name": "Bithynia captures Greek cities",
+      "name_ru": "Вифины захватывают греческие города",
+      "tags": [
+        "Greek",
+        "Bithynian",
+        "Conquest",
+        "Expansion",
+        "Thrace"
+      ],
+      "type": "military"
+    },
+    {
       "date": "01.01.0278",
-      "description": "Nicomedes I, eldest son of Zipoetes I, inherits the kingdom but faces a challenge from his brother Zipoetes II, who controls much of eastern Bithynia. In a fateful decision, Nicomedes invites Celtic Galatian tribes across the Bosporus from Thrace into Asia Minor to serve as mercenaries against his brother. The Galatians help him win, then refuse to leave — they settle in central Anatolia (Galatia) and terrorize the region for decades. Nicomedes has changed the ethnic map of Anatolia forever.",
-      "description_ru": "Никомед I, старший сын Зипоита I, наследует царство, но сталкивается с претензиями брата Зипоита II, контролирующего значительную часть восточной Вифинии. В роковом решении Никомед приглашает кельтские галатские племена через Босфор из Фракии в Малую Азию, чтобы использовать их как наёмников против брата. Галаты помогают ему победить, а затем отказываются уходить — они оседают в центральной Анатолии (Галатия) и терроризируют регион десятилетиями. Никомед навсегда изменил этническую карту Анатолии.",
+      "description": "Nicomedes I, who inherited the Bithynia kingdom, struggled for the throne with his brother, Zipoites II, who controlled most of eastern Bithynia. Nicomedes invited the Celtic Galatian tribes from Europe to Asia Minor to use them as mercenaries. The Galatians helped him win, but then refused to leave—settling in central Anatolia and terrorizing the region for decades.",
+      "description_ru": "Никомед I, унаследовавший Вифинское царство, борется за трон с братом Зипоитом II, контролирующим большую часть восточной Вифинии. Никомед приглашает кельтские галатские племена из Европы в Малую Азию, чтобы использовать их как наёмников. Галаты помогают ему победить, а затем отказываются уходить — они оседают в центральной Анатолии и терроризируют регион десятилетиями.",
       "era": "BC",
       "latitude": 40.9917,
       "longitude": 29.0333,
-      "name": "Nicomedes I Invites the Galatians Into Asia",
-      "name_ru": "Никомед I приглашает галатов в Азию",
+      "name": "Invitation of the Galatians to Asia",
+      "name_ru": "Приглашение галатов в Азию",
       "source": "https://en.wikipedia.org/wiki/Nicomedes_I_of_Bithynia",
       "tags": [
-        "Bithinian",
         "Celtic",
-        "Galatian",
-        "War",
-        "Settlement"
+        "Bithynian",
+        "Civil War",
+        "Mercenaries",
+        "Settlement",
+        "Thrace"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0264",
-      "description": "Nicomedes I founds Nicomedia on the site of the destroyed Megarian colony of Astacus, at the eastern end of the Gulf of İzmit. The new capital commands the sea route from the Propontis (Sea of Marmara) to the Black Sea. Within a century it will become one of the richest cities in Anatolia. Much later, the Roman emperor Diocletian will choose it as the eastern capital of the entire empire.",
-      "description_ru": "Никомед I основывает Никомедию на месте разрушенной мегарской колонии Астак, у восточного конца Измитского залива. Новая столица контролирует морской путь от Пропонтиды (Мраморного моря) к Чёрному морю. В течение столетия она станет одним из богатейших городов Анатолии. Намного позднее римский император Диоклетиан выберет её восточной столицей всей империи.",
+      "description": "Nicomedes I founded Nicomedia on the site of the destroyed Megarian colony of Astacus, in a sheltered bay near the Bosphorus, controlled by powerful Greek city-states. The route from the Bosphorus to Asia Minor passed through the new capital. Within a century, it would become one of the wealthiest cities in Anatolia.",
+      "description_ru": "Никомед I основывает Никомедию на месте разрушенной мегарской колонии Астак, в защищенном заливе, недалеко от Босфора, который контролируют мощные греческие города-государства. Через новую столицу лежит путь от Босфора в Малую Азию. В течение столетия она станет одним из богатейших городов Анатолии.",
       "era": "BC",
       "latitude": 40.7667,
       "longitude": 29.9167,
       "name": "Foundation of Nicomedia",
-      "name_ru": "Основание Никомедии",
+      "name_ru": "Основание вифинами Никомедии",
       "source": "https://en.wikipedia.org/wiki/Nicomedia",
       "tags": [
-        "Bithinian",
-        "Foundation",
+        "Bithynian",
+        "City",
         "Capital",
-        "City"
+        "Thrace"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0255",
       "description": "Nicomedes I dies after a long and prosperous reign. He leaves the throne to his youngest son Ziaelas, bypassing his elder sons — a decision that triggers a succession crisis. Ziaelas had spent years in exile among the Galatians his father had invited into Asia, and he uses his Galatian connections to secure his claim. The pattern is set: every Bithynian succession will be contested.",
-      "description_ru": "Никомед I умирает после долгого и процветающего правления. Он оставляет трон младшему сыну Зиэлу, обойдя старших — решение, вызвавшее кризис наследования. Зиэл годами жил в изгнании среди галатов, которых его отец пригласил в Азию, и использует свои галатские связи для закрепления своих прав. Паттерн задан: каждая вифинская смена власти будет оспорена.",
+      "description_ru": "Никомед I умирает после долгого и процветающего правления. Он оставляет трон младшему сыну Зиэлу, обойдя старших — решение, вызвавшее кризис наследования. Зиэл годами жил в изгнании среди галатов, которых его отец пригласил в Азию, и использует свои галатские связи для закрепления своих прав",
       "era": "BC",
       "latitude": 40.7667,
       "longitude": 29.9167,
-      "name": "Death of Nicomedes I — Succession Crisis",
-      "name_ru": "Смерть Никомеда I — кризис наследования",
+      "name": "Succession Crisis in Bithynia",
+      "name_ru": "Кризис наследования в Вифинии",
       "source": "https://en.wikipedia.org/wiki/Nicomedes_I_of_Bithynia",
       "tags": [
-        "Bithinian",
+        "Bithynian",
         "Dynasty",
-        "Death",
-        "Galatian",
-        "Crisis"
+        "Crisis",
+        "Death"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0240",
       "description": "Ziaelas, who had grown up among the Galatians during his exile, is assassinated during a banquet hosted by Galatian chieftains — the very people who had helped him win his throne. Whether it was personal revenge or a political conspiracy remains unknown. His son Prusias I succeeds him. The Galatian connection that defined Bithynian politics for two generations ends in a dinner of blood.",
-      "description_ru": "Зиэл, выросший среди галатов во время изгнания, убит на пиру, устроенном галатскими вождями — теми самыми людьми, которые помогли ему завоевать трон. Было ли это личной местью или политическим заговором — остаётся неизвестным. Ему наследует его сын Прусий I. Галатская связь, определявшая вифинскую политику два поколения, заканчивается кровавым ужином.",
+      "description_ru": "Зиэл, выросший среди галатов во время изгнания, убит на пиру, устроенном галатскими вождями — теми самыми людьми, которые помогли ему завоевать трон. Было ли это личной местью или политическим заговором — остаётся неизвестным. Ему наследует его сын Прусий I.",
       "era": "BC",
       "latitude": 40.7667,
       "longitude": 29.9167,
       "name": "Assassination of Ziaelas by Galatians",
-      "name_ru": "Убийство Зиэла галатами",
+      "name_ru": "Убийство галатами царя Вифинии",
       "source": "https://en.wikipedia.org/wiki/Ziaelas",
       "tags": [
-        "Bithinian",
-        "Galatian",
+        "Celtic",
+        "Bithynian",
+        "Dynasty",
         "Assassination",
-        "Death",
-        "Dynasty"
+        "Crisis",
+        "Death"
       ],
       "type": "political"
     },
@@ -143,10 +163,10 @@
       "name_ru": "Прусий I расширяет Вифинию",
       "source": "https://en.wikipedia.org/wiki/Prusias_I_of_Bithynia",
       "tags": [
-        "Bithinian",
+        "Bithynian",
+        "War",
         "Conquest",
-        "Expansion",
-        "War"
+        "Expansion"
       ],
       "type": "military"
     },
@@ -161,8 +181,8 @@
       "name_ru": "Прусий I соблюдает нейтралитет при Магнезии",
       "source": "https://en.wikipedia.org/wiki/Prusias_I_of_Bithynia",
       "tags": [
-        "Bithinian",
         "Roman",
+        "Bithynian",
         "Seleucid",
         "Diplomacy",
         "Treaty"
@@ -180,10 +200,10 @@
       "name_ru": "Ганнибал находит убежище в Вифинии",
       "source": "https://en.wikipedia.org/wiki/Prusias_I_of_Bithynia",
       "tags": [
-        "Bithinian",
         "Carthage",
-        "Foundation",
+        "Bithynian",
         "War",
+        "Foundation",
         "Tactics"
       ],
       "type": "military"
@@ -199,9 +219,9 @@
       "name_ru": "Смерть Ганнибала в Либиссе",
       "source": "https://en.wikipedia.org/wiki/Hannibal",
       "tags": [
-        "Bithinian",
-        "Carthage",
         "Roman",
+        "Carthage",
+        "Bithynian",
         "Death",
         "Suicide"
       ],
@@ -218,11 +238,11 @@
       "name_ru": "Прусий II разоряет Асклепион Пергама",
       "source": "https://en.wikipedia.org/wiki/Prusias_II_of_Bithynia",
       "tags": [
-        "Bithinian",
-        "Pergamon",
         "Roman",
-        "Blasphemy",
-        "War"
+        "Pergamon",
+        "Bithynian",
+        "War",
+        "Blasphemy"
       ],
       "type": "military"
     },
@@ -237,9 +257,9 @@
       "name_ru": "Никомед II свергает отца",
       "source": "https://en.wikipedia.org/wiki/Nicomedes_II_of_Bithynia",
       "tags": [
-        "Bithinian",
-        "Pergamon",
         "Roman",
+        "Pergamon",
+        "Bithynian",
         "Dynasty",
         "Assassination"
       ],
@@ -256,9 +276,9 @@
       "name_ru": "Вифиния помогает Риму против Аристоника",
       "source": "https://en.wikipedia.org/wiki/Nicomedes_II_of_Bithynia",
       "tags": [
-        "Bithinian",
         "Roman",
         "Pergamon",
+        "Bithynian",
         "War",
         "Rebellion"
       ],
@@ -275,10 +295,10 @@
       "name_ru": "Вифиния и Понт делят Пафлагонию",
       "source": "https://en.wikipedia.org/wiki/Nicomedes_III_of_Bithynia",
       "tags": [
-        "Bithinian",
         "Pontus",
-        "Conquest",
+        "Bithynian",
         "Diplomacy",
+        "Conquest",
         "Expansion"
       ],
       "type": "political"
@@ -294,10 +314,10 @@
       "name_ru": "Никомед III стыдит Рим за рабство",
       "source": "https://en.wikipedia.org/wiki/Nicomedes_III_of_Bithynia",
       "tags": [
-        "Bithinian",
         "Roman",
-        "Slavery",
+        "Bithynian",
         "Diplomacy",
+        "Slavery",
         "Teutons"
       ],
       "type": "political"
@@ -313,9 +333,9 @@
       "name_ru": "Никомед IV — римская пешка против Понта",
       "source": "https://en.wikipedia.org/wiki/Nicomedes_IV_of_Bithynia",
       "tags": [
-        "Bithinian",
         "Roman",
         "Pontus",
+        "Bithynian",
         "Diplomacy",
         "Debt"
       ],
@@ -332,11 +352,11 @@
       "name_ru": "Митридат захватывает Вифинию",
       "source": "https://en.wikipedia.org/wiki/First_Mithridatic_War",
       "tags": [
-        "Bithinian",
-        "Pontus",
         "Roman",
-        "Conquest",
-        "War"
+        "Pontus",
+        "Bithynian",
+        "War",
+        "Conquest"
       ],
       "type": "military"
     },
@@ -351,11 +371,11 @@
       "name_ru": "Никомед IV восстановлен — пустое царство",
       "source": "https://en.wikipedia.org/wiki/Nicomedes_IV_of_Bithynia",
       "tags": [
-        "Bithinian",
         "Roman",
         "Pontus",
-        "Treaty",
-        "Decline"
+        "Bithynian",
+        "Decline",
+        "Treaty"
       ],
       "type": "political"
     },
@@ -370,15 +390,14 @@
       "name_ru": "Никомед IV завещает Вифинию Риму",
       "source": "https://en.wikipedia.org/wiki/Nicomedes_IV_of_Bithynia",
       "tags": [
-        "Bithinian",
         "Roman",
         "Pontus",
-        "End",
-        "Annexation"
+        "Bithynian",
+        "Annexation",
+        "End"
       ],
       "type": "political"
     }
   ],
-  "name": "Bithynian Kingdom",
-  "name_ru": "Вифинское царство"
+  "filename": "bithynian_kingdom.json"
 }

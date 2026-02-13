@@ -262,9 +262,9 @@
         "Roman",
         "Pergamon",
         "Pontus",
+        "Bithynian",
         "War",
-        "Alliance",
-        "Bithinian"
+        "Alliance"
       ],
       "type": "military"
     },
@@ -433,8 +433,8 @@
       "tags": [
         "Greek",
         "Pontus",
-        "Annexation",
-        "Bithinian"
+        "Bithynian",
+        "Annexation"
       ],
       "type": "historic"
     },
@@ -720,8 +720,8 @@
       "description": "King Nicomedes IV of Bithynia dies and bequeaths his kingdom to Rome, following the path of Pergamum. Mithridates views the Roman annexation of his neighbor as a provocation. He invades Bithynia with a massive army. This time, he forms an alliance with his son-in-law, Tigranes the Great of Armenia, creating a coalition from the Caucasus to the Euphrates.",
       "description_ru": "Царь Никомед IV Вифинский умирает и завещает своё царство Риму, повторяя путь Пергама. Митридат рассматривает римскую аннексию соседа как провокацию. Он вторгается в Вифинию с огромной армией. На этот раз он заключает союз со своим зятем Тиграном Великим Армянским, создавая коалицию от Кавказа до Евфрата.",
       "era": "BC",
-      "latitude": 40.7635,
-      "longitude": 29.9197,
+      "latitude": 40.7667,
+      "longitude": 29.9167,
       "name": "Third Mithridatic War",
       "name_ru": "Третья Митридатова война",
       "source": "https://en.wikipedia.org/wiki/Third_Mithridatic_War",
@@ -730,11 +730,11 @@
         "Roman",
         "Armenian",
         "Pontus",
+        "Bithynian",
         "Mithridatic",
         "War",
         "Alliance",
-        "Annexation",
-        "Bithinian"
+        "Annexation"
       ],
       "type": "military"
     },
