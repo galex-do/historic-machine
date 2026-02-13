@@ -1,0 +1,387 @@
+{
+  "description": "Dataset imported with 20 events",
+  "events": [
+    {
+      "date": "01.01.0480",
+      "description": "Greek colonists from Miletus had been settling the shores of the Cimmerian Bosporus (Strait of Kerch) since the 7th century BC — Panticapaeum, Nymphaeum, Myrmekion on the Crimean side, Phanagoria and Hermonassa on the Taman Peninsula. Around 480 BC, these scattered poleis unite under the Archaeanactid dynasty, likely to coordinate defense against Scythian raids. Panticapaeum, perched on Mount Mithridat overlooking the strait, becomes the capital.",
+      "description_ru": "Греческие колонисты из Милета заселяли берега Киммерийского Боспора (Керченский пролив) с VII века до н.э. — Пантикапей, Нимфей, Мирмекий на крымской стороне, Фанагория и Гермонасса на Таманском полуострове. Около 480 года до н.э. эти разрозненные полисы объединяются под властью династии Археанактидов, вероятно для координации обороны от скифских набегов. Пантикапей, расположенный на горе Митридат с видом на пролив, становится столицей.",
+      "era": "BC",
+      "latitude": 45.3508,
+      "longitude": 36.4686,
+      "name": "Foundation of the Bosporan Kingdom",
+      "name_ru": "Основание Боспорского царства",
+      "source": "https://en.wikipedia.org/wiki/Bosporan_Kingdom",
+      "tags": [
+        "Greek",
+        "Bosphorus",
+        "Foundation",
+        "Kingdom",
+        "Colonization"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0438",
+      "description": "Spartocus I — probably of Thracian origin — seizes power in Panticapaeum, overthrowing the Archaeanactids. Whether it was a coup or a peaceful succession is unknown. He founds the Spartocid dynasty, which will rule the Bosporan Kingdom for over three centuries. The Spartocids adopt a dual title system: 'archon' when addressing their Greek subjects, 'king' when dealing with the native Scythian, Sindian, and Maeotian tribes.",
+      "description_ru": "Спарток I — вероятно фракийского происхождения — захватывает власть в Пантикапее, свергнув Археанактидов. Был ли это переворот или мирная смена власти — неизвестно. Он основывает династию Спартокидов, которая будет править Боспорским царством более трёх столетий. Спартокиды принимают двойную титулатуру: «архонт» при обращении к греческим подданным, «царь» — при общении с местными скифскими, синдскими и меотскими племенами.",
+      "era": "BC",
+      "latitude": 45.3508,
+      "longitude": 36.4686,
+      "name": "Spartocus I Founds the Spartocid Dynasty",
+      "name_ru": "Спарток I основывает династию Спартокидов",
+      "source": "https://en.wikipedia.org/wiki/Spartocids",
+      "tags": [
+        "Greek",
+        "Bosphorus",
+        "Dynasty",
+        "Thrace",
+        "Rise"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0389",
+      "description": "Satyrus I besieges Theodosia — the only ice-free port in Crimea — attempting to monopolize the regional grain trade. Heraclea Pontica sends reinforcements to defend the city, and Satyrus dies during the siege in 389/388 BC. The task of taking Theodosia falls to his son Leucon I.",
+      "description_ru": "Сатир I осаждает Феодосию — единственный незамерзающий порт в Крыму — стремясь монополизировать региональную торговлю зерном. Гераклея Понтийская присылает подкрепление для обороны города, и Сатир погибает при осаде в 389/388 году до н.э. Задача взять Феодосию переходит к его сыну Левкону I.",
+      "era": "BC",
+      "latitude": 45.0319,
+      "longitude": 35.3824,
+      "name": "Siege of Theodosia — Death of Satyrus I",
+      "name_ru": "Осада Феодосии — гибель Сатира I",
+      "source": "https://en.wikipedia.org/wiki/Satyrus_I_of_the_Cimmerian_Bosporus",
+      "tags": [
+        "Greek",
+        "Bosphorus",
+        "Siege",
+        "Death",
+        "Trade"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0360",
+      "description": "Leucon I finally captures Theodosia after decades of intermittent warfare. He makes it the kingdom's grain staple port — all exports must pass through its ice-free harbor. Leucon then conquers the Sindike kingdom on the Taman Peninsula, gaining control of the fertile Kuban grain lands. He grants Athenian ships tax-free access to Bosporan ports, and in return Athens grants him citizenship and erects statues in his honor. At peak, he exports 400,000 medimnoi (~16,000 tons) of wheat annually — roughly half of Athens' grain imports.",
+      "description_ru": "Левкон I наконец захватывает Феодосию после десятилетий перемежающихся войн. Он делает её главным зерновым портом царства — весь экспорт должен проходить через её незамерзающую гавань. Затем Левкон завоёвывает Синдское царство на Таманском полуострове, получив контроль над плодородными кубанскими землями. Он предоставляет афинским кораблям беспошлинный доступ в боспорские порты, а Афины в ответ дают ему гражданство и возводят статуи в его честь. На пике он экспортирует 400 000 медимнов (~16 000 тонн) пшеницы ежегодно — примерно половину зернового импорта Афин.",
+      "era": "BC",
+      "latitude": 45.0319,
+      "longitude": 35.3824,
+      "name": "Leucon I Takes Theodosia — Golden Age Begins",
+      "name_ru": "Левкон I берёт Феодосию — начало золотого века",
+      "source": "https://en.wikipedia.org/wiki/Leukon_of_Bosporus",
+      "tags": [
+        "Greek",
+        "Bosphorus",
+        "Athens",
+        "Conquest",
+        "Trade"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0349",
+      "description": "Leucon I dies after a 40-year reign — the longest and most prosperous in Bosporan history. His sons Spartocus II and Paerisades I initially co-rule. Spartocus dies within five years, leaving Paerisades as sole king. Demosthenes, speaking before the Athenian assembly, praises the Spartocid dynasty as essential allies: 'Leucon gave you grain when famine struck, and asked for nothing in return.'",
+      "description_ru": "Левкон I умирает после 40-летнего правления — самого долгого и процветающего в боспорской истории. Его сыновья Спарток II и Перисад I первоначально правят совместно. Спарток умирает в течение пяти лет, оставляя Перисада единственным царём. Демосфен, выступая перед афинским собранием, восхваляет династию Спартокидов как незаменимых союзников: «Левкон дал вам зерно, когда пришёл голод, и не попросил ничего взамен».",
+      "era": "BC",
+      "latitude": 45.3508,
+      "longitude": 36.4686,
+      "name": "Death of Leucon I — Demosthenes' Eulogy",
+      "name_ru": "Смерть Левкона I — панегирик Демосфена",
+      "source": "https://en.wikipedia.org/wiki/Leukon_of_Bosporus",
+      "tags": [
+        "Greek",
+        "Bosphorus",
+        "Athens",
+        "Death",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0310",
+      "description": "Paerisades I dies, and his three sons plunge the kingdom into civil war. Satyrus II, the eldest, claims the throne. His brother Eumelus allies with Aripharnes, king of the Siraces (a Sarmatian tribe), fielding 20,000 cavalry and 22,000 infantry. Satyrus defeats this army in open battle but is killed storming the fortress where Aripharnes has retreated. His remaining brother Prytanis briefly takes power before Eumelus defeats and executes him along with his family. Eumelus then murders the families of both brothers to eliminate all rivals.",
+      "description_ru": "Перисад I умирает, и его трое сыновей ввергают царство в гражданскую войну. Сатир II, старший, претендует на трон. Его брат Евмел вступает в союз с Арифарном, царём сираков (сарматского племени), выставив 20 000 всадников и 22 000 пехотинцев. Сатир побеждает эту армию в открытом бою, но гибнет при штурме крепости, куда укрылся Арифарн. Оставшийся брат Притан ненадолго берёт власть, прежде чем Евмел побеждает и казнит его вместе с семьёй. Затем Евмел убивает семьи обоих братьев, чтобы устранить всех соперников.",
+      "era": "BC",
+      "latitude": 45.3508,
+      "longitude": 36.4686,
+      "name": "Bosporan Civil War — Three Brothers",
+      "name_ru": "Боспорская гражданская война — три брата",
+      "source": "https://en.wikipedia.org/wiki/Eumelus_of_the_Bosporan_Kingdom",
+      "tags": [
+        "Greek",
+        "Bosphorus",
+        "War",
+        "Dynasty",
+        "Death"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0304",
+      "description": "Eumelus, having killed his way to the throne, attempts an ambitious reformation. He clears the Black Sea of pirates, allies with Callatians against Lysimachus, and plans to unite all Greek cities around the Pontus Euxinus under Bosporan leadership. He dies in a freak accident: thrown from his chariot when his horses bolted toward the palace, he was impaled on his own sword. He had ruled only five years.",
+      "description_ru": "Евмел, пришедший к власти через убийства, предпринимает амбициозную реформу. Он очищает Чёрное море от пиратов, вступает в союз с каллатийцами против Лисимаха и планирует объединить все греческие города Понта Эвксинского под боспорским руководством. Он гибнет в нелепой случайности: сброшенный с колесницы, когда лошади понесли к дворцу, он был пронзён собственным мечом. Он правил лишь пять лет.",
+      "era": "BC",
+      "latitude": 45.3508,
+      "longitude": 36.4686,
+      "name": "Death of Eumelus — Ambition Cut Short",
+      "name_ru": "Гибель Евмела — прерванная амбиция",
+      "source": "https://en.wikipedia.org/wiki/Eumelus_of_the_Bosporan_Kingdom",
+      "tags": [
+        "Greek",
+        "Bosphorus",
+        "Death",
+        "Piracy",
+        "Reform"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0284",
+      "description": "Spartocus III, son of Eumelus, cultivates the Athenian alliance his dynasty depends on. Athens passes a formal decree honoring Spartocus III, granting him a golden crown and renewing the trade privileges established by Leucon I. The decree is inscribed on a stele erected on the Athenian Acropolis. But the relationship is becoming one-sided — Athens needs Bosporan grain more than the Bosporan kingdom needs Athenian approval.",
+      "description_ru": "Спарток III, сын Евмела, поддерживает афинский союз, от которого зависит его династия. Афины принимают официальный декрет в честь Спартока III, даруя ему золотой венок и обновляя торговые привилегии, установленные Левконом I. Декрет высечен на стеле, установленной на Афинском акрополе. Но отношения становятся односторонними — Афинам нужно боспорское зерно больше, чем Боспорскому царству нужно афинское одобрение.",
+      "era": "BC",
+      "latitude": 37.9715,
+      "longitude": 23.7267,
+      "name": "Athens Honors Spartocus III",
+      "name_ru": "Афины чествуют Спартока III",
+      "source": "https://en.wikipedia.org/wiki/Spartocus_III",
+      "tags": [
+        "Greek",
+        "Bosphorus",
+        "Athens",
+        "Diplomacy",
+        "Trade"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0275",
+      "description": "The Bosporan Kingdom establishes Tanais at the mouth of the Don River — the northeasternmost Greek settlement in history. The colony serves as a trading emporium on the border between the Hellenic and Scythian-Sarmatian worlds: Greek wine, olive oil, and pottery flow north; grain, furs, fish, slaves, and steppe horses flow south. The city has two quarters — Greek and barbarian — each with its own walls and institutions.",
+      "description_ru": "Боспорское царство основывает Танаис в устье Дона — самое северо-восточное греческое поселение в истории. Колония служит торговым эмпорием на границе эллинского и скифо-сарматского миров: греческое вино, оливковое масло и керамика текут на север; зерно, меха, рыба, рабы и степные лошади — на юг. В городе два квартала — греческий и варварский — каждый со своими стенами и учреждениями.",
+      "era": "BC",
+      "latitude": 47.2681,
+      "longitude": 39.3355,
+      "name": "Foundation of Tanais — Edge of the Greek World",
+      "name_ru": "Основание Танаиса — край греческого мира",
+      "source": "https://en.wikipedia.org/wiki/Tanais",
+      "tags": [
+        "Greek",
+        "Bosphorus",
+        "Foundation",
+        "Trade",
+        "Colonization"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0250",
+      "description": "From the mid-3rd century BC, the Bosporan Kingdom enters a prolonged decline. Sarmatian tribes press from the east, replacing the Scythians as the dominant steppe power. Athens, once the kingdom's primary trading partner, has lost its naval supremacy after Macedonian wars. Grain prices drop. The Spartocid treasury shrinks. Local dynasties on the Taman Peninsula grow increasingly independent. Coinage debases — silver is gradually replaced by bronze and gold-plated bronze.",
+      "description_ru": "С середины III века до н.э. Боспорское царство вступает в затяжной упадок. Сарматские племена наступают с востока, вытесняя скифов как доминирующую степную силу. Афины, некогда главный торговый партнёр царства, утратили морское господство после македонских войн. Цены на зерно падают. Казна Спартокидов сокращается. Местные династии на Таманском полуострове становятся всё более независимыми. Монета обесценивается — серебро постепенно заменяется бронзой и позолоченной бронзой.",
+      "era": "BC",
+      "latitude": 45.3508,
+      "longitude": 36.4686,
+      "name": "Bosporan Decline Begins",
+      "name_ru": "Начало боспорского упадка",
+      "source": "https://en.wikipedia.org/wiki/Bosporan_Kingdom",
+      "tags": [
+        "Greek",
+        "Bosphorus",
+        "Decline",
+        "Economic",
+        "Scythian"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0200",
+      "description": "Gorgippia — the Bosporan port on the eastern Black Sea coast (modern Anapa) — reaches its architectural peak in the late 3rd and early 2nd centuries BC. The city boasts stone-paved streets, a harbor district, temples, and wealthy residences with painted plaster walls. Its necropolis yields elaborate stone sarcophagi with Greek inscriptions and gold jewelry combining Hellenic and Scythian motifs — evidence of the deep cultural fusion that defined Bosporan civilization.",
+      "description_ru": "Горгиппия — боспорский порт на восточном черноморском побережье (современная Анапа) — достигает архитектурного расцвета в конце III — начале II века до н.э. В городе каменные мощёные улицы, портовый квартал, храмы и богатые дома с расписными штукатурными стенами. Некрополь даёт роскошные каменные саркофаги с греческими надписями и золотые украшения, сочетающие эллинские и скифские мотивы — свидетельство глубокого культурного слияния, определявшего боспорскую цивилизацию.",
+      "era": "BC",
+      "latitude": 44.8963,
+      "longitude": 37.3105,
+      "name": "Gorgippia at Its Height",
+      "name_ru": "Горгиппия на пике расцвета",
+      "source": "https://en.wikipedia.org/wiki/Gorgippia",
+      "tags": [
+        "Greek",
+        "Bosphorus",
+        "Architecture",
+        "Art",
+        "Trade"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0150",
+      "description": "By the mid-2nd century BC, Scythian tribes under their kings have seized control of most of inland Crimea, compressing the Bosporan Kingdom into its coastal cities. The Scythians establish their capital at Scythian Neapolis (near modern Simferopol) and repeatedly raid Bosporan territory. The weakened Spartocid army can no longer defend the frontier without outside help.",
+      "description_ru": "К середине II века до н.э. скифские племена захватили контроль над большей частью внутреннего Крыма, сжав Боспорское царство до прибрежных городов. Скифы устанавливают столицу в Скифском Неаполе (близ современного Симферополя) и регулярно совершают набеги на боспорскую территорию. Ослабевшая армия Спартокидов больше не может защищать границу без внешней помощи.",
+      "era": "BC",
+      "latitude": 44.9484,
+      "longitude": 34.1022,
+      "name": "Scythian Pressure on the Bosporan Kingdom",
+      "name_ru": "Скифское давление на Боспорское царство",
+      "source": "https://en.wikipedia.org/wiki/Scythian_Neapolis",
+      "tags": [
+        "Greek",
+        "Bosphorus",
+        "Scythian",
+        "War",
+        "Decline"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0114",
+      "description": "Paerisades V, the last Spartocid king, has no heirs and cannot defend his kingdom. Seeing the success of Mithridates VI's general Diophantus against the Scythians in the Crimean hinterland, Paerisades offers to transfer power to Pontus in exchange for protection. It is the end of a dynasty that ruled for over 320 years.",
+      "description_ru": "Перисад V, последний царь из династии Спартокидов, не имеет наследников и не может защитить своё царство. Видя успехи полководца Митридата VI Диофанта в борьбе со скифами в крымской глубинке, Перисад предлагает передать власть Понту в обмен на защиту. Это конец династии, правившей более 320 лет.",
+      "era": "BC",
+      "latitude": 45.3508,
+      "longitude": 36.4686,
+      "name": "Paerisades V Offers Bosporus to Pontus",
+      "name_ru": "Перисад V предлагает Боспор Понту",
+      "source": "https://en.wikipedia.org/wiki/Paerisades_V",
+      "tags": [
+        "Greek",
+        "Bosphorus",
+        "Pontus",
+        "Vassalage",
+        "Decline"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0107",
+      "description": "Saumacus, possibly a Scythian prince raised at the Bosporan court, leads a revolt against Pontic annexation. He kills Paerisades V and briefly seizes Panticapaeum. Diophantus, the Pontic general, escapes by sea to Chersonesus, gathers fresh forces, returns, and crushes the revolt. Saumacus is captured and sent in chains to Mithridates VI. The Bosporan Kingdom is formally absorbed into the Pontic Empire.",
+      "description_ru": "Савмак, возможно скифский царевич, воспитанный при боспорском дворе, поднимает восстание против понтийской аннексии. Он убивает Перисада V и ненадолго захватывает Пантикапей. Диофант, понтийский полководец, бежит морем в Херсонес, собирает свежие силы, возвращается и подавляет восстание. Савмак схвачен и отправлен в цепях к Митридату VI. Боспорское царство формально поглощено Понтийской державой.",
+      "era": "BC",
+      "latitude": 45.3508,
+      "longitude": 36.4686,
+      "name": "Saumacus Revolt — Fall of the Spartocids",
+      "name_ru": "Восстание Савмака — падение Спартокидов",
+      "source": "https://en.wikipedia.org/wiki/Saumacus",
+      "tags": [
+        "Greek",
+        "Bosphorus",
+        "Scythian",
+        "Pontus",
+        "Rebellion"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0080",
+      "description": "Under Pontic rule, the Bosporan Kingdom experiences a brief revival. Mithridates VI stations garrisons, rebuilds fortifications, and extracts grain and manpower for his wars against Rome. The Bosporan cities serve as his strategic rear — a fallback position across the Black Sea from the Anatolian front. Panticapaeum mints coins bearing Mithridates' portrait.",
+      "description_ru": "Под понтийским правлением Боспорское царство переживает краткое возрождение. Митридат VI размещает гарнизоны, восстанавливает укрепления и извлекает зерно и людские ресурсы для войн против Рима. Боспорские города служат его стратегическим тылом — запасной позицией по ту сторону Чёрного моря от анатолийского фронта. Пантикапей чеканит монеты с портретом Митридата.",
+      "era": "BC",
+      "latitude": 45.3508,
+      "longitude": 36.4686,
+      "name": "Bosporus Under Pontic Rule",
+      "name_ru": "Боспор под понтийским правлением",
+      "source": "https://en.wikipedia.org/wiki/Bosporan_Kingdom",
+      "tags": [
+        "Greek",
+        "Bosphorus",
+        "Pontus",
+        "Military",
+        "Currency"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0070",
+      "description": "Machares, son of Mithridates VI and governor of the Bosporan Kingdom, watches his father's defeats against Lucullus and decides to switch sides. He sends Lucullus a golden crown and requests the status of 'friend and ally of the Roman people.' He also provides logistical support during the siege of Sinope. When Mithridates VI learns of the betrayal, Machares' days are numbered.",
+      "description_ru": "Махар, сын Митридата VI и наместник Боспорского царства, наблюдает за поражениями отца от Лукулла и решает перейти на другую сторону. Он отправляет Лукуллу золотой венок и просит статус «друга и союзника римского народа». Он также оказывает логистическую поддержку при осаде Синопы. Когда Митридат VI узнаёт о предательстве, дни Махара сочтены.",
+      "era": "BC",
+      "latitude": 45.3508,
+      "longitude": 36.4686,
+      "name": "Machares Betrays His Father",
+      "name_ru": "Махар предаёт отца",
+      "source": "https://en.wikipedia.org/wiki/Machares",
+      "tags": [
+        "Bosphorus",
+        "Pontus",
+        "Roman",
+        "Betrayal",
+        "Diplomacy"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0063",
+      "description": "Mithridates VI, defeated by Pompey and cornered in Panticapaeum, tries to poison himself — but his lifelong practice of building tolerance to toxins works too well, and the poison has no effect. He orders a Celtic bodyguard named Bituitus to run him through with a sword. His son Pharnaces II, who had betrayed him and led a mutiny of the Bosporan garrison, presents his father's body to Pompey and is confirmed as king of a diminished Bosporan Kingdom — now a Roman client state.",
+      "description_ru": "Митридат VI, разбитый Помпеем и загнанный в угол в Пантикапее, пытается отравиться — но его многолетняя практика выработки невосприимчивости к ядам работает слишком хорошо, и яд не действует. Он приказывает кельтскому телохранителю Битуиту пронзить его мечом. Его сын Фарнак II, предавший его и возглавивший мятеж боспорского гарнизона, представляет тело отца Помпею и утверждается царём уменьшившегося Боспорского царства — отныне римского клиентского государства.",
+      "era": "BC",
+      "latitude": 45.3508,
+      "longitude": 36.4686,
+      "name": "Death of Mithridates VI in Panticapaeum",
+      "name_ru": "Смерть Митридата VI в Пантикапее",
+      "source": "https://en.wikipedia.org/wiki/Mithridates_VI_Eupator",
+      "tags": [
+        "Bosphorus",
+        "Pontus",
+        "Roman",
+        "Death",
+        "Suicide"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0047",
+      "description": "Pharnaces II, emboldened during Rome's civil war between Caesar and Pompey, invades Pontus and overruns Colchis, Lesser Armenia, and parts of Cappadocia. He defeats a Roman force at Nicopolis. Julius Caesar, fresh from Egypt, marches against him and annihilates his army in four hours at the Battle of Zela. Caesar describes the campaign in three words: 'Veni, vidi, vici' — I came, I saw, I conquered. Pharnaces flees back to the Bosporus, where he is killed by his own governor Asander.",
+      "description_ru": "Фарнак II, осмелев во время гражданской войны Цезаря и Помпея, вторгается в Понт и захватывает Колхиду, Малую Армению и часть Каппадокии. Он побеждает римское войско при Никополе. Юлий Цезарь, прибывший из Египта, выступает против него и уничтожает его армию за четыре часа в битве при Зеле. Цезарь описывает кампанию тремя словами: «Veni, vidi, vici» — пришёл, увидел, победил. Фарнак бежит обратно на Боспор, где его убивает собственный наместник Асандр.",
+      "era": "BC",
+      "latitude": 40.3311,
+      "longitude": 36.3239,
+      "name": "Veni, Vidi, Vici — Caesar Destroys Pharnaces",
+      "name_ru": "Veni, vidi, vici — Цезарь уничтожает Фарнака",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Zela",
+      "tags": [
+        "Bosphorus",
+        "Roman",
+        "Battle",
+        "Pontus",
+        "Conquest"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0045",
+      "description": "Asander, having killed Pharnaces II, consolidates power in the Bosporan Kingdom. He rules first as archon, then assumes the royal title. He marries Dynamis, the granddaughter of Mithridates VI, legitimizing his rule through the Mithridatic bloodline. He walls off the Crimean Peninsula with a defensive line across the narrowest point of the Kerch Peninsula (the Uzunlar Wall, ~40 km long) to protect against steppe nomads. It was the Bosporan equivalent of Hadrian's Wall.",
+      "description_ru": "Асандр, убив Фарнака II, укрепляет свою власть в Боспорском царстве. Он правит сначала как архонт, затем принимает царский титул. Он женится на Динамии, внучке Митридата VI, легитимизируя своё правление через митридатову кровь. Он перегораживает Крымский полуостров оборонительной линией через самое узкое место Керченского полуострова (Узунларский вал, ~40 км длиной) для защиты от степных кочевников. Это был боспорский эквивалент Адрианова вала.",
+      "era": "BC",
+      "latitude": 45.1833,
+      "longitude": 36.1167,
+      "name": "Asander's Wall — Fortress Crimea",
+      "name_ru": "Вал Асандра — крепость Крым",
+      "source": "https://en.wikipedia.org/wiki/Asander",
+      "tags": [
+        "Bosphorus",
+        "Roman",
+        "Defense",
+        "Construction",
+        "Dynasty"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0017",
+      "description": "After decades of instability and rival claimants, Rome imposes Polemon I as king of the Bosporus. He attempts to Romanize the kingdom, but the Bosporan Greeks and native tribes resist. During a campaign against the Aspurgians (a local tribe), Polemon is captured and killed. His wife Dynamis — granddaughter of Mithridates VI — takes control and marries Aspurgus, the Aspurgian chieftain, founding a new dynasty that will rule as loyal Roman clients for three centuries.",
+      "description_ru": "После десятилетий нестабильности и борьбы претендентов Рим ставит Полемона I царём Боспора. Он пытается романизировать царство, но боспорские греки и местные племена сопротивляются. Во время похода против аспургиан (местного племени) Полемон схвачен и убит. Его жена Динамия — внучка Митридата VI — берёт власть и выходит замуж за Аспурга, вождя аспургиан, основав новую династию, которая будет править как лояльные римские клиенты три столетия.",
+      "era": "BC",
+      "latitude": 45.189,
+      "longitude": 36.825,
+      "name": "Dynamis and the New Bosporan Dynasty",
+      "name_ru": "Динамия и новая боспорская династия",
+      "source": "https://en.wikipedia.org/wiki/Dynamis_(queen)",
+      "tags": [
+        "Bosphorus",
+        "Roman",
+        "Dynasty",
+        "Pontus",
+        "Vassalage"
+      ],
+      "type": "political"
+    }
+  ],
+  "name": "Bosporan Kingdom",
+  "name_ru": "Боспорское царство"
+}
