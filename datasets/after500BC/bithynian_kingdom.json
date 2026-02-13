@@ -1,5 +1,5 @@
 {
-  "description": "Dataset imported with 20 events",
+  "description": "Dataset imported with 22 events",
   "events": [
     {
       "date": "01.01.0326",
@@ -153,20 +153,78 @@
       "type": "political"
     },
     {
-      "date": "01.01.0228",
-      "description": "Prusias I 'the Lame' (Cholus) takes the throne and begins the kingdom's most expansionist era. Despite his physical disability, he is an effective warrior-king. He conquers coastal cities in Mysia and the Troad, captures the formerly Pergamene city of Cius (renaming it Prusias ad Mare), and takes Kieros from Heraclea Pontica (renaming it Prusias ad Hypium). Under his rule Bithynia reaches its maximum territorial extent.",
-      "description_ru": "Прусий I «Хромой» (Хол) занимает трон и начинает самую экспансионистскую эпоху царства. Несмотря на физический недостаток, он эффективный царь-воин. Он завоёвывает прибрежные города в Мисии и Троаде, захватывает ранее пергамский город Киос (переименовывая его в Прусиаду-на-Море) и забирает Киерос у Гераклеи Понтийской (переименовывая его в Прусиаду-у-Гипия). При нём Вифиния достигает максимальных территориальных пределов.",
+      "date": "01.01.0220",
+      "description": "Prusias I launches a war against the city of Byzantium, seizing its possessions on the Asian shore of the Bosporus — harbors, fishing stations, and toll collection points that controlled traffic between the Propontis (Sea of Marmara) and the Black Sea. Byzantium had grown wealthy by taxing every ship passing through the strait. By taking the Asian side, Prusias cuts into this revenue stream and establishes Bithynian control over one of the ancient world's most lucrative chokepoints.",
+      "description_ru": "Прусий I начинает войну против Византия, захватывая его владения на азиатском берегу Босфора — гавани, рыболовные станции и пункты сбора пошлин, контролировавшие движение между Пропонтидой (Мраморным морем) и Чёрным морем. Византий разбогател, облагая налогом каждый проходящий через пролив корабль. Захватив азиатскую сторону, Прусий перехватывает часть этого дохода и устанавливает вифинский контроль над одним из самых прибыльных узких мест древнего мира.",
       "era": "BC",
-      "latitude": 40.9061,
-      "longitude": 31.1481,
-      "name": "Prusias I Expands Bithynia",
-      "name_ru": "Прусий I расширяет Вифинию",
+      "latitude": 40.88,
+      "longitude": 29.27,
+      "name": "Prusias I Seizes Byzantine Asian Territories",
+      "name_ru": "Прусий I захватывает азиатские владения Византия",
       "source": "https://en.wikipedia.org/wiki/Prusias_I_of_Bithynia",
       "tags": [
         "Bithynian",
-        "War",
+        "Greek",
         "Conquest",
-        "Expansion"
+        "War",
+        "Trade"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0216",
+      "description": "Prusias I defeats a Galatian army near the town of Arisba. The Galatian Celts — originally invited into Asia by Nicomedes I in 278 BC — have been raiding Bithynian territory for decades. According to Polybius, Prusias' troops are brutally thorough: they slaughter Galatian women and children in the captured baggage train. The victory secures Bithynia's eastern frontier and avenges his father Ziaelas, who was killed by Galatians at a banquet.",
+      "description_ru": "Прусий I разбивает галатскую армию близ города Арисба. Кельты-галаты — первоначально приглашённые в Азию Никомедом I в 278 году до н.э. — десятилетиями совершали набеги на вифинскую территорию. По свидетельству Полибия, войска Прусия действуют с жестокой основательностью: они убивают галатских женщин и детей в захваченном обозе. Победа обеспечивает восточную границу Вифинии и мстит за его отца Зиэла, убитого галатами на пиру.",
+      "era": "BC",
+      "latitude": 40.35,
+      "longitude": 30.4,
+      "name": "Prusias I Crushes the Galatians at Arisba",
+      "name_ru": "Прусий I громит галатов при Арисбе",
+      "source": "https://en.wikipedia.org/wiki/Prusias_I_of_Bithynia",
+      "tags": [
+        "Bithynian",
+        "Celtic",
+        "War",
+        "Victory",
+        "Revenge"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0202",
+      "description": "Philip V of Macedon — Prusias' father-in-law through marriage to the Macedonian princess Apama III — captures and destroys the Greek cities of Cius and Myrleia on the Propontis coast during his campaigns in Asia Minor. Philip gifts both ruined cities to Prusias. The Bithynian king refounds them: Cius becomes Prusias ad Mare ('Prusias by the Sea'), and Myrleia becomes Apamea, named after his Macedonian wife. The acquisition gives Bithynia its first ports on the Sea of Marmara's southern shore.",
+      "description_ru": "Филипп V Македонский — тесть Прусия через брак с македонской принцессой Апамой III — захватывает и разрушает греческие города Киос и Мирлею на побережье Пропонтиды во время кампаний в Малой Азии. Филипп дарит оба разрушенных города Прусию. Вифинский царь заново их основывает: Киос становится Прусиадой-на-Море, а Мирлея — Апамеей, названной в честь его македонской жены. Приобретение даёт Вифинии первые порты на южном берегу Мраморного моря.",
+      "era": "BC",
+      "latitude": 40.4328,
+      "longitude": 28.9794,
+      "name": "Prusias I Refounds Cius and Myrleia",
+      "name_ru": "Прусий I заново основывает Киос и Мирлею",
+      "source": "https://en.wikipedia.org/wiki/Prusias_I_of_Bithynia",
+      "tags": [
+        "Bithynian",
+        "Macedonian",
+        "Foundation",
+        "City",
+        "Alliance"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0200",
+      "description": "Prusias I captures the city of Cierus (Kieros) — a colony of Heraclea Pontica on the Hypius River near the Black Sea coast — and renames it Prusias ad Hypium ('Prusias on the Hypius'). He also takes the port of Tieium further east along the Black Sea. These conquests complete Bithynia's expansion to its maximum extent: the kingdom now stretches from the Bosporus in the west to the Black Sea coast in the east, from the Propontis in the south to the Pontic shores in the north. No Bithynian king after Prusias I will add territory.",
+      "description_ru": "Прусий I захватывает город Киерос — колонию Гераклеи Понтийской на реке Гипий у Черноморского побережья — и переименовывает его в Прусиаду-у-Гипия. Он также берёт порт Тиейон (Тиум) восточнее по Черноморскому побережью. Эти завоевания завершают расширение Вифинии до максимальных пределов: царство теперь простирается от Босфора на западе до Черноморского побережья на востоке, от Пропонтиды на юге до понтийских берегов на севере. Ни один вифинский царь после Прусия I не добавит территорий.",
+      "era": "BC",
+      "latitude": 40.9061,
+      "longitude": 31.1481,
+      "name": "Prusias I Takes Cierus and Tieium",
+      "name_ru": "Прусий I захватывает Киерос и Тиейон",
+      "source": "https://en.wikipedia.org/wiki/Prusias_I_of_Bithynia",
+      "tags": [
+        "Bithynian",
+        "Greek",
+        "Conquest",
+        "Expansion",
+        "War"
       ],
       "type": "military"
     },
@@ -285,25 +343,6 @@
       "type": "military"
     },
     {
-      "date": "01.01.0120",
-      "description": "Under Nicomedes III, Bithynia and Pontus partition the fading kingdom of Paphlagonia between them — Nicomedes gets the interior and western regions, Mithridates V gets the Black Sea coast and eastern parts. Rome protests but takes no action, preoccupied with wars against Jugurtha and the Germanic invasions. The two Anatolian kingdoms are allies for now, but the partition plants the seeds of future conflict.",
-      "description_ru": "При Никомеде III Вифиния и Понт делят между собой угасающее Пафлагонское царство — Никомед получает внутренние и западные районы, Митридат V — черноморское побережье и восточные части. Рим протестует, но не предпринимает действий, занятый войнами с Югуртой и германскими вторжениями. Два анатолийских царства пока союзники, но раздел сеет семена будущего конфликта.",
-      "era": "BC",
-      "latitude": 41.1802,
-      "longitude": 33.775,
-      "name": "Bithynia and Pontus Partition Paphlagonia",
-      "name_ru": "Вифиния и Понт делят Пафлагонию",
-      "source": "https://en.wikipedia.org/wiki/Nicomedes_III_of_Bithynia",
-      "tags": [
-        "Pontus",
-        "Bithynian",
-        "Diplomacy",
-        "Conquest",
-        "Expansion"
-      ],
-      "type": "political"
-    },
-    {
       "date": "01.01.0104",
       "description": "When the Roman general Gaius Marius asks Nicomedes III for auxiliary troops to fight the Cimbri and Teutones invading Italy, Nicomedes replies that he cannot provide them — Roman tax collectors (publicani) have enslaved most of his able-bodied subjects to pay their debts. The Senate, embarrassed, passes a decree ordering the liberation of enslaved citizens of allied kingdoms. The decree is enforced halfheartedly and quickly abandoned.",
       "description_ru": "Когда римский полководец Гай Марий просит у Никомеда III вспомогательные войска для борьбы с кимврами и тевтонами, вторгшимися в Италию, Никомед отвечает, что не может их предоставить — римские сборщики налогов (публиканы) обратили в рабство большинство его трудоспособных подданных в счёт долгов. Сенат, смущённый, издаёт указ об освобождении порабощённых граждан союзных царств. Указ исполняется без энтузиазма и быстро забывается.",
@@ -340,25 +379,6 @@
         "Debt"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0088",
-      "description": "Mithridates VI uses Nicomedes' Roman-directed raid as a casus belli and overruns Bithynia in a single campaign. Nicomedes IV's army is scattered, and he flees to Rome for the second time. Bithynia's strategic position — controlling the Propontis and the approaches to the Black Sea — makes it the first domino in Mithridates' sweep across Asia Minor. Nicomedes will not return for three years.",
-      "description_ru": "Митридат VI использует направляемый Римом набег Никомеда как повод к войне и захватывает Вифинию в одну кампанию. Армия Никомеда IV рассеяна, и он бежит в Рим во второй раз. Стратегическое положение Вифинии — контролирующей Пропонтиду и подступы к Чёрному морю — делает её первой костяшкой домино в завоевании Митридатом Малой Азии. Никомед вернётся лишь через три года.",
-      "era": "BC",
-      "latitude": 40.7667,
-      "longitude": 29.9167,
-      "name": "Mithridates Overruns Bithynia",
-      "name_ru": "Митридат захватывает Вифинию",
-      "source": "https://en.wikipedia.org/wiki/First_Mithridatic_War",
-      "tags": [
-        "Roman",
-        "Pontus",
-        "Bithynian",
-        "War",
-        "Conquest"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.0085",
