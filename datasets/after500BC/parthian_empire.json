@@ -12,8 +12,8 @@
       "name_ru": "Основание парфянской Нисы",
       "tags": [
         "Parthian",
-        "City",
-        "Arsacid"
+        "Arsacid",
+        "City"
       ],
       "type": "historic"
     },
@@ -28,10 +28,10 @@
       "name_ru": "Аршак I подчиняет Парфию",
       "source": "https://en.wikipedia.org/wiki/Arsaces_I_of_Parthia",
       "tags": [
-        "Arsacid",
         "Parthian",
-        "Conquest",
-        "War"
+        "Arsacid",
+        "War",
+        "Conquest"
       ],
       "type": "military"
     },
@@ -48,8 +48,8 @@
       "tags": [
         "Parthian",
         "Seleucid",
-        "Independence",
-        "War"
+        "War",
+        "Independence"
       ],
       "type": "military"
     },
@@ -64,10 +64,10 @@
       "name_ru": "Аршак II - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Arsaces_II_of_Parthia",
       "tags": [
-        "Dynasty",
-        "King",
         "Parthian",
-        "Arsacid"
+        "Arsacid",
+        "Dynasty",
+        "King"
       ],
       "type": "political"
     },
@@ -82,10 +82,10 @@
       "name_ru": "Перенос столицы Парфии в Гекатомпил",
       "tags": [
         "Parthian",
-        "Capital",
-        "Trade",
         "Administration",
-        "Silk Road"
+        "Capital",
+        "Silk Road",
+        "Trade"
       ],
       "type": "historic"
     },
@@ -100,10 +100,10 @@
       "name_ru": "Приапат - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Priapatius",
       "tags": [
-        "Arsacid",
-        "King",
         "Parthian",
-        "Dynasty"
+        "Arsacid",
+        "Dynasty",
+        "King"
       ],
       "type": "political"
     },
@@ -118,11 +118,11 @@
       "name_ru": "Фраат I - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Phraates_I",
       "tags": [
-        "King",
-        "Dynasty",
-        "Expansion",
+        "Parthian",
         "Arsacid",
-        "Parthian"
+        "Dynasty",
+        "King",
+        "Expansion"
       ],
       "type": "political"
     },
@@ -137,10 +137,10 @@
       "name_ru": "Митридат I - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia",
       "tags": [
+        "Parthian",
+        "Arsacid",
         "Dynasty",
         "King",
-        "Arsacid",
-        "Parthian",
         "Mithridates I 👑"
       ],
       "type": "political"
@@ -156,12 +156,12 @@
       "name_ru": "Парфяне захватывают Мидию",
       "source": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia",
       "tags": [
-        "Arsacid",
-        "Mithridates I 👑",
-        "Conquest",
-        "Seleucid",
         "Parthian",
-        "War"
+        "Arsacid",
+        "Seleucid",
+        "War",
+        "Conquest",
+        "Mithridates I 👑"
       ],
       "type": "military"
     },
@@ -176,13 +176,13 @@
       "name_ru": "Парфия подчиняет Вавилон",
       "source": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia",
       "tags": [
-        "Seleucid",
-        "Mithridates I 👑",
         "Babylonian",
-        "Conquest",
         "Parthian",
         "Arsacid",
-        "War"
+        "Seleucid",
+        "War",
+        "Conquest",
+        "Mithridates I 👑"
       ],
       "type": "political"
     },
@@ -197,12 +197,12 @@
       "name_ru": "Парфия подчиняет Элимаиды",
       "source": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia",
       "tags": [
-        "Conquest",
-        "Seleucid",
-        "Arsacid",
         "Parthian",
-        "Mithridates I 👑",
-        "War"
+        "Arsacid",
+        "Seleucid",
+        "War",
+        "Conquest",
+        "Mithridates I 👑"
       ],
       "type": "military"
     },
@@ -217,9 +217,9 @@
       "name_ru": "Фраат II - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Phraates_II",
       "tags": [
-        "Dynasty",
         "Parthian",
         "Arsacid",
+        "Dynasty",
         "King"
       ],
       "type": "political"
@@ -235,10 +235,10 @@
       "name_ru": "Смерть Митридата I Парфянского",
       "source": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia",
       "tags": [
-        "Mithridates I 👑",
         "Parthian",
         "Arsacid",
-        "Death"
+        "Death",
+        "Mithridates I 👑"
       ],
       "type": "political"
     },
@@ -253,12 +253,12 @@
       "name_ru": "Гибель царя Парфии в битве с саками",
       "source": "https://en.wikipedia.org/wiki/Phraates_II",
       "tags": [
-        "Scythian",
-        "Death",
         "Parthian",
-        "Battle",
         "Arsacid",
-        "War"
+        "Scythian",
+        "War",
+        "Battle",
+        "Death"
       ],
       "type": "military"
     },
@@ -273,11 +273,11 @@
       "name_ru": "Артабан I - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Artabanus_I_of_Parthia",
       "tags": [
-        "Arsacid",
         "Parthian",
+        "Arsacid",
+        "Dynasty",
         "King",
-        "Death",
-        "Dynasty"
+        "Death"
       ],
       "type": "political"
     },
@@ -307,10 +307,10 @@
       "name_ru": "Митридат II - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Mithridates_II_of_Parthia",
       "tags": [
-        "Dynasty",
-        "King",
         "Parthian",
         "Arsacid",
+        "Dynasty",
+        "King",
         "Mithridates II 👑"
       ],
       "type": "political"
@@ -326,11 +326,11 @@
       "name_ru": "Парфянское завоевание Дура-Европос",
       "source": "https://en.wikipedia.org/wiki/Dura-Europos",
       "tags": [
-        "Mithridates II 👑",
-        "Seleucid",
-        "Conquest",
         "Parthian",
-        "War"
+        "Seleucid",
+        "War",
+        "Conquest",
+        "Mithridates II 👑"
       ],
       "type": "military"
     },
@@ -345,18 +345,18 @@
       "name_ru": "Парфянское завоевание Армении",
       "source": "https://en.wikipedia.org/wiki/Mithridates_II_of_Parthia",
       "tags": [
-        "Parthian",
-        "Tigranes the Great 👤",
         "Armenian",
+        "Parthian",
         "War",
         "Conquest",
+        "Hostage",
         "Mithridates II 👑",
-        "Hostage"
+        "Tigranes the Great 👤"
       ],
       "type": "military"
     },
     {
-      "date": "01.01.0096",
+      "date": "01.09.0092",
       "description": "Sulla meets with the Parthian ambassador Orobazus on the Euphrates. Sulla takes the place of honor without permission to show who is boss. Rome and Parthia agree to use the Euphrates as a border, beginning centuries-long relations between the two empires. The Parthian ambassador was later executed by the king for allowing the Roman negotiator such insolence.",
       "description_ru": "Сулла встречается с парфянским послом Оробазом на Евфрате. Сулла самовольно занимает почетное место, чтобы показать, кто здесь главный. Рим и Парфия договариваются использовать Евфрат как границу, начиная многовековые отношения между двумя империями. Посол Парфии позднее казнен царем за то, что позволил римскому переговорщику такую дерзость.",
       "era": "BC",
@@ -366,11 +366,11 @@
       "name_ru": "Дипломатический контакт Рима и Парфии",
       "source": "https://en.wikipedia.org/wiki/Mithridates_II_of_Parthia",
       "tags": [
-        "Diplomacy",
-        "Sulla 👤",
-        "Mithridates II 👑",
+        "Roman",
         "Parthian",
-        "Roman"
+        "Diplomacy",
+        "Mithridates II 👑",
+        "Sulla 👤"
       ],
       "type": "political"
     },
@@ -385,10 +385,10 @@
       "name_ru": "Смерть Митридата II Великого",
       "source": "https://en.wikipedia.org/wiki/Mithridates_II_of_Parthia",
       "tags": [
-        "Death",
-        "Mithridates II 👑",
+        "Parthian",
         "Arsacid",
-        "Parthian"
+        "Death",
+        "Mithridates II 👑"
       ],
       "type": "political"
     },
@@ -403,12 +403,12 @@
       "name_ru": "Армянские завоевания в Месопотамии",
       "source": "https://en.wikipedia.org/wiki/Tigranes_the_Great",
       "tags": [
-        "Decline",
-        "Tigranes the Great 👤",
-        "Parthian",
-        "Independence",
         "Armenian",
-        "War"
+        "Parthian",
+        "War",
+        "Decline",
+        "Independence",
+        "Tigranes the Great 👤"
       ],
       "type": "military"
     },
@@ -423,10 +423,10 @@
       "name_ru": "Ород II - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Orodes_II",
       "tags": [
-        "Dynasty",
-        "King",
         "Parthian",
-        "Arsacid"
+        "Arsacid",
+        "Dynasty",
+        "King"
       ],
       "type": "political"
     },
@@ -440,12 +440,12 @@
       "name": "Parthian Cavalry",
       "name_ru": "Парфянская кавалерия",
       "tags": [
-        "Army",
         "Parthian",
-        "Tactics",
-        "Cavalry",
         "War",
-        "Science"
+        "Army",
+        "Cavalry",
+        "Science",
+        "Tactics"
       ],
       "type": "military"
     },
@@ -460,13 +460,13 @@
       "name_ru": "Свадьба парфянского принца в Армении",
       "source": "https://www.armmuseum.ru/news-blog/artavasdes-ii-of-armenia-and-marcus-licinius-crassus",
       "tags": [
-        "Legend",
-        "Armenian",
         "Roman",
-        "Crassus 👤",
-        "Uncertain",
+        "Armenian",
         "Parthian",
-        "Marriage"
+        "Marriage",
+        "Legend",
+        "Uncertain",
+        "Crassus 👤"
       ],
       "type": "political"
     },
@@ -483,11 +483,11 @@
       "tags": [
         "Roman",
         "Parthian",
-        "Death",
-        "Failure",
+        "War",
         "Battle",
         "Crassus 👤",
-        "War"
+        "Death",
+        "Failure"
       ],
       "type": "military"
     },
@@ -518,12 +518,12 @@
       "name_ru": "Вторжение парфян на Римский Восток",
       "source": "https://en.wikipedia.org/wiki/Parthian_invasion_of_40_BC",
       "tags": [
-        "Syria",
-        "Invasions",
-        "Parthian",
         "Roman",
+        "Parthian",
+        "War",
         "Conquest",
-        "War"
+        "Invasions",
+        "Syria"
       ],
       "type": "military"
     },
@@ -540,9 +540,9 @@
       "tags": [
         "Roman",
         "Parthian",
+        "War",
         "Battle",
-        "Death",
-        "War"
+        "Death"
       ],
       "type": "military"
     },
@@ -557,12 +557,12 @@
       "name_ru": "Парфянский поход Марка Антония",
       "source": "https://en.wikipedia.org/wiki/Antony%27s_Parthian_War",
       "tags": [
-        "Mark Antony 👤",
-        "Failure",
         "Roman",
-        "Invasions",
         "Parthian",
-        "War"
+        "War",
+        "Failure",
+        "Invasions",
+        "Mark Antony 👤"
       ],
       "type": "military"
     },
@@ -578,11 +578,11 @@
       "source": "https://en.wikipedia.org/wiki/Phraates_IV",
       "tags": [
         "Roman",
+        "Parthian",
         "Arsacid",
         "Diplomacy",
-        "Parthian",
-        "Peace",
-        "Octavian 👑"
+        "Octavian 👑",
+        "Peace"
       ],
       "type": "political"
     },
@@ -597,12 +597,12 @@
       "name_ru": "Фраат V захватывает трон Парфии",
       "source": "https://en.wikipedia.org/wiki/Phraates_V",
       "tags": [
+        "Roman",
         "Parthian",
-        "Son Kills Father",
         "Arsacid",
-        "Overthrow",
         "Murder",
-        "Roman"
+        "Overthrow",
+        "Son Kills Father"
       ],
       "type": "political"
     },
@@ -617,11 +617,11 @@
       "name_ru": "Вонон I - заложник Рима и царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Vonones_I",
       "tags": [
-        "King",
         "Roman",
-        "Civil War",
         "Parthian",
         "Arsacid",
+        "Civil War",
+        "King",
         "Hostage"
       ],
       "type": "political"
@@ -638,10 +638,10 @@
       "source": "https://en.wikipedia.org/wiki/Thomas_the_Apostle",
       "tags": [
         "Parthian",
+        "Apostle Thomas 👤",
         "Christian",
-        "Trade",
         "Religious",
-        "Apostle Thomas 👤"
+        "Trade"
       ],
       "type": "religious"
     },
@@ -656,13 +656,13 @@
       "name_ru": "Расцвет торговли по Шёлковому пути",
       "source": "https://en.wikipedia.org/wiki/Silk_Road",
       "tags": [
+        "Roman",
+        "Chinese",
         "Parthian",
         "Economic",
-        "Trade",
-        "Roman",
+        "Infrastructure",
         "Silk Road",
-        "Chinese",
-        "Infrastructure"
+        "Trade"
       ],
       "type": "historic"
     },
@@ -677,9 +677,9 @@
       "name_ru": "Вологез I - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Vologases_I_of_Parthia",
       "tags": [
-        "King",
+        "Parthian",
         "Arsacid",
-        "Parthian"
+        "King"
       ],
       "type": "political"
     },
@@ -694,9 +694,9 @@
       "name_ru": "Тиридат Парфянский назначен царём Армении",
       "source": "https://en.wikipedia.org/wiki/Tiridates_I_of_Armenia",
       "tags": [
+        "Roman",
         "Armenian",
         "Parthian",
-        "Roman",
         "War"
       ],
       "type": "political"
@@ -712,12 +712,12 @@
       "name_ru": "Вторжение Рима в Армению",
       "source": "https://en.wikipedia.org/wiki/Roman%E2%80%93Parthian_War_of_58%E2%80%9363",
       "tags": [
-        "Destruction",
         "Roman",
-        "Parthian",
         "Armenian",
-        "Invasions",
-        "War"
+        "Parthian",
+        "War",
+        "Destruction",
+        "Invasions"
       ],
       "type": "military"
     },
@@ -732,11 +732,11 @@
       "name_ru": "Битва при Рандее",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Rhandeia",
       "tags": [
-        "Battle",
-        "Parthian",
-        "Armenian",
         "Roman",
-        "War"
+        "Armenian",
+        "Parthian",
+        "War",
+        "Battle"
       ],
       "type": "military"
     },
@@ -751,11 +751,11 @@
       "name_ru": "Рандейский мир",
       "source": "https://en.wikipedia.org/wiki/Treaty_of_Rhandeia",
       "tags": [
-        "Armenian",
-        "Peace",
         "Roman",
+        "Armenian",
         "Parthian",
-        "Nero 👑"
+        "Nero 👑",
+        "Peace"
       ],
       "type": "political"
     },
@@ -770,11 +770,11 @@
       "name_ru": "Коронация Тиридата в Риме",
       "source": "https://en.wikipedia.org/wiki/Tiridates_I_of_Armenia",
       "tags": [
-        "Diplomacy",
-        "Nero 👑",
         "Roman",
+        "Armenian",
         "Parthian",
-        "Armenian"
+        "Diplomacy",
+        "Nero 👑"
       ],
       "type": "political"
     },
@@ -789,11 +789,11 @@
       "name_ru": "Рост вавилонской еврейской общины",
       "source": "https://en.wikipedia.org/wiki/History_of_the_Jews_in_Iraq",
       "tags": [
-        "Parthian",
+        "Babylonian",
         "Judah",
+        "Parthian",
         "Jewish",
-        "Religious",
-        "Babylonian"
+        "Religious"
       ],
       "type": "religious"
     },
@@ -809,9 +809,9 @@
       "source": "https://en.wikipedia.org/wiki/Avesta",
       "tags": [
         "Parthian",
+        "Avesta",
         "Culture",
         "Religious",
-        "Avesta",
         "Zoroastrian"
       ],
       "type": "religious"
@@ -827,8 +827,8 @@
       "name_ru": "Смерть Вологеза I Парфянского",
       "source": "https://en.wikipedia.org/wiki/Vologases_I_of_Parthia",
       "tags": [
-        "Arsacid",
         "Parthian",
+        "Arsacid",
         "Death"
       ],
       "type": "political"
@@ -844,12 +844,12 @@
       "name_ru": "Гань Ин достигает Персидского залива",
       "source": "https://en.wikipedia.org/wiki/Gan_Ying",
       "tags": [
-        "Trade",
-        "Silk Road",
-        "Economic",
+        "Chinese",
         "Parthian",
         "Diplomacy",
-        "Chinese"
+        "Economic",
+        "Silk Road",
+        "Trade"
       ],
       "type": "historic"
     },
@@ -865,10 +865,10 @@
       "source": "https://en.wikipedia.org/wiki/Parthian_art",
       "tags": [
         "Parthian",
+        "Architecture",
         "Art",
         "Culture",
-        "Sculpture",
-        "Architecture"
+        "Sculpture"
       ],
       "type": "cultural"
     },
@@ -883,10 +883,10 @@
       "name_ru": "Осрой I - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Osroes_I",
       "tags": [
-        "King",
+        "Armenian",
         "Parthian",
         "Arsacid",
-        "Armenian"
+        "King"
       ],
       "type": "political"
     },
@@ -901,11 +901,11 @@
       "name_ru": "Кампания Траяна в Парфии",
       "source": "https://en.wikipedia.org/wiki/Trajan%27s_Parthian_campaign",
       "tags": [
-        "Invasions",
         "Roman",
         "Parthian",
-        "Trajan 👑",
-        "Mesopotamia"
+        "Invasions",
+        "Mesopotamia",
+        "Trajan 👑"
       ],
       "type": "military"
     },
@@ -920,11 +920,11 @@
       "name_ru": "Парфянская традиция менестрелей",
       "source": "https://en.wikipedia.org/wiki/Gosan",
       "tags": [
-        "Culture",
         "Parthian",
-        "Oral Tradition",
+        "Culture",
         "Literature",
-        "Music"
+        "Music",
+        "Oral Tradition"
       ],
       "type": "cultural"
     },
@@ -939,10 +939,10 @@
       "name_ru": "Траян захватывает Ктесифон",
       "source": "https://en.wikipedia.org/wiki/Trajan%27s_Parthian_campaign",
       "tags": [
-        "Capital",
-        "Conquest",
         "Roman",
         "Parthian",
+        "Capital",
+        "Conquest",
         "Trajan 👑"
       ],
       "type": "military"
@@ -959,12 +959,12 @@
       "source": "https://en.wikipedia.org/wiki/Trajan%27s_Parthian_campaign",
       "tags": [
         "Roman",
-        "Trajan 👑",
-        "Hadrian 👑",
         "Parthian",
+        "Hadrian 👑",
+        "Jewish",
         "Rebellion",
         "Retreat",
-        "Jewish"
+        "Trajan 👑"
       ],
       "type": "military"
     },
@@ -979,10 +979,10 @@
       "name_ru": "Расцвет Хатры",
       "source": "https://en.wikipedia.org/wiki/Hatra",
       "tags": [
-        "Trade",
-        "Architecture",
         "Parthian",
-        "Religious"
+        "Architecture",
+        "Religious",
+        "Trade"
       ],
       "type": "cultural"
     },
@@ -997,10 +997,10 @@
       "name_ru": "Вологез IV - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Vologases_IV_of_Parthia",
       "tags": [
-        "King",
         "Parthian",
         "Arsacid",
-        "Dynasty"
+        "Dynasty",
+        "King"
       ],
       "type": "political"
     },
@@ -1016,9 +1016,9 @@
       "source": "https://en.wikipedia.org/wiki/History_of_medicine",
       "tags": [
         "Parthian",
-        "Science",
+        "Culture",
         "Medicine",
-        "Culture"
+        "Science"
       ],
       "type": "scientific"
     },
@@ -1033,9 +1033,9 @@
       "name_ru": "Парфяне вторгаются в Армению",
       "source": "https://en.wikipedia.org/wiki/Roman%E2%80%93Parthian_War_of_161%E2%80%93166",
       "tags": [
-        "Parthian",
         "Roman",
         "Armenian",
+        "Parthian",
         "Invasions"
       ],
       "type": "military"
@@ -1052,8 +1052,8 @@
       "source": "https://en.wikipedia.org/wiki/Roman%E2%80%93Parthian_War_of_161%E2%80%93166",
       "tags": [
         "Roman",
-        "Parthian",
-        "Armenian"
+        "Armenian",
+        "Parthian"
       ],
       "type": "military"
     },
@@ -1070,9 +1070,9 @@
       "tags": [
         "Roman",
         "Parthian",
+        "Destruction",
         "Plague",
-        "Plundering",
-        "Destruction"
+        "Plundering"
       ],
       "type": "military"
     },
@@ -1087,9 +1087,9 @@
       "name_ru": "Антонинова чума идет на запад",
       "source": "https://en.wikipedia.org/wiki/Antonine_Plague",
       "tags": [
+        "Roman",
         "Parthian",
-        "Plague",
-        "Roman"
+        "Plague"
       ],
       "type": "historic"
     },
@@ -1104,11 +1104,11 @@
       "name_ru": "Вологез V - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Vologases_V",
       "tags": [
-        "Arsacid",
         "Parthian",
+        "Arsacid",
+        "Civil War",
         "King",
-        "Decline",
-        "Civil War"
+        "Decline"
       ],
       "type": "political"
     },
@@ -1123,11 +1123,11 @@
       "name_ru": "Септимий Север разграбляет Ктесифон",
       "source": "https://en.wikipedia.org/wiki/Parthian_war_of_Septimius_Severus",
       "tags": [
-        "Parthian",
-        "Septimius Severus 👑",
         "Roman",
+        "Parthian",
+        "War",
         "Plundering",
-        "War"
+        "Septimius Severus 👑"
       ],
       "type": "military"
     },
@@ -1144,10 +1144,10 @@
       "tags": [
         "Roman",
         "Parthian",
+        "War",
         "Failure",
         "Septimius Severus 👑",
-        "Siege",
-        "War"
+        "Siege"
       ],
       "type": "military"
     },
@@ -1179,13 +1179,13 @@
       "name_ru": "Каракалла оскверняет гробницы Аршакидов",
       "source": "https://en.wikipedia.org/wiki/Caracalla",
       "tags": [
-        "Caracalla 👑",
-        "Parthian",
         "Roman",
+        "Parthian",
         "Civil War",
-        "Invasions",
+        "War",
         "Blasphemy",
-        "War"
+        "Caracalla 👑",
+        "Invasions"
       ],
       "type": "military"
     },
@@ -1201,10 +1201,10 @@
       "source": "https://en.wikipedia.org/wiki/Caracalla",
       "tags": [
         "Roman",
-        "Assassination",
         "Parthian",
-        "Caracalla 👑",
-        "War"
+        "War",
+        "Assassination",
+        "Caracalla 👑"
       ],
       "type": "political"
     },
@@ -1219,12 +1219,12 @@
       "name_ru": "Битва при Нисибисе",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Nisibis_(217)",
       "tags": [
-        "Peace",
         "Roman",
+        "Parthian",
+        "War",
         "Battle",
         "Contribution",
-        "Parthian",
-        "War"
+        "Peace"
       ],
       "type": "military"
     },
@@ -1241,11 +1241,11 @@
       "tags": [
         "Persian",
         "Parthian",
-        "Rebellion",
         "Arsacid",
-        "Sassanid",
+        "War",
         "Ardashir I",
-        "War"
+        "Rebellion",
+        "Sassanid"
       ],
       "type": "political"
     },
@@ -1260,13 +1260,13 @@
       "name_ru": "Битва при Хормоздгане",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Hormozdgan",
       "tags": [
-        "Ardashir I",
-        "Battle",
-        "Fall",
-        "Sassanid",
         "Persian",
         "Parthian",
-        "War"
+        "War",
+        "Battle",
+        "Ardashir I",
+        "Fall",
+        "Sassanid"
       ],
       "type": "military"
     },
@@ -1282,9 +1282,9 @@
       "source": "https://en.wikipedia.org/wiki/Vologases_VI",
       "tags": [
         "Parthian",
-        "Fall",
         "Arsacid",
-        "Dynasty"
+        "Dynasty",
+        "Fall"
       ],
       "type": "political"
     }

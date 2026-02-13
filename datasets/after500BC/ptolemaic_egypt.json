@@ -12,12 +12,12 @@
       "name_ru": "Птолемей I захватывает Египет",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_I_Soter",
       "tags": [
-        "Ptolemaic",
         "Greek",
-        "War",
-        "Foundation",
         "Egypt",
-        "Diadochi"
+        "Ptolemaic",
+        "Diadochi",
+        "War",
+        "Foundation"
       ],
       "type": "political"
     },
@@ -32,13 +32,13 @@
       "name_ru": "Птолемей побеждает Пердикку",
       "source": "https://en.wikipedia.org/wiki/Perdiccas",
       "tags": [
-        "Ptolemaic",
-        "War",
-        "Assassination",
-        "Egypt",
-        "Battle",
         "Greek",
-        "Diadochi"
+        "Egypt",
+        "Ptolemaic",
+        "Diadochi",
+        "War",
+        "Battle",
+        "Assassination"
       ],
       "type": "military"
     },
@@ -53,14 +53,14 @@
       "name_ru": "Битва при Газе",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Gaza_(312_BC)",
       "tags": [
-        "Battle",
-        "Ptolemaic",
         "Greek",
-        "Syria",
+        "Ptolemaic",
         "Seleucid",
+        "Diadochi",
         "War",
+        "Battle",
         "Palestine",
-        "Diadochi"
+        "Syria"
       ],
       "type": "military"
     },
@@ -75,13 +75,13 @@
       "name_ru": "Птолемей отражает вторжение Антигона",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_I_Soter",
       "tags": [
-        "Egypt",
-        "Defense",
         "Greek",
+        "Egypt",
         "Ptolemaic",
-        "Naval",
+        "Diadochi",
         "War",
-        "Diadochi"
+        "Defense",
+        "Naval"
       ],
       "type": "military"
     },
@@ -96,11 +96,11 @@
       "name_ru": "Птолемей I становится фараоном",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_I_Soter",
       "tags": [
-        "Pharaoh",
         "Greek",
-        "Dynasty",
         "Egypt",
-        "Ptolemaic"
+        "Ptolemaic",
+        "Dynasty",
+        "Pharaoh"
       ],
       "type": "political"
     },
@@ -116,10 +116,10 @@
       "source": "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great",
       "tags": [
         "Greek",
+        "Egypt",
         "Ptolemaic",
-        "Tomb",
         "Alexander the Great 👤",
-        "Egypt"
+        "Tomb"
       ],
       "type": "historic"
     },
@@ -134,12 +134,12 @@
       "name_ru": "Основание Мусейона",
       "source": "https://en.wikipedia.org/wiki/Musaeum",
       "tags": [
-        "Science",
-        "Egypt",
-        "Culture",
         "Greek",
+        "Egypt",
         "Ptolemaic",
-        "Innovation"
+        "Culture",
+        "Innovation",
+        "Science"
       ],
       "type": "cultural"
     },
@@ -154,13 +154,13 @@
       "name_ru": "Основание Александрийской библиотеки",
       "source": "https://en.wikipedia.org/wiki/Library_of_Alexandria",
       "tags": [
-        "Library",
-        "Ancient Wonders",
-        "Egypt",
         "Greek",
-        "Science",
+        "Egypt",
         "Ptolemaic",
-        "Culture"
+        "Ancient Wonders",
+        "Culture",
+        "Library",
+        "Science"
       ],
       "type": "cultural"
     },
@@ -175,10 +175,10 @@
       "name_ru": "Введение культа Сераписа",
       "source": "https://en.wikipedia.org/wiki/Serapis",
       "tags": [
-        "Religious",
         "Greek",
         "Egypt",
         "Ptolemaic",
+        "Religious",
         "Syncretism"
       ],
       "type": "religious"
@@ -194,12 +194,12 @@
       "name_ru": "Строительство Александрийского маяка",
       "source": "https://en.wikipedia.org/wiki/Lighthouse_of_Alexandria",
       "tags": [
-        "Ptolemaic",
-        "Architecture",
-        "Egypt",
         "Greek",
+        "Egypt",
+        "Ptolemaic",
+        "Building 🏠",
         "Ancient Wonders",
-        "Building 🏠"
+        "Architecture"
       ],
       "type": "cultural"
     },
@@ -214,11 +214,11 @@
       "name_ru": "Птолемей II - правитель Египта",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_II_Philadelphus",
       "tags": [
+        "Greek",
         "Egypt",
         "Ptolemaic",
         "Dynasty",
-        "King",
-        "Greek"
+        "King"
       ],
       "type": "political"
     },
@@ -243,25 +243,6 @@
     },
     {
       "date": "01.01.0280",
-      "description": "Ptolemy II marries his full sister Arsinoe II, establishing the practice of sibling marriage among Ptolemaic royalty; they adopt the epithet 'Philadelphoi' (sibling-loving), and Arsinoe becomes co-ruler",
-      "description_ru": "Птолемей II женится на своей родной сестре Арсиное II, устанавливая практику братско-сестринского брака среди птолемеевской знати; они принимают прозвище 'Филадельфы' (любящие сестру/брата), и Арсиноя становится соправительницей",
-      "era": "BC",
-      "latitude": 31.206667,
-      "longitude": 29.900278,
-      "name": "Ptolemy II Marries Arsinoe II",
-      "name_ru": "Птолемей II женится на Арсиное II",
-      "source": "https://en.wikipedia.org/wiki/Arsinoe_II",
-      "tags": [
-        "Ptolemaic",
-        "Greek",
-        "Egypt",
-        "Dynasty",
-        "Marriage"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0280",
       "description": "The Pharos of Alexandria is completed, standing approximately 100-130 meters tall; its light, reflected by polished bronze mirrors, can be seen 50 kilometers out to sea",
       "description_ru": "Александрийский маяк завершён, достигая высоты около 100-130 метров; его свет, отражаемый полированными бронзовыми зеркалами, виден на расстоянии 50 километров в море",
       "era": "BC",
@@ -271,14 +252,33 @@
       "name_ru": "Завершение Александрийского маяка",
       "source": "https://en.wikipedia.org/wiki/Lighthouse_of_Alexandria",
       "tags": [
-        "Egypt",
         "Greek",
-        "Ancient Wonders",
+        "Egypt",
         "Ptolemaic",
-        "Architecture",
-        "Building 🏠"
+        "Building 🏠",
+        "Ancient Wonders",
+        "Architecture"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.0280",
+      "description": "Ptolemy II marries his full sister Arsinoe II, establishing the practice of sibling marriage among Ptolemaic royalty; they adopt the epithet 'Philadelphoi' (sibling-loving), and Arsinoe becomes co-ruler",
+      "description_ru": "Птолемей II женится на своей родной сестре Арсиное II, устанавливая практику братско-сестринского брака среди птолемеевской знати; они принимают прозвище 'Филадельфы' (любящие сестру/брата), и Арсиноя становится соправительницей",
+      "era": "BC",
+      "latitude": 31.206667,
+      "longitude": 29.900278,
+      "name": "Ptolemy II Marries Arsinoe II",
+      "name_ru": "Птолемей II женится на Арсиное II",
+      "source": "https://en.wikipedia.org/wiki/Arsinoe_II",
+      "tags": [
+        "Greek",
+        "Egypt",
+        "Ptolemaic",
+        "Marriage",
+        "Dynasty"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.0275",
@@ -291,12 +291,12 @@
       "name_ru": "Начало перевода Септуагинты",
       "source": "https://en.wikipedia.org/wiki/Septuagint",
       "tags": [
-        "Jewish",
         "Greek",
         "Egypt",
+        "Ptolemaic",
+        "Jewish",
         "Religious",
         "Translation",
-        "Ptolemaic",
         "Writing"
       ],
       "type": "religious"
@@ -312,11 +312,11 @@
       "name_ru": "Опубликованы 'Начала' Евклида",
       "source": "https://en.wikipedia.org/wiki/Euclid%27s_Elements",
       "tags": [
-        "Science",
         "Greek",
         "Egypt",
         "Ptolemaic",
-        "Mathematics"
+        "Mathematics",
+        "Science"
       ],
       "type": "scientific"
     },
@@ -331,12 +331,12 @@
       "name_ru": "Смерть и обожествление Арсинои II",
       "source": "https://en.wikipedia.org/wiki/Arsinoe_II",
       "tags": [
-        "Religious",
         "Greek",
         "Egypt",
         "Ptolemaic",
+        "Death",
         "Deification",
-        "Death"
+        "Religious"
       ],
       "type": "religious"
     },
@@ -351,12 +351,12 @@
       "name_ru": "Птолемеевские торговые экспедиции в Красное море",
       "source": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom",
       "tags": [
-        "Expedition",
+        "Greek",
+        "Egypt",
         "Ptolemaic",
         "Africa",
-        "Greek",
-        "Trade",
-        "Egypt"
+        "Expedition",
+        "Trade"
       ],
       "type": "historic"
     },
@@ -372,12 +372,12 @@
       "tags": [
         "Egypt",
         "Ptolemaic",
+        "Legend",
         "Archimedes 👤",
         "Education",
-        "Science",
         "Engineering ⚙️",
-        "Water",
-        "Legend"
+        "Science",
+        "Water"
       ],
       "type": "scientific"
     },
@@ -392,12 +392,12 @@
       "name_ru": "Александрийская школа анатомии",
       "source": "https://en.wikipedia.org/wiki/Herophilos",
       "tags": [
-        "Ptolemaic",
-        "Science",
-        "Medicine",
-        "Anatomy",
+        "Greek",
         "Egypt",
-        "Greek"
+        "Ptolemaic",
+        "Anatomy",
+        "Medicine",
+        "Science"
       ],
       "type": "scientific"
     },
@@ -412,12 +412,12 @@
       "name_ru": "Механические изобретения Ктесибия",
       "source": "https://en.wikipedia.org/wiki/Ctesibius",
       "tags": [
+        "Greek",
+        "Egypt",
         "Ptolemaic",
-        "Science",
         "Engineering ⚙️",
         "Innovation",
-        "Egypt",
-        "Greek"
+        "Science"
       ],
       "type": "scientific"
     },
@@ -432,11 +432,11 @@
       "name_ru": "Птолемей III - правитель Египта",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_III_Euergetes",
       "tags": [
-        "Egypt",
-        "King",
-        "Ptolemaic",
         "Greek",
-        "Dynasty"
+        "Egypt",
+        "Ptolemaic",
+        "Dynasty",
+        "King"
       ],
       "type": "political"
     },
@@ -451,11 +451,11 @@
       "name_ru": "Каллимах создаёт первый библиотечный каталог",
       "source": "https://en.wikipedia.org/wiki/Pinakes",
       "tags": [
-        "Ptolemaic",
-        "Library",
-        "Culture",
+        "Greek",
         "Egypt",
-        "Greek"
+        "Ptolemaic",
+        "Culture",
+        "Library"
       ],
       "type": "cultural"
     },
@@ -472,10 +472,10 @@
       "tags": [
         "Greek",
         "Egypt",
-        "Mathematics",
+        "Ptolemaic",
         "Geography",
-        "Science",
-        "Ptolemaic"
+        "Mathematics",
+        "Science"
       ],
       "type": "scientific"
     },
@@ -490,11 +490,11 @@
       "name_ru": "Эратосфен становится главным библиотекарем",
       "source": "https://en.wikipedia.org/wiki/Eratosthenes",
       "tags": [
-        "Library",
-        "Ptolemaic",
-        "Science",
         "Greek",
-        "Egypt"
+        "Egypt",
+        "Ptolemaic",
+        "Library",
+        "Science"
       ],
       "type": "scientific"
     },
@@ -509,11 +509,11 @@
       "name_ru": "Канопский декрет",
       "source": "https://en.wikipedia.org/wiki/Decree_of_Canopus",
       "tags": [
-        "Science",
+        "Greek",
+        "Egypt",
         "Ptolemaic",
         "Calendar",
-        "Greek",
-        "Egypt"
+        "Science"
       ],
       "type": "scientific"
     },
@@ -530,11 +530,11 @@
       "tags": [
         "Greek",
         "Egypt",
-        "Architecture",
-        "Temple",
-        "Building 🏠",
         "Ptolemaic",
-        "Religious"
+        "Building 🏠",
+        "Architecture",
+        "Religious",
+        "Temple"
       ],
       "type": "cultural"
     },
@@ -549,12 +549,12 @@
       "name_ru": "Аполлоний пишет 'Конические сечения'",
       "source": "https://en.wikipedia.org/wiki/Apollonius_of_Perga",
       "tags": [
-        "Ptolemaic",
-        "Science",
-        "Mathematics",
-        "Astronomy",
         "Greek",
-        "Egypt"
+        "Egypt",
+        "Ptolemaic",
+        "Astronomy",
+        "Mathematics",
+        "Science"
       ],
       "type": "scientific"
     },
@@ -571,9 +571,9 @@
       "tags": [
         "Greek",
         "Egypt",
+        "Ptolemaic",
         "Dynasty",
-        "King",
-        "Ptolemaic"
+        "King"
       ],
       "type": "political"
     },
@@ -588,9 +588,9 @@
       "name_ru": "Начало Великого Фиванского восстания",
       "source": "https://en.wikipedia.org/wiki/Great_Theban_Revolt",
       "tags": [
-        "Rebellion",
+        "Egypt",
         "Ptolemaic",
-        "Egypt"
+        "Rebellion"
       ],
       "type": "political"
     },
@@ -605,12 +605,12 @@
       "name_ru": "Птолемей V становится царём-ребёнком",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_V_Epiphanes",
       "tags": [
+        "Greek",
+        "Egypt",
         "Ptolemaic",
         "Dynasty",
         "King",
-        "Crisis",
-        "Greek",
-        "Egypt"
+        "Crisis"
       ],
       "type": "political"
     },
@@ -625,13 +625,13 @@
       "name_ru": "Расцвет Александрийской библиотеки",
       "source": "https://en.wikipedia.org/wiki/Library_of_Alexandria",
       "tags": [
-        "Ptolemaic",
-        "Library",
-        "Culture",
-        "Science",
-        "Golden Age",
         "Greek",
-        "Egypt"
+        "Egypt",
+        "Ptolemaic",
+        "Culture",
+        "Golden Age",
+        "Library",
+        "Science"
       ],
       "type": "cultural"
     },
@@ -648,8 +648,8 @@
       "tags": [
         "Greek",
         "Egypt",
-        "Culture",
         "Ptolemaic",
+        "Culture",
         "Writing"
       ],
       "type": "cultural"
@@ -667,12 +667,12 @@
       "tags": [
         "Greek",
         "Egypt",
-        "Diplomacy",
         "Ptolemaic",
         "Seleucid",
+        "War",
+        "Diplomacy",
         "Marriage",
-        "Syrian Wars",
-        "War"
+        "Syrian Wars"
       ],
       "type": "political"
     },
@@ -687,33 +687,12 @@
       "name_ru": "Конец Великого Фиванского восстания",
       "source": "https://en.wikipedia.org/wiki/Great_Theban_Revolt",
       "tags": [
-        "Egypt",
-        "Rebellion",
-        "Ptolemaic",
-        "Greek"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0180",
-      "description": "The cult of Isis spread throughout the Mediterranean from Egypt; temples to Isis were built in Greece, Rome, and throughout the Hellenistic world. Isis protects women, mothers, and sailors, offering her followers a hope of immortality and personal protection that is unusual among Greek gods.",
-      "description_ru": "Культ Исиды распространяется по всему Средиземноморью из Египта; храмы Исиды строятся в Греции, Риме и по всему эллинистическому миру. Исида защищает женщин, матерей и мореходов, предлагает своим последователям нетипичную для греческих богов надежду на бессмертие и личную защиту.",
-      "era": "BC",
-      "latitude": 31.1819,
-      "longitude": 29.8969,
-      "name": "Spread of Isis Cult Throughout Mediterranean",
-      "name_ru": "Распространение культа Исиды по Средиземноморью",
-      "source": "https://en.wikipedia.org/wiki/Isis",
-      "tags": [
-        "Ptolemaic",
-        "Syncretism",
         "Greek",
         "Egypt",
-        "Religious",
-        "Culture",
-        "Mother of God"
+        "Ptolemaic",
+        "Rebellion"
       ],
-      "type": "religious"
+      "type": "military"
     },
     {
       "date": "01.01.0180",
@@ -727,14 +706,35 @@
       "source": "https://en.wikipedia.org/wiki/Ptolemy_V_Epiphanes",
       "tags": [
         "Greek",
-        "Dynasty",
-        "Death",
+        "Egypt",
         "Ptolemaic",
         "Seleucid",
-        "Egypt",
+        "Dynasty",
+        "Death",
         "Regency"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0180",
+      "description": "The cult of Isis spread throughout the Mediterranean from Egypt; temples to Isis were built in Greece, Rome, and throughout the Hellenistic world. Isis protects women, mothers, and sailors, offering her followers a hope of immortality and personal protection that is unusual among Greek gods.",
+      "description_ru": "Культ Исиды распространяется по всему Средиземноморью из Египта; храмы Исиды строятся в Греции, Риме и по всему эллинистическому миру. Исида защищает женщин, матерей и мореходов, предлагает своим последователям нетипичную для греческих богов надежду на бессмертие и личную защиту.",
+      "era": "BC",
+      "latitude": 31.1819,
+      "longitude": 29.8969,
+      "name": "Spread of Isis Cult Throughout Mediterranean",
+      "name_ru": "Распространение культа Исиды по Средиземноморью",
+      "source": "https://en.wikipedia.org/wiki/Isis",
+      "tags": [
+        "Greek",
+        "Egypt",
+        "Ptolemaic",
+        "Culture",
+        "Mother of God",
+        "Religious",
+        "Syncretism"
+      ],
+      "type": "religious"
     },
     {
       "date": "01.01.0150",
@@ -747,31 +747,11 @@
       "name_ru": "Первая теория гелиоцентризма",
       "source": "https://en.wikipedia.org/wiki/Aristarchus_of_Samos",
       "tags": [
-        "Ptolemaic",
-        "Science",
-        "Astronomy",
         "Greek",
-        "Egypt"
-      ],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.0150",
-      "description": "Hipparchus of Nicaea creates the first comprehensive star catalog at Alexandria, recording the positions of over 850 stars; he discovers the precession of equinoxes and develops trigonometry",
-      "description_ru": "Гиппарх Никейский создаёт первый всеобъемлющий звёздный каталог в Александрии, фиксируя положения более 850 звёзд; он открывает прецессию равноденствий и развивает тригонометрию",
-      "era": "BC",
-      "latitude": 31.2,
-      "longitude": 29.9,
-      "name": "Hipparchus Creates Star Catalog",
-      "name_ru": "Звёздный каталог Гиппарха",
-      "source": "https://en.wikipedia.org/wiki/Hipparchus",
-      "tags": [
+        "Egypt",
         "Ptolemaic",
-        "Science",
         "Astronomy",
-        "Mathematics",
-        "Greek",
-        "Egypt"
+        "Science"
       ],
       "type": "scientific"
     },
@@ -786,14 +766,34 @@
       "name_ru": "Чистка Александрии Птолемеем VIII",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_VIII_Physcon",
       "tags": [
+        "Greek",
+        "Egypt",
         "Ptolemaic",
         "Dynasty",
         "Crisis",
-        "Persecution",
-        "Greek",
-        "Egypt"
+        "Persecution"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0129",
+      "description": "Hipparchus of Nicaea creates the first comprehensive star catalog in his laboratory on the island of Rhodes, recording the positions of over 850 stars; he discovers the precession of the equinoxes and develops trigonometry",
+      "description_ru": "Гиппарх Никейский создаёт первый всеобъемлющий звёздный каталог в своей лаборатории на острове Родос, фиксируя положения более 850 звёзд; он открывает прецессию равноденствий и развивает тригонометрию",
+      "era": "BC",
+      "latitude": 36.44327674,
+      "longitude": 28.2259798,
+      "name": "Hipparchus Creates Star Catalog",
+      "name_ru": "Звёздный каталог Гиппарха",
+      "source": "https://en.wikipedia.org/wiki/Hipparchus",
+      "tags": [
+        "Greek",
+        "Egypt",
+        "Ptolemaic",
+        "Astronomy",
+        "Mathematics",
+        "Science"
+      ],
+      "type": "scientific"
     },
     {
       "date": "01.01.0116",
@@ -806,11 +806,11 @@
       "name_ru": "Смерть Птолемея VIII",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_VIII_Physcon",
       "tags": [
-        "Ptolemaic",
-        "Death",
-        "Dynasty",
+        "Greek",
         "Egypt",
-        "Greek"
+        "Ptolemaic",
+        "Dynasty",
+        "Death"
       ],
       "type": "political"
     },
@@ -825,12 +825,12 @@
       "name_ru": "Птолемей IX изгнан на Кипр",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_IX_Lathyros",
       "tags": [
+        "Greek",
         "Ptolemaic",
         "Civil War",
-        "Exile",
-        "Cyprus",
         "Dynasty",
-        "Greek"
+        "Cyprus",
+        "Exile"
       ],
       "type": "political"
     },
@@ -847,9 +847,9 @@
       "tags": [
         "Greek",
         "Egypt",
+        "Ptolemaic",
         "Dynasty",
-        "King",
-        "Ptolemaic"
+        "King"
       ],
       "type": "political"
     },
@@ -865,12 +865,12 @@
       "source": "https://en.wikipedia.org/wiki/Ptolemy_XI_Alexander_II",
       "tags": [
         "Greek",
-        "Ptolemaic",
-        "Murder",
-        "Crisis",
-        "Dynasty",
         "Egypt",
-        "Lynching"
+        "Ptolemaic",
+        "Dynasty",
+        "Crisis",
+        "Lynching",
+        "Murder"
       ],
       "type": "political"
     },
@@ -887,12 +887,12 @@
       "tags": [
         "Greek",
         "Roman",
-        "Julius Caesar 👤",
         "Egypt",
         "Ptolemaic",
-        "Pompey the Great 👤",
+        "Bribe",
         "Debt",
-        "Bribe"
+        "Julius Caesar 👤",
+        "Pompey the Great 👤"
       ],
       "type": "political"
     },
@@ -907,12 +907,12 @@
       "name_ru": "Рим аннексирует Кипр",
       "source": "https://en.wikipedia.org/wiki/Roman_annexation_of_Cyprus",
       "tags": [
-        "Roman",
-        "Annexation",
-        "Cyprus",
         "Greek",
+        "Roman",
+        "Egypt",
         "Ptolemaic",
-        "Egypt"
+        "Annexation",
+        "Cyprus"
       ],
       "type": "political"
     },
@@ -927,13 +927,13 @@
       "name_ru": "Достроен Храм Хора в Эдфу",
       "source": "https://en.wikipedia.org/wiki/Temple_of_Edfu",
       "tags": [
-        "Temple",
-        "Architecture",
-        "Ptolemaic",
-        "Religious",
-        "Building 🏠",
+        "Greek",
         "Egypt",
-        "Greek"
+        "Ptolemaic",
+        "Building 🏠",
+        "Architecture",
+        "Religious",
+        "Temple"
       ],
       "type": "cultural"
     },
@@ -948,14 +948,14 @@
       "name_ru": "Птолемей XII - наместник Рима",
       "source": "https://en.wikipedia.org/wiki/Ptolemy_XII_Auletes",
       "tags": [
+        "Greek",
+        "Roman",
+        "Egypt",
+        "Ptolemaic",
         "Cleopatra VII 👑",
         "Mark Antony 👤",
-        "Roman",
         "Pompey the Great 👤",
-        "Vassalage",
-        "Greek",
-        "Egypt",
-        "Ptolemaic"
+        "Vassalage"
       ],
       "type": "political"
     },
@@ -970,11 +970,11 @@
       "name_ru": "Клеопатра VII - царица Египта",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
       "tags": [
-        "Cleopatra VII 👑",
-        "Dynasty",
-        "Ptolemaic",
         "Greek",
-        "Egypt"
+        "Egypt",
+        "Ptolemaic",
+        "Dynasty",
+        "Cleopatra VII 👑"
       ],
       "type": "political"
     },
@@ -990,12 +990,12 @@
       "source": "https://en.wikipedia.org/wiki/Siege_of_Alexandria_(47_BC)",
       "tags": [
         "Roman",
-        "Julius Caesar 👤",
         "Egypt",
-        "Siege",
         "Ptolemaic",
+        "Civil War",
         "Cleopatra VII 👑",
-        "Civil War"
+        "Julius Caesar 👤",
+        "Siege"
       ],
       "type": "military"
     },
@@ -1010,11 +1010,11 @@
       "name_ru": "Клеопатра встречает Юлия Цезаря",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
       "tags": [
-        "Cleopatra VII 👑",
-        "Ptolemaic",
-        "Julius Caesar 👤",
+        "Roman",
         "Egypt",
-        "Roman"
+        "Ptolemaic",
+        "Cleopatra VII 👑",
+        "Julius Caesar 👤"
       ],
       "type": "political"
     },
@@ -1029,12 +1029,12 @@
       "name_ru": "Убийство Помпея в Египте",
       "source": "https://en.wikipedia.org/wiki/Pompey",
       "tags": [
-        "Murder",
-        "Egypt",
         "Roman",
-        "Pompey the Great 👤",
+        "Egypt",
         "Ptolemaic",
-        "Civil War"
+        "Civil War",
+        "Murder",
+        "Pompey the Great 👤"
       ],
       "type": "political"
     },
@@ -1049,12 +1049,12 @@
       "name_ru": "Клеопатра VII изгнана из Александрии",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
       "tags": [
-        "Exile",
-        "Cleopatra VII 👑",
+        "Greek",
+        "Egypt",
         "Ptolemaic",
         "Civil War",
-        "Greek",
-        "Egypt"
+        "Cleopatra VII 👑",
+        "Exile"
       ],
       "type": "political"
     },
@@ -1070,11 +1070,11 @@
       "source": "https://en.wikipedia.org/wiki/Caesarion",
       "tags": [
         "Roman",
+        "Egypt",
         "Ptolemaic",
         "Dynasty",
-        "Cleopatra VII 👑",
-        "Egypt",
-        "Birth"
+        "Birth",
+        "Cleopatra VII 👑"
       ],
       "type": "political"
     },
@@ -1090,14 +1090,14 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Nile_(47_BC)",
       "tags": [
         "Roman",
-        "Julius Caesar 👤",
         "Egypt",
-        "Battle",
-        "Death",
-        "Ptolemaic",
-        "Cleopatra VII 👑",
         "Pergamon",
-        "Civil War"
+        "Ptolemaic",
+        "Civil War",
+        "Battle",
+        "Cleopatra VII 👑",
+        "Death",
+        "Julius Caesar 👤"
       ],
       "type": "military"
     },
@@ -1112,11 +1112,11 @@
       "name_ru": "Переезд Клеопатры VII в Рим",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
       "tags": [
-        "Cleopatra VII 👑",
+        "Roman",
         "Ptolemaic",
-        "Julius Caesar 👤",
         "Diplomacy",
-        "Roman"
+        "Cleopatra VII 👑",
+        "Julius Caesar 👤"
       ],
       "type": "political"
     },
@@ -1132,12 +1132,12 @@
       "source": "https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar",
       "tags": [
         "Roman",
-        "Julius Caesar 👤",
-        "Crisis",
         "Assassination",
         "Conspiracy",
-        "Senate",
-        "Mark Antony 👤"
+        "Crisis",
+        "Julius Caesar 👤",
+        "Mark Antony 👤",
+        "Senate"
       ],
       "type": "political"
     },
@@ -1153,11 +1153,11 @@
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
       "tags": [
         "Roman",
-        "Mark Antony 👤",
-        "Ptolemaic",
         "Egypt",
+        "Ptolemaic",
+        "Diplomacy",
         "Cleopatra VII 👑",
-        "Diplomacy"
+        "Mark Antony 👤"
       ],
       "type": "political"
     },
@@ -1174,10 +1174,10 @@
       "tags": [
         "Roman",
         "Egypt",
-        "Dynasty",
         "Ptolemaic",
-        "Cleopatra VII 👑",
-        "Birth"
+        "Dynasty",
+        "Birth",
+        "Cleopatra VII 👑"
       ],
       "type": "political"
     },
@@ -1192,12 +1192,12 @@
       "name_ru": "Брак Антония и Клеопатры",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
       "tags": [
-        "Mark Antony 👤",
-        "Marriage",
+        "Roman",
         "Egypt",
         "Ptolemaic",
-        "Roman",
-        "Cleopatra VII 👑"
+        "Marriage",
+        "Cleopatra VII 👑",
+        "Mark Antony 👤"
       ],
       "type": "political"
     },
@@ -1215,8 +1215,8 @@
         "Roman",
         "Egypt",
         "Ptolemaic",
-        "Mark Antony 👤",
         "Cleopatra VII 👑",
+        "Mark Antony 👤",
         "Octavian 👑"
       ],
       "type": "political"
@@ -1232,10 +1232,10 @@
       "name_ru": "Октавиан объявляет войну Клеопатре",
       "source": "https://en.wikipedia.org/wiki/Final_War_of_the_Roman_Republic",
       "tags": [
-        "Egypt",
-        "Civil War",
-        "Ptolemaic",
         "Roman",
+        "Egypt",
+        "Ptolemaic",
+        "Civil War",
         "Cleopatra VII 👑",
         "Octavian 👑"
       ],
@@ -1253,13 +1253,13 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Actium",
       "tags": [
         "Roman",
-        "Battle",
         "Egypt",
-        "Naval",
-        "Civil War",
         "Ptolemaic",
-        "Mark Antony 👤",
+        "Civil War",
+        "Battle",
         "Cleopatra VII 👑",
+        "Mark Antony 👤",
+        "Naval",
         "Tactics"
       ],
       "type": "military"
@@ -1275,12 +1275,12 @@
       "name_ru": "Октавиан казнит Цезариона",
       "source": "https://en.wikipedia.org/wiki/Caesarion",
       "tags": [
-        "Dynasty",
-        "Egypt",
-        "Fall",
         "Roman",
+        "Egypt",
+        "Ptolemaic",
+        "Dynasty",
         "Execution",
-        "Ptolemaic"
+        "Fall"
       ],
       "type": "political"
     },
@@ -1295,12 +1295,12 @@
       "name_ru": "Самоубийство Клеопатры",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
       "tags": [
-        "Cleopatra VII 👑",
+        "Egypt",
         "Ptolemaic",
+        "Cleopatra VII 👑",
         "Death",
         "Fall",
-        "Suicide",
-        "Egypt"
+        "Suicide"
       ],
       "type": "political"
     },
@@ -1315,13 +1315,13 @@
       "name_ru": "Падение Александрии перед Римом",
       "source": "https://en.wikipedia.org/wiki/Cleopatra",
       "tags": [
-        "Civil War",
         "Roman",
-        "Suicide",
-        "Ptolemaic",
-        "Conquest",
         "Egypt",
-        "Octavian 👑"
+        "Ptolemaic",
+        "Civil War",
+        "Conquest",
+        "Octavian 👑",
+        "Suicide"
       ],
       "type": "military"
     }

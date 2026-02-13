@@ -13,13 +13,13 @@
       "source": "https://en.wikipedia.org/wiki/Seleucid_Empire",
       "tags": [
         "Greek",
-        "Seleucus I 👑",
-        "Conquest",
-        "War",
         "Macedonian",
         "Seleucid",
+        "Diadochi",
+        "War",
+        "Conquest",
         "Foundation",
-        "Diadochi"
+        "Seleucus I 👑"
       ],
       "type": "political"
     },
@@ -34,12 +34,12 @@
       "name_ru": "Основание Селевкии-на-Тигре",
       "source": "https://en.wikipedia.org/wiki/Seleucia",
       "tags": [
-        "Seleucus I 👑",
-        "Capital",
-        "Administration",
-        "Seleucid",
         "Greek",
-        "City"
+        "Seleucid",
+        "City",
+        "Administration",
+        "Capital",
+        "Seleucus I 👑"
       ],
       "type": "historic"
     },
@@ -54,14 +54,14 @@
       "name_ru": "Селевко-маурийский мирный договор",
       "source": "https://en.wikipedia.org/wiki/Seleucid%E2%80%93Mauryan_war",
       "tags": [
-        "Diplomacy",
-        "Seleucus I 👑",
-        "Marriage",
-        "Peace",
         "Greek",
         "Indian",
         "Seleucid",
-        "War"
+        "War",
+        "Diplomacy",
+        "Marriage",
+        "Peace",
+        "Seleucus I 👑"
       ],
       "type": "political"
     },
@@ -76,37 +76,18 @@
       "name_ru": "Битва при Ипсе во Фригии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Ipsus",
       "tags": [
-        "Seleucus I 👑",
-        "Death",
-        "Syria",
-        "War",
         "Greek",
-        "Anatolia",
         "Macedonian",
-        "Battle",
         "Seleucid",
-        "Diadochi"
+        "Diadochi",
+        "War",
+        "Battle",
+        "Anatolia",
+        "Death",
+        "Seleucus I 👑",
+        "Syria"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0300",
-      "description": "Seleucus I founds Antioch on the Orontes River, naming it after his father Antiochus; the city becomes the western capital and eventually the primary seat of Seleucid power, growing into one of the greatest cities of antiquity",
-      "description_ru": "Селевк I основывает Антиохию на реке Оронт, назвав её в честь своего отца Антиоха; город становится западной столицей и со временем главной резиденцией Селевкидов, превращаясь в один из величайших городов древности",
-      "era": "BC",
-      "latitude": 36.2034,
-      "longitude": 36.1639,
-      "name": "Foundation of Antioch",
-      "name_ru": "Основание Антиохии Селевком",
-      "source": "https://en.wikipedia.org/wiki/Antioch",
-      "tags": [
-        "Capital",
-        "Seleucid",
-        "City",
-        "Greek",
-        "Seleucus I 👑"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0300",
@@ -127,6 +108,25 @@
       "type": "historic"
     },
     {
+      "date": "01.01.0300",
+      "description": "Seleucus I founds Antioch on the Orontes River, naming it after his father Antiochus; the city becomes the western capital and eventually the primary seat of Seleucid power, growing into one of the greatest cities of antiquity",
+      "description_ru": "Селевк I основывает Антиохию на реке Оронт, назвав её в честь своего отца Антиоха; город становится западной столицей и со временем главной резиденцией Селевкидов, превращаясь в один из величайших городов древности",
+      "era": "BC",
+      "latitude": 36.2034,
+      "longitude": 36.1639,
+      "name": "Foundation of Antioch",
+      "name_ru": "Основание Антиохии Селевком",
+      "source": "https://en.wikipedia.org/wiki/Antioch",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "City",
+        "Capital",
+        "Seleucus I 👑"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.09.0281",
       "description": "Seleucus I Nicator assassinated by Ptolemy Ceraunus while crossing into Europe to claim Macedonia; the founder of the Seleucid dynasty dies just months after his greatest victory, never reaching his ancestral homeland",
       "description_ru": "Селевк I Никатор убит Птолемеем Керавном при переправе в Европу для захвата Македонии; основатель династии Селевкидов погибает через несколько месяцев после своей величайшей победы, так и не достигнув родины предков",
@@ -137,14 +137,14 @@
       "name_ru": "Убийство Селевка I Птолемеем",
       "source": "https://en.wikipedia.org/wiki/Seleucus_I_Nicator",
       "tags": [
-        "Assassination",
-        "Seleucid",
         "Greek",
-        "War",
         "Ptolemaic",
+        "Seleucid",
+        "Diadochi",
+        "War",
+        "Assassination",
         "Death",
-        "Seleucus I 👑",
-        "Diadochi"
+        "Seleucus I 👑"
       ],
       "type": "political"
     },
@@ -159,15 +159,15 @@
       "name_ru": "Битва при Курупедионе",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Corupedium",
       "tags": [
-        "Conquest",
-        "War",
-        "Seleucid",
-        "Battle",
-        "Seleucus I 👑",
         "Greek",
         "Macedonian",
+        "Seleucid",
+        "Diadochi",
+        "War",
+        "Battle",
+        "Conquest",
         "Death",
-        "Diadochi"
+        "Seleucus I 👑"
       ],
       "type": "military"
     },
@@ -182,10 +182,10 @@
       "name_ru": "Антиох I Сотер - царь Селевкидов",
       "source": "https://en.wikipedia.org/wiki/Antiochus_I_Soter",
       "tags": [
-        "King",
-        "Seleucid",
         "Greek",
-        "Dynasty"
+        "Seleucid",
+        "Dynasty",
+        "King"
       ],
       "type": "political"
     },
@@ -200,12 +200,12 @@
       "name_ru": "Слоновья победа над галатами",
       "source": "https://en.wikipedia.org/wiki/Antiochus_I_Soter",
       "tags": [
-        "Celtic",
-        "Battle",
         "Greek",
+        "Celtic",
         "Seleucid",
-        "Savior",
-        "War"
+        "War",
+        "Battle",
+        "Savior"
       ],
       "type": "military"
     },
@@ -221,11 +221,11 @@
       "source": "https://en.wikipedia.org/wiki/Syrian_Wars",
       "tags": [
         "Greek",
-        "Syrian Wars",
-        "Seleucid",
         "Egypt",
         "Ptolemaic",
-        "War"
+        "Seleucid",
+        "War",
+        "Syrian Wars"
       ],
       "type": "military"
     },
@@ -242,10 +242,10 @@
       "tags": [
         "Greek",
         "Egypt",
-        "Seleucid",
         "Ptolemaic",
-        "Syrian Wars",
-        "War"
+        "Seleucid",
+        "War",
+        "Syrian Wars"
       ],
       "type": "military"
     },
@@ -260,10 +260,10 @@
       "name_ru": "Антиох II Теос - царь Селевкидов",
       "source": "https://en.wikipedia.org/wiki/Antiochus_II_Theos",
       "tags": [
-        "King",
         "Greek",
         "Seleucid",
-        "Dynasty"
+        "Dynasty",
+        "King"
       ],
       "type": "political"
     },
@@ -278,13 +278,13 @@
       "name_ru": "Вторая война Птолемеев и Селевкидов",
       "source": "https://en.wikipedia.org/wiki/Second_Syrian_War",
       "tags": [
-        "Ptolemaic",
-        "Syrian Wars",
         "Greek",
-        "Macedonian",
         "Egypt",
+        "Macedonian",
+        "Ptolemaic",
         "Seleucid",
-        "War"
+        "War",
+        "Syrian Wars"
       ],
       "type": "military"
     },
@@ -299,14 +299,14 @@
       "name_ru": "Конец второй Сирийской войны",
       "source": "https://en.wikipedia.org/wiki/Antiochus_II_Theos",
       "tags": [
-        "Diplomacy",
         "Greek",
         "Ptolemaic",
-        "Marriage",
         "Seleucid",
+        "War",
+        "Diplomacy",
+        "Marriage",
         "Peace",
-        "Syrian Wars",
-        "War"
+        "Syrian Wars"
       ],
       "type": "political"
     },
@@ -321,12 +321,12 @@
       "name_ru": "Независимость Бактрии от Селевкидов",
       "source": "https://en.wikipedia.org/wiki/Greco-Bactrian_Kingdom",
       "tags": [
-        "Decline",
         "Greek",
         "Seleucid",
-        "Rebellion",
+        "Decline",
+        "Greco-Bactria",
         "Independence",
-        "Greco-Bactria"
+        "Rebellion"
       ],
       "type": "political"
     },
@@ -341,13 +341,13 @@
       "name_ru": "Основание Парфянской империи",
       "source": "https://en.wikipedia.org/wiki/Arsaces_I_of_Parthia",
       "tags": [
-        "Arsacid",
-        "Conquest",
-        "Dynasty",
-        "Seleucid",
         "Parthian",
-        "Rebellion",
-        "War"
+        "Arsacid",
+        "Seleucid",
+        "War",
+        "Dynasty",
+        "Conquest",
+        "Rebellion"
       ],
       "type": "political"
     },
@@ -362,12 +362,12 @@
       "name_ru": "Третья Сирийская война",
       "source": "https://en.wikipedia.org/wiki/Third_Syrian_War",
       "tags": [
+        "Greek",
+        "Egypt",
         "Ptolemaic",
         "Seleucid",
-        "Egypt",
-        "Greek",
-        "Syrian Wars",
-        "War"
+        "War",
+        "Syrian Wars"
       ],
       "type": "military"
     },
@@ -382,12 +382,12 @@
       "name_ru": "Лаодика захватывает власть Селевкидов",
       "tags": [
         "Greek",
-        "Seleucid",
-        "Overthrow",
-        "Assassination",
-        "Syrian Wars",
         "Ptolemaic",
-        "War"
+        "Seleucid",
+        "War",
+        "Assassination",
+        "Overthrow",
+        "Syrian Wars"
       ],
       "type": "political"
     },
@@ -402,11 +402,11 @@
       "name_ru": "Внезапная смерть Антиоха II",
       "source": "https://en.wikipedia.org/wiki/Antiochus_II_Theos",
       "tags": [
-        "Death",
-        "Assassination",
         "Greek",
         "Seleucid",
-        "Crisis"
+        "Assassination",
+        "Crisis",
+        "Death"
       ],
       "type": "political"
     },
@@ -422,13 +422,13 @@
       "source": "https://en.wikipedia.org/wiki/Third_Syrian_War",
       "tags": [
         "Greek",
-        "Seleucid",
-        "Decline",
-        "Peace",
         "Egypt",
         "Ptolemaic",
-        "Syrian Wars",
-        "War"
+        "Seleucid",
+        "War",
+        "Decline",
+        "Peace",
+        "Syrian Wars"
       ],
       "type": "military"
     },
@@ -443,10 +443,10 @@
       "name_ru": "Война братьев",
       "source": "https://en.wikipedia.org/wiki/Seleucid_dynasty",
       "tags": [
-        "Seleucid",
-        "Crisis",
         "Greek",
-        "Civil War"
+        "Seleucid",
+        "Civil War",
+        "Crisis"
       ],
       "type": "military"
     },
@@ -461,10 +461,10 @@
       "name_ru": "Начало правления Антиоха III Великого",
       "source": "https://en.wikipedia.org/wiki/Antiochus_III_the_Great",
       "tags": [
-        "Seleucid",
         "Greek",
-        "Antiochus III 👑",
-        "King"
+        "Seleucid",
+        "King",
+        "Antiochus III 👑"
       ],
       "type": "political"
     },
@@ -479,10 +479,10 @@
       "name_ru": "Подавление восстания Молона",
       "source": "https://en.wikipedia.org/wiki/Molon",
       "tags": [
-        "Seleucid",
         "Greek",
-        "Rebellion",
-        "Antiochus III 👑"
+        "Seleucid",
+        "Antiochus III 👑",
+        "Rebellion"
       ],
       "type": "military"
     },
@@ -497,14 +497,14 @@
       "name_ru": "Четвёртая Сирийская война",
       "source": "https://en.wikipedia.org/wiki/Fourth_Syrian_War",
       "tags": [
-        "Egypt",
-        "Palestine",
         "Greek",
-        "Seleucid",
-        "Antiochus III 👑",
+        "Egypt",
         "Ptolemaic",
-        "Syrian Wars",
-        "War"
+        "Seleucid",
+        "War",
+        "Antiochus III 👑",
+        "Palestine",
+        "Syrian Wars"
       ],
       "type": "military"
     },
@@ -519,15 +519,15 @@
       "name_ru": "Победа Птолемея при Рафии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Raphia",
       "tags": [
-        "Syrian Wars",
-        "Antiochus III 👑",
-        "Egypt",
         "Greek",
-        "Seleucid",
-        "Palestine",
+        "Egypt",
         "Ptolemaic",
+        "Seleucid",
+        "War",
         "Battle",
-        "War"
+        "Antiochus III 👑",
+        "Palestine",
+        "Syrian Wars"
       ],
       "type": "military"
     },
@@ -543,10 +543,10 @@
       "source": "https://en.wikipedia.org/wiki/Antiochus_III_the_Great",
       "tags": [
         "Greek",
-        "Expedition",
-        "Conquest",
         "Seleucid",
-        "Antiochus III 👑"
+        "Antiochus III 👑",
+        "Conquest",
+        "Expedition"
       ],
       "type": "military"
     },
@@ -564,10 +564,10 @@
         "Greek",
         "Parthian",
         "Seleucid",
+        "War",
         "Antiochus III 👑",
-        "Vassalage",
         "Conquest",
-        "War"
+        "Vassalage"
       ],
       "type": "military"
     },
@@ -582,14 +582,14 @@
       "name_ru": "Битва на реке Арий",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Arius",
       "tags": [
-        "Antiochus III 👑",
-        "Greco-Bactria",
-        "Seleucid",
-        "Battle",
         "Greek",
+        "Seleucid",
+        "War",
+        "Battle",
+        "Antiochus III 👑",
         "Conquest",
-        "Tactics",
-        "War"
+        "Greco-Bactria",
+        "Tactics"
       ],
       "type": "military"
     },
@@ -604,14 +604,14 @@
       "name_ru": "Селевко-бактрийский мир",
       "source": "https://en.wikipedia.org/wiki/Antiochus_III_the_Great",
       "tags": [
-        "Vassalage",
-        "Seleucid",
-        "Diplomacy",
-        "Peace",
-        "Marriage",
         "Greek",
+        "Seleucid",
+        "War",
+        "Diplomacy",
+        "Marriage",
         "Greco-Bactria",
-        "War"
+        "Peace",
+        "Vassalage"
       ],
       "type": "political"
     },
@@ -628,10 +628,10 @@
       "tags": [
         "Greek",
         "Indian",
-        "Diplomacy",
-        "Expedition",
         "Seleucid",
-        "Antiochus III 👑"
+        "Diplomacy",
+        "Antiochus III 👑",
+        "Expedition"
       ],
       "type": "political"
     },
@@ -646,10 +646,10 @@
       "name_ru": "Антиох III получает титул 'Великий'",
       "source": "https://en.wikipedia.org/wiki/Antiochus_III_the_Great",
       "tags": [
-        "Antiochus III 👑",
-        "King",
-        "Seleucid",
         "Greek",
+        "Seleucid",
+        "King",
+        "Antiochus III 👑",
         "Golden Age"
       ],
       "type": "political"
@@ -665,15 +665,15 @@
       "name_ru": "Пятая Сирийская война",
       "source": "https://en.wikipedia.org/wiki/Fifth_Syrian_War",
       "tags": [
-        "Syrian Wars",
-        "Antiochus III 👑",
-        "Seleucid",
-        "Macedonian",
         "Greek",
+        "Macedonian",
         "Ptolemaic",
+        "Seleucid",
+        "War",
         "Alliance",
+        "Antiochus III 👑",
         "Conspiracy",
-        "War"
+        "Syrian Wars"
       ],
       "type": "military"
     },
@@ -688,16 +688,16 @@
       "name_ru": "Битва при Панионе",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Panium",
       "tags": [
-        "Conquest",
-        "Antiochus III 👑",
         "Greek",
-        "Battle",
+        "Egypt",
         "Ptolemaic",
         "Seleucid",
+        "War",
+        "Battle",
+        "Antiochus III 👑",
+        "Conquest",
         "Palestine",
-        "Syrian Wars",
-        "Egypt",
-        "War"
+        "Syrian Wars"
       ],
       "type": "military"
     },
@@ -713,13 +713,13 @@
       "source": "https://en.wikipedia.org/wiki/Fifth_Syrian_War",
       "tags": [
         "Greek",
-        "Syrian Wars",
-        "Jerusalem",
         "Israel",
-        "Palestine",
-        "Conquest",
+        "Jerusalem",
         "Seleucid",
-        "War"
+        "War",
+        "Conquest",
+        "Palestine",
+        "Syrian Wars"
       ],
       "type": "political"
     },
@@ -734,13 +734,13 @@
       "name_ru": "Антиох III вторгается в Грецию",
       "source": "https://en.wikipedia.org/wiki/Roman%E2%80%93Seleucid_War",
       "tags": [
-        "Macedonian",
-        "Antiochus III 👑",
-        "Roman",
         "Greek",
+        "Roman",
+        "Macedonian",
         "Seleucid",
+        "War",
         "Alliance",
-        "War"
+        "Antiochus III 👑"
       ],
       "type": "military"
     },
@@ -755,19 +755,19 @@
       "name_ru": "Битва при Фермопилах (191 до н.э.)",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Thermopylae_(191_BC)",
       "tags": [
-        "Seleucid",
         "Greek",
         "Roman",
-        "Antiochus III 👑",
+        "Seleucid",
+        "War",
         "Battle",
-        "War"
+        "Antiochus III 👑"
       ],
       "type": "military"
     },
     {
       "date": "15.12.0190",
-      "description": "Battle of Magnesia near Smyrna; Roman and Pergamene forces under Scipio Asiaticus crush Antiochus III's army of 70,000 in the decisive battle of the war. Seleucid power west of the Taurus Mountains is destroyed forever",
-      "description_ru": "Сражение римлян и Селевкидов при Магнесии близ Смирны; римские и пергамские силы под командованием Сципиона Азиатского разгромляют 70-тысячную армию Антиоха III в решающем сражении войны. Власть Селевкидов к западу от Таврских гор уничтожена навсегда",
+      "description": "Roman and Pergamene forces under the command of Scipio Asiaticus (brother of Scipio Africanus) defeat the 70,000-strong army of Antiochus III. The Pergamene cavalry played a decisive role in the battle. The Seleucid power west of the Taurus Mountains is destroyed forever.",
+      "description_ru": "Римские и пергамские силы под командованием Сципиона Азиатского (брата Сципиона Африканского) громят 70-тысячную армию Антиоха III. Пергамская кавалерия сыграла решающую роль в сражении. Власть Селевкидов к западу от Таврских гор уничтожена навсегда",
       "era": "BC",
       "latitude": 38.63,
       "longitude": 27.4,
@@ -775,14 +775,14 @@
       "name_ru": "Битва при Магнесии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Magnesia",
       "tags": [
-        "Battle",
-        "Pergamon",
-        "Roman",
         "Greek",
-        "Antiochus III 👑",
-        "Scipio 👤",
+        "Roman",
+        "Pergamon",
         "Seleucid",
-        "War"
+        "War",
+        "Battle",
+        "Antiochus III 👑",
+        "Scipio 👤"
       ],
       "type": "military"
     },
@@ -797,16 +797,16 @@
       "name_ru": "Апамейский мир Рима и Селевкидов",
       "source": "https://en.wikipedia.org/wiki/Treaty_of_Apamea",
       "tags": [
-        "Peace",
+        "Greek",
         "Roman",
+        "Seleucid",
+        "War",
         "Diplomacy",
         "Antiochus III 👑",
-        "Hannibal 👤",
-        "Treaty",
         "Contribution",
-        "Greek",
-        "Seleucid",
-        "War"
+        "Hannibal 👤",
+        "Peace",
+        "Treaty"
       ],
       "type": "political"
     },
@@ -823,10 +823,10 @@
       "tags": [
         "Greek",
         "Seleucid",
-        "Death",
-        "Plundering",
         "Antiochus III 👑",
-        "Murder"
+        "Death",
+        "Murder",
+        "Plundering"
       ],
       "type": "political"
     },
@@ -842,8 +842,8 @@
       "source": "https://en.wikipedia.org/wiki/Antiochus_IV_Epiphanes",
       "tags": [
         "Greek",
-        "King",
-        "Seleucid"
+        "Seleucid",
+        "King"
       ],
       "type": "political"
     },
@@ -858,13 +858,13 @@
       "name_ru": "Вторжение Селевкидов в Египет",
       "source": "https://en.wikipedia.org/wiki/Sixth_Syrian_War",
       "tags": [
-        "Syrian Wars",
         "Greek",
-        "Seleucid",
-        "Ptolemaic",
         "Egypt",
+        "Ptolemaic",
+        "Seleucid",
+        "War",
         "Invasions",
-        "War"
+        "Syrian Wars"
       ],
       "type": "military"
     },
@@ -879,14 +879,14 @@
       "name_ru": "Ультиматум Рима Селевкидам в Египте",
       "source": "https://en.wikipedia.org/wiki/Syrian_Wars#Sixth_War",
       "tags": [
-        "Diplomacy",
         "Greek",
-        "Egypt",
-        "Syrian Wars",
-        "Seleucid",
         "Roman",
+        "Egypt",
+        "Seleucid",
+        "War",
+        "Diplomacy",
         "Retreat",
-        "War"
+        "Syrian Wars"
       ],
       "type": "political"
     },
@@ -901,16 +901,16 @@
       "name_ru": "Осквернение Иерусалимского храма",
       "source": "https://en.wikipedia.org/wiki/Antiochus_IV_Epiphanes",
       "tags": [
-        "Jerusalem",
-        "Temple",
-        "Judah",
-        "Religious",
-        "Israel",
-        "Blasphemy",
-        "Seleucid",
         "Greek",
+        "Judah",
+        "Israel",
+        "Jerusalem",
+        "Seleucid",
         "Maccabean",
-        "War"
+        "War",
+        "Blasphemy",
+        "Religious",
+        "Temple"
       ],
       "type": "religious"
     },
@@ -925,14 +925,14 @@
       "name_ru": "Начало Маккавейского восстания",
       "source": "https://en.wikipedia.org/wiki/Maccabean_Revolt",
       "tags": [
-        "Seleucid",
-        "Rebellion",
-        "Religious",
-        "Israel",
-        "Judah",
         "Greek",
+        "Judah",
+        "Israel",
+        "Seleucid",
         "Maccabean",
-        "War"
+        "War",
+        "Rebellion",
+        "Religious"
       ],
       "type": "military"
     },
@@ -947,14 +947,14 @@
       "name_ru": "Битва при Бет-Хороне",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Beth_Horon_(166_BC)",
       "tags": [
-        "Seleucid",
         "Greek",
-        "Ambush",
-        "Battle",
         "Judah",
         "Israel",
+        "Seleucid",
         "Maccabean",
-        "War"
+        "War",
+        "Battle",
+        "Ambush"
       ],
       "type": "military"
     },
@@ -969,16 +969,16 @@
       "name_ru": "Переосвящение Иерусалимского храма (Ханука)",
       "source": "https://en.wikipedia.org/wiki/Hanukkah",
       "tags": [
+        "Greek",
         "Judah",
-        "Holidays",
         "Israel",
         "Jerusalem",
-        "Religious",
-        "Temple",
-        "Greek",
         "Seleucid",
         "Maccabean",
-        "War"
+        "War",
+        "Holidays",
+        "Religious",
+        "Temple"
       ],
       "type": "religious"
     },
@@ -993,13 +993,13 @@
       "name_ru": "Смерть Антиоха IV Эпифана",
       "source": "https://en.wikipedia.org/wiki/Antiochus_IV_Epiphanes",
       "tags": [
-        "Disease",
-        "King",
-        "Seleucid",
-        "Crisis",
         "Greek",
+        "Seleucid",
+        "King",
+        "Crisis",
         "Death",
-        "Decline"
+        "Decline",
+        "Disease"
       ],
       "type": "political"
     },
@@ -1014,13 +1014,13 @@
       "name_ru": "Смерть Иуды Маккавея",
       "source": "https://en.wikipedia.org/wiki/Judas_Maccabeus",
       "tags": [
-        "Seleucid",
-        "Death",
-        "Battle",
-        "Judah",
         "Greek",
+        "Judah",
+        "Seleucid",
         "Maccabean",
-        "War"
+        "War",
+        "Battle",
+        "Death"
       ],
       "type": "military"
     },
@@ -1035,12 +1035,12 @@
       "name_ru": "Парфянское завоевание",
       "source": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia",
       "tags": [
-        "Conquest",
-        "Seleucid",
         "Parthian",
         "Arsacid",
-        "Mithridates I 👑",
-        "War"
+        "Seleucid",
+        "War",
+        "Conquest",
+        "Mithridates I 👑"
       ],
       "type": "military"
     },
@@ -1055,12 +1055,12 @@
       "name_ru": "Достижение иудейской независимости",
       "source": "https://en.wikipedia.org/wiki/Simon_Thassi",
       "tags": [
-        "Seleucid",
-        "Judah",
-        "Independence",
         "Greek",
+        "Judah",
+        "Seleucid",
         "Maccabean",
-        "War"
+        "War",
+        "Independence"
       ],
       "type": "political"
     },
@@ -1075,14 +1075,14 @@
       "name_ru": "Парфяне захватывают Селевкию-на-Тигре",
       "source": "https://en.wikipedia.org/wiki/Seleucia",
       "tags": [
-        "Fall",
-        "Arsacid",
-        "Mithridates I 👑",
         "Parthian",
-        "Conquest",
+        "Arsacid",
         "Seleucid",
+        "War",
         "Capital",
-        "War"
+        "Conquest",
+        "Fall",
+        "Mithridates I 👑"
       ],
       "type": "military"
     },
@@ -1097,10 +1097,10 @@
       "name_ru": "Деметрий II Селевкид захвачен парфянами",
       "source": "https://en.wikipedia.org/wiki/Demetrius_II_Nicator",
       "tags": [
-        "War",
         "Parthian",
-        "King",
         "Seleucid",
+        "War",
+        "King",
         "Hostage"
       ],
       "type": "military"
@@ -1117,8 +1117,8 @@
       "source": "https://en.wikipedia.org/wiki/Antiochus_VII_Sidetes",
       "tags": [
         "Greek",
-        "Seleucid",
         "Parthian",
+        "Seleucid",
         "War",
         "Conquest"
       ],
@@ -1135,14 +1135,14 @@
       "name_ru": "Антиох VII Селевкид гибнет в битве при Экбатане",
       "source": "https://en.wikipedia.org/wiki/Antiochus_VII_Sidetes",
       "tags": [
-        "End",
-        "Arsacid",
-        "Seleucid",
-        "Battle",
-        "Death",
         "Greek",
         "Parthian",
-        "War"
+        "Arsacid",
+        "Seleucid",
+        "War",
+        "Battle",
+        "Death",
+        "End"
       ],
       "type": "military"
     },
@@ -1158,10 +1158,10 @@
       "source": "https://en.wikipedia.org/wiki/Seleucid_Empire",
       "tags": [
         "Greek",
-        "Decline",
         "Seleucid",
+        "Civil War",
         "Crisis",
-        "Civil War"
+        "Decline"
       ],
       "type": "political"
     },
@@ -1177,10 +1177,10 @@
       "source": "https://en.wikipedia.org/wiki/Tigranes_the_Great",
       "tags": [
         "Armenian",
-        "Tigranes the Great 👤",
         "Seleucid",
+        "War",
         "Conquest",
-        "War"
+        "Tigranes the Great 👤"
       ],
       "type": "military"
     },
@@ -1197,10 +1197,10 @@
       "tags": [
         "Greek",
         "Roman",
-        "Crisis",
+        "Armenian",
         "Seleucid",
         "Civil War",
-        "Armenian",
+        "Crisis",
         "Tigranes the Great 👤"
       ],
       "type": "political"
@@ -1217,13 +1217,13 @@
       "source": "https://en.wikipedia.org/wiki/Syria_(Roman_province)",
       "tags": [
         "Greek",
+        "Roman",
+        "Seleucid",
+        "War",
+        "Annexation",
         "Capital",
         "Conquest",
-        "Pompey the Great 👤",
-        "Seleucid",
-        "Roman",
-        "Annexation",
-        "War"
+        "Pompey the Great 👤"
       ],
       "type": "political"
     }
