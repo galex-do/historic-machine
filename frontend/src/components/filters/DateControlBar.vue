@@ -1,11 +1,17 @@
 <template>
-  <div class="date-control-bar">
+  <div class="date-control-bar" :class="{ 'mobile-expanded': mobile_expanded }">
+    <div class="mobile-summary" @click="toggle_mobile_filters">
+      <div class="mobile-summary-content">
+        <span class="mobile-filter-icon">⚙</span>
+        <span class="mobile-filter-label">{{ t('filters') }}</span>
+        <span class="mobile-date-range">{{ dateFromDisplay || '...' }} — {{ dateToDisplay || '...' }}</span>
+      </div>
+      <span class="mobile-chevron" :class="{ 'rotated': mobile_expanded }">▾</span>
+    </div>
     <div class="date-controls-container">
-      <!-- Left-aligned controls group -->
       <div class="left-controls-group">
         <h3 class="controls-title">{{ t('filters') }}</h3>
         
-        <!-- Historical Period Template Selector -->
         <div class="template-section">
           <HierarchicalDateTemplateSelector
             :template-groups="templateGroups"
@@ -19,7 +25,6 @@
           />
         </div>
         
-        <!-- Date Range Controls -->
         <div class="date-range-section">
           <div class="date-inputs">
             <div class="date-input-group">
@@ -49,7 +54,6 @@
             </div>
           </div>
           
-          <!-- Centralized Step Controls -->
           <div class="step-controls-section">
             <div class="step-controls">
               <button @click="stepBothDates(-stepSize)" class="step-button" title="Step both dates backward">
@@ -76,9 +80,8 @@
         
       </div>
       
-      <!-- Right-aligned Apply button -->
       <div class="apply-section">
-        <button @click="$emit('apply-filters')" class="apply-button">{{ t('apply') }}</button>
+        <button @click="handle_apply" class="apply-button">{{ t('apply') }}</button>
       </div>
     </div>
   </div>
@@ -137,46 +140,52 @@ export default {
     'apply-filters'
   ],
   setup(props, { emit }) {
-    const stepSize = ref(10) // Default step size: 10 years
+    const stepSize = ref(10)
+    const mobile_expanded = ref(false)
     
-    // Use locale for UI translations
     const { t } = useLocale()
     
-    // Handle real-time input validation
+    const toggle_mobile_filters = () => {
+      mobile_expanded.value = !mobile_expanded.value
+    }
+
+    const handle_apply = () => {
+      emit('apply-filters')
+      mobile_expanded.value = false
+    }
+    
     const handleDateFromInput = (event) => {
       const value = event.target.value
-      // Only update if it's a valid historical date or empty
       if (!value || parseHistoricalDate(value)) {
-        // Let the parent handle the change through blur event
       }
     }
     
     const handleDateToInput = (event) => {
       const value = event.target.value
-      // Only update if it's a valid historical date or empty
       if (!value || parseHistoricalDate(value)) {
-        // Let the parent handle the change through blur event
       }
     }
     
-    // Step both dates forward/backward together
     const stepBothDates = (years) => {
       const fromValue = props.dateFromDisplay
       const toValue = props.dateToDisplay
       
       if (fromValue) {
         const newFromDate = addYearsToHistoricalDate(fromValue, years)
-        emit('date-from-changed', newFromDate, true) // Pass stepping flag
+        emit('date-from-changed', newFromDate, true)
       }
       
       if (toValue) {
         const newToDate = addYearsToHistoricalDate(toValue, years)
-        emit('date-to-changed', newToDate, true) // Pass stepping flag
+        emit('date-to-changed', newToDate, true)
       }
     }
     
     return {
       stepSize,
+      mobile_expanded,
+      toggle_mobile_filters,
+      handle_apply,
       handleDateFromInput,
       handleDateToInput,
       stepBothDates,
@@ -193,6 +202,10 @@ export default {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   padding: 1rem;
   margin-bottom: 0;
+}
+
+.mobile-summary {
+  display: none;
 }
 
 .date-controls-container {
@@ -391,69 +404,154 @@ export default {
 
 @media (max-width: 768px) {
   .date-control-bar {
-    padding: 0.75rem;
+    padding: 0;
+    overflow: hidden;
   }
-  
+
+  .mobile-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    min-height: 44px;
+    transition: background 0.15s;
+  }
+
+  .mobile-summary:active {
+    background: #f7fafc;
+  }
+
+  .mobile-summary-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .mobile-filter-icon {
+    font-size: 1rem;
+    flex-shrink: 0;
+    color: #667eea;
+  }
+
+  .mobile-filter-label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #2d3748;
+    flex-shrink: 0;
+  }
+
+  .mobile-date-range {
+    font-size: 0.85rem;
+    color: #718096;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 0.5rem;
+    border-left: 1px solid #e2e8f0;
+  }
+
+  .mobile-chevron {
+    font-size: 0.85rem;
+    color: #a0aec0;
+    transition: transform 0.25s ease;
+    flex-shrink: 0;
+    margin-left: 0.5rem;
+  }
+
+  .mobile-chevron.rotated {
+    transform: rotate(180deg);
+  }
+
   .date-controls-container {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.25s ease, padding 0.3s ease;
     flex-direction: column;
     gap: 0.75rem;
     align-items: flex-start;
+    padding: 0 1rem;
+    border-top: none;
   }
-  
+
+  .mobile-expanded .date-controls-container {
+    max-height: 500px;
+    opacity: 1;
+    padding: 0.75rem 1rem 1rem;
+    border-top: 1px solid #edf2f7;
+  }
+
   .left-controls-group {
     width: 100%;
     flex-direction: column;
     gap: 0.75rem;
     align-items: flex-start;
   }
-  
+
   .controls-title {
-    font-size: 1rem;
-    text-align: left;
+    display: none;
   }
-  
+
   .template-section,
   .event-type-section {
     width: 100%;
   }
-  
+
   .date-range-section {
     width: 100%;
     gap: 0.75rem;
     align-items: flex-start;
+    flex-direction: column;
   }
-  
+
   .date-inputs {
     gap: 0.75rem;
     width: 100%;
   }
-  
+
   .date-input-group {
     flex: 1;
     min-width: 0;
   }
-  
+
   .date-input {
     min-width: 80px;
     max-width: none;
     width: 100%;
+    height: 40px;
   }
-  
+
   .step-controls-section {
     gap: 0.75rem;
     justify-content: flex-start;
     width: 100%;
   }
-  
+
+  .step-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .step-select {
+    height: 40px;
+  }
+
   .apply-section {
     width: 100%;
     margin-left: 0;
     justify-content: flex-start;
   }
-  
+
   .apply-button {
     width: 100%;
-    max-width: 200px;
+    height: 42px;
+    font-size: 0.95rem;
+    border-radius: 8px;
   }
 }
 </style>
