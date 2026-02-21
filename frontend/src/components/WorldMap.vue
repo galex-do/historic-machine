@@ -1210,9 +1210,7 @@ export default {
       }
       
       try {
-        // Center the map on the specific event with zoom level 11
-        // to prevent marker clustering and show individual markers
-        this.map.setView([event.latitude, event.longitude], 11, {
+        this.map.setView([event.latitude, event.longitude], this.map.getZoom(), {
           animate: true,
           duration: 1.0
         })
