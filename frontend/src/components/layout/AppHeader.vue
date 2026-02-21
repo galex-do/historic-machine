@@ -1007,19 +1007,30 @@ export default {
 
 @media (max-width: 768px) {
   .app-header {
-    padding: 1rem;
+    padding: 0.75rem 1rem;
   }
   
   .header-content {
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: row;
+    gap: 0.75rem;
   }
   
-  .app-header h1 {
-    font-size: 1.25rem;
+  .app-header h1,
+  .logo-btn h1 {
+    font-size: 1.1rem;
+  }
+
+  .logo-btn {
+    padding: 0.25rem 0.5rem;
+    gap: 0.4rem;
+  }
+
+  .locale-btn {
+    padding: 0.4rem 0.6rem;
+    height: 36px;
+    min-width: 70px;
   }
   
-  /* Hide welcome message on mobile to save space */
   .user-welcome {
     display: none;
   }
