@@ -2,13 +2,6 @@
   <div class="map-container">
     <div ref="map" class="leaflet-map"></div>
     
-    <!-- Off-screen Notification -->
-    <transition name="fade">
-      <div v-if="show_offscreen_notification" class="offscreen-notification">
-        📍 "{{ offscreen_event_name }}" is outside current view
-      </div>
-    </transition>
-    
     <!-- Pin Mode Indicator -->
     <transition name="fade">
       <div v-if="pin_mode" class="pin-mode-indicator">
@@ -264,8 +257,6 @@ export default {
       location_visible_count_backup: 50,
       highlight_overlay: null, // Store highlight overlay layer (halo ring + center dot)
       user_location_layer: null, // Store user location marker (geolocation feature)
-      show_offscreen_notification: false, // Show notification when marker is off-screen
-      offscreen_event_name: '', // Store event name for notification
       expanded_event_tags: {}, // Track which events have expanded tags
       editing_event: null, // Store the event being edited
       is_stepping: false, // Track if current update is from date stepping
@@ -737,16 +728,6 @@ export default {
       this.highlight_overlay = L.layerGroup([outerRing, centerDot])
       this.highlight_overlay.addTo(this.map)
 
-      // Show notification if marker is off-screen
-      if (!isInBounds) {
-        this.offscreen_event_name = event.name
-        this.show_offscreen_notification = true
-        
-        // Auto-hide notification after 4 seconds
-        setTimeout(() => {
-          this.show_offscreen_notification = false
-        }, 4000)
-      }
     },
 
     // Clear highlight overlay
@@ -755,8 +736,6 @@ export default {
         this.map.removeLayer(this.highlight_overlay)
         this.highlight_overlay = null
       }
-      // Also clear any off-screen notification
-      this.show_offscreen_notification = false
     },
 
     // Center map on specific coordinates (used for geolocation)
@@ -2319,25 +2298,6 @@ export default {
 .event_info_modal_content::-webkit-scrollbar-thumb {
   background: #cbd5e1;
   border-radius: 3px;
-}
-
-/* Off-screen Notification */
-.offscreen-notification {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(245, 158, 11, 0.95);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-size: 0.875rem;
-  font-weight: 600;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  z-index: 1000;
-  pointer-events: none;
-  max-width: 80%;
-  text-align: center;
 }
 
 /* Pin Mode Indicator */
