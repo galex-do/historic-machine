@@ -111,25 +111,6 @@
     },
     {
       "date": "01.01.1100",
-      "description": "Phrygians develop distinctive musical tradition centered on double-piped aulos instrument; Phrygian mode becomes fundamental to Greek music theory and associated with ecstatic religious rites",
-      "description_ru": "Фригийцы развивают характерную музыкальную традицию, основанную на двухтрубном инструменте авлос; фригийский лад становится фундаментальным для греческой музыкальной теории и ассоциируется с экстатическими религиозными обрядами",
-      "era": "BC",
-      "latitude": 39.6511,
-      "longitude": 31.9958,
-      "name": "Phrygian Musical Innovation",
-      "name_ru": "Фригийские музыкальные инновации",
-      "source": "https://en.wikipedia.org/wiki/Phrygian_mode",
-      "tags": [
-        "Phrygian",
-        "Culture",
-        "Innovation",
-        "Music",
-        "Religious"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.1100",
       "description": "Mylasa emerges as principal religious and political center of Caria; sacred sanctuary of Zeus Carius (war god distinct from Greek Zeus) established, becoming focal point for Carian tribal confederation",
       "description_ru": "Миляс возникает как главный религиозный и политический центр Карии; здесь учреждено священное святилище Зевса Кария (бога войны, отличного от греческого Зевса)",
       "era": "BC",
@@ -146,6 +127,25 @@
         "Temple"
       ],
       "type": "religious"
+    },
+    {
+      "date": "01.01.1100",
+      "description": "Phrygians develop distinctive musical tradition centered on double-piped aulos instrument; Phrygian mode becomes fundamental to Greek music theory and associated with ecstatic religious rites",
+      "description_ru": "Фригийцы развивают характерную музыкальную традицию, основанную на двухтрубном инструменте авлос; фригийский лад становится фундаментальным для греческой музыкальной теории и ассоциируется с экстатическими религиозными обрядами",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Phrygian Musical Innovation",
+      "name_ru": "Фригийские музыкальные инновации",
+      "source": "https://en.wikipedia.org/wiki/Phrygian_mode",
+      "tags": [
+        "Phrygian",
+        "Culture",
+        "Innovation",
+        "Music",
+        "Religious"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.1100",
@@ -264,6 +264,26 @@
     },
     {
       "date": "01.01.0900",
+      "description": "Lydian Kingdom expands control over Greek Ionian cities on Aegean coast; imposes tribute while allowing cities substantial autonomy, beginning pattern of Lydian-Greek interaction",
+      "description_ru": "Лидийское царство подчиняет греческие ионийские города на побережье Эгейского моря; собирает дань, позволяя городам существенную автономию и выстраивая модель лидийско-греческого взаимодействия",
+      "era": "BC",
+      "latitude": 37.9397,
+      "longitude": 27.3417,
+      "name": "Lydian Control of Ionia",
+      "name_ru": "Лидийский контроль над Ионией",
+      "source": "https://en.wikipedia.org/wiki/Lydia",
+      "tags": [
+        "Greek",
+        "Lydia",
+        "Conquest",
+        "Expansion",
+        "Ionian",
+        "Tribute"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0900",
       "description": "Carian warriors gain reputation as fierce mercenaries serving in foreign armies; Homer describes Carians as 'barbarous of speech' but acknowledges their martial prowess and naval skills",
       "description_ru": "Карийские воины приобретают репутацию свирепых наемников, служащих в иностранных армиях; Гомер описывает карийцев как 'варварских по речи', но признает их воинское мастерство и морские навыки",
       "era": "BC",
@@ -300,26 +320,6 @@
       "type": "cultural"
     },
     {
-      "date": "01.01.0900",
-      "description": "Lydian Kingdom expands control over Greek Ionian cities on Aegean coast; imposes tribute while allowing cities substantial autonomy, beginning pattern of Lydian-Greek interaction",
-      "description_ru": "Лидийское царство подчиняет греческие ионийские города на побережье Эгейского моря; собирает дань, позволяя городам существенную автономию и выстраивая модель лидийско-греческого взаимодействия",
-      "era": "BC",
-      "latitude": 37.9397,
-      "longitude": 27.3417,
-      "name": "Lydian Control of Ionia",
-      "name_ru": "Лидийский контроль над Ионией",
-      "source": "https://en.wikipedia.org/wiki/Lydia",
-      "tags": [
-        "Greek",
-        "Lydia",
-        "Conquest",
-        "Expansion",
-        "Ionian",
-        "Tribute"
-      ],
-      "type": "military"
-    },
-    {
       "date": "01.01.0850",
       "description": "Lydian merchants establish extensive trade networks connecting Anatolia with Greek world and Near East; exchange local gold, silver, textiles for Greek olive oil, wine, and Eastern spices",
       "description_ru": "Лидийские купцы создают обширные торговые сети, соединяющие Анатолию с греческим миром и Ближним Востоком; обменивают местное золото, серебро, ткани на греческое оливковое масло, вино и восточные специи",
@@ -354,6 +354,24 @@
         "Capital",
         "Palace",
         "Wealth"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0850",
+      "description": "The Cimmerians were the first nomadic people of the Northern Black Sea region whose name is recorded in written historical sources. The Cimmerians were warlike horsemen. Their main occupation was nomadic herding and military raids. Before meeting the Cimmerians, the armies of the Middle East used bulky chariots. The Cimmerians, however, were the first fully-fledged mounted archers.",
+      "description_ru": "Киммерийцы — первый кочевой народ Северного Причерноморья, имя которого зафиксировано в письменных исторических источниках. Киммерийцы были воинственными всадниками. Их главным занятием было кочевое скотоводство и военные набеги. До встречи с киммерийцами армии Ближнего Востока использовали громоздкие колесницы. Киммерийцы же были первыми полноценными конными стрелками.\n",
+      "era": "BC",
+      "latitude": 45.04370613,
+      "longitude": 36.23170853,
+      "name": "Cimmerians in Crimea",
+      "name_ru": "Киммерийцы в Крыму",
+      "tags": [
+        "Cimmerian",
+        "War",
+        "Cavalry",
+        "Science",
+        "Tactics"
       ],
       "type": "historic"
     },
@@ -856,24 +874,6 @@
     },
     {
       "date": "01.01.0620",
-      "description": "Phrygian territories increasingly dominated by expanding Lydian Kingdom; local rulers maintain autonomy in exchange for tribute and military alliance with Lydian monarchs",
-      "description_ru": "Фригийские территории все больше подчиняются расширяющемуся Лидийскому царству; местные правители сохраняют автономию в обмен на дань и военный союз с лидийскими монархами",
-      "era": "BC",
-      "latitude": 39.6511,
-      "longitude": 31.9958,
-      "name": "Lydian Dominance Over Phrygia",
-      "name_ru": "Лидийское господство над Фригией",
-      "source": "https://en.wikipedia.org/wiki/Phrygia",
-      "tags": [
-        "Lydia",
-        "Phrygian",
-        "Mermnad",
-        "Vassalage"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0620",
       "description": "Cimmerian threat finally eliminated as Lydians and Assyrians coordinate military campaigns; surviving nomads absorbed into Anatolian populations or retreat to steppes",
       "description_ru": "Объединившись, ассирийцам и лидийцам удается подавить киммерийцев; выжившие кочевники поглощены анатолийским населением или отступают в степи",
       "era": "BC",
@@ -889,6 +889,24 @@
         "Mermnad"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0620",
+      "description": "Phrygian territories increasingly dominated by expanding Lydian Kingdom; local rulers maintain autonomy in exchange for tribute and military alliance with Lydian monarchs",
+      "description_ru": "Фригийские территории все больше подчиняются расширяющемуся Лидийскому царству; местные правители сохраняют автономию в обмен на дань и военный союз с лидийскими монархами",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Lydian Dominance Over Phrygia",
+      "name_ru": "Лидийское господство над Фригией",
+      "source": "https://en.wikipedia.org/wiki/Phrygia",
+      "tags": [
+        "Lydia",
+        "Phrygian",
+        "Mermnad",
+        "Vassalage"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.0615",

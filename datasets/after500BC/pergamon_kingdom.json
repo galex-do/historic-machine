@@ -224,6 +224,24 @@
       "type": "political"
     },
     {
+      "date": "01.01.0201",
+      "description": "Philip V invaded the lands of Pergamon. He laid siege to the capital but was unable to take it due to its powerful fortifications. In a rage, he ordered the destruction of the surrounding temples and sanctuaries, then left.",
+      "description_ru": "Филипп V вторгся на земли Пергама. Он осадил столицу, но не смог взять её из-за мощных укреплений. В ярости он приказал разрушить окрестные храмы и святилища, после чего ушел.",
+      "era": "BC",
+      "latitude": 39.13099,
+      "longitude": 27.18383,
+      "name": "Siege of Pergamon by Macedonia",
+      "name_ru": "Осада Пергама Македонией",
+      "tags": [
+        "Greek",
+        "Macedonian",
+        "Pergamon",
+        "War",
+        "Siege"
+      ],
+      "type": "military"
+    },
+    {
       "date": "01.01.0197",
       "description": "Attalus I dies at the age of 72 after a stroke. He reigned for 44 years—the longest reign of the Attalids. His son Eumenes II inherits the kingdom.",
       "description_ru": "Аттал I умирает в возрасте 72 лет после инсульта. Он правил 44 года — самый длинный срок правления Атталидов. Его сын Эвмен II наследует царство.",
@@ -467,26 +485,6 @@
       "type": "cultural"
     },
     {
-      "date": "01.01.0149",
-      "description": "Attalus II helps Prince Nicomedes II seize the Bithynian throne by overthrowing his father, Prusias II, who had been humiliating himself before Rome and antagonizing his own court. Rome does not approve of Pergamum's activity, but does not interfere either - the Senate has better relations with Attalus than with Prusias",
-      "description_ru": "Аттал II помогает принцу Никомеду II захватить вифинский трон, свергнув его отца Прусия II, который унижался перед Римом и настраивал против себя собственный двор. Рим не одобряет активность Пергама, но и не препятствует - с Атталом у Сената отношения лучше, чем с Прусием",
-      "era": "BC",
-      "latitude": 40.26194,
-      "longitude": 29.02444,
-      "name": "Pergamon Intervenes in Bithynia",
-      "name_ru": "Вмешательство Пергама в дела Вифинии",
-      "source": "https://en.wikipedia.org/wiki/Attalus_II",
-      "tags": [
-        "Greek",
-        "Pergamon",
-        "Diplomacy",
-        "Bithinian",
-        "Overthrow",
-        "Political"
-      ],
-      "type": "political"
-    },
-    {
       "date": "01.01.0138",
       "description": "Attalus II dies at the age of approximately 82. His nephew, Attalus III (son of Eumenes II), becomes the last king of the Attalids. Unlike his predecessors—warriors, diplomats, and builders—Attalus III is a reclusive scholar, obsessed with botany, pharmacology, and the study of poisons. He is more interested in plants than in government.",
       "description_ru": "Аттал II умирает в возрасте около 82 лет. Его племянник Аттал III (сын Эвмена II) становится последним царём Атталидов. В отличие от своих предшественников — воинов, дипломатов и строителей — Аттал III — замкнутый учёный, одержимый ботаникой, фармакологией и изучением ядов. Ему более интересны растения, чем управления государством.",
@@ -511,8 +509,8 @@
       "description": "King Attalus III of Pergamon, who died suddenly of sunstroke, bequeathed his kingdom not to his bastard brother Aristonicus, but to Rome. The wealthy state would become the province of Asia, Rome's richest possession and a source of enormous tax revenues—and a temptation for corrupt governors.",
       "description_ru": "Царь Аттал III Пергамский, внезапно умерший от солнечного удара, завещает своё царство не брату-бастарду Аристонику, а Риму. Богатое государство станет провинцией Азия, богатейшим владением Рима и источником огромных налоговых поступлений — а также соблазном для коррумпированных наместников.",
       "era": "BC",
-      "latitude": 39.12,
-      "longitude": 27.183,
+      "latitude": 39.1315375,
+      "longitude": 27.1839775,
       "name": "Bequest of Pergamon",
       "name_ru": "Завещание Пергама Риму",
       "source": "https://en.wikipedia.org/wiki/Attalus_III",

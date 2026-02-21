@@ -81,8 +81,8 @@
       "description": "Nicomedes I, who inherited the Bithynia kingdom, struggled for the throne with his brother, Zipoites II, who controlled most of eastern Bithynia. Nicomedes invited the Celtic Galatian tribes from Europe to Asia Minor to use them as mercenaries. The Galatians helped him win, but then refused to leave—settling in central Anatolia and terrorizing the region for decades.",
       "description_ru": "Никомед I, унаследовавший Вифинское царство, борется за трон с братом Зипоитом II, контролирующим большую часть восточной Вифинии. Никомед приглашает кельтские галатские племена из Европы в Малую Азию, чтобы использовать их как наёмников. Галаты помогают ему победить, а затем отказываются уходить — они оседают в центральной Анатолии и терроризируют регион десятилетиями.",
       "era": "BC",
-      "latitude": 40.9917,
-      "longitude": 29.0333,
+      "latitude": 40.7667,
+      "longitude": 29.9167,
       "name": "Invitation of the Galatians to Asia",
       "name_ru": "Приглашение галатов в Азию",
       "source": "https://en.wikipedia.org/wiki/Nicomedes_I_of_Bithynia",
@@ -154,65 +154,83 @@
     },
     {
       "date": "01.01.0220",
-      "description": "Prusias I launches a war against the city of Byzantium, seizing its possessions on the Asian shore of the Bosporus — harbors, fishing stations, and toll collection points that controlled traffic between the Propontis (Sea of Marmara) and the Black Sea. Byzantium had grown wealthy by taxing every ship passing through the strait. By taking the Asian side, Prusias cuts into this revenue stream and establishes Bithynian control over one of the ancient world's most lucrative chokepoints.",
-      "description_ru": "Прусий I начинает войну против Византия, захватывая его владения на азиатском берегу Босфора — гавани, рыболовные станции и пункты сбора пошлин, контролировавшие движение между Пропонтидой (Мраморным морем) и Чёрным морем. Византий разбогател, облагая налогом каждый проходящий через пролив корабль. Захватив азиатскую сторону, Прусий перехватывает часть этого дохода и устанавливает вифинский контроль над одним из самых прибыльных узких мест древнего мира.",
+      "description": "Prusias I begins a war against Byzantium, seizing its possessions on the Asian shore of the Bosphorus: harbors, fishing stations and toll collection points that controlled traffic between the Sea of ​​Marmara and the Black Sea - a key source of Byzantine wealth.",
+      "description_ru": "Прусий I начинает войну против Византия, захватывая его владения на азиатском берегу Босфора: гавани, рыболовные станции и пункты сбора пошлин, контролировавшие движение между Мраморным и Чёрным морем - ключевой источник византийского богатства.",
       "era": "BC",
       "latitude": 40.88,
       "longitude": 29.27,
-      "name": "Prusias I Seizes Byzantine Asian Territories",
-      "name_ru": "Прусий I захватывает азиатские владения Византия",
+      "name": "Bithynia Seizes Byzantine Asian Territories",
+      "name_ru": "Вифиния захватывает владения Византия",
       "source": "https://en.wikipedia.org/wiki/Prusias_I_of_Bithynia",
       "tags": [
-        "Bithynian",
         "Greek",
-        "Conquest",
+        "Bithynian",
         "War",
-        "Trade"
+        "Byzantine",
+        "Conquest"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0216",
-      "description": "Prusias I defeats a Galatian army near the town of Arisba. The Galatian Celts — originally invited into Asia by Nicomedes I in 278 BC — have been raiding Bithynian territory for decades. According to Polybius, Prusias' troops are brutally thorough: they slaughter Galatian women and children in the captured baggage train. The victory secures Bithynia's eastern frontier and avenges his father Ziaelas, who was killed by Galatians at a banquet.",
-      "description_ru": "Прусий I разбивает галатскую армию близ города Арисба. Кельты-галаты — первоначально приглашённые в Азию Никомедом I в 278 году до н.э. — десятилетиями совершали набеги на вифинскую территорию. По свидетельству Полибия, войска Прусия действуют с жестокой основательностью: они убивают галатских женщин и детей в захваченном обозе. Победа обеспечивает восточную границу Вифинии и мстит за его отца Зиэла, убитого галатами на пиру.",
+      "description": "Prusias I defeats the Galatian army near the city of Arisba. According to Polybius, Prusias's troops act brutally, sparing no women or children in the captured supply trains. The victory secures the eastern border and avenges Prusias' father, Ziel, who was killed by the Galatians at a feast.",
+      "description_ru": "Прусий I разбивает галатскую армию близ города Арисба. По свидетельству Полибия, войска Прусия действуют жестоко, не щадя женщин и детей в захваченных обозах. Победа обеспечивает безопасность восточной границы и мстит за отца Прусия, Зиэла, убитого галатами на пиру.",
       "era": "BC",
-      "latitude": 40.35,
-      "longitude": 30.4,
+      "latitude": 40.19434714,
+      "longitude": 26.53593063,
       "name": "Prusias I Crushes the Galatians at Arisba",
-      "name_ru": "Прусий I громит галатов при Арисбе",
+      "name_ru": "Вифиния громит галатов",
       "source": "https://en.wikipedia.org/wiki/Prusias_I_of_Bithynia",
       "tags": [
-        "Bithynian",
         "Celtic",
+        "Bithynian",
         "War",
-        "Victory",
         "Revenge"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0202",
-      "description": "Philip V of Macedon — Prusias' father-in-law through marriage to the Macedonian princess Apama III — captures and destroys the Greek cities of Cius and Myrleia on the Propontis coast during his campaigns in Asia Minor. Philip gifts both ruined cities to Prusias. The Bithynian king refounds them: Cius becomes Prusias ad Mare ('Prusias by the Sea'), and Myrleia becomes Apamea, named after his Macedonian wife. The acquisition gives Bithynia its first ports on the Sea of Marmara's southern shore.",
-      "description_ru": "Филипп V Македонский — тесть Прусия через брак с македонской принцессой Апамой III — захватывает и разрушает греческие города Киос и Мирлею на побережье Пропонтиды во время кампаний в Малой Азии. Филипп дарит оба разрушенных города Прусию. Вифинский царь заново их основывает: Киос становится Прусиадой-на-Море, а Мирлея — Апамеей, названной в честь его македонской жены. Приобретение даёт Вифинии первые порты на южном берегу Мраморного моря.",
+      "description": "Kios was completely destroyed, and its inhabitants sold into slavery, sparking outrage even among Macedonia's allies. Philip handed the land over to Prusias I of Bithynia, who was married to Philip's sister. Prusias I rebuilt the city and renamed it in his honor—Prusias-on-the-Sea.",
+      "description_ru": "Киос был полностью разрушен, а его жители проданы в рабство, что вызвало возмущение даже среди союзников Македонии. Филипп передал землю Прусию I Вифинскому, который был женат на сестре Филиппа. Прусий I отстроил город заново и переименовал его в свою честь — Прусиада-на-море",
       "era": "BC",
-      "latitude": 40.4328,
-      "longitude": 28.9794,
-      "name": "Prusias I Refounds Cius and Myrleia",
-      "name_ru": "Прусий I заново основывает Киос и Мирлею",
-      "source": "https://en.wikipedia.org/wiki/Prusias_I_of_Bithynia",
+      "latitude": 40.43168955,
+      "longitude": 29.15560663,
+      "name": "Macedonia sacks Kios",
+      "name_ru": "Македония разоряет Киос",
+      "source": "https://en.wikipedia.org/wiki/Second_Macedonian_War",
       "tags": [
-        "Bithynian",
+        "Greek",
         "Macedonian",
-        "Foundation",
-        "City",
-        "Alliance"
+        "Bithynian",
+        "War",
+        "Destruction"
       ],
-      "type": "cultural"
+      "type": "military"
     },
     {
-      "date": "01.01.0200",
-      "description": "Prusias I captures the city of Cierus (Kieros) — a colony of Heraclea Pontica on the Hypius River near the Black Sea coast — and renames it Prusias ad Hypium ('Prusias on the Hypius'). He also takes the port of Tieium further east along the Black Sea. These conquests complete Bithynia's expansion to its maximum extent: the kingdom now stretches from the Bosporus in the west to the Black Sea coast in the east, from the Propontis in the south to the Pontic shores in the north. No Bithynian king after Prusias I will add territory.",
-      "description_ru": "Прусий I захватывает город Киерос — колонию Гераклеи Понтийской на реке Гипий у Черноморского побережья — и переименовывает его в Прусиаду-у-Гипия. Он также берёт порт Тиейон (Тиум) восточнее по Черноморскому побережью. Эти завоевания завершают расширение Вифинии до максимальных пределов: царство теперь простирается от Босфора на западе до Черноморского побережья на востоке, от Пропонтиды на юге до понтийских берегов на севере. Ни один вифинский царь после Прусия I не добавит территорий.",
+      "date": "01.01.0202",
+      "description": "Philip V destroyed the Greek city and handed its remains over to Bithynia to strengthen the alliance with the Bithynians in the fight against Pergamum. Bithynia received the first ports on the southern coast. Prusias named the city Apamea - in honor of his wife and Philip's sister.",
+      "description_ru": "Филипп V разрушил греческий город и его остатки передал Вифинии, чтобы укрепить союз с вифинами в борьбе против Пергама. Вифиния же получила первые порты на южном берегу. Прусий назвал город Апамея - в честь своей жены и сестры Филиппа",
+      "era": "BC",
+      "latitude": 40.37603994,
+      "longitude": 28.88365746,
+      "name": "Macedonia ravages Myrleia",
+      "name_ru": "Македония разоряет Мирлею",
+      "source": "https://en.wikipedia.org/wiki/Apamea_Myrlea",
+      "tags": [
+        "Greek",
+        "Macedonian",
+        "Bithynian",
+        "War",
+        "Destruction"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0195",
+      "description": "Prusias I captures the city of Kieros, a colony of Heraclea Pontica on the Hypios River near the Black Sea coast, and renames it Prusias ad Hypium. He also takes the port of Tium (Tieion) further east along the Black Sea coast. These conquests complete the expansion of Bithynia to its maximum limits: the kingdom now stretches from the Bosphorus in the west to the Black Sea coast in the east, from the Propontis in the south to the Pontic shores in the north.",
+      "description_ru": "Прусий I захватывает город Киерос — колонию Гераклеи Понтийской на реке Гипий у Черноморского побережья — и переименовывает его в Прусиаду-у-Гипия. Он также берёт порт Тиейон (Тиум) восточнее по Черноморскому побережью. Эти завоевания завершают расширение Вифинии до максимальных пределов: царство теперь простирается от Босфора на западе до Черноморского побережья на востоке, от Пропонтиды на юге до понтийских берегов на севере",
       "era": "BC",
       "latitude": 40.9061,
       "longitude": 31.1481,
@@ -220,56 +238,35 @@
       "name_ru": "Прусий I захватывает Киерос и Тиейон",
       "source": "https://en.wikipedia.org/wiki/Prusias_I_of_Bithynia",
       "tags": [
-        "Bithynian",
         "Greek",
+        "Bithynian",
+        "War",
         "Conquest",
-        "Expansion",
-        "War"
+        "Expansion"
       ],
       "type": "military"
     },
     {
-      "date": "01.01.0190",
-      "description": "When Rome crushes the Seleucids at Magnesia, Prusias I stays carefully neutral — refusing both Antiochus III's alliance and Roman demands for active support. After the Treaty of Apamea strips the Seleucids of their Anatolian possessions, Prusias negotiates directly with Rome and manages to keep all his conquests. His neighbor Eumenes II of Pergamon, who backed Rome, receives most of the Seleucid spoils — making Pergamon, not Bithynia, Rome's favorite in Anatolia.",
-      "description_ru": "Когда Рим громит Селевкидов при Магнезии, Прусий I соблюдает осторожный нейтралитет — отклоняя и союз Антиоха III, и римские требования активной поддержки. После того как Апамейский мир лишает Селевкидов анатолийских владений, Прусий ведёт переговоры напрямую с Римом и ухитряется сохранить все свои завоевания. Его сосед Эвмен II Пергамский, поддержавший Рим, получает большую часть селевкидских трофеев — делая Пергам, а не Вифинию, римским фаворитом в Анатолии.",
-      "era": "BC",
-      "latitude": 40.7667,
-      "longitude": 29.9167,
-      "name": "Prusias I Plays Neutral at Magnesia",
-      "name_ru": "Прусий I соблюдает нейтралитет при Магнезии",
-      "source": "https://en.wikipedia.org/wiki/Prusias_I_of_Bithynia",
-      "tags": [
-        "Roman",
-        "Bithynian",
-        "Seleucid",
-        "Diplomacy",
-        "Treaty"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0186",
-      "description": "Hannibal Barca — Rome's greatest enemy, who has been fleeing from court to court since Carthage's defeat — arrives in Bithynia as a refugee. Prusias I shelters him and puts his military genius to use: Hannibal reportedly plans the layout of a new city at the foot of Mount Olympus (Uludağ), which Prusias names Prusa after himself. In a naval battle against Pergamon, Hannibal allegedly orders clay pots filled with venomous snakes catapulted onto enemy ships.",
-      "description_ru": "Ганнибал Барка — злейший враг Рима, скитающийся по дворам после поражения Карфагена — прибывает в Вифинию как беженец. Прусий I предоставляет ему убежище и использует его военный гений: Ганнибал, по преданию, планирует застройку нового города у подножия горы Олимп (Улудаг), который Прусий называет Прусой в свою честь. В морском бою против Пергама Ганнибал якобы приказывает катапультировать на вражеские корабли глиняные горшки с ядовитыми змеями.",
+      "date": "01.01.0189",
+      "description": "Hannibal Barca, Rome's bitter enemy, wandering from court to court after the defeat of Carthage, arrives in Bithynia as a refugee. Prusias I grants him refuge and uses his military talents in his confrontation with Pergamon",
+      "description_ru": "Ганнибал Барка — злейший враг Рима, скитающийся по дворам после поражения Карфагена — прибывает в Вифинию как беженец. Прусий I предоставляет ему убежище и использует его военные таланты в своем противостоянии с Пергамом",
       "era": "BC",
       "latitude": 40.1933,
       "longitude": 29.0742,
       "name": "Hannibal Finds Refuge in Bithynia",
-      "name_ru": "Ганнибал находит убежище в Вифинии",
+      "name_ru": "Ганнибал укрывается в Вифинии",
       "source": "https://en.wikipedia.org/wiki/Prusias_I_of_Bithynia",
       "tags": [
         "Carthage",
         "Bithynian",
-        "War",
-        "Foundation",
-        "Tactics"
+        "Hannibal 👤"
       ],
-      "type": "military"
+      "type": "historic"
     },
     {
       "date": "01.01.0183",
-      "description": "Rome sends an embassy to Bithynia demanding Hannibal's surrender. Prusias I, unwilling to defy Rome but also reluctant to hand over his guest, allows Roman soldiers to surround Hannibal's villa in Libyssa (near modern Gebze). Hannibal, discovering all escape routes blocked, takes poison he had kept in a ring for exactly this occasion. His last words reportedly were: 'Let us put an end to the great anxiety of the Romans, who have thought it too lengthy and too heavy a task to wait for the death of a hated old man.'",
-      "description_ru": "Рим направляет посольство в Вифинию с требованием выдачи Ганнибала. Прусий I, не желая бросать вызов Риму, но и не решаясь выдать гостя, позволяет римским солдатам окружить виллу Ганнибала в Либиссе (близ современного Гебзе). Ганнибал, обнаружив, что все пути к бегству перекрыты, принимает яд, который хранил в перстне именно для такого случая. Его последние слова, по преданию: «Избавим римлян от великой тревоги, раз уж они сочли слишком долгим и тяжёлым ожидание смерти ненавистного старика».",
+      "description": "Rome sends an embassy to Bithynia demanding the extradition of Hannibal. Prusias I, unwilling to defy Rome but also hesitant to hand over his guest, allows Roman soldiers to surround Hannibal's villa. Hannibal, finding that all escape routes were blocked, took the poison he had kept in his ring for just such an occasion.",
+      "description_ru": "Рим направляет посольство в Вифинию с требованием выдачи Ганнибала. Прусий I, не желая бросать вызов Риму, но и не решаясь выдать гостя, позволяет римским солдатам окружить виллу Ганнибала. Ганнибал, обнаружив, что все пути к бегству перекрыты, принимает яд, который хранил в перстне именно для такого случая.",
       "era": "BC",
       "latitude": 40.7823,
       "longitude": 29.4417,
@@ -281,17 +278,53 @@
         "Carthage",
         "Bithynian",
         "Death",
+        "Hannibal 👤",
         "Suicide"
       ],
       "type": "political"
     },
     {
-      "date": "01.01.0154",
-      "description": "Prusias II, desperate to compete with Pergamon, invades Attalid territory and sacks the temple of Asclepius at Pergamon — an act of sacrilege that horrifies the Greek world. Rome intervenes, forces Prusias to pay massive war reparations, and strips him of conquered territories. The humiliated king then travels to Rome in person, entering the Senate in a freedman's cap and prostrating himself on the floor, calling the senators 'savior gods.' The Romans despise him for it.",
-      "description_ru": "Прусий II, отчаянно стремясь конкурировать с Пергамом, вторгается на территорию Атталидов и разоряет храм Асклепия в Пергаме — акт святотатства, ужаснувший греческий мир. Рим вмешивается, заставляет Прусия выплатить огромные репарации и лишает завоёванных территорий. Униженный царь лично едет в Рим, входит в Сенат в шапке вольноотпущенника и простирается на полу, называя сенаторов «богами-спасителями». Римляне презирают его за это.",
+      "date": "01.01.0182",
+      "description": "The aging Prusias I ('the Lame') became extremely unpopular towards the end of his reign due to failures in the wars with Pergamon and the shameful attempt to hand over Hannibal. As a result of a conspiracy with the Pergamene and Bithynian nobility, and then internecine strife, Prusias II effectively removed his father from office.",
+      "description_ru": "Стареющий Прусий I ('Хромой') к концу правления стал крайне непопулярен из-за неудач в войнах с Пергамом и позорной попытки выдать Ганнибала. В результате сговора с пергамской и вифинской знатью, а затем междоусобной борьбы Прусий II фактически отстранил отца от дел. ",
       "era": "BC",
-      "latitude": 39.13175,
-      "longitude": 27.18411,
+      "latitude": 40.7667,
+      "longitude": 29.9167,
+      "name": "Prusias II - King of Bithynia",
+      "name_ru": "Прусий II - царь Вифинии",
+      "tags": [
+        "Bithynian",
+        "King",
+        "Crisis",
+        "Overthrow",
+        "Political"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0167",
+      "description": "Prusias II sought to demonstrate his absolute loyalty to Rome and secure its support. After the Roman victory over Macedonia, he appeared before the Senate dressed as a freed slave, wearing a felt cap called a pilos. He prostrated himself before the senators, calling them gods and saviors. Although Rome extended the alliance, the king's actions in the Senate drew scorn.",
+      "description_ru": "Прусий II стремился показать свою абсолютную преданность Риму и заручиться его поддержкой. После победы римлян над Македонией он явился в Сенат в одежде вольноотпущенника (освобожденного раба) — в войлочной шапке-пилосе. Он пал ниц перед сенаторами, называя их богами-спасителями. Хотя Рим продлил действие союза, действия царя в Сенате вызвали презрение.",
+      "era": "BC",
+      "latitude": 41.89239445,
+      "longitude": 12.484079,
+      "name": "The King of Bithynia congratulates Rome",
+      "name_ru": "Царь Вифинии поздравляет Рим с победой",
+      "tags": [
+        "Roman",
+        "Bithynian",
+        "Alliance",
+        "Political"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0154",
+      "description": "A coalition of Pergamon, Cappadocia, and Rhodes formed against Bithynia. Unable to take the capital, Prusias II, in a fury, sacked the Temple of Asclepius—an act of sacrilege that horrified the Greek world. After this, Rome intervened in the war on the side of Pergamon, forcing Prusias to pay Pergamon huge reparations and depriving it of the conquered territories.",
+      "description_ru": "Против Вифинии сформировалась коалиция Пергама, Каппадокии и Родоса. Не в силах взять столицу, Прусий II в ярости разоряет храм Асклепия — акт святотатства, ужаснувший греческий мир. После этого Рим вмешался в войну на стороне Пергама, заставив Прусия выплатить Пергаму огромные репарации и лишив завоёванных территорий.",
+      "era": "BC",
+      "latitude": 39.11909,
+      "longitude": 27.16613,
       "name": "Prusias II Sacks the Pergamon Asclepion",
       "name_ru": "Прусий II разоряет Асклепион Пергама",
       "source": "https://en.wikipedia.org/wiki/Prusias_II_of_Bithynia",
@@ -300,109 +333,179 @@
         "Pergamon",
         "Bithynian",
         "War",
-        "Blasphemy"
+        "Blasphemy",
+        "Contribution"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0154",
+      "description": "Prusias II, believing that Rome was behind him, decided to take revenge on the richest kingdom in the region. He invaded Pergamon and defeated the forces of King Attalus II in open battle. The troops approached the capital itself, but were unable to take the well-fortified city.",
+      "description_ru": "Прусий II, считая, что за его спиной Рим, решил взять реванш у самого богатого царства в регионе. Он вторгся в Пергам и разбил войска царя Аттала II в открытом сражении. Войска подошли к самой столице, но взять хорошо укрепленный город не смогли.",
+      "era": "BC",
+      "latitude": 39.13099,
+      "longitude": 27.18383,
+      "name": "Bithynia's invasion of Pergamon",
+      "name_ru": "Вторжение Вифинии в Пергам",
+      "tags": [
+        "Greek",
+        "Pergamon",
+        "Bithynian",
+        "War",
+        "Siege"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0149",
-      "description": "Nicomedes II, son of Prusias II, overthrows his father with the active support of Attalus II of Pergamon and tacit approval of Rome. Prusias II flees to the temple of Zeus in Nicomedia seeking sanctuary, but is dragged out and killed — possibly by Nicomedes' own men. The new king proves a reliable Roman vassal: he sends troops to help Rome suppress the Aristonicus revolt after Pergamon is bequeathed to Rome in 133 BC.",
-      "description_ru": "Никомед II, сын Прусия II, свергает отца при активной поддержке Аттала II Пергамского и молчаливом одобрении Рима. Прусий II бежит в храм Зевса в Никомедии, ища убежища, но его выволакивают и убивают — вероятно, людьми самого Никомеда. Новый царь оказывается надёжным римским вассалом: он отправляет войска на помощь Риму для подавления восстания Аристоника после того, как Пергам завещан Риму в 133 году до н.э.",
+      "description": "After the disastrous war with Pergamon, Prusias II lost influence and Rome's support. Nicomedes II, Prusias II's son, overthrew his father with the active support of Attalus II of Pergamon and the tacit approval of Rome. Prusias II fled to the Temple of Zeus in Nicomedia, seeking refuge, but was dragged out and killed. The new king proved to be a reliable Roman vassal.",
+      "description_ru": "Прусий II после провальной войны с Пергамом утратил влияние и лишился поддержки Рима. Никомед II, сын Прусия II, свергает отца при активной поддержке Аттала II Пергамского и молчаливом одобрении Рима. Прусий II бежит в храм Зевса в Никомедии, ища убежища, но его выволакивают и убивают. Новый царь оказывается надёжным римским вассалом",
       "era": "BC",
       "latitude": 40.7667,
       "longitude": 29.9167,
       "name": "Nicomedes II Overthrows His Father",
-      "name_ru": "Никомед II свергает отца",
+      "name_ru": "Переворот в Вифинии",
       "source": "https://en.wikipedia.org/wiki/Nicomedes_II_of_Bithynia",
       "tags": [
         "Roman",
         "Pergamon",
         "Bithynian",
         "Dynasty",
-        "Assassination"
+        "Assassination",
+        "Overthrow"
       ],
       "type": "political"
     },
     {
-      "date": "01.01.0130",
-      "description": "Nicomedes II sends Bithynian troops to help Rome suppress the revolt of Aristonicus, who had seized control of the former Pergamene kingdom after Attalus III bequeathed it to Rome. The Bithynian contribution is a calculated investment in Roman goodwill. After the revolt is crushed, Nicomedes requests Phrygia as a reward — but the Senate awards it instead to Mithridates V of Pontus, who had also contributed troops. The snub deepens Bithynian resentment toward both Rome and Pontus.",
-      "description_ru": "Никомед II отправляет вифинские войска помочь Риму подавить восстание Аристоника, захватившего бывшее Пергамское царство после того, как Аттал III завещал его Риму. Вифинский вклад — расчётливое вложение в римское расположение. После подавления восстания Никомед просит Фригию в качестве награды — но Сенат присуждает её вместо этого Митридату V Понтийскому, также приславшему войска. Оскорбление углубляет вифинскую обиду и на Рим, и на Понт.",
+      "date": "01.01.0127",
+      "description": "Nicomedes III peacefully inherits the Bithynian kingdom from his father. Bithynia at this time is already more of a vassal state of Rome.",
+      "description_ru": "Никомед III мирно наследует вифинское царство от своего отца. Вифиния в это время уже скорее вассальное государство Рима. ",
       "era": "BC",
-      "latitude": 39.1315,
-      "longitude": 27.184,
-      "name": "Bithynia Aids Rome Against Aristonicus",
-      "name_ru": "Вифиния помогает Риму против Аристоника",
-      "source": "https://en.wikipedia.org/wiki/Nicomedes_II_of_Bithynia",
+      "latitude": 40.7667,
+      "longitude": 29.9167,
+      "name": "Nicomedes III - King of Bithynia",
+      "name_ru": "Никомед III - царь Вифинии",
       "tags": [
         "Roman",
-        "Pergamon",
         "Bithynian",
-        "War",
-        "Rebellion"
+        "Dynasty",
+        "King"
       ],
-      "type": "military"
+      "type": "political"
     },
     {
       "date": "01.01.0104",
       "description": "When the Roman general Gaius Marius asks Nicomedes III for auxiliary troops to fight the Cimbri and Teutones invading Italy, Nicomedes replies that he cannot provide them — Roman tax collectors (publicani) have enslaved most of his able-bodied subjects to pay their debts. The Senate, embarrassed, passes a decree ordering the liberation of enslaved citizens of allied kingdoms. The decree is enforced halfheartedly and quickly abandoned.",
       "description_ru": "Когда римский полководец Гай Марий просит у Никомеда III вспомогательные войска для борьбы с кимврами и тевтонами, вторгшимися в Италию, Никомед отвечает, что не может их предоставить — римские сборщики налогов (публиканы) обратили в рабство большинство его трудоспособных подданных в счёт долгов. Сенат, смущённый, издаёт указ об освобождении порабощённых граждан союзных царств. Указ исполняется без энтузиазма и быстро забывается.",
       "era": "BC",
-      "latitude": 40.7667,
-      "longitude": 29.9167,
+      "latitude": 41.89264957,
+      "longitude": 12.48492276,
       "name": "Nicomedes III Shames Rome Over Slavery",
-      "name_ru": "Никомед III стыдит Рим за рабство",
+      "name_ru": "Никомед III Вифинский стыдит Рим за рабство",
       "source": "https://en.wikipedia.org/wiki/Nicomedes_III_of_Bithynia",
       "tags": [
         "Roman",
         "Bithynian",
         "Diplomacy",
-        "Slavery",
-        "Teutons"
+        "Marius 👤",
+        "Senate",
+        "Slavery"
       ],
       "type": "political"
     },
     {
-      "date": "01.01.0094",
-      "description": "Nicomedes IV Philopator inherits the kingdom. Within two years, Mithridates VI of Pontus expels him and installs his brother Socrates Chrestus on the Bithynian throne. Nicomedes flees to Rome and begs the Senate for restoration. Rome sends a commission that reinstates him, but also pressures the heavily indebted Nicomedes to raid Pontic territory to pay back Roman creditors — effectively using Bithynia as bait to provoke a war with Mithridates.",
-      "description_ru": "Никомед IV Филопатор наследует царство. В течение двух лет Митридат VI Понтийский изгоняет его и сажает на вифинский трон его брата Сократа Хреста. Никомед бежит в Рим и умоляет Сенат о восстановлении. Рим отправляет комиссию, которая возвращает его на трон, но одновременно вынуждает глубоко задолжавшего Никомеда совершить набег на понтийскую территорию для расплаты с римскими кредиторами — фактически используя Вифинию как наживку для провоцирования войны с Митридатом.",
+      "date": "01.01.0092",
+      "description": "Nicomedes IV Philopator inherits the kingdom. Mithridates VI, the king of Pontus, enters the political game in Bithynia, spreading rumors that Nicomedes is an illegitimate king, the son of a concubine, unlike his brother, Socrates Chrestus.",
+      "description_ru": "Никомед IV Филопатор наследует царство. В политическую игру в Вифинии включается понтийский царь Митридат VI, который распускает слухи, что Никомед - нелегитимный царь, сын наложницы, в отличие от его брата, Сократа Хреста.",
       "era": "BC",
       "latitude": 40.7667,
       "longitude": 29.9167,
-      "name": "Nicomedes IV — Rome's Pawn Against Pontus",
-      "name_ru": "Никомед IV — римская пешка против Понта",
+      "name": "Nicomedes IV - King of Bithynia",
+      "name_ru": "Никомед IV - царь Вифинии",
       "source": "https://en.wikipedia.org/wiki/Nicomedes_IV_of_Bithynia",
+      "tags": [
+        "Pontus",
+        "Bithynian",
+        "Crisis",
+        "Political"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0090",
+      "description": "Socrates Chrestus, with the financial and military support of the Pontic king, defeats Nicomedes IV on the battlefield and expels him from the country. Nicomedes IV is forced to flee to Rome and ask the Senate for protection.",
+      "description_ru": "Сократ Хрест, при финансовой и военной поддержке понтийского царя, разбивает Никомеда IV на поле боя и изгоняет его из страны. Никомед IV вынужден бежать в Рим и просить защиты у Сената.",
+      "era": "BC",
+      "latitude": 40.7667,
+      "longitude": 29.9167,
+      "name": "Propontic revolution in Bithynia",
+      "name_ru": "Пропонтийский переворот в Вифинии",
+      "tags": [
+        "Pontus",
+        "Bithynian",
+        "Crisis",
+        "Overthrow",
+        "Political"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0089",
+      "description": "The Romans ordered Mithridates VI of Pontus to immediately stop supporting the usurper in Bithynia and return the throne to the rightful king, Nicomedes IV. Mithridates, not yet ready for open confrontation with Rome, complied. He withdrew his troops from Bithynia and even executed his protege, Socrates, to hush up the incident. However, for their \"assistance,\" Manius Aquillius and other Roman officials demanded colossal bribes from Nicomedes, and the kingdom fell into debt.",
+      "description_ru": "Римляне приказали Митридату VI Понтийскому немедленно прекратить поддержку узурпатора в Вифинии и вернуть трон законному царю Никомеду IV. Митридат, еще не готовый к открытому столкновению с Римом, подчинился. Он вывел войска из Вифинии и даже казнил своего ставленника Сократа, чтобы замять инцидент. Однако за свою \"помощь\" Маний Аквиллий и другие римские чиновники потребовали от Никомеда колоссальные взятки, и царство влезло в долги.",
+      "era": "BC",
+      "latitude": 40.7667,
+      "longitude": 29.9167,
+      "name": "Rome's ultimatum to Mithridates",
+      "name_ru": "Ультиматум Рима Митридату",
       "tags": [
         "Roman",
         "Pontus",
         "Bithynian",
-        "Diplomacy",
-        "Debt"
+        "Crisis",
+        "Debt",
+        "Political"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0085",
-      "description": "After Sulla's victories at Chaeronea and Orchomenus, the Treaty of Dardanos forces Mithridates to withdraw from all conquered territories including Bithynia. Nicomedes IV is restored to his throne for the third and final time. The kingdom he returns to is devastated — cities looted, the economy shattered, the population depleted by war and the Asiatic Vespers. Bithynia is now a kingdom in name only, entirely dependent on Roman protection.",
-      "description_ru": "После побед Суллы при Херонее и Орхомене Дарданский мир вынуждает Митридата отступить со всех завоёванных территорий, включая Вифинию. Никомед IV восстановлен на троне в третий и последний раз. Царство, в которое он возвращается, опустошено — города разграблены, экономика разрушена, население убыло от войны и Азийских вечерен. Вифиния теперь царство лишь по названию, полностью зависящее от римской защиты.",
+      "description": "The Treaty of Dardanus forces Mithridates to retreat from all conquered territories, including Bithynia. Nicomedes IV is restored to the throne for the third time. The kingdom he returns to is devastated—cities sacked, the economy destroyed, the population decimated by war and the Asian Vespers. Bithynia is now a kingdom in name only, entirely dependent on Roman protection.",
+      "description_ru": "Дарданский мир вынуждает Митридата отступить со всех завоёванных территорий, включая Вифинию. Никомед IV восстановлен на троне в третий раз. Царство, в которое он возвращается, опустошено — города разграблены, экономика разрушена, население убыло от войны и Азийских вечерен. Вифиния теперь царство лишь по названию, полностью зависящее от римской защиты.",
       "era": "BC",
       "latitude": 40.7667,
       "longitude": 29.9167,
-      "name": "Nicomedes IV Restored — A Hollow Kingdom",
-      "name_ru": "Никомед IV восстановлен — пустое царство",
+      "name": "Nicomedes IV returns to devastated Bithynia",
+      "name_ru": "Никомед IV возвращается в разоренную Вифинию",
       "source": "https://en.wikipedia.org/wiki/Nicomedes_IV_of_Bithynia",
       "tags": [
         "Roman",
-        "Pontus",
         "Bithynian",
-        "Decline",
-        "Treaty"
+        "Decline"
       ],
       "type": "political"
     },
     {
-      "date": "01.01.0074",
-      "description": "Nicomedes IV dies without a legitimate heir and bequeaths his kingdom to the Roman Republic — following the precedent set by Attalus III of Pergamon in 133 BC. The Senate accepts the gift: Bithynia becomes a Roman province. Mithridates VI views the annexation of his neighbor as intolerable and invades Bithynia with a massive army, triggering the Third Mithridatic War — the final confrontation between Pontus and Rome.",
-      "description_ru": "Никомед IV умирает без законного наследника и завещает царство Римской республике — следуя прецеденту, установленному Атталом III Пергамским в 133 году до н.э. Сенат принимает дар: Вифиния становится римской провинцией. Митридат VI рассматривает аннексию соседа как неприемлемую и вторгается в Вифинию с огромной армией, развязывая Третью Митридатову войну — финальное противостояние Понта и Рима.",
+      "date": "01.01.0081",
+      "description": "The city of Mytilene on the island of Lesbos refused to surrender to Rome after the First Mithridatic War. The young Caesar was sent on a diplomatic mission to Bithynia to secure Bithynian ships for the siege of Lesbos and, at the same time, avoid being included in the proscription lists of Sulla, who was wreaking havoc in Rome.",
+      "description_ru": "Город Митилена на острове Лесбос отказался сдаваться Риму после Первой Митридатовой войны. Молодой Цезарь был прислан с дипломатической миссией в Вифинию, чтобы получить вифинские корабли для осады Лесбоса и заодно избежать попадания в проскрипционные списки Суллы, зверствующего в Риме.",
+      "era": "BC",
+      "latitude": 40.7667,
+      "longitude": 29.9167,
+      "name": "Caesar's diplomatic mission to Bithynia",
+      "name_ru": "Дипломатическая миссия Цезаря в Вифинии",
+      "tags": [
+        "Roman",
+        "Bithynian",
+        "Diplomacy",
+        "Julius Caesar 👤"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0075",
+      "description": "Nicomedes IV dies without a legitimate heir and bequeaths the kingdom to the Roman Republic, following the precedent set by Attalus III of Pergamon in 133 BC. The Senate accepts the gift: Bithynia becomes a Roman province. Mithridates VI of Pontus views annexation of a neighbor as an unacceptable risk.",
+      "description_ru": "Никомед IV умирает без законного наследника и завещает царство Римской республике — следуя прецеденту, установленному Атталом III Пергамским в 133 году до н.э. Сенат принимает дар: Вифиния становится римской провинцией. Митридат VI Понтийский рассматривает аннексию соседа как неприемлемый риск",
       "era": "BC",
       "latitude": 40.7667,
       "longitude": 29.9167,

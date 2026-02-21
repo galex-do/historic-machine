@@ -208,6 +208,26 @@
       "type": "military"
     },
     {
+      "date": "01.09.0183",
+      "description": "The king of Pergamon, Eumenes II, a loyal ally of Rome, saw the strengthening of Pontus after the capture of Sinope as a threat to the balance of power in the region and declared war. Most of the kingdoms of Asia Minor joined him - Bithynia, Paphlagonia, Cappadocia, Greater Armenia. The coalition defeated Pontus within three years, forcing it to return most of its conquests in Galatia and imposing a substantial indemnity.",
+      "description_ru": "Царь Пергама Эвмен II, верный союзник Рима, увидел в усилении Понта после захвата Синопа угрозу балансу сил в регионе и объявил войну. К нему присоединилась большая часть царств Малой Азии - Вифиния, Пафлагония, Каппадокия, Великая Армения. Коалиция победила Понт в течение 3 лет и принудила его вернуть большую часть завоеваний в Галатии и навязала значительную контрибуцию.",
+      "era": "BC",
+      "latitude": 42.0231,
+      "longitude": 35.1531,
+      "name": "War of Pontus with Asia Minor",
+      "name_ru": "Война Понта с Малой Азией",
+      "tags": [
+        "Greek",
+        "Armenian",
+        "Pergamon",
+        "Pontus",
+        "Bithynian",
+        "War",
+        "Contribution"
+      ],
+      "type": "military"
+    },
+    {
       "date": "01.01.0183",
       "description": "Pharnaces I of Pontus finally conquers Sinope after several unsuccessful attempts. He made it the new capital of Pontus, leaving the former capital of Amasia as the military and logistical center. Sinope's harbors, shipyards, and control of the Black Sea trade routes transformed Pontus from a mountainous kingdom into a maritime power.",
       "description_ru": "Фарнак I Понтийский все же завоёвывает Синопу после нескольких неудачных попыток. Фарнак делает её новой столицей Понта, оставив бывшей столице Амасии роль военного и логистического центра. Гавани Синопы, верфи и контроль над черноморскими торговыми путями превращают Понт из горного царства в морскую державу.",
@@ -392,11 +412,12 @@
       "longitude": 36.46861732,
       "name": "The Bosporan Kingdom bequeathed to Pontus",
       "name_ru": "Боспорское царство завещано Понту",
+      "source": "https://en.wikipedia.org/wiki/Paerisades_V",
       "tags": [
         "Greek",
         "Pontus",
         "Scythian",
-        "Bosphorus",
+        "Bosporan",
         "Vassalage"
       ],
       "type": "historic"
@@ -416,8 +437,26 @@
         "Pontus",
         "Scythian",
         "War",
-        "Bosphorus",
+        "Bosporan",
         "Rebellion"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0107",
+      "description": "Mithridates could not let the death of his ally and the loss of a strategic region go unpunished. He sent Diophantus back to Crimea with a powerful fleet and land army. The rebellion was brutally suppressed, the instigators punished, and Savmak himself captured. Crimea became a province of Pontus, supplying grain, money, and soldiers for future wars with Rome.",
+      "description_ru": "Митридат не мог оставить смерть своего союзника и потерю стратегического региона безнаказанными. Он отправил Диофанта назад в Крым с мощным флотом и сухопутной армией. Восстание было жестоко подавлено, зачинщики наказаны, а сам Савмак был взят в плен. Крым фактически стал провинцией Понта, поставлявшей зерно, деньги и солдат для будущих войн с Римом",
+      "era": "BC",
+      "latitude": 45.35099544,
+      "longitude": 36.46861732,
+      "name": "Pontus suppresses the uprising in Crimea",
+      "name_ru": "Понт подавляет восстание в Крыму",
+      "tags": [
+        "Greek",
+        "Pontus",
+        "Scythian",
+        "War",
+        "Vassalage"
       ],
       "type": "military"
     },
@@ -437,24 +476,6 @@
         "Annexation"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.0107",
-      "description": "Mithridates could not let the death of his ally and the loss of a strategic region go unpunished. He sent Diophantus back to Crimea with a powerful fleet and land army. The rebellion was brutally suppressed, the instigators punished, and Savmak himself captured. Crimea became a province of Pontus, supplying grain, money, and soldiers for future wars with Rome.",
-      "description_ru": "Митридат не мог оставить смерть своего союзника и потерю стратегического региона безнаказанными. Он отправил Диофанта назад в Крым с мощным флотом и сухопутной армией. Восстание было жестоко подавлено, зачинщики наказаны, а сам Савмак был взят в плен. Крым фактически стал провинцией Понта, поставлявшей зерно, деньги и солдат для будущих войн с Римом",
-      "era": "BC",
-      "latitude": 45.35099544,
-      "longitude": 36.46861732,
-      "name": "Pontus suppresses the uprising in Crimea",
-      "name_ru": "Понт подавляет восстание в Крыму",
-      "tags": [
-        "Greek",
-        "Pontus",
-        "Scythian",
-        "War",
-        "Vassalage"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.0105",
@@ -595,8 +616,8 @@
       "description": "Rome forces Nicomedes IV of Bithynia, who is mired in debt, to invade Pontus. Mithridates, who oversees Roman politics, is prepared: Pontic armies defeat Nicomedes and sweep across Asia Minor, crushing the Romans. In a single military season, he captures Bithynia, Phrygia, Mysia, Lycia, Pamphylia, and Ionia. Greek cities open their gates voluntarily - decades of Roman extortion have made Rome hated. Mithridates is greeted as a liberator.",
       "description_ru": "Рим вынуждает Никомеда IV Вифинского, который погряз в долгах, вторгнуться в Понт. Митридат, который следит за политикой в Риме, к этому готов: понтийские армии разбивают Никомеда и прокатываются по Малой Азии, громя римлян. За один военный сезон он захватывает Вифинию, Фригию, Мисию, Ликию, Памфилию и Ионию. Греческие города открывают ворота добровольно — десятилетия римских поборов сделали Рим ненавистным. Митридата встречают как освободителя.",
       "era": "BC",
-      "latitude": 41.74941538,
-      "longitude": 32.3865366,
+      "latitude": 40.7667,
+      "longitude": 29.9167,
       "name": "Mithridates Overruns Asia Minor",
       "name_ru": "Митридат захватывает Малую Азию",
       "source": "https://en.wikipedia.org/wiki/First_Mithridatic_War",
@@ -769,6 +790,7 @@
       "longitude": 36.46861732,
       "name": "The Bosporan Kingdom takes the side of Rome",
       "name_ru": "Боспорское царство принимает сторону Рима",
+      "source": "https://en.wikipedia.org/wiki/Machares",
       "tags": [
         "Greek",
         "Roman",
@@ -777,7 +799,7 @@
         "War",
         "Diplomacy",
         "Betrayal",
-        "Bosphorus",
+        "Bosporan",
         "Vassalage"
       ],
       "type": "political"
@@ -985,8 +1007,8 @@
     },
     {
       "date": "01.01.0063",
-      "description": "Mithridates' son, Pharnaces II, wishing to break the endless cycle of war with Rome, betrays his father, rallies the garrison and the population, and besieges him in the fortress of Panticapaeum. 72-year-old Mithridates VI attempts suicide by poison, but the poison has no effect on a body hardened by decades of daily Mithridaticism. His two daughters take the same poison and die in front of him. He orders his Gallic bodyguard, Bituitus, to kill him with a sword.",
-      "description_ru": "Сын Митридата Фарнак II, желая разорвать бесконечный цикл войны с Римом, предает отца, поднимает гарнизон и население и блокирует его в крепости Пантикапея. 72-летний Митридат VI пытается покончить с собой ядом, но яд не действует на тело, закалённое десятилетиями ежедневного митридатизма. На его глазах две дочери принимают тот же яд и умирают. Он приказывает своему галльскому телохранителю Битуиту убить его мечом.",
+      "description": "Mithridates' son, Pharnaces II, wishing to break the endless cycle of war with Rome, betrays his father, rallies the garrison and the population, and besieges him in the fortress of Panticapaeum. 72-year-old Mithridates VI attempts suicide by poison, but the poison has no effect on a body hardened by decades of daily Mithridaticism. His two daughters take the same poison and die in front of him. He orders his Gallic bodyguard, Bituitus, to kill him with a sword. Pharnaces becomes king with the sanction of Rome",
+      "description_ru": "Сын Митридата Фарнак II, желая разорвать бесконечный цикл войны с Римом, предает отца, поднимает гарнизон и население и блокирует его в крепости Пантикапея. 72-летний Митридат VI пытается покончить с собой ядом, но яд не действует на тело, закалённое десятилетиями ежедневного митридатизма. На его глазах две дочери принимают тот же яд и умирают. Он приказывает своему галльскому телохранителю Битуиту убить его мечом. Фарнак становится царем с санкции Рима",
       "era": "BC",
       "latitude": 45.35099544,
       "longitude": 36.46861732,
@@ -1004,6 +1026,23 @@
         "Mithridates VI Eupator 👑"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0048",
+      "description": "Taking advantage of the civil war in Rome and the ensuing chaos, Pharnaces invaded Asia Minor, hoping to reclaim the Kingdom of Pontus, which he considered rightfully his. He captured key cities (Sinope, Amisus), plundered the property of Roman citizens, and declared himself the rightful ruler of Pontus.",
+      "description_ru": "Фарнак, пользуясь гражданской войной в Риме и наступившим хаосом, вторгается в Малую Азию, с расчетом вернуть Понтийское царство, которое он считает своим по праву. Он захватил ключевые города (Синопу, Амис), разграбил имущество римских граждан и объявил себя законным правителем Понта",
+      "era": "BC",
+      "latitude": 42.0231,
+      "longitude": 35.1531,
+      "name": "The Pontic invasion of Asia Minor",
+      "name_ru": "Вторжение понтийцев в Малую Азию",
+      "tags": [
+        "Greek",
+        "Roman",
+        "Pontus",
+        "War"
+      ],
+      "type": "military"
     }
   ],
   "filename": "kingdom_of_pontus.json"
