@@ -533,7 +533,12 @@ export default {
   .events-section {
     padding: 0.75rem;
   }
-  
+
+  .events-header {
+    margin-bottom: 0;
+    padding-bottom: 0.25rem;
+  }
+
   .events-grid,
   .page-counter {
     display: none;
