@@ -282,7 +282,7 @@ const UI_TRANSLATIONS = {
     aroundSameTime: 'Around the same time',
     sameTimeAndRegion: 'Same time and region',
     nearByKind: 'Near by kind',
-    refreshRelated: 'Shuffle related events',
+    refreshRelated: 'Refresh',
     
     // Datasets Table
     columnFilename: 'Filename',
@@ -617,7 +617,7 @@ const UI_TRANSLATIONS = {
     aroundSameTime: 'Примерно в то же время',
     sameTimeAndRegion: 'То же время и регион',
     nearByKind: 'Похожие события',
-    refreshRelated: 'Перемешать связанные события',
+    refreshRelated: 'Обновить',
     
     // Datasets Table
     columnFilename: 'Имя файла',

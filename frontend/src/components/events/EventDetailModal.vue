@@ -53,6 +53,7 @@
             <div class="related_category_header">
               <span class="related_icon">🗓️</span>
               <span class="related_title">{{ t('aroundSameTime') }}</span>
+              <button class="refresh_related_btn" @click="refreshRelated" :title="t('refreshRelated')">↻</button>
             </div>
             <div class="related_list">
               <div 
@@ -71,6 +72,7 @@
             <div class="related_category_header">
               <span class="related_icon">🏷️</span>
               <span class="related_title">{{ t('nearByKind') }}</span>
+              <button class="refresh_related_btn" @click="refreshRelated" :title="t('refreshRelated')">↻</button>
             </div>
             <div class="related_list">
               <div 
