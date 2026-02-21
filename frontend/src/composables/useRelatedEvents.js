@@ -134,10 +134,15 @@ export function useRelatedEvents(currentEvent, allEvents) {
     computeRelatedEvents()
   }, { immediate: true, deep: false })
 
+  const refresh = () => {
+    computeRelatedEvents()
+  }
+
   return {
     aroundSameTime,
     sameTimeRegion,
     nearByKind,
-    isComputed
+    isComputed,
+    refresh
   }
 }
