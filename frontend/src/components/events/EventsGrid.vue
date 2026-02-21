@@ -88,8 +88,10 @@
       @wheel="handleWheel"
       ref="eventsGrid"
     >
-      <div v-if="events.length === 0" class="no-events">
-        <p>No events found for the selected period. Click on the map to add your first historical event!</p>
+      <div v-if="events.length === 0" class="empty-state">
+        <div class="empty-state-icon">🗺️</div>
+        <h4 class="empty-state-title">{{ t('emptyStateTitle') }}</h4>
+        <p class="empty-state-hint">{{ t('emptyStateHint') }}</p>
       </div>
       
       <EventCard
@@ -470,15 +472,36 @@ export default {
   min-height: 0; /* Allow flex item to shrink and scroll */
 }
 
-.no-events {
+.empty-state {
   text-align: center;
-  padding: 2rem;
-  color: #718096;
-  font-style: italic;
+  padding: 2.5rem 1.5rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   flex: 1;
+  gap: 0.5rem;
+}
+
+.empty-state-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+  opacity: 0.8;
+}
+
+.empty-state-title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.empty-state-hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #a0aec0;
+  line-height: 1.5;
+  max-width: 240px;
 }
 
 .pagination-controls {

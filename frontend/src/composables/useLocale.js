@@ -21,6 +21,9 @@ const UI_TRANSLATIONS = {
     loading: 'Loading',
     years: 'years',
     apply: 'Apply',
+    emptyStateTitle: 'No events yet',
+    emptyStateHint: 'Select a historical period above or click on the map to add your first event',
+    emptyStateSuggestion: 'Try a period',
     
     // Pin Mode
     pinModeActive: 'Click on map to set location',
@@ -357,6 +360,9 @@ const UI_TRANSLATIONS = {
     loading: 'Загрузка',
     years: 'лет',
     apply: 'Применить',
+    emptyStateTitle: 'Событий пока нет',
+    emptyStateHint: 'Выберите исторический период выше или нажмите на карту, чтобы добавить первое событие',
+    emptyStateSuggestion: 'Выбрать период',
     
     // Pin Mode
     pinModeActive: 'Нажмите на карту для выбора местоположения',

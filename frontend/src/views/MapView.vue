@@ -633,9 +633,10 @@ export default {
   transition: all 0.3s ease;
   width: 350px;
   flex-shrink: 0;
-  overflow: visible; /* Allow tag dropdown to appear above map */
-  border-right: 1px solid #e2e8f0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  border-right: none;
+  box-shadow: 4px 0 16px rgba(0, 0, 0, 0.08), 1px 0 3px rgba(0, 0, 0, 0.04);
+  z-index: 2;
   display: flex;
   flex-direction: column;
 }
