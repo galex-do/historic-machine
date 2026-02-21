@@ -2449,4 +2449,18 @@ export default {
 ::deep(.leaflet-marker-pane .emoji-marker-container:not(.leaflet-cluster-anim)) {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  .event_info_modal_overlay {
+    padding: 0;
+  }
+
+  .event_info_modal {
+    max-width: none;
+    max-height: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+}
 </style>
