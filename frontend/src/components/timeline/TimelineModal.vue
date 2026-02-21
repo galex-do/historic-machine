@@ -218,9 +218,16 @@ export default {
     const showDetails = ref(false)
     const isLoading = ref(false)
     
+    const localizeDate = (dateStr) => {
+      if (!dateStr) return ''
+      return dateStr
+        .replace(/\bBC\b/, t('eraBC'))
+        .replace(/\bAD\b/, t('eraAD'))
+    }
+
     const timelineTitle = computed(() => {
-      const from = props.dateFromDisplay || ''
-      const to = props.dateToDisplay || ''
+      const from = localizeDate(props.dateFromDisplay)
+      const to = localizeDate(props.dateToDisplay)
       if (from && to) {
         return `${t('eventsFromToPrefix')} ${from} ${t('eventsFromToMiddle')} ${to}`
       }
