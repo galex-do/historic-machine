@@ -29,43 +29,48 @@
       <div class="events-filters">
         <button 
           @click="handleShare"
-          class="filter-btn share-btn"
+          class="filter-btn share-btn labeled-btn"
           :title="shareCopied ? t('shareCopied') : t('shareUrl')"
         >
-          {{ shareCopied ? '✓' : '🔗' }}
+          <span class="btn-icon">{{ shareCopied ? '✓' : '🔗' }}</span>
+          <span class="btn-label">{{ t('toolbarShare') }}</span>
         </button>
         <button 
           @click="openTimeline"
-          class="filter-btn timeline-btn"
+          class="filter-btn timeline-btn labeled-btn"
           :disabled="events.length === 0"
           :title="t('timelineView')"
         >
-          📅
+          <span class="btn-icon">📅</span>
+          <span class="btn-label">{{ t('toolbarTimeline') }}</span>
         </button>
         <button 
           @click="toggleTagFilter"
-          class="filter-btn tag-filter"
+          class="filter-btn tag-filter labeled-btn"
           :class="{ 'active': tagFilterVisible && selectedTags.length > 0 }"
           :title="tagFilterVisible ? 'Hide tag filters' : 'Show tag filters'"
         >
-          🏷️
+          <span class="btn-icon">🏷️</span>
+          <span class="btn-label">{{ t('toolbarTags') }}</span>
         </button>
         <button 
           @click="toggleMapFilter"
-          class="filter-btn map-filter"
+          class="filter-btn map-filter labeled-btn"
           :class="{ 'active': mapFilterEnabled }"
           title="Filter events by current map view"
         >
-          🗺️
+          <span class="btn-icon">🗺️</span>
+          <span class="btn-label">{{ t('toolbarHere') }}</span>
         </button>
         <button 
           @click="requestGeolocation"
-          class="filter-btn geolocation-btn"
+          class="filter-btn geolocation-btn labeled-btn"
           :class="{ 'loading': geolocationLoading }"
           :disabled="geolocationLoading"
           :title="geolocationLoading ? t('geolocationLoading') : t('geolocationButton')"
         >
-          {{ geolocationLoading ? '⏳' : '📍' }}
+          <span class="btn-icon">{{ geolocationLoading ? '⏳' : '📍' }}</span>
+          <span class="btn-label">{{ t('toolbarLocate') }}</span>
         </button>
       </div>
     </div>
@@ -426,7 +431,7 @@ export default {
 
 .events-filters {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.25rem;
 }
 
 .filter-btn {
@@ -438,6 +443,31 @@ export default {
   font-size: 0.875rem;
   transition: all 0.2s ease;
   color: #64748b;
+}
+
+.filter-btn.labeled-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  padding: 0.25rem 0.35rem 0.2rem;
+  min-width: 0;
+}
+
+.btn-icon {
+  font-size: 0.85rem;
+  line-height: 1.1;
+}
+
+.btn-label {
+  font-size: 0.55rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  white-space: nowrap;
+  color: inherit;
+  opacity: 0.8;
 }
 
 .filter-btn:hover {
@@ -452,6 +482,10 @@ export default {
   box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
 }
 
+.filter-btn.active .btn-label {
+  opacity: 1;
+}
+
 .filter-btn:disabled {
   opacity: 0.4;
   cursor: not-allowed;
@@ -460,6 +494,10 @@ export default {
 .map-filter {
   font-size: 1rem;
   line-height: 1;
+}
+
+.map-filter .btn-icon {
+  font-size: 0.95rem;
 }
 
 

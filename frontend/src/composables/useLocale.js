@@ -81,6 +81,13 @@ const UI_TRANSLATIONS = {
     shareUrl: 'Copy shareable link',
     shareCopied: 'Link copied!',
     
+    // Toolbar short labels
+    toolbarShare: 'Share',
+    toolbarTimeline: 'Timeline',
+    toolbarTags: 'Tags',
+    toolbarHere: 'Here',
+    toolbarLocate: 'Find me',
+    
     // Login Modal
     loginToHistoria: 'Login to Historia ex machina',
     username: 'Username:',
@@ -370,6 +377,13 @@ const UI_TRANSLATIONS = {
     // URL sharing
     shareUrl: 'Скопировать ссылку',
     shareCopied: 'Ссылка скопирована!',
+    
+    // Toolbar short labels
+    toolbarShare: 'Ссылка',
+    toolbarTimeline: 'Лента',
+    toolbarTags: 'Теги',
+    toolbarHere: 'Здесь',
+    toolbarLocate: 'Где я?',
     
     // Login Modal
     loginToHistoria: 'Вход в Historia ex machina',
