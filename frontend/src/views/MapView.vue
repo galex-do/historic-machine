@@ -636,7 +636,6 @@ export default {
   overflow: visible;
   border-right: none;
   box-shadow: 4px 0 16px rgba(0, 0, 0, 0.08), 1px 0 3px rgba(0, 0, 0, 0.04);
-  z-index: 2;
   display: flex;
   flex-direction: column;
 }
