@@ -23,7 +23,7 @@
         <button 
           @click="toggleTagFilter"
           class="filter-btn tag-filter labeled-btn"
-          :class="{ 'active': tagFilterVisible && selectedTags.length > 0 }"
+          :class="{ 'active': selectedTags.length > 0 }"
           :title="tagFilterVisible ? 'Hide tag filters' : 'Show tag filters'"
         >
           <span class="btn-icon">🏷️</span>
