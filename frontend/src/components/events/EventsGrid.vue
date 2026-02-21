@@ -534,7 +534,8 @@ export default {
     padding: 0.75rem;
   }
   
-  .events-grid {
+  .events-grid,
+  .page-counter {
     display: none;
   }
 }
