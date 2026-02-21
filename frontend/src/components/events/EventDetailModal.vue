@@ -108,6 +108,16 @@
         >
           ✏️ {{ t('editEvent') }}
         </button>
+        <a 
+          v-if="event && event.latitude && event.longitude"
+          :href="`https://www.google.com/maps?q=${event.latitude},${event.longitude}`"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="google_maps_btn"
+          :title="t('openGoogleMaps')"
+        >
+          🌍 {{ t('openGoogleMaps') }}
+        </a>
         <button class="focus_btn" @click="handleFocusEvent" :title="t('focusOnMap')">
           ⌖ {{ t('focusOnMap') }}
         </button>
@@ -494,6 +504,24 @@ export default {
 
 .edit_btn:hover {
   background: #d97706;
+}
+
+.google_maps_btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #10b981;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.google_maps_btn:hover {
+  background: #059669;
 }
 
 </style>
