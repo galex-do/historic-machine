@@ -87,6 +87,7 @@ const UI_TRANSLATIONS = {
     toolbarTags: 'Tags',
     toolbarHere: 'Here',
     toolbarLocate: 'Find me',
+    paginationHint: 'Scroll or use arrow keys to navigate',
     
     // Login Modal
     loginToHistoria: 'Login to Historia ex machina',
@@ -384,6 +385,7 @@ const UI_TRANSLATIONS = {
     toolbarTags: 'Теги',
     toolbarHere: 'Здесь',
     toolbarLocate: 'Где я?',
+    paginationHint: 'Прокрутка или стрелки для навигации',
     
     // Login Modal
     loginToHistoria: 'Вход в Historia ex machina',

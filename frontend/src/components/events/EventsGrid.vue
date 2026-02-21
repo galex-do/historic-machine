@@ -2,31 +2,11 @@
   <div class="events-section">
     <!-- Events Header with Filters -->
     <div class="events-header">
-      <div class="events-info">
-        <!-- Merged Pagination with Count -->
-        <div class="pagination-controls">
-          <button 
-            @click="goToPage(currentPage - 1)"
-            :disabled="currentPage === 1 || totalPages <= 1"
-            class="pagination-btn"
-          >
-            ‹
-          </button>
-          
-          <span class="page-info">
-            {{ paginationDisplay }}
-          </span>
-          
-          <button 
-            @click="goToPage(currentPage + 1)"
-            :disabled="currentPage === totalPages || totalPages <= 1"
-            class="pagination-btn"
-          >
-            ›
-          </button>
-        </div>
-      </div>
       <div class="events-filters">
+        <span 
+          class="page-counter"
+          :title="t('paginationHint')"
+        >{{ paginationDisplay }}</span>
         <button 
           @click="handleShare"
           class="filter-btn share-btn labeled-btn"
@@ -409,17 +389,11 @@ export default {
 
 .events-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin-bottom: 0.75rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #e2e8f0;
-}
-
-.events-info {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
 }
 
 .events-count {
@@ -542,41 +516,21 @@ export default {
   max-width: 240px;
 }
 
-.pagination-controls {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.pagination-btn {
-  background: transparent;
+.page-counter {
   color: #64748b;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  font-size: 1.25rem;
-  transition: color 0.2s ease;
-  min-width: auto;
-  line-height: 1;
-}
-
-.pagination-btn:hover:not(:disabled) {
-  color: #3b82f6;
-}
-
-.pagination-btn:disabled {
-  color: #cbd5e1;
-  cursor: not-allowed;
-}
-
-.page-info {
-  color: #64748b;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 0.75rem;
   white-space: nowrap;
-  line-height: 1.25rem;
+  line-height: 1;
   display: flex;
   align-items: center;
+  padding: 0.3rem 0.5rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  cursor: default;
+  user-select: none;
+  align-self: center;
 }
 
 /* Responsive adjustments */
@@ -585,13 +539,7 @@ export default {
     padding: 0.75rem;
   }
   
-  /* Hide event list on mobile - show only counter and controls */
   .events-grid {
-    display: none;
-  }
-  
-  /* Hide pagination on mobile since we don't show event cards */
-  .pagination-controls {
     display: none;
   }
 }
