@@ -277,6 +277,7 @@ const UI_TRANSLATIONS = {
     showLess: 'Show less',
     noEventsInTimeline: 'No events to display in timeline',
     scrollForMore: 'Scroll for more',
+    expandDateRange: 'Show all events during this period',
     
     // Related Events
     aroundSameTime: 'Around the same time',
@@ -612,6 +613,7 @@ const UI_TRANSLATIONS = {
     showLess: 'Показать меньше',
     noEventsInTimeline: 'Нет событий для отображения на временной шкале',
     scrollForMore: 'Прокрутите для загрузки',
+    expandDateRange: 'Показать все события за этот период',
     
     // Related Events
     aroundSameTime: 'Примерно в то же время',

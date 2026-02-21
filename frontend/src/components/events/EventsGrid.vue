@@ -115,6 +115,7 @@
       @close="timelineModalOpen = false"
       @focus-event="$emit('focus-event', $event)"
       @tag-clicked="$emit('tag-clicked', $event)"
+      @expand-date-range="$emit('expand-date-range', $event)"
       @show-detail="handleTimelineShowDetail"
     />
 
@@ -180,7 +181,7 @@ export default {
       default: false
     }
   },
-  emits: ['focus-event', 'highlight-event', 'map-filter-toggle', 'tag-clicked', 'remove-tag', 'clear-all-tags', 'toggle-follow', 'focus-on-filtered', 'geolocate', 'share', 'edit-event', 'back-to-location'],
+  emits: ['focus-event', 'highlight-event', 'map-filter-toggle', 'tag-clicked', 'remove-tag', 'clear-all-tags', 'toggle-follow', 'focus-on-filtered', 'geolocate', 'share', 'edit-event', 'back-to-location', 'expand-date-range'],
   setup() {
     const { t } = useLocale()
     const { loading: geolocationLoading, get_current_position } = useGeolocation()

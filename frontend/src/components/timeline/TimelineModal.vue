@@ -26,6 +26,11 @@
             class="timeline_filter_tag"
             :style="getTagStyle(tag)"
           >{{ tag.name }}</span>
+          <button 
+            class="expand_date_range_btn" 
+            @click="handleExpandDateRange"
+            :title="t('expandDateRange')"
+          >🔍</button>
         </div>
       </div>
 
@@ -207,7 +212,7 @@ export default {
       default: () => []
     }
   },
-  emits: ['close', 'focus-event', 'tag-clicked', 'show-detail'],
+  emits: ['close', 'focus-event', 'tag-clicked', 'show-detail', 'expand-date-range'],
   setup(props, { emit }) {
     const { t, formatEventDisplayDate, formatDayMonth, currentLocale } = useLocale()
     const previouslyFocusedElement = ref(null)
@@ -476,6 +481,48 @@ export default {
       closeModal()
     }
 
+    const handleExpandDateRange = () => {
+      if (!props.events || props.events.length === 0) return
+      
+      let minChron = Infinity
+      let maxChron = -Infinity
+      let minEvent = null
+      let maxEvent = null
+      
+      for (const event of props.events) {
+        const val = getChronologicalValue(event.event_date, event.era)
+        if (val < minChron) {
+          minChron = val
+          minEvent = event
+        }
+        if (val > maxChron) {
+          maxChron = val
+          maxEvent = event
+        }
+      }
+      
+      if (!minEvent || !maxEvent) return
+
+      const extractYear = (ev) => {
+        const dateStr = ev.event_date
+        let year
+        if (dateStr.startsWith('-')) {
+          year = parseInt(dateStr.substring(1).split('T')[0].split('-')[0], 10)
+        } else {
+          year = parseInt(dateStr.split('T')[0].split('-')[0], 10)
+        }
+        return year
+      }
+      
+      const fromYear = extractYear(minEvent)
+      const toYear = extractYear(maxEvent)
+      const fromDisplay = `${fromYear} ${minEvent.era || 'AD'}`
+      const toDisplay = `${toYear} ${maxEvent.era || 'AD'}`
+      
+      emit('expand-date-range', { fromDisplay, toDisplay })
+      closeModal()
+    }
+
     const savedScrollPosition = ref(0)
     const savedVisibleCount = ref(0)
 
@@ -545,6 +592,7 @@ export default {
       closeModal,
       handleFocusEvent,
       handleTagClick,
+      handleExpandDateRange,
       handleShowDetail,
       handleScroll,
       getEventEmoji,
@@ -617,6 +665,23 @@ export default {
   display: flex;
   flex-wrap: wrap;
   gap: 0.25rem;
+  align-items: center;
+}
+
+.expand_date_range_btn {
+  background: none;
+  border: none;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 0.2rem;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.expand_date_range_btn:hover {
+  color: #3b82f6;
 }
 
 .timeline_filter_tag {

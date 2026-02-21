@@ -51,6 +51,7 @@
             @share="handleShareUrl"
             @edit-event="handleEditEvent"
             @back-to-location="handleBackToLocation"
+            @expand-date-range="handleExpandDateRange"
             ref="eventsGrid"
           />
         </div>
@@ -411,7 +412,14 @@ export default {
 
     const handleClearAllTags = () => {
       clearTags()
-      // Disable narrative flow when clearing all tags
+      narrativeFlowEnabled.value = false
+      applyFilters()
+    }
+
+    const handleExpandDateRange = ({ fromDisplay, toDisplay }) => {
+      updateDateFrom(fromDisplay)
+      updateDateTo(toDisplay)
+      clearTags()
       narrativeFlowEnabled.value = false
       applyFilters()
     }
@@ -571,6 +579,7 @@ export default {
       handleTagClick,
       handleRemoveTag,
       handleClearAllTags,
+      handleExpandDateRange,
       handleToggleNarrativeFlow,
       handleFocusOnFiltered,
 
