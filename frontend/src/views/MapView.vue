@@ -284,6 +284,10 @@ export default {
 
     // Filter methods
     const applyFilters = (isStepping = false) => {
+      if (worldMap.value && worldMap.value.clearHighlight) {
+        worldMap.value.clearHighlight()
+      }
+
       filterEvents(
         dateFrom.value,
         dateTo.value,
