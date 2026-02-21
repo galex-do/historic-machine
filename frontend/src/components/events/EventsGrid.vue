@@ -3,10 +3,6 @@
     <!-- Events Header with Filters -->
     <div class="events-header">
       <div class="events-filters">
-        <span 
-          class="page-counter"
-          :title="t('paginationHint')"
-        >{{ paginationDisplay }}</span>
         <button 
           @click="handleShare"
           class="filter-btn share-btn labeled-btn"
@@ -67,6 +63,12 @@
       @focus-on-filtered="$emit('focus-on-filtered')"
       @add-tag="$emit('tag-clicked', $event)"
     />
+
+    <span 
+      v-if="events.length > 0"
+      class="page-counter"
+      :title="t('paginationHint')"
+    >{{ paginationDisplay }}</span>
 
     <div 
       class="events-grid"
@@ -518,19 +520,12 @@ export default {
 
 .page-counter {
   color: #64748b;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 0.75rem;
   white-space: nowrap;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  padding: 0.3rem 0.5rem;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 6px;
+  line-height: 1.25rem;
+  padding: 0.25rem 0.25rem 0;
   cursor: default;
-  user-select: none;
-  align-self: center;
 }
 
 /* Responsive adjustments */
