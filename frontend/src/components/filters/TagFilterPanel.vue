@@ -50,7 +50,7 @@
         <span class="filter_label">{{ t('filteredByTags') }}:</span>
         <div class="header_actions">
           <button 
-            class="follow_toggle_btn"
+            class="tag_action_btn"
             :class="{ 'active': followEnabled }"
             @click="$emit('toggle-follow')"
             :title="followEnabled ? t('disableNarrativeFlow') : t('enableNarrativeFlow')"
@@ -58,18 +58,18 @@
             {{ followEnabled ? '🔗' : '○' }} {{ t('followEvents') }}
           </button>
           <button
-            class="focus_filtered_btn"
+            class="tag_action_btn"
             @click="$emit('focus-on-filtered')"
             :title="t('focusOnFilteredTitle')"
           >
-            ⌖
+            ⌖ {{ t('focusOnMap') }}
           </button>
           <button 
-            class="clear_all_btn" 
+            class="tag_action_btn danger" 
             @click="$emit('clear-all-tags')"
             :title="t('clearAllTags')"
           >
-            {{ t('clearAll') }}
+            ✕ {{ t('clearAll') }}
           </button>
         </div>
       </div>
@@ -335,74 +335,47 @@ export default {
   gap: 0.5rem;
 }
 
-.follow_toggle_btn {
-  background: #e2e8f0;
-  border: 1px solid #cbd5e0;
-  color: #4a5568;
-  font-size: 0.8rem;
+.tag_action_btn {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 0.75rem;
   font-weight: 500;
   cursor: pointer;
-  padding: 0.25rem 0.65rem;
+  padding: 0.25rem 0.6rem;
   border-radius: 4px;
   transition: all 0.2s;
   display: flex;
   align-items: center;
   gap: 0.25rem;
+  white-space: nowrap;
 }
 
-.follow_toggle_btn:hover {
-  background: #cbd5e0;
-  border-color: #a0aec0;
+.tag_action_btn:hover {
+  background: #e2e8f0;
+  border-color: #cbd5e1;
+  color: #1e293b;
 }
 
-.follow_toggle_btn.active {
+.tag_action_btn.active {
   background: #3b82f6;
   border-color: #2563eb;
   color: white;
 }
 
-.follow_toggle_btn.active:hover {
+.tag_action_btn.active:hover {
   background: #2563eb;
   border-color: #1d4ed8;
 }
 
-.focus_filtered_btn {
-  background: #e2e8f0;
-  border: 1px solid #cbd5e0;
-  color: #4a5568;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 0.15rem 0.5rem;
-  border-radius: 4px;
-  transition: all 0.2s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
+.tag_action_btn.danger {
+  color: #dc2626;
 }
 
-.focus_filtered_btn:hover {
-  background: #3b82f6;
-  border-color: #2563eb;
-  color: white;
-}
-
-.clear_all_btn {
-  background: none;
-  border: none;
-  color: #dc3545;
-  font-size: 0.8rem;
-  font-weight: 500;
-  cursor: pointer;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  transition: all 0.2s;
-}
-
-.clear_all_btn:hover {
-  background: #fee;
-  color: #c82333;
+.tag_action_btn.danger:hover {
+  background: #fef2f2;
+  border-color: #fca5a5;
+  color: #b91c1c;
 }
 
 .tag_chips_container {
