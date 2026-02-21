@@ -30,13 +30,11 @@
         </div>
 
         <div v-if="hasRelatedEvents" class="related_events_section">
-          <div class="related_section_header">
-            <button class="refresh_related_btn" @click="refreshRelated" :title="t('refreshRelated')">↻</button>
-          </div>
           <div v-if="sameTimeRegion.length > 0" class="related_category">
             <div class="related_category_header">
               <span class="related_icon">📍</span>
               <span class="related_title">{{ t('sameTimeAndRegion') }}</span>
+              <button class="refresh_related_btn" @click="refreshRelated" :title="t('refreshRelated')">↻</button>
             </div>
             <div class="related_list">
               <div 
@@ -362,28 +360,20 @@ export default {
   gap: 1rem;
 }
 
-.related_section_header {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: -0.5rem;
-}
-
 .refresh_related_btn {
   background: none;
-  border: 1px solid #e2e8f0;
-  border-radius: 4px;
-  font-size: 1rem;
+  border: none;
+  font-size: 0.85rem;
   color: #94a3b8;
   cursor: pointer;
-  padding: 0.15rem 0.4rem;
+  padding: 0;
+  margin-left: 0.375rem;
   line-height: 1;
-  transition: all 0.2s;
+  transition: color 0.2s;
 }
 
 .refresh_related_btn:hover {
   color: #3b82f6;
-  border-color: #3b82f6;
-  background: #f1f5f9;
 }
 
 .related_category {
