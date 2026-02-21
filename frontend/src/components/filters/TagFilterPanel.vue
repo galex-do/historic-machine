@@ -55,21 +55,21 @@
             @click="$emit('toggle-follow')"
             :title="followEnabled ? t('disableNarrativeFlow') : t('enableNarrativeFlow')"
           >
-            {{ followEnabled ? '🔗' : '○' }} {{ t('followEvents') }}
+            {{ followEnabled ? '🔗' : '○' }}
           </button>
           <button
             class="tag_action_btn"
             @click="$emit('focus-on-filtered')"
             :title="t('focusOnFilteredTitle')"
           >
-            ⌖ {{ t('focusOnMap') }}
+            ⌖
           </button>
           <button 
             class="tag_action_btn danger" 
             @click="$emit('clear-all-tags')"
             :title="t('clearAllTags')"
           >
-            ✕ {{ t('clearAll') }}
+            ✕
           </button>
         </div>
       </div>
@@ -339,16 +339,16 @@ export default {
   background: #f1f5f9;
   border: 1px solid #e2e8f0;
   color: #475569;
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: 0.875rem;
+  font-weight: 600;
   cursor: pointer;
-  padding: 0.25rem 0.6rem;
+  padding: 0.2rem 0.45rem;
   border-radius: 4px;
   transition: all 0.2s;
   display: flex;
   align-items: center;
-  gap: 0.25rem;
-  white-space: nowrap;
+  justify-content: center;
+  line-height: 1;
 }
 
 .tag_action_btn:hover {
