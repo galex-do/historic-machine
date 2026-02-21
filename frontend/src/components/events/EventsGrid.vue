@@ -382,7 +382,7 @@ export default {
 <style scoped>
 .events-section {
   background: transparent;
-  padding: 1rem;
+  padding: 0.5rem 1rem 1rem;
   height: 100%;
   overflow: hidden;
   display: flex;
@@ -393,7 +393,7 @@ export default {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #e2e8f0;
 }
