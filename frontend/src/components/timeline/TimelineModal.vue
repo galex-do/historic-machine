@@ -3,18 +3,30 @@
     <div class="timeline_modal">
       <!-- Modal Header -->
       <div class="timeline_modal_header">
-        <h2 class="timeline_modal_title">{{ t('historicalEvents') }}</h2>
-        <span v-if="totalEventCount > 0" class="timeline_event_count">
-          {{ visibleEventCount }} / {{ totalEventCount }}
-        </span>
-        <button 
-          class="toggle_details_btn" 
-          @click="toggleDetails"
-          :title="showDetails ? t('hideDetails') : t('showDetails')"
-        >
-          {{ showDetails ? '📝' : '📋' }}
-        </button>
-        <button class="close_btn" @click="closeModal" :title="t('close')">×</button>
+        <div class="timeline_header_top">
+          <h2 class="timeline_modal_title">{{ timelineTitle }}</h2>
+          <div class="timeline_header_controls">
+            <span v-if="totalEventCount > 0" class="timeline_event_count">
+              {{ visibleEventCount }} / {{ totalEventCount }}
+            </span>
+            <button 
+              class="toggle_details_btn" 
+              @click="toggleDetails"
+              :title="showDetails ? t('hideDetails') : t('showDetails')"
+            >
+              {{ showDetails ? '📝' : '📋' }}
+            </button>
+            <button class="close_btn" @click="closeModal" :title="t('close')">×</button>
+          </div>
+        </div>
+        <div v-if="selectedTags && selectedTags.length > 0" class="timeline_header_tags">
+          <span
+            v-for="tag in selectedTags"
+            :key="tag.id"
+            class="timeline_filter_tag"
+            :style="getTagStyle(tag)"
+          >{{ tag.name }}</span>
+        </div>
       </div>
 
       <!-- Modal Content -->
@@ -181,6 +193,18 @@ export default {
     preserveScroll: {
       type: Boolean,
       default: false
+    },
+    dateFromDisplay: {
+      type: String,
+      default: ''
+    },
+    dateToDisplay: {
+      type: String,
+      default: ''
+    },
+    selectedTags: {
+      type: Array,
+      default: () => []
     }
   },
   emits: ['close', 'focus-event', 'tag-clicked', 'show-detail'],
@@ -194,6 +218,15 @@ export default {
     const showDetails = ref(false)
     const isLoading = ref(false)
     
+    const timelineTitle = computed(() => {
+      const from = props.dateFromDisplay || ''
+      const to = props.dateToDisplay || ''
+      if (from && to) {
+        return `${t('eventsFromToPrefix')} ${from} ${t('eventsFromToMiddle')} ${to}`
+      }
+      return t('historicalEvents')
+    })
+
     const cachedGroupedEvents = ref([])
     const lastEventsHash = ref('')
 
@@ -494,6 +527,7 @@ export default {
     return {
       t,
       scrollContainer,
+      timelineTitle,
       visibleYearGroups,
       totalEventCount,
       visibleEventCount,
@@ -535,18 +569,33 @@ export default {
 
 .timeline_modal_header {
   display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e2e8f0;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.timeline_header_top {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 2rem;
-  border-bottom: 1px solid #e2e8f0;
   gap: 1rem;
+}
+
+.timeline_header_controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
 }
 
 .timeline_modal_title {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #1e293b;
+  min-width: 0;
 }
 
 .timeline_event_count {
@@ -555,7 +604,21 @@ export default {
   background: #f1f5f9;
   padding: 0.25rem 0.75rem;
   border-radius: 12px;
-  margin-left: auto;
+}
+
+.timeline_header_tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.timeline_filter_tag {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 .toggle_details_btn {

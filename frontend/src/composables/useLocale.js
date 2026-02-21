@@ -6,6 +6,8 @@ const UI_TRANSLATIONS = {
     // Filters
     filters: 'Filters',
     historicalEvents: 'Historical Events',
+    eventsFromToPrefix: 'Events from',
+    eventsFromToMiddle: 'to',
     historicalPeriod: 'Historical Period',
     specificPeriod: 'Specific Period:',
     selectPeriodGroup: 'Select Period',
@@ -339,6 +341,8 @@ const UI_TRANSLATIONS = {
     // Filters
     filters: 'Фильтры',
     historicalEvents: 'Исторические события',
+    eventsFromToPrefix: 'События с',
+    eventsFromToMiddle: 'по',
     historicalPeriod: 'Исторический период',
     specificPeriod: 'Сегмент:',
     selectPeriodGroup: 'Выбрать период',

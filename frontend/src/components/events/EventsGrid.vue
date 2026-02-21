@@ -109,6 +109,9 @@
       :is-open="timelineModalOpen"
       :events="events"
       :preserve-scroll="isBackNavigation"
+      :date-from-display="dateFromDisplay"
+      :date-to-display="dateToDisplay"
+      :selected-tags="selectedTags"
       @close="timelineModalOpen = false"
       @focus-event="$emit('focus-event', $event)"
       @tag-clicked="$emit('tag-clicked', $event)"
@@ -155,6 +158,14 @@ export default {
     selectedTags: {
       type: Array,
       default: () => []
+    },
+    dateFromDisplay: {
+      type: String,
+      default: ''
+    },
+    dateToDisplay: {
+      type: String,
+      default: ''
     },
     followEnabled: {
       type: Boolean,

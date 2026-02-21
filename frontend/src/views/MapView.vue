@@ -34,6 +34,8 @@
           <EventsGrid
             :events="displayedEvents"
             :selected-tags="selectedTags"
+            :date-from-display="dateFromDisplay"
+            :date-to-display="dateToDisplay"
             :follow-enabled="narrativeFlowEnabled"
             :map-filter-enabled="mapFilterEnabled"
             :share-copied="share_copied"
