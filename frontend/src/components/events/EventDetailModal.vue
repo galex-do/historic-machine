@@ -501,4 +501,18 @@ export default {
 .edit_btn:hover {
   background: #d97706;
 }
+
+@media (max-width: 768px) {
+  .event_detail_modal_overlay {
+    padding: 0;
+  }
+
+  .event_detail_modal {
+    max-width: none;
+    max-height: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+}
 </style>
