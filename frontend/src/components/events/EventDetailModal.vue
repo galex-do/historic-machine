@@ -109,7 +109,7 @@
           ✏️ {{ t('editEvent') }}
         </button>
         <a 
-          v-if="event && event.latitude && event.longitude"
+          v-if="event && event.latitude && event.longitude && !canEditEvents"
           :href="`https://www.google.com/maps?q=${event.latitude},${event.longitude}`"
           target="_blank"
           rel="noopener noreferrer"
