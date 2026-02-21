@@ -4,7 +4,7 @@
       <!-- Modal Header -->
       <div class="timeline_modal_header">
         <div class="timeline_header_top">
-          <h2 class="timeline_modal_title">{{ timelineTitle }}</h2>
+          <h2 class="timeline_modal_title" ref="titleElement">{{ displayTitle }}</h2>
           <div class="timeline_header_controls">
             <span v-if="totalEventCount > 0" class="timeline_event_count">
               {{ visibleEventCount }} / {{ totalEventCount }}
@@ -179,7 +179,7 @@
 </template>
 
 <script>
-import { ref, computed, watch, onUnmounted, nextTick } from 'vue'
+import { ref, computed, watch, onMounted, onUnmounted, nextTick } from 'vue'
 import { useLocale } from '@/composables/useLocale.js'
 import { getEventEmoji } from '@/utils/event-utils.js'
 import { getContrastColor, getTagStyle, getKeyColorTags } from '@/utils/color-utils.js'
@@ -230,6 +230,9 @@ export default {
         .replace(/\bAD\b/, t('eraAD'))
     }
 
+    const titleElement = ref(null)
+    const useShortTitle = ref(false)
+
     const timelineTitle = computed(() => {
       const from = localizeDate(props.dateFromDisplay)
       const to = localizeDate(props.dateToDisplay)
@@ -238,6 +241,23 @@ export default {
       }
       return t('historicalEvents')
     })
+
+    const shortTitle = computed(() => t('eventsFromToPrefix').split(' ')[0] || t('historicalEvents'))
+
+    const displayTitle = computed(() => useShortTitle.value ? shortTitle.value : timelineTitle.value)
+
+    const checkTitleOverflow = () => {
+      nextTick(() => {
+        const el = titleElement.value
+        if (!el) return
+        useShortTitle.value = false
+        nextTick(() => {
+          if (el.scrollHeight > el.clientHeight + 2) {
+            useShortTitle.value = true
+          }
+        })
+      })
+    }
 
     const cachedGroupedEvents = ref([])
     const lastEventsHash = ref('')
@@ -543,45 +563,58 @@ export default {
       }
     }
 
+    let resizeObserver = null
+
     watch(() => props.isOpen, (newValue) => {
       if (newValue) {
         previouslyFocusedElement.value = document.activeElement
         document.addEventListener('keydown', handleEscape)
         
         if (props.preserveScroll && savedVisibleCount.value > 0) {
-          // Back navigation - restore loaded count first
           visibleCount.value = savedVisibleCount.value
         } else {
-          // Fresh open
           visibleCount.value = BATCH_SIZE
         }
         
         nextTick(() => {
           if (scrollContainer.value) {
             if (props.preserveScroll && savedScrollPosition.value > 0) {
-              // Restore saved position (back navigation)
               scrollContainer.value.scrollTop = savedScrollPosition.value
             } else {
-              // Fresh open - reset to top
               scrollContainer.value.scrollTop = 0
               savedScrollPosition.value = 0
               savedVisibleCount.value = 0
             }
           }
+          checkTitleOverflow()
+          if (titleElement.value) {
+            resizeObserver = new ResizeObserver(() => checkTitleOverflow())
+            resizeObserver.observe(titleElement.value)
+          }
         })
       } else {
         document.removeEventListener('keydown', handleEscape)
+        if (resizeObserver) {
+          resizeObserver.disconnect()
+          resizeObserver = null
+        }
       }
     })
 
     onUnmounted(() => {
       document.removeEventListener('keydown', handleEscape)
+      if (resizeObserver) {
+        resizeObserver.disconnect()
+        resizeObserver = null
+      }
     })
 
     return {
       t,
       scrollContainer,
+      titleElement,
       timelineTitle,
+      displayTitle,
       visibleYearGroups,
       totalEventCount,
       visibleEventCount,
@@ -651,6 +684,8 @@ export default {
   font-weight: 600;
   color: #1e293b;
   min-width: 0;
+  max-height: 1.8em;
+  overflow: hidden;
 }
 
 .timeline_event_count {
