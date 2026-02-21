@@ -537,6 +537,7 @@ export default {
   .events-header {
     margin-bottom: 0;
     padding-bottom: 0.25rem;
+    border-bottom: none;
   }
 
   .events-grid,
