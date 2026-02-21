@@ -117,7 +117,7 @@
       :navigation-source="navigationSource"
       @close="closeEventDetail"
       @focus-event="$emit('focus-event', $event)"
-      @tag-clicked="$emit('tag-clicked', $event)"
+      @tag-clicked="handleDetailTagClicked"
       @select-event="handleSelectRelatedEvent"
       @edit-event="handleEditEvent"
       @back="handleBack"
@@ -307,6 +307,15 @@ export default {
       this.navigationSource = 'timeline'
       this.timelineModalOpen = false
       this.eventDetailModalOpen = true
+    },
+    handleDetailTagClicked(tag) {
+      this.$emit('tag-clicked', tag)
+      if (this.navigationSource === 'timeline') {
+        this.eventDetailModalOpen = false
+        this.isBackNavigation = true
+        this.timelineModalOpen = true
+        this.navigationSource = null
+      }
     },
     handleBack() {
       if (this.navigationSource === 'timeline') {
