@@ -85,28 +85,29 @@
           </div>
         </div>
 
-        <div class="event_actions">
-          <a 
-            v-if="event.source"
-            :href="event.source" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            class="source_btn"
-          >
-            🔗 {{ t('source') }}
-          </a>
-          <button 
-            v-if="canEditEvents" 
-            class="edit_btn" 
-            @click="handleEditEvent"
-            :title="t('editEvent')"
-          >
-            ✏️ {{ t('editEvent') }}
-          </button>
-          <button class="focus_btn" @click="handleFocusEvent" :title="t('focusOnMap')">
-            ⌖ {{ t('focusOnMap') }}
-          </button>
-        </div>
+      </div>
+
+      <div class="event_detail_footer">
+        <a 
+          v-if="event.source"
+          :href="event.source" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="source_btn"
+        >
+          🔗 {{ t('source') }}
+        </a>
+        <button 
+          v-if="canEditEvents" 
+          class="edit_btn" 
+          @click="handleEditEvent"
+          :title="t('editEvent')"
+        >
+          ✏️ {{ t('editEvent') }}
+        </button>
+        <button class="focus_btn" @click="handleFocusEvent" :title="t('focusOnMap')">
+          ⌖ {{ t('focusOnMap') }}
+        </button>
       </div>
     </div>
   </div>
@@ -321,6 +322,8 @@ export default {
 .event_detail_content {
   padding: 1.25rem;
   overflow-y: auto;
+  flex: 1;
+  min-height: 0;
 }
 
 .event_date {
@@ -414,13 +417,13 @@ export default {
   text-decoration: underline;
 }
 
-.event_actions {
-  margin-top: 1.25rem;
-  padding-top: 1rem;
+.event_detail_footer {
+  padding: 0.75rem 1.25rem;
   border-top: 1px solid #e2e8f0;
   display: flex;
   justify-content: flex-end;
   gap: 0.75rem;
+  flex-shrink: 0;
 }
 
 .focus_btn {
