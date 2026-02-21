@@ -20,12 +20,21 @@
           </div>
         </div>
         <div v-if="selectedTags && selectedTags.length > 0" class="timeline_header_tags">
-          <span
+          <div
             v-for="tag in selectedTags"
             :key="tag.id"
-            class="timeline_filter_tag"
-            :style="getTagStyle(tag)"
-          >{{ tag.name }}</span>
+            class="event_tag_badge_removable"
+            :style="getTagStyle(tag, { outerShadow: '0 1px 3px rgba(0, 0, 0, 0.15)' })"
+          >
+            <span class="tag_name">{{ tag.name }}</span>
+            <button 
+              class="remove_tag_btn" 
+              @click="handleRemoveTag(tag.id)"
+              :aria-label="`${t('remove')} ${tag.name}`"
+            >
+              ×
+            </button>
+          </div>
           <button 
             class="expand_date_range_btn" 
             @click="handleExpandDateRange"
@@ -76,7 +85,6 @@
                     v-for="tag in yearGroup.dateGroups[0].events[0].tags"
                     :key="tag.id"
                     class="event_tag_badge"
-                    :class="{ 'tag_selected': isTagSelected(tag) }"
                     :style="getTagStyle(tag)"
                     @click.stop="handleTagClick(tag)"
                   >{{ tag.name }}</span>
@@ -141,7 +149,6 @@
                           v-for="tag in event.tags"
                           :key="tag.id"
                           class="event_tag_badge"
-                          :class="{ 'tag_selected': isTagSelected(tag) }"
                           :style="getTagStyle(tag)"
                           @click.stop="handleTagClick(tag)"
                         >{{ tag.name }}</span>
@@ -212,7 +219,7 @@ export default {
       default: () => []
     }
   },
-  emits: ['close', 'focus-event', 'tag-clicked', 'show-detail', 'expand-date-range'],
+  emits: ['close', 'focus-event', 'tag-clicked', 'remove-tag', 'show-detail', 'expand-date-range'],
   setup(props, { emit }) {
     const { t, formatEventDisplayDate, formatDayMonth, currentLocale } = useLocale()
     const previouslyFocusedElement = ref(null)
@@ -496,8 +503,9 @@ export default {
       closeModal()
     }
 
-    const isTagSelected = (tag) => {
-      return props.selectedTags.some(t => t.id === tag.id)
+    const handleRemoveTag = (tagId) => {
+      emit('remove-tag', tagId)
+      visibleCount.value = BATCH_SIZE
     }
 
     const handleTagClick = (tag) => {
@@ -628,7 +636,7 @@ export default {
       toggleDetails,
       closeModal,
       handleFocusEvent,
-      isTagSelected,
+      handleRemoveTag,
       handleTagClick,
       handleExpandDateRange,
       handleShowDetail,
@@ -722,15 +730,6 @@ export default {
 
 .expand_date_range_btn:hover {
   color: #3b82f6;
-}
-
-.timeline_filter_tag {
-  display: inline-block;
-  padding: 0.1rem 0.5rem;
-  border-radius: 9999px;
-  font-size: 0.7rem;
-  font-weight: 500;
-  line-height: 1.4;
 }
 
 .toggle_details_btn {

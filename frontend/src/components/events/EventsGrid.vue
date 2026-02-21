@@ -104,6 +104,7 @@
       @close="timelineModalOpen = false"
       @focus-event="$emit('focus-event', $event)"
       @tag-clicked="$emit('tag-clicked', $event)"
+      @remove-tag="$emit('remove-tag', $event)"
       @expand-date-range="$emit('expand-date-range', $event)"
       @show-detail="handleTimelineShowDetail"
     />
