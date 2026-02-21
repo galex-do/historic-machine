@@ -1,6 +1,6 @@
 <template>
   <div v-if="isOpen" class="modal_overlay_base timeline_modal_overlay" @click.self="closeModal">
-    <div class="timeline_modal">
+    <div class="timeline_modal modal_fullscreen_mobile">
       <!-- Modal Header -->
       <div class="timeline_modal_header">
         <div class="timeline_header_top">
@@ -830,18 +830,6 @@ export default {
 }
 
 @media (max-width: 768px) {
-  .timeline_modal_overlay {
-    padding: 0;
-  }
-
-  .timeline_modal {
-    max-width: none;
-    max-height: none;
-    height: 100%;
-    width: 100%;
-    border-radius: 0;
-  }
-
   .timeline_modal_header {
     padding: 0.75rem 1rem;
   }

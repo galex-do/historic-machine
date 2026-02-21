@@ -1,6 +1,6 @@
 <template>
   <div v-if="isOpen" class="modal_overlay_base event_detail_modal_overlay" @click.self="closeModal">
-    <div class="event_detail_modal">
+    <div class="event_detail_modal modal_fullscreen_mobile">
       <div class="event_detail_header">
         <div class="event_title_row">
           <button 
@@ -502,17 +502,4 @@ export default {
   background: #d97706;
 }
 
-@media (max-width: 768px) {
-  .event_detail_modal_overlay {
-    padding: 0;
-  }
-
-  .event_detail_modal {
-    max-width: none;
-    max-height: none;
-    height: 100%;
-    width: 100%;
-    border-radius: 0;
-  }
-}
 </style>

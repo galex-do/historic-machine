@@ -11,3 +11,24 @@
   z-index: 100000;
   padding: 2rem;
 }
+
+.modal_fullscreen_mobile {
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .modal_overlay_base {
+    padding: 0;
+  }
+
+  .modal_fullscreen_mobile {
+    max-width: none !important;
+    max-height: none !important;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+}

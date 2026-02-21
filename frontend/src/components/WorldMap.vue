@@ -41,7 +41,7 @@
 
     <!-- Event Info Modal (shows event details without coordinate corruption) -->
     <div v-if="show_event_info_modal" class="modal_overlay_base event_info_modal_overlay" @click="close_event_info_modal">
-      <div class="event_info_modal" @click.stop>
+      <div class="event_info_modal modal_fullscreen_mobile" @click.stop>
         <!-- Modal Header -->
         <div class="event_info_modal_header">
           <h2 class="event_info_modal_title">
@@ -2450,17 +2450,4 @@ export default {
   opacity: 1;
 }
 
-@media (max-width: 768px) {
-  .event_info_modal_overlay {
-    padding: 0;
-  }
-
-  .event_info_modal {
-    max-width: none;
-    max-height: none;
-    height: 100%;
-    width: 100%;
-    border-radius: 0;
-  }
-}
 </style>
