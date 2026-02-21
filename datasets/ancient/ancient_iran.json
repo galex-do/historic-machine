@@ -149,6 +149,41 @@
       "type": "historic"
     },
     {
+      "date": "01.01.1000",
+      "description": "Zarathustra composes the Gathas — 17 hymns in Old Avestan, the oldest Zoroastrian texts and the only ones directly attributed to him. He preaches worship of Ahura Mazda as the supreme uncreated god and rejects the old Indo-Iranian daevas as demons. His exact dates are debated (1500–600 BC); linguistic analysis of the Gathas places them close to the Rigvedic period. Modern scholarship locates his activity in eastern Greater Iran, likely Bactria or the adjacent steppe regions",
+      "description_ru": "Заратуштра составляет Гаты — 17 гимнов на древнеавестийском языке, древнейшие зороастрийские тексты, непосредственно приписываемые ему. Он проповедует поклонение Ахура Мазде как верховному несотворённому богу и отвергает старых индоиранских дэвов как демонов. Его точные даты остаются предметом дискуссий (1500–600 гг. до н.э.); лингвистический анализ Гат относит их ко времени, близкому к ригведийскому периоду. Современная наука помещает его деятельность в восточный Большой Иран, вероятно в Бактрию",
+      "era": "BC",
+      "latitude": 36.756,
+      "longitude": 66.897,
+      "name": "Zarathustra and the Gathas",
+      "name_ru": "Заратуштра и Гаты",
+      "source": "https://en.wikipedia.org/wiki/Zoroaster",
+      "tags": [
+        "Zoroastrian",
+        "Religious",
+        "Literature",
+        "Foundation"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0950",
+      "description": "Zarathustra gains his first royal patron in King Vishtaspa (not to be confused with the later Achaemenid Vishtaspa/Hystaspes). According to Avestan tradition, Vishtaspa converts after Zarathustra wins a theological debate at his court. The king's adoption gives the new faith political protection and military backing, enabling its spread among eastern Iranian peoples. Zoroastrian tradition places the event in Balkh (ancient Bactra)",
+      "description_ru": "Заратуштра обретает первого царственного покровителя — царя Виштаспу (не путать с позднейшим ахеменидским Виштаспой/Гистаспом). Согласно авестийской традиции, Виштаспа принимает новую веру после того, как Заратуштра побеждает в богословском диспуте при его дворе. Покровительство царя даёт новой вере политическую защиту и военную поддержку, позволяя ей распространиться среди восточноиранских народов. Зороастрийская традиция помещает это событие в Балх (древнюю Бактру)",
+      "era": "BC",
+      "latitude": 36.756,
+      "longitude": 66.897,
+      "name": "King Vishtaspa Converts to Zoroastrianism",
+      "name_ru": "Царь Виштаспа принимает зороастризм",
+      "source": "https://en.wikipedia.org/wiki/Vishtaspa",
+      "tags": [
+        "Zoroastrian",
+        "Religious",
+        "King"
+      ],
+      "type": "religious"
+    },
+    {
       "date": "01.01.0950",
       "description": "Kingdom of Mannai emerges in northwestern Iran around Lake Urmia, creating buffer state between Assyria and emerging Iranian peoples",
       "description_ru": "Царство Манна возникает на северо-западе Ирана вокруг озера Урмия, создавая буферное государство между Ассирией и формирующимися иранскими царствами",
