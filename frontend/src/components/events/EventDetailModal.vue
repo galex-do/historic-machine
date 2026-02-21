@@ -472,19 +472,20 @@ export default {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: #3b82f6;
-  border: none;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
   border-radius: 0.375rem;
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
-  color: white;
+  color: #475569;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .source_btn:hover {
-  background: #2563eb;
+  background: #e2e8f0;
+  color: #3b82f6;
 }
 
 .edit_btn {
