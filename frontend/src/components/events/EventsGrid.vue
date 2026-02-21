@@ -538,7 +538,14 @@ export default {
   cursor: default;
 }
 
-/* Responsive adjustments */
+/* Hide event list when sidebar is full-width (not a sidebar) */
+@media (max-width: 1024px) {
+  .events-grid,
+  .page-counter {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .events-section {
     padding: 0.75rem;
@@ -548,11 +555,6 @@ export default {
     margin-bottom: 0;
     padding-bottom: 0.25rem;
     border-bottom: none;
-  }
-
-  .events-grid,
-  .page-counter {
-    display: none;
   }
 }
 </style>

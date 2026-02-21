@@ -720,8 +720,10 @@ export default {
   
   .events-sidebar {
     width: 100%;
-    height: 40vh;
+    height: auto;
+    flex: 0 0 auto;
     order: 1;
+    overflow: visible;
   }
   
   .events-sidebar.collapsed {
