@@ -454,19 +454,18 @@ export default {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: #f1f5f9;
-  border: 1px solid #e2e8f0;
+  background: #3b82f6;
+  border: none;
   border-radius: 0.375rem;
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
-  color: #475569;
+  color: white;
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .focus_btn:hover {
-  background: #e2e8f0;
-  color: #3b82f6;
+  background: #2563eb;
 }
 
 .source_btn {
@@ -510,18 +509,20 @@ export default {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: #10b981;
-  border: none;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
   border-radius: 0.375rem;
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
-  color: white;
+  color: #475569;
   cursor: pointer;
   text-decoration: none;
+  transition: all 0.2s;
 }
 
 .google_maps_btn:hover {
-  background: #059669;
+  background: #e2e8f0;
+  color: #10b981;
 }
 
 </style>
