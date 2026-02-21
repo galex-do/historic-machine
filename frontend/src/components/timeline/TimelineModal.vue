@@ -76,8 +76,8 @@
                     v-for="tag in yearGroup.dateGroups[0].events[0].tags"
                     :key="tag.id"
                     class="event_tag_badge"
+                    :class="{ 'tag_selected': isTagSelected(tag) }"
                     :style="getTagStyle(tag)"
-                    :title="`Click to filter events by '${tag.name}'`"
                     @click.stop="handleTagClick(tag)"
                   >{{ tag.name }}</span>
                 </template>
@@ -141,8 +141,8 @@
                           v-for="tag in event.tags"
                           :key="tag.id"
                           class="event_tag_badge"
+                          :class="{ 'tag_selected': isTagSelected(tag) }"
                           :style="getTagStyle(tag)"
-                          :title="`Click to filter events by '${tag.name}'`"
                           @click.stop="handleTagClick(tag)"
                         >{{ tag.name }}</span>
                       </template>
@@ -496,9 +496,13 @@ export default {
       closeModal()
     }
 
+    const isTagSelected = (tag) => {
+      return props.selectedTags.some(t => t.id === tag.id)
+    }
+
     const handleTagClick = (tag) => {
       emit('tag-clicked', tag)
-      closeModal()
+      visibleCount.value = BATCH_SIZE
     }
 
     const handleExpandDateRange = () => {
@@ -624,6 +628,7 @@ export default {
       toggleDetails,
       closeModal,
       handleFocusEvent,
+      isTagSelected,
       handleTagClick,
       handleExpandDateRange,
       handleShowDetail,

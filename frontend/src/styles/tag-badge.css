@@ -15,6 +15,11 @@
   opacity: 0.75;
 }
 
+.event_tag_badge.tag_selected {
+  outline: 2px solid currentColor;
+  outline-offset: 1px;
+}
+
 .event_tag_badge_removable {
   display: inline-flex;
   align-items: center;
