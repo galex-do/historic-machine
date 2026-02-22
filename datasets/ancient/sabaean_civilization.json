@@ -1,5 +1,5 @@
 {
-  "description": "Dataset covering the Sabaean (Saba/Sheba) civilization from emergence through final Himyarite conquest, including religion, customs, trade, and engineering — 22 events",
+  "description": "Dataset covering the Sabaean (Saba/Sheba) civilization from emergence through final Himyarite conquest, including religion, customs, trade, and engineering — 35 events (1200 BC – 570 AD)",
   "events": [
     {
       "date": "01.01.1200",
@@ -38,6 +38,42 @@
       "type": "historic"
     },
     {
+      "date": "01.01.1000",
+      "description": "Sabaean highland communities develop elaborate agricultural terracing across Yemen's mountainous western escarpment. Farmers transport soil by donkey to fill stone-walled platforms carved into near-vertical slopes, creating staircase gardens irrigated by gravity-fed cisterns and rain channels. Terraces grow sorghum, wheat, barley, and grapes at altitudes above 2,000 m. The technique transforms barren rock faces into productive farmland and will remain in continuous use for over 3,000 years — some ancient terrace walls still stand today. This highland agriculture complements the lowland dam irrigation at Marib, giving Saba food security across two ecological zones",
+      "description_ru": "Сабейские горные общины развивают сложное террасное земледелие на западном горном уступе Йемена. Земледельцы перевозят почву на ослах, чтобы заполнить каменные платформы, вырезанные в почти вертикальных склонах, создавая ступенчатые сады, орошаемые самотёчными цистернами и дождевыми каналами. На террасах на высоте более 2000 м выращивают сорго, пшеницу, ячмень и виноград. Техника превращает голые скалы в продуктивные сельскохозяйственные угодья и будет использоваться непрерывно более 3000 лет — некоторые древние террасные стены стоят и по сей день. Это горное земледелие дополняет низменное дамбовое орошение в Марибе, обеспечивая Сабе продовольственную безопасность в двух экологических зонах",
+      "era": "BC",
+      "latitude": 15.2800,
+      "longitude": 43.9700,
+      "name": "Highland Terracing — Mountain Agriculture of Saba",
+      "name_ru": "Горное террасирование — земледелие Сабы",
+      "source": "https://en.wikipedia.org/wiki/Ancient_history_of_Yemen",
+      "tags": [
+        "Sabaean",
+        "Agriculture",
+        "Engineering ⚙️",
+        "Culture"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0900",
+      "description": "The domestication and selective breeding of Arabian dromedary camels transforms South Arabian trade logistics. Wild dromedaries of the Arabian Peninsula are bred for endurance, water retention, and load capacity — a mature camel carries 240 kg across 48 km per day through terrain impassable to donkeys or oxen. The camel saddle evolves from a simple pad to a rigid frame enabling heavy cargo loads. This biological technology makes the 2,000 km overland incense route commercially viable for the first time, allowing Sabaean merchants to transport frankincense from Dhofar to Mediterranean markets at scale. Without the domesticated camel, the incense trade — and Saba's wealth — would have been impossible",
+      "description_ru": "Одомашнивание и селекция арабских верблюдов-дромедаров преобразует логистику южноаравийской торговли. Дикие дромедары Аравийского полуострова выводятся для выносливости, сохранения воды и грузоподъёмности — взрослый верблюд несёт 240 кг на расстояние 48 км в день по местности, непроходимой для ослов или быков. Верблюжье седло эволюционирует от простой подушки до жёсткой рамы, позволяющей перевозить тяжёлые грузы. Эта биологическая технология впервые делает 2000-километровый наземный ладанный путь коммерчески жизнеспособным, позволяя сабейским торговцам транспортировать ладан из Дофара на средиземноморские рынки в больших объёмах. Без одомашненного верблюда ладанная торговля — и богатство Сабы — были бы невозможны",
+      "era": "BC",
+      "latitude": 15.4272,
+      "longitude": 45.3363,
+      "name": "Camel Domestication — Engine of the Incense Trade",
+      "name_ru": "Одомашнивание верблюда — двигатель ладанной торговли",
+      "source": "https://en.wikipedia.org/wiki/Dromedary",
+      "tags": [
+        "Sabaean",
+        "Trade",
+        "Agriculture",
+        "Culture"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0800",
       "description": "The Sabaean Musnad script — a 29-letter consonantal alphabet carved in angular, geometric forms optimized for stone — becomes standardized for monumental inscriptions. Evolved from Proto-Sinaitic alongside Phoenician, it is a sibling to the scripts that will become Greek, Latin, and Hebrew. A parallel cursive variant called Zabur is used on wooden sticks for daily commerce and private records. The script will produce over 15,000 inscriptions across Yemen, and its descendant — Ge'ez — remains in use in Ethiopia today",
       "description_ru": "Сабейское письмо муснад — 29-буквенный консонантный алфавит, вырезанный в угловатых геометрических формах, оптимизированных для камня — становится стандартом для монументальных надписей. Развившееся из прото-синайского наряду с финикийским, оно является родственным письменностям, которые станут греческой, латинской и еврейской. Параллельный курсивный вариант забур используется на деревянных палочках для повседневной торговли и личных записей. Письменность породит более 15 000 надписей по всему Йемену, а его потомок — геэз — используется в Эфиопии и сегодня",
@@ -68,6 +104,24 @@
         "Sabaean",
         "Kingdom",
         "Administration"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0760",
+      "description": "Mukarrib Yatha'amar Watar I oversees the first major construction phase of the Great Marib Dam, transforming a simple earth barrier into a stone-faced structure. His name appears in Sabaean inscriptions at Sirwah, and — crucially — in Assyrian records as 'It'amra', making him the first Sabaean ruler independently confirmed by an external civilization. The Assyrian annals of Sargon II (715 BC) list 'It'amra the Sabaean' among rulers who sent tribute alongside the Pharaoh of Egypt and Queen Samsi of Arabia, proving Saba's reach extended to Mesopotamian diplomacy",
+      "description_ru": "Мукарриб Ятхаамар Ватар I руководит первой крупной фазой строительства Великой Марибской дамбы, превращая простую земляную преграду в каменную конструкцию. Его имя фигурирует в сабейских надписях в Сирве и — что важно — в ассирийских записях как 'Итамра', что делает его первым сабейским правителем, независимо подтверждённым внешней цивилизацией. Ассирийские анналы Саргона II (715 г. до н. э.) включают 'Итамру Сабейского' в число правителей, приславших дань наряду с фараоном Египта и царицей Самси Арабской, доказывая, что влияние Сабы распространялось до месопотамской дипломатии",
+      "era": "BC",
+      "latitude": 15.3517,
+      "longitude": 44.9414,
+      "name": "Yatha'amar Watar I — First Sabaean Ruler in Assyrian Records",
+      "name_ru": "Ятхаамар Ватар I — первый сабейский правитель в ассирийских записях",
+      "source": "https://en.wikipedia.org/wiki/Yatha%27_Amar_Watar",
+      "tags": [
+        "Sabaean",
+        "King",
+        "Diplomacy",
+        "Assyrian"
       ],
       "type": "historic"
     },
@@ -185,6 +239,25 @@
       "type": "battle"
     },
     {
+      "date": "01.01.0660",
+      "description": "Mukarrib Yada'il Dharih I, son of Sumhu'ali, undertakes the most ambitious construction program in Sabaean history. He walls the entire Temple of Awwam sanctuary with its massive elliptical enclosure, builds the monumental walls of the Almaqah temple at Sirwah, and erects the Al-Masajid sanctuary 27 km south of Marib. His inscription reads: 'Yada'il Dharih, son of Samah Ali, mukarrib of Saba, built the surrounding wall of the temple of Almaqah.' These three projects create the architectural core of Sabaean religious life that will endure for eight centuries",
+      "description_ru": "Мукарриб Яда'ил Дхарих I, сын Сумхуали, предпринимает самую масштабную строительную программу в сабейской истории. Он обносит стеной всё святилище Храма Аввам с его массивным эллиптическим ограждением, строит монументальные стены храма Алмакаха в Сирве и возводит святилище Аль-Масаджид в 27 км к югу от Мариба. Его надпись гласит: 'Яда'ил Дхарих, сын Самах Али, мукарриб Сабы, построил окружную стену храма Алмакаха.' Эти три проекта создают архитектурное ядро сабейской религиозной жизни, которое просуществует восемь веков",
+      "era": "BC",
+      "latitude": 15.3862,
+      "longitude": 45.2252,
+      "name": "Yada'il Dharih I — Master Builder of Sabaean Temples",
+      "name_ru": "Яда'ил Дхарих I — великий строитель сабейских храмов",
+      "source": "https://en.wikipedia.org/wiki/Yada%27il_Dharih_I",
+      "tags": [
+        "Sabaean",
+        "King",
+        "Architecture",
+        "Temple",
+        "Building 🏠"
+      ],
+      "type": "construction"
+    },
+    {
       "date": "01.01.0650",
       "description": "Karib'il Watar or his successor changes the royal title from 'mukarrib' (federator) to 'malik' (king), marking Saba's transformation from a tribal confederation into a centralized monarchy. The professional royal army — khamis — operates under direct royal command alongside tribal contingents led by aristocratic clan leaders (qayls). The king controls the frankincense trade monopoly, adjudicates law at temples, and claims divine sanction from Almaqah. This political evolution produces two centuries of Sabaean dominance over all of South Arabia",
       "description_ru": "Кариб'ил Ватар или его преемник меняет царский титул с 'мукарриб' (объединитель) на 'малик' (царь), отмечая превращение Сабы из племенной конфедерации в централизованную монархию. Профессиональная царская армия — хамис — действует под прямым царским командованием наряду с племенными отрядами под руководством аристократических вождей (кайлов). Царь контролирует монополию на торговлю ладаном, вершит правосудие в храмах и заявляет о божественной санкции Алмакаха. Эта политическая эволюция обеспечивает два века сабейского господства над всей Южной Аравией",
@@ -217,6 +290,25 @@
         "Trade",
         "Economic",
         "Arabia"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0600",
+      "description": "Sabaean alabaster artistry reaches its height. Quarried from organized mines at Jabal al-Makhdara north of Sirwah, calcite alabaster is turned on lathes, carved into sculptures, chiselled into low-relief panels, and sliced into 3 cm sheets used as translucent window panes. Hundreds of portrait heads with stylized almond eyes, bronze bull figurines, and ibex statuettes are produced for temple offerings. Artisans alternate rounded polished volumes with linear incisions in a distinctly Sabaean aesthetic. Votive stelae feature crescent moon motifs at cemeteries, and incense burners are carved with bull heads and grape vines. Over 500 statue fragments will be excavated from the Temple of Awwam alone",
+      "description_ru": "Сабейское искусство алебастра достигает расцвета. Добываемый в организованных шахтах Джабаль аль-Махдара к северу от Сирвы, кальцитовый алебастр точат на токарных станках, вырезают скульптуры, высекают барельефные панели и режут на 3-сантиметровые листы, используемые как полупрозрачные оконные стёкла. Сотни портретных голов со стилизованными миндалевидными глазами, бронзовые фигурки быков и статуэтки горных козлов производятся для храмовых приношений. Мастера чередуют округлые полированные объёмы с линейными насечками в характерной сабейской эстетике. Вотивные стелы украшены мотивами полумесяца на кладбищах, а курильницы вырезаны с бычьими головами и виноградными лозами. Более 500 фрагментов статуй будут раскопаны только из Храма Аввам",
+      "era": "BC",
+      "latitude": 15.3517,
+      "longitude": 44.9414,
+      "name": "Sabaean Alabaster Art — Sculpture and Sacred Craft",
+      "name_ru": "Сабейское искусство алебастра — скульптура и священное ремесло",
+      "source": "https://en.wikipedia.org/wiki/Ancient_South_Arabian_art",
+      "tags": [
+        "Sabaean",
+        "Art",
+        "Culture",
+        "Sculpture",
+        "Religious"
       ],
       "type": "historic"
     },
@@ -260,6 +352,42 @@
     },
     {
       "date": "01.01.0500",
+      "description": "Sabaean water distribution reaches peak sophistication with a bureaucratic system of ʾqdmt ('supervisors') — officials recruited by rotation from Sabaean clans to manage water allocation from the Marib Dam's canal network. Each supervisor controls sluice gates and canal junctions, determining which fields receive water and when. Disputes over water rights are adjudicated at temples and recorded in inscriptions. The system ensures equitable distribution across the northern and southern oasis gardens, sustaining tens of thousands of people in the desert. This rotational governance model prevents any single clan from monopolizing the water supply — a remarkably democratic solution for the ancient world",
+      "description_ru": "Сабейское водоснабжение достигает пика сложности с бюрократической системой акдмт ('надзиратели') — чиновники, набираемые по ротации из сабейских кланов для управления распределением воды из канальной сети Марибской дамбы. Каждый надзиратель контролирует шлюзовые затворы и канальные развязки, определяя, какие поля получают воду и когда. Споры о водных правах разрешаются в храмах и фиксируются в надписях. Система обеспечивает справедливое распределение между садами северного и южного оазисов, поддерживая десятки тысяч человек в пустыне. Эта ротационная модель управления предотвращает монополизацию водоснабжения каким-либо одним кланом — замечательно демократическое решение для древнего мира",
+      "era": "BC",
+      "latitude": 15.3964,
+      "longitude": 45.2439,
+      "name": "Water Supervisors — Sabaean Irrigation Bureaucracy",
+      "name_ru": "Водные надзиратели — сабейская ирригационная бюрократия",
+      "source": "https://en.wikipedia.org/wiki/Marib_Dam",
+      "tags": [
+        "Sabaean",
+        "Administration",
+        "Agriculture",
+        "Engineering ⚙️"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0500",
+      "description": "Temple inscriptions reveal a distinctive Sabaean legal-religious practice: confessional inscriptions carved on temple walls. Individuals who violate sacred law — entering the sanctuary unpurified, breaking sexual prohibitions, committing crimes against women or servants — must publicly confess their transgressions in stone. The inscriptions record the divine punishment (typically disease sent by Almaqah) and the atonement ritual required: animal sacrifice, monetary payment, or construction of votive offerings. Women appear as both offenders and victims in these texts. Eight known women's inscriptions from the Awwam Temple document female property ownership, temple patronage, illness recovery offerings, and daughters presented to the deity 'Athtar for temple service",
+      "description_ru": "Храмовые надписи раскрывают характерную сабейскую юридическо-религиозную практику: покаянные надписи, высеченные на стенах храмов. Лица, нарушившие священный закон — вошедшие в святилище нечистыми, нарушившие половые запреты, совершившие преступления против женщин или слуг — должны публично исповедать свои проступки в камне. Надписи фиксируют божественное наказание (обычно болезнь, посланную Алмакахом) и требуемый ритуал искупления: жертвоприношение животных, денежную выплату или создание вотивных приношений. Женщины фигурируют и как нарушительницы, и как жертвы в этих текстах. Восемь известных женских надписей из Храма Аввам документируют женскую собственность, храмовое покровительство, приношения за выздоровление от болезни и дочерей, представленных божеству Аттар для храмовой службы",
+      "era": "BC",
+      "latitude": 15.3862,
+      "longitude": 45.2252,
+      "name": "Confessional Inscriptions — Sabaean Temple Justice",
+      "name_ru": "Покаянные надписи — сабейское храмовое правосудие",
+      "source": "https://en.wikipedia.org/wiki/Temple_of_Awwam",
+      "tags": [
+        "Sabaean",
+        "Religious",
+        "Customs",
+        "Writing"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0500",
       "description": "The Marib Dam undergoes its first major expansion — raised from 4 m to 7 m with stone facing extended to the south side. Five spillways channel water to a settling pond and 1 km distribution canal feeding both northern and southern oasis gardens. The irrigation system supports double annual harvests of barley, wheat, dates, and grapes. Marib's population grows into the tens of thousands, making it the largest city in Arabia. Water engineers maintain precise gradient calculations across the canal network — one of the most sophisticated hydraulic systems in the ancient world",
       "description_ru": "Марибская дамба проходит первое крупное расширение — поднята с 4 м до 7 м с каменной облицовкой, продлённой на южную сторону. Пять водосбросов направляют воду в отстойный бассейн и распределительный канал длиной 1 км, питающий сады как северного, так и южного оазиса. Ирригационная система обеспечивает два урожая в год ячменя, пшеницы, фиников и винограда. Население Мариба вырастает до десятков тысяч, делая его крупнейшим городом Аравии. Инженеры-гидротехники поддерживают точные расчёты уклона по всей канальной сети — одна из самых сложных гидравлических систем древнего мира",
       "era": "BC",
@@ -291,6 +419,61 @@
         "Kingdom",
         "Trade",
         "Decline"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0300",
+      "description": "The Ptolemaic dynasty of Egypt begins systematically encouraging maritime Red Sea trade routes to bypass overland Arabian caravans. Greek and Egyptian merchants learn to exploit monsoon wind patterns for direct sailing to India and East Africa, cutting Sabaean middlemen from the most profitable segments of the spice trade. The Ptolemies establish Red Sea ports at Myos Hormos and Berenice, and Ptolemaic envoys document the coasts of Arabia Felix. This strategic shift undermines the economic foundation of all South Arabian kingdoms — Saba, Ma'in, Qataban, and Hadhramaut — by redirecting centuries-old overland trade flows to cheaper, faster sea routes",
+      "description_ru": "Династия Птолемеев в Египте начинает систематически поощрять морские торговые маршруты по Красному морю в обход наземных аравийских караванов. Греческие и египетские купцы учатся использовать муссонные ветры для прямого плавания в Индию и Восточную Африку, вытесняя сабейских посредников из наиболее прибыльных сегментов торговли пряностями. Птолемеи основывают порты на Красном море в Миос Хормосе и Беренике, а птолемеевские послы описывают берега Arabia Felix. Этот стратегический сдвиг подрывает экономическую основу всех южноаравийских царств — Сабы, Маина, Катабана и Хадрамаута — перенаправляя вековые сухопутные торговые потоки на более дешёвые и быстрые морские маршруты",
+      "era": "BC",
+      "latitude": 26.5547,
+      "longitude": 33.9155,
+      "name": "Ptolemaic Sea Routes — Threat to Sabaean Trade Monopoly",
+      "name_ru": "Птолемеевские морские маршруты — угроза сабейской торговой монополии",
+      "source": "https://en.wikipedia.org/wiki/Incense_trade_route",
+      "tags": [
+        "Sabaean",
+        "Trade",
+        "Navigation",
+        "Decline",
+        "Economic"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0200",
+      "description": "Sabaean architectural columns evolve from simple rectangular monoliths to rounded forms with decorated capitals, reflecting increasing Hellenistic influence through trade contacts with the Ptolemaic and Seleucid worlds. From the 5th century BC, column corners are gradually reduced until fully round profiles emerge. By the 2nd century BC, capitals show direct Greek and later Sasanian design influence. Multi-story tower buildings in Marib and Sana'a — with stone foundations, mud-brick walls, wooden beams, and alabaster window panes — establish the distinctive Yemeni architectural tradition of tower houses that continues to this day in Sana'a's Old City, a UNESCO World Heritage Site",
+      "description_ru": "Сабейские архитектурные колонны эволюционируют от простых прямоугольных монолитов к округлым формам с декорированными капителями, отражая возрастающее эллинистическое влияние через торговые контакты с птолемеевским и селевкидским мирами. С V века до н. э. углы колонн постепенно скругляются до полностью круглых профилей. К II веку до н. э. капители показывают прямое греческое и позднее сасанидское влияние. Многоэтажные башенные здания в Марибе и Сане — с каменными фундаментами, глинобитными стенами, деревянными балками и алебастровыми оконными стёклами — создают характерную йеменскую архитектурную традицию башенных домов, которая продолжается по сей день в Старом городе Саны, объекте Всемирного наследия ЮНЕСКО",
+      "era": "BC",
+      "latitude": 15.4272,
+      "longitude": 45.3363,
+      "name": "Sabaean Tower Architecture — Origin of Yemeni Tower Houses",
+      "name_ru": "Сабейская башенная архитектура — истоки йеменских башенных домов",
+      "source": "https://en.wikipedia.org/wiki/Architecture_of_Yemen",
+      "tags": [
+        "Sabaean",
+        "Architecture",
+        "Building 🏠",
+        "Culture"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0200",
+      "description": "Shabwah, capital of Hadhramaut and gateway to the eastern frankincense groves of Dhofar, operates as the key chokepoint where raw frankincense enters the Sabaean-controlled trade network. All frankincense leaving the Dhofar harvesting grounds must pass through Shabwah's customs warehouses, where royal officials weigh, grade, and tax the resin before it proceeds northwest to Marib and the Mediterranean. Strabo records that a tenth of all frankincense passing through Shabwah is tithed to the god Sayyin. The city's 60 temples — one for each Hadhrami clan — make it the most temple-dense settlement in South Arabia. Sabaean influence over Shabwah's taxation policy remains a constant source of inter-kingdom conflict",
+      "description_ru": "Шабва, столица Хадрамаута и ворота к восточным ладанным рощам Дофара, действует как ключевой узел, где необработанный ладан входит в контролируемую сабейцами торговую сеть. Весь ладан, покидающий заготовительные угодья Дофара, должен пройти через таможенные склады Шабвы, где царские чиновники взвешивают, сортируют и облагают смолу налогом, прежде чем она отправится на северо-запад к Марибу и Средиземноморью. Страбон записывает, что десятина всего ладана, проходящего через Шабву, отдаётся богу Сайину. 60 храмов города — по одному на каждый хадрамитский клан — делают его самым храмово-плотным поселением в Южной Аравии. Сабейское влияние на налоговую политику Шабвы остаётся постоянным источником межцарственных конфликтов",
+      "era": "BC",
+      "latitude": 15.3667,
+      "longitude": 47.0167,
+      "name": "Shabwah — Frankincense Gateway of Hadhramaut",
+      "name_ru": "Шабва — ладанные ворота Хадрамаута",
+      "source": "https://en.wikipedia.org/wiki/Shabwah",
+      "tags": [
+        "Sabaean",
+        "Trade",
+        "Temple",
+        "Economic"
       ],
       "type": "historic"
     },
@@ -332,6 +515,24 @@
       "type": "battle"
     },
     {
+      "date": "01.01.0060",
+      "description": "The Periplus of the Erythraean Sea, a Greek merchant's navigation guide, describes Saba's remaining trade network. The author notes that Muza (modern Mocha) serves as Saba's primary Red Sea port, exporting myrrh, alabaster, and locally-woven textiles. Eudaemon Arabia (Aden) — 'once a full-fledged city' — has been sacked and reduced to a village. Arabia Felix's internal trade still flows through Marib and Sana'a, but the overland frankincense caravans are a shadow of their former volume. The Periplus provides the most detailed contemporary outsider's view of South Arabian commerce in its final centuries — a snapshot of a civilization in economic decline but still culturally vibrant",
+      "description_ru": "«Перипл Эритрейского моря», навигационный справочник греческого купца, описывает оставшуюся торговую сеть Сабы. Автор отмечает, что Муза (современный Моха) служит главным портом Сабы на Красном море, экспортирующим мирру, алебастр и местные ткани. Евдаймон Аравия (Аден) — «когда-то полноценный город» — был разграблен и низведён до деревни. Внутренняя торговля Arabia Felix всё ещё идёт через Мариб и Сану, но сухопутные ладанные караваны — тень прежнего объёма. Перипл даёт наиболее детальный современный взгляд постороннего на южноаравийскую торговлю в её последние века — мгновенный снимок цивилизации в экономическом упадке, но всё ещё культурно жизнеспособной",
+      "era": "AD",
+      "latitude": 13.3200,
+      "longitude": 43.2800,
+      "name": "Periplus of the Erythraean Sea — Greek View of Saba",
+      "name_ru": "Перипл Эритрейского моря — греческий взгляд на Сабу",
+      "source": "https://en.wikipedia.org/wiki/Periplus_of_the_Erythraean_Sea",
+      "tags": [
+        "Sabaean",
+        "Trade",
+        "Navigation",
+        "History"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0025",
       "description": "Roman prefect Aelius Gallus leads 10,000 legionaries from Egypt through the Hejaz toward Marib, aiming to seize control of the incense trade at its source. The Nabataean guide Syllaeus deliberately misleads the army through waterless desert. After six months of marching, disease, and attrition, the Romans reach Marib but fail to breach its fortifications. They withdraw after a two-week siege, losing most of their force to dysentery and dehydration on the return march. It is Rome's only military expedition into Arabia Felix — and a complete disaster. Augustus never attempts it again",
       "description_ru": "Римский префект Элий Галл ведёт 10 000 легионеров из Египта через Хиджаз к Марибу, стремясь захватить контроль над торговлей ладаном у её истоков. Набатейский проводник Силлей намеренно ведёт армию через безводную пустыню. После шести месяцев марша, болезней и потерь римляне достигают Мариба, но не могут прорвать его укрепления. Они отступают после двухнедельной осады, потеряв большую часть войска от дизентерии и обезвоживания на обратном марше. Это единственная военная экспедиция Рима в Arabia Felix — и полная катастрофа. Август никогда больше не повторяет попытку",
@@ -364,6 +565,43 @@
         "Kingdom",
         "Decline",
         "Trade"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0200",
+      "description": "The Ghumdan Palace is erected in Sana'a — according to the 10th-century historian al-Hamdani, a tower of 20 stories with four facades of different colored stones: white, black, green, and red marble. Its topmost floor, the 'Bilqis Hall', features a transparent alabaster ceiling through which residents watch the sky. Whether 20 stories or the more conservative scholarly estimate of 6-10, it is one of the earliest known skyscraper-type structures in the world. The palace serves as a royal residence for late Sabaean and later Himyarite kings. Its tower design establishes the prototype for Sana'a's distinctive tower houses — a tradition that survives 1,800 years into the present day",
+      "description_ru": "Дворец Гумдан возводится в Сане — по словам историка X века аль-Хамдани, это башня в 20 этажей с четырьмя фасадами из разноцветного камня: белого, чёрного, зелёного и красного мрамора. Его верхний этаж, 'Зал Билкис', имеет прозрачный алебастровый потолок, через который обитатели наблюдают за небом. Будь то 20 этажей или более консервативная научная оценка в 6-10, это одно из первых известных зданий башенного типа в мире. Дворец служит царской резиденцией для поздних сабейских, а затем химьяритских царей. Его башенная конструкция устанавливает прототип для характерных башенных домов Саны — традиция, которая сохраняется 1800 лет до наших дней",
+      "era": "AD",
+      "latitude": 15.3530,
+      "longitude": 44.2142,
+      "name": "Ghumdan Palace — Ancient Skyscraper of Sana'a",
+      "name_ru": "Дворец Гумдан — древний небоскрёб Саны",
+      "source": "https://en.wikipedia.org/wiki/Ghumdan_Palace",
+      "tags": [
+        "Sabaean",
+        "Palace",
+        "Architecture",
+        "Building 🏠",
+        "Ancient Wonders"
+      ],
+      "type": "construction"
+    },
+    {
+      "date": "01.01.0200",
+      "description": "Sabaean society develops a sophisticated system of tribal law and social organization documented in temple inscriptions. The population is organized into sha'b (peoples/tribes) led by qayl (aristocratic lords). Each clan (bayt) maintains obligations to both king and tribe. Marriage customs include formal bride-price negotiations recorded in legal inscriptions. The jambiyyah — curved dagger worn across the abdomen — serves as a symbol of male honor and tribal identity, a tradition unbroken to this day. Hospitality customs are codified: guests receive food, shelter, and protection as sacred obligations. Tribal feuds are resolved through temple mediation, with compensation payments calculated in livestock, silver, or labor",
+      "description_ru": "Сабейское общество развивает сложную систему племенного права и социальной организации, документированную в храмовых надписях. Население организовано в шааб (народы/племена), возглавляемые кайлами (аристократическими лордами). Каждый клан (байт) несёт обязательства перед царём и племенем. Брачные обычаи включают формальные переговоры о калыме, записанные в правовых надписях. Джамбия — изогнутый кинжал, носимый на животе — служит символом мужской чести и племенной идентичности, традиция, не прерывающаяся по сей день. Обычаи гостеприимства кодифицированы: гости получают еду, кров и защиту как священные обязательства. Племенные вражды разрешаются через храмовое посредничество с компенсационными выплатами, рассчитываемыми в скоте, серебре или труде",
+      "era": "AD",
+      "latitude": 15.4272,
+      "longitude": 45.3363,
+      "name": "Sabaean Tribal Law — Customs and Social Order",
+      "name_ru": "Сабейское племенное право — обычаи и общественный порядок",
+      "source": "https://en.wikipedia.org/wiki/Sheba",
+      "tags": [
+        "Sabaean",
+        "Customs",
+        "Culture",
+        "Administration"
       ],
       "type": "historic"
     },
