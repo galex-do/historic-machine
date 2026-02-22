@@ -1,0 +1,411 @@
+{
+  "description": "Dataset covering the Sabaean (Saba/Sheba) civilization from emergence through final Himyarite conquest, including religion, customs, trade, and engineering — 22 events",
+  "events": [
+    {
+      "date": "01.01.1200",
+      "description": "Proto-Sabaean communities coalesce around the Marib oasis in the highlands of modern Yemen. Seasonal monsoon floods from Wadi Dhana sustain barley, wheat, and date palm cultivation. The settlement controls a natural bottleneck on overland routes linking the frankincense-producing Dhofar coast to Mediterranean markets. Early earth dams channel floodwater into fields — the first steps toward the hydraulic civilization that will define Saba for 1,400 years",
+      "description_ru": "Прото-сабейские общины объединяются вокруг оазиса Мариб в нагорьях современного Йемена. Сезонные муссонные паводки из Вади Дана поддерживают выращивание ячменя, пшеницы и финиковых пальм. Поселение контролирует естественное узкое место на сухопутных маршрутах, связывающих побережье Дофара, где добывают ладан, со средиземноморскими рынками. Ранние земляные дамбы направляют паводковые воды на поля — первые шаги к гидравлической цивилизации, которая будет определять Сабу на протяжении 1400 лет",
+      "era": "BC",
+      "latitude": 15.4272,
+      "longitude": 45.3363,
+      "name": "Emergence of the Sabaean Kingdom at Marib",
+      "name_ru": "Возникновение Сабейского царства в Марибе",
+      "source": "https://en.wikipedia.org/wiki/Sheba",
+      "tags": [
+        "Sabaean",
+        "Foundation",
+        "Kingdom",
+        "Agriculture"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0950",
+      "description": "According to the Bible (1 Kings 10) and the Quran (Surah 27), the Queen of Sheba travels to Jerusalem with a great caravan carrying 120 talents of gold, spices, and precious stones to test King Solomon's wisdom. In Ethiopian tradition she is called Makeda, and their union produces Menelik I — founder of the Solomonic dynasty that ruled Ethiopia until 1974. In the Quran she is called Bilqis, and converts from sun worship to monotheism. No inscription names her, but Assyrian records from the 8th century BC confirm Arabian queens ('Queens of the Arabs') as a documented phenomenon",
+      "description_ru": "Согласно Библии (3 Царств 10) и Корану (Сура 27), царица Савская отправляется в Иерусалим с караваном, несущим 120 талантов золота, пряности и драгоценные камни, чтобы испытать мудрость царя Соломона. В эфиопской традиции её называют Македа, и от их союза рождается Менелик I — основатель Соломоновой династии, правившей Эфиопией до 1974 года. В Коране она названа Билкис и обращается от поклонения солнцу к монотеизму. Ни одна надпись не называет её по имени, но ассирийские записи VIII века до н. э. подтверждают арабских цариц ('Цариц арабов') как задокументированное явление",
+      "era": "BC",
+      "latitude": 31.7767,
+      "longitude": 35.2345,
+      "name": "Queen of Sheba Visits King Solomon",
+      "name_ru": "Царица Савская посещает царя Соломона",
+      "source": "https://en.wikipedia.org/wiki/Queen_of_Sheba",
+      "tags": [
+        "Sabaean",
+        "Legend",
+        "Diplomacy",
+        "Trade"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0800",
+      "description": "The Sabaean Musnad script — a 29-letter consonantal alphabet carved in angular, geometric forms optimized for stone — becomes standardized for monumental inscriptions. Evolved from Proto-Sinaitic alongside Phoenician, it is a sibling to the scripts that will become Greek, Latin, and Hebrew. A parallel cursive variant called Zabur is used on wooden sticks for daily commerce and private records. The script will produce over 15,000 inscriptions across Yemen, and its descendant — Ge'ez — remains in use in Ethiopia today",
+      "description_ru": "Сабейское письмо муснад — 29-буквенный консонантный алфавит, вырезанный в угловатых геометрических формах, оптимизированных для камня — становится стандартом для монументальных надписей. Развившееся из прото-синайского наряду с финикийским, оно является родственным письменностям, которые станут греческой, латинской и еврейской. Параллельный курсивный вариант забур используется на деревянных палочках для повседневной торговли и личных записей. Письменность породит более 15 000 надписей по всему Йемену, а его потомок — геэз — используется в Эфиопии и сегодня",
+      "era": "BC",
+      "latitude": 15.4272,
+      "longitude": 45.3363,
+      "name": "Musnad Script — Sabaean Monumental Writing",
+      "name_ru": "Письмо муснад — сабейская монументальная письменность",
+      "source": "https://en.wikipedia.org/wiki/Ancient_South_Arabian_script",
+      "tags": [
+        "Sabaean",
+        "Writing",
+        "Culture"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0800",
+      "description": "Sabaean rulers adopt the title 'mukarrib' (federator/unifier) rather than 'king', reflecting a confederation of tribes united under Saba's leadership. The mukarrib leads combined armies, adjudicates inter-tribal disputes, and serves as the earthly representative of the moon god Almaqah. Capital Marib becomes a monumental city with multi-story buildings, stone fortifications, and carved alabaster facades. Sirwah, 40 km west, serves as the secondary political and religious center with its own major temple to Almaqah",
+      "description_ru": "Сабейские правители принимают титул 'мукарриб' (объединитель/федератор) вместо 'царь', отражая конфедерацию племён, объединённых под руководством Сабы. Мукарриб возглавляет объединённые армии, разрешает межплеменные споры и служит земным представителем лунного бога Алмаках. Столица Мариб становится монументальным городом с многоэтажными зданиями, каменными укреплениями и резными алебастровыми фасадами. Сирва, в 40 км к западу, служит вторым политическим и религиозным центром со своим крупным храмом Алмаках",
+      "era": "BC",
+      "latitude": 15.3517,
+      "longitude": 44.9414,
+      "name": "Mukarrib Confederation — Sabaean Political System",
+      "name_ru": "Конфедерация мукаррибов — сабейская политическая система",
+      "source": "https://en.wikipedia.org/wiki/Sirwah",
+      "tags": [
+        "Sabaean",
+        "Kingdom",
+        "Administration"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0750",
+      "description": "The Great Dam of Marib is constructed across Wadi Dhana — a pyramidal earthen embankment with stone facing, 580 m long, 4 m high initially, with sluice gates and spillways feeding a network of irrigation canals. It captures seasonal monsoon rains and creates the largest artificial oasis in ancient Arabia, irrigating 25,000 acres of farmland. The dam will be expanded to 14 m height over centuries, maintained for 1,400 years, and sustain a population that makes Saba the wealthiest kingdom in Arabia. Counted among the engineering marvels of the ancient world",
+      "description_ru": "Великая Марибская дамба строится поперёк Вади Дана — пирамидальная земляная насыпь с каменной облицовкой, 580 м в длину, первоначально 4 м в высоту, с шлюзовыми затворами и водосбросами, питающими сеть ирригационных каналов. Она улавливает сезонные муссонные дожди и создаёт крупнейший искусственный оазис в древней Аравии, орошая 10 000 гектаров сельскохозяйственных земель. Дамба будет расширена до 14 м в высоту на протяжении веков, обслуживаться 1400 лет и поддерживать население, которое сделает Сабу богатейшим царством Аравии. Считается одним из инженерных чудес древнего мира",
+      "era": "BC",
+      "latitude": 15.3964,
+      "longitude": 45.2439,
+      "name": "Great Dam of Marib — Engineering Marvel of Arabia",
+      "name_ru": "Великая Марибская дамба — инженерное чудо Аравии",
+      "source": "https://en.wikipedia.org/wiki/Marib_Dam",
+      "tags": [
+        "Sabaean",
+        "Engineering ⚙️",
+        "Agriculture",
+        "Ancient Wonders",
+        "Building 🏠"
+      ],
+      "type": "construction"
+    },
+    {
+      "date": "01.01.0700",
+      "description": "The Temple of Awwam (Mahram Bilqis) is built 7 km southeast of Marib — the largest temple complex in all of South Arabia. Its unusual elliptical shape spans 105 m along the major axis, enclosed by limestone walls 8.5 m high. Inside: 8 standing pillars, a peristyle hall, courtyards, a sacred wellspring, and a cemetery with over 500 statue fragments. Dedicated to Almaqah as 'Lord of Awwam', it serves as the main oracular center of the Sabaean kingdom — pilgrims consult the god through cleromancy (marked arrows drawn for divine answers) and oneiromancy (dream divination after sleeping in the temple). Over 1,000 inscriptions document its religious, political, and trade history across eight centuries",
+      "description_ru": "Храм Аввам (Махрам Билкис) строится в 7 км к юго-востоку от Мариба — крупнейший храмовый комплекс во всей Южной Аравии. Его необычная эллиптическая форма простирается на 105 м по большой оси, окружённая известняковыми стенами высотой 8,5 м. Внутри: 8 стоящих колонн, перистильный зал, дворы, священный источник и кладбище с более чем 500 фрагментами статуй. Посвящённый Алмакаху как 'Владыке Аввама', он служит главным оракульным центром Сабейского царства — паломники обращаются к богу через клеромантию (гадание на помеченных стрелах) и онейромантию (гадание по снам после сна в храме). Более 1000 надписей документируют его религиозную, политическую и торговую историю на протяжении восьми веков",
+      "era": "BC",
+      "latitude": 15.3862,
+      "longitude": 45.2252,
+      "name": "Temple of Awwam — Sanctuary of Almaqah",
+      "name_ru": "Храм Аввам — святилище Алмакаха",
+      "source": "https://en.wikipedia.org/wiki/Temple_of_Awwam",
+      "tags": [
+        "Sabaean",
+        "Temple",
+        "Religious",
+        "Architecture",
+        "Ancient Wonders"
+      ],
+      "type": "construction"
+    },
+    {
+      "date": "01.01.0700",
+      "description": "The Barran Temple ('Arsh Bilqis' — Throne of Bilqis) is erected in Marib's southern oasis, dedicated to Almaqah. Six monolithic stone columns rise over 12 m high, flanking a sacred courtyard with a central well. Located 600 m west of the Temple of Awwam, it forms part of the pilgrimage processional route. Later folklore associates it with the Queen of Sheba. The temple remains active until the 4th century AD and is inscribed as a UNESCO World Heritage Site in 2023",
+      "description_ru": "Храм Барран ('Арш Билкис' — Трон Билкис) возводится в южном оазисе Мариба, посвящённый Алмакаху. Шесть монолитных каменных колонн поднимаются на высоту более 12 м, обрамляя священный двор с центральным колодцем. Расположенный в 600 м к западу от Храма Аввам, он является частью паломнического маршрута. Позднее фольклор связывает его с царицей Савской. Храм действует до IV века н. э. и внесён в список Всемирного наследия ЮНЕСКО в 2023 году",
+      "era": "BC",
+      "latitude": 15.4031,
+      "longitude": 45.3432,
+      "name": "Barran Temple — 'Throne of Bilqis'",
+      "name_ru": "Храм Барран — 'Трон Билкис'",
+      "source": "https://en.wikipedia.org/wiki/Barran_Temple",
+      "tags": [
+        "Sabaean",
+        "Temple",
+        "Religious",
+        "Architecture",
+        "Monument"
+      ],
+      "type": "construction"
+    },
+    {
+      "date": "01.01.0700",
+      "description": "Every year in the month of dhu-Abhi (February/March), all subjects of the Kingdom of Saba are obligated to make pilgrimage to Marib. The 8–10 day festival begins at Harwanum Temple and processes to the Temple of Awwam via a sacred road. Pilgrims undergo mandatory purification: sexual abstinence, dietary restrictions, no weapons. On the 7th day, bulls are sacrificed to Almaqah — bulls are his sacred animal, symbolized by the ubiquitous bull's head and vine motifs in Sabaean art. Communal feasts follow on stone benches inside the temple. Pilgrims offer bronze bull figurines, stone human statues, incense, and votive stelae. A 'Truce of God' guarantees safe passage — no bloodshed permitted during the pilgrimage period, a pre-Islamic Arabian tradition later echoed in Islam",
+      "description_ru": "Каждый год в месяц дху-Абхи (февраль/март) все подданные царства Саба обязаны совершить паломничество в Мариб. 8–10-дневный праздник начинается у храма Харванум и шествием следует к Храму Аввам по священной дороге. Паломники проходят обязательное очищение: половое воздержание, диетические ограничения, без оружия. На 7-й день быки приносятся в жертву Алмакаху — быки его священные животные, символизируемые повсеместным мотивом бычьей головы и виноградной лозы в сабейском искусстве. Затем следуют общие трапезы на каменных скамьях внутри храма. Паломники приносят бронзовые фигурки быков, каменные человеческие статуи, благовония и вотивные стелы. 'Божье перемирие' гарантирует безопасный проход — кровопролитие запрещено во время паломничества, доисламская арабская традиция, впоследствии отражённая в исламе",
+      "era": "BC",
+      "latitude": 15.3862,
+      "longitude": 45.2252,
+      "name": "Annual Pilgrimage to Almaqah — Sabaean Sacred Festival",
+      "name_ru": "Ежегодное паломничество к Алмакаху — священный праздник сабейцев",
+      "source": "https://en.wikipedia.org/wiki/Almaqah",
+      "tags": [
+        "Sabaean",
+        "Religious",
+        "Customs",
+        "Ceremonial",
+        "Culture"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0700",
+      "description": "Almaqah, the Sabaean national god, presides over a pantheon including 'Athtar (Venus god, supreme across South Arabia), Shams (sun goddess), and Dhat Hamyma (war/fertility goddess depicted with a lion). Almaqah's symbols — bull's head, vine clusters, lightning bolts, and curved sickle weapon — appear on temples, stelae, and incense burners across Yemen. The ruling dynasty considers itself his 'seed' (descendants). Priests (rshw) serve 7-year terms, collect tithes, conduct rain-rogation rites during droughts, and perform ritual hunts ('game of 'Athtar and Kurum') believed to bring rain. Temples serve dual functions as legal and political hubs — treaties are sworn, disputes resolved, and confessions inscribed on temple walls",
+      "description_ru": "Алмаках, национальный бог сабейцев, возглавляет пантеон, включающий Аттара (бог Венеры, верховный во всей Южной Аравии), Шамс (богиня солнца) и Дхат Хамима (богиня войны и плодородия, изображаемая со львом). Символы Алмакаха — бычья голова, виноградные гроздья, молнии и изогнутое серповидное оружие — появляются на храмах, стелах и курильницах по всему Йемену. Правящая династия считает себя его 'семенем' (потомками). Жрецы (ршв) служат 7-летние сроки, собирают десятину, проводят обряды вызова дождя во время засух и совершают ритуальные охоты ('игра Аттара и Курум'), призванные принести дождь. Храмы выполняют двойную функцию правовых и политических центров — в них приносят клятвы, разрешают споры и высекают признания на стенах",
+      "era": "BC",
+      "latitude": 15.3862,
+      "longitude": 45.2252,
+      "name": "Cult of Almaqah — Moon God and Sabaean Pantheon",
+      "name_ru": "Культ Алмакаха — лунный бог и сабейский пантеон",
+      "source": "https://en.wikipedia.org/wiki/Almaqah",
+      "tags": [
+        "Sabaean",
+        "Religious",
+        "Customs",
+        "Culture"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0685",
+      "description": "Mukarrib Karib'il Watar launches eight systematic military campaigns documented in the monumental inscription RES 3945-3946 at the Temple of Almaqah in Sirwah — one of the longest Sabaean texts ever found. His most devastating campaign annihilates the Kingdom of Awsan: 16,000 killed, 40,000 captured, the palace of King Muratta' destroyed, all temples and inscriptions obliterated, and the entire Wadi Markha depopulated. Awsan disappears from historical records for six centuries. Subsequent campaigns conquer Nashshan, the Tihamah coast, and Najran. He earns the epithet 'He Who Destroys Buildings' and imposes the cult of Almaqah on every conquered territory, forcing defeated leaders to build Almaqah temples",
+      "description_ru": "Мукарриб Кариб'ил Ватар начинает восемь систематических военных кампаний, задокументированных в монументальной надписи RES 3945-3946 в Храме Алмакаха в Сирве — одном из длиннейших сабейских текстов. Его самая разрушительная кампания уничтожает царство Авсан: 16 000 убитых, 40 000 пленных, дворец царя Муратта разрушен, все храмы и надписи уничтожены, всё Вади Марха обезлюдено. Авсан исчезает из исторических записей на шесть веков. Последующие кампании завоёвывают Нашшан, побережье Тихамы и Наджран. Он получает прозвище 'Разрушитель зданий' и насаждает культ Алмакаха на каждой завоёванной территории, заставляя побеждённых правителей строить храмы Алмакаху",
+      "era": "BC",
+      "latitude": 15.3517,
+      "longitude": 44.9414,
+      "name": "Karib'il Watar — Destruction of Awsan and Sabaean Hegemony",
+      "name_ru": "Кариб'ил Ватар — разрушение Авсана и сабейская гегемония",
+      "source": "https://en.wikipedia.org/wiki/Karib%27il_Watar",
+      "tags": [
+        "Sabaean",
+        "War",
+        "Conquest",
+        "Destruction",
+        "King"
+      ],
+      "type": "battle"
+    },
+    {
+      "date": "01.01.0650",
+      "description": "Karib'il Watar or his successor changes the royal title from 'mukarrib' (federator) to 'malik' (king), marking Saba's transformation from a tribal confederation into a centralized monarchy. The professional royal army — khamis — operates under direct royal command alongside tribal contingents led by aristocratic clan leaders (qayls). The king controls the frankincense trade monopoly, adjudicates law at temples, and claims divine sanction from Almaqah. This political evolution produces two centuries of Sabaean dominance over all of South Arabia",
+      "description_ru": "Кариб'ил Ватар или его преемник меняет царский титул с 'мукарриб' (объединитель) на 'малик' (царь), отмечая превращение Сабы из племенной конфедерации в централизованную монархию. Профессиональная царская армия — хамис — действует под прямым царским командованием наряду с племенными отрядами под руководством аристократических вождей (кайлов). Царь контролирует монополию на торговлю ладаном, вершит правосудие в храмах и заявляет о божественной санкции Алмакаха. Эта политическая эволюция обеспечивает два века сабейского господства над всей Южной Аравией",
+      "era": "BC",
+      "latitude": 15.4272,
+      "longitude": 45.3363,
+      "name": "From Mukarrib to Malik — Birth of Sabaean Monarchy",
+      "name_ru": "От мукарриба к малику — рождение сабейской монархии",
+      "source": "https://en.wikipedia.org/wiki/Sheba",
+      "tags": [
+        "Sabaean",
+        "King",
+        "Kingdom",
+        "Administration"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0600",
+      "description": "The Incense Route reaches peak profitability — a 2,000+ km network of caravan trails stretching from the frankincense groves of Dhofar and the myrrh highlands of Yemen northward through Shabwah, Marib, Najran, Yathrib (Medina), and Dedan to Gaza and Petra on the Mediterranean. Camels carry 240 kg each, covering 48 km per day across 65 stages. Pliny compares the traffic to 'an army'. Saba controls taxation at the southern chokepoints, making frankincense and myrrh as valuable as gold. Every kingdom along the route extracts tolls, and deviation from the designated path is a capital offense. Rome alone will import 3,000+ tonnes of frankincense annually at the trade's peak",
+      "description_ru": "Ладанный путь достигает пика прибыльности — сеть караванных маршрутов протяжённостью более 2000 км, тянущаяся от ладанных рощ Дофара и мирровых нагорий Йемена на север через Шабву, Мариб, Наджран, Ясриб (Медина) и Дедан до Газы и Петры на Средиземноморье. Верблюды несут по 240 кг каждый, преодолевая 48 км в день за 65 переходов. Плиний сравнивает движение с 'армией'. Саба контролирует налогообложение на южных узких местах, делая ладан и мирру столь же ценными, как золото. Каждое царство на пути взимает пошлины, а отклонение от установленного маршрута карается смертью. Один Рим будет импортировать более 3000 тонн ладана ежегодно на пике торговли",
+      "era": "BC",
+      "latitude": 15.3700,
+      "longitude": 47.0300,
+      "name": "Incense Route at Peak — Frankincense Trade Dominance",
+      "name_ru": "Ладанный путь на пике — господство торговли ладаном",
+      "source": "https://en.wikipedia.org/wiki/Incense_trade_route",
+      "tags": [
+        "Sabaean",
+        "Trade",
+        "Economic",
+        "Arabia"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0600",
+      "description": "Sabaean communities establish permanent presence across the Red Sea in the highlands of Eritrea and northern Ethiopia, bringing the Musnad script, the Almaqah cult, irrigation techniques, and monumental stone architecture. The Great Temple of Yeha — a 12 m high ashlar structure without mortar — is built in the Ethiopian style blending Sabaean and local traditions. This cross-Red Sea interaction eventually produces the D'mt kingdom and later the Kingdom of Aksum. Sabaean inscriptions, bronze tools, and bull-and-vine motifs appear at sites from Yeha to Matara to Qohaito across a 400 km stretch of the Ethiopian-Eritrean highlands",
+      "description_ru": "Сабейские общины устанавливают постоянное присутствие на другом берегу Красного моря в нагорьях Эритреи и северной Эфиопии, принося письмо муснад, культ Алмакаха, ирригационные техники и монументальную каменную архитектуру. Великий храм Йехи — сооружение из тёсаного камня высотой 12 м без раствора — строится в эфиопском стиле, сочетающем сабейские и местные традиции. Это взаимодействие через Красное море в итоге порождает царство Д'мт и позднее Аксумское царство. Сабейские надписи, бронзовые орудия и мотивы быка и лозы появляются на объектах от Йехи до Матары и Кохаито на протяжении 400 км по Эфиопо-Эритрейскому нагорью",
+      "era": "BC",
+      "latitude": 14.2839,
+      "longitude": 39.0125,
+      "name": "Sabaean Expansion Across the Red Sea",
+      "name_ru": "Сабейская экспансия через Красное море",
+      "source": "https://en.wikipedia.org/wiki/Sabaeans_in_the_Horn_of_Africa",
+      "tags": [
+        "Sabaean",
+        "Colonization",
+        "Culture",
+        "Trade",
+        "Africa"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0500",
+      "description": "Frankincense and myrrh permeate every level of Sabaean society. Resin is harvested by tapping Boswellia sacra trees in Dhofar and Commiphora myrrha in Yemen's highlands — both processes are closely guarded monopolies. Incense is burned daily in every home, temple, and public space. Almaqah's temples feature dedicated incense burners carved in alabaster with bull and ibex motifs. Frankincense is offered for healing, childbirth protection, military victories, and rain. The wealth from aromatics funds monumental architecture, irrigation, and a standing army. Sabaean society revolves around the frankincense cycle: harvest in spring, caravan departure in autumn, and pilgrimage festivals timed to the trade calendar",
+      "description_ru": "Ладан и мирра пронизывают все уровни сабейского общества. Смолу собирают, надрезая деревья Boswellia sacra в Дофаре и Commiphora myrrha в нагорьях Йемена — оба процесса являются строго охраняемыми монополиями. Благовония сжигаются ежедневно в каждом доме, храме и общественном месте. В храмах Алмакаха установлены специальные курильницы, вырезанные из алебастра с мотивами быка и горного козла. Ладан приносят для исцеления, защиты при родах, военных побед и дождя. Богатство от ароматических веществ финансирует монументальную архитектуру, ирригацию и регулярную армию. Сабейское общество вращается вокруг ладанного цикла: сбор весной, отправка караванов осенью и паломнические праздники, привязанные к торговому календарю",
+      "era": "BC",
+      "latitude": 15.4272,
+      "longitude": 45.3363,
+      "name": "Frankincense Culture — Sacred Aromatics of Saba",
+      "name_ru": "Культура ладана — священные ароматы Сабы",
+      "source": "https://en.wikipedia.org/wiki/Incense_trade_route",
+      "tags": [
+        "Sabaean",
+        "Trade",
+        "Religious",
+        "Customs",
+        "Culture"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0500",
+      "description": "The Marib Dam undergoes its first major expansion — raised from 4 m to 7 m with stone facing extended to the south side. Five spillways channel water to a settling pond and 1 km distribution canal feeding both northern and southern oasis gardens. The irrigation system supports double annual harvests of barley, wheat, dates, and grapes. Marib's population grows into the tens of thousands, making it the largest city in Arabia. Water engineers maintain precise gradient calculations across the canal network — one of the most sophisticated hydraulic systems in the ancient world",
+      "description_ru": "Марибская дамба проходит первое крупное расширение — поднята с 4 м до 7 м с каменной облицовкой, продлённой на южную сторону. Пять водосбросов направляют воду в отстойный бассейн и распределительный канал длиной 1 км, питающий сады как северного, так и южного оазиса. Ирригационная система обеспечивает два урожая в год ячменя, пшеницы, фиников и винограда. Население Мариба вырастает до десятков тысяч, делая его крупнейшим городом Аравии. Инженеры-гидротехники поддерживают точные расчёты уклона по всей канальной сети — одна из самых сложных гидравлических систем древнего мира",
+      "era": "BC",
+      "latitude": 15.3964,
+      "longitude": 45.2439,
+      "name": "Marib Dam Expansion — Largest Oasis in Arabia",
+      "name_ru": "Расширение Марибской дамбы — крупнейший оазис Аравии",
+      "source": "https://en.wikipedia.org/wiki/Marib_Dam",
+      "tags": [
+        "Sabaean",
+        "Engineering ⚙️",
+        "Agriculture",
+        "Building 🏠"
+      ],
+      "type": "construction"
+    },
+    {
+      "date": "01.01.0400",
+      "description": "The Minaean Kingdom (Ma'in) emerges in northwestern Yemen, competing with Saba for control of the northern incense route segments. Centered at Qarnaw (modern Ma'in), the Minaeans establish trading colonies as far as Dedan (Al-Ula) in the Hejaz and the island of Delos in Greece. Their language, Minaean, coexists with Sabaic across South Arabia. The Qatabanian Kingdom also rises in Wadi Bayhan, controlling the eastern frankincense pipeline through their capital Timna. Saba's monopoly fractures into a multi-kingdom competition that will define South Arabian politics for the next four centuries",
+      "description_ru": "Минейское царство (Маин) возникает в северо-западном Йемене, конкурируя с Сабой за контроль над северными участками ладанного пути. Сосредоточенные в Карнаве (современный Маин), минейцы основывают торговые колонии вплоть до Дедана (Аль-Ула) в Хиджазе и острова Делос в Греции. Их язык, минейский, сосуществует с сабейским по всей Южной Аравии. Катабанское царство также возвышается в Вади Байхан, контролируя восточный поток ладана через свою столицу Тимну. Монополия Сабы раскалывается в многоцарственную конкуренцию, которая определит южноаравийскую политику на следующие четыре века",
+      "era": "BC",
+      "latitude": 15.6300,
+      "longitude": 45.0500,
+      "name": "Minaean and Qatabanian Kingdoms Challenge Sabaean Monopoly",
+      "name_ru": "Минейское и Катабанское царства бросают вызов сабейской монополии",
+      "source": "https://en.wikipedia.org/wiki/Sheba",
+      "tags": [
+        "Sabaean",
+        "Kingdom",
+        "Trade",
+        "Decline"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0145",
+      "description": "The Great Dam of Marib suffers a catastrophic breach during the war between Raydan and Saba — possibly the 'Flood of the 'Arim' referenced in the Quran (Surah 34:15-17). The breach devastates the northern oasis gardens and triggers emergency repairs. This is the first of six major breaches over seven centuries. Each subsequent repair becomes more difficult as hydraulic engineering knowledge deteriorates and political instability weakens the state's capacity for large-scale public works",
+      "description_ru": "Великая Марибская дамба получает катастрофический прорыв во время войны между Райданом и Сабой — возможно, 'Потоп Арима', упоминаемый в Коране (Сура 34:15-17). Прорыв опустошает северные оазисные сады и вызывает аварийный ремонт. Это первый из шести крупных прорывов за семь веков. Каждый последующий ремонт становится всё труднее по мере утраты знаний гидротехники и ослабления способности государства к масштабным общественным работам из-за политической нестабильности",
+      "era": "BC",
+      "latitude": 15.3964,
+      "longitude": 45.2439,
+      "name": "First Breach of the Marib Dam",
+      "name_ru": "Первый прорыв Марибской дамбы",
+      "source": "https://en.wikipedia.org/wiki/Marib_Dam",
+      "tags": [
+        "Sabaean",
+        "Disaster",
+        "Engineering ⚙️",
+        "Decline"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0115",
+      "description": "The Himyarite Kingdom, based at Zafar near modern Yareem, conquers Saba for the first time. The Himyarites — a highland tribe that had been Saba's vassals — take the Sabaean capital Marib and adopt the title 'King of Saba and Dhu Raydan'. The First Sabaean Kingdom ends after over a millennium. Simultaneously, Greek navigators discover how to use monsoon winds to sail directly from Egypt to India, bypassing the overland incense route entirely. This double blow — political conquest and trade route disruption — permanently weakens Saba's economic foundation",
+      "description_ru": "Химьяритское царство, расположенное в Зафаре близ современного Ярима, впервые завоёвывает Сабу. Химьяриты — горное племя, бывшее вассалами Сабы — захватывают сабейскую столицу Мариб и принимают титул 'Царь Сабы и Дху Райдана'. Первое Сабейское царство заканчивается после более чем тысячелетия существования. Одновременно греческие мореплаватели открывают, как использовать муссонные ветры для плавания напрямую из Египта в Индию, полностью обходя сухопутный ладанный путь. Этот двойной удар — политическое завоевание и разрушение торгового маршрута — навсегда подрывает экономическую основу Сабы",
+      "era": "BC",
+      "latitude": 14.2100,
+      "longitude": 44.3900,
+      "name": "Himyarite Conquest — End of the First Sabaean Kingdom",
+      "name_ru": "Химьяритское завоевание — конец Первого Сабейского царства",
+      "source": "https://en.wikipedia.org/wiki/Sheba",
+      "tags": [
+        "Sabaean",
+        "Conquest",
+        "Defeat",
+        "Fall",
+        "Kingdom"
+      ],
+      "type": "battle"
+    },
+    {
+      "date": "01.01.0025",
+      "description": "Roman prefect Aelius Gallus leads 10,000 legionaries from Egypt through the Hejaz toward Marib, aiming to seize control of the incense trade at its source. The Nabataean guide Syllaeus deliberately misleads the army through waterless desert. After six months of marching, disease, and attrition, the Romans reach Marib but fail to breach its fortifications. They withdraw after a two-week siege, losing most of their force to dysentery and dehydration on the return march. It is Rome's only military expedition into Arabia Felix — and a complete disaster. Augustus never attempts it again",
+      "description_ru": "Римский префект Элий Галл ведёт 10 000 легионеров из Египта через Хиджаз к Марибу, стремясь захватить контроль над торговлей ладаном у её истоков. Набатейский проводник Силлей намеренно ведёт армию через безводную пустыню. После шести месяцев марша, болезней и потерь римляне достигают Мариба, но не могут прорвать его укрепления. Они отступают после двухнедельной осады, потеряв большую часть войска от дизентерии и обезвоживания на обратном марше. Это единственная военная экспедиция Рима в Arabia Felix — и полная катастрофа. Август никогда больше не повторяет попытку",
+      "era": "BC",
+      "latitude": 15.4272,
+      "longitude": 45.3363,
+      "name": "Roman Expedition of Aelius Gallus — Siege of Marib",
+      "name_ru": "Римская экспедиция Элия Галла — осада Мариба",
+      "source": "https://en.wikipedia.org/wiki/Aelius_Gallus",
+      "tags": [
+        "Sabaean",
+        "War",
+        "Defense",
+        "Defeat"
+      ],
+      "type": "battle"
+    },
+    {
+      "date": "01.01.0100",
+      "description": "The Sabaean Kingdom re-emerges as the 'Middle Sabaean Kingdom' after liberating itself from Himyarite control. Distinctly different from the earlier kingdom, it operates with Sana'a as a secondary capital alongside Marib. The Sabaeans reclaim their territory but now compete with Himyar, Hadhramaut, and the remnants of Qataban in a fractured South Arabian landscape. Trade revenues continue to decline as Roman maritime routes to India via the Red Sea bypass the overland incense caravans entirely. The Minaean language dies out around this time",
+      "description_ru": "Сабейское царство вновь возникает как 'Среднее Сабейское царство' после освобождения от химьяритского контроля. Существенно отличаясь от прежнего царства, оно функционирует с Саной как второй столицей наряду с Марибом. Сабейцы возвращают свою территорию, но теперь конкурируют с Химьяром, Хадрамаутом и остатками Катабана в раздробленном южноаравийском ландшафте. Торговые доходы продолжают падать, поскольку римские морские маршруты в Индию через Красное море полностью обходят сухопутные ладанные караваны. Минейский язык вымирает примерно в это время",
+      "era": "AD",
+      "latitude": 15.3548,
+      "longitude": 44.2075,
+      "name": "Middle Sabaean Kingdom — Revival and Struggle",
+      "name_ru": "Среднее Сабейское царство — возрождение и борьба",
+      "source": "https://en.wikipedia.org/wiki/Sheba",
+      "tags": [
+        "Sabaean",
+        "Kingdom",
+        "Decline",
+        "Trade"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0275",
+      "description": "The Himyarite King Shammar Yuhar'ish permanently conquers Saba and assumes the title 'King of Saba and Dhu Raydan and Hadhramaut and Yamanat' — unifying all of southwestern Arabia. Saba loses its royal status forever and reverts to an ordinary tribe limited to the citizens of Marib. The Sabaean language gradually gives way to a Himyaritic dialect. Almaqah's temples are eventually abandoned as the Himyarites convert first to Judaism, then to Christianity. A civilization that lasted over 1,400 years ends — but its script lives on as Ge'ez in Ethiopia, its dam engineering is studied for centuries, and the Queen of Sheba legend endures across three world religions",
+      "description_ru": "Химьяритский царь Шаммар Юхариш окончательно завоёвывает Сабу и принимает титул 'Царь Сабы и Дху Райдана и Хадрамаута и Яманата' — объединяя всю юго-западную Аравию. Саба навсегда теряет царский статус и становится обычным племенем, ограниченным жителями Мариба. Сабейский язык постепенно уступает место химьяритскому диалекту. Храмы Алмакаха со временем заброшены, когда химьяриты принимают сначала иудаизм, затем христианство. Цивилизация, просуществовавшая более 1400 лет, заканчивается — но её письменность живёт как геэз в Эфиопии, её дамбовая инженерия изучается веками, а легенда о царице Савской продолжает жить в трёх мировых религиях",
+      "era": "AD",
+      "latitude": 15.4272,
+      "longitude": 45.3363,
+      "name": "Fall of Saba — Himyarite Unification of Arabia",
+      "name_ru": "Падение Сабы — химьяритское объединение Аравии",
+      "source": "https://en.wikipedia.org/wiki/Sheba",
+      "tags": [
+        "Sabaean",
+        "Conquest",
+        "Fall",
+        "Kingdom",
+        "End"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0570",
+      "description": "The Great Dam of Marib suffers its final catastrophic breach after six major failures over seven centuries (145 BC, 449, 450, 542, 548, 570 AD). This time no one repairs it. The irrigation system collapses completely, the oasis dies, and an estimated 50,000 people migrate from Marib across the Arabian Peninsula — the Azd tribe to Oman, Kindah to central Arabia, Ghassanids to Syria. The Arabic proverb 'separated like the hands of Saba' commemorates this diaspora. The Quran references the event as the 'Flood of the 'Arim' (Surah 34:15-17), a divine punishment for ingratitude. A dam maintained for 1,400 years — one of the longest-serving engineering works in human history — falls silent",
+      "description_ru": "Великая Марибская дамба получает свой последний катастрофический прорыв после шести крупных разрушений за семь веков (145 до н. э., 449, 450, 542, 548, 570 н. э.). На этот раз никто её не ремонтирует. Ирригационная система полностью разрушается, оазис гибнет, и около 50 000 человек мигрируют из Мариба по Аравийскому полуострову — племя Азд в Оман, Кинда в центральную Аравию, Гассаниды в Сирию. Арабская пословица 'разделились как руки Сабы' увековечивает эту диаспору. Коран ссылается на событие как на 'Потоп Арима' (Сура 34:15-17), божественное наказание за неблагодарность. Дамба, обслуживавшаяся 1400 лет — одно из самых долговечных инженерных сооружений в истории человечества — замолкает",
+      "era": "AD",
+      "latitude": 15.3964,
+      "longitude": 45.2439,
+      "name": "Final Collapse of the Marib Dam — End of an Era",
+      "name_ru": "Окончательное разрушение Марибской дамбы — конец эпохи",
+      "source": "https://en.wikipedia.org/wiki/Marib_Dam",
+      "tags": [
+        "Sabaean",
+        "Disaster",
+        "Collapse",
+        "Engineering ⚙️",
+        "End"
+      ],
+      "type": "historic"
+    }
+  ],
+  "name": "Sabaean Civilization",
+  "name_ru": "Сабейская цивилизация"
+}
