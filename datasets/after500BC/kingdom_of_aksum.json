@@ -1,0 +1,496 @@
+{
+  "description": "Kingdom of Aksum — major East African empire, c. 100 BC–960 AD. One of the four great powers of the ancient world alongside Rome, Persia, and China",
+  "events": [
+    {
+      "date": "01.01.0100",
+      "description": "Aksum emerges as a unified polity in the northern Ethiopian highlands, inheriting the cultural and technological foundations of the earlier D'mt kingdom and its successor states. Located at 2,000m elevation with fertile volcanic soil and reliable monsoon rains. The city sits at the crossroads of trade routes connecting the Red Sea coast, the African interior, the Nile Valley, and South Arabia",
+      "description_ru": "Аксум возникает как единое государство в северных эфиопских нагорьях, наследуя культурные и технологические основы более раннего царства Д'мт и его государств-преемников. Расположен на высоте 2000 м с плодородными вулканическими почвами и регулярными муссонными дождями. Город стоит на перекрёстке торговых путей, связывающих побережье Красного моря, внутренние районы Африки, долину Нила и Южную Аравию",
+      "era": "BC",
+      "latitude": 14.1211,
+      "longitude": 38.7234,
+      "name": "Rise of the Kingdom of Aksum",
+      "name_ru": "Возвышение Аксумского царства",
+      "source": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum",
+      "tags": [
+        "Aksumite",
+        "Foundation",
+        "Kingdom"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0050",
+      "description": "The Periplus of the Erythraean Sea, a Greco-Roman navigation guide, describes Adulis as a major Red Sea port and Aksum as a 'metropolis.' King Zoskales is noted for his literacy in Greek and control of the ports of Adulis and Avalites. Aksum exports ivory, tortoiseshell, rhino horn, and gold; imports wine, olive oil, cloth, glassware, iron, and weapons from Rome, Egypt, and India",
+      "description_ru": "«Перипл Эритрейского моря», греко-римский навигационный справочник, описывает Адулис как крупный порт Красного моря, а Аксум — как «метрополию». Царь Зоскалес отмечен за грамотность в греческом языке и контроль над портами Адулис и Авалитес. Аксум экспортирует слоновую кость, черепаший панцирь, рог носорога и золото; импортирует вино, оливковое масло, ткани, стекло, железо и оружие из Рима, Египта и Индии",
+      "era": "AD",
+      "latitude": 15.2833,
+      "longitude": 39.6667,
+      "name": "Periplus Describes Adulis and Aksum",
+      "name_ru": "«Перипл» описывает Адулис и Аксум",
+      "source": "https://en.wikipedia.org/wiki/Periplus_of_the_Erythraean_Sea",
+      "tags": [
+        "Aksumite",
+        "Trade",
+        "Diplomacy"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0100",
+      "description": "Greco-Roman exploitation of monsoon wind patterns (discovered c. 1st century BC) opens direct sea routes from Egypt to India via the Red Sea. Adulis benefits as a key African transshipment hub along this route. Aksumite merchants participate in the Rome–India trade, reaching Sri Lanka and the Indian coast for silk, pepper, and spices to re-export to the Mediterranean. Aksum's position near the Bab-el-Mandeb strait provides significant commercial advantage",
+      "description_ru": "Греко-римское освоение муссонных ветров (открытых ок. I в. до н.э.) открывает прямые морские маршруты из Египта в Индию через Красное море. Адулис извлекает выгоду как ключевой африканский перевалочный узел на этом маршруте. Аксумские купцы участвуют в торговле Рим–Индия, достигая Шри-Ланки и индийского побережья за шёлком, перцем и пряностями для реэкспорта в Средиземноморье. Положение Аксума у Баб-эль-Мандебского пролива даёт значительное коммерческое преимущество",
+      "era": "AD",
+      "latitude": 12.58,
+      "longitude": 43.33,
+      "name": "Adulis and the Monsoon Trade Route",
+      "name_ru": "Адулис и муссонный торговый путь",
+      "source": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum",
+      "tags": [
+        "Aksumite",
+        "Trade",
+        "Economic",
+        "Navigation"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0200",
+      "description": "King GDRT (Gadarat) — the first Aksumite ruler attested in external historical records. Known from South Arabian inscriptions and the Addi Galamo bronze inscription in Tigray. He intervenes in South Arabian affairs, allying with the Sabaeans against the Himyarite kingdom and briefly occupying territory in western Yemen. This is the first documented Aksumite military campaign across the Red Sea",
+      "description_ru": "Царь ГДРТ (Гадарат) — первый аксумский правитель, засвидетельствованный во внешних исторических источниках. Известен из южноаравийских надписей и бронзовой надписи из Адди Галамо в Тиграе. Вмешивается в южноаравийские дела, объединяясь с сабейцами против Химьяритского царства и ненадолго оккупируя территорию в западном Йемене. Первый задокументированный аксумский военный поход через Красное море",
+      "era": "AD",
+      "latitude": 14.1211,
+      "longitude": 38.7234,
+      "name": "King GDRT — First Aksumite Imperial Campaign",
+      "name_ru": "Царь ГДРТ — первый имперский поход Аксума",
+      "source": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum",
+      "tags": [
+        "Aksumite",
+        "King",
+        "Conquest",
+        "Arabia"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0230",
+      "description": "An anonymous Aksumite king records his military conquests on a white marble throne at Adulis — the Monumentum Adulitanum. Written in Greek and Ge'ez, it describes campaigns across the Horn of Africa, Arabia, and up the Nile to regions with 'knee-deep snow' (likely the Simien Mountains). The original monument is now lost; it survives only through a copy made by Byzantine traveler Cosmas Indicopleustes around 525 AD, who mistakenly merged it with an older Ptolemaic inscription nearby",
+      "description_ru": "Анонимный аксумский царь записывает свои военные завоевания на белом мраморном троне в Адулисе — Monumentum Adulitanum. Написанный на греческом и геэзе, он описывает походы по Африканскому Рогу, Аравии и вверх по Нилу до областей со «снегом по колено» (вероятно, горы Сымен). Оригинальный монумент утрачен; он сохранился лишь в копии византийского путешественника Козьмы Индикоплова около 525 г., который ошибочно объединил его со старой птолемеевской надписью поблизости",
+      "era": "AD",
+      "latitude": 15.2833,
+      "longitude": 39.6667,
+      "name": "Monumentum Adulitanum — Throne Inscription",
+      "name_ru": "Monumentum Adulitanum — тронная надпись",
+      "source": "https://en.wikipedia.org/wiki/Monumentum_Adulitanum",
+      "tags": [
+        "Aksumite",
+        "Monument",
+        "Writing",
+        "Conquest"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0250",
+      "description": "King Sembrouthes adopts the title 'King of Kings' — the first Aksumite ruler to use this imperial designation. Known from a Greek inscription at Daqqi Mahari in Eritrea, dated to his 24th regnal year. The title signals Aksum's self-understanding as a major empire on par with Persia, which used the equivalent 'Shahanshah'",
+      "description_ru": "Царь Семброутес принимает титул «Царь царей» — первый аксумский правитель, использующий это имперское обозначение. Известен по греческой надписи в Дакки Махари в Эритрее, датированной 24-м годом его правления. Титул указывает на самосознание Аксума как великой империи наравне с Персией, использовавшей эквивалентный титул «Шаханшах»",
+      "era": "AD",
+      "latitude": 14.9,
+      "longitude": 39.3,
+      "name": "Sembrouthes — First 'King of Kings'",
+      "name_ru": "Семброутес — первый «Царь царей»",
+      "source": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum",
+      "tags": [
+        "Aksumite",
+        "King",
+        "Empire"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0260",
+      "description": "The Persian prophet Mani names Aksum as one of the four great powers of the world, alongside Rome, Persia, and China. This is the earliest external recognition of Aksum as a global-scale civilization — remarkable for a state based in the Ethiopian highlands, far from the traditional centers of ancient power",
+      "description_ru": "Персидский пророк Мани называет Аксум одной из четырёх великих держав мира наряду с Римом, Персией и Китаем. Это первое внешнее признание Аксума как цивилизации мирового масштаба — примечательно для государства в эфиопских нагорьях, далеко от традиционных центров древней власти",
+      "era": "AD",
+      "latitude": 14.1211,
+      "longitude": 38.7234,
+      "name": "Mani Names Aksum a World Power",
+      "name_ru": "Мани называет Аксум мировой державой",
+      "source": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum",
+      "tags": [
+        "Aksumite",
+        "Diplomacy",
+        "Empire",
+        "Persian"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0270",
+      "description": "King Endubis begins minting Aksumite coins in gold, silver, and bronze — the first sub-Saharan African state to produce its own currency. Gold coins bear Greek inscriptions for international trade; silver and bronze coins use Ge'ez for domestic commerce. Early coins feature the pagan disc-and-crescent symbol. Coin production demonstrates economic centralization and integration into the Roman monetary system",
+      "description_ru": "Царь Эндибис начинает чеканку аксумских монет из золота, серебра и бронзы — первое государство Африки южнее Сахары с собственной валютой. Золотые монеты содержат греческие надписи для международной торговли; серебряные и бронзовые — письмо геэз для внутренней торговли. Ранние монеты несут языческий символ диска и полумесяца. Чеканка демонстрирует экономическую централизацию и интеграцию в римскую денежную систему",
+      "era": "AD",
+      "latitude": 14.1211,
+      "longitude": 38.7234,
+      "name": "First Aksumite Coins — King Endubis",
+      "name_ru": "Первые аксумские монеты — царь Эндибис",
+      "source": "https://en.wikipedia.org/wiki/Aksumite_currency",
+      "tags": [
+        "Aksumite",
+        "Currency",
+        "Economic",
+        "King"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0300",
+      "description": "Construction of the Great Stele (Stele 1) at Aksum's Northern Stelae Park — at 33 meters and 520 tonnes, the largest single monolith humans ever attempted to erect. Carved from a single block of phonolite granite quarried at Gobedra Hill 4 km away, it depicts a 13-story building with false doors and windows. It collapsed during or immediately after erection. Over 120 stelae in the park served as royal tomb markers, with elaborate underground burial chambers beneath",
+      "description_ru": "Строительство Великой стелы (Стела 1) в Северном парке стел Аксума — при 33 метрах и 520 тоннах, крупнейший цельный монолит, который люди когда-либо пытались воздвигнуть. Вырезана из единого блока фонолитового гранита из каменоломни на холме Гобедра в 4 км. Изображает 13-этажное здание с ложными дверями и окнами. Обрушилась во время или сразу после установки. Более 120 стел в парке служили царскими надгробиями с подземными погребальными камерами",
+      "era": "AD",
+      "latitude": 14.13178,
+      "longitude": 38.714081,
+      "name": "Great Stele of Aksum — Largest Monolith Ever Attempted",
+      "name_ru": "Великая стела Аксума — крупнейший монолит в истории",
+      "source": "https://en.wikipedia.org/wiki/Obelisk_of_Axum",
+      "tags": [
+        "Aksumite",
+        "Monument",
+        "Architecture",
+        "Burial",
+        "Ancient Wonders"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0310",
+      "description": "King Wazeba becomes the first ruler to mint coins with Ge'ez inscriptions instead of Greek — a deliberate assertion of indigenous identity over Hellenistic convention. Some of his coins show dual portraits alongside Ousanas, suggesting a possible co-rule or regency transition. This marks the beginning of Ge'ez replacing Greek as the language of state",
+      "description_ru": "Царь Вазеба становится первым правителем, чеканящим монеты с надписями на геэзе вместо греческого — сознательное утверждение местной идентичности над эллинистической традицией. На некоторых его монетах двойной портрет с Усанасом, что указывает на возможное соправление или переход регентства. Начало вытеснения геэзом греческого как языка государства",
+      "era": "AD",
+      "latitude": 14.1211,
+      "longitude": 38.7234,
+      "name": "King Wazeba — First Ge'ez Coins",
+      "name_ru": "Царь Вазеба — первые монеты на геэзе",
+      "source": "https://en.wikipedia.org/wiki/Aksumite_currency",
+      "tags": [
+        "Aksumite",
+        "Currency",
+        "Writing",
+        "Culture"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0320",
+      "description": "Frumentius, a Syrian Christian youth, is shipwrecked on the Eritrean coast and taken to the Aksumite court. He becomes tutor to the young prince Ezana and gains influence under Queen Regent Sofya (Ezana's mother). This chance arrival plants the seed of Christianity in East Africa's most powerful state",
+      "description_ru": "Фрументий, молодой сирийский христианин, терпит кораблекрушение у эритрейского побережья и попадает ко двору Аксума. Становится наставником юного принца Эзаны и обретает влияние при царице-регентше Софии (матери Эзаны). Это случайное прибытие сеет зерно христианства в самом могущественном государстве Восточной Африки",
+      "era": "AD",
+      "latitude": 14.1211,
+      "longitude": 38.7234,
+      "name": "Arrival of Frumentius at the Aksumite Court",
+      "name_ru": "Прибытие Фрументия ко двору Аксума",
+      "source": "https://en.wikipedia.org/wiki/Frumentius",
+      "tags": [
+        "Aksumite",
+        "Christian",
+        "Religious"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0330",
+      "description": "King Ezana converts to Christianity and makes it the state religion — one of the first rulers in the world to do so, alongside Constantine of Rome and Tiridates of Armenia. Frumentius travels to Alexandria and is ordained as the first Bishop of Aksum by Patriarch Athanasius. Ezana's coins shift from pagan disc-and-crescent symbols to the Christian cross — the first state coinage anywhere to bear the cross. The Ezana Stone, inscribed in Ge'ez, Sabaean, and Greek, documents the transition",
+      "description_ru": "Царь Эзана принимает христианство и делает его государственной религией — один из первых правителей в мире, сделавших это, наряду с Константином Римским и Тиридатом Армянским. Фрументий отправляется в Александрию и посвящается в первого епископа Аксума патриархом Афанасием. Монеты Эзаны меняют языческий символ диска и полумесяца на христианский крест — первые государственные монеты в мире с крестом. Камень Эзаны, надписанный на геэзе, сабейском и греческом, документирует переход",
+      "era": "AD",
+      "latitude": 14.1211,
+      "longitude": 38.7234,
+      "name": "King Ezana Converts to Christianity",
+      "name_ru": "Царь Эзана принимает христианство",
+      "source": "https://en.wikipedia.org/wiki/Ezana_of_Axum",
+      "tags": [
+        "Aksumite",
+        "Christian",
+        "Religious",
+        "King",
+        "Currency"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0340",
+      "description": "Ezana builds the first Church of Our Lady Mary of Zion in Aksum — the most sacred site in Ethiopian Christianity. Ethiopian tradition claims this church houses the Ark of the Covenant, said to have been brought by Menelik I, legendary son of King Solomon and the Queen of Sheba. A guardian monk appointed for life watches over the claimed relic in an adjacent chapel. Most historians are skeptical, but the belief has profoundly shaped Ethiopian identity. The church has been destroyed and rebuilt multiple times; the current structure dates from the 17th century",
+      "description_ru": "Эзана строит первую Церковь Богоматери Сионской в Аксуме — самый священный объект эфиопского христианства. Эфиопская традиция утверждает, что в этой церкви хранится Ковчег Завета, по преданию привезённый Менеликом I, легендарным сыном царя Соломона и царицы Савской. Монах-хранитель, назначенный пожизненно, охраняет реликвию в соседней часовне. Большинство историков скептически оценивают это утверждение, но вера глубоко повлияла на эфиопскую идентичность. Церковь неоднократно разрушалась и отстраивалась; нынешнее строение датируется XVII веком",
+      "era": "AD",
+      "latitude": 14.1256,
+      "longitude": 38.7197,
+      "name": "Church of Our Lady Mary of Zion — Ark of the Covenant",
+      "name_ru": "Церковь Богоматери Сионской — Ковчег Завета",
+      "source": "https://en.wikipedia.org/wiki/Church_of_Our_Lady_Mary_of_Zion",
+      "tags": [
+        "Aksumite",
+        "Christian",
+        "Building 🏠",
+        "Temple",
+        "Legend"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0350",
+      "description": "Ezana campaigns against the Kingdom of Kush and conquers the region around Meroe (modern Sudan). Kush was already declining from environmental degradation, economic problems, and Noba tribal incursions. Ezana's inscriptions describe fighting against the Noba people who had occupied Kushite territory. The campaign marks the end of Kush as an independent state after nearly 1,000 years. Ezana takes the title 'King of Kush' alongside 'King of Aksum'",
+      "description_ru": "Эзана совершает поход против Кушитского царства и завоёвывает территорию вокруг Мероэ (современный Судан). Куш уже приходил в упадок из-за деградации окружающей среды, экономических проблем и набегов племён ноба. Надписи Эзаны описывают борьбу с народом ноба, занявшим кушитские территории. Поход знаменует конец Куша как независимого государства после почти 1000 лет существования. Эзана принимает титул «Царь Куша» наряду с «Царём Аксума»",
+      "era": "AD",
+      "latitude": 16.938,
+      "longitude": 33.749,
+      "name": "Ezana's Conquest of Kush and Meroe",
+      "name_ru": "Завоевание Куша и Мероэ Эзаной",
+      "source": "https://en.wikipedia.org/wiki/Ezana_of_Axum",
+      "tags": [
+        "Aksumite",
+        "Conquest",
+        "Battle",
+        "King"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0400",
+      "description": "Ge'ez script evolves from a consonantal abjad (derived from South Arabian script) into a full syllabary — each symbol represents a consonant+vowel combination, creating a unique alphasyllabary with 231 characters. This makes Ge'ez one of the few ancient scripts to independently develop vowel notation. The script is still used today for liturgical purposes in the Ethiopian Orthodox Church and forms the basis of modern Amharic and Tigrinya writing",
+      "description_ru": "Письмо геэз эволюционирует от консонантного абджада (происходящего из южноаравийского письма) в полный силлабарий — каждый символ представляет комбинацию согласный+гласный, создавая уникальную альфасиллабарную систему из 231 знака. Это делает геэз одним из немногих древних письменностей, самостоятельно развивших обозначение гласных. Письмо используется по сей день в литургии Эфиопской православной церкви и лежит в основе современных письменностей амхарского языка и тигринья",
+      "era": "AD",
+      "latitude": 14.1211,
+      "longitude": 38.7234,
+      "name": "Ge'ez Evolves into a Full Syllabary",
+      "name_ru": "Геэз превращается в полный силлабарий",
+      "source": "https://en.wikipedia.org/wiki/Ge%27ez_script",
+      "tags": [
+        "Aksumite",
+        "Writing",
+        "Culture",
+        "Education"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0400",
+      "description": "Ta'akha Maryam palace complex at Aksum — the largest known Aksumite structure at approximately 10,000 m² (80×120m). A multi-story edifice with ashlar masonry, recessed bays, and the distinctive Aksumite 'monkey-head' wooden beam ends protruding from walls. Demonstrates advanced engineering: walls taper inward for structural stability, with brick vaulting, arches, and hypocaust heating systems influenced by Roman technology",
+      "description_ru": "Дворцовый комплекс Та'акха Марьям в Аксуме — крупнейшее известное аксумское строение площадью около 10 000 м² (80×120 м). Многоэтажное здание с тёсаной кладкой, нишами и характерными аксумскими деревянными выступами-«обезьяньими головами» из стен. Демонстрирует развитую инженерию: стены сужаются кверху для устойчивости, кирпичные своды, арки и гипокаустная система отопления под влиянием римских технологий",
+      "era": "AD",
+      "latitude": 14.123,
+      "longitude": 38.721,
+      "name": "Ta'akha Maryam — Largest Aksumite Palace",
+      "name_ru": "Та'акха Марьям — крупнейший аксумский дворец",
+      "source": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum",
+      "tags": [
+        "Aksumite",
+        "Palace",
+        "Building 🏠",
+        "Architecture",
+        "Engineering ⚙️"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0480",
+      "description": "The Nine Saints — nine monks fleeing persecution after the Council of Chalcedon (451 AD) declared Monophysitism a heresy — arrive in Aksum from Syria, Constantinople, Anatolia, and Rome. They spread Christianity beyond the elite capital into rural areas, translate the Bible and monastic rules of St. Pachomius into Ge'ez, and found monasteries across the Tigray highlands. Their Monophysite theology shapes the Ethiopian Church's identity to this day",
+      "description_ru": "Девять святых — девять монахов, бежавших от преследований после Халкидонского собора (451 г.), объявившего монофизитство ересью, — прибывают в Аксум из Сирии, Константинополя, Анатолии и Рима. Они распространяют христианство за пределы элитной столицы в сельские области, переводят Библию и монашеские правила св. Пахомия на геэз и основывают монастыри по всему Тиграю. Их монофизитское богословие формирует идентичность Эфиопской церкви до наших дней",
+      "era": "AD",
+      "latitude": 14.1211,
+      "longitude": 38.7234,
+      "name": "Arrival of the Nine Saints",
+      "name_ru": "Прибытие Девяти святых",
+      "source": "https://en.wikipedia.org/wiki/Nine_Saints",
+      "tags": [
+        "Aksumite",
+        "Christian",
+        "Religious",
+        "Education"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0494",
+      "description": "Abba Aregawi (Za-Mikael), one of the Nine Saints, founds the monastery of Debre Damo on a flat-topped mountain at 2,216m elevation. According to tradition, he was lifted to the cliff top by a giant serpent — in fact, the only access is a 15m rope climb up a sheer cliff. The monastery church preserves the oldest surviving example of Aksumite ecclesiastical architecture. The Garima Gospels, produced at nearby Abba Garima monastery around the same period, are now considered the world's earliest illustrated Christian manuscript",
+      "description_ru": "Абба Арегави (За-Микаэль), один из Девяти святых, основывает монастырь Дебре Дамо на вершине столовой горы на высоте 2216 м. По преданию, его поднял на скалу гигантский змей — в действительности единственный доступ — подъём по 15-метровой верёвке по отвесной скале. Монастырская церковь сохраняет древнейший образец аксумской церковной архитектуры. Евангелие Гаримы, созданное в соседнем монастыре Абба Гарима примерно в тот же период, считается древнейшей иллюстрированной христианской рукописью в мире",
+      "era": "AD",
+      "latitude": 14.3739,
+      "longitude": 39.2903,
+      "name": "Foundation of Debre Damo Monastery",
+      "name_ru": "Основание монастыря Дебре Дамо",
+      "source": "https://en.wikipedia.org/wiki/Debre_Damo",
+      "tags": [
+        "Aksumite",
+        "Christian",
+        "Building 🏠",
+        "Architecture",
+        "Legend"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0520",
+      "description": "Dhu Nuwas, the Jewish king of the Himyarite Kingdom in Yemen, launches violent persecution of Christians. In 524 he besieges the Christian city of Najran, massacring hundreds who refuse to convert. The atrocity sends shockwaves through the Christian world. Byzantine Emperor Justin I appeals to Aksum — the closest Christian power with a navy — to intervene",
+      "description_ru": "Зу-Нувас, иудейский царь Химьяритского царства в Йемене, начинает жестокие гонения на христиан. В 524 г. он осаждает христианский город Наджран, устраивая массовую резню отказавшихся перейти в иудаизм. Зверство потрясает христианский мир. Византийский император Юстин I обращается к Аксуму — ближайшей христианской державе с флотом — с призывом о вмешательстве",
+      "era": "AD",
+      "latitude": 17.49,
+      "longitude": 44.13,
+      "name": "Massacre at Najran by Dhu Nuwas",
+      "name_ru": "Резня в Наджране Зу-Нувасом",
+      "source": "https://en.wikipedia.org/wiki/Aksumite_invasion_of_Himyar",
+      "tags": [
+        "Aksumite",
+        "Christian",
+        "Battle",
+        "Arabia"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0525",
+      "description": "King Kaleb (Ella Asbeha) launches a massive invasion across the Red Sea with a fleet carrying tens of thousands of soldiers. He defeats and kills Dhu Nuwas, installs a Christian viceroy (Sumyafa Ashwa), and brings South Arabia under Aksumite control. The empire reaches its maximum territorial extent — approximately 2.5 million km², spanning both sides of the Red Sea. This is the high-water mark of African military power projection into Asia before the modern era",
+      "description_ru": "Царь Калеб (Элла Асбеха) начинает масштабное вторжение через Красное море с флотом, несущим десятки тысяч воинов. Он разбивает и убивает Зу-Нуваса, ставит христианского наместника (Сумьяфа Ашва) и подчиняет Южную Аравию контролю Аксума. Империя достигает максимальной территории — около 2,5 млн км², охватывая оба берега Красного моря. Это пик военного проецирования силы африканского государства в Азию до современной эпохи",
+      "era": "AD",
+      "latitude": 13.32,
+      "longitude": 43.97,
+      "name": "King Kaleb's Invasion of Yemen",
+      "name_ru": "Вторжение царя Калеба в Йемен",
+      "source": "https://en.wikipedia.org/wiki/Kaleb_of_Axum",
+      "tags": [
+        "Aksumite",
+        "King",
+        "Conquest",
+        "Battle",
+        "Arabia"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0535",
+      "description": "Aksumite general Abraha deposes the viceroy Sumyafa Ashwa in a coup and seizes control of Yemen. He rules as a nominally tributary vassal of Aksum but acts independently, building churches and the famous al-Qalis cathedral at Sana'a (a rival to the Kaaba in Mecca). Aksumite attempts to recapture Yemen by force fail. Abraha is remembered in Islamic tradition for the 'Year of the Elephant' (c. 570 AD) — an unsuccessful expedition against Mecca with war elephants",
+      "description_ru": "Аксумский генерал Абраха свергает наместника Сумьяфа Ашва в результате переворота и захватывает власть в Йемене. Правит как номинально данник Аксума, но действует независимо, строит церкви и знаменитый собор Аль-Калис в Сане (соперник Каабы в Мекке). Попытки Аксума силой вернуть Йемен терпят неудачу. В исламской традиции Абраха запомнился «Годом слона» (ок. 570 г.) — неудачным походом на Мекку с боевыми слонами",
+      "era": "AD",
+      "latitude": 15.354,
+      "longitude": 44.207,
+      "name": "Abraha Seizes Yemen — Loss of Arabian Holdings",
+      "name_ru": "Абраха захватывает Йемен — потеря аравийских владений",
+      "source": "https://en.wikipedia.org/wiki/Abraha",
+      "tags": [
+        "Aksumite",
+        "Usurpation",
+        "Arabia",
+        "War"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0570",
+      "description": "Dungur palace complex — a 50-room, 3,250 m² mansion in western Aksum with grand staircases, a throne room with flagstone floor, kitchens with brick ovens, and bathing areas. Popularly called 'Queen of Sheba's Palace' though archaeologists date it to the 6th–7th century. Demonstrates Aksumite domestic architecture at its peak: granite walls with mud mortar, tapering walls, evidence of a second story, and sophisticated water management",
+      "description_ru": "Дворцовый комплекс Дунгур — 50-комнатное здание площадью 3250 м² в западном Аксуме с парадными лестницами, тронным залом с каменным полом, кухнями с кирпичными печами и банными помещениями. В народе называется «Дворец царицы Савской», хотя археологи датируют его VI–VII веками. Демонстрирует аксумскую жилую архитектуру на вершине: гранитные стены с глиняным раствором, сужающиеся стены, следы второго этажа и продвинутое водоснабжение",
+      "era": "AD",
+      "latitude": 14.1269,
+      "longitude": 38.7065,
+      "name": "Dungur Palace — 'Queen of Sheba's Palace'",
+      "name_ru": "Дворец Дунгур — «Дворец царицы Савской»",
+      "source": "https://en.wikipedia.org/wiki/Dungur",
+      "tags": [
+        "Aksumite",
+        "Palace",
+        "Building 🏠",
+        "Architecture",
+        "Legend"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0578",
+      "description": "The Sasanian Persian Empire invades Yemen and expels the last Aksumite forces. Aksum permanently loses its Arabian territories and with them control over the lucrative South Arabian trade routes. The loss marks the beginning of Aksum's economic decline — the Red Sea trade that had sustained the empire for centuries begins shifting to Persian and later Arab hands",
+      "description_ru": "Сасанидская Персия вторгается в Йемен и изгоняет последние аксумские силы. Аксум навсегда теряет свои аравийские территории и вместе с ними контроль над прибыльными южноаравийскими торговыми путями. Потеря знаменует начало экономического упадка Аксума — торговля по Красному морю, питавшая империю веками, начинает переходить в персидские и затем арабские руки",
+      "era": "AD",
+      "latitude": 15.354,
+      "longitude": 44.207,
+      "name": "Persians Expel Aksum from Yemen",
+      "name_ru": "Персы изгоняют Аксум из Йемена",
+      "source": "https://en.wikipedia.org/wiki/Aksumite%E2%80%93Persian_wars",
+      "tags": [
+        "Aksumite",
+        "Persian",
+        "Defeat",
+        "War",
+        "Decline"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0615",
+      "description": "Aksumite King Armah grants asylum to the first Muslim refugees — followers of Prophet Muhammad fleeing persecution in Mecca. Known as the First Hijra, this marks the earliest contact between Aksum and Islam. According to Islamic tradition, Armah (the 'Negus') refused to hand over the refugees to Meccan envoys, impressed by their monotheism and parallels with Christianity. Muhammad later instructed his followers to 'leave the Ethiopians alone' — a respect that briefly shielded Aksum from early Arab expansion",
+      "description_ru": "Аксумский царь Армах предоставляет убежище первым мусульманским беженцам — последователям пророка Мухаммеда, бежавшим от гонений в Мекке. Известная как Первая хиджра, это самый ранний контакт между Аксумом и исламом. По исламской традиции, Армах («Негус») отказался выдать беженцев мекканским посланникам, впечатлённый их монотеизмом и параллелями с христианством. Мухаммед впоследствии наказал своим последователям «оставить эфиопов в покое» — уважение, ненадолго защитившее Аксум от ранней арабской экспансии",
+      "era": "AD",
+      "latitude": 14.1211,
+      "longitude": 38.7234,
+      "name": "First Hijra — Muslim Refugees in Aksum",
+      "name_ru": "Первая хиджра — мусульманские беженцы в Аксуме",
+      "source": "https://en.wikipedia.org/wiki/Migration_to_Abyssinia",
+      "tags": [
+        "Aksumite",
+        "Diplomacy",
+        "Religious",
+        "Tolerance"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0641",
+      "description": "An Arab fleet sacks Adulis — Aksum's vital Red Sea port and the economic lifeline of the empire. Arab control of the Red Sea trade routes severs Aksum's connections to the Mediterranean markets and Byzantine allies that had sustained it for centuries. Without access to international trade, the monetized economy collapses; coin production ceases by the early 8th century",
+      "description_ru": "Арабский флот разоряет Адулис — жизненно важный порт Аксума на Красном море и экономическую артерию империи. Арабский контроль над торговыми путями Красного моря обрывает связи Аксума со средиземноморскими рынками и византийскими союзниками, питавшими его веками. Без доступа к международной торговле монетная экономика рушится; чеканка монет прекращается к началу VIII века",
+      "era": "AD",
+      "latitude": 15.2833,
+      "longitude": 39.6667,
+      "name": "Sack of Adulis — Arab Disruption of Red Sea Trade",
+      "name_ru": "Разорение Адулиса — арабский контроль над Красным морем",
+      "source": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum",
+      "tags": [
+        "Aksumite",
+        "Destruction",
+        "Trade",
+        "Decline"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0700",
+      "description": "Beja nomadic tribes from eastern Sudan overrun the Eritrean highlands, cutting Aksum's remaining access to Red Sea ports. The kingdom is forced into total isolation in the interior highlands. Coin production ceases entirely. The once-cosmopolitan empire, which had traded with Rome, India, and China, becomes a landlocked highland polity. The capital shifts away from Aksum, eventually moving south to Kubar",
+      "description_ru": "Кочевые племена беджа из восточного Судана захватывают эритрейские нагорья, отрезая Аксуму оставшийся доступ к портам Красного моря. Царство вынуждено уйти в полную изоляцию во внутренних нагорьях. Чеканка монет полностью прекращается. Некогда космополитичная империя, торговавшая с Римом, Индией и Китаем, превращается в не имеющее выхода к морю горное государство. Столица перемещается из Аксума, в итоге переходя на юг в Кубар",
+      "era": "AD",
+      "latitude": 14.1211,
+      "longitude": 38.7234,
+      "name": "Beja Invasions — Aksum Cut Off from the Sea",
+      "name_ru": "Вторжения беджа — Аксум отрезан от моря",
+      "source": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum",
+      "tags": [
+        "Aksumite",
+        "Invasions",
+        "Decline",
+        "Defeat"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0960",
+      "description": "Queen Gudit (Yodit) — a semi-legendary non-Christian queen, possibly from the Damot kingdom in southern Ethiopia — invades Aksum. She destroys churches, monasteries, and the ancient stelae, burns the cathedral, and kills the Aksumite emperor. She rules for approximately 40 years. Contemporary Arab sources confirm a queen ruled Ethiopia during this period. Her campaign delivers the final blow to the remnants of Aksumite civilization. Power permanently shifts south, eventually leading to the Zagwe dynasty (c. 970–1270)",
+      "description_ru": "Царица Гудит (Йодит) — полулегендарная нехристианская правительница, возможно из царства Дамот в южной Эфиопии — вторгается в Аксум. Разрушает церкви, монастыри и древние стелы, сжигает собор и убивает аксумского императора. Правит около 40 лет. Современные арабские источники подтверждают, что в этот период Эфиопией правила царица. Её поход наносит последний удар по остаткам аксумской цивилизации. Власть навсегда смещается к югу, в итоге приводя к династии Загве (ок. 970–1270)",
+      "era": "AD",
+      "latitude": 14.1211,
+      "longitude": 38.7234,
+      "name": "Queen Gudit Destroys Aksum",
+      "name_ru": "Царица Гудит разрушает Аксум",
+      "source": "https://en.wikipedia.org/wiki/Gudit",
+      "tags": [
+        "Aksumite",
+        "Destruction",
+        "Invasions",
+        "Fall"
+      ],
+      "type": "political"
+    }
+  ],
+  "filename": "kingdom_of_aksum.json"
+}
