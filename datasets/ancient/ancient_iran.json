@@ -1,5 +1,5 @@
 {
-  "description": "Dataset imported with 36 events",
+  "description": "Dataset imported with 39 events",
   "events": [
     {
       "date": "01.01.2000",
@@ -147,41 +147,6 @@
         "Settlement"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.1000",
-      "description": "Zarathustra composes the Gathas — 17 hymns in Old Avestan, the oldest Zoroastrian texts and the only ones directly attributed to him. He preaches worship of Ahura Mazda as the supreme uncreated god and rejects the old Indo-Iranian daevas as demons. His exact dates are debated (1500–600 BC); linguistic analysis of the Gathas places them close to the Rigvedic period. Modern scholarship locates his activity in eastern Greater Iran, likely Bactria or the adjacent steppe regions",
-      "description_ru": "Заратуштра составляет Гаты — 17 гимнов на древнеавестийском языке, древнейшие зороастрийские тексты, непосредственно приписываемые ему. Он проповедует поклонение Ахура Мазде как верховному несотворённому богу и отвергает старых индоиранских дэвов как демонов. Его точные даты остаются предметом дискуссий (1500–600 гг. до н.э.); лингвистический анализ Гат относит их ко времени, близкому к ригведийскому периоду. Современная наука помещает его деятельность в восточный Большой Иран, вероятно в Бактрию",
-      "era": "BC",
-      "latitude": 36.756,
-      "longitude": 66.897,
-      "name": "Zarathustra and the Gathas",
-      "name_ru": "Заратуштра и Гаты",
-      "source": "https://en.wikipedia.org/wiki/Zoroaster",
-      "tags": [
-        "Zoroastrian",
-        "Religious",
-        "Literature",
-        "Foundation"
-      ],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.0950",
-      "description": "Zarathustra gains his first royal patron in King Vishtaspa (not to be confused with the later Achaemenid Vishtaspa/Hystaspes). According to Avestan tradition, Vishtaspa converts after Zarathustra wins a theological debate at his court. The king's adoption gives the new faith political protection and military backing, enabling its spread among eastern Iranian peoples. Zoroastrian tradition places the event in Balkh (ancient Bactra)",
-      "description_ru": "Заратуштра обретает первого царственного покровителя — царя Виштаспу (не путать с позднейшим ахеменидским Виштаспой/Гистаспом). Согласно авестийской традиции, Виштаспа принимает новую веру после того, как Заратуштра побеждает в богословском диспуте при его дворе. Покровительство царя даёт новой вере политическую защиту и военную поддержку, позволяя ей распространиться среди восточноиранских народов. Зороастрийская традиция помещает это событие в Балх (древнюю Бактру)",
-      "era": "BC",
-      "latitude": 36.756,
-      "longitude": 66.897,
-      "name": "King Vishtaspa Converts to Zoroastrianism",
-      "name_ru": "Царь Виштаспа принимает зороастризм",
-      "source": "https://en.wikipedia.org/wiki/Vishtaspa",
-      "tags": [
-        "Zoroastrian",
-        "Religious",
-        "King"
-      ],
-      "type": "religious"
     },
     {
       "date": "01.01.0950",
@@ -370,6 +335,27 @@
     },
     {
       "date": "01.01.0700",
+      "description": "Zarathustra composes the Gathas — 17 hymns in Old Avestan, the oldest Zoroastrian texts and the only ones directly attributed to him. He preaches worship of Ahura Mazda as the supreme uncreated god and rejects the old Indo-Iranian daevas as demons",
+      "description_ru": "Заратуштра составляет Гаты — 17 гимнов на древнеавестийском языке, древнейшие зороастрийские тексты, непосредственно приписываемые ему. Он проповедует поклонение Ахура Мазде как верховному несотворённому богу и отвергает старых индоиранских дэвов как демонов. ",
+      "era": "BC",
+      "latitude": 36.756,
+      "longitude": 66.897,
+      "name": "Zarathustra and the Gathas",
+      "name_ru": "Заратуштра и Гаты",
+      "source": "https://en.wikipedia.org/wiki/Zoroaster",
+      "tags": [
+        "Legend",
+        "Uncertain",
+        "Bactria",
+        "Foundation",
+        "Literature",
+        "Religious",
+        "Zoroastrian"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0700",
       "description": "Parsua tribes migrate southward into Fars province, establishing Parsumash kingdom in region that will become heartland of Persian Empire",
       "description_ru": "Племена Парсуа мигрируют на юг в провинцию Фарс, основывая царство Парсумаш в регионе, который станет сердцем Персидской империи",
       "era": "BC",
@@ -385,6 +371,24 @@
         "Migration"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0700",
+      "description": "According to Zoroastrian mythology and texts, three great fires were created by the Creator at the beginning of time to protect the material world from the evil spirit Ahriman. These fires were not lit by humans, but were created divinely. The fire of the priests, Adur Farnbag, was originally located in Khorezm.",
+      "description_ru": "Согласно зороастрийской мифологии и текстам, три великих огня были созданы Творцом в начале времен для защиты материального мира от злого духа Ахримана. Эти огни не были зажжены человеком, а возникли божественным путем. Огонь жрецов, Адур Фарнбаг, изначально находился в Хорезме\n",
+      "era": "BC",
+      "latitude": 42.26653378,
+      "longitude": 60.07009864,
+      "name": "Hvarrahomand - the place of the fire of the Priests",
+      "name_ru": "Хваррахоманд - место огня Жрецов",
+      "source": "https://uz.wikipedia.org/wiki/Chilpiq",
+      "tags": [
+        "Legend",
+        "Holy Site",
+        "Religious",
+        "Zoroastrian"
+      ],
+      "type": "religious"
     },
     {
       "date": "01.01.0690",
@@ -480,6 +484,25 @@
     },
     {
       "date": "01.01.0650",
+      "description": "Zarathustra gains his first royal patron in King Vishtaspa of Balkh. According to Avestan tradition, Vishtaspa converts after Zarathustra wins a theological debate at his court.",
+      "description_ru": "Заратуштра обретает первого царственного покровителя — царя Балха Виштаспу. Согласно авестийской традиции, Виштаспа принимает новую веру после того, как Заратуштра побеждает в богословском диспуте при его дворе.",
+      "era": "BC",
+      "latitude": 36.756,
+      "longitude": 66.897,
+      "name": "King Vishtaspa Converts to Zoroastrianism",
+      "name_ru": "Царь Виштаспа принимает зороастризм",
+      "source": "https://en.wikipedia.org/wiki/Vishtaspa",
+      "tags": [
+        "King",
+        "Legend",
+        "Bactria",
+        "Religious",
+        "Zoroastrian"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0650",
       "description": "Gabay, later known as Aspadana/Isfahan, was an important regional center within the Median kingdom.",
       "description_ru": "Габай, позднее известный как Аспадана/Исфахан, был важным региональным центром в составе Мидийского царства.",
       "era": "BC",
@@ -512,6 +535,42 @@
         "Fall"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0645",
+      "description": "Having converted to Zoroastrianism, Vishtaspa took the priestly fire from Khorezm to protect it from raids from the north. Having established Adur-Farnbagh on Mount Roshn, Vishtaspa proclaimed Kabulistan the new sacred center of the Aryans. Zarathustra himself consecrated the site for the temple, trained the priests and gave recommendations on what kind of wood to give to the fire and what incense to use.",
+      "description_ru": "Приняв зороастризм, Виштаспа забрал огонь жрецов из Хорезма, чтобы защитить его от набегов с севера. Установив Адур-Фарнбаг на горе Рошн, Виштаспа провозгласил Кабулистан новым священным центром ариев. Сам Заратуштра освятил место для храма, обучил жрецов и дал рекомендации, какие дрова отдавать огню и какие благовония использовать",
+      "era": "BC",
+      "latitude": 34.60722294,
+      "longitude": 68.95255566,
+      "name": "Vishtaspa transfers the fire of the priests to Kabulistan",
+      "name_ru": "Виштаспа переносит огонь жрецов в Кабулистан",
+      "tags": [
+        "Legend",
+        "Bactria",
+        "Holy Site",
+        "Religious",
+        "Zoroastrian"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0645",
+      "description": "Mount Asnavand (Asnavant in Avestan texts) is identified with the modern archaeological complex of Takht-e Soleyman (Throne of Solomon). It was here that Adur Gushnasp, the most revered of the three great fires, was located, dedicated to the warrior class and kings. The unusual natural surroundings led people to believe that their creation was the work of devas and genies.",
+      "description_ru": "Гора Аснаванд (в авестийских текстах Asnavant) отождествляется с современным археологическим комплексом Тахт-е Солейман (Трон Соломона). Именно здесь находился Адур Гушнасп — самый почитаемый из трех великих огней, посвященный сословию воинов и царей. Необычные природные окрестности наводили людей на мысль, что их творение - дело рук дэвов и джиннов",
+      "era": "BC",
+      "latitude": 36.60519306,
+      "longitude": 47.23468781,
+      "name": "Adur Gushnasp, Great Fire of Warriors",
+      "name_ru": "Адур Гушнасп, Великий огонь воинов",
+      "source": "https://en.wikipedia.org/wiki/Adur_Gushnasp",
+      "tags": [
+        "Legend",
+        "Holy Site",
+        "Religious",
+        "Zoroastrian"
+      ],
+      "type": "religious"
     },
     {
       "date": "01.01.0640",

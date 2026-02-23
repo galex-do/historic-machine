@@ -33,27 +33,11 @@
         "Greek",
         "Roman",
         "Diplomacy",
+        "History",
         "Trade",
         "Aksumite"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.0100",
-      "description": "The process of the emergence of Greek as a key language was associated with the development of international trade in the Red Sea and the influence of Hellenistic Egypt. Greek was the official and literary language of the court, and was used for administrative correspondence and diplomacy.",
-      "description_ru": "Процесс становления греческого языка как ключевого был связан с развитием международной торговли в Красном море и влиянием эллинистического Египта. Греческий был официальным и литературным языком двора, на нем велась административная переписка и дипломатия",
-      "era": "AD",
-      "latitude": 15.27487048,
-      "longitude": 39.65549469,
-      "name": "Greek - Lingua Franca in Axum",
-      "name_ru": "Греческий - Lingua Franca в Аксуме",
-      "tags": [
-        "Greek",
-        "Ethiopian",
-        "Language",
-        "Aksumite"
-      ],
-      "type": "cultural"
     },
     {
       "date": "01.01.0100",
@@ -75,6 +59,23 @@
         "Aksumite"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0100",
+      "description": "The process of the emergence of Greek as a key language was associated with the development of international trade in the Red Sea and the influence of Hellenistic Egypt. Greek was the official and literary language of the court, and was used for administrative correspondence and diplomacy.",
+      "description_ru": "Процесс становления греческого языка как ключевого был связан с развитием международной торговли в Красном море и влиянием эллинистического Египта. Греческий был официальным и литературным языком двора, на нем велась административная переписка и дипломатия",
+      "era": "AD",
+      "latitude": 15.27487048,
+      "longitude": 39.65549469,
+      "name": "Greek - Lingua Franca in Axum",
+      "name_ru": "Греческий - Lingua Franca в Аксуме",
+      "tags": [
+        "Greek",
+        "Ethiopian",
+        "Language",
+        "Aksumite"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0200",
@@ -103,8 +104,8 @@
       "era": "AD",
       "latitude": 15.27487048,
       "longitude": 39.65549469,
-      "name": "Monumentum Adulitanum — Throne Inscription",
-      "name_ru": "Monumentum Adulitanum — тронная надпись",
+      "name": "Records of Aksum's campaigns in Adulis",
+      "name_ru": "Записи о походах Аксума в Адулисе",
       "source": "https://en.wikipedia.org/wiki/Monumentum_Adulitanum",
       "tags": [
         "Greek",
@@ -385,9 +386,10 @@
         "Judah",
         "Arabia",
         "Christian",
+        "Himyarite",
         "Massacre",
         "Persecution",
-        "Aksumite"
+        "Religious"
       ],
       "type": "political"
     },
@@ -396,8 +398,8 @@
       "description": "King Kaleb (Ella Asbeha) launches a massive invasion across the Red Sea with a fleet carrying tens of thousands of soldiers. He defeats and kills Dhu Nuwas, installs a Christian viceroy (Sumyafa Ashwa), and brings South Arabia under Aksumite control. The empire reaches its maximum territorial extent — approximately 2.5 million km², spanning both sides of the Red Sea.",
       "description_ru": "Царь Калеб (Элла Асбеха) начинает масштабное вторжение через Красное море с флотом, несущим десятки тысяч воинов. Он разбивает и убивает Зу-Нуваса, ставит христианского наместника (Сумьяфа Ашва) и подчиняет Южную Аравию контролю Аксума. Империя достигает максимальной территории — около 2,5 млн км², охватывая оба берега Красного моря.",
       "era": "AD",
-      "latitude": 13.32,
-      "longitude": 43.97,
+      "latitude": 14.21167958,
+      "longitude": 44.40321922,
       "name": "Aksum's Invasion of Yemen",
       "name_ru": "Вторжение Аксума в Йемен",
       "source": "https://en.wikipedia.org/wiki/Kaleb_of_Axum",
@@ -406,15 +408,17 @@
         "Battle",
         "King",
         "Arabia",
+        "Christian",
         "Conquest",
+        "Himyarite",
         "Aksumite"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0535",
-      "description": "Aksumite general Abraha deposes the viceroy Sumyafa Ashwa in a coup and seizes control of Yemen. He rules as a nominally tributary vassal of Aksum but acts independently, building churches and the famous al-Qalis cathedral at Sana'a (a rival to the Kaaba in Mecca). Aksumite attempts to recapture Yemen by force fail. Abraha is remembered in Islamic tradition for the 'Year of the Elephant' (c. 570 AD) — an unsuccessful expedition against Mecca with war elephants",
-      "description_ru": "Аксумский генерал Абраха свергает наместника Сумьяфа Ашва в результате переворота и захватывает власть в Йемене. Правит как номинально данник Аксума, но действует независимо, строит церкви и знаменитый собор Аль-Калис в Сане (соперник Каабы в Мекке). Попытки Аксума силой вернуть Йемен терпят неудачу",
+      "description": "The Aksumite general Abraha overthrows the governor, Sumyafa Ashwa, in a coup and seizes power in Yemen. He rules as a nominal tributary of Axum, but acts independently, pursuing his own policies and spreading Christianity. Axum's attempts to retake Yemen by force fail.",
+      "description_ru": "Аксумский генерал Абраха свергает наместника Сумьяфа Ашва в результате переворота и захватывает власть в Йемене. Правит как номинально данник Аксума, но действует независимо, ведет свою политику и распространяет христианство. Попытки Аксума силой вернуть Йемен терпят неудачу",
       "era": "AD",
       "latitude": 15.354,
       "longitude": 44.207,
@@ -431,6 +435,48 @@
       "type": "political"
     },
     {
+      "date": "01.01.0550",
+      "description": "The cathedral was built in Sana'a by order of Abraha, the Aksumite governor (and later self-proclaimed king) of Yemen. The Aksumite king attempted to wrest Mecca's status as Arabia's main pilgrimage center and establish Christianity in Arabia. Historians describe it as a building with incredibly high walls, decorated with mosaics, gold, wood carvings, and rare marble.",
+      "description_ru": "Собор был построен в Сане по приказу Абрахи, аксумского наместника (а затем самопровозглашенного царя) Йемена. Аксумский царь пытался перехватить у Мекки статус главного паломнического центра Аравии и закрепить христианство в Аравии. Историки описывают его как здание с невероятно высокими стенами, украшенное мозаикой, золотом, резьбой по дереву и редким мрамором.",
+      "era": "AD",
+      "latitude": 15.35399543,
+      "longitude": 44.21802342,
+      "name": "Construction of the Al-Qalis Cathedral in Sana'a",
+      "name_ru": "Возведение собора Аль-Калис в Сане",
+      "source": "https://en.wikipedia.org/wiki/Al-Qalis_Church",
+      "tags": [
+        "Building 🏠",
+        "Arabia",
+        "Christian",
+        "Religious",
+        "Temple",
+        "Aksumite"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0570",
+      "description": "Abraha, the Christian king of Yemen, marched on Mecca, planning to destroy the Kaaba and make Sana'a the only place of pilgrimage in Arabia. He brought war elephants to Mecca, which the Arabs had never seen. However, the march through the Hejaz Mountains was difficult, an epidemic broke out in the army, and the campaign failed. Mecca stood firm.",
+      "description_ru": "Абраха, христианский царь Йемена, идет с походом на Мекку, планируя разрушить Каабу и сделать Сану единственным местом паломничества в Аравии. Он привел на Мекку боевых слонов, которых арабы никогда не видели. Однако поход через горы Хиджаз был трудным, в армии началась эпидемия - и поход провалился. Мекка устояла",
+      "era": "AD",
+      "latitude": 21.35461822,
+      "longitude": 39.84054565,
+      "name": "Year of the Elephant",
+      "name_ru": "Год слона",
+      "source": "https://en.wikipedia.org/wiki/Year_of_the_Elephant",
+      "tags": [
+        "War",
+        "Legend",
+        "Arabia",
+        "Christian",
+        "Islamic",
+        "Plague",
+        "Religious",
+        "Aksumite"
+      ],
+      "type": "military"
+    },
+    {
       "date": "01.01.0570",
       "description": "Dungur palace complex — a 50-room, 3,250 m² mansion in western Aksum with grand staircases, a throne room with flagstone floor, kitchens with brick ovens, and bathing areas. Popularly called 'Queen of Sheba's Palace' though archaeologists date it to the 6th–7th century. Demonstrates Aksumite domestic architecture at its peak: granite walls with mud mortar, tapering walls, evidence of a second story, and sophisticated water management",
       "description_ru": "Дворцовый комплекс Дунгур — 50-комнатное здание площадью 3250 м² в западном Аксуме с парадными лестницами, тронным залом с каменным полом, кухнями с кирпичными печами и банными помещениями. В народе называется «Дворец царицы Савской», хотя археологи датируют его VI–VII веками. Демонстрирует развитую аксумскую жилую архитектуру: гранитные стены с глиняным раствором, сужающиеся стены, следы второго этажа и продвинутое водоснабжение",
@@ -442,7 +488,6 @@
       "source": "https://en.wikipedia.org/wiki/Dungur",
       "tags": [
         "Building 🏠",
-        "Legend",
         "Architecture",
         "Ethiopian",
         "Palace",
@@ -465,6 +510,7 @@
         "War",
         "Decline",
         "Defeat",
+        "Himyarite",
         "Sassanid",
         "Aksumite"
       ],
