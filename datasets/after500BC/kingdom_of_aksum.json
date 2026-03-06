@@ -27,7 +27,7 @@
       "latitude": 15.27487048,
       "longitude": 39.65549469,
       "name": "Periplus Describes Adulis and Aksum",
-      "name_ru": "Перипл описывает Адулис и Аксум",
+      "name_ru": "«Перипл» описывает Адулис и Аксум",
       "source": "https://en.wikipedia.org/wiki/Periplus_of_the_Erythraean_Sea",
       "tags": [
         "Greek",
@@ -295,25 +295,6 @@
     },
     {
       "date": "01.01.0400",
-      "description": "Ge'ez script evolves from a consonantal abjad (derived from South Arabian script) into a full syllabary — each symbol represents a consonant+vowel combination, creating a unique alphasyllabary with 231 characters. This makes Ge'ez one of the few ancient scripts to independently develop vowel notation. The script is still used today for liturgical purposes in the Ethiopian Orthodox Church and forms the basis of modern Amharic and Tigrinya writing",
-      "description_ru": "Письмо геэз эволюционирует от консонантного абджада (происходящего из южноаравийского письма) в полный силлабарий — каждый символ представляет комбинацию согласный+гласный, создавая уникальную альфасиллабарную систему из 231 знака. Это делает геэз одним из немногих древних письменностей, самостоятельно развивших обозначение гласных. Письмо используется по сей день в литургии Эфиопской православной церкви и лежит в основе современных письменностей амхарского языка и тигринья",
-      "era": "AD",
-      "latitude": 14.1211,
-      "longitude": 38.7234,
-      "name": "Ge'ez Evolves into a Full Syllabary",
-      "name_ru": "Геэз превращается в полный силлабарий",
-      "source": "https://en.wikipedia.org/wiki/Ge%27ez_script",
-      "tags": [
-        "Culture",
-        "Ethiopian",
-        "Language",
-        "Writing",
-        "Aksumite"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0400",
       "description": "Ta'akha Maryam palace complex at Aksum — the largest known Aksumite structure at approximately 10,000 m² (80×120m). A multi-story edifice with ashlar masonry, recessed bays, and the distinctive Aksumite 'monkey-head' wooden beam ends protruding from walls. Demonstrates advanced engineering: walls taper inward for structural stability, with brick vaulting, arches, and hypocaust heating systems influenced by Roman technology",
       "description_ru": "Дворцовый комплекс Та'акха Марьям в Аксуме — крупнейшее известное аксумское строение площадью около 10 000 м² (80×120 м). Многоэтажное здание с тёсаной кладкой, нишами и характерными аксумскими деревянными выступами-«обезьяньими головами» из стен. Демонстрировал развитую инженерию: стены сужаются кверху для устойчивости, кирпичные своды, арки и гипокаустная система отопления строились под влиянием римских технологий",
       "era": "AD",
@@ -331,6 +312,25 @@
         "Aksumite"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0400",
+      "description": "Ge'ez script evolves from a consonantal abjad (derived from South Arabian script) into a full syllabary — each symbol represents a consonant+vowel combination, creating a unique alphasyllabary with 231 characters. This makes Ge'ez one of the few ancient scripts to independently develop vowel notation. The script is still used today for liturgical purposes in the Ethiopian Orthodox Church and forms the basis of modern Amharic and Tigrinya writing",
+      "description_ru": "Письмо геэз эволюционирует от консонантного абджада (происходящего из южноаравийского письма) в полный силлабарий — каждый символ представляет комбинацию согласный+гласный, создавая уникальную альфасиллабарную систему из 231 знака. Это делает геэз одним из немногих древних письменностей, самостоятельно развивших обозначение гласных. Письмо используется по сей день в литургии Эфиопской православной церкви и лежит в основе современных письменностей амхарского языка и тигринья",
+      "era": "AD",
+      "latitude": 14.1211,
+      "longitude": 38.7234,
+      "name": "Ge'ez Evolves into a Full Syllabary",
+      "name_ru": "Геэз превращается в полный силлабарий",
+      "source": "https://en.wikipedia.org/wiki/Ge%27ez_script",
+      "tags": [
+        "Culture",
+        "Ethiopian",
+        "Language",
+        "Writing",
+        "Aksumite"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0480",
@@ -456,25 +456,6 @@
     },
     {
       "date": "01.01.0570",
-      "description": "Dungur palace complex — a 50-room, 3,250 m² mansion in western Aksum with grand staircases, a throne room with flagstone floor, kitchens with brick ovens, and bathing areas. Popularly called 'Queen of Sheba's Palace' though archaeologists date it to the 6th–7th century. Demonstrates Aksumite domestic architecture at its peak: granite walls with mud mortar, tapering walls, evidence of a second story, and sophisticated water management",
-      "description_ru": "Дворцовый комплекс Дунгур — 50-комнатное здание площадью 3250 м² в западном Аксуме с парадными лестницами, тронным залом с каменным полом, кухнями с кирпичными печами и банными помещениями. В народе называется «Дворец царицы Савской», хотя археологи датируют его VI–VII веками. Демонстрирует развитую аксумскую жилую архитектуру: гранитные стены с глиняным раствором, сужающиеся стены, следы второго этажа и продвинутое водоснабжение",
-      "era": "AD",
-      "latitude": 14.1269,
-      "longitude": 38.7065,
-      "name": "Dungur Palace — 'Queen of Sheba's Palace'",
-      "name_ru": "Дворец царицы Савской",
-      "source": "https://en.wikipedia.org/wiki/Dungur",
-      "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Ethiopian",
-        "Palace",
-        "Aksumite"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0570",
       "description": "Abraha, the Christian king of Yemen, marched on Mecca, planning to destroy the Kaaba and make Sana'a the only place of pilgrimage in Arabia. He brought war elephants to Mecca, which the Arabs had never seen. However, the march through the Hejaz Mountains was difficult, an epidemic broke out in the army, and the campaign failed. Mecca stood firm.",
       "description_ru": "Абраха, христианский царь Йемена, идет с походом на Мекку, планируя разрушить Каабу и сделать Сану единственным местом паломничества в Аравии. Он привел на Мекку боевых слонов, которых арабы никогда не видели. Однако поход через горы Хиджаз был трудным, в армии началась эпидемия - и поход провалился. Мекка устояла",
       "era": "AD",
@@ -494,6 +475,25 @@
         "Aksumite"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0570",
+      "description": "Dungur palace complex — a 50-room, 3,250 m² mansion in western Aksum with grand staircases, a throne room with flagstone floor, kitchens with brick ovens, and bathing areas. Popularly called 'Queen of Sheba's Palace' though archaeologists date it to the 6th–7th century. Demonstrates Aksumite domestic architecture at its peak: granite walls with mud mortar, tapering walls, evidence of a second story, and sophisticated water management",
+      "description_ru": "Дворцовый комплекс Дунгур — 50-комнатное здание площадью 3250 м² в западном Аксуме с парадными лестницами, тронным залом с каменным полом, кухнями с кирпичными печами и банными помещениями. В народе называется «Дворец царицы Савской», хотя археологи датируют его VI–VII веками. Демонстрирует развитую аксумскую жилую архитектуру: гранитные стены с глиняным раствором, сужающиеся стены, следы второго этажа и продвинутое водоснабжение",
+      "era": "AD",
+      "latitude": 14.1269,
+      "longitude": 38.7065,
+      "name": "Dungur Palace — 'Queen of Sheba's Palace'",
+      "name_ru": "Дворец царицы Савской",
+      "source": "https://en.wikipedia.org/wiki/Dungur",
+      "tags": [
+        "Building 🏠",
+        "Architecture",
+        "Ethiopian",
+        "Palace",
+        "Aksumite"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0578",

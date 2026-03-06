@@ -49,8 +49,8 @@
       "era": "BC",
       "latitude": 33.271,
       "longitude": 35.204,
-      "name": "Temple of Melqart in Tyre",
-      "name_ru": "Храм Мелькарта в Тире",
+      "name": "Temple of Melqart Founded",
+      "name_ru": "Основан Храм Мелькарта",
       "source": "https://www.worldhistory.org/Melqart/",
       "tags": [
         "Phoenician",
@@ -74,7 +74,6 @@
         "Phoenician",
         "Byblos",
         "Culture",
-        "Language",
         "Writing"
       ],
       "type": "cultural"
@@ -98,25 +97,6 @@
     },
     {
       "date": "01.01.1100",
-      "description": "Phoenicians from Tyre establish Gadir (Cadiz) on Atlantic coast of Spain, creating westernmost Phoenician colony and crucial gateway beyond Mediterranean",
-      "description_ru": "Финикийцы из Тира основывают Гадир (Кадис) на атлантическом побережье Испании, создавая самую западную финикийскую колонию и важные ворота за пределы Средиземноморья",
-      "era": "BC",
-      "latitude": 36.527,
-      "longitude": -6.289,
-      "name": "Founding of Cadiz",
-      "name_ru": "Основание финикийцами Кадиса",
-      "source": "https://phoenician.org/phoenician_colonies/",
-      "tags": [
-        "Phoenician",
-        "City",
-        "Colonization",
-        "Maritime",
-        "Tyre"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1100",
       "description": "Phoenicians establish colony of Kition on Cyprus to secure access to rich copper deposits, founding major Mediterranean mining center",
       "description_ru": "Финикийцы основывают колонию Китион на Кипре для доступа к богатым медным месторождениям",
       "era": "BC",
@@ -131,6 +111,25 @@
         "Colonization",
         "Copper",
         "Cyprus"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1100",
+      "description": "Phoenicians from Tyre establish Gadir (Cadiz) on Atlantic coast of Spain, creating westernmost Phoenician colony and crucial gateway beyond Mediterranean",
+      "description_ru": "Финикийцы из Тира основывают Гадир (Кадис) на атлантическом побережье Испании, создавая самую западную финикийскую колонию и важные ворота за пределы Средиземноморья",
+      "era": "BC",
+      "latitude": 36.527,
+      "longitude": -6.289,
+      "name": "Founding of Cadiz",
+      "name_ru": "Основание финикийцами Кадиса",
+      "source": "https://phoenician.org/phoenician_colonies/",
+      "tags": [
+        "Phoenician",
+        "City",
+        "Colonization",
+        "Maritime",
+        "Tyre"
       ],
       "type": "historic"
     },

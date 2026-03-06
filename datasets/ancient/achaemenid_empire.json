@@ -67,28 +67,6 @@
     },
     {
       "date": "01.01.0546",
-      "description": "Construction begins on Pasargadae, first dynastic capital of Persian Empire, featuring Cyrus's tomb and palace complex with innovative architectural synthesis of various cultures",
-      "description_ru": "Начинается строительство Пасаргад, первой династической столицы Персидской империи, с гробницей Кира и дворцовым комплексом. Кир брал от покоренных народов архитектурные особенности и подходы, и применял их при строительстве дворца. Также Кир любил сады, и в Пасаргадах были разбиты обширные сады и серьезная система ирригации.",
-      "era": "BC",
-      "latitude": 30.2026,
-      "longitude": 53.1678,
-      "name": "Foundation of Pasargadae",
-      "name_ru": "Основание Пасаргад",
-      "source": "https://en.wikipedia.org/wiki/Pasargadae",
-      "tags": [
-        "Persian",
-        "Achaemenid",
-        "Building 🏠",
-        "City",
-        "Architecture",
-        "Capital",
-        "Cyrus the Great 👑",
-        "Palace"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0546",
       "description": "Cyrus the Great conquers Lydia after defeating King Croesus at Battle of Thymbra, adding wealthy Anatolian territories and Lydian gold reserves to Persian Empire. After conquering Lydia, Cyrus spares Croesus's life and makes him advisor, demonstrating magnanimity toward defeated rulers that becomes hallmark of his reign",
       "description_ru": "Кир Великий завоевывает Лидию после победы над царем Крезом в битве при Тимбре, присваивая богатые анатолийские территории и лидийские золотые резервы Персии. После завоевания Лидии Кир щадит жизнь Креза и делает его советником, демонстрируя великодушие к побежденным правителям, что станет отличительной чертой его правления",
       "era": "BC",
@@ -108,6 +86,28 @@
         "Tolerance"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0546",
+      "description": "Construction begins on Pasargadae, first dynastic capital of Persian Empire, featuring Cyrus's tomb and palace complex with innovative architectural synthesis of various cultures",
+      "description_ru": "Начинается строительство Пасаргад, первой династической столицы Персидской империи, с гробницей Кира и дворцовым комплексом. Кир брал от покоренных народов архитектурные особенности и подходы, и применял их при строительстве дворца. Также Кир любил сады, и в Пасаргадах были разбиты обширные сады и серьезная система ирригации.",
+      "era": "BC",
+      "latitude": 30.2026,
+      "longitude": 53.1678,
+      "name": "Foundation of Pasargadae",
+      "name_ru": "Основание Пасаргад",
+      "source": "https://en.wikipedia.org/wiki/Pasargadae",
+      "tags": [
+        "Persian",
+        "Achaemenid",
+        "Building 🏠",
+        "City",
+        "Architecture",
+        "Capital",
+        "Cyrus the Great 👑",
+        "Palace"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0545",
@@ -354,6 +354,26 @@
     },
     {
       "date": "01.01.0530",
+      "description": "Cyrus campaigns against Massagetae nomads in Central Asia; killed in battle by Queen Tomyris, ending reign of empire's founder and greatest conqueror",
+      "description_ru": "Кир убит в бою царицей массагетов Томирис, когда ведет военную кампанию против кочевников в Центральной Азии",
+      "era": "BC",
+      "latitude": 42,
+      "longitude": 60,
+      "name": "Death of Cyrus the Great",
+      "name_ru": "Смерть Кира Великого",
+      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
+      "tags": [
+        "Persian",
+        "Achaemenid",
+        "War",
+        "Battle",
+        "Cyrus the Great 👑",
+        "Death"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0530",
       "description": "Cyrus's body returned to Pasargadae for burial in simple stone tomb; inscription reads 'O man, whoever you are and wherever you come from, for I know you will come, I am Cyrus who won the Persians their empire. Do not begrudge me this bit of earth that covers my bones'",
       "description_ru": "Тело Кира возвращено в Пасаргады для захоронения в простой каменной гробнице; надпись гласит: 'О человек, кто бы ты ни был и откуда бы ни пришел, ибо я знаю, что ты придешь, я - Кир, который завоевал персам их империю. Не жалей для меня этого клочка земли, покрывающего мои кости'",
       "era": "BC",
@@ -372,26 +392,6 @@
         "Tomb"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.0530",
-      "description": "Cyrus campaigns against Massagetae nomads in Central Asia; killed in battle by Queen Tomyris, ending reign of empire's founder and greatest conqueror",
-      "description_ru": "Кир убит в бою царицей массагетов Томирис, когда ведет военную кампанию против кочевников в Центральной Азии",
-      "era": "BC",
-      "latitude": 42,
-      "longitude": 60,
-      "name": "Death of Cyrus the Great",
-      "name_ru": "Смерть Кира Великого",
-      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
-      "tags": [
-        "Persian",
-        "Achaemenid",
-        "War",
-        "Battle",
-        "Cyrus the Great 👑",
-        "Death"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.0529",
@@ -433,26 +433,7 @@
       "type": "military"
     },
     {
-      "date": "30.12.0522",
-      "description": "The Izla Range served as a natural barrier between the Mesopotamian plains and the Armenian Highlands. The Persian general Vaumis waged the first battle against the rebellious Armenians and defeated them, blocking their access to the Tigris and Euphrates.",
-      "description_ru": "Хребет Изала служил естественным барьером между равнинами Двуречья и Армянским нагорьем. Персидский полководец Ваумиса дает первый бой мятежным армянам и побеждает их, блокируя армянам доступ к Тигру и Евфрату",
-      "era": "BC",
-      "latitude": 37.33754462,
-      "longitude": 41.16010666,
-      "name": "Suppression of the Armenian uprising at Izla",
-      "name_ru": "Подавление армянского восстания при Изла",
-      "tags": [
-        "Persian",
-        "Armenian",
-        "Achaemenid",
-        "Civil War",
-        "War",
-        "Battle"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.10.0522",
+      "date": "01.11.0522",
       "description": "After the assassination of the impostor, the conspirators decided that Darius would become the new king. He was crowned the new King of Kings. Darius's rise to power was not peaceful. Many provinces that had not recognized him rebelled.\n",
       "description_ru": "После убийства самозванца заговорщики решили, что новым царем станет Дарий. Он был коронован как новый Царь Царей. Приход Дария к власти не был мирным. Многие провинции, не признавшие его, восстали.",
       "era": "BC",
@@ -488,7 +469,7 @@
       "type": "political"
     },
     {
-      "date": "01.03.0522",
+      "date": "01.01.0522",
       "description": "Cambyses dies mysteriously during return from Egypt; power is seized by the magician (Mede priest) Gaumata, who pretended to be Bardiya (Smerdis), the long-killed brother of Cambyses",
       "description_ru": "Камбиз умирает при неизвестных обстоятельствах во время возвращения из Египта; власть захватывает маг (мидийский жрец) Гаумата, который выдавал себя за Бардию (Смердиса), давно убитого брата Камбиза",
       "era": "BC",
@@ -508,7 +489,7 @@
       "type": "political"
     },
     {
-      "date": "01.12.0521",
+      "date": "01.01.0521",
       "description": "Darius commissioned the Behistun Inscription. On a rock in the province of Kermanshah, at a height of 105 meters above the road, a document of Darius is carved in three languages (Old Persian, Elamite, Babylonian), in which he talks about how he fought for Persia in the civil war, how he won by the grace of Ahura Mazda, and which countries belong to Persia. The ancient sculptors, having finished their work, went down and destroyed the stone steps behind them, making it impossible to climb back up to the monument.",
       "description_ru": "Дарий заказывает Бехистунскую надпись. На скале в провинции Керманшах на высоте 105 метров над дорогой на трех языках (староперсидский, эламитский, вавилонский) вырезают документ Дария, в котором он говорит, как боролся за Персию в гражданской войне, как победил милостью Ахура-Мазды, и какие страны принадлежат Персии. Древние скульпторы, закончив работу, спустились вниз и разрушили за собой каменные ступени, чтобы исключить возможность вновь подняться к памятнику.",
       "era": "BC",
@@ -529,7 +510,7 @@
       "type": "cultural"
     },
     {
-      "date": "01.12.0521",
+      "date": "01.01.0521",
       "description": "Susa, devastated by Assyria, was located at the crossroads of important trade routes and was geographically conveniently situated between Mesopotamia and the Iranian plateau. Darius I restored and rebuilt the city, making it one of his main capitals, along with Persepolis and Babylon.",
       "description_ru": "Разоренные Ассирией Сузы находились на пересечении важных торговых путей и были географически удобно расположены между Месопотамией и Иранским нагорьем. Дарий I восстановил и перестроил город, сделав его одной из своих главных, наряду с Персеполем и Вавилоном, столиц.",
       "era": "BC",
@@ -545,26 +526,6 @@
         "Darius I 👑"
       ],
       "type": "historic"
-    },
-    {
-      "date": "30.05.0521",
-      "description": "The Persian commander Dadarsi defeated the Armenian army at the Tigris fortress, shifting the balance of power in favor of the Persians. This event is recorded in the Behistun Inscription. The exact location of the Tigris fortress remains a subject of debate.",
-      "description_ru": "Персидский полководец Дадаршиш разгромил армянское войско при крепости Тигра, сместив баланс сил в сторону персов. Это событие зафиксировано в Бехистунской надписи. Точное местоположение крепости Тигра остается предметом дискуссий.",
-      "era": "BC",
-      "latitude": 37.94148997,
-      "longitude": 41.9657135,
-      "name": "Suppression of the Armenian uprising at the Tigris fortress",
-      "name_ru": "Подавление армянского восстания при крепости Тигра",
-      "source": "https://en.wikipedia.org/wiki/Behistun_Inscription",
-      "tags": [
-        "Persian",
-        "Armenian",
-        "Achaemenid",
-        "Civil War",
-        "War",
-        "Battle"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.0520",
@@ -1006,32 +967,11 @@
       "tags": [
         "Persian",
         "Achaemenid",
-        "Bridge",
         "Engineering ⚙️",
         "Infrastructure",
         "Innovation"
       ],
       "type": "historic"
-    },
-    {
-      "date": "27.08.0479",
-      "description": "Greek fleet destroys remaining Persian ships at Battle of Mycale on same day as Plataea, effectively ending Persian naval threat in Aegean Sea",
-      "description_ru": "Греческий флот уничтожает оставшиеся персидские корабли в битве при Микале в тот же день, что и Платеи, фактически завершая персидскую морскую угрозу в Эгейском море",
-      "era": "BC",
-      "latitude": 37.7533,
-      "longitude": 27.0667,
-      "name": "Battle of Mycale",
-      "name_ru": "Битва при Микале",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Mycale",
-      "tags": [
-        "Greek",
-        "Persian",
-        "Achaemenid",
-        "War",
-        "Battle",
-        "Naval"
-      ],
-      "type": "military"
     },
     {
       "date": "27.08.0479",
@@ -1050,6 +990,26 @@
         "War",
         "Battle",
         "Xerxes I 👑"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "27.08.0479",
+      "description": "Greek fleet destroys remaining Persian ships at Battle of Mycale on same day as Plataea, effectively ending Persian naval threat in Aegean Sea",
+      "description_ru": "Греческий флот уничтожает оставшиеся персидские корабли в битве при Микале в тот же день, что и Платеи, фактически завершая персидскую морскую угрозу в Эгейском море",
+      "era": "BC",
+      "latitude": 37.7533,
+      "longitude": 27.0667,
+      "name": "Battle of Mycale",
+      "name_ru": "Битва при Микале",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Mycale",
+      "tags": [
+        "Greek",
+        "Persian",
+        "Achaemenid",
+        "War",
+        "Battle",
+        "Naval"
       ],
       "type": "military"
     },
@@ -1411,7 +1371,6 @@
       "tags": [
         "Greek",
         "Persian",
-        "History",
         "Literature",
         "Mercenaries"
       ],
@@ -1460,6 +1419,25 @@
     },
     {
       "date": "01.01.0370",
+      "description": "Great Satraps' Revolt begins as western satraps unite against central authority, revealing growing weakness of imperial administration and provincial discontent",
+      "description_ru": "Начинается Великое восстание сатрапов. Западные сатрапы Анатолии (Лидия, Фригия, Кария, Каппадокия, Армения) объединяются против империи, вскрывая растущую слабость имперской администрации и недовольство провинций",
+      "era": "BC",
+      "latitude": 38,
+      "longitude": 35,
+      "name": "Great Satraps' Revolt",
+      "name_ru": "Великое восстание сатрапов",
+      "source": "https://en.wikipedia.org/wiki/Great_Satraps%27_Revolt",
+      "tags": [
+        "Persian",
+        "Achaemenid",
+        "Civil War",
+        "Administration",
+        "Rebellion"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0370",
       "description": "The second-largest stone monument in Iran after Persepolis. A massive platform of ~200×224 meters dedicated to Anahita, the Zoroastrian yazata (divine being) of water, fertility, and healing. The architecture blends Persian monumental masonry with Hellenistic column styles, reflecting the cultural interchange of the late Achaemenid period. The site sits on the ancient Khorasan Road between Hamadan and Kermanshah",
       "description_ru": "Второй по величине каменный памятник Ирана после Персеполя. Массивная платформа ~200×224 метров, посвящённая Анахите — зороастрийскому язату (божественному существу) воды, плодородия и исцеления. Архитектура сочетает персидскую монументальную кладку с эллинистическими колоннами, отражая культурный обмен позднеахеменидского периода. Храм стоит на древней Хорасанской дороге между Хамаданом и Керманшахом",
       "era": "BC",
@@ -1473,7 +1451,6 @@
         "Achaemenid",
         "Building 🏠",
         "Architecture",
-        "Religious",
         "Temple",
         "Zoroastrian"
       ],
@@ -1500,25 +1477,6 @@
         "Zoroastrian"
       ],
       "type": "religious"
-    },
-    {
-      "date": "01.01.0370",
-      "description": "Great Satraps' Revolt begins as western satraps unite against central authority, revealing growing weakness of imperial administration and provincial discontent",
-      "description_ru": "Начинается Великое восстание сатрапов. Западные сатрапы Анатолии (Лидия, Фригия, Кария, Каппадокия, Армения) объединяются против империи, вскрывая растущую слабость имперской администрации и недовольство провинций",
-      "era": "BC",
-      "latitude": 38,
-      "longitude": 35,
-      "name": "Great Satraps' Revolt",
-      "name_ru": "Великое восстание сатрапов",
-      "source": "https://en.wikipedia.org/wiki/Great_Satraps%27_Revolt",
-      "tags": [
-        "Persian",
-        "Achaemenid",
-        "Civil War",
-        "Administration",
-        "Rebellion"
-      ],
-      "type": "political"
     },
     {
       "date": "01.01.0362",
@@ -1802,8 +1760,8 @@
     },
     {
       "date": "01.10.0331",
-      "description": "Alexander decisively defeats Darius III and his satraps (Armenia, Bactria, Syria) at the Battle of Gaugamela; Darius flees again. Organized Persian resistance is almost exhausted.",
-      "description_ru": "Александр решительно побеждает Дария III и его сатрапов (Армения, Бактрия, Сирия) в битве при Гавгамелах; Дарий снова бежит. Организованное персидское сопротивление на этом почти исчерпано",
+      "description": "Alexander decisively defeats Darius III at Battle of Gaugamela; Darius flees again, effectively ending organized Persian resistance",
+      "description_ru": "Александр решительно побеждает Дария III в битве при Гавгамелах; Дарий снова бежит. Организованное персидское сопротивление на этом почти исчерпано",
       "era": "BC",
       "latitude": 36.56053182,
       "longitude": 43.39342117,
@@ -1813,13 +1771,11 @@
       "tags": [
         "Greek",
         "Persian",
-        "Armenian",
         "Macedonian",
         "Achaemenid",
         "War",
         "Battle",
-        "Alexander the Great 👤",
-        "Bactria"
+        "Alexander the Great 👤"
       ],
       "type": "military"
     },
