@@ -1017,6 +1017,134 @@
         "Culture"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.0198",
+      "description": "Vologases II (Vagharsh II) ascends the Armenian throne as a Parthian Arsacid prince, continuing the dynasty's dual allegiance to both Parthian kinship and Armenian sovereignty. He rebuilds and expands the city of Vagharshapat (modern Echmiadzin), making it a major urban center that will eventually become the spiritual capital of Armenia. Vagharshapat's growth as an administrative and cultural hub reflects Armenia's increasing urbanization during the late Arsacid period, with markets, workshops, and temples serving a cosmopolitan population",
+      "description_ru": "Вагарш II восходит на армянский престол как парфянский принц Аршакуни, продолжая двойную лояльность династии — парфянскому родству и армянскому суверенитету. Он перестраивает и расширяет город Вагаршапат (современный Эчмиадзин), превращая его в крупный городской центр, который впоследствии станет духовной столицей Армении. Рост Вагаршапата как административного и культурного центра отражает усиливающуюся урбанизацию Армении в позднеаршакидский период",
+      "era": "AD",
+      "latitude": 40.1614,
+      "longitude": 44.2911,
+      "name": "Vagharshapat Expanded",
+      "name_ru": "Расширение Вагаршапата",
+      "source": "https://en.wikipedia.org/wiki/Vagharshapat",
+      "tags": [
+        "Armenian",
+        "City",
+        "King",
+        "Political"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0216",
+      "description": "Roman Emperor Caracalla invites Armenian King Khosrov I to a diplomatic meeting, then treacherously arrests him and attempts to annex Armenia as a Roman province. Caracalla's soldiers plunder the Armenian court and seize the royal treasury. However, Caracalla is assassinated in 217 AD before completing the annexation. The Armenian nobles rally and restore independence, demonstrating the resilience of the nakharar system — even without a king, the feudal lords maintain national resistance. This episode deepens Armenian distrust of Roman intentions",
+      "description_ru": "Римский император Каракалла приглашает армянского царя Хосрова I на дипломатическую встречу, затем вероломно арестовывает его и пытается аннексировать Армению как римскую провинцию. Солдаты Каракаллы грабят армянский двор и захватывают царскую казну. Однако Каракалла убит в 217 году до завершения аннексии. Армянские нахарары сплачиваются и восстанавливают независимость, демонстрируя устойчивость феодальной системы — даже без царя знать поддерживает национальное сопротивление",
+      "era": "AD",
+      "latitude": 39.8783,
+      "longitude": 44.5756,
+      "name": "Caracalla's Armenian Treachery",
+      "name_ru": "Вероломство Каракаллы",
+      "source": "https://en.wikipedia.org/wiki/Caracalla%27s_Parthian_war",
+      "tags": [
+        "Armenian",
+        "Roman",
+        "Betrayal",
+        "Political"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0224",
+      "description": "Ardashir I overthrows the last Parthian king Artabanus V and founds the Sassanid Empire, fundamentally changing the geopolitical landscape for Armenia. The Armenian Arsacids — blood relatives of the defeated Parthian dynasty — become the last surviving branch of the Arsacid house, making Armenia a personal enemy of the new Sassanid rulers. Ardashir demands Armenian submission and the extradition of Parthian refugees sheltered at the Armenian court. This dynastic hostility will drive two centuries of Sassanid attempts to destroy Armenian independence and impose Zoroastrianism",
+      "description_ru": "Ардашир I свергает последнего парфянского царя Артабана V и основывает Сасанидскую империю, кардинально меняя геополитическую ситуацию для Армении. Армянские Аршакуни — кровные родственники свергнутой парфянской династии — становятся последней сохранившейся ветвью рода Аршакидов, что делает Армению личным врагом новых сасанидских правителей. Ардашир требует армянской покорности и выдачи парфянских беженцев. Эта династическая вражда будет определять два века сасанидских попыток уничтожить армянскую независимость",
+      "era": "AD",
+      "latitude": 39.8783,
+      "longitude": 44.5756,
+      "name": "Sassanid Rise Threatens Armenia",
+      "name_ru": "Сасанидская угроза Армении",
+      "source": "https://en.wikipedia.org/wiki/Ardashir_I",
+      "tags": [
+        "Armenian",
+        "Persian",
+        "Dynasty",
+        "Political"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0238",
+      "description": "Armenian King Khosrov II (Khosrov the Brave) leads a determined resistance against Sassanid founder Ardashir I, who demands that Armenia renounce its Arsacid dynasty. Khosrov forms alliances with Kushans, Albanian tribes, and remnants of Parthian loyalists to counterattack Sassanid territory. Armenian cavalry raids penetrate deep into Media and Assyria. Ardashir retaliates by bribing the Armenian noble Anak Suren-Pahlav, who assassinates Khosrov at a hunting party circa 238-252 AD. The assassination throws Armenia into chaos — Anak's infant son Gregory will later become Gregory the Illuminator, and Khosrov's infant son Tiridates will reconquer the throne",
+      "description_ru": "Армянский царь Хосров II (Хосров Храбрый) ведёт решительное сопротивление основателю Сасанидской империи Ардаширу I, требующему от Армении отречения от династии Аршакуни. Хосров заключает союзы с кушанами, албанскими племенами и остатками парфянских лоялистов для контрнаступления. Армянская конница проникает вглубь Мидии и Ассирии. Ардашир подкупает армянского нахарара Анака Сурен-Пахлава, который убивает Хосрова на охоте. Младенец-сын Анака станет Григорием Просветителем, а сын Хосрова Тиридат вернёт трон",
+      "era": "AD",
+      "latitude": 39.95,
+      "longitude": 44.55,
+      "name": "Khosrov Resists Sassanids",
+      "name_ru": "Хосров противостоит Сасанидам",
+      "source": "https://en.wikipedia.org/wiki/Khosrov_II_of_Armenia",
+      "tags": [
+        "Armenian",
+        "Persian",
+        "War",
+        "King",
+        "Resistance"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0252",
+      "description": "Sassanid King Shapur I conquers Armenia after the assassination of Khosrov II, deposing the Arsacid dynasty and installing his own son Hurmazd-Ardashir as king of Armenia. Shapur promotes Zoroastrianism and establishes fire temples across the Armenian highlands. The infant prince Tiridates is smuggled to safety in the Roman Empire, where he grows up at the imperial court. For nearly three decades, Armenia endures direct Sassanid rule — Zoroastrian priests attempt to suppress Armenian traditions and impose Persian customs. The period creates deep popular resentment against Zoroastrianism that later facilitates Armenia's rapid conversion to Christianity",
+      "description_ru": "Сасанидский царь Шапур I завоёвывает Армению после убийства Хосрова II, свергая династию Аршакуни и ставя своего сына Хормизд-Ардашира царём Армении. Шапур продвигает зороастризм и строит храмы огня по Армянскому нагорью. Младенца-принца Тиридата тайно переправляют в Римскую империю, где он растёт при дворе. Почти три десятилетия Армения находится под прямым сасанидским правлением — зороастрийские жрецы пытаются подавить армянские традиции. Народное негодование против зороастризма впоследствии способствует быстрой христианизации",
+      "era": "AD",
+      "latitude": 39.8783,
+      "longitude": 44.5756,
+      "name": "Shapur Conquers Armenia",
+      "name_ru": "Шапур завоёвывает Армению",
+      "source": "https://en.wikipedia.org/wiki/Shapur_I",
+      "tags": [
+        "Armenian",
+        "Persian",
+        "Conquest",
+        "Zoroastrian"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0279",
+      "description": "Prince Tiridates III, raised at the Roman court since infancy, returns to Armenia with Roman military support and overthrows Sassanid rule, restoring the Arsacid dynasty after nearly three decades of Persian occupation. He drives out Zoroastrian priests and reasserts Armenian sovereignty. Tiridates is a physically imposing warrior — Armenian tradition records his feats of strength at the Roman Olympics. His restoration marks the beginning of Armenia's most transformative era: within two decades, he will convert to Christianity and make Armenia the first nation to adopt it as state religion",
+      "description_ru": "Принц Тиридат III, выросший при римском дворе с младенчества, возвращается в Армению с римской военной поддержкой и свергает сасанидское правление, восстанавливая династию Аршакуни после почти трёх десятилетий персидской оккупации. Он изгоняет зороастрийских жрецов и восстанавливает армянский суверенитет. Тиридат — могучий воин, армянская традиция описывает его подвиги силы на римских Олимпийских играх. Его реставрация знаменует начало самой преобразующей эпохи Армении: через два десятилетия он примет христианство",
+      "era": "AD",
+      "latitude": 39.8783,
+      "longitude": 44.5756,
+      "name": "Tiridates III Reclaims Throne",
+      "name_ru": "Тиридат III возвращает трон",
+      "source": "https://en.wikipedia.org/wiki/Tiridates_III_of_Armenia",
+      "tags": [
+        "Armenian",
+        "Roman",
+        "King",
+        "Restoration"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0298",
+      "description": "The Treaty of Nisibis between Rome and Sassanid Persia formally places Armenia under Roman protection after Emperor Galerius defeats Narseh at the Battle of Satala. The treaty establishes the Tigris as the border and designates Armenia as a Roman client kingdom — the most favorable arrangement Armenia has received from Rome. King Tiridates III recovers several disputed provinces including Arzanene, Moxoene, and Zabdicene. The treaty provides two decades of relative peace that enables Armenia's religious and cultural transformation, including the adoption of Christianity in 301 AD",
+      "description_ru": "Нисибинский мир между Римом и Сасанидской Персией формально ставит Армению под римское покровительство после победы императора Галерия над Нарсе в битве при Сатале. Договор устанавливает Тигр как границу и определяет Армению как римское клиентское царство — наиболее благоприятное соглашение для Армении от Рима. Царь Тиридат III возвращает несколько спорных провинций. Договор обеспечивает два десятилетия относительного мира, позволяющих религиозную и культурную трансформацию Армении, включая принятие христианства в 301 году",
+      "era": "AD",
+      "latitude": 37.0764,
+      "longitude": 41.2149,
+      "name": "Treaty of Nisibis",
+      "name_ru": "Нисибинский мирный договор",
+      "source": "https://en.wikipedia.org/wiki/Treaty_of_Nisibis_(298)",
+      "tags": [
+        "Armenian",
+        "Roman",
+        "Persian",
+        "Treaty",
+        "Diplomacy"
+      ],
+      "type": "political"
     }
   ],
   "name": "Great Armenia",
