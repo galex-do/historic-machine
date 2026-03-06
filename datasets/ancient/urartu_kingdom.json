@@ -2,6 +2,23 @@
   "description": "Dataset imported with 37 events",
   "events": [
     {
+      "date": "01.01.1500",
+      "description": "Originally, it was a mighty cyclopean fortress built by local tribes. The walls were constructed from enormous, uncut stones without mortar.",
+      "description_ru": "Изначально это была мощная циклопическая крепость, построенная местными племенами. Стены возводились из огромных необработанных камней без использования раствора.",
+      "era": "BC",
+      "latitude": 40.51192311,
+      "longitude": 44.94792223,
+      "name": "Ishtikuni is an ancient settlement on Lake Sevan.",
+      "name_ru": "Иштикуни - древнее городище на озере Севан",
+      "source": "https://en.wikipedia.org/wiki/Etiuni",
+      "tags": [
+        "Architecture",
+        "Fortification",
+        "Settlement"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0860",
       "description": "Nairi states and tribes unite under King Arame, first ruler to consolidate Urartian territories into single kingdom with capital at Sugunia, marking foundation of Urartu",
       "description_ru": "Племена народа Наири хурритского происхождения объединяются под властью царя Араме, первого правителя, объединившего урартские территории в единое царство со столицей в Сугунии. Урарты почитают бога неба Халди",
@@ -12,10 +29,10 @@
       "name_ru": "Объединение Урарту",
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
-        "Unification",
-        "Kingdom",
+        "Urartu",
         "Independence",
-        "Urartu"
+        "Kingdom",
+        "Unification"
       ],
       "type": "political"
     },
@@ -30,10 +47,10 @@
       "name_ru": "Ассирийцы нападают на Урарту",
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
-        "Conquest",
         "Assyrian",
+        "Urartu",
         "War",
-        "Urartu"
+        "Conquest"
       ],
       "type": "military"
     },
@@ -48,9 +65,9 @@
       "name_ru": "Тушпа - столица Урарту",
       "source": "https://en.wikipedia.org/wiki/Tushpa",
       "tags": [
-        "Capital",
-        "City",
         "Urartu",
+        "City",
+        "Capital",
         "Fortification"
       ],
       "type": "historic"
@@ -66,9 +83,9 @@
       "name_ru": "Строительство башни Сардури",
       "source": "https://en.wikipedia.org/wiki/Van_Fortress",
       "tags": [
-        "Architecture",
-        "Building 🏠",
         "Urartu",
+        "Building 🏠",
+        "Architecture",
         "Fortification"
       ],
       "type": "historic"
@@ -84,11 +101,11 @@
       "name_ru": "Урарту аннексирует Мусасир",
       "source": "https://en.wikipedia.org/wiki/Musasir",
       "tags": [
-        "Temple",
-        "Religious",
         "Urartu",
         "Annexation",
-        "Holy Site"
+        "Holy Site",
+        "Religious",
+        "Temple"
       ],
       "type": "political"
     },
@@ -103,13 +120,30 @@
       "name_ru": "Менуа - царь Урарту",
       "source": "https://en.wikipedia.org/wiki/Menua",
       "tags": [
+        "Urartu",
         "Dynasty",
-        "Innovation",
         "King",
         "Expansion",
-        "Urartu"
+        "Innovation"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0800",
+      "description": "Wine was the national drink of the Urartians. It was stored in huge jars called karases, dug into the ground. Even ordinary homes had stocks of wine and beer. The most fertile regions were the Ararat Valley, the Lake Van basin, and the Lake Urmia region.",
+      "description_ru": "Вино было национальным напитком урартов. Его хранили в огромных кувшинах — карасах, вкопанных в землю. Даже в обычных домах были запасы вина и пива. Самыми плодородными регионами были Араратская долина, бассейн озера Ван, район озера Урмия",
+      "era": "BC",
+      "latitude": 40.18,
+      "longitude": 44.51,
+      "name": "Urartu's winemaking",
+      "name_ru": "Урартское виноделие",
+      "tags": [
+        "Urartu",
+        "Agriculture",
+        "Customs",
+        "Winemaking"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0800",
@@ -122,34 +156,17 @@
       "name_ru": "Строительство канала Менуа",
       "source": "https://en.wikipedia.org/wiki/Shamram_Canal",
       "tags": [
-        "Innovation",
-        "Engineering ⚙️",
         "Urartu",
+        "Engineering ⚙️",
+        "Innovation",
         "Water"
       ],
       "type": "historic"
     },
     {
-      "date": "01.01.0800",
-      "description": "Wine was the national drink of the Urartians. It was stored in huge jars called karases, dug into the ground. Even ordinary homes had stocks of wine and beer. The most fertile regions were the Ararat Valley, the Lake Van basin, and the Lake Urmia region.",
-      "description_ru": "Вино было национальным напитком урартов. Его хранили в огромных кувшинах — карасах, вкопанных в землю. Даже в обычных домах были запасы вина и пива. Самыми плодородными регионами были Араратская долина, бассейн озера Ван, район озера Урмия",
-      "era": "BC",
-      "latitude": 40.18,
-      "longitude": 44.51,
-      "name": "Urartu's winemaking",
-      "name_ru": "Урартское виноделие",
-      "tags": [
-        "Agriculture",
-        "Urartu",
-        "Winemaking",
-        "Customs"
-      ],
-      "type": "cultural"
-    },
-    {
       "date": "01.01.0782",
-      "description": "Argishti I founds Erebuni Fortress on Arin-Berd Hill as military stronghold guarding northern borders, inscribing foundation dedication to god Khaldi; site will become modern Yerevan",
-      "description_ru": "Аргишти I основывает крепость Эребуни на холме Арин-Берд как военное укрепление, охраняющее северные границы. Позднее на этом месте возникнет современный Ереван",
+      "description": "Argishti I founds Erebuni Fortress on Arin-Berd Hill as military stronghold guarding northern borders, inscribing foundation dedication to god Khaldi. A cuneiform inscription reads: 'By the greatness of the God Khaldi, Argishti son of Menua built this mighty stronghold and proclaimed it Erebuni.' The citadel features 10-12 m ramparts, a temple to Khaldi with wooden plank flooring, wall murals, and an underground stone piping system for water transport. Site will become modern Yerevan",
+      "description_ru": "Аргишти I основывает крепость Эребуни на холме Арин-Берд как военное укрепление, охраняющее северные границы.  Клинописная надпись гласит: 'Величием бога Халди Аргишти, сын Менуа, построил эту могучую крепость и нарёк её Эребуни.' Цитадель имеет стены высотой 10-12 м, храм Халди с деревянным полом, настенные росписи и подземную каменную систему водоснабжения. Позднее на этом месте возникнет современный Ереван",
       "era": "BC",
       "latitude": 40.14036837,
       "longitude": 44.53818798,
@@ -157,9 +174,9 @@
       "name_ru": "Основание крепости Эребуни",
       "source": "https://en.wikipedia.org/wiki/Erebuni_Fortress",
       "tags": [
-        "Capital",
-        "City",
         "Urartu",
+        "City",
+        "Capital",
         "Fortification"
       ],
       "type": "historic"
@@ -175,11 +192,11 @@
       "name_ru": "Урарту отражает вторжение Ассирии",
       "source": "https://en.wikipedia.org/wiki/Argishti_I",
       "tags": [
-        "Battle",
-        "Expansion",
         "Assyrian",
+        "Urartu",
         "War",
-        "Urartu"
+        "Battle",
+        "Expansion"
       ],
       "type": "military"
     },
@@ -194,11 +211,29 @@
       "name_ru": "Основание Аргиштихинили",
       "source": "https://en.wikipedia.org/wiki/Armavir,_Armenia",
       "tags": [
-        "City",
         "Urartu",
+        "City",
         "Administration"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0770",
+      "description": "Argishti I captured Ishtikuni and subsequently used the site as an Urartian fortress on Lake Sevan. This event is attested to by a cuneiform inscription found on a rock at the site, which directly names the city Ishtikuni.",
+      "description_ru": "Аргишти I захватывает Иштикуни и использует далее это место как урартскую крепость на Севане. Об этом событии свидетельствует найденная на месте клинописная надпись на скале, где город прямо назван Иштикуни.",
+      "era": "BC",
+      "latitude": 40.51192311,
+      "longitude": 44.94792223,
+      "name": "Urartu establishes an outpost on Sevan",
+      "name_ru": "Урарту создает форпост на Севане",
+      "source": "https://en.wikipedia.org/wiki/Argi%C5%A1ti_I",
+      "tags": [
+        "Urartu",
+        "Conquest",
+        "Expansion",
+        "Fortification"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0760",
@@ -211,9 +246,9 @@
       "name_ru": "Золотой век Урарту",
       "source": "https://en.wikipedia.org/wiki/Sarduri_II",
       "tags": [
+        "Urartu",
         "Dynasty",
         "Expansion",
-        "Urartu",
         "Golden Age"
       ],
       "type": "political"
@@ -229,10 +264,10 @@
       "name_ru": "Сеть урартских крепостей",
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
-        "Defense",
         "Urartu",
-        "Fortification",
-        "Administration"
+        "Administration",
+        "Defense",
+        "Fortification"
       ],
       "type": "political"
     },
@@ -248,11 +283,11 @@
       "source": "https://en.wikipedia.org/wiki/Tushpa",
       "tags": [
         "Assyrian",
-        "Siege",
-        "War",
         "Urartu",
-        "Tiglath-Pileser III 👑",
-        "Fortification"
+        "War",
+        "Fortification",
+        "Siege",
+        "Tiglath-Pileser III 👑"
       ],
       "type": "military"
     },
@@ -267,14 +302,31 @@
       "name_ru": "Оборонительные реформы Русы I",
       "source": "https://en.wikipedia.org/wiki/Rusa_I",
       "tags": [
+        "Urartu",
+        "War",
         "Dynasty",
         "Defense",
-        "War",
-        "Urartu",
         "Fortification",
         "Science"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0720",
+      "description": "The fortress was founded by the Urartian king Rusa I. It occupied a key strategic position on the southern shore of Lake Sevan, effectively blocking passage to the southeast and east of the lake. The fortress was dedicated to Teisheba, the Urartian god of war and storms.",
+      "description_ru": "Крепость была основана урартским царем Русой I. Крепость занимала ключевую стратегическую позицию на южном берегу Севана, фактически закрывая проход к юго-востоку и востоку от озера. Крепость была посвящена Тейшебе, урартскому богу войны и бури.",
+      "era": "BC",
+      "latitude": 40.15209599,
+      "longitude": 45.49513578,
+      "name": "Odzaberd Fortress",
+      "name_ru": "Крепость Одзаберд",
+      "source": "https://en.wikipedia.org/wiki/Odzaberd",
+      "tags": [
+        "Urartu",
+        "Architecture",
+        "Fortification"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0720",
@@ -287,11 +339,11 @@
       "name_ru": "Основание Русахинили",
       "source": "https://en.wikipedia.org/wiki/Rusahinili",
       "tags": [
-        "Capital",
-        "Architecture",
-        "Temple",
+        "Urartu",
         "City",
-        "Urartu"
+        "Architecture",
+        "Capital",
+        "Temple"
       ],
       "type": "historic"
     },
@@ -306,10 +358,10 @@
       "name_ru": "Урарто-ассирийские пограничные войны",
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
-        "Trade",
         "Assyrian",
+        "Urartu",
         "War",
-        "Urartu"
+        "Trade"
       ],
       "type": "military"
     },
@@ -324,11 +376,11 @@
       "name_ru": "Антиассирийская коалиция Урарту",
       "source": "https://en.wikipedia.org/wiki/Rusa_I",
       "tags": [
-        "Diplomacy",
-        "Alliance",
-        "Urartu",
+        "Mannai",
         "Phrygian",
-        "Mannai"
+        "Urartu",
+        "Diplomacy",
+        "Alliance"
       ],
       "type": "political"
     },
@@ -343,12 +395,12 @@
       "name_ru": "Мир Урарту с Ассирией",
       "source": "https://en.wikipedia.org/wiki/Argishti_II",
       "tags": [
-        "Diplomacy",
         "Assyrian",
-        "Peace",
+        "Urartu",
         "War",
-        "Treaty",
-        "Urartu"
+        "Diplomacy",
+        "Peace",
+        "Treaty"
       ],
       "type": "political"
     },
@@ -363,10 +415,10 @@
       "name_ru": "Основание Тейшебаини",
       "source": "https://en.wikipedia.org/wiki/Teishebaini",
       "tags": [
-        "Religious",
+        "Urartu",
         "City",
         "Economic",
-        "Urartu"
+        "Religious"
       ],
       "type": "historic"
     },
@@ -381,10 +433,10 @@
       "name_ru": "Хранилище Тейшебаини",
       "source": "https://www.worldhistory.org/Teishebaini/",
       "tags": [
-        "Architecture",
-        "Agriculture",
-        "Economic",
         "Urartu",
+        "Agriculture",
+        "Architecture",
+        "Economic",
         "Treasure"
       ],
       "type": "historic"
@@ -400,11 +452,11 @@
       "name_ru": "Пик урартской металлургии",
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
-        "Innovation",
+        "Urartu",
         "Bronze",
-        "Metallurgy",
+        "Innovation",
         "Iron",
-        "Urartu"
+        "Metallurgy"
       ],
       "type": "historic"
     },
@@ -419,10 +471,10 @@
       "name_ru": "Урартское искусство",
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
-        "Innovation",
+        "Urartu",
         "Art",
         "Culture",
-        "Urartu"
+        "Innovation"
       ],
       "type": "cultural"
     },
@@ -437,10 +489,10 @@
       "name_ru": "Развитие урартской письменности",
       "source": "https://en.wikipedia.org/wiki/Urartian_language",
       "tags": [
-        "Writing",
-        "Language",
+        "Urartu",
         "Culture",
-        "Urartu"
+        "Language",
+        "Writing"
       ],
       "type": "cultural"
     },
@@ -455,9 +507,9 @@
       "name_ru": "Ассирия вассализирует Урарту",
       "source": "https://en.wikipedia.org/wiki/Sarduri_III",
       "tags": [
-        "Diplomacy",
         "Assyrian",
         "Urartu",
+        "Diplomacy",
         "Vassalage"
       ],
       "type": "political"
@@ -473,9 +525,9 @@
       "name_ru": "Набеги киммерийцев на Урарту",
       "source": "https://en.wikipedia.org/wiki/Cimmerians",
       "tags": [
-        "Invasions",
+        "Cimmerian",
         "Urartu",
-        "Cimmerian"
+        "Invasions"
       ],
       "type": "military"
     },
@@ -490,10 +542,10 @@
       "name_ru": "Набеги скифов на Урарту",
       "source": "https://en.wikipedia.org/wiki/Scythians",
       "tags": [
-        "Invasions",
         "Urartu",
+        "Scythian",
         "Cavalry",
-        "Scythian"
+        "Invasions"
       ],
       "type": "military"
     },
@@ -508,9 +560,9 @@
       "name_ru": "Эримена - царь Урарту",
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
+        "Urartu",
         "Dynasty",
         "King",
-        "Urartu",
         "Uncertain"
       ],
       "type": "political"
@@ -526,10 +578,10 @@
       "name_ru": "Руса III - царь Урарту",
       "source": "https://en.wikipedia.org/wiki/Rusa_III",
       "tags": [
+        "Urartu",
         "Dynasty",
         "King",
-        "Defense",
-        "Urartu"
+        "Defense"
       ],
       "type": "military"
     },
@@ -544,10 +596,10 @@
       "name_ru": "Сардури IV - царь Урарту",
       "source": "https://en.wikipedia.org/wiki/Sarduri_IV",
       "tags": [
+        "Urartu",
         "Dynasty",
         "King",
-        "Fall",
-        "Urartu"
+        "Fall"
       ],
       "type": "political"
     },
@@ -562,8 +614,8 @@
       "name_ru": "Эвакуация в Тейшебаини",
       "source": "https://www.worldhistory.org/Teishebaini/",
       "tags": [
-        "Defense",
         "Urartu",
+        "Defense",
         "Treasure"
       ],
       "type": "political"
@@ -579,10 +631,10 @@
       "name_ru": "Руса IV - последний царь Урарту",
       "source": "https://en.wikipedia.org/wiki/Rusa_IV",
       "tags": [
+        "Urartu",
         "Dynasty",
         "King",
-        "Fall",
-        "Urartu"
+        "Fall"
       ],
       "type": "political"
     },
@@ -597,12 +649,12 @@
       "name_ru": "Скифы разрушают Тейшебаини",
       "source": "https://en.wikipedia.org/wiki/Teishebaini",
       "tags": [
+        "Urartu",
+        "Scythian",
+        "War",
         "Battle",
         "Destruction",
-        "War",
-        "Urartu",
-        "Plundering",
-        "Scythian"
+        "Plundering"
       ],
       "type": "military"
     },
@@ -617,11 +669,11 @@
       "name_ru": "Мидийцы захватывают Тушпу",
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
-        "Conquest",
-        "Fall",
-        "War",
+        "Medes",
         "Urartu",
-        "Medes"
+        "War",
+        "Conquest",
+        "Fall"
       ],
       "type": "military"
     },
@@ -636,13 +688,13 @@
       "name_ru": "Мидийцы покоряют Урарту",
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
+        "Medes",
+        "Urartu",
+        "Scythian",
+        "War",
         "Conquest",
         "Destruction",
-        "Fall",
-        "War",
-        "Urartu",
-        "Medes",
-        "Scythian"
+        "Fall"
       ],
       "type": "military"
     },
@@ -657,11 +709,11 @@
       "name_ru": "Персидский контроль над Эребуни",
       "source": "https://en.wikipedia.org/wiki/Erebuni_Fortress",
       "tags": [
-        "Conquest",
         "Persian",
         "Urartu",
-        "Cultural Continuity",
-        "Achaemenid"
+        "Achaemenid",
+        "Conquest",
+        "Cultural Continuity"
       ],
       "type": "political"
     }

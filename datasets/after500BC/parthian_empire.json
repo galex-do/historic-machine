@@ -150,8 +150,8 @@
       "description": "Mithridates I conquers Media and captures Ecbatana from the Seleucids; this wealthy satrapy with its strategic location and rich resources greatly strengthens the Parthian Empire",
       "description_ru": "Митридат I завоёвывает Мидию и захватывает Экбатану у Селевкидов; эта богатая сатрапия со стратегическим расположением и обширными ресурсами значительно усиливает Парфянскую империю",
       "era": "BC",
-      "latitude": 34.8,
-      "longitude": 48.51,
+      "latitude": 34.7982,
+      "longitude": 48.5148,
       "name": "Parthian Conquest of Media",
       "name_ru": "Парфяне захватывают Мидию",
       "source": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia",
@@ -339,8 +339,8 @@
       "description": "Mithridates II conquers Armenia and installs Tigranes (later Tigranes the Great) as a hostage-prince; this begins centuries of Parthian-Armenian relations and rivalry",
       "description_ru": "Митридат II завоёвывает Армению и берёт Тиграна (будущего Тиграна Великого) в качестве заложника-принца; это начинает многовековые парфяно-армянские отношения и соперничество",
       "era": "BC",
-      "latitude": 39.8784,
-      "longitude": 44.5763,
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
       "name": "Parthian Conquest of Armenia",
       "name_ru": "Парфянское завоевание Армении",
       "source": "https://en.wikipedia.org/wiki/Mithridates_II_of_Parthia",
@@ -348,6 +348,7 @@
         "Armenian",
         "Parthian",
         "War",
+        "Artaxiad",
         "Conquest",
         "Hostage",
         "Mithridates II 👑",
@@ -393,26 +394,6 @@
       "type": "political"
     },
     {
-      "date": "01.01.0070",
-      "description": "Tigranes the Great of Armenia exploits Parthian weakness to conquer Parthian territories in northern Mesopotamia; Parthia enters a period of decline and civil strife",
-      "description_ru": "Тигран Великий Армянский использует парфянскую слабость для завоевания парфянских территорий в северной Месопотамии; Парфия вступает в период упадка и гражданской смуты",
-      "era": "BC",
-      "latitude": 37,
-      "longitude": 41,
-      "name": "Armenian Conquests in Parthian Territory",
-      "name_ru": "Армянские завоевания в Месопотамии",
-      "source": "https://en.wikipedia.org/wiki/Tigranes_the_Great",
-      "tags": [
-        "Armenian",
-        "Parthian",
-        "War",
-        "Decline",
-        "Independence",
-        "Tigranes the Great 👤"
-      ],
-      "type": "military"
-    },
-    {
       "date": "01.01.0057",
       "description": "Orodes II became king of Parthia during a civil war with his brother Mithridates IV; his army, led by the general Surena, stormed Seleucia-on-Tigris, where he assumed the title of King of Kings.",
       "description_ru": "Ород II становится царём Парфии в ходе гражданской войны с братом Митридатом IV; его армия во главе с полководцем Суреной взяла штурмом Селевкию-на-Тигре, где он и принял титул царя царей",
@@ -423,6 +404,7 @@
       "name_ru": "Ород II - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Orodes_II",
       "tags": [
+        "Greek",
         "Parthian",
         "Arsacid",
         "Dynasty",
@@ -454,8 +436,8 @@
       "description": "According to Plutarch, after the battle at Carrhae, where the Roman general Crassus was killed, his head and hand were brought to Artashat, where the wedding of the Parthian prince Pacorus and the sister of the Armenian king Artavazd II was taking place. Euripides' play 'The Bacchae' was being performed at the palace, and the remains of the Roman general were used as theatrical props, much to the delight of the Parthian nobility.",
       "description_ru": "По свидетельству Плутарха, после сражения в Каррах, где был убит римский полководец Красс, его голову и руку привезли в Арташат, где проходила свадьба парфянского принца Пакора и сестры царя Армении Артавазда II. Во дворце давали пьесу Еврипида 'Вакханки', и останки римского полководца были использованы как театральный реквизит, что вызвало восторг парфянского дворянства",
       "era": "BC",
-      "latitude": 39.8784,
-      "longitude": 44.5763,
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
       "name": "The wedding of a Parthian prince in Armenia",
       "name_ru": "Свадьба парфянского принца в Армении",
       "source": "https://www.armmuseum.ru/news-blog/artavasdes-ii-of-armenia-and-marcus-licinius-crassus",
@@ -548,16 +530,17 @@
     },
     {
       "date": "01.01.0036",
-      "description": "Mark Antony invades Parthia with 100,000 troops but fails to capture Phraaspa; the Roman army suffers heavy losses during retreat through Armenian highlands, losing over 30,000 men. Antony blames Octavian, as he did not provide the promised troops.",
-      "description_ru": "Марк Антоний вторгается в Парфию со 100-тысячным войском, но не может захватить Фраспу; римская армия несёт тяжёлые потери при отступлении через армянское нагорье, четверть войска потеряна. Антоний винит в этом Октавиана, который не предоставил обещанные войска",
+      "description": "Mark Antony invades Parthia with 100,000 troops, supported by Armenia, but fails to capture Phraaspa; the Roman army suffers heavy losses during retreat through Armenian highlands, losing over 30,000 men. Antony blames Octavian, as he did not provide the promised troops.",
+      "description_ru": "Марк Антоний вторгается в Парфию со 100-тысячным войском, при поддержке Армении, но не может захватить Фраспу; римская армия несёт тяжёлые потери при отступлении через армянское нагорье, четверть войска потеряна. Антоний винит в этом Октавиана, который не предоставил обещанные войска",
       "era": "BC",
-      "latitude": 37.4,
-      "longitude": 46.15,
+      "latitude": 37.38515386,
+      "longitude": 47.1672678,
       "name": "Mark Antony's Parthian Campaign",
       "name_ru": "Парфянский поход Марка Антония",
       "source": "https://en.wikipedia.org/wiki/Antony%27s_Parthian_War",
       "tags": [
         "Roman",
+        "Armenian",
         "Parthian",
         "War",
         "Failure",
@@ -688,8 +671,8 @@
       "description": "Vologases I installs his brother Tiridates as King of Armenia, challenging Roman influence; this triggers the Roman-Parthian War over Armenia that would last until 63 AD",
       "description_ru": "Вологез I назначает своего брата Тиридата царём Армении, бросая вызов римскому влиянию; это провоцирует римско-парфянскую войну за Армению, которая продлится до 63 года н.э.",
       "era": "AD",
-      "latitude": 40.18,
-      "longitude": 44.51,
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
       "name": "Tiridates Installed as Armenian King",
       "name_ru": "Тиридат Парфянский назначен царём Армении",
       "source": "https://en.wikipedia.org/wiki/Tiridates_I_of_Armenia",
@@ -697,7 +680,10 @@
         "Roman",
         "Armenian",
         "Parthian",
-        "War"
+        "Arsacid",
+        "War",
+        "Dynasty",
+        "King"
       ],
       "type": "political"
     },
@@ -706,8 +692,8 @@
       "description": "Roman general Corbulo invades Armenia, beginning Roman-Parthian War; he captures and destroys Artaxata, the Armenian capital, in a campaign to restore Roman influence",
       "description_ru": "Римский полководец Корбулон вторгается в Армению, начиная римско-парфянскую войну; чтобы показать силу Рима, он захватывает и разрушает Арташат, армянскую столицу",
       "era": "AD",
-      "latitude": 39.8784,
-      "longitude": 44.5763,
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
       "name": "Corbulo's Armenian Campaign",
       "name_ru": "Вторжение Рима в Армению",
       "source": "https://en.wikipedia.org/wiki/Roman%E2%80%93Parthian_War_of_58%E2%80%9363",
@@ -735,6 +721,7 @@
         "Roman",
         "Armenian",
         "Parthian",
+        "Arsacid",
         "War",
         "Battle"
       ],
@@ -754,6 +741,7 @@
         "Roman",
         "Armenian",
         "Parthian",
+        "Arsacid",
         "Nero 👑",
         "Peace"
       ],
@@ -761,8 +749,8 @@
     },
     {
       "date": "01.01.0066",
-      "description": "Tiridates I travels to Rome and is crowned King of Armenia by Emperor Nero in an elaborate ceremony; this diplomatic solution maintains peace between Rome and Parthia for 50 years",
-      "description_ru": "Тиридат I путешествует в Рим и коронуется царём Армении императором Нероном в пышной церемонии; это дипломатическое решение поддерживает мир между Римом и Парфией в течение 50 лет",
+      "description": "Tiridates I travels to Rome and is crowned King of Armenia by Emperor Nero in an elaborate ceremony. This establishes the compromise: Armenian kings will be Arsacid princes (Parthian by blood) but must receive their crown from Rome. Tiridates returns to Armenia with Roman craftsmen and 200 million sesterces to rebuild Artashat, destroyed by Corbulo in 58 AD. He renames it Neronia in Nero's honor, though the name doesn't last. ",
+      "description_ru": "Тиридат I путешествует в Рим и коронуется царём Армении императором Нероном в пышной церемонии. Это устанавливает компромисс: армянские цари будут аршакидскими принцами (парфянами по крови), но должны получать корону от Рима. Тиридат возвращается в Армению с римскими мастерами и 200 миллионами сестерциев на восстановление Арташата. Он переименовывает город в Неронию в честь Нерона.",
       "era": "AD",
       "latitude": 41.89296549,
       "longitude": 12.48539865,
@@ -773,6 +761,7 @@
         "Roman",
         "Armenian",
         "Parthian",
+        "Arsacid",
         "Diplomacy",
         "Nero 👑"
       ],
@@ -883,7 +872,6 @@
       "name_ru": "Осрой I - царь Парфии",
       "source": "https://en.wikipedia.org/wiki/Osroes_I",
       "tags": [
-        "Armenian",
         "Parthian",
         "Arsacid",
         "King"
@@ -922,6 +910,7 @@
       "tags": [
         "Parthian",
         "Culture",
+        "Customs",
         "Literature",
         "Music",
         "Oral Tradition"
@@ -1036,6 +1025,7 @@
         "Roman",
         "Armenian",
         "Parthian",
+        "War",
         "Invasions"
       ],
       "type": "military"
@@ -1070,6 +1060,7 @@
       "tags": [
         "Roman",
         "Parthian",
+        "War",
         "Destruction",
         "Plague",
         "Plundering"
