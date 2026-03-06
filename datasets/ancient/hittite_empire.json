@@ -21,25 +21,6 @@
     },
     {
       "date": "01.01.1650",
-      "description": "Hattusili I (Labarna II) establishes Hattusa as permanent capital of Hittite Kingdom, constructing massive fortifications and temples",
-      "description_ru": "Хаттусили I (Лабарна II) основывает Хаттусу как постоянную столицу Хеттского царства, строя массивные укрепления и храмы",
-      "era": "BC",
-      "latitude": 40.023,
-      "longitude": 34.621,
-      "name": "Hattusa Becomes Hittite Capital",
-      "name_ru": "Хаттуса - столица хеттов",
-      "source": "https://www.worldhistory.org/Hattusa/",
-      "tags": [
-        "Hittite",
-        "Architecture",
-        "Capital",
-        "Fortification",
-        "City"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1650",
       "description": "Hittite language recorded in cuneiform script on clay tablets, preserving oldest written Indo-European language",
       "description_ru": "Хеттский язык записывался клинописью на глиняных табличках. Это позволило сохранить знание о древнейшем индоевропейском языке",
       "era": "BC",
@@ -56,6 +37,25 @@
       "type": "cultural"
     },
     {
+      "date": "01.01.1650",
+      "description": "Hattusili I (Labarna II) establishes Hattusa as permanent capital of Hittite Kingdom, constructing massive fortifications and temples",
+      "description_ru": "Хаттусили I (Лабарна II) основывает Хаттусу как постоянную столицу Хеттского царства, строя массивные укрепления и храмы",
+      "era": "BC",
+      "latitude": 40.023,
+      "longitude": 34.621,
+      "name": "Hattusa Becomes Hittite Capital",
+      "name_ru": "Хаттуса - столица хеттов",
+      "source": "https://www.worldhistory.org/Hattusa/",
+      "tags": [
+        "Hittite",
+        "City",
+        "Architecture",
+        "Capital",
+        "Fortification"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.1647",
       "description": "Hattusili I repels major Hurrian invasion from southeast, securing Hittite borders and establishing military dominance in Anatolia",
       "description_ru": "Хаттусили I отражает крупное хурритское вторжение с юго-востока, обеспечивая границы хеттов и устанавливая военное господство в Анатолии",
@@ -66,11 +66,11 @@
       "name_ru": "Хетты отражают вторжение хурритов",
       "source": "https://en.wikipedia.org/wiki/Hattusili_I",
       "tags": [
-        "Hurrian",
         "Hittite",
+        "Hurrian",
+        "War",
         "Battle",
         "Defense",
-        "War",
         "Invasions"
       ],
       "type": "military"
@@ -86,11 +86,11 @@
       "name_ru": "Хетты разграбляют города Ишувы",
       "source": "https://en.wikipedia.org/wiki/Isuwa",
       "tags": [
-        "Plundering",
         "Hittite",
+        "War",
         "Destruction",
         "Expansion",
-        "War"
+        "Plundering"
       ],
       "type": "military"
     },
@@ -106,10 +106,10 @@
       "source": "https://www.britannica.com/topic/Hittite",
       "tags": [
         "Hittite",
-        "Siege",
+        "War",
         "Expansion",
-        "Syria",
-        "War"
+        "Siege",
+        "Syria"
       ],
       "type": "military"
     },
@@ -125,9 +125,9 @@
       "source": "https://timemaps.com/civilizations/the-hittites/",
       "tags": [
         "Hittite",
-        "Syria",
         "Conquest",
-        "Expansion"
+        "Expansion",
+        "Syria"
       ],
       "type": "military"
     },
@@ -142,10 +142,10 @@
       "name_ru": "Издание Эдикта Телепину",
       "source": "https://www.worldhistory.org/Hittite_Civilization/",
       "tags": [
-        "Reform",
-        "Law",
         "Hittite",
-        "Dynasty"
+        "Reform",
+        "Dynasty",
+        "Law"
       ],
       "type": "political"
     },
@@ -160,9 +160,9 @@
       "name_ru": "Начало Хеттского Среднего царства",
       "source": "https://en.wikipedia.org/wiki/Hittites",
       "tags": [
+        "Mitanni",
         "Hittite",
-        "Decline",
-        "Mitanni"
+        "Decline"
       ],
       "type": "political"
     },
@@ -178,9 +178,9 @@
       "source": "https://en.wikipedia.org/wiki/Kaskians",
       "tags": [
         "Hittite",
-        "Kaska",
         "Crisis",
-        "Invasions"
+        "Invasions",
+        "Kaska"
       ],
       "type": "military"
     },
@@ -196,10 +196,10 @@
       "source": "https://timemaps.com/civilizations/the-hittites/",
       "tags": [
         "Hittite",
-        "Dynasty",
         "Reform",
-        "Rise",
-        "King"
+        "Dynasty",
+        "King",
+        "Rise"
       ],
       "type": "political"
     },
@@ -215,10 +215,10 @@
       "source": "https://en.wikipedia.org/wiki/Kizzuwatna",
       "tags": [
         "Hittite",
-        "Alliance",
         "Diplomacy",
-        "Trade",
-        "Cilicia"
+        "Alliance",
+        "Cilicia",
+        "Trade"
       ],
       "type": "political"
     },
@@ -234,9 +234,9 @@
       "source": "https://en.wikipedia.org/wiki/Tud%E1%B8%ABaliya_III",
       "tags": [
         "Hittite",
-        "Decline",
         "Dynasty",
-        "King"
+        "King",
+        "Decline"
       ],
       "type": "political"
     },
@@ -253,8 +253,8 @@
       "tags": [
         "Hittite",
         "Iron",
-        "Technology",
-        "Metallurgy"
+        "Metallurgy",
+        "Technology"
       ],
       "type": "scientific"
     },
@@ -270,8 +270,8 @@
       "source": "https://www.worldhistory.org/Hattusa/",
       "tags": [
         "Hittite",
-        "Kaska",
         "Destruction",
+        "Kaska",
         "Plundering"
       ],
       "type": "military"
@@ -289,9 +289,9 @@
       "tags": [
         "Hittite",
         "Dynasty",
+        "King",
         "Expansion",
-        "Rise",
-        "King"
+        "Rise"
       ],
       "type": "political"
     },
@@ -306,11 +306,11 @@
       "name_ru": "Завоевание Каркемиша хеттами",
       "source": "https://www.britannica.com/place/Carchemish",
       "tags": [
-        "Conquest",
         "Hittite",
+        "War",
+        "Conquest",
         "Syria",
-        "Trade",
-        "War"
+        "Trade"
       ],
       "type": "military"
     },
@@ -325,9 +325,9 @@
       "name_ru": "Египетское брачное предложение",
       "source": "https://www.worldhistory.org/Suppiluliumas_I/",
       "tags": [
-        "Diplomacy",
         "Egypt",
         "Hittite",
+        "Diplomacy",
         "Dynasty",
         "Letters"
       ],
@@ -344,10 +344,10 @@
       "name_ru": "Убийство хеттского принца Заннанзы",
       "source": "https://en.wikipedia.org/wiki/Zannanza",
       "tags": [
-        "Hittite",
-        "Assassination",
-        "War",
         "Egypt",
+        "Hittite",
+        "War",
+        "Assassination",
         "Syria"
       ],
       "type": "political"
@@ -398,11 +398,11 @@
       "name_ru": "Мурсили II - царь хеттов",
       "source": "https://en.wikipedia.org/wiki/Mursili_II",
       "tags": [
-        "Plague",
         "Hittite",
         "Dynasty",
+        "King",
         "Crisis",
-        "King"
+        "Plague"
       ],
       "type": "political"
     },
@@ -418,8 +418,8 @@
       "source": "https://www.worldhistory.org/article/1494/the-plague-prayers-of-mursili-ii/",
       "tags": [
         "Hittite",
-        "Religious",
-        "Plague"
+        "Plague",
+        "Religious"
       ],
       "type": "cultural"
     },
@@ -434,11 +434,11 @@
       "name_ru": "Хетты вассализируют Армянское нагорье",
       "source": "https://en.wikipedia.org/wiki/Hayasa-Azzi",
       "tags": [
-        "Conquest",
         "Hittite",
-        "Vassalage",
+        "War",
         "Anatolia",
-        "War"
+        "Conquest",
+        "Vassalage"
       ],
       "type": "military"
     },
@@ -453,11 +453,11 @@
       "name_ru": "Завоевание Арцавы хеттами",
       "source": "https://en.wikipedia.org/wiki/Arzawa",
       "tags": [
-        "Conquest",
-        "Anatolia",
-        "Expansion",
         "Hittite",
-        "War"
+        "War",
+        "Anatolia",
+        "Conquest",
+        "Expansion"
       ],
       "type": "military"
     },
@@ -473,9 +473,9 @@
       "source": "https://www.worldhistory.org/Hittite_Civilization/",
       "tags": [
         "Hittite",
-        "Law",
+        "Code",
         "Justice",
-        "Code"
+        "Law"
       ],
       "type": "political"
     },
@@ -525,8 +525,8 @@
       "source": "https://en.wikipedia.org/wiki/Wilusa",
       "tags": [
         "Hittite",
-        "Treaty",
         "Anatolia",
+        "Treaty",
         "Troy"
       ],
       "type": "political"
@@ -543,10 +543,10 @@
       "source": "https://en.wikipedia.org/wiki/Hattusili_III",
       "tags": [
         "Hittite",
-        "Dynasty",
         "Civil War",
-        "Usurpation",
-        "Kaska"
+        "Dynasty",
+        "Kaska",
+        "Usurpation"
       ],
       "type": "political"
     },
@@ -561,11 +561,11 @@
       "name_ru": "Хеттский контроль южной Сирии",
       "source": "https://timemaps.com/civilizations/the-hittites/",
       "tags": [
-        "Expansion",
         "Egypt",
         "Hittite",
-        "Syria",
-        "War"
+        "War",
+        "Expansion",
+        "Syria"
       ],
       "type": "political"
     },
@@ -580,11 +580,11 @@
       "name_ru": "Брачный союз хеттов с Египтом",
       "source": "https://en.wikipedia.org/wiki/Hattusili_III",
       "tags": [
-        "Hittite",
-        "Alliance",
-        "Dynasty",
         "Egypt",
-        "Marriage"
+        "Hittite",
+        "Marriage",
+        "Dynasty",
+        "Alliance"
       ],
       "type": "political"
     },
@@ -600,8 +600,8 @@
       "source": "https://en.wikipedia.org/wiki/Tudhaliya_IV",
       "tags": [
         "Hittite",
-        "King",
-        "Dynasty"
+        "Dynasty",
+        "King"
       ],
       "type": "political"
     },
@@ -616,10 +616,10 @@
       "name_ru": "Битва при Нихрии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Nihriya",
       "tags": [
-        "Battle",
         "Assyrian",
         "Hittite",
-        "War"
+        "War",
+        "Battle"
       ],
       "type": "military"
     },
@@ -635,10 +635,11 @@
       "source": "https://www.worldhistory.org/Yazilikaya/",
       "tags": [
         "Hittite",
-        "Religious",
+        "Building 🏠",
+        "Anatolia",
         "Architecture",
         "Art",
-        "Building 🏠",
+        "Religious",
         "Temple"
       ],
       "type": "cultural"
@@ -654,11 +655,11 @@
       "name_ru": "Аннексия хеттами Кипра",
       "source": "https://timemaps.com/civilizations/the-hittites/",
       "tags": [
-        "Conquest",
-        "Naval",
         "Hittite",
+        "War",
+        "Conquest",
         "Cyprus",
-        "War"
+        "Naval"
       ],
       "type": "military"
     },
@@ -675,8 +676,8 @@
       "tags": [
         "Hittite",
         "Dynasty",
-        "Decline",
-        "King"
+        "King",
+        "Decline"
       ],
       "type": "political"
     },
@@ -692,10 +693,10 @@
       "source": "https://en.wikipedia.org/wiki/Suppiluliuma_II",
       "tags": [
         "Hittite",
-        "Cyprus",
+        "War",
         "Battle",
-        "Naval",
-        "War"
+        "Cyprus",
+        "Naval"
       ],
       "type": "military"
     },
@@ -710,10 +711,10 @@
       "name_ru": "Набеги народов моря на Киликию",
       "source": "https://www.worldhistory.org/Sea_Peoples/",
       "tags": [
-        "Cilicia",
-        "Mediterranean",
         "Hittite",
-        "Invasions"
+        "Cilicia",
+        "Invasions",
+        "Mediterranean"
       ],
       "type": "military"
     },
@@ -728,10 +729,10 @@
       "name_ru": "Великая засуха в Хеттской империи",
       "source": "https://www.worldhistory.org/Hittite_Civilization/",
       "tags": [
-        "Climate Crisis",
         "Hittite",
-        "Famine",
-        "Disaster"
+        "Climate Crisis",
+        "Disaster",
+        "Famine"
       ],
       "type": "historic"
     },
@@ -748,8 +749,8 @@
       "tags": [
         "Hittite",
         "Phrygian",
-        "Migration",
-        "Invasions"
+        "Invasions",
+        "Migration"
       ],
       "type": "military"
     },
@@ -765,8 +766,8 @@
       "source": "https://en.wikipedia.org/wiki/Kaskians",
       "tags": [
         "Hittite",
-        "Kaska",
-        "Invasions"
+        "Invasions",
+        "Kaska"
       ],
       "type": "military"
     },
@@ -781,11 +782,11 @@
       "name_ru": "Ассирия наступает на хеттов",
       "source": "https://en.wikipedia.org/wiki/Ashur-resh-ishi_I",
       "tags": [
-        "Hittite",
         "Assyrian",
-        "Conquest",
+        "Hittite",
+        "War",
         "Annexation",
-        "War"
+        "Conquest"
       ],
       "type": "military"
     },
@@ -800,12 +801,12 @@
       "name_ru": "Хаттуса разрушена",
       "source": "https://www.worldhistory.org/Hattusa/",
       "tags": [
-        "Collapse",
-        "Capital",
-        "Abandonment",
-        "Destruction",
         "Hittite",
-        "City"
+        "City",
+        "Abandonment",
+        "Capital",
+        "Collapse",
+        "Destruction"
       ],
       "type": "historic"
     },
@@ -820,10 +821,10 @@
       "name_ru": "Конец Хеттской империи",
       "source": "https://timemaps.com/civilizations/the-hittites/",
       "tags": [
-        "Collapse",
-        "End",
         "Hittite",
+        "Collapse",
         "Empire",
+        "End",
         "Invasions"
       ],
       "type": "historic"
@@ -840,9 +841,9 @@
       "source": "https://en.wikipedia.org/wiki/Syro-Hittite_states",
       "tags": [
         "Hittite",
-        "Syria",
         "Cultural Continuity",
-        "Kingdom"
+        "Kingdom",
+        "Syria"
       ],
       "type": "political"
     },
@@ -858,9 +859,9 @@
       "source": "https://www.britannica.com/place/Carchemish",
       "tags": [
         "Hittite",
-        "Syria",
         "Dynasty",
-        "Cultural Continuity"
+        "Cultural Continuity",
+        "Syria"
       ],
       "type": "political"
     },
@@ -876,9 +877,9 @@
       "source": "https://en.wikipedia.org/wiki/Syro-Hittite_states",
       "tags": [
         "Hittite",
+        "Hurrian",
         "Art",
-        "Culture",
-        "Hurrian"
+        "Culture"
       ],
       "type": "cultural"
     },
@@ -893,11 +894,11 @@
       "name_ru": "Начало ассирийского завоевания нео-хеттских государств",
       "source": "https://en.wikipedia.org/wiki/Syro-Hittite_states",
       "tags": [
-        "Conquest",
-        "Vassalage",
         "Assyrian",
         "Hittite",
-        "War"
+        "War",
+        "Conquest",
+        "Vassalage"
       ],
       "type": "military"
     }

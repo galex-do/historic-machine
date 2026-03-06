@@ -1,695 +1,10 @@
 {
-  "description": "Great Armenia from Urartu legacy through Arsacid dynasty fall and aftermath — politics, religion, architecture, and culture (782 BC – 506 AD)",
+  "description": "Dataset imported with 55 events",
   "events": [
     {
-      "date": "01.01.0782",
-      "description": "King Argishti I of Urartu builds the fortress of Erebuni on Arin Berd hill overlooking the Ararat Plain. A cuneiform inscription reads: 'By the greatness of the God Khaldi, Argishti son of Menua built this mighty stronghold and proclaimed it Erebuni.' The citadel features 10-12 m ramparts, a temple to Khaldi with wooden plank flooring, wall murals, and an underground stone piping system for water transport. Argishti settles 6,600 prisoners from Hatti and Tsupani to populate the new city. Erebuni will evolve into modern Yerevan — one of the world's oldest continuously inhabited cities, older than Rome",
-      "description_ru": "Царь Аргишти I Урарту строит крепость Эребуни на холме Арин-Берд, возвышающемся над Араратской равниной. Клинописная надпись гласит: 'Величием бога Халди Аргишти, сын Менуа, построил эту могучую крепость и нарёк её Эребуни.' Цитадель имеет стены высотой 10-12 м, храм Халди с деревянным полом, настенные росписи и подземную каменную систему водоснабжения. Аргишти заселяет 6600 пленников из Хатти и Цупани. Эребуни станет современным Ереваном — одним из старейших непрерывно населённых городов мира, старше Рима",
-      "era": "BC",
-      "latitude": 40.14,
-      "longitude": 44.525,
-      "name": "Founding of Erebuni",
-      "name_ru": "Основание Эребуни",
-      "source": "https://en.wikipedia.org/wiki/Erebuni_Fortress",
-      "tags": [
-        "Armenian",
-        "Foundation",
-        "Fortification",
-        "Building 🏠"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0600",
-      "description": "After Urartu's collapse under Scythian and Median invasions, Armenian-speaking tribes absorb the remaining Urartian population across the highlands around Lake Van, Lake Sevan, and the Ararat Plain. The ethnonym 'Hay' (self-designation) and 'Armina' (Persian exonym) emerge as distinct identifiers. Urartian irrigation canals, fortresses, and metalworking traditions pass into Armenian culture. The highland population transitions from Urartian cuneiform to Aramaic for administration while maintaining an oral Armenian vernacular that will wait a millennium for its own script",
-      "description_ru": "После краха Урарту под ударами скифских и мидийских нашествий армяноязычные племена поглощают оставшееся урартское население по нагорьям вокруг озёр Ван и Севан и Араратской равнины. Этнонимы 'Хай' (самоназвание) и 'Армина' (персидский экзоним) утверждаются как самобытные идентификаторы. Урартские ирригационные каналы, крепости и традиции металлообработки переходят в армянскую культуру. Население нагорий переходит с урартской клинописи на арамейское письмо для администрации, сохраняя устный армянский язык",
-      "era": "BC",
-      "latitude": 38.5,
-      "longitude": 43.38,
-      "name": "Armenian Ethnogenesis",
-      "name_ru": "Армянский этногенез",
-      "source": "https://en.wikipedia.org/wiki/Armenia#Ancient_history",
-      "tags": [
-        "Armenian",
-        "Migration",
-        "Culture",
-        "Foundation"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "31.12.0522",
-      "description": "The Behistun Inscription of Darius I records 'Armina' — the earliest written reference to Armenia by name. When Darius seizes the Persian throne, Armenia revolts. General Vaumisa fights two battles: at Izala (December 31, 522 BC) and Autiyara (June 11, 521 BC). An Armenian named Arakha even seizes Babylon claiming to be Nebuchadnezzar IV. Darius notes Armenia showed 'stubborn resistance' requiring five battles to suppress. The trilingual inscription uses 'Armina' in Old Persian, 'Harminuia' in Elamite, and 'Urashtu' (Urartu) in Akkadian — showing the old and new names coexisting",
-      "description_ru": "Бехистунская надпись Дария I упоминает 'Армину' — древнейшее письменное упоминание Армении по имени. Когда Дарий захватывает персидский трон, Армения восстаёт. Генерал Ваумиса ведёт два сражения: при Изале (31 декабря 522 г. до н. э.) и Аутияре (11 июня 521 г. до н. э.). Армянин Араха даже захватывает Вавилон, называясь Навуходоносором IV. Дарий отмечает, что Армения оказала 'упорное сопротивление', потребовавшее пяти битв. Трёхъязычная надпись использует 'Армина' на древнеперсидском, 'Харминуйя' на эламском и 'Урашту' (Урарту) на аккадском",
-      "era": "BC",
-      "latitude": 34.3892,
-      "longitude": 47.4358,
-      "name": "Behistun: 'Armina' Named",
-      "name_ru": "Бехистун: имя 'Армина'",
-      "source": "https://en.wikipedia.org/wiki/Behistun_Inscription",
-      "tags": [
-        "Armenian",
-        "Persian",
-        "Rebellion",
-        "Writing"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0521",
-      "description": "Armenia becomes a satrapy of the Achaemenid Empire under the Orontid (Yervanduni) dynasty — the first Armenian ruling house attested in both Persian and Greek sources. The satrap governs from Tushpa (Van), maintains a cavalry force for the Great King, and administers justice according to Persian law. Armenia pays tribute in silver, horses, mules, and grain. Aramaic serves as the administrative language. The Orontids will rule Armenia for over three centuries, first as Persian vassals, then as independent kings",
-      "description_ru": "Армения становится сатрапией Ахеменидской империи под династией Ервандуни (Оронтидов) — первым армянским правящим домом, засвидетельствованным как в персидских, так и в греческих источниках. Сатрап правит из Тушпы (Ван), содержит кавалерию для Великого Царя и отправляет правосудие по персидскому закону. Армения платит дань серебром, лошадьми, мулами и зерном. Арамейский служит административным языком. Ервандуни будут править Арменией более трёх веков",
-      "era": "BC",
-      "latitude": 38.5,
-      "longitude": 43.38,
-      "name": "Orontid Satrapy Established",
-      "name_ru": "Основание сатрапии Ервандуни",
-      "source": "https://en.wikipedia.org/wiki/Orontid_dynasty",
-      "tags": [
-        "Armenian",
-        "Persian",
-        "Kingdom",
-        "Dynasty"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0401",
-      "description": "Xenophon and his Ten Thousand Greek mercenaries march through Armenia during their retreat from Persia. His Anabasis provides the earliest detailed eyewitness account of Armenian life: semi-subterranean houses shared with livestock for warmth, abundant wheat, barley, lamb, and fowl. Villagers drink barley beer through reed straws from communal bowls. Xenophon meets the satrap Orontes and vice-governor Tiribazus. He describes Armenia as 'a vast and rich country' with lively horses sacrificed to the sun god. Heavy snowfall and freezing mountain passes kill many soldiers before they reach the Black Sea",
-      "description_ru": "Ксенофонт и его Десять тысяч греческих наёмников проходят через Армению во время отступления из Персии. Его «Анабасис» даёт древнейшее подробное свидетельство о жизни армян: полуподземные дома, где живут вместе со скотом для тепла, обильные пшеница, ячмень, баранина и птица. Сельчане пьют ячменное пиво через тростниковые соломинки из общих чаш. Ксенофонт встречает сатрапа Оронта и наместника Тирибаза. Он описывает Армению как 'обширную и богатую страну' с резвыми лошадьми, приносимыми в жертву солнечному богу",
-      "era": "BC",
-      "latitude": 39.15,
-      "longitude": 43.5,
-      "name": "Xenophon Crosses Armenia",
-      "name_ru": "Ксенофонт пересекает Армению",
-      "source": "https://en.wikipedia.org/wiki/Anabasis_(Xenophon)",
-      "tags": [
-        "Armenian",
-        "Greek",
-        "History",
-        "Culture"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0331",
-      "description": "Armenian contingents fight for the Achaemenid Empire at the Battle of Gaugamela — 40,000 infantry and 7,000 cavalry under Orontes II, one of the largest national contingents in Darius III's army. Despite numerical superiority, Alexander the Great's tactical genius shatters the Persian force. Armenia is nominally conquered but Alexander never personally enters the Armenian highlands. The Macedonian general Neoptolemus briefly governs until his death in 321 BC, after which Orontes III declares Armenian independence",
-      "description_ru": "Армянские контингенты сражаются за Ахеменидскую империю при Гавгамелах — 40 000 пехотинцев и 7000 всадников под командованием Оронта II, один из крупнейших национальных контингентов в армии Дария III. Несмотря на численное превосходство, тактический гений Александра Великого разбивает персидскую силу. Армения номинально завоёвана, но Александр лично не входит в армянское нагорье. Македонский полководец Неоптолем кратко правит до своей гибели в 321 г. до н. э., после чего Оронт III объявляет независимость Армении",
-      "era": "BC",
-      "latitude": 36.5612,
-      "longitude": 43.2566,
-      "name": "Armenians at Gaugamela",
-      "name_ru": "Армяне при Гавгамелах",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Gaugamela",
-      "tags": [
-        "Armenian",
-        "Persian",
-        "Greek",
-        "Battle",
-        "War"
-      ],
-      "type": "battle"
-    },
-    {
-      "date": "01.01.0321",
-      "description": "After Neoptolemus' death during the Wars of the Diadochi, Orontes III declares Armenian independence from Macedonian control. The Orontid dynasty transforms from Persian satraps into sovereign kings. Armavir, on the left bank of the Araxes River near modern Armavir city, serves as capital. A Greek school is established there — the earliest known educational institution in Armenia. Inscriptions in Greek and Aramaic found at Armavir testify to the Hellenistic cultural influence that will define Armenian elite culture for centuries",
-      "description_ru": "После гибели Неоптолема в ходе Войн диадохов Оронт III провозглашает независимость Армении от македонского контроля. Династия Ервандуни превращается из персидских сатрапов в суверенных царей. Армавир на левом берегу Аракса служит столицей. Там основана греческая школа — древнейшее известное учебное заведение в Армении. Надписи на греческом и арамейском в Армавире свидетельствуют об эллинистическом культурном влиянии",
-      "era": "BC",
-      "latitude": 40.1536,
-      "longitude": 44.0378,
-      "name": "Orontid Independence Declared",
-      "name_ru": "Провозглашение независимости Ервандуни",
-      "source": "https://en.wikipedia.org/wiki/Orontid_dynasty",
-      "tags": [
-        "Armenian",
-        "Independence",
-        "Kingdom",
-        "Dynasty"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0212",
-      "description": "Orontes IV (Yervand the Last) founds Yervandashat at the confluence of the Araxes and Akhurian rivers as the new Orontid capital, replacing Armavir. The city is fortified with massive walls and becomes the political center of Greater Armenia. Orontes IV is the last Orontid king — around 200 BC he is overthrown by Artaxias, his own general. The Orontid bloodline continues through the Commagene branch, which will produce the famous Antiochus I and his colossal statues at Mount Nemrut",
-      "description_ru": "Оронт IV (Ерванд Последний) основывает Ервандашат при слиянии рек Аракс и Ахурян как новую столицу Оронтидов, заменяя Армавир. Город укреплён мощными стенами и становится политическим центром Великой Армении. Оронт IV — последний царь Оронтидов — около 200 г. до н. э. его свергает Арташес, его собственный полководец. Род Оронтидов продолжается через коммагенскую ветвь, которая произведёт знаменитого Антиоха I и его колоссальные статуи на горе Немрут",
-      "era": "BC",
-      "latitude": 40.16,
-      "longitude": 43.68,
-      "name": "Yervandashat Founded",
-      "name_ru": "Основание Ервандашата",
-      "source": "https://en.wikipedia.org/wiki/Yervandashat",
-      "tags": [
-        "Armenian",
-        "Capital",
-        "Foundation",
-        "Dynasty"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0189",
-      "description": "After Rome defeats the Seleucid king Antiochus III at Magnesia (190 BC), his Armenian general Artaxias (Artashes) declares independence and founds the Artaxiad dynasty. The Treaty of Apamea (188 BC) formally recognizes his sovereignty. Artaxias unifies the Armenian-speaking lands, sets boundary stones (several survive), and creates the largest Armenian state to date. Strabo credits him with making 'all the people speak one language' — suggesting a deliberate policy of linguistic unification across the highlands",
-      "description_ru": "После того как Рим побеждает селевкидского царя Антиоха III при Магнезии (190 г. до н. э.), его армянский полководец Арташес провозглашает независимость и основывает династию Арташесидов. Апамейский договор (188 г. до н. э.) официально признаёт его суверенитет. Арташес объединяет армяноязычные земли, устанавливает пограничные камни (несколько сохранились) и создаёт крупнейшее армянское государство. Страбон приписывает ему заслугу 'заставить всех говорить на одном языке' — что предполагает целенаправленную политику языковой унификации",
-      "era": "BC",
-      "latitude": 39.95,
-      "longitude": 44.55,
-      "name": "Artaxias I Founds Dynasty",
-      "name_ru": "Арташес I основывает династию",
-      "source": "https://en.wikipedia.org/wiki/Artaxias_I",
-      "tags": [
-        "Armenian",
-        "Foundation",
-        "Kingdom",
-        "Independence",
-        "King"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0176",
-      "description": "Artaxias I builds Artashat (Greek: Artaxata) on a peninsula of nine hills where the Metsamor joins the Araxes, 8 km south of modern Artashat. According to Strabo and Plutarch, the exiled Carthaginian general Hannibal advised on the site selection — earning it the epithet 'Armenian Carthage.' The city follows Hellenistic urban planning: grid streets, temples to Anahit and Tir alongside Greek deities, stone fortifications. A multi-ethnic population of Armenians, Greeks, Jews, and Syrians develops crafts and trade. Artashat will serve as Armenia's capital for over 350 years",
-      "description_ru": "Арташес I строит Арташат (греч. Артаксата) на полуострове из девяти холмов при слиянии Мецамора и Аракса. По Страбону и Плутарху, изгнанный карфагенский полководец Ганнибал советовал по выбору места — город получил прозвище 'Армянский Карфаген.' Город следует эллинистической градостроительной планировке: прямые улицы, храмы Анаит и Тира наряду с греческими божествами, каменные укрепления. Многонациональное население из армян, греков, евреев и сирийцев развивает ремёсла и торговлю. Арташат будет столицей Армении более 350 лет",
-      "era": "BC",
-      "latitude": 39.8783,
-      "longitude": 44.5756,
-      "name": "Artashat Capital Founded",
-      "name_ru": "Основание столицы Арташат",
-      "source": "https://en.wikipedia.org/wiki/Artaxata",
-      "tags": [
-        "Armenian",
-        "Capital",
-        "Foundation",
-        "Architecture",
-        "Building 🏠"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0095",
-      "description": "Tigranes II (the Great) ascends the Armenian throne at age ~45 after spending years as a Parthian hostage. Over the next three decades he transforms Armenia from a regional kingdom into the largest empire in the Near East, stretching from the Caspian Sea to the Mediterranean. He adopts the Achaemenid title 'King of Kings,' mints coins with his distinctive five-pointed tiara, and receives tribute from Parthia, Syria, Phoenicia, and parts of Cappadocia. At its peak around 69 BC, his empire encompasses 300,000 km²",
-      "description_ru": "Тигран II (Великий) восходит на армянский трон в возрасте ~45 лет после многих лет в качестве парфянского заложника. За следующие три десятилетия он превращает Армению из регионального царства в крупнейшую империю Ближнего Востока, простирающуюся от Каспийского моря до Средиземного. Он принимает ахеменидский титул 'Царь царей', чеканит монеты с характерной пятиконечной тиарой и получает дань от Парфии, Сирии, Финикии и части Каппадокии. На пике около 69 г. до н. э. его империя охватывает 300 000 км²",
-      "era": "BC",
-      "latitude": 39.8783,
-      "longitude": 44.5756,
-      "name": "Tigranes the Great Enthroned",
-      "name_ru": "Восшествие Тиграна Великого",
-      "source": "https://en.wikipedia.org/wiki/Tigranes_the_Great",
-      "tags": [
-        "Armenian",
-        "King",
-        "Empire",
-        "Rise"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0083",
-      "description": "Tigranes II builds Tigranocerta (Tigranakert) as his new southern capital near modern Silvan, Turkey. He forcibly relocates 60,000-100,000 people from 12 conquered Greek cities in Cappadocia, Cilicia, and Syria to populate it. The city features a blend of Hellenistic and Iranian architecture: rectangular street grid, theater, markets, temples, and a triangular hilltop fortress with massive walls. Tigranes also builds three other cities named Tigranakert in Nakhichevan, Artsakh, and Utik, creating a network of royal administrative centers across his empire",
-      "description_ru": "Тигран II строит Тигранакерт как новую южную столицу близ современного Сильвана, Турция. Он принудительно переселяет 60 000-100 000 человек из 12 завоёванных греческих городов в Каппадокии, Киликии и Сирии. Город сочетает эллинистическую и иранскую архитектуру: прямоугольная уличная сетка, театр, рынки, храмы и треугольная крепость на холме с мощными стенами. Тигран также строит три других города с именем Тигранакерт в Нахичевани, Арцахе и Утике, создавая сеть царских административных центров",
-      "era": "BC",
-      "latitude": 37.978,
-      "longitude": 41.3849,
-      "name": "Tigranocerta Built",
-      "name_ru": "Основание Тигранакерта",
-      "source": "https://en.wikipedia.org/wiki/Tigranocerta",
-      "tags": [
-        "Armenian",
-        "Capital",
-        "Foundation",
-        "Architecture",
-        "Building 🏠"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0080",
-      "description": "The Temple of Anahit at Artashat becomes the wealthiest religious center in Armenia. Anahit — goddess of fertility, healing, and wisdom — is the most revered deity in the pre-Christian Armenian pantheon. Her golden statue at Artashat attracts pilgrims from across the kingdom. Pliny records that Roman soldiers melted down her golden idol when they sacked the temple. Alongside Anahit, the Armenian pantheon includes Aramazd (sky father), Vahagn (war/thunder god, 'dragon slayer'), Astghik (love goddess), Tir (god of writing and oracles), and Nane (goddess of wisdom). Each deity has designated temple cities",
-      "description_ru": "Храм Анаит в Арташате становится богатейшим религиозным центром Армении. Анаит — богиня плодородия, исцеления и мудрости — наиболее почитаемое божество в дохристианском армянском пантеоне. Её золотая статуя в Арташате привлекает паломников со всего царства. Плиний сообщает, что римские солдаты переплавили её золотого идола, когда разграбили храм. Наряду с Анаит пантеон включает Арамазда (небесный отец), Ваагна (бог войны и грома, 'драконоборец'), Астхик (богиня любви), Тир (бог письма и оракулов) и Нанэ (богиня мудрости)",
-      "era": "BC",
-      "latitude": 39.8783,
-      "longitude": 44.5756,
-      "name": "Temple of Anahit",
-      "name_ru": "Храм Анаит",
-      "source": "https://en.wikipedia.org/wiki/Anahit",
-      "tags": [
-        "Armenian",
-        "Temple",
-        "Religious",
-        "Culture"
-      ],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.0066",
-      "description": "Tigranes II surrenders to Pompey at Artashat, kneeling before the Roman general and placing his tiara at Pompey's feet. Pompey restores the tiara, declaring Tigranes 'King of Armenia' but stripping him of all conquered territories outside historic Armenia. Tigranes becomes a Roman client king, paying 6,000 talents in tribute. He rules peacefully until his death around 55 BC at approximately 85 years old. Despite losing his empire, he preserves Armenian statehood — the kingdom continues under his descendants as a buffer between Rome and Parthia",
-      "description_ru": "Тигран II сдаётся Помпею в Арташате, преклоняя колени и кладя тиару к ногам римского полководца. Помпей возвращает тиару, объявляя Тиграна 'Царём Армении', но лишая его всех завоёванных территорий за пределами исторической Армении. Тигран становится римским клиентским царём, выплачивая 6000 талантов дани. Он правит мирно до своей смерти около 55 г. до н. э. в возрасте ~85 лет. Несмотря на потерю империи, он сохраняет армянскую государственность",
-      "era": "BC",
-      "latitude": 39.8783,
-      "longitude": 44.5756,
-      "name": "Tigranes Submits to Pompey",
-      "name_ru": "Тигран подчиняется Помпею",
-      "source": "https://en.wikipedia.org/wiki/Tigranes_the_Great",
-      "tags": [
-        "Armenian",
-        "Roman",
-        "Diplomacy",
-        "Peace",
-        "King"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0055",
-      "description": "King Artavasdes II inherits the throne and becomes the most culturally accomplished Armenian monarch. Educated in Greek rhetoric and philosophy, he writes tragedies, orations, and historical works in Greek — the first known Armenian author. He builds Armenia's second permanent theater at Artashat and stages Euripides and Menander with a resident Greek acting troupe. Plutarch calls him 'accomplished in Greek literature.' In 53 BC, during a performance of Euripides' Bacchae at a Parthian-Armenian royal banquet, the severed head of the Roman general Crassus is reportedly used as a stage prop for the head of Pentheus",
-      "description_ru": "Царь Артавазд II наследует трон и становится самым культурно одарённым армянским монархом. Образованный в греческой риторике и философии, он пишет трагедии, ораторские речи и исторические сочинения по-гречески — первый известный армянский автор. Он строит второй постоянный театр Армении в Арташате и ставит Еврипида и Менандра с резидентной греческой труппой. Плутарх называет его 'сведущим в греческой литературе.' В 53 г. до н. э. во время постановки «Вакханок» Еврипида на парфяно-армянском банкете отрубленная голова римского полководца Красса используется как реквизит",
-      "era": "BC",
-      "latitude": 39.8783,
-      "longitude": 44.5756,
-      "name": "Artavasdes II: Playwright King",
-      "name_ru": "Артавазд II: царь-драматург",
-      "source": "https://en.wikipedia.org/wiki/Artavasdes_II_of_Armenia",
-      "tags": [
-        "Armenian",
-        "Art",
-        "Culture",
-        "Theater",
-        "King"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0034",
-      "description": "Mark Antony invades Armenia, captures Artavasdes II through treachery after luring him to negotiations, and sends him in silver chains to Alexandria. Antony gives large portions of Armenian territory to Cleopatra VII's children in the 'Donations of Alexandria.' Artavasdes refuses to bow before Cleopatra or acknowledge her authority. After Antony's defeat at Actium (31 BC), Cleopatra executes Artavasdes — reportedly by beheading. His son Artaxias II retakes Armenia, massacring the Roman garrison, but the kingdom is permanently weakened by the trauma",
-      "description_ru": "Марк Антоний вторгается в Армению, захватывает Артавазда II обманом после завлечения на переговоры и отправляет его в серебряных цепях в Александрию. Антоний передаёт значительные части армянской территории детям Клеопатры VII в 'Александрийских дарениях.' Артавазд отказывается склониться перед Клеопатрой. После поражения Антония при Акциуме (31 г. до н. э.) Клеопатра казнит Артавазда. Его сын Арташес II отвоёвывает Армению, уничтожая римский гарнизон, но царство навсегда ослаблено",
-      "era": "BC",
-      "latitude": 31.2001,
-      "longitude": 29.9187,
-      "name": "Antony Captures Artavasdes",
-      "name_ru": "Антоний захватывает Артавазда",
-      "source": "https://en.wikipedia.org/wiki/Artavasdes_II_of_Armenia",
-      "tags": [
-        "Armenian",
-        "Roman",
-        "Conquest",
-        "King",
-        "Betrayal"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0020",
-      "description": "Augustus sends his stepson Tiberius to Armenia to install the Roman candidate Tigranes III on the throne, establishing the pattern that will define Armenian politics for the next century: Armenia as a contested buffer state whose king must be acceptable to both Rome and Parthia. Augustus' settlement treats Armenia as a nominal Roman client while acknowledging Parthian cultural influence. This compromise will break down repeatedly as both empires fight proxy wars through Armenian succession crises",
-      "description_ru": "Август посылает пасынка Тиберия в Армению для возведения на трон римского кандидата Тиграна III, устанавливая модель, которая определит армянскую политику на следующее столетие: Армения как спорное буферное государство, чей царь должен быть приемлем и для Рима, и для Парфии. Урегулирование Августа рассматривает Армению как номинального римского клиента, признавая парфянское культурное влияние. Этот компромисс будет неоднократно нарушаться",
-      "era": "BC",
-      "latitude": 39.8783,
-      "longitude": 44.5756,
-      "name": "Armenia: Roman Buffer State",
-      "name_ru": "Армения: римское буферное государство",
-      "source": "https://en.wikipedia.org/wiki/Kingdom_of_Armenia_(antiquity)",
-      "tags": [
-        "Armenian",
-        "Roman",
-        "Parthian",
-        "Diplomacy",
-        "Political"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0066",
-      "description": "Tiridates I of the Arsacid (Arshakuni) dynasty is crowned King of Armenia by Roman Emperor Nero in a spectacular ceremony in Rome. This establishes the compromise: Armenian kings will be Arsacid princes (Parthian by blood) but must receive their crown from Rome. Tiridates returns to Armenia with Roman craftsmen and 200 million sesterces to rebuild Artashat, destroyed by Corbulo in 58 AD. He renames it Neronia in Nero's honor, though the name doesn't last. The Arsacid dynasty he founds will rule Armenia for over 350 years — the longest-reigning dynasty in Armenian history",
-      "description_ru": "Тиридат I из династии Аршакуни коронуется Царём Армении римским императором Нероном на впечатляющей церемонии в Риме. Это устанавливает компромисс: армянские цари будут аршакидскими принцами (парфянами по крови), но должны получать корону от Рима. Тиридат возвращается в Армению с римскими мастерами и 200 миллионами сестерциев на восстановление Арташата. Он переименовывает город в Неронию в честь Нерона. Династия Аршакуни будет править Арменией более 350 лет — дольше всех в армянской истории",
-      "era": "AD",
-      "latitude": 39.8783,
-      "longitude": 44.5756,
-      "name": "Tiridates Crowned in Rome",
-      "name_ru": "Коронация Тиридата в Риме",
-      "source": "https://en.wikipedia.org/wiki/Tiridates_I_of_Armenia",
-      "tags": [
-        "Armenian",
-        "Arsacid",
-        "Dynasty",
-        "King",
-        "Roman"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0077",
-      "description": "King Tiridates I completes the Garni Temple on a triangular promontory above the Azat River gorge, 30 km east of Yerevan. Built in the Ionic order with 24 basalt columns rising 6.5 m on a high podium, it is dedicated to the sun god Mihr (Mithras). An inscription dates it: 'Helios! Trdat the Great, Great King of Armenia, when he built the fortress...' It is the only Greco-Roman colonnaded temple east of Anatolia and the only pagan temple in Armenia to survive Christianization — converted into a royal summer residence for Princess Khosrovidukht. Destroyed by earthquake in 1679, reconstructed 1969-1975",
-      "description_ru": "Царь Тиридат I завершает храм Гарни на треугольном мысу над ущельем реки Азат, в 30 км от Еревана. Построенный в ионическом ордере с 24 базальтовыми колоннами высотой 6,5 м на высоком подиуме, он посвящён солнечному богу Михру (Митре). Надпись гласит: 'Гелиос! Трдат Великий, великий царь Армении, когда он построил крепость...' Это единственный греко-римский колонный храм к востоку от Анатолии и единственный языческий храм в Армении, переживший христианизацию",
-      "era": "AD",
-      "latitude": 40.112,
-      "longitude": 44.729,
-      "name": "Garni Temple Completed",
-      "name_ru": "Завершение храма Гарни",
-      "source": "https://en.wikipedia.org/wiki/Garni_Temple",
-      "tags": [
-        "Armenian",
-        "Temple",
-        "Architecture",
-        "Monument",
-        "Ancient Wonders"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0077",
-      "description": "The Garni fortress complex includes not only the famous temple but also a Roman-style bathhouse with a remarkable mosaic floor depicting Oceanus, sea gods, Thetis, and marine creatures with the Greek inscription 'We worked and received nothing' — a signature by the artisans. The bath features a hypocaust heating system, frigidarium, tepidarium, and caldarium. Nearby, the Garni Gorge ('Symphony of Stones') displays spectacular natural basalt columns formed by volcanic activity. The fortress served as a royal summer residence throughout Armenian history",
-      "description_ru": "Крепостной комплекс Гарни включает не только знаменитый храм, но и римскую баню с замечательным мозаичным полом, изображающим Океана, морских богов, Фетиду и морских существ с греческой надписью 'Работали и ничего не получили' — подпись мастеров. Баня имеет систему отопления гипокауст. Рядом ущелье Гарни ('Симфония камней') демонстрирует впечатляющие природные базальтовые колонны вулканического происхождения. Крепость служила царской летней резиденцией на протяжении всей армянской истории",
-      "era": "AD",
-      "latitude": 40.112,
-      "longitude": 44.729,
-      "name": "Garni Bath Mosaic",
-      "name_ru": "Мозаика бани Гарни",
-      "source": "https://en.wikipedia.org/wiki/Garni_Temple",
-      "tags": [
-        "Armenian",
-        "Art",
-        "Architecture",
-        "Roman"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0114",
-      "description": "Emperor Trajan annexes Armenia as a Roman province — the only time in history Armenia is directly incorporated into the Roman Empire rather than treated as a client state. Trajan captures Artashat, installs a Roman garrison, and places a Latin inscription at the city (discovered by archaeologists in the 1970s). The annexation lasts only three years: Hadrian abandons the province in 117 AD, judging it indefensible. Armenia returns to Arsacid rule under Vologases I. The brief annexation demonstrates both Rome's military reach and the strategic impossibility of holding the Armenian highlands permanently",
-      "description_ru": "Император Траян аннексирует Армению как римскую провинцию — единственный раз в истории, когда Армения напрямую включена в Римскую империю. Траян захватывает Арташат, размещает римский гарнизон и устанавливает латинскую надпись (обнаруженную археологами в 1970-х). Аннексия длится лишь три года: Адриан оставляет провинцию в 117 г. н. э. Армения возвращается к аршакидскому правлению. Краткая аннексия демонстрирует и военный охват Рима, и стратегическую невозможность постоянного удержания армянского нагорья",
-      "era": "AD",
-      "latitude": 39.8783,
-      "longitude": 44.5756,
-      "name": "Trajan Annexes Armenia",
-      "name_ru": "Траян аннексирует Армению",
-      "source": "https://en.wikipedia.org/wiki/Trajan%27s_Parthian_campaign",
-      "tags": [
-        "Armenian",
-        "Roman",
-        "Conquest",
-        "Empire"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0190",
-      "description": "The Nakharar system — Armenia's distinctive feudal aristocratic structure derived from Parthian traditions — reaches mature form. The country is divided among hereditary noble houses (nakharars), each with inalienable landed estates and private armies. The Gahnamak (throne register) ranks families by court honor; the Zoranamak (military register) ranks them by cavalry strength. Key houses include the Mamikonian (hereditary sparapet/supreme commander, 3,000 cavalry), Bagratuni (hereditary aspet/coronation officer), Artsruni, and Siunia. This system will preserve Armenian identity through centuries of foreign rule",
-      "description_ru": "Система нахараров — характерная армянская феодальная аристократическая структура, унаследованная от парфянских традиций — достигает зрелой формы. Страна разделена между наследственными знатными домами (нахарарами), каждый с неотчуждаемыми земельными владениями и частными армиями. Гахнамак (реестр трона) ранжирует семьи по придворной чести; Зоранамак (военный реестр) — по кавалерийской силе. Ключевые дома: Мамиконяны (наследственный спарапет, 3000 всадников), Багратуни (наследственный аспет), Арцруни и Сюни",
-      "era": "AD",
-      "latitude": 39.8783,
-      "longitude": 44.5756,
-      "name": "Nakharar Feudal System",
-      "name_ru": "Система нахараров",
-      "source": "https://en.wikipedia.org/wiki/Nakharar",
-      "tags": [
-        "Armenian",
-        "Administration",
-        "Dynasty",
-        "Political"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0301",
-      "description": "King Tiridates III adopts Christianity as the state religion — making Armenia the first country in history to do so, predating Rome by over a decade. The conversion follows the release of Gregory the Illuminator from 13-15 years' imprisonment in the pit of Khor Virap, where he was thrown for refusing to worship the goddess Anahit. Gregory heals the king's mysterious illness, baptizes him, the army, and the people in the Euphrates. Pagan temples across Armenia are destroyed and churches built on their sites. The political calculation is clear: Christianity distinguishes Armenia from Zoroastrian Persia and aligns it with Rome",
-      "description_ru": "Царь Тиридат III принимает христианство как государственную религию — делая Армению первой страной в истории, опередив Рим более чем на десятилетие. Обращение следует за освобождением Григория Просветителя из 13-15 лет заточения в яме Хор Вирапа. Григорий исцеляет загадочную болезнь царя, крестит его, армию и народ в Евфрате. Языческие храмы по всей Армении разрушаются, на их месте строятся церкви. Политический расчёт ясен: христианство отличает Армению от зороастрийской Персии",
-      "era": "AD",
-      "latitude": 39.8783,
-      "longitude": 44.5756,
-      "name": "Armenia Adopts Christianity",
-      "name_ru": "Армения принимает христианство",
-      "source": "https://en.wikipedia.org/wiki/Christianization_of_Armenia",
-      "tags": [
-        "Armenian",
-        "Christian",
-        "Religious",
-        "Foundation",
-        "King"
-      ],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.0303",
-      "description": "Gregory the Illuminator builds Echmiadzin Cathedral in Vagharshapat (20 km west of Yerevan) — one of the oldest cathedrals in the world. According to tradition, Gregory saw a vision of Christ descending and striking the earth with a golden hammer, marking the building site. The name means 'Descent of the Only-Begotten.' Originally a simple basilica, rebuilt with a cruciform plan and central dome in 483-484 AD. Echmiadzin becomes the permanent seat of the Catholicos (supreme patriarch) of the Armenian Apostolic Church — a role it holds to this day. UNESCO World Heritage Site since 2000",
-      "description_ru": "Григорий Просветитель строит Эчмиадзинский собор в Вагаршапате (20 км к западу от Еревана) — один из старейших соборов мира. По преданию, Григорий увидел видение Христа, ударяющего землю золотым молотом, обозначая место строительства. Название означает 'Сошествие Единородного.' Первоначально простая базилика, перестроенная с крестообразным планом и центральным куполом в 483-484 гг. Эчмиадзин становится постоянной резиденцией Католикоса Армянской Апостольской Церкви. Объект Всемирного наследия ЮНЕСКО с 2000 года",
-      "era": "AD",
-      "latitude": 40.1614,
-      "longitude": 44.2911,
-      "name": "Echmiadzin Cathedral Built",
-      "name_ru": "Построен Эчмиадзинский собор",
-      "source": "https://en.wikipedia.org/wiki/Etchmiadzin_Cathedral",
-      "tags": [
-        "Armenian",
-        "Christian",
-        "Temple",
-        "Architecture",
-        "Ancient Wonders"
-      ],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.0303",
-      "description": "Gregory the Illuminator builds churches of Hripsime and Gayane in Vagharshapat over the martyrdom sites of the Christian nuns whose killing triggered King Tiridates' conversion. Rhipsime and Gayane had fled Roman persecution and were tortured to death when Rhipsime refused to marry Tiridates. Both churches — rebuilt in their current form in the 7th century — are masterpieces of early Armenian architecture and UNESCO World Heritage sites. The martyrs' story becomes central to Armenian Christian identity",
-      "description_ru": "Григорий Просветитель строит церкви Рипсиме и Гаяне в Вагаршапате на местах мученичества христианских монахинь, чья гибель послужила толчком к обращению царя Тиридата. Рипсиме и Гаяне бежали от римских гонений и были замучены до смерти, когда Рипсиме отказалась выйти замуж за Тиридата. Обе церкви — перестроенные в нынешнем виде в VII веке — являются шедеврами ранней армянской архитектуры и объектами Всемирного наследия ЮНЕСКО",
-      "era": "AD",
-      "latitude": 40.154,
-      "longitude": 44.296,
-      "name": "Hripsime and Gayane Churches",
-      "name_ru": "Церкви Рипсиме и Гаяне",
-      "source": "https://en.wikipedia.org/wiki/Saint_Hripsime_Church",
-      "tags": [
-        "Armenian",
-        "Christian",
-        "Temple",
-        "Architecture"
-      ],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.0335",
-      "description": "King Khosrov III Kotak founds Dvin 35 km south of modern Yerevan as the new royal seat, transforming a hunting park into a fortified city. By the 5th century Dvin becomes the political, economic, and religious capital of Armenia with 100,000-150,000 residents — one of the largest cities east of Constantinople. Six trade routes converge here connecting Iran, Mesopotamia, Byzantium, and the Mediterranean. The city hosts the Armenian Catholicosate from 470 AD and several landmark church councils (506, 554 AD). An 893 earthquake kills 70,000 and begins its decline",
-      "description_ru": "Царь Хосров III Котак основывает Двин в 35 км к югу от современного Еревана как новую царскую резиденцию, превращая охотничий парк в укреплённый город. К V веку Двин становится политической, экономической и религиозной столицей Армении с 100 000-150 000 жителей — одним из крупнейших городов к востоку от Константинополя. Шесть торговых путей сходятся здесь. В городе располагается Армянский Католикосат с 470 г. и проходят несколько знаковых церковных соборов (506, 554 гг.)",
-      "era": "AD",
-      "latitude": 40.0064,
-      "longitude": 44.5806,
-      "name": "Dvin Capital Founded",
-      "name_ru": "Основание столицы Двин",
-      "source": "https://en.wikipedia.org/wiki/Dvin_(ancient_city)",
-      "tags": [
-        "Armenian",
-        "Capital",
-        "Foundation",
-        "Trade"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0353",
-      "description": "Catholicos Nerses I the Great, great-grandson of Gregory the Illuminator, convenes the Council of Ashtishat — a landmark assembly that transforms Armenian society. The council forbids cousin marriages, bans self-mutilation during mourning, standardizes fasting and liturgy. Nerses builds Armenia's first hospitals, leprosaria, orphanages, and schools — creating a social welfare infrastructure unprecedented in the region. He democratizes the Church, bringing it from the nobility to the common people. Poisoned by King Pap in 373 AD for refusing him church entry due to moral depravity",
-      "description_ru": "Католикос Нерсес I Великий, правнук Григория Просветителя, созывает Аштишатский собор — знаковое собрание, преобразующее армянское общество. Собор запрещает браки между двоюродными, самоистязание при трауре, стандартизирует посты и литургию. Нерсес строит первые в Армении больницы, лепрозории, приюты и школы. Он демократизирует Церковь, приближая её от знати к простому народу. Отравлен царём Папом в 373 г. за отказ допустить его в церковь",
-      "era": "AD",
-      "latitude": 39.05,
-      "longitude": 42.75,
-      "name": "Council of Ashtishat",
-      "name_ru": "Аштишатский собор",
-      "source": "https://en.wikipedia.org/wiki/Nerses_I",
-      "tags": [
-        "Armenian",
-        "Christian",
-        "Reform",
-        "Culture"
-      ],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.0387",
-      "description": "The Peace of Acilisene partitions Armenia between the Roman Empire (Emperor Theodosius I) and Sassanid Persia (King Shapur III). Persia receives the larger eastern portion (~4/5) including the core highlands, Artashat, Vagharshapat, and Dvin. Rome takes the smaller western portion (~1/5) around Karin (Erzurum) and Sophene. Both portions retain Arsacid client kings initially. The partition ends Armenia's existence as a unified kingdom and sets the stage for centuries of divided Armenian existence between rival empires",
-      "description_ru": "Ацилисенский мир делит Армению между Римской империей (император Феодосий I) и Сасанидской Персией (царь Шапур III). Персия получает большую восточную часть (~4/5), включая ядро нагорья, Арташат, Вагаршапат и Двин. Рим берёт меньшую западную часть (~1/5) вокруг Карина (Эрзурума) и Софены. Обе части сохраняют аршакидских клиентских царей. Раздел кладёт конец существованию Армении как единого царства",
-      "era": "AD",
-      "latitude": 39.9,
-      "longitude": 43.5,
-      "name": "Partition of Armenia",
-      "name_ru": "Раздел Армении",
-      "source": "https://en.wikipedia.org/wiki/Peace_of_Acilisene",
-      "tags": [
-        "Armenian",
-        "Roman",
-        "Persian",
-        "Decline",
-        "Political"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0405",
-      "description": "Monk and linguist Mesrop Mashtots creates the Armenian alphabet — 36 letters (28 consonants, 8 vowels) designed to perfectly capture Armenian phonetics. Working with Catholicos Sahak Partev and calligrapher Rufinus in Samosata, he reportedly receives divine inspiration after years of study. The first sentence written: Proverbs 1:2 — 'To know wisdom and instruction.' King Vramshapuh orders the alphabet taught nationwide. Mashtots founds schools across Armenia and also helps create the Georgian and Caucasian Albanian scripts. Scholars call it 'the most perfect phonetic writing for its time.' The alphabet becomes the anchor of Armenian identity through centuries of foreign domination",
-      "description_ru": "Монах и лингвист Месроп Маштоц создаёт армянский алфавит — 36 букв (28 согласных, 8 гласных), точно отражающих армянскую фонетику. Работая с католикосом Саак Партевом и каллиграфом Руфином в Самосате, он по преданию получает божественное вдохновение. Первое предложение: Притчи 1:2 — 'Познать мудрость и наставление.' Царь Врамшапух приказывает обучать алфавиту по всей стране. Маштоц основывает школы и помогает создать грузинское и кавказско-албанское письмо. Учёные называют его 'самой совершенной фонетической письменностью своего времени.' Алфавит становится якорем армянской идентичности",
-      "era": "AD",
-      "latitude": 40.245,
-      "longitude": 44.32,
-      "name": "Armenian Alphabet Created",
-      "name_ru": "Создание армянского алфавита",
-      "source": "https://en.wikipedia.org/wiki/Armenian_alphabet",
-      "tags": [
-        "Armenian",
-        "Writing",
-        "Culture",
-        "Foundation",
-        "Education"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0410",
-      "description": "Sahak Partev and Mesrop Mashtots lead the translation of the Bible into Armenian — completed from Greek and Syriac originals. The resulting text is so precise and eloquent that it is called the 'Queen of Translations' (Targmanich' t'aguhui). This sparks a golden age of Armenian literature: Koryun writes Mashtots' biography, Agathangelos composes the History of Armenia, Faustus of Byzantium documents the 4th century, and Eznik of Kolb writes the theological treatise 'Refutation of the Sects.' Within a single generation, Armenia produces a complete literary canon from scripture to philosophy",
-      "description_ru": "Саак Партев и Месроп Маштоц руководят переводом Библии на армянский — завершённым с греческих и сирийских оригиналов. Полученный текст настолько точен и красноречив, что его называют 'Царицей переводов.' Это вызывает золотой век армянской литературы: Корюн пишет биографию Маштоца, Агатангелос составляет Историю Армении, Фавстос Бузанд документирует IV век, Езник Кохбаци пишет трактат 'Опровержение ересей.' За одно поколение Армения создаёт полный литературный канон",
-      "era": "AD",
-      "latitude": 40.1614,
-      "longitude": 44.2911,
-      "name": "Armenian Bible Translated",
-      "name_ru": "Перевод армянской Библии",
-      "source": "https://en.wikipedia.org/wiki/Bible_translations_into_Armenian",
-      "tags": [
-        "Armenian",
-        "Christian",
-        "Writing",
-        "Culture",
-        "Literature"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0428",
-      "description": "Armenian nakharar nobles petition Sassanid King Bahram V to abolish the Armenian monarchy, tired of the weak Arsacid King Artaxias IV. Bahram deposes the last Armenian king and converts eastern Armenia into a marzpanate (governorate) ruled by a Persian-appointed marzban. The 350-year Arsacid dynasty ends. Armenia loses its statehood but retains its feudal aristocracy, church, and cultural institutions. The Catholicosate at Dvin becomes the primary institution preserving Armenian national identity under foreign rule — a role the Church will play for the next 1,500 years",
-      "description_ru": "Армянские нахарары просят сасанидского царя Бахрама V упразднить армянскую монархию, устав от слабого аршакидского царя Арташеса IV. Бахрам низлагает последнего армянского царя и превращает восточную Армению в марзпанство. 350-летняя династия Аршакуни заканчивается. Армения теряет государственность, но сохраняет феодальную аристократию, церковь и культурные институты. Католикосат в Двине становится главным институтом, хранящим армянскую национальную идентичность",
-      "era": "AD",
-      "latitude": 40.0064,
-      "longitude": 44.5806,
-      "name": "Arsacid Monarchy Abolished",
-      "name_ru": "Упразднение монархии Аршакуни",
-      "source": "https://en.wikipedia.org/wiki/Arsacid_dynasty_of_Armenia",
-      "tags": [
-        "Armenian",
-        "Arsacid",
-        "Fall",
-        "End",
-        "Kingdom"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0449",
-      "description": "Sassanid King Yazdegerd II summons Armenian nobles to Ctesiphon and orders mass conversion to Zoroastrianism. The nobles initially comply outwardly but upon return to Armenia, the clergy and people reject the decree. The Council of Artashat (449 AD) unanimously declares: 'From this faith no one can shake us — neither angels nor men, neither fire nor sword.' Mass rebellion erupts. Yazdegerd sends a force with war elephants to enforce conversion. The Armenian church and nobility unite under the sparapet Vardan Mamikonian to resist by force of arms",
-      "description_ru": "Сасанидский царь Йездигерд II вызывает армянских нахараров в Ктесифон и приказывает массовое обращение в зороастризм. Нахарары вначале подчиняются внешне, но по возвращении в Армению духовенство и народ отвергают указ. Арташатский собор (449 г.) единогласно заявляет: 'От этой веры никто не может нас поколебать — ни ангелы, ни люди, ни огонь, ни меч.' Вспыхивает восстание. Армянская церковь и знать объединяются под спарапетом Варданом Мамиконяном для вооружённого сопротивления",
-      "era": "AD",
-      "latitude": 39.8783,
-      "longitude": 44.5756,
-      "name": "Council of Artashat",
-      "name_ru": "Арташатский собор",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Avarayr",
-      "tags": [
-        "Armenian",
-        "Christian",
-        "Rebellion",
-        "Religious"
-      ],
-      "type": "religious"
-    },
-    {
-      "date": "26.05.0451",
-      "description": "Sparapet Vardan Mamikonian leads 66,000 Armenians against 120,000-220,000 Sassanid Persians with war elephants on the Avarayr Plain. Vardan and eight generals fall in battle. The Persians win tactically but suffer enormous casualties. Yazdegerd II, alarmed by the cost, withdraws troops and allows Armenians to continue practicing Christianity. Vardan is canonized as a saint. The battle becomes the defining event of Armenian national identity — establishing that faith and culture are worth dying for. The Feast of Vardanank (Vartanantz) is still celebrated annually",
-      "description_ru": "Спарапет Вардан Мамиконян ведёт 66 000 армян против 120 000-220 000 сасанидских персов с боевыми слонами на Аварайрской равнине. Вардан и восемь полководцев погибают. Персы побеждают тактически, но несут огромные потери. Йездигерд II, встревоженный потерями, отводит войска и позволяет армянам продолжать исповедовать христианство. Вардан канонизирован как святой. Битва становится определяющим событием армянской идентичности. Праздник Вардананц отмечается ежегодно",
-      "era": "AD",
-      "latitude": 38.7,
-      "longitude": 44.3,
-      "name": "Battle of Avarayr",
-      "name_ru": "Аварайрская битва",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Avarayr",
-      "tags": [
-        "Armenian",
-        "Persian",
-        "Battle",
-        "Christian",
-        "War"
-      ],
-      "type": "battle"
-    },
-    {
-      "date": "01.01.0484",
-      "description": "Vahan Mamikonian, nephew of Vardan, leads a successful guerrilla rebellion (481-484 AD) that forces Sassanid King Balash to sign the Treaty of Nvarsak — guaranteeing Armenian religious freedom. All Zoroastrian fire altars in Armenia must be destroyed, forced conversions are banned, no land is granted to converts. Vahan is appointed marzban (Persian governor) of Armenia — the highest position an Armenian can hold. The treaty is called 'the first in history to compel a tyrant to yield to the principle of religious freedom.' It vindicates the sacrifice of Avarayr thirty-three years earlier",
-      "description_ru": "Ваан Мамиконян, племянник Вардана, ведёт успешное партизанское восстание (481-484 гг.), вынуждающее сасанидского царя Балаша подписать Нварсакский договор — гарантирующий религиозную свободу армян. Все зороастрийские жертвенники огня в Армении должны быть разрушены, принудительные обращения запрещены. Ваан назначен марзбаном (персидским наместником) Армении. Договор назван 'первым в истории, заставившим тирана уступить принципу религиозной свободы.' Он оправдывает жертву Аварайра",
-      "era": "AD",
-      "latitude": 40.0064,
-      "longitude": 44.5806,
-      "name": "Treaty of Nvarsak",
-      "name_ru": "Нварсакский договор",
-      "source": "https://en.wikipedia.org/wiki/Nvarsak_Treaty",
-      "tags": [
-        "Armenian",
-        "Persian",
-        "Peace",
-        "Christian",
-        "Freedom"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0506",
-      "description": "The First Council of Dvin formally separates the Armenian Apostolic Church from the Byzantine Church by rejecting the Council of Chalcedon (451 AD) and its definition of Christ's two natures. Armenia adopts Miaphysitism — the belief that Christ has one united divine-human nature. This theological split has profound political consequences: it permanently distances Armenia from Byzantine cultural orbit and creates a distinct Armenian Christian identity that will survive Arab, Seljuk, Mongol, Ottoman, and Persian rule. The Armenian Church remains Miaphysite to this day",
-      "description_ru": "Первый Двинский собор формально отделяет Армянскую Апостольскую Церковь от Византийской, отвергая Халкидонский собор (451 г.) и его определение двух природ Христа. Армения принимает миафизитство — веру в единую божественно-человеческую природу Христа. Этот теологический раскол имеет глубокие политические последствия: он навсегда отдаляет Армению от византийской культурной орбиты и создаёт особую армянскую христианскую идентичность, которая переживёт арабское, сельджукское, монгольское, османское и персидское владычество",
-      "era": "AD",
-      "latitude": 40.0064,
-      "longitude": 44.5806,
-      "name": "Council of Dvin",
-      "name_ru": "Двинский собор",
-      "source": "https://en.wikipedia.org/wiki/Council_of_Dvin",
-      "tags": [
-        "Armenian",
-        "Christian",
-        "Religious",
-        "Political"
-      ],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.0100",
-      "description": "Vardavar — the midsummer water festival dedicated to goddess Astghik — predates Christianity but survives Christianization by being reassigned to the Feast of the Transfiguration. On this day Armenians drench each other with water in streets, squares, and homes. The festival originally celebrated love, fertility, and the summer harvest. Roses (vard) are scattered and doves released. Vardavar is still celebrated enthusiastically across Armenia every July, making it one of the oldest continuously observed festivals in the world — over 2,000 years old, spanning pagan and Christian eras",
-      "description_ru": "Вардавар — летний праздник воды, посвящённый богине Астхик — предшествует христианству, но переживает христианизацию, будучи приурочен к Празднику Преображения. В этот день армяне обливают друг друга водой на улицах, площадях и в домах. Изначально праздник отмечал любовь, плодородие и летний урожай. Разбрасывают розы (вард) и выпускают голубей. Вардавар по-прежнему восторженно отмечается в Армении каждый июль, что делает его одним из старейших непрерывно отмечаемых праздников в мире",
-      "era": "AD",
-      "latitude": 40.1792,
-      "longitude": 44.4991,
-      "name": "Vardavar Water Festival",
-      "name_ru": "Праздник воды Вардавар",
-      "source": "https://en.wikipedia.org/wiki/Vardavar",
-      "tags": [
-        "Armenian",
-        "Customs",
-        "Ceremonial",
-        "Culture"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0440",
-      "description": "Movses Khorenatsi writes the History of Armenia — the first comprehensive national history of any people, tracing Armenian origins from Biblical times through the 5th century AD. He preserves the pre-Christian epics of Hayk (legendary ancestor who defeats the Babylonian giant Bel), Aram (eponymous hero), and the birth hymn of Vahagn. His work establishes the Armenian historical narrative: a people chosen by God, defined by language and faith, resilient under foreign rule. Despite modern scholarly debate about his exact dating, his history remains foundational to Armenian identity",
-      "description_ru": "Мовсес Хоренаци пишет «Историю Армении» — первую всеобъемлющую национальную историю любого народа, прослеживающую армянские истоки от библейских времён до V века. Он сохраняет дохристианские эпосы о Хайке (легендарный предок, победивший вавилонского великана Бела), Араме (герой-эпоним) и гимн рождения Ваагна. Его труд формирует армянский исторический нарратив: избранный Богом народ, определяемый языком и верой, стойкий под иностранным владычеством",
-      "era": "AD",
-      "latitude": 40.1614,
-      "longitude": 44.2911,
-      "name": "Khorenatsi's History Written",
-      "name_ru": "Хоренаци пишет «Историю»",
-      "source": "https://en.wikipedia.org/wiki/Movses_Khorenatsi",
-      "tags": [
-        "Armenian",
-        "History",
-        "Writing",
-        "Culture",
-        "Literature"
-      ],
-      "type": "cultural"
-    },
-    {
       "date": "01.01.4100",
-      "description": "The Areni-1 cave complex near Areni village in Vayots Dzor province contains the oldest known wine production facility in the world, dated to approximately 4100 BC. Excavated 2007-2010, it includes a clay fermentation vat, wine press, storage jars, grape seeds, and chemical traces of malvidin (red wine pigment) from domesticated Vitis vinifera grapes. The same cave yielded the world's oldest leather shoe (3500 BC). This discovery confirms the Armenian Highland as a cradle of viticulture. By Xenophon's time (401 BC), Armenian villages store abundant wine in cemented cisterns. The winemaking tradition continues unbroken for 6,000 years",
-      "description_ru": "Пещерный комплекс Арени-1 близ села Арени в области Вайоц Дзор содержит древнейшее известное винодельческое производство в мире, датируемое примерно 4100 г. до н. э. Раскопанный в 2007-2010 гг., он включает глиняный бродильный чан, виноградный пресс, хранилища, виноградные семена и следы мальвидина от одомашненного винограда Vitis vinifera. В той же пещере найден древнейший кожаный ботинок (3500 г. до н. э.). Открытие подтверждает Армянское нагорье как колыбель виноделия. Традиция виноделия не прерывается 6000 лет",
+      "description": "The Areni-1 cave complex near Areni village in Vayots Dzor province contains the oldest known wine production facility in the world, dated to approximately 4100 BC. Excavated 2007-2010, it includes a clay fermentation vat, wine press, storage jars, grape seeds, and chemical traces of malvidin (red wine pigment) from domesticated Vitis vinifera grapes.",
+      "description_ru": "Пещерный комплекс Арени-1 близ села Арени в области Вайоц Дзор содержит древнейшее известное винодельческое производство в мире, датируемое примерно 4100 г. до н. э. Раскопанный в 2007-2010 гг., он включает глиняный бродильный чан, виноградный пресс, хранилища, виноградные семена и следы мальвидина от одомашненного винограда Vitis vinifera.",
       "era": "BC",
       "latitude": 39.7208,
       "longitude": 45.1839,
@@ -697,85 +12,925 @@
       "name_ru": "Арени: древнейшая винодельня",
       "source": "https://en.wikipedia.org/wiki/Areni-1_winery",
       "tags": [
-        "Armenian",
         "Agriculture",
         "Culture",
-        "Ancient Wonders"
+        "Winemaking"
       ],
       "type": "cultural"
     },
     {
-      "date": "01.01.0350",
-      "description": "Armenian manuscript illumination begins with the invention of the alphabet. Monasteries become scriptoria where monks copy religious and secular texts on vellum using iron-gall ink and mineral pigments. Armenian miniature painting develops a distinctive style: bold colors, stylized figures, geometric ornament blending Hellenistic and Eastern motifs. The Matenadaran (Institute of Ancient Manuscripts) in Yerevan eventually preserves over 17,000 manuscripts and 100,000 archival documents — one of the world's richest collections. Armenian manuscripts survive because monks carried them during wars and migrations, prioritizing books alongside church relics",
-      "description_ru": "Армянская книжная миниатюра начинается с изобретения алфавита. Монастыри становятся скрипториями, где монахи копируют религиозные и светские тексты на пергаменте. Армянская миниатюрная живопись развивает характерный стиль: смелые цвета, стилизованные фигуры, геометрический орнамент, сочетающий эллинистические и восточные мотивы. Матенадаран в Ереване хранит более 17 000 рукописей и 100 000 архивных документов. Армянские рукописи сохранились, потому что монахи уносили их во время войн и миграций, ставя книги наравне с церковными реликвиями",
-      "era": "AD",
-      "latitude": 40.1918,
-      "longitude": 44.5213,
-      "name": "Manuscript Tradition Begins",
-      "name_ru": "Начало рукописной традиции",
-      "source": "https://en.wikipedia.org/wiki/Matenadaran",
+      "date": "01.01.0540",
+      "description": "After Urartu's collapse under Scythian and Median invasions, Armenian-speaking tribes absorb the remaining Urartian population across the highlands around Lake Van, Lake Sevan, and the Ararat Plain. The ethnonym 'Hay' (self-designation) and 'Armina' (Persian exonym) emerge as distinct identifiers. Urartian irrigation canals, fortresses, and metalworking traditions pass into Armenian culture.",
+      "description_ru": "После краха Урарту под ударами скифских и мидийских нашествий армяноязычные племена поглощают оставшееся урартское население по нагорьям вокруг озёр Ван и Севан и Араратской равнины. Этнонимы 'Хай' (самоназвание) и 'Армина' (персидский экзоним) утверждаются как самобытные идентификаторы. Урартское наследие переходит армянской культуре.",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Armenian Ethnogenesis",
+      "name_ru": "Армянский этногенез",
+      "source": "https://en.wikipedia.org/wiki/Armenia#Ancient_history",
       "tags": [
         "Armenian",
+        "Culture",
+        "Foundation",
+        "Migration"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0520",
+      "description": "Armenia becomes a satrapy of the Achaemenid Empire under the Yervanduni (Orontid) dynasty, the first Armenian ruling house attested in both Persian and Greek sources. The satrap rules from Tushpa (Van), maintains cavalry and is subject to Persian laws. Armenia pays tribute in silver, horses, mules, and grain. The administrative language is Aramaic, the spoken language is Armenian.",
+      "description_ru": "Армения становится сатрапией Ахеменидской империи под династией Ервандуни (Оронтидов) — первым армянским правящим домом, засвидетельствованным как в персидских, так и в греческих источниках. Сатрап правит из Тушпы (Ван), содержит кавалерию и подчиняется персидским законам. Армения платит дань серебром, лошадьми, мулами и зерном. Административный язык - арамейский, разговорный - армянский",
+      "era": "BC",
+      "latitude": 38.5,
+      "longitude": 43.35,
+      "name": "Orontid Satrapy Established in Armenia",
+      "name_ru": "Основание сатрапии Ервандуни",
+      "source": "https://en.wikipedia.org/wiki/Orontid_dynasty",
+      "tags": [
+        "Persian",
+        "Armenian",
+        "Dynasty",
+        "Kingdom",
+        "Orontid"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0401",
+      "description": "Xenophon and his mercenaries pass through Armenia while retreating from Persia. His \"Anabasis\" describes the life of Armenians: semi-underground houses where they live together with cattle for warmth, abundant wheat, barley, lamb and poultry. He describes Armenia as a \"vast and rich country\" with frisky horses sacrificed to the sun god.",
+      "description_ru": "Ксенофонт и наемники проходят через Армению, отступая из Персии. Его «Анабасис» описывает жизнь армян: полуподземные дома, где живут вместе со скотом для тепла, обильные пшеница, ячмень, баранина и птица. Он описывает Армению как 'обширную и богатую страну' с резвыми лошадьми, приносимыми в жертву солнечному богу",
+      "era": "BC",
+      "latitude": 39.15,
+      "longitude": 43.5,
+      "name": "Xenophon Crosses Armenia",
+      "name_ru": "Ксенофонт пересекает Армению",
+      "source": "https://en.wikipedia.org/wiki/Anabasis_(Xenophon)",
+      "tags": [
+        "Greek",
+        "Armenian",
+        "Culture",
+        "Customs",
+        "History"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0366",
+      "description": "The Armenian satrap Orontes I joins the Great Satraps' Revolt against the Achaemenid King Artaxerxes II, but later betrays him. Orontes, married to Artaxerxes' daughter Rhodogune, initially supports the rebels, but later, having assessed the balance of power, goes over to the king's side to receive privileges.",
+      "description_ru": "Армянский сатрап Оронт I присоединяется к Великому восстанию сатрапов против ахеменидского царя Артаксеркса II, а затем предаёт его. Оронт, женатый на дочери Артаксеркса Родогуне, сначала поддерживает мятежников, но позднее, оценив расклад сил, переходит на сторону царя для получения привилегий.",
+      "era": "BC",
+      "latitude": 40.14036837,
+      "longitude": 44.53818798,
+      "name": "Armenia in Satraps' Revolt",
+      "name_ru": "Армения в Великом восстании сатрапов",
+      "source": "https://en.wikipedia.org/wiki/Great_Satraps%27_Revolt",
+      "tags": [
+        "Persian",
+        "Armenian",
+        "Betrayal",
+        "Crisis",
+        "Orontid",
+        "Political",
+        "Rebellion"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0321",
+      "description": "After Neoptolemus' death during the Wars of the Diadochi, Orontes III declares Armenian independence from Macedonian control. The Orontid dynasty transforms from Persian satraps into sovereign kings. Armavir, on the left bank of the Araxes River near modern Armavir city, serves as capital. A Greek school is established there — the earliest known educational institution in Armenia.",
+      "description_ru": "После гибели Неоптолема в ходе Войн диадохов Оронт III провозглашает независимость Армении от македонского контроля. Династия Ервандуни превращается из персидских сатрапов в суверенных царей. Армавир на левом берегу Аракса служит столицей. Там основана греческая школа — древнейшее известное учебное заведение в Армении.",
+      "era": "BC",
+      "latitude": 40.10427066,
+      "longitude": 43.98934364,
+      "name": "Orontid Independence Declared",
+      "name_ru": "Провозглашение независимости Ервандуни",
+      "source": "https://en.wikipedia.org/wiki/Orontid_dynasty",
+      "tags": [
+        "Greek",
+        "Armenian",
+        "Diadochi",
+        "Dynasty",
+        "Independence",
+        "Kingdom",
+        "Orontid"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0212",
+      "description": "Orontes IV (Yervand the Last) founds Yervandashat at the confluence of the Araxes and Akhurian rivers as the new Orontid capital, replacing Armavir. The city is fortified with massive walls and becomes the political center of Greater Armenia.",
+      "description_ru": "Оронт IV (Ерванд Последний) основывает новую столицу Ервандашат при слиянии рек Аракс и Ахурян, заменяя Армавир. Город укреплён мощными стенами и становится политическим центром Великой Армении.",
+      "era": "BC",
+      "latitude": 40.12806449,
+      "longitude": 43.6634016,
+      "name": "Yervandashat Founded",
+      "name_ru": "Основание Ервандашата",
+      "source": "https://en.wikipedia.org/wiki/Yervandashat",
+      "tags": [
+        "Armenian",
+        "City",
+        "Dynasty",
+        "Capital",
+        "Orontid"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0200",
+      "description": "The authority of Orontes IV is not recognized by everyone in Armenia, and he also has tense relations with the Seleucids, who dominate the Middle East. Antiochus III appoints a local nobleman, Artaxias, as governor of Armenia. Artaxias, using Seleucid resources and the support of local elites, confronts Orontes and overthrows him. Orontes IV was assassinated in his capital, Yervandashat.",
+      "description_ru": "Власть Ерванда IV признается в Армении не всеми, также у него напряженные отношения с Селевкидами, которые главенствуют на Ближнем востоке. Антиох III назначает местного дворянина Арташеса наместником в Армении. Арташес, используя ресурсы Селевкидов и поддержку местных элит, дает бой Ерванду и свергает его. Ерванд IV был убит в своей столице Ервандашате",
+      "era": "BC",
+      "latitude": 40.12806449,
+      "longitude": 43.6634016,
+      "name": "Artaxias overthrows Orontes IV",
+      "name_ru": "Арташес свергает Ерванда IV",
+      "source": "https://en.wikipedia.org/wiki/Artaxias_I",
+      "tags": [
+        "Armenian",
+        "Seleucid",
+        "Dynasty",
+        "Orontid",
+        "Overthrow"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0189",
+      "description": "Following the defeat of the Seleucids at Magnesia, the Armenian governor Artaxias declared independence and founded the Artaxiad dynasty. The Treaty of Apamea officially recognized his sovereignty. Artaxias unites the Armenian-speaking lands, erects boundary stones, and establishes the largest Armenian state.",
+      "description_ru": "После поражения Селевкидов при Магнезии, армянский наместник Арташес провозглашает независимость и основывает династию Арташесидов. Апамейский договор официально признаёт его суверенитет. Арташес объединяет армяноязычные земли, устанавливает пограничные камни и создаёт крупнейшее армянское государство. ",
+      "era": "BC",
+      "latitude": 40.12806449,
+      "longitude": 43.6634016,
+      "name": "Artaxias I - King of independent Armenia",
+      "name_ru": "Арташес I - царь независимой Армении",
+      "source": "https://en.wikipedia.org/wiki/Artaxias_I",
+      "tags": [
+        "Armenian",
+        "Seleucid",
+        "Dynasty",
+        "King",
+        "Artaxiad",
+        "Foundation",
+        "Independence",
+        "Kingdom"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0189",
+      "description": "The fugitive Carthaginian commander arrived at the court of Artaxias I and briefly served as his advisor. According to Strabo and Plutarch, Hannibal helped select the site and plan the new capital, Artashat, earning the city the nickname \"Armenian Carthage.\"",
+      "description_ru": "Беглый карфагенский полководец прибыл ко двору Арташеса I и непродолжительное время служил его советником. По Страбону и Плутарху, Ганнибал помогал выбирать место и планировать новую столицу Арташат — за что город получил прозвище 'Армянский Карфаген'. ",
+      "era": "BC",
+      "latitude": 40.12806449,
+      "longitude": 43.6634016,
+      "name": "Hannibal takes refuge in Armenia",
+      "name_ru": "Ганнибал укрывается в Армении",
+      "tags": [
+        "Armenian",
+        "Hannibal 👤"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0176",
+      "description": "Artaxias I built a new capital, Artaxata, on a peninsula of nine hills at the confluence of the Metsamor and Araks rivers. According to legend, the site for the city was chosen by the Carthaginian commander Hannibal. The city follows a Hellenistic urban plan: straight streets, temples to Anahit and Tyre alongside Greek deities, and stone fortifications.",
+      "description_ru": "Арташес I строит новую укрепленную столицу Арташат на полуострове из девяти холмов при слиянии Мецамора и Аракса. По легенде, место для города выбрал карфагенский полководец Ганнибал. Город следует эллинистической градостроительной планировке: прямые улицы, храмы Анаит и Тира наряду с греческими божествами, каменные укрепления.",
+      "era": "BC",
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
+      "name": "Artaxata - new capital of Armenia",
+      "name_ru": "Арташат - новая столица Армении",
+      "source": "https://en.wikipedia.org/wiki/Artaxata",
+      "tags": [
+        "Armenian",
+        "City",
+        "Legend",
+        "Capital",
+        "Fortification"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0170",
+      "description": "After the death of his former comrade, Zarekh (King Tsopk), Artashes decided the time was perfect to unite the Armenian-speaking lands. He proposed to the king of neighboring Cappadocia that he kill Zarekh's sons (pretenders to the throne) and divide the lands between Armenia and Cappadocia. However, the king of Cappadocia refused and, instead, took Tsopk's heirs under his protection.",
+      "description_ru": "После смерти своего бывшего соратника Зареха (царя Цопка) Арташес решил, что настал идеальный момент для объединения армяноязычных земель. Он предложил царю соседней Каппадокии убить сыновей Зареха (претендентов на трон) и разделить земли между Арменией и Каппадокией. Однако царь Каппадокии отказался и, напротив, взял наследников Цопка под свою защиту",
+      "era": "BC",
+      "latitude": 38.6721,
+      "longitude": 39.2205,
+      "name": "Artaxias tries to subjugate Tsopk",
+      "name_ru": "Арташес пытается подчинить Цопк",
+      "source": "https://simple.wikipedia.org/wiki/Sophene",
+      "tags": [
+        "Armenian",
+        "Political"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0100",
+      "description": "The temple of Anahit, the Armenian goddess of water, fertility, and healing, in Artaxata became the richest religious center in Armenia. Her golden statue in Artaxata attracts pilgrims from all over the kingdom. Along with Anahit, the pantheon includes Aramazd (the heavenly father), Vahagn (the god of war and thunder, the 'dragon-slayer'), Astghik (the goddess of love), Tir (the god of writing and oracles) and Nane (the goddess of wisdom). The Armenian pantheon echoes the Persian one, but has its own distinctive features and Hellenistic influences.",
+      "description_ru": "Храм Анаит, армянской богини воды, плодородия и исцеления, в Арташате становится богатейшим религиозным центром Армении. Её золотая статуя в Арташате привлекает паломников со всего царства. Наряду с Анаит пантеон включает Арамазда (небесный отец), Ваагна (бог войны и грома, 'драконоборец'), Астхик (богиня любви), Тир (бог письма и оракулов) и Нанэ (богиня мудрости). Пантеон Армении перекликается с персидским, но имеет свои особенности и эллинистическое влияние.",
+      "era": "BC",
+      "latitude": 39.8784,
+      "longitude": 44.5763,
+      "name": "Temple of Anahit in Artaxata ",
+      "name_ru": "Храм Анаит в Арташате ",
+      "source": "https://en.wikipedia.org/wiki/Anahit",
+      "tags": [
+        "Persian",
+        "Armenian",
+        "Culture",
+        "Mother of God",
+        "Religious",
+        "Syncretism",
+        "Temple"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0095",
+      "description": "Tigranes II (the Great) escapes Parthian captivity and ascends the Armenian throne at the age of approximately 45. To escape captivity and attain the status of king, he must pay a high price: cede 70 fertile valleys in southeastern Armenia to Parthia.",
+      "description_ru": "Тигран II (Великий) покидает парфянский плен и восходит на армянский трон в возрасте ~45 лет. Чтобы покинуть плен и получить статус царя, ему приходится заплатить высокую цену - передать Парфии 70 плодородных долин в юго-восточной Армении",
+      "era": "BC",
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
+      "name": "Tigranes the Great Enthroned",
+      "name_ru": "Восшествие Тиграна Великого",
+      "source": "https://en.wikipedia.org/wiki/Tigranes_the_Great",
+      "tags": [
+        "Armenian",
+        "Dynasty",
+        "King",
+        "Artaxiad",
+        "Rise",
+        "Tigranes the Great 👤"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0094",
+      "description": "Tigranes invades Tsopk, deposes the local king, Artanes, almost without resistance, and annexes the kingdom's lands to Greater Armenia. Now the entire Armenian Highland is united under a single scepter.",
+      "description_ru": "Тигран вторгается в Цопк, почти без сопротивления низлагает местного царя Артанеса и присоединяет земли царства к Великой Армении. Теперь всё Армянское нагорье объединено под одним скипетром.",
+      "era": "BC",
+      "latitude": 38.68282977,
+      "longitude": 39.27268982,
+      "name": "Armenia annexes Tsopk",
+      "name_ru": "Армения подчиняет Цопк",
+      "tags": [
+        "Armenian",
+        "War",
+        "Annexation",
+        "Artaxiad",
+        "Conquest",
+        "Tigranes the Great 👤"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0093",
+      "description": "Tigran builds a fortress on a rock in Artsakh for military and commercial control over the Caspian region. Tigranakert in Artsakh was built to last: its walls were carved directly into the rock, and the blocks were fastened together with dovetail joints without mortar — as well as advanced architecture in ancient and Persian centers.",
+      "description_ru": "Тигран основывает крепость на скале в Арцахе для военного и торгового контроля над прикаспийским регионом. Тигранакерт в Арцахе строился на века: его стены были высечены прямо в скале, а блоки скреплялись «ласточкиным хвостом» без раствора — как делали в античных и персидских центрах",
+      "era": "BC",
+      "latitude": 40.07005451,
+      "longitude": 46.90440595,
+      "name": "The founding of Tigranakert in Artsakh",
+      "name_ru": "Основание Тигранакерта в Арцахе",
+      "tags": [
+        "Armenian",
+        "City",
+        "Architecture",
+        "Engineering ⚙️",
+        "Fortification"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0093",
+      "description": "Armenia, being a satrapy of Persia, adopted the Persian heavy cavalry traditions. After gaining independence, Armenia began to create its own elite heavy cavalry units, known as the Ayrudzi—local cataphracts. Armed with 4-meter spears and completely clad in iron, the cataphractarii became Tigranes' armored fist, which only the Romans could cope with.",
+      "description_ru": "Армения, будучи сатрапией Персии, переняла традиции тяжелой кавалерии от персов. Получив независимость, Армения стала создавать собственные элитные подразделения тяжелой конницы, известные как Айрудзи - местные катафрактарии. Вооруженные 4-метровыми копьями и полностью закованные в железо, катафрактарии стали бронированным кулаком Тиграна, справиться с которым смогли только римляне.",
+      "era": "BC",
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
+      "name": "Armenian heavy cavalry",
+      "name_ru": "Армянская тяжелая конница",
+      "source": "https://en.wikipedia.org/wiki/Military_history_of_Armenia",
+      "tags": [
+        "Armenian",
+        "War",
+        "Cavalry",
+        "Science",
+        "Tactics",
+        "Weapon"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.0090",
+      "description": "Tigranes took advantage of the internal instability in Iberia, overthrew the pro-Parthian government, and installed his relative as governor in Caucasian Iberia. Otherwise, Tigranes left Iberia sufficient autonomy to make them his long-term allies.",
+      "description_ru": "Тигран воспользовался внутренней нестабильностью в Иберии, снес пропарфянскую власть и посадил в Кавказской Иберии наместником своего родича. В остальном Тигран оставил Иберии достаточную автономию, чтобы сделать их своими долгосрочными союзниками.",
+      "era": "BC",
+      "latitude": 41.82685121,
+      "longitude": 44.68178272,
+      "name": "Armenia subjugates Iberia",
+      "name_ru": "Армения подчиняет Иберию",
+      "source": "https://en.wikipedia.org/wiki/Tigranes_the_Great",
+      "tags": [
+        "Armenian",
+        "War",
+        "Artaxiad",
+        "Caucasian",
+        "Tigranes the Great 👤",
+        "Vassalage"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0089",
+      "description": "After the campaign in Cappadocia, Tigranes sent troops to the Kura River valley, preparing a bridgehead for the fight against Parthia. He did not abolish local authority or turn Albania into an Armenian province, but established a protectorate, leaving power to local leaders but demanding tribute, a militia, and the possibility of establishing Armenian fortresses.",
+      "description_ru": "После кампании в Каппадокии Тигран направил войска в долину реки Кура, готовя плацдарм для борьбы с Парфией. Он не стал упразднять местную власть или превращать Албанию в провинцию Армении, а установил протекторат, оставив власть местным вождям, но потребовав от них дань, ополчение и возможность размещения армянских крепостей.",
+      "era": "BC",
+      "latitude": 40.89019145,
+      "longitude": 47.70864487,
+      "name": "Armenia subjugates Caucasian Albania",
+      "name_ru": "Армения подчиняет Кавказскую Албанию",
+      "source": "https://en.wikipedia.org/wiki/Tigranes_the_Great",
+      "tags": [
+        "Armenian",
+        "War",
+        "Caucasian",
+        "Tigranes the Great 👤",
+        "Vassalage"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0088",
+      "description": "Taking advantage of Parthia's weakness after the death of Mithridates II and the strength of his alliance with the Pontians, Tigranes goes on the offensive and takes back 70 valleys that had been handed over to Parthia in exchange for his liberation.",
+      "description_ru": "Пользуясь слабостью Парфии после смерти Митридата II и силой своего союза с понтийцами, Тигран переходит в наступление и забирает обратно 70 долин, переданные Парфии в обмен на свое освобождение",
+      "era": "BC",
+      "latitude": 38.64476311,
+      "longitude": 44.28588867,
+      "name": "Armenia returns 70 valleys",
+      "name_ru": "Армения возвращает 70 долин",
+      "source": "https://en.wikipedia.org/wiki/Tigranes_the_Great",
+      "tags": [
+        "Armenian",
+        "Parthian",
+        "War",
+        "Artaxiad",
+        "Tigranes the Great 👤"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0087",
+      "description": "Tigranes the Great advances further into Parthia, subjugating Parthian vassals and preparing the ground for a further offensive. To secure his flanks, he takes control of Corduene, Adiabene, and Media Atropatene. Ganzak, the capital of Atropatene and a sacred city where the Zoroastrian fire of warriors burns, also comes under Tigranes' control.",
+      "description_ru": "Тигран Великий продвигается дальше в Парфию, подчиняя вассалов Парфии и готовя почву для дальнейшего наступления. Чтобы обезопасить фланги, он берет под контроль Кордуэну, Адиабену и Мидию Атропатену. Под контроль Тиграна переходит и Ганзак, столица Атропатены и священный город, где горит зороастрийский огонь воинов",
+      "era": "BC",
+      "latitude": 36.60519306,
+      "longitude": 47.23468781,
+      "name": "Armenia subjugates Media Atropatene",
+      "name_ru": "Армения подчиняет Мидию Атропатену",
+      "source": "https://en.wikipedia.org/wiki/Tigranes_the_Great",
+      "tags": [
+        "Armenian",
+        "Parthian",
+        "War",
+        "Artaxiad",
+        "Tigranes the Great 👤",
+        "Vassalage"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0085",
+      "description": "Before Tigranes, it was worn only by rulers of vast empires—the Achaemenids, and then the Parthians. The Armenians burned the residence of the Parthian kings in Adrapan and threatened to devastate neighboring Ecbatana. The Parthian king Gotarzes I, caught between internal enemies and the Armenians, agreed to a humiliating peace—recognizing Tigranes' title of \"King of Kings\" and recognizing all of Northern Mesopotamia as part of Armenia's sphere of influence.",
+      "description_ru": "До Тиграна его носили только правители огромных империй — Ахемениды, а затем Парфяне. Армяне сжигают резиденцию парфянских царей в Адрапане и угрожают разорением соседней Экбатане. Парфянский царь Готарз I, зажатый между внутренними врагами и армянами, идет на унизительный мир - признает титул \"Царя Царей\" Тиграна и признает всю Северную Месопотамию зоной влияния Армении",
+      "era": "BC",
+      "latitude": 34.78303829,
+      "longitude": 48.12157631,
+      "name": "Tigran the Great - King of Kings",
+      "name_ru": "Тигран Великий - Царь Царей",
+      "source": "https://en.wikipedia.org/wiki/Tigranes_the_Great",
+      "tags": [
+        "Armenian",
+        "Parthian",
+        "War",
+        "Artaxiad",
+        "Conquest",
+        "Peace",
+        "Tigranes the Great 👤"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0083",
+      "description": "Control of Seleucia meant control of the lower reaches of the Tigris and Euphrates. Furthermore, for Tigranes, who was building an empire on the Hellenistic model, it was crucial that the great Greek city recognize him as its sovereign. Seleucia, as a Greek polis, retained extensive autonomy, but recognized Tigranes as its supreme ruler and began paying him tribute.",
+      "description_ru": "Контроль над Селевкией означал контроль над низовьями Тигра и Евфрата. Помимо этого для Тиграна, который строил империю по эллинистическому образцу, было критически важно, чтобы великий греческий город признал его своим сувереном. Селевкия, будучи греческим полисом, сохранила широкую автономию, но признала Тиграна своим верховным правителем и начала платить ему дань",
+      "era": "BC",
+      "latitude": 33.1,
+      "longitude": 44.5333,
+      "name": "Tigranes subjugates Seleucia-on-Tigris",
+      "name_ru": "Тигран подчиняет Селевкию-на-Тигре",
+      "tags": [
+        "Greek",
+        "Armenian",
+        "Seleucid",
+        "Tigranes the Great 👤",
+        "Vassalage"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0080",
+      "description": "Tigran II builds Tigranakert as a new capital on the northern edge of Mesopotamia. He forcibly relocates 100,000 people from 12 conquered Greek cities in Cappadocia, Cilicia, and Syria to populate it. The city features a blend of Hellenistic and Iranian architecture: rectangular street grid, theater, markets, temples, and a triangular hilltop fortress with massive walls. Tigranes also builds three other cities named Tigranakert in Nakhichevan, Artsakh, and Utik, creating a network of royal administrative centers across his empire",
+      "description_ru": "Тигран II строит Тигранакерт как новую столицу на северной границе Месопотамии. Он принудительно переселяет 100 тысяч человек из 12 подчиненных греческих городов в Каппадокии, Киликии и Сирии. Город сочетает эллинистическую и иранскую архитектуру: прямоугольная уличная сетка, театр, рынки, храмы и треугольная крепость на холме с мощными стенами. Тигран также строит три других города с именем Тигранакерт в Нахичевани, Арцахе и Утике, создавая сеть царских административных центров",
+      "era": "BC",
+      "latitude": 37.9781854,
+      "longitude": 41.3837117,
+      "name": "Tigranocerta - new armenian capital",
+      "name_ru": "Тигранакерт - новая столица Армении",
+      "source": "https://en.wikipedia.org/wiki/Tigranocerta",
+      "tags": [
+        "Armenian",
+        "Building 🏠",
+        "Architecture",
+        "Capital"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0078",
+      "description": "After Sulla's death, Tigranes decides that his hands are free. He again marched on Cappadocia with a massive army. This time, his goal was not only territory but also people—he resettled some 300,000 Greeks and Cappadocians in his newly constructed capital.",
+      "description_ru": "После смерти Суллы Тигран решает, что у него развязаны руки. Он снова идет в Каппадокию с огромной армией. В этот раз его целью была не только территория, но и люди - около 300 тысяч греков и каппадокийцев он переселяет в свою новую строящуюся столицу.",
+      "era": "BC",
+      "latitude": 38.72117754,
+      "longitude": 35.4893589,
+      "name": "Armenia invades Cappadocia",
+      "name_ru": "Армения вторгается в Каппадокию",
+      "tags": [
+        "Roman",
+        "Armenian",
+        "Conquest",
+        "Tigranes the Great 👤"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0070",
+      "description": "For several years, Greater Armenia besieged Ptolemais, where the last Seleucid ruler, Cleopatra Selene I, held the line, refusing to recognize Tigranes's right to rule. Ultimately, Tigranes captured the city, executed Cleopatra (he considered her too dangerous), and gained a powerful outpost in the south of the empire, as well as control over trade routes from the Red Sea to the Mediterranean.",
+      "description_ru": "В течение нескольких лет Великая Армения осаждает Птолемаиду, где держит оборону последняя правительница из рода Селевкидов, Клеопатра Селена I, не признавшая право Тиграна на правление. По итогу Тигран берет город, казнит Клеопатру (он считал ее слишком опасной) и получает мощный форпост на юге империи, а также контроль над торговыми путями из Красного моря в Средиземное.",
+      "era": "BC",
+      "latitude": 32.92354335,
+      "longitude": 35.06964684,
+      "name": "Tigranes besieges Ptolemais",
+      "name_ru": "Тигран осаждает Птолемаиду",
+      "source": "https://en.wikipedia.org/wiki/Tigranes_the_Great",
+      "tags": [
+        "Greek",
+        "Armenian",
+        "Seleucid",
+        "War",
+        "Siege",
+        "Tigranes the Great 👤"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0069",
+      "description": "After his defeat by Lucullus, the Pontic king Mithridates VI Eupator sought refuge with his son-in-law, Tigranes. In Antioch, Tigranes met a Roman ambassador who demanded Mithridates' extradition—and was refused. The Romans interpreted this as a declaration of war. Tigranes hastily gathered troops and marched north, as Lucullus advanced on his new capital.",
+      "description_ru": "После поражения от Лукулла понтийский царь Митридат VI Евпатор ищет убежища у своего зятя Тиграна. В Антиохии Тигран встречает римского посла, который требует выдачи Митридата - и отказывает ему. Римляне расценивают это как объявление войны. Тигран спешно собирает войска и выдвигается на север, поскольку Лукулл идет на его новую столицу.",
+      "era": "BC",
+      "latitude": 36.2034,
+      "longitude": 36.1639,
+      "name": "Rome's Ultimatum to Armenia",
+      "name_ru": "Ультиматум Рима Армении",
+      "tags": [
+        "Roman",
+        "Armenian",
+        "Mithridatic",
+        "War",
+        "Diplomacy",
+        "Tigranes the Great 👤"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.10.0066",
+      "description": "Tigranes II surrenders to Pompey at Artashat, kneeling before the Roman general and placing his tiara at Pompey's feet. Pompey restores the tiara, declaring Tigranes 'King of Armenia' but stripping him of all conquered territories outside historic Armenia. Tigranes becomes a Roman client king, paying 6,000 talents in tribute. He rules peacefully until his death. Despite losing his empire, he preserves Armenian statehood",
+      "description_ru": "75-летний Тигран II сдаётся Помпею в Арташате, преклоняя колени и кладя тиару к ногам римского полководца. Помпей возвращает тиару, объявляя Тиграна 'Царём Армении', но лишая его всех завоёванных территорий за пределами исторической Армении. Тигран становится римским данником. Он правит мирно еще 10 лет до своей смерти. Несмотря на потерю империи, он сохраняет армянскую государственность",
+      "era": "BC",
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
+      "name": "Tigranes Submits to Rome",
+      "name_ru": "Тигран подчиняется Риму",
+      "source": "https://en.wikipedia.org/wiki/Tigranes_the_Great",
+      "tags": [
+        "Roman",
+        "Armenian",
+        "Mithridatic",
+        "War",
+        "Diplomacy",
+        "King",
+        "Peace",
+        "Pompey the Great 👤",
+        "Tigranes the Great 👤"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0055",
+      "description": "King Artavasdes II inherits the throne and becomes the most culturally accomplished Armenian monarch. Educated in Greek rhetoric and philosophy, he writes tragedies, orations, and historical works in Greek — the first known Armenian author. He builds Armenia's second permanent theater at Artashat and stages Euripides and Menander with a resident Greek acting troupe. Plutarch calls him 'accomplished in Greek literature.'",
+      "description_ru": "Царь Артавазд II наследует трон и становится самым культурно одарённым армянским монархом. Образованный в греческой риторике и философии, он пишет трагедии, ораторские речи и исторические сочинения по-гречески — первый известный армянский автор. Он строит второй постоянный театр Армении в Арташате и ставит Еврипида и Менандра с резидентной греческой труппой.",
+      "era": "BC",
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
+      "name": "Artavasdes II: Armenian Playwright King",
+      "name_ru": "Артавазд II: армянский царь-драматург",
+      "source": "https://en.wikipedia.org/wiki/Artavasdes_II_of_Armenia",
+      "tags": [
+        "Armenian",
+        "Dynasty",
+        "King",
         "Art",
-        "Writing",
+        "Artaxiad",
+        "Culture",
+        "Theater"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0050",
+      "description": "The Vahagn birth hymn — preserved by historian Movses Khorenatsi — represents the oldest known Armenian literary text. It describes the birth of the dragon-slaying god of war and thunder: 'The heavens and earth were in travail, and the crimson sea was in travail... From the sea rose a red reed, from the reed's stem came smoke, from the smoke ran a youth of flame, with fiery hair and flaming beard, and his eyes were suns.' Vahagn corresponds to Iranian Verethraghna and is cognate with Vedic Vrtrahan",
+      "description_ru": "Гимн рождения Ваагна — сохранённый историком Мовсесом Хоренаци — представляет древнейший известный армянский литературный текст. Он описывает рождение драконоборца-бога войны и грома: 'Небо и земля были в муках, и алое море было в муках... Из моря поднялся красный тростник, из стебля тростника пошёл дым, из дыма выбежал юноша-пламя, с огненными волосами и горящей бородой, и его глаза были солнцами.'. Текст перекликается с древнеиранскими и индийскими текстами.",
+      "era": "BC",
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
+      "name": "Vahagn Birth Hymn",
+      "name_ru": "Гимн рождения Ваагна",
+      "source": "https://en.wikipedia.org/wiki/Vahagn",
+      "tags": [
+        "Armenian",
+        "Legend",
         "Culture",
         "Literature"
       ],
       "type": "cultural"
     },
     {
-      "date": "01.01.0450",
-      "description": "Armenian stone carving tradition, rooted in pre-Christian vishap (dragon stones) and boundary stelae, evolves after Christianization into carved stone crosses and funerary monuments. The earliest cross-bearing stelae appear in the 4th-5th centuries AD — precursors to the later khachkar art form that will reach full maturity in the 9th-13th centuries. Artisans work the highland's abundant basalt and tuff into religious carvings. Over the following centuries, this tradition develops into the khachkar (cross-stone) — a distinctively Armenian art form featuring a cross over a rosette on an upright stone slab. Over 50,000 survive. UNESCO inscribed Armenian khachkar craftsmanship on the Intangible Cultural Heritage list in 2010",
-      "description_ru": "Армянская традиция каменной резьбы, уходящая корнями в дохристианские вишапы (камни-драконы) и пограничные стелы, эволюционирует после христианизации в резные каменные кресты и погребальные памятники. Древнейшие стелы с крестами появляются в IV-V веках — предшественники позднейших хачкаров, которые достигнут зрелости в IX-XIII веках. Мастера работают с базальтом и туфом нагорья. Каждый хачкар уникален. Более 50 000 сохранились. ЮНЕСКО внесла мастерство хачкаров в список нематериального культурного наследия в 2010 году",
-      "era": "AD",
-      "latitude": 40.1792,
-      "longitude": 44.4991,
-      "name": "Early Stone Cross Carving",
-      "name_ru": "Ранняя каменная крестовая резьба",
-      "source": "https://en.wikipedia.org/wiki/Khachkar",
+      "date": "01.01.0036",
+      "description": "King Antiochus I Theos of Commagene, a descendant of the Armenian Yervanduni through the Sophene branch, erected a colossal hierothesion (sacred tomb-sanctuary) on Mount Nimrut at an altitude of 2134 m. The giant stone heads (2-3 m) depict Greek gods syncretized with Armenian and Persian ones: Zeus-Oromazd, Apollo-Mithras, Heracles-Vahagn.",
+      "description_ru": "Царь Антиох I Теос Коммагенский — потомок армянских Ервандуни через ветвь Софены — возводит колоссальный хиеротесион (священную гробницу-святилище) на горе Нимрут на высоте 2134 м. Гигантские каменные головы (2-3 м) изображают греческих богов, синкретизированных с армянскими и персидскими: Зевс-Оромазд, Аполлон-Митра, Геракл-Ваагн.",
+      "era": "BC",
+      "latitude": 37.9811,
+      "longitude": 38.7413,
+      "name": "Mount Nemrut Sanctuary",
+      "name_ru": "Хиеротесион в Коммагене",
+      "source": "https://en.wikipedia.org/wiki/Mount_Nemrut",
       "tags": [
+        "Greek",
+        "Persian",
         "Armenian",
-        "Art",
-        "Sculpture",
-        "Culture",
-        "Religious"
+        "Building 🏠",
+        "Anatolia",
+        "Architecture",
+        "Religious",
+        "Syncretism",
+        "Temple",
+        "Tomb"
       ],
       "type": "cultural"
     },
     {
-      "date": "01.01.0050",
-      "description": "The apostles Thaddeus and Bartholomew preach Christianity in Armenia according to church tradition, making the Armenian Church 'apostolic' in origin. Thaddeus reportedly arrives around 43 AD and is martyred in Artaz (Maku region). Bartholomew preaches in southern Armenia and is also martyred. The Monastery of Saint Thaddeus (Qara Kelisa) in northwestern Iran, built over Thaddeus' alleged tomb, becomes one of the oldest churches in the world. While the apostolic mission's historicity is debated, it establishes the theological claim that Armenian Christianity predates any state conversion",
-      "description_ru": "Апостолы Фаддей и Варфоломей проповедуют христианство в Армении согласно церковной традиции, делая Армянскую Церковь 'апостольской' по происхождению. Фаддей прибывает около 43 г. н. э. и принимает мученичество в Артазе. Варфоломей проповедует в южной Армении и также мученически гибнет. Монастырь Святого Фаддея (Кара Келиса) в северо-западном Иране становится одной из старейших церквей мира. Хотя историчность апостольской миссии обсуждается, она устанавливает теологическое утверждение о том, что армянское христианство предшествует любому государственному обращению",
+      "date": "18.09.0034",
+      "description": "Mark Antony invades Armenia, deceives Artavasdes II into captivity (Artavasdes thinks that Rome is his ally) and sends him in silver chains to Alexandria. Antony transfers significant portions of Armenian territory to the children of Cleopatra VII in the 'Donations of Alexandria.' The captive Artavasdes refuses to bow to Cleopatra, which provokes her anger. Artavazd's son flees to Parthia",
+      "description_ru": "Марк Антоний вторгается в Армению, обманом захватывает Артавазда II в плен (Артавазд думает, что Рим его союзник) и отправляет его в серебряных цепях в Александрию. Антоний передаёт значительные части армянской территории детям Клеопатры VII в 'Александрийских дарениях.' Плененный Артавазд отказывается поклониться Клеопатре, чем вызывает ее гнев. Сын Артавазда бежит в Парфию",
+      "era": "BC",
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
+      "name": "Mark Antony Captures Armenian King",
+      "name_ru": "Марк Антоний пленит армянского царя",
+      "source": "https://en.wikipedia.org/wiki/Artavasdes_II_of_Armenia",
+      "tags": [
+        "Roman",
+        "Armenian",
+        "King",
+        "Betrayal",
+        "Conquest",
+        "Mark Antony 👤"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.10.0030",
+      "description": "Taking advantage of the chaos in Rome following the suicides of Antony and Cleopatra, Artaxias II, heavily supported by Parthian cavalry, entered Armenia. As soon as he took the throne, he ordered the extermination of all Roman garrisons and the massacre of Roman merchants and settlers in the country—in retaliation for his father's death.",
+      "description_ru": "Воспользовавшись хаосом в Риме после самоубийства Антония и Клеопатры, Арташес II с мощной поддержкой парфянской конницы вошел в Армению. Как только он занял трон, он приказал истребить все римские гарнизоны и перебить римских торговцев и поселенцев в стране - в отместку за отца",
+      "era": "BC",
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
+      "name": "The return of Artaxias II to Armenia",
+      "name_ru": "Возвращение Арташеса II в Армению",
+      "source": "https://en.wikipedia.org/wiki/Artaxias_II",
+      "tags": [
+        "Roman",
+        "Armenian",
+        "Parthian",
+        "War",
+        "Artaxiad",
+        "Massacre",
+        "Revenge"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0020",
+      "description": "Augustus bribes the Armenian princes who are dissatisfied with the harsh rule of Artaxias II and sends his stepson Tiberius to Armenia to put the Roman candidate, Artaxias' younger brother, Tigran III, on the throne. Artaxias is killed, the Roman protege is crowned. Armenia survives for centuries, seeking compromise as a buffer between two powerful empires (Rome and Parthia).",
+      "description_ru": "Август подкупает недовольных жестким правлением Арташеса армянских князей и отправляет своей пасынка Тиберия в Армению для возведения на трон римского кандидата, младшего брата Арташеса, Тиграна III. Арташес убит, римский ставленник коронован. Армения веками существует и ищет компромиссы как буфер между двумя мощными империями (Римом и Парфией)",
+      "era": "BC",
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
+      "name": "Armenia: Roman Buffer State",
+      "name_ru": "Проримский переворот в Армении",
+      "source": "https://en.wikipedia.org/wiki/Kingdom_of_Armenia_(antiquity)",
+      "tags": [
+        "Roman",
+        "Armenian",
+        "Parthian",
+        "Diplomacy",
+        "Artaxiad",
+        "Overthrow",
+        "Political"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0008",
+      "description": "The Armenian nobility (nakharars) began to feel burdened by the Roman protectorate. After the death of Tigranes III, his son Tigranes IV ascended the throne along with his sister-wife, Erato. They abandoned their pro-Roman course, held a coronation without the participation of the Roman emperor, and drew closer to Parthia, thereby incurring the wrath of Augustus.",
+      "description_ru": "Армянская знать (нахарары) стала тяготиться римским протекторатом. После смерти Тиграна III трон занял его сын Тигран IV вместе со своей сестрой-женой Эрато. Они отказались от проримского курса, провели коронацию без участия императора Рима и сблизились с Парфией, чем вызвали гнев Августа.",
+      "era": "BC",
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
+      "name": "Tigranes IV, King of Armenia",
+      "name_ru": "Тигран IV - царь Армении",
+      "source": "https://en.wikipedia.org/wiki/Tigranes_IV",
+      "tags": [
+        "Roman",
+        "Armenian",
+        "Parthian",
+        "Dynasty",
+        "King",
+        "Artaxiad",
+        "Crisis",
+        "Political"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0006",
+      "description": "Emperor Augustus sends legions to overthrow the \"pretenders\" and install his own candidate, Artavasdes III (another son of Artavasdes II). Tigranes IV is forced to flee to the Parthians. Artavasdes III is unpopular with the people, and Tigranes wages a guerrilla war for several years with the support of locals and Parthians.",
+      "description_ru": "Император Август посылает легионы, чтобы свергнуть «самозванцев» и поставить своего кандидата — Артавазда III (еще одного сына Артавазда II). Тигран IV вынужден бежать к парфянам. Артавазд III непопулярен в народе, и Тигран несколько лет при поддержке местных и парфян ведет партизанскую войну.\n",
+      "era": "BC",
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
+      "name": "Rome overthrows the king of Armenia",
+      "name_ru": "Рим свергает царя Армении",
+      "source": "https://en.wikipedia.org/wiki/Tigranes_IV",
+      "tags": [
+        "Roman",
+        "Armenian",
+        "Parthian",
+        "War",
+        "Guerilla",
+        "Overthrow"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0002",
+      "description": "A popular uprising breaks out. The pro-Roman Artavasdes III is overthrown and killed. Tigranes IV and Erato return to the throne.",
+      "description_ru": "Вспыхивает общенародное восстание. Проримский Артавазд III свергнут и убит. Тигран IV и Эрато возвращаются на трон.",
+      "era": "BC",
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
+      "name": "Roman governor killed in Armenia",
+      "name_ru": "Римский наместник убит в Армении",
+      "tags": [
+        "Roman",
+        "Armenian",
+        "Parthian",
+        "War",
+        "Guerilla",
+        "Overthrow"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0001",
+      "description": "Tigranes IV dies in battle (either with the Alans in the north or with pro-Roman forces). Emperor Augustus sends his grandson and heir, Gaius Caesar, to Armenia to transfer the Armenian crown to Ariobarzanes II, King of Media Atropatene. The Armenian people and elites strongly protest against the Median and Zoroastrian king",
+      "description_ru": "Тигран IV погибает в бою (с аланами на севере, либо с проримскими силами). Император Август отправляет в Армению своего внука и наследника Гая Цезаря, чтобы он провел передачу короны Армении Ариобарзану II, царю Мидии Атропатены. Армянские народ и элиты резко протестуют против мидийского и зороастрийского царя",
+      "era": "AD",
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
+      "name": "Rome appoints a governor in Armenia",
+      "name_ru": "Рим ставит наместника в Армении",
+      "source": "https://en.wikipedia.org/wiki/Ariobarzanes_II_of_Atropatene",
+      "tags": [
+        "Roman",
+        "Armenian",
+        "King",
+        "Rebellion"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0004",
+      "description": "Since the Armenians refused to accept the rule of the Roman governor of Media, Ariobarzanes, the heir to the Roman throne, Gaius Caesar, began to suppress the rebellion by force. His legions besieged several cities, including Artagira, where the defense was commanded by General Addon. The siege dragged on, and Addon summoned Gaius Caesar, supposedly for negotiations. In reality, during a personal meeting, Addon drew a dagger and seriously wounded Gaius Caesar. The city was captured, but Gaius Caesar died a few months later.",
+      "description_ru": "Поскольку армяне не приняли правление римского наместника из Мидии, Ариобарзана, наследник римского трона Гай Цезарь стал подавлять восстание силой. Его легионы осадили несколько городов, в том числе Артагиру, где обороной командовал полководец Аддон. Осада затянулась, и Аддон вызвал Гая Цезаря якобы на переговоры. На деле во время личной встречи Аддон выхватил кинжал и нанес Гаю Цезарю тяжелое ранение. Город был взят, но Гай Цезарь скончался через несколько месяцев.\n",
+      "era": "AD",
+      "latitude": 40.08704071,
+      "longitude": 44.26893711,
+      "name": "Roman heir killed in Armenia",
+      "name_ru": "Римский наследник убит в Армении",
+      "source": "https://en.wikipedia.org/wiki/Gaius_Caesar",
+      "tags": [
+        "Roman",
+        "Armenian",
+        "Civil War",
+        "Murder"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0043",
+      "description": "The Apostles Thaddeus and Bartholomew preach Christianity in Armenia according to church tradition, making the Armenian Church \"apostolic\" in origin. Thaddeus converts King Sanatruk's daughter and is martyred in Artaz. Bartholomew preaches in southern Armenia and is also martyred. Although the historicity of this apostolic mission is debated, it establishes the theological claim that Armenian Christianity predates any state-sponsored conversion.",
+      "description_ru": "Апостолы Фаддей и Варфоломей проповедуют христианство в Армении согласно церковной традиции, делая Армянскую Церковь 'апостольской' по происхождению. Фаддей обращает дочь царя Санатрука и принимает мученичество в Артазе. Варфоломей проповедует в южной Армении и также мученически гибнет. Хотя историчность апостольской миссии обсуждается, она устанавливает теологическое утверждение о том, что армянское христианство предшествует любому государственному обращению",
       "era": "AD",
       "latitude": 39.09,
       "longitude": 44.54,
-      "name": "Apostles in Armenia",
-      "name_ru": "Апостолы в Армении",
+      "name": "Christian Apostles in Armenia",
+      "name_ru": "Христианские апостолы в Армении",
       "source": "https://en.wikipedia.org/wiki/Armenian_Apostolic_Church",
       "tags": [
         "Armenian",
+        "Legend",
         "Christian",
-        "Apostle Thomas 👤",
-        "Religious",
-        "Legend"
+        "Religious"
       ],
       "type": "religious"
     },
     {
-      "date": "01.01.0370",
-      "description": "King Pap of Armenia poisons Catholicos Nerses I the Great and pursues an aggressively independent policy, confiscating church lands and challenging both Roman and Persian influence. His reign represents the last significant assertion of Arsacid royal power before the dynasty's decline. Pap forges temporary alliances with Rome, defeating a Sassanid invasion at the Battle of Dzirav (371 AD) with Roman support. But his independence alarms Rome: Emperor Valens invites him to a banquet where Roman officers assassinate him. Pap's murder signals that neither empire will tolerate a genuinely independent Armenian king",
-      "description_ru": "Царь Пап Армянский отравляет католикоса Нерсеса I Великого и проводит агрессивно независимую политику, конфискуя церковные земли и бросая вызов римскому и персидскому влиянию. Его правление — последнее значительное утверждение аршакидской царской власти. Пап заключает временные союзы с Римом, разбивая сасанидское вторжение при Дзираве (371 г.). Но его независимость тревожит Рим: император Валент приглашает его на пир, где римские офицеры убивают его. Убийство Папа сигнализирует, что ни одна империя не потерпит подлинно независимого армянского царя",
+      "date": "01.01.0077",
+      "description": "The Garni fortress complex includes not only the famous temple but also a Roman-style bathhouse with a remarkable mosaic floor depicting Oceanus, sea gods, Thetis, and marine creatures with the Greek inscription 'We worked and received nothing' — a signature by the artisans. The bath features a hypocaust heating system, frigidarium, tepidarium, and caldarium. Nearby, the Garni Gorge ('Symphony of Stones') displays spectacular natural basalt columns formed by volcanic activity. The fortress served as a royal summer residence throughout Armenian history",
+      "description_ru": "Крепостной комплекс Гарни включает не только знаменитый храм, но и римскую баню с замечательным мозаичным полом, изображающим Океана, морских богов, Фетиду и морских существ с греческой надписью 'Работали и ничего не получили' — подпись мастеров. Баня имеет систему отопления гипокауст. Рядом ущелье Гарни ('Симфония камней') демонстрирует впечатляющие природные базальтовые колонны вулканического происхождения. Крепость служила царской летней резиденцией на протяжении всей армянской истории",
       "era": "AD",
-      "latitude": 39.8783,
-      "longitude": 44.5756,
-      "name": "King Pap Assassinated",
-      "name_ru": "Убийство царя Папа",
-      "source": "https://en.wikipedia.org/wiki/Pap_of_Armenia",
+      "latitude": 40.11292355,
+      "longitude": 44.72933829,
+      "name": "Garni Bath Mosaic",
+      "name_ru": "Мозаика бани Гарни",
+      "source": "https://en.wikipedia.org/wiki/Garni_Temple",
+      "tags": [
+        "Roman",
+        "Armenian",
+        "Arsacid",
+        "Architecture",
+        "Art"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0077",
+      "description": "King Tiridates I completes the Garni Temple. Built in the Ionic order with 24 basalt columns rising 6.5 m on a high podium, it is dedicated to the sun god Mihr (Mithras). An inscription dates it: 'Helios! Trdat the Great, Great King of Armenia, when he built the fortress...' It is the only Greco-Roman colonnaded temple east of Anatolia and the only pagan temple in Armenia to survive Christianization — converted into a royal summer residence for Princess Khosrovidukht.",
+      "description_ru": "Царь Тиридат I завершает храм Гарни. Построенный в ионическом ордере с 24 базальтовыми колоннами высотой 6,5 м на высоком подиуме, он посвящён солнечному богу Михру (Митре). Надпись гласит: 'Гелиос! Трдат Великий, великий царь Армении, когда он построил крепость...' Это единственный греко-римский колонный храм к востоку от Анатолии и единственный языческий храм в Армении, переживший христианизацию",
+      "era": "AD",
+      "latitude": 40.11234509,
+      "longitude": 44.73022878,
+      "name": "Garni Temple Completed",
+      "name_ru": "Завершение храма Гарни",
+      "source": "https://en.wikipedia.org/wiki/Garni_Temple",
+      "tags": [
+        "Greek",
+        "Armenian",
+        "Arsacid",
+        "Building 🏠",
+        "Architecture",
+        "Religious",
+        "Temple"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "14.07.0100",
+      "description": "Vardavar — the midsummer water festival dedicated to goddess Astghik — predates Christianity but survives Christianization by being reassigned to the Feast of the Transfiguration. On this day Armenians drench each other with water in streets, squares, and homes. The festival originally celebrated love, fertility, and the summer harvest. Roses (vard) are scattered and doves released",
+      "description_ru": "Вардавар — летний праздник воды, посвящённый богине Астхик — предшествует христианству, но переживает христианизацию, будучи приурочен к Празднику Преображения. В этот день армяне обливают друг друга водой на улицах, площадях и в домах, разбрасывают розы (вард) и выпускают голубей. Праздник посвящен любви, плодородию и летнему урожаю",
+      "era": "AD",
+      "latitude": 40.1792,
+      "longitude": 44.4991,
+      "name": "Vardavar Water Festival",
+      "name_ru": "Праздник воды Вардавар в Армении",
+      "source": "https://en.wikipedia.org/wiki/Vardavar",
       "tags": [
         "Armenian",
+        "Culture",
+        "Customs",
+        "Holidays"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0110",
+      "description": "The Parthians considered the Treaty of Randeia (where they appointed and Rome approved) a humiliating compromise. Osroy wanted to return to the old days, when Armenia was actually a province of Parthia. Pursuing this goal, he replaced one of his nephews (approved by Rome) on the Armenian throne with another, without the emperor's consent. This triggered conflict between Parthia and Rome.",
+      "description_ru": "Парфяне считали Рандейский договор (где они назначают, а Рим утверждает) унизительным компромиссом. Осрой Парфянский хотел вернуться к старым временам, когда Армения была фактически провинцией Парфии. Следуя этой цели, он заменил на троне Армении одного своего племянника (согласованного Римом) на другого, без согласия императора. Это стало триггером конфликта между Парфией и Римом.",
+      "era": "AD",
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
+      "name": "Parthians replace Rome's protégé in Armenia",
+      "name_ru": "Парфяне смещают в Армении ставленника Рима",
+      "source": "https://en.wikipedia.org/wiki/Osroes_I",
+      "tags": [
         "Roman",
-        "Assassination",
+        "Armenian",
+        "Parthian",
+        "Arsacid",
+        "War",
+        "King"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.05.0114",
+      "description": "A Parthian protégé appeared in the Roman camp to bow to Emperor Trajan and lay the crown at his feet, expecting him to place it on his head. Instead of returning the crown, Trajan publicly declared: \"Armenia will not be given over to anyone to govern; it will become a Roman province, and a Roman legate will govern it.\" He declared Armenia a Roman province and installed a governor in Artaxata.",
+      "description_ru": "Ставленник Парфии является в римский лагерь на поклон к императору Траяну и кладет корону в ноги императору, ожидая, что тот возложит её на голову. Вместо того чтобы вернуть корону, Траян при всех объявил: «Армения не будет отдана никому в управление; она станет римской провинцией, и ею будет управлять римский легат». Он объявил Армению римской провинцией и посадил в Арташате губернатора. \n\n",
+      "era": "AD",
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
+      "name": "Trajan Annexes Armenia",
+      "name_ru": "Траян аннексирует Армению",
+      "source": "https://en.wikipedia.org/wiki/Trajan%27s_Parthian_campaign",
+      "tags": [
+        "Roman",
+        "Armenian",
+        "Parthian",
+        "War",
+        "Annexation",
+        "Conquest",
+        "Trajan 👑"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0117",
+      "description": "Hadrian restores Armenia's vassal status, as he understands that holding such vast and remote territories as Armenia and Mesopotamia is physically impossible without the risk of collapse of the economy and army. A representative of the Parthian family, Vologases I, loyal to Rome, is placed on the Armenian throne, and Armenia again become a buffer state between Rome and Parthia.",
+      "description_ru": "Адриан возвращает вассальный статус Армении, поскольку понимает, что удерживать такие огромные и удаленные территории, как Армения и Месопотамия, физически невозможно без риска развала экономики и армии. На армянский престол посажен лояльный Риму представитель парфянского рода — Вагарш I, Армения снова становится буферным государством между Римом и Парфией",
+      "era": "AD",
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
+      "name": "Armenia is again a tributary of Rome",
+      "name_ru": "Армения - снова данник Рима",
+      "source": "https://en.wikipedia.org/wiki/Vologases_I_of_Armenia",
+      "tags": [
+        "Roman",
+        "Armenian",
+        "Arsacid",
         "King",
+        "Hadrian 👑",
+        "Independence",
+        "Vassalage"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0163",
+      "description": "The Roman general Statius Priscus burned Artaxata during the Roman-Parthian War. The city was so devastated that it never fully recovered its former glory. Vagharshapat (Echmiadzin) increasingly assumed the role of the main Armenian city.",
+      "description_ru": "Римский полководец Статий Приск сжигает Арташат в ходе Римско-парфянской войны. Город сгорает настолько, что никогда полностью не восстанавливает прежнее величие. Вагаршапат (Эчмиадзин) всё больше принимает роль главного армянского города. ",
+      "era": "AD",
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
+      "name": "Artashat Burned by Rome again",
+      "name_ru": "Арташат снова сожжён Римом",
+      "source": "https://en.wikipedia.org/wiki/Artaxata",
+      "tags": [
+        "Roman",
+        "Armenian",
+        "Parthian",
+        "War",
+        "Destruction"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0300",
+      "description": "The Nakharar system — Armenia's distinctive feudal aristocratic structure derived from Parthian traditions — reaches mature form. The country is divided among hereditary noble houses (nakharars), each with inalienable landed estates and private armies. The Gahnamak (throne register) ranks families by court honor; the Zoranamak (military register) ranks them by cavalry strength. Key houses include the Mamikonian (hereditary sparapet/supreme commander, 3,000 cavalry), Bagratuni (hereditary aspet/coronation officer), Artsruni, and Siunia. This system will preserve Armenian identity through centuries of foreign rule",
+      "description_ru": "Армянская феодальная аристократическая структура, унаследованная от парфян, достигает зрелой формы. Страна разделена между наследственными знатными домами (нахарарами), каждый с неотчуждаемыми земельными владениями и частными армиями. Гахнамак (реестр трона) ранжирует семьи по придворной чести; Зоранамак (военный реестр) — по кавалерийской силе. Ключевые дома: Мамиконяны (наследственный спарапет, 3000 всадников), Багратуни (наследственный аспет), Арцруни и Сюни",
+      "era": "AD",
+      "latitude": 40.1614,
+      "longitude": 44.2911,
+      "name": "Nakharar Feudal System",
+      "name_ru": "Система нахараров",
+      "source": "https://en.wikipedia.org/wiki/Nakharar",
+      "tags": [
+        "Armenian",
+        "Dynasty",
+        "Administration",
         "Political"
       ],
       "type": "political"
@@ -793,194 +948,29 @@
       "tags": [
         "Armenian",
         "Christian",
-        "Religious",
-        "Destruction"
-      ],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.0163",
-      "description": "Armenia's position as a contested buffer state is demonstrated again when Roman general Statius Priscus sacks Artashat during the Roman-Parthian War of 161-166 AD. The city is burned so thoroughly that it never fully recovers its former grandeur. Vagharshapat (Echmiadzin) increasingly assumes the role of primary Armenian city. The destruction of Artashat — capital for over 350 years — symbolizes the cost of Armenia's geographic position between two empires. Each war between Rome and Parthia/Persia is fought on Armenian soil, devastating the population and infrastructure",
-      "description_ru": "Положение Армении как спорного буферного государства демонстрируется вновь, когда римский полководец Статий Приск сжигает Арташат в ходе Римско-парфянской войны 161-166 гг. Город сгорает настолько, что никогда полностью не восстанавливает прежнее величие. Вагаршапат (Эчмиадзин) всё больше принимает роль главного армянского города. Разрушение Арташата символизирует цену географического положения Армении между двумя империями",
-      "era": "AD",
-      "latitude": 39.8783,
-      "longitude": 44.5756,
-      "name": "Artashat Burned by Rome",
-      "name_ru": "Арташат сожжён Римом",
-      "source": "https://en.wikipedia.org/wiki/Artaxata",
-      "tags": [
-        "Armenian",
-        "Roman",
         "Destruction",
-        "War"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0460",
-      "description": "Lazar Parpetsi writes his History of Armenia covering events from 387 to 484 AD — the critical period of partition, the abolition of the monarchy, and the Avarayr-to-Nvarsak struggle for religious freedom. Together with Yeghishe's History of Vardan and the Armenian War (about Avarayr), these texts form the core historical record of 5th-century Armenia. The works are remarkable for their detailed military accounts, political analysis, and passionate defense of Armenian Christian identity. They establish the historiographic tradition that Armenian historians must document national suffering and resistance",
-      "description_ru": "Лазар Парпеци пишет «Историю Армении», охватывающую события 387-484 гг. — критический период раздела, упразднения монархии и борьбы от Аварайра до Нварсака за религиозную свободу. Вместе с «Историей Вардана и Армянской войны» Егише эти тексты составляют ядро исторических записей V века. Произведения примечательны детальными военными описаниями и страстной защитой армянской христианской идентичности. Они устанавливают историографическую традицию, что армянские историки должны документировать национальные страдания и сопротивление",
-      "era": "AD",
-      "latitude": 40.0064,
-      "longitude": 44.5806,
-      "name": "Parpetsi's History Written",
-      "name_ru": "Парпеци пишет «Историю»",
-      "source": "https://en.wikipedia.org/wiki/Lazar_Parpetsi",
-      "tags": [
-        "Armenian",
-        "History",
-        "Writing",
-        "Literature"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0333",
-      "description": "Armenian military traditions evolve distinctively in the classical period. The azat (free noble) class forms the backbone of heavy cavalry — cataphracts in full lamellar armor with lance, sword, and bow. Each nakharar house maintains a private army sized by its Zoranamak rank. The sparapet (supreme commander), hereditary in the Mamikonian house, leads the combined forces. Armenian cavalry is so highly valued that both Rome and Persia compete for Armenian military alliance. The highland terrain favors defensive warfare: mountain passes, fortified hilltops, and guerrilla tactics that smaller Armenian forces use against larger imperial armies",
-      "description_ru": "Армянские военные традиции формируют самобытный характер в классический период. Класс азатов (свободных дворян) составляет основу тяжёлой кавалерии — катафракты в полном ламеллярном доспехе с копьём, мечом и луком. Каждый нахарарский дом содержит частную армию. Спарапет (верховный главнокомандующий), наследственный в доме Мамиконянов, возглавляет объединённые силы. Армянская конница настолько ценна, что и Рим, и Персия борются за армянский военный союз. Горный рельеф благоприятствует оборонительной войне",
-      "era": "AD",
-      "latitude": 40.1792,
-      "longitude": 44.4991,
-      "name": "Armenian Military Traditions",
-      "name_ru": "Армянские военные традиции",
-      "source": "https://en.wikipedia.org/wiki/Military_of_Armenia",
-      "tags": [
-        "Armenian",
-        "Army",
-        "Cavalry",
-        "Culture"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0036",
-      "description": "Mount Nemrut in Commagene (southeastern Turkey) preserves the most spectacular monument of Orontid heritage. King Antiochus I Theos of Commagene — a descendant of the Armenian Orontid dynasty through the Sophene branch — builds a colossal hierothesion (sacred tomb-sanctuary) at 2,134 m elevation. Giant stone heads (2-3 m tall) depict Greek gods syncretized with Armenian and Persian deities: Zeus-Oromasdes, Apollo-Mithras, Heracles-Vahagn. A lion horoscope provides the oldest known astronomical calendar. The site demonstrates the cultural fusion at Armenia's western edge. UNESCO World Heritage Site since 1987",
-      "description_ru": "Гора Немрут в Коммагене (юго-восточная Турция) хранит самый впечатляющий памятник наследия Ервандуни. Царь Антиох I Теос Коммагенский — потомок армянских Ервандуни через ветвь Софены — строит колоссальный хиеротесион (священную гробницу-святилище) на высоте 2134 м. Гигантские каменные головы (2-3 м) изображают греческих богов, синкретизированных с армянскими и персидскими: Зевс-Оромазд, Аполлон-Митра, Геракл-Ваагн. Львиный гороскоп — древнейший известный астрономический календарь. Объект Всемирного наследия ЮНЕСКО с 1987 года",
-      "era": "BC",
-      "latitude": 37.9811,
-      "longitude": 38.7413,
-      "name": "Mount Nemrut Sanctuary",
-      "name_ru": "Святилище горы Немрут",
-      "source": "https://en.wikipedia.org/wiki/Mount_Nemrut",
-      "tags": [
-        "Armenian",
-        "Temple",
-        "Architecture",
-        "Monument",
-        "Ancient Wonders"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0170",
-      "description": "Artaxias I conquers the neighboring Armenian kingdom of Sophene (Tsopk) from the Seleucid vassal Zariadris, unifying Greater Armenia under a single crown for the first time. He systematically sets Aramaic-inscribed boundary stones (vishap stones) marking the borders of his expanded kingdom — several have been discovered by archaeologists in the Ararat Valley and around Lake Sevan. Strabo records that Artaxias made all his subjects speak one language, suggesting a deliberate policy of Armenian linguistic unification that laid the foundation for a cohesive national identity",
-      "description_ru": "Арташес I завоёвывает соседнее армянское царство Софену (Цопк) у селевкидского вассала Зариадра, впервые объединяя Великую Армению под одной короной. Он систематически устанавливает пограничные камни с арамейскими надписями — несколько обнаружены археологами в Араратской долине и вокруг озера Севан. Страбон отмечает, что Арташес заставил всех подданных говорить на одном языке, что свидетельствует о целенаправленной политике лингвистической унификации",
-      "era": "BC",
-      "latitude": 39.95,
-      "longitude": 44.55,
-      "name": "Artaxias Unifies Armenia",
-      "name_ru": "Арташес объединяет Армению",
-      "source": "https://en.wikipedia.org/wiki/Artaxias_I",
-      "tags": [
-        "Armenian",
-        "Conquest",
-        "Kingdom",
-        "King"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0371",
-      "description": "Armenian forces, aided by a Roman detachment under Count Terentius, defeat a Sassanid invasion at the Battle of Dzirav (or Bagavan). Sparapet Mushegh Mamikonian leads the Armenian cavalry in a decisive charge. This is one of the last major Armenian military victories under the Arsacid kings. King Pap uses the victory to assert independence from both Rome and Persia, confiscating church lands and executing nobles who oppose him. The battle demonstrates that Armenia can still field a formidable army when its nakharar houses unite under strong leadership",
-      "description_ru": "Армянские силы при поддержке римского отряда под командованием комита Теренция разбивают сасанидское вторжение в битве при Дзираве (или Багаване). Спарапет Мушег Мамиконян ведёт армянскую конницу в решающую атаку. Это одна из последних крупных армянских военных побед при царях Аршакуни. Царь Пап использует победу для утверждения независимости от Рима и Персии",
-      "era": "AD",
-      "latitude": 39.5,
-      "longitude": 43.8,
-      "name": "Battle of Dzirav",
-      "name_ru": "Битва при Дзираве",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Dzirav",
-      "tags": [
-        "Armenian",
-        "Persian",
-        "Battle",
-        "War",
-        "Victory"
-      ],
-      "type": "battle"
-    },
-    {
-      "date": "01.01.0325",
-      "description": "Armenia sends Bishop Aristaces (son of Gregory the Illuminator) to the Council of Nicaea — the first ecumenical council of the Christian Church convened by Emperor Constantine I. Aristaces brings back the Nicene Creed and the canonical decisions to Armenia. This participation establishes the Armenian Church as part of the universal Christian community from its very beginnings. Armenia is among the few nations represented at Nicaea that predates the Roman Empire's own official adoption of Christianity",
-      "description_ru": "Армения направляет епископа Аристакеса (сына Григория Просветителя) на Никейский собор — первый вселенский собор христианской Церкви, созванный императором Константином I. Аристакес привозит Никейский символ веры и канонические решения в Армению. Участие устанавливает Армянскую Церковь как часть вселенского христианского сообщества с самого начала. Армения — одна из немногих наций на Никейском соборе, чьё принятие христианства предшествует официальному обращению самой Римской империи",
-      "era": "AD",
-      "latitude": 40.253,
-      "longitude": 29.975,
-      "name": "Armenia at Nicaea",
-      "name_ru": "Армения на Никейском соборе",
-      "source": "https://en.wikipedia.org/wiki/First_Council_of_Nicaea",
-      "tags": [
-        "Armenian",
-        "Christian",
-        "Religious",
-        "Diplomacy"
+        "Religious"
       ],
       "type": "religious"
     },
     {
-      "date": "01.01.0440",
-      "description": "Eznik of Kolb writes \"Refutation of the Sects\" (Yeghts Aghandots) — the first original Armenian philosophical work. He systematically critiques paganism, Zoroastrianism, Greek philosophy, and Marcionism from a Christian perspective. The treatise demonstrates the intellectual sophistication of the 5th-century Armenian literary renaissance sparked by Mashtots' alphabet. Eznik studied in Edessa and Constantinople before returning to Armenia, bringing back Greek and Syriac manuscripts for translation. His work preserves information about lost Greek and Iranian philosophical texts unavailable elsewhere",
-      "description_ru": "Езник Кохбаци пишет «Опровержение ересей» — первое оригинальное армянское философское произведение. Он систематически критикует язычество, зороастризм, греческую философию и маркионизм с христианской точки зрения. Трактат демонстрирует интеллектуальную утончённость армянского литературного возрождения V века. Езник учился в Эдессе и Константинополе, привезя в Армению греческие и сирийские рукописи для перевода. Его труд сохраняет информацию об утраченных греческих и иранских философских текстах",
+      "date": "01.01.0301",
+      "description": "King Tiridates III adopts Christianity as the state religion — making Armenia the first country in history to do so, predating Rome by over a decade. The conversion follows the release of Gregory the Illuminator from 13-15 years' imprisonment in the pit of Khor Virap, where he was thrown for refusing to worship the goddess Anahit. Gregory heals the king's mysterious illness, baptizes him, the army, and the people in the Euphrates. Pagan temples across Armenia are destroyed and churches built on their sites. The political calculation is clear: Christianity distinguishes Armenia from Zoroastrian Persia and aligns it with Rome",
+      "description_ru": "Царь Тиридат III принимает христианство как государственную религию — делая Армению первой страной в истории, опередив Рим более чем на десятилетие. Обращение следует за освобождением Григория Просветителя из 13-15 лет заточения в яме Хор Вирапа. Григорий исцеляет загадочную болезнь царя, крестит его, армию и народ в Евфрате. Языческие храмы по всей Армении разрушаются, на их месте строятся церкви. Политический расчёт ясен: христианство отличает Армению от зороастрийской Персии",
       "era": "AD",
-      "latitude": 40.1614,
-      "longitude": 44.2911,
-      "name": "Eznik's Philosophy Written",
-      "name_ru": "Философия Езника Кохбаци",
-      "source": "https://en.wikipedia.org/wiki/Eznik_of_Kolb",
-      "tags": [
-        "Armenian",
-        "Writing",
-        "Culture",
-        "Literature",
-        "Philosophy"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0366",
-      "description": "Armenian satrap Orontes I joins and then betrays the Great Satraps' Revolt against the Achaemenid king Artaxerxes II. The revolt (366-360 BC) sees satraps across the western Persian Empire rebel simultaneously. Orontes, married to Artaxerxes' daughter Rhodogune, initially supports the rebels but switches sides to gain royal favor. His betrayal crushes the revolt. This episode reveals Armenia's political sophistication under the Orontids — navigating between loyalty and autonomy within the Persian imperial system, a strategy the dynasty will employ for centuries",
-      "description_ru": "Армянский сатрап Оронт I присоединяется к Великому восстанию сатрапов против ахеменидского царя Артаксеркса II, а затем предаёт его. Восстание (366-360 гг. до н. э.) охватывает сатрапов западной Персидской империи. Оронт, женатый на дочери Артаксеркса Родогуне, сначала поддерживает мятежников, но переходит на сторону царя для получения привилегий. Его предательство подавляет восстание. Этот эпизод раскрывает политическую изощрённость Армении под Ервандуни",
-      "era": "BC",
-      "latitude": 39,
-      "longitude": 43.5,
-      "name": "Orontes in Satraps' Revolt",
-      "name_ru": "Оронт в Великом восстании сатрапов",
-      "source": "https://en.wikipedia.org/wiki/Great_Satraps%27_Revolt",
-      "tags": [
-        "Armenian",
-        "Persian",
-        "Rebellion",
-        "Betrayal",
-        "Political"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0050",
-      "description": "The Vahagn birth hymn — preserved by historian Movses Khorenatsi — represents the oldest known Armenian literary text. It describes the birth of the dragon-slaying god of war and thunder: 'The heavens and earth were in travail, and the crimson sea was in travail... From the sea rose a red reed, from the reed's stem came smoke, from the smoke ran a youth of flame, with fiery hair and flaming beard, and his eyes were suns.' This creation epic demonstrates the sophistication of pre-Christian Armenian oral tradition and its connections to Indo-European mythology. Vahagn corresponds to Iranian Verethraghna and is cognate with Vedic Vrtrahan",
-      "description_ru": "Гимн рождения Ваагна — сохранённый историком Мовсесом Хоренаци — представляет древнейший известный армянский литературный текст. Он описывает рождение драконоборца-бога войны и грома: 'Небо и земля были в муках, и алое море было в муках... Из моря поднялся красный тростник, из стебля тростника пошёл дым, из дыма выбежал юноша-пламя, с огненными волосами и горящей бородой, и его глаза были солнцами.' Этот эпос демонстрирует связи с индоевропейской мифологией",
-      "era": "BC",
       "latitude": 39.8783,
       "longitude": 44.5756,
-      "name": "Vahagn Birth Hymn",
-      "name_ru": "Гимн рождения Ваагна",
-      "source": "https://en.wikipedia.org/wiki/Vahagn",
+      "name": "Armenia Adopts Christianity",
+      "name_ru": "Армения принимает христианство",
+      "source": "https://en.wikipedia.org/wiki/Christianization_of_Armenia",
       "tags": [
         "Armenian",
-        "Legend",
-        "Culture",
-        "Literature"
+        "King",
+        "Christian",
+        "Foundation",
+        "Religious"
       ],
-      "type": "cultural"
+      "type": "religious"
     },
     {
       "date": "01.01.0302",
@@ -1001,6 +991,229 @@
       "type": "religious"
     },
     {
+      "date": "01.01.0303",
+      "description": "Gregory the Illuminator builds Echmiadzin Cathedral in Vagharshapat (20 km west of Yerevan) — one of the oldest cathedrals in the world. According to tradition, Gregory saw a vision of Christ descending and striking the earth with a golden hammer, marking the building site. The name means 'Descent of the Only-Begotten.' Originally a simple basilica, rebuilt with a cruciform plan and central dome in 483-484 AD. Echmiadzin becomes the permanent seat of the Catholicos (supreme patriarch) of the Armenian Apostolic Church — a role it holds to this day. UNESCO World Heritage Site since 2000",
+      "description_ru": "Григорий Просветитель строит Эчмиадзинский собор в Вагаршапате (20 км к западу от Еревана) — один из старейших соборов мира. По преданию, Григорий увидел видение Христа, ударяющего землю золотым молотом, обозначая место строительства. Название означает 'Сошествие Единородного.' Первоначально простая базилика, перестроенная с крестообразным планом и центральным куполом в 483-484 гг. Эчмиадзин становится постоянной резиденцией Католикоса Армянской Апостольской Церкви. Объект Всемирного наследия ЮНЕСКО с 2000 года",
+      "era": "AD",
+      "latitude": 40.1614,
+      "longitude": 44.2911,
+      "name": "Echmiadzin Cathedral Built",
+      "name_ru": "Построен Эчмиадзинский собор",
+      "source": "https://en.wikipedia.org/wiki/Etchmiadzin_Cathedral",
+      "tags": [
+        "Armenian",
+        "Ancient Wonders",
+        "Architecture",
+        "Christian",
+        "Temple"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0303",
+      "description": "Gregory the Illuminator builds churches of Hripsime and Gayane in Vagharshapat over the martyrdom sites of the Christian nuns whose killing triggered King Tiridates' conversion. Rhipsime and Gayane had fled Roman persecution and were tortured to death when Rhipsime refused to marry Tiridates. Both churches — rebuilt in their current form in the 7th century — are masterpieces of early Armenian architecture and UNESCO World Heritage sites. The martyrs' story becomes central to Armenian Christian identity",
+      "description_ru": "Григорий Просветитель строит церкви Рипсиме и Гаяне в Вагаршапате на местах мученичества христианских монахинь, чья гибель послужила толчком к обращению царя Тиридата. Рипсиме и Гаяне бежали от римских гонений и были замучены до смерти, когда Рипсиме отказалась выйти замуж за Тиридата. Обе церкви — перестроенные в нынешнем виде в VII веке — являются шедеврами ранней армянской архитектуры и объектами Всемирного наследия ЮНЕСКО",
+      "era": "AD",
+      "latitude": 40.154,
+      "longitude": 44.296,
+      "name": "Hripsime and Gayane Churches",
+      "name_ru": "Церкви Рипсиме и Гаяне",
+      "source": "https://en.wikipedia.org/wiki/Saint_Hripsime_Church",
+      "tags": [
+        "Armenian",
+        "Architecture",
+        "Christian",
+        "Temple"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0325",
+      "description": "Armenia sends Bishop Aristaces (son of Gregory the Illuminator) to the Council of Nicaea — the first ecumenical council of the Christian Church convened by Emperor Constantine I. Aristaces brings back the Nicene Creed and the canonical decisions to Armenia. This participation establishes the Armenian Church as part of the universal Christian community from its very beginnings. Armenia is among the few nations represented at Nicaea that predates the Roman Empire's own official adoption of Christianity",
+      "description_ru": "Армения направляет епископа Аристакеса (сына Григория Просветителя) на Никейский собор — первый вселенский собор христианской Церкви, созванный императором Константином I. Аристакес привозит Никейский символ веры и канонические решения в Армению. Участие устанавливает Армянскую Церковь как часть вселенского христианского сообщества с самого начала. Армения — одна из немногих наций на Никейском соборе, чьё принятие христианства предшествует официальному обращению самой Римской империи",
+      "era": "AD",
+      "latitude": 40.253,
+      "longitude": 29.975,
+      "name": "Armenia at Nicaea",
+      "name_ru": "Армения на Никейском соборе",
+      "source": "https://en.wikipedia.org/wiki/First_Council_of_Nicaea",
+      "tags": [
+        "Armenian",
+        "Diplomacy",
+        "Christian",
+        "Religious"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0333",
+      "description": "Armenian military traditions evolve distinctively in the classical period. The azat (free noble) class forms the backbone of heavy cavalry — cataphracts in full lamellar armor with lance, sword, and bow. Each nakharar house maintains a private army sized by its Zoranamak rank. The sparapet (supreme commander), hereditary in the Mamikonian house, leads the combined forces. Armenian cavalry is so highly valued that both Rome and Persia compete for Armenian military alliance. The highland terrain favors defensive warfare: mountain passes, fortified hilltops, and guerrilla tactics that smaller Armenian forces use against larger imperial armies",
+      "description_ru": "Армянские военные традиции формируют самобытный характер в классический период. Класс азатов (свободных дворян) составляет основу тяжёлой кавалерии — катафракты в полном ламеллярном доспехе с копьём, мечом и луком. Каждый нахарарский дом содержит частную армию. Спарапет (верховный главнокомандующий), наследственный в доме Мамиконянов, возглавляет объединённые силы. Армянская конница настолько ценна, что и Рим, и Персия борются за армянский военный союз. Горный рельеф благоприятствует оборонительной войне",
+      "era": "AD",
+      "latitude": 40.1792,
+      "longitude": 44.4991,
+      "name": "Armenian Military Traditions",
+      "name_ru": "Армянские военные традиции",
+      "source": "https://en.wikipedia.org/wiki/Military_of_Armenia",
+      "tags": [
+        "Armenian",
+        "Army",
+        "Cavalry",
+        "Culture"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0335",
+      "description": "King Khosrov III Kotak founds Dvin 35 km south of modern Yerevan as the new royal seat, transforming a hunting park into a fortified city. By the 5th century Dvin becomes the political, economic, and religious capital of Armenia with 100,000-150,000 residents — one of the largest cities east of Constantinople. Six trade routes converge here connecting Iran, Mesopotamia, Byzantium, and the Mediterranean. The city hosts the Armenian Catholicosate from 470 AD and several landmark church councils (506, 554 AD). An 893 earthquake kills 70,000 and begins its decline",
+      "description_ru": "Царь Хосров III Котак основывает Двин в 35 км к югу от современного Еревана как новую царскую резиденцию, превращая охотничий парк в укреплённый город. К V веку Двин становится политической, экономической и религиозной столицей Армении с 100 000-150 000 жителей — одним из крупнейших городов к востоку от Константинополя. Шесть торговых путей сходятся здесь. В городе располагается Армянский Католикосат с 470 г. и проходят несколько знаковых церковных соборов (506, 554 гг.)",
+      "era": "AD",
+      "latitude": 40.0064,
+      "longitude": 44.5806,
+      "name": "Dvin Capital Founded",
+      "name_ru": "Основание столицы Двин",
+      "source": "https://en.wikipedia.org/wiki/Dvin_(ancient_city)",
+      "tags": [
+        "Armenian",
+        "Capital",
+        "Foundation",
+        "Trade"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0350",
+      "description": "Armenian manuscript illumination begins with the invention of the alphabet. Monasteries become scriptoria where monks copy religious and secular texts on vellum using iron-gall ink and mineral pigments. Armenian miniature painting develops a distinctive style: bold colors, stylized figures, geometric ornament blending Hellenistic and Eastern motifs. The Matenadaran (Institute of Ancient Manuscripts) in Yerevan eventually preserves over 17,000 manuscripts and 100,000 archival documents — one of the world's richest collections. Armenian manuscripts survive because monks carried them during wars and migrations, prioritizing books alongside church relics",
+      "description_ru": "Армянская книжная миниатюра начинается с изобретения алфавита. Монастыри становятся скрипториями, где монахи копируют религиозные и светские тексты на пергаменте. Армянская миниатюрная живопись развивает характерный стиль: смелые цвета, стилизованные фигуры, геометрический орнамент, сочетающий эллинистические и восточные мотивы. Матенадаран в Ереване хранит более 17 000 рукописей и 100 000 архивных документов. Армянские рукописи сохранились, потому что монахи уносили их во время войн и миграций, ставя книги наравне с церковными реликвиями",
+      "era": "AD",
+      "latitude": 40.1918,
+      "longitude": 44.5213,
+      "name": "Manuscript Tradition Begins",
+      "name_ru": "Начало рукописной традиции",
+      "source": "https://en.wikipedia.org/wiki/Matenadaran",
+      "tags": [
+        "Armenian",
+        "Art",
+        "Culture",
+        "Literature",
+        "Writing"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0353",
+      "description": "Catholicos Nerses I the Great, great-grandson of Gregory the Illuminator, convenes the Council of Ashtishat — a landmark assembly that transforms Armenian society. The council forbids cousin marriages, bans self-mutilation during mourning, standardizes fasting and liturgy. Nerses builds Armenia's first hospitals, leprosaria, orphanages, and schools — creating a social welfare infrastructure unprecedented in the region. He democratizes the Church, bringing it from the nobility to the common people. Poisoned by King Pap in 373 AD for refusing him church entry due to moral depravity",
+      "description_ru": "Католикос Нерсес I Великий, правнук Григория Просветителя, созывает Аштишатский собор — знаковое собрание, преобразующее армянское общество. Собор запрещает браки между двоюродными, самоистязание при трауре, стандартизирует посты и литургию. Нерсес строит первые в Армении больницы, лепрозории, приюты и школы. Он демократизирует Церковь, приближая её от знати к простому народу. Отравлен царём Папом в 373 г. за отказ допустить его в церковь",
+      "era": "AD",
+      "latitude": 39.05,
+      "longitude": 42.75,
+      "name": "Council of Ashtishat",
+      "name_ru": "Аштишатский собор",
+      "source": "https://en.wikipedia.org/wiki/Nerses_I",
+      "tags": [
+        "Armenian",
+        "Reform",
+        "Christian",
+        "Culture"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0370",
+      "description": "King Pap of Armenia poisons Catholicos Nerses I the Great and pursues an aggressively independent policy, confiscating church lands and challenging both Roman and Persian influence. His reign represents the last significant assertion of Arsacid royal power before the dynasty's decline. Pap forges temporary alliances with Rome, defeating a Sassanid invasion at the Battle of Dzirav (371 AD) with Roman support. But his independence alarms Rome: Emperor Valens invites him to a banquet where Roman officers assassinate him. Pap's murder signals that neither empire will tolerate a genuinely independent Armenian king",
+      "description_ru": "Царь Пап Армянский отравляет католикоса Нерсеса I Великого и проводит агрессивно независимую политику, конфискуя церковные земли и бросая вызов римскому и персидскому влиянию. Его правление — последнее значительное утверждение аршакидской царской власти. Пап заключает временные союзы с Римом, разбивая сасанидское вторжение при Дзираве (371 г.). Но его независимость тревожит Рим: император Валент приглашает его на пир, где римские офицеры убивают его. Убийство Папа сигнализирует, что ни одна империя не потерпит подлинно независимого армянского царя",
+      "era": "AD",
+      "latitude": 39.8783,
+      "longitude": 44.5756,
+      "name": "King Pap Assassinated",
+      "name_ru": "Убийство царя Папа",
+      "source": "https://en.wikipedia.org/wiki/Pap_of_Armenia",
+      "tags": [
+        "Roman",
+        "Armenian",
+        "King",
+        "Assassination",
+        "Political"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0371",
+      "description": "Armenian forces, aided by a Roman detachment under Count Terentius, defeat a Sassanid invasion at the Battle of Dzirav (or Bagavan). Sparapet Mushegh Mamikonian leads the Armenian cavalry in a decisive charge. This is one of the last major Armenian military victories under the Arsacid kings. King Pap uses the victory to assert independence from both Rome and Persia, confiscating church lands and executing nobles who oppose him. The battle demonstrates that Armenia can still field a formidable army when its nakharar houses unite under strong leadership",
+      "description_ru": "Армянские силы при поддержке римского отряда под командованием комита Теренция разбивают сасанидское вторжение в битве при Дзираве (или Багаване). Спарапет Мушег Мамиконян ведёт армянскую конницу в решающую атаку. Это одна из последних крупных армянских военных побед при царях Аршакуни. Царь Пап использует победу для утверждения независимости от Рима и Персии",
+      "era": "AD",
+      "latitude": 39.5,
+      "longitude": 43.8,
+      "name": "Battle of Dzirav",
+      "name_ru": "Битва при Дзираве",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Dzirav",
+      "tags": [
+        "Persian",
+        "Armenian",
+        "War",
+        "Battle",
+        "Victory"
+      ],
+      "type": "battle"
+    },
+    {
+      "date": "01.01.0387",
+      "description": "The Peace of Acilisene partitions Armenia between the Roman Empire (Emperor Theodosius I) and Sassanid Persia (King Shapur III). Persia receives the larger eastern portion (~4/5) including the core highlands, Artashat, Vagharshapat, and Dvin. Rome takes the smaller western portion (~1/5) around Karin (Erzurum) and Sophene. Both portions retain Arsacid client kings initially. The partition ends Armenia's existence as a unified kingdom and sets the stage for centuries of divided Armenian existence between rival empires",
+      "description_ru": "Ацилисенский мир делит Армению между Римской империей (император Феодосий I) и Сасанидской Персией (царь Шапур III). Персия получает большую восточную часть (~4/5), включая ядро нагорья, Арташат, Вагаршапат и Двин. Рим берёт меньшую западную часть (~1/5) вокруг Карина (Эрзурума) и Софены. Обе части сохраняют аршакидских клиентских царей. Раздел кладёт конец существованию Армении как единого царства",
+      "era": "AD",
+      "latitude": 39.9,
+      "longitude": 43.5,
+      "name": "Partition of Armenia",
+      "name_ru": "Раздел Армении",
+      "source": "https://en.wikipedia.org/wiki/Peace_of_Acilisene",
+      "tags": [
+        "Persian",
+        "Roman",
+        "Armenian",
+        "Decline",
+        "Political"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0405",
+      "description": "Monk and linguist Mesrop Mashtots creates the Armenian alphabet — 36 letters (28 consonants, 8 vowels) designed to perfectly capture Armenian phonetics. Working with Catholicos Sahak Partev and calligrapher Rufinus in Samosata, he reportedly receives divine inspiration after years of study. The first sentence written: Proverbs 1:2 — 'To know wisdom and instruction.' King Vramshapuh orders the alphabet taught nationwide. Mashtots founds schools across Armenia and also helps create the Georgian and Caucasian Albanian scripts. Scholars call it 'the most perfect phonetic writing for its time.' The alphabet becomes the anchor of Armenian identity through centuries of foreign domination",
+      "description_ru": "Монах и лингвист Месроп Маштоц создаёт армянский алфавит — 36 букв (28 согласных, 8 гласных), точно отражающих армянскую фонетику. Работая с католикосом Саак Партевом и каллиграфом Руфином в Самосате, он по преданию получает божественное вдохновение. Первое предложение: Притчи 1:2 — 'Познать мудрость и наставление.' Царь Врамшапух приказывает обучать алфавиту по всей стране. Маштоц основывает школы и помогает создать грузинское и кавказско-албанское письмо. Учёные называют его 'самой совершенной фонетической письменностью своего времени.' Алфавит становится якорем армянской идентичности",
+      "era": "AD",
+      "latitude": 40.245,
+      "longitude": 44.32,
+      "name": "Armenian Alphabet Created",
+      "name_ru": "Создание армянского алфавита",
+      "source": "https://en.wikipedia.org/wiki/Armenian_alphabet",
+      "tags": [
+        "Armenian",
+        "Culture",
+        "Education",
+        "Foundation",
+        "Writing"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0410",
+      "description": "Sahak Partev and Mesrop Mashtots lead the translation of the Bible into Armenian — completed from Greek and Syriac originals. The resulting text is so precise and eloquent that it is called the 'Queen of Translations' (Targmanich' t'aguhui). This sparks a golden age of Armenian literature: Koryun writes Mashtots' biography, Agathangelos composes the History of Armenia, Faustus of Byzantium documents the 4th century, and Eznik of Kolb writes the theological treatise 'Refutation of the Sects.' Within a single generation, Armenia produces a complete literary canon from scripture to philosophy",
+      "description_ru": "Саак Партев и Месроп Маштоц руководят переводом Библии на армянский — завершённым с греческих и сирийских оригиналов. Полученный текст настолько точен и красноречив, что его называют 'Царицей переводов.' Это вызывает золотой век армянской литературы: Корюн пишет биографию Маштоца, Агатангелос составляет Историю Армении, Фавстос Бузанд документирует IV век, Езник Кохбаци пишет трактат 'Опровержение ересей.' За одно поколение Армения создаёт полный литературный канон",
+      "era": "AD",
+      "latitude": 40.1614,
+      "longitude": 44.2911,
+      "name": "Armenian Bible Translated",
+      "name_ru": "Перевод армянской Библии",
+      "source": "https://en.wikipedia.org/wiki/Bible_translations_into_Armenian",
+      "tags": [
+        "Armenian",
+        "Christian",
+        "Culture",
+        "Literature",
+        "Writing"
+      ],
+      "type": "cultural"
+    },
+    {
       "date": "01.01.0420",
       "description": "Koryun, a pupil of Mesrop Mashtots, writes the 'Life of Mashtots' — the first biography written in Armenian and one of the earliest hagiographies in world literature. The work documents the creation of the Armenian alphabet, the translation of the Bible, and the establishment of schools across Armenia. Koryun traveled with Mashtots to Constantinople and Rome, bringing back manuscripts for translation. His biography is the primary source for the events surrounding the alphabet's creation and remains indispensable for understanding the 5th-century Armenian cultural renaissance",
       "description_ru": "Корюн, ученик Месропа Маштоца, пишет 'Житие Маштоца' — первую биографию на армянском языке и одну из ранних агиографий в мировой литературе. Произведение документирует создание армянского алфавита, перевод Библии и основание школ по всей Армении. Корюн путешествовал с Маштоцем в Константинополь и Рим, привозя рукописи для перевода. Его биография — основной источник о событиях вокруг создания алфавита и незаменима для понимания армянского культурного возрождения V века",
@@ -1012,13 +1225,180 @@
       "source": "https://en.wikipedia.org/wiki/Koryun",
       "tags": [
         "Armenian",
-        "Writing",
+        "Culture",
         "Literature",
-        "Culture"
+        "Writing"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.0428",
+      "description": "Armenian nakharar nobles petition Sassanid King Bahram V to abolish the Armenian monarchy, tired of the weak Arsacid King Artaxias IV. Bahram deposes the last Armenian king and converts eastern Armenia into a marzpanate (governorate) ruled by a Persian-appointed marzban. The 350-year Arsacid dynasty ends. Armenia loses its statehood but retains its feudal aristocracy, church, and cultural institutions. The Catholicosate at Dvin becomes the primary institution preserving Armenian national identity under foreign rule — a role the Church will play for the next 1,500 years",
+      "description_ru": "Армянские нахарары просят сасанидского царя Бахрама V упразднить армянскую монархию, устав от слабого аршакидского царя Арташеса IV. Бахрам низлагает последнего армянского царя и превращает восточную Армению в марзпанство. 350-летняя династия Аршакуни заканчивается. Армения теряет государственность, но сохраняет феодальную аристократию, церковь и культурные институты. Католикосат в Двине становится главным институтом, хранящим армянскую национальную идентичность",
+      "era": "AD",
+      "latitude": 40.0064,
+      "longitude": 44.5806,
+      "name": "Arsacid Monarchy Abolished",
+      "name_ru": "Упразднение монархии Аршакуни",
+      "source": "https://en.wikipedia.org/wiki/Arsacid_dynasty_of_Armenia",
+      "tags": [
+        "Armenian",
+        "Arsacid",
+        "End",
+        "Fall",
+        "Kingdom"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0440",
+      "description": "Eznik of Kolb writes \"Refutation of the Sects\" (Yeghts Aghandots) — the first original Armenian philosophical work. He systematically critiques paganism, Zoroastrianism, Greek philosophy, and Marcionism from a Christian perspective. The treatise demonstrates the intellectual sophistication of the 5th-century Armenian literary renaissance sparked by Mashtots' alphabet. Eznik studied in Edessa and Constantinople before returning to Armenia, bringing back Greek and Syriac manuscripts for translation. His work preserves information about lost Greek and Iranian philosophical texts unavailable elsewhere",
+      "description_ru": "Езник Кохбаци пишет «Опровержение ересей» — первое оригинальное армянское философское произведение. Он систематически критикует язычество, зороастризм, греческую философию и маркионизм с христианской точки зрения. Трактат демонстрирует интеллектуальную утончённость армянского литературного возрождения V века. Езник учился в Эдессе и Константинополе, привезя в Армению греческие и сирийские рукописи для перевода. Его труд сохраняет информацию об утраченных греческих и иранских философских текстах",
+      "era": "AD",
+      "latitude": 40.1614,
+      "longitude": 44.2911,
+      "name": "Eznik's Philosophy Written",
+      "name_ru": "Философия Езника Кохбаци",
+      "source": "https://en.wikipedia.org/wiki/Eznik_of_Kolb",
+      "tags": [
+        "Armenian",
+        "Culture",
+        "Literature",
+        "Philosophy",
+        "Writing"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0440",
+      "description": "Movses Khorenatsi writes the History of Armenia — the first comprehensive national history of any people, tracing Armenian origins from Biblical times through the 5th century AD. He preserves the pre-Christian epics of Hayk (legendary ancestor who defeats the Babylonian giant Bel), Aram (eponymous hero), and the birth hymn of Vahagn. His work establishes the Armenian historical narrative: a people chosen by God, defined by language and faith, resilient under foreign rule. Despite modern scholarly debate about his exact dating, his history remains foundational to Armenian identity",
+      "description_ru": "Мовсес Хоренаци пишет «Историю Армении» — первую всеобъемлющую национальную историю любого народа, прослеживающую армянские истоки от библейских времён до V века. Он сохраняет дохристианские эпосы о Хайке (легендарный предок, победивший вавилонского великана Бела), Араме (герой-эпоним) и гимн рождения Ваагна. Его труд формирует армянский исторический нарратив: избранный Богом народ, определяемый языком и верой, стойкий под иностранным владычеством",
+      "era": "AD",
+      "latitude": 40.1614,
+      "longitude": 44.2911,
+      "name": "Khorenatsi's History Written",
+      "name_ru": "Хоренаци пишет «Историю»",
+      "source": "https://en.wikipedia.org/wiki/Movses_Khorenatsi",
+      "tags": [
+        "Armenian",
+        "Culture",
+        "History",
+        "Literature",
+        "Writing"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0449",
+      "description": "Sassanid King Yazdegerd II summons Armenian nobles to Ctesiphon and orders mass conversion to Zoroastrianism. The nobles initially comply outwardly but upon return to Armenia, the clergy and people reject the decree. The Council of Artashat (449 AD) unanimously declares: 'From this faith no one can shake us — neither angels nor men, neither fire nor sword.' Mass rebellion erupts. Yazdegerd sends a force with war elephants to enforce conversion. The Armenian church and nobility unite under the sparapet Vardan Mamikonian to resist by force of arms",
+      "description_ru": "Сасанидский царь Йездигерд II вызывает армянских нахараров в Ктесифон и приказывает массовое обращение в зороастризм. Нахарары вначале подчиняются внешне, но по возвращении в Армению духовенство и народ отвергают указ. Арташатский собор (449 г.) единогласно заявляет: 'От этой веры никто не может нас поколебать — ни ангелы, ни люди, ни огонь, ни меч.' Вспыхивает восстание. Армянская церковь и знать объединяются под спарапетом Варданом Мамиконяном для вооружённого сопротивления",
+      "era": "AD",
+      "latitude": 39.8783,
+      "longitude": 44.5756,
+      "name": "Council of Artashat",
+      "name_ru": "Арташатский собор",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Avarayr",
+      "tags": [
+        "Armenian",
+        "Christian",
+        "Rebellion",
+        "Religious"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0450",
+      "description": "Armenian stone carving tradition, rooted in pre-Christian vishap (dragon stones) and boundary stelae, evolves after Christianization into carved stone crosses and funerary monuments. The earliest cross-bearing stelae appear in the 4th-5th centuries AD — precursors to the later khachkar art form that will reach full maturity in the 9th-13th centuries. Artisans work the highland's abundant basalt and tuff into religious carvings. Over the following centuries, this tradition develops into the khachkar (cross-stone) — a distinctively Armenian art form featuring a cross over a rosette on an upright stone slab. Over 50,000 survive. UNESCO inscribed Armenian khachkar craftsmanship on the Intangible Cultural Heritage list in 2010",
+      "description_ru": "Армянская традиция каменной резьбы, уходящая корнями в дохристианские вишапы (камни-драконы) и пограничные стелы, эволюционирует после христианизации в резные каменные кресты и погребальные памятники. Древнейшие стелы с крестами появляются в IV-V веках — предшественники позднейших хачкаров, которые достигнут зрелости в IX-XIII веках. Мастера работают с базальтом и туфом нагорья. Каждый хачкар уникален. Более 50 000 сохранились. ЮНЕСКО внесла мастерство хачкаров в список нематериального культурного наследия в 2010 году",
+      "era": "AD",
+      "latitude": 40.1792,
+      "longitude": 44.4991,
+      "name": "Early Stone Cross Carving",
+      "name_ru": "Ранняя каменная крестовая резьба",
+      "source": "https://en.wikipedia.org/wiki/Khachkar",
+      "tags": [
+        "Armenian",
+        "Art",
+        "Culture",
+        "Religious",
+        "Sculpture"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "26.05.0451",
+      "description": "Sparapet Vardan Mamikonian leads 66,000 Armenians against 120,000-220,000 Sassanid Persians with war elephants on the Avarayr Plain. Vardan and eight generals fall in battle. The Persians win tactically but suffer enormous casualties. Yazdegerd II, alarmed by the cost, withdraws troops and allows Armenians to continue practicing Christianity. Vardan is canonized as a saint. The battle becomes the defining event of Armenian national identity — establishing that faith and culture are worth dying for. The Feast of Vardanank (Vartanantz) is still celebrated annually",
+      "description_ru": "Спарапет Вардан Мамиконян ведёт 66 000 армян против 120 000-220 000 сасанидских персов с боевыми слонами на Аварайрской равнине. Вардан и восемь полководцев погибают. Персы побеждают тактически, но несут огромные потери. Йездигерд II, встревоженный потерями, отводит войска и позволяет армянам продолжать исповедовать христианство. Вардан канонизирован как святой. Битва становится определяющим событием армянской идентичности. Праздник Вардананц отмечается ежегодно",
+      "era": "AD",
+      "latitude": 38.7,
+      "longitude": 44.3,
+      "name": "Battle of Avarayr",
+      "name_ru": "Аварайрская битва",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Avarayr",
+      "tags": [
+        "Persian",
+        "Armenian",
+        "War",
+        "Battle",
+        "Christian"
+      ],
+      "type": "battle"
+    },
+    {
+      "date": "01.01.0460",
+      "description": "Lazar Parpetsi writes his History of Armenia covering events from 387 to 484 AD — the critical period of partition, the abolition of the monarchy, and the Avarayr-to-Nvarsak struggle for religious freedom. Together with Yeghishe's History of Vardan and the Armenian War (about Avarayr), these texts form the core historical record of 5th-century Armenia. The works are remarkable for their detailed military accounts, political analysis, and passionate defense of Armenian Christian identity. They establish the historiographic tradition that Armenian historians must document national suffering and resistance",
+      "description_ru": "Лазар Парпеци пишет «Историю Армении», охватывающую события 387-484 гг. — критический период раздела, упразднения монархии и борьбы от Аварайра до Нварсака за религиозную свободу. Вместе с «Историей Вардана и Армянской войны» Егише эти тексты составляют ядро исторических записей V века. Произведения примечательны детальными военными описаниями и страстной защитой армянской христианской идентичности. Они устанавливают историографическую традицию, что армянские историки должны документировать национальные страдания и сопротивление",
+      "era": "AD",
+      "latitude": 40.0064,
+      "longitude": 44.5806,
+      "name": "Parpetsi's History Written",
+      "name_ru": "Парпеци пишет «Историю»",
+      "source": "https://en.wikipedia.org/wiki/Lazar_Parpetsi",
+      "tags": [
+        "Armenian",
+        "History",
+        "Literature",
+        "Writing"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0484",
+      "description": "Vahan Mamikonian, nephew of Vardan, leads a successful guerrilla rebellion (481-484 AD) that forces Sassanid King Balash to sign the Treaty of Nvarsak — guaranteeing Armenian religious freedom. All Zoroastrian fire altars in Armenia must be destroyed, forced conversions are banned, no land is granted to converts. Vahan is appointed marzban (Persian governor) of Armenia — the highest position an Armenian can hold. The treaty is called 'the first in history to compel a tyrant to yield to the principle of religious freedom.' It vindicates the sacrifice of Avarayr thirty-three years earlier",
+      "description_ru": "Ваан Мамиконян, племянник Вардана, ведёт успешное партизанское восстание (481-484 гг.), вынуждающее сасанидского царя Балаша подписать Нварсакский договор — гарантирующий религиозную свободу армян. Все зороастрийские жертвенники огня в Армении должны быть разрушены, принудительные обращения запрещены. Ваан назначен марзбаном (персидским наместником) Армении. Договор назван 'первым в истории, заставившим тирана уступить принципу религиозной свободы.' Он оправдывает жертву Аварайра",
+      "era": "AD",
+      "latitude": 40.0064,
+      "longitude": 44.5806,
+      "name": "Treaty of Nvarsak",
+      "name_ru": "Нварсакский договор",
+      "source": "https://en.wikipedia.org/wiki/Nvarsak_Treaty",
+      "tags": [
+        "Persian",
+        "Armenian",
+        "Christian",
+        "Freedom",
+        "Peace"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0506",
+      "description": "The First Council of Dvin formally separates the Armenian Apostolic Church from the Byzantine Church by rejecting the Council of Chalcedon (451 AD) and its definition of Christ's two natures. Armenia adopts Miaphysitism — the belief that Christ has one united divine-human nature. This theological split has profound political consequences: it permanently distances Armenia from Byzantine cultural orbit and creates a distinct Armenian Christian identity that will survive Arab, Seljuk, Mongol, Ottoman, and Persian rule. The Armenian Church remains Miaphysite to this day",
+      "description_ru": "Первый Двинский собор формально отделяет Армянскую Апостольскую Церковь от Византийской, отвергая Халкидонский собор (451 г.) и его определение двух природ Христа. Армения принимает миафизитство — веру в единую божественно-человеческую природу Христа. Этот теологический раскол имеет глубокие политические последствия: он навсегда отдаляет Армению от византийской культурной орбиты и создаёт особую армянскую христианскую идентичность, которая переживёт арабское, сельджукское, монгольское, османское и персидское владычество",
+      "era": "AD",
+      "latitude": 40.0064,
+      "longitude": 44.5806,
+      "name": "Council of Dvin",
+      "name_ru": "Двинский собор",
+      "source": "https://en.wikipedia.org/wiki/Council_of_Dvin",
+      "tags": [
+        "Armenian",
+        "Christian",
+        "Political",
+        "Religious"
+      ],
+      "type": "religious"
     }
   ],
-  "name": "Great Armenia",
-  "name_ru": "Великая Армения"
+  "filename": "great_armenia.json"
 }

@@ -1171,7 +1171,7 @@
         "Latin League",
         "War",
         "Administration",
-        "Federation",
+        "Annexation",
         "Political",
         "Republic"
       ],
@@ -1542,8 +1542,8 @@
         "Roman",
         "Italian",
         "War",
-        "Conquest",
-        "Federation"
+        "Annexation",
+        "Conquest"
       ],
       "type": "military"
     },
@@ -1619,7 +1619,6 @@
         "Roman",
         "War",
         "Battle",
-        "Legend",
         "Italy",
         "Magna Graecia",
         "Pyrrhus 👤"
@@ -1897,7 +1896,7 @@
         "Carthage",
         "Punic",
         "Civil War",
-        "Mercenary",
+        "Mercenaries",
         "Mutiny"
       ],
       "type": "political"
@@ -2013,7 +2012,7 @@
       "tags": [
         "Roman",
         "Administration",
-        "Federation"
+        "Annexation"
       ],
       "type": "political"
     },
@@ -2338,8 +2337,7 @@
         "Roman",
         "Administration",
         "Architecture",
-        "Commerce",
-        "Forum"
+        "Commerce"
       ],
       "type": "historic"
     },
@@ -2652,6 +2650,23 @@
     },
     {
       "date": "01.01.0123",
+      "description": "Quintus Caecilius Metellus conquered the island, exterminating the pirates. The cities of Palma and Pollentia (modern Alcudia) were founded. The Romans brought olives and grapes to the island and gradually replaced the Talaiotic culture that originally existed on the island.",
+      "description_ru": "Квинт Цецилий Метелл завоевал остров, истребив пиратов. Были основаны города Пальма и Полленция (современная Алькудия). Римляне привезли на остров оливы и виноград, и постепенно заместили изначально существовавшую на острове талайотскую культуру",
+      "era": "BC",
+      "latitude": 39.58029027,
+      "longitude": 2.64358521,
+      "name": "The capture of Mallorca by Rome",
+      "name_ru": "Захват Майорки Римом",
+      "tags": [
+        "Roman",
+        "Conquest",
+        "Expansion",
+        "Piracy"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0123",
       "description": "Gaius Gracchus, brother of Tiberius, becomes tribune and enacts sweeping reforms: subsidized grain for Romans, jury reform to break senatorial corruption, road building, and colonial foundations. After two terms, he is declared a public enemy and killed with 3,000 supporters.",
       "description_ru": "Гай Гракх, брат Тиберия, становится трибуном и проводит еще более радикальные реформы, чем брат: субсидированное зерно для римлян, судебная реформа для борьбы с сенаторской коррупцией, строительство дорог и основание колоний. Его работа подрывала влияние Сената и аристократии. После двух сроков Гая и тысячи его последователей объявили врагами государства и стали их убивать без суда.",
       "era": "BC",
@@ -2671,23 +2686,6 @@
         "Senate"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0123",
-      "description": "Quintus Caecilius Metellus conquered the island, exterminating the pirates. The cities of Palma and Pollentia (modern Alcudia) were founded. The Romans brought olives and grapes to the island and gradually replaced the Talaiotic culture that originally existed on the island.",
-      "description_ru": "Квинт Цецилий Метелл завоевал остров, истребив пиратов. Были основаны города Пальма и Полленция (современная Алькудия). Римляне привезли на остров оливы и виноград, и постепенно заместили изначально существовавшую на острове талайотскую культуру",
-      "era": "BC",
-      "latitude": 39.58029027,
-      "longitude": 2.64358521,
-      "name": "The capture of Mallorca by Rome",
-      "name_ru": "Захват Майорки Римом",
-      "tags": [
-        "Roman",
-        "Conquest",
-        "Expansion",
-        "Piracy"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.0121",
@@ -2850,6 +2848,25 @@
     },
     {
       "date": "01.01.0100",
+      "description": "The Temple of Portunus is built at the Forum Boarium near the Tiber, dedicated to Portunus, god of keys, doors, and harbors. Its elegant Ionic columns and exceptional preservation make it one of the best-surviving examples of Republican temple architecture. Later converted to a church, which saved it from destruction.",
+      "description_ru": "Храм Портуна построен на Бычьем форуме близ Тибра, посвящённый Портуну, богу ключей, дверей и гаваней. Его элегантные ионические колонны и исключительная сохранность делают его одним из лучших примеров республиканской храмовой архитектуры. Позже обращён в церковь, что спасло его от разрушения.",
+      "era": "BC",
+      "latitude": 41.88922771,
+      "longitude": 12.48090863,
+      "name": "Temple of Portunus in Rome",
+      "name_ru": "Храм Портуна в Риме",
+      "source": "https://en.wikipedia.org/wiki/Temple_of_Portunus",
+      "tags": [
+        "Roman",
+        "Architecture",
+        "Religious",
+        "Temple",
+        "Trade"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0100",
       "description": "Tribune Saturninus proposes radical land reforms for Marius's veterans, using violence to pass legislation. When Saturninus murders a political rival, Marius reluctantly enforces the senatus consultum ultimum against his own ally, who is killed by a mob.",
       "description_ru": "Политический кризис усиливается. Трибун Сатурнин предлагает радикальные реформы для ветеранов Мария, применяя насилие для принятия законов. Когда люди Сатурнина убивают на выборах кандидата от оппозиции, Марий неохотно исполняет чрезвычайный указ Сената, арестовывая Сатурнина. Марию не удается скрыть своего союзника от толпы, и Сатурнина забивают камнями",
       "era": "BC",
@@ -2867,25 +2884,6 @@
         "Political"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0100",
-      "description": "The Temple of Portunus is built at the Forum Boarium near the Tiber, dedicated to Portunus, god of keys, doors, and harbors. Its elegant Ionic columns and exceptional preservation make it one of the best-surviving examples of Republican temple architecture. Later converted to a church, which saved it from destruction.",
-      "description_ru": "Храм Портуна построен на Бычьем форуме близ Тибра, посвящённый Портуну, богу ключей, дверей и гаваней. Его элегантные ионические колонны и исключительная сохранность делают его одним из лучших примеров республиканской храмовой архитектуры. Позже обращён в церковь, что спасло его от разрушения.",
-      "era": "BC",
-      "latitude": 41.88922771,
-      "longitude": 12.48090863,
-      "name": "Temple of Portunus in Rome",
-      "name_ru": "Храм Портуна в Риме",
-      "source": "https://en.wikipedia.org/wiki/Temple_of_Portunus",
-      "tags": [
-        "Roman",
-        "Architecture",
-        "Religious",
-        "Temple",
-        "Trade"
-      ],
-      "type": "religious"
     },
     {
       "date": "01.01.0093",
@@ -3224,12 +3222,33 @@
         "Mithridatic",
         "War",
         "Cicero 👤",
-        "Federation",
         "Law",
         "Political",
         "Pompey the Great 👤"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0063",
+      "description": "Pompey captures Jerusalem after a three-month siege, entering the Temple's Holy of Holies — but taking nothing. He makes Judaea a Roman client state. ",
+      "description_ru": "Помпей захватывает Иерусалим после трёхмесячной осады, войдя в Святая Святых Храма — но ничего не взяв. Он делает Иудею римским клиентским государством.",
+      "era": "BC",
+      "latitude": 31.7785,
+      "longitude": 35.2346,
+      "name": "Pompey Captures Jerusalem",
+      "name_ru": "Помпей захватывает Иерусалим",
+      "source": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(63_BC)",
+      "tags": [
+        "Roman",
+        "Israel",
+        "Jerusalem",
+        "War",
+        "Conquest",
+        "Pompey the Great 👤",
+        "Siege",
+        "Vassalage"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0063",
@@ -3250,28 +3269,6 @@
         "Political"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0063",
-      "description": "Pompey captures Jerusalem after a three-month siege, entering the Temple's Holy of Holies — but taking nothing. He makes Judaea a Roman client state. ",
-      "description_ru": "Помпей захватывает Иерусалим после трёхмесячной осады, войдя в Святая Святых Храма — но ничего не взяв. Он делает Иудею римским клиентским государством.",
-      "era": "BC",
-      "latitude": 31.7785,
-      "longitude": 35.2346,
-      "name": "Pompey Captures Jerusalem",
-      "name_ru": "Помпей захватывает Иерусалим",
-      "source": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(63_BC)",
-      "tags": [
-        "Roman",
-        "Israel",
-        "Jerusalem",
-        "War",
-        "Conquest",
-        "Federation",
-        "Pompey the Great 👤",
-        "Siege"
-      ],
-      "type": "military"
     },
     {
       "date": "01.05.0062",
@@ -3305,6 +3302,7 @@
       "tags": [
         "Roman",
         "Architecture",
+        "Bridge",
         "Engineering ⚙️",
         "Infrastructure"
       ],
@@ -3345,7 +3343,7 @@
         "Julius Caesar 👤",
         "Political",
         "Trick",
-        "Vengeance"
+        "Revenge"
       ],
       "type": "political"
     },
@@ -3384,7 +3382,7 @@
         "Cicero 👤",
         "Crisis",
         "Political",
-        "Vengeance"
+        "Revenge"
       ],
       "type": "political"
     },
