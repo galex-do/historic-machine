@@ -743,17 +743,20 @@ export default {
 
 .timeline_modal_title {
   margin: 0;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #1e293b;
+  letter-spacing: -0.01em;
   min-width: 0;
   max-height: 1.8em;
   overflow: hidden;
 }
 
 .timeline_event_count {
-  font-size: 0.875rem;
-  color: #64748b;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #94a3b8;
   background: #f1f5f9;
   padding: 0.25rem 0.75rem;
   border-radius: 12px;

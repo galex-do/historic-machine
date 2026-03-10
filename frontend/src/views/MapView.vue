@@ -668,10 +668,12 @@ export default {
 }
 
 .section-title {
-  color: #2d3748;
+  color: #1e293b;
   margin: 0;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 .sidebar-toggle {

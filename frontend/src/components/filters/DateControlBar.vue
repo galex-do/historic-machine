@@ -225,10 +225,12 @@ export default {
 }
 
 .controls-title {
-  color: #2d3748;
+  color: #1e293b;
   margin: 0;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   white-space: nowrap;
 }
 
@@ -253,8 +255,8 @@ export default {
 }
 
 .filter-label {
-  color: #4a5568;
-  font-weight: 500;
+  color: #64748b;
+  font-weight: 400;
   font-size: 0.9rem;
   white-space: nowrap;
   margin: 0;

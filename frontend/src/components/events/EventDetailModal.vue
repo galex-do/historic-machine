@@ -289,6 +289,7 @@ export default {
 }
 
 .event_name {
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
   color: #1e293b;
@@ -338,15 +339,15 @@ export default {
 
 .event_date {
   font-size: 0.8rem;
-  font-weight: 600;
-  color: #64748b;
+  font-weight: 500;
+  color: #94a3b8;
   margin-bottom: 0.75rem;
 }
 
 .event_description {
   font-size: 0.9rem;
   line-height: 1.6;
-  color: #334155;
+  color: #475569;
   white-space: pre-wrap;
   word-break: break-word;
 }

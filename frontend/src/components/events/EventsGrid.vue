@@ -410,8 +410,8 @@ export default {
 
 .events-count {
   font-size: 0.875rem;
-  color: #64748b;
-  font-weight: 500;
+  color: #94a3b8;
+  font-weight: 400;
   line-height: 1.25rem;
 }
 
@@ -515,16 +515,17 @@ export default {
 
 .empty-state-title {
   margin: 0;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1.05rem;
   font-weight: 600;
-  color: #4a5568;
+  color: #334155;
 }
 
 .empty-state-hint {
   margin: 0;
   font-size: 0.85rem;
-  color: #a0aec0;
-  line-height: 1.5;
+  color: #94a3b8;
+  line-height: 1.6;
   max-width: 240px;
 }
 

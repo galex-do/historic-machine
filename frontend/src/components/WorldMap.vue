@@ -2246,9 +2246,11 @@ export default {
 
 .event_info_modal_title {
   margin: 0;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #1e293b;
+  letter-spacing: -0.01em;
   flex: 1;
   white-space: nowrap;
 }

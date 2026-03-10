@@ -118,14 +118,14 @@ export default {
 }
 
 .event_name {
-  font-weight: 600;
-  color: #2d3748;
+  font-weight: 500;
+  color: #1e293b;
   flex: 1;
   min-width: 0;
 }
 
 .event_name_link {
-  font-weight: 600;
+  font-weight: 500;
   color: #3b82f6;
   cursor: pointer;
   transition: color 0.2s;
@@ -139,8 +139,8 @@ export default {
 
 .event_description {
   font-size: 0.8rem;
-  line-height: 1.4;
-  color: #4a5568;
+  line-height: 1.5;
+  color: #64748b;
   margin-top: 0.25rem;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -186,8 +186,8 @@ export default {
 
 .event_date_line {
   font-size: 0.7rem;
-  color: #718096;
+  color: #94a3b8;
   margin-top: 0.25rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 </style>

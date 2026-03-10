@@ -39,7 +39,8 @@
 }
 
 .timeline_date {
-  font-weight: 600;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
   font-size: 0.875rem;
   color: #1e293b;
 }
@@ -56,19 +57,20 @@
 
 .timeline_single_text {
   font-size: 0.875rem;
-  color: #475569;
+  color: #64748b;
   line-height: 1.5;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
 .timeline_single_text .timeline_date_inline {
-  font-weight: 600;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
   color: #1e293b;
 }
 
 .timeline_single_text .event_name {
-  font-weight: 600;
+  font-weight: 500;
   color: #1e293b;
 }
 
@@ -93,7 +95,7 @@
 .timeline_date_subheader {
   font-weight: 600;
   font-size: 0.8rem;
-  color: #475569;
+  color: #64748b;
   padding: 0.15rem 0 0.05rem 0.35rem;
   margin-top: 0.15rem;
 }
@@ -101,7 +103,7 @@
 .timeline_date_inline_sub {
   font-weight: 600;
   font-size: 0.8rem;
-  color: #475569;
+  color: #64748b;
 }
 
 .timeline_event_line {
