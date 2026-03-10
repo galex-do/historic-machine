@@ -59,6 +59,12 @@ const hasSharedTag = (event1, event2) => {
   return event2.tags.some(t => tagIds1.has(t.id))
 }
 
+const countSharedTags = (event1, event2) => {
+  if (!event1.tags?.length || !event2.tags?.length) return 0
+  const tagIds1 = new Set(event1.tags.map(t => t.id))
+  return event2.tags.filter(t => tagIds1.has(t.id)).length
+}
+
 const sortByDate = (events) => {
   return [...events].sort((a, b) => {
     const aVal = getChronologicalValue(a.event_date, a.era)
@@ -115,13 +121,20 @@ export function useRelatedEvents(currentEvent, allEvents) {
     aroundSameTime.value = sortByDate(shuffledTime)
     shuffledTime.forEach(e => usedIds.add(String(e.id)))
 
-    const tagCandidates = candidates
-      .filter(e => !usedIds.has(String(e.id)) && hasSharedTag(current, e))
+    const tagCandidates = allEvents.value
+      .filter(e => {
+        const eventId = String(e.id)
+        return !usedIds.has(eventId) && countSharedTags(current, e) > 0
+      })
       .map(e => ({
         event: e,
+        sharedCount: countSharedTags(current, e),
         timeDiff: getTimeDifferenceYears(current, e)
       }))
-      .sort((a, b) => a.timeDiff - b.timeDiff)
+      .sort((a, b) => {
+        if (b.sharedCount !== a.sharedCount) return b.sharedCount - a.sharedCount
+        return a.timeDiff - b.timeDiff
+      })
       .slice(0, MAX_RESULTS)
       .map(item => item.event)
     
