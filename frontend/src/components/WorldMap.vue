@@ -980,20 +980,15 @@ export default {
             spiderfyOnMaxZoom: false,
             // Custom icon creation for clusters - use circles sized by event count
             iconCreateFunction: (cluster) => {
-              // Get all child markers in this cluster
               const childMarkers = cluster.getAllChildMarkers()
               
-              // Sum up the event counts from all child markers
               let totalEventCount = 0
               childMarkers.forEach(marker => {
-                // Each marker has an eventCount property we'll set below
                 totalEventCount += marker.eventCount || 1
               })
               
-              // Get current zoom level
               const currentZoom = this.map ? this.map.getZoom() : 10
               
-              // At high zoom (15+), use pin icon style for precise location
               if (currentZoom >= 15) {
                 const displayCount = totalEventCount > 99 ? '99+' : totalEventCount
                 return L.divIcon({
@@ -1008,11 +1003,9 @@ export default {
                 })
               }
               
-              // At lower zoom levels, use colored circles sized by event count
-              // Size tiers: keeps circles smaller than highlight ring (28px radius = 56px diameter)
               let circleSize, fontSize
               if (totalEventCount > 200) {
-                circleSize = 48  // Largest
+                circleSize = 48
                 fontSize = 14
               } else if (totalEventCount > 100) {
                 circleSize = 42
@@ -1027,28 +1020,65 @@ export default {
                 circleSize = 26
                 fontSize = 11
               } else {
-                circleSize = 22  // Smallest (<10 events)
+                circleSize = 22
                 fontSize = 10
               }
               
-              // Display count - abbreviate large numbers
               let displayCount
               if (totalEventCount > 999) {
                 displayCount = Math.round(totalEventCount / 1000) + 'k'
-              } else if (totalEventCount > 99) {
-                displayCount = totalEventCount
               } else {
                 displayCount = totalEventCount
               }
               
               const halfSize = circleSize / 2
+
+              const colorCounts = {}
+              let taggedCount = 0
+              childMarkers.forEach(marker => {
+                const events = marker.events || []
+                events.forEach(event => {
+                  const keyTags = getKeyColorTags(event.tags)
+                  if (keyTags.length > 0) {
+                    taggedCount++
+                    keyTags.forEach(tag => {
+                      const color = tag.color || '#6366f1'
+                      colorCounts[color] = (colorCounts[color] || 0) + 1
+                    })
+                  }
+                })
+              })
+
+              let bgStyle
+              const colorEntries = Object.entries(colorCounts)
+              if (colorEntries.length === 0) {
+                bgStyle = 'linear-gradient(135deg, #6366f1 0%, #4f46e5 100%)'
+              } else {
+                const totalWeight = colorEntries.reduce((sum, [, count]) => sum + count, 0)
+                const untaggedCount = totalEventCount - taggedCount
+                const segments = []
+                let angle = 0
+
+                colorEntries.sort((a, b) => b[1] - a[1])
+
+                colorEntries.forEach(([color, count]) => {
+                  const share = count / (totalWeight + (untaggedCount > 0 ? untaggedCount : 0)) * 360
+                  segments.push(`${color} ${angle}deg ${angle + share}deg`)
+                  angle += share
+                })
+
+                if (untaggedCount > 0) {
+                  segments.push(`#6366f1 ${angle}deg 360deg`)
+                }
+
+                bgStyle = `conic-gradient(${segments.join(', ')})`
+              }
               
-              // Inline styles for cluster circles (Vue scoped CSS doesn't apply to Leaflet dynamic elements)
               const circleStyles = `
                 width: ${circleSize}px;
                 height: ${circleSize}px;
                 font-size: ${fontSize}px;
-                background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+                background: ${bgStyle};
                 border: 3px solid rgba(255, 255, 255, 0.95);
                 border-radius: 50%;
                 color: white;
