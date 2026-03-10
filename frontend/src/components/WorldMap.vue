@@ -90,14 +90,23 @@
                   </template>
                   <template v-if="location_show_details && yearGroup.dateGroups[0].events[0].tags && yearGroup.dateGroups[0].events[0].tags.length > 0">
                     {{ ' ' }}
-                    <span
-                      v-for="tag in yearGroup.dateGroups[0].events[0].tags"
-                      :key="tag.id"
-                      class="event_tag_badge"
-                      :style="getTagStyle(tag)"
-                      :title="`Click to filter events by '${tag.name}'`"
-                      @click.stop="handleTagClick(tag)"
-                    >{{ tag.name }}</span>
+                    <span 
+                      class="tags_expand_toggle"
+                      :class="{ 'expanded': isEventTagsExpanded(yearGroup.dateGroups[0].events[0].id) }"
+                      :data-tag-count="yearGroup.dateGroups[0].events[0].tags.length"
+                      @click.stop="toggleEventTags(yearGroup.dateGroups[0].events[0].id)"
+                    >...</span>
+                    <template v-if="isEventTagsExpanded(yearGroup.dateGroups[0].events[0].id)">
+                      {{ ' ' }}
+                      <span
+                        v-for="tag in yearGroup.dateGroups[0].events[0].tags"
+                        :key="tag.id"
+                        class="event_tag_badge"
+                        :style="getTagStyle(tag)"
+                        :title="`Click to filter events by '${tag.name}'`"
+                        @click.stop="handleTagClick(tag)"
+                      >{{ tag.name }}</span>
+                    </template>
                   </template>
                   <template v-if="location_show_details && canEditEvents">
                     {{ ' ' }}
@@ -148,14 +157,23 @@
                           </template>
                           <template v-if="location_show_details && dateGroup.events[0].tags && dateGroup.events[0].tags.length > 0">
                             {{ ' ' }}
-                            <span
-                              v-for="tag in dateGroup.events[0].tags"
-                              :key="tag.id"
-                              class="event_tag_badge"
-                              :style="getTagStyle(tag)"
-                              :title="`Click to filter events by '${tag.name}'`"
-                              @click.stop="handleTagClick(tag)"
-                            >{{ tag.name }}</span>
+                            <span 
+                              class="tags_expand_toggle"
+                              :class="{ 'expanded': isEventTagsExpanded(dateGroup.events[0].id) }"
+                              :data-tag-count="dateGroup.events[0].tags.length"
+                              @click.stop="toggleEventTags(dateGroup.events[0].id)"
+                            >...</span>
+                            <template v-if="isEventTagsExpanded(dateGroup.events[0].id)">
+                              {{ ' ' }}
+                              <span
+                                v-for="tag in dateGroup.events[0].tags"
+                                :key="tag.id"
+                                class="event_tag_badge"
+                                :style="getTagStyle(tag)"
+                                :title="`Click to filter events by '${tag.name}'`"
+                                @click.stop="handleTagClick(tag)"
+                              >{{ tag.name }}</span>
+                            </template>
                           </template>
                           <template v-if="location_show_details && canEditEvents">
                             {{ ' ' }}
@@ -203,14 +221,23 @@
                           </template>
                           <template v-if="location_show_details && event.tags && event.tags.length > 0">
                             {{ ' ' }}
-                            <span
-                              v-for="tag in event.tags"
-                              :key="tag.id"
-                              class="event_tag_badge"
-                              :style="getTagStyle(tag)"
-                              :title="`Click to filter events by '${tag.name}'`"
-                              @click.stop="handleTagClick(tag)"
-                            >{{ tag.name }}</span>
+                            <span 
+                              class="tags_expand_toggle"
+                              :class="{ 'expanded': isEventTagsExpanded(event.id) }"
+                              :data-tag-count="event.tags.length"
+                              @click.stop="toggleEventTags(event.id)"
+                            >...</span>
+                            <template v-if="isEventTagsExpanded(event.id)">
+                              {{ ' ' }}
+                              <span
+                                v-for="tag in event.tags"
+                                :key="tag.id"
+                                class="event_tag_badge"
+                                :style="getTagStyle(tag)"
+                                :title="`Click to filter events by '${tag.name}'`"
+                                @click.stop="handleTagClick(tag)"
+                              >{{ tag.name }}</span>
+                            </template>
                           </template>
                           <template v-if="location_show_details && canEditEvents">
                             {{ ' ' }}

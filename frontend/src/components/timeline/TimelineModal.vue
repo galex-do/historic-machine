@@ -82,13 +82,22 @@
                 </template>
                 <template v-if="showDetails && yearGroup.dateGroups[0].events[0].tags && yearGroup.dateGroups[0].events[0].tags.length > 0">
                   {{ ' ' }}
-                  <span
-                    v-for="tag in yearGroup.dateGroups[0].events[0].tags"
-                    :key="tag.id"
-                    class="event_tag_badge"
-                    :style="getTagStyle(tag)"
-                    @click.stop="handleTagClick(tag)"
-                  >{{ tag.name }}</span>
+                  <span 
+                    class="tags_expand_toggle"
+                    :class="{ 'expanded': is_tags_expanded(yearGroup.dateGroups[0].events[0].id) }"
+                    :data-tag-count="yearGroup.dateGroups[0].events[0].tags.length"
+                    @click.stop="toggle_event_tags(yearGroup.dateGroups[0].events[0].id)"
+                  >...</span>
+                  <template v-if="is_tags_expanded(yearGroup.dateGroups[0].events[0].id)">
+                    {{ ' ' }}
+                    <span
+                      v-for="tag in yearGroup.dateGroups[0].events[0].tags"
+                      :key="tag.id"
+                      class="event_tag_badge"
+                      :style="getTagStyle(tag)"
+                      @click.stop="handleTagClick(tag)"
+                    >{{ tag.name }}</span>
+                  </template>
                 </template>
                 <template v-if="showDetails">
                   {{ ' ' }}
@@ -139,13 +148,22 @@
                         </template>
                         <template v-if="showDetails && dateGroup.events[0].tags && dateGroup.events[0].tags.length > 0">
                           {{ ' ' }}
-                          <span
-                            v-for="tag in dateGroup.events[0].tags"
-                            :key="tag.id"
-                            class="event_tag_badge"
-                            :style="getTagStyle(tag)"
-                            @click.stop="handleTagClick(tag)"
-                          >{{ tag.name }}</span>
+                          <span 
+                            class="tags_expand_toggle"
+                            :class="{ 'expanded': is_tags_expanded(dateGroup.events[0].id) }"
+                            :data-tag-count="dateGroup.events[0].tags.length"
+                            @click.stop="toggle_event_tags(dateGroup.events[0].id)"
+                          >...</span>
+                          <template v-if="is_tags_expanded(dateGroup.events[0].id)">
+                            {{ ' ' }}
+                            <span
+                              v-for="tag in dateGroup.events[0].tags"
+                              :key="tag.id"
+                              class="event_tag_badge"
+                              :style="getTagStyle(tag)"
+                              @click.stop="handleTagClick(tag)"
+                            >{{ tag.name }}</span>
+                          </template>
                         </template>
                         <template v-if="showDetails">
                           {{ ' ' }}
@@ -193,13 +211,22 @@
                         </template>
                         <template v-if="showDetails && event.tags && event.tags.length > 0">
                           {{ ' ' }}
-                          <span
-                            v-for="tag in event.tags"
-                            :key="tag.id"
-                            class="event_tag_badge"
-                            :style="getTagStyle(tag)"
-                            @click.stop="handleTagClick(tag)"
-                          >{{ tag.name }}</span>
+                          <span 
+                            class="tags_expand_toggle"
+                            :class="{ 'expanded': is_tags_expanded(event.id) }"
+                            :data-tag-count="event.tags.length"
+                            @click.stop="toggle_event_tags(event.id)"
+                          >...</span>
+                          <template v-if="is_tags_expanded(event.id)">
+                            {{ ' ' }}
+                            <span
+                              v-for="tag in event.tags"
+                              :key="tag.id"
+                              class="event_tag_badge"
+                              :style="getTagStyle(tag)"
+                              @click.stop="handleTagClick(tag)"
+                            >{{ tag.name }}</span>
+                          </template>
                         </template>
                         <template v-if="showDetails">
                           {{ ' ' }}
@@ -279,6 +306,21 @@ export default {
     const visibleCount = ref(BATCH_SIZE)
     const showDetails = ref(false)
     const isLoading = ref(false)
+    const expanded_tags = ref(new Set())
+
+    const toggle_event_tags = (event_id) => {
+      const s = new Set(expanded_tags.value)
+      if (s.has(event_id)) {
+        s.delete(event_id)
+      } else {
+        s.add(event_id)
+      }
+      expanded_tags.value = s
+    }
+
+    const is_tags_expanded = (event_id) => {
+      return expanded_tags.value.has(event_id)
+    }
     
     const localizeDate = (dateStr) => {
       if (!dateStr) return ''
@@ -694,7 +736,9 @@ export default {
       getEventEmoji,
       getContrastColor,
       getTagStyle,
-      getKeyColorTags
+      getKeyColorTags,
+      toggle_event_tags,
+      is_tags_expanded
     }
   }
 }
