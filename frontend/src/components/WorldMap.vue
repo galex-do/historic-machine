@@ -2174,27 +2174,11 @@ export default {
   background: #c82333;
 }
 
-/* Marker entrance animation */
-@keyframes marker_pop_in {
-  from {
-    opacity: 0;
-    transform: scale(0.4);
-  }
-  60% {
-    opacity: 1;
-    transform: scale(1.08);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
 /* Emoji marker styling */
 :deep(.emoji-marker-container) {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  animation: marker_pop_in 0.3s ease-out;
 }
 
 :deep(.emoji-marker) {
@@ -2455,7 +2439,6 @@ export default {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  animation: marker_pop_in 0.3s ease-out;
 }
 
 ::deep(.cluster-circle) {
