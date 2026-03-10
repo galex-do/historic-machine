@@ -349,9 +349,11 @@ export default {
 
 .logo-btn h1 {
   margin: 0;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
   color: white;
+  letter-spacing: -0.02em;
 }
 
 .logo-btn .dropdown-arrow {
@@ -440,8 +442,10 @@ export default {
 
 .app-header h1 {
   margin: 0;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .right-section {
