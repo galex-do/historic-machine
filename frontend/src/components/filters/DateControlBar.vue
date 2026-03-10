@@ -200,7 +200,7 @@ export default {
   background: #ffffff;
   border-bottom: 1px solid #e2e8f0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   margin-bottom: 0;
 }
 
@@ -414,7 +414,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 1.5rem;
     cursor: pointer;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
@@ -441,9 +441,11 @@ export default {
   }
 
   .mobile-filter-label {
-    font-weight: 600;
-    font-size: 0.95rem;
-    color: #2d3748;
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #1e293b;
+    letter-spacing: -0.01em;
     flex-shrink: 0;
   }
 
@@ -477,14 +479,14 @@ export default {
     flex-direction: column;
     gap: 0.75rem;
     align-items: flex-start;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     border-top: none;
   }
 
   .mobile-expanded .date-controls-container {
     max-height: 500px;
     opacity: 1;
-    padding: 0.75rem 1rem 1rem;
+    padding: 0.75rem 1.5rem 1rem;
     border-top: 1px solid #edf2f7;
   }
 

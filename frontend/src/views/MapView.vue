@@ -660,7 +660,7 @@ export default {
 .sidebar-header {
   background: #f8f9fa;
   border-bottom: 1px solid #e2e8f0;
-  padding: 1rem 1.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
