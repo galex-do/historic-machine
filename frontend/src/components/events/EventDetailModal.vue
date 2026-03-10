@@ -1,6 +1,6 @@
 <template>
   <Teleport to="body">
-  <div v-if="isOpen" class="modal_overlay_base event_detail_modal_overlay" @click.self="closeModal">
+  <div v-if="isOpen" class="modal_overlay_base event_detail_modal_overlay" :class="{ 'no_overlay_bg': !!navigationSource }" @click.self="closeModal">
     <div class="event_detail_modal modal_fullscreen_mobile">
       <div class="event_detail_header">
         <div class="event_title_row">
@@ -133,6 +133,7 @@ import { watch, ref, computed, toRef, onMounted, onUnmounted } from 'vue'
 import { useLocale } from '@/composables/useLocale.js'
 import { useRelatedEvents } from '@/composables/useRelatedEvents.js'
 import { useAuth } from '@/composables/useAuth.js'
+import { useModalBackdrop } from '@/composables/useModalBackdrop.js'
 import { getEventEmoji } from '@/utils/event-utils.js'
 import { getContrastColor, getTagStyle } from '@/utils/color-utils.js'
 
@@ -160,7 +161,13 @@ export default {
   setup(props, { emit }) {
     const { t, formatEventDisplayDate } = useLocale()
     const { canEditEvents } = useAuth()
+    const { register_modal, unregister_modal } = useModalBackdrop()
     const previouslyFocusedElement = ref(null)
+
+    watch(() => props.isOpen, (open) => {
+      if (open) register_modal('detail')
+      else unregister_modal('detail')
+    }, { immediate: true })
 
     const eventRef = toRef(props, 'event')
     const allEventsRef = toRef(props, 'allEvents')
