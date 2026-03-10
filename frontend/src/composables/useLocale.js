@@ -48,7 +48,7 @@ const UI_TRANSLATIONS = {
     
     // About Page
     aboutTitle: 'About project',
-    aboutProjectDescription: 'Historia ex machina is an interactive platform based on a simple principle: every event has a time and place. I am often interested in understanding the context of a given event, which typically requires extensive reading. Here I try to solve the problem in a shorter way.',
+    aboutProjectDescription: 'timediverr is an interactive platform based on a simple principle: every event has a time and place. I am often interested in understanding the context of a given event, which typically requires extensive reading. Here I try to solve the problem in a shorter way.',
     aboutFeaturesTitle: 'Features',
     aboutFeature1: 'Interactive world map with historical event markers',
     aboutFeature2: 'Timeline filtering by historical periods and date ranges',
@@ -63,7 +63,7 @@ const UI_TRANSLATIONS = {
     aboutUseCase5: 'Museums and cultural institutions can create interactive exhibits for visitors',
     aboutOpenSource: 'This project is open source and free to use by anyone. The database is based on open, public sources. Contributions, feedback, and ideas are always welcome!',
     aboutContact: 'Contact',
-    aboutSupportTitle: 'Support Historia ex Machina',
+    aboutSupportTitle: 'Support timediverr',
     aboutSupportDescription: 'If you find this project useful and would like to support its development and growth, you can contribute through the following options:',
     aboutSupportLinkText: 'Visit',
     backToMap: 'Back to Map',
@@ -90,7 +90,7 @@ const UI_TRANSLATIONS = {
     paginationHint: 'Scroll or use arrow keys to navigate',
     
     // Login Modal
-    loginToHistoria: 'Login to Historia ex machina',
+    loginToHistoria: 'Login to timediverr',
     username: 'Username:',
     password: 'Password:',
     enterUsername: 'Enter username',
@@ -347,7 +347,7 @@ const UI_TRANSLATIONS = {
     
     // About Page
     aboutTitle: 'О проекте',
-    aboutProjectDescription: 'Historia ex machina — интерактивная платформа, в основе которой простой принцип: у каждого события есть время и место. Мне часто интересно получить представление о контексте того или иного события, для чего, как правило, нужно прочитать много специализированной литературы. Здесь я пытаюсь решить проблему более коротким путем.',
+    aboutProjectDescription: 'timediverr — интерактивная платформа, в основе которой простой принцип: у каждого события есть время и место. Мне часто интересно получить представление о контексте того или иного события, для чего, как правило, нужно прочитать много специализированной литературы. Здесь я пытаюсь решить проблему более коротким путем.',
     aboutFeaturesTitle: 'Возможности',
     aboutFeature1: 'Интерактивная карта мира с маркерами исторических событий',
     aboutFeature2: 'Фильтрация событий по изучаемому региону, временной шкале и историческим периодам',
@@ -362,7 +362,7 @@ const UI_TRANSLATIONS = {
     aboutUseCase5: 'Музеи и культурные учреждения могут создавать интерактивные экспонаты для посетителей',
     aboutOpenSource: 'Проект имеет открытый исходный код и доступен любому желающему. База данных формируется из открытых, публичных источников. Предлагайте свои изменения, датасеты или просто используйте приложение так, как вам удобно',
     aboutContact: 'Связаться',
-    aboutSupportTitle: 'Поддержать Historia ex Machina',
+    aboutSupportTitle: 'Поддержать timediverr',
     aboutSupportDescription: 'Если вам понравился проект и вы хотели бы поддержать его развитие, можно использовать для этого:',
     aboutSupportLinkText: 'Перейти',
     backToMap: 'Вернуться к карте',
@@ -389,7 +389,7 @@ const UI_TRANSLATIONS = {
     paginationHint: 'Прокрутка или стрелки для навигации',
     
     // Login Modal
-    loginToHistoria: 'Вход в Historia ex machina',
+    loginToHistoria: 'Вход в timediverr',
     username: 'Имя пользователя:',
     password: 'Пароль:',
     enterUsername: 'Введите имя пользователя',

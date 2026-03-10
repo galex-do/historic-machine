@@ -4,7 +4,7 @@
       <!-- Logo with dropdown menu -->
       <div class="logo-dropdown" @click.stop>
         <button class="logo-btn" @click="toggleLogoDropdown">
-          <h1>Historia ex machina</h1>
+          <h1>timediverr</h1>
           <span class="dropdown-arrow" :class="{ 'open': showLogoDropdown }">▼</span>
         </button>
         <div v-if="showLogoDropdown" class="logo-dropdown-menu">

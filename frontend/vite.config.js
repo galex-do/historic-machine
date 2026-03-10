@@ -20,7 +20,7 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/tiles/, ''),
         configure: (proxy, options) => {
           proxy.on('proxyReq', (proxyReq) => {
-            proxyReq.setHeader('User-Agent', 'Historia ex machina Development');
+            proxyReq.setHeader('User-Agent', 'timediverr Development');
           });
         }
       }

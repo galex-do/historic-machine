@@ -1,4 +1,4 @@
-# Historia ex Machina
+# timediverr
 
 A comprehensive web application for mapping historical events featuring interactive world map, timeline controls, BC/AD support, comprehensive tags, user authentication, and dataset management system.
 
