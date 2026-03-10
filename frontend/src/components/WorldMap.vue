@@ -1300,8 +1300,7 @@ export default {
       
       try {
         this.map.setView([event.latitude, event.longitude], this.map.getZoom(), {
-          animate: true,
-          duration: 1.0
+          animate: false
         })
         
         // Add highlight marker (same as "Highlight on map" feature)
