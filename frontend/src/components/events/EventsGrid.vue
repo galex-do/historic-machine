@@ -81,19 +81,16 @@
         <p class="empty-state-hint">{{ t('emptyStateHint') }}</p>
       </div>
       
-      <TransitionGroup name="event-card-list" tag="div" class="event-card-list-wrapper">
-        <EventCard
-          v-for="(event, index) in paginatedEvents"
-          :key="event.id"
-          :event="event"
-          :map-filter-enabled="mapFilterEnabled"
-          :style="{ '--card-index': index }"
-          @focus-event="$emit('focus-event', $event)"
-          @highlight-event="$emit('highlight-event', $event)"
-          @tag-clicked="$emit('tag-clicked', $event)"
-          @show-detail="openEventDetail"
-        />
-      </TransitionGroup>
+      <EventCard
+        v-for="event in paginatedEvents"
+        :key="event.id"
+        :event="event"
+        :map-filter-enabled="mapFilterEnabled"
+        @focus-event="$emit('focus-event', $event)"
+        @highlight-event="$emit('highlight-event', $event)"
+        @tag-clicked="$emit('tag-clicked', $event)"
+        @show-detail="openEventDetail"
+      />
     </div>
 
     <!-- Timeline Modal -->
@@ -561,30 +558,4 @@ export default {
   }
 }
 
-.event-card-list-wrapper {
-  display: contents;
-}
-
-.event-card-list-enter-active {
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  transition-delay: calc(var(--card-index, 0) * 0.03s);
-}
-
-.event-card-list-leave-active {
-  transition: opacity 0.15s ease, transform 0.15s ease;
-}
-
-.event-card-list-enter-from {
-  opacity: 0;
-  transform: translateY(8px);
-}
-
-.event-card-list-leave-to {
-  opacity: 0;
-  transform: translateY(-4px);
-}
-
-.event-card-list-move {
-  transition: transform 0.25s ease;
-}
 </style>
