@@ -75,7 +75,7 @@
 }
 
 .timeline_single_text .event_name_link {
-  font-weight: 700;
+  font-weight: 500;
   color: #4f46e5;
   cursor: pointer;
   transition: all 0.2s;
@@ -83,6 +83,7 @@
 
 .timeline_single_text .event_name_link:hover {
   color: #4338ca;
+  text-decoration: underline;
 }
 
 .timeline_events_list {
