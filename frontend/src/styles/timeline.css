@@ -154,20 +154,6 @@
   display: none;
 }
 
-.tags_expand_wrapper.expanded .tags_expand_toggle {
-  display: none;
-}
-
 .tags_expand_wrapper.expanded .tags_hover_list {
   display: inline;
-}
-
-.tags_expand_wrapper:not(.expanded):hover .tags_hover_list {
-  display: inline;
-  animation: tags_fade_in 0.15s ease 1s both;
-}
-
-@keyframes tags_fade_in {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }

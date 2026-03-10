@@ -90,7 +90,7 @@
                   </template>
                   <template v-if="location_show_details && yearGroup.dateGroups[0].events[0].tags && yearGroup.dateGroups[0].events[0].tags.length > 0">
                     {{ ' ' }}
-                    <span class="tags_expand_wrapper" :class="{ 'expanded': isEventTagsExpanded(yearGroup.dateGroups[0].events[0].id) }">
+                    <span class="tags_expand_wrapper" :class="{ 'expanded': isEventTagsExpanded(yearGroup.dateGroups[0].events[0].id) }" @mouseenter="onTagsHover(yearGroup.dateGroups[0].events[0].id)" @mouseleave="onTagsLeave(yearGroup.dateGroups[0].events[0].id)">
                       <span 
                         class="tags_expand_toggle"
                         @click.stop="toggleEventTags(yearGroup.dateGroups[0].events[0].id)"
@@ -156,7 +156,7 @@
                           </template>
                           <template v-if="location_show_details && dateGroup.events[0].tags && dateGroup.events[0].tags.length > 0">
                             {{ ' ' }}
-                            <span class="tags_expand_wrapper" :class="{ 'expanded': isEventTagsExpanded(dateGroup.events[0].id) }">
+                            <span class="tags_expand_wrapper" :class="{ 'expanded': isEventTagsExpanded(dateGroup.events[0].id) }" @mouseenter="onTagsHover(dateGroup.events[0].id)" @mouseleave="onTagsLeave(dateGroup.events[0].id)">
                               <span 
                                 class="tags_expand_toggle"
                                 @click.stop="toggleEventTags(dateGroup.events[0].id)"
@@ -219,7 +219,7 @@
                           </template>
                           <template v-if="location_show_details && event.tags && event.tags.length > 0">
                             {{ ' ' }}
-                            <span class="tags_expand_wrapper" :class="{ 'expanded': isEventTagsExpanded(event.id) }">
+                            <span class="tags_expand_wrapper" :class="{ 'expanded': isEventTagsExpanded(event.id) }" @mouseenter="onTagsHover(event.id)" @mouseleave="onTagsLeave(event.id)">
                               <span 
                                 class="tags_expand_toggle"
                                 @click.stop="toggleEventTags(event.id)"
@@ -1685,10 +1685,27 @@ export default {
     },
 
     toggleEventTags(eventId) {
-      // Vue 3 reactivity: create new object to trigger update
       this.expanded_event_tags = {
         ...this.expanded_event_tags,
         [eventId]: !this.expanded_event_tags[eventId]
+      }
+    },
+
+    onTagsHover(eventId) {
+      if (this.expanded_event_tags[eventId]) return
+      if (!this._hover_timers) this._hover_timers = {}
+      this._hover_timers[eventId] = setTimeout(() => {
+        this.expanded_event_tags = {
+          ...this.expanded_event_tags,
+          [eventId]: true
+        }
+      }, 500)
+    },
+
+    onTagsLeave(eventId) {
+      if (this._hover_timers && this._hover_timers[eventId]) {
+        clearTimeout(this._hover_timers[eventId])
+        delete this._hover_timers[eventId]
       }
     },
 

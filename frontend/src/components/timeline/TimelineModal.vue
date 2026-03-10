@@ -82,7 +82,7 @@
                 </template>
                 <template v-if="showDetails && yearGroup.dateGroups[0].events[0].tags && yearGroup.dateGroups[0].events[0].tags.length > 0">
                   {{ ' ' }}
-                  <span class="tags_expand_wrapper" :class="{ 'expanded': is_tags_expanded(yearGroup.dateGroups[0].events[0].id) }">
+                  <span class="tags_expand_wrapper" :class="{ 'expanded': is_tags_expanded(yearGroup.dateGroups[0].events[0].id) }" @mouseenter="on_tags_hover(yearGroup.dateGroups[0].events[0].id)" @mouseleave="on_tags_leave(yearGroup.dateGroups[0].events[0].id)">
                     <span 
                       class="tags_expand_toggle"
                       @click.stop="toggle_event_tags(yearGroup.dateGroups[0].events[0].id)"
@@ -147,7 +147,7 @@
                         </template>
                         <template v-if="showDetails && dateGroup.events[0].tags && dateGroup.events[0].tags.length > 0">
                           {{ ' ' }}
-                          <span class="tags_expand_wrapper" :class="{ 'expanded': is_tags_expanded(dateGroup.events[0].id) }">
+                          <span class="tags_expand_wrapper" :class="{ 'expanded': is_tags_expanded(dateGroup.events[0].id) }" @mouseenter="on_tags_hover(dateGroup.events[0].id)" @mouseleave="on_tags_leave(dateGroup.events[0].id)">
                             <span 
                               class="tags_expand_toggle"
                               @click.stop="toggle_event_tags(dateGroup.events[0].id)"
@@ -209,7 +209,7 @@
                         </template>
                         <template v-if="showDetails && event.tags && event.tags.length > 0">
                           {{ ' ' }}
-                          <span class="tags_expand_wrapper" :class="{ 'expanded': is_tags_expanded(event.id) }">
+                          <span class="tags_expand_wrapper" :class="{ 'expanded': is_tags_expanded(event.id) }" @mouseenter="on_tags_hover(event.id)" @mouseleave="on_tags_leave(event.id)">
                             <span 
                               class="tags_expand_toggle"
                               @click.stop="toggle_event_tags(event.id)"
@@ -304,6 +304,7 @@ export default {
     const showDetails = ref(false)
     const isLoading = ref(false)
     const expanded_tags = ref(new Set())
+    const hover_timers = {}
 
     const toggle_event_tags = (event_id) => {
       const s = new Set(expanded_tags.value)
@@ -317,6 +318,22 @@ export default {
 
     const is_tags_expanded = (event_id) => {
       return expanded_tags.value.has(event_id)
+    }
+
+    const on_tags_hover = (event_id) => {
+      if (expanded_tags.value.has(event_id)) return
+      hover_timers[event_id] = setTimeout(() => {
+        const s = new Set(expanded_tags.value)
+        s.add(event_id)
+        expanded_tags.value = s
+      }, 500)
+    }
+
+    const on_tags_leave = (event_id) => {
+      if (hover_timers[event_id]) {
+        clearTimeout(hover_timers[event_id])
+        delete hover_timers[event_id]
+      }
     }
     
     const localizeDate = (dateStr) => {
@@ -735,7 +752,9 @@ export default {
       getTagStyle,
       getKeyColorTags,
       toggle_event_tags,
-      is_tags_expanded
+      is_tags_expanded,
+      on_tags_hover,
+      on_tags_leave
     }
   }
 }
