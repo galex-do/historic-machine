@@ -1005,22 +1005,22 @@ export default {
               
               let circleSize, fontSize
               if (totalEventCount > 200) {
+                circleSize = 54
+                fontSize = 15
+              } else if (totalEventCount > 100) {
                 circleSize = 48
                 fontSize = 14
-              } else if (totalEventCount > 100) {
+              } else if (totalEventCount > 50) {
                 circleSize = 42
                 fontSize = 13
-              } else if (totalEventCount > 50) {
+              } else if (totalEventCount > 20) {
                 circleSize = 36
                 fontSize = 12
-              } else if (totalEventCount > 20) {
+              } else if (totalEventCount >= 10) {
                 circleSize = 30
                 fontSize = 11
-              } else if (totalEventCount >= 10) {
-                circleSize = 26
-                fontSize = 11
               } else {
-                circleSize = 22
+                circleSize = 26
                 fontSize = 10
               }
               
