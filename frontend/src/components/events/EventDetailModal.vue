@@ -268,7 +268,7 @@ export default {
 
 .event_detail_header {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   padding: 1rem 1.25rem;
   border-bottom: 1px solid #e2e8f0;
@@ -277,7 +277,7 @@ export default {
 
 .event_title_row {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.5rem;
   flex: 1;
   min-width: 0;
@@ -285,6 +285,7 @@ export default {
 
 .event_icon {
   font-size: 1.25rem;
+  line-height: 1;
   flex-shrink: 0;
 }
 
@@ -294,8 +295,8 @@ export default {
   font-weight: 600;
   color: #1e293b;
   word-break: break-word;
+  line-height: 1.3;
 }
-
 
 .back_btn {
   background: none;
