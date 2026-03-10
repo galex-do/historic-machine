@@ -1,4 +1,5 @@
 <template>
+  <Teleport to="body">
   <div v-if="isOpen" class="modal_overlay_base timeline_modal_overlay" @click.self="closeModal">
     <div class="timeline_modal modal_fullscreen_mobile">
       <!-- Modal Header -->
@@ -231,6 +232,7 @@
       </div>
     </div>
   </div>
+  </Teleport>
 </template>
 
 <script>

@@ -1,4 +1,5 @@
 <template>
+  <Teleport to="body">
   <div v-if="isOpen" class="modal_overlay_base event_detail_modal_overlay" @click.self="closeModal">
     <div class="event_detail_modal modal_fullscreen_mobile">
       <div class="event_detail_header">
@@ -124,6 +125,7 @@
       </div>
     </div>
   </div>
+  </Teleport>
 </template>
 
 <script>
