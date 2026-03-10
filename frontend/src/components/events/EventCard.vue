@@ -96,11 +96,12 @@ export default {
 .event-card-compact {
   padding: 0.5rem 0.75rem;
   border-bottom: 1px solid #e2e8f0;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s;
 }
 
 .event-card-compact:hover {
   background-color: #f8f9fa;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
 .event_title_line {

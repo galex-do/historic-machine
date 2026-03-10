@@ -10,6 +10,7 @@
   justify-content: center;
   z-index: 100000;
   padding: 2rem;
+  animation: modal_overlay_fade_in 0.2s ease-out;
 }
 
 .modal_fullscreen_mobile {
@@ -17,6 +18,23 @@
   border-radius: 12px;
   display: flex;
   flex-direction: column;
+  animation: modal_slide_up 0.25s ease-out;
+}
+
+@keyframes modal_overlay_fade_in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modal_slide_up {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 @media (max-width: 768px) {
