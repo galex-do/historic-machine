@@ -113,58 +113,106 @@
               <!-- Date subgroups within year -->
               <div class="timeline_events_list">
                 <template v-for="dateGroup in yearGroup.dateGroups" :key="dateGroup.date">
-                  <!-- Date subheader (only for non-Jan-1 dates with multiple events, or mixed dates) -->
-                  <div v-if="dateGroup.showDateHeader" class="timeline_date_subheader">
-                    {{ dateGroup.formattedDate }}
-                  </div>
-
-                  <div 
-                    v-for="event in dateGroup.events" 
-                    :key="event.id"
-                    class="timeline_event_line"
-                    :class="{ 'timeline_event_line_indented': dateGroup.showDateHeader }"
-                  >
-                    <span class="timeline_single_text">
-                      <span class="event_icon">{{ getEventEmoji(event.lens_type) }}</span>
-                      {{ ' ' }}
-                      <span 
-                         class="event_name event_name_link"
-                         @click="handleShowDetail(event)"
-                      >{{ event.name }}</span>
-                      <template v-if="!showDetails && getKeyColorTags(event.tags).length > 0">
+                  <template v-if="dateGroup.showDateHeader && dateGroup.events.length === 1">
+                    <div class="timeline_event_line timeline_date_inline_event">
+                      <span class="timeline_single_text">
+                        <span class="timeline_date_inline_sub">{{ dateGroup.formattedDate }}</span>
+                        {{ ' ' }}
+                        <span class="event_icon">{{ getEventEmoji(dateGroup.events[0].lens_type) }}</span>
+                        {{ ' ' }}
                         <span 
-                          v-for="kt in getKeyColorTags(event.tags)" 
-                          :key="'kc-' + kt.id"
-                          class="key_color_dot"
-                          :style="{ backgroundColor: kt.color }"
-                          :title="kt.name"
-                        ></span>
-                      </template>
-                      <template v-if="showDetails && event.description">
-                        {{ ' — ' }}{{ event.description }}
-                      </template>
-                      <template v-if="showDetails && event.tags && event.tags.length > 0">
+                           class="event_name event_name_link"
+                           @click="handleShowDetail(dateGroup.events[0])"
+                        >{{ dateGroup.events[0].name }}</span>
+                        <template v-if="!showDetails && getKeyColorTags(dateGroup.events[0].tags).length > 0">
+                          <span 
+                            v-for="kt in getKeyColorTags(dateGroup.events[0].tags)" 
+                            :key="'kc-' + kt.id"
+                            class="key_color_dot"
+                            :style="{ backgroundColor: kt.color }"
+                            :title="kt.name"
+                          ></span>
+                        </template>
+                        <template v-if="showDetails && dateGroup.events[0].description">
+                          {{ ' — ' }}{{ dateGroup.events[0].description }}
+                        </template>
+                        <template v-if="showDetails && dateGroup.events[0].tags && dateGroup.events[0].tags.length > 0">
+                          {{ ' ' }}
+                          <span
+                            v-for="tag in dateGroup.events[0].tags"
+                            :key="tag.id"
+                            class="event_tag_badge"
+                            :style="getTagStyle(tag)"
+                            @click.stop="handleTagClick(tag)"
+                          >{{ tag.name }}</span>
+                        </template>
+                        <template v-if="showDetails">
+                          {{ ' ' }}
+                          <button 
+                            class="timeline_focus_btn" 
+                            @click="handleFocusEvent(dateGroup.events[0])"
+                            :title="t('focusOnMap')"
+                          >
+                            ⌖
+                          </button>
+                        </template>
+                      </span>
+                    </div>
+                  </template>
+
+                  <template v-else>
+                    <div v-if="dateGroup.showDateHeader" class="timeline_date_subheader">
+                      {{ dateGroup.formattedDate }}
+                    </div>
+
+                    <div 
+                      v-for="event in dateGroup.events" 
+                      :key="event.id"
+                      class="timeline_event_line"
+                      :class="{ 'timeline_event_line_indented': dateGroup.showDateHeader }"
+                    >
+                      <span class="timeline_single_text">
+                        <span class="event_icon">{{ getEventEmoji(event.lens_type) }}</span>
                         {{ ' ' }}
-                        <span
-                          v-for="tag in event.tags"
-                          :key="tag.id"
-                          class="event_tag_badge"
-                          :style="getTagStyle(tag)"
-                          @click.stop="handleTagClick(tag)"
-                        >{{ tag.name }}</span>
-                      </template>
-                      <template v-if="showDetails">
-                        {{ ' ' }}
-                        <button 
-                          class="timeline_focus_btn" 
-                          @click="handleFocusEvent(event)"
-                          :title="t('focusOnMap')"
-                        >
-                          ⌖
-                        </button>
-                      </template>
-                    </span>
-                  </div>
+                        <span 
+                           class="event_name event_name_link"
+                           @click="handleShowDetail(event)"
+                        >{{ event.name }}</span>
+                        <template v-if="!showDetails && getKeyColorTags(event.tags).length > 0">
+                          <span 
+                            v-for="kt in getKeyColorTags(event.tags)" 
+                            :key="'kc-' + kt.id"
+                            class="key_color_dot"
+                            :style="{ backgroundColor: kt.color }"
+                            :title="kt.name"
+                          ></span>
+                        </template>
+                        <template v-if="showDetails && event.description">
+                          {{ ' — ' }}{{ event.description }}
+                        </template>
+                        <template v-if="showDetails && event.tags && event.tags.length > 0">
+                          {{ ' ' }}
+                          <span
+                            v-for="tag in event.tags"
+                            :key="tag.id"
+                            class="event_tag_badge"
+                            :style="getTagStyle(tag)"
+                            @click.stop="handleTagClick(tag)"
+                          >{{ tag.name }}</span>
+                        </template>
+                        <template v-if="showDetails">
+                          {{ ' ' }}
+                          <button 
+                            class="timeline_focus_btn" 
+                            @click="handleFocusEvent(event)"
+                            :title="t('focusOnMap')"
+                          >
+                            ⌖
+                          </button>
+                        </template>
+                      </span>
+                    </div>
+                  </template>
                 </template>
               </div>
             </template>

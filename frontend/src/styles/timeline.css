@@ -98,6 +98,12 @@
   margin-top: 0.15rem;
 }
 
+.timeline_date_inline_sub {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #475569;
+}
+
 .timeline_event_line {
   padding: 0.15rem 0;
   padding-left: 0.35rem;

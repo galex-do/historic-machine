@@ -123,58 +123,108 @@
                 <!-- Date subgroups within year -->
                 <div class="timeline_events_list">
                   <template v-for="dateGroup in yearGroup.dateGroups" :key="dateGroup.date">
-                    <div v-if="dateGroup.showDateHeader" class="timeline_date_subheader">
-                      {{ dateGroup.formattedDate }}
-                    </div>
-
-                    <div 
-                      v-for="event in dateGroup.events" 
-                      :key="event.id"
-                      class="timeline_event_line"
-                      :class="{ 'timeline_event_line_indented': dateGroup.showDateHeader }"
-                    >
-                      <span class="timeline_single_text">
-                        <span class="event_icon">{{ get_event_emoji(event.lens_type) }}</span>
-                        {{ ' ' }}
-                        <span 
-                           class="event_name event_name_link"
-                           @click="handle_show_detail(event)"
-                        >{{ event.name }}</span>
-                        <template v-if="!location_show_details && getKeyColorTags(event.tags).length > 0">
+                    <template v-if="dateGroup.showDateHeader && dateGroup.events.length === 1">
+                      <div class="timeline_event_line timeline_date_inline_event">
+                        <span class="timeline_single_text">
+                          <span class="timeline_date_inline_sub">{{ dateGroup.formattedDate }}</span>
+                          {{ ' ' }}
+                          <span class="event_icon">{{ get_event_emoji(dateGroup.events[0].lens_type) }}</span>
+                          {{ ' ' }}
                           <span 
-                            v-for="kt in getKeyColorTags(event.tags)" 
-                            :key="'kc-' + kt.id"
-                            class="key_color_dot"
-                            :style="{ backgroundColor: kt.color }"
-                            :title="kt.name"
-                          ></span>
-                        </template>
-                        <template v-if="location_show_details && event.description">
-                          {{ ' — ' }}{{ event.description }}
-                        </template>
-                        <template v-if="location_show_details && event.tags && event.tags.length > 0">
+                             class="event_name event_name_link"
+                             @click="handle_show_detail(dateGroup.events[0])"
+                          >{{ dateGroup.events[0].name }}</span>
+                          <template v-if="!location_show_details && getKeyColorTags(dateGroup.events[0].tags).length > 0">
+                            <span 
+                              v-for="kt in getKeyColorTags(dateGroup.events[0].tags)" 
+                              :key="'kc-' + kt.id"
+                              class="key_color_dot"
+                              :style="{ backgroundColor: kt.color }"
+                              :title="kt.name"
+                            ></span>
+                          </template>
+                          <template v-if="location_show_details && dateGroup.events[0].description">
+                            {{ ' — ' }}{{ dateGroup.events[0].description }}
+                          </template>
+                          <template v-if="location_show_details && dateGroup.events[0].tags && dateGroup.events[0].tags.length > 0">
+                            {{ ' ' }}
+                            <span
+                              v-for="tag in dateGroup.events[0].tags"
+                              :key="tag.id"
+                              class="event_tag_badge"
+                              :style="getTagStyle(tag)"
+                              :title="`Click to filter events by '${tag.name}'`"
+                              @click.stop="handleTagClick(tag)"
+                            >{{ tag.name }}</span>
+                          </template>
+                          <template v-if="location_show_details && canEditEvents">
+                            {{ ' ' }}
+                            <button 
+                              class="event_inline_edit_btn" 
+                              @click="edit_event_from_info(dateGroup.events[0].id)"
+                              title="Edit event"
+                            >
+                              ✏️
+                            </button>
+                          </template>
+                        </span>
+                      </div>
+                    </template>
+
+                    <template v-else>
+                      <div v-if="dateGroup.showDateHeader" class="timeline_date_subheader">
+                        {{ dateGroup.formattedDate }}
+                      </div>
+
+                      <div 
+                        v-for="event in dateGroup.events" 
+                        :key="event.id"
+                        class="timeline_event_line"
+                        :class="{ 'timeline_event_line_indented': dateGroup.showDateHeader }"
+                      >
+                        <span class="timeline_single_text">
+                          <span class="event_icon">{{ get_event_emoji(event.lens_type) }}</span>
                           {{ ' ' }}
-                          <span
-                            v-for="tag in event.tags"
-                            :key="tag.id"
-                            class="event_tag_badge"
-                            :style="getTagStyle(tag)"
-                            :title="`Click to filter events by '${tag.name}'`"
-                            @click.stop="handleTagClick(tag)"
-                          >{{ tag.name }}</span>
-                        </template>
-                        <template v-if="location_show_details && canEditEvents">
-                          {{ ' ' }}
-                          <button 
-                            class="event_inline_edit_btn" 
-                            @click="edit_event_from_info(event.id)"
-                            title="Edit event"
-                          >
-                            ✏️
-                          </button>
-                        </template>
-                      </span>
-                    </div>
+                          <span 
+                             class="event_name event_name_link"
+                             @click="handle_show_detail(event)"
+                          >{{ event.name }}</span>
+                          <template v-if="!location_show_details && getKeyColorTags(event.tags).length > 0">
+                            <span 
+                              v-for="kt in getKeyColorTags(event.tags)" 
+                              :key="'kc-' + kt.id"
+                              class="key_color_dot"
+                              :style="{ backgroundColor: kt.color }"
+                              :title="kt.name"
+                            ></span>
+                          </template>
+                          <template v-if="location_show_details && event.description">
+                            {{ ' — ' }}{{ event.description }}
+                          </template>
+                          <template v-if="location_show_details && event.tags && event.tags.length > 0">
+                            {{ ' ' }}
+                            <span
+                              v-for="tag in event.tags"
+                              :key="tag.id"
+                              class="event_tag_badge"
+                              :style="getTagStyle(tag)"
+                              :title="`Click to filter events by '${tag.name}'`"
+                              @click.stop="handleTagClick(tag)"
+                            >{{ tag.name }}</span>
+                          </template>
+                          <template v-if="location_show_details && canEditEvents">
+                            {{ ' ' }}
+                            <button 
+                              class="event_inline_edit_btn" 
+                              @click="edit_event_from_info(event.id)"
+                              title="Edit event"
+                            >
+                              ✏️
+                            </button>
+                          </template>
+                        </span>
+                      </div>
+                    </template>
                   </template>
                 </div>
               </template>
