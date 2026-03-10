@@ -1,11 +1,5 @@
 <template>
   <div class="map-view">
-    <Teleport to="body">
-      <transition name="backdrop_fade">
-        <div v-if="any_modal_open" class="persistent_backdrop"></div>
-      </transition>
-    </Teleport>
-
     <!-- Enhanced Filter Bar -->
     <DateControlBar
       :date-from-display="dateFromDisplay"
@@ -86,7 +80,6 @@
 
 <script>
 import { ref, computed, nextTick, onMounted, watch } from 'vue'
-import { useModalBackdrop } from '@/composables/useModalBackdrop.js'
 import DateControlBar from '@/components/filters/DateControlBar.vue'
 import WorldMap from '@/components/WorldMap.vue'
 import EventsGrid from '@/components/events/EventsGrid.vue'
@@ -120,7 +113,6 @@ export default {
     const focusEvent = ref(null)
     const worldMap = ref(null)
     const eventsGrid = ref(null)
-    const { any_modal_open } = useModalBackdrop()
     
     // Map filter state
     const mapFilterEnabled = ref(false)
@@ -607,9 +599,6 @@ export default {
       handleEditEvent,
       handleBackToLocation,
       
-      // Modal backdrop
-      any_modal_open,
-
       // Narrative flow
       narrativeFlowEnabled,
 
@@ -624,9 +613,6 @@ export default {
 }
 </script>
 
-<style>
-@import '@/styles/modal-overlay.css';
-</style>
 <style scoped>
 .map-view {
   flex: 1;

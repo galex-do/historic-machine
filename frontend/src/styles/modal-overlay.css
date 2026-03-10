@@ -1,42 +1,16 @@
-.persistent_backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 99999;
-}
-
-.backdrop_fade-enter-active {
-  transition: opacity 0.2s ease-out;
-}
-
-.backdrop_fade-leave-active {
-  transition: opacity 0.15s ease-in;
-}
-
-.backdrop_fade-enter-from,
-.backdrop_fade-leave-to {
-  opacity: 0;
-}
-
 .modal_overlay_base {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 100000;
   padding: 2rem;
-}
-
-.modal_overlay_base.no_overlay_bg .modal_fullscreen_mobile {
-  animation: modal_slide_up 0.15s ease-out;
+  animation: modal_overlay_fade_in 0.2s ease-out;
 }
 
 .modal_fullscreen_mobile {

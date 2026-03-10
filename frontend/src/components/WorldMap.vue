@@ -33,7 +33,7 @@
     </div>
 
     <!-- Event Info Modal (shows event details without coordinate corruption) -->
-    <div v-if="show_event_info_modal" class="modal_overlay_base event_info_modal_overlay" :class="{ 'no_overlay_bg': location_modal_restored }" @click="close_event_info_modal">
+    <div v-if="show_event_info_modal" class="modal_overlay_base event_info_modal_overlay" @click="close_event_info_modal">
       <div class="event_info_modal modal_fullscreen_mobile" @click.stop>
         <!-- Modal Header -->
         <div class="event_info_modal_header">
@@ -269,7 +269,6 @@ import 'leaflet.markercluster'
 import { useAuth } from '@/composables/useAuth.js'
 import { useTags } from '@/composables/useTags.js'
 import { useLocale } from '@/composables/useLocale.js'
-import { useModalBackdrop } from '@/composables/useModalBackdrop.js'
 import apiService from '@/services/api.js'
 import { getEventEmoji, getAvailableLensTypes } from '@/utils/event-utils.js'
 import { getContrastColor, getTagStyle, getKeyColorTags } from '@/utils/color-utils.js'
@@ -284,7 +283,6 @@ export default {
     const { canCreateEvents, canEditEvents, isGuest } = useAuth()
     const { allTags, loadTags } = useTags()
     const { formatEventDisplayDate, formatDayMonth, t } = useLocale()
-    const { register_modal, unregister_modal } = useModalBackdrop()
     return {
       canCreateEvents,
       canEditEvents,
@@ -293,9 +291,7 @@ export default {
       t,
       loadTags,
       formatEventDisplayDate,
-      formatDayMonth,
-      register_modal,
-      unregister_modal
+      formatDayMonth
     }
   },
   props: {
@@ -336,7 +332,6 @@ export default {
       highlight_overlay: null, // Store highlight overlay layer (halo ring + center dot)
       user_location_layer: null, // Store user location marker (geolocation feature)
       expanded_event_tags: {}, // Track which events have expanded tags
-      location_modal_restored: false, // Skip overlay animation on back navigation
       editing_event: null, // Store the event being edited
       is_stepping: false, // Track if current update is from date stepping
       preserve_map_view: false, // Preserve current view after event edit/create/delete
@@ -359,10 +354,6 @@ export default {
     }
   },
   watch: {
-    show_event_info_modal(open) {
-      if (open) this.register_modal('location')
-      else this.unregister_modal('location')
-    },
     events: {
       handler() {
         if (this.map) {
@@ -1603,7 +1594,6 @@ export default {
       this.selected_events = []
       this.expanded_event_tags = {}
       this.location_visible_count = 50
-      this.location_modal_restored = false
     },
     handle_location_scroll(e) {
       const container = e.target
@@ -1745,7 +1735,6 @@ export default {
       if (this.location_events_backup && this.location_events_backup.length > 0) {
         this.selected_events = this.location_events_backup
         this.location_visible_count = this.location_visible_count_backup
-        this.location_modal_restored = true
         this.show_event_info_modal = true
         this.$nextTick(() => {
           if (this.$refs.locationModalContent && this.location_scroll_backup > 0) {

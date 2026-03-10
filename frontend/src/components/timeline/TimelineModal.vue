@@ -1,6 +1,6 @@
 <template>
   <Teleport to="body">
-  <div v-if="isOpen" class="modal_overlay_base timeline_modal_overlay" :class="{ 'no_overlay_bg': preserveScroll }" @click.self="closeModal">
+  <div v-if="isOpen" class="modal_overlay_base timeline_modal_overlay" @click.self="closeModal">
     <div class="timeline_modal modal_fullscreen_mobile">
       <!-- Modal Header -->
       <div class="timeline_modal_header">
@@ -262,7 +262,6 @@
 <script>
 import { ref, computed, watch, onMounted, onUnmounted, nextTick } from 'vue'
 import { useLocale } from '@/composables/useLocale.js'
-import { useModalBackdrop } from '@/composables/useModalBackdrop.js'
 import { getEventEmoji } from '@/utils/event-utils.js'
 import { getContrastColor, getTagStyle, getKeyColorTags } from '@/utils/color-utils.js'
 
@@ -297,14 +296,8 @@ export default {
   emits: ['close', 'focus-event', 'tag-clicked', 'remove-tag', 'show-detail', 'expand-date-range'],
   setup(props, { emit }) {
     const { t, formatEventDisplayDate, formatDayMonth, currentLocale } = useLocale()
-    const { register_modal, unregister_modal } = useModalBackdrop()
     const previouslyFocusedElement = ref(null)
     const scrollContainer = ref(null)
-
-    watch(() => props.isOpen, (open) => {
-      if (open) register_modal('timeline')
-      else unregister_modal('timeline')
-    }, { immediate: true })
     
     const BATCH_SIZE = 50
     const visibleCount = ref(BATCH_SIZE)
