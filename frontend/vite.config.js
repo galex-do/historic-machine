@@ -14,11 +14,31 @@ export default defineConfig({
         changeOrigin: true,
         secure: false
       },
-      '/tiles': {
-        target: 'https://tile.openstreetmap.org',
+      '/tiles-a': {
+        target: 'https://a.tile.openstreetmap.org',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/tiles/, ''),
-        configure: (proxy, options) => {
+        rewrite: (path) => path.replace(/^\/tiles-a/, ''),
+        configure: (proxy) => {
+          proxy.on('proxyReq', (proxyReq) => {
+            proxyReq.setHeader('User-Agent', 'timediverr Development');
+          });
+        }
+      },
+      '/tiles-b': {
+        target: 'https://b.tile.openstreetmap.org',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/tiles-b/, ''),
+        configure: (proxy) => {
+          proxy.on('proxyReq', (proxyReq) => {
+            proxyReq.setHeader('User-Agent', 'timediverr Development');
+          });
+        }
+      },
+      '/tiles-c': {
+        target: 'https://c.tile.openstreetmap.org',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/tiles-c/, ''),
+        configure: (proxy) => {
           proxy.on('proxyReq', (proxyReq) => {
             proxyReq.setHeader('User-Agent', 'timediverr Development');
           });

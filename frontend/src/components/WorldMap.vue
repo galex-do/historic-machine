@@ -625,10 +625,16 @@ export default {
         attributionControl: false
       }).setView([20, 0], 2)
       
-      // Add OpenStreetMap tile layer via Nginx cache proxy
-      L.tileLayer('/tiles/{z}/{x}/{y}.png', {
+      // Add OpenStreetMap tile layer — uses subdomain rotation for parallel loading
+      // In dev: Vite proxies /tiles-a, /tiles-b, /tiles-c to respective OSM subdomains
+      // In prod: Nginx proxies /tiles/ with upstream round-robin across a/b/c subdomains
+      const tile_url = import.meta.env.DEV
+        ? '/tiles-{s}/{z}/{x}/{y}.png'
+        : '/tiles/{z}/{x}/{y}.png'
+      L.tileLayer(tile_url, {
         maxZoom: 18,
-        minZoom: 2
+        minZoom: 2,
+        subdomains: 'abc'
       }).addTo(this.map)
       
       // Add click event for creating new events
