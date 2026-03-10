@@ -309,7 +309,7 @@ export default {
 
 <style scoped>
 .app-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4338ca 0%, #3730a3 100%);
   color: white;
   padding: 0.75rem 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -488,7 +488,7 @@ export default {
 }
 
 .access-badge.admin {
-  background: #3182ce;
+  background: #4338ca;
   color: white;
 }
 
@@ -957,8 +957,8 @@ export default {
 
 :global(.form-input:focus) {
   outline: none;
-  border-color: #4299e1;
-  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
 }
 
 :global(.form-actions) {
@@ -968,7 +968,7 @@ export default {
 :global(.submit-btn) {
   width: 100%;
   padding: 0.75rem;
-  background: #4299e1;
+  background: #4f46e5;
   color: white;
   border: none;
   border-radius: 6px;
@@ -979,7 +979,7 @@ export default {
 }
 
 :global(.submit-btn:hover:not(:disabled)) {
-  background: #3182ce;
+  background: #4338ca;
 }
 
 :global(.submit-btn:disabled) {
@@ -992,7 +992,7 @@ export default {
   padding: 1rem;
   background: #f7fafc;
   border-radius: 6px;
-  border-left: 4px solid #4299e1;
+  border-left: 4px solid #4f46e5;
 }
 
 :global(.demo-info p) {

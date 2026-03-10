@@ -282,8 +282,8 @@ export default {
 
 .date-input:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
 }
 
 .template-section {
@@ -306,7 +306,7 @@ export default {
 }
 
 .apply-button {
-  background: #667eea;
+  background: #4f46e5;
   color: white;
   border: none;
   border-radius: 6px;
@@ -322,7 +322,7 @@ export default {
 .apply-button:hover {
   background: #5a67d8;
   transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 2px 4px rgba(79, 70, 229, 0.3);
 }
 
 .step-controls-section {
@@ -382,8 +382,8 @@ export default {
 
 .step-select:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.1);
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
 }
 
 /* Responsive design */
@@ -437,7 +437,7 @@ export default {
   .mobile-filter-icon {
     font-size: 1rem;
     flex-shrink: 0;
-    color: #667eea;
+    color: #4f46e5;
   }
 
   .mobile-filter-label {

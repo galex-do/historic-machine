@@ -665,7 +665,7 @@ export default {
 }
 
 .pin-button:hover {
-  border-color: #3b82f6;
+  border-color: #4f46e5;
   background: #eff6ff;
 }
 
@@ -705,8 +705,8 @@ export default {
 .form-input:focus,
 .form-textarea:focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
 }
 
 .form-textarea {
@@ -776,7 +776,7 @@ export default {
 
 .tag-search-input:focus {
   outline: none;
-  border-color: #3b82f6;
+  border-color: #4f46e5;
 }
 
 .tag-suggestions {
@@ -918,12 +918,12 @@ export default {
 }
 
 .submit-btn {
-  background: #3b82f6;
+  background: #4f46e5;
   color: white;
 }
 
 .submit-btn:hover {
-  background: #2563eb;
+  background: #4338ca;
 }
 
 .submit-btn:disabled {

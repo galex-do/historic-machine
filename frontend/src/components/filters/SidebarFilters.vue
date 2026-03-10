@@ -155,7 +155,7 @@ export default {
 
 .sidebar-toggle {
   background: #f8f9fa;
-  color: #667eea;
+  color: #4f46e5;
   border: 1px solid #e2e8f0;
   border-radius: 50%;
   width: 30px;
@@ -170,9 +170,9 @@ export default {
 }
 
 .sidebar-toggle:hover {
-  background: #667eea;
+  background: #4f46e5;
   color: white;
-  border-color: #667eea;
+  border-color: #4f46e5;
   transform: scale(1.1);
 }
 
@@ -212,8 +212,8 @@ export default {
 
 .filter-select:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
 }
 
 .filter-select option {
@@ -224,7 +224,7 @@ export default {
 .filter-button {
   width: 100%;
   padding: 0.75rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%);
   color: white;
   border: none;
   border-radius: 6px;
@@ -236,6 +236,6 @@ export default {
 
 .filter-button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
 }
 </style>

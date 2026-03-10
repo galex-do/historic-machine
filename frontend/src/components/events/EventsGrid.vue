@@ -462,10 +462,10 @@ export default {
 }
 
 .filter-btn.active {
-  background: #3b82f6;
-  border-color: #3b82f6;
+  background: #4f46e5;
+  border-color: #4f46e5;
   color: white;
-  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 2px 4px rgba(79, 70, 229, 0.2);
 }
 
 .filter-btn.active .btn-label {

@@ -216,8 +216,8 @@ export default {
 
 .select-dropdown:hover,
 .select-dropdown.active {
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
 }
 
 .select-dropdown.highlight {
@@ -258,7 +258,7 @@ export default {
   min-width: 20px;
   height: 20px;
   padding: 0 6px;
-  background: #667eea;
+  background: #4f46e5;
   color: white;
   font-size: 0.75rem;
   font-weight: 600;
@@ -303,7 +303,7 @@ export default {
 }
 
 .tag-search-input:focus {
-  border-color: #667eea;
+  border-color: #4f46e5;
 }
 
 .clear-all-section {

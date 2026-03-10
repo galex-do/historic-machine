@@ -26,7 +26,7 @@
           class="tag_suggestion_item"
           @mousedown.prevent="addTag(tag)"
           :style="{ 
-            borderLeftColor: tag.color || '#6366f1'
+            borderLeftColor: tag.color || '#4f46e5'
           }"
         >
           <span class="tag_suggestion_name">{{ tag.name }}</span>
@@ -256,8 +256,8 @@ export default {
 }
 
 .tag_search_input:focus {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
 }
 
 .tag_search_input::placeholder {
@@ -358,14 +358,14 @@ export default {
 }
 
 .tag_action_btn.active {
-  background: #3b82f6;
-  border-color: #2563eb;
+  background: #4f46e5;
+  border-color: #4338ca;
   color: white;
 }
 
 .tag_action_btn.active:hover {
-  background: #2563eb;
-  border-color: #1d4ed8;
+  background: #4338ca;
+  border-color: #3730a3;
 }
 
 .tag_action_btn.danger {

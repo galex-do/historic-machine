@@ -157,7 +157,7 @@ h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -244,7 +244,7 @@ p {
   padding: 1.25rem;
   background: linear-gradient(135deg, #f0f4ff 0%, #e8f4f8 100%);
   border-radius: 12px;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid #4f46e5;
 }
 
 .os-icon {
@@ -296,7 +296,7 @@ p {
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%);
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -307,7 +307,7 @@ p {
 
 .contact-link:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
 }
 
 .contact-icon {
@@ -356,7 +356,7 @@ p {
 }
 
 .support-link {
-  color: #667eea;
+  color: #4f46e5;
   text-decoration: none;
   font-weight: 500;
 }
@@ -382,7 +382,7 @@ p {
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%);
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -392,7 +392,7 @@ p {
 
 .btn-back:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
 }
 
 @media (max-width: 768px) {

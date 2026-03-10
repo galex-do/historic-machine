@@ -798,7 +798,7 @@ export default {
 }
 
 .usage-link {
-  color: #667eea;
+  color: #4f46e5;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.2s;
@@ -1097,7 +1097,7 @@ export default {
 }
 
 .toggle-switch input[type="checkbox"]:checked + .toggle-track {
-  background: #3b82f6;
+  background: #4f46e5;
 }
 
 .toggle-switch input[type="checkbox"]:checked + .toggle-track::after {

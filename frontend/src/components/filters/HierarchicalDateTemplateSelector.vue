@@ -377,8 +377,8 @@ export default {
 }
 
 .selector-button.active {
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
 }
 
 .button-label {
@@ -472,7 +472,7 @@ export default {
 .group-item.selected,
 .template-item.selected {
   background: #edf2f7;
-  border-left: 3px solid #667eea;
+  border-left: 3px solid #4f46e5;
   padding-left: calc(1rem - 3px);
 }
 
@@ -536,7 +536,7 @@ export default {
   width: 16px;
   height: 16px;
   border: 2px solid #e2e8f0;
-  border-top-color: #667eea;
+  border-top-color: #4f46e5;
   border-radius: 50%;
   animation: spin 0.6s linear infinite;
 }

@@ -838,7 +838,7 @@ export default {
         radius: 24,
         fillColor: 'transparent',
         fillOpacity: 0,
-        color: '#3b82f6',
+        color: '#4f46e5',
         weight: 4,
         opacity: 0.7
       })
@@ -848,17 +848,17 @@ export default {
         radius: 16,
         fillColor: 'transparent',
         fillOpacity: 0,
-        color: '#60a5fa',
+        color: '#818cf8',
         weight: 2,
         opacity: 0.5
       })
 
-      // Center dot - solid blue circle indicating exact position
+      // Center dot - solid indigo circle indicating exact position
       const centerDot = L.circleMarker(userLatLng, {
         radius: 8,
-        fillColor: '#3b82f6',
+        fillColor: '#4f46e5',
         fillOpacity: 1,
-        color: '#1d4ed8',
+        color: '#3730a3',
         weight: 2,
         opacity: 1
       })
@@ -1042,7 +1042,7 @@ export default {
                   if (keyTags.length > 0) {
                     taggedCount++
                     keyTags.forEach(tag => {
-                      const color = tag.color || '#6366f1'
+                      const color = tag.color || '#4f46e5'
                       colorCounts[color] = (colorCounts[color] || 0) + 1
                     })
                   }
@@ -1052,7 +1052,7 @@ export default {
               let bgStyle
               const colorEntries = Object.entries(colorCounts)
               if (colorEntries.length === 0) {
-                bgStyle = 'linear-gradient(135deg, #6366f1 0%, #4f46e5 100%)'
+                bgStyle = 'linear-gradient(135deg, #4f46e5 0%, #4f46e5 100%)'
               } else {
                 const totalWeight = colorEntries.reduce((sum, [, count]) => sum + count, 0)
                 const untaggedCount = totalEventCount - taggedCount
@@ -1068,7 +1068,7 @@ export default {
                 })
 
                 if (untaggedCount > 0) {
-                  segments.push(`#6366f1 ${angle}deg 360deg`)
+                  segments.push(`#4f46e5 ${angle}deg 360deg`)
                 }
 
                 bgStyle = `conic-gradient(${segments.join(', ')})`
@@ -1792,7 +1792,7 @@ export default {
       }
       
       // Create polyline segments with gradient color (dark blue to light blue)
-      const start_color = '#1e40af' // Dark blue (older events)
+      const start_color = '#3730a3' // Dark indigo (older events)
       const end_color = '#93c5fd'   // Light blue (newer events)
       const line_length = polyline_points.length
       
@@ -2262,13 +2262,13 @@ export default {
 
 .event_info_modal_title .event_name_link {
   font-weight: 700;
-  color: #3b82f6;
+  color: #4f46e5;
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .event_info_modal_title .event_name_link:hover {
-  color: #2563eb;
+  color: #4338ca;
 }
 
 .event_header_actions {
@@ -2365,7 +2365,7 @@ export default {
 }
 
 .event_inline_edit_btn:hover {
-  color: #3b82f6;
+  color: #4f46e5;
 }
 
 /* Scrollbar Styling */
@@ -2444,7 +2444,7 @@ export default {
 }
 
 ::deep(.cluster-circle) {
-  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  background: linear-gradient(135deg, #4f46e5 0%, #4f46e5 100%);
   border: 3px solid rgba(255, 255, 255, 0.9);
   border-radius: 50%;
   color: white;

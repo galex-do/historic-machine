@@ -19,7 +19,7 @@ export function getKeyColorTags(tags) {
 }
 
 export function getTagStyle(tag, options = {}) {
-  const bgColor = tag.color || '#6366f1'
+  const bgColor = tag.color || '#4f46e5'
   const style = {
     backgroundColor: bgColor,
     color: getContrastColor(bgColor)

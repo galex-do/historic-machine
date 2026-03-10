@@ -198,8 +198,8 @@ export default {
 
 .page-size-select:focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 1px #3b82f6;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 1px #4f46e5;
 }
 
 .pagination-controls {
@@ -235,13 +235,13 @@ export default {
 }
 
 .pagination-btn.active {
-  background-color: #3b82f6;
-  border-color: #3b82f6;
+  background-color: #4f46e5;
+  border-color: #4f46e5;
   color: white;
 }
 
 .pagination-btn.active:hover {
-  background-color: #2563eb;
+  background-color: #4338ca;
 }
 
 .page-numbers {

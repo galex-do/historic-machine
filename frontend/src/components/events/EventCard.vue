@@ -126,7 +126,7 @@ export default {
 
 .event_name_link {
   font-weight: 500;
-  color: #3b82f6;
+  color: #4f46e5;
   cursor: pointer;
   transition: color 0.2s;
   flex: 1;
@@ -134,7 +134,7 @@ export default {
 }
 
 .event_name_link:hover {
-  color: #1d4ed8;
+  color: #3730a3;
 }
 
 .event_description {
@@ -174,12 +174,12 @@ export default {
 }
 
 .focus_btn:hover {
-  color: #3b82f6;
+  color: #4f46e5;
 }
 
 .highlight_btn:focus-visible,
 .focus_btn:focus-visible {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid #4f46e5;
   outline-offset: 2px;
   border-radius: 2px;
 }

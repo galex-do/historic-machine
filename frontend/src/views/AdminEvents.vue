@@ -1104,14 +1104,14 @@ export default {
 }
 
 .event-name-link {
-  color: #3b82f6;
+  color: #4f46e5;
   text-decoration: none;
   transition: all 0.2s;
   font-weight: 600;
 }
 
 .event-name-link:hover {
-  color: #1d4ed8;
+  color: #3730a3;
   text-decoration: underline;
 }
 
@@ -1152,7 +1152,7 @@ export default {
 }
 
 .type-badge.military { background: #fef2f2; color: #dc2626; }
-.type-badge.political { background: #f0f9ff; color: #2563eb; }
+.type-badge.political { background: #f0f9ff; color: #4338ca; }
 .type-badge.historic { background: #f9fafb; color: #374151; }
 .type-badge.cultural { background: #f0fdf4; color: #16a34a; }
 .type-badge.scientific { background: #fefce8; color: #ca8a04; }
@@ -1362,8 +1362,8 @@ export default {
 
 .form-input:focus, .form-textarea:focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
   background: #fefefe;
 }
 
@@ -1385,8 +1385,8 @@ select.form-input:hover {
 }
 
 select.form-input:focus {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
 }
 
 /* Enhanced Textarea */
@@ -1415,7 +1415,7 @@ select.form-input:focus {
 }
 
 .tags-section:focus-within {
-  border-color: #3b82f6;
+  border-color: #4f46e5;
   background: white;
 }
 
@@ -1481,8 +1481,8 @@ select.form-input:focus {
 
 .tag-search-input:focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
 }
 
 .tag-suggestions {
@@ -1608,7 +1608,7 @@ select.form-input:focus {
 
 .create-tag-btn {
   padding: 0.75rem 1.5rem;
-  background: #3b82f6;
+  background: #4f46e5;
   color: white;
   border: none;
   border-radius: 8px;
@@ -1618,7 +1618,7 @@ select.form-input:focus {
 }
 
 .create-tag-btn:hover {
-  background: #2563eb;
+  background: #4338ca;
 }
 
 /* Enhanced Form Actions */
@@ -1650,7 +1650,7 @@ select.form-input:focus {
 
 .submit-btn {
   padding: 1rem 2rem;
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  background: linear-gradient(135deg, #4f46e5, #3730a3);
   color: white;
   border: none;
   border-radius: 10px;
@@ -1659,13 +1659,13 @@ select.form-input:focus {
   flex: 1;
   font-size: 1rem;
   transition: all 0.2s;
-  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);
 }
 
 .submit-btn:hover {
-  background: linear-gradient(135deg, #2563eb, #1e40af);
+  background: linear-gradient(135deg, #4338ca, #312e81);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
 }
 
 .submit-btn:disabled {
@@ -1730,8 +1730,8 @@ select.form-input:focus {
 }
 
 .search-input:focus {
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
 }
 
 .search-input::placeholder {
@@ -1752,7 +1752,7 @@ select.form-input:focus {
 }
 
 .clear-search:hover {
-  color: #667eea;
+  color: #4f46e5;
 }
 
 /* Clickable tags in table */

@@ -311,7 +311,7 @@ export default {
 }
 
 .back_btn:hover {
-  color: #3b82f6;
+  color: #4f46e5;
   background: #f1f5f9;
 }
 
@@ -382,7 +382,7 @@ export default {
 }
 
 .refresh_related_btn:hover {
-  color: #3b82f6;
+  color: #4f46e5;
 }
 
 .related_category {
@@ -434,7 +434,7 @@ export default {
 }
 
 .related_name {
-  color: #3b82f6;
+  color: #4f46e5;
   cursor: pointer;
   font-weight: 500;
   word-break: break-word;
@@ -457,7 +457,7 @@ export default {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: #3b82f6;
+  background: #4f46e5;
   border: none;
   border-radius: 0.375rem;
   padding: 0.5rem 1rem;
@@ -468,7 +468,7 @@ export default {
 }
 
 .focus_btn:hover {
-  background: #2563eb;
+  background: #4338ca;
 }
 
 .source_btn {
@@ -488,7 +488,7 @@ export default {
 
 .source_btn:hover {
   background: #e2e8f0;
-  color: #3b82f6;
+  color: #4f46e5;
 }
 
 .edit_btn {

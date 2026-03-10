@@ -738,7 +738,7 @@ export default {
 
 .current-user-badge {
   background: #dbeafe;
-  color: #1e40af;
+  color: #3730a3;
   font-size: 0.6rem;
   padding: 0.125rem 0.375rem;
   border-radius: 9999px;

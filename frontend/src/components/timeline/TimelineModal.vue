@@ -782,7 +782,7 @@ export default {
 }
 
 .expand_date_range_btn:hover {
-  color: #3b82f6;
+  color: #4f46e5;
 }
 
 .toggle_details_btn {
@@ -852,7 +852,7 @@ export default {
 }
 
 .timeline_focus_btn:hover {
-  color: #3b82f6;
+  color: #4f46e5;
 }
 
 .timeline_loading {
