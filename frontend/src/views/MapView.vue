@@ -547,6 +547,10 @@ export default {
       if (eventsLoaded.value) {
         applyFilters()
       }
+
+      if (selectedTemplateId.value) {
+        fetchRegionsForTemplate(selectedTemplateId.value)
+      }
       
       // Add click outside listener
       document.addEventListener('click', handleClickOutside)
