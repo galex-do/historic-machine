@@ -304,6 +304,52 @@ class ApiService {
       method: 'DELETE',
     })
   }
+
+  // Regions API
+  async getRegionsByTemplate(templateId) {
+    return this.makeRequest(`/templates/${templateId}/regions`)
+  }
+
+  async getAllRegions() {
+    return this.makeRequest('/regions')
+  }
+
+  async getRegion(id) {
+    return this.makeRequest(`/regions/${id}`)
+  }
+
+  async createRegion(data) {
+    return this.makeRequest('/regions', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    })
+  }
+
+  async updateRegion(id, data) {
+    return this.makeRequest(`/regions/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify(data),
+    })
+  }
+
+  async deleteRegion(id) {
+    return this.makeRequest(`/regions/${id}`, {
+      method: 'DELETE',
+    })
+  }
+
+  async linkRegionTemplates(regionId, templateIds) {
+    return this.makeRequest(`/regions/${regionId}/templates`, {
+      method: 'POST',
+      body: JSON.stringify({ template_ids: templateIds }),
+    })
+  }
+
+  async unlinkRegionTemplate(regionId, templateId) {
+    return this.makeRequest(`/regions/${regionId}/templates/${templateId}`, {
+      method: 'DELETE',
+    })
+  }
 }
 
 // Export singleton instance

@@ -13,7 +13,7 @@ A comprehensive web application for mapping historical events on an interactive 
 
 ### UI/UX Decisions
 - **Interactive World Map**: Utilizes Leaflet for scalable and interactive map visualization with event markers, zoom-dependent clustering, and narrative flow visualization.
-- **Admin Panel**: Professional table-based interface for managing events, tags, users, and datasets.
+- **Admin Panel**: Professional table-based interface for managing events, tags, users, datasets, and regions.
 - **Localization**: Full internationalization (English/Russian) for all UI elements, historical period templates, and event data. Reactive locale switching.
 - **Filter Panel**: Kibana-style removable chip interface for tag filtering with session storage persistence. Features a collapsible tag filter panel with a toggle button and chronological template sorting.
 - **Pagination**: Minimalistic pagination moved to the header for constant visibility.
@@ -52,6 +52,7 @@ A comprehensive web application for mapping historical events on an interactive 
 - **Template Management**: Admin interface for CRUD operations on date templates and template groups. Features dual modal system, BC/AD date handling with chronological sorting, and full localization (English/Russian). Template groups prevent deletion when containing templates.
 - **User Management**: Admin interface for managing user accounts and access levels (Guest, User, Editor, Admin, Super).
 - **Dataset Management**: Import and creation of localized event datasets. Includes modification tracking - datasets are automatically marked as modified when associated events are created, updated, or deleted. Admin panel shows warning icon for modified datasets with reset button to clear the flag after export.
+- **Region Management**: Polygonal boundaries on the map representing approximate territories (countries, empires, habitats) tied to date templates. Admin panel with leaflet-draw for polygon drawing/editing, GeoJSON import, color/opacity/border customization, and template linking. Regions render as styled GeoJSON layers on the map when a matching template is selected, with hover tooltips showing region names.
 - **Authentication**: Role-based access control, session persistence.
 
 ### System Design Choices
@@ -75,6 +76,7 @@ A comprehensive web application for mapping historical events on an interactive 
 - `leaflet`: Interactive map library for world map visualization.
 - `leaflet.markercluster`: Zoom-dependent marker clustering plugin for improved map UX at different zoom levels.
 - `vue-leaflet`: Vue.js wrapper for Leaflet maps.
+- `leaflet-draw`: Drawing and editing tools for Leaflet (polygon creation for regions).
 
 ### Other Integrations
 - **OpenStreetMap**: Used for map tiles, with server-side caching via Nginx.

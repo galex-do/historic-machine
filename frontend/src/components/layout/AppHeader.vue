@@ -75,6 +75,14 @@
                 {{ t('templates') }}
               </router-link>
               <router-link 
+                to="/admin/regions" 
+                class="dropdown-item"
+                @click="showLogoDropdown = false"
+              >
+                <span class="dropdown-icon">🗺️</span>
+                {{ t('regions') }}
+              </router-link>
+              <router-link 
                 to="/admin/datasets" 
                 class="dropdown-item"
                 @click="showLogoDropdown = false"

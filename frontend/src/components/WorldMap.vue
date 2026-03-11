@@ -310,6 +310,10 @@ export default {
     mapFilterEnabled: {
       type: Boolean,
       default: false
+    },
+    regions: {
+      type: Array,
+      default: () => []
     }
   },
   emits: ['event-created', 'event-updated', 'event-deleted', 'map-bounds-changed', 'tag-clicked', 'show-detail', 'back-to-location'],
@@ -350,7 +354,8 @@ export default {
         source: '',
         dataset_id: null
       },
-      datasets: [] // Available datasets for selection
+      datasets: [],
+      region_layer_group: null
     }
   },
   watch: {
@@ -400,6 +405,15 @@ export default {
           }
         }
       },
+      immediate: false
+    },
+    regions: {
+      handler(newRegions) {
+        if (this.map) {
+          this.render_regions(newRegions)
+        }
+      },
+      deep: true,
       immediate: false
     }
   },
@@ -601,6 +615,9 @@ export default {
       window.removeEventListener('localeChanged', this.handleLocaleChange)
     }
     
+    // Clean up region layers
+    this.clear_regions()
+
     // Clean up marker cluster group
     if (this.marker_cluster_group && this.map) {
       this.marker_cluster_group.clearLayers()
@@ -1897,6 +1914,55 @@ export default {
         this.map.removeLayer(layer)
       })
       this.polyline_layers = []
+    },
+
+    render_regions(regions) {
+      this.clear_regions()
+
+      if (!regions || regions.length === 0) return
+
+      this.region_layer_group = L.layerGroup()
+
+      regions.forEach(region => {
+        if (!region.geojson) return
+
+        try {
+          const geojsonData = typeof region.geojson === 'string' ? JSON.parse(region.geojson) : region.geojson
+
+          const layer = L.geoJSON(geojsonData, {
+            style: () => ({
+              color: region.border_color || region.color || '#4f46e5',
+              weight: region.border_width || 2,
+              fillColor: region.color || '#4f46e5',
+              fillOpacity: region.fill_opacity != null ? region.fill_opacity : 0.2,
+              opacity: 0.8
+            }),
+            onEachFeature: (feature, lyr) => {
+              const name = region.name || ''
+              if (name) {
+                lyr.bindTooltip(name, {
+                  sticky: true,
+                  direction: 'top',
+                  className: 'region-tooltip'
+                })
+              }
+            }
+          })
+
+          this.region_layer_group.addLayer(layer)
+        } catch (err) {
+          console.error('Error rendering region:', region.id, err)
+        }
+      })
+
+      this.region_layer_group.addTo(this.map)
+    },
+
+    clear_regions() {
+      if (this.region_layer_group && this.map) {
+        this.map.removeLayer(this.region_layer_group)
+        this.region_layer_group = null
+      }
     }
   }
 }
@@ -1906,6 +1972,20 @@ export default {
 @import '@/styles/tag-badge.css';
 @import '@/styles/timeline.css';
 @import '@/styles/modal-overlay.css';
+
+.region-tooltip {
+  background: rgba(30, 41, 59, 0.9);
+  color: #f1f5f9;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.region-tooltip::before {
+  border-top-color: rgba(30, 41, 59, 0.9);
+}
 </style>
 <style scoped>
 .event-tags {

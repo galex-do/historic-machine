@@ -64,6 +64,7 @@
           :focus-event="focusEvent"
           :narrative-flow-enabled="narrativeFlowEnabled"
           :map-filter-enabled="mapFilterEnabled"
+          :regions="regions"
           @event-created="handleEventCreated"
           @event-updated="handleEventUpdated"
           @event-deleted="handleEventDeleted"
@@ -89,6 +90,7 @@ import { useFilters } from '@/composables/useFilters.js'
 import { useTags } from '@/composables/useTags.js'
 import { useLocale } from '@/composables/useLocale.js'
 import { useUrlState } from '@/composables/useUrlState.js'
+import apiService from '@/services/api.js'
 
 export default {
   name: 'MapView',
@@ -113,6 +115,8 @@ export default {
     const focusEvent = ref(null)
     const worldMap = ref(null)
     const eventsGrid = ref(null)
+    
+    const regions = ref([])
     
     // Map filter state
     const mapFilterEnabled = ref(false)
@@ -232,15 +236,12 @@ export default {
     // Template methods
     const handleTemplateGroupChange = async (groupId) => {
       await templateGroupChange(groupId)
+      regions.value = []
       if (!groupId) {
-        // Reset to default date range when "Default (1 AD - Today)" is selected
         resetToDefaultDateRange()
       } else if (groupId === 'custom') {
-        // Custom mode - keep current dates, don't change anything
         console.log('Switched to Custom date range mode')
       } else {
-        // A template group was selected - apply the group-wide date range
-        // Templates have been fetched by awaited call above, so we can get the range immediately
         const groupRange = getGroupDateRange()
         if (groupRange) {
           applyTemplateDates(groupRange)
@@ -250,15 +251,29 @@ export default {
       applyFilters()
     }
 
+    const fetchRegionsForTemplate = async (templateId) => {
+      if (!templateId) {
+        regions.value = []
+        return
+      }
+      try {
+        const data = await apiService.getRegionsByTemplate(templateId)
+        regions.value = Array.isArray(data) ? data : []
+      } catch (err) {
+        console.error('Error fetching regions for template:', err)
+        regions.value = []
+      }
+    }
+
     const handleTemplateChange = (templateId) => {
       templateChange(templateId)
-      // Always apply template dates when a template is selected
       const templateData = applyTemplate()
       if (templateData) {
         applyTemplateDates(templateData)
         console.log(`Selected template: ${selectedTemplate.value.name} (${templateData.displayFrom} - ${templateData.displayTo})`)
       }
       applyFilters()
+      fetchRegionsForTemplate(templateId)
     }
     
     // Enhanced date update methods that switch to custom mode
@@ -601,6 +616,9 @@ export default {
       
       // Narrative flow
       narrativeFlowEnabled,
+
+      // Regions
+      regions,
 
       // URL sharing
       share_copied,

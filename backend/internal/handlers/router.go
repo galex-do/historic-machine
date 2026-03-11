@@ -20,10 +20,11 @@ type Router struct {
         datasetHandler  *DatasetHandler
         supportHandler  *SupportHandler
         configHandler   *ConfigHandler
+        regionHandler   *RegionHandler
 }
 
 // NewRouter creates a new router with all handlers
-func NewRouter(eventRepo *repositories.EventRepository, templateRepo *repositories.TemplateRepository, tagRepo *repositories.TagRepository, datasetRepo *repositories.DatasetRepository, authService *services.AuthService, supportRepo *repositories.SupportRepository) *Router {
+func NewRouter(eventRepo *repositories.EventRepository, templateRepo *repositories.TemplateRepository, tagRepo *repositories.TagRepository, datasetRepo *repositories.DatasetRepository, authService *services.AuthService, supportRepo *repositories.SupportRepository, regionRepo *repositories.RegionRepository) *Router {
         return &Router{
                 eventHandler:    NewEventHandler(eventRepo, tagRepo, datasetRepo),
                 templateHandler: NewTemplateHandler(templateRepo),
@@ -32,6 +33,7 @@ func NewRouter(eventRepo *repositories.EventRepository, templateRepo *repositori
                 datasetHandler:  NewDatasetHandler(datasetRepo, eventRepo),
                 supportHandler:  NewSupportHandler(supportRepo),
                 configHandler:   NewConfigHandler(),
+                regionHandler:   NewRegionHandler(regionRepo),
         }
 }
 
@@ -120,6 +122,16 @@ func (router *Router) SetupRoutes() http.Handler {
         api.HandleFunc("/support", router.authHandler.RequireAccessLevel(models.AccessLevelSuper)(router.supportHandler.CreateSupportCredential)).Methods("POST", "OPTIONS")
         api.HandleFunc("/support", router.authHandler.RequireAccessLevel(models.AccessLevelSuper)(router.supportHandler.UpdateSupportCredential)).Methods("PUT", "OPTIONS")
         api.HandleFunc("/support", router.authHandler.RequireAccessLevel(models.AccessLevelSuper)(router.supportHandler.DeleteSupportCredential)).Methods("DELETE", "OPTIONS")
+        
+        // Region routes (public: get by template; admin: CRUD)
+        api.HandleFunc("/templates/{id}/regions", router.regionHandler.GetRegionsByTemplate).Methods("GET", "OPTIONS")
+        api.HandleFunc("/regions", router.authHandler.RequireAccessLevel(models.AccessLevelEditor)(router.regionHandler.GetAllRegions)).Methods("GET", "OPTIONS")
+        api.HandleFunc("/regions", router.authHandler.RequireAccessLevel(models.AccessLevelEditor)(router.regionHandler.CreateRegion)).Methods("POST", "OPTIONS")
+        api.HandleFunc("/regions/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelEditor)(router.regionHandler.GetRegionByID)).Methods("GET", "OPTIONS")
+        api.HandleFunc("/regions/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelEditor)(router.regionHandler.UpdateRegion)).Methods("PUT", "OPTIONS")
+        api.HandleFunc("/regions/{id}", router.authHandler.RequireAccessLevel(models.AccessLevelEditor)(router.regionHandler.DeleteRegion)).Methods("DELETE", "OPTIONS")
+        api.HandleFunc("/regions/{id}/templates", router.authHandler.RequireAccessLevel(models.AccessLevelEditor)(router.regionHandler.LinkRegionToTemplates)).Methods("POST", "OPTIONS")
+        api.HandleFunc("/regions/{id}/templates/{templateId}", router.authHandler.RequireAccessLevel(models.AccessLevelEditor)(router.regionHandler.UnlinkRegionFromTemplate)).Methods("DELETE", "OPTIONS")
         
         // Public config route (contact email, etc.)
         api.HandleFunc("/config", router.configHandler.GetPublicConfig).Methods("GET", "OPTIONS")

@@ -8,6 +8,7 @@ const AdminEvents = () => import('@/views/AdminEvents.vue')
 const AdminTags = () => import('@/views/AdminTags.vue')
 const AdminTemplates = () => import('@/views/AdminTemplates.vue')
 const AdminUsers = () => import('@/views/AdminUsers.vue')
+const AdminRegions = () => import('@/views/AdminRegions.vue')
 
 const routes = [
   {
@@ -43,6 +44,12 @@ const routes = [
     name: 'AdminUsers',
     component: AdminUsers,
     meta: { requiresAdmin: true, requiresSuper: true }
+  },
+  {
+    path: '/admin/regions',
+    name: 'AdminRegions',
+    component: AdminRegions,
+    meta: { requiresAdmin: true }
   },
   {
     path: '/admin/datasets',
