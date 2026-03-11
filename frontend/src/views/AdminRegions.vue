@@ -410,7 +410,7 @@ export default {
           draw: {
             polygon: {
               allowIntersection: false,
-              showArea: true,
+              showArea: false,
               shapeOptions: {
                 color: regionForm.value.border_color,
                 fillColor: regionForm.value.color,
