@@ -2070,10 +2070,9 @@ export default {
 .region-label span {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.05em;
   opacity: 0.7;
-  text-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.8), 0 0 8px rgba(255, 255, 255, 0.5);
   transform: translate(-50%, -50%);
   display: block;
   pointer-events: none;
