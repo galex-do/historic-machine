@@ -391,11 +391,16 @@ export default {
       nextTick(() => {
         if (!drawMapContainer.value) return
 
-        drawMap = L.map(drawMapContainer.value).setView([30, 35], 3)
+        drawMap = L.map(drawMapContainer.value, {
+          tap: false
+        }).setView([30, 35], 3)
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '&copy; OpenStreetMap contributors',
           maxZoom: 18
         }).addTo(drawMap)
+
+        L.DomEvent.disableClickPropagation(drawMapContainer.value)
+        L.DomEvent.disableScrollPropagation(drawMapContainer.value)
 
         drawnItems = new L.FeatureGroup()
         drawMap.addLayer(drawnItems)
@@ -1055,6 +1060,7 @@ export default {
   border: 1px solid #e2e8f0;
   border-radius: 0.375rem;
   z-index: 0;
+  touch-action: none;
 }
 
 .geojson-input {
