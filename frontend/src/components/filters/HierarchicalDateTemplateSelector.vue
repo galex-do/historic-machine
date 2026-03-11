@@ -169,6 +169,7 @@ export default {
     const { t } = useLocale()
     const isOpen = ref(false)
     const hoveredGroupId = ref(null)
+    const isMobile = ref(window.innerWidth <= 768)
     const selectorRoot = ref(null)
     const popoverContainer = ref(null)
     const popoverPosition = ref({})
@@ -176,6 +177,9 @@ export default {
     // Display text for the button
     const displayText = computed(() => {
       if (props.selectedTemplate) {
+        if (isMobile.value) {
+          return props.selectedTemplate.name
+        }
         const groupName = selectedGroupName.value
         const templateName = props.selectedTemplate.name
         return `${groupName} › ${templateName}`
@@ -314,8 +318,8 @@ export default {
 
     // Recalculate position on window resize
     const handleResize = () => {
+      isMobile.value = window.innerWidth <= 768
       if (isOpen.value) {
-        // Close popover on resize to avoid layout issues
         closePopover()
       }
     }
@@ -602,6 +606,13 @@ export default {
 
 /* Responsive - mobile stacked layout */
 @media (max-width: 768px) {
+  .button-label {
+    display: none;
+  }
+  
+  .selector-button {
+    min-width: 0;
+  }
   .popover-container {
     left: 1rem !important;
     right: 1rem;
