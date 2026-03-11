@@ -1051,7 +1051,7 @@ export default {
 
 .draw-map-container {
   width: 100%;
-  height: 350px;
+  height: 450px;
   border: 1px solid #e2e8f0;
   border-radius: 0.375rem;
   z-index: 0;
@@ -1137,6 +1137,70 @@ export default {
   border: 1px solid #fecaca;
 }
 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-content.wide-modal {
+  max-width: 900px;
+  width: 92%;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #a0aec0;
+  cursor: pointer;
+  padding: 0.25rem;
+  line-height: 1;
+}
+
+.close-btn:hover {
+  color: #4a5568;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
 @media (max-width: 1024px) {
   .admin-panel {
     padding: 1rem;
@@ -1158,6 +1222,15 @@ export default {
 
   .form-row {
     grid-template-columns: 1fr;
+  }
+
+  .modal-content.wide-modal {
+    width: 98%;
+    max-height: 95vh;
+  }
+
+  .draw-map-container {
+    height: 300px;
   }
 }
 </style>
