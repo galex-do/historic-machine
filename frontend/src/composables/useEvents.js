@@ -49,57 +49,42 @@ export function useEvents() {
       events.value = []
     }
     
-    let tempFilteredEvents = events.value.filter(event => {
-      // Parse filter dates to understand BC/AD for comparison
-      const fromDate = parseHistoricalDate(dateFromDisplay) // Use display value to get proper BC/AD
-      const toDate = parseHistoricalDate(dateToDisplay)
-      
-      
-      // Parse event year correctly from negative and positive years
-      let eventYear
+    const to_chronological = (year, era, month, day) => {
+      const m = month || 1
+      const d = day || 1
+      if (era === 'BC') {
+        return -(year * 10000 + (13 - m) * 100 + (32 - d))
+      }
+      return year * 10000 + m * 100 + d
+    }
+
+    const parse_event_date_parts = (event) => {
+      let year, month, day
       if (event.event_date.startsWith('-')) {
-        // Negative year format: "-3501-01-01T00:00:00Z" -> year 3501
-        const yearMatch = event.event_date.match(/^-(\d+)-/)
-        eventYear = yearMatch ? parseInt(yearMatch[1], 10) : 0
+        const parts = event.event_date.substring(1).split('T')[0].split('-')
+        year = parseInt(parts[0], 10)
+        month = parseInt(parts[1], 10)
+        day = parseInt(parts[2], 10)
       } else {
-        // Positive year format: "1453-05-29T00:00:00Z" -> year 1453
-        eventYear = parseInt(event.event_date.split('-')[0], 10)
+        const parts = event.event_date.split('T')[0].split('-')
+        year = parseInt(parts[0], 10)
+        month = parseInt(parts[1], 10)
+        day = parseInt(parts[2], 10)
       }
-      const eventEra = event.era
-      
-      // Date filtering with proper BC/AD logic
-      // For BC: smaller number = more recent (25 BC is after 500 BC)
-      // For AD: larger number = more recent (500 AD is after 25 AD)
-      
-      if (fromDate) {
-        if (fromDate.era === 'BC' && eventEra === 'BC') {
-          // Both BC: event must be same year or more recent (smaller year number)
-          if (eventYear > fromDate.year) return false
-        } else if (fromDate.era === 'BC' && eventEra === 'AD') {
-          // Event is AD, filter is BC: AD events are always after BC, so include
-        } else if (fromDate.era === 'AD' && eventEra === 'BC') {
-          // Event is BC, filter is AD: BC events are always before AD, so exclude
-          return false
-        } else {
-          // Both AD: normal comparison
-          if (eventYear < fromDate.year) return false
-        }
-      }
-      
-      if (toDate) {
-        if (toDate.era === 'BC' && eventEra === 'BC') {
-          // Both BC: event must be same year or older (larger year number)
-          if (eventYear < toDate.year) return false
-        } else if (toDate.era === 'BC' && eventEra === 'AD') {
-          // Event is AD, filter is BC: AD events are always after BC, so exclude
-          return false
-        } else if (toDate.era === 'AD' && eventEra === 'BC') {
-          // Event is BC, filter is AD: BC events are always before AD, so include
-        } else {
-          // Both AD: normal comparison
-          if (eventYear > toDate.year) return false
-        }
-      }
+      return { year, month, day, era: event.era }
+    }
+
+    const fromDate = parseHistoricalDate(dateFromDisplay)
+    const toDate = parseHistoricalDate(dateToDisplay)
+    const fromVal = fromDate ? to_chronological(fromDate.year, fromDate.era, fromDate.month, fromDate.day) : null
+    const toVal = toDate ? to_chronological(toDate.year, toDate.era, toDate.month, toDate.day) : null
+
+    let tempFilteredEvents = events.value.filter(event => {
+      const ep = parse_event_date_parts(event)
+      const eventVal = to_chronological(ep.year, ep.era, ep.month, ep.day)
+
+      if (fromVal !== null && eventVal < fromVal) return false
+      if (toVal !== null && eventVal > toVal) return false
       
       // Lens type filtering
       if (selectedLensTypes.length > 0 && !selectedLensTypes.includes(event.lens_type)) {
