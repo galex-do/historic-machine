@@ -52,21 +52,45 @@
               <div class="group-divider"></div>
               
               <!-- Template Groups -->
-              <div 
-                v-for="group in templateGroups" 
-                :key="group.id"
-                class="group-item"
-                :class="{ 
-                  'selected': selectedTemplateGroupId === group.id,
-                  'active': hoveredGroupId === group.id
-                }"
-                @click="selectGroup(group.id)"
-                @mouseenter="hoveredGroupId = group.id"
-              >
-                <span class="item-icon">📅</span>
-                <span class="item-name">{{ group.name }}</span>
-                <span class="item-arrow">›</span>
-              </div>
+              <template v-for="group in templateGroups" :key="group.id">
+                <div 
+                  class="group-item"
+                  :class="{ 
+                    'selected': selectedTemplateGroupId === group.id,
+                    'active': hoveredGroupId === group.id
+                  }"
+                  @click="selectGroup(group.id)"
+                  @mouseenter="hoveredGroupId = group.id"
+                >
+                  <span class="item-icon">📅</span>
+                  <span class="item-name">{{ group.name }}</span>
+                  <span class="item-arrow" :class="{ 'arrow-down': selectedTemplateGroupId === group.id }">›</span>
+                </div>
+                <!-- Mobile inline templates (shown below selected group) -->
+                <div v-if="selectedTemplateGroupId === group.id" class="mobile-templates-inline">
+                  <div v-if="loadingTemplates" class="loading-state">
+                    <div class="spinner-small"></div>
+                    <span>{{ t('loading') }}...</span>
+                  </div>
+                  <div v-else-if="availableTemplates.length === 0" class="empty-state">
+                    {{ t('noTemplatesAvailable') }}
+                  </div>
+                  <div 
+                    v-else
+                    v-for="template in availableTemplates" 
+                    :key="template.id"
+                    class="template-item mobile-template-item"
+                    :class="{ 'selected': selectedTemplateId === template.id }"
+                    @click.stop="selectTemplate(template.id)"
+                  >
+                    <span class="item-icon">⏳</span>
+                    <div class="template-info">
+                      <span class="template-name">{{ template.name }}</span>
+                      <span class="template-dates">{{ formatTemplateDates(template) }}</span>
+                    </div>
+                  </div>
+                </div>
+              </template>
             </div>
           </div>
 
@@ -563,26 +587,49 @@ export default {
   background: #a0aec0;
 }
 
-/* Responsive - mobile fallback */
+/* Mobile inline templates — hidden on desktop */
+.mobile-templates-inline {
+  display: none;
+}
+
+.item-arrow.arrow-down {
+  transform: rotate(90deg);
+}
+
+.item-arrow {
+  transition: transform 0.2s;
+}
+
+/* Responsive - mobile stacked layout */
 @media (max-width: 768px) {
   .popover-container {
     left: 1rem !important;
     right: 1rem;
     max-width: calc(100vw - 2rem);
+    flex-direction: column;
   }
   
-  .groups-pane,
-  .templates-pane {
+  .groups-pane {
     width: 100%;
     max-width: none;
+    border-right: none;
   }
   
+  /* Hide the side pane on mobile */
   .templates-pane {
     display: none;
   }
   
-  .popover-container {
-    flex-direction: column;
+  /* Show inline templates on mobile */
+  .mobile-templates-inline {
+    display: block;
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .mobile-template-item {
+    padding-left: 2.5rem;
   }
 }
 </style>
