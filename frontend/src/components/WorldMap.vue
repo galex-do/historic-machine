@@ -1923,6 +1923,7 @@ export default {
       if (!regions || regions.length === 0) return
 
       this.region_layer_group = L.layerGroup()
+      this._region_label_data = []
 
       regions.forEach(region => {
         if (!region.geojson) return
@@ -1947,18 +1948,28 @@ export default {
 
           const name = region.name || ''
           if (name && layer.getBounds) {
+            const coords = this._extract_polygon_coords(geojsonData)
+            const angle = this._compute_principal_angle(coords)
             const bounds = layer.getBounds()
             const center = bounds.getCenter()
+
+            const label_id = 'region-lbl-' + region.id
             const label_marker = L.marker(center, {
               interactive: false,
               icon: L.divIcon({
                 className: 'region-label',
-                html: `<span style="color: ${border_color};">${name}</span>`,
+                html: `<span id="${label_id}" style="color: ${border_color};">${name}</span>`,
                 iconSize: [0, 0],
                 iconAnchor: [0, 0]
               })
             })
             this.region_layer_group.addLayer(label_marker)
+            this._region_label_data.push({
+              id: label_id,
+              bounds: bounds,
+              angle: angle,
+              name: name
+            })
           }
         } catch (err) {
           console.error('Error rendering region:', region.id, err)
@@ -1969,13 +1980,67 @@ export default {
       this._update_region_label_sizes()
     },
 
+    _extract_polygon_coords(geojson) {
+      const coords = []
+      const extract = (obj) => {
+        if (!obj) return
+        if (obj.type === 'FeatureCollection') {
+          (obj.features || []).forEach(f => extract(f))
+        } else if (obj.type === 'Feature') {
+          extract(obj.geometry)
+        } else if (obj.type === 'Polygon') {
+          (obj.coordinates[0] || []).forEach(c => coords.push(c))
+        } else if (obj.type === 'MultiPolygon') {
+          obj.coordinates.forEach(poly => (poly[0] || []).forEach(c => coords.push(c)))
+        }
+      }
+      extract(geojson)
+      return coords
+    },
+
+    _compute_principal_angle(coords) {
+      if (!coords || coords.length < 3) return 0
+      let max_dist = 0
+      let angle = 0
+      const step = Math.max(1, Math.floor(coords.length / 40))
+      for (let i = 0; i < coords.length; i += step) {
+        for (let j = i + 1; j < coords.length; j += step) {
+          const dx = coords[j][0] - coords[i][0]
+          const dy = coords[j][1] - coords[i][1]
+          const dist = dx * dx + dy * dy
+          if (dist > max_dist) {
+            max_dist = dist
+            angle = Math.atan2(dy, dx) * (180 / Math.PI)
+          }
+        }
+      }
+      if (angle > 90) angle -= 180
+      if (angle < -90) angle += 180
+      return angle
+    },
+
     _update_region_label_sizes() {
-      if (!this.map) return
-      const zoom = this.map.getZoom()
-      const base_size = Math.max(10, Math.min(24, 8 + zoom * 1.5))
-      const labels = document.querySelectorAll('.region-label span')
-      labels.forEach(el => {
-        el.style.fontSize = base_size + 'px'
+      if (!this.map || !this._region_label_data) return
+
+      this._region_label_data.forEach(item => {
+        const el = document.getElementById(item.id)
+        if (!el) return
+
+        const sw_px = this.map.latLngToContainerPoint(item.bounds.getSouthWest())
+        const ne_px = this.map.latLngToContainerPoint(item.bounds.getNorthEast())
+        const region_width_px = Math.abs(ne_px.x - sw_px.x)
+        const region_height_px = Math.abs(ne_px.y - sw_px.y)
+
+        const angle_rad = Math.abs(item.angle) * Math.PI / 180
+        const diagonal_px = Math.sqrt(region_width_px * region_width_px + region_height_px * region_height_px)
+        const axis_px = Math.max(region_width_px, region_height_px, diagonal_px * 0.7)
+
+        const target_px = axis_px * 0.28
+        const char_count = item.name.length
+        const font_size = Math.max(8, Math.min(60, target_px / (char_count * 0.65)))
+
+        el.style.fontSize = font_size + 'px'
+        el.style.transform = `translate(-50%, -50%) rotate(${-item.angle}deg)`
       })
     },
 
@@ -1984,6 +2049,7 @@ export default {
         this.map.removeLayer(this.region_layer_group)
         this.region_layer_group = null
       }
+      this._region_label_data = []
     }
   }
 }
