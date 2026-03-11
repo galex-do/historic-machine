@@ -217,7 +217,7 @@
                     {{ t('noTemplatesAvailable') }}
                   </div>
                   <label
-                    v-for="tmpl in allTemplates"
+                    v-for="tmpl in sortedTemplates"
                     :key="tmpl.id"
                     class="template-checkbox"
                   >
@@ -226,7 +226,14 @@
                       :value="tmpl.id"
                       v-model="regionForm.template_ids"
                     />
-                    <span>{{ tmpl.name || tmpl.name_en }}</span>
+                    <span class="template-label">
+                      <span class="template-group">{{ tmpl.group_name || '' }}</span>
+                      <span class="template-separator" v-if="tmpl.group_name"> → </span>
+                      <span class="template-name">{{ tmpl.name || tmpl.name_en }}</span>
+                      <span class="template-dates" v-if="tmpl.start_display_date || tmpl.end_display_date">
+                        ({{ tmpl.start_display_date || '?' }} — {{ tmpl.end_display_date || '?' }})
+                      </span>
+                    </span>
                   </label>
                 </div>
               </div>
@@ -345,6 +352,15 @@ export default {
 
     const filteredTotalRegions = computed(() => filteredRegions.value.length)
     const totalRegions = computed(() => regions.value?.length || 0)
+
+    const sortedTemplates = computed(() => {
+      if (!allTemplates.value) return []
+      return [...allTemplates.value].sort((a, b) => {
+        const ga = (a.group_name || '').localeCompare(b.group_name || '')
+        if (ga !== 0) return ga
+        return (a.display_order || 0) - (b.display_order || 0)
+      })
+    })
 
     const currentPageRegions = computed(() => {
       const start = (currentPage.value - 1) * pageSize.value
@@ -654,6 +670,7 @@ export default {
       filteredTotalRegions,
       currentPageRegions,
       allTemplates,
+      sortedTemplates,
       drawMapContainer,
       geoJSONInput,
       geoJSONError,
@@ -1045,6 +1062,32 @@ export default {
 
 .template-checkbox input[type="checkbox"] {
   accent-color: #4f46e5;
+  flex-shrink: 0;
+}
+
+.template-label {
+  display: inline;
+  line-height: 1.4;
+}
+
+.template-group {
+  font-weight: 600;
+  color: #4f46e5;
+}
+
+.template-separator {
+  color: #a0aec0;
+}
+
+.template-name {
+  font-weight: 500;
+  color: #2d3748;
+}
+
+.template-dates {
+  color: #718096;
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 
 .no-templates {
