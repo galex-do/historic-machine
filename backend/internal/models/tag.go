@@ -10,6 +10,7 @@ type Tag struct {
         Color       string    `json:"color"`
         BorderColor *string   `json:"border_color"`
         KeyColor    bool      `json:"key_color"`
+        Emoji       *string   `json:"emoji"`
         Weight      int       `json:"weight"`
         EventCount  int       `json:"event_count"`
         CreatedAt   time.Time `json:"created_at"`
@@ -23,6 +24,7 @@ type CreateTagRequest struct {
         Color       string  `json:"color,omitempty"`
         BorderColor *string `json:"border_color,omitempty"`
         KeyColor    *bool   `json:"key_color,omitempty"`
+        Emoji       *string `json:"emoji,omitempty"`
         Weight      *int    `json:"weight,omitempty"`
 }
 
@@ -34,6 +36,8 @@ type UpdateTagRequest struct {
         BorderColor      *string `json:"border_color,omitempty"`
         ClearBorderColor bool    `json:"clear_border_color,omitempty"`
         KeyColor         *bool   `json:"key_color,omitempty"`
+        Emoji            *string `json:"emoji,omitempty"`
+        ClearEmoji       bool    `json:"clear_emoji,omitempty"`
         Weight           *int    `json:"weight,omitempty"`
 }
 
@@ -67,6 +71,7 @@ func (req *CreateTagRequest) ToTag() *Tag {
                 Color:       color,
                 BorderColor: req.BorderColor,
                 KeyColor:    keyColor,
+                Emoji:       req.Emoji,
                 Weight:      weight,
         }
 }

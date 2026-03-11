@@ -110,6 +110,11 @@ func (h *TagHandler) UpdateTag(w http.ResponseWriter, r *http.Request) {
         } else if req.BorderColor != nil {
                 existingTag.BorderColor = req.BorderColor
         }
+        if req.ClearEmoji {
+                existingTag.Emoji = nil
+        } else if req.Emoji != nil {
+                existingTag.Emoji = req.Emoji
+        }
         if req.KeyColor != nil {
                 existingTag.KeyColor = *req.KeyColor
         }

@@ -260,6 +260,22 @@
               </div>
 
               <div class="form-group">
+                <label for="tag-emoji">{{ t('tagEmoji') }}</label>
+                <div class="emoji-input-container">
+                  <input 
+                    id="tag-emoji"
+                    v-model="tagForm.emoji" 
+                    type="text"
+                    class="form-input emoji-input"
+                    :placeholder="t('tagEmojiPlaceholder')"
+                    maxlength="4"
+                  />
+                  <span v-if="tagForm.emoji" class="emoji-preview">{{ tagForm.emoji }}</span>
+                </div>
+                <span class="form-hint">{{ t('tagEmojiHint') }}</span>
+              </div>
+
+              <div class="form-group">
                 <label for="tag-weight">{{ t('columnWeight') }}</label>
                 <input 
                   id="tag-weight"
@@ -331,6 +347,7 @@ export default {
       border_color: '#000000',
       has_border: false,
       key_color: false,
+      emoji: '',
       weight: 1
     })
 
@@ -457,6 +474,7 @@ export default {
         border_color: tag.border_color || '#000000',
         has_border: !!tag.border_color,
         key_color: !!tag.key_color,
+        emoji: tag.emoji || '',
         weight: tag.weight || 1
       }
       showEditModal.value = true
@@ -498,7 +516,9 @@ export default {
           weight: tagForm.value.weight,
           border_color: tagForm.value.has_border ? tagForm.value.border_color : null,
           clear_border_color: !tagForm.value.has_border,
-          key_color: tagForm.value.key_color
+          key_color: tagForm.value.key_color,
+          emoji: tagForm.value.emoji.trim() || null,
+          clear_emoji: !tagForm.value.emoji.trim()
         }
         if (editingTag.value) {
           await apiService.updateTag(editingTag.value.id, payload)
@@ -528,6 +548,7 @@ export default {
         border_color: '#000000',
         has_border: false,
         key_color: false,
+        emoji: '',
         weight: 1
       }
       localError.value = null
@@ -783,6 +804,23 @@ export default {
 
 .weight-input {
   width: 80px;
+}
+
+.emoji-input-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.emoji-input {
+  width: 80px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.emoji-preview {
+  font-size: 1.8rem;
+  line-height: 1;
 }
 
 .form-hint {

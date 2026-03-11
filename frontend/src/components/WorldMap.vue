@@ -1200,9 +1200,11 @@ export default {
               return
             }
             
+            const tag_emoji = this.get_tag_emoji(eventGroup.events)
             const emoji_icon = this.create_emoji_marker_icon(
               eventGroup.events.length > 1 ? 'multiple' : eventGroup.events[0].lens_type,
-              eventGroup.events.length
+              eventGroup.events.length,
+              tag_emoji
             )
             
             const marker = L.marker([lat, lng], { 
@@ -1537,11 +1539,20 @@ export default {
       }
     },
     
-    create_emoji_marker_icon(lens_type, eventCount = 1) {
-      // Use the utility function for consistency
-      const emoji = getEventEmoji(lens_type)
+    get_tag_emoji(events) {
+      for (const event of events) {
+        if (event.tags && Array.isArray(event.tags)) {
+          for (const tag of event.tags) {
+            if (tag.emoji) return tag.emoji
+          }
+        }
+      }
+      return null
+    },
+
+    create_emoji_marker_icon(lens_type, eventCount = 1, tag_emoji = null) {
+      const emoji = tag_emoji || getEventEmoji(lens_type)
       
-      // Add count badge for clustered events (multiple events at same location)
       const countBadge = eventCount > 1 ? `<span class="marker-count-badge">${eventCount}</span>` : ''
       
       return L.divIcon({
@@ -1550,7 +1561,6 @@ export default {
         iconSize: [30, 30],
         iconAnchor: [15, 30],
         popupAnchor: [0, -30],
-        // Ensure proper positioning
         bgPos: [15, 30]
       })
     },
