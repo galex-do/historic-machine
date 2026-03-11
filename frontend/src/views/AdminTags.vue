@@ -262,15 +262,30 @@
               <div class="form-group">
                 <label for="tag-emoji">{{ t('tagEmoji') }}</label>
                 <div class="emoji-input-container">
-                  <input 
-                    id="tag-emoji"
-                    v-model="tagForm.emoji" 
-                    type="text"
-                    class="form-input emoji-input"
-                    :placeholder="t('tagEmojiPlaceholder')"
-                    maxlength="4"
-                  />
-                  <span v-if="tagForm.emoji" class="emoji-preview">{{ tagForm.emoji }}</span>
+                  <div class="emoji-selected" @click="showEmojiPicker = !showEmojiPicker">
+                    <span v-if="tagForm.emoji" class="emoji-preview">{{ tagForm.emoji }}</span>
+                    <span v-else class="emoji-placeholder">{{ t('tagEmojiPlaceholder') }}</span>
+                  </div>
+                  <button v-if="tagForm.emoji" type="button" class="emoji-clear-btn" @click="tagForm.emoji = ''">✕</button>
+                </div>
+                <div v-if="showEmojiPicker" class="emoji-picker">
+                  <div 
+                    v-for="group in emojiGroups" 
+                    :key="group.label" 
+                    class="emoji-group"
+                  >
+                    <div class="emoji-group-label">{{ group.label }}</div>
+                    <div class="emoji-grid">
+                      <button 
+                        v-for="em in group.emojis" 
+                        :key="em"
+                        type="button"
+                        class="emoji-option"
+                        :class="{ selected: tagForm.emoji === em }"
+                        @click="tagForm.emoji = em; showEmojiPicker = false"
+                      >{{ em }}</button>
+                    </div>
+                  </div>
                 </div>
                 <span class="form-hint">{{ t('tagEmojiHint') }}</span>
               </div>
@@ -327,6 +342,17 @@ export default {
     const localLoading = ref(false)
     const localError = ref(null)
     const searchQuery = ref('')
+    const showEmojiPicker = ref(false)
+
+    const emojiGroups = [
+      { label: '🏛️ History & Politics', emojis: ['🏛️', '👑', '⚔️', '🛡️', '🏰', '🗡️', '📜', '📖', '🏺', '🗿', '⚖️', '🎖️', '🏴', '🚩'] },
+      { label: '🌍 Geography & Nature', emojis: ['🌍', '🗺️', '🏔️', '🌋', '🏝️', '🌊', '🏜️', '🌲', '🐘', '🦁', '🐉', '🌾', '💎', '⛏️'] },
+      { label: '🎭 Culture & Religion', emojis: ['🎭', '🎨', '🎵', '📚', '🏟️', '⛪', '🕌', '🕍', '🛕', '☪️', '✝️', '☸️', '🔯', '🙏'] },
+      { label: '🔬 Science & Tech', emojis: ['🔬', '🔭', '⚗️', '💡', '⚙️', '🧬', '🧪', '📡', '🚀', '🛸', '🧭', '⏳', '🔋', '💻'] },
+      { label: '💰 Economy & Trade', emojis: ['💰', '🪙', '⚓', '🚢', '🐪', '🛤️', '🏗️', '🏦', '📊', '🤝', '🎪', '🍷', '🧵', '🏠'] },
+      { label: '💀 Disasters & War', emojis: ['💀', '☠️', '🔥', '💣', '🩸', '⚰️', '🏚️', '🌪️', '☄️', '🦠', '⚠️', '🚨', '🏴‍☠️', '💥'] },
+      { label: '👤 People & Symbols', emojis: ['👤', '👥', '🧙', '🤴', '👸', '🗣️', '✊', '🕊️', '🏆', '🎯', '⭐', '❤️', '🔱', '⚜️'] }
+    ]
     
     const showCreateModal = ref(false)
     const showEditModal = ref(false)
@@ -552,6 +578,7 @@ export default {
         weight: 1
       }
       localError.value = null
+      showEmojiPicker.value = false
     }
 
     // Load initial data
@@ -592,6 +619,8 @@ export default {
       saveTag,
       closeModal,
       localLoading,
+      showEmojiPicker,
+      emojiGroups,
       t
     }
   }
@@ -809,18 +838,104 @@ export default {
 .emoji-input-container {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
-.emoji-input {
-  width: 80px;
-  text-align: center;
-  font-size: 1.2rem;
+.emoji-selected {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #d1d5db;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  background: white;
+}
+
+.emoji-selected:hover {
+  border-color: #4f46e5;
 }
 
 .emoji-preview {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1;
+}
+
+.emoji-placeholder {
+  font-size: 1.4rem;
+  opacity: 0.3;
+}
+
+.emoji-clear-btn {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.emoji-clear-btn:hover {
+  color: #ef4444;
+}
+
+.emoji-picker {
+  margin-top: 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  background: white;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.emoji-group {
+  margin-bottom: 0.5rem;
+}
+
+.emoji-group:last-child {
+  margin-bottom: 0;
+}
+
+.emoji-group-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.emoji-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.emoji-option {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border: 2px solid transparent;
+  border-radius: 0.375rem;
+  background: none;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.emoji-option:hover {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+}
+
+.emoji-option.selected {
+  background: #eef2ff;
+  border-color: #4f46e5;
 }
 
 .form-hint {
