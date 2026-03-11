@@ -946,6 +946,7 @@ export default {
       }
       
       this.$emit('map-bounds-changed', boundsData)
+      this._update_region_label_sizes()
     },
 
     edit_event(eventId) {
@@ -1929,33 +1930,53 @@ export default {
         try {
           const geojsonData = typeof region.geojson === 'string' ? JSON.parse(region.geojson) : region.geojson
 
+          const border_color = region.border_color || region.color || '#4f46e5'
+
           const layer = L.geoJSON(geojsonData, {
             style: () => ({
-              color: region.border_color || region.color || '#4f46e5',
+              color: border_color,
               weight: region.border_width || 2,
               fillColor: region.color || '#4f46e5',
               fillOpacity: region.fill_opacity != null ? region.fill_opacity : 0.2,
-              opacity: 0.8
-            }),
-            onEachFeature: (feature, lyr) => {
-              const name = region.name || ''
-              if (name) {
-                lyr.bindTooltip(name, {
-                  sticky: true,
-                  direction: 'top',
-                  className: 'region-tooltip'
-                })
-              }
-            }
+              opacity: 0.8,
+              interactive: false
+            })
           })
 
           this.region_layer_group.addLayer(layer)
+
+          const name = region.name || ''
+          if (name && layer.getBounds) {
+            const bounds = layer.getBounds()
+            const center = bounds.getCenter()
+            const label_marker = L.marker(center, {
+              interactive: false,
+              icon: L.divIcon({
+                className: 'region-label',
+                html: `<span style="color: ${border_color};">${name}</span>`,
+                iconSize: [0, 0],
+                iconAnchor: [0, 0]
+              })
+            })
+            this.region_layer_group.addLayer(label_marker)
+          }
         } catch (err) {
           console.error('Error rendering region:', region.id, err)
         }
       })
 
       this.region_layer_group.addTo(this.map)
+      this._update_region_label_sizes()
+    },
+
+    _update_region_label_sizes() {
+      if (!this.map) return
+      const zoom = this.map.getZoom()
+      const base_size = Math.max(10, Math.min(24, 8 + zoom * 1.5))
+      const labels = document.querySelectorAll('.region-label span')
+      labels.forEach(el => {
+        el.style.fontSize = base_size + 'px'
+      })
     },
 
     clear_regions() {
@@ -1973,18 +1994,23 @@ export default {
 @import '@/styles/timeline.css';
 @import '@/styles/modal-overlay.css';
 
-.region-tooltip {
-  background: rgba(30, 41, 59, 0.9);
-  color: #f1f5f9;
-  border: none;
-  border-radius: 4px;
-  padding: 4px 8px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+.region-label {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  white-space: nowrap;
+  pointer-events: none;
 }
-.region-tooltip::before {
-  border-top-color: rgba(30, 41, 59, 0.9);
+.region-label span {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.7;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+  transform: translate(-50%, -50%);
+  display: block;
+  pointer-events: none;
 }
 </style>
 <style scoped>
