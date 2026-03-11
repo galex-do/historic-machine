@@ -1037,7 +1037,7 @@ export default {
               
               const currentZoom = this.map ? this.map.getZoom() : 10
               
-              if (currentZoom >= 15) {
+              if (currentZoom >= 15 && childMarkers.length === 1) {
                 const displayCount = totalEventCount > 99 ? '99+' : totalEventCount
                 return L.divIcon({
                   html: `<div class="emoji-marker cluster-marker" data-lens="cluster">
