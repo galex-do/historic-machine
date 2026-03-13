@@ -47,14 +47,61 @@ function Mark({ size = 140, inverted = false }) {
       {/* Circle base */}
       <circle cx={C} cy={C} r={R} fill={circleFill} />
 
-      {/* GLOBE — equator (top) + equator (bottom) + meridian arc */}
-      <g clipPath={`url(#g${size})`} stroke={fg} fill="none" strokeLinecap="round">
-        {/* Top equator — extended across full circle, clip handles the boundary */}
-        <line x1={C - R} y1={C} x2={C + R} y2={C} strokeWidth={s * 3.2} />
-        {/* Bottom equator — at the 4 o'clock y-level */}
-        <line x1={C - R} y1={C + R * 0.5} x2={C + R} y2={C + R * 0.5} strokeWidth={s * 3.2} />
-        {/* Meridian arc — ellipse curving left */}
-        <path d={`M${C} ${C - R} A${R * 0.5} ${R} 0 0 0 ${C} ${C + R}`} strokeWidth={s * 3.2} />
+      {/* GLOBE — continent silhouettes */}
+      <g clipPath={`url(#g${size})`} fill={fg} fillOpacity="0.88" stroke="none">
+        {/* Helper: normalized (nx,ny) → SVG coords, nx/ny in [-1,1] */}
+        {/* Greenland */}
+        <path d={[
+          `M${C-R*0.55},${C-R*0.80}`,
+          `L${C-R*0.32},${C-R*0.84}`,
+          `L${C-R*0.24},${C-R*0.68}`,
+          `L${C-R*0.34},${C-R*0.58}`,
+          `L${C-R*0.60},${C-R*0.58}`,
+          `L${C-R*0.68},${C-R*0.70}`,
+          `Z`
+        ].join(' ')} />
+        {/* North America */}
+        <path d={[
+          `M${C-R*0.72},${C-R*0.58}`,
+          `L${C-R*0.24},${C-R*0.64}`,
+          `L${C-R*0.10},${C-R*0.44}`,
+          `L${C-R*0.16},${C-R*0.20}`,
+          `L${C-R*0.46},${C-R*0.05}`,
+          `L${C-R*0.68},${C-R*0.12}`,
+          `L${C-R*0.80},${C-R*0.36}`,
+          `Z`
+        ].join(' ')} />
+        {/* South America */}
+        <path d={[
+          `M${C-R*0.22},${C-R*0.02}`,
+          `L${C-R*0.02},${C+R*0.08}`,
+          `L${C-R*0.02},${C+R*0.35}`,
+          `L${C-R*0.18},${C+R*0.68}`,
+          `L${C-R*0.42},${C+R*0.64}`,
+          `L${C-R*0.52},${C+R*0.44}`,
+          `L${C-R*0.40},${C+R*0.06}`,
+          `Z`
+        ].join(' ')} />
+        {/* Europe */}
+        <path d={[
+          `M${C-R*0.12},${C-R*0.60}`,
+          `L${C+R*0.06},${C-R*0.62}`,
+          `L${C+R*0.12},${C-R*0.44}`,
+          `L${C+R*0.00},${C-R*0.34}`,
+          `L${C-R*0.12},${C-R*0.40}`,
+          `Z`
+        ].join(' ')} />
+        {/* Africa */}
+        <path d={[
+          `M${C-R*0.02},${C-R*0.28}`,
+          `L${C+R*0.26},${C-R*0.24}`,
+          `L${C+R*0.38},${C+R*0.05}`,
+          `L${C+R*0.26},${C+R*0.48}`,
+          `L${C+R*0.05},${C+R*0.52}`,
+          `L${C-R*0.12},${C+R*0.38}`,
+          `L${C-R*0.08},${C+R*0.00}`,
+          `Z`
+        ].join(' ')} />
       </g>
 
       {/* Map pin — sits on the meridian */}
