@@ -1200,9 +1200,10 @@ export default {
               return
             }
             
-            const tag_emoji = this.get_tag_emoji(eventGroup.events)
+            const is_multi = eventGroup.events.length > 1
+            const tag_emoji = is_multi ? null : this.get_tag_emoji(eventGroup.events)
             const emoji_icon = this.create_emoji_marker_icon(
-              eventGroup.events.length > 1 ? 'multiple' : eventGroup.events[0].lens_type,
+              is_multi ? 'multiple' : eventGroup.events[0].lens_type,
               eventGroup.events.length,
               tag_emoji
             )
