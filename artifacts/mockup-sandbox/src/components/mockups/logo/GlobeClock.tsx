@@ -80,11 +80,11 @@ function GlobeClockMark({ size = 140, inverted = false }) {
 
       {/* LEFT: Bold map pin */}
       <g clipPath={`url(#lh-${size})`}>
-        <circle cx={C - R * 0.38} cy={C - R * 0.14} r={sw * 3} fill={stroke} />
-        <circle cx={C - R * 0.38} cy={C - R * 0.14} r={sw * 1.3} fill={inverted ? '#eef2ff' : '#4338ca'} />
+        <circle cx={C - R * 0.58} cy={C - R * 0.52} r={sw * 3} fill={stroke} />
+        <circle cx={C - R * 0.58} cy={C - R * 0.52} r={sw * 1.3} fill={inverted ? '#eef2ff' : '#4338ca'} />
         <line
-          x1={C - R * 0.38} y1={C - R * 0.14 + sw * 3}
-          x2={C - R * 0.38} y2={C - R * 0.14 + sw * 6}
+          x1={C - R * 0.58} y1={C - R * 0.52 + sw * 3}
+          x2={C - R * 0.58} y2={C - R * 0.52 + sw * 6}
           stroke={stroke} strokeWidth={sw * 1.8} strokeLinecap="round"
         />
       </g>
