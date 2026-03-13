@@ -47,52 +47,52 @@ function Mark({ size = 140, inverted = false }) {
       {/* Circle base */}
       <circle cx={C} cy={C} r={R} fill={circleFill} />
 
-      {/* GLOBE — continent silhouettes */}
+      {/* GLOBE — continent silhouettes (orthographic, center 30°W 0°N)
+           All coordinates computed via:
+             nx = cos(lat)*sin(lon - lon0),  ny = -sin(lat)
+           where lon0 = -30°.  GlobeClip handles circular boundary. */}
       <g clipPath={`url(#g${size})`} fill={fg} fillOpacity="0.88" stroke="none">
         {(() => {
           const q = (nx: number, ny: number) => `${C + nx * R} ${C + ny * R}`
           const poly = (pts: [number,number][]) =>
             `M${pts.map(([x,y]) => q(x,y)).join('L')}Z`
-
           return <>
-            {/* Greenland */}
+            {/* Greenland — western lobe visible in globe sector */}
             <path d={poly([
-              [-0.50,-0.74],[-0.32,-0.84],[-0.18,-0.82],
-              [-0.14,-0.70],[-0.24,-0.62],[-0.42,-0.60],[-0.56,-0.66],
+              [-0.063,-0.970], [-0.021,-0.970], [ 0.027,-0.951],
+              [ 0.068,-0.921], [ 0.034,-0.875], [-0.121,-0.866],
+              [-0.152,-0.914], [-0.106,-0.951],
             ])} />
-            {/* North America
-                Clockwise: Alaska-left → arctic → labrador → east-coast → florida
-                           → gulf → mexico → pacific-coast → back to Alaska.
-                NO backtracking anywhere in this path. */}
+            {/* North America — clockwise
+                NW-Canada → Arctic coast → Hudson Bay → Labrador → Nova Scotia
+                → Cape Hatteras → Florida → Gulf coast → Yucatan → Baja tip
+                → California → Vancouver → Alaska → back */}
             <path d={poly([
-              [-0.88,-0.46],[-0.72,-0.66],[-0.52,-0.80],
-              [-0.34,-0.86],[-0.18,-0.82],[-0.06,-0.72],
-              [-0.12,-0.58],[-0.16,-0.44],[-0.18,-0.30],
-              [-0.20,-0.16],[-0.22,-0.02],[-0.27, 0.06],
-              [-0.38, 0.08],[-0.48, 0.06],[-0.56,-0.04],
-              [-0.62,-0.18],[-0.68,-0.28],[-0.76,-0.38],[-0.84,-0.44],
+              [-0.358,-0.934], [-0.265,-0.956], [-0.324,-0.906],
+              [-0.266,-0.731], [-0.354,-0.707], [-0.433,-0.695],
+              [-0.589,-0.574], [-0.704,-0.423], [-0.718,-0.500],
+              [-0.757,-0.485], [-0.827,-0.438], [-0.824,-0.309],
+              [-0.871,-0.276], [-0.907,-0.391],
+              [-0.799,-0.602], [-0.655,-0.755], [-0.528,-0.839],
             ])} />
-            {/* South America
-                Brazil's eastern bulge is visible; clockwise from Colombia-NW
-                around to Cape Horn and up the Pacific coast. */}
+            {/* South America — clockwise
+                Colombia-W → Colombia-N → Venezuela → Guyana → Brazil-NE (bulge)
+                → Salvador → Rio → Buenos-Aires → Cape Horn → Patagonia-W
+                → Chile → Ecuador/Peru */}
             <path d={poly([
-              [-0.38, 0.10],[-0.20, 0.04],[-0.10, 0.08],
-              [ 0.00, 0.14],[ 0.08, 0.30],[ 0.06, 0.48],
-              [-0.02, 0.58],[-0.12, 0.66],[-0.22, 0.72],
-              [-0.30, 0.78],[-0.36, 0.82],[-0.42, 0.76],
-              [-0.48, 0.62],[-0.52, 0.46],[-0.50, 0.28],
-              [-0.44, 0.10],
+              [-0.743,-0.017], [-0.724,-0.139], [-0.536,-0.174],
+              [-0.374,-0.070], [-0.086, 0.139], [-0.136, 0.225],
+              [-0.207, 0.391], [-0.310, 0.500], [-0.389, 0.559],
+              [-0.344, 0.829], [-0.435, 0.788], [-0.470, 0.682],
+              [-0.766, 0.035],
             ])} />
-            {/* Africa
-                Continuous clockwise outline: NW-coast → north → east-coast
-                → southern-tip → west-coast back up to NW.
-                West coast stays at nx ≥ 0.12 so it never overlaps SA. */}
+            {/* Africa — clock-sector clips northern half; southern tip visible.
+                Clockwise: Senegal → Libya/Egypt → E-Africa → Cape → Angola → back */}
             <path d={poly([
-              [ 0.14,-0.28],[ 0.28,-0.16],[ 0.38,-0.02],
-              [ 0.42, 0.14],[ 0.36, 0.32],[ 0.28, 0.48],
-              [ 0.18, 0.62],[ 0.06, 0.70],[-0.06, 0.70],
-              [ 0.12, 0.58],[ 0.14, 0.44],[ 0.16, 0.28],
-              [ 0.18, 0.12],[ 0.16,-0.04],[ 0.14,-0.18],
+              [ 0.218,-0.242], [ 0.578,-0.530], [ 0.759,-0.375],
+              [ 0.828, 0.407], [ 0.718, 0.500], [ 0.628, 0.574],
+              [ 0.616, 0.559], [ 0.644, 0.375], [ 0.646, 0.259],
+              [ 0.668, 0.035], [ 0.543,-0.087], [ 0.272,-0.174],
             ])} />
           </>
         })()}
