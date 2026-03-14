@@ -27,6 +27,10 @@ A comprehensive web application for mapping historical events on an interactive 
 - **Map Event Info Modal Timeline Structure**: Uses the same timeline design as TimelineModal with vertical line, bullets, date grouping, unified tag styling, clickable tags, inline edit functionality, minified/detailed view toggle (📋/📝), and lazy loading in batches of 50 with scroll-based loading.
 - **Pin Mode for Coordinates**: Event form includes a pin button (📍) that closes the modal and enables map-click coordinate selection. Supports "sticky" pin - clicking existing markers/clusters copies their coordinates. Zoom/pan don't interrupt pin mode.
 
+### Logo & Branding
+- **GlobeClockMark**: Custom SVG logo mark (`frontend/src/components/layout/GlobeClockMark.vue`) — a circle split into a 240° globe sector (continent silhouettes in orthographic projection centered at 30°W) and a 120° clock sector (ticks, hour hand at 2, minute hand at 4). Used in AppHeader and as favicon.
+- **Favicon**: `frontend/public/favicon.svg` — same geometry as the mark, 32×32.
+
 ### Technical Implementations
 - **Backend (Go)**: Gorilla Mux HTTP router, RESTful endpoints, Nginx hardened security (XSS, CSP), role-based access control, Nginx performance optimizations (worker processes, epoll, sendfile, gzip, caching), server-side OSM tile caching.
 - **Frontend (Vue.js)**: Vue.js 3 with Vite, Vue Router 4 for SPA navigation, session storage for filter conditions and map state, zoom-dependent marker clustering (Leaflet MarkerCluster), reactive data fetching on locale changes, AND logic for multi-tag filtering.

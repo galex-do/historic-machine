@@ -4,7 +4,8 @@
       <!-- Logo with dropdown menu -->
       <div class="logo-dropdown" @click.stop>
         <button class="logo-btn" @click="toggleLogoDropdown">
-          <h1>timediverr</h1>
+          <GlobeClockMark :size="34" :inverted="false" />
+          <span class="logo-wordmark">timediverr</span>
           <span class="dropdown-arrow" :class="{ 'open': showLogoDropdown }">▼</span>
         </button>
         <div v-if="showLogoDropdown" class="logo-dropdown-menu">
@@ -199,9 +200,11 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useAuth } from '@/composables/useAuth.js'
 import { useLocale } from '@/composables/useLocale.js'
+import GlobeClockMark from '@/components/layout/GlobeClockMark.vue'
 
 export default {
   name: 'AppHeader',
+  components: { GlobeClockMark },
   setup() {
     const { user, isAuthenticated, isGuest, canAccessAdmin, isSuper, loading, error, login, logout, clearError } = useAuth()
     const { locale, currentLocale, supportedLocales, setLocale, t } = useLocale()
@@ -362,6 +365,15 @@ export default {
   font-weight: 700;
   color: white;
   letter-spacing: -0.02em;
+}
+
+.logo-wordmark {
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: -0.03em;
+  line-height: 1;
 }
 
 .logo-btn .dropdown-arrow {
