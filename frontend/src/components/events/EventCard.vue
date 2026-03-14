@@ -119,7 +119,7 @@ export default {
 
 .event_name {
   font-weight: 500;
-  color: #1e293b;
+  color: #475569;
   flex: 1;
   min-width: 0;
   white-space: nowrap;
