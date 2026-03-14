@@ -434,6 +434,13 @@ export default {
   color: #94a3b8;
 }
 
+@media (max-width: 640px) {
+  .related_date,
+  .related_separator {
+    display: none;
+  }
+}
+
 .related_name {
   color: #4f46e5;
   cursor: pointer;
