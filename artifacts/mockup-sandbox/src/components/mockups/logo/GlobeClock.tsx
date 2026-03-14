@@ -86,13 +86,13 @@ function Mark({ size = 140, inverted = false }) {
               [-0.344, 0.829], [-0.435, 0.788], [-0.470, 0.682],
               [-0.766, 0.035],
             ])} />
-            {/* Africa — clock-sector clips northern half; southern tip visible.
-                Clockwise: Senegal → Libya/Egypt → E-Africa → Cape → Angola → back */}
+            {/* Africa — shifted -0.25 in nx so the southern body falls in globe sector.
+                Clock-sector still clips the northern half naturally. */}
             <path d={poly([
-              [ 0.218,-0.242], [ 0.578,-0.530], [ 0.759,-0.375],
-              [ 0.828, 0.407], [ 0.718, 0.500], [ 0.628, 0.574],
-              [ 0.616, 0.559], [ 0.644, 0.375], [ 0.646, 0.259],
-              [ 0.668, 0.035], [ 0.543,-0.087], [ 0.272,-0.174],
+              [-0.032,-0.242], [ 0.328,-0.530], [ 0.509,-0.375],
+              [ 0.578, 0.407], [ 0.468, 0.500], [ 0.378, 0.574],
+              [ 0.366, 0.559], [ 0.394, 0.375], [ 0.396, 0.259],
+              [ 0.418, 0.035], [ 0.293,-0.087], [ 0.022,-0.174],
             ])} />
           </>
         })()}
