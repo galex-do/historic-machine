@@ -291,7 +291,7 @@ export default {
 
 .event_name {
   font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #475569;
   word-break: break-word;
