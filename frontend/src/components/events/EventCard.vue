@@ -106,7 +106,7 @@ export default {
 
 .event_title_line {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   gap: 0.25rem;
   font-size: 0.875rem;
   line-height: 1.4;
