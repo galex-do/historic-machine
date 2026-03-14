@@ -806,7 +806,7 @@ export default {
   font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
-  color: #1e293b;
+  color: #475569;
   letter-spacing: -0.01em;
   min-width: 0;
   max-height: 1.8em;
