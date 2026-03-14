@@ -2475,9 +2475,9 @@ export default {
 .event_info_modal_title {
   margin: 0;
   font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: 700;
-  color: #1e293b;
+  color: #475569;
   letter-spacing: -0.01em;
   flex: 1;
   white-space: nowrap;
@@ -2485,7 +2485,7 @@ export default {
 
 .event_info_modal_title .event_name {
   font-weight: 600;
-  color: #1e293b;
+  color: #475569;
 }
 
 .event_info_modal_title .event_name_link {
