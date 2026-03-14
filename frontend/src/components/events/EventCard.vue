@@ -122,6 +122,9 @@ export default {
   color: #1e293b;
   flex: 1;
   min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .event_name_link {
@@ -131,6 +134,9 @@ export default {
   transition: color 0.2s;
   flex: 1;
   min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .event_name_link:hover {
