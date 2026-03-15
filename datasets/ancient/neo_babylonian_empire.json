@@ -12,11 +12,11 @@
       "name_ru": "Халдейский контроль над Южной Месопотамией",
       "source": "https://en.wikipedia.org/wiki/Nabopolassar",
       "tags": [
-        "Conquest",
-        "Mesopotamia",
         "Babylonian",
+        "Chaldean",
         "War",
-        "Chaldean"
+        "Conquest",
+        "Mesopotamia"
       ],
       "type": "military"
     },
@@ -31,13 +31,13 @@
       "name_ru": "Вавилоняне разрушают Харран",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Harran_(609_BC)",
       "tags": [
-        "Conquest",
         "Egypt",
-        "Destruction",
-        "Babylonian",
         "Assyrian",
+        "Babylonian",
+        "Chaldean",
         "War",
-        "Chaldean"
+        "Conquest",
+        "Destruction"
       ],
       "type": "military"
     },
@@ -52,10 +52,10 @@
       "name_ru": "Коронация Навуходоносора II",
       "source": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II",
       "tags": [
-        "Dynasty",
-        "King",
         "Babylonian",
         "Chaldean",
+        "Dynasty",
+        "King",
         "Nebuchadnezzar II 👑"
       ],
       "type": "political"
@@ -72,12 +72,12 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Carchemish",
       "tags": [
         "Egypt",
-        "Battle",
         "Babylonian",
-        "War",
-        "Syria",
         "Chaldean",
-        "Nebuchadnezzar II 👑"
+        "War",
+        "Battle",
+        "Nebuchadnezzar II 👑",
+        "Syria"
       ],
       "type": "military"
     },
@@ -92,12 +92,12 @@
       "name_ru": "Вавилоняне завоевывают Ашкелон",
       "source": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II",
       "tags": [
-        "Conquest",
         "Babylonian",
+        "Judaic",
+        "Chaldean",
         "Israel",
         "War",
-        "Judah",
-        "Chaldean",
+        "Conquest",
         "Nebuchadnezzar II 👑"
       ],
       "type": "military"
@@ -115,8 +115,8 @@
       "tags": [
         "Egypt",
         "Babylonian",
-        "War",
         "Chaldean",
+        "War",
         "Nebuchadnezzar II 👑"
       ],
       "type": "military"
@@ -132,10 +132,10 @@
       "name_ru": "Начало реконструкции Вавилона",
       "source": "https://en.wikipedia.org/wiki/Babylon",
       "tags": [
-        "Architecture",
         "Babylonian",
-        "Fortification",
         "Chaldean",
+        "Architecture",
+        "Fortification",
         "Nebuchadnezzar II 👑"
       ],
       "type": "cultural"
@@ -151,13 +151,13 @@
       "name_ru": "Аравийская кампания Вавилона",
       "source": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II",
       "tags": [
-        "Expansion",
         "Babylonian",
-        "Expedition",
-        "War",
         "Chaldean",
-        "Nebuchadnezzar II 👑",
-        "Arabia"
+        "War",
+        "Arabia",
+        "Expansion",
+        "Expedition",
+        "Nebuchadnezzar II 👑"
       ],
       "type": "military"
     },
@@ -172,15 +172,15 @@
       "name_ru": "Первая осада Иерусалима",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(597_BC)",
       "tags": [
-        "Conquest",
         "Babylonian",
+        "Judaic",
+        "Chaldean",
         "Israel",
         "Jerusalem",
-        "Siege",
         "War",
-        "Judah",
-        "Chaldean",
-        "Nebuchadnezzar II 👑"
+        "Conquest",
+        "Nebuchadnezzar II 👑",
+        "Siege"
       ],
       "type": "military"
     },
@@ -196,9 +196,9 @@
       "source": "https://en.wikipedia.org/wiki/Babylonian_astronomy",
       "tags": [
         "Babylonian",
+        "Chaldean",
         "Astronomy",
-        "Science",
-        "Chaldean"
+        "Science"
       ],
       "type": "scientific"
     },
@@ -213,10 +213,10 @@
       "name_ru": "Висячие сады Вавилона",
       "source": "https://en.wikipedia.org/wiki/Hanging_Gardens_of_Babylon",
       "tags": [
-        "Architecture",
         "Babylonian",
-        "Ancient Wonders",
         "Chaldean",
+        "Ancient Wonders",
+        "Architecture",
         "Nebuchadnezzar II 👑"
       ],
       "type": "cultural"
@@ -234,13 +234,13 @@
       "tags": [
         "Egypt",
         "Babylonian",
+        "Judaic",
+        "Chaldean",
         "Israel",
         "Jerusalem",
-        "Rebellion",
         "War",
-        "Judah",
-        "Chaldean",
-        "Nebuchadnezzar II 👑"
+        "Nebuchadnezzar II 👑",
+        "Rebellion"
       ],
       "type": "political"
     },
@@ -255,15 +255,15 @@
       "name_ru": "Разрушение Вавилонией Иерусалима",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(587_BC)",
       "tags": [
-        "Destruction",
         "Babylonian",
-        "Temple",
-        "Jerusalem",
-        "City",
-        "Temple of Solomon",
-        "War",
         "Chaldean",
-        "Nebuchadnezzar II 👑"
+        "Jerusalem",
+        "War",
+        "City",
+        "Destruction",
+        "Nebuchadnezzar II 👑",
+        "Temple",
+        "Temple of Solomon"
       ],
       "type": "military"
     },
@@ -278,13 +278,13 @@
       "name_ru": "Завершение зиккурата Этеменанки",
       "source": "https://en.wikipedia.org/wiki/Etemenanki",
       "tags": [
-        "Architecture",
         "Babylonian",
-        "Temple",
+        "Chaldean",
         "Building 🏠",
         "Legend",
-        "Chaldean",
-        "Nebuchadnezzar II 👑"
+        "Architecture",
+        "Nebuchadnezzar II 👑",
+        "Temple"
       ],
       "type": "cultural"
     },
@@ -299,10 +299,10 @@
       "name_ru": "Процессионный путь Вавилона",
       "source": "https://en.wikipedia.org/wiki/Processional_Way",
       "tags": [
-        "Architecture",
-        "Art",
         "Babylonian",
         "Chaldean",
+        "Architecture",
+        "Art",
         "Nebuchadnezzar II 👑"
       ],
       "type": "cultural"
@@ -318,11 +318,11 @@
       "name_ru": "Ворота Иштар завершены",
       "source": "https://en.wikipedia.org/wiki/Ishtar_Gate",
       "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Building 🏠",
         "Architecture",
         "Art",
-        "Babylonian",
-        "Building 🏠",
-        "Chaldean",
         "Nebuchadnezzar II 👑"
       ],
       "type": "cultural"
@@ -338,13 +338,13 @@
       "name_ru": "Восстановление храма Эсагила",
       "source": "https://en.wikipedia.org/wiki/Esagila",
       "tags": [
-        "Architecture",
         "Babylonian",
-        "Temple",
-        "Religious",
-        "Building 🏠",
         "Chaldean",
-        "Nebuchadnezzar II 👑"
+        "Building 🏠",
+        "Architecture",
+        "Nebuchadnezzar II 👑",
+        "Religious",
+        "Temple"
       ],
       "type": "religious"
     },
@@ -361,10 +361,10 @@
       "tags": [
         "Egypt",
         "Babylonian",
-        "War",
-        "Syria",
         "Chaldean",
-        "Nebuchadnezzar II 👑"
+        "War",
+        "Nebuchadnezzar II 👑",
+        "Syria"
       ],
       "type": "military"
     },
@@ -379,32 +379,14 @@
       "name_ru": "Вавилон на вершине славы",
       "source": "https://en.wikipedia.org/wiki/Babylon",
       "tags": [
-        "Urban",
         "Babylonian",
+        "Chaldean",
         "City",
         "Golden Age",
-        "Chaldean",
-        "Nebuchadnezzar II 👑"
+        "Nebuchadnezzar II 👑",
+        "Urban"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.0562",
-      "description": "Death of Nebuchadnezzar II after 43-year reign, longest of Chaldean dynasty, leaving empire at zenith of power but succession uncertain",
-      "description_ru": "Смерть Навуходоносора II после 43-летнего правления, самого длительного в халдейской династии, оставляя империю на вершине могущества, но с неопределённым престолонаследием",
-      "era": "BC",
-      "latitude": 32.543,
-      "longitude": 44.421,
-      "name": "Death of Nebuchadnezzar II",
-      "name_ru": "Смерть Навуходоносора II",
-      "source": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II",
-      "tags": [
-        "Death",
-        "Babylonian",
-        "Chaldean",
-        "Nebuchadnezzar II 👑"
-      ],
-      "type": "political"
     },
     {
       "date": "01.01.0562",
@@ -417,10 +399,28 @@
       "name_ru": "Амель-Мардук - царь Вавилона",
       "source": "https://en.wikipedia.org/wiki/Amel-Marduk",
       "tags": [
-        "King",
         "Babylonian",
-        "Judah",
-        "Chaldean"
+        "Judaic",
+        "Chaldean",
+        "King"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0562",
+      "description": "Death of Nebuchadnezzar II after 43-year reign, longest of Chaldean dynasty, leaving empire at zenith of power but succession uncertain",
+      "description_ru": "Смерть Навуходоносора II после 43-летнего правления, самого длительного в халдейской династии, оставляя империю на вершине могущества, но с неопределённым престолонаследием",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Death of Nebuchadnezzar II",
+      "name_ru": "Смерть Навуходоносора II",
+      "source": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
+        "Death",
+        "Nebuchadnezzar II 👑"
       ],
       "type": "political"
     },
@@ -436,10 +436,10 @@
       "source": "https://en.wikipedia.org/wiki/Neriglissar",
       "tags": [
         "Babylonian",
-        "Overthrow",
+        "Chaldean",
         "Assassination",
-        "Regicide",
-        "Chaldean"
+        "Overthrow",
+        "Regicide"
       ],
       "type": "political"
     },
@@ -454,12 +454,12 @@
       "name_ru": "Поход Вавилона в Киликию",
       "source": "https://en.wikipedia.org/wiki/Neriglissar",
       "tags": [
-        "Conquest",
-        "Expansion",
         "Babylonian",
+        "Chaldean",
         "War",
         "Cilicia",
-        "Chaldean"
+        "Conquest",
+        "Expansion"
       ],
       "type": "military"
     },
@@ -474,10 +474,10 @@
       "name_ru": "Набонид - последний царь Вавилона",
       "source": "https://en.wikipedia.org/wiki/Nabonidus",
       "tags": [
-        "King",
         "Babylonian",
-        "Overthrow",
-        "Nabonidus 👑"
+        "King",
+        "Nabonidus 👑",
+        "Overthrow"
       ],
       "type": "political"
     },
@@ -493,9 +493,9 @@
       "source": "https://en.wikipedia.org/wiki/Labashi-Marduk",
       "tags": [
         "Babylonian",
+        "Chaldean",
         "Assassination",
-        "Regicide",
-        "Chaldean"
+        "Regicide"
       ],
       "type": "political"
     },
@@ -511,9 +511,9 @@
       "source": "https://en.wikipedia.org/wiki/Nabonidus",
       "tags": [
         "Babylonian",
-        "Religious",
+        "Blasphemy",
         "Nabonidus 👑",
-        "Blasphemy"
+        "Religious"
       ],
       "type": "religious"
     },
@@ -529,9 +529,9 @@
       "source": "https://en.wikipedia.org/wiki/Nabonidus",
       "tags": [
         "Babylonian",
-        "Regency",
         "Arabia",
-        "Nabonidus 👑"
+        "Nabonidus 👑",
+        "Regency"
       ],
       "type": "political"
     },
@@ -546,9 +546,9 @@
       "name_ru": "Вавилонская математическая астрономия",
       "source": "https://en.wikipedia.org/wiki/Babylonian_astronomy",
       "tags": [
-        "Mathematics",
         "Babylonian",
         "Astronomy",
+        "Mathematics",
         "Science"
       ],
       "type": "scientific"
@@ -565,9 +565,9 @@
       "source": "https://en.wikipedia.org/wiki/Nabonidus",
       "tags": [
         "Babylonian",
-        "Religious",
+        "Blasphemy",
         "Nabonidus 👑",
-        "Blasphemy"
+        "Religious"
       ],
       "type": "religious"
     },
@@ -599,10 +599,10 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Opis",
       "tags": [
         "Persian",
-        "Battle",
         "Babylonian",
-        "Cyrus the Great 👑",
-        "War"
+        "War",
+        "Battle",
+        "Cyrus the Great 👑"
       ],
       "type": "military"
     }
