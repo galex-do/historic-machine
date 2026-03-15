@@ -11,7 +11,12 @@
       "latitude": 25.99,
       "longitude": 85.13,
       "source": "https://en.wikipedia.org/wiki/Vajjian_Confederacy",
-      "tags": ["Indian", "Kingdom", "Political", "Democracy"],
+      "tags": [
+        "Indian",
+        "Kingdom",
+        "Political",
+        "Democracy"
+      ],
       "type": "political"
     },
     {
@@ -24,7 +29,12 @@
       "latitude": 25.03,
       "longitude": 85.42,
       "source": "https://en.wikipedia.org/wiki/Bimbisara",
-      "tags": ["Indian", "Kingdom", "Political", "Expansion"],
+      "tags": [
+        "Indian",
+        "Kingdom",
+        "Political",
+        "Expansion"
+      ],
       "type": "political"
     },
     {
@@ -37,7 +47,11 @@
       "latitude": 27.57,
       "longitude": 83.05,
       "source": "https://en.wikipedia.org/wiki/Gautama_Buddha",
-      "tags": ["Indian", "Religious", "Buddhism"],
+      "tags": [
+        "Indian",
+        "Religious",
+        "Buddhism"
+      ],
       "type": "religious"
     },
     {
@@ -50,7 +64,11 @@
       "latitude": 24.69,
       "longitude": 84.99,
       "source": "https://en.wikipedia.org/wiki/Bodh_Gaya",
-      "tags": ["Indian", "Religious", "Buddhism"],
+      "tags": [
+        "Indian",
+        "Religious",
+        "Buddhism"
+      ],
       "type": "religious"
     },
     {
@@ -63,7 +81,12 @@
       "latitude": 25.38,
       "longitude": 83.02,
       "source": "https://en.wikipedia.org/wiki/Dhammacakkappavattana_Sutta",
-      "tags": ["Indian", "Religious", "Buddhism", "Philosophy"],
+      "tags": [
+        "Indian",
+        "Religious",
+        "Buddhism",
+        "Philosophy"
+      ],
       "type": "religious"
     },
     {
@@ -76,7 +99,12 @@
       "latitude": 33.74,
       "longitude": 72.83,
       "source": "https://en.wikipedia.org/wiki/Indo-Iranian_frontier",
-      "tags": ["Indian", "Persian", "Conquest", "Expansion"],
+      "tags": [
+        "Indian",
+        "Persian",
+        "Conquest",
+        "Expansion"
+      ],
       "type": "military"
     },
     {
@@ -89,7 +117,12 @@
       "latitude": 23.68,
       "longitude": 67.42,
       "source": "https://en.wikipedia.org/wiki/Scylax_of_Caryanda",
-      "tags": ["Indian", "Persian", "Exploration", "Trade"],
+      "tags": [
+        "Indian",
+        "Persian",
+        "Exploration",
+        "Trade"
+      ],
       "type": "historic"
     },
     {
@@ -102,7 +135,12 @@
       "latitude": 25.32,
       "longitude": 83.01,
       "source": "https://en.wikipedia.org/wiki/Varanasi",
-      "tags": ["Indian", "Trade", "Civilization", "Religious"],
+      "tags": [
+        "Indian",
+        "Trade",
+        "Civilization",
+        "Religious"
+      ],
       "type": "cultural"
     },
     {
@@ -115,7 +153,12 @@
       "latitude": 25.03,
       "longitude": 85.42,
       "source": "https://en.wikipedia.org/wiki/Ajatashatru",
-      "tags": ["Indian", "Kingdom", "Political", "Expansion"],
+      "tags": [
+        "Indian",
+        "Kingdom",
+        "Political",
+        "Expansion"
+      ],
       "type": "political"
     },
     {
@@ -128,7 +171,12 @@
       "latitude": 25.61,
       "longitude": 85.14,
       "source": "https://en.wikipedia.org/wiki/Pataliputra",
-      "tags": ["Indian", "Kingdom", "Political", "Architecture"],
+      "tags": [
+        "Indian",
+        "Kingdom",
+        "Political",
+        "Architecture"
+      ],
       "type": "political"
     },
     {
@@ -141,7 +189,12 @@
       "latitude": 25.99,
       "longitude": 85.13,
       "source": "https://en.wikipedia.org/wiki/Ajatashatru",
-      "tags": ["Indian", "Battle", "Technology", "War"],
+      "tags": [
+        "Indian",
+        "Battle",
+        "Technology",
+        "War"
+      ],
       "type": "military"
     },
     {
@@ -154,7 +207,12 @@
       "latitude": 25.99,
       "longitude": 85.13,
       "source": "https://en.wikipedia.org/wiki/Vajjian_Confederacy",
-      "tags": ["Indian", "Battle", "Kingdom", "Political"],
+      "tags": [
+        "Indian",
+        "Battle",
+        "Kingdom",
+        "Political"
+      ],
       "type": "military"
     },
     {
@@ -167,7 +225,11 @@
       "latitude": 26.74,
       "longitude": 83.89,
       "source": "https://en.wikipedia.org/wiki/Parinirvana",
-      "tags": ["Indian", "Religious", "Buddhism"],
+      "tags": [
+        "Indian",
+        "Religious",
+        "Buddhism"
+      ],
       "type": "religious"
     },
     {
@@ -180,7 +242,12 @@
       "latitude": 25.03,
       "longitude": 85.42,
       "source": "https://en.wikipedia.org/wiki/First_Buddhist_council",
-      "tags": ["Indian", "Religious", "Buddhism", "Literature"],
+      "tags": [
+        "Indian",
+        "Religious",
+        "Buddhism",
+        "Literature"
+      ],
       "type": "religious"
     },
     {
@@ -193,7 +260,12 @@
       "latitude": 25.03,
       "longitude": 85.42,
       "source": "https://en.wikipedia.org/wiki/Shishunaga_dynasty",
-      "tags": ["Indian", "Kingdom", "Political", "Expansion"],
+      "tags": [
+        "Indian",
+        "Kingdom",
+        "Political",
+        "Expansion"
+      ],
       "type": "political"
     },
     {
@@ -204,9 +276,14 @@
       "description": "The grammarian Panini of Gandhara composes the Ashtadhyayi, a grammar of the Sanskrit language in 3,976 sutras (rules). It is the most complete and precise grammatical description of any language produced in the ancient world, describing Classical Sanskrit fully and formally. Modern linguists consider it a precursor to formal language theory.",
       "description_ru": "Грамматист Панини из Гандхары составляет Аштадхьяи — грамматику санскрита в 3976 сутрах (правилах). Это наиболее полное и точное грамматическое описание любого языка, созданное в древнем мире. Современные лингвисты считают его предшественником формальной теории языка.",
       "latitude": 34.15,
-      "longitude": 72.0,
+      "longitude": 72,
       "source": "https://en.wikipedia.org/wiki/Pāṇini",
-      "tags": ["Indian", "Language", "Literature", "Civilization"],
+      "tags": [
+        "Indian",
+        "Language",
+        "Literature",
+        "Civilization"
+      ],
       "type": "scientific"
     },
     {
@@ -219,7 +296,11 @@
       "latitude": 25.32,
       "longitude": 83.01,
       "source": "https://en.wikipedia.org/wiki/Sushruta_Samhita",
-      "tags": ["Indian", "Medicine", "Civilization"],
+      "tags": [
+        "Indian",
+        "Medicine",
+        "Civilization"
+      ],
       "type": "scientific"
     },
     {
@@ -232,7 +313,11 @@
       "latitude": 25.99,
       "longitude": 85.13,
       "source": "https://en.wikipedia.org/wiki/Second_Buddhist_council",
-      "tags": ["Indian", "Religious", "Buddhism"],
+      "tags": [
+        "Indian",
+        "Religious",
+        "Buddhism"
+      ],
       "type": "religious"
     },
     {
@@ -245,7 +330,12 @@
       "latitude": 25.61,
       "longitude": 85.14,
       "source": "https://en.wikipedia.org/wiki/Nanda_Empire",
-      "tags": ["Indian", "Kingdom", "Political", "Expansion"],
+      "tags": [
+        "Indian",
+        "Kingdom",
+        "Political",
+        "Expansion"
+      ],
       "type": "political"
     },
     {
@@ -258,7 +348,12 @@
       "latitude": 35.2,
       "longitude": 69.5,
       "source": "https://en.wikipedia.org/wiki/Indian_campaign_of_Alexander_the_Great",
-      "tags": ["Indian", "Greek", "Conquest", "Expansion"],
+      "tags": [
+        "Indian",
+        "Greek",
+        "Conquest",
+        "Expansion"
+      ],
       "type": "military"
     },
     {
@@ -271,7 +366,12 @@
       "latitude": 32.93,
       "longitude": 73.73,
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Hydaspes",
-      "tags": ["Indian", "Greek", "Battle", "War"],
+      "tags": [
+        "Indian",
+        "Greek",
+        "Battle",
+        "War"
+      ],
       "type": "military"
     },
     {
@@ -284,7 +384,12 @@
       "latitude": 31.66,
       "longitude": 75.35,
       "source": "https://en.wikipedia.org/wiki/Mutiny_on_the_Hyphasis",
-      "tags": ["Indian", "Greek", "Battle", "War"],
+      "tags": [
+        "Indian",
+        "Greek",
+        "Battle",
+        "War"
+      ],
       "type": "military"
     },
     {
@@ -297,47 +402,12 @@
       "latitude": 33.74,
       "longitude": 72.83,
       "source": "https://en.wikipedia.org/wiki/Alexander_the_Great",
-      "tags": ["Indian", "Greek", "Political"],
+      "tags": [
+        "Indian",
+        "Greek",
+        "Political"
+      ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.0321",
-      "era": "BC",
-      "name": "Chandragupta Maurya Overthrows the Nanda Dynasty",
-      "name_ru": "Чандрагупта Маурья свергает династию Нанда",
-      "description": "Chandragupta Maurya, guided by the strategist Chanakya (Kautilya), raises an army in the Punjab, recruits former enemies of the Nandas, and storms Pataliputra — deposing the last Nanda king Dhana Nanda. This marks the founding of the Maurya Empire, which will become the largest empire ever in the Indian subcontinent.",
-      "description_ru": "Чандрагупта Маурья, направляемый стратегом Чанакьей (Каутильей), собирает армию в Пенджабе, вербует бывших врагов Нандов и захватывает Паталипутру — свергая последнего царя Нандов Дхана Нанду. Это знаменует основание империи Маурьев — крупнейшей в истории индийского субконтинента.",
-      "latitude": 25.61,
-      "longitude": 85.14,
-      "source": "https://en.wikipedia.org/wiki/Chandragupta_Maurya",
-      "tags": ["Indian", "Kingdom", "Political", "Expansion"],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0320",
-      "era": "BC",
-      "name": "Arthashastra — Chanakya's Science of Statecraft",
-      "name_ru": "Артхашастра — наука государственного управления Чанакьи",
-      "description": "Chanakya (Kautilya), the chief minister of Chandragupta Maurya, compiles the Arthashastra — a comprehensive treatise on statecraft, economic policy, military strategy, espionage, and law. It covers taxation systems, market regulation, diplomacy, city planning, and the duties of a king, offering a remarkably modern theory of governance.",
-      "description_ru": "Чанакья (Каутилья), главный министр Чандрагупты Маурья, составляет Артхашастру — всеобъемлющий трактат о государственном управлении, экономической политике, военной стратегии, шпионаже и праве. Он охватывает налогообложение, регулирование рынков, дипломатию, градостроительство и обязанности царя.",
-      "latitude": 25.61,
-      "longitude": 85.14,
-      "source": "https://en.wikipedia.org/wiki/Arthashastra",
-      "tags": ["Indian", "Literature", "Philosophy", "Political"],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.0305",
-      "era": "BC",
-      "name": "Chandragupta Defeats Seleucus — Treaty of the Indus",
-      "name_ru": "Победа Чандрагупты над Селевком — Договор на Инде",
-      "description": "Chandragupta Maurya defeats Seleucus I Nicator — one of Alexander's most powerful successors — in a military campaign. Seleucus cedes the eastern satrapies (Arachosia, Gedrosia, the Paropamisadae, and Aria) to the Maurya Empire in exchange for 500 war elephants. A marriage alliance is formed; the Maurya Empire now controls all of the Indian subcontinent west of the Ganges delta.",
-      "description_ru": "Чандрагупта Маурья побеждает Селевка I Никатора — одного из могущественнейших преемников Александра. Селевк уступает восточные сатрапии (Арахосию, Гедросию, Паропамисады и Арию) империи Маурьев в обмен на 500 боевых слонов. Устанавливается брачный союз; империя Маурьев контролирует весь субконтинент к западу от дельты Ганга.",
-      "latitude": 31.5,
-      "longitude": 68.0,
-      "source": "https://en.wikipedia.org/wiki/Seleucus%E2%80%93Maurya_War",
-      "tags": ["Indian", "Greek", "Diplomacy", "Expansion"],
-      "type": "military"
     }
   ]
 }
