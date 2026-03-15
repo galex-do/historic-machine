@@ -1,5 +1,5 @@
 {
-  "description": "Key events of the Indian Vedic Period (1500–500 BC): Indo-Aryan migration, composition of the Vedas and Upanishads, rise of the Kuru and Videha kingdoms, and the emergence of the Mahajanapadas.",
+  "description": "Key events of the Indian Vedic Period (1500–500 BC): Indo-Aryan migration, composition of the Vedas and Upanishads, rise of kingdoms, and developments in science, architecture, medicine, and social customs.",
   "events": [
     {
       "date": "01.01.1500",
@@ -24,7 +24,7 @@
       "latitude": 31.5,
       "longitude": 73.1,
       "source": "https://en.wikipedia.org/wiki/Rigveda",
-      "tags": ["Indian", "Indo-Aryan", "Religion", "Literature", "Writing"],
+      "tags": ["Indian", "Indo-Aryan", "Religious", "Literature", "Writing"],
       "type": "religious"
     },
     {
@@ -37,7 +37,7 @@
       "latitude": 30.7,
       "longitude": 73.9,
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Ten_Kings",
-      "tags": ["Indian", "Indo-Aryan", "Military", "Battle"],
+      "tags": ["Indian", "Indo-Aryan", "Battle"],
       "type": "military"
     },
     {
@@ -50,8 +50,21 @@
       "latitude": 29.5,
       "longitude": 74.5,
       "source": "https://en.wikipedia.org/wiki/Rigveda",
-      "tags": ["Indian", "Indo-Aryan", "Religion", "Literature", "Writing"],
+      "tags": ["Indian", "Indo-Aryan", "Religious", "Literature", "Writing"],
       "type": "religious"
+    },
+    {
+      "date": "01.01.1200",
+      "era": "BC",
+      "name": "Vedanga Jyotisha — Vedic Astronomy",
+      "name_ru": "Веданга-джьотиша — ведическая астрономия",
+      "description": "The Vedanga Jyotisha, the earliest surviving Indian astronomical text, is composed to calculate the correct times for Vedic rituals. It tracks solar and lunar cycles, defines a five-year calendar (yuga), and locates the winter solstice at the star Shravishtha — placing its composition around 1200 BC.",
+      "description_ru": "Веданга-джьотиша — древнейший сохранившийся индийский астрономический текст — составляется для определения правильного времени ведических обрядов. Он отслеживает солнечные и лунные циклы, определяет пятилетний календарь (югу) и указывает зимнее солнцестояние у звезды Шравиштха.",
+      "latitude": 29.97,
+      "longitude": 76.84,
+      "source": "https://en.wikipedia.org/wiki/Vedanga_Jyotisha",
+      "tags": ["Indian", "Indo-Aryan", "Civilization"],
+      "type": "scientific"
     },
     {
       "date": "01.01.1100",
@@ -95,6 +108,19 @@
     {
       "date": "01.01.1000",
       "era": "BC",
+      "name": "Vedic Horse Culture and Chariot Warfare",
+      "name_ru": "Ведическая культура коня и колесничный бой",
+      "description": "The Vedic Ashvamedha (horse sacrifice) ritual and chariot warfare reach their most developed forms in the Kuru period. Horse breeding becomes a royal priority; chariot designs with spoked wheels are standardized. Horses symbolize royal power and appear prominently in Vedic cosmology and ceremony.",
+      "description_ru": "Ритуал ашвамедхи (жертвоприношения коня) и колесничный бой достигают наивысшего развития в период Куру. Коневодство становится царской заботой; конструкция колесниц со спицованными колёсами стандартизируется. Конь символизирует царскую власть и занимает важное место в ведической космологии.",
+      "latitude": 29.97,
+      "longitude": 76.84,
+      "source": "https://en.wikipedia.org/wiki/Ashvamedha",
+      "tags": ["Indian", "Indo-Aryan", "Culture", "Religious"],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1000",
+      "era": "BC",
       "name": "Vedic Eastward Expansion into Gangetic Plain",
       "name_ru": "Ведическое расселение на Гангской равнине",
       "description": "Vedic peoples push east of the Doab into the middle Gangetic Plain, clearing forests with iron axes and establishing new settlements. The Koshala and Videha regions are colonized, extending the Vedic cultural sphere to the foothills of Nepal.",
@@ -115,7 +141,7 @@
       "latitude": 29.97,
       "longitude": 76.84,
       "source": "https://en.wikipedia.org/wiki/Samaveda",
-      "tags": ["Indian", "Indo-Aryan", "Religion", "Literature", "Culture"],
+      "tags": ["Indian", "Indo-Aryan", "Religious", "Literature", "Culture"],
       "type": "religious"
     },
     {
@@ -128,7 +154,7 @@
       "latitude": 29.5,
       "longitude": 77.5,
       "source": "https://en.wikipedia.org/wiki/Yajurveda",
-      "tags": ["Indian", "Indo-Aryan", "Religion", "Literature"],
+      "tags": ["Indian", "Indo-Aryan", "Religious", "Literature"],
       "type": "religious"
     },
     {
@@ -141,7 +167,7 @@
       "latitude": 28.5,
       "longitude": 77.5,
       "source": "https://en.wikipedia.org/wiki/Atharvaveda",
-      "tags": ["Indian", "Indo-Aryan", "Religion", "Literature"],
+      "tags": ["Indian", "Indo-Aryan", "Religious", "Literature"],
       "type": "religious"
     },
     {
@@ -154,8 +180,21 @@
       "latitude": 29.17,
       "longitude": 78.0,
       "source": "https://en.wikipedia.org/wiki/Kuru_Kingdom",
-      "tags": ["Indian", "Indo-Aryan", "Kingdom", "Political", "Religion"],
+      "tags": ["Indian", "Indo-Aryan", "Kingdom", "Political", "Religious"],
       "type": "political"
+    },
+    {
+      "date": "01.01.0900",
+      "era": "BC",
+      "name": "Varna Social System Codified",
+      "name_ru": "Кодификация системы варн",
+      "description": "The four-varna social classification — Brahmins (priests), Kshatriyas (warriors), Vaishyas (merchants/farmers), Shudras (servants) — is codified in texts of the Kuru period. First mentioned in the Purusha Sukta hymn of the Rig Veda, the system now governs marriage, occupation, and ritual access throughout Vedic society.",
+      "description_ru": "Четырёхварновая социальная классификация — брахманы (жрецы), кшатрии (воины), вайшьи (торговцы/земледельцы), шудры (слуги) — кодифицируется в текстах периода Куру. Впервые упомянутая в гимне Пуруша-сукта Ригведы, система теперь регулирует браки, занятия и доступ к ритуалам.",
+      "latitude": 29.97,
+      "longitude": 76.84,
+      "source": "https://en.wikipedia.org/wiki/Varna_(Hinduism)",
+      "tags": ["Indian", "Indo-Aryan", "Civilization", "Culture"],
+      "type": "cultural"
     },
     {
       "date": "01.01.0900",
@@ -167,8 +206,21 @@
       "latitude": 28.37,
       "longitude": 79.07,
       "source": "https://en.wikipedia.org/wiki/Brahmana",
-      "tags": ["Indian", "Indo-Aryan", "Religion", "Literature"],
+      "tags": ["Indian", "Indo-Aryan", "Religious", "Literature"],
       "type": "religious"
+    },
+    {
+      "date": "01.01.0850",
+      "era": "BC",
+      "name": "Agnichayana — Vedic Fire Altar Architecture",
+      "name_ru": "Агничаяна — архитектура ведических огненных алтарей",
+      "description": "The Agnichayana ritual — the most elaborate Vedic ceremony — involves construction of a large fire altar from precisely shaped and counted bricks, designed in the form of a flying eagle (Shyena). Described in detail in the Shatapatha Brahmana, the construction demands exact geometry: the altar's area must equal a specified number of square units regardless of shape, anticipating geometric methods later formalized in the Sulba Sutras.",
+      "description_ru": "Ритуал Агничаяны — наиболее сложная ведическая церемония — предполагает возведение большого огненного алтаря из точно подогнанных кирпичей в форме летящего орла (Шьена). Конструкция требует точной геометрии: площадь алтаря должна равняться заданному числу квадратных единиц вне зависимости от формы, что предвосхищает методы Сулба-сутр.",
+      "latitude": 28.37,
+      "longitude": 79.07,
+      "source": "https://en.wikipedia.org/wiki/Agnicayana",
+      "tags": ["Indian", "Indo-Aryan", "Religious", "Culture"],
+      "type": "cultural"
     },
     {
       "date": "01.01.0800",
@@ -180,8 +232,34 @@
       "latitude": 26.73,
       "longitude": 85.93,
       "source": "https://en.wikipedia.org/wiki/Shatapatha_Brahmana",
-      "tags": ["Indian", "Religion", "Literature", "Philosophy"],
+      "tags": ["Indian", "Religious", "Literature", "Philosophy"],
       "type": "religious"
+    },
+    {
+      "date": "01.01.0800",
+      "era": "BC",
+      "name": "Sulba Sutras — Vedic Geometry",
+      "name_ru": "Сулба-сутры — ведическая геометрия",
+      "description": "The Sulba Sutras — practical geometry manuals for constructing Vedic fire altars — are composed, with the Baudhayana Sulba Sutra being the earliest. They state the Pythagorean theorem independently and give methods for squaring the circle, making them among the earliest known systematic geometry texts anywhere in the world.",
+      "description_ru": "Сулба-сутры — практические руководства по геометрии для строительства ведических огненных алтарей — составляются; древнейшей является Бодхаяна-сулба-сутра. В них независимо формулируется теорема Пифагора и описываются методы квадратуры круга, что делает их одними из древнейших систематических трудов по геометрии в мире.",
+      "latitude": 28.37,
+      "longitude": 79.07,
+      "source": "https://en.wikipedia.org/wiki/Shulba_Sutras",
+      "tags": ["Indian", "Civilization"],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.0800",
+      "era": "BC",
+      "name": "Upanayana — Sacred Thread Ceremony Codified",
+      "name_ru": "Упанаяна — кодификация церемонии священного шнура",
+      "description": "The Upanayana initiation ceremony — marking a boy's entry into formal Vedic education under a guru — is codified in the Grihyasutras texts. The student receives a sacred thread (yajnopavita) and takes a vow of celibacy and study for up to 12 years. The ceremony defines the boundary between childhood and adulthood in upper-caste Vedic society.",
+      "description_ru": "Церемония посвящения упанаяна — знаменующая вступление мальчика в формальное ведическое обучение под руководством гуру — кодифицируется в текстах Грихьясутр. Ученик получает священный шнур (яджнопавита) и даёт обет безбрачия и учёбы на срок до 12 лет.",
+      "latitude": 29.97,
+      "longitude": 76.84,
+      "source": "https://en.wikipedia.org/wiki/Upanayana",
+      "tags": ["Indian", "Indo-Aryan", "Culture", "Religious"],
+      "type": "cultural"
     },
     {
       "date": "01.01.0800",
@@ -193,7 +271,7 @@
       "latitude": 26.73,
       "longitude": 85.93,
       "source": "https://en.wikipedia.org/wiki/Videha",
-      "tags": ["Indian", "Kingdom", "Political", "Philosophy", "Religion"],
+      "tags": ["Indian", "Kingdom", "Political", "Philosophy", "Religious"],
       "type": "political"
     },
     {
@@ -206,8 +284,21 @@
       "latitude": 26.0,
       "longitude": 82.0,
       "source": "https://en.wikipedia.org/wiki/Aranyaka",
-      "tags": ["Indian", "Religion", "Literature", "Philosophy"],
+      "tags": ["Indian", "Religious", "Literature", "Philosophy"],
       "type": "religious"
+    },
+    {
+      "date": "01.01.0750",
+      "era": "BC",
+      "name": "Ayurveda — Vedic Medical Tradition",
+      "name_ru": "Аюрведа — ведическая медицинская традиция",
+      "description": "The Ayurvedic medical tradition crystallizes from the Atharva Veda's healing hymns and the Charaka school's early oral teachings. Practitioners classify diseases, develop herbal remedies, and describe surgery, diet, and the tridosha (three humors) theory of health. Taxila and Varanasi emerge as the first centers of medical instruction.",
+      "description_ru": "Аюрведическая медицинская традиция складывается из целительных гимнов Атхарваведы и ранних устных поучений школы Чараки. Врачи классифицируют болезни, разрабатывают растительные лекарства, описывают хирургию, диету и теорию тридоши (трёх жизненных начал). Таксила и Варанаси становятся первыми центрами медицинского обучения.",
+      "latitude": 25.32,
+      "longitude": 83.01,
+      "source": "https://en.wikipedia.org/wiki/Ayurveda",
+      "tags": ["Indian", "Civilization", "Culture"],
+      "type": "scientific"
     },
     {
       "date": "01.01.0700",
@@ -219,7 +310,7 @@
       "latitude": 26.73,
       "longitude": 85.93,
       "source": "https://en.wikipedia.org/wiki/Brihadaranyaka_Upanishad",
-      "tags": ["Indian", "Religion", "Literature", "Philosophy"],
+      "tags": ["Indian", "Religious", "Literature", "Philosophy"],
       "type": "religious"
     },
     {
@@ -232,7 +323,7 @@
       "latitude": 29.0,
       "longitude": 77.0,
       "source": "https://en.wikipedia.org/wiki/Chandogya_Upanishad",
-      "tags": ["Indian", "Religion", "Literature", "Philosophy"],
+      "tags": ["Indian", "Religious", "Literature", "Philosophy"],
       "type": "religious"
     },
     {
@@ -245,7 +336,20 @@
       "latitude": 26.73,
       "longitude": 85.93,
       "source": "https://en.wikipedia.org/wiki/Yajnavalkya",
-      "tags": ["Indian", "Philosophy", "Religion", "Culture"],
+      "tags": ["Indian", "Philosophy", "Religious", "Culture"],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0700",
+      "era": "BC",
+      "name": "Ashrama System — Four Stages of Life",
+      "name_ru": "Система ашрамов — четыре стадии жизни",
+      "description": "The ashrama framework — dividing a man's life into four stages (student, householder, forest dweller, renunciant) — is elaborated in late Vedic and early Dharmashastra texts. Each stage has distinct duties, diet, and ritual obligations. The system integrates the competing Vedic ideals of worldly engagement and ascetic renunciation into a single life-course.",
+      "description_ru": "Система ашрамов — деление жизни мужчины на четыре стадии (ученик, домохозяин, лесной отшельник, странник-санньяси) — разрабатывается в поздневедических текстах и ранних Дхармашастрах. Каждая стадия имеет особые обязанности, диету и ритуальные предписания.",
+      "latitude": 26.0,
+      "longitude": 82.0,
+      "source": "https://en.wikipedia.org/wiki/Ashrama_(stage)",
+      "tags": ["Indian", "Culture", "Religious"],
       "type": "cultural"
     },
     {
@@ -258,7 +362,7 @@
       "latitude": 29.97,
       "longitude": 76.84,
       "source": "https://en.wikipedia.org/wiki/Mahabharata",
-      "tags": ["Indian", "Literature", "Culture", "Religion"],
+      "tags": ["Indian", "Literature", "Culture", "Religious"],
       "type": "cultural"
     },
     {
@@ -314,6 +418,19 @@
       "type": "cultural"
     },
     {
+      "date": "01.01.0600",
+      "era": "BC",
+      "name": "Punch-Marked Silver Coins",
+      "name_ru": "Серебряные монеты с пуансонными метками",
+      "description": "The earliest Indian coinage — irregularly shaped silver pieces punched with symbols of kingdoms, guilds, and merchant clans — appears in Magadha and Gandhara. Called Puranas or Karshapanas, they facilitate long-distance trade across the Mahajanapadas and mark a major shift from barter to monetary economy.",
+      "description_ru": "Древнейшие индийские монеты — нерегулярные серебряные пластины с пуансонными клеймами царств, гильдий и купеческих кланов — появляются в Магадхе и Гандхаре. Они облегчают дальнюю торговлю между Махаджанападами и знаменуют переход от натурального обмена к денежной экономике.",
+      "latitude": 25.03,
+      "longitude": 85.42,
+      "source": "https://en.wikipedia.org/wiki/Punch-marked_coins",
+      "tags": ["Indian", "Trade", "Civilization"],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0567",
       "era": "BC",
       "name": "Birth of Mahavira at Vaishali",
@@ -323,7 +440,7 @@
       "latitude": 25.99,
       "longitude": 85.13,
       "source": "https://en.wikipedia.org/wiki/Mahavira",
-      "tags": ["Indian", "Religion"],
+      "tags": ["Indian", "Religious"],
       "type": "religious"
     },
     {
@@ -336,7 +453,7 @@
       "latitude": 27.48,
       "longitude": 83.27,
       "source": "https://en.wikipedia.org/wiki/Gautama_Buddha",
-      "tags": ["Indian", "Religion"],
+      "tags": ["Indian", "Religious"],
       "type": "religious"
     },
     {
@@ -349,7 +466,7 @@
       "latitude": 25.09,
       "longitude": 85.52,
       "source": "https://en.wikipedia.org/wiki/Mahavira",
-      "tags": ["Indian", "Religion"],
+      "tags": ["Indian", "Religious"],
       "type": "religious"
     }
   ]
