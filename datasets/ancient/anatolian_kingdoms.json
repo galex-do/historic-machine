@@ -3,23 +3,6 @@
   "events": [
     {
       "date": "01.01.1300",
-      "description": "Indigenous Carian tribes (known as Karkissa in Hittite texts) settle in southwestern Anatolia between Maeander and Indus rivers, establishing distinct Anatolian culture with own language and traditions",
-      "description_ru": "Коренные карийские племена (известные как Каркисса в хеттских текстах) селятся в юго-западной Анатолии между реками Меандр и Инд, создавая отличительную анатолийскую культуру со своим языком и традициями",
-      "era": "BC",
-      "latitude": 37.5,
-      "longitude": 28,
-      "name": "Carian Settlement of Southwest Anatolia",
-      "name_ru": "Карийское заселение юго-западной Анатолии",
-      "source": "https://en.wikipedia.org/wiki/Caria",
-      "tags": [
-        "Hittite",
-        "Carian",
-        "Settlement"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1300",
       "description": "Proto-Lydian tribes settle in western Anatolia around Hermus and Cayster river valleys, establishing agricultural communities that will form basis of future Lydian civilization",
       "description_ru": "Прото-лидийские племена селятся в западной Анатолии вокруг долин рек Герм и Каистр, основывая сельскохозяйственные общины, которые сформируют основу будущей лидийской цивилизации",
       "era": "BC",
@@ -31,6 +14,23 @@
       "tags": [
         "Lydia",
         "Agriculture",
+        "Settlement"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1300",
+      "description": "Indigenous Carian tribes (known as Karkissa in Hittite texts) settle in southwestern Anatolia between Maeander and Indus rivers, establishing distinct Anatolian culture with own language and traditions",
+      "description_ru": "Коренные карийские племена (известные как Каркисса в хеттских текстах) селятся в юго-западной Анатолии между реками Меандр и Инд, создавая отличительную анатолийскую культуру со своим языком и традициями",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 28,
+      "name": "Carian Settlement of Southwest Anatolia",
+      "name_ru": "Карийское заселение юго-западной Анатолии",
+      "source": "https://en.wikipedia.org/wiki/Caria",
+      "tags": [
+        "Hittite",
+        "Carian",
         "Settlement"
       ],
       "type": "historic"
@@ -111,22 +111,22 @@
     },
     {
       "date": "01.01.1100",
-      "description": "Mylasa emerges as principal religious and political center of Caria; sacred sanctuary of Zeus Carius (war god distinct from Greek Zeus) established, becoming focal point for Carian tribal confederation",
-      "description_ru": "Миляс возникает как главный религиозный и политический центр Карии; здесь учреждено священное святилище Зевса Кария (бога войны, отличного от греческого Зевса)",
+      "description": "Sardis emerges as principal Lydian settlement; naturally defensible acropolis overlooks fertile Hermus valley, controlling trade routes between Aegean coast and Anatolian interior",
+      "description_ru": "Сарды возникают как главное лидийское поселение; защищенный рельефом акрополь возвышается над плодородной долиной Герма, контролируя торговые пути между побережьем Эгейского моря и внутренними районами Анатолии",
       "era": "BC",
-      "latitude": 37.3092,
-      "longitude": 27.7842,
-      "name": "Mylasa Becomes Carian Center",
-      "name_ru": "Миляс становится центром Карии",
-      "source": "https://en.wikipedia.org/wiki/Mylasa",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Foundation of Sardis",
+      "name_ru": "Основание лидийских Сард",
+      "source": "https://en.wikipedia.org/wiki/Sardis",
       "tags": [
+        "Lydia",
         "City",
+        "Anatolia",
         "Capital",
-        "Carian",
-        "Religious",
-        "Temple"
+        "Trade"
       ],
-      "type": "religious"
+      "type": "historic"
     },
     {
       "date": "01.01.1100",
@@ -149,22 +149,22 @@
     },
     {
       "date": "01.01.1100",
-      "description": "Sardis emerges as principal Lydian settlement; naturally defensible acropolis overlooks fertile Hermus valley, controlling trade routes between Aegean coast and Anatolian interior",
-      "description_ru": "Сарды возникают как главное лидийское поселение; защищенный рельефом акрополь возвышается над плодородной долиной Герма, контролируя торговые пути между побережьем Эгейского моря и внутренними районами Анатолии",
+      "description": "Mylasa emerges as principal religious and political center of Caria; sacred sanctuary of Zeus Carius (war god distinct from Greek Zeus) established, becoming focal point for Carian tribal confederation",
+      "description_ru": "Миляс возникает как главный религиозный и политический центр Карии; здесь учреждено священное святилище Зевса Кария (бога войны, отличного от греческого Зевса)",
       "era": "BC",
-      "latitude": 38.4852,
-      "longitude": 28.0428,
-      "name": "Foundation of Sardis",
-      "name_ru": "Основание лидийских Сард",
-      "source": "https://en.wikipedia.org/wiki/Sardis",
+      "latitude": 37.3092,
+      "longitude": 27.7842,
+      "name": "Mylasa Becomes Carian Center",
+      "name_ru": "Миляс становится центром Карии",
+      "source": "https://en.wikipedia.org/wiki/Mylasa",
       "tags": [
-        "Lydia",
         "City",
-        "Anatolia",
         "Capital",
-        "Trade"
+        "Carian",
+        "Religious",
+        "Temple"
       ],
-      "type": "historic"
+      "type": "religious"
     },
     {
       "date": "01.01.1050",
@@ -286,23 +286,6 @@
     },
     {
       "date": "01.01.0900",
-      "description": "Carian warriors gain reputation as fierce mercenaries serving in foreign armies; Homer describes Carians as 'barbarous of speech' but acknowledges their martial prowess and naval skills",
-      "description_ru": "Карийские воины приобретают репутацию свирепых наемников, служащих в иностранных армиях; Гомер описывает карийцев как 'варварских по речи', но признает их воинское мастерство и морские навыки",
-      "era": "BC",
-      "latitude": 37.5,
-      "longitude": 28,
-      "name": "Carian Mercenary Tradition",
-      "name_ru": "Карийская наемническая традиция",
-      "source": "https://en.wikipedia.org/wiki/Carians",
-      "tags": [
-        "Greek",
-        "Carian",
-        "Mercenaries"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0900",
       "description": "Phrygian artisans develop advanced bronze-working techniques, creating elaborate cauldrons with griffin and siren attachments that become highly prized trade goods throughout Mediterranean",
       "description_ru": "Фригийские мастера разрабатывают передовые техники работы с бронзой, создавая сложные котлы с насадками в виде грифонов и сирен, которые становятся высоко ценимыми торговыми товарами по всему Средиземноморью",
       "era": "BC",
@@ -322,6 +305,23 @@
       "type": "cultural"
     },
     {
+      "date": "01.01.0900",
+      "description": "Carian warriors gain reputation as fierce mercenaries serving in foreign armies; Homer describes Carians as 'barbarous of speech' but acknowledges their martial prowess and naval skills",
+      "description_ru": "Карийские воины приобретают репутацию свирепых наемников, служащих в иностранных армиях; Гомер описывает карийцев как 'варварских по речи', но признает их воинское мастерство и морские навыки",
+      "era": "BC",
+      "latitude": 37.5,
+      "longitude": 28,
+      "name": "Carian Mercenary Tradition",
+      "name_ru": "Карийская наемническая традиция",
+      "source": "https://en.wikipedia.org/wiki/Carians",
+      "tags": [
+        "Greek",
+        "Carian",
+        "Mercenaries"
+      ],
+      "type": "military"
+    },
+    {
       "date": "01.01.0850",
       "description": "Lydian merchants establish extensive trade networks connecting Anatolia with Greek world and Near East; exchange local gold, silver, textiles for Greek olive oil, wine, and Eastern spices",
       "description_ru": "Лидийские купцы создают обширные торговые сети, соединяющие Анатолию с греческим миром и Ближним Востоком; обменивают местное золото, серебро, ткани на греческое оливковое масло, вино и восточные специи",
@@ -337,6 +337,25 @@
         "Economic",
         "Heraclid",
         "Trade"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0850",
+      "description": "The Cimmerians were the first nomadic people of the Northern Black Sea region whose name is recorded in written historical sources. The Cimmerians were warlike horsemen. Their main occupation was nomadic herding and military raids. Before meeting the Cimmerians, the armies of the Middle East used bulky chariots. The Cimmerians, however, were the first fully-fledged mounted archers.",
+      "description_ru": "Киммерийцы — первый кочевой народ Северного Причерноморья, имя которого зафиксировано в письменных исторических источниках. Киммерийцы были воинственными всадниками. Их главным занятием было кочевое скотоводство и военные набеги. До встречи с киммерийцами армии Ближнего Востока использовали громоздкие колесницы. Киммерийцы же были первыми полноценными конными стрелками.\n",
+      "era": "BC",
+      "latitude": 45.04370613,
+      "longitude": 36.23170853,
+      "name": "Cimmerians in Crimea",
+      "name_ru": "Киммерийцы в Крыму",
+      "tags": [
+        "Cimmerian",
+        "War",
+        "Cavalry",
+        "Crimea",
+        "Science",
+        "Tactics"
       ],
       "type": "historic"
     },
@@ -361,23 +380,23 @@
       "type": "historic"
     },
     {
-      "date": "01.01.0850",
-      "description": "The Cimmerians were the first nomadic people of the Northern Black Sea region whose name is recorded in written historical sources. The Cimmerians were warlike horsemen. Their main occupation was nomadic herding and military raids. Before meeting the Cimmerians, the armies of the Middle East used bulky chariots. The Cimmerians, however, were the first fully-fledged mounted archers.",
-      "description_ru": "Киммерийцы — первый кочевой народ Северного Причерноморья, имя которого зафиксировано в письменных исторических источниках. Киммерийцы были воинственными всадниками. Их главным занятием было кочевое скотоводство и военные набеги. До встречи с киммерийцами армии Ближнего Востока использовали громоздкие колесницы. Киммерийцы же были первыми полноценными конными стрелками.\n",
+      "date": "01.01.0800",
+      "description": "Lydians become renowned for musical innovation; invent sambuca (triangular harp) and develop distinctive scales that influence Greek music theory alongside Phrygian contributions",
+      "description_ru": "Лидийцы становятся известными благодаря музыкальным инновациям; изобретают самбуку (треугольную арфу) и разрабатывают характерные гаммы, влияющие на греческую музыкальную теорию наряду с фригийскими вкладами",
       "era": "BC",
-      "latitude": 45.04370613,
-      "longitude": 36.23170853,
-      "name": "Cimmerians in Crimea",
-      "name_ru": "Киммерийцы в Крыму",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Lydian Musical Innovation",
+      "name_ru": "Лидийские музыкальные инновации",
+      "source": "https://en.wikipedia.org/wiki/Lydia",
       "tags": [
-        "Cimmerian",
-        "War",
-        "Cavalry",
-        "Crimea",
-        "Science",
-        "Tactics"
+        "Greek",
+        "Lydia",
+        "Culture",
+        "Innovation",
+        "Music"
       ],
-      "type": "historic"
+      "type": "cultural"
     },
     {
       "date": "01.01.0800",
@@ -395,25 +414,6 @@
         "King",
         "Legend",
         "Culture"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0800",
-      "description": "Lydians become renowned for musical innovation; invent sambuca (triangular harp) and develop distinctive scales that influence Greek music theory alongside Phrygian contributions",
-      "description_ru": "Лидийцы становятся известными благодаря музыкальным инновациям; изобретают самбуку (треугольную арфу) и разрабатывают характерные гаммы, влияющие на греческую музыкальную теорию наряду с фригийскими вкладами",
-      "era": "BC",
-      "latitude": 38.4852,
-      "longitude": 28.0428,
-      "name": "Lydian Musical Innovation",
-      "name_ru": "Лидийские музыкальные инновации",
-      "source": "https://en.wikipedia.org/wiki/Lydia",
-      "tags": [
-        "Greek",
-        "Lydia",
-        "Culture",
-        "Innovation",
-        "Music"
       ],
       "type": "cultural"
     },
@@ -1062,13 +1062,14 @@
       "longitude": 28.05,
       "name": "Tomb of Alyattes Constructed",
       "name_ru": "Строительство гробницы Алиатта",
-      "source": "https://en.wikipedia.org/wiki/Tomb_of_Alyattes",
+      "source": "https://en.wikipedia.org/wiki/Bin_Tepe",
       "tags": [
         "Lydia",
         "Mermnad",
         "Building 🏠",
         "Architecture",
-        "Monument",
+        "Earthwork",
+        "Mound Builders",
         "Tomb"
       ],
       "type": "historic"
@@ -1149,25 +1150,6 @@
     },
     {
       "date": "01.01.0550",
-      "description": "Lydian Kingdom under Croesus reaches peak prosperity; Sardis becomes cosmopolitan center where Greek philosophers like Thales and Solon visit royal court for intellectual exchange",
-      "description_ru": "Лидийское царство под Крезом достигает пика процветания; Сарды становятся космополитическим центром, где греческие философы, такие как Фалес и Солон, посещают царский двор для интеллектуального обмена",
-      "era": "BC",
-      "latitude": 38.4852,
-      "longitude": 28.0428,
-      "name": "Lydia at Cultural Peak",
-      "name_ru": "Лидия на культурном пике",
-      "source": "https://en.wikipedia.org/wiki/Croesus",
-      "tags": [
-        "Greek",
-        "Lydia",
-        "Culture",
-        "Golden Age",
-        "Philosophy"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0550",
       "description": "Croesus introduces pure gold and pure silver coinage, replacing electrum currency; innovation creates first bimetallic monetary system with standardized exchange rate between gold and silver",
       "description_ru": "Крез вводит чистую золотую и чистую серебряную монету, заменяя электрумную валюту; инновация создает первую биметаллическую денежную систему со стандартизированным обменным курсом между золотом и серебром",
       "era": "BC",
@@ -1184,6 +1166,25 @@
         "Innovation"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0550",
+      "description": "Lydian Kingdom under Croesus reaches peak prosperity; Sardis becomes cosmopolitan center where Greek philosophers like Thales and Solon visit royal court for intellectual exchange",
+      "description_ru": "Лидийское царство под Крезом достигает пика процветания; Сарды становятся космополитическим центром, где греческие философы, такие как Фалес и Солон, посещают царский двор для интеллектуального обмена",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Lydia at Cultural Peak",
+      "name_ru": "Лидия на культурном пике",
+      "source": "https://en.wikipedia.org/wiki/Croesus",
+      "tags": [
+        "Greek",
+        "Lydia",
+        "Culture",
+        "Golden Age",
+        "Philosophy"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0548",
@@ -1496,12 +1497,12 @@
       "source": "https://en.wikipedia.org/wiki/Mausoleum_at_Halicarnassus",
       "tags": [
         "Greek",
+        "Building 🏠",
         "Anatolia",
         "Ancient Wonders",
         "Architecture",
         "Art",
         "Carian",
-        "Monument",
         "Tomb"
       ],
       "type": "historic"

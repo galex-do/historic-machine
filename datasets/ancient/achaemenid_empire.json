@@ -67,28 +67,6 @@
     },
     {
       "date": "01.01.0546",
-      "description": "Construction begins on Pasargadae, first dynastic capital of Persian Empire, featuring Cyrus's tomb and palace complex with innovative architectural synthesis of various cultures",
-      "description_ru": "Начинается строительство Пасаргад, первой династической столицы Персидской империи, с гробницей Кира и дворцовым комплексом. Кир брал от покоренных народов архитектурные особенности и подходы, и применял их при строительстве дворца. Также Кир любил сады, и в Пасаргадах были разбиты обширные сады и серьезная система ирригации.",
-      "era": "BC",
-      "latitude": 30.2026,
-      "longitude": 53.1678,
-      "name": "Foundation of Pasargadae",
-      "name_ru": "Основание Пасаргад",
-      "source": "https://en.wikipedia.org/wiki/Pasargadae",
-      "tags": [
-        "Persian",
-        "Achaemenid",
-        "Building 🏠",
-        "City",
-        "Architecture",
-        "Capital",
-        "Cyrus the Great 👑",
-        "Palace"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0546",
       "description": "Cyrus the Great conquers Lydia after defeating King Croesus at Battle of Thymbra, adding wealthy Anatolian territories and Lydian gold reserves to Persian Empire. After conquering Lydia, Cyrus spares Croesus's life and makes him advisor, demonstrating magnanimity toward defeated rulers that becomes hallmark of his reign",
       "description_ru": "Кир Великий завоевывает Лидию после победы над царем Крезом в битве при Тимбре, присваивая богатые анатолийские территории и лидийские золотые резервы Персии. После завоевания Лидии Кир щадит жизнь Креза и делает его советником, демонстрируя великодушие к побежденным правителям, что станет отличительной чертой его правления",
       "era": "BC",
@@ -108,6 +86,28 @@
         "Tolerance"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0546",
+      "description": "Construction begins on Pasargadae, first dynastic capital of Persian Empire, featuring Cyrus's tomb and palace complex with innovative architectural synthesis of various cultures",
+      "description_ru": "Начинается строительство Пасаргад, первой династической столицы Персидской империи, с гробницей Кира и дворцовым комплексом. Кир брал от покоренных народов архитектурные особенности и подходы, и применял их при строительстве дворца. Также Кир любил сады, и в Пасаргадах были разбиты обширные сады и серьезная система ирригации.",
+      "era": "BC",
+      "latitude": 30.2026,
+      "longitude": 53.1678,
+      "name": "Foundation of Pasargadae",
+      "name_ru": "Основание Пасаргад",
+      "source": "https://en.wikipedia.org/wiki/Pasargadae",
+      "tags": [
+        "Persian",
+        "Achaemenid",
+        "Building 🏠",
+        "City",
+        "Architecture",
+        "Capital",
+        "Cyrus the Great 👑",
+        "Palace"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0545",
@@ -167,6 +167,44 @@
         "Expansion"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0540",
+      "description": "Herodotus described the Arius region as extremely fertile. Artacoana flourished thanks to its location in the Harirud River valley, which supplied the city with water and made it a vital trade hub on the route to India and Central Asia. To maintain control of the region, the Persians built strongholds. Artacoana became one of the Achaemenid Empire's outposts in the East.",
+      "description_ru": "Геродот описывал регион Ария как чрезвычайно плодородный. Артакоана процветала благодаря своему расположению в долине реки Харируд, которая обеспечивала город водой и делала его важнейшим торговым узлом на пути в Индию и Центральную Азию. Чтобы удерживать контроль над регионом, персы строили опорные пункты. Артакоана стала одним из форпостов ахеменидской империи на Востоке",
+      "era": "BC",
+      "latitude": 34.34583668,
+      "longitude": 62.18842149,
+      "name": "The Persians found Artacoana in Aria",
+      "name_ru": "Основание персами Артакоаны в Арии",
+      "source": "https://en.wikipedia.org/wiki/Artacoana",
+      "tags": [
+        "Persian",
+        "Achaemenid",
+        "City",
+        "Fortification"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0540",
+      "description": "Cyrus wanted to mark the northernmost point of his empire. The city on the Jaxartes River (Syr Darya) became a \"fortress\" on the border with the nomadic Saka and Massagetae tribes. He resettled people there from central Persia and built a powerful fortification system. The city was surrounded by a high mudbrick wall.",
+      "description_ru": "Кир хотел обозначить крайнюю северную точку своей державы. Город на реке Яксарт (Сырдарья) стал «замком» на границе с кочевыми племенами саков и массагетов.  Он переселил туда людей из центральных областей Персии и создал мощную фортификационную систему. Город был окружен высокой стеной из сырцового кирпича",
+      "era": "BC",
+      "latitude": 39.91625378,
+      "longitude": 69.00729418,
+      "name": "The founding of Cyropolis by the Persians",
+      "name_ru": "Основание персами Кирополя",
+      "source": "https://en.wikipedia.org/wiki/Cyropolis",
+      "tags": [
+        "Persian",
+        "Achaemenid",
+        "City",
+        "Cyrus the Great 👑",
+        "Defense",
+        "Fortification"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0540",
@@ -354,6 +392,27 @@
     },
     {
       "date": "01.01.0530",
+      "description": "Cyrus campaigns against Massagetae nomads in Central Asia; killed in battle by Queen Tomyris, ending reign of empire's founder and greatest conqueror",
+      "description_ru": "Кир убит в бою царицей массагетов Томирис, когда ведет военную кампанию против кочевников в Центральной Азии",
+      "era": "BC",
+      "latitude": 42,
+      "longitude": 60,
+      "name": "Death of Cyrus the Great",
+      "name_ru": "Смерть Кира Великого",
+      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
+      "tags": [
+        "Persian",
+        "Achaemenid",
+        "Scythian",
+        "War",
+        "Battle",
+        "Cyrus the Great 👑",
+        "Death"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0530",
       "description": "Cyrus's body returned to Pasargadae for burial in simple stone tomb; inscription reads 'O man, whoever you are and wherever you come from, for I know you will come, I am Cyrus who won the Persians their empire. Do not begrudge me this bit of earth that covers my bones'",
       "description_ru": "Тело Кира возвращено в Пасаргады для захоронения в простой каменной гробнице; надпись гласит: 'О человек, кто бы ты ни был и откуда бы ни пришел, ибо я знаю, что ты придешь, я - Кир, который завоевал персам их империю. Не жалей для меня этого клочка земли, покрывающего мои кости'",
       "era": "BC",
@@ -372,26 +431,6 @@
         "Tomb"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.0530",
-      "description": "Cyrus campaigns against Massagetae nomads in Central Asia; killed in battle by Queen Tomyris, ending reign of empire's founder and greatest conqueror",
-      "description_ru": "Кир убит в бою царицей массагетов Томирис, когда ведет военную кампанию против кочевников в Центральной Азии",
-      "era": "BC",
-      "latitude": 42,
-      "longitude": 60,
-      "name": "Death of Cyrus the Great",
-      "name_ru": "Смерть Кира Великого",
-      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
-      "tags": [
-        "Persian",
-        "Achaemenid",
-        "War",
-        "Battle",
-        "Cyrus the Great 👑",
-        "Death"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.0529",
@@ -509,27 +548,6 @@
     },
     {
       "date": "01.12.0521",
-      "description": "Darius commissioned the Behistun Inscription. On a rock in the province of Kermanshah, at a height of 105 meters above the road, a document of Darius is carved in three languages (Old Persian, Elamite, Babylonian), in which he talks about how he fought for Persia in the civil war, how he won by the grace of Ahura Mazda, and which countries belong to Persia. The ancient sculptors, having finished their work, went down and destroyed the stone steps behind them, making it impossible to climb back up to the monument.",
-      "description_ru": "Дарий заказывает Бехистунскую надпись. На скале в провинции Керманшах на высоте 105 метров над дорогой на трех языках (староперсидский, эламитский, вавилонский) вырезают документ Дария, в котором он говорит, как боролся за Персию в гражданской войне, как победил милостью Ахура-Мазды, и какие страны принадлежат Персии. Древние скульпторы, закончив работу, спустились вниз и разрушили за собой каменные ступени, чтобы исключить возможность вновь подняться к памятнику.",
-      "era": "BC",
-      "latitude": 34.3889,
-      "longitude": 47.4353,
-      "name": "Behistun Inscription Created",
-      "name_ru": "Создание Бехистунской надписи",
-      "source": "https://en.wikipedia.org/wiki/Behistun_Inscription",
-      "tags": [
-        "Persian",
-        "Achaemenid",
-        "Darius I 👑",
-        "Language",
-        "Monument",
-        "Writing",
-        "Zoroastrian"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.12.0521",
       "description": "Susa, devastated by Assyria, was located at the crossroads of important trade routes and was geographically conveniently situated between Mesopotamia and the Iranian plateau. Darius I restored and rebuilt the city, making it one of his main capitals, along with Persepolis and Babylon.",
       "description_ru": "Разоренные Ассирией Сузы находились на пересечении важных торговых путей и были географически удобно расположены между Месопотамией и Иранским нагорьем. Дарий I восстановил и перестроил город, сделав его одной из своих главных, наряду с Персеполем и Вавилоном, столиц.",
       "era": "BC",
@@ -545,6 +563,27 @@
         "Darius I 👑"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.12.0521",
+      "description": "Darius commissioned the Behistun Inscription. On a rock in the province of Kermanshah, at a height of 105 meters above the road, a document of Darius is carved in three languages (Old Persian, Elamite, Babylonian), in which he talks about how he fought for Persia in the civil war, how he won by the grace of Ahura Mazda, and which countries belong to Persia. The ancient sculptors, having finished their work, went down and destroyed the stone steps behind them, making it impossible to climb back up to the monument.",
+      "description_ru": "Дарий заказывает Бехистунскую надпись. На скале в провинции Керманшах на высоте 105 метров над дорогой на трех языках (староперсидский, эламитский, вавилонский) вырезают документ Дария, в котором он говорит, как боролся за Персию в гражданской войне, как победил милостью Ахура-Мазды, и какие страны принадлежат Персии. Древние скульпторы, закончив работу, спустились вниз и разрушили за собой каменные ступени, чтобы исключить возможность вновь подняться к памятнику.",
+      "era": "BC",
+      "latitude": 34.3889,
+      "longitude": 47.4353,
+      "name": "Behistun Inscription Created",
+      "name_ru": "Создание Бехистунской надписи",
+      "source": "https://en.wikipedia.org/wiki/Behistun_Inscription",
+      "tags": [
+        "Persian",
+        "Achaemenid",
+        "Darius I 👑",
+        "History",
+        "Language",
+        "Writing",
+        "Zoroastrian"
+      ],
+      "type": "cultural"
     },
     {
       "date": "30.05.0521",
@@ -849,26 +888,6 @@
     },
     {
       "date": "01.01.0484",
-      "description": "Xerxes I inscribes the Daiva inscription (XPh) at Persepolis — the most explicitly Zoroastrian royal text. He proclaims: 'Within these countries, there was a place where daevas were worshipped. Then by the will of Ahura Mazda I destroyed that temple of daevas.' The text names specific foreign cults he suppressed and orders worship of Ahura Mazda with arta (cosmic truth).",
-      "description_ru": "Ксеркс I высекает надпись Дайва (XPh) в Персеполе — наиболее явно зороастрийский царский текст. Он провозглашает: «В этих странах было место, где почитались дэвы. Затем по воле Ахура Мазды я разрушил тот храм дэвов». Текст называет конкретные иноземные культы, которые он подавил, и предписывает поклонение Ахура Мазде с артой (космической истиной).",
-      "era": "BC",
-      "latitude": 29.9352,
-      "longitude": 52.8915,
-      "name": "Xerxes' Daiva Inscription at Persepolis",
-      "name_ru": "Надпись Дайва Ксеркса в Персеполе",
-      "source": "https://en.wikipedia.org/wiki/Daiva_Inscription",
-      "tags": [
-        "Persian",
-        "Achaemenid",
-        "Religious",
-        "Writing",
-        "Xerxes I 👑",
-        "Zoroastrian"
-      ],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.0484",
       "description": "Xerxes brutally suppresses Egyptian revolt, removing autonomy and ruling Egypt as conquered province rather than traditional pharaoh",
       "description_ru": "Ксеркс жестоко подавляет египетское восстание, лишает Египет автономии и управляет им как завоеванной провинцией, а не с помощью фараона",
       "era": "BC",
@@ -886,6 +905,26 @@
         "Xerxes I 👑"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0484",
+      "description": "Xerxes I inscribes the Daiva inscription (XPh) at Persepolis — the most explicitly Zoroastrian royal text. He proclaims: 'Within these countries, there was a place where daevas were worshipped. Then by the will of Ahura Mazda I destroyed that temple of daevas.' The text names specific foreign cults he suppressed and orders worship of Ahura Mazda with arta (cosmic truth).",
+      "description_ru": "Ксеркс I высекает надпись Дайва (XPh) в Персеполе — наиболее явно зороастрийский царский текст. Он провозглашает: «В этих странах было место, где почитались дэвы. Затем по воле Ахура Мазды я разрушил тот храм дэвов». Текст называет конкретные иноземные культы, которые он подавил, и предписывает поклонение Ахура Мазде с артой (космической истиной).",
+      "era": "BC",
+      "latitude": 29.9352,
+      "longitude": 52.8915,
+      "name": "Xerxes' Daiva Inscription at Persepolis",
+      "name_ru": "Надпись Дайва Ксеркса в Персеполе",
+      "source": "https://en.wikipedia.org/wiki/Daiva_Inscription",
+      "tags": [
+        "Persian",
+        "Achaemenid",
+        "Religious",
+        "Writing",
+        "Xerxes I 👑",
+        "Zoroastrian"
+      ],
+      "type": "religious"
     },
     {
       "date": "01.01.0482",

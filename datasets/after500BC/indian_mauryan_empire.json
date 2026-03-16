@@ -1,196 +1,215 @@
 {
-  "description": "Key events of the Mauryan Empire (321–185 BC): Chandragupta's founding, Chanakya's genius, the vast military and economic machine, Ashoka's personal journey from conqueror to pacifist, his edicts and architecture, the spread of Buddhism, and the dynasty's fragmentation and fall.",
+  "description": "Dataset imported with 36 events",
   "events": [
     {
       "date": "01.01.0321",
-      "era": "BC",
-      "name": "Chandragupta Maurya Founds the Maurya Empire",
-      "name_ru": "Чандрагупта Маурья основывает империю Маурьев",
       "description": "Chandragupta Maurya, guided by the strategist Chanakya (Kautilya), storms Pataliputra with an army recruited from Punjab hill tribes and disaffected Nanda subjects, deposing the last Nanda king Dhana Nanda. This marks the founding of the Maurya Empire — which will grow into the largest empire ever to unify the Indian subcontinent, stretching from the Hindu Kush to Bengal and from the Himalayas to the Deccan.",
       "description_ru": "Чандрагупта Маурья, направляемый стратегом Чанакьей (Каутильей), штурмует Паталипутру с армией, набранной из горных племён Пенджаба и недовольных подданных Нандов, и свергает последнего царя Нандов Дхана Нанду. Это основание империи Маурьев — крупнейшей из когда-либо объединявших индийский субконтинент, простиравшейся от Гиндукуша до Бенгалии и от Гималаев до Декана.",
+      "era": "BC",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "Foundation the Maurya Empire",
+      "name_ru": "Основание империи Маурьев",
       "source": "https://en.wikipedia.org/wiki/Chandragupta_Maurya",
       "tags": [
         "Indian",
+        "Chandragupta 👑",
+        "Empire",
         "Kingdom",
-        "Political",
-        "Expansion"
+        "Magadha",
+        "Mauryan",
+        "Overthrow"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0320",
+      "description": "Chanakya (Kautilya), chief minister of Chandragupta Maurya, compiles the Arthashastra — a comprehensive treatise on statecraft, economic policy, military strategy, espionage, and law in 15 books and 6,000 sutras. It prescribes eighteen departments of government, a graduated taxation system, rules for market regulation and weights, the duties of a king, and a detailed theory of the four means of foreign policy (sama, dana, danda, bheda).",
+      "description_ru": "Чанакья (Каутилья), главный министр Чандрагупты Маурья, составляет Артхашастру — всеобъемлющий трактат о государственном управлении, экономике, военной стратегии, шпионаже и праве в 15 книгах и 6000 сутрах. В нём описаны 18 государственных ведомств, дифференцированная налоговая система, регулирование рынков и мер весов, а также детальная теория четырёх методов внешней политики.",
       "era": "BC",
-      "name": "Arthashastra — Chanakya's Science of Statecraft",
-      "name_ru": "Артхашастра — наука государственного управления Чанакьи",
-      "description": "Chanakya (Kautilya), chief minister of Chandragupta Maurya, compiles the Arthashastra — a comprehensive treatise on statecraft, economic policy, military strategy, espionage, and law in 15 books and 6,000 sutras. It prescribes eighteen departments of government, a graduated taxation system, rules for market regulation and weights, the duties of a king, and a detailed theory of the four means of foreign policy (sama, dana, danda, bheda). Rediscovered only in 1905 in a Mysore library, it transformed the modern understanding of ancient Indian governance.",
-      "description_ru": "Чанакья (Каутилья), главный министр Чандрагупты Маурья, составляет Артхашастру — всеобъемлющий трактат о государственном управлении, экономике, военной стратегии, шпионаже и праве в 15 книгах и 6000 сутрах. В нём описаны 18 государственных ведомств, дифференцированная налоговая система, регулирование рынков и мер весов, а также детальная теория четырёх методов внешней политики. Вновь обнаруженная лишь в 1905 году, она произвела революцию в понимании древнеиндийского государственного устройства.",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "Arthashastra — Indian science of statecraft",
+      "name_ru": "Артхашастра — индийская наука государственного управления",
       "source": "https://en.wikipedia.org/wiki/Arthashastra",
       "tags": [
         "Indian",
+        "Administration",
+        "Law",
         "Literature",
-        "Philosophy",
-        "Political"
+        "Mauryan"
       ],
       "type": "scientific"
     },
     {
       "date": "01.01.0317",
-      "era": "BC",
-      "name": "Chandragupta Expels Macedonian Garrisons",
-      "name_ru": "Чандрагупта изгоняет македонские гарнизоны",
       "description": "Chandragupta Maurya drives the Macedonian garrisons left by Alexander out of the Punjab and the northwestern satrapies within four years of founding his empire. This rapid westward expansion — reclaiming Gandhara, the Taxila region, and the Indus Valley — establishes the western frontier of the Maurya Empire at the edge of the Iranian plateau and demonstrates the new empire's military reach.",
-      "description_ru": "Чандрагупта Маурья в течение четырёх лет после основания своей империи вытесняет македонские гарнизоны Александра из Пенджаба и северо-западных сатрапий, восстанавливая контроль над Гандхарой, Таксилой и долиной Инда. Это стремительное расширение на запад устанавливает западную границу империи у края Иранского нагорья.",
+      "description_ru": "Чандрагупта Маурья вытесняет македонские гарнизоны Александра из Пенджаба и северо-западных сатрапий, восстанавливая контроль над Гандхарой, Таксилой и долиной Инда. Это стремительное расширение на запад устанавливает западную границу империи у края Иранского нагорья.",
+      "era": "BC",
       "latitude": 33.74,
       "longitude": 72.83,
+      "name": "Chandragupta expels the Macedonians from Punjab",
+      "name_ru": "Чандрагупта изгоняет македонцев из Пенджаба",
       "source": "https://en.wikipedia.org/wiki/Maurya_Empire",
       "tags": [
-        "Indian",
         "Greek",
+        "Indian",
+        "War",
+        "Chandragupta 👑",
         "Expansion",
-        "War"
+        "Mauryan"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0316",
-      "era": "BC",
-      "name": "Chanakya's State Intelligence Network",
-      "name_ru": "Государственная разведывательная сеть Чанакьи",
       "description": "The Arthashastra prescribes and Chandragupta implements an elaborate state intelligence system — arguably the world's first organized espionage apparatus. Thousands of secret agents (gupta-charas) are embedded in every province, city, guild, and noble household. Female agents (vishakanya), wandering ascetics (sanyasin-spies), merchants, and students all serve as informants. Agents are classified into 18 types by mission and cover. The system covers political surveillance, economic intelligence, prevention of corruption, and foreign policy — with an entire division dedicated to testing the loyalty of ministers.",
-      "description_ru": "Артхашастра предписывает, а Чандрагупта внедряет разветвлённую государственную разведывательную систему — возможно, первый в мире организованный шпионский аппарат. Тысячи тайных агентов (гупта-чар) внедрены в каждую провинцию, город, гильдию и дворянский дом. Женщины-агенты (вишакания), странствующие аскеты-шпионы, торговцы и ученики служат осведомителями. Целый отдел посвящён проверке лояльности министров.",
+      "description_ru": "Чандрагупта внедряет разветвлённую государственную разведывательную систему — возможно, первый в мире организованный шпионский аппарат. Тысячи тайных агентов (гупта-чар) внедрены в каждую провинцию, город, гильдию и дворянский дом. Женщины-агенты (вишакания), странствующие аскеты-шпионы, торговцы и ученики служат осведомителями. Целый отдел посвящён проверке лояльности министров.",
+      "era": "BC",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "Chanakya's State Intelligence Network",
+      "name_ru": "Разведывательная сеть Чанакьи",
       "source": "https://en.wikipedia.org/wiki/Arthashastra",
       "tags": [
         "Indian",
-        "Political",
-        "Civilization"
+        "Chandragupta 👑",
+        "Intelligence",
+        "Mauryan"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0315",
-      "era": "BC",
-      "name": "Mauryan Economic Standardization",
-      "name_ru": "Экономическая стандартизация Маурьев",
       "description": "Chandragupta and Chanakya standardize weights, measures, and silver punch-marked coinage (Karshapana) across the empire — ending the chaotic diversity of local standards that had hindered trade. The state mints produce coins of fixed purity and weight; markets are regulated by royal inspectors; a land survey records all agricultural land for tax assessment; and a graduated income tax funds the empire's armies, infrastructure, and welfare programmes.",
       "description_ru": "Чандрагупта и Чанакья стандартизируют меры веса и длины, а также серебряные монеты с пуансонными метками (Каршапана) по всей империи, покончив с хаотичным разнобоем местных стандартов. Государственные монетные дворы чеканят монеты фиксированной чистоты и веса; рынки контролируют царские инспекторы; земельная перепись учитывает все сельскохозяйственные угодья для налогообложения.",
+      "era": "BC",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "Mauryan Economic Standardization",
+      "name_ru": "Экономическая стандартизация Маурьев",
       "source": "https://en.wikipedia.org/wiki/Maurya_Empire",
       "tags": [
         "Indian",
-        "Trade",
-        "Civilization",
-        "Political"
+        "Administration",
+        "Chandragupta 👑",
+        "Currency",
+        "Economic",
+        "Mauryan"
       ],
       "type": "historic"
     },
     {
-      "date": "01.01.0305",
-      "era": "BC",
-      "name": "Defeat of Seleucus — Treaty of the Indus",
-      "name_ru": "Победа над Селевком — Договор на Инде",
-      "description": "Chandragupta Maurya defeats Seleucus I Nicator — one of Alexander's most powerful successors — in a military campaign for control of the eastern satrapies. Seleucus cedes Arachosia (southern Afghanistan), Gedrosia (Balochistan), the Paropamisadae (Kandahar region), and Aria (Herat) to the Maurya Empire in exchange for 500 war elephants. A marriage alliance is formed; Seleucus sends Megasthenes as resident ambassador to Pataliputra. The Maurya Empire now controls all of modern-day India, Pakistan, and eastern Afghanistan.",
-      "description_ru": "Чандрагупта Маурья побеждает Селевка I Никатора в борьбе за контроль над восточными сатрапиями. Селевк уступает Арахосию (юг Афганистана), Гедросию (Белуджистан), Паропамисады (район Кандагара) и Арию (Герат) в обмен на 500 боевых слонов. Заключается брачный союз; Селевк отправляет Мегасфена постоянным послом в Паталипутру.",
-      "latitude": 31.5,
-      "longitude": 68,
-      "source": "https://en.wikipedia.org/wiki/Seleucus%E2%80%93Maurya_War",
-      "tags": [
-        "Indian",
-        "Greek",
-        "Diplomacy",
-        "Expansion"
-      ],
-      "type": "military"
-    },
-    {
       "date": "01.01.0302",
-      "era": "BC",
-      "name": "Megasthenes Describes Pataliputra",
-      "name_ru": "Мегасфен описывает Паталипутру",
       "description": "Megasthenes, the Seleucid Greek ambassador to the Maurya court, resides in Pataliputra and writes the Indica — a detailed account of Indian society, geography, and government. He describes Pataliputra as a planned city 9 miles long and 1.5 miles wide, enclosed by a timber palisade with 570 towers and 64 gates, surrounded by a 600-foot-wide moat. He notes the city has no locks on private houses — such is the prevalence of honesty — and describes a city council of 30 members divided into six committees overseeing everything from trade and manufacturing to welfare for foreigners.",
       "description_ru": "Мегасфен, посол Селевкидов при дворе Маурьев, живёт в Паталипутре и пишет «Индику» — подробное описание индийского общества, географии и государственного устройства. Он описывает Паталипутру как спланированный город длиной 9 миль, обнесённый деревянным частоколом с 570 башнями и 64 воротами и окружённый рвом шириной 600 футов. Он отмечает, что в городе на частных домах нет замков — настолько распространена честность.",
+      "era": "BC",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "Megasthenes Describes Pataliputra",
+      "name_ru": "Мегасфен описывает Паталипутру",
       "source": "https://en.wikipedia.org/wiki/Megasthenes",
       "tags": [
-        "Indian",
         "Greek",
-        "Architecture",
+        "Indian",
+        "History",
         "Literature"
       ],
       "type": "historic"
     },
     {
-      "date": "01.01.0301",
-      "era": "BC",
-      "name": "Megasthenes Describes the Mauryan Army",
-      "name_ru": "Мегасфен описывает армию Маурьев",
+      "date": "01.01.0302",
       "description": "Megasthenes records the size and composition of Chandragupta's military in the Indica: 600,000 infantry, 30,000 cavalry, 8,000 war-elephants, and 9,000 war-chariots — the largest standing army in the ancient world at the time. A separate war office (six committees of five members each) administers infantry, cavalry, chariots, elephants, transport, and the navy independently. Elephant corps are considered the most prestigious branch of service; war-elephants are individually trained, cared for by dedicated mahouts, and equipped with armour and sword-blades on their tusks.",
-      "description_ru": "Мегасфен фиксирует численность и состав армии Чандрагупты в «Индике»: 600 000 пехотинцев, 30 000 всадников, 8 000 боевых слонов и 9 000 боевых колесниц — крупнейшая постоянная армия в тогдашнем мире. Отдельное военное министерство (шесть комитетов по пять человек) независимо управляет пехотой, конницей, колесницами, слонами, обозом и флотом.",
+      "description_ru": "Мегасфен фиксирует численность и состав армии Чандрагупты в «Индике»: 600 000 пехотинцев, 30 000 всадников, 8 000 боевых слонов и 9 000 боевых колесниц. Отдельное военное министерство (шесть комитетов по пять человек) независимо управляет пехотой, конницей, колесницами, слонами, обозом и флотом.",
+      "era": "BC",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "Megasthenes Describes the Mauryan Army",
+      "name_ru": "Мегасфен описывает армию Маурьев",
       "source": "https://en.wikipedia.org/wiki/Maurya_Empire",
       "tags": [
+        "Greek",
         "Indian",
-        "Civilization",
-        "War"
+        "Administration",
+        "Army",
+        "History",
+        "Literature"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0298",
-      "era": "BC",
-      "name": "Chandragupta Abdicates and Becomes a Jain Ascetic",
-      "name_ru": "Чандрагупта отрекается от престола и становится джайнским аскетом",
       "description": "Chandragupta Maurya abdicates his throne in favour of his son Bindusara, converts to Jainism, and travels south to Shravanabelagola in Karnataka with the Jain monk Bhadrabahu. He spends his final years as an ascetic and, according to Jain tradition, dies there by sallekhana — the Jain practice of fasting to death. The site at Shravanabelagola remains a major Jain pilgrimage centre; the colossal Gomateshvara statue erected there later commemorates the Jain ideals Chandragupta embraced.",
       "description_ru": "Чандрагупта Маурья отрекается от престола в пользу сына Биндусары, принимает джайнизм и отправляется на юг в Шраванабелаголу в Карнатаке вместе с монахом Бхадрабаху. По джайнской традиции, он умирает там, практикуя салекхану — добровольный уход из жизни через голодание. Это место по сей день является крупным джайнским центром паломничества.",
+      "era": "BC",
       "latitude": 12.86,
       "longitude": 76.64,
+      "name": "Chandragupta Abdicates Throne",
+      "name_ru": "Чандрагупта отрекается от престола",
       "source": "https://en.wikipedia.org/wiki/Chandragupta_Maurya",
       "tags": [
         "Indian",
-        "Religious",
-        "Political"
+        "Chandragupta 👑",
+        "Jainism",
+        "Mauryan",
+        "Political",
+        "Religious"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0297",
-      "era": "BC",
-      "name": "Bindusara Expands the Empire Southward",
-      "name_ru": "Биндусара расширяет империю на юг",
       "description": "Bindusara ('Slayer of Enemies') succeeds his father and conducts military campaigns into the Deccan Plateau, extending Maurya control as far south as the Tungabhadra River in modern Karnataka. He suppresses a revolt in Taxila by sending prince Ashoka as viceroy. He also receives the Greek philosopher Deimachus as Seleucid ambassador at his court. Only the southernmost kingdoms of the Cholas, Pandyas, and the Kalinga coast remain outside the empire's reach.",
       "description_ru": "Биндусара («Убийца врагов») наследует отцу и ведёт военные походы в Декан, расширяя контроль Маурьев до реки Тунгабхадра в современной Карнатаке. Он подавляет восстание в Таксиле, направив принца Ашоку наместником. За пределами империи остаются лишь южные царства Чола, Пандья и побережье Калинги.",
+      "era": "BC",
       "latitude": 15.34,
       "longitude": 76.46,
+      "name": "Bindusara Expands the Empire Southward",
+      "name_ru": "Биндусара расширяет империю на юг",
       "source": "https://en.wikipedia.org/wiki/Bindusara",
       "tags": [
         "Indian",
-        "Kingdom",
+        "War",
         "Expansion",
-        "War"
+        "Kingdom",
+        "Mauryan"
       ],
       "type": "military"
     },
     {
-      "date": "01.01.0279",
+      "date": "01.01.0280",
+      "description": "Prince Ashoka is appointed viceroy of Ujjain (Avanti) by his father Bindusara — his second viceregal posting after Taxila. In Ujjain he meets and marries Devi (also called Vedisa-Mahadevi), the daughter of a merchant from Vidisha, who becomes the mother of his two children Mahinda and Sanghamitta — both of whom will carry Buddhism to Sri Lanka. This union, across caste boundaries, reflects the cosmopolitan character of the Mauryan court and shapes Ashoka's future compassion.",
+      "description_ru": "Принц Ашока назначается наместником Удджайна (Аванти) своим отцом Биндусарой — второй наместнической должности после Таксилы. В Удджайне он встречает и женится на Деви (также называемой Ведиса-Махадеви), дочери торговца из Видиши, которая станет матерью его детей Махинды и Сангхамитты — обоих будущих миссионеров буддизма на Шри-Ланке.",
       "era": "BC",
-      "name": "Bindusara's Letter to Antiochus I",
-      "name_ru": "Письмо Биндусары Антиоху I",
-      "description": "Emperor Bindusara writes to the Seleucid king Antiochus I requesting three gifts: sweet wine, dried figs, and a Greek philosopher (sophist). Antiochus replies that he is happy to send the wine and figs, but that Greek law forbids the sale of philosophers. Recorded by the Greek historian Athenaeus, the exchange offers a rare intimate glimpse of diplomatic humour and the Mauryan court's genuine curiosity about Greek intellectual life, and shows that Indo-Hellenic cultural exchange went beyond trade and military encounters.",
-      "description_ru": "Император Биндусара пишет царю Селевкидов Антиоху I с просьбой прислать три дара: сладкого вина, сушёных смокв и греческого философа (софиста). Антиох отвечает, что рад прислать вино и смоквы, но греческий закон запрещает продажу философов. Зафиксированный греческим историком Афинеем обмен даёт редкий интимный взгляд на дипломатический юмор и подлинное любопытство двора Маурьев к греческой интеллектуальной жизни.",
-      "latitude": 25.61,
-      "longitude": 85.14,
-      "source": "https://en.wikipedia.org/wiki/Bindusara",
+      "latitude": 23.18,
+      "longitude": 75.77,
+      "name": "Ashoka as Viceroy of Ujjain",
+      "name_ru": "Ашока — наместник Удджайна",
+      "source": "https://en.wikipedia.org/wiki/Devi_(wife_of_Ashoka)",
       "tags": [
         "Indian",
+        "Marriage",
+        "Ashoka the Great 👑",
+        "Culture",
+        "Mauryan",
+        "Political"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0279",
+      "description": "Emperor Bindusara writes to the Seleucid king Antiochus I requesting three gifts: sweet wine, dried figs, and a Greek philosopher (sophist). Antiochus replies that he is happy to send the wine and figs, but that Greek law forbids the sale of philosophers. Recorded by the Greek historian Athenaeus, the exchange offers a rare intimate glimpse of diplomatic humour and the Mauryan court's genuine curiosity about Greek intellectual life, and shows that Indo-Hellenic cultural exchange went beyond trade and military encounters.",
+      "description_ru": "Император Биндусара пишет царю Селевкидов Антиоху I с просьбой прислать три дара: сладкого вина, сушёных смокв и греческого философа (софиста). Антиох отвечает, что рад прислать вино и смоквы, но греческий закон запрещает продажу философов. Зафиксированный греческим историком Афинеем обмен даёт редкий интимный взгляд на дипломатический юмор и подлинное любопытство двора Маурьев к греческой интеллектуальной жизни.",
+      "era": "BC",
+      "latitude": 25.61,
+      "longitude": 85.14,
+      "name": "Bindusara's Letter to Antiochus I",
+      "name_ru": "Письмо Биндусары Антиоху I",
+      "source": "https://en.wikipedia.org/wiki/Bindusara",
+      "tags": [
         "Greek",
+        "Indian",
+        "Seleucid",
         "Diplomacy",
         "Culture"
       ],
@@ -198,441 +217,470 @@
     },
     {
       "date": "01.01.0273",
-      "era": "BC",
-      "name": "Ashoka Becomes Emperor after Succession War",
-      "name_ru": "Ашока становится императором после войны за наследство",
       "description": "After Bindusara's death, a four-year succession war erupts among his many sons. Ashoka, supported by the Magadha ministers (including one named Radhagupta who shelters him), prevails and is crowned Emperor of the Maurya Empire. His early reign is characterized by military aggression — he is reportedly given the epithet 'Chandashoka' (Ashoka the Fierce) during these years before his transformation.",
       "description_ru": "После смерти Биндусары между многочисленными сыновьями вспыхивает четырёхлетняя война за наследство. Ашока, которого поддерживают министры Магадхи (в том числе некий Радхагупта, укрывающий его), одерживает победу и коронуется императором. В ранний период правления он носит эпитет «Чандашока» (Жестокий Ашока).",
+      "era": "BC",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "Succession War of the Mauryan Empire",
+      "name_ru": "Война за наследство империи Маурьев",
       "source": "https://en.wikipedia.org/wiki/Ashoka",
       "tags": [
         "Indian",
+        "Civil War",
+        "Ashoka the Great 👑",
         "Kingdom",
-        "Political"
+        "Magadha",
+        "Mauryan"
       ],
       "type": "political"
     },
     {
-      "date": "01.01.0272",
-      "era": "BC",
-      "name": "Ashoka as Viceroy of Ujjain — Marriage to Devi",
-      "name_ru": "Ашока — наместник Удджайна, брак с Деви",
-      "description": "Prince Ashoka is appointed viceroy of Ujjain (Avanti) by his father Bindusara — his second viceregal posting after Taxila. In Ujjain he meets and marries Devi (also called Vedisa-Mahadevi), the daughter of a merchant from Vidisha, who becomes the mother of his two children Mahinda and Sanghamitta — both of whom will carry Buddhism to Sri Lanka. This union, across caste boundaries, reflects the cosmopolitan character of the Mauryan court and shapes Ashoka's future compassion.",
-      "description_ru": "Принц Ашока назначается наместником Удджайна (Аванти) своим отцом Биндусарой — второй наместнической должности после Таксилы. В Удджайне он встречает и женится на Деви (также называемой Ведиса-Махадеви), дочери торговца из Видиши, которая станет матерью его детей Махинды и Сангхамитты — обоих будущих миссионеров буддизма на Шри-Ланке.",
-      "latitude": 23.18,
-      "longitude": 75.77,
-      "source": "https://en.wikipedia.org/wiki/Devi_(wife_of_Ashoka)",
-      "tags": [
-        "Indian",
-        "Culture",
-        "Political"
-      ],
-      "type": "historic"
-    },
-    {
       "date": "01.01.0261",
-      "era": "BC",
-      "name": "Kalinga War — Ashoka's Bloodiest Campaign",
-      "name_ru": "Война с Калингой — самый кровопролитный поход Ашоки",
       "description": "Ashoka invades and conquers the coastal kingdom of Kalinga (modern Odisha) in a devastating campaign. By Ashoka's own account inscribed in Rock Edict XIII, 100,000 people were killed, 150,000 deported, and many more died of famine and disease in the aftermath. Walking through the ruins of Kalinga's capital Tosali and seeing the scale of suffering — 'the dead, the wounded, the bereaved' — Ashoka is struck with profound remorse. He writes: 'If a hundredth or a thousandth part of those who died in Kalinga had suffered, it would weigh on me.' The war marks the pivot of his entire reign.",
       "description_ru": "Ашока вторгается и завоёвывает прибрежное царство Калинга (современная Одиша). По его собственному свидетельству в XIII Наскальном указе, было убито 100 000 человек, 150 000 депортировано. Пройдя по руинам столицы Калинги Тосали и увидев масштаб страданий, Ашока пишет: «Если бы даже сотая или тысячная доля тех, кто погиб в Калинге, пострадала...» Война становится поворотным моментом всего его правления.",
+      "era": "BC",
       "latitude": 20.27,
       "longitude": 85.84,
+      "name": "Kalinga War — Ashoka's Bloodiest Campaign",
+      "name_ru": "Завоевание Калинга Ашокой",
       "source": "https://en.wikipedia.org/wiki/Kalinga_War",
       "tags": [
         "Indian",
-        "Battle",
         "War",
+        "Battle",
+        "Ashoka the Great 👑",
         "Conquest"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0260",
-      "era": "BC",
-      "name": "Ashoka Converts to Buddhism — The Dhamma Policy",
-      "name_ru": "Ашока принимает буддизм — политика Дхаммы",
       "description": "Horrified by the suffering he witnessed in Kalinga, Ashoka takes refuge in the Buddha, Dharma, and Sangha and becomes an upasaka (lay Buddhist devotee), later receiving full ordination. He replaces the traditional royal pastime of 'dhamma-yatra' (pleasure tours) with tours of Buddhist sites and public welfare works. He abolishes the royal kitchen's daily slaughter of hundreds of animals, ultimately banning the killing of animals for royal consumption entirely. The policy of Dhamma (righteous rule) he now proclaims — based on non-violence, generosity, truthfulness, and respect for all life — becomes the empire's governing philosophy.",
       "description_ru": "Потрясённый страданиями в Калинге, Ашока обращается к Будде, Дхарме и Сангхе, становясь упасакой (мирским буддистом), а затем получая полное посвящение. Он заменяет традиционные охотничьи туры поездками по буддийским местам и общественно-благотворительной деятельностью. Политика Дхаммы — основанная на ненасилии, щедрости, честности и уважении ко всему живому — становится государственной философией.",
+      "era": "BC",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "Ashoka Converts to Buddhism — The Dhamma Policy",
+      "name_ru": "Ашока принимает буддизм",
       "source": "https://en.wikipedia.org/wiki/Ashoka",
       "tags": [
         "Indian",
+        "Adoption",
+        "Ashoka the Great 👑",
+        "Philosophy",
+        "Political",
         "Religious",
-        "Buddhism",
-        "Political"
+        "Buddhism"
       ],
       "type": "religious"
     },
     {
       "date": "01.01.0258",
-      "era": "BC",
-      "name": "Ashoka's Pilgrimage to Bodh Gaya and Lumbini",
-      "name_ru": "Паломничество Ашоки в Бодх-Гаю и Лумбини",
       "description": "Ashoka undertakes a grand pilgrimage (dhamma-yatra) to the key Buddhist holy sites — Bodh Gaya (the place of Enlightenment), Sarnath (First Sermon), Lumbini (birthplace of the Buddha), and Kushinagar (Parinirvana). At Lumbini he erects a pillar with the inscription: 'Here the Blessed One was born' and exempts the village from taxes, reducing its land-rent by one-eighth. His pilgrimage is the first documented act of royal Buddhist site-preservation in history.",
       "description_ru": "Ашока совершает великое паломничество (дхамма-ятру) к ключевым буддийским святыням — Бодх-Гае (место Просветления), Сарнатху (Первая проповедь), Лумбини (место рождения Будды) и Кушинагару (Паринирвана). В Лумбини он воздвигает колонну с надписью: «Здесь родился Благословенный» и освобождает деревню от налогов, снижая земельную ренту на одну восьмую.",
+      "era": "BC",
       "latitude": 27.48,
       "longitude": 83.27,
+      "name": "Ashoka's Pilgrimage",
+      "name_ru": "Паломничество Ашоки",
       "source": "https://en.wikipedia.org/wiki/Ashoka",
       "tags": [
         "Indian",
-        "Buddhism",
-        "Religious"
+        "Ashoka the Great 👑",
+        "Pilgrimage",
+        "Religious",
+        "Buddhism"
       ],
       "type": "religious"
     },
     {
       "date": "01.01.0257",
+      "description": "Ashoka issues a bilingual rock inscription at Kandahar (ancient Alexandria Arachosia) written in both Greek and Aramaic — the only edict of Ashoka composed in Greek. In the Greek text, Ashoka describes his Dhamma policy using Greek philosophical vocabulary: he calls non-violence 'enkrateia' (self-control) and translates 'dhamma' as 'eusebeia' (piety/reverence). The inscription proves that the Maurya Empire had a Greek-literate administrative class in the northwest and that Ashoka consciously addressed his Hellenistic subjects in their own philosophical language.",
+      "description_ru": "Ашока издаёт двуязычную наскальную надпись в Кандагаре (древняя Александрия Арахосийская) на греческом и арамейском языках — единственный указ Ашоки, составленный по-гречески. В греческом тексте Ашока описывает политику Дхаммы, используя греческую философскую лексику: ненасилие называется «энкратейей», а «дхамма» переводится как «эусебейя» (благочестие). Надпись доказывает, что в империи Маурьев существовал грекоязычный административный класс.",
       "era": "BC",
-      "name": "Ashoka's Rock Edicts Proclaimed Across the Empire",
-      "name_ru": "Наскальные указы Ашоки по всей империи",
+      "latitude": 31.60019505,
+      "longitude": 65.658288,
+      "name": "Edict of Ashoka in Kandahar",
+      "name_ru": "Эдикт Ашоки в Кандагаре",
+      "source": "https://en.wikipedia.org/wiki/Kandahar_Bilingual_Rock_Inscription",
+      "tags": [
+        "Greek",
+        "Indian",
+        "Writing"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0257",
       "description": "Ashoka issues fourteen Major Rock Edicts engraved on cliff faces from Kandahar to Tamil Nadu — the first imperial proclamations inscribed in the regional languages of the people. Written in Brahmi script in Prakrit, but also in Greek and Aramaic in the northwest, they cover the practice of Dhamma (non-violence, respect for elders, generosity, honesty), religious tolerance toward all sects, the welfare of humans and animals, and Ashoka's personal transformation. They represent the world's earliest surviving inscribed imperial public communications.",
       "description_ru": "Ашока издаёт 14 Больших наскальных указов, высеченных на скалах от Кандагара до Тамилнаду — первые имперские прокламации, написанные на региональных языках народа. Составленные письмом брахми на пракрите, а на северо-западе также на греческом и арамейском, они охватывают практику Дхаммы, религиозную терпимость, благополучие людей и животных.",
+      "era": "BC",
       "latitude": 28.55,
       "longitude": 77.17,
+      "name": "Ashoka's Rock Edicts Proclaimed Across the Empire",
+      "name_ru": "Наскальные указы Ашоки по всей империи",
       "source": "https://en.wikipedia.org/wiki/Edicts_of_Ashoka",
       "tags": [
         "Indian",
-        "Literature",
+        "Ashoka the Great 👑",
+        "Code",
+        "Law",
         "Political",
-        "Religious"
+        "Religious",
+        "Writing"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0256",
-      "era": "BC",
-      "name": "Ashokan Pillar Architecture — The Lion Capital",
-      "name_ru": "Архитектура колонн Ашоки — Львиная капитель",
       "description": "Ashoka erects dozens of monolithic sandstone pillars — up to 15 metres tall and 50 tonnes in weight — quarried at Chunar near Varanasi and transported hundreds of kilometres to their final locations. Each pillar is polished to a mirror finish using a technique still not fully replicated. The Lion Capital at Sarnath — four lions back-to-back above an abacus carved with dharma wheels, a bull, lion, horse, and elephant — becomes the national emblem of modern India; its 24-spoke Dhamma Chakra is reproduced at the centre of the Indian national flag.",
       "description_ru": "Ашока воздвигает десятки монолитных колонн из песчаника высотой до 15 метров и весом до 50 тонн, которые добываются в Чунаре близ Варанаси и перевозятся на сотни километров. Каждая колонна отполирована до зеркального блеска по технологии, которая до сих пор не воспроизведена полностью. Львиная капитель в Сарнатхе становится гербом современной Индии; её колесо Дхармы с 24 спицами воспроизведено в центре государственного флага Индии.",
-      "latitude": 25.38,
-      "longitude": 83.02,
+      "era": "BC",
+      "latitude": 25.38246061,
+      "longitude": 83.02359581,
+      "name": "Ashokan Pillars",
+      "name_ru": "Колонны Ашоки",
       "source": "https://en.wikipedia.org/wiki/Pillars_of_Ashoka",
       "tags": [
         "Indian",
         "Architecture",
+        "Ashoka the Great 👑",
+        "Mauryan",
         "Religious"
       ],
       "type": "cultural"
     },
     {
-      "date": "01.01.0255",
-      "era": "BC",
-      "name": "Kandahar Bilingual Inscription — India Speaks Greek",
-      "name_ru": "Двуязычная надпись в Кандагаре — Индия говорит по-гречески",
-      "description": "Ashoka issues a bilingual rock inscription at Kandahar (ancient Alexandria Arachosia) written in both Greek and Aramaic — the only edict of Ashoka composed in Greek. In the Greek text, Ashoka describes his Dhamma policy using Greek philosophical vocabulary: he calls non-violence 'enkrateia' (self-control) and translates 'dhamma' as 'eusebeia' (piety/reverence). The inscription proves that the Maurya Empire had a Greek-literate administrative class in the northwest and that Ashoka consciously addressed his Hellenistic subjects in their own philosophical language.",
-      "description_ru": "Ашока издаёт двуязычную наскальную надпись в Кандагаре (древняя Александрия Арахосийская) на греческом и арамейском языках — единственный указ Ашоки, составленный по-гречески. В греческом тексте Ашока описывает политику Дхаммы, используя греческую философскую лексику: ненасилие называется «энкратейей», а «дхамма» переводится как «эусебейя» (благочестие). Надпись доказывает, что в империи Маурьев существовал грекоязычный административный класс.",
-      "latitude": 31.61,
-      "longitude": 65.71,
-      "source": "https://en.wikipedia.org/wiki/Kandahar_Bilingual_Rock_Inscription",
-      "tags": [
-        "Indian",
-        "Greek",
-        "Literature",
-        "Political"
-      ],
-      "type": "historic"
-    },
-    {
       "date": "01.01.0253",
-      "era": "BC",
-      "name": "Mauryan Royal Road and Public Infrastructure",
-      "name_ru": "Царская дорога и общественная инфраструктура Маурьев",
       "description": "Ashoka extends and formalizes the Grand Trunk Road (Uttarapatha) from Pataliputra to Taxila and onwards to Gandhara — over 2,400 km. Along its length the state plants shade trees (banyan and mango) every 200 paces, digs wells every half-yojana (~7 km), builds dharmashalas (rest houses) for travellers and arogya-shalas (hospitals for humans and animals) at regular intervals. Milestones are erected. The road serves both military mobilization and the flourishing spice and textile trade. Megasthenes called it the Royal Highway and noted it as the most impressive public work he had seen.",
       "description_ru": "Ашока расширяет Великий тракт (Уттарапатху) от Паталипутры до Таксилы и дальше в Гандхару — свыше 2400 км. Вдоль дороги через каждые 200 шагов высажены тенистые деревья (баньяны и манго), через каждые полйоджаны (~7 км) вырыты колодцы, построены дхармашалы (постоялые дворы) и арогья-шалы (больницы для людей и животных). Установлены верстовые столбы. Мегасфен назвал её Царской дорогой — самым внушительным общественным сооружением из виденных им.",
+      "era": "BC",
       "latitude": 25.61,
       "longitude": 78,
+      "name": "Mauryan Royal Road",
+      "name_ru": "Царская дорога Маурьев",
       "source": "https://en.wikipedia.org/wiki/Maurya_Empire",
       "tags": [
         "Indian",
-        "Architecture",
-        "Trade",
-        "Civilization"
+        "Ashoka the Great 👑",
+        "Communication",
+        "Infrastructure",
+        "Road",
+        "Trade"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0252",
+      "description": "In Rock Edict XIII, Ashoka names the five Hellenistic kings to whom he has sent dhamma ambassadors: Antiochus II of Syria, Ptolemy II of Egypt, Antigonus II of Macedonia, Magas of Cyrene, and Alexander II of Epirus.",
+      "description_ru": "В XIII Наскальном указе Ашока называет пятерых эллинистических царей, которым направил послов Дхаммы: Антиоха II Сирийского, Птолемея II Египетского, Антигона II Македонского, Магаса Киренского и Александра II Эпирского.",
       "era": "BC",
-      "name": "Ashoka's Dhamma Ambassadors to Five Greek Kings",
-      "name_ru": "Посланники Дхаммы Ашоки к пяти греческим царям",
-      "description": "In Rock Edict XIII, Ashoka names the five Hellenistic kings to whom he has sent dhamma ambassadors: Antiochus II of Syria, Ptolemy II of Egypt, Antigonus II of Macedonia, Magas of Cyrene, and Alexander II of Epirus. This is the earliest documented case of a South Asian ruler engaging in deliberate cross-cultural moral diplomacy, and the five kings named can be dated, giving historians a precise chronological anchor for Ashoka's reign. There is no record that any of the Greek kings adopted Dhamma, but the attempt is historically unique.",
-      "description_ru": "В XIII Наскальном указе Ашока называет пятерых эллинистических царей, которым направил послов Дхаммы: Антиоха II Сирийского, Птолемея II Египетского, Антигона II Македонского, Магаса Киренского и Александра II Эпирского. Это древнейший зафиксированный случай целенаправленной межкультурной моральной дипломатии южноазиатского правителя. Названные пять царей позволяют историкам точно датировать правление Ашоки.",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "Dhamma Ambassadors to Greek Kings",
+      "name_ru": "Посланники Дхаммы к греческим царям",
       "source": "https://en.wikipedia.org/wiki/Edicts_of_Ashoka",
       "tags": [
-        "Indian",
         "Greek",
-        "Buddhism",
-        "Diplomacy"
+        "Indian",
+        "Diplomacy",
+        "Ashoka the Great 👑",
+        "Mauryan",
+        "Buddhism"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0250",
-      "era": "BC",
-      "name": "Third Buddhist Council at Pataliputra",
-      "name_ru": "Третий буддийский собор в Паталипутре",
       "description": "Ashoka convenes the Third Buddhist Council at Pataliputra, presided over by the scholar-monk Moggaliputta Tissa, to resolve disputes in the Buddhist community and expel schismatics. The council compiles the Kathavatthu ('Points of Controversy') — a systematic refutation of 218 heretical doctrines — and settles the Theravada Abhidhamma Pitaka. The purified sangha is then commissioned to carry Buddhism to nine foreign lands, including Sri Lanka, Burma, and the Greek kingdoms.",
       "description_ru": "Ашока созывает Третий буддийский собор в Паталипутре под председательством учёного монаха Моггалипутта Тиссы для урегулирования споров в буддийской общине. Собор составляет «Катхаваттху» — систематическое опровержение 218 еретических доктрин — и утверждает Абхидхамма-питаку тхеравады. Очищенная Сангха направляется в девять зарубежных стран, включая Шри-Ланку, Бирму и греческие царства.",
+      "era": "BC",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "Third Buddhist Council",
+      "name_ru": "Третий буддийский собор",
       "source": "https://en.wikipedia.org/wiki/Third_Buddhist_council",
       "tags": [
         "Indian",
+        "Council",
         "Religious",
-        "Buddhism",
-        "Literature"
+        "Buddhism"
       ],
       "type": "religious"
     },
     {
       "date": "01.01.0250",
-      "era": "BC",
-      "name": "Buddhist Missions to the Hellenistic World",
-      "name_ru": "Буддийские миссии в эллинистический мир",
       "description": "Following the Third Buddhist Council, Ashoka dispatches Buddhist missionary delegations to Syria (Antiochus), Egypt (Ptolemy), Macedonia (Antigonus), Cyrene (Magas), and Epirus (Alexander) — as recorded in his Rock Edict XIII — as well as to the Chola, Pandya, Satiyaputta, and Keralaputra kingdoms in South India, and to Southeast Asia (the Suvarnabhumi mission). This is the first organized cross-cultural religious outreach in Indian history, transforming a regional Indian tradition into a world religion.",
-      "description_ru": "После Третьего буддийского собора Ашока направляет буддийские миссии в Сирию, Египет, Македонию, Кирену и Эпир (зафиксировано в XIII Наскальном указе), а также к царствам Чола, Пандья, Сатияпутта и Кералапутра на юге Индии и в Юго-Восточную Азию (миссия в Суварнабхуми). Это первый в истории Индии организованный межкультурный религиозный миссионерский проект, превративший региональную традицию в мировую религию.",
+      "description_ru": "После Третьего буддийского собора Ашока направляет буддийские миссии в Сирию, Египет, Македонию, Кирену и Эпир (зафиксировано в XIII Наскальном указе), а также к царствам Чола, Пандья, Сатияпутта и Кералапутра на юге Индии и в Юго-Восточную Азию (миссия в Суварнабхуми). ",
+      "era": "BC",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "Buddhist Missions to the Hellenistic World",
+      "name_ru": "Буддисты в эллинистическом мире",
       "source": "https://en.wikipedia.org/wiki/Ashoka",
       "tags": [
+        "Greek",
         "Indian",
-        "Buddhism",
+        "Diplomacy",
+        "Missionary",
         "Religious",
-        "Diplomacy"
+        "Buddhism"
       ],
       "type": "religious"
     },
     {
       "date": "01.01.0248",
-      "era": "BC",
-      "name": "Sanghamitta Brings the Sacred Bodhi Tree to Sri Lanka",
-      "name_ru": "Сангхамитта привозит священное Дерево Бодхи на Шри-Ланку",
       "description": "Sanghamitta — daughter of Ashoka and senior Buddhist nun — sails to Sri Lanka carrying a southern branch of the original Bodhi tree under which the Buddha attained enlightenment at Bodh Gaya. She plants it at Anuradhapura in the presence of King Devanampiya Tissa. That very tree — the Sri Maha Bodhi — survives to this day and is the oldest known living human-planted tree in the world, continuously tended for over 2,200 years. Sanghamitta also establishes the Bhikkhuni (female monastic) order on the island.",
-      "description_ru": "Сангхамитта — дочь Ашоки и старшая буддийская монахиня — отплывает на Шри-Ланку, везя южный побег оригинального дерева Бодхи, под которым Будда обрёл просветление в Бодх-Гае. Она сажает его в Анурадхапуре в присутствии царя Деванампия Тиссы. Это дерево — Шри Маха Бодхи — живёт по сей день и является старейшим известным деревом, посаженным человеком, которому непрерывно поклоняются более 2200 лет. Сангхамитта также основывает на острове орден Бхиккхуни (женских монашеских общин).",
-      "latitude": 8.35,
-      "longitude": 80.39,
+      "description_ru": "Сангхамитта — дочь Ашоки и старшая буддийская монахиня — везет на Шри-Ланку южный побег оригинального дерева Бодхи, под которым Будда обрёл просветление в Бодх-Гае. Она сажает его в Анурадхапуре в присутствии царя Деванампия Тиссы. Это дерево — Шри Маха Бодхи — живёт по сей день и является старейшим известным деревом, посаженным человеком, которому непрерывно поклоняются более 2200 лет. Сангхамитта также основывает на острове орден Бхиккхуни (женских монашеских общин).",
+      "era": "BC",
+      "latitude": 8.34473428,
+      "longitude": 80.39721966,
+      "name": "Sacred Bodhi Tree delivered to Sri Lanka",
+      "name_ru": "Побег дерева Бодхи на Шри-Ланке",
       "source": "https://en.wikipedia.org/wiki/Sanghamitta",
       "tags": [
         "Indian",
-        "Buddhism",
-        "Religious"
+        "Holy Site",
+        "Missionary",
+        "Religious",
+        "Buddhism"
       ],
       "type": "religious"
     },
     {
       "date": "01.01.0247",
-      "era": "BC",
-      "name": "Mahinda Converts Sri Lanka to Buddhism",
-      "name_ru": "Махинда обращает Шри-Ланку в буддизм",
       "description": "Mahinda, son of Ashoka, leads a Buddhist mission to the kingdom of Anuradhapura in Sri Lanka, converting King Devanampiya Tissa and his entire court. According to the Mahavamsa (the Sri Lankan royal chronicle), Mahinda meets the king during a deer hunt and tests him with a philosophical riddle about a mango tree, immediately demonstrating the depth of Buddhist wisdom. Mahinda brings the Pali Tipitaka and establishes the Mahavihara monastery — the founding institution of Theravada Buddhism.",
       "description_ru": "Махинда, сын Ашоки, возглавляет буддийскую миссию в царство Анурадхапура на Шри-Ланке, обращая царя Деванампия Тиссу и весь его двор. По «Махавамсе», Махинда встречает царя во время охоты на оленей и проверяет его философской загадкой о дереве манго. Махинда привозит палийский Типитаку и основывает монастырь Махавихара — основополагающий институт тхеравадного буддизма.",
-      "latitude": 8.33,
-      "longitude": 80.41,
+      "era": "BC",
+      "latitude": 8.34473428,
+      "longitude": 80.39721966,
+      "name": "Sri Lanka Converted to Buddhism",
+      "name_ru": "Шри-Ланка обращена в буддизм",
       "source": "https://en.wikipedia.org/wiki/Mahinda_(Buddhist_monk)",
       "tags": [
         "Indian",
-        "Buddhism",
-        "Religious"
+        "Adoption",
+        "Missionary",
+        "Religious",
+        "Buddhism"
       ],
       "type": "religious"
     },
     {
       "date": "01.01.0245",
-      "era": "BC",
-      "name": "Ashoka's Animal Welfare and Nature Edicts",
-      "name_ru": "Указы Ашоки о защите животных и природы",
       "description": "Ashoka issues Pillar Edict V listing 26 species of animals that may not be killed on specific days, and a list of species permanently protected from slaughter — including parrots, mynas, ducks, bats, ants, tortoises, boneless fish, rhinoceroses, and forest bulls. He bans burning of living forests and restricts the harvesting of young animals and nursing females. He establishes veterinary hospitals and drug dispensaries in his territories and in the territories of neighbouring states. The edict is the earliest known state wildlife conservation law.",
       "description_ru": "Ашока издаёт Колонный указ V, перечисляя 26 видов животных, которых нельзя убивать в определённые дни, и список видов, постоянно защищённых от уничтожения — включая попугаев, скворцов, уток, летучих мышей, муравьёв, черепах, рыбу без костей, носорогов и лесных быков. Он запрещает выжигание живых лесов. Это древнейший известный государственный закон о охране дикой природы.",
+      "era": "BC",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "Ashoka's Animal Welfare and Nature Edicts",
+      "name_ru": "Указы Ашоки о защите природы",
       "source": "https://en.wikipedia.org/wiki/Edicts_of_Ashoka",
       "tags": [
         "Indian",
-        "Political",
-        "Civilization"
+        "Ashoka the Great 👑",
+        "Culture",
+        "Ecology",
+        "Law",
+        "Mauryan"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0242",
-      "era": "BC",
-      "name": "Ashoka's Prison Reforms and Amnesty Edicts",
-      "name_ru": "Тюремные реформы и указы об амнистии Ашоки",
       "description": "Ashoka issues Pillar Edict V ordering that prisoners be given three days between sentencing and execution to allow their families to intercede, make gifts, and pray. He appoints special officers (rajjukas) with powers to grant pardons and releases. He orders his prison inspectors to free those who are old, sick, or have family dependents. In Rock Edict III, he orders that once every five years his officials tour the country to check that Dhamma is being observed and justice administered — creating the first documented system of royal judicial review.",
       "description_ru": "Ашока издаёт указ, по которому осуждённым предоставляется трёхдневный срок между вынесением приговора и казнью, чтобы семья могла ходатайствовать за них. Он назначает специальных чиновников (раджуков) с полномочиями даровать помилование. В III Наскальном указе он предписывает раз в пять лет объезжать страну для проверки соблюдения Дхаммы и правосудия — первая задокументированная система царской судебной ревизии.",
+      "era": "BC",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "Ashoka's Prison Reforms and Amnesty Edicts",
+      "name_ru": "Указы Ашоки об амнистии",
       "source": "https://en.wikipedia.org/wiki/Edicts_of_Ashoka",
       "tags": [
         "Indian",
-        "Political",
-        "Civilization"
+        "Ashoka the Great 👑",
+        "Justice",
+        "Law",
+        "Mauryan"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0238",
-      "era": "BC",
-      "name": "Ashoka Builds 84,000 Stupas",
-      "name_ru": "Ашока возводит 84 000 ступ",
       "description": "According to Buddhist tradition, Ashoka redistributes relics of the Buddha from the original eight stupa mounds and builds 84,000 stupas across his empire and the known Buddhist world — symbolically one for every dhamma teaching. Major stupas at Sanchi, Sarnath, Vaishali, and Taxila are expanded or newly constructed. The Great Stupa at Sanchi, begun under Ashoka, is a hemispheral brick dome 16 metres high, later elaborated with four gateways (toranas) carved with scenes from the Jataka tales — it stands intact today as a UNESCO World Heritage Site.",
       "description_ru": "По буддийской традиции, Ашока перераспределяет реликвии Будды и возводит 84 000 ступ по всей империи — символически по одной на каждое поучение Дхаммы. Великая ступа в Санчи — полусферический кирпичный купол высотой 16 метров, позднее украшенный четырьмя воротами (торанами) с резными сценами из джатак — стоит нетронутой по сей день как объект Всемирного наследия ЮНЕСКО.",
+      "era": "BC",
       "latitude": 23.48,
       "longitude": 77.74,
+      "name": "Ashoka Builds 84,000 Stupas",
+      "name_ru": "Ашока возводит 84 000 ступ",
       "source": "https://en.wikipedia.org/wiki/Sanchi",
       "tags": [
         "Indian",
-        "Buddhism",
+        "Building 🏠",
         "Architecture",
-        "Religious"
+        "Ashoka the Great 👑",
+        "Mauryan",
+        "Religious",
+        "Buddhism"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0235",
-      "era": "BC",
-      "name": "Ashoka's Declining Authority — Palace Intrigues",
-      "name_ru": "Угасание власти Ашоки — дворцовые интриги",
       "description": "In his final years, Ashoka's authority is undermined from within the palace. Later Puranic and Jain sources describe conflict with crown prince Samprati (son of his blind son Kunala, who was reportedly blinded at the instigation of Empress Tishyaraksha). Regional governors increasingly act independently; the treasury strained by decades of building, road construction, and missionary funding can no longer maintain the army and administration at full strength. Ashoka reportedly becomes so poor that he donates even parts of his palace's golden treasures to the sangha.",
       "description_ru": "В последние годы жизни власть Ашоки подрывается изнутри дворца. Пуранические и джайнские источники описывают конфликт с наследником Сампрати. Региональные наместники всё больше действуют самостоятельно; казна, истощённая десятилетиями строительства и миссионерского финансирования, более не может содержать армию и администрацию в полную силу.",
+      "era": "BC",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "Ashoka's Declining Authority",
+      "name_ru": "Угасание власти Ашоки",
       "source": "https://en.wikipedia.org/wiki/Ashoka",
       "tags": [
         "Indian",
-        "Kingdom",
+        "Ashoka the Great 👑",
+        "Crisis",
+        "Decline",
+        "Mauryan",
         "Political"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0232",
+      "description": "Emperor Ashoka dies at Pataliputra after a reign of approximately 40 years. The Divyavadana (a Sanskrit Buddhist text) says that in his last days he had given so much to the sangha that his ministers refused to give him state funds and he was reduced to donating half a myrobalan fruit. His death triggers the rapid disintegration of the Maurya Empire. No subsequent Indian ruler for 1,500 years would command as much territory.",
+      "description_ru": "Император Ашока умирает в Паталипутре после примерно 40 лет правления. «Дивьявадана» говорит, что в последние дни он жертвовал так много, что министры отказали ему в государственных средствах и он был вынужден пожертвовать половину плода миробалана. Его смерть стала точкой отсчета для распада империи Маурьев.",
       "era": "BC",
-      "name": "Death of Ashoka",
-      "name_ru": "Смерть Ашоки",
-      "description": "Emperor Ashoka dies at Pataliputra after a reign of approximately 40 years. The Divyavadana (a Sanskrit Buddhist text) says that in his last days he had given so much to the sangha that his ministers refused to give him state funds and he was reduced to donating half a myrobalan fruit. His death triggers the rapid disintegration of the Maurya Empire. No subsequent Indian ruler for 1,500 years would command as much territory. Ashoka's legacy — preserved not in India but in Sri Lankan and Tibetan Buddhist chronicles — was rediscovered by Western scholars only in the 19th century when James Prinsep deciphered the Brahmi script in 1837.",
-      "description_ru": "Император Ашока умирает в Паталипутре после примерно 40 лет правления. «Дивьявадана» говорит, что в последние дни он жертвовал так много, что министры отказали ему в государственных средствах и он был вынужден пожертвовать половину плода миробалана. Его наследие — сохранённое не в Индии, а в шриланкийских и тибетских буддийских хрониках — было вновь открыто лишь в XIX веке, когда Джеймс Принсеп расшифровал письмо брахми в 1837 году.",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "Death of Ashoka",
+      "name_ru": "Смерть императора Ашоки",
       "source": "https://en.wikipedia.org/wiki/Ashoka",
       "tags": [
         "Indian",
-        "Kingdom",
-        "Political"
+        "King",
+        "Ashoka the Great 👑",
+        "Death",
+        "Decline",
+        "Mauryan"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0230",
-      "era": "BC",
-      "name": "Satavahana Kingdom Rises in the Deccan",
-      "name_ru": "Возвышение царства Сатавахана в Декане",
       "description": "The Satavahana dynasty asserts independence in the Deccan as Maurya central authority collapses in the south. They go on to control much of the Indian peninsula for four centuries, becoming major patrons of Buddhism and cave architecture (Ajanta, Karla, Nasik), and facilitating flourishing Indo-Roman trade in spices, textiles, and ivory. Their emergence is one of the clearest early signs of Mauryan fragmentation.",
       "description_ru": "Династия Сатавахана провозглашает независимость в Декане по мере распада центральной власти Маурьев на юге. Сатавахана на протяжении четырёх веков контролируют большую часть Индийского полуострова, становясь крупными покровителями буддизма и пещерной архитектуры (Аджанта, Карла, Насик), а также посредниками в процветающей индо-римской торговле.",
+      "era": "BC",
       "latitude": 16.5,
       "longitude": 79,
+      "name": "Satavahana Kingdom Rises in the Deccan",
+      "name_ru": "Царство Сатавахана в Декане",
       "source": "https://en.wikipedia.org/wiki/Satavahana_dynasty",
       "tags": [
         "Indian",
+        "Independence",
         "Kingdom",
         "Political",
-        "Expansion"
+        "Satavahana"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0222",
-      "era": "BC",
-      "name": "Barabar Caves — First Rock-Cut Architecture in India",
-      "name_ru": "Пещеры Барабар — первая скальная архитектура Индии",
       "description": "Emperor Dasharatha Maurya (Ashoka's grandson) grants the Barabar cave complex in Bihar to the Ajivika monks — a rival ascetic sect — following the tradition begun by Ashoka. The four caves (Lomas Rishi, Sudama, Vishvakarma, Karna Chaupar) are carved from solid granite with extraordinary precision; their interiors are polished to a glass-like finish equivalent to the Ashokan pillars, using iron chisels. They are the earliest surviving rock-cut chambers in India and the forerunners of the great cave-temple traditions at Ajanta, Ellora, and Elephanta.",
       "description_ru": "Император Дашаратха Маурья (внук Ашоки) жалует пещерный комплекс Барабар в Бихаре монахам-аджавикам — соперничающей аскетической секте. Четыре пещеры высечены в монолитном граните с исключительной точностью; их интерьеры отполированы до стеклянного блеска, сопоставимого с полировкой Ашоканских колонн. Это древнейшие сохранившиеся скальные залы в Индии и предшественники великих пещерных храмовых традиций Аджанты, Эллоры и Элефанты.",
-      "latitude": 24.98,
-      "longitude": 85.06,
+      "era": "BC",
+      "latitude": 25.00560318,
+      "longitude": 85.06258965,
+      "name": "Barabar Caves",
+      "name_ru": "Гранитные пещеры Барабар",
       "source": "https://en.wikipedia.org/wiki/Barabar_Caves",
       "tags": [
         "Indian",
         "Architecture",
+        "Mauryan",
         "Religious"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0206",
-      "era": "BC",
-      "name": "Antiochus III Invades India — Repulsed by Sophagasenus",
-      "name_ru": "Вторжение Антиоха III в Индию — отпор Sophagasena",
       "description": "Seleucid king Antiochus III marches east through Bactria and Afghanistan and crosses the Hindu Kush into northwestern India, encountering the Mauryan king Sophagasenus (possibly Subhagasena). Sophagasenus repels the invasion, retaining his territory but agreeing to provide Antiochus with war-elephants and tribute. It is the last Seleucid incursion into India. The episode reveals that a regional Mauryan viceroy, without central Pataliputra support, could still repel a major Hellenistic army.",
-      "description_ru": "Царь Антиох III проходит через Бактрию и Афганистан, пересекает Гиндукуш и вторгается в северо-западную Индию, встречая маурийского царя Софагасена. Тот отражает вторжение, сохраняя свои земли, но соглашается предоставить боевых слонов и дань. Это последнее вторжение Селевкидов в Индию. Эпизод показывает, что региональный наместник Маурьев, без поддержки Паталипутры, всё ещё мог отразить крупную эллинистическую армию.",
+      "description_ru": "Царь Антиох III проходит через Бактрию и Афганистан, пересекает Гиндукуш и вторгается в северо-западную Индию, встречая маурийского царя Софагасена. Тот отражает вторжение, сохраняя свои земли, но соглашается предоставить боевых слонов и дань. Это последнее вторжение Селевкидов в Индию.",
+      "era": "BC",
       "latitude": 34.53,
       "longitude": 69.18,
+      "name": "Antiochus III Invades India",
+      "name_ru": "Вторжение Антиоха III в Индию",
       "source": "https://en.wikipedia.org/wiki/Antiochus_III_the_Great",
       "tags": [
-        "Indian",
         "Greek",
-        "Battle",
-        "Diplomacy"
+        "Indian",
+        "Seleucid",
+        "Antiochus III 👑",
+        "Invasions"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0200",
-      "era": "BC",
-      "name": "Indo-Greek Kingdoms Encroach on the Northwest",
-      "name_ru": "Индо-греческие царства наступают на северо-запад",
       "description": "The Greek Bactrian king Demetrius I invades northwestern India and captures Taxila and parts of the Punjab as Maurya power wanes. A series of Indo-Greek kingdoms establish control over Gandhara and the Indus Valley — producing a remarkable cultural fusion of Hellenistic and Indian artistic traditions. Indo-Greek coinage introduces realistic royal portraiture to Indian numismatics, and Gandharan Buddhist sculpture begins blending Greek figurative style with Indian religious iconography — a tradition that will shape all subsequent depictions of the Buddha.",
       "description_ru": "Греко-бактрийский царь Деметрий I вторгается в северо-западную Индию и захватывает Таксилу и часть Пенджаба по мере ослабления власти Маурьев. Ряд индо-греческих царств устанавливает контроль над Гандхарой и долиной Инда, порождая замечательный синтез эллинистической и индийской художественных традиций. Гандхарская буддийская скульптура соединяет греческий фигуративный стиль с индийской религиозной иконографией.",
+      "era": "BC",
       "latitude": 33.74,
       "longitude": 72.83,
+      "name": "Greco-Bactria conquers northern India",
+      "name_ru": "Греко-Бактрия завоевывает север Индии",
       "source": "https://en.wikipedia.org/wiki/Indo-Greek_Kingdom",
       "tags": [
-        "Indian",
         "Greek",
-        "Kingdom",
-        "Culture"
+        "Indian",
+        "War",
+        "Culture",
+        "Greco-Bactria"
       ],
-      "type": "historic"
+      "type": "military"
     },
     {
       "date": "01.01.0187",
-      "era": "BC",
-      "name": "Pushyamitra Performs the Ashvamedha — Brahminic Revival",
-      "name_ru": "Ашвамедха Пушьямитры — возрождение брахманизма",
       "description": "Pushyamitra Shunga, having seized power, performs the Ashvamedha (royal horse sacrifice) — the grandest Vedic ritual, last performed by Vedic kings centuries before. The ceremony, conducted by the sage Patanjali (who may also be the author of the Yoga Sutras), signals the restoration of Brahminic ritual authority and the state patronage of Sanskrit learning after Ashoka's Buddhist-centred policies. The Ashvamedha reasserts the traditional social order of the varna system and positions the new Shunga dynasty as the restorers of Vedic dharma.",
       "description_ru": "Пушьямитра Шунга, захватив власть, проводит ашвамедху (царское жертвоприношение коня) — величайший ведический ритуал, не совершавшийся в последние столетия. Церемония, которую проводит мудрец Патанджали (возможно, тот же автор Йога-сутр), знаменует восстановление брахманической ритуальной власти и государственного покровительства санскритскому учению после буддийско-ориентированной политики Ашоки.",
+      "era": "BC",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "India returns to Vedic teachings",
+      "name_ru": "Индия возвращается к ведическому учению",
       "source": "https://en.wikipedia.org/wiki/Pushyamitra_Shunga",
       "tags": [
         "Indian",
-        "Religious",
+        "Culture",
+        "Overthrow",
         "Political",
-        "Culture"
+        "Religious",
+        "Vedic"
       ],
       "type": "religious"
     },
     {
       "date": "01.01.0185",
-      "era": "BC",
-      "name": "Pushyamitra Shunga Assassinates Brihadratha — End of Maurya Dynasty",
-      "name_ru": "Пушьямитра Шунга убивает Брихадратху — конец династии Маурьев",
       "description": "Pushyamitra Shunga, the Mauryan commander-in-chief (senapati), assassinates the last Mauryan emperor Brihadratha during a military parade at Pataliputra and seizes the throne, founding the Shunga dynasty. The Maurya Empire — which had unified the Indian subcontinent for over 136 years, encompassing over 50 million people and 5 million square kilometres at its peak — ends. The Shunga dynasty will rule for over a century, presiding over a revival of Brahminic Hinduism and the continued flourishing of Buddhist art at Sanchi and Bharhut.",
       "description_ru": "Пушьямитра Шунга, главнокомандующий Маурьев (сенапати), убивает последнего маурийского императора Брихадратху на военном параде в Паталипутре и захватывает трон, основывая династию Шунга. Империя Маурьев — объединявшая индийский субконтинент более 136 лет, охватывавшая свыше 50 миллионов человек и 5 миллионов квадратных километров на пике мощи — прекращает существование.",
+      "era": "BC",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "The last Mauryan emperor is killed",
+      "name_ru": "Последний император Маурьев убит",
       "source": "https://en.wikipedia.org/wiki/Pushyamitra_Shunga",
       "tags": [
         "Indian",
-        "Kingdom",
-        "Political"
+        "Empire",
+        "Fall",
+        "Mauryan",
+        "Overthrow"
       ],
       "type": "political"
     }
-  ]
+  ],
+  "filename": "indian_mauryan_empire.json"
 }

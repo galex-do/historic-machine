@@ -45,13 +45,13 @@
     },
     {
       "date": "01.01.0305",
-      "description": "Seleucid-Mauryan War concludes; Seleucus I cedes territories east of the Indus River (including Arachosia, Gedrosia, Paropamisadae) to Chandragupta Maurya in exchange for 500 war elephants and a marriage alliance - these elephants prove decisive at Battle of Ipsus",
-      "description_ru": "Завершается война Селевкидов с Маурьями; Селевк I уступает территории к востоку от Инда (включая Арахозию, Гедросию, Паропамисады) Чандрагупте Маурье в обмен на 500 боевых слонов и брачный союз - эти слоны окажутся решающими в битве при Ипсе",
+      "description": "Chandragupta Maurya defeats Seleucus I Nicator in the struggle for control of the eastern satrapies; Seleucus I cedes territories east of the Indus River (including Arachosia, Gedrosia, Paropamisadae) to Chandragupta Maurya in exchange for 500 war elephants and a marriage alliance - these elephants prove decisive at Battle of Ipsus. Seleucus sends Megasthenes as a permanent ambassador to Pataliputra.",
+      "description_ru": "Чандрагупта Маурья побеждает Селевка I Никатора в борьбе за контроль над восточными сатрапиями; Селевк I уступает территории к востоку от Инда (включая Арахозию, Гедросию, Паропамисады) Чандрагупте Маурье в обмен на 500 боевых слонов и брачный союз - эти слоны окажутся решающими в битве при Ипсе. Селевк отправляет Мегасфена постоянным послом в Паталипутру.",
       "era": "BC",
       "latitude": 31.5,
       "longitude": 69,
       "name": "Seleucid-Mauryan Peace Treaty",
-      "name_ru": "Селевко-маурийский мирный договор",
+      "name_ru": "Маурьи побеждают Селевкидов",
       "source": "https://en.wikipedia.org/wiki/Seleucid%E2%80%93Mauryan_war",
       "tags": [
         "Greek",
@@ -60,6 +60,8 @@
         "War",
         "Diplomacy",
         "Marriage",
+        "Chandragupta 👑",
+        "Mauryan",
         "Peace",
         "Seleucus I 👑"
       ],
@@ -91,24 +93,6 @@
     },
     {
       "date": "01.01.0300",
-      "description": "Seleucus I establishes the Syrian Tetrapolis - four sister cities: Antioch (capital), Seleucia Pieria (port), Apamea (military base named after his wife Apama), and Laodicea (named after his mother) - forming the administrative core of western Seleucid lands",
-      "description_ru": "Селевк I формирует Сирийский Тетраполис - четыре города-побратима: Антиохия (столица), Селевкия Пиерийская (порт), Апамея (военная база, названная в честь жены Апамы) и Лаодикия (в честь матери) - административное ядро западных владений Селевкидов",
-      "era": "BC",
-      "latitude": 35.5,
-      "longitude": 36,
-      "name": "Syrian Tetrapolis Established",
-      "name_ru": "Создание Сирийского Тетраполиса",
-      "source": "https://en.wikipedia.org/wiki/Syrian_tetrapolis",
-      "tags": [
-        "Greek",
-        "Seleucid",
-        "Administration",
-        "Seleucus I 👑"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0300",
       "description": "Seleucus I founds Antioch on the Orontes River, naming it after his father Antiochus; the city becomes the western capital and eventually the primary seat of Seleucid power, growing into one of the greatest cities of antiquity",
       "description_ru": "Селевк I основывает Антиохию на реке Оронт, назвав её в честь своего отца Антиоха; город становится западной столицей и со временем главной резиденцией Селевкидов, превращаясь в один из величайших городов древности",
       "era": "BC",
@@ -122,6 +106,24 @@
         "Seleucid",
         "City",
         "Capital",
+        "Seleucus I 👑"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0300",
+      "description": "Seleucus I establishes the Syrian Tetrapolis - four sister cities: Antioch (capital), Seleucia Pieria (port), Apamea (military base named after his wife Apama), and Laodicea (named after his mother) - forming the administrative core of western Seleucid lands",
+      "description_ru": "Селевк I формирует Сирийский Тетраполис - четыре города-побратима: Антиохия (столица), Селевкия Пиерийская (порт), Апамея (военная база, названная в честь жены Апамы) и Лаодикия (в честь матери) - административное ядро западных владений Селевкидов",
+      "era": "BC",
+      "latitude": 35.5,
+      "longitude": 36,
+      "name": "Syrian Tetrapolis Established",
+      "name_ru": "Создание Сирийского Тетраполиса",
+      "source": "https://en.wikipedia.org/wiki/Syrian_tetrapolis",
+      "tags": [
+        "Greek",
+        "Seleucid",
+        "Administration",
         "Seleucus I 👑"
       ],
       "type": "historic"
@@ -576,8 +578,8 @@
       "description": "Battle of the Arius River; Antiochus III surprises and defeats Bactrian cavalry of Euthydemus I through a daring night march, demonstrating tactical brilliance. He then besieges the fortress city of Bactra",
       "description_ru": "Битва на реке Арий; Антиох III внезапно атакует и побеждает бактрийскую конницу Эвтидема I благодаря дерзкому ночному маршу, демонстрируя тактический гений. Затем он осаждает крепость Бактры",
       "era": "BC",
-      "latitude": 34.35,
-      "longitude": 62.2,
+      "latitude": 34.33386836,
+      "longitude": 62.19111443,
       "name": "Battle of the Arius River",
       "name_ru": "Битва на реке Арий",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Arius",
@@ -612,26 +614,6 @@
         "Greco-Bactria",
         "Peace",
         "Vassalage"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0205",
-      "description": "Antiochus III crosses the Hindu Kush into India, renewing alliance with King Sophagasenus and receiving 150 war elephants; following in Alexander's footsteps, he extends Seleucid influence to the furthest east since the founder",
-      "description_ru": "Антиох III пересекает Гиндукуш и входит в Индию, возобновляя союз с царём Софагасеном и получая 150 боевых слонов; следуя по стопам Александра, он распространяет влияние Селевкидов на крайний восток впервые со времён основателя",
-      "era": "BC",
-      "latitude": 34.5,
-      "longitude": 69.2,
-      "name": "Antiochus III in India",
-      "name_ru": "Антиох III в Индии",
-      "source": "https://en.wikipedia.org/wiki/Antiochus_III_the_Great",
-      "tags": [
-        "Greek",
-        "Indian",
-        "Seleucid",
-        "Diplomacy",
-        "Antiochus III 👑",
-        "Expedition"
       ],
       "type": "political"
     },

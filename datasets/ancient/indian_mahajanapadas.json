@@ -1,54 +1,78 @@
 {
-  "description": "Key events of the Mahajanapadas period (600–300 BC): the rise of republican city-states and territorial kingdoms, the emergence of Buddhism and Jainism, Persian and Greek encounters, the dominance of Magadha, and the dawn of the Maurya Empire.",
+  "description": "Dataset imported with 23 events",
   "events": [
     {
-      "date": "01.01.0600",
+      "date": "01.01.0700",
+      "description": "The Sushruta Samhita, attributed to the physician Sushruta at Varanasi, is compiled in its early form. It describes over 300 surgical procedures including rhinoplasty, cataract surgery, and caesarean sections; lists 120 surgical instruments; and classifies diseases. It is one of the foundational texts of Ayurvedic medicine and the oldest systematic surgical manual.",
+      "description_ru": "Сушрута-самхита, приписываемая врачу Сушруте из Варанаси, составляется в ранней форме. В ней описывается более 300 хирургических операций, включая ринопластику, удаление катаракты и кесарево сечение; перечислено 120 хирургических инструментов. Один из основополагающих текстов аюрведической медицины.",
       "era": "BC",
-      "name": "Vaishali Licchavi Republic",
-      "name_ru": "Личчхавийская республика Вайшали",
+      "latitude": 25.32,
+      "longitude": 83.01,
+      "name": "Sushruta Samhita — Foundations of Surgery",
+      "name_ru": "Сушрута-самхита — основы хирургии",
+      "source": "https://en.wikipedia.org/wiki/Sushruta_Samhita",
+      "tags": [
+        "Indian",
+        "Medicine",
+        "Oral Tradition",
+        "Science",
+        "Vedic"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.0600",
       "description": "The Licchavi clan of Vaishali governs through an assembly of elected representatives — one of the earliest known republics in world history. The city-state operates under a constitution with a ruling council (rajas), an executive officer (senani), and public assemblies. Vaishali will become a center of both Buddhism and Jainism.",
       "description_ru": "Клан Личчхавов Вайшали управляется через собрание избранных представителей — одну из древнейших известных республик в мировой истории. Город-государство действует по конституции с правящим советом (раджами), исполнительным чиновником (сенани) и народными собраниями.",
-      "latitude": 25.99,
-      "longitude": 85.13,
+      "era": "BC",
+      "latitude": 25.98728909,
+      "longitude": 85.1269412,
+      "name": "Vaishali Licchavi Republic",
+      "name_ru": "Личчхавийская республика Вайшали",
       "source": "https://en.wikipedia.org/wiki/Vajjian_Confederacy",
       "tags": [
         "Indian",
-        "Kingdom",
+        "City-State",
+        "Democracy",
         "Political",
-        "Democracy"
+        "Republic",
+        "Vaishali"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0545",
-      "era": "BC",
-      "name": "Bimbisara Becomes King of Magadha",
-      "name_ru": "Бимбисара становится царём Магадхи",
       "description": "Bimbisara of the Haryanka dynasty takes power in Magadha at the age of 15 and rules for 52 years. He transforms Magadha from a minor chiefdom into a major kingdom through strategic marriages, diplomacy, and military campaigns — annexing Anga to the east and establishing ties with Kosala and Vaishali. He is also a patron of the Buddha.",
       "description_ru": "Бимбисара из династии Харьянка берёт власть в Магадхе в 15 лет и правит 52 года. Он превращает Магадху из небольшого вождества в крупное царство благодаря стратегическим бракам, дипломатии и военным походам — присоединяет Ангу на востоке и устанавливает связи с Кошалой и Вайшали.",
+      "era": "BC",
       "latitude": 25.03,
       "longitude": 85.42,
+      "name": "Bimbisara Becomes King of Magadha",
+      "name_ru": "Бимбисара - царь Магадхи",
       "source": "https://en.wikipedia.org/wiki/Bimbisara",
       "tags": [
         "Indian",
+        "King",
+        "Expansion",
         "Kingdom",
-        "Political",
-        "Expansion"
+        "Magadha"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0534",
-      "era": "BC",
-      "name": "Siddhartha's Great Renunciation",
-      "name_ru": "Великое отречение Сиддхартхи",
       "description": "Prince Siddhartha Gautama of the Shakya republic abandons his palace, wife, and newborn son at Kapilavastu to seek liberation from suffering. He shaves his head, dons monastic robes, and joins wandering ascetics — beginning the spiritual journey that will culminate in his enlightenment as the Buddha.",
       "description_ru": "Принц Сиддхартха Гаутама из республики Шакья покидает дворец, жену и новорождённого сына в Капилавасту в поисках освобождения от страдания. Он бреет голову, надевает монашеские одежды и присоединяется к странствующим аскетам — начиная духовный путь, завершившийся просветлением.",
+      "era": "BC",
       "latitude": 27.57,
       "longitude": 83.05,
+      "name": "Siddhartha's Great Renunciation",
+      "name_ru": "Великое отречение Сиддхартхи",
       "source": "https://en.wikipedia.org/wiki/Gautama_Buddha",
       "tags": [
         "Indian",
+        "Legend",
+        "Buddha 👤",
         "Religious",
         "Buddhism"
       ],
@@ -56,16 +80,19 @@
     },
     {
       "date": "01.01.0528",
-      "era": "BC",
-      "name": "Buddha's Enlightenment at Bodh Gaya",
-      "name_ru": "Просветление Будды в Бодх-Гае",
       "description": "Siddhartha Gautama meditates under a Bodhi tree at Bodh Gaya for 49 days and attains enlightenment (bodhi), becoming the Buddha — 'the Awakened One'. He gains insight into the Four Noble Truths and the Eightfold Path as the means of escaping the cycle of rebirth. Bodh Gaya becomes the most sacred site in Buddhism.",
       "description_ru": "Сиддхартха Гаутама медитирует под деревом Бодхи в Бодх-Гае 49 дней и достигает просветления (бодхи), становясь Буддой — «Пробуждённым». Он постигает Четыре благородные истины и Восьмеричный путь. Бодх-Гая становится наиважнейшим буддийским священным местом.",
-      "latitude": 24.69,
-      "longitude": 84.99,
+      "era": "BC",
+      "latitude": 24.69591561,
+      "longitude": 84.99115169,
+      "name": "Buddha's Enlightenment at Bodh Gaya",
+      "name_ru": "Просветление Будды в Бодх-Гае",
       "source": "https://en.wikipedia.org/wiki/Bodh_Gaya",
       "tags": [
         "Indian",
+        "Legend",
+        "Buddha 👤",
+        "Holy Site",
         "Religious",
         "Buddhism"
       ],
@@ -73,160 +100,137 @@
     },
     {
       "date": "01.01.0525",
-      "era": "BC",
-      "name": "Buddha's First Sermon at Sarnath",
-      "name_ru": "Первая проповедь Будды в Сарнатхе",
       "description": "The Buddha delivers his first discourse — the Dhammacakkappavattana Sutta (Setting the Wheel of Dhamma in Motion) — to five former companions at the Deer Park in Sarnath near Varanasi. This event establishes the Three Jewels of Buddhism (Buddha, Dharma, Sangha) and is known as the 'First Turning of the Wheel of Dharma'.",
       "description_ru": "Будда произносит первую проповедь — «Дхаммачаккаппаваттана-сутту» (Приведение в движение колеса Дхаммы) — пятерым бывшим спутникам в Оленьем парке в Сарнатхе близ Варанаси. Это событие утверждает Три Жемчужины буддизма (Будду, Дхарму, Сангху).",
-      "latitude": 25.38,
-      "longitude": 83.02,
+      "era": "BC",
+      "latitude": 25.38246061,
+      "longitude": 83.02359581,
+      "name": "Buddha's First Sermon at Sarnath",
+      "name_ru": "Первая проповедь Будды в Сарнатхе",
       "source": "https://en.wikipedia.org/wiki/Dhammacakkappavattana_Sutta",
       "tags": [
         "Indian",
+        "Buddha 👤",
+        "Holy Site",
+        "Philosophy",
         "Religious",
-        "Buddhism",
-        "Philosophy"
+        "Buddhism"
       ],
       "type": "religious"
     },
     {
       "date": "01.01.0520",
-      "era": "BC",
-      "name": "Darius I Conquers Gandhara and Sindh",
-      "name_ru": "Завоевание Гандхары и Синда Дарием I",
       "description": "The Achaemenid Persian king Darius I campaigns east of the Hindu Kush, incorporating Gandhara and the Indus Valley into the Persian Empire as its 20th and wealthiest satrapy. Taxila becomes the Persian administrative capital of the region. Indian soldiers from these satrapies will later serve in Xerxes' invasion of Greece.",
       "description_ru": "Ахеменидский царь Дарий I совершает поход к востоку от Гиндукуша, включая Гандхару и Инд в Персидскую державу как её 20-ю и богатейшую сатрапию. Таксила становится персидским административным центром региона. Индийские воины из этих сатрапий впоследствии участвуют в походе Ксеркса на Грецию.",
+      "era": "BC",
       "latitude": 33.74,
       "longitude": 72.83,
+      "name": "Darius I Conquers Gandhara and Sindh",
+      "name_ru": "Завоевание Гандхары и Синда Персией",
       "source": "https://en.wikipedia.org/wiki/Indo-Iranian_frontier",
       "tags": [
-        "Indian",
         "Persian",
+        "Indian",
+        "Achaemenid",
+        "War",
         "Conquest",
+        "Darius I 👑",
         "Expansion"
       ],
       "type": "military"
     },
     {
       "date": "01.01.0516",
-      "era": "BC",
-      "name": "Scylax Explores the Indus for Persia",
-      "name_ru": "Скилак исследует Инд по поручению Персии",
       "description": "The Greek navigator Scylax of Caryanda, commissioned by Darius I, sails down the Indus River from Caspatyrus (near Peshawar) to the Arabian Sea over 30 months — the first recorded sea voyage from India to the Persian Gulf. His account introduces Indian geography to the Greek world, later influencing Herodotus.",
       "description_ru": "Греческий мореплаватель Скилак Кариандский, по поручению Дария I, спускается по Инду от Каспатира (близ Пешавара) до Аравийского моря за 30 месяцев — первое зафиксированное морское плавание из Индии в Персидский залив. Его рассказ знакомит греческий мир с географией Индии.",
+      "era": "BC",
       "latitude": 23.68,
       "longitude": 67.42,
+      "name": "Scylax Explores the Indus for Persia",
+      "name_ru": "Скилак исследует Инд по поручению Персии",
       "source": "https://en.wikipedia.org/wiki/Scylax_of_Caryanda",
       "tags": [
-        "Indian",
+        "Greek",
         "Persian",
+        "Indian",
         "Exploration",
+        "Indus Valley",
         "Trade"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0500",
-      "era": "BC",
-      "name": "Varanasi — City of Learning and Trade",
-      "name_ru": "Варанаси — город учёности и торговли",
       "description": "Varanasi (Kashi) on the Ganges reaches its peak as the most sacred Hindu city and a major commercial hub. It hosts a diverse population of priests, merchants, physicians, and scholars. Its ghats serve as pilgrimage sites for Hindus, Buddhists, and Jains alike, and its textile trade in silk and muslin reaches as far as Persia.",
       "description_ru": "Варанаси (Каши) на Ганге достигает расцвета как священнейший индуистский город и крупный торговый центр. Здесь живут жрецы, торговцы, врачи и учёные. Его гхаты служат местами паломничества для индуистов, буддистов и джайнов; шёлковая и муслиновая торговля тянется до Персии.",
+      "era": "BC",
       "latitude": 25.32,
       "longitude": 83.01,
+      "name": "Varanasi — City of Learning and Trade",
+      "name_ru": "Варанаси — город учёности и торговли",
       "source": "https://en.wikipedia.org/wiki/Varanasi",
       "tags": [
         "Indian",
-        "Trade",
-        "Civilization",
-        "Religious"
+        "City",
+        "Education",
+        "Religious",
+        "Trade"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0492",
-      "era": "BC",
-      "name": "Ajatashatru Seizes the Throne of Magadha",
-      "name_ru": "Аджаташатру захватывает престол Магадхи",
       "description": "Prince Ajatashatru imprisons and kills his father Bimbisara to seize the throne of Magadha, beginning a reign of aggressive expansion. He fights 16-year wars against both the Licchavi republic of Vaishali and the Kosala kingdom, deploying innovative siege weapons to overcome Vaishali's fortifications.",
       "description_ru": "Принц Аджаташатру заключает в темницу и убивает своего отца Бимбисару, захватывая трон Магадхи, и начинает правление агрессивной экспансией. Он ведёт 16-летние войны против Личчхавийской республики Вайшали и царства Кошала, используя новаторские осадные орудия.",
+      "era": "BC",
       "latitude": 25.03,
       "longitude": 85.42,
+      "name": "Coup in Magadha",
+      "name_ru": "Переворот в Магадхи",
       "source": "https://en.wikipedia.org/wiki/Ajatashatru",
       "tags": [
         "Indian",
+        "King",
+        "Expansion",
         "Kingdom",
-        "Political",
-        "Expansion"
+        "Magadha",
+        "Overthrow",
+        "Son Kills Father"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0490",
-      "era": "BC",
-      "name": "Pataliputra Founded",
-      "name_ru": "Основание Паталипутры",
       "description": "Ajatashatru's son Udayin founds Pataliputra (modern Patna) at the confluence of the Ganges, Son, and Punpun rivers as the new capital of Magadha. Strategically positioned for river-borne trade and military defence, Pataliputra will grow into one of the largest cities in the ancient world under the Mauryas.",
       "description_ru": "Сын Аджаташатру Удаин основывает Паталипутру (современная Патна) у слияния Ганга, Сона и Пунпуна как новую столицу Магадхи. Стратегически расположенная для речной торговли и обороны, Паталипутра при Маурьях вырастет в один из крупнейших городов древнего мира.",
+      "era": "BC",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "Pataliputra Founded",
+      "name_ru": "Основание Паталипутры",
       "source": "https://en.wikipedia.org/wiki/Pataliputra",
       "tags": [
         "Indian",
+        "Capital",
         "Kingdom",
-        "Political",
-        "Architecture"
+        "Magadha"
       ],
       "type": "political"
     },
     {
-      "date": "01.01.0475",
+      "date": "01.02.0483",
+      "description": "Shortly after the Buddha's death, 500 senior monks convene at Rajagriha under the patronage of King Ajatashatru to recite and preserve the Buddha's teachings. The council formally establishes the Vinaya Pitaka (monastic code) and Sutta Pitaka (discourses), laying the canonical foundation of Theravada Buddhism.",
+      "description_ru": "Вскоре после смерти Будды 500 старших монахов собираются в Раджагрихе под покровительством царя Аджаташатру, чтобы воспроизвести и сохранить учения Будды. Собор закладывает канонические основы Тхеравады: Виная-питаку (монашеский устав) и Сутта-питаку (беседы).",
       "era": "BC",
-      "name": "Ajatashatru's War Machines",
-      "name_ru": "Военные машины Аджаташатру",
-      "description": "Ajatashatru deploys two innovative siege weapons in the siege of Vaishali: a mahashilakantaka (stone-throwing catapult) and a rathamushala (a chariot fitted with a rotating scythe blade for clearing troops). These represent some of the earliest recorded mechanical siege technology in Indian history.",
-      "description_ru": "Аджаташатру применяет два новаторских осадных орудия при осаде Вайшали: махашилакантаку (камнемёт) и ратхамушалу (колесницу с вращающимся косым лезвием для разгона пехоты). Это одни из первых зафиксированных механических осадных орудий в истории Индии.",
-      "latitude": 25.99,
-      "longitude": 85.13,
-      "source": "https://en.wikipedia.org/wiki/Ajatashatru",
+      "latitude": 25.03,
+      "longitude": 85.42,
+      "name": "First Buddhist Council at Rajagriha",
+      "name_ru": "Первый буддийский собор в Раджагрихе",
+      "source": "https://en.wikipedia.org/wiki/First_Buddhist_council",
       "tags": [
         "Indian",
-        "Battle",
-        "Technology",
-        "War"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0472",
-      "era": "BC",
-      "name": "Fall of the Vaishali Republic",
-      "name_ru": "Падение республики Вайшали",
-      "description": "After a 16-year campaign, Ajatashatru of Magadha finally defeats the Licchavi republic of Vaishali through military might and treachery — reportedly sending a spy to sow division among the republican assembly. The fall of Vaishali marks the end of the Vajjian Confederacy and accelerates Magadha's dominance over the Gangetic Plain.",
-      "description_ru": "После 16-летнего похода Аджаташатру из Магадхи наконец побеждает Личчхавийскую республику Вайшали военной силой и хитростью — по преданию, послав шпиона посеять раздор в республиканском собрании. Падение Вайшали знаменует конец Ваджийской конфедерации.",
-      "latitude": 25.99,
-      "longitude": 85.13,
-      "source": "https://en.wikipedia.org/wiki/Vajjian_Confederacy",
-      "tags": [
-        "Indian",
-        "Battle",
-        "Kingdom",
-        "Political"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0483",
-      "era": "BC",
-      "name": "Parinirvana of the Buddha at Kushinagar",
-      "name_ru": "Паринирвана Будды в Кушинагаре",
-      "description": "The Buddha passes away at the age of 80 at Kushinagar, attaining Parinirvana (final liberation from the cycle of rebirth). His last words urge his monks to work diligently for their own liberation. His body is cremated and his relics distributed among eight kingdoms, each enshrining them in a stupa.",
-      "description_ru": "Будда умирает в возрасте 80 лет в Кушинагаре, достигая Паринирваны (окончательного освобождения от цикла перерождений). Его последние слова побуждают монахов неустанно трудиться ради собственного освобождения. Тело кремируется, реликвии распределяются между восемью царствами.",
-      "latitude": 26.74,
-      "longitude": 83.89,
-      "source": "https://en.wikipedia.org/wiki/Parinirvana",
-      "tags": [
-        "Indian",
+        "Council",
+        "Magadha",
         "Religious",
         "Buddhism"
       ],
@@ -234,180 +238,181 @@
     },
     {
       "date": "01.01.0483",
+      "description": "The Buddha passes away at the age of 80 at Kushinagar, attaining Parinirvana (final liberation from the cycle of rebirth). His last words urge his monks to work diligently for their own liberation. His body is cremated and his relics distributed among eight kingdoms, each enshrining them in a stupa.",
+      "description_ru": "Будда умирает в возрасте 80 лет в Кушинагаре, достигая Паринирваны (окончательного освобождения от цикла перерождений). Его последние слова побуждают монахов неустанно трудиться ради собственного освобождения. Тело кремируется, реликвии распределяются между восемью царствами.",
       "era": "BC",
-      "name": "First Buddhist Council at Rajagriha",
-      "name_ru": "Первый буддийский собор в Раджагрихе",
-      "description": "Shortly after the Buddha's death, 500 senior monks convene at Rajagriha under the patronage of King Ajatashatru to recite and preserve the Buddha's teachings. The council formally establishes the Vinaya Pitaka (monastic code) and Sutta Pitaka (discourses), laying the canonical foundation of Theravada Buddhism.",
-      "description_ru": "Вскоре после смерти Будды 500 старших монахов собираются в Раджагрихе под покровительством царя Аджаташатру, чтобы воспроизвести и сохранить учения Будды. Собор закладывает канонические основы Тхеравады: Виная-питаку (монашеский устав) и Сутта-питаку (беседы).",
-      "latitude": 25.03,
-      "longitude": 85.42,
-      "source": "https://en.wikipedia.org/wiki/First_Buddhist_council",
+      "latitude": 26.74,
+      "longitude": 83.89,
+      "name": "Parinirvana of the Buddha at Kushinagar",
+      "name_ru": "Паринирвана Будды в Кушинагаре",
+      "source": "https://en.wikipedia.org/wiki/Parinirvana",
       "tags": [
         "Indian",
+        "Buddha 👤",
+        "Death",
+        "Holy Site",
         "Religious",
-        "Buddhism",
-        "Literature"
+        "Buddhism"
       ],
       "type": "religious"
     },
     {
-      "date": "01.01.0413",
+      "date": "01.01.0475",
+      "description": "Ajatashatru deploys two innovative siege weapons in the siege of Vaishali: a mahashilakantaka (stone-throwing catapult) and a rathamushala (a chariot fitted with a rotating scythe blade for clearing troops). These represent some of the earliest recorded mechanical siege technology in Indian history.",
+      "description_ru": "Аджаташатру применяет два новаторских осадных орудия при осаде Вайшали: махашилакантаку (камнемёт) и ратхамушалу (колесницу с вращающимся косым лезвием для разгона пехоты). Это одни из первых зафиксированных механических осадных орудий в истории Индии.",
       "era": "BC",
-      "name": "Shishunaga Dynasty Overthrows Haryankas",
-      "name_ru": "Династия Шишунага свергает Харьянков",
+      "latitude": 25.98728909,
+      "longitude": 85.1269412,
+      "name": "Magadha's War Machines",
+      "name_ru": "Военные машины Магадхи",
+      "source": "https://en.wikipedia.org/wiki/Ajatashatru",
+      "tags": [
+        "Indian",
+        "War",
+        "Battle",
+        "Engineering ⚙️",
+        "Magadha",
+        "Science",
+        "Siege",
+        "Technology"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0472",
+      "description": "After a 16-year campaign, Ajatashatru of Magadha finally defeats the Licchavi republic of Vaishali through military might and treachery — reportedly sending a spy to sow division among the republican assembly. The fall of Vaishali marks the end of the Vajjian Confederacy and accelerates Magadha's dominance over the Gangetic Plain.",
+      "description_ru": "После 16-летнего похода Аджаташатру из Магадхи наконец побеждает Личчхавийскую республику Вайшали военной силой и хитростью — по преданию, послав шпиона посеять раздор в республиканском собрании. Падение Вайшали знаменует конец Ваджийской конфедерации.",
+      "era": "BC",
+      "latitude": 25.98728909,
+      "longitude": 85.1269412,
+      "name": "Fall of the Vaishali Republic",
+      "name_ru": "Падение республики Вайшали",
+      "source": "https://en.wikipedia.org/wiki/Vajjian_Confederacy",
+      "tags": [
+        "Indian",
+        "War",
+        "Battle",
+        "Kingdom",
+        "Magadha",
+        "Siege",
+        "Vaishali"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0413",
       "description": "Shishunaga, a minister of Magadha, overthrows the last Haryanka king and founds a new dynasty. The Shishunagas consolidate Magadha's control, annexing the powerful Avanti kingdom — one of the four great Mahajanapadas — and absorbing its territory into what is now the core of northern India.",
       "description_ru": "Шишунага, министр Магадхи, свергает последнего царя из рода Харьянков и основывает новую династию. Шишунаги укрепляют контроль Магадхи, аннексировав мощное царство Аванти — одну из четырёх великих Махаджанапад — и включив его земли в состав государства.",
-      "latitude": 25.03,
-      "longitude": 85.42,
+      "era": "BC",
+      "latitude": 25.61,
+      "longitude": 85.14,
+      "name": "Shishunaga Dynasty Overthrows Haryankas",
+      "name_ru": "Династия Шишунага свергает Харьянков",
       "source": "https://en.wikipedia.org/wiki/Shishunaga_dynasty",
       "tags": [
         "Indian",
         "Kingdom",
-        "Political",
-        "Expansion"
+        "Magadha",
+        "Overthrow"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0400",
-      "era": "BC",
-      "name": "Panini Composes the Ashtadhyayi",
-      "name_ru": "Панини составляет Аштадхьяи",
       "description": "The grammarian Panini of Gandhara composes the Ashtadhyayi, a grammar of the Sanskrit language in 3,976 sutras (rules). It is the most complete and precise grammatical description of any language produced in the ancient world, describing Classical Sanskrit fully and formally. Modern linguists consider it a precursor to formal language theory.",
       "description_ru": "Грамматист Панини из Гандхары составляет Аштадхьяи — грамматику санскрита в 3976 сутрах (правилах). Это наиболее полное и точное грамматическое описание любого языка, созданное в древнем мире. Современные лингвисты считают его предшественником формальной теории языка.",
+      "era": "BC",
       "latitude": 34.15,
       "longitude": 72,
+      "name": "Panini Composes the Ashtadhyayi",
+      "name_ru": "Панини составляет грамматику санскрита",
       "source": "https://en.wikipedia.org/wiki/Pāṇini",
       "tags": [
         "Indian",
+        "Culture",
         "Language",
         "Literature",
-        "Civilization"
-      ],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.0400",
-      "era": "BC",
-      "name": "Sushruta Samhita — Foundations of Surgery",
-      "name_ru": "Сушрута-самхита — основы хирургии",
-      "description": "The Sushruta Samhita, attributed to the physician Sushruta at Varanasi, is compiled in its early form. It describes over 300 surgical procedures including rhinoplasty, cataract surgery, and caesarean sections; lists 120 surgical instruments; and classifies diseases. It is one of the foundational texts of Ayurvedic medicine and the oldest systematic surgical manual.",
-      "description_ru": "Сушрута-самхита, приписываемая врачу Сушруте из Варанаси, составляется в ранней форме. В ней описывается более 300 хирургических операций, включая ринопластику, удаление катаракты и кесарево сечение; перечислено 120 хирургических инструментов. Один из основополагающих текстов аюрведической медицины.",
-      "latitude": 25.32,
-      "longitude": 83.01,
-      "source": "https://en.wikipedia.org/wiki/Sushruta_Samhita",
-      "tags": [
-        "Indian",
-        "Medicine",
-        "Civilization"
+        "Writing"
       ],
       "type": "scientific"
     },
     {
       "date": "01.01.0383",
-      "era": "BC",
-      "name": "Second Buddhist Council at Vaishali",
-      "name_ru": "Второй буддийский собор в Вайшали",
       "description": "One hundred years after the Buddha's death, 700 monks gather at Vaishali to rule on disputed monastic practices. The council results in the first major schism in Buddhism, splitting the community into the conservative Theravada (Sthaviravada) and the more liberal Mahasanghika schools — the roots of later Hinayana and Mahayana traditions.",
       "description_ru": "Спустя сто лет после смерти Будды 700 монахов собираются в Вайшали для решения спорных вопросов монашеской дисциплины. Собор приводит к первому крупному расколу в буддизме: консервативная Тхеравада (Стхавиравада) и более либеральная Махасангхика — истоки последующих традиций Хинаяны и Махаяны.",
-      "latitude": 25.99,
-      "longitude": 85.13,
+      "era": "BC",
+      "latitude": 25.98728909,
+      "longitude": 85.1269412,
+      "name": "Second Buddhist Council at Vaishali",
+      "name_ru": "Второй буддийский собор в Вайшали",
       "source": "https://en.wikipedia.org/wiki/Second_Buddhist_council",
       "tags": [
         "Indian",
+        "Council",
         "Religious",
+        "Schism",
         "Buddhism"
       ],
       "type": "religious"
     },
     {
       "date": "01.01.0345",
-      "era": "BC",
-      "name": "Mahapadma Nanda Founds the Nanda Dynasty",
-      "name_ru": "Махападма Нанда основывает династию Нанда",
       "description": "Mahapadma Nanda overthrows the last Shishunaga king and establishes the Nanda dynasty, expanding Magadha's empire to its greatest pre-Mauryan extent — from the Hindu Kush in the west to Bengal in the east, and from the Himalayas to the Deccan Plateau. The Nanda Empire, backed by a vast treasury and a huge standing army, is the first empire to politically unify much of the Indian subcontinent.",
       "description_ru": "Махападма Нанда свергает последнего царя из рода Шишунаг и основывает династию Нанда, расширяя империю Магадхи до наибольших доманурийских пределов — от Гиндукуша на западе до Бенгалии на востоке. Империя Нанда первой политически объединяет значительную часть индийского субконтинента.",
+      "era": "BC",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "Mahapadma Nanda Founds the Nanda Dynasty",
+      "name_ru": "Махападма Нанда основывает династию Нанда",
       "source": "https://en.wikipedia.org/wiki/Nanda_Empire",
       "tags": [
         "Indian",
+        "Expansion",
         "Kingdom",
-        "Political",
-        "Expansion"
+        "Magadha",
+        "Overthrow"
       ],
       "type": "political"
     },
     {
-      "date": "01.01.0327",
-      "era": "BC",
-      "name": "Alexander the Great Crosses the Hindu Kush",
-      "name_ru": "Александр Великий переходит Гиндукуш",
+      "date": "01.09.0327",
       "description": "Alexander III of Macedon crosses the Hindu Kush through the Khawak Pass and enters the Indian subcontinent for his eastern campaign, having already conquered the Achaemenid Persian Empire. He encounters fierce resistance from hill tribes and city-states in Bactria and Sogdiana before descending into Gandhara.",
-      "description_ru": "Александр III Македонский переходит Гиндукуш через перевал Хавак и вступает в Индийский субконтинент в своём восточном походе, уже завоевав державу Ахеменидов. Он встречает ожесточённое сопротивление горных племён и городов-государств Бактрии и Согдианы.",
+      "description_ru": "Александр Македонский переходит Гиндукуш через перевал Хавак и вступает в Индийский субконтинент в своём восточном походе. Он встречает ожесточённое сопротивление горных племён и городов-государств Бактрии и Согдианы.",
+      "era": "BC",
       "latitude": 35.2,
       "longitude": 69.5,
+      "name": "Alexander the Great Crosses the Hindu Kush",
+      "name_ru": "Александр Великий переходит Гиндукуш",
       "source": "https://en.wikipedia.org/wiki/Indian_campaign_of_Alexander_the_Great",
       "tags": [
-        "Indian",
         "Greek",
+        "Indian",
+        "Alexander the Great 👤",
         "Conquest",
         "Expansion"
       ],
       "type": "military"
     },
     {
-      "date": "01.01.0326",
+      "date": "01.10.0323",
+      "description": "After Alexander's death, his Indian satrapies—Gandhara and Punjab—were divided among the Diadochi. However, the Greek garrisons found themselves trapped. Local kings began playing their own game, and the Mauryan Empire began laying claim to the Diadochi's place.",
+      "description_ru": "После смерти Александра его индийские сатрапии — Гандхара и Пенджаб — были разделены между диадохами. Однако греческие гарнизоны оказались в ловушке. Местные цари начали играть в свою игру, и на место диадохов стала претендовать империя Маурьев",
       "era": "BC",
-      "name": "Battle of the Hydaspes",
-      "name_ru": "Битва при Гидаспе",
-      "description": "Alexander the Great defeats King Porus (Purushottama) of the Paurava kingdom in a pitched battle on the banks of the Hydaspes (Jhelum) River. Porus fights with war elephants, infantry, and cavalry in a fierce engagement. Alexander is so impressed by Porus's courage that he restores his kingdom and makes him a vassal ruler — the Macedonian army's deepest penetration into the Indian subcontinent.",
-      "description_ru": "Александр Великий побеждает царя Пора (Пурушоттаму) из царства Паурава в сражении на берегах реки Гидасп (Джелам). Пор сражается боевыми слонами, пехотой и конницей. Александр, восхищённый мужеством Пора, возвращает ему царство и делает его вассалом — самое глубокое проникновение македонского войска в Индию.",
-      "latitude": 32.93,
-      "longitude": 73.73,
-      "source": "https://en.wikipedia.org/wiki/Battle_of_the_Hydaspes",
-      "tags": [
-        "Indian",
-        "Greek",
-        "Battle",
-        "War"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0325",
-      "era": "BC",
-      "name": "Alexander's Army Mutinies at the Beas River",
-      "name_ru": "Мятеж армии Александра на реке Беас",
-      "description": "Exhausted after eight years of campaigning, Alexander's Macedonian army refuses to march further east at the Hyphasis (Beas) River — within reach of the Nanda Empire, the most powerful state in India. Alexander weeps in his tent for three days, then turns south and begins his long withdrawal. India west of the Beas briefly falls under Macedonian control.",
-      "description_ru": "Измотанная восьмилетними походами армия Александра Македонского отказывается идти дальше на востоке у реки Гифасис (Беас) — в шаге от державы Нанда, сильнейшего государства Индии. Александр три дня плачет в шатре, затем поворачивает на юг и начинает долгое отступление.",
-      "latitude": 31.66,
-      "longitude": 75.35,
-      "source": "https://en.wikipedia.org/wiki/Mutiny_on_the_Hyphasis",
-      "tags": [
-        "Indian",
-        "Greek",
-        "Battle",
-        "War"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0323",
-      "era": "BC",
-      "name": "Death of Alexander — Power Vacuum in the Northwest",
-      "name_ru": "Смерть Александра — политический вакуум на северо-западе",
-      "description": "Alexander the Great dies at Babylon at age 32. His Indian satrapies — Gandhara and the Punjab — are divided among his successors (Diadochi). The resulting power vacuum in northwestern India will allow Chandragupta Maurya to rapidly consolidate power, expelling the Macedonian garrisons within the decade.",
-      "description_ru": "Александр Великий умирает в Вавилоне в возрасте 32 лет. Его индийские сатрапии — Гандхара и Пенджаб — делятся между диадохами. Возникший политический вакуум на северо-западе Индии позволит Чандрагупте Маурья быстро консолидировать власть.",
       "latitude": 33.74,
       "longitude": 72.83,
+      "name": "Death of Alexander — Power Vacuum in the Northwest",
+      "name_ru": "Коллапс македонской власти в Индии",
       "source": "https://en.wikipedia.org/wiki/Alexander_the_Great",
       "tags": [
-        "Indian",
         "Greek",
-        "Political"
+        "Indian",
+        "Diadochi",
+        "Crisis",
+        "Political",
+        "Rebellion"
       ],
       "type": "historic"
     }
-  ]
+  ],
+  "filename": "indian_mahajanapadas.json"
 }

@@ -1229,6 +1229,7 @@
         "Armenian",
         "Diplomacy",
         "Christian",
+        "Council",
         "Religious"
       ],
       "type": "religious"
@@ -1321,6 +1322,7 @@
         "Arsacid",
         "Reform",
         "Christian",
+        "Council",
         "Culture",
         "Law"
       ],
@@ -1427,20 +1429,20 @@
     },
     {
       "date": "01.01.0368",
-      "description": "Queen Parandzem, wife of the captured Arshak II, locked herself in the fortress with the remnants of her loyal troops (approximately 11,000 men) and the royal treasury. The fortress stood on a steep cliff, difficult to access, and Parandzem managed to hold out for a year. Eventually, the fortress was taken by starvation, the queen was captured, and executed in Persia.",
-      "description_ru": "Жена плененного Аршака II, царица Парандзем заперлась в крепости с остатками верных войск (около 11 тысяч человек) и царской казной. Крепость стояла на отвесной скале, к которой было трудно подобраться, и Парандзем удалось держать осаду в течение года. В конце концов крепость взяли измором, царица была пленена и казнена в Персии",
+      "description": "The Persians stormed the city, after which Shapur ordered it burned to the ground and the walls torn down. Almost the entire surviving population (tens of thousands of families) were driven into captivity deep into Iran. The city ceased to exist as a significant political center.",
+      "description_ru": "Персы взяли город штурмом, после чего Шапур приказал сжечь его дотла и разрушить стены. Почти всё выжившее население (десятки тысяч семей) было угнано в плен вглубь Ирана. Город перестал существовать как значимый политический центр.",
       "era": "AD",
-      "latitude": 40.15278483,
-      "longitude": 43.65941048,
-      "name": "The Persians besiege Artagers",
-      "name_ru": "Персы осаждают Артагерс",
+      "latitude": 39.87837009,
+      "longitude": 44.57630754,
+      "name": "The Persians ravage Artaxata",
+      "name_ru": "Персы разоряют Арташат",
+      "source": "https://en.wikipedia.org/wiki/Armeno-Sasanian_War_of_363%E2%80%93371",
       "tags": [
         "Persian",
         "Armenian",
-        "Arsacid",
         "War",
-        "Sassanid",
-        "Siege"
+        "Destruction",
+        "Sassanid"
       ],
       "type": "military"
     },
@@ -1466,20 +1468,20 @@
     },
     {
       "date": "01.01.0368",
-      "description": "The Persians stormed the city, after which Shapur ordered it burned to the ground and the walls torn down. Almost the entire surviving population (tens of thousands of families) were driven into captivity deep into Iran. The city ceased to exist as a significant political center.",
-      "description_ru": "Персы взяли город штурмом, после чего Шапур приказал сжечь его дотла и разрушить стены. Почти всё выжившее население (десятки тысяч семей) было угнано в плен вглубь Ирана. Город перестал существовать как значимый политический центр.",
+      "description": "Queen Parandzem, wife of the captured Arshak II, locked herself in the fortress with the remnants of her loyal troops (approximately 11,000 men) and the royal treasury. The fortress stood on a steep cliff, difficult to access, and Parandzem managed to hold out for a year. Eventually, the fortress was taken by starvation, the queen was captured, and executed in Persia.",
+      "description_ru": "Жена плененного Аршака II, царица Парандзем заперлась в крепости с остатками верных войск (около 11 тысяч человек) и царской казной. Крепость стояла на отвесной скале, к которой было трудно подобраться, и Парандзем удалось держать осаду в течение года. В конце концов крепость взяли измором, царица была пленена и казнена в Персии",
       "era": "AD",
-      "latitude": 39.87837009,
-      "longitude": 44.57630754,
-      "name": "The Persians ravage Artaxata",
-      "name_ru": "Персы разоряют Арташат",
-      "source": "https://en.wikipedia.org/wiki/Armeno-Sasanian_War_of_363%E2%80%93371",
+      "latitude": 40.15278483,
+      "longitude": 43.65941048,
+      "name": "The Persians besiege Artagers",
+      "name_ru": "Персы осаждают Артагерс",
       "tags": [
         "Persian",
         "Armenian",
+        "Arsacid",
         "War",
-        "Destruction",
-        "Sassanid"
+        "Sassanid",
+        "Siege"
       ],
       "type": "military"
     },
@@ -1717,6 +1719,7 @@
       "tags": [
         "Armenian",
         "Christian",
+        "Council",
         "Rebellion",
         "Religious"
       ],
@@ -1813,6 +1816,7 @@
       "tags": [
         "Armenian",
         "Christian",
+        "Council",
         "Independence",
         "Political",
         "Religious"
