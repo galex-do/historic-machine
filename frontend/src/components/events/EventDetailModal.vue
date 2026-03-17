@@ -266,6 +266,18 @@ export default {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+@media (min-width: 900px) {
+  .event_detail_modal {
+    max-width: 660px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .event_detail_modal {
+    max-width: 780px;
+  }
+}
+
 .event_detail_header {
   display: flex;
   align-items: center;
