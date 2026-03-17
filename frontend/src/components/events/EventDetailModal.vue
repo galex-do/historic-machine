@@ -272,12 +272,6 @@ export default {
   }
 }
 
-@media (min-width: 1280px) {
-  .event_detail_modal {
-    max-width: 780px;
-  }
-}
-
 .event_detail_header {
   display: flex;
   align-items: center;
