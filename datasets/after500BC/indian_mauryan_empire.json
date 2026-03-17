@@ -1,5 +1,5 @@
 {
-  "description": "Dataset imported with 36 events",
+  "description": "Dataset imported with 41 events",
   "events": [
     {
       "date": "01.01.0321",
@@ -29,8 +29,8 @@
       "era": "BC",
       "latitude": 25.61,
       "longitude": 85.14,
-      "name": "Arthashastra — Indian science of statecraft",
-      "name_ru": "Артхашастра — индийская наука государственного управления",
+      "name": "Indian science of statecraft",
+      "name_ru": "Индийская наука государственного управления",
       "source": "https://en.wikipedia.org/wiki/Arthashastra",
       "tags": [
         "Indian",
@@ -101,24 +101,6 @@
     },
     {
       "date": "01.01.0302",
-      "description": "Megasthenes, the Seleucid Greek ambassador to the Maurya court, resides in Pataliputra and writes the Indica — a detailed account of Indian society, geography, and government. He describes Pataliputra as a planned city 9 miles long and 1.5 miles wide, enclosed by a timber palisade with 570 towers and 64 gates, surrounded by a 600-foot-wide moat. He notes the city has no locks on private houses — such is the prevalence of honesty — and describes a city council of 30 members divided into six committees overseeing everything from trade and manufacturing to welfare for foreigners.",
-      "description_ru": "Мегасфен, посол Селевкидов при дворе Маурьев, живёт в Паталипутре и пишет «Индику» — подробное описание индийского общества, географии и государственного устройства. Он описывает Паталипутру как спланированный город длиной 9 миль, обнесённый деревянным частоколом с 570 башнями и 64 воротами и окружённый рвом шириной 600 футов. Он отмечает, что в городе на частных домах нет замков — настолько распространена честность.",
-      "era": "BC",
-      "latitude": 25.61,
-      "longitude": 85.14,
-      "name": "Megasthenes Describes Pataliputra",
-      "name_ru": "Мегасфен описывает Паталипутру",
-      "source": "https://en.wikipedia.org/wiki/Megasthenes",
-      "tags": [
-        "Greek",
-        "Indian",
-        "History",
-        "Literature"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0302",
       "description": "Megasthenes records the size and composition of Chandragupta's military in the Indica: 600,000 infantry, 30,000 cavalry, 8,000 war-elephants, and 9,000 war-chariots — the largest standing army in the ancient world at the time. A separate war office (six committees of five members each) administers infantry, cavalry, chariots, elephants, transport, and the navy independently. Elephant corps are considered the most prestigious branch of service; war-elephants are individually trained, cared for by dedicated mahouts, and equipped with armour and sword-blades on their tusks.",
       "description_ru": "Мегасфен фиксирует численность и состав армии Чандрагупты в «Индике»: 600 000 пехотинцев, 30 000 всадников, 8 000 боевых слонов и 9 000 боевых колесниц. Отдельное военное министерство (шесть комитетов по пять человек) независимо управляет пехотой, конницей, колесницами, слонами, обозом и флотом.",
       "era": "BC",
@@ -138,19 +120,59 @@
       "type": "historic"
     },
     {
-      "date": "01.01.0300",
+      "date": "01.01.0302",
+      "description": "Megasthenes, the Seleucid Greek ambassador to the Maurya court, resides in Pataliputra and writes the Indica — a detailed account of Indian society, geography, and government. He describes Pataliputra as a planned city 9 miles long and 1.5 miles wide, enclosed by a timber palisade with 570 towers and 64 gates, surrounded by a 600-foot-wide moat. He notes the city has no locks on private houses — such is the prevalence of honesty — and describes a city council of 30 members divided into six committees overseeing everything from trade and manufacturing to welfare for foreigners.",
+      "description_ru": "Мегасфен, посол Селевкидов при дворе Маурьев, живёт в Паталипутре и пишет «Индику» — подробное описание индийского общества, географии и государственного устройства. Он описывает Паталипутру как спланированный город длиной 9 миль, обнесённый деревянным частоколом с 570 башнями и 64 воротами и окружённый рвом шириной 600 футов. Он отмечает, что в городе на частных домах нет замков — настолько распространена честность.",
       "era": "BC",
-      "name": "Jain Agamas Compiled at Pataliputra",
-      "name_ru": "Джайнские Агамы составляются в Паталипутре",
-      "description": "With the Jain community facing a severe 12-year famine in Magadha, the senior monk Sthulabhadra convenes a council at Pataliputra to compile surviving Jain scriptures — the Agamas (canonical texts). The 12 Angas (limbs) of the canon are assembled from oral traditions preserved by monks who stayed in the north. However, the southern monks who will become Digambaras reject this compilation, arguing that the original 14 Purvas (ancient texts) memorized by Bhadrabahu have been lost during the famine, making the compiled Agamas incomplete and unreliable. This disagreement over whether the canon has been faithfully preserved becomes a permanent doctrinal fault-line in Jainism — Shvetambaras accept the Agamas; Digambaras hold that no fully reliable scripture survives.",
-      "description_ru": "В условиях 12-летнего голода в Магадхе монах Стхулабхадра созывает собор в Паталипутре для составления сохранившихся джайнских писаний — Агам. Собираются 12 Анг (разделов) канона из устных традиций монахов, оставшихся на севере. Однако южные монахи (будущие дигамбары) отвергают эту компиляцию, утверждая, что оригинальные 14 Пурв, memorized Бхадрабаху, были утрачены во время голода. Разногласие о полноте канона становится постоянной доктринальной линией раскола: шветамбары принимают Агамы; дигамбары считают, что ни одного полностью достоверного писания не сохранилось.",
       "latitude": 25.61,
       "longitude": 85.14,
+      "name": "Megasthenes Describes Pataliputra",
+      "name_ru": "Мегасфен описывает Паталипутру",
+      "source": "https://en.wikipedia.org/wiki/Megasthenes",
+      "tags": [
+        "Greek",
+        "Indian",
+        "History",
+        "Literature"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0300",
+      "description": "With the Jain community facing a severe 12-year famine in Magadha, the senior monk Sthulabhadra convenes a council at Pataliputra to compile surviving Jain scriptures — the Agamas (canonical texts). The 12 Angas (limbs) of the canon are assembled from oral traditions preserved by monks who stayed in the north. However, the southern monks who will become Digambaras reject this compilation, arguing that the original 14 Purvas (ancient texts) memorized by Bhadrabahu have been lost during the famine, making the compiled Agamas incomplete and unreliable. This disagreement over whether the canon has been faithfully preserved becomes a permanent doctrinal fault-line in Jainism — Shvetambaras accept the Agamas; Digambaras hold that no fully reliable scripture survives.",
+      "description_ru": "В условиях 12-летнего голода в Магадхе монах Стхулабхадра созывает собор в Паталипутре для составления сохранившихся джайнских писаний — Агам. Собираются 12 Анг (разделов) канона из устных традиций монахов, оставшихся на севере. Южные монахи (будущие дигамбары) отвергают эту компиляцию, утверждая, что оригинальные 14 Пурв были утрачены во время голода. Разногласие о полноте канона становится постоянной доктринальной линией раскола",
+      "era": "BC",
+      "latitude": 25.61,
+      "longitude": 85.14,
+      "name": "Jain Agamas Compiled at Pataliputra",
+      "name_ru": "Джайнские Агамы в Паталипутре",
       "source": "https://en.wikipedia.org/wiki/Jain_Agamas",
       "tags": [
         "Indian",
+        "Jainism",
+        "Literature",
         "Religious",
-        "Literature"
+        "Schism"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0298",
+      "description": "When the 12-year famine strikes Magadha, the most senior Jain monk Bhadrabahu — and with him Chandragupta Maurya — leads a community of monks southward to Karnataka. The monks who remain behind in the north, led by Sthulabhadra, begin wearing white robes to survive the famine. When Bhadrabahu's followers return, they find the northern monks clothed — a violation of Mahavira's command of complete nudity as the ultimate rejection of possessiveness. This becomes the founding schism of Jainism: Digambaras ('sky-clad' — nude monks) hold that a monk who wears clothes cannot attain liberation; Shvetambaras ('white-clad') deny nudity is essential. The sects further diverge on whether women can attain liberation (Digambaras say no; Shvetambaras say yes), the biography of Mahavira, and which texts are canonical — divisions that persist in Jainism to the present day.",
+      "description_ru": "Когда 12-летний голод поражает Магадху, старейший монах Бхадрабаху и с ним Чандрагупта Маурья ведут общину на юг в Карнатаку. Монахи, оставшиеся на севере под руководством Стхулабхадры, начинают носить белые одежды. Когда последователи Бхадрабаху возвращаются, они обнаруживают северных монахов одетыми — нарушение заповеди Махавиры о полной наготе как окончательном отказе от стяжательства. Это становится первым раскол джайнизма: дигамбары («одетые небом») и шветамбары («одетые белым»). Различия — в том числе о возможности освобождения для женщин — сохраняются по сей день.",
+      "era": "BC",
+      "latitude": 12.86,
+      "longitude": 76.64,
+      "name": "Digambara-Shvetambara Split — The First Jain Schism",
+      "name_ru": "Раскол на одетых небом и одетых белым",
+      "source": "https://en.wikipedia.org/wiki/Digambara",
+      "tags": [
+        "Indian",
+        "Chandragupta 👑",
+        "Culture",
+        "Jainism",
+        "Religious",
+        "Schism"
       ],
       "type": "religious"
     },
@@ -175,23 +197,6 @@
       "type": "historic"
     },
     {
-      "date": "01.01.0298",
-      "era": "BC",
-      "name": "Digambara-Shvetambara Split — The First Jain Schism",
-      "name_ru": "Раскол на дигамбаров и шветамбаров — первый джайнский схизм",
-      "description": "When the 12-year famine strikes Magadha, the most senior Jain monk Bhadrabahu — and with him Chandragupta Maurya — leads a community of monks southward to Karnataka. The monks who remain behind in the north, led by Sthulabhadra, begin wearing white robes to survive the famine. When Bhadrabahu's followers return, they find the northern monks clothed — a violation of Mahavira's command of complete nudity as the ultimate rejection of possessiveness. This becomes the founding schism of Jainism: Digambaras ('sky-clad' — nude monks) hold that a monk who wears clothes cannot attain liberation; Shvetambaras ('white-clad') deny nudity is essential. The sects further diverge on whether women can attain liberation (Digambaras say no; Shvetambaras say yes), the biography of Mahavira, and which texts are canonical — divisions that persist in Jainism to the present day.",
-      "description_ru": "Когда 12-летний голод поражает Магадху, старейший монах Бхадрабаху и вместе с ним Чандрагупта Маурья ведут общину на юг в Карнатаку. Монахи, оставшиеся на севере под руководством Стхулабхадры, начинают носить белые одежды. Когда последователи Бхадрабаху возвращаются, они обнаруживают северных монахов одетыми — нарушение заповеди Махавиры о полной наготе как окончательном отказе от стяжательства. Это становится первым раскол джайнизма: дигамбары («одетые небом») и шветамбары («одетые белым»). Различия — в том числе о возможности освобождения для женщин — сохраняются по сей день.",
-      "latitude": 12.86,
-      "longitude": 76.64,
-      "source": "https://en.wikipedia.org/wiki/Digambara",
-      "tags": [
-        "Indian",
-        "Religious",
-        "Culture"
-      ],
-      "type": "religious"
-    },
-    {
       "date": "01.01.0297",
       "description": "Bindusara ('Slayer of Enemies') succeeds his father and conducts military campaigns into the Deccan Plateau, extending Maurya control as far south as the Tungabhadra River in modern Karnataka. He suppresses a revolt in Taxila by sending prince Ashoka as viceroy. He also receives the Greek philosopher Deimachus as Seleucid ambassador at his court. Only the southernmost kingdoms of the Cholas, Pandyas, and the Kalinga coast remain outside the empire's reach.",
       "description_ru": "Биндусара («Убийца врагов») наследует отцу и ведёт военные походы в Декан, расширяя контроль Маурьев до реки Тунгабхадра в современной Карнатаке. Он подавляет восстание в Таксиле, направив принца Ашоку наместником. За пределами империи остаются лишь южные царства Чола, Пандья и побережье Калинги.",
@@ -209,24 +214,6 @@
         "Mauryan"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0285",
-      "era": "BC",
-      "name": "Bhagavata Cult Spreads — Early Vaishnava Devotion",
-      "name_ru": "Распространение культа Бхагаватов — ранняя вайшнавская преданность",
-      "description": "The Bhagavata (Vaishnava) movement centred on Vasudeva-Krishna worship spreads through the Mathura region and the Deccan during the Mauryan period. Greek ambassador Megasthenes mentions the cult of Heracles (equated with Krishna/Vasudeva) as popular in the regions around Mathura. Circular relic-shrine structures (chaityas) dedicated to Vasudeva appear — forerunners of the Hindu temple. Unlike the Vedic sacrifice which required priestly expertise and expensive animals, Bhagavata worship offers direct access to god through personal devotion (bhakti), prayer, and hymn-singing. Its appeal cuts across caste: merchants, women, and even foreigners can participate fully. This democratisation of Hindu worship — accessible without priests or Sanskrit — lays the foundation for the bhakti movements that will sweep all of India over the next two millennia.",
-      "description_ru": "Движение Бхагаватов (вайшнавов) распространяется через Матхуру и Декан в маурийский период. Греческий посол Мегасфен упоминает культ Геракла (отождествляемого с Кришной/Васудевой) как популярный в районе Матхуры. Появляются круглые святилища, посвящённые Васудеве — предшественники индуистского храма. В отличие от ведической жертвы, требующей жреческих знаний и дорогих животных, поклонение Бхагавата предлагает прямой доступ к богу через личную преданность (бхакти). Это демократизирует индуистское поклонение — участвовать может каждый, независимо от касты.",
-      "latitude": 27.5,
-      "longitude": 77.67,
-      "source": "https://en.wikipedia.org/wiki/Bhagavatism",
-      "tags": [
-        "Indian",
-        "Religious",
-        "Culture",
-        "Architecture"
-      ],
-      "type": "religious"
     },
     {
       "date": "01.01.0280",
@@ -328,24 +315,6 @@
       "type": "religious"
     },
     {
-      "date": "01.01.0260",
-      "era": "BC",
-      "name": "Brahminic Schools Respond to Buddhist Patronage",
-      "name_ru": "Брахманические школы отвечают на буддийское покровительство",
-      "description": "As Ashoka's patronage floods resources to Buddhist monasteries and missionaries, the Brahminic intellectual tradition sharpens its philosophical tools in response. The Mimamsa school — dedicated to the correct interpretation and defence of Vedic ritual — develops powerful theories of language and meaning, arguing the Vedas are eternal and self-validating, requiring no divine author. Proto-Vedanta thinkers begin systematizing what will become the Brahmasutra: a philosophy asserting that Brahman (the Absolute) is the ground of all being, that the individual self (Atman) is ultimately identical with Brahman, and that the world's apparent multiplicity is a product of ignorance (avidya). This intellectual counter-movement eventually produces Adi Shankaracharya's Advaita Vedanta — which in the 8th century CE will reassert Hindu philosophy as India's dominant intellectual tradition.",
-      "description_ru": "По мере того как покровительство Ашоки наполняет ресурсами буддийские монастыри, брахманическая интеллектуальная традиция оттачивает свои философские инструменты. Школа Мимансы разрабатывает теории языка и значения, утверждая вечность и самоудостоверяемость Вед. Прото-ведантийские мыслители систематизируют то, что станет Брахмасутрой: философией тождества Атмана и Брахмана. Это интеллектуальное контрдвижение в конечном счёте порождает Адвайта-веданту Ади Шанкарачарьи, которая в VIII веке н. э. восстановит индуистскую философию как господствующую интеллектуальную традицию Индии.",
-      "latitude": 25.61,
-      "longitude": 85.14,
-      "source": "https://en.wikipedia.org/wiki/Mimamsa",
-      "tags": [
-        "Indian",
-        "Religious",
-        "Philosophy",
-        "Literature"
-      ],
-      "type": "religious"
-    },
-    {
       "date": "01.01.0258",
       "description": "Ashoka undertakes a grand pilgrimage (dhamma-yatra) to the key Buddhist holy sites — Bodh Gaya (the place of Enlightenment), Sarnath (First Sermon), Lumbini (birthplace of the Buddha), and Kushinagar (Parinirvana). At Lumbini he erects a pillar with the inscription: 'Here the Blessed One was born' and exempts the village from taxes, reducing its land-rent by one-eighth. His pilgrimage is the first documented act of royal Buddhist site-preservation in history.",
       "description_ru": "Ашока совершает великое паломничество (дхамма-ятру) к ключевым буддийским святыням — Бодх-Гае (место Просветления), Сарнатху (Первая проповедь), Лумбини (место рождения Будды) и Кушинагару (Паринирвана). В Лумбини он воздвигает колонну с надписью: «Здесь родился Благословенный» и освобождает деревню от налогов, снижая земельную ренту на одну восьмую.",
@@ -388,8 +357,8 @@
       "era": "BC",
       "latitude": 28.55,
       "longitude": 77.17,
-      "name": "Ashoka's Rock Edicts Proclaimed Across the Empire",
-      "name_ru": "Наскальные указы Ашоки по всей империи",
+      "name": "Rock edicts of Ashoka in the Mauryan Empire",
+      "name_ru": "Наскальные указы Ашоки в империи Маурьев",
       "source": "https://en.wikipedia.org/wiki/Edicts_of_Ashoka",
       "tags": [
         "Indian",
@@ -501,19 +470,20 @@
     },
     {
       "date": "01.01.0250",
+      "description": "Mathura emerges as the most important centre of Jainism in northern India during the Mauryan period, with a thriving community of monks, nuns, and lay devotees. The earliest Jain sculptures appear here — nude standing figures in the kayotsarga (body-abandonment) posture representing the Tirthankaras, distinguished by perfect bilateral symmetry, absence of ornament, and an expression of absolute equanimity. Where Buddhist art humanises and enriches divine imagery, Jain art emphasises total renunciation — the Tirthankara is marked only by a distinguishing symbol (lanchhan) at his feet.",
+      "description_ru": "Матхура становится важнейшим центром джайнизма. Здесь появляются первые джайнские скульптуры — обнажённые стоящие фигуры в позе кайотсарги, изображающие тиртханкаров: с характерной двусторонней симметрией, отсутствием украшений и выражением абсолютного равновесия. В отличие от буддийского искусства, джайнское подчёркивает полное отречение.",
       "era": "BC",
-      "name": "Jainism at Mathura — The Sculptural Tradition Begins",
-      "name_ru": "Джайнизм в Матхуре — начало скульптурной традиции",
-      "description": "Mathura emerges as the most important centre of Jainism in northern India during the Mauryan period, with a thriving community of monks, nuns, and lay devotees. The earliest Jain sculptures appear here — nude standing figures in the kayotsarga (body-abandonment) posture representing the Tirthankaras, distinguished by perfect bilateral symmetry, absence of ornament, and an expression of absolute equanimity. Where Buddhist art humanises and enriches divine imagery, Jain art emphasises total renunciation — the Tirthankara is marked only by a distinguishing symbol (lanchhan) at his feet. These Mathura prototypes establish the iconographic vocabulary for all subsequent Jain sculpture, culminating two thousand years later in the 18-metre Gomateshvara monolith at Shravanabelagola (983 CE) — the world's largest free-standing stone sculpture.",
-      "description_ru": "Матхура становится важнейшим центром джайнизма в Северной Индии в маурийский период. Здесь появляются первые джайнские скульптуры — обнажённые стоящие фигуры в позе кайотсарги, изображающие тиртханкаров: с характерной двусторонней симметрией, отсутствием украшений и выражением абсолютного равновесия. В отличие от буддийского искусства, джайнское подчёркивает полное отречение. Эти матхурские образцы закладывают иконографический словарь всей последующей джайнской скульптуры, достигающей кульминации в 18-метровом монолите Гоматешвары в Шраванабелаголе (983 г. н. э.) — крупнейшей отдельно стоящей каменной скульптуре мира.",
       "latitude": 27.5,
       "longitude": 77.67,
-      "source": "https://en.wikipedia.org/wiki/Jainism_in_Mathura",
+      "name": "Jainism at Mathura",
+      "name_ru": "Джайнизм в Матхуре",
+      "source": "https://en.wikipedia.org/wiki/Art_of_Mathura",
       "tags": [
         "Indian",
+        "Culture",
+        "Jainism",
         "Religious",
-        "Architecture",
-        "Culture"
+        "Sculpture"
       ],
       "type": "cultural"
     },
@@ -713,6 +683,24 @@
     },
     {
       "date": "01.01.0200",
+      "description": "The Brahmasutra (Vedantasutra) — attributed to the sage Badarayana — is composed in its early form, synthesizing the diverse and sometimes contradictory teachings of the Upanishads into a systematic philosophical framework. Its 555 terse aphorisms cover: the nature of Brahman (the Absolute), the relationship between individual souls and Brahman, the nature of the world, and the path to liberation. The text is deliberately brief — each sutra requires commentary to make sense — which is precisely why it becomes the foundational text of Vedanta: all subsequent Hindu philosophical traditions must write a commentary on it to establish their legitimacy. The three most influential commentaries — by Shankaracharya (non-dual Advaita), Ramanujacharya (qualified non-dual Vishishtadvaita), and Madhvacharya (dual Dvaita) — define the three great streams of Hindu philosophy that continue to the present day.",
+      "description_ru": "Брахмасутра (Ведантасутра), приписываемая мудрецу Бадараяне, синтезирует разнообразные учения Упанишад в систематическую философскую структуру. 555 кратких сутр охватывают природу Брахмана, отношения индивидуальных душ с Брахманом и путь к освобождению. Текст намеренно краток — каждая сутра требует комментария — что делает его фундаментальным текстом Веданты: все последующие индуистские философские традиции должны написать к нему комментарий. Три наиболее влиятельных комментария — Шанкарачарьи (Адвайта), Рамануджачарьи (Вишиштадвайта) и Мадхвачарьи (Двайта) — определяют три великих потока индуистской философии, существующих по сей день.",
+      "era": "BC",
+      "latitude": 25.61,
+      "longitude": 85.14,
+      "name": "Badarayana and the Brahmasutra — Vedanta Systematized",
+      "name_ru": "Бадараяна и Брахмасутра — систематизация Веданты",
+      "source": "https://en.wikipedia.org/wiki/Brahma_Sutras",
+      "tags": [
+        "Indian",
+        "Literature",
+        "Philosophy",
+        "Religious"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0200",
       "description": "The Greek Bactrian king Demetrius I invades northwestern India and captures Taxila and parts of the Punjab as Maurya power wanes. A series of Indo-Greek kingdoms establish control over Gandhara and the Indus Valley — producing a remarkable cultural fusion of Hellenistic and Indian artistic traditions. Indo-Greek coinage introduces realistic royal portraiture to Indian numismatics, and Gandharan Buddhist sculpture begins blending Greek figurative style with Indian religious iconography — a tradition that will shape all subsequent depictions of the Buddha.",
       "description_ru": "Греко-бактрийский царь Деметрий I вторгается в северо-западную Индию и захватывает Таксилу и часть Пенджаба по мере ослабления власти Маурьев. Ряд индо-греческих царств устанавливает контроль над Гандхарой и долиной Инда, порождая замечательный синтез эллинистической и индийской художественных традиций. Гандхарская буддийская скульптура соединяет греческий фигуративный стиль с индийской религиозной иконографией.",
       "era": "BC",
@@ -729,24 +717,6 @@
         "Greco-Bactria"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0200",
-      "era": "BC",
-      "name": "Badarayana and the Brahmasutra — Vedanta Systematized",
-      "name_ru": "Бадараяна и Брахмасутра — систематизация Веданты",
-      "description": "The Brahmasutra (Vedantasutra) — attributed to the sage Badarayana — is composed in its early form, synthesizing the diverse and sometimes contradictory teachings of the Upanishads into a systematic philosophical framework. Its 555 terse aphorisms cover: the nature of Brahman (the Absolute), the relationship between individual souls and Brahman, the nature of the world, and the path to liberation. The text is deliberately brief — each sutra requires commentary to make sense — which is precisely why it becomes the foundational text of Vedanta: all subsequent Hindu philosophical traditions must write a commentary on it to establish their legitimacy. The three most influential commentaries — by Shankaracharya (non-dual Advaita), Ramanujacharya (qualified non-dual Vishishtadvaita), and Madhvacharya (dual Dvaita) — define the three great streams of Hindu philosophy that continue to the present day.",
-      "description_ru": "Брахмасутра (Ведантасутра), приписываемая мудрецу Бадараяне, синтезирует разнообразные учения Упанишад в систематическую философскую структуру. 555 кратких сутр охватывают природу Брахмана, отношения индивидуальных душ с Брахманом и путь к освобождению. Текст намеренно краток — каждая сутра требует комментария — что делает его фундаментальным текстом Веданты: все последующие индуистские философские традиции должны написать к нему комментарий. Три наиболее влиятельных комментария — Шанкарачарьи (Адвайта), Рамануджачарьи (Вишиштадвайта) и Мадхвачарьи (Двайта) — определяют три великих потока индуистской философии, существующих по сей день.",
-      "latitude": 25.61,
-      "longitude": 85.14,
-      "source": "https://en.wikipedia.org/wiki/Brahma_Sutras",
-      "tags": [
-        "Indian",
-        "Religious",
-        "Philosophy",
-        "Literature"
-      ],
-      "type": "religious"
     },
     {
       "date": "01.01.0187",
