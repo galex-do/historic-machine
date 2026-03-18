@@ -1,855 +1,759 @@
 {
-  "description": "Ancient Vietnam and Cambodia from the earliest stone tools through the peak of Đông Sơn bronze civilization and the Hùng Kings of Văn Lang — covering Hoabinhian hunter-gatherers, Neolithic coastal cultures, the Phùng Nguyên–Gò Mun Bronze Age sequence, Sa Huỳnh jar-burial culture, and the legendary foundation myths of the Việt people.",
+  "description": "Dataset imported with 48 events",
   "events": [
     {
       "date": "01.01.9900",
-      "era": "BC",
-      "name": "Núi Đọ Site — Earliest Hominin Presence in Vietnam",
-      "name_ru": "Стоянка Нуй До — первые гоминины во Вьетнаме",
       "description": "The Núi Đọ quartzite hill in Thanh Hóa province yields chopping tools and flake tools in an Acheulean-adjacent tradition, placing hominin activity in mainland Southeast Asia at roughly half a million years before the present. The tools are surface finds associated with Lower Paleolithic river gravels of the Mã River system. No skeletal remains of the toolmakers have been recovered, but the artefact assemblage is consistent with Homo erectus activity documented across the broader East and Southeast Asian region in this period.",
       "description_ru": "Кремнёвый холм Нуй До в провинции Тхань Хоа даёт чопперы и отщепы, близкие к ашельской традиции, указывая на присутствие гоминин в материковой Юго-Восточной Азии около полумиллиона лет назад. Орудия обнаружены в поверхностных отложениях, связанных с нижнепалеолитическими речными галечниками системы реки Ма. Костных останков изготовителей орудий не найдено.",
+      "era": "BC",
       "latitude": 19.75,
       "longitude": 105.72,
+      "name": "Núi Đọ Site — Earliest Hominin Presence in Vietnam",
+      "name_ru": "Стоянка Нуй До — первые гоминины во Вьетнаме",
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
       "tags": [
-        "Vietnamese",
         "Paleolithic",
-        "Archaeology"
+        "Vietnamese"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.9500",
-      "era": "BC",
-      "name": "Sơn Vi Culture — Upper Paleolithic Hunters",
-      "name_ru": "Культура Шон Ви — охотники верхнего палеолита",
       "description": "Named for the type-site in Phú Thọ province, the Sơn Vi culture represents Vietnam's best-documented Upper Paleolithic tradition, spanning roughly 23,000–12,000 BP. Communities occupy cave shelters and open-air sites in the limestone karst of the northern uplands and Red River valley, subsisting on hunting, fishing, and gathering. The characteristic toolkit consists of pebble choppers and side-scrapers with little retouching — a technology simultaneously present across a broad zone from northern Vietnam into southern China. Sơn Vi sites are the direct predecessors of the Hoabinhian tradition.",
       "description_ru": "Названная по опорному памятнику в провинции Фу Тхо, культура Шон Ви представляет наиболее документированную верхнепалеолитическую традицию Вьетнама, охватывающую примерно 23 000–12 000 л. н. Общины занимают пещерные убежища и открытые стоянки в карстовом ландшафте. Характерный инвентарь состоит из галечных чопперов и боковых скрёбел с минимальной ретушью.",
+      "era": "BC",
       "latitude": 21.35,
       "longitude": 105.17,
+      "name": "Sơn Vi Culture in Vietnam",
+      "name_ru": "Культура Шон Ви во Вьетнаме",
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
       "tags": [
-        "Vietnamese",
+        "Culture",
         "Paleolithic",
-        "Culture"
+        "Vietnamese"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.9000",
+      "description": "The Hoabinhian — is mainland Southeast Asia's defining Mesolithic/early Neolithic tradition, found across Vietnam, Laos, Thailand, Myanmar, and southern China. Communities are semi-nomadic hunter-gatherers living in limestone caves and rock-shelters, producing unifacially flaked pebble tools; some later sites add cord-marked pottery and plant-processing evidence suggesting early experimentation with cultivation. Phytolith and starch evidence from Hoabinhian sites points to processing of taro, yam, and possibly rice — placing this culture in the earliest plausible zone of Southeast Asian plant domestication.",
+      "description_ru": "Хоабинь — определяющая мезолитическая/раннеолитическая традиция материковой Юго-Восточной Азии, обнаруженная во Вьетнаме, Лаосе, Таиланде, Мьянме и Южном Китае. Полукочевые охотники-собиратели обитают в известняковых пещерах. Фитолитные и крахмальные данные указывают на обработку таро, ямса и, возможно, риса.",
       "era": "BC",
-      "name": "Hoabinhian Culture",
-      "name_ru": "Культура Хоабинь",
-      "description": "The Hoabinhian — named by Madeleine Colani in 1927 after cave sites in Hòa Bình province — is mainland Southeast Asia's defining Mesolithic/early Neolithic tradition, found across Vietnam, Laos, Thailand, Myanmar, and southern China. Communities are semi-nomadic hunter-gatherers living in limestone caves and rock-shelters, producing unifacially flaked pebble tools; some later sites add cord-marked pottery and plant-processing evidence suggesting early experimentation with cultivation. Phytolith and starch evidence from Hoabinhian sites points to processing of taro, yam, and possibly rice — placing this culture in the earliest plausible zone of Southeast Asian plant domestication.",
-      "description_ru": "Хоабинь — названный Мадлен Колани в 1927 году по пещерным памятникам провинции Хоабинь — определяющая мезолитическая/раннеолитическая традиция материковой Юго-Восточной Азии, обнаруженная во Вьетнаме, Лаосе, Таиланде, Мьянме и Южном Китае. Полукочевые охотники-собиратели обитают в известняковых пещерах. Фитолитные и крахмальные данные указывают на обработку таро, ямса и, возможно, риса.",
       "latitude": 20.82,
       "longitude": 105.34,
+      "name": "Hoabinhian Culture",
+      "name_ru": "Культура Хоабинь в ЮВА",
       "source": "https://en.wikipedia.org/wiki/Hoabinhian",
       "tags": [
-        "Vietnamese",
-        "Hoabinhian",
+        "Culture",
         "Neolithic",
-        "Culture"
+        "Vietnamese"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.8000",
-      "era": "BC",
-      "name": "Bắc Sơn Culture — Polished Stone and Early Pottery",
-      "name_ru": "Культура Бак Шон — шлифованный камень и ранняя керамика",
       "description": "The Bắc Sơn culture, centred in the karst mountains of Lạng Sơn province, is distinguished by the addition of edge-polished stone tools and cord-marked pottery to the Hoabinhian toolkit — developments that mark it as a transition toward a settled Neolithic way of life. Shell middens at cave sites reveal sustained exploitation of freshwater molluscs alongside hunting. The appearance of polished axe-adzes usable in forest clearance implies at least opportunistic cultivation. Bắc Sơn is one of the earliest contexts in Southeast Asia for the association of stone polishing and pottery.",
       "description_ru": "Культура Бак Шон, сосредоточенная в карстовых горах провинции Лангшон, отличается добавлением шлифованных по краю каменных орудий и шнуровой керамики к инвентарю хоабиньской традиции. Раковинные кучи в пещерных памятниках свидетельствуют об устойчивой эксплуатации пресноводных моллюсков. Появление полированных тесловидных топоров допускает по меньшей мере оппортунистическое земледелие.",
+      "era": "BC",
       "latitude": 21.83,
       "longitude": 106.55,
+      "name": "Bắc Sơn Culture (Nothern Vietnam)",
+      "name_ru": "Культура Бак Шон (Северный Вьетнам)",
       "source": "https://en.wikipedia.org/wiki/Hoabinhian",
       "tags": [
-        "Vietnamese",
-        "Hoabinhian",
+        "Culture",
+        "Maritime",
         "Neolithic",
-        "Culture"
+        "Hoabinhian",
+        "Vietnamese"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.6000",
-      "era": "BC",
-      "name": "Laang Spean Cave — Cambodia's Neolithic",
-      "name_ru": "Пещера Лаанг Спеан — неолит Камбоджи",
       "description": "Laang Spean ('Bridge Cave') in Battambang province contains Cambodia's earliest Neolithic occupation, with cord-impressed pottery and polished stone tools dated to roughly 6,000 BC. Excavated by Roland Mourer in the 1960s and re-excavated by a Franco-Khmer team from 2009 onward, the site shows continuous occupation from the Neolithic into the Metal Ages. Botanical remains indicate subsistence based on hunting, gathering, and fishing in the Sangker River environment, with no confirmed cultivation at the earliest levels. Laang Spean is the anchor point for understanding Cambodia's prehistoric sequence before the Bronze Age.",
-      "description_ru": "Пещера Лаанг Спеан («Мостовая пещера») в провинции Баттамбанг содержит древнейшую неолитическую оккупацию Камбоджи с шнуровой керамикой и шлифованными каменными орудиями, датированными около 6000 г. до н. э. Раскопанная Роланом Морером в 1960-х и повторно исследованная франко-кхмерской экспедицией с 2009 года, стоянка демонстрирует непрерывное заселение от неолита до эпохи металлов.",
-      "latitude": 13.05,
-      "longitude": 103.22,
+      "description_ru": "Пещера Лаанг Спеан («Мостовая пещера») в провинции Баттамбанг содержит древнейшую неолитический памятник Камбоджи с шнуровой керамикой и шлифованными каменными орудиями, датированными около 6000 г. до н. э. Раскопанная Роланом Морером в 1960-х и повторно исследованная франко-кхмерской экспедицией с 2009 года, стоянка демонстрирует непрерывное заселение от неолита до эпохи металлов.",
+      "era": "BC",
+      "latitude": 12.84799629,
+      "longitude": 102.91867733,
+      "name": "Laang Spean Cave — Cambodia's Neolithic",
+      "name_ru": "Пещера Лаанг Спеан в Камбодже",
       "source": "https://en.wikipedia.org/wiki/Laang_Spean",
       "tags": [
-        "Khmer",
         "Neolithic",
-        "Archaeology",
-        "Cambodia"
+        "Cambodia",
+        "Khmer"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.4500",
-      "era": "BC",
-      "name": "Đa Bút Culture — Coastal Neolithic of the Mã River",
-      "name_ru": "Культура Да Бут — прибрежный неолит реки Ма",
       "description": "The Đa Bút culture occupies the estuary and lower valley of the Mã River in Thanh Hóa province, producing distinctive pottery, polished stone adzes, and an economy centred on fishing and shellfish collection rather than agriculture. Sites are shell middens of substantial depth, indicating semi-permanent occupation over many generations. Đa Bút burials — some with red ochre, some accompanied by pottery and pig jaw offerings — are among the earliest structured funerary practices in Vietnam. The culture forms a regional coastal Neolithic parallel to the Hoabinhian inland tradition.",
       "description_ru": "Культура Да Бут занимает устье и нижнее течение реки Ма в провинции Тхань Хоа, производя характерную керамику, полированные каменные тёсла и экономику, основанную на рыболовстве и сборе ракушек. Стоянки представляют собой раковинные кучи значительной глубины, указывая на полупостоянное заселение. Погребения Да Бут — с красной охрой, керамикой и нижними челюстями свиней — входят в число древнейших структурированных погребальных практик во Вьетнаме.",
+      "era": "BC",
       "latitude": 19.97,
       "longitude": 105.68,
+      "name": "Đa Bút Culture in Vietnam",
+      "name_ru": "Культура Да Бут во Вьетнаме",
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
       "tags": [
-        "Vietnamese",
+        "Maritime",
         "Neolithic",
         "Settlement",
-        "Maritime"
+        "Vietnamese"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.4000",
-      "era": "BC",
-      "name": "Rice Cultivation Spreads to Northern Vietnam",
-      "name_ru": "Рисосеяние достигает Северного Вьетнама",
       "description": "Carbonised rice grains and phytoliths recovered from sites in the Red River delta and surrounding uplands confirm the arrival of domesticated rice (Oryza sativa) in northern Vietnam by the fourth millennium BC, transmitted southward along river corridors from the Yangtze River domestication zone. Wet-rice cultivation on the seasonally flooded alluvial plains of the Hong (Red) River transforms subsistence strategy: paddy fields yield far more calories per hectare than any foraging strategy, sustaining larger, more sedentary populations. Rice simultaneously acquires ritual significance — offerings of cooked rice appear in burials — that it retains throughout Vietnamese religious life.",
       "description_ru": "Карбонизированные зёрна риса и фитолиты, извлечённые с памятников дельты Красной реки, подтверждают появление культурного риса (Oryza sativa) в Северном Вьетнаме к IV тысячелетию до н. э. Возделывание риса на затопляемых аллювиальных равнинах Красной реки радикально повышает калорийность хозяйства, обеспечивая более крупное, оседлое население. Рис одновременно приобретает ритуальное значение, сохраняющееся на протяжении всей вьетнамской религиозной жизни.",
+      "era": "BC",
       "latitude": 21.03,
       "longitude": 105.83,
+      "name": "Rice Cultivation Spreads to Northern Vietnam",
+      "name_ru": "Рисосеяние в Северном Вьетнаме",
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
       "tags": [
-        "Vietnamese",
         "Agriculture",
         "Culture",
-        "Neolithic"
+        "Neolithic",
+        "Rice",
+        "Vietnamese"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.3500",
-      "era": "BC",
-      "name": "Animism and Spirit Cults of mainland Southeast Asia",
-      "name_ru": "Анимизм и культы духов материковой ЮВА",
       "description": "Burial deposits across Neolithic Vietnam and Cambodia — ochre staining, deliberate placement of stone tools and food offerings with the dead, secondary bone processing — confirm an animist religious system in which spirits of the dead remain active in the world of the living and must be appropriately propitiated. Mountain peaks, rivers, large trees, and notable stones are inhabited by spirit presences (thần) requiring seasonal offerings. This animist substrate, elaborated over millennia, remains the deepest layer of Vietnamese and Khmer religious life beneath the later additions of Hinduism, Buddhism, and Confucianism.",
       "description_ru": "Погребальные комплексы по всему неолитическому Вьетнаму и Камбодже — охра, намеренное помещение каменных орудий и пищевых приношений с умершими, вторичная обработка костей — подтверждают анимистическую религиозную систему, в которой духи мёртвых остаются активными среди живых. Горные вершины, реки, крупные деревья и примечательные камни населены духами (thần), требующими сезонных подношений. Этот анимистический субстрат остаётся глубочайшим пластом вьетнамской и кхмерской религиозной жизни.",
+      "era": "BC",
       "latitude": 21.03,
       "longitude": 105.83,
+      "name": "Animism and Spirit Cults of mainland Southeast Asia",
+      "name_ru": "Анимизм и культы духов материковой ЮВА",
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
       "tags": [
-        "Vietnamese",
-        "Khmer",
+        "Animism",
+        "Culture",
         "Religious",
-        "Culture"
+        "Khmer",
+        "Vietnamese"
       ],
       "type": "religious"
     },
     {
       "date": "01.01.3000",
-      "era": "BC",
-      "name": "Bàu Tró Culture — Central Vietnamese Neolithic",
-      "name_ru": "Культура Бау Тро — неолит Центрального Вьетнама",
       "description": "The Bàu Tró culture occupies coastal lagoon and estuarine environments of central Vietnam (modern Quảng Bình province), producing distinctive incised and impressed pottery with geometric decoration. It represents the southward extension of Neolithic culture from the northern heartland into the central coastal zone, adapting to a different environmental niche of sandy coastal barrier islands and shallow lagoons. Fishing and shellfish collection remain primary, but polished stone axes capable of forest clearance are present. Bàu Tró is a key link in the chain of coastal Neolithic cultures that will eventually give rise to the Sa Huỳnh tradition further south.",
       "description_ru": "Культура Бау Тро занимает прибрежные лагуны и эстуарные среды Центрального Вьетнама (провинция Куангбинь), производя характерную керамику с геометрическим инцизным и накольчатым декором. Она представляет распространение неолита с северного ядра на юг. Рыболовство и сбор моллюсков остаются главными занятиями, но присутствуют полированные каменные топоры. Бау Тро — ключевое звено прибрежных неолитических культур, породивших позднее традицию Са Хуинь.",
+      "era": "BC",
       "latitude": 17.48,
       "longitude": 106.62,
+      "name": "Bàu Tró Culture in Vietnam",
+      "name_ru": "Культура Бау Тро во Вьетнаме",
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
       "tags": [
-        "Vietnamese",
-        "Neolithic",
+        "Culture",
         "Maritime",
-        "Culture"
+        "Neolithic",
+        "Vietnamese"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.3000",
-      "era": "BC",
-      "name": "Samrong Sen — Early Bronze Age Cambodia",
-      "name_ru": "Самронг Сен — ранний бронзовый век Камбоджи",
       "description": "Samrong Sen on the Chinit River (Kampong Thom province) — excavated by Étienne Aymonier and then by Henri Mansuy in the early 20th century — is Cambodia's most important Bronze Age site, occupied from roughly 1,500–500 BC at its peak but with earlier Neolithic layers. Finds include bronze axes, spearheads, fishhooks, anklets, and cattle bones alongside carbonised rice, confirming an agricultural community with cattle herding and well-developed metallurgy. Samrong Sen's bronze assemblage is similar to contemporaneous sites in northeastern Thailand (Ban Chiang tradition), pointing to a broadly shared Southeast Asian Bronze Age metallurgical network across the Mekong basin.",
-      "description_ru": "Самронг Сен на реке Чинит (провинция Кампонгтхом) — важнейший бронзовый памятник Камбоджи. Находки включают бронзовые топоры, наконечники копий, рыболовные крючки, браслеты и кости крупного рогатого скота вместе с карбонизированным рисом, подтверждая земледельческую общину с развитой металлургией. Бронзовый ансамбль Самронг Сен сходен с синхронными памятниками Северо-Восточного Таиланда, указывая на общую мезоамериканскую бронзовую сеть бассейна Меконга.",
-      "latitude": 12.16,
-      "longitude": 104.83,
+      "description_ru": "Самронг Сен — важнейший бронзовый памятник Камбоджи. Находки включают бронзовые топоры, наконечники копий, рыболовные крючки, браслеты и кости крупного рогатого скота вместе с карбонизированным рисом, подтверждая земледельческую общину с развитой металлургией. Бронзовый ансамбль Самронг Сен сходен с синхронными памятниками Северо-Восточного Таиланда, указывая на единую торговую сеть бассейна Меконга.",
+      "era": "BC",
+      "latitude": 12.2054757,
+      "longitude": 104.79721069,
+      "name": "Early Bronze Age in Cambodia",
+      "name_ru": "Бронзовый век Камбоджи",
       "source": "https://en.wikipedia.org/wiki/Samrong_Sen",
       "tags": [
-        "Khmer",
         "Bronze Age",
+        "Settlement",
         "Cambodia",
-        "Archaeology"
+        "Khmer"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.2879",
-      "era": "BC",
-      "name": "Lạc Long Quân and Âu Cơ — Vietnamese Creation Myth",
-      "name_ru": "Лак Лонг Куан и Ау Ко — вьетнамский миф о сотворении",
       "description": "Vietnamese foundational mythology records that Lạc Long Quân ('Dragon Lord of the Lạc'), a sea-dragon king descended from the Dragon King of the Seas, married Âu Cơ, a mountain immortal descended from the divine farmer Shennong. Âu Cơ bore a sac of one hundred eggs, from which emerged one hundred sons — the ancestors of the Việt (Bách Việt) peoples. Lạc Long Quân took fifty sons to the sea coast and Âu Cơ took fifty to the mountains, establishing the two ecological poles of Vietnamese civilisation. The eldest son at the coast became the first Hùng king (Hùng Vương) and founded the kingdom of Văn Lang. Scholars read the myth as encoding the union of coastal/lowland peoples (dragon/sea) with highland/mountain peoples (bird/fairy) that underlies Vietnamese ethnic identity.",
       "description_ru": "Вьетнамская мифология сообщает, что Лак Лонг Куан («Дракон-владыка Лак»), морской дракон-царь, женился на Ау Ко, горной бессмертной. Ау Ко снесла мешок из ста яиц, из которых вышли сто сыновей — предки вьетского народа. Пятьдесят сыновей ушли к морскому побережью, пятьдесят — в горы. Старший сын у побережья стал первым ванном Хунг и основал государство Ван Ланг. Миф кодирует союз прибрежных низинных (дракон/море) и горных народов (птица/фея).",
+      "era": "BC",
       "latitude": 20.55,
       "longitude": 106.93,
+      "name": "Lạc Long Quân and Âu Cơ — Vietnamese Creation Myth",
+      "name_ru": "Вьетнамский миф о сотворении",
       "source": "https://en.wikipedia.org/wiki/Lac_Long_Quan",
       "tags": [
-        "Vietnamese",
         "Legend",
         "Religious",
+        "Vietnamese",
         "Văn Lang"
       ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.2800",
-      "era": "BC",
-      "name": "Âu Cơ and the Hundred Sons — Ethnic Origin of the Việt",
-      "name_ru": "Ау Ко и сто сыновей — этническое происхождение вьетов",
-      "description": "The myth of Âu Cơ (Vietnamese: Âu Cơ) elaborates the Lạc Long Quân narrative with a specifically matrilineal origin story: it is the mother who carries the hundred eggs to a mountain fastness (Mount Tản Viên / Ba Vì in Vietnamese tradition), and from her line descend the highland peoples who will resist Chinese assimilation for millennia. The Âu Cơ narrative implicitly contrasts with the Lạc Long Quân narrative: sea-dragon (male, lowland, agricultural) and mountain-fairy (female, highland, forest) together produce a people who are neither purely one nor the other — a cultural self-definition that encapsulates the geographic and ecological diversity of the Vietnamese world.",
-      "description_ru": "Миф об Ау Ко разрабатывает нарратив Лак Лонг Куана специфически матрилинейной историей происхождения: именно мать несёт сто яиц в горное убежище (гора Тан Виен / Ба Ви в традиции), и от её линии происходят горные народы, тысячелетиями сопротивляющиеся китайской ассимиляции. Нарратив Ау Ко имплицитно противопоставляет морского дракона (мужское, низинное) горной фее (женское, горное), порождая народ, не принадлежащий ни к одному полюсу.",
-      "latitude": 21.07,
-      "longitude": 105.36,
-      "source": "https://en.wikipedia.org/wiki/Au_Co",
-      "tags": [
-        "Vietnamese",
-        "Legend",
-        "Religious",
-        "Culture"
-      ],
-      "type": "historic"
+      "type": "religious"
     },
     {
       "date": "01.01.2000",
-      "era": "BC",
-      "name": "Phùng Nguyên Culture — Bronze Age Begins in Vietnam",
-      "name_ru": "Культура Фунг Нгуен — начало бронзового века во Вьетнаме",
       "description": "The Phùng Nguyên culture (named for a type-site in Phú Thọ province, Red River valley) marks the beginning of the Bronze Age in northern Vietnam. Settlement shifts from caves to open-air villages on low hills and river terraces in the Red River and its tributaries; dwellings are rectangular, built on timber posts. Pottery is fine-grained and elaborately decorated with incised geometric patterns. Polished stone tools are highly refined. Small cast-bronze objects — beads, rings, small axes — appear in the latest Phùng Nguyên layers, the earliest bronze in the region. The culture's geographic focus — the middle Red River valley near modern Phú Thọ — is the same zone where Văn Lang tradition places its origin.",
       "description_ru": "Культура Фунг Нгуен (названная по опорному памятнику в провинции Фу Тхо) знаменует начало бронзового века в Северном Вьетнаме. Поселения перемещаются с пещер на открытые деревни на низких холмах и речных террасах. Керамика тонкозернистая с инцизным геометрическим декором. В поздних слоях Фунг Нгуен появляются небольшие литые бронзовые предметы — древнейшая бронза региона. Географический фокус культуры — средняя долина Красной реки близ Фу Тхо — тот же район, где традиция Ван Ланга помещает своё происхождение.",
+      "era": "BC",
       "latitude": 21.4,
       "longitude": 105.23,
+      "name": "Bronze Age Begins in Vietnam",
+      "name_ru": "Начало бронзового века во Вьетнаме",
       "source": "https://en.wikipedia.org/wiki/Phung_Nguyen_culture",
       "tags": [
-        "Vietnamese",
         "Bronze Age",
         "Culture",
-        "Văn Lang"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1900",
-      "era": "BC",
-      "name": "Earliest Bronze Casting in the Red River Delta",
-      "name_ru": "Древнейшее бронзовое литьё в дельте Красной реки",
-      "description": "Evidence from Phùng Nguyên and contemporaneous sites shows that copper-tin bronze casting is being practised in the Red River valley by the late third millennium BC, making this one of the earliest centres of bronze metallurgy in Southeast Asia. Crucible fragments, bronze slag, and stone casting moulds confirm in situ production rather than pure import. The alloys used show a knowledge of tin sources — probably from the highland mineral-rich zones of modern Yunnan and northwestern Vietnam. Bronze production is initially controlled by emerging elites who use the monopoly to reinforce social differentiation.",
-      "description_ru": "Данные с памятников Фунг Нгуен показывают, что литьё оловянистой бронзы практикуется в долине Красной реки к концу III тысячелетия до н. э. — одном из древнейших центров бронзовой металлургии в ЮВА. Фрагменты тиглей, бронзовый шлак и каменные литейные формы подтверждают местное производство. Применяемые сплавы демонстрируют знание источников олова, вероятно из горных рудных зон Юньнани и Северо-Западного Вьетнама.",
-      "latitude": 21.03,
-      "longitude": 105.83,
-      "source": "https://en.wikipedia.org/wiki/Phung_Nguyen_culture",
-      "tags": [
         "Vietnamese",
-        "Bronze Age",
-        "Civilization"
+        "Văn Lang"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.1800",
-      "era": "BC",
-      "name": "Nephrite and Jade Ornaments in Elite Burials",
-      "name_ru": "Нефритовые и жадеитовые украшения в элитных погребениях",
       "description": "Phùng Nguyên and early Đồng Đậu burials in the Red River valley contain nephrite earrings, rings, and pendants of extraordinary technical quality — ground and polished to shape with abrasive stones in a process requiring dozens of hours per object. The nephrite is imported from highland source zones, confirming long-distance procurement networks. The differential distribution of nephrite objects — concentrated in a minority of graves — is the clearest marker of emerging hereditary status inequality in prehistoric Vietnam. Green nephrite shares the pan-Southeast Asian and East Asian symbolic linkage of green stone with water, life, and regeneration.",
       "description_ru": "Погребения Фунг Нгуен и раннего Донг Дау в долине Красной реки содержат нефритовые серьги, кольца и подвески исключительного технического качества, шлифованные и полированные часами работы. Нефрит импортируется из горных зон, подтверждая дальние сети снабжения. Неравномерное распределение нефритовых предметов — концентрация в меньшинстве захоронений — является наиболее чётким маркером зарождающегося наследственного неравенства во вьетнамской доистории.",
+      "era": "BC",
       "latitude": 21.4,
       "longitude": 105.23,
+      "name": "Nephrite and Jade Ornaments in Elite Burials",
+      "name_ru": "Нефрит и жадеит в гробницах Вьетнама",
       "source": "https://en.wikipedia.org/wiki/Phung_Nguyen_culture",
       "tags": [
-        "Vietnamese",
         "Bronze Age",
+        "Burial",
+        "Culture",
+        "Jade",
         "Trade",
-        "Culture"
+        "Vietnamese"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.1700",
-      "era": "BC",
-      "name": "Phùng Nguyên Craft Specialisation",
-      "name_ru": "Ремесленная специализация культуры Фунг Нгуен",
       "description": "Late Phùng Nguyên settlements show clear evidence of craft specialisation: some sites contain dense concentrations of pottery manufacturing waste (kiln furniture, mis-fired vessels, clay preparation pits) while producing few bronze objects; other sites have casting debris but little pottery production waste. This spatial segregation of production — different villages producing different goods — implies a supra-village exchange system managed by an emerging chiefly tier. The specialised villages are not self-sufficient; they depend on redistributive networks controlled by elites at the larger central sites.",
-      "description_ru": "Поздние поселения Фунг Нгуен обнаруживают чёткие свидетельства ремесленной специализации: одни памятники содержат плотные скопления отходов гончарного производства при минимуме бронзовых предметов; другие дают литейный мусор, но мало гончарных отходов. Это пространственное разделение производства предполагает надпоселковую обменную систему под управлением зарождающегося вождеского уровня.",
+      "description_ru": "Поздние поселения Фунг Нгуен обнаруживают свидетельства ремесленной специализации: одни памятники содержат плотные скопления отходов гончарного производства при минимуме бронзовых предметов; другие дают литейный мусор, но мало гончарных отходов. Это разделение производства предполагает надпоселковую обменную систему под управлением зарождающегося вождества.",
+      "era": "BC",
       "latitude": 21.4,
       "longitude": 105.23,
+      "name": "Phùng Nguyên Craft Specialisation",
+      "name_ru": "Ремесленные специализации Вьетнама",
       "source": "https://en.wikipedia.org/wiki/Phung_Nguyen_culture",
       "tags": [
-        "Vietnamese",
         "Bronze Age",
         "Civilization",
-        "Trade"
+        "Trade",
+        "Vietnamese"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.1600",
-      "era": "BC",
-      "name": "Highland Wet-Rice Terracing in Northern Vietnam",
-      "name_ru": "Высокогорное поливное рисоводство в Северном Вьетнаме",
       "description": "Botanical and landscape evidence indicates that by the mid-second millennium BC, communities in the mountain valleys of northern Vietnam (modern Lào Cai, Yên Bái, Sơn La provinces) are cutting and maintaining terraced paddy fields in river valleys — adapting lowland wet-rice agriculture to steep terrain. Terracing requires coordinated community labour for construction and maintenance of bunds and irrigation channels, implying organised social authority. The same highland communities are positioned to control the mineral resources — tin, copper, gold — that supply the lowland bronze industry of the Red River valley.",
       "description_ru": "Ботанические и ландшафтные данные указывают, что к середине II тысячелетия до н. э. общины в горных долинах Северного Вьетнама (провинции Лаокай, Иенбай, Шонла) устраивают террасные рисовые поля. Террасирование требует скоординированного общественного труда для строительства и поддержания дамб и ирригационных каналов. Горные общины контролируют минеральные ресурсы — олово, медь, золото, — снабжающие бронзовую промышленность долины.",
+      "era": "BC",
       "latitude": 22,
       "longitude": 104,
+      "name": "Highland Wet-Rice Terracing in Northern Vietnam",
+      "name_ru": "Высокогорное рисоводство в Северном Вьетнаме",
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
       "tags": [
-        "Vietnamese",
         "Agriculture",
-        "Civilization"
+        "Civilization",
+        "Rice",
+        "Vietnamese"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.1500",
-      "era": "BC",
-      "name": "Đồng Đậu Culture — Middle Bronze Age",
-      "name_ru": "Культура Донг Дау — средний бронзовый век",
       "description": "The Đồng Đậu culture (type-site: Đồng Đậu, Vĩnh Phúc province) represents the middle phase of the Vietnamese Bronze Age sequence, succeeding Phùng Nguyên and preceding Gò Mun. Bronze objects are now more numerous and varied: socketed axes, arrowheads, fishhooks, and the earliest spear tips appear alongside continued jade and nephrite jewellery. Settlement size increases; some Đồng Đậu sites show evidence of wooden palisades, suggesting inter-community conflict. The pottery tradition shifts toward more functional forms, with less elaborate decoration — a pattern consistent with craft production for a wider market rather than purely elite exchange.",
       "description_ru": "Культура Донг Дау (опорный памятник: Донг Дау, провинция Винь Фук) представляет средний этап последовательности вьетнамского бронзового века. Бронзовые предметы теперь многочисленнее и разнообразнее: проушные топоры, наконечники стрел, рыболовные крючки и первые наконечники копий появляются наряду с нефритовыми украшениями. Размер поселений увеличивается; некоторые памятники Донг Дау демонстрируют деревянные частоколы, намекая на межобщинные конфликты.",
-      "latitude": 21.28,
-      "longitude": 105.65,
+      "era": "BC",
+      "latitude": 21.23336227,
+      "longitude": 105.58633804,
+      "name": "Đồng Đậu Culture in Vietnam",
+      "name_ru": "Культура Донг Дау во Вьетнаме",
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
       "tags": [
-        "Vietnamese",
         "Bronze Age",
         "Culture",
+        "Vietnamese",
         "Văn Lang"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.1400",
-      "era": "BC",
-      "name": "Bronze Axes, Socketed Tools, and Agricultural Expansion",
-      "name_ru": "Бронзовые топоры, втульчатые орудия и аграрная экспансия",
       "description": "The appearance of socketed bronze axes and adzes (tools fitted with a hollow socket for a wooden handle rather than lashed to it) in the Đồng Đậu repertoire dramatically increases the efficiency of forest clearance and carpentry. These tools, requiring sophisticated casting technology with inner cores, are significantly more effective than stone or earlier flanged bronze equivalents. Wider forest clearance in the Red River lowlands accelerates agricultural expansion into previously wooded areas, increasing food production capacity and supporting larger, more territorially ambitious political units. The socketed axe is also an effective weapon — the same tool form serves both productive and military purposes.",
       "description_ru": "Появление втульчатых бронзовых топоров и тёсел в ансамбле Донг Дау резко повышает эффективность расчистки леса и плотницких работ. Эти орудия, требующие сложной литейной технологии с внутренними стержнями, значительно эффективнее каменных или ранних бронзовых аналогов. Более широкая расчистка леса в низменностях Красной реки ускоряет аграрную экспансию, поддерживая более крупные, территориально амбициозные политические единицы.",
+      "era": "BC",
       "latitude": 21.03,
       "longitude": 105.83,
+      "name": "Bronze Axes, Socketed Tools, and Agricultural Expansion",
+      "name_ru": "Бронзовые топоры, втульчатые орудия и аграрная экспансия",
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
       "tags": [
-        "Vietnamese",
+        "Agriculture",
         "Bronze Age",
-        "Agriculture"
+        "Vietnamese"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1400",
+      "description": "The long Vietnamese coastline — over 3,000 km from the Gulf of Tonkin to the Gulf of Thailand — becomes a zone of sustained maritime exchange linking northern Bronze Age cultures with the Sa Huỳnh of the centre, island Southeast Asia to the east, and the Mekong basin to the west. Outrigger canoe technology, inherited from the Austronesian maritime tradition, enables reliable inter-community contact across the South China Sea. Exotic materials — glass beads, carnelian, nephrite, tin — moving through these networks confirm a sophisticated exchange system that predates by many centuries the later Bronze Age maritime networks of the Mediterranean.",
+      "description_ru": "Длинное вьетнамское побережье — более 3000 км от Тонкинского залива до Сиамского — становится зоной устойчивого морского обмена, соединяющей северные бронзовые культуры с Са Хуинь в центре, островной ЮВА на востоке и бассейном Меконга на западе. Технология лодок с аутригером обеспечивает надёжный контакт между общинами. Экзотические материалы — стеклянные бусины, сердолик, нефрит, олово — подтверждают изощрённую обменную систему.",
+      "era": "BC",
+      "latitude": 15.87702061,
+      "longitude": 108.32643449,
+      "name": "Coastal Trade Networks of the Vietnamese Seaboard",
+      "name_ru": "Торговля на вьетнамском побережье",
+      "source": "https://en.wikipedia.org/wiki/Sa_Huynh_culture",
+      "tags": [
+        "Maritime",
+        "Trade",
+        "Sa Huỳnh",
+        "Vietnamese"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.1300",
-      "era": "BC",
-      "name": "Sa Huỳnh Culture — Jar Burial Tradition Begins",
-      "name_ru": "Культура Са Хуинь — начало традиции захоронений в урнах",
       "description": "The Sa Huỳnh culture of central and southern Vietnam (type-site: Sa Huỳnh, Quảng Ngãi province) is defined by its distinctive mortuary practice: the dead are placed in large ceramic jars (sometimes with a smaller jar as a lid) and buried in cemeteries on coastal sand dunes or terrace edges. Associated grave goods include iron tools, bronze ornaments, and glass and carnelian beads. Sa Huỳnh is one of the few cultures in mainland Southeast Asia with early iron; by the late first millennium BC its communities smelt and cast iron independently, centuries before Chinese iron technology reaches northern Vietnam. The Sa Huỳnh people are widely considered the direct predecessors of the Cham civilisation that will dominate central Vietnam in the first millennium AD.",
       "description_ru": "Культура Са Хуинь Центрального и Южного Вьетнама (опорный памятник: Са Хуинь, провинция Куангнгай) определяется характерной погребальной практикой: умерших помещают в крупные керамические урны и хоронят на прибрежных дюнах. Сопроводительный инвентарь включает железные орудия, бронзовые украшения, стеклянные и сердоликовые бусины. Са Хуинь — одна из немногих культур материковой ЮВА с ранним железом. Народ Са Хуинь считается непосредственным предшественником цивилизации чамов.",
-      "latitude": 14.97,
-      "longitude": 108.9,
+      "era": "BC",
+      "latitude": 15.87702061,
+      "longitude": 108.32643449,
+      "name": "Sa Huỳnh Jar Burial Tradition",
+      "name_ru": "Традиции захоронений в урнах Са Хуинь",
       "source": "https://en.wikipedia.org/wiki/Sa_Huynh_culture",
       "tags": [
-        "Vietnamese",
-        "Sa Huỳnh",
+        "Burial",
         "Culture",
-        "Maritime"
+        "Maritime",
+        "Sa Huỳnh",
+        "Vietnamese"
       ],
       "type": "cultural"
     },
     {
-      "date": "01.01.1200",
-      "era": "BC",
-      "name": "Coastal Trade Networks of the Vietnamese Seaboard",
-      "name_ru": "Прибрежные торговые сети вьетнамского побережья",
-      "description": "The long Vietnamese coastline — over 3,000 km from the Gulf of Tonkin to the Gulf of Thailand — becomes a zone of sustained maritime exchange linking northern Bronze Age cultures with the Sa Huỳnh of the centre, island Southeast Asia to the east, and the Mekong basin to the west. Outrigger canoe technology, inherited from the Austronesian maritime tradition, enables reliable inter-community contact across the South China Sea. Exotic materials — glass beads, carnelian, nephrite, tin — moving through these networks confirm a sophisticated exchange system that predates by many centuries the later Bronze Age maritime networks of the Mediterranean.",
-      "description_ru": "Длинное вьетнамское побережье — более 3000 км от Тонкинского залива до Сиамского — становится зоной устойчивого морского обмена, соединяющей северные бронзовые культуры с Са Хуинь в центре, островной ЮВА на востоке и бассейном Меконга на западе. Технология лодок с аутригером обеспечивает надёжный контакт между общинами. Экзотические материалы — стеклянные бусины, сердолик, нефрит, олово — подтверждают изощрённую обменную систему.",
-      "latitude": 16,
-      "longitude": 108,
-      "source": "https://en.wikipedia.org/wiki/Sa_Huynh_culture",
-      "tags": [
-        "Vietnamese",
-        "Maritime",
-        "Trade"
-      ],
-      "type": "historic"
-    },
-    {
       "date": "01.01.1100",
-      "era": "BC",
-      "name": "Water Buffalo — Agricultural and Ritual Animal",
-      "name_ru": "Водяной буйвол — сельскохозяйственное и ритуальное животное",
       "description": "The domesticated water buffalo (Bubalus bubalis), whose wild ancestor (arni) is native to the Southeast Asian mainland, becomes central to both the agricultural economy and ritual life of Bronze Age Vietnam and Cambodia. As a traction animal, the buffalo enables ploughing of heavier waterlogged soils previously inaccessible to hand-hoe cultivation, substantially expanding the paddy area available for rice production. In ritual life, buffalo sacrifice at major ceremonies — birth, death, harvest, war — is documented across the entire mainland Southeast Asian region and persists in highland minority communities to the present. Buffalo skulls displayed at house entrances mark social status.",
       "description_ru": "Одомашненный водяной буйвол (Bubalus bubalis), чей дикий предок (арни) является уроженцем материковой ЮВА, становится центральным в сельскохозяйственной экономике и ритуальной жизни бронзового века Вьетнама и Камбоджи. Как тягловое животное буйвол позволяет возделывать более тяжёлые заболоченные почвы. В ритуальной жизни жертвоприношение буйвола на крупных церемониях задокументировано по всей материковой ЮВА и сохраняется по сей день.",
+      "era": "BC",
       "latitude": 21.03,
       "longitude": 105.83,
-      "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
+      "name": "Water buffalo in Vietnamese culture",
+      "name_ru": "Водяной буйвол в культуре Вьетнама",
+      "source": "https://www.ethosspirit.com/blog/the-water-buffalo-of-northern-vietnam-power-culture-and-family",
       "tags": [
-        "Vietnamese",
         "Agriculture",
+        "Culture",
+        "Husbandry",
         "Religious",
-        "Culture"
+        "Vietnamese"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.1000",
-      "era": "BC",
-      "name": "Gò Mun Culture — Sophisticated Bronze Casting",
-      "name_ru": "Культура Го Мун — изощрённое бронзовое литьё",
       "description": "The Gò Mun culture (type-site: Gò Mun, Phú Thọ province) is the penultimate phase of the Vietnamese Bronze Age before Đông Sơn, characterised by a sharp increase in the quantity and quality of bronze objects and the first appearance of bronze drums in embryonic form. Gò Mun founders master piece-mould and lost-wax casting techniques, producing intricate surface decoration. The range of objects expands to include bronze daggers, spear tips, ornate belt hooks, and ceremonial vessels. Socially, Gò Mun marks the point at which the warrior-elite class becomes visibly dominant in the archaeological record: weapons and warrior accoutrements occupy the most elaborate burials.",
       "description_ru": "Культура Го Мун (опорный памятник: Го Мун, провинция Фу Тхо) — предпоследний этап вьетнамского бронзового века перед культурой Донгшон, характеризующийся резким увеличением количества и качества бронзовых предметов и первым появлением прообразов бронзовых барабанов. Мастера Го Мун осваивают технику составных форм и литья по выплавляемой модели. Среди предметов — бронзовые кинжалы, наконечники копий, изящные поясные крючки и церемониальные сосуды.",
-      "latitude": 21.37,
-      "longitude": 105.24,
+      "era": "BC",
+      "latitude": 21.28593546,
+      "longitude": 105.3042984,
+      "name": "Gò Mun Culture in Vietnam",
+      "name_ru": "Культура Го Мун во Вьетнаме",
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
       "tags": [
-        "Vietnamese",
+        "Bronze",
         "Bronze Age",
         "Culture",
+        "Metallurgy",
+        "Vietnamese",
         "Văn Lang"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.1000",
-      "era": "BC",
-      "name": "Long-Distance Exchange with Southern China",
-      "name_ru": "Дальний обмен с Южным Китаем",
       "description": "By the late second millennium BC, the bronze cultures of the Red River valley maintain regular exchange with Chinese states via overland mountain passes and coastal maritime routes. Chinese bronze vessels and weapons occasionally reach Vietnamese sites as prestige imports; Vietnamese nephrite ornaments and possibly bronze objects move northward. Chinese oracle bone and bronze inscriptions begin mentioning the 'southern Yi' or 'Yue' (越) peoples in this general period — the earliest written references to the ethnolinguistic world that includes the ancestors of the Vietnamese. The exchange relationship is not yet tributary: it is a peer-to-peer exchange between equivalent polities.",
       "description_ru": "К концу II тысячелетия до н. э. бронзовые культуры долины Красной реки поддерживают регулярный обмен с китайскими государствами через горные перевалы и морские маршруты. Китайские бронзовые сосуды и оружие иногда достигают вьетнамских памятников; вьетнамские нефритовые украшения движутся на север. Китайские надписи эпохи Шан упоминают «южных И» или «юэ» (越) — древнейшие письменные ссылки на предков вьетнамцев.",
+      "era": "BC",
       "latitude": 22,
       "longitude": 105,
+      "name": "Long-Distance Exchange with Southern China",
+      "name_ru": "Торговля Вьетнама и Южного Китая",
       "source": "https://en.wikipedia.org/wiki/Baiyue",
       "tags": [
-        "Vietnamese",
+        "Chinese",
         "Trade",
-        "Chinese"
+        "Vietnamese"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0900",
-      "era": "BC",
-      "name": "Bách Việt — Hundred Yue Peoples of Southern China and Vietnam",
-      "name_ru": "Бак Вьет — «Сто Юэ», народы Южного Китая и Вьетнама",
       "description": "Chinese Zhou dynasty texts refer to the 'Bách Việt' (Hundred Yue, 百越) — a collective term for the numerous non-Han peoples occupying the vast territory from the Yangtze River southward through modern Guangdong, Guangxi, and northern Vietnam. The Bách Việt are not a single people but a diverse array of ethnolinguistic communities sharing certain cultural traits: rice agriculture, stilt-house architecture, bronze drum use, tattooing, tooth blackening, and water-oriented subsistence. The ancestors of the Vietnamese (Lạc Việt, one of the Hundred Yue branches) occupy the Red River valley and its surrounding uplands. This ethnic categorisation by Chinese observers is the earliest historical framework within which Vietnamese identity takes shape.",
       "description_ru": "Тексты китайской эпохи Чжоу называют «Бак Вьет» (Сто Юэ, 百越) — собирательный термин для многочисленных нехань народов, занимающих огромную территорию от реки Янцзы к югу через Гуандун, Гуанси и Северный Вьетнам. Бак Вьет — не единый народ, а разнородный массив этнолингвистических общин: рисоводство, жилища на сваях, бронзовые барабаны, татуировка, чернение зубов. Предки вьетнамцев (лак-вьет, одна из ветвей ста юэ) занимают долину Красной реки.",
-      "latitude": 21.5,
-      "longitude": 106,
+      "era": "BC",
+      "latitude": 22,
+      "longitude": 105,
+      "name": "Bách Việt — Hundred Yue Peoples of Southern China and Vietnam",
+      "name_ru": "Бак Вьет — «Сто Юэ», народы Южного Китая и Вьетнама",
       "source": "https://en.wikipedia.org/wiki/Baiyue",
       "tags": [
-        "Vietnamese",
-        "Civilization",
-        "Chinese"
+        "Chinese",
+        "History",
+        "Zhou",
+        "Vietnamese"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0879",
-      "era": "BC",
-      "name": "Văn Lang — the Hùng King Kingdom",
-      "name_ru": "Ван Ланг — царство ванов Хунг",
       "description": "Vietnamese historical tradition establishes Văn Lang as the first Vietnamese kingdom, ruled by a succession of eighteen Hùng Kings (Hùng Vương) from a capital at Phong Châu (near modern Việt Trì, Phú Thọ province) in the upper Red River valley. The traditional founding date is 2879 BC; modern historians place a plausible historical Văn Lang polity in the early first millennium BC, corresponding to the Đông Sơn archaeological horizon. Văn Lang is divided into fifteen administrative units (bộ) governed by lords (Lạc hầu, Lạc tướng) under the Hùng king. The kingdom controls the Red River delta rice surplus and the mountain-lowland trade in bronze materials — the twin economic foundations of power.",
       "description_ru": "Вьетнамская историческая традиция устанавливает Ван Ланг как первое вьетнамское государство, управляемое восемнадцатью ванами Хунг из столицы Фонг Тяу (вблизи современного Вьет Три, провинция Фу Тхо). Традиционная дата основания — 2879 г. до н. э.; современные историки помещают исторически правдоподобный Ван Ланг в ранее I тысячелетие до н. э. Ван Ланг разделён на пятнадцать административных единиц (бо), управляемых лордами (лак хау, лак тыонг) под сюзеренитетом вана Хунг.",
+      "era": "BC",
       "latitude": 21.3,
       "longitude": 105.4,
+      "name": "Văn Lang — the Hùng King Kingdom",
+      "name_ru": "Ван Ланг — царство ванов Хунг",
       "source": "https://en.wikipedia.org/wiki/Van_Lang",
       "tags": [
+        "Foundation",
+        "Kingdom",
+        "Monarchy",
         "Vietnamese",
-        "Political",
         "Văn Lang"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0850",
+      "description": "Phong Châu (in the modern Việt Trì – Phú Thọ basin at the confluence of the Red, Lô, and Đà rivers) serves as the capital and ritual centre of the Hùng King state. The confluence of three rivers gives the site exceptional hydraulic significance — the Hùng Kings' political authority is symbolically tied to mastery over the rivers that irrigate the Red River delta. Modern Phú Thọ province preserves the Đền Hùng (Hùng Kings' Temple) complex on Nghĩa Lĩnh hill, a pilgrimage site visited annually on the tenth day of the third lunar month",
+      "description_ru": "Фонг Тяу (в современном бассейне Вьет Три – Фу Тхо у слияния рек Красной, Ло и Да) служит столицей и ритуальным центром государства ванов Хунг. Слияние трёх рек придаёт месту исключительное гидравлическое значение. Современная провинция Фу Тхо сохраняет комплекс Ден Хунг (Храм ванов Хунг) на холме Нгиа Линь",
       "era": "BC",
-      "name": "Phong Châu — Capital of Văn Lang",
-      "name_ru": "Фонг Тяу — столица Ван Ланга",
-      "description": "Phong Châu (in the modern Việt Trì – Phú Thọ basin at the confluence of the Red, Lô, and Đà rivers) serves as the capital and ritual centre of the Hùng King state. The confluence of three rivers gives the site exceptional hydraulic significance — the Hùng Kings' political authority is symbolically tied to mastery over the rivers that irrigate the Red River delta. Modern Phú Thọ province preserves the Đền Hùng (Hùng Kings' Temple) complex on Nghĩa Lĩnh hill, a pilgrimage site visited annually on the tenth day of the third lunar month — a ceremony that UNESCO recognised as Intangible Cultural Heritage in 2012.",
-      "description_ru": "Фонг Тяу (в современном бассейне Вьет Три – Фу Тхо у слияния рек Красной, Ло и Да) служит столицей и ритуальным центром государства ванов Хунг. Слияние трёх рек придаёт месту исключительное гидравлическое значение. Современная провинция Фу Тхо сохраняет комплекс Ден Хунг (Храм ванов Хунг) на холме Нгиа Линь — место паломничества, признанное ЮНЕСКО нематериальным культурным наследием в 2012 году.",
       "latitude": 21.4,
       "longitude": 105.23,
+      "name": "Phong Châu — Capital of Văn Lang",
+      "name_ru": "Фонг Тяу — столица Ван Ланга",
       "source": "https://en.wikipedia.org/wiki/H%C3%B9ng_king",
       "tags": [
+        "Capital",
+        "Religious",
         "Vietnamese",
-        "Political",
-        "Văn Lang",
-        "Religious"
+        "Văn Lang"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0800",
-      "era": "BC",
-      "name": "Đông Sơn Culture — Vietnam's Bronze Age Apex",
-      "name_ru": "Культура Донгшон — вершина бронзового века Вьетнама",
       "description": "The Đông Sơn culture (named for the type-site excavated by Louis Pajot in 1924 near Thanh Hóa) represents the peak achievement of Bronze Age civilisation in mainland Southeast Asia, flourishing from roughly 800–200 BC. Its geographic core is the Red River valley but its cultural influence extends across the entire mainland peninsula and the Indonesian archipelago. Đông Sơn communities live in large riverside villages with complex economic organisation; elites are buried in rich boat-shaped coffins or log coffins with bronze weapons, ornaments, and the characteristic bronze drums. The culture is contemporary with the early Hùng King state and is generally identified as the material culture of Văn Lang.",
-      "description_ru": "Культура Донгшон (названная по опорному памятнику, раскопанному Луи Пажо в 1924 году близ Тхань Хоа) представляет вершинное достижение бронзовой цивилизации материковой ЮВА, процветавшей около 800–200 гг. до н. э. Её географическое ядро — долина Красной реки, но культурное влияние охватывает весь материковый полуостров и Индонезийский архипелаг. Элиты погребены в богатых гробах-«лодках» с бронзовым оружием и характерными барабанами.",
-      "latitude": 19.9,
-      "longitude": 105.77,
+      "description_ru": "Культура Донгшон (названная по опорному памятнику, раскопанному Луи Пажо в 1924 году близ Тхань Хоа) представляет вершинное достижение бронзовой цивилизации материковой ЮВА, процветавшей около 800–200 гг. до н. э. Её географическое ядро — долина Красной реки, но культурное влияние охватывает весь материковый полуостров и Индонезийский архипелаг. Эта культура современна раннему периоду правления короля Хунга и обычно отождествляется с материальной культурой Ван Ланга.",
+      "era": "BC",
+      "latitude": 19.83720306,
+      "longitude": 105.78499317,
+      "name": "Đông Sơn Culture in Vietnam",
+      "name_ru": "Культура Донгшон во Вьетнаме",
       "source": "https://en.wikipedia.org/wiki/Dong_Son_culture",
       "tags": [
-        "Vietnamese",
         "Bronze Age",
-        "Văn Lang",
-        "Civilization"
+        "Culture",
+        "Vietnamese",
+        "Văn Lang"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0750",
-      "era": "BC",
-      "name": "Đông Sơn Metallurgical Revolution",
-      "name_ru": "Металлургическая революция Донгшона",
       "description": "Đông Sơn bronze-smiths achieve a standard of alloying, surface finishing, and decorative casting that stands among the finest in the ancient world. They produce highly controlled tin-bronze alloys (typically 15–20% tin) using multiple-piece clay moulds for the largest drums, and lost-wax casting for the most complex ornamental elements. Their decorative vocabulary — concentric geometric bands, narrative friezes of warriors, dancers, and birds, feathered headdresses — is executed with a fineness approaching engraving. The knowledge required — mineralogy, smelting, alloying, mould-making, annealing — represents generations of accumulated technical expertise concentrated in specialist workshops.",
       "description_ru": "Бронзолитейщики Донгшона достигают стандарта легирования, отделки поверхности и декоративного литья, входящего в число лучших в древнем мире. Они производят тщательно контролируемые оловянистые бронзы (как правило, 15–20% олова), используя многочастные глиняные формы для крупнейших барабанов. Их декоративный словарь — концентрические геометрические полосы, нарративные фризы с воинами, танцорами и птицами — исполнен с тонкостью, приближающейся к гравировке.",
-      "latitude": 19.9,
-      "longitude": 105.77,
+      "era": "BC",
+      "latitude": 19.83720306,
+      "longitude": 105.78499317,
+      "name": "Đông Sơn Metallurgical Revolution",
+      "name_ru": "Металлургическая революция Донгшона",
       "source": "https://en.wikipedia.org/wiki/Dong_Son_culture",
       "tags": [
-        "Vietnamese",
+        "Bronze",
         "Bronze Age",
-        "Civilization"
+        "Civilization",
+        "Innovation",
+        "Metallurgy",
+        "Vietnamese"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0700",
+      "description": "The Đông Sơn bronze drum (trống đồng) is the signature artefact of mainland Southeast Asian Bronze Age culture and one of the most technically and artistically demanding objects produced anywhere in the ancient world. Cast in a single pour from a complex multiple-piece mould, the drums range from 40 cm to over a metre in diameter and weigh up to 100 kg. The flat striking face is decorated with a central sunburst motif surrounded by concentric bands of geometric ornament and narrative scenes; the body has four frog figures on the upper rim (frogs as symbols of rain and fertility) and side panels with scenes of feast, war, and ceremony. Over two hundred Đông Sơn drums survive; they have been found from Vietnam to eastern Indonesia, testifying to their role as the premier prestige object of the region.",
+      "description_ru": "Бронзовый барабан Донгшона (чонг донг) — эмблема бронзовой цивилизации материковой ЮВА и один из технически и художественно наиболее сложных предметов, произведённых в древнем мире. Отлитые в один приём из сложной составной формы, барабаны варьируются от 40 см до более метра в диаметре и весят до 100 кг. На ударной плоскости — солярный мотив в центре с концентрическими полосами геометрического орнамента; на теле — четыре фигуры лягушек на верхнем крае и панели с пиром, войной и церемонией.",
       "era": "BC",
+      "latitude": 19.83720306,
+      "longitude": 105.78499317,
       "name": "Trống Đồng — The Đông Sơn Bronze Drum",
       "name_ru": "Чонг Донг — бронзовый барабан Донгшона",
-      "description": "The Đông Sơn bronze drum (trống đồng) is the signature artefact of mainland Southeast Asian Bronze Age culture and one of the most technically and artistically demanding objects produced anywhere in the ancient world. Cast in a single pour from a complex multiple-piece mould, the drums range from 40 cm to over a metre in diameter and weigh up to 100 kg. The flat striking face is decorated with a central sunburst motif surrounded by concentric bands of geometric ornament and narrative scenes; the body has four frog figures on the upper rim (frogs as symbols of rain and fertility) and side panels with scenes of feast, war, and ceremony. Over two hundred Đông Sơn drums survive; they have been found from Vietnam to eastern Indonesia, testifying to their role as the premier prestige object of the region.",
-      "description_ru": "Бронзовый барабан Донгшона (чонг донг) — эмблема бронзовой цивилизации материковой ЮВА и один из технически и художественно наиболее сложных предметов, произведённых в древнем мире. Отлитые в один приём из сложной составной формы, барабаны варьируются от 40 см до более метра в диаметре и весят до 100 кг. На ударной плоскости — солярный мотив в центре с концентрическими полосами геометрического орнамента; на теле — четыре фигуры лягушек на верхнем крае и панели с пиршеством, войной и церемонией.",
-      "latitude": 19.9,
-      "longitude": 105.77,
       "source": "https://en.wikipedia.org/wiki/Dong_Son_drum",
       "tags": [
-        "Vietnamese",
+        "Art",
+        "Bronze",
         "Bronze Age",
-        "Văn Lang",
-        "Culture"
+        "Culture",
+        "Metallurgy",
+        "Vietnamese",
+        "Văn Lang"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0700",
-      "era": "BC",
-      "name": "Đông Sơn Drum Iconography — Cosmology in Bronze",
-      "name_ru": "Иконография барабанов Донгшона — космология в бронзе",
       "description": "The imagery on Đông Sơn drums forms a coherent cosmological system readable by communities across the region. The central sun with radiating rays on the face represents the sky deity; the concentric bands moving outward encode the layers of the cosmos from sky centre to earth periphery. The four bronze frogs at the drum's rim — associated with rain, the wet season, and agricultural fertility — activate the drum's power as a rain-calling instrument. The narrative friezes show plumed warriors in boats, communal feasting under long-houses, and birds with elaborate tail feathers — the bird being the symbol of the sky world and the soul's journey after death. This iconographic system is shared, with local variations, from northern Vietnam to Java.",
       "description_ru": "Изображения на барабанах Донгшона образуют связную космологическую систему. Центральное солнце с лучами на лицевой стороне представляет небесное божество; концентрические полосы кодируют слои космоса. Четыре бронзовые лягушки на крае — с дождём, влажным сезоном и плодородием — активируют барабан как инструмент призыва дождя. Нарративные фризы изображают украшенных перьями воинов в лодках, совместные пиры и птиц с пышными хвостами — птица как символ небесного мира. Эта иконографическая система разделяется от Северного Вьетнама до Явы.",
-      "latitude": 19.9,
-      "longitude": 105.77,
+      "era": "BC",
+      "latitude": 19.83720306,
+      "longitude": 105.78499317,
+      "name": "Đông Sơn Drum Iconography",
+      "name_ru": "Иконография барабанов Донгшона",
       "source": "https://en.wikipedia.org/wiki/Dong_Son_drum",
       "tags": [
-        "Vietnamese",
-        "Religious",
+        "Cosmology",
         "Culture",
+        "Religious",
+        "Vietnamese",
         "Văn Lang"
       ],
       "type": "religious"
     },
     {
-      "date": "01.01.0680",
-      "era": "BC",
-      "name": "Đông Sơn Boat Culture and River Warfare",
-      "name_ru": "Лодочная культура и речные войны Донгшона",
+      "date": "01.01.0700",
       "description": "Đông Sơn drums and burial goods consistently depict long war canoes manned by plumed warriors carrying axes, spears, and shields — evidence that riverine and coastal warfare is a central activity of the Đông Sơn elite. Full-scale dugout war canoes large enough to carry twenty or more warriors, propelled by paddles, are the primary means of both military projection and inter-community exchange across the Red River network. Boat burials — log coffins shaped to resemble boat hulls — indicate that the canoe is also the vehicle of the soul's journey to the afterlife. The combination of boat symbolism in death ritual and war iconography in prestige objects identifies the warrior-mariner as the dominant social ideal of Đông Sơn culture.",
       "description_ru": "Барабаны и погребальный инвентарь Донгшона последовательно изображают длинные военные каноэ с украшенными перьями воинами, несущими топоры, копья и щиты. Полноразмерные долблёные военные каноэ — основное средство военной проекции и межобщинного обмена. Захоронения в лодках — гробы, имитирующие корпус каноэ, — указывают, что лодка также является транспортным средством душ. Воин-мореплаватель — господствующий социальный идеал культуры Донгшона.",
-      "latitude": 21.03,
-      "longitude": 105.83,
+      "era": "BC",
+      "latitude": 19.83720306,
+      "longitude": 105.78499317,
+      "name": "Đông Sơn Boat Culture and River Warfare",
+      "name_ru": "Лодочная культура и речные войны Донгшона",
       "source": "https://en.wikipedia.org/wiki/Dong_Son_culture",
       "tags": [
-        "Vietnamese",
-        "Military",
+        "Burial",
         "Culture",
-        "Maritime"
+        "Maritime",
+        "Religious",
+        "Vietnamese"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0650",
-      "era": "BC",
-      "name": "Sa Huỳnh Iron Smelting — One of Southeast Asia's Earliest",
-      "name_ru": "Железоделательное производство Са Хуинь — одно из первых в ЮВА",
       "description": "Sa Huỳnh sites in central Vietnam contain iron tools — knives, sickles, spearheads — dated to the mid-first millennium BC, making Sa Huỳnh one of the earliest documented iron-using cultures in mainland Southeast Asia, predating the spread of iron technology from China into northern Vietnam by a century or more. The source of Sa Huỳnh iron knowledge is debated: it may derive from independent local development, from contact with iron-using cultures of the Indian Ocean world, or from overland transmission through highland trade networks. Iron sickles dramatically improve rice harvesting efficiency; iron-tipped spears and knives give Sa Huỳnh warriors a decisive military advantage over bronze-armed neighbours.",
       "description_ru": "Памятники Са Хуинь в Центральном Вьетнаме содержат железные орудия — ножи, серпы, наконечники копий — датированные серединой I тысячелетия до н. э., что делает Са Хуинь одной из самых ранних задокументированных железоиспользующих культур материковой ЮВА. Источник железных знаний Са Хуинь дискутируется: самостоятельное местное развитие, контакт с культурами Индийского океана или трансмиссия через горные торговые сети. Железные серпы резко повышают эффективность уборки риса.",
-      "latitude": 14.97,
-      "longitude": 108.9,
+      "era": "BC",
+      "latitude": 15.87702061,
+      "longitude": 108.32643449,
+      "name": "Sa Huỳnh Iron Smelting",
+      "name_ru": "Железная ковка в Са Хуинь",
       "source": "https://en.wikipedia.org/wiki/Sa_Huynh_culture",
       "tags": [
-        "Vietnamese",
+        "Culture",
+        "Iron",
+        "Metallurgy",
         "Sa Huỳnh",
-        "Civilization"
+        "Vietnamese"
       ],
-      "type": "historic"
+      "type": "scientific"
     },
     {
       "date": "01.01.0640",
-      "era": "BC",
-      "name": "Đông Sơn Weapons — Daggers, Axes, and Spear Tips",
-      "name_ru": "Вооружение Донгшона — кинжалы, топоры и наконечники копий",
       "description": "Đông Sơn bronze workshops produce a standardised repertoire of weapons: the short leaf-shaped dagger with decorated hilt, the socketed spear tip, the socketed axe-adze, and the crossbow trigger mechanism — the last being a direct import of Chinese military technology. The crossbow trigger (bronze, with a sophisticated notching and release mechanism) implies that Đông Sơn warriors adopt ranged infantry tactics alongside close-quarter boat-based fighting. Warriors' graves contain complete weapon sets — spear, dagger, and axe — indicating professional military specialisation within the Văn Lang warrior class. The standardisation of weapon forms across a wide geographic area points to a shared military culture rather than purely local production.",
       "description_ru": "Бронзолитейные мастерские Донгшона производят стандартизированный арсенал: короткий листовидный кинжал с декорированной рукоятью, втульчатый наконечник копья, втульчатый топор-тесло и спусковой механизм арбалета — последнее является прямым импортом китайских военных технологий. Погребения воинов содержат полные наборы оружия. Стандартизация форм оружия по широкой географии указывает на общую военную культуру.",
-      "latitude": 19.9,
-      "longitude": 105.77,
+      "era": "BC",
+      "latitude": 19.83720306,
+      "longitude": 105.78499317,
+      "name": "Đông Sơn Weapons",
+      "name_ru": "Вооружение Донгшона",
       "source": "https://en.wikipedia.org/wiki/Dong_Son_culture",
       "tags": [
+        "Bronze",
+        "Metallurgy",
+        "Weapon",
         "Vietnamese",
-        "Military",
         "Văn Lang"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0630",
-      "era": "BC",
-      "name": "Hùng King Agricultural Festivals",
-      "name_ru": "Аграрные праздники ванов Хунг",
       "description": "The Hùng Kings' ritual calendar centres on agricultural ceremonies tied to the rice-growing cycle: planting and harvest festivals involving the entire community, communal feasting, competitive sports (wrestling, archery), and offerings to the sky deity and to ancestral spirits at the Hùng Kings' temple complex on Nghĩa Lĩnh hill. Legend preserves specific ritual objects: the bánh chưng (square sticky rice cake, representing the earth) and bánh dày (round cake, representing the sky), attributed to Prince Lang Liêu, are still made for the Tết (Lunar New Year) festival as a direct continuation of Hùng-era ritual. The square-and-circle cosmology embedded in these cakes is consistent with the concentric geometric cosmology of the Đông Sơn drums.",
-      "description_ru": "Ритуальный календарь ванов Хунг сосредоточен на сельскохозяйственных церемониях, привязанных к циклу рисоводства: праздники посева и уборки урожая с совместными пирами, соревнованиями и подношениями. Легенда сохраняет специфические ритуальные предметы: баньь чынг (квадратный клейкий рисовый пирог, символ земли) и баньь зяй (круглый пирог, символ неба), приписываемые принцу Ланг Льеу, до сих пор готовятся к Тет как прямое продолжение ханьской ритуальной практики.",
+      "description_ru": "Ритуальный календарь ванов Хунг сосредоточен на сельскохозяйственных церемониях, привязанных к циклу рисоводства: праздники посева и уборки урожая с совместными пирами, соревнованиями и подношениями. Легенда сохраняет специфические ритуальные предметы: бань чынг (квадратный клейкий рисовый пирог, символ земли) и бань зяй (круглый пирог, символ неба), приписываемые принцу Ланг Льеу, до сих пор готовятся к Тет как прямое продолжение ханьской ритуальной практики.",
+      "era": "BC",
       "latitude": 21.4,
       "longitude": 105.23,
+      "name": "Hùng King Agricultural Festivals",
+      "name_ru": "Аграрные праздники ванов Хунг",
       "source": "https://en.wikipedia.org/wiki/H%C3%B9ng_king",
       "tags": [
-        "Vietnamese",
+        "Cuisine",
+        "Culture",
+        "Holidays",
         "Religious",
-        "Văn Lang",
-        "Culture"
+        "Vietnamese",
+        "Văn Lang"
       ],
       "type": "religious"
     },
     {
       "date": "01.01.0620",
-      "era": "BC",
-      "name": "Lạc Việt in Chinese Written Records",
-      "name_ru": "Лак-вьет в китайских письменных источниках",
       "description": "Zhou dynasty annals and later Warring States texts begin explicitly naming 'Lạc Việt' (Luoyue, 駱越) — the specific Yue branch associated with the Red River valley — as a distinct people on China's southern periphery. Chinese descriptions note the Lạc Việt's wet-rice agriculture in the plains, their use of bronze drums, tattooing, tooth blackening, and their political organisation under hereditary lords (the Lạc hầu). The name 'Lạc' is associated by Vietnamese scholars with the Lạc bird (possibly a heron or egret — the water bird prominent on Đông Sơn drums) and with the Lạc fields (lúa nước, flooded rice fields). These earliest Chinese written references are the basis for the external historical documentation of the Văn Lang state.",
       "description_ru": "Летописи эпохи Чжоу начинают прямо именовать «Лак Вьет» (Луоюэ, 駱越) — конкретную ветвь юэ, связанную с долиной Красной реки, — как отдельный народ на южной периферии Китая. Китайские описания отмечают поливное рисоводство лак-вьет, использование бронзовых барабанов, татуировку, чернение зубов и политическую организацию под наследственными лордами. Эти ранние китайские письменные ссылки составляют основу внешней исторической документации государства Ван Ланг.",
+      "era": "BC",
       "latitude": 21.03,
       "longitude": 105.83,
+      "name": "Lạc Việt in Chinese Written Records",
+      "name_ru": "Лак-вьет в китайских письменных источниках",
       "source": "https://en.wikipedia.org/wiki/Baiyue",
       "tags": [
-        "Vietnamese",
         "Chinese",
-        "Văn Lang",
-        "Political"
+        "Diplomacy",
+        "History",
+        "Vietnamese",
+        "Văn Lang"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0600",
-      "era": "BC",
-      "name": "Văn Lang — the 15 Administrative Regions",
-      "name_ru": "Ван Ланг — 15 административных областей",
       "description": "Vietnamese tradition records that Văn Lang was organised into fifteen bộ (administrative units, loosely 'regions'), each governed by a local lord (Lạc hầu in the lowlands, Lạc tướng in border and military zones) subordinate to the Hùng king. The regions roughly correspond to the river-valley micro-environments of the northern and central Vietnamese highland-lowland system: each bộ is a watershed community controlling its own agricultural land and access to mountain resources. This decentralised federal structure — a paramount king with autonomous regional lords — mirrors the political arrangements of contemporaneous mainland Southeast Asian polities and anticipates the mandala state model that will characterise later Southeast Asian kingdoms.",
       "description_ru": "Вьетнамская традиция фиксирует, что Ван Ланг был организован в пятнадцать бо (административных единиц), каждая под управлением местного лорда (лак хау на равнинах, лак тыонг в пограничных военных зонах), подчинённого вану Хунг. Регионы приблизительно соответствуют речно-долинным микросредам вьетнамской горно-равнинной системы. Эта децентрализованная федеральная структура предвосхищает модель государства-мандала, характеризующую позднейшие юго-восточноазиатские государства.",
+      "era": "BC",
       "latitude": 21.3,
       "longitude": 105.4,
+      "name": "Văn Lang — the 15 Administrative Regions",
+      "name_ru": "Ван Ланг — 15 административных областей",
       "source": "https://en.wikipedia.org/wiki/Van_Lang",
       "tags": [
-        "Vietnamese",
+        "Administration",
         "Political",
+        "Vietnamese",
         "Văn Lang"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0600",
-      "era": "BC",
-      "name": "Lạc Lords — the Warrior Aristocracy of Văn Lang",
-      "name_ru": "Лак-лорды — воинская аристократия Ван Ланга",
       "description": "The Lạc hầu and Lạc tướng ('Lạc lords') constitute the aristocratic warrior class of Văn Lang — hereditary regional chiefs who owe military service to the Hùng king and administer the local population. Their power rests on three pillars: control of irrigated rice fields (the lúa lạc, the flooded Lạc fields, from which they extract tribute), monopoly over bronze weapons and prestige goods, and shamanic religious authority as intermediaries with the ancestors. Đông Sơn warrior burials — richly equipped with bronze weapons, drums, and boat-coffins — are the archaeological expression of this class. The Lạc lords' resistance to Chinese Han colonisation in 111 BC and the revolt of the Trưng Sisters (40 AD) against later Han rule are both led by members of this class.",
       "description_ru": "Лак хау и лак тыонг («лак-лорды») — наследственные воинские вожди, обязанные военной службой вану Хунг и управляющие местным населением. Их власть покоится на контроле орошаемых полей, монополии на бронзовое оружие и шаманском религиозном авторитете. Погребения воинов Донгшона — богато оснащённые бронзовым оружием, барабанами и гробами-«лодками» — представляют этот класс в археологии. Сопротивление лак-лордов китайской колонизации и восстание сестёр Чынг (40 г. н. э.) ведёт этот же класс.",
+      "era": "BC",
       "latitude": 21.03,
       "longitude": 105.83,
+      "name": "Lạc Lords — the Warrior Aristocracy of Văn Lang",
+      "name_ru": "Лак-лорды — воинская аристократия Ван Ланга",
       "source": "https://en.wikipedia.org/wiki/Van_Lang",
       "tags": [
-        "Vietnamese",
+        "Aristocracy",
         "Political",
-        "Military",
+        "Vietnamese",
         "Văn Lang"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0590",
-      "era": "BC",
-      "name": "Proto-Khmer Communities in the Mekong Delta",
-      "name_ru": "Прото-кхмерские общины в дельте Меконга",
-      "description": "Archaeological survey in the lower Mekong delta and the Tonle Sap basin of modern Cambodia reveals Bronze Age communities distinct from the Đông Sơn tradition of the north but broadly contemporary with it. These communities — the cultural ancestors of the later Khmer civilisation — practice wet-rice agriculture, construct earthen embankments for water control, and produce locally distinct bronze and early iron objects. The circular earthwork settlements of the Mekong plain (some hundreds of metres in diameter, visible in satellite imagery) date to roughly 500–200 BC and represent the first evidence of organised landscape modification at a proto-urban scale in Cambodia.",
-      "description_ru": "Археологическая съёмка в нижней дельте Меконга и бассейне Тонлесап выявляет бронзовые общины, отличные от традиции Донгшон на севере, но широко синхронные ей. Эти общины — культурные предки позднейшей кхмерской цивилизации — практикуют поливное рисоводство и возводят земляные валы для водорегулирования. Круглые городищенные поселения Меконгской равнины датируются около 500–200 гг. до н. э. и представляют первые свидетельства организованной трансформации ландшафта в Камбодже.",
-      "latitude": 12,
-      "longitude": 105,
-      "source": "https://en.wikipedia.org/wiki/Samrong_Sen",
-      "tags": [
-        "Khmer",
-        "Cambodia",
-        "Settlement",
-        "Agriculture"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0580",
-      "era": "BC",
-      "name": "Vietnamese-Chinese Frontier — Contact with Wu and Chu",
-      "name_ru": "Вьетнамско-китайская граница — контакты с У и Чу",
-      "description": "The southernmost of the Chinese Warring States — particularly Chu (楚) and Wu (吳, centred in the Yangtze delta) — press southward toward the Bách Việt zones in the 6th–5th centuries BC, creating a zone of political contact, conflict, and cultural exchange along the Red River's northern approaches. Chinese sources record punitive expeditions into Yue territory and the incorporation of Yue auxiliaries into Chinese armies. Bronze objects and ceramic types show clear bidirectional exchange: Đông Sơn forms influence southern Chinese workshops and vice versa. This intensifying Chinese pressure is the long-term driver of the political consolidation of Văn Lang — external threat encourages the Hùng Kings to extend their authority more firmly over the Lạc lords.",
-      "description_ru": "Наиболее южные из китайских Сражающихся царств — особенно Чу и У (центрированные в дельте Янцзы) — давят на юг к зонам Бак Вьет в VI–V вв. до н. э., создавая зону политического контакта, конфликта и культурного обмена. Китайские источники фиксируют карательные экспедиции в территорию юэ и включение вьетских вспомогательных войск в китайские армии. Это нарастающее китайское давление — долгосрочный движитель политической консолидации Ван Ланга.",
-      "latitude": 22,
-      "longitude": 106,
-      "source": "https://en.wikipedia.org/wiki/Baiyue",
-      "tags": [
-        "Vietnamese",
-        "Chinese",
-        "Military",
-        "Political"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0560",
-      "era": "BC",
-      "name": "Đông Sơn Elite Burials — Bronze Prestige Goods",
-      "name_ru": "Элитные захоронения Донгшона — престижные бронзовые предметы",
       "description": "The richest Đông Sơn burials — found at Làng Cả (Phú Thọ), Thiệu Dương (Thanh Hóa), and Lang Vạc (Nghệ An) — contain spectacular assemblages: large bronze drums, multiple weapons, ceremonial belt hooks and chains, bronze situlae (buckets) decorated with geometric friezes, bronze ladles, and fine ceramic vessels. The most prestigious single grave object is the Đông Sơn drum itself; graves containing drums are rare and represent the top tier of the social hierarchy — probably the Lạc lords rather than the Hùng king himself (whose burial has not been identified). The deliberate inclusion of weapons and feasting vessels in elite graves encodes the two defining virtues of the Lạc lord: martial prowess and generous hospitality.",
       "description_ru": "Богатейшие погребения Донгшона — в Ланг Ка (Фу Тхо), Тхиеу Зыонг (Тхань Хоа) и Ланг Вак (Нге Ан) — содержат выдающиеся ансамбли: крупные бронзовые барабаны, многочисленное оружие, церемониальные поясные крючки и цепи, бронзовые ситулы с геометрическими фризами. Наиболее престижный отдельный предмет погребения — барабан Донгшона; могилы с барабанами редки и представляют высший уровень социальной иерархии. Включение оружия и пиршественных сосудов кодирует две добродетели лак-лорда: воинскую доблесть и щедрое гостеприимство.",
-      "latitude": 19.9,
-      "longitude": 105.77,
+      "era": "BC",
+      "latitude": 19.83720306,
+      "longitude": 105.78499317,
+      "name": "Đông Sơn Elite Burials",
+      "name_ru": "Элитные захоронения Донгшона",
       "source": "https://en.wikipedia.org/wiki/Dong_Son_culture",
       "tags": [
-        "Vietnamese",
+        "Burial",
         "Culture",
-        "Văn Lang",
-        "Religious"
+        "Religious",
+        "Vietnamese",
+        "Văn Lang"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0550",
-      "era": "BC",
-      "name": "Sa Huỳnh Bead Trade — Carnelian and Glass from the Indian Ocean",
-      "name_ru": "Торговля бусами Са Хуинь — сердолик и стекло из Индийского океана",
       "description": "Sa Huỳnh jar burial sites contain carnelian beads — semi-precious red stone whose nearest source is Gujarat, India — alongside early glass beads with chemical signatures consistent with South Asian or Middle Eastern manufacture. This places Sa Huỳnh communities in contact with the nascent Indian Ocean trade network by the 6th–5th centuries BC, more than five centuries before the well-documented Funan period maritime trade. The beads arrive either via overland routes through Burma and the highlands, or directly by sea to the central Vietnamese coast. Sa Huỳnh sites also produce distinctive double-headed animal earrings (lingling-o) in nephrite — a type found from Taiwan to the Philippines — confirming a broad maritime exchange horizon.",
       "description_ru": "Урновые захоронения Са Хуинь содержат сердоликовые бусины — полудрагоценный красный камень, ближайший источник которого в Гуджарате, Индия, — наряду с ранними стеклянными бусинами с химическими сигнатурами, соответствующими южноазиатскому или ближневосточному производству. Это помещает общины Са Хуинь в контакт с зарождающейся сетью торговли Индийского океана ещё в VI–V вв. до н. э. Са Хуинь также производит характерные серьги-линглинго из нефрита — тип, обнаруживаемый от Тайваня до Филиппин.",
-      "latitude": 14.97,
-      "longitude": 108.9,
+      "era": "BC",
+      "latitude": 15.87702061,
+      "longitude": 108.32643449,
+      "name": "Carnelian and glass from the Indian Ocean in Vietnam",
+      "name_ru": "Сердолик и стекло из Индийского океана во Вьетнаме",
       "source": "https://en.wikipedia.org/wiki/Sa_Huynh_culture",
       "tags": [
-        "Vietnamese",
-        "Sa Huỳnh",
+        "Indian",
+        "Maritime",
         "Trade",
-        "Maritime"
+        "Sa Huỳnh",
+        "Vietnamese"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0540",
-      "era": "BC",
-      "name": "Mê Linh — Red River Chieftainship",
-      "name_ru": "Ме Линь — вождество в дельте Красной реки",
       "description": "Mê Linh (in modern Vĩnh Phúc province, between the Red River and the Lô River confluence) is recorded in later Vietnamese historical tradition as the seat of an important Lạc lord family — the same family that will produce the Trưng Sisters who led the most famous resistance to Chinese Han rule in 40 AD. The Mê Linh chieftainship controls a strategically critical stretch of the Red River immediately north of Phong Châu and commands river traffic between the highland sources of bronze materials and the lowland population centres. Its prominence in later Vietnamese historical memory confirms that by the Đông Sơn period, specific territorial lordships with hereditary ruling families are established features of the Văn Lang political landscape.",
       "description_ru": "Ме Линь (в современной провинции Винь Фук) фигурирует в позднейшей вьетнамской исторической традиции как резиденция важной семьи лак-лорда — той же, что породит сестёр Чынг, возглавивших наиболее известное сопротивление ханьскому господству в 40 г. н. э. Вождество Ме Линь контролирует стратегически критический участок Красной реки к северу от Фонг Тяу и управляет речным движением. Его значимость в исторической памяти подтверждает, что к периоду Донгшона конкретные территориальные лордства с наследственными семьями являются устоявшимися чертами политического ландшафта Ван Ланга.",
+      "era": "BC",
       "latitude": 21.18,
       "longitude": 105.72,
+      "name": "Mê Linh — Red River Chieftainship",
+      "name_ru": "Ме Линь — вождество в дельте Красной реки",
       "source": "https://en.wikipedia.org/wiki/Van_Lang",
       "tags": [
-        "Vietnamese",
         "Political",
+        "Vietnamese",
         "Văn Lang"
       ],
       "type": "political"
     },
     {
       "date": "01.01.0530",
-      "era": "BC",
-      "name": "Đông Sơn Drums as Diplomatic Currency",
-      "name_ru": "Барабаны Донгшона как дипломатическая валюта",
       "description": "Đông Sơn bronze drums found far outside the Red River heartland — in Yunnan, southern China, the Philippines, eastern Indonesia, and Malaysia — were not ordinary trade goods but diplomatic gifts exchanged between ruling elites to seal alliances, confirm tributary relationships, or mark major ceremonial occasions. Their enormous value — each drum representing perhaps a year's work by a specialist team — makes them unsuitable for ordinary commerce. The geographic distribution of Đông Sơn drums thus maps a diplomatic network rather than a trade network: a web of relationships maintained by Văn Lang and its neighbours through the exchange of the most prestigious objects their civilisation could produce.",
       "description_ru": "Барабаны Донгшона, обнаруженные далеко за пределами ядра Красной реки — в Юньнани, Южном Китае, на Филиппинах, в Восточной Индонезии и Малайзии, — были не обычными торговыми товарами, а дипломатическими дарами, обменивавшимися между правящими элитами. Их огромная ценность — каждый барабан представляет, возможно, годовой труд специализированной команды — делает их непригодными для обычной торговли. Географическое распределение барабанов Донгшона, таким образом, картирует дипломатическую, а не торговую сеть.",
-      "latitude": 19.9,
-      "longitude": 105.77,
+      "era": "BC",
+      "latitude": 22,
+      "longitude": 105,
+      "name": "Đông Sơn Drums as Diplomatic Currency",
+      "name_ru": "Барабаны Донгшона как дипломатическая валюта",
       "source": "https://en.wikipedia.org/wiki/Dong_Son_drum",
       "tags": [
-        "Vietnamese",
         "Diplomacy",
         "Trade",
+        "Vietnamese",
         "Văn Lang"
       ],
       "type": "cultural"
-    },
-    {
-      "date": "01.01.0520",
-      "era": "BC",
-      "name": "Dragon Boat Tradition and Water Festivals",
-      "name_ru": "Традиция лодки-дракона и водные праздники",
-      "description": "The Đông Sơn drums' boat friezes and the Vietnamese oral tradition preserved in festival practices confirm that competitive boat racing on rivers is a major ritual activity of the Văn Lang period, tied to the agricultural calendar's wet-season ceremonies. Dragon boat festivals invoke the water dragon ancestor (Lạc Long Quân) to ensure rainfall and river fertility; the race itself re-enacts the mythological journey of the ancestral dragon. The dragon-boat tradition spreads from the Vietnamese-Chinese frontier zone across East and Southeast Asia, becoming one of the most widely shared festival forms in the region. The modern Dragon Boat Festival is the direct descendant of this ancient rain-calling ceremony.",
-      "description_ru": "Фризы лодок на барабанах Донгшона и вьетнамская устная традиция подтверждают, что состязательные гонки на лодках по рекам являются крупной ритуальной активностью периода Ван Ланга, привязанной к церемониям влажного сезона. Праздники лодки-дракона призывают водного предка-дракона (Лак Лонг Куан) обеспечить дождь и плодородие рек. Традиция лодки-дракона распространяется по всей Восточной и Юго-Восточной Азии, становясь одной из наиболее широко распространённых форм праздника в регионе.",
-      "latitude": 21.03,
-      "longitude": 105.83,
-      "source": "https://en.wikipedia.org/wiki/Dong_Son_culture",
-      "tags": [
-        "Vietnamese",
-        "Religious",
-        "Culture",
-        "Văn Lang"
-      ],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.0510",
-      "era": "BC",
-      "name": "Đông Sơn Influence across Island Southeast Asia",
-      "name_ru": "Влияние Донгшона на островную ЮВА",
-      "description": "By the late 6th century BC, Đông Sơn bronze drums are found in burial and ritual contexts from the Philippines south through the Indonesian archipelago to eastern Indonesia (modern Maluku and West Papua). The Heger Type I drum — the classic Đông Sơn form — becomes an object of such enormous prestige across island Southeast Asia that local copies are subsequently cast in Java, Bali, and Borneo for centuries after the mainland tradition ends. In some island societies, the drum is the highest-value object in existence — used to pay bride price, settle disputes, and ransom prisoners. This pan-Southeast Asian diffusion of the Đông Sơn drum tradition represents the earliest documented cultural influence radiating from mainland Vietnam across the maritime world.",
-      "description_ru": "К концу VI в. до н. э. барабаны Донгшона обнаруживаются в погребальных и ритуальных контекстах от Филиппин до Восточной Индонезии (Малуку и Западное Папуа). Барабан типа Heger I становится предметом огромного престижа по всей островной ЮВА: местные копии отливались на Яве, Бали и Борнео на протяжении столетий после прекращения материковой традиции. Это панюговосточноазиатское распространение традиции барабанов Донгшона представляет древнейшее задокументированное культурное влияние, исходящее с материкового Вьетнама.",
-      "latitude": 19.9,
-      "longitude": 105.77,
-      "source": "https://en.wikipedia.org/wiki/Dong_Son_drum",
-      "tags": [
-        "Vietnamese",
-        "Maritime",
-        "Trade",
-        "Civilization"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0505",
-      "era": "BC",
-      "name": "Sa Huỳnh Maritime Networks — Vietnam to Philippines",
-      "name_ru": "Морские сети Са Хуинь — от Вьетнама до Филиппин",
-      "description": "Nephrite lingling-o earrings and other ornament types produced or traded through Sa Huỳnh networks appear in burial sites across the Philippines, Taiwan, and Borneo by the early 5th century BC, confirming that Sa Huỳnh communities participate in a broad Austronesian maritime exchange sphere linking the Vietnamese coast with island Southeast Asia. This is a different maritime network from the Đông Sơn diplomatic drum system: it operates at a finer scale, connecting fishing and farming communities rather than political elites, and its principal goods are jewellery and personal ornaments rather than ceremonial drums. Together, the Đông Sơn and Sa Huỳnh maritime systems make the Vietnamese coast one of the most cosmopolitan zones in the ancient world by 500 BC.",
-      "description_ru": "Нефритовые серьги линглинго и другие типы украшений, произведённых или торговавшихся через сети Са Хуинь, появляются в погребальных памятниках Филиппин, Тайваня и Борнео к началу V в. до н. э. Са Хуинь участвует в широкой австронезийской морской сфере обмена. Это иная морская сеть, чем дипломатическая барабанная система Донгшона: она действует на более тонком уровне, соединяя рыбацко-земледельческие общины. Вместе системы Донгшон и Са Хуинь делают вьетнамское побережье одной из наиболее космополитических зон древнего мира к 500 г. до н. э.",
-      "latitude": 14.97,
-      "longitude": 108.9,
-      "source": "https://en.wikipedia.org/wiki/Sa_Huynh_culture",
-      "tags": [
-        "Vietnamese",
-        "Sa Huỳnh",
-        "Maritime",
-        "Trade"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0500",
-      "era": "BC",
-      "name": "Văn Lang at its Height — the Hùng King System",
-      "name_ru": "Ван Ланг на своём пике — система ванов Хунг",
       "description": "At the threshold of 500 BC, Văn Lang under the later Hùng Kings represents the most developed polity in mainland Southeast Asia: a hereditary monarchy with a ceremonial capital at Phong Châu, fifteen administrative regions governed by an established aristocratic class, a bronze-equipped army capable of resisting Chinese Warring States pressure from the north, and a cultural tradition — the Đông Sơn – whose artistic and technological output is exported across the entire region. The state controls the rice surplus of the Red River delta, the mineral wealth of the highlands, and the trade routes connecting the interior to the coast. It will endure for another two and a half centuries before Thục Phán (An Dương Vương) overthrows the last Hùng king in 258 BC and transforms it into Âu Lạc.",
       "description_ru": "На пороге 500 г. до н. э. Ван Ланг под поздними ванами Хунг представляет наиболее развитое государственное образование материковой ЮВА: наследственная монархия с церемониальной столицей в Фонг Тяу, пятнадцать административных регионов под устоявшимся аристократическим классом, бронзевооружённая армия, способная противостоять давлению китайских Сражающихся царств. Государство контролирует рисовый излишек дельты Красной реки, горные минеральные богатства и торговые пути. Оно просуществует ещё два с половиной столетия, прежде чем Тхук Фан (Ан Зыонг Выонг) свергнет последнего вана Хунг в 258 г. до н. э.",
+      "era": "BC",
       "latitude": 21.3,
       "longitude": 105.4,
+      "name": "Văn Lang Kingdom at its Height",
+      "name_ru": "Царство Ван Ланг на своём пике",
       "source": "https://en.wikipedia.org/wiki/Van_Lang",
       "tags": [
+        "Golden Age",
         "Vietnamese",
-        "Political",
-        "Civilization",
         "Văn Lang"
       ],
       "type": "political"
     }
-  ]
+  ],
+  "filename": "vietnam.json"
 }
