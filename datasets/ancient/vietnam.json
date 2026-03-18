@@ -11,7 +11,11 @@
       "latitude": 19.75,
       "longitude": 105.72,
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
-      "tags": ["Vietnamese", "Paleolithic", "Archaeology"],
+      "tags": [
+        "Vietnamese",
+        "Paleolithic",
+        "Archaeology"
+      ],
       "type": "historic"
     },
     {
@@ -24,7 +28,11 @@
       "latitude": 21.35,
       "longitude": 105.17,
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
-      "tags": ["Vietnamese", "Paleolithic", "Culture"],
+      "tags": [
+        "Vietnamese",
+        "Paleolithic",
+        "Culture"
+      ],
       "type": "historic"
     },
     {
@@ -37,11 +45,16 @@
       "latitude": 20.82,
       "longitude": 105.34,
       "source": "https://en.wikipedia.org/wiki/Hoabinhian",
-      "tags": ["Vietnamese", "Hoabinhian", "Neolithic", "Culture"],
+      "tags": [
+        "Vietnamese",
+        "Hoabinhian",
+        "Neolithic",
+        "Culture"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.008000",
+      "date": "01.01.8000",
       "era": "BC",
       "name": "Bắc Sơn Culture — Polished Stone and Early Pottery",
       "name_ru": "Культура Бак Шон — шлифованный камень и ранняя керамика",
@@ -50,11 +63,16 @@
       "latitude": 21.83,
       "longitude": 106.55,
       "source": "https://en.wikipedia.org/wiki/Hoabinhian",
-      "tags": ["Vietnamese", "Hoabinhian", "Neolithic", "Culture"],
+      "tags": [
+        "Vietnamese",
+        "Hoabinhian",
+        "Neolithic",
+        "Culture"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.006000",
+      "date": "01.01.6000",
       "era": "BC",
       "name": "Laang Spean Cave — Cambodia's Neolithic",
       "name_ru": "Пещера Лаанг Спеан — неолит Камбоджи",
@@ -63,11 +81,16 @@
       "latitude": 13.05,
       "longitude": 103.22,
       "source": "https://en.wikipedia.org/wiki/Laang_Spean",
-      "tags": ["Khmer", "Neolithic", "Archaeology", "Cambodia"],
+      "tags": [
+        "Khmer",
+        "Neolithic",
+        "Archaeology",
+        "Cambodia"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.004500",
+      "date": "01.01.4500",
       "era": "BC",
       "name": "Đa Bút Culture — Coastal Neolithic of the Mã River",
       "name_ru": "Культура Да Бут — прибрежный неолит реки Ма",
@@ -76,11 +99,16 @@
       "latitude": 19.97,
       "longitude": 105.68,
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
-      "tags": ["Vietnamese", "Neolithic", "Settlement", "Maritime"],
+      "tags": [
+        "Vietnamese",
+        "Neolithic",
+        "Settlement",
+        "Maritime"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.004000",
+      "date": "01.01.4000",
       "era": "BC",
       "name": "Rice Cultivation Spreads to Northern Vietnam",
       "name_ru": "Рисосеяние достигает Северного Вьетнама",
@@ -89,11 +117,16 @@
       "latitude": 21.03,
       "longitude": 105.83,
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
-      "tags": ["Vietnamese", "Agriculture", "Culture", "Neolithic"],
+      "tags": [
+        "Vietnamese",
+        "Agriculture",
+        "Culture",
+        "Neolithic"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.003500",
+      "date": "01.01.3500",
       "era": "BC",
       "name": "Animism and Spirit Cults of mainland Southeast Asia",
       "name_ru": "Анимизм и культы духов материковой ЮВА",
@@ -102,11 +135,16 @@
       "latitude": 21.03,
       "longitude": 105.83,
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
-      "tags": ["Vietnamese", "Khmer", "Religious", "Culture"],
+      "tags": [
+        "Vietnamese",
+        "Khmer",
+        "Religious",
+        "Culture"
+      ],
       "type": "religious"
     },
     {
-      "date": "01.01.003000",
+      "date": "01.01.3000",
       "era": "BC",
       "name": "Bàu Tró Culture — Central Vietnamese Neolithic",
       "name_ru": "Культура Бау Тро — неолит Центрального Вьетнама",
@@ -115,11 +153,16 @@
       "latitude": 17.48,
       "longitude": 106.62,
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
-      "tags": ["Vietnamese", "Neolithic", "Maritime", "Culture"],
+      "tags": [
+        "Vietnamese",
+        "Neolithic",
+        "Maritime",
+        "Culture"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.003000",
+      "date": "01.01.3000",
       "era": "BC",
       "name": "Samrong Sen — Early Bronze Age Cambodia",
       "name_ru": "Самронг Сен — ранний бронзовый век Камбоджи",
@@ -128,11 +171,16 @@
       "latitude": 12.16,
       "longitude": 104.83,
       "source": "https://en.wikipedia.org/wiki/Samrong_Sen",
-      "tags": ["Khmer", "Bronze Age", "Cambodia", "Archaeology"],
+      "tags": [
+        "Khmer",
+        "Bronze Age",
+        "Cambodia",
+        "Archaeology"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.002879",
+      "date": "01.01.2879",
       "era": "BC",
       "name": "Lạc Long Quân and Âu Cơ — Vietnamese Creation Myth",
       "name_ru": "Лак Лонг Куан и Ау Ко — вьетнамский миф о сотворении",
@@ -141,11 +189,16 @@
       "latitude": 20.55,
       "longitude": 106.93,
       "source": "https://en.wikipedia.org/wiki/Lac_Long_Quan",
-      "tags": ["Vietnamese", "Legend", "Religious", "Văn Lang"],
+      "tags": [
+        "Vietnamese",
+        "Legend",
+        "Religious",
+        "Văn Lang"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.002800",
+      "date": "01.01.2800",
       "era": "BC",
       "name": "Âu Cơ and the Hundred Sons — Ethnic Origin of the Việt",
       "name_ru": "Ау Ко и сто сыновей — этническое происхождение вьетов",
@@ -154,11 +207,16 @@
       "latitude": 21.07,
       "longitude": 105.36,
       "source": "https://en.wikipedia.org/wiki/Au_Co",
-      "tags": ["Vietnamese", "Legend", "Religious", "Culture"],
+      "tags": [
+        "Vietnamese",
+        "Legend",
+        "Religious",
+        "Culture"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.002000",
+      "date": "01.01.2000",
       "era": "BC",
       "name": "Phùng Nguyên Culture — Bronze Age Begins in Vietnam",
       "name_ru": "Культура Фунг Нгуен — начало бронзового века во Вьетнаме",
@@ -167,11 +225,16 @@
       "latitude": 21.4,
       "longitude": 105.23,
       "source": "https://en.wikipedia.org/wiki/Phung_Nguyen_culture",
-      "tags": ["Vietnamese", "Bronze Age", "Culture", "Văn Lang"],
+      "tags": [
+        "Vietnamese",
+        "Bronze Age",
+        "Culture",
+        "Văn Lang"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.001900",
+      "date": "01.01.1900",
       "era": "BC",
       "name": "Earliest Bronze Casting in the Red River Delta",
       "name_ru": "Древнейшее бронзовое литьё в дельте Красной реки",
@@ -180,11 +243,15 @@
       "latitude": 21.03,
       "longitude": 105.83,
       "source": "https://en.wikipedia.org/wiki/Phung_Nguyen_culture",
-      "tags": ["Vietnamese", "Bronze Age", "Civilization"],
+      "tags": [
+        "Vietnamese",
+        "Bronze Age",
+        "Civilization"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.001800",
+      "date": "01.01.1800",
       "era": "BC",
       "name": "Nephrite and Jade Ornaments in Elite Burials",
       "name_ru": "Нефритовые и жадеитовые украшения в элитных погребениях",
@@ -193,11 +260,16 @@
       "latitude": 21.4,
       "longitude": 105.23,
       "source": "https://en.wikipedia.org/wiki/Phung_Nguyen_culture",
-      "tags": ["Vietnamese", "Bronze Age", "Trade", "Culture"],
+      "tags": [
+        "Vietnamese",
+        "Bronze Age",
+        "Trade",
+        "Culture"
+      ],
       "type": "cultural"
     },
     {
-      "date": "01.01.001700",
+      "date": "01.01.1700",
       "era": "BC",
       "name": "Phùng Nguyên Craft Specialisation",
       "name_ru": "Ремесленная специализация культуры Фунг Нгуен",
@@ -206,24 +278,33 @@
       "latitude": 21.4,
       "longitude": 105.23,
       "source": "https://en.wikipedia.org/wiki/Phung_Nguyen_culture",
-      "tags": ["Vietnamese", "Bronze Age", "Civilization", "Trade"],
+      "tags": [
+        "Vietnamese",
+        "Bronze Age",
+        "Civilization",
+        "Trade"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.001600",
+      "date": "01.01.1600",
       "era": "BC",
       "name": "Highland Wet-Rice Terracing in Northern Vietnam",
       "name_ru": "Высокогорное поливное рисоводство в Северном Вьетнаме",
       "description": "Botanical and landscape evidence indicates that by the mid-second millennium BC, communities in the mountain valleys of northern Vietnam (modern Lào Cai, Yên Bái, Sơn La provinces) are cutting and maintaining terraced paddy fields in river valleys — adapting lowland wet-rice agriculture to steep terrain. Terracing requires coordinated community labour for construction and maintenance of bunds and irrigation channels, implying organised social authority. The same highland communities are positioned to control the mineral resources — tin, copper, gold — that supply the lowland bronze industry of the Red River valley.",
       "description_ru": "Ботанические и ландшафтные данные указывают, что к середине II тысячелетия до н. э. общины в горных долинах Северного Вьетнама (провинции Лаокай, Иенбай, Шонла) устраивают террасные рисовые поля. Террасирование требует скоординированного общественного труда для строительства и поддержания дамб и ирригационных каналов. Горные общины контролируют минеральные ресурсы — олово, медь, золото, — снабжающие бронзовую промышленность долины.",
-      "latitude": 22.0,
-      "longitude": 104.0,
+      "latitude": 22,
+      "longitude": 104,
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
-      "tags": ["Vietnamese", "Agriculture", "Civilization"],
+      "tags": [
+        "Vietnamese",
+        "Agriculture",
+        "Civilization"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.001500",
+      "date": "01.01.1500",
       "era": "BC",
       "name": "Đồng Đậu Culture — Middle Bronze Age",
       "name_ru": "Культура Донг Дау — средний бронзовый век",
@@ -232,11 +313,16 @@
       "latitude": 21.28,
       "longitude": 105.65,
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
-      "tags": ["Vietnamese", "Bronze Age", "Culture", "Văn Lang"],
+      "tags": [
+        "Vietnamese",
+        "Bronze Age",
+        "Culture",
+        "Văn Lang"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.001400",
+      "date": "01.01.1400",
       "era": "BC",
       "name": "Bronze Axes, Socketed Tools, and Agricultural Expansion",
       "name_ru": "Бронзовые топоры, втульчатые орудия и аграрная экспансия",
@@ -245,11 +331,15 @@
       "latitude": 21.03,
       "longitude": 105.83,
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
-      "tags": ["Vietnamese", "Bronze Age", "Agriculture"],
+      "tags": [
+        "Vietnamese",
+        "Bronze Age",
+        "Agriculture"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.001300",
+      "date": "01.01.1300",
       "era": "BC",
       "name": "Sa Huỳnh Culture — Jar Burial Tradition Begins",
       "name_ru": "Культура Са Хуинь — начало традиции захоронений в урнах",
@@ -258,24 +348,33 @@
       "latitude": 14.97,
       "longitude": 108.9,
       "source": "https://en.wikipedia.org/wiki/Sa_Huynh_culture",
-      "tags": ["Vietnamese", "Sa Huỳnh", "Culture", "Maritime"],
+      "tags": [
+        "Vietnamese",
+        "Sa Huỳnh",
+        "Culture",
+        "Maritime"
+      ],
       "type": "cultural"
     },
     {
-      "date": "01.01.001200",
+      "date": "01.01.1200",
       "era": "BC",
       "name": "Coastal Trade Networks of the Vietnamese Seaboard",
       "name_ru": "Прибрежные торговые сети вьетнамского побережья",
       "description": "The long Vietnamese coastline — over 3,000 km from the Gulf of Tonkin to the Gulf of Thailand — becomes a zone of sustained maritime exchange linking northern Bronze Age cultures with the Sa Huỳnh of the centre, island Southeast Asia to the east, and the Mekong basin to the west. Outrigger canoe technology, inherited from the Austronesian maritime tradition, enables reliable inter-community contact across the South China Sea. Exotic materials — glass beads, carnelian, nephrite, tin — moving through these networks confirm a sophisticated exchange system that predates by many centuries the later Bronze Age maritime networks of the Mediterranean.",
       "description_ru": "Длинное вьетнамское побережье — более 3000 км от Тонкинского залива до Сиамского — становится зоной устойчивого морского обмена, соединяющей северные бронзовые культуры с Са Хуинь в центре, островной ЮВА на востоке и бассейном Меконга на западе. Технология лодок с аутригером обеспечивает надёжный контакт между общинами. Экзотические материалы — стеклянные бусины, сердолик, нефрит, олово — подтверждают изощрённую обменную систему.",
-      "latitude": 16.0,
-      "longitude": 108.0,
+      "latitude": 16,
+      "longitude": 108,
       "source": "https://en.wikipedia.org/wiki/Sa_Huynh_culture",
-      "tags": ["Vietnamese", "Maritime", "Trade"],
+      "tags": [
+        "Vietnamese",
+        "Maritime",
+        "Trade"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.001100",
+      "date": "01.01.1100",
       "era": "BC",
       "name": "Water Buffalo — Agricultural and Ritual Animal",
       "name_ru": "Водяной буйвол — сельскохозяйственное и ритуальное животное",
@@ -284,11 +383,16 @@
       "latitude": 21.03,
       "longitude": 105.83,
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
-      "tags": ["Vietnamese", "Agriculture", "Religious", "Culture"],
+      "tags": [
+        "Vietnamese",
+        "Agriculture",
+        "Religious",
+        "Culture"
+      ],
       "type": "cultural"
     },
     {
-      "date": "01.01.001000",
+      "date": "01.01.1000",
       "era": "BC",
       "name": "Gò Mun Culture — Sophisticated Bronze Casting",
       "name_ru": "Культура Го Мун — изощрённое бронзовое литьё",
@@ -297,37 +401,50 @@
       "latitude": 21.37,
       "longitude": 105.24,
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
-      "tags": ["Vietnamese", "Bronze Age", "Culture", "Văn Lang"],
+      "tags": [
+        "Vietnamese",
+        "Bronze Age",
+        "Culture",
+        "Văn Lang"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.001000",
+      "date": "01.01.1000",
       "era": "BC",
       "name": "Long-Distance Exchange with Southern China",
       "name_ru": "Дальний обмен с Южным Китаем",
       "description": "By the late second millennium BC, the bronze cultures of the Red River valley maintain regular exchange with Chinese states via overland mountain passes and coastal maritime routes. Chinese bronze vessels and weapons occasionally reach Vietnamese sites as prestige imports; Vietnamese nephrite ornaments and possibly bronze objects move northward. Chinese oracle bone and bronze inscriptions begin mentioning the 'southern Yi' or 'Yue' (越) peoples in this general period — the earliest written references to the ethnolinguistic world that includes the ancestors of the Vietnamese. The exchange relationship is not yet tributary: it is a peer-to-peer exchange between equivalent polities.",
       "description_ru": "К концу II тысячелетия до н. э. бронзовые культуры долины Красной реки поддерживают регулярный обмен с китайскими государствами через горные перевалы и морские маршруты. Китайские бронзовые сосуды и оружие иногда достигают вьетнамских памятников; вьетнамские нефритовые украшения движутся на север. Китайские надписи эпохи Шан упоминают «южных И» или «юэ» (越) — древнейшие письменные ссылки на предков вьетнамцев.",
-      "latitude": 22.0,
-      "longitude": 105.0,
+      "latitude": 22,
+      "longitude": 105,
       "source": "https://en.wikipedia.org/wiki/Baiyue",
-      "tags": ["Vietnamese", "Trade", "Chinese"],
+      "tags": [
+        "Vietnamese",
+        "Trade",
+        "Chinese"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.000900",
+      "date": "01.01.0900",
       "era": "BC",
       "name": "Bách Việt — Hundred Yue Peoples of Southern China and Vietnam",
       "name_ru": "Бак Вьет — «Сто Юэ», народы Южного Китая и Вьетнама",
       "description": "Chinese Zhou dynasty texts refer to the 'Bách Việt' (Hundred Yue, 百越) — a collective term for the numerous non-Han peoples occupying the vast territory from the Yangtze River southward through modern Guangdong, Guangxi, and northern Vietnam. The Bách Việt are not a single people but a diverse array of ethnolinguistic communities sharing certain cultural traits: rice agriculture, stilt-house architecture, bronze drum use, tattooing, tooth blackening, and water-oriented subsistence. The ancestors of the Vietnamese (Lạc Việt, one of the Hundred Yue branches) occupy the Red River valley and its surrounding uplands. This ethnic categorisation by Chinese observers is the earliest historical framework within which Vietnamese identity takes shape.",
       "description_ru": "Тексты китайской эпохи Чжоу называют «Бак Вьет» (Сто Юэ, 百越) — собирательный термин для многочисленных нехань народов, занимающих огромную территорию от реки Янцзы к югу через Гуандун, Гуанси и Северный Вьетнам. Бак Вьет — не единый народ, а разнородный массив этнолингвистических общин: рисоводство, жилища на сваях, бронзовые барабаны, татуировка, чернение зубов. Предки вьетнамцев (лак-вьет, одна из ветвей ста юэ) занимают долину Красной реки.",
       "latitude": 21.5,
-      "longitude": 106.0,
+      "longitude": 106,
       "source": "https://en.wikipedia.org/wiki/Baiyue",
-      "tags": ["Vietnamese", "Civilization", "Chinese"],
+      "tags": [
+        "Vietnamese",
+        "Civilization",
+        "Chinese"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.000879",
+      "date": "01.01.0879",
       "era": "BC",
       "name": "Văn Lang — the Hùng King Kingdom",
       "name_ru": "Ван Ланг — царство ванов Хунг",
@@ -336,11 +453,15 @@
       "latitude": 21.3,
       "longitude": 105.4,
       "source": "https://en.wikipedia.org/wiki/Van_Lang",
-      "tags": ["Vietnamese", "Political", "Văn Lang"],
+      "tags": [
+        "Vietnamese",
+        "Political",
+        "Văn Lang"
+      ],
       "type": "political"
     },
     {
-      "date": "01.01.000850",
+      "date": "01.01.0850",
       "era": "BC",
       "name": "Phong Châu — Capital of Văn Lang",
       "name_ru": "Фонг Тяу — столица Ван Ланга",
@@ -349,11 +470,16 @@
       "latitude": 21.4,
       "longitude": 105.23,
       "source": "https://en.wikipedia.org/wiki/H%C3%B9ng_king",
-      "tags": ["Vietnamese", "Political", "Văn Lang", "Religious"],
+      "tags": [
+        "Vietnamese",
+        "Political",
+        "Văn Lang",
+        "Religious"
+      ],
       "type": "political"
     },
     {
-      "date": "01.01.000800",
+      "date": "01.01.0800",
       "era": "BC",
       "name": "Đông Sơn Culture — Vietnam's Bronze Age Apex",
       "name_ru": "Культура Донгшон — вершина бронзового века Вьетнама",
@@ -362,11 +488,16 @@
       "latitude": 19.9,
       "longitude": 105.77,
       "source": "https://en.wikipedia.org/wiki/Dong_Son_culture",
-      "tags": ["Vietnamese", "Bronze Age", "Văn Lang", "Civilization"],
+      "tags": [
+        "Vietnamese",
+        "Bronze Age",
+        "Văn Lang",
+        "Civilization"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.000750",
+      "date": "01.01.0750",
       "era": "BC",
       "name": "Đông Sơn Metallurgical Revolution",
       "name_ru": "Металлургическая революция Донгшона",
@@ -375,11 +506,15 @@
       "latitude": 19.9,
       "longitude": 105.77,
       "source": "https://en.wikipedia.org/wiki/Dong_Son_culture",
-      "tags": ["Vietnamese", "Bronze Age", "Civilization"],
+      "tags": [
+        "Vietnamese",
+        "Bronze Age",
+        "Civilization"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.000700",
+      "date": "01.01.0700",
       "era": "BC",
       "name": "Trống Đồng — The Đông Sơn Bronze Drum",
       "name_ru": "Чонг Донг — бронзовый барабан Донгшона",
@@ -388,11 +523,16 @@
       "latitude": 19.9,
       "longitude": 105.77,
       "source": "https://en.wikipedia.org/wiki/Dong_Son_drum",
-      "tags": ["Vietnamese", "Bronze Age", "Văn Lang", "Culture"],
+      "tags": [
+        "Vietnamese",
+        "Bronze Age",
+        "Văn Lang",
+        "Culture"
+      ],
       "type": "cultural"
     },
     {
-      "date": "01.01.000700",
+      "date": "01.01.0700",
       "era": "BC",
       "name": "Đông Sơn Drum Iconography — Cosmology in Bronze",
       "name_ru": "Иконография барабанов Донгшона — космология в бронзе",
@@ -401,11 +541,16 @@
       "latitude": 19.9,
       "longitude": 105.77,
       "source": "https://en.wikipedia.org/wiki/Dong_Son_drum",
-      "tags": ["Vietnamese", "Religious", "Culture", "Văn Lang"],
+      "tags": [
+        "Vietnamese",
+        "Religious",
+        "Culture",
+        "Văn Lang"
+      ],
       "type": "religious"
     },
     {
-      "date": "01.01.000680",
+      "date": "01.01.0680",
       "era": "BC",
       "name": "Đông Sơn Boat Culture and River Warfare",
       "name_ru": "Лодочная культура и речные войны Донгшона",
@@ -414,11 +559,16 @@
       "latitude": 21.03,
       "longitude": 105.83,
       "source": "https://en.wikipedia.org/wiki/Dong_Son_culture",
-      "tags": ["Vietnamese", "Military", "Culture", "Maritime"],
+      "tags": [
+        "Vietnamese",
+        "Military",
+        "Culture",
+        "Maritime"
+      ],
       "type": "cultural"
     },
     {
-      "date": "01.01.000650",
+      "date": "01.01.0650",
       "era": "BC",
       "name": "Sa Huỳnh Iron Smelting — One of Southeast Asia's Earliest",
       "name_ru": "Железоделательное производство Са Хуинь — одно из первых в ЮВА",
@@ -427,11 +577,15 @@
       "latitude": 14.97,
       "longitude": 108.9,
       "source": "https://en.wikipedia.org/wiki/Sa_Huynh_culture",
-      "tags": ["Vietnamese", "Sa Huỳnh", "Civilization"],
+      "tags": [
+        "Vietnamese",
+        "Sa Huỳnh",
+        "Civilization"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.000640",
+      "date": "01.01.0640",
       "era": "BC",
       "name": "Đông Sơn Weapons — Daggers, Axes, and Spear Tips",
       "name_ru": "Вооружение Донгшона — кинжалы, топоры и наконечники копий",
@@ -440,11 +594,15 @@
       "latitude": 19.9,
       "longitude": 105.77,
       "source": "https://en.wikipedia.org/wiki/Dong_Son_culture",
-      "tags": ["Vietnamese", "Military", "Văn Lang"],
+      "tags": [
+        "Vietnamese",
+        "Military",
+        "Văn Lang"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.000630",
+      "date": "01.01.0630",
       "era": "BC",
       "name": "Hùng King Agricultural Festivals",
       "name_ru": "Аграрные праздники ванов Хунг",
@@ -453,11 +611,16 @@
       "latitude": 21.4,
       "longitude": 105.23,
       "source": "https://en.wikipedia.org/wiki/H%C3%B9ng_king",
-      "tags": ["Vietnamese", "Religious", "Văn Lang", "Culture"],
+      "tags": [
+        "Vietnamese",
+        "Religious",
+        "Văn Lang",
+        "Culture"
+      ],
       "type": "religious"
     },
     {
-      "date": "01.01.000620",
+      "date": "01.01.0620",
       "era": "BC",
       "name": "Lạc Việt in Chinese Written Records",
       "name_ru": "Лак-вьет в китайских письменных источниках",
@@ -466,11 +629,16 @@
       "latitude": 21.03,
       "longitude": 105.83,
       "source": "https://en.wikipedia.org/wiki/Baiyue",
-      "tags": ["Vietnamese", "Chinese", "Văn Lang", "Political"],
+      "tags": [
+        "Vietnamese",
+        "Chinese",
+        "Văn Lang",
+        "Political"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.000600",
+      "date": "01.01.0600",
       "era": "BC",
       "name": "Văn Lang — the 15 Administrative Regions",
       "name_ru": "Ван Ланг — 15 административных областей",
@@ -479,11 +647,15 @@
       "latitude": 21.3,
       "longitude": 105.4,
       "source": "https://en.wikipedia.org/wiki/Van_Lang",
-      "tags": ["Vietnamese", "Political", "Văn Lang"],
+      "tags": [
+        "Vietnamese",
+        "Political",
+        "Văn Lang"
+      ],
       "type": "political"
     },
     {
-      "date": "01.01.000600",
+      "date": "01.01.0600",
       "era": "BC",
       "name": "Lạc Lords — the Warrior Aristocracy of Văn Lang",
       "name_ru": "Лак-лорды — воинская аристократия Ван Ланга",
@@ -492,37 +664,52 @@
       "latitude": 21.03,
       "longitude": 105.83,
       "source": "https://en.wikipedia.org/wiki/Van_Lang",
-      "tags": ["Vietnamese", "Political", "Military", "Văn Lang"],
+      "tags": [
+        "Vietnamese",
+        "Political",
+        "Military",
+        "Văn Lang"
+      ],
       "type": "political"
     },
     {
-      "date": "01.01.000590",
+      "date": "01.01.0590",
       "era": "BC",
       "name": "Proto-Khmer Communities in the Mekong Delta",
       "name_ru": "Прото-кхмерские общины в дельте Меконга",
       "description": "Archaeological survey in the lower Mekong delta and the Tonle Sap basin of modern Cambodia reveals Bronze Age communities distinct from the Đông Sơn tradition of the north but broadly contemporary with it. These communities — the cultural ancestors of the later Khmer civilisation — practice wet-rice agriculture, construct earthen embankments for water control, and produce locally distinct bronze and early iron objects. The circular earthwork settlements of the Mekong plain (some hundreds of metres in diameter, visible in satellite imagery) date to roughly 500–200 BC and represent the first evidence of organised landscape modification at a proto-urban scale in Cambodia.",
       "description_ru": "Археологическая съёмка в нижней дельте Меконга и бассейне Тонлесап выявляет бронзовые общины, отличные от традиции Донгшон на севере, но широко синхронные ей. Эти общины — культурные предки позднейшей кхмерской цивилизации — практикуют поливное рисоводство и возводят земляные валы для водорегулирования. Круглые городищенные поселения Меконгской равнины датируются около 500–200 гг. до н. э. и представляют первые свидетельства организованной трансформации ландшафта в Камбодже.",
-      "latitude": 12.0,
-      "longitude": 105.0,
+      "latitude": 12,
+      "longitude": 105,
       "source": "https://en.wikipedia.org/wiki/Samrong_Sen",
-      "tags": ["Khmer", "Cambodia", "Settlement", "Agriculture"],
+      "tags": [
+        "Khmer",
+        "Cambodia",
+        "Settlement",
+        "Agriculture"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.000580",
+      "date": "01.01.0580",
       "era": "BC",
       "name": "Vietnamese-Chinese Frontier — Contact with Wu and Chu",
       "name_ru": "Вьетнамско-китайская граница — контакты с У и Чу",
       "description": "The southernmost of the Chinese Warring States — particularly Chu (楚) and Wu (吳, centred in the Yangtze delta) — press southward toward the Bách Việt zones in the 6th–5th centuries BC, creating a zone of political contact, conflict, and cultural exchange along the Red River's northern approaches. Chinese sources record punitive expeditions into Yue territory and the incorporation of Yue auxiliaries into Chinese armies. Bronze objects and ceramic types show clear bidirectional exchange: Đông Sơn forms influence southern Chinese workshops and vice versa. This intensifying Chinese pressure is the long-term driver of the political consolidation of Văn Lang — external threat encourages the Hùng Kings to extend their authority more firmly over the Lạc lords.",
       "description_ru": "Наиболее южные из китайских Сражающихся царств — особенно Чу и У (центрированные в дельте Янцзы) — давят на юг к зонам Бак Вьет в VI–V вв. до н. э., создавая зону политического контакта, конфликта и культурного обмена. Китайские источники фиксируют карательные экспедиции в территорию юэ и включение вьетских вспомогательных войск в китайские армии. Это нарастающее китайское давление — долгосрочный движитель политической консолидации Ван Ланга.",
-      "latitude": 22.0,
-      "longitude": 106.0,
+      "latitude": 22,
+      "longitude": 106,
       "source": "https://en.wikipedia.org/wiki/Baiyue",
-      "tags": ["Vietnamese", "Chinese", "Military", "Political"],
+      "tags": [
+        "Vietnamese",
+        "Chinese",
+        "Military",
+        "Political"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.000560",
+      "date": "01.01.0560",
       "era": "BC",
       "name": "Đông Sơn Elite Burials — Bronze Prestige Goods",
       "name_ru": "Элитные захоронения Донгшона — престижные бронзовые предметы",
@@ -531,11 +718,16 @@
       "latitude": 19.9,
       "longitude": 105.77,
       "source": "https://en.wikipedia.org/wiki/Dong_Son_culture",
-      "tags": ["Vietnamese", "Culture", "Văn Lang", "Religious"],
+      "tags": [
+        "Vietnamese",
+        "Culture",
+        "Văn Lang",
+        "Religious"
+      ],
       "type": "cultural"
     },
     {
-      "date": "01.01.000550",
+      "date": "01.01.0550",
       "era": "BC",
       "name": "Sa Huỳnh Bead Trade — Carnelian and Glass from the Indian Ocean",
       "name_ru": "Торговля бусами Са Хуинь — сердолик и стекло из Индийского океана",
@@ -544,11 +736,16 @@
       "latitude": 14.97,
       "longitude": 108.9,
       "source": "https://en.wikipedia.org/wiki/Sa_Huynh_culture",
-      "tags": ["Vietnamese", "Sa Huỳnh", "Trade", "Maritime"],
+      "tags": [
+        "Vietnamese",
+        "Sa Huỳnh",
+        "Trade",
+        "Maritime"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.000540",
+      "date": "01.01.0540",
       "era": "BC",
       "name": "Mê Linh — Red River Chieftainship",
       "name_ru": "Ме Линь — вождество в дельте Красной реки",
@@ -557,11 +754,15 @@
       "latitude": 21.18,
       "longitude": 105.72,
       "source": "https://en.wikipedia.org/wiki/Van_Lang",
-      "tags": ["Vietnamese", "Political", "Văn Lang"],
+      "tags": [
+        "Vietnamese",
+        "Political",
+        "Văn Lang"
+      ],
       "type": "political"
     },
     {
-      "date": "01.01.000530",
+      "date": "01.01.0530",
       "era": "BC",
       "name": "Đông Sơn Drums as Diplomatic Currency",
       "name_ru": "Барабаны Донгшона как дипломатическая валюта",
@@ -570,11 +771,16 @@
       "latitude": 19.9,
       "longitude": 105.77,
       "source": "https://en.wikipedia.org/wiki/Dong_Son_drum",
-      "tags": ["Vietnamese", "Diplomacy", "Trade", "Văn Lang"],
+      "tags": [
+        "Vietnamese",
+        "Diplomacy",
+        "Trade",
+        "Văn Lang"
+      ],
       "type": "cultural"
     },
     {
-      "date": "01.01.000520",
+      "date": "01.01.0520",
       "era": "BC",
       "name": "Dragon Boat Tradition and Water Festivals",
       "name_ru": "Традиция лодки-дракона и водные праздники",
@@ -583,11 +789,16 @@
       "latitude": 21.03,
       "longitude": 105.83,
       "source": "https://en.wikipedia.org/wiki/Dong_Son_culture",
-      "tags": ["Vietnamese", "Religious", "Culture", "Văn Lang"],
+      "tags": [
+        "Vietnamese",
+        "Religious",
+        "Culture",
+        "Văn Lang"
+      ],
       "type": "religious"
     },
     {
-      "date": "01.01.000510",
+      "date": "01.01.0510",
       "era": "BC",
       "name": "Đông Sơn Influence across Island Southeast Asia",
       "name_ru": "Влияние Донгшона на островную ЮВА",
@@ -596,11 +807,16 @@
       "latitude": 19.9,
       "longitude": 105.77,
       "source": "https://en.wikipedia.org/wiki/Dong_Son_drum",
-      "tags": ["Vietnamese", "Maritime", "Trade", "Civilization"],
+      "tags": [
+        "Vietnamese",
+        "Maritime",
+        "Trade",
+        "Civilization"
+      ],
       "type": "cultural"
     },
     {
-      "date": "01.01.000505",
+      "date": "01.01.0505",
       "era": "BC",
       "name": "Sa Huỳnh Maritime Networks — Vietnam to Philippines",
       "name_ru": "Морские сети Са Хуинь — от Вьетнама до Филиппин",
@@ -609,11 +825,16 @@
       "latitude": 14.97,
       "longitude": 108.9,
       "source": "https://en.wikipedia.org/wiki/Sa_Huynh_culture",
-      "tags": ["Vietnamese", "Sa Huỳnh", "Maritime", "Trade"],
+      "tags": [
+        "Vietnamese",
+        "Sa Huỳnh",
+        "Maritime",
+        "Trade"
+      ],
       "type": "historic"
     },
     {
-      "date": "01.01.000500",
+      "date": "01.01.0500",
       "era": "BC",
       "name": "Văn Lang at its Height — the Hùng King System",
       "name_ru": "Ван Ланг на своём пике — система ванов Хунг",
@@ -622,7 +843,12 @@
       "latitude": 21.3,
       "longitude": 105.4,
       "source": "https://en.wikipedia.org/wiki/Van_Lang",
-      "tags": ["Vietnamese", "Political", "Civilization", "Văn Lang"],
+      "tags": [
+        "Vietnamese",
+        "Political",
+        "Civilization",
+        "Văn Lang"
+      ],
       "type": "political"
     }
   ]
