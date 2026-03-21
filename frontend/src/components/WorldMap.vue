@@ -70,7 +70,7 @@
                 <span class="timeline_single_text">
                   <span class="timeline_date_inline">{{ yearGroup.dateGroups[0].events[0]._formattedDate }}</span>
                   {{ ' ' }}
-                  <span class="event_icon">{{ get_event_emoji(yearGroup.dateGroups[0].events[0].lens_type) }}</span>
+                  <span class="event_icon">{{ get_event_emoji(yearGroup.dateGroups[0].events[0].lens_type, yearGroup.dateGroups[0].events[0].tags) }}</span>
                   {{ ' ' }}
                   <span 
                      class="event_name event_name_link"
@@ -136,7 +136,7 @@
                         <span class="timeline_single_text">
                           <span class="timeline_date_inline_sub">{{ dateGroup.formattedDate }}</span>
                           {{ ' ' }}
-                          <span class="event_icon">{{ get_event_emoji(dateGroup.events[0].lens_type) }}</span>
+                          <span class="event_icon">{{ get_event_emoji(dateGroup.events[0].lens_type, dateGroup.events[0].tags) }}</span>
                           {{ ' ' }}
                           <span 
                              class="event_name event_name_link"
@@ -199,7 +199,7 @@
                         :class="{ 'timeline_event_line_indented': dateGroup.showDateHeader }"
                       >
                         <span class="timeline_single_text">
-                          <span class="event_icon">{{ get_event_emoji(event.lens_type) }}</span>
+                          <span class="event_icon">{{ get_event_emoji(event.lens_type, event.tags) }}</span>
                           {{ ' ' }}
                           <span 
                              class="event_name event_name_link"
@@ -1039,9 +1039,11 @@ export default {
               
               if (currentZoom >= 15 && childMarkers.length === 1) {
                 const displayCount = totalEventCount > 99 ? '99+' : totalEventCount
+                const childEvents = childMarkers[0].events || []
+                const clusterEmoji = this.get_tag_emoji(childEvents) || getEventEmoji(childEvents[0]?.lens_type || 'historic')
                 return L.divIcon({
                   html: `<div class="emoji-marker cluster-marker" data-lens="cluster">
-                           📍
+                           ${clusterEmoji}
                            <span class="marker-count-badge">${displayCount}</span>
                          </div>`,
                   className: 'emoji-marker-container',
@@ -1122,6 +1124,16 @@ export default {
                 bgStyle = `conic-gradient(${segments.join(', ')})`
               }
               
+              const emojiFreqs = {}
+              childMarkers.forEach(marker => {
+                const events = marker.events || []
+                events.forEach(event => {
+                  const emoji = this.get_tag_emoji([event])
+                  if (emoji) emojiFreqs[emoji] = (emojiFreqs[emoji] || 0) + 1
+                })
+              })
+              const dominantEmoji = Object.entries(emojiFreqs).sort((a, b) => b[1] - a[1])[0]?.[0] || null
+
               const circleStyles = `
                 width: ${circleSize}px;
                 height: ${circleSize}px;
@@ -1137,11 +1149,16 @@ export default {
                 justify-content: center;
                 box-shadow: 0 2px 8px rgba(99, 102, 241, 0.5), 0 4px 12px rgba(0, 0, 0, 0.25);
                 cursor: pointer;
+                position: relative;
                 text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
               `.replace(/\s+/g, ' ').trim()
+
+              const innerHtml = dominantEmoji
+                ? `<span style="font-size:${Math.round(circleSize * 0.5)}px;line-height:1;text-shadow:none">${dominantEmoji}</span><span class="marker-count-badge">${displayCount}</span>`
+                : displayCount
               
               return L.divIcon({
-                html: `<div style="${circleStyles}">${displayCount}</div>`,
+                html: `<div style="${circleStyles}">${innerHtml}</div>`,
                 className: 'cluster-circle-container',
                 iconSize: [circleSize, circleSize],
                 iconAnchor: [halfSize, halfSize],
@@ -1475,7 +1492,12 @@ export default {
       return this.format_date_to_ddmmyyyy(new Date(date_string))
     },
 
-    get_event_emoji(lensType) {
+    get_event_emoji(lensType, tags) {
+      if (tags && Array.isArray(tags)) {
+        for (const tag of tags) {
+          if (tag.emoji) return tag.emoji
+        }
+      }
       return getEventEmoji(lensType)
     },
 

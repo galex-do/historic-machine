@@ -3,6 +3,25 @@
  */
 
 /**
+ * Get first custom emoji set on any of the event's tags (ordered by tag weight).
+ * Returns null when no tag carries an emoji.
+ */
+export function getTagEmoji(tags) {
+  if (!tags || !Array.isArray(tags)) return null
+  for (const tag of tags) {
+    if (tag.emoji) return tag.emoji
+  }
+  return null
+}
+
+/**
+ * Resolve the display emoji for an event: tag emoji takes priority over lens-type emoji.
+ */
+export function resolveEventEmoji(event) {
+  return getTagEmoji(event?.tags) || getEventEmoji(event?.lens_type)
+}
+
+/**
  * Get emoji for event lens type
  */
 export function getEventEmoji(lensType) {

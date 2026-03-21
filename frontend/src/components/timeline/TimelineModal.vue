@@ -62,7 +62,7 @@
               <span class="timeline_single_text">
                 <span class="timeline_date_inline">{{ yearGroup.dateGroups[0].events[0]._formattedDate }}</span>
                 {{ ' ' }}
-                <span class="event_icon">{{ getEventEmoji(yearGroup.dateGroups[0].events[0].lens_type) }}</span>
+                <span class="event_icon">{{ resolve_event_emoji(yearGroup.dateGroups[0].events[0]) }}</span>
                 {{ ' ' }}
                 <span 
                    class="event_name event_name_link"
@@ -127,7 +127,7 @@
                       <span class="timeline_single_text">
                         <span class="timeline_date_inline_sub">{{ dateGroup.formattedDate }}</span>
                         {{ ' ' }}
-                        <span class="event_icon">{{ getEventEmoji(dateGroup.events[0].lens_type) }}</span>
+                        <span class="event_icon">{{ resolve_event_emoji(dateGroup.events[0]) }}</span>
                         {{ ' ' }}
                         <span 
                            class="event_name event_name_link"
@@ -189,7 +189,7 @@
                       :class="{ 'timeline_event_line_indented': dateGroup.showDateHeader }"
                     >
                       <span class="timeline_single_text">
-                        <span class="event_icon">{{ getEventEmoji(event.lens_type) }}</span>
+                        <span class="event_icon">{{ resolve_event_emoji(event) }}</span>
                         {{ ' ' }}
                         <span 
                            class="event_name event_name_link"
@@ -262,7 +262,7 @@
 <script>
 import { ref, computed, watch, onMounted, onUnmounted, nextTick } from 'vue'
 import { useLocale } from '@/composables/useLocale.js'
-import { getEventEmoji } from '@/utils/event-utils.js'
+import { getEventEmoji, getTagEmoji } from '@/utils/event-utils.js'
 import { getContrastColor, getTagStyle, getKeyColorTags } from '@/utils/color-utils.js'
 
 export default {
@@ -748,6 +748,7 @@ export default {
       handleShowDetail,
       handleScroll,
       getEventEmoji,
+      resolve_event_emoji: (event) => getTagEmoji(event?.tags) || getEventEmoji(event?.lens_type),
       getContrastColor,
       getTagStyle,
       getKeyColorTags,
