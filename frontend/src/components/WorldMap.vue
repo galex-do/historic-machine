@@ -1124,16 +1124,6 @@ export default {
                 bgStyle = `conic-gradient(${segments.join(', ')})`
               }
               
-              const emojiFreqs = {}
-              childMarkers.forEach(marker => {
-                const events = marker.events || []
-                events.forEach(event => {
-                  const emoji = this.get_tag_emoji([event])
-                  if (emoji) emojiFreqs[emoji] = (emojiFreqs[emoji] || 0) + 1
-                })
-              })
-              const dominantEmoji = Object.entries(emojiFreqs).sort((a, b) => b[1] - a[1])[0]?.[0] || null
-
               const circleStyles = `
                 width: ${circleSize}px;
                 height: ${circleSize}px;
@@ -1149,16 +1139,11 @@ export default {
                 justify-content: center;
                 box-shadow: 0 2px 8px rgba(99, 102, 241, 0.5), 0 4px 12px rgba(0, 0, 0, 0.25);
                 cursor: pointer;
-                position: relative;
                 text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
               `.replace(/\s+/g, ' ').trim()
-
-              const innerHtml = dominantEmoji
-                ? `<span style="font-size:${Math.round(circleSize * 0.5)}px;line-height:1;text-shadow:none">${dominantEmoji}</span><span class="marker-count-badge">${displayCount}</span>`
-                : displayCount
               
               return L.divIcon({
-                html: `<div style="${circleStyles}">${innerHtml}</div>`,
+                html: `<div style="${circleStyles}">${displayCount}</div>`,
                 className: 'cluster-circle-container',
                 iconSize: [circleSize, circleSize],
                 iconAnchor: [halfSize, halfSize],
