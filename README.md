@@ -2,9 +2,7 @@
 
 An interactive platform for mapping historical events on a world map. Every event has a place and a time — timediverr lets you explore both together.
 
-![Map view with clustered events](docs/images/screenshot-map.png)
-
-![Event timeline detail](docs/images/screenshot-events.png)
+![Map view with filtered events and clusters](docs/images/screenshot-map.png)
 
 ## Features
 
