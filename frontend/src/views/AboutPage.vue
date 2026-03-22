@@ -35,6 +35,10 @@
         </div>
       </section>
 
+      <section class="about-section disclaimer-section">
+        <p>{{ t('aboutDisclaimer') }}</p>
+      </section>
+
       <section class="about-section">
         <h2>{{ t('aboutFeaturesTitle') }}</h2>
         <ul class="features-list">
