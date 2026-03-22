@@ -7,28 +7,6 @@
         <p>{{ t('aboutProjectDescription') }}</p>
       </section>
 
-      <section class="about-section">
-        <h2>{{ t('aboutFeaturesTitle') }}</h2>
-        <ul class="features-list">
-          <li>{{ t('aboutFeature1') }}</li>
-          <li>{{ t('aboutFeature2') }}</li>
-          <li>{{ t('aboutFeature3') }}</li>
-          <li>{{ t('aboutFeature4') }}</li>
-          <li>{{ t('aboutFeature5') }}</li>
-        </ul>
-      </section>
-
-      <section class="about-section">
-        <h2>{{ t('aboutUseCasesTitle') }}</h2>
-        <ul class="use-cases-list">
-          <li>{{ t('aboutUseCase1') }}</li>
-          <li>{{ t('aboutUseCase2') }}</li>
-          <li>{{ t('aboutUseCase3') }}</li>
-          <li>{{ t('aboutUseCase4') }}</li>
-          <li>{{ t('aboutUseCase5') }}</li>
-        </ul>
-      </section>
-
       <section class="open-source-section">
         <div class="open-source-notice">
           <span class="os-icon">📖</span>
@@ -55,6 +33,28 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="about-section">
+        <h2>{{ t('aboutFeaturesTitle') }}</h2>
+        <ul class="features-list">
+          <li>{{ t('aboutFeature1') }}</li>
+          <li>{{ t('aboutFeature2') }}</li>
+          <li>{{ t('aboutFeature3') }}</li>
+          <li>{{ t('aboutFeature4') }}</li>
+          <li>{{ t('aboutFeature5') }}</li>
+        </ul>
+      </section>
+
+      <section class="about-section">
+        <h2>{{ t('aboutUseCasesTitle') }}</h2>
+        <ul class="use-cases-list">
+          <li>{{ t('aboutUseCase1') }}</li>
+          <li>{{ t('aboutUseCase2') }}</li>
+          <li>{{ t('aboutUseCase3') }}</li>
+          <li>{{ t('aboutUseCase4') }}</li>
+          <li>{{ t('aboutUseCase5') }}</li>
+        </ul>
       </section>
 
       <section v-if="supportCredentials.length > 0" class="support-section">
