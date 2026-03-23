@@ -3,7 +3,7 @@
     <div class="about-container">
       <h1>{{ t('aboutTitle') }}</h1>
       
-      <section class="about-section">
+      <section class="about-section" style="border-bottom: none; padding-bottom: 0;">
         <p>{{ t('aboutProjectDescription') }}</p>
       </section>
 
