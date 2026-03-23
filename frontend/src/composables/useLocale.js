@@ -48,12 +48,12 @@ const UI_TRANSLATIONS = {
     
     // About Page
     aboutTitle: 'About project',
-    aboutProjectDescription: 'timediverr is an interactive platform based on a simple principle: every event has a time and place. I am often interested in understanding the context of a given event, which typically requires extensive reading. Here I try to solve the problem in a shorter way.',
+    aboutProjectDescription: 'timediverr is an interactive platform based on a simple principle: every event has a time and place. I have interest in understanding the context of events, which typically requires research. Here I try to simplify the process.',
     aboutFeaturesTitle: 'Features',
     aboutFeature1: 'Interactive world map with historical event markers',
-    aboutFeature2: 'Timeline filtering by historical periods and date ranges',
+    aboutFeature2: 'Timeline filtering by historical periods and date ranges. Regions, displayed for chosen periods',
     aboutFeature3: 'Categorize, search, and filter events by tags. Track events with tags from earliest to latest',
-    aboutFeature4: 'A full-featured admin panel for managing events and tags',
+    aboutFeature4: 'A full-featured admin panel for managing events, tags, periods and regions',
     aboutFeature5: 'Structuring event sets into datasets, tools for exporting and importing datasets in JSON',
     aboutUseCasesTitle: 'Use Cases',
     aboutUseCase1: 'Teachers can create visual lessons showing how empires rose and fell across geography and time',
@@ -65,7 +65,7 @@ const UI_TRANSLATIONS = {
     aboutDisclaimer: 'I am not a historian, so please maintain healthy scepticism when exploring the map. For my part, I try to verify all information before adding it.',
     aboutContact: 'Contact',
     aboutSupportTitle: 'Support timediverr',
-    aboutSupportDescription: 'If you find this project useful and would like to support its development and growth, you can contribute through the following options:',
+    aboutSupportDescription: 'There is and will be no advertising in the project. If you find this project useful and would like to support its development and growth, you can contribute through the following options:',
     aboutSupportLinkText: 'Visit',
     backToMap: 'Back to Map',
     
@@ -383,12 +383,12 @@ const UI_TRANSLATIONS = {
     
     // About Page
     aboutTitle: 'О проекте',
-    aboutProjectDescription: 'timediverr — интерактивная платформа, в основе которой простой принцип: у каждого события есть время и место. Мне часто интересно получить представление о контексте того или иного события, для чего, как правило, нужно прочитать много специализированной литературы. Здесь я пытаюсь решить проблему более коротким путем.',
+    aboutProjectDescription: 'timediverr — интерактивная платформа, в основе которой простой принцип: у каждого события есть время и место. Мне часто интересно понять контекст события, для чего часто нужно провести отдельное исследование. С помощью этого проекта я пытаюсь упростить этот процесс.',
     aboutFeaturesTitle: 'Возможности',
     aboutFeature1: 'Интерактивная карта мира с маркерами исторических событий',
-    aboutFeature2: 'Фильтрация событий по изучаемому региону, временной шкале и историческим периодам',
+    aboutFeature2: 'Фильтрация событий по изучаемому региону, временной шкале и историческим периодам. Визуализация исторических регионов для выбранного периода',
     aboutFeature3: 'Категоризация, поиск и фильтрация событий по тегам. Трекинг событий с тегами от самого раннего к самому позднему',
-    aboutFeature4: 'Полноценная админ-панель для управления событиями и тегами',
+    aboutFeature4: 'Полноценная админ-панель для управления событиями, тегами, периодами и регионами',
     aboutFeature5: 'Структурирование наборов событий в датасеты, инструментарий для экспорта и импорта датасетов в JSON',
     aboutUseCasesTitle: 'Варианты использования',
     aboutUseCase1: 'Преподаватели могут использовать приложение для демонстраций, чтобы показать контекст расцвета и падения империй',
@@ -400,7 +400,7 @@ const UI_TRANSLATIONS = {
     aboutDisclaimer: 'Я не историк, поэтому при знакомстве с картой проявляйте здоровый скептицизм. Со своей стороны, я стараюсь проверять всю информацию, прежде чем добавить её на карту.',
     aboutContact: 'Связаться',
     aboutSupportTitle: 'Поддержать timediverr',
-    aboutSupportDescription: 'Если вам понравился проект и вы хотели бы поддержать его развитие, можно использовать для этого:',
+    aboutSupportDescription: 'В проекте нет и не будет рекламы. Если вам понравился проект и вы хотели бы поддержать его развитие, можно использовать для этого:',
     aboutSupportLinkText: 'Перейти',
     backToMap: 'Вернуться к карте',
     
