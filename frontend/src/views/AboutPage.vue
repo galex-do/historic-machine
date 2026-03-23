@@ -14,7 +14,7 @@
             <p>{{ t('aboutOpenSource') }}</p>
             <div class="os-links">
               <a 
-                href="https://github.com/galex-do/historic-machine" 
+                href="https://github.com/galex-do/timediverr" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 class="github-link"
