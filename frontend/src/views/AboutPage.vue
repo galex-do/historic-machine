@@ -9,7 +9,7 @@
 
       <section class="open-source-section">
         <div class="open-source-notice">
-          <span class="os-icon">📖</span>
+          <span class="os-icon">🔓</span>
           <div class="os-content">
             <p>{{ t('aboutOpenSource') }}</p>
             <div class="os-links">
