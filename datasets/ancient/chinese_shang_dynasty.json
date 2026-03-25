@@ -11,7 +11,12 @@
       "latitude": 34.38,
       "longitude": 115.61,
       "source": "https://en.wikipedia.org/wiki/Yi_Yin",
-      "tags": ["Chinese", "Shang", "Legend", "Yi Yin"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Legend",
+        "Yi Yin"
+      ],
       "type": "political"
     },
     {
@@ -24,7 +29,12 @@
       "latitude": 34.38,
       "longitude": 115.61,
       "source": "https://en.wikipedia.org/wiki/Yi_Yin",
-      "tags": ["Chinese", "Shang", "Legend", "Yi Yin"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Legend",
+        "Yi Yin"
+      ],
       "type": "political"
     },
     {
@@ -37,7 +47,12 @@
       "latitude": 34.38,
       "longitude": 115.61,
       "source": "https://en.wikipedia.org/wiki/Yi_Yin",
-      "tags": ["Chinese", "Shang", "Legend", "Yi Yin"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Legend",
+        "Yi Yin"
+      ],
       "type": "political"
     },
     {
@@ -50,7 +65,11 @@
       "latitude": 34.78,
       "longitude": 113.71,
       "source": "https://en.wikipedia.org/wiki/Shang_dynasty",
-      "tags": ["Chinese", "Shang", "Legend"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Legend"
+      ],
       "type": "historic"
     },
     {
@@ -60,10 +79,15 @@
       "name_ru": "Десятидневная неделя — предки как календарь",
       "description": "The Shang dynasty organises time around a ten-day week (旬 xún) defined by the ten Celestial Stems (天干 tiāngān): jiǎ, yǐ, bǐng, dīng, wù, jǐ, gēng, xīn, rén, guǐ. Every Shang king is assigned a posthumous 'stem name' corresponding to the day of the week on which they receive sacrifice: Wu Ding (武丁) receives offerings on the dīng day; Pan Geng (盘庚) on the gēng day. This transforms the calendar into a liturgical schedule in which every day of the week is the ritual day of some ancestor, and every ancestor is embedded in the rhythm of civic time. Oracle bones record the exact ritual sequence of the five-week sacrifice cycle (祀 sì), which governs court activity more than any political schedule.",
       "description_ru": "Династия Шан организует время вокруг десятидневной недели (旬 сюнь), определяемой десятью Небесными стволами (天干 тяньгань): цзя, и, бин, дин, у, цзи, гэн, синь, жэнь, гуй. Каждому царю Шан посмертно присваивается «стволовое имя», соответствующее дню недели, когда ему приносятся жертвы: У Дин (武丁) получает подношения в день дин; Пань Гэн (盘庚) — в день гэн. Это превращает календарь в литургическое расписание, в котором каждый день недели является ритуальным днём какого-либо предка. Гадательные надписи фиксируют точную последовательность жертвенного цикла из пяти недель (祀 сы), который управляет придворной жизнью сильнее любого политического расписания.",
-      "latitude": 36.10,
-      "longitude": 114.35,
+      "latitude": 34.75,
+      "longitude": 113.7,
       "source": "https://en.wikipedia.org/wiki/Shang_dynasty",
-      "tags": ["Chinese", "Shang", "Astronomy", "Religious"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Astronomy",
+        "Religious"
+      ],
       "type": "cultural"
     },
     {
@@ -73,10 +97,14 @@
       "name_ru": "Жертвенный цикл Шан — ритуал как государственное управление",
       "description": "Oracle bones document a comprehensive and highly regulated system of ancestral sacrifice (祭祀 jìsì) in which the king performs or authorises offerings to specific royal ancestors on their designated days of the ten-day cycle, repeating through a five-week schedule that covers every major ancestor. The offerings include cattle, sheep, pigs, grain, silk, wine, and — during major ceremonies — human captives. The sheer administrative burden of tracking which ancestor receives what offering on which day across multiple sacrificial sites transforms the Shang state apparatus into, in part, a ritual scheduling machine. The diviners (贞人 zhēnrén) who manage this system are among the most literate and powerful officials at court.",
       "description_ru": "Гадательные надписи фиксируют обширную и строго регламентированную систему жертвоприношений предкам (祭祀 цзиcы), в рамках которой царь совершает подношения конкретным царским предкам в их определённые дни десятидневного цикла, повторяющегося по пятинедельному расписанию, охватывающему каждого крупного предка. Подношения включают быков, овец, свиней, зерно, шёлк, вино и — в ходе крупных церемоний — пленников. Административная нагрузка по отслеживанию того, какой предок получает какое подношение в какой день, превращает государственный аппарат Шан отчасти в машину ритуального планирования. Прорицатели (贞人 чжэньжэнь), управляющие этой системой, — одни из наиболее грамотных и влиятельных чиновников при дворе.",
-      "latitude": 36.10,
-      "longitude": 114.35,
+      "latitude": 34.75,
+      "longitude": 113.7,
       "source": "https://en.wikipedia.org/wiki/Shang_dynasty",
-      "tags": ["Chinese", "Shang", "Religious"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Religious"
+      ],
       "type": "religious"
     },
     {
@@ -84,12 +112,16 @@
       "era": "BC",
       "name": "Cowrie Shells — China's First Currency",
       "name_ru": "Раковины каури — первые деньги Китая",
-      "description": "The Shang dynasty uses cowrie shells (贝 bèi) — principally Monetaria moneta from the South China Sea, over a thousand kilometres from the Anyang heartland — as the standard medium of exchange and the primary measure of value in gift and tribute transactions. The Chinese character for 'wealth' (财), 'precious' (贵), 'buy' (买), and 'sell' (卖) all contain the cowrie radical (贝), a linguistic fossil of the Shang monetary system that survives intact to the present day. Strings of cowries (朋 péng, ten shells each) are recorded on oracle bones as gifts to generals after victorious campaigns. Bronze imitation cowries appear by the late Shang, marking the first transition toward fully artificial money in Chinese history.",
-      "description_ru": "Династия Шан использует раковины каури (贝 бэй) — преимущественно Monetaria moneta из Южно-Китайского моря, более тысячи километров от сердца Аньяна, — как стандартное средство обмена и основную меру стоимости в дарообменных и даннических операциях. Китайские иероглифы «богатство» (财), «драгоценный» (贵), «покупать» (买) и «продавать» (卖) содержат ключ каури (贝) — лингвистический след шанской денежной системы, сохранившийся по сей день. Связки каури (朋 пэн, по десять раковин) упоминаются в гадательных надписях как подарки полководцам за победоносные походы. К позднему Шан появляются бронзовые имитации каури, знаменующие первый переход к полностью искусственным деньгам в истории Китая.",
-      "latitude": 36.10,
-      "longitude": 114.35,
+      "description": "The Shang dynasty uses cowrie shells (贝 bèi) — principally Monetaria moneta from the South China Sea, over a thousand kilometres from the Shang heartland — as the standard medium of exchange and the primary measure of value in gift and tribute transactions. The Chinese character for 'wealth' (财), 'precious' (贵), 'buy' (买), and 'sell' (卖) all contain the cowrie radical (贝), a linguistic fossil of the Shang monetary system that survives intact to the present day. Strings of cowries (朋 péng, ten shells each) are recorded on oracle bones as gifts to generals after victorious campaigns. Bronze imitation cowries appear by the late Shang, marking the first transition toward fully artificial money in Chinese history.",
+      "description_ru": "Династия Шан использует раковины каури (贝 бэй) — преимущественно Monetaria moneta из Южно-Китайского моря, более тысячи километров от шанского сердца, — как стандартное средство обмена и основную меру стоимости в дарообменных и даннических операциях. Китайские иероглифы «богатство» (财), «драгоценный» (贵), «покупать» (买) и «продавать» (卖) содержат ключ каури (贝) — лингвистический след шанской денежной системы, сохранившийся по сей день. Связки каури (朋 пэн, по десять раковин) упоминаются в гадательных надписях как подарки полководцам за победоносные походы. К позднему Шан появляются бронзовые имитации каури, знаменующие первый переход к полностью искусственным деньгам в истории Китая.",
+      "latitude": 34.75,
+      "longitude": 113.7,
       "source": "https://en.wikipedia.org/wiki/Shang_dynasty",
-      "tags": ["Chinese", "Shang", "Trade"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Trade"
+      ],
       "type": "cultural"
     },
     {
@@ -99,10 +131,15 @@
       "name_ru": "Шанский шёлк и дворцовое ткачество",
       "description": "Shang bronzes preserve negative impressions of silk textiles in their casting sand, providing detailed evidence of the weaving techniques in use by 1500 BC: plain weave, twill, and an early compound weave of considerable complexity. The silk industry is closely connected to the royal house — oracle bones record the king commanding silk offerings and query ancestors about the welfare of silkworm cultivations. Bronze vessels from Shang royal burials sometimes retain patches of silk wrapping, indicating that precious bronzes were presented wrapped in silk as a mark of honour. The Chinese word for silk (丝 sī) contains the earliest character linked to thread-making, showing the industry's deep integration into the writing system itself.",
       "description_ru": "Бронзовые сосуды Шан сохраняют негативные отпечатки шёлковых тканей в литейном песке, давая подробные свидетельства ткацких техник 1500 г. до н. э.: полотняное переплетение, саржа и ранняя сложная ткань значительной сложности. Шёлковая промышленность тесно связана с царским домом — гадательные надписи фиксируют царские повеления о шёлковых подношениях и запросы к предкам о состоянии шелководства. Бронзовые сосуды из шанских царских погребений иногда сохраняют участки шёлковой обёртки, указывающей, что драгоценные бронзы преподносились завёрнутыми в шёлк как знак почёта.",
-      "latitude": 36.10,
-      "longitude": 114.35,
+      "latitude": 34.75,
+      "longitude": 113.7,
       "source": "https://en.wikipedia.org/wiki/Shang_dynasty",
-      "tags": ["Chinese", "Shang", "Silk", "Archaeology"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Silk",
+        "Archaeology"
+      ],
       "type": "cultural"
     },
     {
@@ -112,10 +149,15 @@
       "name_ru": "Армия Шан — колесницы, ополченцы и военачальники",
       "description": "Oracle bones document a Shang military system of considerable scale and organisation: campaigns could involve up to 30,000 men, drawn from the royal domain and supplemented by allied lords' contingents. The fighting force is organised around a three-division structure (left, centre, right), each division commanded by a named officer. Four-horse war chariots appear in the Shang military repertoire by at least 1200 BC, having diffused from the Eurasian steppe through the northern frontier peoples; earlier Shang campaigns rely on infantry with bronze halberds (戈 gē) and composite bows. Prisoners taken in war — called Qiang (羌) in the oracle bones, referring to western frontier peoples — supply the most numerous class of human sacrifice victims.",
       "description_ru": "Гадательные надписи документируют военную систему Шан значительного масштаба и организации: в походах могло участвовать до 30 000 человек, набираемых из царского домена и пополняемых контингентами союзных властителей. Боевые силы организованы по трёхчастной структуре (левый, центральный, правый фланги), каждым командует именной офицер. Четырёхконные боевые колесницы появляются в военном арсенале Шан не позднее 1200 г. до н. э., распространившись из евразийских степей через северных пограничных народов; более ранние походы Шан опираются на пехоту с бронзовыми алебардами (戈 гэ) и составными луками. Пленники — называемые в надписях «цян» (羌) — составляют наиболее многочисленный класс жертв человеческих жертвоприношений.",
-      "latitude": 36.10,
-      "longitude": 114.35,
+      "latitude": 35.5,
+      "longitude": 114.85,
       "source": "https://en.wikipedia.org/wiki/Shang_dynasty",
-      "tags": ["Chinese", "Shang", "Warfare", "Bronze"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Warfare",
+        "Bronze"
+      ],
       "type": "historic"
     },
     {
@@ -125,10 +167,14 @@
       "name_ru": "Дальняя торговля Шан — раковины, нефрит и оловянная бронза",
       "description": "Material analysis of objects from Shang sites reveals exchange networks of extraordinary geographical reach: cowrie shells from the South China Sea (1,200 km south), nephrite jade from the Hetian (和田) region of modern Xinjiang (3,500 km west), turquoise from Hubei and Shaanxi (400–500 km), and tin deposits — essential for bronze — from Yunnan and the middle Yangtze basin. The Shang did not operate merchant caravans in the later Silk Road sense; rather, precious materials moved through a tributary gift-exchange system in which peripheral lords delivered exotic goods to the Shang court as demonstration of submission, receiving bronze vessels and silk in return. This asymmetric exchange is the prototype of the Chinese tributary system that will define East Asian geopolitics for three thousand years.",
       "description_ru": "Материальный анализ предметов с памятников Шан выявляет обменные сети исключительного географического охвата: раковины каури из Южно-Китайского моря (1200 км к югу), нефрит из района Хотан (和田) современного Синьцзяна (3500 км к западу), бирюза из Хубэя и Шэньси (400–500 км), а также оловянные месторождения из Юньнани и бассейна средней Янцзы. Шан не располагали торговыми караванами в позднейшем смысле Шёлкового пути; вместо этого драгоценные материалы перемещались через систему даннического дарообмена, в которой периферийные властители доставляли экзотические товары ко двору Шан как знак подчинения, получая взамен бронзовые сосуды и шёлк. Эта асимметричная система является прообразом китайской даннической системы, которая будет определять восточноазиатскую геополитику три тысячелетия.",
-      "latitude": 36.10,
-      "longitude": 114.35,
+      "latitude": 35.5,
+      "longitude": 114.85,
       "source": "https://en.wikipedia.org/wiki/Shang_dynasty",
-      "tags": ["Chinese", "Shang", "Trade"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Trade"
+      ],
       "type": "cultural"
     },
     {
@@ -136,12 +182,17 @@
       "era": "BC",
       "name": "Shang Bronze Vessels — A Language Cast in Metal",
       "name_ru": "Бронзовые сосуды Шан — язык, отлитый в металле",
-      "description": "The Shang bronze industry produces a vocabulary of vessel types — the fang ding (方鼎, square cauldron), you (卣, owl-shaped wine container), gu (觚, tall flared beaker), jia (斝, three-legged warming vessel), and zun (尊, large offering jar) — each assigned a specific ritual function and associated with particular ancestors or ceremonies. The designs covering these vessels — taotie (饕餮) monster masks, dragons, birds, cicadas — are not decorative in the Western sense but are ritual pictograms whose exact meaning remains debated. Shang bronzes require teams of dozens of specialist craftsmen working coordinated sections of a clay piece-mould; the scale of production at Anyang's bronze-casting workshops (covering several hectares) is unparalleled in the ancient world outside of contemporary Mesopotamia.",
+      "description": "The Shang bronze industry produces a vocabulary of vessel types — the fang ding (方鼎, square cauldron), you (卣, owl-shaped wine container), gu (觚, tall flared beaker), jia (斝, three-legged warming vessel), and zun (尊, large offering jar) — each assigned a specific ritual function and associated with particular ancestors or ceremonies. The designs covering these vessels — taotie (饕餮) monster masks, dragons, birds, cicadas — are not decorative in the Western sense but are ritual pictograms whose exact meaning remains debated. Shang bronzes require teams of dozens of specialist craftsmen working coordinated sections of a clay piece-mould; the scale of production at the major Shang urban centres (covering several hectares) is unparalleled in the ancient world outside of contemporary Mesopotamia.",
       "description_ru": "Бронзовое производство Шан порождает словарь типов сосудов — фан дин (方鼎, квадратный котёл), ю (卣, сосуд в форме совы), гу (觚, высокий расширяющийся кубок), цзя (斝, трёхногий подогревательный сосуд) и цзунь (尊, большой жертвенный кувшин) — каждый с определённой ритуальной функцией. Узоры на этих сосудах — маски таоте (饕餮), драконы, птицы, цикады — не декоративны в западном смысле, а представляют собой ритуальные пиктограммы, точное значение которых по-прежнему дискутируется. Для создания шанских бронз требовались бригады десятков специалистов, работавших над скоординированными секциями глиняной составной формы; масштаб производства в бронзолитейных мастерских Аньяна не имеет параллелей в древнем мире, кроме современной Месопотамии.",
-      "latitude": 36.10,
-      "longitude": 114.35,
+      "latitude": 35.5,
+      "longitude": 114.85,
       "source": "https://en.wikipedia.org/wiki/Shang_dynasty",
-      "tags": ["Chinese", "Shang", "Bronze", "Archaeology"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Bronze",
+        "Archaeology"
+      ],
       "type": "cultural"
     },
     {
@@ -151,10 +202,15 @@
       "name_ru": "Спор Пань Гэна — убеждение двора переехать",
       "description": "Pan Geng (盘庚), nineteenth Shang king, determines to move the capital from Yan (奄, near modern Qufu, Shandong) to the site on the north bank of the Yellow River that will become Yin (殷, near modern Anyang). The court aristocracy, wealthy and established in Yan, resist fiercely: moving means abandoning properties, networks, and the graves of their immediate ancestors. Pan Geng's three speeches to his court and people — preserved in the Book of Documents as the 'Pan Geng' (盘庚) chapter — are the most extended piece of political rhetoric surviving from the Shang period, mixing threats, appeals to ancestor authority, and historical argument in equal measure. He does not offer choice; he announces the move and commands compliance.",
       "description_ru": "Пань Гэн (盘庚), девятнадцатый царь Шан, принимает решение перенести столицу из Янь (奄, близ современного Цюйфу в Шаньдуне) на северный берег Жёлтой реки — на место, которое станет Инь (殷, близ современного Аньяна). Придворная аристократия, богатая и обосновавшаяся в Янь, сопротивляется яростно: переезд означает потерю имущества, связей и захоронений непосредственных предков. Три речи Пань Гэна к двору и народу — сохранённые в «Книге документов» как раздел «Пань Гэн» (盘庚) — наиболее обширный образец политической риторики, дошедший от периода Шан; они смешивают угрозы, апелляции к авторитету предков и исторические аргументы. Он не предлагает выбора: он объявляет переезд и требует подчинения.",
-      "latitude": 35.60,
-      "longitude": 117.00,
+      "latitude": 35.6,
+      "longitude": 117,
       "source": "https://en.wikipedia.org/wiki/Pan_Geng",
-      "tags": ["Chinese", "Shang", "Legend", "Pan Geng"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Legend",
+        "Pan Geng"
+      ],
       "type": "political"
     },
     {
@@ -164,10 +220,15 @@
       "name_ru": "Письменность Шан — иероглифы до канона гадательных надписей",
       "description": "While the oracle bones at Anyang (dated principally to 1250–1046 BC) are the most famous evidence of Shang writing, inscriptions on bronze vessels and pottery from earlier Shang contexts show that writing was in use well before Wu Ding's reign. The Shang script (甲骨文 jiǎgǔwén, 'shell and bone script') is a fully developed logographic system of approximately 4,500 characters, of which around 2,000 have been deciphered; it is structurally continuous with the later Zhou script and with modern Chinese. The characters are written by professional scribes using brush and lacquer on bamboo and silk (perishable, hence lost) as well as incised on bone and shell; the oracle bones are an archival survival, not the main writing medium.",
       "description_ru": "Хотя гадательные надписи Аньяна (датируемые преимущественно 1250–1046 гг. до н. э.) — наиболее известное свидетельство письменности Шан, надписи на бронзовых сосудах и керамике из более ранних контекстов Шан показывают, что письмо существовало задолго до правления У Дина. Письмо Шан (甲骨文 цзягувэнь, «надпись на панцире и кости») — полноценная логографическая система из примерно 4500 знаков, около 2000 из которых расшифрованы; оно структурно непрерывно с позднейшим чжоуским письмом и современным китайским. Знаки наносились профессиональными писцами кистью и лаком на бамбук и шёлк (недолговечные и потому утраченные), а также вырезались на кости и панцире; гадательные надписи — архивный реликт, а не основное письменное средство.",
-      "latitude": 36.10,
-      "longitude": 114.35,
+      "latitude": 35.6,
+      "longitude": 117,
       "source": "https://en.wikipedia.org/wiki/Oracle_bone_script",
-      "tags": ["Chinese", "Shang", "Writing", "Archaeology"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Writing",
+        "Archaeology"
+      ],
       "type": "scientific"
     },
     {
@@ -177,10 +238,14 @@
       "name_ru": "У Дин — величайший царь Шан восходит на трон",
       "description": "Wu Ding (武丁), twenty-second Shang king and the ruler whose reign is most fully documented by oracle bones, ascends to the throne after spending years of his youth working among commoners — a deliberate act by his father to educate him in the reality of the people's life. His fifty-nine-year reign (traditional dates ~1250–1192 BC) encompasses military campaigns in every direction, the most extensive bronze production of the dynasty, and the largest surviving archive of royal divination texts. Wu Ding is the first Shang king to be extensively verifiable as a historical individual — his campaigns, his questions to diviners, his consorts' activities, and even some of his personal anxieties are legible across thousands of oracle bones.",
       "description_ru": "У Дин (武丁), двадцать второй царь Шан и правитель, чьё правление наиболее полно задокументировано гадательными надписями, восходит на трон после того, как провёл годы юности, работая среди простого народа — намеренный шаг отца для ознакомления его с реалиями народной жизни. Его пятидесятидевятилетнее правление (традиционные даты ~1250–1192 гг. до н. э.) охватывает военные походы во всех направлениях, наиболее масштабное бронзовое производство и крупнейший сохранившийся архив царских гадательных текстов. У Дин — первый царь Шан, которого можно подробно верифицировать как историческую личность: его походы, вопросы прорицателям, деятельность его супруг и даже некоторые личные тревоги прочитываются в тысячах надписей.",
-      "latitude": 36.10,
+      "latitude": 36.1,
       "longitude": 114.35,
       "source": "https://en.wikipedia.org/wiki/Wu_Ding",
-      "tags": ["Chinese", "Shang", "Wu Ding"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Wu Ding"
+      ],
       "type": "historic"
     },
     {
@@ -190,10 +255,16 @@
       "name_ru": "Гадание на костях — о чём Шан спрашивали Небо",
       "description": "The oracle bone inscriptions from Wu Ding's court are notable not just for the fact of writing but for the extraordinary range of subjects divined: the king asks about the harvest of millet and wheat, the outcome of campaigns, whether rain will fall, whether a sick consort will recover or die, whether dreams are auspicious, whether a woman's pregnancy will produce a son or daughter, whether the king should hunt on a specific day, and whether a proposed sacrifice will please the ancestors. The diviners heat cattle scapulae or turtle plastrons until they crack, then interpret the crack patterns; the king's charge (the question) and often the prognostication and outcome are inscribed around the crack. Over 150,000 inscribed bone and shell fragments have been recovered from Anyang.",
       "description_ru": "Гадательные надписи двора У Дина примечательны не только самим фактом письменности, но и исключительным разнообразием вопросов: царь спрашивает об урожае проса и пшеницы, об исходе походов, пойдут ли дожди, выздоровеет ли больная супруга, благоприятны ли сны, родит ли женщина сына или дочь, стоит ли охотиться в конкретный день и угодна ли предкам предполагаемая жертва. Прорицатели нагревают лопатки быков или пластроны черепах до растрескивания, затем интерпретируют характер трещин; вопрос, прогноз и нередко результат вырезаются вокруг трещины. Из Аньяна извлечено свыше 150 000 фрагментов костей и панцирей с надписями.",
-      "latitude": 36.10,
+      "latitude": 36.1,
       "longitude": 114.35,
       "source": "https://en.wikipedia.org/wiki/Oracle_bone",
-      "tags": ["Chinese", "Shang", "Divination", "Religious", "Wu Ding"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Divination",
+        "Religious",
+        "Wu Ding"
+      ],
       "type": "religious"
     },
     {
@@ -203,10 +274,16 @@
       "name_ru": "Именные прорицатели — профессионалы при дворе У Дина",
       "description": "Wu Ding's oracle bones are unique in recording the names of the diviners who conducted each session — over 120 individual names are identified across the archives. Senior diviners such as Que (卻), Bin (宾), and Zheng (争) each ran their own divination bureau with distinct scribal styles distinguishable by modern epigrapher. This named professional class — combining the functions of scribe, priest, archivist, and political advisor — represents the earliest identifiable intellectual bureaucracy in Chinese history. The diviner's role was not passive: the phrasing of the charge (how the question was worded) could significantly shape the prognostication, giving senior diviners considerable influence over royal decisions.",
       "description_ru": "Гадательные надписи У Дина уникальны тем, что фиксируют имена прорицателей, проводивших каждую сессию — в архивах идентифицировано свыше 120 индивидуальных имён. Старшие прорицатели — такие как Цюэ (卻), Бин (宾) и Чжэн (争) — каждый вёл собственное гадальное бюро с отличительными стилями письма, различимыми современными эпиграфистами. Этот именной профессиональный класс, совмещавший функции писца, жреца, архивиста и политического советника, представляет древнейшую идентифицируемую интеллектуальную бюрократию в истории Китая. Роль прорицателя не была пассивной: формулировка вопроса могла существенно определить прогноз, давая старшим прорицателям значительное влияние на царские решения.",
-      "latitude": 36.10,
+      "latitude": 36.1,
       "longitude": 114.35,
       "source": "https://en.wikipedia.org/wiki/Oracle_bone",
-      "tags": ["Chinese", "Shang", "Divination", "Writing", "Wu Ding"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Divination",
+        "Writing",
+        "Wu Ding"
+      ],
       "type": "cultural"
     },
     {
@@ -219,7 +296,14 @@
       "latitude": 36.12,
       "longitude": 114.32,
       "source": "https://en.wikipedia.org/wiki/Fu_Hao",
-      "tags": ["Chinese", "Shang", "Wu Ding", "Fu Hao", "Warfare", "Religious"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Wu Ding",
+        "Fu Hao",
+        "Warfare",
+        "Religious"
+      ],
       "type": "historic"
     },
     {
@@ -232,7 +316,13 @@
       "latitude": 36.12,
       "longitude": 114.32,
       "source": "https://en.wikipedia.org/wiki/Fu_Hao",
-      "tags": ["Chinese", "Shang", "Warfare", "Fu Hao", "Wu Ding"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Warfare",
+        "Fu Hao",
+        "Wu Ding"
+      ],
       "type": "historic"
     },
     {
@@ -245,7 +335,14 @@
       "latitude": 36.12,
       "longitude": 114.32,
       "source": "https://en.wikipedia.org/wiki/Fu_Hao",
-      "tags": ["Chinese", "Shang", "Archaeology", "Bronze", "Fu Hao", "Holy Site"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Archaeology",
+        "Bronze",
+        "Fu Hao",
+        "Holy Site"
+      ],
       "type": "cultural"
     },
     {
@@ -255,10 +352,15 @@
       "name_ru": "Человеческие жертвоприношения в Аньяне — масштаб ритуальной смерти Шан",
       "description": "Oracle bones from Wu Ding's reign and later record human sacrifice on a scale that consistently surprises modern readers: a single inscription records the sacrifice of 300 Qiang prisoners; another records 500; individual inscriptions asking about sacrificing 10, 30, or 100 humans are routine. Dedicated sacrificial pits at Anyang — over 1,000 excavated — contain decapitated or dismembered victims, including children, with pit sizes correlating to the importance of the ancestor being propitiated. The victims are predominantly war captives from frontier peoples, though the oracle bones also record the sacrifice of cattle, sheep, and pigs in far greater quantities. Later Zhou commentators are the first to frame Shang human sacrifice as a mark of barbarism; modern archaeology confirms the scale but resists simple moral judgement across a 3,000-year cultural distance.",
       "description_ru": "Гадательные надписи эпохи У Дина и позднейших правлений фиксируют человеческие жертвоприношения в масштабах, неизменно поражающих современного читателя: одна надпись фиксирует жертвоприношение 300 пленников цян, другая — 500; рутинными являются надписи о жертвоприношении 10, 30 или 100 человек. Специальные жертвенные ямы в Аньяне — более 1000 раскопанных — содержат обезглавленных или расчленённых жертв, в том числе детей; размер ям коррелирует с важностью умилостивляемого предка. Жертвы — преимущественно военнопленные из пограничных народов, хотя надписи фиксируют жертвоприношения скота, овец и свиней в значительно большем количестве. Позднейшие чжоуские комментаторы первыми трактуют шанские человеческие жертвоприношения как признак варварства; современная археология подтверждает масштабы, но воздерживается от простого морального суждения через трёхтысячелетнюю культурную дистанцию.",
-      "latitude": 36.10,
+      "latitude": 36.1,
       "longitude": 114.35,
       "source": "https://en.wikipedia.org/wiki/Shang_dynasty",
-      "tags": ["Chinese", "Shang", "Archaeology", "Religious"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Archaeology",
+        "Religious"
+      ],
       "type": "historic"
     },
     {
@@ -268,10 +370,15 @@
       "name_ru": "Слоны Центральной равнины — более тёплый мир Шан",
       "description": "Oracle bones record Wu Ding hunting elephants (象 xiàng) and rhinoceroses near Anyang; animal bone deposits from Shang sites contain the remains of Asian elephants, tapirs, water buffaloes, and alligators — species that today live only in tropical or subtropical climates hundreds of kilometres south. The Chinese character for 'elephant' appears in the character for 'image' or 'appearance' (像), suggesting the elephant was sufficiently present in northern China to shape the early writing system. The climate of the Shang period was significantly warmer and wetter than today: the Yellow River basin supported subtropical fauna, and the agricultural cycle differed accordingly. The gradual southward retreat of elephants over the following two millennia tracks the cooling and deforestation of the Central Plains.",
       "description_ru": "Гадательные надписи фиксируют охоту У Дина на слонов (象 сян) и носорогов близ Аньяна; костные отложения с памятников Шан содержат останки азиатских слонов, тапиров, водяных буйволов и аллигаторов — видов, обитающих сегодня лишь в тропическом или субтропическом климате за сотни километров к югу. Иероглиф «слон» входит в состав знаков «образ» и «внешность» (像), что указывает на достаточно широкое присутствие слона в Северном Китае для влияния на раннюю письменную систему. Климат эпохи Шан был значительно теплее и влажнее нынешнего: бассейн Жёлтой реки поддерживал субтропическую фауну. Постепенное смещение слонов на юг на протяжении последующих двух тысячелетий отражает похолодание и обезлесение Центральной равнины.",
-      "latitude": 36.10,
+      "latitude": 36.1,
       "longitude": 114.35,
       "source": "https://en.wikipedia.org/wiki/Shang_dynasty",
-      "tags": ["Chinese", "Shang", "Archaeology", "Wu Ding"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Archaeology",
+        "Wu Ding"
+      ],
       "type": "cultural"
     },
     {
@@ -281,10 +388,16 @@
       "name_ru": "Хоу Му У Дин — крупнейший в мире древний бронзовый сосуд",
       "description": "The 'Houmuwu' square cauldron (后母戊大方鼎) — its inscription reading 'great fang ding of Hou Mu Wu' — is the largest bronze vessel ever cast in the ancient world, weighing 832.84 kilograms and standing 133 cm tall, with a capacity of 206 litres. Cast in multiple sections by a coordinated team of at least 70–80 craftsmen working simultaneously in a purpose-built pit, it was commissioned by a late Shang king for his mother 'Mu Wu' — most likely Wu Ding's son casting it for Fu Hao herself, though the exact identification remains debated. Discovered at Anyang in 1939, hidden from Japanese forces during World War II, and now in the National Museum of China in Beijing, the vessel is the single most iconic artifact of the Shang period.",
       "description_ru": "Квадратный котёл «Хоу Му У» (后母戊大方鼎) — с надписью «великий фан дин Хоу Му У» — крупнейший бронзовый сосуд, когда-либо отлитый в древнем мире: он весит 832,84 кг, высота 133 см, ёмкость 206 литров. Отлитый в нескольких секциях командой не менее 70–80 мастеров, работавших одновременно в специально вырытой яме, он был заказан позднешанским царём для его матери «Му У» — предположительно сыном У Дина, заказавшим сосуд для самой Фу Хао, хотя точная идентификация остаётся предметом споров. Обнаруженный в Аньяне в 1939 году, спрятанный от японских сил во Второй мировой войне, он хранится в Национальном музее Китая в Пекине и является самым знаковым артефактом эпохи Шан.",
-      "latitude": 36.10,
+      "latitude": 36.1,
       "longitude": 114.35,
       "source": "https://en.wikipedia.org/wiki/Houmuwu_ding",
-      "tags": ["Chinese", "Shang", "Bronze", "Archaeology", "Holy Site"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Bronze",
+        "Archaeology",
+        "Holy Site"
+      ],
       "type": "cultural"
     },
     {
@@ -294,10 +407,15 @@
       "name_ru": "Четырёхконные боевые колесницы — степная технология преобразует войну Шан",
       "description": "By the late Shang period, two-wheeled war chariots drawn by two or four horses appear as elite weapons and command vehicles, diffused from the chariot cultures of the Eurasian steppe through intermediary northern peoples. Shang chariots are buried with their horses and drivers in dedicated chariot pits at Anyang — excavated examples show a consistent design: spoked wheels (18 spokes per wheel), a short axle, a box platform, and two curved shafts for horse attachment. The chariot is not a mass weapon for the Shang; it is the vehicle of the aristocratic officer, providing mobility, height advantage, and psychological impact. Its adoption requires specialist craftsmen (wheelwrights, harness-makers) and horse breeders, adding new economic complexity to the Shang court.",
       "description_ru": "К позднешанскому периоду двухколёсные боевые колесницы, запряжённые двумя или четырьмя лошадьми, появляются как элитное оружие и командные транспортные средства, распространившиеся из колесничных культур евразийских степей через посредничество северных народов. Шанские колесницы погребаются вместе с лошадьми и возничими в специальных ямах в Аньяне; раскопанные образцы демонстрируют единообразную конструкцию: колёса со спицами (18 спиц в каждом), короткая ось, платформа-кузов и два изогнутых дышла. Колесница не является массовым оружием для Шан; это транспортное средство аристократического офицера. Её принятие требует специалистов-ремесленников и коневодов, добавляя новую экономическую сложность ко двору.",
-      "latitude": 36.10,
+      "latitude": 36.1,
       "longitude": 114.35,
       "source": "https://en.wikipedia.org/wiki/Shang_dynasty",
-      "tags": ["Chinese", "Shang", "Warfare", "Archaeology"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Warfare",
+        "Archaeology"
+      ],
       "type": "cultural"
     },
     {
@@ -307,10 +425,15 @@
       "name_ru": "Ди Синь восходит на трон — последний царь Шан",
       "description": "Di Xin (帝辛) — posthumously named 'Zhou' (纣), a pejorative meaning 'cruel and dissolute' — is the last Shang king, whose reign of approximately sixty years ends with the dynasty's destruction. He is, paradoxically, a figure of genuine military achievement: he conducts extensive campaigns against the Huai Yi (淮夷) peoples of the Huai River valley to the south and east, significantly expanding Shang territorial control. The Zhou and later Confucian tradition exaggerates his wickedness to justify the Zhou conquest; modern historians note that many of his 'crimes' are mirrors of Jie of Xia's story, suggesting a formulaic literary template for the 'last bad king' was applied to both. Nevertheless, his neglect of the northern and western borders — where the Zhou are consolidating — is historically well-supported.",
       "description_ru": "Ди Синь (帝辛) — посмертно названный «Чжоу» (纣), уничижительным эпитетом, означающим «жестокий и распутный», — последний царь Шан, чьё правление продолжительностью около шестидесяти лет завершается разрушением династии. Он, как ни парадоксально, — фигура подлинных военных достижений: он ведёт масштабные походы против народов хуай-и (淮夷) долины Хуай к югу и востоку, существенно расширяя территориальный контроль Шан. Чжоуская и позднейшая конфуцианская традиция преувеличивает его порочность для оправдания завоевания; современные историки отмечают, что многие его «преступления» зеркально повторяют историю Цзе из Ся, указывая на формульный литературный шаблон «последнего злого царя». Тем не менее его пренебрежение северными и западными рубежами исторически хорошо подтверждено.",
-      "latitude": 36.10,
+      "latitude": 36.1,
       "longitude": 114.35,
       "source": "https://en.wikipedia.org/wiki/King_Zhou_of_Shang",
-      "tags": ["Chinese", "Shang", "Legend", "Di Xin"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Legend",
+        "Di Xin"
+      ],
       "type": "historic"
     },
     {
@@ -320,10 +443,15 @@
       "name_ru": "Южные походы Ди Синя — завоевания накануне падения",
       "description": "Di Xin's military campaigns against the Ren Fang (人方) and Huai Yi peoples of the Huai and Yangtze basins are among the most extensive in Shang history, with some campaigns lasting over a year. Oracle bones from the late Shang record these operations in detail, confirming that the last Shang king was genuinely militarily active, not merely the degenerate of Zhou propaganda. However, the campaigns drain Shang military reserves: thousands of Shang troops are tied down in the southeast precisely when the Zhou in the west begin their challenge. When Di Xin needs soldiers to meet Wu's invasion at Muye (牧野), he must arm slaves and prisoners of war — who promptly defect to the Zhou, handing Wu an almost bloodless victory.",
       "description_ru": "Военные походы Ди Синя против народов женьфан (人方) и хуай-и бассейнов Хуай и Янцзы — одни из наиболее масштабных в истории Шан; некоторые длились более года. Гадательные надписи позднего Шан подробно документируют эти операции, подтверждая, что последний царь Шан был подлинно военно активен, а не лишь деградировавшим персонажем чжоуской пропаганды. Однако походы истощают военные резервы: тысячи шанских войск удерживаются на юго-востоке именно тогда, когда чжоусцы на западе начинают своё наступление. Когда Ди Синю нужны солдаты против вторжения У-вана у Муе (牧野), он вынужден вооружить рабов и военнопленных — которые немедленно переходят на сторону Чжоу.",
-      "latitude": 36.10,
+      "latitude": 36.1,
       "longitude": 114.35,
       "source": "https://en.wikipedia.org/wiki/King_Zhou_of_Shang",
-      "tags": ["Chinese", "Shang", "Warfare", "Di Xin"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Warfare",
+        "Di Xin"
+      ],
       "type": "historic"
     },
     {
@@ -333,10 +461,15 @@
       "name_ru": "Двор Ди Синя — Да Цзи и погружение в разврат",
       "description": "Di Xin's favourite consort, Daji (妲己), plays in the Zhou literary tradition the same role as Moxi to Jie of Xia: the enchanting woman through whose influence the king abandons governance for pleasure. The late Shang court is described — in texts compiled centuries after the fact — as a place of nocturnal feasts, wine pools, hanging meat, erotic dances, and musical performances running through the night. Daji is credited with inventing the pao lao (炮烙) torture: a bronze cylinder heated to red-hot, forced on the skin of those who displeased the court. Modern historians treat these accounts sceptically — the templates are identical to anti-Jie narratives — but the basic picture of a court obsessed with consumption rather than governance as the Zhou threat grew is consistent with the oracle bone evidence from the final Shang decades.",
       "description_ru": "Любимая наложница Ди Синя, Да Цзи (妲己), играет в чжоуской литературной традиции ту же роль, что Мосы при Цзе из Ся: чарующая женщина, под влиянием которой царь бросает управление ради наслаждений. Позднешанский двор описывается — в текстах, составленных спустя столетия, — как место ночных пиров, бассейнов с вином, висящего мяса, эротических танцев и музыкальных представлений. Да Цзи приписывается изобретение пытки пао лао (炮烙): раскалённый докрасна бронзовый цилиндр, прижигавший кожу провинившихся. Современные историки скептически относятся к этим описаниям — шаблоны идентичны антицзеским нарративам, — однако базовая картина двора, увлечённого потреблением, а не управлением, перед лицом чжоуской угрозы согласуется со свидетельствами надписей последних десятилетий Шан.",
-      "latitude": 36.10,
+      "latitude": 36.1,
       "longitude": 114.35,
       "source": "https://en.wikipedia.org/wiki/King_Zhou_of_Shang",
-      "tags": ["Chinese", "Shang", "Legend", "Di Xin"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Legend",
+        "Di Xin"
+      ],
       "type": "cultural"
     },
     {
@@ -346,10 +479,16 @@
       "name_ru": "Би Гань увещевает — сердце с семью отверстиями",
       "description": "Bi Gan (比干), uncle of Di Xin and one of the most respected ministers of the late Shang court, remonstrates with the king repeatedly over his conduct and refuses to stop when ordered. Di Xin — according to the tradition — says: 'I have heard that the heart of a sage has seven orifices' (圣人心有七窍) and orders Bi Gan's chest cut open to examine his heart. Bi Gan joins Guan Longpang of the Xia as the paradigmatic loyal minister executed for speaking truth, and his cult — as the God of Wealth (财神) in popular Chinese religion — survives to the present day. His tomb is in Xinxiang, Henan; Confucius himself is said to have cleared weeds from it during his travels through the state of Wei.",
       "description_ru": "Би Гань (比干), дядя Ди Синя и один из наиболее почитаемых министров позднешанского двора, неоднократно увещевает царя относительно его поведения и отказывается умолкнуть, получив такой приказ. Ди Синь — по преданию — произносит: «Я слышал, что сердце мудреца имеет семь отверстий» (圣人心有七窍) и приказывает вскрыть грудь Би Ганя, чтобы осмотреть его сердце. Би Гань встаёт рядом с Гуань Лунпаном из Ся как парадигматический верный министр, казнённый за правду; его культ — как Бога богатства (财神) в народной китайской религии — сохраняется по сей день. Его гробница находится в Синьсяне, Хэнань; сам Конфуций, по преданию, очищал её от сорняков во время своих путешествий.",
-      "latitude": 35.30,
+      "latitude": 35.3,
       "longitude": 113.85,
       "source": "https://en.wikipedia.org/wiki/Bi_Gan",
-      "tags": ["Chinese", "Shang", "Legend", "Di Xin", "Holy Site"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Legend",
+        "Di Xin",
+        "Holy Site"
+      ],
       "type": "historic"
     },
     {
@@ -362,7 +501,14 @@
       "latitude": 35.65,
       "longitude": 114.37,
       "source": "https://en.wikipedia.org/wiki/King_Wen_of_Zhou",
-      "tags": ["Chinese", "Shang", "Legend", "Di Xin", "Writing", "Holy Site"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Legend",
+        "Di Xin",
+        "Writing",
+        "Holy Site"
+      ],
       "type": "cultural"
     },
     {
@@ -372,10 +518,16 @@
       "name_ru": "Коалиция Чжоу собирается у Мэн Цзинь — последнее испытание Шан",
       "description": "King Wu (武王) of Zhou — son of the posthumously titled King Wen — assembles a coalition of eight hundred lords at Meng Jin (盟津, a ford on the Yellow River near modern Mengxian, Henan) for a first demonstration of force against the Shang; finding the time not yet right, he withdraws without battle. Two years later, he assembles again with a force of 45,000 infantry, 300 chariots, and 3,000 tiger guards (虎賁) and crosses the Yellow River. The Shiji records that at the first Meng Jin assembly, eight hundred lords arrived without being summoned — the text's way of saying that the Zhou's claim to the Mandate was already acknowledged across the realm before a single battle was fought.",
       "description_ru": "У-ван (武王) Чжоуский — сын посмертно титулованного Вэнь-вана — собирает коалицию из восьмисот властителей у Мэн Цзинь (盟津, переправа на Жёлтой реке близ современного Мэнсяня, Хэнань) для первой демонстрации силы против Шан; сочтя момент ещё неподходящим, он уходит без сражения. Два года спустя он собирается вновь с силами в 45 000 пехотинцев, 300 колесниц и 3000 «тигровых гвардейцев» (虎賁) и пересекает Жёлтую реку. «Исторические записки» сообщают, что на первом собрании у Мэн Цзинь восемьсот властителей явились без вызова — способ сказать, что притязание Чжоу на Мандат было признано повсеместно ещё до первой битвы.",
-      "latitude": 34.90,
+      "latitude": 34.9,
       "longitude": 112.44,
       "source": "https://en.wikipedia.org/wiki/King_Wu_of_Zhou",
-      "tags": ["Chinese", "Shang", "Legend", "Warfare", "Di Xin"],
+      "tags": [
+        "Chinese",
+        "Shang",
+        "Legend",
+        "Warfare",
+        "Di Xin"
+      ],
       "type": "historic"
     }
   ]
