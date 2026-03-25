@@ -5,6 +5,7 @@ import (
         "fmt"
         "historical-events-backend/internal/database/repositories"
         "historical-events-backend/internal/models"
+        "historical-events-backend/pkg/cache"
         "historical-events-backend/pkg/metrics"
         "historical-events-backend/pkg/response"
         "log"
@@ -22,6 +23,7 @@ type EventHandler struct {
         eventRepo   *repositories.EventRepository
         tagRepo     *repositories.TagRepository
         datasetRepo *repositories.DatasetRepository
+        eventCache  *cache.EventCache
 }
 
 // NewEventHandler creates a new event handler
@@ -30,6 +32,7 @@ func NewEventHandler(eventRepo *repositories.EventRepository, tagRepo *repositor
                 eventRepo:   eventRepo,
                 tagRepo:     tagRepo,
                 datasetRepo: datasetRepo,
+                eventCache:  cache.NewEventCache(),
         }
 }
 
@@ -102,20 +105,45 @@ func (h *EventHandler) GetAllEvents(w http.ResponseWriter, r *http.Request) {
                 return
         }
         
-        // Fall back to non-paginated query for backward compatibility
+        // Non-paginated path: serve from in-memory cache when possible
+        w.Header().Set("Cache-Control", "public, max-age=30, stale-while-revalidate=60")
+
+        if cached, ok := h.eventCache.Get(locale); ok {
+                w.Header().Set("Content-Type", "application/json")
+                w.Header().Set("X-Cache", "HIT")
+                w.WriteHeader(http.StatusOK)
+                w.Write(cached)
+                return
+        }
+
         events, err := h.eventRepo.GetAll()
         if err != nil {
                 log.Printf("Error fetching events: %v", err)
                 response.InternalError(w, "Failed to fetch events")
                 return
         }
-        
-        // Populate legacy fields based on locale
+
         for i := range events {
                 events[i].PopulateLegacyFields(locale)
         }
-        
-        response.Success(w, events)
+
+        payload := struct {
+                Data []models.HistoricalEvent `json:"data"`
+        }{Data: events}
+
+        encoded, err := json.Marshal(payload)
+        if err != nil {
+                log.Printf("Error encoding events: %v", err)
+                response.InternalError(w, "Failed to encode events")
+                return
+        }
+
+        h.eventCache.Set(locale, encoded)
+
+        w.Header().Set("Content-Type", "application/json")
+        w.Header().Set("X-Cache", "MISS")
+        w.WriteHeader(http.StatusOK)
+        w.Write(encoded)
 }
 
 // GetEventByID handles GET /api/events/{id} with locale support
@@ -200,9 +228,11 @@ func (h *EventHandler) CreateEvent(w http.ResponseWriter, r *http.Request) {
         // Populate legacy fields based on locale for consistent response
         createdEvent.PopulateLegacyFields(locale)
         
+        h.eventCache.Invalidate()
+
         // Increment Prometheus metrics
         metrics.EventsCreated.Inc()
-        
+
         response.Created(w, createdEvent, "Event created successfully")
 }
 
@@ -274,9 +304,11 @@ func (h *EventHandler) UpdateEvent(w http.ResponseWriter, r *http.Request) {
         // Populate legacy fields based on locale for consistent response
         updatedEvent.PopulateLegacyFields(locale)
         
+        h.eventCache.Invalidate()
+
         // Increment Prometheus metrics
         metrics.EventsUpdated.Inc()
-        
+
         response.Success(w, updatedEvent)
 }
 
@@ -324,9 +356,11 @@ func (h *EventHandler) DeleteEvent(w http.ResponseWriter, r *http.Request) {
                 }
         }
         
+        h.eventCache.Invalidate()
+
         // Increment Prometheus metrics
         metrics.EventsDeleted.Inc()
-        
+
         response.Success(w, map[string]string{"message": "Event deleted successfully"})
 }
 
@@ -660,6 +694,8 @@ func (h *EventHandler) ImportEvents(w http.ResponseWriter, r *http.Request) {
         if err != nil {
                 log.Printf("Failed to update dataset event count: %v", err)
         }
+
+        h.eventCache.Invalidate()
 
         result := map[string]interface{}{
                 "success":        true,

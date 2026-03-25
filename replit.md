@@ -42,6 +42,7 @@ A comprehensive web application for mapping historical events on an interactive 
 - **Tag Search**: Dynamic search input for tags from visible events with autocomplete, suggestions, and filtering.
 - **Progressive Web App (PWA)**: Full PWA support with installability, offline caching for app shell and map tiles, and service worker for network resilience. Includes manifest.json with app icons (72px-512px) and theme colors.
 - **Anonymous Session Duration Tracking**: Uses `last_seen_at` to calculate session duration.
+- **In-Memory Event Cache**: `backend/pkg/cache/event_cache.go` — TTL cache (60s) for the non-paginated `GET /api/events` response, keyed per locale. Automatically invalidated on any create/update/delete/import operation. HTTP `Cache-Control: public, max-age=30, stale-while-revalidate=60` header added to the same endpoint. `X-Cache: HIT/MISS` header for observability.
 
 ### Feature Specifications
 - **Interactive World Map**: Displays event markers with hover details, click-to-add functionality, and narrative flow visualization between filtered events.
