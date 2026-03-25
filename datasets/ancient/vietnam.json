@@ -8,8 +8,8 @@
       "era": "BC",
       "latitude": 19.75,
       "longitude": 105.72,
-      "name": "Núi Đọ Site — Earliest Hominin Presence in Vietnam",
-      "name_ru": "Стоянка Нуй До — первые гоминины во Вьетнаме",
+      "name": "Earliest Hominin Presence in Vietnam",
+      "name_ru": "Первые гоминины во Вьетнаме",
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
       "tags": [
         "Paleolithic",
@@ -291,23 +291,6 @@
     },
     {
       "date": "01.01.1400",
-      "description": "The appearance of socketed bronze axes and adzes (tools fitted with a hollow socket for a wooden handle rather than lashed to it) in the Đồng Đậu repertoire dramatically increases the efficiency of forest clearance and carpentry. These tools, requiring sophisticated casting technology with inner cores, are significantly more effective than stone or earlier flanged bronze equivalents. Wider forest clearance in the Red River lowlands accelerates agricultural expansion into previously wooded areas, increasing food production capacity and supporting larger, more territorially ambitious political units. The socketed axe is also an effective weapon — the same tool form serves both productive and military purposes.",
-      "description_ru": "Появление втульчатых бронзовых топоров и тёсел в ансамбле Донг Дау резко повышает эффективность расчистки леса и плотницких работ. Эти орудия, требующие сложной литейной технологии с внутренними стержнями, значительно эффективнее каменных или ранних бронзовых аналогов. Более широкая расчистка леса в низменностях Красной реки ускоряет аграрную экспансию, поддерживая более крупные, территориально амбициозные политические единицы.",
-      "era": "BC",
-      "latitude": 21.03,
-      "longitude": 105.83,
-      "name": "Bronze Axes, Socketed Tools, and Agricultural Expansion",
-      "name_ru": "Бронзовые топоры, втульчатые орудия и аграрная экспансия",
-      "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
-      "tags": [
-        "Agriculture",
-        "Bronze Age",
-        "Vietnamese"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1400",
       "description": "The long Vietnamese coastline — over 3,000 km from the Gulf of Tonkin to the Gulf of Thailand — becomes a zone of sustained maritime exchange linking northern Bronze Age cultures with the Sa Huỳnh of the centre, island Southeast Asia to the east, and the Mekong basin to the west. Outrigger canoe technology, inherited from the Austronesian maritime tradition, enables reliable inter-community contact across the South China Sea. Exotic materials — glass beads, carnelian, nephrite, tin — moving through these networks confirm a sophisticated exchange system that predates by many centuries the later Bronze Age maritime networks of the Mediterranean.",
       "description_ru": "Длинное вьетнамское побережье — более 3000 км от Тонкинского залива до Сиамского — становится зоной устойчивого морского обмена, соединяющей северные бронзовые культуры с Са Хуинь в центре, островной ЮВА на востоке и бассейном Меконга на западе. Технология лодок с аутригером обеспечивает надёжный контакт между общинами. Экзотические материалы — стеклянные бусины, сердолик, нефрит, олово — подтверждают изощрённую обменную систему.",
       "era": "BC",
@@ -320,6 +303,23 @@
         "Maritime",
         "Trade",
         "Sa Huỳnh",
+        "Vietnamese"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1400",
+      "description": "The appearance of socketed bronze axes and adzes (tools fitted with a hollow socket for a wooden handle rather than lashed to it) in the Đồng Đậu repertoire dramatically increases the efficiency of forest clearance and carpentry. These tools, requiring sophisticated casting technology with inner cores, are significantly more effective than stone or earlier flanged bronze equivalents. Wider forest clearance in the Red River lowlands accelerates agricultural expansion into previously wooded areas, increasing food production capacity and supporting larger, more territorially ambitious political units. The socketed axe is also an effective weapon — the same tool form serves both productive and military purposes.",
+      "description_ru": "Появление втульчатых бронзовых топоров и тёсел в ансамбле Донг Дау резко повышает эффективность расчистки леса и плотницких работ. Эти орудия, требующие сложной литейной технологии с внутренними стержнями, значительно эффективнее каменных или ранних бронзовых аналогов. Более широкая расчистка леса в низменностях Красной реки ускоряет аграрную экспансию, поддерживая более крупные, территориально амбициозные политические единицы.",
+      "era": "BC",
+      "latitude": 21.03,
+      "longitude": 105.83,
+      "name": "Bronze Axes, Socketed Tools, and Agricultural Expansion",
+      "name_ru": "Бронзовые топоры, втульчатые орудия и аграрная экспансия",
+      "source": "https://en.wikipedia.org/wiki/Prehistory_of_Vietnam",
+      "tags": [
+        "Agriculture",
+        "Bronze Age",
         "Vietnamese"
       ],
       "type": "historic"
@@ -364,6 +364,23 @@
     },
     {
       "date": "01.01.1000",
+      "description": "By the late second millennium BC, the bronze cultures of the Red River valley maintain regular exchange with Chinese states via overland mountain passes and coastal maritime routes. Chinese bronze vessels and weapons occasionally reach Vietnamese sites as prestige imports; Vietnamese nephrite ornaments and possibly bronze objects move northward. Chinese oracle bone and bronze inscriptions begin mentioning the 'southern Yi' or 'Yue' (越) peoples in this general period — the earliest written references to the ethnolinguistic world that includes the ancestors of the Vietnamese. The exchange relationship is not yet tributary: it is a peer-to-peer exchange between equivalent polities.",
+      "description_ru": "К концу II тысячелетия до н. э. бронзовые культуры долины Красной реки поддерживают регулярный обмен с китайскими государствами через горные перевалы и морские маршруты. Китайские бронзовые сосуды и оружие иногда достигают вьетнамских памятников; вьетнамские нефритовые украшения движутся на север. Китайские надписи эпохи Шан упоминают «южных И» или «юэ» (越) — древнейшие письменные ссылки на предков вьетнамцев.",
+      "era": "BC",
+      "latitude": 22,
+      "longitude": 105,
+      "name": "Long-Distance Exchange with Southern China",
+      "name_ru": "Торговля Вьетнама и Южного Китая",
+      "source": "https://en.wikipedia.org/wiki/Baiyue",
+      "tags": [
+        "Chinese",
+        "Trade",
+        "Vietnamese"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1000",
       "description": "The Gò Mun culture (type-site: Gò Mun, Phú Thọ province) is the penultimate phase of the Vietnamese Bronze Age before Đông Sơn, characterised by a sharp increase in the quantity and quality of bronze objects and the first appearance of bronze drums in embryonic form. Gò Mun founders master piece-mould and lost-wax casting techniques, producing intricate surface decoration. The range of objects expands to include bronze daggers, spear tips, ornate belt hooks, and ceremonial vessels. Socially, Gò Mun marks the point at which the warrior-elite class becomes visibly dominant in the archaeological record: weapons and warrior accoutrements occupy the most elaborate burials.",
       "description_ru": "Культура Го Мун (опорный памятник: Го Мун, провинция Фу Тхо) — предпоследний этап вьетнамского бронзового века перед культурой Донгшон, характеризующийся резким увеличением количества и качества бронзовых предметов и первым появлением прообразов бронзовых барабанов. Мастера Го Мун осваивают технику составных форм и литья по выплавляемой модели. Среди предметов — бронзовые кинжалы, наконечники копий, изящные поясные крючки и церемониальные сосуды.",
       "era": "BC",
@@ -379,23 +396,6 @@
         "Metallurgy",
         "Vietnamese",
         "Văn Lang"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1000",
-      "description": "By the late second millennium BC, the bronze cultures of the Red River valley maintain regular exchange with Chinese states via overland mountain passes and coastal maritime routes. Chinese bronze vessels and weapons occasionally reach Vietnamese sites as prestige imports; Vietnamese nephrite ornaments and possibly bronze objects move northward. Chinese oracle bone and bronze inscriptions begin mentioning the 'southern Yi' or 'Yue' (越) peoples in this general period — the earliest written references to the ethnolinguistic world that includes the ancestors of the Vietnamese. The exchange relationship is not yet tributary: it is a peer-to-peer exchange between equivalent polities.",
-      "description_ru": "К концу II тысячелетия до н. э. бронзовые культуры долины Красной реки поддерживают регулярный обмен с китайскими государствами через горные перевалы и морские маршруты. Китайские бронзовые сосуды и оружие иногда достигают вьетнамских памятников; вьетнамские нефритовые украшения движутся на север. Китайские надписи эпохи Шан упоминают «южных И» или «юэ» (越) — древнейшие письменные ссылки на предков вьетнамцев.",
-      "era": "BC",
-      "latitude": 22,
-      "longitude": 105,
-      "name": "Long-Distance Exchange with Southern China",
-      "name_ru": "Торговля Вьетнама и Южного Китая",
-      "source": "https://en.wikipedia.org/wiki/Baiyue",
-      "tags": [
-        "Chinese",
-        "Trade",
-        "Vietnamese"
       ],
       "type": "historic"
     },
@@ -494,6 +494,25 @@
     },
     {
       "date": "01.01.0700",
+      "description": "Đông Sơn drums and burial goods consistently depict long war canoes manned by plumed warriors carrying axes, spears, and shields — evidence that riverine and coastal warfare is a central activity of the Đông Sơn elite. Full-scale dugout war canoes large enough to carry twenty or more warriors, propelled by paddles, are the primary means of both military projection and inter-community exchange across the Red River network. Boat burials — log coffins shaped to resemble boat hulls — indicate that the canoe is also the vehicle of the soul's journey to the afterlife. The combination of boat symbolism in death ritual and war iconography in prestige objects identifies the warrior-mariner as the dominant social ideal of Đông Sơn culture.",
+      "description_ru": "Барабаны и погребальный инвентарь Донгшона последовательно изображают длинные военные каноэ с украшенными перьями воинами, несущими топоры, копья и щиты. Полноразмерные долблёные военные каноэ — основное средство военной проекции и межобщинного обмена. Захоронения в лодках — гробы, имитирующие корпус каноэ, — указывают, что лодка также является транспортным средством душ. Воин-мореплаватель — господствующий социальный идеал культуры Донгшона.",
+      "era": "BC",
+      "latitude": 19.83720306,
+      "longitude": 105.78499317,
+      "name": "Đông Sơn Boat Culture and River Warfare",
+      "name_ru": "Лодочная культура и речные войны Донгшона",
+      "source": "https://en.wikipedia.org/wiki/Dong_Son_culture",
+      "tags": [
+        "Burial",
+        "Culture",
+        "Maritime",
+        "Religious",
+        "Vietnamese"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0700",
       "description": "The Đông Sơn bronze drum (trống đồng) is the signature artefact of mainland Southeast Asian Bronze Age culture and one of the most technically and artistically demanding objects produced anywhere in the ancient world. Cast in a single pour from a complex multiple-piece mould, the drums range from 40 cm to over a metre in diameter and weigh up to 100 kg. The flat striking face is decorated with a central sunburst motif surrounded by concentric bands of geometric ornament and narrative scenes; the body has four frog figures on the upper rim (frogs as symbols of rain and fertility) and side panels with scenes of feast, war, and ceremony. Over two hundred Đông Sơn drums survive; they have been found from Vietnam to eastern Indonesia, testifying to their role as the premier prestige object of the region.",
       "description_ru": "Бронзовый барабан Донгшона (чонг донг) — эмблема бронзовой цивилизации материковой ЮВА и один из технически и художественно наиболее сложных предметов, произведённых в древнем мире. Отлитые в один приём из сложной составной формы, барабаны варьируются от 40 см до более метра в диаметре и весят до 100 кг. На ударной плоскости — солярный мотив в центре с концентрическими полосами геометрического орнамента; на теле — четыре фигуры лягушек на верхнем крае и панели с пиром, войной и церемонией.",
       "era": "BC",
@@ -531,25 +550,6 @@
         "Văn Lang"
       ],
       "type": "religious"
-    },
-    {
-      "date": "01.01.0700",
-      "description": "Đông Sơn drums and burial goods consistently depict long war canoes manned by plumed warriors carrying axes, spears, and shields — evidence that riverine and coastal warfare is a central activity of the Đông Sơn elite. Full-scale dugout war canoes large enough to carry twenty or more warriors, propelled by paddles, are the primary means of both military projection and inter-community exchange across the Red River network. Boat burials — log coffins shaped to resemble boat hulls — indicate that the canoe is also the vehicle of the soul's journey to the afterlife. The combination of boat symbolism in death ritual and war iconography in prestige objects identifies the warrior-mariner as the dominant social ideal of Đông Sơn culture.",
-      "description_ru": "Барабаны и погребальный инвентарь Донгшона последовательно изображают длинные военные каноэ с украшенными перьями воинами, несущими топоры, копья и щиты. Полноразмерные долблёные военные каноэ — основное средство военной проекции и межобщинного обмена. Захоронения в лодках — гробы, имитирующие корпус каноэ, — указывают, что лодка также является транспортным средством душ. Воин-мореплаватель — господствующий социальный идеал культуры Донгшона.",
-      "era": "BC",
-      "latitude": 19.83720306,
-      "longitude": 105.78499317,
-      "name": "Đông Sơn Boat Culture and River Warfare",
-      "name_ru": "Лодочная культура и речные войны Донгшона",
-      "source": "https://en.wikipedia.org/wiki/Dong_Son_culture",
-      "tags": [
-        "Burial",
-        "Culture",
-        "Maritime",
-        "Religious",
-        "Vietnamese"
-      ],
-      "type": "cultural"
     },
     {
       "date": "01.01.0650",

@@ -8,28 +8,10 @@
       "era": "BC",
       "latitude": 18.3,
       "longitude": 99.5,
-      "name": "Lampang Paleolithic Site — Earliest Hominin Evidence in Thailand",
-      "name_ru": "Палеолит Лампанга — древнейшие гоминины Таиланда",
+      "name": "Earliest Hominin Evidence in Thailand",
+      "name_ru": "Первые гоминины Таиланда",
       "source": "https://en.wikipedia.org/wiki/Prehistory_of_Thailand",
       "tags": [
-        "Archaeology",
-        "Paleolithic",
-        "Thai"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.9800",
-      "description": "Tham Lod rock-shelter (Pang Mapha district, Mae Hong Son) contains stratified deposits spanning from roughly 37 000 BP into the Bronze Age, making it one of the most continuously occupied sites in Southeast Asia. Upper Paleolithic layers yield stone tools, animal bones, and charcoal hearths indicating repeated seasonal camp use by hunter-gatherers exploiting the forested limestone karst. The same cave later becomes a Bronze Age burial site, its stream-cut chambers used for the log coffin mortuary tradition.",
-      "description_ru": "Навес Там Лод (округ Пангмапха, провинция Мэ Хонг Сон) содержит стратифицированные отложения от ~37 000 л. н. до бронзового века — один из наиболее непрерывно занятых памятников ЮВА. Верхнепалеолитические слои дают каменные орудия, кости животных и угольные очаги. Позднее та же пещера становится бронзовым погребальным памятником с традицией гробов-«брёвен».",
-      "era": "BC",
-      "latitude": 19.53,
-      "longitude": 98.25,
-      "name": "Tham Lod Cave — Upper Paleolithic Hunters (Mae Hong Son)",
-      "name_ru": "Пещера Там Лод — охотники верхнего палеолита",
-      "source": "https://en.wikipedia.org/wiki/Tham_Lod_Rockshelter",
-      "tags": [
-        "Art",
         "Paleolithic",
         "Thai"
       ],
@@ -101,6 +83,7 @@
       "tags": [
         "Agriculture",
         "Neolithic",
+        "Rice",
         "Thai"
       ],
       "type": "historic"
@@ -143,24 +126,6 @@
     },
     {
       "date": "01.01.2000",
-      "description": "Phase IV–V burials at Khok Phanom Di reveal sharp social stratification: a small number of graves contain extraordinary wealth — clay anvils identifying master potters buried with thousands of shell beads, polished stone adzes, and elaborately decorated ceramic vessels — while the majority of burials are far more modest. The wealthiest individual recovered (the 'Princess') wears a headdress of shell discs and lies surrounded by 120 000 shell beads, marking her as a person of exceptional hereditary status. This burial evidence is the clearest demonstration in Neolithic Southeast Asia that social hierarchy precedes the Bronze Age.",
-      "description_ru": "Захоронения фаз IV–V в Кхок Фаном Ди демонстрируют сильную социальную стратификацию: небольшое число могил содержат исключительное богатство — глиняные наковальни, идентифицирующие мастеров-гончаров с тысячами ракушечных бус и нарядными сосудами, — тогда как большинство захоронений значительно скромнее. Богатейший найденный индивидуум носит головной убор из раковинных дисков и окружён 120 000 бус, свидетельствуя о наследственном статусе. Это наиболее убедительная демонстрация того, что социальная иерархия предшествует бронзовому веку в ЮВА.",
-      "era": "BC",
-      "latitude": 13.57128328,
-      "longitude": 101.14528656,
-      "name": "Elite Burials at Khok Phanom Di",
-      "name_ru": "Гробницы в Кхок Фаном Ди",
-      "source": "https://en.wikipedia.org/wiki/Khok_Phanom_Di",
-      "tags": [
-        "Burial",
-        "Culture",
-        "Neolithic",
-        "Thai"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.2000",
       "description": "The Khao Wong Prachan valley (Lopburi province) contains one of Southeast Asia's most productive ancient copper-mining zones: ore extracted from sandstone-hosted deposits at Non Pa Wai and surrounding sites is smelted in crucibles using charcoal-fuelled furnaces. Slag deposits and casting debris confirm in situ bronze production rather than import. The valley's output supplies the Isan Bronze Age network for over a millennium, making it the industrial heartland of prehistoric Thai metallurgy.",
       "description_ru": "Долина Кхао Вонг Прачан (провинция Лопбури) содержит одну из наиболее продуктивных древних медедобывающих зон ЮВА: руда из песчаниковых месторождений в Нон Па Вай и окрестных памятниках выплавляется в тиглях на угольных печах. Шлаковые отвалы и литейный мусор подтверждают местное производство. Выработка долины снабжает бронзовую сеть Исана более тысячелетия.",
       "era": "BC",
@@ -179,6 +144,24 @@
         "Thai"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.2000",
+      "description": "Phase IV–V burials at Khok Phanom Di reveal sharp social stratification: a small number of graves contain extraordinary wealth — clay anvils identifying master potters buried with thousands of shell beads, polished stone adzes, and elaborately decorated ceramic vessels — while the majority of burials are far more modest. The wealthiest individual recovered (the 'Princess') wears a headdress of shell discs and lies surrounded by 120 000 shell beads, marking her as a person of exceptional hereditary status. This burial evidence is the clearest demonstration in Neolithic Southeast Asia that social hierarchy precedes the Bronze Age.",
+      "description_ru": "Захоронения фаз IV–V в Кхок Фаном Ди демонстрируют сильную социальную стратификацию: небольшое число могил содержат исключительное богатство — глиняные наковальни, идентифицирующие мастеров-гончаров с тысячами ракушечных бус и нарядными сосудами, — тогда как большинство захоронений значительно скромнее. Богатейший найденный индивидуум носит головной убор из раковинных дисков и окружён 120 000 бус, свидетельствуя о наследственном статусе. Это наиболее убедительная демонстрация того, что социальная иерархия предшествует бронзовому веку в ЮВА.",
+      "era": "BC",
+      "latitude": 13.57128328,
+      "longitude": 101.14528656,
+      "name": "Elite Burials at Khok Phanom Di",
+      "name_ru": "Гробницы в Кхок Фаном Ди",
+      "source": "https://en.wikipedia.org/wiki/Khok_Phanom_Di",
+      "tags": [
+        "Burial",
+        "Culture",
+        "Neolithic",
+        "Thai"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.1800",
@@ -201,6 +184,24 @@
     },
     {
       "date": "01.01.1700",
+      "description": "Sea level at the Bang Pakong estuary drops by several metres, transforming the rich mangrove mudflats that sustained Khok Phanom Di's shellfish-and-pottery economy into dry land unsuitable for the community's established subsistence strategies. The site is abandoned after 18 phases of continuous occupation; descendants likely disperse into the Chao Phraya interior and coastal lowlands. The event illustrates the extreme sensitivity of coastal Neolithic communities to even modest environmental change.",
+      "description_ru": "Уровень моря у устья реки Бангпаконг падает на несколько метров, превращая богатые мангровые отмели, обеспечивавшие экономику Кхок Фаном Ди, в сухую землю. Памятник оставляется после 18 фаз непрерывного заселения; потомки, вероятно, рассеиваются во внутренние районы бассейна Чаупхраи. Событие иллюстрирует крайнюю чувствительность прибрежных неолитических общин к даже небольшим экологическим изменениям.",
+      "era": "BC",
+      "latitude": 13.57128328,
+      "longitude": 101.14528656,
+      "name": "Shallowing of the Bangpakong River estuary",
+      "name_ru": "Обмеление устья реки Бангпаконг",
+      "source": "https://en.wikipedia.org/wiki/Khok_Phanom_Di",
+      "tags": [
+        "Climate Crisis",
+        "Neolithic",
+        "Settlement",
+        "Thai"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1700",
       "description": "The Phu Lon copper mines on a mesa overlooking the Mekong River (Loei province) provide a second major ore source for the Thai Bronze Age, complementing the Khao Wong Prachan valley operation to the south. Copper prills and smelting slags at the site date to the second millennium BC; mine shafts follow veins of copper-bearing sandstone into the hillside. Phu Lon's highland location, close to the Mekong corridor, places it at the intersection of exchange routes linking Isan with Yunnan and the Đông Sơn cultures of northern Vietnam.",
       "description_ru": "Медные рудники Пху Лон на плато над рекой Меконг (провинция Лёй) — второй крупный источник руды для тайского бронзового века. Медные гранулы и плавильный шлак на памятнике датируются II тысячелетием до н. э.; горные шахты прослеживают медьсодержащий песчаник вглубь холма. Высокогорное положение Пху Лон помещает его на пересечении маршрутов обмена, связывающих Исан с Юньнанью и культурами Донгшон.",
       "era": "BC",
@@ -216,24 +217,6 @@
         "Mining",
         "Trade",
         "Isan",
-        "Thai"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1700",
-      "description": "Sea level at the Bang Pakong estuary drops by several metres, transforming the rich mangrove mudflats that sustained Khok Phanom Di's shellfish-and-pottery economy into dry land unsuitable for the community's established subsistence strategies. The site is abandoned after 18 phases of continuous occupation; descendants likely disperse into the Chao Phraya interior and coastal lowlands. The event illustrates the extreme sensitivity of coastal Neolithic communities to even modest environmental change.",
-      "description_ru": "Уровень моря у устья реки Бангпаконг падает на несколько метров, превращая богатые мангровые отмели, обеспечивавшие экономику Кхок Фаном Ди, в сухую землю. Памятник оставляется после 18 фаз непрерывного заселения; потомки, вероятно, рассеиваются во внутренние районы бассейна Чаупхраи. Событие иллюстрирует крайнюю чувствительность прибрежных неолитических общин к даже небольшим экологическим изменениям.",
-      "era": "BC",
-      "latitude": 13.57128328,
-      "longitude": 101.14528656,
-      "name": "Shallowing of the Bangpakong River estuary",
-      "name_ru": "Обмеление устья реки Бангпаконг",
-      "source": "https://en.wikipedia.org/wiki/Khok_Phanom_Di",
-      "tags": [
-        "Climate Crisis",
-        "Neolithic",
-        "Settlement",
         "Thai"
       ],
       "type": "historic"
@@ -468,23 +451,6 @@
     },
     {
       "date": "01.01.0600",
-      "description": "Linguistic and archaeological evidence places the Austroasiatic Mon-Khmer language family as the dominant ethnolinguistic presence in central Thailand by the mid-first millennium BC, overlaying or replacing earlier prehistoric population groups. The Mon branch of this family will found the Dvaravati kingdom in the 6th century AD, but the demographic and linguistic groundwork is laid far earlier. Mon-Khmer communities establish themselves at key river-junction sites — Lopburi, U Thong, and Nakhon Pathom — that later become the Mon-period cities.",
-      "description_ru": "Лингвистические и археологические данные помещают австроазиатскую языковую семью мон-кхмер как доминирующее этнолингвистическое присутствие в Центральном Таиланде к середине I тысячелетия до н. э. Общины мон-кхмер оседают в ключевых речных узлах — Лопбури, У Тхонг, Накхон Патхом.",
-      "era": "BC",
-      "latitude": 14.8,
-      "longitude": 100.62,
-      "name": "Mon-Khmer Peoples Establish in Central Thailand",
-      "name_ru": "Народ мон-кхмер в Центральном Таиланде",
-      "source": "https://en.wikipedia.org/wiki/Lopburi",
-      "tags": [
-        "Settlement",
-        "Khmer",
-        "Thai"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0600",
       "description": "The Mun and Chi river systems of eastern Isan (draining eastward into the Mekong) are systematically occupied by agricultural communities from roughly 600 BC, filling in the last major unpopulated zone of the Khorat Plateau with rice-farming villages. Sites along the Mun River will later develop into the major Khmer temple towns of northeastern Thailand; the agricultural foundation laid in this period sustains those later urban developments. The eastward expansion also brings Thai Bronze Age communities into direct contact with Mekong Valley exchange networks linking Cambodia and southern Laos.",
       "description_ru": "Системы рек Мун и Чи восточного Исана (стекающих на восток в Меконг) систематически осваиваются земледельческими общинами примерно с 600 г. до н. э. Памятники вдоль реки Мун впоследствии развиваются в крупные кхмерские храмовые города Северо-Восточного Таиланда; аграрный фундамент поддерживает эти городские образования. Восточная экспансия также приводит к контакту с обменными сетями долины Меконга.",
       "era": "BC",
@@ -498,6 +464,23 @@
         "Ban Chiang",
         "Settlement",
         "Isan",
+        "Thai"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0600",
+      "description": "Linguistic and archaeological evidence places the Austroasiatic Mon-Khmer language family as the dominant ethnolinguistic presence in central Thailand by the mid-first millennium BC, overlaying or replacing earlier prehistoric population groups. The Mon branch of this family will found the Dvaravati kingdom in the 6th century AD, but the demographic and linguistic groundwork is laid far earlier. Mon-Khmer communities establish themselves at key river-junction sites — Lopburi, U Thong, and Nakhon Pathom — that later become the Mon-period cities.",
+      "description_ru": "Лингвистические и археологические данные помещают австроазиатскую языковую семью мон-кхмер как доминирующее этнолингвистическое присутствие в Центральном Таиланде к середине I тысячелетия до н. э. Общины мон-кхмер оседают в ключевых речных узлах — Лопбури, У Тхонг, Накхон Патхом.",
+      "era": "BC",
+      "latitude": 14.8,
+      "longitude": 100.62,
+      "name": "Mon-Khmer Peoples Establish in Central Thailand",
+      "name_ru": "Народ мон-кхмер в Центральном Таиланде",
+      "source": "https://en.wikipedia.org/wiki/Lopburi",
+      "tags": [
+        "Settlement",
+        "Khmer",
         "Thai"
       ],
       "type": "historic"

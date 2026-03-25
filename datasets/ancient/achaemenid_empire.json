@@ -392,27 +392,6 @@
     },
     {
       "date": "01.01.0530",
-      "description": "Cyrus campaigns against Massagetae nomads in Central Asia; killed in battle by Queen Tomyris, ending reign of empire's founder and greatest conqueror",
-      "description_ru": "Кир убит в бою царицей массагетов Томирис, когда ведет военную кампанию против кочевников в Центральной Азии",
-      "era": "BC",
-      "latitude": 42,
-      "longitude": 60,
-      "name": "Death of Cyrus the Great",
-      "name_ru": "Смерть Кира Великого",
-      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
-      "tags": [
-        "Persian",
-        "Achaemenid",
-        "Scythian",
-        "War",
-        "Battle",
-        "Cyrus the Great 👑",
-        "Death"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0530",
       "description": "Cyrus's body returned to Pasargadae for burial in simple stone tomb; inscription reads 'O man, whoever you are and wherever you come from, for I know you will come, I am Cyrus who won the Persians their empire. Do not begrudge me this bit of earth that covers my bones'",
       "description_ru": "Тело Кира возвращено в Пасаргады для захоронения в простой каменной гробнице; надпись гласит: 'О человек, кто бы ты ни был и откуда бы ни пришел, ибо я знаю, что ты придешь, я - Кир, который завоевал персам их империю. Не жалей для меня этого клочка земли, покрывающего мои кости'",
       "era": "BC",
@@ -431,6 +410,27 @@
         "Tomb"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0530",
+      "description": "Cyrus campaigns against Massagetae nomads in Central Asia; killed in battle by Queen Tomyris, ending reign of empire's founder and greatest conqueror",
+      "description_ru": "Кир убит в бою царицей массагетов Томирис, когда ведет военную кампанию против кочевников в Центральной Азии",
+      "era": "BC",
+      "latitude": 42,
+      "longitude": 60,
+      "name": "Death of Cyrus the Great",
+      "name_ru": "Смерть Кира Великого",
+      "source": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
+      "tags": [
+        "Persian",
+        "Achaemenid",
+        "Scythian",
+        "War",
+        "Battle",
+        "Cyrus the Great 👑",
+        "Death"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0529",
@@ -1263,8 +1263,8 @@
       "description": "Artaxerxes I permits Ezra to lead second group of Jewish exiles from Babylon to Jerusalem, supporting reconstruction of Jewish religious community",
       "description_ru": "Артаксеркс I разрешает Ездре возглавить вторую группу еврейских изгнанников из Вавилона в Иерусалим, поддерживая восстановление еврейской религиозной общины",
       "era": "BC",
-      "latitude": 31.7783,
-      "longitude": 35.2247,
+      "latitude": 31.778,
+      "longitude": 35.235,
       "name": "Ezra's Mission to Jerusalem",
       "name_ru": "Миссия Ездры в Иерусалим",
       "source": "https://en.wikipedia.org/wiki/Ezra",
@@ -1284,8 +1284,8 @@
       "description": "Nehemiah appointed Persian governor of Judah; rebuilds Jerusalem walls with imperial authorization and funding, strengthening Jewish autonomy within empire",
       "description_ru": "Неемия назначен персидским губернатором Иудеи; восстанавливает стены Иерусалима с имперским разрешением и финансированием, укрепляя еврейскую автономию в империи",
       "era": "BC",
-      "latitude": 31.7783,
-      "longitude": 35.2247,
+      "latitude": 31.778,
+      "longitude": 35.235,
       "name": "Nehemiah Rebuilds Jerusalem",
       "name_ru": "Неемия восстанавливает Иерусалим",
       "source": "https://en.wikipedia.org/wiki/Nehemiah",
