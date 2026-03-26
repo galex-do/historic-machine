@@ -1465,11 +1465,9 @@ export default {
       return '/api'
     },
     
-    // Prepare description for compact inline display:
-    // trims whitespace and collapses blank lines so \n\n → single line break
     format_description_inline(text) {
       if (!text) return ''
-      return text.trim().replace(/\n{2,}/g, '\n')
+      return text.trim()
     },
 
     format_date(date_string) {
