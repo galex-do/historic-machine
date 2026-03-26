@@ -1189,11 +1189,12 @@ export default {
           // Group events by location (same coordinates)
           const locationGroups = this.group_events_by_location(this.events)
           
-          // Add markers for each location group
+          // Build all markers first, then batch-add — avoids O(n²) clustering recalculation
+          const markersToAdd = []
+
           Object.values(locationGroups).forEach(eventGroup => {
             if (!eventGroup.latitude || !eventGroup.longitude || !this.map) return
             
-            // Validate coordinates before creating marker
             const lat = parseFloat(eventGroup.latitude)
             const lng = parseFloat(eventGroup.longitude)
             
@@ -1215,13 +1216,10 @@ export default {
               riseOnHover: true
             })
             
-            // Store the event count and events on the marker for cluster counting and event display
             marker.eventCount = eventGroup.events.length
-            marker.events = eventGroup.events  // Store events directly on marker
+            marker.events = eventGroup.events
             
-            // Use click event instead of popup to avoid coordinate corruption
             marker.on('click', () => {
-              // If in pin mode, use marker location for coordinates ("sticky" pin)
               if (this.pin_mode) {
                 const markerLatLng = marker.getLatLng()
                 this.new_event.latitude = markerLatLng.lat
@@ -1229,21 +1227,19 @@ export default {
                 this.exit_pin_mode_and_show_modal()
                 return
               }
-              
               this.show_events_info(eventGroup.events)
             })
             
-            // Register this marker for all events at this location
             eventGroup.events.forEach(event => {
               this.marker_registry.set(event.id, marker)
             })
             
-            // Add marker to cluster group instead of directly to map
-            this.marker_cluster_group.addLayer(marker)
+            markersToAdd.push(marker)
             this.markers.push(marker)
           })
           
-          // Add the cluster group to the map
+          // Single batch insert — clustering runs once, not once per marker
+          this.marker_cluster_group.addLayers(markersToAdd)
           this.map.addLayer(this.marker_cluster_group)
         } catch (error) {
           console.error('Error adding markers:', error)
