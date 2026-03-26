@@ -105,8 +105,11 @@ func (h *EventHandler) GetAllEvents(w http.ResponseWriter, r *http.Request) {
                 return
         }
         
-        // Non-paginated path: serve from in-memory cache when possible
-        w.Header().Set("Cache-Control", "public, max-age=30, stale-while-revalidate=60")
+        // Non-paginated path: serve from in-memory cache when possible.
+        // Browser-level HTTP caching is intentionally disabled — performance is handled
+        // by the Go in-memory cache (60s) and the client localStorage cache (5 min).
+        // Allowing the browser to cache would cause stale data after admin edits.
+        w.Header().Set("Cache-Control", "no-store")
 
         if cached, ok := h.eventCache.Get(locale); ok {
                 w.Header().Set("Content-Type", "application/json")
