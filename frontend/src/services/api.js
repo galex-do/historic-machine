@@ -4,6 +4,13 @@
 
 import authService from './authService.js'
 import { useLocale } from '@/composables/useLocale.js'
+import {
+  cache_get,
+  cache_set,
+  cache_invalidate,
+  cache_invalidate_events,
+  CACHE_TTL,
+} from '@/utils/client-cache.js'
 
 class ApiService {
   constructor() {
@@ -70,45 +77,66 @@ class ApiService {
   // Events API
   async getEvents(page = null, limit = null, sortField = null, sortDirection = null) {
     let endpoint = '/events'
-    if (page !== null && limit !== null) {
+    const is_paginated = page !== null && limit !== null
+
+    if (is_paginated) {
       const params = new URLSearchParams({
         page: page.toString(),
         limit: limit.toString(),
       })
-      if (sortField) {
-        params.append('sort', sortField)
-      }
-      if (sortDirection) {
-        params.append('order', sortDirection)
-      }
+      if (sortField)     params.append('sort', sortField)
+      if (sortDirection) params.append('order', sortDirection)
       endpoint = `/events?${params}`
     }
-    // Add locale parameter to the endpoint
+
     endpoint = this.addLocaleToEventUrl(endpoint)
+
+    // Client-side cache only for the non-paginated map request (admin table bypasses it)
+    if (!is_paginated) {
+      const { getLocaleParam } = useLocale()
+      const locale = getLocaleParam().replace('locale=', '') || 'en'
+      const cache_key = `events:${locale}`
+
+      const cached = cache_get(cache_key)
+      if (cached) {
+        console.log(`[cache] HIT events:${locale} (client localStorage)`)
+        return cached
+      }
+
+      const data = await this.makeRequest(endpoint)
+      cache_set(cache_key, data, CACHE_TTL.events)
+      console.log(`[cache] MISS events:${locale} — stored in localStorage for ${CACHE_TTL.events / 60000} min`)
+      return data
+    }
+
     return this.makeRequest(endpoint)
   }
 
   async createEvent(eventData) {
     const endpoint = this.addLocaleToEventUrl('/events')
-    return this.makeRequest(endpoint, {
+    const result = await this.makeRequest(endpoint, {
       method: 'POST',
       body: JSON.stringify(eventData),
     })
+    cache_invalidate_events()
+    return result
   }
 
   async updateEvent(eventId, eventData) {
     const endpoint = this.addLocaleToEventUrl(`/events/${eventId}`)
-    return this.makeRequest(endpoint, {
+    const result = await this.makeRequest(endpoint, {
       method: 'PUT',
       body: JSON.stringify(eventData),
     })
+    cache_invalidate_events()
+    return result
   }
 
   async deleteEvent(eventId) {
     const endpoint = this.addLocaleToEventUrl(`/events/${eventId}`)
-    return this.makeRequest(endpoint, {
-      method: 'DELETE',
-    })
+    const result = await this.makeRequest(endpoint, { method: 'DELETE' })
+    cache_invalidate_events()
+    return result
   }
 
   async getEventById(id) {
@@ -201,53 +229,76 @@ class ApiService {
 
   // Tags API
   async getTags() {
-    return this.makeRequest('/tags')
+    const cached = cache_get('tags')
+    if (cached) {
+      console.log('[cache] HIT tags (client localStorage)')
+      return cached
+    }
+    const data = await this.makeRequest('/tags')
+    cache_set('tags', data, CACHE_TTL.tags)
+    console.log(`[cache] MISS tags — stored in localStorage for ${CACHE_TTL.tags / 60000} min`)
+    return data
   }
 
   async createTag(tagData) {
-    return this.makeRequest('/tags', {
+    const result = await this.makeRequest('/tags', {
       method: 'POST',
       body: JSON.stringify(tagData),
     })
+    cache_invalidate('tags')
+    cache_invalidate_events()
+    return result
   }
 
   async updateTag(id, tagData) {
-    return this.makeRequest(`/tags/${id}`, {
+    const result = await this.makeRequest(`/tags/${id}`, {
       method: 'PUT',
       body: JSON.stringify(tagData),
     })
+    cache_invalidate('tags')
+    cache_invalidate_events()
+    return result
   }
 
   async deleteTag(id) {
-    return this.makeRequest(`/tags/${id}`, {
-      method: 'DELETE',
-    })
+    const result = await this.makeRequest(`/tags/${id}`, { method: 'DELETE' })
+    cache_invalidate('tags')
+    cache_invalidate_events()
+    return result
   }
 
   async setEventTags(eventId, tagIds) {
-    return this.makeRequest(`/events/${eventId}/tags`, {
+    const result = await this.makeRequest(`/events/${eventId}/tags`, {
       method: 'PUT',
       body: JSON.stringify({ tag_ids: tagIds }),
     })
+    cache_invalidate_events()
+    return result
   }
 
   async addTagToEvent(eventId, tagId) {
-    return this.makeRequest(`/events/${eventId}/tags/${tagId}`, {
+    const result = await this.makeRequest(`/events/${eventId}/tags/${tagId}`, {
       method: 'POST',
     })
+    cache_invalidate_events()
+    return result
   }
 
   async removeTagFromEvent(eventId, tagId) {
-    return this.makeRequest(`/events/${eventId}/tags/${tagId}`, {
+    const result = await this.makeRequest(`/events/${eventId}/tags/${tagId}`, {
       method: 'DELETE',
     })
+    cache_invalidate_events()
+    return result
   }
 
   async importEvents(events, filename = '') {
-    return this.makeRequest('/events/import', {
+    const result = await this.makeRequest('/events/import', {
       method: 'POST',
       body: JSON.stringify({ events, filename }),
     })
+    cache_invalidate_events()
+    return result
   }
 
   // Dataset operations
