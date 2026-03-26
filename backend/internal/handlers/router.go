@@ -4,6 +4,7 @@ import (
         "historical-events-backend/internal/database/repositories"
         "historical-events-backend/internal/models"
         "historical-events-backend/internal/services"
+        "historical-events-backend/pkg/cache"
         "historical-events-backend/pkg/middleware"
         "net/http"
 
@@ -25,10 +26,12 @@ type Router struct {
 
 // NewRouter creates a new router with all handlers
 func NewRouter(eventRepo *repositories.EventRepository, templateRepo *repositories.TemplateRepository, tagRepo *repositories.TagRepository, datasetRepo *repositories.DatasetRepository, authService *services.AuthService, supportRepo *repositories.SupportRepository, regionRepo *repositories.RegionRepository) *Router {
+        // Shared cache instance — both EventHandler and TagHandler must invalidate the same cache
+        sharedEventCache := cache.NewEventCache()
         return &Router{
-                eventHandler:    NewEventHandler(eventRepo, tagRepo, datasetRepo),
+                eventHandler:    NewEventHandler(eventRepo, tagRepo, datasetRepo, sharedEventCache),
                 templateHandler: NewTemplateHandler(templateRepo),
-                tagHandler:      NewTagHandler(tagRepo),
+                tagHandler:      NewTagHandler(tagRepo, sharedEventCache),
                 authHandler:     NewAuthHandler(authService),
                 datasetHandler:  NewDatasetHandler(datasetRepo, eventRepo),
                 supportHandler:  NewSupportHandler(supportRepo),

@@ -4,6 +4,7 @@ import (
         "encoding/json"
         "historical-events-backend/internal/database/repositories"
         "historical-events-backend/internal/models"
+        "historical-events-backend/pkg/cache"
         "historical-events-backend/pkg/response"
         "net/http"
         "strconv"
@@ -13,13 +14,15 @@ import (
 
 // TagHandler handles HTTP requests for tags
 type TagHandler struct {
-        tagRepo *repositories.TagRepository
+        tagRepo    *repositories.TagRepository
+        eventCache *cache.EventCache
 }
 
 // NewTagHandler creates a new TagHandler
-func NewTagHandler(tagRepo *repositories.TagRepository) *TagHandler {
+func NewTagHandler(tagRepo *repositories.TagRepository, eventCache *cache.EventCache) *TagHandler {
         return &TagHandler{
-                tagRepo: tagRepo,
+                tagRepo:    tagRepo,
+                eventCache: eventCache,
         }
 }
 
@@ -129,6 +132,7 @@ func (h *TagHandler) UpdateTag(w http.ResponseWriter, r *http.Request) {
                 return
         }
 
+        h.eventCache.Invalidate()
         response.Success(w, updatedTag)
 }
 
@@ -147,6 +151,7 @@ func (h *TagHandler) DeleteTag(w http.ResponseWriter, r *http.Request) {
                 return
         }
 
+        h.eventCache.Invalidate()
         response.Success(w, map[string]string{"message": "Tag deleted successfully"})
 }
 
@@ -171,6 +176,7 @@ func (h *TagHandler) AddTagToEvent(w http.ResponseWriter, r *http.Request) {
                 return
         }
 
+        h.eventCache.Invalidate()
         response.Success(w, map[string]string{"message": "Tag added to event successfully"})
 }
 
@@ -195,6 +201,7 @@ func (h *TagHandler) RemoveTagFromEvent(w http.ResponseWriter, r *http.Request) 
                 return
         }
 
+        h.eventCache.Invalidate()
         response.Success(w, map[string]string{"message": "Tag removed from event successfully"})
 }
 
@@ -223,5 +230,6 @@ func (h *TagHandler) SetEventTags(w http.ResponseWriter, r *http.Request) {
                 return
         }
 
+        h.eventCache.Invalidate()
         response.Success(w, map[string]string{"message": "Event tags updated successfully"})
 }

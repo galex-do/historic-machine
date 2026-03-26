@@ -273,6 +273,7 @@ class ApiService {
       body: JSON.stringify({ tag_ids: tagIds }),
     })
     cache_invalidate_events()
+    cache_invalidate('tags')
     return result
   }
 
@@ -281,6 +282,7 @@ class ApiService {
       method: 'POST',
     })
     cache_invalidate_events()
+    cache_invalidate('tags')
     return result
   }
 
@@ -289,6 +291,7 @@ class ApiService {
       method: 'DELETE',
     })
     cache_invalidate_events()
+    cache_invalidate('tags')
     return result
   }
 

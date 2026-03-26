@@ -27,12 +27,12 @@ type EventHandler struct {
 }
 
 // NewEventHandler creates a new event handler
-func NewEventHandler(eventRepo *repositories.EventRepository, tagRepo *repositories.TagRepository, datasetRepo *repositories.DatasetRepository) *EventHandler {
+func NewEventHandler(eventRepo *repositories.EventRepository, tagRepo *repositories.TagRepository, datasetRepo *repositories.DatasetRepository, eventCache *cache.EventCache) *EventHandler {
         return &EventHandler{
                 eventRepo:   eventRepo,
                 tagRepo:     tagRepo,
                 datasetRepo: datasetRepo,
-                eventCache:  cache.NewEventCache(),
+                eventCache:  eventCache,
         }
 }
 
