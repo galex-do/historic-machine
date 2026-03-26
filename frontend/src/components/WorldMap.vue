@@ -86,7 +86,7 @@
                     ></span>
                   </template>
                   <template v-if="location_show_details && yearGroup.dateGroups[0].events[0].description">
-                    {{ ' — ' }}{{ format_description_inline(yearGroup.dateGroups[0].events[0].description) }}
+                    {{ ' — ' }}<span class="event_description_text">{{ format_description_inline(yearGroup.dateGroups[0].events[0].description) }}</span>
                   </template>
                   <template v-if="location_show_details && yearGroup.dateGroups[0].events[0].tags && yearGroup.dateGroups[0].events[0].tags.length > 0">
                     {{ ' ' }}
@@ -152,7 +152,7 @@
                             ></span>
                           </template>
                           <template v-if="location_show_details && dateGroup.events[0].description">
-                            {{ ' — ' }}{{ format_description_inline(dateGroup.events[0].description) }}
+                            {{ ' — ' }}<span class="event_description_text">{{ format_description_inline(dateGroup.events[0].description) }}</span>
                           </template>
                           <template v-if="location_show_details && dateGroup.events[0].tags && dateGroup.events[0].tags.length > 0">
                             {{ ' ' }}
@@ -215,7 +215,7 @@
                             ></span>
                           </template>
                           <template v-if="location_show_details && event.description">
-                            {{ ' — ' }}{{ format_description_inline(event.description) }}
+                            {{ ' — ' }}<span class="event_description_text">{{ format_description_inline(event.description) }}</span>
                           </template>
                           <template v-if="location_show_details && event.tags && event.tags.length > 0">
                             {{ ' ' }}
@@ -1465,10 +1465,11 @@ export default {
       return '/api'
     },
     
-    // Replace newlines with a mid-dot separator for compact inline description display
+    // Prepare description for compact inline display:
+    // trims whitespace and collapses blank lines so \n\n → single line break
     format_description_inline(text) {
       if (!text) return ''
-      return text.replace(/\n+/g, ' · ')
+      return text.trim().replace(/\n{2,}/g, '\n')
     },
 
     format_date(date_string) {

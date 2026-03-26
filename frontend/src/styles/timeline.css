@@ -63,6 +63,10 @@
   overflow-wrap: break-word;
 }
 
+.event_description_text {
+  white-space: pre-line;
+}
+
 .timeline_single_text .timeline_date_inline {
   font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 700;
