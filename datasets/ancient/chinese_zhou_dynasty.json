@@ -1,0 +1,390 @@
+{
+  "description": "The Zhou dynasty (周朝, 1046–256 BC) — the longest in Chinese history at nearly eight centuries — is divided into the Western Zhou (西周, 1046–771 BC) governed from Fenghao near modern Xi'an, and the Eastern Zhou (东周, 770–256 BC) governed from Luoyi (modern Luoyang). The Eastern Zhou subdivides into the Spring and Autumn period (春秋, 770–476 BC) and the Warring States period (战国, 475–221 BC, though the Zhou royal line ends in 256 BC). The dataset covers the founding Battle of Muye, the enfeoffment system that defined Chinese feudalism, the Duke of Zhou's ritual codification, the fall of the Western Zhou, China's Iron Age, the relay road and messenger network, and the explosion of philosophical schools — Confucianism, Daoism, Mohism, Legalism — known as the Hundred Schools of Thought. It closes with Li Bing's Dujiangyan hydraulic system and the dynasty's extinction by Qin in 256 BC. Central themes: the Mandate of Heaven, feudal-ceremonial statecraft, bronze inscriptions as state documents, iron-age technological transformation, and the intellectual foundations of imperial China.",
+  "events": [
+    {
+      "date": "01.01.1046",
+      "era": "BC",
+      "name": "Battle of Muye — The Zhou Conquest of Shang",
+      "name_ru": "Битва при Муе — завоевание Шан чжоусцами",
+      "description": "The Zhou coalition army under King Wu (武王 Wǔ Wáng) meets the Shang forces of Di Xin (帝辛) at Muye (牧野), a plain north of the final Shang capital Zhaoge (朝歌). Di Xin's army — supplemented by enslaved prisoners who defect or refuse to fight at first contact — disintegrates rapidly. Di Xin retreats to his palace, dons his jade and lacquer regalia, and dies in the burning of the Lü Tai tower (鹿台); exact circumstances are disputed. The battle ends the Shang dynasty and transfers the Mandate of Heaven (天命 tiānmìng) to the Zhou house.\n\nThe Zhou coalition's military advantage comes not from numbers but from preparation: King Wu's father, King Wen (文王), spent decades building alliances and stockpiling military resources. The actual battle lasts less than a day, making it one of the briefest decisive engagements in Chinese history relative to its political consequence.",
+      "description_ru": "Чжоуская коалиционная армия под командованием У-вана (武王) сражается с войсками Шан под командованием Ди Синя (帝辛) при Муе (牧野) — равнине к северу от последней шанской столицы Чаогэ (朝歌). Армия Ди Синя — пополненная порабощёнными пленниками, которые при первом столкновении переходят на сторону врага или отказываются сражаться, — быстро распадается. Ди Синь отступает во дворец, облачается в нефритовые и лаковые регалии и погибает при пожаре башни Люйтай (鹿台); точные обстоятельства оспариваются. Битва завершает династию Шан и передаёт Мандат Неба (天命 тяньмин) дому Чжоу.\n\nВоенное преимущество Чжоу обусловлено не численностью, а подготовкой: отец У-вана, Вэнь-ван (文王), десятилетиями выстраивал союзы и накапливал военные ресурсы. Само сражение длится менее дня, что делает его одним из кратчайших решающих сражений в истории Китая относительно его политических последствий.",
+      "latitude": 35.40,
+      "longitude": 113.89,
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Muye",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Dynasty",
+        "Warfare"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.06.1046",
+      "era": "BC",
+      "name": "Mandate of Heaven — The Founding Doctrine of Zhou Legitimacy",
+      "name_ru": "Мандат Неба — основополагающая доктрина легитимности Чжоу",
+      "description": "After Muye, King Wu formalises the Mandate of Heaven (天命 tiānmìng) as the foundational doctrine of Zhou legitimacy. The mandate holds that Heaven (天 Tiān) grants the right to rule to a virtuous dynasty and withdraws it when rulers become tyrannical — withdrawal signalled by natural disasters, popular unrest, and military defeat. The concept makes virtuous governance a theological requirement, not merely a political preference.\n\nThe Mandate of Heaven is not a static grant but a revocable trust: the Zhou explicitly acknowledge that the Shang received it from the Xia, and that they themselves received it from the Shang — implying that future dynasties might receive it from them. This logic becomes the dominant framework for dynastic legitimacy in Chinese political thought for three thousand years, used by every subsequent Chinese dynasty to justify its existence and condemn its predecessors.",
+      "description_ru": "После победы при Муе У-ван формализует концепцию Мандата Неба (天命 тяньмин) как основополагающей доктрины легитимности Чжоу. Мандат утверждает, что Небо (天 тянь) даёт право на правление добродетельной династии и отзывает его, когда правители становятся тиранами, — что проявляется в стихийных бедствиях, народных волнениях и военных поражениях. Концепция делает добродетельное правление теологическим требованием, а не просто политическим предпочтением.\n\nМандат Неба — не статичный дар, но отзываемое доверие: Чжоу явно признают, что Шан получил его от Ся, а они сами — от Шан, подразумевая, что будущие династии могут получить его от них. Эта логика становится господствующей теорией династической легитимности в китайской политической мысли на три тысячи лет.",
+      "latitude": 34.18,
+      "longitude": 108.84,
+      "source": "https://en.wikipedia.org/wiki/Mandate_of_Heaven",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Dynasty",
+        "Legend"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1045",
+      "era": "BC",
+      "name": "Fengjian Enfeoffment — The Architecture of Zhou Feudalism",
+      "name_ru": "Пожалование уделов фэнцзянь — архитектура чжоуского феодализма",
+      "description": "King Wu and his successors distribute territory to approximately 71 vassal states (諸侯 zhūhóu) under the fengjian (封建) enfeoffment system, placing Zhou royal relatives and allied clans in strategic positions across the realm. Each lord receives a bronze vessel inscribed with the terms of his enfeoffment — these inscribed bronzes become the primary documentary record of early Zhou political history. Lords owe military service, tribute, and ceremonial attendance at the royal court; in return they hold hereditary territorial control and the right to sub-enfeoff subordinates.\n\nThe system successfully administers a geographically vast domain for several centuries but carries the mechanism of its own dissolution: over generations, vassal states accumulate independent military and economic power while the Zhou royal domain shrinks. By the Spring and Autumn period, the Zhou king is ceremonially supreme but practically powerless.",
+      "description_ru": "У-ван и его преемники распределяют территорию примерно 71 вассальному государству (諸侯 чжухоу) в рамках системы пожалования уделов фэнцзянь (封建), размещая родственников чжоуского дома и союзные кланы в стратегических точках державы. Каждый властитель получает бронзовый сосуд с выгравированными условиями его пожалования — эти надписные бронзы становятся основным документальным источником по ранней чжоуской политической истории. Властители обязаны военной службой, данью и участием в церемониях при царском дворе; взамен они получают наследственный контроль над территориями.\n\nСистема успешно управляет географически обширным доменом несколько столетий, однако несёт механизм собственного распада: поколение за поколением вассальные государства накапливают независимую военную и экономическую мощь, тогда как чжоуский царский удел сокращается.",
+      "latitude": 34.18,
+      "longitude": 108.84,
+      "source": "https://en.wikipedia.org/wiki/Fengjian",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1043",
+      "era": "BC",
+      "name": "Duke of Zhou's Regency — Ritual Architect of the Dynasty",
+      "name_ru": "Регентство Чжоу-гуна — ритуальный архитектор династии",
+      "description": "On King Wu's death, his brother the Duke of Zhou (周公 Zhōu Gōng Dàn) becomes regent for the child king Cheng (成王) and governs for seven years before voluntarily returning power. He first suppresses a major revolt by three of his own brothers — Guan Shu, Cai Shu, and Huo Shu (the Three Supervisors, 三监) — who allied with remnant Shang forces and eastern frontier peoples. He then codifies the Zhou ritual system (周禮 Zhōu Lǐ): defining the correct vessels, music, dances, and ceremonial postures for every rank of nobility.\n\nThe Duke of Zhou is regarded by Confucians as the ideal statesman-sage — a man of supreme power who subordinated personal ambition entirely to institutional duty. Confucius writes that the Duke of Zhou appears in his dreams as a standard of conduct, and that when he ceases to dream of him in old age, he knows he is declining. The ritual codifications attributed to the Duke become the normative template for court ceremony throughout the Zhou period and beyond.",
+      "description_ru": "После смерти У-вана его брат Чжоу-гун (周公 Чжоу Гун Дань) становится регентом при малолетнем ване Чэне (成王) и правит семь лет, прежде чем добровольно возвращает власть. Сначала он подавляет крупный мятеж трёх своих братьев — Гуань Шу, Цай Шу и Хо Шу (Трёх наместников, 三监), — вступивших в союз с остатками шанских сил и восточными пограничными народами. Затем он кодифицирует чжоускую ритуальную систему (周禮 Чжоу Ли): определяя правильные сосуды, музыку, танцы и церемониальные позы для каждого ранга знати.\n\nЧжоу-гун считается в конфуцианстве идеальным государственным мудрецом — человеком, обладавшим верховной властью и полностью подчинившим личное честолюбие институциональному долгу. Конфуций пишет, что Чжоу-гун является ему во снах как образец поведения, и что когда в старости он перестаёт его видеть, то понимает, что приходит в упадок.",
+      "latitude": 34.18,
+      "longitude": 108.84,
+      "source": "https://en.wikipedia.org/wiki/Duke_of_Zhou",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1000",
+      "era": "BC",
+      "name": "Zhouyuan — The Zhou Ancestral Homeland",
+      "name_ru": "Чжоуюань — родина предков чжоу",
+      "description": "The site of Zhouyuan (周原, 'Zhou plain') in the Qishan–Fufeng area of modern Shaanxi is the agricultural homeland from which the Zhou people grew before their conquest of the Shang. Excavations since the 1970s have revealed palace foundations, bronze-casting workshops, and hoards of oracle bones inscribed with early Zhou writing — the only substantial corpus of pre-conquest Zhou script known. Most significantly, Zhouyuan has yielded the largest concentrations of Western Zhou bronzes found anywhere, including inscribed vessels that constitute primary sources for Western Zhou political history.\n\nThe site demonstrates that the Zhou were a complex society with its own bureaucratic traditions, craft specialisation, and ritual infrastructure well before the Shang conquest. Zhouyuan bronzes include some of the most technically accomplished castings of the entire Zhou period, disproving any notion that the Zhou were a culturally inferior frontier people who conquered a superior civilisation.",
+      "description_ru": "Место Чжоуюань (周原, «Чжоуская равнина») в районе Цишань–Фуфэн современной провинции Шэньси является сельскохозяйственной родиной, где народ чжоу вырос до завоевания Шан. Раскопки с 1970-х годов обнаружили фундаменты дворцов, бронзолитейные мастерские и клады гадательных костей с ранними чжоускими надписями — единственный известный значительный корпус дозавоевательного чжоуского письма. Важнее всего то, что Чжоуюань дал наибольшие концентрации западночжоуских бронз среди всех известных мест, включая надписные сосуды как первичные источники по западночжоуской политической истории.\n\nПамятник свидетельствует о том, что чжоу были сложным обществом с собственными бюрократическими традициями, ремесленной специализацией и ритуальной инфраструктурой задолго до завоевания Шан.",
+      "latitude": 34.47,
+      "longitude": 107.90,
+      "source": "https://en.wikipedia.org/wiki/Zhouyuan",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Archaeology",
+        "Bronze",
+        "Holy Site"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0950",
+      "era": "BC",
+      "name": "Western Zhou Bronze Inscriptions — History Written in Metal",
+      "name_ru": "Бронзовые надписи Западного Чжоу — история, написанная в металле",
+      "description": "Western Zhou bronzes carry the longest and most historically informative inscriptions of any phase of Chinese bronze culture: vessels cast to commemorate royal appointments, military victories, land grants, and legal disputes bear texts running to several hundred characters. The Maogong Ding (毛公鼎), cast in the late Western Zhou period, contains 497 characters — the longest bronze inscription in Chinese history — recording the Zhou king's charge to his minister Maogong. Unlike Shang oracle bones (divination queries), Zhou bronze inscriptions are commemorative: they are cast to be read by ancestors during sacrifice, preserving the exact terms of a royal commission as permanent divine testimony.\n\nThese inscriptions provide the primary evidence for Western Zhou government, law, military organisation, and land tenure that no written text tradition preserves. The dating, identification, and interpretation of Zhou bronzes has been a central project of Chinese classical scholarship for a thousand years.",
+      "description_ru": "Западночжоуские бронзы несут самые длинные и исторически информативные надписи среди всех этапов китайской бронзовой культуры: сосуды, отлитые в ознаменование царских назначений, военных побед, земельных пожалований и судебных споров, содержат тексты в несколько сотен знаков. Мао-гун дин (毛公鼎), отлитый в позднем Западном Чжоу, содержит 497 знаков — длиннейшую бронзовую надпись в истории Китая, — фиксируя царское поручение министру Мао-гуну. В отличие от шанских гадательных костей (запросов к оракулу), чжоуские бронзовые надписи являются памятными: они отливаются для прочтения предками во время жертвоприношений.\n\nЭти надписи служат основным источником по западночжоускому государственному управлению, праву, военной организации и землевладению, не сохранившемуся ни в каких письменных текстовых традициях.",
+      "latitude": 34.18,
+      "longitude": 108.84,
+      "source": "https://en.wikipedia.org/wiki/Bronze_inscriptions",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Bronze",
+        "Archaeology",
+        "Writing"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0900",
+      "era": "BC",
+      "name": "The Shijing — China's Oldest Anthology of Poetry",
+      "name_ru": "«Шицзин» — древнейшая антология китайской поэзии",
+      "description": "The Shijing (诗经, Book of Songs) — a collection of 305 poems assembled over several centuries of the Western and early Eastern Zhou — is the oldest surviving anthology of Chinese verse and one of the Five Classics of Confucianism. The texts range from court hymns (頌 sòng) used in royal sacrifices, to major and minor odes (雅 yǎ) celebrating rulers and expressing political criticism, to folk songs (風 fēng) from fifteen regional states recording love, harvest, warfare, and homesickness. The folk songs in particular preserve evidence of popular speech and regional dialects that official historiography ignores.\n\nConfucius is recorded as having selected and arranged the 305 poems from a larger corpus, though modern scholarship treats this claim cautiously. He declares that the Shijing can be summarised in a single phrase: 'have no depraved thoughts' (思無邪). The anthology becomes a mandatory text for Zhou aristocratic education and is memorised by officials who quote it in diplomatic contexts as a shared cultural code across all the states.",
+      "description_ru": "«Шицзин» (诗经, «Книга песен») — антология 305 стихотворений, создававшаяся на протяжении нескольких веков Западного и раннего Восточного Чжоу, — является древнейшей сохранившейся антологией китайской поэзии и одним из Пяти канонов конфуцианства. Тексты варьируются от придворных гимнов (頌 сун), используемых в царских жертвоприношениях, до малых и больших од (雅 я), прославляющих правителей или содержащих политическую критику, и народных песен (風 фэн) из пятнадцати региональных государств — о любви, жатве, войне и тоске по родине.\n\nКонфуций, по преданию, отобрал и упорядочил 305 стихотворений из более широкого корпуса, хотя современная наука относится к этому утверждению осторожно. Антология становится обязательным текстом аристократического образования Чжоу и заучивается чиновниками, цитирующими её в дипломатических контекстах как общий культурный код всех государств.",
+      "latitude": 34.18,
+      "longitude": 108.84,
+      "source": "https://en.wikipedia.org/wiki/Classic_of_Poetry",
+      "tags": [
+        "Chinese",
+        "Zhou"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0841",
+      "era": "BC",
+      "name": "The Gonghe Regency — China's Verified Chronology Begins",
+      "name_ru": "Регентство Гунхэ — начало верифицированной китайской хронологии",
+      "description": "The year 841 BC is the earliest date in Chinese history for which continuous year-by-year records survive, established by Sima Qian's Shiji (史记). In that year, King Li (厉王 Lì Wáng) — notorious for suppressing free speech through a network of informers and executing critics of his rule — is driven from the capital in a popular uprising. Two senior ministers, the Duke of Zhou and the Duke of Shao, co-govern in a period called Gonghe (共和, 'Shared Governance') until the king's son comes of age. Whether 'Gonghe' denotes joint ministerial rule or the regency of a single official named Gong He is still debated.\n\nBefore 841 BC, dates for Chinese rulers are reconstructed approximations; from 841 BC onward, the Chinese historical record is continuous and annually verified. The Gonghe year also marks the earliest point in Chinese history to which the concept of republican or shared governance has been retrospectively traced — the two characters 共和 (gòng hé) later become the standard Chinese translation of 'republic'.",
+      "description_ru": "841 г. до н. э. — древнейшая дата в истории Китая, для которой сохранились непрерывные погодовые записи, зафиксированные в «Шицзи» (史记) Сыма Цяня. В этом году ван Ли (厉王), печально известный подавлением свободы слова с помощью сети осведомителей и казнями критиков, был изгнан из столицы в результате народного восстания. Два старших министра — Чжоу-гун и Шао-гун — совместно управляют в период, именуемый Гунхэ (共和, «Совместное правление»), до совершеннолетия царского сына.\n\nДо 841 г. до н. э. даты китайских правителей являются реконструкциями; с 841 г. до н. э. китайская историческая летопись непрерывна и ежегодно верифицирована. Два иероглифа 共和 (гунхэ) впоследствии становятся стандартным китайским переводом слова «республика».",
+      "latitude": 34.18,
+      "longitude": 108.84,
+      "source": "https://en.wikipedia.org/wiki/Gonghe_regency",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0771",
+      "era": "BC",
+      "name": "Fall of Western Zhou — King You and the False Beacons",
+      "name_ru": "Падение Западного Чжоу — ван Ю и ложные маяки",
+      "description": "King You (幽王 Yōu Wáng) deposes his heir and primary consort in favour of the concubine Bao Si (褒姒), and reportedly fires the beacon-tower alarm network — the Zhou relay emergency warning system — as a jest to amuse her when she would not smile. When the Quanrong (犬戎) nomadic confederation, invited by the deposed queen's Shen state allies, actually attacks Fenghao, the feudal lords do not march — believing another false alarm. King You is killed, Fenghao is sacked, and the Zhou are forced to abandon their western heartland permanently.\n\nThe beacon story — a Chinese variant of the 'cry wolf' motif — is likely legendary elaboration, but the destruction of the Western Zhou capital and the political collapse of the western Zhou domain are confirmed by bronze inscriptions and archaeological evidence. The episode defines, in Chinese cultural memory, the catastrophic consequences of a ruler who corrupts institutional systems for personal entertainment.",
+      "description_ru": "Ван Ю (幽王) низложил наследника и первую супругу в пользу наложницы Бао Сы (褒姒) и, по преданию, зажёг сигнальные маяки — эстафетную систему предупреждения об опасности Чжоу — в шутку, чтобы заставить её улыбнуться. Когда кочевники цюаньжун (犬戎), призванные союзниками низложенной царицы из государства Шэнь, действительно напали на Фэнхао, феодальные властители не выступили — приняв тревогу за очередную ложную. Ван Ю был убит, Фэнхао разграблен, и Чжоу были вынуждены навсегда покинуть свою западную родину.\n\nИстория о маяках — вероятно, легендарное приукрашивание, однако разрушение западночжоуской столицы подтверждено бронзовыми надписями и археологически. Эпизод определяет в китайской культурной памяти катастрофические последствия правителя, ради личного развлечения разрушающего институциональные механизмы.",
+      "latitude": 34.18,
+      "longitude": 108.84,
+      "source": "https://en.wikipedia.org/wiki/King_You_of_Zhou",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Dynasty",
+        "Warfare",
+        "Legend"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0770",
+      "era": "BC",
+      "name": "Eastern Zhou — Court Moves to Luoyang",
+      "name_ru": "Восточное Чжоу — двор переезжает в Лоян",
+      "description": "Escorted east by the lords of Zheng, Qin, and Jin, King Ping (平王) establishes the Eastern Zhou court at Luoyi (洛邑, modern Luoyang), a city built by the Duke of Zhou in the early Western Zhou as a secondary capital for administering the eastern territories. The move is a permanent diminishment of Zhou royal power: the Zhou have lost their western agricultural heartland and now depend on the goodwill of formerly subordinate lords for basic security. Luoyi lies at the geographic centre of the North China Plain and serves as the Zhou capital for over five centuries.\n\nThe relocation marks the beginning of the Spring and Autumn period (春秋 chūnqiū, 770–476 BC), named after the chronicle that Confucius compiled for the state of Lu. The Zhou king retains ceremonial supremacy — the other lords are nominally his vassals — but effective political authority passes progressively to the great territorial powers: Qi, Jin, Qin, Chu, and later Wu and Yue.",
+      "description_ru": "Эскортированный на восток властителями Чжэн, Цинь и Цзинь, ван Пин (平王) переносит восточночжоуский двор в Лои (洛邑, совр. Лоян) — город, выстроенный Чжоу-гуном в начале Западного Чжоу в качестве второй столицы для управления восточными территориями. Переезд знаменует постоянное ослабление чжоуской царской власти: Чжоу утратили западные сельскохозяйственные угодья и теперь зависят от расположения прежде подчинённых им властителей. Лои расположен в центре Северо-Китайской равнины и остаётся столицей Чжоу более пяти веков.\n\nПереезд знаменует начало периода Весна и Осень (春秋 чуньцю, 770–476 до н. э.), названного по летописи, составленной Конфуцием для государства Лу. Чжоуский ван сохраняет церемониальное верховенство, однако реальная политическая власть постепенно переходит к крупным территориальным державам: Ци, Цзинь, Цинь, Чу, позднее У и Юэ.",
+      "latitude": 34.68,
+      "longitude": 112.45,
+      "source": "https://en.wikipedia.org/wiki/Eastern_Zhou",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0700",
+      "era": "BC",
+      "name": "Cast Iron — China's Independent Metallurgical Revolution",
+      "name_ru": "Чугун — самостоятельная металлургическая революция Китая",
+      "description": "China develops cast iron technology independently using a distinctive blast-furnace technique that produces cast (pig) iron directly — unlike the wrought iron dominant in West Asia and the Mediterranean. The earliest Chinese cast iron artifacts date to roughly 650–700 BC and appear primarily in the Yangtze River basin and eastern Zhou states. Cast iron is harder than wrought iron but can be poured into moulds, enabling rapid mass production of standardised tools — ploughshares, sickles, adzes, and axe heads — that transform Chinese agriculture within a few generations.\n\nBy 300 BC, China's iron industry surpasses anything produced elsewhere in the ancient world in scale and metallurgical sophistication. The ability to cast iron into agricultural implements rather than laboriously forging each piece individually is the primary driver of the massive agricultural expansion that feeds the large conscript armies of the Warring States period. China will not transfer this technology to the West, which independently develops cast iron only in the 14th century AD.",
+      "description_ru": "Китай самостоятельно разрабатывает технологию чугунного литья, используя отличительную технику доменной плавки, производящей чугун непосредственно — в отличие от кованого железа, доминирующего в Западной Азии и Средиземноморье. Древнейшие китайские чугунные артефакты датируются примерно 650–700 гг. до н. э. и появляются преимущественно в бассейне Янцзы и восточных чжоуских государствах. Чугун тверже кованого железа, но может заливаться в формы, обеспечивая быстрое массовое производство стандартизированных орудий — лемехов, серпов, тёсел и топоров, — которые преобразуют китайское земледелие.\n\nК 300 г. до н. э. китайская железная промышленность превосходит всё, что производится в других регионах древнего мира, по масштабу и металлургической сложности. Способность отливать железные сельскохозяйственные орудия является главным движущим фактором масштабного аграрного расширения, питающего крупные призывные армии периода Сражающихся царств.",
+      "latitude": 32.50,
+      "longitude": 114.40,
+      "source": "https://en.wikipedia.org/wiki/Iron_metallurgy_in_China",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Iron"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.0650",
+      "era": "BC",
+      "name": "Zhou Relay Road Network — China's First Postal System",
+      "name_ru": "Эстафетная дорожная сеть Чжоу — первая почтовая система Китая",
+      "description": "The Zhou and successor states develop a network of relay stations (驿 yì) spaced at regular intervals along major roads, where mounted messengers transfer documents and orders and post-horses are exchanged, allowing rapid communication across territories too large for a single rider. Zhou texts prescribe standardised road widths — the 'king's highway' (周道 zhōu dào) is specified wide enough for three chariots to pass abreast — along with regular waypoints, official courier grades, and rules prioritising military dispatches over civil correspondence.\n\nBy the Spring and Autumn period, the system is functional enough for a major lord to receive frontier intelligence within days rather than weeks. The relay station network also serves as a diplomatic infrastructure: official envoys (使者 shǐzhě) travel between courts carrying sealed documents whose inviolability is a matter of interstate protocol. This proto-postal infrastructure will be systematised and vastly expanded under the Qin and Han empires into the largest relay communication network in the ancient world.",
+      "description_ru": "Чжоу и государства-преемники создают сеть почтовых станций (驿 и), расположенных через равные промежутки вдоль главных дорог, где конные гонцы передают документы и приказы, а почтовые лошади сменяются, обеспечивая быструю связь на территориях, слишком больших для одного всадника. Чжоуские тексты предписывают стандартизированную ширину дорог — «царский тракт» (周道 чжоу дао) специфицирован достаточно широким для разъезда трёх колесниц, — наряду с регулярными путевыми точками, официальными рангами курьеров и правилами приоритета военных донесений.\n\nК периоду Весна и Осень система достаточно функциональна, чтобы крупный властитель получал пограничные сведения за дни, а не недели. Сеть почтовых станций также служит дипломатической инфраструктурой: официальные послы (使者 шичжэ) путешествуют между дворами с запечатанными документами, неприкосновенность которых является вопросом межгосударственного протокола.",
+      "latitude": 34.68,
+      "longitude": 112.45,
+      "source": "https://en.wikipedia.org/wiki/Zhou_dynasty",
+      "tags": [
+        "Chinese",
+        "Zhou"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "28.09.0551",
+      "era": "BC",
+      "name": "Confucius Born in the State of Lu",
+      "name_ru": "Конфуций родился в государстве Лу",
+      "description": "Kong Qiu (孔丘), known posthumously as Confucius (孔子 Kǒngzǐ, 'Master Kong'), is born in Zouyi (陬邑) in the state of Lu (modern Qufu, Shandong) into a minor aristocratic family that has fallen from social prominence. His father dies when Confucius is three; he is raised by his mother in relative poverty. Despite this, Confucius masters the six arts of Zhou aristocratic education — ritual, music, archery, charioteering, calligraphy, and mathematics — and works in minor Lu government positions before beginning the teaching career that transforms Chinese civilisation.\n\nConfucius's intellectual obsession is restoring the ritual and moral order of the early Zhou as codified by the Duke of Zhou, which he sees as a golden age of social harmony now lost through political fragmentation and moral decline. He assembles approximately 3,000 students over his lifetime, from all social backgrounds, and his teaching that virtue (仁 rén, benevolence) rather than noble birth is the qualification for governance is a radical assertion in a hereditary aristocratic society.",
+      "description_ru": "Кун Цю (孔丘), известный посмертно как Конфуций (孔子 Кун-цзы, «Учитель Кун»), родился в Цоуи (陬邑) в государстве Лу (совр. Цюйфу, Шаньдун) в семье мелкого аристократа, утратившей социальное положение. Его отец умирает, когда Конфуцию три года; он воспитывается матерью в относительной бедности. Тем не менее Конфуций овладевает шестью искусствами аристократического образования Чжоу — ритуалом, музыкой, стрельбой из лука, управлением колесницей, каллиграфией и математикой — и занимает ряд мелких должностей в правительстве Лу.\n\nИнтеллектуальная одержимость Конфуция — восстановление ритуального и морального порядка раннего Чжоу, кодифицированного Чжоу-гуном, который он видит золотым веком социальной гармонии, ныне утраченным из-за политической раздробленности. За жизнь он собирает около 3000 учеников из всех социальных слоёв; его учение о том, что добродетель (仁 жэнь, человеколюбие), а не знатное происхождение, является квалификацией для управления, — радикальное утверждение в наследственно-аристократическом обществе.",
+      "latitude": 35.60,
+      "longitude": 116.99,
+      "source": "https://en.wikipedia.org/wiki/Confucius",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Confucius",
+        "Holy Site"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0512",
+      "era": "BC",
+      "name": "Sun Tzu Presents The Art of War to King Helü of Wu",
+      "name_ru": "Сунь-цзы представляет «Искусство войны» вану Хэлюю государства У",
+      "description": "Sun Wu (孫武), known as Sun Tzu (孫子), presents his thirteen-chapter military treatise Bīngfǎ (兵法, The Art of War) to King Helü (闔閭) of the southeastern state of Wu and is appointed commander of the Wu army. The text is the earliest surviving systematic work of military theory in any tradition, addressing strategy, tactics, intelligence, logistics, terrain, fire, and the psychology of command. It consistently privileges deception, flexibility, and the avoidance of direct attrition over brute force: 'the supreme art of war is to subdue the enemy without fighting.'\n\nThe Wu army under Sun Tzu's direction defeats the much larger state of Chu, sacking the Chu capital at Ying in 506 BC in one of the most celebrated campaigns of the Spring and Autumn period. The Art of War remains in continuous military, diplomatic, and strategic use to the present day and has been translated into more languages than any other Chinese text.",
+      "description_ru": "Сунь У (孫武), известный как Сунь-цзы (孫子), представляет свой тринадцатиглавный военный трактат Бинфа (兵法, «Искусство войны») вану Хэлюю (闔閭) юго-восточного государства У и назначается командующим армией У. Трактат — древнейший сохранившийся систематический труд по военной теории в любой традиции: он рассматривает стратегию, тактику, разведку, логистику, рельеф, применение огня и психологию командования. Последовательно отдаётся предпочтение обману, гибкости и уклонению от прямого противоборства: «высшее искусство войны — подчинить врага без боя».\n\nАрмия У под руководством Сунь-цзы разгромила значительно более крупное государство Чу, взяв штурмом его столицу Ин в 506 г. до н. э. «Искусство войны» остаётся в непрерывном военном, дипломатическом и стратегическом употреблении по сей день.",
+      "latitude": 31.30,
+      "longitude": 120.62,
+      "source": "https://en.wikipedia.org/wiki/The_Art_of_War",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Warfare"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0500",
+      "era": "BC",
+      "name": "Laozi and the Dao De Jing",
+      "name_ru": "Лао-цзы и «Дао дэ цзин»",
+      "description": "Laozi (老子, 'Old Master') — whose historical existence is disputed but whom tradition identifies as a royal archivist (柱下史) at the Zhou court in Luoyang — composes or transmits the Dao De Jing (道德经, 'Classic of the Way and Virtue'): 81 short chapters of approximately 5,000 characters that become the foundational scripture of Daoism. The text presents the Dao (道, Way) as the ineffable, self-generating principle underlying all existence, and advocates non-action (无为 wúwéi) — governing and living in accordance with natural processes rather than forcing outcomes through deliberate intervention.\n\nThe legendary meeting between Confucius and Laozi — recorded in the Zhuangzi and Shiji — in which the young Confucius asks about ritual and receives a rebuke for clinging to the bones of dead men, is one of the most discussed episodes in Chinese philosophical literature, likely invented but philosophically pointed. The Dao De Jing is the second most translated text in world history after the Bible, with over 250 known English translations alone.",
+      "description_ru": "Лао-цзы (老子, «Старый мастер») — историческое существование которого оспаривается, однако которого традиция идентифицирует как хранителя архива (柱下史) чжоуского двора в Лояне — составляет или передаёт «Дао дэ цзин» (道德经, «Классик Пути и Добродетели»): 81 краткую главу около 5000 знаков, ставших основополагающим писанием даосизма. Текст представляет Дао (道, Путь) как невыразимый, самопорождающий принцип, лежащий в основе всего сущего, и отстаивает недеяние (无为 увэй) — управление и жизнь в согласии с естественными процессами.\n\nЛегендарная встреча Конфуция и Лао-цзы — записанная в «Чжуанцзы» и «Шицзи», где молодой Конфуций спрашивает о ритуале и получает упрёк за цепляние за кости мертвецов, — вероятно, вымышленная, но философски значимая. «Дао дэ цзин» — второй по числу переводов текст в мировой истории после Библии.",
+      "latitude": 34.68,
+      "longitude": 112.45,
+      "source": "https://en.wikipedia.org/wiki/Laozi",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Legend"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0497",
+      "era": "BC",
+      "name": "Confucius Leaves Lu — Fourteen Years of Philosophical Exile",
+      "name_ru": "Конфуций покидает Лу — четырнадцать лет философского изгнания",
+      "description": "After leaving the state of Lu following a political disagreement, Confucius spends fourteen years (497–484 BC) travelling with a core group of disciples through the states of Wei, Chen, Cao, Song, Zheng, Cai, and Chu, seeking a ruler willing to implement his vision of Zhou ritual governance. No ruler offers him sustained office. The journeys expose Confucius and his disciples to diverse regional cultures, political failures, and personal dangers — including at least one incident of near-starvation in Chen and Cai.\n\nThe disciples who travel with him — Yan Hui (颜回), Zilu (子路), Zigong (子贡), and others — will become the founders of the various Confucian sub-schools. Their arguments, recorded in the Analects (论语 Lúnyǔ) as dialogues with the Master, constitute the primary text of Confucianism. Confucius returns to Lu at age 68 and spends his remaining years teaching and editing the Zhou classics — the Shijing, Shujing, and the Spring and Autumn Annals.",
+      "description_ru": "Покинув государство Лу после политических разногласий, Конфуций проводит четырнадцать лет (497–484 до н. э.) в странствиях с группой учеников по государствам Вэй, Чэнь, Цао, Сун, Чжэн, Цай и Чу, разыскивая правителя, готового воплотить его видение чжоуского ритуального управления. Ни один правитель не предоставляет ему длительной должности. Странствия знакомят Конфуция и его учеников с разнообразными культурами, политическими неудачами и личными опасностями — включая по меньшей мере один эпизод, грозивший голодной смертью в Чэнь и Цай.\n\nУченики, путешествующие с ним, — Янь Хуэй (颜回), Цзылу (子路), Цзыгун (子贡) и другие — станут основателями различных конфуцианских под-школ. Их споры, записанные в «Луньюе» (论语) как диалоги с Учителем, составляют основной текст конфуцианства.",
+      "latitude": 35.60,
+      "longitude": 116.99,
+      "source": "https://en.wikipedia.org/wiki/Confucius",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Confucius"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0470",
+      "era": "BC",
+      "name": "Mozi — Universal Love and the Science of Mechanics",
+      "name_ru": "Мо-цзы — всеобщая любовь и наука механики",
+      "description": "Mo Di (墨翟 Mò Dí), known as Mozi (墨子), founds the Mohist school and produces the Mo Jing (墨经, Mohist Canon) — the only systematic work of formal logic, optics, and mechanics from ancient China. The Mo Jing defines geometric forms, describes the optics of the pinhole camera (小孔成像 xiǎokǒng chéngxiàng), analyses levers, pulleys, and inclined planes, and articulates a proto-atomic theory of matter. Mozi's ethical teaching — jian ai (兼爱, impartial concern for all) — directly opposes Confucius's graduated family-based ethics and advocates treating strangers with the same consideration as kin.\n\nMohism competes actively with Confucianism through the Warring States period and is regarded by Mencius as one of the two most dangerous intellectual heresies of his age. After the Qin unification, Mohism largely disappears from the Chinese intellectual tradition — its emphasis on craft technology, egalitarian ethics, and opposition to offensive warfare finding no patronage in the imperial order. It is rediscovered and partially rehabilitated by 19th-century Chinese reformers who see in it a proto-scientific tradition.",
+      "description_ru": "Мо Ди (墨翟), известный как Мо-цзы (墨子), основывает школу моизма и создаёт «Мо цзин» (墨经, Моистский канон) — единственный систематический труд по формальной логике, оптике и механике в Древнем Китае. «Мо цзин» определяет геометрические фигуры, описывает оптику камеры-обскуры (小孔成像 сяокун чэнсян), анализирует рычаги, блоки и наклонные плоскости, формулирует протоатомную теорию материи. Этическое учение Мо-цзы — цзянь ай (兼爱, беспристрастная забота обо всех) — прямо противостоит конфуцианской этике дифференцированных семейных отношений.\n\nМоизм активно конкурирует с конфуцианством в период Сражающихся царств. После объединения Цинь моизм в значительной мере исчезает из китайской интеллектуальной традиции — его акцент на ремесленных технологиях, эгалитарной этике и противодействии наступательной войне не находит поддержки в имперском порядке.",
+      "latitude": 35.10,
+      "longitude": 117.17,
+      "source": "https://en.wikipedia.org/wiki/Mohism",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Philosophy"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.0450",
+      "era": "BC",
+      "name": "The Hundred Schools of Thought — Warring States Philosophy",
+      "name_ru": "Сто школ мысли — философия периода Сражающихся царств",
+      "description": "The political fragmentation of the Eastern Zhou creates an unprecedented intellectual marketplace: rival states compete for talented advisors, scholars are mobile and patronised across borders, and no single ideological orthodoxy constrains thought. The major schools include Confucianism (儒家 Rújiā, social ritual and moral cultivation), Daoism (道家 Dàojiā, natural spontaneity and non-action), Mohism (墨家 Mòjiā, universal love and utilitarian ethics), Legalism (法家 Fǎjiā, state law and strict reward-punishment), the School of Names (名家 Míngjiā, logic and language), and the Military School (兵家 Bīngjiā, strategy).\n\nThe Jixia Academy (稷下学宫 Jìxià Xuégōng) established in the state of Qi's capital Linzi becomes the leading centre of this intellectual ferment, employing scholars from all schools simultaneously under state patronage. The Hundred Schools period produces the foundational texts of virtually every major strand of Chinese philosophy, ethics, and political theory and is directly comparable in scope and significance to the roughly contemporary Greek philosophical flowering.",
+      "description_ru": "Политическая раздробленность Восточного Чжоу создаёт беспрецедентный интеллектуальный рынок: соперничающие государства конкурируют за талантливых советников, учёные мобильны и получают покровительство за пределами границ, никакая единая идеологическая ортодоксия не сковывает мысль. Главные школы: конфуцианство (儒家), даосизм (道家), моизм (墨家), легизм (法家), школа имён (名家) и военная школа (兵家).\n\nАкадемия Цзися (稷下学宫), основанная в столице государства Ци Линьцзы, становится ведущим центром этого интеллектуального брожения, одновременно принимая учёных всех школ на государственное попечение. Период Ста школ производит основополагающие тексты практически каждого главного направления китайской философии, этики и политической теории и непосредственно сопоставим по масштабу с одновременным греческим философским расцветом.",
+      "latitude": 36.79,
+      "longitude": 118.30,
+      "source": "https://en.wikipedia.org/wiki/Hundred_Schools_of_Thought",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Philosophy",
+        "Holy Site"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0400",
+      "era": "BC",
+      "name": "The Crossbow — China's Standardised Military Technology",
+      "name_ru": "Арбалет — стандартизированная военная технология Китая",
+      "description": "The crossbow (弩 nǔ) — featuring a precision bronze trigger mechanism of considerable mechanical sophistication — becomes the dominant infantry weapon of the Warring States period. Unlike a composite bow, the crossbow requires minimal training to operate effectively, enabling rapid expansion of professional armies from specialist archer corps to mass conscript forces. The standardised bronze trigger components — cast to interchangeable tolerances across entire state arsenals — represent the earliest known application of standardised interchangeable parts in military manufacturing.\n\nQin state's systematic crossbow production, documented by vast numbers of standardised trigger components recovered from the tomb complex of Qin Shi Huang at Xi'an, demonstrates the industrial scale of this weapons system. Crossbow bolts penetrate armour that arrows cannot, making cavalry charges against massed crossbowmen exceptionally costly and reshaping the tactical relationship between infantry, cavalry, and chariot across the Warring States battlefield.",
+      "description_ru": "Арбалет (弩 ну) — снабжённый точным бронзовым спусковым механизмом значительной механической сложности — становится господствующим пехотным оружием периода Сражающихся царств. В отличие от составного лука, арбалет требует минимальной подготовки, обеспечивая быстрое расширение профессиональных армий от специализированных стрелецких корпусов до массовых призывных сил. Стандартизированные бронзовые компоненты спускового механизма — отлитые по взаимозаменяемым допускам в целых государственных арсеналах — представляют древнейшее известное применение взаимозаменяемых деталей в военном производстве.\n\nСистематическое производство арбалетов в государстве Цинь, документированное огромным числом стандартизированных компонентов из комплекса гробниц Цинь Ши Хуана, демонстрирует промышленный масштаб этой системы вооружения.",
+      "latitude": 30.57,
+      "longitude": 114.30,
+      "source": "https://en.wikipedia.org/wiki/Crossbow",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Warfare",
+        "Iron"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.0356",
+      "era": "BC",
+      "name": "Shang Yang's Reforms — Qin Becomes a Military-Bureaucratic State",
+      "name_ru": "Реформы Шан Яна — Цинь становится военно-бюрократическим государством",
+      "description": "The minister Shang Yang (商鞅 Shāng Yāng) implements two rounds of sweeping Legalist reforms in Qin under Duke Xiao (秦孝公), transforming a peripheral western state into the most powerful military bureaucracy in China. The reforms abolish hereditary privilege of exemption from law, standardise weights, measures, and written script across Qin territory, replace clan-based social organisation with directly state-taxable household units, and create a 20-rank military merit system in which promotion from commoner to noble is determined exclusively by the number of enemy heads taken in battle.\n\nLand is made freely buyable and sellable for the first time, converting agricultural productivity directly into state revenue and military capacity. Shang Yang is executed on his own laws after Duke Xiao's death — implicated by rivals in a political charge — but his institutional framework remains intact and propels Qin to eventual unification of all China under Qin Shi Huang in 221 BC. Shang Yang's reforms are the most consequential act of state-building in Chinese history before the imperial period.",
+      "description_ru": "Министр Шан Ян (商鞅) проводит два этапа масштабных легистских реформ в Цинь при Сяо-гуне (秦孝公), превращая периферийное западное государство в мощнейшую военную бюрократию Китая. Реформы отменяют наследственную привилегию освобождения от закона, стандартизируют веса, меры и письмо на всей территории Цинь, заменяют клановую социальную организацию непосредственно облагаемыми государством домохозяйствами и создают 20-ранговую систему военных заслуг, в которой повышение от простолюдина до знатного определяется числом отрубленных голов врагов.\n\nЗемля впервые становится свободно продаваемой и покупаемой. Шан Ян казнён по собственным законам после смерти Сяо-гуна, однако его институциональная система остаётся неизменной и обеспечивает Цинь путь к объединению всего Китая Цинь Ши Хуаном в 221 г. до н. э.",
+      "latitude": 34.35,
+      "longitude": 108.71,
+      "source": "https://en.wikipedia.org/wiki/Shang_Yang",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Philosophy",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0256",
+      "era": "BC",
+      "name": "Dujiangyan — The World's Oldest Functioning Irrigation System",
+      "name_ru": "Дуцзянъянь — старейшая действующая ирригационная система мира",
+      "description": "The hydraulic engineer Li Bing (李冰), governor of Shu (modern Sichuan) under Qin authority, constructs the Dujiangyan (都江堰) irrigation and flood-control system on the Min River (岷江). The system divides the river into an inner channel for irrigation and an outer channel for flood discharge using a fish-snout shaped artificial island (鱼嘴 yúzuǐ), a spillway levee (飞沙堰 fēishāyàn), and a stone intake gorge (宝瓶口 bǎopínkǒu) — without any dam, making the system self-regulating through seasonal variation in river flow.\n\nThe Chengdu Plain, previously subject to alternating flood and drought, becomes one of China's most productive agricultural regions within a generation of the system's completion, providing the surplus grain that fuels Qin's final military campaigns. Dujiangyan remains in continuous operation to the present day — over 2,275 years — the oldest functioning large-scale hydraulic infrastructure in the world. It was designated a UNESCO World Heritage Site in 2000.",
+      "description_ru": "Инженер-гидравлик Ли Бин (李冰), губернатор области Шу (совр. Сычуань) под властью Цинь, строит ирригационную систему и систему защиты от паводков Дуцзянъянь (都江堰) на реке Минь (岷江). Система делит реку на внутренний канал для орошения и внешний канал для сброса паводков с помощью рыбьеголового искусственного острова (鱼嘴 юйцзуй), дамбы-водосброса (飞沙堰 фэйшаянь) и каменного водозаборного горла (宝瓶口 баопинкоу) — без плотины, что делает систему саморегулируемой в зависимости от сезонного расхода реки.\n\nЧэндуская равнина, прежде страдавшая от чередующихся паводков и засух, в течение одного поколения становится одним из наиболее продуктивных сельскохозяйственных районов Китая. Дуцзянъянь работает непрерывно по сей день — более 2275 лет — и является старейшей действующей крупной гидравлической инфраструктурой в мире. В 2000 году включён в список Всемирного наследия ЮНЕСКО.",
+      "latitude": 30.99,
+      "longitude": 103.62,
+      "source": "https://en.wikipedia.org/wiki/Dujiangyan",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Agriculture",
+        "Holy Site"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.06.0256",
+      "era": "BC",
+      "name": "Zhou Dynasty Extinguished by Qin",
+      "name_ru": "Династия Чжоу уничтожена государством Цинь",
+      "description": "King Nan of Zhou (周赧王 Zhōu Nǎn Wáng), the last Zhou king, leads an ill-fated military coalition against the rising state of Qin and is defeated. Qin forces capture Luoyang and the Zhou royal domain. King Nan surrenders the Zhou territories, the royal sacrificial bronze vessels, and the ancestral population registers to Qin — the physical, ritual, and administrative substance of the dynasty. He dies shortly after, and Qin extinguishes the Zhou royal lineage entirely.\n\nThe Western Zhou lasted 275 years (1046–771 BC); the Eastern Zhou 514 years (770–256 BC); the full dynasty 790 years — the longest in Chinese history. With the Zhou gone, the Mandate of Heaven is effectively in suspension until Qin Shi Huang proclaims the Qin Empire in 221 BC, creating the title Huangdi (皇帝, Emperor) — combining the characters for the Three Sovereigns (三皇) and Five Emperors (五帝) — to supersede the Zhou concept of kingship (王 wáng) entirely and assert a new and unprecedented order.",
+      "description_ru": "Ван Нань Чжоу (周赧王), последний чжоуский ван, возглавляет обречённую военную коалицию против набирающего силу государства Цинь и терпит поражение. Войска Цинь захватывают Лоян и чжоуский царский удел. Ван Нань передаёт Цинь чжоуские территории, царские жертвенные бронзовые сосуды и родовые списки населения — материальную, ритуальную и административную основу династии. Вскоре после этого он умирает, и Цинь полностью уничтожает чжоускую царскую линию.\n\nЗападное Чжоу просуществовало 275 лет (1046–771 до н. э.); Восточное Чжоу — 514 лет (770–256 до н. э.); полная династия — 790 лет, дольше любой другой в истории Китая. С исчезновением Чжоу Мандат Неба фактически остаётся в подвешенном состоянии до провозглашения Цинь Ши Хуаном империи Цинь в 221 г. до н. э., создавшего титул Хуанди (皇帝, Император) для замены чжоуской концепции царской власти (王 ван).",
+      "latitude": 34.68,
+      "longitude": 112.45,
+      "source": "https://en.wikipedia.org/wiki/Zhou_dynasty",
+      "tags": [
+        "Chinese",
+        "Zhou",
+        "Dynasty"
+      ],
+      "type": "political"
+    }
+  ]
+}
