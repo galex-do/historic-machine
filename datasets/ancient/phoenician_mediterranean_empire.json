@@ -62,25 +62,6 @@
     },
     {
       "date": "01.01.1200",
-      "description": "Phoenicians develop first true alphabet with 22 consonants, revolutionizing writing and becoming foundation for Greek, Latin and modern alphabets",
-      "description_ru": "Финикийцы создают первый настоящий алфавит из 22 согласных, революционизируя письменность и став основой для греческого, латинского и современных алфавитов",
-      "era": "BC",
-      "latitude": 34.119,
-      "longitude": 35.648,
-      "name": "Development of Phoenician Alphabet",
-      "name_ru": "Создание финикийского алфавита",
-      "source": "https://www.britannica.com/topic/Phoenician-alphabet",
-      "tags": [
-        "Phoenician",
-        "Byblos",
-        "Culture",
-        "Language",
-        "Writing"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.1200",
       "description": "After Bronze Age collapse destroys neighboring civilizations, Phoenicians survive intact and begin unprecedented maritime expansion across Mediterranean",
       "description_ru": "После катастрофы бронзового века, разрушившей соседние цивилизации, финикийцы остаются невредимыми и начинают беспрецедентную морскую экспансию в Средиземноморье",
       "era": "BC",
@@ -97,23 +78,23 @@
       "type": "historic"
     },
     {
-      "date": "01.01.1100",
-      "description": "Phoenicians from Tyre establish Gadir (Cadiz) on Atlantic coast of Spain, creating westernmost Phoenician colony and crucial gateway beyond Mediterranean",
-      "description_ru": "Финикийцы из Тира основывают Гадир (Кадис) на атлантическом побережье Испании, создавая самую западную финикийскую колонию и важные ворота за пределы Средиземноморья",
+      "date": "01.01.1200",
+      "description": "Phoenicians develop first true alphabet with 22 consonants, revolutionizing writing and becoming foundation for Greek, Latin and modern alphabets",
+      "description_ru": "Финикийцы создают первый настоящий алфавит из 22 согласных, революционизируя письменность и став основой для греческого, латинского и современных алфавитов",
       "era": "BC",
-      "latitude": 36.527,
-      "longitude": -6.289,
-      "name": "Founding of Cadiz",
-      "name_ru": "Основание финикийцами Кадиса",
-      "source": "https://phoenician.org/phoenician_colonies/",
+      "latitude": 34.119,
+      "longitude": 35.648,
+      "name": "Development of Phoenician Alphabet",
+      "name_ru": "Создание финикийского алфавита",
+      "source": "https://www.britannica.com/topic/Phoenician-alphabet",
       "tags": [
         "Phoenician",
-        "City",
-        "Colonization",
-        "Maritime",
-        "Tyre"
+        "Byblos",
+        "Culture",
+        "Language",
+        "Writing"
       ],
-      "type": "historic"
+      "type": "cultural"
     },
     {
       "date": "01.01.1100",
@@ -150,6 +131,25 @@
         "City",
         "Colonization",
         "Trade"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1100",
+      "description": "Phoenicians from Tyre establish Gadir (Cadiz) on Atlantic coast of Spain, creating westernmost Phoenician colony and crucial gateway beyond Mediterranean",
+      "description_ru": "Финикийцы из Тира основывают Гадир (Кадис) на атлантическом побережье Испании, создавая самую западную финикийскую колонию и важные ворота за пределы Средиземноморья",
+      "era": "BC",
+      "latitude": 36.527,
+      "longitude": -6.289,
+      "name": "Founding of Cadiz",
+      "name_ru": "Основание финикийцами Кадиса",
+      "source": "https://phoenician.org/phoenician_colonies/",
+      "tags": [
+        "Phoenician",
+        "City",
+        "Colonization",
+        "Maritime",
+        "Tyre"
       ],
       "type": "historic"
     },
@@ -207,6 +207,7 @@
         "Israel",
         "Jerusalem",
         "Ancient Wonders",
+        "Holy Site",
         "Temple",
         "Tyre"
       ],
@@ -595,6 +596,25 @@
     },
     {
       "date": "01.01.0450",
+      "description": "Carthaginian navigator Hanno the Navigator sails beyond Gibraltar along African coast, establishing colonies and documenting unprecedented exploration",
+      "description_ru": "Карфагенский мореплаватель Ганнон Мореплаватель плывет за Гибралтар вдоль африканского побережья, основывая колонии и документируя беспрецедентное исследование",
+      "era": "BC",
+      "latitude": 33.573,
+      "longitude": -7.589,
+      "name": "Hanno's Voyage to West Africa",
+      "name_ru": "Плавание Ганнона в Западную Африку",
+      "source": "https://phoenician.org/carthage_hannibal_barca/",
+      "tags": [
+        "Carthage",
+        "Colonization",
+        "Expedition",
+        "Exploration",
+        "Maritime"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.0450",
       "description": "Greek historian Herodotus visits Tyre and records from temple priests that city was founded circa 2750 BC, documenting Phoenician historical traditions",
       "description_ru": "Греческий историк Геродот посещает Тир и записывает со слов храмовых жрецов, что город основан около 2750 г. до н.э., документируя финикийские исторические традиции",
       "era": "BC",
@@ -612,25 +632,6 @@
         "Tyre"
       ],
       "type": "cultural"
-    },
-    {
-      "date": "01.01.0450",
-      "description": "Carthaginian navigator Hanno the Navigator sails beyond Gibraltar along African coast, establishing colonies and documenting unprecedented exploration",
-      "description_ru": "Карфагенский мореплаватель Ганнон Мореплаватель плывет за Гибралтар вдоль африканского побережья, основывая колонии и документируя беспрецедентное исследование",
-      "era": "BC",
-      "latitude": 33.573,
-      "longitude": -7.589,
-      "name": "Hanno's Voyage to West Africa",
-      "name_ru": "Плавание Ганнона в Западную Африку",
-      "source": "https://phoenician.org/carthage_hannibal_barca/",
-      "tags": [
-        "Carthage",
-        "Colonization",
-        "Expedition",
-        "Exploration",
-        "Maritime"
-      ],
-      "type": "scientific"
     },
     {
       "date": "01.01.0397",
@@ -991,6 +992,7 @@
         "Punic",
         "War",
         "Barcid",
+        "Elephants",
         "Hannibal 👤"
       ],
       "type": "military"
@@ -1268,6 +1270,7 @@
         "Punic",
         "War",
         "Battle",
+        "Elephants",
         "Hannibal 👤",
         "Scipio 👤"
       ],

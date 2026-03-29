@@ -61,6 +61,7 @@
         "Diplomacy",
         "Marriage",
         "Chandragupta 👑",
+        "Elephants",
         "Mauryan",
         "Peace",
         "Seleucus I 👑"
@@ -69,8 +70,8 @@
     },
     {
       "date": "01.01.0301",
-      "description": "Battle of Ipsus in Phrygia; coalition of Seleucus I, Lysimachus, and Cassander defeats Antigonus I Monophthalmus who is killed in battle. Seleucus gains control of Syria and eastern Anatolia, dramatically expanding his empire westward",
-      "description_ru": "Коалиция Селевка I, Лисимаха и Кассандра побеждает Антигона I Одноглазого, который погибает в сражении. Селевк получает контроль над Сирией и восточной Анатолией, значительно расширяя свою империю на запад",
+      "description": "The coalition of Seleucus I, Lysimachus, and Cassander defeats Antigonus I Monophthalmus, who dies in battle. Antigonus's cavalry successfully attacks deep into the enemy, but Seleucus blocks their retreat with elephants, leaving the Macedonian infantry unprotected.\n\nThe idea of ​​a unified Macedonian empire died with Antigonus. The world was finally divided into several Hellenistic kingdoms. Seleucus gained control of Syria and eastern Anatolia, significantly expanding his empire westward.",
+      "description_ru": "Коалиция Селевка I, Лисимаха и Кассандра побеждает Антигона I Одноглазого, который погибает в сражении. Конница Антигона наносит успешные удары вглубь, но Селевк блокирует её отход с помощью слонов, и пехота македонцев остается без прикрытия.\n\nИдея единой македонской империи умерла вместе с Антигоном. Мир был окончательно поделен на несколько эллинистических царств. Селевк получил контроль над Сирией и восточной Анатолией, значительно расширив свою империю на запад",
       "era": "BC",
       "latitude": 38.85026973,
       "longitude": 30.53092003,
@@ -86,6 +87,7 @@
         "Battle",
         "Anatolia",
         "Death",
+        "Elephants",
         "Seleucus I 👑",
         "Syria"
       ],
@@ -207,6 +209,7 @@
         "Seleucid",
         "War",
         "Battle",
+        "Elephants",
         "Savior"
       ],
       "type": "military"
@@ -688,8 +691,8 @@
       "description": "Antiochus III completes conquest of Coele-Syria; Jerusalem and Judea pass from Ptolemaic to Seleucid control. The Jewish population initially welcomes the Seleucids, who grant them religious privileges",
       "description_ru": "Антиох III завершает завоевание Келесирии; Иерусалим и Иудея переходят из-под птолемеевского под селевкидский контроль. Иудейское население поначалу приветствует Селевкидов, которые дают им религиозные привилегии",
       "era": "BC",
-      "latitude": 31.77,
-      "longitude": 35.23,
+      "latitude": 31.85,
+      "longitude": 35.1,
       "name": "Seleucid Control of Judea",
       "name_ru": "Селевкидский контроль над Иудеей",
       "source": "https://en.wikipedia.org/wiki/Fifth_Syrian_War",
@@ -1031,8 +1034,8 @@
       "description": "Simon Maccabeus achieves de facto Jewish independence; Seleucids formally recognize Jewish autonomy and exempt Judea from tribute. The Hasmonean dynasty is established",
       "description_ru": "Симон Маккавей добивается фактической иудейской независимости; Селевкиды формально признают иудейскую автономию и освобождают Иудею от дани. Основывается династия Хасмонеев",
       "era": "BC",
-      "latitude": 31.77,
-      "longitude": 35.23,
+      "latitude": 31.85,
+      "longitude": 35.1,
       "name": "Jewish Independence Achieved",
       "name_ru": "Достижение иудейской независимости",
       "source": "https://en.wikipedia.org/wiki/Simon_Thassi",

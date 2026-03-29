@@ -141,8 +141,8 @@
       "era": "BC",
       "latitude": 35.2979,
       "longitude": 25.1632,
-      "name": "Snake Goddess Worship",
-      "name_ru": "Поклонение богине со змеями",
+      "name": "Minoan Snake Goddess Worship",
+      "name_ru": "Минойское поклонение богине со змеями",
       "source": "https://en.wikipedia.org/wiki/Minoan_religion",
       "tags": [
         "Minoan",
@@ -177,8 +177,8 @@
       "era": "BC",
       "latitude": 35.2401,
       "longitude": 25.1289,
-      "name": "First Palace Destruction",
-      "name_ru": "Разрушение первых дворцов",
+      "name": "First Palace Destruction on Crete",
+      "name_ru": "Разрушение первых дворцов Крита",
       "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
       "tags": [
         "Minoan",
@@ -342,25 +342,6 @@
     },
     {
       "date": "01.01.1450",
-      "description": "Linear B script adopted by Mycenaean Greeks at Knossos to write early Greek language; adapts Minoan Linear A syllabary with 87 signs for palace administration, creating oldest preserved Greek writing",
-      "description_ru": "Линейное письмо Б принято микенскими греками в Кноссе для записи раннего греческого языка; адаптирует минойскую слоговую систему линейного письма А с 87 знаками для дворцовой администрации, создавая древнейшую сохранившуюся греческую письменность",
-      "era": "BC",
-      "latitude": 35.2979,
-      "longitude": 25.1632,
-      "name": "Linear B Script Development",
-      "name_ru": "Развитие линейного письма Б",
-      "source": "https://en.wikipedia.org/wiki/Linear_B",
-      "tags": [
-        "Greek",
-        "Mycenaean",
-        "Innovation",
-        "Language",
-        "Writing"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.1450",
       "description": "Mycenaean Greeks conquer weakened Crete following Thera catastrophe; palace at Knossos continues functioning under Greek control while other palaces destroyed, marking transition from Minoan to Mycenaean dominance",
       "description_ru": "Микенские греки завоевывают ослабленный Крит после катастрофы Теры; дворец в Кноссе продолжает функционировать под греческим контролем, в то время как другие дворцы разрушены, знаменуя переход от минойского к микенскому господству",
       "era": "BC",
@@ -379,23 +360,23 @@
       "type": "military"
     },
     {
-      "date": "01.01.1400",
-      "description": "Mycenaean warrior elite buried in shaft graves at Mycenae with gold death masks, bronze weapons, and ivory inlays; Heinrich Schliemann's 1876 excavation reveals 19 bodies with 15kg of gold artifacts including famous 'Mask of Agamemnon'",
-      "description_ru": "Микенская воинская элита похоронена в шахтных гробницах в Микенах с золотыми посмертными масками, бронзовым оружием и инкрустациями из слоновой кости; раскопки Генриха Шлимана 1876 года обнаруживают 19 тел с 15 кг золотых артефактов, включая знаменитую 'Маску Агамемнона'",
+      "date": "01.01.1450",
+      "description": "Linear B script adopted by Mycenaean Greeks at Knossos to write early Greek language; adapts Minoan Linear A syllabary with 87 signs for palace administration, creating oldest preserved Greek writing",
+      "description_ru": "Линейное письмо Б принято микенскими греками в Кноссе для записи раннего греческого языка; адаптирует минойскую слоговую систему линейного письма А с 87 знаками для дворцовой администрации, создавая древнейшую сохранившуюся греческую письменность",
       "era": "BC",
-      "latitude": 37.7308,
-      "longitude": 22.7564,
-      "name": "Royal Shaft Graves of Mycenae",
-      "name_ru": "Царские шахтные гробницы Микен",
-      "source": "https://en.wikipedia.org/wiki/Grave_Circle_A,_Mycenae",
+      "latitude": 35.2979,
+      "longitude": 25.1632,
+      "name": "Linear B Script Development",
+      "name_ru": "Развитие линейного письма Б",
+      "source": "https://en.wikipedia.org/wiki/Linear_B",
       "tags": [
         "Greek",
         "Mycenaean",
-        "Art",
-        "Tomb",
-        "Treasure"
+        "Innovation",
+        "Language",
+        "Writing"
       ],
-      "type": "historic"
+      "type": "cultural"
     },
     {
       "date": "01.01.1400",
@@ -413,6 +394,26 @@
         "Administration",
         "Economic",
         "Writing"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1400",
+      "description": "Mycenaean warrior elite buried in shaft graves at Mycenae with gold death masks, bronze weapons, and ivory inlays; Heinrich Schliemann's 1876 excavation reveals 19 bodies with 15kg of gold artifacts including famous 'Mask of Agamemnon'",
+      "description_ru": "Микенская воинская элита похоронена в шахтных гробницах в Микенах с золотыми посмертными масками, бронзовым оружием и инкрустациями из слоновой кости; раскопки Генриха Шлимана 1876 года обнаруживают 19 тел с 15 кг золотых артефактов, включая знаменитую 'Маску Агамемнона'",
+      "era": "BC",
+      "latitude": 37.7308,
+      "longitude": 22.7564,
+      "name": "Royal Shaft Graves of Mycenae",
+      "name_ru": "Царские шахтные гробницы Микен",
+      "source": "https://en.wikipedia.org/wiki/Grave_Circle_A,_Mycenae",
+      "tags": [
+        "Greek",
+        "Mycenaean",
+        "Art",
+        "Burial",
+        "Tomb",
+        "Treasure"
       ],
       "type": "historic"
     },

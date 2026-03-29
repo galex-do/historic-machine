@@ -299,6 +299,25 @@
     },
     {
       "date": "01.01.0600",
+      "description": "The Cloaca Maxima, one of the world's earliest sewage systems, is constructed to drain the marshy Forum valley. Originally an open channel, it is later covered over. Parts of this Etruscan-era drain remain in use today.",
+      "description_ru": "Большая Клоака (Cloaca Maxima), одна из древнейших канализационных систем мира, построена для осушения болотистой долины Форума. Изначально открытый канал, позже он был перекрыт. Части этой этрусской эпохи дренажной системы используются и сегодня.",
+      "era": "BC",
+      "latitude": 41.88883235,
+      "longitude": 12.48017907,
+      "name": "Construction of Cloaca Maxima",
+      "name_ru": "Строительство Большой Клоаки",
+      "source": "https://en.wikipedia.org/wiki/Cloaca_Maxima",
+      "tags": [
+        "Roman",
+        "Architecture",
+        "Engineering ⚙️",
+        "Innovation",
+        "Water"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0600",
       "description": "King Tarquinius Priscus establishes the Circus Maximus in the valley between the Palatine and Aventine hills. Initially a simple racetrack with wooden seating, it becomes Rome's principal venue for chariot racing and public spectacles, eventually holding 150,000 spectators.",
       "description_ru": "Царь Тарквиний Приск основывает Большой цирк в долине между Палатинским и Авентинским холмами. Изначально простая беговая дорожка с деревянными трибунами, он становится главным римским местом для гонок на колесницах и публичных зрелищ, вмещая до 150 000 зрителей.",
       "era": "BC",
@@ -314,25 +333,6 @@
         "Architecture",
         "Entertainment",
         "Sport"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0600",
-      "description": "The Cloaca Maxima, one of the world's earliest sewage systems, is constructed to drain the marshy Forum valley. Originally an open channel, it is later covered over. Parts of this Etruscan-era drain remain in use today.",
-      "description_ru": "Большая Клоака (Cloaca Maxima), одна из древнейших канализационных систем мира, построена для осушения болотистой долины Форума. Изначально открытый канал, позже он был перекрыт. Части этой этрусской эпохи дренажной системы используются и сегодня.",
-      "era": "BC",
-      "latitude": 41.88883235,
-      "longitude": 12.48017907,
-      "name": "Construction of Cloaca Maxima",
-      "name_ru": "Строительство Большой Клоаки",
-      "source": "https://en.wikipedia.org/wiki/Cloaca_Maxima",
-      "tags": [
-        "Roman",
-        "Architecture",
-        "Engineering ⚙️",
-        "Innovation",
-        "Water"
       ],
       "type": "historic"
     },
@@ -398,6 +398,25 @@
     },
     {
       "date": "01.01.0535",
+      "description": "Servius Tullius is murdered by his own daughter Tullia and her husband Tarquinius Superbus (the Proud). Tullia drives her chariot over her father's body in the street later called Vicus Sceleratus (Street of Crime). Tarquinius becomes the seventh and last king.",
+      "description_ru": "Царь Сервий Туллий убит собственной дочерью Туллией и её мужем Тарквинием Гордым. Туллия проезжает на колеснице по телу отца на улице, позже названной Vicus Sceleratus (Улица Преступления). Тарквиний становится седьмым и последним царём.",
+      "era": "BC",
+      "latitude": 41.8941914,
+      "longitude": 12.49223828,
+      "name": "Murder of Servius Tullius",
+      "name_ru": "Убийство Сервия Туллия",
+      "source": "https://en.wikipedia.org/wiki/Servius_Tullius",
+      "tags": [
+        "Roman",
+        "Etruscan",
+        "Legend",
+        "Death",
+        "Murder"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0535",
       "description": "60 Phocaean Greek ships clash with 120 allied Etruscan-Carthaginian vessels off Corsica. The Greeks win tactically but lose 40 ships — a Pyrrhic victory. The surviving Greeks abandon Corsica and flee to southern Italy. Corsica passes to Etruscan control, Sardinia remains Carthaginian. This battle marks the end of Greek expansion in the western Mediterranean.",
       "description_ru": "60 фокейских греческих кораблей сталкиваются со 120 объединёнными этрусско-карфагенскими судами у берегов Корсики. Греки побеждают тактически, но теряют 40 кораблей. Выжившие греки покидают Корсику и бегут в южную Италию. Корсика переходит под контроль этрусков, Сардиния остаётся карфагенской.",
       "era": "BC",
@@ -417,43 +436,6 @@
       "type": "military"
     },
     {
-      "date": "01.01.0535",
-      "description": "Servius Tullius is murdered by his own daughter Tullia and her husband Tarquinius Superbus (the Proud). Tullia drives her chariot over her father's body in the street later called Vicus Sceleratus (Street of Crime). Tarquinius becomes the seventh and last king.",
-      "description_ru": "Царь Сервий Туллий убит собственной дочерью Туллией и её мужем Тарквинием Гордым. Туллия проезжает на колеснице по телу отца на улице, позже названной Vicus Sceleratus (Улица Преступления). Тарквиний становится седьмым и последним царём.",
-      "era": "BC",
-      "latitude": 41.8941914,
-      "longitude": 12.49223828,
-      "name": "Murder of Servius Tullius",
-      "name_ru": "Убийство Сервия Туллия",
-      "source": "https://en.wikipedia.org/wiki/Servius_Tullius",
-      "tags": [
-        "Roman",
-        "Etruscan",
-        "Legend",
-        "Death",
-        "Murder"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0509",
-      "description": "The Temple of Jupiter Optimus Maximus is dedicated on the Capitoline Hill, becoming Rome's most important temple. The building was begun by the Tarquins but dedicated after their expulsion — Romans refused to let kings take credit for it.",
-      "description_ru": "Храм Юпитера Всеблагого Величайшего освящён на Капитолийском холме, став важнейшим храмом Рима. Здание начато при Тарквиниях, но освящено после их изгнания — римляне отказались приписывать царям заслугу за него.",
-      "era": "BC",
-      "latitude": 41.89247432,
-      "longitude": 12.48204589,
-      "name": "Temple of Jupiter Dedicated",
-      "name_ru": "Освящение храма Юпитера",
-      "source": "https://en.wikipedia.org/wiki/Temple_of_Jupiter_Optimus_Maximus",
-      "tags": [
-        "Roman",
-        "Architecture",
-        "Religious",
-        "Temple"
-      ],
-      "type": "religious"
-    },
-    {
       "date": "01.01.0509",
       "description": "Romans expel King Tarquinius Superbus after his son Sextus rapes the noblewoman Lucretia, who commits suicide after revealing the crime. Lucius Junius Brutus leads the revolt and becomes one of the first two consuls of the new Republic.",
       "description_ru": "Римляне изгоняют царя Тарквиния Гордого после того, как его сын Секст насилует знатную женщину Лукрецию, которая кончает с собой, раскрыв преступление. Луций Юний Брут возглавляет восстание и становится одним из первых двух консулов новой Республики.",
@@ -471,6 +453,25 @@
         "Revolution"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0509",
+      "description": "The Temple of Jupiter Optimus Maximus is dedicated on the Capitoline Hill, becoming Rome's most important temple. The building was begun by the Tarquins but dedicated after their expulsion — Romans refused to let kings take credit for it.",
+      "description_ru": "Храм Юпитера Всеблагого Величайшего освящён на Капитолийском холме, став важнейшим храмом Рима. Здание начато при Тарквиниях, но освящено после их изгнания — римляне отказались приписывать царям заслугу за него.",
+      "era": "BC",
+      "latitude": 41.89247432,
+      "longitude": 12.48204589,
+      "name": "Temple of Jupiter Dedicated",
+      "name_ru": "Освящение храма Юпитера",
+      "source": "https://en.wikipedia.org/wiki/Temple_of_Jupiter_Optimus_Maximus",
+      "tags": [
+        "Roman",
+        "Architecture",
+        "Holy Site",
+        "Religious",
+        "Temple"
+      ],
+      "type": "religious"
     },
     {
       "date": "01.01.0508",
@@ -1119,25 +1120,6 @@
     },
     {
       "date": "01.01.0340",
-      "description": "Rome's Latin allies revolt against Roman hegemony in the Latin War. According to tradition, consul Publius Decius Mus performs devotio — ritually sacrificing himself to the gods in battle to ensure Roman victory. The war ends with dissolution of the Latin League and integration of Latins into Roman citizenship.",
-      "description_ru": "Латинские союзники Рима восстают против римской гегемонии. По преданию, консул Публий Деций Мус совершает devotio — ритуально жертвует собой богам в бою, чтобы обеспечить победу Рима. Война заканчивается роспуском Латинского союза и интеграцией латинов в римское гражданство.",
-      "era": "BC",
-      "latitude": 41.2167,
-      "longitude": 13.5667,
-      "name": "Latin War",
-      "name_ru": "Латинская война",
-      "source": "https://en.wikipedia.org/wiki/Latin_War",
-      "tags": [
-        "Roman",
-        "Latin League",
-        "War",
-        "Conquest",
-        "Self-sacrifice"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0340",
       "description": "At Mount Vesuvius, consul Titus Manlius Torquatus executes his own son for disobeying orders by engaging in single combat with a Latin champion — though victorious. \"Manlian discipline\" becomes proverbial for severity.",
       "description_ru": "У горы Везувий консул Тит Манлий Торкват казнит на месте собственного сына за неповиновение приказам, который во время разведки сразился с чемпионом латинов, несмотря на наказ консула не вступать в бой вне строя. \"Манлиева дисциплина\" становится нарицательной для обозначения суровости.",
       "era": "BC",
@@ -1153,6 +1135,25 @@
         "Legend",
         "Death",
         "Discipline"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0340",
+      "description": "Rome's Latin allies revolt against Roman hegemony in the Latin War. According to tradition, consul Publius Decius Mus performs devotio — ritually sacrificing himself to the gods in battle to ensure Roman victory. The war ends with dissolution of the Latin League and integration of Latins into Roman citizenship.",
+      "description_ru": "Латинские союзники Рима восстают против римской гегемонии. По преданию, консул Публий Деций Мус совершает devotio — ритуально жертвует собой богам в бою, чтобы обеспечить победу Рима. Война заканчивается роспуском Латинского союза и интеграцией латинов в римское гражданство.",
+      "era": "BC",
+      "latitude": 41.2167,
+      "longitude": 13.5667,
+      "name": "Latin War",
+      "name_ru": "Латинская война",
+      "source": "https://en.wikipedia.org/wiki/Latin_War",
+      "tags": [
+        "Roman",
+        "Latin League",
+        "War",
+        "Conquest",
+        "Self-sacrifice"
       ],
       "type": "military"
     },
@@ -1297,6 +1298,24 @@
     },
     {
       "date": "01.01.0315",
+      "description": "Rome adopts the pilum, a heavy javelin with a unique design: a long iron shank that bends on impact, preventing enemies from throwing it back and rendering shields unusable. Each legionary carries two pila, throwing them at 15-30 meters before closing with gladius. The weapon disrupts enemy formations before melee.",
+      "description_ru": "Рим принимает на вооружение пилум — тяжёлый дротик уникальной конструкции: длинный железный стержень гнётся при попадании, не давая врагам метать его обратно и делая щиты непригодными. Каждый легионер несёт два пилума, метая их с 15-30 метров перед сближением с гладиусом. Оружие нарушает строй врага до рукопашной.",
+      "era": "BC",
+      "latitude": 41.89931442,
+      "longitude": 12.47670293,
+      "name": "Adoption of the Pilum by Romans",
+      "name_ru": "Рим применяет в бою пилумы",
+      "source": "https://en.wikipedia.org/wiki/Pilum",
+      "tags": [
+        "Roman",
+        "War",
+        "Innovation",
+        "Weapon"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0315",
       "description": "Romans suffer another major defeat at Lautulae near Terracina. Samnites raid Latin territory and nearly reach Rome. Rome responds by building a network of fortified colonies and roads through the mountains to control territory permanently.",
       "description_ru": "Римляне терпят ещё одно крупное поражение при Лавтулах близ Террацины. Самниты совершают набеги на латинскую территорию и почти достигают Рима. Рим отвечает строительством сети укреплённых колоний и дорог через горы для постоянного контроля территории.",
       "era": "BC",
@@ -1314,24 +1333,6 @@
         "Defeat"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0315",
-      "description": "Rome adopts the pilum, a heavy javelin with a unique design: a long iron shank that bends on impact, preventing enemies from throwing it back and rendering shields unusable. Each legionary carries two pila, throwing them at 15-30 meters before closing with gladius. The weapon disrupts enemy formations before melee.",
-      "description_ru": "Рим принимает на вооружение пилум — тяжёлый дротик уникальной конструкции: длинный железный стержень гнётся при попадании, не давая врагам метать его обратно и делая щиты непригодными. Каждый легионер несёт два пилума, метая их с 15-30 метров перед сближением с гладиусом. Оружие нарушает строй врага до рукопашной.",
-      "era": "BC",
-      "latitude": 41.89931442,
-      "longitude": 12.47670293,
-      "name": "Adoption of the Pilum by Romans",
-      "name_ru": "Рим применяет в бою пилумы",
-      "source": "https://en.wikipedia.org/wiki/Pilum",
-      "tags": [
-        "Roman",
-        "War",
-        "Innovation",
-        "Weapon"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0314",
@@ -1354,25 +1355,6 @@
     },
     {
       "date": "01.01.0312",
-      "description": "Appius Claudius also builds Rome's first aqueduct, the Aqua Appia, bringing fresh water 16 km from springs in the Sabine hills. Running mostly underground, it delivers 73,000 cubic meters of water daily to the growing city.",
-      "description_ru": "Аппий Клавдий строит первый римский акведук, Aqua Appia, проводя пресную воду на 16 км из источников в Сабинских холмах. Акведук забирал воду на глубине 15-16 м и большую часть пути шел под землей; он доставлял 73 000 кубометров воды ежедневно в растущий город.",
-      "era": "BC",
-      "latitude": 41.9142,
-      "longitude": 12.6148,
-      "name": "First Roman Aqueduct",
-      "name_ru": "Первый римский акведук",
-      "source": "https://en.wikipedia.org/wiki/Aqua_Appia",
-      "tags": [
-        "Roman",
-        "Architecture",
-        "Engineering ⚙️",
-        "Innovation",
-        "Water"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0312",
       "description": "Censor Appius Claudius Caecus begins construction of the Via Appia, Rome's first major paved road, connecting Rome to Capua (later extended to Brindisi). 'Regina viarum' (Queen of Roads), it enables rapid military movement and trade, becoming the model for all Roman roads.",
       "description_ru": "Цензор Аппий Клавдий Цек начинает строительство Аппиевой дороги, первой крупной мощёной дороги Рима, соединяющей Рим с Капуей (позже продлённой до Бриндизи). 'Regina viarum' (Царица дорог) обеспечивает быстрое передвижение войск и торговлю, став образцом для всех римских дорог.",
       "era": "BC",
@@ -1388,6 +1370,25 @@
         "Infrastructure",
         "Innovation",
         "Road"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0312",
+      "description": "Appius Claudius also builds Rome's first aqueduct, the Aqua Appia, bringing fresh water 16 km from springs in the Sabine hills. Running mostly underground, it delivers 73,000 cubic meters of water daily to the growing city.",
+      "description_ru": "Аппий Клавдий строит первый римский акведук, Aqua Appia, проводя пресную воду на 16 км из источников в Сабинских холмах. Акведук забирал воду на глубине 15-16 м и большую часть пути шел под землей; он доставлял 73 000 кубометров воды ежедневно в растущий город.",
+      "era": "BC",
+      "latitude": 41.9142,
+      "longitude": 12.6148,
+      "name": "First Roman Aqueduct",
+      "name_ru": "Первый римский акведук",
+      "source": "https://en.wikipedia.org/wiki/Aqua_Appia",
+      "tags": [
+        "Roman",
+        "Architecture",
+        "Engineering ⚙️",
+        "Innovation",
+        "Water"
       ],
       "type": "historic"
     },
@@ -1619,6 +1620,7 @@
         "Roman",
         "War",
         "Battle",
+        "Elephants",
         "Italy",
         "Magna Graecia",
         "Pyrrhus 👤"
@@ -2134,25 +2136,6 @@
     },
     {
       "date": "01.01.0200",
-      "description": "After encountering Celtiberian swords during the Punic Wars, Rome adopts the gladius Hispaniensis as standard legionary weapon. This short, double-edged sword (45-65 cm blade) excels at both thrusting and cutting in tight formations. Combined with the large scutum shield, it makes the Roman legionary the deadliest close-combat soldier in the ancient world.",
-      "description_ru": "Встретив кельтиберийские мечи во время Пунических войн, Рим принимает gladius Hispaniensis как стандартное оружие легионера. Этот короткий обоюдоострый меч (клинок 45-65 см) превосходен для уколов и рубки в тесном строю. В сочетании с большим щитом скутум он делает римского легионера смертоноснейшим воином ближнего боя античного мира.",
-      "era": "BC",
-      "latitude": 41.89931442,
-      "longitude": 12.47670293,
-      "name": "Adoption of the Gladius Hispaniensis",
-      "name_ru": "Испанский гладиус в Риме",
-      "source": "https://en.wikipedia.org/wiki/Gladius",
-      "tags": [
-        "Roman",
-        "War",
-        "Innovation",
-        "Spanish",
-        "Weapon"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0200",
       "description": "Romans master the structural arch, perfecting the voussoir (wedge-shaped stones) with keystone technique. Unlike post-and-lintel construction, arches distribute weight outward, enabling unprecedented spans for bridges, aqueducts, and buildings. Combined with Roman concrete, arch technology enables the construction of structures that will stand for millennia.",
       "description_ru": "Римляне осваивают конструкционную арку, совершенствуя технику клинчатых камней (вуссуаров) с замковым камнем. В отличие от стоечно-балочной конструкции, арки распределяют нагрузку наружу, позволяя создавать небывалые пролёты для мостов, акведуков и зданий. В сочетании с римским бетоном арочная технология позволяет строить сооружения, которые простоят тысячелетия.",
       "era": "BC",
@@ -2173,21 +2156,22 @@
     },
     {
       "date": "01.01.0200",
-      "description": "Philip V sought to establish complete control over the straits (the Hellespont) to cut off his enemies—Pergamon and Rhodes—from Black Sea trade. Abydos was a key port, blocking the entrance to the strait. Its capture would deprive hostile fleets of a base for operations against Macedonia. The city resisted fiercely, and almost no one surrendered.",
-      "description_ru": "Филипп V стремился установить полный контроль над проливами (Геллеспонтом), чтобы отрезать своих врагов — Пергам и Родос — от черноморской торговли. Абидос был ключевым портом, закрывавшим вход в пролив. Его захват лишал враждебные флоты базы для операций против Македонии. Город яростно сопротивлялся, почти никто не сдался в плен. ",
+      "description": "After encountering Celtiberian swords during the Punic Wars, Rome adopts the gladius Hispaniensis as standard legionary weapon. This short, double-edged sword (45-65 cm blade) excels at both thrusting and cutting in tight formations. Combined with the large scutum shield, it makes the Roman legionary the deadliest close-combat soldier in the ancient world.",
+      "description_ru": "Встретив кельтиберийские мечи во время Пунических войн, Рим принимает gladius Hispaniensis как стандартное оружие легионера. Этот короткий обоюдоострый меч (клинок 45-65 см) превосходен для уколов и рубки в тесном строю. В сочетании с большим щитом скутум он делает римского легионера смертоноснейшим воином ближнего боя античного мира.",
       "era": "BC",
-      "latitude": 40.19667529,
-      "longitude": 26.40971661,
-      "name": "Macedonia besieges and ravages Abydos",
-      "name_ru": "Македония осаждает и разоряет Абидос",
+      "latitude": 41.89931442,
+      "longitude": 12.47670293,
+      "name": "Adoption of the Gladius Hispaniensis",
+      "name_ru": "Испанский гладиус в Риме",
+      "source": "https://en.wikipedia.org/wiki/Gladius",
       "tags": [
-        "Greek",
-        "Macedonian",
-        "Pergamon",
+        "Roman",
         "War",
-        "Destruction"
+        "Innovation",
+        "Spanish",
+        "Weapon"
       ],
-      "type": "military"
+      "type": "historic"
     },
     {
       "date": "01.01.0200",
@@ -2206,6 +2190,24 @@
         "History"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0200",
+      "description": "Philip V sought to establish complete control over the straits (the Hellespont) to cut off his enemies—Pergamon and Rhodes—from Black Sea trade. Abydos was a key port, blocking the entrance to the strait. Its capture would deprive hostile fleets of a base for operations against Macedonia. The city resisted fiercely, and almost no one surrendered.",
+      "description_ru": "Филипп V стремился установить полный контроль над проливами (Геллеспонтом), чтобы отрезать своих врагов — Пергам и Родос — от черноморской торговли. Абидос был ключевым портом, закрывавшим вход в пролив. Его захват лишал враждебные флоты базы для операций против Македонии. Город яростно сопротивлялся, почти никто не сдался в плен. ",
+      "era": "BC",
+      "latitude": 40.19667529,
+      "longitude": 26.40971661,
+      "name": "Macedonia besieges and ravages Abydos",
+      "name_ru": "Македония осаждает и разоряет Абидос",
+      "tags": [
+        "Greek",
+        "Macedonian",
+        "Pergamon",
+        "War",
+        "Destruction"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0197",
@@ -2827,6 +2829,26 @@
     },
     {
       "date": "01.01.0100",
+      "description": "Tribune Saturninus proposes radical land reforms for Marius's veterans, using violence to pass legislation. When Saturninus murders a political rival, Marius reluctantly enforces the senatus consultum ultimum against his own ally, who is killed by a mob.",
+      "description_ru": "Политический кризис усиливается. Трибун Сатурнин предлагает радикальные реформы для ветеранов Мария, применяя насилие для принятия законов. Когда люди Сатурнина убивают на выборах кандидата от оппозиции, Марий неохотно исполняет чрезвычайный указ Сената, арестовывая Сатурнина. Марию не удается скрыть своего союзника от толпы, и Сатурнина забивают камнями",
+      "era": "BC",
+      "latitude": 41.89318911,
+      "longitude": 12.48506606,
+      "name": "Violence of Saturninus",
+      "name_ru": "Насилие трибуна Сатурнина",
+      "source": "https://en.wikipedia.org/wiki/Lucius_Appuleius_Saturninus",
+      "tags": [
+        "Roman",
+        "Crisis",
+        "Marius 👤",
+        "Murder",
+        "Outrage",
+        "Political"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0100",
       "description": "The scorpio becomes a standard Roman precision weapon — a smaller ballista operated by 1-2 men, accurate at 100 meters and deadly at 400 meters parabolic fire. Each legion deploys 60 scorpiones, one per century. Caesar praises its 'terrifying precision' at the siege of Avaricum. It serves as ancient Rome's 'sniper rifle.'",
       "description_ru": "Скорпион, унаследованный от греков, становится стандартом дальнего боя в армии Рима — уменьшенная баллиста под управлением 1-2 человек, точная на 100 метров и смертельная на 400 метрах навесного огня. Каждый легион имеет 60 скорпионов, по одному на центурию. Это античная 'снайперская винтовка' Рима.",
       "era": "BC",
@@ -2864,26 +2886,6 @@
         "Trade"
       ],
       "type": "religious"
-    },
-    {
-      "date": "01.01.0100",
-      "description": "Tribune Saturninus proposes radical land reforms for Marius's veterans, using violence to pass legislation. When Saturninus murders a political rival, Marius reluctantly enforces the senatus consultum ultimum against his own ally, who is killed by a mob.",
-      "description_ru": "Политический кризис усиливается. Трибун Сатурнин предлагает радикальные реформы для ветеранов Мария, применяя насилие для принятия законов. Когда люди Сатурнина убивают на выборах кандидата от оппозиции, Марий неохотно исполняет чрезвычайный указ Сената, арестовывая Сатурнина. Марию не удается скрыть своего союзника от толпы, и Сатурнина забивают камнями",
-      "era": "BC",
-      "latitude": 41.89318911,
-      "longitude": 12.48506606,
-      "name": "Violence of Saturninus",
-      "name_ru": "Насилие трибуна Сатурнина",
-      "source": "https://en.wikipedia.org/wiki/Lucius_Appuleius_Saturninus",
-      "tags": [
-        "Roman",
-        "Crisis",
-        "Marius 👤",
-        "Murder",
-        "Outrage",
-        "Political"
-      ],
-      "type": "political"
     },
     {
       "date": "01.01.0093",
@@ -3233,8 +3235,8 @@
       "description": "Pompey captures Jerusalem after a three-month siege, entering the Temple's Holy of Holies — but taking nothing. He makes Judaea a Roman client state. ",
       "description_ru": "Помпей захватывает Иерусалим после трёхмесячной осады, войдя в Святая Святых Храма — но ничего не взяв. Он делает Иудею римским клиентским государством.",
       "era": "BC",
-      "latitude": 31.7785,
-      "longitude": 35.2346,
+      "latitude": 31.778,
+      "longitude": 35.235,
       "name": "Pompey Captures Jerusalem",
       "name_ru": "Помпей захватывает Иерусалим",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(63_BC)",
@@ -3561,27 +3563,6 @@
     },
     {
       "date": "01.01.0052",
-      "description": "The Gallic chieftain Vercingetorix unites the tribes in a massive revolt against Rome. After initial successes, he is besieged at Alesia where Caesar builds two rings of fortifications — one facing in, one facing out against a relief army of 250,000. Vercingetorix surrenders and is later executed in Rome.",
-      "description_ru": "Галльский вождь Верцингеториг объединяет племена в массовом восстании против Рима. После первоначальных успехов он осаждён в Алезии, где Цезарь строит два кольца укреплений — одно внутрь, одно наружу против галльской армии поддержки. Верцингеториг сдаётся и позже казнён в Риме.",
-      "era": "BC",
-      "latitude": 47.5361,
-      "longitude": 4.5022,
-      "name": "Siege of Alesia",
-      "name_ru": "Осада Цезарем Алезии",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Alesia",
-      "tags": [
-        "Roman",
-        "Gallic",
-        "War",
-        "Julius Caesar 👤",
-        "Mark Antony 👤",
-        "Rebellion",
-        "Siege"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "01.01.0052",
       "description": "Clodius is murdered by Milo's gang on the Via Appia. Pompey is appointed sole consul — unprecedented — to restore order, marking his drift from Caesar toward the Senate.",
       "description_ru": "Клодий убит бандой Милона на Аппиевой дороге. Помпей назначен единственным консулом для восстановления порядка (в республике никогда не было одного консула). Помпей и Цезарь оказались по разные стороны баррикад",
       "era": "BC",
@@ -3600,6 +3581,27 @@
         "Pompey the Great 👤"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0052",
+      "description": "The Gallic chieftain Vercingetorix unites the tribes in a massive revolt against Rome. After initial successes, he is besieged at Alesia where Caesar builds two rings of fortifications — one facing in, one facing out against a relief army of 250,000. Vercingetorix surrenders and is later executed in Rome.",
+      "description_ru": "Галльский вождь Верцингеториг объединяет племена в массовом восстании против Рима. После первоначальных успехов он осаждён в Алезии, где Цезарь строит два кольца укреплений — одно внутрь, одно наружу против галльской армии поддержки. Верцингеториг сдаётся и позже казнён в Риме.",
+      "era": "BC",
+      "latitude": 47.5361,
+      "longitude": 4.5022,
+      "name": "Siege of Alesia",
+      "name_ru": "Осада Цезарем Алезии",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Alesia",
+      "tags": [
+        "Roman",
+        "Gallic",
+        "War",
+        "Julius Caesar 👤",
+        "Mark Antony 👤",
+        "Rebellion",
+        "Siege"
+      ],
+      "type": "military"
     },
     {
       "date": "01.07.0050",
@@ -3801,7 +3803,7 @@
       "name_ru": "Цезарь восстанавливает порядок в Сирии",
       "tags": [
         "Roman",
-        "Judah",
+        "Judaic",
         "Jerusalem",
         "Civil War",
         "Administration",

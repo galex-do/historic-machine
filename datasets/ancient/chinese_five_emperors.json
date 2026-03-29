@@ -441,8 +441,8 @@
       "description": "Yi the Archer obtains the elixir of immortality from the Queen Mother of the West (西王母) but his wife Chang'e (嫦娥) drinks it alone — in some versions to prevent the tyrant Feng Meng from seizing it, in others out of longing for transcendence. Chang'e rises to the moon and becomes its immortal inhabitant, accompanied by a jade rabbit that pounds medicinal herbs. The myth gives China its enduring lunar goddess and underlies the Mid-Autumn Festival (中秋节), when mooncakes are offered in her memory under the full moon every fifteenth day of the eighth lunar month.",
       "description_ru": "Стрелок И получает эликсир бессмертия у Владычицы Запада (西王母), но его жена Чанъэ (嫦娥) выпивает его — по одной версии, чтобы не дать тирану Фэн Мэну овладеть им; по другой — движимая жаждой бессмертия. Чанъэ возносится на Луну и становится её бессмертной обитательницей; рядом с ней — нефритовый заяц, толкущий лечебные травы. Миф породил главную лунную богиню Китая и лежит в основе Праздника середины осени (中秋节).",
       "era": "BC",
-      "latitude": 34.8,
-      "longitude": 113.5,
+      "latitude": 34.96924965,
+      "longitude": 113.45993042,
       "name": "Chang'e Flies to the Moon",
       "name_ru": "Чанъэ улетает на Луну",
       "source": "https://en.wikipedia.org/wiki/Chang%27e",
@@ -451,6 +451,7 @@
         "Legend",
         "Divination",
         "Holidays",
+        "Moon",
         "Five Emperors"
       ],
       "type": "religious"
@@ -580,6 +581,7 @@
         "Chinese",
         "Legend",
         "Birth",
+        "Savior",
         "Yu the Great",
         "Five Emperors",
         "Flood"

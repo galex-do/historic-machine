@@ -1,5 +1,5 @@
 {
-  "description": "Dataset imported with 34 events",
+  "description": "Dataset imported with 36 events",
   "events": [
     {
       "date": "01.01.2020",
@@ -434,6 +434,7 @@
         "Chinese",
         "Legend",
         "Conquest",
+        "Femme Fatale",
         "Silk",
         "Wasteful",
         "Xia"
@@ -455,7 +456,8 @@
         "Shang",
         "Legend",
         "Intelligence",
-        "Xia"
+        "Xia",
+        "Yi Yin"
       ],
       "type": "historic"
     },
@@ -509,7 +511,8 @@
         "Chinese",
         "Shang",
         "Legend",
-        "Xia"
+        "Xia",
+        "Yi Yin"
       ],
       "type": "political"
     },
@@ -587,7 +590,6 @@
         "Shang",
         "War",
         "Battle",
-        "Dynasty",
         "Legend",
         "Xia"
       ],
@@ -617,8 +619,8 @@
       "era": "BC",
       "latitude": 34.68312271,
       "longitude": 112.68869877,
-      "name": "The Seven-Year Drought in Xia Kingdom",
-      "name_ru": "Семилетняя засуха в царстве Ся",
+      "name": "The Seven-Year Drought in China",
+      "name_ru": "Семилетняя засуха в Китае",
       "source": "https://en.wikipedia.org/wiki/Xia_dynasty",
       "tags": [
         "Chinese",
@@ -633,7 +635,7 @@
     {
       "date": "01.01.1599",
       "description": "After his victory, Tang issued the \"Great Announcement\" (汤诰, tang gao), directly addressing the people: he acknowledged that he had overthrown the ancient dynasty, but this was not his personal desire, but an act of divine justice. Tang uttered the famous formula of responsibility: \"If the people commit a wrong, the blame lies with me alone. If I commit a wrong, the people are not to blame.\"\n\nHe called on all feudal rulers to follow the path of virtue (De) and warned that those who oppressed their subjects would lose their lands, just as Jie had lost his empire.\n\nThe Tang changed the main dynastic color. The Xia revered black, while the Tang proclaimed white sacred.",
-      "description_ru": "После победы Тан издаёт «Великое объявление» (汤诰, тан гао),, прямо обращаясь к народу: он признаёт, что низверг древнюю династию, однако это было не его личное желание, а акт небесного правосудия. Тан произнес знаменитую формулу ответственности: «Если народ совершит проступок — вина на мне одном. Если же я совершу проступок — народ не виноват»\n\nОн призвал всех правителей уделов следовать пути добродетели (Дэ) и предупредил: те, кто будет угнетать подданных, потеряют свои земли так же, как Цзе потерял империю.\n\nТан сменил главный династический цвет. Ся почитали черный цвет, а Тан провозгласил священным белый.",
+      "description_ru": "После победы Тан издаёт «Великое объявление» (汤诰, тан гао), прямо обращаясь к народу: он признаёт, что низверг древнюю династию, однако это было не его личное желание, а акт небесного правосудия. Тан произнес знаменитую формулу ответственности: «Если народ совершит проступок — вина на мне одном. Если же я совершу проступок — народ не виноват»\n\nОн призвал всех правителей уделов следовать пути добродетели (Дэ) и предупредил: те, кто будет угнетать подданных, потеряют свои земли так же, как Цзе потерял империю.\n\nТан сменил главный династический цвет. Ся почитали черный цвет, а Тан провозгласил священным белый.",
       "era": "BC",
       "latitude": 34.38282936,
       "longitude": 115.61050415,

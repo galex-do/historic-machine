@@ -106,22 +106,24 @@
     },
     {
       "date": "01.01.0300",
-      "description": "Alexander's body is moved from Memphis to Alexandria and placed in a magnificent mausoleum called the Soma; the tomb becomes a pilgrimage site visited by Roman emperors for centuries",
-      "description_ru": "Тело Александра перемещено из Мемфиса в Александрию и помещено в великолепный мавзолей, называемый Сома; гробница становится местом паломничества, которое посещают римские императоры на протяжении веков",
+      "description": "Foundation of the Library of Alexandria begins under Ptolemy I; advised by Demetrius of Phalerum, the king creates an institution that will become the greatest repository of knowledge in the ancient world",
+      "description_ru": "Начинается строительство Александрийской библиотеки; по совету Деметрия Фалерского Птолемей создаёт учреждение, которое станет величайшим хранилищем знаний древнего мира",
       "era": "BC",
       "latitude": 31.2,
       "longitude": 29.9,
-      "name": "Alexander's Tomb Moved to Alexandria",
-      "name_ru": "Мавзолей Александра",
-      "source": "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great",
+      "name": "Foundation of the Library of Alexandria",
+      "name_ru": "Основание Александрийской библиотеки",
+      "source": "https://en.wikipedia.org/wiki/Library_of_Alexandria",
       "tags": [
         "Greek",
         "Egypt",
         "Ptolemaic",
-        "Alexander the Great 👤",
-        "Tomb"
+        "Ancient Wonders",
+        "Culture",
+        "Library",
+        "Science"
       ],
-      "type": "historic"
+      "type": "cultural"
     },
     {
       "date": "01.01.0300",
@@ -145,24 +147,22 @@
     },
     {
       "date": "01.01.0300",
-      "description": "Foundation of the Library of Alexandria begins under Ptolemy I; advised by Demetrius of Phalerum, the king creates an institution that will become the greatest repository of knowledge in the ancient world",
-      "description_ru": "Начинается строительство Александрийской библиотеки; по совету Деметрия Фалерского Птолемей создаёт учреждение, которое станет величайшим хранилищем знаний древнего мира",
+      "description": "Alexander's body is moved from Memphis to Alexandria and placed in a magnificent mausoleum called the Soma; the tomb becomes a pilgrimage site visited by Roman emperors for centuries",
+      "description_ru": "Тело Александра перемещено из Мемфиса в Александрию и помещено в великолепный мавзолей, называемый Сома; гробница становится местом паломничества, которое посещают римские императоры на протяжении веков",
       "era": "BC",
       "latitude": 31.2,
       "longitude": 29.9,
-      "name": "Foundation of the Library of Alexandria",
-      "name_ru": "Основание Александрийской библиотеки",
-      "source": "https://en.wikipedia.org/wiki/Library_of_Alexandria",
+      "name": "Alexander's Tomb Moved to Alexandria",
+      "name_ru": "Мавзолей Александра",
+      "source": "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great",
       "tags": [
         "Greek",
         "Egypt",
         "Ptolemaic",
-        "Ancient Wonders",
-        "Culture",
-        "Library",
-        "Science"
+        "Alexander the Great 👤",
+        "Tomb"
       ],
-      "type": "cultural"
+      "type": "historic"
     },
     {
       "date": "01.01.0297",
@@ -355,6 +355,7 @@
         "Egypt",
         "Ptolemaic",
         "Africa",
+        "Elephants",
         "Expedition",
         "Trade"
       ],
@@ -461,6 +462,25 @@
     },
     {
       "date": "01.01.0240",
+      "description": "Eratosthenes of Cyrene becomes chief librarian of the Library of Alexandria; he will calculate the Earth's circumference with remarkable accuracy using shadows and geometry",
+      "description_ru": "Эратосфен Киренский становится главным библиотекарем Александрийской библиотеки; он вычислит окружность Земли с замечательной точностью, используя тени и геометрию",
+      "era": "BC",
+      "latitude": 31.2,
+      "longitude": 29.9,
+      "name": "Eratosthenes Becomes Chief Librarian",
+      "name_ru": "Эратосфен становится главным библиотекарем",
+      "source": "https://en.wikipedia.org/wiki/Eratosthenes",
+      "tags": [
+        "Greek",
+        "Egypt",
+        "Ptolemaic",
+        "Library",
+        "Science"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.0240",
       "description": "Eratosthenes calculates Earth's circumference at approximately 40,000 km (actual: 40,075 km) by comparing shadow angles at Alexandria and Syene; this is one of the greatest scientific achievements of antiquity",
       "description_ru": "Эратосфен вычисляет окружность Земли примерно в 40 000 км (фактически: 40 075 км), сравнивая углы теней в Александрии и Сиене; это одно из величайших научных достижений античности",
       "era": "BC",
@@ -475,25 +495,6 @@
         "Ptolemaic",
         "Geography",
         "Mathematics",
-        "Science"
-      ],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.0240",
-      "description": "Eratosthenes of Cyrene becomes chief librarian of the Library of Alexandria; he will calculate the Earth's circumference with remarkable accuracy using shadows and geometry",
-      "description_ru": "Эратосфен Киренский становится главным библиотекарем Александрийской библиотеки; он вычислит окружность Земли с замечательной точностью, используя тени и геометрию",
-      "era": "BC",
-      "latitude": 31.2,
-      "longitude": 29.9,
-      "name": "Eratosthenes Becomes Chief Librarian",
-      "name_ru": "Эратосфен становится главным библиотекарем",
-      "source": "https://en.wikipedia.org/wiki/Eratosthenes",
-      "tags": [
-        "Greek",
-        "Egypt",
-        "Ptolemaic",
-        "Library",
         "Science"
       ],
       "type": "scientific"
@@ -696,27 +697,6 @@
     },
     {
       "date": "01.01.0180",
-      "description": "Ptolemy V dies, possibly by poison; his wife Cleopatra I serves as regent for their young son Ptolemy VI, maintaining peace with the Seleucids and stable government",
-      "description_ru": "Птолемей V умирает, возможно, от яда; его жена Клеопатра I становится регентом при их малолетнем сыне Птолемее VI, поддерживая мир с Селевкидами и стабильное правительство",
-      "era": "BC",
-      "latitude": 31.206667,
-      "longitude": 29.900278,
-      "name": "Death of Ptolemy V",
-      "name_ru": "Смерть Птолемея V",
-      "source": "https://en.wikipedia.org/wiki/Ptolemy_V_Epiphanes",
-      "tags": [
-        "Greek",
-        "Egypt",
-        "Ptolemaic",
-        "Seleucid",
-        "Dynasty",
-        "Death",
-        "Regency"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0180",
       "description": "The cult of Isis spread throughout the Mediterranean from Egypt; temples to Isis were built in Greece, Rome, and throughout the Hellenistic world. Isis protects women, mothers, and sailors, offering her followers a hope of immortality and personal protection that is unusual among Greek gods.",
       "description_ru": "Культ Исиды распространяется по всему Средиземноморью из Египта; храмы Исиды строятся в Греции, Риме и по всему эллинистическому миру. Исида защищает женщин, матерей и мореходов, предлагает своим последователям нетипичную для греческих богов надежду на бессмертие и личную защиту.",
       "era": "BC",
@@ -735,6 +715,27 @@
         "Syncretism"
       ],
       "type": "religious"
+    },
+    {
+      "date": "01.01.0180",
+      "description": "Ptolemy V dies, possibly by poison; his wife Cleopatra I serves as regent for their young son Ptolemy VI, maintaining peace with the Seleucids and stable government",
+      "description_ru": "Птолемей V умирает, возможно, от яда; его жена Клеопатра I становится регентом при их малолетнем сыне Птолемее VI, поддерживая мир с Селевкидами и стабильное правительство",
+      "era": "BC",
+      "latitude": 31.206667,
+      "longitude": 29.900278,
+      "name": "Death of Ptolemy V",
+      "name_ru": "Смерть Птолемея V",
+      "source": "https://en.wikipedia.org/wiki/Ptolemy_V_Epiphanes",
+      "tags": [
+        "Greek",
+        "Egypt",
+        "Ptolemaic",
+        "Seleucid",
+        "Dynasty",
+        "Death",
+        "Regency"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.0150",
