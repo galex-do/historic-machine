@@ -130,23 +130,6 @@
     },
     {
       "date": "01.01.0800",
-      "description": "Wine was the national drink of the Urartians. It was stored in huge jars called karases, dug into the ground. Even ordinary homes had stocks of wine and beer. The most fertile regions were the Ararat Valley, the Lake Van basin, and the Lake Urmia region.",
-      "description_ru": "Вино было национальным напитком урартов. Его хранили в огромных кувшинах — карасах, вкопанных в землю. Даже в обычных домах были запасы вина и пива. Самыми плодородными регионами были Араратская долина, бассейн озера Ван, район озера Урмия",
-      "era": "BC",
-      "latitude": 40.18,
-      "longitude": 44.51,
-      "name": "Urartu's winemaking",
-      "name_ru": "Урартское виноделие",
-      "tags": [
-        "Urartu",
-        "Agriculture",
-        "Customs",
-        "Winemaking"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0800",
       "description": "Menua constructs Menua Canal (Shamram Canal), 70-kilometer irrigation channel bringing water from mountains to Tushpa, demonstrating advanced Urartian engineering capabilities",
       "description_ru": "Царь Урарту Менуа строит 70-километровый оросительный канал Менуа (Шамрамский канал), доставляющий воду с гор в Тушпу. Этот канал частично снабжает Ван водой до сих пор.",
       "era": "BC",
@@ -162,6 +145,23 @@
         "Water"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0800",
+      "description": "Wine was the national drink of the Urartians. It was stored in huge jars called karases, dug into the ground. Even ordinary homes had stocks of wine and beer. The most fertile regions were the Ararat Valley, the Lake Van basin, and the Lake Urmia region.",
+      "description_ru": "Вино было национальным напитком урартов. Его хранили в огромных кувшинах — карасах, вкопанных в землю. Даже в обычных домах были запасы вина и пива. Самыми плодородными регионами были Араратская долина, бассейн озера Ван, район озера Урмия",
+      "era": "BC",
+      "latitude": 40.18,
+      "longitude": 44.51,
+      "name": "Urartu's winemaking",
+      "name_ru": "Урартское виноделие",
+      "tags": [
+        "Urartu",
+        "Agriculture",
+        "Customs",
+        "Winemaking"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0782",
@@ -303,30 +303,13 @@
       "source": "https://en.wikipedia.org/wiki/Rusa_I",
       "tags": [
         "Urartu",
-        "War",
         "Dynasty",
         "Defense",
         "Fortification",
+        "Military",
         "Science"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0720",
-      "description": "The fortress was founded by the Urartian king Rusa I. It occupied a key strategic position on the southern shore of Lake Sevan, effectively blocking passage to the southeast and east of the lake. The fortress was dedicated to Teisheba, the Urartian god of war and storms.",
-      "description_ru": "Крепость была основана урартским царем Русой I. Крепость занимала ключевую стратегическую позицию на южном берегу Севана, фактически закрывая проход к юго-востоку и востоку от озера. Крепость была посвящена Тейшебе, урартскому богу войны и бури.",
-      "era": "BC",
-      "latitude": 40.15209599,
-      "longitude": 45.49513578,
-      "name": "Odzaberd Fortress",
-      "name_ru": "Крепость Одзаберд",
-      "source": "https://en.wikipedia.org/wiki/Odzaberd",
-      "tags": [
-        "Urartu",
-        "Architecture",
-        "Fortification"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0720",
@@ -344,6 +327,23 @@
         "Architecture",
         "Capital",
         "Temple"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0720",
+      "description": "The fortress was founded by the Urartian king Rusa I. It occupied a key strategic position on the southern shore of Lake Sevan, effectively blocking passage to the southeast and east of the lake. The fortress was dedicated to Teisheba, the Urartian god of war and storms.",
+      "description_ru": "Крепость была основана урартским царем Русой I. Крепость занимала ключевую стратегическую позицию на южном берегу Севана, фактически закрывая проход к юго-востоку и востоку от озера. Крепость была посвящена Тейшебе, урартскому богу войны и бури.",
+      "era": "BC",
+      "latitude": 40.15209599,
+      "longitude": 45.49513578,
+      "name": "Odzaberd Fortress",
+      "name_ru": "Крепость Одзаберд",
+      "source": "https://en.wikipedia.org/wiki/Odzaberd",
+      "tags": [
+        "Urartu",
+        "Architecture",
+        "Fortification"
       ],
       "type": "historic"
     },

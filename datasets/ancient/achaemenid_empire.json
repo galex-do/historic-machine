@@ -170,24 +170,6 @@
     },
     {
       "date": "01.01.0540",
-      "description": "Herodotus described the Arius region as extremely fertile. Artacoana flourished thanks to its location in the Harirud River valley, which supplied the city with water and made it a vital trade hub on the route to India and Central Asia. To maintain control of the region, the Persians built strongholds. Artacoana became one of the Achaemenid Empire's outposts in the East.",
-      "description_ru": "Геродот описывал регион Ария как чрезвычайно плодородный. Артакоана процветала благодаря своему расположению в долине реки Харируд, которая обеспечивала город водой и делала его важнейшим торговым узлом на пути в Индию и Центральную Азию. Чтобы удерживать контроль над регионом, персы строили опорные пункты. Артакоана стала одним из форпостов ахеменидской империи на Востоке",
-      "era": "BC",
-      "latitude": 34.34583668,
-      "longitude": 62.18842149,
-      "name": "The Persians found Artacoana in Aria",
-      "name_ru": "Основание персами Артакоаны в Арии",
-      "source": "https://en.wikipedia.org/wiki/Artacoana",
-      "tags": [
-        "Persian",
-        "Achaemenid",
-        "City",
-        "Fortification"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0540",
       "description": "Cyrus wanted to mark the northernmost point of his empire. The city on the Jaxartes River (Syr Darya) became a \"fortress\" on the border with the nomadic Saka and Massagetae tribes. He resettled people there from central Persia and built a powerful fortification system. The city was surrounded by a high mudbrick wall.",
       "description_ru": "Кир хотел обозначить крайнюю северную точку своей державы. Город на реке Яксарт (Сырдарья) стал «замком» на границе с кочевыми племенами саков и массагетов.  Он переселил туда людей из центральных областей Персии и создал мощную фортификационную систему. Город был окружен высокой стеной из сырцового кирпича",
       "era": "BC",
@@ -223,6 +205,24 @@
         "Fortification"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0540",
+      "description": "Herodotus described the Arius region as extremely fertile. Artacoana flourished thanks to its location in the Harirud River valley, which supplied the city with water and made it a vital trade hub on the route to India and Central Asia. To maintain control of the region, the Persians built strongholds. Artacoana became one of the Achaemenid Empire's outposts in the East.",
+      "description_ru": "Геродот описывал регион Ария как чрезвычайно плодородный. Артакоана процветала благодаря своему расположению в долине реки Харируд, которая обеспечивала город водой и делала его важнейшим торговым узлом на пути в Индию и Центральную Азию. Чтобы удерживать контроль над регионом, персы строили опорные пункты. Артакоана стала одним из форпостов ахеменидской империи на Востоке",
+      "era": "BC",
+      "latitude": 34.34583668,
+      "longitude": 62.18842149,
+      "name": "The Persians found Artacoana in Aria",
+      "name_ru": "Основание персами Артакоаны в Арии",
+      "source": "https://en.wikipedia.org/wiki/Artacoana",
+      "tags": [
+        "Persian",
+        "Achaemenid",
+        "City",
+        "Fortification"
+      ],
+      "type": "historic"
     },
     {
       "date": "12.10.0539",
@@ -324,9 +324,9 @@
       "tags": [
         "Persian",
         "Achaemenid",
-        "War",
         "Army",
         "Elite",
+        "Military",
         "Science"
       ],
       "type": "military"
@@ -626,6 +626,26 @@
     },
     {
       "date": "01.01.0518",
+      "description": "Darius introduces standardized coinage throughout empire - gold daric and silver siglos - facilitating trade and tax collection across vast territories",
+      "description_ru": "Дарий вводит единую монету по всей империи - золотой дарик и серебряный сиглос. Это упрощает торговлю и сбор налогов на огромных территориях",
+      "era": "BC",
+      "latitude": 32.1897,
+      "longitude": 48.2583,
+      "name": "Persian Imperial Coinage",
+      "name_ru": "Персидская имперская монета",
+      "source": "https://en.wikipedia.org/wiki/Achaemenid_coinage",
+      "tags": [
+        "Persian",
+        "Achaemenid",
+        "Currency",
+        "Darius I 👑",
+        "Economic",
+        "Trade"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0518",
       "description": "Construction begins on Persepolis, ceremonial capital and showcase of imperial power, featuring Apadana palace with distinctive Persian column capitals and extensive reliefs. Nowruz (New Year) was traditionally celebrated in Persepolis.",
       "description_ru": "Начинается строительство Персеполя, церемониальной столицы и витрины имперской мощи, с дворцом Ападана с характерными персидскими капителями колонн и обширными рельефами. В Персеполе традиционно праздновался Навруз (Новый год)",
       "era": "BC",
@@ -643,26 +663,6 @@
         "Capital",
         "Darius I 👑",
         "Palace"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0518",
-      "description": "Darius introduces standardized coinage throughout empire - gold daric and silver siglos - facilitating trade and tax collection across vast territories",
-      "description_ru": "Дарий вводит единую монету по всей империи - золотой дарик и серебряный сиглос. Это упрощает торговлю и сбор налогов на огромных территориях",
-      "era": "BC",
-      "latitude": 32.1897,
-      "longitude": 48.2583,
-      "name": "Persian Imperial Coinage",
-      "name_ru": "Персидская имперская монета",
-      "source": "https://en.wikipedia.org/wiki/Achaemenid_coinage",
-      "tags": [
-        "Persian",
-        "Achaemenid",
-        "Currency",
-        "Darius I 👑",
-        "Economic",
-        "Trade"
       ],
       "type": "historic"
     },
@@ -1054,26 +1054,6 @@
     },
     {
       "date": "27.08.0479",
-      "description": "Greek fleet destroys remaining Persian ships at Battle of Mycale on same day as Plataea, effectively ending Persian naval threat in Aegean Sea",
-      "description_ru": "Греческий флот уничтожает оставшиеся персидские корабли в битве при Микале в тот же день, что и Платеи, фактически завершая персидскую морскую угрозу в Эгейском море",
-      "era": "BC",
-      "latitude": 37.7533,
-      "longitude": 27.0667,
-      "name": "Battle of Mycale",
-      "name_ru": "Битва при Микале",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Mycale",
-      "tags": [
-        "Greek",
-        "Persian",
-        "Achaemenid",
-        "War",
-        "Battle",
-        "Naval"
-      ],
-      "type": "military"
-    },
-    {
-      "date": "27.08.0479",
       "description": "Combined Greek army decisively defeats Persian forces at Battle of Plataea, ending Persian invasion and forcing withdrawal from mainland Greece",
       "description_ru": "Объединенная греческая армия решительно побеждает персидские силы в битве при Платеях, завершая персидское вторжение и вынуждая к отступлению из материковой Греции",
       "era": "BC",
@@ -1089,6 +1069,26 @@
         "War",
         "Battle",
         "Xerxes I 👑"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "27.08.0479",
+      "description": "Greek fleet destroys remaining Persian ships at Battle of Mycale on same day as Plataea, effectively ending Persian naval threat in Aegean Sea",
+      "description_ru": "Греческий флот уничтожает оставшиеся персидские корабли в битве при Микале в тот же день, что и Платеи, фактически завершая персидскую морскую угрозу в Эгейском море",
+      "era": "BC",
+      "latitude": 37.7533,
+      "longitude": 27.0667,
+      "name": "Battle of Mycale",
+      "name_ru": "Битва при Микале",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Mycale",
+      "tags": [
+        "Greek",
+        "Persian",
+        "Achaemenid",
+        "War",
+        "Battle",
+        "Naval"
       ],
       "type": "military"
     },
@@ -1520,6 +1520,25 @@
     },
     {
       "date": "01.01.0370",
+      "description": "Great Satraps' Revolt begins as western satraps unite against central authority, revealing growing weakness of imperial administration and provincial discontent",
+      "description_ru": "Начинается Великое восстание сатрапов. Западные сатрапы Анатолии (Лидия, Фригия, Кария, Каппадокия, Армения) объединяются против империи, вскрывая растущую слабость имперской администрации и недовольство провинций",
+      "era": "BC",
+      "latitude": 38,
+      "longitude": 35,
+      "name": "Great Satraps' Revolt",
+      "name_ru": "Великое восстание сатрапов",
+      "source": "https://en.wikipedia.org/wiki/Great_Satraps%27_Revolt",
+      "tags": [
+        "Persian",
+        "Achaemenid",
+        "Civil War",
+        "Administration",
+        "Rebellion"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0370",
       "description": "Artaxerxes II introduced Anahita (the goddess of water and fertility) into the Zoroastrian pantheon and erected temples to her throughout the empire. With the help of Anahita, he integrates the images of the Babylonian Ishtar and the Elamite Nanaia into the Zoroastrian pantheon in order to reconcile the local population with the religious traditions of the Achaemenid Empire.",
       "description_ru": "Артаксеркс II вводит в зороастрийский пантеон Анахиту (богиню воды и плодородия) и возводит ей храмы по всей империи. С помощью Анахиты он интегрирует в зороастрийский пантеон образы вавилонской Иштар и эламской Нанайи, чтобы примирить местное население с религиозными традициями Ахеменидской империи.",
       "era": "BC",
@@ -1539,25 +1558,6 @@
         "Zoroastrian"
       ],
       "type": "religious"
-    },
-    {
-      "date": "01.01.0370",
-      "description": "Great Satraps' Revolt begins as western satraps unite against central authority, revealing growing weakness of imperial administration and provincial discontent",
-      "description_ru": "Начинается Великое восстание сатрапов. Западные сатрапы Анатолии (Лидия, Фригия, Кария, Каппадокия, Армения) объединяются против империи, вскрывая растущую слабость имперской администрации и недовольство провинций",
-      "era": "BC",
-      "latitude": 38,
-      "longitude": 35,
-      "name": "Great Satraps' Revolt",
-      "name_ru": "Великое восстание сатрапов",
-      "source": "https://en.wikipedia.org/wiki/Great_Satraps%27_Revolt",
-      "tags": [
-        "Persian",
-        "Achaemenid",
-        "Civil War",
-        "Administration",
-        "Rebellion"
-      ],
-      "type": "political"
     },
     {
       "date": "01.01.0362",

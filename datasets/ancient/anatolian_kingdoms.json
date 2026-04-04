@@ -54,25 +54,6 @@
     },
     {
       "date": "01.01.1180",
-      "description": "Phrygians establish first settlements in central Anatolia after migration from Balkans, building fortified citadels on rocky outcrops including future capital Gordion",
-      "description_ru": "Фригийцы заселяют центральную Анатолию, строя укрепленные цитадели на скалистых возвышенностях, включая будущую столицу Фригии - Гордион",
-      "era": "BC",
-      "latitude": 39.6511,
-      "longitude": 31.9958,
-      "name": "Phrygian Settlement of Anatolia",
-      "name_ru": "Фригийское заселение Анатолии",
-      "source": "https://en.wikipedia.org/wiki/Phrygia",
-      "tags": [
-        "Hittite",
-        "Phrygian",
-        "Fortification",
-        "Migration",
-        "Settlement"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1180",
       "description": "Carians develop distinctive language belonging to Luwian branch of Anatolian languages; create unique Carian alphabet adapted from Greek and Phoenician scripts for inscriptions",
       "description_ru": "Карийцы развивают отличительный язык, принадлежащий к лувийской ветви анатолийских языков; создают уникальный карийский алфавит, адаптированный из греческих и финикийских систем письма для надписей",
       "era": "BC",
@@ -92,6 +73,25 @@
       "type": "cultural"
     },
     {
+      "date": "01.01.1180",
+      "description": "Phrygians establish first settlements in central Anatolia after migration from Balkans, building fortified citadels on rocky outcrops including future capital Gordion",
+      "description_ru": "Фригийцы заселяют центральную Анатолию, строя укрепленные цитадели на скалистых возвышенностях, включая будущую столицу Фригии - Гордион",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Phrygian Settlement of Anatolia",
+      "name_ru": "Фригийское заселение Анатолии",
+      "source": "https://en.wikipedia.org/wiki/Phrygia",
+      "tags": [
+        "Hittite",
+        "Phrygian",
+        "Fortification",
+        "Migration",
+        "Settlement"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.1150",
       "description": "Gordion emerges as major Phrygian center; archaeological evidence shows sophisticated pottery workshops producing distinctive geometric designs that will influence Greek art",
       "description_ru": "Гордион становится крупным фригийским центром; археологические свидетельства показывают сложные гончарные мастерские, производящие характерные геометрические узоры, которые повлияют на греческое искусство",
@@ -108,25 +108,6 @@
         "Culture"
       ],
       "type": "cultural"
-    },
-    {
-      "date": "01.01.1100",
-      "description": "Sardis emerges as principal Lydian settlement; naturally defensible acropolis overlooks fertile Hermus valley, controlling trade routes between Aegean coast and Anatolian interior",
-      "description_ru": "Сарды возникают как главное лидийское поселение; защищенный рельефом акрополь возвышается над плодородной долиной Герма, контролируя торговые пути между побережьем Эгейского моря и внутренними районами Анатолии",
-      "era": "BC",
-      "latitude": 38.4852,
-      "longitude": 28.0428,
-      "name": "Foundation of Sardis",
-      "name_ru": "Основание лидийских Сард",
-      "source": "https://en.wikipedia.org/wiki/Sardis",
-      "tags": [
-        "Lydia",
-        "City",
-        "Anatolia",
-        "Capital",
-        "Trade"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.1100",
@@ -165,6 +146,25 @@
         "Temple"
       ],
       "type": "religious"
+    },
+    {
+      "date": "01.01.1100",
+      "description": "Sardis emerges as principal Lydian settlement; naturally defensible acropolis overlooks fertile Hermus valley, controlling trade routes between Aegean coast and Anatolian interior",
+      "description_ru": "Сарды возникают как главное лидийское поселение; защищенный рельефом акрополь возвышается над плодородной долиной Герма, контролируя торговые пути между побережьем Эгейского моря и внутренними районами Анатолии",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Foundation of Sardis",
+      "name_ru": "Основание лидийских Сард",
+      "source": "https://en.wikipedia.org/wiki/Sardis",
+      "tags": [
+        "Lydia",
+        "City",
+        "Anatolia",
+        "Capital",
+        "Trade"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.1050",
@@ -226,25 +226,6 @@
     },
     {
       "date": "01.01.0950",
-      "description": "Phrygians perfect woodworking techniques using abundant Anatolian forests; produce intricate furniture inlaid with geometric patterns and bronze fittings for elite tombs and palaces",
-      "description_ru": "Фригийцы совершенствуют технику обработки дерева, используя обильные анатолийские леса; производят замысловатую мебель с геометрическими узорами и бронзовой фурнитурой для элитных гробниц и дворцов",
-      "era": "BC",
-      "latitude": 39.6511,
-      "longitude": 31.9958,
-      "name": "Phrygian Woodworking Mastery",
-      "name_ru": "Мастерство фригийской деревообработки",
-      "source": "https://en.wikipedia.org/wiki/Phrygia",
-      "tags": [
-        "Phrygian",
-        "Art",
-        "Craftsmanship",
-        "Technology",
-        "Wood"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0950",
       "description": "Lydians develop advanced techniques for refining alluvial gold, separating gold from electrum (natural gold-silver alloy) found in Pactolus River using salt cementation process",
       "description_ru": "Лидийцы изобрели процесс солевой цементации, чтобы отделить золото от электрума (природного сплава золота и серебра), найденного в реке Пактол. Лидийцы смешивали порошок электрума с солью и чем-нибудь пористым (глиной); затем нагревали смесь. При нагревании соль и серебро образовывали хлорид, который впитывался в поры глины, оставляя таким образом очищенное золото",
       "era": "BC",
@@ -264,25 +245,23 @@
       "type": "scientific"
     },
     {
-      "date": "01.01.0900",
-      "description": "Lydian Kingdom expands control over Greek Ionian cities on Aegean coast; imposes tribute while allowing cities substantial autonomy, beginning pattern of Lydian-Greek interaction",
-      "description_ru": "Лидийское царство подчиняет греческие ионийские города на побережье Эгейского моря; собирает дань, позволяя городам существенную автономию и выстраивая модель лидийско-греческого взаимодействия",
+      "date": "01.01.0950",
+      "description": "Phrygians perfect woodworking techniques using abundant Anatolian forests; produce intricate furniture inlaid with geometric patterns and bronze fittings for elite tombs and palaces",
+      "description_ru": "Фригийцы совершенствуют технику обработки дерева, используя обильные анатолийские леса; производят замысловатую мебель с геометрическими узорами и бронзовой фурнитурой для элитных гробниц и дворцов",
       "era": "BC",
-      "latitude": 37.9397,
-      "longitude": 27.3417,
-      "name": "Lydian Control of Ionia",
-      "name_ru": "Лидийский контроль над Ионией",
-      "source": "https://en.wikipedia.org/wiki/Lydia",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Phrygian Woodworking Mastery",
+      "name_ru": "Мастерство фригийской деревообработки",
+      "source": "https://en.wikipedia.org/wiki/Phrygia",
       "tags": [
-        "Greek",
-        "Lydia",
-        "Conquest",
-        "Expansion",
-        "Heraclid",
-        "Ionian",
-        "Tribute"
+        "Phrygian",
+        "Art",
+        "Craftsmanship",
+        "Technology",
+        "Wood"
       ],
-      "type": "military"
+      "type": "cultural"
     },
     {
       "date": "01.01.0900",
@@ -322,6 +301,47 @@
       "type": "military"
     },
     {
+      "date": "01.01.0900",
+      "description": "Lydian Kingdom expands control over Greek Ionian cities on Aegean coast; imposes tribute while allowing cities substantial autonomy, beginning pattern of Lydian-Greek interaction",
+      "description_ru": "Лидийское царство подчиняет греческие ионийские города на побережье Эгейского моря; собирает дань, позволяя городам существенную автономию и выстраивая модель лидийско-греческого взаимодействия",
+      "era": "BC",
+      "latitude": 37.9397,
+      "longitude": 27.3417,
+      "name": "Lydian Control of Ionia",
+      "name_ru": "Лидийский контроль над Ионией",
+      "source": "https://en.wikipedia.org/wiki/Lydia",
+      "tags": [
+        "Greek",
+        "Lydia",
+        "Conquest",
+        "Expansion",
+        "Heraclid",
+        "Ionian",
+        "Tribute"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0850",
+      "description": "Gordion becomes prosperous capital with population of 2,000-3,000; massive citadel mound reaches 13 meters high, containing royal megaron palaces with elaborate pebble mosaic floors",
+      "description_ru": "Гордион становится процветающей столицей с населением 2000-3000 человек; в городе возведена цитадель, в которую встроены богатые дома-мегароны со сложными мозаичными полами из гальки",
+      "era": "BC",
+      "latitude": 39.6511,
+      "longitude": 31.9958,
+      "name": "Gordion at Peak Prosperity",
+      "name_ru": "Гордион на пике процветания",
+      "source": "https://en.wikipedia.org/wiki/Gordion",
+      "tags": [
+        "Phrygian",
+        "City",
+        "Architecture",
+        "Capital",
+        "Palace",
+        "Wealth"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0850",
       "description": "Lydian merchants establish extensive trade networks connecting Anatolia with Greek world and Near East; exchange local gold, silver, textiles for Greek olive oil, wine, and Eastern spices",
       "description_ru": "Лидийские купцы создают обширные торговые сети, соединяющие Анатолию с греческим миром и Ближним Востоком; обменивают местное золото, серебро, ткани на греческое оливковое масло, вино и восточные специи",
@@ -351,31 +371,11 @@
       "name_ru": "Киммерийцы в Крыму",
       "tags": [
         "Cimmerian",
-        "War",
         "Cavalry",
         "Crimea",
+        "Military",
         "Science",
         "Tactics"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0850",
-      "description": "Gordion becomes prosperous capital with population of 2,000-3,000; massive citadel mound reaches 13 meters high, containing royal megaron palaces with elaborate pebble mosaic floors",
-      "description_ru": "Гордион становится процветающей столицей с населением 2000-3000 человек; в городе возведена цитадель, в которую встроены богатые дома-мегароны со сложными мозаичными полами из гальки",
-      "era": "BC",
-      "latitude": 39.6511,
-      "longitude": 31.9958,
-      "name": "Gordion at Peak Prosperity",
-      "name_ru": "Гордион на пике процветания",
-      "source": "https://en.wikipedia.org/wiki/Gordion",
-      "tags": [
-        "Phrygian",
-        "City",
-        "Architecture",
-        "Capital",
-        "Palace",
-        "Wealth"
       ],
       "type": "historic"
     },
@@ -497,24 +497,6 @@
     },
     {
       "date": "01.01.0750",
-      "description": "Last Heraclid king Candaules rules Lydia; according to Herodotus, becomes obsessed with beauty of his wife, ultimately leading to his assassination in palace conspiracy",
-      "description_ru": "Последний царь Гераклидов Кандавл правит Лидией; согласно Геродоту, становится одержим красотой своей жены, что в конечном итоге приводит к его убийству в дворцовом заговоре",
-      "era": "BC",
-      "latitude": 38.4852,
-      "longitude": 28.0428,
-      "name": "Reign of Candaules",
-      "name_ru": "Кандавл - царь Лидии",
-      "source": "https://en.wikipedia.org/wiki/Candaules",
-      "tags": [
-        "Lydia",
-        "Dynasty",
-        "King",
-        "Heraclid"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0750",
       "description": "Construction of massive royal tumulus tomb at Gordion (later called 'Midas Mound') begins; burial chamber built with juniper and cedar logs, 39 meters square, largest wooden structure from ancient world",
       "description_ru": "Начинается строительство массивной царской курганной гробницы в Гордионе; погребальная камера построена из можжевельника и кедра; 39 метров в квадрате, крупнейшее деревянное сооружение древнего мира",
       "era": "BC",
@@ -534,6 +516,24 @@
         "Wood"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0750",
+      "description": "Last Heraclid king Candaules rules Lydia; according to Herodotus, becomes obsessed with beauty of his wife, ultimately leading to his assassination in palace conspiracy",
+      "description_ru": "Последний царь Гераклидов Кандавл правит Лидией; согласно Геродоту, становится одержим красотой своей жены, что в конечном итоге приводит к его убийству в дворцовом заговоре",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Reign of Candaules",
+      "name_ru": "Кандавл - царь Лидии",
+      "source": "https://en.wikipedia.org/wiki/Candaules",
+      "tags": [
+        "Lydia",
+        "Dynasty",
+        "King",
+        "Heraclid"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.0740",

@@ -156,21 +156,6 @@
     },
     {
       "date": "01.01.0189",
-      "description": "The fugitive Carthaginian commander arrived at the court of Artaxias I and briefly served as his advisor. According to Strabo and Plutarch, Hannibal helped select the site and plan the new capital, Artashat, earning the city the nickname \"Armenian Carthage.\"",
-      "description_ru": "Беглый карфагенский полководец прибыл ко двору Арташеса I и непродолжительное время служил его советником. По Страбону и Плутарху, Ганнибал помогал выбирать место и планировать новую столицу Арташат — за что город получил прозвище 'Армянский Карфаген'. ",
-      "era": "BC",
-      "latitude": 40.12806449,
-      "longitude": 43.6634016,
-      "name": "Hannibal takes refuge in Armenia",
-      "name_ru": "Ганнибал укрывается в Армении",
-      "tags": [
-        "Armenian",
-        "Hannibal 👤"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0189",
       "description": "Following the defeat of the Seleucids at Magnesia, the Armenian governor Artaxias declared independence and founded the Artaxiad dynasty. The Treaty of Apamea officially recognized his sovereignty. Artaxias unites the Armenian-speaking lands, erects boundary stones, and establishes the largest Armenian state.",
       "description_ru": "После поражения Селевкидов при Магнезии, армянский наместник Арташес провозглашает независимость и основывает династию Арташесидов. Апамейский договор официально признаёт его суверенитет. Арташес объединяет армяноязычные земли, устанавливает пограничные камни и создаёт крупнейшее армянское государство. ",
       "era": "BC",
@@ -190,6 +175,21 @@
         "Kingdom"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0189",
+      "description": "The fugitive Carthaginian commander arrived at the court of Artaxias I and briefly served as his advisor. According to Strabo and Plutarch, Hannibal helped select the site and plan the new capital, Artashat, earning the city the nickname \"Armenian Carthage.\"",
+      "description_ru": "Беглый карфагенский полководец прибыл ко двору Арташеса I и непродолжительное время служил его советником. По Страбону и Плутарху, Ганнибал помогал выбирать место и планировать новую столицу Арташат — за что город получил прозвище 'Армянский Карфаген'. ",
+      "era": "BC",
+      "latitude": 40.12806449,
+      "longitude": 43.6634016,
+      "name": "Hannibal takes refuge in Armenia",
+      "name_ru": "Ганнибал укрывается в Армении",
+      "tags": [
+        "Armenian",
+        "Hannibal 👤"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0176",
@@ -288,26 +288,6 @@
     },
     {
       "date": "01.01.0093",
-      "description": "Armenia, being a satrapy of Persia, adopted the Persian heavy cavalry traditions. After gaining independence, Armenia began to create its own elite heavy cavalry units, known as the Ayrudzi—local cataphracts. Armed with 4-meter spears and completely clad in iron, the cataphractarii became Tigranes' armored fist, which only the Romans could cope with.",
-      "description_ru": "Армения, будучи сатрапией Персии, переняла традиции тяжелой кавалерии от персов. Получив независимость, Армения стала создавать собственные элитные подразделения тяжелой конницы, известные как Айрудзи - местные катафрактарии. Вооруженные 4-метровыми копьями и полностью закованные в железо, катафрактарии стали бронированным кулаком Тиграна, справиться с которым смогли только римляне.",
-      "era": "BC",
-      "latitude": 39.87916461,
-      "longitude": 44.57530439,
-      "name": "Armenian heavy cavalry",
-      "name_ru": "Армянская тяжелая конница",
-      "source": "https://en.wikipedia.org/wiki/Military_history_of_Armenia",
-      "tags": [
-        "Armenian",
-        "War",
-        "Cavalry",
-        "Science",
-        "Tactics",
-        "Weapon"
-      ],
-      "type": "scientific"
-    },
-    {
-      "date": "01.01.0093",
       "description": "Tigran builds a fortress on a rock in Artsakh for military and commercial control over the Caspian region. Tigranakert in Artsakh was built to last: its walls were carved directly into the rock, and the blocks were fastened together with dovetail joints without mortar — as well as advanced architecture in ancient and Persian centers.",
       "description_ru": "Тигран основывает крепость на скале в Арцахе для военного и торгового контроля над прикаспийским регионом. Тигранакерт в Арцахе строился на века: его стены были высечены прямо в скале, а блоки скреплялись «ласточкиным хвостом» без раствора — как делали в античных и персидских центрах",
       "era": "BC",
@@ -323,6 +303,26 @@
         "Fortification"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0093",
+      "description": "Armenia, being a satrapy of Persia, adopted the Persian heavy cavalry traditions. After gaining independence, Armenia began to create its own elite heavy cavalry units, known as the Ayrudzi—local cataphracts. Armed with 4-meter spears and completely clad in iron, the cataphractarii became Tigranes' armored fist, which only the Romans could cope with.",
+      "description_ru": "Армения, будучи сатрапией Персии, переняла традиции тяжелой кавалерии от персов. Получив независимость, Армения стала создавать собственные элитные подразделения тяжелой конницы, известные как Айрудзи - местные катафрактарии. Вооруженные 4-метровыми копьями и полностью закованные в железо, катафрактарии стали бронированным кулаком Тиграна, справиться с которым смогли только римляне.",
+      "era": "BC",
+      "latitude": 39.87916461,
+      "longitude": 44.57530439,
+      "name": "Armenian heavy cavalry",
+      "name_ru": "Армянская тяжелая конница",
+      "source": "https://en.wikipedia.org/wiki/Military_history_of_Armenia",
+      "tags": [
+        "Armenian",
+        "Cavalry",
+        "Military",
+        "Science",
+        "Tactics",
+        "Weapon"
+      ],
+      "type": "scientific"
     },
     {
       "date": "01.01.0090",
@@ -1177,26 +1177,6 @@
     },
     {
       "date": "01.01.0303",
-      "description": "Gregory the Illuminator built the Etchmiadzin Cathedral on the site of a former fire temple. According to legend, Gregory saw a vision of Christ striking the ground with a golden hammer, marking the site of construction. The name means \"Descent of the Only Begotten.\" Originally a simple wooden basilica, it was rebuilt with a cruciform plan and a central dome in 483-484. Etchmiadzin became the permanent residence of the Catholicos of the Armenian Apostolic Church.",
-      "description_ru": "Григорий Просветитель возводит Эчмиадзинский собор на месте бывшего храма огня. По преданию, Григорий увидел видение Христа, ударяющего землю золотым молотом, обозначая место строительства. Название означает 'Сошествие Единородного.' Первоначально простая деревянная базилика, перестроенная с крестообразным планом и центральным куполом в 483-484 гг. Эчмиадзин становится постоянной резиденцией Католикоса Армянской Апостольской Церкви. ",
-      "era": "AD",
-      "latitude": 40.1618374,
-      "longitude": 44.29115117,
-      "name": "Echmiadzin Cathedral Built",
-      "name_ru": "Возведение Эчмиадзинского собора",
-      "source": "https://en.wikipedia.org/wiki/Etchmiadzin_Cathedral",
-      "tags": [
-        "Armenian",
-        "Architecture",
-        "Christian",
-        "Holy Site",
-        "Religious",
-        "Temple"
-      ],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.0303",
       "description": "Gregory the Illuminator builds churches of Hripsime and Gayane in Vagharshapat over the martyrdom sites of the Christian nuns whose killing triggered King Tiridates' conversion. Rhipsime and Gayane had fled Roman persecution and were tortured to death when Rhipsime refused to marry Tiridates. Both churches — rebuilt in their current form in the 7th century — are masterpieces of early Armenian architecture and UNESCO World Heritage sites. The martyrs' story becomes central to Armenian Christian identity",
       "description_ru": "Григорий Просветитель строит часовни-мартирии Рипсиме и Гаяне в Вагаршапате на местах мученичества христианских монахинь, чья гибель послужила толчком к обращению царя Тиридата. Рипсиме и Гаяне бежали от римских гонений и были замучены до смерти, когда Рипсиме отказалась выйти замуж за Тиридата. ",
       "era": "AD",
@@ -1210,6 +1190,26 @@
         "Architecture",
         "Christian",
         "Martyr",
+        "Religious",
+        "Temple"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0303",
+      "description": "Gregory the Illuminator built the Etchmiadzin Cathedral on the site of a former fire temple. According to legend, Gregory saw a vision of Christ striking the ground with a golden hammer, marking the site of construction. The name means \"Descent of the Only Begotten.\" Originally a simple wooden basilica, it was rebuilt with a cruciform plan and a central dome in 483-484. Etchmiadzin became the permanent residence of the Catholicos of the Armenian Apostolic Church.",
+      "description_ru": "Григорий Просветитель возводит Эчмиадзинский собор на месте бывшего храма огня. По преданию, Григорий увидел видение Христа, ударяющего землю золотым молотом, обозначая место строительства. Название означает 'Сошествие Единородного.' Первоначально простая деревянная базилика, перестроенная с крестообразным планом и центральным куполом в 483-484 гг. Эчмиадзин становится постоянной резиденцией Католикоса Армянской Апостольской Церкви. ",
+      "era": "AD",
+      "latitude": 40.1618374,
+      "longitude": 44.29115117,
+      "name": "Echmiadzin Cathedral Built",
+      "name_ru": "Возведение Эчмиадзинского собора",
+      "source": "https://en.wikipedia.org/wiki/Etchmiadzin_Cathedral",
+      "tags": [
+        "Armenian",
+        "Architecture",
+        "Christian",
+        "Holy Site",
         "Religious",
         "Temple"
       ],
@@ -1429,20 +1429,20 @@
     },
     {
       "date": "01.01.0368",
-      "description": "The Persians stormed the city, after which Shapur ordered it burned to the ground and the walls torn down. Almost the entire surviving population (tens of thousands of families) were driven into captivity deep into Iran. The city ceased to exist as a significant political center.",
-      "description_ru": "Персы взяли город штурмом, после чего Шапур приказал сжечь его дотла и разрушить стены. Почти всё выжившее население (десятки тысяч семей) было угнано в плен вглубь Ирана. Город перестал существовать как значимый политический центр.",
+      "description": "Queen Parandzem, wife of the captured Arshak II, locked herself in the fortress with the remnants of her loyal troops (approximately 11,000 men) and the royal treasury. The fortress stood on a steep cliff, difficult to access, and Parandzem managed to hold out for a year. Eventually, the fortress was taken by starvation, the queen was captured, and executed in Persia.",
+      "description_ru": "Жена плененного Аршака II, царица Парандзем заперлась в крепости с остатками верных войск (около 11 тысяч человек) и царской казной. Крепость стояла на отвесной скале, к которой было трудно подобраться, и Парандзем удалось держать осаду в течение года. В конце концов крепость взяли измором, царица была пленена и казнена в Персии",
       "era": "AD",
-      "latitude": 39.87837009,
-      "longitude": 44.57630754,
-      "name": "The Persians ravage Artaxata",
-      "name_ru": "Персы разоряют Арташат",
-      "source": "https://en.wikipedia.org/wiki/Armeno-Sasanian_War_of_363%E2%80%93371",
+      "latitude": 40.15278483,
+      "longitude": 43.65941048,
+      "name": "The Persians besiege Artagers",
+      "name_ru": "Персы осаждают Артагерс",
       "tags": [
         "Persian",
         "Armenian",
+        "Arsacid",
         "War",
-        "Destruction",
-        "Sassanid"
+        "Sassanid",
+        "Siege"
       ],
       "type": "military"
     },
@@ -1468,20 +1468,20 @@
     },
     {
       "date": "01.01.0368",
-      "description": "Queen Parandzem, wife of the captured Arshak II, locked herself in the fortress with the remnants of her loyal troops (approximately 11,000 men) and the royal treasury. The fortress stood on a steep cliff, difficult to access, and Parandzem managed to hold out for a year. Eventually, the fortress was taken by starvation, the queen was captured, and executed in Persia.",
-      "description_ru": "Жена плененного Аршака II, царица Парандзем заперлась в крепости с остатками верных войск (около 11 тысяч человек) и царской казной. Крепость стояла на отвесной скале, к которой было трудно подобраться, и Парандзем удалось держать осаду в течение года. В конце концов крепость взяли измором, царица была пленена и казнена в Персии",
+      "description": "The Persians stormed the city, after which Shapur ordered it burned to the ground and the walls torn down. Almost the entire surviving population (tens of thousands of families) were driven into captivity deep into Iran. The city ceased to exist as a significant political center.",
+      "description_ru": "Персы взяли город штурмом, после чего Шапур приказал сжечь его дотла и разрушить стены. Почти всё выжившее население (десятки тысяч семей) было угнано в плен вглубь Ирана. Город перестал существовать как значимый политический центр.",
       "era": "AD",
-      "latitude": 40.15278483,
-      "longitude": 43.65941048,
-      "name": "The Persians besiege Artagers",
-      "name_ru": "Персы осаждают Артагерс",
+      "latitude": 39.87837009,
+      "longitude": 44.57630754,
+      "name": "The Persians ravage Artaxata",
+      "name_ru": "Персы разоряют Арташат",
+      "source": "https://en.wikipedia.org/wiki/Armeno-Sasanian_War_of_363%E2%80%93371",
       "tags": [
         "Persian",
         "Armenian",
-        "Arsacid",
         "War",
-        "Sassanid",
-        "Siege"
+        "Destruction",
+        "Sassanid"
       ],
       "type": "military"
     },
@@ -1668,26 +1668,6 @@
     },
     {
       "date": "01.01.0440",
-      "description": "Movses Khorenatsi writes the History of Armenia — the first comprehensive national history of any people, tracing Armenian origins from Biblical times through the 5th century AD. He preserves the pre-Christian epics of Hayk (legendary ancestor who defeats the Babylonian giant Bel), Aram (eponymous hero), and the birth hymn of Vahagn. His work establishes the Armenian historical narrative: a people chosen by God, defined by language and faith, resilient under foreign rule. Despite modern scholarly debate about his exact dating, his history remains foundational to Armenian identity. The period of Khorenatsi's life and the time of writing of the history remain a subject of debate; the canon defines him as student of Mashtots.",
-      "description_ru": "Мовсес Хоренаци пишет «Историю Армении» — первую всеобъемлющую национальную историю любого народа, прослеживающую армянские истоки от библейских времён до V века. Он сохраняет дохристианские эпосы о Хайке (легендарный предок, победивший вавилонского великана Бела), Араме (герой-эпоним) и гимн рождения Ваагна. Его труд формирует армянский исторический нарратив: избранный Богом народ, определяемый языком и верой, стойкий под иностранным владычеством. Период жизни Хоренаци и время написания истории остаются предметом споров; канон называет его учеником Маштоца.",
-      "era": "AD",
-      "latitude": 40.1614,
-      "longitude": 44.2911,
-      "name": "Khorenatsi's History of Armenia Written",
-      "name_ru": "Хоренаци пишет «Историю Армении»",
-      "source": "https://en.wikipedia.org/wiki/Movses_Khorenatsi",
-      "tags": [
-        "Armenian",
-        "Uncertain",
-        "Culture",
-        "History",
-        "Literature",
-        "Writing"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0440",
       "description": "Eznik of Kolb writes \"Refutation of the Sects\" (Yeghts Aghandots) — the first original Armenian philosophical work. He systematically critiques paganism, Zoroastrianism, Greek philosophy, and Marcionism from a Christian perspective. The treatise demonstrates the intellectual sophistication of the 5th-century Armenian literary renaissance sparked by Mashtots' alphabet. Eznik studied in Edessa and Constantinople before returning to Armenia, bringing back Greek and Syriac manuscripts for translation.",
       "description_ru": "Езник Кохбаци пишет «Опровержение ересей» — первое оригинальное армянское философское произведение. Он систематически критикует язычество, зороастризм, греческую философию и маркионизм с христианской точки зрения. Трактат демонстрирует интеллектуальную утончённость армянского литературного возрождения V века. Езник учился в Эдессе и Константинополе, привез в Армению греческие и сирийские рукописи для перевода.",
       "era": "AD",
@@ -1702,6 +1682,26 @@
         "Culture",
         "Literature",
         "Philosophy",
+        "Writing"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0440",
+      "description": "Movses Khorenatsi writes the History of Armenia — the first comprehensive national history of any people, tracing Armenian origins from Biblical times through the 5th century AD. He preserves the pre-Christian epics of Hayk (legendary ancestor who defeats the Babylonian giant Bel), Aram (eponymous hero), and the birth hymn of Vahagn. His work establishes the Armenian historical narrative: a people chosen by God, defined by language and faith, resilient under foreign rule. Despite modern scholarly debate about his exact dating, his history remains foundational to Armenian identity. The period of Khorenatsi's life and the time of writing of the history remain a subject of debate; the canon defines him as student of Mashtots.",
+      "description_ru": "Мовсес Хоренаци пишет «Историю Армении» — первую всеобъемлющую национальную историю любого народа, прослеживающую армянские истоки от библейских времён до V века. Он сохраняет дохристианские эпосы о Хайке (легендарный предок, победивший вавилонского великана Бела), Араме (герой-эпоним) и гимн рождения Ваагна. Его труд формирует армянский исторический нарратив: избранный Богом народ, определяемый языком и верой, стойкий под иностранным владычеством. Период жизни Хоренаци и время написания истории остаются предметом споров; канон называет его учеником Маштоца.",
+      "era": "AD",
+      "latitude": 40.1614,
+      "longitude": 44.2911,
+      "name": "Khorenatsi's History of Armenia Written",
+      "name_ru": "Хоренаци пишет «Историю Армении»",
+      "source": "https://en.wikipedia.org/wiki/Movses_Khorenatsi",
+      "tags": [
+        "Armenian",
+        "Uncertain",
+        "Culture",
+        "History",
+        "Literature",
         "Writing"
       ],
       "type": "cultural"

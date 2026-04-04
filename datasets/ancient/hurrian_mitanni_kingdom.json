@@ -70,9 +70,10 @@
       "source": "https://www.thecollector.com/mitanni-kingdom-bronze-age-superpower/",
       "tags": [
         "Mitanni",
-        "War",
+        "Aristocracy",
         "Cavalry",
         "Indo-Aryan",
+        "Military",
         "Science"
       ],
       "type": "military"
@@ -316,20 +317,21 @@
     },
     {
       "date": "01.01.1370",
-      "description": "Tushratta becomes king of Mitanni after death of Shuttarna II, last independent ruler of the kingdom",
-      "description_ru": "Тушратта становится царем Митанни после смерти Шуттарны II, последний независимый правитель царства",
+      "description": "The Mitanni king Tushratta, who considered Ishwa his fiefdom, marched his troops north and invaded Isuwa. As a result of this campaign, Tushratta seized considerable spoils of war and apparently liberated the entire territory of Isuwa.",
+      "description_ru": "Царь Митанни Тушратта, который считал Ишуву своей вотчиной, двинул войска на север и вторгся в Ишуву. В результате этого похода Тушратта захватил большую военную добычу и, очевидно, освободил всю территорию Ишувы.",
       "era": "BC",
-      "latitude": 36.85,
-      "longitude": 40.5,
-      "name": "Accession of King Tushratta",
-      "name_ru": "Тушратта - последний царь Митанни",
-      "source": "https://www.britannica.com/place/Mitanni",
+      "latitude": 38.67210882,
+      "longitude": 39.22050476,
+      "name": "Mitanni defeats Hatti in Isuwa",
+      "name_ru": "Митанни выгоняют хеттов из Ишувы",
+      "source": "https://en.wikipedia.org/wiki/Isuwa",
       "tags": [
         "Mitanni",
-        "Dynasty",
-        "King"
+        "Hittite",
+        "War",
+        "Conquest"
       ],
-      "type": "political"
+      "type": "military"
     },
     {
       "date": "01.01.1370",
@@ -350,21 +352,20 @@
     },
     {
       "date": "01.01.1370",
-      "description": "The Mitanni king Tushratta, who considered Ishwa his fiefdom, marched his troops north and invaded Isuwa. As a result of this campaign, Tushratta seized considerable spoils of war and apparently liberated the entire territory of Isuwa.",
-      "description_ru": "Царь Митанни Тушратта, который считал Ишуву своей вотчиной, двинул войска на север и вторгся в Ишуву. В результате этого похода Тушратта захватил большую военную добычу и, очевидно, освободил всю территорию Ишувы.",
+      "description": "Tushratta becomes king of Mitanni after death of Shuttarna II, last independent ruler of the kingdom",
+      "description_ru": "Тушратта становится царем Митанни после смерти Шуттарны II, последний независимый правитель царства",
       "era": "BC",
-      "latitude": 38.67210882,
-      "longitude": 39.22050476,
-      "name": "Mitanni defeats Hatti in Isuwa",
-      "name_ru": "Митанни выгоняют хеттов из Ишувы",
-      "source": "https://en.wikipedia.org/wiki/Isuwa",
+      "latitude": 36.85,
+      "longitude": 40.5,
+      "name": "Accession of King Tushratta",
+      "name_ru": "Тушратта - последний царь Митанни",
+      "source": "https://www.britannica.com/place/Mitanni",
       "tags": [
         "Mitanni",
-        "Hittite",
-        "War",
-        "Conquest"
+        "Dynasty",
+        "King"
       ],
-      "type": "military"
+      "type": "political"
     },
     {
       "date": "01.01.1360",
@@ -760,9 +761,9 @@
       "source": "https://www.thecollector.com/mitanni-kingdom-bronze-age-superpower/",
       "tags": [
         "Mitanni",
-        "War",
         "Cultural Continuity",
         "Legacy",
+        "Military",
         "Science"
       ],
       "type": "military"

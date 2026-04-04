@@ -185,24 +185,6 @@
       "type": "military"
     },
     {
-      "date": "01.01.0595",
-      "description": "Babylonian astronomers establish systematic celestial observation program, recording planetary positions and eclipses with unprecedented accuracy for centuries",
-      "description_ru": "Вавилонские астрономы устанавливают систематическую программу небесных наблюдений, записывая положения планет и затмения с беспрецедентной точностью на протяжении веков",
-      "era": "BC",
-      "latitude": 32.543,
-      "longitude": 44.421,
-      "name": "Babylonian Astronomical Observations",
-      "name_ru": "Вавилонские астрономические наблюдения",
-      "source": "https://en.wikipedia.org/wiki/Babylonian_astronomy",
-      "tags": [
-        "Babylonian",
-        "Chaldean",
-        "Astronomy",
-        "Science"
-      ],
-      "type": "scientific"
-    },
-    {
       "date": "01.01.0590",
       "description": "Construction of Hanging Gardens of Babylon reportedly completed, one of Seven Wonders of Ancient World, built by Nebuchadnezzar for his Median wife Amytis",
       "description_ru": "Строительство Висячих садов Вавилона предположительно завершено, одно из Семи чудес древнего мира, построенное Навуходоносором для его мидийской жены Амитис",
@@ -290,25 +272,6 @@
     },
     {
       "date": "01.01.0575",
-      "description": "Processional Way of Babylon completed, grand avenue lined with walls of glazed bricks decorated with 120 lions, connecting Ishtar Gate to Esagila temple",
-      "description_ru": "Процессионный путь Вавилона завершён, величественный проспект, обрамлённый стенами из глазурованного кирпича, украшенными 120 львами, соединяющий ворота Иштар с храмом Эсагила",
-      "era": "BC",
-      "latitude": 32.543,
-      "longitude": 44.421,
-      "name": "Processional Way of Babylon",
-      "name_ru": "Процессионный путь Вавилона",
-      "source": "https://en.wikipedia.org/wiki/Processional_Way",
-      "tags": [
-        "Babylonian",
-        "Chaldean",
-        "Architecture",
-        "Art",
-        "Nebuchadnezzar II 👑"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0575",
       "description": "Ishtar Gate completed in Babylon, magnificent ceremonial entrance decorated with glazed blue bricks and bas-reliefs of dragons and bulls, masterpiece of ancient architecture",
       "description_ru": "Ворота Иштар завершены в Вавилоне, великолепный церемониальный вход, украшенный глазурованным синим кирпичом и барельефами драконов и быков, шедевр древней архитектуры",
       "era": "BC",
@@ -321,6 +284,25 @@
         "Babylonian",
         "Chaldean",
         "Building 🏠",
+        "Architecture",
+        "Art",
+        "Nebuchadnezzar II 👑"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0575",
+      "description": "Processional Way of Babylon completed, grand avenue lined with walls of glazed bricks decorated with 120 lions, connecting Ishtar Gate to Esagila temple",
+      "description_ru": "Процессионный путь Вавилона завершён, величественный проспект, обрамлённый стенами из глазурованного кирпича, украшенными 120 львами, соединяющий ворота Иштар с храмом Эсагила",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Processional Way of Babylon",
+      "name_ru": "Процессионный путь Вавилона",
+      "source": "https://en.wikipedia.org/wiki/Processional_Way",
+      "tags": [
+        "Babylonian",
+        "Chaldean",
         "Architecture",
         "Art",
         "Nebuchadnezzar II 👑"
@@ -390,24 +372,6 @@
     },
     {
       "date": "01.01.0562",
-      "description": "Amel-Marduk (Evil-Merodach) becomes king of Babylon, releasing exiled Judean King Jehoiachin from prison and treating him with honor at royal court",
-      "description_ru": "Амель-Мардук (Эвил-Меродах) становится царём Вавилона, освобождая изгнанного иудейского царя Иехонию из тюрьмы и обращаясь с ним почётно при царском дворе",
-      "era": "BC",
-      "latitude": 32.543,
-      "longitude": 44.421,
-      "name": "Reign of Amel-Marduk",
-      "name_ru": "Амель-Мардук - царь Вавилона",
-      "source": "https://en.wikipedia.org/wiki/Amel-Marduk",
-      "tags": [
-        "Babylonian",
-        "Judaic",
-        "Chaldean",
-        "King"
-      ],
-      "type": "political"
-    },
-    {
-      "date": "01.01.0562",
       "description": "Death of Nebuchadnezzar II after 43-year reign, longest of Chaldean dynasty, leaving empire at zenith of power but succession uncertain",
       "description_ru": "Смерть Навуходоносора II после 43-летнего правления, самого длительного в халдейской династии, оставляя империю на вершине могущества, но с неопределённым престолонаследием",
       "era": "BC",
@@ -421,6 +385,24 @@
         "Chaldean",
         "Death",
         "Nebuchadnezzar II 👑"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0562",
+      "description": "Amel-Marduk (Evil-Merodach) becomes king of Babylon, releasing exiled Judean King Jehoiachin from prison and treating him with honor at royal court",
+      "description_ru": "Амель-Мардук (Эвил-Меродах) становится царём Вавилона, освобождая изгнанного иудейского царя Иехонию из тюрьмы и обращаясь с ним почётно при царском дворе",
+      "era": "BC",
+      "latitude": 32.543,
+      "longitude": 44.421,
+      "name": "Reign of Amel-Marduk",
+      "name_ru": "Амель-Мардук - царь Вавилона",
+      "source": "https://en.wikipedia.org/wiki/Amel-Marduk",
+      "tags": [
+        "Babylonian",
+        "Judaic",
+        "Chaldean",
+        "King"
       ],
       "type": "political"
     },
