@@ -1,0 +1,520 @@
+{
+  "description": "China after the Han dynasty spans 369 years of division, cultural transformation, and eventual reunification. The dataset covers four major periods. The Three Kingdoms (三国, 220–280 AD) — Wei, Shu Han, and Wu — are the most romanticised era in Chinese culture: Zhuge Liang's brilliant but ultimately futile northern campaigns, the Sima clan's patient accumulation of power, and the brief Jin reunification. The Western Jin (西晋, 265–316 AD) collapses catastrophically under the War of the Eight Princes and the Five Barbarians invasions, producing the Yongjia Catastrophe and the flight of the Chinese aristocracy southward. The Eastern Jin and Sixteen Kingdoms period (317–420 AD) sees Chinese civilisation preserved at Jiankang (modern Nanjing) while the north fragments into successive barbarian states; it produces the Fei River miracle, Wang Xizhi's calligraphy, and the first Chinese Buddhist pilgrimage to India. The Northern and Southern Dynasties (南北朝, 420–589 AD) are the great age of Buddhist cave art — Yungang and Longmen — and the philosophical transformation of Chinese Buddhism through Kumarajiva's translations and Bodhidharma's Chan. The dataset closes with Yang Jian's founding of the Sui dynasty and his reunification of China in 589 AD after 370 years of division.",
+  "events": [
+    {
+      "date": "01.01.0221",
+      "era": "AD",
+      "name": "Liu Bei Proclaims Shu Han — The Three Kingdoms Fully Formed",
+      "name_ru": "Лю Бэй провозглашает Шу Хань — окончательное оформление Троецарствия",
+      "description": "Liu Bei (刘备), a distant imperial Han descendant who has been fighting for twenty years to restore the Han dynasty, proclaims himself emperor of Han at Chengdu (成都) in modern Sichuan, naming his state Shu Han (蜀汉) to assert continuity with the legitimate Han line. He refuses to recognise Cao Pi's Wei as legitimate, treating it as a usurping state. Within weeks he launches a catastrophic personal campaign into Wu to avenge the death of his sworn brothers Guan Yu (关羽) and Zhang Fei (张飞), both killed the previous year. His chancellor Zhuge Liang (诸葛亮) advises against the campaign, arguing that the alliance with Wu against Wei is more strategically vital than revenge.\n\nThe Three Kingdoms configuration — Wei in the north (controlling the Yellow River basin and the Han population heartland), Shu Han in the southwest (controlling Sichuan's agricultural wealth but geographically isolated), and Wu in the southeast (controlling the Yangtze and maritime trade) — represents a genuine strategic deadlock that none of the three can break. All three states are run by highly capable administrators and generals; all three know this. The deadlock will last sixty years.",
+      "description_ru": "Лю Бэй (刘备), дальний потомок императорского дома Хань, воевавший двадцать лет за восстановление династии Хань, провозглашает себя императором Хань в Чэнду (成都) в современной провинции Сычуань, называя своё государство Шу Хань (蜀汉), чтобы утвердить преемственность с легитимной линией Хань. Он отказывается признавать Вэй Цао Пи законным, считая его узурпаторским государством. Его канцлер Чжугэ Лян (诸葛亮) советует против личного похода в У за месть, утверждая, что союз с У против Вэй стратегически важнее.\n\nКонфигурация Трёх царств — Вэй на севере, Шу Хань на юго-западе, У на юго-востоке — представляет подлинный стратегический тупик, который ни одно из трёх государств не может преодолеть. Все три управляются весьма компетентными администраторами и полководцами; все три это осознают. Тупик продлится шестьдесят лет.",
+      "latitude": 30.57,
+      "longitude": 104.07,
+      "source": "https://en.wikipedia.org/wiki/Liu_Bei",
+      "tags": [
+        "Chinese",
+        "Three Kingdoms",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0222",
+      "era": "AD",
+      "name": "Battle of Xiaoting — Wu Destroys Shu's Army, Liu Bei Dies",
+      "name_ru": "Битва при Сяотин — У уничтожает армию Шу, смерть Лю Бэя",
+      "description": "Liu Bei's personal revenge campaign against Wu ends in total defeat at Xiaoting (猇亭, near modern Yichang, Hubei) on the Yangtze gorges. The Wu general Lu Xun (陆逊) refuses to engage the advancing Shu army for months, allowing Liu Bei to spread his camps across 700 li along the gorge banks. Then in summer, Lu Xun uses fire: the camps ignite, and the Shu army — 40,000 strong — is destroyed. Liu Bei retreats to the fortress at Baidicheng (白帝城, White Emperor City) and never leaves. He dies there in 223 AD, entrusting his young son Liu Shan (刘禅) and the entire Shu state to Zhuge Liang in a bedside scene that becomes the canonical Chinese depiction of loyal political trust.\n\nLiu Bei's charge to Zhuge Liang — 'If my son is capable, assist him; if he is not capable, take the throne yourself' (若嗣子可辅，辅之；如其不才，君可自取) — and Zhuge Liang's tearful refusal are among the most quoted exchanges in Chinese political literature, representing the ideal of the loyal minister who could have been emperor but chooses service instead.",
+      "description_ru": "Личный поход Лю Бэя на У за месть заканчивается полным поражением при Сяотин (猇亭, близ совр. Ичана, Хубэй) в ущельях Янцзы. Полководец У Лу Синь (陆逊) месяцами отказывается вступать в схватку с наступающей армией Шу, позволяя Лю Бэю растянуть лагери на 700 ли вдоль берегов ущелья. Затем летом Лу Синь применяет огонь: лагери вспыхивают, и армия Шу уничтожена. Лю Бэй отступает в крепость Байдичэн (白帝城) и больше никогда её не покидает.\n\nНаказ Лю Бэя Чжугэ Ляну — «Если сын способен, помогай ему; если неспособен — займи трон сам» (若嗣子可辅，辅之；如其不才，君可自取) — и слёзный отказ Чжугэ Ляна входят в число наиболее цитируемых обменов в китайской политической литературе.",
+      "latitude": 30.78,
+      "longitude": 110.95,
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Xiaoting",
+      "tags": [
+        "Chinese",
+        "Three Kingdoms",
+        "Warfare"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0228",
+      "era": "AD",
+      "name": "Zhuge Liang's Northern Expeditions — Strategy Against Geography",
+      "name_ru": "Северные экспедиции Чжугэ Ляна — стратегия против географии",
+      "description": "Zhuge Liang (诸葛亮), chancellor of Shu Han, launches the first of five Northern Expeditions (北伐 Běifá) against Wei, crossing the Qinling Mountains to attack the Wei heartland in Guanzhong (关中). The strategic rationale is explicit in his 'Memorial on Departure to War' (出师表 Chūshī Biǎo): Shu Han cannot afford to wait for Wei to consolidate, since Wei's population and resources dwarf Shu's; aggressive northern campaigning is the only chance for a state that must act before demography renders it permanently inferior. The Wei general Sima Yi (司马懿) responds with systematic avoidance — refusing battle, fortifying, waiting for Shu's supply lines to fail.\n\nThe campaigns are military masterpieces of logistics and mountain warfare that ultimately accomplish nothing strategically: Shu cannot break into the Guanzhong plain, Wei refuses to be drawn into a decisive battle, and Shu's supply lines through the Qinling are too fragile for sustained operations. The expeditions are celebrated in Chinese culture as the supreme example of righteous struggle against overwhelming odds — admired not because they succeeded but because they were fought with absolute integrity.",
+      "description_ru": "Чжугэ Лян (诸葛亮), канцлер Шу Хань, начинает первую из пяти Северных экспедиций (北伐 Бэйфа) против Вэй, переходя горы Циньлин для удара по центру Вэй в Гуаньчжун (关中). Стратегическое обоснование изложено в его «Мемориале перед отправлением на войну» (出师表 Чушибяо): Шу Хань не может ждать, пока Вэй консолидируется, поскольку население и ресурсы Вэй несопоставимы с шускими. Полководец Вэй Сыма И (司马懿) отвечает методичным уклонением — отказом от битвы, укреплением позиций, ожиданием провала линий снабжения Шу.\n\nКампании восхваляются в китайской культуре как высший пример праведной борьбы против подавляющих противостоящих сил — восхищение вызывает не успех, а то, что они велись с абсолютной честностью.",
+      "latitude": 34.34,
+      "longitude": 107.42,
+      "source": "https://en.wikipedia.org/wiki/Zhuge_Liang%27s_Northern_Expeditions",
+      "tags": [
+        "Chinese",
+        "Three Kingdoms",
+        "Warfare"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.09.0234",
+      "era": "AD",
+      "name": "Death of Zhuge Liang at Wuzhang Plains",
+      "name_ru": "Смерть Чжугэ Ляна на равнинах Учжанюань",
+      "description": "Zhuge Liang dies of illness at Wuzhang Plains (五丈原, near modern Baoji, Shaanxi) during his fifth and final Northern Expedition, after months of fruitless standoff with Sima Yi's fortified army. He is 54 years old. The Shu army retreats in perfect order; Sima Yi, upon seeing the formations and equipment Zhuge Liang leaves behind, reportedly says 'Zhuge Liang was a heavenly genius; I am merely mortal.' He abandons his plan to pursue. The retreat completes so precisely that a Wei officer who saw it coin the phrase 'a dead Zhuge Liang puts living Zhongda to flight' (死诸葛吓走活仲达).\n\nZhuge Liang's legacy — statesman, strategist, inventor (attributed with the repeating crossbow 连弩, the wooden ox supply cart 木牛流马, and improvements to the land mine), and moral exemplar — becomes the canonical Chinese image of the ideal scholar-official. His 'Memorial on Departure' (出师表) is memorised by generations of Chinese schoolchildren as the highest example of loyal dedication to a cause known to be lost. He is deified after death as the God of Wisdom (智圣).",
+      "description_ru": "Чжугэ Лян умирает от болезни на равнинах Учжанюань (五丈原, близ совр. Баоцзи, Шэньси) в ходе пятой и последней Северной экспедиции. Ему 54 года. Армия Шу отступает в идеальном порядке; Сыма И, увидев оставленные Чжугэ Ляном построения и снаряжение, говорит: «Чжугэ Лян — небесный гений; я лишь смертный». Он отказывается от преследования.\n\nНаследие Чжугэ Ляна — государственного деятеля, стратега, изобретателя (ему приписываются скорострельный арбалет 连弩, повозка-деревянный бык 木牛流马 и улучшения сухопутных мин) и нравственного образца — становится каноническим китайским образом идеального учёного-чиновника. Его «Мемориал» (出师表) заучивается поколениями китайских школьников. Посмертно он обожествлён как Бог Мудрости (智圣).",
+      "latitude": 34.34,
+      "longitude": 107.42,
+      "source": "https://en.wikipedia.org/wiki/Zhuge_Liang",
+      "tags": [
+        "Chinese",
+        "Three Kingdoms",
+        "Legend",
+        "Holy Site"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0249",
+      "era": "AD",
+      "name": "Gaopingling Coup — Sima Yi Seizes Wei",
+      "name_ru": "Переворот Гаопинлин — Сыма И захватывает власть над Вэй",
+      "description": "While the Wei regent Cao Shuang (曹爽) accompanies the young emperor on a ceremonial visit to the imperial tombs at Gaopingling (高平陵), the aged general Sima Yi — thought to be in retirement and near death — seizes the imperial capital Luoyang with a coup, closes the city gates, and presents Cao Shuang with a demand to surrender power. Cao Shuang, out of the capital and without troops, accepts surrender on promises of lenient treatment. Sima Yi executes him and his entire clan within weeks. The coup transfers real power over Wei entirely to the Sima family.\n\nThe Gaopingling coup is the moment the Jin dynasty actually begins, though it is not formally proclaimed for sixteen more years. Sima Yi's subsequent characterisation in Chinese cultural tradition — as a man who spent decades in apparent loyal service while patiently waiting for the single opportunity to seize control — makes him the archetypal figure of long-term political patience and concealed ambition, compared unfavourably with Zhuge Liang's transparent loyalty by later Confucian commentators.",
+      "description_ru": "Пока регент Вэй Цао Шуан (曹爽) сопровождает молодого императора на церемониальный визит к гробницам Гаопинлин (高平陵), пожилой полководец Сыма И — считавшийся удалившимся на покой и близким к смерти — захватывает имперскую столицу Луоян переворотом, закрывает ворота города и предъявляет Цао Шуану требование сдать власть. Цао Шуан, вне столицы и без войск, принимает капитуляцию при обещании снисхождения. Сыма И казнит его и весь его клан в течение нескольких недель.\n\nПереворот Гаопинлин — момент, когда династия Цзинь фактически начинается, хотя официально провозглашается лишь шестнадцать лет спустя. Образ Сыма И в китайской культурной традиции — человека, десятилетиями притворявшегося в лояльной службе — делает его архетипом долгосрочного политического терпения и скрытого честолюбия.",
+      "latitude": 34.68,
+      "longitude": 112.45,
+      "source": "https://en.wikipedia.org/wiki/Sima_Yi",
+      "tags": [
+        "Chinese",
+        "Three Kingdoms",
+        "Dynasty",
+        "Legend"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.11.0263",
+      "era": "AD",
+      "name": "Wei Conquers Shu Han — The First Kingdom Falls",
+      "name_ru": "Вэй завоёвывает Шу Хань — падение первого царства",
+      "description": "The Wei general Deng Ai (邓艾) leads an audacious winter crossing of the Yinping trail (阴平道) — a supposedly impassable mountain route — with 2,000 men, descending into Sichuan behind the main Shu defensive line. He rolls in felt blankets down icy slopes where the path disappears, an act of individual bravery that outflanks the entire Shu defence. The Shu emperor Liu Shan (刘禅), faced with Deng Ai's force at the gates of Chengdu while the main Wei army simultaneously threatens from the north, surrenders without a final defence. Forty-three years of the Shu Han state ends.\n\nLiu Shan's surrender is controversial in Chinese historiography: some condemn him as a coward who threw away what Zhuge Liang sacrificed everything to preserve; others note that he avoided a massacre of Chengdu's population. His subsequent behaviour in Wei captivity — responding to a Wei minister's question about whether he missed Shu with 'This place is so pleasant, I have no thoughts of Shu' (此间乐，不思蜀) — provides the Chinese idiom 乐不思蜀 ('too content to think of home') for someone who has abandoned their principles.",
+      "description_ru": "Полководец Вэй Дэн Ай (邓艾) ведёт дерзкий зимний переход по тропе Иньпин (阴平道) — якобы непроходимому горному пути — с 2000 человек, спускаясь в Сычуань в тыл главной линии обороны Шу. Он скатывается в войлочных одеялах по ледяным склонам, где тропа исчезает. Шуский император Лю Чань (刘禅), столкнувшись с силами Дэн Ая у ворот Чэнду, сдаётся без последней обороны. Сорок три года государства Шу Хань заканчиваются.\n\nКапитуляция Лю Чаня спорна в китайской историографии. Его последующее поведение в плену в Вэй — ответ на вопрос о тоске по Шу: «Здесь так хорошо, что я не думаю о Шу» (此间乐，不思蜀) — даёт китайский идиом 乐不思蜀 («слишком доволен, чтобы думать о доме») для обозначения человека, бросившего свои принципы.",
+      "latitude": 30.57,
+      "longitude": 104.07,
+      "source": "https://en.wikipedia.org/wiki/Conquest_of_Shu_by_Wei",
+      "tags": [
+        "Chinese",
+        "Three Kingdoms",
+        "Warfare",
+        "Dynasty"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.02.0265",
+      "era": "AD",
+      "name": "Sima Yan Founds Western Jin — The Three Kingdoms End",
+      "name_ru": "Сыма Янь основывает Западную Цзинь — конец Троецарствия",
+      "description": "Sima Yan (司马炎), grandson of Sima Yi, deposes the last Wei emperor Cao Huan (曹奂) and proclaims the Jin dynasty (晋朝), becoming Emperor Wu of Jin (晋武帝). He reverses the Qin and Han policy of centralised commanderies, granting enormous territorial fiefdoms to members of the Sima royal family — a decision made partly to pre-empt the scenario where a single powerful minister, as Sima Yi had been, could seize the throne. This decision will prove catastrophically counterproductive: the very princes empowered to protect the dynasty will tear it apart.\n\nJin is a dynasty with an unusual founding problem: the Sima family achieved power through prolonged deception and coup, not through obvious dynastic mandate or popular acclaim. Emperor Wu attempts to paper over this legitimacy deficit through spectacular displays of Confucian virtue and lavish court ceremonial. He succeeds superficially — the Jin court is famous for its cultural achievement and aristocratic refinement — but the institutional rot of over-powerful princes and a pleasure-seeking emperor after Wu means the dynasty is structurally compromised from its first generation.",
+      "description_ru": "Сыма Янь (司马炎), внук Сыма И, низлагает последнего вэйского императора Цао Хуаня (曹奂) и провозглашает династию Цзинь (晋朝), становясь императором У Цзинь (晋武帝). Он отменяет политику централизованных округов, жалуя огромные территориальные феоды членам царского рода Сыма — решение, призванное предотвратить сценарий с единым могущественным министром. Это решение окажется катастрофически контрпродуктивным.\n\nЦзинь — династия с необычной проблемой легитимности: род Сыма достиг власти через затяжной обман и переворот. Двор Цзинь знаменит культурными достижениями и аристократическим изяществом — однако институциональная гниль в виде чрезмерно могущественных принцев означает, что династия структурно скомпрометирована с первого поколения.",
+      "latitude": 34.68,
+      "longitude": 112.45,
+      "source": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Jin",
+      "tags": [
+        "Chinese",
+        "Jin",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0280",
+      "era": "AD",
+      "name": "Jin Conquers Wu — China Briefly Reunified",
+      "name_ru": "Цзинь завоёвывает У — Китай на краткий миг объединён",
+      "description": "Jin launches a six-column riverine campaign against the Eastern Wu kingdom: a massive chain and underwater iron obstacle blocking the Yangtze is destroyed by fire rafts, and the Jin fleet sails through. The Wu emperor Sun Hao (孙皓) — notorious for brutal entertainments including gouging out the eyes of officials who displeased him — surrenders. After sixty years of the Three Kingdoms division and sixteen years since the fall of Shu Han, China is briefly reunified under the Jin dynasty. The reunification lasts eleven years before the War of the Eight Princes tears it apart.\n\nThe conquest of Wu completes the Three Kingdoms cycle. The poet Wang Yan (王胡之) writes at the capture of Wu's capital Jianye: 'North and south are one household again; the four seas are at peace' — a sentiment that will prove premature. Emperor Wu begins immediately distributing territories to his 27 sons, each of whom will be a major actor in the coming civil war. The Jin court enters a decade of conspicuous prosperity and cultural achievement that masks the structural crisis building underneath.",
+      "description_ru": "Цзинь развёртывает шестиколонную речную кампанию против Восточного У: массивная цепь и подводные железные заграждения, перегораживающие Янцзы, уничтожены огневыми плотами, и флот Цзинь проходит. Уский император Сунь Хао (孙皓) — известный жестокими развлечениями, включая вырывание глаз у неугодивших чиновников, — сдаётся. После шестидесяти лет раздела Троецарствия Китай кратко воссоединён под Цзинь.\n\nВоссоединение продлится одиннадцать лет, прежде чем Война восьми принцев разрушит его. Двор Цзинь вступает в десятилетие демонстративного процветания и культурных достижений, скрывающих нарастающий структурный кризис.",
+      "latitude": 32.06,
+      "longitude": 118.79,
+      "source": "https://en.wikipedia.org/wiki/Conquest_of_Wu_by_Jin",
+      "tags": [
+        "Chinese",
+        "Jin",
+        "Dynasty",
+        "Warfare"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0291",
+      "era": "AD",
+      "name": "War of the Eight Princes — Jin Tears Itself Apart",
+      "name_ru": "Война восьми принцев — Цзинь разрывает себя",
+      "description": "The War of the Eight Princes (八王之乱 Bā Wáng zhī Luàn) erupts as a succession crisis among the sons and grandsons of Emperor Wu, who had distributed territory and military power precisely so that no single minister could dominate the throne — but inadvertently created eight mutually hostile princes each capable of independent military action. The insane Emperor Hui (晋惠帝) and his notoriously scheming empress Jia Nanfeng (贾南风) are the initial catalysts; the empress's execution of the Crown Prince provokes the first princely coalitions. Over sixteen years, seven of the eight principal princes are killed, the capital Luoyang is besieged and sacked three times by different factions, and the agricultural heartland of the Yellow River basin is devastated.\n\nThe War of the Eight Princes destroys the military capacity of the Jin state entirely and depopulates the central plains. The frontier armies — many consisting of Xiongnu, Xianbei, Di, Jie, and Qiang troops whose generals had been given land and titles inside China — observe the civil war and conclude that the moment for independent action has arrived. Five of these peoples will carve the north into fragments in the next generation.",
+      "description_ru": "Война восьми принцев (八王之乱 Ба Ван чжи Луань) вспыхивает как кризис преемственности среди сыновей и внуков императора У, распределившего территории и военную власть так, что ни один министр не мог господствовать, — но случайно создавшего восемь взаимно враждебных принцев, каждый с независимыми военными силами. За шестнадцать лет семь из восьми главных принцев убиты, столица Луоян трижды осаждена и разграблена разными фракциями, а сельскохозяйственное сердце бассейна Жёлтой реки опустошено.\n\nВойна восьми принцев полностью уничтожает военный потенциал Цзинь. Приграничные армии — многие состоящие из войск сюнну, сяньби, ди, цзе и цян — наблюдают гражданскую войну и приходят к выводу, что момент для независимых действий настал.",
+      "latitude": 34.68,
+      "longitude": 112.45,
+      "source": "https://en.wikipedia.org/wiki/War_of_the_Eight_Princes",
+      "tags": [
+        "Chinese",
+        "Jin",
+        "Warfare"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0304",
+      "era": "AD",
+      "name": "Liu Yuan Proclaims Han Zhao — The Five Barbarians Enter",
+      "name_ru": "Лю Юань провозглашает Хань Чжао — вход пяти варваров",
+      "description": "Liu Yuan (刘渊), a Xiongnu chieftain who has lived at the Jin court as a political hostage and received a Chinese education, exploits the chaos of the War of the Eight Princes to proclaim a restored Han dynasty (he claims descent from Liu Bang through a Han princess given to the Xiongnu in the heqin period). His proclamation opens the era known as the 'Disorder of the Five Barbarians' (五胡乱华 Wǔ Hú Luàn Huá): the five peoples — Xiongnu (匈奴), Xianbei (鲜卑), Jie (羯), Di (氐), and Qiang (羌) — who have lived inside China's frontiers for generations begin founding independent states.\n\nThe 'Five Barbarians' framing is a Jin Chinese perspective: these peoples were not raiders invading from outside but populations long settled inside the empire's administrative boundaries, their military commanders holding Jin titles. The period they inaugurate — 304 to 439 AD — sees 16 states rise and fall in northern China. Chinese aristocratic families flee south by the millions. The north's written Chinese culture, however, is not destroyed: most of the 'barbarian' rulers are avid adopters of Chinese administrative practices and Confucian legitimation.",
+      "description_ru": "Лю Юань (刘渊), вождь сюнну, живший при дворе Цзинь в качестве политического заложника и получивший китайское образование, используя хаос Войны восьми принцев, провозглашает восстановленную династию Хань (претендуя на происхождение от Лю Бана через ханьскую принцессу, отданную сюнну в период хэцинь). Его провозглашение открывает эпоху, известную как «Смута пяти варваров» (五胡乱华 У Ху Луань Хуа): пять народов — сюнну, сяньби, цзе, ди и цян — веками жившие внутри границ Китая, начинают основывать независимые государства.\n\n«Пять варваров» — взгляд цзиньского Китая: эти народы были не захватчиками извне, а населением, давно осевшим внутри административных границ империи. Большинство «варварских» правителей — активные восприниматели китайских административных практик и конфуцианской легитимации.",
+      "latitude": 37.87,
+      "longitude": 112.55,
+      "source": "https://en.wikipedia.org/wiki/Uprising_of_the_Five_Barbarians",
+      "tags": [
+        "Chinese",
+        "Jin",
+        "Dynasty",
+        "Warfare"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0311",
+      "era": "AD",
+      "name": "Sack of Luoyang — The Yongjia Catastrophe",
+      "name_ru": "Разграбление Лояна — Катастрофа годов Юнцзя",
+      "description": "Han Zhao forces under Liu Cong (刘聪) capture and sack the Jin capital Luoyang, killing tens of thousands of its population. The Jin emperor Huai Di (晋怀帝) is taken prisoner, paraded in servant's clothes, forced to pour wine at banquets, and executed four years later after being used as a public humiliation. The Jin court's ceremonial vessels, archives, and imperial library — representing the institutional memory of the Han and Jin dynasties — are looted or destroyed. The event is known in Chinese historiography as the Yongjia Catastrophe (永嘉之乱 Yǒngjiā zhī Luàn), after the era name.\n\nThe shock to Chinese cultural memory is comparable to the sack of Rome in 410 AD. Northern China's gentry class — the 'eminent clans' (世族 shìzú) — begins a massive flight southward, carrying their genealogical records, libraries, and agricultural knowledge. This migration transports northern Chinese literary and administrative culture to the Yangtze basin, transforming the south from a lightly Sinicised frontier into the heartland of Chinese civilisation it will remain for the next eight centuries.",
+      "description_ru": "Силы Хань Чжао под командованием Лю Цуна (刘聪) захватывают и разграбляют столицу Цзинь Луоян, убивая десятки тысяч жителей. Цзиньский император Хуай Ди (晋怀帝) взят в плен, выставлен в одежде слуги, принуждён разливать вино на пирах и казнён четыре года спустя. Церемониальные сосуды, архивы и имперская библиотека — представляющие институциональную память династий Хань и Цзинь — разграблены или уничтожены.\n\nПотрясение для китайской культурной памяти сопоставимо с разграблением Рима в 410 г. н. э. Знатное сословие севера начинает массовое бегство на юг, унося родословные книги, библиотеки и агрономические знания. Эта миграция переносит северную китайскую литературную и административную культуру в бассейн Янцзы, превращая юг в сердце китайской цивилизации на следующие восемь веков.",
+      "latitude": 34.68,
+      "longitude": 112.45,
+      "source": "https://en.wikipedia.org/wiki/Yongjia_Incident",
+      "tags": [
+        "Chinese",
+        "Jin",
+        "Warfare"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0317",
+      "era": "AD",
+      "name": "Eastern Jin Founded at Jiankang — Chinese Civilisation Moves South",
+      "name_ru": "Основание Восточной Цзинь в Цзяньканe — китайская цивилизация перемещается на юг",
+      "description": "Sima Rui (司马睿), a distant Jin imperial relative, establishes the Eastern Jin court at Jiankang (建康, modern Nanjing) on the Yangtze, supported by the great northern aristocratic clans — particularly the Wang clan of Langye (琅琊王氏) — who have migrated south. Wang Dao (王导), of the Wang clan, is the actual architect of the Eastern Jin state, managing the relations between the suspicious northern refugees and the indigenous southern gentry families. A contemporary saying captures the power balance: 'The Wang and the Ma [imperial Sima] rule the empire together' (王与马，共天下).\n\nThe Eastern Jin is simultaneously a government in exile and a genuine state: it controls the prosperous Yangtze basin, maintains Chinese written culture and the Confucian examination system, patronises Buddhism and Daoism, and conducts periodic northern campaigns to 'restore the central plains' that never succeed. The tension between southern comfort and northern duty — between living well in Jiankang and keeping the impossible dream of reconquest alive — defines the Eastern Jin intellectually and politically for its entire 103 years.",
+      "description_ru": "Сыма Жуй (司马睿), дальний родственник цзиньского дома, основывает двор Восточной Цзинь в Цзяньканe (建康, совр. Нанкин) на Янцзы при поддержке великих северных аристократических кланов, мигрировавших на юг. Ван Дао (王导) из клана Ван — подлинный архитектор государства Восточная Цзинь. Современная поговорка отражает баланс сил: «Ваны и Ма [императорские Сыма] правят империей вместе» (王与马，共天下).\n\nВосточная Цзинь одновременно является правительством в изгнании и подлинным государством: она контролирует процветающий бассейн Янцзы, поддерживает китайскую письменную культуру и конфуцианскую систему экзаменов, покровительствует буддизму и даосизму. Напряжение между южным комфортом и северным долгом определяет Восточную Цзинь на протяжении всех 103 лет её существования.",
+      "latitude": 32.06,
+      "longitude": 118.79,
+      "source": "https://en.wikipedia.org/wiki/Eastern_Jin_dynasty",
+      "tags": [
+        "Chinese",
+        "Jin",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0320",
+      "era": "AD",
+      "name": "Ge Hong's Baopuzi — Daoist Alchemy and the Science of Longevity",
+      "name_ru": "«Баопуцзы» Гэ Хуна — даосская алхимия и наука о долголетии",
+      "description": "Ge Hong (葛洪), a southern Chinese scholar-official and alchemist, completes the Baopuzi (抱朴子, 'He Who Holds to Simplicity') — a comprehensive encyclopaedia of Daoist inner and outer alchemy, longevity techniques, and the medical and chemical knowledge of the period. The inner chapters (内篇) deal with alchemical elixirs, breathing exercises, dietary regimens, and sexual practices believed to extend life or achieve immortality (仙 xiān). The outer chapters (外篇) are a Confucian treatise on politics, society, and the author's biography.\n\nGe Hong's alchemical work, though aimed at immortality, produces one of the earliest records of practical chemistry: the Baopuzi contains the first known written account of gunpowder's precursor ingredients — saltpetre, charcoal, and pine resin combined. His medical knowledge, preserved in a separate work 'Prescriptions for Emergencies' (肘后备急方), includes the earliest description of smallpox, the first recorded use of artemisia plants against fever (the same plant family that yields artemisinin, the modern anti-malarial), and techniques for treating rabies.",
+      "description_ru": "Гэ Хун (葛洪), южнокитайский учёный-чиновник и алхимик, завершает «Баопуцзы» (抱朴子, «Тот, кто держится за простоту») — всеобъемлющую энциклопедию даосской внутренней и внешней алхимии, техник долголетия и медицинских и химических знаний эпохи. Алхимическая работа Гэ Хуна, хотя и направленная на бессмертие, производит одну из ранних записей практической химии: «Баопуцзы» содержит первое известное письменное описание предшественников пороха — селитры, угля и смолы сосны в сочетании.\n\nЕго медицинские знания, сохранённые в отдельном труде «Рецепты на неотложный случай» (肘后备急方), включают древнейшее описание оспы и первое зафиксированное применение полыни против лихорадки — того же семейства растений, что даёт современный противомалярийный артемизинин.",
+      "latitude": 23.13,
+      "longitude": 113.26,
+      "source": "https://en.wikipedia.org/wiki/Ge_Hong",
+      "tags": [
+        "Chinese",
+        "Jin"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "03.03.0353",
+      "era": "AD",
+      "name": "Wang Xizhi — The Orchid Pavilion Preface",
+      "name_ru": "Ван Сичжи — Предисловие к «Беседке орхидей»",
+      "description": "The calligrapher Wang Xizhi (王羲之), gathered with 41 scholars at the Orchid Pavilion (兰亭 Lántíng) near Shaoxing (Guiji) for the traditional spring purification ceremony, writes the preface (兰亭集序 Lántíng Jí Xù) to a collection of poems composed that day — 324 characters in semi-cursive script (行书 xíngshū). The text, written after wine and in a moment of spontaneous inspiration, is never successfully replicated by Wang Xizhi himself in later attempts; it is considered the supreme achievement of Chinese calligraphy and the founding work of the xingshu style. A later Tang emperor, Taizong, reportedly had the original buried with him.\n\nWang Xizhi's calligraphy represents a fundamental shift in Chinese aesthetic theory: he argues that calligraphy's beauty arises from the calligrapher's inner moral and emotional state at the moment of writing, not merely from technique. This makes each authentic piece of calligraphy a unique and unrepeatable expression of the writer's character — a view that transforms calligraphy from craft to fine art and elevates it to the highest rank in Chinese aesthetics, equal to or above painting and poetry.",
+      "description_ru": "Каллиграф Ван Сичжи (王羲之), собравшийся с 41 учёным в «Беседке орхидей» (兰亭 Ланьтин) близ Шаосина (Гуйцзи) на традиционный весенний обряд очищения, пишет предисловие (兰亭集序) к сборнику стихотворений, сочинённых в тот день, — 324 знака полукурсивным письмом (行书 синшу). Текст, написанный после вина и в момент спонтанного вдохновения, так и не был успешно повторён самим Ван Сичжи в последующих попытках; он считается высшим достижением китайской каллиграфии. Оригинал, по преданию, был похоронен с танским императором Тайцзуном.\n\nКаллиграфия Ван Сичжи представляет фундаментальный сдвиг в китайской эстетической теории: красота каллиграфии определяется внутренним нравственным и эмоциональным состоянием каллиграфа в момент написания, а не только техникой, что преобразует каллиграфию из ремесла в изящное искусство.",
+      "latitude": 30.02,
+      "longitude": 120.58,
+      "source": "https://en.wikipedia.org/wiki/Lantingji_Xu",
+      "tags": [
+        "Chinese",
+        "Jin",
+        "Writing",
+        "Holy Site"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0383",
+      "era": "AD",
+      "name": "Battle of Fei River — The Miracle that Saved the South",
+      "name_ru": "Битва при реке Фэй — чудо, спасшее Юг",
+      "description": "The Former Qin emperor Fu Jian (苻坚), having unified the north for the first time since the Jin collapse, launches a massive campaign to conquer the south with reportedly 870,000 troops. His Eastern Jin opponents have perhaps 80,000. The Jin general Xie Xuan (谢玄) requests that the Qin army pull back slightly from the Fei River bank to allow the Jin forces to cross and fight on open ground — a request Fu Jian grants, expecting the Jin to be overwhelmed in the open. As the Qin rear ranks begin pulling back, a rumour ('the Qin army is defeated!') ignites panic: a retreat becomes a rout. The Jin cross, attack, and destroy an army twenty times their size.\n\nFei River is the largest Chinese military reversal of fortune by odds ratio in any well-documented battle, and becomes the canonical example of the principle that morale and cohesion defeat numbers. Fu Jian's multi-ethnic northern coalition dissolves after the defeat: the Xianbei and other groups he had incorporated rebel, and the Former Qin state collapses within years, splintering back into a dozen successor states. The south remains independent Chinese for another two centuries.",
+      "description_ru": "Цяньциньский (Бывшая Цинь) император Фу Цзянь (苻坚), объединив север впервые со времён распада Цзинь, развёртывает масштабную кампанию по завоеванию юга, по сообщениям, с 870 000 войск. Его противники из Восточной Цзинь располагают примерно 80 000. Полководец Цзинь Се Сюань (谢玄) просит армию Цинь немного отступить от берега реки Фэй, чтобы позволить силам Цзинь переправиться. Фу Цзянь соглашается. Когда задние ряды Цинь начинают отступать, слух («армия Цинь разбита!») вызывает панику: отступление превращается в беспорядочное бегство.\n\nФэй-шуй — крупнейший в хорошо задокументированных китайских битвах разворот фортуны по соотношению сил и становится каноническим примером принципа, что боевой дух и сплочённость побеждают численность.",
+      "latitude": 31.72,
+      "longitude": 117.17,
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Fei_River",
+      "tags": [
+        "Chinese",
+        "Jin",
+        "Warfare",
+        "Legend"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0386",
+      "era": "AD",
+      "name": "Northern Wei Founded — The Tuoba Clan Unites the North",
+      "name_ru": "Основание Северной Вэй — клан Тоба объединяет Север",
+      "description": "Tuoba Gui (拓跋珪) founds the Northern Wei dynasty (北魏 Běi Wèi), beginning the consolidation of the north under the Xianbei Tuoba clan. Over the following 53 years, Northern Wei eliminates successive rival states — Later Yan, Later Qin, Northern Liang — until in 439 AD the last northern rival falls and Northern Wei rules all of China north of the Yangtze for the first time since the Jin collapse. The Tuoba rulers govern through a dual administrative system: traditional Xianbei tribal customs for their own people, and the Han Chinese administrative apparatus — courts, examinations, land registers — for the majority Chinese population.\n\nNorthern Wei's founding represents the beginning of the Northern Dynasties (北朝 Běi Cháo) and the model for how non-Chinese ruling dynasties will manage China: adopt the administrative machinery of the Chinese state while maintaining the military customs and identity of the ruling clan. This model — later perfected by the Mongol Yuan and Manchu Qing — proves administratively effective but culturally unstable, as the ruler faces constant pressure to choose between assimilation and distinctiveness.",
+      "description_ru": "Тоба Гуй (拓跋珪) основывает династию Северная Вэй (北魏 Бэй Вэй), начиная консолидацию севера под руководством сяньбийского клана Тоба. За следующие 53 года Северная Вэй устраняет последовательных соперников, пока в 439 г. н. э. не падает последний северный соперник и Северная Вэй не правит всем Китаем к северу от Янцзы.\n\nОснование Северной Вэй представляет начало Северных династий (北朝 Бэй Чао) и модель управления некитайских правящих династий Китаем: принятие административного аппарата китайского государства при сохранении военных обычаев и идентичности правящего клана. Эта модель — впоследствии усовершенствованная монгольской Юань и маньчжурской Цин — оказывается административно эффективной, но культурно нестабильной.",
+      "latitude": 40.08,
+      "longitude": 113.30,
+      "source": "https://en.wikipedia.org/wiki/Northern_Wei",
+      "tags": [
+        "Chinese",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0399",
+      "era": "AD",
+      "name": "Faxian Travels to India — The First Chinese Buddhist Pilgrimage",
+      "name_ru": "Фасянь отправляется в Индию — первое китайское буддийское паломничество",
+      "description": "The Buddhist monk Faxian (法显), aged approximately 65, departs from Chang'an with a group of companions to travel overland to India and retrieve authentic Buddhist scriptures — motivated by the poor quality and incompleteness of Chinese translations then available. He travels through the Gansu corridor, crosses the Taklamakan Desert and the Pamirs, traverses modern Afghanistan, reaches the Ganges Plain, visits the major Buddhist holy sites including Lumbini (Buddha's birthplace), Bodh Gaya (enlightenment site), Sarnath (first sermon), and Kushinagar (death site), and collects Sanskrit manuscripts. He returns by sea via Sri Lanka, sailing back to the Eastern Jin coast after fourteen years.\n\nFaxian's account, the 'Record of Buddhist Kingdoms' (佛国记 Fó Guó Jì), is the earliest surviving Chinese travel account of India and a primary source for Indian Buddhist history of the Gupta period — Indian sources for this era are sparse, and Faxian's descriptions of the Gupta Empire's administration, agriculture, and Buddhist institutions fill a significant historiographical gap. He inaugurates the tradition of Chinese Buddhist pilgrimage to India that will reach its culmination with Xuanzang in the Tang dynasty.",
+      "description_ru": "Буддийский монах Фасянь (法显), примерно 65 лет от роду, отбывает из Чанъани с группой спутников для путешествия в Индию за подлинными буддийскими писаниями. Он проходит через коридор Ганьсу, пересекает пустыню Такламакан и Памир, посещает главные буддийские святые места — Лумбини, Бодх-Гайю, Сарнатх и Кушинагар — и собирает санскритские рукописи. Он возвращается морским путём через Шри-Ланку через четырнадцать лет.\n\nОтчёт Фасяня, «Записки о буддийских царствах» (佛国记 Фо Го Цзи), является древнейшим сохранившимся китайским описанием Индии и первостепенным источником по индийской буддийской истории периода Гупта. Он открывает традицию китайского буддийского паломничества в Индию, достигающую кульминации с Сюаньцзаном в эпоху Тан.",
+      "latitude": 34.27,
+      "longitude": 108.93,
+      "source": "https://en.wikipedia.org/wiki/Faxian",
+      "tags": [
+        "Chinese",
+        "Jin",
+        "Buddhism",
+        "Silk Road"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0401",
+      "era": "AD",
+      "name": "Kumarajiva at Chang'an — The Great Translation of Buddhism",
+      "name_ru": "Кумараджива в Чанъани — великий перевод буддизма",
+      "description": "Kumarajiva (鸠摩罗什 Jiūmóluóshí), a Central Asian Buddhist monk of mixed Kuchean-Indian parentage who has been held in captivity in China for seventeen years after being kidnapped on political orders, is brought to Chang'an and installed by the Former Qin successor state Later Qin as director of a state translation bureau. Over twelve years (401–413 AD) he directs teams of Chinese scholar-monks in producing new translations of the most important Mahayana Buddhist texts: the Lotus Sutra (法华经), the Diamond Sutra (金刚经), the Vimalakirti Sutra (维摩诘经), and the works of Nagarjuna, among many others — approximately 300 texts total.\n\nKumarajiva's translations transform Chinese Buddhism: his literary Chinese is elegant, idiomatic, and philosophically precise in a way no previous translation had achieved. The concepts and terminology he coins — 刹那 (chànà, instant/ksana), 世界 (shìjiè, world/loka), 烦恼 (fánnǎo, affliction/klesha) — enter the Chinese language permanently and are in everyday use today. His Lotus Sutra and Diamond Sutra translations are still the versions read in Chinese Buddhist practice twelve centuries later.",
+      "description_ru": "Кумараджива (鸠摩罗什), центральноазиатский буддийский монах смешанного кучейско-индийского происхождения, семнадцать лет проведший в плену в Китае после похищения по политическому приказу, доставлен в Чанъань и назначен Поздней Цинь директором государственного бюро переводов. За двенадцать лет (401–413 гг.) он руководит командами китайских монахов-учёных в создании новых переводов важнейших текстов буддизма Махаяны — «Лотосовой сутры» (法华经), «Алмазной сутры» (金刚经) и многих других, всего около 300 текстов.\n\nПереводы Кумарадживы преобразуют китайский буддизм: его литературный китайский язык элегантен, идиоматичен и философски точен. Введённые им понятия и термины — 刹那 (чана, мгновение), 世界 (шицзе, мир), 烦恼 (фаннао, страсть/аффект) — навсегда входят в китайский язык и употребляются в повседневной речи по сей день.",
+      "latitude": 34.27,
+      "longitude": 108.93,
+      "source": "https://en.wikipedia.org/wiki/Kum%C4%81raj%C4%ABva",
+      "tags": [
+        "Chinese",
+        "Buddhism",
+        "Writing"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0405",
+      "era": "AD",
+      "name": "Tao Yuanming — The Poet Who Chose the Field Over the Court",
+      "name_ru": "Тао Юаньмин — поэт, избравший поле вместо двора",
+      "description": "Tao Yuanming (陶渊明, also known as Tao Qian 陶潜), a minor Eastern Jin official, resigns his last government post as county magistrate rather than bow and scrape before a visiting inspector — recording his decision in the celebrated 'Returning Home' (归去来兮辞 Guīqùláixī Cí) and spending the rest of his life farming, drinking wine, and writing poetry in Jiangxi. His poetry — simple in language, spare in imagery, centred on daily agricultural life, friendship, and the acceptance of death — creates a new literary genre: the 'fields and gardens' (田园 tiányuán) school of Chinese pastoral poetry.\n\nTao Yuanming's influence on Chinese literature is pervasive and durable: his decision to abandon court for farm becomes the canonical expression of Daoist-Confucian tension in the scholar-official life, and the choice he made — declining power and comfort for authentic existence — is referenced by Chinese poets for fifteen centuries after his death. His poem 'Drinking Wine' (饮酒 Yǐn Jiǔ) contains the line 'I pick chrysanthemums under the eastern hedge; calmly I see the southern mountain' (采菊东篱下，悠然见南山) — perhaps the most quoted single line in classical Chinese poetry.",
+      "description_ru": "Тао Юаньмин (陶渊明, известный также как Тао Цянь 陶潜), мелкий чиновник Восточной Цзинь, уходит в отставку с последней государственной должности уездного магистрата, отказавшись кланяться приезжему инспектору, — и проводит остаток жизни в земледелии, питье вина и написании стихов. Его поэзия — простая по языку, скупая по образам, сосредоточенная на повседневной сельской жизни — создаёт новый литературный жанр: «деревенскую» (田园 тяньюань) школу китайской пастушеской лирики.\n\nВлияние Тао Юаньмина на китайскую литературу глубоко и долговечно. Его стихотворение «За вином» (饮酒) содержит строку «Рву хризантемы под восточной изгородью; спокойно вижу Южную гору» (采菊东篱下，悠然见南山) — возможно, наиболее цитируемую строку в классической китайской поэзии.",
+      "latitude": 29.71,
+      "longitude": 116.01,
+      "source": "https://en.wikipedia.org/wiki/Tao_Yuanming",
+      "tags": [
+        "Chinese",
+        "Jin"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0420",
+      "era": "AD",
+      "name": "Eastern Jin Falls — The Southern Dynasties Begin",
+      "name_ru": "Падение Восточной Цзинь — начало Южных династий",
+      "description": "The military strongman Liu Yu (刘裕), who has conducted successful northern campaigns recovering the ancient capitals Luoyang and Chang'an for a brief period, deposes the last Eastern Jin emperor and founds the Liu Song dynasty (刘宋) — beginning the four-dynasty sequence of the Southern Dynasties (南朝 Nán Cháo): Liu Song (420–479), Southern Qi (479–502), Liang (502–557), and Chen (557–589). Liu Yu is a man of low birth who rose entirely through military talent, and his dynasty — like all four Southern Dynasties — is founded by a military coup against the preceding dynasty, reflecting the structural dominance of military power over civilian administration in the south.\n\nThe Southern Dynasties period is culturally productive despite its political instability: the Yangtze region's agricultural surplus supports a court culture of Buddhist philosophy, landscape poetry, and sophisticated material arts. The Chinese gentry class that migrated south in the early 4th century has had a century to establish itself and now produces the most refined literary culture in Chinese history to that point — simultaneously nostalgic for the lost north and deeply rooted in southern landscapes.",
+      "description_ru": "Военный сильный человек Лю Юй (刘裕), проведший успешные северные кампании, на короткое время вернувшие древние столицы Луоян и Чанъань, низлагает последнего цзиньского императора и основывает династию Лю Сун (刘宋) — начиная четырёхдинастическую последовательность Южных династий (南朝): Лю Сун (420–479), Южная Ци (479–502), Лян (502–557) и Чэнь (557–589).\n\nПериод Южных династий культурно продуктивен, несмотря на политическую нестабильность: сельскохозяйственный избыток региона Янцзы поддерживает придворную культуру буддийской философии, пейзажной поэзии и утончённого прикладного искусства. Одновременно ностальгическая по утраченному северу и глубоко укоренённая в южных пейзажах.",
+      "latitude": 32.06,
+      "longitude": 118.79,
+      "source": "https://en.wikipedia.org/wiki/Southern_dynasties",
+      "tags": [
+        "Chinese",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0460",
+      "era": "AD",
+      "name": "Yungang Grottoes — Northern Wei Buddhist Cave Art",
+      "name_ru": "Пещеры Юньган — буддийское пещерное искусство Северной Вэй",
+      "description": "At the order of the Northern Wei court, the monk-architect Tan Yao (昙曜) begins carving the Yungang Grottoes (云冈石窟) near the Northern Wei capital Pingcheng (平城, modern Datong, Shanxi) into the sandstone cliffs of Mount Wuzhou (武州山). The resulting complex of 252 caves and 51,000 carved figures — spanning the full 460–525 AD construction period — represents the first great flowering of Buddhist stone sculpture in China. The five earliest caves, carved at Tan Yao's direction, each contain a single monumental Buddha figure between 13 and 17 metres tall; the facial features of these early Buddhas reflect Central Asian and Gandharan sculptural traditions brought along the Silk Road.\n\nYungang's iconographic programme fuses Indian, Central Asian, Persian, and Chinese aesthetic traditions in a synthesis only possible at the eastern terminus of the Silk Road, where artistic conventions from across Eurasia converge. The site is designated a UNESCO World Heritage Site in 2001 and remains one of the best-preserved examples of 5th-century Buddhist cave art anywhere in Asia.",
+      "description_ru": "По приказу двора Северной Вэй монах-архитектор Тань Яо (昙曜) начинает высекать пещеры Юньган (云冈石窟) близ столицы Северной Вэй Пинчэн (平城, совр. Датун, Шэньси) в песчаниковых скалах горы Учжоушань (武州山). Комплекс из 252 пещер и 51 000 вырезанных фигур представляет первое великое расцветание буддийской каменной скульптуры в Китае. Пять древнейших пещер, каждая с монументальной фигурой Будды высотой 13–17 метров, отражают в чертах лица среднеазиатскую и гандхарскую скульптурные традиции.\n\nИконографическая программа Юньган сплавляет индийские, центральноазиатские, персидские и китайские эстетические традиции в синтезе, возможном лишь на восточном конце Шёлкового пути. Памятник включён в список Всемирного наследия ЮНЕСКО в 2001 году.",
+      "latitude": 40.11,
+      "longitude": 113.13,
+      "source": "https://en.wikipedia.org/wiki/Yungang_Grottoes",
+      "tags": [
+        "Chinese",
+        "Buddhism",
+        "Archaeology",
+        "Holy Site"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0494",
+      "era": "AD",
+      "name": "Northern Wei Sinicization — Emperor Xiaowen Moves Capital to Luoyang",
+      "name_ru": "Китаизация Северной Вэй — Сяовэнь перемещает столицу в Луоян",
+      "description": "Emperor Xiaowen of Northern Wei (北魏孝文帝), one of the most consequential rulers in Chinese history despite governing a 'barbarian' dynasty, implements a sweeping sinicization programme: the capital is moved from Pingcheng (modern Datong) to Luoyang — the Han and Western Jin capital — to immerse the court in the heartland of Chinese civilisation. Simultaneously, he bans Xianbei-language use at court, mandates the adoption of Chinese surnames (his own Tuoba 拓跋 family name becomes Yuan 元), requires Xianbei nobles to marry Chinese aristocratic women, and orders the adoption of Han Chinese clothing.\n\nXiaowen's sinicization is controversial even in his own time: Xianbei traditionalists resist it as cultural suicide, and a later Xianbei military revolt (523 AD) is partly a reaction against the imposed cultural transformation. But Xiaowen's logic is sound: the Northern Wei rules a predominantly Chinese population on a Chinese institutional framework, and governance requires cultural legitimacy with that population. His reform effectively completes the absorption of the Tuoba Xianbei into Chinese civilisation — the ruling class becomes Chinese within two generations.",
+      "description_ru": "Император Сяовэнь Северной Вэй (北魏孝文帝), один из наиболее значительных правителей китайской истории при всей «варварской» природе своей династии, проводит масштабную программу китаизации: столица переносится из Пинчэна (совр. Датун) в Луоян. Одновременно он запрещает использование языка сяньби при дворе, предписывает принятие китайских фамилий (его собственная фамилия Тоба 拓跋 становится Юань 元), требует от сяньбийских аристократов жениться на китаянках и предписывает ношение китайского платья.\n\nКитаизация Сяовэня спорна даже в его время: традиционалисты сяньби сопротивляются ей как культурному самоубийству. Но логика Сяовэня верна: Северная Вэй правит преимущественно китайским населением, и управление требует культурной легитимности. Его реформа эффективно завершает поглощение Тоба-сяньби китайской цивилизацией — правящий класс становится китайским в течение двух поколений.",
+      "latitude": 34.68,
+      "longitude": 112.45,
+      "source": "https://en.wikipedia.org/wiki/Emperor_Xiaowen_of_Northern_Wei",
+      "tags": [
+        "Chinese",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0495",
+      "era": "AD",
+      "name": "Longmen Grottoes — Buddhism Carved into the Dragon Gate Cliffs",
+      "name_ru": "Пещеры Луньмэнь — буддизм, высеченный в скалах Врат Дракона",
+      "description": "Following the transfer of the Northern Wei capital to Luoyang, Emperor Xiaowen initiates construction of the Longmen Grottoes (龙门石窟, 'Dragon Gate Cave Temples') in the limestone cliffs on both sides of the Yi River (伊河), south of the new capital. Construction continues across the Northern Wei, Eastern Wei, Western Wei, Northern Qi, Northern Zhou, Sui, Tang, and Song dynasties — eight dynastic periods — producing a complex of over 2,300 caves, 110,000 Buddhist stone figures, 60 stupas, and 2,800 stone inscriptions. The largest figure, the Vairocana Buddha of the Tang Fengxian Temple, is 17 metres high and was commissioned by Empress Wu Zetian.\n\nLongmen's inscriptions (龙门二十品 Lóngmén Èrshípǐn, the 'Twenty Examples of Longmen') are celebrated in Chinese calligraphic history as masterpieces of the Northern Wei stone-cut script style (魏碑 wèibēi), the bridge between Han dynasty clerical script and Tang standard script. Together with Yungang and the Mogao Caves at Dunhuang, Longmen completes the canonical trio of Chinese Buddhist cave art. It is a UNESCO World Heritage Site.",
+      "description_ru": "После переноса столицы Северной Вэй в Луоян Сяовэнь начинает строительство пещер Луньмэнь (龙门石窟, «Пещерные храмы у Врат Дракона») в известняковых скалах по обоим берегам реки И (伊河) к югу от новой столицы. Строительство продолжается на протяжении восьми династических периодов, производя комплекс из более 2300 пещер, 110 000 буддийских каменных фигур, 60 ступ и 2800 каменных надписей. Крупнейшая фигура — Будда Вайрочана храма Фэнсянь — 17 метров высотой, заказана императрицей У Цзэтянь.\n\nВместе с Юньган и пещерами Могао в Дуньхуане Луньмэнь завершает канонический триптих китайского буддийского пещерного искусства. Памятник включён в список Всемирного наследия ЮНЕСКО.",
+      "latitude": 34.55,
+      "longitude": 112.47,
+      "source": "https://en.wikipedia.org/wiki/Longmen_Grottoes",
+      "tags": [
+        "Chinese",
+        "Buddhism",
+        "Archaeology",
+        "Holy Site"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0502",
+      "era": "AD",
+      "name": "Liang Emperor Wu — The Bodhisattva Emperor",
+      "name_ru": "Ляньский Уди — Бодхисаттва-Император",
+      "description": "Emperor Wu of Liang (梁武帝 Xiāo Yǎn), who reigns for 48 years (502–549 AD) — the longest reign of any Southern Dynasties emperor — is the most devoted Buddhist ruler in Chinese history. He bans meat from Buddhist ceremonies and from the imperial kitchen, personally observes full monastic precepts, lectures on Buddhist texts to court audiences, personally copies scriptures, builds or repairs 480 Buddhist temples in Jiankang, and three times 'sells' himself to a monastery as a slave to be ransomed by the court for hundreds of thousands of coins (a form of merit-making donation). He is known by his devoted subjects as the Bodhisattva Emperor (菩萨皇帝).\n\nHis reign is culturally brilliant — Jiankang under Liang Wu Di becomes the greatest city of the Chinese literary world — but politically fatal. His devotion to Buddhist mercy leads him to refuse to execute dangerous prisoners, allow corrupt officials to go unpunished, and ultimately refuse to turn away the Xianbei rebel general Hou Jing (侯景), who becomes the instrument of the Liang dynasty's destruction. Hou Jing's rebellion (548–552 AD) sacks Jiankang; Emperor Wu, 86 years old and surrounded by treachery, dies of starvation and exposure. Jiankang is reduced from a city of a million to a population of a few thousand.",
+      "description_ru": "Лянский Уди (梁武帝 Сяо Янь), правящий 48 лет (502–549 гг.) — дольше любого другого императора Южных династий, — наиболее преданный буддизму правитель в истории Китая. Он запрещает мясо в буддийских церемониях и на императорской кухне, лично соблюдает монастырские обеты, трижды «продаёт» себя монастырю в качестве раба для выкупа двором (форма заслугоприносящего пожертвования) и строит или восстанавливает 480 буддийских храмов в Цзяньканe. Его преданные подданные именуют его Бодхисаттвой-Императором (菩萨皇帝).\n\nЕго правление культурно блестяще — Цзяньканe при Лянском Уди становится величайшим городом китайского литературного мира, — но политически гибельно. Его буддийское милосердие ведёт к отказу казнить опасных пленников; в итоге повстанец Хоу Цзин разрушает Цзяньканe. Уди, 86 лет, умирает от голода и лишений. Цзяньканe сокращается с миллионного до нескольких тысяч жителей.",
+      "latitude": 32.06,
+      "longitude": 118.79,
+      "source": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Liang",
+      "tags": [
+        "Chinese",
+        "Buddhism",
+        "Dynasty",
+        "Legend"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0520",
+      "era": "AD",
+      "name": "Bodhidharma at Shaolin — Chan Buddhism Founded",
+      "name_ru": "Бодхидхарма в Шаолине — основание Чань-буддизма",
+      "description": "Bodhidharma (菩提达摩 Pútí Dámó), an Indian or Central Asian Buddhist monk, arrives in China — reportedly visiting the Liang Emperor Wu before travelling north to the Northern Wei kingdom — and eventually settles at the Shaolin Temple (少林寺) on Mount Song (嵩山) in Henan, where he reportedly meditates facing a wall for nine years. He transmits a form of Buddhism that privileges direct meditation experience (禅 Chán, from Sanskrit dhyāna) over sutra recitation and ritual, founding the Chan (Zen) school of Buddhism. The 'mind-to-mind transmission' (以心传心) outside of written doctrine becomes Chan's defining characteristic.\n\nBodhidharma's historicity is debated: the Shaolin wall-gazing tradition and several famous exchanges attributed to him ('Have you found peace of mind yet? — I searched but cannot find it. — There, I have given you peace of mind.') may be legendary accretions. But Chan Buddhism — which will become Zen in Japan, Thiên in Vietnam, and Seon in Korea — is the most globally influential school of Chinese Buddhist thought, and the Shaolin Temple becomes the legendary birthplace of Chinese martial arts (kung fu), a connection that may also be partly mythological.",
+      "description_ru": "Бодхидхарма (菩提达摩 Путидамо), индийский или центральноазиатский буддийский монах, прибывает в Китай и в конечном счёте обосновывается в Шаолиньском монастыре (少林寺) на горе Сун (嵩山) в Хэнани, где, по преданию, медитирует лицом к стене девять лет. Он передаёт форму буддизма, ставящую прямой медитативный опыт (禅 Чань, от санскр. дхьяна) выше рецитации сутр, основывая школу Чань (Дзен).\n\nИсторичность Бодхидхармы оспаривается. Но Чань-буддизм — ставший Дзен в Японии, Тхиен во Вьетнаме и Сон в Корее — является наиболее глобально влиятельной школой китайской буддийской мысли, а Шаолиньский монастырь стал легендарной колыбелью китайских боевых искусств.",
+      "latitude": 34.51,
+      "longitude": 112.94,
+      "source": "https://en.wikipedia.org/wiki/Bodhidharma",
+      "tags": [
+        "Chinese",
+        "Buddhism",
+        "Holy Site",
+        "Legend"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0534",
+      "era": "AD",
+      "name": "Northern Wei Splits — East and West, the Final Division",
+      "name_ru": "Раскол Северной Вэй — Восток и Запад, последнее разделение",
+      "description": "The Northern Wei state, weakened by the Six Garrison Rebellion (六镇之乱, 523–531 AD) — an uprising by Xianbei frontier garrison soldiers who felt marginalised by Emperor Xiaowen's sinicization policy and resented the privileges of the sinicized Luoyang aristocracy — splits into Eastern Wei (东魏) controlled by the strongman Gao Huan (高欢) and Western Wei (西魏) controlled by Yuwen Tai (宇文泰). Both are puppet states: Gao Huan controls Eastern Wei and will found Northern Qi; Yuwen Tai controls Western Wei and will found Northern Zhou.\n\nThe East-West split of Northern Wei produces a prolonged military stalemate between the two successor dynasties — Northern Qi in the east (550–577 AD) and Northern Zhou in the west (557–581 AD) — that accelerates the cultural and military evolution on both sides. Northern Zhou, paradoxically, reverses Xiaowen's sinicization by encouraging Xianbei military customs, creating a more robust military force that eventually conquers Northern Qi. It is from this Northern Zhou military aristocracy that the founders of the Sui and Tang dynasties will emerge.",
+      "description_ru": "Северная Вэй, ослабленная Восстанием шести гарнизонов (六镇之乱, 523–531 гг.) — выступлением сяньбийских пограничных гарнизонных солдат, ощущавших себя маргинализованными политикой китаизации Сяовэня, — распадается на Восточную Вэй (东魏) под управлением Гао Хуаня (高欢) и Западную Вэй (西魏) под управлением Юйвэнь Тая (宇文泰). Из этой военной аристократии Северного Чжоу выйдут основатели династий Суй и Тан.",
+      "latitude": 34.68,
+      "longitude": 112.45,
+      "source": "https://en.wikipedia.org/wiki/Northern_Wei",
+      "tags": [
+        "Chinese",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0574",
+      "era": "AD",
+      "name": "Northern Zhou Suppresses Buddhism — The Second Dharma Persecution",
+      "name_ru": "Северное Чжоу подавляет буддизм — Второе преследование Дхармы",
+      "description": "Emperor Wu of Northern Zhou (北周武帝 Yuwen Yong), in the most systematic state attack on Buddhism in Chinese history before the Tang persecution, decrees the dissolution of all Buddhist monasteries in his territory, the return of all monks and nuns to lay life, the destruction of Buddhist images and scriptures, and the confiscation of all monastery lands and property. He simultaneously suppresses Daoism. The stated rationale is economic — monastery lands and monastic populations are removed from the tax base — but the policy also reflects a genuine belief that Buddhist monasticism weakens the military manpower pool.\n\nThe Northern Zhou persecution (574–577 AD), known as one of the 'Three Disasters for Buddhism under the Zhou' (三武一宗之厄), destroys approximately 40,000 temples and forces 3 million monks and nuns back into secular life. It is ultimately pragmatically motivated rather than ideologically systematic: Emperor Wu is focused on conquering Northern Qi, and monastery wealth and manpower are resources he needs. Upon his death in 578 AD, his successor reverses the persecution. Buddhism recovers within a generation and flourishes spectacularly under the Sui and Tang dynasties.",
+      "description_ru": "Уди Северного Чжоу (北周武帝 Юйвэнь Юн), в наиболее систематическом государственном ударе по буддизму в истории Китая до танского преследования, издаёт указ о роспуске всех буддийских монастырей, возвращении монахов и монахинь в мирскую жизнь, уничтожении буддийских образов и писаний и конфискации монастырских земель. Одновременно он подавляет даосизм.\n\nПреследование Северного Чжоу (574–577 гг.) уничтожает около 40 000 храмов и возвращает в мирскую жизнь 3 миллиона монахов и монахинь. После смерти императора У в 578 г. его преемник отменяет преследование. Буддизм восстанавливается в течение одного поколения и пышно расцветает при Суй и Тан.",
+      "latitude": 34.27,
+      "longitude": 108.93,
+      "source": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Northern_Zhou",
+      "tags": [
+        "Chinese",
+        "Buddhism",
+        "Dynasty"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0577",
+      "era": "AD",
+      "name": "Northern Zhou Reunifies the North",
+      "name_ru": "Северное Чжоу воссоединяет Север",
+      "description": "Northern Zhou's army, reinvigorated by Emperor Wu's military reforms and freed of the drain of monastery-supported non-productive population, conquers Northern Qi in a decisive campaign. After 137 years since the fall of the Jin dynasty, the entire north of China is once again under a single ruler. The military aristocracy of Northern Zhou — a mixed Han-Xianbei culture rooted in the western frontier traditions — has produced the most capable military system in China, combining the disciplined administrative inheritance of the Han-Sinicized north with the martial vigour of the steppe military tradition.\n\nThe reunification of the north under Northern Zhou sets the stage for the final step: conquest of the south. Emperor Wu dies the following year at age 35, an enormous loss. His son Emperor Xuan (宣帝) is incompetent; real power passes to the regent Yang Jian (杨坚), the father-in-law of Emperor Xuan, who will use it to found the Sui dynasty. The era of northern division that began in 304 AD is over; the era of total Chinese reunification is four years away.",
+      "description_ru": "Армия Северного Чжоу, обновлённая военными реформами Уди и освобождённая от бремени непроизводительного монастырского населения, завоёвывает Северную Ци в решительной кампании. После 137 лет с падения династии Цзинь весь север Китая снова под единым правителем. Военная аристократия Северного Чжоу — смешанная хань-сяньбийская культура, коренящаяся в западных пограничных традициях, — произвела наиболее боеспособную военную систему в Китае.\n\nВоссоединение севера создаёт условия для последнего шага: завоевания юга. Уди умирает на следующий год в возрасте 35 лет — огромная потеря. Его сын беспомощен; реальная власть переходит к регенту Ян Цзяню (杨坚), который использует её для основания династии Суй.",
+      "latitude": 34.27,
+      "longitude": 108.93,
+      "source": "https://en.wikipedia.org/wiki/Northern_Zhou",
+      "tags": [
+        "Chinese",
+        "Dynasty",
+        "Warfare"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.03.0581",
+      "era": "AD",
+      "name": "Yang Jian Founds the Sui Dynasty",
+      "name_ru": "Ян Цзянь основывает династию Суй",
+      "description": "Yang Jian (杨坚), the Northern Zhou regent and Duke of Sui, deposes the eight-year-old Northern Zhou emperor and proclaims the Sui dynasty (隋朝), becoming Emperor Wen of Sui (隋文帝). He is one of the most capable founding emperors in Chinese history: within his first year he implements comprehensive administrative reforms — recreating the Three Excellencies and Six Ministries (三省六部 Sānshěng Liùbù) governmental structure that will define imperial Chinese administration until 1912, standardising the legal code, reinstituting the civil service examination system, and beginning grain storage programmes against famine.\n\nYang Jian's personal character is ascetic, methodical, and intensely focused on administrative effectiveness to a degree unusual among emperors: he is recorded as personally reviewing all government decisions each day and rarely delegating. He restores Buddhism enthusiastically after Northern Zhou's persecution, ordering the construction of stupas in every prefecture. The Sui dynasty he founds will be short — only 38 years — but will reunify China completely and lay the institutional foundation for the Tang, the greatest dynasty of Chinese history.",
+      "description_ru": "Ян Цзянь (杨坚), регент Северного Чжоу и герцог Суй, низлагает восьмилетнего чжоуского императора и провозглашает династию Суй (隋朝), становясь Вэньди Суй (隋文帝). В течение первого года он проводит всеобъемлющие административные реформы — воссоздавая правительственную структуру «трёх палат и шести министерств» (三省六部 Саньшэн Любу), которая будет определять имперское китайское управление до 1912 года, стандартизируя правовой кодекс и возобновляя систему гражданских экзаменов.\n\nДинастия Суй, основанная Ян Цзянем, просуществует лишь 38 лет — но полностью воссоединит Китай и заложит институциональный фундамент для Тан, величайшей династии китайской истории.",
+      "latitude": 34.27,
+      "longitude": 108.93,
+      "source": "https://en.wikipedia.org/wiki/Emperor_Wen_of_Sui",
+      "tags": [
+        "Chinese",
+        "Dynasty"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.02.0589",
+      "era": "AD",
+      "name": "Sui Conquers Chen — China Reunified After 370 Years",
+      "name_ru": "Суй завоёвывает Чэнь — Китай воссоединён спустя 370 лет",
+      "description": "Sui forces cross the Yangtze in a massive military operation: 518,000 Sui troops in eight columns converge on the Chen dynasty's capital Jiankang from multiple directions. The Chen emperor Chen Shubao (陈叔宝) — notorious for spending state revenues on lavish entertainments, composing romantic poetry, and neglecting government — is found hiding in a well with his two favourite concubines and captured without resistance. Jiankang is occupied without significant battle; Chen is extinct.\n\nThe reunification of China in 589 AD ends 370 years of division that began with the flight of the Jin court in 317 AD. The total from the last genuine Han emperor (220 AD) is 369 years of fragmentation. The Sui emperor's edict on completing the conquest reads: 'Heaven and earth are again one household; this is the greatest enterprise in a thousand years.' It is accurate: no Chinese dynasty after the Han had governed both the Yellow River and the Yangtze simultaneously until this moment. The Tang dynasty that inherits the Sui's institutional structure will build on this reunification to create the most cosmopolitan and internationally influential period in Chinese history.",
+      "description_ru": "Войска Суй форсируют Янцзы в масштабной военной операции: 518 000 суйских солдат в восьми колоннах сходятся к столице Чэнь — Цзяньканe — с нескольких направлений. Чэньский император Чэнь Шубао (陈叔宝) — известный расходованием государственных доходов на пышные развлечения и романтическую поэзию — обнаружен прячущимся в колодце с двумя любимыми наложницами и захвачен без сопротивления.\n\nВоссоединение Китая в 589 г. н. э. завершает 370 лет раздробленности, начавшейся с бегства двора Цзинь в 317 г. н. э. Эдикт суйского императора по завершении завоевания гласит: «Небо и земля снова едины; это величайшее предприятие тысячелетия». Это точно: ни одна китайская династия после Хань не правила одновременно и Жёлтой рекой, и Янцзы до этого момента.",
+      "latitude": 32.06,
+      "longitude": 118.79,
+      "source": "https://en.wikipedia.org/wiki/Sui_dynasty",
+      "tags": [
+        "Chinese",
+        "Dynasty",
+        "Warfare"
+      ],
+      "type": "military"
+    }
+  ]
+}
