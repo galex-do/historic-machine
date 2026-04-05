@@ -17,7 +17,7 @@
         "Legend",
         "Meritocracy",
         "Regency",
-        "Yi Yin"
+        "Yi Yin 👤"
       ],
       "type": "political"
     },
@@ -35,7 +35,7 @@
         "Chinese",
         "Shang",
         "Legend",
-        "Yi Yin"
+        "Yi Yin 👤"
       ],
       "type": "political"
     },
@@ -53,7 +53,7 @@
         "Chinese",
         "Shang",
         "Legend",
-        "Yi Yin"
+        "Yi Yin 👤"
       ],
       "type": "political"
     },
@@ -107,7 +107,8 @@
         "Chinese",
         "Shang",
         "Bureaucracy",
-        "Religious"
+        "Religious",
+        "Sacrifice"
       ],
       "type": "religious"
     },
@@ -142,6 +143,7 @@
       "tags": [
         "Chinese",
         "Shang",
+        "Culture",
         "Silk"
       ],
       "type": "cultural"
@@ -159,7 +161,9 @@
       "tags": [
         "Chinese",
         "Shang",
-        "Army"
+        "Administration",
+        "Army",
+        "Military"
       ],
       "type": "historic"
     },
@@ -196,6 +200,7 @@
         "Shang",
         "Art",
         "Bronze",
+        "Culture",
         "Metallurgy",
         "Religious"
       ],
@@ -249,6 +254,7 @@
       "tags": [
         "Chinese",
         "Shang",
+        "Culture",
         "Divination",
         "Religious",
         "Writing"
@@ -305,7 +311,7 @@
       "tags": [
         "Chinese",
         "Shang",
-        "Religious"
+        "Love"
       ],
       "type": "historic"
     },
@@ -359,7 +365,8 @@
         "Chinese",
         "Shang",
         "Animism",
-        "Religious"
+        "Religious",
+        "Sacrifice"
       ],
       "type": "historic"
     },
@@ -395,6 +402,7 @@
         "Shang",
         "Art",
         "Bronze",
+        "Culture",
         "Metallurgy"
       ],
       "type": "cultural"
@@ -414,7 +422,8 @@
         "Shang",
         "Aristocracy",
         "Cavalry",
-        "Elite"
+        "Elite",
+        "Military"
       ],
       "type": "cultural"
     },
@@ -451,6 +460,7 @@
         "Chinese",
         "Shang",
         "Legend",
+        "Culture",
         "Holy Site",
         "Prisoner",
         "Writing",
