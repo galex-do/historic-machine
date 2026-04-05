@@ -1,0 +1,435 @@
+{
+  "description": "A biographical dataset tracing the lives of the Buddha and the principal figures who shaped Buddhist tradition across its major schools and geographic expansions. The core life events of the Buddha (Renunciation, Enlightenment, First Sermon, First Council, Parinirvana) and the Ashokan Buddhist missions are covered in the Indian Mahajanapadas and Mauryan Empire datasets. This dataset begins with the birth at Lumbini and continues through the Buddha's key disciples, then follows Buddhism through five major geographic and doctrinal traditions: Theravada (Sri Lanka, Southeast Asia), Madhyamaka and Yogacara (Indian Mahayana philosophy), Chan (China), Vajrayana/Tibetan (Tibet and Japan's Shingon), and Japanese Buddhism in its multiple schools (Pure Land, Soto Zen, Nichiren). The geographical scope runs from Nepal and India through Sri Lanka, Central Asia, China, Japan, and Tibet.",
+  "events": [
+    {
+      "date": "01.01.0563",
+      "era": "BC",
+      "name": "Birth of Prince Siddhartha at Lumbini",
+      "name_ru": "Рождение принца Сиддхартхи в Лумбини",
+      "description": "Siddhartha Gautama (Sanskrit: सिद्धार्थ गौतम Siddhārtha Gautama, Pali: Siddhattha Gotama) is born in the Lumbini grove (लुम्बिनी, in modern southern Nepal) to Śuddhodana, ruler of the Shakya clan, and his wife Māyādevī, who dies seven days after the birth. The exact birth year is disputed among scholars: the Theravada tradition uses 623 BC, the 'long chronology' commonly used in East Asian Buddhism uses 624 BC, while most Western scholars prefer the 'short chronology' placing the birth c. 480–400 BC. The intermediate date of c. 563 BC is widely used as a conventional reference. An Ashokan pillar inscription at Lumbini, erected c. 249 BC and reading 'Here the Blessed One was born,' is the earliest epigraphic confirmation of the site.\n\nAt the birth, a court sage named Asita (or Kaladevala) examines the infant and prophesies that he will become either a great universal monarch (cakravartin) or a fully enlightened Buddha — depending on whether he remains at court or encounters the realities of suffering. Śuddhodana, wishing his son to follow the royal path, raises him in a palace of extraordinary luxury, shielding him from all experience of aging, sickness, and death. Lumbini is now a UNESCO World Heritage Site, with ongoing archaeological excavations.",
+      "description_ru": "Сиддхартха Гаутама (санскр. सिद्धार्थ गौतम, пали Сиддхатха Готама) рождается в роще Лумбини (लुम्बिनी, совр. южный Непал) у Шуддходаны, правителя клана Шакьев, и его жены Майядеви, умершей через семь дней после родов. Точный год рождения оспаривается: традиция Тхеравады принимает 623 г. до н. э., большинство западных учёных предпочитает «короткую хронологию», помещающую рождение около 480–400 гг. до н. э.; дата 563 г. до н. э. широко используется как условная. Указная надпись Ашоки в Лумбини, возведённая около 249 г. до н. э. и гласящая «Здесь родился Благословенный», является древнейшим эпиграфическим подтверждением места.\n\nПри рождении придворный мудрец Асита предсказывает, что ребёнок станет либо великим вселенским монархом (чакравартином), либо полностью просветлённым Буддой — в зависимости от того, останется ли он при дворе или столкнётся с реалиями страдания. Лумбини включена в список Всемирного наследия ЮНЕСКО.",
+      "latitude": 27.48,
+      "longitude": 83.28,
+      "source": "https://en.wikipedia.org/wiki/Siddhartha_Gautama",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Holy Site",
+        "Legend"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0500",
+      "era": "BC",
+      "name": "Ananda — Memory of the Dharma",
+      "name_ru": "Ананда — память Дхармы",
+      "description": "Ananda (Pali/Sanskrit: ānanda, 'bliss') is the Buddha's cousin and his personal attendant for the last 25 years of his life, and becomes the most important figure in the preservation and transmission of the Buddha's discourses (suttas/sutras). He accompanies the Buddha everywhere, memorises every teaching verbatim, and is described in the Pali Canon as having 'a mind like a blank tablet' that retains everything without distortion. The Buddha permits him four special privileges: to hear any teaching he has missed repeated, to ask questions on behalf of others, to bring lay followers to meet the Buddha, and to share in the Buddha's dwelling.\n\nAt the First Buddhist Council (c. 483 BC), Ananda — who had not yet achieved full enlightenment — is reportedly barred from participation. He attains enlightenment overnight, enters the council the following morning, and recites all of the Buddha's discourses from memory, opening each with the formula 'Thus have I heard' (Pali: evaṃ me sutaṃ, Sanskrit: evaṃ mayā śrutam). This phrase still opens every canonical Buddhist sutta today. Without Ananda's extraordinary memory and devotion, the oral transmission of the Buddha's teachings — which are not written down for another four centuries — might not have survived intact.",
+      "description_ru": "Ананда (пали/санскр. ānanda, «блаженство») — двоюродный брат Будды и его личный служитель на протяжении последних 25 лет жизни, ставший важнейшей фигурой в сохранении и передаче бесед (сутт/сутр) Будды. Он повсюду сопровождает Будду, дословно запоминает каждое учение и описывается в Палийском каноне как обладатель «ума, подобного чистому листу», удерживающего всё без искажений.\n\nНа Первом буддийском соборе (ок. 483 г. до н. э.) Ананда, ещё не достигший полного просветления, поначалу отстранён от участия. Он достигает просветления за ночь, входит в собор на следующее утро и рецитирует все беседы Будды по памяти, предваряя каждую формулой «Так я слышал» (пали: evaṃ me sutaṃ). Эта фраза по сей день открывает каждую каноническую буддийскую сутту.",
+      "latitude": 25.02,
+      "longitude": 85.43,
+      "source": "https://en.wikipedia.org/wiki/%C4%80nanda",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Theravada"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0499",
+      "era": "BC",
+      "name": "Sariputta and Moggallana — The Two Chief Disciples",
+      "name_ru": "Сарипутта и Маггалана — два главных ученика",
+      "description": "Sariputta (Sanskrit: Śāriputra) and Moggallana (Sanskrit: Maudgalyāyana) are the Buddha's two chief male disciples, described in the Pali Canon as his 'right hand' and 'left hand.' Both are friends from childhood, both seeking a teacher, when Sariputta encounters the monk Assaji — one of the Buddha's first five disciples — and hears a single verse summarising the Buddha's teaching: 'The Tathagata has explained the arising of all phenomena that arise from a cause, and their cessation — this is what the great ascetic teaches.' Immediately grasping the principle of dependent origination (paṭicca-samuppāda), Sariputta enters the first stage of awakening on the spot and brings Moggallana to the Buddha that same day. Both achieve full enlightenment within a week.\n\nSariputta is renowned as the disciple foremost in wisdom (paññā), Moggallana as the disciple foremost in psychic powers (iddhi). Sariputta organises and systematises the Buddha's teachings into the Abhidhamma — the philosophical analysis that will become the third 'basket' of the Pali Canon — and dies a week before the Buddha. Moggallana, who reportedly uses his powers to travel between realms and rescue his deceased mother from suffering, is killed by hired assassins of rival ascetic sects before the Buddha's death. Their relics are preserved beneath the Great Stupa at Sanchi, India.",
+      "description_ru": "Сарипутта (санскр. Шарипутра) и Маггалана (санскр. Маудгальяяна) — два главных мужских ученика Будды, именуемые в Палийском каноне его «правой» и «левой рукой». Оба с детства дружат и ищут учителя, когда Сарипутта встречает монаха Ассаджи — одного из первых пяти учеников Будды — и слышит один стих, резюмирующий учение Будды. Немедленно постигнув принцип взаимозависимого возникновения (патичча-самуппада), Сарипутта в тот же момент входит в первую стадию пробуждения и приводит Маггалану к Будде в тот же день.\n\nСарипутта прославлен как ученик, наиболее выдающийся в мудрости (паññā), Маггалана — в психических способностях (иддхи). Их мощи хранятся под Великой ступой в Санчи, Индия.",
+      "latitude": 23.48,
+      "longitude": 77.73,
+      "source": "https://en.wikipedia.org/wiki/Sariputta",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Theravada",
+        "Holy Site"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0495",
+      "era": "BC",
+      "name": "Angulimala — The Serial Killer Converted by the Buddha",
+      "name_ru": "Ангулимала — убийца, обращённый Буддой",
+      "description": "The story of Angulimala (Pali: aṅgulimāla, 'garland of fingers') is one of the most striking accounts in the Pali Canon (Majjhima Nikaya 86) of radical transformation. Ahiṃsaka, a student of a Brahmin teacher in Kosala kingdom (modern Uttar Pradesh), is falsely accused of sleeping with his teacher's wife by jealous fellow students. The teacher, seeking his death without direct confrontation, assigns him an impossible graduation task: he must collect 1,000 fingers from 1,000 human victims and string them into a garland. Having killed 999 people and wearing the finger-necklace that names him, Angulimala is about to kill his own mother to reach the thousandth when the Buddha walks between them.\n\nAngulimala gives chase to the Buddha, but — despite running at full speed — cannot close the gap on the walking figure. 'Stop, ascetic!' he cries. The Buddha replies: 'I have stopped, Angulimala — now you stop.' The exchange penetrates to Angulimala's original nature; he ordains as a monk that day and achieves full enlightenment within months. The story makes a specific doctrinal point about the Buddhist teaching on karma and transformation: no matter how extreme one's past actions, present moral transformation begins at the moment of intention to change. The Angulimala Sutta is recited by Theravada Buddhist women during labour as a blessing.",
+      "description_ru": "История Ангулималы (пали: aṅgulimāla, «гирлянда из пальцев») — один из наиболее впечатляющих рассказов о радикальном преображении в Палийском каноне (Мадджхима Никая 86). Ахимсака, ложно обвинённый в прелюбодеянии с женой своего учителя, получает невозможное задание: собрать 1000 пальцев у 1000 человеческих жертв. Убив 999 человек и надев ожерелье из пальцев, он готовится убить родную мать ради тысячного, когда между ними проходит Будда.\n\nАнгулимала преследует Будду, но, несмотря на полный бег, не может нагнать идущего. «Остановись, аскет!» — кричит он. Будда отвечает: «Я уже остановился, Ангулимала — теперь остановись ты». В тот же день он принимает посвящение монаха и достигает полного просветления в течение нескольких месяцев. Сутта об Ангулимале по сей день рецитируется буддийскими женщинами Тхеравады во время родов как благословение.",
+      "latitude": 27.52,
+      "longitude": 82.06,
+      "source": "https://en.wikipedia.org/wiki/Angulimala",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Theravada",
+        "Legend"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0150",
+      "era": "BC",
+      "name": "Nagasena and King Milinda — The Questions That Defined Buddhist Philosophy",
+      "name_ru": "Нагасена и царь Милинда — вопросы, определившие буддийскую философию",
+      "description": "The Milindapanha (Pali: milindapañha, 'Questions of Milinda'), set c. 150–100 BC, records a philosophical dialogue between the Bactrian Greek king Menander I Soter (Pali: Milinda, Milindos), who ruled from his capital Sagala (modern Sialkot, Pakistan), and the Buddhist monk Nagasena (नागसेन Nāgasena). Menander, a sophisticated Hellenistic ruler who converted to Buddhism and whose coins bear the Buddhist dharmachakra symbol, poses systematically the hardest philosophical objections to Buddhist doctrine that a rigorous Greek-trained mind can devise. Nagasena's responses are among the clearest explications of Buddhist metaphysics ever composed.\n\nThe most famous exchange concerns personal identity and the doctrine of no-self (anattā): 'Who is it,' asks Menander, 'who will be reborn? If there is no permanent self, what continues?' Nagasena invites the king to examine his chariot, asking which part is 'the chariot' — not the axle, not the wheels, not the frame alone. 'The chariot' is a conventional designation for a functional configuration of parts, just as 'Nagasena' is a conventional name for a functional stream of experience. Personal continuity exists conventionally without requiring a metaphysical soul. The chariot analogy remains the standard Buddhist response to the problem of personal identity in both ancient and contemporary philosophy.",
+      "description_ru": "«Вопросы Милинды» (пали: milindapañha) фиксируют философский диалог между бактрийским греческим царём Менандром I Сотером (пали: Милинда), правившим из Сагалы (совр. Сиалкот, Пакистан), и буддийским монахом Нагасеной (नागसेन). Менандр, изощрённый эллинистический правитель, обратившийся в буддизм, выдвигает систематически труднейшие философские возражения против буддийского учения, на которые способен ум, обученный греческой диалектике.\n\nНаиболее известный обмен касается личной идентичности и доктрины бессамости (анатта). Нагасена приглашает царя изучить колесницу, спрашивая, какая её часть является «колесницей» — не ось, не колёса, не рама в отдельности. «Колесница» — условное обозначение функциональной конфигурации частей, точно так же как «Нагасена» — условное имя для функционального потока опыта. Аналогия с колесницей остаётся стандартным буддийским ответом на проблему личной идентичности по сей день.",
+      "latitude": 32.50,
+      "longitude": 74.53,
+      "source": "https://en.wikipedia.org/wiki/Milindapanha",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Theravada",
+        "Indian",
+        "Greek"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0029",
+      "era": "BC",
+      "name": "The Pali Canon Written Down in Sri Lanka",
+      "name_ru": "Палийский канон записан на Шри-Ланке",
+      "description": "During the reign of King Vaṭṭagāmaṇī Abhaya of Sri Lanka, the Theravada community — fearing that war, famine, and the resulting disruption of monk communities might cause the oral tradition to be lost — convenes the Fourth Buddhist Council at the Aluvihara Rock Temple (āluvihāraya, near modern Matale, Sri Lanka) and for the first time commits the entire Pali Canon (Tipiṭaka, 'Three Baskets') to writing in Pali language on palm leaves. The oral tradition of memorisation and recitation had preserved the canon for approximately 450 years since the First Buddhist Council. The three 'baskets' are: the Vinaya Piṭaka (monastic discipline rules), the Sutta Piṭaka (the Buddha's discourses, memorised by Ananda), and the Abhidhamma Piṭaka (systematic philosophical analysis).\n\nThe decision to write the canon is extraordinary: Theravada tradition had considered oral transmission superior to writing — a text read from a palm leaf could be corrupted or misread, while a text held in the mind of a trained reciter was 'alive' and self-correcting. The emergency of 29 BC overcomes this hesitation. The Pali Canon as written at Aluvihara forms the basis of Theravada Buddhism's scriptural tradition used by approximately 150 million Buddhists in Sri Lanka, Thailand, Myanmar, Cambodia, and Laos today. It is the most complete early Buddhist canonical collection preserved in a single ancient language.",
+      "description_ru": "В царствование царя Ватtagāmaṇī Абхайи на Шри-Ланке буддийская община, опасаясь, что война и голод могут привести к утрате устной традиции, созывает Четвёртый буддийский собор в скальном храме Алувихара (близ совр. Матале, Шри-Ланка) и впервые записывает весь Палийский канон (Типитака, «Три корзины») на пальмовых листьях. Устная традиция сохраняла канон около 450 лет со времён Первого собора. Три «корзины»: Виная-питака (правила монашеской дисциплины), Сутта-питака (беседы Будды, запомненные Анандой) и Абхидхамма-питака (систематический философский анализ).\n\nПалийский канон, записанный в Алувихаре, лежит в основе канонической традиции Тхеравады, которой придерживаются около 150 миллионов буддистов Шри-Ланки, Таиланда, Мьянмы, Камбоджи и Лаоса сегодня.",
+      "latitude": 7.45,
+      "longitude": 80.72,
+      "source": "https://en.wikipedia.org/wiki/P%C4%81li_Canon",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Theravada",
+        "Writing",
+        "Holy Site"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0150",
+      "era": "AD",
+      "name": "Nagarjuna — The Madhyamaka and the Philosophy of Emptiness",
+      "name_ru": "Нагарджуна — Мадхьямака и философия пустоты",
+      "description": "Nagarjuna (नागार्जुन Nāgārjuna, c. 150–250 AD), an Indian Buddhist philosopher from southern India (associated with Nagarjunakonda and the Satavahana kingdom), is the founder of the Madhyamaka ('Middle Way') school of Mahayana Buddhist philosophy and the most influential Buddhist philosopher after the Buddha himself. His principal work, the Mūlamadhyamakakārikā ('Root Verses on the Middle Way'), 448 verses in 27 chapters, systematically demonstrates through logical analysis that all phenomena (dharmas) — including those posited by earlier Buddhist Abhidharma philosophy — lack intrinsic, independent existence (svabhāva). This lack of inherent existence Nagarjuna calls śūnyatā: emptiness. Emptiness is not nothingness but the absence of independent, fixed self-nature; phenomena arise interdependently.\n\nNagarjuna's philosophical project is to show that both extremes — the view that things exist absolutely and permanently (eternalism) and the view that things do not exist at all (nihilism) — are conceptual errors, and that the Buddha's 'middle way' between them is not a compromise position but a radical philosophical insight. His Two Truths doctrine (conventional and ultimate truth) provides the framework within which Buddhist practice and philosophical analysis operate simultaneously. Madhyamaka philosophy becomes foundational to Tibetan Buddhism (through Candrakīrti's interpretation), and through Nagarjuna's influence on Huineng, indirectly to Chan/Zen.",
+      "description_ru": "Нагарджуна (नागार्जुन, ок. 150–250 гг. н. э.), индийский буддийский философ из южной Индии, — основатель школы Мадхьямака («Срединный путь») философии буддизма Махаяны и наиболее влиятельный буддийский философ после самого Будды. Его главный труд, «Муламадхьямакакарика» («Коренные стихи о срединном пути»), 448 стихов в 27 главах, систематически демонстрирует через логический анализ, что все явления лишены внутреннего, независимого существования (свабхава). Это отсутствие присущего существования Нагарджуна называет шуньята: пустота.\n\nДоктрина двух истин Нагарджуны (условная и высшая истина) образует рамку, в которой одновременно функционируют буддийская практика и философский анализ. Философия Мадхьямаки становится основополагающей для тибетского буддизма и, через влияние Нагарджуны на Хуэйнэна, косвенно для Чань/Дзен.",
+      "latitude": 16.52,
+      "longitude": 79.25,
+      "source": "https://en.wikipedia.org/wiki/Nagarjuna",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Mahayana",
+        "Indian"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0350",
+      "era": "AD",
+      "name": "Asanga — Yogacara and the Consciousness-Only School",
+      "name_ru": "Асанга — Йогачара и школа «только сознания»",
+      "description": "Asanga (Sanskrit: असङ्ग Asaṅga, c. 310–390 AD), born in Peshawar (Puruṣapura, in modern Pakistan) into a Brahmin family, is the principal founder of the Yogācāra (also called Vijñānavāda or 'Consciousness-Only') school of Mahayana Buddhist philosophy — the second of the two great Indian Mahayana philosophical traditions alongside Nagarjuna's Madhyamaka. The traditional account states that Asanga, unable to attain realisation despite twelve years of meditation in a cave, encounters Maitreya (the future Buddha) either as a visionary experience or as a heavenly being who transmits five texts (the Five Texts of Maitreya) to him directly.\n\nAsanga's core philosophical contribution is the doctrine that ordinary experience is generated by consciousness (vijñāna) misperceiving itself as an external world of independently existing objects. The 'storehouse consciousness' (ālayavijñāna) is a subliminal mind that contains the seeds (bīja) of all past actions and perceptions, producing new experience as a stream. There is no external world independent of consciousness — not because the world does not exist, but because what we experience as 'external' is a projection of the mind's own activity. Yogācāra philosophy profoundly influences Chinese Buddhist schools (particularly Faxiang/Weishi, founded by Xuanzang) and Tibetan Buddhism.",
+      "description_ru": "Асанга (санскр. असङ्ग, ок. 310–390 гг. н. э.), рождённый в Пешаваре (Пурушапуре, совр. Пакистан), является главным основателем школы Йогачара (известной также как Виджнянавада, «Только сознание») философии буддизма Махаяны. Традиционное предание гласит, что Асанга, не сумев достичь реализации после двенадцати лет медитации в пещере, встречает Майтрейю (будущего Будду) либо в видении, либо как небесное существо, передающее ему пять текстов.\n\nОсновной философский вклад Асанги — доктрина о том, что обычный опыт порождается сознанием (виджняна), неверно воспринимающим себя как внешний мир. Философия Йогачары глубоко влияет на китайские буддийские школы (особенно Фасян/Вэйши, основанную Сюаньцзаном) и тибетский буддизм.",
+      "latitude": 34.01,
+      "longitude": 71.57,
+      "source": "https://en.wikipedia.org/wiki/Asanga",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Mahayana",
+        "Indian"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0400",
+      "era": "AD",
+      "name": "Vasubandhu — The Abhidharmakosa",
+      "name_ru": "Васубандху — «Абхидхармакоша»",
+      "description": "Vasubandhu (Sanskrit: वसुबन्धु Vasubandhu, c. 350–430 AD), younger brother of Asanga and initially a scholar of the Sarvastivada Abhidharma tradition, composes the Abhidharmakosa ('Treasury of Abhidharma') — a 600-verse systematic encyclopaedia of Buddhist psychology and philosophy that becomes the single most studied Abhidharma text in East Asian and Tibetan Buddhism. The Abhidharmakosa categorises all of reality into 75 dharmas (ultimate constituents of experience), analyses the mechanics of karma, consciousness, and rebirth, and presents the cosmology of Buddhist worlds. Its precision and comprehensiveness make it a foundational curriculum text that students of Tibetan Buddhism study for years.\n\nAsanga eventually converts his brother from the Sarvastivada school to Mahayana, and Vasubandhu subsequently becomes one of the most prolific Yogacara philosophers. His works on the 'Three Natures' (trisvabhāva) of experience and his commentary on Asanga's Mahayana Sutralamkara develop Yogacara philosophy further. Vasubandhu is considered by some Tibetan traditions to be a bodhisattva of the 10th level — the highest stage before full Buddhahood. His intellectual productivity — over 100 works are attributed to him — is unmatched in Indian Buddhist literature.",
+      "description_ru": "Васубандху (санскр. वसुबन्धु, ок. 350–430 гг. н. э.), младший брат Асанги, сочиняет «Абхидхармакошу» («Сокровищницу Абхидхармы») — систематическую энциклопедию буддийской психологии и философии в 600 стихах, становящуюся наиболее изучаемым текстом Абхидхармы в восточноазиатском и тибетском буддизме. «Абхидхармакоша» классифицирует всю реальность на 75 дхарм (высших составляющих опыта), анализирует механику кармы, сознания и перерождения.\n\nВасубандху считается некоторыми тибетскими традициями бодхисаттвой десятого уровня — высшей ступени перед полным Буддовостью. Его интеллектуальная продуктивность — более 100 приписываемых ему работ — не имеет себе равных в индийской буддийской литературе.",
+      "latitude": 34.01,
+      "longitude": 71.57,
+      "source": "https://en.wikipedia.org/wiki/Vasubandhu",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Mahayana",
+        "Indian",
+        "Writing"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0430",
+      "era": "AD",
+      "name": "Buddhaghosa — The Visuddhimagga and Theravada Systematisation",
+      "name_ru": "Буддхагхоса — «Висуддхимагга» и систематизация Тхеравады",
+      "description": "Buddhaghosa (Pali: Buddhaghosa, 'Voice of the Buddha,' c. 5th century AD), a scholar-monk from northern India who travels to the Mahavihara monastery in Anuradhapura, Sri Lanka — the most authoritative centre of Theravada Buddhism — composes the Visuddhimagga ('Path of Purification'), the most comprehensive systematic manual of Theravada Buddhist meditation and doctrine ever written. The Visuddhimagga organises the entire Buddhist path as taught in the Pali Canon under three headings — sila (virtue/ethics), samadhi (concentration/meditation), and paññā (wisdom/insight) — and provides the most detailed technical analysis of the forty meditation objects, the eight jhanas (absorption states), and the sixteen stages of insight (vipassana) in any Buddhist text.\n\nBuddhaghosa's work is so authoritative in Theravada countries that it effectively functions as the commentary through which the Pali Canon itself is understood. The Theravada monk's training curriculum in Sri Lanka, Thailand, and Myanmar is structured around Buddhaghosa's systematisation to this day. He also produces complete commentaries on virtually every text in the Pali Canon, translating older Sinhala-language commentaries into Pali and preserving ancient interpretive traditions that would otherwise have been lost. He is the single most influential Theravada Buddhist scholar after the Buddha's direct disciples.",
+      "description_ru": "Буддхагхоса (пали: Buddhaghosa, «Голос Будды», ок. V в. н. э.), монах-учёный из северной Индии, путешествует в монастырь Махавихара в Анурадхапуре, Шри-Ланка — авторитетнейший центр Тхеравады — и составляет «Висуддхимаггу» («Путь очищения»): наиболее всеобъемлющее систематическое руководство по медитации и доктрине Тхеравады. «Висуддхимагга» организует весь буддийский путь под тремя заголовками: шила (добродетель/этика), самадхи (концентрация/медитация) и паññā (мудрость/прозрение).\n\nТруд Буддхагхосы настолько авторитетен в странах Тхеравады, что фактически служит комментарием, через который понимается сам Палийский канон. Учебный план монаха Тхеравады на Шри-Ланке, в Таиланде и Мьянме по сей день выстроен вокруг систематизации Буддхагхосы.",
+      "latitude": 8.34,
+      "longitude": 80.40,
+      "source": "https://en.wikipedia.org/wiki/Buddhaghosa",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Theravada",
+        "Writing",
+        "Holy Site"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0629",
+      "era": "AD",
+      "name": "Xuanzang's Pilgrimage to Nalanda — The Great Tang Record",
+      "name_ru": "Паломничество Сюаньцзана в Наланду — «Великие записки о Западных странах»",
+      "description": "Xuanzang (玄奘 Xuánzàng, 602–664 AD), a Chinese Buddhist monk of the Tang dynasty, departs from Chang'an without imperial permission for a 17-year solo overland journey to India (629–645 AD) to study Sanskrit and collect authentic Buddhist scriptures at their source. He travels through Central Asia (Dunhuang, Turfan, Samarkand), across the Hindu Kush, and reaches the Gupta Empire heartland, where he spends five years at the great Nalanda University (in Bihar) studying under the abbot Śīlabhadra — the foremost Yogacara scholar of the age — mastering Sanskrit and Yogacara philosophy to a level no Chinese scholar had previously achieved. He visits all the major Buddhist holy sites, debates publicly in royal courts across India, and collects 657 Buddhist texts.\n\nXuanzang returns to Chang'an in 645 AD, received by Emperor Taizong as a national hero. He spends the remaining 19 years of his life translating 75 works from Sanskrit into classical Chinese — a total of 1,335 fascicles — with a team of scholar-monks. His 'Great Tang Record of the Western Regions' (大唐西域記 Dàtáng Xīyùjì) is a primary historical and geographical source for 7th-century Central Asia, India, and Afghanistan; Indian historians rely on it for periods otherwise unattested. His journey became the basis for the 16th-century Ming-dynasty novel 'Journey to the West' (西游记 Xīyóujì), with the monk Tripitaka as its protagonist.",
+      "description_ru": "Сюаньцзан (玄奘, 602–664 гг. н. э.), китайский буддийский монах династии Тан, отправляется из Чанъани без императорского разрешения в 17-летнее одиночное путешествие в Индию (629–645 гг.) для изучения санскрита и сбора подлинных буддийских писаний. Он пять лет проводит в великом Университете Наланда (в Бихаре), изучая Йогачару под руководством настоятеля Шилабхадры. По возвращении в Чанъань в 645 г. он переводит 75 произведений с санскрита на китайский язык.\n\nЕго «Записки о западных странах эпохи Великой Тан» (大唐西域記) являются первостепенным историческим и географическим источником по Центральной Азии, Индии и Афганистану VII века. Его путешествие стало основой романа эпохи Мин «Путешествие на Запад» (西游记) с монахом Трипитакой в роли главного героя.",
+      "latitude": 25.14,
+      "longitude": 85.44,
+      "source": "https://en.wikipedia.org/wiki/Xuanzang",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Chinese",
+        "Mahayana",
+        "Holy Site",
+        "Writing"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0676",
+      "era": "AD",
+      "name": "Huineng — The Sixth Patriarch and the Platform Sutra",
+      "name_ru": "Хуэйнэн — Шестой Патриарх и «Сутра Помоста»",
+      "description": "Huineng (慧能 Huìnéng, 638–713 AD), an illiterate firewood seller from Guangdong who becomes the Sixth Patriarch of Chan Buddhism, is perhaps the most revolutionary figure in the history of Chinese Buddhism. The founding story of his patriarchship — recorded in the Platform Sutra (六祖壇經 Liùzǔ Tánjīng), the only Chinese-authored text given sutra status in Chinese Buddhism — contrasts his insight with that of the head monk Shenxiu. Asked by the Fifth Patriarch to demonstrate their understanding by verse, Shenxiu writes: 'The mind is like a clear mirror stand — constantly polish it so no dust can settle.' Huineng responds (having the verse read to him, as he cannot read): 'Originally there is no mirror stand — where can dust settle?' The Fifth Patriarch recognises Huineng's verse as the deeper insight and transmits the patriarchship to him secretly.\n\nHuineng's teaching — 'sudden enlightenment' (頓悟 dùnwù) as opposed to 'gradual cultivation' (漸修 jiànxiū) — rejects the premise that enlightenment is achieved through systematic practice building up over time, arguing instead that enlightenment is the recognition of what was always already present. The Southern School he founds becomes the dominant Chan tradition and the ancestor of virtually all subsequent Zen schools in China, Japan, Korea, and Vietnam. The Platform Sutra he dictates is the most widely read Buddhist text in East Asian history.",
+      "description_ru": "Хуэйнэн (慧能, 638–713 гг. н. э.), неграмотный продавец дров из Гуандуна, ставший Шестым Патриархом чань-буддизма, — возможно, наиболее революционная фигура в истории китайского буддизма. Основополагающая история его патриаршества — противопоставление его прозрения прозрению Шэньсю: в ответ на стих Шэньсю «Ум подобен светлому зеркалу — постоянно полируй его, чтобы пыль не оседала» Хуэйнэн отвечает: «Изначально нет никакой стойки для зеркала — где же осядет пыль?»\n\nУчение Хуэйнэна о «внезапном просветлении» (頓悟 дуньу) отвергает предпосылку, что просветление достигается через систематическую практику. Основанная им Южная школа становится господствующей традицией Чань и предком практически всех последующих школ Дзен в Китае, Японии, Корее и Вьетнаме.",
+      "latitude": 24.74,
+      "longitude": 113.59,
+      "source": "https://en.wikipedia.org/wiki/Huineng",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Chinese",
+        "Zen",
+        "Writing",
+        "Holy Site"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0700",
+      "era": "AD",
+      "name": "Shantideva — A Guide to the Bodhisattva's Way of Life",
+      "name_ru": "Шантидева — «Путь бодхисаттвы»",
+      "description": "Shantideva (शान्तिदेव Śāntideva, c. 685–763 AD), a monk at Nalanda University who is reportedly considered by his fellow monks to be idle and useless — his three activities observed being only eating, sleeping, and defecating — is pressured to deliver a public teaching before the entire assembly to expose his ignorance. Instead, he recites from memory the Bodhicaryāvatāra ('A Guide to the Bodhisattva's Way of Life'), a 10-chapter Sanskrit poem he has been composing privately. At Chapter 9 (the Prajnaparamita chapter, on wisdom), the assembly — which had been mocking him — falls silent; some accounts say Shantideva rose into the air and continued the recitation from the sky until he disappeared.\n\nThe Bodhicaryāvatāra is considered by the Tibetan tradition to be the single most essential guide to Mahayana Buddhist practice. Its third chapter — on the awakening mind (bodhicitta) — contains some of the most celebrated poetry in Buddhist literature: 'May I be a guard for those who need protection, a guide for those on the path, a boat, a raft, a bridge for those who wish to cross the flood... May I be a lamp in the darkness, a resting place for the weary, a healing medicine for all who are sick.' The 9th chapter's analysis of Madhyamaka philosophy and refutation of rival schools is the most thorough such analysis in verse form. It is studied in all four schools of Tibetan Buddhism.",
+      "description_ru": "Шантидева (शान्तिदेव, ок. 685–763 гг. н. э.), монах Университета Наланда, считавшийся собратьями-монахами праздным и бесполезным — наблюдавшиеся занятия сводились к еде, сну и нуждам природы, — вынужден выступить с публичным учением перед всей общиной. Вместо ожидаемого провала он рецитирует по памяти «Бодхичарьяватару» («Путь бодхисаттвы»), десятиглавную санскритскую поэму, которую тайно сочинял.\n\n«Бодхичарьяватара» считается тибетской традицией наиболее необходимым руководством по практике буддизма Махаяны. Её третья глава содержит одни из наиболее прославленных стихов в буддийской литературе: «Пусть я буду стражем для нуждающихся в защите, путеводителем для идущих по пути, лодкой, плотом, мостом для желающих переплыть поток...» Изучается во всех четырёх школах тибетского буддизма.",
+      "latitude": 25.14,
+      "longitude": 85.44,
+      "source": "https://en.wikipedia.org/wiki/Shantideva",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Mahayana",
+        "Indian",
+        "Writing",
+        "Legend"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0775",
+      "era": "AD",
+      "name": "Padmasambhava Brings Buddhism to Tibet",
+      "name_ru": "Падмасамбхава приносит буддизм в Тибет",
+      "description": "Padmasambhava (Sanskrit: पद्मसम्भव Padmasambhava, 'Lotus-Born,' Tibetan: གུ་རུ་རིན་པོ་ཆེ Guru Rinpoche), a tantric Buddhist master from the Swat Valley (in modern Pakistan/Afghanistan), is invited to Tibet by King Trisong Detsen (ཁྲི་སྲོང་ལྡེ་བཙན) to subdue the local spirits obstructing the construction of Samye Monastery (བསམ་ཡས་དགོན་པ), Tibet's first monastery. According to Tibetan tradition, Padmasambhava travels through Tibet binding the local spirits and deities into protectors of the Dharma, establishes the Nyingma (rNying ma, 'Ancient') school of Tibetan Buddhism — the oldest of the four schools — and hides numerous 'treasure texts' (terma, གཏེར་མ) in rocks, lakes, and minds to be discovered by future teachers (tertöns) when the time is right.\n\nPadmasambhava's historical existence is accepted; his biography as told in Tibetan tradition is substantially hagiographic. His role in establishing Vajrayana Buddhism in Tibet — the synthesis of Mahayana philosophy with tantric ritual practice originating in Bengal and Odisha — is foundational to Tibetan Buddhist civilisation. Samye Monastery, the first monastic institution in Tibet, is built c. 779 AD and still stands. Padmasambhava is considered by the Nyingma school to be a 'second Buddha' — an emanation of Amitabha and Avalokiteshvara.",
+      "description_ru": "Падмасамбхава (санскр. पद्मसम्भव, «Рождённый из лотоса», тиб. གུ་རུ་རིན་པོ་ཆེ Гуру Ринпоче), тантрический буддийский мастер из долины Сват (совр. Пакистан/Афганистан), приглашён в Тибет королём Трисонг Детсеном для усмирения местных духов, препятствующих строительству монастыря Самье (བསམ་ཡས་དགོན་པ) — первого монастыря Тибета. Он основывает школу Ньингма (rNying ma, «Древняя») тибетского буддизма — древнейшую из четырёх школ — и прячет многочисленные «сокровищенные тексты» (терма, གཏེར་མ་) для открытия будущими учителями (тертонами).\n\nМонастырь Самье, первое монашеское учреждение в Тибете, построен около 779 г. н. э. и стоит по сей день. Падмасамбхава почитается школой Ньингма как «второй Будда» — эманация Амитабхи и Авалокитешвары.",
+      "latitude": 29.33,
+      "longitude": 91.56,
+      "source": "https://en.wikipedia.org/wiki/Padmasambhava",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Tibetan",
+        "Holy Site",
+        "Legend"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0804",
+      "era": "AD",
+      "name": "Kukai — Shingon and Vajrayana Buddhism in Japan",
+      "name_ru": "Кукай — Сингон и Ваджраяна в Японии",
+      "description": "Kukai (空海 Kūkai, 774–835 AD), posthumously known as Kobo Daishi (弘法大師, 'Grand Master Who Spread the Dharma'), a Japanese Buddhist monk and polymath who has already founded Kongobuji Temple, travels to Tang China in 804 AD specifically to study esoteric Vajrayana Buddhism under the Chinese master Huiguo (惠果 Huìguǒ) at the Qinglong Temple in Chang'an. In only three months — an extraordinary compression of what normally takes decades — Huiguo transmits to Kukai the complete esoteric teachings, declaring him his sole heir and instructing him to return to Japan to spread them. He becomes the only person ever to receive Huiguo's complete transmission.\n\nKukai returns to Japan in 806 AD, founds the Shingon (真言, 'True Word'/Mantra) school of Japanese Buddhism at Mount Koya (高野山 Kōyasan) in 816 AD — which becomes and remains one of the most sacred mountain monasteries in Japan — and produces a synthesis of Vajrayana ritual and Japanese aesthetic culture of extraordinary scope. He is credited with the invention or systematisation of the Japanese kana syllabary (hiragana and katakana), establishing the standard of classical Japanese language, and becoming a poet, calligrapher, sculptor, and civil engineer of note. Considered by popular tradition to still be alive in meditation at Koyasan, awaiting the future Buddha Maitreya.",
+      "description_ru": "Кукай (空海, 774–835 гг. н. э.), посмертно известный как Кобо Дайси (弘法大師), японский буддийский монах-эрудит, отправляется в танский Китай в 804 г. специально для изучения эзотерического ваджраянского буддизма под руководством китайского мастера Хуэйго в храме Цинлун в Чанъани. Всего за три месяца — экстраординарное сжатие того, что обычно занимает десятилетия, — Хуэйго передаёт Кукаю полное эзотерическое учение, объявляя его единственным наследником.\n\nКукай возвращается в Японию и основывает школу Сингон (真言, «Истинное слово») на горе Коя (高野山 Коясан) в 816 г. Ему приписывается создание или систематизация японской слоговой азбуки кана (хирагана и катакана). Традиция считает его всё ещё живым в медитации на Коясан в ожидании будущего Будды Майтрейи.",
+      "latitude": 34.21,
+      "longitude": 135.59,
+      "source": "https://en.wikipedia.org/wiki/K%C5%ABkai",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Japanese",
+        "Holy Site"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1042",
+      "era": "AD",
+      "name": "Atisha in Tibet — The Revival of the Dharma",
+      "name_ru": "Атиша в Тибете — возрождение Дхармы",
+      "description": "Atisha Dipamkara Shrijnana (अतिश दीपंकर श्रीज्ञान Atiśa Dīpaṃkara Śrījñāna, 982–1054 AD), the most eminent Indian Buddhist master of the 11th century and abbot of Vikramashila University (in modern Bihar), is invited to Tibet by the west Tibetan king Yeshe O despite Atisha's reluctance — the king reportedly sends his nephew Nagtso Lotsawa to India with gold, who must ransom the king himself from captivity (the king gives his life rather than renounce his faith) before Atisha agrees to come. Atisha arrives in Tibet in 1042 AD and produces the Bodhipathapradīpa ('Lamp for the Path to Enlightenment') in response to a request to clarify the disorganised state of Buddhist practice in Tibet.\n\nThe Bodhipathapradipa is a 68-verse text that systematically arranges the entire Buddhist path into a single coherent framework of three levels — those seeking their own liberation, those seeking Mahayana enlightenment for all beings, and practitioners of tantric methods — and establishes the 'Stages of the Path' (lamrim, བླམ་རིམ) genre that becomes foundational to all four schools of Tibetan Buddhism. Atisha's student Dromton founds the Kadam (bKa' gdams) school, the direct predecessor of Tsongkhapa's Gelug school. His clarification ends what Tibetan historians call the 'dark period' of Buddhism in Tibet.",
+      "description_ru": "Атиша Дипамкара Шриджняна (अतिश दीपंकर श्रीज्ञान, 982–1054 гг. н. э.), наиболее выдающийся индийский буддийский мастер XI века и настоятель университета Викрамашила, приглашён в Тибет западно-тибетским королём Ешей О. Атиша прибывает в Тибет в 1042 г. и создаёт «Бодхипатхапрадипу» («Светильник на пути к просветлению») — 68 стихов, систематически излагающих весь буддийский путь в единой связной рамке трёх уровней.\n\n«Бодхипатхапрадипа» устанавливает жанр «Ступеней пути» (ламрим, བླམ་རིམ་), ставший основополагающим для всех четырёх школ тибетского буддизма. Его разъяснение завершает то, что тибетские историки называют «тёмным периодом» буддизма в Тибете.",
+      "latitude": 29.65,
+      "longitude": 91.11,
+      "source": "https://en.wikipedia.org/wiki/Ati%C5%9Ba",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Tibetan",
+        "Mahayana",
+        "Writing"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1052",
+      "era": "AD",
+      "name": "Milarepa — From Sorcerer to Saint",
+      "name_ru": "Миларепа — от чернокнижника к святому",
+      "description": "Milarepa (Tibetan: མི་ལ་རས་པ Mi la ras pa, 'cotton-clad Mila,' 1052–1135 AD), the most beloved saint of Tibetan Buddhism, is born into a prosperous family in Gungthang (western Tibet) that is robbed of everything by a treacherous uncle after his father's death. His mother, consumed by desire for revenge, sends the adolescent Milarepa to learn black magic; he masters it and kills 35 people at his uncle's wedding by causing the collapse of the house. Overwhelmed by remorse and terror of karmic consequences, he seeks a teacher and is accepted by Marpa the Translator (1012–1097 AD) — who, knowing what Milarepa is capable of and what purification he needs, subjects him to three years of exhausting physical labour (building stone towers, then tearing them down, then building again) before transmitting any teachings.\n\nMilarepa eventually spends most of his life meditating alone in Himalayan caves — wearing only a single cotton cloth despite the high-altitude cold, hence his epithet — and achieves full Buddhahood within a single lifetime, something Tibetan tradition considers extraordinarily rare. His 'Hundred Thousand Songs' (Mila Grubum, གུ་བྱང་རྒྱལ་བ།) are among the greatest poetry in the Tibetan language: vivid accounts of his meditation experiences, his dialogues with demons and scholars, and his instructions to students, composed spontaneously in mountain caves. He is a founding figure of the Kagyu (bKa' brgyud) school of Tibetan Buddhism.",
+      "description_ru": "Миларепа (тиб. མི་ལ་རས་པ Ми ла рас па, «Мила в хлопчатобумажной одежде», 1052–1135 гг. н. э.) — наиболее любимый святой тибетского буддизма. Рождённый в зажиточной семье, разорённой вероломным дядей, он по наущению матери постигает чёрную магию и убивает 35 человек, обрушив дом. Охваченный раскаянием, он ищет учителя и принят Марпой-переводчиком (1012–1097 гг.), который, зная о способностях Миларепы и необходимом ему очищении, подвергает его трём годам изнурительного физического труда.\n\nМиларепа проводит большую часть жизни, медитируя в одиночестве в гималайских пещерах, и достигает полного Буддовости в течение одной жизни — что тибетская традиция считает исключительной редкостью. Его «Сто тысяч песен» (Мила Грубум) — одна из наиболее значительных поэзий на тибетском языке: живые описания его медитативных переживаний, диалоги с демонами и учёными, наставления студентам.",
+      "latitude": 28.24,
+      "longitude": 87.45,
+      "source": "https://en.wikipedia.org/wiki/Milarepa",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Tibetan",
+        "Legend",
+        "Holy Site"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1133",
+      "era": "AD",
+      "name": "Honen — Pure Land Buddhism in Japan",
+      "name_ru": "Хонэн — Буддизм Чистой Земли в Японии",
+      "description": "Honen (法然 Hōnen, 1133–1212 AD), a Japanese Buddhist monk who enters the Tendai monastery on Mount Hiei at age fifteen and spends decades mastering all the major traditions of Japanese Buddhism before concluding that none of them are suitable for ordinary people in the current age of dharma decline (mappō, 末法), founds Japan's first independent Pure Land school: Jodo Shu (浄土宗 Jōdo-shū, 'Pure Land School'). His central teaching, set out in the Senchakushu (1198 AD), is that the practice of nembutsu — the repeated recitation of the name of Amitabha Buddha (南無阿弥陀仏 Namu Amida Butsu) — is the single practice sufficient for rebirth in the Pure Land (Western Paradise) and is accessible to everyone regardless of intelligence, virtue, or monastic status.\n\nHonen's innovation is doctrinal and social simultaneously: by declaring nembutsu the exclusive practice (senjaku, 選択) and all others unnecessary, he creates a form of Buddhism accessible to farmers, merchants, women, and warriors who cannot maintain elaborate monastic practice. His teaching is considered scandalous by the established Buddhist institutions of Nara and Kyoto; he is exiled in 1207 at age 74, stripped of his monkhood, and given a lay name — an extraordinary humiliation for a senior monk. He is restored to favour before his death. His student Shinran radicalises his teaching further.",
+      "description_ru": "Хонэн (法然, 1133–1212 гг. н. э.), японский буддийский монах, вступающий в монастырь Тэндай на горе Хиэй в пятнадцать лет и десятилетиями осваивающий все основные традиции японского буддизма, основывает первую в Японии независимую школу Чистой Земли: Дзёдо-сю (浄土宗 «Школа Чистой Земли»). Его центральное учение — практика нэмбуцу, повторного рецитирования имени Будды Амида (南無阿弥陀仏 Намуамидабуцу), — достаточна для всех вне зависимости от интеллекта, добродетели или монашеского статуса.\n\nИнновация Хонэна одновременно доктринальная и социальная: объявив нэмбуцу исключительной практикой, он создаёт форму буддизма, доступную крестьянам, торговцам, женщинам и воинам, неспособным поддерживать сложную монашескую практику. В 1207 г. в возрасте 74 лет он изгнан и лишён монашеского сана — экстраординарное унижение для старшего монаха.",
+      "latitude": 35.01,
+      "longitude": 135.76,
+      "source": "https://en.wikipedia.org/wiki/H%C5%8Dnen",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Japanese",
+        "Mahayana"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1173",
+      "era": "AD",
+      "name": "Shinran — Other-Power and Universal Salvation",
+      "name_ru": "Синран — чужая сила и всеобщее спасение",
+      "description": "Shinran (親鸞 Shinran, 1173–1263 AD), Honen's most important disciple and the founder of Jodo Shinshu (浄土真宗 Jōdo Shinshū, 'True Pure Land School'), radicalises his teacher's doctrine to its logical extreme: if Amitabha Buddha's compassion (Other-Power, 他力 tariki) is truly unlimited and the nembutsu is truly sufficient, then the nembutsu need not even be recited as a practice — it is the expression of gratitude for a salvation already given, not an action to achieve it. The distinction between monks and laypeople, between virtuous and immoral practitioners, dissolves entirely. He famously writes: 'Even a good person can be saved — how much more so an evil person?' (善人なおもて往生をとぐ、いわんや悪人をや).\n\nShinran lives out his teaching: he marries (as his teacher Honen had been exiled and defrocked, he argues that a monk without valid ordination has no prohibition against marriage), has children, and spends his life as an ordinary rural person, writing theology that insists no special status separates the teacher from the student. Jodo Shinshu is today the largest single Buddhist denomination in Japan by membership, with approximately 13 million adherents, and one of the most widely practised forms of Buddhism in the Japanese diaspora worldwide.",
+      "description_ru": "Синран (親鸞, 1173–1263 гг. н. э.), наиболее важный ученик Хонэна и основатель Дзёдо Синсю (浄土真宗, «Истинная школа Чистой Земли»), доводит учение учителя до логического предела: если сострадание Будды Амида (Чужая Сила, 他力 тарики) поистине безгранично, то нэмбуцу не нужно даже рецитировать как практику — это выражение благодарности за уже дарованное спасение. Он пишет: «Даже хороший человек спасётся — насколько же больше злой!» (善人なおもて往生をとぐ).\n\nСинран воплощает своё учение: он женится, имеет детей и проводит жизнь как обычный сельский человек, настаивая в своём богословии, что никакой особый статус не отделяет учителя от ученика. Дзёдо Синсю является сегодня крупнейшей буддийской деноминацией в Японии по численности — около 13 миллионов последователей.",
+      "latitude": 35.01,
+      "longitude": 135.76,
+      "source": "https://en.wikipedia.org/wiki/Shinran",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Japanese",
+        "Mahayana"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1200",
+      "era": "AD",
+      "name": "Dogen — Just Sitting and the Buddha-Nature of All Things",
+      "name_ru": "Догэн — «просто сидеть» и природа Будды во всём",
+      "description": "Dogen (道元 Dōgen, 1200–1253 AD), the founder of the Soto (曹洞 Cáodòng in Chinese) school of Zen Buddhism in Japan, travels to China in 1223 AD after becoming dissatisfied with Japanese Buddhist institutions, and undergoes a breakthrough experience under the Chan master Tiantong Rujing who teaches a method of seated meditation (zazen, 坐禅 sitting Zen) without any goal, object, or technique beyond simply sitting in the correct posture with alert awareness — a method Dogen calls shikantaza (只管打坐, 'just sitting'). Returning to Japan in 1227 AD, he founds the Eiheiji Temple (永平寺, in modern Fukui prefecture) and composes the Shobogenzo (正法眼蔵, 'Treasury of the True Dharma Eye'), 95 essays in classical Japanese, the most philosophically sophisticated work in Japanese Buddhist literature.\n\nDogen's central insight — 'practice and enlightenment are one' (修証一如 shūshō ichinyū) — rejects the assumption that one practises in order to become enlightened later; authentic practice is itself enlightenment. His analysis of impermanence, the Buddha-nature of all beings and things, and the nature of time (his essay 'Uji: Being-Time' is a classic of Buddhist philosophy of time) are among the most original contributions to East Asian Buddhist philosophy. Soto Zen today has approximately 14,000 temples in Japan and is widely practised internationally.",
+      "description_ru": "Догэн (道元, 1200–1253 гг. н. э.), основатель школы Сото (曹洞) дзэн-буддизма в Японии, путешествует в Китай в 1223 г., неудовлетворённый японскими буддийскими институтами, и переживает прорыв под руководством мастера Чань Тяньтун Жуцзина, преподающего метод сидячей медитации (дзадзэн) без цели или техники, кроме просто правильного сидения, — метод, названный Догэном сиканта-дза (只管打坐, «просто сидеть»).\n\nЦентральное прозрение Догэна — «практика и просветление едины» (修証一如 сюсё итинью) — отвергает предположение, что практикуют ради последующего просветления. Его «Сёбогэндзо» (正法眼蔵, «Сокровищница истинного дхармового ока»), 95 эссе на классическом японском языке, — наиболее философски изощрённый труд в японской буддийской литературе.",
+      "latitude": 36.09,
+      "longitude": 136.57,
+      "source": "https://en.wikipedia.org/wiki/D%C5%8Dgen",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Japanese",
+        "Zen",
+        "Writing",
+        "Holy Site"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1222",
+      "era": "AD",
+      "name": "Nichiren — The Lotus Sutra as the Universal Vehicle",
+      "name_ru": "Нитирэн — «Лотосовая сутра» как всеобщий путь",
+      "description": "Nichiren (日蓮 Nichiren, 1222–1282 AD), born the son of a fisherman in Awa Province (modern Chiba Prefecture), becomes a Buddhist monk and after two decades of studying all the Buddhist traditions available in Japan concludes that the Lotus Sutra (法華経 Myōhō-Renge-Kyō) alone contains the complete and perfect teaching of the Buddha for the current age, and that all other Buddhist schools — including Pure Land, Shingon, Tendai, and Zen — are fundamentally mistaken and are causing Japan's misfortunes (he correlates famines, earthquakes, and Mongol invasion threats with the spread of 'wrong' Buddhism). He teaches that recitation of the sutra's title (南妙法蓮華経 Nam Myōhō Renge Kyō) is the sufficient practice.\n\nNichiren is the most polemical figure in Japanese Buddhist history: his Rissho Ankoku Ron ('Establishing the Correct Teaching for the Peace of the Land,' 1260 AD) is a direct address to the ruling shogunate demanding the suppression of other Buddhist schools. He is twice exiled by the authorities, survives a beheading attempt (the blade allegedly shatters on his neck), and is exiled to the remote island of Sado (1271 AD) where he writes some of his most important letters. His school, Nichiren Buddhism, gives rise in the 20th century to the lay organisations Soka Gakkai and Rissho Koseikai, today among the largest Buddhist movements worldwide.",
+      "description_ru": "Нитирэн (日蓮, 1222–1282 гг. н. э.), рождённый сыном рыбака в провинции Ава (совр. префектура Тиба), после двух десятилетий изучения всех доступных в Японии буддийских традиций приходит к выводу, что только «Лотосовая сутра» (法華経 Мёхо-рэнгэ-кё) содержит полное и совершенное учение Будды, а все другие буддийские школы фундаментально ошибочны и вызывают несчастья Японии. Он коррелирует голод, землетрясения и угрозу монгольского вторжения с распространением «неверного» буддизма.\n\nДважды сосланный властями, переживший попытку обезглавливания, Нитирэн остаётся наиболее полемической фигурой в японской буддийской истории. Его школа Нитирэн в XX веке порождает мирские организации Сока Гаккай и Риссё Косэйкай — сегодня одни из крупнейших буддийских движений в мире.",
+      "latitude": 35.49,
+      "longitude": 138.44,
+      "source": "https://en.wikipedia.org/wiki/Nichiren",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Japanese",
+        "Mahayana"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1357",
+      "era": "AD",
+      "name": "Tsongkhapa — The Great Reformer of Tibetan Buddhism",
+      "name_ru": "Цзонхапа — великий реформатор тибетского буддизма",
+      "description": "Je Tsongkhapa (Tibetan: རྗེ་ཙོང་ཁ་པ Rje Tsong kha pa Blo bzang grags pa, 1357–1419 AD), born in Amdo (modern Qinghai province, China) near the Kumbum Monastery site, undergoes the most thorough Buddhist education available in 14th-century Tibet — studying with masters of all four existing schools, including extensive study of the Vinaya (monastic discipline), Madhyamaka (particularly through Candrakīrti's Prasannapadā), and Lamrim teachings descending from Atisha. His major works — the Lamrim Chenmo ('Great Treatise on the Stages of the Path to Enlightenment,' 1402 AD) and the Ngakrim Chenmo on tantra — are the most comprehensive and systematic presentations of the Buddhist path in Tibetan literature.\n\nTsongkhapa founds Ganden Monastery near Lhasa in 1409 AD and the Gelug (dGe lugs, 'Virtuous Way') school — the fourth and youngest of the four Tibetan Buddhist schools — which becomes the most institutionally dominant school in Tibet. The Dalai Lamas and Panchen Lamas are identified from the Gelug school. His reform emphasises the inseparability of sutra study and tantric practice, the critical importance of correct philosophical view (Prasangika Madhyamaka) as the basis for practice, and strict monastic discipline — a response to the perceived laxity of existing institutions. He is considered by many Tibetan Buddhists to be an emanation of Manjushri, the bodhisattva of wisdom.",
+      "description_ru": "Рje Цзонхапа (тиб. རྗེ་ཙོང་ཁ་པ, 1357–1419 гг. н. э.), рождённый в Амдо (совр. провинция Цинхай, Китай), проходит наиболее всестороннее буддийское образование, доступное в Тибете XIV века. Его главные труды — «Ламрим Ченмо» («Большой трактат о ступенях пути к просветлению», 1402 г.) — наиболее исчерпывающее и систематическое изложение буддийского пути в тибетской литературе.\n\nЦзонхапа основывает монастырь Ганден близ Лхасы в 1409 г. и школу Гелуг (dGe lugs, «Добродетельный путь») — четвёртую и наиболее молодую из четырёх тибетских буддийских школ, ставшую институционально господствующей в Тибете. Далай-ламы и Панчен-ламы идентифицируются из школы Гелуг. Многие тибетские буддисты считают его эманацией Манджушри — бодхисаттвы мудрости.",
+      "latitude": 29.68,
+      "longitude": 91.10,
+      "source": "https://en.wikipedia.org/wiki/Je_Tsongkhapa",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Tibetan",
+        "Mahayana",
+        "Writing",
+        "Holy Site"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1391",
+      "era": "AD",
+      "name": "Gendun Drup — The First Dalai Lama",
+      "name_ru": "Гэндун Дуп — Первый Далай-лама",
+      "description": "Gendun Drup (Tibetan: དགེ་འདུན་གྲུབ dGe 'dun grub, 1391–1474 AD), the principal student of Tsongkhapa and founder of Tashilhunpo Monastery in Shigatse (1447 AD), is posthumously recognised as the First Dalai Lama — the origination point of the Dalai Lama lineage that continues to the present 14th Dalai Lama Tenzin Gyatso. He is not recognised as Dalai Lama during his own lifetime; the title is applied retroactively by the Third Dalai Lama Sonam Gyatso, who receives it from the Mongol ruler Altan Khan in 1578. The Mongolian title Dalai Lama (Mongolian: Далай лам, from Sanskrit sāgara, 'ocean' + Tibetan blama, 'teacher') means 'Ocean of Wisdom.'\n\nThe institution of the Dalai Lama as spiritual and temporal ruler of Tibet develops gradually over the 17th century and is formalised under the Fifth Dalai Lama (1617–1682 AD) with Mongol military support. The system of identifying reincarnated lamas (tulkus, སྤྲུལ་སྐུ sprul sku) — whereby a senior teacher's consciousness is believed to take rebirth in a specific child, identified through tests — is the unique Tibetan Buddhist institutional mechanism for ensuring continuity of teaching transmission across generations. It is practised by approximately 900 recognised tulku lineages in Tibetan Buddhism today.",
+      "description_ru": "Гэндун Дуп (тиб. དགེ་འདུན་གྲུབ dGe 'dun grub, 1391–1474 гг. н. э.), главный ученик Цзонхапы и основатель монастыря Ташилхумпо в Шигацзе (1447 г.), посмертно признан Первым Далай-ламой — исходной точкой линии Далай-лам, продолжающейся по сей день в лице 14-го Далай-ламы Тензина Гьяцо. Монгольский титул Далай-лама (от санскр. sāgara, «океан» + тиб. blama, «учитель») означает «Океан Мудрости».\n\nИнститут тулку (སྤྲུལ་སྐུ sprul sku) — уникальный тибетский буддийский механизм для обеспечения преемственности передачи учения: сознание старшего учителя считается перерождающимся в конкретном ребёнке, идентифицируемом через испытания. Сегодня насчитывается около 900 признанных линий тулку в тибетском буддизме.",
+      "latitude": 29.27,
+      "longitude": 88.87,
+      "source": "https://en.wikipedia.org/wiki/1st_Dalai_Lama",
+      "tags": [
+        "Buddhism",
+        "Buddhist",
+        "Tibetan",
+        "Holy Site"
+      ],
+      "type": "cultural"
+    }
+  ]
+}
