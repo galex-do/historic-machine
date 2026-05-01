@@ -3,24 +3,6 @@
   "events": [
     {
       "date": "01.01.1500",
-      "description": "Indo-Aryan-speaking peoples move into the Sapta Sindhu (Seven Rivers) region of northwest India, displacing or assimilating remnants of the Indus Valley populations. They bring pastoral culture, horse-drawn chariots, and the early Vedic religious tradition.",
-      "description_ru": "Индоарийские народы приходят в регион Саптасиндху (Семи рек) на северо-западе Индии, вытесняя или ассимилируя остатки населения Индской цивилизации. Они приносят пастбищную культуру, конные колесницы и раннюю ведическую религиозную традицию.",
-      "era": "BC",
-      "latitude": 30.63,
-      "longitude": 72.86,
-      "name": "Indo-Aryan Migration into Punjab",
-      "name_ru": "Индоарийская миграция в Пенджаб",
-      "source": "https://en.wikipedia.org/wiki/Indo-Aryan_migration",
-      "tags": [
-        "Indian",
-        "Civilization",
-        "Indo-Aryan",
-        "Migration"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1500",
       "description": "The earliest hymns of the Rig Veda are composed in the Sapta Sindhu region, praising Vedic deities such as Indra, Agni, and Varuna. The Rig Veda will become the oldest surviving Indo-European literary text, compiled over several centuries.",
       "description_ru": "Древнейшие гимны Ригведы составляются в регионе Саптасиндху — они прославляют богов Индру, Агни и Варуну. Ригведа станет старейшим сохранившимся индоевропейским литературным текстом, составлявшимся на протяжении нескольких столетий и передающимся устно.",
       "era": "BC",
@@ -36,10 +18,28 @@
         "Literature",
         "Oral Tradition",
         "Religious",
-        "Vedic",
-        "Writing"
+        "Text",
+        "Vedic"
       ],
       "type": "religious"
+    },
+    {
+      "date": "01.01.1500",
+      "description": "Indo-Aryan-speaking peoples move into the Sapta Sindhu (Seven Rivers) region of northwest India, displacing or assimilating remnants of the Indus Valley populations. They bring pastoral culture, horse-drawn chariots, and the early Vedic religious tradition.",
+      "description_ru": "Индоарийские народы приходят в регион Саптасиндху (Семи рек) на северо-западе Индии, вытесняя или ассимилируя остатки населения Индской цивилизации. Они приносят пастбищную культуру, конные колесницы и раннюю ведическую религиозную традицию.",
+      "era": "BC",
+      "latitude": 30.63,
+      "longitude": 72.86,
+      "name": "Indo-Aryan Migration into Punjab",
+      "name_ru": "Индоарийская миграция в Пенджаб",
+      "source": "https://en.wikipedia.org/wiki/Indo-Aryan_migration",
+      "tags": [
+        "Indian",
+        "Civilization",
+        "Indo-Aryan",
+        "Migration"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.1400",
@@ -74,7 +74,6 @@
         "Indian",
         "Hinduism",
         "Indo-Aryan",
-        "Literature",
         "Religious"
       ],
       "type": "religious"
@@ -139,6 +138,25 @@
     },
     {
       "date": "01.01.1100",
+      "description": "The Kuru tribal confederation consolidates into the first major Vedic kingdom around Kurukshetra and the upper Doab. The Kurus become the dominant political and religious power of the Middle Vedic period, sponsoring major ritual reforms.",
+      "description_ru": "Племенной союз Куру консолидируется в первое крупное ведическое царство вокруг Курукшетры и верхнего Дуаба. Куру становятся господствующей политической и религиозной силой Среднего ведического периода.",
+      "era": "BC",
+      "latitude": 29.97,
+      "longitude": 76.84,
+      "name": "Formation of the Kuru Kingdom",
+      "name_ru": "Образование царства Куру",
+      "source": "https://en.wikipedia.org/wiki/Kuru_Kingdom",
+      "tags": [
+        "Indian",
+        "Foundation",
+        "Indo-Aryan",
+        "Kingdom",
+        "Political"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.1100",
       "description": "A distinctive ceramic culture appears across the upper Ganges-Yamuna Doab, associated with Vedic-period settlements. Painted Grey Ware sites at Hastinapura and Kurukshetra provide the key archaeological evidence for the Middle Vedic culture.",
       "description_ru": "В верхнем Гангско-Ямунском Дуабе появляется самобытная керамическая культура, связанная с поселениями ведического периода. Памятники серой расписной керамики в Хастинапуре и Курукшетре — ключевые археологические свидетельства Среднего ведического периода.",
       "era": "BC",
@@ -173,23 +191,89 @@
       "type": "historic"
     },
     {
-      "date": "01.01.1100",
-      "description": "The Kuru tribal confederation consolidates into the first major Vedic kingdom around Kurukshetra and the upper Doab. The Kurus become the dominant political and religious power of the Middle Vedic period, sponsoring major ritual reforms.",
-      "description_ru": "Племенной союз Куру консолидируется в первое крупное ведическое царство вокруг Курукшетры и верхнего Дуаба. Куру становятся господствующей политической и религиозной силой Среднего ведического периода.",
+      "date": "01.01.1000",
+      "description": "Vedic peoples push east of the Doab into the middle Gangetic Plain, clearing forests with iron axes and establishing new settlements. The Koshala and Videha regions are colonized, extending the Vedic cultural sphere to the foothills of Nepal.",
+      "description_ru": "Ведические народы продвигаются восточнее Дуаба на Среднегангскую равнину, выжигая и вырубая леса. Освоение районов Кошала и Видеха распространяет ведическую культуру до предгорий Непала.",
+      "era": "BC",
+      "latitude": 25.45,
+      "longitude": 81.8,
+      "name": "Vedic Eastward Expansion into Gangetic Plain",
+      "name_ru": "Ведическое расселение на Гангской равнине",
+      "source": "https://en.wikipedia.org/wiki/Vedic_period",
+      "tags": [
+        "Indian",
+        "Indo-Aryan",
+        "Migration",
+        "Settlement"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.1000",
+      "description": "The Sama Veda is compiled in the Kuru region as a liturgical anthology of melodies drawn primarily from Rig Vedic hymns. It forms the foundation for Indian classical music and priestly chanting.",
+      "description_ru": "Самаведа составляется в регионе Куру как литургическая антология мелодий, взятых преимущественно из гимнов Ригведы. Она образует основу индийской классической музыки и жреческого пения.",
       "era": "BC",
       "latitude": 29.97,
       "longitude": 76.84,
-      "name": "Formation of the Kuru Kingdom",
-      "name_ru": "Образование царства Куру",
-      "source": "https://en.wikipedia.org/wiki/Kuru_Kingdom",
+      "name": "Sama Veda Compiled",
+      "name_ru": "Самаведа - ведическая антология мелодий",
+      "source": "https://en.wikipedia.org/wiki/Samaveda",
       "tags": [
         "Indian",
-        "Foundation",
+        "Culture",
+        "Hinduism",
         "Indo-Aryan",
-        "Kingdom",
-        "Political"
+        "Literature",
+        "Music",
+        "Oral Tradition",
+        "Religious",
+        "Text",
+        "Vedic"
       ],
-      "type": "political"
+      "type": "religious"
+    },
+    {
+      "date": "01.01.1000",
+      "description": "The Yajur Veda is compiled as a liturgical manual for the adhvaryu priests performing Vedic sacrifices. It contains prose formulas and ritual instructions alongside verse, representing a significant development of Vedic prose.",
+      "description_ru": "Яджурведа составляется как литургическое руководство для жрецов-адхварью, совершающих ведические жертвоприношения. Она содержит прозаические формулы и ритуальные указания наряду со стихами.",
+      "era": "BC",
+      "latitude": 29.5,
+      "longitude": 77.5,
+      "name": "Yajur Veda Compiled",
+      "name_ru": "Яджурведа — руководство для жрецов",
+      "source": "https://en.wikipedia.org/wiki/Yajurveda",
+      "tags": [
+        "Indian",
+        "Hinduism",
+        "Indo-Aryan",
+        "Literature",
+        "Oral Tradition",
+        "Religious",
+        "Text",
+        "Vedic"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.1000",
+      "description": "The Nasadiya Sukta (Rig Veda 10.129) — the Hymn of Creation — stands as one of the most extraordinary philosophical texts of the ancient world. It asks: before being or non-being, before darkness or light, before death or immortality — what was there? It proceeds through a series of negations, concluding: 'Who really knows? Who will here proclaim it? Whence was it born, whence came this creation? The gods came afterwards, with the creation of this universe. Who then knows whence it has arisen? He, the first origin of this creation, whether he formed it all or did not form it — he verily knows it, or perhaps he knows not.' This radical philosophical agnosticism, composed centuries before the Greek pre-Socratics, became the seed of the Upanishadic search for Brahman.",
+      "description_ru": "Насадия-сукта (Ригведа 10.129) — один из замечательнейших философских текстов древнего мира. Он вопрошает: до бытия и небытия, до тьмы и света, до смерти и бессмертия — что было? Завершается он словами: «Кто истинно знает? Кто здесь провозгласит? Откуда родилось это творение? Боги пришли позже. Кто же знает, откуда оно возникло? Тот, кто первый сотворил это творение — знает ли он, или не знает?» Этот радикальный философский агностицизм, созданный задолго до греческих досократиков, стал семенем упанишадского поиска Брахмана.",
+      "era": "BC",
+      "latitude": 31.5,
+      "longitude": 73.1,
+      "name": "Nasadiya Sukta — Who Truly Knows?",
+      "name_ru": "Насадия-сукта — индийская метафизика",
+      "source": "https://en.wikipedia.org/wiki/Nasadiya_Sukta",
+      "tags": [
+        "Indian",
+        "Agnosticism",
+        "Hinduism",
+        "Philosophy",
+        "Religious",
+        "Text",
+        "Vedic"
+      ],
+      "type": "religious"
     },
     {
       "date": "01.01.1000",
@@ -212,89 +296,6 @@
       "type": "cultural"
     },
     {
-      "date": "01.01.1000",
-      "description": "The Nasadiya Sukta (Rig Veda 10.129) — the Hymn of Creation — stands as one of the most extraordinary philosophical texts of the ancient world. It asks: before being or non-being, before darkness or light, before death or immortality — what was there? It proceeds through a series of negations, concluding: 'Who really knows? Who will here proclaim it? Whence was it born, whence came this creation? The gods came afterwards, with the creation of this universe. Who then knows whence it has arisen? He, the first origin of this creation, whether he formed it all or did not form it — he verily knows it, or perhaps he knows not.' This radical philosophical agnosticism, composed centuries before the Greek pre-Socratics, became the seed of the Upanishadic search for Brahman.",
-      "description_ru": "Насадия-сукта (Ригведа 10.129) — один из замечательнейших философских текстов древнего мира. Он вопрошает: до бытия и небытия, до тьмы и света, до смерти и бессмертия — что было? Завершается он словами: «Кто истинно знает? Кто здесь провозгласит? Откуда родилось это творение? Боги пришли позже. Кто же знает, откуда оно возникло? Тот, кто первый сотворил это творение — знает ли он, или не знает?» Этот радикальный философский агностицизм, созданный задолго до греческих досократиков, стал семенем упанишадского поиска Брахмана.",
-      "era": "BC",
-      "latitude": 31.5,
-      "longitude": 73.1,
-      "name": "Nasadiya Sukta — Who Truly Knows?",
-      "name_ru": "Насадия-сукта — индийская метафизика",
-      "source": "https://en.wikipedia.org/wiki/Nasadiya_Sukta",
-      "tags": [
-        "Indian",
-        "Agnosticism",
-        "Hinduism",
-        "Literature",
-        "Philosophy",
-        "Religious",
-        "Vedic"
-      ],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.1000",
-      "description": "Vedic peoples push east of the Doab into the middle Gangetic Plain, clearing forests with iron axes and establishing new settlements. The Koshala and Videha regions are colonized, extending the Vedic cultural sphere to the foothills of Nepal.",
-      "description_ru": "Ведические народы продвигаются восточнее Дуаба на Среднегангскую равнину, выжигая и вырубая леса. Освоение районов Кошала и Видеха распространяет ведическую культуру до предгорий Непала.",
-      "era": "BC",
-      "latitude": 25.45,
-      "longitude": 81.8,
-      "name": "Vedic Eastward Expansion into Gangetic Plain",
-      "name_ru": "Ведическое расселение на Гангской равнине",
-      "source": "https://en.wikipedia.org/wiki/Vedic_period",
-      "tags": [
-        "Indian",
-        "Indo-Aryan",
-        "Migration",
-        "Settlement"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.1000",
-      "description": "The Yajur Veda is compiled as a liturgical manual for the adhvaryu priests performing Vedic sacrifices. It contains prose formulas and ritual instructions alongside verse, representing a significant development of Vedic prose.",
-      "description_ru": "Яджурведа составляется как литургическое руководство для жрецов-адхварью, совершающих ведические жертвоприношения. Она содержит прозаические формулы и ритуальные указания наряду со стихами.",
-      "era": "BC",
-      "latitude": 29.5,
-      "longitude": 77.5,
-      "name": "Yajur Veda Compiled",
-      "name_ru": "Яджурведа — руководство для жрецов",
-      "source": "https://en.wikipedia.org/wiki/Yajurveda",
-      "tags": [
-        "Indian",
-        "Hinduism",
-        "Indo-Aryan",
-        "Literature",
-        "Oral Tradition",
-        "Religious",
-        "Vedic"
-      ],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.1000",
-      "description": "The Sama Veda is compiled in the Kuru region as a liturgical anthology of melodies drawn primarily from Rig Vedic hymns. It forms the foundation for Indian classical music and priestly chanting.",
-      "description_ru": "Самаведа составляется в регионе Куру как литургическая антология мелодий, взятых преимущественно из гимнов Ригведы. Она образует основу индийской классической музыки и жреческого пения.",
-      "era": "BC",
-      "latitude": 29.97,
-      "longitude": 76.84,
-      "name": "Sama Veda Compiled",
-      "name_ru": "Самаведа - ведическая антология мелодий",
-      "source": "https://en.wikipedia.org/wiki/Samaveda",
-      "tags": [
-        "Indian",
-        "Culture",
-        "Hinduism",
-        "Indo-Aryan",
-        "Literature",
-        "Music",
-        "Oral Tradition",
-        "Religious",
-        "Vedic"
-      ],
-      "type": "religious"
-    },
-    {
       "date": "01.01.0950",
       "description": "The Atharva Veda was compiled in the Kuru-Panchala region and contains spells and incantations for healing, protection, and everyday life. Folk religions merge with the aristocratic sacrificial tradition.",
       "description_ru": "Атхарваведа составляется в регионе Куру-Панчала и содержит заклинания и заговоры для исцеления, защиты и повседневной жизни. Народные религии объединяются с аристократической жертвенной традицией.",
@@ -306,6 +307,67 @@
       "source": "https://en.wikipedia.org/wiki/Atharvaveda",
       "tags": [
         "Indian",
+        "Hinduism",
+        "Indo-Aryan",
+        "Literature",
+        "Oral Tradition",
+        "Religious",
+        "Text",
+        "Vedic"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0900",
+      "description": "The Kuru kingdom, centered at Hastinapura, reaches its greatest extent and becomes the political and cultural center of north India. The Kurus codify the Vedic sacrificial system (shrauta) into its classical form, exporting Brahminic ritual culture across the subcontinent.",
+      "description_ru": "Царство Куру со столицей в Хастинапуре достигает наибольшего могущества и становится политическим и культурным центром Северной Индии. Куру кодифицируют ведическую жертвенную систему (шраута) в её классической форме.",
+      "era": "BC",
+      "latitude": 29.1542601,
+      "longitude": 77.99194336,
+      "name": "Kuru Kingdom at Its Height",
+      "name_ru": "Расцвет царства Куру",
+      "source": "https://en.wikipedia.org/wiki/Kuru_Kingdom",
+      "tags": [
+        "Indian",
+        "Indo-Aryan",
+        "Kingdom",
+        "Political"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0900",
+      "description": "The four-varna social classification — Brahmins (priests), Kshatriyas (warriors), Vaishyas (merchants/farmers), Shudras (servants) — is codified in texts of the Kuru period. First mentioned in the Purusha Sukta hymn of the Rig Veda, the system now governs marriage, occupation, and ritual access throughout Vedic society.",
+      "description_ru": "Четырёхварновая социальная классификация — брахманы (жрецы), кшатрии (воины), вайшьи (торговцы/земледельцы), шудры (слуги) — кодифицируется в текстах периода Куру. Впервые упомянутая в гимне Пуруша-сукта Ригведы, система теперь регулирует браки, занятия и доступ к ритуалам.",
+      "era": "BC",
+      "latitude": 29.97,
+      "longitude": 76.84,
+      "name": "Indian Varna System",
+      "name_ru": "Индийская система варн",
+      "source": "https://en.wikipedia.org/wiki/Varna_(Hinduism)",
+      "tags": [
+        "Indian",
+        "Administration",
+        "Culture",
+        "Hinduism",
+        "Indo-Aryan",
+        "Law"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0900",
+      "description": "The Brahmanas are extensive prose commentaries explaining the meaning and rules of Vedic rituals. They represent the first comprehensive prose literature in an Indo-European language, transmitted orally. While the Rig Veda was known to many Brahmanas, specific Brahmanas (instructional texts) were taught only to specialized scholars. A student didn't simply memorize the text; he spent years observing the teacher performing the ritual, and the Brahmana text, superimposed on the movements of muscle memory.",
+      "description_ru": "Брахманы — обширные прозаические комментарии, объясняющие смысл и правила ведических обрядов. Они представляют собой первую развёрнутую прозаическую литературу на индоевропейском языке, передающуюся устно. Если Ригведу знали многие брахманы, то конкретные Брахманы (тексты-инструкции) учили только узкие специалисты. Ученик не просто зубрил текст, он годами смотрел, как учитель совершает обряд, и текст Брахман накладывался на мышечную память движений. ",
+      "era": "BC",
+      "latitude": 28.37,
+      "longitude": 79.07,
+      "name": "Brahmanas Texts Composed",
+      "name_ru": "Брахманы — толкования вед",
+      "source": "https://en.wikipedia.org/wiki/Brahmana",
+      "tags": [
+        "Indian",
+        "Culture",
         "Hinduism",
         "Indo-Aryan",
         "Literature",
@@ -336,63 +398,25 @@
       "type": "religious"
     },
     {
-      "date": "01.01.0900",
-      "description": "The Brahmanas are extensive prose commentaries explaining the meaning and rules of Vedic rituals. They represent the first comprehensive prose literature in an Indo-European language, transmitted orally. While the Rig Veda was known to many Brahmanas, specific Brahmanas (instructional texts) were taught only to specialized scholars. A student didn't simply memorize the text; he spent years observing the teacher performing the ritual, and the Brahmana text, superimposed on the movements of muscle memory.",
-      "description_ru": "Брахманы — обширные прозаические комментарии, объясняющие смысл и правила ведических обрядов. Они представляют собой первую развёрнутую прозаическую литературу на индоевропейском языке, передающуюся устно. Если Ригведу знали многие брахманы, то конкретные Брахманы (тексты-инструкции) учили только узкие специалисты. Ученик не просто зубрил текст, он годами смотрел, как учитель совершает обряд, и текст Брахман накладывался на мышечную память движений. ",
+      "date": "01.01.0800",
+      "description": "The Agnichayana ritual — the most elaborate Vedic ceremony — involves construction of a large fire altar from precisely shaped and counted bricks, designed in the form of a flying eagle (Shyena). Described in detail in the Shatapatha Brahmana, the construction demands exact geometry: the altar's area must equal a specified number of square units regardless of shape, anticipating geometric methods later formalized in the Sulba Sutras.",
+      "description_ru": "Ритуал Агничаяны — наиболее сложная ведическая церемония — предполагает возведение большого огненного алтаря из точно подогнанных кирпичей в форме летящего орла (Шьена). Конструкция требует точной геометрии: площадь алтаря должна равняться заданному числу квадратных единиц вне зависимости от формы, что предвосхищает методы Сулба-сутр.",
       "era": "BC",
       "latitude": 28.37,
       "longitude": 79.07,
-      "name": "Brahmanas Texts Composed",
-      "name_ru": "Брахманы — толкования вед",
-      "source": "https://en.wikipedia.org/wiki/Brahmana",
+      "name": "Agnichayana — Vedic Fire Altar Architecture",
+      "name_ru": "Агничаяна — ритуал создания алтарей",
+      "source": "https://en.wikipedia.org/wiki/Agnicayana",
       "tags": [
         "Indian",
+        "Culture",
         "Hinduism",
         "Indo-Aryan",
-        "Literature",
         "Oral Tradition",
         "Religious",
         "Vedic"
       ],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.0900",
-      "description": "The four-varna social classification — Brahmins (priests), Kshatriyas (warriors), Vaishyas (merchants/farmers), Shudras (servants) — is codified in texts of the Kuru period. First mentioned in the Purusha Sukta hymn of the Rig Veda, the system now governs marriage, occupation, and ritual access throughout Vedic society.",
-      "description_ru": "Четырёхварновая социальная классификация — брахманы (жрецы), кшатрии (воины), вайшьи (торговцы/земледельцы), шудры (слуги) — кодифицируется в текстах периода Куру. Впервые упомянутая в гимне Пуруша-сукта Ригведы, система теперь регулирует браки, занятия и доступ к ритуалам.",
-      "era": "BC",
-      "latitude": 29.97,
-      "longitude": 76.84,
-      "name": "Indian Varna System",
-      "name_ru": "Индийская система варн",
-      "source": "https://en.wikipedia.org/wiki/Varna_(Hinduism)",
-      "tags": [
-        "Indian",
-        "Administration",
-        "Culture",
-        "Hinduism",
-        "Indo-Aryan",
-        "Law"
-      ],
       "type": "cultural"
-    },
-    {
-      "date": "01.01.0900",
-      "description": "The Kuru kingdom, centered at Hastinapura, reaches its greatest extent and becomes the political and cultural center of north India. The Kurus codify the Vedic sacrificial system (shrauta) into its classical form, exporting Brahminic ritual culture across the subcontinent.",
-      "description_ru": "Царство Куру со столицей в Хастинапуре достигает наибольшего могущества и становится политическим и культурным центром Северной Индии. Куру кодифицируют ведическую жертвенную систему (шраута) в её классической форме.",
-      "era": "BC",
-      "latitude": 29.1542601,
-      "longitude": 77.99194336,
-      "name": "Kuru Kingdom at Its Height",
-      "name_ru": "Расцвет царства Куру",
-      "source": "https://en.wikipedia.org/wiki/Kuru_Kingdom",
-      "tags": [
-        "Indian",
-        "Indo-Aryan",
-        "Kingdom",
-        "Political"
-      ],
-      "type": "political"
     },
     {
       "date": "01.01.0800",
@@ -407,10 +431,10 @@
       "tags": [
         "Indian",
         "Hinduism",
-        "Literature",
         "Oral Tradition",
         "Philosophy",
         "Religious",
+        "Text",
         "Vedic"
       ],
       "type": "religious"
@@ -456,27 +480,6 @@
       "type": "political"
     },
     {
-      "date": "01.01.0800",
-      "description": "The Agnichayana ritual — the most elaborate Vedic ceremony — involves construction of a large fire altar from precisely shaped and counted bricks, designed in the form of a flying eagle (Shyena). Described in detail in the Shatapatha Brahmana, the construction demands exact geometry: the altar's area must equal a specified number of square units regardless of shape, anticipating geometric methods later formalized in the Sulba Sutras.",
-      "description_ru": "Ритуал Агничаяны — наиболее сложная ведическая церемония — предполагает возведение большого огненного алтаря из точно подогнанных кирпичей в форме летящего орла (Шьена). Конструкция требует точной геометрии: площадь алтаря должна равняться заданному числу квадратных единиц вне зависимости от формы, что предвосхищает методы Сулба-сутр.",
-      "era": "BC",
-      "latitude": 28.37,
-      "longitude": 79.07,
-      "name": "Agnichayana — Vedic Fire Altar Architecture",
-      "name_ru": "Агничаяна — ритуал создания алтарей",
-      "source": "https://en.wikipedia.org/wiki/Agnicayana",
-      "tags": [
-        "Indian",
-        "Culture",
-        "Hinduism",
-        "Indo-Aryan",
-        "Oral Tradition",
-        "Religious",
-        "Vedic"
-      ],
-      "type": "cultural"
-    },
-    {
       "date": "01.01.0772",
       "description": "Parshvanatha, born as a prince of Varanasi, renounces the world at age 30, practices intense asceticism for 84 days, attains omniscience (Kevala Jnana), and teaches for 70 years before attaining nirvana on Mount Sammeta (Jharkhand). He is the earliest Tirthankara for whom there is plausible historical evidence — the Buddha's own tradition acknowledges his prior existence. Parshvanatha's community observes four great vows: non-violence (ahimsa), truthfulness (satya), non-stealing (asteya), and non-possessiveness (aparigraha).",
       "description_ru": "Паршванатха, рождённый принцем Варанаси, отрекается от мира в 30 лет, практикует суровую аскезу 84 дня, обретает всеведение (Кевала-джняну) и проповедует 70 лет, прежде чем достичь нирваны на горе Саммета. Это древнейший тиртханкар, для которого существуют вероятные исторические свидетельства — буддийская традиция признаёт его существование. Паршванатха учит четырём великим обетам: ненасилию (ахимса), правдивости (сатья), неворовству (астея) и нестяжательству (апариграха).",
@@ -510,7 +513,8 @@
         "Literature",
         "Oral Tradition",
         "Philosophy",
-        "Religious"
+        "Religious",
+        "Text"
       ],
       "type": "religious"
     },
@@ -556,25 +560,6 @@
     },
     {
       "date": "01.01.0700",
-      "description": "The ashrama framework — dividing a man's life into four stages (student, householder, forest dweller, renunciant) — is elaborated in late Vedic and early Dharmashastra texts. Each stage has distinct duties, diet, and ritual obligations. The system integrates the competing Vedic ideals of worldly engagement and ascetic renunciation into a single life-course.",
-      "description_ru": "Система ашрамов — деление жизни мужчины на четыре стадии (ученик, домохозяин, лесной отшельник, странник-санньяси) — разрабатывается в поздневедических текстах и ранних Дхармашастрах. Каждая стадия имеет особые обязанности, диету и ритуальные предписания.",
-      "era": "BC",
-      "latitude": 26,
-      "longitude": 82,
-      "name": "Ashrama System — Four Stages of Life",
-      "name_ru": "Ашрамы — четыре стадии жизни",
-      "source": "https://en.wikipedia.org/wiki/Ashrama_(stage)",
-      "tags": [
-        "Indian",
-        "Culture",
-        "Hinduism",
-        "Philosophy",
-        "Religious"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0700",
       "description": "The Brihadaranyaka and Chandogya Upanishads give the first systematic formulation of karma (the moral weight of action that determines one's next birth) and samsara (the endless cycle of death and rebirth). Yajnavalkya tells King Janaka: 'A man becomes good by good action, evil by evil action.' The Chandogya explains the 'five-fire doctrine' describing how the soul travels after death through stages of fire, rain, plant, animal, and human to be reborn. These are not peripheral ideas — they define the central problem that all subsequent Indian religions seek to solve. Liberation from samsara (moksha in Hinduism, nirvana in Buddhism, moksha in Jainism, mukti in Sikhism) becomes the supreme goal of Indian spiritual thought for the next 2,500 years.",
       "description_ru": "Брихадараньяка и Чхандогья-упанишады формулируют карму (нравственный вес действия, определяющего следующее рождение) и сансару (бесконечный цикл смерти и возрождения). Яджнавалкья говорит царю Джанаке: «Человек становится добрым добрыми делами, злым — злыми». Чхандогья объясняет «доктрину пяти огней», описывающую путь души после смерти. Освобождение от сансары (мокша, нирвана, мукти) становится высшей целью индийской духовной мысли на следующие 2500 лет.",
       "era": "BC",
@@ -604,13 +589,32 @@
       "tags": [
         "Indian",
         "Hinduism",
-        "Literature",
         "Oral Tradition",
         "Philosophy",
         "Religious",
+        "Text",
         "Vedic"
       ],
       "type": "religious"
+    },
+    {
+      "date": "01.01.0700",
+      "description": "The ashrama framework — dividing a man's life into four stages (student, householder, forest dweller, renunciant) — is elaborated in late Vedic and early Dharmashastra texts. Each stage has distinct duties, diet, and ritual obligations. The system integrates the competing Vedic ideals of worldly engagement and ascetic renunciation into a single life-course.",
+      "description_ru": "Система ашрамов — деление жизни мужчины на четыре стадии (ученик, домохозяин, лесной отшельник, странник-санньяси) — разрабатывается в поздневедических текстах и ранних Дхармашастрах. Каждая стадия имеет особые обязанности, диету и ритуальные предписания.",
+      "era": "BC",
+      "latitude": 26,
+      "longitude": 82,
+      "name": "Ashrama System — Four Stages of Life",
+      "name_ru": "Ашрамы — четыре стадии жизни",
+      "source": "https://en.wikipedia.org/wiki/Ashrama_(stage)",
+      "tags": [
+        "Indian",
+        "Culture",
+        "Hinduism",
+        "Philosophy",
+        "Religious"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0650",
@@ -645,38 +649,21 @@
         "Legend",
         "Culture",
         "Literature",
-        "Religious"
+        "Religious",
+        "Text"
       ],
       "type": "cultural"
     },
     {
       "date": "01.01.0600",
-      "description": "The earliest Indian coinage — irregularly shaped silver pieces punched with symbols of kingdoms, guilds, and merchant clans — appears in Magadha and Gandhara. Called Puranas or Karshapanas, they facilitate long-distance trade across the Mahajanapadas and mark a major shift from barter to monetary economy.",
-      "description_ru": "Древнейшие индийские монеты — нерегулярные серебряные пластины с пуансонными клеймами царств, гильдий и купеческих кланов — появляются в Магадхе и Гандхаре. Они облегчают дальнюю торговлю между Махаджанападами и знаменуют переход от натурального обмена к денежной экономике.",
+      "description": "The kingdom of Magadha is established in the lower Ganges plain with its capital at Rajagriha (Rajgir). Magadha will grow to become the dominant power of northern India and the base for both the Maurya and Gupta empires.",
+      "description_ru": "Царство Магадха основывается в нижней Гангской долине со столицей в Раджагрихе (Раджгире). Магадха вырастет в господствующую державу Северной Индии и станет основой для империй Маурьев и Гуптов.",
       "era": "BC",
       "latitude": 25.03,
       "longitude": 85.42,
-      "name": "Indian silver coins",
-      "name_ru": "Серебряные индийские монеты",
-      "source": "https://en.wikipedia.org/wiki/Punch-marked_coins",
-      "tags": [
-        "Indian",
-        "Currency",
-        "Magadha",
-        "Trade"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0600",
-      "description": "The kingdom of Koshala, centered at Ayodhya and Shravasti, becomes one of the most powerful Mahajanapadas. It dominates the middle Gangetic Plain and is the legendary homeland of Rama in the Ramayana tradition.",
-      "description_ru": "Царство Кошала со столицами в Айодхье и Шравасти становится одним из могущественнейших Махаджанапад. Оно господствует над средней Гангской долиной и является легендарной родиной Рамы в традиции Рамаяны.",
-      "era": "BC",
-      "latitude": 26.8,
-      "longitude": 82.2,
-      "name": "Koshala Kingdom",
-      "name_ru": "Царство Кошала в Индии",
-      "source": "https://en.wikipedia.org/wiki/Kosala",
+      "name": "Magadha Kingdom Founded",
+      "name_ru": "Царство Магадха в долине Ганга",
+      "source": "https://en.wikipedia.org/wiki/Magadha",
       "tags": [
         "Indian",
         "Foundation",
@@ -705,14 +692,14 @@
     },
     {
       "date": "01.01.0600",
-      "description": "The kingdom of Magadha is established in the lower Ganges plain with its capital at Rajagriha (Rajgir). Magadha will grow to become the dominant power of northern India and the base for both the Maurya and Gupta empires.",
-      "description_ru": "Царство Магадха основывается в нижней Гангской долине со столицей в Раджагрихе (Раджгире). Магадха вырастет в господствующую державу Северной Индии и станет основой для империй Маурьев и Гуптов.",
+      "description": "The kingdom of Koshala, centered at Ayodhya and Shravasti, becomes one of the most powerful Mahajanapadas. It dominates the middle Gangetic Plain and is the legendary homeland of Rama in the Ramayana tradition.",
+      "description_ru": "Царство Кошала со столицами в Айодхье и Шравасти становится одним из могущественнейших Махаджанапад. Оно господствует над средней Гангской долиной и является легендарной родиной Рамы в традиции Рамаяны.",
       "era": "BC",
-      "latitude": 25.03,
-      "longitude": 85.42,
-      "name": "Magadha Kingdom Founded",
-      "name_ru": "Царство Магадха в долине Ганга",
-      "source": "https://en.wikipedia.org/wiki/Magadha",
+      "latitude": 26.8,
+      "longitude": 82.2,
+      "name": "Koshala Kingdom",
+      "name_ru": "Царство Кошала в Индии",
+      "source": "https://en.wikipedia.org/wiki/Kosala",
       "tags": [
         "Indian",
         "Foundation",
@@ -739,6 +726,24 @@
         "Vedic"
       ],
       "type": "cultural"
+    },
+    {
+      "date": "01.01.0600",
+      "description": "The earliest Indian coinage — irregularly shaped silver pieces punched with symbols of kingdoms, guilds, and merchant clans — appears in Magadha and Gandhara. Called Puranas or Karshapanas, they facilitate long-distance trade across the Mahajanapadas and mark a major shift from barter to monetary economy.",
+      "description_ru": "Древнейшие индийские монеты — нерегулярные серебряные пластины с пуансонными клеймами царств, гильдий и купеческих кланов — появляются в Магадхе и Гандхаре. Они облегчают дальнюю торговлю между Махаджанападами и знаменуют переход от натурального обмена к денежной экономике.",
+      "era": "BC",
+      "latitude": 25.03,
+      "longitude": 85.42,
+      "name": "Indian silver coins",
+      "name_ru": "Серебряные индийские монеты",
+      "source": "https://en.wikipedia.org/wiki/Punch-marked_coins",
+      "tags": [
+        "Indian",
+        "Currency",
+        "Magadha",
+        "Trade"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0599",

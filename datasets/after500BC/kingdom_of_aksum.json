@@ -110,7 +110,7 @@
       "tags": [
         "Greek",
         "Ethiopian",
-        "Writing",
+        "Text",
         "Aksumite"
       ],
       "type": "historic"
@@ -214,8 +214,8 @@
     },
     {
       "date": "01.01.0320",
-      "description": "Frumentius, a Syrian Christian youth, is shipwrecked on the Eritrean coast and taken to the Aksumite court. He becomes tutor to the young prince Ezana and gains influence under Queen Regent Sofya (Ezana's mother). This chance arrival plants the seed of Christianity in East Africa's most powerful state",
-      "description_ru": "Фрументий, молодой сирийский христианин, терпит кораблекрушение у эритрейского побережья и попадает ко двору Аксума. Он становится наставником юного принца Эзаны и обретает влияние при царице-регентше Софии (матери Эзаны). Это случайное прибытие сеет зерно христианства в самом могущественном государстве Восточной Африки",
+      "description": "Frumentius, a young Christian from Tyre, accompanying his philosopher uncle on a voyage to India, is shipwrecked off the Eritrean coast and ends up at the court of Aksum. He becomes the tutor of the young Prince Ezana and gains influence under Queen Regent Sophia (Ezana's mother). This chance arrival sows the seed of Christianity in the most powerful state in East Africa.",
+      "description_ru": "Фрументий, молодой христианин из Тира, сопровождавший своего дядю-философа в плавании в Индию, терпит кораблекрушение у эритрейского побережья и попадает ко двору Аксума. Он становится наставником юного принца Эзаны и обретает влияние при царице-регентше Софии (матери Эзаны). Это случайное прибытие сеет зерно христианства в самом могущественном государстве Восточной Африки",
       "era": "AD",
       "latitude": 14.1211,
       "longitude": 38.7234,
@@ -223,11 +223,13 @@
       "name_ru": "Фрументий при дворе Аксума",
       "source": "https://en.wikipedia.org/wiki/Frumentius",
       "tags": [
+        "Greek",
         "Phoenician",
         "Christian",
         "Education",
         "Ethiopian",
         "Religious",
+        "Saint",
         "Aksumite"
       ],
       "type": "religious"
@@ -349,6 +351,7 @@
         "Ethiopian",
         "Persecution",
         "Religious",
+        "Saint",
         "Aksumite"
       ],
       "type": "religious"
@@ -369,6 +372,7 @@
         "Architecture",
         "Christian",
         "Ethiopian",
+        "Monastery",
         "Aksumite"
       ],
       "type": "religious"

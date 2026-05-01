@@ -610,7 +610,7 @@
       "type": "political"
     },
     {
-      "date": "01.01.0025",
+      "date": "01.01.0045",
       "description": "Christianity begins spreading along trade routes through Parthian territory; the Apostle Thomas reportedly travels through Parthia to India, establishing early Christian communities",
       "description_ru": "Христианство начинает распространяться по торговым путям через парфянскую территорию; апостол Фома, по преданию, путешествует через Парфию в Индию, основывая ранние христианские общины",
       "era": "AD",
@@ -621,10 +621,10 @@
       "source": "https://en.wikipedia.org/wiki/Thomas_the_Apostle",
       "tags": [
         "Parthian",
-        "Apostle Thomas 👤",
         "Christian",
         "Religious",
-        "Trade"
+        "Trade",
+        "Apostle"
       ],
       "type": "religious"
     },
@@ -821,26 +821,6 @@
         "Death"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0097",
-      "description": "Chinese envoy Gan Ying reaches the Persian Gulf while attempting to reach Rome; Parthian officials discourage him from continuing, seeking to maintain their monopoly on Silk Road trade between east and west",
-      "description_ru": "Китайский посланник Гань Ин достигает Персидского залива, пытаясь добраться до Рима; парфянские чиновники отговаривают его от продолжения пути, стремясь сохранить монополию на торговлю по Шёлковому пути между востоком и западом",
-      "era": "AD",
-      "latitude": 29,
-      "longitude": 50.5,
-      "name": "Gan Ying Reaches Persian Gulf",
-      "name_ru": "Гань Ин достигает Персидского залива",
-      "source": "https://en.wikipedia.org/wiki/Gan_Ying",
-      "tags": [
-        "Chinese",
-        "Parthian",
-        "Diplomacy",
-        "Economic",
-        "Silk Road",
-        "Trade"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0100",

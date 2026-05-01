@@ -572,8 +572,10 @@
       "tags": [
         "Armenian",
         "Legend",
+        "Cosmology",
         "Culture",
-        "Literature"
+        "Literature",
+        "Text"
       ],
       "type": "cultural"
     },
@@ -774,7 +776,9 @@
         "Armenian",
         "Legend",
         "Christian",
-        "Religious"
+        "Religious",
+        "Saint",
+        "Apostle"
       ],
       "type": "religious"
     },
@@ -1092,7 +1096,8 @@
         "Christian",
         "Martyr",
         "Prisoner",
-        "Religious"
+        "Religious",
+        "Saint"
       ],
       "type": "religious"
     },
@@ -1191,6 +1196,7 @@
         "Christian",
         "Martyr",
         "Religious",
+        "Saint",
         "Temple"
       ],
       "type": "religious"
@@ -1582,7 +1588,6 @@
         "Armenian",
         "Culture",
         "Education",
-        "Foundation",
         "Language",
         "Writing"
       ],
@@ -1623,8 +1628,8 @@
         "Culture",
         "Golden Age",
         "Literature",
-        "Translation",
-        "Writing"
+        "Text",
+        "Translation"
       ],
       "type": "cultural"
     },
@@ -1641,8 +1646,9 @@
       "tags": [
         "Armenian",
         "Culture",
+        "History",
         "Literature",
-        "Writing"
+        "Text"
       ],
       "type": "cultural"
     },
@@ -1682,7 +1688,7 @@
         "Culture",
         "Literature",
         "Philosophy",
-        "Writing"
+        "Text"
       ],
       "type": "cultural"
     },
@@ -1702,7 +1708,7 @@
         "Culture",
         "History",
         "Literature",
-        "Writing"
+        "Text"
       ],
       "type": "cultural"
     },
@@ -1779,7 +1785,7 @@
         "Armenian",
         "History",
         "Literature",
-        "Writing"
+        "Text"
       ],
       "type": "cultural"
     },

@@ -208,8 +208,8 @@
     },
     {
       "date": "01.01.1340",
-      "description": "While the oracle bones at Anyang (dated principally to 1250–1046 BC) are the most famous evidence of Shang writing, inscriptions on bronze vessels and pottery from earlier Shang contexts show that writing was in use well before Wu Ding's reign. The Shang script (甲骨文 jiǎgǔwén, 'shell and bone script') is a fully developed logographic system of approximately 4,500 characters, of which around 2,000 have been deciphered; it is structurally continuous with the later Zhou script and with modern Chinese. The characters are written by professional scribes using brush and lacquer on bamboo and silk (perishable, hence lost) as well as incised on bone and shell; the oracle bones are an archival survival, not the main writing medium.",
-      "description_ru": "Хотя гадательные надписи Аньяна (датируемые преимущественно 1250–1046 гг. до н. э.) — наиболее известное свидетельство письменности Шан, надписи на бронзовых сосудах и керамике из более ранних контекстов Шан показывают, что письмо существовало задолго до правления У Дина. \n\nПисьмо Шан (甲骨文 цзягувэнь, «надпись на панцире и кости») — полноценная логографическая система из примерно 4500 знаков, около 2000 из которых расшифрованы; оно структурно непрерывно с позднейшим чжоуским письмом и современным китайским. Знаки наносились профессиональными писцами кистью и лаком на бамбук и шёлк (недолговечные и потому утраченные), а также вырезались на кости и панцире; гадательные надписи — архивный реликт, а не основное письменное средство.",
+      "description": "While the oracle bones at Anyang in China (dated principally to 1250–1046 BC) are the most famous evidence of Shang writing, inscriptions on bronze vessels and pottery from earlier Shang contexts show that writing was in use well before Wu Ding's reign. The Shang script (甲骨文 jiǎgǔwén, 'shell and bone script') is a fully developed logographic system of approximately 4,500 characters, of which around 2,000 have been deciphered; it is structurally continuous with the later Zhou script and with modern Chinese. The characters are written by professional scribes using brush and lacquer on bamboo and silk (perishable, hence lost) as well as incised on bone and shell; the oracle bones are an archival survival, not the main writing medium.",
+      "description_ru": "Хотя гадательные надписи Аньяна в Китае (датируемые преимущественно 1250–1046 гг. до н. э.) — наиболее известное свидетельство письменности Шан, надписи на бронзовых сосудах и керамике из более ранних контекстов Шан показывают, что письмо существовало задолго до правления У Дина. \n\nПисьмо Шан (甲骨文 цзягувэнь, «надпись на панцире и кости») — полноценная логографическая система из примерно 4500 знаков, около 2000 из которых расшифрованы; оно структурно непрерывно с позднейшим чжоуским письмом и современным китайским. Знаки наносились профессиональными писцами кистью и лаком на бамбук и шёлк (недолговечные и потому утраченные), а также вырезались на кости и панцире; гадательные надписи — архивный реликт, а не основное письменное средство.",
       "era": "BC",
       "latitude": 34.75,
       "longitude": 113.7,
@@ -328,7 +328,7 @@
       "tags": [
         "Chinese",
         "Shang",
-        "Writing"
+        "Text"
       ],
       "type": "historic"
     },
@@ -462,8 +462,9 @@
         "Legend",
         "Culture",
         "Holy Site",
+        "Philosophy",
         "Prisoner",
-        "Writing",
+        "Text",
         "Zhou"
       ],
       "type": "cultural"

@@ -316,8 +316,8 @@
       "description": "Shortly after the Buddha's death, 500 senior monks convene at Rajagriha under the patronage of King Ajatashatru to recite and preserve the Buddha's teachings. The council formally establishes the Vinaya Pitaka (monastic code) and Sutta Pitaka (discourses), laying the canonical foundation of Theravada Buddhism.",
       "description_ru": "Вскоре после смерти Будды 500 старших монахов собираются в Раджагрихе под покровительством царя Аджаташатру, чтобы воспроизвести и сохранить учения Будды. Собор закладывает канонические основы Тхеравады: Виная-питаку (монашеский устав) и Сутта-питаку (беседы).",
       "era": "BC",
-      "latitude": 25.03,
-      "longitude": 85.42,
+      "latitude": 25.00700817,
+      "longitude": 85.4106921,
       "name": "First Buddhist Council at Rajagriha",
       "name_ru": "Первый буддийский собор в Раджагрихе",
       "source": "https://en.wikipedia.org/wiki/First_Buddhist_council",
@@ -355,8 +355,8 @@
       "description": "As the Buddha's teaching community matures, his core analysis of reality — the Three Marks of Existence (Tilakkhana) — is formulated and taught systematically. All conditioned phenomena share three characteristics: anicca (impermanence — nothing lasts, everything changes); dukkha (unsatisfactoriness — because we cling to what is impermanent, we suffer); anatta (non-self — there is no unchanging soul at the core of a person, only a stream of arising and passing phenomena). The last doctrine — anatta — is the most radical departure from both Vedic Hinduism (which affirms an eternal Atman) and Jainism (which affirms an eternal jiva). The Buddha's teaching is not nihilism but a precise psychological map: suffering arises from misunderstanding reality's impermanent, selfless nature, and liberation comes from seeing this clearly.",
       "description_ru": "По мере созревания общины Будды формулируется его фундаментальный анализ реальности — Три признака существования (Тилаккхана). Все обусловленные явления обладают тремя характеристиками: аниччхой (непостоянством), дуккхой (неудовлетворённостью) и анаттой (не-самостью). Именно доктрина анатты — наиболее радикальное отступление от ведического индуизма (утверждающего вечный Атман) и джайнизма (утверждающего вечную дживу). Страдание возникает из непонимания непостоянной, безличной природы реальности.",
       "era": "BC",
-      "latitude": 25.03,
-      "longitude": 85.42,
+      "latitude": 25.00700817,
+      "longitude": 85.4106921,
       "name": "Three Marks of Existence in Buddhism",
       "name_ru": "Три признака существования в буддизме",
       "source": "https://en.wikipedia.org/wiki/Three_marks_of_existence",
@@ -502,7 +502,9 @@
         "Council",
         "Religious",
         "Schism",
-        "Buddhism"
+        "Buddhism",
+        "Mahayana",
+        "Theravada"
       ],
       "type": "religious"
     },

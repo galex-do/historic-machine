@@ -579,8 +579,7 @@
         "Achaemenid",
         "Darius I 👑",
         "History",
-        "Language",
-        "Writing",
+        "Text",
         "Zoroastrian"
       ],
       "type": "cultural"
@@ -673,8 +672,8 @@
       "era": "BC",
       "latitude": 37.5,
       "longitude": 42,
-      "name": "Royal Road Completed",
-      "name_ru": "Завершена Царская дорога",
+      "name": "The Achaemenid Royal Road",
+      "name_ru": "Царская дорога Ахеменидов",
       "source": "https://en.wikipedia.org/wiki/Royal_Road",
       "tags": [
         "Persian",
@@ -920,7 +919,7 @@
         "Persian",
         "Achaemenid",
         "Religious",
-        "Writing",
+        "Text",
         "Xerxes I 👑",
         "Zoroastrian"
       ],
@@ -1452,7 +1451,8 @@
         "Persian",
         "History",
         "Literature",
-        "Mercenaries"
+        "Mercenaries",
+        "Text"
       ],
       "type": "cultural"
     },
