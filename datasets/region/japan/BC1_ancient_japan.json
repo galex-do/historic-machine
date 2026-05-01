@@ -12,449 +12,591 @@
       "latitude": 40.82,
       "longitude": 140.74,
       "source": "https://en.wikipedia.org/wiki/Prehistoric_Japan",
-      "tags": ["Japanese", "Jomon"],
+      "tags": [
+        "Japanese",
+        "Jomon"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.3500",
       "era": "BC",
-      "name": "Sannai-Maruyama — Japan's Largest Jōmon Settlement",
-      "name_ru": "Саннай-Маруяма — крупнейшее поселение Дзёмон в Японии",
+      "name": "Sannai-Maruyama Settlement",
+      "name_ru": "Поселение Саннай-Маруяма",
       "description": "Sannai-Maruyama (三内丸山遺跡) in northern Aomori, occupied from c. 3900–2300 BC, is the largest and best-preserved Jōmon site in Japan with evidence of planned spatial organisation: six-pillared raised structures, pit dwellings, communal buildings, a central road, and extensive middens. The site held a population estimated at hundreds — extraordinary for hunter-gatherers — and traded obsidian, amber, and lacquerware across the archipelago. Inscribed as a UNESCO World Heritage Site in 2021 as part of the Jōmon Prehistoric Sites in Northern Japan.",
       "description_ru": "Саннай-Маруяма (三内丸山遺跡) в северном Аомори, заселённая около 3900–2300 гг. до н. э., является крупнейшим и лучше всего сохранившимся памятником культуры Дзёмон в Японии. На площадке выявлена плановая пространственная организация: шестистолбчатые возвышенные постройки, землянки, общественные здания, центральная дорога. Сайт торговал обсидианом, янтарём и изделиями с лаковым покрытием по всему архипелагу. Внесён в список Всемирного наследия ЮНЕСКО в 2021 году.",
       "latitude": 40.77,
-      "longitude": 140.70,
+      "longitude": 140.7,
       "source": "https://en.wikipedia.org/wiki/Sannai-Maruyama_site",
-      "tags": ["Japanese", "Jomon", "Holy Site"],
+      "tags": [
+        "Japanese",
+        "Jomon",
+        "Holy Site"
+      ],
       "type": "cultural"
     },
     {
       "date": "01.01.0900",
       "era": "BC",
-      "name": "Yayoi Culture Arrives — Wet-Rice Agriculture Transforms Japan",
-      "name_ru": "Культура Яёй — поливное рисоводство меняет Японию",
+      "name": "Wet-Rice Agriculture Comes to Japan",
+      "name_ru": "Поливное рисоводство приходит в Японию",
       "description": "Beginning c. 900–800 BC in northern Kyushu, continental migrants from the Korean Peninsula and Yangtze River delta introduce wet-rice paddy farming, bronze, and iron to Japan, founding the Yayoi culture (弥生文化). Genetic analysis shows substantial admixture between incoming farmers and the existing Jōmon population. Wet-rice agriculture allows sustained population growth impossible under hunting-gathering; within a few centuries Yayoi farming communities spread across Honshu, reshaping Japan's population, settlement patterns, social hierarchy, and material culture.",
       "description_ru": "Начиная примерно с 900–800 гг. до н. э. в северном Кюсю континентальные мигранты с Корейского полуострова и дельты реки Янцзы привносят в Японию поливное рисоводство, бронзу и железо, основывая культуру Яёй (弥生文化). Генетический анализ показывает значительное смешение пришлых земледельцев с населением Дзёмон. Поливное рисоводство обеспечивает устойчивый рост населения, невозможный при охоте и собирательстве; за несколько столетий поселения яёй распространяются по всему Хонсю.",
       "latitude": 33.59,
-      "longitude": 130.40,
+      "longitude": 130.4,
       "source": "https://en.wikipedia.org/wiki/Yayoi_period",
-      "tags": ["Japanese", "Yayoi"],
+      "tags": [
+        "Japanese",
+        "Yayoi"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0400",
       "era": "BC",
-      "name": "Bronze Dotaku Bells and Iron Weapons — Yayoi Metallurgy",
-      "name_ru": "Бронзовые колокола Дотаку и железное оружие Яёй",
+      "name": "Bronze Bells and Iron Weapons in Yayoi Japan",
+      "name_ru": "Бронзовые колокола и железное оружие в Японии Яёй",
       "description": "By c. 400 BC, bronze and iron technology is fully established across western Japan. The dotaku (銅鐸), large bronze bell-like objects unique to Japan with no direct continental equivalent, are cast in increasingly elaborate forms with incised pictorial scenes of farming, hunting, and weaving — the earliest representational imagery in Japanese art. Iron tools and weapons, initially imported and then locally produced, dramatically improve agricultural productivity and warfare. The co-existence of bronze ritual objects and iron practical tools characterises the Yayoi material world.",
       "description_ru": "К 400 г. до н. э. бронзовая и железная технологии полностью утвердились в западной Японии. Дотаку (銅鐸) — крупные бронзовые колоколообразные предметы, уникальные для Японии и не имеющие прямых континентальных аналогов, — отливаются во всё более сложных формах с гравированными сценами земледелия, охоты и ткачества: это первые репрезентативные изображения в японском искусстве. Железные орудия и оружие резко повышают сельскохозяйственную производительность.",
       "latitude": 33.36,
       "longitude": 130.42,
       "source": "https://en.wikipedia.org/wiki/Yayoi_period",
-      "tags": ["Japanese", "Yayoi"],
+      "tags": [
+        "Japanese",
+        "Yayoi"
+      ],
       "type": "cultural"
     },
     {
       "date": "01.01.0200",
       "era": "BC",
-      "name": "Yoshinogari — Japan's Largest Yayoi Walled Settlement",
-      "name_ru": "Ёсиногари — крупнейшее укреплённое поселение Яёй",
+      "name": "Yoshinogari Walled Settlement",
+      "name_ru": "Укреплённое поселение Ёсиногари",
       "description": "Yoshinogari (吉野ヶ里遺跡, Saga Prefecture, Kyushu) is the largest Yayoi-period settlement discovered in Japan, occupied c. 400 BC–250 AD and reaching its peak around 200–100 BC. The site features a double palisade with watchtowers, a central ritual precinct, large burial mound area, granaries on stilts, and evidence of social stratification in burial goods. It is the best illustration of the Yayoi transition from egalitarian Jōmon society to a hierarchical, proto-state structure with leaders, warriors, and priests. Now preserved as a national historical park.",
       "description_ru": "Ёсиногари (吉野ヶ里遺跡, префектура Сага, Кюсю) — крупнейшее из открытых поселений периода Яёй в Японии, обитаемое около 400 гг. до н. э. — 250 гг. н. э. и достигающее пика около 200–100 гг. до н. э. На площадке выявлены двойной частокол с наблюдательными башнями, центральный ритуальный участок, большая зона курганов, амбары на сваях и признаки социальной стратификации в погребальном инвентаре. Лучшая иллюстрация перехода от эгалитарного общества Дзёмон к иерархической протогосударственной структуре.",
       "latitude": 33.36,
       "longitude": 130.42,
       "source": "https://en.wikipedia.org/wiki/Yoshinogari_site",
-      "tags": ["Japanese", "Yayoi", "Holy Site"],
+      "tags": [
+        "Japanese",
+        "Yayoi",
+        "Holy Site"
+      ],
       "type": "cultural"
     },
     {
       "date": "01.01.0100",
       "era": "BC",
-      "name": "Yayoi Jar Burials and the Rise of Warrior Elites",
-      "name_ru": "Погребения в кувшинах Яёй и возвышение военной знати",
+      "name": "Rise of Warrior Elites in Yayoi Japan",
+      "name_ru": "Возвышение военной знати в Японии Яёй",
       "description": "By c. 100 BC the Yayoi world shows clear evidence of social stratification and endemic inter-community warfare: settlements are fortified, cemeteries separate elite burials (in wooden coffins with prestige goods) from commoner jar burials, and skeletal remains show high rates of traumatic injury from arrowheads and bladed weapons. Moated villages (環濠集落 kango shūraku) appear across Kyushu and western Honshu, their concentric defensive ditches a direct response to organised raiding. The warrior leader who redistributes agricultural surplus and defends the settlement — prototype of the later Japanese warrior aristocracy — emerges as the dominant social type.",
       "description_ru": "К около 100 г. до н. э. мир яёй демонстрирует явные свидетельства социальной стратификации и эндемичных войн между общинами: поселения укреплены, кладбища разделяют захоронения элиты (в деревянных гробах с престижными предметами) от погребений простолюдинов в кувшинах, а на скелетных останках высок процент травматических повреждений. По всему Кюсю и западному Хонсю появляются деревни с рвами (環濠集落 кангō сюрраку). Вождь-воин, распределяющий сельскохозяйственный избыток и защищающий поселение, — прообраз позднейшей японской военной аристократии.",
       "latitude": 33.36,
       "longitude": 130.42,
       "source": "https://en.wikipedia.org/wiki/Yayoi_period",
-      "tags": ["Japanese", "Yayoi", "Warfare"],
+      "tags": [
+        "Japanese",
+        "Yayoi",
+        "Warfare"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0057",
       "era": "AD",
-      "name": "Gold Seal of Na — First Written Record of a Japanese Kingdom",
-      "name_ru": "Золотая печать На — первое письменное упоминание японского царства",
+      "name": "Gold Seal of Na, First Record of Japan",
+      "name_ru": "Золотая печать На — первое упоминание Японии",
       "description": "The Later Han dynasty chronicle (後漢書 Hou Han Shu) records that in 57 AD the King of Na (奴国, a polity in northern Kyushu) sent envoys to the Han court and was granted a gold seal by Emperor Guangwu. The seal — inscribed '漢委奴國王' ('King of Na of Wa, a Vassal of Han') — was discovered in 1784 on Shikanoshima island near Fukuoka and is now in the Fukuoka City Museum. It is the earliest physical evidence of contact between Japan and China and the oldest documented instance of a Japanese political entity.",
       "description_ru": "Хроника Поздней Хань (後漢書 «Хоу Хань шу») фиксирует, что в 57 г. н. э. царь На (奴国, государство в северном Кюсю) отправил послов ко двору Хань и получил от императора Гуанъу золотую печать. Печать с надписью «漢委奴國王» («Царь На из Ва, вассал Хань») обнаружена в 1784 году на острове Сиканосима близ Фукуоки и хранится в Городском музее Фукуоки. Это древнейшее физическое свидетельство контактов Японии с Китаем.",
-      "latitude": 33.70,
+      "latitude": 33.7,
       "longitude": 130.45,
       "source": "https://en.wikipedia.org/wiki/King_of_Na_gold_seal",
-      "tags": ["Japanese", "Yayoi", "Chinese"],
+      "tags": [
+        "Japanese",
+        "Yayoi",
+        "Chinese"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0107",
       "era": "AD",
-      "name": "King Suishō Sends 160 Slaves to the Han Emperor",
-      "name_ru": "Царь Суйсё отправляет 160 рабов императору Хань",
+      "name": "King Suishō's Embassy to Han China",
+      "name_ru": "Посольство царя Суйсё в Ханьский Китай",
       "description": "The Later Han chronicle (後漢書) records that in 107 AD the King of Wa (倭), named Suishō (帥升), sends 160 'lives' (slaves) to the Han court of Emperor An — the earliest documented diplomatic mission from Japan involving people rather than goods. The event attests that Wa polities had sufficient organisational capacity to mount intercontinental tribute missions and that human beings were a valued diplomatic commodity. It is the last recorded contact between Japan and Han China before the collapse of Han in 220 AD and the subsequent three-century gap in Chinese records of Japan.",
       "description_ru": "Хроника Поздней Хань (後漢書) фиксирует, что в 107 г. н. э. царь Ва (倭) по имени Суйсё (帥升) отправляет 160 «живых душ» (рабов) ко двору Хань императора Ань — древнейшая задокументированная дипломатическая миссия из Японии с участием людей, а не товаров. Событие свидетельствует, что государства Ва обладали достаточным организационным потенциалом для межконтинентальных посольств. Это последний зафиксированный контакт Японии с ханьским Китаем перед распадом Хань в 220 г.",
       "latitude": 33.59,
-      "longitude": 130.40,
+      "longitude": 130.4,
       "source": "https://en.wikipedia.org/wiki/Suisho",
-      "tags": ["Japanese", "Yayoi", "Chinese"],
+      "tags": [
+        "Japanese",
+        "Yayoi",
+        "Chinese"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0189",
       "era": "AD",
-      "name": "Queen Himiko of Yamatai — Japan's First Documented Ruler",
-      "name_ru": "Царица Химико из Яматай — первый задокументированный правитель Японии",
+      "name": "Queen Himiko Rules Yamatai",
+      "name_ru": "Царица Химико правит Яматай",
       "description": "The Chinese Wei dynasty chronicle (魏志倭人伝 Wajinden, a section of the Sanguozhi, c. 297 AD) describes Queen Himiko (卑弥呼) as a shamanic ruler of Yamatai who rose to power c. 189 AD and governed through religious authority, keeping herself secluded and communicating through a male intermediary. She sends tribute missions to the Wei court in 238 and 243 AD and receives in return a gold seal, bronze mirrors, and the title 'Ruler of Wa Friendly to Wei.' The location of Yamatai — northern Kyushu or the Kinai region — remains one of the great unresolved debates of Japanese archaeology.",
       "description_ru": "Хроника государства Вэй (魏志倭人伝 «Вадзинден», часть «Саньгочжи», ок. 297 г. н. э.) описывает царицу Химико (卑弥呼) как шаманскую правительницу Яматай, которая пришла к власти около 189 г. н. э. и управляла, опираясь на религиозный авторитет, оставаясь в уединении и общаясь через посредника-мужчину. В 238 и 243 гг. она отправляет миссии с данью ко двору Вэй и получает в ответ золотую печать, бронзовые зеркала и титул «Правительница Ва, дружественная Вэй».",
-      "latitude": 33.50,
-      "longitude": 131.00,
+      "latitude": 33.5,
+      "longitude": 131,
       "source": "https://en.wikipedia.org/wiki/Himiko",
-      "tags": ["Japanese", "Yayoi"],
+      "tags": [
+        "Japanese",
+        "Yayoi"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0248",
       "era": "AD",
-      "name": "Death of Himiko and Succession of Queen Iyo",
-      "name_ru": "Смерть Химико и воцарение царицы Ийо",
+      "name": "Queen Iyo Succeeds Himiko",
+      "name_ru": "Царица Ийо сменяет Химико",
       "description": "The Wajinden records that Himiko dies c. 248 AD following a military conflict with the rival kingdom of Kunu; her burial mound, said to hold over 100 female attendants who follow her in death, is described as extremely large. A male king attempts to succeed her but the Yamatai polities fall into disorder; order is restored only when a young woman named Iyo (壹與, or Toyo) takes the throne. Iyo sends a tribute mission to the Wei court in 266 AD through the Jin dynasty, the last record of Yamatai in Chinese sources. The Himiko-Iyo succession tradition of female religious rulership may be the most ancient precursor of Japan's female emperors in the Asuka period.",
       "description_ru": "«Вадзинден» фиксирует смерть Химико около 248 г. н. э. после военного конфликта с соперничающим царством Куну; её погребальный курган, по описанию весьма большой, предположительно содержит более 100 женщин-прислужниц, последовавших за ней в смерть. Мужчина пытается сменить её, но государства Яматай погружаются в беспорядок; порядок восстанавливается лишь когда молодая женщина по имени Ийо (壹與, или Тōё) восходит на трон. Ийо отправляет дань ко двору Цзинь в 266 г. — последнее упоминание Яматай в китайских источниках.",
-      "latitude": 33.50,
-      "longitude": 131.00,
+      "latitude": 33.5,
+      "longitude": 131,
       "source": "https://en.wikipedia.org/wiki/Himiko",
-      "tags": ["Japanese", "Yayoi"],
+      "tags": [
+        "Japanese",
+        "Yayoi"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0250",
       "era": "AD",
-      "name": "Kofun Period Begins — Keyhole Burial Mounds of the Yamato Kings",
-      "name_ru": "Период Кофун — курганы в форме замочной скважины царей Ямато",
+      "name": "Kofun Period in Japan",
+      "name_ru": "Период Кофун в Японии",
       "description": "Around 250 AD, a new cultural and political phenomenon appears in the Kinai region (Nara/Osaka): enormous keyhole-shaped earthen burial mounds (前方後円墳 zenpō-kōen-fun) that signal the emergence of the Yamato political entity. The mounds grow in scale over two centuries to become the largest funerary structures on earth by volume. Their standardised form across western Japan indicates a centralised authority or at least a widely shared elite culture. Grave goods include bronze mirrors, iron weapons, and clay haniwa figures placed on the mound surface — the first figurative sculpture of human forms in Japan.",
       "description_ru": "Около 250 г. н. э. в регионе Кинай (Нара/Осака) появляется новое культурное и политическое явление: огромные земляные погребальные курганы в форме замочной скважины (前方後円墳 дзэнпō-кōэн-фун), свидетельствующие о появлении государства Ямато. Стандартизированная форма курганов по всей западной Японии указывает на централизованную власть. Погребальный инвентарь включает бронзовые зеркала, железное оружие и глиняные фигуры ханива, установленные на поверхности кургана, — первую репрезентативную скульптуру человеческих форм в Японии.",
       "latitude": 34.54,
       "longitude": 135.89,
       "source": "https://en.wikipedia.org/wiki/Kofun_period",
-      "tags": ["Japanese", "Kofun", "Holy Site"],
+      "tags": [
+        "Japanese",
+        "Kofun",
+        "Holy Site"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0285",
       "era": "AD",
-      "name": "Writing Comes to Japan — Wang In Brings the Chinese Classics",
-      "name_ru": "Письменность приходит в Японию — Ван Ин привозит китайскую классику",
+      "name": "Writing Comes to Japan from Korea",
+      "name_ru": "Письменность приходит в Японию из Кореи",
       "description": "The Nihon Shoki records that Wang In (王仁 Wani in Japanese), a scholar from the Korean kingdom of Baekje, arrives at the Yamato court around 285 AD bringing the Thousand Character Classic (千字文) and the Analects of Confucius (論語 Lunyu). Though the dates are disputed and the Thousand Character Classic was not composed until the 6th century (suggesting the chronicle's chronology is compressed), the tradition marks the beginning of classical Chinese literacy in Japan. Chinese characters (kanji) become the medium for administration, law, literature, and religion for the next millennium.",
       "description_ru": "«Нихон Сёки» сообщает, что Ван Ин (王仁, в японском прочтении Вани), учёный из корейского царства Пэкче, прибывает ко двору Ямато около 285 г., привозя «Тысячесловный канон» и «Аналекты Конфуция» (論語 Лунь юй). Хотя даты оспариваются, предание знаменует начало грамотности на основе классического китайского языка в Японии. Китайские иероглифы (кандзи) становятся средством делопроизводства, права, литературы и религии на протяжении следующего тысячелетия.",
       "latitude": 34.69,
-      "longitude": 135.50,
+      "longitude": 135.5,
       "source": "https://en.wikipedia.org/wiki/Wani_(scholar)",
-      "tags": ["Japanese", "Kofun", "Writing", "Korean"],
+      "tags": [
+        "Japanese",
+        "Kofun",
+        "Writing",
+        "Korean"
+      ],
       "type": "cultural"
     },
     {
       "date": "01.01.0395",
       "era": "AD",
-      "name": "Daisen Kofun — World's Largest Tomb by Perimeter",
-      "name_ru": "Курган Дайсэн — крупнейшая гробница мира по периметру",
+      "name": "Daisen Kofun, World's Largest Tomb",
+      "name_ru": "Курган Дайсэн — крупнейшая гробница мира",
       "description": "The Daisen Kofun (大仙陵古墳) in Sakai, Osaka — traditionally identified as the mausoleum of Emperor Nintoku — measures 486 metres in length with a total perimeter including the three moats of approximately 2.8 kilometres, making it the largest burial monument in the world by perimeter area (larger than the Great Pyramid of Giza or the Mausoleum of the First Qin Emperor). Built c. 395–427 AD and requiring an estimated 680,000 person-days of labour, it is surrounded by three concentric moats and once held more than 20,000 haniwa figures. Designated an Imperial Household Agency property and inscribed on the UNESCO Tentative List.",
       "description_ru": "Курган Дайсэн (大仙陵古墳) в Сакаи (Осака), традиционно идентифицируемый как мавзолей императора Нинтоку, имеет длину 486 метров, а общий периметр с тремя рвами составляет около 2,8 км, что делает его крупнейшим погребальным сооружением в мире по периметру охраняемой площади (превосходит Великую пирамиду в Гизе). Построен около 395–427 гг. и потребовал ориентировочно 680 000 человеко-дней труда. Окружён тремя концентрическими рвами.",
       "latitude": 34.56,
       "longitude": 135.49,
       "source": "https://en.wikipedia.org/wiki/Daisen_Kofun",
-      "tags": ["Japanese", "Kofun", "Holy Site"],
+      "tags": [
+        "Japanese",
+        "Kofun",
+        "Holy Site"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0421",
       "era": "AD",
-      "name": "Five Kings of Wa — Yamato Diplomacy with the Liu Song Dynasty",
-      "name_ru": "Пять царей Ва — дипломатия Ямато с династией Лю Сун",
+      "name": "Five Kings of Wa Seek Chinese Recognition",
+      "name_ru": "Пять царей Ва добиваются китайского признания",
       "description": "Between 421 and 478 AD, five successive Yamato rulers — known in Chinese sources as the Five Kings of Wa (倭の五王 San, Chin, Sei, Kō, Bu) — send 13 tribute missions to the Liu Song dynasty of southern China, seeking official recognition as 'Great General Who Maintains Peace in the East' (安東大将軍) with authority over the Korean peninsula kingdoms. The missions demonstrate Yamato's ambition to legitimise its dominance in East Asia through Chinese imperial sanction. The most elaborate memorial, sent by King Bu (identified with Emperor Yūryaku) in 478, is preserved in the Song Shu and is among the oldest surviving texts written by a Japanese ruler.",
       "description_ru": "В период 421–478 гг. пять последовательных правителей Ямато — «Пять царей Ва» (倭の五王), известных в китайских источниках как Сан, Тин, Сэй, Ко и Бу, — направляют 13 посольских миссий с данью к династии Лю Сун Южного Китая, добиваясь официального признания в качестве «Великого генерала, поддерживающего мир на Востоке» с властью над государствами Корейского полуострова. Наиболее развёрнутое мемориальное послание, отправленное царём Бу в 478 г., сохранилось в «Сун шу».",
       "latitude": 34.69,
       "longitude": 135.83,
       "source": "https://en.wikipedia.org/wiki/Five_kings_of_Wa",
-      "tags": ["Japanese", "Kofun", "Chinese"],
+      "tags": [
+        "Japanese",
+        "Kofun",
+        "Chinese"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0475",
       "era": "AD",
-      "name": "Baekje Scholars and Craftsmen Arrive — Continental Skills Transfer",
-      "name_ru": "Учёные и мастера из Пэкче — передача континентальных знаний",
+      "name": "Baekje Scholars and Craftsmen Arrive in Japan",
+      "name_ru": "Учёные и мастера из Пэкче прибывают в Японию",
       "description": "Following the fall of Baekje's capital Hansong to Goguryeo in 475 AD, waves of skilled refugees — scholars, Buddhist monks, bronze casters, weavers, potters, and scribes — migrate to Yamato, bringing continental technical knowledge at scale. The Nihon Shoki records specialist groups (be, 部) of immigrant craftsmen organised by skill: Fumi no Obito (scribes), Nishikori (silk weavers), Kagamitsukuri (mirror makers). This transfer of Baekje expertise accelerates Yamato's material and administrative development by generations. The same corridor of Baekje-Yamato cultural exchange will deliver Buddhism to Japan six decades later.",
       "description_ru": "После падения столицы Пэкче Хансона Когурё в 475 г. н. э. волны квалифицированных беженцев — учёных, буддийских монахов, бронзолитейщиков, ткачей, гончаров и писцов — мигрируют в Ямато, принося континентальные технические знания в широком масштабе. «Нихон Сёки» фиксирует специализированные группы (бэ, 部) иммигрантов-ремесленников, организованных по специальности: Фуми-но Обито (писцы), Нисикори (ткачи шёлка), Кагамицукури (изготовители зеркал). Тот же коридор культурного обмена Пэкче-Ямато доставит в Японию буддизм шестью десятилетиями позже.",
       "latitude": 34.69,
-      "longitude": 135.50,
+      "longitude": 135.5,
       "source": "https://en.wikipedia.org/wiki/Baekje",
-      "tags": ["Japanese", "Kofun", "Korean"],
+      "tags": [
+        "Japanese",
+        "Kofun",
+        "Korean"
+      ],
       "type": "cultural"
     },
     {
       "date": "01.01.0538",
       "era": "AD",
-      "name": "Buddhism Officially Introduced to Japan from Baekje",
-      "name_ru": "Буддизм официально введён в Японию из Пэкче",
+      "name": "Buddhism Introduced to Japan",
+      "name_ru": "Буддизм приходит в Японию",
       "description": "In 538 AD (or 552 AD by an alternative tradition), the King of Baekje sends to the Yamato court a gilt bronze image of the Buddha Shakyamuni, Buddhist sutras, and a letter praising the Dharma — the traditional date of Buddhism's official introduction to Japan. The event triggers a prolonged court conflict: the Soga clan champions the new religion while the conservative Mononobe and Nakatomi clans insist the foreign deity will anger the native kami. The Soga victory resolves the dispute within decades and Buddhism becomes the state religion of the Yamato court.",
       "description_ru": "В 538 г. (или 552 г. по альтернативной традиции) царь Пэкче направляет ко двору Ямато позолоченную бронзовую статую Будды Шакьямуни, буддийские сутры и письмо с восхвалением Дхармы — традиционная дата официального введения буддизма в Японию. Событие провоцирует затяжной конфликт при дворе: клан Сога поддерживает новую религию, тогда как консервативные кланы Мононобэ и Накатоми настаивают на том, что иноземное божество разгневает исконных ками. Победа Сога разрешает спор, и буддизм становится государственной религией двора Ямато.",
       "latitude": 34.47,
       "longitude": 135.83,
       "source": "https://en.wikipedia.org/wiki/Buddhism_in_Japan",
-      "tags": ["Japanese", "Asuka", "Buddhism", "Korean"],
+      "tags": [
+        "Japanese",
+        "Asuka",
+        "Buddhism",
+        "Korean"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0574",
       "era": "AD",
-      "name": "Birth of Prince Shōtoku — Japan's Great Legislator and Cultural Patron",
-      "name_ru": "Рождение принца Сётоку — великий законодатель и культурный покровитель Японии",
+      "name": "Birth of Prince Shōtoku",
+      "name_ru": "Рождение принца Сётоку",
       "description": "Prince Shōtoku (聖徳太子 Shōtoku Taishi, 574–622 AD), son of Emperor Yōmei and nephew of Empress Suiko, serves as regent from 593 AD and is the defining figure of the Asuka period. In roughly three decades of regency he produces the Seventeen Article Constitution, sponsors the first Japanese embassies to Sui China, promotes Buddhism as the state ideology, supervises the construction of Hōryū-ji, and — according to the Nihon Shoki — dictates a commentary on three major Buddhist sutras. He is the first Japanese figure to receive widespread posthumous veneration approaching sainthood; his face appeared on Japanese banknotes until 1984, and he is worshipped at Shitennō-ji and throughout Japan.",
       "description_ru": "Принц Сётоку (聖徳太子 Сётоку Тайси, 574–622 гг. н. э.), сын императора Ёмэй и племянник императрицы Суйко, исполняет обязанности регента с 593 г. и является определяющей фигурой периода Асука. Приблизительно за три десятилетия регентства он составляет «Конституцию семнадцати статей», спонсирует первые японские посольства в Суйский Китай, продвигает буддизм как государственную идеологию, руководит строительством Хōрюдзи. Он — первый японский деятель, удостоившийся широкого посмертного почитания, граничащего со святостью; его портрет украшал японские банкноты вплоть до 1984 г.",
       "latitude": 34.61,
       "longitude": 135.73,
       "source": "https://en.wikipedia.org/wiki/Prince_Sh%C5%8Dtoku",
-      "tags": ["Japanese", "Asuka", "Buddhism"],
+      "tags": [
+        "Japanese",
+        "Asuka",
+        "Buddhism"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0587",
       "era": "AD",
-      "name": "Battle of Shigisan — Soga Clan Defeats the Mononobe",
-      "name_ru": "Битва у горы Сигисан — клан Сога побеждает Мононобэ",
+      "name": "Battle of Shigisan, Soga Defeats Mononobe",
+      "name_ru": "Битва у горы Сигисан, Сога побеждает Мононобэ",
       "description": "In 587 AD, Soga no Umako leads the pro-Buddhist Soga clan against Mononobe no Moriya and the anti-Buddhist Mononobe clan in what tradition frames as a war over the acceptance of Buddhism. Moriya is killed in battle and the Mononobe clan is extinguished as a political force. Prince Shōtoku, said to have carved a four-heavenly-king image from a sacred tree and vowed to build a temple if victorious, commemorates the outcome by constructing Shitennō-ji in Osaka — Japan's first state-sponsored temple, founded 593 AD. The Soga victory opens two generations of Buddhist patronage and institutional construction.",
       "description_ru": "В 587 г. Сога-но-Умако ведёт прибуддийский клан Сога против Мононобэ-но-Мория и антибуддийского клана Мононобэ в войне, которую традиция трактует как сражение за принятие буддизма. Мория убит в бою, и клан Мононобэ уничтожен как политическая сила. Принц Сётоку, по преданию вырезавший из дерева образ Четырёх небесных царей и давший обет возвести храм в случае победы, строит Ситэннōдзи в Осаке — первый государственный храм Японии. Победа Сога открывает два поколения буддийского меценатства.",
-      "latitude": 34.60,
+      "latitude": 34.6,
       "longitude": 135.73,
       "source": "https://en.wikipedia.org/wiki/Soga%E2%80%93Mononobe_conflict",
-      "tags": ["Japanese", "Asuka", "Buddhism", "Warfare"],
+      "tags": [
+        "Japanese",
+        "Asuka",
+        "Buddhism",
+        "Warfare"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0588",
       "era": "AD",
-      "name": "Asuka-dera — Japan's First Full Buddhist Temple Complex",
-      "name_ru": "Асукадэра — первый полноценный буддийский монастырский комплекс Японии",
+      "name": "Asuka-dera, Japan's First Buddhist Temple",
+      "name_ru": "Асукадэра — первый буддийский храм Японии",
       "description": "Commissioned by Soga no Umako in 588 AD and completed c. 596 AD, Asuka-dera (飛鳥寺, originally Hōkō-ji) is Japan's first fully developed Buddhist monastery complex, built with architects, tile-makers, and Buddhist image craftsmen brought from Baekje. Its main image — the Asuka Daibutsu (飛鳥大仏), a seated bronze Shakyamuni cast by Tori Busshi in 609 AD — is Japan's oldest surviving large bronze Buddhist sculpture still in its original location. Though the original buildings were destroyed by fire, the site in Asuka village (Nara Prefecture) remains a functioning temple.",
       "description_ru": "Заказанный Сога-но-Умако в 588 г. и завершённый около 596 г., Асукадэра (飛鳥寺, первоначально Хōко-дзи) является первым полноценным буддийским монастырским комплексом Японии, построенным с помощью архитекторов, плиточников и мастеров изготовления буддийских образов, привезённых из Пэкче. Главный образ — Асука Дайбуцу (飛鳥大仏), сидящий бронзовый Шакьямуни, отлитый Тори Буссhи в 609 г., — является старейшей сохранившейся крупной бронзовой буддийской скульптурой Японии на первоначальном месте.",
       "latitude": 34.47,
       "longitude": 135.83,
       "source": "https://en.wikipedia.org/wiki/Asuka-dera",
-      "tags": ["Japanese", "Asuka", "Buddhism", "Holy Site"],
+      "tags": [
+        "Japanese",
+        "Asuka",
+        "Buddhism",
+        "Holy Site"
+      ],
       "type": "cultural"
     },
     {
       "date": "01.01.0604",
       "era": "AD",
-      "name": "Seventeen Article Constitution — Japan's First Administrative Law",
-      "name_ru": "Конституция семнадцати статей — первый административный закон Японии",
+      "name": "Seventeen Article Constitution",
+      "name_ru": "Конституция семнадцати статей",
       "description": "Traditionally attributed to Prince Shōtoku (聖徳太子 Shōtoku Taishi) and promulgated in 604 AD, the Seventeen Article Constitution (十七条憲法 Jūshichijō-kenpō) is Japan's first written administrative code. Drawing on Confucian ethics, Buddhist principles, and Chinese legalist thought, it mandates that officials act in harmony (和 wa), revere the Three Jewels of Buddhism, obey imperial commands, decide disputes impartially, and work without private interest. Not a legal code in the modern sense, it is a moral and political charter that defines the expected conduct of the ruling class — the foundation of Yamato statecraft.",
       "description_ru": "Традиционно приписываемая принцу Сётоку и обнародованная в 604 г., «Конституция семнадцати статей» (十七条憲法 Дзюситидзō-кэнпō) является первым письменным административным кодексом Японии. Опираясь на конфуцианскую этику, буддийские принципы и китайскую легалистскую мысль, она предписывает чиновникам действовать в согласии (和 ва), чтить Три драгоценности буддизма, повиноваться императорским повелениям и судить беспристрастно. Это моральная и политическая хартия, определяющая поведение правящего класса.",
       "latitude": 34.47,
       "longitude": 135.83,
       "source": "https://en.wikipedia.org/wiki/Seventeen-article_constitution",
-      "tags": ["Japanese", "Asuka", "Writing"],
+      "tags": [
+        "Japanese",
+        "Asuka",
+        "Writing"
+      ],
       "type": "cultural"
     },
     {
       "date": "01.01.0607",
       "era": "AD",
-      "name": "Hōryū-ji — World's Oldest Surviving Wooden Structure",
-      "name_ru": "Хōрюдзи — старейшее сохранившееся деревянное сооружение мира",
+      "name": "Hōryū-ji Built in Japan",
+      "name_ru": "Строительство Хōрюдзи в Японии",
       "description": "Hōryū-ji (法隆寺, 'Temple of the Flourishing Law') in Ikaruga, Nara Prefecture, commissioned by Prince Shōtoku and constructed from 607 AD, is the oldest surviving wooden building on earth. Rebuilt after a fire c. 670 AD (dendrochronology dates the oldest surviving timbers to 594–711 AD), its Western Precinct contains the five-storey pagoda and Golden Hall (kondō) — both of which have stood continuously for over 1,300 years. The complex holds Japan's most important collection of Asuka-period Buddhist art including the Kudara Kannon, Tamamushi Shrine, and bronze Shakyamuni Triad. UNESCO World Heritage Site since 1993.",
       "description_ru": "Хōрюдзи (法隆寺, «Храм расцветающей Дхармы») в Икаруга, префектура Нара, заказанный принцем Сётоку и строившийся с 607 г., является старейшим сохранившимся деревянным зданием на Земле. Перестроенный после пожара около 670 г. (дендрохронология датирует древнейшие балки 594–711 гг.), его западный двор содержит пятиярусную пагоду и Золотой зал (кондō) — оба стоят непрерывно более 1300 лет. Памятник Всемирного наследия ЮНЕСКО с 1993 года.",
       "latitude": 34.61,
       "longitude": 135.73,
       "source": "https://en.wikipedia.org/wiki/H%C5%8Dry%C5%AB-ji",
-      "tags": ["Japanese", "Asuka", "Buddhism", "Holy Site"],
+      "tags": [
+        "Japanese",
+        "Asuka",
+        "Buddhism",
+        "Holy Site"
+      ],
       "type": "cultural"
     },
     {
       "date": "01.01.0607",
       "era": "AD",
-      "name": "First Embassy to Sui China — Japan Addresses the Emperor as Equal",
-      "name_ru": "Первое посольство в Суйский Китай — Япония обращается к императору как равный",
+      "name": "First Embassy to Sui China",
+      "name_ru": "Первое посольство в Суйский Китай",
       "description": "In 607 AD, Prince Shōtoku sends Ono no Imoko (小野妹子) to the Sui court with a letter that begins 'The Son of Heaven in the land of the rising sun addresses the Son of Heaven in the land of the setting sun' — a diplomatically explosive formulation that implicitly claims equality with the Chinese emperor rather than the subordinate 'vassal of Han' status assumed by earlier Japanese rulers. Emperor Yang of Sui is reportedly irritated by the phrasing. The mission inaugurates a series of official embassies (遣隋使 Kentōshi) that bring back Buddhist texts, art, administrative models, and scholars who transform Yamato culture.",
       "description_ru": "В 607 г. принц Сётоку направляет Ōно-но-Имоко (小野妹子) ко двору Суй с письмом, начинающимся словами «Сын Неба в стране восходящего солнца обращается к Сыну Неба в стране заходящего солнца» — дипломатически взрывная формулировка, имплицитно претендующая на равенство с китайским императором, а не на подчинённый статус вассала. Миссия открывает серию официальных посольств (遣隋使), привозящих буддийские тексты, искусство и административные модели, преобразующие культуру Ямато.",
       "latitude": 34.47,
       "longitude": 135.83,
       "source": "https://en.wikipedia.org/wiki/Japanese_missions_to_Tang_China",
-      "tags": ["Japanese", "Asuka", "Chinese"],
+      "tags": [
+        "Japanese",
+        "Asuka",
+        "Chinese"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0630",
       "era": "AD",
-      "name": "Japanese Missions to Tang China — Nineteen Embassies, 200 Years",
-      "name_ru": "Японские посольства в Тан — девятнадцать миссий за 200 лет",
+      "name": "Japanese Missions to Tang China",
+      "name_ru": "Японские посольства в Китай эпохи Тан",
       "description": "From 630 to 894 AD, Japan sends 19 official embassy missions (遣唐使 Kentōshi) to Tang China, each comprising hundreds of students, monks, artists, and officials who spend years in Chang'an absorbing Chinese law, poetry, music, medicine, art, Buddhism, Confucianism, and Daoism before returning. The missions are expensive and dangerous — several ships are lost at sea — but are the primary mechanism by which Tang Chinese civilisation is selectively adapted into a distinctively Japanese form. The Kentōshi effectively cease after 894 AD when Sugawara no Michizane persuades the court that Tang is too unstable to warrant the cost.",
       "description_ru": "С 630 по 894 г. Япония направляет 19 официальных посольских миссий (遣唐使 Кэнтōси) в танский Китай: каждая состоит из сотен студентов, монахов, художников и чиновников, годами живущих в Чанъани и впитывающих китайское право, поэзию, музыку, медицину, искусство, буддизм, конфуцианство и даосизм. Миссии являются главным механизмом, посредством которого цивилизация танского Китая избирательно адаптируется в самобытную японскую форму. Кэнтōси прекращаются после 894 г.",
       "latitude": 34.69,
-      "longitude": 135.50,
+      "longitude": 135.5,
       "source": "https://en.wikipedia.org/wiki/Japanese_missions_to_Tang_China",
-      "tags": ["Japanese", "Asuka", "Chinese"],
+      "tags": [
+        "Japanese",
+        "Asuka",
+        "Chinese"
+      ],
       "type": "cultural"
     },
     {
       "date": "01.01.0645",
       "era": "AD",
-      "name": "Taika Reform — Centralised State Modelled on Tang China",
-      "name_ru": "Реформа Тайка — централизованное государство по образцу Тан",
+      "name": "Taika Reform in Japan",
+      "name_ru": "Реформа Тайка в Японии",
       "description": "The Taika Reform (大化の改新 Taika no Kaishin) of 645 AD follows a court coup in which Nakatomi no Kamatari and Prince Naka no Ōe assassinate Soga no Iruka and dismantle Soga dominance. The reform edicts — inspired by Tang administrative institutions — abolish private ownership of land and people by the nobility, establish a system of provincial governors appointed by the central court, standardise taxation as a percentage of rice yield, and institute a household registry for tax purposes. The reform is the foundational moment of the Japanese centralised state, though full implementation takes decades.",
       "description_ru": "Реформа Тайка (大化の改新 Тайка но Кайсин) 645 г. следует за дворцовым переворотом, в котором Накатоми-но-Камататри и принц Нака-но-Ōэ убивают Сога-но-Ирука и устраняют господство клана Сога. Эдикты реформы — вдохновлённые административными институтами Тан — отменяют частное владение землёй и людьми для знати, учреждают систему губернаторов провинций, назначаемых центральным двором, и стандартизируют налогообложение. Это основополагающий момент японского централизованного государства.",
       "latitude": 34.69,
-      "longitude": 135.50,
+      "longitude": 135.5,
       "source": "https://en.wikipedia.org/wiki/Taika_Reform",
-      "tags": ["Japanese", "Asuka", "Chinese"],
+      "tags": [
+        "Japanese",
+        "Asuka",
+        "Chinese"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0663",
       "era": "AD",
-      "name": "Battle of Hakusukinoe — Japan's Great Naval Defeat",
-      "name_ru": "Битва при Хакусукиноэ — великое морское поражение Японии",
+      "name": "Battle of Hakusukinoe, Japan's Naval Defeat",
+      "name_ru": "Битва при Хакусукиноэ, морское поражение Японии",
       "description": "In 663 AD, a Japanese fleet of approximately 400 ships and 27,000 troops — sent to support the defeated Baekje kingdom against the Silla-Tang alliance — is destroyed at the mouth of the Baenggang River (白村江 Hakusukinoe) in Korea in two days of naval battle. The Tang-Silla fleet of 170 ships wins decisively. Japan abandons its ambitions on the Korean peninsula permanently and, fearing Tang invasion, builds coastal forts, water barriers (mizuki), and beacon signal systems across northern Kyushu and western Honshu. The defeat accelerates domestic reforms: the Yamato court intensifies centralisation to match Tang-style military power.",
       "description_ru": "В 663 г. японский флот, примерно 400 кораблей и 27 000 воинов, направленный на поддержку разгромленного царства Пэкче против альянса Силла-Тан, уничтожен в устье реки Пэккан (白村江 Хакусукиноэ) в Корее в ходе двухдневного морского сражения. Флот Тан-Силла из 170 кораблей одерживает решительную победу. Япония навсегда отказывается от притязаний на Корейский полуостров. Поражение ускоряет внутренние реформы: двор Ямато интенсифицирует централизацию.",
-      "latitude": 36.00,
-      "longitude": 126.70,
+      "latitude": 36,
+      "longitude": 126.7,
       "source": "https://en.wikipedia.org/wiki/Battle_of_Baekgang",
-      "tags": ["Japanese", "Asuka", "Korean", "Warfare"],
+      "tags": [
+        "Japanese",
+        "Asuka",
+        "Korean",
+        "Warfare"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0672",
       "era": "AD",
-      "name": "Jinshin War — Emperor Tenmu Seizes Power",
-      "name_ru": "Война Дзинсин — Emperor Тэмму захватывает власть",
+      "name": "Jinshin War, Emperor Tenmu's Rise",
+      "name_ru": "Война Дзинсин, возвышение императора Тэмму",
       "description": "The Jinshin War (壬申の乱 Jinshin no Ran) of 672 AD is the largest and most consequential civil conflict in early Japanese history, fought between Prince Ōama (the future Emperor Tenmu) and Prince Ōtomo (Emperor Kōbun) over the succession following Emperor Tenji's death. Ōama, commanding eastern warriors and provincial warrior bands, defeats the court-based faction in six weeks. Tenmu's subsequent reign (673–686 AD) transforms the Yamato polity: he takes direct control of religion, bans the clan-based military aristocracy from holding positions, centralises power under the imperial title, and initiates the official compilations of chronicles (Kojiki and Nihon Shoki) and law codes.",
       "description_ru": "Война Дзинсин (壬申の乱 Дзинсин-но Ран) 672 г. — крупнейший и наиболее значимый гражданский конфликт в ранней японской истории, сражавшийся между принцем Ōама (будущим императором Тэмму) и принцем Ōтомо за наследование после смерти императора Тэндзи. Тэмму, командуя восточными воинами и провинциальными отрядами, разбивает придворную фракцию за шесть недель. Последующее правление Тэмму преобразует государство Ямато: он централизует власть под императорским титулом и инициирует официальные компиляции хроник и правовых кодексов.",
       "latitude": 35.43,
       "longitude": 136.73,
       "source": "https://en.wikipedia.org/wiki/Jinshin_War",
-      "tags": ["Japanese", "Asuka", "Warfare"],
+      "tags": [
+        "Japanese",
+        "Asuka",
+        "Warfare"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0681",
       "era": "AD",
-      "name": "Emperor Tenmu Orders the Chronicles Compiled",
-      "name_ru": "Император Тэмму приказывает составить хроники",
+      "name": "Tenmu Orders Japan's Chronicles Compiled",
+      "name_ru": "Тэмму приказывает составить японские хроники",
       "description": "In 681 AD, Emperor Tenmu issues an imperial order for the systematic compilation of genealogies of the imperial family and 'records of ancient matters' — the direct commissioning act that eventually produces the Kojiki (712 AD) and initiates the Nihon Shoki (720 AD). Tenmu simultaneously bans the clan-held private genealogies that competing noble houses had used to assert independent historical legitimacy, centralising the narrative of Japan's past under imperial control. The act is both a cultural project and a political one: by controlling the mythological origins story, Tenmu binds the legitimacy of all noble houses to a single imperial lineage descending from Amaterasu.",
       "description_ru": "В 681 г. н. э. император Тэмму издаёт императорский приказ о систематическом составлении генеалогий императорской семьи и «записей о древних событиях» — непосредственный акт заказа, который в конечном счёте порождает «Кодзики» (712 г.) и инициирует «Нихон Сёки» (720 г.). Одновременно Тэмму запрещает клановые частные генеалогии, которые конкурирующие аристократические дома использовали для утверждения независимой исторической легитимности, централизуя повествование о прошлом Японии под императорским контролем.",
       "latitude": 34.47,
       "longitude": 135.83,
       "source": "https://en.wikipedia.org/wiki/Emperor_Tenmu",
-      "tags": ["Japanese", "Asuka", "Writing"],
+      "tags": [
+        "Japanese",
+        "Asuka",
+        "Writing"
+      ],
       "type": "cultural"
     },
     {
       "date": "01.01.0689",
       "era": "AD",
-      "name": "Asuka Kiyomihara Code — Japan's First Comprehensive Legal System",
-      "name_ru": "Кодекс Асука Киёмихара — первая комплексная правовая система Японии",
+      "name": "Asuka Kiyomihara Legal Code",
+      "name_ru": "Правовой кодекс Асука Киёмихара",
       "description": "Promulgated posthumously in 689 AD under Empress Jitō (Emperor Tenmu's consort and successor), the Asuka Kiyomihara Code (飛鳥浄御原令 Asuka Kiyomihara-ryō) is Japan's first comprehensive administrative and legal code, establishing the ritsuryō (律令) system of governance modelled on Tang law. It defines the hierarchy of court ranks, the structure of the eight ministries and provincial administration, and codifies procedures for land taxation, census, and military conscription. The Code transforms Yamato from a chieftaincy confederation into a legally defined imperial state — the direct precursor to the Taihō Code of 701.",
       "description_ru": "Обнародованный посмертно в 689 г. при императрице Дзитō (супруге и преемнице императора Тэмму), «Кодекс Асука Киёмихара» (飛鳥浄御原令) является первым комплексным административным и правовым кодексом Японии, устанавливающим систему управления рицурё (律令) по образцу законодательства Тан. Он определяет иерархию придворных рангов, структуру восьми министерств и провинциального управления, кодифицирует процедуры земельного налогообложения, переписи и военной обязанности.",
       "latitude": 34.47,
       "longitude": 135.83,
       "source": "https://en.wikipedia.org/wiki/Asuka-Kiyomihara_Code",
-      "tags": ["Japanese", "Asuka", "Writing"],
+      "tags": [
+        "Japanese",
+        "Asuka",
+        "Writing"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0694",
       "era": "AD",
-      "name": "Fujiwara-kyō — Japan's First Fully Planned Capital City",
+      "name": "Fujiwara-kyō, Japan's First Planned Capital",
       "name_ru": "Фудзивара-кё — первая спланированная столица Японии",
       "description": "Fujiwara-kyō (藤原京), established in 694 AD under Empress Jitō and serving as the capital until 710 AD, is Japan's first city designed on a full Chinese-style grid plan (条坊制 jōbōsei), with a north-south central boulevard, a regular block system, a palace precinct at the north, and official market areas designated by law. Though smaller than its successor Nara, it is the first settlement in Japan to function as a true capital city in the continental sense — concentrating the court, bureaucracy, temples, and population in a single planned urban space. Its site in Kashihara (Nara Prefecture) is currently under excavation.",
       "description_ru": "Фудзивара-кё (藤原京), основанная в 694 г. при императрице Дзитō и служившая столицей до 710 г., является первым городом в Японии, спроектированным по полному китайскому плану сетки (条坊制 дзōбōсэй): центральный бульвар с севера на юг, регулярная квартальная система, дворцовый квартал на севере и официальные рыночные территории. Первое поселение в Японии, функционирующее как подлинная столица в континентальном смысле — концентрирующее двор, бюрократию, храмы и население в едином спланированном городском пространстве.",
-      "latitude": 34.50,
+      "latitude": 34.5,
       "longitude": 135.81,
       "source": "https://en.wikipedia.org/wiki/Fujiwara-ky%C5%8D",
-      "tags": ["Japanese", "Asuka", "Holy Site"],
+      "tags": [
+        "Japanese",
+        "Asuka",
+        "Holy Site"
+      ],
       "type": "cultural"
     },
     {
       "date": "01.01.0701",
       "era": "AD",
-      "name": "Taihō Code — Japan's Tang-Inspired Imperial Legal System",
-      "name_ru": "Кодекс Тайхō — имперская правовая система Японии по образцу Тан",
+      "name": "Taihō Legal Code in Japan",
+      "name_ru": "Правовой кодекс Тайхō в Японии",
       "description": "The Taihō Code (大宝律令 Taihō Ritsuryō), promulgated in 701 AD under Emperor Monmu, is Japan's first complete and lasting administrative law code, comprising a criminal code (律 ritsu) and administrative statute (令 ryō). Compiled by Fujiwara no Fuhito and others on the model of Tang China's Yonghui Code, it defines the central eight-ministry bureaucracy, 68 provincial units, the court rank system of 30 levels, land allotment (班田収授法 handen shūju-hō), and tax obligations in rice, cloth, and labour. It remains the constitutional framework of Japanese imperial government for over three centuries.",
       "description_ru": "Кодекс Тайхō (大宝律令 Тайхō Рицурё), обнародованный в 701 г. при императоре Монму, — первый полный и долговременный административный правовой кодекс Японии, включающий уголовный кодекс (律 рицу) и административный устав (令 рё). Составленный Фудзивара-но-Фухито и другими по образцу «Кодекса Юнхуэй» танского Китая, он определяет центральную бюрократию из восьми министерств, 68 провинциальных единиц, систему придворных рангов из 30 ступеней и земельные налоговые обязательства.",
-      "latitude": 34.50,
+      "latitude": 34.5,
       "longitude": 135.81,
       "source": "https://en.wikipedia.org/wiki/Taiho_Code",
-      "tags": ["Japanese", "Asuka", "Writing", "Chinese"],
+      "tags": [
+        "Japanese",
+        "Asuka",
+        "Writing",
+        "Chinese"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0710",
       "era": "AD",
-      "name": "Heijō-kyō (Nara) — Capital Modelled on Tang Chang'an",
-      "name_ru": "Хэйдзё-кё (Нара) — столица по образцу Чанъани",
+      "name": "Heijō-kyō Becomes Japan's Capital",
+      "name_ru": "Хэйдзё-кё становится столицей Японии",
       "description": "In 710 AD, Empress Genmei moves the capital to Heijō-kyō (平城京, modern Nara), a city laid out on the Chang'an grid model at approximately one-quarter the scale of Tang China's capital: 4.8 km east-west by 4.3 km north-south, with the imperial palace at the north-centre and a chequerboard of avenues dividing the city into numbered blocks. Nara remains the capital for 74 years (710–784 AD) and gives its name to the Nara period, Japan's first full flourishing of continental-style culture — including the first chronicles, the first national poetry anthology, and the great bronze Buddha.",
       "description_ru": "В 710 г. императрица Гэнмэй переносит столицу в Хэйдзё-кё (平城京, совр. Нара) — город, спланированный по образцу Чанъани примерно в четверть масштаба столицы Тан: 4,8 км с запада на восток и 4,3 км с севера на юг, с императорским дворцом в северно-центральном положении. Нара остаётся столицей 74 года (710–784 гг.) и даёт название периоду Нара — первому полному расцвету в Японии культуры континентального стиля.",
       "latitude": 34.68,
       "longitude": 135.81,
       "source": "https://en.wikipedia.org/wiki/Nara_period",
-      "tags": ["Japanese", "Nara", "Holy Site", "Chinese"],
+      "tags": [
+        "Japanese",
+        "Nara",
+        "Holy Site",
+        "Chinese"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0712",
       "era": "AD",
-      "name": "Kojiki — Japan's Oldest Chronicle and Creation Myth",
-      "name_ru": "Кодзики — древнейшая хроника и миф о сотворении Японии",
+      "name": "Kojiki, Japan's Oldest Chronicle",
+      "name_ru": "Кодзики — древнейшая хроника Японии",
       "description": "The Kojiki (古事記, 'Record of Ancient Matters'), completed in 712 AD under Emperor Genmei by Ō no Yasumaro based on oral recitations by the court memorist Hieda no Are, is Japan's oldest surviving written text. It records the age of the gods (神代 kamiyo) — the creation of the islands by Izanagi and Izanami, the birth of Amaterasu (sun goddess), the mythological descent of the imperial line from the kami — and then the reigns of the legendary and semi-historical emperors to the early 7th century. Written in classical Chinese with Japanese phonetic glosses, it is the primary source of Shinto mythology and a foundational text of Japanese identity.",
       "description_ru": "«Кодзики» (古事記, «Записи о деяниях древности»), завершённые в 712 г. при императрице Гэнмэй Ōно-но Ясумаро на основе устных рецитаций дворцового мнемониста Хиэда-но Арэ, — древнейший сохранившийся письменный текст Японии. Он фиксирует век богов (神代 камиё) — создание островов Идзанаги и Идзанами, рождение Аматэрасу, мифологический спуск императорской линии от ками — затем правления легендарных и полуисторических императоров вплоть до начала VII в. Основной источник мифологии Синто.",
       "latitude": 34.68,
       "longitude": 135.81,
       "source": "https://en.wikipedia.org/wiki/Kojiki",
-      "tags": ["Japanese", "Nara", "Writing"],
+      "tags": [
+        "Japanese",
+        "Nara",
+        "Writing"
+      ],
       "type": "cultural"
     },
     {
       "date": "01.01.0720",
       "era": "AD",
-      "name": "Nihon Shoki — Japan's Official History as East Asian State",
-      "name_ru": "Нихон Сёки — официальная история Японии как восточноазиатского государства",
+      "name": "Nihon Shoki Completed",
+      "name_ru": "Завершение Нихон Сёки",
       "description": "The Nihon Shoki (日本書紀, 'Chronicles of Japan'), completed in 720 AD under Prince Toneri with Ō no Yasumaro, is Japan's second official chronicle and the first written entirely in classical Chinese — presenting Japan to the international Sinosphere as a civilised state with deep historical roots. More historically structured than the Kojiki, it covers the age of the gods through 697 AD, incorporates variant traditions, and draws explicitly on Chinese and Korean sources for cross-referencing. Together with the Kojiki it forms the textual basis of imperial legitimacy and Shinto cosmology; the two texts are the first of the Six National Histories (六国史 Rikkokushi).",
       "description_ru": "«Нихон Сёки» (日本書紀, «Анналы Японии»), завершённые в 720 г. под руководством принца Тонэри при участии Ōно-но Ясумаро, — второй официальный летописный свод Японии и первый, написанный полностью на классическом китайском языке, — представляет Японию в синосферном международном пространстве как цивилизованное государство с глубокими историческими корнями. Охватывает от века богов до 697 г. н. э. Совместно с «Кодзики» образует текстовую основу имперской легитимности и Синтō.",
       "latitude": 34.68,
       "longitude": 135.81,
       "source": "https://en.wikipedia.org/wiki/Nihon_Shoki",
-      "tags": ["Japanese", "Nara", "Writing"],
+      "tags": [
+        "Japanese",
+        "Nara",
+        "Writing"
+      ],
       "type": "cultural"
     },
     {
       "date": "01.01.0724",
       "era": "AD",
-      "name": "Shōsō-in — Nara's Imperial Repository and Silk Road Treasure House",
-      "name_ru": "Сōсōин — императорская сокровищница Нары и «сокровищница Шёлкового пути»",
+      "name": "Shōsō-in Imperial Repository in Nara",
+      "name_ru": "Императорская сокровищница Сōсōин в Наре",
       "description": "The Shōsō-in (正倉院), a log-cabin style raised storehouse on the Tōdai-ji compound in Nara, built c. 724 AD and used for storing the imperial household's treasures, contains approximately 9,000 objects collected by Emperor Shōmu and dedicated to Tōdai-ji in 756 AD by Empress Kōmyō after his death. The collection includes silks, musical instruments, weapons, lacquerware, glass vessels, and documents from Tang China, Central Asia, Persia, and the eastern Mediterranean — the easternmost terminus of Silk Road luxury exchange. Managed by the Imperial Household Agency and still opened annually for its 'Shōsō-in Exhibition' in Nara.",
       "description_ru": "Сōсōин (正倉院), бревенчатый приподнятый склад на территории Тōдайдзи в Наре, построенный около 724 г. и использовавшийся для хранения сокровищ императорского двора, содержит около 9 000 предметов, собранных императором Сёму и пожертвованных Тōдайдзи в 756 г. императрицей Кōмёдзи после его смерти. Коллекция включает шёлк, музыкальные инструменты, оружие, лаковые изделия, стеклянные сосуды и документы из Тан, Центральной Азии, Персии и Восточного Средиземноморья — крайняя восточная точка шёлковой торговли предметами роскоши.",
       "latitude": 34.68,
       "longitude": 135.84,
       "source": "https://en.wikipedia.org/wiki/Sh%C5%8Ds%C5%8D-in",
-      "tags": ["Japanese", "Nara", "Holy Site"],
+      "tags": [
+        "Japanese",
+        "Nara",
+        "Holy Site"
+      ],
       "type": "cultural"
     },
     {
       "date": "01.01.0735",
       "era": "AD",
-      "name": "Great Tenpyō Smallpox Epidemic — Japan Loses a Third of Its Population",
-      "name_ru": "Великая эпидемия оспы Тэмпё — Япония теряет треть населения",
+      "name": "Great Tenpyō Smallpox Epidemic",
+      "name_ru": "Великая эпидемия оспы Тэмпё",
       "description": "The Tenpyō smallpox epidemic (天平の疫病 Tenpyō no ekibyō) of 735–737 AD, entering Japan through Dazaifu in northern Kyushu from Korean and continental contacts, kills an estimated 25–35% of Japan's total population — the most catastrophic demographic event in Japanese history before the modern era. All four sons of the powerful Fujiwara no Fuhito die within months, severely disrupting the government. Emperor Shōmu responds with a massive Buddhist state response: ordering provincial monasteries (国分寺 kokubunji) and nunneries in every province and the construction of the Great Buddha at Tōdai-ji, explicitly as an appeal for divine protection.",
       "description_ru": "Эпидемия оспы в годы Тэмпё (天平の疫病) 735–737 гг., проникшая в Японию через Дадзайфу в северном Кюсю, уносит жизни от 25 до 35% всего населения Японии — наиболее катастрофическое демографическое событие в японской истории до Нового времени. Все четыре сына могущественного Фудзивара-но-Фухито погибают в течение нескольких месяцев. Император Сёму отвечает масштабной буддийской государственной реакцией: приказывает основать провинциальные монастыри в каждой провинции и возвести Великого Будду в Тōдайдзи.",
       "latitude": 33.51,
       "longitude": 130.53,
       "source": "https://en.wikipedia.org/wiki/735%E2%80%93737_Japanese_smallpox_epidemic",
-      "tags": ["Japanese", "Nara"],
+      "tags": [
+        "Japanese",
+        "Nara"
+      ],
       "type": "historic"
     },
     {
@@ -467,189 +609,249 @@
       "latitude": 34.69,
       "longitude": 135.84,
       "source": "https://en.wikipedia.org/wiki/Kokubunji",
-      "tags": ["Japanese", "Nara", "Buddhism"],
+      "tags": [
+        "Japanese",
+        "Nara",
+        "Buddhism"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0743",
       "era": "AD",
-      "name": "Konden Einen Shizai Hō — Privatisation of Land Begins",
-      "name_ru": "Кондэн Эйнэн Сидзай Хō — начало приватизации земли",
+      "name": "Land Privatisation Law in Japan",
+      "name_ru": "Закон о приватизации земли в Японии",
       "description": "The Konden Einen Shizai Hō (墾田永年私財法, 'Act for the Permanent Privatisation of Newly Reclaimed Land') of 743 AD allows whoever clears new land to own it permanently — a major departure from the Taihō Code principle of public land ownership. Though intended to incentivise agricultural expansion, it becomes the legal foundation of the shōen (荘園) private estate system, under which powerful temples, nobles, and later samurai clans accumulate tax-exempt landholdings outside the imperial tax system. The law quietly begins the erosion of the ritsuryō centralised state and the growth of the private power that will produce the feudal era.",
       "description_ru": "«Кондэн Эйнэн Сидзай Хō» (墾田永年私財法, «Закон о постоянной приватизации вновь освоенных земель») 743 г. позволяет тому, кто расчищает новые земли, владеть ими постоянно — существенное отступление от принципа государственной собственности на землю по кодексу Тайхō. Хотя закон призван стимулировать сельскохозяйственное освоение, он становится правовой основой системы частных поместий сёэн (荘園), в рамках которой крупные храмы и знать аккумулируют не облагаемые налогом земельные владения — тихо подрывая централизованное государство рицурё.",
       "latitude": 34.68,
       "longitude": 135.81,
       "source": "https://en.wikipedia.org/wiki/Konden_Einen_Shizai_H%C5%8D",
-      "tags": ["Japanese", "Nara"],
+      "tags": [
+        "Japanese",
+        "Nara"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0752",
       "era": "AD",
-      "name": "Tōdai-ji Great Buddha — Nara's Defining Monument",
-      "name_ru": "Великий Будда Тōдайдзи — главный монумент Нары",
+      "name": "Tōdai-ji Great Buddha in Nara",
+      "name_ru": "Великий Будда Тōдайдзи в Наре",
       "description": "The Great Buddha (奈良の大仏 Nara no Daibutsu) of Tōdai-ji (東大寺), a 15-metre seated bronze Vairocana Buddha commissioned by Emperor Shōmu and dedicated in a ceremony attended by 10,000 monks and the Indian monk Bodhisena in 752 AD, was the largest bronze casting in the world at the time of its completion. The dedication ceremony (開眼供養 kaigen-kuyō) was attended by Emperor Shōmu, retired but still directing affairs, and featured music and dance from China, Korea, Central Asia, and India — the most cosmopolitan event in Japanese history to that point. Tōdai-ji's Great Hall (大仏殿 Daibutsuden) is the largest wooden building in the world. UNESCO World Heritage Site.",
       "description_ru": "Великий Будда Нары (奈良の大仏 Нара-но Дайбуцу) в Тōдайдзи (東大寺), 15-метровый сидящий бронзовый Вайрочана, заказанный императором Сёму и посвящённый на церемонии с участием 10 000 монахов и индийского монаха Бодхисены в 752 г., являлся крупнейшей бронзовой отливкой в мире на момент завершения. Великий зал Тōдайдзи (大仏殿 Дайбуцудэн) — крупнейшее деревянное здание в мире. Объект Всемирного наследия ЮНЕСКО.",
       "latitude": 34.69,
       "longitude": 135.84,
       "source": "https://en.wikipedia.org/wiki/T%C5%8Ddai-ji",
-      "tags": ["Japanese", "Nara", "Buddhism", "Holy Site"],
+      "tags": [
+        "Japanese",
+        "Nara",
+        "Buddhism",
+        "Holy Site"
+      ],
       "type": "cultural"
     },
     {
       "date": "01.01.0754",
       "era": "AD",
-      "name": "Ganjin Arrives — Proper Buddhist Ordination Established in Japan",
-      "name_ru": "Прибытие Гандзина — установление правильного буддийского рукоположения в Японии",
+      "name": "Ganjin Arrives in Japan",
+      "name_ru": "Гандзин прибывает в Японию",
       "description": "Ganjin (鑒真 Jianzhen in Chinese, 688–763 AD), an eminent Vinaya master from Yangzhou invited by Japanese monks to come to Japan and establish a legitimate ordination platform, arrives in Nara in 754 AD after five failed attempts, on the sixth having lost his eyesight from tropical disease. His arrival resolves a century-long problem: Japanese monks had been ordained without the required minimum of three qualified masters, making their ordination canonically invalid by Vinaya rules. Ganjin establishes an ordination platform at Tōdai-ji and ordains Emperor Shōmu and Empress Kōmyō as lay Buddhists. He founds Tōshōdai-ji (唐招提寺) in Nara, still standing.",
       "description_ru": "Гандзин (鑒真 Цзяньчжэнь, 688–763 гг.), выдающийся мастер Винаи из Янчжоу, приглашённый японскими монахами для установления законной платформы рукоположения, прибывает в Нару в 754 г. после пяти неудачных попыток, потеряв зрение от тропической болезни в ходе шестой. Его прибытие решает проблему, длившуюся столетие: японские монахи рукополагались без необходимого минимума трёх квалифицированных мастеров, что делало их рукоположение канонически недействительным. Гандзин основывает Тōсёдайдзи (唐招提寺) в Наре, сохранившийся по сей день.",
       "latitude": 34.69,
       "longitude": 135.84,
       "source": "https://en.wikipedia.org/wiki/Jianzhen",
-      "tags": ["Japanese", "Nara", "Buddhism", "Chinese"],
+      "tags": [
+        "Japanese",
+        "Nara",
+        "Buddhism",
+        "Chinese"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0759",
       "era": "AD",
-      "name": "Man'yōshū — Japan's Oldest Poetry Anthology",
-      "name_ru": "Манъёсю — старейшая поэтическая антология Японии",
+      "name": "Man'yōshū Poetry Anthology Compiled",
+      "name_ru": "Составление поэтической антологии Манъёсю",
       "description": "The Man'yōshū (万葉集, 'Collection of Ten Thousand Leaves'), compiled in its final form c. 759 AD, is Japan's oldest and largest poetry anthology with 4,516 poems in 20 volumes, spanning roughly 350 years (c. 347–759 AD). Unlike later court poetry, it encompasses voices across social classes: emperors, nobles, border guards, and anonymous common people. The dominant form is the tanka (短歌, 31-syllable poem). Written in a Japanese phonetic script called Man'yōgana, it represents the first sustained literary use of Japanese phonetics and is the ancestor of subsequent Japanese writing systems. Its poetry of love, nature, grief, and duty remains celebrated as Japan's foundational literary voice.",
       "description_ru": "«Манъёсю» (万葉集, «Собрание десяти тысяч листьев»), составленная в окончательном виде около 759 г., — старейшая и крупнейшая поэтическая антология Японии: 4516 стихотворений в 20 томах, охватывающих около 350 лет (ок. 347–759 гг.). В отличие от позднейшей придворной поэзии, она включает голоса всех общественных классов: императоров, знати, пограничных стражников и анонимных простолюдинов. Написанная фонетическим письмом манъёгана, она является первым устойчивым литературным использованием японской фонетики — предком последующих систем письма.",
       "latitude": 34.68,
       "longitude": 135.81,
       "source": "https://en.wikipedia.org/wiki/Man%27y%C5%8Dsh%C5%AB",
-      "tags": ["Japanese", "Nara", "Writing"],
+      "tags": [
+        "Japanese",
+        "Nara",
+        "Writing"
+      ],
       "type": "cultural"
     },
     {
       "date": "01.01.0764",
       "era": "AD",
-      "name": "Dōkyō — Buddhist Monk Nearly Seizes the Imperial Throne",
-      "name_ru": "Дōкё — буддийский монах чуть не захватывает императорский трон",
+      "name": "Dōkyō Affair, Monk Threatens the Throne",
+      "name_ru": "Дело Дōкё: монах угрожает императорскому трону",
       "description": "Dōkyō (道鏡, c. 700–772 AD), a Buddhist monk of the Hossō school who becomes the personal spiritual physician and favourite of Empress Shōtoku (formerly Empress Kōken), accumulates extraordinary political power — appointed Hōō (法王, 'Dharma King') in 766 AD, a title previously reserved for retired emperors. When an oracle from the Usa Hachiman Shrine purportedly recommends that Dōkyō be made emperor, the court official Wake no Kiyomaro is sent to verify the oracle and returns with a contrary message; Dōkyō is exiled after Empress Shōtoku's death in 770 AD. The incident so alarms the court that women are effectively barred from the imperial succession for the next 1,200 years.",
       "description_ru": "Дōкё (道鏡, ок. 700–772 гг.), буддийский монах школы Хоссō, ставший личным духовным врачом и любимцем императрицы Сётоку, аккумулирует необычайную политическую власть — назначается Хōō (法王, «Царь Дхармы») в 766 г. Когда оракул святилища Уса Хатиман якобы рекомендует сделать Дōкё императором, Вакэ-но Киёмаро отправляется проверить оракул и возвращается с противоположным ответом. Инцидент настолько тревожит двор, что женщины фактически отстраняются от престолонаследия на следующие 1200 лет.",
       "latitude": 34.68,
       "longitude": 135.81,
       "source": "https://en.wikipedia.org/wiki/D%C5%8Dky%C5%8D",
-      "tags": ["Japanese", "Nara", "Buddhism"],
+      "tags": [
+        "Japanese",
+        "Nara",
+        "Buddhism"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0780",
       "era": "AD",
-      "name": "Ezo Wars — Yamato's Long Struggle for Northern Honshu",
-      "name_ru": "Войны с эдзо — долгая борьба Ямато за северный Хонсю",
+      "name": "Ezo Wars in Northern Japan",
+      "name_ru": "Войны с эдзо на севере Японии",
       "description": "The Emishi (蝦夷), a people of northern Honshu who may have been related to the Jōmon population and who resist Yamato incorporation, mount a series of increasingly effective military campaigns against Yamato from c. 780 AD. General Ōtomo no Yakamochi's campaign fails in 780; a subsequent campaign is also repulsed. The decisive Yamato counter-offensive is led by Sakanoue no Tamuramaro (坂上田村麻呂), appointed Sei-i Taishōgun ('Generalissimo Subduing the East,' the origin of the title 'Shogun') in 797 AD, who campaigns in 801–802 AD and successfully incorporates most of Emishi territory into the Yamato realm. The 'Shogun' title originates in this conflict.",
       "description_ru": "Эмиси (蝦夷) северного Хонсю, возможно связанные с населением Дзёмон и сопротивляющиеся включению в состав Ямато, ведут серию всё более эффективных военных кампаний против Ямато с около 780 г. Решающее контрнаступление Ямато возглавляет Саканоуэ-но Тамурамаро (坂上田村麻呂), назначенный Сэй-и Тайсёгун («Генералиссимус, усмиряющий Восток», — источник титула «Сёгун») в 797 г., успешно включающий большую часть территории эмиси в государство Ямато.",
       "latitude": 38.27,
       "longitude": 140.87,
       "source": "https://en.wikipedia.org/wiki/Emishi",
-      "tags": ["Japanese", "Nara", "Warfare"],
+      "tags": [
+        "Japanese",
+        "Nara",
+        "Warfare"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0784",
       "era": "AD",
-      "name": "Nagaoka-kyō — The Cursed Interim Capital",
-      "name_ru": "Нагаока-кё — проклятая временная столица",
+      "name": "Nagaoka-kyō, Japan's Interim Capital",
+      "name_ru": "Нагаока-кё — временная столица Японии",
       "description": "In 784 AD, Emperor Kanmu abandons Nara and moves the capital to Nagaoka-kyō (長岡京, modern Kyoto Prefecture), hoping to escape the excessive political influence of the Nara Buddhist establishments and the grudge of Prince Sawara — a political rival starved to death — whose vengeful spirit is blamed for the subsequent calamities: the assassination of the construction supervisor Fujiwara no Tanetsugu in 785 AD, epidemic disease, floods, and the death of Empress Fujiwara no Otomuro. After a decade of catastrophe, Kanmu abandons Nagaoka and moves again — this time to the site that becomes Heian-kyō (Kyoto) in 794 AD.",
       "description_ru": "В 784 г. н. э. император Камму оставляет Нару и переносит столицу в Нагаока-кё (長岡京, совр. префектура Киото), надеясь избежать чрезмерного политического влияния нарских буддийских учреждений и гнева принца Савара — политического соперника, уморённого голодом — чей мстительный дух обвиняется в последовавших катастрофах: убийстве руководителя строительства Фудзивара-но Тануэцугу в 785 г., эпидемиях, наводнениях и смерти императрицы. После десятилетия катастроф Камму вновь переносит столицу — на сей раз в место, ставшее Хэйан-кё (Киото) в 794 г.",
       "latitude": 34.92,
       "longitude": 135.69,
       "source": "https://en.wikipedia.org/wiki/Nagaoka-ky%C5%8D",
-      "tags": ["Japanese", "Nara", "Heian"],
+      "tags": [
+        "Japanese",
+        "Nara",
+        "Heian"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0794",
       "era": "AD",
-      "name": "Heian-kyō (Kyoto) — Capital for Eleven Centuries",
-      "name_ru": "Хэйан-кё (Киото) — столица одиннадцати веков",
+      "name": "Heian-kyō Becomes Japan's Capital",
+      "name_ru": "Хэйан-кё становится столицей Японии",
       "description": "After a failed decade at the interim capital Nagaoka-kyō (abandoned due to political violence, floods, and a vengeful spirit), Emperor Kanmu establishes Heian-kyō (平安京, 'Capital of Peace and Tranquility,' modern Kyoto) in 794 AD — Japan's capital for the next 1,074 years until 1869. The city follows the Chang'an grid plan at two-thirds scale: 5.2 km east-west, 4.5 km north-south, with the Daidairi palace complex at the north and two official markets east and west. The Heian period (794–1185 AD) that takes its name from the city is Japan's classical cultural golden age, producing the world's first novel, the tradition of waka poetry, and the aesthetic ideal of mono no aware.",
       "description_ru": "После неудавшегося десятилетия во временной столице Нагаока-кё (заброшенной из-за политического насилия, наводнений и мстительного духа) император Камму основывает Хэйан-кё (平安京, «Столица мира и спокойствия», совр. Киото) в 794 г. — столицу Японии на следующие 1074 года вплоть до 1869 г. Город следует сетчатому плану Чанъани в двух третях масштаба. Период Хэйан (794–1185 гг.), получивший имя от столицы, — классическая культурная золотая эпоха Японии.",
       "latitude": 35.01,
       "longitude": 135.76,
       "source": "https://en.wikipedia.org/wiki/Heian_period",
-      "tags": ["Japanese", "Heian", "Holy Site"],
+      "tags": [
+        "Japanese",
+        "Heian",
+        "Holy Site"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0797",
       "era": "AD",
-      "name": "Shoku Nihongi — First of the Six National Histories",
-      "name_ru": "Сёку Нихонги — первая из шести национальных историй",
+      "name": "Shoku Nihongi Completed",
+      "name_ru": "Завершение Сёку Нихонги",
       "description": "The Shoku Nihongi (続日本紀, 'Chronicles of Japan, Continued'), compiled 797 AD under Fujiwara no Tsugitsugu, covers the period 697–791 AD and is the second of Japan's Six National Histories (六国史 Rikkokushi), the official sequence of imperially commissioned chronicles in classical Chinese. Written more systematically than the Nihon Shoki with precise dating and edicts preserved verbatim, it is the primary source for the Nara period. Together the six histories (ending in 887 AD) constitute the official narrative of the Japanese state from mythological origins through the early Heian period and are Japan's equivalent of the Chinese Standard Histories.",
       "description_ru": "«Сёку Нихонги» (続日本紀, «Продолжение анналов Японии»), составленные в 797 г. под руководством Фудзивара-но Цугицугу, охватывают период 697–791 гг. и являются второй из Шести национальных историй Японии (六国史 Риккокуси) — официальной последовательности императорски заказанных летописей на классическом китайском языке. Более систематичные, чем «Нихон Сёки», с точными датами и дословно сохранёнными эдиктами, они являются основным источником по периоду Нара.",
       "latitude": 35.01,
       "longitude": 135.76,
       "source": "https://en.wikipedia.org/wiki/Shoku_Nihongi",
-      "tags": ["Japanese", "Heian", "Writing"],
+      "tags": [
+        "Japanese",
+        "Heian",
+        "Writing"
+      ],
       "type": "cultural"
     },
     {
       "date": "01.01.0801",
       "era": "AD",
-      "name": "Sakanoue no Tamuramaro — The First Shogun Pacifies the North",
-      "name_ru": "Саканоуэ-но Тамурамаро — первый сёгун усмиряет Север",
+      "name": "Sakanoue no Tamuramaro, Japan's First Shogun",
+      "name_ru": "Саканоуэ-но Тамурамаро — первый сёгун Японии",
       "description": "Sakanoue no Tamuramaro (坂上田村麻呂, 758–811 AD), appointed Sei-i Taishōgun ('Generalissimo Subduing the East' — the first use of the title 'Shogun' in Japanese history) in 797 AD, leads a decisive campaign in 801–802 AD that breaks the resistance of the Emishi leader Aterui (アテルイ) at his fortress at Isawa, effectively completing Yamato's incorporation of northern Honshu. Aterui surrenders and is executed in Kyoto in 802 AD; Tamuramaro reportedly pleaded for his life. Beyond military command, Tamuramaro is the founder of Kiyomizudera (清水寺) in Kyoto (c. 798 AD), one of Japan's most celebrated Buddhist temples and a UNESCO World Heritage Site.",
       "description_ru": "Саканоуэ-но Тамурамаро (坂上田村麻呂, 758–811 гг. н. э.), назначенный Сэй-и Тайсёгун («Генералиссимус, усмиряющий Восток» — первое применение титула «Сёгун» в японской истории) в 797 г., ведёт решающую кампанию в 801–802 гг., сломив сопротивление вождя эмиси Атэруи (アテルイ) в его крепости Исава. Атэруи сдаётся и казнён в Киото в 802 г.; Тамурамаро, по преданию, ходатайствовал о его жизни. Помимо военного командования, Тамурамаро — основатель Киёмидзудэра (清水寺) в Киото (ок. 798 г.) — одного из наиболее почитаемых буддийских храмов Японии, объекта Всемирного наследия ЮНЕСКО.",
       "latitude": 35.01,
       "longitude": 135.78,
       "source": "https://en.wikipedia.org/wiki/Sakanoue_no_Tamuramaro",
-      "tags": ["Japanese", "Heian", "Warfare", "Holy Site"],
+      "tags": [
+        "Japanese",
+        "Heian",
+        "Warfare",
+        "Holy Site"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0810",
       "era": "AD",
-      "name": "Kusuko Incident — Heian's Permanence Secured",
-      "name_ru": "Инцидент Кусуко — закрепление постоянства Хэйан",
+      "name": "Kusuko Incident in Heian Japan",
+      "name_ru": "Инцидент Кусуко в хэйанской Японии",
       "description": "The Kusuko Incident (薬子の変 Kusuko no Hen) of 810 AD is a political crisis between retired Emperor Heizei, who wished to restore the capital to Nara, and the reigning Emperor Saga, who insisted on keeping Heian-kyō. Heizei issued an unauthorized edict to return the capital to Nara; Fujiwara no Kusuko and her brother Nakanari supported him. Saga mobilised military force; Heizei backed down and Kusuko committed suicide. The incident definitively settles Heian-kyō as the permanent capital and establishes the political precedent of a reigning emperor overriding a retired one — important for later insei (院政 'cloistered government') disputes.",
       "description_ru": "Инцидент Кусуко (薬子の変 Кусуко-но Хэн) 810 г. — политический кризис между отрёкшимся императором Хэйдзэй, желавшим перенести столицу обратно в Нару, и правящим императором Сага, настаивавшим на сохранении Хэйан-кё. Хэйдзэй издал несанкционированный эдикт о возвращении в Нару; Сага мобилизовал военную силу. Хэйдзэй отступил, Кусуко покончила с собой. Инцидент окончательно закрепляет Хэйан-кё как постоянную столицу.",
       "latitude": 35.01,
       "longitude": 135.76,
       "source": "https://en.wikipedia.org/wiki/Kusuko_Incident",
-      "tags": ["Japanese", "Heian"],
+      "tags": [
+        "Japanese",
+        "Heian"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0850",
       "era": "AD",
-      "name": "Hiragana and Katakana — Japan's Native Phonetic Scripts",
-      "name_ru": "Хирагана и Катакана — исконные фонетические письменности Японии",
+      "name": "Hiragana and Katakana Invented",
+      "name_ru": "Изобретение хираганы и катаканы",
       "description": "By c. 850–900 AD, two phonetic syllabaries adapted from Chinese characters are in widespread use: hiragana (平仮名), developed by simplifying cursive Chinese characters (primarily used by women for literature and correspondence) and katakana (片仮名), developed from abbreviated character components (used by monks as glosses in Buddhist texts). Together they give Japanese an indigenous writing system capable of expressing the full phonetic range of the spoken language — the breakthrough that enables the explosion of vernacular Japanese literature in the Heian period: the kana poetry anthologies, diaries, and eventually novels including The Tale of Genji (c. 1010 AD).",
       "description_ru": "К около 850–900 гг. н. э. две фонетические слоговые азбуки, адаптированные из китайских иероглифов, получают широкое распространение: хирагана (平仮名), разработанная упрощением скорописных китайских иероглифов (преимущественно используемая женщинами для литературы и переписки), и катакана (片仮名), разработанная из сокращённых компонентов иероглифов (использовалась монахами как глоссы в буддийских текстах). Вместе они дают японскому языку исконную систему письма, способную передать полный фонетический диапазон разговорной речи.",
       "latitude": 35.01,
       "longitude": 135.76,
       "source": "https://en.wikipedia.org/wiki/Kana",
-      "tags": ["Japanese", "Heian", "Writing"],
+      "tags": [
+        "Japanese",
+        "Heian",
+        "Writing"
+      ],
       "type": "cultural"
     },
     {
       "date": "01.01.0858",
       "era": "AD",
-      "name": "Fujiwara no Yoshifusa — First Non-Imperial Regent for a Child Emperor",
-      "name_ru": "Фудзивара-но Ёсифуса — первый не-императорский регент при малолетнем императоре",
+      "name": "Fujiwara Regency System Begins",
+      "name_ru": "Начало системы регентства Фудзивара",
       "description": "In 858 AD, Fujiwara no Yoshifusa (藤原良房) becomes regent (摂政 sesshō) for the nine-year-old Emperor Seiwa — the first time a non-imperial-family member has served as regent, and the founding moment of the Fujiwara regency system that dominates Japanese politics for the next 150 years. The Fujiwara consolidate power by marrying their daughters into the imperial family and then ruling as regents for the child emperors who result. The culmination of this system is Fujiwara no Michinaga (966–1028 AD), whose four daughters all become imperial consorts and who effectively controls the court for decades — the archetype of Heian court power.",
       "description_ru": "В 858 г. Фудзивара-но Ёсифуса (藤原良房) становится регентом (摂政 сэссё) при девятилетнем императоре Сэйва — первый случай, когда не-член императорской семьи служит регентом, и основополагающий момент системы регентства Фудзивара, доминирующей в японской политике на следующие 150 лет. Фудзивара консолидируют власть, выдавая дочерей за членов императорской семьи, а затем правя регентами при детях-императорах. Кульминация — Фудзивара-но Митинага (966–1028 гг.), чьи четыре дочери становятся императорскими наложницами.",
       "latitude": 35.01,
       "longitude": 135.76,
       "source": "https://en.wikipedia.org/wiki/Fujiwara_no_Yoshifusa",
-      "tags": ["Japanese", "Heian"],
+      "tags": [
+        "Japanese",
+        "Heian"
+      ],
       "type": "historic"
     },
     {
       "date": "01.01.0894",
       "era": "AD",
-      "name": "End of Kentōshi — Japan Turns Inward, Heian Culture Matures",
-      "name_ru": "Конец Кэнтōси — Япония обращается внутрь, культура Хэйан достигает зрелости",
+      "name": "End of Japanese Embassies to China",
+      "name_ru": "Конец японских посольств в Китай",
       "description": "In 894 AD, the scholar-statesman Sugawara no Michizane (菅原道真) recommends to the court that the planned Kentōshi embassy to Tang China be cancelled, citing the instability of a Tang dynasty in terminal decline and the high cost and danger of the voyages. The court agrees; no further official missions are sent, and the Tang dynasty collapses six years later in 907 AD. The end of the Kentōshi marks the beginning of the 'national culture' (国風文化 kokufū bunka) phase of Heian civilisation — a deliberate turn inward to develop distinctively Japanese aesthetic forms in poetry (waka), literature (kana prose), painting (yamato-e), and religion (the syncretic shinbutsu-shūgō fusion of kami and Buddha worship).",
       "description_ru": "В 894 г. учёный-государственник Сугавара-но Митидзанэ (菅原道真) рекомендует двору отменить запланированное посольство Кэнтōси в танский Китай, указывая на нестабильность переживающей упадок династии Тан и высокие затраты и опасность плаваний. Двор соглашается; в 907 г. династия Тан рушится. Конец Кэнтōси знаменует начало фазы «национальной культуры» (国風文化 кокуфу бунка) цивилизации Хэйан — намеренного обращения внутрь с целью развития самобытных японских эстетических форм в поэзии (вака), литературе (проза на кана) и живописи (ямато-э).",
       "latitude": 35.01,
       "longitude": 135.76,
       "source": "https://en.wikipedia.org/wiki/Japanese_missions_to_Tang_China",
-      "tags": ["Japanese", "Heian", "Chinese"],
+      "tags": [
+        "Japanese",
+        "Heian",
+        "Chinese"
+      ],
       "type": "cultural"
     }
   ]
