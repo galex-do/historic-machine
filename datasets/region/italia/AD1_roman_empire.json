@@ -1,5 +1,5 @@
 {
-  "description": "Dataset imported with 52 events",
+  "description": "Dataset with 63 events covering 23 BC – 395 AD",
   "events": [
     {
       "date": "01.01.0023",
@@ -562,8 +562,8 @@
     },
     {
       "date": "01.01.0235",
-      "description": "The assassination of the last Severan emperor Alexander Severus by mutinous troops in 235 AD opens the 'Crisis of the Third Century' (235–284 AD) — fifty years in which approximately fifty men claim the imperial title, political power is exercised almost entirely through military coups, the empire temporarily fragments into three separate states (the Gallic Empire, the Palmyrene Empire, and the rump Roman Empire), the currency is debased to near worthlessness, trade collapses, plagues recur, and the Rhine and Danube frontiers are breached repeatedly by Germanic peoples. It is the nearest Rome comes to complete collapse before its eventual fall.",
-      "description_ru": "Убийство последнего северянского императора Александра Севера взбунтовавшимися войсками в 235 г. н. э. открывает «Кризис III века» (235–284 гг.) — пятьдесят лет, в течение которых около пятидесяти человек претендуют на императорский титул, империя временно распадается на три отдельных государства (Галльская империя, Пальмирское царство и огрызок Римской империи), торговля рушится, чумы повторяются, а рейнский и дунайский рубежи неоднократно прорываются германскими народами.",
+      "description": "The murder of the last Severan emperor Alexander Severus by mutinous soldiers on the Rhine frontier near Mainz — cut down in his tent along with his mother Julia Mamaea after his troops decided that bribing rather than fighting the Germanic Alamanni was unworthy of command — opens the fifty-year catastrophe known as the Crisis of the Third Century. Over the next five decades the imperial throne changes hands roughly fifty times through assassination, usurpation, and civil war; the currency is debased to near worthlessness; the Rhine and Danube frontiers are repeatedly breached; and the empire fragments into three simultaneous states — the Gallic Empire in the west, the Palmyrene Empire in the east, and the rump Roman Empire between them. What distinguishes this crisis from all previous ones is that it cannot be resolved by any single reform: it can only be ended by the comprehensive reimagining of imperial government that Diocletian will eventually undertake.",
+      "description_ru": "Убийство последнего северянского императора Александра Севера взбунтовавшимися солдатами на рейнской границе близ Майнца — зарублен в своей палатке вместе с матерью Юлией Мамеей после того, как войска решили, что предпочтение взяток боям с германскими алеманнами недостойно командующего — открывает пятидесятилетнюю катастрофу, известную как Кризис III века. На протяжении следующих пяти десятилетий императорский трон сменяет владельцев около пятидесяти раз через убийства, узурпации и гражданские войны; валюта обесценивается; рейнская и дунайская границы неоднократно прорываются; империя распадается на три одновременных государства. Кризис может быть завершён лишь комплексным переосмыслением имперского управления, которое предпримет Диоклетиан.",
       "era": "AD",
       "latitude": 41.89,
       "longitude": 12.49,
@@ -599,6 +599,26 @@
       "type": "historic"
     },
     {
+      "date": "01.01.0252",
+      "era": "AD",
+      "name": "Shapur I Sacks Antioch, Sassanids Breach the Roman East",
+      "name_ru": "Шапур I захватывает Антиохию — сасаниды прорываются на Восток",
+      "description": "Shapur I of the Sassanid Empire launches his second great invasion of Roman territory, capturing and sacking Antioch on the Orontes — the third-largest city in the empire and capital of Roman Syria. Roman forces are shattered at the Battle of Barbalissos (253 AD) and the subsequent sack of Antioch; Shapur's own inscription at Naqsh-e Rostam boasts the capture of 37 cities and the seizure of vast populations enslaved and deported to Persia. The invasion reveals the catastrophic vulnerability of Rome's eastern frontier and sets the stage for the even more catastrophic confrontation with Valerian that ends with the emperor's own capture eight years later.",
+      "description_ru": "Шапур I Сасанидской империи предпринимает второе великое вторжение на римскую территорию, захватывая и разграбляя Антиохию на Оронте — третий по величине город империи и столицу Римской Сирии. Римские войска разгромлены в битве при Барбалиссе (253 г. н. э.); надпись Шапура в Накш-э-Ростаме хвалится захватом 37 городов и огромным числом порабощённых и вывезенных в Персию. Вторжение обнажает катастрофическую уязвимость восточной границы Рима и подготавливает почву для ещё более катастрофического столкновения с самим Валерианом.",
+      "latitude": 36.2,
+      "longitude": 36.16,
+      "source": "https://en.wikipedia.org/wiki/Shapur_I",
+      "tags": [
+        "Roman",
+        "War",
+        "Battle",
+        "Sassanid",
+        "Persian",
+        "Crisis"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.06.0260",
       "description": "In 260 AD, the Roman emperor Valerian is captured alive by the Sassanid Persian king Shapur I at the Battle of Edessa — the first and only time in Roman history that a reigning emperor falls into enemy hands. Valerian spends the rest of his life as a Persian prisoner; Shapur commemorates the victory with a famous rock relief at Naqsh-e Rostam in which Valerian kneels before Shapur while Philip the Arab (a previous emperor) begs for mercy. The disaster exposes the complete failure of the old imperial system and accelerates both the fragmentation of the empire into three parts and the political reforms that will produce the Tetrarchy.",
       "description_ru": "Римский император Валериан захвачен живым сасанидским персидским царём Шапуром I в битве при Эдессе — первый и единственный раз в истории Рима, когда действующий император попадает в руки врага. \n\nВалериан проводит остаток жизни персидским пленником; Шапур увековечивает победу знаменитым скальным рельефом в Накш-э-Ростаме. Катастрофа обнажает полный провал старой имперской системы и ускоряет раздробление империи.",
@@ -617,6 +637,45 @@
         "Emperor",
         "Prisoner",
         "Sassanid"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.09.0260",
+      "era": "AD",
+      "name": "Gallic Empire Proclaimed, Western Provinces Break Away",
+      "name_ru": "Провозглашение Галльской империи — западные провинции отделяются",
+      "description": "Within weeks of Valerian's capture by Shapur I, the commander of the Rhine armies Marcus Cassianius Latinius Postumus kills Valerian's son Saloninus — left in charge of the western court — and proclaims himself emperor of a separate Gallic Empire centred at Augusta Treverorum (Trier), encompassing Gaul, Spain, Britain, and parts of Germany. Postumus governs his breakaway state with striking competence for nine years, maintaining its own Senate, consuls, and coinage, and providing the Rhine frontier with effective defence that the rump Roman Empire cannot. Together with Zenobia's Palmyrene Empire in the east, the Roman world now exists simultaneously as three separate states — the most dramatic expression of the centrifugal forces unleashed by the Crisis of the Third Century.",
+      "description_ru": "В течение нескольких недель после пленения Валериана Шапуром I командующий рейнскими армиями Марк Кассианий Латиний Постум убивает сына Валериана Салонина и провозглашает себя императором отдельной Галльской империи с центром в Августа Треверорум (Трир), охватывающей Галлию, Испанию, Британию и части Германии. Постум управляет своим государством с поразительной компетентностью девять лет, сохраняя собственный Сенат, консулов и монеты. Вместе с Пальмирским царством Зенобии на востоке римский мир теперь существует одновременно как три отдельных государства.",
+      "latitude": 49.75,
+      "longitude": 6.64,
+      "source": "https://en.wikipedia.org/wiki/Gallic_Empire",
+      "tags": [
+        "Roman",
+        "Civil War",
+        "Crisis",
+        "Empire",
+        "Rebellion"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0263",
+      "era": "AD",
+      "name": "Odaenathus of Palmyra Defeats Shapur, Saves the Roman East",
+      "name_ru": "Оденат Пальмирский разбивает Шапура — Рим сохраняет восток",
+      "description": "While Gallienus is consumed by rebellions in the west, the Palmyrene king Odaenathus launches a devastating counteroffensive against Shapur I, routing the Sassanid army as it returns laden with plunder from Roman territory and pursuing it all the way to the Sassanid capital Ctesiphon, which he besieges twice. Gallienus grants Odaenathus the title corrector totius Orientis (Governor of All the East), effectively delegating Rome's entire eastern military command to a client king. When Odaenathus is assassinated around 268 AD, his widow Zenobia inherits both his army and his ambitions — and ultimately turns them against Rome itself.",
+      "description_ru": "Пока Галлиен поглощён восстаниями на западе, пальмирский царь Оденат предпринимает опустошительное контрнаступление против Шапура I, разгромив сасанидскую армию на обратном пути с добычей и преследуя её вплоть до сасанидской столицы Ктесифон, который он дважды осаждает. Галлиен жалует Оденату титул corrector totius Orientis («Наместник всего Востока»), фактически передавая всё восточное военное командование клиентскому царю. Когда Оденат убит около 268 г., его вдова Зенобия наследует армию и амбиции — и обращает их против самого Рима.",
+      "latitude": 34.55,
+      "longitude": 38.27,
+      "source": "https://en.wikipedia.org/wiki/Odaenathus",
+      "tags": [
+        "Roman",
+        "War",
+        "Battle",
+        "Sassanid",
+        "Persian",
+        "Crisis"
       ],
       "type": "historic"
     },
@@ -665,8 +724,8 @@
     },
     {
       "date": "01.01.0272",
-      "description": "Aurelian marches east in 272 AD, defeats Zenobia's forces at Immae (near Antioch) and at Emesa, then besieges Palmyra itself; Zenobia flees on camelback toward Persia but is captured on the Euphrates. Palmyra surrenders and Aurelian initially shows mercy, but when the city revolts and kills his garrison, he orders it comprehensively destroyed. In the same campaign he suppresses the Gallic Empire in the west, reuniting the fragmented Roman world. Aurelian earns the title Restitutor Orbis ('Restorer of the World') — the last emperor to reunite all Roman territories, though the reunification will prove temporary.",
-      "description_ru": "Аврелиан выступает на восток, разбивает силы Зенобии у Иммы и Эмесы, затем осаждает саму Пальмиру; Зенобия бежит на верблюде к Персии, но схвачена на Евфрате. Когда Пальмира восстаёт и уничтожает его гарнизон, Аврелиан приказывает её разрушить. В той же кампании он подавляет Галльскую империю на западе, воссоединяя раздробленный римский мир. Аврелиан получает титул Restitutor Orbis («Восстановитель мира»).",
+      "description": "Aurelian marches east, defeats Zenobia's forces at Immae (near Antioch) and at Emesa, then besieges Palmyra itself; Zenobia flees on camelback toward Persia but is captured on the Euphrates. Palmyra surrenders and Aurelian initially shows mercy, but when the city revolts and kills his garrison, he orders it comprehensively destroyed — the great colonnaded metropolis that briefly governed an empire stretching from Egypt to Asia Minor is reduced to a provincial backwater. Zenobia is displayed in the triumph at Rome, reportedly weighed down with golden chains, and is permitted to retire to a villa near Tivoli.",
+      "description_ru": "Аврелиан выступает на восток, разбивает силы Зенобии у Иммы и Эмесы, затем осаждает саму Пальмиру; Зенобия бежит на верблюде к Персии, но схвачена на Евфрате. Когда Пальмира восстаёт и уничтожает его гарнизон, Аврелиан приказывает разрушить великий колоннадный город, ненадолго управлявший империей от Египта до Малой Азии. Зенобия участвует в триумфе в Риме, скованная, по преданию, золотыми цепями, и получает разрешение удалиться на виллу близ Тиволи.",
       "era": "AD",
       "latitude": 34.55,
       "longitude": 38.27,
@@ -686,6 +745,25 @@
         "Syria"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0274",
+      "era": "AD",
+      "name": "Aurelian Reclaims the Gallic Empire, West Reunited",
+      "name_ru": "Аврелиан возвращает Галльскую империю — Запад воссоединён",
+      "description": "After defeating Zenobia and reuniting the east, Aurelian turns west against the Gallic Empire — now under its fourth emperor Tetricus I, who has been struggling to control his own fractious Rhine legions. The two forces meet at the Battle of Châlons (Catalaunian Plains), where the Gallic army is decisively broken; Tetricus reportedly negotiated his own surrender in advance, perhaps deliberately opening his lines to the Roman assault. The Gallic Empire, which had governed its provinces capably for fourteen years, ceases to exist. Aurelian celebrates a triple triumph in Rome — for Zenobia, Tetricus, and the Persian campaign — and earns the title Restitutor Orbis (Restorer of the World), the last emperor to reunite the entire Roman world.",
+      "description_ru": "Победив Зенобию и воссоединив восток, Аврелиан поворачивает на запад против Галльской империи — ныне под властью четвёртого императора Тетрика I, с трудом удерживающего беспокойные рейнские легионы. Обе армии встречаются в битве при Шалоне (Каталаунские поля), где галльская армия разбита наголову; Тетрик, по слухам, заранее договорился о сдаче. Галльская империя, компетентно управлявшая провинциями четырнадцать лет, прекращает существование. Аврелиан празднует тройной триумф в Риме и получает титул Restitutor Orbis («Восстановитель мира»).",
+      "latitude": 48.96,
+      "longitude": 4.36,
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Ch%C3%A2lons_(274)",
+      "tags": [
+        "Roman",
+        "War",
+        "Battle",
+        "Civil War",
+        "Empire"
+      ],
+      "type": "historic"
     },
     {
       "date": "20.11.0284",
@@ -766,6 +844,43 @@
       "type": "religious"
     },
     {
+      "date": "01.05.0305",
+      "era": "AD",
+      "name": "Diocletian Abdicates, Tetrarchy's Succession Collapses",
+      "name_ru": "Диоклетиан отрекается — система преемства тетрархии рушится",
+      "description": "In the only voluntary abdication of a sitting Roman emperor in the empire's history, Diocletian and Maximian simultaneously relinquish their titles; the Caesars Galerius and Constantius I become the new Augusti. The plan's fatal flaw is immediately exposed: the new Caesars named to replace them are Severus II and Maximinus Daia — obscure officers loyal to Galerius — conspicuously passing over Constantine (son of Constantius I) and Maxentius (son of Maximian). Both passed-over princes refuse to accept the slight, and within a year the empire has six simultaneous claimants to imperial power, making the Tetrarchy's orderly succession a brief theoretical achievement and a catastrophic practical failure.",
+      "description_ru": "В единственном добровольном отречении действующего римского императора за всю историю империи Диоклетиан и Максимиан одновременно складывают с себя полномочия; цезари Галерий и Констанций I становятся новыми Августами. Роковой изъян плана немедленно обнаруживается: новыми цезарями назначены малоизвестные офицеры, преданные Галерию, при этом демонстративно обойдены Константин (сын Констанция I) и Максенций (сын Максимиана). Оба обойдённых принца отказываются смириться. Менее чем через год в империи оказывается шесть одновременных претендентов на власть.",
+      "latitude": 43.51,
+      "longitude": 16.44,
+      "source": "https://en.wikipedia.org/wiki/Diocletian#Abdication",
+      "tags": [
+        "Roman",
+        "Reform",
+        "Political",
+        "Crisis",
+        "Administration"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "25.07.0306",
+      "era": "AD",
+      "name": "Constantine Proclaimed Emperor at York",
+      "name_ru": "Константин провозглашён императором в Эбораке (Йорке)",
+      "description": "Constantius I dies at Eboracum (York) returning from a campaign against the Picts in northern Britain. His troops immediately acclaim his son Constantine as Augustus — bypassing the Tetrarchic succession protocol entirely. Galerius refuses to recognise him as more than a junior Caesar, but he cannot dislodge him. Simultaneously in Rome, Maxentius — son of the retired emperor Maximian — seizes power with Praetorian Guard support, declaring himself emperor. Within months, the careful Tetrarchic structure has produced not a smooth succession but four to six simultaneous claimants, launching two decades of civil war that only Constantine's victory at the Milvian Bridge will eventually resolve.",
+      "description_ru": "Констанций I умирает в Эбораке (Йорк), возвращаясь из похода против пиктов в северной Британии. Его войска немедленно провозглашают сына Константина Августом — полностью обходя протокол тетрархического преемства. Галерий отказывается признавать его более чем младшим цезарем. Одновременно в Риме Максенций — сын удалившегося на покой Максимиана — захватывает власть при поддержке преторианской гвардии. В течение нескольких месяцев тетрархическая структура порождает не мирное преемство, а четыре-шесть одновременных претендентов.",
+      "latitude": 53.96,
+      "longitude": -1.08,
+      "source": "https://en.wikipedia.org/wiki/Constantine_the_Great",
+      "tags": [
+        "Roman",
+        "Empire",
+        "Political",
+        "Civil War"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "28.10.0312",
       "description": "Constantine defeats his co-emperor Maxentius at the Battle of Milvian Bridge on October 28, 312 AD — Maxentius drowns in the Tiber when the bridge of boats he has laid collapses under the retreating army. Before the battle, according to later accounts by Lactantius and Eusebius, Constantine sees a vision or dream in which he is told to mark his soldiers' shields with the Chi-Rho (☧) symbol of Christ. Whether the story is true, embellished, or invented, Constantine's subsequent patronage of Christianity and his own eventual conversion make the Battle of Milvian Bridge one of the most consequential moments in Western history — the point at which the Roman Empire ceases to persecute Christianity and begins to sponsor it.",
       "description_ru": "Константин разбивает соправителя Максенция у Мильвийского моста 28 октября 312 г. н. э. — Максенций тонет в Тибре. Перед битвой, согласно более поздним источникам, Константин видит видение или сон, в котором ему велено нанести на щиты солдат монограмму Хи-Ро (☧). Независимо от достоверности рассказа, последующее покровительство Константина христианству делает битву у Мильвийского моста одним из наиболее значимых моментов западной истории — точкой, в которой Римская империя перестаёт преследовать христианство и начинает его спонсировать.",
@@ -804,6 +919,25 @@
         "Law",
         "Religious",
         "Tolerance"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "18.09.0324",
+      "era": "AD",
+      "name": "Constantine Defeats Licinius, Becomes Sole Emperor",
+      "name_ru": "Константин побеждает Лициния — единоличный правитель Рима",
+      "description": "Constantine defeats his last remaining co-emperor Licinius at the Battle of Chrysopolis, becoming the sole ruler of the entire Roman Empire for the first time since Diocletian. Licinius surrenders, is exiled, and executed within a year. Constantine's sole rule is what makes the decisive events of his later career possible: only a single undivided imperial authority can summon an ecumenical church council (Nicaea, 325), commission an entirely new capital (Constantinople, 330), and reshape the religious identity of the empire as comprehensively as he does. The Edict of Milan had been issued jointly with Licinius; it is now Constantine alone who shapes the Roman world.",
+      "description_ru": "Константин разбивает последнего соправителя Лициния в битве при Хрисополе, становясь единоличным правителем всей Римской империи впервые со времён Диоклетиана. Лициний сдаётся, отправляется в ссылку и казнён в течение года. Единоличная власть Константина делает возможными решающие события его позднейшей карьеры: только единая неразделённая императорская власть может созвать вселенский собор (Никея, 325 г.), строить новую столицу (Константинополь, 330 г.) и столь масштабно преобразовывать религиозную идентичность империи.",
+      "latitude": 41.01,
+      "longitude": 29.03,
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Chrysopolis",
+      "tags": [
+        "Roman",
+        "Empire",
+        "Political",
+        "Civil War",
+        "Constantine the Great 👑"
       ],
       "type": "historic"
     },
@@ -981,6 +1115,63 @@
         "Religion"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.08.0391",
+      "era": "AD",
+      "name": "Serapeum of Alexandria Destroyed by Christian Mob",
+      "name_ru": "Серапеум Александрии разрушен христианской толпой",
+      "description": "The Serapeum — the greatest temple complex remaining in the Greco-Roman world, housing a celebrated cult statue of Serapis and a daughter library of the Library of Alexandria containing perhaps 400,000 scrolls — is attacked and demolished by a Christian mob under Bishop Theophilus of Alexandria, with the apparent blessing of Theodosius. The destruction is one of the most symbolically devastating acts of the pagan-Christian culture war: the Serapeum had stood for over six centuries as the intellectual and religious centre of Hellenistic Egypt. The attack is the most dramatic immediate consequence of the 391 edicts banning all pagan worship across the empire.",
+      "description_ru": "Серапеум — крупнейший из сохранившихся храмовых комплексов греко-римского мира, хранящий знаменитую статую Сераписа и дочернюю библиотеку с, возможно, 400 000 свитками — атакован и снесён христианской толпой под руководством епископа Феофила Александрийского. Это разрушение — один из наиболее символически опустошительных актов языческо-христианской культурной войны: Серапеум простоял более шести веков как интеллектуальный и религиозный центр эллинистического Египта. Атака — наиболее драматическое немедленное следствие эдиктов 391 г., запрещающих всё языческое поклонение.",
+      "latitude": 31.19,
+      "longitude": 29.89,
+      "source": "https://en.wikipedia.org/wiki/Serapeum_of_Alexandria",
+      "tags": [
+        "Roman",
+        "Christianity",
+        "Destruction",
+        "Religion",
+        "Theodosius I 👑"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0393",
+      "era": "AD",
+      "name": "Olympic Games Abolished After 1,169 Years",
+      "name_ru": "Олимпийские игры упразднены после 1169 лет существования",
+      "description": "Theodosius abolishes the Olympic Games — held without interruption at Olympia every four years since 776 BC, a span of 1,169 years and 293 Olympiads — as a pagan festival in honour of Zeus. The great sanctuary of Olympia, including the Temple of Zeus housing Pheidias's chryselephantine statue (one of the Seven Wonders of the Ancient World), is subsequently closed and its priests dispersed; the site is eventually destroyed by earthquake and flood. The abolition encapsulates the thoroughness with which Theodosius's religious revolution dismantles the inherited institutions of Greco-Roman civilisation; the Games will not be revived until Pierre de Coubertin's Modern Olympics of 1896.",
+      "description_ru": "Феодосий упраздняет Олимпийские игры — проводившиеся без перерыва в Олимпии каждые четыре года с 776 г. до н. э. на протяжении 1169 лет и 293 Олимпиад — как языческий праздник в честь Зевса. Великое святилище Олимпии, включая храм Зевса со статуей Фидия (одно из семи чудес света), закрывается, жрецы рассеяны, и в конечном счёте уничтожается землетрясениями и наводнениями. Упразднение воплощает всесторонность религиозной революции Феодосия; Игры не возродятся до Современных Олимпийских игр 1896 г.",
+      "latitude": 37.64,
+      "longitude": 21.63,
+      "source": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games",
+      "tags": [
+        "Roman",
+        "Christianity",
+        "Religion",
+        "Law",
+        "Theodosius I 👑"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.06.0393",
+      "era": "AD",
+      "name": "Oracle of Delphi Falls Permanently Silent",
+      "name_ru": "Дельфийский оракул умолкает навсегда",
+      "description": "The Oracle of Delphi — which had operated for roughly a thousand years as the most authoritative religious and political voice in the Greek world, consulted by city-states before wars, kings before campaigns, and colonists before founding cities — falls permanently silent under Theodosius's bans on pagan religion. The sanctuary of Apollo at Delphi is stripped of its treasures, its priests dispersed, and the sacred flame extinguished; the site that had defined the geographical and spiritual centre of the Greek world for a millennium becomes a ruin. The last recorded oracle, reportedly given to the physician of Emperor Julian around 363, had already lamented that the sacred spring was drying and the prophetic art was ending.",
+      "description_ru": "Дельфийский оракул — действовавший около тысячи лет как наиболее авторитетный религиозный и политический голос греческого мира, к которому обращались полисы перед войнами, цари перед походами и колонисты перед основанием городов — навсегда умолкает под феодосиевыми запретами языческой религии. Святилище Аполлона в Дельфах разграблено, жрецы рассеяны, священный огонь угашен; место, тысячелетие определявшее духовный центр греческого мира, превращается в руину. Последний зафиксированный оракул, данный врачу Юлиана около 363 г., уже оплакивал иссякающий священный источник.",
+      "latitude": 38.48,
+      "longitude": 22.5,
+      "source": "https://en.wikipedia.org/wiki/Oracle_at_Delphi",
+      "tags": [
+        "Roman",
+        "Christianity",
+        "Religion",
+        "Destruction",
+        "Theodosius I 👑"
+      ],
+      "type": "cultural"
     },
     {
       "date": "05.09.0394",
