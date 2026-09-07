@@ -117,9 +117,16 @@ export function useTags() {
     return allTags.value.find(tag => tag.id === id)
   }
 
-  // Get tags by IDs
+  // Get tags by IDs, ordered by weight DESC then name ASC — matching the
+  // ordering the backend used to embed directly before the lean map payload
+  // reduced each event's tags down to bare IDs (see EventListItem.TagIDs).
+  // Resolving via a plain filter() over allTags (itself sorted by name from
+  // GET /api/tags) silently lost that weight order, so callers relying on
+  // "first tag = highest weight" (e.g. getTagEmoji) broke.
   const getTagsByIds = (ids) => {
-    return allTags.value.filter(tag => ids.includes(tag.id))
+    return allTags.value
+      .filter(tag => ids.includes(tag.id))
+      .sort((a, b) => b.weight - a.weight || a.name.localeCompare(b.name))
   }
 
   return {
