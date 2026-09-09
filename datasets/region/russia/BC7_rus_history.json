@@ -1,5 +1,5 @@
 {
-  "description": "Dataset imported with 100 events",
+  "description": "Dataset imported with 147 events",
   "events": [
     {
       "date": "01.01.0700",
@@ -3140,6 +3140,127 @@
         "Christian",
         "Orthodox",
         "Political"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0060",
+      "description": "According to the legend preserved by the monk Nestor, the Apostle Andrew, preaching along the Black Sea coast, sailed up the Dnieper and halted beneath a range of wooded hills on its western bank. He raised a cross there and told his companions that God's grace would shine upon these heights and a great city, filled with churches, would one day rise — a prophecy the chroniclers later read as foretelling Kyiv itself. Continuing north to the land of the Ilmen Slavs, where Novgorod would eventually stand, Andrew reportedly witnessed a custom that startled him: the Slavs built wooden bathhouses, heated them to a scorching temperature, then beat their own bare bodies with bundles of branches until they were half-senseless, before dousing themselves with icy water and returning, unharmed, to daily life. He is said to have marveled that a people would inflict such suffering on themselves for pleasure rather than punishment.",
+      "description_ru": "Согласно преданию, сохранённому монахом Нестором, апостол Андрей, проповедуя вдоль черноморского побережья, поднялся вверх по Днепру и остановился у поросших лесом холмов на его западном берегу. Он водрузил там крест и сказал спутникам, что на этих высотах воссияет благодать Божья и однажды поднимется великий город со множеством церквей — пророчество, которое летописцы позже читали как предсказание самого Киева. Продвинувшись на север, к землям ильменских словен, где впоследствии встанет Новгород, Андрей, по преданию, стал свидетелем обычая, поразившего его: славяне строили деревянные бани, раскаляли их до нестерпимого жара, а затем хлестали собственные обнажённые тела связками ветвей до полуобморочного состояния, после чего обливались ледяной водой и как ни в чём не бывало возвращались к повседневным делам. Апостол, как гласит предание, изумлялся, что люди причиняют себе подобные страдания ради удовольствия, а не в наказание.",
+      "era": "AD",
+      "latitude": 50.45826903,
+      "longitude": 30.5160284,
+      "name": "Apostle Andrew's Prophecy over the Kyiv Hills",
+      "name_ru": "Пророчество апостола Андрея над киевскими холмами",
+      "source": "https://en.wikipedia.org/wiki/Andrew_the_Apostle",
+      "tags": [
+        "Legend",
+        "Christian",
+        "Kyiv",
+        "Novgorod",
+        "Customs",
+        "Culture"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0650",
+      "description": "The Primary Chronicle's account of pre-Christian Slavic tribes reads like an ethnographer's field notes, filtered through a monk's disapproval. The Polyanians around Kyiv, the chronicler insists, kept a gentle and civilized custom: a groom's family formally asked for the bride, who was brought to him the following day along with her dowry. The Drevlyans, Radimichs, Vyatichs, and Severians, by contrast, are described as living 'in bestial fashion': marriages were not arranged between families but seized at village gatherings and river games, where a man would carry off a woman he had already privately agreed to marry. All four tribes were said to share the same funeral rite — cremating their dead on a pyre, then placing the ashes in a small urn and setting it on a post beside the public roads, a practice the chronicler treats as one more mark of their backwardness beside the pious Polyanians.",
+      "description_ru": "Рассказ «Повести временных лет» о догосударственных славянских племенах читается как полевые заметки этнографа, пропущенные через неодобрение монаха. Поляне вокруг Киева, настаивает летописец, придерживались кроткого и цивилизованного обычая: семья жениха формально сватала невесту, которую на следующий день приводили к нему вместе с приданым. Древляне, радимичи, вятичи и северяне, напротив, описаны как жившие «зверинским образом»: браки заключались не между семьями, а похищением на сельских сборищах и играх у рек, где мужчина уводил женщину, с которой заранее тайно сговорился. Все четыре племени, по словам летописца, разделяли один и тот же погребальный обряд — сжигали умерших на костре, а затем помещали прах в небольшую урну и выставляли её на столбе у обочины дороги; эту практику летописец приводит как ещё одно свидетельство их отсталости на фоне благочестивых полян.",
+      "era": "AD",
+      "latitude": 50.45826903,
+      "longitude": 30.5160284,
+      "name": "How the Slavic Tribes Married and Buried Their Dead",
+      "name_ru": "Как славянские племена женились и хоронили своих умерших",
+      "source": "https://en.wikipedia.org/wiki/Radimichs",
+      "tags": [
+        "Marriage",
+        "Burial",
+        "Customs",
+        "Tribal",
+        "Culture",
+        "Slavic"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0907",
+      "description": "When Oleg's fleet forced Constantinople to terms in 907, the closing of the treaty exposed two entirely different worlds of belief standing side by side. The Byzantine negotiators sealed their word in the Christian manner, kissing the cross before the assembled witnesses. Oleg's Varangian and Slavic retinue, still overwhelmingly pagan, swore in their own fashion: each warrior laid his sword, shield, and other weapons on the ground and invoked Perun, the thunder-god who presided over war and oaths, and Veles, the horned lord of cattle, wealth, and the underworld. The Primary Chronicle records the scene almost as an aside, but it is one of the earliest datable descriptions of Slavic pagan religion in practice — proof that, a full eighty years before Vladimir's baptism, the ruling elite of Rus governed itself, made war, and kept its promises under gods far removed from Constantinople's.",
+      "description_ru": "Когда в 907 году флот Олега вынудил Константинополь пойти на уступки, заключение договора обнажило два совершенно разных мира веры, стоявших бок о бок. Византийские послы скрепили слово на христианский манер, поцеловав крест перед собравшимися свидетелями. Дружина Олега — варяги и славяне, всё ещё в массе своей язычники — клялась иначе: каждый воин складывал на землю меч, щит и прочее оружие и призывал в свидетели Перуна, бога-громовержца, покровителя войны и клятв, и Велеса, рогатого владыку скота, богатства и подземного мира. Повесть временных лет упоминает эту сцену почти мимоходом, но это одно из самых ранних датированных описаний славянского язычества в действии — доказательство того, что за целых восемьдесят лет до крещения Владимира правящая верхушка Руси управляла страной, вела войны и держала слово перед богами, весьма далёкими от Константинополя.",
+      "era": "AD",
+      "latitude": 41.01915336,
+      "longitude": 28.92399788,
+      "name": "Sworn by Sword and Thunder-God: The Rus Oath of 907",
+      "name_ru": "Клятва мечом и Перуном: клятва руси 907 года",
+      "source": "https://en.wikipedia.org/wiki/Rus%27%E2%80%93Byzantine_Treaty_(907)",
+      "tags": [
+        "Byzantine",
+        "Norman",
+        "Rus",
+        "Kyiv",
+        "Pagan",
+        "Customs"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0922",
+      "description": "In 922, the Baghdad envoy Ahmad ibn Fadlan reached the Volga Bulgar capital and there encountered Rus merchants trading furs and slaves along the same river route that had linked the Rus to the Islamic world for nearly a century. His account of a chieftain's funeral is the most detailed eyewitness description of Rus death customs to survive. The dead man's ship was hauled ashore and filled with grave goods, food, weapons, and sacrificed animals; his household then asked which of his slave girls would volunteer to die with him. One agreed, and for ten days lived in a state of ritual celebration, visiting each tent of the encampment before being killed aboard the ship, which was then set ablaze. A bystander told Ibn Fadlan the Arabs were foolish to bury their most honored dead in the ground to be eaten by worms, when fire returned them to paradise at once.",
+      "description_ru": "В 922 году багдадский посол Ахмад ибн Фадлан достиг столицы Волжской Булгарии и встретил там купцов-русов, торговавших мехами и рабами по тому же волжскому пути, который почти столетие связывал русов с исламским миром. Его рассказ о похоронах знатного руса — самое подробное свидетельство очевидца о погребальных обычаях русов, дошедшее до наших дней. Корабль умершего вытащили на берег и наполнили погребальными дарами, едой, оружием и жертвенными животными; затем его домочадцы спросили, кто из рабынь согласится умереть вместе с ним. Одна согласилась и десять дней провела в состоянии ритуального празднества, посещая каждый шатёр становища, прежде чем её убили на борту корабля, который затем подожгли. Один из присутствующих сказал Ибн Фадлану, что арабы поступают глупо, закапывая самых почитаемых мертвецов в землю на съедение червям, тогда как огонь сразу же переносит их в рай.",
+      "era": "AD",
+      "latitude": 55.8,
+      "longitude": 49.1,
+      "name": "Ibn Fadlan Witnesses a Rus Ship Funeral on the Volga",
+      "name_ru": "Ибн Фадлан становится свидетелем похорон руса на Волге",
+      "source": "https://en.wikipedia.org/wiki/Ahmad_ibn_Fadlan",
+      "tags": [
+        "Rus",
+        "Trade",
+        "Burial",
+        "Customs",
+        "Culture",
+        "Arabian",
+        "Islamic",
+        "Bulgarian"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0996",
+      "description": "After completing the Church of the Tithes in Kyiv in 996, Vladimir marked the occasion the way a Rus prince was expected to: with a feast so large it became legend. The Primary Chronicle describes him holding great banquets for his boyars, his retinue, and ordinary townspeople alike, and sending carts loaded with bread, meat, fish, and honeyed drink through the streets for the sick and the poor who could not come to him. According to the story, when his warriors grumbled that they had to eat with wooden spoons instead of silver ones, Vladimir had silver spoons forged for them at once, reasoning that silver and gold could never buy a loyal retinue, while a loyal retinue would always win him silver and gold, just as it had for his father and grandfather before him. The anecdote captures how thoroughly a prince's authority in Rus rested on generosity, not just conquest.",
+      "description_ru": "Завершив в 996 году строительство Десятинной церкви в Киеве, Владимир отметил это событие так, как и подобало князю Руси, — пиром, ставшим легендой. Повесть временных лет описывает, как он устраивал огромные застолья для бояр, дружины и простых горожан, а по улицам развозили телеги с хлебом, мясом, рыбой и медовым питьём для больных и бедных, которые не могли явиться к нему сами. Согласно преданию, когда его воины стали роптать, что едят деревянными ложками вместо серебряных, Владимир немедленно велел выковать для них серебряные ложки, рассудив, что серебром и золотом верную дружину не купить, зато верная дружина всегда добудет ему серебро и золото — как это было при его отце и деде. Этот эпизод показывает, насколько власть князя на Руси держалась на щедрости, а не только на завоеваниях.",
+      "era": "AD",
+      "latitude": 50.45782847,
+      "longitude": 30.5174607,
+      "name": "Vladimir's Feast and the Silver Spoons",
+      "name_ru": "Пир Владимира и серебряные ложки",
+      "source": "https://en.wikipedia.org/wiki/Vladimir_the_Great",
+      "tags": [
+        "Customs",
+        "Culture",
+        "Vladimir 👑",
+        "Kyiv",
+        "Rus"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.1071",
+      "description": "Eighty-two years after Novgorod's forced conversion, a famine-stricken crowd gathered around a volkhv — a pagan priest and diviner — who claimed he could see which women were secretly hoarding grain through witchcraft. He began naming names, and mobs dragged the accused from their homes to be killed, while the volkhv's following grew into open defiance of the Christian prince's authority in the city. Prince Gleb Svyatoslavich confronted him directly, asking whether he truly knew the future; when the volkhv boasted that he could perform miracles, Gleb hid an axe beneath his cloak and struck him dead on the spot, ending the uprising instantly. The episode, recorded in the Primary Chronicle a full century after Vladimir's baptism of Rus, shows how shallow that conversion still ran outside the princely court, and how readily crisis could summon the old gods back to the surface.",
+      "description_ru": "Спустя восемьдесят два года после насильственного крещения Новгорода, во время голода, вокруг волхва — языческого жреца и провидца — собралась толпа; он утверждал, что колдовством способен распознать женщин, тайно припрятавших зерно. Он принялся называть имена, и толпы вытаскивали обвинённых из домов и убивали их, а число сторонников волхва росло, превращаясь в открытый вызов власти христианского князя в городе. Князь Глеб Святославич лично вышел к нему и спросил, действительно ли тот знает будущее; когда волхв похвастался, что способен творить чудеса, Глеб спрятал под плащом топор и зарубил его на месте, мгновенно положив конец восстанию. Этот эпизод, записанный в Повести временных лет спустя целый век после крещения Руси Владимиром, показывает, насколько поверхностно оно всё ещё укоренилось за пределами княжеского двора и как легко кризис мог вернуть на поверхность старых богов.",
+      "era": "AD",
+      "latitude": 58.52129089,
+      "longitude": 31.27528667,
+      "name": "The Novgorod Volkhv Uprising",
+      "name_ru": "Восстание волхвов в Новгороде",
+      "source": "https://en.wikipedia.org/wiki/Volkhv",
+      "tags": [
+        "Rebellion",
+        "Pagan",
+        "Novgorod",
+        "Crisis",
+        "Legend",
+        "Christian"
       ],
       "type": "religious"
     }
