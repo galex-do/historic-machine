@@ -12,12 +12,12 @@
       "name_ru": "Феодосий II — ребёнок во главе Восточного Рима",
       "source": "https://en.wikipedia.org/wiki/Theodosius_II",
       "tags": [
-        "Roman",
-        "Dynasty",
         "Byzantine",
+        "Roman",
+        "Theodosian",
+        "Dynasty",
         "Emperor",
-        "Regency",
-        "Theodosian"
+        "Regency"
       ],
       "type": "political"
     },
@@ -28,18 +28,18 @@
       "era": "AD",
       "latitude": 41.01915336,
       "longitude": 28.92399788,
-      "name": "Theodosian Walls Built — Constantinople Becomes Impregnable",
+      "name": "Theodosian Walls Built in Constantinople",
       "name_ru": "Возведение стен Феодосия",
       "source": "https://en.wikipedia.org/wiki/Walls_of_Constantinople",
       "tags": [
+        "Byzantine",
         "Roman",
+        "Theodosian",
         "Dynasty",
         "Architecture",
-        "Byzantine",
-        "Engineering ⚙️",
         "Fortification",
+        "Engineering ⚙️",
         "Medieval",
-        "Theodosian",
         "Wonders"
       ],
       "type": "historic"
@@ -56,12 +56,12 @@
       "source": "https://en.wikipedia.org/wiki/First_Council_of_Ephesus",
       "tags": [
         "Byzantine",
-        "Christian",
-        "Council",
-        "Exile",
-        "Nestorian",
         "Religious",
-        "Schism"
+        "Christian",
+        "Nestorian",
+        "Council",
+        "Schism",
+        "Exile"
       ],
       "type": "religious"
     },
@@ -76,10 +76,10 @@
       "name_ru": "Кодекс Феодосия",
       "source": "https://en.wikipedia.org/wiki/Codex_Theodosianus",
       "tags": [
+        "Byzantine",
         "Roman",
         "Reform",
         "Administration",
-        "Byzantine",
         "Code",
         "Law"
       ],
@@ -96,13 +96,13 @@
       "name_ru": "Аттила разоряет Балканы",
       "source": "https://en.wikipedia.org/wiki/History_of_the_Huns",
       "tags": [
-        "Roman",
-        "War",
-        "Attila 👤",
         "Byzantine",
-        "Crisis",
+        "Roman",
         "Huns",
+        "Crisis",
+        "War",
         "Invasion",
+        "Attila 👤",
         "Tribute"
       ],
       "type": "military"
@@ -118,14 +118,14 @@
       "name_ru": "Халкидонский собор",
       "source": "https://en.wikipedia.org/wiki/Council_of_Chalcedon",
       "tags": [
+        "Byzantine",
         "Roman",
         "Armenian",
-        "Byzantine",
+        "Ethiopian",
+        "Religious",
         "Christian",
         "Coptic",
         "Council",
-        "Ethiopian",
-        "Religious",
         "Schism"
       ],
       "type": "religious"
@@ -141,12 +141,12 @@
       "name_ru": "Падение Западного Рима",
       "source": "https://en.wikipedia.org/wiki/Romulus_Augustulus",
       "tags": [
-        "Roman",
+        "Milestone ⭐️",
         "Byzantine",
+        "Roman",
         "Collapse",
         "Decline",
-        "End",
-        "Milestone ⭐️"
+        "End"
       ],
       "type": "historic"
     },
@@ -161,19 +161,38 @@
       "name_ru": "Экономические реформы Анастасия I",
       "source": "https://en.wikipedia.org/wiki/Anastasius_I_Dicorus",
       "tags": [
-        "Roman",
-        "Reform",
-        "Administration",
         "Byzantine",
-        "Currency",
-        "Economic"
+        "Roman",
+        "Currency 🪙",
+        "Economic",
+        "Reform",
+        "Administration"
       ],
       "type": "historic"
     },
     {
+      "date": "01.01.0518",
+      "description": "Justin was born in a poor province in the Balkans and, in his youth, was a simple shepherd (rumor has it, he herded pigs). Fleeing from starvation after a barbarian invasion, he and two friends walked to Constantinople with only bread crumbs in their bundles.\n\nHe could neither read nor write, but was an ideal, obedient soldier. He enlisted in the imperial guard. He distinguished himself in the wars against the Persians and Issaurs, attaining the rank of tribune and then comite (commander) of the excubitors. By the time of the death of the aged Emperor Anastasius I in 518, Justin controlled the only armed detachment inside the palace.\n\nWhen Emperor Anastasius died without direct heirs, a power struggle erupted within the palace. The influential eunuch Amantius bribed Justin to install his protege. Justin distributed gold to his soldiers, and they proclaimed him emperor. Since Justin was illiterate, a special gold plate stencil was used to sign state documents, on which the emperor traced the letters of his name.",
+      "description_ru": "Юстин родился в бедной провинции на Балканах и в юности был обычным пастухом (по слухам, пас свиней). Спасаясь от голода после нашествия варваров, он вместе с двумя друзьями пришел в Константинополь пешком, имея в узелках только сухари. \n\nОн не умел ни читать, ни писать, но был идеальным исполнительным солдатом. Завербовался в императорскую гвардию. Он отличился в войнах с персами и иссаврами, получил чин трибуна, а затем и комита (командира) экскувиторов. К моменту смерти престарелого императора Анастасия I в 518 году Юстин контролировал единственный вооруженный отряд внутри дворца.\n\nКогда император Анастасий умер, не оставив прямых наследников, во дворце началась борьба за власть. Влиятельный евнух Амантий подкупил Юстина, чтобы привести к власти своего ставленника. Юстин раздал золото своим солдатам, и они провозгласили императором его. Поскольку Юстин был неграмотным,  для подписания государственных документов использовался специальный трафарет из золотой пластины, по которому император обводил буквы своего имени.",
+      "era": "AD",
+      "latitude": 41.0082,
+      "longitude": 28.9784,
+      "name": "Justin I — Emperor of Byzantium",
+      "name_ru": "Юстин I — император Византии",
+      "source": "https://en.wikipedia.org/wiki/Justin_I",
+      "tags": [
+        "Byzantine",
+        "Roman",
+        "Thrace",
+        "Emperor",
+        "Underdog"
+      ],
+      "type": "political"
+    },
+    {
       "date": "01.08.0527",
-      "description": "Justinian I accedes to the throne with his wife Theodora — formerly an actress and daughter of a Hippodrome bear-keeper, elevated through intelligence and force of personality to the rank of Augusta and co-ruler. Their partnership transforms the empire: Justinian provides the administrative and legal vision; Theodora the political ruthlessness and populist instinct. Their reign (527–565) represents the last coherent attempt to reconstitute the full Roman Empire, producing lasting achievements in law, architecture, and theology that define Byzantine civilisation for centuries.",
-      "description_ru": "Юстиниан I восходит на трон вместе со своей женой Феодорой — бывшей актрисой и дочерью смотрителя медведей на ипподроме, возвысившейся до ранга Августы и соправительницы. Их партнёрство преобразует империю: Юстиниан обеспечивает административное и правовое видение; Феодора — политическую беспощадность. \n\nИх правление (527–565 гг.) является последней последовательной попыткой воссоздать полную Римскую империю, создав достижения, определяющие византийскую цивилизацию на столетия.",
+      "description": "Justinian, a poor Balkan Illyrian, received a golden ticket to life when his illiterate uncle, Justin, began to rise in the service of Constantinople. The uncle summoned his young nephew to the capital, adopted him, and paid for him to receive the best education of the time.\n\nJustinian I ascends the throne after his uncle's death. His wife Theodora — formerly an actress and daughter of a Hippodrome bear-keeper, elevated through intelligence and force of personality to the rank of Augusta and co-ruler. Their partnership transforms the empire: Justinian provides the administrative and legal vision; Theodora the political ruthlessness and populist instinct. Their reign (527–565) represents the last coherent attempt to reconstitute the full Roman Empire, producing lasting achievements in law, architecture, and theology that define Byzantine civilisation for centuries.",
+      "description_ru": "Юстиниан, бедный балканский иллириец, получил «золотой билет» в жизнь, когда его неграмотный дядя Юстин стал продвигаться по службе в Константинополе. Дядя призвал молодого племянника в столицу, усыновил его и оплатил ему лучшее по тем временам образование.\n\nЮстиниан I восходит на трон после смерти дяди вместе со своей женой Феодорой — бывшей актрисой и дочерью смотрителя медведей на ипподроме, возвысившейся до ранга Августы и соправительницы. Их партнёрство преобразует империю: Юстиниан обеспечивает административное и правовое видение; Феодора — политическую беспощадность. \n\nИх правление (527–565 гг.) является последней последовательной попыткой воссоздать полную Римскую империю, создав достижения, определяющие византийскую цивилизацию на столетия.",
       "era": "AD",
       "latitude": 41.0082,
       "longitude": 28.9784,
@@ -181,11 +200,11 @@
       "name_ru": "Юстиниан I — император Восточного Рима",
       "source": "https://en.wikipedia.org/wiki/Justinian_I",
       "tags": [
-        "Roman",
-        "Reform",
-        "Dynasty",
         "Byzantine",
+        "Roman",
+        "Dynasty",
         "Emperor",
+        "Reform",
         "Justinian"
       ],
       "type": "political"
@@ -201,10 +220,10 @@
       "name_ru": "Corpus Juris Civilis",
       "source": "https://en.wikipedia.org/wiki/Corpus_Juris_Civilis",
       "tags": [
+        "Byzantine",
         "Roman",
         "Reform",
         "Administration",
-        "Byzantine",
         "Code",
         "Law",
         "Text"
@@ -218,16 +237,16 @@
       "era": "AD",
       "latitude": 41.0059737,
       "longitude": 28.9754802,
-      "name": "Nika Riots — Constantinople Burns, Theodora Saves the Throne",
+      "name": "Nika Riots in Constantinople",
       "name_ru": "Восстание Ника в Константинополе",
       "source": "https://en.wikipedia.org/wiki/Nika_riots",
       "tags": [
+        "Byzantine",
         "Roman",
         "Civil War",
-        "Byzantine",
         "Crisis",
-        "Massacre",
-        "Rebellion"
+        "Rebellion",
+        "Massacre"
       ],
       "type": "historic"
     },
@@ -242,13 +261,13 @@
       "name_ru": "Византия отвоёвывает Северную Африку у вандалов",
       "source": "https://en.wikipedia.org/wiki/Vandalic_War",
       "tags": [
-        "Roman",
-        "War",
-        "Battle",
         "Byzantine",
+        "Roman",
+        "Vandal",
+        "War",
         "Conquest",
-        "Expansion",
-        "Vandal"
+        "Battle",
+        "Expansion"
       ],
       "type": "military"
     },
@@ -259,17 +278,17 @@
       "era": "AD",
       "latitude": 41.89296549,
       "longitude": 12.48539865,
-      "name": "Gothic Wars — Byzantium Reconquers Italy at Ruinous Cost",
+      "name": "Gothic Wars in Italy",
       "name_ru": "Готские войны в Италии",
       "source": "https://en.wikipedia.org/wiki/Gothic_War_(535%E2%80%93554)",
       "tags": [
-        "Roman",
-        "War",
         "Byzantine",
-        "Crisis",
-        "Expansion",
+        "Roman",
         "Gothic",
-        "Visigoth"
+        "Visigoth",
+        "Crisis",
+        "War",
+        "Expansion"
       ],
       "type": "military"
     },
@@ -280,19 +299,20 @@
       "era": "AD",
       "latitude": 41.0086,
       "longitude": 28.9802,
-      "name": "Hagia Sophia Consecrated — The Greatest Church in the World",
+      "name": "Hagia Sophia Consecrated in Constantinople",
       "name_ru": "Освящение Святой Софии",
       "source": "https://en.wikipedia.org/wiki/Hagia_Sophia",
       "tags": [
-        "Roman",
-        "Building 🏠",
-        "Architecture",
         "Byzantine",
+        "Roman",
+        "Religious",
         "Christian",
-        "Engineering ⚙️",
         "Holy Site",
-        "Medieval",
+        "Architecture",
+        "Building 🏠",
         "Temple",
+        "Engineering ⚙️",
+        "Medieval",
         "Wonders"
       ],
       "type": "cultural"
@@ -308,11 +328,11 @@
       "name_ru": "Чума Юстиниана",
       "source": "https://en.wikipedia.org/wiki/Plague_of_Justinian",
       "tags": [
+        "Byzantine",
         "Roman",
         "Dynasty",
-        "Byzantine",
         "Justinian",
-        "Plague"
+        "Plague 🦠"
       ],
       "type": "historic"
     },
@@ -326,13 +346,13 @@
       "name": "Byzantine restoration of the northern Black Sea region",
       "name_ru": "Византийское восстановление северного Причерноморья",
       "tags": [
-        "Roman",
         "Byzantine",
+        "Roman",
         "Christian",
-        "Expansion",
         "Fortification",
-        "Restoration",
-        "Trade"
+        "Trade",
+        "Expansion",
+        "Restoration"
       ],
       "type": "historic"
     },
@@ -343,16 +363,16 @@
       "era": "AD",
       "latitude": 41.0082,
       "longitude": 28.9784,
-      "name": "Justinian I Dies",
-      "name_ru": "Смерть Юстиниана I",
+      "name": "Justinian I, emperor of Byzantine, dies",
+      "name_ru": "Смерть императора Византии Юстиниана I",
       "source": "https://en.wikipedia.org/wiki/Justinian_I",
       "tags": [
+        "Byzantine",
         "Roman",
         "Dynasty",
-        "Byzantine",
+        "Emperor",
         "Death",
         "Decline",
-        "Emperor",
         "Justinian"
       ],
       "type": "historic"
@@ -368,13 +388,13 @@
       "name_ru": "Лангобарды вторгаются в Италию",
       "source": "https://en.wikipedia.org/wiki/Lombards",
       "tags": [
-        "Roman",
-        "War",
         "Byzantine",
-        "Conquest",
-        "Decline",
+        "Roman",
         "Germanic",
-        "Invasion"
+        "War",
+        "Conquest",
+        "Invasion",
+        "Decline"
       ],
       "type": "military"
     },
@@ -389,9 +409,9 @@
       "name_ru": "Маврикий — император Восточного Рима",
       "source": "https://en.wikipedia.org/wiki/Maurice_(emperor)",
       "tags": [
+        "Byzantine",
         "Greek",
         "Roman",
-        "Byzantine",
         "Emperor",
         "Meritocracy"
       ],
@@ -408,9 +428,9 @@
       "name_ru": "Армия свергает императора Византии",
       "source": "https://en.wikipedia.org/wiki/Maurice_(emperor)",
       "tags": [
+        "Byzantine",
         "Roman",
         "Civil War",
-        "Byzantine",
         "Cruelty",
         "Murder",
         "Mutiny",
@@ -430,9 +450,9 @@
       "name_ru": "Ираклий свергает византийского тирана Фоку",
       "source": "https://en.wikipedia.org/wiki/Heraclius",
       "tags": [
+        "Byzantine",
         "Roman",
         "Civil War",
-        "Byzantine",
         "Crisis",
         "Emperor",
         "Overthrow"
@@ -450,38 +470,39 @@
       "name_ru": "Сасаниды разграбляют Иерусалим",
       "source": "https://en.wikipedia.org/wiki/Sasanian_conquest_of_Jerusalem",
       "tags": [
+        "Byzantine",
         "Persian",
         "Roman",
+        "Sassanid",
         "Jerusalem",
+        "Religious",
+        "Christian",
+        "Blasphemy",
         "War",
         "Battle",
-        "Blasphemy",
-        "Byzantine",
-        "Christian",
-        "Pillage",
-        "Sassanid"
+        "Pillage"
       ],
       "type": "military"
     },
     {
       "date": "29.06.0626",
-      "description": "While Heraclius is deep inside Persian territory on his great counteroffensive, an Avar Khaganate army of perhaps 80,000 appears before the Theodosian Walls while a Sassanid force waits across the Bosphorus for a coordinated assault. The Persians cannot cross — their fleet is destroyed by the Byzantine navy; the Avars batter the land walls without success and withdraw after ten days of failure. The Byzantines attribute the miraculous defence to the direct intervention of the Virgin Mary, and the Akathist Hymn is composed in thanksgiving, remaining central to Orthodox liturgy to this day.",
+      "description": "While Heraclius is deep inside Persian territory on his great counteroffensive, an Avar Khaganate army of perhaps 80,000 appears before the Theodosian Walls while a Sassanid force waits across the Bosphorus for a coordinated assault. The Persians cannot cross — their fleet is destroyed by the Byzantine navy; the Avars batter the land walls without success and withdraw after ten days of failure. \n\nThe Byzantines attribute the miraculous defence to the direct intervention of the Virgin Mary, and the Akathist Hymn is composed in thanksgiving, remaining central to Orthodox liturgy to this day.",
       "description_ru": "Пока Ираклий глубоко на персидской территории, армия Аварского Хаганата, возможно 80 000 воинов, появляется перед Стенами Феодосия, пока сасанидские силы ждут в Босфоре для скоординированного удара. Персы не могут переправиться — их флот уничтожен. Авары безуспешно штурмуют стены и отступают через десять дней. \n\nВизантийцы приписывают чудесную защиту вмешательству Богородицы; в благодарность составлен Акафист, остающийся центральным в православной литургии по сей день.",
       "era": "AD",
       "latitude": 41.01915336,
       "longitude": 28.92399788,
-      "name": "Avar-Persian Siege of Constantinople — The City Holds by a Miracle",
+      "name": "Avar-Persian Siege of Constantinople",
       "name_ru": "Аварско-персидская осада Константинополя",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Constantinople_(626)",
       "tags": [
+        "Byzantine",
         "Persian",
         "Roman",
-        "War",
-        "Byzantine",
-        "Christian",
-        "Mongolian",
         "Pannonian Avars",
+        "Mongolian",
         "Sassanid",
+        "Christian",
+        "War",
         "Siege"
       ],
       "type": "military"
@@ -491,19 +512,20 @@
       "description": "Heraclius leads his army in a decisive battle near the ruins of ancient Nineveh, routing the main Sassanid army and killing its general Rhahzadh; he then marches on Ctesiphon, which Khusrow II flees. Khusrow is overthrown and executed by his own son; the new Persian king signs a humiliating peace, returning all Byzantine territory including Syria, Palestine, and Egypt, and surrendering the True Cross. Heraclius returns the Cross to Jerusalem in a triumph of extraordinary symbolic power – but the campaign exhausts the armies that will face the Arab invasion within a decade.",
       "description_ru": "Ираклий ведёт армию в решающую битву близ руин древней Ниневии, разгромив главную сасанидскую армию; он затем марширует на Ктесифон, откуда бежит Хосров II. Хосров свергнут и казнён собственным сыном; новый персидский царь подписывает унизительный мир, возвращая все византийские территории и Крест Господень. Ираклий возвращает Крест в Иерусалим в торжестве необычайной символической силы — однако эта кампания истощает армии, которым предстоит встретить арабское нашествие в течение десятилетия.",
       "era": "AD",
-      "latitude": 36.36,
-      "longitude": 43.16,
-      "name": "Battle of Nineveh — Heraclius Defeats Persia, Recovers the True Cross",
+      "latitude": 36.3661,
+      "longitude": 43.1528,
+      "name": "Heraclius returns the Cross of the Lord after win at Nineveh",
       "name_ru": "Ираклий возвращает Крест Господень при Ниневии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Nineveh_(627)",
       "tags": [
+        "Byzantine",
         "Persian",
         "Roman",
-        "War",
-        "Battle",
-        "Byzantine",
+        "Sassanid",
+        "Religious",
         "Christian",
-        "Sassanid"
+        "War",
+        "Battle"
       ],
       "type": "military"
     },
@@ -518,14 +540,16 @@
       "name_ru": "Исламский халифат отвоевывает Сирию у Византии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Yarmouk",
       "tags": [
-        "Arabian",
+        "Byzantine",
         "Roman",
+        "Arabian",
+        "Rashidun",
+        "Religious",
+        "Christian",
+        "Islamic",
         "War",
         "Battle",
-        "Byzantine",
-        "Decline",
-        "Islamic",
-        "Rashidun"
+        "Decline"
       ],
       "type": "military"
     },
@@ -540,14 +564,14 @@
       "name_ru": "Исламский халифат отвоевывает Египет у Византии",
       "source": "https://en.wikipedia.org/wiki/Muslim_conquest_of_Egypt",
       "tags": [
-        "Arabian",
-        "Roman",
-        "Egypt",
-        "War",
         "Byzantine",
-        "Conquest",
+        "Roman",
+        "Arabian",
+        "Egypt",
+        "Rashidun",
         "Islamic",
-        "Rashidun"
+        "War",
+        "Conquest"
       ],
       "type": "military"
     },
@@ -562,12 +586,12 @@
       "name_ru": "Возведение византийской крепости в Корфу",
       "source": "https://en.wikipedia.org/wiki/Old_Fortress,_Corfu",
       "tags": [
+        "Byzantine",
         "Greek",
         "Roman",
         "Architecture",
-        "Byzantine",
-        "Engineering ⚙️",
-        "Fortification"
+        "Fortification",
+        "Engineering ⚙️"
       ],
       "type": "historic"
     },
@@ -582,13 +606,13 @@
       "name_ru": "Первая арабская осада Константинополя",
       "source": "https://en.wikipedia.org/wiki/Arab%E2%80%93Byzantine_wars",
       "tags": [
-        "Arabian",
-        "Roman",
-        "Umayyad",
-        "War",
         "Byzantine",
-        "Innovation",
+        "Roman",
+        "Arabian",
+        "Umayyad",
         "Islamic",
+        "War",
+        "Innovation",
         "Siege",
         "Weapon"
       ],
@@ -605,13 +629,13 @@
       "name_ru": "Первое Болгарское царство",
       "source": "https://en.wikipedia.org/wiki/First_Bulgarian_Empire",
       "tags": [
-        "War",
         "Byzantine",
-        "Capital",
-        "Foundation",
-        "Kingdom",
+        "Bulgarian",
         "Slavic",
-        "Bulgarian"
+        "Capital",
+        "Kingdom",
+        "Foundation",
+        "War"
       ],
       "type": "historic"
     },
@@ -626,15 +650,15 @@
       "name_ru": "Вторая арабская осада Константинополя",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Constantinople_(717%E2%80%93718)",
       "tags": [
-        "Arabian",
-        "Roman",
-        "Umayyad",
-        "War",
         "Byzantine",
-        "Islamic",
-        "Siege",
+        "Roman",
+        "Arabian",
+        "Bulgarian",
         "Slavic",
-        "Bulgarian"
+        "Umayyad",
+        "Islamic",
+        "War",
+        "Siege"
       ],
       "type": "military"
     },
@@ -649,13 +673,13 @@
       "name_ru": "Лев III запрещает религиозные образы в Византии",
       "source": "https://en.wikipedia.org/wiki/Byzantine_Iconoclasm",
       "tags": [
-        "Roman",
         "Byzantine",
-        "Christian",
-        "Crisis",
-        "Decline",
+        "Roman",
         "Religious",
-        "Iconoclasm"
+        "Christian",
+        "Iconoclasm",
+        "Crisis",
+        "Decline"
       ],
       "type": "religious"
     },
@@ -670,13 +694,13 @@
       "name_ru": "Иерийский собор осуждает все иконы как ересь",
       "source": "https://en.wikipedia.org/wiki/Council_of_Hieria",
       "tags": [
-        "Roman",
         "Byzantine",
-        "Christian",
-        "Council",
-        "Persecution",
+        "Roman",
         "Religious",
-        "Iconoclasm"
+        "Christian",
+        "Iconoclasm",
+        "Council",
+        "Persecution"
       ],
       "type": "religious"
     },
@@ -691,12 +715,12 @@
       "name_ru": "Второй Никейский собор и отмена иконоборчества",
       "source": "https://en.wikipedia.org/wiki/Second_Council_of_Nicaea",
       "tags": [
-        "Roman",
         "Byzantine",
-        "Christian",
-        "Council",
+        "Roman",
         "Religious",
+        "Christian",
         "Iconoclasm",
+        "Council",
         "Orthodox"
       ],
       "type": "religious"
@@ -712,13 +736,13 @@
       "name_ru": "Болгары убивают византийского императора при Плиске",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Pliska",
       "tags": [
+        "Byzantine",
         "Roman",
+        "Bulgarian",
+        "Slavic",
         "War",
         "Battle",
-        "Byzantine",
-        "Death",
-        "Slavic",
-        "Bulgarian"
+        "Death"
       ],
       "type": "military"
     },
@@ -733,13 +757,13 @@
       "name_ru": "Торжество Православия и конец иконоборчества в Византии",
       "source": "https://en.wikipedia.org/wiki/Triumph_of_Orthodoxy",
       "tags": [
-        "Roman",
         "Byzantine",
-        "Christian",
-        "Holidays",
+        "Roman",
         "Religious",
+        "Christian",
         "Iconoclasm",
-        "Orthodox"
+        "Orthodox",
+        "Holidays"
       ],
       "type": "religious"
     },
@@ -754,18 +778,19 @@
       "name_ru": "Создание глаголицы и распространение православия",
       "source": "https://en.wikipedia.org/wiki/Saints_Cyril_and_Methodius",
       "tags": [
+        "Byzantine",
         "Greek",
         "Roman",
-        "Byzantine",
-        "Christian",
-        "Great Moravia",
-        "Language",
-        "Methodius 👤",
-        "Moravian",
         "Slavic",
-        "Translation",
+        "Moravian",
+        "Great Moravia",
+        "Religious",
+        "Christian",
+        "Orthodox",
+        "Language",
         "Writing",
-        "Orthodox"
+        "Methodius 👤",
+        "Translation"
       ],
       "type": "cultural"
     },
@@ -780,12 +805,13 @@
       "name_ru": "Христианизация Болгарии",
       "source": "https://en.wikipedia.org/wiki/Boris_I_of_Bulgaria",
       "tags": [
-        "Adoption",
         "Byzantine",
-        "Christian",
-        "Slavic",
         "Bulgarian",
-        "Orthodox"
+        "Slavic",
+        "Religious",
+        "Christian",
+        "Orthodox",
+        "Adoption"
       ],
       "type": "religious"
     },
@@ -800,12 +826,13 @@
       "name_ru": "Василий I основывает Македонскую династию",
       "source": "https://en.wikipedia.org/wiki/Basil_I",
       "tags": [
-        "Roman",
-        "Reform",
         "Byzantine",
+        "Roman",
         "Emperor",
-        "Golden Age",
+        "Underdog",
         "Political",
+        "Reform",
+        "Golden Age",
         "Rise"
       ],
       "type": "political"
@@ -821,12 +848,12 @@
       "name_ru": "Никифор Фока отвоёвывает Крит у арабов",
       "source": "https://en.wikipedia.org/wiki/Byzantine_reconquest_of_Crete",
       "tags": [
-        "Arabian",
-        "Roman",
-        "War",
-        "Battle",
         "Byzantine",
+        "Roman",
+        "Arabian",
+        "War",
         "Conquest",
+        "Battle",
         "Innovation",
         "Siege",
         "Tactics"
@@ -844,12 +871,12 @@
       "name_ru": "Византия отвоевывает Антиохию у арабов",
       "source": "https://en.wikipedia.org/wiki/Byzantine%E2%80%93Arab_Wars",
       "tags": [
-        "Arabian",
-        "Roman",
-        "War",
         "Byzantine",
-        "Conquest",
+        "Roman",
+        "Arabian",
         "Shia",
+        "War",
+        "Conquest",
         "Syria"
       ],
       "type": "military"
@@ -865,15 +892,16 @@
       "name_ru": "Крещение Руси в православие",
       "source": "https://en.wikipedia.org/wiki/Christianization_of_Kievan_Rus%27",
       "tags": [
-        "Roman",
-        "Diplomacy",
-        "Marriage",
-        "Adoption",
         "Byzantine",
-        "Christian",
+        "Roman",
+        "Slavic",
         "Kyiv",
         "Rus",
-        "Slavic",
+        "Religious",
+        "Christian",
+        "Adoption",
+        "Diplomacy",
+        "Marriage",
         "Vladimir 👑"
       ],
       "type": "religious"
@@ -889,15 +917,15 @@
       "name_ru": "Василий II Болгаробойца ослепляет пленников",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Kleidion",
       "tags": [
+        "Byzantine",
         "Roman",
+        "Bulgarian",
         "War",
+        "Conquest",
         "Battle",
         "Annexation",
-        "Byzantine",
-        "Conquest",
         "Cruelty",
-        "Massacre",
-        "Bulgarian"
+        "Massacre"
       ],
       "type": "military"
     },
@@ -912,16 +940,16 @@
       "name_ru": "Великий раскол — Рим и Константинополь отлучают друг друга",
       "source": "https://en.wikipedia.org/wiki/East%E2%80%93West_Schism",
       "tags": [
-        "Roman",
-        "Byzantine",
-        "Catholic",
-        "Christian",
-        "Council",
-        "Crisis",
         "Milestone ⭐️",
+        "Byzantine",
+        "Roman",
         "Religious",
+        "Christian",
+        "Catholic",
+        "Council",
+        "Orthodox",
         "Schism",
-        "Orthodox"
+        "Crisis"
       ],
       "type": "religious"
     },
@@ -936,11 +964,11 @@
       "name_ru": "Норманны захватывают Бари в Италии",
       "source": "https://en.wikipedia.org/wiki/Bari",
       "tags": [
-        "Roman",
-        "War",
         "Byzantine",
-        "Decline",
+        "Roman",
         "Norman",
+        "War",
+        "Decline",
         "Robert Guiscard 👤",
         "Siege"
       ],
@@ -957,16 +985,16 @@
       "name_ru": "Поражение Византии в Анатолии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Manzikert",
       "tags": [
+        "Byzantine",
         "Roman",
+        "Turkic",
+        "Oguz",
+        "Crisis",
         "War",
         "Battle",
         "Ambush",
-        "Byzantine",
-        "Crisis",
         "Decline",
-        "Failure",
-        "Oguz",
-        "Turkic"
+        "Failure"
       ],
       "type": "military"
     },
@@ -981,17 +1009,17 @@
       "name_ru": "Военный переворот в Византии",
       "source": "https://en.wikipedia.org/wiki/Alexios_I_Komnenos",
       "tags": [
+        "Byzantine",
         "Greek",
         "Roman",
-        "Aristocracy",
-        "Byzantine",
         "Crisis",
+        "Pillage",
         "Emperor",
+        "Political",
+        "Aristocracy",
         "Military",
         "Mutiny",
-        "Overthrow",
-        "Pillage",
-        "Political"
+        "Overthrow"
       ],
       "type": "political"
     },
@@ -1006,36 +1034,14 @@
       "name_ru": "Битва при Диррахии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Dyrrhachium_(1081)",
       "tags": [
+        "Byzantine",
         "Roman",
+        "Norman",
         "War",
         "Battle",
-        "Byzantine",
-        "Norman",
         "Robert Guiscard 👤"
       ],
       "type": "military"
-    },
-    {
-      "date": "27.11.1095",
-      "description": "Emperor Alexios I Comnenus, who had stabilized the empire after Manzikert, sent envoys to Pope Urban II asking for mercenary soldiers to recapture Anatolia from the Seljuks. Urban II transformed the request at the Council of Clermont into a call for an armed pilgrimage to liberate Jerusalem.",
-      "description_ru": "Император Алексий I Комнин, стабилизировавший империю после Манцикерта, направляет посланников к Папе Урбану II с просьбой о наёмных солдатах для возвращения Анатолии у сельджуков. Урбан II преобразовывает просьбу на Клермонском соборе в призыв к вооружённому паломничеству для освобождения Иерусалима.",
-      "era": "AD",
-      "latitude": 45.78,
-      "longitude": 3.08,
-      "name": "Pope Urban II Calls the First Crusade",
-      "name_ru": "Папа Урбан II объявляет Первый крестовый поход",
-      "source": "https://en.wikipedia.org/wiki/First_Crusade",
-      "tags": [
-        "Roman",
-        "First",
-        "Byzantine",
-        "Christian",
-        "Milestone ⭐️",
-        "Papacy",
-        "Political",
-        "Crusade"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.1118",
@@ -1048,9 +1054,9 @@
       "name_ru": "Иоанн II Комнин — император Византии",
       "source": "https://en.wikipedia.org/wiki/John_II_Komnenos",
       "tags": [
+        "Byzantine",
         "Greek",
         "Roman",
-        "Byzantine",
         "Emperor"
       ],
       "type": "political"
@@ -1065,15 +1071,15 @@
       "name": "The abolition of Venetian trade concessions in Byzantium",
       "name_ru": "Отмена венецианских торговых послаблений в Византии",
       "tags": [
+        "Byzantine",
         "Roman",
         "Italian",
-        "Byzantine",
-        "Crisis",
-        "Economic",
         "Pisa",
-        "Taxes",
+        "Venice",
+        "Crisis",
         "Trade",
-        "Venice"
+        "Economic",
+        "Taxes"
       ],
       "type": "political"
     },
@@ -1088,14 +1094,14 @@
       "name_ru": "Мануил I арестовывает венецианских купцов",
       "source": "https://en.wikipedia.org/wiki/Manuel_I_Komnenos",
       "tags": [
+        "Byzantine",
         "Roman",
         "Italian",
-        "Byzantine",
-        "Crisis",
-        "Decline",
         "Genoa",
+        "Venice",
+        "Crisis",
         "Political",
-        "Venice"
+        "Decline"
       ],
       "type": "political"
     },
@@ -1110,13 +1116,13 @@
       "name_ru": "Разгром византийцев сельджуками при Мириокефале",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Myriokephalon",
       "tags": [
+        "Byzantine",
+        "Turkic",
+        "Oguz",
         "War",
         "Battle",
         "Ambush",
-        "Byzantine",
-        "Decline",
-        "Oguz",
-        "Turkic"
+        "Decline"
       ],
       "type": "military"
     },
@@ -1131,12 +1137,12 @@
       "name_ru": "Регентство Марии Антиохийской в Византии",
       "source": "https://en.wikipedia.org/wiki/Maria_of_Antioch",
       "tags": [
-        "Roman",
         "Byzantine",
+        "Roman",
         "Crisis",
-        "Death",
         "Emperor",
         "Political",
+        "Death",
         "Regency"
       ],
       "type": "political"
@@ -1152,9 +1158,9 @@
       "name_ru": "Марш Андроника Комнина на Константинополь",
       "source": "https://en.wikipedia.org/wiki/Andronikos_I_Komnenos",
       "tags": [
+        "Byzantine",
         "Roman",
         "Civil War",
-        "Byzantine",
         "Crisis",
         "Rebellion"
       ],
@@ -1171,11 +1177,11 @@
       "name_ru": "Андроник Комнин узурпирует власть в Византии",
       "source": "https://en.wikipedia.org/wiki/Andronikos_I_Komnenos",
       "tags": [
-        "Roman",
         "Byzantine",
+        "Roman",
         "Crisis",
-        "Overthrow",
         "Political",
+        "Overthrow",
         "Usurpation"
       ],
       "type": "political"
@@ -1191,21 +1197,21 @@
       "name_ru": "Крестоносцы разоряют Константинополь",
       "source": "https://en.wikipedia.org/wiki/Sack_of_Constantinople_(1204)",
       "tags": [
+        "Milestone ⭐️",
+        "Byzantine",
         "Roman",
         "Italian",
-        "War",
-        "Blasphemy",
-        "Byzantine",
-        "Christian",
-        "Decline",
-        "Destruction",
-        "Fourth",
         "French",
-        "Milestone ⭐️",
-        "Pillage",
-        "Siege",
         "Venice",
-        "Crusade"
+        "Christian",
+        "Blasphemy",
+        "Crusade",
+        "War",
+        "Destruction",
+        "Pillage",
+        "Decline",
+        "Fourth",
+        "Siege"
       ],
       "type": "military"
     },
@@ -1220,12 +1226,12 @@
       "name_ru": "Никейская империя — преемник Византии",
       "source": "https://en.wikipedia.org/wiki/Empire_of_Nicaea",
       "tags": [
-        "Roman",
         "Byzantine",
-        "Decline",
+        "Roman",
         "Empire",
         "Foundation",
-        "Political"
+        "Political",
+        "Decline"
       ],
       "type": "political"
     },
@@ -1240,8 +1246,8 @@
       "name_ru": "Михаил VIII Палеолог возвращает Константинополь",
       "source": "https://en.wikipedia.org/wiki/Michael_VIII_Palaiologos",
       "tags": [
-        "Greek",
         "Byzantine",
+        "Greek",
         "Emperor",
         "Political",
         "Rise"
@@ -1259,13 +1265,13 @@
       "name_ru": "Поражение Византии при Вафее",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Bapheus",
       "tags": [
+        "Byzantine",
         "Roman",
+        "Turkic",
+        "Oguz",
         "War",
         "Battle",
-        "Byzantine",
         "Decline",
-        "Oguz",
-        "Turkic",
         "Ottoman"
       ],
       "type": "military"
@@ -1281,13 +1287,13 @@
       "name_ru": "Османы попадают в Европу",
       "source": "https://en.wikipedia.org/wiki/Ottoman_Empire#Expansion_into_the_Balkans",
       "tags": [
-        "Roman",
-        "War",
         "Byzantine",
+        "Roman",
+        "Turkic",
+        "Oguz",
+        "War",
         "Decline",
         "Expansion",
-        "Oguz",
-        "Turkic",
         "Ottoman"
       ],
       "type": "historic"
@@ -1299,20 +1305,20 @@
       "era": "AD",
       "latitude": 42.7,
       "longitude": 21.09,
-      "name": "Battle of Kosovo — Ottoman Supremacy in the Balkans Sealed",
+      "name": "The Ottomans consolidated their position in the Balkans",
       "name_ru": "Закрепление османов на Балканах",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Kosovo",
       "tags": [
-        "Roman",
-        "War",
-        "Battle",
         "Byzantine",
-        "Decline",
-        "Expansion",
-        "Oguz",
-        "Serbian",
+        "Roman",
         "Slavic",
         "Turkic",
+        "Oguz",
+        "War",
+        "Battle",
+        "Decline",
+        "Expansion",
+        "Serbian",
         "Ottoman"
       ],
       "type": "military"
@@ -1328,19 +1334,19 @@
       "name_ru": "Османская армия разбивает крестоносцев при Никополе",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Nicopolis",
       "tags": [
-        "Roman",
-        "Holy Roman Empire",
-        "War",
-        "Battle",
         "Byzantine",
-        "Croatia",
+        "Roman",
+        "Turkic",
+        "Oguz",
         "France",
         "Genoa",
+        "Holy Roman Empire",
         "Hungary",
-        "Oguz",
-        "Turkic",
         "Venice",
         "Crusade",
+        "War",
+        "Battle",
+        "Croatia",
         "Ottoman"
       ],
       "type": "military"
@@ -1356,13 +1362,13 @@
       "name_ru": "Тамерлан разбивает османов при Анкаре",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Ankara",
       "tags": [
-        "War",
-        "Battle",
         "Byzantine",
+        "Turkic",
         "Mongolian",
         "Oguz",
+        "War",
+        "Battle",
         "Tamerlane 👤",
-        "Turkic",
         "Ottoman"
       ],
       "type": "military"

@@ -15,9 +15,9 @@
         "Greek",
         "Egypt",
         "Ptolemaic",
+        "Foundation",
         "Diadochi",
-        "War",
-        "Foundation"
+        "War"
       ],
       "type": "political"
     },
@@ -118,11 +118,11 @@
         "Greek",
         "Egypt",
         "Ptolemaic",
-        "Ancient",
         "Culture",
+        "Ancient",
+        "Wonders",
         "Library",
-        "Science",
-        "Wonders"
+        "Science"
       ],
       "type": "cultural"
     },
@@ -161,8 +161,8 @@
         "Greek",
         "Egypt",
         "Ptolemaic",
-        "Alexander the Great 👤",
-        "Tomb"
+        "Tomb",
+        "Alexander the Great 👤"
       ],
       "type": "historic"
     },
@@ -180,8 +180,8 @@
         "Greek",
         "Egypt",
         "Ptolemaic",
-        "Pagan",
         "Religious",
+        "Pagan",
         "Syncretism"
       ],
       "type": "religious"
@@ -200,9 +200,9 @@
         "Greek",
         "Egypt",
         "Ptolemaic",
+        "Architecture",
         "Building 🏠",
         "Ancient",
-        "Architecture",
         "Wonders"
       ],
       "type": "cultural"
@@ -259,9 +259,9 @@
         "Greek",
         "Egypt",
         "Ptolemaic",
+        "Architecture",
         "Building 🏠",
         "Ancient",
-        "Architecture",
         "Wonders"
       ],
       "type": "cultural"
@@ -280,9 +280,9 @@
         "Greek",
         "Egypt",
         "Ptolemaic",
+        "Deification",
         "Marriage",
-        "Dynasty",
-        "Deification"
+        "Dynasty"
       ],
       "type": "political"
     },
@@ -340,11 +340,11 @@
         "Greek",
         "Egypt",
         "Ptolemaic",
-        "Death",
-        "Deification",
-        "Pagan",
         "Religious",
-        "Syncretism"
+        "Pagan",
+        "Syncretism",
+        "Deification",
+        "Death"
       ],
       "type": "religious"
     },
@@ -361,11 +361,11 @@
       "tags": [
         "Greek",
         "Egypt",
-        "Ptolemaic",
         "African",
+        "Ptolemaic",
+        "Trade",
         "Elephants",
-        "Expedition",
-        "Trade"
+        "Expedition"
       ],
       "type": "historic"
     },
@@ -403,11 +403,11 @@
         "Egypt",
         "Ptolemaic",
         "Legend",
+        "Water",
+        "Engineering ⚙️",
         "Archimedes 👤",
         "Education",
-        "Engineering ⚙️",
-        "Science",
-        "Water"
+        "Science"
       ],
       "type": "scientific"
     },
@@ -463,10 +463,10 @@
       "tags": [
         "Greek",
         "Egypt",
-        "Engineering ⚙️",
-        "Innovation",
         "Music",
-        "Water"
+        "Water",
+        "Engineering ⚙️",
+        "Innovation"
       ],
       "type": "cultural"
     },
@@ -561,10 +561,10 @@
         "Greek",
         "Egypt",
         "Ptolemaic",
-        "Building 🏠",
-        "Architecture",
-        "Pagan",
         "Religious",
+        "Pagan",
+        "Architecture",
+        "Building 🏠",
         "Temple"
       ],
       "type": "cultural"
@@ -639,9 +639,9 @@
         "Greek",
         "Egypt",
         "Ptolemaic",
+        "Crisis",
         "Dynasty",
-        "King",
-        "Crisis"
+        "King"
       ],
       "type": "political"
     },
@@ -760,11 +760,11 @@
         "Greek",
         "Egypt",
         "Ptolemaic",
-        "Culture",
-        "Mother of God",
-        "Pagan",
         "Religious",
-        "Syncretism"
+        "Pagan",
+        "Syncretism",
+        "Mother of God",
+        "Culture"
       ],
       "type": "religious"
     },
@@ -801,8 +801,8 @@
         "Greek",
         "Egypt",
         "Ptolemaic",
-        "Dynasty",
         "Crisis",
+        "Dynasty",
         "Persecution"
       ],
       "type": "political"
@@ -899,8 +899,8 @@
         "Greek",
         "Egypt",
         "Ptolemaic",
-        "Dynasty",
         "Crisis",
+        "Dynasty",
         "Lynching",
         "Murder"
       ],
@@ -962,10 +962,10 @@
         "Greek",
         "Egypt",
         "Ptolemaic",
-        "Building 🏠",
-        "Architecture",
-        "Pagan",
         "Religious",
+        "Pagan",
+        "Architecture",
+        "Building 🏠",
         "Temple"
       ],
       "type": "cultural"
@@ -1007,6 +1007,7 @@
         "Egypt",
         "Ptolemaic",
         "Dynasty",
+        "Queen",
         "Cleopatra VII 👑",
         "Debt"
       ],
@@ -1047,6 +1048,7 @@
         "Roman",
         "Egypt",
         "Ptolemaic",
+        "Underdog",
         "Cleopatra VII 👑",
         "Julius Caesar 👤"
       ],
@@ -1129,8 +1131,8 @@
         "Ptolemaic",
         "Civil War",
         "Battle",
-        "Cleopatra VII 👑",
         "Death",
+        "Cleopatra VII 👑",
         "Julius Caesar 👤"
       ],
       "type": "military"
@@ -1166,12 +1168,12 @@
       "source": "https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar",
       "tags": [
         "Roman",
+        "Senate",
+        "Crisis",
         "Assassination",
         "Conspiracy",
-        "Crisis",
         "Julius Caesar 👤",
-        "Mark Antony 👤",
-        "Senate"
+        "Mark Antony 👤"
       ],
       "type": "political"
     },
@@ -1249,11 +1251,11 @@
         "Roman",
         "Egypt",
         "Ptolemaic",
-        "Cleopatra VII 👑",
         "Crisis",
+        "Political",
+        "Cleopatra VII 👑",
         "Mark Antony 👤",
-        "Octavian 👑",
-        "Political"
+        "Octavian 👑"
       ],
       "type": "political"
     },
@@ -1333,8 +1335,8 @@
       "tags": [
         "Egypt",
         "Ptolemaic",
-        "Cleopatra VII 👑",
         "Death",
+        "Cleopatra VII 👑",
         "Fall",
         "Suicide"
       ],

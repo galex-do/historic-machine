@@ -12,9 +12,9 @@
       "name_ru": "Накбе возводит первые великие монументы Месоамерики",
       "source": "https://en.wikipedia.org/wiki/Nakbe",
       "tags": [
-        "Architecture",
-        "Mayan",
         "Mesoamerican",
+        "Mayan",
+        "Architecture",
         "Settlement"
       ],
       "type": "historic"
@@ -30,9 +30,9 @@
       "name_ru": "Ламанай — центр Майя",
       "source": "https://en.wikipedia.org/wiki/Lamanai",
       "tags": [
-        "City",
+        "Mesoamerican",
         "Mayan",
-        "Mesoamerican"
+        "City"
       ],
       "type": "historic"
     },
@@ -47,11 +47,11 @@
       "name_ru": "Эль-Мирадор — первый центр цивилизации Майя",
       "source": "https://en.wikipedia.org/wiki/El_Mirador",
       "tags": [
+        "Mesoamerican",
+        "Mayan",
         "City",
         "City-State",
         "Architecture",
-        "Mayan",
-        "Mesoamerican",
         "Political"
       ],
       "type": "historic"
@@ -67,13 +67,13 @@
       "name_ru": "Росписи Сан-Бартоло",
       "source": "https://en.wikipedia.org/wiki/San_Bartolo_(Maya_site)",
       "tags": [
-        "Art",
-        "Cultural Continuity",
-        "Mayan",
         "Mesoamerican",
+        "Mayan",
         "Olmec",
         "Religious",
-        "Writing"
+        "Art",
+        "Writing",
+        "Cultural Continuity"
       ],
       "type": "religious"
     },
@@ -88,13 +88,13 @@
       "name_ru": "Инженеры Эль-Мирадора прокладывают дороги в джунглях",
       "source": "https://en.wikipedia.org/wiki/Sacbe",
       "tags": [
+        "Mesoamerican",
+        "Mayan",
+        "Road",
+        "Trade",
         "Engineering ⚙️",
         "Infrastructure",
-        "Mayan",
-        "Mesoamerican",
-        "Road",
-        "Technology",
-        "Trade"
+        "Technology"
       ],
       "type": "scientific"
     },
@@ -109,13 +109,13 @@
       "name_ru": "В Тикале укореняется царская династия",
       "source": "https://en.wikipedia.org/wiki/Tikal",
       "tags": [
+        "Mesoamerican",
+        "Mayan",
+        "Tikal",
+        "Capital",
         "City",
         "Dynasty",
-        "Capital",
-        "Mayan",
-        "Mesoamerican",
-        "Political",
-        "Tikal"
+        "Political"
       ],
       "type": "political"
     },
@@ -130,13 +130,13 @@
       "name_ru": "Эль-Мирадор разрушает экологию и приходит в упадок",
       "source": "https://en.wikipedia.org/wiki/El_Mirador",
       "tags": [
+        "Mesoamerican",
+        "Mayan",
         "Abandonment",
         "Climate Crisis",
         "Collapse",
         "Decline",
-        "Ecology",
-        "Mayan",
-        "Mesoamerican"
+        "Ecology"
       ],
       "type": "historic"
     },
@@ -151,13 +151,13 @@
       "name_ru": "Длинный счёт майя",
       "source": "https://en.wikipedia.org/wiki/Mesoamerican_Long_Count_calendar",
       "tags": [
+        "Mesoamerican",
+        "Mayan",
+        "Tikal",
+        "Writing",
         "Calendar",
         "Innovation",
-        "Mathematics",
-        "Mayan",
-        "Mesoamerican",
-        "Tikal",
-        "Writing"
+        "Mathematics"
       ],
       "type": "scientific"
     },
@@ -172,15 +172,15 @@
       "name_ru": "Каминальхуйю — ранний центр майя",
       "source": "https://en.wikipedia.org/wiki/Kaminaljuyu",
       "tags": [
-        "City-State",
-        "Architecture",
-        "Cocoa",
-        "Culture",
-        "Mayan",
         "Mesoamerican",
-        "Obsidian",
+        "Mayan",
         "Teotihuacan",
-        "Trade"
+        "City-State",
+        "Culture",
+        "Architecture",
+        "Trade",
+        "Cocoa",
+        "Obsidian"
       ],
       "type": "cultural"
     },
@@ -195,12 +195,12 @@
       "name_ru": "Храм Масок в Ламанай",
       "source": "https://en.wikipedia.org/wiki/Mask_Temple",
       "tags": [
-        "Building 🏠",
-        "Animalism",
-        "Architecture",
-        "Culture",
-        "Mayan",
         "Mesoamerican",
+        "Mayan",
+        "Animalism",
+        "Culture",
+        "Architecture",
+        "Building 🏠",
         "Temple"
       ],
       "type": "religious"
@@ -216,14 +216,14 @@
       "name_ru": "Основание государства Копан в Мезоамерике",
       "source": "https://en.wikipedia.org/wiki/K%27inich_Yax_K%27uk%27_Mo%27",
       "tags": [
+        "Mesoamerican",
+        "Mayan",
+        "Copan",
         "City",
         "City-State",
+        "Culture",
         "Dynasty",
         "Architecture",
-        "Copan",
-        "Culture",
-        "Mayan",
-        "Mesoamerican",
         "Political"
       ],
       "type": "political"
@@ -239,12 +239,12 @@
       "name_ru": "Формирование царства Паленке",
       "source": "https://en.wikipedia.org/wiki/Palenque",
       "tags": [
-        "Dynasty",
-        "Foundation",
-        "Kingdom",
-        "Mayan",
         "Mesoamerican",
-        "Palenque"
+        "Mayan",
+        "Palenque",
+        "Kingdom",
+        "Foundation",
+        "Dynasty"
       ],
       "type": "historic"
     },
@@ -259,13 +259,13 @@
       "name_ru": "Майя открывают понятие нуля",
       "source": "https://en.wikipedia.org/wiki/Maya_numerals",
       "tags": [
+        "Mesoamerican",
+        "Mayan",
+        "Writing",
         "Astronomy",
         "Innovation",
         "Mathematics",
-        "Mayan",
-        "Mesoamerican",
-        "Science",
-        "Writing"
+        "Science"
       ],
       "type": "scientific"
     },
@@ -279,11 +279,11 @@
       "name": "Cocoa beans as Mesoamerican currency",
       "name_ru": "Зерна какао как мезоамериканская валюта",
       "tags": [
-        "Culture",
-        "Currency",
-        "Economic",
+        "Mesoamerican",
         "Mayan",
-        "Mesoamerican"
+        "Culture",
+        "Currency 🪙",
+        "Economic"
       ],
       "type": "cultural"
     },
@@ -298,11 +298,11 @@
       "name_ru": "Священное ткачество майя",
       "source": "https://en.wikipedia.org/wiki/Loom#Backstrap_loom",
       "tags": [
+        "Mesoamerican",
+        "Mayan",
+        "Religious",
         "Culture",
         "Customs",
-        "Mayan",
-        "Mesoamerican",
-        "Religious",
         "Textile"
       ],
       "type": "cultural"
@@ -318,12 +318,12 @@
       "name_ru": "Калакмуль возникает как царство Змеи",
       "source": "https://en.wikipedia.org/wiki/Calakmul",
       "tags": [
-        "City",
+        "Mesoamerican",
+        "Mayan",
         "Calakmul",
         "Capital",
         "Empire",
-        "Mayan",
-        "Mesoamerican",
+        "City",
         "Political",
         "Rivalry"
       ],
@@ -340,12 +340,12 @@
       "name_ru": "Караколь разоряет Тикаль",
       "source": "https://en.wikipedia.org/wiki/Caracol,_Belize",
       "tags": [
-        "War",
-        "Astronomy",
-        "Mayan",
         "Mesoamerican",
+        "Mayan",
+        "Tikal",
+        "War",
         "Rebellion",
-        "Tikal"
+        "Astronomy"
       ],
       "type": "military"
     },
@@ -360,11 +360,11 @@
       "name_ru": "Калакмуль разоряет Паленке",
       "source": "https://en.wikipedia.org/wiki/Calakmul",
       "tags": [
-        "War",
-        "Calakmul",
-        "Mayan",
         "Mesoamerican",
+        "Mayan",
+        "Calakmul",
         "Palenque",
+        "War",
         "Pillage",
         "Vassalage"
       ],
@@ -381,12 +381,12 @@
       "name_ru": "Исамаль — северный центр майя",
       "source": "https://en.wikipedia.org/wiki/Izamal",
       "tags": [
-        "City",
-        "Architecture",
-        "Holy Site",
-        "Mayan",
         "Mesoamerican",
-        "Religious"
+        "Mayan",
+        "City",
+        "Religious",
+        "Holy Site",
+        "Architecture"
       ],
       "type": "historic"
     },
@@ -401,9 +401,9 @@
       "name_ru": "Строительство пирамиды Каан в Караколе",
       "source": "https://en.wikipedia.org/wiki/Caracol",
       "tags": [
-        "Architecture",
-        "Mayan",
         "Mesoamerican",
+        "Mayan",
+        "Architecture",
         "Palace",
         "Temple"
       ],
@@ -420,13 +420,13 @@
       "name_ru": "Калакмуль подавляет восстание Паленке",
       "source": "https://en.wikipedia.org/wiki/Calakmul",
       "tags": [
-        "War",
-        "Calakmul",
-        "Destruction",
-        "Mayan",
         "Mesoamerican",
+        "Mayan",
+        "Calakmul",
         "Palenque",
-        "Rebellion"
+        "War",
+        "Rebellion",
+        "Destruction"
       ],
       "type": "military"
     },
@@ -441,10 +441,10 @@
       "name_ru": "Пакаль становится царем Паленке",
       "source": "https://en.wikipedia.org/wiki/K%CA%BCinich_Janaab%CA%BC_Pakal",
       "tags": [
-        "King",
-        "Mayan",
         "Mesoamerican",
+        "Mayan",
         "Palenque",
+        "King",
         "Regency"
       ],
       "type": "political"
@@ -460,15 +460,15 @@
       "name_ru": "Принц Тикаля основывает соперничающее царство",
       "source": "https://en.wikipedia.org/wiki/Dos_Pilas",
       "tags": [
-        "Dynasty",
-        "Calakmul",
-        "Foundation",
-        "Kingdom",
-        "Mayan",
         "Mesoamerican",
+        "Mayan",
+        "Calakmul",
+        "Tikal",
+        "Kingdom",
+        "Foundation",
+        "Dynasty",
         "Political",
-        "Rivalry",
-        "Tikal"
+        "Rivalry"
       ],
       "type": "political"
     },
@@ -483,12 +483,12 @@
       "name_ru": "Возрождение Тикаля",
       "source": "https://en.wikipedia.org/wiki/Tikal",
       "tags": [
-        "Mayan",
         "Mesoamerican",
+        "Mayan",
+        "Tikal",
         "Political",
         "Restoration",
-        "Rise",
-        "Tikal"
+        "Rise"
       ],
       "type": "political"
     },
@@ -503,15 +503,15 @@
       "name_ru": "Пакаль Великий обретает покой под Храмом Надписей",
       "source": "https://en.wikipedia.org/wiki/Palenque",
       "tags": [
+        "Mesoamerican",
+        "Mayan",
+        "Palenque",
+        "Holy Site",
+        "Culture",
+        "Burial",
         "Dynasty",
         "King",
-        "Burial",
-        "Culture",
-        "Death",
-        "Holy Site",
-        "Mayan",
-        "Mesoamerican",
-        "Palenque"
+        "Death"
       ],
       "type": "cultural"
     },
@@ -526,12 +526,12 @@
       "name_ru": "Тикаль сокрушает Калакмуль в войне",
       "source": "https://en.wikipedia.org/wiki/Tikal",
       "tags": [
-        "War",
-        "Battle",
-        "Calakmul",
-        "Mayan",
         "Mesoamerican",
-        "Tikal"
+        "Mayan",
+        "Calakmul",
+        "Tikal",
+        "War",
+        "Battle"
       ],
       "type": "military"
     },
@@ -546,12 +546,12 @@
       "name_ru": "Итцамнаах-Кʼавиль воцаряется в Дос Пилас",
       "source": "https://en.wikipedia.org/wiki/Itzamnaaj_K%27awiil",
       "tags": [
-        "King",
-        "Ceremonial",
-        "Expansion",
-        "Mayan",
         "Mesoamerican",
-        "Political"
+        "Mayan",
+        "Ceremonial",
+        "King",
+        "Political",
+        "Expansion"
       ],
       "type": "political"
     },
@@ -566,10 +566,10 @@
       "name_ru": "Полевая медицина майя",
       "source": "https://www.baus.org.uk/museum/88/mayan_medicine",
       "tags": [
-        "Anatomy",
-        "Mayan",
-        "Medicine",
         "Mesoamerican",
+        "Mayan",
+        "Anatomy",
+        "Medicine",
         "Science"
       ],
       "type": "scientific"
@@ -585,11 +585,11 @@
       "name_ru": "Ушмаль — северный центр майя",
       "source": "https://en.wikipedia.org/wiki/Uxmal",
       "tags": [
+        "Mesoamerican",
+        "Mayan",
         "City",
         "City-State",
-        "Architecture",
-        "Mayan",
-        "Mesoamerican"
+        "Architecture"
       ],
       "type": "historic"
     },
@@ -604,13 +604,13 @@
       "name_ru": "Майянские чультуны для сбора воды",
       "source": "https://en.wikipedia.org/wiki/Chultun",
       "tags": [
+        "Mesoamerican",
+        "Mayan",
+        "Water",
         "Engineering ⚙️",
         "Infrastructure",
         "Innovation",
-        "Mayan",
-        "Mesoamerican",
-        "Technology",
-        "Water"
+        "Technology"
       ],
       "type": "historic"
     },
@@ -625,13 +625,13 @@
       "name_ru": "Храм Масок построен в Тикале",
       "source": "https://en.wikipedia.org/wiki/Tikal_Temple_II",
       "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Holy Site",
-        "Mayan",
         "Mesoamerican",
-        "Temple",
-        "Tikal"
+        "Mayan",
+        "Tikal",
+        "Holy Site",
+        "Architecture",
+        "Building 🏠",
+        "Temple"
       ],
       "type": "cultural"
     },
@@ -646,13 +646,13 @@
       "name_ru": "Майянский ритуал кровопускания перед Змеем Видения",
       "source": "https://en.wikipedia.org/wiki/Yaxchilan",
       "tags": [
-        "Ceremonial",
-        "Culture",
-        "Customs",
-        "Mayan",
         "Mesoamerican",
-        "Mystery",
-        "Religious"
+        "Mayan",
+        "Religious",
+        "Culture",
+        "Ceremonial",
+        "Customs",
+        "Mystery"
       ],
       "type": "religious"
     },
@@ -667,14 +667,14 @@
       "name_ru": "Храм Ягуара построен в Тикале",
       "source": "https://en.wikipedia.org/wiki/Tikal_Temple_I",
       "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Holy Site",
-        "Mayan",
         "Mesoamerican",
-        "Religious",
-        "Temple",
+        "Mayan",
         "Tikal",
+        "Religious",
+        "Holy Site",
+        "Architecture",
+        "Building 🏠",
+        "Temple",
         "Tomb"
       ],
       "type": "religious"
@@ -690,12 +690,12 @@
       "name_ru": "Киригуа декларирует независимость от Копана",
       "source": "https://en.wikipedia.org/wiki/Quirigu%C3%A1",
       "tags": [
-        "Copan",
-        "Independence",
-        "Mayan",
         "Mesoamerican",
-        "Murder",
+        "Mayan",
+        "Copan",
         "Rebellion",
+        "Independence",
+        "Murder",
         "Rivalry"
       ],
       "type": "military"
@@ -711,11 +711,11 @@
       "name_ru": "Копан вырезает самый длинный текст в мире майя",
       "source": "https://en.wikipedia.org/wiki/Cop%C3%A1n",
       "tags": [
-        "Art",
+        "Mesoamerican",
+        "Mayan",
         "Copan",
         "Culture",
-        "Mayan",
-        "Mesoamerican",
+        "Art",
         "Writing"
       ],
       "type": "cultural"
@@ -731,10 +731,10 @@
       "name_ru": "Росписи Бонампака отражают культуру майя",
       "source": "https://en.wikipedia.org/wiki/Bonampak",
       "tags": [
-        "Art",
-        "Culture",
+        "Mesoamerican",
         "Mayan",
-        "Mesoamerican"
+        "Culture",
+        "Art"
       ],
       "type": "cultural"
     },
@@ -749,12 +749,12 @@
       "name_ru": "Коллапс южных майянских цивилизаций",
       "source": "https://en.wikipedia.org/wiki/Maya_civilization",
       "tags": [
+        "Mesoamerican",
+        "Mayan",
         "Abandonment",
         "Climate Crisis",
         "Collapse",
-        "Decline",
-        "Mayan",
-        "Mesoamerican"
+        "Decline"
       ],
       "type": "historic"
     },
@@ -769,13 +769,13 @@
       "name_ru": "Великая пирамида Ушмаля",
       "source": "https://en.wikipedia.org/wiki/Uxmal",
       "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Culture",
-        "Holy Site",
-        "Mayan",
         "Mesoamerican",
+        "Mayan",
         "Religious",
+        "Holy Site",
+        "Culture",
+        "Architecture",
+        "Building 🏠",
         "Temple"
       ],
       "type": "religious"
@@ -791,14 +791,14 @@
       "name_ru": "Пирамида волшебника в Ушмале",
       "source": "https://en.wikipedia.org/wiki/Pyramid_of_the_Magician",
       "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Astronomy",
-        "Culture",
-        "Mayan",
         "Mesoamerican",
+        "Mayan",
         "Religious",
-        "Temple"
+        "Culture",
+        "Architecture",
+        "Building 🏠",
+        "Temple",
+        "Astronomy"
       ],
       "type": "religious"
     },
@@ -813,9 +813,9 @@
       "name_ru": "Создание Майяпанской лиги",
       "source": "https://en.wikipedia.org/wiki/Mayapan",
       "tags": [
-        "Alliance",
-        "Mayan",
         "Mesoamerican",
+        "Mayan",
+        "Alliance",
         "Unification"
       ],
       "type": "historic"
@@ -831,17 +831,17 @@
       "name_ru": "Чичен-Ица объединяет богов майя и тольтеков",
       "source": "https://en.wikipedia.org/wiki/Chichen_Itza",
       "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Astronomy",
-        "Chichen Itza",
-        "Culture",
-        "Holy Site",
-        "Mayan",
         "Mesoamerican",
+        "Mayan",
+        "Toltec",
+        "Chichen Itza",
         "Religious",
         "Syncretism",
-        "Toltec"
+        "Holy Site",
+        "Culture",
+        "Architecture",
+        "Building 🏠",
+        "Astronomy"
       ],
       "type": "religious"
     },
@@ -856,14 +856,14 @@
       "name_ru": "Кодекс майя из Чичен-Ица",
       "source": "https://en.wikipedia.org/wiki/Dresden_Codex",
       "tags": [
+        "Mesoamerican",
+        "Mayan",
+        "Chichen Itza",
         "Astronomy",
         "Calendar",
-        "Chichen Itza",
-        "Mayan",
-        "Mesoamerican",
+        "Flood",
         "Science",
-        "Text",
-        "Flood"
+        "Text"
       ],
       "type": "scientific"
     },
@@ -878,11 +878,11 @@
       "name_ru": "Тулум — приморская крепость майя",
       "source": "https://en.wikipedia.org/wiki/Tulum",
       "tags": [
+        "Mesoamerican",
+        "Mayan",
         "City",
         "Architecture",
-        "Fortification",
-        "Mayan",
-        "Mesoamerican"
+        "Fortification"
       ],
       "type": "historic"
     },
@@ -897,11 +897,11 @@
       "name_ru": "Запустение города Ушмаль",
       "source": "https://en.wikipedia.org/wiki/Uxmal",
       "tags": [
+        "Mesoamerican",
+        "Mayan",
         "City",
         "Abandonment",
-        "Decline",
-        "Mayan",
-        "Mesoamerican"
+        "Decline"
       ],
       "type": "historic"
     },
@@ -916,11 +916,11 @@
       "name_ru": "Хунак-Кеель сокрушает Чичен-Ицу",
       "source": "https://en.wikipedia.org/wiki/Hunac_Ceel",
       "tags": [
-        "War",
-        "Chichen Itza",
-        "Conquest",
+        "Mesoamerican",
         "Mayan",
-        "Mesoamerican"
+        "Chichen Itza",
+        "War",
+        "Conquest"
       ],
       "type": "military"
     },
@@ -935,10 +935,10 @@
       "name_ru": "Майяпан правит объединённым Юкатаном",
       "source": "https://en.wikipedia.org/wiki/Mayapan",
       "tags": [
-        "Centralization",
-        "Mayan",
         "Mesoamerican",
+        "Mayan",
         "Political",
+        "Centralization",
         "Unification"
       ],
       "type": "political"
@@ -954,12 +954,12 @@
       "name_ru": "Восстание Шиу сжигает Майяпан и раскалывает Юкатан",
       "source": "https://en.wikipedia.org/wiki/Mayapan",
       "tags": [
-        "Crisis",
-        "Fragmentation",
-        "Mayan",
         "Mesoamerican",
-        "Political",
+        "Mayan",
+        "Crisis",
         "Rebellion",
+        "Political",
+        "Fragmentation",
         "Rivalry"
       ],
       "type": "political"
@@ -975,11 +975,11 @@
       "name_ru": "Потерпевшие крушение испанцы приняты в общество майя",
       "source": "https://en.wikipedia.org/wiki/Gonzalo_Guerrero",
       "tags": [
-        "Conquistadors",
-        "Mayan",
         "Mesoamerican",
+        "Mayan",
+        "Spanish",
         "New World",
-        "Spanish"
+        "Conquistadors"
       ],
       "type": "historic"
     },
@@ -994,14 +994,15 @@
       "name_ru": "Первое прибытие испанцев на Юкатан",
       "source": "https://en.wikipedia.org/wiki/Hern%C3%A1ndez_de_C%C3%B3rdoba_expedition",
       "tags": [
-        "War",
-        "Battle",
-        "Conquest",
-        "Conquistadors",
-        "Mayan",
+        "Milestone ⭐️",
         "Mesoamerican",
+        "Mayan",
+        "Spanish",
         "New World",
-        "Spanish"
+        "War",
+        "Conquest",
+        "Battle",
+        "Conquistadors"
       ],
       "type": "military"
     },
@@ -1016,15 +1017,15 @@
       "name_ru": "Педро де Альварадо сжигает столицу кʼичʼе",
       "source": "https://en.wikipedia.org/wiki/Q%27umarkaj",
       "tags": [
-        "War",
-        "Alvarado 👤",
-        "Conquest",
-        "Conquistadors",
-        "Destruction",
-        "Mayan",
         "Mesoamerican",
+        "Mayan",
+        "Spanish",
         "New World",
-        "Spanish"
+        "War",
+        "Conquest",
+        "Destruction",
+        "Alvarado 👤",
+        "Conquistadors"
       ],
       "type": "military"
     },
@@ -1039,13 +1040,13 @@
       "name_ru": "Шиу переходят на сторону испанской короны",
       "source": "https://kids.kiddle.co/Tutul-Xiu",
       "tags": [
-        "War",
-        "Alliance",
-        "Conquistadors",
-        "Mayan",
         "Mesoamerican",
+        "Mayan",
+        "Spanish",
         "New World",
-        "Spanish"
+        "Alliance",
+        "War",
+        "Conquistadors"
       ],
       "type": "historic"
     },
@@ -1060,14 +1061,14 @@
       "name_ru": "Двадцатилетняя война Монтехо за землю без столицы",
       "source": "https://en.wikipedia.org/wiki/Spanish_conquest_of_Yucat%C3%A1n",
       "tags": [
+        "Mesoamerican",
+        "Mayan",
+        "Spanish",
+        "New World",
         "War",
         "Conquest",
-        "Conquistadors",
-        "Mayan",
-        "Mesoamerican",
-        "New World",
         "Political",
-        "Spanish"
+        "Conquistadors"
       ],
       "type": "military"
     },
@@ -1082,13 +1083,13 @@
       "name_ru": "Падение Ноджпетена, последнего царства майя",
       "source": "https://en.wikipedia.org/wiki/Nojpet%C3%A9n",
       "tags": [
+        "Mesoamerican",
+        "Mayan",
+        "Spanish",
+        "New World",
         "War",
         "Conquest",
-        "Conquistadors",
-        "Mayan",
-        "Mesoamerican",
-        "New World",
-        "Spanish"
+        "Conquistadors"
       ],
       "type": "military"
     },
@@ -1103,11 +1104,11 @@
       "name_ru": "Пополь-Вух сохраняет мифологию майя",
       "source": "https://en.wikipedia.org/wiki/Popol_Vuh",
       "tags": [
-        "Cosmology",
+        "Mesoamerican",
+        "Mayan",
         "Culture",
         "Literature",
-        "Mayan",
-        "Mesoamerican",
+        "Cosmology",
         "Text"
       ],
       "type": "cultural"

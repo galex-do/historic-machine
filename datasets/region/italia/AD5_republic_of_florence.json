@@ -31,10 +31,10 @@
       "source": "https://en.wikipedia.org/wiki/Matilda_of_Tuscany",
       "tags": [
         "Italian",
-        "City-State",
-        "Expansion",
         "Florence",
+        "City-State",
         "Foundation",
+        "Expansion",
         "Independence"
       ],
       "type": "political"
@@ -51,11 +51,11 @@
       "source": "https://en.wikipedia.org/wiki/Fiesole",
       "tags": [
         "Italian",
+        "Florence",
         "War",
         "Conquest",
         "Destruction",
-        "Expansion",
-        "Florence"
+        "Expansion"
       ],
       "type": "military"
     },
@@ -71,9 +71,9 @@
       "source": "https://en.wikipedia.org/wiki/Primo_Popolo",
       "tags": [
         "Italian",
-        "Reform",
         "Florence",
         "Foundation",
+        "Reform",
         "Republic"
       ],
       "type": "political"
@@ -90,11 +90,11 @@
       "source": "https://en.wikipedia.org/wiki/Florin",
       "tags": [
         "Italian",
-        "Currency",
-        "Economic",
         "Florence",
         "Gold",
-        "Trade"
+        "Trade",
+        "Currency 🪙",
+        "Economic"
       ],
       "type": "historic"
     },
@@ -110,10 +110,10 @@
       "source": "https://en.wikipedia.org/wiki/Bargello",
       "tags": [
         "Italian",
-        "Building 🏠",
-        "Administration",
+        "Florence",
         "Architecture",
-        "Florence"
+        "Building 🏠",
+        "Administration"
       ],
       "type": "cultural"
     },
@@ -129,11 +129,11 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Montaperti",
       "tags": [
         "Italian",
+        "Florence",
         "Holy Roman Empire",
+        "Crisis",
         "War",
         "Battle",
-        "Crisis",
-        "Florence",
         "Guelphs and Ghibellines"
       ],
       "type": "military"
@@ -150,10 +150,10 @@
       "source": "https://en.wikipedia.org/wiki/Dante_Alighieri",
       "tags": [
         "Italian",
-        "Birth",
+        "Florence",
         "Culture",
-        "Dante Aligheri 👤",
-        "Florence"
+        "Birth",
+        "Dante Aligheri 👤"
       ],
       "type": "cultural"
     },
@@ -169,11 +169,12 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Benevento_(1266)",
       "tags": [
         "Italian",
+        "French",
         "Holy Roman Empire",
         "War",
         "Capetian",
+        "Charles of Anjou 👑",
         "Expansion",
-        "French",
         "Guelphs and Ghibellines"
       ],
       "type": "military"
@@ -190,11 +191,11 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Colle_di_Val_d%27Elsa",
       "tags": [
         "Italian",
+        "Florence",
         "Holy Roman Empire",
         "War",
         "Battle",
         "Expansion",
-        "Florence",
         "Guelphs and Ghibellines"
       ],
       "type": "military"
@@ -206,15 +207,15 @@
       "era": "AD",
       "latitude": 43.76959855,
       "longitude": 11.25598133,
-      "name": "Priorate of the Arts Established — Merchant Guilds Govern Florence",
+      "name": "Priorate of the Arts Established in Florence",
       "name_ru": "Флорентийский Приорат Искусств",
       "source": "https://en.wikipedia.org/wiki/Priorate_of_Florence",
       "tags": [
         "Italian",
-        "Reform",
-        "Administration",
         "Florence",
-        "Trade"
+        "Trade",
+        "Reform",
+        "Administration"
       ],
       "type": "political"
     },
@@ -230,11 +231,11 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Campaldino",
       "tags": [
         "Italian",
+        "Florence",
         "War",
         "Battle",
         "Dante Aligheri 👤",
         "Expansion",
-        "Florence",
         "Guelphs and Ghibellines"
       ],
       "type": "military"
@@ -251,8 +252,8 @@
       "source": "https://en.wikipedia.org/wiki/Ordinances_of_Justice",
       "tags": [
         "Italian",
-        "Reform",
         "Florence",
+        "Reform",
         "Law"
       ],
       "type": "political"
@@ -269,14 +270,14 @@
       "source": "https://en.wikipedia.org/wiki/Florence_Cathedral",
       "tags": [
         "Italian",
-        "Building 🏠",
-        "Architecture",
+        "Florence",
+        "Religious",
         "Christian",
         "Culture",
-        "Florence",
-        "Medieval",
-        "Religious",
+        "Architecture",
+        "Building 🏠",
         "Temple",
+        "Medieval",
         "Wonders"
       ],
       "type": "cultural"
@@ -293,10 +294,10 @@
       "source": "https://en.wikipedia.org/wiki/Palazzo_Vecchio",
       "tags": [
         "Italian",
-        "Building 🏠",
-        "Administration",
+        "Florence",
         "Architecture",
-        "Florence"
+        "Building 🏠",
+        "Administration"
       ],
       "type": "cultural"
     },
@@ -314,9 +315,9 @@
         "Italian",
         "Crisis",
         "Culture",
+        "Political",
         "Dante Aligheri 👤",
-        "Exile",
-        "Political"
+        "Exile"
       ],
       "type": "cultural"
     },
@@ -332,14 +333,14 @@
       "source": "https://en.wikipedia.org/wiki/Inferno_(Dante)",
       "tags": [
         "Italian",
-        "Catholic",
         "Christian",
+        "Catholic",
         "Culture",
-        "Dante Aligheri 👤",
         "Literature",
+        "Poetry",
         "Metaphysics",
         "Philosophy",
-        "Poetry"
+        "Dante Aligheri 👤"
       ],
       "type": "cultural"
     },
@@ -355,14 +356,14 @@
       "source": "https://en.wikipedia.org/wiki/Purgatorio",
       "tags": [
         "Italian",
-        "Catholic",
         "Christian",
+        "Catholic",
         "Culture",
-        "Dante Aligheri 👤",
         "Literature",
+        "Poetry",
         "Metaphysics",
         "Philosophy",
-        "Poetry"
+        "Dante Aligheri 👤"
       ],
       "type": "cultural"
     },
@@ -378,15 +379,15 @@
       "source": "https://en.wikipedia.org/wiki/Paradiso",
       "tags": [
         "Italian",
-        "Catholic",
         "Christian",
+        "Catholic",
         "Culture",
-        "Dante Aligheri 👤",
         "Literature",
+        "Poetry",
         "Metaphysics",
-        "Neoplatonic",
         "Philosophy",
-        "Poetry"
+        "Dante Aligheri 👤",
+        "Neoplatonic"
       ],
       "type": "cultural"
     },
@@ -402,12 +403,12 @@
       "source": "https://en.wikipedia.org/wiki/Giotto%27s_Campanile",
       "tags": [
         "Italian",
-        "Building 🏠",
-        "Architecture",
+        "Florence",
+        "Religious",
         "Christian",
         "Culture",
-        "Florence",
-        "Religious"
+        "Architecture",
+        "Building 🏠"
       ],
       "type": "cultural"
     },
@@ -423,11 +424,11 @@
       "source": "https://en.wikipedia.org/wiki/Bardi_family",
       "tags": [
         "Italian",
-        "Bank",
-        "Economic",
         "Florence",
-        "Innovation",
-        "Trade"
+        "Trade",
+        "Economic",
+        "Banking",
+        "Innovation"
       ],
       "type": "historic"
     },
@@ -443,10 +444,11 @@
       "source": "https://en.wikipedia.org/wiki/Walter_VI_of_Brienne",
       "tags": [
         "Italian",
-        "Reform",
-        "Crisis",
-        "Exile",
+        "Athens",
         "Florence",
+        "Crisis",
+        "Reform",
+        "Exile",
         "Holidays",
         "Republic"
       ],
@@ -460,18 +462,18 @@
       "latitude": 43.76749505,
       "longitude": 11.25911951,
       "name": "Bardi and Peruzzi Banking Houses Collapse",
-      "name_ru": "Банкирские дома Барди и Перуцци рухнули",
+      "name_ru": "Банкирские дома Барди и Перуцци рушатся",
       "source": "https://en.wikipedia.org/wiki/Bardi_family",
       "tags": [
         "Italian",
-        "War",
-        "Bank",
-        "Collapse",
-        "Crisis",
-        "Default",
-        "Economic",
         "Florence",
-        "Hundred Years"
+        "Hundred Years",
+        "Crisis",
+        "War",
+        "Economic",
+        "Banking",
+        "Collapse",
+        "Default"
       ],
       "type": "historic"
     },
@@ -487,10 +489,10 @@
       "source": "https://en.wikipedia.org/wiki/Black_Death_in_medieval_Italy",
       "tags": [
         "Italian",
-        "Black Death",
-        "Crisis",
         "Florence",
-        "Plague"
+        "Crisis",
+        "Black Death",
+        "Plague 🦠"
       ],
       "type": "historic"
     },
@@ -506,10 +508,10 @@
       "source": "https://en.wikipedia.org/wiki/The_Decameron",
       "tags": [
         "Italian",
-        "Black Death",
-        "Culture",
         "Florence",
-        "Literature"
+        "Culture",
+        "Literature",
+        "Black Death"
       ],
       "type": "cultural"
     },
@@ -525,10 +527,11 @@
       "source": "https://en.wikipedia.org/wiki/Ciompi_revolt",
       "tags": [
         "Italian",
-        "Crisis",
         "Florence",
-        "Political",
-        "Rebellion"
+        "Crisis",
+        "Rebellion",
+        "Strike",
+        "Political"
       ],
       "type": "political"
     },
@@ -544,9 +547,9 @@
       "source": "https://en.wikipedia.org/wiki/Livorno",
       "tags": [
         "Italian",
-        "Expansion",
         "Florence",
-        "Trade"
+        "Trade",
+        "Expansion"
       ],
       "type": "political"
     },
@@ -562,11 +565,11 @@
       "source": "https://en.wikipedia.org/wiki/Cosimo_de%27_Medici",
       "tags": [
         "Italian",
-        "Reform",
-        "Dynasty",
-        "Administration",
         "Florence",
-        "Medici"
+        "Medici",
+        "Dynasty",
+        "Reform",
+        "Administration"
       ],
       "type": "political"
     },
@@ -582,18 +585,18 @@
       "source": "https://en.wikipedia.org/wiki/Florence_Cathedral",
       "tags": [
         "Italian",
-        "Building 🏠",
-        "Architecture",
-        "Christian",
-        "Construction",
-        "Culture",
-        "Engineering ⚙️",
         "Florence",
-        "Innovation",
-        "Medici",
-        "Medieval",
         "Religious",
-        "Wonders"
+        "Christian",
+        "Culture",
+        "Medici",
+        "Architecture",
+        "Building 🏠",
+        "Engineering ⚙️",
+        "Medieval",
+        "Wonders",
+        "Construction",
+        "Innovation"
       ],
       "type": "cultural"
     },
@@ -608,15 +611,15 @@
       "name_ru": "Флорентийский Собор — уния Восточной и Западной церквей",
       "source": "https://en.wikipedia.org/wiki/Council_of_Florence",
       "tags": [
+        "Byzantine",
         "Roman",
         "Italian",
-        "Byzantine",
-        "Catholic",
-        "Christian",
-        "Council",
         "Florence",
-        "Medici",
         "Religious",
+        "Christian",
+        "Catholic",
+        "Council",
+        "Medici",
         "Renaissance",
         "Unification"
       ],
@@ -634,9 +637,9 @@
       "source": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci",
       "tags": [
         "Italian",
-        "Birth",
-        "Culture",
         "Florence",
+        "Culture",
+        "Birth",
         "Science"
       ],
       "type": "cultural"
@@ -653,12 +656,12 @@
       "source": "https://en.wikipedia.org/wiki/Platonic_Academy_(Florence)",
       "tags": [
         "Italian",
-        "Culture",
         "Florence",
+        "Culture",
+        "Philosophy",
         "Humanism",
         "Medici",
         "Neoplatonic",
-        "Philosophy",
         "Renaissance",
         "Text",
         "Translation"
@@ -677,11 +680,11 @@
       "source": "https://en.wikipedia.org/wiki/Lorenzo_de%27_Medici",
       "tags": [
         "Italian",
-        "Dynasty",
-        "Culture",
         "Florence",
-        "Golden Age",
+        "Culture",
         "Medici",
+        "Dynasty",
+        "Golden Age",
         "Renaissance"
       ],
       "type": "political"
@@ -698,12 +701,12 @@
       "source": "https://en.wikipedia.org/wiki/Pazzi_conspiracy",
       "tags": [
         "Italian",
+        "Florence",
+        "Crisis",
+        "Medici",
         "Assassination",
         "Conspiracy",
-        "Crisis",
-        "Florence",
-        "Lynching",
-        "Medici"
+        "Lynching"
       ],
       "type": "political"
     },
@@ -719,12 +722,13 @@
       "source": "https://en.wikipedia.org/wiki/Lorenzo_de%27_Medici",
       "tags": [
         "Italian",
-        "Dynasty",
+        "Florence",
         "Culture",
+        "Medici",
+        "Dynasty",
         "Death",
         "Decline",
-        "Florence",
-        "Medici",
+        "Disease",
         "Renaissance"
       ],
       "type": "political"
@@ -741,13 +745,13 @@
       "source": "https://en.wikipedia.org/wiki/Republic_of_Florence",
       "tags": [
         "Italian",
-        "Administration",
+        "Florence",
+        "Religious",
         "Christian",
         "Crisis",
-        "Florence",
         "Medici",
-        "Radicalism",
-        "Religious"
+        "Administration",
+        "Radicalism"
       ],
       "type": "political"
     }

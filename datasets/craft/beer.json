@@ -13,9 +13,9 @@
       "source": "https://en.wikipedia.org/wiki/Jiahu",
       "tags": [
         "Chinese",
+        "Culture",
         "Ancient",
-        "Beer",
-        "Culture"
+        "Beer"
       ],
       "type": "historic"
     },
@@ -30,9 +30,9 @@
       "name_ru": "Пиво в древнем Иране",
       "source": "https://en.wikipedia.org/wiki/Godin_Tepe",
       "tags": [
+        "Trade",
         "Ancient",
-        "Beer",
-        "Trade"
+        "Beer"
       ],
       "type": "historic"
     },
@@ -48,10 +48,10 @@
       "source": "https://en.wikipedia.org/wiki/Hierakonpolis",
       "tags": [
         "Egypt",
-        "Ancient",
-        "Beer",
         "Culture",
         "Economic",
+        "Ancient",
+        "Beer",
         "Technology"
       ],
       "type": "historic"
@@ -61,19 +61,19 @@
       "description": "In Sumerian culture, beer was a sacred drink, a gift from the gods, and a staple of the diet. The patroness of this craft was the goddess Ninkasi, whose name translates as \"Mistress of Beer\" or \"Lady Who Fills the Mouth.\" Everyone drank beer: men, women, and children. River water was often dirty, and the fermentation process killed bacteria, making beer a safe antiseptic. Beer was used as wages for workers, in temple rituals, and the brewing profession was one of the most respected and was originally considered exclusively a woman's work. The Sumerians did not use hops, so their beer lacked the bitterness we know today. Instead, dates, honey, and herbs were used for flavor.\n\nThe Hymn to Ninkasi is both a religious text praising the goddess of beer and brewing and a functional recipe for its preparation. The hymn describes in detail the preparation of bappir (twice-baked bread used as a source of yeast and enzymes), mixing the bappir with sprouted grain, adding honey and wine, and filtering the finished beer through a reed vessel. Scientists successfully brewed beer according to the hymn's instructions.",
       "description_ru": "В шумерской культуре пиво было священным напитком, даром богов и основой рациона. Покровительницей этого ремесла выступала богиня Нинкаси, чье имя переводится как «Хозяйка пива» или «Госпожа, наполняющая рот». Пиво пили абсолютно все: мужчины, женщины и дети. Вода в реках часто была грязной, а в процессе брожения бактерии погибали, что делало пиво безопасным антисептиком. Пивом выдавали зарплату рабочим, его использовали в храмовых ритуалах, а профессия пивовара была одной из самых уважаемых и изначально считалась исключительно женским делом. Шумеры не знали хмеля, поэтому их пиво не имело привычной нам горечи. Вместо этого для аромата использовались финики, мед и травы \n\nГимн Нинкаси, является одновременно религиозным текстом, восхваляющим богиню пива и пивоварения, и функциональным рецептом его приготовления. Гимн подробно описывает приготовление баппира (дважды испечённого хлеба, используемого как источник дрожжей и ферментов), смешивание баппира с пророщенным зерном, добавление мёда и вина, фильтрацию готового пива через тростниковый сосуд. Учёные успешно варили пиво по инструкциям гимна.",
       "era": "BC",
-      "latitude": 31.324,
-      "longitude": 45.636,
+      "latitude": 31.3225,
+      "longitude": 45.6372,
       "name": "Hymn to Ninkasi — the world's oldest beer recipe",
       "name_ru": "Гимн Нинкаси — древнейший в мире рецепт пива",
       "source": "https://en.wikipedia.org/wiki/Ninkasi",
       "tags": [
-        "Sumerian",
-        "Beer",
-        "Culture",
-        "Divination",
-        "Fermentation",
         "Mesopotamian",
+        "Sumerian",
         "Religious",
+        "Divination",
+        "Culture",
+        "Beer",
+        "Fermentation",
         "Technology"
       ],
       "type": "cultural"
@@ -109,12 +109,12 @@
       "source": "https://en.wikipedia.org/wiki/Opaque_beer",
       "tags": [
         "African",
+        "Religious",
+        "Culture",
         "Agriculture",
         "Beer",
-        "Culture",
         "Fermentation",
         "Food",
-        "Religious",
         "Sorghum"
       ],
       "type": "historic"
@@ -131,8 +131,8 @@
       "source": "https://en.wikipedia.org/wiki/Qu_(fermentation_starter)",
       "tags": [
         "Chinese",
-        "Beer",
         "Culture",
+        "Beer",
         "Fermentation",
         "Science",
         "Technology"
@@ -151,10 +151,10 @@
       "source": "https://en.wikipedia.org/wiki/Sake",
       "tags": [
         "Japanese",
+        "Religious",
         "Culture",
         "Fermentation",
         "Food",
-        "Religious",
         "Rice",
         "Sake"
       ],
@@ -172,8 +172,8 @@
       "source": "https://en.wikipedia.org/wiki/Makgeolli",
       "tags": [
         "Korean",
-        "Beer",
         "Culture",
+        "Beer",
         "Fermentation",
         "Food",
         "Rice",
@@ -202,26 +202,6 @@
       "type": "historic"
     },
     {
-      "date": "01.01.0900",
-      "description": "Chicha de jora — a fermented maize drink produced by germinating dried maize kernels, grinding them, cooking the mash, and fermenting with ambient yeast — was the central ceremonial and nutritional beverage of the Andean cultures that preceded and culminated in the Inca empire. It was produced in vast state breweries (aqllawasin, or 'houses of the chosen women') by selected women (acllas) who were state servants, and distributed at Inca state ceremonies, military campaigns, and public labour mobilisations in quantities that doubled as wages.\n",
-      "description_ru": "Чича де хора — ферментированный маисовый напиток, получаемый проращиванием высушенных кукурузных зёрен, их помолом, варкой затора и сбраживанием дрожжами — был центральным церемониальным и питательным напитком андских культур. Он производился в огромных государственных пивоварнях (акльявасин, «домах избранных женщин») отобранными женщинами — акльями, государственными служащими, — и распределялся на государственных церемониях инков, военных походах и публичных трудовых мобилизациях в количествах, одновременно служивших оплатой труда.\n",
-      "era": "AD",
-      "latitude": -13.52,
-      "longitude": -71.967,
-      "name": "Chicha — Andean fermented maize drink",
-      "name_ru": "Чича — андское \"пиво\"",
-      "source": "https://en.wikipedia.org/wiki/Chicha",
-      "tags": [
-        "American",
-        "Ancient",
-        "Beer",
-        "Culture",
-        "Fermentation",
-        "Inca"
-      ],
-      "type": "cultural"
-    },
-    {
       "date": "01.01.1040",
       "description": "Weihenstephan Abbey has a documented brewing license dating back to 1040, making it the oldest documented continuously operating brewery in the world. Benedictine monks managed the brewery and maintained the hop gardens.\n\nWeihenstephan's longevity reflects the central role of monasteries in the preservation and development of European brewing technology in the early medieval period. Monastic brewers were committed to quality — they drank their own product daily, relied on it to welcome travelers, and sold surpluses to fund construction projects and charity. Competent administrators were able to record recipes, refine methods, and pass on knowledge through generations—an advantage secular brewers lacked.",
       "description_ru": "Аббатство Вайенштефан имеет задокументированную лицензию на пивоварение, датируемую 1040 годом, что делает его древнейшей задокументированной непрерывно работающей пивоварней мира. Бенедиктинские монахи управляли пивоварней и содержали хмельники.\n\nДолголетие Вайенштефана отражает центральную роль монастырей в сохранении и развитии европейской технологии пивоварения в раннесредневековый период. Монастырские пивовары были заинтересованы в качестве — они ежедневно пили собственный продукт, зависели от него для гостеприимства путешественников и продавали излишки для финансирования строительства и благотворительности. Грамотные администраторы были способны записывать рецепты, совершенствовать методы и передавать знания через поколения — преимущество, которым не располагали светские производители.",
@@ -234,8 +214,8 @@
       "tags": [
         "German",
         "Bavarian",
-        "Beer",
         "Christian",
+        "Beer",
         "Hop",
         "Monastery"
       ],
@@ -273,14 +253,35 @@
       "name_ru": "Гильдейские пивовары и городское пивоварение",
       "source": "https://en.wikipedia.org/wiki/History_of_beer",
       "tags": [
+        "Hanseatic League",
+        "Trade",
+        "Standardization",
         "Beer",
         "Guilds",
-        "Hanseatic League",
-        "Hop",
-        "Standardization",
-        "Trade"
+        "Hop"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.1450",
+      "description": "Chicha de jora — a fermented maize drink produced by germinating dried maize kernels, grinding them, cooking the mash, and fermenting with ambient yeast — was the central ceremonial and nutritional beverage of the Andean cultures that preceded and culminated in the Inca empire. It was produced in vast state breweries (aqllawasin, or 'houses of the chosen women') by selected women (acllas) who were state servants, and distributed at Inca state ceremonies, military campaigns, and public labour mobilisations in quantities that doubled as wages.\n",
+      "description_ru": "Чича де хора — ферментированный маисовый напиток, получаемый проращиванием высушенных кукурузных зёрен, их помолом, варкой затора и сбраживанием дрожжами — был центральным церемониальным и питательным напитком андских культур. Он производился в огромных государственных пивоварнях (акльявасин, «домах избранных женщин») отобранными женщинами — акльями, государственными служащими, — и распределялся на государственных церемониях инков, военных походах и публичных трудовых мобилизациях в количествах, одновременно служивших оплатой труда.\n",
+      "era": "AD",
+      "latitude": -13.52025258,
+      "longitude": -71.975196,
+      "name": "Chicha — Andean fermented maize drink",
+      "name_ru": "Чича — андское \"пиво\"",
+      "source": "https://en.wikipedia.org/wiki/Chicha",
+      "tags": [
+        "American",
+        "Inca",
+        "Culture",
+        "Ancient",
+        "Beer",
+        "Fermentation",
+        "Food"
+      ],
+      "type": "cultural"
     },
     {
       "date": "23.04.1516",
@@ -295,9 +296,9 @@
       "tags": [
         "German",
         "Bavarian",
-        "Beer",
         "Culture",
         "Economic",
+        "Beer",
         "Hop",
         "Law"
       ],
@@ -315,12 +316,12 @@
       "source": "https://en.wikipedia.org/wiki/Mayflower",
       "tags": [
         "American",
+        "English",
+        "New World",
+        "Culture",
         "Beer",
         "Colonization",
-        "Culture",
-        "English",
-        "Navigation",
-        "New World"
+        "Navigation"
       ],
       "type": "historic"
     },
@@ -335,15 +336,15 @@
       "name_ru": "Портер — первая пивная промышленность",
       "source": "https://en.wikipedia.org/wiki/Porter_(beer)",
       "tags": [
-        "Beer",
-        "Culture",
         "England",
         "English",
-        "Expansion",
+        "Culture",
         "Industry",
+        "Trade",
+        "Beer",
+        "Expansion",
         "Innovation",
-        "Technology",
-        "Trade"
+        "Technology"
       ],
       "type": "historic"
     },
@@ -358,15 +359,15 @@
       "name_ru": "Изобретение India Pale Ale",
       "source": "https://en.wikipedia.org/wiki/India_pale_ale",
       "tags": [
-        "Beer",
-        "Conservation",
-        "Culture",
         "England",
         "English",
+        "Culture",
+        "Trade",
+        "Beer",
+        "Conservation",
         "Hop",
         "Logistics",
-        "Technology",
-        "Trade"
+        "Technology"
       ],
       "type": "historic"
     },
@@ -381,10 +382,10 @@
       "name_ru": "Pilsner Urquell — золотой лагер, покоривший мир",
       "source": "https://en.wikipedia.org/wiki/Pilsner_Urquell",
       "tags": [
-        "Beer",
-        "Culture",
         "Czech",
+        "Culture",
         "Industry",
+        "Beer",
         "Innovation",
         "Technology"
       ],
@@ -401,13 +402,13 @@
       "name_ru": "Пастер расшифровывает ферментацию",
       "source": "https://en.wikipedia.org/wiki/Louis_Pasteur",
       "tags": [
+        "France",
+        "Industry",
         "Beer",
         "Biology",
         "Conservation",
         "Fermentation",
         "Food",
-        "France",
-        "Industry",
         "Pasteur 👤",
         "Science",
         "Text"
@@ -426,9 +427,9 @@
       "source": "https://en.wikipedia.org/wiki/Carl_von_Linde",
       "tags": [
         "German",
+        "Industry",
         "Beer",
         "Expansion",
-        "Industry",
         "Innovation",
         "Science",
         "Technology"
@@ -446,12 +447,12 @@
       "name_ru": "Эмиль Хансен выделяет чистые дрожжи",
       "source": "https://en.wikipedia.org/wiki/Emil_Christian_Hansen",
       "tags": [
+        "Industry",
         "Altruism",
         "Beer",
         "Biology",
         "Denmark",
         "Fermentation",
-        "Industry",
         "Innovation",
         "Science",
         "Technology"
@@ -470,10 +471,10 @@
       "source": "https://en.wikipedia.org/wiki/Prohibition_in_the_United_States",
       "tags": [
         "American",
-        "Beer",
         "Industry",
-        "Law",
         "Political",
+        "Beer",
+        "Law",
         "Prohibition",
         "USA"
       ],
@@ -491,10 +492,10 @@
       "source": "https://en.wikipedia.org/wiki/Anchor_Brewing_Company",
       "tags": [
         "American",
-        "Beer",
-        "Craft",
         "Culture",
+        "Craft",
         "Industry",
+        "Beer",
         "Restoration",
         "USA"
       ],
@@ -512,10 +513,10 @@
       "source": "https://en.wikipedia.org/wiki/Homebrewing_in_the_United_States",
       "tags": [
         "American",
-        "Beer",
         "Craft",
-        "Law",
         "Political",
+        "Beer",
+        "Law",
         "USA"
       ],
       "type": "political"

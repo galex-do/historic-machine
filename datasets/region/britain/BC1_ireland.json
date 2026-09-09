@@ -12,9 +12,9 @@
       "name_ru": "Неолитическая община Сеиде Филдс",
       "source": "https://en.wikipedia.org/wiki/C%C3%A9ide_Fields",
       "tags": [
-        "Agriculture",
         "Culture",
         "Neolithic",
+        "Agriculture",
         "Settlement"
       ],
       "type": "historic"
@@ -31,11 +31,11 @@
       "source": "https://en.wikipedia.org/wiki/Poulnabrone_dolmen",
       "tags": [
         "Bell Beaker",
-        "Burial",
         "Holy Site",
+        "Burial",
+        "Tomb",
         "Megalithic",
-        "Neolithic",
-        "Tomb"
+        "Neolithic"
       ],
       "type": "religious"
     },
@@ -50,15 +50,15 @@
       "name_ru": "Ньюгрейндж — ирландский храм зимнего солнцестояния",
       "source": "https://en.wikipedia.org/wiki/Newgrange",
       "tags": [
+        "Irish",
+        "Religious",
         "Building 🏠",
+        "Temple",
+        "Tomb",
+        "Megalithic",
         "Astronomy",
         "Earthwork",
-        "Irish",
-        "Megalithic",
-        "Mound Builders",
-        "Religious",
-        "Temple",
-        "Tomb"
+        "Mound Builders"
       ],
       "type": "religious"
     },
@@ -73,12 +73,12 @@
       "name_ru": "Холм Тары — священный центр Ирландии",
       "source": "https://en.wikipedia.org/wiki/Hill_of_Tara",
       "tags": [
-        "Legend",
-        "Bronze Age",
         "Gaelic",
         "Holy Site",
+        "Legend",
         "Neolithic",
-        "Political"
+        "Political",
+        "Bronze Age"
       ],
       "type": "political"
     },
@@ -93,13 +93,13 @@
       "name_ru": "Золото ирландского бронзового века",
       "source": "https://en.wikipedia.org/wiki/Bronze_Age_in_Ireland",
       "tags": [
-        "Art",
         "Bell Beaker",
-        "Bronze Age",
         "Culture",
+        "Art",
         "Gold",
         "Jewelry",
-        "Trade"
+        "Trade",
+        "Bronze Age"
       ],
       "type": "cultural"
     },
@@ -115,14 +115,14 @@
       "source": "https://en.wikipedia.org/wiki/Samhain",
       "tags": [
         "Celtic",
+        "Irish",
+        "Gaelic",
+        "Religious",
+        "Pagan",
+        "Culture",
         "Legend",
         "Calendar",
-        "Culture",
-        "Gaelic",
-        "Holidays",
-        "Irish",
-        "Pagan",
-        "Religious"
+        "Holidays"
       ],
       "type": "cultural"
     },
@@ -138,11 +138,11 @@
       "source": "https://en.wikipedia.org/wiki/Brehon_law",
       "tags": [
         "Celtic",
-        "Culture",
         "Irish",
+        "Culture",
+        "Political",
         "Justice",
-        "Law",
-        "Political"
+        "Law"
       ],
       "type": "political"
     },
@@ -158,15 +158,15 @@
       "source": "https://en.wikipedia.org/wiki/Navan_Fort",
       "tags": [
         "Celtic",
-        "Building 🏠",
-        "Legend",
-        "Culture",
-        "Fortification",
-        "Holy Site",
         "Irish",
-        "Iron Age",
+        "Ulster",
+        "Holy Site",
+        "Culture",
+        "Building 🏠",
+        "Fortification",
+        "Legend",
         "Political",
-        "Ulster"
+        "Iron Age"
       ],
       "type": "political"
     },
@@ -182,12 +182,12 @@
       "source": "https://en.wikipedia.org/wiki/Ogham",
       "tags": [
         "Celtic",
-        "Culture",
-        "Gaelic",
         "Irish",
+        "Gaelic",
+        "Culture",
         "Language",
-        "Text",
-        "Writing"
+        "Writing",
+        "Text"
       ],
       "type": "cultural"
     },
@@ -203,17 +203,17 @@
       "source": "https://en.wikipedia.org/wiki/Brigid_of_Kildare",
       "tags": [
         "Celtic",
-        "Christian",
-        "Culture",
-        "Foundation",
-        "Gaelic",
-        "Holy Site",
         "Irish",
-        "Monastery",
-        "Patron",
+        "Gaelic",
+        "Foundation",
         "Religious",
+        "Christian",
+        "Syncretism",
+        "Patron",
         "Saint",
-        "Syncretism"
+        "Holy Site",
+        "Culture",
+        "Monastery"
       ],
       "type": "religious"
     },
@@ -229,15 +229,15 @@
       "source": "https://en.wikipedia.org/wiki/Clonmacnoise",
       "tags": [
         "Celtic",
-        "Building 🏠",
-        "Architecture",
-        "Christian",
-        "Culture",
-        "Gaelic",
-        "Holy Site",
         "Irish",
-        "Monastery",
-        "Religious"
+        "Gaelic",
+        "Religious",
+        "Christian",
+        "Holy Site",
+        "Culture",
+        "Architecture",
+        "Building 🏠",
+        "Monastery"
       ],
       "type": "religious"
     },
@@ -253,13 +253,13 @@
       "source": "https://en.wikipedia.org/wiki/Celtic_Christianity",
       "tags": [
         "Celtic",
-        "Christian",
-        "Culture",
-        "Gaelic",
         "Irish",
-        "Missionary",
+        "Gaelic",
+        "Religious",
+        "Christian",
         "Pilgrimage",
-        "Religious"
+        "Missionary",
+        "Culture"
       ],
       "type": "religious"
     },
@@ -275,33 +275,12 @@
       "source": "https://en.wikipedia.org/wiki/Glendalough",
       "tags": [
         "Celtic",
+        "Irish",
+        "Religious",
         "Christian",
+        "Saint",
         "Holy Site",
-        "Irish",
-        "Monastery",
-        "Religious",
-        "Saint"
-      ],
-      "type": "religious"
-    },
-    {
-      "date": "01.01.0590",
-      "description": "Columbanus of Leinster left Ireland around 590 with twelve companions and spent the rest of his life founding monasteries throughout the Frankish lands and northern Italy. His monasteries at Luxeuil in Burgundy, Bregenz on Lake Constance, and Bobbio in the Apennines became centers of learning and reform, transforming continental monasticism. Columbanus brought with him an unwavering Irish ecclesiasticism: he wrote to the popes with a frankness that astonished his contemporaries, defending Irish practices and the rights of the church against secular interference.\n\nColumbanus's Rule, which combined ascetic rigor with pastoral flexibility, influenced Benedictine practice throughout Europe. His letters are among the finest Latin prose works of the early medieval period. He died in Bobbio in 615. More than anyone else, Columbanus embodied the ambition of Irish Christianity – the conviction that a monk from the Atlantic edge of the world could and should reform the church at the very heart of Christendom.",
-      "description_ru": "Колумбан из Лейнстера — покинул Ирландию примерно в 590 с двенадцатью спутниками и провёл остаток жизни, основывая монастыри по всем франкским землям и Северной Италии. Его обители в Люксёйле в Бургундии, Брегенце на Боденском озере и Боббио в Апеннинах стали центрами учёности и реформ, преобразившими континентальное монашество. Колумбан принёс с собой непреклонную ирландскую церковность: он писал папам с прямотой, изумлявшей современников, отстаивая ирландские практики и права церкви против светского вмешательства.\n\nУстав Колумбана, сочетавший аскетическую строгость с пастырской гибкостью, повлиял на бенедиктинскую практику по всей Европе. Его письма — одна из лучших латинской прозы раннесредневекового периода. Он умер в Боббио в 615 году. Более чем кто-либо, Колумбан воплощал амбиции ирландского христианства — убеждённость в том, что монах с атлантического края мира может и должен реформировать церковь в самом сердце христианского мира.",
-      "era": "AD",
-      "latitude": 44.7679814,
-      "longitude": 9.38536048,
-      "name": "St Columbanus — Ireland's apostle to Europe",
-      "name_ru": "Святой Колумбан — ирландский апостол Европы",
-      "source": "https://en.wikipedia.org/wiki/Columbanus",
-      "tags": [
-        "Christian",
-        "Culture",
-        "Irish",
-        "Missionary",
-        "Monastery",
-        "Religious",
-        "Saint"
+        "Monastery"
       ],
       "type": "religious"
     },
@@ -317,15 +296,36 @@
       "source": "https://en.wikipedia.org/wiki/Skellig_Michael",
       "tags": [
         "Celtic",
-        "Christian",
-        "Culture",
-        "Gaelic",
-        "Holy Site",
         "Irish",
+        "Gaelic",
+        "Religious",
+        "Christian",
+        "Holy Site",
+        "Culture",
         "Monastery",
         "Radicalism",
-        "Religious",
         "Self-sacrifice"
+      ],
+      "type": "religious"
+    },
+    {
+      "date": "01.01.0614",
+      "description": "Columbanus of Leinster left Ireland around 590 with twelve companions and spent the rest of his life founding monasteries throughout the Frankish lands and northern Italy. His monasteries at Luxeuil in Burgundy, Bregenz on Lake Constance, and Bobbio in the Apennines became centers of learning and reform, transforming continental monasticism. Columbanus brought with him an unwavering Irish ecclesiasticism: he wrote to the popes with a frankness that astonished his contemporaries, defending Irish practices and the rights of the church against secular interference.\n\nColumbanus's Rule, which combined ascetic rigor with pastoral flexibility, influenced Benedictine practice throughout Europe. His letters are among the finest Latin prose works of the early medieval period. He died in Bobbio in 615. More than anyone else, Columbanus embodied the ambition of Irish Christianity – the conviction that a monk from the Atlantic edge of the world could and should reform the church at the very heart of Christendom.",
+      "description_ru": "Колумбан из Лейнстера — покинул Ирландию примерно в 590 с двенадцатью спутниками и провёл остаток жизни, основывая монастыри по всем франкским землям и Северной Италии. Его обители в Люксёйле в Бургундии, Брегенце на Боденском озере и Боббио в Апеннинах стали центрами учёности и реформ, преобразившими континентальное монашество. Колумбан принёс с собой непреклонную ирландскую церковность: он писал папам с прямотой, изумлявшей современников, отстаивая ирландские практики и права церкви против светского вмешательства.\n\nУстав Колумбана, сочетавший аскетическую строгость с пастырской гибкостью, повлиял на бенедиктинскую практику по всей Европе. Его письма — одна из лучших латинской прозы раннесредневекового периода. Он умер в Боббио в 615 году. Более чем кто-либо, Колумбан воплощал амбиции ирландского христианства — убеждённость в том, что монах с атлантического края мира может и должен реформировать церковь в самом сердце христианского мира.",
+      "era": "AD",
+      "latitude": 44.7679814,
+      "longitude": 9.38536048,
+      "name": "St Columbanus — Ireland's apostle to Europe",
+      "name_ru": "Святой Колумбан — ирландский апостол Европы",
+      "source": "https://en.wikipedia.org/wiki/Columbanus",
+      "tags": [
+        "Irish",
+        "Religious",
+        "Christian",
+        "Saint",
+        "Missionary",
+        "Culture",
+        "Monastery"
       ],
       "type": "religious"
     },
@@ -341,13 +341,13 @@
       "source": "https://en.wikipedia.org/wiki/Ardagh_Chalice",
       "tags": [
         "Celtic",
-        "Art",
+        "Irish",
+        "Religious",
         "Christian",
         "Culture",
-        "Golden Age",
-        "Irish",
+        "Art",
         "Metallurgy",
-        "Religious"
+        "Golden Age"
       ],
       "type": "cultural"
     },
@@ -363,14 +363,14 @@
       "source": "https://en.wikipedia.org/wiki/T%C3%A1in_B%C3%B3_C%C3%BAailnge",
       "tags": [
         "Celtic",
-        "Legend",
-        "Culture",
-        "Gaelic",
         "Irish",
+        "Gaelic",
+        "Ulster",
+        "Culture",
         "Literature",
         "Poetry",
-        "Text",
-        "Ulster"
+        "Legend",
+        "Text"
       ],
       "type": "cultural"
     },
@@ -385,12 +385,12 @@
       "name_ru": "Викинги приходят в Ирландию",
       "source": "https://en.wikipedia.org/wiki/Viking_Age_in_Ireland",
       "tags": [
-        "Expansion",
-        "Invasion",
         "Irish",
         "Norman",
         "Norse",
+        "Invasion",
         "Pillage",
+        "Expansion",
         "Seamen"
       ],
       "type": "military"
@@ -406,12 +406,12 @@
       "name_ru": "Книга Келлса — прекраснейшая книга в мире",
       "source": "https://en.wikipedia.org/wiki/Book_of_Kells",
       "tags": [
-        "Art",
+        "Irish",
+        "Religious",
         "Christian",
         "Culture",
-        "Irish",
+        "Art",
         "Monastery",
-        "Religious",
         "Text"
       ],
       "type": "cultural"
@@ -428,12 +428,12 @@
       "source": "https://en.wikipedia.org/wiki/Irish_high_cross",
       "tags": [
         "Celtic",
-        "Art",
+        "Irish",
+        "Gaelic",
+        "Religious",
         "Christian",
         "Culture",
-        "Gaelic",
-        "Irish",
-        "Religious",
+        "Art",
         "Sculpture"
       ],
       "type": "cultural"
@@ -450,14 +450,14 @@
       "source": "https://en.wikipedia.org/wiki/Irish_round_tower",
       "tags": [
         "Celtic",
-        "Building 🏠",
-        "Architecture",
+        "Irish",
+        "Gaelic",
+        "Religious",
         "Christian",
         "Culture",
-        "Gaelic",
-        "Irish",
-        "Monastery",
-        "Religious"
+        "Architecture",
+        "Building 🏠",
+        "Monastery"
       ],
       "type": "cultural"
     },
@@ -472,14 +472,14 @@
       "name_ru": "Северяне ассимилируются в Ирландии",
       "source": "https://en.wikipedia.org/wiki/Hiberno-Norse_culture",
       "tags": [
-        "Art",
-        "Assimilation",
-        "Cultural Continuity",
-        "Culture",
-        "Gaelic",
         "Irish",
         "Norman",
         "Norse",
+        "Gaelic",
+        "Culture",
+        "Art",
+        "Assimilation",
+        "Cultural Continuity",
         "Trade"
       ],
       "type": "cultural"
@@ -495,11 +495,11 @@
       "name_ru": "Бриан Бору — король Ирландии",
       "source": "https://en.wikipedia.org/wiki/Brian_Boru",
       "tags": [
-        "Dynasty",
-        "King",
-        "Foundation",
         "Irish",
         "Kingdom",
+        "Foundation",
+        "Dynasty",
+        "King",
         "Political",
         "Unification"
       ],
@@ -516,14 +516,14 @@
       "name_ru": "Синод Ратбрезайла в Ирландии",
       "source": "https://en.wikipedia.org/wiki/Synod_of_Rathbreasail",
       "tags": [
-        "Reform",
-        "Catholic",
-        "Christian",
         "Irish",
-        "Law",
         "Papacy",
+        "Religious",
+        "Christian",
+        "Catholic",
         "Political",
-        "Religious"
+        "Reform",
+        "Law"
       ],
       "type": "religious"
     },
@@ -538,14 +538,14 @@
       "name_ru": "Капелла Кормака в Кашеле возведена",
       "source": "https://en.wikipedia.org/wiki/Rock_of_Cashel#Cormac's_Chapel",
       "tags": [
-        "Building 🏠",
-        "King",
-        "Architecture",
-        "Art",
+        "Irish",
+        "Religious",
         "Christian",
         "Culture",
-        "Irish",
-        "Religious"
+        "Art",
+        "King",
+        "Architecture",
+        "Building 🏠"
       ],
       "type": "cultural"
     },
@@ -560,14 +560,14 @@
       "name_ru": "Ирландская бардическая традиция",
       "source": "https://en.wikipedia.org/wiki/Bardic_poetry_in_Ireland",
       "tags": [
-        "Culture",
-        "Gaelic",
-        "History",
         "Irish",
-        "Law",
+        "Gaelic",
+        "Culture",
         "Literature",
         "Oral Tradition",
         "Poetry",
+        "History",
+        "Law",
         "Text"
       ],
       "type": "cultural"
@@ -583,13 +583,13 @@
       "name_ru": "Норманнские наемники в Ирландии",
       "source": "https://en.wikipedia.org/wiki/Diarmait_Mac_Murchada",
       "tags": [
-        "Conquest",
-        "English",
-        "Invasion",
         "Irish",
-        "Mercenaries",
         "Norman",
-        "Political"
+        "English",
+        "Conquest",
+        "Invasion",
+        "Political",
+        "Mercenaries"
       ],
       "type": "political"
     },
@@ -604,13 +604,13 @@
       "name_ru": "Норманнское вторжение в Ирландию",
       "source": "https://en.wikipedia.org/wiki/Richard_de_Clare,_2nd_Earl_of_Pembroke",
       "tags": [
-        "War",
-        "Battle",
-        "Conquest",
-        "English",
-        "Invasion",
         "Irish",
-        "Norman"
+        "Norman",
+        "English",
+        "War",
+        "Conquest",
+        "Battle",
+        "Invasion"
       ],
       "type": "military"
     },
@@ -625,11 +625,11 @@
       "name_ru": "Ирландия становится английским лордством",
       "source": "https://en.wikipedia.org/wiki/Lordship_of_Ireland",
       "tags": [
-        "Conquest",
-        "England",
-        "English",
         "Irish",
         "Norman",
+        "England",
+        "English",
+        "Conquest",
         "Political",
         "Vassalage"
       ],
@@ -646,14 +646,14 @@
       "name_ru": "Англо-норманнская Ирландия",
       "source": "https://en.wikipedia.org/wiki/Lordship_of_Ireland",
       "tags": [
-        "Architecture",
+        "Irish",
+        "Norman",
+        "English",
+        "Culture",
         "Assimilation",
         "Cultural Continuity",
-        "Culture",
-        "English",
-        "Irish",
-        "Law",
-        "Norman"
+        "Architecture",
+        "Law"
       ],
       "type": "cultural"
     },
@@ -668,15 +668,15 @@
       "name_ru": "Англия пытается отгородиться от Ирландской культуры",
       "source": "https://en.wikipedia.org/wiki/Statutes_of_Kilkenny",
       "tags": [
-        "Assimilation",
-        "Culture",
-        "English",
-        "Gaelic",
         "Irish",
-        "Law",
         "Norman",
-        "Persecution",
+        "Gaelic",
+        "English",
+        "Culture",
+        "Assimilation",
         "Political",
+        "Law",
+        "Persecution",
         "Resistance"
       ],
       "type": "political"
@@ -692,12 +692,13 @@
       "name_ru": "Партизанская война Лейнстера",
       "source": "https://en.wikipedia.org/wiki/Art_%C3%93g_Mac_Murchadha_Caomh%C3%A1nach",
       "tags": [
-        "War",
+        "Irish",
+        "Gaelic",
         "England",
         "English",
-        "Gaelic",
-        "Irish",
+        "War",
         "Rebellion",
+        "Guerilla",
         "Resistance"
       ],
       "type": "military"
@@ -713,15 +714,15 @@
       "name_ru": "Пейл — английский плацдарм в Ирландии",
       "source": "https://en.wikipedia.org/wiki/The_Pale_(Ireland)",
       "tags": [
-        "War",
-        "Conquest",
+        "Irish",
+        "Norman",
+        "Gaelic",
         "England",
         "English",
-        "Gaelic",
-        "Irish",
-        "Law",
-        "Norman",
+        "War",
+        "Conquest",
         "Political",
+        "Law",
         "Resistance"
       ],
       "type": "political"

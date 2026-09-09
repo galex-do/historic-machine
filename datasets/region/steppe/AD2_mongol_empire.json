@@ -12,10 +12,10 @@
       "name_ru": "Темуджин родился на реке Онон",
       "source": "https://en.wikipedia.org/wiki/Genghis_Khan",
       "tags": [
+        "Mongolian",
         "Dynasty",
         "Legend",
         "Birth",
-        "Mongolian",
         "Temüjin 👤"
       ],
       "type": "historic"
@@ -31,12 +31,12 @@
       "name_ru": "Малолетний Темуджин брошен в степи",
       "source": "https://en.wikipedia.org/wiki/Genghis_Khan",
       "tags": [
+        "Turkic",
+        "Mongolian",
         "Dynasty",
         "Abandonment",
         "Betrayal",
-        "Mongolian",
-        "Temüjin 👤",
-        "Turkic"
+        "Temüjin 👤"
       ],
       "type": "historic"
     },
@@ -51,10 +51,10 @@
       "name_ru": "Темуджин женится на Бортэ из Унгиратов",
       "source": "https://en.wikipedia.org/wiki/B%C3%B6rte",
       "tags": [
+        "Mongolian",
         "Diplomacy",
         "Marriage",
         "Dynasty",
-        "Mongolian",
         "Nomads",
         "Temüjin 👤"
       ],
@@ -71,10 +71,10 @@
       "name_ru": "Темуджин избран ханом",
       "source": "https://en.wikipedia.org/wiki/Genghis_Khan",
       "tags": [
+        "Mongolian",
         "Dynasty",
         "King",
         "Elections",
-        "Mongolian",
         "Nomads",
         "Temüjin 👤"
       ],
@@ -91,14 +91,14 @@
       "name_ru": "Темуджин отомстил татарам за гибель отца",
       "source": "https://en.wikipedia.org/wiki/Genghis_Khan",
       "tags": [
-        "War",
-        "Battle",
-        "Conquest",
-        "Mongolian",
-        "Nomads",
-        "Temüjin 👤",
         "Turkic",
-        "Revenge"
+        "Mongolian",
+        "War",
+        "Conquest",
+        "Battle",
+        "Nomads",
+        "Revenge",
+        "Temüjin 👤"
       ],
       "type": "military"
     },
@@ -109,17 +109,17 @@
       "era": "AD",
       "latitude": 48.74713433,
       "longitude": 109.00566101,
-      "name": "Keraites Destroyed — Toghrul Eliminated, Central Mongolia Consolidated",
+      "name": "Temujin subjugates the Kerait Confederation",
       "name_ru": "Темуджин подчиняет конфедерацию кераитов",
       "source": "https://en.wikipedia.org/wiki/Keraites",
       "tags": [
-        "War",
-        "Battle",
-        "Conquest",
+        "Turkic",
         "Mongolian",
+        "War",
+        "Conquest",
+        "Battle",
         "Nomads",
-        "Temüjin 👤",
-        "Turkic"
+        "Temüjin 👤"
       ],
       "type": "military"
     },
@@ -134,13 +134,13 @@
       "name_ru": "Темуджин подчиняет конфедерацию найманов",
       "source": "https://en.wikipedia.org/wiki/Naimans",
       "tags": [
-        "War",
-        "Battle",
-        "Conquest",
+        "Turkic",
         "Mongolian",
+        "War",
+        "Conquest",
+        "Battle",
         "Nomads",
         "Temüjin 👤",
-        "Turkic",
         "Unification"
       ],
       "type": "military"
@@ -157,12 +157,12 @@
       "source": "https://en.wikipedia.org/wiki/Western_Xia",
       "tags": [
         "Chinese",
+        "Mongolian",
+        "Xi Xia",
         "War",
         "Conquest",
         "Invasion",
-        "Mongolian",
-        "Nomads",
-        "Xi Xia"
+        "Nomads"
       ],
       "type": "military"
     },
@@ -178,16 +178,34 @@
       "source": "https://en.wikipedia.org/wiki/Mongol_conquest_of_the_Jin_dynasty",
       "tags": [
         "Chinese",
+        "Jin",
+        "Mongolian",
         "War",
         "Conquest",
         "Invasion",
-        "Mongolian",
         "Nomads",
         "Tactics",
-        "Temüjin 👤",
-        "Jin"
+        "Temüjin 👤"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.1215",
+      "description": "As he raided China, Genghis Khan adopted Chinese siege warfare skills and technologies. Genghis Khan ordered that Chinese scientists, artisans, and engineers not be killed, but rather captured and recruited. From thousands of captured Chinese, the Mongols created a special military corps that followed the nomadic army. Chinese specialists built sophisticated siege engines and catapults for the Mongols, and also produced gunpowder",
+      "description_ru": "По мере ведения набегов на Китай Чингисхан перенимал у китайцев навыки и технологии ведения осадной войны. Чингисхан приказал не убивать китайских ученых, ремесленников и инженеров, а брать их в плен и принимать на службу. Из тысяч пленных китайцев монголы создали специальный военный корпус, который двигался за кочевой армией. Китайские специалисты строили для монголов сложнейшие осадные машины, катапульты, а также производили порох.",
+      "era": "AD",
+      "latitude": 47.20726814,
+      "longitude": 102.84087181,
+      "name": "The Mongols extract gunpowder from China",
+      "name_ru": "Монголы добывают в Китае порох",
+      "tags": [
+        "Chinese",
+        "Mongolian",
+        "Gunpowder",
+        "Technology",
+        "Weapon"
+      ],
+      "type": "scientific"
     },
     {
       "date": "01.01.1218",
@@ -200,11 +218,11 @@
       "name_ru": "Монголы завоевывают Среднюю Азию",
       "source": "https://en.wikipedia.org/wiki/Mongol_conquest_of_the_Qara_Khitai",
       "tags": [
+        "Mongolian",
+        "Islamic",
         "War",
         "Conquest",
         "Invasion",
-        "Islamic",
-        "Mongolian",
         "Nomads"
       ],
       "type": "military"
@@ -220,13 +238,13 @@
       "name_ru": "Чингисхан объявляет войну Хорезму",
       "source": "https://en.wikipedia.org/wiki/Otrar_Catastrophe",
       "tags": [
-        "War",
-        "Islamic",
-        "Khwarazm",
         "Mongolian",
+        "Khwarazm",
+        "Islamic",
+        "War",
+        "Trade",
         "Nomads",
-        "Temüjin 👤",
-        "Trade"
+        "Temüjin 👤"
       ],
       "type": "military"
     },
@@ -241,9 +259,9 @@
       "name_ru": "Основание Каракорума",
       "source": "https://en.wikipedia.org/wiki/Karakorum",
       "tags": [
-        "City",
-        "Capital",
         "Mongolian",
+        "Capital",
+        "City",
         "Nomads"
       ],
       "type": "historic"
@@ -259,11 +277,12 @@
       "name_ru": "Монголы захватывают Бухару",
       "source": "https://en.wikipedia.org/wiki/Mongol_invasion_of_the_Khwarazmian_Empire",
       "tags": [
+        "Mongolian",
+        "Sogdian",
+        "Khwarazm",
+        "Islamic",
         "War",
         "Invasion",
-        "Islamic",
-        "Khwarazm",
-        "Mongolian",
         "Nomads",
         "Temüjin 👤"
       ],
@@ -280,11 +299,12 @@
       "name_ru": "Монголы берут Самарканд, столицу Хорезма",
       "source": "https://en.wikipedia.org/wiki/Mongol_invasion_of_the_Khwarazmian_Empire",
       "tags": [
+        "Mongolian",
+        "Sogdian",
+        "Khwarazm",
+        "Islamic",
         "War",
         "Conquest",
-        "Islamic",
-        "Khwarazm",
-        "Mongolian",
         "Nomads",
         "Temüjin 👤"
       ],
@@ -301,13 +321,13 @@
       "name_ru": "Монголы разрушают Мерв в Хорасане",
       "source": "https://en.wikipedia.org/wiki/Mongol_invasion_of_the_Khwarazmian_Empire",
       "tags": [
+        "Mongolian",
+        "Khwarazm",
+        "Islamic",
         "War",
         "Conquest",
         "Destruction",
-        "Islamic",
-        "Khwarazm",
         "Massacre",
-        "Mongolian",
         "Nomads"
       ],
       "type": "military"
@@ -319,16 +339,16 @@
       "era": "AD",
       "latitude": 36.76811052,
       "longitude": 66.90193176,
-      "name": "The Mongols destroy Balkh",
+      "name": "The Mongols destroy Balkh in Khwarazm",
       "name_ru": "Монголы разрушают Балх",
       "source": "https://en.wikipedia.org/wiki/Mongol_invasion_of_the_Khwarazmian_Empire",
       "tags": [
+        "Mongolian",
+        "Khwarazm",
+        "Islamic",
         "War",
         "Conquest",
         "Destruction",
-        "Islamic",
-        "Khwarazm",
-        "Mongolian",
         "Nomads",
         "Temüjin 👤"
       ],
@@ -345,13 +365,13 @@
       "name_ru": "Монголы разрушают Нишапур в Хорасане",
       "source": "https://en.wikipedia.org/wiki/Mongol_invasion_of_the_Khwarazmian_Empire",
       "tags": [
+        "Mongolian",
+        "Khwarazm",
+        "Islamic",
         "War",
         "Conquest",
         "Destruction",
-        "Islamic",
-        "Khwarazm",
         "Massacre",
-        "Mongolian",
         "Nomads"
       ],
       "type": "military"
@@ -367,12 +387,12 @@
       "name_ru": "Монголы разрушают Гургандж в Хорезме",
       "source": "https://en.wikipedia.org/wiki/Mongol_invasion_of_the_Khwarazmian_Empire",
       "tags": [
+        "Mongolian",
+        "Khwarazm",
+        "Islamic",
         "War",
         "Conquest",
         "Destruction",
-        "Islamic",
-        "Khwarazm",
-        "Mongolian",
         "Nomads",
         "Siege"
       ],
@@ -389,13 +409,13 @@
       "name_ru": "Чингисхан разбивает Джалал ад-Дина на Инде",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Indus",
       "tags": [
-        "War",
-        "Battle",
-        "Conquest",
-        "Fall",
-        "Islamic",
-        "Khwarazm",
         "Mongolian",
+        "Khwarazm",
+        "Islamic",
+        "War",
+        "Conquest",
+        "Battle",
+        "Fall",
         "Nomads",
         "Temüjin 👤"
       ],
@@ -412,11 +432,11 @@
       "name_ru": "Монголы осаждают и разоряют Герат",
       "source": "https://en.wikipedia.org/wiki/Mongol_invasion_of_the_Khwarazmian_Empire",
       "tags": [
+        "Mongolian",
+        "Khwarazm",
+        "Islamic",
         "War",
         "Destruction",
-        "Islamic",
-        "Khwarazm",
-        "Mongolian",
         "Nomads",
         "Siege"
       ],
@@ -433,14 +453,14 @@
       "name_ru": "Монгольский авангард разоряет Солдайю",
       "source": "https://en.wikipedia.org/wiki/Jebe",
       "tags": [
-        "Italian",
-        "War",
         "Byzantine",
+        "Italian",
+        "Mongolian",
+        "Venice",
+        "War",
         "Conquest",
         "Invasion",
-        "Mongolian",
-        "Nomads",
-        "Venice"
+        "Nomads"
       ],
       "type": "military"
     },
@@ -454,9 +474,9 @@
       "name": "The division of the Mongol Empire into uluses",
       "name_ru": "Раздел Монгольской империи на улусы",
       "tags": [
+        "Mongolian",
         "Empire",
         "Fragmentation",
-        "Mongolian",
         "Nomads",
         "Succession",
         "Temüjin 👤"
@@ -474,14 +494,14 @@
       "name_ru": "Чингисхан умирает в походе",
       "source": "https://en.wikipedia.org/wiki/Genghis_Khan",
       "tags": [
-        "Dynasty",
-        "Crisis",
-        "Death",
         "Mongolian",
-        "Nomads",
+        "Xi Xia",
+        "Crisis",
+        "Dynasty",
         "Political",
-        "Temüjin 👤",
-        "Xi Xia"
+        "Death",
+        "Nomads",
+        "Temüjin 👤"
       ],
       "type": "historic"
     },
@@ -496,11 +516,11 @@
       "name_ru": "Угэдэй избран Великим ханом в Монгольской степи",
       "source": "https://en.wikipedia.org/wiki/%C3%96gedei_Khan",
       "tags": [
-        "Dynasty",
-        "Elections",
-        "Emperor",
-        "Foundation",
         "Mongolian",
+        "Foundation",
+        "Dynasty",
+        "Emperor",
+        "Elections",
         "Nomads"
       ],
       "type": "political"
@@ -517,13 +537,13 @@
       "source": "https://en.wikipedia.org/wiki/Mongol_conquest_of_the_Jin_dynasty",
       "tags": [
         "Chinese",
-        "War",
-        "Dynasty",
-        "Conquest",
-        "Fall",
+        "Jin",
         "Mongolian",
-        "Nomads",
-        "Jin"
+        "War",
+        "Conquest",
+        "Dynasty",
+        "Fall",
+        "Nomads"
       ],
       "type": "military"
     },
@@ -538,11 +558,11 @@
       "name_ru": "Строительство города Каракорум",
       "source": "https://en.wikipedia.org/wiki/Karakorum",
       "tags": [
-        "City",
-        "Capital",
         "Mongolian",
-        "Nomads",
-        "Trade"
+        "Capital",
+        "City",
+        "Trade",
+        "Nomads"
       ],
       "type": "cultural"
     },
@@ -557,11 +577,11 @@
       "name_ru": "Угэдэй-хан умирает в Монголии",
       "source": "https://en.wikipedia.org/wiki/%C3%96gedei_Khan",
       "tags": [
-        "Dynasty",
-        "Crisis",
-        "Death",
         "Milestone ⭐️",
         "Mongolian",
+        "Crisis",
+        "Dynasty",
+        "Death",
         "Nomads"
       ],
       "type": "historic"
@@ -577,11 +597,11 @@
       "name_ru": "Мункэ избран Великим ханом Монголии",
       "source": "https://en.wikipedia.org/wiki/M%C3%B6ngke_Khan",
       "tags": [
+        "Mongolian",
         "Dynasty",
+        "Emperor",
         "Assassination",
         "Elections",
-        "Emperor",
-        "Mongolian",
         "Nizari",
         "Nomads"
       ],
@@ -599,15 +619,15 @@
       "source": "https://en.wikipedia.org/wiki/M%C3%B6ngke_Khan",
       "tags": [
         "Chinese",
+        "Mongolian",
+        "Song",
         "Civil War",
+        "Crisis",
         "War",
         "Dynasty",
-        "Crisis",
         "Death",
-        "Mongolian",
         "Nomads",
-        "Siege",
-        "Song"
+        "Siege"
       ],
       "type": "military"
     },
@@ -622,12 +642,12 @@
       "name_ru": "Хубилай побеждает в гражданской войне в Монголии",
       "source": "https://en.wikipedia.org/wiki/Division_of_the_Mongol_Empire",
       "tags": [
-        "Civil War",
-        "Dynasty",
-        "Crisis",
+        "Mongolian",
         "Empire",
-        "Fragmentation",
-        "Mongolian"
+        "Civil War",
+        "Crisis",
+        "Dynasty",
+        "Fragmentation"
       ],
       "type": "political"
     },
@@ -643,12 +663,12 @@
       "source": "https://en.wikipedia.org/wiki/Yuan_dynasty",
       "tags": [
         "Chinese",
-        "Dynasty",
-        "Administration",
+        "Mongolian",
+        "Yuan",
         "Capital",
         "Foundation",
-        "Mongolian",
-        "Yuan"
+        "Dynasty",
+        "Administration"
       ],
       "type": "political"
     },
@@ -665,16 +685,16 @@
       "tags": [
         "Japanese",
         "Chinese",
+        "Mongolian",
+        "Yuan",
         "Korean",
+        "Animism",
+        "Divination",
+        "Crisis",
         "War",
         "Battle",
-        "Animism",
-        "Crisis",
-        "Disaster",
-        "Divination",
         "Invasion",
-        "Mongolian",
-        "Yuan"
+        "Disaster"
       ],
       "type": "military"
     },
@@ -691,12 +711,12 @@
       "tags": [
         "Chinese",
         "Italian",
-        "Marco Polo 👤",
         "Mongolian",
+        "Yuan",
+        "Venice",
         "Silk Road",
         "Trade",
-        "Venice",
-        "Yuan"
+        "Marco Polo 👤"
       ],
       "type": "historic"
     },
@@ -712,13 +732,13 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Yamen",
       "tags": [
         "Chinese",
-        "War",
-        "Battle",
-        "Dynasty",
-        "Conquest",
         "Mongolian",
         "Song",
-        "Yuan"
+        "Yuan",
+        "War",
+        "Conquest",
+        "Battle",
+        "Dynasty"
       ],
       "type": "military"
     },
@@ -735,13 +755,13 @@
       "tags": [
         "Japanese",
         "Chinese",
+        "Mongolian",
+        "Animism",
+        "Divination",
+        "Crisis",
         "War",
         "Battle",
-        "Animism",
-        "Crisis",
-        "Disaster",
-        "Divination",
-        "Mongolian"
+        "Disaster"
       ],
       "type": "military"
     },
@@ -756,14 +776,14 @@
       "name_ru": "Вьетнам отражает три Монгольских вторжения",
       "source": "https://en.wikipedia.org/wiki/Mongol_invasions_of_Vietnam",
       "tags": [
-        "War",
-        "Ambush",
-        "Conquest",
-        "Crisis",
-        "Guerilla",
         "Mongolian",
-        "Tactics",
-        "Vietnamese"
+        "Vietnamese",
+        "Crisis",
+        "War",
+        "Conquest",
+        "Ambush",
+        "Guerilla",
+        "Tactics"
       ],
       "type": "military"
     },
@@ -774,18 +794,18 @@
       "era": "AD",
       "latitude": -7.5,
       "longitude": 112.2,
-      "name": "Mongol Invasion of Java Fails — Majapahit Empire Founded Instead",
+      "name": "Mongol Invasion of Java Fails",
       "name_ru": "Неудача монгольского вторжения на Яву",
       "source": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Java",
       "tags": [
         "Chinese",
+        "Mongolian",
+        "Yuan",
+        "Crisis",
         "War",
         "Conquest",
-        "Crisis",
         "Java",
-        "Majapahit",
-        "Mongolian",
-        "Yuan"
+        "Majapahit"
       ],
       "type": "military"
     },
@@ -796,17 +816,17 @@
       "era": "AD",
       "latitude": 39.916,
       "longitude": 116.391,
-      "name": "Kublai Khan Dies — The Yuan Dynasty Without Its Founder",
+      "name": "Kublai Khan, Yuan Emperor, Dies in China",
       "name_ru": "Хубилай-хан умирает в Китае",
       "source": "https://en.wikipedia.org/wiki/Kublai_Khan",
       "tags": [
         "Chinese",
-        "Dynasty",
-        "Crisis",
-        "Death",
-        "Emperor",
         "Mongolian",
-        "Yuan"
+        "Yuan",
+        "Crisis",
+        "Dynasty",
+        "Emperor",
+        "Death"
       ],
       "type": "historic"
     },
@@ -821,12 +841,12 @@
       "name_ru": "Газан-хан обращает Ильханство в Ислам",
       "source": "https://en.wikipedia.org/wiki/Ghazan",
       "tags": [
-        "Dynasty",
-        "Adoption",
-        "Islamic",
         "Mongolian",
         "Religious",
-        "Sunni"
+        "Islamic",
+        "Sunni",
+        "Adoption",
+        "Dynasty"
       ],
       "type": "religious"
     },
@@ -841,12 +861,12 @@
       "name_ru": "Хан Узбек обращает Золотую Орду в Ислам",
       "source": "https://en.wikipedia.org/wiki/%C3%96zbeg_Khan",
       "tags": [
-        "Adoption",
         "Golden Horde",
-        "Islamic",
         "Mongolian",
         "Religious",
+        "Islamic",
         "Sunni",
+        "Adoption",
         "Trade"
       ],
       "type": "religious"
@@ -862,11 +882,11 @@
       "name_ru": "Основание Нового Сарая Орды",
       "source": "https://en.wikipedia.org/wiki/Sarai_(city)",
       "tags": [
-        "City",
-        "Capital",
         "Golden Horde",
-        "Islamic",
-        "Mongolian"
+        "Mongolian",
+        "Capital",
+        "City",
+        "Islamic"
       ],
       "type": "historic"
     },
@@ -877,16 +897,17 @@
       "era": "AD",
       "latitude": 38.08268954,
       "longitude": 46.32247925,
-      "name": "Ilkhanate Collapses — Western Mongol Successor State Dissolves",
-      "name_ru": "Падение монгольского Ильханства",
+      "name": "The fall of the Mongol Ilkhanate in Iran",
+      "name_ru": "Падение монгольского Ильханства в Иране",
       "source": "https://en.wikipedia.org/wiki/Ilkhanate",
       "tags": [
+        "Mongolian",
+        "Kingdom",
+        "Islamic",
+        "Crisis",
         "Dynasty",
         "Collapse",
-        "Crisis",
-        "Islamic",
-        "Kingdom",
-        "Mongolian"
+        "Fall"
       ],
       "type": "historic"
     },
@@ -900,12 +921,12 @@
       "name": "The Origin of the Black Death Epidemic",
       "name_ru": "Зарождение эпидемии \"Черной смерти\"",
       "tags": [
-        "Black Death",
         "Mongolian",
-        "Plague",
-        "Route",
         "Silk Road",
-        "Trade"
+        "Trade",
+        "Route",
+        "Black Death",
+        "Plague 🦠"
       ],
       "type": "historic"
     },
@@ -921,13 +942,13 @@
       "source": "https://en.wikipedia.org/wiki/Ming_dynasty",
       "tags": [
         "Chinese",
-        "Dynasty",
+        "Mongolian",
+        "Yuan",
         "Crisis",
+        "Dynasty",
         "Fall",
         "Ming",
-        "Mongolian",
-        "Overthrow",
-        "Yuan"
+        "Overthrow"
       ],
       "type": "historic"
     },
@@ -942,14 +963,14 @@
       "name_ru": "Русь побеждает Золотую Орду на Куликовом поле",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Kulikovo",
       "tags": [
-        "War",
-        "Battle",
-        "Crisis",
         "Golden Horde",
         "Mongolian",
         "Moscow",
+        "Rus",
+        "Crisis",
+        "War",
         "Rebellion",
-        "Rus"
+        "Battle"
       ],
       "type": "military"
     }

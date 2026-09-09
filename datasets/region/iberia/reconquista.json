@@ -12,17 +12,17 @@
       "name_ru": "Завершение омейядского завоевания Испании",
       "source": "https://en.wikipedia.org/wiki/Umayyad_conquest_of_Hispania",
       "tags": [
-        "Arabian",
-        "Umayyad",
-        "War",
-        "Annexation",
-        "Berber",
-        "Christian",
-        "Conquest",
         "Iberia",
+        "Arabian",
+        "Berber",
+        "Umayyad",
+        "Religious",
+        "Christian",
         "Islamic",
-        "Reconquista",
-        "Religious"
+        "War",
+        "Conquest",
+        "Annexation",
+        "Reconquista"
       ],
       "type": "military"
     },
@@ -37,14 +37,14 @@
       "name_ru": "Пелайо основывает королевство Астурия",
       "source": "https://en.wikipedia.org/wiki/Pelagius_of_Asturias",
       "tags": [
-        "Asturian",
-        "Christian",
-        "Foundation",
         "Iberia",
+        "Visigoth",
+        "Asturian",
         "Kingdom",
+        "Foundation",
+        "Christian",
         "Political",
-        "Reconquista",
-        "Visigoth"
+        "Reconquista"
       ],
       "type": "political"
     },
@@ -59,20 +59,20 @@
       "name_ru": "Битва при Ковадонге — основополагающий миф Реконкисты",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Covadonga",
       "tags": [
+        "Milestone ⭐️",
+        "Iberia",
         "Arabian",
+        "Berber",
+        "Spanish",
+        "Asturian",
         "Umayyad",
+        "Religious",
+        "Christian",
+        "Islamic",
         "War",
         "Battle",
         "Legend",
-        "Asturian",
-        "Berber",
-        "Christian",
-        "Iberia",
-        "Islamic",
-        "Milestone ⭐️",
-        "Reconquista",
-        "Religious",
-        "Spanish"
+        "Reconquista"
       ],
       "type": "military"
     },
@@ -87,15 +87,15 @@
       "name_ru": "Овьедо — столица Астурии ",
       "source": "https://en.wikipedia.org/wiki/Alfonso_II_of_Asturias",
       "tags": [
+        "Visigoth",
         "Asturian",
         "Capital",
+        "Kingdom",
+        "Religious",
         "Christian",
         "Culture",
-        "Kingdom",
         "Political",
-        "Reconquista",
-        "Religious",
-        "Visigoth"
+        "Reconquista"
       ],
       "type": "political"
     },
@@ -110,15 +110,15 @@
       "name_ru": "Возведение Камара Санта в Овьедо",
       "source": "https://es.wikipedia.org/wiki/C%C3%A1mara_Santa_de_Oviedo",
       "tags": [
-        "Building 🏠",
-        "Architecture",
+        "Visigoth",
         "Asturian",
+        "Religious",
         "Christian",
         "Culture",
+        "Architecture",
+        "Building 🏠",
         "Reconquista",
-        "Religious",
-        "Treasure",
-        "Visigoth"
+        "Treasure"
       ],
       "type": "religious"
     },
@@ -133,15 +133,15 @@
       "name_ru": "Создание королевства Памплона",
       "source": "https://en.wikipedia.org/wiki/Basque_Country_(greater_region)",
       "tags": [
-        "Basque",
-        "Capital",
-        "Christian",
-        "Foundation",
         "Iberia",
-        "Independence",
+        "Basque",
+        "Frankish",
+        "Capital",
         "Kingdom",
-        "Reconquista",
-        "Frankish"
+        "Foundation",
+        "Christian",
+        "Independence",
+        "Reconquista"
       ],
       "type": "historic"
     },
@@ -156,17 +156,17 @@
       "name_ru": "Обнаружение гробницы святого Иакова в Иберии ",
       "source": "https://en.wikipedia.org/wiki/Santiago_de_Compostela",
       "tags": [
-        "Building 🏠",
-        "City",
-        "Legend",
-        "Architecture",
         "Asturian",
+        "City",
+        "Religious",
         "Christian",
         "Holy Site",
+        "Architecture",
+        "Building 🏠",
+        "Temple",
+        "Legend",
         "Political",
-        "Reconquista",
-        "Religious",
-        "Temple"
+        "Reconquista"
       ],
       "type": "religious"
     },
@@ -181,14 +181,14 @@
       "name_ru": "Основание Бургоса — город-начало Кастилии",
       "source": "https://en.wikipedia.org/wiki/Burgos",
       "tags": [
-        "City",
+        "Iberia",
         "Asturian",
         "Castile",
-        "Castle",
-        "Christian",
-        "Fortification",
+        "City",
         "Foundation",
-        "Iberia",
+        "Christian",
+        "Castle",
+        "Fortification",
         "Reconquista"
       ],
       "type": "historic"
@@ -204,15 +204,15 @@
       "name_ru": "Основание королевства Леон",
       "source": "https://en.wikipedia.org/wiki/Kingdom_of_Le%C3%B3n",
       "tags": [
-        "Asturian",
-        "Capital",
-        "Christian",
-        "Foundation",
         "Iberia",
-        "Kingdom",
+        "Visigoth",
+        "Asturian",
         "Leon",
-        "Reconquista",
-        "Visigoth"
+        "Capital",
+        "Kingdom",
+        "Foundation",
+        "Christian",
+        "Reconquista"
       ],
       "type": "historic"
     },
@@ -227,14 +227,14 @@
       "name_ru": "Независимость Кастилии от Леона",
       "source": "https://en.wikipedia.org/wiki/Fern%C3%A1n_Gonz%C3%A1lez",
       "tags": [
+        "Iberia",
+        "Castile",
+        "Leon",
+        "Christian",
         "Dynasty",
         "Legend",
-        "Castile",
-        "Christian",
-        "Iberia",
-        "Independence",
-        "Leon",
         "Political",
+        "Independence",
         "Reconquista"
       ],
       "type": "political"
@@ -250,19 +250,19 @@
       "name_ru": "Разгром мусульман испанскими королевствами при Симанкасе",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Simancas",
       "tags": [
-        "Arabian",
-        "Umayyad",
-        "War",
-        "Battle",
-        "Castile",
-        "Christian",
-        "Cordoba",
         "Iberia",
-        "Islamic",
+        "Arabian",
+        "Castile",
+        "Cordoba",
         "Leon",
         "Navarre",
-        "Reconquista",
-        "Religious"
+        "Umayyad",
+        "Religious",
+        "Christian",
+        "Islamic",
+        "War",
+        "Battle",
+        "Reconquista"
       ],
       "type": "military"
     },
@@ -277,13 +277,13 @@
       "name_ru": "Смерть Альманзора в Мединасели",
       "source": "https://en.wikipedia.org/wiki/Almanzor",
       "tags": [
+        "Iberia",
         "Arabian",
-        "Umayyad",
         "Berber",
         "Cordoba",
-        "Crisis",
-        "Iberia",
+        "Umayyad",
         "Islamic",
+        "Crisis",
         "Political",
         "Reconquista"
       ],
@@ -300,11 +300,11 @@
       "name_ru": "Формирование королевства Арагон",
       "source": "https://en.wikipedia.org/wiki/Kingdom_of_Aragon",
       "tags": [
-        "Aragon",
-        "Christian",
-        "Foundation",
         "Iberia",
+        "Aragon",
         "Kingdom",
+        "Foundation",
+        "Christian",
         "Reconquista"
       ],
       "type": "historic"
@@ -320,15 +320,15 @@
       "name_ru": "Камино-де-Сантьяго — иберийский центр паломничества",
       "source": "https://en.wikipedia.org/wiki/Camino_de_Santiago",
       "tags": [
-        "Christian",
-        "Culture",
-        "French",
-        "Holy Site",
         "Iberia",
+        "French",
         "Leon",
+        "Religious",
+        "Christian",
         "Pilgrimage",
-        "Reconquista",
-        "Religious"
+        "Holy Site",
+        "Culture",
+        "Reconquista"
       ],
       "type": "religious"
     },
@@ -343,20 +343,20 @@
       "name_ru": "Осада Барбастро — \"Нулевой\" крестовый поход",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Barbastro",
       "tags": [
-        "War",
-        "Aragon",
-        "Burgundy",
-        "Christian",
-        "Conquest",
         "Iberia",
-        "Islamic",
-        "Normandy",
+        "Aragon",
         "Papacy",
-        "Political",
-        "Reconquista",
+        "Normandy",
         "Religious",
-        "Siege",
-        "Crusade"
+        "Christian",
+        "Islamic",
+        "Crusade",
+        "War",
+        "Conquest",
+        "Political",
+        "Burgundy",
+        "Reconquista",
+        "Siege"
       ],
       "type": "military"
     },
@@ -371,16 +371,16 @@
       "name_ru": "Эль Сид изгнан из Кастилии",
       "source": "https://en.wikipedia.org/wiki/El_Cid",
       "tags": [
+        "Iberia",
+        "Spanish",
         "Castile",
         "Christian",
+        "Islamic",
         "Culture",
         "El Cid 👤",
         "Exile",
-        "Iberia",
-        "Islamic",
         "Mercenaries",
-        "Reconquista",
-        "Spanish"
+        "Reconquista"
       ],
       "type": "historic"
     },
@@ -395,18 +395,19 @@
       "name_ru": "Эль Сид завоевывает Валенсию",
       "source": "https://en.wikipedia.org/wiki/El_Cid",
       "tags": [
-        "War",
+        "Iberia",
+        "Spanish",
+        "Kingdom",
         "Christian",
+        "Islamic",
+        "War",
         "Conquest",
         "Culture",
+        "Adventure",
         "El Cid 👤",
-        "Iberia",
-        "Islamic",
-        "Kingdom",
         "Mercenaries",
         "Reconquista",
-        "Siege",
-        "Spanish"
+        "Siege"
       ],
       "type": "military"
     },
@@ -421,13 +422,13 @@
       "name_ru": "Смерть Эль Сида в Валенсиии ",
       "source": "https://en.wikipedia.org/wiki/El_Cid",
       "tags": [
-        "Legend",
+        "Iberia",
         "Castile",
         "Christian",
         "Culture",
+        "Legend",
         "Death",
         "El Cid 👤",
-        "Iberia",
         "Reconquista"
       ],
       "type": "historic"
@@ -443,16 +444,16 @@
       "name_ru": "Альфонс I Арагонский берёт Сарагосу",
       "source": "https://en.wikipedia.org/wiki/Alfonso_I_of_Aragon",
       "tags": [
-        "War",
+        "Iberia",
+        "French",
         "Aragon",
         "Christian",
-        "Conquest",
-        "French",
-        "Iberia",
         "Islamic",
+        "Crusade",
+        "War",
+        "Conquest",
         "Reconquista",
-        "Siege",
-        "Crusade"
+        "Siege"
       ],
       "type": "military"
     },
@@ -467,14 +468,14 @@
       "name_ru": "Маймонид рождается в Кордове",
       "source": "https://en.wikipedia.org/wiki/Maimonides",
       "tags": [
+        "Iberia",
         "Judaic",
         "Cordoba",
-        "Culture",
-        "Exile",
-        "Iberia",
-        "Philosophy",
-        "Reconquista",
         "Religious",
+        "Culture",
+        "Philosophy",
+        "Exile",
+        "Reconquista",
         "Text"
       ],
       "type": "cultural"
@@ -490,13 +491,13 @@
       "name_ru": "Афонсу Энрикеш провозглашен первым королем Португалии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Ourique",
       "tags": [
+        "Iberia",
+        "Kingdom",
+        "Foundation",
+        "Christian",
         "War",
         "Battle",
         "King",
-        "Christian",
-        "Foundation",
-        "Iberia",
-        "Kingdom",
         "Political",
         "Portugal",
         "Reconquista"
@@ -514,12 +515,12 @@
       "name_ru": "Саморский договор — Португалия признана королевством",
       "source": "https://en.wikipedia.org/wiki/Treaty_of_Zamora_(1143)",
       "tags": [
-        "Christian",
-        "Foundation",
         "Iberia",
-        "Independence",
         "Kingdom",
+        "Foundation",
+        "Christian",
         "Political",
+        "Independence",
         "Portugal",
         "Reconquista"
       ],
@@ -535,13 +536,13 @@
       "name": "Crusaders hired by the King of Portugal",
       "name_ru": "Крестоносцы наняты королем Португалии",
       "tags": [
-        "Second",
-        "Contract",
-        "English",
         "Norman",
+        "English",
+        "Crusade",
+        "Contract",
         "Portugal",
         "Reconquista",
-        "Crusade"
+        "Second"
       ],
       "type": "historic"
     },
@@ -555,17 +556,17 @@
       "name": "Portugal conquers Lisbon with the help of the Crusaders",
       "name_ru": "Португалия завоевывает Лиссабон с помощью крестоносцев",
       "tags": [
-        "Second",
-        "War",
-        "Christian",
-        "Conquest",
-        "English",
-        "Islamic",
         "Norman",
+        "English",
+        "Christian",
+        "Islamic",
+        "Crusade",
+        "War",
+        "Conquest",
         "Portugal",
         "Reconquista",
-        "Siege",
-        "Crusade"
+        "Second",
+        "Siege"
       ],
       "type": "military"
     },
@@ -580,13 +581,13 @@
       "name_ru": "Толедская школа переводчиков",
       "source": "https://en.wikipedia.org/wiki/Toledo_School_of_Translators",
       "tags": [
+        "Iberia",
         "Castile",
         "Christian",
-        "Culture",
-        "Iberia",
         "Islamic",
-        "Mathematics",
+        "Culture",
         "Philosophy",
+        "Mathematics",
         "Reconquista",
         "Science",
         "Text",
@@ -605,17 +606,18 @@
       "name_ru": "Основание Ордена Калатравы в Иберии",
       "source": "https://en.wikipedia.org/wiki/Order_of_Calatrava",
       "tags": [
-        "Castile",
-        "Castle",
-        "Christian",
-        "Cistercian",
-        "Defense",
         "Iberia",
-        "Military",
-        "Order",
-        "Reconquista",
+        "Castile",
         "Religious",
-        "Crusade"
+        "Christian",
+        "Catholic",
+        "Cistercian",
+        "Order",
+        "Crusade",
+        "Defense",
+        "Castle",
+        "Military",
+        "Reconquista"
       ],
       "type": "religious"
     },
@@ -630,16 +632,16 @@
       "name_ru": "Основание Ордена Сантьяго",
       "source": "https://en.wikipedia.org/wiki/Order_of_Santiago",
       "tags": [
-        "Castile",
-        "Castle",
-        "Christian",
-        "Defense",
         "Iberia",
+        "Castile",
+        "Religious",
+        "Christian",
+        "Order",
+        "Defense",
+        "Castle",
         "Military",
         "Monastery",
-        "Order",
-        "Reconquista",
-        "Religious"
+        "Reconquista"
       ],
       "type": "religious"
     },
@@ -654,16 +656,16 @@
       "name_ru": "Кастильцы разбиты Альмохадами при Аларкосе",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Alarcos",
       "tags": [
+        "Iberia",
+        "Castile",
+        "Religious",
+        "Christian",
+        "Islamic",
+        "Order",
         "War",
         "Battle",
         "Almohad",
-        "Castile",
-        "Christian",
-        "Iberia",
-        "Islamic",
-        "Order",
-        "Reconquista",
-        "Religious"
+        "Reconquista"
       ],
       "type": "military"
     },
@@ -678,18 +680,18 @@
       "name_ru": "Христианские королевства побеждают Альмохадов при Лас-Навас-де-Толоса",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Las_Navas_de_Tolosa",
       "tags": [
+        "Iberia",
+        "Aragon",
+        "Castile",
+        "Navarre",
+        "Religious",
+        "Christian",
+        "Islamic",
+        "Crusade",
         "War",
         "Battle",
         "Almohad",
-        "Aragon",
-        "Castile",
-        "Christian",
-        "Iberia",
-        "Islamic",
-        "Navarre",
-        "Reconquista",
-        "Religious",
-        "Crusade"
+        "Reconquista"
       ],
       "type": "military"
     },
@@ -704,13 +706,13 @@
       "name_ru": "Яков I Арагонский завоёвывает Майорку",
       "source": "https://en.wikipedia.org/wiki/Conquest_of_Majorca",
       "tags": [
-        "War",
-        "Aragon",
-        "Catalan",
-        "Christian",
-        "Conquest",
         "Iberia",
+        "Catalan",
+        "Aragon",
+        "Christian",
         "Islamic",
+        "War",
+        "Conquest",
         "Naval",
         "Reconquista"
       ],
@@ -727,14 +729,14 @@
       "name_ru": "Основание эмирата Гранада",
       "source": "https://en.wikipedia.org/wiki/Emirate_of_Granada",
       "tags": [
-        "Dynasty",
-        "Bribe",
+        "Iberia",
         "Emirate of Granada",
         "Foundation",
-        "Iberia",
         "Islamic",
         "Nasrid",
+        "Dynasty",
         "Political",
+        "Bribe",
         "Reconquista"
       ],
       "type": "political"
@@ -750,16 +752,16 @@
       "name_ru": "Кастильцы захватывают мусульманскую Кордову",
       "source": "https://en.wikipedia.org/wiki/Ferdinand_III_of_Castile",
       "tags": [
-        "War",
+        "Iberia",
         "Berber",
         "Castile",
-        "Christian",
-        "Conquest",
         "Cordoba",
-        "Iberia",
+        "Religious",
+        "Christian",
         "Islamic",
-        "Reconquista",
-        "Religious"
+        "War",
+        "Conquest",
+        "Reconquista"
       ],
       "type": "military"
     },
@@ -774,14 +776,14 @@
       "name_ru": "Яков I Арагонский завоёвывает Валенсию",
       "source": "https://en.wikipedia.org/wiki/James_I_of_Aragon",
       "tags": [
-        "War",
-        "Aragon",
-        "Christian",
-        "Conquest",
         "Iberia",
-        "Islamic",
-        "Reconquista",
+        "Aragon",
         "Religious",
+        "Christian",
+        "Islamic",
+        "War",
+        "Conquest",
+        "Reconquista",
         "Siege"
       ],
       "type": "military"
@@ -797,16 +799,16 @@
       "name_ru": "Кастильцы осаждают и берут Севилью",
       "source": "https://en.wikipedia.org/wiki/Ferdinand_III_of_Castile",
       "tags": [
-        "War",
-        "Capital",
-        "Castile",
-        "Christian",
-        "Conquest",
         "Iberia",
-        "Islamic",
-        "Reconquista",
+        "Castile",
+        "Capital",
         "Religious",
+        "Christian",
+        "Islamic",
         "Saint",
+        "War",
+        "Conquest",
+        "Reconquista",
         "Siege"
       ],
       "type": "military"
@@ -822,13 +824,13 @@
       "name_ru": "Альфонс X Кастильский приходит к власти",
       "source": "https://en.wikipedia.org/wiki/Alfonso_X_of_Castile",
       "tags": [
-        "King",
+        "Iberia",
         "Castile",
         "Christian",
         "Culture",
-        "Iberia",
         "Language",
         "Literature",
+        "King",
         "Reconquista",
         "Science",
         "Text"
@@ -846,18 +848,18 @@
       "name_ru": "Дворцовый комплекс Альгамбра в Гранаде",
       "source": "https://en.wikipedia.org/wiki/Alhambra",
       "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Castle",
-        "Culture",
-        "Emirate of Granada",
         "Iberia",
+        "Emirate of Granada",
         "Islamic",
-        "Medieval",
+        "Culture",
         "Nasrid",
+        "Architecture",
+        "Building 🏠",
+        "Castle",
         "Palace",
-        "Reconquista",
-        "Wonders"
+        "Medieval",
+        "Wonders",
+        "Reconquista"
       ],
       "type": "cultural"
     },
@@ -872,17 +874,17 @@
       "name_ru": "Последнее африканское вторжение в Иберию",
       "source": "https://en.wikipedia.org/wiki/Battle_of_R%C3%ADo_Salado",
       "tags": [
+        "Iberia",
+        "Castile",
+        "Emirate of Granada",
+        "Morocco",
+        "Religious",
+        "Christian",
+        "Islamic",
         "War",
         "Battle",
-        "Castile",
-        "Christian",
-        "Emirate of Granada",
-        "Iberia",
-        "Islamic",
-        "Morocco",
         "Portugal",
-        "Reconquista",
-        "Religious"
+        "Reconquista"
       ],
       "type": "military"
     },
@@ -897,14 +899,14 @@
       "name_ru": "Чёрная смерть достигает Иберии",
       "source": "https://en.wikipedia.org/wiki/Black_Death_in_medieval_culture",
       "tags": [
+        "Iberia",
         "Judaic",
         "Aragon",
-        "Black Death",
         "Castile",
         "Christian",
         "Crisis",
-        "Iberia",
-        "Plague",
+        "Black Death",
+        "Plague 🦠",
         "Reconquista"
       ],
       "type": "historic"
@@ -920,18 +922,18 @@
       "name_ru": "Альфонс XI умирает от чумы при осаде Гибралтара",
       "source": "https://en.wikipedia.org/wiki/Alfonso_XI_of_Castile",
       "tags": [
-        "War",
-        "King",
-        "Black Death",
+        "Iberia",
         "Castile",
         "Christian",
-        "Crisis",
-        "Death",
-        "Disease",
-        "Iberia",
         "Islamic",
+        "Crisis",
+        "War",
         "Nasrid",
-        "Plague",
+        "King",
+        "Death",
+        "Black Death",
+        "Disease",
+        "Plague 🦠",
         "Reconquista",
         "Siege"
       ],
@@ -948,14 +950,14 @@
       "name_ru": "Педро I строит мудехарский Алькасар Севильи",
       "source": "https://en.wikipedia.org/wiki/Alc%C3%A1zar_of_Seville",
       "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Art",
+        "Iberia",
         "Castile",
         "Christian",
-        "Culture",
-        "Iberia",
         "Islamic",
+        "Culture",
+        "Art",
+        "Architecture",
+        "Building 🏠",
         "Palace",
         "Reconquista"
       ],
@@ -972,14 +974,14 @@
       "name_ru": "Еврейские погромы 1391 года в Иберии",
       "source": "https://en.wikipedia.org/wiki/1391_massacres",
       "tags": [
+        "Iberia",
         "Judaic",
-        "Baptism",
         "Castile",
         "Christian",
+        "Baptism",
         "Crisis",
-        "Iberia",
-        "Persecution",
         "Political",
+        "Persecution",
         "Reconquista"
       ],
       "type": "historic"
@@ -995,16 +997,16 @@
       "name_ru": "Брак Фердинанда Арагонского и Изабеллы Кастильской",
       "source": "https://en.wikipedia.org/wiki/Isabella_I_of_Castile",
       "tags": [
-        "Marriage",
-        "Dynasty",
+        "Iberia",
+        "Spanish",
         "Aragon",
         "Castile",
         "Christian",
-        "Iberia",
-        "Isabella I of Castile 👑",
+        "Marriage",
+        "Dynasty",
         "Political",
+        "Isabella I of Castile 👑",
         "Reconquista",
-        "Spanish",
         "Trick"
       ],
       "type": "political"
@@ -1020,16 +1022,16 @@
       "name_ru": "Создание Испанской инквизиции",
       "source": "https://en.wikipedia.org/wiki/Spanish_Inquisition",
       "tags": [
+        "Iberia",
         "Judaic",
         "Aragon",
         "Castile",
-        "Catholic",
-        "Christian",
-        "Iberia",
-        "Inquisition",
         "Papacy",
-        "Persecution",
+        "Christian",
+        "Catholic",
         "Political",
+        "Inquisition",
+        "Persecution",
         "Reconquista"
       ],
       "type": "political"
@@ -1045,14 +1047,14 @@
       "name_ru": "Алкасовасский договор завершает войну Кастильской преемственности",
       "source": "https://en.wikipedia.org/wiki/Treaty_of_Alca%C3%A7ovas",
       "tags": [
+        "Iberia",
+        "Spanish",
         "Aragon",
         "Castile",
-        "Colonization",
-        "Iberia",
         "Political",
+        "Colonization",
         "Portugal",
         "Reconquista",
-        "Spanish",
         "Treaty"
       ],
       "type": "political"
@@ -1068,11 +1070,11 @@
       "name_ru": "Восстание Боабдила в Гранаде",
       "source": "https://en.wikipedia.org/wiki/Muhammad_XI_of_Granada",
       "tags": [
-        "Civil War",
         "Emirate of Granada",
         "Islamic",
-        "Nasrid",
+        "Civil War",
         "Rebellion",
+        "Nasrid",
         "Reconquista"
       ],
       "type": "political"
@@ -1088,14 +1090,14 @@
       "name_ru": "Боабдил попадает в плен к кастильцам",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Lucena",
       "tags": [
+        "Castile",
+        "Emirate of Granada",
+        "Religious",
+        "Christian",
+        "Islamic",
         "War",
         "Battle",
-        "Castile",
-        "Christian",
-        "Emirate of Granada",
-        "Islamic",
-        "Reconquista",
-        "Religious"
+        "Reconquista"
       ],
       "type": "military"
     },
@@ -1110,14 +1112,14 @@
       "name_ru": "Основание Санта Фе как осадного лагеря Гранады",
       "source": "https://en.wikipedia.org/wiki/Santa_Fe,_Granada",
       "tags": [
-        "War",
-        "City",
+        "Iberia",
         "Aragon",
         "Castile",
-        "Christian",
         "Emirate of Granada",
+        "City",
+        "Christian",
+        "War",
         "Fortification",
-        "Iberia",
         "Reconquista",
         "Siege"
       ],
@@ -1134,15 +1136,15 @@
       "name_ru": "Падение Гранады и конец Реконкисты",
       "source": "https://en.wikipedia.org/wiki/Fall_of_Granada",
       "tags": [
-        "War",
+        "Iberia",
         "Aragon",
         "Castile",
-        "Christian",
         "Emirate of Granada",
-        "Fall",
-        "Iberia",
+        "Christian",
         "Islamic",
+        "War",
         "Nasrid",
+        "Fall",
         "Reconquista"
       ],
       "type": "military"
@@ -1158,15 +1160,15 @@
       "name_ru": "Альгамбрский декрет: изгнание евреев из Испании",
       "source": "https://en.wikipedia.org/wiki/Alhambra_Decree",
       "tags": [
+        "Iberia",
         "Judaic",
         "Aragon",
-        "Baptism",
         "Castile",
         "Christian",
-        "Iberia",
+        "Baptism",
+        "Political",
         "Isabella I of Castile 👑",
         "Persecution",
-        "Political",
         "Reconquista"
       ],
       "type": "political"
@@ -1182,14 +1184,14 @@
       "name_ru": "Колумб отплывает из Палоса-де-ла-Фронтера",
       "source": "https://en.wikipedia.org/wiki/Christopher_Columbus",
       "tags": [
+        "Iberia",
+        "Spanish",
         "Castile",
         "Christian",
         "Columbus 👤",
         "Expedition",
         "Exploration",
-        "Iberia",
-        "Reconquista",
-        "Spanish"
+        "Reconquista"
       ],
       "type": "historic"
     }

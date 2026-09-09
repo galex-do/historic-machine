@@ -13,17 +13,20 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Roncevaux_Pass",
       "tags": [
         "Arabian",
+        "Basque",
+        "Frankish",
+        "Cordoba",
         "Umayyad",
+        "Religious",
+        "Christian",
+        "Islamic",
         "War",
+        "Culture",
         "Battle",
         "Legend",
         "Charlemagne 👑",
-        "Christian",
-        "Cordoba",
-        "Culture",
         "Expedition",
-        "Islamic",
-        "Frankish"
+        "Reconquista"
       ],
       "type": "military"
     },
@@ -39,15 +42,15 @@
       "source": "https://en.wikipedia.org/wiki/Mosque%E2%80%93Cathedral_of_C%C3%B3rdoba",
       "tags": [
         "Arabian",
-        "Umayyad",
-        "Building 🏠",
-        "Architecture",
         "Cordoba",
-        "Culture",
-        "Engineering ⚙️",
-        "Islamic",
+        "Umayyad",
         "Religious",
-        "Temple"
+        "Islamic",
+        "Culture",
+        "Architecture",
+        "Building 🏠",
+        "Temple",
+        "Engineering ⚙️"
       ],
       "type": "cultural"
     },
@@ -63,14 +66,14 @@
       "source": "https://en.wikipedia.org/wiki/Maliki",
       "tags": [
         "Arabian",
-        "Umayyad",
-        "Reform",
         "Cordoba",
-        "Culture",
+        "Umayyad",
+        "Religious",
         "Islamic",
-        "Law",
+        "Culture",
         "Political",
-        "Religious"
+        "Reform",
+        "Law"
       ],
       "type": "political"
     },
@@ -85,15 +88,17 @@
       "name_ru": "Зирьяб прибывает в Кордову",
       "source": "https://en.wikipedia.org/wiki/Ziryab",
       "tags": [
-        "Umayyad",
+        "Arabian",
+        "Spanish",
         "Abbasid",
-        "Art",
         "Cordoba",
-        "Culture",
-        "Fashion",
-        "Influence",
+        "Umayyad",
         "Islamic",
-        "Music"
+        "Culture",
+        "Art",
+        "Fashion",
+        "Music",
+        "Influence"
       ],
       "type": "cultural"
     },
@@ -109,14 +114,14 @@
       "source": "https://en.wikipedia.org/wiki/Martyrs_of_C%C3%B3rdoba",
       "tags": [
         "Arabian",
-        "Umayyad",
-        "Christian",
         "Cordoba",
-        "Crisis",
-        "Culture",
+        "Umayyad",
+        "Religious",
+        "Christian",
         "Islamic",
         "Martyr",
-        "Religious"
+        "Crisis",
+        "Culture"
       ],
       "type": "religious"
     },
@@ -132,13 +137,13 @@
       "source": "https://en.wikipedia.org/wiki/Arab_agricultural_revolution",
       "tags": [
         "Arabian",
-        "Umayyad",
-        "Agriculture",
-        "Citrus",
         "Cordoba",
-        "Cotton",
+        "Umayyad",
         "Culture",
         "Engineering ⚙️",
+        "Agriculture",
+        "Citrus",
+        "Cotton",
         "Food",
         "Innovation",
         "Rice",
@@ -158,14 +163,16 @@
       "source": "https://en.wikipedia.org/wiki/Umar_ibn_Hafsun",
       "tags": [
         "Arabian",
-        "Umayyad",
-        "Civil War",
         "Berber",
-        "Christian",
         "Cordoba",
-        "Crisis",
+        "Umayyad",
+        "Religious",
+        "Christian",
         "Islamic",
-        "Rebellion"
+        "Civil War",
+        "Crisis",
+        "Rebellion",
+        "Reconquista"
       ],
       "type": "political"
     },
@@ -181,15 +188,15 @@
       "source": "https://en.wikipedia.org/wiki/Abd_al-Rahman_III",
       "tags": [
         "Arabian",
-        "Umayyad",
-        "Dynasty",
-        "Caliph",
         "Cordoba",
+        "Umayyad",
         "Foundation",
+        "Religious",
         "Islamic",
+        "Dynasty",
         "Political",
-        "Reconquista",
-        "Religious"
+        "Caliph",
+        "Reconquista"
       ],
       "type": "political"
     },
@@ -205,17 +212,17 @@
       "source": "https://en.wikipedia.org/wiki/Medina_Azahara",
       "tags": [
         "Arabian",
-        "Umayyad",
-        "Building 🏠",
-        "Architecture",
         "Cordoba",
-        "Culture",
+        "Umayyad",
         "Islamic",
-        "Medieval",
+        "Culture",
+        "Architecture",
+        "Building 🏠",
         "Palace",
-        "Political",
         "Wealth",
-        "Wonders"
+        "Medieval",
+        "Wonders",
+        "Political"
       ],
       "type": "cultural"
     },
@@ -230,15 +237,15 @@
       "name_ru": "Дипломатия Византии и Кордовы",
       "source": "https://en.wikipedia.org/wiki/Hasdai_ibn_Shaprut",
       "tags": [
-        "Arabian",
-        "Roman",
-        "Judaic",
-        "Umayyad",
-        "Diplomacy",
         "Byzantine",
+        "Roman",
+        "Arabian",
+        "Judaic",
         "Cordoba",
-        "Culture",
+        "Umayyad",
         "Islamic",
+        "Culture",
+        "Diplomacy",
         "Medicine",
         "Science",
         "Text",
@@ -257,14 +264,15 @@
       "name_ru": "Кордова на пике расцвета",
       "source": "https://en.wikipedia.org/wiki/Caliphate_of_C%C3%B3rdoba#Society",
       "tags": [
-        "Umayyad",
-        "Architecture",
+        "Iberia",
         "Cordoba",
+        "Umayyad",
+        "Islamic",
         "Culture",
+        "Architecture",
         "Golden Age",
         "Infrastructure",
         "Innovation",
-        "Islamic",
         "Urban"
       ],
       "type": "cultural"
@@ -281,11 +289,12 @@
       "source": "https://en.wikipedia.org/wiki/Al-Zahrawi",
       "tags": [
         "Arabian",
-        "Umayyad",
         "Cordoba",
-        "Culture",
-        "Innovation",
+        "Umayyad",
         "Islamic",
+        "Culture",
+        "Anatomy",
+        "Innovation",
         "Medicine",
         "Science",
         "Text"
@@ -299,15 +308,15 @@
       "era": "AD",
       "latitude": 37.88591711,
       "longitude": -4.86696482,
-      "name": "Al-Hakam II's Library — 400,000 Books in the Western World",
-      "name_ru": "Библиотека халифа аль-Хакама II",
+      "name": "The Great Library of Caliph al-Hakam II",
+      "name_ru": "Великая библиотека халифа аль-Хакама II",
       "source": "https://en.wikipedia.org/wiki/Al-Hakam_II",
       "tags": [
         "Arabian",
-        "Umayyad",
         "Cordoba",
-        "Culture",
+        "Umayyad",
         "Islamic",
+        "Culture",
         "Library",
         "Science"
       ],
@@ -325,13 +334,13 @@
       "source": "https://en.wikipedia.org/wiki/Al-Mansur_ibn_Abi_Aamir",
       "tags": [
         "Arabian",
-        "Umayyad",
-        "Caliph",
         "Cordoba",
-        "Crisis",
-        "Decline",
+        "Umayyad",
         "Islamic",
+        "Crisis",
         "Political",
+        "Caliph",
+        "Decline",
         "Reconquista",
         "Regency"
       ],
@@ -349,17 +358,17 @@
       "source": "https://en.wikipedia.org/wiki/Al-Mansur_ibn_Abi_Aamir#Military_campaigns",
       "tags": [
         "Arabian",
-        "Umayyad",
-        "War",
-        "Battle",
         "Berber",
-        "Christian",
-        "Conquest",
         "Cordoba",
-        "Islamic",
         "Leon",
-        "Reconquista",
-        "Religious"
+        "Umayyad",
+        "Religious",
+        "Christian",
+        "Islamic",
+        "War",
+        "Conquest",
+        "Battle",
+        "Reconquista"
       ],
       "type": "military"
     },
@@ -375,13 +384,14 @@
       "source": "https://en.wikipedia.org/wiki/Fitna_of_al-Andalus",
       "tags": [
         "Arabian",
-        "Umayyad",
-        "Civil War",
         "Berber",
-        "Collapse",
-        "Crisis",
+        "Umayyad",
         "Islamic",
-        "Rebellion"
+        "Civil War",
+        "Crisis",
+        "Rebellion",
+        "Collapse",
+        "Reconquista"
       ],
       "type": "political"
     },
@@ -397,13 +407,13 @@
       "source": "https://en.wikipedia.org/wiki/Madinat_al-Zahra",
       "tags": [
         "Arabian",
-        "Civil War",
         "Berber",
         "Cordoba",
+        "Civil War",
         "Destruction",
         "Medieval",
-        "Mercenaries",
-        "Wonders"
+        "Wonders",
+        "Mercenaries"
       ],
       "type": "military"
     },
@@ -419,11 +429,11 @@
       "source": "https://en.wikipedia.org/wiki/Taifa",
       "tags": [
         "Arabian",
-        "Umayyad",
-        "Collapse",
         "Cordoba",
-        "End",
+        "Umayyad",
         "Islamic",
+        "Collapse",
+        "End",
         "Reconquista"
       ],
       "type": "political"
@@ -440,12 +450,13 @@
       "source": "https://en.wikipedia.org/wiki/Siege_of_Toledo_(1085)",
       "tags": [
         "Arabian",
-        "Umayyad",
-        "War",
         "Castile",
+        "Umayyad",
+        "Religious",
         "Christian",
-        "Conquest",
         "Islamic",
+        "War",
+        "Conquest",
         "Reconquista"
       ],
       "type": "cultural"
@@ -463,8 +474,8 @@
       "tags": [
         "Arabian",
         "Cordoba",
-        "Culture",
         "Islamic",
+        "Culture",
         "Philosophy",
         "Text"
       ],

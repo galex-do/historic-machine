@@ -8,18 +8,18 @@
       "era": "AD",
       "latitude": 40.4165,
       "longitude": -3.7035,
-      "name": "The lot of Hispania — barbarians divide the peninsula",
+      "name": "The Barbarian kingdoms of Hispania",
       "name_ru": "Варварские королевства Испании",
       "source": "https://en.wikipedia.org/wiki/Suebi",
       "tags": [
         "Alan",
-        "Foundation",
-        "Germanic",
-        "Kingdom",
-        "Migration",
-        "Political",
         "Suebi",
-        "Vandal"
+        "Germanic",
+        "Vandal",
+        "Kingdom",
+        "Foundation",
+        "Political",
+        "Migration"
       ],
       "type": "political"
     },
@@ -35,12 +35,12 @@
       "source": "https://en.wikipedia.org/wiki/Wallia",
       "tags": [
         "Roman",
-        "War",
-        "Battle",
         "Alan",
         "Germanic",
         "Vandal",
-        "Visigoth"
+        "Visigoth",
+        "War",
+        "Battle"
       ],
       "type": "military"
     },
@@ -55,12 +55,12 @@
       "name_ru": "Рехиар — католический король свевов",
       "source": "https://en.wikipedia.org/wiki/Rechiar",
       "tags": [
-        "King",
-        "Christian",
         "Gallaecian",
+        "Suebi",
         "Germanic",
         "Religious",
-        "Suebi"
+        "Christian",
+        "King"
       ],
       "type": "religious"
     },
@@ -75,14 +75,14 @@
       "name_ru": "Вестготы разбивают свевов при Орбиго",
       "source": "https://en.wikipedia.org/wiki/Battle_of_%C3%93rbigo_(456)",
       "tags": [
+        "Gallaecian",
+        "Suebi",
+        "Germanic",
+        "Visigoth",
         "War",
         "Battle",
         "Destruction",
-        "Gallaecian",
-        "Germanic",
-        "Pillage",
-        "Suebi",
-        "Visigoth"
+        "Pillage"
       ],
       "type": "military"
     },
@@ -97,11 +97,11 @@
       "name_ru": "Франки вытесняют вестготов из Галлии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Vouill%C3%A9",
       "tags": [
-        "War",
-        "Battle",
         "Gothic",
+        "Visigoth",
         "Frankish",
-        "Visigoth"
+        "War",
+        "Battle"
       ],
       "type": "military"
     },
@@ -116,12 +116,12 @@
       "name_ru": "Толедо — столица вестготского королевства",
       "source": "https://en.wikipedia.org/wiki/Toledo,_Spain",
       "tags": [
-        "Capital",
-        "Foundation",
         "Gothic",
+        "Visigoth",
+        "Capital",
         "Kingdom",
-        "Political",
-        "Visigoth"
+        "Foundation",
+        "Political"
       ],
       "type": "historic"
     },
@@ -136,13 +136,13 @@
       "name_ru": "Плацдарм Византии в Испании",
       "source": "https://en.wikipedia.org/wiki/Byzantine_Hispania",
       "tags": [
-        "Roman",
-        "War",
         "Byzantine",
+        "Roman",
+        "Visigoth",
+        "War",
         "Conquest",
-        "Expansion",
         "Political",
-        "Visigoth"
+        "Expansion"
       ],
       "type": "political"
     },
@@ -157,12 +157,12 @@
       "name_ru": "Мартин Браги — апостол, дважды обративший свевов",
       "source": "https://en.wikipedia.org/wiki/Martin_of_Braga",
       "tags": [
-        "Adoption",
+        "Suebi",
+        "Religious",
         "Christian",
+        "Adoption",
         "Culture",
         "Monastery",
-        "Religious",
-        "Suebi",
         "Text"
       ],
       "type": "religious"
@@ -178,12 +178,12 @@
       "name_ru": "Леовигильд — король, объединивший Иберию",
       "source": "https://en.wikipedia.org/wiki/Leovigild",
       "tags": [
+        "Iberia",
+        "Visigoth",
         "Dynasty",
         "King",
-        "Iberia",
         "Political",
-        "Unification",
-        "Visigoth"
+        "Unification"
       ],
       "type": "political"
     },
@@ -198,14 +198,14 @@
       "name_ru": "Восстание вестготского принца Эрминегильда",
       "source": "https://en.wikipedia.org/wiki/Hermenegild",
       "tags": [
-        "Christian",
-        "Death",
-        "Martyr",
-        "Political",
-        "Rebellion",
+        "Visigoth",
         "Religious",
+        "Christian",
+        "Martyr",
         "Saint",
-        "Visigoth"
+        "Rebellion",
+        "Political",
+        "Death"
       ],
       "type": "religious"
     },
@@ -220,13 +220,13 @@
       "name_ru": "Вестготы в Иберии принимают католичество",
       "source": "https://en.wikipedia.org/wiki/Third_Council_of_Toledo",
       "tags": [
-        "Adoption",
-        "Catholic",
-        "Christian",
-        "Council",
-        "Political",
+        "Visigoth",
         "Religious",
-        "Visigoth"
+        "Christian",
+        "Catholic",
+        "Council",
+        "Adoption",
+        "Political"
       ],
       "type": "religious"
     },
@@ -241,13 +241,13 @@
       "name_ru": "Эдикт Сисебута в вестготской Испании",
       "source": "https://en.wikipedia.org/wiki/Sisebut",
       "tags": [
+        "Visigoth",
         "Judaic",
-        "Baptism",
-        "Law",
-        "Persecution",
-        "Political",
         "Religious",
-        "Visigoth"
+        "Baptism",
+        "Political",
+        "Law",
+        "Persecution"
       ],
       "type": "religious"
     },
@@ -265,8 +265,8 @@
         "Roman",
         "Christian",
         "Culture",
-        "History",
         "Literature",
+        "History",
         "Science",
         "Text"
       ],
@@ -283,12 +283,12 @@
       "name_ru": "Византия изгнана из Иберии",
       "source": "https://en.wikipedia.org/wiki/Suintila",
       "tags": [
-        "Roman",
-        "War",
         "Byzantine",
+        "Roman",
+        "Visigoth",
+        "War",
         "Political",
-        "Unification",
-        "Visigoth"
+        "Unification"
       ],
       "type": "military"
     },
@@ -303,14 +303,14 @@
       "name_ru": "IV Толедский собор — церковь выше короля",
       "source": "https://en.wikipedia.org/wiki/Fourth_Council_of_Toledo",
       "tags": [
+        "Visigoth",
+        "Religious",
         "Christian",
         "Council",
+        "Political",
         "Elections",
         "Law",
-        "Monarchy",
-        "Political",
-        "Religious",
-        "Visigoth"
+        "Monarchy"
       ],
       "type": "political"
     },
@@ -325,13 +325,13 @@
       "name_ru": "Liber Iudiciorum — единый закон для готов и ромеев",
       "source": "https://en.wikipedia.org/wiki/Visigothic_Code",
       "tags": [
+        "Spanish",
+        "Visigoth",
         "Culture",
+        "Political",
         "Innovation",
         "Justice",
-        "Law",
-        "Political",
-        "Spanish",
-        "Visigoth"
+        "Law"
       ],
       "type": "political"
     },
@@ -346,14 +346,14 @@
       "name_ru": "Возведение церкви Сан-Хуан-де-Баньос ",
       "source": "https://en.wikipedia.org/wiki/San_Juan_de_Ba%C3%B1os",
       "tags": [
-        "Building 🏠",
-        "Architecture",
+        "Visigoth",
+        "Religious",
         "Christian",
         "Culture",
-        "Local",
-        "Religious",
+        "Architecture",
+        "Building 🏠",
         "Temple",
-        "Visigoth"
+        "Local"
       ],
       "type": "cultural"
     },
@@ -368,11 +368,11 @@
       "name_ru": "Ювелирное искусство вестготов",
       "source": "https://en.wikipedia.org/wiki/Treasure_of_Guarrazar",
       "tags": [
-        "Art",
+        "Visigoth",
         "Culture",
+        "Art",
         "Jewelry",
-        "Metallurgy",
-        "Visigoth"
+        "Metallurgy"
       ],
       "type": "cultural"
     },
@@ -387,15 +387,15 @@
       "name_ru": "Эгика порабощает евреев Испании ",
       "source": "https://en.wikipedia.org/wiki/Egica",
       "tags": [
+        "Visigoth",
         "Judaic",
+        "Religious",
         "Christian",
         "Council",
+        "Political",
         "Law",
         "Persecution",
-        "Political",
-        "Redistribution",
-        "Religious",
-        "Visigoth"
+        "Redistribution"
       ],
       "type": "political"
     },
@@ -410,12 +410,12 @@
       "name_ru": "Родерик — последний вестготский король Иберии ",
       "source": "https://en.wikipedia.org/wiki/Roderic",
       "tags": [
+        "Iberia",
+        "Visigoth",
+        "Crisis",
         "Dynasty",
         "King",
-        "Crisis",
-        "Iberia",
-        "Political",
-        "Visigoth"
+        "Political"
       ],
       "type": "political"
     },
@@ -431,16 +431,17 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Guadalete",
       "tags": [
         "Arabian",
-        "Umayyad",
-        "War",
-        "Battle",
         "Berber",
+        "Visigoth",
+        "Umayyad",
+        "Religious",
         "Christian",
-        "Conquest",
-        "Death",
         "Islamic",
-        "Reconquista",
-        "Visigoth"
+        "War",
+        "Conquest",
+        "Battle",
+        "Death",
+        "Reconquista"
       ],
       "type": "military"
     }

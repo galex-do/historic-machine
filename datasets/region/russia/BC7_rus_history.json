@@ -13,8 +13,8 @@
       "source": "https://en.wikipedia.org/wiki/Scythians",
       "tags": [
         "Scythian",
-        "Art",
         "Culture",
+        "Art",
         "Nomads",
         "Tribal"
       ],
@@ -53,11 +53,11 @@
       "source": "https://en.wikipedia.org/wiki/Scythian_kurgans",
       "tags": [
         "Scythian",
+        "Religious",
+        "Culture",
         "Art",
         "Burial",
-        "Culture",
-        "Mound Builders",
-        "Religious"
+        "Mound Builders"
       ],
       "type": "cultural"
     },
@@ -72,10 +72,11 @@
       "name_ru": "Сарматы вытесняют скифов в Понтийской степи",
       "source": "https://en.wikipedia.org/wiki/Sarmatians",
       "tags": [
+        "Sarmatian",
+        "Scythian",
         "Culture",
         "Migration",
         "Nomads",
-        "Sarmatian",
         "Tribal"
       ],
       "type": "cultural"
@@ -91,10 +92,10 @@
       "name_ru": "Черняховская культура",
       "source": "https://en.wikipedia.org/wiki/Chernyakhov_culture",
       "tags": [
-        "Culture",
+        "Sarmatian",
         "Gothic",
         "Kingdom",
-        "Sarmatian"
+        "Culture"
       ],
       "type": "cultural"
     },
@@ -109,12 +110,12 @@
       "name_ru": "Славянское расселение в Европе",
       "source": "https://en.wikipedia.org/wiki/Migration_period#Slavs",
       "tags": [
-        "Agriculture",
-        "Culture",
-        "Customs",
-        "Migration",
         "Milestone ⭐️",
         "Slavic",
+        "Culture",
+        "Customs",
+        "Agriculture",
+        "Migration",
         "Tribal"
       ],
       "type": "cultural"
@@ -130,11 +131,11 @@
       "name_ru": "Авары подчиняют антов и дулебских славян",
       "source": "https://en.wikipedia.org/wiki/Avar_Khaganate",
       "tags": [
-        "War",
-        "Conquest",
-        "Mongolian",
         "Pannonian Avars",
-        "Slavic"
+        "Slavic",
+        "Mongolian",
+        "War",
+        "Conquest"
       ],
       "type": "military"
     },
@@ -149,10 +150,10 @@
       "name_ru": "Восточнославянские племенные союзы",
       "source": "https://en.wikipedia.org/wiki/Eastern_Slavs",
       "tags": [
+        "Slavic",
         "Culture",
         "Political",
         "Settlement",
-        "Slavic",
         "Tribal"
       ],
       "type": "cultural"
@@ -185,8 +186,8 @@
       "name_ru": "Ильменские славяне на севере Восточной Европы",
       "source": "https://en.wikipedia.org/wiki/Ilmen_Slavs",
       "tags": [
-        "Culture",
         "Slavic",
+        "Culture",
         "Trade",
         "Tribal"
       ],
@@ -203,9 +204,9 @@
       "name_ru": "Появление Ростова Великого",
       "source": "https://en.wikipedia.org/wiki/Sarskoye_Gorodishche",
       "tags": [
-        "City",
-        "Finno-Ugric",
         "Slavic",
+        "Finno-Ugric",
+        "City",
         "Trade",
         "Tribal"
       ],
@@ -222,14 +223,14 @@
       "name_ru": "Основание Старой Ладоги",
       "source": "https://en.wikipedia.org/wiki/Staraya_Ladoga",
       "tags": [
-        "City",
-        "Finno-Ugric",
         "Norman",
-        "Route",
-        "Settlement",
         "Slavic",
+        "Finno-Ugric",
+        "City",
+        "Varangians to the Greeks",
         "Trade",
-        "Varangians to the Greeks"
+        "Route",
+        "Settlement"
       ],
       "type": "cultural"
     },
@@ -244,20 +245,21 @@
       "name_ru": "Полоцк — городище кривичей",
       "source": "https://en.wikipedia.org/wiki/Polotsk",
       "tags": [
+        "Slavic",
+        "Polotsk",
         "City",
+        "Varangians to the Greeks",
+        "Trade",
         "Route",
         "Settlement",
-        "Slavic",
-        "Trade",
-        "Tribal",
-        "Varangians to the Greeks"
+        "Tribal"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.0800",
-      "description": "The religious life of the Eastern Slavs was a rich and internally coherent system that was neither simple animism nor a fully developed theological pantheon on the Greek or Norse model. The supreme deity was Perun — the thunder-god, whose name cognates with Lithuanian Perkunas, and who presided over war, oaths, and the upper sky. His great adversary was Veles (Volos) — the god of the underworld, cattle, wealth, and magic, whose image stood at the bottom of the hill while Perun's stood at the top. The cosmic myth was the eternal combat between them: Perun strikes down Veles with his thunder-bolt; Veles takes serpent or bull form and hides underground or in water; the rain that results fertilizes the earth.\n\nOther major deities include Mokosh (from the root *mok- 'wet') — the weaving goddess, fate-spinner, and deity of women's work and wet weather; Svarog — the sky and smithcraft deity, father of the fire; Dazbog — the sun-god, 'Giver of Wealth'; Stribog — wind and air; Rod and the Rozhanitsyi — the ancestral cult of life-giving ancestors, probably the oldest layer of Slavic religion. The practical religious life centered on the domestic hearth (domovoi, the house-spirit), the field spirit (polevoi), the forest spirit (leshiy), and the water spirit (vodyanoi). Sacred groves (svyashchennye roshchi) served as outdoor temples; idols (kumiry) of wood were set up at significant places. The entire system was deeply connected to the agricultural cycle: Kupala (midsummer), Maslenitsa (pre-spring carnival), and the winter solstice festival that became Kolyada.",
-      "description_ru": "Религиозная жизнь восточных славян была богатой и внутренне последовательной системой. Верховным божеством был Перун — бог грома, чьё имя родственно литовскому Перкунасу, и который правил войной, клятвами и высшим небом. Его великим противником был Велес (Волос) — бог подземного мира, скота, богатства и магии, чьё изображение стояло у подножия холма, а изображение Перуна — на вершине. Космический миф представлял собой вечную борьбу между ними: Перун поражает Велеса своей молнией; Велес принимает облик змеи или быка и прячется под землей или в воде; выпадающий дождь удобряет землю.\n\nК другим главным божествам относятся Мокошь (от корня *мок- «мокрый») — богиня ткачества, вершительница судьбы и божество женского труда и дождя; Сварог — божество неба и кузнечного дела, отец огня; Дажбог — бог солнца, «даритель богатства»; Стрибог — ветер и воздух; Род и Рожаницы — родовой культ животворящих предков, вероятно, самый древний слой славянской религии. \n\nПрактическая религиозная жизнь была сосредоточена вокруг домашнего очага (домовой, дух дома), полевого духа (полевой), лесного духа (леший) и водного духа (водяной). Священные рощи служили храмами под открытым небом; деревянные идолы устанавливались в значимых местах. Вся система была тесно связана с сельскохозяйственным циклом: Купала (середина лета), Масленица (предвесенний карнавал) и праздник зимнего солнцестояния, который впоследствии стал Колядой.",
+      "description": "The supreme deity of the Eastern Slavs was Perun — the thunder-god, whose name cognates with Lithuanian Perkunas, and who presided over war, oaths, and the upper sky. His great adversary was Veles (Volos) — the god of the underworld, cattle, wealth, and magic, whose image stood at the bottom of the hill while Perun's stood at the top. The cosmic myth was the eternal combat between them: Perun strikes down Veles with his thunder-bolt; Veles takes serpent or bull form and hides underground or in water; the rain that results fertilizes the earth.\n\nOther major deities include Mokosh (from the root *mok- 'wet') — the weaving goddess, fate-spinner, and deity of women's work and wet weather; Svarog — the sky and smithcraft deity, father of the fire; Dazbog — the sun-god, 'Giver of Wealth'; Stribog — wind and air; Rod and the Rozhanitsyi — the ancestral cult of life-giving ancestors, probably the oldest layer of Slavic religion. The practical religious life centered on the domestic hearth (domovoi, the house-spirit), the field spirit (polevoi), the forest spirit (leshiy), and the water spirit (vodyanoi). Sacred groves (svyashchennye roshchi) served as outdoor temples; idols (kumiry) of wood were set up at significant places. The entire system was deeply connected to the agricultural cycle: Kupala (midsummer), Maslenitsa (pre-spring carnival), and the winter solstice festival that became Kolyada.",
+      "description_ru": "Верховным божеством у восточных славян был Перун — бог грома, чьё имя родственно литовскому Перкунасу, и который правил войной, клятвами и высшим небом. Его великим противником был Велес (Волос) — бог подземного мира, скота, богатства и магии, чьё изображение стояло у подножия холма, а изображение Перуна — на вершине. Космический миф представлял собой вечную борьбу между ними: Перун поражает Велеса своей молнией; Велес принимает облик змеи или быка и прячется под землей или в воде; выпадающий дождь удобряет землю.\n\nК другим главным божествам относятся Мокошь (от корня *мок- «мокрый») — богиня ткачества, вершительница судьбы и божество женского труда и дождя; Сварог — божество неба и кузнечного дела, отец огня; Дажбог — бог солнца, «даритель богатства»; Стрибог — ветер и воздух; Род и Рожаницы — родовой культ животворящих предков, вероятно, самый древний слой славянской религии. \n\nПрактическая религиозная жизнь была сосредоточена вокруг домашнего очага (домовой, дух дома), полевого духа (полевой), лесного духа (леший) и водного духа (водяной). Священные рощи служили храмами под открытым небом; деревянные идолы устанавливались в значимых местах. Вся система была тесно связана с сельскохозяйственным циклом: Купала (середина лета), Масленица (предвесенний карнавал) и праздник зимнего солнцестояния, который впоследствии стал Колядой.",
       "era": "AD",
       "latitude": 50.45826903,
       "longitude": 30.5160284,
@@ -265,12 +267,12 @@
       "name_ru": "Славянское язычество",
       "source": "https://en.wikipedia.org/wiki/Slavic_paganism",
       "tags": [
+        "Slavic",
+        "Religious",
         "Animism",
-        "Cosmology",
         "Culture",
         "Customs",
-        "Religious",
-        "Slavic"
+        "Cosmology"
       ],
       "type": "religious"
     },
@@ -285,13 +287,13 @@
       "name_ru": "Путь «из варяг в греки»",
       "source": "https://en.wikipedia.org/wiki/Trade_route_from_the_Varangians_to_the_Greeks",
       "tags": [
-        "Roman",
         "Byzantine",
+        "Roman",
         "Norman",
-        "Route",
         "Slavic",
+        "Varangians to the Greeks",
         "Trade",
-        "Varangians to the Greeks"
+        "Route"
       ],
       "type": "cultural"
     },
@@ -307,13 +309,13 @@
       "source": "https://en.wikipedia.org/wiki/Volga_trade_route",
       "tags": [
         "Arabian",
-        "Islamic",
-        "Norman",
-        "Route",
-        "Slavic",
-        "Trade",
         "Bulgarian",
-        "Khazar"
+        "Khazar",
+        "Norman",
+        "Slavic",
+        "Islamic",
+        "Trade",
+        "Route"
       ],
       "type": "cultural"
     },
@@ -328,13 +330,13 @@
       "name_ru": "Первый поход Руси на Константинополь",
       "source": "https://en.wikipedia.org/wiki/Rus%27%E2%80%93Byzantine_War_(860)",
       "tags": [
-        "Roman",
-        "War",
         "Byzantine",
+        "Roman",
         "Norman",
-        "Pillage",
+        "Slavic",
         "Rus",
-        "Slavic"
+        "War",
+        "Pillage"
       ],
       "type": "military"
     },
@@ -349,18 +351,18 @@
       "name_ru": "Призвание варягов в Новгород",
       "source": "https://en.wikipedia.org/wiki/Rurik",
       "tags": [
-        "City",
-        "Dynasty",
-        "Uncertain",
-        "Foundation",
         "Norman",
-        "Novgorod",
-        "Political",
-        "Route",
-        "Rurikid",
-        "Rus",
         "Slavic",
-        "Varangians to the Greeks"
+        "Novgorod",
+        "Rus",
+        "City",
+        "Foundation",
+        "Rurikid",
+        "Dynasty",
+        "Varangians to the Greeks",
+        "Uncertain",
+        "Route",
+        "Political"
       ],
       "type": "political"
     },
@@ -375,13 +377,13 @@
       "name_ru": "Аскольд и Дир в Киеве — южная Русь до Олега",
       "source": "https://en.wikipedia.org/wiki/Askold_and_Dir",
       "tags": [
-        "Foundation",
-        "Kingdom",
-        "Kyiv",
         "Norman",
-        "Political",
+        "Slavic",
+        "Kyiv",
         "Rus",
-        "Slavic"
+        "Kingdom",
+        "Foundation",
+        "Political"
       ],
       "type": "political"
     },
@@ -396,17 +398,17 @@
       "name_ru": "Князь Олег захватывает Киев",
       "source": "https://en.wikipedia.org/wiki/Oleg_of_Novgorod",
       "tags": [
-        "War",
-        "Dynasty",
-        "Capital",
-        "Conquest",
-        "Foundation",
+        "Slavic",
         "Kyiv",
+        "Rus",
+        "Capital",
+        "Foundation",
+        "War",
+        "Conquest",
+        "Rurikid",
+        "Dynasty",
         "Political",
         "Regency",
-        "Rurikid",
-        "Rus",
-        "Slavic",
         "Trick"
       ],
       "type": "military"
@@ -422,14 +424,14 @@
       "name_ru": "Поход русского князя Олега на Константинополь",
       "source": "https://en.wikipedia.org/wiki/Rus%27%E2%80%93Byzantine_War_(907)",
       "tags": [
-        "Roman",
-        "War",
         "Byzantine",
-        "Expedition",
-        "Kyiv",
+        "Roman",
         "Norman",
-        "Rus",
         "Slavic",
+        "Kyiv",
+        "Rus",
+        "War",
+        "Expedition",
         "Treaty",
         "Tribute"
       ],
@@ -446,13 +448,13 @@
       "name_ru": "Договор между Русью и Византией",
       "source": "https://en.wikipedia.org/wiki/Rus%27%E2%80%93Byzantine_Treaty_(911)",
       "tags": [
-        "Roman",
-        "Diplomacy",
         "Byzantine",
+        "Roman",
         "Kyiv",
-        "Political",
         "Rus",
+        "Diplomacy",
         "Trade",
+        "Political",
         "Treaty"
       ],
       "type": "political"
@@ -468,15 +470,15 @@
       "name_ru": "Игорь Рюрикович — великий князь киевский",
       "source": "https://en.wikipedia.org/wiki/Igor_of_Kiev",
       "tags": [
+        "Norman",
+        "Slavic",
+        "Kyiv",
+        "Rus",
+        "Crisis",
+        "Rurikid",
         "Dynasty",
         "King",
-        "Crisis",
-        "Kyiv",
-        "Norman",
-        "Political",
-        "Rurikid",
-        "Rus",
-        "Slavic"
+        "Political"
       ],
       "type": "historic"
     },
@@ -491,14 +493,14 @@
       "name_ru": "Смерть князя Олега от укуса змеи",
       "source": "https://en.wikipedia.org/wiki/Oleg_of_Novgorod#Death",
       "tags": [
+        "Norman",
+        "Kyiv",
+        "Rus",
+        "Culture",
         "King",
         "Legend",
-        "Culture",
         "Death",
-        "Kyiv",
-        "Norman",
-        "Regency",
-        "Rus"
+        "Regency"
       ],
       "type": "cultural"
     },
@@ -513,14 +515,14 @@
       "name_ru": "Греческий огонь уничтожает русский флот",
       "source": "https://en.wikipedia.org/wiki/Rus%27%E2%80%93Byzantine_War_(941)",
       "tags": [
+        "Byzantine",
         "Roman",
+        "Slavic",
+        "Kyiv",
+        "Rus",
         "War",
         "Battle",
-        "Byzantine",
-        "Kyiv",
-        "Naval",
-        "Rus",
-        "Slavic"
+        "Naval"
       ],
       "type": "military"
     },
@@ -535,12 +537,13 @@
       "name_ru": "Договор между Русью и Византией 945",
       "source": "https://en.wikipedia.org/wiki/Russo-Byzantine_Treaty_(945)",
       "tags": [
-        "Roman",
-        "Diplomacy",
         "Byzantine",
+        "Roman",
         "Pecheneg",
-        "Political",
+        "Kyiv",
         "Rus",
+        "Diplomacy",
+        "Political",
         "Treaty",
         "Tribute"
       ],
@@ -557,17 +560,17 @@
       "name_ru": "Древляне убивают русского князя Игоря",
       "source": "https://en.wikipedia.org/wiki/Igor_of_Kiev#Death",
       "tags": [
+        "Slavic",
+        "Kyiv",
+        "Rus",
+        "Crisis",
         "War",
+        "Rurikid",
         "Dynasty",
         "King",
-        "Crisis",
-        "Death",
-        "Kyiv",
-        "Murder",
         "Political",
-        "Rurikid",
-        "Rus",
-        "Slavic"
+        "Death",
+        "Murder"
       ],
       "type": "political"
     },
@@ -582,12 +585,12 @@
       "name_ru": "Месть княгини Ольги древлянам",
       "source": "https://en.wikipedia.org/wiki/Olga_of_Kiev",
       "tags": [
-        "War",
-        "Legend",
-        "Culture",
-        "Political",
-        "Rus",
         "Slavic",
+        "Rus",
+        "War",
+        "Culture",
+        "Legend",
+        "Political",
         "Revenge"
       ],
       "type": "military"
@@ -603,11 +606,11 @@
       "name_ru": "Реформы сбора податей на Руси",
       "source": "https://en.wikipedia.org/wiki/Olga_of_Kiev#Consolidation_of_power",
       "tags": [
-        "Reform",
-        "Administration",
+        "Slavic",
         "Kyiv",
         "Rus",
-        "Slavic",
+        "Reform",
+        "Administration",
         "Taxes"
       ],
       "type": "political"
@@ -623,14 +626,15 @@
       "name_ru": "Туров — городище дреговичей",
       "source": "https://en.wikipedia.org/wiki/Turov,_Belarus",
       "tags": [
-        "City",
         "Norman",
+        "Slavic",
+        "Rus",
+        "City",
+        "Varangians to the Greeks",
+        "Trade",
         "Route",
         "Settlement",
-        "Slavic",
-        "Trade",
-        "Tribal",
-        "Varangians to the Greeks"
+        "Tribal"
       ],
       "type": "historic"
     },
@@ -645,17 +649,17 @@
       "name_ru": "Русская княгиня Ольга принимает христианство",
       "source": "https://en.wikipedia.org/wiki/Olga_of_Kiev#Baptism",
       "tags": [
-        "Roman",
-        "Diplomacy",
-        "Baptism",
         "Byzantine",
-        "Christian",
-        "Kyiv",
+        "Roman",
         "Norman",
-        "Religious",
+        "Slavic",
+        "Kyiv",
         "Rus",
+        "Religious",
+        "Christian",
         "Saint",
-        "Slavic"
+        "Baptism",
+        "Diplomacy"
       ],
       "type": "political"
     },
@@ -670,13 +674,13 @@
       "name_ru": "Святослав — князь Киевской Руси",
       "source": "https://en.wikipedia.org/wiki/Sviatoslav_I_of_Kiev#Khazar_campaign",
       "tags": [
-        "Dynasty",
-        "King",
-        "Kyiv",
         "Norman",
-        "Rurikid",
+        "Slavic",
+        "Kyiv",
         "Rus",
-        "Slavic"
+        "Rurikid",
+        "Dynasty",
+        "King"
       ],
       "type": "political"
     },
@@ -691,15 +695,15 @@
       "name_ru": "Походы Киевской Руси на Дунай",
       "source": "https://en.wikipedia.org/wiki/Sviatoslav_I_of_Kiev#Bulgarian_campaigns",
       "tags": [
-        "Roman",
-        "War",
         "Byzantine",
-        "Expansion",
-        "Expedition",
+        "Roman",
+        "Bulgarian",
+        "Slavic",
         "Kyiv",
         "Rus",
-        "Slavic",
-        "Bulgarian"
+        "War",
+        "Expansion",
+        "Expedition"
       ],
       "type": "military"
     },
@@ -713,14 +717,14 @@
       "name": "Kievan Rus' captures Khazar Samkerts",
       "name_ru": "Киевская Русь захватывает хазарский Самкерц",
       "tags": [
-        "War",
-        "Conquest",
-        "Kyiv",
+        "Khazar",
         "Norman",
-        "Rus",
         "Slavic",
         "Turkic",
-        "Khazar"
+        "Kyiv",
+        "Rus",
+        "War",
+        "Conquest"
       ],
       "type": "military"
     },
@@ -735,14 +739,14 @@
       "name_ru": "Печенеги осаждают Киев",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Kiev_(968)",
       "tags": [
+        "Slavic",
+        "Turkic",
+        "Pecheneg",
+        "Kyiv",
+        "Rus",
         "War",
         "Legend",
-        "Kyiv",
-        "Pecheneg",
-        "Rus",
-        "Siege",
-        "Slavic",
-        "Turkic"
+        "Siege"
       ],
       "type": "military"
     },
@@ -757,17 +761,17 @@
       "name_ru": "Князь Святослав убит печенегами",
       "source": "https://en.wikipedia.org/wiki/Sviatoslav_I_of_Kiev#Death",
       "tags": [
+        "Slavic",
+        "Turkic",
+        "Pecheneg",
+        "Kyiv",
+        "Rus",
         "War",
         "Battle",
+        "Rurikid",
         "Dynasty",
         "King",
-        "Death",
-        "Kyiv",
-        "Pecheneg",
-        "Rurikid",
-        "Rus",
-        "Slavic",
-        "Turkic"
+        "Death"
       ],
       "type": "military"
     },
@@ -778,17 +782,18 @@
       "era": "AD",
       "latitude": 50.45826903,
       "longitude": 30.5160284,
-      "name": "The First Civil War — Vladimir Flees and Returns as Conqueror",
+      "name": "The War of Svyatoslav's Successors in Rus'",
       "name_ru": "Война наследников Святослава на Руси",
       "source": "https://en.wikipedia.org/wiki/Vladimir_the_Great#Rise_to_power",
       "tags": [
-        "Civil War",
-        "Dynasty",
-        "Crisis",
-        "Kyiv",
-        "Political",
-        "Rus",
         "Slavic",
+        "Kyiv",
+        "Rus",
+        "Civil War",
+        "Crisis",
+        "Dynasty",
+        "Political",
+        "Succession",
         "Vladimir 👑"
       ],
       "type": "military"
@@ -803,13 +808,13 @@
       "name": "Vladimir's Return to Rus'",
       "name_ru": "Возвращение Владимира в Русь",
       "tags": [
+        "Norman",
+        "Slavic",
+        "Novgorod",
+        "Rus",
         "Civil War",
         "Invasion",
         "Mercenaries",
-        "Norman",
-        "Novgorod",
-        "Rus",
-        "Slavic",
         "Vladimir 👑"
       ],
       "type": "military"
@@ -825,12 +830,12 @@
       "name_ru": "Владимир захватывает Полоцк",
       "source": "https://en.wikipedia.org/wiki/Rogneda_of_Polotsk",
       "tags": [
+        "Slavic",
+        "Rus",
         "Civil War",
+        "Rurikid",
         "Dynasty",
         "Cruelty",
-        "Rurikid",
-        "Rus",
-        "Slavic",
         "Vladimir 👑"
       ],
       "type": "military"
@@ -845,13 +850,13 @@
       "name": "Vladimir — Prince of All Rus'",
       "name_ru": "Владимир — князь всея Руси",
       "tags": [
+        "Slavic",
+        "Kyiv",
+        "Rus",
+        "Rurikid",
         "Dynasty",
         "King",
         "Bastard",
-        "Kyiv",
-        "Rurikid",
-        "Rus",
-        "Slavic",
         "Vladimir 👑"
       ],
       "type": "political"
@@ -867,13 +872,13 @@
       "name_ru": "Польский поход Киева",
       "source": "https://en.wikipedia.org/wiki/Cherven_Cities",
       "tags": [
+        "Slavic",
+        "Polish",
+        "Kyiv",
+        "Rus",
         "War",
         "Conquest",
         "Expansion",
-        "Kyiv",
-        "Polish",
-        "Rus",
-        "Slavic",
         "Vladimir 👑"
       ],
       "type": "military"
@@ -889,12 +894,12 @@
       "name_ru": "Языческая реформа Владимира на Руси",
       "source": "https://en.wikipedia.org/wiki/Vladimir_the_Great#Paganism",
       "tags": [
-        "Reform",
-        "Kyiv",
-        "Political",
-        "Religious",
-        "Rus",
         "Slavic",
+        "Kyiv",
+        "Rus",
+        "Religious",
+        "Political",
+        "Reform",
         "Vladimir 👑"
       ],
       "type": "religious"
@@ -910,12 +915,12 @@
       "name_ru": "Фёдор и Иоанн — первые христианские мученики Руси",
       "source": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B5%D0%BE%D0%B4%D0%BE%D1%80_%D0%92%D0%B0%D1%80%D1%8F%D0%B3_%D0%B8_%D1%81%D1%8B%D0%BD_%D0%B5%D0%B3%D0%BE_%D0%98%D0%BE%D0%B0%D0%BD%D0%BD",
       "tags": [
-        "Christian",
-        "Kyiv",
-        "Martyr",
-        "Religious",
-        "Rus",
         "Slavic",
+        "Kyiv",
+        "Rus",
+        "Religious",
+        "Christian",
+        "Martyr",
         "Vladimir 👑"
       ],
       "type": "religious"
@@ -931,14 +936,14 @@
       "name_ru": "Поход киевского князя против ятвягов",
       "source": "https://en.wikipedia.org/wiki/Yotvingians",
       "tags": [
-        "War",
-        "City",
-        "Baltic",
-        "Conquest",
-        "Expansion",
+        "Slavic",
         "Kyiv",
         "Rus",
-        "Slavic",
+        "City",
+        "War",
+        "Conquest",
+        "Baltic",
+        "Expansion",
         "Tribal",
         "Vladimir 👑"
       ],
@@ -955,14 +960,14 @@
       "name_ru": "Испытание вер на Руси",
       "source": "https://en.wikipedia.org/wiki/Christianization_of_Kievan_Rus%27#Vladimir%27s_investigation",
       "tags": [
+        "Byzantine",
         "Roman",
         "Judaic",
-        "Byzantine",
-        "Islamic",
         "Kyiv",
-        "Missionary",
-        "Religious",
         "Rus",
+        "Religious",
+        "Islamic",
+        "Missionary",
         "Vladimir 👑"
       ],
       "type": "religious"
@@ -978,11 +983,11 @@
       "name_ru": "Святополк — князь Туровский",
       "source": "https://en.wikipedia.org/wiki/Sviatopolk_I_of_Kiev",
       "tags": [
-        "Dynasty",
-        "Governor",
-        "Rurikid",
+        "Slavic",
         "Rus",
-        "Slavic"
+        "Rurikid",
+        "Dynasty",
+        "Governor"
       ],
       "type": "historic"
     },
@@ -997,11 +1002,11 @@
       "name_ru": "Мстислав — князь Тмутараканский",
       "source": "https://en.wikipedia.org/wiki/Mstislav_of_Chernigov",
       "tags": [
+        "Slavic",
         "Circassian",
-        "Governor",
-        "Rurikid",
         "Rus",
-        "Slavic"
+        "Rurikid",
+        "Governor"
       ],
       "type": "historic"
     },
@@ -1016,14 +1021,14 @@
       "name_ru": "Князь Ярослав — наместник в Ростове",
       "source": "https://en.wikipedia.org/wiki/Yaroslav_the_Wise",
       "tags": [
-        "Dynasty",
+        "Slavic",
         "Finno-Ugric",
-        "Governor",
         "Kyiv",
         "Rostov-Suzdal",
-        "Rurikid",
         "Rus",
-        "Slavic",
+        "Rurikid",
+        "Dynasty",
+        "Governor",
         "Yaroslav the Wise 👑"
       ],
       "type": "historic"
@@ -1039,15 +1044,15 @@
       "name_ru": "Насаждение христианства в Новгороде",
       "source": "https://en.wikipedia.org/wiki/Baptism_of_Novgorod",
       "tags": [
-        "Civil War",
-        "Battle",
-        "Christian",
-        "Crisis",
+        "Slavic",
         "Kyiv",
         "Novgorod",
-        "Religious",
         "Rus",
-        "Slavic",
+        "Religious",
+        "Christian",
+        "Civil War",
+        "Crisis",
+        "Battle",
         "Vladimir 👑"
       ],
       "type": "religious"
@@ -1063,13 +1068,13 @@
       "name_ru": "Поход киевского князя против белых хорват",
       "source": "https://en.wikipedia.org/wiki/White_Croats",
       "tags": [
-        "City",
-        "Conquest",
-        "Expansion",
+        "Slavic",
         "Kyiv",
         "Rus",
+        "City",
+        "Conquest",
         "Salt",
-        "Slavic",
+        "Expansion",
         "Vladimir 👑"
       ],
       "type": "military"
@@ -1085,17 +1090,17 @@
       "name_ru": "Десятинная церковь в Киеве ",
       "source": "https://en.wikipedia.org/wiki/Desyatynna_Church",
       "tags": [
-        "Roman",
-        "Building 🏠",
-        "Architecture",
         "Byzantine",
-        "Christian",
-        "Innovation",
-        "Kyiv",
-        "Religious",
-        "Rus",
+        "Roman",
         "Slavic",
+        "Kyiv",
+        "Rus",
+        "Religious",
+        "Christian",
+        "Architecture",
+        "Building 🏠",
         "Temple",
+        "Innovation",
         "Vladimir 👑"
       ],
       "type": "cultural"
@@ -1111,15 +1116,15 @@
       "name_ru": "Защита Киева от степи",
       "source": "https://en.wikipedia.org/wiki/Serpent%27s_Wall",
       "tags": [
-        "Building 🏠",
-        "Culture",
-        "Defense",
-        "Fortification",
-        "Kyiv",
-        "Pecheneg",
-        "Rus",
         "Slavic",
         "Turkic",
+        "Pecheneg",
+        "Kyiv",
+        "Rus",
+        "Culture",
+        "Defense",
+        "Building 🏠",
+        "Fortification",
         "Vladimir 👑"
       ],
       "type": "military"
@@ -1135,13 +1140,13 @@
       "name_ru": "Основание Ярославля",
       "source": "https://ru.wikipedia.org/wiki/%D0%AF%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D0%BB%D1%8C",
       "tags": [
-        "City",
-        "Legend",
-        "Expansion",
+        "Slavic",
         "Finno-Ugric",
         "Rostov-Suzdal",
         "Rus",
-        "Slavic",
+        "City",
+        "Legend",
+        "Expansion",
         "Yaroslav the Wise 👑"
       ],
       "type": "military"
@@ -1157,13 +1162,13 @@
       "name_ru": "Ярослав становится князем Новгорода",
       "source": "https://en.wikipedia.org/wiki/Yaroslav_the_Wise",
       "tags": [
-        "Dynasty",
-        "Governor",
+        "Slavic",
         "Kyiv",
         "Novgorod",
-        "Rurikid",
         "Rus",
-        "Slavic",
+        "Rurikid",
+        "Dynasty",
+        "Governor",
         "Yaroslav the Wise 👑"
       ],
       "type": "political"
@@ -1179,15 +1184,15 @@
       "name_ru": "Поход Польши на Червенские города",
       "source": "https://en.wikipedia.org/wiki/Thietmar_of_Merseburg",
       "tags": [
-        "War",
-        "Bolesław I 👑",
+        "Slavic",
+        "Turkic",
         "Germanic",
-        "Mercenaries",
         "Pecheneg",
         "Polish",
         "Rus",
-        "Slavic",
-        "Turkic"
+        "War",
+        "Bolesław I 👑",
+        "Mercenaries"
       ],
       "type": "military"
     },
@@ -1201,12 +1206,12 @@
       "name": "Peace between Poland and Russia",
       "name_ru": "Мир между Польшей и Русью",
       "tags": [
+        "Slavic",
+        "Polish",
+        "Rus",
         "Marriage",
         "Bolesław I 👑",
         "Peace",
-        "Polish",
-        "Rus",
-        "Slavic",
         "Treaty"
       ],
       "type": "political"
@@ -1222,16 +1227,16 @@
       "name_ru": "Новгород прекращает платить дань Киеву",
       "source": "https://en.wikipedia.org/wiki/Yaroslav_the_Wise#Rise_to_the_throne",
       "tags": [
+        "Norman",
+        "Slavic",
+        "Kyiv",
+        "Novgorod",
+        "Rus",
         "Civil War",
         "Crisis",
-        "Kyiv",
-        "Mercenaries",
-        "Norman",
-        "Novgorod",
-        "Political",
         "Rebellion",
-        "Rus",
-        "Slavic",
+        "Political",
+        "Mercenaries",
         "Yaroslav the Wise 👑"
       ],
       "type": "political"
@@ -1246,15 +1251,15 @@
       "name": "The death of Prince Vladimir in Kyiv",
       "name_ru": "Смерть князя Владимира в Киеве",
       "tags": [
-        "Civil War",
-        "Dynasty",
-        "Crisis",
-        "Death",
+        "Slavic",
         "Kyiv",
-        "Political",
-        "Rurikid",
         "Rus",
-        "Slavic"
+        "Civil War",
+        "Crisis",
+        "Rurikid",
+        "Dynasty",
+        "Political",
+        "Death"
       ],
       "type": "historic"
     },
@@ -1269,12 +1274,12 @@
       "name_ru": "Святополк захватывает власть в Киеве",
       "source": "https://en.wikipedia.org/wiki/Sviatopolk_I_of_Kiev",
       "tags": [
-        "Civil War",
-        "King",
-        "Kyiv",
-        "Rurikid",
-        "Rus",
         "Slavic",
+        "Kyiv",
+        "Rus",
+        "Civil War",
+        "Rurikid",
+        "King",
         "Usurpation"
       ],
       "type": "political"
@@ -1290,17 +1295,17 @@
       "name_ru": "Убийство князя Бориса в междуусобице",
       "source": "https://en.wikipedia.org/wiki/Boris_and_Gleb",
       "tags": [
+        "Slavic",
+        "Rus",
+        "Religious",
+        "Christian",
+        "Saint",
         "Civil War",
+        "Rurikid",
         "Dynasty",
         "Uncertain",
-        "Assassination",
-        "Christian",
         "Political",
-        "Religious",
-        "Rurikid",
-        "Rus",
-        "Saint",
-        "Slavic"
+        "Assassination"
       ],
       "type": "religious"
     },
@@ -1315,16 +1320,16 @@
       "name_ru": "Убийство муромского князя Глеба",
       "source": "https://en.wikipedia.org/wiki/Boris_and_Gleb",
       "tags": [
+        "Slavic",
+        "Rus",
+        "Religious",
+        "Christian",
+        "Saint",
         "Civil War",
+        "Rurikid",
         "Dynasty",
         "Uncertain",
-        "Assassination",
-        "Christian",
-        "Religious",
-        "Rurikid",
-        "Rus",
-        "Saint",
-        "Slavic"
+        "Assassination"
       ],
       "type": "historic"
     },
@@ -1339,15 +1344,15 @@
       "name_ru": "Победа князя Ярослава под Любечем",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Liubech",
       "tags": [
-        "Civil War",
-        "Battle",
-        "Kyiv",
         "Norman",
-        "Novgorod",
-        "Pecheneg",
-        "Rus",
         "Slavic",
         "Turkic",
+        "Pecheneg",
+        "Kyiv",
+        "Novgorod",
+        "Rus",
+        "Civil War",
+        "Battle",
         "Yaroslav the Wise 👑"
       ],
       "type": "military"
@@ -1363,15 +1368,15 @@
       "name_ru": "Русско-польское сражение на реке Буг",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_River_Bug",
       "tags": [
+        "Slavic",
+        "Germanic",
+        "Polish",
+        "Kyiv",
+        "Novgorod",
+        "Rus",
         "Civil War",
         "Battle",
         "Bolesław I 👑",
-        "Germanic",
-        "Kyiv",
-        "Novgorod",
-        "Polish",
-        "Rus",
-        "Slavic",
         "Yaroslav the Wise 👑"
       ],
       "type": "military"
@@ -1387,14 +1392,14 @@
       "name_ru": "Поляки занимают Киев",
       "source": "https://en.wikipedia.org/wiki/Boles%C5%82aw_I%27s_intervention_in_the_Kievan_succession_crisis",
       "tags": [
-        "Civil War",
-        "Bolesław I 👑",
-        "Conquest",
-        "Crisis",
-        "Kyiv",
+        "Slavic",
         "Polish",
+        "Kyiv",
         "Rus",
-        "Slavic"
+        "Civil War",
+        "Crisis",
+        "Conquest",
+        "Bolesław I 👑"
       ],
       "type": "military"
     },
@@ -1408,14 +1413,14 @@
       "name": "The Novgorodians do not allow the prince to escape",
       "name_ru": "Новгородцы не дают князю сбежать",
       "tags": [
+        "Norman",
+        "Slavic",
+        "Novgorod",
+        "Rus",
         "Civil War",
         "Crisis",
-        "Norman",
-        "Novgorod",
         "Political",
-        "Rus",
         "Self-sacrifice",
-        "Slavic",
         "Yaroslav the Wise 👑"
       ],
       "type": "historic"
@@ -1431,15 +1436,15 @@
       "name_ru": "Поляки покидают Киев",
       "source": "https://en.wikipedia.org/wiki/Boles%C5%82aw_I%27s_intervention_in_the_Kievan_succession_crisis",
       "tags": [
-        "Civil War",
-        "Bolesław I 👑",
-        "Crisis",
-        "Kyiv",
+        "Slavic",
         "Polish",
-        "Political",
-        "Rebellion",
+        "Kyiv",
         "Rus",
-        "Slavic"
+        "Civil War",
+        "Crisis",
+        "Rebellion",
+        "Political",
+        "Bolesław I 👑"
       ],
       "type": "historic"
     },
@@ -1454,16 +1459,16 @@
       "name_ru": "Ярослав побеждает Святополка Окаянного",
       "source": "https://en.wikipedia.org/wiki/Yaroslav_the_Wise#Rise_to_power",
       "tags": [
-        "Civil War",
-        "Battle",
-        "Dynasty",
-        "Crisis",
         "Norman",
-        "Pecheneg",
-        "Political",
-        "Rurikid",
-        "Rus",
         "Turkic",
+        "Pecheneg",
+        "Rus",
+        "Civil War",
+        "Crisis",
+        "Battle",
+        "Rurikid",
+        "Dynasty",
+        "Political",
         "Yaroslav the Wise 👑"
       ],
       "type": "political"
@@ -1479,15 +1484,15 @@
       "name_ru": "Русская правда — первый письменный свод законов Руси",
       "source": "https://en.wikipedia.org/wiki/Russkaya_Pravda",
       "tags": [
+        "Slavic",
+        "Novgorod",
+        "Rus",
+        "Culture",
+        "Political",
         "Administration",
         "Code",
-        "Culture",
         "Justice",
         "Law",
-        "Novgorod",
-        "Political",
-        "Rus",
-        "Slavic",
         "Text",
         "Yaroslav the Wise 👑"
       ],
@@ -1503,14 +1508,14 @@
       "name": "Famine and the Volkhv Revolt in Suzdal",
       "name_ru": "Голод и восстание волхвов в Суздали",
       "tags": [
-        "Crisis",
-        "Famine",
-        "Political",
-        "Rebellion",
-        "Religious",
+        "Slavic",
         "Rostov-Suzdal",
         "Rus",
-        "Slavic",
+        "Religious",
+        "Crisis",
+        "Rebellion",
+        "Political",
+        "Famine",
         "Yaroslav the Wise 👑"
       ],
       "type": "political"
@@ -1526,13 +1531,13 @@
       "name_ru": "Мстислав приводит войско к Киеву",
       "source": "https://en.wikipedia.org/wiki/Mstislav_of_Chernigov",
       "tags": [
-        "Civil War",
+        "Slavic",
         "Circassian",
-        "Crisis",
         "Kyiv",
-        "Political",
         "Rus",
-        "Slavic"
+        "Civil War",
+        "Crisis",
+        "Political"
       ],
       "type": "historic"
     },
@@ -1547,17 +1552,17 @@
       "name_ru": "Мстислав Удалой побеждает Ярослава у Листвена",
       "source": "https://en.wikipedia.org/wiki/Mstislav_of_Chernigov",
       "tags": [
+        "Khazar",
+        "Norman",
+        "Slavic",
+        "Circassian",
+        "Chernigov",
+        "Rus",
         "Civil War",
         "Battle",
         "Dynasty",
-        "Chernigov",
-        "Circassian",
         "Independence",
-        "Norman",
-        "Rus",
-        "Slavic",
-        "Yaroslav the Wise 👑",
-        "Khazar"
+        "Yaroslav the Wise 👑"
       ],
       "type": "military"
     },
@@ -1572,14 +1577,14 @@
       "name_ru": "Киевский князь разбивает печенегов",
       "source": "https://en.wikipedia.org/wiki/Yaroslav_the_Wise#Military_campaigns",
       "tags": [
-        "War",
-        "Battle",
-        "Kyiv",
-        "Nomads",
-        "Pecheneg",
-        "Rus",
         "Slavic",
         "Turkic",
+        "Pecheneg",
+        "Kyiv",
+        "Rus",
+        "War",
+        "Battle",
+        "Nomads",
         "Yaroslav the Wise 👑"
       ],
       "type": "military"
@@ -1595,16 +1600,17 @@
       "name_ru": "Собор Святой Софии в Киеве",
       "source": "https://en.wikipedia.org/wiki/Saint_Sophia_Cathedral,_Kyiv",
       "tags": [
+        "Byzantine",
         "Greek",
         "Roman",
-        "Building 🏠",
-        "Architecture",
-        "Byzantine",
-        "Christian",
-        "Kyiv",
-        "Religious",
-        "Rus",
         "Slavic",
+        "Kyiv",
+        "Rus",
+        "Religious",
+        "Christian",
+        "Orthodox",
+        "Architecture",
+        "Building 🏠",
         "Temple",
         "Yaroslav the Wise 👑"
       ],
@@ -1617,16 +1623,16 @@
       "era": "AD",
       "latitude": 50.44814529,
       "longitude": 30.51351786,
-      "name": "The Golden Gate of Kyiv — Gateway to the City of Equal Dignity with Constantinople",
+      "name": "The Golden Gate of Kyiv built",
       "name_ru": "Золотые ворота Киева",
       "source": "https://en.wikipedia.org/wiki/Golden_Gate,_Kyiv",
       "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Kyiv",
-        "Political",
-        "Rus",
         "Slavic",
+        "Kyiv",
+        "Rus",
+        "Architecture",
+        "Building 🏠",
+        "Political",
         "Yaroslav the Wise 👑"
       ],
       "type": "cultural"
@@ -1638,18 +1644,18 @@
       "era": "AD",
       "latitude": 50.45826903,
       "longitude": 30.5160284,
-      "name": "Yaroslav the Father-in-Law of Europe — Marriage Diplomacy Across the Continent",
+      "name": "European marriage alliances of Rus'",
       "name_ru": "Европейские брачные союзы Руси",
       "source": "https://en.wikipedia.org/wiki/Yaroslav_the_Wise#Family_and_marriages",
       "tags": [
+        "Slavic",
+        "Kyiv",
+        "Rus",
         "Diplomacy",
         "Marriage",
-        "Dynasty",
-        "Kyiv",
-        "Political",
         "Rurikid",
-        "Rus",
-        "Slavic",
+        "Dynasty",
+        "Political",
         "Yaroslav the Wise 👑"
       ],
       "type": "political"
@@ -1665,17 +1671,17 @@
       "name_ru": "Последний поход Руси на Византию",
       "source": "https://en.wikipedia.org/wiki/Rus%27%E2%80%93Byzantine_War_(1043)",
       "tags": [
+        "Byzantine",
         "Greek",
         "Roman",
-        "War",
-        "Battle",
-        "Diplomacy",
-        "Marriage",
-        "Dynasty",
-        "Byzantine",
-        "Rurikid",
+        "Slavic",
         "Rus",
-        "Slavic"
+        "War",
+        "Diplomacy",
+        "Battle",
+        "Marriage",
+        "Rurikid",
+        "Dynasty"
       ],
       "type": "military"
     },
@@ -1690,14 +1696,14 @@
       "name_ru": "Всеслав Чародей правит Полоцком",
       "source": "https://en.wikipedia.org/wiki/Vseslav_of_Polotsk",
       "tags": [
+        "Slavic",
+        "Polotsk",
+        "Rus",
+        "Kingdom",
         "Dynasty",
         "King",
         "Legend",
-        "Independence",
-        "Kingdom",
-        "Polotsk",
-        "Rus",
-        "Slavic"
+        "Independence"
       ],
       "type": "political"
     },
@@ -1712,15 +1718,16 @@
       "name_ru": "Основание Киево-Печерской лавры",
       "source": "https://en.wikipedia.org/wiki/Kiev_Pechersk_Lavra",
       "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Christian",
-        "Culture",
+        "Slavic",
         "Kyiv",
-        "Monastery",
-        "Religious",
         "Rus",
-        "Slavic"
+        "Religious",
+        "Christian",
+        "Orthodox",
+        "Culture",
+        "Architecture",
+        "Building 🏠",
+        "Monastery"
       ],
       "type": "religious"
     },
@@ -1735,13 +1742,14 @@
       "name_ru": "Иларион — первый русский митрополит Киевской Руси",
       "source": "https://en.wikipedia.org/wiki/Hilarion_of_Kiev",
       "tags": [
-        "Christian",
-        "Independence",
-        "Kyiv",
-        "Political",
-        "Religious",
-        "Rus",
         "Slavic",
+        "Kyiv",
+        "Rus",
+        "Religious",
+        "Christian",
+        "Orthodox",
+        "Political",
+        "Independence",
         "Text",
         "Yaroslav the Wise 👑"
       ],
@@ -1758,15 +1766,16 @@
       "name_ru": "Собор Святой Софии в Новгороде",
       "source": "https://en.wikipedia.org/wiki/Saint_Sophia_Cathedral,_Novgorod",
       "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Christian",
-        "Novgorod",
-        "Religious",
-        "Republic",
-        "Rus",
         "Slavic",
-        "Temple"
+        "Novgorod",
+        "Rus",
+        "Religious",
+        "Christian",
+        "Orthodox",
+        "Architecture",
+        "Building 🏠",
+        "Temple",
+        "Republic"
       ],
       "type": "cultural"
     },
@@ -1781,12 +1790,12 @@
       "name_ru": "Смерть князя Ярослава Мудрого",
       "source": "https://en.wikipedia.org/wiki/Yaroslav_the_Wise#Death_and_succession",
       "tags": [
-        "Dynasty",
-        "Death",
         "Kyiv",
-        "Political",
-        "Rurikid",
         "Rus",
+        "Rurikid",
+        "Dynasty",
+        "Political",
+        "Death",
         "Succession",
         "Yaroslav the Wise 👑"
       ],
@@ -1803,16 +1812,16 @@
       "name_ru": "Софийский собор в Полоцке",
       "source": "https://en.wikipedia.org/wiki/Saint_Sophia_Cathedral,_Polotsk",
       "tags": [
-        "Greek",
-        "Building 🏠",
-        "Architecture",
         "Byzantine",
-        "Christian",
-        "Religious",
-        "Rus",
+        "Greek",
         "Slavic",
-        "Temple",
-        "Orthodox"
+        "Rus",
+        "Religious",
+        "Christian",
+        "Orthodox",
+        "Architecture",
+        "Building 🏠",
+        "Temple"
       ],
       "type": "historic"
     },
@@ -1827,16 +1836,16 @@
       "name_ru": "Половцы разбивают Ярославичей на Альте",
       "source": "https://en.wikipedia.org/wiki/Cuman%E2%80%93Kipchak_confederation",
       "tags": [
-        "War",
-        "Battle",
-        "Crisis",
+        "Slavic",
+        "Turkic",
         "Cuman",
         "Kipchak",
         "Kyiv",
-        "Nomads",
         "Rus",
-        "Slavic",
-        "Turkic"
+        "Crisis",
+        "War",
+        "Battle",
+        "Nomads"
       ],
       "type": "military"
     },
@@ -1851,15 +1860,15 @@
       "name_ru": "Черниговский князь побеждает половцев",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Snovsk",
       "tags": [
-        "War",
-        "Battle",
-        "Chernigov",
+        "Slavic",
+        "Turkic",
         "Cuman",
         "Kipchak",
-        "Nomads",
+        "Chernigov",
         "Rus",
-        "Slavic",
-        "Turkic"
+        "War",
+        "Battle",
+        "Nomads"
       ],
       "type": "military"
     },
@@ -1874,15 +1883,15 @@
       "name_ru": "Киевское восстание и воцарение Всеслава Чародея",
       "source": "https://en.wikipedia.org/wiki/Kiev_uprising_of_1068",
       "tags": [
-        "King",
-        "Crisis",
+        "Slavic",
         "Kyiv",
-        "Overthrow",
-        "Political",
         "Polotsk",
-        "Rebellion",
         "Rus",
-        "Slavic"
+        "Crisis",
+        "Rebellion",
+        "King",
+        "Political",
+        "Overthrow"
       ],
       "type": "historic"
     },
@@ -1897,12 +1906,12 @@
       "name_ru": "Возвращение киевского князя из Польши",
       "source": "https://en.wikipedia.org/wiki/Boles%C5%82aw_II_the_Bold%27s_expedition_to_Kiev_(1069%E2%80%931071)",
       "tags": [
-        "King",
-        "Kyiv",
+        "Slavic",
         "Polish",
-        "Rebellion",
+        "Kyiv",
         "Rus",
-        "Slavic"
+        "Rebellion",
+        "King"
       ],
       "type": "political"
     },
@@ -1917,12 +1926,12 @@
       "name_ru": "Правда Ярославичей",
       "source": "https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%B2%D0%B4%D0%B0_%D0%AF%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D0%B8%D1%87%D0%B5%D0%B9",
       "tags": [
-        "Code",
+        "Slavic",
+        "Rus",
         "Culture",
+        "Code",
         "Justice",
         "Law",
-        "Rus",
-        "Slavic",
         "Text"
       ],
       "type": "political"
@@ -1938,12 +1947,12 @@
       "name_ru": "Составление Изборника Святослава в Киеве",
       "source": "https://en.wikipedia.org/wiki/Sviatoslav%27s_Miscellany",
       "tags": [
-        "Art",
-        "Culture",
+        "Slavic",
         "Kyiv",
         "Rus",
+        "Culture",
+        "Art",
         "Science",
-        "Slavic",
         "Text"
       ],
       "type": "cultural"
@@ -1959,13 +1968,13 @@
       "name_ru": "Составление «Повести временных лет» в Киеве",
       "source": "https://en.wikipedia.org/wiki/Primary_Chronicle",
       "tags": [
-        "Cosmology",
-        "Culture",
-        "History",
-        "Kyiv",
-        "Religious",
-        "Rus",
         "Slavic",
+        "Kyiv",
+        "Rus",
+        "Religious",
+        "Culture",
+        "Cosmology",
+        "History",
         "Text"
       ],
       "type": "cultural"
@@ -1981,13 +1990,13 @@
       "name_ru": "Любечский съезд",
       "source": "https://en.wikipedia.org/wiki/Congress_of_Liubech",
       "tags": [
-        "Reform",
-        "Dynasty",
-        "Crisis",
-        "Kyiv",
-        "Political",
-        "Rus",
         "Slavic",
+        "Kyiv",
+        "Rus",
+        "Crisis",
+        "Dynasty",
+        "Political",
+        "Reform",
         "Succession",
         "Vladimir Monomakh 👑"
       ],
@@ -2004,14 +2013,14 @@
       "name_ru": "Новгородская республика",
       "source": "https://en.wikipedia.org/wiki/Novgorod_Republic",
       "tags": [
-        "Administration",
-        "Culture",
-        "Novgorod",
-        "Political",
-        "Republic",
-        "Rus",
         "Slavic",
-        "Trade"
+        "Novgorod",
+        "Rus",
+        "Culture",
+        "Trade",
+        "Political",
+        "Administration",
+        "Republic"
       ],
       "type": "political"
     },
@@ -2026,12 +2035,12 @@
       "name_ru": "Основание города Владимир",
       "source": "https://en.wikipedia.org/wiki/Vladimir,_Russia",
       "tags": [
-        "City",
-        "Fortification",
+        "Slavic",
         "Kyiv",
         "Rostov-Suzdal",
         "Rus",
-        "Slavic",
+        "City",
+        "Fortification",
         "Vladimir Monomakh 👑"
       ],
       "type": "historic"
@@ -2046,13 +2055,13 @@
       "name": "Alliance of the Russian Princes and the Cumans",
       "name_ru": "Союз Мономашичей и половцев",
       "tags": [
-        "Marriage",
-        "Alliance",
+        "Turkic",
         "Cuman",
         "Kipchak",
         "Kyiv",
         "Rus",
-        "Turkic",
+        "Alliance",
+        "Marriage",
         "Vladimir Monomakh 👑",
         "Yury Dolgoruky 👑"
       ],
@@ -2069,15 +2078,15 @@
       "name_ru": "Поход Владимира Мономаха на Дон",
       "source": "https://en.wikipedia.org/wiki/Vladimir_II_Monomakh#Campaigns_against_the_Cumans",
       "tags": [
-        "War",
-        "Battle",
-        "Christian",
+        "Turkic",
         "Cuman",
-        "Expedition",
         "Kipchak",
         "Kyiv",
         "Rus",
-        "Turkic",
+        "Christian",
+        "War",
+        "Battle",
+        "Expedition",
         "Vladimir Monomakh 👑"
       ],
       "type": "military"
@@ -2093,11 +2102,11 @@
       "name_ru": "Юрий Долгорукий — князь Ростова",
       "source": "https://en.wikipedia.org/wiki/Yuri_Dolgorukiy",
       "tags": [
-        "Governor",
-        "Rostov-Suzdal",
-        "Rurikid",
-        "Rus",
         "Slavic",
+        "Rostov-Suzdal",
+        "Rus",
+        "Rurikid",
+        "Governor",
         "Yury Dolgoruky 👑"
       ],
       "type": "political"
@@ -2109,18 +2118,18 @@
       "era": "AD",
       "latitude": 50.45826903,
       "longitude": 30.5160284,
-      "name": "Vladimir Monomakh — The Last Unifier and His Instruction to His Sons",
+      "name": "Vladimir Monomakh — The Last Unifier of Rus'",
       "name_ru": "Владимир Мономах — последний объединитель Руси",
       "source": "https://en.wikipedia.org/wiki/Vladimir_II_Monomakh",
       "tags": [
-        "Reform",
+        "Slavic",
+        "Rus",
+        "Crisis",
+        "Rurikid",
         "Dynasty",
         "King",
-        "Crisis",
         "Political",
-        "Rurikid",
-        "Rus",
-        "Slavic",
+        "Reform",
         "Text",
         "Vladimir Monomakh 👑"
       ],
@@ -2137,16 +2146,16 @@
       "name_ru": "Мстислав Великий — последний князь единой Руси",
       "source": "https://en.wikipedia.org/wiki/Mstislav_I_of_Kiev",
       "tags": [
+        "British",
+        "Slavic",
+        "Kyiv",
+        "Rus",
+        "Crisis",
+        "Rurikid",
         "Dynasty",
         "King",
-        "British",
-        "Crisis",
-        "Decline",
-        "Kyiv",
         "Political",
-        "Rurikid",
-        "Rus",
-        "Slavic"
+        "Decline"
       ],
       "type": "political"
     },
@@ -2161,11 +2170,11 @@
       "name_ru": "Суздаль — столица Ростовско-Суздальского княжества",
       "source": "https://en.wikipedia.org/wiki/Suzdal",
       "tags": [
-        "Capital",
-        "Kingdom",
+        "Slavic",
         "Rostov-Suzdal",
         "Rus",
-        "Slavic",
+        "Capital",
+        "Kingdom",
         "Yury Dolgoruky 👑"
       ],
       "type": "historic"
@@ -2181,10 +2190,10 @@
       "name_ru": "Обособление Рязанского княжества",
       "source": "https://en.wikipedia.org/wiki/Principality_of_Ryazan",
       "tags": [
-        "Kingdom",
-        "Rus",
-        "Ryazan",
         "Slavic",
+        "Ryazan",
+        "Rus",
+        "Kingdom",
         "Trade"
       ],
       "type": "historic"
@@ -2200,13 +2209,13 @@
       "name_ru": "Раздробленность Киевской Руси",
       "source": "https://en.wikipedia.org/wiki/Rus%27_principalities",
       "tags": [
-        "Culture",
-        "Fragmentation",
-        "Kingdom",
+        "Slavic",
         "Kyiv",
-        "Political",
         "Rus",
-        "Slavic"
+        "Kingdom",
+        "Culture",
+        "Political",
+        "Fragmentation"
       ],
       "type": "political"
     },
@@ -2221,12 +2230,12 @@
       "name_ru": "Первое упоминание Москвы в летописи",
       "source": "https://en.wikipedia.org/wiki/History_of_Moscow",
       "tags": [
-        "City",
-        "Rostov-Suzdal",
-        "Rurikid",
-        "Rus",
-        "Settlement",
         "Slavic",
+        "Rostov-Suzdal",
+        "Rus",
+        "City",
+        "Rurikid",
+        "Settlement",
         "Yury Dolgoruky 👑"
       ],
       "type": "historic"
@@ -2242,15 +2251,15 @@
       "name_ru": "Юрий Долгорукий захватывает Киев",
       "source": "https://en.wikipedia.org/wiki/Yuri_Dolgorukiy",
       "tags": [
-        "War",
-        "Conquest",
+        "Slavic",
+        "Turkic",
         "Cuman",
         "Kipchak",
         "Kyiv",
         "Rostov-Suzdal",
         "Rus",
-        "Slavic",
-        "Turkic",
+        "War",
+        "Conquest",
         "Yury Dolgoruky 👑"
       ],
       "type": "military"
@@ -2265,16 +2274,16 @@
       "name": "Izyaslav expels Yuri Dolgoruky from Kyiv",
       "name_ru": "Изяслав изгоняет Юрия Долгорукого из Киева",
       "tags": [
-        "War",
-        "Battle",
-        "Chernigov",
+        "Slavic",
+        "Turkic",
         "Cuman",
         "Kipchak",
+        "Chernigov",
         "Kyiv",
         "Rostov-Suzdal",
         "Rus",
-        "Slavic",
-        "Turkic",
+        "War",
+        "Battle",
         "Yury Dolgoruky 👑"
       ],
       "type": "military"
@@ -2290,14 +2299,14 @@
       "name_ru": "Юрий Долгорукий захватывает Киев",
       "source": "https://en.wikipedia.org/wiki/Yuri_Dolgorukiy",
       "tags": [
-        "Conquest",
+        "Slavic",
+        "Turkic",
         "Cuman",
         "Kipchak",
         "Kyiv",
         "Rostov-Suzdal",
         "Rus",
-        "Slavic",
-        "Turkic",
+        "Conquest",
         "Yury Dolgoruky 👑"
       ],
       "type": "military"
@@ -2313,14 +2322,14 @@
       "name_ru": "Побег Андрея Боголюбского из Вышгорода",
       "source": "https://en.wikipedia.org/wiki/Andrey_Bogolyubsky",
       "tags": [
+        "Slavic",
+        "Kyiv",
+        "Rostov-Suzdal",
+        "Rus",
+        "Rurikid",
         "Dynasty",
         "Andrey Bogolyubsky 👑",
         "Escape",
-        "Kyiv",
-        "Rostov-Suzdal",
-        "Rurikid",
-        "Rus",
-        "Slavic",
         "Theft"
       ],
       "type": "historic"
@@ -2336,14 +2345,14 @@
       "name_ru": "Смерть Юрия Долгорукого в Киеве",
       "source": "https://en.wikipedia.org/wiki/Yuri_Dolgorukiy",
       "tags": [
+        "Slavic",
+        "Kyiv",
+        "Rostov-Suzdal",
+        "Rus",
+        "Rurikid",
         "Dynasty",
         "King",
         "Death",
-        "Kyiv",
-        "Rostov-Suzdal",
-        "Rurikid",
-        "Rus",
-        "Slavic",
         "Yury Dolgoruky 👑"
       ],
       "type": "historic"
@@ -2359,13 +2368,13 @@
       "name_ru": "Владимир — столица Владимиро-Суздальского княжества",
       "source": "https://en.wikipedia.org/wiki/Andrey_Bogolyubsky",
       "tags": [
-        "Andrey Bogolyubsky 👑",
-        "Authoritarianism",
+        "Slavic",
+        "Vladimir-Suzdal",
+        "Rus",
         "Capital",
         "Kingdom",
-        "Rus",
-        "Slavic",
-        "Vladimir-Suzdal"
+        "Andrey Bogolyubsky 👑",
+        "Authoritarianism"
       ],
       "type": "historic"
     },
@@ -2380,16 +2389,17 @@
       "name_ru": "Успенский собор Владимира",
       "source": "https://en.wikipedia.org/wiki/Dormition_Cathedral,_Vladimir",
       "tags": [
-        "Building 🏠",
-        "Andrey Bogolyubsky 👑",
-        "Architecture",
-        "Christian",
-        "Culture",
-        "Religious",
-        "Rus",
         "Slavic",
+        "Vladimir-Suzdal",
+        "Rus",
+        "Religious",
+        "Christian",
+        "Orthodox",
+        "Culture",
+        "Architecture",
+        "Building 🏠",
         "Temple",
-        "Vladimir-Suzdal"
+        "Andrey Bogolyubsky 👑"
       ],
       "type": "cultural"
     },
@@ -2404,16 +2414,17 @@
       "name_ru": "Церковь Покрова на Нерли",
       "source": "https://en.wikipedia.org/wiki/Church_of_the_Intercession_on_the_Nerl",
       "tags": [
-        "Building 🏠",
-        "Andrey Bogolyubsky 👑",
-        "Architecture",
-        "Art",
-        "Christian",
-        "Religious",
-        "Rus",
         "Slavic",
+        "Vladimir-Suzdal",
+        "Rus",
+        "Religious",
+        "Christian",
+        "Orthodox",
+        "Art",
+        "Architecture",
+        "Building 🏠",
         "Temple",
-        "Vladimir-Suzdal"
+        "Andrey Bogolyubsky 👑"
       ],
       "type": "cultural"
     },
@@ -2428,14 +2439,14 @@
       "name_ru": "Владимирское княжество разоряет Киев",
       "source": "https://en.wikipedia.org/wiki/Sack_of_Kiev_(1169)",
       "tags": [
+        "Slavic",
+        "Kyiv",
+        "Vladimir-Suzdal",
+        "Rus",
         "War",
         "Conquest",
-        "Decline",
-        "Kyiv",
         "Pillage",
-        "Rus",
-        "Slavic",
-        "Vladimir-Suzdal"
+        "Decline"
       ],
       "type": "military"
     },
@@ -2450,15 +2461,15 @@
       "name_ru": "Князь Андрей Боголюбский убит боярами",
       "source": "https://en.wikipedia.org/wiki/Andrey_Bogolyubsky",
       "tags": [
+        "Slavic",
+        "Vladimir-Suzdal",
+        "Rus",
+        "Rurikid",
         "Dynasty",
+        "Death",
         "Andrey Bogolyubsky 👑",
         "Assassination",
-        "Conspiracy",
-        "Death",
-        "Rurikid",
-        "Rus",
-        "Slavic",
-        "Vladimir-Suzdal"
+        "Conspiracy"
       ],
       "type": "political"
     },
@@ -2473,13 +2484,13 @@
       "name_ru": "Кризис наследования во Владимире",
       "source": "https://en.wikipedia.org/wiki/1174%E2%80%931177_Suzdalian_war_of_succession",
       "tags": [
+        "Slavic",
+        "Vladimir-Suzdal",
+        "Rus",
         "Civil War",
         "Crisis",
-        "Political",
         "Rebellion",
-        "Rus",
-        "Slavic",
-        "Vladimir-Suzdal"
+        "Political"
       ],
       "type": "military"
     },
@@ -2494,13 +2505,13 @@
       "name_ru": "Всеволод Большое Гнездо — князь Владимира",
       "source": "https://en.wikipedia.org/wiki/Vsevolod_III_of_Vladimir",
       "tags": [
-        "Dynasty",
-        "Culture",
-        "Political",
-        "Rurikid",
-        "Rus",
         "Slavic",
-        "Vladimir-Suzdal"
+        "Vladimir-Suzdal",
+        "Rus",
+        "Culture",
+        "Rurikid",
+        "Dynasty",
+        "Political"
       ],
       "type": "political"
     },
@@ -2515,13 +2526,13 @@
       "name_ru": "Написано «Слово о полку Игореве»",
       "source": "https://en.wikipedia.org/wiki/The_Tale_of_Igor%27s_Campaign",
       "tags": [
-        "Culture",
+        "Slavic",
         "Cuman",
         "Kyiv",
+        "Rus",
+        "Culture",
         "Literature",
         "Poetry",
-        "Rus",
-        "Slavic",
         "Text"
       ],
       "type": "cultural"
@@ -2537,12 +2548,12 @@
       "name_ru": "Создание Галицко-Волынского княжества",
       "source": "https://en.wikipedia.org/wiki/Kingdom_of_Galicia%E2%80%93Volhynia",
       "tags": [
-        "Foundation",
+        "Slavic",
+        "Rus",
         "Galicia",
         "Kingdom",
+        "Foundation",
         "Political",
-        "Rus",
-        "Slavic",
         "Unification"
       ],
       "type": "political"
@@ -2558,14 +2569,14 @@
       "name_ru": "Новгородские берестяные грамоты",
       "source": "https://en.wikipedia.org/wiki/Birch_bark_manuscript",
       "tags": [
-        "Culture",
+        "Slavic",
         "Germanic",
-        "Literature",
         "Novgorod",
         "Rus",
-        "Slavic",
-        "Trade",
-        "Writing"
+        "Culture",
+        "Literature",
+        "Writing",
+        "Trade"
       ],
       "type": "cultural"
     },
@@ -2580,16 +2591,16 @@
       "name_ru": "Киево-Печерский патерик — жития святых Пещерного монастыря",
       "source": "https://en.wikipedia.org/wiki/Paterikon_of_the_Caves_Monastery",
       "tags": [
-        "Legend",
-        "Christian",
-        "Culture",
-        "Kyiv",
-        "Literature",
-        "Religious",
-        "Rus",
         "Slavic",
-        "Text",
-        "Orthodox"
+        "Kyiv",
+        "Rus",
+        "Religious",
+        "Christian",
+        "Orthodox",
+        "Culture",
+        "Literature",
+        "Legend",
+        "Text"
       ],
       "type": "religious"
     },
@@ -2604,17 +2615,17 @@
       "name_ru": "Первое столкновение Руси с монголами на Калке",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Kalka_River",
       "tags": [
-        "War",
-        "Battle",
+        "Slavic",
+        "Turkic",
         "Cuman",
-        "Galicia",
-        "Invasion",
         "Kipchak",
         "Mongolian",
-        "Nomads",
         "Rus",
-        "Slavic",
-        "Turkic"
+        "Galicia",
+        "War",
+        "Battle",
+        "Invasion",
+        "Nomads"
       ],
       "type": "military"
     },
@@ -2629,13 +2640,13 @@
       "name_ru": "Начало монгольского вторжения в Русь",
       "source": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Kievan_Rus%27",
       "tags": [
-        "War",
-        "Batu 👤",
-        "Crisis",
-        "Invasion",
         "Mongolian",
-        "Nomads",
-        "Political"
+        "Crisis",
+        "War",
+        "Invasion",
+        "Political",
+        "Batu 👤",
+        "Nomads"
       ],
       "type": "political"
     },
@@ -2646,21 +2657,21 @@
       "era": "AD",
       "latitude": 54.39947335,
       "longitude": 40.42835712,
-      "name": "Ryazan Destroyed — The Mongol Invasion Begins",
+      "name": "Ryazan Destroyed by the Mongol Invasion",
       "name_ru": "Монгольское вторжение разрушает Рязань",
       "source": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Kievan_Rus%27#Destruction_of_Ryazan",
       "tags": [
+        "Slavic",
+        "Mongolian",
+        "Ryazan",
+        "Rus",
         "War",
         "Battle",
-        "Legend",
-        "Batu 👤",
         "Destruction",
         "Invasion",
-        "Mongolian",
-        "Nomads",
-        "Rus",
-        "Ryazan",
-        "Slavic"
+        "Legend",
+        "Batu 👤",
+        "Nomads"
       ],
       "type": "military"
     },
@@ -2671,20 +2682,20 @@
       "era": "AD",
       "latitude": 56.1290169,
       "longitude": 40.40785432,
-      "name": "The Destruction of Vladimir-Suzdal — Fourteen Cities in Four Months",
+      "name": "Mongols destroy Vladimir-Suzdal Principality",
       "name_ru": "Монголы уничтожают Владимиро-Суздальское княжество",
       "source": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Kievan_Rus%27#Conquest_of_Vladimir-Suzdal",
       "tags": [
+        "Mongolian",
+        "Vladimir-Suzdal",
+        "Rus",
         "War",
         "Battle",
-        "Batu 👤",
-        "Cruelty",
         "Destruction",
         "Invasion",
-        "Mongolian",
-        "Nomads",
-        "Rus",
-        "Vladimir-Suzdal"
+        "Batu 👤",
+        "Cruelty",
+        "Nomads"
       ],
       "type": "military"
     },
@@ -2699,12 +2710,12 @@
       "name_ru": "Монголы не доходят до Новгорода",
       "source": "https://ru.wikipedia.org/wiki/%D0%98%D0%B3%D0%BD%D0%B0%D1%87_%D0%9A%D1%80%D0%B5%D1%81%D1%82",
       "tags": [
-        "Batu 👤",
-        "Invasion",
+        "Slavic",
         "Mongolian",
         "Novgorod",
         "Rus",
-        "Slavic"
+        "Invasion",
+        "Batu 👤"
       ],
       "type": "historic"
     },
@@ -2719,15 +2730,15 @@
       "name_ru": "Монголы разоряют Южную Русь",
       "source": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Kievan_Rus%27#Invasion_of_southern_Rus%27",
       "tags": [
-        "War",
-        "Chernigov",
-        "Destruction",
-        "Galicia",
-        "Invasion",
+        "Slavic",
         "Mongolian",
-        "Nomads",
+        "Chernigov",
         "Rus",
-        "Slavic"
+        "Galicia",
+        "War",
+        "Destruction",
+        "Invasion",
+        "Nomads"
       ],
       "type": "military"
     },
@@ -2742,14 +2753,15 @@
       "name_ru": "Александр Невский побеждает шведов на Неве",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Neva",
       "tags": [
-        "War",
-        "Battle",
-        "Alexander Nevsky 👤",
-        "Catholic",
-        "Christian",
+        "Norman",
+        "Swedish",
         "Novgorod",
         "Rus",
-        "Swedish"
+        "Christian",
+        "Catholic",
+        "War",
+        "Battle",
+        "Alexander Nevsky 👤"
       ],
       "type": "military"
     },
@@ -2760,21 +2772,21 @@
       "era": "AD",
       "latitude": 50.45826903,
       "longitude": 30.5160284,
-      "name": "Kyiv Falls to the Mongols — The Mother of Cities in Ashes",
+      "name": "Kyiv Falls to the Mongols — The Mother of Russian Cities in Ashes",
       "name_ru": "Киев падает под ударами монголов",
       "source": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Kievan_Rus%27#Siege_of_Kiev",
       "tags": [
+        "Slavic",
+        "Mongolian",
+        "Kyiv",
+        "Rus",
         "War",
         "Battle",
-        "Batu 👤",
         "Destruction",
-        "Fall",
         "Invasion",
-        "Kyiv",
-        "Mongolian",
-        "Nomads",
-        "Rus",
-        "Slavic"
+        "Batu 👤",
+        "Fall",
+        "Nomads"
       ],
       "type": "military"
     },
@@ -2789,12 +2801,12 @@
       "name_ru": "Монголы достигают сердца Европы",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Legnica_(1241)",
       "tags": [
+        "Mongolian",
+        "Hungary",
         "War",
         "Battle",
-        "Batu 👤",
-        "Hungary",
         "Invasion",
-        "Mongolian",
+        "Batu 👤",
         "Nomads"
       ],
       "type": "military"
@@ -2806,22 +2818,22 @@
       "era": "AD",
       "latitude": 58.31166135,
       "longitude": 27.59799957,
-      "name": "Battle on the Ice — Alexander Nevsky Halts the Western Crusade",
+      "name": "Alexander Nevsky defeats the Crusaders on Lake Peipus",
       "name_ru": "Александр Невский разбивает крестоносцев на Чудском озере",
       "source": "https://en.wikipedia.org/wiki/Battle_on_the_Ice",
       "tags": [
+        "Slavic",
+        "Germanic",
+        "Novgorod",
+        "Rus",
+        "Christian",
+        "Catholic",
+        "Crusade",
         "War",
         "Battle",
         "Alexander Nevsky 👤",
-        "Catholic",
-        "Christian",
-        "Germanic",
         "Livonian",
-        "Novgorod",
-        "Rus",
-        "Slavic",
-        "Teutons",
-        "Crusade"
+        "Teutons"
       ],
       "type": "military"
     },
@@ -2836,12 +2848,12 @@
       "name_ru": "Основание Золотой Орды",
       "source": "https://en.wikipedia.org/wiki/Golden_Horde",
       "tags": [
-        "Administration",
-        "Batu 👤",
         "Golden Horde",
         "Mongolian",
-        "Political",
         "Rus",
+        "Political",
+        "Administration",
+        "Batu 👤",
         "Tribute"
       ],
       "type": "political"
@@ -2857,13 +2869,13 @@
       "name_ru": "Владимирский князь получает ярлык на княжение",
       "source": "https://en.wikipedia.org/wiki/Yaroslav_II_of_Vladimir",
       "tags": [
-        "Batu 👤",
         "Golden Horde",
         "Mongolian",
-        "Political",
+        "Vladimir-Suzdal",
         "Rus",
-        "Vassalage",
-        "Vladimir-Suzdal"
+        "Political",
+        "Batu 👤",
+        "Vassalage"
       ],
       "type": "political"
     },
@@ -2878,17 +2890,17 @@
       "name_ru": "Владимирский князь отравлен в Каракоруме",
       "source": "https://en.wikipedia.org/wiki/Yaroslav_II_of_Vladimir#Death",
       "tags": [
-        "Dynasty",
-        "Assassination",
-        "Death",
-        "Disease",
+        "Slavic",
         "Golden Horde",
         "Mongolian",
-        "Political",
-        "Rurikid",
+        "Vladimir-Suzdal",
         "Rus",
-        "Slavic",
-        "Vladimir-Suzdal"
+        "Rurikid",
+        "Dynasty",
+        "Political",
+        "Death",
+        "Assassination",
+        "Disease"
       ],
       "type": "political"
     },
@@ -2903,11 +2915,11 @@
       "name_ru": "Путешествие Александра Невского в Каракорум",
       "source": "https://en.wikipedia.org/wiki/Alexander_Nevsky#Relations_with_the_Mongols",
       "tags": [
-        "Alexander Nevsky 👤",
         "Golden Horde",
         "Mongolian",
+        "Rus",
         "Political",
-        "Rus"
+        "Alexander Nevsky 👤"
       ],
       "type": "political"
     },
@@ -2922,13 +2934,14 @@
       "name_ru": "Двоеверие на Руси",
       "source": "https://en.wikipedia.org/wiki/Dvoeverie",
       "tags": [
-        "Christian",
-        "Culture",
-        "Pagan",
-        "Religious",
-        "Rus",
         "Slavic",
-        "Syncretism"
+        "Rus",
+        "Religious",
+        "Christian",
+        "Pagan",
+        "Syncretism",
+        "Orthodox",
+        "Culture"
       ],
       "type": "religious"
     },
@@ -2942,13 +2955,13 @@
       "name": "Alexander Nevsky refuses the Pope's offer",
       "name_ru": "Александр Невский отказывается от предложения Папы Римского",
       "tags": [
-        "Diplomacy",
-        "Alexander Nevsky 👤",
-        "Catholic",
-        "Christian",
         "Novgorod",
+        "Rus",
         "Papacy",
-        "Rus"
+        "Christian",
+        "Catholic",
+        "Diplomacy",
+        "Alexander Nevsky 👤"
       ],
       "type": "political"
     },
@@ -2963,13 +2976,13 @@
       "name_ru": "Александр Невский получает ярлык на княжение во Владимире",
       "source": "https://en.wikipedia.org/wiki/Alexander_Nevsky",
       "tags": [
-        "King",
-        "Alexander Nevsky 👤",
         "Golden Horde",
         "Mongolian",
-        "Political",
+        "Vladimir-Suzdal",
         "Rus",
-        "Vladimir-Suzdal"
+        "King",
+        "Political",
+        "Alexander Nevsky 👤"
       ],
       "type": "political"
     },
@@ -2984,14 +2997,14 @@
       "name_ru": "Галицкая Русь заключает союз с западом",
       "source": "https://en.wikipedia.org/wiki/Danylo_of_Galicia",
       "tags": [
-        "Alliance",
-        "Catholic",
-        "Galicia",
-        "Kingdom",
-        "Papacy",
-        "Political",
+        "Slavic",
         "Rus",
-        "Slavic"
+        "Galicia",
+        "Papacy",
+        "Kingdom",
+        "Catholic",
+        "Alliance",
+        "Political"
       ],
       "type": "political"
     },
@@ -3006,14 +3019,14 @@
       "name_ru": "Монгольская перепись населения в Новгороде",
       "source": "https://en.wikipedia.org/wiki/Alexander_Nevsky#Relations_with_the_Mongols",
       "tags": [
-        "Alexander Nevsky 👤",
-        "Crisis",
         "Golden Horde",
         "Mongolian",
         "Novgorod",
-        "Political",
+        "Rus",
+        "Crisis",
         "Rebellion",
-        "Rus"
+        "Political",
+        "Alexander Nevsky 👤"
       ],
       "type": "political"
     },
@@ -3028,16 +3041,16 @@
       "name_ru": "Даниил — первый московский князь",
       "source": "https://en.wikipedia.org/wiki/Daniil_Alexandrovich",
       "tags": [
-        "Dynasty",
-        "Foundation",
+        "Slavic",
         "Golden Horde",
-        "Kingdom",
         "Moscow",
-        "Political",
-        "Rise",
-        "Rurikid",
         "Rus",
-        "Slavic"
+        "Kingdom",
+        "Foundation",
+        "Rurikid",
+        "Dynasty",
+        "Political",
+        "Rise"
       ],
       "type": "political"
     },
@@ -3052,16 +3065,16 @@
       "name_ru": "Смерть князя Александра Невского",
       "source": "https://en.wikipedia.org/wiki/Alexander_Nevsky#Death_and_canonization",
       "tags": [
-        "Dynasty",
-        "Alexander Nevsky 👤",
-        "Christian",
-        "Death",
         "Golden Horde",
-        "Political",
-        "Religious",
-        "Rurikid",
         "Rus",
-        "Saint"
+        "Religious",
+        "Christian",
+        "Saint",
+        "Rurikid",
+        "Dynasty",
+        "Political",
+        "Death",
+        "Alexander Nevsky 👤"
       ],
       "type": "religious"
     },
@@ -3076,15 +3089,15 @@
       "name_ru": "Монгольское наследие в России",
       "source": "https://en.wikipedia.org/wiki/Mongol_Empire#Legacy",
       "tags": [
-        "Administration",
-        "Cultural Continuity",
-        "Culture",
+        "Turkic",
         "Golden Horde",
-        "Language",
         "Mongolian",
-        "Political",
         "Rus",
-        "Turkic"
+        "Culture",
+        "Language",
+        "Cultural Continuity",
+        "Political",
+        "Administration"
       ],
       "type": "cultural"
     },
@@ -3099,11 +3112,11 @@
       "name_ru": "Система сбора налогов в Золотой Орде",
       "source": "https://en.wikipedia.org/wiki/Baskak",
       "tags": [
-        "Administration",
         "Golden Horde",
         "Mongolian",
-        "Political",
         "Rus",
+        "Political",
+        "Administration",
         "Taxes",
         "Tribute"
       ],
@@ -3116,16 +3129,17 @@
       "era": "AD",
       "latitude": 55.75156575,
       "longitude": 37.61805654,
-      "name": "The Metropolitan Moves to Moscow — The Third Rome Takes Shape",
+      "name": "The Russian Metropolitan Moves to Moscow",
       "name_ru": "Русский митрополит переезжает в Москву",
       "source": "https://en.wikipedia.org/wiki/Third_Rome",
       "tags": [
-        "Christian",
+        "Slavic",
         "Moscow",
-        "Political",
-        "Religious",
         "Rus",
-        "Orthodox"
+        "Religious",
+        "Christian",
+        "Orthodox",
+        "Political"
       ],
       "type": "religious"
     }

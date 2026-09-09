@@ -12,10 +12,10 @@
       "name_ru": "Арени: древнейшая винодельня",
       "source": "https://en.wikipedia.org/wiki/Areni-1_winery",
       "tags": [
-        "Agriculture",
         "Caucasian",
         "Culture",
         "Neolithic",
+        "Agriculture",
         "Wine"
       ],
       "type": "cultural"
@@ -32,8 +32,8 @@
       "source": "https://en.wikipedia.org/wiki/Armenia#Ancient_history",
       "tags": [
         "Armenian",
-        "Culture",
         "Foundation",
+        "Culture",
         "Migration"
       ],
       "type": "historic"
@@ -51,8 +51,8 @@
       "tags": [
         "Persian",
         "Armenian",
-        "Dynasty",
         "Kingdom",
+        "Dynasty",
         "Orontid"
       ],
       "type": "political"
@@ -89,11 +89,11 @@
       "tags": [
         "Persian",
         "Armenian",
-        "Betrayal",
         "Crisis",
-        "Orontid",
+        "Rebellion",
         "Political",
-        "Rebellion"
+        "Betrayal",
+        "Orontid"
       ],
       "type": "political"
     },
@@ -110,10 +110,10 @@
       "tags": [
         "Greek",
         "Armenian",
+        "Kingdom",
         "Diadochi",
         "Dynasty",
         "Independence",
-        "Kingdom",
         "Orontid"
       ],
       "type": "political"
@@ -130,9 +130,9 @@
       "source": "https://en.wikipedia.org/wiki/Yervandashat",
       "tags": [
         "Armenian",
+        "Capital",
         "City",
         "Dynasty",
-        "Capital",
         "Orontid"
       ],
       "type": "historic"
@@ -169,12 +169,12 @@
       "tags": [
         "Armenian",
         "Seleucid",
+        "Kingdom",
+        "Foundation",
         "Dynasty",
         "King",
         "Artaxiad",
-        "Foundation",
-        "Independence",
-        "Kingdom"
+        "Independence"
       ],
       "type": "political"
     },
@@ -205,10 +205,10 @@
       "source": "https://en.wikipedia.org/wiki/Artaxata",
       "tags": [
         "Armenian",
-        "City",
-        "Legend",
         "Capital",
-        "Fortification"
+        "City",
+        "Fortification",
+        "Legend"
       ],
       "type": "historic"
     },
@@ -241,11 +241,11 @@
       "tags": [
         "Persian",
         "Armenian",
-        "Culture",
-        "Mother of God",
-        "Pagan",
         "Religious",
+        "Pagan",
         "Syncretism",
+        "Mother of God",
+        "Culture",
         "Temple"
       ],
       "type": "religious"
@@ -282,9 +282,9 @@
       "tags": [
         "Armenian",
         "War",
+        "Conquest",
         "Annexation",
         "Artaxiad",
-        "Conquest",
         "Tigranes the Great 👤"
       ],
       "type": "military"
@@ -302,8 +302,8 @@
         "Armenian",
         "City",
         "Architecture",
-        "Engineering ⚙️",
-        "Fortification"
+        "Fortification",
+        "Engineering ⚙️"
       ],
       "type": "historic"
     },
@@ -339,12 +339,12 @@
       "source": "https://en.wikipedia.org/wiki/Tigranes_the_Great",
       "tags": [
         "Armenian",
+        "Georgian",
+        "Kartli",
         "War",
         "Artaxiad",
         "Tigranes the Great 👤",
-        "Vassalage",
-        "Georgian",
-        "Kartli"
+        "Vassalage"
       ],
       "type": "military"
     },
@@ -360,8 +360,8 @@
       "source": "https://en.wikipedia.org/wiki/Tigranes_the_Great",
       "tags": [
         "Armenian",
-        "War",
         "Caucasian Albania",
+        "War",
         "Tigranes the Great 👤",
         "Vassalage"
       ],
@@ -420,8 +420,8 @@
         "Armenian",
         "Parthian",
         "War",
-        "Artaxiad",
         "Conquest",
+        "Artaxiad",
         "Peace",
         "Tigranes the Great 👤"
       ],
@@ -457,9 +457,9 @@
       "source": "https://en.wikipedia.org/wiki/Tigranocerta",
       "tags": [
         "Armenian",
-        "Building 🏠",
+        "Capital",
         "Architecture",
-        "Capital"
+        "Building 🏠"
       ],
       "type": "historic"
     },
@@ -554,12 +554,12 @@
       "source": "https://en.wikipedia.org/wiki/Artavasdes_II_of_Armenia",
       "tags": [
         "Armenian",
+        "Culture",
+        "Art",
+        "Theater",
         "Dynasty",
         "King",
-        "Art",
-        "Artaxiad",
-        "Culture",
-        "Theater"
+        "Artaxiad"
       ],
       "type": "cultural"
     },
@@ -575,10 +575,10 @@
       "source": "https://en.wikipedia.org/wiki/Vahagn",
       "tags": [
         "Armenian",
-        "Legend",
-        "Cosmology",
         "Culture",
         "Literature",
+        "Cosmology",
+        "Legend",
         "Text"
       ],
       "type": "cultural"
@@ -597,14 +597,14 @@
         "Greek",
         "Persian",
         "Armenian",
-        "Building 🏠",
-        "Anatolia",
-        "Architecture",
-        "Pagan",
         "Religious",
+        "Pagan",
         "Syncretism",
+        "Architecture",
+        "Building 🏠",
         "Temple",
-        "Tomb"
+        "Tomb",
+        "Anatolia"
       ],
       "type": "cultural"
     },
@@ -621,9 +621,9 @@
       "tags": [
         "Roman",
         "Armenian",
+        "Conquest",
         "King",
         "Betrayal",
-        "Conquest",
         "Mark Antony 👤"
       ],
       "type": "political"
@@ -664,9 +664,9 @@
         "Armenian",
         "Parthian",
         "Diplomacy",
+        "Political",
         "Artaxiad",
-        "Overthrow",
-        "Political"
+        "Overthrow"
       ],
       "type": "political"
     },
@@ -684,11 +684,11 @@
         "Roman",
         "Armenian",
         "Parthian",
+        "Crisis",
         "Dynasty",
         "King",
-        "Artaxiad",
-        "Crisis",
-        "Political"
+        "Political",
+        "Artaxiad"
       ],
       "type": "historic"
     },
@@ -744,8 +744,8 @@
       "tags": [
         "Roman",
         "Armenian",
-        "King",
-        "Rebellion"
+        "Rebellion",
+        "King"
       ],
       "type": "political"
     },
@@ -780,11 +780,11 @@
       "tags": [
         "Armenian",
         "Judaic",
-        "Legend",
-        "Christian",
         "Religious",
+        "Christian",
+        "Apostle",
         "Saint",
-        "Apostle"
+        "Legend"
       ],
       "type": "religious"
     },
@@ -801,9 +801,10 @@
       "tags": [
         "Roman",
         "Armenian",
+        "Art",
         "Arsacid",
         "Architecture",
-        "Art"
+        "Palace"
       ],
       "type": "cultural"
     },
@@ -820,11 +821,11 @@
       "tags": [
         "Greek",
         "Armenian",
-        "Arsacid",
-        "Building 🏠",
-        "Architecture",
-        "Pagan",
         "Religious",
+        "Pagan",
+        "Arsacid",
+        "Architecture",
+        "Building 🏠",
         "Temple"
       ],
       "type": "cultural"
@@ -861,8 +862,8 @@
         "Roman",
         "Armenian",
         "Parthian",
-        "Arsacid",
         "War",
+        "Arsacid",
         "King"
       ],
       "type": "political"
@@ -882,8 +883,8 @@
         "Armenian",
         "Parthian",
         "War",
-        "Annexation",
         "Conquest",
+        "Annexation",
         "Trajan 👑"
       ],
       "type": "military"
@@ -940,9 +941,9 @@
       "source": "https://en.wikipedia.org/wiki/Vagharshapat",
       "tags": [
         "Armenian",
+        "Capital",
         "Arsacid",
         "King",
-        "Capital",
         "Political"
       ],
       "type": "political"
@@ -960,8 +961,9 @@
       "tags": [
         "Armenian",
         "Dynasty",
+        "Political",
         "Administration",
-        "Political"
+        "Aristocracy"
       ],
       "type": "political"
     },
@@ -978,9 +980,9 @@
       "tags": [
         "Roman",
         "Armenian",
+        "Rebellion",
         "Betrayal",
-        "Caracalla 👑",
-        "Rebellion"
+        "Caracalla 👑"
       ],
       "type": "political"
     },
@@ -997,10 +999,10 @@
       "tags": [
         "Persian",
         "Armenian",
+        "Sassanid",
         "Arsacid",
         "Political",
-        "Rivalry",
-        "Sassanid"
+        "Rivalry"
       ],
       "type": "political"
     },
@@ -1017,10 +1019,10 @@
       "tags": [
         "Persian",
         "Armenian",
-        "Arsacid",
-        "War",
-        "King",
         "Sassanid",
+        "War",
+        "Arsacid",
+        "King",
         "Resistance"
       ],
       "type": "military"
@@ -1038,11 +1040,11 @@
       "tags": [
         "Persian",
         "Armenian",
-        "Assassination",
-        "Conquest",
         "Sassanid",
-        "Shapur I 👑",
-        "Zoroastrian"
+        "Zoroastrian",
+        "Conquest",
+        "Assassination",
+        "Shapur I 👑"
       ],
       "type": "military"
     },
@@ -1060,11 +1062,11 @@
         "Persian",
         "Roman",
         "Armenian",
-        "Arsacid",
+        "Sassanid",
         "War",
+        "Arsacid",
         "King",
-        "Independence",
-        "Sassanid"
+        "Independence"
       ],
       "type": "political"
     },
@@ -1080,11 +1082,11 @@
       "source": "https://en.wikipedia.org/wiki/Gregory_the_Illuminator",
       "tags": [
         "Armenian",
-        "Blasphemy",
+        "Religious",
         "Christian",
-        "Martyr",
         "Pagan",
-        "Religious"
+        "Blasphemy",
+        "Martyr"
       ],
       "type": "religious"
     },
@@ -1100,13 +1102,13 @@
       "source": "https://en.wikipedia.org/wiki/Gregory_the_Illuminator",
       "tags": [
         "Armenian",
-        "Legend",
+        "Religious",
         "Christian",
         "Martyr",
         "Patron",
-        "Prisoner",
-        "Religious",
-        "Saint"
+        "Saint",
+        "Legend",
+        "Prisoner"
       ],
       "type": "religious"
     },
@@ -1124,10 +1126,10 @@
         "Persian",
         "Roman",
         "Armenian",
+        "Sassanid",
         "War",
         "Diplomacy",
         "Peace",
-        "Sassanid",
         "Treaty"
       ],
       "type": "political"
@@ -1144,11 +1146,11 @@
       "source": "https://en.wikipedia.org/wiki/Christianization_of_Armenia",
       "tags": [
         "Armenian",
-        "King",
-        "Adoption",
+        "Religious",
         "Christian",
-        "Political",
-        "Religious"
+        "Adoption",
+        "King",
+        "Political"
       ],
       "type": "religious"
     },
@@ -1164,11 +1166,12 @@
       "source": "https://en.wikipedia.org/wiki/Gregory_the_Illuminator",
       "tags": [
         "Armenian",
-        "Christian",
-        "Destruction",
-        "Disposession",
         "Religious",
-        "Zoroastrian"
+        "Christian",
+        "Zoroastrian",
+        "Destruction",
+        "Persecution",
+        "Purge"
       ],
       "type": "religious"
     },
@@ -1184,9 +1187,9 @@
       "source": "https://en.wikipedia.org/wiki/Khor_Virap",
       "tags": [
         "Armenian",
+        "Religious",
         "Christian",
-        "Holy Site",
-        "Religious"
+        "Holy Site"
       ],
       "type": "religious"
     },
@@ -1202,12 +1205,12 @@
       "source": "https://en.wikipedia.org/wiki/Saint_Hripsime_Church",
       "tags": [
         "Armenian",
-        "Building 🏠",
-        "Architecture",
+        "Religious",
         "Christian",
         "Martyr",
-        "Religious",
         "Saint",
+        "Architecture",
+        "Building 🏠",
         "Temple"
       ],
       "type": "religious"
@@ -1224,11 +1227,11 @@
       "source": "https://en.wikipedia.org/wiki/Etchmiadzin_Cathedral",
       "tags": [
         "Armenian",
-        "Building 🏠",
-        "Architecture",
+        "Religious",
         "Christian",
         "Holy Site",
-        "Religious",
+        "Architecture",
+        "Building 🏠",
         "Temple"
       ],
       "type": "religious"
@@ -1246,10 +1249,10 @@
       "tags": [
         "Roman",
         "Armenian",
-        "Diplomacy",
+        "Religious",
         "Christian",
         "Council",
-        "Religious"
+        "Diplomacy"
       ],
       "type": "religious"
     },
@@ -1265,9 +1268,9 @@
       "source": "https://en.wikipedia.org/wiki/Military_of_Armenia",
       "tags": [
         "Armenian",
+        "Culture",
         "Army",
         "Cavalry",
-        "Culture",
         "Tactics"
       ],
       "type": "military"
@@ -1301,8 +1304,8 @@
       "source": "https://en.wikipedia.org/wiki/Dvin_(ancient_city)",
       "tags": [
         "Armenian",
-        "City",
-        "Capital"
+        "Capital",
+        "City"
       ],
       "type": "historic"
     },
@@ -1318,9 +1321,9 @@
       "source": "https://en.wikipedia.org/wiki/Arshakavan",
       "tags": [
         "Armenian",
-        "Arsacid",
-        "City",
         "Capital",
+        "City",
+        "Arsacid",
         "Centralization",
         "Monarchy"
       ],
@@ -1338,11 +1341,12 @@
       "source": "https://en.wikipedia.org/wiki/Nerses_I",
       "tags": [
         "Armenian",
-        "Arsacid",
-        "Reform",
+        "Religious",
         "Christian",
         "Council",
         "Culture",
+        "Arsacid",
+        "Reform",
         "Law"
       ],
       "type": "religious"
@@ -1359,8 +1363,8 @@
       "source": "https://en.wikipedia.org/wiki/Arshakavan",
       "tags": [
         "Armenian",
-        "Civil War",
         "City",
+        "Civil War",
         "Destruction",
         "Massacre"
       ],
@@ -1395,13 +1399,13 @@
       "name_ru": "Нисибинский мир между Византией и Персией",
       "source": "https://en.wikipedia.org/wiki/Perso-Roman_Peace_Treaty_of_363",
       "tags": [
+        "Byzantine",
         "Persian",
         "Roman",
         "Armenian",
-        "War",
-        "Byzantine",
-        "Peace",
         "Sassanid",
+        "War",
+        "Peace",
         "Shapur II 👑",
         "Treaty"
       ],
@@ -1419,13 +1423,13 @@
       "tags": [
         "Persian",
         "Armenian",
-        "Arsacid",
+        "Sassanid",
+        "Christian",
+        "Zoroastrian",
         "Civil War",
         "War",
-        "Christian",
-        "Sassanid",
-        "Shapur II 👑",
-        "Zoroastrian"
+        "Arsacid",
+        "Shapur II 👑"
       ],
       "type": "military"
     },
@@ -1442,10 +1446,10 @@
       "tags": [
         "Persian",
         "Armenian",
+        "Sassanid",
         "War",
         "Betrayal",
         "Prisoner",
-        "Sassanid",
         "Shapur II 👑"
       ],
       "type": "historic"
@@ -1462,9 +1466,9 @@
       "tags": [
         "Persian",
         "Armenian",
-        "Arsacid",
-        "War",
         "Sassanid",
+        "War",
+        "Arsacid",
         "Shapur II 👑",
         "Siege"
       ],
@@ -1482,11 +1486,11 @@
       "tags": [
         "Persian",
         "Armenian",
-        "War",
-        "Christian",
-        "Destruction",
         "Religious",
-        "Zoroastrian"
+        "Christian",
+        "Zoroastrian",
+        "War",
+        "Destruction"
       ],
       "type": "military"
     },
@@ -1503,9 +1507,9 @@
       "tags": [
         "Persian",
         "Armenian",
+        "Sassanid",
         "War",
-        "Destruction",
-        "Sassanid"
+        "Destruction"
       ],
       "type": "military"
     },
@@ -1520,13 +1524,13 @@
       "name_ru": "Сражение при Багаване",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Bagavan",
       "tags": [
+        "Byzantine",
         "Persian",
         "Roman",
         "Armenian",
+        "Sassanid",
         "War",
         "Battle",
-        "Byzantine",
-        "Sassanid",
         "Shapur II 👑"
       ],
       "type": "military"
@@ -1543,10 +1547,10 @@
       "source": "https://en.wikipedia.org/wiki/Armenian_Apostolic_Church",
       "tags": [
         "Armenian",
-        "Reform",
+        "Religious",
         "Christian",
-        "Independence",
-        "Religious"
+        "Reform",
+        "Independence"
       ],
       "type": "historic"
     },
@@ -1561,12 +1565,12 @@
       "name_ru": "Армянский царь убит византийцами",
       "source": "https://en.wikipedia.org/wiki/Pap_of_Armenia",
       "tags": [
+        "Byzantine",
         "Roman",
         "Armenian",
         "King",
-        "Assassination",
-        "Byzantine",
-        "Political"
+        "Political",
+        "Assassination"
       ],
       "type": "political"
     },
@@ -1581,15 +1585,15 @@
       "name_ru": "Раздел Армении",
       "source": "https://en.wikipedia.org/wiki/Peace_of_Acilisene",
       "tags": [
+        "Byzantine",
         "Persian",
         "Roman",
         "Armenian",
-        "Annexation",
-        "Byzantine",
-        "Decline",
-        "Fragmentation",
+        "Sassanid",
         "Political",
-        "Sassanid"
+        "Annexation",
+        "Decline",
+        "Fragmentation"
       ],
       "type": "political"
     },
@@ -1607,9 +1611,9 @@
         "Greek",
         "Armenian",
         "Culture",
-        "Education",
         "Language",
-        "Writing"
+        "Writing",
+        "Education"
       ],
       "type": "cultural"
     },
@@ -1625,8 +1629,8 @@
       "source": "https://en.wikipedia.org/wiki/Matenadaran",
       "tags": [
         "Armenian",
-        "Art",
         "Culture",
+        "Art",
         "Literature",
         "Writing"
       ],
@@ -1644,10 +1648,11 @@
       "source": "https://en.wikipedia.org/wiki/Bible_translations_into_Armenian",
       "tags": [
         "Armenian",
+        "Religious",
         "Christian",
         "Culture",
-        "Golden Age",
         "Literature",
+        "Golden Age",
         "Text",
         "Translation"
       ],
@@ -1666,8 +1671,8 @@
       "tags": [
         "Armenian",
         "Culture",
-        "History",
         "Literature",
+        "History",
         "Text"
       ],
       "type": "cultural"
@@ -1685,10 +1690,10 @@
       "tags": [
         "Persian",
         "Armenian",
+        "Sassanid",
         "Arsacid",
         "Annexation",
-        "End",
-        "Sassanid"
+        "End"
       ],
       "type": "political"
     },
@@ -1724,10 +1729,10 @@
       "source": "https://en.wikipedia.org/wiki/Movses_Khorenatsi",
       "tags": [
         "Armenian",
-        "Uncertain",
         "Culture",
-        "History",
         "Literature",
+        "History",
+        "Uncertain",
         "Text"
       ],
       "type": "cultural"
@@ -1744,10 +1749,10 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Avarayr",
       "tags": [
         "Armenian",
+        "Religious",
         "Christian",
         "Council",
-        "Rebellion",
-        "Religious"
+        "Rebellion"
       ],
       "type": "religious"
     },
@@ -1763,9 +1768,9 @@
       "source": "https://en.wikipedia.org/wiki/Khachkar",
       "tags": [
         "Armenian",
-        "Art",
-        "Culture",
         "Religious",
+        "Culture",
+        "Art",
         "Sculpture"
       ],
       "type": "cultural"
@@ -1783,12 +1788,13 @@
       "tags": [
         "Persian",
         "Armenian",
+        "Sassanid",
+        "Religious",
+        "Christian",
+        "Saint",
         "War",
         "Battle",
-        "Christian",
-        "Holidays",
-        "Saint",
-        "Sassanid"
+        "Holidays"
       ],
       "type": "military"
     },
@@ -1804,8 +1810,8 @@
       "source": "https://en.wikipedia.org/wiki/Lazar_Parpetsi",
       "tags": [
         "Armenian",
-        "History",
         "Literature",
+        "History",
         "Text"
       ],
       "type": "cultural"
@@ -1823,10 +1829,10 @@
       "tags": [
         "Persian",
         "Armenian",
+        "Religious",
         "Christian",
         "Freedom",
-        "Peace",
-        "Religious"
+        "Peace"
       ],
       "type": "political"
     },
@@ -1842,11 +1848,11 @@
       "source": "https://en.wikipedia.org/wiki/Council_of_Dvin",
       "tags": [
         "Armenian",
+        "Religious",
         "Christian",
         "Council",
-        "Independence",
         "Political",
-        "Religious"
+        "Independence"
       ],
       "type": "religious"
     }

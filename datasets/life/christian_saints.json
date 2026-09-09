@@ -12,15 +12,15 @@
       "name_ru": "Рождество Иисуса Христа в Вифлееме",
       "source": "https://en.wikipedia.org/wiki/Nativity_of_Jesus",
       "tags": [
+        "Milestone ⭐️",
         "Roman",
-        "Judaic",
         "Israel",
-        "Legend",
+        "Judaic",
         "Christian",
-        "Culture",
         "Holy Site",
-        "Jesus Christ 👤",
-        "Milestone ⭐️"
+        "Culture",
+        "Legend",
+        "Jesus Christ 👤"
       ],
       "type": "cultural"
     },
@@ -35,8 +35,8 @@
       "name_ru": "Жизнь Иисуса в Назарете",
       "source": "https://en.wikipedia.org/wiki/Early_life_of_Jesus",
       "tags": [
-        "Judaic",
         "Israel",
+        "Judaic",
         "Christian",
         "Holy Site",
         "Jesus Christ 👤"
@@ -55,10 +55,10 @@
       "source": "https://en.wikipedia.org/wiki/John_the_Baptist",
       "tags": [
         "Judaic",
-        "Christian",
         "Religious",
-        "Saint",
-        "Apostle"
+        "Christian",
+        "Apostle",
+        "Saint"
       ],
       "type": "religious"
     },
@@ -74,12 +74,12 @@
       "source": "https://en.wikipedia.org/wiki/Baptism_of_Jesus",
       "tags": [
         "Judaic",
-        "Baptism",
-        "Christian",
-        "Holy Site",
-        "Jesus Christ 👤",
         "Religious",
-        "Apostle"
+        "Christian",
+        "Apostle",
+        "Baptism",
+        "Holy Site",
+        "Jesus Christ 👤"
       ],
       "type": "religious"
     },
@@ -96,10 +96,10 @@
       "tags": [
         "Judaic",
         "Christian",
-        "Holy Site",
-        "Jesus Christ 👤",
+        "Apostle",
         "Saint",
-        "Apostle"
+        "Holy Site",
+        "Jesus Christ 👤"
       ],
       "type": "religious"
     },
@@ -111,16 +111,16 @@
       "latitude": 32.88090266,
       "longitude": 35.55631757,
       "name": "Sermon on the Mount — The Beatitudes",
-      "name_ru": "Нагорная проповедь — Заповеди блаженства",
+      "name_ru": "Нагорная проповедь Иисуса",
       "source": "https://en.wikipedia.org/wiki/Sermon_on_the_Mount",
       "tags": [
         "Judaic",
-        "Christian",
-        "Holy Site",
-        "Jesus Christ 👤",
-        "Philosophy",
         "Religious",
-        "Apostle"
+        "Christian",
+        "Apostle",
+        "Holy Site",
+        "Philosophy",
+        "Jesus Christ 👤"
       ],
       "type": "cultural"
     },
@@ -135,12 +135,12 @@
       "name_ru": "Казнь Иоанна Предтечи",
       "source": "https://en.wikipedia.org/wiki/Death_of_John_the_Baptist",
       "tags": [
-        "Christian",
-        "Execution",
-        "Martyr",
         "Religious",
+        "Christian",
+        "Apostle",
+        "Martyr",
         "Saint",
-        "Apostle"
+        "Execution"
       ],
       "type": "historic"
     },
@@ -155,16 +155,16 @@
       "name_ru": "Тайная Вечеря",
       "source": "https://en.wikipedia.org/wiki/Last_Supper",
       "tags": [
-        "Judaic",
         "Israel",
         "Jerusalem",
-        "Legend",
-        "Christian",
-        "Customs",
-        "Holy Site",
-        "Jesus Christ 👤",
+        "Judaic",
         "Religious",
-        "Apostle"
+        "Christian",
+        "Apostle",
+        "Holy Site",
+        "Customs",
+        "Legend",
+        "Jesus Christ 👤"
       ],
       "type": "cultural"
     },
@@ -180,16 +180,16 @@
       "source": "https://en.wikipedia.org/wiki/Crucifixion_of_Jesus",
       "tags": [
         "Roman",
-        "Judaic",
         "Israel",
         "Jerusalem",
+        "Judaic",
+        "Religious",
         "Christian",
+        "Martyr",
+        "Holy Site",
         "Culture",
         "Execution",
-        "Holy Site",
-        "Jesus Christ 👤",
-        "Martyr",
-        "Religious"
+        "Jesus Christ 👤"
       ],
       "type": "historic"
     },
@@ -204,13 +204,13 @@
       "name_ru": "Воскресение Иисуса Христа",
       "source": "https://en.wikipedia.org/wiki/Resurrection_of_Jesus",
       "tags": [
-        "Judaic",
         "Israel",
         "Jerusalem",
-        "Legend",
+        "Judaic",
+        "Religious",
         "Christian",
-        "Jesus Christ 👤",
-        "Religious"
+        "Legend",
+        "Jesus Christ 👤"
       ],
       "type": "cultural"
     },
@@ -225,15 +225,15 @@
       "name_ru": "Стефан, первый христианский мученик",
       "source": "https://en.wikipedia.org/wiki/Stephen_the_first_martyr",
       "tags": [
-        "Judaic",
         "Israel",
         "Jerusalem",
-        "Christian",
-        "Execution",
-        "Martyr",
-        "Persecution",
+        "Judaic",
         "Religious",
-        "Saint"
+        "Christian",
+        "Martyr",
+        "Saint",
+        "Execution",
+        "Persecution"
       ],
       "type": "religious"
     },
@@ -250,12 +250,12 @@
       "tags": [
         "Roman",
         "Judaic",
-        "Legend",
-        "Christian",
-        "Persecution",
         "Religious",
+        "Christian",
+        "Apostle",
         "Saint",
-        "Apostle"
+        "Legend",
+        "Persecution"
       ],
       "type": "historic"
     },
@@ -270,16 +270,16 @@
       "name_ru": "Казнь апостола Иакова",
       "source": "https://en.wikipedia.org/wiki/James_the_Apostle",
       "tags": [
-        "Judaic",
         "Israel",
         "Jerusalem",
-        "Christian",
-        "Execution",
-        "Martyr",
-        "Persecution",
+        "Judaic",
         "Religious",
+        "Christian",
+        "Apostle",
+        "Martyr",
         "Saint",
-        "Apostle"
+        "Execution",
+        "Persecution"
       ],
       "type": "historic"
     },
@@ -295,13 +295,13 @@
       "source": "https://en.wikipedia.org/wiki/Council_of_Jerusalem",
       "tags": [
         "Roman",
-        "Judaic",
         "Israel",
         "Jerusalem",
-        "Christian",
-        "Customs",
+        "Judaic",
         "Religious",
-        "Apostle"
+        "Christian",
+        "Apostle",
+        "Customs"
       ],
       "type": "religious"
     },
@@ -318,12 +318,12 @@
       "tags": [
         "Indian",
         "Judaic",
-        "Legend",
-        "Christian",
-        "Expansion",
         "Religious",
+        "Christian",
+        "Apostle",
         "Saint",
-        "Apostle"
+        "Legend",
+        "Expansion"
       ],
       "type": "historic"
     },
@@ -340,16 +340,16 @@
       "tags": [
         "Roman",
         "Judaic",
-        "Christian",
-        "Execution",
-        "Holy Site",
-        "Martyr",
-        "Nero 👑",
-        "Persecution",
         "Religious",
+        "Christian",
+        "Apostle",
+        "Martyr",
         "Saint",
+        "Holy Site",
         "Tomb",
-        "Apostle"
+        "Execution",
+        "Nero 👑",
+        "Persecution"
       ],
       "type": "historic"
     },
@@ -366,11 +366,11 @@
       "tags": [
         "Roman",
         "Judaic",
-        "Christian",
-        "Exile",
-        "Holy Site",
         "Religious",
+        "Christian",
         "Saint",
+        "Holy Site",
+        "Exile",
         "Text"
       ],
       "type": "cultural"
@@ -388,10 +388,10 @@
       "tags": [
         "Greek",
         "Roman",
-        "Legend",
         "Christian",
         "Martyr",
-        "Saint"
+        "Saint",
+        "Legend"
       ],
       "type": "religious"
     },
@@ -408,11 +408,11 @@
       "tags": [
         "Greek",
         "Roman",
-        "Legend",
         "Christian",
-        "Holy Site",
         "Patron",
-        "Saint"
+        "Saint",
+        "Holy Site",
+        "Legend"
       ],
       "type": "cultural"
     },
@@ -428,12 +428,12 @@
       "source": "https://en.wikipedia.org/wiki/Augustine_of_Hippo",
       "tags": [
         "Roman",
-        "Baptism",
         "Berber",
-        "Christian",
-        "Philosophy",
         "Religious",
+        "Christian",
         "Saint",
+        "Baptism",
+        "Philosophy",
         "Text"
       ],
       "type": "cultural"
@@ -450,16 +450,16 @@
       "source": "https://en.wikipedia.org/wiki/Saint_Patrick",
       "tags": [
         "Roman",
-        "Celtic",
-        "Baptism",
         "British",
-        "Christian",
-        "Gaelic",
-        "Holy Site",
+        "Celtic",
         "Irish",
-        "Patron",
+        "Gaelic",
         "Religious",
-        "Saint"
+        "Christian",
+        "Patron",
+        "Saint",
+        "Baptism",
+        "Holy Site"
       ],
       "type": "cultural"
     },
@@ -475,12 +475,13 @@
       "source": "https://en.wikipedia.org/wiki/Benedict_of_Nursia",
       "tags": [
         "Roman",
-        "Benedictine",
-        "Christian",
-        "Holy Site",
-        "Monastery",
         "Religious",
-        "Saint"
+        "Christian",
+        "Benedictine",
+        "Catholic",
+        "Saint",
+        "Holy Site",
+        "Monastery"
       ],
       "type": "cultural"
     },
@@ -496,13 +497,13 @@
       "source": "https://en.wikipedia.org/wiki/Francis_of_Assisi",
       "tags": [
         "Italian",
-        "Catholic",
-        "Christian",
         "Foundation",
+        "Christian",
+        "Catholic",
         "Franciscan",
-        "Holy Site",
         "Order",
         "Saint",
+        "Holy Site",
         "Text"
       ],
       "type": "cultural"
@@ -519,22 +520,22 @@
       "source": "https://en.wikipedia.org/wiki/Thomas_Aquinas",
       "tags": [
         "Italian",
-        "Aristocracy",
-        "Catholic",
+        "Sicily",
+        "Religious",
         "Christian",
+        "Catholic",
+        "Saint",
         "Metaphysics",
         "Philosophy",
-        "Religious",
-        "Saint",
-        "Sicily",
+        "Aristocracy",
         "Text"
       ],
       "type": "cultural"
     },
     {
       "date": "08.05.1429",
-      "description": "Jeanne d'Arc (Joan of Arc, c. 1412–1431 AD), a peasant girl from Domrémy in Lorraine, convinces the Dauphin of France Charles VII at Chinon to grant her command of French forces at the siege of Orléans — the key strategic position in the Hundred Years' War, whose fall would have opened the Loire valley to English conquest and likely ended independent French monarchy. Joan reports that from age thirteen she has heard the voices of Saint Michael, Saint Catherine, and Saint Margaret instructing her to support the Dauphin. After scrutiny by theologians at Poitiers who find no fault with her, she is equipped with armour and a white standard bearing the names of Jesus and Mary. The English siege of Orléans, in place since October 1428, is broken in nine days after Joan's arrival on 30 April 1429.\n\nThe relief of Orléans is one of the most dramatic military reversals of the 15th century and changes the entire trajectory of the war. Joan is wounded by an arrow at the Battle of the Tourelles but continues fighting. She is captured by Burgundian forces at Compiègne in May 1430, sold to the English, tried by an ecclesiastical court at Rouen for heresy and cross-dressing, condemned, and burned at the stake on 30 May 1431 at age approximately 19. She is canonised in 1920 by Pope Benedict XV.",
-      "description_ru": "Жанна д'Арк (ок. 1412–1431 гг.), крестьянская девушка из Домреми в Лотарингии, убеждает дофина Франции Карла VII в Шиноне поставить её во главе французских сил при осаде Орлеана — ключевой стратегической позиции Столетней войны. Жанна сообщает, что с тринадцати лет слышит голоса святого Михаила, святой Екатерины и святой Маргариты. После богословского расследования в Пуатье она облачается в доспехи и получает белое знамя с именами Иисуса и Марии. Английская осада Орлеана, длившаяся с октября 1428 года, снята за девять дней после прибытия Жанны 30 апреля 1429 года.\n\nЖанна ранена стрелой в битве при Турели, но продолжает сражаться. Захваченная бургундскими войсками в мае 1430 года, продана англичанам, осуждена церковным судом в Руане за ересь и публично сожжена на костре 30 мая 1431 года в возрасте около 19 лет. Канонизирована папой Бенедиктом XV в 1920 году.",
+      "description": "A seventeen-year-old peasant girl from Domrémy who claimed to hear voices commanding her to save France, Joan of Arc convinced Charles VII's court to arm her and let her join a relief force marching to Orléans, the last major city north of the Loire still resisting an English siege. Riding with the army, she pressed for immediate, aggressive assaults against the advice of cautious captains, and within days French forces stormed the English siege forts one by one.\n\nThe English, already worn down by months of siege and short on reinforcements, abandoned the siege entirely on 8 May, retreating in a rout rather than risk battle. The victory, achieved under the banner of an unarmed farm girl, electrified French morale after decades of defeat and gave Charles VII the momentum to march for his long-delayed coronation.",
+      "description_ru": "Семнадцатилетняя крестьянская девушка из Домреми, утверждавшая, что слышит голоса, повелевающие ей спасти Францию, Жанна д'Арк убедила двор Карла VII вооружить её и позволить присоединиться к отряду, шедшему на помощь Орлеану — последнему крупному городу к северу от Луары, ещё сопротивлявшемуся английской осаде. Идя с войском, она настаивала на немедленных и решительных штурмах вопреки советам осторожных капитанов, и уже через несколько дней французские силы один за другой брали штурмом английские форты.\n\nАнгличане, измотанные месяцами осады и не получавшие подкреплений, 8 мая полностью сняли осаду, отступив в беспорядке, лишь бы избежать боя. Победа, одержанная под знаменем безоружной крестьянской девушки, воодушевила французский боевой дух после десятилетий поражений и дала Карлу VII импульс для похода на его давно откладывавшуюся коронацию.",
       "era": "AD",
       "latitude": 47.9,
       "longitude": 1.91,
@@ -542,16 +543,20 @@
       "name_ru": "Жанна д'Арк снимает осаду Орлеана",
       "source": "https://en.wikipedia.org/wiki/Joan_of_Arc",
       "tags": [
-        "War",
-        "Legend",
-        "Burgundy",
-        "Catholic",
-        "Christian",
+        "Milestone ⭐️",
+        "France",
         "French",
-        "Hundred Years",
-        "Martyr",
+        "England",
+        "English",
+        "Christian",
+        "Catholic",
         "Patron",
-        "Saint"
+        "Saint",
+        "Hundred Years",
+        "War",
+        "Valois",
+        "Legend",
+        "Joan of Arc 👤"
       ],
       "type": "military"
     }

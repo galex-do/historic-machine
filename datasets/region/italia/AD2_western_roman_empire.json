@@ -13,9 +13,9 @@
       "source": "https://en.wikipedia.org/wiki/Stilicho",
       "tags": [
         "Roman",
+        "Vandal",
         "Political",
-        "Stilicho 👤",
-        "Vandal"
+        "Stilicho 👤"
       ],
       "type": "political"
     },
@@ -26,16 +26,16 @@
       "era": "AD",
       "latitude": 44.69818939,
       "longitude": 7.85316467,
-      "name": "Alaric Invades Italy — the Visigoths Cross the Alps",
+      "name": "Alaric Invades Italy from West",
       "name_ru": "Вестготы вторгаются в Италию с Запада",
       "source": "https://en.wikipedia.org/wiki/Alaric_I",
       "tags": [
         "Roman",
+        "Gothic",
+        "Visigoth",
         "War",
         "Battle",
-        "Gothic",
-        "Invasion",
-        "Visigoth"
+        "Invasion"
       ],
       "type": "military"
     },
@@ -50,9 +50,9 @@
       "name_ru": "Перенос столицы Западного Рима в Равенну",
       "tags": [
         "Roman",
-        "Dynasty",
         "Capital",
-        "Theodosian"
+        "Theodosian",
+        "Dynasty"
       ],
       "type": "historic"
     },
@@ -68,12 +68,12 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Pollentia",
       "tags": [
         "Roman",
+        "Gothic",
+        "Visigoth",
+        "Christian",
         "War",
         "Battle",
-        "Christian",
-        "Gothic",
-        "Stilicho 👤",
-        "Visigoth"
+        "Stilicho 👤"
       ],
       "type": "military"
     },
@@ -89,11 +89,11 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Verona_(403)",
       "tags": [
         "Roman",
+        "Gothic",
+        "Visigoth",
         "War",
         "Battle",
-        "Gothic",
-        "Stilicho 👤",
-        "Visigoth"
+        "Stilicho 👤"
       ],
       "type": "military"
     },
@@ -109,9 +109,9 @@
       "source": "https://en.wikipedia.org/wiki/Vulgate",
       "tags": [
         "Roman",
+        "Religious",
         "Christian",
         "Culture",
-        "Religious",
         "Text",
         "Translation"
       ],
@@ -124,15 +124,15 @@
       "era": "AD",
       "latitude": 43.8,
       "longitude": 11.3,
-      "name": "Radagaisus Invades Italy with a Gothic Horde of Catastrophic Size",
+      "name": "Radagaisus Invades Italy with a Gothic Horde",
       "name_ru": "Готская орда вторгается в Италию",
       "source": "https://en.wikipedia.org/wiki/Radagaisus",
       "tags": [
         "Roman",
-        "War",
-        "Battle",
         "Gothic",
         "Huns",
+        "War",
+        "Battle",
         "Invasion",
         "Migration",
         "Stilicho 👤"
@@ -151,12 +151,12 @@
       "source": "https://en.wikipedia.org/wiki/Crossing_of_the_Rhine",
       "tags": [
         "Roman",
-        "War",
         "Alan",
+        "Vandal",
         "Crisis",
+        "War",
         "Invasion",
-        "Migration",
-        "Vandal"
+        "Migration"
       ],
       "type": "military"
     },
@@ -172,11 +172,11 @@
       "source": "https://en.wikipedia.org/wiki/Constantine_III_(Western_Roman_Emperor)",
       "tags": [
         "Roman",
-        "Abandonment",
         "Britain",
-        "Collapse",
         "Crisis",
         "Political",
+        "Abandonment",
+        "Collapse",
         "Usurpation"
       ],
       "type": "political"
@@ -193,11 +193,11 @@
       "source": "https://en.wikipedia.org/wiki/Stilicho",
       "tags": [
         "Roman",
+        "Gothic",
         "Civil War",
         "Crisis",
         "Death",
         "Execution",
-        "Gothic",
         "Stilicho 👤"
       ],
       "type": "political"
@@ -214,13 +214,13 @@
       "source": "https://en.wikipedia.org/wiki/Siege_of_Rome_(408)",
       "tags": [
         "Roman",
-        "War",
-        "Crisis",
-        "Famine",
         "Gothic",
+        "Visigoth",
+        "Crisis",
+        "War",
+        "Famine",
         "Siege",
-        "Tribute",
-        "Visigoth"
+        "Tribute"
       ],
       "type": "military"
     },
@@ -236,11 +236,11 @@
       "source": "https://en.wikipedia.org/wiki/Sack_of_Rome_(410)",
       "tags": [
         "Roman",
-        "War",
-        "Crisis",
         "Gothic",
-        "Pillage",
-        "Visigoth"
+        "Visigoth",
+        "Crisis",
+        "War",
+        "Pillage"
       ],
       "type": "military"
     },
@@ -256,9 +256,9 @@
       "source": "https://en.wikipedia.org/wiki/Alaric_I",
       "tags": [
         "Roman",
+        "Visigoth",
         "War",
-        "Death",
-        "Visigoth"
+        "Death"
       ],
       "type": "historic"
     },
@@ -274,11 +274,11 @@
       "source": "https://en.wikipedia.org/wiki/The_City_of_God",
       "tags": [
         "Roman",
+        "Religious",
         "Christian",
         "Culture",
         "Metaphysics",
         "Philosophy",
-        "Religious",
         "Text"
       ],
       "type": "cultural"
@@ -295,10 +295,10 @@
       "source": "https://en.wikipedia.org/wiki/Galla_Placidia",
       "tags": [
         "Roman",
+        "Theodosian",
         "Dynasty",
         "Emperor",
-        "Political",
-        "Theodosian"
+        "Political"
       ],
       "type": "political"
     },
@@ -314,10 +314,10 @@
       "source": "https://en.wikipedia.org/wiki/Pelagianism",
       "tags": [
         "Roman",
+        "Religious",
         "Christian",
         "Council",
-        "Philosophy",
-        "Religious"
+        "Philosophy"
       ],
       "type": "religious"
     },
@@ -333,12 +333,12 @@
       "source": "https://en.wikipedia.org/wiki/Visigothic_Kingdom",
       "tags": [
         "Roman",
-        "Foundation",
         "Gothic",
+        "Visigoth",
         "Kingdom",
-        "Migration",
+        "Foundation",
         "Political",
-        "Visigoth"
+        "Migration"
       ],
       "type": "historic"
     },
@@ -354,11 +354,11 @@
       "source": "https://en.wikipedia.org/wiki/Honorius_(emperor)",
       "tags": [
         "Roman",
+        "Theodosian",
         "Dynasty",
-        "Death",
         "Emperor",
         "Political",
-        "Theodosian"
+        "Death"
       ],
       "type": "political"
     },
@@ -374,11 +374,11 @@
       "source": "https://en.wikipedia.org/wiki/Valentinian_III",
       "tags": [
         "Roman",
+        "Theodosian",
         "Dynasty",
         "Emperor",
         "Political",
-        "Regency",
-        "Theodosian"
+        "Regency"
       ],
       "type": "political"
     },
@@ -394,8 +394,8 @@
       "source": "https://en.wikipedia.org/wiki/Law_of_citations",
       "tags": [
         "Roman",
-        "Administration",
         "Crisis",
+        "Administration",
         "Justice",
         "Law"
       ],
@@ -413,11 +413,11 @@
       "source": "https://en.wikipedia.org/wiki/Geiseric",
       "tags": [
         "Roman",
+        "Vandal",
         "War",
-        "Decline",
         "Invasion",
-        "Migration",
-        "Vandal"
+        "Decline",
+        "Migration"
       ],
       "type": "historic"
     },
@@ -433,13 +433,13 @@
       "source": "https://en.wikipedia.org/wiki/Augustine_of_Hippo",
       "tags": [
         "Roman",
-        "Christian",
-        "Culture",
-        "Death",
-        "Invasion",
+        "Vandal",
         "Religious",
+        "Christian",
         "Saint",
-        "Vandal"
+        "Culture",
+        "Invasion",
+        "Death"
       ],
       "type": "cultural"
     },
@@ -455,11 +455,11 @@
       "source": "https://en.wikipedia.org/wiki/Aetius_(general)",
       "tags": [
         "Roman",
-        "Aetius 👤",
-        "Alliance",
         "Huns",
-        "Military",
-        "Political"
+        "Alliance",
+        "Political",
+        "Aetius 👤",
+        "Military"
       ],
       "type": "political"
     },
@@ -475,13 +475,13 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Worms_(436)",
       "tags": [
         "Roman",
+        "Germanic",
+        "Huns",
         "War",
         "Battle",
         "Legend",
         "Aetius 👤",
-        "Burgundy",
-        "Germanic",
-        "Huns"
+        "Burgundy"
       ],
       "type": "military"
     },
@@ -497,11 +497,11 @@
       "source": "https://en.wikipedia.org/wiki/Vandal_Kingdom",
       "tags": [
         "Roman",
+        "Vandal",
         "War",
         "Conquest",
-        "Decline",
         "Invasion",
-        "Vandal"
+        "Decline"
       ],
       "type": "military"
     },
@@ -517,11 +517,11 @@
       "source": "https://en.wikipedia.org/wiki/Vandal_Kingdom",
       "tags": [
         "Roman",
+        "Vandal",
         "War",
-        "Decline",
         "Pillage",
-        "Piracy",
-        "Vandal"
+        "Decline",
+        "Piracy"
       ],
       "type": "military"
     },
@@ -537,12 +537,12 @@
       "source": "https://en.wikipedia.org/wiki/Kingdom_of_the_Burgundians",
       "tags": [
         "Roman",
+        "Kingdom",
+        "Foundation",
+        "Political",
         "Aetius 👤",
         "Burgundy",
-        "Foundation",
-        "Kingdom",
-        "Migration",
-        "Political"
+        "Migration"
       ],
       "type": "historic"
     },
@@ -558,11 +558,11 @@
       "source": "https://en.wikipedia.org/wiki/Justa_Grata_Honoria",
       "tags": [
         "Roman",
-        "Dynasty",
-        "Crisis",
         "Huns",
-        "Political",
-        "Theodosian"
+        "Crisis",
+        "Theodosian",
+        "Dynasty",
+        "Political"
       ],
       "type": "political"
     },
@@ -579,16 +579,16 @@
       "tags": [
         "Roman",
         "Gallic",
-        "War",
-        "Battle",
-        "Aetius 👤",
-        "Attila 👤",
         "Gothic",
         "Huns",
         "Ostrogoth",
+        "Visigoth",
         "Saxon",
         "Frankish",
-        "Visigoth"
+        "War",
+        "Battle",
+        "Aetius 👤",
+        "Attila 👤"
       ],
       "type": "military"
     },
@@ -604,12 +604,12 @@
       "source": "https://en.wikipedia.org/wiki/Attila",
       "tags": [
         "Roman",
-        "War",
-        "Attila 👤",
-        "Crisis",
-        "Destruction",
         "Huns",
-        "Invasion"
+        "Crisis",
+        "War",
+        "Destruction",
+        "Invasion",
+        "Attila 👤"
       ],
       "type": "military"
     },
@@ -625,12 +625,12 @@
       "source": "https://en.wikipedia.org/wiki/Pope_Leo_I",
       "tags": [
         "Roman",
-        "Attila 👤",
-        "Christian",
         "Huns",
         "Papacy",
+        "Religious",
+        "Christian",
         "Political",
-        "Religious"
+        "Attila 👤"
       ],
       "type": "religious"
     },
@@ -645,10 +645,10 @@
       "name_ru": "Смерть Аттилы и распад империи гуннов",
       "source": "https://en.wikipedia.org/wiki/Attila",
       "tags": [
-        "Attila 👤",
-        "Collapse",
+        "Huns",
         "Death",
-        "Huns"
+        "Attila 👤",
+        "Collapse"
       ],
       "type": "historic"
     },
@@ -664,11 +664,11 @@
       "source": "https://en.wikipedia.org/wiki/Aetius_(general)",
       "tags": [
         "Roman",
-        "Aetius 👤",
         "Crisis",
+        "Political",
         "Death",
-        "Murder",
-        "Political"
+        "Aetius 👤",
+        "Murder"
       ],
       "type": "political"
     },
@@ -684,10 +684,10 @@
       "source": "https://en.wikipedia.org/wiki/Valentinian_III",
       "tags": [
         "Roman",
-        "Assassination",
         "Crisis",
+        "Political",
         "Death",
-        "Political"
+        "Assassination"
       ],
       "type": "political"
     },
@@ -703,11 +703,11 @@
       "source": "https://en.wikipedia.org/wiki/Sack_of_Rome_(455)",
       "tags": [
         "Roman",
-        "War",
+        "Vandal",
         "Crisis",
+        "War",
         "Invasion",
-        "Pillage",
-        "Vandal"
+        "Pillage"
       ],
       "type": "military"
     },
@@ -723,12 +723,12 @@
       "source": "https://en.wikipedia.org/wiki/Ricimer",
       "tags": [
         "Roman",
+        "Visigoth",
         "Crisis",
         "Emperor",
-        "Overthrow",
         "Political",
-        "Usurpation",
-        "Visigoth"
+        "Overthrow",
+        "Usurpation"
       ],
       "type": "political"
     },
@@ -744,10 +744,10 @@
       "source": "https://en.wikipedia.org/wiki/Majorian",
       "tags": [
         "Roman",
-        "Reform",
         "Crisis",
         "Emperor",
-        "Political"
+        "Political",
+        "Reform"
       ],
       "type": "political"
     },
@@ -763,11 +763,11 @@
       "source": "https://en.wikipedia.org/wiki/Majorian",
       "tags": [
         "Roman",
+        "Vandal",
         "War",
         "Decline",
         "Failure",
-        "Naval",
-        "Vandal"
+        "Naval"
       ],
       "type": "military"
     },
@@ -784,10 +784,10 @@
       "tags": [
         "Roman",
         "Crisis",
-        "Death",
         "Emperor",
-        "Execution",
-        "Political"
+        "Political",
+        "Death",
+        "Execution"
       ],
       "type": "political"
     },
@@ -804,9 +804,9 @@
       "tags": [
         "Roman",
         "Crisis",
-        "Decline",
         "Emperor",
-        "Political"
+        "Political",
+        "Decline"
       ],
       "type": "political"
     },
@@ -821,13 +821,13 @@
       "name_ru": "Византийский флот сожжен при мысе Бон",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Cape_Bon_(468)",
       "tags": [
+        "Byzantine",
         "Roman",
+        "Vandal",
         "War",
         "Battle",
-        "Byzantine",
         "Failure",
-        "Tactics",
-        "Vandal"
+        "Tactics"
       ],
       "type": "military"
     },
@@ -863,9 +863,9 @@
       "tags": [
         "Roman",
         "Crisis",
+        "Political",
         "Death",
-        "Decline",
-        "Political"
+        "Decline"
       ],
       "type": "political"
     },
@@ -881,9 +881,9 @@
       "source": "https://en.wikipedia.org/wiki/Julius_Nepos",
       "tags": [
         "Roman",
-        "Decline",
         "Emperor",
-        "Political"
+        "Political",
+        "Decline"
       ],
       "type": "political"
     },
@@ -901,8 +901,8 @@
         "Roman",
         "Crisis",
         "Emperor",
-        "Overthrow",
-        "Political"
+        "Political",
+        "Overthrow"
       ],
       "type": "political"
     },
@@ -919,9 +919,9 @@
       "tags": [
         "Roman",
         "Crisis",
-        "Decline",
         "Emperor",
-        "Political"
+        "Political",
+        "Decline"
       ],
       "type": "political"
     },
@@ -938,11 +938,11 @@
       "tags": [
         "Roman",
         "Civil War",
-        "Battle",
         "Crisis",
+        "Battle",
+        "Political",
         "Decline",
-        "Odoacer 👑",
-        "Political"
+        "Odoacer 👑"
       ],
       "type": "military"
     },
@@ -958,11 +958,12 @@
       "source": "https://en.wikipedia.org/wiki/Romulus_Augustulus",
       "tags": [
         "Roman",
+        "Emperor",
+        "Political",
         "Death",
         "Decline",
-        "Emperor",
-        "Odoacer 👑",
-        "Political"
+        "Deposition",
+        "Odoacer 👑"
       ],
       "type": "historic"
     }

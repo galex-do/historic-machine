@@ -13,9 +13,9 @@
       "source": "https://en.wikipedia.org/wiki/Republic_of_Pisa",
       "tags": [
         "Italian",
+        "Pisa",
         "Defense",
         "Maritime",
-        "Pisa",
         "Republic"
       ],
       "type": "historic"
@@ -32,10 +32,10 @@
       "source": "https://en.wikipedia.org/wiki/Republic_of_Pisa",
       "tags": [
         "Italian",
+        "Pisa",
         "Expansion",
         "Influence",
         "Maritime",
-        "Pisa",
         "Seamen"
       ],
       "type": "historic"
@@ -53,13 +53,13 @@
       "tags": [
         "Arabian",
         "Italian",
-        "Battle",
         "Genoa",
+        "Pisa",
         "Islamic",
+        "Battle",
         "Maritime",
         "Naval",
-        "Piracy",
-        "Pisa"
+        "Piracy"
       ],
       "type": "military"
     },
@@ -76,11 +76,11 @@
       "tags": [
         "Arabian",
         "Italian",
+        "Pisa",
+        "Sicily",
         "Islamic",
         "Pillage",
-        "Piracy",
-        "Pisa",
-        "Sicily"
+        "Piracy"
       ],
       "type": "military"
     },
@@ -96,11 +96,11 @@
       "source": "https://en.wikipedia.org/wiki/Pisa_Cathedral",
       "tags": [
         "Italian",
-        "Building 🏠",
-        "Architecture",
-        "Christian",
         "Pisa",
         "Religious",
+        "Christian",
+        "Architecture",
+        "Building 🏠",
         "Temple"
       ],
       "type": "religious"
@@ -119,10 +119,10 @@
         "Arabian",
         "Italian",
         "Genoa",
+        "Pisa",
         "Islamic",
         "Maritime",
-        "Piracy",
-        "Pisa"
+        "Piracy"
       ],
       "type": "military"
     },
@@ -138,14 +138,14 @@
       "source": "https://en.wikipedia.org/wiki/Daimbert_of_Pisa",
       "tags": [
         "Italian",
-        "First",
+        "Pisa",
         "Christian",
+        "Crusade",
+        "Trade",
         "Emporium",
         "Expansion",
-        "Pisa",
-        "Seamen",
-        "Trade",
-        "Crusade"
+        "First",
+        "Seamen"
       ],
       "type": "political"
     },
@@ -160,12 +160,12 @@
       "name_ru": "Византия предоставляет Пизе торговые права",
       "source": "https://en.wikipedia.org/wiki/Alexios_I_Komnenos",
       "tags": [
+        "Byzantine",
         "Roman",
         "Italian",
-        "Byzantine",
-        "Emporium",
         "Pisa",
         "Trade",
+        "Emporium",
         "Treaty"
       ],
       "type": "political"
@@ -181,15 +181,15 @@
       "name_ru": "Набег иберийцев на Балеарские острова",
       "source": "https://en.wikipedia.org/wiki/1113%E2%80%931115_Balearic_Islands_expedition",
       "tags": [
-        "Italian",
-        "Aragon",
         "Berber",
+        "Italian",
         "Catalan",
-        "Conquest",
+        "Aragon",
+        "Pisa",
         "Islamic",
+        "Conquest",
         "Naval",
         "Piracy",
-        "Pisa",
         "Reconquista"
       ],
       "type": "military"
@@ -205,15 +205,15 @@
       "name_ru": "Пизанцы захватывают Майорку",
       "source": "https://en.wikipedia.org/wiki/1113%E2%80%931115_Balearic_Islands_expedition",
       "tags": [
-        "Italian",
-        "War",
-        "Almoravid",
         "Berber",
+        "Italian",
         "Catalan",
-        "Conquest",
-        "Islamic",
-        "Pillage",
         "Pisa",
+        "Islamic",
+        "War",
+        "Conquest",
+        "Pillage",
+        "Almoravid",
         "Reconquista",
         "Siege"
       ],
@@ -226,17 +226,17 @@
       "era": "AD",
       "latitude": 43.72329656,
       "longitude": 10.39574862,
-      "name": "Cathedral of Pisa Consecrated — Romanesque Masterpiece Completed",
+      "name": "Cathedral of Pisa Consecrated",
       "name_ru": "Освящение Пизанского собора",
       "source": "https://en.wikipedia.org/wiki/Pisa_Cathedral",
       "tags": [
         "Italian",
-        "Building 🏠",
-        "Architecture",
+        "Pisa",
+        "Religious",
         "Christian",
         "Culture",
-        "Pisa",
-        "Religious"
+        "Architecture",
+        "Building 🏠"
       ],
       "type": "cultural"
     },
@@ -252,10 +252,10 @@
       "source": "https://en.wikipedia.org/wiki/Republic_of_Pisa",
       "tags": [
         "Italian",
-        "Code",
-        "Law",
         "Pisa",
-        "Trade"
+        "Trade",
+        "Code",
+        "Law"
       ],
       "type": "cultural"
     },
@@ -271,13 +271,13 @@
       "source": "https://en.wikipedia.org/wiki/Roger_II_of_Sicily",
       "tags": [
         "Italian",
-        "Destruction",
-        "Naval",
         "Norman",
-        "Pillage",
         "Pisa",
-        "Seamen",
-        "Sicily"
+        "Sicily",
+        "Destruction",
+        "Pillage",
+        "Naval",
+        "Seamen"
       ],
       "type": "military"
     },
@@ -292,11 +292,11 @@
       "name_ru": "Начало строительства Баптистерия Пизы",
       "source": "https://en.wikipedia.org/wiki/Pisa_Baptistery",
       "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Culture",
         "Pisa",
-        "Religious"
+        "Religious",
+        "Culture",
+        "Architecture",
+        "Building 🏠"
       ],
       "type": "cultural"
     },
@@ -313,11 +313,11 @@
       "tags": [
         "Italian",
         "Holy Roman Empire",
-        "Diplomacy",
-        "Alliance",
-        "Naval",
         "Pisa",
+        "Alliance",
+        "Diplomacy",
         "Trade",
+        "Naval",
         "Treaty"
       ],
       "type": "political"
@@ -334,10 +334,10 @@
       "source": "https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa",
       "tags": [
         "Italian",
-        "Building 🏠",
-        "Architecture",
+        "Pisa",
         "Culture",
-        "Pisa"
+        "Architecture",
+        "Building 🏠"
       ],
       "type": "cultural"
     },
@@ -354,14 +354,14 @@
       "tags": [
         "Arabian",
         "Italian",
-        "Third",
-        "War",
+        "Pisa",
         "Christian",
         "Islamic",
+        "Crusade",
+        "War",
         "Naval",
-        "Pisa",
         "Siege",
-        "Crusade"
+        "Third"
       ],
       "type": "military"
     },
@@ -378,15 +378,15 @@
       "tags": [
         "Arabian",
         "Italian",
-        "Third",
-        "War",
         "England",
         "English",
-        "Islamic",
         "Pisa",
+        "Islamic",
+        "Crusade",
+        "War",
         "Richard the Lionheart 👑",
         "Siege",
-        "Crusade"
+        "Third"
       ],
       "type": "political"
     },
@@ -402,21 +402,23 @@
       "tags": [
         "Arabian",
         "Italian",
-        "Third",
-        "War",
-        "Christian",
-        "Conquest",
-        "Engineering ⚙️",
-        "England",
-        "English",
         "France",
         "French",
+        "England",
+        "English",
         "Genoa",
-        "Islamic",
         "Pisa",
+        "Religious",
+        "Christian",
+        "Islamic",
+        "Crusade",
+        "War",
+        "Conquest",
+        "Engineering ⚙️",
+        "Philip Augustus 👑",
         "Richard the Lionheart 👑",
         "Siege",
-        "Crusade"
+        "Third"
       ],
       "type": "military"
     },
@@ -433,13 +435,13 @@
       "tags": [
         "Arabian",
         "Italian",
+        "Pisa",
         "Culture",
+        "Trade",
         "Innovation",
         "Mathematics",
-        "Pisa",
         "Science",
-        "Text",
-        "Trade"
+        "Text"
       ],
       "type": "cultural"
     },
@@ -455,12 +457,12 @@
       "source": "https://en.wikipedia.org/wiki/Republic_of_Pisa",
       "tags": [
         "Italian",
+        "Pisa",
         "City-State",
         "Reform",
         "Code",
         "Constitution",
         "Law",
-        "Pisa",
         "Republic"
       ],
       "type": "political"
@@ -477,17 +479,17 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Giglio",
       "tags": [
         "Italian",
+        "Genoa",
         "Holy Roman Empire",
+        "Papacy",
+        "Pisa",
+        "Religious",
+        "Christian",
+        "Catholic",
         "War",
         "Battle",
         "Ambush",
-        "Catholic",
-        "Christian",
-        "Genoa",
-        "Maritime",
-        "Papacy",
-        "Pisa",
-        "Religious"
+        "Maritime"
       ],
       "type": "military"
     },
@@ -503,10 +505,10 @@
       "source": "https://en.wikipedia.org/wiki/Republic_of_Pisa",
       "tags": [
         "Italian",
-        "Expansion",
-        "Golden Age",
         "Pisa",
-        "Trade"
+        "Trade",
+        "Expansion",
+        "Golden Age"
       ],
       "type": "historic"
     },
@@ -522,9 +524,9 @@
       "source": "https://en.wikipedia.org/wiki/Nicola_Pisano",
       "tags": [
         "Italian",
-        "Art",
-        "Culture",
         "Pisa",
+        "Culture",
+        "Art",
         "Sculpture"
       ],
       "type": "cultural"
@@ -541,13 +543,13 @@
       "source": "https://en.wikipedia.org/wiki/Camposanto_Monumentale",
       "tags": [
         "Italian",
-        "Building 🏠",
-        "Legend",
-        "Art",
+        "Pisa",
+        "Religious",
         "Christian",
         "Holy Site",
-        "Pisa",
-        "Religious"
+        "Art",
+        "Building 🏠",
+        "Legend"
       ],
       "type": "cultural"
     },
@@ -564,10 +566,10 @@
       "tags": [
         "Italian",
         "Aragon",
-        "Conquest",
-        "Crisis",
         "Genoa",
-        "Pisa"
+        "Pisa",
+        "Crisis",
+        "Conquest"
       ],
       "type": "political"
     },
@@ -584,9 +586,9 @@
       "tags": [
         "Italian",
         "Holy Roman Empire",
-        "Diplomacy",
+        "Pisa",
         "Alliance",
-        "Pisa"
+        "Diplomacy"
       ],
       "type": "political"
     },
@@ -601,12 +603,12 @@
       "name_ru": "Основан Пизанский университет",
       "tags": [
         "Italian",
+        "Pisa",
         "Christian",
         "Culture",
         "Education",
         "Law",
-        "Medicine",
-        "Pisa"
+        "Medicine"
       ],
       "type": "scientific"
     },
@@ -622,11 +624,11 @@
       "source": "https://en.wikipedia.org/wiki/Black_Death_in_Italy",
       "tags": [
         "Italian",
+        "Pisa",
+        "Crisis",
         "Art",
         "Black Death",
-        "Crisis",
-        "Pisa",
-        "Plague"
+        "Plague 🦠"
       ],
       "type": "historic"
     },
@@ -642,10 +644,11 @@
       "source": "https://en.wikipedia.org/wiki/Republic_of_Pisa",
       "tags": [
         "Italian",
-        "Reform",
-        "Crisis",
         "Pisa",
-        "Political"
+        "Crisis",
+        "Political",
+        "Reform",
+        "Murder"
       ],
       "type": "political"
     },
@@ -661,9 +664,9 @@
       "source": "https://en.wikipedia.org/wiki/Gian_Galeazzo_Visconti",
       "tags": [
         "Italian",
-        "Crisis",
         "Florence",
         "Pisa",
+        "Crisis",
         "Political"
       ],
       "type": "political"
@@ -680,10 +683,12 @@
       "source": "https://en.wikipedia.org/wiki/Republic_of_Pisa",
       "tags": [
         "Italian",
-        "War",
-        "Crisis",
         "Florence",
-        "Pisa"
+        "Pisa",
+        "Crisis",
+        "War",
+        "Conquest",
+        "Expansion"
       ],
       "type": "military"
     }

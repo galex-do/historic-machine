@@ -12,15 +12,15 @@
       "name_ru": "Рождение Мухаммада ибн Абдаллы",
       "source": "https://en.wikipedia.org/wiki/Muhammad",
       "tags": [
-        "Arabian",
-        "Arabia",
-        "Birth",
-        "Holy Site",
-        "Islamic",
         "Milestone ⭐️",
-        "Muhammad ibn Abdullah 👤",
+        "Arabia",
+        "Arabian",
         "Qurayshite",
-        "Religious"
+        "Religious",
+        "Islamic",
+        "Holy Site",
+        "Birth",
+        "Muhammad ibn Abdullah 👤"
       ],
       "type": "historic"
     },
@@ -33,15 +33,15 @@
       "longitude": 39.82997775,
       "name": "Muhammad Marries the Merchant Widow Khadijah",
       "name_ru": "Мухаммад женится на купеческой вдове Хадидже",
-      "source": "https://en.wikipedia.org/wiki/Khadijah",
+      "source": "https://en.wikipedia.org/wiki/Khadija_bint_Khuwaylid",
       "tags": [
-        "Arabian",
-        "Marriage",
         "Arabia",
+        "Arabian",
+        "Qurayshite",
         "Islamic",
+        "Marriage",
         "Love",
-        "Muhammad ibn Abdullah 👤",
-        "Qurayshite"
+        "Muhammad ibn Abdullah 👤"
       ],
       "type": "historic"
     },
@@ -56,12 +56,12 @@
       "name_ru": "Первое откровение Мухаммада",
       "source": "https://en.wikipedia.org/wiki/Revelation_of_Quran_to_Muhammad",
       "tags": [
-        "Arabian",
         "Arabia",
-        "Holy Site",
+        "Arabian",
+        "Religious",
         "Islamic",
-        "Muhammad ibn Abdullah 👤",
-        "Religious"
+        "Holy Site",
+        "Muhammad ibn Abdullah 👤"
       ],
       "type": "religious"
     },
@@ -76,13 +76,13 @@
       "name_ru": "Мухаммад начинает публичные проповеди",
       "source": "https://en.wikipedia.org/wiki/Muhammad_in_Mecca",
       "tags": [
-        "Arabian",
         "Arabia",
+        "Arabian",
+        "Qurayshite",
+        "Religious",
         "Islamic",
         "Muhammad ibn Abdullah 👤",
-        "Persecution",
-        "Qurayshite",
-        "Religious"
+        "Persecution"
       ],
       "type": "religious"
     },
@@ -97,14 +97,14 @@
       "name_ru": "Год Скорби лишает Мухаммада защитников",
       "source": "https://en.wikipedia.org/wiki/Year_of_Sorrow",
       "tags": [
-        "Arabian",
         "Arabia",
-        "Crisis",
-        "Islamic",
-        "Muhammad ibn Abdullah 👤",
-        "Persecution",
+        "Arabian",
         "Qurayshite",
-        "Religious"
+        "Religious",
+        "Islamic",
+        "Crisis",
+        "Muhammad ibn Abdullah 👤",
+        "Persecution"
       ],
       "type": "religious"
     },
@@ -121,11 +121,11 @@
       "tags": [
         "Arabian",
         "Jerusalem",
-        "Legend",
-        "Holy Site",
+        "Religious",
         "Islamic",
-        "Muhammad ibn Abdullah 👤",
-        "Religious"
+        "Holy Site",
+        "Legend",
+        "Muhammad ibn Abdullah 👤"
       ],
       "type": "religious"
     },
@@ -140,13 +140,13 @@
       "name_ru": "Хиджра в Медину",
       "source": "https://en.wikipedia.org/wiki/Hijra_(Islam)",
       "tags": [
-        "Arabian",
         "Arabia",
-        "Calendar",
+        "Arabian",
+        "Religious",
         "Islamic",
-        "Muhammad ibn Abdullah 👤",
         "Political",
-        "Religious"
+        "Calendar",
+        "Muhammad ibn Abdullah 👤"
       ],
       "type": "political"
     },
@@ -162,11 +162,11 @@
       "source": "https://en.wikipedia.org/wiki/Constitution_of_Medina",
       "tags": [
         "Arabian",
-        "Reform",
         "Islamic",
+        "Political",
+        "Reform",
         "Law",
-        "Muhammad ibn Abdullah 👤",
-        "Political"
+        "Muhammad ibn Abdullah 👤"
       ],
       "type": "political"
     },
@@ -182,10 +182,10 @@
       "source": "https://en.wikipedia.org/wiki/Qibla",
       "tags": [
         "Arabian",
-        "Reform",
+        "Religious",
         "Islamic",
-        "Muhammad ibn Abdullah 👤",
-        "Religious"
+        "Reform",
+        "Muhammad ibn Abdullah 👤"
       ],
       "type": "religious"
     },
@@ -200,13 +200,13 @@
       "name_ru": "Мусульмане побеждают курайшитов при Бадре",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Badr",
       "tags": [
+        "Arabia",
         "Arabian",
+        "Qurayshite",
+        "Islamic",
         "War",
         "Battle",
-        "Arabia",
-        "Islamic",
-        "Muhammad ibn Abdullah 👤",
-        "Qurayshite"
+        "Muhammad ibn Abdullah 👤"
       ],
       "type": "military"
     },
@@ -221,14 +221,14 @@
       "name_ru": "Сражение курайшитов и мусульман при Ухуде",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Uhud",
       "tags": [
+        "Arabia",
         "Arabian",
+        "Qurayshite",
+        "Religious",
+        "Islamic",
         "War",
         "Battle",
-        "Arabia",
-        "Islamic",
-        "Muhammad ibn Abdullah 👤",
-        "Qurayshite",
-        "Religious"
+        "Muhammad ibn Abdullah 👤"
       ],
       "type": "military"
     },
@@ -243,13 +243,13 @@
       "name_ru": "Неудачная осада Медины курайшитами",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Trench",
       "tags": [
+        "Arabia",
         "Arabian",
+        "Qurayshite",
+        "Islamic",
         "War",
         "Battle",
-        "Arabia",
-        "Islamic",
         "Muhammad ibn Abdullah 👤",
-        "Qurayshite",
         "Siege"
       ],
       "type": "military"
@@ -265,13 +265,13 @@
       "name_ru": "Худайбийский договор открывает Мекку мусульманам",
       "source": "https://en.wikipedia.org/wiki/Treaty_of_Hudaybiyyah",
       "tags": [
-        "Arabian",
-        "Diplomacy",
         "Arabia",
-        "Islamic",
-        "Muhammad ibn Abdullah 👤",
-        "Political",
+        "Arabian",
         "Qurayshite",
+        "Islamic",
+        "Diplomacy",
+        "Political",
+        "Muhammad ibn Abdullah 👤",
         "Treaty"
       ],
       "type": "political"
@@ -287,15 +287,15 @@
       "name_ru": "Мухаммад призывает правителей принять ислам",
       "source": "https://en.wikipedia.org/wiki/Letters_of_Muhammad",
       "tags": [
-        "Arabian",
-        "Persian",
-        "Egypt",
-        "Diplomacy",
         "Byzantine",
+        "Persian",
+        "Arabian",
+        "Egypt",
+        "Aksumite",
         "Islamic",
-        "Muhammad ibn Abdullah 👤",
+        "Diplomacy",
         "Political",
-        "Aksumite"
+        "Muhammad ibn Abdullah 👤"
       ],
       "type": "political"
     },
@@ -310,15 +310,15 @@
       "name_ru": "Мухаммад возвращается в Мекку и уничтожает идолов Каабы",
       "source": "https://en.wikipedia.org/wiki/Conquest_of_Mecca",
       "tags": [
-        "Arabian",
-        "War",
         "Arabia",
-        "Conquest",
-        "Holy Site",
-        "Islamic",
-        "Muhammad ibn Abdullah 👤",
+        "Arabian",
         "Qurayshite",
-        "Religious"
+        "Religious",
+        "Islamic",
+        "Holy Site",
+        "War",
+        "Conquest",
+        "Muhammad ibn Abdullah 👤"
       ],
       "type": "military"
     },
@@ -333,13 +333,13 @@
       "name_ru": "Год посольств в Аравии",
       "source": "https://en.wikipedia.org/wiki/Year_of_the_Delegations",
       "tags": [
-        "Arabian",
-        "Diplomacy",
         "Arabia",
-        "Islamic",
-        "Muhammad ibn Abdullah 👤",
-        "Political",
+        "Arabian",
         "Religious",
+        "Islamic",
+        "Diplomacy",
+        "Political",
+        "Muhammad ibn Abdullah 👤",
         "Unification"
       ],
       "type": "political"
@@ -356,10 +356,10 @@
       "source": "https://en.wikipedia.org/wiki/Farewell_Sermon",
       "tags": [
         "Arabian",
+        "Religious",
         "Islamic",
-        "Muhammad ibn Abdullah 👤",
         "Political",
-        "Religious"
+        "Muhammad ibn Abdullah 👤"
       ],
       "type": "religious"
     },
@@ -375,11 +375,11 @@
       "source": "https://en.wikipedia.org/wiki/Muhammad",
       "tags": [
         "Arabian",
+        "Religious",
+        "Islamic",
         "Crisis",
         "Death",
-        "Islamic",
-        "Muhammad ibn Abdullah 👤",
-        "Religious"
+        "Muhammad ibn Abdullah 👤"
       ],
       "type": "historic"
     },
@@ -395,12 +395,12 @@
       "source": "https://en.wikipedia.org/wiki/Saqifah_of_Banu_Sa%27ida",
       "tags": [
         "Arabian",
-        "Caliph",
-        "Crisis",
-        "Elections",
-        "Islamic",
         "Rashidun",
-        "Religious"
+        "Religious",
+        "Islamic",
+        "Crisis",
+        "Caliph",
+        "Elections"
       ],
       "type": "political"
     },
@@ -415,15 +415,16 @@
       "name_ru": "Войны Ридды воссоединяют Аравию",
       "source": "https://en.wikipedia.org/wiki/Ridda_wars",
       "tags": [
-        "Arabian",
-        "Civil War",
         "Arabia",
-        "Crisis",
-        "Islamic",
-        "Political",
+        "Arabian",
         "Rashidun",
-        "Rebellion",
+        "Religious",
+        "Islamic",
         "Schism",
+        "Civil War",
+        "Crisis",
+        "Rebellion",
+        "Political",
         "Unification"
       ],
       "type": "military"
@@ -439,15 +440,17 @@
       "name_ru": "Мусульмане разбивают византийцев при Аджнадайне",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Ajnadayn",
       "tags": [
-        "Arabian",
+        "Byzantine",
         "Roman",
+        "Arabian",
+        "Qurayshite",
+        "Rashidun",
+        "Religious",
+        "Christian",
+        "Islamic",
         "War",
         "Battle",
-        "Byzantine",
-        "Islamic",
-        "Palestine",
-        "Qurayshite",
-        "Rashidun"
+        "Palestine"
       ],
       "type": "military"
     },
@@ -463,11 +466,11 @@
       "source": "https://en.wikipedia.org/wiki/Abu_Bakr",
       "tags": [
         "Arabian",
-        "Caliph",
-        "Islamic",
-        "Political",
         "Rashidun",
-        "Sunni"
+        "Islamic",
+        "Sunni",
+        "Political",
+        "Caliph"
       ],
       "type": "political"
     },
@@ -483,11 +486,11 @@
       "source": "https://en.wikipedia.org/wiki/Basra",
       "tags": [
         "Arabian",
+        "Rashidun",
         "City",
-        "Expansion",
-        "Fortification",
         "Islamic",
-        "Rashidun"
+        "Fortification",
+        "Expansion"
       ],
       "type": "historic"
     },
@@ -503,12 +506,12 @@
       "source": "https://en.wikipedia.org/wiki/Amsar",
       "tags": [
         "Arabian",
-        "Administration",
-        "Expansion",
-        "Infrastructure",
+        "Rashidun",
         "Islamic",
         "Political",
-        "Rashidun"
+        "Administration",
+        "Expansion",
+        "Infrastructure"
       ],
       "type": "political"
     },
@@ -523,14 +526,15 @@
       "name_ru": "Умар принимает капитуляцию Иерусалима",
       "source": "https://en.wikipedia.org/wiki/Surrender_of_Jerusalem_(637)",
       "tags": [
+        "Byzantine",
         "Arabian",
         "Jerusalem",
-        "Byzantine",
+        "Rashidun",
+        "Religious",
         "Christian",
         "Islamic",
-        "Political",
-        "Rashidun",
-        "Tolerance"
+        "Tolerance",
+        "Political"
       ],
       "type": "political"
     },
@@ -546,11 +550,11 @@
       "source": "https://en.wikipedia.org/wiki/Kufa",
       "tags": [
         "Arabian",
+        "Rashidun",
         "City",
-        "Legend",
-        "Expansion",
         "Islamic",
-        "Rashidun"
+        "Legend",
+        "Expansion"
       ],
       "type": "historic"
     },
@@ -566,12 +570,12 @@
       "source": "https://en.wikipedia.org/wiki/Umar",
       "tags": [
         "Arabian",
-        "Reform",
-        "Administration",
-        "Calendar",
+        "Rashidun",
         "Islamic",
         "Political",
-        "Rashidun"
+        "Reform",
+        "Administration",
+        "Calendar"
       ],
       "type": "political"
     },
@@ -588,10 +592,10 @@
       "tags": [
         "Arabian",
         "Armenian",
+        "Rashidun",
+        "Islamic",
         "War",
         "Destruction",
-        "Islamic",
-        "Rashidun",
         "Siege"
       ],
       "type": "military"
@@ -608,11 +612,11 @@
       "source": "https://en.wikipedia.org/wiki/Umar",
       "tags": [
         "Arabian",
-        "Assassination",
-        "Death",
+        "Rashidun",
         "Islamic",
         "Political",
-        "Rashidun"
+        "Death",
+        "Assassination"
       ],
       "type": "historic"
     },
@@ -628,12 +632,12 @@
       "source": "https://en.wikipedia.org/wiki/Uthman",
       "tags": [
         "Arabian",
-        "Caliph",
-        "Elections",
+        "Qurayshite",
+        "Rashidun",
         "Islamic",
         "Political",
-        "Qurayshite",
-        "Rashidun"
+        "Caliph",
+        "Elections"
       ],
       "type": "political"
     },
@@ -649,10 +653,10 @@
       "source": "https://en.wikipedia.org/wiki/Uthmanic_codex",
       "tags": [
         "Arabian",
-        "Culture",
-        "Islamic",
         "Rashidun",
         "Religious",
+        "Islamic",
+        "Culture",
         "Standardization",
         "Text"
       ],
@@ -671,8 +675,8 @@
       "tags": [
         "Arabian",
         "Armenian",
-        "Peace",
         "Rashidun",
+        "Peace",
         "Treaty",
         "Vassalage"
       ],
@@ -689,13 +693,13 @@
       "name_ru": "Первая морская победа Исламского халифата",
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Masts",
       "tags": [
-        "Arabian",
+        "Byzantine",
         "Roman",
+        "Arabian",
+        "Rashidun",
         "War",
         "Battle",
-        "Byzantine",
-        "Naval",
-        "Rashidun"
+        "Naval"
       ],
       "type": "military"
     },
@@ -711,15 +715,15 @@
       "source": "https://en.wikipedia.org/wiki/Uthman",
       "tags": [
         "Arabian",
-        "Civil War",
-        "Caliph",
-        "Crisis",
-        "Death",
+        "Rashidun",
         "Islamic",
-        "Murder",
-        "Mutiny",
+        "Civil War",
+        "Crisis",
         "Political",
-        "Rashidun"
+        "Death",
+        "Caliph",
+        "Murder",
+        "Mutiny"
       ],
       "type": "political"
     },
@@ -735,13 +739,13 @@
       "source": "https://en.wikipedia.org/wiki/Ali",
       "tags": [
         "Arabian",
-        "Civil War",
-        "Caliph",
-        "Crisis",
-        "Islamic",
-        "Political",
         "Rashidun",
-        "Religious"
+        "Religious",
+        "Islamic",
+        "Civil War",
+        "Crisis",
+        "Political",
+        "Caliph"
       ],
       "type": "political"
     },
@@ -757,10 +761,10 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_the_Camel",
       "tags": [
         "Arabian",
-        "Civil War",
-        "Battle",
+        "Rashidun",
         "Islamic",
-        "Rashidun"
+        "Civil War",
+        "Battle"
       ],
       "type": "military"
     },
@@ -776,11 +780,11 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Siffin",
       "tags": [
         "Arabian",
-        "Civil War",
-        "Battle",
-        "Islamic",
         "Rashidun",
-        "Religious"
+        "Religious",
+        "Islamic",
+        "Civil War",
+        "Battle"
       ],
       "type": "military"
     },
@@ -796,12 +800,12 @@
       "source": "https://en.wikipedia.org/wiki/Kharijites",
       "tags": [
         "Arabian",
-        "Civil War",
-        "Islamic",
-        "Radicalism",
         "Rashidun",
         "Religious",
-        "Sect"
+        "Islamic",
+        "Sect",
+        "Civil War",
+        "Radicalism"
       ],
       "type": "religious"
     },
@@ -817,12 +821,12 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Nahrawan",
       "tags": [
         "Arabian",
-        "Civil War",
-        "Battle",
-        "Crisis",
-        "Islamic",
         "Rashidun",
-        "Religious"
+        "Religious",
+        "Islamic",
+        "Civil War",
+        "Crisis",
+        "Battle"
       ],
       "type": "military"
     },
@@ -838,15 +842,15 @@
       "source": "https://en.wikipedia.org/wiki/Ali",
       "tags": [
         "Arabian",
-        "Civil War",
-        "Assassination",
-        "Death",
-        "Islamic",
-        "Political",
         "Rashidun",
         "Religious",
+        "Islamic",
         "Shia",
-        "Sunni"
+        "Sunni",
+        "Civil War",
+        "Political",
+        "Death",
+        "Assassination"
       ],
       "type": "historic"
     },
@@ -863,13 +867,13 @@
       "tags": [
         "Arabian",
         "Umayyad",
-        "Civil War",
-        "Caliph",
         "Capital",
-        "Crisis",
         "Foundation",
         "Islamic",
-        "Political"
+        "Civil War",
+        "Crisis",
+        "Political",
+        "Caliph"
       ],
       "type": "political"
     }

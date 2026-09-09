@@ -12,11 +12,11 @@
       "name_ru": "Гадачрили-Гора — колыбель виноградарства",
       "source": "https://en.wikipedia.org/wiki/Gadachrili_Gora",
       "tags": [
-        "Agriculture",
         "Caucasian",
+        "Georgian",
         "Neolithic",
-        "Wine",
-        "Georgian"
+        "Agriculture",
+        "Wine"
       ],
       "type": "scientific"
     },
@@ -31,8 +31,8 @@
       "name_ru": "Первое химическое свидетельство вина",
       "source": "https://en.wikipedia.org/wiki/Hajji_Firuz_Tepe",
       "tags": [
-        "Conservation",
         "Neolithic",
+        "Conservation",
         "Technology",
         "Wine"
       ],
@@ -50,12 +50,12 @@
       "source": "https://en.wikipedia.org/wiki/Scorpion_I",
       "tags": [
         "Egypt",
-        "Burial",
         "Culture",
-        "Luxury",
-        "Neolithic",
+        "Burial",
         "Tomb",
+        "Luxury",
         "Trade",
+        "Neolithic",
         "Wine"
       ],
       "type": "historic"
@@ -65,18 +65,18 @@
       "description": "Cuneiform records from the cities of Ur, Lagash, and Nippur reveal that wine — unlike beer, which was locally brewed from barley and issued as daily rations — was an imported luxury commodity in ancient Mesopotamia. The terrain of the river plain between the Tigris and Euphrates was unsuitable for viticulture: flat, hot, and prone to salination. Wine arrived by boat and overland caravan from the mountains of the Zagros, Taurus, and Lebanon range, and its scarcity made it the exclusive drink of kings, high priests, and temple ritual. \n\nTemple inventories from the city of Lagash record wine deliveries for the goddess Bau's feasts, and the Epic of Gilgamesh uses wine as a marker of civilization: the wild man Enkidu first becomes fully human by drinking beer and wine in Shamhat's company.",
       "description_ru": "Клинописные записи из городов Ур, Лагаш и Ниппур показывают, что вино — в отличие от пива, варившегося из местного ячменя и выдававшегося как ежедневный паёк, — было импортным предметом роскоши в древней Месопотамии. Рельеф речной равнины между Тигром и Евфратом не подходил для виноградарства: он был плоским, жарким и склонным к засолению. Вино прибывало на лодках и в наземных торговых вереницах из гор Загроса, Тавра и Ливанского хребта, и его редкость делала его исключительным напитком царей, верховных жрецов и храмовых ритуалов.\n\nХрамовые инвентари Лагаша фиксируют поставки вина для пиров богини Бау, а «Эпос о Гильгамеше» использует вино как маркер цивилизации: дикий человек Энкиду становится по-настоящему человеком, выпив пива и вина в обществе Шамхат.",
       "era": "BC",
-      "latitude": 31.324,
-      "longitude": 45.636,
+      "latitude": 31.3225,
+      "longitude": 45.6372,
       "name": "Wine as a Luxury Import in Sumer",
       "name_ru": "Вино как предмет роскоши в Шумере",
       "source": "https://en.wikipedia.org/wiki/History_of_wine",
       "tags": [
+        "Mesopotamian",
         "Sumerian",
-        "Bronze Age",
         "Culture",
         "Luxury",
-        "Mesopotamian",
         "Trade",
+        "Bronze Age",
         "Wine"
       ],
       "type": "cultural"
@@ -93,10 +93,10 @@
       "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
       "tags": [
         "Minoan",
-        "Bronze Age",
-        "Fermentation",
         "Pottery",
         "Trade",
+        "Bronze Age",
+        "Fermentation",
         "Wine"
       ],
       "type": "cultural"
@@ -113,10 +113,10 @@
       "source": "https://en.wikipedia.org/wiki/Dionysus",
       "tags": [
         "Greek",
-        "Culture",
-        "Divination",
-        "Pagan",
         "Religious",
+        "Pagan",
+        "Divination",
+        "Culture",
         "Theater",
         "Wine"
       ],
@@ -135,8 +135,8 @@
       "tags": [
         "Greek",
         "Culture",
-        "Customs",
         "Philosophy",
+        "Customs",
         "Wine"
       ],
       "type": "cultural"
@@ -153,11 +153,11 @@
       "source": "https://en.wikipedia.org/wiki/Falernian_wine",
       "tags": [
         "Roman",
-        "Agriculture",
         "Culture",
         "Customs",
-        "Fermentation",
         "Luxury",
+        "Agriculture",
+        "Fermentation",
         "Wine"
       ],
       "type": "cultural"
@@ -195,10 +195,10 @@
       "source": "https://en.wikipedia.org/wiki/Ausonius",
       "tags": [
         "Roman",
-        "Agriculture",
-        "Culture",
         "Germanic",
+        "Culture",
         "Poetry",
+        "Agriculture",
         "Wine"
       ],
       "type": "cultural"
@@ -215,12 +215,12 @@
       "source": "https://en.wikipedia.org/wiki/Qvevri",
       "tags": [
         "Caucasian",
-        "Conservation",
+        "Georgian",
         "Culture",
+        "Conservation",
         "Fermentation",
         "Technology",
-        "Wine",
-        "Georgian"
+        "Wine"
       ],
       "type": "cultural"
     },
@@ -237,8 +237,10 @@
       "tags": [
         "Roman",
         "Italian",
-        "Benedictine",
+        "Religious",
         "Christian",
+        "Benedictine",
+        "Catholic",
         "Culture",
         "Law",
         "Monastery",
@@ -257,12 +259,12 @@
       "name_ru": "Византийская Мальвазия — вино Монемвасии",
       "source": "https://en.wikipedia.org/wiki/Malmsey",
       "tags": [
+        "Byzantine",
         "Greek",
         "Roman",
-        "Byzantine",
-        "Fermentation",
         "Luxury",
         "Trade",
+        "Fermentation",
         "Wine"
       ],
       "type": "cultural"
@@ -279,11 +281,12 @@
       "source": "https://en.wikipedia.org/wiki/Omar_Khayyam",
       "tags": [
         "Persian",
-        "Birth",
-        "Culture",
         "Islamic",
-        "Philosophy",
+        "Culture",
+        "Literature",
         "Poetry",
+        "Philosophy",
+        "Birth",
         "Prohibition",
         "Seljuk Empire",
         "Wine"
@@ -301,11 +304,12 @@
       "name_ru": "Монахи-цистерцианцы придумывают терруары",
       "source": "https://en.wikipedia.org/wiki/Clos_de_Vougeot",
       "tags": [
+        "French",
+        "Christian",
+        "Catholic",
+        "Cistercian",
         "Agriculture",
         "Burgundy",
-        "Christian",
-        "Cistercian",
-        "France",
         "Innovation",
         "Monastery",
         "Technology",
@@ -324,13 +328,13 @@
       "name_ru": "Английская корона получает Аквитанию",
       "source": "https://en.wikipedia.org/wiki/Claret",
       "tags": [
-        "Marriage",
-        "Eleanor of Aquitaine",
-        "England",
-        "English",
         "France",
         "French",
+        "England",
+        "English",
+        "Marriage",
         "Trade",
+        "Eleanor of Aquitaine 👑",
         "Wine"
       ],
       "type": "historic"
@@ -347,9 +351,10 @@
       "source": "https://en.wikipedia.org/wiki/Riesling",
       "tags": [
         "German",
-        "Agriculture",
         "Christian",
+        "Catholic",
         "Cistercian",
+        "Agriculture",
         "Innovation",
         "Monastery",
         "Wine"
@@ -357,26 +362,27 @@
       "type": "historic"
     },
     {
-      "date": "01.01.1524",
+      "date": "01.01.1527",
       "description": "Hernán Cortés, as governor of New Spain, issued a decree requiring Spanish settlers who owned encomiendas to plant a thousand grapevines annually for every hundred laborers under their management. The first commercial Mexican harvest followed within a decade, using vines shipped from the Canary Islands. The variety planted — called Mission in California, Listán Prieto in the Canary Islands, and País in Chile — became the standard vine of Spanish colonial America: hardy, productive, and suitable for both fortification and mass. By the 1550s, the success of Mexican wine was so threatening to Spanish exporters that the Crown began imposing restrictions on colonial production to protect Iberian trade.\n\nMission grapes spread south with the Franciscan missions to Peru (where wine was being produced by the 1560s), Argentina, and Chile, and north to California, where Father Junípero Serra founded the first California mission in 1769. California's mission wine culture persisted until the secularization of the missions in the 1830s; Mission grapes were then supplanted by European varieties brought by the discerning public of the Gold Rush era.",
       "description_ru": "Эрнан Кортес как губернатор Новой Испании издал указ, обязывавший испанских поселенцев, владевших энкомьендами, ежегодно сажать тысячу виноградных лоз на каждую сотню работников под их управлением. Первый коммерческий мексиканский урожай последовал в течение десятилетия, с использованием лоз, доставленных с Канар. Сорт — называемый Миссия в Калифорнии, Листан-Прието на Канарах и Паис в Чили — стал стандартной лозой испанской колониальной Америки: выносливой, урожайной, пригодной как для крепления, так и для мессы. К 1550-м годам успех мексиканского вина настолько угрожал испанским экспортёрам, что Корона начала вводить ограничения на колониальное производство для защиты иберийской торговли.\n\nВиноград Миссия распространился на юг вместе с францисканскими миссиями: в Перу (где к 1560-м годам производилось вино), Аргентину и Чили, и на север, в Калифорнию, где в 1769 году отец Хуниперо Серра основал первую калифорнийскую миссию. Калифорнийская культура миссийного вина сохранялась вплоть до секуляризации миссий в 1830-х годах; виноград Миссия затем был вытеснен европейскими сортами, которые привезла требовательная публика эпохи золотой лихорадки. ",
       "era": "AD",
-      "latitude": 19.43,
-      "longitude": -99.13,
+      "latitude": 19.4326,
+      "longitude": -99.1332,
       "name": "The Spanish bring wine to the New World",
       "name_ru": "Испанцы приносят вино в Новый Свет",
       "source": "https://en.wikipedia.org/wiki/Mission_grape",
       "tags": [
-        "Agriculture",
         "American",
+        "Spanish",
+        "New World",
+        "Catholic",
+        "Franciscan",
+        "Economic",
+        "Agriculture",
         "Colonization",
         "Cortés 👤",
-        "Economic",
-        "Franciscan",
         "Law",
-        "New World",
         "Spain",
-        "Spanish",
         "Wine"
       ],
       "type": "historic"
@@ -392,10 +398,10 @@
       "name_ru": "Токайское Асу и Botrytis cinerea",
       "source": "https://en.wikipedia.org/wiki/Tokaji_wine",
       "tags": [
+        "Hungary",
         "Legend",
         "Agriculture",
         "Fermentation",
-        "Hungary",
         "Innovation",
         "Technology",
         "Wine"
@@ -413,10 +419,10 @@
       "name_ru": "Первый урожай винограда в Южной Африке",
       "source": "https://en.wikipedia.org/wiki/South_African_wine",
       "tags": [
-        "Agriculture",
-        "Colonization",
         "Dutch",
         "New World",
+        "Agriculture",
+        "Colonization",
         "South Africa",
         "VOC",
         "Wine"
@@ -434,12 +440,12 @@
       "name_ru": "Открытие вторичного брожения и шампанского",
       "source": "https://en.wikipedia.org/wiki/Champagne_(wine)",
       "tags": [
-        "Culture",
-        "Fermentation",
         "France",
         "French",
-        "Innovation",
+        "Culture",
         "Luxury",
+        "Fermentation",
+        "Innovation",
         "Technology",
         "Wine"
       ],
@@ -456,15 +462,15 @@
       "name_ru": "Создание портвейна",
       "source": "https://en.wikipedia.org/wiki/Port_wine",
       "tags": [
-        "Conservation",
         "England",
         "English",
+        "Trade",
+        "Conservation",
         "Fermentation",
         "Innovation",
         "Portugal",
         "Portuguese",
         "Technology",
-        "Trade",
         "Wine"
       ],
       "type": "historic"
@@ -480,9 +486,9 @@
       "name_ru": "Констанция — вино с Мыса Доброй Надежды",
       "source": "https://en.wikipedia.org/wiki/Constantia_(wine)",
       "tags": [
-        "Agriculture",
         "Dutch",
         "Luxury",
+        "Agriculture",
         "South Africa",
         "VOC",
         "Wine"
@@ -500,13 +506,13 @@
       "name_ru": "Первая классификация вин Бордо",
       "source": "https://en.wikipedia.org/wiki/Bordeaux_Wine_Official_Classification_of_1855",
       "tags": [
-        "Culture",
         "France",
         "French",
-        "Law",
+        "Culture",
         "Luxury",
-        "Marketing",
         "Trade",
+        "Law",
+        "Marketing",
         "Wine"
       ],
       "type": "historic"
@@ -522,10 +528,10 @@
       "name_ru": "«Исследования о вине» Пастера",
       "source": "https://en.wikipedia.org/wiki/Pasteurization",
       "tags": [
-        "Conservation",
-        "Fermentation",
         "France",
         "French",
+        "Conservation",
+        "Fermentation",
         "Innovation",
         "Pasteur 👤",
         "Science",
@@ -546,13 +552,13 @@
       "name_ru": "Филлоксера учичтожает виноградники Европы",
       "source": "https://en.wikipedia.org/wiki/Great_French_Wine_Blight",
       "tags": [
-        "Agriculture",
         "American",
-        "Crisis",
-        "Economic",
         "France",
         "French",
-        "Plague",
+        "Crisis",
+        "Economic",
+        "Agriculture",
+        "Plague 🦠",
         "Science",
         "Wine"
       ],
@@ -571,8 +577,8 @@
       "tags": [
         "France",
         "Industry",
-        "Law",
         "Standardization",
+        "Law",
         "Wine"
       ],
       "type": "political"
@@ -589,10 +595,10 @@
       "source": "https://en.wikipedia.org/wiki/Judgment_of_Paris_(wine)",
       "tags": [
         "American",
-        "Competition",
-        "Culture",
         "France",
         "French",
+        "Culture",
+        "Competition",
         "Globalization",
         "Marketing",
         "USA",

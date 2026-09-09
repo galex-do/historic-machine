@@ -13,9 +13,9 @@
       "source": "https://en.wikipedia.org/wiki/Pentre_Ifan",
       "tags": [
         "Britain",
+        "Welsh",
         "Megalithic",
-        "Neolithic",
-        "Welsh"
+        "Neolithic"
       ],
       "type": "religious"
     },
@@ -31,13 +31,13 @@
       "source": "https://en.wikipedia.org/wiki/Bryn_Celli_Ddu",
       "tags": [
         "British",
-        "Earthwork",
-        "Holy Site",
-        "Megalithic",
-        "Mound Builders",
-        "Neolithic",
         "Pagan",
-        "Tomb"
+        "Holy Site",
+        "Tomb",
+        "Megalithic",
+        "Neolithic",
+        "Earthwork",
+        "Mound Builders"
       ],
       "type": "religious"
     },
@@ -56,7 +56,7 @@
         "Engineering ⚙️",
         "Megalithic",
         "Neolithic",
-        "Transport"
+        "Logistics"
       ],
       "type": "historic"
     },
@@ -73,12 +73,12 @@
       "tags": [
         "Bell Beaker",
         "British",
-        "Bronze Age",
         "Copper",
+        "Mining",
+        "Trade",
         "Economic",
         "Engineering ⚙️",
-        "Mining",
-        "Trade"
+        "Bronze Age"
       ],
       "type": "historic"
     },
@@ -93,14 +93,14 @@
       "name_ru": "Трер-Кейри — валлийский «Город Великанов»",
       "source": "https://en.wikipedia.org/wiki/Tre%27r_Ceiri",
       "tags": [
-        "Celtic",
         "British",
+        "Celtic",
+        "Welsh",
         "Culture",
         "Fortification",
         "Highlanders",
         "Iron Age",
-        "Settlement",
-        "Welsh"
+        "Settlement"
       ],
       "type": "historic"
     },
@@ -116,11 +116,11 @@
       "source": "https://en.wikipedia.org/wiki/Caratacus",
       "tags": [
         "Roman",
-        "Celtic",
-        "War",
         "British",
-        "Guerilla",
+        "Celtic",
         "Welsh",
+        "War",
+        "Guerilla",
         "Resistance"
       ],
       "type": "military"
@@ -137,10 +137,11 @@
       "source": "https://en.wikipedia.org/wiki/Caerleon",
       "tags": [
         "Roman",
-        "Building 🏠",
-        "Architecture",
         "Britain",
+        "Architecture",
+        "Building 🏠",
         "Fortification",
+        "Colonization",
         "Military"
       ],
       "type": "historic"
@@ -158,8 +159,10 @@
       "tags": [
         "Roman",
         "Celtic",
+        "Welsh",
         "City",
-        "Welsh"
+        "Colonization",
+        "Expansion"
       ],
       "type": "historic"
     },
@@ -175,12 +178,12 @@
       "source": "https://en.wikipedia.org/wiki/Magnus_Maximus",
       "tags": [
         "Roman",
+        "Britain",
+        "Welsh",
         "Civil War",
         "Dynasty",
-        "Legend",
-        "Britain",
         "Emperor",
-        "Welsh"
+        "Legend"
       ],
       "type": "political"
     },
@@ -195,15 +198,15 @@
       "name_ru": "Кунедда — родоначальник валлийских королей",
       "source": "https://en.wikipedia.org/wiki/Cunedda",
       "tags": [
-        "Celtic",
-        "Dynasty",
-        "King",
-        "Legend",
         "British",
-        "Foundation",
+        "Celtic",
+        "Welsh",
         "Gwynedd",
         "Kingdom",
-        "Welsh"
+        "Foundation",
+        "Dynasty",
+        "King",
+        "Legend"
       ],
       "type": "political"
     },
@@ -219,15 +222,15 @@
       "source": "https://en.wikipedia.org/wiki/Illtud",
       "tags": [
         "Celtic",
+        "Welsh",
+        "Foundation",
+        "Religious",
         "Christian",
+        "Saint",
+        "Holy Site",
         "Culture",
         "Education",
-        "Foundation",
-        "Holy Site",
-        "Monastery",
-        "Religious",
-        "Saint",
-        "Welsh"
+        "Monastery"
       ],
       "type": "religious"
     },
@@ -242,17 +245,17 @@
       "name_ru": "Святой Давид (Деви Сант) — покровитель Уэльса",
       "source": "https://en.wikipedia.org/wiki/Saint_David",
       "tags": [
-        "Celtic",
-        "Birth",
         "British",
-        "Christian",
-        "Culture",
-        "Holidays",
-        "Holy Site",
-        "Patron",
+        "Celtic",
+        "Welsh",
         "Religious",
+        "Christian",
+        "Patron",
         "Saint",
-        "Welsh"
+        "Holy Site",
+        "Culture",
+        "Birth",
+        "Holidays"
       ],
       "type": "religious"
     },
@@ -267,13 +270,13 @@
       "name_ru": "Талиесин — первый великий валлийский поэт",
       "source": "https://en.wikipedia.org/wiki/Taliesin",
       "tags": [
-        "Celtic",
-        "Legend",
         "British",
+        "Celtic",
+        "Welsh",
         "Culture",
         "Literature",
         "Poetry",
-        "Welsh"
+        "Legend"
       ],
       "type": "cultural"
     },
@@ -288,13 +291,13 @@
       "name_ru": "«И Гододин» — элегия Анейрина о цвете валлийских воинов",
       "source": "https://en.wikipedia.org/wiki/Y_Gododdin",
       "tags": [
-        "Celtic",
-        "Legend",
         "British",
+        "Celtic",
+        "Welsh",
         "Culture",
         "Literature",
         "Poetry",
-        "Welsh"
+        "Legend"
       ],
       "type": "cultural"
     },
@@ -309,13 +312,13 @@
       "name_ru": "Родри Маур — первый король, объединивший Уэльс",
       "source": "https://en.wikipedia.org/wiki/Rhodri_Mawr",
       "tags": [
+        "British",
         "Celtic",
+        "Welsh",
+        "Gwynedd",
         "Dynasty",
         "King",
-        "British",
-        "Gwynedd",
-        "Unification",
-        "Welsh"
+        "Unification"
       ],
       "type": "political"
     },
@@ -331,14 +334,14 @@
       "source": "https://en.wikipedia.org/wiki/Wales_in_the_Early_Middle_Ages",
       "tags": [
         "Celtic",
-        "War",
-        "Crisis",
-        "Danish",
-        "Invasion",
         "Norman",
+        "Welsh",
+        "Danish",
         "Norse",
-        "Pillage",
-        "Welsh"
+        "Crisis",
+        "War",
+        "Invasion",
+        "Pillage"
       ],
       "type": "military"
     },
@@ -353,12 +356,12 @@
       "name_ru": "«Армес Придейн» призывает британцев объединиться",
       "source": "https://en.wikipedia.org/wiki/Armes_Prydein",
       "tags": [
-        "Celtic",
         "British",
+        "Celtic",
+        "Welsh",
         "Culture",
         "Literature",
         "Poetry",
-        "Welsh",
         "Resistance"
       ],
       "type": "cultural"
@@ -374,14 +377,14 @@
       "name_ru": "Хивел Добрый кодифицирует законы Уэльса",
       "source": "https://en.wikipedia.org/wiki/Hywel_Dda",
       "tags": [
-        "Celtic",
-        "Reform",
-        "King",
         "British",
-        "Code",
+        "Celtic",
+        "Welsh",
         "Human Rights",
-        "Law",
-        "Welsh"
+        "King",
+        "Reform",
+        "Code",
+        "Law"
       ],
       "type": "political"
     },
@@ -396,13 +399,13 @@
       "name_ru": "Груффид ап Ллевелин объединяет Уэльс",
       "source": "https://en.wikipedia.org/wiki/Gruffudd_ap_Llywelyn",
       "tags": [
+        "British",
         "Celtic",
+        "Welsh",
+        "Gwynedd",
         "Dynasty",
         "King",
-        "British",
-        "Gwynedd",
-        "Unification",
-        "Welsh"
+        "Unification"
       ],
       "type": "political"
     },
@@ -417,14 +420,14 @@
       "name_ru": "Норманское наступление на Уэльс",
       "source": "https://en.wikipedia.org/wiki/Welsh_Marches",
       "tags": [
+        "Norman",
+        "Welsh",
+        "English",
+        "Normandy",
         "War",
         "Conquest",
-        "English",
-        "Fortification",
         "Invasion",
-        "Norman",
-        "Normandy",
-        "Welsh",
+        "Fortification",
         "William the Conqueror 👤"
       ],
       "type": "military"
@@ -440,14 +443,14 @@
       "name_ru": "«Мабиногион» — валлийские сказания и мифы",
       "source": "https://en.wikipedia.org/wiki/Mabinogion",
       "tags": [
-        "Celtic",
-        "Legend",
         "British",
+        "Celtic",
+        "Welsh",
+        "Pagan",
         "Culture",
         "Literature",
-        "Pagan",
         "Poetry",
-        "Welsh"
+        "Legend"
       ],
       "type": "cultural"
     },
@@ -462,15 +465,16 @@
       "name_ru": "Тинтернское аббатство основано в Уэльсе",
       "source": "https://en.wikipedia.org/wiki/Tintern_Abbey",
       "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Christian",
-        "Cistercian",
-        "Holy Site",
-        "Monastery",
-        "Order",
+        "Welsh",
         "Religious",
-        "Welsh"
+        "Christian",
+        "Catholic",
+        "Cistercian",
+        "Order",
+        "Holy Site",
+        "Architecture",
+        "Building 🏠",
+        "Monastery"
       ],
       "type": "religious"
     },
@@ -485,11 +489,11 @@
       "name_ru": "Лорд Рис — культурное возрождение Южного Уэльса",
       "source": "https://en.wikipedia.org/wiki/Rhys_ap_Gruffudd",
       "tags": [
-        "Celtic",
-        "King",
         "British",
+        "Celtic",
+        "Welsh",
         "Culture",
-        "Welsh"
+        "King"
       ],
       "type": "political"
     },
@@ -505,13 +509,13 @@
       "source": "https://en.wikipedia.org/wiki/Eisteddfod",
       "tags": [
         "Celtic",
+        "Welsh",
         "Culture",
-        "Customs",
-        "Holidays",
         "Literature",
         "Music",
         "Poetry",
-        "Welsh"
+        "Customs",
+        "Holidays"
       ],
       "type": "cultural"
     },
@@ -526,14 +530,14 @@
       "name_ru": "Гиральд Камбрийский пишет о валлийцах",
       "source": "https://en.wikipedia.org/wiki/Gerald_of_Wales",
       "tags": [
-        "Celtic",
         "British",
+        "Celtic",
+        "Welsh",
         "Christian",
         "Culture",
-        "History",
         "Literature",
-        "Text",
-        "Welsh"
+        "History",
+        "Text"
       ],
       "type": "cultural"
     },
@@ -549,15 +553,15 @@
       "source": "https://en.wikipedia.org/wiki/Llywelyn_the_Great",
       "tags": [
         "Celtic",
+        "Welsh",
+        "Gwynedd",
         "Marriage",
+        "Plantagenet",
         "Dynasty",
         "King",
-        "Golden Age",
-        "Gwynedd",
-        "Law",
-        "Plantagenet",
         "Political",
-        "Welsh"
+        "Golden Age",
+        "Law"
       ],
       "type": "political"
     },
@@ -573,11 +577,11 @@
       "source": "https://en.wikipedia.org/wiki/Llywelyn_ap_Gruffudd",
       "tags": [
         "Celtic",
+        "Welsh",
+        "Gwynedd",
         "Dynasty",
         "King",
-        "Gwynedd",
-        "Law",
-        "Welsh"
+        "Law"
       ],
       "type": "political"
     },
@@ -593,14 +597,14 @@
       "source": "https://en.wikipedia.org/wiki/Llywelyn_ap_Gruffudd",
       "tags": [
         "Celtic",
+        "Welsh",
+        "England",
+        "English",
+        "Crisis",
         "War",
         "Battle",
         "King",
-        "Crisis",
-        "Death",
-        "England",
-        "English",
-        "Welsh"
+        "Death"
       ],
       "type": "military"
     },
@@ -615,15 +619,15 @@
       "name_ru": "Английское правление навязано Уэльсу",
       "source": "https://en.wikipedia.org/wiki/Statute_of_Rhuddlan",
       "tags": [
-        "Administration",
-        "Conquest",
-        "Crisis",
-        "Edward I 👑",
+        "Welsh",
         "English",
-        "Law",
+        "Crisis",
+        "Conquest",
         "Plantagenet",
-        "Vassalage",
-        "Welsh"
+        "Administration",
+        "Edward I 👑",
+        "Law",
+        "Vassalage"
       ],
       "type": "political"
     },
@@ -638,17 +642,17 @@
       "name_ru": "Железное кольцо Эдуарда I в Уэльсе",
       "source": "https://en.wikipedia.org/wiki/Castles_and_Town_Walls_of_King_Edward_in_Gwynedd",
       "tags": [
-        "Building 🏠",
-        "Architecture",
         "British",
-        "Castle",
-        "Colonization",
-        "Edward I 👑",
+        "Welsh",
         "English",
-        "Fortification",
         "Gwynedd",
         "Plantagenet",
-        "Welsh"
+        "Architecture",
+        "Building 🏠",
+        "Castle",
+        "Fortification",
+        "Colonization",
+        "Edward I 👑"
       ],
       "type": "historic"
     },
@@ -663,14 +667,14 @@
       "name_ru": "Расцвет валлийской бардической традиции",
       "source": "https://en.wikipedia.org/wiki/Dafydd_ap_Gwilym",
       "tags": [
-        "Celtic",
         "British",
+        "Celtic",
+        "Welsh",
         "Culture",
         "Language",
         "Literature",
         "Music",
         "Poetry",
-        "Welsh",
         "Resistance"
       ],
       "type": "cultural"
@@ -686,15 +690,16 @@
       "name_ru": "Начало валлийского восстания против Англии",
       "source": "https://en.wikipedia.org/wiki/Owain_Glynd%C5%B5r",
       "tags": [
+        "British",
         "Celtic",
+        "Welsh",
+        "England",
+        "English",
         "War",
+        "Rebellion",
         "Dynasty",
         "King",
-        "British",
-        "England",
         "Owain Glyndŵr 👤",
-        "Rebellion",
-        "Welsh",
         "Resistance"
       ],
       "type": "political"
@@ -711,13 +716,13 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Bryn_Glas",
       "tags": [
         "Celtic",
-        "War",
-        "Battle",
+        "Welsh",
         "England",
         "English",
-        "Owain Glyndŵr 👤",
+        "War",
         "Rebellion",
-        "Welsh",
+        "Battle",
+        "Owain Glyndŵr 👤",
         "Resistance"
       ],
       "type": "military"
@@ -734,14 +739,14 @@
       "source": "https://en.wikipedia.org/wiki/Owain_Glynd%C5%B5r",
       "tags": [
         "Celtic",
+        "Welsh",
+        "England",
         "War",
         "Diplomacy",
         "King",
-        "England",
+        "Parliament",
         "Independence",
         "Owain Glyndŵr 👤",
-        "Parliament",
-        "Welsh",
         "Resistance"
       ],
       "type": "political"
@@ -758,15 +763,15 @@
       "source": "https://en.wikipedia.org/wiki/Pennal_Letter",
       "tags": [
         "Celtic",
+        "Welsh",
+        "France",
+        "England",
         "War",
         "Diplomacy",
-        "England",
-        "France",
-        "Owain Glyndŵr 👤",
         "Political",
-        "Text",
-        "Welsh",
-        "Resistance"
+        "Owain Glyndŵr 👤",
+        "Resistance",
+        "Text"
       ],
       "type": "political"
     },
@@ -782,13 +787,13 @@
       "source": "https://en.wikipedia.org/wiki/Owain_Glynd%C5%B5r",
       "tags": [
         "Celtic",
+        "Welsh",
+        "England",
         "War",
         "Legend",
-        "Decline",
-        "England",
         "Mystery",
+        "Decline",
         "Owain Glyndŵr 👤",
-        "Welsh",
         "Resistance"
       ],
       "type": "historic"

@@ -12,12 +12,12 @@
       "name_ru": "Происхождение Гёктюрков",
       "source": "https://en.wikipedia.org/wiki/G%C3%B6kt%C3%BCrks",
       "tags": [
-        "Legend",
-        "Cosmology",
-        "Nomads",
         "Pannonian Avars",
+        "Turkic",
+        "Cosmology",
+        "Legend",
         "Political",
-        "Turkic"
+        "Nomads"
       ],
       "type": "historic"
     },
@@ -32,12 +32,12 @@
       "name_ru": "Рождение двойного тюркского каганата",
       "source": "https://en.wikipedia.org/wiki/Ist%C3%A4mi",
       "tags": [
-        "Dynasty",
-        "Foundation",
+        "Turkic",
         "Kingdom",
-        "Nomads",
+        "Foundation",
+        "Dynasty",
         "Political",
-        "Turkic"
+        "Nomads"
       ],
       "type": "political"
     },
@@ -52,15 +52,16 @@
       "name_ru": "Гёктюрки захватывают Согдиану",
       "source": "https://en.wikipedia.org/wiki/Silk_Road#G%C3%B6kt%C3%BCrks",
       "tags": [
+        "Hephthalites",
+        "Turkic",
+        "Huns",
+        "Sogdian",
         "War",
         "Conquest",
-        "Hephthalites",
-        "Huns",
-        "Political",
-        "Route",
         "Silk Road",
         "Trade",
-        "Turkic"
+        "Route",
+        "Political"
       ],
       "type": "historic"
     },
@@ -75,13 +76,14 @@
       "name_ru": "Согдийцы — торговая основа Тюркской империи",
       "source": "https://en.wikipedia.org/wiki/Sogdians",
       "tags": [
-        "Diplomacy",
+        "Turkic",
+        "Sogdian",
         "Culture",
-        "Economic",
+        "Writing",
+        "Diplomacy",
         "Silk Road",
         "Trade",
-        "Turkic",
-        "Writing"
+        "Economic"
       ],
       "type": "historic"
     },
@@ -96,15 +98,15 @@
       "name_ru": "Посольство гёктюрков в Константинополь",
       "source": "https://en.wikipedia.org/wiki/Zemarchos",
       "tags": [
-        "Roman",
-        "Diplomacy",
         "Byzantine",
+        "Roman",
+        "Turkic",
         "Customs",
+        "Diplomacy",
         "History",
-        "Political",
         "Silk Road",
         "Trade",
-        "Turkic"
+        "Political"
       ],
       "type": "political"
     },
@@ -119,14 +121,14 @@
       "name_ru": "Тенгризм — духовная основа Средней Азии",
       "source": "https://en.wikipedia.org/wiki/Tengrism",
       "tags": [
-        "Animism",
-        "Culture",
-        "Divination",
-        "Nomads",
-        "Pagan",
-        "Political",
         "Religious",
-        "Tengrism"
+        "Pagan",
+        "Animism",
+        "Divination",
+        "Tengrism",
+        "Culture",
+        "Political",
+        "Nomads"
       ],
       "type": "cultural"
     },
@@ -141,11 +143,11 @@
       "name_ru": "Тюркский каганат от Кореи до Каспия",
       "source": "https://en.wikipedia.org/wiki/Muqan_Qaghan",
       "tags": [
+        "Turkic",
         "Empire",
-        "Expansion",
-        "Nomads",
         "Political",
-        "Turkic"
+        "Expansion",
+        "Nomads"
       ],
       "type": "political"
     },
@@ -160,13 +162,13 @@
       "name_ru": "Раздел на Восточный и Западный каганаты",
       "source": "https://en.wikipedia.org/wiki/First_Turkic_Khaganate",
       "tags": [
+        "Turkic",
         "Civil War",
-        "Collapse",
         "Crisis",
-        "Fragmentation",
-        "Nomads",
         "Political",
-        "Turkic"
+        "Collapse",
+        "Fragmentation",
+        "Nomads"
       ],
       "type": "political"
     },
@@ -175,18 +177,18 @@
       "description": "Despite civil war and the cunning of Chinese strategists, the Göktürk Eastern Khaganate retained sufficient power to humiliate the Chinese emperor on his own soil. Emperor Yang of Sui — just returned from a disastrous campaign against the Korean state of Goguryeo — was trapped in the fortress of Yanmen in Shanxi by the Eastern Khaganate army under Shibi Khagan. The siege lasted for several weeks; the emperor sent desperate appeals for aid to provincial commanders. The threat was only lifted when Empress Xiao sent a message to Shibi Khagan, reminding him that his wife was a Sui princess and that an attack on her father was therefore inappropriate. Shibi retreated, apparently satisfied with the tribute and political humiliation.",
       "description_ru": "Несмотря на гражданскую войну и хитрость китайских стратегов, Гёктюркский Восточный каганат сохранил достаточную мощь, чтобы унизить китайского императора на его собственной земле. Император Ян Суй — только что вернувшийся из катастрофической кампании против корейского государства Когурё — был заперт в крепости Яньмэнь в Шаньси армией Восточного каганата под командованием Шиби-кагана. Осада длилась несколько недель; император слал отчаянные призывы о помощи провинциальным командирам. Угроза была снята, лишь когда императрица Сяо отправила послание Шиби-кагану, напомнив ему, что его жена — суйская принцесса, и что нападение на её отца поэтому неуместно. Шиби отступил, по-видимому довольный данью и политическим унижением.",
       "era": "AD",
-      "latitude": 39.5,
-      "longitude": 113,
+      "latitude": 39.18942473,
+      "longitude": 112.87010193,
       "name": "Shibi Khagan besieges the Emperor of China in Yanmen",
       "name_ru": "Шиби-каган осаждает императора Китая в Яньмэне",
       "source": "https://en.wikipedia.org/wiki/Shibi_Khan",
       "tags": [
         "Chinese",
+        "Turkic",
+        "Sui",
         "War",
         "Nomads",
-        "Siege",
-        "Sui",
-        "Turkic"
+        "Siege"
       ],
       "type": "military"
     },
@@ -200,32 +202,11 @@
       "name": "Drought in Mongolia",
       "name_ru": "Засуха в Монголии",
       "tags": [
+        "Turkic",
         "Climate Crisis",
-        "Famine",
-        "Turkic"
+        "Famine"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.0630",
-      "description": "Emperor Tang Taizong achieved the complete destruction of the Eastern Göktürk Khaganate. The campaign was the culmination of a four-year strategy that combined military pressure with the systematic exploitation of Göktürk internal dissent, diplomatic subjugation of Turkic tribes, and the use of famine (a severe drought in 627–628 devastated the Mongolian steppe, destroying vast numbers of horses and cattle). The last Eastern Khagan, Xili, was captured after the disintegration of his army and brought to Chang'an, where Taizong installed him at the Tang court.\n\nRather than exterminate or enslave the Eastern Turkic population, he resettled them on the northern border as Tang feudatories. He adopted the title of Heavenly Khagan (Tian Kehan) from the subject Turkic tribes, a title that made him both the Tang emperor and the supreme ruler of the steppe world.",
-      "description_ru": "Император Тан Тайцзун добился полного уничтожения Восточного Гёктюркского каганата. Кампания стала кульминацией четырёхлетней стратегии, сочетавшей военное давление с систематической эксплуатацией гёктюркских внутренних разногласий, дипломатическим подчинением тюркских племён и использованием голода (жестокая засуха 627–628 годов опустошила Монгольскую степь, уничтожив огромное количество лошадей и скота). Последний Восточный каган Сели был захвачен после распада его армии и доставлен в Чанъань, где Тайцзун выставил его при Танском дворе.\n\nВместо того чтобы уничтожать или порабощать восточнотюркское население, он переселил его на северную границу в качестве танских федератов. Он принял титул Небесного кагана (Тянь-Кэхань) от подчинённых тюркских племён — титул, делавший его одновременно танским императором и верховным правителем степного мира.",
-      "era": "AD",
-      "latitude": 42,
-      "longitude": 111,
-      "name": "Tang Taizong Destroys the Eastern Khaganate",
-      "name_ru": "Тан Тайцзун уничтожает Восточный каганат",
-      "source": "https://en.wikipedia.org/wiki/Eastern_Turkic_Khaganate",
-      "tags": [
-        "Chinese",
-        "War",
-        "Battle",
-        "Collapse",
-        "Conquest",
-        "Tang",
-        "Turkic"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.0635",
@@ -238,13 +219,13 @@
       "name_ru": "Появление Хазарского каганата",
       "source": "https://en.wikipedia.org/wiki/Khazar_Khaganate",
       "tags": [
-        "Foundation",
-        "Kingdom",
-        "Migration",
-        "Nomads",
-        "Political",
+        "Khazar",
         "Turkic",
-        "Khazar"
+        "Kingdom",
+        "Foundation",
+        "Political",
+        "Migration",
+        "Nomads"
       ],
       "type": "political"
     },
@@ -260,13 +241,13 @@
       "source": "https://en.wikipedia.org/wiki/Arab%E2%80%93Khazar_wars",
       "tags": [
         "Arabian",
+        "Khazar",
+        "Turkic",
+        "Rashidun",
+        "Islamic",
         "War",
         "Battle",
-        "Islamic",
-        "Nomads",
-        "Rashidun",
-        "Turkic",
-        "Khazar"
+        "Nomads"
       ],
       "type": "military"
     },
@@ -281,11 +262,11 @@
       "name_ru": "Западный каганат зажат между Тан и арабами",
       "source": "https://en.wikipedia.org/wiki/Western_Turkic_Khaganate",
       "tags": [
+        "Turkic",
         "Crisis",
-        "Decline",
-        "Political",
         "Silk Road",
-        "Turkic"
+        "Political",
+        "Decline"
       ],
       "type": "political"
     },
@@ -301,13 +282,13 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Irtysh_River",
       "tags": [
         "Chinese",
+        "Turkic",
+        "Tang",
         "War",
+        "Conquest",
         "Battle",
         "Collapse",
-        "Conquest",
-        "Nomads",
-        "Tang",
-        "Turkic"
+        "Nomads"
       ],
       "type": "military"
     },
@@ -323,14 +304,14 @@
       "source": "https://en.wikipedia.org/wiki/Second_T%C3%BCrk_Khaganate",
       "tags": [
         "Chinese",
-        "Foundation",
-        "Independence",
-        "Kingdom",
-        "Nomads",
-        "Political",
-        "Rebellion",
+        "Turkic",
         "Tang",
-        "Turkic"
+        "Kingdom",
+        "Foundation",
+        "Rebellion",
+        "Political",
+        "Independence",
+        "Nomads"
       ],
       "type": "political"
     },
@@ -346,11 +327,12 @@
       "source": "https://en.wikipedia.org/wiki/Orkhon_inscriptions",
       "tags": [
         "Chinese",
-        "Culture",
-        "Political",
+        "Turkic",
         "Tengrism",
-        "Text",
-        "Turkic"
+        "Culture",
+        "Cosmology",
+        "Political",
+        "Text"
       ],
       "type": "cultural"
     },
@@ -365,15 +347,15 @@
       "name_ru": "Обращение хазар в иудаизм",
       "source": "https://en.wikipedia.org/wiki/Khazar%E2%80%93Jewish_correspondence",
       "tags": [
-        "Judaic",
-        "Adoption",
-        "Nomads",
-        "Political",
-        "Religious",
-        "Trade",
-        "Trick",
+        "Khazar",
         "Turkic",
-        "Khazar"
+        "Judaic",
+        "Religious",
+        "Adoption",
+        "Trade",
+        "Political",
+        "Nomads",
+        "Trick"
       ],
       "type": "religious"
     },
@@ -388,11 +370,11 @@
       "name_ru": "Уйгуры свергают Второй каганат",
       "source": "https://en.wikipedia.org/wiki/Uyghur_Khaganate",
       "tags": [
+        "Turkic",
+        "Political",
         "Collapse",
         "Nomads",
         "Overthrow",
-        "Political",
-        "Turkic",
         "Uyghur"
       ],
       "type": "political"

@@ -12,10 +12,10 @@
       "name_ru": "Айлью — андские родовые общины",
       "source": "https://en.wikipedia.org/wiki/Ayllu",
       "tags": [
-        "Administration",
+        "Inca",
         "Culture",
-        "Family",
-        "Inca"
+        "Administration",
+        "Family"
       ],
       "type": "cultural"
     },
@@ -30,10 +30,10 @@
       "name_ru": "Килке — крепость до Саксайуамана",
       "source": "https://en.wikipedia.org/wiki/Killke_culture",
       "tags": [
+        "Inca",
         "Culture",
         "Fortification",
-        "Highlanders",
-        "Inca"
+        "Highlanders"
       ],
       "type": "historic"
     },
@@ -48,12 +48,12 @@
       "name_ru": "Манко Капак основывает Куско",
       "source": "https://en.wikipedia.org/wiki/Manco_C%C3%A1pac",
       "tags": [
-        "City",
-        "Marriage",
-        "Legend",
+        "Inca",
         "Capital",
+        "City",
         "Foundation",
-        "Inca"
+        "Marriage",
+        "Legend"
       ],
       "type": "cultural"
     },
@@ -68,9 +68,10 @@
       "name_ru": "Куси Юпанки разбивает чанка у ворот Куско",
       "source": "https://en.wikipedia.org/wiki/Chanka%E2%80%93Inca_War",
       "tags": [
+        "Inca",
         "War",
         "Battle",
-        "Inca",
+        "Andean",
         "Pachacuti 👑"
       ],
       "type": "military"
@@ -86,9 +87,9 @@
       "name_ru": "Куси Юпанки принимает имя Пачакутек и основывает империю",
       "source": "https://en.wikipedia.org/wiki/Pachacuti",
       "tags": [
+        "Inca",
         "Empire",
         "Foundation",
-        "Inca",
         "Pachacuti 👑"
       ],
       "type": "political"
@@ -104,11 +105,11 @@
       "name_ru": "Пачакутек превращает Саксайуаман в имперскую крепость",
       "source": "https://en.wikipedia.org/wiki/Sacsayhuam%C3%A1n",
       "tags": [
-        "Building 🏠",
+        "Inca",
         "Architecture",
+        "Building 🏠",
         "Fortification",
         "Highlanders",
-        "Inca",
         "Pachacuti 👑"
       ],
       "type": "historic"
@@ -124,15 +125,15 @@
       "name_ru": "Кориканча — золотой храм солнца в Куско",
       "source": "https://en.wikipedia.org/wiki/Qorikancha",
       "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Culture",
-        "Divination",
-        "Holy Site",
         "Inca",
         "Religious",
-        "Sun",
-        "Temple"
+        "Divination",
+        "Holy Site",
+        "Culture",
+        "Architecture",
+        "Building 🏠",
+        "Temple",
+        "Sun"
       ],
       "type": "religious"
     },
@@ -147,9 +148,9 @@
       "name_ru": "Аклья — избранные женщины инкской империи",
       "source": "https://en.wikipedia.org/wiki/Aclla",
       "tags": [
-        "Culture",
         "Inca",
         "Religious",
+        "Culture",
         "Sacrifice"
       ],
       "type": "cultural"
@@ -165,10 +166,10 @@
       "name_ru": "Пачакутек учреждает Инти Райми, праздник солнца",
       "source": "https://en.wikipedia.org/wiki/Inti_Raymi",
       "tags": [
-        "Culture",
-        "Divination",
-        "Holidays",
         "Inca",
+        "Divination",
+        "Culture",
+        "Holidays",
         "Pachacuti 👑",
         "Sun"
       ],
@@ -185,9 +186,10 @@
       "name_ru": "Трудовая повинность инков",
       "source": "https://en.wikipedia.org/wiki/Mit%27a",
       "tags": [
-        "Administration",
+        "Inca",
         "Economic",
-        "Inca"
+        "Administration",
+        "Conscription"
       ],
       "type": "cultural"
     },
@@ -202,9 +204,9 @@
       "name_ru": "Кипу — инкская система счета",
       "source": "https://en.wikipedia.org/wiki/Quipu",
       "tags": [
-        "Administration",
-        "Culture",
         "Inca",
+        "Culture",
+        "Administration",
         "Innovation",
         "Mathematics"
       ],
@@ -221,11 +223,11 @@
       "name_ru": "Дорожная сеть Кхапак-Ньян связывает Инкскую империю",
       "source": "https://en.wikipedia.org/wiki/Qhapaq_%C3%91an",
       "tags": [
-        "Engineering ⚙️",
         "Inca",
-        "Infrastructure",
         "Road",
-        "Trade"
+        "Trade",
+        "Engineering ⚙️",
+        "Infrastructure"
       ],
       "type": "historic"
     },
@@ -240,8 +242,8 @@
       "name_ru": "Часки — инкская курьерская служба",
       "source": "https://en.wikipedia.org/wiki/Chasqui",
       "tags": [
-        "Communication",
         "Inca",
+        "Communication",
         "Infrastructure",
         "Innovation",
         "Logistics"
@@ -259,13 +261,13 @@
       "name_ru": "Пачакутек строит поместье Мачу-Пикчу",
       "source": "https://en.wikipedia.org/wiki/Machu_Picchu",
       "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Highlanders",
         "Inca",
-        "Medieval",
+        "Architecture",
+        "Building 🏠",
         "Palace",
-        "Wonders"
+        "Medieval",
+        "Wonders",
+        "Highlanders"
       ],
       "type": "cultural"
     },
@@ -280,11 +282,11 @@
       "name_ru": "Террасное земледелие инков",
       "source": "https://en.wikipedia.org/wiki/Inca_agriculture",
       "tags": [
-        "Agriculture",
+        "Inca",
         "Engineering ⚙️",
+        "Agriculture",
         "Food",
         "Highlanders",
-        "Inca",
         "Innovation"
       ],
       "type": "scientific"
@@ -300,14 +302,10 @@
       "name_ru": "Тупак Инка Юпанки расширяет империю до Чили и края Амазонии",
       "source": "https://en.wikipedia.org/wiki/Topa_Inca_Yupanqui",
       "tags": [
-        "Andean",
-        "Conquest",
-        "Expansion",
         "Inca",
-        "Maule River",
-        "Military campaign",
-        "Titicaca",
-        "Topa Inca Yupanqui"
+        "Conquest",
+        "Andean",
+        "Expansion"
       ],
       "type": "military"
     },
@@ -340,9 +338,9 @@
       "name_ru": "Кесвачака — травяной верёвочный мост через Апуримак",
       "source": "https://en.wikipedia.org/wiki/Q%27eswachaka_bridge",
       "tags": [
+        "Inca",
         "Culture",
         "Engineering ⚙️",
-        "Inca",
         "Innovation"
       ],
       "type": "scientific"
@@ -358,11 +356,11 @@
       "name_ru": "Уайна Капак становится Сапа Инкой",
       "source": "https://en.wikipedia.org/wiki/Huayna_Capac",
       "tags": [
-        "King",
+        "Inca",
         "Capital",
-        "Conquest",
         "Empire",
-        "Inca"
+        "Conquest",
+        "King"
       ],
       "type": "political"
     },
@@ -377,12 +375,12 @@
       "name_ru": "Эпидемия достигает Кито и убивает Уайну Капака",
       "source": "https://en.wikipedia.org/wiki/Huayna_Capac",
       "tags": [
-        "King",
+        "Inca",
         "Crisis",
+        "King",
         "Death",
         "Disease",
-        "Inca",
-        "Plague"
+        "Plague 🦠"
       ],
       "type": "historic"
     },
@@ -397,9 +395,9 @@
       "name_ru": "Гражданская война в Инкской империи",
       "source": "https://en.wikipedia.org/wiki/Inca_Civil_War",
       "tags": [
+        "Inca",
         "Civil War",
         "Crisis",
-        "Inca",
         "Succession"
       ],
       "type": "military"
@@ -415,10 +413,10 @@
       "name_ru": "Атауальпа побеждает в инкской гражданской войне",
       "source": "https://en.wikipedia.org/wiki/Atahualpa",
       "tags": [
+        "Inca",
         "Civil War",
         "Crisis",
         "Execution",
-        "Inca",
         "Succession"
       ],
       "type": "political"
@@ -434,12 +432,12 @@
       "name_ru": "Писарро основывает Сан-Мигель-де-Пиура в Новом Свете",
       "source": "https://en.wikipedia.org/wiki/Francisco_Pizarro",
       "tags": [
+        "Inca",
+        "Spanish",
+        "New World",
         "Conquistadors",
         "Expedition",
-        "Inca",
-        "New World",
-        "Pizarro 👤",
-        "Spanish"
+        "Pizarro 👤"
       ],
       "type": "historic"
     },
@@ -454,14 +452,14 @@
       "name_ru": "Писарро пленит Атауальпу в Кахамарке",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Cajamarca",
       "tags": [
+        "Inca",
+        "Spanish",
+        "New World",
         "Ambush",
         "Conquistadors",
-        "Inca",
         "Massacre",
-        "New World",
         "Pizarro 👤",
-        "Prisoner",
-        "Spanish"
+        "Prisoner"
       ],
       "type": "military"
     },
@@ -476,14 +474,14 @@
       "name_ru": "Атауальпа предлагает испанцам выкуп за свою свободу",
       "source": "https://en.wikipedia.org/wiki/Ransom_Room",
       "tags": [
+        "Inca",
+        "Spanish",
+        "New World",
+        "Gold",
+        "Silver",
         "Bribe",
         "Conquistadors",
-        "Gold",
-        "Inca",
-        "New World",
-        "Pizarro 👤",
-        "Silver",
-        "Spanish"
+        "Pizarro 👤"
       ],
       "type": "historic"
     },
@@ -498,13 +496,13 @@
       "name_ru": "Испанцы казнят царя инков",
       "source": "https://en.wikipedia.org/wiki/Atahualpa",
       "tags": [
-        "Baptism",
+        "Inca",
+        "Spanish",
         "Christian",
+        "Baptism",
         "Conquistadors",
         "Execution",
-        "Inca",
         "Pizarro 👤",
-        "Spanish",
         "Trial",
         "Trick"
       ],
@@ -521,12 +519,12 @@
       "name_ru": "Манко Инка осаждает испанский гарнизон в Куско",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Cusco",
       "tags": [
-        "War",
-        "Conquistadors",
         "Inca",
+        "Spanish",
+        "War",
         "Rebellion",
-        "Siege",
-        "Spanish"
+        "Conquistadors",
+        "Siege"
       ],
       "type": "military"
     },
@@ -541,12 +539,12 @@
       "name_ru": "Манко Инка отступает в Вилькабамбу и основывает Неоинкское государство",
       "source": "https://en.wikipedia.org/wiki/Neo-Inca_State",
       "tags": [
-        "War",
-        "Conquistadors",
-        "Guerilla",
         "Inca",
+        "Spanish",
+        "War",
         "Rebellion",
-        "Spanish"
+        "Conquistadors",
+        "Guerilla"
       ],
       "type": "political"
     },
@@ -561,11 +559,11 @@
       "name_ru": "Испанские беглецы убивают Манко Инку",
       "source": "https://en.wikipedia.org/wiki/Manco_Inca_Yupanqui",
       "tags": [
+        "Inca",
+        "Spanish",
         "War",
         "Assassination",
-        "Conquistadors",
-        "Inca",
-        "Spanish"
+        "Conquistadors"
       ],
       "type": "political"
     },
@@ -580,9 +578,9 @@
       "name_ru": "Сайри Тупак покидает Вилькабамбу и уезжает в испанскую Лиму",
       "source": "https://en.wikipedia.org/wiki/Sayri_Tupaq",
       "tags": [
-        "Andean",
-        "Baptism",
         "Inca",
+        "Baptism",
+        "Andean",
         "Lima",
         "Negotiation",
         "Neo-Inca State",
@@ -602,11 +600,11 @@
       "name_ru": "Испанцы захватывают столицу Нео-Инкского царства",
       "source": "https://en.wikipedia.org/wiki/Vilcabamba,_Peru",
       "tags": [
+        "Inca",
+        "Spanish",
         "War",
         "Conquest",
-        "Conquistadors",
-        "Inca",
-        "Spanish"
+        "Conquistadors"
       ],
       "type": "military"
     },
@@ -621,12 +619,12 @@
       "name_ru": "Испанцы казнят Тупака Амару, последнего Сапа Инку",
       "source": "https://en.wikipedia.org/wiki/T%C3%BApac_Amaru",
       "tags": [
-        "Conquistadors",
-        "Death",
-        "Execution",
-        "Fall",
         "Inca",
-        "Spanish"
+        "Spanish",
+        "Death",
+        "Conquistadors",
+        "Execution",
+        "Fall"
       ],
       "type": "political"
     },
@@ -641,9 +639,9 @@
       "name_ru": "Кечуа переживает империю инков",
       "source": "https://en.wikipedia.org/wiki/Quechuan_languages",
       "tags": [
-        "Cultural Continuity",
         "Inca",
         "Language",
+        "Cultural Continuity",
         "Legacy"
       ],
       "type": "cultural"

@@ -12,14 +12,14 @@
       "name_ru": "Вортигерн приглашает саксонских наёмников в Британию",
       "source": "https://en.wikipedia.org/wiki/Vortigern",
       "tags": [
-        "Celtic",
         "British",
+        "Celtic",
+        "Saxon",
         "Crisis",
         "Invasion",
-        "Jutes",
         "Mercenaries",
         "Migration",
-        "Saxon"
+        "Tribal"
       ],
       "type": "historic"
     },
@@ -29,17 +29,17 @@
       "description_ru": "На протяжении середины V века волны переселенцев с побережий Дании, северной Германии и Ютландского полуострова приносили в восточную и южную Британию англов, саксов и ютов. Они появлялись сначала как налётчики, затем как поселенцы, заполняя земли, опустевшие в результате сжатия романо-британской экономики. Археологические свидетельства — кремационные кладбища, землянки, лепная посуда вместо гончарной — фиксируют постепенное вытеснение романо-британской культуры. Переселенцы не уничтожили прежнее население; недавние генетические исследования указывают на значительную преемственность в ряде регионов. Однако элитная культура сменилась: латынь уступила место древнеанглийскому, христианство отступило под натиском язычества, а пейзаж вилл и городов сменился разбросанными поселениями.",
       "era": "AD",
       "latitude": 52.5,
-      "longitude": 0,
+      "longitude": 0.1,
       "name": "Angles, saxons and jutes settle Eastern Britain",
       "name_ru": "Англы, саксы и юты заселяют восточную Британию",
       "source": "https://en.wikipedia.org/wiki/Anglo-Saxon_settlement_of_Britain",
       "tags": [
-        "Celtic",
         "British",
+        "Celtic",
+        "Saxon",
         "English",
-        "Migration",
         "Pagan",
-        "Saxon"
+        "Migration"
       ],
       "type": "historic"
     },
@@ -54,12 +54,12 @@
       "name_ru": "Образование королевства Кент",
       "source": "https://en.wikipedia.org/wiki/Kingdom_of_Kent",
       "tags": [
-        "Conquest",
         "English",
-        "Foundation",
-        "Jutes",
         "Kingdom",
-        "Mercenaries"
+        "Foundation",
+        "Conquest",
+        "Mercenaries",
+        "Tribal"
       ],
       "type": "historic"
     },
@@ -74,10 +74,10 @@
       "name_ru": "Образование королевства Сассекс",
       "source": "https://en.wikipedia.org/wiki/Kingdom_of_Sussex",
       "tags": [
+        "Saxon",
         "English",
-        "Foundation",
         "Kingdom",
-        "Saxon"
+        "Foundation"
       ],
       "type": "historic"
     },
@@ -93,13 +93,13 @@
       "source": "https://en.wikipedia.org/wiki/Ambrosius_Aurelianus",
       "tags": [
         "Roman",
+        "British",
         "Celtic",
+        "Saxon",
+        "Christian",
         "War",
         "King",
-        "Legend",
-        "British",
-        "Christian",
-        "Saxon"
+        "Legend"
       ],
       "type": "military"
     },
@@ -114,13 +114,13 @@
       "name_ru": "Британцы побеждают саксов при горе Бадон",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Badon",
       "tags": [
+        "British",
         "Celtic",
+        "Saxon",
+        "Christian",
         "War",
         "Battle",
-        "Legend",
-        "British",
-        "Christian",
-        "Saxon"
+        "Legend"
       ],
       "type": "military"
     },
@@ -135,10 +135,11 @@
       "name_ru": "Образование королевства Уэссекс",
       "source": "https://en.wikipedia.org/wiki/Wessex",
       "tags": [
+        "Saxon",
         "English",
-        "Foundation",
+        "Wessex",
         "Kingdom",
-        "Saxon"
+        "Foundation"
       ],
       "type": "historic"
     },
@@ -153,13 +154,13 @@
       "name_ru": "Гептархия в Британии",
       "source": "https://en.wikipedia.org/wiki/Heptarchy",
       "tags": [
-        "Dynasty",
         "Britain",
+        "Saxon",
         "English",
-        "Foundation",
         "Kingdom",
-        "Political",
-        "Saxon"
+        "Foundation",
+        "Dynasty",
+        "Political"
       ],
       "type": "political"
     },
@@ -176,13 +177,13 @@
       "tags": [
         "Roman",
         "Britain",
-        "Christian",
-        "Culture",
+        "Saxon",
         "English",
-        "Missionary",
         "Papacy",
         "Religious",
-        "Saxon"
+        "Christian",
+        "Missionary",
+        "Culture"
       ],
       "type": "religious"
     },
@@ -197,12 +198,12 @@
       "name_ru": "Усыпальница короля Редвальда в Саттон-Ху",
       "source": "https://en.wikipedia.org/wiki/Sutton_Hoo",
       "tags": [
-        "King",
-        "Burial",
-        "Christian",
-        "Culture",
         "English",
+        "Christian",
         "Pagan",
+        "Culture",
+        "Burial",
+        "King",
         "Tomb"
       ],
       "type": "cultural"
@@ -219,14 +220,14 @@
       "source": "https://en.wikipedia.org/wiki/Aidan_of_Lindisfarne",
       "tags": [
         "Celtic",
-        "Christian",
-        "Culture",
-        "English",
-        "Holy Site",
         "Irish",
+        "English",
+        "Religious",
+        "Christian",
+        "Holy Site",
+        "Culture",
         "Monastery",
-        "Northumbria",
-        "Religious"
+        "Northumbria"
       ],
       "type": "religious"
     },
@@ -241,14 +242,14 @@
       "name_ru": "Синод в Уитби",
       "source": "https://en.wikipedia.org/wiki/Synod_of_Whitby",
       "tags": [
+        "English",
+        "Religious",
         "Christian",
         "Council",
         "Culture",
-        "English",
-        "Law",
-        "Northumbria",
         "Political",
-        "Religious"
+        "Law",
+        "Northumbria"
       ],
       "type": "religious"
     },
@@ -264,13 +265,13 @@
       "source": "https://en.wikipedia.org/wiki/Synod_of_Hertford",
       "tags": [
         "Greek",
-        "Administration",
         "Britain",
+        "English",
+        "Religious",
         "Christian",
         "Council",
-        "English",
-        "Law",
-        "Religious"
+        "Administration",
+        "Law"
       ],
       "type": "religious"
     },
@@ -286,11 +287,11 @@
       "source": "https://en.wikipedia.org/wiki/Bede",
       "tags": [
         "Britain",
+        "English",
+        "Religious",
         "Christian",
         "Culture",
-        "English",
         "Northumbria",
-        "Religious",
         "Science",
         "Text"
       ],
@@ -307,11 +308,11 @@
       "name_ru": "Этельбальд — король Мерсии",
       "source": "https://en.wikipedia.org/wiki/%C3%86thelbald_of_Mercia",
       "tags": [
-        "King",
         "Britain",
         "English",
-        "Kingdom",
         "Mercia",
+        "Kingdom",
+        "King",
         "Political"
       ],
       "type": "political"
@@ -327,13 +328,13 @@
       "name_ru": "Оффа — король Мерсии",
       "source": "https://en.wikipedia.org/wiki/Offa_of_Mercia",
       "tags": [
-        "Reform",
-        "King",
         "Britain",
         "English",
-        "Law",
         "Mercia",
-        "Political"
+        "King",
+        "Political",
+        "Reform",
+        "Law"
       ],
       "type": "political"
     },
@@ -348,13 +349,13 @@
       "name_ru": "Вал Оффы — граница между Англией и Уэльсом",
       "source": "https://en.wikipedia.org/wiki/Offa%27s_Dyke",
       "tags": [
-        "Border",
         "British",
-        "Engineering ⚙️",
+        "Welsh",
         "English",
-        "Expansion",
         "Mercia",
-        "Welsh"
+        "Engineering ⚙️",
+        "Border",
+        "Expansion"
       ],
       "type": "historic"
     },
@@ -369,13 +370,13 @@
       "name_ru": "Эгберт — король Уэссекса",
       "source": "https://en.wikipedia.org/wiki/Egbert_of_Wessex",
       "tags": [
-        "Dynasty",
-        "King",
         "Britain",
         "English",
+        "Wessex",
+        "Dynasty",
+        "King",
         "Political",
-        "Unification",
-        "Wessex"
+        "Unification"
       ],
       "type": "political"
     },
@@ -390,13 +391,13 @@
       "name_ru": "Вторжение викингов в Уэссекс",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Chippenham",
       "tags": [
-        "War",
-        "Battle",
-        "Alfred the Great 👑",
+        "Norman",
         "Danish",
         "English",
-        "Norman",
-        "Wessex"
+        "Wessex",
+        "War",
+        "Battle",
+        "Alfred the Great 👑"
       ],
       "type": "military"
     },
@@ -411,14 +412,15 @@
       "name_ru": "Бургическая оборонительная система Уэссекса ",
       "source": "https://en.wikipedia.org/wiki/Burh",
       "tags": [
+        "Britain",
+        "English",
+        "Wessex",
+        "Defense",
+        "Fortification",
         "Reform",
         "Administration",
         "Alfred the Great 👑",
-        "Britain",
-        "Defense",
-        "English",
-        "Fortification",
-        "Wessex"
+        "Conscription"
       ],
       "type": "historic"
     },
@@ -432,12 +434,12 @@
       "name": "Conscription reform in England",
       "name_ru": "Реформа армии в Англии ",
       "tags": [
+        "Britain",
+        "English",
         "Reform",
         "Administration",
         "Alfred the Great 👑",
-        "Army",
-        "Britain",
-        "English"
+        "Army"
       ],
       "type": "historic"
     },
@@ -452,12 +454,12 @@
       "name_ru": "Вторжение викингов в Рочестер",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Rochester",
       "tags": [
-        "War",
-        "Alfred the Great 👑",
+        "Norman",
         "Danish",
         "English",
+        "War",
         "Invasion",
-        "Norman",
+        "Alfred the Great 👑",
         "Siege"
       ],
       "type": "military"
@@ -473,15 +475,15 @@
       "name_ru": "Альфред освобождает Лондон от викингов",
       "source": "https://en.wikipedia.org/wiki/Anglo-Saxon_London",
       "tags": [
-        "War",
-        "Battle",
-        "Alfred the Great 👑",
         "Britain",
+        "Norman",
         "Danish",
         "English",
         "Mercia",
-        "Norman",
-        "Wessex"
+        "Wessex",
+        "War",
+        "Battle",
+        "Alfred the Great 👑"
       ],
       "type": "military"
     },
@@ -496,14 +498,14 @@
       "name_ru": "Альфред выдает дочь за Этельреда Мерсийского",
       "source": "https://en.wikipedia.org/wiki/%C3%86thelfl%C3%A6d",
       "tags": [
-        "Marriage",
-        "Dynasty",
-        "Alfred the Great 👑",
-        "Alliance",
-        "Culture",
         "English",
         "Mercia",
-        "Wessex"
+        "Wessex",
+        "Alliance",
+        "Culture",
+        "Marriage",
+        "Dynasty",
+        "Alfred the Great 👑"
       ],
       "type": "political"
     },
@@ -518,12 +520,12 @@
       "name_ru": "Вторжение викингов Хастейна в Британию",
       "source": "https://en.wikipedia.org/wiki/Hastein",
       "tags": [
-        "War",
         "Britain",
+        "Norman",
         "English",
-        "Hasteinn 👤",
+        "War",
         "Invasion",
-        "Norman"
+        "Hasteinn 👤"
       ],
       "type": "military"
     },
@@ -537,13 +539,13 @@
       "name": "Alfred the Great's naval reform",
       "name_ru": "Морская реформа Альфреда Великого",
       "tags": [
-        "Reform",
-        "Alfred the Great 👑",
         "Britain",
         "English",
+        "Wessex",
+        "Reform",
+        "Alfred the Great 👑",
         "Naval",
-        "Seamen",
-        "Wessex"
+        "Seamen"
       ],
       "type": "historic"
     },
@@ -558,13 +560,13 @@
       "name_ru": "Этельфлед возглавляет Мерсию",
       "source": "https://en.wikipedia.org/wiki/%C3%86thelfl%C3%A6d",
       "tags": [
+        "English",
+        "Mercia",
+        "Wessex",
         "War",
         "Conquest",
-        "English",
-        "Expansion",
-        "Mercia",
         "Queen",
-        "Wessex"
+        "Expansion"
       ],
       "type": "historic"
     },
@@ -579,18 +581,18 @@
       "name_ru": "Этельстан — первый король всей Англии",
       "source": "https://en.wikipedia.org/wiki/%C3%86thelstan",
       "tags": [
-        "Dynasty",
-        "King",
         "Britain",
         "England",
         "English",
-        "Foundation",
-        "Kingdom",
-        "Law",
         "Mercia",
+        "Wessex",
+        "Kingdom",
+        "Foundation",
+        "Dynasty",
+        "King",
         "Political",
-        "Unification",
-        "Wessex"
+        "Law",
+        "Unification"
       ],
       "type": "political"
     },
@@ -605,15 +607,15 @@
       "name_ru": "Битва при Брунанбурге",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Brunanburh",
       "tags": [
-        "War",
-        "Battle",
-        "King",
         "British",
-        "English",
-        "Literature",
         "Norman",
         "Scottish",
-        "Wessex"
+        "English",
+        "Wessex",
+        "War",
+        "Literature",
+        "Battle",
+        "King"
       ],
       "type": "military"
     },
@@ -628,16 +630,16 @@
       "name_ru": "Эдгар Миролюбивый — король Англии",
       "source": "https://en.wikipedia.org/wiki/Edgar_the_Peaceful",
       "tags": [
-        "Reform",
-        "Dynasty",
-        "King",
         "Britain",
-        "Christian",
         "England",
         "English",
+        "Wessex",
+        "Christian",
+        "Dynasty",
+        "King",
+        "Reform",
         "Golden Age",
-        "Law",
-        "Wessex"
+        "Law"
       ],
       "type": "political"
     },
@@ -652,15 +654,15 @@
       "name_ru": "Этельред II Неразумный — король Англии",
       "source": "https://en.wikipedia.org/wiki/%C3%86thelred_the_Unready",
       "tags": [
-        "Dynasty",
-        "King",
-        "Crisis",
         "Danish",
-        "Decline",
         "England",
         "English",
+        "Wessex",
+        "Crisis",
+        "Dynasty",
+        "King",
         "Political",
-        "Wessex"
+        "Decline"
       ],
       "type": "political"
     },
@@ -675,15 +677,15 @@
       "name_ru": "Англичане платят первый данегельд Олафу Трюггвасону",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Maldon",
       "tags": [
-        "War",
-        "Battle",
-        "Bribe",
-        "Crisis",
-        "English",
-        "Invasion",
-        "Literature",
         "Norman",
         "Norse",
+        "English",
+        "Crisis",
+        "War",
+        "Literature",
+        "Battle",
+        "Invasion",
+        "Bribe",
         "Olaf Tryggvason 👑"
       ],
       "type": "military"
@@ -699,14 +701,14 @@
       "name_ru": "Эдмунд Железнобокий противостоит Кнуту",
       "source": "https://en.wikipedia.org/wiki/Edmund_Ironside",
       "tags": [
-        "War",
-        "Battle",
-        "Cnut the Great 👑",
-        "Crisis",
+        "Norman",
         "Danish",
         "English",
-        "Norman",
-        "Wessex"
+        "Wessex",
+        "Crisis",
+        "War",
+        "Battle",
+        "Cnut the Great 👑"
       ],
       "type": "military"
     },
@@ -721,14 +723,14 @@
       "name_ru": "Эдуард Исповедник — король Англии",
       "source": "https://en.wikipedia.org/wiki/Edward_the_Confessor",
       "tags": [
-        "Dynasty",
-        "King",
-        "Crisis",
         "England",
         "English",
+        "Wessex",
         "Normandy",
-        "Political",
-        "Wessex"
+        "Crisis",
+        "Dynasty",
+        "King",
+        "Political"
       ],
       "type": "political"
     },
@@ -742,14 +744,14 @@
       "name": "Construction of Westminster Abbey",
       "name_ru": "Строительство Вестминстерского Аббатства",
       "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Christian",
         "English",
-        "Monastery",
         "Normandy",
         "Religious",
-        "Temple"
+        "Christian",
+        "Architecture",
+        "Building 🏠",
+        "Temple",
+        "Monastery"
       ],
       "type": "religious"
     },
@@ -764,13 +766,13 @@
       "name_ru": "Эрлы Англии против короны",
       "source": "https://en.wikipedia.org/wiki/Godwin,_Earl_of_Wessex",
       "tags": [
-        "Crisis",
-        "English",
         "Norman",
+        "English",
+        "Wessex",
         "Normandy",
-        "Political",
+        "Crisis",
         "Rebellion",
-        "Wessex"
+        "Political"
       ],
       "type": "political"
     },
@@ -785,16 +787,16 @@
       "name_ru": "Гарольд Годвинсон — король Англии",
       "source": "https://en.wikipedia.org/wiki/Harold_Godwinson",
       "tags": [
-        "War",
-        "King",
-        "Crisis",
-        "Elections",
+        "Norman",
         "England",
         "English",
-        "Norman",
+        "Wessex",
         "Normandy",
+        "Crisis",
+        "War",
+        "King",
         "Political",
-        "Wessex"
+        "Elections"
       ],
       "type": "political"
     }

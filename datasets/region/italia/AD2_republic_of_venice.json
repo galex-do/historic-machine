@@ -14,11 +14,11 @@
       "tags": [
         "Roman",
         "Italian",
-        "Crisis",
         "Huns",
+        "Venice",
+        "Crisis",
         "Invasion",
-        "Migration",
-        "Venice"
+        "Migration"
       ],
       "type": "historic"
     },
@@ -34,10 +34,10 @@
       "source": "https://en.wikipedia.org/wiki/Lombard_invasion_of_Italy",
       "tags": [
         "Italian",
+        "Venice",
         "Invasion",
         "Lombards",
-        "Migration",
-        "Venice"
+        "Migration"
       ],
       "type": "historic"
     },
@@ -52,12 +52,12 @@
       "name_ru": "Венеция под управлением Равенны",
       "source": "https://en.wikipedia.org/wiki/Exarchate_of_Ravenna",
       "tags": [
+        "Byzantine",
         "Roman",
         "Italian",
-        "Byzantine",
+        "Venice",
         "Political",
-        "Vassalage",
-        "Venice"
+        "Vassalage"
       ],
       "type": "political"
     },
@@ -73,12 +73,12 @@
       "source": "https://en.wikipedia.org/wiki/Doge_of_Venice",
       "tags": [
         "Italian",
-        "Reform",
-        "Elections",
+        "Venice",
         "Foundation",
         "Political",
-        "Republic",
-        "Venice"
+        "Reform",
+        "Elections",
+        "Republic"
       ],
       "type": "political"
     },
@@ -93,13 +93,14 @@
       "name_ru": "Венеция отвергает византийское иконоборчество",
       "source": "https://en.wikipedia.org/wiki/Byzantine_Iconoclasm",
       "tags": [
-        "Roman",
-        "Reform",
         "Byzantine",
-        "Independence",
-        "Religious",
+        "Roman",
         "Venice",
-        "Iconoclasm"
+        "Religious",
+        "Christian",
+        "Iconoclasm",
+        "Reform",
+        "Independence"
       ],
       "type": "political"
     },
@@ -114,13 +115,13 @@
       "name_ru": "Венецианцы отражают атаку Пипина Итальянского",
       "source": "https://en.wikipedia.org/wiki/Pepin_of_Italy",
       "tags": [
+        "Frankish",
+        "Venice",
         "War",
         "Battle",
-        "Carolingian",
         "Defense",
-        "Naval",
-        "Venice",
-        "Frankish"
+        "Carolingian",
+        "Naval"
       ],
       "type": "military"
     },
@@ -136,11 +137,11 @@
       "source": "https://en.wikipedia.org/wiki/History_of_Venice",
       "tags": [
         "Italian",
-        "City",
-        "Capital",
-        "Centralization",
         "Venetian",
-        "Venice"
+        "Venice",
+        "Capital",
+        "City",
+        "Centralization"
       ],
       "type": "political"
     },
@@ -155,14 +156,14 @@
       "name_ru": "Венеция — автономия между Востоком и Западом",
       "source": "https://en.wikipedia.org/wiki/Pax_Nicephori",
       "tags": [
-        "Roman",
-        "City-State",
         "Byzantine",
+        "Roman",
+        "Frankish",
+        "Venice",
+        "City-State",
         "Charlemagne 👑",
         "Independence",
-        "Treaty",
-        "Venice",
-        "Frankish"
+        "Treaty"
       ],
       "type": "political"
     },
@@ -178,9 +179,10 @@
       "source": "https://en.wikipedia.org/wiki/Saint_Mark%27s_relics",
       "tags": [
         "Italian",
+        "Venice",
+        "Religious",
         "Christian",
-        "Theft",
-        "Venice"
+        "Theft"
       ],
       "type": "religious"
     },
@@ -196,12 +198,12 @@
       "source": "https://en.wikipedia.org/wiki/St_Mark%27s_Basilica",
       "tags": [
         "Italian",
-        "Building 🏠",
-        "Architecture",
-        "Christian",
+        "Venice",
         "Religious",
-        "Temple",
-        "Venice"
+        "Christian",
+        "Architecture",
+        "Building 🏠",
+        "Temple"
       ],
       "type": "cultural"
     },
@@ -216,11 +218,11 @@
       "name_ru": "Пакт Лотаря между Венецией и Каролингами",
       "source": "https://en.wikipedia.org/wiki/Pactum_Lotharii",
       "tags": [
+        "Frankish",
+        "Venice",
         "Carolingian",
         "Trade",
-        "Treaty",
-        "Venice",
-        "Frankish"
+        "Treaty"
       ],
       "type": "political"
     },
@@ -236,11 +238,11 @@
       "source": "https://en.wikipedia.org/wiki/History_of_Venice",
       "tags": [
         "Italian",
-        "Economic",
-        "Monopoly",
+        "Venice",
         "Salt",
         "Trade",
-        "Venice",
+        "Economic",
+        "Monopoly",
         "Wealth"
       ],
       "type": "political"
@@ -257,12 +259,12 @@
       "source": "https://en.wikipedia.org/wiki/Pietro_IV_Candiano",
       "tags": [
         "Italian",
-        "Reform",
-        "King",
+        "Venice",
         "Crisis",
+        "King",
+        "Reform",
         "Lynching",
-        "Republic",
-        "Venice"
+        "Republic"
       ],
       "type": "political"
     },
@@ -277,11 +279,11 @@
       "name_ru": "Венеция прокладывает торговый путь к Византии",
       "source": "https://en.wikipedia.org/wiki/Pietro_II_Orseolo",
       "tags": [
-        "Roman",
-        "Diplomacy",
         "Byzantine",
-        "Trade",
-        "Venice"
+        "Roman",
+        "Venice",
+        "Diplomacy",
+        "Trade"
       ],
       "type": "political"
     },
@@ -297,13 +299,13 @@
       "source": "https://en.wikipedia.org/wiki/Sposalizio_del_Mare",
       "tags": [
         "Italian",
+        "Venice",
         "Conquest",
-        "Croatian",
+        "Croatia",
         "Holidays",
         "Maritime",
         "Piracy",
-        "Seamen",
-        "Venice"
+        "Seamen"
       ],
       "type": "military"
     },
@@ -318,16 +320,16 @@
       "name_ru": "Базилика Святого Марка построена в Венеции",
       "source": "https://en.wikipedia.org/wiki/St_Mark%27s_Basilica",
       "tags": [
+        "Byzantine",
         "Roman",
         "Italian",
-        "Building 🏠",
-        "Architecture",
-        "Byzantine",
+        "Venice",
+        "Religious",
         "Christian",
         "Culture",
-        "Religious",
-        "Temple",
-        "Venice"
+        "Architecture",
+        "Building 🏠",
+        "Temple"
       ],
       "type": "cultural"
     },
@@ -341,11 +343,11 @@
       "name": "Venetian naval tactics",
       "name_ru": "Венецианские морские тактики",
       "tags": [
+        "Venetian",
+        "Venice",
         "Naval",
         "Seamen",
-        "Tactics",
-        "Venetian",
-        "Venice"
+        "Tactics"
       ],
       "type": "scientific"
     },
@@ -360,14 +362,14 @@
       "name_ru": "Венецианцы снимают морскую осаду Диррахия",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Dyrrhachium_(1081)",
       "tags": [
+        "Byzantine",
         "Roman",
+        "Norman",
+        "Venice",
         "War",
         "Battle",
-        "Byzantine",
         "Naval",
-        "Norman",
-        "Robert Guiscard 👤",
-        "Venice"
+        "Robert Guiscard 👤"
       ],
       "type": "military"
     },
@@ -382,14 +384,14 @@
       "name_ru": "Свободная торговля Венеции по всей Византийской империи",
       "source": "https://en.wikipedia.org/wiki/Chrysobull_of_1082",
       "tags": [
+        "Byzantine",
         "Roman",
         "Italian",
-        "Byzantine",
+        "Venice",
+        "Trade",
         "Emporium",
         "Expansion",
-        "Taxes",
-        "Trade",
-        "Venice"
+        "Taxes"
       ],
       "type": "political"
     },
@@ -404,14 +406,14 @@
       "name_ru": "Морские бои венецианцев и норманнов у Корфу",
       "source": "https://en.wikipedia.org/wiki/Byzantine%E2%80%93Norman_wars",
       "tags": [
-        "Roman",
-        "Battle",
         "Byzantine",
-        "Naval",
+        "Roman",
         "Norman",
+        "Venice",
+        "Battle",
+        "Naval",
         "Robert Guiscard 👤",
-        "Seamen",
-        "Venice"
+        "Seamen"
       ],
       "type": "military"
     },
@@ -427,15 +429,15 @@
       "source": "https://en.wikipedia.org/wiki/Venetian_Crusade",
       "tags": [
         "Italian",
+        "Venice",
+        "Crusade",
+        "Trade",
         "First",
         "Influence",
         "Maritime",
         "Naval",
         "Seamen",
-        "Supply",
-        "Trade",
-        "Venice",
-        "Crusade"
+        "Supply"
       ],
       "type": "military"
     },
@@ -451,12 +453,12 @@
       "source": "https://en.wikipedia.org/wiki/County_of_Jaffa_and_Ascalon",
       "tags": [
         "Jerusalem",
-        "First",
+        "Venice",
+        "Crusade",
+        "Trade",
         "Emporium",
         "Expansion",
-        "Trade",
-        "Venice",
-        "Crusade"
+        "First"
       ],
       "type": "political"
     },
@@ -472,13 +474,13 @@
       "source": "https://en.wikipedia.org/wiki/Venetian_Arsenal",
       "tags": [
         "Italian",
+        "Venice",
+        "Industry",
         "Economic",
         "Factory",
-        "Industry",
         "Innovation",
         "Maritime",
-        "Naval",
-        "Venice"
+        "Naval"
       ],
       "type": "historic"
     },
@@ -496,18 +498,18 @@
         "Arabian",
         "Egypt",
         "Italian",
-        "Jerusalem",
+        "Norman",
+        "Norse",
         "Sidon",
+        "Jerusalem",
+        "Venice",
+        "Islamic",
+        "Crusade",
         "War",
         "Conquest",
         "Fatimid",
-        "Islamic",
         "Naval",
-        "Norman",
-        "Norse",
-        "Seamen",
-        "Venice",
-        "Crusade"
+        "Seamen"
       ],
       "type": "military"
     },
@@ -523,14 +525,14 @@
       "source": "https://en.wikipedia.org/wiki/Venetian_Crusade",
       "tags": [
         "Italian",
+        "Venetian",
+        "Venice",
+        "Crusade",
         "Engineering ⚙️",
         "Innovation",
         "Maritime",
         "Naval",
-        "Seamen",
-        "Venetian",
-        "Venice",
-        "Crusade"
+        "Seamen"
       ],
       "type": "military"
     },
@@ -545,15 +547,15 @@
       "name_ru": "Крестоносцы осаждают Корфу",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Corfu_(1122%E2%80%931123)",
       "tags": [
+        "Byzantine",
         "Roman",
         "Italian",
-        "War",
-        "Byzantine",
-        "Christian",
-        "Siege",
         "Venetian",
         "Venice",
-        "Crusade"
+        "Christian",
+        "Crusade",
+        "War",
+        "Siege"
       ],
       "type": "military"
     },
@@ -570,14 +572,14 @@
       "tags": [
         "Arabian",
         "Egypt",
+        "Venice",
+        "Islamic",
         "War",
         "Battle",
         "Fatimid",
-        "Islamic",
         "Maritime",
         "Naval",
-        "Seamen",
-        "Venice"
+        "Seamen"
       ],
       "type": "military"
     },
@@ -588,23 +590,23 @@
       "era": "AD",
       "latitude": 33.271,
       "longitude": 35.204,
-      "name": "Venice Captures Tyre — Key Levantine Port Secured",
+      "name": "Venice Captures Fatimid's Tyre",
       "name_ru": "Венеция захватывает Тир на Святой земле ",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Tyre_(1124)",
       "tags": [
         "Arabian",
         "Egypt",
-        "War",
-        "Conquest",
-        "Expansion",
-        "Fatimid",
-        "Islamic",
-        "Naval",
-        "Trade",
         "Tyre",
         "Venetian",
         "Venice",
-        "Crusade"
+        "Islamic",
+        "Crusade",
+        "War",
+        "Conquest",
+        "Fatimid",
+        "Trade",
+        "Expansion",
+        "Naval"
       ],
       "type": "military"
     },
@@ -618,15 +620,15 @@
       "name": "Crusaders Pillage Rhodos",
       "name_ru": "Крестоносцы разоряют Родос",
       "tags": [
+        "Byzantine",
         "Greek",
         "Roman",
         "Italian",
-        "War",
-        "Byzantine",
-        "Pillage",
         "Venetian",
         "Venice",
-        "Crusade"
+        "Crusade",
+        "War",
+        "Pillage"
       ],
       "type": "military"
     },
@@ -641,17 +643,17 @@
       "name_ru": "Крестоносцы разграбляют Хиос",
       "source": "https://en.wikipedia.org/wiki/Venetian_Crusade#Fall_of_Tyre",
       "tags": [
+        "Byzantine",
         "Greek",
         "Roman",
         "Italian",
-        "War",
-        "Byzantine",
-        "Christian",
-        "Pillage",
-        "Theft",
         "Venetian",
         "Venice",
-        "Crusade"
+        "Christian",
+        "Crusade",
+        "War",
+        "Pillage",
+        "Theft"
       ],
       "type": "military"
     },
@@ -666,13 +668,13 @@
       "name_ru": "Возвращение налоговых послаблений для Венеции в Византии",
       "source": "https://en.wikipedia.org/wiki/Venetian%E2%80%93Byzantine_War_(1122%E2%80%931126)#The_Second_Phase_of_the_Venetian-Byzantine_War",
       "tags": [
+        "Byzantine",
         "Roman",
         "Italian",
-        "Byzantine",
-        "Taxes",
+        "Venice",
         "Trade",
-        "Treaty",
-        "Venice"
+        "Taxes",
+        "Treaty"
       ],
       "type": "political"
     },
@@ -687,12 +689,12 @@
       "name_ru": "Учреждён Большой совет Венеции",
       "source": "https://en.wikipedia.org/wiki/Great_Council_of_Venice",
       "tags": [
+        "Venice",
+        "Political",
         "Reform",
         "Law",
         "Oligarchy",
-        "Political",
-        "Republic",
-        "Venice"
+        "Republic"
       ],
       "type": "political"
     },
@@ -707,14 +709,14 @@
       "name_ru": "Венецианско-византийский флот осаждает Керкиру",
       "source": "https://en.wikipedia.org/wiki/Byzantine%E2%80%93Norman_war_(1147%E2%80%931149)",
       "tags": [
+        "Byzantine",
         "Roman",
+        "Norman",
+        "Venice",
         "War",
         "Blockade",
-        "Byzantine",
-        "Norman",
         "Seamen",
-        "Siege",
-        "Venice"
+        "Siege"
       ],
       "type": "military"
     },
@@ -730,12 +732,12 @@
       "source": "https://en.wikipedia.org/wiki/Murano_glass",
       "tags": [
         "Italian",
-        "Craft",
-        "Culture",
-        "Glass",
-        "Trade",
         "Venetian",
-        "Venice"
+        "Venice",
+        "Culture",
+        "Craft",
+        "Trade",
+        "Glass"
       ],
       "type": "cultural"
     },
@@ -752,10 +754,10 @@
       "tags": [
         "Italian",
         "Holy Roman Empire",
-        "War",
+        "Venice",
         "Alliance",
-        "Lombard League",
-        "Venice"
+        "War",
+        "Lombard League"
       ],
       "type": "political"
     },
@@ -771,12 +773,12 @@
       "source": "https://en.wikipedia.org/wiki/Doge_of_Venice",
       "tags": [
         "Italian",
-        "Reform",
+        "Venice",
         "Crisis",
-        "Elections",
-        "Murder",
         "Political",
-        "Venice"
+        "Reform",
+        "Elections",
+        "Murder"
       ],
       "type": "political"
     },
@@ -793,14 +795,14 @@
       "tags": [
         "Italian",
         "Holy Roman Empire",
-        "Diplomacy",
+        "Papacy",
+        "Venice",
         "Christian",
+        "Diplomacy",
         "Friedrich Barbarossa 👑",
         "Lombard League",
-        "Papacy",
         "Peace",
-        "Treaty",
-        "Venice"
+        "Treaty"
       ],
       "type": "political"
     },
@@ -815,16 +817,16 @@
       "name_ru": "Резня латинян в Константинополе",
       "source": "https://en.wikipedia.org/wiki/Massacre_of_the_Latins",
       "tags": [
+        "Byzantine",
         "Greek",
         "Roman",
         "Italian",
-        "War",
-        "Byzantine",
-        "Crisis",
         "Genoa",
-        "Massacre",
         "Pisa",
-        "Venice"
+        "Venice",
+        "Crisis",
+        "War",
+        "Massacre"
       ],
       "type": "historic"
     },
@@ -840,10 +842,10 @@
       "source": "https://en.wikipedia.org/wiki/Enrico_Dandolo",
       "tags": [
         "Italian",
+        "Venice",
         "Diplomacy",
         "Elections",
-        "Republic",
-        "Venice"
+        "Republic"
       ],
       "type": "political"
     },
@@ -858,15 +860,15 @@
       "name_ru": "Венеция подписывает договор о перевозке Четвёртого крестового похода",
       "source": "https://en.wikipedia.org/wiki/Fourth_Crusade",
       "tags": [
-        "Christian",
-        "Contract",
-        "Fourth",
         "France",
         "French",
-        "Maritime",
-        "Trade",
         "Venice",
-        "Crusade"
+        "Christian",
+        "Crusade",
+        "Trade",
+        "Contract",
+        "Fourth",
+        "Maritime"
       ],
       "type": "political"
     },
@@ -882,14 +884,14 @@
       "source": "https://en.wikipedia.org/wiki/Venetian_grosso",
       "tags": [
         "Italian",
-        "Currency",
-        "Economic",
-        "Influence",
-        "Innovation",
+        "Venetian",
+        "Venice",
         "Silver",
         "Trade",
-        "Venetian",
-        "Venice"
+        "Currency 🪙",
+        "Economic",
+        "Influence",
+        "Innovation"
       ],
       "type": "cultural"
     },
@@ -905,12 +907,12 @@
       "source": "https://en.wikipedia.org/wiki/Fourth_Crusade",
       "tags": [
         "Italian",
-        "Christian",
-        "Debt",
-        "Fourth",
         "French",
         "Venice",
-        "Crusade"
+        "Christian",
+        "Crusade",
+        "Debt",
+        "Fourth"
       ],
       "type": "historic"
     },
@@ -926,15 +928,15 @@
       "source": "https://en.wikipedia.org/wiki/Siege_of_Zara",
       "tags": [
         "Italian",
-        "Christian",
-        "Conquest",
-        "Fourth",
         "French",
         "Hungary",
-        "Maritime",
-        "Siege",
         "Venice",
-        "Crusade"
+        "Christian",
+        "Crusade",
+        "Conquest",
+        "Fourth",
+        "Maritime",
+        "Siege"
       ],
       "type": "military"
     },
@@ -949,16 +951,16 @@
       "name_ru": "Первая осада Константинополя крестоносцами",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Constantinople_(1203)",
       "tags": [
+        "Byzantine",
         "Roman",
         "Italian",
-        "War",
-        "Byzantine",
-        "Christian",
-        "Fourth",
         "French",
-        "Siege",
         "Venice",
-        "Crusade"
+        "Christian",
+        "Crusade",
+        "War",
+        "Fourth",
+        "Siege"
       ],
       "type": "military"
     },
@@ -969,18 +971,18 @@
       "era": "AD",
       "latitude": 41.0082,
       "longitude": 28.9784,
-      "name": "Alexios IV cannot pay the crusaders",
-      "name_ru": "Алексей IV не может заплатить крестоносцам",
+      "name": "The Byzantine Emperor cannot pay to Crusaders",
+      "name_ru": "Византийский император не может заплатить крестоносцам",
       "source": "https://en.wikipedia.org/wiki/Alexios_IV_Angelos",
       "tags": [
+        "Byzantine",
         "Roman",
         "Italian",
-        "Byzantine",
-        "Crisis",
-        "Fourth",
         "French",
         "Venice",
-        "Crusade"
+        "Crusade",
+        "Crisis",
+        "Fourth"
       ],
       "type": "political"
     },
@@ -996,10 +998,10 @@
       "source": "https://en.wikipedia.org/wiki/Sudak",
       "tags": [
         "Italian",
-        "Emporium",
-        "Expansion",
+        "Venice",
         "Trade",
-        "Venice"
+        "Emporium",
+        "Expansion"
       ],
       "type": "historic"
     }

@@ -31,11 +31,11 @@
       "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
       "tags": [
         "Minoan",
+        "Trade",
         "Bronze Age",
         "Maritime",
         "Naval",
-        "Technology",
-        "Trade"
+        "Technology"
       ],
       "type": "historic"
     },
@@ -51,10 +51,10 @@
       "source": "https://en.wikipedia.org/wiki/Tholos",
       "tags": [
         "Minoan",
-        "Architecture",
-        "Bronze Age",
         "Burial",
-        "Tomb"
+        "Architecture",
+        "Tomb",
+        "Bronze Age"
       ],
       "type": "religious"
     },
@@ -70,11 +70,11 @@
       "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
       "tags": [
         "Minoan",
-        "Building 🏠",
         "City",
         "Architecture",
-        "Civilization",
-        "Palace"
+        "Building 🏠",
+        "Palace",
+        "Civilization"
       ],
       "type": "historic"
     },
@@ -90,9 +90,9 @@
       "source": "https://en.wikipedia.org/wiki/Cretan_hieroglyphs",
       "tags": [
         "Minoan",
-        "Innovation",
         "Language",
-        "Writing"
+        "Writing",
+        "Innovation"
       ],
       "type": "cultural"
     },
@@ -108,9 +108,9 @@
       "source": "https://en.wikipedia.org/wiki/Knossos",
       "tags": [
         "Minoan",
-        "Building 🏠",
-        "Architecture",
         "Art",
+        "Architecture",
+        "Building 🏠",
         "Palace"
       ],
       "type": "historic"
@@ -127,10 +127,10 @@
       "source": "https://en.wikipedia.org/wiki/Linear_A",
       "tags": [
         "Minoan",
-        "Innovation",
         "Language",
+        "Writing",
         "Mystery",
-        "Writing"
+        "Innovation"
       ],
       "type": "cultural"
     },
@@ -146,9 +146,9 @@
       "source": "https://en.wikipedia.org/wiki/Minoan_religion",
       "tags": [
         "Minoan",
-        "Culture",
+        "Religious",
         "Pagan",
-        "Religious"
+        "Culture"
       ],
       "type": "religious"
     },
@@ -164,9 +164,9 @@
       "source": "https://en.wikipedia.org/wiki/Bull-leaping",
       "tags": [
         "Minoan",
-        "Art",
-        "Culture",
         "Religious",
+        "Culture",
+        "Art",
         "Sport"
       ],
       "type": "religious"
@@ -201,12 +201,12 @@
       "source": "https://en.wikipedia.org/wiki/Minoan_civilization",
       "tags": [
         "Minoan",
-        "Building 🏠",
         "Architecture",
-        "Golden Age",
+        "Building 🏠",
         "Palace",
-        "Rise",
-        "Wealth"
+        "Wealth",
+        "Golden Age",
+        "Rise"
       ],
       "type": "historic"
     },
@@ -223,8 +223,8 @@
       "tags": [
         "Greek",
         "Mycenaean",
-        "Civilization",
-        "Fortification"
+        "Fortification",
+        "Civilization"
       ],
       "type": "historic"
     },
@@ -240,9 +240,9 @@
       "source": "https://en.wikipedia.org/wiki/Minoan_pottery",
       "tags": [
         "Minoan",
+        "Culture",
         "Art",
         "Craft",
-        "Culture",
         "Pottery"
       ],
       "type": "cultural"
@@ -260,9 +260,9 @@
       "tags": [
         "Egypt",
         "Minoan",
+        "Trade",
         "Economic",
-        "Maritime",
-        "Trade"
+        "Maritime"
       ],
       "type": "historic"
     },
@@ -279,10 +279,10 @@
       "tags": [
         "Greek",
         "Mycenaean",
-        "Building 🏠",
-        "Legend",
         "Architecture",
-        "Fortification"
+        "Building 🏠",
+        "Fortification",
+        "Legend"
       ],
       "type": "historic"
     },
@@ -335,10 +335,10 @@
       "source": "https://en.wikipedia.org/wiki/Minoan_eruption",
       "tags": [
         "Minoan",
+        "Economic",
         "Agriculture",
         "Climate Crisis",
-        "Disaster",
-        "Economic"
+        "Disaster"
       ],
       "type": "historic"
     },
@@ -374,9 +374,9 @@
       "tags": [
         "Greek",
         "Mycenaean",
-        "Innovation",
         "Language",
-        "Writing"
+        "Writing",
+        "Innovation"
       ],
       "type": "cultural"
     },
@@ -412,8 +412,8 @@
       "tags": [
         "Greek",
         "Mycenaean",
-        "Administration",
         "Economic",
+        "Administration",
         "Text"
       ],
       "type": "historic"
@@ -431,6 +431,7 @@
       "tags": [
         "Greek",
         "Mycenaean",
+        "Culture",
         "Art",
         "Burial",
         "Tomb",
@@ -471,8 +472,8 @@
       "tags": [
         "Greek",
         "Mycenaean",
-        "Building 🏠",
         "Architecture",
+        "Building 🏠",
         "Tomb",
         "Treasure"
       ],
@@ -491,9 +492,9 @@
       "tags": [
         "Greek",
         "Mycenaean",
-        "Building 🏠",
+        "Art",
         "Architecture",
-        "Art"
+        "Building 🏠"
       ],
       "type": "historic"
     },
@@ -510,10 +511,10 @@
       "tags": [
         "Greek",
         "Mycenaean",
-        "Decline",
         "Destruction",
         "Invasion",
-        "Mystery"
+        "Mystery",
+        "Decline"
       ],
       "type": "military"
     },
@@ -530,9 +531,9 @@
       "tags": [
         "Greek",
         "Mycenaean",
-        "Decline",
         "Language",
-        "Writing"
+        "Writing",
+        "Decline"
       ],
       "type": "cultural"
     },
@@ -550,6 +551,7 @@
         "Greek",
         "Mycenaean",
         "War",
+        "Culture",
         "Battle",
         "Legend",
         "Uncertain",
@@ -570,8 +572,8 @@
       "tags": [
         "Greek",
         "Mycenaean",
-        "Collapse",
         "Destruction",
+        "Collapse",
         "Fall"
       ],
       "type": "historic"

@@ -13,9 +13,9 @@
       "source": "https://whc.unesco.org/en/list/1572/",
       "tags": [
         "Building 🏠",
-        "Calendar",
+        "Temple",
         "Megalithic",
-        "Temple"
+        "Calendar"
       ],
       "type": "cultural"
     },
@@ -31,8 +31,8 @@
       "source": "https://en.wikipedia.org/wiki/Nabta_Playa#/media/File:Calendar_aswan.JPG",
       "tags": [
         "Building 🏠",
-        "Astronomy",
-        "Megalithic"
+        "Megalithic",
+        "Astronomy"
       ],
       "type": "scientific"
     },
@@ -83,10 +83,10 @@
       "source": "https://whc.unesco.org/en/list/132/",
       "tags": [
         "Building 🏠",
-        "Malta",
+        "Temple",
         "Megalithic",
         "Neolithic",
-        "Temple"
+        "Malta"
       ],
       "type": "cultural"
     },
@@ -102,9 +102,9 @@
       "source": "https://www.nps.gov/subjects/archaeology/watson-brake.htm",
       "tags": [
         "American",
+        "Neolithic",
         "Earthwork",
-        "Mound Builders",
-        "Neolithic"
+        "Mound Builders"
       ],
       "type": "historic"
     },
@@ -118,14 +118,14 @@
       "name": "Gavrinis Passage Tomb",
       "name_ru": "Курган Гавринис в Бретани",
       "tags": [
-        "Building 🏠",
         "Art",
         "Burial",
-        "Earthwork",
+        "Building 🏠",
+        "Tomb",
         "Megalithic",
-        "Mound Builders",
         "Neolithic",
-        "Tomb"
+        "Earthwork",
+        "Mound Builders"
       ],
       "type": "cultural"
     },
@@ -141,8 +141,8 @@
       "source": "https://www.britannica.com/topic/Valdivia-culture",
       "tags": [
         "Culture",
-        "Maritime",
         "Neolithic",
+        "Maritime",
         "Valdivia"
       ],
       "type": "cultural"
@@ -158,9 +158,9 @@
       "name_ru": "Перуанская цивилизация Караль-Супе",
       "source": "https://whc.unesco.org/en/list/1269",
       "tags": [
-        "Civilization",
         "Culture",
         "Neolithic",
+        "Civilization",
         "Peruan",
         "Urban"
       ],
@@ -177,9 +177,9 @@
       "name_ru": "Раннее земледелие в Корее",
       "tags": [
         "Korean",
+        "Neolithic",
         "Agriculture",
         "Food",
-        "Neolithic",
         "Rice"
       ],
       "type": "historic"
@@ -195,11 +195,11 @@
       "name_ru": "Начало цивилизации долины Инда",
       "source": "https://www.harappa.com/har/har0.html",
       "tags": [
-        "Civilization",
-        "Culture",
         "Harappan",
-        "Indus Valley",
+        "Culture",
         "Neolithic",
+        "Civilization",
+        "Indus Valley",
         "Urban"
       ],
       "type": "historic"
@@ -214,9 +214,9 @@
       "name": "Development of Indus Script",
       "name_ru": "Развитие письменности долины Инда",
       "tags": [
-        "Indus Valley",
         "Language",
-        "Writing"
+        "Writing",
+        "Indus Valley"
       ],
       "type": "cultural"
     },
@@ -231,8 +231,8 @@
       "name_ru": "Мемфис - новая столица Египта",
       "tags": [
         "Egypt",
-        "City",
-        "Capital"
+        "Capital",
+        "City"
       ],
       "type": "political"
     },
@@ -282,9 +282,9 @@
       "name_ru": "Стоунхендж Фаза I",
       "source": "https://www.english-heritage.org.uk/visit/places/stonehenge/",
       "tags": [
-        "Earthwork",
         "Megalithic",
         "Neolithic",
+        "Earthwork",
         "Stonehenge"
       ],
       "type": "cultural"
@@ -299,8 +299,8 @@
       "name": "A-Group Culture of Nubia",
       "name_ru": "Культура А-Группы Нубии",
       "tags": [
-        "Culture",
         "Kingdom",
+        "Culture",
         "Nubia"
       ],
       "type": "political"
@@ -315,8 +315,8 @@
       "name": "Harappa Urban Center Founded",
       "name_ru": "Основание городского центра Хараппа",
       "tags": [
-        "City",
         "Harappan",
+        "City",
         "Indus Valley",
         "Urban"
       ],
@@ -348,12 +348,12 @@
       "name": "Knowth Passage Tomb Complex",
       "name_ru": "Гробницы Ноут в Ирландии",
       "tags": [
-        "Building 🏠",
         "Burial",
-        "Earthwork",
+        "Building 🏠",
+        "Tomb",
         "Megalithic",
-        "Mound Builders",
-        "Tomb"
+        "Earthwork",
+        "Mound Builders"
       ],
       "type": "cultural"
     },
@@ -369,8 +369,8 @@
       "tags": [
         "Japanese",
         "Jōmon",
-        "Art",
         "Culture",
+        "Art",
         "Neolithic"
       ],
       "type": "cultural"
@@ -385,10 +385,10 @@
       "name": "Norte Chico Complex Society",
       "name_ru": "Перуанская культура Норте-Чико",
       "tags": [
-        "Civilization",
         "Culture",
-        "Fishing",
         "Neolithic",
+        "Civilization",
+        "Fishing",
         "Peruan"
       ],
       "type": "cultural"
@@ -403,8 +403,8 @@
       "name": "Early Dynastic Period Begins",
       "name_ru": "Раннединастический период Месопотамии",
       "tags": [
-        "City-State",
-        "Mesopotamian"
+        "Mesopotamian",
+        "City-State"
       ],
       "type": "political"
     },
@@ -435,9 +435,9 @@
       "name_ru": "Священный город Караль в Перу",
       "source": "https://www.zonacaral.gob.pe/",
       "tags": [
-        "Building 🏠",
         "City",
-        "Architecture"
+        "Architecture",
+        "Building 🏠"
       ],
       "type": "cultural"
     },
@@ -470,8 +470,8 @@
       "tags": [
         "Egypt",
         "Old Kingdom",
-        "Building 🏠",
         "Architecture",
+        "Building 🏠",
         "Engineering ⚙️"
       ],
       "type": "cultural"
@@ -503,8 +503,8 @@
       "name": "Dholavira Established",
       "name_ru": "Основание Дхолавиры в Гуджарате",
       "tags": [
-        "City",
         "Harappan",
+        "City",
         "Indus Valley",
         "Urban"
       ],
@@ -552,10 +552,10 @@
       "name": "Syllabic Writing Begins",
       "name_ru": "Начало слогового письма",
       "tags": [
-        "Innovation",
-        "Language",
         "Mesopotamian",
-        "Writing"
+        "Language",
+        "Writing",
+        "Innovation"
       ],
       "type": "cultural"
     },
@@ -589,8 +589,8 @@
       "tags": [
         "Egypt",
         "Old Kingdom",
-        "Building 🏠",
         "Architecture",
+        "Building 🏠",
         "Engineering ⚙️"
       ],
       "type": "cultural"
@@ -608,9 +608,9 @@
       "tags": [
         "Egypt",
         "Old Kingdom",
+        "Architecture",
         "Building 🏠",
         "Ancient",
-        "Architecture",
         "Wonders"
       ],
       "type": "cultural"
@@ -628,10 +628,10 @@
       "tags": [
         "Egypt",
         "Old Kingdom",
-        "Building 🏠",
-        "Architecture",
         "Culture",
-        "Sculpture"
+        "Sculpture",
+        "Architecture",
+        "Building 🏠"
       ],
       "type": "cultural"
     },
@@ -647,8 +647,8 @@
       "tags": [
         "Egypt",
         "Old Kingdom",
-        "Building 🏠",
-        "Architecture"
+        "Architecture",
+        "Building 🏠"
       ],
       "type": "cultural"
     },
@@ -664,8 +664,8 @@
       "tags": [
         "Egypt",
         "Old Kingdom",
-        "Building 🏠",
-        "Architecture"
+        "Architecture",
+        "Building 🏠"
       ],
       "type": "cultural"
     },
@@ -680,8 +680,8 @@
       "name_ru": "Сарсеновый круг Стоунхенджа",
       "source": "https://www.english-heritage.org.uk/visit/places/stonehenge/",
       "tags": [
-        "Building 🏠",
         "Bell Beaker",
+        "Building 🏠",
         "Engineering ⚙️",
         "Megalithic",
         "Neolithic",
@@ -718,9 +718,9 @@
       "tags": [
         "Japanese",
         "Jōmon",
+        "Neolithic",
         "Fishing",
         "Maritime",
-        "Neolithic",
         "Technology"
       ],
       "type": "scientific"
@@ -735,9 +735,9 @@
       "name": "Eannatum of Lagash's Conquests",
       "name_ru": "Завоевания Эаннатума из Лагаша",
       "tags": [
-        "Conquest",
+        "Mesopotamian",
         "Empire",
-        "Mesopotamian"
+        "Conquest"
       ],
       "type": "military"
     },
@@ -752,9 +752,9 @@
       "name_ru": "Голубые камни Стоунхенджа",
       "tags": [
         "Bell Beaker",
-        "Logistics",
         "Megalithic",
         "Neolithic",
+        "Logistics",
         "Stonehenge"
       ],
       "type": "cultural"
@@ -770,9 +770,9 @@
       "name_ru": "Основание царства Керма в Нубии",
       "source": "https://www.metmuseum.org/toah/hd/kerm/hd_kerm.htm",
       "tags": [
+        "Kingdom",
         "Foundation",
         "Kerma",
-        "Kingdom",
         "Nubia"
       ],
       "type": "political"
@@ -804,8 +804,8 @@
       "name_ru": "Строительство Большого бассейна Мохенджо-Даро",
       "source": "https://www.worldhistory.org/Mohenjo-daro/",
       "tags": [
-        "Building 🏠",
         "Architecture",
+        "Building 🏠",
         "Engineering ⚙️"
       ],
       "type": "cultural"
@@ -821,10 +821,10 @@
       "name_ru": "Создание скульптуры Танцующей девочки",
       "source": "https://en.wikipedia.org/wiki/Dancing_Girl_(prehistoric_sculpture)",
       "tags": [
-        "Art",
-        "Bronze",
         "Harappan",
-        "Sculpture"
+        "Art",
+        "Sculpture",
+        "Bronze"
       ],
       "type": "cultural"
     },
@@ -840,9 +840,9 @@
       "source": "https://www.nps.gov/popo/index.htm",
       "tags": [
         "American",
+        "Neolithic",
         "Earthwork",
-        "Mound Builders",
-        "Neolithic"
+        "Mound Builders"
       ],
       "type": "cultural"
     },
@@ -907,8 +907,8 @@
       "name_ru": "Фивы - столица Египта",
       "tags": [
         "Egypt",
-        "City",
-        "Capital"
+        "Capital",
+        "City"
       ],
       "type": "political"
     },
@@ -943,8 +943,8 @@
       "source": "https://en.wikipedia.org/wiki/Minoan_palaces",
       "tags": [
         "Minoan",
-        "Building 🏠",
-        "Architecture"
+        "Architecture",
+        "Building 🏠"
       ],
       "type": "cultural"
     },
@@ -959,9 +959,9 @@
       "name_ru": "Миграция Авраама в Ханаан",
       "tags": [
         "Judaic",
+        "Religious",
         "Legend",
-        "Migration",
-        "Religious"
+        "Migration"
       ],
       "type": "cultural"
     },
@@ -975,9 +975,9 @@
       "name": "Sechin Alto Complex",
       "name_ru": "Комплекс Сечин-Альто в Перу",
       "tags": [
-        "Building 🏠",
-        "Architecture",
         "Ceremonial",
+        "Architecture",
+        "Building 🏠",
         "Peruan"
       ],
       "type": "cultural"
@@ -1005,15 +1005,15 @@
       "era": "BC",
       "latitude": 25.72044516,
       "longitude": 32.65413523,
-      "name": "Karnak - the Egyptian center of creation",
-      "name_ru": "Карнак - египетский центр мироздания",
+      "name": "Karnak — the Egyptian center of creation",
+      "name_ru": "Карнак — египетский центр мироздания",
       "source": "https://en.wikipedia.org/wiki/Karnak",
       "tags": [
         "Egypt",
-        "Legend",
-        "Holy Site",
+        "Religious",
         "Pagan",
-        "Religious"
+        "Holy Site",
+        "Legend"
       ],
       "type": "religious"
     },
@@ -1046,9 +1046,9 @@
       "name_ru": "Аменемхет I становится фараоном",
       "tags": [
         "Egypt",
+        "Capital",
         "Dynasty",
-        "Pharaoh",
-        "Capital"
+        "Pharaoh"
       ],
       "type": "political"
     },
@@ -1064,8 +1064,8 @@
       "source": "https://en.wikipedia.org/wiki/Walls_of_the_Ruler",
       "tags": [
         "Egypt",
-        "Building 🏠",
         "Defense",
+        "Building 🏠",
         "Fortification"
       ],
       "type": "military"
@@ -1193,8 +1193,8 @@
       "source": "https://www.britishmuseum.org/collection/object/W_1909-1019-1",
       "tags": [
         "Babylonian",
-        "Code",
         "Human Rights",
+        "Code",
         "Justice",
         "Law",
         "Text"
@@ -1213,9 +1213,9 @@
       "source": "https://www.egypttoursportal.com/the-hyksos-invasion/",
       "tags": [
         "Egypt",
+        "Invasion",
         "Canaanite",
         "Hyksos",
-        "Invasion",
         "New Kingdom"
       ],
       "type": "military"
@@ -1248,10 +1248,10 @@
       "name_ru": "Основание Хеттского царства",
       "tags": [
         "Hittite",
-        "King",
-        "Culture",
+        "Kingdom",
         "Foundation",
-        "Kingdom"
+        "Culture",
+        "King"
       ],
       "type": "political"
     },
@@ -1369,6 +1369,7 @@
       "name": "Seeder Plow Invented",
       "name_ru": "Изобретение сеялочного плуга",
       "tags": [
+        "Mesopotamian",
         "Agriculture",
         "Food",
         "Innovation",
@@ -1386,10 +1387,10 @@
       "name": "Mesoamerican Agriculture",
       "name_ru": "Сельское хозяйство Мезоамерики",
       "tags": [
+        "Mesoamerican",
         "Agriculture",
         "Food",
-        "Husbandry",
-        "Mesoamerican"
+        "Husbandry"
       ],
       "type": "scientific"
     },
@@ -1422,8 +1423,8 @@
       "source": "https://www.worldhistory.org/Deir_el-Bahari/",
       "tags": [
         "Egypt",
-        "Building 🏠",
         "Architecture",
+        "Building 🏠",
         "Temple",
         "Tomb"
       ],
@@ -1441,9 +1442,9 @@
       "source": "https://en.wikipedia.org/wiki/Chapelle_Rouge",
       "tags": [
         "Egypt",
-        "Building 🏠",
-        "Architecture",
         "Religious",
+        "Architecture",
+        "Building 🏠",
         "Temple"
       ],
       "type": "historic"
@@ -1459,9 +1460,9 @@
       "name_ru": "Экспедиция Хатшепсут в Пунт",
       "tags": [
         "Egypt",
+        "Trade",
         "Expedition",
-        "Exploration",
-        "Trade"
+        "Exploration"
       ],
       "type": "historic"
     },
@@ -1512,10 +1513,10 @@
       "tags": [
         "Mitanni",
         "Egypt",
-        "First",
         "War",
         "Battle",
         "Canaanite",
+        "First",
         "New Kingdom",
         "Thutmose III 👑"
       ],
@@ -1592,8 +1593,8 @@
         "Mitanni",
         "Egypt",
         "War",
-        "Canaanite",
         "Conquest",
+        "Canaanite",
         "New Kingdom",
         "Syria",
         "Thutmose III 👑"
@@ -1615,8 +1616,8 @@
         "Egypt",
         "War",
         "Battle",
-        "Innovation",
         "Invasion",
+        "Innovation",
         "New Kingdom",
         "Tactics",
         "Thutmose III 👑",
@@ -1655,11 +1656,11 @@
       "name_ru": "Моисей на горе Синай",
       "tags": [
         "Judaic",
-        "Legend",
-        "Uncertain",
         "Foundation",
+        "Religious",
         "Holy Site",
-        "Religious"
+        "Legend",
+        "Uncertain"
       ],
       "type": "religious"
     },
@@ -1710,8 +1711,8 @@
       "name_ru": "13-й поход Тутмоса III в Нухашше",
       "tags": [
         "Egypt",
-        "New Kingdom",
         "Rebellion",
+        "New Kingdom",
         "Syria",
         "Thutmose III 👑",
         "Tribute"
@@ -1766,10 +1767,10 @@
       "name_ru": "Поход Тутмоса III в Нубию",
       "tags": [
         "Egypt",
+        "Temple",
         "Gold",
         "New Kingdom",
         "Nubia",
-        "Temple",
         "Thutmose III 👑"
       ],
       "type": "military"
@@ -1785,13 +1786,13 @@
       "name_ru": "Падение Иерихона",
       "source": "https://en.wikipedia.org/wiki/Fall_of_Jericho",
       "tags": [
-        "Judaic",
-        "Israel",
-        "Legend",
-        "Canaanite",
-        "Conquest",
         "Milestone ⭐️",
-        "Religious"
+        "Israel",
+        "Judaic",
+        "Religious",
+        "Conquest",
+        "Legend",
+        "Canaanite"
       ],
       "type": "historic"
     },
@@ -1824,10 +1825,10 @@
       "name_ru": "Эпоха Судей в Ханаане",
       "source": "https://en.wikipedia.org/wiki/Hebrew_Bible_judges",
       "tags": [
-        "Judaic",
         "Israel",
-        "Canaanite",
-        "Political"
+        "Judaic",
+        "Political",
+        "Canaanite"
       ],
       "type": "historic"
     },
@@ -1860,10 +1861,10 @@
       "source": "https://en.wikipedia.org/wiki/Luxor_Temple",
       "tags": [
         "Egypt",
-        "Building 🏠",
         "Architecture",
-        "Holidays",
-        "Temple"
+        "Building 🏠",
+        "Temple",
+        "Holidays"
       ],
       "type": "historic"
     },
@@ -1894,9 +1895,9 @@
       "source": "https://www.worldhistory.org/akhenaten/",
       "tags": [
         "Egypt",
-        "New Kingdom",
-        "Pagan",
         "Religious",
+        "Pagan",
+        "New Kingdom",
         "Revolution"
       ],
       "type": "cultural"
@@ -1913,8 +1914,8 @@
       "source": "https://www.metmuseum.org/toah/hd/amarna/hd_amarna.htm",
       "tags": [
         "Egypt",
-        "City",
         "Capital",
+        "City",
         "New Kingdom"
       ],
       "type": "political"
@@ -1930,8 +1931,8 @@
       "name_ru": "Смерть Эхнатона",
       "tags": [
         "Egypt",
-        "Death",
-        "Religious"
+        "Religious",
+        "Death"
       ],
       "type": "historic"
     },
@@ -1947,8 +1948,8 @@
       "source": "https://www.nationalgeographic.com/history/article/tutankhamun",
       "tags": [
         "Egypt",
-        "Pharaoh",
-        "Religious"
+        "Religious",
+        "Pharaoh"
       ],
       "type": "political"
     },
@@ -1963,8 +1964,8 @@
       "name_ru": "Возвращение столицы в Фивы",
       "tags": [
         "Egypt",
-        "Abandonment",
-        "Capital"
+        "Capital",
+        "Abandonment"
       ],
       "type": "political"
     },
@@ -1996,8 +1997,8 @@
       "tags": [
         "Mitanni",
         "Hittite",
-        "Annexation",
-        "Conquest"
+        "Conquest",
+        "Annexation"
       ],
       "type": "military"
     },
@@ -2097,9 +2098,9 @@
       "tags": [
         "Egypt",
         "Hittite",
+        "Carian",
         "War",
-        "Battle",
-        "Carian"
+        "Battle"
       ],
       "type": "military"
     },
@@ -2133,10 +2134,10 @@
       "source": "https://whc.unesco.org/en/list/88/",
       "tags": [
         "Egypt",
-        "Building 🏠",
         "Architecture",
-        "Love",
-        "Temple"
+        "Building 🏠",
+        "Temple",
+        "Love"
       ],
       "type": "cultural"
     },
@@ -2151,8 +2152,8 @@
       "name_ru": "Первые набеги народов моря",
       "tags": [
         "Invasion",
-        "Mediterranean",
-        "Mystery"
+        "Mystery",
+        "Mediterranean"
       ],
       "type": "military"
     },
@@ -2198,9 +2199,9 @@
       "name_ru": "Разрушение Угарита",
       "tags": [
         "City",
-        "Collapse",
         "Destruction",
-        "Trade"
+        "Trade",
+        "Collapse"
       ],
       "type": "military"
     },
@@ -2215,9 +2216,9 @@
       "name_ru": "Начало коллапса бронзового века",
       "source": "https://www.worldhistory.org/Bronze_Age_Collapse/",
       "tags": [
+        "Mystery",
         "Civilization",
-        "Collapse",
-        "Mystery"
+        "Collapse"
       ],
       "type": "historic"
     },
@@ -2348,8 +2349,8 @@
       "name": "Israel's United Monarchy",
       "name_ru": "Объединенная монархия Израиля",
       "tags": [
-        "Judaic",
         "Israel",
+        "Judaic",
         "Kingdom",
         "Monarchy",
         "Unification"
@@ -2368,8 +2369,8 @@
       "tags": [
         "Japanese",
         "Jōmon",
-        "Climate Crisis",
-        "Trade"
+        "Trade",
+        "Climate Crisis"
       ],
       "type": "historic"
     },
@@ -2385,8 +2386,8 @@
       "tags": [
         "Israel",
         "Jerusalem",
-        "War",
         "Capital",
+        "War",
         "Conquest"
       ],
       "type": "political"
@@ -2437,12 +2438,12 @@
       "tags": [
         "Persian",
         "Egypt",
-        "Judaic",
         "Achaemenid",
-        "Pagan",
+        "Judaic",
         "Religious",
-        "Temple",
-        "Tolerance"
+        "Pagan",
+        "Tolerance",
+        "Temple"
       ],
       "type": "religious"
     }

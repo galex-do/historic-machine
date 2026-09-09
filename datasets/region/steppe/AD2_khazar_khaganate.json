@@ -12,13 +12,13 @@
       "name_ru": "Разделение власти в Хазарии",
       "source": "https://en.wikipedia.org/wiki/Khagan",
       "tags": [
-        "Administration",
-        "Nomads",
-        "Political",
+        "Khazar",
+        "Turkic",
         "Religious",
         "Tengrism",
-        "Turkic",
-        "Khazar"
+        "Political",
+        "Administration",
+        "Nomads"
       ],
       "type": "political"
     },
@@ -33,12 +33,12 @@
       "name_ru": "Хазары захватывают Тамань",
       "source": "https://golubitskoefoundation.com/longreads/archaeology_of_tamagne",
       "tags": [
+        "Bulgarian",
+        "Khazar",
+        "Turkic",
         "Conquest",
         "Nomads",
-        "Turkic",
-        "Vassalage",
-        "Bulgarian",
-        "Khazar"
+        "Vassalage"
       ],
       "type": "military"
     },
@@ -53,15 +53,15 @@
       "name_ru": "Хазаро-византийский династический союз",
       "source": "https://en.wikipedia.org/wiki/Leo_IV_the_Khazar",
       "tags": [
+        "Byzantine",
         "Roman",
+        "Khazar",
+        "Turkic",
+        "Alliance",
         "Diplomacy",
         "Marriage",
         "Dynasty",
-        "Alliance",
-        "Byzantine",
-        "Political",
-        "Turkic",
-        "Khazar"
+        "Political"
       ],
       "type": "political"
     },
@@ -76,15 +76,15 @@
       "name_ru": "Религиозная терпимость в Хазарском каганате",
       "source": "https://en.wikipedia.org/wiki/Khazar_Khaganate#Religion",
       "tags": [
-        "Christian",
-        "Culture",
-        "Islamic",
-        "Political",
+        "Khazar",
+        "Turkic",
         "Religious",
+        "Christian",
+        "Islamic",
+        "Culture",
         "Tolerance",
         "Trade",
-        "Turkic",
-        "Khazar"
+        "Political"
       ],
       "type": "cultural"
     },
@@ -99,13 +99,13 @@
       "name_ru": "Итиль — столица Хазарии",
       "source": "https://en.wikipedia.org/wiki/Atil",
       "tags": [
-        "Architecture",
+        "Khazar",
+        "Turkic",
         "Capital",
         "Culture",
-        "Political",
+        "Architecture",
         "Trade",
-        "Turkic",
-        "Khazar"
+        "Political"
       ],
       "type": "historic"
     },
@@ -121,11 +121,11 @@
       "source": "https://en.wikipedia.org/wiki/Alans",
       "tags": [
         "Alan",
-        "Alliance",
-        "Political",
+        "Khazar",
         "Sarmatian",
         "Turkic",
-        "Khazar"
+        "Alliance",
+        "Political"
       ],
       "type": "historic"
     },
@@ -140,14 +140,14 @@
       "name_ru": "Рахдонитские купцы в Итиле",
       "source": "https://en.wikipedia.org/wiki/Radhanite",
       "tags": [
+        "Khazar",
+        "Turkic",
         "Judaic",
         "Culture",
-        "Political",
-        "Route",
         "Silk Road",
         "Trade",
-        "Turkic",
-        "Khazar"
+        "Route",
+        "Political"
       ],
       "type": "historic"
     },
@@ -162,14 +162,14 @@
       "name_ru": "Возведение хазарской крепости Саркел на Дону",
       "source": "https://en.wikipedia.org/wiki/Sarkel",
       "tags": [
-        "Roman",
-        "Architecture",
         "Byzantine",
-        "Defense",
-        "Fortification",
-        "Political",
+        "Roman",
+        "Khazar",
         "Turkic",
-        "Khazar"
+        "Defense",
+        "Architecture",
+        "Fortification",
+        "Political"
       ],
       "type": "historic"
     },
@@ -180,15 +180,15 @@
       "era": "AD",
       "latitude": 50.45826903,
       "longitude": 30.5160284,
-      "name": "The Sword Tribute — Eastern Slavic Tribes Under Khazar Suzerainty",
+      "name": "East Slavic tribes pay tribute to Khazaria",
       "name_ru": "Восточнославянские племена платят дань Хазарии",
       "source": "https://en.wikipedia.org/wiki/Khazars#Relations_with_the_Slavs",
       "tags": [
+        "Khazar",
         "Slavic",
-        "Trade",
-        "Tribute",
         "Turkic",
-        "Khazar"
+        "Trade",
+        "Tribute"
       ],
       "type": "historic"
     },
@@ -203,15 +203,14 @@
       "name_ru": "Кавары присоединяются к племенам мадьяров",
       "source": "https://en.wikipedia.org/wiki/Kabars",
       "tags": [
-        "Dynasty",
-        "Finno-Ugric",
-        "Magyar",
-        "Migration",
-        "Political",
-        "Slavic",
         "Khazar",
-        "Nomad",
-        "Steppe"
+        "Magyar",
+        "Slavic",
+        "Finno-Ugric",
+        "Dynasty",
+        "Political",
+        "Migration",
+        "Nomads"
       ],
       "type": "historic"
     },
@@ -226,14 +225,14 @@
       "name_ru": "Набеги печенегов на Хазарию",
       "source": "https://en.wikipedia.org/wiki/Pechenegs",
       "tags": [
+        "Khazar",
+        "Magyar",
+        "Turkic",
+        "Pecheneg",
         "War",
         "Invasion",
-        "Magyar",
         "Migration",
-        "Nomads",
-        "Pecheneg",
-        "Turkic",
-        "Khazar"
+        "Nomads"
       ],
       "type": "military"
     },
@@ -248,14 +247,14 @@
       "name_ru": "Русские каспийские походы",
       "source": "https://en.wikipedia.org/wiki/Caspian_expeditions_of_the_Rus%27",
       "tags": [
-        "Battle",
-        "Islamic",
-        "Kyiv",
+        "Khazar",
         "Norman",
-        "Pillage",
-        "Rus",
         "Slavic",
-        "Khazar"
+        "Kyiv",
+        "Rus",
+        "Islamic",
+        "Battle",
+        "Pillage"
       ],
       "type": "military"
     },
@@ -270,15 +269,15 @@
       "name_ru": "Киевская Русь уничтожает Саркел",
       "source": "https://en.wikipedia.org/wiki/Sviatoslav_I_of_Kiev",
       "tags": [
-        "War",
-        "Battle",
-        "Collapse",
-        "Conquest",
-        "Kyiv",
-        "Rus",
+        "Khazar",
         "Slavic",
         "Turkic",
-        "Khazar"
+        "Kyiv",
+        "Rus",
+        "War",
+        "Conquest",
+        "Battle",
+        "Collapse"
       ],
       "type": "military"
     },
@@ -293,15 +292,15 @@
       "name_ru": "Киевская Русь уничтожает Хазарский каганат",
       "source": "https://en.wikipedia.org/wiki/Khazar_Khaganate#Decline_and_fall",
       "tags": [
-        "War",
-        "Collapse",
-        "Conquest",
-        "Destruction",
-        "Kyiv",
-        "Rus",
+        "Khazar",
         "Slavic",
         "Turkic",
-        "Khazar"
+        "Kyiv",
+        "Rus",
+        "War",
+        "Conquest",
+        "Destruction",
+        "Collapse"
       ],
       "type": "military"
     }

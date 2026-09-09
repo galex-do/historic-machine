@@ -12,10 +12,10 @@
       "name_ru": "Формирование греческого пантеона",
       "tags": [
         "Greek",
-        "Legend",
-        "Holy Site",
+        "Religious",
         "Pagan",
-        "Religious"
+        "Holy Site",
+        "Legend"
       ],
       "type": "religious"
     },
@@ -69,11 +69,11 @@
       "source": "https://en.wikipedia.org/wiki/Pythia",
       "tags": [
         "Greek",
-        "Holy Site",
-        "Oracle",
+        "Religious",
         "Pagan",
+        "Holy Site",
         "Philosophy",
-        "Religious"
+        "Oracle"
       ],
       "type": "religious"
     },
@@ -375,10 +375,10 @@
       "name_ru": "Дар Тритона аргонавтам",
       "tags": [
         "Greek",
-        "Legend",
-        "Argonauts",
+        "Religious",
         "Pagan",
-        "Religious"
+        "Legend",
+        "Argonauts"
       ],
       "type": "historic"
     },
@@ -493,9 +493,9 @@
       "name_ru": "Аргонавты добывают Золотое руно",
       "tags": [
         "Greek",
+        "Caucasian",
         "Legend",
         "Argonauts",
-        "Caucasian",
         "Colchis"
       ],
       "type": "historic"
@@ -511,9 +511,9 @@
       "name_ru": "Аргонавты прибывают в Колхиду",
       "tags": [
         "Greek",
+        "Caucasian",
         "Legend",
         "Argonauts",
-        "Caucasian",
         "Colchis"
       ],
       "type": "historic"
@@ -547,11 +547,12 @@
       "name_ru": "Орфей спускается в Аид за Эвридикой",
       "tags": [
         "Greek",
+        "Religious",
+        "Pagan",
+        "Culture",
         "Legend",
         "Love",
-        "Orpheus 👤",
-        "Pagan",
-        "Religious"
+        "Orpheus 👤"
       ],
       "type": "historic"
     },
@@ -598,9 +599,9 @@
       "name_ru": "Тесей спускается в Аид",
       "tags": [
         "Greek",
-        "Legend",
-        "Pagan",
         "Religious",
+        "Pagan",
+        "Legend",
         "Theseus 👤"
       ],
       "type": "historic"
@@ -616,28 +617,29 @@
       "name_ru": "Геракл спускается в Аид",
       "tags": [
         "Greek",
+        "Religious",
+        "Pagan",
         "Legend",
         "Heracles 👤",
-        "Pagan",
-        "Religious",
         "Theseus 👤"
       ],
       "type": "historic"
     },
     {
       "date": "01.01.1100",
-      "description": "Cyme (Aeolian) founded by Aeolian colonists from mainland Greece; largest and oldest Aeolian city in Asia Minor, mother city of many colonies including Italian Cumae, claimed as hometown of Hesiod's father",
-      "description_ru": "Кима Эолийская основана колонистами из материковой Греции; один из крупнейших и древнейших эолийскийх городов в Малой Азии, из которой велась дальнейшая греческая экспансия",
+      "description": "Smyrna founded by Aeolian colonists, later absorbed by neighboring Ionian Colophon around 688 BC; strategic location on gulf makes it major trade center; claims to be birthplace of Homer along with Chios",
+      "description_ru": "Смирна основана эолийскими колонистами, позже поглощена соседним ионийским Колофоном около 688 г. до н.э.; стратегическое положение на заливе делает ее крупным торговым центром; претендует на звание родины Гомера наряду с Хиосом",
       "era": "BC",
-      "latitude": 38.75,
-      "longitude": 27,
-      "name": "Foundation of Aeolian Cyme",
-      "name_ru": "Основание эолийской Кимы",
-      "source": "https://en.wikipedia.org/wiki/Cyme_(Aeolis)",
+      "latitude": 38.45950339,
+      "longitude": 27.17485428,
+      "name": "Foundation of Smyrna",
+      "name_ru": "Основание эолийцами Смирны",
+      "source": "https://en.wikipedia.org/wiki/Smyrna",
       "tags": [
         "Greek",
-        "City",
         "Aeolic",
+        "City",
+        "Trade",
         "Colonization",
         "Expansion",
         "Seamen"
@@ -684,22 +686,21 @@
     },
     {
       "date": "01.01.1100",
-      "description": "Smyrna founded by Aeolian colonists, later absorbed by neighboring Ionian Colophon around 688 BC; strategic location on gulf makes it major trade center; claims to be birthplace of Homer along with Chios",
-      "description_ru": "Смирна основана эолийскими колонистами, позже поглощена соседним ионийским Колофоном около 688 г. до н.э.; стратегическое положение на заливе делает ее крупным торговым центром; претендует на звание родины Гомера наряду с Хиосом",
+      "description": "Cyme (Aeolian) founded by Aeolian colonists from mainland Greece; largest and oldest Aeolian city in Asia Minor, mother city of many colonies including Italian Cumae, claimed as hometown of Hesiod's father",
+      "description_ru": "Кима Эолийская основана колонистами из материковой Греции; один из крупнейших и древнейших эолийскийх городов в Малой Азии, из которой велась дальнейшая греческая экспансия",
       "era": "BC",
-      "latitude": 38.45950339,
-      "longitude": 27.17485428,
-      "name": "Foundation of Smyrna",
-      "name_ru": "Основание эолийцами Смирны",
-      "source": "https://en.wikipedia.org/wiki/Smyrna",
+      "latitude": 38.75,
+      "longitude": 27,
+      "name": "Foundation of Aeolian Cyme",
+      "name_ru": "Основание эолийской Кимы",
+      "source": "https://en.wikipedia.org/wiki/Cyme_(Aeolis)",
       "tags": [
         "Greek",
-        "City",
         "Aeolic",
+        "City",
         "Colonization",
         "Expansion",
-        "Seamen",
-        "Trade"
+        "Seamen"
       ],
       "type": "historic"
     },
@@ -715,11 +716,11 @@
       "source": "https://en.wikipedia.org/wiki/Greek_Dark_Ages",
       "tags": [
         "Greek",
-        "Dorian",
         "Aeolic",
+        "Dorian",
+        "Ionian",
         "Dark Ages",
-        "Decline",
-        "Ionian"
+        "Decline"
       ],
       "type": "historic"
     },
@@ -735,8 +736,8 @@
       "source": "https://en.wikipedia.org/wiki/Mytilene",
       "tags": [
         "Greek",
-        "City",
         "Aeolic",
+        "City",
         "Colonization",
         "Expansion",
         "Seamen"
@@ -755,14 +756,14 @@
       "source": "https://en.wikipedia.org/wiki/Phocaea",
       "tags": [
         "Greek",
+        "Ionian",
         "Phocaean",
         "City",
+        "Trade",
         "Colonization",
         "Expansion",
-        "Ionian",
         "Maritime",
-        "Seamen",
-        "Trade"
+        "Seamen"
       ],
       "type": "historic"
     },
@@ -797,10 +798,10 @@
       "source": "https://en.wikipedia.org/wiki/Colophon_(city)",
       "tags": [
         "Greek",
+        "Ionian",
         "City",
         "Colonization",
         "Expansion",
-        "Ionian",
         "Seamen"
       ],
       "type": "historic"
@@ -817,10 +818,10 @@
       "source": "https://en.wikipedia.org/wiki/Miletus",
       "tags": [
         "Greek",
+        "Ionian",
         "City",
         "Colonization",
         "Expansion",
-        "Ionian",
         "Migration",
         "Seamen"
       ],
@@ -838,12 +839,12 @@
       "source": "https://en.wikipedia.org/wiki/Clazomenae",
       "tags": [
         "Greek",
+        "Ionian",
         "City",
+        "Trade",
         "Colonization",
         "Expansion",
-        "Ionian",
-        "Seamen",
-        "Trade"
+        "Seamen"
       ],
       "type": "historic"
     },
@@ -859,10 +860,10 @@
       "source": "https://en.wikipedia.org/wiki/Teos",
       "tags": [
         "Greek",
+        "Ionian",
         "City",
         "Colonization",
         "Expansion",
-        "Ionian",
         "Seamen"
       ],
       "type": "historic"
@@ -879,11 +880,11 @@
       "source": "https://en.wikipedia.org/wiki/Ephesus",
       "tags": [
         "Greek",
+        "Ionian",
         "City",
+        "Religious",
         "Colonization",
         "Expansion",
-        "Ionian",
-        "Religious",
         "Seamen"
       ],
       "type": "historic"
@@ -900,10 +901,10 @@
       "source": "https://en.wikipedia.org/wiki/Priene",
       "tags": [
         "Greek",
+        "Ionian",
         "City",
         "Colonization",
         "Expansion",
-        "Ionian",
         "Seamen"
       ],
       "type": "historic"
@@ -920,10 +921,10 @@
       "source": "https://en.wikipedia.org/wiki/Erythrae",
       "tags": [
         "Greek",
+        "Ionian",
         "City",
         "Colonization",
         "Expansion",
-        "Ionian",
         "Seamen"
       ],
       "type": "historic"
@@ -978,8 +979,8 @@
       "source": "https://en.wikipedia.org/wiki/Ionia",
       "tags": [
         "Greek",
-        "Colonization",
         "Ionian",
+        "Colonization",
         "Migration",
         "Settlement",
         "Unification"
@@ -998,9 +999,9 @@
       "source": "https://en.wikipedia.org/wiki/Samos",
       "tags": [
         "Greek",
+        "Ionian",
         "Colonization",
         "Expansion",
-        "Ionian",
         "Seamen"
       ],
       "type": "historic"
@@ -1017,9 +1018,9 @@
       "source": "https://en.wikipedia.org/wiki/Chios",
       "tags": [
         "Greek",
+        "Ionian",
         "Colonization",
         "Expansion",
-        "Ionian",
         "Seamen"
       ],
       "type": "historic"
@@ -1055,11 +1056,11 @@
       "source": "https://en.wikipedia.org/wiki/Homer",
       "tags": [
         "Greek",
-        "Legend",
         "Culture",
         "Literature",
         "Oral Tradition",
-        "Poetry"
+        "Poetry",
+        "Legend"
       ],
       "type": "cultural"
     },
@@ -1076,9 +1077,10 @@
       "tags": [
         "Greek",
         "Phoenician",
-        "Innovation",
+        "Culture",
         "Language",
-        "Writing"
+        "Writing",
+        "Innovation"
       ],
       "type": "cultural"
     },
@@ -1113,10 +1115,10 @@
       "source": "https://en.wikipedia.org/wiki/Greek_colonisation",
       "tags": [
         "Greek",
+        "Trade",
         "Colonization",
         "Expansion",
-        "Settlement",
-        "Trade"
+        "Settlement"
       ],
       "type": "historic"
     },
@@ -1132,10 +1134,10 @@
       "source": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games",
       "tags": [
         "Greek",
+        "Religious",
+        "Pagan",
         "Culture",
         "Olympic",
-        "Pagan",
-        "Religious",
         "Sport"
       ],
       "type": "cultural"
@@ -1233,11 +1235,11 @@
         "Greek",
         "Milesian",
         "City",
+        "Trade",
         "Anatolia",
         "Colonization",
         "Expansion",
-        "Seamen",
-        "Trade"
+        "Seamen"
       ],
       "type": "historic"
     },
@@ -1254,12 +1256,12 @@
       "tags": [
         "Greek",
         "Chalcidian",
+        "Sicily",
         "City",
         "Colonization",
         "Expansion",
         "Magna Graecia",
-        "Seamen",
-        "Sicily"
+        "Seamen"
       ],
       "type": "historic"
     },
@@ -1298,12 +1300,56 @@
       "tags": [
         "Greek",
         "Corinthian",
+        "Sicily",
         "City",
         "Colonization",
         "Magna Graecia",
         "Seamen",
-        "Settlement",
-        "Sicily"
+        "Settlement"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0730",
+      "description": "Poet Hesiod writes Theogony and Works and Days; Theogony systematizes Greek mythology with genealogy of gods, while Works and Days provides practical farming advice and moral instruction\n\nIn his Theogony, Hesiod describes how Earth (Gaia), Heaven (Uranus), and Tartarus emerged from Chaos; how the Titans overthrew the primeval gods, and how the Olympians, led by Zeus, overthrew the Titans. This is a fundamental reference work on Greek mythology, upon which all subsequent ancient authors based their work.",
+      "description_ru": "Поэт Гесиод пишет Теогонию и Труды и дни; Теогония систематизирует греческую мифологию с генеалогией богов, в то время как Труды и дни дают практические советы по земледелию и нравственные наставления.\n\nГесиод в Теогонии описывает, как из Хаоса возникли Земля (Гея), Небо (Уран) и Тартар; как титаны свергли первоначальных богов, а олимпийцы во главе с Зевсом — титанов. Это фундаментальный справочник по греческой мифологии, на который потом опирались все античные авторы",
+      "era": "BC",
+      "latitude": 38.36265674,
+      "longitude": 22.84297943,
+      "name": "Hesiod's Theogony and Works",
+      "name_ru": "Теогония и Труды Гесиода",
+      "source": "https://en.wikipedia.org/wiki/Hesiod",
+      "tags": [
+        "Greek",
+        "Religious",
+        "Culture",
+        "Literature",
+        "Poetry",
+        "Cosmology",
+        "Text"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0730",
+      "description": "Chalcidians establish Leontini in eastern Sicily inland from Naxos; controls fertile plain famous for grain production; Gorgias of Leontini later becomes famous rhetorician who visits Athens in 427 BC",
+      "description_ru": "Халкидяне основывают Леонтины в восточной Сицилии близ Наксоса;  Леонтинам принадлежит плодородная равнина, город быстро становится экспортером зерна",
+      "era": "BC",
+      "latitude": 37.2867,
+      "longitude": 14.9958,
+      "name": "Foundation of Leontini",
+      "name_ru": "Основание греками Леонтин",
+      "source": "https://en.wikipedia.org/wiki/Lentini",
+      "tags": [
+        "Greek",
+        "Chalcidian",
+        "Sicily",
+        "City",
+        "Agriculture",
+        "Colonization",
+        "Expansion",
+        "Magna Graecia",
+        "Seamen"
       ],
       "type": "historic"
     },
@@ -1320,59 +1366,15 @@
       "tags": [
         "Greek",
         "Chalcidian",
+        "Sicily",
         "City",
         "Colonization",
         "Expansion",
         "Magna Graecia",
         "Maritime",
-        "Seamen",
-        "Sicily"
+        "Seamen"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.0730",
-      "description": "Chalcidians establish Leontini in eastern Sicily inland from Naxos; controls fertile plain famous for grain production; Gorgias of Leontini later becomes famous rhetorician who visits Athens in 427 BC",
-      "description_ru": "Халкидяне основывают Леонтины в восточной Сицилии близ Наксоса;  Леонтинам принадлежит плодородная равнина, город быстро становится экспортером зерна",
-      "era": "BC",
-      "latitude": 37.2867,
-      "longitude": 14.9958,
-      "name": "Foundation of Leontini",
-      "name_ru": "Основание греками Леонтин",
-      "source": "https://en.wikipedia.org/wiki/Lentini",
-      "tags": [
-        "Greek",
-        "Chalcidian",
-        "City",
-        "Agriculture",
-        "Colonization",
-        "Expansion",
-        "Magna Graecia",
-        "Seamen",
-        "Sicily"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0730",
-      "description": "Poet Hesiod writes Theogony and Works and Days; Theogony systematizes Greek mythology with genealogy of gods, while Works and Days provides practical farming advice and moral instruction\n\nIn his Theogony, Hesiod describes how Earth (Gaia), Heaven (Uranus), and Tartarus emerged from Chaos; how the Titans overthrew the primeval gods, and how the Olympians, led by Zeus, overthrew the Titans. This is a fundamental reference work on Greek mythology, upon which all subsequent ancient authors based their work.",
-      "description_ru": "Поэт Гесиод пишет Теогонию и Труды и дни; Теогония систематизирует греческую мифологию с генеалогией богов, в то время как Труды и дни дают практические советы по земледелию и нравственные наставления.\n\nГесиод в Теогонии описывает, как из Хаоса возникли Земля (Гея), Небо (Уран) и Тартар; как титаны свергли первоначальных богов, а олимпийцы во главе с Зевсом — титанов. Это фундаментальный справочник по греческой мифологии, на который потом опирались все античные авторы",
-      "era": "BC",
-      "latitude": 38.36265674,
-      "longitude": 22.84297943,
-      "name": "Hesiod's Theogony and Works",
-      "name_ru": "Теогония и Труды Гесиода",
-      "source": "https://en.wikipedia.org/wiki/Hesiod",
-      "tags": [
-        "Greek",
-        "Cosmology",
-        "Culture",
-        "Literature",
-        "Poetry",
-        "Religious",
-        "Text"
-      ],
-      "type": "cultural"
     },
     {
       "date": "01.01.0729",
@@ -1387,11 +1389,11 @@
       "tags": [
         "Greek",
         "Chalcidian",
+        "Sicily",
         "City",
         "Colonization",
         "Magna Graecia",
-        "Seamen",
-        "Sicily"
+        "Seamen"
       ],
       "type": "historic"
     },
@@ -1408,12 +1410,12 @@
       "tags": [
         "Greek",
         "Megarian",
+        "Sicily",
         "City",
         "Colonization",
         "Expansion",
         "Magna Graecia",
-        "Seamen",
-        "Sicily"
+        "Seamen"
       ],
       "type": "historic"
     },
@@ -1450,12 +1452,12 @@
         "Greek",
         "Achaean",
         "City",
+        "Wealth",
         "Colonization",
         "Expansion",
         "Italy",
         "Magna Graecia",
-        "Seamen",
-        "Wealth"
+        "Seamen"
       ],
       "type": "historic"
     },
@@ -1506,6 +1508,25 @@
     },
     {
       "date": "01.01.0700",
+      "description": "Greek hoplite warfare develops with bronze armor, large round shield (hoplon), and spear; phalanx formation of citizen-soldiers replaces aristocratic chariot warfare, democratizing military service",
+      "description_ru": "Греки совершенствуют искусство войны и придумывают фалангу гоплитов. Гоплиты в бронзовых доспехах, с большим круглым щитом (гоплон) и копьем стоят плечо к плечу и сражаются как единая машина. В фалангу могут войти не только аристократы с колесницами, но и простые граждане, что делает войско более многочисленным и менее дорогим.",
+      "era": "BC",
+      "latitude": 37.9755,
+      "longitude": 23.7348,
+      "name": "Hoplite Warfare Revolution",
+      "name_ru": "Греческие гоплиты",
+      "source": "https://en.wikipedia.org/wiki/Hoplite",
+      "tags": [
+        "Greek",
+        "Army",
+        "Innovation",
+        "Military",
+        "Science"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0700",
       "description": "Achaean Greeks found Metapontum between rival cities Taras and Sybaris in southern Italy; Pythagoras reportedly spends final years here; famous for golden grain ears depicted on coins and temple to Hera",
       "description_ru": "Ахейские греки основывают Метапонт между соперничающими городами Тарас и Сибарис в южной Италии; знаменит своим храмом Геры",
       "era": "BC",
@@ -1525,25 +1546,6 @@
         "Seamen"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.0700",
-      "description": "Greek hoplite warfare develops with bronze armor, large round shield (hoplon), and spear; phalanx formation of citizen-soldiers replaces aristocratic chariot warfare, democratizing military service",
-      "description_ru": "Греки совершенствуют искусство войны и придумывают фалангу гоплитов. Гоплиты в бронзовых доспехах, с большим круглым щитом (гоплон) и копьем стоят плечо к плечу и сражаются как единая машина. В фалангу могут войти не только аристократы с колесницами, но и простые граждане, что делает войско более многочисленным и менее дорогим.",
-      "era": "BC",
-      "latitude": 37.9755,
-      "longitude": 23.7348,
-      "name": "Hoplite Warfare Revolution",
-      "name_ru": "Греческие гоплиты",
-      "source": "https://en.wikipedia.org/wiki/Hoplite",
-      "tags": [
-        "Greek",
-        "Army",
-        "Innovation",
-        "Military",
-        "Science"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.0689",
@@ -1579,11 +1581,11 @@
       "tags": [
         "Greek",
         "Dorian",
+        "Sicily",
         "City",
         "Colonization",
         "Magna Graecia",
-        "Seamen",
-        "Sicily"
+        "Seamen"
       ],
       "type": "historic"
     },
@@ -1664,10 +1666,10 @@
       "tags": [
         "Greek",
         "Athens",
+        "Political",
         "Reform",
         "Administration",
-        "Oligarchy",
-        "Political"
+        "Oligarchy"
       ],
       "type": "political"
     },
@@ -1721,13 +1723,13 @@
       "name_ru": "Основание греками Византия",
       "source": "https://en.wikipedia.org/wiki/Byzantium",
       "tags": [
+        "Byzantine",
         "Greek",
         "Megarian",
         "City",
-        "Byzantine",
+        "Trade",
         "Colonization",
-        "Expansion",
-        "Trade"
+        "Expansion"
       ],
       "type": "historic"
     },
@@ -1744,9 +1746,9 @@
       "tags": [
         "Greek",
         "Culture",
+        "Music",
         "Engineering ⚙️",
-        "Innovation",
-        "Music"
+        "Innovation"
       ],
       "type": "cultural"
     },
@@ -1764,8 +1766,8 @@
         "Greek",
         "Sparta",
         "War",
-        "Argos",
-        "Rebellion"
+        "Rebellion",
+        "Argos"
       ],
       "type": "military"
     },
@@ -1825,11 +1827,11 @@
         "Milesian",
         "Scythian",
         "City",
+        "Trade",
         "Colonization",
         "Emporium",
         "Expansion",
-        "Seamen",
-        "Trade"
+        "Seamen"
       ],
       "type": "historic"
     },
@@ -1845,10 +1847,10 @@
       "source": "https://en.wikipedia.org/wiki/Thales_of_Miletus",
       "tags": [
         "Greek",
-        "Milesian",
-        "Birth",
         "Ionian",
-        "Philosophy"
+        "Milesian",
+        "Philosophy",
+        "Birth"
       ],
       "type": "cultural"
     },
@@ -1867,9 +1869,9 @@
         "Athens",
         "Megarian",
         "Crisis",
-        "Overthrow",
+        "Rebellion",
         "Political",
-        "Rebellion"
+        "Overthrow"
       ],
       "type": "political"
     },
@@ -1907,10 +1909,10 @@
         "Greek",
         "Egypt",
         "City",
+        "Trade",
         "Colonization",
         "Emporium",
-        "Expansion",
-        "Trade"
+        "Expansion"
       ],
       "type": "historic"
     },
@@ -1926,12 +1928,12 @@
       "source": "https://en.wikipedia.org/wiki/Selinunte",
       "tags": [
         "Greek",
+        "Sicily",
         "City",
         "Architecture",
         "Colonization",
         "Expansion",
-        "Seamen",
-        "Sicily"
+        "Seamen"
       ],
       "type": "historic"
     },
@@ -1948,53 +1950,11 @@
       "tags": [
         "Greek",
         "Athens",
+        "Political",
         "Code",
-        "Law",
-        "Political"
+        "Law"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0600",
-      "description": "The legendary Spartan lawmaker Lycurgus, striving to build an ideal warrior society, removed all gold and silver from circulation and declared pelanors — heavy iron rods — the only legal tender. According to legend, pelanors were soaked in vinegar to prevent them from being melted down and used in everyday life. The money was so heavy and cheap that an entire storeroom was required to store just 10 minas (approximately 430 grams of silver at face value). No foreign merchant would accept Spartan iron. Spartans could not purchase imported luxury goods or other imported goods. This decision cut Sparta off from the outside world and forced it to rely on self-sufficiency.",
-      "description_ru": "Легендарный спартанский законодатель Ликург, стремившийся построить идеальное общество воинов, изъял из оборота все золото и серебро, и объявил единственным законным платежным средством пеланоры - тяжелые железные прутья. По легенде, пеланоры вымачивали в уксусе, чтобы нельзя было их переплавить и применить в быту. Деньги были настолько тяжелыми и дешевыми, что для хранения суммы всего в 10 мин (около 430 граммов серебра по номиналу) требовалась целая кладовая комната. Ни один иностранный купец не принимал спартанское железо. Спартанцы не могли купить импортные предметы роскоши и другие привозные товары. Это решение отрезало Спарту от внешнего мира и заставило её жить на самообеспечении.",
-      "era": "BC",
-      "latitude": 37.0764,
-      "longitude": 22.4294,
-      "name": "Spartan iron currency",
-      "name_ru": "Спартанская железная валюта",
-      "source": "https://en.wikipedia.org/wiki/Pelanor",
-      "tags": [
-        "Greek",
-        "Sparta",
-        "Reform",
-        "Legend",
-        "Autarky",
-        "Currency",
-        "Iron"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0600",
-      "description": "Milesians found Cyzicus on Sea of Marmara isthmus connecting peninsula to mainland; becomes wealthy from tunny fishing and grain trade; Cyzicene staters become trusted currency throughout Greek world",
-      "description_ru": "Милетяне основывают Кизик на перешейке Мраморного моря, соединяющем полуостров с материком; город богатеет от ловли тунца и торговли зерном; кизикские статеры становятся надежной валютой по всему греческому миру",
-      "era": "BC",
-      "latitude": 40.387344,
-      "longitude": 27.870777,
-      "name": "Foundation of Cyzicus",
-      "name_ru": "Основание греками Кизика",
-      "source": "https://en.wikipedia.org/wiki/Cyzicus",
-      "tags": [
-        "Greek",
-        "Milesian",
-        "City",
-        "Colonization",
-        "Expansion",
-        "Seamen",
-        "Trade"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0600",
@@ -2020,6 +1980,27 @@
     },
     {
       "date": "01.01.0600",
+      "description": "Milesians found Cyzicus on Sea of Marmara isthmus connecting peninsula to mainland; becomes wealthy from tunny fishing and grain trade; Cyzicene staters become trusted currency throughout Greek world",
+      "description_ru": "Милетяне основывают Кизик на перешейке Мраморного моря, соединяющем полуостров с материком; город богатеет от ловли тунца и торговли зерном; кизикские статеры становятся надежной валютой по всему греческому миру",
+      "era": "BC",
+      "latitude": 40.387344,
+      "longitude": 27.870777,
+      "name": "Foundation of Cyzicus",
+      "name_ru": "Основание греками Кизика",
+      "source": "https://en.wikipedia.org/wiki/Cyzicus",
+      "tags": [
+        "Greek",
+        "Milesian",
+        "City",
+        "Trade",
+        "Colonization",
+        "Expansion",
+        "Seamen"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0600",
       "description": "Kerkinitis was one of the first Greek settlements on the western coast of Crimea. The city was an agricultural and trading center. Residents grew wheat, fished, and traded Greek wine and ceramics for livestock products with the nearby Scythians.",
       "description_ru": "Керкинитида стала одним из первых греческих поселений на западном побережье Крыма. Город был сельскохозяйственным и торговым центром. Жители выращивали пшеницу, ловили рыбу и меняли греческое вино и керамику на продукты скотоводства у окрестных скифов",
       "era": "BC",
@@ -2029,11 +2010,11 @@
       "name_ru": "Основание ионийцами Керкинитиды",
       "tags": [
         "Greek",
+        "Ionian",
         "City",
         "Colonization",
         "Crimea",
         "Expansion",
-        "Ionian",
         "Seamen"
       ],
       "type": "historic"
@@ -2052,11 +2033,11 @@
         "Greek",
         "Phocaean",
         "City",
+        "Trade",
         "Colonization",
         "Expansion",
         "Influence",
-        "Seamen",
-        "Trade"
+        "Seamen"
       ],
       "type": "historic"
     },
@@ -2074,7 +2055,8 @@
         "Greek",
         "Culture",
         "Music",
-        "Poetry"
+        "Poetry",
+        "Education"
       ],
       "type": "cultural"
     },
@@ -2089,11 +2071,11 @@
       "name_ru": "Эритры производят мельничные жернова",
       "tags": [
         "Greek",
+        "Ionian",
+        "Trade",
         "Economic",
         "Innovation",
-        "Ionian",
-        "Technology",
-        "Trade"
+        "Technology"
       ],
       "type": "scientific"
     },
@@ -2109,13 +2091,34 @@
       "source": "https://en.wikipedia.org/wiki/Klazomenai",
       "tags": [
         "Greek",
-        "Agriculture",
+        "Trade",
         "Economic",
+        "Agriculture",
         "Food",
         "Innovation",
         "Olives",
-        "Technology",
-        "Trade"
+        "Technology"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0600",
+      "description": "The legendary Spartan lawmaker Lycurgus, striving to build an ideal warrior society, removed all gold and silver from circulation and declared pelanors — heavy iron rods — the only legal tender. According to legend, pelanors were soaked in vinegar to prevent them from being melted down and used in everyday life. The money was so heavy and cheap that an entire storeroom was required to store just 10 minas (approximately 430 grams of silver at face value). No foreign merchant would accept Spartan iron. Spartans could not purchase imported luxury goods or other imported goods. This decision cut Sparta off from the outside world and forced it to rely on self-sufficiency.",
+      "description_ru": "Легендарный спартанский законодатель Ликург, стремившийся построить идеальное общество воинов, изъял из оборота все золото и серебро, и объявил единственным законным платежным средством пеланоры - тяжелые железные прутья. По легенде, пеланоры вымачивали в уксусе, чтобы нельзя было их переплавить и применить в быту. Деньги были настолько тяжелыми и дешевыми, что для хранения суммы всего в 10 мин (около 430 граммов серебра по номиналу) требовалась целая кладовая комната. Ни один иностранный купец не принимал спартанское железо. Спартанцы не могли купить импортные предметы роскоши и другие привозные товары. Это решение отрезало Спарту от внешнего мира и заставило её жить на самообеспечении.",
+      "era": "BC",
+      "latitude": 37.0764,
+      "longitude": 22.4294,
+      "name": "Spartan iron currency",
+      "name_ru": "Спартанская железная валюта",
+      "source": "https://en.wikipedia.org/wiki/Pelanor",
+      "tags": [
+        "Greek",
+        "Sparta",
+        "Iron",
+        "Legend",
+        "Currency 🪙",
+        "Reform",
+        "Autarky"
       ],
       "type": "historic"
     },
@@ -2153,8 +2156,8 @@
       "tags": [
         "Greek",
         "Milesian",
-        "Astronomy",
         "Philosophy",
+        "Astronomy",
         "Science"
       ],
       "type": "cultural"
@@ -2171,13 +2174,13 @@
       "source": "https://en.wikipedia.org/wiki/Agrigento",
       "tags": [
         "Greek",
+        "Sicily",
         "City",
+        "Wealth",
         "Colonization",
         "Expansion",
         "Magna Graecia",
-        "Seamen",
-        "Sicily",
-        "Wealth"
+        "Seamen"
       ],
       "type": "historic"
     },
@@ -2195,11 +2198,11 @@
         "Greek",
         "Phocaean",
         "City",
+        "Trade",
         "Colonization",
         "Emporium",
         "Expansion",
-        "Spain",
-        "Trade"
+        "Spain"
       ],
       "type": "historic"
     },
@@ -2215,9 +2218,9 @@
       "source": "https://en.wikipedia.org/wiki/Pythagoras",
       "tags": [
         "Greek",
+        "Philosophy",
         "Birth",
         "Mathematics",
-        "Philosophy",
         "Pythagoras 👤",
         "Science"
       ],
@@ -2242,27 +2245,6 @@
     },
     {
       "date": "01.01.0560",
-      "description": "Teans and Clazomenians found Abdera in Thrace after fleeing Persian conquest of Ionia; becomes prosperous city producing philosophers including atomist Democritus and skeptic Protagoras",
-      "description_ru": "Теосцы и клазоменцы основывают Абдеру во Фракии после бегства от персидского завоевания Ионии; становится процветающим городом, давшим философов, включая атомиста Демокрита и скептика Протагора",
-      "era": "BC",
-      "latitude": 40.95,
-      "longitude": 24.9833,
-      "name": "Refoundation of Abdera",
-      "name_ru": "Переоснование греками Абдеры",
-      "source": "https://en.wikipedia.org/wiki/Abdera,_Thrace",
-      "tags": [
-        "Greek",
-        "City",
-        "Colonization",
-        "Expansion",
-        "Migration",
-        "Philosophy",
-        "Thrace"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0560",
       "description": "Originally, this site stood on the site of a Sindian (a local Scythian tribe) city called Sindik, or Sindian Harbor. Greek colonists from other cities of the Bosporan Kingdom (primarily from Miletus) transformed it into a major seaport. The city was named after Gorgippus, the brother of the Bosporan king Leucon I.",
       "description_ru": "Изначально на этом месте находился город синдов (местного скифского племени), называвшийся Синдик или Синдская гавань. Греческие колонисты, прибывшие из других городов Боспорского царства (в основном из Милета), превратили его в крупный морской порт. Город получил свое название в честь Горгиппа, брата боспорского царя Левкона I",
       "era": "BC",
@@ -2283,6 +2265,27 @@
       "type": "historic"
     },
     {
+      "date": "01.01.0560",
+      "description": "Teans and Clazomenians found Abdera in Thrace after fleeing Persian conquest of Ionia; becomes prosperous city producing philosophers including atomist Democritus and skeptic Protagoras",
+      "description_ru": "Теосцы и клазоменцы основывают Абдеру во Фракии после бегства от персидского завоевания Ионии; становится процветающим городом, давшим философов, включая атомиста Демокрита и скептика Протагора",
+      "era": "BC",
+      "latitude": 40.95,
+      "longitude": 24.9833,
+      "name": "Refoundation of Abdera",
+      "name_ru": "Переоснование греками Абдеры",
+      "source": "https://en.wikipedia.org/wiki/Abdera,_Thrace",
+      "tags": [
+        "Greek",
+        "Thrace",
+        "City",
+        "Philosophy",
+        "Colonization",
+        "Expansion",
+        "Migration"
+      ],
+      "type": "historic"
+    },
+    {
       "date": "01.01.0556",
       "description": "The black earth soils of the Kuban and Taman regions proved incredibly fertile. The Greeks grew vast quantities of wheat and barley here, which they shipped back to Greece. The grain trade brought the colonists enormous profits. Furthermore, the mild climate was ideal for winemaking. The city became a secure trading post for exchanging goods with local tribes (the Sindians and Meotians). The Greeks brought them exquisite ceramics, olive oil, expensive fabrics, and wine, and in exchange received grain, cattle, hides, honey, and slaves.",
       "description_ru": "Черноземные почвы Прикубанья и Тамани оказались невероятно плодородными. Греки выращивали здесь в огромных количествах пшеницу и ячмень, которые на кораблях отправляли обратно в Грецию. Торговля хлебом приносила колонистам колоссальную прибыль. Кроме того, мягкий климат идеально подошел для развития виноделия. Город стал безопасной торговой факторией для обмена товарами с местными племенами (синдами и меотами). Греки привозили им изысканную керамику, оливковое масло, дорогие ткани и вино, а взамен получали хлеб, скот, кожи, мед и рабов.",
@@ -2295,11 +2298,11 @@
       "tags": [
         "Greek",
         "City",
+        "Trade",
         "Agriculture",
         "Colonization",
         "Expansion",
         "Seamen",
-        "Trade",
         "Wine"
       ],
       "type": "historic"
@@ -2355,9 +2358,9 @@
       "source": "https://en.wikipedia.org/wiki/Stater",
       "tags": [
         "Greek",
-        "Currency",
         "Silver",
-        "Trade"
+        "Trade",
+        "Currency 🪙"
       ],
       "type": "historic"
     },
@@ -2372,15 +2375,15 @@
       "name_ru": "Начало реконструкции храма Артемиды",
       "tags": [
         "Greek",
-        "Building 🏠",
-        "Ancient",
-        "Architecture",
-        "Culture",
-        "Pagan",
         "Religious",
-        "Restoration",
+        "Pagan",
+        "Culture",
+        "Architecture",
+        "Building 🏠",
         "Temple",
-        "Wonders"
+        "Ancient",
+        "Wonders",
+        "Restoration"
       ],
       "type": "religious"
     },
@@ -2417,8 +2420,8 @@
         "Greek",
         "Persian",
         "War",
-        "Abandonment",
-        "Conquest"
+        "Conquest",
+        "Abandonment"
       ],
       "type": "military"
     },
@@ -2435,9 +2438,9 @@
       "tags": [
         "Greek",
         "Milesian",
-        "Astronomy",
-        "Cosmology",
         "Philosophy",
+        "Cosmology",
+        "Astronomy",
         "Science"
       ],
       "type": "cultural"
@@ -2454,6 +2457,7 @@
       "source": "https://en.wikipedia.org/wiki/Phanagoria",
       "tags": [
         "Greek",
+        "Ionian",
         "City",
         "Colonization",
         "Expansion",
@@ -2474,10 +2478,10 @@
       "source": "https://en.wikipedia.org/wiki/Tunnel_of_Eupalinos",
       "tags": [
         "Greek",
+        "Water",
         "Engineering ⚙️",
         "Infrastructure",
-        "Mathematics",
-        "Water"
+        "Mathematics"
       ],
       "type": "historic"
     },
@@ -2513,10 +2517,31 @@
       "tags": [
         "Greek",
         "Athens",
-        "Art",
         "Culture",
+        "Art",
         "Drama",
         "Theater"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0530",
+      "description": "Pythagoras founded a philosophical community in Croton, southern Italy; members followed strict rules, including vegetarianism, communal property, and secret mathematical-religious teachings. Unlike other philosophers of the time, who sought the primordial principle of the world in water, air, or fire, the Pythagoreans declared that the basis of all existence was number.\n\nThe school's distinctive mystical symbol was a figure of 10 dots arranged in a triangle. The Pythagoreans considered the oath of the tetractys to be supreme and inviolable.\n\nThe Pythagorean school was closed and elite. It admitted young men from the wealthiest and most noble families of Southern Italy. When these students completed their studies and returned to their families, they occupied the highest government posts and began to put Pythagorean ideals into practice.",
+      "description_ru": "Пифагор основывает философскую общину в Кротоне, южная Италия; члены следуют строгим правилам, включая вегетарианство, общую собственность и тайные математико-религиозные учения. В отличие от других философов того времени, которые искали первооснову мира в воде, воздухе или огне, пифагорейцы заявили, что основой всего сущего является число.\n\nОсобым мистическим символом школы была фигура из 10 точек, расположенных в виде треугольника. Клятва тетрактисом считалась у пифагорейцев высшей и нерушимой.\n\nШкола Пифагора была закрытой и элитарной. Туда принимали молодых людей из самых богатых и знатных семей Южной Италии. Когда эти ученики заканчивали обучение и возвращались в свои семьи, они занимали высшие государственные посты и начинали внедрять пифагорейские идеалы на практике.",
+      "era": "BC",
+      "latitude": 39.0833,
+      "longitude": 17.1333,
+      "name": "Pythagorean School Founded",
+      "name_ru": "Основание пифагорейской школы",
+      "source": "https://en.wikipedia.org/wiki/Pythagoreanism",
+      "tags": [
+        "Greek",
+        "Religious",
+        "Philosophy",
+        "Mystery",
+        "Magna Graecia",
+        "Mathematics",
+        "Pythagoras 👤"
       ],
       "type": "cultural"
     },
@@ -2532,35 +2557,14 @@
       "source": "https://en.wikipedia.org/wiki/Heraion_of_Samos",
       "tags": [
         "Greek",
-        "Building 🏠",
-        "Architecture",
         "Ionian",
-        "Pagan",
         "Religious",
+        "Pagan",
+        "Architecture",
+        "Building 🏠",
         "Temple"
       ],
       "type": "religious"
-    },
-    {
-      "date": "01.01.0530",
-      "description": "Pythagoras founded a philosophical community in Croton, southern Italy; members followed strict rules, including vegetarianism, communal property, and secret mathematical-religious teachings. Unlike other philosophers of the time, who sought the primordial principle of the world in water, air, or fire, the Pythagoreans declared that the basis of all existence was number.\n\nThe school's distinctive mystical symbol was a figure of 10 dots arranged in a triangle. The Pythagoreans considered the oath of the tetractys to be supreme and inviolable.\n\nThe Pythagorean school was closed and elite. It admitted young men from the wealthiest and most noble families of Southern Italy. When these students completed their studies and returned to their families, they occupied the highest government posts and began to put Pythagorean ideals into practice.",
-      "description_ru": "Пифагор основывает философскую общину в Кротоне, южная Италия; члены следуют строгим правилам, включая вегетарианство, общую собственность и тайные математико-религиозные учения. В отличие от других философов того времени, которые искали первооснову мира в воде, воздухе или огне, пифагорейцы заявили, что основой всего сущего является число.\n\nОсобым мистическим символом школы была фигура из 10 точек, расположенных в виде треугольника. Клятва тетрактисом считалась у пифагорейцев высшей и нерушимой.\n\nШкола Пифагора была закрытой и элитарной. Туда принимали молодых людей из самых богатых и знатных семей Южной Италии. Когда эти ученики заканчивали обучение и возвращались в свои семьи, они занимали высшие государственные посты и начинали внедрять пифагорейские идеалы на практике.",
-      "era": "BC",
-      "latitude": 39.0833,
-      "longitude": 17.1333,
-      "name": "Pythagorean School Founded",
-      "name_ru": "Основание пифагорейской школы",
-      "source": "https://en.wikipedia.org/wiki/Pythagoreanism",
-      "tags": [
-        "Greek",
-        "Magna Graecia",
-        "Mathematics",
-        "Mystery",
-        "Philosophy",
-        "Pythagoras 👤",
-        "Religious"
-      ],
-      "type": "cultural"
     },
     {
       "date": "01.01.0527",
@@ -2592,9 +2596,10 @@
       "tags": [
         "Greek",
         "Athens",
-        "Architecture",
-        "Pagan",
         "Religious",
+        "Pagan",
+        "Culture",
+        "Architecture",
         "Temple"
       ],
       "type": "religious"
@@ -2612,8 +2617,8 @@
       "tags": [
         "Greek",
         "Athens",
-        "Assassination",
         "Death",
+        "Assassination",
         "Democracy",
         "Regicide"
       ],
@@ -2632,8 +2637,8 @@
       "tags": [
         "Greek",
         "Achaean",
-        "Civil War",
         "City",
+        "Civil War",
         "Destruction",
         "Magna Graecia"
       ],
@@ -2655,6 +2660,7 @@
         "Athens",
         "Sparta",
         "War",
+        "Exile",
         "Overthrow"
       ],
       "type": "political"
@@ -2672,10 +2678,10 @@
       "tags": [
         "Greek",
         "Athens",
-        "Currency",
-        "Expansion",
         "Silver",
-        "Trade"
+        "Trade",
+        "Currency 🪙",
+        "Expansion"
       ],
       "type": "historic"
     },
@@ -2692,9 +2698,9 @@
       "tags": [
         "Greek",
         "Athens",
+        "Political",
         "Reform",
-        "Democracy",
-        "Political"
+        "Democracy"
       ],
       "type": "political"
     },
@@ -2709,9 +2715,9 @@
       "name_ru": "Элейская философская школа",
       "tags": [
         "Greek",
-        "Cosmology",
         "Culture",
-        "Philosophy"
+        "Philosophy",
+        "Cosmology"
       ],
       "type": "cultural"
     },
@@ -2727,8 +2733,8 @@
       "source": "https://en.wikipedia.org/wiki/Heraclitus",
       "tags": [
         "Greek",
-        "Culture",
         "Ionian",
+        "Culture",
         "Philosophy"
       ],
       "type": "cultural"
@@ -2766,10 +2772,10 @@
       "tags": [
         "Greek",
         "Athens",
-        "Birth",
         "Culture",
         "Drama",
-        "Theater"
+        "Theater",
+        "Birth"
       ],
       "type": "cultural"
     },
@@ -2825,11 +2831,27 @@
       "tags": [
         "Greek",
         "Athens",
+        "Political",
         "Democracy",
-        "Law",
-        "Political"
+        "Law"
       ],
       "type": "political"
+    },
+    {
+      "date": "01.01.0485",
+      "description": "Protagoras was born in Abdera. He is considered one of the first sophists. He was the first ancient Greek philosopher to charge tuition. His teaching career begins in the 450s BC. He visited Athens several times, where he became part of the inner circle of philosophers, scholars, playwrights, and other notable figures of Greece that formed around Pericles and Aspasia. Known for the phrase 'Man is the measure of all things'",
+      "description_ru": "В Абдере родился Протагор. Протагора относят к первым представителям софистов. Протагор первым из древнегреческих философов стал брать деньги за обучение. Начало преподавательской деятельности Протагора датируют 450-ми годами до н. э. Он неоднократно посещал Афины, где вошёл в близкий круг философов, учёных, драматургов и других примечательных людей Эллады, который сформировался вокруг Перикла и Аспасии. Знаменит фразой 'Человек есть мера всех вещей'",
+      "era": "BC",
+      "latitude": 40.95,
+      "longitude": 24.9833,
+      "name": "The birth of Protagoras",
+      "name_ru": "Рождение Протагора",
+      "tags": [
+        "Greek",
+        "Philosophy",
+        "Birth"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0485",
@@ -2844,26 +2866,10 @@
       "tags": [
         "Greek",
         "Athens",
-        "Birth",
         "Culture",
         "Drama",
-        "Theater"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0485",
-      "description": "Protagoras was born in Abdera. He is considered one of the first sophists. He was the first ancient Greek philosopher to charge tuition. His teaching career begins in the 450s BC. He visited Athens several times, where he became part of the inner circle of philosophers, scholars, playwrights, and other notable figures of Greece that formed around Pericles and Aspasia. Known for the phrase 'Man is the measure of all things'",
-      "description_ru": "В Абдере родился Протагор. Протагора относят к первым представителям софистов. Протагор первым из древнегреческих философов стал брать деньги за обучение. Начало преподавательской деятельности Протагора датируют 450-ми годами до н. э. Он неоднократно посещал Афины, где вошёл в близкий круг философов, учёных, драматургов и других примечательных людей Эллады, который сформировался вокруг Перикла и Аспасии. Знаменит фразой 'Человек есть мера всех вещей'",
-      "era": "BC",
-      "latitude": 40.95,
-      "longitude": 24.9833,
-      "name": "The birth of Protagoras",
-      "name_ru": "Рождение Протагора",
-      "tags": [
-        "Greek",
-        "Birth",
-        "Philosophy"
+        "Theater",
+        "Birth"
       ],
       "type": "cultural"
     },
@@ -2880,8 +2886,8 @@
       "tags": [
         "Greek",
         "Athens",
-        "Mining",
-        "Silver"
+        "Silver",
+        "Mining"
       ],
       "type": "historic"
     },
@@ -2917,9 +2923,9 @@
       "tags": [
         "Greek",
         "Megarian",
+        "Sicily",
         "War",
         "Destruction",
-        "Sicily",
         "Slavery"
       ],
       "type": "military"
@@ -2957,8 +2963,8 @@
       "tags": [
         "Greek",
         "Athens",
-        "Art",
         "Culture",
+        "Art",
         "Drama",
         "Theater"
       ],
@@ -2977,8 +2983,8 @@
       "tags": [
         "Greek",
         "Athens",
-        "Birth",
         "Philosophy",
+        "Birth",
         "Socrates 👤"
       ],
       "type": "cultural"
@@ -2996,28 +3002,11 @@
       "tags": [
         "Greek",
         "Athens",
+        "Political",
         "Reform",
-        "Democracy",
-        "Political"
+        "Democracy"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0460",
-      "description": "Democritus of Abdera was one of the founders of atomism and materialistic philosophy. During his life, he traveled extensively, studying the philosophical views of various peoples (Ancient Egypt, Babylon, Persia, India, Ethiopia). Democritus developed the teachings of his mentor Leucippus on the \"atom\"—an indivisible particle of matter possessing true being, indestructible, and non-creating.",
-      "description_ru": "Демокрит из Абдер - один из основателей атомистики и материалистической философии. За время своей жизни много путешествовал, изучая философские воззрения различных народов (Древний Египет, Вавилон, Персия, Индия, Эфиопия). Демокрит развил учение своего наставника Левкиппа об «атоме» — неделимой частице вещества, обладающей истинным бытием, не разрушающейся и не возникающей",
-      "era": "BC",
-      "latitude": 40.95,
-      "longitude": 24.9833,
-      "name": "The Birth of Democritus",
-      "name_ru": "Рождение Демокрита",
-      "tags": [
-        "Greek",
-        "Birth",
-        "Philosophy",
-        "Science"
-      ],
-      "type": "cultural"
     },
     {
       "date": "01.01.0460",
@@ -3034,10 +3023,27 @@
         "Athens",
         "Corinthian",
         "Sparta",
-        "War",
-        "Peloponnesian"
+        "Peloponnesian",
+        "War"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0460",
+      "description": "Democritus of Abdera was one of the founders of atomism and materialistic philosophy. During his life, he traveled extensively, studying the philosophical views of various peoples (Ancient Egypt, Babylon, Persia, India, Ethiopia). Democritus developed the teachings of his mentor Leucippus on the \"atom\"—an indivisible particle of matter possessing true being, indestructible, and non-creating.",
+      "description_ru": "Демокрит из Абдер - один из основателей атомистики и материалистической философии. За время своей жизни много путешествовал, изучая философские воззрения различных народов (Древний Египет, Вавилон, Персия, Индия, Эфиопия). Демокрит развил учение своего наставника Левкиппа об «атоме» — неделимой частице вещества, обладающей истинным бытием, не разрушающейся и не возникающей",
+      "era": "BC",
+      "latitude": 40.95,
+      "longitude": 24.9833,
+      "name": "The Birth of Democritus",
+      "name_ru": "Рождение Демокрита",
+      "tags": [
+        "Greek",
+        "Philosophy",
+        "Birth",
+        "Science"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0460",
@@ -3059,27 +3065,6 @@
     },
     {
       "date": "01.01.0458",
-      "description": "Aeschylus produces Oresteia trilogy at Dionysia; only complete Greek tragic trilogy surviving, follows curse of House of Atreus and establishment of Athenian jury courts over blood vengeance",
-      "description_ru": "Эсхил ставит трилогию Орестея на Дионисиях; единственная полностью сохранившаяся греческая трагедийная трилогия, следует за проклятием дома Атрея и установлением афинских судов присяжных над кровной местью",
-      "era": "BC",
-      "latitude": 37.9707,
-      "longitude": 23.7245,
-      "name": "Aeschylus Oresteia",
-      "name_ru": "Орестея Эсхила",
-      "source": "https://en.wikipedia.org/wiki/Oresteia",
-      "tags": [
-        "Greek",
-        "Athens",
-        "Art",
-        "Culture",
-        "Democracy",
-        "Drama",
-        "Theater"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0458",
       "description": "Long Walls connecting Athens to Piraeus port completed; 6.5 km fortifications ensure access to sea even during siege, making Athens virtually unconquerable as long as navy controls Aegean",
       "description_ru": "Длинные стены, соединяющие Афины с портом Пирей, завершены; 6,5 км укреплений обеспечивают доступ к морю даже во время осады, делая Афины практически непобедимыми, пока флот контролирует Эгейское море",
       "era": "BC",
@@ -3091,12 +3076,33 @@
       "tags": [
         "Greek",
         "Athens",
-        "Building 🏠",
+        "Peloponnesian",
         "Architecture",
-        "Fortification",
-        "Peloponnesian"
+        "Building 🏠",
+        "Fortification"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0458",
+      "description": "Aeschylus produces Oresteia trilogy at Dionysia; only complete Greek tragic trilogy surviving, follows curse of House of Atreus and establishment of Athenian jury courts over blood vengeance",
+      "description_ru": "Эсхил ставит трилогию Орестея на Дионисиях; единственная полностью сохранившаяся греческая трагедийная трилогия, следует за проклятием дома Атрея и установлением афинских судов присяжных над кровной местью",
+      "era": "BC",
+      "latitude": 37.9707,
+      "longitude": 23.7245,
+      "name": "Aeschylus Oresteia",
+      "name_ru": "Орестея Эсхила",
+      "source": "https://en.wikipedia.org/wiki/Oresteia",
+      "tags": [
+        "Greek",
+        "Athens",
+        "Culture",
+        "Art",
+        "Drama",
+        "Theater",
+        "Democracy"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0457",
@@ -3110,8 +3116,8 @@
       "tags": [
         "Greek",
         "Athens",
-        "War",
         "Peloponnesian",
+        "War",
         "Siege",
         "Tribute"
       ],
@@ -3130,9 +3136,9 @@
         "Greek",
         "Athens",
         "Sparta",
+        "Peloponnesian",
         "War",
-        "Battle",
-        "Peloponnesian"
+        "Battle"
       ],
       "type": "military"
     },
@@ -3148,28 +3154,10 @@
       "source": "https://en.wikipedia.org/wiki/Zeno%27s_paradoxes",
       "tags": [
         "Greek",
-        "Mathematics",
-        "Philosophy"
+        "Philosophy",
+        "Mathematics"
       ],
       "type": "cultural"
-    },
-    {
-      "date": "01.01.0447",
-      "description": "The Athenian troops returning from Chaeronea fell into a well-planned ambush. Warriors from many Boeotia cities simultaneously approached the battlefield near Coronea stealthily. There was no proper battle formation. The Athenian army, spread out in a marching column, was unexpectedly struck with overwhelming force. Not a single one of the thousand Athenian hoplites escaped.",
-      "description_ru": "Афинские войска, возвращавшиеся из Херонеи, попали в прекрасно спланированную засаду. К месту сражения под Коронеей скрытно подошли воины сразу многих городов Беотии. Правильного сражения с боевым построением воинов не было. По афинскому войску, растянувшемуся походной колонной, был нанесён неожиданный удар с большим перевесом сил. Из тысячи афинских гоплитов не спасся никто.\n\n",
-      "era": "BC",
-      "latitude": 38.35545402,
-      "longitude": 22.95876503,
-      "name": "Boeotian ambush at Coronea",
-      "name_ru": "Засада беотийцев у Коронеи",
-      "tags": [
-        "Greek",
-        "Athens",
-        "War",
-        "Ambush",
-        "Peloponnesian"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.0447",
@@ -3184,15 +3172,33 @@
       "tags": [
         "Greek",
         "Athens",
-        "Building 🏠",
-        "Ancient",
-        "Architecture",
-        "Art",
         "Pagan",
+        "Art",
+        "Architecture",
+        "Building 🏠",
         "Temple",
+        "Ancient",
         "Wonders"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0447",
+      "description": "The Athenian troops returning from Chaeronea fell into a well-planned ambush. Warriors from many Boeotia cities simultaneously approached the battlefield near Coronea stealthily. There was no proper battle formation. The Athenian army, spread out in a marching column, was unexpectedly struck with overwhelming force. Not a single one of the thousand Athenian hoplites escaped.",
+      "description_ru": "Афинские войска, возвращавшиеся из Херонеи, попали в прекрасно спланированную засаду. К месту сражения под Коронеей скрытно подошли воины сразу многих городов Беотии. Правильного сражения с боевым построением воинов не было. По афинскому войску, растянувшемуся походной колонной, был нанесён неожиданный удар с большим перевесом сил. Из тысячи афинских гоплитов не спасся никто.\n\n",
+      "era": "BC",
+      "latitude": 38.35545402,
+      "longitude": 22.95876503,
+      "name": "Boeotian ambush at Coronea",
+      "name_ru": "Засада беотийцев у Коронеи",
+      "tags": [
+        "Greek",
+        "Athens",
+        "Peloponnesian",
+        "War",
+        "Ambush"
+      ],
+      "type": "military"
     },
     {
       "date": "01.01.0445",
@@ -3208,10 +3214,10 @@
         "Greek",
         "Athens",
         "Sparta",
+        "Peloponnesian",
         "War",
         "Diplomacy",
-        "Peace",
-        "Peloponnesian"
+        "Peace"
       ],
       "type": "political"
     },
@@ -3228,31 +3234,10 @@
       "tags": [
         "Greek",
         "Athens",
-        "Democracy",
-        "Political"
+        "Political",
+        "Democracy"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0440",
-      "description": "Phidias completes 12-meter tall gold and ivory statue of Athena Parthenos inside Parthenon; using over 1,100 kg of gold, statue becomes symbol of Athenian wealth and piety",
-      "description_ru": "Фидий завершает 12-метровую статую Афины Парфенос из золота и слоновой кости внутри Парфенона; используя более 1100 кг золота, статуя становится символом афинского богатства и благочестия",
-      "era": "BC",
-      "latitude": 37.9715,
-      "longitude": 23.7267,
-      "name": "Athena Parthenos Statue",
-      "name_ru": "Статуя Афины Парфенос",
-      "source": "https://en.wikipedia.org/wiki/Athena_Parthenos",
-      "tags": [
-        "Greek",
-        "Athens",
-        "Art",
-        "Gold",
-        "Pagan",
-        "Religious",
-        "Sculpture"
-      ],
-      "type": "cultural"
     },
     {
       "date": "01.01.0440",
@@ -3267,12 +3252,33 @@
       "tags": [
         "Greek",
         "Athens",
-        "Navigation",
-        "Pagan",
         "Religious",
-        "Temple"
+        "Pagan",
+        "Temple",
+        "Navigation"
       ],
       "type": "religious"
+    },
+    {
+      "date": "01.01.0440",
+      "description": "Phidias completes 12-meter tall gold and ivory statue of Athena Parthenos inside Parthenon; using over 1,100 kg of gold, statue becomes symbol of Athenian wealth and piety",
+      "description_ru": "Фидий завершает 12-метровую статую Афины Парфенос из золота и слоновой кости внутри Парфенона; используя более 1100 кг золота, статуя становится символом афинского богатства и благочестия",
+      "era": "BC",
+      "latitude": 37.9715,
+      "longitude": 23.7267,
+      "name": "Athena Parthenos Statue",
+      "name_ru": "Статуя Афины Парфенос",
+      "source": "https://en.wikipedia.org/wiki/Athena_Parthenos",
+      "tags": [
+        "Greek",
+        "Athens",
+        "Religious",
+        "Pagan",
+        "Art",
+        "Sculpture",
+        "Gold"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0438",
@@ -3287,12 +3293,12 @@
       "tags": [
         "Greek",
         "Athens",
-        "Ancient",
-        "Architecture",
-        "Art",
-        "Pagan",
         "Religious",
+        "Pagan",
+        "Art",
+        "Architecture",
         "Temple",
+        "Ancient",
         "Wonders"
       ],
       "type": "religious"
@@ -3310,11 +3316,11 @@
       "tags": [
         "Greek",
         "Athens",
+        "Thrace",
         "City",
         "Gold",
-        "Mining",
         "Silver",
-        "Thrace"
+        "Mining"
       ],
       "type": "historic"
     },
@@ -3330,13 +3336,13 @@
       "source": "https://en.wikipedia.org/wiki/Statue_of_Zeus_at_Olympia",
       "tags": [
         "Greek",
-        "Ancient",
-        "Art",
-        "Olympic",
-        "Pagan",
         "Religious",
+        "Pagan",
+        "Olympic",
+        "Art",
         "Sculpture",
         "Temple",
+        "Ancient",
         "Wonders"
       ],
       "type": "cultural"
@@ -3355,9 +3361,9 @@
         "Greek",
         "Athens",
         "Corinthian",
-        "War",
+        "Peloponnesian",
         "Alliance",
-        "Peloponnesian"
+        "War"
       ],
       "type": "political"
     },
@@ -3375,9 +3381,9 @@
         "Greek",
         "Athens",
         "Megarian",
+        "Peloponnesian",
         "War",
-        "Economic",
-        "Peloponnesian"
+        "Economic"
       ],
       "type": "political"
     },
@@ -3395,8 +3401,8 @@
         "Greek",
         "Athens",
         "Sparta",
-        "War",
         "Peloponnesian",
+        "War",
         "Thebes"
       ],
       "type": "military"
@@ -3414,7 +3420,7 @@
       "tags": [
         "Greek",
         "Athens",
-        "Plague"
+        "Plague 🦠"
       ],
       "type": "historic"
     },
@@ -3432,7 +3438,7 @@
         "Greek",
         "Athens",
         "Death",
-        "Plague"
+        "Plague 🦠"
       ],
       "type": "political"
     },
@@ -3449,8 +3455,8 @@
       "tags": [
         "Greek",
         "Athens",
-        "Birth",
         "Philosophy",
+        "Birth",
         "Plato 👤",
         "Socrates 👤"
       ],
@@ -3523,9 +3529,29 @@
         "Greek",
         "Athens",
         "Sparta",
+        "Peloponnesian",
         "War",
-        "Battle",
-        "Peloponnesian"
+        "Battle"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0424",
+      "description": "The Spartan general Brasidas conquers Amphipolis, loss of city to Sparta becomes major blow to Athens",
+      "description_ru": "Спартанский генерал Брасид завоевывает Амфиполь; это становится крупным ударом для Афин",
+      "era": "BC",
+      "latitude": 40.8167,
+      "longitude": 23.85,
+      "name": "Sparta captures Amphipolis",
+      "name_ru": "Спарта захватывает Амфиполь",
+      "source": "https://en.wikipedia.org/wiki/Amphipolis",
+      "tags": [
+        "Greek",
+        "Athens",
+        "Sparta",
+        "Peloponnesian",
+        "War",
+        "Conquest"
       ],
       "type": "military"
     },
@@ -3542,32 +3568,12 @@
       "tags": [
         "Greek",
         "Culture",
-        "Herodotus 👤",
-        "History",
         "Literature",
+        "History",
+        "Herodotus 👤",
         "Text"
       ],
       "type": "cultural"
-    },
-    {
-      "date": "01.01.0424",
-      "description": "The Spartan general Brasidas conquers Amphipolis, loss of city to Sparta becomes major blow to Athens",
-      "description_ru": "Спартанский генерал Брасид завоевывает Амфиполь; это становится крупным ударом для Афин",
-      "era": "BC",
-      "latitude": 40.8167,
-      "longitude": 23.85,
-      "name": "Sparta captures Amphipolis",
-      "name_ru": "Спарта захватывает Амфиполь",
-      "source": "https://en.wikipedia.org/wiki/Amphipolis",
-      "tags": [
-        "Greek",
-        "Athens",
-        "Sparta",
-        "War",
-        "Conquest",
-        "Peloponnesian"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.0422",
@@ -3583,32 +3589,11 @@
         "Greek",
         "Athens",
         "Sparta",
+        "Peloponnesian",
         "War",
-        "Battle",
-        "Peloponnesian"
+        "Battle"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0421",
-      "description": "Peace of Nicias signed ending first phase of Peloponnesian War; supposed to last 50 years but collapses within 6 as neither side fulfills terms, merely pausing hostilities",
-      "description_ru": "Никиев мир подписан, завершая первую фазу Пелопоннесской войны; предполагалось, что продлится 50 лет, но рухнул в течение 6, поскольку ни одна сторона не выполняет условия, лишь приостановив военные действия",
-      "era": "BC",
-      "latitude": 37.9755,
-      "longitude": 23.7348,
-      "name": "Peace of Nicias",
-      "name_ru": "Никиев мир",
-      "source": "https://en.wikipedia.org/wiki/Peace_of_Nicias",
-      "tags": [
-        "Greek",
-        "Athens",
-        "Sparta",
-        "War",
-        "Diplomacy",
-        "Peace",
-        "Peloponnesian"
-      ],
-      "type": "political"
     },
     {
       "date": "01.01.0421",
@@ -3632,6 +3617,27 @@
       "type": "historic"
     },
     {
+      "date": "01.01.0421",
+      "description": "Peace of Nicias signed ending first phase of Peloponnesian War; supposed to last 50 years but collapses within 6 as neither side fulfills terms, merely pausing hostilities",
+      "description_ru": "Никиев мир подписан, завершая первую фазу Пелопоннесской войны; предполагалось, что продлится 50 лет, но рухнул в течение 6, поскольку ни одна сторона не выполняет условия, лишь приостановив военные действия",
+      "era": "BC",
+      "latitude": 37.9755,
+      "longitude": 23.7348,
+      "name": "Peace of Nicias",
+      "name_ru": "Никиев мир",
+      "source": "https://en.wikipedia.org/wiki/Peace_of_Nicias",
+      "tags": [
+        "Greek",
+        "Athens",
+        "Sparta",
+        "Peloponnesian",
+        "War",
+        "Diplomacy",
+        "Peace"
+      ],
+      "type": "political"
+    },
+    {
       "date": "01.01.0416",
       "description": "Athens conquers neutral Melos, killing all adult men and enslaving women and children; Thucydides recreates Melian Dialogue showing Athenian claim that 'strong do what they can, weak suffer what they must'",
       "description_ru": "Афины вторгаются в нейтральный Мелос (но связанный этнически со Спартой), убивая всех взрослых мужчин и порабощая женщин и детей; Фукидид воссоздает Мелийский диалог, показывая афинское утверждение, что 'сильные делают, что могут, слабые страдают, что должны'",
@@ -3644,9 +3650,9 @@
       "tags": [
         "Greek",
         "Athens",
+        "Peloponnesian",
         "War",
         "Conquest",
-        "Peloponnesian",
         "Pillage",
         "Slavery"
       ],
@@ -3663,50 +3669,37 @@
       "name_ru": "Возведение Гефестиона",
       "tags": [
         "Greek",
-        "Building 🏠",
-        "Architecture",
-        "Pagan",
         "Religious",
+        "Pagan",
+        "Architecture",
+        "Building 🏠",
         "Temple"
       ],
       "type": "religious"
     },
     {
       "date": "01.01.0415",
-      "description": "Sicilian Expedition launched by Athens against Syracuse; 415-413 BC campaign becomes worst Athenian disaster with 200 ships and 40,000 men lost, breaking back of Athenian naval power",
-      "description_ru": "Афины отправляют военный флот в Сиракузы, выступающие на стороне Спарты; кампания 415-413 гг. до н.э. становится катастрофой с потерей 200 кораблей и 40 000 человек. Это ломает хребет военной мощи Афин на море",
+      "description": "The brilliant but unscrupulous Athenian politician Alcibiades convinced his fellow citizens to send a massive fleet to conquer distant Sicily. Athens equipped an unprecedented armada: 134 triremes and some 30,000 men. Before departure, a terrible scandal erupted in Athens: in one night, someone broke off the noses and genitals of \"hermae\" — the sacred pillars of the god Hermes — all over the city. Alcibiades' enemies accused him of the crime, but he had already sailed for Sicily.\n\nAthens dispatched a ship to bring Alcibiades to trial. However, Alcibiades fled to Sparta and handed over to the Spartans the plans for the military expedition he had organized. The Spartans sent reinforcements to their Sicilian allies. Instead of the riches of Sicily, Athens received a trap and a grueling war that deprived them of an army and a navy, and which led to their defeat in the Peloponnesian War later.",
+      "description_ru": "Блестящий, но беспринципный афинский политик Алкивиад убедил сограждан отправить огромный флот на завоевание далекой Сицилии. Афины снарядили невиданную армаду: 134 триремы и около 30 тысяч человек. Перед отправлением в Афинах случился страшный скандал — кто-то за одну ночь по всему городу отбил носы и детородные органы у «герм» — священных столбов бога Гермеса. Враги Алкивиада объявили в преступлении его, но он уже уплыл на Сицилию.\n\nАфины отправили следом корабль, который должен был доставить Алкивиада на суд. Однако Алкивиад бежал в Спарту и сдал спартанцам планы военного похода, который сам организовал. Спартанцы выслали подмогу сицилийским союзникам. Вместо богатств Сицилии Афины получили капкан и изнурительную войну, которая лишила их армии, флота, и которая привела к их поражению в Пелопонесской войне позднее.",
       "era": "BC",
       "latitude": 37.0755,
       "longitude": 15.2866,
       "name": "Sicilian Expedition",
-      "name_ru": "Провал Афин в Сицилии",
+      "name_ru": "Провальный поход Афин на Сицилию",
       "source": "https://en.wikipedia.org/wiki/Sicilian_Expedition",
       "tags": [
         "Greek",
         "Athens",
-        "War",
-        "Expedition",
-        "Naval",
+        "Sicily",
         "Peloponnesian",
-        "Sicily"
+        "War",
+        "Adventure",
+        "Alcibiades 👤",
+        "Betrayal",
+        "Expedition",
+        "Naval"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0413",
-      "description": "The future philosopher Diogenes was born to the family of Hycesius, a money changer. Diogenes is known as the most famous representative of the Cynic school, preaching asceticism, independence, and disdain for social conventions.",
-      "description_ru": "В семье Гикесия, менялы, родился будущий философ Диоген. Диоген известен как самый знаменитый представитель школы киников, проповедовавший аскетизм, независимость и презрение к общественным условностям.",
-      "era": "BC",
-      "latitude": 42.0231,
-      "longitude": 35.1531,
-      "name": "The Birth of Diogenes",
-      "name_ru": "Рождение Диогена",
-      "tags": [
-        "Greek",
-        "Birth",
-        "Philosophy"
-      ],
-      "type": "cultural"
     },
     {
       "date": "01.01.0413",
@@ -3721,11 +3714,49 @@
         "Greek",
         "Athens",
         "Sparta",
+        "Peloponnesian",
         "War",
-        "Conquest",
-        "Peloponnesian"
+        "Conquest"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0413",
+      "description": "The future philosopher Diogenes was born to the family of Hycesius, a money changer. Diogenes is known as the most famous representative of the Cynic school, preaching asceticism, independence, and disdain for social conventions.",
+      "description_ru": "В семье Гикесия, менялы, родился будущий философ Диоген. Диоген известен как самый знаменитый представитель школы киников, проповедовавший аскетизм, независимость и презрение к общественным условностям.",
+      "era": "BC",
+      "latitude": 42.0231,
+      "longitude": 35.1531,
+      "name": "The Birth of Diogenes",
+      "name_ru": "Рождение Диогена",
+      "tags": [
+        "Greek",
+        "Philosophy",
+        "Birth"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0412",
+      "description": "Alcibiades, who betrayed Athens and served as a military adviser to Sparta, falls into disfavor with the Spartan king. He seduces the wife of the Spartan king, Agis II, and she bears him a child. To escape the consequences, Alcibiades flees to Persia, to the court of the satrap Tissaphernes.\n\nAt the Persian court, Alcibiades instantly captivates the satrap and becomes his chief adviser. He gives Persia a brilliant strategic advice: not to fully support either Sparta or Athens, but rather to allow them to exhaust each other as much as possible.",
+      "description_ru": "Предавший Афины и послуживший в Спарте военным советником Алкивиад впадает в немилость царя Спарты. Он соблазняет жену спартанского царя Агиса II, и та родила от него ребенка. Чтобы спастись от последствий, Алкивиад бежит в Персию ко двору сатрапа Тиссаферна. \n\nПри дворе персов Алкивиад мгновенно очаровывает сатрапа и становится его главным советником. Он дает Персии гениальный стратегический совет: не помогать до конца ни Спарте, ни Афинам, а дать им максимально истощить друг друга.",
+      "era": "BC",
+      "latitude": 38.4852,
+      "longitude": 28.0428,
+      "name": "Alcibiades flees from Sparta to Persia",
+      "name_ru": "Алкивиад бежит из Спарты в Персию",
+      "source": "https://en.wikipedia.org/wiki/Alcibiades",
+      "tags": [
+        "Greek",
+        "Persian",
+        "Athens",
+        "Sparta",
+        "Peloponnesian",
+        "War",
+        "Alcibiades 👤",
+        "Exile"
+      ],
+      "type": "political"
     },
     {
       "date": "01.01.0412",
@@ -3740,9 +3771,9 @@
         "Greek",
         "Athens",
         "Sparta",
+        "Peloponnesian",
         "War",
-        "Oligarchy",
-        "Peloponnesian"
+        "Oligarchy"
       ],
       "type": "historic"
     },
@@ -3759,10 +3790,10 @@
       "tags": [
         "Greek",
         "Athens",
-        "Democracy",
-        "Overthrow",
         "Peloponnesian",
-        "Rebellion"
+        "Rebellion",
+        "Democracy",
+        "Overthrow"
       ],
       "type": "political"
     },
@@ -3778,13 +3809,13 @@
       "tags": [
         "Greek",
         "Sparta",
-        "War",
         "City-State",
-        "Architecture",
-        "Infrastructure",
         "Peloponnesian",
-        "Route",
+        "War",
+        "Architecture",
         "Trade",
+        "Route",
+        "Infrastructure",
         "Unification"
       ],
       "type": "historic"
@@ -3803,10 +3834,10 @@
         "Greek",
         "Athens",
         "Sparta",
+        "Peloponnesian",
         "War",
         "Battle",
-        "Naval",
-        "Peloponnesian"
+        "Naval"
       ],
       "type": "military"
     },
@@ -3822,12 +3853,12 @@
       "tags": [
         "Greek",
         "Athens",
-        "Building 🏠",
-        "Legend",
-        "Architecture",
-        "Pagan",
         "Religious",
-        "Temple"
+        "Pagan",
+        "Architecture",
+        "Building 🏠",
+        "Temple",
+        "Legend"
       ],
       "type": "religious"
     },
@@ -3845,10 +3876,10 @@
         "Greek",
         "Athens",
         "Sparta",
+        "Peloponnesian",
         "War",
         "Battle",
-        "Naval",
-        "Peloponnesian"
+        "Naval"
       ],
       "type": "military"
     },
@@ -3867,8 +3898,8 @@
         "Athens",
         "Sparta",
         "Crisis",
-        "Overthrow",
         "Political",
+        "Overthrow",
         "Purge"
       ],
       "type": "political"
@@ -3887,9 +3918,9 @@
         "Greek",
         "Athens",
         "Sparta",
+        "Peloponnesian",
         "War",
-        "Fall",
-        "Peloponnesian"
+        "Fall"
       ],
       "type": "military"
     },
@@ -3907,10 +3938,10 @@
         "Greek",
         "Athens",
         "Crisis",
+        "Political",
         "Democracy",
         "Exile",
-        "Overthrow",
-        "Political"
+        "Overthrow"
       ],
       "type": "political"
     },
@@ -3943,11 +3974,11 @@
       "source": "https://en.wikipedia.org/wiki/Trial_of_Socrates",
       "tags": [
         "Greek",
+        "Martyr",
+        "Philosophy",
         "Death",
         "Democracy",
         "Law",
-        "Martyr",
-        "Philosophy",
         "Socrates 👤",
         "Trial"
       ],
@@ -4040,6 +4071,28 @@
     },
     {
       "date": "01.01.0390",
+      "description": "Athenian general Iphicrates revolutionizes infantry with peltasts - light-armed troops with javelins defeating Spartan hoplites at Lechaeum; traditional phalanx no longer invincible",
+      "description_ru": "Афинский полководец Ификрат формирует новый род войск. Пельтасты - легковооруженные войска с дротиками, побеждающие спартанских гоплитов при Лехее; традиционная фаланга больше не непобедима",
+      "era": "BC",
+      "latitude": 37.9061,
+      "longitude": 22.8782,
+      "name": "Peltast Revolution",
+      "name_ru": "Революция пельтастов",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Lechaeum",
+      "tags": [
+        "Greek",
+        "Athens",
+        "War",
+        "Corinthian War",
+        "Innovation",
+        "Military",
+        "Science",
+        "Tactics"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.01.0390",
       "description": "Concerned about the resurgence of Athens, Persia changes sides and begins to support Sparta, threatening to block grain supplies to Athens.",
       "description_ru": "Обеспокоенная возрождением Афин, Персия меняет сторону и начинает поддерживать Спарту, угрожая заблокировать поставки зерна в Афины.",
       "era": "BC",
@@ -4057,27 +4110,6 @@
         "Corinthian War"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0390",
-      "description": "Athenian general Iphicrates revolutionizes infantry with peltasts - light-armed troops with javelins defeating Spartan hoplites at Lechaeum; traditional phalanx no longer invincible",
-      "description_ru": "Афинский полководец Ификрат формирует новый род войск. Пельтасты - легковооруженные войска с дротиками, побеждающие спартанских гоплитов при Лехее; традиционная фаланга больше не непобедима",
-      "era": "BC",
-      "latitude": 37.9061,
-      "longitude": 22.8782,
-      "name": "Peltast Revolution",
-      "name_ru": "Революция пельтастов",
-      "source": "https://en.wikipedia.org/wiki/Battle_of_Lechaeum",
-      "tags": [
-        "Greek",
-        "Athens",
-        "War",
-        "Corinthian War",
-        "Innovation",
-        "Military",
-        "Science"
-      ],
-      "type": "military"
     },
     {
       "date": "01.01.0387",
@@ -4113,9 +4145,9 @@
       "source": "https://en.wikipedia.org/wiki/Aristotle",
       "tags": [
         "Greek",
+        "Philosophy",
         "Aristotle 👤",
         "Birth",
-        "Philosophy",
         "Science"
       ],
       "type": "cultural"
@@ -4150,15 +4182,15 @@
       "name_ru": "Храм Артемиды Эфесской достроен",
       "tags": [
         "Greek",
-        "Building 🏠",
-        "Anatolia",
-        "Ancient",
-        "Architecture",
-        "Culture",
-        "Pagan",
         "Religious",
+        "Pagan",
+        "Culture",
+        "Architecture",
+        "Building 🏠",
         "Temple",
-        "Wonders"
+        "Ancient",
+        "Wonders",
+        "Anatolia"
       ],
       "type": "historic"
     },
@@ -4176,8 +4208,8 @@
         "Greek",
         "Sparta",
         "War",
-        "Conspiracy",
         "Rebellion",
+        "Conspiracy",
         "Thebes"
       ],
       "type": "political"
@@ -4213,9 +4245,9 @@
       "tags": [
         "Greek",
         "Athens",
-        "Administration",
         "Metaphysics",
         "Philosophy",
+        "Administration",
         "Plato 👤",
         "Text"
       ],
@@ -4312,9 +4344,9 @@
       "tags": [
         "Greek",
         "Athens",
+        "Philosophy",
         "Education",
         "Influence",
-        "Philosophy",
         "Plato 👤"
       ],
       "type": "cultural"
@@ -4371,8 +4403,8 @@
       "tags": [
         "Greek",
         "Persian",
-        "Athens",
         "Carian",
+        "Athens",
         "Rebellion"
       ],
       "type": "historic"
@@ -4410,10 +4442,10 @@
       "source": "https://en.wikipedia.org/wiki/Temple_of_Artemis",
       "tags": [
         "Greek",
-        "Legend",
-        "Ancient",
         "Destruction",
         "Temple",
+        "Legend",
+        "Ancient",
         "Wonders"
       ],
       "type": "historic"
@@ -4429,13 +4461,13 @@
       "name_ru": "Рождение Александра Великого",
       "source": "https://en.wikipedia.org/wiki/Alexander_the_Great",
       "tags": [
+        "Milestone ⭐️",
         "Greek",
         "Macedonian",
         "Dynasty",
         "Legend",
         "Alexander the Great 👤",
-        "Birth",
-        "Milestone ⭐️"
+        "Birth"
       ],
       "type": "historic"
     },
@@ -4455,7 +4487,8 @@
         "Innovation",
         "Military",
         "Philip II 👑",
-        "Science"
+        "Science",
+        "Tactics"
       ],
       "type": "military"
     },
@@ -4499,25 +4532,6 @@
     },
     {
       "date": "01.01.0343",
-      "description": "Aristotle becomes tutor to 13-year-old Alexander at Mieza; teaches philosophy, medicine, and science for 3 years, instilling in future conqueror love of Homer and Greek culture",
-      "description_ru": "Аристотель становится наставником 13-летнего Александра в Миезе; преподает философию, медицину и науку 3 года, прививая будущему завоевателю любовь к Гомеру и греческой культуре",
-      "era": "BC",
-      "latitude": 40.65,
-      "longitude": 22.15,
-      "name": "Aristotle Tutors Alexander",
-      "name_ru": "Аристотель обучает Александра",
-      "source": "https://en.wikipedia.org/wiki/Aristotle",
-      "tags": [
-        "Greek",
-        "Alexander the Great 👤",
-        "Aristotle 👤",
-        "Education",
-        "Philosophy"
-      ],
-      "type": "cultural"
-    },
-    {
-      "date": "01.01.0343",
       "description": "Aristotle lived on Lesbos for two years. He settled on the shores of the tranquil Kaloni Lagoon. Here, the great thinker spent his days studying, dissecting, and classifying marine animals, fish, shells, and birds. The result of his observations was his seminal work, \"History of Animals.\"",
       "description_ru": "Аристотель прожил на Лесбосе два года. Он поселился на берегу тихой лагуны Калони. Здесь великий мыслитель целыми днями изучал, препарировал и классифицировал морских животных, рыб, ракушек и птиц. Результатом наблюдений стал его фундаментальный труд «История животных».",
       "era": "BC",
@@ -4528,14 +4542,34 @@
       "source": "https://en.wikipedia.org/wiki/History_of_Animals",
       "tags": [
         "Greek",
+        "Culture",
         "Aristotle 👤",
         "Biology",
-        "Culture",
+        "Nature",
         "Science",
         "Text",
         "Zoology"
       ],
       "type": "scientific"
+    },
+    {
+      "date": "01.01.0343",
+      "description": "Aristotle becomes tutor to 13-year-old Alexander at Mieza; teaches philosophy, medicine, and science for 3 years, instilling in future conqueror love of Homer and Greek culture",
+      "description_ru": "Аристотель становится наставником 13-летнего Александра в Миезе; преподает философию, медицину и науку 3 года, прививая будущему завоевателю любовь к Гомеру и греческой культуре",
+      "era": "BC",
+      "latitude": 40.65,
+      "longitude": 22.15,
+      "name": "Aristotle Tutors Alexander",
+      "name_ru": "Аристотель обучает Александра",
+      "source": "https://en.wikipedia.org/wiki/Aristotle",
+      "tags": [
+        "Greek",
+        "Philosophy",
+        "Alexander the Great 👤",
+        "Aristotle 👤",
+        "Education"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.01.0341",
@@ -4550,9 +4584,9 @@
       "tags": [
         "Greek",
         "Athens",
+        "Philosophy",
         "Birth",
-        "Epicurus 👤",
-        "Philosophy"
+        "Epicurus 👤"
       ],
       "type": "cultural"
     },
@@ -4566,12 +4600,12 @@
       "name": "Macedonia Sieges Byzantium",
       "name_ru": "Осада Византия Македонией",
       "tags": [
+        "Byzantine",
         "Greek",
         "Persian",
         "Macedonian",
         "Athens",
         "War",
-        "Byzantine",
         "Philip II 👑",
         "Siege"
       ],
@@ -4630,8 +4664,8 @@
         "Greek",
         "Macedonian",
         "Alliance",
-        "Philip II 👑",
         "Political",
+        "Philip II 👑",
         "Unification"
       ],
       "type": "political"
@@ -4649,33 +4683,13 @@
       "tags": [
         "Greek",
         "Macedonian",
+        "Death",
         "Alexander the Great 👤",
         "Assassination",
-        "Death",
         "Philip II 👑",
         "Regicide"
       ],
       "type": "political"
-    },
-    {
-      "date": "01.01.0335",
-      "description": "Aristotle returns to Athens and founds Lyceum school; teaches while walking in peripatos (covered walkway), giving followers name 'Peripatetics' - systematic research in biology, logic, ethics",
-      "description_ru": "Аристотель возвращается в Афины и основывает школу Ликей; преподает, прогуливаясь по перипатосу (крытой галерее), давая последователям имя 'перипатетики' - систематические исследования в биологии, логике, этике",
-      "era": "BC",
-      "latitude": 37.9755,
-      "longitude": 23.7348,
-      "name": "Aristotle Founds Lyceum",
-      "name_ru": "Аристотель основывает Ликей",
-      "source": "https://en.wikipedia.org/wiki/Lyceum_(Classical)",
-      "tags": [
-        "Greek",
-        "Athens",
-        "Aristotle 👤",
-        "Education",
-        "Philosophy",
-        "Science"
-      ],
-      "type": "cultural"
     },
     {
       "date": "01.01.0335",
@@ -4691,12 +4705,32 @@
         "Greek",
         "Macedonian",
         "War",
-        "Alexander the Great 👤",
         "Destruction",
+        "Alexander the Great 👤",
         "Slavery",
         "Thebes"
       ],
       "type": "military"
+    },
+    {
+      "date": "01.01.0335",
+      "description": "Aristotle returns to Athens and founds Lyceum school; teaches while walking in peripatos (covered walkway), giving followers name 'Peripatetics' - systematic research in biology, logic, ethics",
+      "description_ru": "Аристотель возвращается в Афины и основывает школу Ликей; преподает, прогуливаясь по перипатосу (крытой галерее), давая последователям имя 'перипатетики' - систематические исследования в биологии, логике, этике",
+      "era": "BC",
+      "latitude": 37.9755,
+      "longitude": 23.7348,
+      "name": "Aristotle Founds Lyceum",
+      "name_ru": "Аристотель основывает Ликей",
+      "source": "https://en.wikipedia.org/wiki/Lyceum_(Classical)",
+      "tags": [
+        "Greek",
+        "Athens",
+        "Philosophy",
+        "Aristotle 👤",
+        "Education",
+        "Science"
+      ],
+      "type": "cultural"
     },
     {
       "date": "01.07.0334",
@@ -4710,8 +4744,8 @@
       "source": "https://en.wikipedia.org/wiki/Alexander_the_Great",
       "tags": [
         "Greek",
-        "Alexander the Great 👤",
-        "Engineering ⚙️"
+        "Engineering ⚙️",
+        "Alexander the Great 👤"
       ],
       "type": "historic"
     },
@@ -4728,32 +4762,11 @@
       "tags": [
         "Greek",
         "City",
-        "Alexander the Great 👤",
         "Architecture",
+        "Alexander the Great 👤",
         "Restoration"
       ],
       "type": "historic"
-    },
-    {
-      "date": "01.01.0331",
-      "description": "Alexander visits Oracle of Amun at Siwa Oasis in Libyan Desert; priests allegedly greet him as 'son of Amun' (son of Zeus), reinforcing his divine status and claim to Egyptian throne",
-      "description_ru": "Александр посещает Оракул Амона в оазисе Сива в Ливийской пустыне; жрецы якобы приветствуют его как 'сына Амона' (сына Зевса), укрепляя его божественный статус и претензию на египетский трон",
-      "era": "BC",
-      "latitude": 29.2032,
-      "longitude": 25.5199,
-      "name": "Oracle of Siwa - Son of Amun",
-      "name_ru": "Оракул Сивы - Сын Амона",
-      "source": "https://en.wikipedia.org/wiki/Siwa_Oasis",
-      "tags": [
-        "Greek",
-        "Egypt",
-        "Macedonian",
-        "Alexander the Great 👤",
-        "Oracle",
-        "Pagan",
-        "Religious"
-      ],
-      "type": "religious"
     },
     {
       "date": "01.01.0331",
@@ -4773,6 +4786,27 @@
         "Alexander the Great 👤"
       ],
       "type": "historic"
+    },
+    {
+      "date": "01.01.0331",
+      "description": "Alexander visits Oracle of Amun at Siwa Oasis in Libyan Desert; priests allegedly greet him as 'son of Amun' (son of Zeus), reinforcing his divine status and claim to Egyptian throne",
+      "description_ru": "Александр посещает Оракул Амона в оазисе Сива в Ливийской пустыне; жрецы якобы приветствуют его как 'сына Амона' (сына Зевса), укрепляя его божественный статус и претензию на египетский трон",
+      "era": "BC",
+      "latitude": 29.2032,
+      "longitude": 25.5199,
+      "name": "Oracle of Siwa - Son of Amun",
+      "name_ru": "Оракул Сивы - Сын Амона",
+      "source": "https://en.wikipedia.org/wiki/Siwa_Oasis",
+      "tags": [
+        "Greek",
+        "Egypt",
+        "Macedonian",
+        "Religious",
+        "Pagan",
+        "Alexander the Great 👤",
+        "Oracle"
+      ],
+      "type": "religious"
     },
     {
       "date": "01.12.0330",
@@ -4827,8 +4861,8 @@
         "Macedonian",
         "Achaemenid",
         "City",
-        "Alexander the Great 👤",
-        "Conquest"
+        "Conquest",
+        "Alexander the Great 👤"
       ],
       "type": "historic"
     },
@@ -4846,8 +4880,8 @@
         "Greek",
         "Macedonian",
         "City",
-        "Alexander the Great 👤",
-        "Fortification"
+        "Fortification",
+        "Alexander the Great 👤"
       ],
       "type": "historic"
     },
@@ -4866,9 +4900,9 @@
         "Persian",
         "Macedonian",
         "Achaemenid",
-        "Alexander the Great 👤",
         "Conquest",
-        "Destruction"
+        "Destruction",
+        "Alexander the Great 👤"
       ],
       "type": "military"
     },
@@ -4925,9 +4959,9 @@
         "Greek",
         "Persian",
         "Macedonian",
-        "Alexander the Great 👤",
         "Blasphemy",
-        "Cultural Continuity"
+        "Cultural Continuity",
+        "Alexander the Great 👤"
       ],
       "type": "political"
     },
@@ -5006,8 +5040,8 @@
         "Indian",
         "Macedonian",
         "City",
-        "Alexander the Great 👤",
         "Death",
+        "Alexander the Great 👤",
         "Horse"
       ],
       "type": "historic"
@@ -5121,8 +5155,8 @@
       "tags": [
         "Greek",
         "Macedonian",
-        "Alexander the Great 👤",
         "Death",
+        "Alexander the Great 👤",
         "Disease",
         "End"
       ],
@@ -5140,11 +5174,11 @@
       "tags": [
         "Greek",
         "Building 🏠",
-        "Ancient",
-        "Crowdfunding",
-        "Restoration",
         "Temple",
-        "Wonders"
+        "Ancient",
+        "Wonders",
+        "Crowdfunding",
+        "Restoration"
       ],
       "type": "historic"
     },
@@ -5181,9 +5215,9 @@
         "Greek",
         "Macedonian",
         "Athens",
-        "Aristotle 👤",
+        "Philosophy",
         "Death",
-        "Philosophy"
+        "Aristotle 👤"
       ],
       "type": "cultural"
     },
@@ -5202,9 +5236,9 @@
         "Athens",
         "Diadochi",
         "Culture",
+        "Philosophy",
         "Epicurus 👤",
-        "Exile",
-        "Philosophy"
+        "Exile"
       ],
       "type": "cultural"
     },
@@ -5225,8 +5259,8 @@
         "Ptolemaic",
         "Diadochi",
         "War",
-        "Alexander the Great 👤",
-        "Funeral"
+        "Burial",
+        "Alexander the Great 👤"
       ],
       "type": "historic"
     },
@@ -5245,8 +5279,8 @@
         "Macedonian",
         "Diadochi",
         "War",
-        "Assassination",
         "Death",
+        "Assassination",
         "Regicide"
       ],
       "type": "political"
@@ -5265,8 +5299,8 @@
         "Greek",
         "Athens",
         "Culture",
-        "Epicurus 👤",
-        "Philosophy"
+        "Philosophy",
+        "Epicurus 👤"
       ],
       "type": "cultural"
     },
@@ -5357,12 +5391,12 @@
       "source": "https://en.wikipedia.org/wiki/Colossus_of_Rhodes",
       "tags": [
         "Greek",
-        "Ancient",
-        "Bronze",
-        "Engineering ⚙️",
-        "Metallurgy",
         "Sculpture",
-        "Wonders"
+        "Metallurgy",
+        "Engineering ⚙️",
+        "Ancient",
+        "Wonders",
+        "Bronze"
       ],
       "type": "historic"
     },
@@ -5377,10 +5411,10 @@
       "name_ru": "Архимед выводит число π",
       "tags": [
         "Greek",
+        "Sicily",
         "Archimedes 👤",
         "Mathematics",
-        "Science",
-        "Sicily"
+        "Science"
       ],
       "type": "scientific"
     },
@@ -5395,11 +5429,11 @@
       "name_ru": "Трактат Архимеда о плавающих телах",
       "tags": [
         "Greek",
+        "Water",
         "Archimedes 👤",
         "Physics",
         "Science",
-        "Text",
-        "Water"
+        "Text"
       ],
       "type": "scientific"
     },
@@ -5415,12 +5449,12 @@
       "source": "https://en.wikipedia.org/wiki/Syracusia",
       "tags": [
         "Greek",
-        "Archimedes 👤",
-        "Engineering ⚙️",
-        "Innovation",
-        "Mathematics",
         "Sicily",
-        "Wealth"
+        "Wealth",
+        "Engineering ⚙️",
+        "Archimedes 👤",
+        "Innovation",
+        "Mathematics"
       ],
       "type": "historic"
     },

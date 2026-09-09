@@ -14,12 +14,12 @@
       "tags": [
         "Arabian",
         "Umayyad",
-        "Dynasty",
-        "Caliph",
-        "Crisis",
         "Islamic",
-        "Monarchy",
-        "Political"
+        "Crisis",
+        "Dynasty",
+        "Political",
+        "Caliph",
+        "Monarchy"
       ],
       "type": "political"
     },
@@ -31,20 +31,20 @@
       "latitude": 32.61656874,
       "longitude": 44.03311729,
       "name": "The Massacre of Husayn ibn Ali at Karbala",
-      "name_ru": "Внук Пророка гибнет в Карбале",
+      "name_ru": "Внук Пророка Мухаммада гибнет в Карбале",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Karbala",
       "tags": [
         "Arabian",
         "Umayyad",
-        "Civil War",
-        "Battle",
-        "Holy Site",
+        "Religious",
         "Islamic",
         "Martyr",
-        "Massacre",
-        "Religious",
         "Schism",
-        "Shia"
+        "Shia",
+        "Civil War",
+        "Holy Site",
+        "Battle",
+        "Massacre"
       ],
       "type": "military"
     },
@@ -61,12 +61,13 @@
       "tags": [
         "Arabian",
         "Umayyad",
-        "Civil War",
-        "Blasphemy",
-        "Crisis",
+        "Religious",
         "Islamic",
-        "Pillage",
-        "Rebellion"
+        "Blasphemy",
+        "Civil War",
+        "Crisis",
+        "Rebellion",
+        "Pillage"
       ],
       "type": "military"
     },
@@ -82,15 +83,15 @@
       "source": "https://en.wikipedia.org/wiki/Dome_of_the_Rock",
       "tags": [
         "Arabian",
-        "Umayyad",
         "Jerusalem",
-        "Building 🏠",
-        "Architecture",
-        "Culture",
-        "Holy Site",
-        "Islamic",
-        "Medieval",
+        "Umayyad",
         "Religious",
+        "Islamic",
+        "Holy Site",
+        "Culture",
+        "Architecture",
+        "Building 🏠",
+        "Medieval",
         "Wonders"
       ],
       "type": "cultural"
@@ -108,14 +109,14 @@
       "tags": [
         "Arabian",
         "Umayyad",
-        "Reform",
-        "Administration",
-        "Culture",
-        "Currency",
         "Islamic",
+        "Culture",
         "Language",
+        "Currency 🪙",
+        "Standardization",
         "Political",
-        "Standardization"
+        "Reform",
+        "Administration"
       ],
       "type": "cultural"
     },
@@ -130,15 +131,15 @@
       "name_ru": "Омейяды разрушают Карфаген",
       "source": "https://en.wikipedia.org/wiki/Muslim_conquest_of_the_Maghreb",
       "tags": [
-        "Arabian",
-        "Roman",
-        "Umayyad",
-        "War",
-        "Battle",
         "Byzantine",
+        "Roman",
+        "Arabian",
+        "Umayyad",
+        "Islamic",
+        "War",
         "Conquest",
-        "Destruction",
-        "Islamic"
+        "Battle",
+        "Destruction"
       ],
       "type": "military"
     },
@@ -174,15 +175,15 @@
       "tags": [
         "Arabian",
         "Umayyad",
-        "Building 🏠",
-        "Architecture",
-        "Art",
-        "Culture",
-        "Holy Site",
-        "Islamic",
-        "Medieval",
         "Religious",
+        "Islamic",
+        "Holy Site",
+        "Culture",
+        "Art",
+        "Architecture",
+        "Building 🏠",
         "Temple",
+        "Medieval",
         "Wonders"
       ],
       "type": "cultural"
@@ -201,12 +202,13 @@
         "Arabian",
         "Indian",
         "Umayyad",
-        "War",
-        "Battle",
-        "Conquest",
-        "Expansion",
         "Foundation",
-        "Islamic"
+        "Religious",
+        "Islamic",
+        "War",
+        "Conquest",
+        "Battle",
+        "Expansion"
       ],
       "type": "military"
     },
@@ -221,18 +223,19 @@
       "name_ru": "Омейяды приходят на Иберию",
       "source": "https://en.wikipedia.org/wiki/Umayyad_conquest_of_Hispania",
       "tags": [
-        "Arabian",
-        "Umayyad",
-        "War",
-        "Battle",
-        "Berber",
-        "Christian",
-        "Conquest",
-        "Foundation",
         "Iberia",
+        "Arabian",
+        "Berber",
+        "Visigoth",
+        "Umayyad",
+        "Foundation",
+        "Religious",
+        "Christian",
         "Islamic",
-        "Reconquista",
-        "Visigoth"
+        "War",
+        "Conquest",
+        "Battle",
+        "Reconquista"
       ],
       "type": "military"
     },
@@ -241,18 +244,19 @@
       "description": "Qutayba ibn Muslim, the Umayyad governor of Khorasan, completes the conquest of Transoxiana, capturing the great Silk Road cities of Bukhara and Samarkand. These are among the richest and most cultured cities in the world: Samarkand is an ancient crossroads of Chinese, Indian, Persian, and Hellenistic civilizations.\n\nThe conquest of Transoxiana brings the Umayyad Caliphate into direct contact — and eventually military confrontation — with the Tang Dynasty of China. At the Battle of Talas in 751, an Arab-Tibetan coalition will defeat a Tang army, fixing the western boundary of Chinese imperial power and preserving the Islamisation of Central Asia. The region Qutayba conquers will later produce some of the greatest scholars of the Islamic golden age: al-Bukhari, Ibn Sina (Avicenna), and al-Biruni all come from this Transoxianan world.",
       "description_ru": "Кутайба ибн Муслим, умайядский наместник Хорасана, завершает завоевание Трансоксианы — захватывая великие города Шёлкового пути Бухару и Самарканд. Это одни из богатейших и наиболее культурных городов мира: Самарканд — древний перекрёсток китайской, индийской, персидской и эллинистической цивилизаций.\n\nЗавоевание Трансоксианы привело к прямому контакту Омейядского халифата — и, в конечном итоге, к военному противостоянию — с династией Тан в Китае. В битве при Таласе в 751 году арабо-тибетская коалиция разгромила армию Тан, закрепив западную границу китайской имперской власти и сохранив исламизацию Центральной Азии. Регион, завоёванный Кутайбой, позднее породит великих учёных исламского золотого века: аль-Бухари, Ибн Сину (Авиценну) и аль-Бируни.",
       "era": "AD",
-      "latitude": 39.6542,
-      "longitude": 66.9597,
+      "latitude": 39.65,
+      "longitude": 66.97,
       "name": "Arab Conquest of Samarkand and Bukhara",
       "name_ru": "Арабское завоевание Самарканда и Бухары",
       "source": "https://en.wikipedia.org/wiki/Qutayba_ibn_Muslim",
       "tags": [
         "Arabian",
+        "Sogdian",
         "Umayyad",
+        "Islamic",
         "War",
         "Conquest",
-        "Expansion",
-        "Islamic"
+        "Expansion"
       ],
       "type": "military"
     },
@@ -268,13 +272,13 @@
       "source": "https://en.wikipedia.org/wiki/Umar_II",
       "tags": [
         "Arabian",
+        "Rashidun",
         "Umayyad",
-        "Reform",
-        "Caliph",
+        "Religious",
         "Islamic",
         "Political",
-        "Rashidun",
-        "Religious"
+        "Reform",
+        "Caliph"
       ],
       "type": "political"
     },
@@ -290,14 +294,14 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Tours",
       "tags": [
         "Arabian",
+        "Berber",
+        "Frankish",
         "Umayyad",
+        "Islamic",
         "War",
         "Battle",
-        "Berber",
         "Expansion",
-        "Islamic",
-        "Reconquista",
-        "Frankish"
+        "Reconquista"
       ],
       "type": "military"
     },
@@ -314,11 +318,11 @@
       "tags": [
         "Arabian",
         "Umayyad",
+        "Islamic",
         "Civil War",
         "Crisis",
-        "Islamic",
-        "Political",
-        "Rebellion"
+        "Rebellion",
+        "Political"
       ],
       "type": "political"
     },
@@ -333,14 +337,14 @@
       "name_ru": "Аббасидская революция начинается в Хорасане",
       "source": "https://en.wikipedia.org/wiki/Abbasid_Revolution",
       "tags": [
-        "Arabian",
         "Persian",
-        "Umayyad",
-        "Civil War",
+        "Arabian",
         "Abbasid",
+        "Umayyad",
         "Islamic",
-        "Political",
+        "Civil War",
         "Rebellion",
+        "Political",
         "Revolution"
       ],
       "type": "political"
@@ -358,12 +362,12 @@
       "tags": [
         "Arabian",
         "Umayyad",
+        "Islamic",
         "Civil War",
         "Battle",
-        "Caliph",
         "Death",
-        "Fall",
-        "Islamic"
+        "Caliph",
+        "Fall"
       ],
       "type": "military"
     },
@@ -379,12 +383,12 @@
       "source": "https://en.wikipedia.org/wiki/Abd_al-Rahman_I",
       "tags": [
         "Arabian",
-        "Umayyad",
-        "Dynasty",
-        "Capital",
         "Cordoba",
+        "Umayyad",
+        "Capital",
         "Foundation",
         "Islamic",
+        "Dynasty",
         "Political",
         "Reconquista"
       ],

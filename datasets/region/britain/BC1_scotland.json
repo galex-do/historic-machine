@@ -12,9 +12,9 @@
       "name_ru": "Неолитическое поселение Скара-Брей",
       "source": "https://en.wikipedia.org/wiki/Skara_Brae",
       "tags": [
+        "Scottish",
         "Building 🏠",
         "Neolithic",
-        "Scottish",
         "Settlement"
       ],
       "type": "historic"
@@ -30,13 +30,13 @@
       "name_ru": "Камни Каллениша",
       "source": "https://en.wikipedia.org/wiki/Callanish_Stones",
       "tags": [
-        "Legend",
-        "Astronomy",
+        "Scottish",
+        "Pagan",
         "Holy Site",
+        "Legend",
         "Megalithic",
         "Neolithic",
-        "Pagan",
-        "Scottish"
+        "Astronomy"
       ],
       "type": "religious"
     },
@@ -51,12 +51,12 @@
       "name_ru": "Погребальный курган Мейсхоу в Шотландии",
       "source": "https://en.wikipedia.org/wiki/Maeshowe",
       "tags": [
+        "Scottish",
+        "Tomb",
+        "Neolithic",
         "Astronomy",
         "Earthwork",
-        "Mound Builders",
-        "Neolithic",
-        "Scottish",
-        "Tomb"
+        "Mound Builders"
       ],
       "type": "religious"
     },
@@ -71,12 +71,12 @@
       "name_ru": "Брохи — уникальные башни Шотландии",
       "source": "https://en.wikipedia.org/wiki/Broch",
       "tags": [
-        "Building 🏠",
+        "Scottish",
         "Architecture",
-        "Construction",
-        "Engineering ⚙️",
+        "Building 🏠",
         "Fortification",
-        "Scottish"
+        "Engineering ⚙️",
+        "Construction"
       ],
       "type": "historic"
     },
@@ -93,10 +93,10 @@
       "tags": [
         "Roman",
         "Celtic",
+        "Scottish",
         "War",
         "Battle",
         "Highlanders",
-        "Scottish",
         "Resistance"
       ],
       "type": "military"
@@ -113,11 +113,11 @@
       "source": "https://en.wikipedia.org/wiki/Antonine_Wall",
       "tags": [
         "Roman",
-        "Building 🏠",
         "Britain",
-        "Engineering ⚙️",
+        "Scottish",
+        "Building 🏠",
         "Fortification",
-        "Scottish"
+        "Engineering ⚙️"
       ],
       "type": "historic"
     },
@@ -133,11 +133,11 @@
       "source": "https://en.wikipedia.org/wiki/Picts",
       "tags": [
         "Celtic",
-        "Legend",
-        "Art",
+        "Scottish",
         "Culture",
-        "Highlanders",
-        "Scottish"
+        "Art",
+        "Legend",
+        "Highlanders"
       ],
       "type": "historic"
     },
@@ -153,13 +153,13 @@
       "source": "https://en.wikipedia.org/wiki/D%C3%A1l_Riata",
       "tags": [
         "Celtic",
-        "Dynasty",
-        "King",
-        "Foundation",
-        "Gaelic",
         "Irish",
+        "Scottish",
+        "Gaelic",
         "Kingdom",
-        "Scottish"
+        "Foundation",
+        "Dynasty",
+        "King"
       ],
       "type": "political"
     },
@@ -175,15 +175,15 @@
       "source": "https://en.wikipedia.org/wiki/Columba",
       "tags": [
         "Celtic",
-        "Christian",
-        "Culture",
-        "Gaelic",
-        "Holy Site",
         "Irish",
-        "Monastery",
+        "Scottish",
+        "Gaelic",
         "Religious",
+        "Christian",
         "Saint",
-        "Scottish"
+        "Holy Site",
+        "Culture",
+        "Monastery"
       ],
       "type": "religious"
     },
@@ -199,13 +199,13 @@
       "source": "https://en.wikipedia.org/wiki/Kenneth_MacAlpin",
       "tags": [
         "Celtic",
-        "Dynasty",
-        "King",
-        "Foundation",
+        "Scottish",
         "Gaelic",
-        "Kingdom",
         "Scotland",
-        "Scottish"
+        "Kingdom",
+        "Foundation",
+        "Dynasty",
+        "King"
       ],
       "type": "political"
     },
@@ -220,13 +220,13 @@
       "name_ru": "Норвежское ярлство Оркни в Шотландии",
       "source": "https://en.wikipedia.org/wiki/Earldom_of_Orkney",
       "tags": [
-        "Dynasty",
-        "King",
-        "Foundation",
-        "Kingdom",
         "Norman",
+        "Scottish",
         "Norse",
-        "Scottish"
+        "Kingdom",
+        "Foundation",
+        "Dynasty",
+        "King"
       ],
       "type": "political"
     },
@@ -242,11 +242,11 @@
       "source": "https://en.wikipedia.org/wiki/Macbeth,_King_of_Scotland",
       "tags": [
         "Celtic",
+        "Scottish",
+        "Scotland",
         "Dynasty",
         "King",
-        "Legend",
-        "Scotland",
-        "Scottish"
+        "Legend"
       ],
       "type": "political"
     },
@@ -261,15 +261,15 @@
       "name_ru": "Малькольм III и Маргарита правят Шотландией",
       "source": "https://en.wikipedia.org/wiki/Malcolm_III_of_Scotland",
       "tags": [
-        "Reform",
+        "Scottish",
+        "English",
+        "Scotland",
+        "Religious",
+        "Christian",
+        "Saint",
         "Marriage",
         "King",
-        "Christian",
-        "English",
-        "Religious",
-        "Saint",
-        "Scotland",
-        "Scottish"
+        "Reform"
       ],
       "type": "political"
     },
@@ -284,14 +284,14 @@
       "name_ru": "Давид I — король-реформатор Шотландии",
       "source": "https://en.wikipedia.org/wiki/David_I_of_Scotland",
       "tags": [
-        "Reform",
-        "King",
-        "Christian",
-        "Foundation",
-        "Law",
         "Norman",
+        "Scottish",
         "Scotland",
-        "Scottish"
+        "Foundation",
+        "Christian",
+        "King",
+        "Reform",
+        "Law"
       ],
       "type": "political"
     },
@@ -306,15 +306,16 @@
       "name_ru": "Основано Мелроузское аббатство",
       "source": "https://en.wikipedia.org/wiki/Melrose_Abbey",
       "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Christian",
-        "Cistercian",
-        "Economic",
-        "Holy Site",
-        "Monastery",
+        "Scottish",
         "Religious",
-        "Scottish"
+        "Christian",
+        "Catholic",
+        "Cistercian",
+        "Holy Site",
+        "Architecture",
+        "Building 🏠",
+        "Economic",
+        "Monastery"
       ],
       "type": "religious"
     },
@@ -329,14 +330,14 @@
       "name_ru": "Независимость шотландской церкви от Англии",
       "source": "https://en.wikipedia.org/wiki/Scottish_Church",
       "tags": [
-        "Reform",
-        "Christian",
+        "Scottish",
         "English",
-        "Independence",
-        "Law",
         "Papacy",
         "Religious",
-        "Scottish"
+        "Christian",
+        "Reform",
+        "Independence",
+        "Law"
       ],
       "type": "religious"
     },
@@ -351,11 +352,11 @@
       "name_ru": "Викинги изгнаны из Шотландии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Largs",
       "tags": [
+        "Norman",
+        "Scottish",
+        "Scotland",
         "War",
         "Battle",
-        "Norman",
-        "Scotland",
-        "Scottish",
         "Treaty"
       ],
       "type": "military"
@@ -371,15 +372,15 @@
       "name_ru": "Эдуард I выбирает наследника шотландской короны",
       "source": "https://en.wikipedia.org/wiki/Great_Cause",
       "tags": [
-        "Dynasty",
-        "King",
-        "Crisis",
-        "Edward I 👑",
+        "Scottish",
         "England",
         "English",
-        "Political",
         "Scotland",
-        "Scottish"
+        "Crisis",
+        "Dynasty",
+        "King",
+        "Political",
+        "Edward I 👑"
       ],
       "type": "political"
     },
@@ -394,15 +395,15 @@
       "name_ru": "Эдуард I начинает завоевание Шотландии",
       "source": "https://en.wikipedia.org/wiki/Sack_of_Berwick_(1296)",
       "tags": [
-        "War",
-        "Battle",
-        "Conquest",
-        "Edward I 👑",
+        "Scottish",
         "England",
         "English",
-        "Massacre",
         "Scotland",
-        "Scottish"
+        "War",
+        "Conquest",
+        "Battle",
+        "Edward I 👑",
+        "Massacre"
       ],
       "type": "military"
     },
@@ -417,15 +418,15 @@
       "name_ru": "Уильям Уоллес убивает английского шерифа в Ланарке",
       "source": "https://en.wikipedia.org/wiki/William_Wallace",
       "tags": [
-        "War",
-        "Legend",
+        "Scottish",
         "England",
         "English",
-        "Independence",
+        "War",
         "Rebellion",
-        "Scottish",
-        "William Wallace 👤",
-        "Resistance"
+        "Legend",
+        "Independence",
+        "Resistance",
+        "William Wallace 👤"
       ],
       "type": "military"
     },
@@ -440,12 +441,12 @@
       "name_ru": "Эндрю Морэй поднимает север Шотландии",
       "source": "https://en.wikipedia.org/wiki/Andrew_Moray",
       "tags": [
-        "War",
+        "Scottish",
         "England",
         "English",
-        "Independence",
+        "War",
         "Rebellion",
-        "Scottish",
+        "Independence",
         "Resistance"
       ],
       "type": "military"
@@ -461,13 +462,13 @@
       "name_ru": "Уоллес назначен Хранителем Шотландии",
       "source": "https://en.wikipedia.org/wiki/William_Wallace",
       "tags": [
+        "Scottish",
+        "England",
+        "Scotland",
         "War",
         "Administration",
-        "England",
         "Independence",
         "Regency",
-        "Scotland",
-        "Scottish",
         "William Wallace 👤"
       ],
       "type": "political"
@@ -483,13 +484,13 @@
       "name_ru": "Шотландцы совершают набеги на север Англии",
       "source": "https://en.wikipedia.org/wiki/William_Wallace",
       "tags": [
-        "War",
+        "Scottish",
         "England",
         "English",
-        "Independence",
-        "Invasion",
         "Scotland",
-        "Scottish",
+        "War",
+        "Invasion",
+        "Independence",
         "William Wallace 👤"
       ],
       "type": "military"
@@ -505,14 +506,14 @@
       "name_ru": "Англия разбивает мятежников Уоллеса при Фолкирке",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Falkirk_(1298)",
       "tags": [
-        "War",
-        "Battle",
-        "Edward I 👑",
+        "Scottish",
         "England",
         "English",
-        "Rebellion",
         "Scotland",
-        "Scottish",
+        "War",
+        "Rebellion",
+        "Battle",
+        "Edward I 👑",
         "William Wallace 👤"
       ],
       "type": "military"
@@ -522,17 +523,17 @@
       "description": "After Falkirk, Wallace spent six years as both a fugitive and a secret diplomat. He traveled to France, probably between 1299 and 1301, seeking Philip IV's support on the basis of the Auld Alliance; Philip IV issued a letter of support addressed to the Pope. Wallace appears in scattered sources in Rome and at the French court, representing Scotland before the highest authorities in Europe with evident skill and persistence.\n\nHe continued to operate secretly in Scotland, his movements largely unknown, and surfaced in English intelligence reports as a man to be captured at any cost. Edward I placed a huge bounty on his head and repeatedly ordered Scottish collaborators to capture him. Wallace's stubborn refusal to submit to the interests of the English crown made him a living symbol of resistance.",
       "description_ru": "После Фолкирка Уоллес провёл шесть лет одновременно беглецом и тайным дипломатом. Он отправился во Францию — вероятно, в 1299–1301 годах — в поисках поддержки Филиппа IV на основании Старого союза; Филипп IV выпустил письмо в его поддержку, адресованное папе. Уоллес появляется в разрозненных источниках в Риме и при французском дворе, представляя дело Шотландии перед высшими авторитетами Европы с очевидным мастерством и настойчивостью.\n\nОн продолжал тайно действовать на территории Шотландии, его перемещения в основном неизвестны, — и всплывал в английских разведывательных донесениях как человек, которого надлежит поймать любой ценой. Эдуард I назначил огромное вознаграждение за его голову и раз за разом отдавал шотландским коллаборационистам приказ схватить его. Упрямство Уоллеса в нежелании подчиняться интересам английской короны сделали его живым символом сопротивления.",
       "era": "AD",
-      "latitude": 48.8534,
-      "longitude": 2.3488,
+      "latitude": 48.85606816,
+      "longitude": 2.34575272,
       "name": "William Wallace flees to France",
       "name_ru": "Уильям Уоллес бежит во Францию",
       "source": "https://en.wikipedia.org/wiki/William_Wallace",
       "tags": [
-        "Diplomacy",
-        "France",
         "Scottish",
-        "William Wallace 👤",
-        "Resistance"
+        "France",
+        "Diplomacy",
+        "Resistance",
+        "William Wallace 👤"
       ],
       "type": "political"
     },
@@ -547,16 +548,16 @@
       "name_ru": "Казнь Уильяма Уоллеса в Лондоне",
       "source": "https://en.wikipedia.org/wiki/William_Wallace",
       "tags": [
+        "Scottish",
+        "England",
+        "English",
+        "Scotland",
+        "Martyr",
         "War",
         "Legend",
         "Cruelty",
-        "England",
-        "English",
         "Execution",
         "Independence",
-        "Martyr",
-        "Scotland",
-        "Scottish",
         "William Wallace 👤"
       ],
       "type": "historic"
@@ -572,14 +573,14 @@
       "name_ru": "Роберт Брюс коронован королём Шотландии",
       "source": "https://en.wikipedia.org/wiki/Robert_the_Bruce",
       "tags": [
+        "Scottish",
+        "English",
+        "Scotland",
         "War",
         "Dynasty",
         "King",
-        "English",
         "Independence",
-        "Robert the Bruce 👑",
-        "Scotland",
-        "Scottish"
+        "Robert the Bruce 👑"
       ],
       "type": "political"
     },
@@ -594,15 +595,15 @@
       "name_ru": "Чёрный Дуглас — самый грозный рыцарь Шотландии",
       "source": "https://en.wikipedia.org/wiki/James_Douglas,_Lord_of_Douglas",
       "tags": [
+        "Scottish",
+        "England",
+        "English",
+        "Scotland",
         "War",
         "Battle",
         "King",
         "Legend",
-        "Chivalry",
-        "England",
-        "English",
-        "Scotland",
-        "Scottish"
+        "Chivalry"
       ],
       "type": "military"
     },
@@ -617,13 +618,13 @@
       "name_ru": "Арбротская декларация",
       "source": "https://en.wikipedia.org/wiki/Declaration_of_Arbroath",
       "tags": [
+        "Scottish",
+        "Scotland",
         "Holidays",
         "Independence",
         "Law",
-        "Scotland",
-        "Scottish",
-        "Text",
-        "Resistance"
+        "Resistance",
+        "Text"
       ],
       "type": "political"
     },
@@ -638,13 +639,13 @@
       "name_ru": "Англия признаёт независимость Шотландии",
       "source": "https://en.wikipedia.org/wiki/Treaty_of_Edinburgh%E2%80%93Northampton",
       "tags": [
-        "War",
+        "Scottish",
         "England",
         "English",
+        "Scotland",
+        "War",
         "Independence",
         "Peace",
-        "Scotland",
-        "Scottish",
         "Treaty"
       ],
       "type": "political"
@@ -656,17 +657,18 @@
       "era": "AD",
       "latitude": 55.96281014,
       "longitude": -4.65292454,
-      "name": "King of Scotland, Robert the Bruce, dies",
-      "name_ru": "Король Шотландии, Роберт Брюс, умирает",
+      "name": "The death of Robert the Bruce, King of Scotland",
+      "name_ru": "Смерть Роберта Брюса, короля Шотландии",
       "source": "https://en.wikipedia.org/wiki/Robert_the_Bruce",
       "tags": [
-        "King",
-        "Chivalry",
-        "Death",
-        "Robert the Bruce 👑",
-        "Scotland",
         "Scottish",
-        "Crusade"
+        "Scotland",
+        "Crusade",
+        "King",
+        "Death",
+        "Chivalry",
+        "Disease",
+        "Robert the Bruce 👑"
       ],
       "type": "historic"
     },
@@ -681,17 +683,17 @@
       "name_ru": "Сражение у Тебы в Андалусии",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Teba",
       "tags": [
+        "Scottish",
+        "Castile",
+        "Emirate of Granada",
+        "Christian",
+        "Islamic",
+        "Crusade",
         "War",
         "Battle",
         "Legend",
-        "Castile",
         "Chivalry",
-        "Christian",
-        "Emirate of Granada",
-        "Islamic",
-        "Reconquista",
-        "Scottish",
-        "Crusade"
+        "Reconquista"
       ],
       "type": "military"
     },
@@ -706,13 +708,13 @@
       "name_ru": "Джон Барбур завершает национальный эпос Шотландии",
       "source": "https://en.wikipedia.org/wiki/John_Barbour_(poet)",
       "tags": [
+        "Scottish",
         "Culture",
-        "Independence",
         "Literature",
         "Poetry",
-        "Scottish",
-        "Text",
-        "Resistance"
+        "Independence",
+        "Resistance",
+        "Text"
       ],
       "type": "cultural"
     },
@@ -727,13 +729,13 @@
       "name_ru": "Битва при Оттерберне",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Otterburn",
       "tags": [
-        "War",
-        "Battle",
-        "Culture",
+        "Scottish",
         "England",
         "English",
         "Scotland",
-        "Scottish"
+        "War",
+        "Culture",
+        "Battle"
       ],
       "type": "military"
     },
@@ -748,13 +750,13 @@
       "name_ru": "Яков I — поэт-король Шотландии",
       "source": "https://en.wikipedia.org/wiki/James_I_of_Scotland",
       "tags": [
-        "Dynasty",
-        "King",
+        "Scottish",
+        "Scotland",
         "Culture",
         "Literature",
         "Poetry",
-        "Scotland",
-        "Scottish",
+        "Dynasty",
+        "King",
         "Text"
       ],
       "type": "cultural"

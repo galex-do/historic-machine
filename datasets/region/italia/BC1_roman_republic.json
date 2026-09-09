@@ -13,8 +13,8 @@
       "source": "https://en.wikipedia.org/wiki/Giants_of_Mont%27e_Prama",
       "tags": [
         "Sardinian",
-        "Art",
         "Culture",
+        "Art",
         "Sculpture"
       ],
       "type": "cultural"
@@ -33,10 +33,10 @@
         "Phoenician",
         "Sardinian",
         "Sidon",
+        "Tyre",
         "Culture",
-        "Text",
         "Trade",
-        "Tyre"
+        "Text"
       ],
       "type": "historic"
     },
@@ -52,10 +52,10 @@
       "source": "https://en.wikipedia.org/wiki/Sulci",
       "tags": [
         "Phoenician",
+        "Trade",
         "Colonization",
         "Seamen",
-        "Settlement",
-        "Trade"
+        "Settlement"
       ],
       "type": "historic"
     },
@@ -72,10 +72,10 @@
       "tags": [
         "Roman",
         "Italian",
-        "City",
-        "Legend",
         "Capital",
+        "City",
         "Foundation",
+        "Legend",
         "Troy"
       ],
       "type": "historic"
@@ -110,9 +110,9 @@
       "source": "https://en.wikipedia.org/wiki/Titus_Tatius",
       "tags": [
         "Roman",
+        "Alliance",
         "King",
-        "Legend",
-        "Alliance"
+        "Legend"
       ],
       "type": "political"
     },
@@ -128,10 +128,10 @@
       "source": "https://en.wikipedia.org/wiki/Romulus",
       "tags": [
         "Roman",
+        "Religious",
         "Legend",
-        "Death",
         "Mystery",
-        "Religious"
+        "Death"
       ],
       "type": "historic"
     },
@@ -200,9 +200,9 @@
         "Roman",
         "Latin League",
         "War",
+        "Culture",
         "Battle",
-        "Legend",
-        "Culture"
+        "Legend"
       ],
       "type": "military"
     },
@@ -257,11 +257,11 @@
       "tags": [
         "Roman",
         "Latin League",
-        "War",
         "City",
-        "Legend",
+        "War",
         "Conquest",
-        "Destruction"
+        "Destruction",
+        "Legend"
       ],
       "type": "military"
     },
@@ -301,6 +301,27 @@
     },
     {
       "date": "01.01.0600",
+      "description": "King Tarquinius Priscus establishes the Circus Maximus in the valley between the Palatine and Aventine hills. Initially a simple racetrack with wooden seating, it becomes Rome's principal venue for chariot racing and public spectacles, eventually holding 150,000 spectators.",
+      "description_ru": "Царь Тарквиний Приск основывает Большой цирк в долине между Палатинским и Авентинским холмами. Изначально простая беговая дорожка с деревянными трибунами, он становится главным римским местом для гонок на колесницах и публичных зрелищ, вмещая до 150 000 зрителей.",
+      "era": "BC",
+      "latitude": 41.88663989,
+      "longitude": 12.48478174,
+      "name": "Establishment of Circus Maximus in Rome",
+      "name_ru": "Основание Большого цирка Рима",
+      "source": "https://en.wikipedia.org/wiki/Circus_Maximus",
+      "tags": [
+        "Roman",
+        "Etruscan",
+        "Culture",
+        "Entertainment",
+        "Sport",
+        "Architecture",
+        "Building 🏠"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0600",
       "description": "The Cloaca Maxima, one of the world's earliest sewage systems, is constructed to drain the marshy Forum valley. Originally an open channel, it is later covered over. Parts of this Etruscan-era drain remain in use today.",
       "description_ru": "Большая Клоака (Cloaca Maxima), одна из древнейших канализационных систем мира, построена для осушения болотистой долины Форума. Изначально открытый канал, позже он был перекрыт. Части этой этрусской эпохи дренажной системы используются и сегодня.",
       "era": "BC",
@@ -312,31 +333,10 @@
       "tags": [
         "Roman",
         "Architecture",
+        "Water",
         "Engineering ⚙️",
         "Infrastructure",
-        "Innovation",
-        "Water"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0600",
-      "description": "King Tarquinius Priscus establishes the Circus Maximus in the valley between the Palatine and Aventine hills. Initially a simple racetrack with wooden seating, it becomes Rome's principal venue for chariot racing and public spectacles, eventually holding 150,000 spectators.",
-      "description_ru": "Царь Тарквиний Приск основывает Большой цирк в долине между Палатинским и Авентинским холмами. Изначально простая беговая дорожка с деревянными трибунами, он становится главным римским местом для гонок на колесницах и публичных зрелищ, вмещая до 150 000 зрителей.",
-      "era": "BC",
-      "latitude": 41.88663989,
-      "longitude": 12.48478174,
-      "name": "Establishment of Circus Maximus",
-      "name_ru": "Основание Большого цирка",
-      "source": "https://en.wikipedia.org/wiki/Circus_Maximus",
-      "tags": [
-        "Roman",
-        "Etruscan",
-        "Building 🏠",
-        "Architecture",
-        "Culture",
-        "Entertainment",
-        "Sport"
+        "Innovation"
       ],
       "type": "historic"
     },
@@ -354,8 +354,8 @@
         "Roman",
         "Etruscan",
         "King",
-        "Administration",
-        "Political"
+        "Political",
+        "Administration"
       ],
       "type": "political"
     },
@@ -373,11 +373,11 @@
         "Greek",
         "Phocaean",
         "City",
+        "Trade",
         "Agriculture",
         "Colonization",
         "Migration",
-        "Piracy",
-        "Trade"
+        "Piracy"
       ],
       "type": "historic"
     },
@@ -451,12 +451,12 @@
       "source": "https://en.wikipedia.org/wiki/Aes_rude",
       "tags": [
         "Roman",
-        "Bronze",
-        "Copper",
         "Culture",
-        "Currency",
+        "Copper",
+        "Trade",
+        "Currency 🪙",
         "Economic",
-        "Trade"
+        "Bronze"
       ],
       "type": "historic"
     },
@@ -472,9 +472,9 @@
       "source": "https://en.wikipedia.org/wiki/Roman_Republic",
       "tags": [
         "Roman",
+        "Foundation",
         "Culture",
         "Exile",
-        "Foundation",
         "Republic",
         "Revolution"
       ],
@@ -492,11 +492,11 @@
       "source": "https://en.wikipedia.org/wiki/Temple_of_Jupiter_Optimus_Maximus",
       "tags": [
         "Roman",
-        "Building 🏠",
-        "Architecture",
-        "Holy Site",
-        "Pagan",
         "Religious",
+        "Pagan",
+        "Holy Site",
+        "Architecture",
+        "Building 🏠",
         "Temple"
       ],
       "type": "religious"
@@ -516,8 +516,8 @@
         "Etruscan",
         "War",
         "Battle",
-        "Legend",
         "Defense",
+        "Legend",
         "Savior"
       ],
       "type": "military"
@@ -573,10 +573,10 @@
       "source": "https://en.wikipedia.org/wiki/Temple_of_Saturn",
       "tags": [
         "Roman",
-        "Building 🏠",
-        "Architecture",
-        "Pagan",
         "Religious",
+        "Pagan",
+        "Architecture",
+        "Building 🏠",
         "Temple",
         "Treasure"
       ],
@@ -613,10 +613,10 @@
       "source": "https://en.wikipedia.org/wiki/First_secessio_plebis",
       "tags": [
         "Roman",
-        "Reform",
-        "Democracy",
         "Human Rights",
         "Political",
+        "Reform",
+        "Democracy",
         "Republic"
       ],
       "type": "political"
@@ -634,8 +634,8 @@
       "tags": [
         "Roman",
         "Latin League",
-        "Diplomacy",
         "Alliance",
+        "Diplomacy",
         "Treaty"
       ],
       "type": "political"
@@ -652,9 +652,9 @@
       "source": "https://en.wikipedia.org/wiki/Gaius_Marcius_Coriolanus",
       "tags": [
         "Roman",
-        "Legend",
         "Culture",
         "Drama",
+        "Legend",
         "Family",
         "Siege"
       ],
@@ -707,12 +707,12 @@
       "source": "https://en.wikipedia.org/wiki/Temple_of_Castor_and_Pollux",
       "tags": [
         "Roman",
-        "Building 🏠",
-        "Legend",
-        "Architecture",
-        "Pagan",
         "Religious",
-        "Temple"
+        "Pagan",
+        "Architecture",
+        "Building 🏠",
+        "Temple",
+        "Legend"
       ],
       "type": "religious"
     },
@@ -784,8 +784,8 @@
       "source": "https://en.wikipedia.org/wiki/Verginia",
       "tags": [
         "Roman",
-        "Legend",
         "Drama",
+        "Legend",
         "Justice",
         "Law"
       ],
@@ -803,8 +803,8 @@
       "source": "https://en.wikipedia.org/wiki/Lex_Canuleia",
       "tags": [
         "Roman",
-        "Reform",
         "Human Rights",
+        "Reform",
         "Law",
         "Republic"
       ],
@@ -976,10 +976,10 @@
         "Gallic",
         "War",
         "Battle",
-        "Legend",
         "Destruction",
         "Invasion",
-        "Pillage"
+        "Pillage",
+        "Legend"
       ],
       "type": "military"
     },
@@ -1013,8 +1013,8 @@
       "source": "https://en.wikipedia.org/wiki/Servian_Wall",
       "tags": [
         "Roman",
-        "Architecture",
         "Defense",
+        "Architecture",
         "Fortification"
       ],
       "type": "historic"
@@ -1031,10 +1031,10 @@
       "source": "https://en.wikipedia.org/wiki/Lex_Licinia_Sextia",
       "tags": [
         "Roman",
+        "Political",
         "Reform",
         "Equality",
         "Law",
-        "Political",
         "Republic"
       ],
       "type": "political"
@@ -1051,8 +1051,8 @@
       "source": "https://en.wikipedia.org/wiki/Lucius_Sextius_Lateranus",
       "tags": [
         "Roman",
-        "Reform",
         "Political",
+        "Reform",
         "Republic"
       ],
       "type": "political"
@@ -1124,8 +1124,8 @@
       "tags": [
         "Roman",
         "Italian",
-        "First",
         "War",
+        "First",
         "Trick"
       ],
       "type": "military"
@@ -1202,9 +1202,9 @@
         "Roman",
         "Latin League",
         "War",
+        "Political",
         "Administration",
         "Annexation",
-        "Political",
         "Republic"
       ],
       "type": "political"
@@ -1241,8 +1241,8 @@
       "tags": [
         "Roman",
         "Human Rights",
-        "Law",
         "Political",
+        "Law",
         "Slavery"
       ],
       "type": "political"
@@ -1260,12 +1260,12 @@
       "tags": [
         "Roman",
         "Italian",
-        "Second",
         "War",
         "Battle",
         "Ambush",
         "Failure",
-        "Peace"
+        "Peace",
+        "Second"
       ],
       "type": "military"
     },
@@ -1301,10 +1301,10 @@
         "Roman",
         "Italian",
         "Fabii",
-        "Second",
         "War",
         "Fortification",
-        "Infrastructure"
+        "Infrastructure",
+        "Second"
       ],
       "type": "historic"
     },
@@ -1320,8 +1320,8 @@
       "source": "https://en.wikipedia.org/wiki/Pilum",
       "tags": [
         "Roman",
-        "War",
         "Innovation",
+        "Military",
         "Weapon"
       ],
       "type": "historic"
@@ -1339,9 +1339,9 @@
       "tags": [
         "Roman",
         "Italian",
-        "Second",
         "War",
-        "Battle"
+        "Battle",
+        "Second"
       ],
       "type": "military"
     },
@@ -1376,10 +1376,31 @@
       "tags": [
         "Roman",
         "Italian",
-        "Second",
         "War",
         "Fortification",
-        "Infrastructure"
+        "Infrastructure",
+        "Second"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0312",
+      "description": "Censor Appius Claudius Caecus begins construction of the Via Appia, Rome's first major paved road, connecting Rome to Capua (later extended to Brindisi). 'Regina viarum' (Queen of Roads), it enables rapid military movement and trade, becoming the model for all Roman roads.",
+      "description_ru": "Цензор Аппий Клавдий Цек начинает строительство Аппиевой дороги, первой крупной мощёной дороги Рима, соединяющей Рим с Капуей (позже продлённой до Бриндизи). 'Regina viarum' (Царица дорог) обеспечивает быстрое передвижение войск и торговлю, став образцом для всех римских дорог.",
+      "era": "BC",
+      "latitude": 41.84854525,
+      "longitude": 12.52462864,
+      "name": "Construction of Via Appia",
+      "name_ru": "Строительство Аппиевой дороги",
+      "source": "https://en.wikipedia.org/wiki/Appian_Way",
+      "tags": [
+        "Roman",
+        "Road",
+        "Economic",
+        "Engineering ⚙️",
+        "Communication",
+        "Infrastructure",
+        "Innovation"
       ],
       "type": "historic"
     },
@@ -1396,31 +1417,10 @@
       "tags": [
         "Roman",
         "Architecture",
+        "Water",
         "Engineering ⚙️",
         "Infrastructure",
-        "Innovation",
-        "Water"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0312",
-      "description": "Censor Appius Claudius Caecus begins construction of the Via Appia, Rome's first major paved road, connecting Rome to Capua (later extended to Brindisi). 'Regina viarum' (Queen of Roads), it enables rapid military movement and trade, becoming the model for all Roman roads.",
-      "description_ru": "Цензор Аппий Клавдий Цек начинает строительство Аппиевой дороги, первой крупной мощёной дороги Рима, соединяющей Рим с Капуей (позже продлённой до Бриндизи). 'Regina viarum' (Царица дорог) обеспечивает быстрое передвижение войск и торговлю, став образцом для всех римских дорог.",
-      "era": "BC",
-      "latitude": 41.84854525,
-      "longitude": 12.52462864,
-      "name": "Construction of Via Appia",
-      "name_ru": "Строительство Аппиевой дороги",
-      "source": "https://en.wikipedia.org/wiki/Appian_Way",
-      "tags": [
-        "Roman",
-        "Communication",
-        "Economic",
-        "Engineering ⚙️",
-        "Infrastructure",
-        "Innovation",
-        "Road"
+        "Innovation"
       ],
       "type": "historic"
     },
@@ -1455,9 +1455,9 @@
       "tags": [
         "Roman",
         "Italian",
-        "Second",
         "War",
         "Peace",
+        "Second",
         "Treaty"
       ],
       "type": "political"
@@ -1475,8 +1475,8 @@
       "tags": [
         "Roman",
         "Human Rights",
-        "Law",
         "Political",
+        "Law",
         "Public"
       ],
       "type": "political"
@@ -1493,12 +1493,12 @@
       "source": "https://en.wikipedia.org/wiki/Roman_roads",
       "tags": [
         "Roman",
+        "Road",
+        "Standardization",
         "Engineering ⚙️",
         "Infrastructure",
         "Innovation",
-        "Road",
-        "Science",
-        "Standardization"
+        "Science"
       ],
       "type": "historic"
     },
@@ -1517,8 +1517,8 @@
         "Etruscan",
         "Gallic",
         "Italian",
-        "Third",
-        "War"
+        "War",
+        "Third"
       ],
       "type": "military"
     },
@@ -1556,9 +1556,9 @@
       "tags": [
         "Roman",
         "Italian",
-        "Third",
         "War",
-        "Battle"
+        "Battle",
+        "Third"
       ],
       "type": "military"
     },
@@ -1576,8 +1576,8 @@
         "Roman",
         "Italian",
         "War",
-        "Annexation",
-        "Conquest"
+        "Conquest",
+        "Annexation"
       ],
       "type": "military"
     },
@@ -1593,9 +1593,9 @@
       "source": "https://en.wikipedia.org/wiki/Lex_Hortensia",
       "tags": [
         "Roman",
+        "Political",
         "Equality",
         "Law",
-        "Political",
         "Republic"
       ],
       "type": "political"
@@ -1673,9 +1673,9 @@
       "tags": [
         "Roman",
         "War",
-        "Discipline",
-        "Engineering ⚙️",
         "Fortification",
+        "Engineering ⚙️",
+        "Discipline",
         "Innovation",
         "Tactics"
       ],
@@ -1695,10 +1695,10 @@
         "Greek",
         "Roman",
         "Crisis",
-        "Currency",
-        "Economic",
         "Silver",
-        "Trade"
+        "Trade",
+        "Currency 🪙",
+        "Economic"
       ],
       "type": "historic"
     },
@@ -1759,6 +1759,7 @@
         "Roman",
         "Architecture",
         "Engineering ⚙️",
+        "Construction",
         "Innovation",
         "Science"
       ],
@@ -1797,9 +1798,9 @@
       "tags": [
         "Roman",
         "Architecture",
+        "Water",
         "Engineering ⚙️",
-        "Infrastructure",
-        "Water"
+        "Infrastructure"
       ],
       "type": "historic"
     },
@@ -1854,10 +1855,10 @@
       "source": "https://en.wikipedia.org/wiki/Lucius_Cornelius_Scipio_(consul_259_BC)",
       "tags": [
         "Roman",
-        "First",
         "Punic",
         "War",
-        "Conquest"
+        "Conquest",
+        "First"
       ],
       "type": "military"
     },
@@ -1911,12 +1912,12 @@
       "source": "https://en.wikipedia.org/wiki/Via_Aurelia",
       "tags": [
         "Roman",
-        "Communication",
-        "Engineering ⚙️",
-        "Expansion",
-        "Infrastructure",
         "Road",
-        "Trade"
+        "Trade",
+        "Engineering ⚙️",
+        "Communication",
+        "Expansion",
+        "Infrastructure"
       ],
       "type": "historic"
     },
@@ -1952,11 +1953,11 @@
       "tags": [
         "Greek",
         "Roman",
-        "Cultural Continuity",
         "Culture",
         "Drama",
         "Literature",
-        "Theater"
+        "Theater",
+        "Cultural Continuity"
       ],
       "type": "historic"
     },
@@ -1973,10 +1974,10 @@
       "tags": [
         "Roman",
         "Carthage",
-        "Second",
         "Punic",
         "War",
         "Annexation",
+        "Second",
         "Treaty"
       ],
       "type": "political"
@@ -2103,12 +2104,12 @@
       "source": "https://en.wikipedia.org/wiki/Via_Flaminia",
       "tags": [
         "Roman",
-        "Communication",
+        "Road",
         "Economic",
         "Engineering ⚙️",
+        "Communication",
         "Expansion",
-        "Infrastructure",
-        "Road"
+        "Infrastructure"
       ],
       "type": "historic"
     },
@@ -2144,11 +2145,11 @@
         "Roman",
         "Carthage",
         "Sardinian",
-        "Second",
         "Punic",
         "War",
+        "Rebellion",
         "Battle",
-        "Rebellion"
+        "Second"
       ],
       "type": "military"
     },
@@ -2164,11 +2165,11 @@
       "source": "https://en.wikipedia.org/wiki/Denarius",
       "tags": [
         "Roman",
-        "Reform",
-        "Currency",
-        "Innovation",
         "Silver",
-        "Trade"
+        "Trade",
+        "Currency 🪙",
+        "Reform",
+        "Innovation"
       ],
       "type": "historic"
     },
@@ -2185,15 +2186,52 @@
       "tags": [
         "Roman",
         "Pergamon",
+        "Religious",
+        "Pagan",
+        "Mother of God",
         "Punic",
         "War",
         "Culture",
-        "Mother of God",
-        "Pagan",
-        "Religious",
         "Troy"
       ],
       "type": "religious"
+    },
+    {
+      "date": "01.01.0200",
+      "description": "After encountering Celtiberian swords during the Punic Wars, Rome adopts the gladius Hispaniensis as standard legionary weapon. This short, double-edged sword (45-65 cm blade) excels at both thrusting and cutting in tight formations. Combined with the large scutum shield, it makes the Roman legionary the deadliest close-combat soldier in the ancient world.",
+      "description_ru": "Встретив кельтиберийские мечи во время Пунических войн, Рим принимает gladius Hispaniensis как стандартное оружие легионера. Этот короткий обоюдоострый меч (клинок 45-65 см) превосходен для уколов и рубки в тесном строю. В сочетании с большим щитом скутум он делает римского легионера смертоноснейшим воином ближнего боя античного мира.",
+      "era": "BC",
+      "latitude": 41.89931442,
+      "longitude": 12.47670293,
+      "name": "Adoption of the Gladius Hispaniensis",
+      "name_ru": "Испанский гладиус в Риме",
+      "source": "https://en.wikipedia.org/wiki/Gladius",
+      "tags": [
+        "Roman",
+        "Spanish",
+        "War",
+        "Innovation",
+        "Weapon"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.01.0200",
+      "description": "Quintus Fabius Pictor writes the first history of Rome in Greek, aimed at explaining Rome to the Greek world after the Second Punic War. His lost work established the traditional founding date of 753 BC and shaped all later Roman historiography.",
+      "description_ru": "Квинт Фабий Пиктор пишет первую историю Рима на греческом языке, с целью объяснить Рим греческому миру после Второй Пунической войны. Его утраченный труд установил традиционную дату основания 753 г. до н.э. и сформировал всю последующую римскую историографию.",
+      "era": "BC",
+      "latitude": 41.89318911,
+      "longitude": 12.48506606,
+      "name": "First Roman History Written",
+      "name_ru": "Первая римская история",
+      "source": "https://en.wikipedia.org/wiki/Quintus_Fabius_Pictor",
+      "tags": [
+        "Greek",
+        "Roman",
+        "Culture",
+        "History"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0200",
@@ -2226,49 +2264,12 @@
       "tags": [
         "Roman",
         "Architecture",
-        "Construction",
         "Engineering ⚙️",
+        "Construction",
         "Innovation",
         "Science"
       ],
       "type": "scientific"
-    },
-    {
-      "date": "01.01.0200",
-      "description": "After encountering Celtiberian swords during the Punic Wars, Rome adopts the gladius Hispaniensis as standard legionary weapon. This short, double-edged sword (45-65 cm blade) excels at both thrusting and cutting in tight formations. Combined with the large scutum shield, it makes the Roman legionary the deadliest close-combat soldier in the ancient world.",
-      "description_ru": "Встретив кельтиберийские мечи во время Пунических войн, Рим принимает gladius Hispaniensis как стандартное оружие легионера. Этот короткий обоюдоострый меч (клинок 45-65 см) превосходен для уколов и рубки в тесном строю. В сочетании с большим щитом скутум он делает римского легионера смертоноснейшим воином ближнего боя античного мира.",
-      "era": "BC",
-      "latitude": 41.89931442,
-      "longitude": 12.47670293,
-      "name": "Adoption of the Gladius Hispaniensis",
-      "name_ru": "Испанский гладиус в Риме",
-      "source": "https://en.wikipedia.org/wiki/Gladius",
-      "tags": [
-        "Roman",
-        "War",
-        "Innovation",
-        "Spanish",
-        "Weapon"
-      ],
-      "type": "historic"
-    },
-    {
-      "date": "01.01.0200",
-      "description": "Quintus Fabius Pictor writes the first history of Rome in Greek, aimed at explaining Rome to the Greek world after the Second Punic War. His lost work established the traditional founding date of 753 BC and shaped all later Roman historiography.",
-      "description_ru": "Квинт Фабий Пиктор пишет первую историю Рима на греческом языке, с целью объяснить Рим греческому миру после Второй Пунической войны. Его утраченный труд установил традиционную дату основания 753 г. до н.э. и сформировал всю последующую римскую историографию.",
-      "era": "BC",
-      "latitude": 41.89318911,
-      "longitude": 12.48506606,
-      "name": "First Roman History Written",
-      "name_ru": "Первая римская история",
-      "source": "https://en.wikipedia.org/wiki/Quintus_Fabius_Pictor",
-      "tags": [
-        "Greek",
-        "Roman",
-        "Culture",
-        "History"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.0197",
@@ -2305,8 +2306,8 @@
         "Roman",
         "Macedonian",
         "Diplomacy",
-        "Freedom",
-        "Political"
+        "Political",
+        "Freedom"
       ],
       "type": "political"
     },
@@ -2322,12 +2323,12 @@
       "source": "https://en.wikipedia.org/wiki/Via_Aemilia",
       "tags": [
         "Roman",
+        "Road",
+        "Engineering ⚙️",
         "Colonization",
         "Communication",
-        "Engineering ⚙️",
         "Expansion",
-        "Infrastructure",
-        "Road"
+        "Infrastructure"
       ],
       "type": "historic"
     },
@@ -2343,13 +2344,13 @@
       "source": "https://en.wikipedia.org/wiki/Senatus_consultum_de_Bacchanalibus",
       "tags": [
         "Roman",
-        "Culture",
-        "Pagan",
-        "Persecution",
-        "Political",
-        "Purge",
+        "Senate",
         "Religious",
-        "Senate"
+        "Pagan",
+        "Culture",
+        "Political",
+        "Persecution",
+        "Purge"
       ],
       "type": "political"
     },
@@ -2365,8 +2366,8 @@
       "source": "https://en.wikipedia.org/wiki/Cato_the_Elder",
       "tags": [
         "Roman",
-        "Duty",
         "Political",
+        "Duty",
         "Populism"
       ],
       "type": "political"
@@ -2402,8 +2403,8 @@
       "source": "https://en.wikipedia.org/wiki/Basilica_Aemilia",
       "tags": [
         "Roman",
-        "Administration",
         "Architecture",
+        "Administration",
         "Commerce"
       ],
       "type": "historic"
@@ -2420,8 +2421,8 @@
       "tags": [
         "Roman",
         "City",
-        "Expansion",
-        "Fortification"
+        "Fortification",
+        "Expansion"
       ],
       "type": "historic"
     },
@@ -2455,10 +2456,10 @@
       "source": "https://en.wikipedia.org/wiki/Roman_province",
       "tags": [
         "Roman",
-        "Iberia",
-        "Law",
-        "Political",
         "Senate",
+        "Iberia",
+        "Political",
+        "Law",
         "Trial"
       ],
       "type": "political"
@@ -2478,8 +2479,8 @@
         "Roman",
         "Macedonian",
         "War",
-        "Battle",
-        "Conquest"
+        "Conquest",
+        "Battle"
       ],
       "type": "military"
     },
@@ -2496,10 +2497,10 @@
         "Greek",
         "Roman",
         "Athens",
-        "Maritime",
+        "Trade",
         "Route",
-        "Taxes",
-        "Trade"
+        "Maritime",
+        "Taxes"
       ],
       "type": "political"
     },
@@ -2515,10 +2516,10 @@
       "source": "https://en.wikipedia.org/wiki/Tributum",
       "tags": [
         "Roman",
-        "Administration",
+        "Wealth",
         "Political",
-        "Taxes",
-        "Wealth"
+        "Administration",
+        "Taxes"
       ],
       "type": "political"
     },
@@ -2534,10 +2535,10 @@
       "tags": [
         "Greek",
         "Roman",
+        "Trade",
         "Decline",
         "Maritime",
-        "Piracy",
-        "Trade"
+        "Piracy"
       ],
       "type": "political"
     },
@@ -2572,10 +2573,10 @@
       "source": "https://en.wikipedia.org/wiki/C%C3%B3rdoba,_Spain",
       "tags": [
         "Roman",
+        "Iberia",
         "City",
         "Colonization",
-        "Expansion",
-        "Iberia"
+        "Expansion"
       ],
       "type": "historic"
     },
@@ -2630,11 +2631,11 @@
       "source": "https://en.wikipedia.org/wiki/Via_Postumia",
       "tags": [
         "Roman",
-        "Communication",
+        "Road",
         "Engineering ⚙️",
+        "Communication",
         "Expansion",
-        "Infrastructure",
-        "Road"
+        "Infrastructure"
       ],
       "type": "historic"
     },
@@ -2653,8 +2654,8 @@
         "Roman",
         "Corinthian",
         "Sparta",
-        "War",
         "City",
+        "War",
         "Conquest",
         "Destruction"
       ],
@@ -2673,9 +2674,9 @@
       "tags": [
         "Roman",
         "Architecture",
+        "Water",
         "Engineering ⚙️",
-        "Infrastructure",
-        "Water"
+        "Infrastructure"
       ],
       "type": "historic"
     },
@@ -2691,10 +2692,10 @@
       "source": "https://en.wikipedia.org/wiki/Lex_Gabinia_tabellaria",
       "tags": [
         "Roman",
+        "Political",
         "Reform",
         "Elections",
-        "Law",
-        "Political"
+        "Law"
       ],
       "type": "political"
     },
@@ -2710,9 +2711,9 @@
       "source": "https://en.wikipedia.org/wiki/First_Servile_War",
       "tags": [
         "Roman",
+        "Sicily",
         "Civil War",
         "Rebellion",
-        "Sicily",
         "Slavery"
       ],
       "type": "military"
@@ -2730,8 +2731,8 @@
       "tags": [
         "Roman",
         "Crisis",
-        "Murder",
         "Political",
+        "Murder",
         "Populism"
       ],
       "type": "political"
@@ -2748,9 +2749,9 @@
       "source": "https://en.wikipedia.org/wiki/Aqua_Tepula",
       "tags": [
         "Roman",
+        "Water",
         "Engineering ⚙️",
-        "Infrastructure",
-        "Water"
+        "Infrastructure"
       ],
       "type": "historic"
     },
@@ -2766,13 +2767,13 @@
       "source": "https://en.wikipedia.org/wiki/Gaius_Gracchus",
       "tags": [
         "Roman",
+        "Senate",
         "Crisis",
+        "Political",
         "Democracy",
         "Murder",
         "Outrage",
-        "Political",
-        "Populism",
-        "Senate"
+        "Populism"
       ],
       "type": "political"
     },
@@ -2805,11 +2806,11 @@
       "source": "https://en.wikipedia.org/wiki/Senatus_consultum_ultimum",
       "tags": [
         "Roman",
+        "Senate",
         "Crisis",
-        "Law",
-        "Martial Law",
         "Political",
-        "Senate"
+        "Law",
+        "Martial Law"
       ],
       "type": "political"
     },
@@ -2826,9 +2827,9 @@
       "tags": [
         "Greek",
         "Roman",
-        "Architecture",
-        "Pagan",
         "Religious",
+        "Pagan",
+        "Architecture",
         "Temple",
         "Trade"
       ],
@@ -2848,8 +2849,8 @@
         "Roman",
         "Gallic",
         "City",
-        "Colonization",
         "Conquest",
+        "Colonization",
         "Expansion"
       ],
       "type": "historic"
@@ -2866,8 +2867,8 @@
       "source": "https://en.wikipedia.org/wiki/Jugurthine_War",
       "tags": [
         "Roman",
-        "War",
         "African",
+        "War",
         "Bribe",
         "Numidians"
       ],
@@ -2886,11 +2887,11 @@
       "tags": [
         "Roman",
         "War",
+        "Political",
         "Army",
         "Innovation",
         "Law",
-        "Marius 👤",
-        "Political"
+        "Marius 👤"
       ],
       "type": "political"
     },
@@ -2907,9 +2908,9 @@
       "tags": [
         "Roman",
         "Gallic",
+        "Germanic",
         "Battle",
         "Failure",
-        "Germanic",
         "Marius 👤",
         "Teutons"
       ],
@@ -2927,32 +2928,12 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Aquae_Sextiae",
       "tags": [
         "Roman",
-        "Battle",
         "Germanic",
+        "Battle",
         "Marius 👤",
         "Teutons"
       ],
       "type": "military"
-    },
-    {
-      "date": "01.01.0100",
-      "description": "Tribune Saturninus proposes radical land reforms for Marius's veterans, using violence to pass legislation. When Saturninus murders a political rival, Marius reluctantly enforces the senatus consultum ultimum against his own ally, who is killed by a mob.",
-      "description_ru": "Политический кризис усиливается. Трибун Сатурнин предлагает радикальные реформы для ветеранов Мария, применяя насилие для принятия законов. Когда люди Сатурнина убивают на выборах кандидата от оппозиции, Марий неохотно исполняет чрезвычайный указ Сената, арестовывая Сатурнина. Марию не удается скрыть своего союзника от толпы, и Сатурнина забивают камнями",
-      "era": "BC",
-      "latitude": 41.89318911,
-      "longitude": 12.48506606,
-      "name": "Violence of Saturninus",
-      "name_ru": "Насилие трибуна Сатурнина",
-      "source": "https://en.wikipedia.org/wiki/Lucius_Appuleius_Saturninus",
-      "tags": [
-        "Roman",
-        "Crisis",
-        "Marius 👤",
-        "Murder",
-        "Outrage",
-        "Political"
-      ],
-      "type": "political"
     },
     {
       "date": "01.01.0100",
@@ -2977,6 +2958,26 @@
     },
     {
       "date": "01.01.0100",
+      "description": "Tribune Saturninus proposes radical land reforms for Marius's veterans, using violence to pass legislation. When Saturninus murders a political rival, Marius reluctantly enforces the senatus consultum ultimum against his own ally, who is killed by a mob.",
+      "description_ru": "Политический кризис усиливается. Трибун Сатурнин предлагает радикальные реформы для ветеранов Мария, применяя насилие для принятия законов. Когда люди Сатурнина убивают на выборах кандидата от оппозиции, Марий неохотно исполняет чрезвычайный указ Сената, арестовывая Сатурнина. Марию не удается скрыть своего союзника от толпы, и Сатурнина забивают камнями",
+      "era": "BC",
+      "latitude": 41.89318911,
+      "longitude": 12.48506606,
+      "name": "Violence of Saturninus",
+      "name_ru": "Насилие трибуна Сатурнина",
+      "source": "https://en.wikipedia.org/wiki/Lucius_Appuleius_Saturninus",
+      "tags": [
+        "Roman",
+        "Crisis",
+        "Political",
+        "Marius 👤",
+        "Murder",
+        "Outrage"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0100",
       "description": "The Temple of Portunus is built at the Forum Boarium near the Tiber, dedicated to Portunus, god of keys, doors, and harbors. Its elegant Ionic columns and exceptional preservation make it one of the best-surviving examples of Republican temple architecture. Later converted to a church, which saved it from destruction.",
       "description_ru": "Храм Портуна построен на Бычьем форуме близ Тибра, посвящённый Портуну, богу ключей, дверей и гаваней. Его элегантные ионические колонны и исключительная сохранность делают его одним из лучших примеров республиканской храмовой архитектуры. Позже обращён в церковь, что спасло его от разрушения.",
       "era": "BC",
@@ -2987,9 +2988,9 @@
       "source": "https://en.wikipedia.org/wiki/Temple_of_Portunus",
       "tags": [
         "Roman",
-        "Architecture",
-        "Pagan",
         "Religious",
+        "Pagan",
+        "Architecture",
         "Temple",
         "Trade"
       ],
@@ -3008,6 +3009,7 @@
       "tags": [
         "Roman",
         "Colonization",
+        "Expansion",
         "Marius 👤",
         "Settlement"
       ],
@@ -3020,18 +3022,18 @@
       "era": "BC",
       "latitude": 42.12275273,
       "longitude": 13.83807421,
-      "name": "Social War Begins",
-      "name_ru": "Начало Союзнической войны",
+      "name": "Social War Begins in Italy",
+      "name_ru": "Начало Союзнической войны в Италии",
       "source": "https://en.wikipedia.org/wiki/Social_War_(91%E2%80%9387_BC)",
       "tags": [
         "Roman",
         "Italian",
         "Civil War",
         "Crisis",
+        "Political",
         "Italy",
         "Murder",
-        "Outrage",
-        "Political"
+        "Outrage"
       ],
       "type": "military"
     },
@@ -3050,9 +3052,9 @@
         "Italian",
         "Civil War",
         "Crisis",
+        "Political",
         "Italy",
-        "Law",
-        "Political"
+        "Law"
       ],
       "type": "political"
     },
@@ -3071,8 +3073,8 @@
         "Mithridatic",
         "Civil War",
         "Crisis",
-        "Marius 👤",
         "Political",
+        "Marius 👤",
         "Sulla 👤"
       ],
       "type": "political"
@@ -3091,10 +3093,10 @@
         "Roman",
         "Civil War",
         "Crisis",
+        "Political",
         "Death",
         "Marius 👤",
         "Massacre",
-        "Political",
         "Purge",
         "Sulla 👤"
       ],
@@ -3114,9 +3116,9 @@
         "Greek",
         "Roman",
         "Athens",
+        "Blasphemy",
         "Mithridatic",
         "War",
-        "Blasphemy",
         "Destruction",
         "Massacre",
         "Siege",
@@ -3138,9 +3140,9 @@
         "Roman",
         "Civil War",
         "Battle",
+        "Political",
         "Julius Caesar 👤",
         "Massacre",
-        "Political",
         "Purge",
         "Sulla 👤"
       ],
@@ -3158,11 +3160,11 @@
       "source": "https://en.wikipedia.org/wiki/Sulla",
       "tags": [
         "Roman",
+        "Senate",
+        "Political",
         "Reform",
         "Law",
         "Oligarchy",
-        "Political",
-        "Senate",
         "Sulla 👤"
       ],
       "type": "political"
@@ -3174,12 +3176,12 @@
       "era": "BC",
       "latitude": 41.89318911,
       "longitude": 12.48506606,
-      "name": "Sulla's loyal soldiers",
-      "name_ru": "Передел собственности Суллы",
+      "name": "Sulla hands over the lands of Rome to his legionaries",
+      "name_ru": "Сулла передает земли Рима своим легионерам",
       "tags": [
         "Roman",
-        "Reform",
         "Political",
+        "Reform",
         "Redistribution",
         "Sulla 👤"
       ],
@@ -3214,9 +3216,9 @@
       "source": "https://en.wikipedia.org/wiki/Tabularium",
       "tags": [
         "Roman",
+        "Architecture",
         "Building 🏠",
         "Administration",
-        "Architecture",
         "Archives"
       ],
       "type": "historic"
@@ -3233,10 +3235,10 @@
       "tags": [
         "Greek",
         "Roman",
-        "Archimedes 👤",
-        "Cicero 👤",
         "Sicily",
-        "Tomb"
+        "Tomb",
+        "Archimedes 👤",
+        "Cicero 👤"
       ],
       "type": "historic"
     },
@@ -3252,10 +3254,10 @@
       "source": "https://en.wikipedia.org/wiki/Third_Servile_War",
       "tags": [
         "Roman",
+        "Thrace",
         "Civil War",
         "Rebellion",
-        "Slavery",
-        "Thrace"
+        "Slavery"
       ],
       "type": "military"
     },
@@ -3290,11 +3292,11 @@
       "source": "https://en.wikipedia.org/wiki/Pompey",
       "tags": [
         "Roman",
+        "Political",
         "Reform",
         "Crassus 👤",
         "Democracy",
         "Law",
-        "Political",
         "Pompey the Great 👤"
       ],
       "type": "political"
@@ -3331,9 +3333,9 @@
         "Roman",
         "Mithridatic",
         "War",
+        "Political",
         "Cicero 👤",
         "Law",
-        "Political",
         "Pompey the Great 👤"
       ],
       "type": "political"
@@ -3350,11 +3352,11 @@
       "source": "https://en.wikipedia.org/wiki/Catilinarian_conspiracy",
       "tags": [
         "Roman",
+        "Crisis",
+        "Political",
         "Cicero 👤",
         "Conspiracy",
-        "Crisis",
-        "Execution",
-        "Political"
+        "Execution"
       ],
       "type": "political"
     },
@@ -3393,8 +3395,8 @@
         "Roman",
         "Claudii",
         "Blasphemy",
-        "Cicero 👤",
         "Political",
+        "Cicero 👤",
         "Trial"
       ],
       "type": "political"
@@ -3448,10 +3450,10 @@
       "source": "https://en.wikipedia.org/wiki/First_Triumvirate",
       "tags": [
         "Roman",
-        "Crassus 👤",
         "Crisis",
-        "Julius Caesar 👤",
         "Political",
+        "Crassus 👤",
+        "Julius Caesar 👤",
         "Pompey the Great 👤"
       ],
       "type": "political"
@@ -3468,10 +3470,10 @@
       "tags": [
         "Roman",
         "Claudii",
-        "Julius Caesar 👤",
         "Political",
-        "Trick",
-        "Revenge"
+        "Julius Caesar 👤",
+        "Revenge",
+        "Trick"
       ],
       "type": "political"
     },
@@ -3487,10 +3489,10 @@
       "tags": [
         "Roman",
         "Crisis",
+        "Political",
         "Julius Caesar 👤",
         "Law",
-        "Outrage",
-        "Political"
+        "Outrage"
       ],
       "type": "political"
     },
@@ -3507,9 +3509,9 @@
       "tags": [
         "Roman",
         "Claudii",
-        "Cicero 👤",
         "Crisis",
         "Political",
+        "Cicero 👤",
         "Revenge"
       ],
       "type": "political"
@@ -3526,12 +3528,53 @@
       "tags": [
         "Roman",
         "Claudii",
-        "Cicero 👤",
         "Crisis",
         "Political",
+        "Cicero 👤",
         "Pompey the Great 👤"
       ],
       "type": "political"
+    },
+    {
+      "date": "25.05.0057",
+      "description": "The Suessiones tribe joined the anti-Roman alliance. After a bloody battle on the Aisne River, Roman troops approached the main Celtic fortification (oppidum) called Noviodunum. The siege and demonstration of Roman engineering techniques impressed the defenders so much that the Suessione leader, Galba, chose to surrender the city without a full assault, handing over hostages to Caesar.\n\nLater, around 20 BCE, during the reign of the first Roman emperor, Octavian Augustus, the Romans founded a new city, Augusta Suessionum, slightly away from the old fortification, which became modern-day Soissons.",
+      "description_ru": "Племя суэссионов примкнуло к антиримскому союзу. После кровопролитного сражения на реке Эна римские войска подошли к главному кельтскому укреплению (оппидуму) под названием Новиодунум. Осада и демонстрация римской инженерной техники произвели на защитников такое впечатление, что вождь сувессионов Гальба предпочёл сдать город без генерального штурма, выдав Цезарю заложников.\n\nПозже, около 20 года до н. э., в эпоху правления первого римского императора Октавиана Августа, римляне основали чуть в стороне от старого укрепления новый город — Аугуста Суэссионум (лат. Augusta Suessionum), который и стал современным Суассоном.",
+      "era": "BC",
+      "latitude": 49.37776963,
+      "longitude": 3.32311749,
+      "name": "Rome captures the Gallic Noviodunum",
+      "name_ru": "Рим захватывает галльский Новиодунум",
+      "source": "https://en.wikipedia.org/wiki/Augusta_Suessionum",
+      "tags": [
+        "Roman",
+        "Gallic",
+        "War",
+        "Conquest",
+        "Julius Caesar 👤",
+        "Siege"
+      ],
+      "type": "military"
+    },
+    {
+      "date": "01.03.0057",
+      "description": "Unlike many Gallic peoples, the local Remi tribe decided not to wage war against Rome. They voluntarily recognized Caesar's authority and became his staunch allies. Thanks to their loyalty, Durocortorum received the status of an allied city and received special favor from Rome. It quickly became the prosperous capital of the province of Belgica.\n\nThe Romans completely rebuilt the Gallic settlement according to their classical, regular layout, constructing a large complex of administrative, religious, and recreational buildings.",
+      "description_ru": "В отличие от многих галльских народов, местное племя ремов решило не воевать с Римом. Они добровольно признали власть Цезаря и стали его верными союзниками. Благодаря своей лояльности, Дурокорторум получил статус союзного города и особую благосклонность Рима. Он быстро превратился в процветающую столицу провинции Белгика.\n\nРимляне полностью перестроили галльское поселение по своей классической регулярной планировке, возведя масштабный комплекс административных, религиозных и развлекательных сооружений.",
+      "era": "BC",
+      "latitude": 49.25323034,
+      "longitude": 4.03062522,
+      "name": "Durocortorum becomes an ally of Rome",
+      "name_ru": "Дурокорторум становится союзником Рима",
+      "source": "https://en.wikipedia.org/wiki/Durocortorum",
+      "tags": [
+        "Roman",
+        "Gallic",
+        "City",
+        "Architecture",
+        "Colonization",
+        "Expansion",
+        "Julius Caesar 👤"
+      ],
+      "type": "historic"
     },
     {
       "date": "01.01.0056",
@@ -3545,9 +3588,9 @@
       "source": "https://en.wikipedia.org/wiki/Luca_Conference",
       "tags": [
         "Roman",
+        "Political",
         "Crassus 👤",
         "Julius Caesar 👤",
-        "Political",
         "Pompey the Great 👤"
       ],
       "type": "political"
@@ -3564,10 +3607,10 @@
       "source": "https://en.wikipedia.org/wiki/Caesar%27s_invasions_of_Britain",
       "tags": [
         "Roman",
-        "Celtic",
         "Britain",
-        "Exploration",
+        "Celtic",
         "Invasion",
+        "Exploration",
         "Julius Caesar 👤"
       ],
       "type": "military"
@@ -3585,9 +3628,9 @@
       "tags": [
         "Roman",
         "Gallic",
+        "Germanic",
         "War",
         "Engineering ⚙️",
-        "Germanic",
         "Innovation",
         "Julius Caesar 👤"
       ],
@@ -3604,12 +3647,12 @@
       "name_ru": "Лукреций Кар пишет \"О природе вещей\"",
       "tags": [
         "Roman",
-        "Cosmology",
         "Culture",
         "Literature",
-        "Philosophy",
-        "Physics",
         "Poetry",
+        "Philosophy",
+        "Cosmology",
+        "Physics",
         "Text"
       ],
       "type": "cultural"
@@ -3627,8 +3670,8 @@
       "tags": [
         "Roman",
         "Crisis",
-        "Death",
         "Political",
+        "Death",
         "Pompey the Great 👤"
       ],
       "type": "historic"
@@ -3644,10 +3687,10 @@
       "name_ru": "Второй поход Цезаря в Британию",
       "tags": [
         "Roman",
-        "Celtic",
         "Britain",
-        "Exploration",
+        "Celtic",
         "Invasion",
+        "Exploration",
         "Julius Caesar 👤"
       ],
       "type": "military"
@@ -3666,11 +3709,11 @@
         "Roman",
         "Gallic",
         "War",
-        "Engineering ⚙️",
+        "Rebellion",
         "Fortification",
+        "Engineering ⚙️",
         "Julius Caesar 👤",
         "Mark Antony 👤",
-        "Rebellion",
         "Siege"
       ],
       "type": "military"
@@ -3686,11 +3729,11 @@
       "name_ru": "Закон Помпея о магистратах",
       "tags": [
         "Roman",
+        "Senate",
         "Crisis",
-        "Law",
         "Political",
-        "Pompey the Great 👤",
-        "Senate"
+        "Law",
+        "Pompey the Great 👤"
       ],
       "type": "political"
     },
@@ -3705,11 +3748,11 @@
       "name_ru": "Сторонники Клодия сжигают Курию Гостилию",
       "tags": [
         "Roman",
+        "Senate",
         "Claudii",
         "Crisis",
         "Destruction",
-        "Political",
-        "Senate"
+        "Political"
       ],
       "type": "political"
     },
@@ -3727,9 +3770,9 @@
         "Roman",
         "Claudii",
         "Crisis",
+        "Political",
         "Death",
         "Murder",
-        "Political",
         "Pompey the Great 👤"
       ],
       "type": "political"
@@ -3761,10 +3804,10 @@
       "name_ru": "Марк Антоний - народный трибун и авгур",
       "tags": [
         "Roman",
-        "Bribe",
-        "Mark Antony 👤",
+        "Senate",
         "Political",
-        "Senate"
+        "Bribe",
+        "Mark Antony 👤"
       ],
       "type": "political"
     },
@@ -3800,8 +3843,8 @@
         "Roman",
         "Civil War",
         "Crisis",
-        "Julius Caesar 👤",
-        "Political"
+        "Political",
+        "Julius Caesar 👤"
       ],
       "type": "political"
     },
@@ -3818,9 +3861,9 @@
         "Roman",
         "Civil War",
         "Crisis",
+        "Political",
         "Julius Caesar 👤",
-        "Mark Antony 👤",
-        "Political"
+        "Mark Antony 👤"
       ],
       "type": "military"
     },
@@ -3835,13 +3878,14 @@
       "name_ru": "Цезарь переходит Рубикон",
       "source": "https://en.wikipedia.org/wiki/Crossing_the_Rubicon",
       "tags": [
+        "Milestone ⭐️",
         "Roman",
         "Civil War",
         "Crisis",
+        "Political",
+        "Adventure",
         "Julius Caesar 👤",
-        "Mark Antony 👤",
-        "Milestone ⭐️",
-        "Political"
+        "Mark Antony 👤"
       ],
       "type": "political"
     },
@@ -3856,11 +3900,11 @@
       "name_ru": "Ультиматум Сената Цезарю",
       "tags": [
         "Roman",
+        "Senate",
         "Crisis",
-        "Mark Antony 👤",
-        "Martial Law",
         "Political",
-        "Senate"
+        "Mark Antony 👤",
+        "Martial Law"
       ],
       "type": "political"
     },
@@ -3896,12 +3940,12 @@
       "name_ru": "Возвращение Цезаря в Рим",
       "tags": [
         "Roman",
-        "Administration",
         "Crisis",
+        "Rebellion",
+        "Administration",
         "Julius Caesar 👤",
         "Mark Antony 👤",
-        "Psychology",
-        "Rebellion"
+        "Psychology"
       ],
       "type": "historic"
     },
@@ -3935,8 +3979,8 @@
       "name_ru": "Цезарь восстанавливает порядок в Сирии",
       "tags": [
         "Roman",
-        "Judaic",
         "Jerusalem",
+        "Judaic",
         "Civil War",
         "Administration",
         "Julius Caesar 👤"
@@ -3975,12 +4019,12 @@
       "tags": [
         "Roman",
         "Civil War",
-        "Battle",
         "Crisis",
+        "Battle",
+        "Stoicism",
         "Death",
         "Julius Caesar 👤",
-        "Republic",
-        "Stoicism"
+        "Republic"
       ],
       "type": "military"
     },
@@ -3997,8 +4041,8 @@
       "tags": [
         "Roman",
         "Civil War",
-        "Battle",
         "Crisis",
+        "Battle",
         "Julius Caesar 👤"
       ],
       "type": "military"
@@ -4036,8 +4080,8 @@
         "Roman",
         "Civil War",
         "Crisis",
-        "Mark Antony 👤",
         "Political",
+        "Mark Antony 👤",
         "Siege"
       ],
       "type": "military"
@@ -4054,9 +4098,9 @@
       "tags": [
         "Roman",
         "Crisis",
+        "Political",
         "Mark Antony 👤",
-        "Octavian 👑",
-        "Political"
+        "Octavian 👑"
       ],
       "type": "political"
     },
@@ -4072,8 +4116,8 @@
       "tags": [
         "Roman",
         "Crisis",
-        "Octavian 👑",
-        "Political"
+        "Political",
+        "Octavian 👑"
       ],
       "type": "historic"
     },
@@ -4089,10 +4133,10 @@
       "tags": [
         "Roman",
         "Crisis",
-        "Funeral",
+        "Burial",
+        "Political",
         "Julius Caesar 👤",
-        "Mark Antony 👤",
-        "Political"
+        "Mark Antony 👤"
       ],
       "type": "historic"
     },
@@ -4109,8 +4153,8 @@
       "tags": [
         "Roman",
         "Crisis",
-        "Julius Caesar 👤",
-        "Political"
+        "Political",
+        "Julius Caesar 👤"
       ],
       "type": "political"
     },
@@ -4125,11 +4169,11 @@
       "name_ru": "Казнь Цицерона",
       "tags": [
         "Roman",
-        "Cicero 👤",
         "Crisis",
+        "Political",
         "Death",
-        "Execution",
-        "Political"
+        "Cicero 👤",
+        "Execution"
       ],
       "type": "historic"
     },
@@ -4145,8 +4189,8 @@
       "tags": [
         "Roman",
         "Crisis",
-        "Law",
-        "Political"
+        "Political",
+        "Law"
       ],
       "type": "political"
     },
@@ -4163,9 +4207,9 @@
       "tags": [
         "Roman",
         "Crisis",
+        "Political",
         "Mark Antony 👤",
         "Octavian 👑",
-        "Political",
         "Purge"
       ],
       "type": "political"
@@ -4183,9 +4227,9 @@
         "Roman",
         "Civil War",
         "Crisis",
+        "Political",
         "Law",
-        "Octavian 👑",
-        "Political"
+        "Octavian 👑"
       ],
       "type": "political"
     },
@@ -4201,8 +4245,8 @@
       "tags": [
         "Roman",
         "Crisis",
-        "Octavian 👑",
-        "Political"
+        "Political",
+        "Octavian 👑"
       ],
       "type": "political"
     },
@@ -4218,8 +4262,8 @@
       "tags": [
         "Roman",
         "Crisis",
-        "Octavian 👑",
-        "Political"
+        "Political",
+        "Octavian 👑"
       ],
       "type": "historic"
     },
@@ -4235,11 +4279,11 @@
       "tags": [
         "Roman",
         "Civil War",
-        "Battle",
         "Crisis",
+        "Battle",
+        "Political",
         "Mark Antony 👤",
-        "Octavian 👑",
-        "Political"
+        "Octavian 👑"
       ],
       "type": "military"
     },
@@ -4254,10 +4298,10 @@
       "name_ru": "Октавиана делают сенатором",
       "tags": [
         "Roman",
-        "Cicero 👤",
         "Crisis",
-        "Octavian 👑",
-        "Political"
+        "Political",
+        "Cicero 👤",
+        "Octavian 👑"
       ],
       "type": "historic"
     },
@@ -4314,9 +4358,9 @@
         "Roman",
         "Diplomacy",
         "Marriage",
+        "Political",
         "Mark Antony 👤",
-        "Octavian 👑",
-        "Political"
+        "Octavian 👑"
       ],
       "type": "political"
     },
@@ -4333,8 +4377,8 @@
         "Roman",
         "Claudii",
         "Marriage",
-        "Octavian 👑",
-        "Political"
+        "Political",
+        "Octavian 👑"
       ],
       "type": "historic"
     },
@@ -4350,9 +4394,9 @@
       "tags": [
         "Roman",
         "Crisis",
+        "Political",
         "Mark Antony 👤",
-        "Octavian 👑",
-        "Political"
+        "Octavian 👑"
       ],
       "type": "political"
     },
@@ -4388,8 +4432,8 @@
         "Roman",
         "Egypt",
         "Diplomacy",
-        "Mark Antony 👤",
-        "Political"
+        "Political",
+        "Mark Antony 👤"
       ],
       "type": "political"
     },
@@ -4421,13 +4465,13 @@
       "name_ru": "Октавиан Август и Римская империя",
       "source": "https://en.wikipedia.org/wiki/Augustus",
       "tags": [
+        "Milestone ⭐️",
         "Roman",
-        "Emperor",
         "Empire",
         "Foundation",
-        "Milestone ⭐️",
-        "Octavian 👑",
-        "Political"
+        "Emperor",
+        "Political",
+        "Octavian 👑"
       ],
       "type": "political"
     },
@@ -4442,8 +4486,8 @@
       "name_ru": "Великое отречение Октавиана",
       "tags": [
         "Roman",
-        "Octavian 👑",
         "Political",
+        "Octavian 👑",
         "Trick"
       ],
       "type": "political"

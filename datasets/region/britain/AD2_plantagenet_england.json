@@ -12,13 +12,13 @@
       "name_ru": "Коронация Вильгельма Завоевателя в Вестминстере",
       "source": "https://en.wikipedia.org/wiki/William_the_Conqueror",
       "tags": [
-        "King",
-        "Conquest",
+        "Norman",
         "England",
         "English",
-        "Foundation",
-        "Norman",
         "Normandy",
+        "Foundation",
+        "Conquest",
+        "King",
         "William the Conqueror 👤"
       ],
       "type": "political"
@@ -34,15 +34,15 @@
       "name_ru": "Вильгельм разоряет север Британии",
       "source": "https://en.wikipedia.org/wiki/Harrying_of_the_North",
       "tags": [
-        "War",
         "Britain",
-        "Conquest",
-        "Crisis",
-        "Destruction",
-        "English",
-        "Massacre",
         "Norman",
+        "English",
         "Normandy",
+        "Crisis",
+        "War",
+        "Conquest",
+        "Destruction",
+        "Massacre",
         "William the Conqueror 👤"
       ],
       "type": "military"
@@ -58,13 +58,13 @@
       "name_ru": "Вильгельм строит Белую башню Тауэра",
       "source": "https://en.wikipedia.org/wiki/White_Tower,_London",
       "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Castle",
-        "English",
-        "Fortification",
         "Norman",
+        "English",
         "Normandy",
+        "Architecture",
+        "Building 🏠",
+        "Castle",
+        "Fortification",
         "William the Conqueror 👤"
       ],
       "type": "historic"
@@ -80,12 +80,12 @@
       "name_ru": "Книга Страшного суда — величайшая перепись средневековой Англии",
       "source": "https://en.wikipedia.org/wiki/Domesday_Book",
       "tags": [
-        "Administration",
         "Britain",
-        "English",
-        "Law",
         "Norman",
+        "English",
         "Normandy",
+        "Administration",
+        "Law",
         "Text",
         "William the Conqueror 👤"
       ],
@@ -102,12 +102,13 @@
       "name_ru": "Вильгельм Завоеватель идет войной на Францию",
       "source": "https://en.wikipedia.org/wiki/William_the_Conqueror",
       "tags": [
+        "Norman",
+        "France",
+        "French",
+        "England",
+        "Normandy",
         "War",
         "Destruction",
-        "England",
-        "France",
-        "Norman",
-        "Normandy",
         "William the Conqueror 👤"
       ],
       "type": "military"
@@ -123,14 +124,15 @@
       "name_ru": "Вильгельм Завоеватель умирает в Руане",
       "source": "https://penelope.uchicago.edu/encyclopaedia_romana/britannia/anglo-saxon/hastings/williamdeath.html",
       "tags": [
-        "King",
-        "Burial",
-        "Crisis",
-        "Death",
-        "England",
         "Norman",
+        "French",
+        "England",
         "Normandy",
+        "Crisis",
+        "Burial",
+        "King",
         "Political",
+        "Death",
         "William the Conqueror 👤"
       ],
       "type": "historic"
@@ -146,12 +148,12 @@
       "name_ru": "Генрих I и хартия вольностей",
       "source": "https://en.wikipedia.org/wiki/Henry_I_of_England",
       "tags": [
-        "Reform",
-        "King",
+        "Norman",
         "England",
         "English",
-        "Law",
-        "Norman"
+        "King",
+        "Reform",
+        "Law"
       ],
       "type": "political"
     },
@@ -166,15 +168,15 @@
       "name_ru": "Анархия — гражданская война в Англии ",
       "source": "https://en.wikipedia.org/wiki/The_Anarchy",
       "tags": [
-        "Civil War",
-        "Dynasty",
-        "King",
-        "Crisis",
+        "Norman",
         "England",
         "English",
-        "Norman",
         "Normandy",
-        "Rebellion"
+        "Civil War",
+        "Crisis",
+        "Rebellion",
+        "Dynasty",
+        "King"
       ],
       "type": "political"
     },
@@ -189,15 +191,15 @@
       "name_ru": "Генрих II Плантагенет — король Англии",
       "source": "https://en.wikipedia.org/wiki/Henry_II_of_England",
       "tags": [
-        "Reform",
+        "Norman",
+        "French",
+        "England",
+        "Anjou",
+        "Plantagenet",
         "Dynasty",
         "King",
-        "Anjou",
-        "England",
-        "French",
-        "Law",
-        "Norman",
-        "Plantagenet"
+        "Reform",
+        "Law"
       ],
       "type": "political"
     },
@@ -212,17 +214,18 @@
       "name_ru": "Алиенора Аквитанская — королева двух королевств, мать королей",
       "source": "https://en.wikipedia.org/wiki/Eleanor_of_Aquitaine",
       "tags": [
-        "Dynasty",
-        "Aquitaine",
-        "Culture",
-        "Eleanor of Aquitaine",
-        "England",
-        "English",
         "France",
         "French",
+        "England",
+        "English",
+        "Aquitaine",
+        "Culture",
         "Literature",
         "Plantagenet",
-        "Queen"
+        "Dynasty",
+        "Queen",
+        "Eleanor of Aquitaine 👑",
+        "Influence"
       ],
       "type": "cultural"
     },
@@ -237,14 +240,14 @@
       "name_ru": "Убийство Томаса Бекета в Кентерберийском соборе",
       "source": "https://en.wikipedia.org/wiki/Thomas_Becket",
       "tags": [
-        "Christian",
-        "Crisis",
-        "Death",
         "English",
-        "Holy Site",
-        "Murder",
         "Religious",
-        "Saint"
+        "Christian",
+        "Saint",
+        "Crisis",
+        "Holy Site",
+        "Death",
+        "Murder"
       ],
       "type": "religious"
     },
@@ -259,12 +262,12 @@
       "name_ru": "Ричард I «Львиное Сердце» — король Англии",
       "source": "https://en.wikipedia.org/wiki/Richard_I_of_England",
       "tags": [
+        "English",
+        "Crisis",
+        "Anjou",
+        "Plantagenet",
         "Dynasty",
         "King",
-        "Anjou",
-        "Crisis",
-        "English",
-        "Plantagenet",
         "Richard the Lionheart 👑"
       ],
       "type": "political"
@@ -280,11 +283,11 @@
       "name_ru": "Великая хартия вольностей",
       "source": "https://en.wikipedia.org/wiki/Magna_Carta",
       "tags": [
-        "Reform",
+        "English",
         "King",
+        "Reform",
         "Code",
         "Constitution",
-        "English",
         "Justice",
         "Law"
       ],
@@ -301,13 +304,13 @@
       "name_ru": "Возведение Солсберийского собора",
       "source": "https://en.wikipedia.org/wiki/Salisbury_Cathedral",
       "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Art",
-        "Christian",
         "English",
-        "Holy Site",
         "Religious",
+        "Christian",
+        "Holy Site",
+        "Art",
+        "Architecture",
+        "Building 🏠",
         "Temple"
       ],
       "type": "cultural"
@@ -324,11 +327,11 @@
       "source": "https://en.wikipedia.org/wiki/University_of_Oxford",
       "tags": [
         "Britain",
-        "Culture",
-        "Education",
         "English",
         "Foundation",
+        "Culture",
         "Philosophy",
+        "Education",
         "Science"
       ],
       "type": "cultural"
@@ -344,13 +347,13 @@
       "name_ru": "Генрих III перестраивает Вестминстерское аббатство",
       "source": "https://en.wikipedia.org/wiki/Westminster_Abbey",
       "tags": [
-        "Building 🏠",
-        "Architecture",
-        "Art",
-        "Christian",
-        "English",
         "Gothic",
-        "Holy Site"
+        "English",
+        "Christian",
+        "Holy Site",
+        "Art",
+        "Architecture",
+        "Building 🏠"
       ],
       "type": "cultural"
     },
@@ -365,12 +368,12 @@
       "name_ru": "Бароны создают первый парламент Англии",
       "source": "https://en.wikipedia.org/wiki/Provisions_of_Oxford",
       "tags": [
+        "English",
+        "Parliament",
         "Reform",
         "Aristocracy",
-        "English",
         "Law",
-        "Oligarchy",
-        "Parliament"
+        "Oligarchy"
       ],
       "type": "political"
     },
@@ -385,14 +388,35 @@
       "name_ru": "Роджер Бэкон — первый учёный английского мира",
       "source": "https://en.wikipedia.org/wiki/Roger_Bacon",
       "tags": [
-        "Christian",
         "English",
+        "Christian",
+        "Catholic",
         "Franciscan",
-        "Innovation",
         "Philosophy",
+        "Innovation",
         "Physics",
         "Science",
         "Text"
+      ],
+      "type": "scientific"
+    },
+    {
+      "date": "01.01.1267",
+      "description": "In his Opus Majus (1267), Roger Bacon described a mixture of saltpeter, sulfur, and charcoal. Bacon learned about gunpowder from reports from missionaries visiting the Mongol Empire, where Chinese gunpowder technology was already in widespread use. To prevent the formula from being considered witchcraft, Bacon partially encrypted it with an anagram.",
+      "description_ru": "В своем труде Opus Majus (1267 год) Роджер Бэкон описал смесь селитры, серы и древесного угля. Бэкон узнал о порохе из докладов миссионеров, посещавших Монгольскую империю, где китайские пороховые технологии уже вовсю применялись. Чтобы формулу не сочли колдовством, Бэкон частично зашифровал её анаграммой.",
+      "era": "AD",
+      "latitude": 51.75202,
+      "longitude": -1.25439,
+      "name": "Roger Bacon describes the recipe for gunpowder",
+      "name_ru": "Роджер Бэкон описывает рецепт пороха",
+      "source": "https://en.wikipedia.org/wiki/Roger_Bacon",
+      "tags": [
+        "England",
+        "English",
+        "Chemistry",
+        "Gunpowder",
+        "Science",
+        "Weapon"
       ],
       "type": "scientific"
     },
@@ -407,16 +431,16 @@
       "name_ru": "Эдуард I — король Англии",
       "source": "https://en.wikipedia.org/wiki/Edward_I_of_England",
       "tags": [
-        "Reform",
-        "Dynasty",
-        "King",
-        "Anjou",
-        "Conquest",
-        "Edward I 👑",
         "England",
         "English",
-        "Law",
-        "Plantagenet"
+        "Conquest",
+        "Anjou",
+        "Plantagenet",
+        "Dynasty",
+        "King",
+        "Reform",
+        "Edward I 👑",
+        "Law"
       ],
       "type": "political"
     },
@@ -431,13 +455,13 @@
       "name_ru": "Уильям Уоллес побеждает Англию на Стерлингском мосту",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Stirling_Bridge",
       "tags": [
-        "War",
-        "Battle",
+        "Scottish",
         "England",
         "English",
-        "Rebellion",
         "Scotland",
-        "Scottish",
+        "War",
+        "Rebellion",
+        "Battle",
         "William Wallace 👤"
       ],
       "type": "military"
@@ -453,14 +477,15 @@
       "name_ru": "Шотландия завоёвывает независимость при Баннокберне",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Bannockburn",
       "tags": [
-        "War",
-        "Battle",
+        "Scottish",
         "England",
         "English",
-        "Independence",
-        "Robert the Bruce 👑",
         "Scotland",
-        "Scottish"
+        "War",
+        "Battle",
+        "Underdog",
+        "Independence",
+        "Robert the Bruce 👑"
       ],
       "type": "military"
     },
@@ -475,39 +500,71 @@
       "name_ru": "Парламент Англии низлагает короля Эдуарда II",
       "source": "https://en.wikipedia.org/wiki/Edward_II_of_England",
       "tags": [
-        "King",
-        "Crisis",
-        "Deposition",
         "English",
-        "Overthrow",
+        "Crisis",
+        "Plantagenet",
+        "King",
         "Parliament",
-        "Plantagenet"
+        "Deposition",
+        "Overthrow"
       ],
       "type": "political"
     },
     {
       "date": "26.08.1346",
-      "description": "The Hundred Years' War between England and France, which broke out formally in 1337 when Edward III claimed the French throne, produced its first decisive battle at Crécy on 26 August 1346. Edward III landed in Normandy, raided deep into France, and turned to fight on ground of his choosing. The French cavalry charged repeatedly against the English position.\n\nThe English longbowmen — armed with the six-foot yew bow capable of 10–12 aimed shots per minute and penetrating plate armour at close range — destroyed each charge. Estimates of French dead reach 1,500 knights and up to 10,000 men. The Genoese crossbowmen hired by France were outranged and outpaced. Crécy demonstrated that the mounted knight was no longer the supreme military instrument: disciplined infantry with missile weapons could defeat cavalry. It was one of the pivotal battles in the history of warfare, and its lessons were reinforced at Poitiers (1356) and Agincourt (1415).",
-      "description_ru": "Столетняя война между Англией и Францией, формально начавшаяся в 1337 году, когда Эдуард III претендовал на французский трон, дала свою первую решающую битву при Креси 26 августа 1346 года. Эдуард III высадился в Нормандии, совершил рейд вглубь Франции и развернулся на бой на выбранной им местности. Французская кавалерия неоднократно атаковала английские позиции.\n\nАнглийские лучники — вооружённые тисовыми луками длиной около 180 см, способные делать 10–12 прицельных выстрелов в минуту, — уничтожали каждую атаку. Потери французов достигают 1500 рыцарей и до 10 000 человек. Крест показал, что конный рыцарь более не является верховным военным инструментом. Уроки этой битвы были подтверждены при Пуатье (1356) и Азенкуре (1415).",
+      "description": "Edward III of England landed in Normandy, raided deep into France, and deployed for battle on the terrain of his choosing. The French army outnumbered the English several times over. Edward III deployed his infantry in a defensive formation on a hill, flanking archers with powerful longbows. The French heavy knightly cavalry launched a disorderly and blind attack up the hill, without waiting for the crossbowmen to arrive.\n\nThe English archers unleashed a dense rain of arrows that mowed down horses and heavily armored knights. The English primitive bombards roared like thunder and threw fire. The French army was completely disorganized and annihilated. The cream of French and allied chivalry perished, including the blind King John of Luxembourg. Crécy dispelled the myth of the invincibility of medieval cavalry; the Battle of Crécy marked the beginning of the decline of chivalry.",
+      "description_ru": "Эдуард III Английский высадился в Нормандии, совершил рейд вглубь Франции и развернулся на бой на выбранной им местности. Французское войско превосходило английское в несколько раз. Эдуард III выстроил пехоту в оборонительном порядке на холме, разместив по флангам лучников с мощными длинными луками. Французская тяжелая рыцарская конница пошла в беспорядочную и слепую атаку в гору, не дождавшись подхода арбалетчиков.\n\nАнглийские лучники создали плотный ливень стрел, который косил лошадей и рыцарей в тяжелых доспехах. Английские примитивные бомбарды гремели как гром и метали огонь. Французская армия была полностью дезорганизована и уничтожена. Погиб цвет французского и союзного им рыцарства, включая слепого короля Иоанна Люксембургского. Креси развеяла миф о непобедимости средневековой конницы; с битвы при Креси начался закат рыцарства.",
       "era": "AD",
       "latitude": 50.25874,
       "longitude": 1.88756,
-      "name": "Battle of Crécy — the English longbow changes warfare",
-      "name_ru": "Битва при Креси — английский длинный лук меняет военное дело",
+      "name": "Battle of Crécy",
+      "name_ru": "Битва при Креси",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Cr%C3%A9cy",
       "tags": [
+        "France",
+        "French",
+        "England",
+        "English",
+        "Hundred Years",
         "War",
         "Battle",
-        "British",
-        "English",
+        "Plantagenet",
+        "Artillery",
+        "Chivalry",
+        "Edward III 👑",
         "Innovation",
-        "Military",
-        "Plantagenet"
+        "Tactics",
+        "Weapon"
       ],
       "type": "military"
     },
     {
-      "date": "01.01.1348",
+      "date": "01.06.1348",
+      "description": "The Black Death reached the port of Weymouth in June 1348 and spread through England with devastating speed. By the end of 1349 it had reached Scotland. Contemporary estimates, borne out by modern demographic analysis, suggest that between a third and half of England's population died within two years — perhaps 2 to 2.5 million people out of a population of 4 to 6 million. Entire villages were abandoned and some were never resettled.\n\nThe chronicler Henry Knighton wrote that 'so great a plague has never been heard of from the beginning of the world to the present day.' The labour shortage that followed transformed the English economy: peasants who survived could demand higher wages and better conditions, rents fell, and the economic foundation of serfdom began to crack. The plague returned repeatedly throughout the fourteenth century. The catastrophe made the Peasants' Revolt of 1381 and the general dissolution of villeinage almost inevitable, remaking the social structure of England in ways the Black Death's victims could not have imagined.",
+      "description_ru": "Чёрная смерть достигла порта Уэймут в июне 1348 года и с опустошительной скоростью распространилась по всей Англии. По современным оценкам в течение двух лет погибло от трети до половины населения Англии. Целые деревни были заброшены.\n\nЗа последовавшей нехваткой рабочих рук последовала трансформация английской экономики: выжившие крестьяне могли требовать более высокой оплаты, арендная плата упала, и экономическая основа крепостничества начала рушиться. Чума возвращалась неоднократно. \n\nВ Англии чума привела к уникальному побочному эффекту — возрождению английского языка. Ранее вся элита, суды и школы Англии говорили на французском (наследие Вильгельма Завоевателя). Чума выкосила огромное количество франкоязычных учителей, священников и чиновников. На их место пришли выжившие англоязычные простолюдины, и постепенно французский оказался полностью вытеснен из обихода.",
+      "era": "AD",
+      "latitude": 50.61337,
+      "longitude": -2.45385,
+      "name": "Black Death reaches England",
+      "name_ru": "Чёрная смерть достигает Англии",
+      "source": "https://en.wikipedia.org/wiki/Black_Death_in_England",
+      "tags": [
+        "Britain",
+        "Scottish",
+        "England",
+        "English",
+        "Crisis",
+        "Language",
+        "Economic",
+        "Death",
+        "Black Death",
+        "Decline",
+        "Plague 🦠"
+      ],
+      "type": "historic"
+    },
+    {
+      "date": "01.09.1348",
       "description": "In 1348, Edward III founded the Order of the Garter — England's highest order of chivalry, limited to the sovereign and 25 knight companions. The legend of its founding involves a lady's garter falling at a royal ball; Edward picked it up and tied it to his own leg, saying 'Honi soit qui mal y pense' — 'Shame on him who thinks evil of it.' The motto stuck and became one of the most famous in English heraldry.\n\nThe Order was a deliberate act of cultural politics: it connected the English crown to the Arthurian legend of the Round Table, bound the greatest nobles of England and visiting foreign rulers to the king in an exclusive brotherhood, and elevated English knighthood to the same ceremonial dignity as French and Burgundian chivalry. Edward commissioned the rebuilding of St George's Chapel at Windsor Castle as the Order's home. The Order of the Garter remains the highest honour in the British honours system today, awarded by the sovereign personally.",
       "description_ru": "В 1348 году Эдуард III основал Орден Подвязки — высший орден рыцарства в Англии, ограниченный сувереном и 25 рыцарями-компаньонами. Легенда о его основании связана с подвязкой дамы, упавшей на королевском балу; Эдуард подобрал её и привязал к собственной ноге, произнеся «Honi soit qui mal y pense» — «Позор тому, кто дурно об этом подумает».\n\nОрден был намеренным политическим жестом в сфере культуры: он связывал английскую корону с артурианской легендой Круглого стола, объединял величайших вельмож Англии и иностранных правителей с королём в исключительном братстве. Эдуард поручил перестройку капеллы Святого Георгия в Виндзорском замке в качестве резиденции Ордена. Орден Подвязки и поныне является высшей честью в британской наградной системе.",
       "era": "AD",
@@ -517,38 +574,17 @@
       "name_ru": "Орден Подвязки и идеал английского рыцарства",
       "source": "https://en.wikipedia.org/wiki/Order_of_the_Garter",
       "tags": [
+        "English",
+        "Order",
+        "Hundred Years",
+        "Culture",
+        "Plantagenet",
         "King",
         "Legend",
         "Chivalry",
-        "Culture",
-        "English",
-        "Order",
-        "Plantagenet"
+        "Edward III 👑"
       ],
       "type": "cultural"
-    },
-    {
-      "date": "01.06.1348",
-      "description": "The Black Death reached the port of Weymouth in June 1348 and spread through England with devastating speed. By the end of 1349 it had reached Scotland. Contemporary estimates, borne out by modern demographic analysis, suggest that between a third and half of England's population died within two years — perhaps 2 to 2.5 million people out of a population of 4 to 6 million. Entire villages were abandoned and some were never resettled.\n\nThe chronicler Henry Knighton wrote that 'so great a plague has never been heard of from the beginning of the world to the present day.' The labour shortage that followed transformed the English economy: peasants who survived could demand higher wages and better conditions, rents fell, and the economic foundation of serfdom began to crack. The plague returned repeatedly throughout the fourteenth century. The catastrophe made the Peasants' Revolt of 1381 and the general dissolution of villeinage almost inevitable, remaking the social structure of England in ways the Black Death's victims could not have imagined.",
-      "description_ru": "Чёрная смерть достигла порта Уэймут в июне 1348 года и с опустошительной скоростью распространилась по всей Англии. К концу 1349 года она добралась до Шотландии. По современным оценкам, подтверждённым демографическим анализом, в течение двух лет погибло от трети до половины населения Англии — возможно, от 2 до 2,5 миллиона человек. Целые деревни были заброшены и некоторые так и не были вновь заселены.\n\nЗа последовавшей нехваткой рабочих рук последовала трансформация английской экономики: выжившие крестьяне могли требовать более высокой оплаты, арендная плата упала, и экономическая основа крепостничества начала рушиться. Чума возвращалась неоднократно на протяжении XIV века. Катастрофа сделала Крестьянское восстание 1381 года и общее разложение крепостничества практически неизбежными.",
-      "era": "AD",
-      "latitude": 50.61337,
-      "longitude": -2.45385,
-      "name": "Black Death reaches England",
-      "name_ru": "Чёрная смерть достигает Англии",
-      "source": "https://en.wikipedia.org/wiki/Black_Death_in_England",
-      "tags": [
-        "Black Death",
-        "Britain",
-        "Crisis",
-        "Death",
-        "Decline",
-        "Economic",
-        "English",
-        "Plague",
-        "Scottish"
-      ],
-      "type": "historic"
     },
     {
       "date": "01.01.1360",
@@ -557,18 +593,20 @@
       "era": "AD",
       "latitude": 51.2797,
       "longitude": 1.08268,
-      "name": "The Black Prince — chivalry and the art of medieval war",
-      "name_ru": "Чёрный принц — рыцарство и искусство средневековой войны",
+      "name": "The Black Prince — the color of English chivalry",
+      "name_ru": "Чёрный принц — цвет английского рыцарства",
       "source": "https://en.wikipedia.org/wiki/Edward_the_Black_Prince",
       "tags": [
+        "England",
+        "English",
+        "Hundred Years",
         "War",
+        "Culture",
         "Battle",
+        "Plantagenet",
         "King",
         "Legend",
-        "British",
-        "Culture",
-        "English",
-        "Plantagenet"
+        "Chivalry"
       ],
       "type": "cultural"
     },
@@ -583,13 +621,13 @@
       "name_ru": "«Пирс Пахарь» Уильяма Ленгленда — голос простой Англии",
       "source": "https://en.wikipedia.org/wiki/Piers_Plowman",
       "tags": [
-        "Black Death",
-        "Christian",
-        "Culture",
         "English",
+        "Christian",
         "Hundred Years",
+        "Culture",
         "Literature",
-        "Poetry"
+        "Poetry",
+        "Black Death"
       ],
       "type": "cultural"
     },
@@ -604,8 +642,9 @@
       "name_ru": "Джеффри Чосер — английский язык обретает голос",
       "source": "https://en.wikipedia.org/wiki/Geoffrey_Chaucer",
       "tags": [
-        "Culture",
         "English",
+        "Hundred Years",
+        "Culture",
         "Language",
         "Literature",
         "Poetry",
@@ -624,13 +663,15 @@
       "name_ru": "Джон Уиклиф и лолларды — первая английская реформация",
       "source": "https://en.wikipedia.org/wiki/John_Wycliffe",
       "tags": [
-        "Reform",
-        "Christian",
-        "Crisis",
         "English",
-        "Protestant",
-        "Reformation",
         "Religious",
+        "Christian",
+        "Reformation",
+        "Protestant",
+        "Hundred Years",
+        "Crisis",
+        "Reform",
+        "Movement",
         "Text"
       ],
       "type": "religious"
@@ -646,12 +687,13 @@
       "name_ru": "Восстание крестьян в Англии",
       "source": "https://en.wikipedia.org/wiki/Peasants%27_Revolt",
       "tags": [
-        "Reform",
-        "Crisis",
         "English",
-        "Law",
-        "Political",
+        "Crisis",
+        "Jacquerie",
         "Rebellion",
+        "Political",
+        "Reform",
+        "Law",
         "Taxes"
       ],
       "type": "political"
@@ -664,17 +706,16 @@
       "latitude": 51.5086,
       "longitude": -0.12826,
       "name": "The Wilton Diptych — finest painting of medieval England",
-      "name_ru": "Уилтонский диптих — шедевр живописи средневековой Англии",
+      "name_ru": "Уилтонский диптих — шедевр английской живописи",
       "source": "https://en.wikipedia.org/wiki/Wilton_Diptych",
       "tags": [
-        "King",
-        "Art",
-        "British",
+        "English",
+        "Religious",
         "Christian",
         "Culture",
-        "English",
+        "Art",
         "Plantagenet",
-        "Religious"
+        "King"
       ],
       "type": "cultural"
     },
@@ -689,57 +730,64 @@
       "name_ru": "Низложение Ричарда II — ланкастерская узурпация",
       "source": "https://en.wikipedia.org/wiki/Richard_II_of_England",
       "tags": [
-        "King",
-        "Crisis",
-        "Deposition",
         "English",
+        "Crisis",
         "Lancaster",
-        "Overthrow",
-        "Parliament",
         "Plantagenet",
+        "King",
+        "Parliament",
         "Political",
+        "Deposition",
+        "Overthrow",
         "Usurpation"
       ],
       "type": "political"
     },
     {
       "date": "25.10.1415",
-      "description": "On 25 October 1415, St Crispin's Day, Henry V's army of perhaps 6,000 men — exhausted, sick with dysentery, vastly outnumbered — defeated a French army of 12,000 to 36,000 at Agincourt. The English longbowmen, positioned between two woods that constricted the French advance, cut down the heavily armoured French knights in the mud.\n\nWhen French infantry briefly threatened the English line, Henry ordered his prisoners killed — a shocking act that he defended on military grounds. The battle became the supreme expression of English military mythology: the plucky English yeoman standing with his king against overwhelming odds. Shakespeare's Henry V, written nearly two centuries later, immortalised the eve of battle with the 'St Crispin's Day' speech. In political terms, Agincourt forced France to negotiate; the Treaty of Troyes in 1420 made Henry heir to the French throne. Henry V died in 1422, aged 35, leaving an infant son and an empire he had no time to consolidate.",
-      "description_ru": "25 октября 1415 года, в день святого Криспина, армия Генриха V численностью около 6000 человек — измотанных, больных дизентерией, уступавших числом — разгромила французскую армию от 12 000 до 36 000 воинов при Азенкуре. Английские лучники, расположившиеся между двумя лесами, стеснявшими французское наступление, косили тяжеловооружённых французских рыцарей в грязи.\n\nКогда французская пехота на короткое время поставила под угрозу английский строй, Генрих приказал казнить пленников. Битва стала высшим выражением английской военной мифологии. Речь «День святого Криспина» в шекспировском «Генрихе V», написанном почти двумя веками позже, обессмертила канун сражения. В политическом отношении Азенкур принудил Францию к переговорам; Труайский договор 1420 года сделал Генриха наследником французского трона.",
+      "description": "On 25 October, St Crispin's Day, Henry V's army of perhaps 6,000 men — exhausted, sick with dysentery, vastly outnumbered — defeated a French army of 12,000 to 36,000 at Agincourt. The English longbowmen, positioned between two woods that constricted the French advance, cut down the heavily armoured French knights in the mud.\n\nWhen French infantry briefly threatened the English line, Henry ordered his prisoners killed — a shocking act that he defended on military grounds. The battle became the supreme expression of English military mythology: the plucky English yeoman standing with his king against overwhelming odds. Shakespeare's Henry V, written nearly two centuries later, immortalised the eve of battle with the 'St Crispin's Day' speech. In political terms, Agincourt forced France to negotiate; the Treaty of Troyes in 1420 made Henry heir to the French throne.",
+      "description_ru": "25 октября, в день святого Криспина, армия Генриха V численностью около 6000 человек — измотанных, больных дизентерией, уступавших числом — разгромила французскую армию от 12 до 36 тысяч воинов при Азенкуре. Английские лучники, расположившиеся между двумя лесами, стеснявшими французское наступление, косили тяжеловооружённых французских рыцарей в грязи.\n\nКогда французская пехота на короткое время поставила под угрозу английский строй, Генрих приказал казнить пленников. Битва стала высшим выражением английской военной мифологии. Речь «День святого Криспина» в шекспировском «Генрихе V», написанном почти двумя веками позже, обессмертила канун сражения. В политическом отношении Азенкур принудил Францию к переговорам; Труайский договор 1420 года сделал Генриха наследником французского трона.",
       "era": "AD",
       "latitude": 50.45988,
       "longitude": 2.13282,
-      "name": "Battle of Agincourt — Henry V and the impossible victory",
-      "name_ru": "Битва при Азенкуре — Генрих V и невозможная победа",
+      "name": "England defeats France at Agincourt",
+      "name_ru": "Англия побеждает Францию при Азенкуре",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Agincourt",
       "tags": [
+        "France",
+        "French",
+        "England",
+        "English",
+        "Hundred Years",
         "War",
         "Battle",
-        "King",
-        "British",
-        "English",
         "Lancaster",
-        "Military"
+        "King",
+        "Tactics"
       ],
       "type": "military"
     },
     {
       "date": "21.05.1420",
-      "description": "The Treaty of Troyes, signed on 21 May 1420, was the high-water mark of English power in France. Henry V married Catherine of Valois, daughter of the French king Charles VI, and was recognised as regent of France and heir to the French throne — disinheriting the Dauphin Charles. The dual monarchy of England and France seemed within reach.\n\nHenry and Charles both died in 1422, leaving an infant — Henry VI — as king of both kingdoms simultaneously. The dual monarchy proved unworkable: France under the mentally incapacitated Charles VI had been a willing partner; under the vigorous Dauphin, inspired by Joan of Arc, it was not. By 1453 England had lost virtually all its French territories. The entire strategic achievement of Henry V's reign — the greatest military and diplomatic success of any English medieval king — was undone within thirty years of his death by the weakness of his successor and the resilience of France.",
-      "description_ru": "Труайский договор, подписанный 21 мая 1420 года, стал вершиной английского могущества во Франции. Генрих V женился на Екатерине Валуа, дочери французского короля Карла VI, и был признан регентом Франции и наследником французского трона — тем самым лишив прав дофина Карла. Двойная монархия Англии и Франции казалась досягаемой.\n\nГенрих и Карл оба умерли в 1422 году, оставив младенца — Генриха VI — одновременно королём обоих королевств. Двойная монархия оказалась нежизнеспособной: Франция, вдохновлённая Жанной д'Арк, не желала покоряться. К 1453 году Англия утратила почти все французские территории. Всё стратегическое достижение правления Генриха V было сведено на нет в течение тридцати лет после его смерти.",
+      "description": "The Treaty of Troyes, signed on 21 May 1420, was the high-water mark of English power in France. Henry V married Catherine of Valois, daughter of the French king Charles VI, and was recognised as regent of France and heir to the French throne — disinheriting the Dauphin Charles. The dual monarchy of England and France seemed within reach.",
+      "description_ru": "Труайский договор, подписанный 21 мая 1420 года, стал вершиной английского могущества во Франции. Генрих V женился на Екатерине Валуа, дочери французского короля Карла VI, и был признан регентом Франции и наследником французского трона — тем самым лишив прав дофина Карла. Двойная монархия Англии и Франции казалась досягаемой.",
       "era": "AD",
-      "latitude": 48.29793,
-      "longitude": 4.0744,
-      "name": "Treaty of Troyes — Henry V heir to France",
-      "name_ru": "Труайский договор — Генрих V наследник Франции",
+      "latitude": 48.30032481,
+      "longitude": 4.08124924,
+      "name": "The Treaty of Troyes gives the French crown to England",
+      "name_ru": "Труайский договор отдает Англии французскую корону",
       "source": "https://en.wikipedia.org/wiki/Treaty_of_Troyes",
       "tags": [
-        "Diplomacy",
-        "King",
-        "British",
+        "France",
+        "French",
+        "England",
         "English",
-        "Expansion",
+        "Hundred Years",
+        "Diplomacy",
         "Lancaster",
+        "Valois",
+        "King",
+        "Expansion",
         "Treaty"
       ],
       "type": "political"
@@ -747,18 +795,19 @@
     {
       "date": "01.01.1450",
       "description": "For nearly four centuries after the Norman Conquest, England was governed in Latin and French: royal writs, court proceedings, parliamentary debates, and legal pleadings were conducted in languages most English people could not understand. The shift to English was gradual but decisive: parliamentary rolls began appearing in English in the 1420s, Henry V corresponded in English, and by 1450 English had effectively replaced French in government business.\n\nThe change reflected the demographic reality of a country where French-speaking Normans had long since merged with the English population, and the political reality of the Hundred Years' War, which made French the enemy's language. The resulting Middle English of the fifteenth century — simplified grammar, enormous French vocabulary absorbed into English roots — was forming the bridge between Chaucer and Shakespeare. The standardisation of written English around the London dialect would accelerate dramatically with the printing press after 1476.",
-      "description_ru": "Почти четыре века после Нормандского завоевания Англия управлялась на латыни и французском. Переход к английскому был постепенным, но решительным: парламентские свитки стали появляться на английском в 1420-х годах, Генрих V вёл переписку по-английски, и к 1450 году английский фактически вытеснил французский из государственных дел.\n\nПеремена отражала демографическую реальность страны, в которой франкоязычные нормандцы давно слились с английским населением, и политическую реальность Столетней войны, сделавшей французский языком врага. Среднеанглийский язык XV века — упрощённая грамматика, огромный французский словарный запас, усвоенный в английских корнях, — формировал мост между Чосером и Шекспиром. Стандартизация письменного английского вокруг лондонского диалекта резко ускорилась с появлением печатного станка после 1476 года.",
+      "description_ru": "Почти четыре века после Нормандского завоевания Англия управлялась на латыни и французском. Переход к английскому был постепенным: парламентские свитки стали появляться на английском в 1420-х годах, Генрих V вёл переписку по-английски, и к 1450 году английский фактически вытеснил французский из государственных дел.\n\nПеремена отражала демографическую реальность страны, в которой франкоязычные нормандцы давно слились с английским населением, и политическую реальность Столетней войны, сделавшей французский языком врага. Среднеанглийский язык XV века — упрощённая грамматика, огромный французский словарный запас, усвоенный в английских корнях, — формировал мост между Чосером и Шекспиром. Стандартизация письменного английского вокруг лондонского диалекта резко ускорилась с появлением печатного станка.",
       "era": "AD",
       "latitude": 51.4994,
       "longitude": -0.12723,
-      "name": "English replaces French as the language of government",
-      "name_ru": "Английский вытесняет французский как язык государственного управления",
+      "name": "The French language is being forced out of England",
+      "name_ru": "Французский язык вытесняется из Англии",
       "source": "https://en.wikipedia.org/wiki/Middle_English",
       "tags": [
-        "Administration",
-        "Culture",
         "English",
+        "Culture",
         "Language",
+        "Reform",
+        "Administration",
         "Law"
       ],
       "type": "cultural"
@@ -770,18 +819,19 @@
       "era": "AD",
       "latitude": 51.74993,
       "longitude": -0.33437,
-      "name": "First Battle of St Albans — the Wars of the Roses begin",
-      "name_ru": "Первая битва при Сент-Олбансе — начало Войны Роз",
+      "name": "The Wars of the Roses begin in England",
+      "name_ru": "Начало Войны Роз в Англии",
       "source": "https://en.wikipedia.org/wiki/First_Battle_of_St_Albans",
       "tags": [
-        "Civil War",
-        "War",
-        "Battle",
-        "Dynasty",
-        "British",
+        "England",
         "English",
+        "Civil War",
+        "Wars of the Roses",
+        "Battle",
         "Lancaster",
-        "York"
+        "York",
+        "Dynasty",
+        "Aristocracy"
       ],
       "type": "military"
     },
@@ -792,18 +842,18 @@
       "era": "AD",
       "latitude": 51.50074,
       "longitude": -0.12775,
-      "name": "Edward IV proclaimed king — York takes the crown",
-      "name_ru": "Эдуард IV провозглашён королём — Йорки берут корону",
+      "name": "Edward IV York proclaimed king of England",
+      "name_ru": "Эдуард IV Йоркский — король Англии",
       "source": "https://en.wikipedia.org/wiki/Edward_IV_of_England",
       "tags": [
-        "War",
-        "Battle",
-        "Dynasty",
-        "King",
-        "British",
         "English",
+        "Civil War",
+        "Wars of the Roses",
+        "Battle",
         "Lancaster",
-        "York"
+        "York",
+        "Dynasty",
+        "King"
       ],
       "type": "political"
     },
@@ -818,13 +868,13 @@
       "name_ru": "Печатный станок Кэкстона в Вестминстере",
       "source": "https://en.wikipedia.org/wiki/William_Caxton",
       "tags": [
-        "Culture",
         "English",
-        "Innovation",
+        "Reformation",
+        "Culture",
         "Language",
         "Literature",
-        "Printing",
-        "Reformation"
+        "Innovation",
+        "Printing"
       ],
       "type": "cultural"
     },
@@ -839,12 +889,12 @@
       "name_ru": "Ричард III сажает английских принцев в Тауэр",
       "source": "https://en.wikipedia.org/wiki/Princes_in_the_Tower",
       "tags": [
-        "Dynasty",
-        "King",
-        "Crisis",
-        "Death",
         "England",
         "English",
+        "Crisis",
+        "Dynasty",
+        "King",
+        "Death",
         "Prisoner",
         "Usurpation"
       ],
@@ -861,15 +911,15 @@
       "name_ru": "Битва при Босворте — конец Плантагенетов, начало Тюдоров",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Bosworth_Field",
       "tags": [
-        "War",
-        "Battle",
-        "King",
         "British",
         "English",
         "Foundation",
+        "War",
+        "Battle",
         "Lancaster",
         "Plantagenet",
-        "York"
+        "York",
+        "King"
       ],
       "type": "military"
     }

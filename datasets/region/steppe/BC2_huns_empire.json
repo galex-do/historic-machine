@@ -12,13 +12,13 @@
       "name_ru": "Модэ-шаньюй создаёт Сюннcкую империю",
       "source": "https://en.wikipedia.org/wiki/Modu_Chanyu",
       "tags": [
-        "Dynasty",
-        "Cruelty",
+        "Huns",
         "Empire",
         "Foundation",
-        "Huns",
-        "Nomads",
+        "Dynasty",
         "Political",
+        "Cruelty",
+        "Nomads",
         "Unification"
       ],
       "type": "political"
@@ -34,11 +34,11 @@
       "name_ru": "Раскол конфедерации сюнну",
       "source": "https://en.wikipedia.org/wiki/Northern_Xiongnu",
       "tags": [
-        "Crisis",
         "Huns",
+        "Crisis",
+        "Political",
         "Migration",
-        "Nomads",
-        "Political"
+        "Nomads"
       ],
       "type": "political"
     },
@@ -53,8 +53,8 @@
       "name_ru": "Гунны появляются на Каспийской степи",
       "source": "https://en.wikipedia.org/wiki/Huns",
       "tags": [
-        "Customs",
         "Huns",
+        "Customs",
         "Migration",
         "Nomads",
         "Tactics"
@@ -72,15 +72,15 @@
       "name_ru": "Гунны переходят Волгу и подчиняют аланов",
       "source": "https://en.wikipedia.org/wiki/Alans#Hunnic_invasions",
       "tags": [
-        "War",
-        "Battle",
         "Alan",
-        "Conquest",
+        "Sarmatian",
         "Huns",
+        "War",
+        "Conquest",
+        "Battle",
         "Invasion",
         "Migration",
         "Nomads",
-        "Sarmatian",
         "Vassalage"
       ],
       "type": "military"
@@ -96,15 +96,15 @@
       "name_ru": "Гунны сокрушают готское царство Эрманариха",
       "source": "https://en.wikipedia.org/wiki/Ermanaric",
       "tags": [
-        "War",
-        "Battle",
-        "Conquest",
+        "Milestone ⭐️",
         "Gothic",
         "Huns",
-        "Invasion",
-        "Milestone ⭐️",
-        "Nomads",
         "Ostrogoth",
+        "War",
+        "Conquest",
+        "Battle",
+        "Invasion",
+        "Nomads",
         "Vassalage"
       ],
       "type": "military"
@@ -121,12 +121,12 @@
       "tags": [
         "Greek",
         "Roman",
-        "Bosporan",
-        "Destruction",
         "Huns",
+        "Destruction",
         "Invasion",
-        "Nomads",
-        "Pillage"
+        "Pillage",
+        "Bosporan",
+        "Nomads"
       ],
       "type": "military"
     },
@@ -142,11 +142,11 @@
       "source": "https://en.wikipedia.org/wiki/Aetius",
       "tags": [
         "Roman",
-        "Diplomacy",
-        "Aetius 👤",
-        "Hostage",
         "Huns",
-        "Political"
+        "Diplomacy",
+        "Political",
+        "Aetius 👤",
+        "Hostage"
       ],
       "type": "political"
     },
@@ -161,13 +161,13 @@
       "name_ru": "Руа объединяет Гуннскую империю",
       "source": "https://en.wikipedia.org/wiki/Rua_(king)",
       "tags": [
-        "Roman",
-        "Dynasty",
         "Byzantine",
-        "Empire",
+        "Roman",
         "Huns",
-        "Nomads",
+        "Empire",
+        "Dynasty",
         "Political",
+        "Nomads",
         "Tribute"
       ],
       "type": "political"
@@ -183,14 +183,14 @@
       "name_ru": "Аттила и Бледа наследуют Гуннскую империю",
       "source": "https://en.wikipedia.org/wiki/Attila",
       "tags": [
+        "Byzantine",
         "Roman",
+        "Huns",
         "Dynasty",
         "King",
+        "Political",
         "Attila 👤",
-        "Byzantine",
-        "Huns",
-        "Nomads",
-        "Political"
+        "Nomads"
       ],
       "type": "political"
     },
@@ -205,15 +205,15 @@
       "name_ru": "Первое вторжение гуннов на Балканы",
       "source": "https://en.wikipedia.org/wiki/Naissus",
       "tags": [
-        "Roman",
-        "War",
-        "Battle",
-        "Attila 👤",
         "Byzantine",
-        "Conquest",
-        "Destruction",
+        "Roman",
         "Huns",
+        "War",
+        "Conquest",
+        "Battle",
+        "Destruction",
         "Pillage",
+        "Attila 👤",
         "Siege"
       ],
       "type": "military"
@@ -229,13 +229,13 @@
       "name_ru": "Аттила — единоличный правитель Гуннской империи",
       "source": "https://en.wikipedia.org/wiki/Bleda",
       "tags": [
+        "Huns",
         "Dynasty",
         "King",
+        "Political",
         "Assassination",
         "Attila 👤",
-        "Huns",
-        "Nomads",
-        "Political"
+        "Nomads"
       ],
       "type": "political"
     },
@@ -250,13 +250,13 @@
       "name_ru": "Меч Марса — божественный мандат Аттилы",
       "source": "https://en.wikipedia.org/wiki/Sword_of_Attila",
       "tags": [
-        "Legend",
-        "Attila 👤",
         "Huns",
-        "Nomads",
+        "Religious",
         "Pagan",
+        "Legend",
         "Political",
-        "Religious"
+        "Attila 👤",
+        "Nomads"
       ],
       "type": "cultural"
     },
@@ -271,13 +271,13 @@
       "name_ru": "Хрисафий замышляет убийство Аттилы",
       "source": "https://en.wikipedia.org/wiki/Chrysaphius",
       "tags": [
-        "Roman",
-        "Diplomacy",
-        "Assassination",
         "Byzantine",
-        "Failure",
+        "Roman",
         "Huns",
-        "Political"
+        "Diplomacy",
+        "Political",
+        "Assassination",
+        "Failure"
       ],
       "type": "political"
     },
@@ -288,17 +288,17 @@
       "era": "AD",
       "latitude": 46.25394769,
       "longitude": 20.13244629,
-      "name": "The Priscus Mission — Inside Attila's Court",
+      "name": "Priscus's mission to the court of Attila",
       "name_ru": "Миссия Приска ко двору Аттилы",
       "source": "https://en.wikipedia.org/wiki/Priscus",
       "tags": [
-        "Roman",
-        "Diplomacy",
         "Byzantine",
+        "Roman",
+        "Huns",
         "Culture",
         "Customs",
+        "Diplomacy",
         "History",
-        "Huns",
         "Nomads"
       ],
       "type": "cultural"
@@ -316,14 +316,14 @@
       "tags": [
         "Roman",
         "Gallic",
-        "War",
-        "Attila 👤",
-        "Conquest",
-        "Destruction",
         "Gothic",
         "Huns",
         "Ostrogoth",
+        "War",
+        "Conquest",
+        "Destruction",
         "Pillage",
+        "Attila 👤",
         "Siege"
       ],
       "type": "military"
@@ -339,14 +339,14 @@
       "name_ru": "Германское восстание разрушает Гуннскую империю",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Nedao",
       "tags": [
-        "War",
-        "Battle",
-        "Collapse",
         "Germanic",
         "Gothic",
         "Huns",
-        "Nomads",
-        "Rebellion"
+        "War",
+        "Rebellion",
+        "Battle",
+        "Collapse",
+        "Nomads"
       ],
       "type": "military"
     },
@@ -361,12 +361,12 @@
       "name_ru": "Убит последний гуннский вождь",
       "source": "https://en.wikipedia.org/wiki/Dengizich",
       "tags": [
+        "Byzantine",
         "Roman",
+        "Huns",
         "War",
         "Battle",
-        "Byzantine",
         "Death",
-        "Huns",
         "Nomads"
       ],
       "type": "military"

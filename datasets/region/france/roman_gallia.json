@@ -35,10 +35,10 @@
         "Roman",
         "Celtic",
         "Gallic",
+        "Foundation",
         "War",
-        "Battle",
         "Conquest",
-        "Foundation"
+        "Battle"
       ],
       "type": "military"
     },
@@ -54,9 +54,10 @@
       "source": "https://en.wikipedia.org/wiki/Aquae_Sextiae",
       "tags": [
         "Roman",
+        "Gallic",
         "City",
-        "Expansion",
-        "Fortification"
+        "Fortification",
+        "Expansion"
       ],
       "type": "historic"
     },
@@ -72,10 +73,10 @@
       "source": "https://en.wikipedia.org/wiki/Gallia_Narbonensis",
       "tags": [
         "Roman",
+        "Political",
         "Administration",
         "Expansion",
-        "Law",
-        "Political"
+        "Law"
       ],
       "type": "political"
     },
@@ -92,12 +93,12 @@
       "tags": [
         "Roman",
         "Gallic",
+        "Germanic",
         "War",
+        "Conquest",
         "Battle",
         "Border",
-        "Conquest",
         "Expansion",
-        "Germanic",
         "Julius Caesar 👤"
       ],
       "type": "military"
@@ -117,8 +118,8 @@
         "Celtic",
         "Gallic",
         "War",
-        "Battle",
         "Conquest",
+        "Battle",
         "Expansion",
         "Julius Caesar 👤"
       ],
@@ -140,14 +141,14 @@
         "Gallic",
         "War",
         "Conquest",
-        "Migration",
         "Political",
+        "Migration",
         "Tribal"
       ],
       "type": "political"
     },
     {
-      "date": "01.01.0057",
+      "date": "01.07.0057",
       "description": "Caesar opened his Commentaries on the Gallic War with the observation that of the three parts of Gaul, the Belgae were \"the bravest.\" He moved north to deal with the coalition of Belgic tribes resisting Rome. The campaign encompassed a series of battles across modern-day Belgium and northern France, culminating in the near-destruction of Caesar's camp on the Sabis River by a Nervii ambush—so vicious that Caesar himself was forced to seize his shield and form the line of battle before he managed to turn the tide.\n\nThe Belgic campaigns became the bloodiest and most personally dangerous for Caesar in the entire Gallic War. The conquest of Belgica brought a Roman military presence to the English Channel for the first time and provided Caesar with a base from which he later launched symbolic expeditions to Britain—adventures conceived more for political effect in Rome than for conquest.",
       "description_ru": "Цезарь открыл свои «Записки о Галльской войне» наблюдением о том, что из трёх частей Галлии белги были «самыми храбрыми». Он двинулся на север, чтобы разобраться с коалицией бельгийских племён, сопротивлявшейся Риму. Кампания охватила серию сражений по всей современной Бельгии и Северной Франции, кульминацией которых стало почти уничтожение лагеря Цезаря на реке Сабис засадой нервиев — настолько яростной, что сам Цезарь был вынужден схватить щит и встать в боевую линию, прежде чем ему удалось переломить ситуацию.\n\nБельгийские кампании стали самыми кровавыми и лично наиболее опасными для Цезаря во всей Галльской войне. Завоевание Белгики впервые вывело римское военное присутствие на побережье Ла-Манша и дало Цезарю базу, с которой он позднее предпринял символические экспедиции в Британию — авантюры, задуманные более ради политического эффекта в Риме, нежели для завоевания.",
       "era": "BC",
@@ -160,8 +161,8 @@
         "Roman",
         "Celtic",
         "War",
-        "Battle",
         "Conquest",
+        "Battle",
         "Expansion",
         "Julius Caesar 👤"
       ],
@@ -182,8 +183,8 @@
         "Celtic",
         "Gallic",
         "War",
-        "Battle",
         "Conquest",
+        "Battle",
         "Julius Caesar 👤",
         "Naval",
         "Seamen"
@@ -261,7 +262,7 @@
       "era": "BC",
       "latitude": 43.4333,
       "longitude": 6.7394,
-      "name": "Forum Iulii / Fréjus — Rome's naval base on the Riviera",
+      "name": "Julius Caesar founds Forum Julii in Gallia",
       "name_ru": "Цезарь основывает Форум Юлии",
       "source": "https://en.wikipedia.org/wiki/Frejus",
       "tags": [
@@ -325,9 +326,9 @@
       "tags": [
         "Roman",
         "City",
+        "Culture",
         "Architecture",
         "Colonization",
-        "Culture",
         "Expansion"
       ],
       "type": "cultural"
@@ -344,10 +345,10 @@
       "source": "https://en.wikipedia.org/wiki/Roman_Gaul",
       "tags": [
         "Roman",
+        "Political",
         "Administration",
         "Law",
-        "Octavian 👑",
-        "Political"
+        "Octavian 👑"
       ],
       "type": "political"
     },
@@ -363,13 +364,13 @@
       "source": "https://en.wikipedia.org/wiki/Roman_roads_in_Gaul",
       "tags": [
         "Roman",
+        "Road",
+        "Trade",
+        "Engineering ⚙️",
         "Administration",
         "Communication",
-        "Engineering ⚙️",
         "Expansion",
-        "Infrastructure",
-        "Road",
-        "Trade"
+        "Infrastructure"
       ],
       "type": "scientific"
     },
@@ -386,12 +387,12 @@
       "tags": [
         "Roman",
         "Gallic",
-        "Administration",
-        "Assimilation",
-        "Culture",
         "Foundation",
+        "Religious",
+        "Culture",
+        "Assimilation",
         "Political",
-        "Religious"
+        "Administration"
       ],
       "type": "political"
     },
@@ -408,8 +409,8 @@
       "tags": [
         "Roman",
         "City",
-        "Colonization",
         "Culture",
+        "Colonization",
         "Education",
         "Expansion"
       ],
@@ -427,11 +428,11 @@
       "source": "https://fr.wikipedia.org/wiki/Maison_carr%C3%A9e",
       "tags": [
         "Roman",
-        "Building 🏠",
-        "Architecture",
+        "Religious",
         "Deification",
         "Emperor",
-        "Religious",
+        "Architecture",
+        "Building 🏠",
         "Temple"
       ],
       "type": "religious"
@@ -450,10 +451,10 @@
         "Roman",
         "Celtic",
         "Gallic",
-        "Culture",
-        "Pagan",
-        "Persecution",
         "Religious",
+        "Pagan",
+        "Culture",
+        "Persecution",
         "Resistance"
       ],
       "type": "religious"
@@ -471,8 +472,8 @@
       "tags": [
         "Roman",
         "Culture",
-        "Economic",
         "Trade",
+        "Economic",
         "Wine"
       ],
       "type": "cultural"
@@ -489,11 +490,11 @@
       "source": "https://en.wikipedia.org/wiki/Pont_du_Gard",
       "tags": [
         "Roman",
-        "Building 🏠",
         "Architecture",
+        "Building 🏠",
+        "Water",
         "Engineering ⚙️",
-        "Infrastructure",
-        "Water"
+        "Infrastructure"
       ],
       "type": "scientific"
     },
@@ -510,11 +511,11 @@
       "tags": [
         "Roman",
         "Gallic",
-        "Art",
         "Culture",
-        "Economic",
+        "Art",
         "Pottery",
-        "Trade"
+        "Trade",
+        "Economic"
       ],
       "type": "cultural"
     },
@@ -532,17 +533,17 @@
         "Roman",
         "Celtic",
         "Gallic",
-        "Culture",
-        "Pagan",
         "Religious",
-        "Syncretism"
+        "Pagan",
+        "Syncretism",
+        "Culture"
       ],
       "type": "religious"
     },
     {
       "date": "01.01.0150",
-      "description": "The Puy-de-Dôme volcano was a sacred site for Celtic tribes long before the arrival of the Romans. As Julius Caesar wrote in his Commentaries on the Gallic War, of all the Roman gods, the Gauls revered Mercury most of all. They saw him as their supreme god—Lugus, patron of light, crafts, and roads. After Rome colonized the region, local elites adopted Mercury as Lugus's successor and dedicated a temple to him, which quickly became the region's cult center. To create the temple's crowning glory—a colossal bronze statue of Mercury—they specially invited the famous Greek sculptor Zenodorus from Rome.",
-      "description_ru": "Вулкан Пюи-де-Дом был священным местом для кельтских племен задолго до прихода римлян. Как писал Юлий Цезарь в своих «Записках о Галльской войне», из всех римских богов галлы больше всего почитали именно Меркурия. Они видели в нём своего верховного бога — Луга, покровителя света, ремесел и дороги. После колонизации региона Римом местные элиты приняли Меркурия как преемника Луга и посвятили ему храм, который быстро стал культовым центром региона. Для создания главной гордости храма — колоссальной бронзовой статуи Меркурия — они специально пригласили из Рима знаменитого греческого скульптора Зенодора. ",
+      "description": "The Puy-de-Dôme volcano was a sacred site for Celtic tribes long before the arrival of the Romans. As Julius Caesar wrote in his Commentaries on the Gallic War, of all the Roman gods, the Gauls revered Mercury most of all. They saw him as their supreme god—Lugus, patron of light, crafts, and roads. \n\nAfter Rome colonized the region, local elites adopted Mercury as Lugus's successor and dedicated a temple to him, which quickly became the region's cult center. To create the temple's crowning glory—a colossal bronze statue of Mercury—they specially invited the famous Greek sculptor Zenodorus from Rome.",
+      "description_ru": "Вулкан Пюи-де-Дом был священным местом для кельтских племен задолго до прихода римлян. Как писал Юлий Цезарь в своих «Записках о Галльской войне», из всех римских богов галлы больше всего почитали именно Меркурия. Они видели в нём своего верховного бога — Луга, покровителя света, ремесел и дороги. \n\nПосле колонизации региона Римом местные элиты приняли Меркурия как преемника Луга и посвятили ему храм, который быстро стал культовым центром региона. Для создания главной гордости храма — колоссальной бронзовой статуи Меркурия — они специально пригласили из Рима знаменитого греческого скульптора Зенодора. ",
       "era": "AD",
       "latitude": 45.77186359,
       "longitude": 2.96459198,
@@ -554,11 +555,11 @@
         "Roman",
         "Celtic",
         "Gallic",
-        "Building 🏠",
-        "Holy Site",
-        "Pagan",
         "Religious",
+        "Pagan",
         "Syncretism",
+        "Holy Site",
+        "Building 🏠",
         "Temple",
         "Volcano"
       ],
@@ -577,12 +578,12 @@
       "tags": [
         "Roman",
         "Gallic",
+        "Religious",
         "Christian",
+        "Martyr",
         "Culture",
         "Death",
-        "Martyr",
         "Persecution",
-        "Religious",
         "Text"
       ],
       "type": "religious"
@@ -599,11 +600,11 @@
       "source": "https://en.wikipedia.org/wiki/Trier",
       "tags": [
         "Roman",
-        "Building 🏠",
-        "Administration",
-        "Architecture",
         "Capital",
-        "Political"
+        "Architecture",
+        "Building 🏠",
+        "Political",
+        "Administration"
       ],
       "type": "political"
     }

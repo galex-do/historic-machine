@@ -12,10 +12,10 @@
       "name_ru": "Основание Эриду",
       "source": "https://en.wikipedia.org/wiki/Eridu",
       "tags": [
+        "Mesopotamian",
         "Sumerian",
         "City",
-        "Foundation",
-        "Mesopotamian"
+        "Foundation"
       ],
       "type": "historic"
     },
@@ -30,9 +30,9 @@
       "name_ru": "Первое городское поселение в Уруке",
       "source": "https://en.wikipedia.org/wiki/Uruk",
       "tags": [
+        "Mesopotamian",
         "Sumerian",
         "City",
-        "Mesopotamian",
         "Urban"
       ],
       "type": "historic"
@@ -48,11 +48,11 @@
       "name_ru": "Основание храмового комплекса Эанна",
       "source": "https://en.wikipedia.org/wiki/Eanna",
       "tags": [
-        "Sumerian",
-        "Building 🏠",
-        "Architecture",
         "Mesopotamian",
+        "Sumerian",
         "Religious",
+        "Architecture",
+        "Building 🏠",
         "Temple"
       ],
       "type": "religious"
@@ -68,10 +68,10 @@
       "name_ru": "Изобретение цилиндрической печати",
       "source": "https://en.wikipedia.org/wiki/Cylinder_seal",
       "tags": [
+        "Mesopotamian",
         "Sumerian",
         "Administration",
-        "Innovation",
-        "Mesopotamian"
+        "Innovation"
       ],
       "type": "cultural"
     },
@@ -86,11 +86,11 @@
       "name_ru": "Изобретение клинописи",
       "source": "https://en.wikipedia.org/wiki/Cuneiform",
       "tags": [
-        "Sumerian",
-        "Administration",
-        "Language",
         "Mesopotamian",
-        "Writing"
+        "Sumerian",
+        "Language",
+        "Writing",
+        "Administration"
       ],
       "type": "cultural"
     },
@@ -106,8 +106,8 @@
       "source": "https://en.wikipedia.org/wiki/Wheel",
       "tags": [
         "Sumerian",
-        "Innovation",
         "Pottery",
+        "Innovation",
         "Technology"
       ],
       "type": "scientific"
@@ -123,14 +123,14 @@
       "name_ru": "Ирригация преобразует шумерское земледелие",
       "source": "https://en.wikipedia.org/wiki/Irrigation_in_Mesopotamia",
       "tags": [
+        "Mesopotamian",
         "Sumerian",
+        "Water",
+        "Engineering ⚙️",
         "Administration",
         "Agriculture",
         "Bureaucracy",
-        "Engineering ⚙️",
-        "Innovation",
-        "Mesopotamian",
-        "Water"
+        "Innovation"
       ],
       "type": "historic"
     },
@@ -145,11 +145,11 @@
       "name_ru": "Население Урука достигает 100 000 человек",
       "source": "https://en.wikipedia.org/wiki/Uruk",
       "tags": [
+        "Mesopotamian",
         "Sumerian",
         "City",
         "Administration",
         "Expansion",
-        "Mesopotamian",
         "Urban"
       ],
       "type": "historic"
@@ -161,14 +161,15 @@
       "era": "BC",
       "latitude": 31.3225,
       "longitude": 45.6372,
-      "name": "Base-60 Number System Developed",
-      "name_ru": "Разработка шестидесятеричной системы счисления",
+      "name": "The Sumerian sexagesimal number system",
+      "name_ru": "Шестидесятеричная система счисления шумеров",
       "source": "https://en.wikipedia.org/wiki/Sexagesimal",
       "tags": [
+        "Mesopotamian",
         "Sumerian",
         "Innovation",
         "Mathematics",
-        "Mesopotamian"
+        "Science"
       ],
       "type": "scientific"
     },
@@ -183,10 +184,10 @@
       "name_ru": "Киш становится символом шумерской царской власти",
       "source": "https://en.wikipedia.org/wiki/Kish_(Sumer)",
       "tags": [
+        "Mesopotamian",
         "Sumerian",
-        "King",
         "Kingdom",
-        "Mesopotamian"
+        "King"
       ],
       "type": "political"
     },
@@ -202,9 +203,9 @@
       "source": "https://en.wikipedia.org/wiki/Ziggurat",
       "tags": [
         "Sumerian",
-        "Building 🏠",
-        "Architecture",
         "Religious",
+        "Architecture",
+        "Building 🏠",
         "Temple"
       ],
       "type": "religious"
@@ -220,11 +221,11 @@
       "name_ru": "Правление Гильгамеша Урукского",
       "source": "https://en.wikipedia.org/wiki/Gilgamesh",
       "tags": [
+        "Mesopotamian",
         "Sumerian",
-        "King",
-        "Legend",
         "Culture",
-        "Mesopotamian"
+        "King",
+        "Legend"
       ],
       "type": "cultural"
     },
@@ -239,12 +240,12 @@
       "name_ru": "Царский некрополь Ура и Штандарт Ура",
       "source": "https://en.wikipedia.org/wiki/Standard_of_Ur",
       "tags": [
-        "Sumerian",
-        "Building 🏠",
-        "Architecture",
-        "Burial",
-        "Culture",
         "Mesopotamian",
+        "Sumerian",
+        "Culture",
+        "Burial",
+        "Architecture",
+        "Building 🏠",
         "Tomb"
       ],
       "type": "cultural"
@@ -260,10 +261,10 @@
       "name_ru": "Составление 'Поучений Шуруппака'",
       "source": "https://en.wikipedia.org/wiki/Instructions_of_Shuruppak",
       "tags": [
+        "Mesopotamian",
         "Sumerian",
         "Culture",
         "Literature",
-        "Mesopotamian",
         "Text"
       ],
       "type": "cultural"
@@ -279,14 +280,14 @@
       "name_ru": "Храм Экур в Ниппуре - религиозный центр шумеров",
       "source": "https://en.wikipedia.org/wiki/Ekur",
       "tags": [
-        "Sumerian",
-        "Building 🏠",
-        "Architecture",
-        "Capital",
-        "Culture",
         "Mesopotamian",
-        "Pagan",
+        "Sumerian",
+        "Capital",
         "Religious",
+        "Pagan",
+        "Culture",
+        "Architecture",
+        "Building 🏠",
         "Temple"
       ],
       "type": "religious"
@@ -302,10 +303,10 @@
       "name_ru": "Правление Эн-ме-барагеси Кишского",
       "source": "https://en.wikipedia.org/wiki/Enmebaragesi",
       "tags": [
+        "Mesopotamian",
         "Elamites",
         "Sumerian",
-        "King",
-        "Mesopotamian"
+        "King"
       ],
       "type": "political"
     },
@@ -320,10 +321,10 @@
       "name_ru": "Основание династии Лагаша",
       "source": "https://en.wikipedia.org/wiki/Lagash",
       "tags": [
+        "Mesopotamian",
         "Sumerian",
         "City-State",
-        "Dynasty",
-        "Mesopotamian"
+        "Dynasty"
       ],
       "type": "political"
     },
@@ -338,9 +339,9 @@
       "name_ru": "Стела коршунов Эаннатума",
       "source": "https://en.wikipedia.org/wiki/Stele_of_the_Vultures",
       "tags": [
+        "Mesopotamian",
         "Sumerian",
         "War",
-        "Mesopotamian",
         "Treaty"
       ],
       "type": "military"
@@ -356,11 +357,11 @@
       "name_ru": "Реформы Урукагины в Лагаше",
       "source": "https://en.wikipedia.org/wiki/Urukagina",
       "tags": [
+        "Mesopotamian",
         "Sumerian",
         "Reform",
         "Justice",
-        "Law",
-        "Mesopotamian"
+        "Law"
       ],
       "type": "political"
     },
@@ -375,9 +376,9 @@
       "name_ru": "Лугальзагеси объединяет Шумер",
       "source": "https://en.wikipedia.org/wiki/Lugal-Zage-Si",
       "tags": [
+        "Mesopotamian",
         "Sumerian",
         "Capital",
-        "Mesopotamian",
         "Unification"
       ],
       "type": "political"
@@ -393,12 +394,12 @@
       "name_ru": "Саргон разбивает шумеров при Уруке",
       "source": "https://en.wikipedia.org/wiki/Lugal-Zage-Si",
       "tags": [
+        "Mesopotamian",
         "Akkadian",
         "Sumerian",
         "War",
-        "Battle",
         "Conquest",
-        "Mesopotamian",
+        "Battle",
         "Sargon 👑"
       ],
       "type": "military"
@@ -414,11 +415,11 @@
       "name_ru": "Саргон завоёвывает Ур",
       "source": "https://en.wikipedia.org/wiki/Sargon_of_Akkad",
       "tags": [
+        "Mesopotamian",
         "Akkadian",
         "Sumerian",
         "War",
         "Conquest",
-        "Mesopotamian",
         "Sargon 👑"
       ],
       "type": "military"
@@ -434,11 +435,11 @@
       "name_ru": "Гудеа восстанавливает храм Энинну в Гирсу",
       "source": "https://en.wikipedia.org/wiki/Gudea",
       "tags": [
-        "Sumerian",
-        "Building 🏠",
-        "Architecture",
         "Mesopotamian",
+        "Sumerian",
         "Religious",
+        "Architecture",
+        "Building 🏠",
         "Temple"
       ],
       "type": "religious"
@@ -454,9 +455,9 @@
       "name_ru": "Основание Третьей династии Ура",
       "source": "https://en.wikipedia.org/wiki/Third_Dynasty_of_Ur",
       "tags": [
+        "Mesopotamian",
         "Sumerian",
         "Dynasty",
-        "Mesopotamian",
         "Rise"
       ],
       "type": "political"
@@ -472,14 +473,14 @@
       "name_ru": "Строительство Великого зиккурата Ура",
       "source": "https://en.wikipedia.org/wiki/Great_Ziggurat_of_Ur",
       "tags": [
-        "Sumerian",
-        "Building 🏠",
-        "Architecture",
-        "Divination",
         "Mesopotamian",
-        "Moon",
+        "Sumerian",
         "Religious",
-        "Temple"
+        "Divination",
+        "Architecture",
+        "Building 🏠",
+        "Temple",
+        "Moon"
       ],
       "type": "religious"
     },
@@ -494,11 +495,11 @@
       "name_ru": "Кодекс Ур-Намму",
       "source": "https://en.wikipedia.org/wiki/Code_of_Ur-Nammu",
       "tags": [
+        "Mesopotamian",
         "Sumerian",
         "Code",
         "Justice",
         "Law",
-        "Mesopotamian",
         "Text"
       ],
       "type": "political"
@@ -514,11 +515,11 @@
       "name_ru": "Составление шумерского 'Царского списка'",
       "source": "https://en.wikipedia.org/wiki/Sumerian_King_List",
       "tags": [
+        "Mesopotamian",
         "Sumerian",
+        "History",
         "King",
         "Legend",
-        "History",
-        "Mesopotamian",
         "Text"
       ],
       "type": "cultural"
@@ -535,9 +536,9 @@
       "source": "https://en.wikipedia.org/wiki/Shulgi",
       "tags": [
         "Sumerian",
+        "Deification",
         "Dynasty",
-        "King",
-        "Deification"
+        "King"
       ],
       "type": "political"
     },

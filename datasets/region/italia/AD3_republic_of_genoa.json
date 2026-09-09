@@ -14,12 +14,12 @@
       "tags": [
         "Arabian",
         "Italian",
-        "Crisis",
-        "Fatimid",
         "Genoa",
         "Islamic",
-        "Naval",
-        "Pillage"
+        "Crisis",
+        "Pillage",
+        "Fatimid",
+        "Naval"
       ],
       "type": "military"
     },
@@ -36,11 +36,11 @@
       "tags": [
         "Arabian",
         "Italian",
-        "Battle",
         "Genoa",
-        "Islamic",
-        "Naval",
         "Pisa",
+        "Islamic",
+        "Battle",
+        "Naval",
         "Seamen"
       ],
       "type": "military"
@@ -57,14 +57,14 @@
       "source": "https://en.wikipedia.org/wiki/Siege_of_Antioch",
       "tags": [
         "Italian",
-        "First",
-        "War",
-        "Genoa",
-        "Oguz",
-        "Seamen",
-        "Siege",
         "Turkic",
-        "Crusade"
+        "Oguz",
+        "Genoa",
+        "Crusade",
+        "War",
+        "First",
+        "Seamen",
+        "Siege"
       ],
       "type": "military"
     },
@@ -80,12 +80,12 @@
       "source": "https://en.wikipedia.org/wiki/Republic_of_Genoa",
       "tags": [
         "Italian",
+        "Genoa",
         "City-State",
+        "Foundation",
+        "Political",
         "Reform",
         "Aristocracy",
-        "Foundation",
-        "Genoa",
-        "Political",
         "Republic"
       ],
       "type": "political"
@@ -103,13 +103,13 @@
       "tags": [
         "Arabian",
         "Italian",
-        "First",
+        "Genoa",
+        "Crusade",
         "War",
         "Conquest",
-        "Genoa",
+        "First",
         "Maritime",
-        "Seamen",
-        "Crusade"
+        "Seamen"
       ],
       "type": "military"
     },
@@ -125,12 +125,12 @@
       "source": "https://en.wikipedia.org/wiki/Genoese_colonies",
       "tags": [
         "Italian",
-        "First",
+        "Genoa",
+        "Crusade",
+        "Trade",
         "Emporium",
         "Expansion",
-        "Genoa",
-        "Trade",
-        "Crusade"
+        "First"
       ],
       "type": "political"
     },
@@ -145,18 +145,18 @@
       "name_ru": "Генуэзский флот захватывает Альмерию в Иберии",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Almer%C3%ADa_(1147)",
       "tags": [
-        "Italian",
-        "Second",
-        "War",
-        "Almoravid",
         "Berber",
+        "Italian",
         "Castile",
-        "Conquest",
         "Genoa",
         "Islamic",
+        "Crusade",
+        "War",
+        "Conquest",
+        "Almoravid",
         "Reconquista",
         "Seamen",
-        "Crusade"
+        "Second"
       ],
       "type": "military"
     },
@@ -171,19 +171,19 @@
       "name_ru": "Генуя и барселонцы захватывают Тортосу на Эбро",
       "source": "https://en.wikipedia.org/wiki/Siege_of_Tortosa_(1148)",
       "tags": [
-        "Second",
-        "War",
-        "Almoravid",
         "Berber",
         "Catalan",
-        "Conquest",
-        "Emporium",
         "Genoa",
         "Islamic",
+        "Crusade",
+        "War",
+        "Conquest",
+        "Almoravid",
+        "Emporium",
         "Maritime",
         "Reconquista",
-        "Siege",
-        "Crusade"
+        "Second",
+        "Siege"
       ],
       "type": "military"
     },
@@ -199,12 +199,12 @@
       "source": "https://en.wikipedia.org/wiki/Commenda",
       "tags": [
         "Italian",
-        "Contract",
-        "Economic",
         "Genoa",
         "Genoese",
-        "Investments",
-        "Trade"
+        "Trade",
+        "Economic",
+        "Contract",
+        "Investments"
       ],
       "type": "cultural"
     },
@@ -219,11 +219,11 @@
       "name_ru": "Торговые привилегии Генуи в Византии",
       "source": "https://en.wikipedia.org/wiki/Republic_of_Genoa",
       "tags": [
-        "Italian",
         "Byzantine",
-        "Emporium",
+        "Italian",
         "Genoa",
         "Trade",
+        "Emporium",
         "Treaty"
       ],
       "type": "political"
@@ -240,8 +240,8 @@
       "source": "https://en.wikipedia.org/wiki/Caffaro_di_Rustico_da_Caschifellone",
       "tags": [
         "Italian",
-        "Culture",
         "Genoa",
+        "Culture",
         "History",
         "Text"
       ],
@@ -257,14 +257,14 @@
       "name": "Massacre of the Genoese in Constantinople",
       "name_ru": "Резня генуэзцев в Константинополе",
       "tags": [
+        "Byzantine",
         "Roman",
         "Italian",
-        "Byzantine",
         "Genoa",
-        "Massacre",
         "Pisa",
-        "Riot",
-        "Venice"
+        "Venice",
+        "Massacre",
+        "Riot"
       ],
       "type": "historic"
     },
@@ -280,11 +280,11 @@
       "source": "https://en.wikipedia.org/wiki/Republic_of_Genoa",
       "tags": [
         "Italian",
+        "Genoa",
         "Holy Roman Empire",
         "Diplomacy",
-        "Friedrich Barbarossa 👑",
-        "Genoa",
         "Trade",
+        "Friedrich Barbarossa 👑",
         "Treaty"
       ],
       "type": "political"
@@ -301,10 +301,10 @@
       "source": "https://en.wikipedia.org/wiki/Lombard_League",
       "tags": [
         "Italian",
-        "Holy Roman Empire",
-        "War",
-        "Alliance",
         "Genoa",
+        "Holy Roman Empire",
+        "Alliance",
+        "War",
         "Lombard League"
       ],
       "type": "political"
@@ -320,10 +320,10 @@
       "name_ru": "Византия расширяет права Генуи",
       "source": "https://en.wikipedia.org/wiki/Manuel_I_Komnenos",
       "tags": [
-        "Italian",
-        "Diplomacy",
         "Byzantine",
+        "Italian",
         "Genoa",
+        "Diplomacy",
         "Trade"
       ],
       "type": "political"
@@ -340,14 +340,14 @@
       "source": "https://en.wikipedia.org/wiki/Third_Crusade",
       "tags": [
         "Italian",
-        "Third",
-        "Contract",
         "France",
         "French",
         "Genoa",
+        "Crusade",
+        "Contract",
         "Naval",
         "Seamen",
-        "Crusade"
+        "Third"
       ],
       "type": "political"
     },
@@ -364,15 +364,16 @@
       "tags": [
         "Arabian",
         "Italian",
-        "Third",
-        "War",
         "France",
         "French",
         "Genoa",
+        "Crusade",
+        "War",
         "Naval",
+        "Philip Augustus 👑",
         "Seamen",
         "Siege",
-        "Crusade"
+        "Third"
       ],
       "type": "military"
     },
@@ -388,11 +389,11 @@
       "source": "https://en.wikipedia.org/wiki/Bonifacio,_Corse-du-Sud",
       "tags": [
         "Italian",
+        "Genoa",
+        "Pisa",
         "War",
         "Conquest",
-        "Genoa",
-        "Naval",
-        "Pisa"
+        "Naval"
       ],
       "type": "military"
     },
@@ -407,13 +408,13 @@
       "name_ru": "Генуя вытеснена Венецией из Константинополя",
       "source": "https://en.wikipedia.org/wiki/Fourth_Crusade",
       "tags": [
+        "Byzantine",
         "Roman",
         "Italian",
-        "Byzantine",
-        "Crisis",
         "Genoa",
         "Pisa",
-        "Venice"
+        "Venice",
+        "Crisis"
       ],
       "type": "political"
     },
@@ -428,13 +429,13 @@
       "name_ru": "Нимфейский договор Генуи и Михаила Палеолога",
       "source": "https://en.wikipedia.org/wiki/Treaty_of_Nymphaeum_(1261)",
       "tags": [
+        "Byzantine",
         "Roman",
         "Italian",
-        "Diplomacy",
-        "Byzantine",
         "Genoa",
-        "Treaty",
-        "Venice"
+        "Venice",
+        "Diplomacy",
+        "Treaty"
       ],
       "type": "political"
     },
@@ -449,12 +450,12 @@
       "name_ru": "Генуя получает Галату в Константинополе",
       "source": "https://en.wikipedia.org/wiki/Reconquest_of_Constantinople_(1261)",
       "tags": [
+        "Byzantine",
         "Roman",
         "Italian",
-        "Byzantine",
+        "Genoa",
         "Emporium",
-        "Expansion",
-        "Genoa"
+        "Expansion"
       ],
       "type": "political"
     },
@@ -469,33 +470,40 @@
       "name_ru": "Генуэзцы основывают Каффу в Крыму",
       "source": "https://en.wikipedia.org/wiki/Caffa",
       "tags": [
-        "City",
-        "Colonization",
-        "Emporium",
-        "Genoa",
+        "Italian",
         "Golden Horde",
-        "Trade"
+        "Genoa",
+        "City",
+        "Trade",
+        "Colonization",
+        "Emporium"
       ],
       "type": "political"
     },
     {
       "date": "01.01.1270",
-      "description": "In 1270, Genoa contracted to provide King Louis IX of France with transport vessels for the Eighth Crusade — the final major crusading expedition — which was directed against Tunis rather than the Holy Land. Louis died of dysentery at Tunis in August 1270 before the campaign achieved anything. Genoa's involvement was purely commercial: the transport contract was lucrative, and a victory at Tunis would have disrupted a rival Islamic trading partner. The episode illustrated how the crusade had been thoroughly instrumentalized by the Italian maritime city-states — providing ships at profit regardless of religious outcome — and foreshadowed the collapse of the crusading impulse in the following decade.",
-      "description_ru": "Генуя заключает контракт на предоставление королю Франции Людовику IX корабли для Восьмого крестового похода — последней крупной крестоносной экспедиции, — направленного против Туниса, а не Святой земли. Людовик умер от дизентерии в Тунисе в августе 1270 года, не добившись результата. \n\nУчастие Генуи носило чисто коммерческий характер: транспортный контракт был выгодным, а победа в Тунисе нарушила бы деятельность соперничавшего Исламского торгового партнёра. Таким образом, итальянцы зарабатывали как на успешных Крестовых походах, так и на провальных",
+      "description": "Louis IX launched the Second Crusade in 1270, first sending a fleet to Tunis on the advice of his brother, Charles of Anjou, who hoped the Hafsid emir might convert to Christianity and provide a base for a subsequent attack on Egypt. Genoa provided transport for the expedition. Weeks after the landing, the crusader camp near Tunis was stricken with dysentery.\n\nLouis died in his camp, according to legend, with the words \"Jerusalem, Jerusalem\" on his lips, becoming the only French king to lead a crusade twice. Charles of Anjou arrived from Sicily a few days after his brother's death and concluded a treaty with the Hafsids, ending the campaign without further fighting. Louis's reputation as a pious and just ruler prompted Pope Boniface VIII to canonize him in 1297, and Saint Louis became the model by which every French king subsequently measured his own claims to the sacred character of his power.",
+      "description_ru": "Людовик IX начал в 1270 году второй крестовый поход, направив флот сперва к Тунису по совету брата, Карла Анжуйского, рассчитывавшего, что хафсидский эмир может принять христианство и предоставить базу для последующего удара по Египту. Транспорт для похода предоставила Генуя. Через недели после высадки лагерь крестоносцев под Тунисом поразила дизентерия.\n\nЛюдовик умер в своём лагере, по преданию, с словами «Иерусалим, Иерусалим» на устах, став единственным французским королём, дважды возглавившим крестовый поход. Карл Анжуйский прибыл с Сицилии через несколько дней после смерти брата и заключил с Хафсидами договор, завершивший кампанию без дальнейших боёв; репутация Людовика как благочестивого и справедливого правителя побудила папу Бонифация VIII канонизировать его в 1297 году, и Людовик Святой стал образцом, по которому впоследствии всякий французский король сверял собственные притязания на священный характер власти",
       "era": "AD",
       "latitude": 36.82,
       "longitude": 10.17,
-      "name": "Genoa Provides Fleet for the Crusade at Tunis",
-      "name_ru": "Генуя предоставляет флот для крестового похода в Тунис",
+      "name": "The King of France dies in Tunisia during the Crusade",
+      "name_ru": "Король Франции умирает в Тунисе в крестовом походе",
       "source": "https://en.wikipedia.org/wiki/Eighth_Crusade",
       "tags": [
         "Italian",
-        "Contract",
         "France",
         "French",
         "Genoa",
-        "Trade",
-        "Crusade"
+        "Christian",
+        "Saint",
+        "Crusade",
+        "King",
+        "Death",
+        "Capetian",
+        "Contract",
+        "Disease",
+        "Louis IX 👑"
       ],
       "type": "political"
     },
@@ -511,11 +519,11 @@
       "source": "https://en.wikipedia.org/wiki/Republic_of_Genoa",
       "tags": [
         "Italian",
-        "Expansion",
         "Genoa",
-        "Maritime",
+        "Trade",
         "Route",
-        "Trade"
+        "Expansion",
+        "Maritime"
       ],
       "type": "historic"
     },
@@ -530,12 +538,12 @@
       "name_ru": "Восстание против Генуи на Корсике",
       "tags": [
         "Italian",
-        "War",
-        "Corsica",
         "Genoa",
-        "Guerilla",
         "Pisa",
-        "Rebellion"
+        "War",
+        "Rebellion",
+        "Corsica",
+        "Guerilla"
       ],
       "type": "political"
     },
@@ -551,11 +559,11 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Meloria",
       "tags": [
         "Italian",
+        "Genoa",
+        "Pisa",
         "War",
         "Battle",
-        "Genoa",
         "Naval",
-        "Pisa",
         "Seamen"
       ],
       "type": "military"
@@ -572,9 +580,9 @@
       "source": "https://en.wikipedia.org/wiki/Portolan_chart",
       "tags": [
         "Italian",
-        "Culture",
         "Genoa",
         "Genoese",
+        "Culture",
         "Geography",
         "Innovation",
         "Maritime",
@@ -595,10 +603,10 @@
       "source": "https://en.wikipedia.org/wiki/Vivaldi_brothers",
       "tags": [
         "Italian",
-        "Expedition",
-        "Exploration",
         "Genoa",
         "Genoese",
+        "Expedition",
+        "Exploration",
         "Maritime",
         "Seamen"
       ],
@@ -617,12 +625,12 @@
       "tags": [
         "Arabian",
         "Italian",
-        "Conquest",
-        "Decline",
         "Genoa",
-        "Islamic",
         "Mamluk",
-        "Crusade"
+        "Islamic",
+        "Crusade",
+        "Conquest",
+        "Decline"
       ],
       "type": "military"
     },
@@ -638,13 +646,13 @@
       "source": "https://en.wikipedia.org/wiki/Battle_of_Curzola",
       "tags": [
         "Italian",
+        "Genoa",
+        "Venice",
         "War",
         "Battle",
-        "Genoa",
         "Marco Polo 👤",
         "Naval",
-        "Seamen",
-        "Venice"
+        "Seamen"
       ],
       "type": "military"
     },
@@ -660,14 +668,14 @@
       "source": "https://en.wikipedia.org/wiki/Tana_(city)",
       "tags": [
         "Italian",
+        "Genoa",
+        "Fortification",
+        "Silk Road",
+        "Trade",
+        "Route",
         "Colonization",
         "Emporium",
-        "Expansion",
-        "Fortification",
-        "Genoa",
-        "Route",
-        "Silk Road",
-        "Trade"
+        "Expansion"
       ],
       "type": "political"
     },
@@ -683,13 +691,13 @@
       "source": "https://en.wikipedia.org/wiki/Caffa",
       "tags": [
         "Italian",
-        "Genoa",
         "Golden Horde",
         "Mongolian",
-        "Route",
+        "Genoa",
         "Silk Road",
-        "Slavery",
-        "Trade"
+        "Trade",
+        "Route",
+        "Slavery"
       ],
       "type": "historic"
     },
@@ -705,14 +713,14 @@
       "source": "https://en.wikipedia.org/wiki/Phanagoria",
       "tags": [
         "Italian",
-        "City",
+        "Golden Horde",
         "Circassian",
+        "Genoa",
+        "City",
+        "Trade",
         "Colonization",
         "Emporium",
-        "Expansion",
-        "Genoa",
-        "Golden Horde",
-        "Trade"
+        "Expansion"
       ],
       "type": "historic"
     },
@@ -728,12 +736,12 @@
       "source": "https://en.wikipedia.org/wiki/Empire_of_Trebizond",
       "tags": [
         "Italian",
-        "Emporium",
-        "Fortification",
         "Genoa",
-        "Route",
+        "Fortification",
         "Silk Road",
-        "Trade"
+        "Trade",
+        "Route",
+        "Emporium"
       ],
       "type": "political"
     },
@@ -749,13 +757,14 @@
       "source": "https://en.wikipedia.org/wiki/Siege_of_Caffa",
       "tags": [
         "Italian",
+        "Golden Horde",
+        "Mongolian",
+        "Genoa",
         "War",
         "Battle",
         "Black Death",
-        "Genoa",
-        "Golden Horde",
-        "Mongolian",
-        "Plague",
+        "Crimea",
+        "Plague 🦠",
         "Siege"
       ],
       "type": "military"
@@ -771,17 +780,17 @@
       "name_ru": "Генуя захватывает Хиос и делает частным владением",
       "source": "https://en.wikipedia.org/wiki/Maona_of_Chios_and_Phocaea",
       "tags": [
+        "Byzantine",
         "Roman",
         "Italian",
-        "Byzantine",
-        "Conquest",
-        "Contract",
-        "Corporation",
-        "Economic",
-        "Expansion",
         "Genoa",
         "Genoese",
-        "Trade"
+        "Conquest",
+        "Trade",
+        "Economic",
+        "Contract",
+        "Corporation",
+        "Expansion"
       ],
       "type": "political"
     },
@@ -797,10 +806,10 @@
       "source": "https://en.wikipedia.org/wiki/Black_Death",
       "tags": [
         "Italian",
-        "Black Death",
-        "Crisis",
         "Genoa",
-        "Plague"
+        "Crisis",
+        "Black Death",
+        "Plague 🦠"
       ],
       "type": "historic"
     },
@@ -816,10 +825,10 @@
       "source": "https://en.wikipedia.org/wiki/Black_Death_in_Italy",
       "tags": [
         "Italian",
-        "Black Death",
-        "Crisis",
         "Genoa",
-        "Plague"
+        "Crisis",
+        "Black Death",
+        "Plague 🦠"
       ],
       "type": "historic"
     },
@@ -835,10 +844,10 @@
       "source": "https://en.wikipedia.org/wiki/Genoese_crossbowmen",
       "tags": [
         "Italian",
-        "Culture",
-        "Elite",
         "Genoa",
         "Genoese",
+        "Culture",
+        "Elite",
         "Mercenaries",
         "Military",
         "Weapon"
@@ -857,11 +866,12 @@
       "source": "https://en.wikipedia.org/wiki/Sudak",
       "tags": [
         "Italian",
+        "Genoa",
+        "Venice",
         "War",
         "Conquest",
-        "Expansion",
-        "Genoa",
-        "Venice"
+        "Crimea",
+        "Expansion"
       ],
       "type": "military"
     },
@@ -877,12 +887,12 @@
       "source": "https://en.wikipedia.org/wiki/War_of_Chioggia",
       "tags": [
         "Italian",
+        "Genoa",
+        "Venice",
         "War",
         "Battle",
-        "Genoa",
         "Naval",
-        "Seamen",
-        "Venice"
+        "Seamen"
       ],
       "type": "military"
     },
@@ -893,16 +903,16 @@
       "era": "AD",
       "latitude": 45.22,
       "longitude": 12.28,
-      "name": "Genoa captures Chioggia",
-      "name_ru": "Генуя захватывает Кьоджу",
+      "name": "Genoa captures the Venetian city of Chioggia",
+      "name_ru": "Генуя захватывает Венецианскую Кьоджу",
       "source": "https://en.wikipedia.org/wiki/War_of_Chioggia",
       "tags": [
         "Italian",
-        "War",
-        "Conquest",
         "Genoa",
         "Hungary",
-        "Venice"
+        "Venice",
+        "War",
+        "Conquest"
       ],
       "type": "military"
     },
@@ -918,12 +928,12 @@
       "source": "https://en.wikipedia.org/wiki/War_of_Chioggia",
       "tags": [
         "Italian",
+        "Genoa",
+        "Venice",
         "War",
         "Failure",
-        "Genoa",
         "Seamen",
-        "Siege",
-        "Venice"
+        "Siege"
       ],
       "type": "military"
     },
@@ -939,11 +949,11 @@
       "source": "https://en.wikipedia.org/wiki/Treaty_of_Turin_(1381)",
       "tags": [
         "Italian",
-        "War",
         "Genoa",
+        "Venice",
+        "War",
         "Peace",
-        "Treaty",
-        "Venice"
+        "Treaty"
       ],
       "type": "political"
     },
@@ -959,11 +969,11 @@
       "source": "https://en.wikipedia.org/wiki/Bank_of_Saint_George",
       "tags": [
         "Italian",
-        "Bank",
-        "Culture",
-        "Economic",
         "Genoa",
         "Genoese",
+        "Culture",
+        "Economic",
+        "Banking",
         "Investments"
       ],
       "type": "cultural"
@@ -980,12 +990,12 @@
       "source": "https://en.wikipedia.org/wiki/Ajaccio",
       "tags": [
         "Italian",
+        "Genoa",
         "City",
         "Castle",
-        "Colonization",
-        "Expansion",
         "Fortification",
-        "Genoa"
+        "Colonization",
+        "Expansion"
       ],
       "type": "historic"
     }

@@ -12,8 +12,8 @@
       "name_ru": "Иштикуни - древнее городище на озере Севан",
       "source": "https://en.wikipedia.org/wiki/Etiuni",
       "tags": [
-        "Architecture",
         "Caucasian",
+        "Architecture",
         "Fortification",
         "Settlement"
       ],
@@ -31,8 +31,8 @@
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
         "Urartu",
-        "Independence",
         "Kingdom",
+        "Independence",
         "Unification"
       ],
       "type": "political"
@@ -67,8 +67,8 @@
       "source": "https://en.wikipedia.org/wiki/Tushpa",
       "tags": [
         "Urartu",
-        "City",
         "Capital",
+        "City",
         "Fortification"
       ],
       "type": "historic"
@@ -85,8 +85,8 @@
       "source": "https://en.wikipedia.org/wiki/Van_Fortress",
       "tags": [
         "Urartu",
-        "Building 🏠",
         "Architecture",
+        "Building 🏠",
         "Fortification"
       ],
       "type": "historic"
@@ -103,11 +103,11 @@
       "source": "https://en.wikipedia.org/wiki/Musasir",
       "tags": [
         "Urartu",
-        "Annexation",
-        "Holy Site",
-        "Pagan",
         "Religious",
-        "Temple"
+        "Pagan",
+        "Holy Site",
+        "Temple",
+        "Annexation"
       ],
       "type": "political"
     },
@@ -142,10 +142,10 @@
       "source": "https://en.wikipedia.org/wiki/Shamram_Canal",
       "tags": [
         "Urartu",
+        "Water",
         "Engineering ⚙️",
         "Infrastructure",
-        "Innovation",
-        "Water"
+        "Innovation"
       ],
       "type": "historic"
     },
@@ -160,8 +160,8 @@
       "name_ru": "Урартское виноделие",
       "tags": [
         "Urartu",
-        "Agriculture",
         "Customs",
+        "Agriculture",
         "Fermentation",
         "Wine"
       ],
@@ -179,8 +179,8 @@
       "source": "https://en.wikipedia.org/wiki/Erebuni_Fortress",
       "tags": [
         "Urartu",
-        "City",
         "Capital",
+        "City",
         "Fortification"
       ],
       "type": "historic"
@@ -234,8 +234,8 @@
       "tags": [
         "Urartu",
         "Conquest",
-        "Expansion",
-        "Fortification"
+        "Fortification",
+        "Expansion"
       ],
       "type": "military"
     },
@@ -269,9 +269,9 @@
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
         "Urartu",
-        "Administration",
         "Defense",
-        "Fortification"
+        "Fortification",
+        "Administration"
       ],
       "type": "political"
     },
@@ -307,8 +307,8 @@
       "source": "https://en.wikipedia.org/wiki/Rusa_I",
       "tags": [
         "Urartu",
-        "Dynasty",
         "Defense",
+        "Dynasty",
         "Fortification",
         "Military",
         "Science"
@@ -327,9 +327,9 @@
       "source": "https://en.wikipedia.org/wiki/Rusahinili",
       "tags": [
         "Urartu",
+        "Capital",
         "City",
         "Architecture",
-        "Capital",
         "Temple"
       ],
       "type": "historic"
@@ -345,9 +345,9 @@
       "name_ru": "Крепость Одзаберд",
       "source": "https://en.wikipedia.org/wiki/Odzaberd",
       "tags": [
+        "Caucasian",
         "Urartu",
         "Architecture",
-        "Caucasian",
         "Fortification"
       ],
       "type": "historic"
@@ -384,13 +384,13 @@
         "Mannai",
         "Phrygian",
         "Urartu",
-        "Diplomacy",
-        "Alliance"
+        "Alliance",
+        "Diplomacy"
       ],
       "type": "political"
     },
     {
-      "date": "01.01.0705",
+      "date": "01.01.0702",
       "description": "Argishti II succeeds Rusa I and makes peace with Assyrian king Sennacherib, beginning period of recovery and cultural renaissance after decades of warfare",
       "description_ru": "Аргишти II наследует Русе I и заключает мир с ассирийским царем Синахерибом, начиная период восстановления царства Урарту",
       "era": "BC",
@@ -422,9 +422,9 @@
       "tags": [
         "Urartu",
         "City",
-        "Economic",
+        "Religious",
         "Pagan",
-        "Religious"
+        "Economic"
       ],
       "type": "historic"
     },
@@ -440,9 +440,9 @@
       "source": "https://www.worldhistory.org/Teishebaini/",
       "tags": [
         "Urartu",
-        "Agriculture",
         "Architecture",
         "Economic",
+        "Agriculture",
         "Treasure"
       ],
       "type": "historic"
@@ -459,10 +459,10 @@
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
         "Urartu",
-        "Bronze",
-        "Innovation",
         "Iron",
-        "Metallurgy"
+        "Metallurgy",
+        "Bronze",
+        "Innovation"
       ],
       "type": "historic"
     },
@@ -478,8 +478,8 @@
       "source": "https://en.wikipedia.org/wiki/Urartu",
       "tags": [
         "Urartu",
-        "Art",
         "Culture",
+        "Art",
         "Innovation"
       ],
       "type": "cultural"
@@ -550,8 +550,8 @@
       "tags": [
         "Urartu",
         "Scythian",
-        "Cavalry",
-        "Invasion"
+        "Invasion",
+        "Cavalry"
       ],
       "type": "military"
     },
@@ -585,9 +585,9 @@
       "source": "https://en.wikipedia.org/wiki/Rusa_III",
       "tags": [
         "Urartu",
+        "Defense",
         "Dynasty",
-        "King",
-        "Defense"
+        "King"
       ],
       "type": "military"
     },
