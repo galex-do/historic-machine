@@ -1,5 +1,5 @@
 {
-  "description": "Dataset imported with 20 events",
+  "description": "Dataset imported with 24 events",
   "events": [
     {
       "date": "10.08.0015",
@@ -302,6 +302,82 @@
         "Architecture",
         "Culture",
         "Legacy"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "09.06.0193",
+      "era": "AD",
+      "latitude": 41.9028,
+      "longitude": 12.4964,
+      "name": "The Year of the Five Emperors: When Rome Auctioned Its Throne",
+      "name_ru": "Год пяти императоров: когда Рим продал трон с аукциона",
+      "description": "After the Praetorian Guard murdered the reforming emperor Pertinax in March 193 AD, they did something no one in Rome had dared before: they announced the throne itself was for sale and auctioned it to the highest bidder, a wealthy senator named Didius Julianus, who paid roughly 25,000 sesterces per guardsman. The provinces reacted with fury rather than acceptance, and three rival generals marched on Rome at once. Septimius Severus, commanding the legions of Pannonia, moved fastest, entered the city within weeks, had Julianus executed after a reign of just 66 days, and then disbanded the entire Praetorian Guard that had sold the empire, replacing it with 15,000 soldiers drawn from his own loyal legions. The lesson Severus drew from the auction — that armies, not senators, now made emperors — became the operating principle of Roman politics for the rest of the empire's history.",
+      "description_ru": "После того как в марте 193 года преторианская гвардия убила императора-реформатора Пертинакса, она сделала то, на что прежде в Риме никто не решался: объявила трон предметом продажи и устроила аукцион, который выиграл богатый сенатор Дидий Юлиан, заплативший гвардейцам примерно по 25 000 сестерциев на человека. Провинции ответили не покорностью, а яростью, и на Рим одновременно двинулись три соперничающих полководца. Быстрее всех оказался Септимий Север, командовавший паннонскими легионами: он вошёл в город спустя несколько недель, казнил Юлиана, процарствовавшего всего 66 дней, а затем распустил всю преторианскую гвардию, продавшую империю, заменив её пятнадцатью тысячами солдат из собственных верных легионов. Урок, который Север извлёк из этого аукциона, — что императоров отныне делают армии, а не сенат, — стал главным принципом римской политики на всю оставшуюся историю империи.",
+      "source": "https://en.wikipedia.org/wiki/Year_of_the_Five_Emperors",
+      "tags": [
+        "Roman",
+        "Septimius Severus 👑",
+        "Crisis",
+        "Political",
+        "Military"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "04.02.0211",
+      "era": "AD",
+      "latitude": 53.959,
+      "longitude": -1.0815,
+      "name": "“Enrich the Soldiers, Scorn the Rest”: The Advice That Funded a Crisis",
+      "name_ru": "«Обогащайте солдат, презирайте остальных»: совет, оплативший будущий кризис",
+      "description": "Dying of gout and illness while campaigning in Britain, Septimius Severus gathered his quarreling sons Caracalla and Geta and gave them, according to Cassius Dio, a single piece of advice: 'Be harmonious, enrich the soldiers, and scorn all other men.' Severus had lived by that rule himself, raising military pay by two-thirds and expanding the legions, costs he covered partly by cutting the silver content of the denarius, Rome's standard coin. His sons ignored the harmony but kept the spending, and the emperors who followed them kept debasing the currency to pay the army until, within decades, the denarius was barely silver at all — a monetary collapse historians now trace directly back to Severus's deathbed formula for buying military loyalty at any price.",
+      "description_ru": "Умирая от подагры и болезни во время похода в Британию, Септимий Север собрал враждующих сыновей, Каракаллу и Гету, и дал им, по свидетельству Кассия Диона, единственный совет: «Живите в согласии, обогащайте солдат и презирайте всех остальных». Сам Север следовал этому правилу всю жизнь, подняв солдатское жалованье на две трети и увеличив число легионов, — расходы он частично покрывал, снижая содержание серебра в денарии, основной римской монете. Сыновья пренебрегли призывом к согласию, но траты сохранили, а их преемники продолжали обесценивать монету ради выплат армии, пока спустя несколько десятилетий денарий не превратился в монету, почти лишённую серебра, — денежный крах, который историки сегодня напрямую связывают с предсмертной формулой Севера о покупке военной верности любой ценой.",
+      "source": "https://en.wikipedia.org/wiki/Septimius_Severus",
+      "tags": [
+        "Roman",
+        "Septimius Severus 👑",
+        "Crisis",
+        "Death",
+        "Legacy"
+      ],
+      "type": "political"
+    },
+    {
+      "date": "01.01.0203",
+      "era": "AD",
+      "latitude": 32.6383,
+      "longitude": 14.29,
+      "name": "Leptis Magna: The African Hometown an Emperor Turned to Marble",
+      "name_ru": "Лептис-Магна: африканский родной город, превращённый императором в мрамор",
+      "description": "Septimius Severus was born in Leptis Magna, a Phoenician-founded trading city on the coast of present-day Libya, making him the first Roman emperor from Africa. He never forgot it: after touring the province in 203 AD, he poured imperial funds into rebuilding his hometown on a scale that rivaled Rome itself, adding a new forum, a basilica, an expanded harbor, and a four-sided triumphal arch carved with scenes of his family's triumphs. Unlike most Roman cities that were continuously built over, Leptis Magna was gradually buried under desert sand after the Arab conquest and largely forgotten, which paradoxically preserved it almost intact. Rediscovered by archaeologists in the 20th century, it now stands as one of the best-preserved Roman cities anywhere in the Mediterranean — a monument to imperial favoritism that survived precisely because the empire that built it eventually walked away.",
+      "description_ru": "Септимий Север родился в Лептис-Магне, основанном финикийцами торговом городе на побережье современной Ливии, что сделало его первым римским императором родом из Африки. Он не забыл об этом: посетив провинцию в 203 году, он направил в родной город огромные имперские средства, отстроив его в масштабе, соперничавшем с самим Римом, — новый форум, базилику, расширенную гавань и четырёхсторонюю триумфальную арку с рельефами, изображающими триумфы его семьи. В отличие от большинства римских городов, непрерывно перестраивавшихся на протяжении веков, Лептис-Магна после арабского завоевания постепенно оказалась погребена под пустынным песком и была почти забыта, что, как ни парадоксально, сохранило её почти нетронутой. Обнаруженный археологами в XX веке, город сегодня остаётся одним из наиболее хорошо сохранившихся римских городов Средиземноморья — памятник имперского фаворитизма, уцелевший именно потому, что создавшая его империя в итоге ушла отсюда навсегда.",
+      "source": "https://en.wikipedia.org/wiki/Arch_of_Septimius_Severus_(Leptis_Magna)",
+      "tags": [
+        "Roman",
+        "Septimius Severus 👑",
+        "Architecture",
+        "Africa",
+        "Legacy"
+      ],
+      "type": "cultural"
+    },
+    {
+      "date": "01.01.0200",
+      "era": "AD",
+      "latitude": 29.3084,
+      "longitude": 30.8428,
+      "name": "The Severan Tondo: A Family Portrait With a Face Scratched Out",
+      "name_ru": "Севéрский тондо: семейный портрет со стёртым лицом",
+      "description": "Painted around 200 AD, probably in Egypt, the Severan Tondo is a small circular wooden panel showing Septimius Severus, his wife Julia Domna, and their two young sons, Caracalla and Geta — one of only a handful of painted portraits of any Roman emperor to survive from antiquity, most imperial images having been carved in stone instead. It survived the centuries almost intact except for one deliberate scar: after Caracalla murdered Geta in 211 AD and ordered his brother's memory erased throughout the empire, someone took a tool to this portrait and scraped Geta's face into an unrecognizable blur, leaving the rest of the family untouched. The panel now sits in Berlin's Altes Museum as perhaps the most intimate surviving object of damnatio memoriae in practice — a family photograph turned into physical evidence of a fratricide, preserved by the very violence that disfigured it.",
+      "description_ru": "Написанный около 200 года, предположительно в Египте, Северский тондо — небольшая круглая деревянная панель с изображением Септимия Севера, его жены Юлии Домны и двух малолетних сыновей, Каракаллы и Геты, — один из считаных сохранившихся с античности живописных, а не высеченных в камне, портретов римского императора. Панель дошла до наших дней почти нетронутой, если не считать одного намеренного повреждения: после того как в 211 году Каракалла убил Гету и приказал стереть память о брате по всей империи, кто-то взял инструмент и соскоблил лицо Геты до неузнаваемости, оставив остальную часть семьи нетронутой. Сегодня панель хранится в берлинском Альтес-музеуме и, пожалуй, является самым личным из сохранившихся вещественных свидетельств damnatio memoriae на практике — семейным портретом, превращённым в улику братоубийства и уцелевшим именно благодаря той жестокости, что его изуродовала.",
+      "source": "https://en.wikipedia.org/wiki/Severan_Tondo",
+      "tags": [
+        "Roman",
+        "Septimius Severus 👑",
+        "Caracalla 👑",
+        "Culture",
+        "Legend"
       ],
       "type": "cultural"
     },
